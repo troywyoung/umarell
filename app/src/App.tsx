@@ -135,6 +135,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
 }) {
   const [input, setInput] = useState("");
   const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [imageMeta, setImageMeta] = useState<{ b64: string; mediaType: string } | null>(null);
   const ref = useRef<HTMLTextAreaElement>(null);
@@ -147,25 +148,44 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
   const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    const mediaType = file.type || "image/jpeg";
+    const mediaType = "image/jpeg";
     const reader = new FileReader();
     reader.onload = () => {
-      const result = reader.result as string;
-      // result is "data:image/jpeg;base64,XXXX" — strip the prefix
-      const b64 = result.split(",")[1];
-      setImagePreview(result);
-      setImageMeta({ b64, mediaType });
+      const dataUrl = reader.result as string;
+      const img = new Image();
+      img.onload = () => {
+        const MAX = 1200;
+        let { width, height } = img;
+        if (width > MAX || height > MAX) {
+          if (width > height) { height = Math.round(height * MAX / width); width = MAX; }
+          else { width = Math.round(width * MAX / height); height = MAX; }
+        }
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d")!.drawImage(img, 0, 0, width, height);
+        const resized = canvas.toDataURL("image/jpeg", 0.85);
+        const b64 = resized.split(",")[1];
+        setImagePreview(resized);
+        setImageMeta({ b64, mediaType });
+      };
+      img.src = dataUrl;
     };
     reader.readAsDataURL(file);
   };
 
   const handleSubmit = async () => {
     if (submitting) return;
+    setError("");
     setSubmitting(true);
-    if (imageMeta) {
-      await onSubmitImage(imageMeta.b64, imageMeta.mediaType);
-    } else if (input.trim()) {
-      await onSubmit(input.trim());
+    try {
+      if (imageMeta) {
+        await onSubmitImage(imageMeta.b64, imageMeta.mediaType);
+      } else if (input.trim()) {
+        await onSubmit(input.trim());
+      }
+    } catch (e: any) {
+      setError(e?.message || "Failed to connect to API. Check VITE_API_URL.");
     }
     setSubmitting(false);
   };
@@ -265,6 +285,15 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
       >
         {submitting ? "Submitting…" : "Start researching →"}
       </button>
+
+      {error && (
+        <div style={{
+          marginTop: 12, background: "#FFF0EE", borderRadius: 10,
+          padding: "12px 14px", border: "1px solid #F5C6C0",
+        }}>
+          <p style={{ fontSize: 13, color: "#C0392B", margin: 0, lineHeight: 1.5 }}>{error}</p>
+        </div>
+      )}
     </div>
   );
 }
@@ -278,7 +307,7 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestBriefing 
   requestBriefing: (id: string) => Promise<string | null>;
 }) {
   const [obs, setObs] = useState(initialObs);
-  const [openSection, setOpenSection] = useState<string | null>(null);
+  const [tab, setTab] = useState<"research" | "stress">("research");
   const [briefingLoading, setBriefingLoading] = useState(false);
   const [showBriefing, setShowBriefing] = useState(false);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -318,109 +347,163 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestBriefing 
   const isProcessing = obs.status === "formatting" || obs.status === "researching";
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 60 }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
+      {/* Nav */}
       <div style={{
-        padding: "16px 20px", borderBottom: "1px solid #EBEBEB",
+        padding: "14px 16px",
         display: "flex", justifyContent: "space-between", alignItems: "center",
+        borderBottom: "1px solid #EBEBEB",
       }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>‹ Back</button>
-        <button onClick={handleShare} style={{ background: "none", border: "none", fontSize: 14, fontWeight: 600, color: "#1A1A1A", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>Share</button>
+        <button
+          onClick={handleBriefing}
+          disabled={briefingLoading || isProcessing}
+          style={{
+            background: isProcessing || briefingLoading ? "#D5D5CD" : "#C0392B",
+            color: "#FFF", border: "none", borderRadius: 20,
+            padding: "7px 16px", fontSize: 13, fontWeight: 700,
+            cursor: isProcessing || briefingLoading ? "not-allowed" : "pointer",
+            fontFamily: "inherit", letterSpacing: 0.1,
+          }}
+        >
+          {briefingLoading ? "Generating…" : obs.briefing ? "Briefing →" : "Briefing"}
+        </button>
       </div>
 
-      <div style={{ padding: "24px 20px 0" }}>
+      <div style={{ padding: "20px 16px 0" }}>
+        {/* Processing banner */}
         {isProcessing && (
-          <div style={{ background: "#F5F5F2", borderRadius: 10, padding: "12px 16px", marginBottom: 20 }}>
+          <div style={{ background: "#F5F5F2", borderRadius: 10, padding: "10px 14px", marginBottom: 16, display: "flex", alignItems: "center", gap: 8 }}>
             <span style={{ fontSize: 13, color: "#666", fontStyle: "italic" }}>
               {obs.status === "formatting" ? "Formatting your thesis…" : "Researching…"}
             </span>
           </div>
         )}
 
-        <div style={{ marginBottom: 24 }}>
-          {obs.confidence && <div style={{ marginBottom: 10 }}><ConfidenceBadge value={obs.confidence} /></div>}
-          <h1 style={{ fontSize: 22, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.35, letterSpacing: -0.4, margin: 0 }}>
+        {/* Confidence + Thesis */}
+        <div style={{ marginBottom: 20 }}>
+          {obs.confidence && (
+            <div style={{ marginBottom: 10 }}>
+              <ConfidenceBadge value={obs.confidence} />
+            </div>
+          )}
+          <p style={{ fontSize: 18, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.3, margin: 0 }}>
             {obs.thesis || obs.raw_input}
-          </h1>
+          </p>
         </div>
 
-        {obs.summary && (
-          <div style={{ marginBottom: 20 }}>
-            <SectionLabel>Summary</SectionLabel>
-            <p style={{ fontSize: 15, color: "#3A3A38", lineHeight: 1.65, margin: 0 }}>{obs.summary}</p>
-          </div>
-        )}
-
-        {obs.supporting_ideas && obs.supporting_ideas.length > 0 && (
-          <Collapsible title="Supporting ideas" open={openSection === "supporting"} onToggle={() => setOpenSection((s) => s === "supporting" ? null : "supporting")}>
-            {obs.supporting_ideas.map((p, i) => <PointItem key={i} point={p} />)}
-          </Collapsible>
-        )}
-
-        {obs.counter_ideas && obs.counter_ideas.length > 0 && (
-          <Collapsible title="Counter ideas" open={openSection === "counter"} onToggle={() => setOpenSection((s) => s === "counter" ? null : "counter")}>
-            {obs.counter_ideas.map((p, i) => <PointItem key={i} point={p} />)}
-          </Collapsible>
-        )}
-
-        {obs.context && (
-          <Collapsible title="Context" open={openSection === "context"} onToggle={() => setOpenSection((s) => s === "context" ? null : "context")}>
-            <p style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.65, margin: 0 }}>{obs.context}</p>
-          </Collapsible>
-        )}
-
-        {obs.stress_test && (
-          <Collapsible title="Stress test" open={openSection === "stress"} onToggle={() => setOpenSection((s) => s === "stress" ? null : "stress")} accent="#7B3F00">
-            <p style={{ fontSize: 12, fontWeight: 700, color: "#7B3F00", letterSpacing: 0.5, textTransform: "uppercase", margin: "0 0 6px" }}>Strongest objection</p>
-            <p style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.65, margin: "0 0 14px" }}>{obs.stress_test.strongest_objection}</p>
-            {obs.stress_test.assumptions.length > 0 && (
-              <>
-                <p style={{ fontSize: 12, fontWeight: 700, color: "#7B3F00", letterSpacing: 0.5, textTransform: "uppercase", margin: "0 0 6px" }}>Assumptions</p>
-                {obs.stress_test.assumptions.map((a, i) => (
-                  <p key={i} style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.65, margin: "0 0 6px" }}>— {a}</p>
-                ))}
-              </>
-            )}
-            {obs.stress_test.evidence_flags.length > 0 && (
-              <>
-                <p style={{ fontSize: 12, fontWeight: 700, color: "#7B3F00", letterSpacing: 0.5, textTransform: "uppercase", margin: "14px 0 6px" }}>Evidence flags</p>
-                {obs.stress_test.evidence_flags.map((f, i) => (
-                  <p key={i} style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.65, margin: "0 0 6px" }}>— {f}</p>
-                ))}
-              </>
-            )}
-          </Collapsible>
-        )}
-
-        {obs.more_questions && obs.more_questions.length > 0 && (
-          <div style={{ marginBottom: 24 }}>
-            <SectionLabel>More questions</SectionLabel>
-            {obs.more_questions.map((q, i) => (
-              <div key={i} style={{
-                display: "flex", justifyContent: "space-between", alignItems: "flex-start",
-                padding: "12px 0", borderBottom: "1px solid #F0F0EC",
-              }}>
-                <span style={{ fontSize: 14, color: "#1A1A1A", lineHeight: 1.5, flex: 1, paddingRight: 12 }}>{q.text}</span>
-                <span style={{ fontSize: 14, color: "#B0B0A8", flexShrink: 0, marginTop: 2 }}>→</span>
-              </div>
-            ))}
-          </div>
-        )}
-
+        {/* Tabs — only show once research data exists */}
         {obs.status === "complete" && (
-          <button
-            onClick={handleBriefing}
-            disabled={briefingLoading}
-            style={{
-              width: "100%",
-              background: briefingLoading ? "#D5D5CD" : "#1A1A1A",
-              color: "#FFF", border: "none", borderRadius: 14,
-              padding: "16px 0", fontSize: 16, fontWeight: 700,
-              cursor: briefingLoading ? "not-allowed" : "pointer",
-              letterSpacing: -0.2, fontFamily: "inherit", marginTop: 8,
-            }}
-          >
-            {briefingLoading ? "Generating…" : obs.briefing ? "Read the Briefing →" : "Generate Briefing →"}
-          </button>
+          <>
+            <div style={{ display: "flex", gap: 6, marginBottom: 16 }}>
+              {(["research", "stress"] as const).map((t) => (
+                <button
+                  key={t}
+                  onClick={() => setTab(t)}
+                  style={{
+                    padding: "6px 14px", borderRadius: 20, border: "none",
+                    fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "inherit",
+                    background: tab === t ? "#1A1A1A" : "#EFEFED",
+                    color: tab === t ? "#FFF" : "#666",
+                  }}
+                >
+                  {t === "research" ? "Research" : "Stress Test"}
+                </button>
+              ))}
+            </div>
+
+            {tab === "research" && (
+              <div>
+                {/* Summary */}
+                {obs.summary && (
+                  <div style={{ marginBottom: 20 }}>
+                    <SectionLabel>Summary</SectionLabel>
+                    <p style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.7, margin: 0 }}>{obs.summary}</p>
+                  </div>
+                )}
+
+                {/* Supporting ideas */}
+                {obs.supporting_ideas && obs.supporting_ideas.length > 0 && (
+                  <div style={{ marginBottom: 20 }}>
+                    <SectionLabel>Supporting ideas</SectionLabel>
+                    {obs.supporting_ideas.map((p, i) => <PointCard key={i} point={p} accent="#2E7D32" />)}
+                  </div>
+                )}
+
+                {/* Counter ideas */}
+                {obs.counter_ideas && obs.counter_ideas.length > 0 && (
+                  <div style={{ marginBottom: 20 }}>
+                    <SectionLabel>Counter ideas</SectionLabel>
+                    {obs.counter_ideas.map((p, i) => <PointCard key={i} point={p} accent="#C0392B" />)}
+                  </div>
+                )}
+
+                {/* Context */}
+                {obs.context && (
+                  <div style={{ marginBottom: 20 }}>
+                    <SectionLabel>Context</SectionLabel>
+                    <p style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.7, margin: 0 }}>{obs.context}</p>
+                  </div>
+                )}
+
+                {/* More questions */}
+                {obs.more_questions && obs.more_questions.length > 0 && (
+                  <div style={{ marginBottom: 20 }}>
+                    <SectionLabel>More questions</SectionLabel>
+                    {obs.more_questions.map((q, i) => (
+                      <div key={i} style={{
+                        display: "flex", justifyContent: "space-between", alignItems: "flex-start",
+                        padding: "11px 0", borderBottom: "1px solid #F0F0EC",
+                      }}>
+                        <span style={{ fontSize: 14, color: "#1A1A1A", lineHeight: 1.5, flex: 1, paddingRight: 12 }}>{q.text}</span>
+                        <span style={{ color: "#B0B0A8", flexShrink: 0, marginTop: 2 }}>→</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {tab === "stress" && obs.stress_test && (
+              <div>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+                  <SectionLabel>Stress Test</SectionLabel>
+                  <ConfidenceBadge value={obs.stress_test.confidence_signal} />
+                </div>
+
+                <div style={{ marginBottom: 18 }}>
+                  <p style={{ fontSize: 11, fontWeight: 700, color: "#7B3F00", letterSpacing: 0.6, textTransform: "uppercase", margin: "0 0 8px" }}>Core assumptions</p>
+                  {obs.stress_test.assumptions.map((a, i) => (
+                    <div key={i} style={{
+                      display: "flex", gap: 10, marginBottom: 8,
+                      background: "#FFF8F5", borderRadius: 10, padding: "10px 12px",
+                    }}>
+                      <span style={{ fontSize: 12, fontWeight: 700, color: "#7B3F00", minWidth: 18 }}>{i + 1}.</span>
+                      <span style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.55 }}>{a}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div style={{ marginBottom: 18 }}>
+                  <p style={{ fontSize: 11, fontWeight: 700, color: "#7B3F00", letterSpacing: 0.6, textTransform: "uppercase", margin: "0 0 8px" }}>Strongest objection</p>
+                  <div style={{ background: "#FFF8F5", borderRadius: 10, padding: "12px 14px", borderLeft: "3px solid #C0392B" }}>
+                    <p style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.65, margin: 0, fontStyle: "italic" }}>
+                      "{obs.stress_test.strongest_objection}"
+                    </p>
+                  </div>
+                </div>
+
+                {obs.stress_test.evidence_flags.length > 0 && (
+                  <div>
+                    <p style={{ fontSize: 11, fontWeight: 700, color: "#7B3F00", letterSpacing: 0.6, textTransform: "uppercase", margin: "0 0 8px" }}>Evidence quality</p>
+                    {obs.stress_test.evidence_flags.map((f, i) => (
+                      <p key={i} style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.65, margin: "0 0 6px" }}>— {f}</p>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </>
         )}
       </div>
     </div>
@@ -434,20 +517,25 @@ function BriefingView({ obs, onBack, onShare }: {
   onBack: () => void;
   onShare: () => void;
 }) {
+  // Split briefing into paragraphs for readable rendering
+  const paragraphs = (obs.briefing || "").split(/\n+/).filter(Boolean);
+
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 60 }}>
       <div style={{
-        padding: "16px 20px", borderBottom: "1px solid #EBEBEB",
+        padding: "14px 16px", borderBottom: "1px solid #EBEBEB",
         display: "flex", justifyContent: "space-between", alignItems: "center",
       }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>‹ Back</button>
-        <button onClick={onShare} style={{ background: "none", border: "none", fontSize: 14, fontWeight: 600, color: "#1A1A1A", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>Share</button>
+        <button onClick={onShare} style={{ background: "none", border: "none", fontSize: 13, fontWeight: 700, color: "#1A1A1A", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>Share</button>
       </div>
-      <div style={{ padding: "28px 24px 0" }}>
-        <p style={{ fontSize: 11, fontWeight: 700, color: "#999", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 12px" }}>Briefing</p>
-        <h1 style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.3, margin: "0 0 20px" }}>{obs.thesis}</h1>
-        <div style={{ width: 36, height: 2, background: "#1A1A1A", marginBottom: 24 }} />
-        <p style={{ fontSize: 16, color: "#2A2A28", lineHeight: 1.75, letterSpacing: 0.1, margin: 0 }}>{obs.briefing}</p>
+      <div style={{ padding: "24px 20px 0" }}>
+        <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1.4, textTransform: "uppercase", margin: "0 0 10px" }}>Briefing</p>
+        <h1 style={{ fontSize: 19, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.3, margin: "0 0 18px" }}>{obs.thesis}</h1>
+        <div style={{ width: 32, height: 2, background: "#1A1A1A", marginBottom: 22 }} />
+        {paragraphs.map((p, i) => (
+          <p key={i} style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.8, margin: "0 0 16px", letterSpacing: 0.1 }}>{p}</p>
+        ))}
       </div>
     </div>
   );
@@ -457,31 +545,25 @@ function BriefingView({ obs, onBack, onShare }: {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p style={{ fontSize: 11, fontWeight: 700, color: "#999", letterSpacing: 0.8, textTransform: "uppercase", margin: "0 0 8px" }}>
+    <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 0.9, textTransform: "uppercase", margin: "0 0 10px" }}>
       {children}
     </p>
   );
 }
 
-function Collapsible({ title, open, onToggle, accent = "#1A1A1A", children }: {
-  title: string; open: boolean; onToggle: () => void; accent?: string; children: React.ReactNode;
-}) {
+function PointCard({ point, accent }: { point: { text: string; source_title?: string }; accent: string }) {
   return (
-    <div style={{ background: "#FFF", borderRadius: 12, marginBottom: 10, boxShadow: "0 1px 5px rgba(0,0,0,0.05)", overflow: "hidden" }}>
-      <button onClick={onToggle} style={{ width: "100%", background: "none", border: "none", padding: "14px 16px", display: "flex", justifyContent: "space-between", alignItems: "center", cursor: "pointer", fontFamily: "inherit" }}>
-        <span style={{ fontSize: 13, fontWeight: 700, color: accent }}>{title}</span>
-        <span style={{ fontSize: 12, color: "#B0B0A8" }}>{open ? "∧" : "∨"}</span>
-      </button>
-      {open && <div style={{ padding: "0 16px 16px" }}>{children}</div>}
-    </div>
-  );
-}
-
-function PointItem({ point }: { point: { text: string; source_title?: string } }) {
-  return (
-    <div style={{ marginBottom: 12 }}>
-      <p style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.65, margin: 0 }}>{point.text}</p>
-      {point.source_title && <p style={{ fontSize: 11, color: "#999", margin: "3px 0 0" }}>{point.source_title}</p>}
+    <div style={{
+      background: "#FFF", borderRadius: 10, padding: "12px 14px",
+      marginBottom: 8, boxShadow: "0 1px 4px rgba(0,0,0,0.05)",
+      borderLeft: `3px solid ${accent}20`,
+    }}>
+      <p style={{ fontSize: 14, color: "#2A2A28", lineHeight: 1.6, margin: 0 }}>{point.text}</p>
+      {point.source_title && (
+        <p style={{ fontSize: 11, color: "#999", margin: "6px 0 0", display: "flex", alignItems: "center", gap: 4 }}>
+          <span style={{ fontSize: 9 }}>↗</span> {point.source_title}
+        </p>
+      )}
     </div>
   );
 }
@@ -499,12 +581,12 @@ export default function App() {
 
   const handleSubmit = async (text: string) => {
     const obs = await submitObservation(text, text.startsWith("http") ? "url" : "text");
-    if (obs) { setSelectedObs(obs); setView("output"); }
+    setSelectedObs(obs); setView("output");
   };
 
   const handleSubmitImage = async (b64: string, mediaType: string) => {
     const obs = await submitObservation("image", "screenshot", b64, mediaType);
-    if (obs) { setSelectedObs(obs); setView("output"); }
+    setSelectedObs(obs); setView("output");
   };
 
   if (view === "capture") return <CaptureView onSubmit={handleSubmit} onSubmitImage={handleSubmitImage} onBack={() => setView("home")} />;

@@ -23,7 +23,7 @@ export function useObservations() {
     inputType: Observation["input_type"] = "text",
     imageData?: string,
     imageMediaType?: string,
-  ): Promise<Observation | null> => {
+  ): Promise<Observation> => {
     try {
       const resp = await fetch(`${API}/observations`, {
         method: "POST",
@@ -34,12 +34,12 @@ export function useObservations() {
           ...(imageData && { image_data: imageData, image_media_type: imageMediaType }),
         }),
       });
-      if (!resp.ok) throw new Error(`${resp.status}`);
+      if (!resp.ok) throw new Error(`API error ${resp.status}`);
       const obs: Observation = await resp.json();
       setObservations((prev) => [obs, ...prev]);
       return obs;
-    } catch {
-      return null;
+    } catch (e: any) {
+      throw new Error(e?.message || `Cannot reach API at ${API}. Is VITE_API_URL set?`);
     }
   }, []);
 
