@@ -133,36 +133,43 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
   onSubmitImage: (b64: string, mediaType: string) => Promise<void>;
   onBack: () => void;
 }) {
-  const [input, setInput] = useState("");
+  const [transcript, setTranscript] = useState("");
+  const [listening, setListening] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [imageMeta, setImageMeta] = useState<{ b64: string; mediaType: string } | null>(null);
-  const ref = useRef<HTMLTextAreaElement>(null);
   const fileRef = useRef<HTMLInputElement>(null);
-  const [kbHeight, setKbHeight] = useState(0);
+  const recRef = useRef<any>(null);
 
-  useEffect(() => { if (!imagePreview) ref.current?.focus(); }, [imagePreview]);
-
-  // Track iOS keyboard height via visualViewport
-  useEffect(() => {
-    const vv = window.visualViewport;
-    if (!vv) return;
-    const update = () => setKbHeight(Math.max(0, window.innerHeight - vv.height - vv.offsetTop));
-    vv.addEventListener("resize", update);
-    vv.addEventListener("scroll", update);
-    return () => { vv.removeEventListener("resize", update); vv.removeEventListener("scroll", update); };
-  }, []);
-
-  const isUrl = input.trim().startsWith("http://") || input.trim().startsWith("https://");
+  const toggleVoice = () => {
+    if (listening) {
+      recRef.current?.stop();
+      return;
+    }
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SR) { setError("Voice input not supported in this browser."); return; }
+    const rec = new SR();
+    rec.continuous = true;
+    rec.interimResults = true;
+    rec.lang = "en-US";
+    rec.onresult = (e: any) => {
+      const text = Array.from(e.results as any[]).map((r: any) => r[0].transcript).join(" ");
+      setTranscript(text);
+    };
+    rec.onerror = () => { setListening(false); };
+    rec.onend = () => { setListening(false); };
+    recRef.current = rec;
+    rec.start();
+    setListening(true);
+    setError("");
+  };
 
   const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    const mediaType = "image/jpeg";
     const reader = new FileReader();
     reader.onload = () => {
-      const dataUrl = reader.result as string;
       const img = new Image();
       img.onload = () => {
         const MAX = 1200;
@@ -172,15 +179,14 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
           else { width = Math.round(width * MAX / height); height = MAX; }
         }
         const canvas = document.createElement("canvas");
-        canvas.width = width;
-        canvas.height = height;
+        canvas.width = width; canvas.height = height;
         canvas.getContext("2d")!.drawImage(img, 0, 0, width, height);
         const resized = canvas.toDataURL("image/jpeg", 0.85);
-        const b64 = resized.split(",")[1];
         setImagePreview(resized);
-        setImageMeta({ b64, mediaType });
+        setImageMeta({ b64: resized.split(",")[1], mediaType: "image/jpeg" });
+        setTranscript("");
       };
-      img.src = dataUrl;
+      img.src = reader.result as string;
     };
     reader.readAsDataURL(file);
   };
@@ -192,104 +198,103 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
     try {
       if (imageMeta) {
         await onSubmitImage(imageMeta.b64, imageMeta.mediaType);
-      } else if (input.trim()) {
-        await onSubmit(input.trim());
+      } else if (transcript.trim()) {
+        await onSubmit(transcript.trim());
       }
     } catch (e: any) {
-      setError(e?.message || "Failed to connect to API. Check VITE_API_URL.");
+      setError(e?.message || "Failed to connect to API.");
+      setSubmitting(false);
     }
-    setSubmitting(false);
   };
 
-  const canSubmit = (!!imageMeta || !!input.trim()) && !submitting;
+  const canSubmit = (!!imageMeta || !!transcript.trim()) && !submitting;
+  const hasInput = !!imageMeta || !!transcript.trim();
 
   return (
-    <div style={{
-      maxWidth: 480, margin: "0 auto",
-      padding: `0 20px ${kbHeight + 40}px`,
-      overflowY: "auto", WebkitOverflowScrolling: "touch" as any,
-    }}>
-      <div style={{ padding: "20px 0 24px" }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 24px 60px", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+      <div style={{ padding: "20px 0 16px" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>
           Cancel
         </button>
       </div>
 
-      <h1 style={{ fontSize: 26, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.5, margin: "0 0 8px" }}>
+      <h1 style={{ fontSize: 26, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.5, margin: "0 0 6px" }}>
         What are you watching?
       </h1>
-      <p style={{ fontSize: 14, color: "#888", margin: "0 0 24px", lineHeight: 1.5 }}>
-        A thought, a pattern, a question. Paste a URL or drop a screenshot.
+      <p style={{ fontSize: 14, color: "#888", margin: "0 0 40px", lineHeight: 1.5 }}>
+        Speak your observation or attach a screenshot.
       </p>
 
       {/* Image preview */}
-      {imagePreview ? (
-        <div style={{ position: "relative", marginBottom: 14 }}>
-          <img src={imagePreview} alt="Preview" style={{ width: "100%", borderRadius: 16, maxHeight: 280, objectFit: "cover" }} />
+      {imagePreview && (
+        <div style={{ position: "relative", marginBottom: 24 }}>
+          <img src={imagePreview} alt="Preview" style={{ width: "100%", borderRadius: 16, maxHeight: 220, objectFit: "cover" }} />
           <button
             onClick={() => { setImagePreview(null); setImageMeta(null); if (fileRef.current) fileRef.current.value = ""; }}
             style={{
               position: "absolute", top: 10, right: 10,
               background: "rgba(0,0,0,0.55)", border: "none", borderRadius: "50%",
-              width: 28, height: 28, color: "#fff", fontSize: 16, cursor: "pointer",
+              width: 30, height: 30, color: "#fff", fontSize: 16, cursor: "pointer",
               display: "flex", alignItems: "center", justifyContent: "center",
             }}
           >×</button>
         </div>
-      ) : (
-        <div style={{
-          background: "#FFF", borderRadius: 16, padding: 16,
-          boxShadow: "0 2px 10px rgba(0,0,0,0.07)", marginBottom: 14,
-        }}>
-          <textarea
-            ref={ref}
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) handleSubmit(); }}
-            placeholder="Type your observation…"
-            rows={5}
-            autoComplete="off"
-            autoCorrect="off"
-            autoCapitalize="off"
-            spellCheck={false}
-            data-form-type="other"
-            data-lpignore="true"
-            style={{
-              width: "100%", border: "none", outline: "none",
-              fontSize: 16, color: "#1A1A1A", lineHeight: 1.6,
-              resize: "none", fontFamily: "inherit", boxSizing: "border-box",
-            }}
-          />
-          {isUrl && (
-            <p style={{ fontSize: 11, color: "#2E7D32", margin: "8px 0 0", fontWeight: 600 }}>
-              URL detected — will extract and analyze
-            </p>
-          )}
+      )}
+
+      {/* Transcript display */}
+      {transcript && !imagePreview && (
+        <div style={{ background: "#FFF", borderRadius: 16, padding: "16px", marginBottom: 20, boxShadow: "0 2px 8px rgba(0,0,0,0.06)", position: "relative" }}>
+          <p style={{ fontSize: 16, color: "#1A1A1A", lineHeight: 1.6, margin: 0 }}>{transcript}</p>
+          <button
+            onClick={() => setTranscript("")}
+            style={{ position: "absolute", top: 10, right: 12, background: "none", border: "none", color: "#CCC", fontSize: 18, cursor: "pointer", lineHeight: 1 }}
+          >×</button>
         </div>
       )}
 
-      {/* Screenshot button */}
+      {/* Input buttons */}
       {!imagePreview && (
-        <>
-          <input
-            ref={fileRef}
-            type="file"
-            accept="image/*"
-            style={{ display: "none" }}
-            onChange={handleImageSelect}
-          />
+        <div style={{ display: "flex", gap: 14, marginBottom: 24 }}>
+          {/* Mic button */}
           <button
-            onClick={() => fileRef.current?.click()}
+            onClick={toggleVoice}
             style={{
-              width: "100%", background: "none",
-              border: "1.5px dashed #D5D5CD", borderRadius: 14,
-              padding: "13px 0", fontSize: 14, color: "#888",
-              cursor: "pointer", fontFamily: "inherit", marginBottom: 14,
+              flex: 1, padding: "28px 0", borderRadius: 20, border: "none", cursor: "pointer",
+              background: listening ? "#1A1A1A" : "#F0F0ED",
+              color: listening ? "#FFF" : "#444",
+              display: "flex", flexDirection: "column", alignItems: "center", gap: 8,
+              transition: "background 0.15s",
+              WebkitTapHighlightColor: "transparent",
             }}
           >
-            📎 Attach screenshot or photo
+            <span style={{ fontSize: 32 }}>{listening ? "⏹" : "🎤"}</span>
+            <span style={{ fontSize: 13, fontWeight: 600 }}>{listening ? "Stop" : "Speak"}</span>
           </button>
-        </>
+
+          {/* Photo button */}
+          <>
+            <input ref={fileRef} type="file" accept="image/*" style={{ display: "none" }} onChange={handleImageSelect} />
+            <button
+              onClick={() => fileRef.current?.click()}
+              style={{
+                flex: 1, padding: "28px 0", borderRadius: 20, border: "none", cursor: "pointer",
+                background: "#F0F0ED", color: "#444",
+                display: "flex", flexDirection: "column", alignItems: "center", gap: 8,
+                WebkitTapHighlightColor: "transparent",
+              }}
+            >
+              <span style={{ fontSize: 32 }}>📷</span>
+              <span style={{ fontSize: 13, fontWeight: 600 }}>Photo</span>
+            </button>
+          </>
+        </div>
+      )}
+
+      {listening && (
+        <div style={{ textAlign: "center", marginBottom: 20 }}>
+          <ProcessingDots />
+          <span style={{ fontSize: 13, color: "#6666CC", marginLeft: 8, fontWeight: 600 }}>Listening…</span>
+        </div>
       )}
 
       <button
@@ -303,16 +308,14 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
           padding: "16px 0", fontSize: 16, fontWeight: 700,
           cursor: canSubmit ? "pointer" : "not-allowed",
           letterSpacing: -0.2, fontFamily: "inherit",
+          WebkitTapHighlightColor: "transparent",
         }}
       >
-        {submitting ? "Submitting…" : "Start researching →"}
+        {submitting ? "Submitting…" : hasInput ? "Start researching →" : "Speak or attach a photo"}
       </button>
 
       {error && (
-        <div style={{
-          marginTop: 12, background: "#FFF0EE", borderRadius: 10,
-          padding: "12px 14px", border: "1px solid #F5C6C0",
-        }}>
+        <div style={{ marginTop: 12, background: "#FFF0EE", borderRadius: 10, padding: "12px 14px", border: "1px solid #F5C6C0" }}>
           <p style={{ fontSize: 13, color: "#C0392B", margin: 0, lineHeight: 1.5 }}>{error}</p>
         </div>
       )}
