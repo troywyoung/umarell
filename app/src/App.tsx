@@ -345,6 +345,33 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestBriefing 
   }
 
   const isProcessing = obs.status === "formatting" || obs.status === "researching";
+  const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
+
+  // Thesis to display — hide raw placeholder while image is still being analyzed
+  const displayThesis = (isProcessing && isImage && (!obs.thesis || obs.thesis === "image"))
+    ? null
+    : (obs.thesis && obs.thesis !== "image" ? obs.thesis : obs.raw_input !== "image" ? obs.raw_input : null);
+
+  if (obs.status === "error") {
+    return (
+      <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 20px" }}>
+        <div style={{ padding: "14px 0" }}>
+          <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>‹ Back</button>
+        </div>
+        <div style={{ marginTop: 60, textAlign: "center" }}>
+          <p style={{ fontSize: 28, marginBottom: 12 }}>⚠️</p>
+          <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", margin: "0 0 8px" }}>Research failed</p>
+          <p style={{ fontSize: 14, color: "#888", lineHeight: 1.6, margin: "0 0 28px" }}>
+            Something went wrong during analysis. This is usually an API issue — check that ANTHROPIC_API_KEY is set in your Railway API service.
+          </p>
+          <button onClick={onBack} style={{
+            background: "#1A1A1A", color: "#FFF", border: "none", borderRadius: 14,
+            padding: "13px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit",
+          }}>Try again</button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
@@ -373,10 +400,23 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestBriefing 
       <div style={{ padding: "20px 16px 0" }}>
         {/* Processing banner */}
         {isProcessing && (
-          <div style={{ background: "#F5F5F2", borderRadius: 10, padding: "10px 14px", marginBottom: 16, display: "flex", alignItems: "center", gap: 8 }}>
-            <span style={{ fontSize: 13, color: "#666", fontStyle: "italic" }}>
-              {obs.status === "formatting" ? "Formatting your thesis…" : "Researching…"}
-            </span>
+          <div style={{
+            background: "#F0F0FF", borderRadius: 12, padding: "14px 16px",
+            marginBottom: 20, border: "1px solid #DDDDF0",
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: isImage ? 6 : 0 }}>
+              <ProcessingDots />
+              <span style={{ fontSize: 14, color: "#444", fontWeight: 600 }}>
+                {obs.status === "formatting"
+                  ? (isImage ? "Extracting observation from image…" : "Formatting thesis…")
+                  : "Researching…"}
+              </span>
+            </div>
+            {isImage && obs.status === "formatting" && (
+              <p style={{ fontSize: 12, color: "#888", margin: 0, paddingLeft: 26 }}>
+                Claude is reading your image and building a research thesis.
+              </p>
+            )}
           </div>
         )}
 
@@ -387,9 +427,13 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestBriefing 
               <ConfidenceBadge value={obs.confidence} />
             </div>
           )}
-          <p style={{ fontSize: 18, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.3, margin: 0 }}>
-            {obs.thesis || obs.raw_input}
-          </p>
+          {displayThesis ? (
+            <p style={{ fontSize: 18, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.3, margin: 0 }}>
+              {displayThesis}
+            </p>
+          ) : isProcessing ? (
+            <div style={{ height: 24, background: "#EEEEE8", borderRadius: 6, width: "80%" }} />
+          ) : null}
         </div>
 
         {/* Tabs — only show once research data exists */}
@@ -542,6 +586,30 @@ function BriefingView({ obs, onBack, onShare }: {
 }
 
 // ─── Shared components ────────────────────────────────────────────────────
+
+function ProcessingDots() {
+  return (
+    <span style={{ display: "inline-flex", gap: 3, alignItems: "center" }}>
+      {[0, 1, 2].map((i) => (
+        <span
+          key={i}
+          style={{
+            width: 6, height: 6, borderRadius: "50%", background: "#6666CC",
+            display: "inline-block",
+            animation: "pulse 1.2s ease-in-out infinite",
+            animationDelay: `${i * 0.2}s`,
+          }}
+        />
+      ))}
+      <style>{`
+        @keyframes pulse {
+          0%, 80%, 100% { opacity: 0.2; transform: scale(0.8); }
+          40% { opacity: 1; transform: scale(1); }
+        }
+      `}</style>
+    </span>
+  );
+}
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
