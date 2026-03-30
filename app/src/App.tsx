@@ -140,8 +140,19 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
   const [imageMeta, setImageMeta] = useState<{ b64: string; mediaType: string } | null>(null);
   const ref = useRef<HTMLTextAreaElement>(null);
   const fileRef = useRef<HTMLInputElement>(null);
+  const [kbHeight, setKbHeight] = useState(0);
 
   useEffect(() => { if (!imagePreview) ref.current?.focus(); }, [imagePreview]);
+
+  // Track iOS keyboard height via visualViewport
+  useEffect(() => {
+    const vv = window.visualViewport;
+    if (!vv) return;
+    const update = () => setKbHeight(Math.max(0, window.innerHeight - vv.height - vv.offsetTop));
+    vv.addEventListener("resize", update);
+    vv.addEventListener("scroll", update);
+    return () => { vv.removeEventListener("resize", update); vv.removeEventListener("scroll", update); };
+  }, []);
 
   const isUrl = input.trim().startsWith("http://") || input.trim().startsWith("https://");
 
@@ -193,7 +204,11 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
   const canSubmit = (!!imageMeta || !!input.trim()) && !submitting;
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 20px 40px" }}>
+    <div style={{
+      maxWidth: 480, margin: "0 auto",
+      padding: `0 20px ${kbHeight + 40}px`,
+      overflowY: "auto", WebkitOverflowScrolling: "touch" as any,
+    }}>
       <div style={{ padding: "20px 0 24px" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>
           Cancel
