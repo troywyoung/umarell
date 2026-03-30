@@ -1,9 +1,8 @@
 """
-Observation pipeline — format → research → structure → stress test
+Observation pipeline — format thesis → steel man → stress test (on demand)
 All Claude API calls are here.
 """
 import json
-import asyncio
 import httpx
 from bs4 import BeautifulSoup
 from anthropic import AsyncAnthropic
@@ -24,7 +23,6 @@ async def _call(system: str, user: str, max_tokens: int = 2000) -> str:
 
 
 async def _fetch_url(url: str) -> str:
-    """Fetch and extract readable text from a URL."""
     try:
         async with httpx.AsyncClient(timeout=15, follow_redirects=True) as http:
             resp = await http.get(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -37,7 +35,6 @@ async def _fetch_url(url: str) -> str:
 
 
 async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", context: str | None = None) -> str:
-    """Use Claude vision to extract the core observation from a screenshot or photo."""
     if context:
         question = (
             f"The user adds this context or question: \"{context}\"\n\n"
@@ -57,14 +54,7 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", con
         messages=[{
             "role": "user",
             "content": [
-                {
-                    "type": "image",
-                    "source": {
-                        "type": "base64",
-                        "media_type": media_type,
-                        "data": image_b64,
-                    },
-                },
+                {"type": "image", "source": {"type": "base64", "media_type": media_type, "data": image_b64}},
                 {"type": "text", "text": question},
             ],
         }],
@@ -75,7 +65,7 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", con
 async def format_thesis(raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg") -> str:
     """Turn raw input into a clear, researchable thesis (1–2 sentences)."""
     if input_type in ("photo", "screenshot") and image_b64:
-        print(f"[format_thesis] extracting from image, media_type={image_media_type}, b64_len={len(image_b64)}, context={raw_input[:60] if raw_input and raw_input != 'image' else None}")
+        print(f"[format_thesis] extracting from image, context={raw_input[:60] if raw_input and raw_input != 'image' else None}")
         context = raw_input if raw_input and raw_input != "image" else None
         content = await extract_from_image(image_b64, image_media_type, context=context)
         print(f"[format_thesis] image extracted: {content[:100]}")
@@ -84,119 +74,58 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
     else:
         content = raw_input
 
-    result = await _call(
+    return await _call(
         system=(
-            "You are a research editor. Your job is to take a raw observation and "
-            "reformulate it as a clear, specific, researchable thesis or question in 1–2 sentences. "
-            "Be direct. No preamble. Output only the thesis."
+            "You are a research editor. Take the raw observation and reformulate it as a "
+            "clear, specific, researchable thesis in 1–2 sentences. Be direct. No preamble. Output only the thesis."
         ),
         user=f"Raw observation: {content}",
         max_tokens=150,
     )
-    return result
 
 
-async def research_observation(thesis: str) -> dict:
-    """
-    Run the full research pipeline and return structured output.
-    Returns a dict matching the 6-layer structure + stress test.
-    """
-    prompt = f"""Thesis to research: {thesis}
+async def generate_steel_man(thesis: str) -> str:
+    """Generate the strongest possible case FOR the thesis — 2-3 paragraphs of prose."""
+    return await _call(
+        system=(
+            "You are a brilliant advocate. Given a thesis, build the most compelling, "
+            "intellectually rigorous case FOR it. Present the strongest evidence, reasoning, "
+            "and framing that supports the thesis. Be specific and persuasive. "
+            "Write 2-3 tight paragraphs of clear prose. No headers. No bullet points. No preamble."
+        ),
+        user=f"Build the steel man case for this thesis: {thesis}",
+        max_tokens=600,
+    )
 
-Research this thesis thoroughly and return a JSON object with exactly these keys:
 
+async def generate_stress_test(thesis: str, steel_man: str) -> dict:
+    """Stress test the thesis — pros, cons, and a verdict on whether it holds up."""
+    prompt = f"""Thesis: {thesis}
+
+Steel man argument:
+{steel_man}
+
+Now stress test this thesis objectively. Return a JSON object with exactly these keys:
 {{
-  "confidence": "well_supported" | "contested" | "speculative",
-  "summary": "2–3 sentence synthesis of what this thesis is about and why it matters",
-  "supporting_ideas": [
-    {{"text": "...", "source_title": "...", "source_url": null}},
-    ...  // 3–5 items
-  ],
-  "counter_ideas": [
-    {{"text": "...", "source_title": "...", "source_url": null}},
-    ...  // 3–5 items
-  ],
-  "context": "Historical, cultural, industry, or political framing paragraph",
-  "more_questions": [
-    {{"text": "Follow-on question or thread"}},
-    ...  // 3–5 items
-  ],
-  "stress_test": {{
-    "assumptions": ["Core assumption 1", "Core assumption 2", "..."],  // 2–4 items
-    "strongest_objection": "The single strongest argument that would make this thesis false",
-    "evidence_flags": ["Where evidence is thin or potentially biased", "..."],  // 1–3 items
-    "confidence_signal": "well_supported" | "contested" | "speculative"
-  }}
+  "pros": ["3-4 strongest points in favour"],
+  "cons": ["3-4 strongest weaknesses or objections"],
+  "verdict": "One direct sentence: does this thesis stand up, and why or why not?"
 }}
 
-Rules:
-- Return valid JSON only. No markdown fences, no preamble.
-- supporting_ideas and counter_ideas: each needs a text field. source_title and source_url are optional.
-- stress_test tone: smart, slightly skeptical colleague — rigorous but not dismissive.
-- confidence_signal in stress_test should match the top-level confidence field.
-"""
+Return valid JSON only. No markdown fences. No preamble."""
 
     raw = await _call(
         system=(
-            "You are a research analyst and rigorous thinker. "
-            "You produce structured, well-sourced, balanced intelligence briefs. "
-            "You always return valid JSON when asked."
+            "You are a rigorous intellectual critic. You evaluate arguments fairly, "
+            "acknowledging both strengths and weaknesses. You always return valid JSON when asked."
         ),
         user=prompt,
-        max_tokens=3000,
+        max_tokens=600,
     )
 
-    # Strip markdown fences if present
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
             raw = raw[4:]
-    raw = raw.strip()
 
-    return json.loads(raw)
-
-
-async def generate_briefing(thesis: str, research: dict) -> str:
-    """
-    Generate a 300–500 word editorial-quality briefing.
-    This is the product's signature output — good enough to forward.
-    """
-    supporting = "\n".join(f"- {p['text']}" for p in research.get("supporting_ideas", []))
-    counter = "\n".join(f"- {p['text']}" for p in research.get("counter_ideas", []))
-    context = research.get("context", "")
-    stress = research.get("stress_test", {}).get("strongest_objection", "")
-
-    prompt = f"""Write a Briefing on the following thesis.
-
-Thesis: {thesis}
-
-Supporting arguments:
-{supporting}
-
-Counter arguments:
-{counter}
-
-Context:
-{context}
-
-Strongest objection:
-{stress}
-
-The Briefing must:
-- Be 300–500 words of editorial prose. No bullet points, no headers.
-- Have the voice of a smart, well-informed colleague writing an intelligent memo.
-- Cover: what the thesis claims and why it matters, the key supporting and counter arguments, relevant context, and a forward-looking observation.
-- Be good enough to forward directly. If it reads like generic AI, it fails.
-- Start with a strong, direct opening sentence. No "In recent years" or similar clichés.
-
-Output the briefing text only. No title. No preamble."""
-
-    return await _call(
-        system=(
-            "You are a senior editor writing intelligence briefings for senior executives, "
-            "journalists, and analysts. Your writing is clear, direct, and smart. "
-            "Every sentence earns its place."
-        ),
-        user=prompt,
-        max_tokens=800,
-    )
+    return json.loads(raw.strip())

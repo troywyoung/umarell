@@ -1,13 +1,13 @@
 import asyncio
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, HTTPException, Depends, Request
+from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc
 from database import init_db, get_db, AsyncSessionLocal
 from models import Observation
 from schemas import ObservationCreate, ObservationOut
-from pipeline import format_thesis, research_observation, generate_briefing
+from pipeline import format_thesis, generate_steel_man, generate_stress_test
 from config import settings
 
 
@@ -28,7 +28,7 @@ app.add_middleware(
 
 
 async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg"):
-    """Background task: format → research → update DB."""
+    """Background task: format thesis → steel man."""
     async with AsyncSessionLocal() as db:
         try:
             # Step 1: format thesis
@@ -40,18 +40,12 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             obs.status = "researching"
             await db.commit()
 
-            # Step 2: research
-            data = await research_observation(thesis)
+            # Step 2: steel man
+            steel_man = await generate_steel_man(thesis)
             obs = await db.get(Observation, observation_id)
             if not obs:
                 return
-            obs.confidence = data.get("confidence")
-            obs.summary = data.get("summary")
-            obs.supporting_ideas = data.get("supporting_ideas", [])
-            obs.counter_ideas = data.get("counter_ideas", [])
-            obs.context = data.get("context")
-            obs.more_questions = data.get("more_questions", [])
-            obs.stress_test = data.get("stress_test")
+            obs.summary = steel_man
             obs.status = "complete"
             await db.commit()
 
@@ -73,7 +67,6 @@ async def create_observation(body: ObservationCreate, db: AsyncSession = Depends
     image_b64 = body.image_data
     image_media_type = body.image_media_type or "image/jpeg"
 
-    # Log what we received for debugging
     if image_b64:
         print(f"[create_observation] image received, type={image_media_type}, b64_len={len(image_b64)}")
     else:
@@ -106,26 +99,20 @@ async def get_observation(obs_id: str, db: AsyncSession = Depends(get_db)):
     return obs
 
 
-@app.post("/observations/{obs_id}/briefing")
-async def create_briefing(obs_id: str, db: AsyncSession = Depends(get_db)):
+@app.post("/observations/{obs_id}/stress-test")
+async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
     if obs.status != "complete":
         raise HTTPException(400, "Research not complete")
-    if obs.briefing:
-        return {"briefing": obs.briefing}
-
-    research = {
-        "supporting_ideas": obs.supporting_ideas or [],
-        "counter_ideas": obs.counter_ideas or [],
-        "context": obs.context or "",
-        "stress_test": obs.stress_test or {},
-    }
-    briefing = await generate_briefing(obs.thesis or obs.raw_input, research)
-    obs.briefing = briefing
+    # Return cached result if already generated
+    if obs.stress_test and isinstance(obs.stress_test, dict) and "verdict" in obs.stress_test:
+        return obs.stress_test
+    result = await generate_stress_test(obs.thesis or obs.raw_input, obs.summary or "")
+    obs.stress_test = result
     await db.commit()
-    return {"briefing": briefing}
+    return result
 
 
 @app.delete("/observations/{obs_id}", status_code=204)

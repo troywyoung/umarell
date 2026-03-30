@@ -55,15 +55,15 @@ export function useObservations() {
     }
   }, []);
 
-  const requestBriefing = useCallback(async (id: string): Promise<string | null> => {
+  const requestStressTest = useCallback(async (id: string): Promise<import("../types").StressTest | null> => {
     try {
-      const resp = await fetch(`${API}/observations/${id}/briefing`, { method: "POST" });
+      const resp = await fetch(`${API}/observations/${id}/stress-test`, { method: "POST" });
       if (!resp.ok) return null;
       const data = await resp.json();
       setObservations((prev) =>
-        prev.map((o) => (o.id === id ? { ...o, briefing: data.briefing } : o))
+        prev.map((o) => (o.id === id ? { ...o, stress_test: data } : o))
       );
-      return data.briefing;
+      return data;
     } catch {
       return null;
     }
@@ -77,6 +77,6 @@ export function useObservations() {
   return {
     observations, loading,
     fetchObservations, submitObservation, pollObservation,
-    requestBriefing, deleteObservation,
+    requestStressTest, deleteObservation,
   };
 }

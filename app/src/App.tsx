@@ -414,16 +414,14 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
 
 // ─── Output ───────────────────────────────────────────────────────────────
 
-function OutputView({ obs: initialObs, onBack, pollObservation, requestBriefing }: {
+function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTest }: {
   obs: Observation;
   onBack: () => void;
   pollObservation: (id: string) => Promise<Observation | null>;
-  requestBriefing: (id: string) => Promise<string | null>;
+  requestStressTest: (id: string) => Promise<import("./types").StressTest | null>;
 }) {
   const [obs, setObs] = useState(initialObs);
-  const [tab, setTab] = useState<"research" | "stress">("research");
-  const [briefingLoading, setBriefingLoading] = useState(false);
-  const [showBriefing, setShowBriefing] = useState(false);
+  const [stressLoading, setStressLoading] = useState(false);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -440,31 +438,21 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestBriefing 
     return () => { if (pollRef.current) clearInterval(pollRef.current); };
   }, [obs.id, obs.status]);
 
-  const handleBriefing = async () => {
-    if (obs.briefing) { setShowBriefing(true); return; }
-    setBriefingLoading(true);
-    const text = await requestBriefing(obs.id);
-    setBriefingLoading(false);
-    if (text) { setObs((p) => ({ ...p, briefing: text })); setShowBriefing(true); }
+  const handleStressTest = async () => {
+    if (obs.stress_test?.verdict) return; // already loaded
+    setStressLoading(true);
+    const result = await requestStressTest(obs.id);
+    setStressLoading(false);
+    if (result) setObs((p) => ({ ...p, stress_test: result }));
   };
-
-  const handleShare = () => {
-    const text = obs.briefing ? `${obs.thesis}\n\n${obs.briefing}` : obs.thesis || obs.raw_input;
-    if (navigator.share) navigator.share({ title: obs.thesis || "Umarell", text });
-    else { navigator.clipboard.writeText(text); alert("Copied to clipboard"); }
-  };
-
-  if (showBriefing && obs.briefing) {
-    return <BriefingView obs={obs} onBack={() => setShowBriefing(false)} onShare={handleShare} />;
-  }
 
   const isProcessing = obs.status === "formatting" || obs.status === "researching";
   const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
-
-  // Thesis to display — hide raw placeholder while image is still being analyzed
   const displayThesis = (isProcessing && isImage && (!obs.thesis || obs.thesis === "image"))
     ? null
     : (obs.thesis && obs.thesis !== "image" ? obs.thesis : obs.raw_input !== "image" ? obs.raw_input : null);
+  const steelManParagraphs = (obs.summary || "").split(/\n+/).filter(Boolean);
+  const hasStressTest = obs.stress_test && obs.stress_test.verdict;
 
   if (obs.status === "error") {
     return (
@@ -474,226 +462,115 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestBriefing 
         </div>
         <div style={{ marginTop: 60, textAlign: "center" }}>
           <p style={{ fontSize: 28, marginBottom: 12 }}>⚠️</p>
-          <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", margin: "0 0 8px" }}>Research failed</p>
+          <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", margin: "0 0 8px" }}>Analysis failed</p>
           <p style={{ fontSize: 14, color: "#888", lineHeight: 1.6, margin: "0 0 28px" }}>
-            Something went wrong during analysis. This is usually an API issue — check that ANTHROPIC_API_KEY is set in your Railway API service.
+            Something went wrong. Check that ANTHROPIC_API_KEY is set in your Railway API service.
           </p>
-          <button onClick={onBack} style={{
-            background: "#1A1A1A", color: "#FFF", border: "none", borderRadius: 14,
-            padding: "13px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit",
-          }}>Try again</button>
+          <button onClick={onBack} style={{ background: "#1A1A1A", color: "#FFF", border: "none", borderRadius: 14, padding: "13px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Try again</button>
         </div>
       </div>
     );
   }
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 100 }}>
       {/* Nav */}
-      <div style={{
-        padding: "14px 16px",
-        display: "flex", justifyContent: "space-between", alignItems: "center",
-        borderBottom: "1px solid #EBEBEB",
-      }}>
+      <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", borderBottom: "1px solid #EBEBEB" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>‹ Back</button>
-        <button
-          onClick={handleBriefing}
-          disabled={briefingLoading || isProcessing}
-          style={{
-            background: isProcessing || briefingLoading ? "#D5D5CD" : "#C0392B",
-            color: "#FFF", border: "none", borderRadius: 20,
-            padding: "7px 16px", fontSize: 13, fontWeight: 700,
-            cursor: isProcessing || briefingLoading ? "not-allowed" : "pointer",
-            fontFamily: "inherit", letterSpacing: 0.1,
-          }}
-        >
-          {briefingLoading ? "Generating…" : obs.briefing ? "Briefing →" : "Briefing"}
-        </button>
       </div>
 
-      <div style={{ padding: "20px 16px 0" }}>
+      <div style={{ padding: "24px 20px 0" }}>
         {/* Processing banner */}
         {isProcessing && (
-          <div style={{
-            background: "#F0F0FF", borderRadius: 12, padding: "14px 16px",
-            marginBottom: 20, border: "1px solid #DDDDF0",
-          }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: isImage ? 6 : 0 }}>
+          <div style={{ background: "#F0F0FF", borderRadius: 12, padding: "14px 16px", marginBottom: 24, border: "1px solid #DDDDF0" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
               <ProcessingDots />
               <span style={{ fontSize: 14, color: "#444", fontWeight: 600 }}>
                 {obs.status === "formatting"
-                  ? (isImage ? "Extracting observation from image…" : "Formatting thesis…")
-                  : "Researching…"}
+                  ? (isImage ? "Reading image…" : "Formatting thesis…")
+                  : "Building steel man…"}
               </span>
             </div>
-            {isImage && obs.status === "formatting" && (
-              <p style={{ fontSize: 12, color: "#888", margin: 0, paddingLeft: 26 }}>
-                Claude is reading your image and building a research thesis.
-              </p>
-            )}
           </div>
         )}
 
-        {/* Confidence + Thesis */}
-        <div style={{ marginBottom: 20 }}>
-          {obs.confidence && (
-            <div style={{ marginBottom: 10 }}>
-              <ConfidenceBadge value={obs.confidence} />
-            </div>
-          )}
+        {/* Thesis */}
+        <div style={{ marginBottom: 28 }}>
           {displayThesis ? (
-            <p style={{ fontSize: 18, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.3, margin: 0 }}>
+            <h1 style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.4, margin: 0 }}>
               {displayThesis}
-            </p>
+            </h1>
           ) : isProcessing ? (
-            <div style={{ height: 24, background: "#EEEEE8", borderRadius: 6, width: "80%" }} />
+            <div style={{ height: 26, background: "#EEEEE8", borderRadius: 6, width: "80%" }} />
           ) : null}
         </div>
 
-        {/* Tabs — only show once research data exists */}
-        {obs.status === "complete" && (
-          <>
-            <div style={{ display: "flex", gap: 6, marginBottom: 16 }}>
-              {(["research", "stress"] as const).map((t) => (
-                <button
-                  key={t}
-                  onClick={() => setTab(t)}
-                  style={{
-                    padding: "6px 14px", borderRadius: 20, border: "none",
-                    fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "inherit",
-                    background: tab === t ? "#1A1A1A" : "#EFEFED",
-                    color: tab === t ? "#FFF" : "#666",
-                  }}
-                >
-                  {t === "research" ? "Research" : "Stress Test"}
-                </button>
+        {/* Steel Man */}
+        {obs.status === "complete" && steelManParagraphs.length > 0 && (
+          <div style={{ marginBottom: 32 }}>
+            <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 14px" }}>
+              Steel Man
+            </p>
+            {steelManParagraphs.map((para, i) => (
+              <p key={i} style={{
+                fontSize: 16, color: "#2A2A28", lineHeight: 1.8,
+                margin: "0 0 14px", letterSpacing: 0.1,
+              }}>
+                {para}
+              </p>
+            ))}
+          </div>
+        )}
+
+        {/* Stress Test results */}
+        {hasStressTest && (
+          <div style={{ marginBottom: 28 }}>
+            <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 14px" }}>
+              Stress Test
+            </p>
+
+            <div style={{ marginBottom: 14 }}>
+              {obs.stress_test!.pros.map((pro, i) => (
+                <div key={i} style={{ display: "flex", gap: 10, marginBottom: 8 }}>
+                  <span style={{ color: "#2E7D32", fontWeight: 700, fontSize: 15, flexShrink: 0, marginTop: 1 }}>+</span>
+                  <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.6, margin: 0 }}>{pro}</p>
+                </div>
               ))}
             </div>
 
-            {tab === "research" && (
-              <div>
-                {/* Summary */}
-                {obs.summary && (
-                  <div style={{ marginBottom: 20 }}>
-                    <SectionLabel>Summary</SectionLabel>
-                    <p style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.7, margin: 0 }}>{obs.summary}</p>
-                  </div>
-                )}
-
-                {/* Supporting ideas */}
-                {obs.supporting_ideas && obs.supporting_ideas.length > 0 && (
-                  <div style={{ marginBottom: 20 }}>
-                    <SectionLabel>Supporting ideas</SectionLabel>
-                    {obs.supporting_ideas.map((p, i) => <PointCard key={i} point={p} accent="#2E7D32" />)}
-                  </div>
-                )}
-
-                {/* Counter ideas */}
-                {obs.counter_ideas && obs.counter_ideas.length > 0 && (
-                  <div style={{ marginBottom: 20 }}>
-                    <SectionLabel>Counter ideas</SectionLabel>
-                    {obs.counter_ideas.map((p, i) => <PointCard key={i} point={p} accent="#C0392B" />)}
-                  </div>
-                )}
-
-                {/* Context */}
-                {obs.context && (
-                  <div style={{ marginBottom: 20 }}>
-                    <SectionLabel>Context</SectionLabel>
-                    <p style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.7, margin: 0 }}>{obs.context}</p>
-                  </div>
-                )}
-
-                {/* More questions */}
-                {obs.more_questions && obs.more_questions.length > 0 && (
-                  <div style={{ marginBottom: 20 }}>
-                    <SectionLabel>More questions</SectionLabel>
-                    {obs.more_questions.map((q, i) => (
-                      <div key={i} style={{
-                        display: "flex", justifyContent: "space-between", alignItems: "flex-start",
-                        padding: "11px 0", borderBottom: "1px solid #F0F0EC",
-                      }}>
-                        <span style={{ fontSize: 14, color: "#1A1A1A", lineHeight: 1.5, flex: 1, paddingRight: 12 }}>{q.text}</span>
-                        <span style={{ color: "#B0B0A8", flexShrink: 0, marginTop: 2 }}>→</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )}
-
-            {tab === "stress" && obs.stress_test && (
-              <div>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
-                  <SectionLabel>Stress Test</SectionLabel>
-                  <ConfidenceBadge value={obs.stress_test.confidence_signal} />
+            <div style={{ marginBottom: 18 }}>
+              {obs.stress_test!.cons.map((con, i) => (
+                <div key={i} style={{ display: "flex", gap: 10, marginBottom: 8 }}>
+                  <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 15, flexShrink: 0, marginTop: 1 }}>−</span>
+                  <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.6, margin: 0 }}>{con}</p>
                 </div>
+              ))}
+            </div>
 
-                <div style={{ marginBottom: 18 }}>
-                  <p style={{ fontSize: 11, fontWeight: 700, color: "#7B3F00", letterSpacing: 0.6, textTransform: "uppercase", margin: "0 0 8px" }}>Core assumptions</p>
-                  {obs.stress_test.assumptions.map((a, i) => (
-                    <div key={i} style={{
-                      display: "flex", gap: 10, marginBottom: 8,
-                      background: "#FFF8F5", borderRadius: 10, padding: "10px 12px",
-                    }}>
-                      <span style={{ fontSize: 12, fontWeight: 700, color: "#7B3F00", minWidth: 18 }}>{i + 1}.</span>
-                      <span style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.55 }}>{a}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <div style={{ marginBottom: 18 }}>
-                  <p style={{ fontSize: 11, fontWeight: 700, color: "#7B3F00", letterSpacing: 0.6, textTransform: "uppercase", margin: "0 0 8px" }}>Strongest objection</p>
-                  <div style={{ background: "#FFF8F5", borderRadius: 10, padding: "12px 14px", borderLeft: "3px solid #C0392B" }}>
-                    <p style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.65, margin: 0, fontStyle: "italic" }}>
-                      "{obs.stress_test.strongest_objection}"
-                    </p>
-                  </div>
-                </div>
-
-                {obs.stress_test.evidence_flags.length > 0 && (
-                  <div>
-                    <p style={{ fontSize: 11, fontWeight: 700, color: "#7B3F00", letterSpacing: 0.6, textTransform: "uppercase", margin: "0 0 8px" }}>Evidence quality</p>
-                    {obs.stress_test.evidence_flags.map((f, i) => (
-                      <p key={i} style={{ fontSize: 14, color: "#3A3A38", lineHeight: 1.65, margin: "0 0 6px" }}>— {f}</p>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )}
-          </>
+            <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px", borderLeft: "3px solid #1A1A1A" }}>
+              <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Verdict</p>
+              <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{obs.stress_test!.verdict}</p>
+            </div>
+          </div>
         )}
-      </div>
-    </div>
-  );
-}
 
-// ─── Briefing ─────────────────────────────────────────────────────────────
-
-function BriefingView({ obs, onBack, onShare }: {
-  obs: Observation;
-  onBack: () => void;
-  onShare: () => void;
-}) {
-  // Split briefing into paragraphs for readable rendering
-  const paragraphs = (obs.briefing || "").split(/\n+/).filter(Boolean);
-
-  return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 60 }}>
-      <div style={{
-        padding: "14px 16px", borderBottom: "1px solid #EBEBEB",
-        display: "flex", justifyContent: "space-between", alignItems: "center",
-      }}>
-        <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>‹ Back</button>
-        <button onClick={onShare} style={{ background: "none", border: "none", fontSize: 13, fontWeight: 700, color: "#1A1A1A", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>Share</button>
-      </div>
-      <div style={{ padding: "24px 20px 0" }}>
-        <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1.4, textTransform: "uppercase", margin: "0 0 10px" }}>Briefing</p>
-        <h1 style={{ fontSize: 19, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.3, margin: "0 0 18px" }}>{obs.thesis}</h1>
-        <div style={{ width: 32, height: 2, background: "#1A1A1A", marginBottom: 22 }} />
-        {paragraphs.map((p, i) => (
-          <p key={i} style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.8, margin: "0 0 16px", letterSpacing: 0.1 }}>{p}</p>
-        ))}
+        {/* Stress Test button */}
+        {obs.status === "complete" && !hasStressTest && (
+          <button
+            onClick={handleStressTest}
+            disabled={stressLoading}
+            style={{
+              width: "100%", background: stressLoading ? "#D5D5CD" : "#1A1A1A",
+              color: "#FFF", border: "none", borderRadius: 14,
+              padding: "16px 0", fontSize: 16, fontWeight: 700,
+              cursor: stressLoading ? "not-allowed" : "pointer",
+              fontFamily: "inherit", letterSpacing: -0.2,
+              WebkitTapHighlightColor: "transparent",
+            }}
+          >
+            {stressLoading ? "Testing…" : "Stress Test →"}
+          </button>
+        )}
       </div>
     </div>
   );
@@ -725,37 +602,12 @@ function ProcessingDots() {
   );
 }
 
-function SectionLabel({ children }: { children: React.ReactNode }) {
-  return (
-    <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 0.9, textTransform: "uppercase", margin: "0 0 10px" }}>
-      {children}
-    </p>
-  );
-}
-
-function PointCard({ point, accent }: { point: { text: string; source_title?: string }; accent: string }) {
-  return (
-    <div style={{
-      background: "#FFF", borderRadius: 10, padding: "12px 14px",
-      marginBottom: 8, boxShadow: "0 1px 4px rgba(0,0,0,0.05)",
-      borderLeft: `3px solid ${accent}20`,
-    }}>
-      <p style={{ fontSize: 14, color: "#2A2A28", lineHeight: 1.6, margin: 0 }}>{point.text}</p>
-      {point.source_title && (
-        <p style={{ fontSize: 11, color: "#999", margin: "6px 0 0", display: "flex", alignItems: "center", gap: 4 }}>
-          <span style={{ fontSize: 9 }}>↗</span> {point.source_title}
-        </p>
-      )}
-    </div>
-  );
-}
-
 // ─── Root ─────────────────────────────────────────────────────────────────
 
 type View = "home" | "capture" | "output";
 
 export default function App() {
-  const { observations, loading, fetchObservations, submitObservation, pollObservation, requestBriefing, deleteObservation } = useObservations();
+  const { observations, loading, fetchObservations, submitObservation, pollObservation, requestStressTest, deleteObservation } = useObservations();
   const [view, setView] = useState<View>("home");
   const [selectedObs, setSelectedObs] = useState<Observation | null>(null);
 
@@ -778,7 +630,7 @@ export default function App() {
         obs={selectedObs}
         onBack={() => { setView("home"); fetchObservations(); }}
         pollObservation={pollObservation}
-        requestBriefing={requestBriefing}
+        requestStressTest={requestStressTest}
       />
     );
   }
