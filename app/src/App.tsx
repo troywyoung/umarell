@@ -418,9 +418,6 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
 
   const isProcessing = obs.status === "formatting" || obs.status === "researching";
   const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
-  const displayThesis = (isProcessing && isImage && (!obs.thesis || obs.thesis === "image"))
-    ? null
-    : (obs.thesis && obs.thesis !== "image" ? obs.thesis : obs.raw_input !== "image" ? obs.raw_input : null);
   const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
 
   if (obs.status === "error") {
@@ -448,24 +445,34 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
       </div>
 
       <div style={{ padding: "24px 20px 0" }}>
-        {/* Processing */}
+
+        {/* While processing: show full original input + step progress */}
         {isProcessing && (
-          <div style={{ background: "#F0F0FF", borderRadius: 12, padding: "14px 16px", marginBottom: 24, border: "1px solid #DDDDF0" }}>
-            <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-              <ProcessingDots />
-              <span style={{ fontSize: 14, color: "#444", fontWeight: 600 }}>
-                {obs.status === "formatting" ? (isImage ? "Reading image…" : "Formatting thesis…") : "Building steel man…"}
-              </span>
+          <>
+            {/* Original observation */}
+            {!isImage && obs.raw_input && obs.raw_input !== "image" && (
+              <div style={{ background: "#F7F7F5", borderRadius: 12, padding: "14px 16px", marginBottom: 16, borderLeft: "3px solid #D0D0C8" }}>
+                <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Your observation</p>
+                <p style={{ fontSize: 15, color: "#3A3A38", lineHeight: 1.65, margin: 0 }}>{obs.raw_input}</p>
+              </div>
+            )}
+
+            {/* Step progress */}
+            <div style={{ marginBottom: 24 }}>
+              <StepRow label="Reading observation" done={obs.status !== "formatting"} active={obs.status === "formatting"} />
+              <StepRow label="Forming thesis" done={obs.status === "researching" || obs.status === "complete"} active={obs.status === "formatting"} />
+              <StepRow label="Building steel man" done={obs.status === "complete"} active={obs.status === "researching"} />
             </div>
-          </div>
+          </>
         )}
 
-        {/* Thesis */}
-        <div style={{ marginBottom: obs.status === "complete" ? 12 : 20 }}>
-          {displayThesis
-            ? <h1 style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.4, margin: 0 }}>{displayThesis}</h1>
-            : isProcessing ? <div style={{ height: 26, background: "#EEEEE8", borderRadius: 6, width: "80%" }} /> : null}
-        </div>
+        {/* Thesis (shown once complete) */}
+        {obs.status === "complete" && obs.thesis && obs.thesis !== "image" && (
+          <div style={{ marginBottom: 12 }}>
+            <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Thesis</p>
+            <h1 style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.4, margin: 0 }}>{obs.thesis}</h1>
+          </div>
+        )}
 
         {/* Metadata row: evidence type, score, tags */}
         {obs.status === "complete" && (obs.evidence_type || obs.score != null || obs.tags?.length) && (
@@ -561,6 +568,25 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
 }
 
 // ─── Shared components ────────────────────────────────────────────────────
+
+function StepRow({ label, done, active }: { label: string; done: boolean; active: boolean }) {
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10, opacity: done || active ? 1 : 0.35 }}>
+      <div style={{
+        width: 20, height: 20, borderRadius: "50%", flexShrink: 0,
+        background: done ? "#1A1A1A" : active ? "#F0F0FF" : "#EEEEE8",
+        border: active ? "2px solid #6666CC" : done ? "none" : "2px solid #D5D5CD",
+        display: "flex", alignItems: "center", justifyContent: "center",
+      }}>
+        {done && <span style={{ color: "#FFF", fontSize: 11, fontWeight: 700 }}>✓</span>}
+        {active && <ProcessingDots />}
+      </div>
+      <span style={{ fontSize: 14, color: done ? "#1A1A1A" : active ? "#6666CC" : "#AAA", fontWeight: active || done ? 600 : 400 }}>
+        {label}
+      </span>
+    </div>
+  );
+}
 
 function ProcessingDots() {
   return (
