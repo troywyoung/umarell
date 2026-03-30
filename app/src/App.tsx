@@ -311,8 +311,8 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
         </div>
       )}
 
-      {/* Transcript display */}
-      {transcript && !imagePreview && (
+      {/* Transcript display — voice mode only (not shown when text input is active) */}
+      {transcript && !imagePreview && !showText && (
         <div style={{ background: "#FFF", borderRadius: 16, padding: "16px", marginBottom: 20, boxShadow: "0 2px 8px rgba(0,0,0,0.06)", position: "relative" }}>
           <p style={{ fontSize: 16, color: "#1A1A1A", lineHeight: 1.6, margin: 0 }}>{transcript}</p>
           <button
