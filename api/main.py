@@ -1,0 +1,128 @@
+import asyncio
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, HTTPException, Depends
+from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select, desc
+from database import init_db, get_db, AsyncSessionLocal
+from models import Observation
+from schemas import ObservationCreate, ObservationOut
+from pipeline import format_thesis, research_observation, generate_briefing
+from config import settings
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    await init_db()
+    yield
+
+
+app = FastAPI(title="Umarell API", lifespan=lifespan)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.cors_origins.split(","),
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, image_b64: str | None = None):
+    """Background task: format → research → update DB."""
+    async with AsyncSessionLocal() as db:
+        try:
+            # Step 1: format thesis
+            thesis = await format_thesis(raw_input, input_type, image_b64)
+            obs = await db.get(Observation, observation_id)
+            if not obs:
+                return
+            obs.thesis = thesis
+            obs.status = "researching"
+            await db.commit()
+
+            # Step 2: research
+            data = await research_observation(thesis)
+            obs = await db.get(Observation, observation_id)
+            if not obs:
+                return
+            obs.confidence = data.get("confidence")
+            obs.summary = data.get("summary")
+            obs.supporting_ideas = data.get("supporting_ideas", [])
+            obs.counter_ideas = data.get("counter_ideas", [])
+            obs.context = data.get("context")
+            obs.more_questions = data.get("more_questions", [])
+            obs.stress_test = data.get("stress_test")
+            obs.status = "complete"
+            await db.commit()
+
+        except Exception as e:
+            obs = await db.get(Observation, observation_id)
+            if obs:
+                obs.status = "error"
+                await db.commit()
+            print(f"Pipeline error for {observation_id}: {e}")
+
+
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
+
+
+@app.post("/observations", response_model=ObservationOut, status_code=201)
+async def create_observation(body: ObservationCreate, db: AsyncSession = Depends(get_db)):
+    obs = Observation(
+        raw_input=body.raw_input,
+        input_type=body.input_type,
+        thesis=body.raw_input[:120],  # placeholder
+        status="formatting",
+    )
+    db.add(obs)
+    await db.commit()
+    await db.refresh(obs)
+    asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, body.image_data))
+    return obs
+
+
+@app.get("/observations", response_model=list[ObservationOut])
+async def list_observations(db: AsyncSession = Depends(get_db)):
+    result = await db.execute(select(Observation).order_by(desc(Observation.created_at)).limit(100))
+    return result.scalars().all()
+
+
+@app.get("/observations/{obs_id}", response_model=ObservationOut)
+async def get_observation(obs_id: str, db: AsyncSession = Depends(get_db)):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    return obs
+
+
+@app.post("/observations/{obs_id}/briefing")
+async def create_briefing(obs_id: str, db: AsyncSession = Depends(get_db)):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    if obs.status != "complete":
+        raise HTTPException(400, "Research not complete")
+    if obs.briefing:
+        return {"briefing": obs.briefing}
+
+    research = {
+        "supporting_ideas": obs.supporting_ideas or [],
+        "counter_ideas": obs.counter_ideas or [],
+        "context": obs.context or "",
+        "stress_test": obs.stress_test or {},
+    }
+    briefing = await generate_briefing(obs.thesis or obs.raw_input, research)
+    obs.briefing = briefing
+    await db.commit()
+    return {"briefing": briefing}
+
+
+@app.delete("/observations/{obs_id}", status_code=204)
+async def delete_observation(obs_id: str, db: AsyncSession = Depends(get_db)):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    await db.delete(obs)
+    await db.commit()
