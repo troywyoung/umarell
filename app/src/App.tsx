@@ -421,6 +421,7 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
   requestStressTest: (id: string) => Promise<import("./types").StressTest | null>;
 }) {
   const [obs, setObs] = useState(initialObs);
+  const [tab, setTab] = useState<"steel" | "stress">("steel");
   const [stressLoading, setStressLoading] = useState(false);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -438,8 +439,9 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
     return () => { if (pollRef.current) clearInterval(pollRef.current); };
   }, [obs.id, obs.status]);
 
-  const handleStressTest = async () => {
-    if (obs.stress_test?.verdict) return; // already loaded
+  const handleStressTab = async () => {
+    setTab("stress");
+    if (obs.stress_test?.verdict) return;
     setStressLoading(true);
     const result = await requestStressTest(obs.id);
     setStressLoading(false);
@@ -451,8 +453,7 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
   const displayThesis = (isProcessing && isImage && (!obs.thesis || obs.thesis === "image"))
     ? null
     : (obs.thesis && obs.thesis !== "image" ? obs.thesis : obs.raw_input !== "image" ? obs.raw_input : null);
-  const steelManParagraphs = (obs.summary || "").split(/\n+/).filter(Boolean);
-  const hasStressTest = obs.stress_test && obs.stress_test.verdict;
+  const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
 
   if (obs.status === "error") {
     return (
@@ -473,103 +474,96 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
   }
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 100 }}>
-      {/* Nav */}
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
       <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", borderBottom: "1px solid #EBEBEB" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>‹ Back</button>
       </div>
 
       <div style={{ padding: "24px 20px 0" }}>
-        {/* Processing banner */}
+        {/* Processing */}
         {isProcessing && (
           <div style={{ background: "#F0F0FF", borderRadius: 12, padding: "14px 16px", marginBottom: 24, border: "1px solid #DDDDF0" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
               <ProcessingDots />
               <span style={{ fontSize: 14, color: "#444", fontWeight: 600 }}>
-                {obs.status === "formatting"
-                  ? (isImage ? "Reading image…" : "Formatting thesis…")
-                  : "Building steel man…"}
+                {obs.status === "formatting" ? (isImage ? "Reading image…" : "Formatting thesis…") : "Building steel man…"}
               </span>
             </div>
           </div>
         )}
 
         {/* Thesis */}
-        <div style={{ marginBottom: 28 }}>
-          {displayThesis ? (
-            <h1 style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.4, margin: 0 }}>
-              {displayThesis}
-            </h1>
-          ) : isProcessing ? (
-            <div style={{ height: 26, background: "#EEEEE8", borderRadius: 6, width: "80%" }} />
-          ) : null}
+        <div style={{ marginBottom: 20 }}>
+          {displayThesis
+            ? <h1 style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.4, margin: 0 }}>{displayThesis}</h1>
+            : isProcessing ? <div style={{ height: 26, background: "#EEEEE8", borderRadius: 6, width: "80%" }} /> : null}
         </div>
 
-        {/* Steel Man */}
-        {obs.status === "complete" && steelManParagraphs.length > 0 && (
-          <div style={{ marginBottom: 32 }}>
-            <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 14px" }}>
-              Steel Man
-            </p>
-            {steelManParagraphs.map((para, i) => (
-              <p key={i} style={{
-                fontSize: 16, color: "#2A2A28", lineHeight: 1.8,
-                margin: "0 0 14px", letterSpacing: 0.1,
-              }}>
-                {para}
-              </p>
-            ))}
+        {/* Tab buttons */}
+        {obs.status === "complete" && (
+          <div style={{ display: "flex", gap: 8, marginBottom: 24 }}>
+            <button
+              onClick={() => setTab("steel")}
+              style={{
+                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
+                background: tab === "steel" ? "#1A1A1A" : "#EFEFED",
+                color: tab === "steel" ? "#FFF" : "#666",
+                fontSize: 14, fontWeight: 700, fontFamily: "inherit",
+                WebkitTapHighlightColor: "transparent",
+              }}
+            >Steel Man</button>
+            <button
+              onClick={handleStressTab}
+              style={{
+                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
+                background: tab === "stress" ? "#1A1A1A" : "#EFEFED",
+                color: tab === "stress" ? "#FFF" : "#666",
+                fontSize: 14, fontWeight: 700, fontFamily: "inherit",
+                WebkitTapHighlightColor: "transparent",
+              }}
+            >Stress Test</button>
           </div>
         )}
 
-        {/* Stress Test results */}
-        {hasStressTest && (
-          <div style={{ marginBottom: 28 }}>
-            <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 14px" }}>
-              Stress Test
-            </p>
-
-            <div style={{ marginBottom: 14 }}>
-              {obs.stress_test!.pros.map((pro, i) => (
-                <div key={i} style={{ display: "flex", gap: 10, marginBottom: 8 }}>
-                  <span style={{ color: "#2E7D32", fontWeight: 700, fontSize: 15, flexShrink: 0, marginTop: 1 }}>+</span>
-                  <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.6, margin: 0 }}>{pro}</p>
-                </div>
-              ))}
-            </div>
-
-            <div style={{ marginBottom: 18 }}>
-              {obs.stress_test!.cons.map((con, i) => (
-                <div key={i} style={{ display: "flex", gap: 10, marginBottom: 8 }}>
-                  <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 15, flexShrink: 0, marginTop: 1 }}>−</span>
-                  <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.6, margin: 0 }}>{con}</p>
-                </div>
-              ))}
-            </div>
-
-            <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px", borderLeft: "3px solid #1A1A1A" }}>
-              <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Verdict</p>
-              <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{obs.stress_test!.verdict}</p>
-            </div>
+        {/* Steel Man content */}
+        {obs.status === "complete" && tab === "steel" && steelBullets.map((bullet, i) => (
+          <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
+            <span style={{ color: "#1A1A1A", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>•</span>
+            <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
           </div>
-        )}
+        ))}
 
-        {/* Stress Test button */}
-        {obs.status === "complete" && !hasStressTest && (
-          <button
-            onClick={handleStressTest}
-            disabled={stressLoading}
-            style={{
-              width: "100%", background: stressLoading ? "#D5D5CD" : "#1A1A1A",
-              color: "#FFF", border: "none", borderRadius: 14,
-              padding: "16px 0", fontSize: 16, fontWeight: 700,
-              cursor: stressLoading ? "not-allowed" : "pointer",
-              fontFamily: "inherit", letterSpacing: -0.2,
-              WebkitTapHighlightColor: "transparent",
-            }}
-          >
-            {stressLoading ? "Testing…" : "Stress Test →"}
-          </button>
+        {/* Stress Test content */}
+        {tab === "stress" && (
+          stressLoading ? (
+            <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "20px 0" }}>
+              <ProcessingDots />
+              <span style={{ fontSize: 14, color: "#666" }}>Running stress test…</span>
+            </div>
+          ) : obs.stress_test?.verdict ? (
+            <div>
+              <div style={{ marginBottom: 16 }}>
+                {obs.stress_test.pros.map((pro, i) => (
+                  <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
+                    <span style={{ color: "#2E7D32", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>+</span>
+                    <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{pro}</p>
+                  </div>
+                ))}
+              </div>
+              <div style={{ marginBottom: 20 }}>
+                {obs.stress_test.cons.map((con, i) => (
+                  <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
+                    <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>−</span>
+                    <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{con}</p>
+                  </div>
+                ))}
+              </div>
+              <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px", borderLeft: "3px solid #1A1A1A" }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Verdict</p>
+                <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{obs.stress_test.verdict}</p>
+              </div>
+            </div>
+          ) : null
         )}
       </div>
     </div>

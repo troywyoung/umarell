@@ -85,16 +85,16 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
 
 
 async def generate_steel_man(thesis: str) -> str:
-    """Generate the strongest possible case FOR the thesis — 2-3 paragraphs of prose."""
+    """Generate 4-5 punchy bullet points making the strongest case FOR the thesis."""
     return await _call(
         system=(
-            "You are a brilliant advocate. Given a thesis, build the most compelling, "
-            "intellectually rigorous case FOR it. Present the strongest evidence, reasoning, "
-            "and framing that supports the thesis. Be specific and persuasive. "
-            "Write 2-3 tight paragraphs of clear prose. No headers. No bullet points. No preamble."
+            "You are a brilliant advocate. Given a thesis, produce 4-5 concise bullet points "
+            "making the strongest possible case FOR it. Each bullet should be one crisp sentence — "
+            "specific, compelling, and grounded. No preamble. No headers. "
+            "Output each bullet on its own line starting with '•'."
         ),
-        user=f"Build the steel man case for this thesis: {thesis}",
-        max_tokens=600,
+        user=f"Steel man this thesis: {thesis}",
+        max_tokens=400,
     )
 
 
