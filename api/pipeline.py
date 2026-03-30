@@ -36,8 +36,16 @@ async def _fetch_url(url: str) -> str:
         return f"[Could not fetch URL: {e}]"
 
 
-async def extract_from_image(image_b64: str, media_type: str = "image/jpeg") -> str:
+async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", context: str | None = None) -> str:
     """Use Claude vision to extract the core observation from a screenshot or photo."""
+    if context:
+        question = (
+            f"The user adds this context or question: \"{context}\"\n\n"
+            "Combining what you see in the image with this context, describe the core observation or insight in 1–3 plain sentences."
+        )
+    else:
+        question = "What is the core observation or idea in this image?"
+
     msg = await client.messages.create(
         model=MODEL,
         max_tokens=400,
@@ -57,7 +65,7 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg") -> 
                         "data": image_b64,
                     },
                 },
-                {"type": "text", "text": "What is the core observation or idea in this image?"},
+                {"type": "text", "text": question},
             ],
         }],
     )
@@ -67,8 +75,9 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg") -> 
 async def format_thesis(raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg") -> str:
     """Turn raw input into a clear, researchable thesis (1–2 sentences)."""
     if input_type in ("photo", "screenshot") and image_b64:
-        print(f"[format_thesis] extracting from image, media_type={image_media_type}, b64_len={len(image_b64)}")
-        content = await extract_from_image(image_b64, image_media_type)
+        print(f"[format_thesis] extracting from image, media_type={image_media_type}, b64_len={len(image_b64)}, context={raw_input[:60] if raw_input and raw_input != 'image' else None}")
+        context = raw_input if raw_input and raw_input != "image" else None
+        content = await extract_from_image(image_b64, image_media_type, context=context)
         print(f"[format_thesis] image extracted: {content[:100]}")
     elif input_type == "url":
         content = await _fetch_url(raw_input)

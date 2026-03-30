@@ -130,7 +130,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
 
 function CaptureView({ onSubmit, onSubmitImage, onBack }: {
   onSubmit: (text: string) => Promise<void>;
-  onSubmitImage: (b64: string, mediaType: string) => Promise<void>;
+  onSubmitImage: (b64: string, mediaType: string, context?: string) => Promise<void>;
   onBack: () => void;
 }) {
   const [transcript, setTranscript] = useState("");
@@ -214,7 +214,6 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
         const resized = canvas.toDataURL("image/jpeg", 0.85);
         setImagePreview(resized);
         setImageMeta({ b64: resized.split(",")[1], mediaType: "image/jpeg" });
-        setTranscript("");
       };
       img.src = reader.result as string;
     };
@@ -227,7 +226,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
     setSubmitting(true);
     try {
       if (imageMeta) {
-        await onSubmitImage(imageMeta.b64, imageMeta.mediaType);
+        await onSubmitImage(imageMeta.b64, imageMeta.mediaType, transcript.trim() || undefined);
       } else if (transcript.trim()) {
         await onSubmit(transcript.trim());
       }
@@ -255,19 +254,42 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
         Speak your observation or attach a screenshot.
       </p>
 
-      {/* Image preview */}
+      {/* Image preview + optional voice/text context */}
       {imagePreview && (
-        <div style={{ position: "relative", marginBottom: 24 }}>
-          <img src={imagePreview} alt="Preview" style={{ width: "100%", borderRadius: 16, maxHeight: 220, objectFit: "cover" }} />
-          <button
-            onClick={() => { setImagePreview(null); setImageMeta(null); if (fileRef.current) fileRef.current.value = ""; }}
-            style={{
-              position: "absolute", top: 10, right: 10,
-              background: "rgba(0,0,0,0.55)", border: "none", borderRadius: "50%",
-              width: 30, height: 30, color: "#fff", fontSize: 16, cursor: "pointer",
-              display: "flex", alignItems: "center", justifyContent: "center",
-            }}
-          >×</button>
+        <div style={{ marginBottom: 16 }}>
+          <div style={{ position: "relative", marginBottom: 12 }}>
+            <img src={imagePreview} alt="Preview" style={{ width: "100%", borderRadius: 16, maxHeight: 200, objectFit: "cover" }} />
+            <button
+              onClick={() => { setImagePreview(null); setImageMeta(null); if (fileRef.current) fileRef.current.value = ""; }}
+              style={{
+                position: "absolute", top: 10, right: 10,
+                background: "rgba(0,0,0,0.55)", border: "none", borderRadius: "50%",
+                width: 30, height: 30, color: "#fff", fontSize: 16, cursor: "pointer",
+                display: "flex", alignItems: "center", justifyContent: "center",
+              }}
+            >×</button>
+          </div>
+          {/* Voice context beneath image */}
+          <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
+            <button
+              onClick={toggleVoice}
+              style={{
+                flexShrink: 0, width: 48, height: 48, borderRadius: "50%", border: "none", cursor: "pointer",
+                background: listening ? "#1A1A1A" : "#F0F0ED", color: listening ? "#FFF" : "#444",
+                fontSize: 20, display: "flex", alignItems: "center", justifyContent: "center",
+                WebkitTapHighlightColor: "transparent",
+              }}
+            >{listening ? "⏹" : "🎤"}</button>
+            <div style={{ flex: 1, background: "#FFF", borderRadius: 12, padding: "10px 12px", boxShadow: "0 1px 4px rgba(0,0,0,0.06)" }}>
+              {transcript ? (
+                <p style={{ fontSize: 14, color: "#1A1A1A", lineHeight: 1.5, margin: 0 }}>{transcript}
+                  <button onClick={() => setTranscript("")} style={{ background: "none", border: "none", color: "#CCC", fontSize: 14, cursor: "pointer", marginLeft: 6, verticalAlign: "middle" }}>×</button>
+                </p>
+              ) : (
+                <p style={{ fontSize: 14, color: "#AAA", margin: 0 }}>{listening ? "Listening…" : "Add voice context (optional)"}</p>
+              )}
+            </div>
+          </div>
         </div>
       )}
 
@@ -744,8 +766,8 @@ export default function App() {
     setSelectedObs(obs); setView("output");
   };
 
-  const handleSubmitImage = async (b64: string, mediaType: string) => {
-    const obs = await submitObservation("image", "screenshot", b64, mediaType);
+  const handleSubmitImage = async (b64: string, mediaType: string, context?: string) => {
+    const obs = await submitObservation(context || "image", "screenshot", b64, mediaType);
     setSelectedObs(obs); setView("output");
   };
 
