@@ -8,9 +8,8 @@ ENV VITE_API_URL=$VITE_API_URL
 RUN npm run build
 
 FROM node:20-alpine
+RUN npm install -g serve
 WORKDIR /app
 COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./
 EXPOSE 4173
-CMD ["npx", "vite", "preview", "--host", "0.0.0.0", "--port", "4173"]
+CMD ["serve", "-s", "dist", "-l", "4173"]
