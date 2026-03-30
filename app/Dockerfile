@@ -8,6 +8,7 @@ RUN npm run build
 FROM nginx:alpine
 COPY --from=builder /app/dist /usr/share/nginx/html
 COPY nginx.conf.template /etc/nginx/nginx.conf.template
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 EXPOSE 80
-# envsubst with '${API_URL}' substitutes ONLY that variable — nginx's own $variables are left untouched
-CMD ["/bin/sh", "-c", "envsubst '${API_URL}' < /etc/nginx/nginx.conf.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"]
+CMD ["/start.sh"]
