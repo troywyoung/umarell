@@ -248,6 +248,9 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
             onKeyDown={(e) => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) handleSubmit(); }}
             placeholder="Type your observation…"
             rows={5}
+            autoComplete="off"
+            autoCorrect="off"
+            spellCheck={false}
             style={{
               width: "100%", border: "none", outline: "none",
               fontSize: 16, color: "#1A1A1A", lineHeight: 1.6,
