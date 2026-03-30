@@ -98,6 +98,39 @@ async def generate_steel_man(thesis: str) -> str:
     )
 
 
+async def generate_metadata(thesis: str, steel_man: str) -> dict:
+    """Generate evidence score (0-100), topic tags, and evidence type label."""
+    prompt = f"""Thesis: {thesis}
+
+Steel man:
+{steel_man}
+
+Classify this observation. Return a JSON object with exactly these keys:
+{{
+  "score": <integer 0-100 representing strength of evidence, where 100 = rock-solid empirical proof, 0 = pure speculation>,
+  "tags": ["2-4 short topic tags, e.g. AI, Iran, Markets, Climate"],
+  "evidence_type": "<one of: Empirical | Observational | Anecdotal | Speculative>"
+}}
+
+Return valid JSON only. No markdown fences. No preamble."""
+
+    raw = await _call(
+        system=(
+            "You are a rigorous research classifier. You label observations by their evidence quality. "
+            "You always return valid JSON when asked."
+        ),
+        user=prompt,
+        max_tokens=200,
+    )
+
+    if raw.startswith("```"):
+        raw = raw.split("```")[1]
+        if raw.startswith("json"):
+            raw = raw[4:]
+
+    return json.loads(raw.strip())
+
+
 async def generate_stress_test(thesis: str, steel_man: str) -> dict:
     """Stress test the thesis — pros, cons, and a verdict on whether it holds up."""
     prompt = f"""Thesis: {thesis}

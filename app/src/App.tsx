@@ -2,17 +2,18 @@ import { useState, useEffect, useRef } from "react";
 import type { Observation } from "./types";
 import { useObservations } from "./hooks/useObservations";
 
-// ─── Confidence badge ─────────────────────────────────────────────────────
+// ─── Evidence type badge ──────────────────────────────────────────────────
 
-const CONFIDENCE: Record<string, { label: string; bg: string; color: string }> = {
-  well_supported: { label: "Well supported", bg: "#E8F5E9", color: "#2E7D32" },
-  contested:      { label: "Contested",       bg: "#FFF8E1", color: "#E65100" },
-  speculative:    { label: "Speculative",     bg: "#F3E5F5", color: "#6A1B9A" },
+const EVIDENCE_COLORS: Record<string, { bg: string; color: string }> = {
+  Empirical:     { bg: "#E8F5E9", color: "#2E7D32" },
+  Observational: { bg: "#E3F2FD", color: "#1565C0" },
+  Anecdotal:     { bg: "#FFF8E1", color: "#E65100" },
+  Speculative:   { bg: "#F3E5F5", color: "#6A1B9A" },
 };
 
-function ConfidenceBadge({ value }: { value?: string }) {
-  if (!value || !CONFIDENCE[value]) return null;
-  const c = CONFIDENCE[value];
+function EvidenceBadge({ value }: { value?: string }) {
+  if (!value) return null;
+  const c = EVIDENCE_COLORS[value] || { bg: "#F0F0ED", color: "#666" };
   return (
     <span style={{
       display: "inline-block",
@@ -20,7 +21,21 @@ function ConfidenceBadge({ value }: { value?: string }) {
       fontSize: 11, fontWeight: 700,
       padding: "3px 10px", borderRadius: 100, letterSpacing: 0.3,
     }}>
-      {c.label}
+      {value}
+    </span>
+  );
+}
+
+function ScoreBadge({ value }: { value?: number }) {
+  if (value == null) return null;
+  const color = value >= 70 ? "#2E7D32" : value >= 40 ? "#E65100" : "#6A1B9A";
+  return (
+    <span style={{
+      display: "inline-flex", alignItems: "center", gap: 4,
+      fontSize: 11, fontWeight: 700, color,
+    }}>
+      <span style={{ fontSize: 10, opacity: 0.7 }}>Evidence</span>
+      {value}/100
     </span>
   );
 }
@@ -88,9 +103,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                     {obs.status === "formatting" ? "Formatting…" : "Researching…"}
                   </p>
                 )}
-                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                   <span style={{ fontSize: 11, color: "#B0B0A8" }}>{timeAgo(obs.created_at)}</span>
-                  <ConfidenceBadge value={obs.confidence} />
+                  <EvidenceBadge value={obs.evidence_type} />
+                  {obs.tags?.map((tag) => (
+                    <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "2px 8px" }}>{tag}</span>
+                  ))}
                 </div>
               </div>
               <button
@@ -423,6 +441,7 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
   const [obs, setObs] = useState(initialObs);
   const [tab, setTab] = useState<"steel" | "stress">("steel");
   const [stressLoading, setStressLoading] = useState(false);
+  const [stressError, setStressError] = useState(false);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -442,10 +461,15 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
   const handleStressTab = async () => {
     setTab("stress");
     if (obs.stress_test?.verdict) return;
+    setStressError(false);
     setStressLoading(true);
     const result = await requestStressTest(obs.id);
     setStressLoading(false);
-    if (result) setObs((p) => ({ ...p, stress_test: result }));
+    if (result) {
+      setObs((p) => ({ ...p, stress_test: result }));
+    } else {
+      setStressError(true);
+    }
   };
 
   const isProcessing = obs.status === "formatting" || obs.status === "researching";
@@ -493,11 +517,22 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
         )}
 
         {/* Thesis */}
-        <div style={{ marginBottom: 20 }}>
+        <div style={{ marginBottom: obs.status === "complete" ? 12 : 20 }}>
           {displayThesis
             ? <h1 style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.4, margin: 0 }}>{displayThesis}</h1>
             : isProcessing ? <div style={{ height: 26, background: "#EEEEE8", borderRadius: 6, width: "80%" }} /> : null}
         </div>
+
+        {/* Metadata row: evidence type, score, tags */}
+        {obs.status === "complete" && (obs.evidence_type || obs.score != null || obs.tags?.length) && (
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center", marginBottom: 20 }}>
+            <EvidenceBadge value={obs.evidence_type} />
+            <ScoreBadge value={obs.score} />
+            {obs.tags?.map((tag) => (
+              <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "3px 9px", fontWeight: 600 }}>{tag}</span>
+            ))}
+          </div>
+        )}
 
         {/* Tab buttons */}
         {obs.status === "complete" && (
@@ -520,8 +555,13 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
                 color: tab === "stress" ? "#FFF" : "#666",
                 fontSize: 14, fontWeight: 700, fontFamily: "inherit",
                 WebkitTapHighlightColor: "transparent",
+                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
               }}
-            >Stress Test</button>
+            >
+              {stressLoading && tab === "stress" ? (
+                <><ProcessingDots /><span>Testing…</span></>
+              ) : "Stress Test"}
+            </button>
           </div>
         )}
 
@@ -540,10 +580,16 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
               <ProcessingDots />
               <span style={{ fontSize: 14, color: "#666" }}>Running stress test…</span>
             </div>
+          ) : stressError ? (
+            <div style={{ background: "#FFF0EE", borderRadius: 12, padding: "14px 16px", border: "1px solid #F5C6C0" }}>
+              <p style={{ fontSize: 14, color: "#C0392B", margin: 0, lineHeight: 1.5 }}>
+                Stress test failed. Tap the button to try again.
+              </p>
+            </div>
           ) : obs.stress_test?.verdict ? (
             <div>
               <div style={{ marginBottom: 16 }}>
-                {obs.stress_test.pros.map((pro, i) => (
+                {(obs.stress_test as any).pros?.map((pro: string, i: number) => (
                   <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                     <span style={{ color: "#2E7D32", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>+</span>
                     <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{pro}</p>
@@ -551,7 +597,7 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
                 ))}
               </div>
               <div style={{ marginBottom: 20 }}>
-                {obs.stress_test.cons.map((con, i) => (
+                {(obs.stress_test as any).cons?.map((con: string, i: number) => (
                   <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                     <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>−</span>
                     <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{con}</p>
@@ -560,7 +606,7 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
               </div>
               <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px", borderLeft: "3px solid #1A1A1A" }}>
                 <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Verdict</p>
-                <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{obs.stress_test.verdict}</p>
+                <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{(obs.stress_test as any).verdict}</p>
               </div>
             </div>
           ) : null

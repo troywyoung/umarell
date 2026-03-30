@@ -10,7 +10,10 @@ export interface Observation {
   input_type: "text" | "voice" | "photo" | "screenshot" | "url";
   thesis: string;
   status: "formatting" | "researching" | "complete" | "error";
-  summary?: string;        // steel man prose
+  summary?: string;        // steel man bullets
   stress_test?: StressTest; // generated on demand
+  score?: number;          // 0-100 evidence strength
+  tags?: string[];         // e.g. ["AI", "Markets"]
+  evidence_type?: string;  // Empirical | Observational | Anecdotal | Speculative
   created_at: string;
 }

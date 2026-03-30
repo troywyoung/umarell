@@ -7,7 +7,7 @@ from sqlalchemy import select, desc
 from database import init_db, get_db, AsyncSessionLocal
 from models import Observation
 from schemas import ObservationCreate, ObservationOut
-from pipeline import format_thesis, generate_steel_man, generate_stress_test
+from pipeline import format_thesis, generate_steel_man, generate_stress_test, generate_metadata
 from config import settings
 
 
@@ -46,6 +46,16 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             if not obs:
                 return
             obs.summary = steel_man
+
+            # Step 3: metadata (score, tags, evidence type)
+            try:
+                meta = await generate_metadata(thesis, steel_man)
+                obs.score = meta.get("score")
+                obs.tags = meta.get("tags")
+                obs.evidence_type = meta.get("evidence_type")
+            except Exception as meta_err:
+                print(f"Metadata generation failed (non-fatal): {meta_err}")
+
             obs.status = "complete"
             await db.commit()
 

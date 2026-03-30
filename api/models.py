@@ -1,6 +1,6 @@
 import uuid
 from datetime import datetime, timezone
-from sqlalchemy import String, Text, DateTime, JSON
+from sqlalchemy import String, Text, DateTime, JSON, Float
 from sqlalchemy.orm import Mapped, mapped_column
 from database import Base
 
@@ -29,4 +29,7 @@ class Observation(Base):
     more_questions: Mapped[list | None] = mapped_column(JSON, nullable=True)
     stress_test: Mapped[dict | None] = mapped_column(JSON, nullable=True)
     briefing: Mapped[str | None] = mapped_column(Text, nullable=True)
+    score: Mapped[float | None] = mapped_column(Float, nullable=True)
+    tags: Mapped[list | None] = mapped_column(JSON, nullable=True)
+    evidence_type: Mapped[str | None] = mapped_column(String, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
