@@ -64,10 +64,12 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg") -> 
     return msg.content[0].text.strip()
 
 
-async def format_thesis(raw_input: str, input_type: str, image_b64: str | None = None) -> str:
+async def format_thesis(raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg") -> str:
     """Turn raw input into a clear, researchable thesis (1–2 sentences)."""
     if input_type in ("photo", "screenshot") and image_b64:
-        content = await extract_from_image(image_b64)
+        print(f"[format_thesis] extracting from image, media_type={image_media_type}, b64_len={len(image_b64)}")
+        content = await extract_from_image(image_b64, image_media_type)
+        print(f"[format_thesis] image extracted: {content[:100]}")
     elif input_type == "url":
         content = await _fetch_url(raw_input)
     else:

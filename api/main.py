@@ -1,6 +1,6 @@
 import asyncio
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc
@@ -27,12 +27,12 @@ app.add_middleware(
 )
 
 
-async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, image_b64: str | None = None):
+async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg"):
     """Background task: format → research → update DB."""
     async with AsyncSessionLocal() as db:
         try:
             # Step 1: format thesis
-            thesis = await format_thesis(raw_input, input_type, image_b64)
+            thesis = await format_thesis(raw_input, input_type, image_b64, image_media_type)
             obs = await db.get(Observation, observation_id)
             if not obs:
                 return
@@ -70,16 +70,25 @@ async def health():
 
 @app.post("/observations", response_model=ObservationOut, status_code=201)
 async def create_observation(body: ObservationCreate, db: AsyncSession = Depends(get_db)):
+    image_b64 = body.image_data
+    image_media_type = body.image_media_type or "image/jpeg"
+
+    # Log what we received for debugging
+    if image_b64:
+        print(f"[create_observation] image received, type={image_media_type}, b64_len={len(image_b64)}")
+    else:
+        print(f"[create_observation] text input, type={body.input_type}")
+
     obs = Observation(
         raw_input=body.raw_input,
         input_type=body.input_type,
-        thesis=body.raw_input[:120],  # placeholder
+        thesis=body.raw_input[:120],
         status="formatting",
     )
     db.add(obs)
     await db.commit()
     await db.refresh(obs)
-    asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, body.image_data))
+    asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, image_b64, image_media_type))
     return obs
 
 
