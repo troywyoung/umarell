@@ -250,7 +250,10 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
             rows={5}
             autoComplete="off"
             autoCorrect="off"
+            autoCapitalize="off"
             spellCheck={false}
+            data-form-type="other"
+            data-lpignore="true"
             style={{
               width: "100%", border: "none", outline: "none",
               fontSize: 16, color: "#1A1A1A", lineHeight: 1.6,
@@ -290,6 +293,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
       )}
 
       <button
+        type="button"
         onClick={handleSubmit}
         disabled={!canSubmit}
         style={{
