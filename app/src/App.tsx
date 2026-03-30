@@ -135,12 +135,18 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
 }) {
   const [transcript, setTranscript] = useState("");
   const [listening, setListening] = useState(false);
+  const [showText, setShowText] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [imageMeta, setImageMeta] = useState<{ b64: string; mediaType: string } | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const recRef = useRef<any>(null);
+  const textRef = useRef<HTMLTextAreaElement>(null);
+
+  const voiceSupported = !!(window as any).SpeechRecognition || !!(window as any).webkitSpeechRecognition;
+
+  useEffect(() => { if (showText) textRef.current?.focus(); }, [showText]);
 
   const listeningRef = useRef(false);
 
@@ -157,7 +163,10 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
       setTranscript(parts.join(" ").trim());
     };
     rec.onerror = (e: any) => {
-      if (e.error === "not-allowed") setError("Microphone permission denied.");
+      if (e.error === "not-allowed") {
+        setShowText(true);
+        setError("Mic not available — type your observation below.");
+      }
       listeningRef.current = false;
       setListening(false);
     };
@@ -179,7 +188,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
       return;
     }
     const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SR) { setError("Voice not supported in this browser. Try Safari or Chrome desktop."); return; }
+    if (!SR) { setShowText(true); setError("Voice not available — type your observation below."); return; }
     listeningRef.current = true;
     setListening(true);
     setError("");
@@ -273,8 +282,23 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
         </div>
       )}
 
+      {/* Text input (fallback) */}
+      {showText && !imagePreview && (
+        <div style={{ background: "#FFF", borderRadius: 16, padding: 16, boxShadow: "0 2px 8px rgba(0,0,0,0.06)", marginBottom: 14 }}>
+          <textarea
+            ref={textRef}
+            value={transcript}
+            onChange={(e) => setTranscript(e.target.value)}
+            placeholder="Type your observation…"
+            rows={4}
+            autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false}
+            style={{ width: "100%", border: "none", outline: "none", fontSize: 16, color: "#1A1A1A", lineHeight: 1.6, resize: "none", fontFamily: "inherit", boxSizing: "border-box" }}
+          />
+        </div>
+      )}
+
       {/* Input buttons */}
-      {!imagePreview && (
+      {!imagePreview && !showText && (
         <div style={{ display: "flex", gap: 14, marginBottom: 24 }}>
           {/* Mic button */}
           <button
@@ -308,6 +332,28 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
               <span style={{ fontSize: 13, fontWeight: 600 }}>Photo</span>
             </button>
           </>
+        </div>
+      )}
+
+      {/* Photo button when in text mode */}
+      {!imagePreview && showText && (
+        <>
+          <input ref={fileRef} type="file" accept="image/*" style={{ display: "none" }} onChange={handleImageSelect} />
+          <button onClick={() => fileRef.current?.click()} style={{ width: "100%", background: "none", border: "1.5px dashed #D5D5CD", borderRadius: 14, padding: "13px 0", fontSize: 14, color: "#888", cursor: "pointer", fontFamily: "inherit", marginBottom: 14 }}>
+            📷 Attach photo instead
+          </button>
+        </>
+      )}
+
+      {/* Type instead / Speak instead toggle */}
+      {!imagePreview && !listening && (
+        <div style={{ textAlign: "center", marginBottom: 16 }}>
+          <button
+            onClick={() => { setShowText(!showText); setError(""); }}
+            style={{ background: "none", border: "none", fontSize: 13, color: "#999", cursor: "pointer", fontFamily: "inherit", textDecoration: "underline" }}
+          >
+            {showText ? (voiceSupported ? "Use voice instead" : null) : "Type instead"}
+          </button>
         </div>
       )}
 
