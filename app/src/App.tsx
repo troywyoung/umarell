@@ -142,27 +142,48 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
   const fileRef = useRef<HTMLInputElement>(null);
   const recRef = useRef<any>(null);
 
-  const toggleVoice = () => {
-    if (listening) {
-      recRef.current?.stop();
-      return;
-    }
+  const listeningRef = useRef(false);
+
+  const startRec = () => {
     const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SR) { setError("Voice input not supported in this browser."); return; }
+    if (!SR) return;
     const rec = new SR();
     rec.continuous = true;
     rec.interimResults = true;
     rec.lang = "en-US";
     rec.onresult = (e: any) => {
-      const text = Array.from(e.results as any[]).map((r: any) => r[0].transcript).join(" ");
-      setTranscript(text);
+      const parts: string[] = [];
+      for (let i = 0; i < e.results.length; i++) parts.push(e.results[i][0].transcript);
+      setTranscript(parts.join(" ").trim());
     };
-    rec.onerror = () => { setListening(false); };
-    rec.onend = () => { setListening(false); };
+    rec.onerror = (e: any) => {
+      if (e.error === "not-allowed") setError("Microphone permission denied.");
+      listeningRef.current = false;
+      setListening(false);
+    };
+    // Chrome ends recognition after silence — restart if still active
+    rec.onend = () => {
+      if (listeningRef.current) {
+        try { rec.start(); } catch { listeningRef.current = false; setListening(false); }
+      }
+    };
     recRef.current = rec;
-    rec.start();
+    try { rec.start(); } catch { setError("Could not start microphone."); return; }
+  };
+
+  const toggleVoice = () => {
+    if (listening) {
+      listeningRef.current = false;
+      recRef.current?.stop();
+      setListening(false);
+      return;
+    }
+    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+    if (!SR) { setError("Voice not supported in this browser. Try Safari or Chrome desktop."); return; }
+    listeningRef.current = true;
     setListening(true);
     setError("");
+    startRec();
   };
 
   const handleImageSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
