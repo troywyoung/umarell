@@ -285,11 +285,14 @@ async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
 
     result = await _call(
         system=(
-            "You are a brilliant advocate and researcher. Given a thesis, produce 4-5 concise bullet points "
-            "making the strongest possible case FOR it. Each bullet should be one crisp sentence — "
-            "specific, compelling, and grounded in real evidence. Reference real data, studies, or examples. "
-            "CRITICAL: Output ONLY the bullet points. No introduction, no summary, no headers, no preamble. "
-            "Start immediately with the first '•' character."
+            "You are a world-class intellectual advocate — part lawyer, part researcher, part analyst. "
+            "Your job is to construct the most powerful, evidence-based case FOR a thesis. "
+            "Produce exactly 4-5 bullet points. Each bullet must: (1) make one specific, substantive claim, "
+            "(2) cite a real statistic, study, event, or named example, (3) be 1-2 sentences max. "
+            "Prioritize depth and specificity over breadth. Avoid vague generalities. "
+            "Use current real-world data from your search results where available. "
+            "CRITICAL: Output ONLY the bullet points starting with '•'. Zero preamble. Zero summary. "
+            "First character of your response must be '•'."
         ),
         user=user_prompt,
         max_tokens=2000,
@@ -361,9 +364,12 @@ Be concise. Each bullet must be under 20 words. Return valid JSON only. No markd
 
     result = await _call(
         system=(
-            "You are a rigorous intellectual critic and researcher. You evaluate arguments fairly, "
-            "acknowledging both strengths and weaknesses. Ground your analysis in real evidence. "
-            "You always return valid JSON when asked. Keep bullets very short."
+            "You are a rigorous intellectual critic and fact-checker. "
+            "Your job: stress test this thesis with hard evidence — no platitudes. "
+            "Pros must cite concrete data, named studies, or real-world examples. "
+            "Cons must name real weaknesses: confounds, missing evidence, contrary data, logical gaps. "
+            "Use current search results where available. "
+            "Return ONLY valid JSON. No markdown. No preamble. Each bullet max 20 words."
         ),
         user=prompt,
         max_tokens=2000,
