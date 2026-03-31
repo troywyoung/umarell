@@ -920,25 +920,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
 
 // ─── Shared components ────────────────────────────────────────────────────
 
-function StepRow({ label, done, active }: { label: string; done: boolean; active: boolean }) {
-  return (
-    <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10, opacity: done || active ? 1 : 0.35 }}>
-      <div style={{
-        width: 20, height: 20, borderRadius: "50%", flexShrink: 0,
-        background: done ? "#1A1A1A" : active ? "#F0F0FF" : "#EEEEE8",
-        border: active ? "2px solid #6666CC" : done ? "none" : "2px solid #D5D5CD",
-        display: "flex", alignItems: "center", justifyContent: "center",
-      }}>
-        {done && <span style={{ color: "#FFF", fontSize: 11, fontWeight: 700 }}>{"\u2713"}</span>}
-        {active && <ProcessingDots />}
-      </div>
-      <span style={{ fontSize: 14, color: done ? "#1A1A1A" : active ? "#6666CC" : "#AAA", fontWeight: active || done ? 600 : 400 }}>
-        {label}
-      </span>
-    </div>
-  );
-}
-
 function ProcessingDots() {
   return (
     <span style={{ display: "inline-flex", gap: 3, alignItems: "center" }}>
