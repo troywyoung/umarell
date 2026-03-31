@@ -60,7 +60,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
 
             # Step 3: metadata (score, tags, evidence type)
             try:
-                meta = await generate_metadata(thesis, steel_man)
+                meta = await generate_metadata(thesis, steel_man, image_b64, image_media_type)
                 obs.score = meta.get("score")
                 obs.tags = meta.get("tags")
                 obs.evidence_type = meta.get("evidence_type")

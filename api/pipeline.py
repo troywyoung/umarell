@@ -316,18 +316,27 @@ async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
     return text, sources
 
 
-async def generate_metadata(thesis: str, steel_man: str) -> dict:
+async def generate_metadata(thesis: str, steel_man: str, image_b64: str | None = None, image_media_type: str = "image/jpeg") -> dict:
     """Generate evidence score (0-100), topic tags, and evidence type label."""
+    system = (
+        "You are a rigorous fact-checker and research classifier. "
+        "You score claims based on actual real-world evidence — not on how convincing the argument sounds. "
+        "If an image is provided, use it as direct visual evidence to verify the claim. "
+        "A well-argued case for a false or visually contradicted claim still scores near zero. "
+        "You always return valid JSON when asked."
+    )
+
     prompt = f"""Thesis: {thesis}
 
-Score this thesis based on how well it is supported by REAL-WORLD evidence and established fact — NOT based on how strong the arguments sound.
+Score this thesis based on how well it is supported by REAL-WORLD evidence and established fact.
+If an image is provided, it is the PRIMARY evidence — score based on what you actually see.
 
 Rules for scoring:
-- 85-100: Strong empirical consensus, peer-reviewed studies, established scientific fact
+- 85-100: Strong empirical consensus, peer-reviewed studies, or visually confirmed fact
 - 60-84: Credible evidence but some debate or mixed data
 - 35-59: Contested, limited evidence, reasonable but unproven
-- 10-34: Weak evidence, largely speculative, contradicts mainstream data
-- 0-9: Factually wrong or contradicts established reality (e.g. "oranges are not fruit" = 2)
+- 10-34: Weak evidence, speculative, or contradicts available data
+- 0-9: Factually wrong, visually contradicted by the image, or contradicts established reality
 
 Return a JSON object with exactly these keys:
 {{
@@ -338,17 +347,29 @@ Return a JSON object with exactly these keys:
 
 Return valid JSON only. No markdown fences. No preamble."""
 
-    raw = await _call(
-        system=(
-            "You are a rigorous fact-checker and research classifier. "
-            "You score claims based on actual real-world evidence — not on how convincing the argument sounds. "
-            "A well-argued case for a false claim still scores near zero. "
-            "You always return valid JSON when asked."
-        ),
-        user=prompt,
-        max_tokens=2000,
-    )
+    if PROVIDER == "gemini" and image_b64:
+        image_bytes = base64.b64decode(image_b64)
+        image_part = genai.types.Part.from_bytes(data=image_bytes, mime_type=image_media_type)
+        for attempt in range(3):
+            try:
+                resp = await asyncio.to_thread(
+                    gclient.models.generate_content,
+                    model=GEMINI_MODEL,
+                    contents=[image_part, prompt],
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=system,
+                        max_output_tokens=500,
+                        thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
+                    ),
+                )
+                return _extract_json(resp.text.strip())
+            except Exception as e:
+                if attempt < 2:
+                    await asyncio.sleep(2 ** attempt)
+                else:
+                    raise
 
+    raw = await _call(system=system, user=prompt, max_tokens=500)
     return _extract_json(raw)
 
 
