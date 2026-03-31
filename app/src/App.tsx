@@ -60,6 +60,14 @@ const MESH_EDGES: [number, number][] = [
 
 function SteelManIcon({ size = 24, animate = false }: { size?: number; animate?: boolean }) {
   const id = animate ? "sm-anim" : "sm-static";
+  const nodeCount = MESH_NODES.length;
+  const edgeCount = MESH_EDGES.length;
+  // Slow build: edges over ~3s, nodes over ~2.5s, then red highlight travels
+  const edgeDelay = (i: number) => (i * (3 / edgeCount)).toFixed(2);
+  const nodeDelay = (i: number) => (0.5 + i * (2.5 / nodeCount)).toFixed(2);
+  // Red highlight: one node at a time cycles through, 0.3s each, loops
+  const highlightDuration = nodeCount * 0.3;
+
   return (
     <svg
       width={size}
@@ -80,36 +88,52 @@ function SteelManIcon({ size = 24, animate = false }: { size?: number; animate?:
             strokeWidth={0.7}
             style={animate ? {
               opacity: 0,
-              animation: `meshFadeIn 0.4s ease forwards`,
-              animationDelay: `${(i * 0.04).toFixed(2)}s`,
+              animation: `meshFadeIn 0.8s ease forwards`,
+              animationDelay: `${edgeDelay(i)}s`,
             } : undefined}
           />
         );
       })}
-      {/* Nodes */}
+      {/* Nodes — black base */}
       {MESH_NODES.map(([cx, cy], i) => (
         <circle
           key={`${id}-n${i}`}
           cx={cx} cy={cy}
-          r={1.2}
+          r={1.3}
           fill="#1A1A1A"
           style={animate ? {
             opacity: 0,
-            animation: `meshNodePop 0.3s ease forwards, meshNodePulse 2s ease-in-out ${1.2 + i * 0.08}s infinite`,
-            animationDelay: `${(i * 0.05).toFixed(2)}s`,
+            animation: `meshNodePop 0.5s ease forwards`,
+            animationDelay: `${nodeDelay(i)}s`,
           } : undefined}
+        />
+      ))}
+      {/* Red highlight nodes — overlay that pulses one at a time */}
+      {animate && MESH_NODES.map(([cx, cy], i) => (
+        <circle
+          key={`${id}-r${i}`}
+          cx={cx} cy={cy}
+          r={1.8}
+          fill="#E53935"
+          style={{
+            opacity: 0,
+            animation: `meshRedPing 0.4s ease ${3.5 + i * 0.3}s infinite`,
+            animationDelay: `${(3.5 + i * (highlightDuration / nodeCount)).toFixed(2)}s`,
+          }}
         />
       ))}
       {animate && (
         <style>{`
           @keyframes meshFadeIn {
-            from { opacity: 0; } to { opacity: 0.6; }
+            from { opacity: 0; } to { opacity: 0.55; }
           }
           @keyframes meshNodePop {
-            from { opacity: 0; r: 0; } to { opacity: 1; r: 1.2; }
+            from { opacity: 0; } to { opacity: 1; }
           }
-          @keyframes meshNodePulse {
-            0%, 100% { opacity: 1; } 50% { opacity: 0.4; }
+          @keyframes meshRedPing {
+            0% { opacity: 0; r: 1.3; }
+            30% { opacity: 0.9; r: 2.2; }
+            100% { opacity: 0; r: 1.3; }
           }
         `}</style>
       )}
@@ -182,7 +206,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
         display: "flex", alignItems: "center", justifyContent: "space-between",
       }}>
         <span style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-          <SteelManIcon size={22} /> Steel Man
+          <SteelManIcon size={28} /> Steel Man
         </span>
         {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing\u2026</span>}
       </div>
@@ -652,7 +676,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
 
             {/* Step progress — animated mesh builds itself */}
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "30px 0 28px" }}>
-              <SteelManIcon size={80} animate />
+              <SteelManIcon size={100} animate />
               <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "18px 0 4px" }}>
                 {obs.status === "formatting" ? "Reading your take\u2026" : "Building steel man\u2026"}
               </p>
@@ -757,7 +781,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
             {!editMode && (
               <div style={{ marginTop: 20 }}>
                 <button
-                  onClick={() => { setEditMode(true); setEditText(obs.thesis); }}
+                  onClick={() => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); }}
                   style={{
                     width: "100%", padding: "12px 0", borderRadius: 10,
                     border: "1.5px solid #D5D5CD", background: "transparent",
@@ -803,38 +827,56 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
         )}
 
         {/* Stress Test content */}
-        {tab === "stress" && (
-          stressLoading ? null : stressError ? (
+        {tab === "stress" && (() => {
+          if (stressLoading) return (
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "30px 0" }}>
+              <SteelManIcon size={56} animate />
+              <p style={{ fontSize: 14, color: "#888", marginTop: 14 }}>Stress testing\u2026</p>
+            </div>
+          );
+          if (stressError) return (
             <div style={{ background: "#FFF0EE", borderRadius: 12, padding: "14px 16px", border: "1px solid #F5C6C0" }}>
               <p style={{ fontSize: 14, color: "#C0392B", margin: 0, lineHeight: 1.5 }}>
                 Stress test failed. Tap the button to try again.
               </p>
             </div>
-          ) : obs.stress_test?.verdict ? (
+          );
+          const st = obs.stress_test as any;
+          if (!st?.verdict) return null;
+          const pros: string[] = Array.isArray(st.pros) ? st.pros : [];
+          const cons: string[] = Array.isArray(st.cons) ? st.cons : [];
+          const verdict: string = typeof st.verdict === "string" ? st.verdict : JSON.stringify(st.verdict);
+          return (
             <div>
-              <div style={{ marginBottom: 16 }}>
-                {(obs.stress_test as any).pros?.map((pro: string, i: number) => (
-                  <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                    <span style={{ color: "#2E7D32", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>+</span>
-                    <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{pro}</p>
-                  </div>
-                ))}
-              </div>
-              <div style={{ marginBottom: 20 }}>
-                {(obs.stress_test as any).cons?.map((con: string, i: number) => (
-                  <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                    <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
-                    <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{con}</p>
-                  </div>
-                ))}
-              </div>
+              {pros.length > 0 && (
+                <div style={{ marginBottom: 16 }}>
+                  <p style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>Strengths</p>
+                  {pros.map((pro, i) => (
+                    <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
+                      <span style={{ color: "#2E7D32", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>+</span>
+                      <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{typeof pro === "string" ? pro : JSON.stringify(pro)}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+              {cons.length > 0 && (
+                <div style={{ marginBottom: 20 }}>
+                  <p style={{ fontSize: 11, fontWeight: 700, color: "#C0392B", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>Weaknesses</p>
+                  {cons.map((con, i) => (
+                    <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
+                      <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
+                      <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{typeof con === "string" ? con : JSON.stringify(con)}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
               <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px", borderLeft: "3px solid #1A1A1A" }}>
                 <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Verdict</p>
-                <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{(obs.stress_test as any).verdict}</p>
+                <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{verdict}</p>
               </div>
             </div>
-          ) : null
-        )}
+          );
+        })()}
 
       </div>
     </div>
