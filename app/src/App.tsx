@@ -29,9 +29,37 @@ function getRandomPlaceholder() {
   return PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)];
 }
 
-// ─── Steel Man Icon (SVG) ────────────────────────────────────────────────
+// ─── Steel Man Icon (SVG) — geometric wireframe mesh ─────────────────────
+
+// Nodes and edges define a triangulated wireframe structure
+const MESH_NODES: [number, number][] = [
+  // outer frame
+  [6, 2], [16, 1], [26, 3],
+  [28, 12], [27, 22], [24, 30],
+  [16, 31], [8, 30], [4, 22],
+  [3, 12],
+  // inner structure
+  [11, 7], [20, 6],
+  [22, 15], [18, 11],
+  [10, 13], [14, 18],
+  [21, 24], [11, 24],
+  [16, 14], [13, 9],
+];
+
+const MESH_EDGES: [number, number][] = [
+  // outer ring
+  [0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,0],
+  // spokes to inner
+  [0,10],[1,10],[1,11],[2,11],[2,3],[3,12],[4,12],
+  [4,16],[5,16],[5,6],[6,16],[6,17],[7,17],[8,17],[8,9],[9,14],
+  // inner mesh
+  [10,19],[10,14],[11,13],[11,12],[12,13],[13,18],[14,18],[14,19],
+  [15,18],[15,17],[15,16],[16,12],[17,14],[18,15],[19,1],
+  [13,15],[19,10],[18,16],
+];
 
 function SteelManIcon({ size = 24, animate = false }: { size?: number; animate?: boolean }) {
+  const id = animate ? "sm-anim" : "sm-static";
   return (
     <svg
       width={size}
@@ -39,27 +67,49 @@ function SteelManIcon({ size = 24, animate = false }: { size?: number; animate?:
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={animate ? { animation: "steelPulse 2s ease-in-out infinite" } : undefined}
     >
-      {/* Head */}
-      <circle cx="16" cy="7" r="4.5" stroke="#1A1A1A" strokeWidth="2" fill="none" />
-      {/* Body — strong torso */}
-      <path d="M16 11.5V22" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" />
-      {/* Arms — flexing */}
-      <path d="M16 15L10.5 12.5L8 8" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      <path d="M16 15L21.5 12.5L24 8" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-      {/* Bicep bulge — left */}
-      <circle cx="9" cy="10" r="1.8" fill="#1A1A1A" />
-      {/* Bicep bulge — right */}
-      <circle cx="23" cy="10" r="1.8" fill="#1A1A1A" />
-      {/* Legs */}
-      <path d="M16 22L12 29" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" />
-      <path d="M16 22L20 29" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" />
+      {/* Edges */}
+      {MESH_EDGES.map(([a, b], i) => {
+        const [x1, y1] = MESH_NODES[a];
+        const [x2, y2] = MESH_NODES[b];
+        return (
+          <line
+            key={`${id}-e${i}`}
+            x1={x1} y1={y1} x2={x2} y2={y2}
+            stroke="#1A1A1A"
+            strokeWidth={0.7}
+            style={animate ? {
+              opacity: 0,
+              animation: `meshFadeIn 0.4s ease forwards`,
+              animationDelay: `${(i * 0.04).toFixed(2)}s`,
+            } : undefined}
+          />
+        );
+      })}
+      {/* Nodes */}
+      {MESH_NODES.map(([cx, cy], i) => (
+        <circle
+          key={`${id}-n${i}`}
+          cx={cx} cy={cy}
+          r={1.2}
+          fill="#1A1A1A"
+          style={animate ? {
+            opacity: 0,
+            animation: `meshNodePop 0.3s ease forwards, meshNodePulse 2s ease-in-out ${1.2 + i * 0.08}s infinite`,
+            animationDelay: `${(i * 0.05).toFixed(2)}s`,
+          } : undefined}
+        />
+      ))}
       {animate && (
         <style>{`
-          @keyframes steelPulse {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.08); opacity: 0.7; }
+          @keyframes meshFadeIn {
+            from { opacity: 0; } to { opacity: 0.6; }
+          }
+          @keyframes meshNodePop {
+            from { opacity: 0; r: 0; } to { opacity: 1; r: 1.2; }
+          }
+          @keyframes meshNodePulse {
+            0%, 100% { opacity: 1; } 50% { opacity: 0.4; }
           }
         `}</style>
       )}
@@ -600,10 +650,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
               </div>
             )}
 
-            {/* Step progress */}
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "20px 0 24px" }}>
-              <SteelManIcon size={48} animate />
-              <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "14px 0 4px" }}>
+            {/* Step progress — animated mesh builds itself */}
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "30px 0 28px" }}>
+              <SteelManIcon size={80} animate />
+              <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "18px 0 4px" }}>
                 {obs.status === "formatting" ? "Reading your take\u2026" : "Building steel man\u2026"}
               </p>
               <p style={{ fontSize: 13, color: "#999", margin: 0 }}>This usually takes a few seconds</p>
