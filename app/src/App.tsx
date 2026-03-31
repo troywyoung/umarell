@@ -178,8 +178,8 @@ function EvidenceBadge({ value }: { value?: string }) {
     <span style={{
       display: "inline-block",
       background: c.bg, color: c.color,
-      fontSize: 11, fontWeight: 700,
-      padding: "3px 10px", borderRadius: 100, letterSpacing: 0.3,
+      fontSize: 8, fontWeight: 700,
+      padding: "1px 6px", borderRadius: 100, letterSpacing: 0.3,
     }}>
       {value}
     </span>
@@ -336,11 +336,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                   {/* First steel man bullet as secondary text */}
                   {firstBullet && (
                     <p style={{
-                      fontSize: 10, color: "#888", lineHeight: 1.45,
+                      fontSize: 10, color: "#888", lineHeight: 1.5,
                       margin: "0 0 6px",
                       overflow: "hidden",
                       display: "-webkit-box",
-                      WebkitLineClamp: 2,
+                      WebkitLineClamp: 4,
                       WebkitBoxOrient: "vertical",
                     } as React.CSSProperties}>
                       {firstBullet}
@@ -355,11 +355,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                       </span>
                     </div>
                   )}
-                  <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-                    <span style={{ fontSize: 11, color: "#B0B0A8" }}>{timeAgo(obs.created_at)}</span>
+                  <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
+                    <span style={{ fontSize: 8, color: "#B0B0A8" }}>{timeAgo(obs.created_at)}</span>
                     <EvidenceBadge value={obs.evidence_type} />
                     {obs.tags?.map((tag) => (
-                      <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "2px 8px" }}>{tag}</span>
+                      <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
                     ))}
                   </div>
                 </div>
@@ -1083,7 +1083,7 @@ function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.Mo
       style={{
         display: "inline-flex", alignItems: "center", gap: 5,
         background: "none", border: "none", cursor: "pointer", padding: 0,
-        color: copied ? "#E53935" : "#666", fontSize: 12, fontFamily: "inherit",
+        color: copied ? "#E53935" : "#666", fontSize: 10, fontFamily: "inherit",
         WebkitTapHighlightColor: "transparent",
         transition: "color 0.2s",
       }}
