@@ -325,7 +325,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                 {/* Share — bottom right */}
                 {obs.status === "complete" && obs.thesis && (
                   <div style={{ position: "absolute", bottom: 12, right: 12 }}>
-                    <ShareButton obsId={obs.id} thesis={obs.thesis} onClick={(e) => e.stopPropagation()} />
+                    <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
                   </div>
                 )}
 
@@ -712,7 +712,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
     );
   }
 
-  // (share handled by ShareButton component)
+  // Share handled by ShareButton component
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
@@ -815,7 +815,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
         {/* Share (shown when complete) */}
         {obs.status === "complete" && steelBullets.length > 0 && (
           <div style={{ marginBottom: 16 }}>
-            <ShareButton obsId={obs.id} thesis={obs.thesis} />
+            <ShareButton obsId={obs.id} />
           </div>
         )}
 
@@ -951,11 +951,11 @@ function PulsingDot() {
   );
 }
 
-function ShareButton({ obsId, thesis, onClick }: { obsId: string; thesis: string; onClick?: (e: React.MouseEvent) => void }) {
+function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.MouseEvent) => void }) {
   const [copied, setCopied] = useState(false);
 
   const shareUrl = `${window.location.origin}${window.location.pathname}#obs/${obsId}`;
-  const shareText = `Steel Man: ${thesis}`;
+  const shareText = "Someone shared a Steel Man with you. Check it out:";
   const fullText = `${shareText}\n${shareUrl}`;
 
   const handleShare = async (e: React.MouseEvent) => {
@@ -965,7 +965,6 @@ function ShareButton({ obsId, thesis, onClick }: { obsId: string; thesis: string
       try { await navigator.share({ text: shareText, url: shareUrl }); } catch { /* cancelled */ }
       return;
     }
-    // Fallback: copy to clipboard
     navigator.clipboard.writeText(fullText);
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);

@@ -36,7 +36,7 @@ def _extract_json(raw: str) -> dict:
 MODEL = settings.claude_model
 
 
-async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 3) -> str:
+async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5) -> str:
     for attempt in range(retries):
         try:
             msg = await client.messages.create(
@@ -48,7 +48,7 @@ async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 3
             return msg.content[0].text.strip()
         except APIStatusError as e:
             if e.status_code in (429, 529) and attempt < retries - 1:
-                wait = 2 ** attempt
+                wait = min(2 ** (attempt + 1), 30)  # 2, 4, 8, 16 seconds
                 print(f"[pipeline] {e.status_code} — retrying in {wait}s (attempt {attempt+1}/{retries})")
                 await asyncio.sleep(wait)
             else:
