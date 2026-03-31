@@ -31,31 +31,47 @@ function getRandomPlaceholder() {
 
 // ─── Steel Man Icon (SVG) — geometric wireframe mesh ─────────────────────
 
-// Nodes and edges define a triangulated wireframe structure
+// Nodes and edges — organic, asymmetric constellation
 const MESH_NODES: [number, number][] = [
-  // outer frame
-  [6, 2], [16, 1], [26, 3],
-  [28, 12], [27, 22], [24, 30],
-  [16, 31], [8, 30], [4, 22],
-  [3, 12],
-  // inner structure
-  [11, 7], [20, 6],
-  [22, 15], [18, 11],
-  [10, 13], [14, 18],
-  [21, 24], [11, 24],
-  [16, 14], [13, 9],
+  // scattered outer points
+  [3, 8],     // 0
+  [10, 1],    // 1
+  [21, 2],    // 2
+  [30, 7],    // 3
+  [28, 18],   // 4
+  [31, 27],   // 5
+  [22, 31],   // 6
+  [12, 29],   // 7
+  [2, 24],    // 8
+  [1, 16],    // 9
+  // inner cluster — offset from center
+  [8, 11],    // 10
+  [17, 7],    // 11
+  [24, 12],   // 12
+  [20, 20],   // 13
+  [13, 22],   // 14
+  [7, 18],    // 15
+  // core
+  [15, 14],   // 16
+  [11, 15],   // 17
+  // outliers — asymmetric tendrils
+  [27, 1],    // 18
+  [5, 30],    // 19
+  [18, 27],   // 20
 ];
 
 const MESH_EDGES: [number, number][] = [
-  // outer ring
+  // outer connections (not a neat ring — skip some, cross others)
   [0,1],[1,2],[2,3],[3,4],[4,5],[5,6],[6,7],[7,8],[8,9],[9,0],
-  // spokes to inner
-  [0,10],[1,10],[1,11],[2,11],[2,3],[3,12],[4,12],
-  [4,16],[5,16],[5,6],[6,16],[6,17],[7,17],[8,17],[8,9],[9,14],
-  // inner mesh
-  [10,19],[10,14],[11,13],[11,12],[12,13],[13,18],[14,18],[14,19],
-  [15,18],[15,17],[15,16],[16,12],[17,14],[18,15],[19,1],
-  [13,15],[19,10],[18,16],
+  // tendrils
+  [2,18],[18,3],[7,19],[19,8],[6,20],[20,14],
+  // outer to inner
+  [0,10],[1,11],[3,12],[4,13],[5,13],[7,14],[8,15],[9,15],
+  // inner mesh — triangulated loosely
+  [10,11],[11,12],[12,13],[13,14],[14,15],[15,10],
+  [10,16],[11,16],[12,16],[13,16],[14,17],[15,17],[16,17],
+  // cross-bracing
+  [10,17],[12,4],[14,7],[11,2],[15,9],[13,20],[1,10],
 ];
 
 function SteelManIcon({ size = 24, animate = false, animateCount }: { size?: number; animate?: boolean; animateCount?: number }) {
