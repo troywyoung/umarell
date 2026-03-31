@@ -72,17 +72,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
 
 @app.get("/health")
 async def health():
-    import os
-    db_path = settings.database_url.split("///")[-1]
-    return {
-        "status": "ok",
-        "database_url": settings.database_url,
-        "db_exists": os.path.exists(db_path),
-        "db_dir_exists": os.path.exists(os.path.dirname(db_path) or "."),
-        "db_dir_contents": os.listdir(os.path.dirname(db_path) or ".") if os.path.exists(os.path.dirname(db_path) or ".") else [],
-        "app_data_exists": os.path.exists("/app/data"),
-        "app_data_contents": os.listdir("/app/data") if os.path.exists("/app/data") else [],
-    }
+    return {"status": "ok"}
 
 
 @app.post("/observations", response_model=ObservationOut, status_code=201)
