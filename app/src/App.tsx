@@ -74,7 +74,7 @@ const MESH_EDGES: [number, number][] = [
   [10,17],[12,4],[14,7],[11,2],[15,9],[13,20],[1,10],
 ];
 
-function SteelManIcon({ size = 24, animate = false, animateCount }: { size?: number; animate?: boolean; animateCount?: number }) {
+function SteelManIcon({ size = 24, animate = false, animateCount, color = "#1A1A1A" }: { size?: number; animate?: boolean; animateCount?: number; color?: string }) {
   const isAnimated = animate || animateCount != null;
   const id = isAnimated ? "sm-anim" : "sm-static";
   const nodeCount = MESH_NODES.length;
@@ -103,7 +103,7 @@ function SteelManIcon({ size = 24, animate = false, animateCount }: { size?: num
           <line
             key={`${id}-e${i}`}
             x1={x1} y1={y1} x2={x2} y2={y2}
-            stroke="#1A1A1A"
+            stroke={color}
             strokeWidth={0.7}
             style={isAnimated ? {
               opacity: 0,
@@ -119,7 +119,7 @@ function SteelManIcon({ size = 24, animate = false, animateCount }: { size?: num
           key={`${id}-n${i}`}
           cx={cx} cy={cy}
           r={1.3}
-          fill="#1A1A1A"
+          fill={color}
           style={isAnimated ? {
             opacity: 0,
             animation: `meshNodePop 0.5s ease forwards`,
@@ -219,15 +219,59 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
   onSelect: (o: Observation) => void;
   onDelete: (id: string) => void;
 }) {
+  const [bgImage, setBgImage] = useState<string | null>(null);
+  const [showCards, setShowCards] = useState(false);
+  useEffect(() => {
+    let cancelled = false;
+    const page = Math.floor(Math.random() * 100) + 1;
+    fetch(`https://api.pexels.com/v1/search?query=confused+animal&per_page=1&page=${page}&orientation=landscape`, {
+      headers: { Authorization: "8PIku3G38amYoSKnhCyaA0o5p40er0GSxHM56s8Rvw5dcHrgiQ0n2qwe" },
+    })
+      .then(r => r.json())
+      .then(data => {
+        if (cancelled) return;
+        const url = data.photos?.[0]?.src?.landscape;
+        if (url) {
+          const img = new Image();
+          img.src = url;
+          img.onload = () => {
+            if (cancelled) return;
+            setBgImage(url);
+            setTimeout(() => { if (!cancelled) setShowCards(true); }, 1000);
+          };
+          img.onerror = () => { if (!cancelled) setShowCards(true); };
+        } else {
+          setShowCards(true);
+        }
+      })
+      .catch(() => { if (!cancelled) setShowCards(true); });
+    return () => { cancelled = true; };
+  }, []);
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120 }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative" }}>
+      {bgImage && (
+        <>
+          <div style={{
+            position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
+            backgroundImage: `url(${bgImage})`,
+            backgroundSize: "cover", backgroundPosition: "center center",
+            zIndex: 0, pointerEvents: "none",
+          }} />
+          <div style={{
+            position: "fixed", top: 0, left: 0, right: 0, height: 80,
+            background: "linear-gradient(to bottom, rgba(0,0,0,0.6), transparent)",
+            zIndex: 0, pointerEvents: "none",
+          }} />
+        </>
+      )}
       <div style={{
         padding: "20px 20px 16px",
         borderBottom: "1px solid #EBEBEB",
         display: "flex", alignItems: "center", justifyContent: "space-between",
+        position: "relative", zIndex: 1,
       }}>
-        <span style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-          <SteelManIcon size={28} animate animateCount={3} /> Steel Man
+        <span style={{ fontSize: 20, fontWeight: 700, color: bgImage ? "#FFF" : "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
+          <SteelManIcon size={28} animate animateCount={3} color={bgImage ? "#FFF" : "#1A1A1A"} /> Steel Man
         </span>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing…</span>}
@@ -244,7 +288,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
         </div>
       </div>
 
-      <div style={{ padding: "12px 16px 0" }}>
+      <div style={{ padding: "12px 16px 0", opacity: showCards ? 1 : 0, transition: "opacity 0.5s ease" }}>
         {observations.length === 0 && !loading ? (
           <div style={{ textAlign: "center", paddingTop: 80 }}>
             <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", marginBottom: 8 }}>Nothing yet.</p>
