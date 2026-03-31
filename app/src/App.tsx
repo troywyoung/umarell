@@ -679,12 +679,14 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
             )}
 
             {/* Step progress — animated mesh builds itself */}
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "30px 0 28px" }}>
-              <SteelManIcon size={100} animate />
-              <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "18px 0 4px" }}>
-                {obs.status === "formatting" ? "Reading your take\u2026" : "Building steel man\u2026"}
-              </p>
-              <p style={{ fontSize: 13, color: "#999", margin: 0 }}>This usually takes a few seconds</p>
+            <div style={{ display: "flex", alignItems: "center", gap: 20, padding: "30px 0 28px" }}>
+              <SteelManIcon size={70} animate />
+              <div>
+                <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "0 0 4px" }}>
+                  {obs.status === "formatting" ? "Reading your take\u2026" : "Building steel man\u2026"}
+                </p>
+                <p style={{ fontSize: 13, color: "#999", margin: 0 }}>This usually takes a few seconds</p>
+              </div>
             </div>
           </>
         )}
