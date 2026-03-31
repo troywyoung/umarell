@@ -2,6 +2,11 @@ import { useState, useCallback } from "react";
 import type { Observation } from "../types";
 import { API } from "../config";
 
+function authHeaders(): Record<string, string> {
+  const token = localStorage.getItem("sm_token");
+  return token ? { Authorization: `Bearer ${token}` } : {};
+}
+
 export function useObservations() {
   const [observations, setObservations] = useState<Observation[]>([]);
   const [loading, setLoading] = useState(false);
@@ -9,7 +14,7 @@ export function useObservations() {
   const fetchObservations = useCallback(async () => {
     setLoading(true);
     try {
-      const resp = await fetch(`${API}/observations`);
+      const resp = await fetch(`${API}/observations`, { headers: authHeaders() });
       if (!resp.ok) throw new Error(`${resp.status}`);
       const data: Observation[] = await resp.json();
       setObservations(data);
@@ -27,7 +32,7 @@ export function useObservations() {
     try {
       const resp = await fetch(`${API}/observations`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...authHeaders() },
         body: JSON.stringify({
           raw_input: rawInput,
           input_type: inputType,

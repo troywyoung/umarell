@@ -12,6 +12,9 @@ class Settings(BaseSettings):
     tavily_api_key: str = ""
     database_url: str = "sqlite+aiosqlite:////app/data/umarell.db"
     cors_origins: str = "*"
+    google_client_id: str = ""
+    jwt_secret: str = "change-me-in-production"
+    jwt_expire_days: int = 30
 
 
 settings = Settings()

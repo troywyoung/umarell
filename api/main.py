@@ -1,20 +1,63 @@
 import asyncio
 from contextlib import asynccontextmanager
+from datetime import datetime, timedelta, timezone
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc
+from jose import jwt, JWTError
+from google.oauth2 import id_token as google_id_token
+from google.auth.transport import requests as google_requests
+from pydantic import BaseModel
 from database import init_db, get_db, AsyncSessionLocal
-from models import Observation
+from models import Observation, User
 from schemas import ObservationCreate, ObservationOut
 from pipeline import format_thesis, generate_steel_man, generate_stress_test, generate_metadata, ACTIVE_MODEL
 from config import settings
 
 
+# ─── Auth helpers ────────────────────────────────────────────────────────────
+
+bearer = HTTPBearer(auto_error=False)
+
+
+def _make_jwt(user: User) -> str:
+    payload = {
+        "sub": user.id,
+        "name": user.name,
+        "email": user.email,
+        "avatar": user.avatar_url,
+        "exp": datetime.now(timezone.utc) + timedelta(days=settings.jwt_expire_days),
+    }
+    return jwt.encode(payload, settings.jwt_secret, algorithm="HS256")
+
+
+async def get_current_user(
+    credentials: HTTPAuthorizationCredentials | None = Depends(bearer),
+    db: AsyncSession = Depends(get_db),
+) -> User | None:
+    if not credentials:
+        return None
+    try:
+        payload = jwt.decode(credentials.credentials, settings.jwt_secret, algorithms=["HS256"])
+        user = await db.get(User, payload["sub"])
+        return user
+    except JWTError:
+        return None
+
+
+async def require_user(user: User | None = Depends(get_current_user)) -> User:
+    if not user:
+        raise HTTPException(401, "Not authenticated")
+    return user
+
+
+# ─── Lifespan ────────────────────────────────────────────────────────────────
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await init_db()
-    # Reset any observations stuck in formatting/researching from a previous crashed instance
     async with AsyncSessionLocal() as db:
         from sqlalchemy import update
         await db.execute(
@@ -36,11 +79,11 @@ app.add_middleware(
 )
 
 
+# ─── Pipeline ────────────────────────────────────────────────────────────────
+
 async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg"):
-    """Background task: format thesis → steel man."""
     async with AsyncSessionLocal() as db:
         try:
-            # Step 1: format thesis
             thesis = await format_thesis(raw_input, input_type, image_b64, image_media_type)
             obs = await db.get(Observation, observation_id)
             if not obs:
@@ -49,7 +92,6 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             obs.status = "researching"
             await db.commit()
 
-            # Step 2: steel man
             steel_man, sources = await generate_steel_man(thesis)
             obs = await db.get(Observation, observation_id)
             if not obs:
@@ -58,7 +100,6 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             if sources:
                 obs.sources = sources
 
-            # Step 3: metadata (score, tags, evidence type)
             try:
                 meta = await generate_metadata(thesis, steel_man, image_b64, image_media_type)
                 obs.score = meta.get("score")
@@ -78,20 +119,68 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             print(f"Pipeline error for {observation_id} (auto-deleted): {e}")
 
 
+# ─── Auth routes ─────────────────────────────────────────────────────────────
+
+class GoogleAuthBody(BaseModel):
+    id_token: str
+
+
+@app.post("/auth/google")
+async def auth_google(body: GoogleAuthBody, db: AsyncSession = Depends(get_db)):
+    try:
+        info = google_id_token.verify_oauth2_token(
+            body.id_token,
+            google_requests.Request(),
+            settings.google_client_id,
+        )
+    except Exception as e:
+        raise HTTPException(401, f"Invalid Google token: {e}")
+
+    google_id = info["sub"]
+    result = await db.execute(select(User).where(User.google_id == google_id))
+    user = result.scalar_one_or_none()
+
+    if not user:
+        user = User(
+            google_id=google_id,
+            name=info.get("name", ""),
+            email=info.get("email", ""),
+            avatar_url=info.get("picture"),
+        )
+        db.add(user)
+        await db.commit()
+        await db.refresh(user)
+    else:
+        # Update name/avatar in case they changed
+        user.name = info.get("name", user.name)
+        user.avatar_url = info.get("picture", user.avatar_url)
+        await db.commit()
+
+    return {"token": _make_jwt(user), "user": {"id": user.id, "name": user.name, "avatar": user.avatar_url}}
+
+
+@app.get("/auth/me")
+async def auth_me(user: User = Depends(require_user)):
+    return {"id": user.id, "name": user.name, "avatar": user.avatar_url, "email": user.email}
+
+
+# ─── Health ──────────────────────────────────────────────────────────────────
+
 @app.get("/health")
 async def health():
     return {"status": "ok"}
 
 
+# ─── Observations ─────────────────────────────────────────────────────────────
+
 @app.post("/observations", response_model=ObservationOut, status_code=201)
-async def create_observation(body: ObservationCreate, db: AsyncSession = Depends(get_db)):
+async def create_observation(
+    body: ObservationCreate,
+    db: AsyncSession = Depends(get_db),
+    current_user: User | None = Depends(get_current_user),
+):
     image_b64 = body.image_data
     image_media_type = body.image_media_type or "image/jpeg"
-
-    if image_b64:
-        print(f"[create_observation] image received, type={image_media_type}, b64_len={len(image_b64)}")
-    else:
-        print(f"[create_observation] text input, type={body.input_type}")
 
     obs = Observation(
         raw_input=body.raw_input,
@@ -101,6 +190,7 @@ async def create_observation(body: ObservationCreate, db: AsyncSession = Depends
         image_data=image_b64,
         image_media_type=image_media_type,
         model_used=ACTIVE_MODEL,
+        user_id=current_user.id if current_user else None,
     )
     db.add(obs)
     await db.commit()
@@ -110,8 +200,14 @@ async def create_observation(body: ObservationCreate, db: AsyncSession = Depends
 
 
 @app.get("/observations", response_model=list[ObservationOut])
-async def list_observations(db: AsyncSession = Depends(get_db)):
-    result = await db.execute(select(Observation).order_by(desc(Observation.created_at)).limit(100))
+async def list_observations(
+    db: AsyncSession = Depends(get_db),
+    current_user: User | None = Depends(get_current_user),
+):
+    query = select(Observation).order_by(desc(Observation.created_at)).limit(100)
+    if current_user:
+        query = query.where(Observation.user_id == current_user.id)
+    result = await db.execute(query)
     return result.scalars().all()
 
 
@@ -130,15 +226,12 @@ async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
         raise HTTPException(404)
     if obs.status != "complete":
         raise HTTPException(400, "Research not complete")
-    # Return cached result if already generated
     if obs.stress_test and isinstance(obs.stress_test, dict) and "verdict" in obs.stress_test:
         return obs.stress_test
     try:
         result, sources = await generate_stress_test(obs.thesis or obs.raw_input, obs.summary or "")
     except Exception as e:
-        print(f"Stress test failed for {obs_id}: {e}")
         raise HTTPException(500, f"Stress test generation failed: {str(e)}")
-    # Merge stress test sources with existing sources
     if sources:
         existing = obs.sources or []
         seen = {s["url"] for s in existing}

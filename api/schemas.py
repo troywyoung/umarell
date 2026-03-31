@@ -15,6 +15,7 @@ class ObservationOut(BaseModel):
     model_config = {"from_attributes": True}
 
     id: str
+    user_id: Optional[str] = None
     raw_input: str
     input_type: str
     thesis: Optional[str]
