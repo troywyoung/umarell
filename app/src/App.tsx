@@ -224,7 +224,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
   useEffect(() => {
     let cancelled = false;
     const page = Math.floor(Math.random() * 100) + 1;
-    fetch(`https://api.pexels.com/v1/search?query=${["protest","chess","ruins"][Math.floor(Math.random()*3)]}&per_page=1&page=${page}&orientation=landscape`, {
+    fetch(`https://api.pexels.com/v1/search?query=${["protest","chess","ruins","stock+market","laboratory","newspaper","government+building","wall+street","military"][Math.floor(Math.random()*9)]}&per_page=1&page=${page}&orientation=landscape`, {
       headers: { Authorization: "8PIku3G38amYoSKnhCyaA0o5p40er0GSxHM56s8Rvw5dcHrgiQ0n2qwe" },
     })
       .then(r => r.json())
