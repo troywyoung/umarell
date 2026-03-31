@@ -324,7 +324,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                 <div style={{ flex: 1, minWidth: 0, paddingRight: 28 }}>
                   {/* Headline: thesis truncated to 1 line */}
                   <p style={{
-                    fontSize: 15, fontWeight: 600, color: "#1A1A1A",
+                    fontSize: 12, fontWeight: 600, color: "#1A1A1A",
                     lineHeight: 1.4, margin: "0 0 4px", letterSpacing: -0.2,
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -336,7 +336,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                   {/* First steel man bullet as secondary text */}
                   {firstBullet && (
                     <p style={{
-                      fontSize: 13, color: "#888", lineHeight: 1.45,
+                      fontSize: 10, color: "#888", lineHeight: 1.45,
                       margin: "0 0 6px",
                       overflow: "hidden",
                       display: "-webkit-box",
@@ -588,7 +588,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
           placeholder="Submit a link instead"
           style={{
             flex: 1, border: "none", outline: "none",
-            fontSize: 14, color: "#1A1A1A", fontFamily: "inherit",
+            fontSize: 16, color: "#1A1A1A", fontFamily: "inherit",
             background: "transparent",
           }}
         />
@@ -801,7 +801,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
             )}
 
             {/* Step progress — animated mesh builds itself */}
-            <div style={{ display: "flex", alignItems: "center", gap: 20, padding: "30px 0 28px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "30px 0 28px" }}>
               <SteelManIcon size={49} animate />
               <div>
                 <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "0 0 4px" }}>
