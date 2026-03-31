@@ -320,26 +320,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                       <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "2px 8px" }}>{tag}</span>
                     ))}
                   </div>
-                  {/* Share + Copy on completed cards */}
+                  {/* Share icon on completed cards */}
                   {obs.status === "complete" && obs.summary && (() => {
                     const bullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
                     const txt = `Steel Man: ${obs.thesis}\n\n${bullets.map(b => "\u2022 " + b).join("\n")}`;
-                    const enc = encodeURIComponent(txt);
                     return (
-                      <div style={{ display: "flex", gap: 6, marginTop: 6 }} onClick={(e) => e.stopPropagation()}>
-                        <a href={`https://wa.me/?text=${enc}`} target="_blank" rel="noopener noreferrer"
-                          style={{ fontSize: 10, fontWeight: 600, color: "#2E7D32", background: "#E8F5E9", borderRadius: 100, padding: "2px 8px", textDecoration: "none" }}>
-                          WhatsApp
-                        </a>
-                        <a href={`sms:?body=${enc}`}
-                          style={{ fontSize: 10, fontWeight: 600, color: "#1565C0", background: "#E3F2FD", borderRadius: 100, padding: "2px 8px", textDecoration: "none" }}>
-                          SMS
-                        </a>
-                        <button onClick={() => { navigator.clipboard.writeText(txt); }}
-                          style={{ fontSize: 10, fontWeight: 600, color: "#555", background: "#F0F0ED", borderRadius: 100, padding: "2px 8px", border: "none", cursor: "pointer", fontFamily: "inherit" }}>
-                          Copy
-                        </button>
-                      </div>
+                      <ShareButton text={txt} style={{ marginTop: 4 }} onClick={(e: React.MouseEvent) => e.stopPropagation()} />
                     );
                   })()}
                 </div>
@@ -729,7 +715,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
 
   // Build share text
   const shareText = `Steel Man: ${obs.thesis}\n\n${steelBullets.map(b => '\u2022 ' + b).join('\n')}`;
-  const encodedShareText = encodeURIComponent(shareText);
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
@@ -829,46 +814,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           </div>
         )}
 
-        {/* Share buttons (shown when complete) */}
+        {/* Share (shown when complete) */}
         {obs.status === "complete" && steelBullets.length > 0 && (
-          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
-            <a
-              href={`https://wa.me/?text=${encodedShareText}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: "inline-flex", alignItems: "center", gap: 4,
-                background: "#E8F5E9", color: "#2E7D32", border: "none",
-                borderRadius: 100, padding: "6px 14px",
-                fontSize: 12, fontWeight: 600, textDecoration: "none",
-                cursor: "pointer", fontFamily: "inherit",
-              }}
-            >
-              {"\uD83D\uDCAC"} WhatsApp
-            </a>
-            <a
-              href={`sms:?body=${encodedShareText}`}
-              style={{
-                display: "inline-flex", alignItems: "center", gap: 4,
-                background: "#E3F2FD", color: "#1565C0", border: "none",
-                borderRadius: 100, padding: "6px 14px",
-                fontSize: 12, fontWeight: 600, textDecoration: "none",
-                cursor: "pointer", fontFamily: "inherit",
-              }}
-            >
-              {"\uD83D\uDCF1"} SMS
-            </a>
-            <button
-              onClick={() => { navigator.clipboard.writeText(shareText); }}
-              style={{
-                display: "inline-flex", alignItems: "center", gap: 4,
-                background: "#F0F0ED", color: "#555", border: "none",
-                borderRadius: 100, padding: "6px 14px",
-                fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "inherit",
-              }}
-            >
-              {"\uD83D\uDCCB"} Copy
-            </button>
+          <div style={{ marginBottom: 16 }}>
+            <ShareButton text={shareText} />
           </div>
         )}
 
@@ -1001,6 +950,103 @@ function PulsingDot() {
         }
       `}</style>
     </>
+  );
+}
+
+function ShareButton({ text, style, onClick }: { text: string; style?: React.CSSProperties; onClick?: (e: React.MouseEvent) => void }) {
+  const [open, setOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const encoded = encodeURIComponent(text);
+
+  // Close dropdown on outside click
+  useEffect(() => {
+    if (!open) return;
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    document.addEventListener("mousedown", handler);
+    return () => document.removeEventListener("mousedown", handler);
+  }, [open]);
+
+  const handleShare = async (e: React.MouseEvent) => {
+    onClick?.(e);
+    e.stopPropagation();
+    // Try native share first (mobile)
+    if (navigator.share) {
+      try { await navigator.share({ text }); } catch { /* cancelled */ }
+      return;
+    }
+    setOpen(!open);
+  };
+
+  const handleCopy = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => { setCopied(false); setOpen(false); }, 1200);
+  };
+
+  return (
+    <div ref={ref} style={{ position: "relative", display: "inline-flex", ...style }}>
+      <button
+        onClick={handleShare}
+        style={{
+          background: "none", border: "none", cursor: "pointer", padding: 4,
+          color: "#999", fontSize: 15, lineHeight: 1,
+          WebkitTapHighlightColor: "transparent",
+        }}
+        title="Share"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8" />
+          <polyline points="16 6 12 2 8 6" />
+          <line x1="12" y1="2" x2="12" y2="15" />
+        </svg>
+      </button>
+
+      {open && (
+        <div style={{
+          position: "absolute", bottom: "100%", left: 0, marginBottom: 6,
+          background: "#FFF", borderRadius: 12, padding: 6,
+          boxShadow: "0 4px 20px rgba(0,0,0,0.15)", border: "1px solid #E8E8E4",
+          zIndex: 100, minWidth: 140,
+        }}>
+          {[
+            { label: "WhatsApp", href: `https://wa.me/?text=${encoded}`, color: "#2E7D32" },
+            { label: "SMS", href: `sms:?body=${encoded}`, color: "#1565C0" },
+          ].map(({ label, href, color }) => (
+            <a
+              key={label}
+              href={href}
+              target={label === "WhatsApp" ? "_blank" : undefined}
+              rel={label === "WhatsApp" ? "noopener noreferrer" : undefined}
+              onClick={(e) => { e.stopPropagation(); setOpen(false); }}
+              style={{
+                display: "block", padding: "9px 14px", fontSize: 14, fontWeight: 600,
+                color, textDecoration: "none", borderRadius: 8, fontFamily: "inherit",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.background = "#F5F5F2")}
+              onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+            >
+              {label}
+            </a>
+          ))}
+          <button
+            onClick={handleCopy}
+            style={{
+              display: "block", width: "100%", padding: "9px 14px", fontSize: 14,
+              fontWeight: 600, color: "#555", background: "none", border: "none",
+              borderRadius: 8, cursor: "pointer", fontFamily: "inherit", textAlign: "left",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.background = "#F5F5F2")}
+            onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
+          >
+            {copied ? "Copied!" : "Copy text"}
+          </button>
+        </div>
+      )}
+    </div>
   );
 }
 
