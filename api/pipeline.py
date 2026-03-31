@@ -187,16 +187,21 @@ async def _fetch_url(url: str) -> str:
 async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", context: str | None = None) -> str:
     if context:
         question = (
-            f"The user adds this context or question: \"{context}\"\n\n"
-            "Combining what you see in the image with this context, describe the core observation or insight in 1–3 plain sentences."
+            f"The user's claim is: \"{context}\"\n\n"
+            "The image is supporting context. Output the user's claim as a clear, arguable thesis statement — "
+            "exactly as they intend it. Do NOT fact-check or correct them. Do NOT describe the image. "
+            "Just restate their claim cleanly as a thesis in 1–2 sentences."
         )
     else:
-        question = "What is the core observation or idea in this image?"
+        question = (
+            "Look at this image and identify the core claim, argument, or debatable assertion it represents. "
+            "State it as a thesis — an arguable position someone could defend. 1–2 sentences. No preamble."
+        )
 
     system = (
-        "You are a research editor. Look at this image and extract the core idea, "
-        "claim, headline, or observation it contains. Describe it in 1–3 plain sentences "
-        "as if briefing a colleague. No preamble. Output only the extracted observation."
+        "You are a debate coach. Your job is to extract or restate a THESIS — a debatable claim that can be "
+        "argued for and against. Never describe what you see. Never fact-check. Never correct the user. "
+        "Output only the thesis statement."
     )
 
     if PROVIDER == "gemini":
@@ -262,12 +267,15 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
 
     return await _call(
         system=(
-            "You are a research editor. The user has written an observation or argument. "
-            "Clean it up into a clear thesis — preserve their specific claims, data points, and intent. "
-            "Do NOT over-summarize or lose nuance. If the input is already clear, keep it nearly as-is. "
-            "Output 1–3 sentences. No preamble. Output only the thesis."
+            "You are a debate coach. Convert the user's input into a clear THESIS STATEMENT — "
+            "a single arguable claim that can be defended and challenged. "
+            "Rules: (1) Must be a declarative statement, not a question or description. "
+            "(2) Preserve the user's exact intent and any specific claims or data points. "
+            "(3) Do NOT fact-check, correct, or hedge their claim. "
+            "(4) If they say X is Y, the thesis is 'X is Y'. "
+            "Output 1–2 sentences. No preamble. Output only the thesis."
         ),
-        user=f"Raw observation: {content}",
+        user=f"User input: {content}",
         max_tokens=2000,
     )
 
