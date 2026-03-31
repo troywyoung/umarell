@@ -671,7 +671,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
 function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requestStressTest }: {
   obs: Observation;
   onBack: () => void;
-  onResubmit: (text: string) => Promise<void>;
+  onResubmit: (text: string, imageData?: string, imageMediaType?: string) => Promise<void>;
   pollObservation: (id: string) => Promise<Observation | null>;
   requestStressTest: (id: string) => Promise<import("./types").StressTest | null>;
 }) {
@@ -730,7 +730,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
     if (!editText.trim() || resubmitting) return;
     setResubmitting(true);
     try {
-      await onResubmit(editText.trim());
+      await onResubmit(editText.trim(), obs.image_data, obs.image_media_type);
     } catch {
       setResubmitting(false);
     }
@@ -1171,8 +1171,9 @@ export default function App() {
     navigateTo("output", obs);
   };
 
-  const handleResubmit = async (text: string) => {
-    const obs = await submitObservation(text, "text");
+  const handleResubmit = async (text: string, imageData?: string, imageMediaType?: string) => {
+    const inputType = imageData ? "screenshot" : (text.startsWith("http") ? "url" : "text");
+    const obs = await submitObservation(text, inputType, imageData, imageMediaType);
     setSelectedObs(obs);
     // view stays on "output"
   };
