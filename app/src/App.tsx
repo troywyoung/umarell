@@ -908,9 +908,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
         {/* Stress Test content */}
         {tab === "stress" && (() => {
           if (stressLoading) return (
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "30px 0" }}>
-              <SteelManIcon size={56} animate />
-              <p style={{ fontSize: 14, color: "#888", marginTop: 14 }}>Stress testing…</p>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "30px 0", gap: 10 }}>
+              <ProcessingDots />
+              <p style={{ fontSize: 14, color: "#888", margin: 0 }}>Stress testing…</p>
             </div>
           );
           if (stressError) return (
