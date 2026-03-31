@@ -306,7 +306,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                   background: "#FFF", borderRadius: 10,
                   marginBottom: 10, boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", position: "relative", overflow: "hidden",
-                  borderLeft: `3px solid ${obs.evidence_type === "Empirical" ? "#2E7D32" : obs.evidence_type === "Observational" ? "#1565C0" : obs.evidence_type === "Speculative" ? "#6A1B9A" : "#999"}`,
                 }}
               >
                 {/* Top row: headline + score badge + delete */}
