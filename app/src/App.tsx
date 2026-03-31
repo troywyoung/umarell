@@ -535,7 +535,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
           type="url"
           value={url}
           onChange={(e) => setUrl(e.target.value)}
-          placeholder="Paste a URL\u2026"
+          placeholder="Submit a link instead"
           style={{
             flex: 1, border: "none", outline: "none",
             fontSize: 14, color: "#1A1A1A", fontFamily: "inherit",
