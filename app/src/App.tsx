@@ -303,8 +303,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                 key={obs.id}
                 onClick={() => onSelect(obs)}
                 style={{
-                  background: "#FFF", borderRadius: 14, padding: "14px 16px",
-                  marginBottom: 10, boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
+                  background: "#FFF", borderRadius: 14, padding: "21px 24px",
+                  marginBottom: 15, boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", position: "relative",
                   display: "flex", alignItems: "flex-start", gap: 12,
                 }}
