@@ -58,15 +58,17 @@ const MESH_EDGES: [number, number][] = [
   [13,15],[19,10],[18,16],
 ];
 
-function SteelManIcon({ size = 24, animate = false }: { size?: number; animate?: boolean }) {
-  const id = animate ? "sm-anim" : "sm-static";
+function SteelManIcon({ size = 24, animate = false, animateCount }: { size?: number; animate?: boolean; animateCount?: number }) {
+  const isAnimated = animate || animateCount != null;
+  const id = isAnimated ? "sm-anim" : "sm-static";
   const nodeCount = MESH_NODES.length;
   const edgeCount = MESH_EDGES.length;
   // Slow build: edges over ~3s, nodes over ~2.5s, then red highlight travels
   const edgeDelay = (i: number) => (i * (3 / edgeCount)).toFixed(2);
   const nodeDelay = (i: number) => (0.5 + i * (2.5 / nodeCount)).toFixed(2);
-  // Red highlight: one node at a time cycles through, 0.3s each, loops
+  // Red highlight: one node at a time cycles through, 0.3s each
   const highlightDuration = nodeCount * 0.3;
+  const redIter = animateCount ?? (animate ? "infinite" : 0);
 
   return (
     <svg
@@ -86,7 +88,7 @@ function SteelManIcon({ size = 24, animate = false }: { size?: number; animate?:
             x1={x1} y1={y1} x2={x2} y2={y2}
             stroke="#1A1A1A"
             strokeWidth={0.7}
-            style={animate ? {
+            style={isAnimated ? {
               opacity: 0,
               animation: `meshFadeIn 0.8s ease forwards`,
               animationDelay: `${edgeDelay(i)}s`,
@@ -101,7 +103,7 @@ function SteelManIcon({ size = 24, animate = false }: { size?: number; animate?:
           cx={cx} cy={cy}
           r={1.3}
           fill="#1A1A1A"
-          style={animate ? {
+          style={isAnimated ? {
             opacity: 0,
             animation: `meshNodePop 0.5s ease forwards`,
             animationDelay: `${nodeDelay(i)}s`,
@@ -109,20 +111,22 @@ function SteelManIcon({ size = 24, animate = false }: { size?: number; animate?:
         />
       ))}
       {/* Red highlight nodes — overlay that pulses one at a time */}
-      {animate && MESH_NODES.map(([cx, cy], i) => (
-        <circle
-          key={`${id}-r${i}`}
-          cx={cx} cy={cy}
-          r={1.8}
-          fill="#E53935"
-          style={{
-            opacity: 0,
-            animation: `meshRedPing 0.4s ease ${3.5 + i * 0.3}s infinite`,
-            animationDelay: `${(3.5 + i * (highlightDuration / nodeCount)).toFixed(2)}s`,
-          }}
-        />
-      ))}
-      {animate && (
+      {isAnimated && redIter !== 0 && MESH_NODES.map(([cx, cy], i) => {
+        return (
+          <circle
+            key={`${id}-r${i}`}
+            cx={cx} cy={cy}
+            r={1.8}
+            fill="#E53935"
+            style={{
+              opacity: 0,
+              animation: `meshRedPing 0.4s ease ${redIter}`,
+              animationDelay: `${(3.5 + i * (highlightDuration / nodeCount)).toFixed(2)}s`,
+            }}
+          />
+        );
+      })}
+      {isAnimated && (
         <style>{`
           @keyframes meshFadeIn {
             from { opacity: 0; } to { opacity: 0.55; }
@@ -206,7 +210,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
         display: "flex", alignItems: "center", justifyContent: "space-between",
       }}>
         <span style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-          <SteelManIcon size={28} /> Steel Man
+          <SteelManIcon size={28} animate animateCount={3} /> Steel Man
         </span>
         {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing\u2026</span>}
       </div>
