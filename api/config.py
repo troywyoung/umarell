@@ -6,7 +6,7 @@ class Settings(BaseSettings):
 
     anthropic_api_key: str = ""
     claude_model: str = "claude-sonnet-4-6"
-    database_url: str = "sqlite+aiosqlite:///./umarell.db"
+    database_url: str = "sqlite+aiosqlite:////app/data/umarell.db"
     cors_origins: str = "*"
 
 
