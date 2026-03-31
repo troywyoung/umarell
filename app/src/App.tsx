@@ -728,7 +728,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
             <img
               src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
               alt="Uploaded"
-              style={{ width: "100%", borderRadius: 14, maxHeight: 240, objectFit: "cover" }}
+              style={{ width: "100%", aspectRatio: "1", borderRadius: 14, objectFit: "cover" }}
             />
           </div>
         )}

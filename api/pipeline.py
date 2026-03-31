@@ -1,46 +1,85 @@
 """
 Observation pipeline — format thesis → steel man → stress test (on demand)
-All Claude API calls are here.
+Supports Gemini (default) and Anthropic providers.
 """
 import json
 import re
 import asyncio
+import base64
 import httpx
 from bs4 import BeautifulSoup
-from anthropic import AsyncAnthropic, APIStatusError
 from config import settings
 
-client = AsyncAnthropic(api_key=settings.anthropic_api_key)
+PROVIDER = settings.llm_provider  # "gemini" or "anthropic"
+
+# ─── Provider setup ───────────────────────────────────────────────────────
+
+if PROVIDER == "gemini":
+    from google import genai
+    gclient = genai.Client(api_key=settings.google_api_key)
+    GEMINI_MODEL = settings.gemini_model
+else:
+    from anthropic import AsyncAnthropic, APIStatusError
+    aclient = AsyncAnthropic(api_key=settings.anthropic_api_key)
+    CLAUDE_MODEL = settings.claude_model
 
 
 def _extract_json(raw: str) -> dict:
-    """Robustly extract JSON from Claude response that may have markdown fences."""
-    # Try direct parse first
+    """Robustly extract JSON from LLM response that may have markdown fences."""
     try:
         return json.loads(raw.strip())
     except json.JSONDecodeError:
         pass
-    # Strip markdown fences
     cleaned = re.sub(r'^```(?:json)?\s*', '', raw.strip())
     cleaned = re.sub(r'\s*```$', '', cleaned)
     try:
         return json.loads(cleaned.strip())
     except json.JSONDecodeError:
         pass
-    # Last resort: find first { to last }
     start = raw.find('{')
     end = raw.rfind('}')
     if start != -1 and end != -1:
         return json.loads(raw[start:end+1])
     raise ValueError(f"Could not parse JSON from: {raw[:200]}")
-MODEL = settings.claude_model
 
+
+# ─── Unified _call ────────────────────────────────────────────────────────
 
 async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5) -> str:
+    if PROVIDER == "gemini":
+        return await _call_gemini(system, user, max_tokens, retries)
+    return await _call_anthropic(system, user, max_tokens, retries)
+
+
+async def _call_gemini(system: str, user: str, max_tokens: int, retries: int) -> str:
     for attempt in range(retries):
         try:
-            msg = await client.messages.create(
-                model=MODEL,
+            resp = await asyncio.to_thread(
+                gclient.models.generate_content,
+                model=GEMINI_MODEL,
+                contents=user,
+                config=genai.types.GenerateContentConfig(
+                    system_instruction=system,
+                    max_output_tokens=max_tokens,
+                    thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
+                ),
+            )
+            return resp.text.strip()
+        except Exception as e:
+            err_str = str(e)
+            if ("503" in err_str or "429" in err_str or "RESOURCE_EXHAUSTED" in err_str) and attempt < retries - 1:
+                wait = min(2 ** (attempt + 1), 30)
+                print(f"[pipeline/gemini] retrying in {wait}s (attempt {attempt+1}/{retries}): {err_str[:100]}")
+                await asyncio.sleep(wait)
+            else:
+                raise
+
+
+async def _call_anthropic(system: str, user: str, max_tokens: int, retries: int) -> str:
+    for attempt in range(retries):
+        try:
+            msg = await aclient.messages.create(
+                model=CLAUDE_MODEL,
                 max_tokens=max_tokens,
                 system=system,
                 messages=[{"role": "user", "content": user}],
@@ -48,12 +87,14 @@ async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5
             return msg.content[0].text.strip()
         except APIStatusError as e:
             if e.status_code in (429, 529) and attempt < retries - 1:
-                wait = min(2 ** (attempt + 1), 30)  # 2, 4, 8, 16 seconds
-                print(f"[pipeline] {e.status_code} — retrying in {wait}s (attempt {attempt+1}/{retries})")
+                wait = min(2 ** (attempt + 1), 30)
+                print(f"[pipeline/anthropic] {e.status_code} — retrying in {wait}s (attempt {attempt+1}/{retries})")
                 await asyncio.sleep(wait)
             else:
                 raise
 
+
+# ─── URL fetch ────────────────────────────────────────────────────────────
 
 async def _fetch_url(url: str) -> str:
     try:
@@ -67,6 +108,8 @@ async def _fetch_url(url: str) -> str:
         return f"[Could not fetch URL: {e}]"
 
 
+# ─── Image extraction ────────────────────────────────────────────────────
+
 async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", context: str | None = None) -> str:
     if context:
         question = (
@@ -76,32 +119,60 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", con
     else:
         question = "What is the core observation or idea in this image?"
 
-    for attempt in range(3):
-        try:
-            msg = await client.messages.create(
-                model=MODEL,
-                max_tokens=400,
-                system=(
-                    "You are a research editor. Look at this image and extract the core idea, "
-                    "claim, headline, or observation it contains. Describe it in 1–3 plain sentences "
-                    "as if briefing a colleague. No preamble. Output only the extracted observation."
-                ),
-                messages=[{
-                    "role": "user",
-                    "content": [
-                        {"type": "image", "source": {"type": "base64", "media_type": media_type, "data": image_b64}},
-                        {"type": "text", "text": question},
-                    ],
-                }],
-            )
-            return msg.content[0].text.strip()
-        except APIStatusError as e:
-            if e.status_code in (429, 529) and attempt < 2:
-                print(f"[pipeline] image extract {e.status_code} — retrying in {2**attempt}s")
-                await asyncio.sleep(2 ** attempt)
-            else:
-                raise
+    system = (
+        "You are a research editor. Look at this image and extract the core idea, "
+        "claim, headline, or observation it contains. Describe it in 1–3 plain sentences "
+        "as if briefing a colleague. No preamble. Output only the extracted observation."
+    )
 
+    if PROVIDER == "gemini":
+        image_bytes = base64.b64decode(image_b64)
+        image_part = genai.types.Part.from_bytes(data=image_bytes, mime_type=media_type)
+        for attempt in range(3):
+            try:
+                resp = await asyncio.to_thread(
+                    gclient.models.generate_content,
+                    model=GEMINI_MODEL,
+                    contents=[image_part, question],
+                    config=genai.types.GenerateContentConfig(
+                        system_instruction=system,
+                        max_output_tokens=400,
+                        thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
+                    ),
+                )
+                return resp.text.strip()
+            except Exception as e:
+                if attempt < 2:
+                    print(f"[pipeline/gemini] image extract retry {attempt+1}: {str(e)[:100]}")
+                    await asyncio.sleep(2 ** attempt)
+                else:
+                    raise
+    else:
+        for attempt in range(3):
+            try:
+                msg = await aclient.messages.create(
+                    model=CLAUDE_MODEL,
+                    max_tokens=400,
+                    system=system,
+                    messages=[{
+                        "role": "user",
+                        "content": [
+                            {"type": "image", "source": {"type": "base64", "media_type": media_type, "data": image_b64}},
+                            {"type": "text", "text": question},
+                        ],
+                    }],
+                )
+                return msg.content[0].text.strip()
+            except APIStatusError as e:
+                if e.status_code in (429, 529) and attempt < 2:
+                    print(f"[pipeline/anthropic] image extract {e.status_code} — retrying in {2**attempt}s")
+                    await asyncio.sleep(2 ** attempt)
+                else:
+                    raise
+    return ""
+
+
+# ─── Pipeline steps ──────────────────────────────────────────────────────
 
 async def format_thesis(raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg") -> str:
     """Turn raw input into a clear, researchable thesis (1–2 sentences)."""
@@ -121,7 +192,7 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
             "clear, specific, researchable thesis in 1–2 sentences. Be direct. No preamble. Output only the thesis."
         ),
         user=f"Raw observation: {content}",
-        max_tokens=150,
+        max_tokens=300,
     )
 
 
@@ -135,7 +206,7 @@ async def generate_steel_man(thesis: str) -> str:
             "Output each bullet on its own line starting with '•'."
         ),
         user=f"Steel man this thesis: {thesis}",
-        max_tokens=400,
+        max_tokens=800,
     )
 
 
@@ -161,7 +232,7 @@ Return valid JSON only. No markdown fences. No preamble."""
             "You always return valid JSON when asked."
         ),
         user=prompt,
-        max_tokens=200,
+        max_tokens=500,
     )
 
     return _extract_json(raw)
