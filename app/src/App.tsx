@@ -90,9 +90,10 @@ function SteelManIcon({ size = 24, animate = false, animateCount }: { size?: num
     <svg
       width={size}
       height={size}
-      viewBox="0 0 32 32"
+      viewBox="-1 -1 34 34"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      style={{ overflow: "visible" }}
     >
       {/* Edges */}
       {MESH_EDGES.map(([a, b], i) => {
@@ -566,7 +567,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
         disabled={!canSubmit}
         style={{
           width: "100%",
-          background: canSubmit ? "#1A1A1A" : "#D5D5CD",
+          background: canSubmit ? "#E53935" : "#D5D5CD",
           color: "#FFF", border: "none", borderRadius: 14,
           padding: "16px 0", fontSize: 16, fontWeight: 700,
           cursor: canSubmit ? "pointer" : "not-allowed",
@@ -708,7 +709,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
 
             {/* Step progress — animated mesh builds itself */}
             <div style={{ display: "flex", alignItems: "center", gap: 20, padding: "30px 0 28px" }}>
-              <SteelManIcon size={70} animate />
+              <SteelManIcon size={49} animate />
               <div>
                 <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "0 0 4px" }}>
                   {obs.status === "formatting" ? "Reading your take\u2026" : "Building steel man\u2026"}
@@ -752,7 +753,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
                     disabled={!editText.trim() || resubmitting}
                     style={{
                       flex: 1, padding: "12px 0", borderRadius: 10,
-                      border: "none", background: editText.trim() && !resubmitting ? "#1A1A1A" : "#D5D5CD",
+                      border: "none", background: editText.trim() && !resubmitting ? "#E53935" : "#D5D5CD",
                       color: "#FFF", fontSize: 14, fontWeight: 700,
                       cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
                       fontFamily: "inherit",
