@@ -738,9 +738,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           <>
             {/* Original observation */}
             {!isImage && obs.raw_input && obs.raw_input !== "image" && (
-              <div style={{ background: "#F7F7F5", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
+              <div style={{ background: "#F7F7F5", borderRadius: 12, padding: "14px 16px", marginBottom: 16, width: "100%", boxSizing: "border-box", overflow: "hidden" }}>
                 <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Your observation</p>
-                <p style={{ fontSize: 15, color: "#3A3A38", lineHeight: 1.65, margin: 0 }}>{obs.raw_input}</p>
+                <p style={{ fontSize: 15, color: "#3A3A38", lineHeight: 1.65, margin: 0, wordBreak: "break-all", overflowWrap: "anywhere" }}>{obs.raw_input}</p>
               </div>
             )}
 
