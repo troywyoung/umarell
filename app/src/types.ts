@@ -16,6 +16,7 @@ export interface Observation {
   tags?: string[];         // e.g. ["AI", "Markets"]
   evidence_type?: string;  // Empirical | Observational | Anecdotal | Speculative
   sources?: { url: string; title: string }[];
+  model_used?: string;
   error_detail?: string;
   image_data?: string;       // base64
   image_media_type?: string; // e.g. "image/jpeg"

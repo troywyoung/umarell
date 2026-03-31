@@ -19,10 +19,12 @@ if PROVIDER == "gemini":
     from google import genai
     gclient = genai.Client(api_key=settings.google_api_key)
     GEMINI_MODEL = settings.gemini_model
+    ACTIVE_MODEL = GEMINI_MODEL
 else:
     from anthropic import AsyncAnthropic, APIStatusError
     aclient = AsyncAnthropic(api_key=settings.anthropic_api_key)
     CLAUDE_MODEL = settings.claude_model
+    ACTIVE_MODEL = CLAUDE_MODEL
 
 
 def _extract_json(raw: str) -> dict:

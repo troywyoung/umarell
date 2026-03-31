@@ -7,7 +7,7 @@ from sqlalchemy import select, desc
 from database import init_db, get_db, AsyncSessionLocal
 from models import Observation
 from schemas import ObservationCreate, ObservationOut
-from pipeline import format_thesis, generate_steel_man, generate_stress_test, generate_metadata
+from pipeline import format_thesis, generate_steel_man, generate_stress_test, generate_metadata, ACTIVE_MODEL
 from config import settings
 
 
@@ -92,6 +92,7 @@ async def create_observation(body: ObservationCreate, db: AsyncSession = Depends
         status="formatting",
         image_data=image_b64,
         image_media_type=image_media_type,
+        model_used=ACTIVE_MODEL,
     )
     db.add(obs)
     await db.commit()

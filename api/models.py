@@ -33,6 +33,7 @@ class Observation(Base):
     tags: Mapped[list | None] = mapped_column(JSON, nullable=True)
     evidence_type: Mapped[str | None] = mapped_column(String, nullable=True)
     sources: Mapped[list | None] = mapped_column(JSON, nullable=True)  # [{url, title}, ...]
+    model_used: Mapped[str | None] = mapped_column(String, nullable=True)
     error_detail: Mapped[str | None] = mapped_column(Text, nullable=True)
     image_data: Mapped[str | None] = mapped_column(Text, nullable=True)  # base64
     image_media_type: Mapped[str | None] = mapped_column(String, nullable=True)  # e.g. image/jpeg

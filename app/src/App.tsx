@@ -982,6 +982,13 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
         })()}
 
       </div>
+
+      {/* Model indicator */}
+      {obs.model_used && (
+        <p style={{ textAlign: "center", fontSize: 10, color: "#C0C0B8", padding: "20px 0 0", margin: 0 }}>
+          Powered by {obs.model_used}
+        </p>
+      )}
     </div>
   );
 }
