@@ -223,11 +223,13 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
 
     return await _call(
         system=(
-            "You are a research editor. Take the raw observation and reformulate it as a "
-            "clear, specific, researchable thesis in 1–2 sentences. Be direct. No preamble. Output only the thesis."
+            "You are a research editor. The user has written an observation or argument. "
+            "Clean it up into a clear thesis — preserve their specific claims, data points, and intent. "
+            "Do NOT over-summarize or lose nuance. If the input is already clear, keep it nearly as-is. "
+            "Output 1–3 sentences. No preamble. Output only the thesis."
         ),
         user=f"Raw observation: {content}",
-        max_tokens=300,
+        max_tokens=2000,
     )
 
 
