@@ -158,20 +158,20 @@ Steel man argument:
 
 Now stress test this thesis objectively. Return a JSON object with exactly these keys:
 {{
-  "pros": ["3-4 strongest points in favour"],
-  "cons": ["3-4 strongest weaknesses or objections"],
+  "pros": ["3-4 SHORT points in favour — one sentence each, max 20 words"],
+  "cons": ["3-4 SHORT weaknesses or objections — one sentence each, max 20 words"],
   "verdict": "One direct sentence: does this thesis stand up, and why or why not?"
 }}
 
-Return valid JSON only. No markdown fences. No preamble."""
+Be concise. Each bullet must be under 20 words. Return valid JSON only. No markdown fences. No preamble."""
 
     raw = await _call(
         system=(
             "You are a rigorous intellectual critic. You evaluate arguments fairly, "
-            "acknowledging both strengths and weaknesses. You always return valid JSON when asked."
+            "acknowledging both strengths and weaknesses. You always return valid JSON when asked. Keep bullets very short."
         ),
         user=prompt,
-        max_tokens=600,
+        max_tokens=1000,
     )
 
     return _extract_json(raw)

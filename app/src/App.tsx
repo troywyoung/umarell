@@ -691,11 +691,58 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           </>
         )}
 
-        {/* Thesis (shown once complete) */}
+        {/* Thesis (shown once complete) — click to edit */}
         {obs.status === "complete" && obs.thesis && obs.thesis !== "image" && (
           <div style={{ marginBottom: 12 }}>
             <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Thesis</p>
-            <h1 style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.4, margin: 0 }}>{obs.thesis}</h1>
+            {editMode ? (
+              <div>
+                <textarea
+                  value={editText}
+                  onChange={(e) => setEditText(e.target.value)}
+                  rows={3}
+                  autoFocus
+                  style={{
+                    width: "100%", border: "1.5px solid #D5D5CD", borderRadius: 12,
+                    padding: "12px 14px", fontSize: 17, color: "#1A1A1A", fontWeight: 600,
+                    lineHeight: 1.4, resize: "none", fontFamily: "inherit",
+                    boxSizing: "border-box", outline: "none", letterSpacing: -0.4,
+                  }}
+                />
+                <div style={{ display: "flex", gap: 8, marginTop: 10 }}>
+                  <button
+                    onClick={() => setEditMode(false)}
+                    style={{
+                      flex: 1, padding: "12px 0", borderRadius: 10,
+                      border: "1.5px solid #D5D5CD", background: "transparent",
+                      color: "#888", fontSize: 14, fontWeight: 600,
+                      cursor: "pointer", fontFamily: "inherit",
+                    }}
+                  >Cancel</button>
+                  <button
+                    onClick={handleResubmit}
+                    disabled={!editText.trim() || resubmitting}
+                    style={{
+                      flex: 1, padding: "12px 0", borderRadius: 10,
+                      border: "none", background: editText.trim() && !resubmitting ? "#1A1A1A" : "#D5D5CD",
+                      color: "#FFF", fontSize: 14, fontWeight: 700,
+                      cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
+                      fontFamily: "inherit",
+                    }}
+                  >{resubmitting ? "Submitting\u2026" : "Resubmit \u2192"}</button>
+                </div>
+              </div>
+            ) : (
+              <h1
+                onClick={() => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); }}
+                style={{
+                  fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4,
+                  letterSpacing: -0.4, margin: 0, cursor: "pointer",
+                  borderBottom: "1px dashed #D5D5CD", paddingBottom: 4,
+                }}
+                title="Tap to edit & resubmit"
+              >{obs.thesis}</h1>
+            )}
           </div>
         )}
 
@@ -783,52 +830,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
               </div>
             ))}
 
-            {/* Edit & Resubmit — below steel man bullets */}
-            {!editMode && (
-              <div style={{ marginTop: 20 }}>
-                <button
-                  onClick={() => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); }}
-                  style={{
-                    width: "100%", padding: "12px 0", borderRadius: 10,
-                    border: "1.5px solid #D5D5CD", background: "transparent",
-                    color: "#555", fontSize: 14, fontWeight: 600,
-                    cursor: "pointer", fontFamily: "inherit",
-                    WebkitTapHighlightColor: "transparent",
-                  }}
-                >
-                  Edit &amp; Resubmit
-                </button>
-              </div>
-            )}
-
-            {editMode && (
-              <div style={{ marginTop: 20 }}>
-                <textarea
-                  value={editText}
-                  onChange={(e) => setEditText(e.target.value)}
-                  rows={4}
-                  style={{
-                    width: "100%", border: "1.5px solid #D5D5CD", borderRadius: 12,
-                    padding: "12px 14px", fontSize: 15, color: "#1A1A1A",
-                    lineHeight: 1.6, resize: "none", fontFamily: "inherit",
-                    boxSizing: "border-box", outline: "none",
-                  }}
-                />
-                <button
-                  onClick={handleResubmit}
-                  disabled={!editText.trim() || resubmitting}
-                  style={{
-                    width: "100%", marginTop: 10, padding: "14px 0", borderRadius: 10,
-                    border: "none", background: editText.trim() && !resubmitting ? "#1A1A1A" : "#D5D5CD",
-                    color: "#FFF", fontSize: 15, fontWeight: 700,
-                    cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
-                    fontFamily: "inherit", WebkitTapHighlightColor: "transparent",
-                  }}
-                >
-                  {resubmitting ? "Submitting\u2026" : "Resubmit \u2192"}
-                </button>
-              </div>
-            )}
           </>
         )}
 
