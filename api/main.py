@@ -17,7 +17,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Umarell API", lifespan=lifespan)
+app = FastAPI(title="Steel Man API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
@@ -87,6 +87,8 @@ async def create_observation(body: ObservationCreate, db: AsyncSession = Depends
         input_type=body.input_type,
         thesis=body.raw_input[:120],
         status="formatting",
+        image_data=image_b64,
+        image_media_type=image_media_type,
     )
     db.add(obs)
     await db.commit()
@@ -119,7 +121,11 @@ async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
     # Return cached result if already generated
     if obs.stress_test and isinstance(obs.stress_test, dict) and "verdict" in obs.stress_test:
         return obs.stress_test
-    result = await generate_stress_test(obs.thesis or obs.raw_input, obs.summary or "")
+    try:
+        result = await generate_stress_test(obs.thesis or obs.raw_input, obs.summary or "")
+    except Exception as e:
+        print(f"Stress test failed for {obs_id}: {e}")
+        raise HTTPException(500, f"Stress test generation failed: {str(e)}")
     obs.stress_test = result
     await db.commit()
     return result

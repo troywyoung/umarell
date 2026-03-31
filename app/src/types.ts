@@ -15,5 +15,7 @@ export interface Observation {
   score?: number;          // 0-100 evidence strength
   tags?: string[];         // e.g. ["AI", "Markets"]
   evidence_type?: string;  // Empirical | Observational | Anecdotal | Speculative
+  image_data?: string;       // base64
+  image_media_type?: string; // e.g. "image/jpeg"
   created_at: string;
 }

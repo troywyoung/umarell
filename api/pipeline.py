@@ -3,12 +3,35 @@ Observation pipeline — format thesis → steel man → stress test (on demand)
 All Claude API calls are here.
 """
 import json
+import re
 import httpx
 from bs4 import BeautifulSoup
 from anthropic import AsyncAnthropic
 from config import settings
 
 client = AsyncAnthropic(api_key=settings.anthropic_api_key)
+
+
+def _extract_json(raw: str) -> dict:
+    """Robustly extract JSON from Claude response that may have markdown fences."""
+    # Try direct parse first
+    try:
+        return json.loads(raw.strip())
+    except json.JSONDecodeError:
+        pass
+    # Strip markdown fences
+    cleaned = re.sub(r'^```(?:json)?\s*', '', raw.strip())
+    cleaned = re.sub(r'\s*```$', '', cleaned)
+    try:
+        return json.loads(cleaned.strip())
+    except json.JSONDecodeError:
+        pass
+    # Last resort: find first { to last }
+    start = raw.find('{')
+    end = raw.rfind('}')
+    if start != -1 and end != -1:
+        return json.loads(raw[start:end+1])
+    raise ValueError(f"Could not parse JSON from: {raw[:200]}")
 MODEL = settings.claude_model
 
 
@@ -123,12 +146,7 @@ Return valid JSON only. No markdown fences. No preamble."""
         max_tokens=200,
     )
 
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-
-    return json.loads(raw.strip())
+    return _extract_json(raw)
 
 
 async def generate_stress_test(thesis: str, steel_man: str) -> dict:
@@ -156,9 +174,4 @@ Return valid JSON only. No markdown fences. No preamble."""
         max_tokens=600,
     )
 
-    if raw.startswith("```"):
-        raw = raw.split("```")[1]
-        if raw.startswith("json"):
-            raw = raw[4:]
-
-    return json.loads(raw.strip())
+    return _extract_json(raw)

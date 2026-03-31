@@ -2,6 +2,27 @@ import { useState, useEffect, useRef } from "react";
 import type { Observation } from "./types";
 import { useObservations } from "./hooks/useObservations";
 
+// ─── Rotating placeholder text ───────────────────────────────────────────
+
+const PLACEHOLDERS = [
+  "Give me your steel man\u2026",
+  "Give me your steel woman\u2026",
+  "Give me your steel baby\u2026",
+  "Give me your steel dog\u2026",
+  "Give me your steel grandma\u2026",
+  "Give me your steel intern\u2026",
+  "Give me your steel villain\u2026",
+  "Give me your steel alien\u2026",
+  "Give me your steel robot\u2026",
+  "Give me your steel toddler\u2026",
+  "Give me your steel professor\u2026",
+  "Give me your steel pirate\u2026",
+];
+
+function getRandomPlaceholder() {
+  return PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)];
+}
+
 // ─── Evidence type badge ──────────────────────────────────────────────────
 
 const EVIDENCE_COLORS: Record<string, { bg: string; color: string }> = {
@@ -67,9 +88,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
         display: "flex", alignItems: "center", justifyContent: "space-between",
       }}>
         <span style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.4 }}>
-          Umarell
+          Steel Man
         </span>
-        {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing…</span>}
+        {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing\u2026</span>}
       </div>
 
       <div style={{ padding: "12px 16px 0" }}>
@@ -77,53 +98,90 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
           <div style={{ textAlign: "center", paddingTop: 80 }}>
             <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", marginBottom: 8 }}>Nothing yet.</p>
             <p style={{ fontSize: 14, color: "#888", lineHeight: 1.5 }}>
-              Tap the button below to capture your first observation.
+              Tap + to drop your first steel man.
             </p>
           </div>
         ) : (
-          observations.map((obs) => (
-            <div
-              key={obs.id}
-              onClick={() => onSelect(obs)}
-              style={{
-                background: "#FFF", borderRadius: 14, padding: "14px 16px",
-                marginBottom: 10, boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
-                cursor: "pointer", position: "relative",
-              }}
-            >
-              <div style={{ paddingRight: 28 }}>
-                <p style={{
-                  fontSize: 15, fontWeight: 600, color: "#1A1A1A",
-                  lineHeight: 1.4, margin: "0 0 6px", letterSpacing: -0.2,
-                }}>
-                  {obs.thesis || obs.raw_input}
-                </p>
-                {(obs.status === "formatting" || obs.status === "researching") && (
-                  <p style={{ fontSize: 12, color: "#999", margin: "0 0 6px", fontStyle: "italic" }}>
-                    {obs.status === "formatting" ? "Formatting…" : "Researching…"}
-                  </p>
-                )}
-                <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-                  <span style={{ fontSize: 11, color: "#B0B0A8" }}>{timeAgo(obs.created_at)}</span>
-                  <EvidenceBadge value={obs.evidence_type} />
-                  {obs.tags?.map((tag) => (
-                    <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "2px 8px" }}>{tag}</span>
-                  ))}
-                </div>
-              </div>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  if (confirm("Delete this observation?")) onDelete(obs.id);
-                }}
+          observations.map((obs) => {
+            const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
+            const firstBullet = steelBullets[0] || "";
+            return (
+              <div
+                key={obs.id}
+                onClick={() => onSelect(obs)}
                 style={{
-                  position: "absolute", top: 12, right: 12,
-                  background: "none", border: "none", cursor: "pointer",
-                  color: "#CCC", fontSize: 18, padding: 4, lineHeight: 1,
+                  background: "#FFF", borderRadius: 14, padding: "14px 16px",
+                  marginBottom: 10, boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
+                  cursor: "pointer", position: "relative",
+                  display: "flex", alignItems: "flex-start", gap: 12,
                 }}
-              >×</button>
-            </div>
-          ))
+              >
+                <div style={{ flex: 1, minWidth: 0, paddingRight: 28 }}>
+                  {/* Headline: thesis truncated to 1 line */}
+                  <p style={{
+                    fontSize: 15, fontWeight: 600, color: "#1A1A1A",
+                    lineHeight: 1.4, margin: "0 0 4px", letterSpacing: -0.2,
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    whiteSpace: "nowrap",
+                  }}>
+                    {obs.thesis || obs.raw_input}
+                  </p>
+
+                  {/* First steel man bullet as secondary text */}
+                  {firstBullet && (
+                    <p style={{
+                      fontSize: 13, color: "#888", lineHeight: 1.45,
+                      margin: "0 0 6px",
+                      overflow: "hidden",
+                      display: "-webkit-box",
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: "vertical",
+                    } as React.CSSProperties}>
+                      {firstBullet}
+                    </p>
+                  )}
+
+                  {(obs.status === "formatting" || obs.status === "researching") && (
+                    <p style={{ fontSize: 12, color: "#999", margin: "0 0 6px", fontStyle: "italic" }}>
+                      {obs.status === "formatting" ? "Formatting\u2026" : "Researching\u2026"}
+                    </p>
+                  )}
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+                    <span style={{ fontSize: 11, color: "#B0B0A8" }}>{timeAgo(obs.created_at)}</span>
+                    <EvidenceBadge value={obs.evidence_type} />
+                    {obs.tags?.map((tag) => (
+                      <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "2px 8px" }}>{tag}</span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Thumbnail if image exists */}
+                {obs.image_data && (
+                  <img
+                    src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
+                    alt=""
+                    style={{
+                      width: 48, height: 48, borderRadius: 8,
+                      objectFit: "cover", flexShrink: 0,
+                    }}
+                  />
+                )}
+
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (confirm("Delete this steel man?")) onDelete(obs.id);
+                  }}
+                  style={{
+                    position: "absolute", top: 12, right: 12,
+                    background: "none", border: "none", cursor: "pointer",
+                    color: "#CCC", fontSize: 18, padding: 4, lineHeight: 1,
+                  }}
+                >&times;</button>
+              </div>
+            );
+          })
         )}
       </div>
 
@@ -157,6 +215,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
   const [error, setError] = useState("");
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [imageMeta, setImageMeta] = useState<{ b64: string; mediaType: string } | null>(null);
+  const [placeholder] = useState(() => getRandomPlaceholder());
   const fileRef = useRef<HTMLInputElement>(null);
   const recRef = useRef<any>(null);
   const textRef = useRef<HTMLTextAreaElement>(null);
@@ -184,7 +243,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
       setTimeout(autoResize, 0);
     };
     rec.onerror = (e: any) => {
-      if (e.error === "not-allowed") setError("Mic not available — type your observation below.");
+      if (e.error === "not-allowed") setError("Mic not available \u2014 type your take below.");
       listeningRef.current = false;
       setListening(false);
     };
@@ -205,7 +264,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
       return;
     }
     const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SR) { setError("Voice not available — type your observation below."); return; }
+    if (!SR) { setError("Voice not available \u2014 type your take below."); return; }
     listeningRef.current = true;
     setListening(true);
     setError("");
@@ -264,10 +323,10 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
       </div>
 
       <h1 style={{ fontSize: 26, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.5, margin: "0 0 6px" }}>
-        What are you watching?
+        What's your take?
       </h1>
       <p style={{ fontSize: 14, color: "#888", margin: "0 0 24px", lineHeight: 1.5 }}>
-        Speak, type, or attach a photo.
+        Drop a hot take. We'll build the strongest case for it.
       </p>
 
       {/* Single text input — always visible, auto-expands */}
@@ -281,7 +340,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
           ref={textRef}
           value={text}
           onChange={(e) => { setText(e.target.value); autoResize(); }}
-          placeholder={listening ? "Listening…" : "Type or speak your observation…"}
+          placeholder={listening ? "Listening\u2026" : placeholder}
           rows={3}
           autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false}
           style={{
@@ -294,7 +353,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
         {listening && (
           <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 6 }}>
             <ProcessingDots />
-            <span style={{ fontSize: 12, color: "#6666CC", fontWeight: 600 }}>Listening…</span>
+            <span style={{ fontSize: 12, color: "#6666CC", fontWeight: 600 }}>Listening\u2026</span>
           </div>
         )}
       </div>
@@ -311,7 +370,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
               width: 30, height: 30, color: "#fff", fontSize: 16, cursor: "pointer",
               display: "flex", alignItems: "center", justifyContent: "center",
             }}
-          >×</button>
+          >&times;</button>
         </div>
       )}
 
@@ -328,7 +387,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
             WebkitTapHighlightColor: "transparent",
           }}
         >
-          <span style={{ fontSize: 18 }}>{listening ? "⏹" : "🎤"}</span>
+          <span style={{ fontSize: 18 }}>{listening ? "\u23F9" : "\uD83C\uDFA4"}</span>
           {listening ? "Stop" : "Speak"}
         </button>
 
@@ -343,7 +402,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
             WebkitTapHighlightColor: "transparent",
           }}
         >
-          <span style={{ fontSize: 18 }}>📷</span>
+          <span style={{ fontSize: 18 }}>{"\uD83D\uDCF7"}</span>
           Photo
         </button>
       </div>
@@ -362,7 +421,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
           WebkitTapHighlightColor: "transparent",
         }}
       >
-        {submitting ? "Submitting…" : canSubmit ? "Start researching →" : "Speak, type or attach a photo"}
+        {submitting ? "Submitting\u2026" : canSubmit ? "Steel man this \u2192" : "Type your take above"}
       </button>
 
       {error && (
@@ -376,9 +435,10 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
 
 // ─── Output ───────────────────────────────────────────────────────────────
 
-function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTest }: {
+function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requestStressTest }: {
   obs: Observation;
   onBack: () => void;
+  onResubmit: (text: string) => Promise<void>;
   pollObservation: (id: string) => Promise<Observation | null>;
   requestStressTest: (id: string) => Promise<import("./types").StressTest | null>;
 }) {
@@ -386,7 +446,18 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
   const [tab, setTab] = useState<"steel" | "stress">("steel");
   const [stressLoading, setStressLoading] = useState(false);
   const [stressError, setStressError] = useState(false);
+  const [editMode, setEditMode] = useState(false);
+  const [editText, setEditText] = useState("");
+  const [resubmitting, setResubmitting] = useState(false);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  useEffect(() => {
+    setObs(initialObs);
+    setTab("steel");
+    setEditMode(false);
+    setStressLoading(false);
+    setStressError(false);
+  }, [initialObs.id]);
 
   useEffect(() => {
     if (obs.status === "complete" || obs.status === "error") return;
@@ -416,6 +487,16 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
     }
   };
 
+  const handleResubmit = async () => {
+    if (!editText.trim() || resubmitting) return;
+    setResubmitting(true);
+    try {
+      await onResubmit(editText.trim());
+    } catch {
+      setResubmitting(false);
+    }
+  };
+
   const isProcessing = obs.status === "formatting" || obs.status === "researching";
   const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
   const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
@@ -424,10 +505,10 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
     return (
       <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 20px" }}>
         <div style={{ padding: "14px 0" }}>
-          <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>‹ Back</button>
+          <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
         </div>
         <div style={{ marginTop: 60, textAlign: "center" }}>
-          <p style={{ fontSize: 28, marginBottom: 12 }}>⚠️</p>
+          <p style={{ fontSize: 28, marginBottom: 12 }}>{"\u26A0\uFE0F"}</p>
           <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", margin: "0 0 8px" }}>Analysis failed</p>
           <p style={{ fontSize: 14, color: "#888", lineHeight: 1.6, margin: "0 0 28px" }}>
             Something went wrong. Check that ANTHROPIC_API_KEY is set in your Railway API service.
@@ -438,13 +519,28 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
     );
   }
 
+  // Build share text
+  const shareText = `Steel Man: ${obs.thesis}\n\n${steelBullets.map(b => '\u2022 ' + b).join('\n')}`;
+  const encodedShareText = encodeURIComponent(shareText);
+
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
       <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", borderBottom: "1px solid #EBEBEB" }}>
-        <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>‹ Back</button>
+        <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
       </div>
 
       <div style={{ padding: "24px 20px 0" }}>
+
+        {/* Uploaded image (shown at top when available) */}
+        {obs.image_data && (
+          <div style={{ marginBottom: 16 }}>
+            <img
+              src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
+              alt="Uploaded"
+              style={{ width: "100%", borderRadius: 14, maxHeight: 240, objectFit: "cover" }}
+            />
+          </div>
+        )}
 
         {/* While processing: show full original input + step progress */}
         {isProcessing && (
@@ -471,6 +567,38 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
           <div style={{ marginBottom: 12 }}>
             <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Thesis</p>
             <h1 style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, letterSpacing: -0.4, margin: 0 }}>{obs.thesis}</h1>
+          </div>
+        )}
+
+        {/* Share buttons (shown when complete) */}
+        {obs.status === "complete" && steelBullets.length > 0 && (
+          <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
+            <a
+              href={`https://wa.me/?text=${encodedShareText}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-flex", alignItems: "center", gap: 4,
+                background: "#E8F5E9", color: "#2E7D32", border: "none",
+                borderRadius: 100, padding: "6px 14px",
+                fontSize: 12, fontWeight: 600, textDecoration: "none",
+                cursor: "pointer", fontFamily: "inherit",
+              }}
+            >
+              {"\uD83D\uDCAC"} WhatsApp
+            </a>
+            <a
+              href={`sms:?body=${encodedShareText}`}
+              style={{
+                display: "inline-flex", alignItems: "center", gap: 4,
+                background: "#E3F2FD", color: "#1565C0", border: "none",
+                borderRadius: 100, padding: "6px 14px",
+                fontSize: 12, fontWeight: 600, textDecoration: "none",
+                cursor: "pointer", fontFamily: "inherit",
+              }}
+            >
+              {"\uD83D\uDCF1"} SMS
+            </a>
           </div>
         )}
 
@@ -510,7 +638,7 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
               }}
             >
               {stressLoading && tab === "stress" ? (
-                <><ProcessingDots /><span>Testing…</span></>
+                <><ProcessingDots /><span>Testing\u2026</span></>
               ) : "Stress Test"}
             </button>
           </div>
@@ -519,19 +647,14 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
         {/* Steel Man content */}
         {obs.status === "complete" && tab === "steel" && steelBullets.map((bullet, i) => (
           <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
-            <span style={{ color: "#1A1A1A", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>•</span>
+            <span style={{ color: "#1A1A1A", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
             <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
           </div>
         ))}
 
         {/* Stress Test content */}
         {tab === "stress" && (
-          stressLoading ? (
-            <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "20px 0" }}>
-              <ProcessingDots />
-              <span style={{ fontSize: 14, color: "#666" }}>Running stress test…</span>
-            </div>
-          ) : stressError ? (
+          stressLoading ? null : stressError ? (
             <div style={{ background: "#FFF0EE", borderRadius: 12, padding: "14px 16px", border: "1px solid #F5C6C0" }}>
               <p style={{ fontSize: 14, color: "#C0392B", margin: 0, lineHeight: 1.5 }}>
                 Stress test failed. Tap the button to try again.
@@ -550,7 +673,7 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
               <div style={{ marginBottom: 20 }}>
                 {(obs.stress_test as any).cons?.map((con: string, i: number) => (
                   <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                    <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>−</span>
+                    <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
                     <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{con}</p>
                   </div>
                 ))}
@@ -561,6 +684,53 @@ function OutputView({ obs: initialObs, onBack, pollObservation, requestStressTes
               </div>
             </div>
           ) : null
+        )}
+
+        {/* Edit & Resubmit */}
+        {obs.status === "complete" && !editMode && (
+          <div style={{ marginTop: 24 }}>
+            <button
+              onClick={() => { setEditMode(true); setEditText(obs.thesis); }}
+              style={{
+                width: "100%", padding: "12px 0", borderRadius: 10,
+                border: "1.5px solid #D5D5CD", background: "transparent",
+                color: "#555", fontSize: 14, fontWeight: 600,
+                cursor: "pointer", fontFamily: "inherit",
+                WebkitTapHighlightColor: "transparent",
+              }}
+            >
+              Edit &amp; Resubmit
+            </button>
+          </div>
+        )}
+
+        {obs.status === "complete" && editMode && (
+          <div style={{ marginTop: 24 }}>
+            <textarea
+              value={editText}
+              onChange={(e) => setEditText(e.target.value)}
+              rows={4}
+              style={{
+                width: "100%", border: "1.5px solid #D5D5CD", borderRadius: 12,
+                padding: "12px 14px", fontSize: 15, color: "#1A1A1A",
+                lineHeight: 1.6, resize: "none", fontFamily: "inherit",
+                boxSizing: "border-box", outline: "none",
+              }}
+            />
+            <button
+              onClick={handleResubmit}
+              disabled={!editText.trim() || resubmitting}
+              style={{
+                width: "100%", marginTop: 10, padding: "14px 0", borderRadius: 10,
+                border: "none", background: editText.trim() && !resubmitting ? "#1A1A1A" : "#D5D5CD",
+                color: "#FFF", fontSize: 15, fontWeight: 700,
+                cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
+                fontFamily: "inherit", WebkitTapHighlightColor: "transparent",
+              }}
+            >
+              {resubmitting ? "Submitting\u2026" : "Resubmit \u2192"}
+            </button>
+          </div>
         )}
       </div>
     </div>
@@ -578,7 +748,7 @@ function StepRow({ label, done, active }: { label: string; done: boolean; active
         border: active ? "2px solid #6666CC" : done ? "none" : "2px solid #D5D5CD",
         display: "flex", alignItems: "center", justifyContent: "center",
       }}>
-        {done && <span style={{ color: "#FFF", fontSize: 11, fontWeight: 700 }}>✓</span>}
+        {done && <span style={{ color: "#FFF", fontSize: 11, fontWeight: 700 }}>{"\u2713"}</span>}
         {active && <ProcessingDots />}
       </div>
       <span style={{ fontSize: 14, color: done ? "#1A1A1A" : active ? "#6666CC" : "#AAA", fontWeight: active || done ? 600 : 400 }}>
@@ -623,26 +793,70 @@ export default function App() {
 
   useEffect(() => { fetchObservations(); }, []);
 
+  // Browser back button support
+  useEffect(() => {
+    const handlePop = () => {
+      setView("home");
+      setSelectedObs(null);
+      fetchObservations();
+    };
+    window.addEventListener("popstate", handlePop);
+    return () => window.removeEventListener("popstate", handlePop);
+  }, []);
+
+  const navigateTo = (nextView: View, obs?: Observation) => {
+    if (nextView !== "home") {
+      window.history.pushState({ view: nextView }, "", "");
+    }
+    if (obs) setSelectedObs(obs);
+    setView(nextView);
+  };
+
   const handleSubmit = async (text: string) => {
     const obs = await submitObservation(text, text.startsWith("http") ? "url" : "text");
-    setSelectedObs(obs); setView("output");
+    navigateTo("output", obs);
   };
 
   const handleSubmitImage = async (b64: string, mediaType: string, context?: string) => {
     const obs = await submitObservation(context || "image", "screenshot", b64, mediaType);
-    setSelectedObs(obs); setView("output");
+    navigateTo("output", obs);
   };
 
-  if (view === "capture") return <CaptureView onSubmit={handleSubmit} onSubmitImage={handleSubmitImage} onBack={() => setView("home")} />;
+  const handleResubmit = async (text: string) => {
+    const obs = await submitObservation(text, "text");
+    setSelectedObs(obs);
+    // view stays on "output"
+  };
+
+  if (view === "capture") {
+    return (
+      <CaptureView
+        onSubmit={handleSubmit}
+        onSubmitImage={handleSubmitImage}
+        onBack={() => setView("home")}
+      />
+    );
+  }
+
   if (view === "output" && selectedObs) {
     return (
       <OutputView
         obs={selectedObs}
         onBack={() => { setView("home"); fetchObservations(); }}
+        onResubmit={handleResubmit}
         pollObservation={pollObservation}
         requestStressTest={requestStressTest}
       />
     );
   }
-  return <HomeView observations={observations} loading={loading} onCapture={() => setView("capture")} onSelect={(o) => { setSelectedObs(o); setView("output"); }} onDelete={deleteObservation} />;
+
+  return (
+    <HomeView
+      observations={observations}
+      loading={loading}
+      onCapture={() => navigateTo("capture")}
+      onSelect={(o) => navigateTo("output", o)}
+      onDelete={deleteObservation}
+    />
+  );
 }
