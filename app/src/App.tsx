@@ -764,15 +764,16 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
             {editMode ? (
               <div>
                 <textarea
+                  ref={(el) => { if (el) { el.style.height = "auto"; el.style.height = el.scrollHeight + "px"; } }}
                   value={editText}
-                  onChange={(e) => setEditText(e.target.value)}
-                  rows={3}
+                  onChange={(e) => { setEditText(e.target.value); const t = e.target; t.style.height = "auto"; t.style.height = t.scrollHeight + "px"; }}
                   autoFocus
                   style={{
                     width: "100%", border: "1.5px solid #D5D5CD", borderRadius: 12,
-                    padding: "12px 14px", fontSize: 17, color: "#1A1A1A", fontWeight: 600,
+                    padding: "12px 14px", fontSize: 20, color: "#1A1A1A", fontWeight: 700,
                     lineHeight: 1.4, resize: "none", fontFamily: "inherit",
                     boxSizing: "border-box", outline: "none", letterSpacing: -0.4,
+                    overflow: "hidden",
                   }}
                 />
                 <div style={{ display: "flex", gap: 8, marginTop: 10 }}>
