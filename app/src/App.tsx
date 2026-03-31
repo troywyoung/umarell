@@ -750,7 +750,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           <p style={{ fontSize: 28, marginBottom: 12 }}>{"\u26A0\uFE0F"}</p>
           <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", margin: "0 0 8px" }}>Analysis failed</p>
           <p style={{ fontSize: 14, color: "#888", lineHeight: 1.6, margin: "0 0 28px" }}>
-            {obs.error_detail?.includes("529") || obs.error_detail?.includes("overloaded")
+            {obs.error_detail?.includes("PAYWALL")
+              ? "This article is paywalled. Paste the text directly instead."
+              : obs.error_detail?.includes("529") || obs.error_detail?.includes("overloaded")
               ? "API is temporarily overloaded. Try again in a moment."
               : obs.error_detail?.includes("401") || obs.error_detail?.includes("auth")
               ? "Check that the API key is set correctly."

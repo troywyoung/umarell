@@ -170,14 +170,31 @@ async def _search_tavily(query: str, max_results: int = 5) -> tuple[str, list[di
 
 # ─── URL fetch ────────────────────────────────────────────────────────────
 
+PAYWALL_SIGNALS = [
+    "subscribe", "subscription", "sign in to read", "sign in to continue",
+    "create an account", "already a subscriber", "unlimited access",
+    "gift subscription", "log in", "you've read your free",
+]
+
 async def _fetch_url(url: str) -> str:
     try:
         async with httpx.AsyncClient(timeout=30, follow_redirects=True) as http:
-            resp = await http.get(url, headers={"User-Agent": "Mozilla/5.0"})
+            resp = await http.get(url, headers={
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept-Language": "en-US,en;q=0.9",
+                "Accept-Encoding": "gzip, deflate, br",
+                "Cache-Control": "no-cache",
+            })
             soup = BeautifulSoup(resp.text, "html.parser")
             for tag in soup(["script", "style", "nav", "footer", "header"]):
                 tag.decompose()
-            return soup.get_text(separator=" ", strip=True)[:8000]
+            text = soup.get_text(separator=" ", strip=True)
+            # Detect paywall
+            lower = text.lower()
+            if len(text) < 500 or sum(1 for s in PAYWALL_SIGNALS if s in lower) >= 2:
+                return "[PAYWALL] This article is behind a paywall. Please paste the article text directly instead."
+            return text[:8000]
     except Exception as e:
         return f"[Could not fetch URL: {e}]"
 
@@ -262,6 +279,8 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
         print(f"[format_thesis] image extracted: {content[:100]}")
     elif input_type == "url":
         content = await _fetch_url(raw_input)
+        if content.startswith("[PAYWALL]"):
+            raise ValueError(content)
     else:
         content = raw_input
 
