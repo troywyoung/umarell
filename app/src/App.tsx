@@ -310,6 +310,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
               >
                 {/* Top row: headline + score badge + delete */}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "10px 12px 6px 12px" }}>
+                  {obs.image_data && (
+                    <img
+                      src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
+                      style={{ width: 52, height: 52, borderRadius: 6, objectFit: "cover", flexShrink: 0 }}
+                    />
+                  )}
                   <p style={{
                     fontSize: 12, fontWeight: 700, color: "#1A1A1A",
                     lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
