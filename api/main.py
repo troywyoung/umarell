@@ -14,6 +14,15 @@ from config import settings
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     await init_db()
+    # Reset any observations stuck in formatting/researching from a previous crashed instance
+    async with AsyncSessionLocal() as db:
+        from sqlalchemy import update
+        await db.execute(
+            update(Observation)
+            .where(Observation.status.in_(["formatting", "researching"]))
+            .values(status="error", error_detail="Pipeline interrupted by server restart")
+        )
+        await db.commit()
     yield
 
 
