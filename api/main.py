@@ -40,12 +40,14 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             obs.status = "researching"
             await db.commit()
 
-            # Step 2: steel man
-            steel_man = await generate_steel_man(thesis)
+            # Step 2: steel man (with search grounding for sources)
+            steel_man, sources = await generate_steel_man(thesis)
             obs = await db.get(Observation, observation_id)
             if not obs:
                 return
             obs.summary = steel_man
+            if sources:
+                obs.sources = sources
 
             # Step 3: metadata (score, tags, evidence type)
             try:

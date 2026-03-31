@@ -871,6 +871,30 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
               </div>
             ))}
 
+            {/* Sources */}
+            {obs.sources && obs.sources.length > 0 && (
+              <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid #EBEBEB" }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
+                {obs.sources.map((src, i) => (
+                  <a
+                    key={i}
+                    href={src.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      display: "block", fontSize: 12, color: "#777", lineHeight: 1.5,
+                      textDecoration: "none", marginBottom: 4,
+                      overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = "#E53935")}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = "#777")}
+                  >
+                    {src.title || src.url}
+                  </a>
+                ))}
+              </div>
+            )}
+
           </>
         )}
 

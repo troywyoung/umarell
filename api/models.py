@@ -32,6 +32,7 @@ class Observation(Base):
     score: Mapped[float | None] = mapped_column(Float, nullable=True)
     tags: Mapped[list | None] = mapped_column(JSON, nullable=True)
     evidence_type: Mapped[str | None] = mapped_column(String, nullable=True)
+    sources: Mapped[list | None] = mapped_column(JSON, nullable=True)  # [{url, title}, ...]
     error_detail: Mapped[str | None] = mapped_column(Text, nullable=True)
     image_data: Mapped[str | None] = mapped_column(Text, nullable=True)  # base64
     image_media_type: Mapped[str | None] = mapped_column(String, nullable=True)  # e.g. image/jpeg

@@ -1,6 +1,7 @@
 """
 Observation pipeline — format thesis → steel man → stress test (on demand)
 Supports Gemini (default) and Anthropic providers.
+Gemini uses Google Search grounding for source citations.
 """
 import json
 import re
@@ -43,28 +44,62 @@ def _extract_json(raw: str) -> dict:
     raise ValueError(f"Could not parse JSON from: {raw[:200]}")
 
 
+def _extract_sources(resp) -> list[dict]:
+    """Extract grounding source URLs from a Gemini response."""
+    sources = []
+    seen = set()
+    try:
+        metadata = resp.candidates[0].grounding_metadata
+        if metadata and metadata.grounding_chunks:
+            for chunk in metadata.grounding_chunks:
+                if hasattr(chunk, 'web') and chunk.web:
+                    url = chunk.web.uri
+                    title = chunk.web.title or url
+                    if url and url not in seen:
+                        seen.add(url)
+                        sources.append({"url": url, "title": title})
+    except (AttributeError, IndexError):
+        pass
+    return sources[:6]  # cap at 6 sources
+
+
 # ─── Unified _call ────────────────────────────────────────────────────────
 
-async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5) -> str:
+async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5, use_search: bool = False) -> str | tuple[str, list[dict]]:
     if PROVIDER == "gemini":
-        return await _call_gemini(system, user, max_tokens, retries)
-    return await _call_anthropic(system, user, max_tokens, retries)
+        return await _call_gemini(system, user, max_tokens, retries, use_search)
+    result = await _call_anthropic(system, user, max_tokens, retries)
+    if use_search:
+        return result, []  # no search grounding for Anthropic
+    return result
 
 
-async def _call_gemini(system: str, user: str, max_tokens: int, retries: int) -> str:
+async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, use_search: bool = False) -> str | tuple[str, list[dict]]:
+    tools = []
+    if use_search:
+        tools = [genai.types.Tool(google_search=genai.types.GoogleSearch())]
+
     for attempt in range(retries):
         try:
+            config = genai.types.GenerateContentConfig(
+                system_instruction=system,
+                max_output_tokens=max_tokens,
+                thinking_config=genai.types.ThinkingConfig(thinking_budget=1024),
+            )
+            if tools:
+                config.tools = tools
+
             resp = await asyncio.to_thread(
                 gclient.models.generate_content,
                 model=GEMINI_MODEL,
                 contents=user,
-                config=genai.types.GenerateContentConfig(
-                    system_instruction=system,
-                    max_output_tokens=max_tokens,
-                    thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
-                ),
+                config=config,
             )
-            return resp.text.strip()
+            text = resp.text.strip()
+            if use_search:
+                sources = _extract_sources(resp)
+                return text, sources
+            return text
         except Exception as e:
             err_str = str(e)
             if ("503" in err_str or "429" in err_str or "RESOURCE_EXHAUSTED" in err_str) and attempt < retries - 1:
@@ -137,7 +172,7 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", con
                     config=genai.types.GenerateContentConfig(
                         system_instruction=system,
                         max_output_tokens=400,
-                        thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
+                        thinking_config=genai.types.ThinkingConfig(thinking_budget=512),
                     ),
                 )
                 return resp.text.strip()
@@ -196,18 +231,23 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
     )
 
 
-async def generate_steel_man(thesis: str) -> str:
-    """Generate 4-5 punchy bullet points making the strongest case FOR the thesis."""
-    return await _call(
+async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
+    """Generate 4-5 punchy bullet points making the strongest case FOR the thesis.
+    Returns (steel_man_text, sources) where sources is a list of {url, title} dicts."""
+    result = await _call(
         system=(
-            "You are a brilliant advocate. Given a thesis, produce 4-5 concise bullet points "
+            "You are a brilliant advocate and researcher. Given a thesis, produce 4-5 concise bullet points "
             "making the strongest possible case FOR it. Each bullet should be one crisp sentence — "
-            "specific, compelling, and grounded. No preamble. No headers. "
-            "Output each bullet on its own line starting with '•'."
+            "specific, compelling, and grounded in real evidence. Reference real data, studies, or examples. "
+            "No preamble. No headers. Output each bullet on its own line starting with '•'."
         ),
         user=f"Steel man this thesis: {thesis}",
-        max_tokens=800,
+        max_tokens=2000,
+        use_search=True,
     )
+    if isinstance(result, tuple):
+        return result
+    return result, []
 
 
 async def generate_metadata(thesis: str, steel_man: str) -> dict:
@@ -232,7 +272,7 @@ Return valid JSON only. No markdown fences. No preamble."""
             "You always return valid JSON when asked."
         ),
         user=prompt,
-        max_tokens=500,
+        max_tokens=2000,
     )
 
     return _extract_json(raw)
@@ -260,7 +300,7 @@ Be concise. Each bullet must be under 20 words. Return valid JSON only. No markd
             "acknowledging both strengths and weaknesses. You always return valid JSON when asked. Keep bullets very short."
         ),
         user=prompt,
-        max_tokens=1000,
+        max_tokens=2000,
     )
 
     return _extract_json(raw)
