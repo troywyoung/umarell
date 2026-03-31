@@ -228,7 +228,19 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
         <span style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
           <SteelManIcon size={28} animate animateCount={3} /> Steel Man
         </span>
-        {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing…</span>}
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing…</span>}
+          <button
+            onClick={onCapture}
+            style={{
+              width: 32, height: 32, borderRadius: "50%",
+              background: "#1A1A1A", border: "none", cursor: "pointer",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              fontSize: 20, color: "#fff", lineHeight: 1, padding: 0,
+              WebkitTapHighlightColor: "transparent",
+            }}
+          >+</button>
+        </div>
       </div>
 
       <div style={{ padding: "12px 16px 0" }}>
