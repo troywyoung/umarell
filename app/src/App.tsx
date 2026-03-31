@@ -313,7 +313,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                   {obs.image_data && (
                     <img
                       src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
-                      style={{ width: 52, height: 52, borderRadius: 6, objectFit: "cover", flexShrink: 0 }}
+                      style={{ width: 65, height: 65, borderRadius: 6, objectFit: "cover", flexShrink: 0 }}
                     />
                   )}
                   <p style={{
