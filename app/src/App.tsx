@@ -313,7 +313,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                   <p style={{
                     fontSize: 12, fontWeight: 700, color: "#1A1A1A",
                     lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
-                    overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+                    overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical",
                   }}>
                     {obs.thesis || obs.raw_input}
                   </p>
