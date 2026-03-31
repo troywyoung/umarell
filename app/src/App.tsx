@@ -224,7 +224,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
   useEffect(() => {
     let cancelled = false;
     const page = Math.floor(Math.random() * 100) + 1;
-    fetch(`https://api.pexels.com/v1/search?query=confused+animal&per_page=1&page=${page}&orientation=landscape`, {
+    fetch(`https://api.pexels.com/v1/search?query=${["confused+human","confused+animal","macro+insect"][Math.floor(Math.random()*3)]}&per_page=1&page=${page}&orientation=landscape`, {
       headers: { Authorization: "8PIku3G38amYoSKnhCyaA0o5p40er0GSxHM56s8Rvw5dcHrgiQ0n2qwe" },
     })
       .then(r => r.json())
@@ -291,8 +291,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
       <div style={{ padding: "12px 16px 0", opacity: showCards ? 1 : 0, transition: "opacity 0.5s ease" }}>
         {observations.length === 0 && !loading ? (
           <div style={{ textAlign: "center", paddingTop: 80 }}>
-            <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", marginBottom: 8 }}>Nothing yet.</p>
-            <p style={{ fontSize: 14, color: "#888", lineHeight: 1.5 }}>
+            <p style={{ fontSize: 17, fontWeight: 700, color: bgImage ? "#FFF" : "#1A1A1A", marginBottom: 8 }}>Nothing yet.</p>
+            <p style={{ fontSize: 14, color: bgImage ? "rgba(255,255,255,0.7)" : "#888", lineHeight: 1.5 }}>
               Tap + to drop your first steel man.
             </p>
           </div>
@@ -398,11 +398,19 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
           width: 68, height: 68, borderRadius: "50%",
           background: "#E53935", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
-          boxShadow: "none",
+          boxShadow: "0 0 12px rgba(229,57,53,0.4)",
           fontSize: 36, fontWeight: 800, color: "#fff", lineHeight: 1, paddingBottom: 2,
           WebkitTapHighlightColor: "transparent",
+          animation: "fabPulse 2s ease-in-out infinite",
         }}
-      >+</button>
+      >+
+        <style>{`
+          @keyframes fabPulse {
+            0%, 100% { transform: translateX(-50%) scale(1); }
+            50% { transform: translateX(-50%) scale(1.08); }
+          }
+        `}</style>
+      </button>
     </div>
   );
 }
