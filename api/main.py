@@ -125,10 +125,19 @@ async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
     if obs.stress_test and isinstance(obs.stress_test, dict) and "verdict" in obs.stress_test:
         return obs.stress_test
     try:
-        result = await generate_stress_test(obs.thesis or obs.raw_input, obs.summary or "")
+        result, sources = await generate_stress_test(obs.thesis or obs.raw_input, obs.summary or "")
     except Exception as e:
         print(f"Stress test failed for {obs_id}: {e}")
         raise HTTPException(500, f"Stress test generation failed: {str(e)}")
+    # Merge stress test sources with existing sources
+    if sources:
+        existing = obs.sources or []
+        seen = {s["url"] for s in existing}
+        for s in sources:
+            if s["url"] not in seen:
+                existing.append(s)
+                seen.add(s["url"])
+        obs.sources = existing
     obs.stress_test = result
     await db.commit()
     return result

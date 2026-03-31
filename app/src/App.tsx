@@ -670,7 +670,13 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
     const result = await requestStressTest(obs.id);
     setStressLoading(false);
     if (result) {
-      setObs((p) => ({ ...p, stress_test: result }));
+      // Re-fetch observation to get updated sources from stress test
+      const updated = await pollObservation(obs.id);
+      if (updated) {
+        setObs(updated);
+      } else {
+        setObs((p) => ({ ...p, stress_test: result }));
+      }
     } else {
       setStressError(true);
     }
@@ -947,6 +953,30 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
                 <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Verdict</p>
                 <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{verdict}</p>
               </div>
+
+              {/* Sources (from both steel man and stress test) */}
+              {obs.sources && obs.sources.length > 0 && (
+                <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid #EBEBEB" }}>
+                  <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
+                  {obs.sources.map((src, i) => (
+                    <a
+                      key={i}
+                      href={src.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "block", fontSize: 12, color: "#777", lineHeight: 1.5,
+                        textDecoration: "none", marginBottom: 4,
+                        overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+                      }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = "#E53935")}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = "#777")}
+                    >
+                      {src.title || src.url}
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           );
         })()}

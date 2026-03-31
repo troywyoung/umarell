@@ -241,15 +241,22 @@ async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
             "You are a brilliant advocate and researcher. Given a thesis, produce 4-5 concise bullet points "
             "making the strongest possible case FOR it. Each bullet should be one crisp sentence — "
             "specific, compelling, and grounded in real evidence. Reference real data, studies, or examples. "
-            "No preamble. No headers. Output each bullet on its own line starting with '•'."
+            "CRITICAL: Output ONLY the bullet points. No introduction, no summary, no headers, no preamble. "
+            "Start immediately with the first '•' character."
         ),
         user=f"Steel man this thesis: {thesis}",
         max_tokens=2000,
         use_search=True,
     )
     if isinstance(result, tuple):
-        return result
-    return result, []
+        text, sources = result
+    else:
+        text, sources = result, []
+    # Strip any preamble before the first bullet
+    first_bullet = text.find('•')
+    if first_bullet > 0:
+        text = text[first_bullet:]
+    return text, sources
 
 
 async def generate_metadata(thesis: str, steel_man: str) -> dict:
@@ -280,8 +287,8 @@ Return valid JSON only. No markdown fences. No preamble."""
     return _extract_json(raw)
 
 
-async def generate_stress_test(thesis: str, steel_man: str) -> dict:
-    """Stress test the thesis — pros, cons, and a verdict on whether it holds up."""
+async def generate_stress_test(thesis: str, steel_man: str) -> tuple[dict, list[dict]]:
+    """Stress test the thesis — pros, cons, verdict. Returns (result_dict, sources)."""
     prompt = f"""Thesis: {thesis}
 
 Steel man argument:
@@ -296,13 +303,20 @@ Now stress test this thesis objectively. Return a JSON object with exactly these
 
 Be concise. Each bullet must be under 20 words. Return valid JSON only. No markdown fences. No preamble."""
 
-    raw = await _call(
+    result = await _call(
         system=(
-            "You are a rigorous intellectual critic. You evaluate arguments fairly, "
-            "acknowledging both strengths and weaknesses. You always return valid JSON when asked. Keep bullets very short."
+            "You are a rigorous intellectual critic and researcher. You evaluate arguments fairly, "
+            "acknowledging both strengths and weaknesses. Ground your analysis in real evidence. "
+            "You always return valid JSON when asked. Keep bullets very short."
         ),
         user=prompt,
         max_tokens=2000,
+        use_search=True,
     )
 
-    return _extract_json(raw)
+    if isinstance(result, tuple):
+        raw, sources = result
+    else:
+        raw, sources = result, []
+
+    return _extract_json(raw), sources
