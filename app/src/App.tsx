@@ -976,7 +976,7 @@ function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.Mo
       style={{
         display: "inline-flex", alignItems: "center", gap: 5,
         background: "none", border: "none", cursor: "pointer", padding: 0,
-        color: copied ? "#E53935" : "#999", fontSize: 12, fontFamily: "inherit",
+        color: copied ? "#E53935" : "#666", fontSize: 12, fontFamily: "inherit",
         WebkitTapHighlightColor: "transparent",
         transition: "color 0.2s",
       }}
@@ -986,7 +986,7 @@ function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.Mo
         <polyline points="16 6 12 2 8 6" />
         <line x1="12" y1="2" x2="12" y2="15" />
       </svg>
-      {copied ? "Copied!" : "Share this"}
+      {copied ? "Copied!" : "Share"}
     </button>
   );
 }
