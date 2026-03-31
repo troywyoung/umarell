@@ -272,16 +272,12 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
     )
 
 
-async def generate_steel_man(thesis: str, prefetch_context: str = "", prefetch_sources: list = []) -> tuple[str, list[dict]]:
+async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
     """Generate 4-5 punchy bullet points making the strongest case FOR the thesis.
     Returns (steel_man_text, sources) where sources is a list of {url, title} dicts."""
-    # Use prefetched context if available, otherwise search now
-    if prefetch_context:
-        search_context, sources = prefetch_context, prefetch_sources
-    elif PROVIDER == "anthropic" and settings.tavily_api_key:
+    search_context, sources = "", []
+    if PROVIDER == "anthropic" and settings.tavily_api_key:
         search_context, sources = await _search_tavily(thesis)
-    else:
-        search_context, sources = "", []
 
     user_prompt = f"Steel man this thesis: {thesis}"
     if search_context:
