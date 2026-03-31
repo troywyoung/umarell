@@ -1188,7 +1188,7 @@ export default function App() {
       <CaptureView
         onSubmit={handleSubmit}
         onSubmitImage={handleSubmitImage}
-        onBack={() => setView("home")}
+        onBack={() => { setView("home"); window.history.replaceState(null, "", window.location.pathname); }}
       />
     );
   }
@@ -1197,7 +1197,7 @@ export default function App() {
     return (
       <OutputView
         obs={selectedObs}
-        onBack={() => { setView("home"); fetchObservations(); }}
+        onBack={() => { setView("home"); window.history.replaceState(null, "", window.location.pathname); fetchObservations(); }}
         onResubmit={handleResubmit}
         pollObservation={pollObservation}
         requestStressTest={requestStressTest}
