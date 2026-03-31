@@ -23,6 +23,44 @@ function getRandomPlaceholder() {
   return PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)];
 }
 
+// ─── Steel Man Icon (SVG) ────────────────────────────────────────────────
+
+function SteelManIcon({ size = 24, animate = false }: { size?: number; animate?: boolean }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={animate ? { animation: "steelPulse 2s ease-in-out infinite" } : undefined}
+    >
+      {/* Head */}
+      <circle cx="16" cy="7" r="4.5" stroke="#1A1A1A" strokeWidth="2" fill="none" />
+      {/* Body — strong torso */}
+      <path d="M16 11.5V22" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" />
+      {/* Arms — flexing */}
+      <path d="M16 15L10.5 12.5L8 8" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M16 15L21.5 12.5L24 8" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      {/* Bicep bulge — left */}
+      <circle cx="9" cy="10" r="1.8" fill="#1A1A1A" />
+      {/* Bicep bulge — right */}
+      <circle cx="23" cy="10" r="1.8" fill="#1A1A1A" />
+      {/* Legs */}
+      <path d="M16 22L12 29" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" />
+      <path d="M16 22L20 29" stroke="#1A1A1A" strokeWidth="2" strokeLinecap="round" />
+      {animate && (
+        <style>{`
+          @keyframes steelPulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.08); opacity: 0.7; }
+          }
+        `}</style>
+      )}
+    </svg>
+  );
+}
+
 // ─── Evidence type badge ──────────────────────────────────────────────────
 
 const EVIDENCE_COLORS: Record<string, { bg: string; color: string }> = {
@@ -87,8 +125,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
         borderBottom: "1px solid #EBEBEB",
         display: "flex", alignItems: "center", justifyContent: "space-between",
       }}>
-        <span style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.4 }}>
-          Steel Man
+        <span style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
+          <SteelManIcon size={22} /> Steel Man
         </span>
         {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing\u2026</span>}
       </div>
@@ -116,6 +154,18 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                   display: "flex", alignItems: "flex-start", gap: 12,
                 }}
               >
+                {/* Image on the left if present */}
+                {obs.image_data && (
+                  <img
+                    src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
+                    alt=""
+                    style={{
+                      width: 72, height: 72, borderRadius: 10,
+                      objectFit: "cover", flexShrink: 0,
+                    }}
+                  />
+                )}
+
                 <div style={{ flex: 1, minWidth: 0, paddingRight: 28 }}>
                   {/* Headline: thesis truncated to 1 line */}
                   <p style={{
@@ -143,9 +193,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                   )}
 
                   {(obs.status === "formatting" || obs.status === "researching") && (
-                    <p style={{ fontSize: 12, color: "#999", margin: "0 0 6px", fontStyle: "italic" }}>
-                      {obs.status === "formatting" ? "Formatting\u2026" : "Researching\u2026"}
-                    </p>
+                    <div style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 6 }}>
+                      <SteelManIcon size={16} animate />
+                      <span style={{ fontSize: 12, color: "#999", fontStyle: "italic" }}>
+                        {obs.status === "formatting" ? "Formatting\u2026" : "Researching\u2026"}
+                      </span>
+                    </div>
                   )}
                   <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
                     <span style={{ fontSize: 11, color: "#B0B0A8" }}>{timeAgo(obs.created_at)}</span>
@@ -155,18 +208,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                     ))}
                   </div>
                 </div>
-
-                {/* Thumbnail if image exists */}
-                {obs.image_data && (
-                  <img
-                    src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
-                    alt=""
-                    style={{
-                      width: 48, height: 48, borderRadius: 8,
-                      objectFit: "cover", flexShrink: 0,
-                    }}
-                  />
-                )}
 
                 <button
                   onClick={(e) => {
@@ -554,10 +595,12 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
             )}
 
             {/* Step progress */}
-            <div style={{ marginBottom: 24 }}>
-              <StepRow label="Reading observation" done={obs.status !== "formatting"} active={obs.status === "formatting"} />
-              <StepRow label="Forming thesis" done={obs.status === "researching" || obs.status === "complete"} active={obs.status === "formatting"} />
-              <StepRow label="Building steel man" done={obs.status === "complete"} active={obs.status === "researching"} />
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "20px 0 24px" }}>
+              <SteelManIcon size={48} animate />
+              <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "14px 0 4px" }}>
+                {obs.status === "formatting" ? "Reading your take\u2026" : "Building steel man\u2026"}
+              </p>
+              <p style={{ fontSize: 13, color: "#999", margin: 0 }}>This usually takes a few seconds</p>
             </div>
           </>
         )}
@@ -644,13 +687,64 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           </div>
         )}
 
-        {/* Steel Man content */}
-        {obs.status === "complete" && tab === "steel" && steelBullets.map((bullet, i) => (
-          <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
-            <span style={{ color: "#1A1A1A", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
-            <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
-          </div>
-        ))}
+        {/* Steel Man content + Edit & Resubmit */}
+        {obs.status === "complete" && tab === "steel" && (
+          <>
+            {steelBullets.map((bullet, i) => (
+              <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
+                <span style={{ color: "#1A1A1A", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
+                <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
+              </div>
+            ))}
+
+            {/* Edit & Resubmit — below steel man bullets */}
+            {!editMode && (
+              <div style={{ marginTop: 20 }}>
+                <button
+                  onClick={() => { setEditMode(true); setEditText(obs.thesis); }}
+                  style={{
+                    width: "100%", padding: "12px 0", borderRadius: 10,
+                    border: "1.5px solid #D5D5CD", background: "transparent",
+                    color: "#555", fontSize: 14, fontWeight: 600,
+                    cursor: "pointer", fontFamily: "inherit",
+                    WebkitTapHighlightColor: "transparent",
+                  }}
+                >
+                  Edit &amp; Resubmit
+                </button>
+              </div>
+            )}
+
+            {editMode && (
+              <div style={{ marginTop: 20 }}>
+                <textarea
+                  value={editText}
+                  onChange={(e) => setEditText(e.target.value)}
+                  rows={4}
+                  style={{
+                    width: "100%", border: "1.5px solid #D5D5CD", borderRadius: 12,
+                    padding: "12px 14px", fontSize: 15, color: "#1A1A1A",
+                    lineHeight: 1.6, resize: "none", fontFamily: "inherit",
+                    boxSizing: "border-box", outline: "none",
+                  }}
+                />
+                <button
+                  onClick={handleResubmit}
+                  disabled={!editText.trim() || resubmitting}
+                  style={{
+                    width: "100%", marginTop: 10, padding: "14px 0", borderRadius: 10,
+                    border: "none", background: editText.trim() && !resubmitting ? "#1A1A1A" : "#D5D5CD",
+                    color: "#FFF", fontSize: 15, fontWeight: 700,
+                    cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
+                    fontFamily: "inherit", WebkitTapHighlightColor: "transparent",
+                  }}
+                >
+                  {resubmitting ? "Submitting\u2026" : "Resubmit \u2192"}
+                </button>
+              </div>
+            )}
+          </>
+        )}
 
         {/* Stress Test content */}
         {tab === "stress" && (
@@ -686,52 +780,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           ) : null
         )}
 
-        {/* Edit & Resubmit */}
-        {obs.status === "complete" && !editMode && (
-          <div style={{ marginTop: 24 }}>
-            <button
-              onClick={() => { setEditMode(true); setEditText(obs.thesis); }}
-              style={{
-                width: "100%", padding: "12px 0", borderRadius: 10,
-                border: "1.5px solid #D5D5CD", background: "transparent",
-                color: "#555", fontSize: 14, fontWeight: 600,
-                cursor: "pointer", fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent",
-              }}
-            >
-              Edit &amp; Resubmit
-            </button>
-          </div>
-        )}
-
-        {obs.status === "complete" && editMode && (
-          <div style={{ marginTop: 24 }}>
-            <textarea
-              value={editText}
-              onChange={(e) => setEditText(e.target.value)}
-              rows={4}
-              style={{
-                width: "100%", border: "1.5px solid #D5D5CD", borderRadius: 12,
-                padding: "12px 14px", fontSize: 15, color: "#1A1A1A",
-                lineHeight: 1.6, resize: "none", fontFamily: "inherit",
-                boxSizing: "border-box", outline: "none",
-              }}
-            />
-            <button
-              onClick={handleResubmit}
-              disabled={!editText.trim() || resubmitting}
-              style={{
-                width: "100%", marginTop: 10, padding: "14px 0", borderRadius: 10,
-                border: "none", background: editText.trim() && !resubmitting ? "#1A1A1A" : "#D5D5CD",
-                color: "#FFF", fontSize: 15, fontWeight: 700,
-                cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
-                fontFamily: "inherit", WebkitTapHighlightColor: "transparent",
-              }}
-            >
-              {resubmitting ? "Submitting\u2026" : "Resubmit \u2192"}
-            </button>
-          </div>
-        )}
       </div>
     </div>
   );
