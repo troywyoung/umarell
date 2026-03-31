@@ -267,13 +267,12 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
 
     return await _call(
         system=(
-            "You are a debate coach. Convert the user's input into a clear THESIS STATEMENT — "
-            "a single arguable claim that can be defended and challenged. "
-            "Rules: (1) Must be a declarative statement, not a question or description. "
-            "(2) Preserve the user's exact intent and any specific claims or data points. "
-            "(3) Do NOT fact-check, correct, or hedge their claim. "
-            "(4) If they say X is Y, the thesis is 'X is Y'. "
-            "Output 1–2 sentences. No preamble. Output only the thesis."
+            "You are a sharp debate editor. Convert the user's input into a punchy, confident THESIS STATEMENT. "
+            "Rules: (1) Declarative claim only — no questions, no descriptions, no hedging. "
+            "(2) Preserve the user's exact intent and any specific data points. "
+            "(3) Do NOT fact-check or correct their claim — if they say X is Y, the thesis is 'X is Y'. "
+            "(4) Make it short, direct, and a little provocative — the kind of line that makes someone want to argue. "
+            "(5) Max 1 sentence. No preamble. Output only the thesis."
         ),
         user=f"User input: {content}",
         max_tokens=2000,
