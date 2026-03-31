@@ -607,8 +607,8 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
         </div>
       )}
 
-      {/* Action buttons row: mic + photo */}
-      <div style={{ display: "flex", gap: 10, marginBottom: 20 }}>
+      {/* Action buttons row: mic + screenshot */}
+      <div style={{ display: "flex", gap: 10, marginBottom: 8 }}>
         <button
           onClick={toggleVoice}
           style={{
@@ -635,10 +635,13 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
             WebkitTapHighlightColor: "transparent",
           }}
         >
-          <span style={{ fontSize: 18 }}>{"\uD83D\uDCF7"}</span>
-          Photo
+          <span style={{ fontSize: 18 }}>🖼️</span>
+          Screenshot
         </button>
       </div>
+      <p style={{ fontSize: 11, color: "#B0B0A8", textAlign: "center", margin: "0 0 14px", letterSpacing: 0.1 }}>
+        Screenshot a headline, tweet, chart, or stat
+      </p>
 
       <button
         type="button"
