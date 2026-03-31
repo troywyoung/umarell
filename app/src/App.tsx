@@ -303,83 +303,74 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                 key={obs.id}
                 onClick={() => onSelect(obs)}
                 style={{
-                  background: "#FFF", borderRadius: 10, padding: "10px 12px",
-                  marginBottom: 15, boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
-                  cursor: "pointer", position: "relative",
-                  display: "flex", alignItems: "flex-start", gap: 12,
+                  background: "#FFF", borderRadius: 10,
+                  marginBottom: 10, boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
+                  cursor: "pointer", position: "relative", overflow: "hidden",
+                  borderLeft: `3px solid ${obs.evidence_type === "Empirical" ? "#2E7D32" : obs.evidence_type === "Observational" ? "#1565C0" : obs.evidence_type === "Speculative" ? "#6A1B9A" : "#999"}`,
                 }}
               >
-                {/* Image on the left if present */}
-                {obs.image_data && (
-                  <img
-                    src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
-                    alt=""
-                    style={{
-                      width: 72, height: 72, borderRadius: 10,
-                      objectFit: "cover", flexShrink: 0,
-                    }}
-                  />
-                )}
-
-                <div style={{ flex: 1, minWidth: 0, paddingRight: 12 }}>
-                  {/* Headline: thesis truncated to 1 line */}
+                {/* Top row: headline + score badge + delete */}
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "10px 12px 6px 12px" }}>
                   <p style={{
-                    fontSize: 12, fontWeight: 600, color: "#1A1A1A",
-                    lineHeight: 1.4, margin: "0 0 4px", letterSpacing: -0.2,
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                    whiteSpace: "nowrap",
+                    fontSize: 12, fontWeight: 700, color: "#1A1A1A",
+                    lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
+                    overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
                   }}>
                     {obs.thesis || obs.raw_input}
                   </p>
-
-                  {/* First steel man bullet as secondary text */}
-                  {firstBullet && (
-                    <p style={{
-                      fontSize: 10, color: "#888", lineHeight: 1.5,
-                      margin: "0 0 6px",
-                      overflow: "hidden",
-                      display: "-webkit-box",
-                      WebkitLineClamp: 4,
-                      WebkitBoxOrient: "vertical",
-                    } as React.CSSProperties}>
-                      {firstBullet}
-                    </p>
+                  {obs.score != null && (
+                    <span style={{
+                      fontSize: 9, fontWeight: 800, flexShrink: 0,
+                      background: obs.score >= 70 ? "#E8F5E9" : obs.score >= 40 ? "#FFF3E0" : "#F3E5F5",
+                      color: obs.score >= 70 ? "#2E7D32" : obs.score >= 40 ? "#E65100" : "#6A1B9A",
+                      padding: "2px 6px", borderRadius: 4, letterSpacing: 0.2,
+                    }}>
+                      {obs.score}
+                    </span>
                   )}
-
-                  {(obs.status === "formatting" || obs.status === "researching") && (
-                    <div style={{ display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 6 }}>
-                      <SteelManIcon size={16} animate />
-                      <span style={{ fontSize: 12, color: "#999", fontStyle: "italic" }}>
-                        {obs.status === "formatting" ? "Formatting\u2026" : "Researching\u2026"}
-                      </span>
-                    </div>
-                  )}
-                  <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
-                    <span style={{ fontSize: 8, color: "#B0B0A8" }}>{timeAgo(obs.created_at)}</span>
-                    <EvidenceBadge value={obs.evidence_type} />
-                    {obs.tags?.map((tag) => (
-                      <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
-                    ))}
-                    {obs.status === "complete" && obs.thesis && (
-                      <span style={{ marginLeft: "auto" }}>
-                        <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
-                      </span>
-                    )}
-                  </div>
+                  <button
+                    onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steel man?")) onDelete(obs.id); }}
+                    style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
+                  >&times;</button>
                 </div>
 
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    if (confirm("Delete this steel man?")) onDelete(obs.id);
-                  }}
-                  style={{
-                    position: "absolute", top: 12, right: 12,
-                    background: "none", border: "none", cursor: "pointer",
-                    color: "#CCC", fontSize: 18, padding: 4, lineHeight: 1,
-                  }}
-                >&times;</button>
+                {/* Summary */}
+                {firstBullet && (
+                  <p style={{
+                    fontSize: 10, color: "#555", lineHeight: 1.55,
+                    margin: 0, padding: "0 12px 8px 12px",
+                    overflow: "hidden", display: "-webkit-box",
+                    WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
+                  } as React.CSSProperties}>
+                    {firstBullet}
+                  </p>
+                )}
+
+                {(obs.status === "formatting" || obs.status === "researching") && (
+                  <div style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "0 12px 8px" }}>
+                    <SteelManIcon size={14} animate />
+                    <span style={{ fontSize: 10, color: "#999", fontStyle: "italic" }}>
+                      {obs.status === "formatting" ? "Formatting\u2026" : "Researching\u2026"}
+                    </span>
+                  </div>
+                )}
+
+                {/* Footer: time + tags + share */}
+                <div style={{
+                  display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap",
+                  padding: "6px 12px 10px", borderTop: "1px solid #F5F5F2",
+                }}>
+                  <span style={{ fontSize: 8, fontWeight: 600, color: "#B0B0A8", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
+                  <EvidenceBadge value={obs.evidence_type} />
+                  {obs.tags?.map((tag) => (
+                    <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
+                  ))}
+                  {obs.status === "complete" && obs.thesis && (
+                    <span style={{ marginLeft: "auto" }}>
+                      <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
+                    </span>
+                  )}
+                </div>
               </div>
             );
           })
