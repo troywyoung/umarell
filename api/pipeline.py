@@ -86,7 +86,7 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
             config = genai.types.GenerateContentConfig(
                 system_instruction=system,
                 max_output_tokens=max_tokens,
-                thinking_config=genai.types.ThinkingConfig(thinking_budget=1024),
+                thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
             )
             if tools:
                 config.tools = tools
@@ -211,7 +211,7 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", con
                     config=genai.types.GenerateContentConfig(
                         system_instruction=system,
                         max_output_tokens=400,
-                        thinking_config=genai.types.ThinkingConfig(thinking_budget=512),
+                        thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
                     ),
                 )
                 return resp.text.strip()
