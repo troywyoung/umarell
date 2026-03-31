@@ -270,9 +270,14 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
         display: "flex", alignItems: "center", justifyContent: "space-between",
         position: "relative", zIndex: 1,
       }}>
-        <span style={{ fontSize: 20, fontWeight: 700, color: bgImage ? "#FFF" : "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-          <SteelManIcon size={28} animate animateCount={3} color={bgImage ? "#FFF" : "#1A1A1A"} /> Steel Man
-        </span>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <span style={{ fontSize: 20, fontWeight: 700, color: bgImage ? "#FFF" : "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
+            <SteelManIcon size={28} animate animateCount={3} color={bgImage ? "#FFF" : "#1A1A1A"} /> Steel Man
+          </span>
+          <span style={{ fontSize: 10, color: bgImage ? "rgba(255,255,255,0.7)" : "#999", marginLeft: 36, marginTop: 2, letterSpacing: -0.4 }}>
+            Tap <strong>+</strong> to drop your first steel man
+          </span>
+        </div>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing…</span>}
           <button
@@ -289,14 +294,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
       </div>
 
       <div style={{ padding: "12px 16px 0", opacity: showCards ? 1 : 0, transition: "opacity 0.5s ease" }}>
-        {observations.length === 0 && !loading ? (
-          <div style={{ textAlign: "center", paddingTop: 80 }}>
-            <p style={{ fontSize: 17, fontWeight: 700, color: bgImage ? "#FFF" : "#1A1A1A", marginBottom: 8 }}>Nothing yet.</p>
-            <p style={{ fontSize: 14, color: bgImage ? "rgba(255,255,255,0.7)" : "#888", lineHeight: 1.5 }}>
-              Tap + to drop your first steel man.
-            </p>
-          </div>
-        ) : (
+        {observations.length === 0 && !loading ? null : (
           observations.map((obs) => {
             const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
             const firstBullet = steelBullets[0] || "";
