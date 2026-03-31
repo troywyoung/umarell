@@ -745,9 +745,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", margin: "0 0 8px" }}>Analysis failed</p>
           <p style={{ fontSize: 14, color: "#888", lineHeight: 1.6, margin: "0 0 28px" }}>
             {obs.error_detail?.includes("529") || obs.error_detail?.includes("overloaded")
-              ? "Claude API is temporarily overloaded. Try again in a moment."
+              ? "API is temporarily overloaded. Try again in a moment."
               : obs.error_detail?.includes("401") || obs.error_detail?.includes("auth")
-              ? "Check that ANTHROPIC_API_KEY is set correctly."
+              ? "Check that the API key is set correctly."
               : obs.error_detail || "Something went wrong. Try again."}
           </p>
           <button onClick={onBack} style={{ background: "#1A1A1A", color: "#FFF", border: "none", borderRadius: 14, padding: "13px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Try again</button>
