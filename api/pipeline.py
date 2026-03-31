@@ -320,13 +320,19 @@ async def generate_metadata(thesis: str, steel_man: str) -> dict:
     """Generate evidence score (0-100), topic tags, and evidence type label."""
     prompt = f"""Thesis: {thesis}
 
-Steel man:
-{steel_man}
+Score this thesis based on how well it is supported by REAL-WORLD evidence and established fact — NOT based on how strong the arguments sound.
 
-Classify this observation. Return a JSON object with exactly these keys:
+Rules for scoring:
+- 85-100: Strong empirical consensus, peer-reviewed studies, established scientific fact
+- 60-84: Credible evidence but some debate or mixed data
+- 35-59: Contested, limited evidence, reasonable but unproven
+- 10-34: Weak evidence, largely speculative, contradicts mainstream data
+- 0-9: Factually wrong or contradicts established reality (e.g. "oranges are not fruit" = 2)
+
+Return a JSON object with exactly these keys:
 {{
-  "score": <integer 0-100 representing strength of evidence, where 100 = rock-solid empirical proof, 0 = pure speculation>,
-  "tags": ["2-4 short topic tags, e.g. AI, Iran, Markets, Climate"],
+  "score": <integer 0-100>,
+  "tags": ["2-4 short topic tags"],
   "evidence_type": "<one of: Empirical | Observational | Anecdotal | Speculative>"
 }}
 
@@ -334,7 +340,9 @@ Return valid JSON only. No markdown fences. No preamble."""
 
     raw = await _call(
         system=(
-            "You are a rigorous research classifier. You label observations by their evidence quality. "
+            "You are a rigorous fact-checker and research classifier. "
+            "You score claims based on actual real-world evidence — not on how convincing the argument sounds. "
+            "A well-argued case for a false claim still scores near zero. "
             "You always return valid JSON when asked."
         ),
         user=prompt,
