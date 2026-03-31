@@ -354,7 +354,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
           width: 68, height: 68, borderRadius: "50%",
           background: "#E53935", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
-          boxShadow: "0 4px 20px rgba(229,57,53,0.35)",
+          boxShadow: "none",
           fontSize: 36, fontWeight: 800, color: "#fff", lineHeight: 1, paddingBottom: 2,
           WebkitTapHighlightColor: "transparent",
         }}
@@ -854,7 +854,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
               onClick={handleStressTab}
               style={{
                 flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: tab === "stress" ? "#1A1A1A" : "#EFEFED",
+                background: tab === "stress" ? "#E53935" : "#EFEFED",
                 color: tab === "stress" ? "#FFF" : "#666",
                 fontSize: 14, fontWeight: 700, fontFamily: "inherit",
                 WebkitTapHighlightColor: "transparent",
@@ -862,7 +862,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
               }}
             >
               {stressLoading && tab === "stress" ? (
-                <><ProcessingDots /><span>Testing…</span></>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><ProcessingDots color="#FFF" /><span>Testing…</span></span>
               ) : "Stress Test"}
             </button>
           </div>
@@ -907,12 +907,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
 
         {/* Stress Test content */}
         {tab === "stress" && (() => {
-          if (stressLoading) return (
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "30px 0", gap: 10 }}>
-              <ProcessingDots />
-              <p style={{ fontSize: 14, color: "#888", margin: 0 }}>Stress testing…</p>
-            </div>
-          );
+          if (stressLoading) return null;
           if (stressError) return (
             <div style={{ background: "#FFF0EE", borderRadius: 12, padding: "14px 16px", border: "1px solid #F5C6C0" }}>
               <p style={{ fontSize: 14, color: "#C0392B", margin: 0, lineHeight: 1.5 }}>
@@ -1053,14 +1048,14 @@ function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.Mo
   );
 }
 
-function ProcessingDots() {
+function ProcessingDots({ color = "#6666CC" }: { color?: string }) {
   return (
     <span style={{ display: "inline-flex", gap: 3, alignItems: "center" }}>
       {[0, 1, 2].map((i) => (
         <span
           key={i}
           style={{
-            width: 6, height: 6, borderRadius: "50%", background: "#6666CC",
+            width: 6, height: 6, borderRadius: "50%", background: color,
             display: "inline-block",
             animation: "pulse 1.2s ease-in-out infinite",
             animationDelay: `${i * 0.2}s`,
