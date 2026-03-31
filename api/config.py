@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     google_api_key: str = ""
     gemini_model: str = "gemini-2.5-flash"
     llm_provider: str = "gemini"  # "gemini" or "anthropic"
+    tavily_api_key: str = ""
     database_url: str = "sqlite+aiosqlite:////app/data/umarell.db"
     cors_origins: str = "*"
 

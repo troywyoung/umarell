@@ -131,6 +131,37 @@ async def _call_anthropic(system: str, user: str, max_tokens: int, retries: int)
                 raise
 
 
+# ─── Tavily search ───────────────────────────────────────────────────────
+
+async def _search_tavily(query: str, max_results: int = 5) -> tuple[str, list[dict]]:
+    """Search Tavily and return (context_text, sources_list)."""
+    if not settings.tavily_api_key:
+        return "", []
+    try:
+        from tavily import TavilyClient
+        client = TavilyClient(api_key=settings.tavily_api_key)
+        resp = await asyncio.to_thread(
+            client.search,
+            query=query,
+            max_results=max_results,
+            include_raw_content=False,
+        )
+        sources = []
+        context_parts = []
+        for r in resp.get("results", []):
+            url = r.get("url", "")
+            title = r.get("title", url)
+            content = r.get("content", "")
+            sources.append({"url": url, "title": title})
+            if content:
+                context_parts.append(f"- {title}: {content}")
+        context = "\n".join(context_parts)
+        return context, sources
+    except Exception as e:
+        print(f"[tavily] search failed: {e}")
+        return "", []
+
+
 # ─── URL fetch ────────────────────────────────────────────────────────────
 
 async def _fetch_url(url: str) -> str:
@@ -238,6 +269,15 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
 async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
     """Generate 4-5 punchy bullet points making the strongest case FOR the thesis.
     Returns (steel_man_text, sources) where sources is a list of {url, title} dicts."""
+    # Fetch real-time context via Tavily for Anthropic provider
+    search_context, sources = "", []
+    if PROVIDER == "anthropic" and settings.tavily_api_key:
+        search_context, sources = await _search_tavily(thesis)
+
+    user_prompt = f"Steel man this thesis: {thesis}"
+    if search_context:
+        user_prompt += f"\n\nCurrent real-world context and evidence to draw from:\n{search_context}"
+
     result = await _call(
         system=(
             "You are a brilliant advocate and researcher. Given a thesis, produce 4-5 concise bullet points "
@@ -246,15 +286,15 @@ async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
             "CRITICAL: Output ONLY the bullet points. No introduction, no summary, no headers, no preamble. "
             "Start immediately with the first '•' character."
         ),
-        user=f"Steel man this thesis: {thesis}",
+        user=user_prompt,
         max_tokens=2000,
-        use_search=True,
+        use_search=(PROVIDER == "gemini"),
     )
     if isinstance(result, tuple):
-        text, sources = result
+        text, gemini_sources = result
+        sources = gemini_sources if gemini_sources else sources
     else:
-        text, sources = result, []
-    # Strip any preamble before the first bullet
+        text = result
     first_bullet = text.find('•')
     if first_bullet > 0:
         text = text[first_bullet:]
@@ -291,17 +331,26 @@ Return valid JSON only. No markdown fences. No preamble."""
 
 async def generate_stress_test(thesis: str, steel_man: str) -> tuple[dict, list[dict]]:
     """Stress test the thesis — pros, cons, verdict. Returns (result_dict, sources)."""
+    search_context, sources = "", []
+    if PROVIDER == "anthropic" and settings.tavily_api_key:
+        search_context, sources = await _search_tavily(f"counterarguments against: {thesis}")
+
     prompt = f"""Thesis: {thesis}
 
 Steel man argument:
-{steel_man}
+{steel_man}"""
+
+    if search_context:
+        prompt += f"\n\nCurrent real-world context:\n{search_context}"
+
+    prompt += """
 
 Now stress test this thesis objectively. Return a JSON object with exactly these keys:
-{{
+{
   "pros": ["3-4 SHORT points in favour — one sentence each, max 20 words"],
   "cons": ["3-4 SHORT weaknesses or objections — one sentence each, max 20 words"],
   "verdict": "One direct sentence: does this thesis stand up, and why or why not?"
-}}
+}
 
 Be concise. Each bullet must be under 20 words. Return valid JSON only. No markdown fences. No preamble."""
 
@@ -313,12 +362,13 @@ Be concise. Each bullet must be under 20 words. Return valid JSON only. No markd
         ),
         user=prompt,
         max_tokens=2000,
-        use_search=True,
+        use_search=(PROVIDER == "gemini"),
     )
 
     if isinstance(result, tuple):
-        raw, sources = result
+        raw, gemini_sources = result
+        sources = gemini_sources if gemini_sources else sources
     else:
-        raw, sources = result, []
+        raw = result
 
     return _extract_json(raw), sources
