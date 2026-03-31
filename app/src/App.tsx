@@ -321,7 +321,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                   />
                 )}
 
-                <div style={{ flex: 1, minWidth: 0, paddingRight: 28 }}>
+                <div style={{ flex: 1, minWidth: 0, paddingRight: 12 }}>
                   {/* Headline: thesis truncated to 1 line */}
                   <p style={{
                     fontSize: 12, fontWeight: 600, color: "#1A1A1A",
