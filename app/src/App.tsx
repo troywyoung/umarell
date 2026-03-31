@@ -228,7 +228,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
         <span style={{ fontSize: 20, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
           <SteelManIcon size={28} animate animateCount={3} /> Steel Man
         </span>
-        {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing\u2026</span>}
+        {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing…</span>}
       </div>
 
       <div style={{ padding: "12px 16px 0" }}>
@@ -494,7 +494,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
         {listening && (
           <div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 6 }}>
             <ProcessingDots />
-            <span style={{ fontSize: 12, color: "#6666CC", fontWeight: 600 }}>Listening\u2026</span>
+            <span style={{ fontSize: 12, color: "#6666CC", fontWeight: 600 }}>Listening…</span>
           </div>
         )}
       </div>
@@ -830,7 +830,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
               }}
             >
               {stressLoading && tab === "stress" ? (
-                <><ProcessingDots /><span>Testing\u2026</span></>
+                <><ProcessingDots /><span>Testing…</span></>
               ) : "Stress Test"}
             </button>
           </div>
@@ -854,7 +854,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           if (stressLoading) return (
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center", padding: "30px 0" }}>
               <SteelManIcon size={56} animate />
-              <p style={{ fontSize: 14, color: "#888", marginTop: 14 }}>Stress testing\u2026</p>
+              <p style={{ fontSize: 14, color: "#888", marginTop: 14 }}>Stress testing…</p>
             </div>
           );
           if (stressError) return (
