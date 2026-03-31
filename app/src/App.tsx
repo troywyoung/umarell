@@ -178,7 +178,7 @@ function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "
     <span style={{
       display: "inline-block",
       background: c.bg, color: c.color,
-      fontSize: size === "lg" ? 11 : 8, fontWeight: 700,
+      fontSize: size === "lg" ? 11 : 8, fontWeight: size === "lg" ? 700 : 600,
       padding: size === "lg" ? "3px 9px" : "1px 6px", borderRadius: 100, letterSpacing: 0.3,
     }}>
       {value}
