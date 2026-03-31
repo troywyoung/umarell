@@ -5,18 +5,24 @@ import { useObservations } from "./hooks/useObservations";
 // ─── Rotating placeholder text ───────────────────────────────────────────
 
 const PLACEHOLDERS = [
-  "Give me your steel man\u2026",
-  "Give me your steel woman\u2026",
-  "Give me your steel baby\u2026",
-  "Give me your steel dog\u2026",
-  "Give me your steel grandma\u2026",
-  "Give me your steel intern\u2026",
-  "Give me your steel villain\u2026",
-  "Give me your steel alien\u2026",
-  "Give me your steel robot\u2026",
-  "Give me your steel toddler\u2026",
-  "Give me your steel professor\u2026",
-  "Give me your steel pirate\u2026",
+  // Dares
+  "What hill are you dying on?",
+  "Drop your hottest take\u2026",
+  "Say something controversial\u2026",
+  "What's everyone getting wrong?",
+  "Convince me\u2026",
+  "What do you believe that nobody agrees with?",
+  "Defend the indefensible\u2026",
+  "What's obvious to you but invisible to others?",
+  // Example theses
+  "e.g. AI will replace 50% of white collar jobs by 2030",
+  "e.g. Remote work makes teams worse at innovation",
+  "e.g. TikTok is the new Google for Gen Z",
+  "e.g. The housing market is about to crash",
+  "e.g. Most startups would be better off with no VC money",
+  "e.g. College degrees will be worthless in 10 years",
+  "e.g. China will overtake the US economy by 2035",
+  "e.g. Social media is a net negative for society",
 ];
 
 function getRandomPlaceholder() {
