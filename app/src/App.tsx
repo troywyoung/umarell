@@ -235,7 +235,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
             onClick={onCapture}
             style={{
               width: 32, height: 32, borderRadius: "50%",
-              background: "#1A1A1A", border: "none", cursor: "pointer",
+              background: "#E53935", border: "none", cursor: "pointer",
               display: "flex", alignItems: "center", justifyContent: "center",
               fontSize: 20, color: "#fff", lineHeight: 1, padding: 0,
               WebkitTapHighlightColor: "transparent",
@@ -320,6 +320,28 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                       <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "2px 8px" }}>{tag}</span>
                     ))}
                   </div>
+                  {/* Share + Copy on completed cards */}
+                  {obs.status === "complete" && obs.summary && (() => {
+                    const bullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
+                    const txt = `Steel Man: ${obs.thesis}\n\n${bullets.map(b => "\u2022 " + b).join("\n")}`;
+                    const enc = encodeURIComponent(txt);
+                    return (
+                      <div style={{ display: "flex", gap: 6, marginTop: 6 }} onClick={(e) => e.stopPropagation()}>
+                        <a href={`https://wa.me/?text=${enc}`} target="_blank" rel="noopener noreferrer"
+                          style={{ fontSize: 10, fontWeight: 600, color: "#2E7D32", background: "#E8F5E9", borderRadius: 100, padding: "2px 8px", textDecoration: "none" }}>
+                          WhatsApp
+                        </a>
+                        <a href={`sms:?body=${enc}`}
+                          style={{ fontSize: 10, fontWeight: 600, color: "#1565C0", background: "#E3F2FD", borderRadius: 100, padding: "2px 8px", textDecoration: "none" }}>
+                          SMS
+                        </a>
+                        <button onClick={() => { navigator.clipboard.writeText(txt); }}
+                          style={{ fontSize: 10, fontWeight: 600, color: "#555", background: "#F0F0ED", borderRadius: 100, padding: "2px 8px", border: "none", cursor: "pointer", fontFamily: "inherit" }}>
+                          Copy
+                        </button>
+                      </div>
+                    );
+                  })()}
                 </div>
 
                 <button
@@ -345,9 +367,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
         style={{
           position: "fixed", bottom: 36, left: "50%", transform: "translateX(-50%)",
           width: 68, height: 68, borderRadius: "50%",
-          background: "#1A1A1A", border: "none", cursor: "pointer",
+          background: "#E53935", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
-          boxShadow: "0 4px 20px rgba(0,0,0,0.22)",
+          boxShadow: "0 4px 20px rgba(229,57,53,0.35)",
           fontSize: 32, color: "#fff", lineHeight: "1",
           WebkitTapHighlightColor: "transparent",
         }}
@@ -364,6 +386,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
   onBack: () => void;
 }) {
   const [text, setText] = useState("");
+  const [url, setUrl] = useState("");
   const [listening, setListening] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
@@ -457,6 +480,8 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
     try {
       if (imageMeta) {
         await onSubmitImage(imageMeta.b64, imageMeta.mediaType, text.trim() || undefined);
+      } else if (url.trim()) {
+        await onSubmit(url.trim());
       } else if (text.trim()) {
         await onSubmit(text.trim());
       }
@@ -466,7 +491,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
     }
   };
 
-  const canSubmit = (!!imageMeta || !!text.trim()) && !submitting;
+  const canSubmit = (!!imageMeta || !!text.trim() || !!url.trim()) && !submitting;
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 24px 60px", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
@@ -509,6 +534,31 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
             <ProcessingDots />
             <span style={{ fontSize: 12, color: "#6666CC", fontWeight: 600 }}>Listening…</span>
           </div>
+        )}
+      </div>
+
+      {/* URL input */}
+      <div style={{
+        background: "#FFF", borderRadius: 12, padding: "10px 14px",
+        boxShadow: "0 1px 4px rgba(0,0,0,0.04)", marginBottom: 12,
+        display: "flex", alignItems: "center", gap: 8,
+        border: url.trim() ? "1.5px solid #E53935" : "1.5px solid transparent",
+        transition: "border-color 0.2s",
+      }}>
+        <span style={{ fontSize: 16, flexShrink: 0, opacity: 0.5 }}>{"\uD83D\uDD17"}</span>
+        <input
+          type="url"
+          value={url}
+          onChange={(e) => setUrl(e.target.value)}
+          placeholder="Paste a URL\u2026"
+          style={{
+            flex: 1, border: "none", outline: "none",
+            fontSize: 14, color: "#1A1A1A", fontFamily: "inherit",
+            background: "transparent",
+          }}
+        />
+        {url.trim() && (
+          <button onClick={() => setUrl("")} style={{ background: "none", border: "none", color: "#CCC", fontSize: 16, cursor: "pointer", padding: 0 }}>&times;</button>
         )}
       </div>
 
@@ -701,8 +751,8 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           <>
             {/* Original observation */}
             {!isImage && obs.raw_input && obs.raw_input !== "image" && (
-              <div style={{ background: "#F7F7F5", borderRadius: 12, padding: "14px 16px", marginBottom: 16, borderLeft: "3px solid #D0D0C8" }}>
-                <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Your observation</p>
+              <div style={{ background: "#F7F7F5", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
+                <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Your observation</p>
                 <p style={{ fontSize: 15, color: "#3A3A38", lineHeight: 1.65, margin: 0 }}>{obs.raw_input}</p>
               </div>
             )}
@@ -804,6 +854,17 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
             >
               {"\uD83D\uDCF1"} SMS
             </a>
+            <button
+              onClick={() => { navigator.clipboard.writeText(shareText); }}
+              style={{
+                display: "inline-flex", alignItems: "center", gap: 4,
+                background: "#F0F0ED", color: "#555", border: "none",
+                borderRadius: 100, padding: "6px 14px",
+                fontSize: 12, fontWeight: 600, cursor: "pointer", fontFamily: "inherit",
+              }}
+            >
+              {"\uD83D\uDCCB"} Copy
+            </button>
           </div>
         )}
 
@@ -906,8 +967,8 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
                   ))}
                 </div>
               )}
-              <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px", borderLeft: "3px solid #1A1A1A" }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Verdict</p>
+              <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px" }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Verdict</p>
                 <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{verdict}</p>
               </div>
             </div>
@@ -920,6 +981,24 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
 }
 
 // ─── Shared components ────────────────────────────────────────────────────
+
+function PulsingDot() {
+  return (
+    <>
+      <span style={{
+        display: "inline-block", width: 7, height: 7, borderRadius: "50%",
+        background: "#E53935", flexShrink: 0,
+        animation: "redDotPulse 2s ease-in-out infinite",
+      }} />
+      <style>{`
+        @keyframes redDotPulse {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.3; transform: scale(0.7); }
+        }
+      `}</style>
+    </>
+  );
+}
 
 function ProcessingDots() {
   return (
