@@ -134,17 +134,20 @@ async def _call_anthropic(system: str, user: str, max_tokens: int, retries: int)
 # ─── Tavily search ───────────────────────────────────────────────────────
 
 async def _search_tavily(query: str, max_results: int = 5) -> tuple[str, list[dict]]:
-    """Search Tavily and return (context_text, sources_list)."""
+    """Search Tavily and return (context_text, sources_list). Times out after 8s."""
     if not settings.tavily_api_key:
         return "", []
     try:
         from tavily import TavilyClient
         client = TavilyClient(api_key=settings.tavily_api_key)
-        resp = await asyncio.to_thread(
-            client.search,
-            query=query,
-            max_results=max_results,
-            include_raw_content=False,
+        resp = await asyncio.wait_for(
+            asyncio.to_thread(
+                client.search,
+                query=query,
+                max_results=max_results,
+                include_raw_content=False,
+            ),
+            timeout=8.0,
         )
         sources = []
         context_parts = []
@@ -157,6 +160,9 @@ async def _search_tavily(query: str, max_results: int = 5) -> tuple[str, list[di
                 context_parts.append(f"- {title}: {content}")
         context = "\n".join(context_parts)
         return context, sources
+    except asyncio.TimeoutError:
+        print("[tavily] search timed out after 8s — proceeding without")
+        return "", []
     except Exception as e:
         print(f"[tavily] search failed: {e}")
         return "", []
@@ -266,13 +272,16 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
     )
 
 
-async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
+async def generate_steel_man(thesis: str, prefetch_context: str = "", prefetch_sources: list = []) -> tuple[str, list[dict]]:
     """Generate 4-5 punchy bullet points making the strongest case FOR the thesis.
     Returns (steel_man_text, sources) where sources is a list of {url, title} dicts."""
-    # Fetch real-time context via Tavily for Anthropic provider
-    search_context, sources = "", []
-    if PROVIDER == "anthropic" and settings.tavily_api_key:
+    # Use prefetched context if available, otherwise search now
+    if prefetch_context:
+        search_context, sources = prefetch_context, prefetch_sources
+    elif PROVIDER == "anthropic" and settings.tavily_api_key:
         search_context, sources = await _search_tavily(thesis)
+    else:
+        search_context, sources = "", []
 
     user_prompt = f"Steel man this thesis: {thesis}"
     if search_context:

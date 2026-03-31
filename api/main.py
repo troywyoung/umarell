@@ -7,7 +7,7 @@ from sqlalchemy import select, desc
 from database import init_db, get_db, AsyncSessionLocal
 from models import Observation
 from schemas import ObservationCreate, ObservationOut
-from pipeline import format_thesis, generate_steel_man, generate_stress_test, generate_metadata, ACTIVE_MODEL
+from pipeline import format_thesis, generate_steel_man, generate_stress_test, generate_metadata, _search_tavily, ACTIVE_MODEL, PROVIDER
 from config import settings
 
 
@@ -31,8 +31,16 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
     """Background task: format thesis → steel man."""
     async with AsyncSessionLocal() as db:
         try:
-            # Step 1: format thesis
-            thesis = await format_thesis(raw_input, input_type, image_b64, image_media_type)
+            # Step 1: format thesis + prefetch Tavily search in parallel
+            if PROVIDER == "anthropic":
+                thesis, (prefetch_context, prefetch_sources) = await asyncio.gather(
+                    format_thesis(raw_input, input_type, image_b64, image_media_type),
+                    _search_tavily(raw_input[:300]),
+                )
+            else:
+                thesis = await format_thesis(raw_input, input_type, image_b64, image_media_type)
+                prefetch_context, prefetch_sources = "", []
+
             obs = await db.get(Observation, observation_id)
             if not obs:
                 return
@@ -40,8 +48,8 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             obs.status = "researching"
             await db.commit()
 
-            # Step 2: steel man (with search grounding for sources)
-            steel_man, sources = await generate_steel_man(thesis)
+            # Step 2: steel man — pass prefetched context if available
+            steel_man, sources = await generate_steel_man(thesis, prefetch_context=prefetch_context, prefetch_sources=prefetch_sources)
             obs = await db.get(Observation, observation_id)
             if not obs:
                 return

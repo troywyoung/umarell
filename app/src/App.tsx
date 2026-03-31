@@ -178,8 +178,8 @@ function EvidenceBadge({ value }: { value?: string }) {
     <span style={{
       display: "inline-block",
       background: c.bg, color: c.color,
-      fontSize: 8, fontWeight: 700,
-      padding: "1px 6px", borderRadius: 100, letterSpacing: 0.3,
+      fontSize: 11, fontWeight: 700,
+      padding: "3px 9px", borderRadius: 100, letterSpacing: 0.3,
     }}>
       {value}
     </span>
@@ -189,12 +189,12 @@ function EvidenceBadge({ value }: { value?: string }) {
 function ScoreBadge({ value }: { value?: number }) {
   if (value == null) return null;
   const color = value >= 70 ? "#2E7D32" : value >= 40 ? "#E65100" : "#6A1B9A";
+  const bg = value >= 70 ? "#E8F5E9" : value >= 40 ? "#FFF3E0" : "#F3E5F5";
   return (
     <span style={{
-      display: "inline-flex", alignItems: "center", gap: 4,
       fontSize: 11, fontWeight: 700, color,
+      background: bg, borderRadius: 100, padding: "3px 9px",
     }}>
-      <span style={{ fontSize: 10, opacity: 0.7 }}>Evidence</span>
       {value}/100
     </span>
   );
