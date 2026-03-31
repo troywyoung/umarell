@@ -320,15 +320,14 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                       <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "2px 8px" }}>{tag}</span>
                     ))}
                   </div>
-                  {/* Share icon on completed cards */}
-                  {obs.status === "complete" && obs.summary && (() => {
-                    const bullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
-                    const txt = `Steel Man: ${obs.thesis}\n\n${bullets.map(b => "\u2022 " + b).join("\n")}`;
-                    return (
-                      <ShareButton text={txt} style={{ marginTop: 4 }} onClick={(e: React.MouseEvent) => e.stopPropagation()} />
-                    );
-                  })()}
                 </div>
+
+                {/* Share — bottom right */}
+                {obs.status === "complete" && obs.thesis && (
+                  <div style={{ position: "absolute", bottom: 12, right: 12 }}>
+                    <ShareButton obsId={obs.id} thesis={obs.thesis} onClick={(e) => e.stopPropagation()} />
+                  </div>
+                )}
 
                 <button
                   onClick={(e) => {
@@ -713,8 +712,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
     );
   }
 
-  // Build share text
-  const shareText = `Steel Man: ${obs.thesis}\n\n${steelBullets.map(b => '\u2022 ' + b).join('\n')}`;
+  // (share handled by ShareButton component)
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
@@ -817,7 +815,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
         {/* Share (shown when complete) */}
         {obs.status === "complete" && steelBullets.length > 0 && (
           <div style={{ marginBottom: 16 }}>
-            <ShareButton text={shareText} />
+            <ShareButton obsId={obs.id} thesis={obs.thesis} />
           </div>
         )}
 
@@ -953,100 +951,44 @@ function PulsingDot() {
   );
 }
 
-function ShareButton({ text, style, onClick }: { text: string; style?: React.CSSProperties; onClick?: (e: React.MouseEvent) => void }) {
-  const [open, setOpen] = useState(false);
+function ShareButton({ obsId, thesis, onClick }: { obsId: string; thesis: string; onClick?: (e: React.MouseEvent) => void }) {
   const [copied, setCopied] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-  const encoded = encodeURIComponent(text);
 
-  // Close dropdown on outside click
-  useEffect(() => {
-    if (!open) return;
-    const handler = (e: MouseEvent) => {
-      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, [open]);
+  const shareUrl = `${window.location.origin}${window.location.pathname}#obs/${obsId}`;
+  const shareText = `Steel Man: ${thesis}`;
+  const fullText = `${shareText}\n${shareUrl}`;
 
   const handleShare = async (e: React.MouseEvent) => {
     onClick?.(e);
     e.stopPropagation();
-    // Try native share first (mobile)
     if (navigator.share) {
-      try { await navigator.share({ text }); } catch { /* cancelled */ }
+      try { await navigator.share({ text: shareText, url: shareUrl }); } catch { /* cancelled */ }
       return;
     }
-    setOpen(!open);
-  };
-
-  const handleCopy = (e: React.MouseEvent) => {
-    e.stopPropagation();
-    navigator.clipboard.writeText(text);
+    // Fallback: copy to clipboard
+    navigator.clipboard.writeText(fullText);
     setCopied(true);
-    setTimeout(() => { setCopied(false); setOpen(false); }, 1200);
+    setTimeout(() => setCopied(false), 1500);
   };
 
   return (
-    <div ref={ref} style={{ position: "relative", display: "inline-flex", ...style }}>
-      <button
-        onClick={handleShare}
-        style={{
-          background: "none", border: "none", cursor: "pointer", padding: 4,
-          color: "#999", fontSize: 15, lineHeight: 1,
-          WebkitTapHighlightColor: "transparent",
-        }}
-        title="Share"
-      >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8" />
-          <polyline points="16 6 12 2 8 6" />
-          <line x1="12" y1="2" x2="12" y2="15" />
-        </svg>
-      </button>
-
-      {open && (
-        <div style={{
-          position: "absolute", bottom: "100%", left: 0, marginBottom: 6,
-          background: "#FFF", borderRadius: 12, padding: 6,
-          boxShadow: "0 4px 20px rgba(0,0,0,0.15)", border: "1px solid #E8E8E4",
-          zIndex: 100, minWidth: 140,
-        }}>
-          {[
-            { label: "WhatsApp", href: `https://wa.me/?text=${encoded}`, color: "#2E7D32" },
-            { label: "SMS", href: `sms:?body=${encoded}`, color: "#1565C0" },
-          ].map(({ label, href, color }) => (
-            <a
-              key={label}
-              href={href}
-              target={label === "WhatsApp" ? "_blank" : undefined}
-              rel={label === "WhatsApp" ? "noopener noreferrer" : undefined}
-              onClick={(e) => { e.stopPropagation(); setOpen(false); }}
-              style={{
-                display: "block", padding: "9px 14px", fontSize: 14, fontWeight: 600,
-                color, textDecoration: "none", borderRadius: 8, fontFamily: "inherit",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.background = "#F5F5F2")}
-              onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
-            >
-              {label}
-            </a>
-          ))}
-          <button
-            onClick={handleCopy}
-            style={{
-              display: "block", width: "100%", padding: "9px 14px", fontSize: 14,
-              fontWeight: 600, color: "#555", background: "none", border: "none",
-              borderRadius: 8, cursor: "pointer", fontFamily: "inherit", textAlign: "left",
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = "#F5F5F2")}
-            onMouseLeave={(e) => (e.currentTarget.style.background = "transparent")}
-          >
-            {copied ? "Copied!" : "Copy text"}
-          </button>
-        </div>
-      )}
-    </div>
+    <button
+      onClick={handleShare}
+      style={{
+        display: "inline-flex", alignItems: "center", gap: 5,
+        background: "none", border: "none", cursor: "pointer", padding: 0,
+        color: copied ? "#E53935" : "#999", fontSize: 12, fontFamily: "inherit",
+        WebkitTapHighlightColor: "transparent",
+        transition: "color 0.2s",
+      }}
+    >
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8" />
+        <polyline points="16 6 12 2 8 6" />
+        <line x1="12" y1="2" x2="12" y2="15" />
+      </svg>
+      {copied ? "Copied!" : "Share this"}
+    </button>
   );
 }
 
@@ -1083,13 +1025,29 @@ export default function App() {
   const [view, setView] = useState<View>("home");
   const [selectedObs, setSelectedObs] = useState<Observation | null>(null);
 
-  useEffect(() => { fetchObservations(); }, []);
+  useEffect(() => {
+    fetchObservations().then(() => {
+      // Deep link: #obs/<id> opens that observation
+      const hash = window.location.hash;
+      const match = hash.match(/^#obs\/(.+)$/);
+      if (match) {
+        const id = match[1];
+        pollObservation(id).then((obs) => {
+          if (obs) {
+            setSelectedObs(obs);
+            setView("output");
+          }
+        });
+      }
+    });
+  }, []);
 
   // Browser back button support
   useEffect(() => {
     const handlePop = () => {
       setView("home");
       setSelectedObs(null);
+      window.history.replaceState(null, "", window.location.pathname);
       fetchObservations();
     };
     window.addEventListener("popstate", handlePop);
@@ -1097,9 +1055,8 @@ export default function App() {
   }, []);
 
   const navigateTo = (nextView: View, obs?: Observation) => {
-    if (nextView !== "home") {
-      window.history.pushState({ view: nextView }, "", "");
-    }
+    const url = nextView === "output" && obs ? `#obs/${obs.id}` : window.location.pathname;
+    window.history.pushState({ view: nextView }, "", url);
     if (obs) setSelectedObs(obs);
     setView(nextView);
   };

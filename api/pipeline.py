@@ -57,7 +57,7 @@ async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 3
 
 async def _fetch_url(url: str) -> str:
     try:
-        async with httpx.AsyncClient(timeout=15, follow_redirects=True) as http:
+        async with httpx.AsyncClient(timeout=30, follow_redirects=True) as http:
             resp = await http.get(url, headers={"User-Agent": "Mozilla/5.0"})
             soup = BeautifulSoup(resp.text, "html.parser")
             for tag in soup(["script", "style", "nav", "footer", "header"]):
