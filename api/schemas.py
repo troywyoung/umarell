@@ -24,6 +24,7 @@ class ObservationOut(BaseModel):
     score: Optional[float]
     tags: Optional[list]
     evidence_type: Optional[str]
+    error_detail: Optional[str] = None
     image_data: Optional[str] = None
     image_media_type: Optional[str] = None
     created_at: datetime

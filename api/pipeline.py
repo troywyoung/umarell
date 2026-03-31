@@ -4,9 +4,10 @@ All Claude API calls are here.
 """
 import json
 import re
+import asyncio
 import httpx
 from bs4 import BeautifulSoup
-from anthropic import AsyncAnthropic
+from anthropic import AsyncAnthropic, APIStatusError
 from config import settings
 
 client = AsyncAnthropic(api_key=settings.anthropic_api_key)
@@ -35,14 +36,23 @@ def _extract_json(raw: str) -> dict:
 MODEL = settings.claude_model
 
 
-async def _call(system: str, user: str, max_tokens: int = 2000) -> str:
-    msg = await client.messages.create(
-        model=MODEL,
-        max_tokens=max_tokens,
-        system=system,
-        messages=[{"role": "user", "content": user}],
-    )
-    return msg.content[0].text.strip()
+async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 3) -> str:
+    for attempt in range(retries):
+        try:
+            msg = await client.messages.create(
+                model=MODEL,
+                max_tokens=max_tokens,
+                system=system,
+                messages=[{"role": "user", "content": user}],
+            )
+            return msg.content[0].text.strip()
+        except APIStatusError as e:
+            if e.status_code in (429, 529) and attempt < retries - 1:
+                wait = 2 ** attempt
+                print(f"[pipeline] {e.status_code} — retrying in {wait}s (attempt {attempt+1}/{retries})")
+                await asyncio.sleep(wait)
+            else:
+                raise
 
 
 async def _fetch_url(url: str) -> str:
@@ -66,23 +76,31 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", con
     else:
         question = "What is the core observation or idea in this image?"
 
-    msg = await client.messages.create(
-        model=MODEL,
-        max_tokens=400,
-        system=(
-            "You are a research editor. Look at this image and extract the core idea, "
-            "claim, headline, or observation it contains. Describe it in 1–3 plain sentences "
-            "as if briefing a colleague. No preamble. Output only the extracted observation."
-        ),
-        messages=[{
-            "role": "user",
-            "content": [
-                {"type": "image", "source": {"type": "base64", "media_type": media_type, "data": image_b64}},
-                {"type": "text", "text": question},
-            ],
-        }],
-    )
-    return msg.content[0].text.strip()
+    for attempt in range(3):
+        try:
+            msg = await client.messages.create(
+                model=MODEL,
+                max_tokens=400,
+                system=(
+                    "You are a research editor. Look at this image and extract the core idea, "
+                    "claim, headline, or observation it contains. Describe it in 1–3 plain sentences "
+                    "as if briefing a colleague. No preamble. Output only the extracted observation."
+                ),
+                messages=[{
+                    "role": "user",
+                    "content": [
+                        {"type": "image", "source": {"type": "base64", "media_type": media_type, "data": image_b64}},
+                        {"type": "text", "text": question},
+                    ],
+                }],
+            )
+            return msg.content[0].text.strip()
+        except APIStatusError as e:
+            if e.status_code in (429, 529) and attempt < 2:
+                print(f"[pipeline] image extract {e.status_code} — retrying in {2**attempt}s")
+                await asyncio.sleep(2 ** attempt)
+            else:
+                raise
 
 
 async def format_thesis(raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg") -> str:

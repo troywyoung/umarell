@@ -63,6 +63,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             obs = await db.get(Observation, observation_id)
             if obs:
                 obs.status = "error"
+                obs.error_detail = str(e)[:500]
                 await db.commit()
             print(f"Pipeline error for {observation_id}: {e}")
 
