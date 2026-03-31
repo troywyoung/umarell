@@ -46,6 +46,10 @@ export function useObservations() {
   const pollObservation = useCallback(async (id: string): Promise<Observation | null> => {
     try {
       const resp = await fetch(`${API}/observations/${id}`);
+      if (resp.status === 404) {
+        setObservations((prev) => prev.filter((o) => o.id !== id));
+        return null;
+      }
       if (!resp.ok) return null;
       const obs: Observation = await resp.json();
       setObservations((prev) => prev.map((o) => (o.id === id ? obs : o)));

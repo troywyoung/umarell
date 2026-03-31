@@ -701,6 +701,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
         if (updated.status === "complete" || updated.status === "error") {
           if (pollRef.current) clearInterval(pollRef.current);
         }
+      } else {
+        // Observation was deleted (error auto-delete) — go back to feed
+        if (pollRef.current) clearInterval(pollRef.current);
+        onBack();
       }
     }, 2500);
     return () => { if (pollRef.current) clearInterval(pollRef.current); };
