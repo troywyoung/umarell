@@ -171,15 +171,15 @@ const EVIDENCE_COLORS: Record<string, { bg: string; color: string }> = {
   Speculative:   { bg: "#F3E5F5", color: "#6A1B9A" },
 };
 
-function EvidenceBadge({ value }: { value?: string }) {
+function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "lg" }) {
   if (!value) return null;
   const c = EVIDENCE_COLORS[value] || { bg: "#F0F0ED", color: "#666" };
   return (
     <span style={{
       display: "inline-block",
       background: c.bg, color: c.color,
-      fontSize: 11, fontWeight: 700,
-      padding: "3px 9px", borderRadius: 100, letterSpacing: 0.3,
+      fontSize: size === "lg" ? 11 : 8, fontWeight: 700,
+      padding: size === "lg" ? "3px 9px" : "1px 6px", borderRadius: 100, letterSpacing: 0.3,
     }}>
       {value}
     </span>
@@ -192,7 +192,7 @@ function ScoreBadge({ value }: { value?: number }) {
   const bg = value >= 70 ? "#E8F5E9" : value >= 40 ? "#FFF3E0" : "#F3E5F5";
   return (
     <span style={{
-      fontSize: 11, fontWeight: 700, color,
+      fontSize: 11, fontWeight: 700, color, letterSpacing: -0.3,
       background: bg, borderRadius: 100, padding: "3px 9px",
     }}>
       {value}/100
@@ -313,7 +313,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                   <p style={{
                     fontSize: 12, fontWeight: 700, color: "#1A1A1A",
                     lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
-                    overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical",
+                    overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
                   }}>
                     {obs.thesis || obs.raw_input}
                   </p>
@@ -867,7 +867,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
         {/* Metadata row: evidence type, score, tags */}
         {obs.status === "complete" && (obs.evidence_type || obs.score != null || obs.tags?.length) && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center", marginBottom: 20 }}>
-            <EvidenceBadge value={obs.evidence_type} />
+            <EvidenceBadge value={obs.evidence_type} size="lg" />
             <ScoreBadge value={obs.score} />
             {obs.tags?.map((tag) => (
               <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "3px 9px", fontWeight: 600 }}>{tag}</span>
