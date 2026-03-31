@@ -1,7 +1,14 @@
+import os
 import sqlalchemy as sa
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from sqlalchemy.orm import DeclarativeBase
 from config import settings
+
+# Ensure DB directory exists for SQLite
+_db_url = settings.database_url
+if _db_url.startswith("sqlite"):
+    _path = _db_url.split("///")[-1]
+    os.makedirs(os.path.dirname(_path) or ".", exist_ok=True)
 
 engine = create_async_engine(settings.database_url, echo=False)
 AsyncSessionLocal = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
