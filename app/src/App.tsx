@@ -237,7 +237,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
               width: 32, height: 32, borderRadius: "50%",
               background: "#E53935", border: "none", cursor: "pointer",
               display: "flex", alignItems: "center", justifyContent: "center",
-              fontSize: 20, color: "#fff", lineHeight: 1, padding: 0,
+              fontSize: 22, fontWeight: 800, color: "#fff", lineHeight: 1, padding: "0 0 1px 0",
               WebkitTapHighlightColor: "transparent",
             }}
           >+</button>
@@ -355,7 +355,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
           background: "#E53935", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
           boxShadow: "0 4px 20px rgba(229,57,53,0.35)",
-          fontSize: 32, color: "#fff", lineHeight: "1",
+          fontSize: 36, fontWeight: 800, color: "#fff", lineHeight: 1, paddingBottom: 2,
           WebkitTapHighlightColor: "transparent",
         }}
       >+</button>
