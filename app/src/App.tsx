@@ -361,15 +361,13 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete }: {
                     {obs.tags?.map((tag) => (
                       <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
                     ))}
+                    {obs.status === "complete" && obs.thesis && (
+                      <span style={{ marginLeft: "auto" }}>
+                        <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
+                      </span>
+                    )}
                   </div>
                 </div>
-
-                {/* Share — bottom right */}
-                {obs.status === "complete" && obs.thesis && (
-                  <div style={{ position: "absolute", bottom: 12, right: 12 }}>
-                    <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
-                  </div>
-                )}
 
                 <button
                   onClick={(e) => {
@@ -1093,7 +1091,7 @@ function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.Mo
         <polyline points="16 6 12 2 8 6" />
         <line x1="12" y1="2" x2="12" y2="15" />
       </svg>
-      {copied ? "Copied!" : "Share"}
+      {copied ? "Copied!" : ""}
     </button>
   );
 }

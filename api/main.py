@@ -72,20 +72,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
 
 @app.get("/health")
 async def health():
-    import os, glob
-    db_path = settings.database_url.split("///")[-1]
-    db_dir = os.path.dirname(db_path) or "."
-    return {
-        "status": "ok",
-        "database_url": settings.database_url,
-        "db_path": db_path,
-        "db_exists": os.path.exists(db_path),
-        "db_size": os.path.getsize(db_path) if os.path.exists(db_path) else 0,
-        "volume_mounted": os.path.ismount("/app/data"),
-        "app_data_contents": os.listdir("/app/data") if os.path.exists("/app/data") else "NOT FOUND",
-        "cwd": os.getcwd(),
-        "all_db_files": glob.glob("/app/**/*.db", recursive=True),
-    }
+    return {"status": "ok"}
 
 
 @app.post("/observations", response_model=ObservationOut, status_code=201)
