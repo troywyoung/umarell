@@ -223,13 +223,20 @@ function ScoreBadge({ value, size = "md", dark = false }: { value?: number; size
 }
 
 function timeAgo(iso: string) {
-  const diff = Date.now() - new Date(iso).getTime();
+  // Ensure UTC parsing — append Z if no timezone offset present
+  const normalized = /[Z+\-]\d*$/.test(iso.trim()) ? iso : iso + "Z";
+  const diff = Date.now() - new Date(normalized).getTime();
   const m = Math.floor(diff / 60_000);
   if (m < 1) return "just now";
   if (m < 60) return `${m}m ago`;
   const h = Math.floor(m / 60);
   if (h < 24) return `${h}h ago`;
-  return `${Math.floor(h / 24)}d ago`;
+  const d = Math.floor(h / 24);
+  if (d < 7) return `${d}d ago`;
+  const date = new Date(normalized);
+  const now = new Date();
+  const sameYear = date.getFullYear() === now.getFullYear();
+  return date.toLocaleDateString("en-US", { month: "short", day: "numeric", ...(!sameYear && { year: "numeric" }) });
 }
 
 // ─── Episode Section ─────────────────────────────────────────────────────
