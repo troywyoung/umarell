@@ -244,6 +244,55 @@ function timeAgo(iso: string) {
   return `${Math.floor(h / 24)}d ago`;
 }
 
+// ─── Episode Section ─────────────────────────────────────────────────────
+
+function EpisodeSection({ title, observations, onSelect, onDelete, authUser, challengeMap, renderCard, renderChallenge }: {
+  title: string;
+  observations: Observation[];
+  onSelect: (o: Observation) => void;
+  onDelete: (id: string) => void;
+  authUser: { id: string };
+  challengeMap: Map<string, Observation[]>;
+  renderCard: (obs: Observation) => React.ReactNode;
+  renderChallenge: (c: Observation) => React.ReactNode;
+}) {
+  const [expanded, setExpanded] = useState(true);
+  return (
+    <div style={{ marginTop: 20 }}>
+      <div
+        onClick={() => setExpanded(!expanded)}
+        style={{
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          padding: "10px 0 8px", cursor: "pointer",
+          borderTop: "1px solid rgba(255,255,255,0.08)",
+          WebkitTapHighlightColor: "transparent",
+        }}
+      >
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <span style={{ fontSize: 10, fontWeight: 800, color: "#FF00AE", letterSpacing: 0.5, textTransform: "uppercase" }}>PvA</span>
+          <span style={{ fontSize: 14, fontWeight: 700, color: "#FFF", letterSpacing: -0.3 }}>{title}</span>
+          <span style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", fontWeight: 600 }}>{observations.length}</span>
+        </div>
+        <span style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", transition: "transform 0.2s", transform: expanded ? "rotate(0deg)" : "rotate(-90deg)" }}>▼</span>
+      </div>
+      {expanded && observations.map(obs => {
+        const children = (challengeMap.get(obs.id) || [])
+          .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+        return (
+          <div key={obs.id} style={{ marginBottom: 10 }}>
+            {renderCard(obs)}
+            {children.map(c => (
+              <div key={c.id} style={{ marginTop: 4 }}>
+                {renderChallenge(c)}
+              </div>
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 // ─── Home ─────────────────────────────────────────────────────────────────
 
 function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUser, onSignOut }: {
@@ -425,20 +474,39 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             </div>
           );
 
-          return topLevel.map(obs => {
-            const children = (challengeMap.get(obs.id) || [])
-              .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
-            return (
-              <div key={obs.id} style={{ marginBottom: 10 }}>
-                {renderCard(obs)}
-                {children.map(c => (
-                  <div key={c.id} style={{ marginTop: 4 }}>
-                    {renderChallenge(c)}
-                  </div>
-                ))}
-              </div>
-            );
+          // Split into regular posts and episode posts
+          const regularPosts = topLevel.filter(o => !o.episode_tag);
+          const episodeMap = new Map<string, { title: string; obs: Observation[] }>();
+          topLevel.filter(o => !!o.episode_tag).forEach(o => {
+            const existing = episodeMap.get(o.episode_tag!) || { title: o.episode_title || o.episode_tag!, obs: [] };
+            existing.obs.push(o);
+            episodeMap.set(o.episode_tag!, existing);
           });
+
+          return (
+            <>
+              {/* Regular user posts */}
+              {regularPosts.map(obs => {
+                const children = (challengeMap.get(obs.id) || [])
+                  .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+                return (
+                  <div key={obs.id} style={{ marginBottom: 10 }}>
+                    {renderCard(obs)}
+                    {children.map(c => (
+                      <div key={c.id} style={{ marginTop: 4 }}>
+                        {renderChallenge(c)}
+                      </div>
+                    ))}
+                  </div>
+                );
+              })}
+
+              {/* Episode sections */}
+              {[...episodeMap.entries()].map(([tag, { title, obs: epObs }]) => (
+                <EpisodeSection key={tag} title={title} observations={epObs} onSelect={onSelect} onDelete={onDelete} authUser={authUser} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
+              ))}
+            </>
+          );
         })()}
       </div>
 

@@ -65,6 +65,8 @@ async def lifespan(app: FastAPI):
             ("challenge_type", "TEXT"),
             ("bs_score", "REAL"),
             ("bs_verdict", "TEXT"),
+            ("episode_tag", "TEXT"),
+            ("episode_title", "TEXT"),
         ]:
             try:
                 await db.execute(text(f"ALTER TABLE observations ADD COLUMN {col} {definition}"))
@@ -263,7 +265,8 @@ async def _attach_user_names(db: AsyncSession, observations: list[Observation]) 
     out = []
     for o in observations:
         d = ObservationOut.model_validate(o).model_dump()
-        d["user_name"] = user_map.get(o.user_id) if o.user_id else None
+        # Episode posts show "PvA", regular posts show the user's name
+        d["user_name"] = "PvA" if o.episode_tag else (user_map.get(o.user_id) if o.user_id else None)
         # Parse pva_take from briefing field
         if o.briefing:
             try:
@@ -483,3 +486,39 @@ async def delete_observation(
         raise HTTPException(403, "You can only delete your own observations")
     await db.delete(obs)
     await db.commit()
+
+
+# ─── Episode seed ───────────────────────────────────────────────────────────
+
+class EpisodeSeed(BaseModel):
+    episode_title: str          # "The War on Slop"
+    episode_tag: str            # "the-war-on-slop"
+    claims: list[str]           # 5 raw claims to steelman
+    author_name: str = "PvA"   # displayed as user_name
+
+
+@app.post("/episodes/seed")
+async def seed_episode(
+    body: EpisodeSeed,
+    db: AsyncSession = Depends(get_db),
+    current_user: User = Depends(require_user),
+):
+    """Create multiple observations for an episode, each runs through the pipeline."""
+    created = []
+    for claim in body.claims:
+        obs = Observation(
+            raw_input=claim,
+            input_type="text",
+            thesis=claim[:200],
+            status="formatting",
+            model_used=ACTIVE_MODEL,
+            user_id=current_user.id,
+            episode_tag=body.episode_tag,
+            episode_title=body.episode_title,
+        )
+        db.add(obs)
+        await db.commit()
+        await db.refresh(obs)
+        asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type))
+        created.append(obs.id)
+    return {"episode_tag": body.episode_tag, "observations": created, "count": len(created)}

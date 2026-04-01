@@ -53,4 +53,6 @@ class Observation(Base):
     challenge_type: Mapped[str | None] = mapped_column(String, nullable=True)  # "counter" | "bullshit" | None
     bs_score: Mapped[float | None] = mapped_column(Float, nullable=True)  # 0-100, 100 = total BS
     bs_verdict: Mapped[str | None] = mapped_column(Text, nullable=True)  # one punchy line
+    episode_tag: Mapped[str | None] = mapped_column(String, nullable=True, index=True)  # e.g. "the-war-on-slop"
+    episode_title: Mapped[str | None] = mapped_column(String, nullable=True)  # e.g. "The War on Slop"
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)

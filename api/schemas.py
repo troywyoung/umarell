@@ -38,4 +38,6 @@ class ObservationOut(BaseModel):
     bs_score: Optional[float] = None
     bs_verdict: Optional[str] = None
     pva_take: Optional[dict] = None
+    episode_tag: Optional[str] = None
+    episode_title: Optional[str] = None
     created_at: datetime
