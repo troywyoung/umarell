@@ -36,34 +36,12 @@ function getRandomPlaceholder() {
   return PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)];
 }
 
-// Randomize scribble position on each load
-// Scribble can appear from any edge: left, top, or right.
-// Always partially off-screen (30-70% cropped), visible part never clipped.
-function getRandomScribblePos() {
-  const isMobile = window.innerWidth < 600;
-  const size = isMobile ? 98 : 49; // vw — 30% smaller
-  const cropPct = 30 + Math.random() * 40; // crop 30-70%
-  const edge = Math.floor(Math.random() * 3); // 0=left, 1=top, 2=right
-  // Never above the logo — keep top >= 15vh so feed text stays readable
-  const minTop = 15;
-
-  if (edge === 0) {
-    // Left edge — image extends off the left, visible part stays in viewport
-    const left = -(cropPct / 100) * size;
-    const top = minTop + Math.random() * 50;
-    return { top: `${top}vh`, left: `${left}vw`, size };
-  } else if (edge === 1) {
-    // Top edge — image extends off the top, visible part below logo
-    const top = -(cropPct / 100) * size + minTop;
-    const left = -(cropPct / 100) * size * 0.3 + Math.random() * 30;
-    return { top: `${top}vw`, left: `${left}vw`, size };
-  } else {
-    // Right edge — image extends off the right, visible part stays in viewport
-    const left = 100 - ((100 - cropPct) / 100) * size;
-    const top = minTop + Math.random() * 50;
-    return { top: `${top}vh`, left: `${left}vw`, size };
-  }
-}
+const SCRIBBLE_STYLE: React.CSSProperties = {
+  position: "fixed", bottom: 0, left: 0,
+  width: "60vw", maxWidth: 340,
+  transform: "translate(-20%, 20%)",
+  pointerEvents: "none", zIndex: 0,
+};
 
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
 
@@ -345,16 +323,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   authUser: { id: string; name: string; avatar: string | null };
   onSignOut: () => void;
 }) {
-  const [scribblePos] = useState(() => getRandomScribblePos());
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
-      {/* Scribble — cropped from top, random position each load */}
-      <img
-        src="/scribble.png"
-        style={{
-          position: "fixed", top: scribblePos.top, left: scribblePos.left, width: `${scribblePos.size}vw`, pointerEvents: "none", zIndex: 0,
-        }}
-      />
+      <img src="/scribble.png" style={SCRIBBLE_STYLE} />
       <div style={{
         padding: "14px 20px 10px",
         borderBottom: "1px solid rgba(255,255,255,0.08)",
@@ -468,7 +439,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   padding: "6px 12px 10px",
                   borderTop: "1px solid #F5F5F2",
                 }}>
-                  <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 5, flexWrap: "wrap", flex: 1 }}>
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", alignContent: "flex-start", gap: 5, flexWrap: "wrap", flex: 1 }}>
                     <span style={{ fontSize: 8, fontWeight: 600, color: "rgba(255,255,255,0.35)", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
                     <EvidenceBadge value={obs.evidence_type} />
                     {obs.tags?.map((tag: string) => (
@@ -1477,7 +1448,6 @@ export default function App() {
   });
   const [authLoading, setAuthLoading] = useState(false);
   const [authError, setAuthError] = useState<string | null>(null);
-  const [loginScribblePos] = useState(() => getRandomScribblePos());
 
   const handleGoogleSuccess = async (credentialResponse: { credential?: string }) => {
     if (!credentialResponse.credential) return;
@@ -1547,14 +1517,7 @@ export default function App() {
   if (!authUser) {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative" }}>
-        {/* Scribble on login */}
-        <img
-          src="/scribble.png"
-          style={{
-            position: "fixed", top: loginScribblePos.top, left: loginScribblePos.left,
-            width: `${loginScribblePos.size}vw`, pointerEvents: "none", zIndex: 0,
-          }}
-        />
+        <img src="/scribble.png" style={SCRIBBLE_STYLE} />
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
