@@ -21,12 +21,17 @@ from config import settings
 bearer = HTTPBearer(auto_error=False)
 
 
+def _is_admin(user: User) -> bool:
+    return bool(settings.admin_email and user.email and user.email.lower() == settings.admin_email.lower())
+
+
 def _make_jwt(user: User) -> str:
     payload = {
         "sub": user.id,
         "name": user.name,
         "email": user.email,
         "avatar": user.avatar_url,
+        "is_admin": _is_admin(user),
         "exp": datetime.now(timezone.utc) + timedelta(days=settings.jwt_expire_days),
     }
     return jwt.encode(payload, settings.jwt_secret, algorithm="HS256")
@@ -209,12 +214,12 @@ async def auth_google(body: GoogleAuthBody, db: AsyncSession = Depends(get_db)):
         user.avatar_url = info.get("picture", user.avatar_url)
         await db.commit()
 
-    return {"token": _make_jwt(user), "user": {"id": user.id, "name": user.name, "avatar": user.avatar_url}}
+    return {"token": _make_jwt(user), "user": {"id": user.id, "name": user.name, "avatar": user.avatar_url, "is_admin": _is_admin(user)}}
 
 
 @app.get("/auth/me")
 async def auth_me(user: User = Depends(require_user)):
-    return {"id": user.id, "name": user.name, "avatar": user.avatar_url, "email": user.email}
+    return {"id": user.id, "name": user.name, "avatar": user.avatar_url, "email": user.email, "is_admin": _is_admin(user)}
 
 
 # ─── Health ──────────────────────────────────────────────────────────────────
@@ -313,7 +318,7 @@ async def edit_observation(
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
-    if obs.user_id and current_user and obs.user_id != current_user.id:
+    if obs.user_id and current_user and obs.user_id != current_user.id and not _is_admin(current_user):
         raise HTTPException(403, "You can only edit your own observations")
     obs.raw_input = body.raw_input
     obs.input_type = body.input_type
@@ -482,7 +487,7 @@ async def delete_observation(
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
-    if obs.user_id and current_user and obs.user_id != current_user.id:
+    if obs.user_id and current_user and obs.user_id != current_user.id and not _is_admin(current_user):
         raise HTTPException(403, "You can only delete your own observations")
     await db.delete(obs)
     await db.commit()

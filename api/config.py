@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     google_client_id: str = ""
     jwt_secret: str = "change-me-in-production"
     jwt_expire_days: int = 30
+    admin_email: str = ""  # Set to your Google account email for master admin access
 
 
 settings = Settings()

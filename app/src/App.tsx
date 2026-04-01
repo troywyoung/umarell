@@ -321,7 +321,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   onCapture: () => void;
   onSelect: (o: Observation) => void;
   onDelete: (id: string) => void;
-  authUser: { id: string; name: string; avatar: string | null };
+  authUser: AuthUser;
   onSignOut: () => void;
 }) {
   return (
@@ -412,7 +412,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     {obs.thesis || obs.raw_input}
                   </p>
                   <ScoreBadge value={obs.score} size="sm" dark />
-                  {(!obs.user_id || obs.user_id === authUser.id) && (
+                  {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin) && (
                     <button
                       onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steelman?")) onDelete(obs.id); }}
                       style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
@@ -834,7 +834,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
 
 // ─── Output ───────────────────────────────────────────────────────────────
 
-function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObservation, requestCounterpoint, requestPvaTake, authUserId }: {
+function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObservation, requestCounterpoint, requestPvaTake, authUserId, isAdmin }: {
   obs: Observation;
   onBack: () => void;
   onResubmit: (obsId: string, text: string, imageData?: string, imageMediaType?: string) => Promise<void>;
@@ -843,6 +843,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   requestCounterpoint: (id: string) => Promise<import("./types").Counterpoint | null>;
   requestPvaTake: (id: string, voice?: string) => Promise<import("./types").PvaTake | null>;
   authUserId?: string;
+  isAdmin?: boolean;
 }) {
   const [obs, setObs] = useState(initialObs);
   const [counterpointLoading, setCounterpointLoading] = useState(false);
@@ -981,7 +982,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
   const isProcessing = obs.status === "formatting" || obs.status === "researching" || resubmitting;
   const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
-  const isOwner = !obs.user_id || obs.user_id === authUserId;
+  const isOwner = !obs.user_id || obs.user_id === authUserId || !!isAdmin;
 
   // Parse summary — handles new JSON format {bottom_line, hard_facts, bullets} and legacy plain text
   let steelBottomLine = "";
@@ -1456,7 +1457,7 @@ function ProcessingDots({ color = "#6666CC" }: { color?: string }) {
 
 type View = "home" | "capture" | "output";
 
-interface AuthUser { id: string; name: string; avatar: string | null; }
+interface AuthUser { id: string; name: string; avatar: string | null; is_admin?: boolean; }
 
 export default function App() {
   const [authUser, setAuthUser] = useState<AuthUser | null>(() => {
@@ -1630,6 +1631,7 @@ export default function App() {
         requestCounterpoint={requestCounterpoint}
         requestPvaTake={requestPvaTake}
         authUserId={authUser.id}
+        isAdmin={!!authUser.is_admin}
       />
     );
   }
