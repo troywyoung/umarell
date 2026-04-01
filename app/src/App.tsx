@@ -253,7 +253,6 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
     const t = new Date(o.created_at).getTime();
     return t < min ? t : min;
   }, Infinity);
-  const dateStr = isFinite(earliest) ? new Date(earliest).toLocaleDateString("en-US", { month: "long", day: "numeric" }) : "";
   const first = observations[0];
   const rest = observations.slice(1);
 
