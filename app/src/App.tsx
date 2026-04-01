@@ -315,6 +315,18 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
 
 // ─── Category mapping ────────────────────────────────────────────────────
 
+const CATEGORY_PRIORITY: Record<string, number> = {
+  "Politics":        0,
+  "Business":        1,
+  "Media":           2,
+  "AI & Tech":       3,
+  "Health & Science":4,
+  "Entertainment":   5,
+  "Sports":          6,
+  "History":         7,
+  "Other":           99,
+};
+
 function getCategory(tags: string[] | null | undefined, thesis?: string): string {
   // Use tags if present, otherwise fall back to thesis text
   const words = (tags && tags.length > 0 ? tags : [thesis || ""])
@@ -545,12 +557,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             categoryMap.set(cat, arr);
           });
 
-          // Sort categories by most recent post — "Other" always last
+          // Sort by fixed priority order; unknown categories go before Other
           const sortedCategories = [...categoryMap.entries()]
             .sort((a, b) => {
-              if (a[0] === "Other") return 1;
-              if (b[0] === "Other") return -1;
-              return Math.max(...b[1].map(i => i.time)) - Math.max(...a[1].map(i => i.time));
+              const pa = CATEGORY_PRIORITY[a[0]] ?? 50;
+              const pb = CATEGORY_PRIORITY[b[0]] ?? 50;
+              return pa - pb;
             });
 
           const renderPost = (item: typeof posts[0]) => {
