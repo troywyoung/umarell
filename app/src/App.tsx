@@ -36,6 +36,17 @@ function getRandomPlaceholder() {
   return PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)];
 }
 
+// Randomize scribble position on each load
+// showPct: 20–70% visible (rest cropped off top)
+// horizontalPct: 10–90% across viewport
+function getRandomScribblePos() {
+  const showPct = 20 + Math.random() * 50; // 20% to 70% visible
+  const cropPct = 100 - showPct;
+  const top = -(cropPct / 100) * 130; // vw units since image is 130vw
+  const horizontalPct = 10 + Math.random() * 80; // 10% to 90%
+  return { top: `${top}vw`, left: `${horizontalPct}%` };
+}
+
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
 
 // Nodes and edges — organic, asymmetric constellation
@@ -228,13 +239,14 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   authUser: { id: string; name: string; avatar: string | null };
   onSignOut: () => void;
 }) {
+  const [scribblePos] = useState(() => getRandomScribblePos());
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative" }}>
-      {/* Scribble image — emanates from top, cropped 30% off top */}
+      {/* Scribble image — random position each load, always cropped */}
       <img
         src="/scribble.png"
         style={{
-          position: "fixed", top: "-15vw", left: "50%", transform: "translateX(-50%)",
+          position: "fixed", top: scribblePos.top, left: scribblePos.left, transform: "translateX(-50%)",
           width: "130vw", pointerEvents: "none", zIndex: 0,
         }}
       />
@@ -1216,6 +1228,7 @@ export default function App() {
   });
   const [authLoading, setAuthLoading] = useState(false);
   const [authError, setAuthError] = useState<string | null>(null);
+  const [loginScribblePos] = useState(() => getRandomScribblePos());
 
   const handleGoogleSuccess = async (credentialResponse: { credential?: string }) => {
     if (!credentialResponse.credential) return;
@@ -1285,11 +1298,11 @@ export default function App() {
   if (!authUser) {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative", overflow: "hidden" }}>
-        {/* Scribble on login — emanates from top, cropped 30% */}
+        {/* Scribble on login — random position each load */}
         <img
           src="/scribble.png"
           style={{
-            position: "fixed", top: "-15vw", left: "50%", transform: "translateX(-50%)",
+            position: "fixed", top: loginScribblePos.top, left: loginScribblePos.left, transform: "translateX(-50%)",
             width: "130vw", pointerEvents: "none", zIndex: 0,
           }}
         />
