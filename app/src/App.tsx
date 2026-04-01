@@ -1310,12 +1310,12 @@ export default function App() {
   if (!authUser) {
     return (
       <div style={{ minHeight: "100dvh", background: "#0F0F0F", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32 }}>
-        <div style={{ marginBottom: 32 }}>
+        <div style={{ marginBottom: 10 }}>
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
         <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center" }}>Steelman</h1>
-        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
-          A <strong style={{ color: "rgba(255,255,255,0.7)" }}>STEELMAN</strong> is the strongest argument for an idea.
+        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, whiteSpace: "nowrap" }}>
+          A <strong style={{ color: "rgba(255,255,255,0.7)" }}>Steelman</strong> is the strongest argument for an idea.
         </p>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
           <strong style={{ color: "rgba(255,255,255,0.7)" }}>Drop in any claim.</strong><br />We build the case.<br />
