@@ -303,10 +303,17 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
             WebkitTapHighlightColor: "transparent",
           }}
         >
+          {!expanded && (
+            <span style={{
+              display: "inline-block", width: 7, height: 7, borderRadius: "50%",
+              background: "#FF00AE", flexShrink: 0,
+              animation: "redDotPulse 2s ease-in-out infinite",
+            }} />
+          )}
           <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE" }}>
-            {expanded ? "Show less" : `+${rest.length} more steelmans`}
+            {expanded ? "Show less" : `Expand for ${rest.length} more bundle SMs`}
           </span>
-          <span style={{ fontSize: 10, color: "#FF00AE", transition: "transform 0.2s", transform: expanded ? "rotate(180deg)" : "rotate(0deg)" }}>▼</span>
+          {expanded && <span style={{ fontSize: 10, color: "#FF00AE", transition: "transform 0.2s", transform: "rotate(180deg)" }}>▼</span>}
         </div>
       )}
     </div>
