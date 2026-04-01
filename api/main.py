@@ -12,7 +12,7 @@ from pydantic import BaseModel
 from database import init_db, get_db, AsyncSessionLocal
 from models import Observation, User
 from schemas import ObservationCreate, ObservationOut
-from pipeline import format_thesis, generate_steel_man, generate_stress_test, generate_metadata, call_bullshit, negate_thesis, ACTIVE_MODEL
+from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_metadata, call_bullshit, negate_thesis, ACTIVE_MODEL
 from config import settings
 
 
@@ -113,8 +113,9 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
                         parent_context += f"\n\nORIGINAL STEEL MAN:\n{parent.summary}"
 
             if parent_context:
-                challenge_input = f"{parent_context}\n\nCOUNTER-ARGUMENT: {raw_input}"
-                thesis = await format_thesis(challenge_input, "text", None, image_media_type)
+                parent_thesis = parent_context.split("\n")[0].replace("ORIGINAL CLAIM: ", "")
+                thesis = await format_challenge_thesis(raw_input, parent_thesis)
+                print(f"[pipeline] challenge thesis: {thesis[:100]}")
             else:
                 thesis = await format_thesis(raw_input, input_type, image_b64, image_media_type)
 

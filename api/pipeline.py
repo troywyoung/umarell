@@ -298,6 +298,22 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
     )
 
 
+async def format_challenge_thesis(raw_input: str, parent_thesis: str) -> str:
+    """Turn a challenge's raw input into a thesis that directly opposes the parent."""
+    return await _call(
+        system=(
+            "You are a sharp debate editor. The user is CHALLENGING an existing claim. "
+            "Convert their counter-argument into a punchy thesis that OPPOSES the original claim. "
+            "Rules: (1) The thesis must DISAGREE with the original claim. "
+            "(2) Preserve the user's exact intent — if they say 'he's a crook', the thesis should say he's a crook. "
+            "(3) Reference the specific subject from the original claim (names, topics) even if the user didn't. "
+            "(4) Max 1 sentence. No preamble. Output only the thesis."
+        ),
+        user=f"ORIGINAL CLAIM: {parent_thesis}\n\nUSER'S COUNTER-ARGUMENT: {raw_input}",
+        max_tokens=200,
+    )
+
+
 async def generate_steel_man(thesis: str, challenge_context: str | None = None) -> tuple[str, list[dict]]:
     """Generate 4-5 punchy bullet points making the strongest case FOR the thesis.
     Returns (steel_man_text, sources) where sources is a list of {url, title} dicts."""
