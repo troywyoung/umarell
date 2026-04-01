@@ -304,7 +304,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </div>
       </div>
 
-      <div style={{ padding: "12px 16px 0" }}>
+      <div style={{ padding: "12px 16px 0", position: "relative", zIndex: 1 }}>
         {observations.length === 0 && !loading ? null : (() => {
           const topLevel = [...observations]
             .filter(o => !o.parent_id)
@@ -431,7 +431,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           width: 68, height: 68, borderRadius: "50%",
           background: "#E53935", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
-          boxShadow: "0 0 12px rgba(229,57,53,0.4)",
+          boxShadow: "0 0 12px rgba(229,57,53,0.4)", zIndex: 2,
           fontSize: 36, fontWeight: 800, color: "#fff", lineHeight: 1, paddingBottom: 2,
           WebkitTapHighlightColor: "transparent",
           animation: "fabPulse 2s ease-in-out infinite",
