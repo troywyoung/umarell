@@ -220,17 +220,31 @@ function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "
   );
 }
 
-function ScoreBadge({ value }: { value?: number }) {
+function ScoreBadge({ value, size = "md" }: { value?: number; size?: "sm" | "md" | "lg" }) {
   if (value == null) return null;
-  const color = value >= 70 ? "#2E7D32" : value >= 40 ? "#E65100" : "#6A1B9A";
-  const bg = value >= 70 ? "#E8F5E9" : value >= 40 ? "#FFF3E0" : "#F3E5F5";
+  const v = Math.round(value);
+  const accent = v >= 70 ? "#4CAF50" : v >= 40 ? "#FF9800" : "#FF00AE";
+  const dim = size === "sm" ? 28 : size === "lg" ? 44 : 36;
+  const fontSize = size === "sm" ? 10 : size === "lg" ? 16 : 13;
+  const labelSize = size === "sm" ? 0 : size === "lg" ? 8 : 7;
+  const pct = v / 100;
+  const r = (dim - 4) / 2;
+  const circ = 2 * Math.PI * r;
   return (
-    <span style={{
-      fontSize: 11, fontWeight: 700, color, letterSpacing: -0.3,
-      background: bg, borderRadius: 100, padding: "3px 9px",
-    }}>
-      {value}/100
-    </span>
+    <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
+      <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)" }}>
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth={2.5} />
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={accent} strokeWidth={2.5}
+          strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round" />
+      </svg>
+      <div style={{
+        position: "absolute", inset: 0, display: "flex", flexDirection: "column",
+        alignItems: "center", justifyContent: "center",
+      }}>
+        <span style={{ fontSize, fontWeight: 800, color: "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{v}</span>
+        {labelSize > 0 && <span style={{ fontSize: labelSize, fontWeight: 600, color: "rgba(255,255,255,0.35)", lineHeight: 1, marginTop: 1 }}>score</span>}
+      </div>
+    </div>
   );
 }
 
@@ -423,16 +437,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   }}>
                     {obs.thesis || obs.raw_input}
                   </p>
-                  {obs.score != null && (
-                    <span style={{
-                      fontSize: 9, fontWeight: 800, flexShrink: 0,
-                      background: obs.score >= 70 ? "#E8F5E9" : obs.score >= 40 ? "#FFF3E0" : "#F3E5F5",
-                      color: obs.score >= 70 ? "#2E7D32" : obs.score >= 40 ? "#E65100" : "#6A1B9A",
-                      padding: "2px 6px", borderRadius: 4, letterSpacing: 0.2,
-                    }}>
-                      {Math.round(obs.score)}
-                    </span>
-                  )}
+                  <ScoreBadge value={obs.score} size="sm" />
                   {(!obs.user_id || obs.user_id === authUser.id) && (
                     <button
                       onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steelman?")) onDelete(obs.id); }}
@@ -1167,7 +1172,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {obs.status === "complete" && (obs.evidence_type || obs.score != null || obs.tags?.length) && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center", marginBottom: 20 }}>
             <EvidenceBadge value={obs.evidence_type} size="lg" />
-            <ScoreBadge value={obs.score} />
+            <ScoreBadge value={obs.score} size="lg" />
             {obs.tags?.map((tag) => (
               <span key={tag} style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", background: "rgba(255,255,255,0.08)", borderRadius: 100, padding: "3px 9px", fontWeight: 600 }}>{tag}</span>
             ))}
