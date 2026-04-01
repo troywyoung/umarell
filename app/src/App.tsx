@@ -405,9 +405,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
             <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Steelman<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
           </span>
-          <button onClick={onAbout} style={{ background: "none", border: "none", padding: "2px 0 0 42px", cursor: "pointer", textAlign: "left", WebkitTapHighlightColor: "transparent" }}>
-            <span style={{ fontSize: 10, color: "rgba(255,255,255,0.35)", textDecoration: "underline", textDecorationColor: "rgba(255,255,255,0.2)", fontFamily: "inherit" }}>what is this thing?</span>
-          </button>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
@@ -417,6 +414,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           }
         </div>
       </div>
+
+      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 7, width: "100%", background: "none", border: "none", padding: "10px 0 6px", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
+        <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#FF00AE", flexShrink: 0 }} />
+        <span style={{ fontSize: 12, fontWeight: 600, color: "#FFF", fontFamily: "inherit" }}>what is this thing?</span>
+      </button>
 
       <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
         {observations.length === 0 && !loading && (
