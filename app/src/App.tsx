@@ -37,13 +37,13 @@ function getRandomPlaceholder() {
 }
 
 // Randomize scribble position on each load
-// showPct: 20–70% visible (rest cropped off top)
-// horizontalPct: random across viewport
+// Center of scribble is off-screen left. Only right portion visible.
+// Center can be anywhere from top-left corner to bottom-left corner.
 function getRandomScribblePos() {
-  const showPct = 30 + Math.random() * 40; // 30% to 70% visible
-  const cropVw = ((100 - showPct) / 100) * 70; // vw to push off left (image is 70vw)
-  const verticalPct = 5 + Math.random() * 30; // 5% to 35% down from top
-  return { top: `${verticalPct}%`, left: `${-cropVw}vw` };
+  const cropPct = 30 + Math.random() * 40; // crop 30-70% off the left
+  const leftVw = -(cropPct / 100) * 70; // image is 70vw wide
+  const topVh = -20 + Math.random() * 70; // -20vh to 50vh (top-left to bottom-left)
+  return { top: `${topVh}vh`, left: `${leftVw}vw` };
 }
 
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
