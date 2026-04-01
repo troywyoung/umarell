@@ -255,9 +255,12 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
   return (
     <div style={{ margin: "6px 0" }}>
       {/* Episode header */}
-      <div style={{ padding: "4px 0 10px", borderTop: "1px solid rgba(255,255,255,0.12)" }}>
-        <p style={{ fontSize: window.innerWidth < 600 ? 18 : 16, fontWeight: 800, color: "#FFF", letterSpacing: -0.4, margin: 0 }}>
-          {title} <span style={{ color: "rgba(255,255,255,0.35)" }}>({observations.length} ideas)</span>
+      <div style={{ padding: "4px 0 6px", borderTop: "1px solid rgba(255,255,255,0.12)" }}>
+        <p
+          onClick={() => setExpanded(!expanded)}
+          style={{ fontSize: window.innerWidth < 600 ? 14 : 13, fontWeight: 800, color: "#FF00AE", letterSpacing: -0.3, margin: 0, textAlign: "center", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}
+        >
+          {title} <span style={{ color: "rgba(255,0,174,0.5)" }}>({observations.length} ideas)</span>
         </p>
       </div>
 
@@ -410,9 +413,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </div>
       </div>
 
-      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 7, width: "100%", background: "none", border: "none", padding: "10px 0 6px", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
-        <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#FF00AE", flexShrink: 0 }} />
-        <span style={{ fontSize: 12, fontWeight: 600, color: "#FFF", fontFamily: "inherit" }}>what is this thing?</span>
+      <button onClick={onAbout} style={{ display: "flex", alignItems: "flex-start", background: "none", border: "none", padding: "10px 16px 6px", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
+        <span style={{ fontSize: 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "rgba(255,255,255,0.4)" }}>(What is this thing?)</span>
       </button>
 
       <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
