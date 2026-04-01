@@ -412,9 +412,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 overflow: "hidden",
               }}
             >
-              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" style={{ flexShrink: 0 }}>
-                <circle cx="4.5" cy="5" r="4" stroke="#2C5ABA" strokeWidth="1.2" fill="none" />
-                <circle cx="9.5" cy="5" r="4" stroke="#2C5ABA" strokeWidth="1.2" fill="none" />
+              <svg width="16" height="12" viewBox="0 0 16 12" style={{ flexShrink: 0 }}>
+                <circle cx="5" cy="6" r="4.5" fill="rgba(229,57,53,0.6)" />
+                <circle cx="11" cy="6" r="4.5" fill="rgba(44,90,186,0.6)" />
               </svg>
               <span style={{ fontSize: 11, fontWeight: 800, color: "#2C5ABA", flexShrink: 0 }}>Challenge:</span>
               <span style={{ fontSize: 11, fontWeight: 600, color: "#1A1A1A", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis" }}>{c.thesis || c.raw_input}</span>
