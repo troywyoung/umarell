@@ -229,13 +229,14 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   onSignOut: () => void;
 }) {
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
-      {/* Scribble background — radiates from top center */}
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative" }}>
+      {/* Scribble background — full bleed fixed, like the old Pexels images */}
       <div style={{
-        position: "absolute", top: -60, left: "50%", transform: "translateX(-50%)",
-        width: 500, height: 500, pointerEvents: "none", zIndex: 0,
+        position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
         backgroundImage: "url(/scribble.png)",
-        backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center",
+        backgroundSize: "cover", backgroundPosition: "center top",
+        backgroundRepeat: "no-repeat",
+        zIndex: 0, pointerEvents: "none",
         opacity: 0.18,
       }} />
       <div style={{
@@ -1285,12 +1286,13 @@ export default function App() {
   if (!authUser) {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative", overflow: "hidden" }}>
-        {/* Scribble on login */}
+        {/* Scribble on login — full bleed */}
         <div style={{
-          position: "absolute", top: -60, left: "50%", transform: "translateX(-50%)",
-          width: 500, height: 500, pointerEvents: "none", zIndex: 0,
+          position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
           backgroundImage: "url(/scribble.png)",
-          backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center",
+          backgroundSize: "cover", backgroundPosition: "center top",
+          backgroundRepeat: "no-repeat",
+          zIndex: 0, pointerEvents: "none",
           opacity: 0.15,
         }} />
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
