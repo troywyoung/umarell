@@ -1221,7 +1221,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                     {i > 0 && <span style={{ margin: "0 4px" }}>·</span>}
                     <a href={src.url} target="_blank" rel="noopener noreferrer"
                       style={{ color: "rgba(255,255,255,0.45)", textDecoration: "none" }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = "#FF00AE")}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = "rgba(255,200,50,1)")}
                       onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
                     >{src.title || new URL(src.url).hostname}</a>
                   </span>
@@ -1353,20 +1353,12 @@ function HardFact({ item }: { item: HardFactItem | string }) {
     // legacy string format — strip inline source if present
     const match = item.match(/^(.*?)(\s*\([^)]+\))$/);
     if (!match) return <>{item}</>;
-    return <>{match[1]}<span style={{ color: "rgba(255,255,255,0.35)", fontSize: 11, fontStyle: "italic" }}>{match[2]}</span></>;
+    return <>{match[1]}<span style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, fontStyle: "italic" }}>{match[2]}</span></>;
   }
   return (
     <>
       {item.fact}{" "}
-      {item.url ? (
-        <a href={item.url} target="_blank" rel="noopener noreferrer"
-          style={{ color: "rgba(255,200,50,0.5)", fontSize: 11, fontStyle: "italic", textDecoration: "none" }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = "rgba(255,200,50,0.9)")}
-          onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,200,50,0.5)")}
-        >({item.source})</a>
-      ) : (
-        <span style={{ color: "rgba(255,200,50,0.5)", fontSize: 11, fontStyle: "italic" }}>({item.source})</span>
-      )}
+      <span style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, fontStyle: "italic" }}>({item.source})</span>
     </>
   );
 }

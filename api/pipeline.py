@@ -333,7 +333,7 @@ async def generate_steel_man(thesis: str, challenge_context: str | None = None) 
 Return a JSON object with exactly these keys:
 {
   "bottom_line": "1-2 sentences — the single strongest argument for this thesis. This is the headline takeaway.",
-  "hard_facts": [{"fact": "the data point as a plain sentence — no source embedded in the sentence", "source": "Source Name, Year", "url": "https://direct-link-to-source.com"}],
+  "hard_facts": [{"fact": "the data point as a plain sentence — no source embedded in the sentence", "source": "Source Name, Year"}],
   "bullets": ["3-5 evidence-backed arguments supporting the thesis — each 1-2 sentences max, cite real events, named examples, or studies"]
 }
 
@@ -470,7 +470,7 @@ Now tear this thesis apart. You are the opposing counsel. Build the most aggress
 Return a JSON object with exactly these keys:
 {
   "bottom_line": "1-2 sentences — the single strongest reason this thesis is wrong",
-  "hard_facts": [{"fact": "the data point as a plain sentence — no source embedded in the sentence", "source": "Source Name, Year", "url": "https://direct-link-to-source.com"}],
+  "hard_facts": [{"fact": "the data point as a plain sentence — no source embedded in the sentence", "source": "Source Name, Year"}],
   "bullets": ["3-5 targeted attacks on the thesis — each 1-2 sentences, cite real counter-evidence"],
   "verdict": "2-3 sentences — after weighing steelman and counterpoint, does the original thesis survive?",
   "strength": "<one of: weak | moderate | strong | devastating>"
