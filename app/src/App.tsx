@@ -434,20 +434,22 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   </div>
                 )}
                 <div style={{
-                  display: "flex", alignItems: "flex-start",
+                  display: "flex", alignItems: "center",
                   padding: "6px 12px 10px",
                   borderTop: "1px solid #F5F5F2",
                 }}>
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", alignContent: "flex-start", gap: 5, flexWrap: "wrap", flex: 1 }}>
-                    <span style={{ fontSize: 8, fontWeight: 600, color: "rgba(255,255,255,0.35)", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
                     <EvidenceBadge value={obs.evidence_type} />
                     {obs.tags?.map((tag: string) => (
                       <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
                     ))}
                   </div>
-                  {obs.status === "complete" && obs.thesis && (
-                    <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
-                  )}
+                  <div style={{ display: "flex", alignItems: "center", gap: 6, flexShrink: 0 }}>
+                    <span style={{ fontSize: 8, fontWeight: 600, color: "#BBB", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
+                    {obs.status === "complete" && obs.thesis && (
+                      <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
+                    )}
+                  </div>
                 </div>
               </div>
             );
