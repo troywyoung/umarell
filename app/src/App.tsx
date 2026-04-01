@@ -254,38 +254,54 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
   renderChallenge: (c: Observation) => React.ReactNode;
 }) {
   const [expanded, setExpanded] = useState(true);
+  // Derive date from earliest observation
+  const earliest = observations.reduce((min, o) => {
+    const t = new Date(o.created_at).getTime();
+    return t < min ? t : min;
+  }, Infinity);
+  const dateStr = isFinite(earliest) ? new Date(earliest).toLocaleDateString("en-US", { month: "short", day: "numeric" }) : "";
+
   return (
-    <div style={{ marginTop: 20 }}>
+    <div style={{ margin: "16px 0" }}>
+      {/* Episode header */}
       <div
         onClick={() => setExpanded(!expanded)}
         style={{
-          display: "flex", alignItems: "center", justifyContent: "space-between",
-          padding: "10px 0 8px", cursor: "pointer",
-          borderTop: "1px solid rgba(255,255,255,0.08)",
+          padding: "14px 0 12px", cursor: "pointer",
+          borderTop: "1px solid rgba(255,255,255,0.12)",
           WebkitTapHighlightColor: "transparent",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <span style={{ fontSize: 10, fontWeight: 800, color: "#FF00AE", letterSpacing: 0.5, textTransform: "uppercase" }}>PvA</span>
-          <span style={{ fontSize: 14, fontWeight: 700, color: "#FFF", letterSpacing: -0.3 }}>{title}</span>
-          <span style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", fontWeight: 600 }}>{observations.length}</span>
+        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
+          <span style={{ fontSize: 9, fontWeight: 800, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase" }}>People vs Algorithms</span>
+          <span style={{ fontSize: 9, color: "rgba(255,255,255,0.3)" }}>·</span>
+          <span style={{ fontSize: 9, fontWeight: 600, color: "rgba(255,255,255,0.35)", letterSpacing: 0.3 }}>{dateStr}</span>
+          <span style={{ marginLeft: "auto", fontSize: 11, color: "rgba(255,255,255,0.25)", transition: "transform 0.2s", transform: expanded ? "rotate(0deg)" : "rotate(-90deg)" }}>▼</span>
         </div>
-        <span style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", transition: "transform 0.2s", transform: expanded ? "rotate(0deg)" : "rotate(-90deg)" }}>▼</span>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <span style={{ fontSize: 16, fontWeight: 800, color: "#FFF", letterSpacing: -0.4 }}>{title}</span>
+          <span style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", fontWeight: 600 }}>{observations.length}</span>
+        </div>
       </div>
-      {expanded && observations.map(obs => {
-        const children = (challengeMap.get(obs.id) || [])
-          .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
-        return (
-          <div key={obs.id} style={{ marginBottom: 10 }}>
-            {renderCard(obs)}
-            {children.map(c => (
-              <div key={c.id} style={{ marginTop: 4 }}>
-                {renderChallenge(c)}
+      {/* Episode cards */}
+      {expanded && (
+        <div style={{ borderLeft: "2px solid rgba(255,0,174,0.25)", paddingLeft: 12, marginLeft: 2 }}>
+          {observations.map(obs => {
+            const children = (challengeMap.get(obs.id) || [])
+              .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+            return (
+              <div key={obs.id} style={{ marginBottom: 10 }}>
+                {renderCard(obs)}
+                {children.map(c => (
+                  <div key={c.id} style={{ marginTop: 4 }}>
+                    {renderChallenge(c)}
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        );
-      })}
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
@@ -471,37 +487,52 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             </div>
           );
 
-          // Split into regular posts and episode posts
-          const regularPosts = topLevel.filter(o => !o.episode_tag);
-          const episodeMap = new Map<string, { title: string; obs: Observation[] }>();
+          // Build a unified timeline: user posts + episode blocks, sorted by created_at
+          // Group episode posts by tag, use earliest post time as the episode's position
+          const episodeMap = new Map<string, { title: string; obs: Observation[]; earliest: number }>();
           topLevel.filter(o => !!o.episode_tag).forEach(o => {
-            const existing = episodeMap.get(o.episode_tag!) || { title: o.episode_title || o.episode_tag!, obs: [] };
-            existing.obs.push(o);
-            episodeMap.set(o.episode_tag!, existing);
+            const t = new Date(o.created_at).getTime();
+            const existing = episodeMap.get(o.episode_tag!);
+            if (existing) {
+              existing.obs.push(o);
+              if (t < existing.earliest) existing.earliest = t;
+            } else {
+              episodeMap.set(o.episode_tag!, { title: o.episode_title || o.episode_tag!, obs: [o], earliest: t });
+            }
           });
+
+          // Build feed items: each is either a user post or an episode block
+          type FeedItem = { type: "post"; obs: Observation; time: number } | { type: "episode"; tag: string; title: string; obs: Observation[]; time: number };
+          const feedItems: FeedItem[] = [];
+          topLevel.filter(o => !o.episode_tag).forEach(o => {
+            feedItems.push({ type: "post", obs: o, time: new Date(o.created_at).getTime() });
+          });
+          episodeMap.forEach(({ title, obs: epObs, earliest }, tag) => {
+            feedItems.push({ type: "episode", tag, title, obs: epObs, time: earliest });
+          });
+          feedItems.sort((a, b) => b.time - a.time);
 
           return (
             <>
-              {/* Regular user posts */}
-              {regularPosts.map(obs => {
-                const children = (challengeMap.get(obs.id) || [])
-                  .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+              {feedItems.map(item => {
+                if (item.type === "post") {
+                  const children = (challengeMap.get(item.obs.id) || [])
+                    .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+                  return (
+                    <div key={item.obs.id} style={{ marginBottom: 10 }}>
+                      {renderCard(item.obs)}
+                      {children.map(c => (
+                        <div key={c.id} style={{ marginTop: 4 }}>
+                          {renderChallenge(c)}
+                        </div>
+                      ))}
+                    </div>
+                  );
+                }
                 return (
-                  <div key={obs.id} style={{ marginBottom: 10 }}>
-                    {renderCard(obs)}
-                    {children.map(c => (
-                      <div key={c.id} style={{ marginTop: 4 }}>
-                        {renderChallenge(c)}
-                      </div>
-                    ))}
-                  </div>
+                  <EpisodeSection key={item.tag} title={item.title} observations={item.obs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
                 );
               })}
-
-              {/* Episode sections */}
-              {[...episodeMap.entries()].map(([tag, { title, obs: epObs }]) => (
-                <EpisodeSection key={tag} title={title} observations={epObs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
-              ))}
             </>
           );
         })()}
