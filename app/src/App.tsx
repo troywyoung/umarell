@@ -305,19 +305,25 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       </div>
 
       <div style={{ padding: "12px 16px 0" }}>
-        {observations.length === 0 && !loading ? null : [...observations]
-          .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
-          .map((obs) => {
-            const isChallenge = !!obs.parent_id;
-            const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
+        {observations.length === 0 && !loading ? null : (() => {
+          const topLevel = [...observations]
+            .filter(o => !o.parent_id)
+            .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+          const challengeMap = new Map<string, Observation[]>();
+          observations.filter(o => !!o.parent_id).forEach(c => {
+            const arr = challengeMap.get(c.parent_id!) || [];
+            arr.push(c);
+            challengeMap.set(c.parent_id!, arr);
+          });
+
+          const renderCard = (obs: Observation, isChallenge: boolean) => {
+            const steelBullets = (obs.summary || "").split(/\n+/).map((l: string) => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
             const firstBullet = steelBullets[0] || "";
             return (
               <div
                 key={obs.id}
                 onClick={() => onSelect(obs)}
                 style={{
-                  marginBottom: 10,
-                  marginLeft: isChallenge ? 16 : 0,
                   borderRadius: 10,
                   background: isChallenge ? "#EEF4FF" : "#FFF",
                   borderLeft: isChallenge ? "3px solid #5C8EFF" : "none",
@@ -330,7 +336,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     <span style={{ fontSize: 9, fontWeight: 700, color: "#5C8EFF" }}>↩ CHALLENGE</span>
                   </div>
                 )}
-                {/* Top row: headline + score + delete */}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: isChallenge ? "6px 12px 6px 12px" : "10px 12px 6px 12px" }}>
                   {obs.image_data && !isChallenge && (
                     <img
@@ -363,8 +368,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     >&times;</button>
                   )}
                 </div>
-
-                {/* Summary */}
                 {firstBullet && !isChallenge && (
                   <p style={{
                     fontSize: 10, color: "#555", lineHeight: 1.55,
@@ -375,7 +378,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     {firstBullet}
                   </p>
                 )}
-
                 {(obs.status === "formatting" || obs.status === "researching") && (
                   <div style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "0 12px 8px" }}>
                     <SteelManIcon size={isChallenge ? 12 : 14} animate />
@@ -384,8 +386,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     </span>
                   </div>
                 )}
-
-                {/* Footer */}
                 <div style={{
                   display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap",
                   padding: "6px 12px 10px",
@@ -393,7 +393,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 }}>
                   <span style={{ fontSize: 8, fontWeight: 600, color: "#B0B0A8", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
                   <EvidenceBadge value={obs.evidence_type} />
-                  {!isChallenge && obs.tags?.map((tag) => (
+                  {!isChallenge && obs.tags?.map((tag: string) => (
                     <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
                   ))}
                   {obs.status === "complete" && obs.thesis && !isChallenge && (
@@ -404,7 +404,23 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 </div>
               </div>
             );
-          })}
+          };
+
+          return topLevel.map(obs => {
+            const children = (challengeMap.get(obs.id) || [])
+              .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+            return (
+              <div key={obs.id} style={{ marginBottom: 10 }}>
+                {renderCard(obs, false)}
+                {children.map(c => (
+                  <div key={c.id} style={{ marginTop: 6, marginLeft: 16 }}>
+                    {renderCard(c, true)}
+                  </div>
+                ))}
+              </div>
+            );
+          });
+        })()}
       </div>
 
       {/* Idea Button */}
