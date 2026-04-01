@@ -1531,6 +1531,22 @@ export default function App() {
   const [authLoading, setAuthLoading] = useState(false);
   const [authError, setAuthError] = useState<string | null>(null);
 
+  // Refresh auth from server on startup to pick up is_admin and other changes
+  useEffect(() => {
+    const token = localStorage.getItem("sm_token");
+    if (!token) return;
+    fetch(`${API}/auth/me`, { headers: { Authorization: `Bearer ${token}` } })
+      .then(r => r.ok ? r.json() : null)
+      .then(data => {
+        if (data) {
+          const user = { id: data.id, name: data.name, avatar: data.avatar, is_admin: data.is_admin };
+          localStorage.setItem("sm_user", JSON.stringify(user));
+          setAuthUser(user);
+        }
+      })
+      .catch(() => {});
+  }, []);
+
   const handleGoogleSuccess = async (credentialResponse: { credential?: string }) => {
     if (!credentialResponse.credential) return;
     setAuthLoading(true);
