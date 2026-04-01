@@ -314,9 +314,9 @@ async def format_challenge_thesis(raw_input: str, parent_thesis: str) -> str:
     )
 
 
-async def generate_steel_man(thesis: str, challenge_context: str | None = None) -> tuple[str, list[dict]]:
-    """Generate 4-5 punchy bullet points making the strongest case FOR the thesis.
-    Returns (steel_man_text, sources) where sources is a list of {url, title} dicts."""
+async def generate_steel_man(thesis: str, challenge_context: str | None = None) -> tuple[dict, list[dict]]:
+    """Generate a steelman with bottom_line + bullets.
+    Returns (steelman_dict, sources) where steelman_dict = {bottom_line: str, bullets: [str]}."""
     search_context, sources = "", []
     if PROVIDER == "anthropic" and settings.tavily_api_key:
         search_context, sources = await _search_tavily(thesis)
@@ -328,27 +328,35 @@ async def generate_steel_man(thesis: str, challenge_context: str | None = None) 
     if search_context:
         user_prompt += f"\n\nCurrent real-world context and evidence to draw from:\n{search_context}"
 
+    user_prompt += """
+
+Return a JSON object with exactly these keys:
+{
+  "bottom_line": "1-2 sentences — the single strongest argument for this thesis. This is the headline takeaway.",
+  "bullets": ["4-6 evidence-backed bullets supporting the thesis — each 1-2 sentences max, cite real data/studies/examples"]
+}
+
+Return valid JSON only. No markdown fences. No preamble."""
+
     if challenge_context:
         system = (
             "You are a world-class intellectual advocate. "
             "You are given an ORIGINAL CLAIM and its steel man, plus a CHALLENGE THESIS that opposes it. "
             "Your job: build the strongest case FOR the challenge thesis, directly addressing why the original claim is wrong. "
-            "Produce exactly 4-5 bullet points. Each bullet must: (1) directly counter the original claim, "
-            "(2) cite a real statistic, study, event, or named example, (3) be 1-2 sentences max. "
-            "Stay focused on the debate between original and challenge — do not go off topic. "
-            "CRITICAL: Output ONLY the bullet points starting with '•'. Zero preamble. Zero summary. "
-            "First character of your response must be '•'."
+            "The bottom_line is the single most devastating argument against the original claim. "
+            "Each bullet must directly counter the original claim with real evidence. "
+            "Stay focused on the debate. Use current search results where available. "
+            "Return ONLY valid JSON. No markdown. No preamble."
         )
     else:
         system = (
             "You are a world-class intellectual advocate — part lawyer, part researcher, part analyst. "
             "Your job is to construct the most powerful, evidence-based case FOR a thesis. "
-            "Produce exactly 4-5 bullet points. Each bullet must: (1) make one specific, substantive claim, "
-            "(2) cite a real statistic, study, event, or named example, (3) be 1-2 sentences max. "
+            "The bottom_line is the single strongest argument — the verdict on why this holds up. "
+            "Each bullet must make one specific, substantive claim citing real data, studies, events, or named examples. "
             "Prioritize depth and specificity over breadth. Avoid vague generalities. "
             "Use current real-world data from your search results where available. "
-            "CRITICAL: Output ONLY the bullet points starting with '•'. Zero preamble. Zero summary. "
-            "First character of your response must be '•'."
+            "Return ONLY valid JSON. No markdown. No preamble."
         )
 
     result = await _call(
@@ -358,14 +366,18 @@ async def generate_steel_man(thesis: str, challenge_context: str | None = None) 
         use_search=(PROVIDER == "gemini"),
     )
     if isinstance(result, tuple):
-        text, gemini_sources = result
+        raw, gemini_sources = result
         sources = gemini_sources if gemini_sources else sources
     else:
-        text = result
-    first_bullet = text.find('•')
-    if first_bullet > 0:
-        text = text[first_bullet:]
-    return text, sources
+        raw = result
+
+    parsed = _extract_json(raw)
+    # Ensure expected structure
+    if "bottom_line" not in parsed:
+        parsed["bottom_line"] = ""
+    if "bullets" not in parsed:
+        parsed["bullets"] = []
+    return parsed, sources
 
 
 async def generate_metadata(thesis: str, steel_man: str, image_b64: str | None = None, image_media_type: str = "image/jpeg") -> dict:
@@ -425,39 +437,55 @@ Return valid JSON only. No markdown fences. No preamble."""
     return _extract_json(raw)
 
 
-async def generate_stress_test(thesis: str, steel_man: str) -> tuple[dict, list[dict]]:
-    """Stress test the thesis — pros, cons, verdict. Returns (result_dict, sources)."""
+async def generate_counterpoint(thesis: str, steel_man_json: dict) -> tuple[dict, list[dict]]:
+    """Generate an aggressive counterpoint to the steelman.
+    Returns (counterpoint_dict, sources) where counterpoint_dict = {bottom_line, bullets, verdict, strength}."""
     search_context, sources = "", []
     if PROVIDER == "anthropic" and settings.tavily_api_key:
         search_context, sources = await _search_tavily(f"counterarguments against: {thesis}")
 
+    steel_man_text = steel_man_json.get("bottom_line", "")
+    bullets = steel_man_json.get("bullets", [])
+    if bullets:
+        steel_man_text += "\n" + "\n".join(f"• {b}" for b in bullets)
+
     prompt = f"""Thesis: {thesis}
 
-Steel man argument:
-{steel_man}"""
+Steelman argument:
+{steel_man_text}"""
 
     if search_context:
         prompt += f"\n\nCurrent real-world context:\n{search_context}"
 
     prompt += """
 
-Now stress test this thesis objectively. Return a JSON object with exactly these keys:
+Now tear this thesis apart. You are the opposing counsel. Build the most aggressive, evidence-based case AGAINST this thesis.
+
+Return a JSON object with exactly these keys:
 {
-  "pros": ["3-4 SHORT points in favour — one sentence each, max 20 words"],
-  "cons": ["3-4 SHORT weaknesses or objections — one sentence each, max 20 words"],
-  "verdict": "One direct sentence: does this thesis stand up, and why or why not?"
+  "bottom_line": "1-2 sentences — the single strongest reason this thesis is wrong",
+  "bullets": ["4-6 targeted attacks on the thesis — each 1-2 sentences, cite real counter-evidence"],
+  "verdict": "2-3 sentences — after weighing steelman and counterpoint, does the original thesis survive?",
+  "strength": "<one of: weak | moderate | strong | devastating>"
 }
 
-Be concise. Each bullet must be under 20 words. Return valid JSON only. No markdown fences. No preamble."""
+The 'strength' field rates how powerful this counterpoint is:
+- weak: the thesis mostly survives, counterpoint is nitpicking
+- moderate: real holes found but thesis still has merit
+- strong: significant damage to the thesis, major revision needed
+- devastating: thesis collapses under scrutiny
+
+Return valid JSON only. No markdown fences. No preamble."""
 
     result = await _call(
         system=(
-            "You are a rigorous intellectual critic and fact-checker. "
-            "Your job: stress test this thesis with hard evidence — no platitudes. "
-            "Pros must cite concrete data, named studies, or real-world examples. "
-            "Cons must name real weaknesses: confounds, missing evidence, contrary data, logical gaps. "
+            "You are a brilliant, aggressive opposing counsel. "
+            "Your job: destroy this thesis with hard evidence and sharp logic. "
+            "You are not balanced — you are adversarial. But intellectually honest. "
+            "Every bullet should target a specific weakness: wrong data, missing context, logical fallacy, contrary evidence. "
+            "Use phrases like 'This ignores...', 'The data actually shows...', 'The fatal flaw here is...' "
             "Use current search results where available. "
-            "Return ONLY valid JSON. No markdown. No preamble. Each bullet max 20 words."
+            "Return ONLY valid JSON. No markdown. No preamble."
         ),
         user=prompt,
         max_tokens=2000,
@@ -470,7 +498,122 @@ Be concise. Each bullet must be under 20 words. Return valid JSON only. No markd
     else:
         raw = result
 
-    return _extract_json(raw), sources
+    parsed = _extract_json(raw)
+    for key in ("bottom_line", "bullets", "verdict", "strength"):
+        if key not in parsed:
+            parsed[key] = [] if key == "bullets" else ""
+    return parsed, sources
+
+
+# ─── PvA Take ───────────────────────────────────────────────────────────
+
+PVA_VOICE_TROY = (
+    "Troy Young — media executive, advisor, investor. "
+    "Voice: conversational, energetic, entrepreneurial, sardonic. "
+    "Thinks in systems and power dynamics. Comfortable saying uncomfortable truths. "
+    "References personal experience building media businesses. "
+    "Style: 'every great business is a racket', 'muddy, body-strewn trenches'. "
+    "Mixes cynical observation with genuine curiosity. Practitioner, not theorist."
+)
+
+PVA_VOICE_BRIAN = (
+    "Brian Morrissey — founder of The Rebooting, media business analyst. "
+    "Voice: analytical, pattern-matching, curated, dry wit. "
+    "Connects disparate media stories into structural arguments. "
+    "Focuses on business models, sustainability, and industry mechanics. "
+    "Style: precise, numbers-aware, media-insider shorthand. "
+    "Critical distance while analyzing — not cheerleading, not mourning."
+)
+
+PVA_VOICE_ALEX = (
+    "Alex Schleifer — CEO of Human Computer, design/product leader (ex-Airbnb VP Design). "
+    "Voice: product-minded, design-systems thinker, provocative questioner. "
+    "Challenges assumptions by asking 'but why?' from a first-principles perspective. "
+    "Thinks about interfaces between humans and technology. "
+    "Style: sharp, concise, Silicon Valley skeptic. Questions received wisdom."
+)
+
+
+async def generate_pva_take(thesis: str, steel_man_json: dict, voice: str = "all") -> dict:
+    """Generate a PvA-voice reaction to the thesis.
+    voice: 'troy', 'brian', 'alex', or 'all' (blended).
+    Returns {body: str, tldr: str, voice: str}."""
+
+    steel_man_text = steel_man_json.get("bottom_line", "")
+    bullets = steel_man_json.get("bullets", [])
+    if bullets:
+        steel_man_text += "\n" + "\n".join(f"• {b}" for b in bullets)
+
+    voice_profiles = {
+        "troy": PVA_VOICE_TROY,
+        "brian": PVA_VOICE_BRIAN,
+        "alex": PVA_VOICE_ALEX,
+    }
+
+    if voice == "all":
+        voice_desc = (
+            "You are the collective voice of People vs Algorithms — a newsletter and podcast by "
+            "Troy Young, Brian Morrissey, and Alex Schleifer. Their perspectives blend:\n\n"
+            f"{PVA_VOICE_TROY}\n\n{PVA_VOICE_BRIAN}\n\n{PVA_VOICE_ALEX}\n\n"
+            "Write as their blended editorial voice — sharp, conversational, media-savvy."
+        )
+    else:
+        profile = voice_profiles.get(voice, PVA_VOICE_TROY)
+        voice_desc = (
+            f"You are writing in the voice of one specific person from People vs Algorithms:\n\n{profile}\n\n"
+            f"Write as {voice.title()} would — in first person, with their distinct perspective and tone."
+        )
+
+    system = (
+        f"{voice_desc}\n\n"
+        "People vs Algorithms examines patterns of change in media, culture, and technology. "
+        "The editorial perspective is: skeptical of hype, focused on structural change, practitioner-informed. "
+        "Comfortable calling bullshit. Thinks in power dynamics — who wins, who loses, what's the business model. "
+        "Conversational but sharp — like smart friends arguing at dinner. "
+        "NOT academic, NOT neutral. Opinionated. Takes a side.\n\n"
+        "Return ONLY valid JSON. No markdown fences. No preamble."
+    )
+
+    prompt = f"""Thesis: {thesis}
+
+Steelman:
+{steel_man_text}
+
+React to this claim in the PvA voice. You may agree, disagree, or completely reframe the question.
+Connect it to bigger patterns in media, tech, or culture where relevant.
+
+Return a JSON object:
+{{
+  "body": "2-3 paragraphs. Conversational, opinionated, sharp. No bullet points — this is prose.",
+  "tldr": "One punchy sentence — the PvA verdict on this claim."
+}}
+
+Return valid JSON only. No markdown fences. No preamble."""
+
+    result = await _call(
+        system=system,
+        user=prompt,
+        max_tokens=2000,
+    )
+
+    if isinstance(result, tuple):
+        raw = result[0]
+    else:
+        raw = result
+
+    parsed = _extract_json(raw)
+    parsed["voice"] = voice
+    return parsed
+
+
+# ─── Legacy alias ───────────────────────────────────────────────────────
+
+async def generate_stress_test(thesis: str, steel_man: str) -> tuple[dict, list[dict]]:
+    """Legacy wrapper — converts old-format call to new counterpoint."""
+    # Parse steel_man text into the new JSON format for counterpoint
+    bullets = [l.replace("•", "").strip() for l in steel_man.split("\n") if l.strip()]
+    sm_json = {"bottom_line": bullets[0] if bullets else "", "bullets": bullets[1:] if len(bullets) > 1 else bullets}
+    return await generate_counterpoint(thesis, sm_json)
 
 
 async def call_bullshit(thesis: str, steel_man: str) -> dict:

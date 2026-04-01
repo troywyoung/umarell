@@ -37,4 +37,5 @@ class ObservationOut(BaseModel):
     challenge_type: Optional[str] = None
     bs_score: Optional[float] = None
     bs_verdict: Optional[str] = None
+    pva_take: Optional[dict] = None
     created_at: datetime

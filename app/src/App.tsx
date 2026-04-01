@@ -311,8 +311,14 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           });
 
           const renderCard = (obs: Observation) => {
-            const steelBullets = (obs.summary || "").split(/\n+/).map((l: string) => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
-            const firstBullet = steelBullets[0] || "";
+            let firstBullet = "";
+            try {
+              const parsed = JSON.parse(obs.summary || "");
+              firstBullet = parsed.bottom_line || (Array.isArray(parsed.bullets) ? parsed.bullets[0] : "") || "";
+            } catch {
+              const lines = (obs.summary || "").split(/\n+/).map((l: string) => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
+              firstBullet = lines[0] || "";
+            }
             return (
               <div
                 key={obs.id}
@@ -737,33 +743,39 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
 
 // ─── Output ───────────────────────────────────────────────────────────────
 
-function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObservation, requestStressTest }: {
+function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObservation, requestCounterpoint, requestPvaTake }: {
   obs: Observation;
   onBack: () => void;
   onResubmit: (obsId: string, text: string, imageData?: string, imageMediaType?: string) => Promise<void>;
   onChallenge: (obs: Observation) => void;
   pollObservation: (id: string) => Promise<Observation | null>;
-  requestStressTest: (id: string) => Promise<import("./types").StressTest | null>;
+  requestCounterpoint: (id: string) => Promise<import("./types").Counterpoint | null>;
+  requestPvaTake: (id: string, voice?: string) => Promise<import("./types").PvaTake | null>;
 }) {
   const [obs, setObs] = useState(initialObs);
-  const [tab, setTab] = useState<"steel" | "stress">("steel");
-  const [stressLoading, setStressLoading] = useState(false);
-  const [stressError, setStressError] = useState(false);
+  const [counterpointLoading, setCounterpointLoading] = useState(false);
+  const [counterpointError, setCounterpointError] = useState(false);
+  const [pvaLoading, setPvaLoading] = useState(false);
+  const [pvaError, setPvaError] = useState(false);
+  const [showCounterpoint, setShowCounterpoint] = useState(false);
+  const [showPva, setShowPva] = useState(false);
+  const [pvaVoice, setPvaVoice] = useState<string>("all");
   const [editMode, setEditMode] = useState(false);
   const [editText, setEditText] = useState("");
   const [resubmitting, setResubmitting] = useState(false);
-  const [, setCounterThesis] = useState<string | null>(null);
   const [challenges, setChallenges] = useState<Observation[]>([]);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const consecutiveNullsRef = useRef(0);
 
   useEffect(() => {
     setObs(initialObs);
-    setTab("steel");
     setEditMode(false);
-    setStressLoading(false);
-    setStressError(false);
-    setCounterThesis(null);
+    setCounterpointLoading(false);
+    setCounterpointError(false);
+    setPvaLoading(false);
+    setPvaError(false);
+    setShowCounterpoint(false);
+    setShowPva(false);
     // Fetch challenges
     fetch(`${API}/observations/${initialObs.id}/challenges`, { headers: authHeaders() })
       .then(r => r.json()).then(data => { if (Array.isArray(data)) setChallenges(data); }).catch(() => {});
@@ -792,23 +804,34 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
     return () => { if (pollRef.current) clearInterval(pollRef.current); };
   }, [obs.id, obs.status]);
 
-  const handleStressTab = async () => {
-    setTab("stress");
-    if (obs.stress_test?.verdict) return;
-    setStressError(false);
-    setStressLoading(true);
-    const result = await requestStressTest(obs.id);
-    setStressLoading(false);
+  const handleCounterpoint = async () => {
+    setShowCounterpoint(true);
+    if (obs.stress_test && "strength" in obs.stress_test) return; // already loaded
+    setCounterpointError(false);
+    setCounterpointLoading(true);
+    const result = await requestCounterpoint(obs.id);
+    setCounterpointLoading(false);
     if (result) {
-      // Re-fetch observation to get updated sources from stress test
       const updated = await pollObservation(obs.id);
-      if (updated) {
-        setObs(updated);
-      } else {
-        setObs((p) => ({ ...p, stress_test: result }));
-      }
+      if (updated) setObs(updated);
+      else setObs((p) => ({ ...p, stress_test: result }));
     } else {
-      setStressError(true);
+      setCounterpointError(true);
+    }
+  };
+
+  const handlePvaTake = async (voice: string = "all") => {
+    setShowPva(true);
+    setPvaVoice(voice);
+    if (obs.pva_take?.voice === voice) return; // already loaded
+    setPvaError(false);
+    setPvaLoading(true);
+    const result = await requestPvaTake(obs.id, voice);
+    setPvaLoading(false);
+    if (result) {
+      setObs((p) => ({ ...p, pva_take: result }));
+    } else {
+      setPvaError(true);
     }
   };
 
@@ -824,7 +847,21 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
   const isProcessing = obs.status === "formatting" || obs.status === "researching";
   const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
-  const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
+
+  // Parse summary — handles new JSON format {bottom_line, bullets} and legacy plain text
+  let steelBottomLine = "";
+  let steelBullets: string[] = [];
+  try {
+    const parsed = JSON.parse(obs.summary || "");
+    steelBottomLine = parsed.bottom_line || "";
+    steelBullets = Array.isArray(parsed.bullets) ? parsed.bullets : [];
+  } catch {
+    steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
+    steelBottomLine = steelBullets.shift() || "";
+  }
+
+  // Parse counterpoint from stress_test field
+  const counterpoint = obs.stress_test && "strength" in obs.stress_test ? obs.stress_test as import("./types").Counterpoint : null;
 
   if (obs.status === "error") {
     return (
@@ -983,40 +1020,15 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           </div>
         )}
 
-        {/* Tab buttons */}
-        {obs.status === "complete" && (
-          <div style={{ display: "flex", gap: 8, marginBottom: 24 }}>
-            <button
-              onClick={() => setTab("steel")}
-              style={{
-                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: tab === "steel" ? "#FFF" : "rgba(255,255,255,0.08)",
-                color: tab === "steel" ? "#12102B" : "rgba(255,255,255,0.5)",
-                fontSize: 14, fontWeight: 700, fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent",
-              }}
-            >Steelman</button>
-            <button
-              onClick={handleStressTab}
-              style={{
-                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: tab === "stress" ? "#FF00AE" : "rgba(255,255,255,0.08)",
-                color: tab === "stress" ? "#FFF" : "rgba(255,255,255,0.5)",
-                fontSize: 14, fontWeight: 700, fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent",
-                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
-              }}
-            >
-              {stressLoading && tab === "stress" ? (
-                <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><ProcessingDots color="#FFF" /><span>Testing…</span></span>
-              ) : "Stress Test"}
-            </button>
-          </div>
-        )}
-
-        {/* Steelman content + Edit & Resubmit */}
-        {obs.status === "complete" && tab === "steel" && (
+        {/* Steelman — always visible when complete */}
+        {obs.status === "complete" && (steelBottomLine || steelBullets.length > 0) && (
           <>
+            {steelBottomLine && (
+              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Bottom Line</p>
+                <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
+              </div>
+            )}
             {steelBullets.map((bullet, i) => (
               <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
                 <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
@@ -1029,94 +1041,121 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
                 <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
                 {obs.sources.map((src, i) => (
-                  <a
-                    key={i}
-                    href={src.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      display: "block", fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5,
-                      textDecoration: "none", marginBottom: 4,
-                      overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
-                    }}
+                  <a key={i} href={src.url} target="_blank" rel="noopener noreferrer"
+                    style={{ display: "block", fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5, textDecoration: "none", marginBottom: 4, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = "#FF00AE")}
                     onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
-                  >
-                    {src.title || src.url}
-                  </a>
+                  >{src.title || src.url}</a>
                 ))}
               </div>
             )}
-
           </>
         )}
 
-        {/* Stress Test content */}
-        {tab === "stress" && (() => {
-          if (stressLoading) return null;
-          if (stressError) return (
-            <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,0,174,0.3)" }}>
-              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>
-                Stress test failed. Tap the button to try again.
-              </p>
+        {/* Action buttons: Counterpoint + PvA Take */}
+        {obs.status === "complete" && (
+          <div style={{ display: "flex", gap: 8, marginTop: 24, marginBottom: 8 }}>
+            <button
+              onClick={handleCounterpoint}
+              style={{
+                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
+                background: showCounterpoint ? "#FF00AE" : "rgba(255,255,255,0.08)",
+                color: showCounterpoint ? "#FFF" : "rgba(255,255,255,0.5)",
+                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
+                WebkitTapHighlightColor: "transparent",
+                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+              }}
+            >
+              {counterpointLoading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : "Counterpoint"}
+            </button>
+            <button
+              onClick={() => handlePvaTake(pvaVoice)}
+              style={{
+                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
+                background: showPva ? "#FF00AE" : "rgba(255,255,255,0.08)",
+                color: showPva ? "#FFF" : "rgba(255,255,255,0.5)",
+                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
+                WebkitTapHighlightColor: "transparent",
+                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+              }}
+            >
+              {pvaLoading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : "PvA Take"}
+            </button>
+          </div>
+        )}
+
+        {/* Counterpoint section */}
+        {showCounterpoint && (() => {
+          if (counterpointLoading) return null;
+          if (counterpointError) return (
+            <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", marginTop: 16, border: "1px solid rgba(255,0,174,0.3)" }}>
+              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>Counterpoint failed. Tap the button to try again.</p>
             </div>
           );
-          const st = obs.stress_test as any;
-          if (!st?.verdict) return null;
-          const pros: string[] = Array.isArray(st.pros) ? st.pros : [];
-          const cons: string[] = Array.isArray(st.cons) ? st.cons : [];
-          const verdict: string = typeof st.verdict === "string" ? st.verdict : JSON.stringify(st.verdict);
+          if (!counterpoint) return null;
+          const strengthColors: Record<string, string> = { weak: "#4CAF50", moderate: "#FF9800", strong: "#F44336", devastating: "#9C27B0" };
           return (
-            <div>
-              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 20 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Verdict</p>
-                <p style={{ fontSize: 15, color: "#FFF", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{verdict}</p>
+            <div style={{ marginTop: 16 }}>
+              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
+                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: 0, display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Counterpoint</p>
+                  <span style={{
+                    fontSize: 9, fontWeight: 800, textTransform: "uppercase", letterSpacing: 0.5,
+                    padding: "2px 8px", borderRadius: 4,
+                    background: `${strengthColors[counterpoint.strength] || "#888"}22`,
+                    color: strengthColors[counterpoint.strength] || "#888",
+                  }}>{counterpoint.strength}</span>
+                </div>
+                <p style={{ fontSize: 15, color: "#FFF", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{counterpoint.bottom_line}</p>
               </div>
-              {pros.length > 0 && (
-                <div style={{ marginBottom: 16 }}>
-                  <p style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>Strengths</p>
-                  {pros.map((pro, i) => (
-                    <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                      <span style={{ color: "#2E7D32", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>+</span>
-                      <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{typeof pro === "string" ? pro : JSON.stringify(pro)}</p>
-                    </div>
-                  ))}
+              {counterpoint.bullets.map((bullet, i) => (
+                <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
+                  <span style={{ color: "#FF00AE", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
+                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
+                </div>
+              ))}
+              {counterpoint.verdict && (
+                <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 10, padding: "12px 14px", marginTop: 8 }}>
+                  <p style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>{counterpoint.verdict}</p>
                 </div>
               )}
-              {cons.length > 0 && (
-                <div style={{ marginBottom: 20 }}>
-                  <p style={{ fontSize: 11, fontWeight: 700, color: "#C0392B", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>Weaknesses</p>
-                  {cons.map((con, i) => (
-                    <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                      <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
-                      <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{typeof con === "string" ? con : JSON.stringify(con)}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
-              {/* Sources (from both steelman and stress test) */}
-              {obs.sources && obs.sources.length > 0 && (
-                <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
-                  {obs.sources.map((src, i) => (
-                    <a
-                      key={i}
-                      href={src.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        display: "block", fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5,
-                        textDecoration: "none", marginBottom: 4,
-                        overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
-                      }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = "#FF00AE")}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
-                    >
-                      {src.title || src.url}
-                    </a>
-                  ))}
-                </div>
-              )}
+            </div>
+          );
+        })()}
+
+        {/* PvA Take section */}
+        {showPva && (() => {
+          if (pvaLoading) return null;
+          if (pvaError) return (
+            <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", marginTop: 16, border: "1px solid rgba(255,0,174,0.3)" }}>
+              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>PvA take failed. Tap the button to try again.</p>
+            </div>
+          );
+          const take = obs.pva_take;
+          if (!take) return null;
+          const voices = ["all", "troy", "brian", "alex"];
+          return (
+            <div style={{ marginTop: 16 }}>
+              <div style={{ display: "flex", gap: 6, marginBottom: 12 }}>
+                {voices.map(v => (
+                  <button key={v} onClick={() => handlePvaTake(v)}
+                    style={{
+                      padding: "5px 10px", borderRadius: 6, border: "none", cursor: "pointer",
+                      background: pvaVoice === v ? "#FF00AE" : "rgba(255,255,255,0.08)",
+                      color: pvaVoice === v ? "#FFF" : "rgba(255,255,255,0.5)",
+                      fontSize: 11, fontWeight: 700, fontFamily: "inherit", textTransform: "capitalize",
+                      WebkitTapHighlightColor: "transparent",
+                    }}
+                  >{v === "all" ? "All voices" : v}</button>
+                ))}
+              </div>
+              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 12 }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>TL;DR</p>
+                <p style={{ fontSize: 14, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{take.tldr}</p>
+              </div>
+              {take.body.split(/\n\n+/).map((para, i) => (
+                <p key={i} style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: "0 0 14px" }}>{para}</p>
+              ))}
             </div>
           );
         })()}
@@ -1273,7 +1312,7 @@ export default function App() {
     setAuthUser(null);
   };
 
-  const { observations, loading, fetchObservations, submitObservation, editObservation, pollObservation, requestStressTest, deleteObservation } = useObservations();
+  const { observations, loading, fetchObservations, submitObservation, editObservation, pollObservation, requestCounterpoint, requestPvaTake, deleteObservation } = useObservations();
   const [view, setView] = useState<View>("home");
   const [selectedObs, setSelectedObs] = useState<Observation | null>(null);
   const [challengingObs, setChallengingObs] = useState<Observation | null>(null);
@@ -1412,7 +1451,8 @@ export default function App() {
         onResubmit={handleResubmit}
         onChallenge={handleChallenge}
         pollObservation={pollObservation}
-        requestStressTest={requestStressTest}
+        requestCounterpoint={requestCounterpoint}
+        requestPvaTake={requestPvaTake}
       />
     );
   }

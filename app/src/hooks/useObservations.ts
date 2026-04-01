@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import type { Observation } from "../types";
+import type { Observation, Counterpoint, PvaTake } from "../types";
 import { API } from "../config";
 
 function authHeaders(): Record<string, string> {
@@ -82,6 +82,38 @@ export function useObservations() {
     }
   }, []);
 
+  const requestCounterpoint = useCallback(async (id: string): Promise<Counterpoint | null> => {
+    try {
+      const resp = await fetch(`${API}/observations/${id}/counterpoint`, { method: "POST" });
+      if (!resp.ok) return null;
+      const data: Counterpoint = await resp.json();
+      setObservations((prev) =>
+        prev.map((o) => (o.id === id ? { ...o, stress_test: data } : o))
+      );
+      return data;
+    } catch {
+      return null;
+    }
+  }, []);
+
+  const requestPvaTake = useCallback(async (id: string, voice: string = "all"): Promise<PvaTake | null> => {
+    try {
+      const resp = await fetch(`${API}/observations/${id}/pva-take`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ voice }),
+      });
+      if (!resp.ok) return null;
+      const data: PvaTake = await resp.json();
+      setObservations((prev) =>
+        prev.map((o) => (o.id === id ? { ...o, pva_take: data } : o))
+      );
+      return data;
+    } catch {
+      return null;
+    }
+  }, []);
+
   const editObservation = useCallback(async (
     id: string,
     rawInput: string,
@@ -112,6 +144,6 @@ export function useObservations() {
   return {
     observations, loading,
     fetchObservations, submitObservation, editObservation, pollObservation,
-    requestStressTest, deleteObservation,
+    requestStressTest, requestCounterpoint, requestPvaTake, deleteObservation,
   };
 }

@@ -12,7 +12,7 @@ from pydantic import BaseModel
 from database import init_db, get_db, AsyncSessionLocal
 from models import Observation, User
 from schemas import ObservationCreate, ObservationOut
-from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_metadata, call_bullshit, negate_thesis, ACTIVE_MODEL
+from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, ACTIVE_MODEL
 from config import settings
 
 
@@ -127,18 +127,25 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             await db.commit()
 
             if parent_context:
-                steel_man, sources = await generate_steel_man(thesis, challenge_context=parent_context)
+                steel_man_data, sources = await generate_steel_man(thesis, challenge_context=parent_context)
             else:
-                steel_man, sources = await generate_steel_man(thesis)
+                steel_man_data, sources = await generate_steel_man(thesis)
             obs = await db.get(Observation, observation_id)
             if not obs:
                 return
-            obs.summary = steel_man
+            # Store as JSON string for backward compat (summary is Text column)
+            import json as _json
+            obs.summary = _json.dumps(steel_man_data)
             if sources:
                 obs.sources = sources
 
+            # Build plain text version for metadata scoring
+            sm_text = steel_man_data.get("bottom_line", "")
+            if steel_man_data.get("bullets"):
+                sm_text += "\n" + "\n".join(steel_man_data["bullets"])
+
             try:
-                meta = await generate_metadata(thesis, steel_man, image_b64, image_media_type)
+                meta = await generate_metadata(thesis, sm_text, image_b64, image_media_type)
                 obs.score = meta.get("score")
                 obs.tags = meta.get("tags")
                 obs.evidence_type = meta.get("evidence_type")
@@ -246,6 +253,7 @@ async def create_observation(
 
 
 async def _attach_user_names(db: AsyncSession, observations: list[Observation]) -> list[dict]:
+    import json as _json
     user_ids = {o.user_id for o in observations if o.user_id}
     user_map: dict[str, str] = {}
     if user_ids:
@@ -256,6 +264,12 @@ async def _attach_user_names(db: AsyncSession, observations: list[Observation]) 
     for o in observations:
         d = ObservationOut.model_validate(o).model_dump()
         d["user_name"] = user_map.get(o.user_id) if o.user_id else None
+        # Parse pva_take from briefing field
+        if o.briefing:
+            try:
+                d["pva_take"] = _json.loads(o.briefing)
+            except (ValueError, TypeError):
+                pass
         out.append(d)
     return out
 
@@ -318,8 +332,22 @@ async def edit_observation(
     return rows[0]
 
 
+def _parse_summary(obs) -> dict:
+    """Parse summary field — handles both new JSON format and legacy plain text."""
+    import json as _json
+    if not obs.summary:
+        return {"bottom_line": "", "bullets": []}
+    try:
+        return _json.loads(obs.summary)
+    except (ValueError, TypeError):
+        # Legacy format: plain bullet text
+        bullets = [l.replace("•", "").replace("-", "").strip() for l in obs.summary.split("\n") if l.strip()]
+        return {"bottom_line": bullets[0] if bullets else "", "bullets": bullets[1:] if len(bullets) > 1 else bullets}
+
+
 @app.post("/observations/{obs_id}/stress-test")
 async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
+    """Legacy endpoint — redirects to counterpoint."""
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
@@ -327,10 +355,11 @@ async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
         raise HTTPException(400, "Research not complete")
     if obs.stress_test and isinstance(obs.stress_test, dict) and "verdict" in obs.stress_test:
         return obs.stress_test
+    sm_json = _parse_summary(obs)
     try:
-        result, sources = await generate_stress_test(obs.thesis or obs.raw_input, obs.summary or "")
+        result, sources = await generate_counterpoint(obs.thesis or obs.raw_input, sm_json)
     except Exception as e:
-        raise HTTPException(500, f"Stress test generation failed: {str(e)}")
+        raise HTTPException(500, f"Counterpoint generation failed: {str(e)}")
     if sources:
         existing = obs.sources or []
         seen = {s["url"] for s in existing}
@@ -340,6 +369,65 @@ async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
                 seen.add(s["url"])
         obs.sources = existing
     obs.stress_test = result
+    await db.commit()
+    return result
+
+
+@app.post("/observations/{obs_id}/counterpoint")
+async def create_counterpoint(obs_id: str, db: AsyncSession = Depends(get_db)):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    if obs.status != "complete":
+        raise HTTPException(400, "Research not complete")
+    # Return cached if exists
+    if obs.stress_test and isinstance(obs.stress_test, dict) and "strength" in obs.stress_test:
+        return obs.stress_test
+    sm_json = _parse_summary(obs)
+    try:
+        result, sources = await generate_counterpoint(obs.thesis or obs.raw_input, sm_json)
+    except Exception as e:
+        raise HTTPException(500, f"Counterpoint generation failed: {str(e)}")
+    if sources:
+        existing = obs.sources or []
+        seen = {s["url"] for s in existing}
+        for s in sources:
+            if s["url"] not in seen:
+                existing.append(s)
+                seen.add(s["url"])
+        obs.sources = existing
+    obs.stress_test = result
+    await db.commit()
+    return result
+
+
+class PvaTakeRequest(BaseModel):
+    voice: str = "all"  # "troy", "brian", "alex", or "all"
+
+
+@app.post("/observations/{obs_id}/pva-take")
+async def create_pva_take(obs_id: str, body: PvaTakeRequest = PvaTakeRequest(), db: AsyncSession = Depends(get_db)):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    if obs.status != "complete":
+        raise HTTPException(400, "Research not complete")
+    # Check cache — return if same voice already generated
+    import json as _json
+    existing_pva = None
+    if obs.briefing:
+        try:
+            existing_pva = _json.loads(obs.briefing)
+            if existing_pva.get("voice") == body.voice:
+                return existing_pva
+        except (ValueError, TypeError):
+            pass
+    sm_json = _parse_summary(obs)
+    try:
+        result = await generate_pva_take(obs.thesis or obs.raw_input, sm_json, voice=body.voice)
+    except Exception as e:
+        raise HTTPException(500, f"PvA take generation failed: {str(e)}")
+    obs.briefing = _json.dumps(result)
     await db.commit()
     return result
 

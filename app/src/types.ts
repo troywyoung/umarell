@@ -1,3 +1,22 @@
+export interface SteelmanResult {
+  bottom_line: string;
+  bullets: string[];
+}
+
+export interface Counterpoint {
+  bottom_line: string;
+  bullets: string[];
+  verdict: string;
+  strength: "weak" | "moderate" | "strong" | "devastating";
+}
+
+export interface PvaTake {
+  body: string;
+  tldr: string;
+  voice: "troy" | "brian" | "alex" | "all";
+}
+
+// Legacy format — kept for backward compat
 export interface StressTest {
   pros: string[];
   cons: string[];
@@ -10,8 +29,8 @@ export interface Observation {
   input_type: "text" | "voice" | "photo" | "screenshot" | "url";
   thesis: string;
   status: "formatting" | "researching" | "complete" | "error";
-  summary?: string;
-  stress_test?: StressTest;
+  summary?: string; // JSON string of SteelmanResult (or legacy plain text)
+  stress_test?: StressTest | Counterpoint;
   score?: number;
   tags?: string[];
   evidence_type?: string;
@@ -26,5 +45,6 @@ export interface Observation {
   challenge_type?: string;
   bs_score?: number;
   bs_verdict?: string;
+  pva_take?: PvaTake;
   created_at: string;
 }
