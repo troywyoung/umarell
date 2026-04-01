@@ -547,14 +547,14 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           const episodes = feedItems.filter(i => i.type === "episode");
           const posts = feedItems.filter(i => i.type === "post");
 
-          // Separate recent posts (last 24h) from older ones
-          const oneDayAgo = Date.now() - 24 * 60 * 60 * 1000;
-          const recentPosts = posts.filter(item => item.type === "post" && item.time >= oneDayAgo);
-          const olderPosts = posts.filter(item => item.type === "post" && item.time < oneDayAgo);
+          // Separate recent posts (last 12h) from older ones
+          const twelveHoursAgo = Date.now() - 12 * 60 * 60 * 1000;
+          const recentPosts = posts.filter(item => item.type === "post" && item.time >= twelveHoursAgo);
+          const olderPosts = posts.filter(item => item.type === "post" && item.time < twelveHoursAgo);
 
-          // Group all posts by broad category, preserve recency order within each group
+          // Group only older posts by topic category
           const categoryMap = new Map<string, typeof posts>();
-          posts.forEach(item => {
+          olderPosts.forEach(item => {
             if (item.type !== "post") return;
             const cat = item.obs.category || getCategory(item.obs.tags, item.obs.thesis || item.obs.raw_input);
             const arr = categoryMap.get(cat) || [];
@@ -599,7 +599,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 </div>
               )}
 
-              {/* Older posts grouped by category */}
+              {/* Posts older than 12h grouped by topic category */}
               {sortedCategories.map(([cat, items]) => (
                 <div key={cat}>
                   <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.75)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>{cat}</div>
