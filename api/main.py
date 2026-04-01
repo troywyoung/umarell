@@ -98,12 +98,15 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
     async with AsyncSessionLocal() as db:
         try:
             # If this is a challenge, fetch parent context
-            obs = await db.get(Observation, observation_id)
+            result = await db.execute(select(Observation).where(Observation.id == observation_id))
+            obs = result.scalar_one_or_none()
             if not obs:
                 return
             parent_context = None
             if obs.parent_id:
-                parent = await db.get(Observation, obs.parent_id)
+                p_result = await db.execute(select(Observation).where(Observation.id == obs.parent_id))
+                parent = p_result.scalar_one_or_none()
+                print(f"[pipeline] challenge {observation_id[:8]}, parent_id={obs.parent_id[:8]}, parent_found={parent is not None}, parent_thesis={(parent.thesis[:60] if parent and parent.thesis else 'NONE')}")
                 if parent and parent.thesis:
                     parent_context = f"ORIGINAL CLAIM: {parent.thesis}"
                     if parent.summary:
