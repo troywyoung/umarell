@@ -1336,6 +1336,7 @@ export default function App() {
     window.history.pushState({ view: nextView }, "", url);
     if (obs) setSelectedObs(obs);
     setView(nextView);
+    window.scrollTo(0, 0);
   };
 
   const handleChallenge = (obs: Observation) => {
