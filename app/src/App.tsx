@@ -402,14 +402,16 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               key={c.id}
               onClick={() => onSelect(c)}
               style={{
-                borderRadius: 10, background: "#FFF",
+                borderRadius: 10, background: "#EEF4FF",
                 boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                 padding: "10px 12px", cursor: "pointer",
-                overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis",
+                display: "flex", alignItems: "center", gap: 8,
+                overflow: "hidden",
               }}
             >
-              <span style={{ fontSize: 11, fontWeight: 800, color: "#E53935", letterSpacing: 0.2 }}>Challenge: </span>
-              <span style={{ fontSize: 11, fontWeight: 600, color: "#1A1A1A" }}>{c.thesis || c.raw_input}</span>
+              <span style={{ fontSize: 13, flexShrink: 0, lineHeight: 1 }}>&#9876;&#xFE0E;</span>
+              <span style={{ fontSize: 11, fontWeight: 800, color: "#2C5ABA", flexShrink: 0 }}>Challenge:</span>
+              <span style={{ fontSize: 11, fontWeight: 600, color: "#1A1A1A", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis" }}>{c.thesis || c.raw_input}</span>
             </div>
           );
 
