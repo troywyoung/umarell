@@ -413,8 +413,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </div>
       </div>
 
-      <button onClick={onAbout} style={{ display: "flex", alignItems: "flex-start", background: "none", border: "none", padding: "10px 16px 6px", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
-        <span style={{ fontSize: 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "rgba(255,255,255,0.4)" }}>(What is this thing?)</span>
+      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "10px 16px 6px", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
+        <span style={{ fontSize: 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>(What is this thing?)</span>
       </button>
 
       <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
