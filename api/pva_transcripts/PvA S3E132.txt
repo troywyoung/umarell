@@ -1,0 +1,803 @@
+PvA S3E132
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+
+
+[00:00:01] Brian: What is this? Are you, 
+
+is your voice being disguised? Like
+
+[00:00:04] Alex: Troy, Are you talking in a, in a can that's attached to another Can by a piece of string. 
+
+[00:00:09] Troy: You coming through my, 
+
+[00:00:11] Brian: my
+
+[00:00:11] Troy: AI glasses?
+
+[00:00:12] Alex: Is that the only way you listen to like seven hours of a Zuckerberg Podcast through your meta glasses? 
+
+[00:00:18] Brian: era.
+
+[00:00:19] Troy: to see you guys. There's a lot to chew on this week.
+
+[00:00:21] Brian: a lot to chew on. 
+
+
+[00:00:22] Intro
+---
+
+​
+
+
+[00:00:45] Welcome
+---
+
+[00:00:45] Brian: welcome to people versus Algorithms. I'm Brian Morrisey. Troy Young is here with his Meta AI glasses.
+
+[00:00:51] Alex: Calling us.
+
+[00:00:52] Brian: turnabout because you mocked. Alex for, months, it felt like months at least, for his leading edge adoption of the Apple Vision Pro. And so now you're, since you're a known Zuckerberg fanboy, you, you're, you're on the meta glasses.
+
+So welcome Troy, and welcome Alex. I'm glad we made this happen. We've got the time zones up, we've figured them out.
+
+[00:01:15] Alex: Yep.
+
+[00:01:15] Brian: We have understood that there's something called Alaska Daylight Time. 
+
+
+[00:01:20] Marketing Advertising Media Events
+---
+
+[00:01:20] Brian: So I don't know what your, your, your week has been like, both of you, but you know, my week has been marked by pilgrimage to the font and blue in Miami Beach for the Possible Conference, the, this marketing advertising media industry. Is filled with these types of events. And they're, they're usually weirdly at, in sunny places.
+
+They're never at like, in like Cleveland, I've noticed. but they're very important. And what's interesting to me about them is that they present as, like, this one presents as a marketing conference. They say like a third or something, like 37% of the 5,000 people. There were brands. I didn't really see many.
+
+it was mostly a plumbers convention. It was, and it was sort of, you know, it was all the intermediaries, all the ad tech and MarTech companies. and it was centered in the lobby there. The lobby just was this heaving mass of, sales energy. and, you know, I like sales energy. I love it. but it really reminded me that when we're, we're in this weird in-between period where I feel like we're waiting for shoes to drop in a lot of areas, which I think we'll get into, but I'm reminded of in this area that I, I know fairly well. We've been waiting for now a generation for all this automation to kick in and it just creates more and more people like there were thousands of ad tech salespeople there and doing meetings, which is also known as socializing. the entire point of this industry was, was efficiency and automation and all this.
+
+And I'm sorry it's not working, and I don't think AI is going to change that. Humans will always find a reason to go to a place for quote unquote networking that happens to be a, a lot of socializing in, in nice places. I mean, next month I'll be in Cannes. That's what it's all about. so that's my high level thoughts about that. Troy, you were not, you were not there, Alex, I didn't see you there either.
+
+[00:03:15] Troy: We were there, Alex and I were there, but we were low key. Low key
+
+[00:03:18] Brian: You were low key.
+
+[00:03:19] Alex: Yeah, we, we just did the cool parties.
+
+[00:03:23] Brian: Okay, well there,
+
+[00:03:25] Troy: were not,
+
+okay. I had a couple great dinners actually. Brian. Brian, what did you expect, Brian? So let's just
+
+[00:03:33] Brian: I,
+
+[00:03:34] Troy: out some of the big vectors here. Okay. Vector one is, these things are always filled with salespeople. A lot of them really nice people. They all are the same people. They all know each other. They're all good friends. It's a nice outing. know many of them, like many of them. Secondly, know, there's been a, a kind of radical change in the monetization of the internet, meaning need salespeople more than ever. 'cause I, you gotta get money from somewhere. And so you saw, I guess they were out in force, right? So there's a lot of new people with a lot of new AI things, trying to figure out what to do and how to make money for publishers.
+
+So they were there
+
+[00:04:10] Brian: Wait, wait, wait, wait. Correction, correction. They were not trying to figure out how to make money for publishers. That's not, that's incorrect.
+
+[00:04:16] Troy: Uh,
+
+[00:04:16] Brian: Go on.
+
+[00:04:16] Troy: other vital sort of macro fact in this business, and it's kind of always been that way, is that the middle of it survives by skimming money off of a fountain of ad spending, at the fountain blue. so there's always a little bit of money for everybody in the business. So there's lots of small companies that do, you know, modest amounts of revenue and have money to go to events like this. it's one of the great tragedies of, of, of the media world.
+
+[00:04:45] Brian: Why do you think it's a tragedy? Because, I mean, in some ways I, I hear what you're saying, but there is a lot of innovation.
+
+[00:04:51] Troy: The money that was spent on the hotel bookings for dude should have gone to a publisher.
+
+[00:04:56] Brian: was over $2,000 a night to stay at the fountain blue. which by the way, Alex, it's pronounced fountain blue, if you know.
+
+[00:05:02] Troy: no one's interested in this at all.
+
+[00:05:04] Alex: are you. of people are interested in it because I think it's like, sort of, it's a little bit of, you know, I like narratives and I like metaphors and you know, the Fon Blue has, you know, Maurice Lapidus is the architect there. He is known for his, art deco architecture here, and he built this famed stairway to nowhere that starts Serve is a handy, a handy metaphor.
+
+[00:05:25] Brian: there's a lot of innovation that goes on in here. I guess I understand. Like it was a disaster. Ad tech was mostly been a disaster for publishers. I think that's like the reality. and now there's a new, what I noticed here that was interesting was that there's a new crop of startups in this world that are all ai this and AI that, and they've started in the last, like six months.
+
+And they're mostly chat should t wrappers to do something in like the creative or optimization process. And it takes very little to start these companies. So people who complain about there being so many like ad tech companies, there's gonna be like infinity of these companies. That was my big takeaway
+
+[00:06:06] Alex: Oh, that's great news for everyone involved.it's great news, but Gary, Uck was there.
+
+[00:06:14] Brian: Vaynerchuk. Yeah.
+
+[00:06:15] Alex: Vaynerchuck,
+
+they had a yacht in the, Indian River.
+
+great. That's great. is he still pitching his book? What does he do now?
+
+[00:06:23] Brian: He had, he owns an agency.
+
+and you know, he, he was like an early on this, he took his like, sort of influencer status and he parlayed into investing. He built like a formidable agency, you know, I mean, it's, it's, it's not a, it's not a small, it's not like a 50 person agency. I mean, they're pretty big agency. and then he is got his other businesses. Have you ever been to his private club?
+
+[00:06:43] Alex: No, he talks too fast. He makes me uncomfortable.
+
+Brian, I don't know. I, I can't, I can't add anything to this. I'm just gonna, I think there's a reason why these events are always in warm places because if you may made them anywhere else, people would definitely not come. Um,
+
+[00:07:00] Brian: people came. So, 
+
+
+[00:07:01] The Shoes That Have Not Dropped
+---
+
+[00:07:01] Brian: the one thing that was, you know, to me with this, the shoes that have not dropped thing is, you know, the tariffs were like a, a big issue in private conversations that I was having. And mostly just, know, when you look around, it seems like things are as normal as they've ever been.
+
+And it almost reminds me of that, remember that weekend in March before everything really went down with Covid and it was like, oh yeah, we're gonna have off, like from, from work for a week, or we're gonna be quote unquote working from home. it was like nothing, you know, it was like, yeah, there's a few cases here and there. I kind of feel that way with a lot of things going on right now. and the tariffs were like a big one is because, you know, we did a, we did a dinner with like marketers and agencies. You know, we're not, we're part of this economy. I'm an, I'm another middleman and, Several were like, oh, I was gonna go.
+
+But we can't because we have, we have a travel, travel freeze the tariffs are coming, you know, and companies are, they're ready, they see the numbers, the CFOs ha are going to their tool set. And, you know, it, it always starts with cutting back on travel, non-essential, things. And then it goes into advertisers starting to see that in, in advertising. And then it comes down to, the tougher things. And it seems like this is sort of the direction things are going. And we're just in this weird in-between period where, you know, I, at least for me, like I look around, see people still spending a ton of money on lots of different things just in the economy.
+
+It doesn't seem like any of this, of this stuff has like, filtered down yet, but it's coming. I don't
+
+[00:08:47] Alex: Oh, it's coming. It's definitely coming. I'll let Troy give his thoughts on it, but it's definitely coming.
+
+[00:08:53] Troy: you said what a great theme. The shooter dropped. you know, I was feeling this last week when I, when I kind of wrote that little blurb about the chaos economy, that I felt like on one hand we saw the potential of massive innovation because of these, kind of democratizing technologies.
+
+But Yeah. In particular. But at the same time, you, if you read the news, you literally are terrified of where we're going. Do I feel like, you know, there's kind of economic disruption on the horizon that's gonna impact a lot of people, and a lot of small businesses. I do. You can listen to a lot of other podcasts to get endless analysis on the impact of tariffs.
+
+That's not what I'm gonna do.
+
+I, I'm gonna tell you observation is around what I'm seeing in my day to day how I can't, I can't imagine a world the jobs of many people that are in sort of a. A kind of world somewhere between insight and executive on the far side and of like, you know, kind of safe hands, entry level roles on the other side. How so many of these people which are sort of and, you know, junior attorneys and you know, lots and lots of consultants and strategists, people that do, kind of basic design, people that design flows for. Transactional systems, people that like just a really, really big part of the professional economy, we could, we could that to a world where robotics has the same impact in, in, in, in manufacturing and other industries or people that used to drive cars, et cetera.
+
+But I don't think you need to go there. And I would just kind of bring it to life by ex, you know, explaining a couple things that happened yesterday or the, the, the day before. And for me, one of them was analysis I was doing on, on a company that I was gonna invest in. And, I wanted to know, because I didn't have a lot of sort of junior analysts running around doing the work.
+
+I did it myself. And it was the kind of thing that AI is particularly good at where you. Feed it, a target company and some related information about that company. You open a folder in a project file on OpenAI, you feed it in investment materials and you basic ha you, you, you have it. Go out and look at, macro factors, any of your financial statements that you've input. you can, you can look at any number of things that a kind of standard issue analyst would look at. And in a, in very short order, you get something that's,incredibly valuable is what I would say and saves you a huge amount of time. And, and another case was one that I thought was really interesting where, I remember in the, I used to work at organic and we would do something sort of that was designed to proceed a larger engagement. A client and we called it a best practice assessment, and we would look at their transactional flows or funnels or customer, customer onboarding processes on their digital channels. We would deconstruct them a small team of an information architected designer and a strategist, some type of analyst break it all down, analyze where the, there were conversion issues, look at ways of improving the process from a design perspective, from brand perspective, from a language and wording and instructional perspective and from just, you know, flow page, page to page. And I have been feeding, Chachi between particular screenshots from funnels. And so I was going through a company that I was looking at with a, with a private equity firm. Whose product is largely a per personalized purchase process. I fed it, you know, 20 screens that were involved in that consumer journey and gave it kind of a long prompt about the things that I were looking, was looking at, like, kind of step consolidation, improvement, gamification of the process. And what I was given back was kind of industrial grade, like it was, at a level that you would expect a senior analyst to come back with after, a period of time, including being able to go into, design wireframes. And so, know, analysis of a complex funnel from the point of view of, of the actual experience on, on the desktop or on a mobile phone. Fed into the machine, breaks it down, makes recommendations, and looks at and visualizes the way that it would be on the other side. is, it's not just like it's 10 or 20 cent percent more efficient, it's like 95% more efficient or, or, or more. And, and, and then, and then there's one other thing that happened this week where, I challenged a friend of mine who's an attorney that thought that his firm would be severely impacted, particularly at kind of junior and intermediate levels. you know, I've had firsthand experience with the firm. I've had five of their lawyers on calls, either documenting what's said on the call or breaking it down afterwards and creating kind of, basic le legal documents. I. course the senior people that have seen a lot that know the right questions to ask, that know where the risks are that are, you know, ex extremely valuable as kind of, you know, senior advisors are, are, you know, still and will for a long time be vitally important. But he said to me, listen, I'm gonna hand you, I'm writing a, a, a a piece for pro bono work I do for an international nonprofit. I'm gonna give you. He's like, I don't have time to write the piece, but I do know what I want and here's 10 documents that form that kind of foundation of the legal opinion. Show me what you can do with this in, in five minutes. I handed him back an essay and he was shocked and he shouldn't be shocked to be honest. because, you know, we all ought to be playing with this, particularly people that are in, you know, potentially impacted in professional services, but like. I guess what I'm saying to anybody that uses this stuff is just pretty obvious. finding the new models with OpenAI to be just staggeringly good, to be honest. I can't imagine now, like, say six months in from time I really started to use it actively. I can't imagine it not being part of my day-to-day and like, like a, a total wingman in everything I do. how it makes me a much, much more effective and efficient analyst. And, and so when you talk about the other shooter drop, Brian, I'm like, I mean it if, if, if the white collar stuff is easy, Pickens, it's gonna happen and it's gonna happen really quickly and it's gonna happen faster when there's economic pressure.
+
+[00:16:31] Brian: Yeah, for sure. And that's why I think like we're in this sort of in-between period where, I mean, we talk about it a lot where it hasn't, I don't think people have fully grasped that these models are improving tremendously. And when you start to try to do some piece of analytical work with it and you get a result that is like, wow, this is amazing.
+
+And it'll be easy to like nitpick different things with it, but it's like. This is not how it, it's not gonna stop here. It's gonna keep getting better. And I think that we're in almost this golden period where it's a little bit of an arbitrage, broadly speaking, in that the people who are using the tools are able to be way more effective. But then at the back of their mind should be like, wait, this stuff's gonna keep improving. And like, I could be Xed out of this process, at some point.
+
+[00:17:21] Troy: It, it's just like, the places where I find it actually frustrating are important to highlight. So, you know, we write this newsletter every week that com kind of a companion to the pod, and I wanted to articulate the, you know, I'll feed it a bunch of stuff, carefully, feed it a lot of links and a lot of inputs, and wanted to write something with a kind of clarity and a new idea and a point of view. And I find that I can never get what I want. In fact, I wrote something about my Ben Smith derangement syndrome I had felt like the intention that he received on that stupid, oh my God. Look at the Silicon Valley elites are
+
+[00:18:05] Alex: We should talk about that. It's way more, it's way more interesting. It's way more interesting than, than what we're talking about now. So we should probably move on to that.
+
+to talk, talk about that Alex. and has issues. I.
+
+[00:18:16] Troy: these glasses, Alex is, is terrific with ai. Like I'm walking in the botanical gardens, I wanna grow a flowering shrub. I look at it and I just say, what is this? And it tells me, and you know, I'm ready to go.
+
+So
+
+[00:18:33] Alex: just like to close? 'cause Zuckerberg's talking. Let me, let me, can I say a few things about ai because I think we're, we're rehashing all ground here, but, the way we use AI today and, a lot of us like, kind of like the normies use AI today is very much, we're just interfacing with a chat.
+
+we're, we're interfacing just with a chat interface and, and, and
+
+[00:18:54] Troy: in this story? I just wanna follow along.
+
+[00:18:56] Alex: I mean, you are normie. Yeah. we just use the chat interface. We kind of have this, this core interface that we, apply to every, everything. Well, we're not, well, we haven't. Seen yet enough of is specialized tools. And I think those specialized tools, tools are gonna make a huge, huge difference to the capabilities of these things.
+
+Even with the current models. Even with the current models. over the weekend I was, testing stuff out with an engineer that's really good at, at using ai and the way he uses AI is completely different. Like the, the way they use them with kind of those, those code editors and stuff like that. It's not just prompting, which you can do.
+
+But they create these kind of XML structures of rule sets so that the AI just delivers information and creates things within the rules that they've defined. They, they create checklists and ask the AI to pause and say, Hey, once you've built this, let's check in and come back. And the AI is tracking a, an ongoing checklist that is kind of this running document of stuff.
+
+Like we, we don't really do much of that stuff when we just, interface with chat GPT. And I think as, as tools, become easier and easier in, in, in more specialized ways, we'll see, we'll see a lot of improvements there. secondly. Separately on the glasses thing. Glasses with AI and speakers in it.
+
+They're great. I had the meta glasses, they're great. I just don't wanna wear something with cameras on them. It makes people uncomfortable and I understand why, but having, having glasses with headphones in it are great. the future isn't glasses replacing phones? It's glasses and phones. I think they're just going to become a companion thing to the phone.
+
+Most of the compute should be on the phone. The reason meta is pushing glasses that replace phones is because they don't own the phone ecosystem. I think once Apple re releases their own glasses, things change. and as so, as long as Apple doesn't completely shit to bed with, with ai, things will be great.
+
+
+[00:20:43] Group Chats
+---
+
+[00:20:43] Alex: But we should talk about the, uh, Ben Smith, derangement syndrome because I'm like, I'm a little confused by it. What happened this year, this week?
+
+[00:20:50] Brian: Well, Ben Smith, I should say Ben Smith from Semaphore. he published a, I thought it was a very interesting piece and So he wrote a piece called The Group Chats that Changed America. Okay. It's a little bit, it's a little bit of an extreme headline, but you gotta sell these things.
+
+And basically, you know, he got into one of these big group chats that has a lot of the, the tech elite and various other characters, including I. Former, Brian Goldberg was in there, right? Like for a former PVA guest was, was, quoted in one of these, group chats. And the idea is, you know, these things are happening.
+
+They're on signal. this one was, was on signal. They're in various other places. And I think what the article was meant to do, at least for me, was to sort of pull back the veil on the sort of private conversations that are taking place among our new elites. And, this, this somewhat triggered Troy who has a history with Ben.
+
+We have to put that out there.
+
+[00:21:51] Alex: Yeah.
+
+[00:21:52] Brian: ' cause I don't want to get shit from Ben too. I'm, I'm just, I'm an intermediary, as I said, I'm just, I'm just a middleman. That's all I am.
+
+[00:21:59] Troy: am not asking you to take sides on anything, and I have no, I, I'm, I'm only saying that it was kind of. Of, I think it got more attention than it deserved that elites or anybody else for that matter, using group chats or move to group chats during Covid. Shouldn't surprise anyone that they're circling around the sort of Silicon Valley big mouths, like Mark Andreessen should come as no surprise Vet Anderson, that, that a 16 has media aspirations manifest in chat groups or whatever should come as no surprise. there, there's a quote in there that, that, that kind of sums it up. And I guess that, that, you know. This, I guess maybe it's interesting to some people, it was interesting to, you know, for Vanity Fair to write an article accusing these terrible elites of hypocrisy for investing in open platforms, but huddling in their own private platforms, which is absurd. Okay. And then this
+
+[00:22:59] Brian: Hey, you gotta find an angle. Troy. Look, I respect the hustle. You got deadlines you gotta produce.
+
+[00:23:05] Troy: not the, that's not the excuse that, that this constitutes dark matter. Come on, man, and that, that this is the single most important place in which a stunning realignment towards Donald Trump took place. You know, I, I just find it to be like bullshit.
+
+Actually what happened is lots of people across the country changed their point of view on how the country should be led, including all kinds of people that you wouldn't expect, women, minorities, et cetera. And this stunning kind of realignment in American politics didn't come because of elites on chats. Right.
+
+[00:23:44] Brian: I'm more interested in the media format of group chats.
+
+[00:23:47] Troy: on an a 16 chat as the sort of like high priest of like, new, new right thinking is not what converted these guys. I'm
+
+[00:23:57] Alex: I think you are underplaying. the interest of a story like this. I think to me, you know, there, there are a lot.
+
+[00:24:05] Brian: is high end gossip. We love
+
+[00:24:07] Alex: Yeah. I mean, this is a look, first of all, like, let's, let's look at, let's look at kind of like the, the, Hey, let me, let me fa you've, you, 
+
+stop. Mark Andre, us, let's just go a level, let me take a step back. Why, why these stories are interesting to start with, right? First of all, like the story reads about a lot of like, kind of like, you know, elites talking about themselves being a victim and feeling silenced so that they have to go into these groups where they're the only places where they feel free to talk.
+
+No, no, no, no, no. I mean, here's why people like this story. So it's a lot of grievances. It's a lot of stuff like that. then the population, right, has a general distrust of big tech right now. And the fact that they're talking in channels or whether they were talking in channels or the country club, or in an underground bar, or at a, you know, Las Vegas, you know, penthouse, it doesn't matter.
+
+It's just that they were doing it and that there was this radicalization. and, and that the, the obsession and radicalization is also interesting. The fact that they're on there 24 7, you see them on their phone all the time and they're just on dozens of chat rooms talking to each other. That's a behavior that's interesting and maybe not entirely healthy.
+
+And then, and then, and then, and then when, wait, wait. Lemme let, lemme finish. Is that true? Have you met these people?
+
+I
+
+I mean, it's even, it's so the amount of, the amount of talking and the amount of, of texting and tweeting that happens like on a day-to-day basis. And, and the re radicalization that happened is all true undocumented.
+
+And when we say, look, the fact that they just invited Curtis Jarvin on this very specific, very elite social channel is not a big deal. Like that guy is like a monarchist. Have you heard him? He is, he is also not particularly like insightful or intelligent, but it is just like, this is wackadoo shit. Right?
+
+So
+
+[00:25:57] Brian: is your case? Like this is an interesting story, like
+
+[00:26:00] Alex: it is, it is an interesting story for these reasons. For these reasons. It's an interesting story. Now, you know, the, the, the, the language and the flourish around it, maybe you can disagree with, but it's like, it's an interesting story. Why wouldn't people want to hear that? That's crazy.
+
+[00:26:15] Brian: Yeah. I'm like, because there's gonna be more information, like the LLMs will take care and AI will take over all of the, the sort of information that is visible. There is a case be made that the future for journalism is just this, it's finding all of the, what you called or they called the dark matter, the stuff that's secret.
+
+[00:26:33] Troy: to turn it into a story because the future of journalism is bleak and because they feel themselves being like pushed away from the conversation because they're not involved anymore. Yes. Elites in Silicon Valley are a desirable punching bag. I understand that. But may not be part of the conversation Ben Smith because, because the power of media is dwindling, because the hap, the conversations are happening around and out outside of your purview.
+
+[00:27:06] Brian: Okay, but the job
+
+[00:27:07] Alex: That's, that's fine. Yeah.
+
+[00:27:09] Brian: their way into those rooms, not to be invited into those
+
+[00:27:12] Alex: So is.
+
+[00:27:13] Brian: this was in Fletch. I mean, he disguised himself as the waiter. I
+
+[00:27:16] Alex: Yeah. And, and, and isn't like there, there's even a quote by like Chris Christopher Ruffo, right? This conservative guy, which is 
+
+[00:27:23] Troy: I looked at these chats as a good investment of my time to radicalize tech elites and, and this radicalization. I mean, it did happen. You could say that. Well, they always felt that, but you know, they felt like they, they couldn't talk about it. but we've saw, we've seen the radicalization and the shift in real time.
+
+[00:27:40] Alex: The All In podcast, all these folks. That's all where it's happening. There's like, there's this,
+
+[00:27:45] Brian: in this chat or
+
+[00:27:46] Alex: yeah, I don't think he's invited to any chats.
+
+[00:27:49] Troy: Ask
+
+[00:27:50] Alex: He is just the only one that knows how to, he's the one that knows how to set up. But, but,
+
+[00:27:54] Brian: and Jason have a chat
+
+[00:27:56] Troy: don't know Alex. You don't know what went on. Not only that, I have all kinds of group chats about things you might find disagreeable. I have
+
+[00:28:04] Alex: That's fine.
+
+[00:28:05] Brian: to you.
+
+[00:28:06] Troy: find
+
+[00:28:06] Alex: fine. That's fine. I'm sure. I am sure you do. But I, what, that's not, that's not the issue here. The issue here is that there's like incredibly powerful people that are, there's, that are more powerful and wealthier than ever before. rubbing elbows with people with very specific ideas.
+
+Now you might agree with those ideas or disagree with other ideas and making, plans of how to kind of change and impact the, the, the go the government and, and impact. Impact who is in power. And it, it worked and therefore it's important.
+
+[00:28:37] Brian: are the new smoky room, right?
+
+[00:28:39] Alex: Yeah.
+
+[00:28:39] Brian: that is the thing, and it's journalism is about, is about getting into that smoky room where the decisions are made. Nobody smokes anymore. Seemingly, everyone vapes, at least in Miami. And so the
+
+[00:28:50] Alex: Since.
+
+[00:28:51] Brian: is the group chat.
+
+[00:28:52] Alex: Yeah. And, and so I, I, I don't understand the issue with reporting this, is it upsetting that these, I,
+
+[00:29:01] Brian: was, was, was screenshotted.
+
+[00:29:04] Alex: I mean, is it like upsetting that like, oh boy, these poor billionaires, they can't even have a little bit of privacy. I mean, this is not like Lady Diana being chased into a tunnel, man. This is somebody saying these guys had these conversations. There were some wacky people in those groups. There's some wacky people that were having these conversations.
+
+[00:29:24] Brian: this is Ben Derangement syndrome. Ben has a history of doing this. He's, he is, he is a muckraker of his own kind. If you remember back in 2014, he got invited to like an Uber dinner with like, and the old thing was like these tech companies would like do these off the record dinners and invite journalists and try to work the refs, right?
+
+And he was invited. I've been to these, so many of these and you, they're all off the record and you have like some wine and and whatnot and you get ideas and, and they try to like that they're great people and, and Uber did this, you know, and they forgot to like. You know, tell Ben that it was off the record or he didn't agree to it or whatever.
+
+And then he reported on it because they were saying that they were gonna, you know, they, Emil Michael had a few glasses of wine. I was like, I'm going after like, the information for leaking this stuff. And it became a mini scandal. 
+
+[00:30:12] Alex: I, I don't have much love for Ben Smith or anything like that. I just don't understand like. and I, and I think the way he writes stuff is, is, is probably in inflammatory. And, and, 
+
+[00:30:24] Troy: Brian likes Ben because Brian feels feelable. Okay.
+
+[00:30:28] Brian: well, as Ben Ben's been on my podcast and he said like, we,
+
+[00:30:31] Troy: it, it is my least favorite thing about you. But it's, you know, I, there's so
+
+[00:30:35] Brian: okay, that's good. I'll
+
+[00:30:36] Alex: I feel, I feel like I'm stuck between my two parents and they have, you know, there's like, one of you hates, hates Uncle Tom and the other one loves Uncle Charm. I'm the kid in the middle and it's like I can't have an opinion.
+
+[00:30:48] Brian: I understand. I understand. I understand the game and it's, it's, it's okay. I, I, to me, what is interesting is not that stuff, it's, it's group chats as like a media format. Like I think that that is really interesting and I do think that there's something there that this could have been
+
+[00:31:04] Alex: I also like disagree with, like this has always been happening. Every time something happens on the internet or with technology, people say, well, this has always been happening. The scale, the scale of the internet and the access and the 24 7 ness of it. And the fact that you don't have to move to a place and sneak into a back room to do it is a difference.
+
+Like it's happening and it's happening across multiple things. And there's hundreds of conversations happening here and there. People are being added and removed and, and man, I'm sorry. Like we've seen some of these people get radicalized like in real time.
+
+
+[00:31:38] Zuck Derangement Syndrome
+---
+
+[00:31:38] Troy: even it, it's a nice transition actually to my, I guess I don't know if it's another derangement syndrome. I, I do on occasion. Brian, like listening
+
+[00:31:48] Brian: We got a new TDS episode. Troy derangement syndromes. All right, go on.
+
+[00:31:52] Troy: I found this week in Zuck to be interesting. CC Can we go there?
+
+[00:31:58] Brian: he have a new, does he have a new look? That dropped.
+
+[00:32:01] Troy: He's wearing the
+
+[00:32:02] Brian: Okay.
+
+[00:32:02] Troy: But,
+
+[00:32:03] Brian: But the chain is still there and everything.
+
+[00:32:05] Troy: about it to me is surgical, it was a strike this week for him to go out and select three environments communicate him, his company message. And those all corresponded to dimensions of his, you know, personality, right?
+
+Or his character. was, Ben Thompson. Theo Vaughn for the kind of bro meetup, and the third was Dke for hardcore tech talk like AI tech talk.
+
+[00:32:40] Alex: Mm-hmm.
+
+[00:32:41] Troy: kind of appeal to those different constituencies. He was remarkably different and I never listened to them all the way through.
+
+Alex, just to clarify, I thought personally the Ben Thompson interview with him was really, really interesting. And, you know, he, this one was funny because, you know, it was immediately at the beginning of the episode with Theo Vaughn. He starts, mark Zuckerberg starts dropping the F bomb. And I've never heard him kind of do that.
+
+And then he talks about stuff like this, like you can see on the screen, you know, his. transmission Cadillac, the sculpture that he made of Priscilla with that famous artist,
+
+[00:33:17] Alex: Yeah.
+
+[00:33:17] Troy: boy antics at Harvard, like it
+
+[00:33:20] Alex: Yeah.
+
+[00:33:20] Troy: cast.
+
+whereas the one with, with, with, with Ben Thompson was really about innovation and business models and, and where they're investing at at meta. And one of the admissions from Mark made sort of three admissions, you know, on that podcast or several, but one was glasses becoming the new phone or augment, augmenting the phone in material ways. I happen to agree with that. the second it was, idea that he's kind of given up on the feed as a place for interaction and he's admitting per our previous conversationthe conversation happens in chat and the feed is for feeding. Discovery happens in his feeds, whether that's Instagram or Facebook or whatever, and everybody then takes those cues and moves them into chat. And chat is curated. SA chat doesn't suffer. And this was an interesting point, I thought, when you have your friend groups, have this whole group of friends that sort of is a static entity or phenomenon or group of people, whereas your chat groups change all the time, right?
+
+Could be your family, group of friends, business circle, like my chats are really, you know, dynamic. And so, you know, basically what he is saying is chats are the new feed from a interaction perspective. People don't, don't, don't do stuff in the feed and in public. And that as a consequence, WhatsApp becomes much more important to their business in the US because it's a laggard behind iMessage in the us. It's much bigger around the world. And, and, and so he, he's sort of admitting to, to a, a major shift in how we use social technologies. I thought that was,
+
+[00:35:04] Alex: I'm glad he read the memo. That's good. He read the spreadsheet and saw the data, so now he knows. I, I, I don't, I don't find him like just insufferable. And once again, now people go like, oh, he just got the, the new upgrade where now he uses F words and maybe he's moves his head a little bit more.
+
+The guy's been playing it, it's the same guy. It's the guy that did the hot or not clone in college and then, and then stumbled as wind and being, acquiring. He's ruthless. He's very intelligent, but insightful. He is not, of course, the glasses, of course, glasses, you know, things in front of your eyes are going to be an important part of, of computing.
+
+It's going to have to work with the phone. So it means like io iPhone and Google. and I think like he's doing a, a media blitz right now because they're threatening to pull a, pull out WhatsApp or Instagram out of, of things. He's still rebranding his personal image by the way.
+
+He comes in last. Last, even after, after Elon doing, you know, the, the, the Roman salute, he comes in, last in in people, in, in, in, in people's lists and even among the tech list. I'm,
+
+[00:36:10] Troy: it's gonna win you a lot of points. I get it.
+
+[00:36:12] Alex: I'm not, I'm not going to win a lot of points. Like I think you can hate on Ben Smith for very valid reasons, but me, I've been pretty, pretty consistent about Zuckerberg and I'm like, what, what is the value to what he brings right now?
+
+[00:36:25] Troy: I wanna make a counterpoint, just a brief
+
+[00:36:26] Alex: Yeah, yeah,
+
+[00:36:28] Troy: very few become CEOs and maintain control of their company and their product stack in the way that so has
+
+[00:36:39] Alex: yeah, that two tier shareholding system has been really valuable.
+
+[00:36:43] Brian: Could he have done that without all of the sort of downsides that like, you know, Alex has mentioned. I think that is ultimately the question because I think a lot of us
+
+[00:36:50] Alex: Sure
+
+[00:36:51] Brian: have a vision of principled leadership, and I don't think that is necessarily
+
+[00:36:55] Alex: never,
+
+[00:36:55] Brian: in, in Mark Zuckerberg.
+
+[00:36:57] Alex: I never said he is not successful.
+
+[00:36:59] Brian: and they're both very successful. I think what might call into question is whether this sort of hackneyed view of what it takes, quote unquote, in order to like, be like, get to the top. You know, we want it to be, you know, the person who is a paragon, a virtue of perhaps it's not, perhaps what's needed is to be completely ruthless and at times, frankly, unethical, maybe.
+
+[00:37:22] Troy: I kinda agree with you guys on that, and I find him mostly dislikable, but, but what I did find is because he sat in that seat and seen so many trends and kind of the, the broad product evolution of a company, and in fact an industry that he largely created, I find on a show like Ben Thompson, who's a great interviewer with incredibly deep domain knowledge that it ends up being a really informed conversation. That's why I liked it. It's not a, a, a, a judgment on Zuckerberg morality.
+
+[00:37:55] Alex: but you know what, like in this day and age, more and more, I find it important to gauge people on their morality. I think it's, I think, I think the time we used to just like, gauge people on their successes is like kind of over for me. Just, I, I dunno, people might have heard this from the podcast before, but I had a little bit, I had a little bit of a gag order talking about Zuckerberg when I was at Airbnb, because I, isn't this, I disliked him then.
+
+And I always thought that, uh, the decisions, the decision that he makes aren't, aren't great. And I think the decisions that we're gonna see happening on these platforms, where they're trying to just, I mean, at the end of the day, he just wants to build more surface area for advertising and maybe,maybe that's good for everyone.
+
+[00:38:40] Brian: Do you think that's the case?
+
+[00:38:41] Alex: Yeah.
+
+[00:38:42] Brian: he cares about advertising. I think he thinks, I mean it, if there's one he doesn't show up at, can, he went like one year. Like he, he sends like people like three levels below him. That's how you know that
+
+[00:38:51] Alex: But he wants, I mean, that's the money, right? Like that's the money.
+
+[00:38:55] Troy: with Ben Thompson, which is what I'm going back to what he said, in
+
+[00:38:58] Brian: Yeah.
+
+[00:38:58] Troy: not judging him as a character, he
+
+[00:39:00] Brian: Sure.
+
+[00:39:01] Troy: advertising in a way that terrify people It's the full on black box characterization. And really what he said is there's three components to advertising.
+
+There's the creative generation, there's the targeting and there's the measurement. And he said, increasingly, we can do all of it for you. All you have to do is give us your bank account or credit card, and you just essentially,
+
+[00:39:27] Brian: Yeah,
+
+[00:39:28] Troy: for the world the way that you turn on and off business, depending on how much money you have.
+
+[00:39:33] Alex: And to this, to this, to this
+
+[00:39:35] Brian: is dis as
+
+[00:39:36] Alex: e exactly. And to this, and, and, and this is why they're going to fill your feed and, and even maybe your conversations with AI so that there's more space to put advertising, and more signal. And, and Ben Thompson even says The best black box of all time to which Zuckerberg says Yes.
+
+It's like the ultimate business agent, so
+
+[00:39:54] Brian: Like people don't want to pay, people never wanted to buy advertising. They wanted to buy customers. They
+
+[00:40:00] Alex: Sure, sure.
+
+[00:40:02] Brian: this is, I can remember I've, I've said this before, but Tim Armstrong so many years or 20 years ago, I remember at the as play Starbucks. RIP to that Starbucks. 'cause it was a legendary Starbucks. he was laying out this system for me, and he said, what we wanna do is we wanna have a retailer upload all their SKUs. They only advertise like 3% of their SKUs. We want all of them. And then we're gonna just go to like, hyper target people and distribute those kus and we'll match 'em up to their customers.
+
+And th there's none of this, like, there's none of this advertising necessarily. It's just they're gonna tell us, they're gonna give us their SKUs, they're gonna give us like, you know, the economics of what they need to like, make it work. And we're gonna go out and we're gonna give them their
+
+[00:40:44] Alex: And, and this is, this is fine Brian. I understand that this is the way this is going, and even, even in a perfect world. That I would like. There is no more advertising and just showing me product that I want, a product that I want to buy and it connects me directly. There's no friction there. The problem is, the problem is that this company has shown time and time again that its crop our user's attention, right?
+
+And that they will do everything they can to,you, you know, kind of. Make that user's attention, grow, even though there's not much left. So I, I appreciate that we see him as kind of this business genius because he saw what TikTok dig did, and he's looking at the WhatsApp, data and says, oh, people care about feeds.
+
+And most of the conversation happens in chat. Like, duh. Right? But the thing is that he's going to be very good at is, is just ruthlessly going, how do we suck more out of people's attention? What gets people going? What are the words that we put in front of us? And we're gonna have a, we're gonna have this company try to completely reprogram us, so that we be, we become the surface area for advertisement.
+
+[00:41:49] Brian: syndromes now.
+
+[00:41:50] Troy: you know, I would say that after he finished describing, the black box, he then went on to do two other things. He said, the other business we're in, that's algorithmic new, driven is feeding you content in our feeds. And as
+
+[00:42:05] Alex: Woo. What?
+
+[00:42:06] Troy: away, as AI takes away,the necessity of work, there will be time, more time for. What did he characterize it as? communication and culture or something like that. Like, and we are going to fill up your time with our feeds. final thing he said that you will probably find even more disconcertinghe said that he was a little bit, disconcerted by the fact that the average human these days has three friendships and they are the connections company and they want you to have more friendships, whether those friendships are real or, artificial, whether they're ai. And so he's betting that he can create. satisfactory virt or, or AI driven relationships for you, that, that they are the company that gives you your little robot friends and your robot therapist, which he suggested that everybody should have one.so,
+
+[00:43:07] Alex: not be the person in charge of.
+
+[00:43:09] Troy: that to me sounds a little terrifying to be
+
+[00:43:11] Alex: Well, of course, because he should, he has proven time and time again that while he is successful, he should not be the person in charge of what is becoming 20, 30%, 20, 30% of people's engagement, not only with media, but with their friends. Right. They had internal data showing that Instagram was causing body image issue and teenagers.
+
+Right. And they didn't do shit until that stuff got leaked because somebody internally had to leak it. Right. The these are not, these are the, the, the, like, I, I don't think you understand that. He doesn't, it's a harvested crop, and so it might be great for advertisers until it isn't. Right. But, but the thing is that they we're building these machines that are becoming not, it's not, everybody's kind of selling it as like it will know what you want.
+
+It's not that it will make you want something that you didn't want. That's what these things will do. And it won't only do it by now. Oh, well we used to have this bottleneck and I'm sure that they think like that. We used to have this bottleneck where we had to have other people create content that we had to feed into a feed so that, and, and line them up with ads so that it would engage you and get you to buy more shit.
+
+But now we're actually going to generate the content to change that behavior in you so you buy more shit. And I have no trust in that company that it's going to have any boundaries as to what, what's okay with that. And there's definitely no regulation that stops them from doing anything like that. So like mask, and I know I'm sounding like I'm wearing a tinfoil hat, but it's like mass scale reprogramming of, of people to sell them shit that they might not want and kids and teenagers.
+
+[00:44:48] Brian: Well, I, you know, a former Facebook executive, Sam Lessen, who's Jessica Lesson's husband. they have a good podcast. You should check it out. more or less, he, he does these weird like little screenshot, essays. I've mostly cut back on, on x. but I did see this one. and he talked about unwell people using AI as companions and therapists. And this is the part of the second and third order effects that I think, you know, Alex, you're talking about that Facebook has proven time and again, not to be good at. and it's basically like if anytime. You have used, I'm sure you guys have used chat, GBT to go back and forth about things like it's a total suck up.
+
+And I think they rolled back 4.0 because it was su such a suck up. And it will reinforce everything that you say. It'll never push back on you. And so every, you know, I think about that. I'm like, but I don't think like I'm unwell. but like, it, it will reinforce some of the sort of most like, crazy ideas that people have and the most extreme ideas that people have.
+
+Now, maybe that can be like reprogrammed or something, but you can, we've seen enough with how these social technologies have gone. you know, I think if, if you were to start Instagram today, it would be obvious how it would be used,
+
+[00:46:01] Alex: Yeah. Yeah.
+
+[00:46:03] Brian: purposes. But it wasn't at the time because again, these first to order, these, these, what is it?
+
+The first principles, thinking people are really terrible at second order and third order impacts. So. I recommend checking out the SAM
+
+[00:46:16] Alex: I mean it's, you know, I think it's why the, the, the, the, the Freud Empire became this big advertising and marketing firm, right? This has always been about like psychological manipulation, and it's just becoming better and better and better. I think you can probably build tools that are great. I mean, I try to train my ais to be a little bit more critical because they're not that useful.
+
+[00:46:38] Troy: Freud's grandson started a PR firm
+
+[00:46:41] Alex: Yeah. I think, I think there's a, there's a direct co correlation there. be, because all of this stuff is psychology and manipulation, right? Advertising always has been right. Maybe I'm, maybe that's a stretch. But, I think when it comes to even the power that these feeds have, which is why the, the fear of TikTok is I think, valid that you can, you know, change opinion with feeds, that you change opinion, just by the way you reprogram feeds, which is existing content that people have made.
+
+Now, once you're also creating the content, once you're pushing people to have relationships with AI agents because they don't have enough friends, that's how you solve the friendship problem. You make up friends, you give them like one of those wi fu pillows with the anime character on it so that they can sleep and then talk to the ai that's going to make a very, very healthy society where.
+
+[00:47:32] Brian: skills you end up needing to have are being high agency as the Silicon Valley people say. Being willing to get to start quickly, as Troy likes to say,
+
+[00:47:42] Alex: Yeah.
+
+also having self-discipline. Because like it is, it is just, you know, we are a very individualistic society and as Alex says, regulations are not gonna come and, and keep us from our girlfriend pillows as he's showing right now. and so it is gonna be on every single person. I struggle with it too, with my, with my ex addiction. Like, you know, I am, I'm trying, I'm trying my best. I think I would be better if I had a girlfriend pillow than than a, an ex addiction. Yeah. I don't know.
+
+[00:48:13] Brian: he brought it with him to, where is he at the temple. It's a little weird,
+
+[00:48:19] Alex: He brought it with him to the temple. Maybe he's getting married. yeah, like, I don't, I mean, I, I, I get, I, I, I'm, I'm sorry I got so angry, but Zuckerberg can eat shit. I think that company is just like, it's just like such a net negative on the world. And then, you know, they, they're really good at acquiring, they're really good at seeing around, like I said, like he sees around corners that other people built, and he's very smart.
+
+And then he uses, the might of, of, of, you know, like when he bought WhatsApp, you know, people thought he was crazy, but that's also, it's easy to make crazy bets when you're sitting on crazy amounts of money. And he's a very successful CEO. He's very talented at what he does. but I don't think, I don't think he, he considers the repercussions of his actions.
+
+[00:49:05] Brian: But is your beef with him mostly that he's not like any more like an innovator or, I don't know if he ever really was a
+
+[00:49:10] Alex: No, I mean, I think that's kind of like the, the, the, the, the thing that annoys me is when. People like take, the things that he says as, as, as like, you know, a directional look at the future when a lot of what he says is just repeating known tropes or just looking at what data you thoughts aren't Yeah.
+
+Your already the normies that have the same thoughts that just see like a billion Look man, he is, he's wearing, he, he, he got jacked and he is got a change. So he's just reading out a spreadsheet, dude. He's saying like, you know, like, well people aren't having con conversations on feed. Well yes, like TikTok could have told you that TikTok could have and now there's more activity on, on, on chat groups.
+
+Yes. That's because that's the stuff that people liked about, Facebook when they could just have their friends and talk to their friends and they're moving back to that. And, iMessage nearly helped your, your.
+
+[00:50:01] Brian: do you guys think about though? Just to circle back to the group chat, like group chat is like a media format, like, 'cause I, LeBron has this, this media company and, one, his, one of his like advisors Sky, Adam Mendelson, he, he, he has this company called o off Ball and they're trying to do like the Drudge Report for sports, but they, they're do, they did a partnership with, you know, LeBron and his, his company in order to do a, this rolling group chat during the, the, the NFL draft where it was like LeBron Mav Carter, his like business manager who's like also a quasi celebrity I guess these days.one other guy who I didn't actually know, but it was basically like their group chat, Doreen. That the, during the draft, and then they were joined by CJ Stroud and people could respond, you know, with this, this WhatsApp community product, they could respond to it, you know, but they, they, it almost like felt like they were part of the chat, even though like LeBron wasn't necessarily responding to like every like, random person who was, who was chirping at him. but I, I think, I don't know, I, I wonder how to integrate this, this group chat thing into, you know, a media product
+
+[00:51:13] Alex: I think it's a great idea. I think there were some startups that tried that. and I think our friend Michael Sippy, Troy had had an idea of kind of, kind of the chat show, which was kind of a, a podcast, but that was handled in chat. And I think, I think there's like likely also a way of, selling access, even just view access to ongoing chat groups.
+
+but part of that, I mean, I, you know, really feels that like, some of the stuff that Substack is doing with their chat feels like that. Right. Like we could move our WhatsApp chat,to, to substack.
+
+[00:51:48] Brian: P-V-A-P-V-A Platinum,um, we just talk in Substack. I mean, it will mean that Troy needs to hold back a little bit and not yell at me.
+
+[00:51:56] Alex: So hard. People might, people might switch sides knowing,
+
+[00:52:00] Brian: should see how, how difficult it is to get this, get
+
+[00:52:03] Alex: yeah. Hey, Troy, here's this camera that you should buy. Go fuck yourself.
+
+[00:52:08] Brian: Troy's like
+
+[00:52:09] Troy: You
+
+[00:52:09] Alex: Troy, by the way, you look, you look, you look, you look, you look, you look so good on this camera. You look so, you look so good. You look so good.
+
+[00:52:19] Troy: misrepresentation. What we could find out in the group chat is that you're incapable of booking a meeting and that you're massively passive aggressive
+
+[00:52:28] Alex: I know. I'm active aggressive today.
+
+[00:52:31] Troy: the best way to shut you down is to post so much that your little brain can't process the wall of
+
+[00:52:36] Brian: A little bright,
+
+[00:52:37] Alex: Yes. Well, I mean, it's hard to manage when you also have a job to deal with. Um.
+
+[00:52:43] Brian: like, I, I do think that there's something, 'cause Alex, you, you've made the great, you know, point that, you know, media's going in a participatory direction and participatory products are, are much stronger than, you know, one way communication products these 
+
+[00:52:57] Alex: Mm-hmm.
+
+[00:52:58] Brian: And I think about how in the post page economy, 'cause I have a lot of these dinners and I, I'm always asking, like this week we had one, I had two actually, but one with publishers. you know, I'm always asking like, what are your plans post page? Do you really expect to be, you know, depe in the, in the webpage economy in five years? And then I usually, I get the, well define a page when anywhere goes into definitions. They don't have an answer for it. That's my, like, when they say good question, to me, that means that they gotta think about an answer.
+
+[00:53:29] Alex: we do it? Shall we do it? This like starting, starting this time, like move some of the conversations to, to substack, just open it up. What I like about Substack is that also, uh, post, um, respond to it in a thread so it doesn't just become a wall of text.
+
+[00:53:43] Brian: well you see with the prompts, like Emily Berg does a really nice job of this with Feed Me. Where, you know, feed Me really started as it was just a broadcast. It was just Emily broadcasting out. But she was, you know, the comments section became really powerful and that's when I sort of was like, oh, she's onto something.
+
+Because, you know, Gawker had that, Nick talked about it, you know, the, the comment section and that's why he wanted Kenia to be sort of, you know, overtake it as like the main product as like a social network.
+
+[00:54:11] Troy: it. I think it would change the sort of intimacy in our group chat. I think it would become a very different conversation.
+
+[00:54:18] Brian: All right, let's invite people to the group chat. Are we worried people aren't gonna show up? I throw enough like dinners and parties these days. 'cause like that's what media is. that, you know, I get over the fear that nobody's gonna show up. People show up 
+
+[00:54:30] Alex: How did you do that? I've, I've, I've never lost that fear. Whatever I do, I think I'm just gonna be,
+
+[00:54:35] Brian: if you do, if you do like a hundred, like I was sitting at like a dinner like in Miami and like nobody was there. And I was like, with my client, it was like 15 minutes in, I was like, yeah, they're gonna show up.
+
+[00:54:44] Troy: God. That's a terrible
+
+[00:54:45] Brian: They did. They all showed up. And I appreciate all of you showed up. person that we both know Troy did not show up and I'm not gonna name that person, but that's okay. 
+
+
+[00:54:54] Epic Beat Apple
+---
+
+[00:54:54] Troy: Two other items in unrelated news, Brian, I don't know if you wanna take them up, but, you know, w we, with all this stuff you guys are concerned about and I think people are rightly concerned about the power of these interfaces and platforms and probably cheering on the government to kind of put a little more pressure on and break them up. apple was handed kind of a stunning defeat with Epic today.
+
+[00:55:23] Alex: Incredible, incredible,
+
+[00:55:24] Brian: still going on.
+
+What is it? Can you summarize it? Alex, 
+
+[00:55:28] Alex: I mean, this is, I mean, I'll summarize it to the layman, basically. the, the, the, judge got very angry at Apple. you know, exceptionally kind of just like pissed off they kind of got burnt by, by, by the judge.
+
+And basically the thing that they can no longer do is that they can no longer tell app makers, you're not allowed to send, people to an external link, like the thing that you couldn't do. And I, I want to remind people of that because it, you know, for folks outside of tech, it sounds crazy.
+
+Sometimes when you had an app and you wanted to do an in, in-app purchase, you could do it with Apple, which was fine. It's a fast way. but you could never, tell people, Hey, you could go on our website, you know, even without showing a link, but you could go on our website and get it there, let alone tell them that they could get it there for cheaper, let alone, make it a button that sends them to a secondary payment system.
+
+All of these things were illegal. were outside of Apple's terms and, uh, or services uh. 
+
+[00:56:24] Brian: called it illegal. It shows that, that they're the, the
+
+[00:56:27] Alex: I mean, they are right. Like, and I think it, it really, it, it, it, it's, massive, that now all of that stuff is basically, I mean, they will of course contest it, but all of that stuff is basically, being pulled back.
+
+it's pretty bad because, you know, the, the judge is saying that they lied under oath about, about their intentions. So, pretty big deal. pretty massive loss for Apple, who's already kind of getting beaten down in, in the markets, with all the China stuff. So, really interesting to see what's gonna happen.
+
+I mean, this opens up a lot. It, it's, it's, it's substantial what it does for people like, epic that can now just simply have a button that says, Hey, get your. You know, Fortnite, bucks over here or whatever. so Epic's already announced that they will, return to the App store. and, you know, they're, they're, they're running a victory lap right now,
+
+know, also back to the Zuck thing, sorry, Alex,so.
+
+[00:57:21] Troy: he, he characterized there was a time that you'll remember very well where on the internet, on the web, Facebook had platform aspirations and had created an environment where developers could make games and other types of applications. At one point it was that revenue was, 20% of Facebook's revenue, but as the activity moved to mobile, they couldn't do it.
+
+'cause basically Apple wouldn't let 'em do it. And in, in short, you couldn't build a platform on a platform. And Apple was the platform. So Facebook couldn't be the platform. This is a very important sort of historical thing because, in China, WeChat became a platform.there was always a risk, I think, for Apple, that somebody would build inside of their phone that would become more important than the operating system and the phone. you know, the control was exercised in lots of ways, but the app store was a big part of it. as that breaks down, I think what the upside of it is, is you get much more innovation. You're just gonna get more innovation, people doing better things on the phone.
+
+[00:58:36] Alex: Yeah. I mean, that's the hope, right?
+
+[00:58:37] Troy: it becomes really important now because all of these AI apps want control beyond the perimeter of their apps. I. If you want them to do each ethic activities, but it's hard to do inside of the app, of the, the, the sort of, you know, the, the, the apple constraint.
+
+[00:58:57] Brian: Yeah, I mean, imagine all the permissions you'd have to go through that Apple would pop up to for some kind of agentic app, like to get access to your email to get access. It would be, it would be endless. I mean, they would say it's about privacy, obviously. But it's about control usually.
+
+[00:59:13] Troy: It's interesting. 
+
+
+[00:59:14] Trump Cabinet Influencers
+---
+
+[00:59:29] Troy: The last thing that came out of our group chat that interests me was that article you shared Brian from the Wall Street Journal sort of Trump metastasizing down to the cabinet where they're all participating in social media now doing the
+
+[00:59:29] Brian: They're all influencers. 
+
+[00:59:31] Troy: so you can watch Pete, Seth do pushups and stuff with, you know, the troops or you, it, it, it's, it's
+
+[00:59:38] Brian: Kristi Noem. it Kris Christie? Kristi Noem, the the Homeland Secretary. I. she's like, she's out there, she's like going on raids. She's, she's unsteadily holding like, a, like a machine gun and scaring the shit outta the guy next to her because she's not, doesn't have good muzzle discipline or whatever.
+
+I don't know. I don't either, but I don't also cosplay like I'm a homeland security agent.
+
+[01:00:04] Troy: is, is naive to this, but I sort of, you, you can see a world where, on the, where was there a CVS interview? Was it CABC interview last night? Trump, where
+
+[01:00:16] Brian: yeah. 
+
+[01:00:17] Troy: you 
+
+[01:00:17] Brian: He was like, you're a nobody. You, this is your big shot
+
+[01:00:20] Troy: Yeah. Then the interviewer who was you know, a sort of secondary character, 'cause Trump refused, what's his face?
+
+it was the, the main anchor,
+
+[01:00:31] Brian: Stephanopoulos.
+
+[01:00:32] Troy: because he refused Stephanopolis and one other person. Anyway, the, the point is, he said, well, what about tourism? You know, like all of this is really dampening it. And he said, tourism is great. Everybody's coming.
+
+[01:00:44] Brian: Yeah, Canadians are definitely flooding Florida for sure. They're not, by the way.
+
+[01:00:50] Troy: so I guess when I, when I read that Wall Street Journal thing, and I, and I imagined a world where you had, know, your cabinet selections via casting, where you had them all sort of creating this kind of fake reality on social media you had, you know, like government agencies are creating some stacks and stuff.
+
+Like, it's, it's kind of terrifying that there's no intermediary there and that, that layer of bullshit becomes harder and harder for the opposition to penetrate
+
+[01:01:19] Brian: But I think it's a sign of, of what it, it's gonna be a core skill to be, to this go direct playbook is not just in tech, it's in politics, it's everywhere. And so in order, to me, it's like a core skill you need is to basically have your own sort of media arm, like in some ways. And you bring that, that's part of, that's not like a, it's like, think about David Sachs, right?
+
+At first when they hired him, I was like, okay, well he's going from like, all in podcasts is super awkward. And what's clear is like they're using that as an asset. That's not a liability that's moved over to the asset
+
+[01:01:53] Alex: absolutely. Absolutely.
+
+[01:01:55] Brian: goes on there, he, he communicates the, in his very like rabid. And I think he's, he's, he's a great part of that podcast.
+
+In his very rabid way, he, he puts the case out there, again to a very important constituency. Just as like Zuckerberg has finally gotten good, I'll give him a lot of credit. He's gotten good at this kind of communication, right? He was an incredibly awkward and poor fit for the kinds of communication that was required, that used to be required of CEOs, like formal presentations at conferences.
+
+Guy was terrible.
+
+[01:02:32] Alex: I think what
+
+[01:02:33] Brian: with a journalist. I mean, legendarily awful.
+
+[01:02:36] Alex: it used to be much harder to do these interviews because I think people used to think it was much more important, not to say the wrong thing. And I think over time, over the last few years, we realized that it doesn't really matter if you say the wrong thing here and there.
+
+The, the media ecosystem moves so fast. So a lot of the boundaries of what you can talk about have been loosened. And a lot of the execs are now just not having to kind of think through every single word that they say. Right? I mean, it used to be, when I got media trained, it was like very specific.
+
+It was actually very hard to have a normal conversation because the whole time you were, in this world where, you know, the, you, you gotta give them the soundbite that's going to go in the thing. Don't, don't veer off that, don't say anything about Mark Zuckerberg, you know, do these things. And now I would say that a lot of, this training has kind of gone out the window, which, leads to people just being more comfortable, right?
+
+They, they just notice it doesn't really matter. And there's always somebody out there saying, saying something crazier than you are. you know,
+
+[01:03:36] Brian: that's a positive development 
+
+[01:03:37] Alex: I
+
+agree. 
+
+[01:03:38] Brian: that goes to what you were trying to say, what you were trying, what you were saying, Troy, about like, a lot of, a lot of journalism is seizing on like small things and, and sometimes rightly and sometimes wrongly, like making a big bigger deal.
+
+Bigger deal about them. Right? And we talked about this with the technology brothers. What is TBPN? You know, they, they'll seize on like one like sentence of, of like testimony and then talk about it for like a half hour. And you know, this is just one. Part of what people said. so I think it's overall a good thing, but I think the, you know, the downside obviously that comes with that is, don't even know what's like, yeah, I, I spent a lot of time in this information space and like something like that, that guy, they, they, they sent to El Salvador, the MS 13 tattoos on his knuckles.
+
+Like, I honestly don't know if, if he had tattoos on his knuckles, if they had anything to do with MS 13 
+
+[01:04:33] Alex: I
+
+think it. It wasn't, well, you should give a shit, but it wasn't, it was more Ms. Paint than it was MS 13.
+
+[01:04:39] Brian: Yeah, I assume it was like photoshopped in there, what I saw. And then it's just like, you just argue it to the death then you create some kind of plausible deniability or just enough noise that like eventually it just sort of blows away and looking
+
+[01:04:54] Troy: why it worries me. You have this cast of characters using a playbook, fating out going direct. I just feel like it's harder and harder to get information that piece Wall Journal really sort of like, I was like, wait, what is the other side gonna do to fight this? And there's just not a lot of good examples yet. If it's piker and, and, and, and Bodi J and, and like,
+
+[01:05:20] Brian: WW
+
+[01:05:22] Alex: I mean, there's a lot, I mean, there's, there's a lot. the Bulwark is one of those things, right? There's like the
+
+[01:05:28] Troy: I can't help but always bring it back to high school, as you know, and kind of rabid, kind of right wing kind of goofballs were always really good at this stuff.
+
+[01:05:39] Brian: Uh, yeah.
+
+[01:05:39] Troy: it was like born 
+
+[01:05:40] Alex: I don't know. I kind of, I kind of like, I, I thought that the Ezra Klein on All In with, um, Sachs, Sachs just sounded like he was constantly just blowing up and getting angry.
+
+[01:05:53] Troy: I, I thought, I thought the all in guys ended up getting the best of them, to be honest.
+
+[01:05:57] Alex: Really well. I mean, that just maybe proves shows your bias, but like, I thought like, they just,
+
+[01:06:02] Brian: Summers is not made for that environment too. He like goes off on the Larry Summers. He is like, okay, I'm gonna now talk for 13 straight minutes. 
+
+[01:06:09] Alex: speaking of which, I, you know, what I'm, I'm angry for, um, why I'm angry for Zuckerberg because he didn't only bring on teen depression, but also Chamath, I blame Zuckerberg for Chamath, another light on this world. So there we go.
+
+[01:06:25] Brian: A lot of hate. A lot of hate in this episode. Do we have a good product? Should we do a good product?
+
+
+[01:06:32] Good Product
+---
+
+​
+
+[01:06:34] Alex: good product is going to be a Substack chat. Look, I'm about to post something on Substack chat to get it going, and I've got a picture of Troy here, shall I do it? Yeah, let's do it. I'm doing it. Look at that. Look how good you look, Troy. Look at that.
+
+[01:06:49] Troy: with you in that.
+
+[01:06:50] Alex: Yeah, sure. I mean, you still using the background blur like an old grandpa, but it's, it's fine.
+
+[01:06:56] Troy: it is worth reflecting on just as we finish this conversation that, you know, basically stuff is litigated on podcasts now. And it wasn't that long ago that the podcasting was a very marginal medium. And we talk a lot about newsletters as being, you know, an important kind of wearing down the, the kind of traditional media complex, but newsletters are really niche and, you know, podcasting bridges niche and mass audio video, it really is the most important media format,in the world.
+
+[01:07:30] Alex: I agree. I, I, I, I'm just, I'm gonna gonna push back on, on one thing. podcasts, were kind of relegated for a really long time. Podcasts have been around for 20 years, and for 20 years they were just, you know, they were always kind of like a tertiary thing that people used, and it's one of those things that we thought was dying with the old internet, but it, it has this weird resurgence.
+
+I don't think it, it's really interesting actually because it became kind of this truly democratized way of pushing content out. But also I think the format it turns out was one that we always liked. And, you know, I mean, I think it makes sense. You know, thousands of years ago we would sit around and watch two Greek dudes and I.
+
+You know, robes argue over shit. Right? And it's, and it's, and it's the same thing. It's like, 
+
+[01:08:21] Brian: the Greeks. The Greeks started the group chat. 
+
+[01:08:23] Alex: the Greeks started the group chat. That's the title of the episode.
+
+[01:08:28] Brian: Do we have a good product outside of group chats?
+
+[01:08:31] Troy: Well, you know what it is. I'm wearing it. It's a good product.
+
+[01:08:34] Brian: What is it?
+
+[01:08:34] Troy: I like what Alex said about the camera. I'm talking about the RayBan meta glasses.
+
+[01:08:39] Brian: Oh.
+
+[01:08:39] Troy: had it as a good product, perhaps?Alex made a good point that the, the glasses are kind of front to privacy. I. And I get that the gla sorry, the camera. camera's essential though, because the, one of the most important use cases is AI and camera together so that it can, you know, deconstruct what you're seeing automatically.but I'm pretty convinced that is a major, major wave of device and interface innovation and that little things like walking out my front door and just saying, Hey man, what's the weather right now is much nicer than typing into my phone. And
+
+[01:09:20] Alex: Yeah.
+
+[01:09:21] Troy: my connection to the world, because I don't have, silence,that, that the AirPods,give me, is nicer so I can kind of hear what's going on around me and talk on the phone and listen to a podcast. And it's, pretty nice. 
+
+[01:09:35] Alex: I mean, the, the, the reason I returned mine, I really love them. I thought they were great for the reasons you're saying. You, you, you know, because AirPods are also a great AI device, but they're kind of in your ears. Right? And, and even with transparency, it is, it's odd.
+
+I've been looking, and if anybody, one of on our audience knows, one, I've been looking for a pair of glasses that doesn't have the camera, that just has the speakers. and it's either that the cameras need to be, way less prominent or there needs to be something that closes up in front of them because even today, I mean, here's why I think the phone's not going anywhere.
+
+Number one a, a screen, like a, a, phone that that is fully universal, that you can show someone, that, that, that has a way to interface with your fingers. That we are always going to have that in our pocket. I think we've reached a, a pretty, kind of like foundational computing device. Glasses are going to be additive, which means you'll look at your phone less hopefully.
+
+And, and then I think the other thing is like the socializations of cameras, which at first, you know, when cameras came out on phones, people were uncomfortable that the phone was even on the table. Then it became, you know, pretty naturalized. But to this day, if you hold up a phone, I want you to try it out.
+
+If you hold up a phone camera facing to somebody's face, they get uncomfortable. They don't want you to film them. Right. And I think the cameras, on the glasses are always doing that, and that's going to be a really big shift for people to accept that. over time I think it's going to be a big shift and I, I really hope and wish that Apple just releases glasses with, headphones and microphones in it that connect to your phone and then you can use your phone's camera when you want to communicate with the glasses, because I think that's just like a socially much more appropriate way of doing this.
+
+[01:11:19] Troy: Yeah, that's the MO and integration with the phone. Just like you know, the Apple AirPods. Is is always gonna be better from Apple.
+
+[01:11:28] Brian: So, let me ask you this. With the, like when you put the camera on, is there like a flashing light or something
+
+that tells people, 
+
+[01:11:35] Alex: There's a little dot, there's a little indicator.
+
+[01:11:38] Brian: because it's, it, I guess to me, and maybe this is just the in-between period, like it's antisocial to wear around, that kind of thing. Like it's just is.
+
+[01:11:47] Alex: Yeah. I agree.
+
+[01:11:48] Brian: Like I've seen like videos where someone's like, that's a camera, that's a camera, that's a camera. To some like guy who's like talking to like a woman.
+
+Like, and I don't know if that's indicative, but I just think we're at a, a point where, I dunno to go around like wearing a camera on your face seemingly surreptitiously is antisocial behavior. No offense, Troy.
+
+[01:12:08] Alex: But they're great.
+
+[01:12:09] Troy: take it.
+
+[01:12:10] Alex: I, I would, I would, buy them in a heartbeat if there was one with no cameras. They're very
+
+[01:12:14] Brian: I I hope they don't take off. I really do. 
+
+[01:12:17] Alex: what you don't want, I mean, imagine, and it, you, you want them to imagine there's them taking off and there's them taking off and meta wins the day. If meta allows, if meta is the one that wins that,you know, platform shift, then they're gonna have plenty of surface area to, to, you know, get you to buy shit.
+
+Wow. That's, that's just like a wet dream for them.
+
+[01:12:42] Brian: just imagining going to like the font and blue for the possible and like talking to like someone and they're like looking at their emails while they're like talking to me, like on their,
+
+[01:12:52] Alex: I would say that the possible conference that the Fountain Blow would be one of the first places where you would see those broadly distributed. I, I'm pretty sure it was, back in the day, it was a Bluetooth headsets, conference. 
+
+[01:13:04] Brian: it's a hive of antisocial
+
+activity. 
+
+[01:13:06] Troy: at the ad tech table.
+
+[01:13:08] Brian: I did make a joke about that because there's, you know, there's so much swag at these conferences and these, those little like, plastic, you know, fans to keep you cool. And I was just thinking that like, oh my god, these things are gonna be made in Wisconsin and they're gonna cost like 20, 25, $30 a pop.
+
+So we might get less conference swag, I guess that's okay.
+
+[01:13:26] Alex: It's all landfill at the end of the day, so that's all good stuff.
+

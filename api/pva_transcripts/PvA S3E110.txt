@@ -1,0 +1,683 @@
+PvA S3E110
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian: you're a big fan of London, right?
+
+[00:00:02] Troy: it's my favorite city to hang out in, to visit. Yeah.
+
+[00:00:05] Brian: I think it's better than New York in a lot of ways. 
+
+[00:00:07] Troy: you like the social kind of, dimension to like this one? Things I like about it. I like going to the pub. I like talking to English people. I like talking to
+
+[00:00:16] Brian: oh, they're my spirit animals. I like them.
+
+I feel 
+
+[00:00:19] Troy: They're a little cranky. They're funny. 
+
+[00:00:21] Brian: that's me.
+
+[00:00:21] Troy: know, 
+
+[00:00:22] Brian: That's what I'm trying to be. 
+
+
+[00:00:24] Intro
+---
+
+​
+
+[00:00:47] Brian: Welcome to people versus algorithms. I'm Brian Morrissey. Each week I'm joined by Troy Young and Alex Schleifer. Alex is joining us a little later, right? we're doing this. Thank you for doing this a little bit early. I'm in London. I've been here all week. 
+
+[00:00:59] Troy: I've noticed it's like, it's little things. They have trees. They have parks. It's clean in most areas. very, it's very beautiful.
+
+[00:01:07] Brian: no, there were no homeless people sleeping, in the subway station or on the streets outside of my hotel, at least, unlike home in Manhattan. there's a lot to, there's a lot to say about London.
+
+And then I go and I compare it to. You know, all the doom and gloom economic figures that come out of Europe these days, because the United States is decoupled from, from most European countries. But it's one of those things where it doesn't really show up. Like when you go to visit these places, you're like, I don't know, the food's better.
+
+Like the lifestyle seems better. People seem a lot more chill. And, I don't know. There's always this disconnect. It reminds me of how for a generation I've been reading about what a failure Japan is. And then I go to visit, like, It's pretty, it's pretty awesome.but those are the days we live in. 
+
+I mean, if, you know, the weather's horrific here. So, I would never live here in a million years because of that alone. So don't 
+
+[00:02:02] Troy: There are moments of glory, but they're, they're intermittent.
+
+[00:02:06] Brian: It's funny because when I have conversations with publishers here, because we have, a lot of the publishing industry, it's, it is a lot of like this doom and gloom stuff because like, you know, they keep getting hit with different things and it's like a lot of this woe is me and I'm usually talking with American publishers.
+
+Right. And then you come to like a market like this, that is so much smaller. Then the U S market and like people here are like, you know, honestly, us publishers should be really thankful that just by like accident, they happen to be in this massive market. I mean, just test budgets. you know, someone who was telling me last night, they were like, yeah, if we had a test budget here, they're like 25, 000 pounds.
+
+And then well, like us colleagues, like, yeah, I don't know. They can only do a test for like 750, 000. I don't think Americans in general recognize the amazing sort of Unearned privilege of just being in this market. 
+
+[00:02:57] Troy: it's the, it's the global scale market. The other thing is, is that because of that, I think the UK British market is, is, and has always been very transactional. you know, there are, the rewards of a, of a pint or a dinner and notorious, you know, kind of media spending on lavish dinners and stuff with media buying buyers.
+
+But The media buying process in England is way more sort of churn and burn. Just like get the IOs, get them done. Like small numbers of people processing lots of orders. And, the other thing is the comparative market, like money supermarket, which is like the affiliate business in. in the UK is it doesn't really exist in the U.
+
+S. It's way more sophisticated there. So they actually have a really, really robust sort of services affiliate market with, you know, a small number of players that do. Kind of the comparative stuff that, you know, the equivalent of an Expedia, this money supermarket that compares everything from, you know, cellular phone plans to, you know, mortgages and credit cards. So there's parts of that market that are very sophisticated. I find that there's less of the sort of, Oh, we'll do. You know, an event and create a bunch of content and, you know, these sort of sophisticated brandy, multi dimensional us, you know, insertion orders that, that get you to your 500, 000 or a billion or 2 million, level. And it's just like, you know, what are we going to do? How do we. You know, I want to buy some media. So it's, it's a very transactional place on the media side.
+
+and then, the kind of, media market on the newspaper side is, is brutally competitive and far, far harsher than the American,
+
+[00:04:48] Brian: yeah, I think that's why that is what that is why, U. S. news organizations are bringing in the Brits. They're more feral. they're used to doing more with less. I mean, I always hear people here. Like, they're just, I guess they would say that gobsmacked or Michael Wolff would say that at the size of teams still in in the U.
+
+S. it's a function of. Massive market, but just shows that, you know, when you're going into more with less, I think people are used to it a lot more here, but one of the things that keeps coming up, here, but also when I was back in, in, in New York, is around the future of search. And we've seen, this is a recurring theme here, but I don't think it's 1, we can actually.
+
+Under emphasize because the search is so critical, to this industry and it is going through a lot of profound changes. How would you frame, you know, cause I ask, I asked publishing executives that these somewhat lavish dinners that I like to have, I don't want them to call them lavish, but, they're semi lavish, I asked them for like topics at a time.
+
+And then, you know, I run it through like Claude or something for like key themes. And it's always AI. AI and search is always the number one, whether it's, you know, UK or last week in New York. everyone is concerned about the future of search. They're already feeling it. Google's less reliable than ever.
+
+and this week, you know, Google confirmed one of its, you know, big changes is really how it's treating, Affiliate content, because it is now really coming out and it was taking some manual actions, but it's saying you can't outsource the stuff. I was talking to a publisher last night who, you know, going back to the same thing.
+
+It's like, wait a second. Newspapers were, oh, he's including coupons within the, the, their bundle and, and third party content. To which my response was, well, they kind of controlled the distribution. And when you're not controlling the distribution, you're not really in control. And, you know, that is, a simple fact of life.
+
+It feels like for publishers these days.
+
+[00:06:48] Troy: I guess at the highest level, it feels like we're between eras, doesn't it? You know, and, you know, between when I say eras, I guess they're distribution errors or sort of almost from a consumer perspective, the way we. You know, navigate access,and, and kind of control the, the content experiences we have. And I think that when you're between eras and every era, it would seem to me is kind of defined by a central force, be it a company or a constellation of companies manifest in a kind of navigational mechanism. Like, so, you know, TV had the program guide and it was, Relationships between the cable companies, when the cable networks and, there was a, there was a kind of, stability to that, to that relationship and the relationship with the customer and the radio or had the same in the newspaper had kind of local monopolies and, and the stability that came along with that and, and like it or not, you know, there's a, a sort of, a bunch, I think today of nation states that are controlled by, You know, the people that that own that distribution point in that technology and set the rules and, you know, Facebook sets the rules and all of their, you know, little fiefdoms or kingdoms and, and, know, tick tock does the same.
+
+And, you know, everybody that owns, you know, a large technology driven kind of community or distribution system sets the rules. Google sets the rules largely for the open web. And now they are, You know, being attacked from multiple, kind of vantage points, they're being attacked by the government.
+
+They're being attacked by as, as a, you know, antitrust, accusations they're being attacked by, you know, publishers for changes to their, you know, you know, reliable distribution, they're being attacked by consumers because people think that the search results have become, filled with ads and unreliable.
+
+So, and, and they're being attacked by competitors. So the, anybody that's a avid or, has kind of worked chat GPT or perplexity or cloud into their, kind of information. routine or diet, knows that, that this is, this is going to change pretty quickly. So I, I feel like, the justice department outlining that they should either, you know, pushing the judge to either force Google to sell Chrome, sell Android, or force, Google not to have the dominant search position on Android. and to, to refrain from paying for positions in Apple and others for Safari and search, or I think actually most profoundly, give others the search index data, right. To give them the ability to run the Google search feed. And that's the one that I'm kind of most interested in, to be honest, because,
+
+[00:09:36] Brian: Explain that because like, I, I assumed that it would be, I am not a lawyer.I assume that it would be a behavioral, sort of ruling that they would say, okay, well, you can't, you can't buy distribution the way you bought it from, from Apple. And that would 
+
+[00:09:52] Troy: well, I think that, you know, 
+
+[00:09:53] Brian: clean, but this is, it seems very clear that they, that the government is going after a structural, that they think this is structural.
+
+And I can see that because, 
+
+[00:10:02] Troy: I mean, my, my biggest criticism of this, Brian, is that they're way behind because
+
+the, the gut, no, but like Google's hegemony is being eroded without the government.
+
+[00:10:15] Brian: Well, this is Microsoft 2. 0. Microsoft's hegemony was.
+
+[00:10:19] Troy: don't think of Chrome as being a browser, think of Chrome as being Google's homepage, all Chrome did is push the search process up into your nav bar on, on, on, on Chrome, as opposed to using, you know, google. com as a place that you go. No one goes to google. com anymore. You just type it into the browser window.
+
+So it is effectively a. You know, an appendage of Google. It is, it is the Google homepage. So, you know, if you take away the Google homepage, remember Chrome has 67 percent of the, of the browser market. I mean, that, that is. It's pretty fundamental. Not only does, not only that, but it opens up questions as to, you know, who's going to pay for, who's going to pay for Chrome, Chrome moving forward.
+
+Like would Google then have a business, would, would they, would they be prevented from having a business relationship to buy search traffic from whomever is the next owner of Chrome? So I think that's, that's kind of, Not the right move. And, and I, and I also think we should remind everyone that monopolies or quasi monopolies sometimes create a lot of stuff that is a benefit to the world. Right. Like we get a lot out of this system, just like AT and T's monopoly created bell labs created, you know, Silicon Unix,you know, a lot of the foundational technologies that, that, that, that. You know, define our world
+
+today. 
+
+[00:11:53] Brian: Well, we might be getting self driving cars thanks to all those search ad clicks. Thank you everyone out there for 
+
+[00:11:58] Troy: yeah, for way more. Yeah. Yeah. 100%. So if you looked at this and said, we want more innovation in how we find information and how we support the media market. in, in how, you know, the spoils of advertising are, are, are split among the, all of the constituents of the ecosystem, you might say, let other people have the data and the search feed so that they can run. you know, there's clear network effects in, understanding how consumers are using the internet and manifesting that in better search results and better at performing ad placements. And if you were to open up. That search feed to other competitors, someone like perplexity or chat GPT. Like if you use chat GPT today and the most compelling use cases when you're looking for contemporary information and it connects, you know, the, the, the LLM to the, to the web index and you get a result back that, that's, you know, current, right?
+
+If, if people had access to Google's search feed, they could make extraordinary products without being Google. Like the consumers would get really crazy stuff.
+
+[00:13:08] Brian: Yeah. And I think that, I don't know how you feel about this. When Alex gets here, it can, it can, it can go off, but like, it would be most ideal if like innovation solved this quote unquote problem. Right, rather than the government. I don't know about the government choosing, you know, to, to how markets should be shaped.
+
+It's clear. It's clear to me, at least that this, this market is, probably not ideal from an economic perspective. I mean, I was sitting next to a publisher last night who was lamenting, you know, basically how Google can destroy entire. Entire websites and not even like small websites. They can, they can destroy the biggest 
+
+[00:13:45] Troy: They can literally take you off the map. You do not exist to the world. One manual
+
+action 
+
+[00:13:51] Brian: that's true. They have true cancel culture power. Like they can cancel 
+
+[00:13:55] Troy: take you
+
+off the map, destroy your business.
+
+[00:13:59] Brian: and they've done that. Well, like
+
+[00:14:01] Troy: price grabber. Nice. I like that. I used to cover for price grabber DM news. speaking of price cover, this actually came up last night. Do you know pro rata dot? a I, bill 
+
+Pro Ri Bill Bill Gross's thing. That's going to try to cut more reasonable deals with the media market.
+
+[00:14:19] Brian: so they're cozy. And their angle is they're cutting deals. They kind of deal with a bunch of UK publishers and the daily mails parent company. took a stake in, uh, ProRata, and apparently they're coming out, I was told, in like February, I didn't fact check that, and I think it's interesting. I mean, Bill Gross is sometimes forgotten.
+
+It, he is the, the godfather of paid search, at go to and then overturn and Google quote unquote borrowed it for, for themselves and, and perfected it. But, I don't know, it's, it's, I think if the market could solve this, that would be the ideal, like, I just don't know if structurally, like you said, that's what makes it pretty interesting.
+
+This idea of giving people access to, the index because, The market has failed to innovate on this, on, on, on this model at all. Like there's never been anyone when, when Microsoft can't, can barely make a dent, it's a sign that, this market's really difficult to, to have be competitive.
+
+Alex is here. 
+
+[00:15:21] Alex: Hey, 
+
+[00:15:22] Brian: Are you in a sauna?
+
+[00:15:24] Alex: I'm in San Francisco.
+
+[00:15:25] Brian: Oh, same.
+
+[00:15:26] Troy: yeah, so you're in a sauna,
+
+[00:15:28] Alex: I'll let you finish. It sounded like you were talking about interesting stuff.
+
+[00:15:31] Brian: We're talking about Chrome. We're not talking about politics yet. We were going to wait for you to come for Elon hour. 
+
+[00:15:37] Troy: let's carry on this point. And then Alex can
+
+interject. 
+
+So first of all, my concern would be that dicing up, Google at the level of like cutting out Chrome would make for a shittier world for consumers. And that what I would hope for is, a way to unlock their data, to create more innovation, to create better products for consumers and that. The, the innovation cycle, is sort of solving this problem for the DOJ anyway, but, and just to bring it to some examples, you're seeing it right now along the way.
+
+Many, many publishers are going to get hurt. The context of this is. Let's face it, depending on the publishing category, you're in affiliate revenue, which is, you know, just to, to, to, to remind folks is essentially writing about products, whether that's an extension of your lifestyle coverage, or actually as a kind of consumer reports, like function is has created a world of performance marketing that the buy side that marketers really like, because they pay for. Leads, they pay for business, they pay for results. So it's worked really well. And out of all of the bullshit advertising solutions that sadly the internet has spawned that have not worked, that literally people have traded in for 20 years. Banners, stupid content marketing, you know, stuff that I would say has been kind of, you know, the best thing to come out of this sort of banner industrial complex was like retargeting via Criteo, you know, like, you know, of all that stuff, you know, affiliate is actually a trackable performance oriented product.
+
+And then like anything, everybody rushes a show and you get, you know, too many people making the same content optimizing for things that are. You know, financial and not the, the, the wellbeing or, you know, needs of a consumer having said all that, 20 to 40 percent of people's revenue, 20 to 40%. Now, if Google's intent on a wiping out that layer and bringing it to the search interface and or new, new players are, and I don't know if you've seen perplexities, new product cards
+
+[00:17:58] Brian: Yeah. Well, wait, perplexity pro that one,
+
+[00:18:02] Troy: But what I could do is I could say, I saw a query, which we'll share in the notes, was around what are the best Patagonia ski, should I buy this sort of entry level Patagonia ski pant, or should I spend more and buy, you know, the Gore Tex more expensive version? And then. Basically, the LLM breaks down the query into a multi step set of questions goes out, explains to the consumers the trade off between product a and product B.
+
+By the way, all of that content has been. Kind of created by the blood, sweat and tears of the affiliate, you know, industrial complex that publishers have kind of sweated away to make money at. And then it lists the products in a card with the kind of pros and cons and lists them all out. And then you can query it, you know, nine more ways to Sunday to get all of your questions answered and.perplexity is going to start bringing those,less sort of, an agentic function to this, to allow you to buy the product right from there, which I actually think is the least important of this whole thing. Like you can go out and buy it from, you know, mountain equipment co op or from, you know, from Patagonia. com or wherever you buy your stuff. I don't think that's that hard for consumers anymore. The organization presentation of that information is a stunning thing. advancement in how you get information about a product stunning.
+
+[00:19:32] Brian: isn't this, I mean, so, I guess it's like the two things can be true at once. one, this is terrible for publishers, but two, this is really great for consumers. It sounds, it sounds, it sounds better to me than wading through a bunch of like links from, 
+
+[00:19:45] Troy: And now, direct from Sonoma, California, Alex
+
+Schleifer. 
+
+[00:19:50] Brian: serving you up, 
+
+[00:19:51] Troy: Over to you, Alex!
+
+[00:19:53] Brian: Go ahead. Cut the publishers
+
+down to size. They've 
+
+[00:19:56] Troy: He's, you know what he's gonna say? He's gonna say something super annoying like, I've been telling you guys this.
+
+[00:20:01] Alex: I'm not even doing that anymore.
+
+[00:20:04] Brian: spaceship is in the stable.
+
+[00:20:07] Alex: I mean, I think at this point you're all assimilated. no, I mean, it's, it's true. One has to wonder where the future of that content is coming from. And you're saying it's, you know, that a lot of that content is from the affiliates. I actually think a lot of that content is from Reddit and places like that.
+
+I think at some point, Even that you're just getting for free. The product is much better for consumer. 
+
+[00:20:30] Troy: No, you're very, you're very Musconian in your point of view here. That you think that the consumer we'll provide the information to solve for what media cannot when there's no business model left.
+
+[00:20:44] Alex: mean, a lot of these media businesses were essentially aggregation. If you look at, like, especially product stuff, right? I mean, I love the wire cutter. I think some of these products are great. But if, if you look at, 
+
+[00:20:57] Troy: It's just so fucking liberal.
+
+[00:21:00] Brian: Is that a liberal product? Woke
+
+products? Woke hair dryers.
+
+[00:21:05] Alex: but no, I mean, I think the, the dangerous thing here for all of these sites is that, that content is readily available.
+
+If you, if you, it's, it's just, it hasn't been accessible in a way that was compelling because, you know, it's, it's a nightmare to go through Amazon reviews. Reddit is, is kind of incomprehensible to a lot of people, but a lot of that source of knowledge is there and it's just going to be reinforced by their own search queries.
+
+I mean, I think for me, when I look at Perplexity, it's not like, are people are going to use, are people going to use this over Google? Is that, is that going, is that going to be the winner? Is open, open AI going to be the winner? I have, I have this,open AI resident program, on my Mac, which, which you can press, you know, on the Mac, you can press command space and it, it opens a search.
+
+All right. I've replaced that with something called Raycast, which already does a lot of AI stuff. But now I've also opened the open, 
+
+[00:21:53] Troy: Hold on. Wait, wait, 
+
+don't get too nerdy. No.
+
+[00:21:56] Brian: This is 
+
+[00:21:56] Troy: Alex, Alex, slow down, baby. What is Raycast? That sounds intriguing.
+
+[00:22:02] Alex: so when you press command space on a, on a Mac, it's kind of like you're on a, on a Windows PC. It's like pressing the Windows command and it opens a search box and that search box lets you launch application, find files, et cetera, et cetera. All right. it. 
+
+It's, it's something that was, it's something that you can replace with an app called Raycast and it adds more intelligence, more features, you can add your own shortcuts.
+
+Now, what came with the latest version of OpenAI on my Mac is that they say, well, if you press option space, which is the key next to it, it just opens up a little OpenAI like search window, right?
+
+[00:22:39] Troy: it. I got that. Yeah,
+
+[00:22:40] Alex: And, and, and just, but once you have that, the. user behavior that I have now, just,
+
+[00:22:47] Troy: That's the new Chrome,
+
+[00:22:48] Alex: it's, it's the new Chrome.
+
+And so, and so all of that's going to happen through these types of interfaces because I can be,
+
+[00:22:55] Brian: so Alex, is it that the DOJ, cause we were talking about the DOJ's, you know, remedy about, Hey, do you want, do you want, do you want a knife Chrome or do you want a knife, Android? And if you don't do Chrome, then we're going to come after Android and this structural solution thereafter.
+
+And this is always the case with the government. The government always fights the last word. They're always too late to, to the party. is this like. What's that? You hate the government?
+
+[00:23:21] Alex: Well, you're going to love the next one. I mean, 
+
+[00:23:24] Brian: is this the case? Like, I mean, is this, is the market actually already solving this problem? Like, I mean, it might take a little bit longer, 
+
+[00:23:32] Alex: I mean, the remedy seems like really, I mean, I, I'm usually pretty pro regulation and I think, Well, I mean, I also think like big tech is like, it's kind of stifling a lot of stuff down here, but, but I don't understand, first of all, what is a Chrome company look like? Like, how can it make money? That's a terrible business.
+
+you know, it's, it's,
+
+[00:23:54] Troy: Well, it needs a search
+
+[00:23:55] Brian: It's a 20 billion
+
+valuation 
+
+[00:23:57] Alex: it needs a search deal, which is one of the things that they're trying to stop them doing with Apple, right? Like, if you don't want these types of things, like, legislate that you cannot have these types of search deals with Apple anymore.there's
+
+[00:24:08] Brian: but this, 
+
+[00:24:08] Troy: Google, Google's Chrome is Google's homepage. Alex, that's it. It doesn't make sense
+
+[00:24:13] Alex: It
+
+[00:24:13] Brian: Consent decrees. I think, I think governments are over consent decrees. These companies have so much money. They just pay the fines. Facebook did consent decrees in Europe and there's like, whatever, we're just going to
+
+[00:24:23] Alex: No, I mean, I'm not saying, I mean, that is absolutely true. But I'm saying the remedy of there's other remedies that aren't just like separate Chrome, right? I think, because, because at this stage, like, there are different ways you could be, improving the marketplace.
+
+[00:24:37] Troy: Let other people run the search feed, Alex. And you've got to, you solve the problem.
+
+[00:24:42] Alex: Yes, or. Either way, it's, it's kind of late now because the new front has just opened up, right?
+
+[00:24:49] Brian: Well, that's what I mean, is this new front, like, going to solve the problem where the government, this always gets tied up in courts, no matter what, like, comes down. It's 
+
+[00:24:56] Troy: What's the problem to be clear. It's it's Google's market share.
+
+[00:25:00] Brian: Yeah, I think the, the mean, it's a is that. Yeah. This is a malformed market. It's, it's not functioning like a competitive market. I don't think anyone would say it is now, whether it's a 
+
+[00:25:10] Troy: fun, fun. Just, I just want to be clear about it. I'm not, I'm not functioning in the sense that, that a consumer is not well served by, by Google or getting access to information
+
+or features or something. 
+
+[00:25:20] Brian: I mean, the, 
+
+[00:25:21] Troy: What do you mean functioning? 
+
+[00:25:22] Brian: the typical, antitrust definition, I believe 
+
+[00:25:25] Troy: Google will tell you it's functioning great.
+
+[00:25:27] Brian: Yeah, it's consumer harm, right? And that Google will tell you that the alternative is one click away. They've been saying that for a generation. I think hipster antitrust would, would hold and it's become more popular across the political spectrum that when you don't have competition from other businesses, there's a lot of harm that comes downstream.
+
+Businesses can be harmed. Publishers can be harmed sometimes
+
+by Google's I think,
+
+[00:25:55] Alex: I mean, I think we're seeing it, right? We're seeing algorithm changes that,you know, can kind of, like, totally destroy businesses overnight because, you know, you're dealing with a duopoly on, on the, on internet advertising, you're seeing these crazy deals with Apple that, like, don't allow any new players to come in, you're actually seeing the overall quality of the search results, getting worse and worse, and you've seen an overall kind of, destruction of, of like the internet as it turns into more of an SEO factory than, than anything useful.
+
+So I don't know how much of that has come into play here, but I don't think Google's product is, has made the internet better for people. And if anything, like it's, it's stopped any, like, it's impossible to launch any type of, 
+
+[00:26:37] Troy: Yeah, that's a
+
+pretty narrow way to look at it. I mean, I guess just search. But, you know, Gmail was a revelation, if you recall. And Google Docs
+
+[00:26:45] Alex: But once again, Gmail, Gmail was, I mean, Google was a revelation. Google Docs was a revelation. Google Docs hasn't been updated for iPhones in forever. Google Sheets is a miserable product to use on that. They don't, 
+
+[00:26:57] Troy: Google sheets. I love Google 
+
+[00:26:59] Alex: Gmail 
+
+[00:27:00] Troy: What's wrong with it? 
+
+[00:27:01] Alex: well, I mean, if if you look at the, the work that they're doing, innovating on those products compared to the competition is they're not doing much.
+
+You can see that it's a company that's kind of like atrophying a little bit, on the innovation front. And then Gmail was a great product. They launched, you know, if you remember with one gigabyte, but today I think Gmail could be kind of, if people gave a shit about email, you cannot really, have an email client that isn't a Gmail or an Outlook or one of these large ones because spam has become such a problem.
+
+You really need to kind of, get your email from one of the big providers to, to, to get it, you know, filtered and whitelisted in a way. So like, I mean, all of these large companies have made the internet a little bit worse, but whatever the case, like at this stage, like pulling Chrome out of stuff is ridiculous.
+
+Like it just doesn't, doesn't work. people are 
+
+[00:27:52] Brian: Wait, so explain to me, I, I'm not, I'm, I'm unclear why it quote unquote wouldn't work. You're just saying nothing would, would, would change or it would change for the worse?
+
+[00:28:01] Alex: it's just like, it's a way to cripple Google, but I think it's going to hurt the consumers more than anything, because we might, what we might get to is an environment where we have like a misalignment of different browsers that work potentially differently, or I don't understand what the Chrome business looks like, and what the Chrome products looks like when it has to start making its own money.
+
+Like, at the very least right now, Chrome As a browser, it is incentivized to be a really great browser, so everybody uses the search, so it sends Google money, right? Once you don't have that, then you have to make a deal. And that's the types of deal that we don't want, right? We don't want these search deals on the dominant browser.
+
+you know, honestly, we, you know, we don't want it for Firefox. We don't want it for Safari. We don't want it for anything. but it's just gonna put another player that has another deal there. I don't know, I don't think that's going to be great for anybody. At the very least. Now most people use Chrome and the internet works pretty well on Chrome.
+
+[00:29:02] Brian: maybe they'll just have like sticky video ads that follow you around.
+
+[00:29:06] Alex: Yeah, that would be great. Like a whole, like lower third. Troy and I, Troy and I could come up with something.
+
+[00:29:13] Brian: it's not a bad idea.
+
+Open up a lot of video
+
+inventory. 
+
+[00:29:16] Alex: idea. I, there was a browser that did that, by the way. when I, when I, when I moved to the uk. You could get free internet, and you needed to download their own browser. and the browser had a ticker of AD that like scrolled at the bottom at all times, which, you know, took, took me like five minutes to
+
+[00:29:36] Brian: what was it? All advantage? What was that early internet? There was something like all advantage that did something very similar. People try to do that with like PCs, like free PC.
+
+[00:29:45] Alex: Or people are doing that with TVs now you can get a free TV that has a whole second screen at the bottom of the brush shows at, 
+
+[00:29:50] Troy: You know, let's 
+
+just to broaden it a little bit, though. 
+
+[00:29:53] Alex: up.
+
+[00:29:55] Brian: Good product of the 
+
+week early. 
+
+[00:29:58] Troy: every publisher. That is scrambling to deal with the new economic realities of a world that, where Google is less reliable is going to say, we got to go direct. Right. They're going to say, you know, focus on emails, focus on, you know, new forms of direct communication, like, You know, text messaging or WhatsApp distribution, the bold may say we need our own app strategy.
+
+Others will say we're going to invest more in YouTube or in podcasting and, The truth is so, so everybody will scramble to, to get more of your attention and it'll feel annoying and, and noisy. And I guess in that market, the best, the most differentiated, the most unique, you know, trusted voices, individuals that you want to follow start to, you know, emerge as a new kind of class of elite, you know.
+
+Information space characters, and then, the media world only gets back to some normalcy when a distribution system, emerges that is stable that has rules where it's sort of. Not quite turns into an oligopoly, but something like it in every generation of media, whether it was governed by the government's allocation of of spectrum or, you know, in the case of radio and television, or, like I said earlier, an ability to publish news content in a local market. Or a relationship between cable providers and cable networks, or in the magazine world, large rate bases and a in a newsstand distribution system controlled by basically 4 companies. something has to get back to something stable for media to pay people to have unions, to have any kind of, now it may just become, you know, this boutique business that looks more like your local coffee shop where there's, you know, small businesses and some breakout.
+
+And so there's some, it's like a star system, but if it's ever going to be like an industry, there needs to be a new. structure and nobody, nobody knows what the answer is because you can't see it in open AI. You can't, you can't see yet how media companies are going to manifest inside of this crazy smart interface in a way that pays people real money.
+
+[00:32:34] Brian: I would even go further. It's they see, it seems antagonistic to that. I mean, the, everything that comes out of these companies is that they, that's not,
+
+that's not really one of their concerns, maybe for like PR they'll cut
+
+[00:32:47] Troy: Yeah. And guys like Alex say, burn it all down. Who gives a f*ck You know, the information will come from the cracks and crevices and little monsters all
+
+over the 
+
+internet. that's a good brand.
+
+And And meanwhile, like his union buddies will be, you know, sleeping on his sofa.
+
+[00:33:07] Alex: Yeah, I
+
+[00:33:07] Brian: Make room on the ranch.
+
+[00:33:09] Alex: a lot of like, well, first of all, if you're waiting for the structure to appear, good luck. See, see, see, see you later. we'll see, we'll see when that comes up. But isn't, it's the playbook, man. I'm not, first of all, I, I think, a lot of 
+
+[00:33:23] Troy: Actually, your answer last week was just make good shit and the algorithm will find
+
+[00:33:28] Alex: Well, but I think, I think what happens is that these structures emerge and then big media companies emerge and they build some sort of dominance, which means they need to stop, improving their product and it, turns out that the product that they end up with, you know, like cable news or whatever like that is, is pretty 
+
+terrible, you know, like, well, I mean, baby news, you know, we, we just found out that Comcast is like, it's just like offloading all these, yeah.
+
+[00:33:51] Brian: These cable channels, right? Like, they're like the toxic assets.
+
+[00:33:55] Alex: I mean, this is like, this is the managed decline, but it, but, but just 
+
+[00:34:00] Troy: but I want to, I want to create a new podcast around that called baby news.
+
+[00:34:05] Alex: we should, This is the tech playbook when, you know, Napster came out, you know, Napster was the first iTunes. It just, You know, you start, it's, it's that don't ask for, permission, ask for forgiveness, right? and then, you know, Google did the same thing, right? They didn't really ask at first. YouTube didn't, the same thing. YouTube became popular because it was pirating. and then they become the platform. And you know what? Every time on these platform, maybe except for music, which was like It has this really kind of solid structure.
+
+They don't, the platforms don't want organized large media companies with negotiation power to be on those things. They want the Brian Morrissey's. They want like a million Brian Morrissey's. They don't want a thousand
+
+[00:34:49] Brian: Not
+
+[00:34:49] Alex: Comcast because a thousand Comcast are paying the ass. And, and 
+
+[00:34:54] Brian: very pliant. Just cut the check.
+
+[00:34:59] Alex: Advertise perplexity. Like, we'll, we'll, we'll shill for it. the, but that's the playbook. And so whatever structures come up, I think they're very rarely friendly to large organizations. and, and so that's something to look out for.
+
+[00:35:14] Brian: Sort of makes the, the tech world's embrace of Trump seem like it makes sense.
+
+True disruptor. Who knows what's going to
+
+happen? so one of the things that, that came up
+
+[00:35:23] Alex: mean, when you have landed in New Zealand in a private jet, then, you know, that's, Things are
+
+[00:35:27] Brian: That's true. I plan with house money at that point. one of the things that came up at the new growth agenda was from one of the publishing executives, big publisher, right? it was basically just about the misaligned incentives and how you create any system that replaces with this, this current one.
+
+With incentives to, to create like really good content. Cause I think the, the internet is mostly to me been like kind of a failure when it comes to professional publishing. Right. I mean, I think there's a lot of great amateur publishing, whatever you want to call it, you just call it user generated content.
+
+I don't think it's necessarily a healthier information ecosystem than what we had before. Like I really, it's hard for me to say that. That if you're thinking about it as like, are people overall more informed on that side? I don't think so. It doesn't seem like that, that really worked out and the incentives were always, and publishers admit this, you know, the incentives were always to create, you know, crap.
+
+and then there's, they're not set up by publishers. They're set up by, by Google and the people who are controlling the interface and are upstream from them. And I always go back to the, the, the jump to recipe button. Like, that's what. You created this Google, all of that backstory that everyone has to do.
+
+You created this, you created all the incentives that have, and publishers get, chase the incentives and then they get whacked for it. And it's like, 
+
+[00:36:53] Alex: I mean, it's,
+
+[00:36:55] Brian: one of the, so this publisher is like, are we just going to go towards, you know, AI demand media, basically.
+
+[00:37:01] Alex: my hope is that AI, does push us towards, less fluff, right? Because the, the SEO era, led us to create, content that was readable by machines and humans needed to kind of like walk around all that mess, right, to try to get to the content. While AI is about recontextualizing, it's, yeah, the AI product is really about putting content in front of people that they really want with as little as friction as possible.
+
+That is a lot of issues with that, but I wonder how that changes the incentives, you know? And instead the incentives are no longer SEO.
+
+[00:37:37] Brian: did either of you see the Ben Affleck semi viral,
+
+[00:37:40] Alex: Yeah, he spoke a lot of sense.
+
+[00:37:42] Brian: Yeah? What was your, I think some people were surprised, although I feel like Ben Affleck regularly pops up to remind you that, like,
+
+[00:37:49] Alex: Well, I mean, I think Ben Affleck and, Matt Damon are actually like both pretty savvy Hollywood people, right? They, they kind of rose up with, with their
+
+[00:37:58] Brian: He had a viral video that was great about why Hollywood doesn't create good movies anymore. Cause they just went by the, and on hot 
+
+[00:38:04] Alex: yeah. yeah. On hot ones. Yeah. I mean, I think he, he made some good points. I think the main points were that like AI will, is like having a craft person, right? Like it will replace a lot of.
+
+kind of tasks, even quite creative one, that you would usually hire a lot of craft people for, and that I think was, you know, was relevant that it's gonna, is gonna come for things. I also think that AI is going to generate a lot of trash content, but thankfully we'll also have AI to filter through it.
+
+[00:38:35] Troy: Yeah. It's, I think it's important to not be too cynical here and say that while big algorithmic distribution systems can create. perverse incentives or incentive misalignment so that people create Spam at scale the the kind of open shelf You know construct of the internet meaning You know, it's not controlled on, you know by a couple of companies on a timeline like broadcast television has has really allowed for Remarkable, delivery of content to interest to niche interests. Right. And, and so, you know, one of the things, just a little thing I wanted to get off my chest is in media, people can, can get really, like they can make it too complicated in terms of trying to figure out, well, what, what is your content strategy or how do you organize a media company? Well, the simple answer is you find. A group of people that are not well served by a certain, you know, from an information perspective and you gather people that can serve that interest and you do something better than someone else or differently than someone else with a format that makes it easier for the, you find someone who doesn't have what they need and you give it to them,
+
+And so like I was thinking about this, like the podcasting world, you know, we had, you know, talk radio forever. And your choices were really limited. And you listen to what you listen to in your market. And now we have infinite channels of talk radio. And if you're tired of listening to the sanctimonious Kara Swisher, and Scott Galloway, you can tune into America this week with Matt Tebe and Walter Kern. Right. And they are a different sort of substrate of expertise as a podcast. Like there's just so many ways to get your needs satisfied. Similarly, if you can't stand baby news. On CNN, like go to X or go to
+
+where you, wherever you go, Alex, go to threads or go to YouTube, go to watch channel five on YouTube.
+
+Oh my God. Right. This sort of like kid making gonzo programming with, you know, an iPhone. So, you know, on, while there have been instances where we've, you know, spam consumers through a choke point, like Google, there's also like. an infinite library for the interested. There's so much good stuff.
+
+Alex shoved this in my face.
+
+I could not believe that Jimmy Fallon had the boom boys on let you know, the Costco guys that do that
+
+stupid tick tock thing. We bring the boom. We bring the boom needs. You know about this,
+
+Brian. No, and it's like, it's like, I guess at best it's an average family from Boca Raton that's kind of unattractive and you watch it just because they're so ridiculous. And so there's this, you know, this kind of hate watch thing going on. And then I don't understand, I don't understand
+
+[00:41:54] Alex: the kid is called the Rizzler.
+
+[00:41:56] Troy: the Rizzler but then Alex said to me, okay, sure. The internet produces the boom family from Boca Raton, but they also produce, you know, whatever, you know, Chapel Rowan and, you know, McGee and the elephant, whatever that elephant, what's it
+
+[00:42:13] Alex: Elephant graveyard. And also these are like, but here, but the 
+
+[00:42:16] Troy: channel five. 
+
+[00:42:17] Alex: I, I was too dismissive about the, the Costco guys. it is something that appeals to people and they're bringing 
+
+joy. No, but they're bringing joy to the world. and it's pretty, Probably going to end in tears, but that's neither here nor there.
+
+I, you know, I expect tabloid headlines in 20 years if they still exist. The thing is, though, like, there it is, right? There's all this content and you can go out and find it. And that's always been, but I think that's been the case since the beginning on the internet. The challenge now, I think, and the opportunity is that, how do you find it?
+
+Because the thing about cable and cable news is that you just turned it on and it gave you the thing you wanted. And it was like a thing. So, so what is it? I just turn it on, of the future. And I actually think that is. You know, an AI. There's like algorithms that are becoming so good, that you can find an audience.
+
+If there's 20, 000 people, you know, who love talking about webinars, Brian Morrissey will find them, right?
+
+[00:43:19] Brian: Did you see the, Axios has a 1, 000 subscription just for six months and what you get are, six webinars.
+
+[00:43:27] Alex: We should do that. Would people pay?
+
+[00:43:30] Brian: It's great. With, I mean, it's with Jim Allen and, or with, sorry, with Mike Allen and Jim 
+
+[00:43:34] Troy: It's with, It's with, people that are way smarter than us.
+
+[00:43:38] Brian: It doesn't matter, but still, I mean, that's 
+
+setting the market price at 1, 000 for six months, we'll do 12 months for 1,
+
+[00:43:45] Alex: we'll do 12 Months for 1, 000. And you know what? We'll stop at 10, 000. It's going to be a very 
+
+[00:43:52] Brian: That's scarcity 
+
+until we get, until we get those, subscriptions going, I have to go cause I have to, I am, I got to sing for my supper, 
+
+[00:44:00] Troy: so Brian, could you, could we wrap it up at least? Like where, by the way, Jim, Jim did a great podcast. 
+
+So yeah, here's a shout out, right? It was Jim was on the podcast, The Grill Room,
+
+[00:44:14] Brian: Oh, Dylan Byers. It's a, it's a rival podcast. Yeah.
+
+[00:44:18] Troy: And, I thought, it's totally worth a listen if you haven't, listened to that yet. And it's okay if it's a rival podcast, Brian.
+
+[00:44:25] Brian: No, I know. I'm good. I 
+
+[00:44:26] Troy: Kumbayama.
+
+before you leave, sum it up for folks and then we'll go into a quick good product 
+
+[00:44:33] Brian: there's no summation. They, you know, search is changing completely, and it's completely out of control of publishers. And, not even Alex has the answers, as far as I can tell.
+
+[00:44:46] Alex: No, but I think, if you, if you are in the business of fiction, uh, you're in trouble.
+
+[00:44:52] Brian: Yeah, and publishers and a lot of times are in the business of friction, but at the same time That's a lot of like large publishers. I I find there's two different conversations I have like people who are on a smaller scale who are in niches or in b2b They're doing fine. Like it's not this is SEO was never part of the, the toolkit and yeah, there are challenges.
+
+It's like everything, there's a lot of competition, but this kind of existential stuff is really just one, one sector of a far larger market. That's becoming even more decentralized. So,
+
+[00:45:24] Alex: Yeah, I know
+
+[00:45:25] Brian: it's unfortunate for, for the biggest players, but this is a better time to be pretty small,
+
+[00:45:31] Alex: yeah, and I know it's a, it's a new topic and, and you want to go, but I wonder if the, Future media companies also aren't just eaten up by, agent, you know, agents like talent agents. Because at the end of the day, maybe that's the only thing you need, right? That's the collection of people.
+
+You know, you have a CAA that manages a bunch of people who do their own things. You have infrastructure around them, contract negotiation, et cetera. Like, you know, You know, there is no company that is a big group of musicians. but there are agents and, and, and, you know, production companies around 
+
+[00:46:05] Troy: Great point. It's a great point. It's a great point. When you, when you pull out the, All of the functions that were required to operationalize media. And you realize that it's just about supporting your most talented folks. It looks like a tally agency. great, great.
+
+That was a wrap up. 
+
+we do, we do. Yeah. Yeah. We do have a good product brand. Take it easy.
+
+[00:46:25] Brian: I got to get on the 
+
+[00:46:27] Alex: He's got,
+
+[00:46:27] Troy: Well, yeah, well,
+
+I, um, 
+
+[00:46:30] Brian: me. 
+
+
+[00:46:31] Good Product
+---
+
+​
+
+[00:46:33] Troy: the good products about something I, I'll connect two things and it's, 
+
+[00:46:37] Alex: it might, it might, take a while, Brian.
+
+[00:46:40] Troy: the, the real good 
+
+[00:46:42] Brian: connect one? they're both, you know, it's, it's the substance and the substance to me is chocolate milk and,
+
+[00:46:50] Alex: I thought you meant the movie 
+
+[00:46:51] Brian: By the way, I got a 
+
+[00:46:52] Troy: Well, I, I, 
+
+I, 
+
+[00:46:54] Brian: last week. I, 
+
+didn't tell you guys. 
+
+[00:46:55] Troy: I did mean the movie and I meant chocolate milk.
+
+what, what, what's the complaint? Do you want to register it before I,
+
+[00:47:02] Brian: No, there was a complaint. Well, one, one feedback was that they saw the podcast, evolving into like you versus Alex was me caught in between, which I was like, I actually liked that role for myself. so 
+
+[00:47:14] Troy: a, it's a Brian 
+
+[00:47:15] Alex: I don't think we 
+
+fight that much. I mean, I think we antagonize each other a little bit,
+
+[00:47:19] Brian: Yeah, no, I'm good with that. 
+
+Um, but the other was about some of these good pop, these good products are kind of bullshit.
+
+It was the, I'm not going to,
+
+[00:47:27] Alex: I mean, we know that that's the whole point of good 
+
+[00:47:29] Brian: but go on. Tell me about chocolate milk.
+
+[00:47:33] Troy: well, I bought a large bottle of chocolate milk and I drank it on the way home from the store.
+
+[00:47:39] Alex: Wow.
+
+[00:47:40] Troy: I just, I just could not believe how good it was. Like chocolate milk is literally the best thing ever.
+
+[00:47:47] Alex: Yeah. 
+
+unless you're lactose intolerant like me, 
+
+[00:47:49] Troy: Oh,
+
+it makes you poop? 
+
+[00:47:51] Alex: that's one way to put it.
+
+[00:47:52] Troy: Anyway, I could not say more about how much I love chocolate milk
+
+and I would encourage people I would encourage people if you like chocolate milk if you feel anything about chocolate milk good bad or indifferent Please send brian a note about it.
+
+Um, but the the other thing is two nights ago. I watched the substance which Is I guess it's a 24 movie.
+
+It's I guess they, it's not a 24,
+
+it's a night 2024, but no,
+
+it's, they call, I guess they call it a body horror movie, a satirical body horror film directed by a French director, Coralie Farge, and it stars, Demi Moore, who's a kind of fading Hollywood star who resorts to using this weird black market serum, references to all those things we take now, including this epic to create a younger version of herself. And then that younger version is played by Margaret Cawley. and. They live these kind of connected lives. And then as Sue's success or Margaret's Sue's success grows, they start to, there starts to emerge tension between the two of 
+
+[00:49:00] Brian: Are you reading an IMDB?
+
+[00:49:02] Troy: no, no, I
+
+just made some 
+
+[00:49:05] Brian: not off the top of your head.
+
+[00:49:06] Troy: this, there's this climax that is unbelievable.
+
+Have you seen, 
+
+[00:49:11] Alex: No, I haven't seen it. I want to watch it. I, I, I feel it's gonna, it gets pretty messy, right? At the end. 
+
+[00:49:16] Troy: Understatement. Yeah. Yeah.
+
+[00:49:19] Brian: all right guys, I gotta go. Otherwise, I'm 
+
+[00:49:20] Troy: Where are you going? Where, 
+
+[00:49:22] Brian: I'm going to the WordPress. I'm going to the WordPress VIP Innovation Showcase.
+
+[00:49:27] Alex: Whoa. All right.
+
+[00:49:29] Brian: gonna be speaking with Sofia Delgado. The audience director at Metro. it's like a free newspaper here.no, not the hosts. I don't think I'm the host. I'm just, you know, leading the conversation.
+
+[00:49:39] Troy: rebooting event?
+
+[00:49:41] Brian: It's, it's a collab. It's a collab.
+
+[00:49:43] Alex: you, can you, you know, shield the podcast a little bit? Can you,
+
+[00:49:47] Troy: By the way, Alex, Brian and I, together with another person are organizing a little festive gathering for,
+
+[00:49:54] Alex: know I asked with whether I'm flying private or is it going to be business class 
+
+[00:49:59] Brian: I don't know. I don't know if that's in the budget. We'll, we'll have to look in the budget. How are we going to work that? I think we should 
+
+[00:50:05] Troy: It's on the 12th, Brian, we gotta, we gotta get on it, we gotta get on it
+
+[00:50:08] Alex: You know, we got to 
+
+start advertising 
+
+[00:50:10] Brian: send me, send me a note with feedback if anyone wants to be, you know, considered for, you know, it's a very limited, you know, set of private residents and, but if you use the subject line, chocolate milk, I'll be sure to flag this.
+
+
+[00:50:22] Outro
+---
+
+That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+[00:50:43] Troy: It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+Alright,
+
+[00:50:57] Brian: All right, I gotta go.
+
+[00:50:58] Alex: See you guys.
+
+[00:50:58] Troy: alright, 
+
+see ya Brian,​
+
+
+

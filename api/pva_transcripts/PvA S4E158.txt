@@ -1,0 +1,737 @@
+PvA S4E158
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian: Have we done one of these? Just, just the two of us Without Troy before, It's very 
+
+[00:00:05] Alex: Oh, wow. Yeah, it's like dad's gone. 
+
+[00:00:08] Brian: he's very negative about this episode, so I think it's gonna be great.
+
+Um,
+
+[00:00:12] Alex: I, mean, he's fuming. He was just not having any of the topics we wanted to talk about. he, he nearly threw out the word naive a couple of times, I'm sure. 
+
+
+[00:00:21] Welcome
+---
+
+​
+
+[00:00:31] Brian: So let's, let's get started. Welcome to people versus Algorithms. I'm Brian Marcey. I'm joined by Alex Schleifer. And later, our friend, anonymous Banker is gonna be coming through. Troy is, is in, some sort of lavish riyad in, in Morocco. So he is unable to join us because we did not shift the podcast for his schedule.
+
+[00:00:52] Alex: Yes.
+
+[00:00:53] Brian: about it.
+
+[00:00:53] Alex: Yeah.
+
+[00:00:54] Brian: That's the behind the scenes drama that I don't think people care about, but maybe they do. so, Alex, today I wanna talk, I wanna get in deep with you about what it takes to build good products, because this is sort of, this is your world, right? And I think the perspective that I appreciate that you've brought to, to this show is. Basically reminding everyone who's listening to it, who's in the media industry and, and has any number of issues that they're dealing with, is that the way out is through building better products. So we're gonna talk about how that happens, why media companies tend to not ship very good products. Anonymous Banker is gonna join us, to discuss, why Travis Kelsey is now an activist investor. Does that sound good?
+
+[00:01:47] Alex: That sounds fun.
+
+
+[00:01:48] Age Of Wonders vs What Is This Shit
+---
+
+[00:01:48] Brian: Okay. So I wanna start with a couple of, news items that, that we've been discussing and that will play into this a little bit. You know, one is around, you know, we're, we're constantly tracking right? And I feel like we've, we've moved with tech. This is my sort of feeling with where we are right now is I oscillate between feeling like we're in an age of wonders. To what is this shit? Because I, I, you know, like I, I was, I was on a flight, to Miami earlier and, or last, late last week, and the pilot was like, look out the left side. a SpaceX rocket going by, you know? And I was
+
+[00:02:31] Alex: Wow.
+
+[00:02:32] Brian: oh my God, this is like the Jetsons.
+
+[00:02:35] Alex: Yeah,
+
+[00:02:35] Brian: and there's all these delivery robots around, Miami now, and I regularly run into them. They're stranded and they, they look traumatized. They have, they put names on them, to, so, and they, they have lights. if you have
+
+[00:02:54] Alex: they have little face, they have little faces. They look like their lights look like little faces. They're like little, they look like little, beach coolers, uh, with wheels on. Yeah. Yeah.
+
+[00:03:02] Brian: And I
+
+[00:03:03] Alex: Yeah.
+
+[00:03:03] Brian: that's to make sure that people don't abuse them like they have
+
+[00:03:06] Alex: I, I, I'm sure there's psychology behind it for sure.
+
+[00:03:09] Brian: But I, so I was like biking back last night. met a friend for dinner and I came across one from Cocoa. So they're Uber Eats, they're supposedly delivering Uber Eats and they're regularly lost and just like, just, again, they're just standing still like traumatized. So I don't know who is ordering this food, but your french fries are gonna be incredibly soggy. no, I came across one from Cocoa last night, and it was stranded along the beach walk, and then I, I biked this morning down and it was still there. So I, again, some of the things are there, some of the things are not there. And
+
+again, this is how I feel with, with ai because, you know, this week Nvidia passed $5 trillion in market cap.
+
+Like, it was like, I just remember it was like a major thing. When, when a company crossed 1 trillion, and now we're clearly steaming towards Elon Musk,actually passing $1 trillion in personal wealth and OpenAI made a big deal with Microsoft. They also, you know, reorganized the company. Finally, I, I, this stuff I don't really care about.
+
+what I do care about is that they're planning on plowing another $1 trillion per year into AI infrastructure. and then. I'm using and I just don't see where this stuff is, is showing up. Okay. In productivity gains. On the other hand, we have all of these rolling layoffs, these massive layoffs that are taking place, not just in tech, but, but particularly in tech as they're taking, it seems like employee costs that were always inflated
+
+[00:04:45] Alex: Yep.
+
+[00:04:45] Brian: transferring those into compute and infrastructure.
+
+Right. And it, I think the easiest thing for reporters to like cover this is like ai, it's the perfect story 'cause we're just waiting for AI to take everyone's jobs, et cetera. but it's more complicated. Right?
+
+[00:05:02] Alex: For sure. you know, living in an age of wonder and then, and then just having the rug pulled, that's the experience I think that you have with AI as well. Like yesterday, I was talking to my ai, my voice chat, and I, I wondered, Hey, can you actually turn yourself off if I just say, you know, you know, turn it off so I can, you know, I don't need to talk to you anymore.
+
+I don't have to press the button because it, it was across the room. He goes, yep, I can do that. All right. And I was like, okay, did you turn yourself up? Sure can, you know, and like for the next 30 seconds, I was just telling there's no way the, the eye couldn't stop talking. It couldn't, it didn't know how to do it.
+
+And so, and, and so you keep realizing there are these. Pretty massive dead ends that come, with these ais with like what the ages, agents are capable, et cetera. And I think there's an entire industry that's built on kind of, polishing off or hiding off all of these kind of little glitches and things like that, and selling a promise that is as of today, not at all possible.
+
+Like, I'm, I'm, and you know, I'm very excited about the technology, but
+
+[00:06:03] Brian: oh,
+
+[00:06:04] Alex: I think that
+
+[00:06:04] Brian: at
+
+[00:06:05] Alex: this idea that, you know, AI is going to replace all these jobs, is, is, is still kind of like people are making decisions ahead of the curve here, you know,
+
+and uh,
+
+[00:06:16] Brian: it, it's very, it's not surprising exactly, but like the initial uses are being used to replace entry level people rather than, than managers. What you're seeing is
+
+[00:06:28] Alex: sure.
+
+[00:06:29] Brian: is people are thinning the ranks of managers. And I have this like, sort of theory is that there are, there are a lot of, lot of managers who think they're leaders, right?
+
+And there are a lot of coordinators who think they're managers, right? And AI should come for, for a lot of, of these roles. And look, I, I don't like blame these people. Like the way overall sort of theory is like we all operate within these systems that we don't control
+
+[00:06:55] Alex: Sure.
+
+[00:06:56] Brian: do our best
+
+[00:06:57] Alex: Yeah.
+
+[00:06:57] Brian: And, and that goes all the way to capitalism, right? And. The systems that have been set up, ar have been with managerial capitalism, have been incentivized everyone to get some kind of expertise and then quick as quickly as possible. You know, do not do the thing you have expertise in and start managing people.
+
+And there
+
+[00:07:21] Alex: Yeah.
+
+[00:07:21] Brian: there's reason for that. You can scale yourself if you're just like making everything yourself, et cetera. but
+
+[00:07:26] Alex: Yeah.
+
+[00:07:27] Brian: an entire swath of people who, you know, again, they've responded to incentives, they've become managers, and meanwhile just kind of like the learn to code people.
+
+Then AI came for the coders. It seems pretty clear that it's gonna come for this middle manager class. Now, it hasn't happened yet because anyone who's been through layoffs knows that the managers do the list and they always, go for the managers. They're like, they're like, no, we're absolutely critical.
+
+We're going for some junior people.
+
+[00:07:57] Alex: yeah, I think that's right. I mean, you've, you, you, have you ever worked in la I mean, you've been, you've reported on large organizations, right? So, you know
+
+[00:08:05] Brian: a large organization like Nielsen, which
+
+[00:08:08] Alex: it's pretty big.
+
+[00:08:09] Brian: yeah, massive company. and I saw the sort of dysfunction of that. The guy who runs Boeing was running the company Ineptly, so I'm not shocked that those planes fell out of the skies.
+
+[00:08:20] Alex: Uh, yeah, I've be, I've been thinking about it. I think, and even, you know, when I was at Airbnb, I had a lot of people on my team. You know, I probably had hundreds of people who were managers on my team, which is scary to think about. I, it's funny for all the bravado about like, just like throwing out the rule book in technology,technology companies, a lot of that was like surface sheen.
+
+You know, like, you know, we had maybe friendlier HR and, and better food and stuff like that, but management structures were, were, were pretty much the same that, people had been using for decades. And I was, I was looking back and a lot of this modern management was defined by other tech companies. IBM, you know, general Electric before that, folks like McKinsey, you know, when you bring in McKinsey, you know, you're in fucking trouble.
+
+and so these companies.
+
+[00:09:10] Brian: wanted
+
+[00:09:10] Alex: Nobody
+
+[00:09:11] Brian: have,
+
+[00:09:11] Alex: the courage to say it, but were incredibly bloated and the entire pro promise of like, okay, you're gonna move forward in your career is at some point you're gonna become a manager and manage other people. And they were very layered. You know, even Google was very layered.
+
+The idea of scale was like you created this massive pyramids that had lots of depth in them.
+
+[00:09:28] Brian: but
+
+[00:09:29] Alex: list of
+
+AI is a cover. I think COVID was a cover. I think what people are doing is the things that
+
+[00:09:34] Brian: and
+
+[00:09:34] Alex: know, are finally,
+
+[00:09:36] Brian: just fine. But
+
+[00:09:37] Alex: to them because they have this cover. Elon was cover with Twitter, and now there's gonna be lots of cuts, right?
+
+Jason Jensen, Huang has like 50 direct reports. People don't really believe in like management structures and and like one-on-ones. I think this is all covered.
+
+This is not, these jobs are not being replaced by ai. I, I don't believe that. I haven't seen that once. I don't believe any tool I've seen yet can, can really be replaced ai except for very junior data entry stuff. Right. so, so that's, you know, that's, so that's like we're, we're heading into fun times where there's both a bubble and then lots of people losing their jobs.
+
+[00:10:12] Brian: Yeah. It's a really strange, and then we'll move on to other topics, but I am definitely getting. I guess I've lived through a couple of bubbles at this point. I mean, the two that really stand out are the.com bubble and then, the, the housing bubble. And it's funny because as you get older, the memories of those become hazier and become different.
+
+And, there's this idea that, you know, nobody knew that, that you were in a speculative bubble at the time. And I'm like, that's not true. Like I, it was very clear that it was a speculative bubble. These were far smaller. And I think it's becoming very obvious that this is a bubble where it has an, the, the conversation has moved from, is it a bubble to, a good bubble,
+
+[00:10:58] Alex: Yeah, isn't it?
+
+[00:11:00] Brian: it's not that bad of a bubble.
+
+[00:11:01] Alex: Yeah, we're, we're probably gonna. Benefit from this bubble in the aftermath of the, but one, one thing AI has made everybody act crazy. Everybody act crazy. I mean, even Apple, who's usually so controlled in the way they launch things, went full art, went out and released ads for products that didn't exist This week there was a product called Neo that was released as a kind of like robot that will go around and, and do your chores. It can only open a door. The promise is that it will one day do the rest of this. We can, it can do a couple of more things, allegedly, but the rest of of of the demos are all human controlled
+
+[00:11:39] Brian: yeah,
+
+[00:11:39] Alex: for 20,000.
+
+[00:11:41] Brian: they need to send Neo to rescue, this robot called Dwight, who's stranded on 73rd Street in Collins in Miami Beach
+
+[00:11:48] Alex: Yeah.
+
+[00:11:49] Brian: is, Dwight is in trouble.
+
+[00:11:51] Alex: The future. The future is arriving fast, but it is buggy as hell. It's like there's a lot of chank in our future. I think we're gonna have flying cars soon, but those are gonna be falling out of the sky, so, yeah.
+
+[00:12:04] Brian: haven't gotten into Waymo yet. I think that's one of those, the future has arrived, moments that I'm really looking forward to. 
+
+
+[00:12:11] The Goon Squad by Daniel Kolitz
+---
+
+[00:12:13] Brian: Couple of cultural notes. One is I, I shared this, in, in our, in our group chat, but Daniel Kitz, who has worked with me on the last two research reports that I've done, 
+
+[00:12:23] Alex: I've read them all.
+
+[00:12:24] Brian: Yes, I know you've read them all.
+
+Like, you know, he is like, he's worked with me on these like first party data reports and whatnot. Very worthy topics. Okay.
+
+[00:12:31] Alex: Yeah.
+
+[00:12:32] Brian: me wrong. but I was talking with Daniel. He's, he's a, he's a, a freelance journalist, and that is a, a profession I really admire. You know, the people who are, you know, professional freelance writers, magazine writers too.
+
+And he, he was saying to me. I was like, well, what other, you know, what else are you working on right now? And he's like, I'm trying to get this story finished. It's, I've been working on it for a year for Harper's. And I was like, what's the topic? He's like, well, it's a little strange. Just give me, I was like, I don't, and he is like, it's about Gooning. And I had never heard of Gooning and Daniel ended up getting this story finally across the line with Harper's and it exploded. I mean, it's been everywhere and it might be like the sort of magazine story of the year. So I, I personally, I think any of the writers out there, I mean, obviously you wanna work with me on research reports because you go on to write the magazine story of the year. itself is a very disturbing and interesting phenomenon that I'm not going to fully get in. I thought the way Daniel handled it was amazing. A very deft touch. It was, empathetic, but at the same time, it, it, it had, it had some fun with it. I mean, these are, I guess, shut-ins and I think these are the, that, are a little bit. would say too into, masturbation as a lifestyle. I don't know how else to describe it.
+
+[00:13:59] Alex: Yeah. Yeah. 
+
+[00:14:01] Brian: but if anyone has not seen this article by
+
+[00:14:04] Alex: Well, yeah, the Goon squad.
+
+[00:14:07] Brian: the Goon Squad, it's amazing. I, I think he's gonna get a movie deal out of this. It's absurdist.
+
+[00:14:13] Alex: I was gonna say, I was gonna say this is like, the big short for masturbation, 
+
+[00:14:17] Brian: Amazing. I don't, I don't think he's gonna be working with me on future research reports, so get in, get in touch. 
+
+[00:14:23] Alex: so there's still so, I mean, doesn't that. Warm your heart that there's still kind of a way, a path forward as a writer to, to have a big hit on a, on a magazine.
+
+[00:14:32] Brian: working with like professional writers who are, you know, you're in it for the love of the game. When you're like a professional, narrative journalist, and I think that's wonderful, and I think there's always a place for that. I hope there will continue to be a place for that, in our culture because we'd lose something if we didn't. 
+
+
+[00:14:53] Interview Assassin
+---
+
+[00:14:53] Brian: I was also reminded of that, I don't know if you saw this, but there's this guy, Isaac Ner, who, 
+
+[00:14:59] Alex: Mm-hmm.
+
+[00:15:00] Brian: for the New Yorker,
+
+[00:15:01] Alex: Mm-hmm.
+
+[00:15:01] Brian: and he is known as the interview assassin. It's basically if Isaac Ner sends you an email and says that he wants to do a q and a with you, 
+
+[00:15:09] Alex: Don't 
+
+do it. 
+
+[00:15:10] Brian: that email. Do not do it he gives people, he does a ton of research and he gives people enough rope to hang themselves with and then just goes in for the kill. I'm just mixing metaphors, but the end 
+
+[00:15:23] Alex: Yeah, it sounds, it sounds just, yeah.
+
+[00:15:26] Brian: So he did this with Kain, Jean, Jean Pierre, Jean Pierre, the, the former, Biden, spokesperson. Again, if you haven't seen it, check it out. it is an art form. The q and a itself, I believe is, is an underrated, an underrated format.
+
+And he does it like a twist on almost like the, the old like Playboy, q and as, which were legendary, forgetting people to say things that they wouldn't otherwise do. And he is continuing that tradition. I mean, Playboy had a famous interview with Jimmy Carter where he confessed to having quote unquote lust in his heart, which at the time was actually scandalous.
+
+[00:16:04] Alex: Oh, wow. Yeah, it does. It was a different time. You know, I, I read these things and this is a very good article, but I always wish, I wish these were like little podcasts or something like that. Like, I kind of, I, I, I, yeah, I kind of, I kind of struggle with the the interview as an article now.
+
+And I think my, I used to be able to read them a lot more, but now I find that, it's kind of hard for me not to hear the person's voice. Like it feels like, you know, I'm so used to the podcast format holding this interview, right, the interview as a format.
+
+[00:16:37] Brian: Yeah,
+
+[00:16:38] Alex: Does that make sense? Like, it, it feels like it's like a, a lesser version of it.
+
+[00:16:42] Brian: I wouldn't say it's a lesser version. I would say it's a different version
+
+[00:16:47] Alex: No, sure. Yes. Yeah. I don't wanna say writing is lesser than media, than, than video audio.
+
+[00:16:52] Brian: we know how 
+
+[00:16:53] Alex: Um,
+
+I, I just think that the interview format is so, 1, 2, 1, right. The, the, the, the, it's essentially a transcript, right? That I wish there was the audio version of it when I, when I read one, it feels like it's missing, if that makes sense.
+
+[00:17:06] Brian: Yeah, and I think both audio and video have different dynamics to, you know, doing this. Like, I mean, he talked, he, he had an interview actually with CJR, the Columbia Journalism Review about his like, method and like, you know, he's like pacing back and forth. He likes to do it standing and like he's, he grinds through, you know, he does like amazing amounts of prep for these things and they are kind of gotchas.
+
+There are, they, there are gotcha moments, but like, you know, his point is like, Hey, I wear it with pride. I do, I do the work. And like, he's not like making things up. He's laying a trap and people, people go into it. I like the fact that people will continue to go into, you know, the thunderdome with him. I personally wouldn't. but, for him. And I think this form, 
+
+
+[00:17:53] Performative Interview Format
+---
+
+[00:17:55] Brian: it's interesting that, that you bring that up because dunno if you saw, like Anthony Hopkins is on, he has a new book out and he has, he's doing a lot of like, press for it. And it's hard to differentiate when people are doing that. Right. And
+
+[00:18:06] Alex: Yeah.
+
+[00:18:07] Brian: the New York Times, and we'll get to them as a standout with their product, has a really interesting video interview, with him in which the, the interviewer, gets him to talk about hi, about Anthony Hopkins being estranged, from, from his, I believe it's his daughter, not his son, his daughter. And, you know, I thought that the interviewer did a really good job and it was a very, like, not New York Times Capital J journalist, where the interviewer talked about being estranged himself from, his, his father.
+
+And, that was unusual. I think it, it can, it can get a little too, you know, I think it can easily get into, we talked about the performance element of it. It can get to, it can become performative. I thought the way this, interviewer did it was, was well done. And I think it, it is a sign of how media does need to adapt.
+
+Doesn't need, they, they need to like, become YouTubers like, you know, surprise guy face, everywhere,
+
+[00:19:10] Alex: Yeah.
+
+[00:19:11] Brian: They need to, to, to update these formats. 
+
+[00:19:14] Alex: Yeah, I think so. what we've seen in media lately is kind of the, the death of artifice, right? I was watching an interview. I cannot watch an interview on a late night show. They all feel completely, they all, they just, they just, 
+
+[00:19:28] Brian: They're funny. They're unintentionally funny.
+
+[00:19:30] Alex: they un it's ally funny, but it feels like, 
+
+Eating a, a, a, a, a, a fake version of a fruit. You know what I mean? It's less like, you know, what is this, that, what this is? But it tastes absolutely fake. 
+
+[00:19:42] Brian: So let's get into, I wanted to get into Tim Wu's book, book about extraction, but we'll, we'll cover that another time.
+
+[00:19:48] Alex: I think that was gonna be a fun one. It's gonna be a fun one to do with Troy. That one. you know,
+
+[00:19:53] Brian: yeah. Well choice pro extraction. We
+
+[00:19:55] Alex: yeah, he's, he's all, that 
+
+[00:19:56] Brian: but let's talk about making good, making a good, product. Because to me, I, I'm fascinated with product within media because for the longest time I feel like, you know, media companies have often not, not had to be audience focused, you know, because their customers were, were differently, right?
+
+And so all of my conversations with, with publishers in particular are about how they shift their models from the traffic model and getting, getting, getting people to their websites through, through search, to how do you become a destination? How do you develop a, a, a habit with, your audience?
+
+And then how do you monetize directly more often than not. And, you know, media organizations, to me, they're, they're just too complex. They're trying to serve too many masters and it, and it really shows up What are honestly not great product experiences and I think that's pretty obvious, just using them.
+
+Right? And when you outsource your distribution and monetization, that is going to happen and the product has suffered. And I think that model to change. there is definitely a strategy where you outsource the product itself. I mean, I think a lot of what is happening on, you know, whether it's YouTubers or Substack and beehive and the rest are, you're basically saying, Hey, someone else, you handle the, the product gonna hand. I'm just gonna focus on the content. This is a point point that Troy made. He was in our, in, in our chat. He, he was saying that companies, of course, are terrible at product. And that, you know, that was like, don't be naive. I would argue rather than naivete, that's a major issue right now.
+
+Because if you are not going to be able to build good products, you are not going to survive. I think in this marketplace, particularly if you have direct to consumer models, people want to have direct to consumer models versus relying on third parties. But in order to do that seems pretty clear. You gotta start with a good product.so I wanna bring you in because you, you've, you've dabbled in the media world and you know, like how media approaches product, right?
+
+[00:22:19] Alex: Yeah.
+
+[00:22:20] Brian: you've also in a lot of product driven organizations.
+
+Yes.I'm interested in is media is a very insular industry and it doesn't often learn the lessons from other fields.
+
+It, it spends a lot of time doing NAS naval gazing and looking at what you know, the other guy is doing. And the competition for these companies is not from their peers. It's from technology and product organizations. 
+
+[00:22:51] Alex: yeah, there's a lot to unpack here. When, when you, and, and when you say product, just to kind of frame it for the audience, I think, you know, in Silicon Valley there's a tendency to just call product a piece of software, but to me it is, I don't know. It is kind of the, the thing that you sell directly to the consumer, right?
+
+Like your most kind of direct output, I would say. It can mean, it can mean like product can mean a lot of things. It's not just like an app that you download today. it could also be the way you express yourself on the platform, right. which, which kind of complicates things, but, because it's that whole thing's become a little messy.
+
+I wondered because Troy said like, of course media companies can't build good products, but they used to. Right. Like, I think like you would pick up a, one of those, a nice magazine or, or well printed newspaper and it was a great product. These were great products. and the way I, I, I, I reframe it is just like, you know, are you truly kind of like.
+
+Human-centric, customer-centric. In your approach, are you really thinking about the experience of a person, your customer, and what a, what an experience is going to be at the tail end? and I think that got lost. Definitely. You know, when I was in media in the kind of, pre-web 2.0 era, moving into the Web 2.0 era, there were a lot of us who were trying to build nice media products, but it wasn't rewarded.
+
+Right? Like, you failed if you did that because everybody, everything shifted to the traffic model and
+
+[00:24:16] Brian: rewarded in the marketplace. Again,
+
+[00:24:18] Alex: No,
+
+[00:24:18] Brian: my sort of like we operate within systems and then, you know, the system set incentives and we, we respond those incentives. I don't know, maybe, maybe this is bad. Like I just, I, maybe it's a fatalistic approach, but I just feel like, you know, we don't have as much autonomy as,
+
+[00:24:35] Alex: no.
+
+[00:24:36] Brian: to
+
+[00:24:36] Alex: Yeah. I
+
+[00:24:37] Brian: we're just in these systems running around a maze and like if people
+
+[00:24:40] Alex: you were in it. You were in it, you, you were, you were probably a traffic hound at some point.
+
+[00:24:46] Brian: at all. 'cause that's why I, I was, that's, that's interesting because that was a totally different and foreign model to me because the B2B model is not a traffic model. There's
+
+[00:24:58] Alex: Actually. Much more cons, much more customer centric. Right, because you're, you, you're thinking about building a product for your customers rather than,
+
+[00:25:07] Brian: Yes
+
+[00:25:08] Alex: okay.
+
+[00:25:08] Brian: because often your customers are generally you, technology like SaaS companies
+
+[00:25:16] Alex: Right,
+
+[00:25:17] Brian: tech companies that want to sell to whoever your end audience is. So
+
+[00:25:23] Alex: Okay.
+
+[00:25:23] Brian: act because the audience often is the product in, in that, you know, there's that old thing. It's like if the audience isn't paying you, they're the product.
+
+[00:25:31] Alex: Yeah. Well, I mean, I think, I think what happened either way is that. There was definitely like some inevitability there, but there was also a lot of complacency. And when your, when your core product that you're selling isn't great, then it's easy for the customers to start moving through like something like an aggregator and start thinking like, well, YouTube is a better experience.
+
+you know, apple use is a better experience, so we're gonna, we're gonna experience everything through that. and so, you know, there's this idea now that now everything's going to be,further kind of like disconnected, via ai because honestly, like the way I talk about ai, I realize is that I talk about AI as a way to solve bad products.
+
+Like, I hate using those sites and I hate going through these things. So therefore I'm just gonna have my AI agent go and, and, just absorb all this information and deliver it to me in a way that like is a much better interface than most of these sites. That's where we are today.
+
+but do you feel like, do you feel that's like a good framing of, of, of the issue that's at hand that's playing out?
+
+[00:26:33] Brian: think that the question ends up that I come back to is. can media companies actually build products that people want to come to? Or is this like a losing proposition at
+
+[00:26:47] Alex: I could tell you that they,
+
+[00:26:48] Brian: a wholesaler. Just become a wholesaler stick to stick to the content and, you know, write your little articles, do your little podcast, do your vid, and then just let, the, let the smart tech people handle the product.
+
+And that's, that's fine. That's a fine model, but I don't want to hear crying. when, when the incentives change, because we've seen what happens when you give away your distribution. Do you wanna give your, give away your distribution, give away your ad rights, give away all of your monetization, and then give away the actual product experience? That's a different business.
+
+[00:27:25] Alex: Yes. And that you're not only, potentially not only giving away your distribution here, but over time, whatever anybody tells you, you're also giving away your attribution. Your stuff's gonna just be lost in a stream of data, and it's just going to be consumed in all sorts of ways. So, yeah, no, the way I, the way I, the way I look at it, I, I built this framework and I don't know if I invented it or I heard it somewhere and I forgot, but,
+
+um.
+
+[00:27:50] Brian: invented it. Sure.
+
+[00:27:50] Alex: Sure, whatever. It's mine. the, the, the, the way I look at kind of like a, a,
+
+[00:27:55] Brian: jobs to be done. 
+
+[00:27:59] Alex: I, there's kind of like this, hierarchy of needs. that's laslo. But, you know, for, for these types of product, which, which needs to cover like three things. One is access, right? Like, you know, are you providing access to something unique that people want? The second one is like low friction. Is it easier than any other way to do it?
+
+And then the third one is delight. Is it more fun to do it this way? And if you hit all these three, right? I mean, you can be successful with one of them because if you have unique access on a shitty, on something that people really want, on a shitty product, people are going to jump through hoops to get it.
+
+but I think most, Media companies fail to hit on all these three points and, and, and so therefore, like, you know, a access gets relegated to, to a third party, you know, aggregator and the friction management gets handled well, I'm just opening this one app and everything's on this one app. That's way easier to me.
+
+but the delight is definitely missing. And I think the delight is often what builds, like brand affinity, right? Like I think using the New York Times app is nice. I prefer opening the New York Times app than I do the Apple News app, you know what I mean?
+
+[00:29:06] Brian: Yeah.
+
+[00:29:06] Alex: read some of my news. And that's because, there was effort put into it.
+
+and that's an app. I think using, I think there is absolutely a market for people to go direct to cus customers, because if there wasn't, there wouldn't be the site that we call Patreon. And I know like Patreon is, you know, maybe niche in our world, but it is a pretty like. Pretty much like a dominant figure in, in the, in, it's like, you know what, what Substack did to, ex reporters, I think Patreon is doing for a lot of creators around the world, right?
+
+Which is like an access through this app to pay directly for creators that you like and consume their content. Have, are you, do you use Patreon at all?
+
+[00:29:48] Brian: No, I don't.
+
+[00:29:50] Alex: Okay. Patreon is a great example of a terrible product that's serving a need, right? That just shows that there is so much opportunity for being able to build a direct to customer, place where people can go in.
+
+Pay for, you know, access, pay for some sort of community, and have access to content, et cetera. I know that they're supporting their favorite creators. It's huge. It's huge in a lot of, a lot of the podcast I, I listen to, work through Patreon, but the entire process is essentially like being a sports fan.
+
+Like you have, like you, you're kind of opening different apps to access the content. You always, you don't get these updates. It's a terrible product. and so I think that there's, if there's room for that, there's room for people to create engaging, engaging products that people will go direct to.
+
+Like, it, there's, there's no reason not to.
+
+[00:30:40] Brian: Yeah, and I think there's the question of like, who can pull it off, right? So the New York Times is a great example of, I mean, it's the exception of the norm in a lot of ways. It's like, I remember back when I would focus on like advertisers, you know, people would always use Red Bull. Bull was always the exception.
+
+They're
+
+[00:30:58] Alex: Yeah.
+
+[00:30:59] Brian: Bull. Like, you know, they put a guy like in the edge of space and
+
+[00:31:02] Alex: Yeah.
+
+[00:31:03] Brian: attention and I'm like, yeah, but like Bull is not like your average CPG company and it. Sort of, it's almost a media company. So I, I think that that doesn't really, the New York Times is, is similar in that way in that, you know, they've really pull, they've really pulled off a remarkable transformation. And a lot of it comes down to they focused on the journalism, which is the core of the product, of course. Right. And they hired a lot of journalists and they have, you know, amazing journalism. and, but the other half of it is they really focus on the product. And when you start to use the New York Times app and you see the ways that they're integrating audio and now video, they're, they're. They've gotten sneakily good, I think video and the user experience of the app is good. And the reason is, again, because they have to compete. They're not just a news organization anymore. I can remember talking with Meredith Levy and the CEO of the New York Times when she first took over and they had these ambitious goals at the time getting to 10 million, paying subscribers.
+
+I was like. don't see it happening. I don't see this as a product that, that can get you there. order to get there, they had to build a multifaceted lifestyle product. They had to compete in games, they had to compete, in, in cooking. you know, they had a, they, they added the athletic and sports, right?
+
+And when you start to get into these other categories, you're not in, you're competing with a different set of, of people, I think. And so I think that they've really upped their game. They put a lot of resources into their, their product development. And I think it shows, and a lot of, a lot of media companies simply don't have those resources and, and therefore the products that they're shipping are so, so far behind.
+
+[00:32:56] Alex: I think, I mean, there was definitely, I mean, listening to Troy say like, there's, you know, it's hard to do this stuff. And I'm like, yeah, I, I, I don't think you need particularly super large teams to do that. You need to take it seriously. Right. and I think for the past 20 years, media has not taken their experience seriously.
+
+Right. It's been, a lot of it's been optimized for SEO or like completely given up on and, and given, you know, like distributing onto platforms, so who cares? Right. so it is. Very likely a brand new muscle. I don't think this stuff is that hard. Maybe it's because I'm in it. I think at this point in time we know what a good app is, right?
+
+Like you can see that the New York time invests a lot in like, the thing loads fast, right? For example. Like it just loads fast. It doesn't glitch around as it's loading content. and all of that stuff is stuff that is like, it's not a, a hidden secret, hidden in the hills here. Like people know how to build these types of products.
+
+I think it's more like a, a reframing of like, are, are these people running these companies? So there was a thing that Brian and I used to do at Airbnb. We used to use the app all the time, and there was kinda this running joke that Brian would be the first to find a bug, even though
+
+[00:34:07] Brian: Ky, not 
+
+[00:34:07] Alex: Oh yeah, so sorry.
+
+Brian Chesky. Sorry. Yeah. Yeah. The other Brian, the other Brian in my life and that Brian Chesky would be the first one to find a bug, even though we had, you know, hundreds of millions of users. And that was often true because like he was obsessed And, you know, they, Airbnb was a complicated company with like geopolitical situations happening and,yet, yet, like there was a lot of focus on the app and the product, and there was a lot of people saying, well, you know, you need to put your attention elsewhere.
+
+And I was always of the point like, this is what people are using. Like a hundred million people are gonna hit this thing. Right? Right. This is the thing, right. And sure, all of the other stuff needs to work and there's like ma, you know, things shifting, you know, money around and all that stuff that needs to work.
+
+We need to pay close attention to that. But at the end of the day, our, like the, the, Key part of our product is, is this thing. And I'm not sure, people in a lot of media companies do that. I'm not sure. They use their app every day. I'm pretty sure that they get the latest article sent to them as a Google doc, and they know what they're doing, but they're not scrolling religiously and saying, why does this, why does this image pop?
+
+You know, like you still go to an article page where the, you start reading the article and the, the article shifts down because the image finally loaded at the top. Like if somebody in the company, like little by little, you know, like the way to treat an elephant is buy by. Okay, let's make each one of these.
+
+Because I do feel like access is one thing. You know, that's what media companies should be good at. Provide access to content that people want. And then the second thing is remove the friction, is that that's what gets people to use it every day and then make it delightful is what? It's what stops the churn?
+
+Because people like using your app, right? And I think New York Times, whether they do it. Willingly or not, I'm pretty sure the executive team and the, there's a lot of very senior team over there, that look at this product every day. and, and, and that happened, started happening a long time ago where they started hiring, you know, like great designers and software engineers to run their products.
+
+[00:36:04] Brian: Yeah. Well, I think, again, I go back to incentives, right? The incentives in the marketplace are such that you, you have a lot of like financial advisors to make up a word that run these companies. Like am mean, you know, Troy is not here to defend, the legacy of David Zas love, but apparently he stands to make $500 million from, this pending sale of these assets to, paramount.
+
+I, I 
+
+[00:36:32] Alex: Yet, yet HBO max, HBO max, that turned into Max, that turned back into HBO Max, like for the longest time, I couldn't rewind because that button was broken. Like, you know, I, I think like. Like
+
+[00:36:45] Brian: CNN All Access,
+
+[00:36:47] Alex: Yeah, exactly.
+
+[00:36:48] Brian: like long overdue, the DTC effort and you know, they're not gonna win in the marketplace based off of their products. So I think the incentives are such in this marketplace. I mean, a OL just got sold for 1.5 billion, which I want to talk to
+
+[00:37:04] Alex: To an Italian bending spoons company.
+
+[00:37:06] Brian: which is just amazing.
+
+I mean, I think that just shows where we are.
+
+[00:37:10] Alex: We live in an Onion article. Yeah. The CNN app is, is, is, you know what? I really wanted that app 10 years ago 
+
+
+[00:37:17] Warner Bros. Discovery Deal
+---
+
+[00:37:17] Brian: let's pull you in to this discussion, ab, Tell me, tell me what is going on right now with, with Warner Brothers Discovery and, and this deal. 'cause we were talking about how media companies have really failed at making great products when they used to be really good at making products.
+
+When it was things like magazines, like Magazine is, is a product. And they, they were good at that until they became bad at it during the financial crisis when they just sort of took all the effort, out of it. but, tell me a little bit about what's going on with the, with this deal. Because, you know, Alex and I, Troy's not here to, to defend, him, but Alex and I are sort of gobsmacked again with a lot of people are at.
+
+It doesn't seem like David Zaslav has improved this business necessarily, but he's been able to financialize and position it as such that, you know, he stands to, to reap a windfall from it. 
+
+[00:38:10] AB: I mean, so in terms of the, you wanna talk about them not making good content or what? What do you wanna
+
+[00:38:14] Brian: No, no, no. I wanna talk about like where the, the, the, the sort of deal for, talk us through the financial details of, of why, you know, discovery and whether it's well positioned to reap a windfall in, it seems like there, there's, there's not a lot of bids. It seems like it's probably going to paramount. but what is this, what, what, from your view is the status there?
+
+[00:38:38] AB: I don't think they probably wanted to be in this position. I mean, this. Warner Brothers Discovery is a combination of a bunch of different assets, right? There's also, they acquired SNI, which was a bunch of cable channels. I think they're here because, and I'll answer the question that you don't wanna talk about, but I think good content has just gotten a lot more expensive to make.
+
+Right? So the two things have happened since that transaction. The sort of, the combination of a bunch of these assets is that COVID increased and a bunch of other factors increased how expensive it is to content. the supposition, by putting a bunch of these assets together originally was we can cut costs, we can still make great content, we'll have a better connection to consumers.
+
+The problem is the cost of content went up. It's gotten way more competitive to get consumers to watch your content. And then this whole fragmentation of like with people watching YouTube and things like that, the monetization there hasn't caught up to what you can generate on tv. And subscribers have gone down.
+
+So I think like a bunch of these. Sort of headwinds have caused them to sell. I, you know, when Liberty owns businesses, they typically don't sell them. they do transactions in ways to preserve, tax attributes, get money back to the parent company or the, the owners. but they like to buy things and hold 'em for a really long time. So in terms of the transaction, I mean there yeah, there's only a few people who can buy it. I think what's interesting is like the people that are buying this have the same thesis as what happened originally when these assets were put together is like, let's buy this. We can cut costs. There's still a ton of value in the IP and content.
+
+There's still connectivity, to the users with a variety of brands and we can sort of hope to hold on to that and then transition these people over to digital connectivity. You know, I think one of the biggest struggles with any streaming service is when we used to sign up for cable. One, dealing with the people to cancel, it was tough, but you were stuck in a year or two contracts so they could spend a lot of money to get you to sign up. Now it's very easy to cancel. There's government regulations that make it really easy to cancel. and so getting new subs and keeping them is really tough. And so any media company that is of size is probably gonna look at this and actively engage because they need other ways to get customers, keep them in the, keep them in the ecosystem, and hope, hopefully continue to grow.
+
+[00:40:56] Brian: Here's my idea. Paramount buys it and have one app really, really have a great app. It's an everything
+
+[00:41:04] Alex: one great product.
+
+[00:41:06] Brian: app. Forget about all this. It's too complicated, et cetera, et cetera. There's, there's an opportunity there. I don't think that they'll be able to actually build the app, but you can combine Paramount plus CNN All Access.
+
+We can have another name for HBO, max Max by HBO, whatever we want to call it. Put it all in one app. 
+
+[00:41:26] AB: I mean, every time I use these apps, I'm always like, why can't it just be easier to watch the content that I want to watch? So, but
+
+[00:41:32] Brian: it cable. Call the app cable.
+
+[00:41:34] AB: yeah.
+
+[00:41:34] Brian: it.
+
+[00:41:34] Alex: I mean, at times it's nearly, you know, once again, one of the, the places where like. The media landscape is both the It's, it's both. It's both great to be a media consumer today, and also like awful. It's definitely awful if you're a sports fan. but like on my Apple tv, I can search for any video across multiple platforms except Netflix because they're not giving, they, because they're not giving that data away.
+
+So if it's Netflix, you have to hop into the Netflix app and, and it's so fragmented.
+
+[00:42:04] Brian: to be fair on the, you know, media companies sucking at product, it, there are serious complications when it comes to a lot of these rights deals, et cetera. And even Apple has struggled a bit, you
+
+[00:42:17] Alex: Yeah.
+
+[00:42:17] Brian: it, when it comes to its, its sports app and I think that like shows that you can be great at product, the problem, say like an Airbnb, which sort of just sort of. Ignored some like regulations and whatnot. Like you have companies do not have
+
+[00:42:36] Alex: Is that, is that your, your final Gotcha. Got your final Gotcha question of the
+
+[00:42:41] Brian: Gotcha. Like I was always like, oh, sharing economy. Sure, you're an unregulated hotel, you're an unregulated taxi service.
+
+[00:42:47] Alex: uh,
+
+[00:42:48] Brian: don't get to do that.
+
+[00:42:49] Alex: yeah. No, I got to build enough like tax system for individual cities to know that we were doing at least something with them. but yeah, no, I, we look a lot of it is like inevitable. A lot of it is going to be very hard. I, I know. but the, I think media companies still have some agency, right? Like I think a lot of the time, like if you do build a better product.
+
+it, it will reap rewards. It just, you know, it sometimes takes a long time. and yeah, you know, like, I find that like, at, at this day and age, it, you do need to have full control of your content to build a better product. I think, and this is what Apple is noticing with sports, where they're saying like, we wanna own the experience end to end, which is why they could only get MLS and now F1, right?
+
+Because these are rights that you can buy end to end, and potentially you can build a great product. Everything is integrated, all the marketing is integrated. Apple does not want to build things in parts because they know, you know, con controlling the entire chain is what is what matters.
+
+[00:43:46] Brian: Yeah. 
+
+
+[00:43:47] Travis Kelsey Activist Investor
+---
+
+[00:44:01] Brian: So ab I want to talk a little bit about Travis Kelsey as a, an activist investor, and broadly the value of celebrity investors, right? Like when I saw Travis Kelsey was, part of an activist group ta, the Taking Over Six Flags. I can remember Six Flags very, fondly from, from my youth.
+
+amusement parks, I think sort of went into terminal decline, but,
+
+[00:44:13] Alex: Well, not Disney.
+
+[00:44:14] Brian: great adventure. Oh, a great adventure. Got a little, you know, like Doey Park and, you know, some of these, of these places just went a little bit downhill. Anyway. talk to me about like why this makes sense. 'cause when this, when I saw this, and there's a lot of moments I see these things come. I'm not sure whether they're like parodies or not. I mean, Travis Kelsey is not like, sort of No. I mean, there's like jokes about whether he can read or not. and we have seen it continues, like the, the, the celebrity, investor, you know, Kim Kardashian has a big portfolio, Saquon Barkley. On my Philadelphia Eagles, he's in, he's on a ton of cap tables.
+
+He's doing real well for himself. So start by explaining to me the actual value celebrity investors.
+
+[00:45:02] AB: It's usually negative, like, because the problem is they want, they'll put some equity in, but they want additional equity for. they, what they tell the company they're gonna bring. Right. So, for smaller businesses, especially when there's like an adjacency to media, there will be celebrity or creator, like people who wanna invest, but then also get additional equity. I think that when it comes to like D two C brands, you can really see who has influence to affect purchase decisions. So like when you mentioned Kim Kardashian, she has her own brands and then she tried to do that private equity. I don't, I don't, I think it stopped, she was trying to do like a private equity firm where she was gonna buy larger stakes in businesses, which is a different thing, right?
+
+So when you talk about what she's doing on the D two C front, she can drive engagement. She has a large following.
+
+[00:45:52] Brian: I 
+
+[00:45:52] AB: So when you take, so, so when we talk about Travis and what he's doing with Six Flags, I think if I was the hedge fund that was leading that activist campaign, I would look more, he's not gonna fix the business.
+
+He might go there and get a season pass, but he has this podcast and he's marrying the most sought after musician the last 10 years. And so he has a ton of influence and he can talk about it on this podcast now at some point he can't talk about it too much 'cause it starts to, everyone's like, what are you doing? But I think in this world of like memification of stocks, someone like that who can bring another layer of investors to the SOC and potentially push it up like game, I don't know where GameStop is today, but like for a very long time that SOC has traded up based on the Reddit of it. All right, there's, and there's like interesting. Communities around certain stocks in certain segments because people that have excess capital besides their 401k that invest in the stock market like that, don't follow the, you know, Warren Buffet, just put it in an index and let it grow. But there's a lot of people that put lots of like concentrated bets, way too concentrated into stocks that are, they think they're gonna get a return.
+
+Sometimes they, they benefit from that. So I think when you think about what Travis brings to this activist campaign, one, I think that probably the market cap of this business is relatively small, but about they got really good coverage in the Wall Street Journal if they need to continue to push the management.
+
+It, it sounds like when you read the article that it's been a complete disaster after the merger and how they've integrated the two companies at these two theme park companies. And so anytime you have an issue. Because boards and executives react a lot to what's in the press in these activist campaigns.
+
+And Travis can easily just step on the mic and get, get it out there. And so it's a really valuable and powerful microphone. He doesn't know how to operate at theme park, but that's why,
+
+[00:47:47] Brian: safe. I think 
+
+[00:47:48] AB: but that's why the hedge fund has a lot of people that are expensive and they hire consultants to tell the management team what to do.
+
+But I mean, there's so many situations where there can be positive activism to change a company. And when you read the fact pattern, I don't know anything about these businesses, but when you read the fact pattern in the Wall Street Journal, there needs to be change based on just basic metrics in terms of value they're getting per person attending, how they change the prices incorrectly, blah, blah, blah.
+
+So I think it's really, I thought it was interesting. I thought it was smart. when you talk about celebrities investing in businesses, I always think there's like one person who I think has done it exceptionally well. Ryan Reynolds, he's made so much money. But most of these athletes that are investing, it's driven by like their best friend.
+
+They grew up with access to the piggy bank and throwing a bunch of checks into businesses and usually it doesn't turn out well. Right?
+
+[00:48:37] Alex: Or, or, or alcohol or like tequila brands.
+
+[00:48:41] Brian: That I get. But I, I mean, I get, I get it when you're a front for, you're basically a distribution hack in 
+
+[00:48:48] AB: Yeah. A good one. I think this was a really good, I was like, oh, this is smart.
+
+[00:48:52] Brian: Ashton Kutcher was like the original one of this.
+
+[00:48:54] AB: Yeah.
+
+[00:48:55] Brian: you know, he, he got on
+
+[00:48:56] Alex: investor in Airbnb early
+
+[00:48:58] Brian: yeah. I mean, he got into tons 
+
+[00:49:00] AB: But it was leg. It was, that was a completely, that was a legitimate thing where he actually met with companies like that was not having his best friend throw money into 10 businesses. Yeah.
+
+[00:49:12] Alex: Right? Or, or, or a company, but, or, or a company kind of pulling a celebrity in like at some point, I dunno if she had stock, but at some point Lady Gaga became creative director of Polaroid, which, which I'm sure worked out great for them. but I mean, you know, the best case scenario then is probably that he's just happy to be in on for the Ride.
+
+Doesn't say much. Just talks about like enjoying
+
+[00:49:33] Brian: for the
+
+[00:49:34] Alex: rollercoaster. Yeah.
+
+[00:49:35] Brian: No, I 
+
+[00:49:35] AB: mean, but I mean, I think Oprah, Oprah did a really good job for, I think she did for Weight Watchers. Like there's instances, instances where, so people with talent have been able to drive. Successful enterprise growth by bringing their halo to another brand. Right? And or to, to a brand, to a consumer brand. this is the Travis example is more of like a financial situation where effectively an activist campaign is trying to force someone to do something they don't want. Right. Or
+
+[00:50:04] Alex: Yeah,
+
+[00:50:04] AB: know they want to do yet. And so in that instance, you're just trying to get more leverage and Travis brings the ultimate leverage.
+
+I
+
+[00:50:11] Alex: with the, with the audience. With an audience. That would probably be like customers of Six Flags as well, right. 
+
+[00:50:16] AB: yeah.
+
+
+[00:50:17] AOL $1.5Bil Deal
+---
+
+[00:50:17] Brian: can you gimme the, the lowdown on this, this a OL for 1.5 billion? deal. Congrats. Congrats to Apollo. Amazing job, guys. OL was a, a $400 million in EBITDA business on like $500 million in revenue. That's a great bus. That's like the, the best media business around is a OLI don't know what it says about the, the sector. 
+
+[00:50:41] AB: like there's a lot of,
+
+[00:50:42] Brian: First of all, what is bending spoons? I do not know the work of bending spoons.
+
+[00:50:46] AB: it's an Italian based rollup that acquires companies like Vimeo and that note taking app that was supposed to be big that never got big. So it's effectively their acquiring Evernote, the
+
+[00:51:00] Alex: That's a good way.
+
+[00:51:01] AB: app.
+
+[00:51:01] Alex: Yeah.
+
+[00:51:02] AB: they acquire businesses with sticky customers. They help increase cash flow and like that's it.
+
+We live in this world of excess capital. There's so much money at private equity firms, so much money at all these credit funds that need to get some sort of return. And so their thesis is let's buy these businesses, run them a little bit more efficiently and e out some returns where maybe there's not a terminal value, meaning they're not. The cash flow pays down the debt and provides some return for the shareholders. So that's, that's what they, they're based in Italy, but they're, they buy a lot of, US based companies In terms of a OLI think it just speaks to like, like Brian, um, you know, a couple, when I was on your podcast, you asked me for like the three best companies and a lot of companies that I like.
+
+[00:51:49] Brian: What, what's the, what 
+
+[00:51:50] AB: No, no, no, no. But no, but no, but here it's a, it's a very important point. I bump into people every day that if I told you how they make money, it's all legal. I'm saying like, it's very weird, like not weird, but it's like boring. It's boring and that's what a OL is. go to the website, guess what? Most old people when they go to websites, the biggest problem they have is forgetting their password. It's just a simple fact and they can't figure out how to reset it. There's a telephone number on aol.com, you call it. help you reset your password and they say, guess what? Do you need antivirus today? Yeah.
+
+[00:52:21] Brian: Oh, yeah, yeah, yeah.
+
+[00:52:23] AB: the same price you would get it anywhere else. Let us help you sign up.
+
+[00:52:27] Brian: I mean, it's, it's extractive. I, I know like I'm a moralistic like journalist. It's, it's, there's so much, I mean, this is the Tim Wu book. We didn't get to like so much of. The economy has, has shifted into extraction. it's a little depressing to me. Like, I mean, I, I was saying earlier that like when I was on a flight down, to Miami last week, like there was, they were like, look out the left side of the window.
+
+you know, SpaceX, rocket launches going by, and I'm like, oh my God, we're in like an age of wonders. But then like, I literally land to come back to Earth and it's like it's all extraction.
+
+[00:53:05] AB: Or, I mean, I thought you were gonna say they tell you to look out the window and then they tell you to sign up for the credit card. Yeah, I mean, we are, we are in an age of consumption. Like most net employment ads are around consumer service businesses, so it just is what it is. But my point back on a OL is it's a very significant business that most people sort of are negative on, but to me, companies that can go after these customer cohorts that have the money to spend that. Need products. I mean, they, they sell other things that are valuable password keepers. It's all at the same cost as you could get anywhere else. So it's not just things that you don't need. Right. And they offer telephone support and most websites don't do that. So if your parents wanna have an aol.com address and not call you when they get locked out for their password, a OL provides that.
+
+So 
+
+[00:53:58] Brian: Yeah, wonders never cease. Any of these businesses that have large call center operations, I assume are very profitable. That's usually a sign that they're operating in a part of the economy that's a little messy, and that's usually where, where the margin lies, I think. all right. So
+
+[00:54:17] AB: I gotta,
+
+
+[00:54:18] Good Product
+---
+
+[00:54:18] Brian: ​
+
+alex, do you, or do you wanna wrap us up with a good product, a good media product? Walk, walk us through like what you think is, and it can be media adjacent, but a, product. 
+
+[00:54:33] Alex: we talked about the New York Times. It's a good pro, I think. Um,have you heard, you've heard a lot of,ground news. 
+
+[00:54:42] Brian: you for 
+
+[00:54:42] Alex: You, you've, yes. Ground news,way to go to build, like, something kind of like interesting and new. I think it's, I mean, they've, they're really advertising on podcasts. it's a generally pretty decent experience, and I enjoy using it as far as aggregators go,
+
+[00:54:58] Brian: their twist on this?
+
+[00:55:00] Alex: well, you know, the, their twist is.
+
+It's not like, you know, there were a lot of these, products that tried to have a, balanced, fair and balanced view of news and showing the left and the right. But instead what they do is that they kind of show the distri, they'll find they'll kind of cover topics and then show you the distribution across the spectrum of, you know, left to right leaning and centrist, it is interesting to see like, which area.
+
+'cause sometimes you read something, it's like, I wonder how the other side's covering this. Turns out they're not, or turns out there're a lot or turns out they're doing it differently. I, I think if your news curious, that's a, that's a, that's a really,good product to use. Yeah, there are, there aren't a ton. I mean, I kind of wish there were better news products, honestly, like out in the world. Like that's one of the things where I think like there's an opportunity for CCNN to potentially build something that is for like news hounds, like people, right?
+
+You know, if you build something for people who are fans of the topic, then you have an opportunity potentially to spread, to expand that. So like, and I don't know what that looks like, but imagine like the Bloomberg terminal for people who love news, like whatever that looks like, rather than just an app that you go to and you get access to different videos, you know, that I think that type of stuff is, is, is gone.
+
+Like, and I find myself just as a small example, right? Like Amazon, who's other, prime, who's otherwise a terrible video ad added this thing where you could kind of call, radar or, or, or, or, or x-ray or something like that where you could kind of pause a frame and whoever was in that frame, you could see all the actors.
+
+And kind of read their bio, right? Which is an experience that people do a lot. apple added that like this is where like when you're building products, like you're, when you're building media products, you can do anything you want. You know, you can have like a, a, a video player that, that, that has additional information coming on the right.
+
+Like what is it that you can add to this stuff? I'm thinking it's easier to build an app today than it ever was, and we're not really seeing anything more like any, anything new coming out. so, you know, hopefully, hopefully
+
+[00:57:04] Brian: Well, I think part of that is like nobody, knows what to build because of all of this AI hype and whatnot. Like, 'cause it's like you don't, there's a, there's a certain amount of paralysis that, that can like set in
+
+[00:57:18] Alex: I.
+
+[00:57:19] Brian: many of the unknowns. Um,
+
+[00:57:21] Alex: I think is going to, that's gonna hurt so bad because the, the paralysis is letting, like, open AI run away with, they're building products, they're trying shit out. They're putting stuff out into the world, you know?
+
+[00:57:34] Brian: so. They have limitless capital it seems
+
+[00:57:36] Alex: Well, yeah,
+
+[00:57:37] Brian: something.
+
+[00:57:38] Alex: yeah. But I, but I, but at the same time, I mean, the browser is kind of a dud, but,there is activity.
+
+Like people do want novel things to do. Like, you know what I mean? It's not just like, like you know, I, I know that Netflix is spending money and experimenting in different things to do in the Netflix app, like they're trying stuff out. and so.
+
+[00:57:59] Brian: under threat. Like they're under threat from YouTube so that that can, that can
+
+[00:58:04] Alex: Uh, they're on the threat. I think they're, I think that that threat is just like every company just needs to keep growing, and I think the threat that they're seeing is that the only way to grow is to grow into YouTube's territory. That's, that's the threat that they see.
+
+[00:58:17] Brian: Yeah.
+
+[00:58:17] Alex: Like they're, they're butting up against YouTube. 
+
+[00:58:20] Brian: exactly. 
+
+[00:58:21] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[00:58:56] Brian: All right, let's leave it there. Alex, this
+
+[00:58:58] Alex: All right.
+
+[00:58:58] Brian: you. 
+
+[00:58:59] Alex: Thank you. 
+

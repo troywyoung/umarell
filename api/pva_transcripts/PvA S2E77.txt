@@ -1,0 +1,1095 @@
+PvA S2E77
+===
+
+
+
+
+[00:00:00] Cold Open
+---
+
+[00:00:00] Alex: I'm at the game developer conference today,
+
+[00:00:03] Brian: What's the mood at the Game Developer Conference? 
+
+[00:00:04] Alex: There's definitely a lot of people looking for work and more activity around studios trying to get, consulting gigs so not as, hot as it was last year, but last year it was all crypto and it's kind of nice not to see any of that. Year it's lot of the independent studios actually sound pretty excited. And the fact that there's a lot of stuff changing, is kind of showing up as a lot of opportunities. So it's actually more optimistic than I thought it would be.
+
+[00:00:32] Troy: you don't need no optimism, Alex. Cause you got talent.
+
+
+[00:00:35] Intro
+---
+
+[00:00:58] Brian: Welcome to People vs. Algorithms, a show about patterns in media, technology, and culture. I'm Brian Morrissey, and each week, I'm joined by Troy Young and Alex Schleifer as we try to connect the dots about what's happening in the worlds of media and technology. This week, we have a conversation with Kyle Chayka, a writer, author, at the New Yorker and author of the recently released book Filter World, which explores how algorithms are flattening culture.
+
+This is a topic Kyle has focused on for years. It's something that I used to call algorithmic sameness, and I saw it mostly in publishing, with a loss of control over distribution. Publishers needed to create content, not just for people, but for the needs of algorithms first and foremost.
+
+Whether that algorithm was from Google, Facebook, or more recently, TikTok. I mean, even the most hyper aware can fall into the trap of shaping their content to please whatever the algorithmic needs. God of their persuasion demands. And to me, it's not just the story of algorithms, but the ecosystem that exists around algorithmic media, and in particular, the overemphasis, in my view, at least on optimization.
+
+I mean, once you're in the algorithmic fighting pits, the only way to compete seemingly is through optimization or growth hacking. A generation of media has It's been largely defined by finding growth hacks before the algorithm catches up. And this cat and mouse game gave us such cultural treasures as You Won't Believe What Happens Next headline conventions, the monotone TikTok voice, and the interminable backstories we get before we can finally read the recipe.
+
+And yet, as a consumer of media, I have to admit that algorithmic recommendations are a cheat code. I happily give away my discovery of new music to Spotify's algorithm. I never spent a lot of time working on a finely tuned taste of music, so outsourcing that's wonderful. I mean, I suspect many people don't have time to wade through the stacks at vinyl record stores.
+
+I mean, as Troy says, it's easy to fall into an anti algorithmic viewpoint. It just doesn't seem very cool. To admit that you prefer to give over to some computer code, your preferences and cultural products. And yet I believe most people happily make that trade off. I hope you enjoy this discussion with Kyle, which comes after we discuss the plight of the middle manager.
+
+And whether you should trust the people shaping the AI world. And also we hear from Graham, on the rant line. On that note, you can send us a question or a comment on the rant line by visiting memo. fm slash PVA. You can then hit record and, send us a voice message that, We'll use in future episode.
+
+Thanks a lot for listening. And if you like this show, I regularly meet people who are listeners, which is always a terrific experience, please send us a rating and review wherever you listen to your podcasts. 
+
+
+[00:03:55] Episode Start
+---
+
+[00:03:55] Alex: Our game has gotten some good responses. We've 
+
+[00:03:58] Troy: What did 
+
+[00:03:58] Alex: our, we've changed our studio name to a Human Computer and that got a good response as well. So, and we announced
+
+[00:04:06] Troy: Hold, hold it, hold it, hold it, hold it, hold it. There's a lot of news. That's a lot of
+
+news. 
+
+[00:04:10] Brian: you gotta
+
+[00:04:11] Alex: dropping a lot of news. 
+
+Well, I'm rushing through it because you sound like you're totally disinterested, Troy. So I was trying to speed
+
+[00:04:18] Troy: don't, Hey, hey, hey, hey, hey,
+
+hey. Don't, don't do that. Don't you need to talk to your guy about that? Don't do that.
+
+That's dysfunctional. Listen, what was the name of your previous studio? UUU, uni Union
+
+[00:04:31] Alex: Universal entities.
+
+[00:04:33] Troy: Universal Entities, sorry. Shortened to Unient. Okay. And now the new one's called Human something.
+
+[00:04:38] Alex: Human Computer. 
+
+[00:04:40] Troy: Isn't that taken? 
+
+[00:04:41] Alex: No, we, we own Human Computer LLC. It's ours.
+
+[00:04:44] Troy: Oh, good for you. 
+
+[00:04:45] Brian: Does it matter if you get a URL anymore? I called it The Rebooting because I couldn't get reboot. com and now I
+
+[00:04:50] Alex: Well, the URL is different things. I mean, we, what we needed. So our URL is, if anybody wants to visit it as humancomputer. io, but, yeah, we, we registered the company and, it was all available. so we're very excited.
+
+
+
+[00:05:03] Brian: When will I be able to play this game?
+
+[00:05:05] Alex: Q4 2024. 
+
+[00:05:07] Brian: And do I need to be an advanced gamer to be able to play it? 
+
+[00:05:10] Alex: No, our first game will not be for advanced gamers. It'll be for noobs, noobs like you.
+
+[00:05:15] Brian: That's well, I'm not new. I I did Asteroids and,
+
+[00:05:20] Alex: come a long way since Pac Man.
+
+[00:05:21] Brian: I got a a Ms. Pac Man, excuse me.
+
+[00:05:24] Alex: Oh, the better ones. Yeah,
+
+[00:05:26] Brian: Yeah, my mom got addicted to Ms. Pac Man, once during our childhood. It was like a very brief period,
+
+she was playing it like non stop.
+
+[00:05:34] Alex: The genius thing about Ms. Pac Man is that they essentially repackaged a very similar game, but they just put a bow on top of Pac Man and called Ms. Pac Man. It's incredible.
+
+[00:05:45] Troy: They changed some stuff, like the treats were different.
+
+[00:05:48] Alex: The treats were different. 
+
+[00:05:49] Brian: It's a great game. okay, so, a lot of optimism, I guess some optimism.
+
+Not a lot, not as much
+
+fear and loathing there. 
+
+[00:05:56] Alex: I thinkk independent studios and it's the same thing as everywhere in the media, smaller companies or individuals that have a low, capital intensive structure, are pretty flexible, are distributed, and have, a bit of time to figure out what's going on, are seeing this as an opportunity, you know, you have more access to talent, you, you get kind of this renewed focus.
+
+If you're, a big studio with like hundreds of people or your cost structure is through the roof, then you're struggling a lot more. So, we're seeing similar trends, in gaming. So, but most of the people we hang out with are in the smaller space, independent games and, of course, you know, Apple and Netflix and the big, platforms are here, talking to these small publishers because, you you never know where the hits going to come from.
+
+It's been 
+
+[00:06:42] Troy: Is there, was there a lot of AI talk?
+
+[00:06:45] Alex: Yeah, there's been lots of AI talk. Ubisoft, I think, also demo something where they had fully AI generated characters that would have conversations with you. They would fully generate it. So they're starting to demo agents. There's some anxiety around the amount of junk that we will see.
+
+On game stores, with A. I. Just being able to generate, lots of trash games that can then flood flood the market. But if there's 40, 000 games being released every year on steam, for example, we're really competing against 0. 1 percent of that because most of that is just trash that that nobody plays.
+
+It's not to disparage the work of people doing games that aren't successful, but a lot of these are essentially just unity kind of asset rips that you just package and try to sell for two 99. 
+
+[00:07:31] Troy: Hey, Alex, now that Brian has given in and given me a subscription
+
+to the rebooting, can I get a free, free copy of the game?
+
+[00:07:41] Brian: I'm going to pay you for your game because I value your labor, Alex,
+
+[00:07:45] Alex: Thank you. I appreciate that. Well, it depends, if we're on Apple arcade or Netflix, it might just come with your subscription. So, you know, it 
+
+might be freE. 
+
+[00:07:53] Troy: Oh, great. So yeah, I'll get it that way. Thank you. I don't get Brian's product as a bundle, some kind of bundle, but maybe in the, who knows? Optimistic.
+
+[00:08:03] Alex: Hey, Brian, do you want to, do you want to bundle your, your stuff with my game? We can be the next New York times. You got
+
+games, 
+
+you got insightful content.
+
+[00:08:12] Brian: SEO content and whatnot. Okay. Speaking of SEO, I don't know
+
+if you 
+
+[00:08:17] Troy: jamming a lot of shit behind the paywall, Brian.
+
+[00:08:19] Brian: Well, I mean, I, I need to give tangible benefits to people who support the work, those who pay. And there's, there's different ways to 
+
+[00:08:29] Troy: feel molested by the thing. It's filled with ads and now it's behind the paywall.
+
+[00:08:33] Brian: Now the dual revenue stream is, I've never gotten a complaint about an ad. They're very tasteful. I think they're additive. Did you guys see the, OpenAI CTO Mira Mirati, interview? I guess this stuff, it speeds up so much that I think it might even be out of the news cycle at this point because there's so much stuff.
+
+But basically, she was being asked in a Wall Street Journal video interview about where the data came from for Sora. I mean, it's a video AI. Video generator. We all know where video is on the internet. It's on YouTube. And she's basically asked, does it come from YouTube? And she got this funny look on her face that quickly became a meme because she's, you could see the lawyers seizing, seizing control of her.
+
+And she was like, I don't know, which is kind of funny. This is going to be a major issue for these companies.
+
+[00:09:25] Troy: She makes the world's most complex machines, but sadly she skipped PR training. 
+
+[00:09:30] Brian: Yeah
+
+[00:09:31] Alex: Troy, right? Like you felt that. Same way I did, I guess when I saw this interview, I was like, how come, how does she not have an answer to that? Like a perfectly, constructed answer to that question. They knew it was coming.
+
+[00:09:44] Brian: Were you PR trained at all, Troy? Or did they just give up? Or
+
+I'm trying to imagine that. 
+
+[00:09:52] Alex: it's kind of, you, you get this dog from the pound that keeps pissing on the floor and it's kind of lost cause.
+
+[00:09:58] Brian: Poor Allison Keene. Allison, send me a note. I want to know 
+
+[00:10:02] Troy: yeah, of course I've been
+
+PR trained many many times. Can't you tell in my polish?
+
+she was a little sloppy. I think that it also shows maybe that we're at this sort of in between time when Nobody really knows what to say about fair use, the whole market is struggling with what's the right answer to the question. 
+
+which is like you gobble up the internet to train your model and, somehow it seems more poignant when it's tart, when it's focused on video, which was the, 
+
+[00:10:31] Brian: Well, it's more obvious, right? I mean, a lot of Silicon Valley in business, as far as I can tell, is based on plausible deniability, right? And you can plausibly deny a lot of things when you build on video. You can't plausibly deny that you're you're using YouTube video. It just doesn't pass any kind of smell test by any sentient human being.
+
+[00:10:53] Troy: I think we're moving into this long period of figuring out how to price human effort around content. And it's going to take a while, right? So we, we don't know. Because I think maybe partly because we don't know how much the other side of it's worth, meaning, what's the value of that, that content to the creator of an AI platform.
+
+It's hard to price the inputs. And it's going to take years to figure out like, how much we pay for farm to table versus industrial content production via an AI bot and how pricing differs between different types of content and the limits of fair use in a use case that I think hasn't been, that wasn't conceived of, frankly, when the, when fair use was created.
+
+[00:11:41] Alex: There are a couple of like interesting things here. One is it looks like this stuff's gonna have to go to court until somebody has an answer, because nobody wants to make a statement, right? Not even Sam Altman or the CEO, they don't even have a big statement where it says, this is what we believe. It's, it's, it's really interesting. And
+
+[00:11:58] Brian: don't understand why they just come out and be like, look, we believe in fair use. We have an incredibly expansive definition of fair use. Anything that is public data is fair use to train on. Obviously, YouTube is public data. We train on that. The New York Times, public data, we train on that, 
+
+etc, etc. If you want to, if you want to, if you want to sue us, fine.
+
+But this is what we do. 
+
+[00:12:23] Alex: Right but think about the audience here..
+
+They could say that and, maybe YouTube could have even said that when they were showing clips of, CNN on it in the beginning or, somebody playing a song. I think those were corporations fighting corporations here.
+
+If OpenAI comes out and says, yeah, of course we rip YouTube. We think it's fair use. Now you have thousands of YouTube creators. Right. You and me, everyone looking at open AI is ripping off the content of people. This is not YouTube versus Google. So, so I think part of the timidity, that's my hypothesis, is the fact that if they go out and say that they're not going to make a lot of friends
+
+[00:13:01] Brian: Okay, we'll get a better answer before they're hauled in front of Congress, because that is where this is going. They're getting hauled in front of Congress. Congress loves to do that. They love to get the clips out. And 
+
+so 
+
+[00:13:12] Troy: You know, Brian, but, Sam Altman performs so well in the PR ring
+
+that, it's hard to compare the two. thought he was unbelievable. He did another Lex Fridman this week. And he's so fast. And so he's really transparent, actually, but always has the seemingly the right answer on it, you know, at his fingertips, but Did you listen to it?
+
+There was a question where, Lex asked Sam if he should be trusted with, the kind of, terrifying potential of AGI. 
+
+[00:13:43] Brian: Was he like, no? 
+
+[00:13:45] Troy: he's
+
+like, you know, we need governance and, I'd like to think that, I could be trusted, that I've shown that I'm trustworthy, but you can't rely on a single person ever.
+
+The system has to create, checks and balances. So 
+
+[00:13:58] Brian: So let me 
+
+ask you this. How important is it that that he be trusted in it that a lot of the people who are building this be trusted? Because look, Musk is out there. He's open sourcing, Grok, and he's suing open AI for dishonesty, and they've got a name problem, right?
+
+He's trying to redefine open the open and AI and a lot of that's esoteric. Okay. To regular people esoteric like tech talk, but I think it does speak to Let's let's be real. I mean we saw this with the social network and it didn't dent Zuckerberg There's a lot of playing fast and loose with rules that that's baked into the system It's it's ask not even ask for forgiveness afterwards.
+
+It's just Take what you can and then deal with the consequences down the line when you have enough lawyers and whatnot. And honestly, I think youtube sold to google because they just needed the lawyers does it matter that if sam altman is quote unquote trusted?
+
+[00:14:56] Troy: it's ridiculous to think that. a, a CEO of a you know, important technology company needs to be trusted on some level and on some level, the governance systems within that company particularly, there's cascading systems of, of governance, right?
+
+So like the board has to be a check for Sam Altman as does his management team inside of the company. But as we've seen. The board can be moved with, money effectively. And so to me, they have to live in a bigger system of gov system of governance, which is regulation at some point, and a question is when and how, and I think that the open source idea is an important check here.
+
+It's that if you imagine that this is actually. A era defining, kind of technology. If it is anywhere near something that is sentient, or, the power that can kind of replace humans. Surely, it can't be dependent on an individual or a company, it's got to be a societal asset, it's like discovering DNA. You know, it needs to be part of, I mean, now people will take advantage in different ways to wring commercial value out of it in different ways. I think that's fine, but I think that, that the open source idea is really important here. I really do. You know, it's the same with all stuff with Elon.
+
+He's like a fuckhead, but he always, often has something important to contribute to the discussion.
+
+[00:16:23] Brian: That's a great review of him well, let's let's move on to a different, topic
+
+[00:16:28] Troy: Why, what are you talking about? Alex isn't going to bite on that?
+
+[00:16:31] Brian: No, I think he's he's weary of the elon stuff. I don't want
+
+to talk for you know, I don't want to say anything about Elon because whenever I criticize him, I'm just called, what was it? Derangement syndrome. 
+
+[00:16:41] Troy: Elon derangement syndrome? first and then, and
+
+[00:16:43] Brian: then No, naive is for the different reasons for that.
+
+naive and deranged, 
+
+[00:16:46] Alex: I think Elon, I don't think it's particularly genuine because if he ended up having open AI merged into Tesla, he wouldn't be so upset about it.
+
+However, irrespective, I find I'm finding him deeply uninteresting and I'm starting to get a sense of what this guy's about, that the open AI stuff, the thing that's kind of, quirky about it is that it's such a messy structure. And it's, it's a lot of promises from, as we know, human beings who are fallible.
+
+It could be like the most important company of this generation. And yet we don't really fully understand how it's organized and, and who runs the show. So I think that's just messy. I would like it to be. Just a little bit more transparent. I don't particularly need it to be open as such.
+
+That being said, I think most of these models are going to be pushed towards open source. Apple's efforts seem to be entirely open source because they know that the value that they'll bring, and then that they'll Take out of their customers is not going to be the LLMs. So I expect a lot of this stuff is just gonna go open source.
+
+Now, when it comes to a GI, it's all hypothetical, right? Like a conspiracy theory on the internet now that a GI exists and it's cons controlling Sam Altman to get integrated into Microsoft to take over the world, right? Like 
+
+[00:17:58] Brian: really? 
+
+I like that.
+
+[00:18:00] Alex: Yeah. That's a good one, but you gotta, you gotta give him credit because I mean, to me, Sam Ullman, sees ahead of things and he understood that, you know, he said at one point in this podcast that in the future, there won't be a kind of governance capacity inside of the company, whatever you'd call it, safety and what would
+
+[00:18:22] Troy: the function be? Trust and safety. He said the whole company is trust and safety. At some point, like 90 percent of what we will, what we'll do as a company is manage the broader impact of our technology on society. Also remember that Sam Altman, took no equity in the company. Why? Both anticipating that either A, he was already wealthy enough, that B, this would give him an incredible platform of influence, and that no one could accuse him of being profiteering off of something that should have societal benefit, or C that he could find other, hustles off of being Sam Altman that would, create new investment opportunities.
+
+And it really didn't matter because he would be wildly rich through the whole process. So it's, there's a lot, a lot, a lot of stories to tell around all of this, I think. Who
+
+[00:19:14] Brian: Yeah. I hope there's a movie.
+
+[00:19:16] Alex: yeah. 
+
+[00:19:16] Troy: would play him? Michael Cera?
+
+[00:19:18] Brian: Yeah, that's actually a really good one. I would like that. 
+
+[00:19:22] Alex: I think the interesting thing though, with right now, with, the content being ripped from YouTube is that I don't expect us to hear anything from YouTube because they're also facing the same issues, 
+
+[00:19:32] Brian: It's like the Spider Man meme. 
+
+[00:19:34] Alex: they're, they're kind of, yeah.
+
+Yeah, and they're kind of all like kind of like it's some sort of standoff at the end of a 
+
+cowboy movie 
+
+[00:19:40] Brian: Well, meanwhile, in my like private dinners that I do in between webinars, there, there's a lot of discussion of AI and payments and, and
+
+[00:19:49] Troy: Are we moving into a conversation about middle management?
+
+[00:19:52] Brian: Well, yeah, but most publishers just throw their hands up and
+
+[00:19:55] Alex: Let him segue man. What the hell he was just That was a, that
+
+[00:19:58] Troy: was a segway joke. It was a great joke.
+
+[00:20:01] Alex: it was a great You're just like the guy that like speaks over the comedian just before the punchline
+
+because you see it Yeah, In your media training, did you get told on the, panels not to be like, Oh, well, that's like what we discussed in the pre call. I was like, no shit. That's why I'm bringing it up. 
+
+
+[00:20:20] Topic: Middle managers
+---
+
+[00:20:20] Brian: anyway, let's just talk about middle managers. They're all getting offed. And, Troy wants data, but Bloomberg, Bloomberg crunched the data.
+
+Look, I know, nobody cries for the middle managers, but then there's, there's studies that show that middle managers are necessary. And so. Bloomberg crunched the 
+
+[00:20:37] Alex: whatever the case 
+
+they're they're people and they're an important part of the economy right now, you
+
+[00:20:42] Brian: Yes. I, you pull out the middle managers and you've, you've collapsed the post World War II sort of white collar, professional class because that's what it is. Like very few people for all this talk of the entrepreneur, entrepreneur, entrepreneur. It's a very small group of people. And, you know, most people do not have the, the wherewithal, the risk profile to go off on their own.
+
+And,
+
+[00:21:05] Troy: Well, let's not just entrepreneurs and middle management. There are other roles in the world.
+
+[00:21:09] Brian: Yeah, there's individual contributors and there's, craftsmen, there's trades, 
+
+[00:21:15] Troy: Mm hmm. Discipline leaders. There's, experts.
+
+There's, leaders?
+
+Well, it's kind of
+
+[00:21:23] Brian: sounds like something a middle manager calls themselves on LinkedIn. it's more
+
+[00:21:27] Troy: defined mentoring and expertise than it is about, coordination.
+
+[00:21:32] Alex: Right, but it's like four of those, in a company of a thousand. 
+
+Sure. And I'm, I'm not sweating, but yeah, no, I mean, it's, it's really brutal. We're seeing it in tech here. 
+
+[00:21:41] Troy: Is it, brutal? 
+
+[00:21:42] Alex: yeah, because I think it became a, even when I was at Airbnb, I could see this kind of, environment where the company wanted to focus and become much better at prioritizing, Troy, you've, you've been in companies, you know, how hard it is to prioritize companies always do too much, right?
+
+But then you look at your organization, you say, well, of course we have all these like smaller leaders and they all want to own something. And it creates an organization that's working on a hundred different things at the same time and not moving in unison. And so you start saying, well, how do we change that?
+
+It's like, okay, well, it's to remove these leaders and focus on more senior leadership that runs a team of. People who make shit, right? Whether it's, whatever it is you're making. and that was a trend that started for me then I think, and now it's been just accelerated, because economics kind of, you know, Forced us to rethink it because, technology is showing us that, I think working remotely made it happen.
+
+Like, wait, wait a second. You could have, everything's happening over Slack. People can kind of just get their work done. Do we need all this? Do we need all these layers of abstraction 
+
+between the person making decisions and the person making the thing?
+
+[00:22:52] Troy: who are we crying for right now? Listen, I know you guys want me to be the sort
+
+of callous 
+
+[00:22:56] Brian: Of
+
+course, 
+
+no, 
+
+[00:22:57] Troy: argument. 
+
+[00:22:58] Brian: you're volunteering. 
+
+[00:22:59] Troy: no,
+
+No, but let's get a little more specific, Brian, I know you like to identify with, with middle management, but like, what
+
+[00:23:06] Brian: Why don't I like to identify with the cubicle class? That's below middle management.
+
+[00:23:10] Troy: okay, but cubicle class are people that actually do things. What is minimal management to you?
+
+[00:23:15] Brian: so I used to go around, the editorial meetings at a place I worked, and identify people who wrote emails, most, or actually wrote 
+
+stories. Thanks. 
+
+[00:23:26] Troy: volume.
+
+[00:23:27] Brian: Well, if their main output is, emails and meetings. Yeah. You're a middle manager. I mean, Mark Zuckerberg, you know, when he was talking about his year of efficiency and a lot of this cascades from Silicon Valley, it just does managers managing, manage managers, managing managers, managing managers, managing the people who are doing the work.
+
+[00:23:47] Alex: I think you could define it as like a person, a few levels within the organization that manages three to eight people that has, oversight over, you know, Tiny part of the organization. And, and
+
+[00:24:00] Troy: Someone typed something into perplexity.
+
+[00:24:03] Alex: the thing is like that manager class became important when companies started scaling and you were bringing a lot of young people in that you wanted to kind of like put to work.
+
+And so you needed to set up this kind of, system of like, eight or something people to one manager. And then on top of that. The consultants would come in and create these org structures and say, and it started defining becoming a manager as a career progression. So you start as somebody who does something and then you start, you become somebody who manages a small group of people who do something.
+
+And that's what gets you to becoming a senior manager and a director and stuff like
+
+that. But as the companies grew, you started having more and more of these middle managers
+
+[00:24:45] Troy: Right. So, so, but Jack Welsh did the same thing when he whacked half of, you know, a bunch of people at GE years ago. So is this just part of a cycle? Are we in a tightening, era or is this. A fundamental restructuring of business hierarchies such that communication technologies, coordination technologies, and kind of changes in how we think about talent inside of companies is more fundamental.
+
+[00:25:12] Alex: think it's three things. Can I list them?
+
+[00:25:14] Troy: Do you get to She's the best too. 
+
+[00:25:18] Alex: Number one is like, one of the drivers is definitely economics and efficiency companies want to become more efficient and they're cutting back what they think they can cut back number two. Is, a kind of, a philosophy shift that happened during the pandemic when we started working remotely, where, you know, new technologies, new processes were created that kind of where it became apparent that you could actually automate a lot of this stuff and you didn't need a lot of this, these layers in between.
+
+And number three is a technological one where companies are already bracing themselves and, and setting themselves up for not only. Technology that will, improve their efficiency dramatically, potentially, 
+
+[00:26:00] Troy: So C, C. 1 on that one, right? Like it's a wave of efficiency.
+
+[00:26:04] Alex: it's a, it's a wave of efficiency, but it's also on top of that, it's a, existential risk. There's not one company that says today, like, we don't know if AI is going to really help us thrive or completely destroy parts of our business. and so that is kind of, creating this compression, in, in organization that's flattening the organization.
+
+And it's it's a confluence. So it's, it's happening at a bigger scale. It seems to be right. 
+
+[00:26:30] Troy: the positive here?
+
+[00:26:32] Brian: Well, I think the positive is that it could break apart a lot of the soullessness of companies and lead to a force a lot of people maybe against their will, but to first of all, I it will reward people who stayed closer to the work. And I think that is a positive. Overall, a good thing.
+
+And I think that we're going to have organizations that are smaller and by necessity, when you're in smaller organizations, you need less layers of management.
+
+[00:27:00] Troy: Did we have middle management in the olden, olden days? Did the, the blacksmith have a middle 
+
+[00:27:05] Brian: I was just thinking of the blacksmith. No, the blacksmith had a, that's why we need to bring back apprenticeships too, by the way, that's an entirely different episode. We're 
+
+not going to solve the middle manager thing on this episode. 
+
+
+[00:27:16] Rant Line
+---
+
+[00:27:18] Brian: Let's go into reader questions. I want to get into listener questions.
+
+[00:27:19] Troy: Yes, the ran line. Are we gonna keep calling this the Ran Line? I think the b the newspaper I worked at that owned the ip, a Rent Line went outta business. So we may as well just take it. I like it.
+
+[00:27:29] Alex: yeah. 
+
+[00:27:30] Brian: so on the Rant Line is, Graham. 
+
+let's, hear from Graham.
+
+[00:27:35] Graham: Well, you were convinced no one was going to record one of these, but I'm guessing you've probably got dozens. Also, excuse the noise. I'm out walking the dog, which is something I usually do when I'm listening to your podcast. question for you all, I guess. I work in the digital learning space. I manage a A huge learning management system for a global health company.
+
+I'd like to know your take on the future of human learning and how we teach each other things, how much AI is going to nose itself into that space and supplant people like me. 
+
+[00:28:07] Brian: Alex, do you want to help Graham out with forecasting the future of, 
+
+[00:28:10] Alex: Yeah. I mean, I think, some of the most exciting demos of AI that feel most, I would say, useful today are, AI based tutorships, AI based tutors that adapt to your learning style, your level, because right now a lot of content needs to be created, to create kind of curriculums for people at different levels with a different pace, with a different learning style.
+
+AI is able to today, I mean, even if you use chat GPT, create a learning model for you to learn nearly anything that is accessible over the internet. I have very specific ways of learning things and, consuming information and I had chat GPT teach me about, shaders, which is a.
+
+Type of like computer programming and it did an excellent job. So I cannot see a future for like textbooks or something like that. Where, where things are set, but rather that you will have these specialized AI's that are into tutoring. The second thing is I'm working, you know, with various companies around AI and stuff like language learning is really powerful with AI.
+
+Because I can not only speak to you, but, with multimodal, it can. Review your pronunciation. It 
+
+[00:29:25] Troy: Mm-Hmm. 
+
+[00:29:25] Alex: catch mistakes. It's
+
+incredible. 
+
+[00:29:27] Troy: you could get an American accent.
+
+[00:29:29] Alex: Never. I've been trying. 
+
+[00:29:30] Brian: You should get a different accent. You get like a South African accent. That was the gentleman's name that asked the question? First of all, I really appreciate him asking. Thank you for, for hitting The ran line. 1 little note From, from hustle culture, right. This is a hustle culture corner. One thing I noticed today for all of you is that if you're stuck, go for a walk because there's nothing like walking to free the mind, just saying. and, 
+
+[00:29:54] Troy: and, 
+
+[00:29:55] Brian: Are we in the good product
+
+[00:29:56] Troy: no, no, no, no, no, no. But the, question asker, who's, what was the name
+
+again? Graham. Graham was walking his dog when he asked the question.
+
+yeah. 
+
+And I just said, 
+
+[00:30:06] Brian: us when he walks his dog.
+
+[00:30:07] Troy: yeah, and I think it's a great time to walking is cause I went out thinking about Kyle joining the show today and what I was going to ask and all that.
+
+I went for a walk and it was just like, boom. That's good.
+
+I got it. 
+
+[00:30:18] Brian: he's about here. We're, we're gonna be talking with Kyle Chayka,
+
+in a few 
+
+[00:30:22] Troy: I answer the question 
+
+now? is it my turn, Alex? 
+
+[00:30:26] Alex: did not like my answer.
+
+[00:30:27] Troy: I loved your answer. Why are you so insecure about everything? Jesus. Okay. 
+
+Listen. 
+
+[00:30:32] Brian: I think.
+
+[00:30:33] Troy: Okay. So I got to say big picture. Great. Your platforms will be fine. It would seem to me that more and more education are moving to, management systems and all that.
+
+But like, I'm totally bearish on formal education. Right now, admittedly, educational environments are great for maybe mentorship, slash instruction, community, definitely, certification from a brand or affinity or association with a brand, but like you can learn anything. If you're disciplined now, you can really learn anything.
+
+You can learn it in, with, between groups of people, you can learn it from YouTube, you can learn it from online, courses. I think there's, people will go to college for a long time because there's lots of other reasons to go other than learn, but you absolutely don't need to sit in
+
+a classroom 
+
+[00:31:17] Brian: honest with you, were you a good student?
+
+[00:31:19] Troy: when I want it to be.
+
+[00:31:20] Brian: Oh, that's a, that's a no. Which is fine, I think it fits your brand. and that's the most important thing. But I think that the, extra benefits of, college are completely overrated. I don't get it. Because outside of the very elite colleges, it's not like the people I went to college with.
+
+I mean, no offense, Jack and everyone I hung out with at Old Eagles. But I don't really think that it was like super beneficial to my career or anything.
+
+[00:31:45] Alex: I mean, insofar as maybe it, it acts like a country club where you meet other people and it gives you that cachet, right? Providence College? I don't
+
+[00:31:53] Troy: Alex is one of the smartest, most resourceful people I know. Did you even go to high school?
+
+[00:31:57] Brian: Did you go to
+
+high school.
+
+[00:31:58] Alex: high school. Really? No, that's why he, uh, 
+
+[00:32:02] Brian: high school? 
+
+[00:32:03] Troy: so testy. 
+
+[00:32:04] Alex: didn't finish high school. I didn't go to college. 
+
+[00:32:07] Troy: with us highfalutin educated folks.
+
+[00:32:09] Alex: Yeah, exactly. And I probably missed out. but just like an experiment, folks, for the listeners. Okay. If you have a chat GPT plus subscriptions, 20 bucks a month, if you're interested in this, it's worth checking out and Perplexity as well, but chat GPT has a voice mode. You turn it on while you're in traffic or walking the dog, you turn it on and start a conversation with chat GPT and voice.
+
+Now there's still a little bit of the delay between answers. That's, that's the kind of the biggest gap that they need to cross to make this really, truly useful. But. You can start a conversation and get ChatGPT to start teaching you any subject. Try it out. Say, I am this, I want to learn that, help me run through a set of exercises that will teach me this, right? 
+
+[00:32:52] Troy: Incredible
+
+[00:32:53] Alex: And it is incredible what you get just out of the raw output of Chat GPT it is not 
+
+[00:32:57] Troy: What a tip! What a tip fromm Hustle Corner 
+
+[00:33:01] Brian: Corps, let me just, one thing though, I hate to be the, the negative here, but we all have roles to play. What about being like well rounded, right? Like where I went to like college, it was a liberal arts college, and I know that's like anathema to the tech people.
+
+Providence College, is in Providence, Rhode Island. It's like when I went, when I tell people I went to school in Providence, they're like, Brown? I'm like, no, across town, but not Bryant and not Salve Regina. 
+
+[00:33:27] Troy: What about RISDI? Why did't you go to RISDI? 
+
+[00:33:29] Brian: RISD? Oh, the RISD kids were cool. I wasn't cool enough to go there. I mean, they could draw and stuff. Alex 
+
+[00:33:34] Troy: would have gone to RISDI. 
+
+[00:33:35] Brian: Oh, totally. what's his name? Brian Chesky went to
+
+RISD. 
+
+[00:33:38] Alex: went to, yeah, Brian and Joe, Gabby from Airbnb 
+
+[00:33:41] Brian: Yeah. 
+
+[00:33:41] Alex: to RISD.
+
+[00:33:42] Brian: but we, we studied like the development of Western civilization and we, read books and all this other stuff. Won't this just lead to people being less well rounded in many ways? I mean, it's it's one thing to pick up the skills and, or is that just the fate?
+
+Like people are, going to be less well
+
+rounded. 
+
+[00:33:57] Alex: sure. 
+
+[00:33:57] Brian: Definition will be
+
+[00:33:59] Alex: yeah, I think that there is. Computers and access to everything without any friction has a tendency to make us more insular. But at the same time, you could see it as like a recovery of our time, and spending our time in more meaningful ways.
+
+If we make space for it, like individually, As communities, as culture, as a culture. I'm not saying it's gonna happen, but I don't think school or the education system as it is today helps us being well rounded. People end up in debt, people end up having spent four years of their life on something that they're probably never going to use.
+
+A lot of kids are not, Including me, I'm not made for the education system. I didn't think school made me more well rounded, I think school like, felt like it was slowing me down Hey, maybe in the future, we all work four days a week. School is about being outdoors and learning how to build shit with your hands.
+
+And then we spend two hours at the computers and become geniuses. I don't know, but it's going to have to be all these things put together, 
+
+[00:34:58] Troy: I like 
+
+that. It's a good idea. You should build a school around that 
+
+[00:35:01] Brian: Yeah. in the morning you do like survival skills and then you sit at a computer for a couple hours.
+
+[00:35:07] Alex: Yeah. 
+
+
+[00:35:07] Guest Start
+---
+
+[00:35:08] Alex: Oh, Kyle just joined us.
+
+Hey. 
+
+[00:35:10] Troy: in the bathroom.
+
+[00:35:11] Brian: Well, he said he was there. There's drilling going on. This is New York. Welcome to New York.
+
+[00:35:17] Troy: Hi, Kyle. 
+
+[00:35:20] Kyle: It's You wouldn't want to hear elsewhere, I don't think. 
+
+[00:35:26] Troy: but just out of curiosity, is there a chair in the bathroom or are you sitting where I think you're sitting?
+
+[00:35:31] Kyle: I moved a chair into the bathroom.
+
+[00:35:34] Brian: Good. It's keeping it
+
+classy. 
+
+[00:35:36] Alex: we, really appreciate it, Kyle. Thank you. Thank you for doing that.
+
+[00:35:39] Brian: So Kyle, you're a writer for the New Yorker and you just published, this is your second book, right? Or have you written more?
+
+[00:35:47] Kyle: Yeah, just a second.
+
+[00:35:48] Brian: so it's Filter World and it's about how algorithms flatten our culture. This is, this is something you've been covering for a few years now, right?
+
+[00:35:58] Kyle: Yeah, I feel like since 2015 or 2016, probably.
+
+[00:36:03] Brian: Okay, so for those, who have not read the book, What is your thesis in basically two minutes?
+
+[00:36:10] Kyle: the thesis is all in the subtitle of the book, which is how algorithms flattened culture. And I think the overall argument is that, is basically all of our experiences being so dictated by algorithmic recommendations and feeds on digital platforms has made us more passive consumers who don't know where content is coming from and care less who makes it and the same situation for pressures creators of that content, whether it's video or music or visual arts or writing to kind of conform to the aesthetic standards set up by those algorithmic feeds and the platforms that they function on.
+
+[00:36:51] Brian: Got it. But has that impacted you specifically? And like how you go about, you know, building your own taste? Cause I understand like the point, I just wonder whether there, it's like an all or nothing thing and how you personally manage the algorithms in your life affecting you.
+
+[00:37:08] Kyle: it definitely does affect me. I think anyone who made their career on the internet feels the pressure of algorithmic feeds and kind of catering to the standards of them or not. as a writer, I've definitely felt the pressure of talking to Twitter, optimizing my posts for a Facebook feed or for an Instagram story.
+
+and then as a consumer, I mean, I kind of wrote the book to become more aware of how it was impacting me. I think I let algorithmic recommendations take over a lot of what I was consuming, particularly in a music context, because that's an area where I maybe don't do enough work for myself. So I was, you know, letting Spotify shape a lot of what I consumed.
+
+And so, it was in the book and over the course of doing all this writing, I tried to step back from that and find other ways of consuming culture, like music, art,
+
+books, whatever.
+
+[00:38:06] Troy: this is maybe the segment of the podcast where we can hate on Spotify for a minute. I have a rant about that later. I, but you made me think of something, on my, walk today, Kyle. And I was thinking like, because one of the things that. Interested me is kind of where this goes next and where it 
+
+would go. If you had to say in it, and, but I was thinking about this, this thing that I had read that. I guess I see, this podcast is called people versus algorithms, but maybe you're happy about that. You've landed in the right place, Kyle.
+
+[00:38:38] Kyle: Very apt.
+
+Heh 
+
+heh.
+
+[00:38:41] Troy: and then I was thinking that algorithms are this kind of emergent global brain, right?
+
+Like they're the building blocks of the virtual world. and I was like, it's like they're beginning to assemble the next frame of our reality. Meaning like, and, and yeah, it starts with a fucking taboola text recommendation, but later it's like Alex and his VR headset.
+
+[00:39:06] Brian: There's a he, the, the, the, and your VR, Alex.
+
+[00:39:10] Troy: And then, but what I remember hearing this thing that people had, had thought that, Mark Zuckerberg had seen the future clearly when he bought a bunch of Nvidia chips to build spare capacity, anticipating the demand for AI to power, reels feeds, right?
+
+Meaning that. That recommendation systems in a recommendation culture were actually eating an enormous amount of compute. And I used to just think of them as like, Oh, we got to recommend the next article in our CMS. We need a little script to do that. But really, They're the things that power the connection between everything, whether it's an additional piece of content, or it's, the product you're going to buy next, or the algorithm that fuels the customer service app that's helping me do anything with my bank or something like that.
+
+So it really is this kind of layer of automation is what I was thinking. 
+
+And I know you acknowledge that they can be a force of good or a force of evil or kind of both. and I was wondering if it just struck me that it was almost like a layer of cultural automation had been created.
+
+Right. But now what we could do is live. a layer above that, just like we live a layer above automation where someone makes our mac and cheese at the craft plant. We don't have to make that with our hands anymore. And it reminded me because I need to bring in Canada every time I talk on the podcast call.
+
+It reminded me of living in Regina, which is the city, the great city where I'm from. It's named after the queen. and we didn't have scenes like big cities. We didn't have like the cool, Williamsburg scene. But we had this ambient kind of din of culture from around the world, mostly delivered to us from like the CBC, and in particular, our late night program called Brave New Waves.
+
+And so we took that in. That was our kind of cultural, feeding tube. And then we went into our rec rooms in our suburban homes and we made it our own. and so I guess I'm going on here, but I'm wondering if it's just like, we're shifting cultural production to a new layer because I'm super happy right now on the internet, Kyle.
+
+And
+
+[00:41:22] Kyle: Good. Good for you, personally. Heh Heh heh
+
+Heh heh. I know, but I'm like, I just find a lot of shit that interests me.
+
+[00:41:33] Brian: Yeah, why not just give it over to the feeds? think it's, like, sort of, I, what I wonder, this would be my challenge on, on Troy's thing to you, Kyle, is, isn't this just kind of the repricing of connoisseurs? Like being a connoisseur takes a lot of time and effort. And now there's this cheat code where you can sort of pass yourself off as having taste without doing the work.
+
+[00:41:53] Kyle: I think that's very true. I think the automation thing is very true. And I think the connoisseurship or taste thing is very true. It's like an automation of taste, of expertise, of cultural connoisseurship. And sure, you can, Give yourself over to the recommendation algorithm. You could theoretically watch whatever comes up on your Netflix homepage.
+
+I don't think you'd be very 
+
+happy, could give ourselves over to the DJ right 
+
+for sure. But the difference in that scenario is that the AM radio DJ was a person who had thoughts about what they were putting on the radio. Theoretically, like, if the radio DJ was a robot, then sure. I like that idea of another person existing in the same reality as you, maybe being in that town, being Canadian, period, and kind of speaking to your perspective, your identity, your life, curating something for you.
+
+Though I do think, it's underrated how much work this stuff takes and how much labor curation needs. Like automating that is very tempting and I totally get 
+
+[00:43:01] Alex: if, if you're, because, Troy is a person of a certain age with a, brain that's fully formed or maybe even in decline, but it, to me, to me, the impact of algorithms, It's really age dependent, if it was up to me, I would not allow anyone under 14 to be exposed to algorithms because I don't think you have fully fledged. Taste and thoughts and it's so easy to manipulate and we're so malleable then and you see it, right? Like you see Coco Lemon this cartoon on Netflix that that is essentially algorithmically created They feel tested with kids and edited as soon as kids lose interest or putting a kid in front of tick tock and watch And I think that Troy maybes beyond that because he was living in Regina with a single radio station But if you fed this on.
+
+Do you think that has more of an impact? Do you think age has an impact here?
+
+[00:43:56] Kyle: Yeah, I mean, you're more impressionable when you're younger and your attention is more liable to gaming. I mean, maybe it's always liable to gaming and influencers use lots of tricks to game our attention to if we're looking at them, but for the younger generations, it's like They don't have the chance to exist outside of that recommendation system, like they don't experience that scarcity of content that might come when you only have the one radio station.
+
+[00:44:25] Alex: Right.
+
+[00:44:26] Kyle: and so we like live in this surplus of opportunities to consume and content that's optimized for us to pay attention to it. But it feels like as the optimization has gone up, the like long term value has also gone down in a way. You can watch a TikTok feed for an hour and gain absolutely nothing from it.
+
+Like it's just, it's Yeah. I wonder if people, if people are hyper aware, like I'm like aware of when I feel like I've been manipulated by an algorithm and I just don't know if people focus on that. Like I went to dinner last night at Ochoa and I was like, wait a second. This is a TikTok place. I'm like, everyone here is 20 plus years younger than me, and they're all like taking TikToks.
+
+[00:45:08] Brian: I was like, this must be like one of these viral TikTok places. And I was like, oh shit, did I get manipulated into coming here by something that then got passed on to like Reels? But
+
+[00:45:19] Troy: but haven't you always been manipulated by media, Brian? I mean, if you weren't so, so, so, so the algorithm is just our collective conscience, it's not, Oh, the tech bros in San Francisco, it is the energy of the collective, right? So, so yes, is it better to be like some goofball at CGM, me and Regina, who's doing top 20 radio, or is it better that, that we're absorbing culture from a collective of people whose tastes are similar to our own?
+
+And by the way, I think it's a brilliant thesis to argue, and a very important one. I'm not saying that one is better than the other. I'm just saying my kids don't read movie critics anymore, and they need to?
+
+[00:46:00] Kyle: I think, I mean, we, we've kind of turned a corner in a way. I don't know that the, the print movie critic is coming back anytime soon. But what I do find interesting is like how criticism and curation and connoisseurship even have moved into these new spaces. So it's not just like the algorithmic feed is suggesting stuff for me.
+
+It's like new waves of creators and interesting people are finding ways to communicate their ideas through those platforms. Watched a million TikTok video essays on Dune, like, breaking down what happened in the movie and how it relates to the books and all of that stuff. So I don't think, the algorithmic landscape is devoid of intelligence or expertise, but you do have to seek it out in a different way, I think.
+
+[00:46:48] Alex: I think there's also, it's much, it's so much more potent that the algorithm actually ends up creating culture as much as it, we keep talking about recommendation. It's not like culture is happening, blooming all over the place. And then the algorithm go finds what humans are creating.
+
+The algorithm is creating the content. Everybody does that stupid face on YouTube. You know, the stupid Mr Beast face, right? Like the tone of voice, the music, the edit is all being generated to fit into the algorithm. And at some point I wonder like how much of that is recommendation and just generation.
+
+And this is where I think you talk about this flattening of culture 
+
+[00:47:26] Kyle: Yeah, I mean, I think that's the pressure. So as consumers, like sure, it's great that we can get our consumption curated by an algorithm, but then the creators also have to fit themselves into that mold. of whatever works on a platform or whatever has proved effective on a platform. So I think that's why you get the YouTube face, the TikTok voice.
+
+There's this hilarious video of a nurse or like a doctor on TikTok mimicking the hand gestures
+
+that 
+
+[00:47:57] Brian: TikTok voice? Because I know what you're talking about, but I'm sure some people don't specifically know. Yeah.
+
+[00:48:02] Kyle: it's, it's like a very staccato monotone. So it's something like, I went to dinner in soho last night and I had to get the pizza at this restaurant because I saw the pizza so often on my TikTok feed.
+
+[00:48:14] Troy: Yeah, going and going and going. that was that 
+
+was great. Kyle. There's, there's also an NPR voice, you'll notice, which is, which is a good one. Hey, can you explain what the difference is between filter world and filter bubbles?
+
+[00:48:29] Kyle: Yeah. I mean, filter bubble, I was surprised to find is like an idea from quite a while ago at this point. like it, it feels so relevant, but it was coined I think in. I don't want to misquote it, but it was either the late 2000s
+
+or early 2010s. 
+
+[00:48:44] Brian: founder.
+
+[00:48:45] Kyle: Yeah. No, it was, it was Cory Doctorow.
+
+[00:48:48] Brian: Oh, I thought it was, uh, I thought it was Eli. That seems shitification. 
+
+[00:48:53] Kyle: Yeah, exactly. No, the, the filter bubble to me was like an early concept of how our own individual consumption could be shaped by a feed. And I mean, feeds have taken over so much more of what we experience at this point. That was not the era of Netflix, like it was not the era of Spotify being so dominant.
+
+So now it's not just like seeing it on our Twitter feeds or our Facebook feeds, but actually in all forms of culture and entertainment. And those feeds have also gotten much more algorithmic over the past decade. So you can see, I mean, with Twitter alone. Like Twitter used to be pretty linear. You could kind of depend on how it worked and now you don't even know how it's working on a day to day basis.
+
+So it feels more warped, I guess. Like the filter bubble has become more powerful and warping. And so to me, it's this like immersive environments that we all live in.
+
+[00:49:50] Alex: so you wrote this article, I, I, when I was at Airbnb, I think it was like, welcome to Airspace, right? and that was about like apartments becoming, looking, starting to look like
+
+coffee shops looking the same. And I remember, I, I was, so, I was head of design there when that happened and , and it took that article for a lot of us to realize like, oh shit, 
+
+because we could pull out all the pictures.
+
+and in our case. it was entirely like preference based, right? Because when you wanted to pick a place, and you weren't sure you kind of went down a baseline where it looked clean in a certain way and certain things photographed better and it created this, echo chamber where everybody started looking the same because they would just perform better.
+
+And you would all of a sudden, we started. Digging into all these YouTube videos is like, here's how you take your pictures. Here's how you set the thing. And, and they had like rules for all that stuff. That wasn't actually algorithmically created by us. So at the time I didn't feel so bad. But
+
+[00:50:45] Troy: But 
+
+clearly you were a protagonist in Filter World,
+
+[00:50:49] Alex: I mean, I was a hundred percent right.
+
+Like, 
+
+[00:50:51] Troy: the sickness
+
+[00:50:52] Alex: no, I, and I think part of it is like also, You know, we keep talking about how we don't know what the algorithms do to us. some of these people building those algorithms don't really know why it's showing stuff to you. And, because, because it's like hitting some sort of dopamine receptor.
+
+And when you throwing that at a million people, it works. So I think we're kind of losing control of culture. It felt, really quaint at the time, the Airbnb stuff felt quaint and kind of, Quirky, but, it's, it's a different world, I think today, and I'm, I'm terrified with AI.
+
+I was actually trying to pivot this conversation in AI. So how, how does that world look in a world of AI where everything's not only a feed, but just regurgitated in some sort of video format or text format that you consume?
+
+[00:51:36] Kyle: AI stuff scares me, but I think, I mean, Part of what I wanted to talk about with this book was not just like the algorithmic recommendation per se, but just how digital platforms period have performed this hyper globalization on what we consume. So it's not just like, it's the fact that Airbnb exists, like enables this generic aesthetic.
+
+It's not purely because of a recommendation, but people will kind of naturally optimize what they're doing on this platform that collects so millions of people at once. 
+
+[00:52:09] Brian: I don't know the cause and effect. Like, I, like, there's something, like, the high end cocktail bar is something I noticed, in the mid 2010s. I don't know where that came from. You could be in Tokyo, you could be in Dusseldorf, you could be in London, you could be in New York, and it's the same.
+
+There was this sameness that pervaded a lot of these kinds of experiences. And I don't know how much of it is caused by feeds or digital platforms or algorithms, but, it's definitely something I've noticed, that there's a lot of just similar experiences. But also, the reality is, Within a certain group of people, a lot of people have become very similar.
+
+You end up having more in common with someone in Barcelona than someone who lives in your own city or town.
+
+[00:52:52] Kyle: for sure. But like, what is the change that has happened? Like, over, over the 2000s, 2010s, it is the internet. It is our ability to follow that one guy in Barcelona or to, for the barista in Williamsburg to follow the barista in Sydney and see how the latte art looks on a day to day basis. I think, to me, it's like the granularity of globalization changed, where it's not just a corporation, it's not just supply chains, it's, like, all of our aesthetic experiences have become more similar to a vastly larger number of people all over the
+
+world than they were 
+
+before. 
+
+[00:53:29] Troy: can I just build on it? Because this is the distinction between Bubbles and Filter World. Because Filter Bubbles are about creating these kind narratives that are part of a collective, true or not, and believing and a self reinforcing mechanism inside of a, group of people informed by, communication technology.
+
+And that's what really worries me because I feel like we're living in this kind of modern, Fog. And where, where we potentially have these dueling narratives, none of which are anchored in any sort of objective truth. They're just like, what the fuck do you want to believe? And how did the people around you reinforce that?
+
+And some of that has actually nothing to do with algorithms. In fact, there, there's a paper, I sent it to you guys, from the communications of the ACM, which is some computer science organization. called "Bias Skew and Search Engines are Sufficient to Explain Online Toxicity" basically saying that the read write world of web one web two and search engines were enough to create basically the tools of online community building that created, these potentially kind of warring factions or these, groups that feel really separate from one another.
+
+So if the flattening of culture means we all get along like kumbaya man, let's do it. But I'm, I'm more concerned that, This technology is used to perpetuate lies. 
+
+[00:55:03] Kyle: On reality, the reality thing is hard to nail down, because it's like, if most people's lived realities are on the internet, then what is the fact and what is the distortion? And it sometimes seems hard to separate. If your, if your politics are on Twitter, then your beliefs are Twitter beliefs.
+
+[00:55:24] Brian: Yeah. So you did a like a social media hunger strike for, for the, in the book, right? I don't know, did your, did your editor tell you how to do it?
+
+[00:55:33] Kyle: No, I did feel like I had to do it myself.
+
+Like, both. I mean, as, as anyone who has finished a book knows, it's like the worst slog that you've ever gone through in your life. And so this was like coming toward the end of writing the book. And feeling like I needed to go the full distance, make myself uncomfortable 
+
+[00:55:53] Brian: Okay, so professionally you feel the need to be on Twitter and all these feeds, like TikTok and the rest of them.
+
+[00:55:59] Kyle: I think so, particularly with my job now, writing an internet column for The New Yorker.
+
+[00:56:05] Brian: If you didn't, If you didn't, would you, would you, like, do you resent the fact that you have to be submit yourself to
+
+these? beat, dude.
+
+No, but I know, I feel like for instance, like not to make it about me, but I will for a little bit is I do not want to be on Twitter. I really don't want to be on
+
+Twitter.
+
+And I I know that's, it's, it's a burden. But, 
+
+[00:56:27] Kyle: double edged
+
+[00:56:28] Brian: Yeah, I know. But I have to, I feel the need, to have to be on there. I would like to have a more pastoral life.
+
+[00:56:35] Kyle: Mm hmm. I would, too. I mean, I think having covered the internet pretty intensely for the better part of a decade, I'm, like, ready to do something slightly different. And I am jealous of the people who can I'm, Write about something that's not online and can, have an interesting reporter life and career and not have to deal with the, vicissitudes of the next new platform and the weirdest freaks you've ever seen in your life doing something
+
+[00:57:03] Brian: So does it become like punk rock to like just completely opt out of all this?
+
+[00:57:09] Kyle: I think so. I mean, it's, it's not Luddite because I read the Luddite book and the Luddites were much more aggressive and violent. Brian, great, great book by Brian Merchant. but it does, it feels like to me, like a back to the land movement or something, or like a, you know, most hippie thing to be like, I'm not going to be online.
+
+I'm going to cut myself off from all of this. I'm going to find other ways to consume culture to connect to my friends, whatever. It feels, it feels rebellious at this point.
+
+[00:57:38] Troy: but. You are a product and a participant in the world of professional media. You're a professional journalist. Did writing, filter world, or any of your observations change the way you thought about professional media?
+
+[00:57:51] Kyle: For sure. I mean, I, my thinking was kind of already changing as, as many of us witnessed the decline of the 2010s VC media bubble. 
+
+[00:58:02] Troy: You work at a holdout.
+
+[00:58:04] Kyle: yeah, exactly. I mean, subscriptions. But I think like before I started writing the book and like in the mid to late 2010s, I guess, I was really obsessed with what was happening on Twitter.
+
+Like I saw that as the reality of the media industry, or of culture, or of success. And I think doing the book changed that, and also the algorithm cleanse of just like totally getting off all of it for three months. also help change that. Just to realize, I mean, I grew up on the internet, like I'm a fully millennial internet pilled
+
+person. 
+
+[00:58:40] Brian: the internet? 
+
+[00:58:41] Kyle: Probably when I was 10.
+
+[00:58:43] Brian: so you are full. I was fully formed before I got the internet.
+
+[00:58:47] Kyle: Yeah, which I think, it didn't help my life necessarily to be so online.
+
+[00:58:51] Brian: I think it's harder for those of us who grew up analog to some degree.
+
+[00:58:55] Kyle: But maybe now we're moving into a new analog era, like a post post internet.
+
+[00:59:01] Troy: what do you think happens next? I was really aching to ask you this question.
+
+[00:59:06] Alex: trying to think about like, shit, what comes after feed world? Because it doesn't sound like it's going to be good. Or maybe it'll be great. I mean, other than, you know, farmed back to the land, which let's exclude that for a second. What, what happens, you 
+
+[00:59:21] Troy: know, on the internets? Well, okay. I get that. We covered it. But is it, the nat, I think the obvious answer is the feed becomes infinitely more personalized. That's what AI does, right? And, and
+
+[00:59:32] Kyle: I mean, do you want to live in a world of like, the most generic AI generated art stuff? Like, I feel like the early products of AI generation are, don't inspire hope in me at all. It's all not very interesting. It's not very compelling. Perhaps it can make feeds better. Like a perfect algorithm would be better.
+
+If it could be more granular, if it could somehow not push people into hard behavior. But that might also just be a fact of human life. If we're all congregated onto a particular platform, we'll naturally move in a similar direction as everyone else.
+
+[01:00:09] Brian: a hopeful scenario? What's
+
+[01:00:16] Kyle: I think, is that they get better. They prioritize more human curation in some way. They let you follow people who are better attuned to what you want to see. I mean, personally, I have more hope for just non algorithmic consumption of stuff. 
+
+Like, I 
+
+have 
+
+more 
+
+hope. 
+
+Going to a record store. I don't know some very some very vintage things like I mean to me substacks and newsletters Are pretty non algorithmic for now and the fact that I can pay someone five bucks a month to write about music in a way That I appreciate is a nice thing for me to 
+
+[01:00:54] Troy: Although those bastards there, they'll say the opposite, but they're jonesing for the algorithm over
+
+[01:00:59] Kyle: Yes. Yeah, I mean I'm The way that they're moving toward an algorithmic platform is very upsetting and disturbing. And it's not adding value, like the many people have pointed out, the random followers and subscribers you get from this recommendation system don't really help you that much.
+
+[01:01:16] Troy: Yeah. 
+
+[01:01:16] Alex: Maybe the future is a AI powered bubbles. You just create yourself for yourself. I mean, there's something. Okay.
+
+[01:01:23] Brian: I think we're all going to become the precogs. We're just going to be like immersed in content. 
+
+[01:01:28] Troy: Yeah. 
+
+[01:01:28] Alex: It's super,
+
+[01:01:30] Troy: in the soup. Yeah. Kyle, one of the things you didn't talk about is that much is the whole, the other side of this whole thing, which is the economics and, algorithms. owned by platforms, the real problem, other than it's maybe, in your view, turned some of us into zombies, the bigger problem is, is it's robbed media of their ability to create their own distribution.
+
+And that's the bigger problem, I think.
+
+[01:01:55] Kyle: and not just media, but not just journalists, but musicians and visual artists and anyone who wants to reach an audience. Really faces a lot of pressure and mediation from these systems.
+
+[01:02:07] Troy: Yeah, I'm getting this sort of sickly feeling from Spotify that it's like too much. It's all greased up. It's all greased with algorithm juice I started using Qobuz because I, I'm a title, like I like high, high fidelity streams and Qobuz has a nice balance. I mean, it is very little algorithmic stuff.
+
+A lot of it is just, they curate and say this is a good album and oh my God, that felt good.
+
+[01:02:33] Kyle: It feels cleaner to not deal with these things that are trying to manipulate you. Like in, in the book I wrote about Adagio, which is a classical music streaming service. And the experience of using that software is night and day from Spotify. You're not getting pushed into stuff. You can click a musician and see their whole back catalog in one click.
+
+You can sort by performers, you can sort by orchestra, you can sort by era. The metadata is better. It's, it just shows you how much better it could be 
+
+for the thing that you're experiencing than it is.
+
+[01:03:06] Troy: I agree. The bonus question that we didn't ask him, Brian, that we discussed, is should we ban TikTok, Kyle?
+
+[01:03:12] Brian: Oh yeah, that was the last one.
+
+[01:03:14] Kyle: I think if we ban TikTok, all of the user problems will just persist in other forms, like Instagram Reels
+
+or whatever demand for this. I think that the big outstanding question is, I'm sort of with you on a lot of the pernicious impacts, at least from my point of view of algorithms, but they're incredibly popular. If you put an algorithmic feed versus a reverse cron feed in front of people, they'll choose the algorithmic feed, like 10 out of 10, it
+
+For sure, yeah. Yeah, they naturally drift toward that. And like, TikTok proved that it's a powerful tool. Or like, a compelling, addictive product for user experiencE. the Chinese data stuff, I mean, It's neither here nor there in a way. Like, all of the data is being surveilled anyway.
+
+[01:03:59] Brian: Yeah. Well, it just seems to be like, it's all theoretical. It's, it's, could they use the algorithm in order to push people in one direction or the other direction? I don't, maybe, probably, if they, if they wanted to. Why
+
+[01:04:13] Alex: mean, I think there's, there's some value in looking at reciprocity of, them selling a product to us that we're not allowed to sell to them, right? I think if only that should be looked at. If, we can sell each other cars and computers, but maybe not that. So,
+
+[01:04:27] Brian: try to get one of their electric vehicles in the United States. You can't.
+
+[01:04:31] Troy: The reason America is great, Alex, is because we don't look at petty things like reciprocity as things that define who we are.
+
+[01:04:39] Alex: Yeah, somebody who grew up in the Middle East, I will disagree with you, but let's, let's 
+
+[01:04:45] Troy: Okay. All right. Well, the last, the last thing I would just ask of you for our listeners is your hustle culture tip of the day.
+
+[01:04:53] Brian: What does that mean?
+
+[01:04:55] Kyle: Oh man. Hustle
+
+culture tip of the 
+
+day. 
+
+[01:04:57] Troy: to write all these write these amazing articles and books and also have your you know know whatever else you're accomplishing in life.
+
+[01:05:05] Kyle: Hmm. I don't know. My, my hustle culture tip of the day is pay attention to your subconscious. Like be a, be a Freudian or something. Like when something sticks in your brain for some reason. You have to go dig it up.
+
+[01:05:20] Brian: Awesome. That's a good
+
+[01:05:21] Troy: one. Nice
+
+Thank you 
+
+Kyle 
+
+[01:05:24] Kyle: this 
+
+was 
+
+[01:05:24] Brian: Thank you so much, Kyle,
+
+for,
+
+Getting into the bathroom for us. this could be a regular
+
+segment. 
+
+[01:05:30] Kyle: Bathroom podcast. 
+
+[01:05:32] Alex: you came with headphones and a mic. I really appreciate the 
+
+effort. Thank you 
+
+[01:05:36] Brian: pretty 
+
+good in the restroom. have that lamp in your bathroom? Kyle 
+
+[01:05:41] Kyle: So the bathroom in this apartment, the fan is really loud and it comes on with the light so I 
+
+can, 
+
+[01:05:49] Brian: thank you.
+
+This is New York city. This is, this is a very New York city. Nobody, by the way, I just want to tell you,
+
+Kyle, as someone who's spending more time outside of New York city, nobody else deals with this stuff outside of New York
+
+[01:06:01] Kyle: Oh, I totally get it. you know, I've prepared in advance. Like, I 
+
+thought about the scenario.
+
+[01:06:07] Brian: Awesome. you. 
+
+[01:06:08] Alex: See
+
+[01:06:09] Brian: much.
+
+[01:06:09] Troy: subconscious. 
+
+[01:06:10] Kyle: Yeah, have a, have a good 
+
+[01:06:12] Brian: All right. Take 
+
+home. 
+
+[01:06:13] Alex: Bye.
+
+
+[01:06:13] Guest End
+---
+
+[01:06:14] Troy: That was wonderful. Wonderful. 
+
+[01:06:16] Alex: love that. 
+
+[01:06:17] Brian: you got to go, Alex, do you have a 
+
+quick, 
+
+[01:06:19] Alex: just wanted to keep things moving.
+
+do you want to participate in the good product corner?
+
+yeah, 
+
+[01:06:23] Brian: good product.
+
+[01:06:24] Alex: What's your good product? Feet. 
+
+[01:06:26] Troy: Well, 
+
+[01:06:26] Alex: to get you 
+
+
+[01:06:27] Good Product
+---
+
+[01:06:27] Alex: around.
+
+[01:06:28] Troy: this is more of a scenario, good product or an experience, right? so I was thinking a little about Kyle last night I was looking at a newsletter. And a newsletter that is the product of our wonderful modern internet world. One of the greats called Today in Tabs.
+
+No, 
+
+[01:06:46] Brian: mine.
+
+[01:06:47] Troy: I couldn't get to yours cause it's blocked by a paywall.
+
+And then. So, so I'm just, doing my thing, thinking about Kyle, thinking about, Oh my God, I feel like my interests are well served. And in this newsletter, it turns out that Ben Folds, the, musician, is divorcing for the fifth time. And I thought, well, that's interesting. And, and, it's costing him a huge amount of money.
+
+More money than I would have thought that,
+
+[01:07:11] Brian: Ben Foltz
+
+[01:07:11] Troy: seemingly sort of faded into the background. But no, he's busy. and I read about it a little on Scoop Nashville, which is a niche publication, I guess, documenting the trials and tribulations of, folks in Nashville. So he's an interesting guy, Ben Folds, and he is an advisor to the National Symphony Orchestra, has been for a bit.
+
+And then I, I really remembered, oh my God, how much I appreciated like his kind of brand of quirky, nerdy, thoughtful pop rock, right? And I started thinking about all the other bands I liked at that time, the Lemonheads or Elliott Smith or Ben Queller or this. Underappreciated Canadian band called Sloan or Postal Service, Fountains of Wayne, all these bands, right?
+
+And I started just sitting in my chair, going through an old catalog of music, of course, that was infinitely available to me because of modern technology. And it just made me connect all these things like the piano tours that came before Ben, Randy Newman and Todd Rundgren or Elton John or whatever.
+
+And I fired up the songs and I listened to them through Quobuz. Because I'm kind of over Spotify and I spent an hour kind of reliving old times and the whole experience of like random discovery, going back, reliving that no one bugging me was a great product, not just a good product, but a great product.
+
+And, three songs I played from Ben folds, the one called Philosophy, this soupy. Kind of pop perfection of his song Brick, or like the, you guys know the song Rock in the Suburbs, which is like kind of driving pop rock.
+
+And while I was in that listening, I was in that newsletter and I came across another account and I hope you looked at this Alex, which was this guy, also randomly a Canadian called the Tom John. And. This is the perfect kind of companion to the whole feed world thing. He had done a TikTok video in the same voice that Kyle projected earlier, like the fast talking kind of TikTok thing.
+
+And he did a thing where The video was some entitled something like how to listen to your favorite song whenever you want. And what he did is he did this whole setup in his room of using a rotary phone to call a radio station to tell them to play a song for his girlfriend to take that song and plug it. his, Walkman that had a radio in it in and connect it to his tape deck to record the song from the Walkman onto the tape deck, and then to put it on to another mixtape because the tape deck had two
+
+[01:09:51] Brian: I enjoy that, but it. 
+
+was, 
+
+it's not, 
+
+[01:09:52] Troy: uh, 
+
+[01:09:53] Brian: not, 
+
+that complicated to record those songs off 97. 5 WISB.
+
+[01:09:57] Troy: It's a, it's a video, man. It's entertainment. The point is, is that it used to be a lot harder to do certain things to listen to that Ben Folds song over and over and over again. And, that's the internet. It's amazing place and I'm grateful for it.
+
+[01:10:13] Brian: I definitely did that. I definitely did that. That was, that was a good, good product. My good product is, Chicken McNuggets. I made my own version of chicken, chicken McNuggets and they were
+
+[01:10:23] Troy: That's so funny. We did the same last night.
+
+Yeah, my kids do.
+
+[01:10:27] Brian: Yeah. They're a little dry actually.
+
+Well, you're not doing it right.
+
+[01:10:31] Troy: You know what? If you want to, if you want to back up good product, I will only tell you, I thought you guys would probably criticize me for it. Shake Shack, man. Oh my God. The, the, the Smoke Shack burger. So good. 
+
+[01:10:41] Alex: Uh, we do, we do in and out here. We're very happy with that.
+
+Although there's a Shake Shack. Thank you all for listening, and if you like this podcast, I hope you do. Please leave us a rating and review on Apple or Spotify or wherever you get your podcasts. That takes ratings and reviews. Always like to get those. and if you have feedback, do send me a note. My email is bmaracy at therebooting.com.
+
+[01:11:05] Brian: Be back next week. 
+
+[01:11:07] Alex: alright guys, well thanks so much. I've gotta go meet with folks at Unity right now, so I have to bail. Talk about video games.
+
+[01:11:13] Brian: All right. Good luck.
+
+Thanks.
+
+[01:11:15] Alex: peace. 
+

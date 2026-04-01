@@ -1,0 +1,777 @@
+PvA S3E111
+===
+
+
+[00:00:00] Intro
+---
+
+​
+
+[00:00:01] Troy: We're warming up.
+
+[00:00:02] Brian: All right, welcome to People vs. Algorithms, a show about technology, culture, media, a lot of other things, connecting the dots. I'm joined by Troy Young. Alex is, where is Alex?
+
+[00:00:14] Troy: Mexico.
+
+[00:00:14] Brian: this to be a sponsored segment. Where is Alex? Is he in jury duty? What is his excuse? I 
+
+[00:00:19] Troy: Alex sent in a monologue that I rejected.
+
+[00:00:25] Brian: we need to insert it. I didn't listen to it. Yeah,
+
+but we need to insert 
+
+[00:00:29] Troy: is not, this is not a show about Alex's musings. This
+
+is, I
+
+love Alex and I think he has a lot to contribute, but 
+
+[00:00:35] Brian: Alex, I'm thankful for you. I appreciate you as, 
+
+[00:00:38] Troy: I am very grateful to Alex. 
+
+[00:00:40] Brian: to say, 
+
+
+[00:00:41] Listener Feedback
+---
+
+​
+
+[00:01:03] Brian: before we get into it, I want to do a little bit of feedback.
+
+I got some feedback. I didn't actually get to share this with you. 
+
+[00:01:09] Troy: this on me right now.
+
+[00:01:11] Brian: yeah, basically. I'm not going to say this person's name because I didn't ask. I really appreciate their mind is opening up a bit to the wave of people who are critical thinkers have distrust and corporate media propaganda. I don't believe what TV tells us or what big pharma allows them to say.
+
+Rogan facilitates the most interesting conversations on very niche topics from generative farming, proactive health, well being, historians, decorated military vets, award winning doctors, etc. Listen to him with an open mind and you'll become a regular listener. There's nobody out there like him. The corporate media hates him because he facilitates three hour conversations that goes deep versus their antiquated clickbait headlines and edited soundbites.
+
+Also, there was a PS to give Scott Galloway credit for coining, the manna, manna sphere catchphrase. I didn't actually know that. So apologies to Scott Galloway. I think that is like actually well, well put, in some ways. And I think that is part of, you know, There's a lot of, circular firing squad going on in democratic circles right now.
+
+I think something similar is happening. We're going to talk about it a little bit in the news media about how to reclaim trust. But I think the real question is how you reclaim relevance. And there is something to be said about these long conversations that are not neatly packaged, if you will. it's something 
+
+[00:02:37] Troy: He had Mark Andreessenstraut by it this week. Did you see that? It
+
+[00:02:42] Brian: yeah, I did. I haven't dug in for the full three hours. I have to have to admit. But it is interesting to me because I try to like take, I try to take this stuff, maybe not literally, but at least seriously in that there are a lot of prominent people out there who are saying things like what Mark Andreessen says, and I don't know what's in his heart.
+
+Let me just assume good intentions. And basically, he said, there's two types of people. Of cocktail parties in Silicon Valley, the one where people believe the New York Times, despite the fact that they said something different like six months ago, and the, the kinds that he's at now where it's, it's the critical thinkers in quotes or TM, however you want to go about it.
+
+
+[00:03:24] Elon's 4mil Tweets
+---
+
+[00:03:24] Brian: And, this is kind of highlighted this week. I don't know if you've, Read any of Elon's like 4 million tweets this week. but the one that really resonated with me was when he's, he's gone back to this thing that you are the media and, he's declared this several times and he actually brought in Jim VandeHei, the Axios CEO, I think via, Joe and Mika and MSNBC, but, Jim had spoken at the National Press Club and had done a little bit of a, a creed of core, for, for, for journalism and, and the news industry and that, and called bullshit
+
+[00:03:59] Troy: powerful, right? It worked. It was good. 
+
+[00:04:01] Brian: know, Jim, it was a clarion call. and, you know, of course then it got pulled in with Elon Musk into this, you are the media and I, I don't know, I always just find all of these things, just positioning it's marketing it's branding, because what. Capital J journalism does is completely different than what people are doing on X or whatever.
+
+I don't think it's an either or situation. It's just they're not substitution products. And we see this all the time. I mean, the podcasters are downstream of. You know, journalism, right? And they pick and choose which of the facts that are unearthed by by journalists. They're going to use, to connect the dots to to further their world view.
+
+I mean, I think that's pretty obvious that there's there is actually some symbiosis there. Right. I think the challenge for the, for the news industry as a business is they're being compressed where value overwhelming amount of the value is on the interface level. Like we say, you control the distribution, you control the monetization, you're going to do real well.
+
+But then there's a further compression downstream of the mining of the facts, which is putting them in the context and connecting the dots. Right. Now, when the news media does do that, they're being told that this is how you erode trust. If you read an analysis piece by Peter Baker, personally, I want to know, what is this guy's politics because he's, he's clearly pushing this in some direction, right?
+
+but the problem is the monetization, it's way better to be downstream of mining facts. It's way better to be taking those facts and refining them into some kind of narrative or, or to, to push some kind of worldview. 
+
+
+[00:05:44] The Economics of News Media
+---
+
+[00:05:44] Troy: Well, there was a time when, when, when that, that mode of, of work or creation was really monetizable and that was cable news. the problem is, is that, you know, reporting outside of the New York Times and a few other Sort of subscription driven outlets is, Not a game that pays the bills.
+
+[00:06:07] Brian: it's an economic 
+
+[00:06:08] Troy: to do. 
+
+[00:06:09] Brian: you know, because the only the way I look at it's like, so you said, the New York Times is pretty much one of the few other. Otherwise, you need to 
+
+[00:06:17] Troy: There are a handful. There are a handful. 
+
+[00:06:19] Brian: business news sector. The Wall Street Journal can do, can can pull this off. Right? By the way, they've been able to pull off having a, A very strident, editorial,uh, page operation, 
+
+[00:06:33] Troy: it's more than the journal, right? Like it's, it's the New Yorker. It's little guys that do reporting like 404. You know, there's still a, you know, a tier of media that, that, you know, does the hard work and has a mechanism to pay for it.
+
+[00:06:50] Brian: right. But like when you mentioned this, they are direct reader supported, if not, you know, subscriptions basically. So
+
+you have to be able to 
+
+[00:06:58] Troy: got to be reader supported. 
+
+[00:06:59] Brian: right? And now the only, the most effective place to get subscriptions, however, is to align with a worldview. And to in news, right? And to cater to that.
+
+look at all, look at what happened. The Washington Post with, with phases, right? I did, you know, it's the ironic thing is I've been the crazy ads on X got a little less crazy because, like, the Washington Post is like, they're, they're doing a lot of like, heavy growth right now, because they got to, they got to, they got to bring in the people that, that basis, 
+
+[00:07:30] Troy: You're seeing Washington Post ads on, on X,
+
+[00:07:34] Brian: Yeah, they're, they're trying to get
+
+[00:07:36] Troy: ads.
+
+[00:07:37] Brian: acquisition ads. They're, they're saying, they're basically not saying like, you know, democracy dies in darkness. The new one is like how Trump is going to impact, you know, the, the world. which is obviously a much more middle of the road, positioning. I don't know if that's just, you know, happenstance.
+
+I'm not 
+
+[00:07:55] Troy: Now they're, they're competing with Ray 
+
+[00:07:57] Brian: well, that's the information space, right? so, but I, I think that is the challenge is like, if you're going to be everyone elites love to claim that what the, what is needed is unbiased news. Now, the unbiased stuff. I don't know, like, the AP just had big layoffs.
+
+Like, I don't know where exactly. This nirvana is, and it's usually elite people that want these kind of things. And in a populist era, I don't see how it is necessarily a good business decision to try to play it down the middle. You can do it for all kinds of reasons, society, impact, et cetera, et cetera, et cetera.
+
+But for most. For most news publications, it would seem to me that all the market is pushing you to pick a side and to be tribal.
+
+[00:08:43] Troy: But aren't you making a, a broader point, which is news gathering doesn't pay?
+
+[00:08:48] Brian: Well, yeah, it doesn't pay it unless you're going to align it with a, a worldview and a point of view and a tribal identity. I think it can pay then. Or, if you're in a really niche area like we always talk about, particularly if you can align with powerful interests and help people, ideally, you know, make more money, then you're 
+
+[00:09:12] Troy: but but Brian, break down, let's try to break down what this idea of, You are the media. We are the media. What is that? What is the mechanic that that that speaks to? Is it that layers of conversation and kind of, I guess, some type of informal fact gathering through the commons will get filtered, through mechanisms like an algorithm, like notes on an expose, like, well articulated view or some type of persuasive view on YouTube that breaks through that this kind of, almost like water getting filtered through a stream, you know, will reveal the truth and that we can't rely on, you know, the hard work of a Of an individual making phone calls, finding sources, filtering those through fact checking,structures and, and the media brand that that's no longer the way to get to truth or consensus. what are the two sides of this? Right? Like Jim is saying being a journalist is hard work. Someone has to kind of do this work. It's many, many times. It's thankless It's not someone popping off on Twitter This is this is a vocation. This is a profession. This is something you dedicate your life to this is really important 
+
+and we need We need a structureon an organized approach to gathering this kind of information and holding people accountable, and that's not going to come from, you know, the, the, the people, the commons, the, unauthenticated points of view of some, You know, someone writing a 200 character tweet. What's the argument on the Elon 
+
+[00:11:05] Brian: Well, I think the argument on the Elon side is that if you gather enough of this material from what they're rechristening, we're back to citizen journalism, right? That you will have a bit of a wisdom of the crowds. It is the same as polling is very important, etc. It's, it's a, it's a, it's a. You know, it's a profession, but maybe maybe poly market and maybe call she and and prediction markets where people are just gambling are actually more accurate because I think one of the challenges to me, and that's why I think it's starting to, become obvious is the product problem in in journalism.
+
+And I think a lot of that stems from, like, when the criticism, I hear that. Oh, you said one thing six months ago, and then like, you know, you said something different like today. It's like, well, yeah, of course, the idea that I think one of the embedded flaws of journalism, I'm sure you've seen it yourself.
+
+Like, I haven't had stuff written about me really, but like, I'm sure people have had stuff written about them and these powerful people say, well, this isn't the full story or this is not my, I don't believe this at all. And so then they would say, well. That, that's not true about a lot of different things.
+
+I get that because there is this idea of packaging up the quote unquote the truth that is in my view kind of arrogant because like there's a lot that you do not know. You know what you know on deadline is what, is what they say. I mean, anyone who's been in this profession at any level knows you publish stories and like I, maybe it's just me, I'm like in the heart of hearts and like, you know, it's God, like, I hope, I think this is what happened, but, like, really, like, I mean, there's so many different factors that can change.
+
+and, you know, we saw this with a lot of the examples that Elon and others are talking about with the Wuhan lab and all that COVID stuff has come back to be debated is like, it is really messy trying to understand as a journalist, what the hell is going on. Okay, but I think the profession itself makes you present a package as if it's all neat.
+
+And like, yes, this is exactly because it's like the voice of God kind of thing where at the very least, and I think we see what this correspondent talked about with Joe Rogan is trying to figure things out. And I think that that is the thing that is resonating in that, There's a little bit of humility to me in that.
+
+mean, Joe Rogan says a lot of stuff I don't agree with at all, right? But, at least it is like said in, in a, in a conversational way. And I think that is the part that is a struggle on the product side for journalism. You know, the neat little package of like, hey, this is everything, you know, that, you know, But instead of like, okay, this is we're trying to figure this out.
+
+And I think that's the interesting part of what
+
+[00:14:05] Troy: Yeah,
+
+So Trump challenged it in, in ways that were shocking by throwing up a wall of his own bullshit against what he, you know, what was perceived to be one view of the world that came from media that was hostile to, to, to him and his views. you know, we saw it this week where the Wall Street Journal came out and said that Tesla was an irresponsible environmental company, that they were dumping you know, toxins into the water and, you know, this company that is meant to be, you know, sort of singularly responsible for, a really important kind of environmental movement in electric cars was really hypocritical, at which point. Elon freaked out and said, this is why media is, cannot be trusted. This is bullshit. and, and, you know, this, this is, is really counter to the spirit of the company and the people that are working inside of it. And so that process to me seems healthy. Right. It's like you need both. I think that when someone reads, that Tesla is a polluter in the wall street journal, and that is taken as, you know, just a singular truth that, you know, that's what people, react negatively to. So your point is that it's impossible for media to get, you know, their arms around what the real story is. And that does need to kind of go through a filtration system, but for a long time, it didn't. Is that what you're saying?
+
+[00:15:43] Brian: I just think because of this information space, and because there's so much more information out there, I don't think that I don't think that most of the news media is quote unquote biased in the way that people are claiming. It's just things get left out. Things you just you assign the story and different stories.
+
+I mean, you have had things written about you. Did you find everything to be completely 100 percent your view of the truth?
+
+[00:16:07] Troy: No, I think that it started with what is the idea of, A good story here. It happened in a really kind of intense, you know, time and environment or, you know, in like 2020 and that there was, you know, a good story to be written. So you go out and you try to find the, the things that validate that story, right?
+
+Like in my case, in a, in a game of, Very difficult, you know, highly political.kind of corporate media environment where intense changes need to happen to a company where lots of people have to leave and lots of kind of established practices need to be challenged and dismantled, where a union movement is fighting to, you know, To kind of change how, you know, a group of people's position in, in the kind of ongoing negotiation that is an organization that you make enemies, right, by necessity, and you make enemies because of how you approach problems for better or worse, you make enemies because. You know, you, you fuck up, you, you say things that are stupid or you, you know, but like, you know, with in contextualized or not terror, you know, terrible, and then you can write a, you can write any story you want around that. Right. You can find the people that will, will, will make
+
+you feel like someone is doing the work of important transformation work, you know, reflected in the economics of the business, or you can find a story, a thread through it all that this person is. You know, whatever evil, toxic, whatever, however you want to frame it. And so, yeah, there's definitely two sides to it. And then what was always on my mind is,
+
+[00:17:55] Brian: But wait, wait, wait, journalism is supposed to be presenting the all sides, right? But I, you, you, what do you mean?
+
+[00:18:03] Troy: Well, that's, I mean, in, in this case, it's, I, I just don't think that that's what happened. I think the
+
+[00:18:09] Brian: Right. So I guess what 
+
+[00:18:10] Troy: and, and, and remember in, in that environment, the people on the other side were, were afraid to say anything less. They be caught up in the, in, in the whole controversy, right?
+
+The people that had good things to say, aren't going to say, You know, no, that's not how this went, because it was a time of tremendous fear. Right? Like there, there was no, you know, I mean, it didn't pay to stand up for something. It absolutely didn't. So as the person in that narrative, me, you can either challenge it and do what, you know, say Trump does, which is like, this is bullshit.
+
+This is fake news. This is what really happened. 
+
+You know, throw something out. No, you can, you go to war. But when you go to war, there's other people that are involved. And so that means that the company that you really respect and like becomes central to that whole, you know, narrative. That a lot of, like, it just, it, you know, it can get It can get complicated legally.
+
+It, there's a lot of complexity in going to war. And by the way, you have to be the kind of person that wants to go to war. I don't want to go to war with people in a situation like that. It's just not my makeup. And so, yeah, it's, but, but, but I, I, this isn't about me, dude.
+
+[00:19:35] Brian: But does that
+
+know I know that but my only point was I can see how that would impact how someone sees. The, the journalistic process and I think someone like, let's just assume that Elon Musk is sincere and his belief that, you know, the journalistic industrial complex is corrupt in some way, shape or form, like, and, and Mark Andreessen the same way, like, how did they arrive at that?
+
+How did and I think it comes down to, you know, I used to think this about, I'll say it, fast company, like whenever they would write about something that I knew about, I was like, this is so thin and really not accurate. And then I started to be like, wait a second. All the other stuff is probably this way.
+
+So I probably, I might want to discount the other things. This was a different generation. but I can see how someone who has had so many different articles written about them, that they have found. The exact same way that you. Found, you know, the stories in 2020 that they would just conclude that everything is bullshit if they believe if they have the lived experience that someone is writing about because again, I have not had the experience of someone writing about me in that way, but I imagine if, if I had that experience and it was completely opposite from the way I perceive both myself in the world, okay, that I would be like, Okay.
+
+And this happened repeatedly, I would say, well, the rest of this stuff is bullshit. Why wouldn't, if it's just bullshit when it's about me, wouldn't it stand to reason? I think in this kind of like engineering brain 
+
+particularly. 
+
+[00:21:12] Troy: that, yeah, I mean, I, I agree that people get caught in this Because it's personal at some point or it's challenging, you know, their own, you know, place in the world or the, in the case of like Mark Andreessen, maybe, you know, the success of his investments, right? Like,
+
+[00:21:32] Brian: But I think this is 
+
+more than working 
+
+[00:21:33] Troy: but, like, I'll, I'll give you, I'll tell you that there was a, You know, seemingly intelligent, strident young journalist who had every opportunity in 2020, someone who I presented, a lot of facts to and gave him. A lot of people that he should have a discussion with now, admittedly, like I said, in 2020, it was really hard to get people
+
+to 
+
+go on the record 
+
+[00:22:00] Brian: on the 
+
+wall era. 
+
+[00:22:01] Troy: because it was like, you are going to get caught in this in a way that you don't want to be caught in this. And so be careful what you say about anything, even if it's what you really believe. And there are a lot of people that I would consider. You know, to be supporters and friends and stuff that were, you know, I understood why, why it was difficult, but you could, I, you know, the conversations I had with this person and what this person told to put in a tidy little narrative were completely different. And that was this kind of journalist prerogative that clear where the story got like a clean story got in the way of any pursuit of
+
+like nuance and both sides and and a more complete story. So yeah, absolutely.
+
+[00:22:48] Brian: know, there's a, have you ever heard the saying, too good to check?
+
+[00:22:51] Troy: No, I
+
+[00:22:51] Brian: It's like sort of a joking, saying like a journalism, but that, you know, an anecdote or something is too good to check because like the reality is life is, is, is messy and the necessities of narrative are such that you have to sand off all those edges.
+
+And I think that's a, that's what I'm saying is the product flaw. That needs to be addressed. I don't know if it's the semiform and separating it out like opinion or whatnot, but, I kind of think back to when Mike Arrington was running TechCrunch and he used to call this like process journalism and it was sort of became a joke, but I think he was kind of getting at something that was very accurate in that it is a process at getting to an approximation of the truth and as such, it kind of needs to almost to be, Presented that way because again, like I go back to Andreessen's,criticism, you know, about masks or anything, you know, that, yes, I mean, things, things change, like you do not, they call it the first draft of history because, you have, I don't know, six hours to, come up with some, some semblance of the truth.
+
+maybe it's just packaging this as something a little bit different in a lot of ways. and I think that of again, I go back to like feature articles, I don't know, man, would I ever want someone to write a feature about me? I don't know. I don't know. I could give them like, I could give them the names of like 10 people to contact who would say terrible things about me.
+
+I could do that very 
+
+[00:24:20] Troy: thought I do think I do think that things emerge from conversations and from informal back and forth and from maybe the assertions of people that are informal potentially not, you know, in, you know, trustworthy and they become kind of validated through a like, like this, this stuff. Okay.
+
+This is, I didn't listen to the whole Andreessen Rogan podcast, but there were accusations from, from Mark Andreessen that basically Elizabeth Warren helms, this kind of deep state apparatus that is. that pursues the agenda of some kind of nefarious bureaucratic, you know, weapon to, to like make life, you know, difficult for people that it doesn't like. For people that they don't like or for,
+
+you know, their own agenda. Right. Like, and, and it's, not part of this notion of the deep state, which has gone from being a really fringe Trump idea to something that's like literally, I think part of. what is popularly in America understood to be a really big problem. That layers of bureaucracy and regulation and
+
+people that are motivated by, 
+
+[00:25:40] Brian: Americans hate bureaucracy. It's just 
+
+[00:25:42] Troy: But, but, but Americans may hate bureaucracy 
+
+[00:25:45] Brian: it, it makes it conspiratorial. Like, 
+
+we 
+
+[00:25:48] Troy: but Brian trace trace the idea, right? Like this is a platform idea that becomes central to the whole, you know, Department of Government efficiency to like everything that people are talking about about unwinding. You know, these, these unproductive forces in government, this isn't, this is an idea that has now kind of moved through this system and it's now the idea. It's now the idea that will gain, that will be the sort of populist platform that will drive a wave of change in Washington that we haven't seen for decades.
+
+
+[00:26:24] Media in the Populist Era
+---
+
+[00:26:24] Brian: And I think that's just the reality of living in a populist era, right? And I think in some ways I give, like, it's inevitable that The news media, the mainstream media, whatever you want to call it, is going to get caught up in this populist era. Like, I don't think that, you know, Kamala Harris could have won in this, in this populist time.
+
+And, it's just about adapting to it. And I don't know the best direction that, 
+
+[00:26:50] Troy: But I think in the end it's, and maybe this is just, you know, a lame answer, but. It's not either or it's both that people that talk about we are the media routinely, as you've said many times, reference sort of canonical sources of truth that do come from, you know, reported sources that we the Jim Jim is absolutely right.
+
+The work of of a good journalist is vitally important to how society functions and we need it. And we need that kind of mechanism of sorting through fact from fiction and, you know, even when it sometimes gets it wrong that it's vitally important to have that estate to keep power in check. And so I think he's right. And I think it was, was, it was actually, you know, he said something that needed to be said that the notion that. That twitter or that social media is going to help, you know, kind of
+
+replace Reporting is nonsense
+
+[00:27:54] Brian: right. The question ends up being, I think that's 100%. We're not going to disagree on that. The question has been how you pay for it. Right. And so one of the things that you've been on about, I believe, is that all publishers need to get closer to the transactional layer. Right. I mean, a lot of publishing business models are.
+
+They're intermediate pages in some ways, you know what I mean? Like they're a step between and you see it most clearly, I believe, in these affiliate operations. This was the way to get to the transactional layer. Now, I think you can argue. That the way it was executed was being a classic, unnecessary, intermediate page in many instances.
+
+Right? And Google, who, which sets the rules of the road has clearly agreed, you know, they have, at least in my understanding, at least the people I've talked to, I mean, they've really devastated a lot of these affiliate operations of publishers that were critical to their business models. How do publishers, particularly news publishers, get to that transactional layer?
+
+[00:29:02] Troy: Well, I I mean I would just back up and and I guess my feeling right now having seen Google make some what are called manual action decisions In the last few weeks that essentially wipe people off the face of the internet. These are not about 
+
+[00:29:18] Brian: They're deplatforming.
+
+[00:29:20] Troy: They're
+
+[00:29:20] Brian: Maybe publishers have to just adopt, adopt the language of the year and see like we're being 
+
+[00:29:24] Troy: Right, but it just makes me, you know, contextualize the challenge for media broadly.
+
+We've seen lots of layoffs this week at my alma mater and others. Significant layoffs that reflect Super challenging times for their, for their business model. I think that the truth is, is what I would call impression based media. That is stuff that serves an audience, largely free of charge, where advertising sales organizations go out and sell access to that audience is under tremendous pressure, probably never going to come back.
+
+This isn't a kind of recessionary blip that selling. you know, influence or, you know, proximity or context to, to advertisers is a smaller and smaller business where it is vital is still in video because that's the most persuasive environment. To, to tell a story and it's been, you know, the making and selling of video at scale for a lot of publishers has been for sure an elusive kind of difficult economic game. And so, yeah, if you're in the subscription business, you need a paying transactional relationship with lots of folks talk to anybody that's built a subscription business. it's hard to get that flywheel going at scale such that it pays for a materially sized newsroom and media organization. It's easier to do if you're a substack author, but even super successful kind of emergent groups like, like POC are still, you know, They're pretty small businesses.
+
+You need 100s of 1000s of subscriptions to, to, to pay for a big news team. and so, you know, what's, what's left and what else is there? And so when you divide up where the money comes from, it either comes from, you know, impression based advertising, again, largely. The best business there to be in is video.
+
+It comes from subscription relationships. And that's, you know, that's a, that's a coveted game that takes a long time and really only, you know, supports a big business at scale and there's transactional revenue. And what is transactional revenue? Well, that's. Media sits between an audience and a, and a validated transaction of some sort. That was the affiliate business for many people that made up 20 to 40 percent of their revenue in the media business and in places where,you were facilitating a, a, a service based or high lifetime value transaction. Like in your case, you're selling, you know, somebody in, I dunno, ad tech that's worth a lot of money
+
+[00:31:58] Brian: Excuse me, not ad tech shit.
+
+[00:32:00] Troy: You know,
+
+publisher tech, martech shit. okay. Or you're selling a life insurance policy or you're selling a credit card or you're selling home services or you're selling a, LLC registration, something that's high value, you know, in the health category, you get a lot of that. That is a meaningful.
+
+Job boards even, right? Like a vertical publication in some space that owns the mechanism for finding good people could make a lot
+
+[00:32:29] Brian: I hate job 
+
+boards. 
+
+I 
+
+[00:32:31] Troy: whatever you get. You, the point
+
+[00:32:33] Brian: They never, they never make as much money as people think. That's my theory about job, job boards.
+
+[00:32:39] Troy: fair, fair enough. But,
+
+um, that layer, what I, I'm, we're trying to make the point now that publishers need a new revenue source. Those transaction. Streams are, are really important. I don't think your event, your event business is going to float your, your, your publishing company. And Google doesn't love it.
+
+Google doesn't love this transaction layer that sits below between them. Right. The navigator, the, the, the place where people start a journey, the ultimate influencer of where you go and the commercial entity, let's call it a bank. So that layer that exists, which was a nerd wallet and Forbes and CNN and lots of other companies. Google's kind of being hostile to them right now and they're doing it to clean up the SERP, they're doing it to make room for commercial entities in the SERP, they're doing it to push more paid and it's just, it's a troubling time for, for publishers that for good reason are looking to diversify revenue sources.
+
+So
+
+[00:33:45] Brian: Yeah, but I'm left, nobody is out, and maybe it's in Miami, nobody's out protesting this. nobody is carrying around nerd wallet, signs, in South Beach, 
+
+[00:33:53] Troy: Well, NerdWallet, likely the beneficiary, by the way, but,
+
+[00:33:57] Brian: Okay, well they buy a lot of ads, so like, go figure.
+
+[00:34:01] Troy: Well, the story that's missing here, this is the real story is that news brands, right, got into the business of affiliate to compete with the likes of, of, of nerd wallet. And Google thinks that, that, you know, mostly thinks that news brands should stick to news and shouldn't be in the business of, of facilitating transactions.
+
+[00:34:25] Brian: Well, okay, but a 
+
+[00:34:26] Troy: And what, what, what, 
+
+[00:34:27] Brian: brands did not have the expertise. 
+
+[00:34:30] Troy: Expertise.
+
+[00:34:32] Brian: so they outsourced it. and I can see, look, guess one man's like transactional layer is another person's, you know, brand arbitrage and that you're taking a brand that has authority in news and which has limited, as we've said, economic value in the market right now, let's just be real, 
+
+[00:34:53] Troy: You take a brand that has awareness and trust and you put it to
+
+[00:34:57] Brian: you launder it, you put it, you Take it to the 
+
+[00:34:59] Troy: well, that's one way of looking at it, Brian. But what if someone invests millions and millions of dollars in content? What if someone rivals, you know, a pure play like NerdWallet in creating content that helps a person make a decision? Like what, who is Google to say that you shouldn't be in that business?
+
+You 
+
+[00:35:19] Brian: hundred percent, like, 
+
+[00:35:20] Troy: If you deserve to be in that business, 
+
+[00:35:23] Brian: yeah, no, I heard this and this is not just the U. S. market. I heard this last week in, in, in the UK. I mean, they came for the coupons first. Next thing you know, they're coming for, they're coming for everything. 
+
+[00:35:34] Troy: dangerous when Google tells you what business you can be in. Very dangerous.
+
+[00:35:39] Brian: all right, let's put a pin in that, as they say. I want to move on to talk a little bit about how. Really, the internet is sort of becoming real life, but I think around spectacle. And, I don't know if this is something I'm trying to, I'm trying to sort of form this is I think, I think spectacle is back.
+
+And, you know, a lot of this is, and look, I know people don't want politics and stuff, but like the whole, the MAGA stuff is so important because, societies adapt. I mean, in the eighties, like Reaganism had its impact on, on culture and, and media therefore is downstream of culture. And, I'm seeing a lot like really embedded.
+
+Okay, well, embedded within, MAGA is spectacle. The Trump rallies, which were totemic in that world, are pure spectacle. I've never been to one. but, everything I've seen there, pure spectacle. The Jake Paul, Mike Tyson. That was complete spectacle. It drew like 60, 60, over 60 million viewers.
+
+That's amazing. Yeah. It broke like, some technology. That's fine. You had Mike Tyson's bare ass becoming a meme immediately. The fight itself was nothing. I didn't even end up staying up for it. The undercard was pretty good though, I gotta say. and I was reminded kind of of, did you get Al Capone's vault in Canada as a kid?
+
+[00:37:04] Troy: No,
+
+
+[00:37:04] Age of Spectacle
+---
+
+[00:37:04] Brian: Okay, well, this is actually right when Fox was founded was 1986 and Geraldo Rivera, who had just been fired for from ABC for something. He went on some like syndicated. It was called W. G. S. N. I think it was out of Chicago and they did this. They, they found Al Capone's vault in some hotel in Chicago and they were going to open it on live TV and 30 million people, including me at like, you know, like 12 years old tuned into this live two hour special.
+
+and it was a complete spectacle. They opened the vault. There was nothing in there, but that doesn't matter. The spectacle was the point. And I think what we're seeing is we're seeing a return to spectacle, a couple of data points. That you highlighted, actually, so I'm taking them from you, but one is these lookalike contests.
+
+I think there was a Timothy Chalamet lookalike contest in Washington Square Park in October, that drew thousands, including, Timothy Chalamet himself, I guess he won, someone else actually won, but these have like spread. There's all these, these lookalike contests. And that to me is just like, you know, It's spectacle.
+
+It's grassroots spectacle. and then you had this live streaming, right? And, Kai Sanat is doing this subathon. I'm like getting way over my skis for this stuff. I don't even know. he's going to host a special Thanksgiving live stream with Kevin Hart, who I could do with less of. and, and Drewski, I've seen some of his videos, it's part of, of his Mafia thon 2, a 30 day, continuous broadcast, in which he's trying to become the most, I guess, subscribed YouTuber.
+
+connect the dots here, Troy. What is going on? Do you, do you see the spectacle as the, as the connective tissue or something else? By the way, these things that Kaysenat does, like, he's, he's been swatted multiple times during these things. Like, it's, it's, this is not just, you know, sitting 
+
+[00:38:57] Troy: of the things I, I think about generational media consumption. Last night I said to my son, My son got new glasses and he put them on to watch a movie and I said, Oh, those are pretty normcore. And he's like, how do you know that word? And, and I'm like,
+
+what do you mean normcore? Like, yeah, it's old, Yeah.
+
+I mean, you know, Brian told it to me five years ago or something, you know, it was like. He's like, you know, you didn't, you got that off some, like, he accuses me of, you know, picking up sort of cultural cues and from random places in the internet. And what occurred to me with this Kaishinat thing is how much of culture people don't even like see that is really, you know, for people that are tuned in is really, really important to kind of generational influence. Like this thing is like his, what was it called? The Mafia thon 2.
+
+And you know, he's trying to get, I guess, Twitch subscribers. But like, Let's just talk about the people that passed by this little talk show, right? Like, Snoop was there, and Kim Kardashian was there, and Travis, you know, Barker from Blink 182 was there, and SZA was there, and I don't know, like, Andre Iguodala was there, and Lizzo, and Benny Blanco, they all came by, right?
+
+In addition to Kevin Hart. Like, these are You know, significant. I mean, in the context of sort of TV viewership, these are very significant. You know, media moments that like people didn't even know about like this kid from New York. That's doing a streaming marathon and the insiders they're really savvy people like Continuously like the Kardashians know what's going on? Like Serena Williams drops by as part of some McDonald's collaboration on this live podcast You know, marathon. This is like, you know, the numbers that Jerry Lewis did in the old days. Now, what I would say more broadly is, what we missed was streaming where. Much of our consumption shifted to kind of a library model where we took our shows off the shelf and we watched them and we loved it when our, you know, viewing patterns, you know, intersected with our friends.
+
+And we say, what are you watching on Netflix and all of that? So we can find some common ground is that. Television at its best for me is like a warm fire. It's the live, it's the, the embrace of like, you, you called it spectacle, but it's the kind of live moment that we all share in is, is the moment of warmth.
+
+That's why I like the NFL. And that's why the
+
+[00:41:41] Brian: NFL is complete 
+
+spectacle. 
+
+It 
+
+[00:41:44] Troy: It's spectacle, but it's also we're all watching it together. It's why we'll watch, that's why the rights for the Thanksgiving Day Parade are worth, you know, more than one would think, and they just came up for renewal. It's, it's, it's why we like these live things.
+
+[00:42:01] Brian: Right. I get that. What, all I'm saying is, There's not going to the, the mash final episode is not coming back as a live experience, et cetera. I don't I don't necessarily maybe occasionally, like, with a game of thrones finale, but it's going to be very rare. But I think in order to create these live moments.
+
+You got a much, you got it, you got to have a spectacle, right? the Mike Tyson, Logan Paul, is it Jake Paul? Which one? Is it Logan? I don't even know. Logan Paul. you know, that is, that's not great boxing. I don't think, I'm not like a boxing expert, but I've watched a lot of boxing in my day.
+
+that's not great boxing. You're watching, watching a YouTuber take on like a 60 year old Mike Tyson. it, it's not exactly it. So what was the, what was the appeal to it then?
+
+[00:42:46] Troy: The appeal was, it was, you know, a wonderful thing to talk about before it happened. It was about a lot of things. It was about someone regaining their glory. It was about aging. It was about, an underdog. It was, you know, it was a great thing to talk about. Perfect. The buildup was perfect. The fight was terrible. Fight was ridiculous. But yeah,
+
+[00:43:09] Brian: But that's the thing, it's like the the substance almost doesn't matter. you know, the. The spectacle is what matters and that's why I'm like to me. It's it's sort of an extension of the hype era, right? Like I mean the products That are pushed a lot of times with you know, these hype beasts and whatnot aren't great or anything, but it's just this It's just the hype itself is the point 
+
+[00:43:30] Troy: You know what's funny about what you're saying? Yeah, part of what you're saying is really interesting, because when that phenomenon moved to politics, it was really shocking and surprising for people that believe that that space should be governed by decency and truth. Right? Like, you got this, like, you're right.
+
+It's spectacle. anda Trump rally looks more like a wrestling match than it does, you know, sort of political, event with decorum.
+
+[00:43:59] Brian: It's wild. It's wild
+
+[00:44:02] Troy: it's wild yeah. And in that environment, it's sort of like the broader thing that like narrative and humor and. You know, sort of, emotion become more important than truth or facts or, you know, it's like entertainment wins, as Alex always says.
+
+[00:44:21] Brian: Yeah, and I think the packaging has to change and a lot of these things because the packaging is winning with, with, with spectacle with, you know, even like, you know, there's a big debate going on with the democratic circles about about Joe Rogan, right? And about whether the left needs its own Joe Rogan or whether, you know, Kamala made a massive mistake not going on Joe Rogan.
+
+You know, like, yeah, she did make a mistake because guess what? It would have been a complete spectacle. Do it live. Like that would have been a real spectacle. I don't think it changes the election. I just think there's we're in a just a populous time and it is. She didn't have a prayer really. but that would have been like, really good.
+
+How many people would have, you know, watch that? I mean, if anything was going to be a quote unquote game changer. I think that could have maybe been 1. I don't think I don't think that's going to be a game changer. It was on offer, but I think it's, an interesting, point about where things are going.
+
+All right. I want to move on unless you have something else. One of the things is to keep on. This is whether a maga aesthetic is for me. Did you see this Jaguar, ad that's like, I didn't, you know, add controversies are they feel quaint. I'm a little nostalgic for them. You know, a good rebrand. I used to, 
+
+[00:45:34] Troy: What's the big one? What was the big one in the old days in ad controversy?
+
+[00:45:40] Brian: An ad 
+
+controversy? 
+
+[00:45:41] Troy: Yeah,
+
+like of old. 
+
+[00:45:43] Brian: just come and go really. Anytime a logo is changed, I don't know if Alex was, Alex must have been, did Alex change the Airbnb logo where they said it looked like a vagina?
+
+[00:45:54] Troy: I don't know that was a vagina. Was it a vagina?
+
+I, I know. I know it still does. Um, he supposed to say?
+
+I don't know if that was his work. I hope it was.
+
+[00:46:07] Brian: I don't want to bring it up with him. He's probably, he's, he can be sensitive. So I, can you?
+
+[00:46:14] Troy: Definitely. Anyway, so your point is that Jaguar does this stuff.
+
+[00:46:20] Brian: So Jaguar does this, you know, so they're, I guess, unveiling a new, I mean, Jaguar is like a rounding error of, of an automotive brand, particularly in the U S like, it's just like, I don't know, you know, I think 
+
+it 
+
+[00:46:34] Troy: in car culture, but in sales, yeah.
+
+[00:46:37] Brian: Yes. So in reality, so they're unveiling a new, like rebranding at, at Art Basel. Okay. So it clearly where they're, they're aiming. This is not for the, the sort of, you know, the moderate crowd for certain, 
+
+[00:46:53] Troy: You know what they call this aesthetic this aesthetic is exuberant modernism. 
+
+[00:46:59] Brian: moderate exuberant modernism. 
+
+[00:47:01] Troy: Yes, 
+
+[00:47:02] Brian: like a fashion thing. Like I sent it to, to 
+
+[00:47:04] Troy: did you like it? Did it appeal to, what did Ana think? I want to hear what Ana thought.
+
+[00:47:09] Brian: I mean, she wrote about it, sociology of business, check it out. and wrote about it from the angle of, you're basically taking something that, I looked at it. I'm like, this is this. This is like typical fashion stuff. You know, it's not for everyone.
+
+It's like you, you look at the fashion shows, the hookah door and stuff. And it's like, yeah, when you take that out of that context and bring it into like, an ex post or something, it's obviously like 
+
+[00:47:33] Troy: Brian, I thought if anything would offend you, it would have been the, they should have gone to copywriting jail. Because they said things like, live vivid, create exuberant, delete ordinary. Delete ordinary? I love that. Break molds stop it. Copy nothing. Like you, you should be offended just by those, those 
+
+[00:47:57] Brian: yeah. Yeah. Okay. That's fine. But like, okay. Okay. It's like fashion. Like, I mean, this stuff is like not to be taken either literally or seriously in my book. I mean, maybe that's me wearing a cream t shirt. but I think when you take it into like automotive and for some reason it really struck, I think everything gets pulled into this like political cultural fight.
+
+It really struck a chord, I've noticed on on X in particular, right? and It got pulled into all the boogeyman of, you know, of DEI, woke culture, everything got thrown, thrown into the mix. And then it was, you know, It was compared, I think there was just a coincidence that Volvo had a very traditional heartwarming ad pro natalist because it was about like, you know, basically following the story of a journey of a family from, from learning that they're going to have a child to that childhood.
+
+and I wonder whether, you know, advertising. Is going to be under pressure to change it's because like advertising is if you look at all the elite in quotes institutions under pressure. Advertising is going to be one of them. Nobody believes that advertising agencies reflect, like, what exists in the overall,U.
+
+S. electorate and citizenry. They do not. Okay? I remember signing a story after Trump's,election in 2016 about what it was like to be a Republican and manage at agency. It was a little bit of a controversial assignment. I'd go through a bunch of different reports for someone would actually report it, which kind of says something.
+
+but basically, it was like, it was like, they're not filled with any of you know, the sort of people it's not reflective of the overall society. Obviously. I can remember sitting in, in a New York ad agency. they were batting around ideas. It was for one of those like agency of the year, corny profiles I had.
+
+Right. And it was a bunch of like 20 something year olds from Williamsburg who were trying to understand well, Walmart moms wanted. The whole thing struck me as ludicrous, but of course the narrative, the narrative was such that it couldn't use that to make fun of the agency because
+
+we were giving them an award to get like congratulatory ads in ad week.
+
+[00:50:17] Troy: mean, this was almost like it was created as a sort of like, something for, for, you know, the new power kind of center to be angry about. I mean. This kind of gender fluid,reinterpretation, discarding the heritage of a classic kind of almost like, well, this classic English car brand, you know, that, that was kind of defined underneath of it all, this kind of, in some ways, very sexist kind of like hot woman, you know, sexy British gentleman, car owner, like just to kind of throw to juxtapose the two of those.
+
+And then at the same time, not even show the car. I mean, this was designed for, for controversy in some ways, or, or, you know, someone's just sort of like extremely bad timing.
+
+[00:51:10] Brian: Yeah, but what's interesting to me is like you move from from one censorious era, and you just seamlessly move into a new censorious era. So, like,
+
+before, like, language was being, was being policed, like, and all of these, you had to use these new, new words. Like, I remember when I was, editing in, 2020, all of a sudden, I was, like, Things were being centered centered on.
+
+And so I'm like, what does this mean? I was like, can't we just use the words we've used before? And that obviously It quote unquote triggered a lot of people, a lot of the, the, the psychotherapy babble, became very common. and now in this new era, we've got new sensors about new. It's like, oh, no, you have to do this, that and that.
+
+And you can't have conceptual ads. I saw Tucker Carlson is is on about. He's apparently an architectural critic. Now. He's very against. Brutalism, what he calls post modernism, I'm not sure if it is post modernism, basically modernism, and, you know, he wants to go back to, and I've seen this a lot, to classical architecture, I, I think it's going to be very interesting to see how this carnival of, of the sort of MAGA manifests itself and puts pressure on a lot of cultural industries, because I believe it is going to happen.
+
+I believe it will. And advertising is one of them.
+
+[00:52:32] Troy: Malga will never take culture from the liberals. Never.
+
+No, 
+
+that would be, that would be like kicking the liberals out of the high school, you know, production. It's never gonna happen.
+
+[00:52:45] Brian: Okay.
+
+[00:52:46] Troy: But, but, you know, we will, our aesthetic will be defined, will be influenced definitely by, listen, it's, America's a pendulum culture, right? It
+
+always swings. Back and forth. That's what it does. But yeah, it was funny I don't know how in the notes you connected this to sydney sweeney getting like buff, but You had
+
+[00:53:04] Brian: Well, I'm trying to work through. I wasn't going to reveal that. I'm trying to like, look, a lot of people fled from X. They've gone over to blue sky, refuse to do that stuff. I, I am very comfortable and trying to understand this, this different world of, of the, you know, bro culture, whatever you want to call it.
+
+Manosphere. And, I think X is an important element of that. I don't think it is going to replace anything, but I do think that it is an important element. I think the fact that Elon Musk went to, buy a X versus doing a Jeff Bezos and buying, like, the Washington Post. I think that's actually, obviously the prices were far different.
+
+I think that's actually, if you're going to, if your goal is to exert political influence. I think that's 
+
+[00:53:55] Troy: But what are you saying about sydney sweeney getting buff brian and about the
+
+[00:54:00] Brian: Sidney Sweeney 
+
+is, so Sidney Sweeney, Sidney Sweeney is basically, she's like not, I never even like knew this person, but she's like all over, like X and it's like MAGA culture.
+
+I think you saw this during the Logan Paul, Mike Tyson fight. Like, I do think that there 
+
+[00:54:18] Troy: they're pro boobs
+
+[00:54:21] Brian: It's a pro boob culture. I don't know what else to say. Like, it is, and, I don't know if that's a sign of, you know, we're, we're going to enter into The next four years, or at least the next 18 months, are gonna be defined a lot by this, this political force that has come in.
+
+I just, I just see it now, the, the banana was the $6.2 million banana that was taped to, to a wall. it, it got bought at auction for 6. 2 million.to me, this is also spectacle. Some crypto guy bought it. but the spectacle of, of the banana art was, to me, it's a little bit of an exception because, 
+
+[00:55:03] Troy: No, it's a good example. I'll give that one to you. I still am struggling with, I know, I like the, I like the, the sort of, you know, the, your, your thought about the, the kind of Republican aesthetic being kind of big boobs. I think it's a good idea. 
+
+Also zins, you put zin in the same sentence. What's up with zins?
+
+[00:55:20] Brian: I think zines are part of the, the, the MAGA, aesthetic. I mean, did you listen to like Andreesen? He must, what is, is he popping like nonstop, like zines?
+
+[00:55:30] Troy: Was he zinning?
+
+[00:55:31] Brian: I, he had a, the guy was hyped. I find him hard to understand. Like, I need to, like, you know, people listen to podcasts on like 2x. I need to listen to 1. 5.
+
+[00:55:42] Troy: Yeah, that's
+
+[00:55:42] Brian: Like, he speaks really fast 
+
+know, fast talker is is not exactly, synonymous with trustworthy. But leave that 
+
+[00:55:52] Troy: Okay, so we'll we'll be returning to this this idea in future podcasts. I like it. It's good
+
+[00:55:58] Brian: Okay. Should we get into Thanksgiving 
+
+
+[00:56:00] Browser Wars
+---
+
+[00:56:00] Troy: What well we could we could but maybe we just drive by this. Um, the browser war thing quickly. We won't take a lot of time on it, but
+
+[00:56:10] Brian: Okay. 
+
+[00:56:10] Troy: know, well,
+
+[00:56:12] Brian: OpenAI is supposedly building its own browser. The, we discussed last week how the DOJ wants, Once Google to split off its browser, we've had a debate about, you know, whether a standalone browser is like, I like how Alex is like, yeah, it's not like an attractive business. It's like, it's like a 60 billion business, but, 
+
+um, I 
+
+[00:56:33] Troy: made the point and I'll give Alex a little shout out cause he wanted to send in his monologue. He said, you know, we can't figure out, it's inconceivable to think about, you know, Google without Chrome, but you know, we aspire to. build an, you know, an artificial brain and put people on Mars and do all the things that tech companies aspire to do that are, you know, the miraculous and he's like, but we can't figure out how to do things that they don't want to do, like, prevent kids from getting on Instagram and, and split out, you know, the browser company and the search engine. So that's, that's Alex's rant on that. Which is fine. And, um, but, but no, it's cool. Listen, the, the, the market's going to sort out browsers. Okay. Google is inseparable from Chrome. Benedict Evans made the point, Brian, that what would happen if you didn't allow Chrome to be on Android devices? Well, is it really about Chrome anymore?
+
+It's all about AI. Do you prevent anybody from using the sort of Google AI API inside of, inside of Android? Like, how would this actually work? 
+
+Who would buy Chrome? What would the business model be? There's just like a lot of questions. In the meantime, this week, again, reporting back from, you know, family life, my son says, Oh, I just put AI.
+
+I just put chat GPT on my front screen of my phone. He's like, I'll never use Google again. And he's like, I use it for everything. 
+
+[00:58:03] Brian: he say search it up?
+
+[00:58:04] Troy: no, he doesn't say, we joke about that, actually,
+
+that term, search it up. 
+
+Search it up. This was kind of a Canadian thing. Search it up but the fact is, is it that browsers just put utility or a piece of functionality closer to the consumer so you don't have to actually type in a URL they're already doing it on the, on your phone with open AI, with chat GPT app and on the app on your desktop, the browser is about to be reinvented.
+
+Like it or not, DOJ.
+
+[00:58:33] Brian: well, this is a classic. To me, it's the old, like, you know, history doesn't repeat itself, but it rhymes. And this is, this is Microsoft versus the DOJ 2. 0 probably, right? The market is, they're going after Google's ad tech dominance, and they're going after, you know, it's search dominance. I think the market is going to end up solving for both of those things.
+
+Then the government's like role in it is just going to be like tying up Google and a lot of like litigation, but that the market ultimately, and it's, I believe that's what we 
+
+should be doing. Want is the market should be the the arbiter. I think that the government can just be a and as far as the different questions I know Benedict Evans loves to ask questions about lots of different things.
+
+Like guess what? Trump got elected saying he was going to like deport these millions of people and how exactly you can ask like a Litany of questions in which there was no answers yet. We barreled forward And so, yeah, there's not a lot of answers to those questions but J. D. Vance said, How do you eat a big sandwich?
+
+One bite at a time. And so, yeah, I kind of go with Alex. Like, disruption happens from a lot of different directions. And I see that the tech industry thinks, they love to be the disruptors, not to disrupt it. And they're one power center in society. They're a growing power center. But guess what? There's other power centers.
+
+And the government is still a power center. I can't wait to see this Doge thing because they're going to start to, to realize that just because you're in tech doesn't mean that everything like revolves around you in society there. That's just reality.
+
+[01:00:09] Troy: Well, what will be interesting just to get a little more, kind of specific about the browser thing is every navigational system needs a toll booth. You gotta have a toll booth. Because you need economic structures to guide the trade offs that happen beneath the navigational system. You need those paid links or whatever it is that's going to guide commercial behavior. And we don't know what that's going to look like yet. And it's a big, big, big question for the market. So that'll be interesting.
+
+[01:00:39] Brian: Yeah, but I'm not really, I don't know, like, at a time, we were trying to figure out, like, getting to Mars and all this stuff like this. I don't know, figuring out where to put the toll booth and stuff. It doesn't seem like it's that, like, I don't know. Is it that hard? Yeah. I'm sure they'll 
+
+figure it. 
+
+[01:00:54] Troy: it. We'll get to it. 
+
+All right, 
+
+back to good product 
+
+
+[01:00:57] Good Product
+---
+
+​
+
+[01:01:00] Troy: you know, Thanksgiving is a much bigger thing in this country than it ever was when I was growing up. You know, Canadian Thanksgiving, as you know, comes earlier because the, you know, because the weather gets colder earlier. it wasn't like, you know, a week of festivities.
+
+It was just like Thanksgiving, you know, we get the Monday off, we have a turkey. It's not the
+
+[01:01:19] Brian: Okay, so you're not, you're not into Thanksgiving 
+
+[01:01:21] Troy: No, I'm into it, I'm into it, and people like, people love it. It's the number one holiday in America, people love it.
+
+[01:01:28] Brian: I 
+
+think it is. It isn't, it isn't as tainted as, I mean Christmas, you have the Christmas thing, and not everyone, it's still, it's religious, it's not civic, at least in its roots. I think Thanksgiving is, is, 
+
+[01:01:38] Troy: I mean the MVP of Thanksgiving is the stuffing, right? It's got to be the stuffing.
+
+[01:01:44] Brian: yeah, sure.
+
+[01:01:46] Troy: I mean,
+
+and there's two modes of stuffing. Stuffing that comes out of the bird, which is moister and maybe more flavorful and oily from the, turkey. And there's stuffing, the overflow stuffing that gets baked in the oven.
+
+Which ends up having those crispy edges and stuff. Both of which need to be smothered in gravy, in my opinion. And not bullshit gravy. Like gravy that's made from real drippings.
+
+[01:02:07] Brian: Yeah, giblets 
+
+[01:02:08] Troy: gravy. No, it's just like my grandma made good, like, when people just like starch the shit out of the, the, the gravy and it's just sort of like, like some gooey brown liquid.
+
+No, you need,
+
+it's gotta be, it's gotta be drippings.
+
+[01:02:24] Brian: Okay. 
+
+[01:02:24] Troy: and don't put, don't put, well, don't, don't put, don't put cranberries on everything.
+
+[01:02:30] Brian: Well, cranberry is the most divisive part of the, of the 
+
+[01:02:33] Troy: I mean, cranberries are fine, but don't, don't mix them in with your stuffing and your gravy. That's stupid.
+
+[01:02:39] Brian: I 
+
+think cranberry is weird. There's a reason it's never served like the other, like 364 days of the year.
+
+[01:02:44] Troy: really? that's a good point. I, on the pumpkin versus apple pumpkin has its moments, but nobody likes pumpkin pie better than apple pie. Nobody.
+
+[01:02:55] Brian: It's another one that's not served 364 days of the year.
+
+[01:02:58] Troy: No, but seriously, when faced with the choice between pumpkin pie and apple pie, what do you pick apple pie? Every
+
+I face this, I'm, I'm driving across Alligator Alley to spend Thanksgiving and Pelican Preserve. If anyone wants to meet up at Flip Flops, which is the resort like pool at the Pelican Preserve, retirement community, 55 and better, community. you got a tenant, is there a tennis court or a pickleball
+
+[01:03:23] Brian: got pickleball, they got, it's great. I know a lot of people give grief to retirement communities, I guess.
+
+I don't know why, but, they're amazing. Like, there's lots to do. Everyone drives around in golf carts, and there's a golf course. There's a, there's obviously a preserve. There's some alligators who live there. Go around, look, peep the alligators. They, they just had, baby alligators a long ago. So, see how they're doing.
+
+There's a bandstand, but yeah, there's flip flops, and flip flops is the bar at the resort pool. 
+
+[01:03:54] Troy: Is it 
+
+[01:03:54] Brian: and it's pretty, it's pretty rambunctious. It gets pretty rambunctious. Happy hour does start at like 3, because everyone goes to bed early. See,
+
+[01:04:04] Troy: or dominoes or something?
+
+[01:04:05] Brian: yeah, yeah, yeah, you gotta move back, you gotta move, you gotta move the happy hour back a little bit.
+
+If you're getting, if you're getting into bed at 8. 30, you gotta, gotta start the happy hour at 3.
+
+
+[01:04:14] PvA Holiday Party Announcement
+---
+
+[01:04:14] Troy: Well, Brian, I'm Matt, and I'm now excited about the very exclusive PVA, holiday party that we've
+
+[01:04:21] Brian: Yeah, I wanted to call you. You've rebranded it. I wanted to do the holiday extravaganza, but it's fine. It's fine. Tell us what so we're having this at an unopened, hot restaurant. Joe Marchese always knows all the hot places. He's a 
+
+[01:04:35] Troy: Well, it's a, it's kind of a guy that he knows. I know him too. His name's John McDonald. He has Mercer Hospitality Group. And they own,very, very lovely and reliable restaurant in Soho called the lure fish bar that I go to sometimes.
+
+And as well as a number of 
+
+[01:04:51] Brian: Bar. 
+
+[01:04:51] Troy: like, like the, ever been to the Bowery meat, meat company that's theirs. Nice room. I was there this week with, with Seb. yeah, so they're, they're converting another restaurant of theirs. It's going to be called Bar Mercer. And we're just going to be the sort of inaugural, inaugural guests. We're going to rent out the room and, the chef is going to make the, I don't know, I guess the launch menu or elements of it.
+
+And, it's going to be great. It's not open to
+
+the, you know, it's just, it's, it's who's coming. I guess just a
+
+[01:05:21] Brian: Can I sell tickets? Can I sell tickets?
+
+[01:05:25] Troy: No, but you could, maybe you could get a sponsorship, Brian.
+
+[01:05:29] Brian: Anyone who wants to sponsor, the PVA holiday extravaganza, get in touch. Can I do,
+
+can I do a sponsor? Can I do a sponsor activation?
+
+[01:05:38] Troy: do a sponsor callout Yeah. 
+
+Well, I, 
+
+The we are gonna have some programming, some light programming. So I want to try this thing of, I'm trying, just like I'm on my way to reinventing the webinar.
+
+[01:05:49] Brian: I want to reinvent the panel, right? And I want to make it more like a live stream where, you have like a group discussion. It's very participatory. I did this, this new growth agenda that, I did the other week. You didn't come to it. It's weird. But it's basically like, it's a rolling conversation where, where, where people are participants, you call people up.
+
+It's like, kind of like casual. it moves very quickly. I think that I think I might be on to something. So we'll see how it goes. 
+
+[01:06:18] Troy: so you're going to host and you're going to, you're going to facilitate and you'll do a little bit of prep work with folks. Like you'll ask people
+
+[01:06:25] Brian: Yeah. So what I do is I ask, I ask everyone to submit three topics that they, that they want to discuss. And then I just, I just say, Hey, I'm going to call you up to discuss this. Be prepared. And, and then while it goes, you know, the frisky people present themselves in the audience, they decide they want to get involved and then, so it's less like regimented and it's more, I think along the, I don't know if there'll be anyone, hopefully it won't be swatted, but, hopefully we can take a few cues of what's working with these Twitch streamers and reinvent the dreadful, the dreadful panel situation at conferences.
+
+I just, I hate panels. I hate panel prep calls.
+
+[01:07:07] Troy: Maybe we can take some of what we learned from this and bring it back here.
+
+[01:07:11] Brian: Yeah, 
+
+[01:07:12] Troy: what, what questions are you going to be asking people? Do you know?
+
+[01:07:14] Brian: Oh, and it's gonna go based off, based off of what their topics are. Like I did 
+
+[01:07:19] Troy: going to submit them to you.
+
+[01:07:20] Brian: Yeah, I'm gonna ask everyone who, who, to submit,
+
+
+
+topics. I did this for a few events recently. It works really well. 
+
+Because otherwise, like, first of all, why, 
+
+How arrogant would it be of me to be like, Oh, I know everything that we're getting, 
+
+
+
+tons of great, 
+
+
+
+CEOs, 
+
+
+
+they, they know the, what's, what's most important, 
+
+
+
+to, to discuss going in.
+
+I mean, yeah, you give them some 
+
+
+
+guidance or whatnot, but,
+
+
+
+to me, that's where a lot of events need to go. 
+
+I don't know, I, I, I don't like a lot of industry events.but that's me. 
+
+
+[01:07:53] Outro
+---
+
+That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+[01:08:14] Troy: It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+All right. We'll leave it there. I hope everyone has a wonderful Thanksgiving.
+
+It's fun 
+
+[01:08:31] Brian: Troy. 
+
+[01:08:31] Troy: Brian.
+
+[01:08:32] Brian: Bye. ​
+
+
+

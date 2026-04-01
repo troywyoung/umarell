@@ -1,0 +1,967 @@
+PvA S4E151
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian: I got carted last week. And the interesting part was I got carted, for non-alcoholic beer. I, I said, oh, there's no alcohol in it. And the young woman gave me, have you, have you run into this Gen Z stare thing? It's like this sort of look at you just
+
+like blankly, like you're an idiot. And she was like, it doesn't matter. I was like, oh, okay. 
+
+[00:00:26] Troy: what's beneath the, the stair? What is the source of the righteousness
+
+[00:00:31] Brian: contempt.
+
+Wow.
+
+[00:00:35] Troy: this the We hate Gen Z segment of the show.
+
+[00:00:38] Brian: ​
+
+
+[00:00:48] Welcome
+---
+
+[00:00:48] Brian: welcome to People versus The Media Singularityalgorithms. Show about, gen Z stares and, connecting the dots between, technology, 
+
+[00:00:54] Troy: I am curious, 
+
+[00:00:56] Brian: That's Troy Young. We are joined,he's gonna be talking about the singularity later. And, live from Sonoma where they don't yet have a Waymo's to take children to school is Alex Schleifer. Welcome
+
+[00:01:07] Alex: hello,
+
+[00:01:08] Troy: I'm actually curious where the stair comes from, like, and why it's a generational stair. Is it that, they grew up on the internet sort of learning to assert.you know themselves in any way they want, independent of any kind of ageist or social hierarchy. Like what, what is, what is underneath of it is what I'm curious about
+
+[00:01:31] Brian: I mean, I don't know. I don't like to 
+
+[00:01:32] Troy: because it's real.
+
+I know it's 
+
+[00:01:34] Brian: but
+
+I will. 
+
+[00:01:34] Alex: it real? I mean, isn't it like, isn't it, didn't you, young people always kind of have a way of just like looking at you like they don't understand what's going on?
+
+[00:01:42] Brian: It's the new eye roll. It's just a rebranded eye roll. I think every generation has their
+
+si There's, there's signals to 
+
+[00:01:49] Troy: No, it's more than that. It's 
+
+more than that Gen Z hates 
+
+[00:01:53] Brian: and often they're right.
+
+[00:01:55] Troy: Gen Z hates you, Brian. And also
+
+you could pass as a boomer, so they hate you even
+
+[00:02:00] Brian: That's not true. 
+
+[00:02:01] Troy: Yeah. They
+
+don't 
+
+[00:02:02] Brian: think you're telling on
+
+yourself 
+
+[00:02:04] Alex: Ibefore the Gen Z stare, I used to call this the Facebook stare when I used to work with people at Facebook and tell them I would, I didn't want to ab test everything we build and I would get that stare back, like, a stare of non comprehension of what I was talking about.
+
+Why would we want build a good product if we could just,shove shit in people's 
+
+[00:02:22] Brian: I actually, I actually prefer the Gen Z stare too. that makes sense. So that's good. So it's, it's 
+
+[00:02:29] Troy: Yeah, I mean, in one case, Alex, you're trading this sort of elitism of the designer for the practical kind of, you know, you know, mechanical approach of a, of a product manager.
+
+They both have their own arrogance, Alex.
+
+[00:02:41] Alex: Well, I mean, yes, I think that's true. 
+
+
+[00:02:45] Charlie Kirk Killing
+---
+
+[00:02:45] Brian: We, we should start,on a less lighthearted note. it is a media, program, but the Charlie Kirk, killing yesterday, which is just shocking. and I'm not gonna get into this, is gonna set off a incredible amount of finger pointing and reductive,ascertain about like why, about what is to blame for this whole mix of, of different things.
+
+But one of the things that I, I thought of with Charlie Kirk, 'cause I was interested in him for a while, as. Kind of a figure of this information space. And I think one of his sort of legacies is that he was like a leading figure in this where he had, you know, he had Rush Limbaugh as a, a role model, you know, back in like high school.
+
+And I remember living through, through the Rush Limbaugh and the talk radio, era of conservative talk radio, which, you know, kind of informs me because the scourge that, that, that was claimed to have been like on culture. I think we see repeated in this far more decentralized and, and, fractious, media environment, ak the information space. And what I found interesting is that he occupied a place where he was a. He was an energetic actor within politics with Turning Points, USA, but he was also a media entity UE unto his own, with his podcasts and with particularly his viral social media clips. and with those, you know, college tours and rallies, and, and that he got killed at, at one of those.
+
+And, he was a master debater. And we see this across, the, the information space. How this debate format has, has become, you know, Jubilee I think is, is, you know, at the forefront a lot of this, but being able to see off, critics, 
+
+[00:04:29] Troy: the media
+
+[00:04:30] Brian: yeah,
+
+and 
+
+[00:04:31] Alex: the 2020 x versus one Y type thing.
+
+[00:04:35] Brian: Yeah. And
+
+there is this, you know, and, and he really mastered that. He, he was a natural, I think, at a lot of the contours of the information space, and was extremely successful at it. And, and prove that you could kind of straddle the line between being a media figure and also being involved actively.
+
+And I think we're seeing this across the board. I don't know if you've noticed like, but David Sachs is back on the nearly unlistenable, all in, far more regularly. 'cause I think they realized is that's sort of part of the power. Whereas before you had to do one or the other. And Trump has filled his cabinet with people who have one foot, in, the information space as, as media figures.
+
+[00:05:21] Alex: I mean, literal podcasters, right? 
+
+Running. 
+
+[00:05:25] Brian: I mean, he was a podcaster of, you know, he, he's, he has the number one podcast right now. it's
+
+now at the top 
+
+of, 
+
+[00:05:32] Alex: I'm saying he's, he's putting people in in the office that I've, 
+
+[00:05:35] Brian: Yeah, I just mean Charlie Kirk now 
+
+[00:05:37] Alex: Yeah. Charlie Kirk. Yeah. Yeah, yeah, yeah.
+
+[00:05:39] Troy: It was extremely disconcerting. 
+
+[00:05:42] Brian: Yeah. Political violence is not a good 
+
+[00:05:44] Troy: and, and I, and the one thing I
+
+did think, and it will connect to this singular singularity spiel is when. Kind of fantasy and action reality and fiction kind of blend in violence and, you know, yeah. You are a media figure and a political figure and a policy maker and an influencer of people and a convener and if,
+
+[00:06:11] Brian: also sold hot sauce.
+
+[00:06:13] Troy: but
+
+it's sort of like, but it's sort of like, I don't know, as your, your sort of fantasy world blends with reality. The idea of taking someone out is the physical manifestation of the ultimate debate move.
+
+[00:06:29] Brian: But we don't know. I mean, let's just pump the brakes. We have no idea 
+
+[00:06:32] Troy: I, I'm not, I, I don't, I'm not suggesting that, like the nature of the perpetrator in any way. I'm only saying that I, I feel like we're living in this kind of world where. Th our connections virtually blend with the physical and in some ways ending up in tragedy, in violence. and I, and I think it, it's, it's sort of like when people get on the wrong side of reality and they start to kind of blend this world of fantasy with, you know, things that hurt people or change lives, it's a problem.
+
+And I think it's, it's a, a, a kind of facet of the world that we live in, in, in, in terms of how we're connected digitally, virtually, and physically.
+
+[00:07:20] Alex: I mean, I, I, I, I don't know. I mean, I think we can apply a lot of this to the median landscape, but like John Lennon was shot by someone. You know, I, I, I don't know. I, it feels like we, 
+
+[00:07:33] Brian: It is a little different. I would say Alex, I mean, political, political violence, is different than regular, violence.
+
+[00:07:39] Alex: right, but 
+
+we're saying 
+
+[00:07:40] Brian: it has broader it they're all 
+
+[00:07:42] Alex: we don't know what it is. We don't know 
+
+[00:07:43] Brian: Yeah, but this was, this was, I I think we can say this was political violence. He was a political figure. We, we see, we've seen a slate of 
+
+[00:07:50] Troy: Shot in a political moment. Yes. It's political 
+
+[00:07:53] Brian: And so, yes. I mean, it could have been a disgruntled ex-employee. I don't, I don't, I mean, but I 
+
+[00:07:58] Troy: but I 
+
+think 
+
+[00:07:59] Alex: no, we could, could, could have been a fan. I mean, I don't know. I think people find people to, violence has been happening for a while and I don't know if it's escalated, 
+
+[00:08:07] Troy: Right. but, I even to kind of connect it in a bit of a dubious way with that, Tucker Carlson, Sam Altman interview.
+
+[00:08:15] Brian: Remarkable, 
+
+[00:08:16] Troy: stats. 
+
+Stats that came out of that. 
+
+[00:08:18] Brian: So for those, let me just set this up a little bit. I mean this is, this is a 
+
+[00:08:22] Troy: but that's connecting activity. Like, it, it's connecting, you know, suicidal outcomes with,you know, AI interactions. And then also accusing,well, I mean, that one was like, clearly
+
+[00:08:40] Brian: right up to the line. He kept saying, I'm 
+
+[00:08:41] Troy: Tucker Carlson is, is truly the modern, low
+
+[00:08:44] Alex: But describe what happened because you're kind of jumping ahead.
+
+[00:08:47] Troy: okay. Hit it.
+
+Brian, you 
+
+[00:08:48] Brian: Okay, so basically, you know, this is to me, I, I file and be careful what you wish for. 'cause a lot of the sort of like, you know, tech oligarchs have, have really been cheering this decentralization of media where they don't have to go to the quote unquote mainstream media. The advantage of the mainstream media is you, you start to find out it. They're house cats, a lot of times they're not feral. When you get out into the decentralized world where t where Tucker is, is,you know, just asking questions, they're, they're feral cats. They're out at the scrap yard and, you know, they're coming back missing Tufts of fur. And so, you know, Sam Altman went on to Tucker Carlson's, you know, very popular show, reaches a totally different demographic and it kind of went off the rails, with Tucker really coming at him for both, you know, weather. AI was, was leading people to, you know, commit suicide, whether ai, you know, he was really harping on, you know, whether it was woke, right, which was expected. But then it took a turn where he basically kept asking Sam Altman about this former open AI whistleblower employee who committed suicide. And Tucker has been talking with the family and is just asking questions and absolutely not accusing Sam Altman of being involved, but he is found it very curious and believed the police should be speaking to Sam Altman about this. Sam Altman at some point was like, I've never done an interview where I've been accused of murder before. this was, I don't know, in the past you would call it remarkable tv. It was these days like, it was just like another thing in the feed. Go on Troy.
+
+[00:10:23] Troy: Or there's nothing quite like a conspiracy theory, you know, to surf upon to get engagement. And no one understands that better than Tucker,
+
+right? Like, 
+
+[00:10:32] Brian: yeah, he's selling a lot of his own, like knockoff Zens off this too.
+
+[00:10:37] Troy: He genuinely seemed happy in his happy place.
+
+[00:10:41] Brian: Well, he's good at what he does. I mean, this is like also part of the, you know, the JAL stand. I mean, you do not want to get into the cage with these guys, like, I don't know who stands up, who volunteers through these jubilee things because they will rip your face off. Go on.
+
+[00:10:54] Troy: you know, what was underneath It was interesting too, where the whole sort of premise of AI as a,this kind of appropriation layer on top of all things, right? That was it, it was based on fair use. That was the individual's contention like that, that basically OpenAI was stealing and that was his whistleblower complaint.
+
+Right? And that underneath of the, that is of such consequence for an immense amount of money globally, right? Like the, and, and the power of these firms that this person, it's conceivable that they should be killed. That,
+
+that, that, that, 
+
+[00:11:34] Brian: again, we're getting into the fantasy. Blending 
+
+[00:11:37] Troy: I'm talking what Chucker Carlson was playing
+
+[00:11:40] Brian: I, I know, I know. That's where we, we don't even, I feel like we're in this period where so much unreal stuff can seem plausible that, that we just sort of gloss over when 
+
+people talk about rocket attacks on data centers and
+
+[00:11:54] Alex: Yeah, but because Brian, we're living in times where unreal times is possible.
+
+you know, like I think we lived through a pandemic, you know, we had two Trump presidencies, we have podcasters running the FBI or whatever. I mean, there's a lot of stuff that we're like, that's not, that's weird, right?
+
+and it's just, and so therefore, I think people's compass has been. You know, distort a bit. Like it's hard to, you know, even I like with, some of the, I'm, I'm reading not a conspiracy theorist, but like, you know, with the Epstein stuff and stuff, like, you're like, kind of like, eh, that's kind of, you know, but I mean, you 
+
+[00:12:29] Brian: There is some, there is some strange things here,
+
+[00:12:32] Alex: Yeah, exactly. And I like, you know, coffee zilla, which were fans on the thing, which was doing some really good reporting, I think has turned full conspiracy theorists. I can't listen to his stuff anymore. but it's, it's, it's happening to, 
+
+
+[00:12:45] The Great Media Singularity
+---
+
+[00:12:45] Alex: It, it's, it's all apart. I'm sorry guys. It's all apart of the great media singularity.
+
+[00:12:50] Brian: Go Troy.
+
+[00:12:51] Troy: Well, I don't know. I was just walking the dog or something, and I, I have a friend who's into Ray Kurtz well, that I had dinner with last night. And Kurtz, well famously talks about the technological singularity where humans and machine consciousness merge. And I just, it just struck me that there's a parallel thing happening in media, and I, like, I, I do at my maybe Best and Weakest, is I started to sort of think about the convergence of media types and the things that define them. Right? So what, what are media types? Well, to me, in a simple way, they're sort of like live Right News, whatever that is.
+
+Live, there's news, there's lifestyle, there's sport, there's entertainment, there's gaming. And I would even argue there's sort of commerce, which is a transactional media type.and they used to all have their own rules, right? One was about reporting or facts, and one was about. Entertainment and fantasy and storytelling. And those are at different, and, and engagement, I would argue with gaming and, and commerce. And there are at different ends of this continuum. And you can see, as Alex has said many, many times that like, everything is entertainment now, right? But there's, there's this, this conversion between media types where, you know, we're talking about ESPN and CNN wanting to be like the New York Times. We're talking about the New York Times, wanting to be like NPR. We're talking about the convergence of all things, you know, sort of media types into this kind of newfangled blob that is, you know, video plus image, plus text, plus meme you know, measured and driven by its ability to, to, to drive engagement. And, and it, it just seems to me that like on one end, you know, the, the currency that d the drives entertainment, for example, is fan. At its very best, at its most engaging. And that increasingly becomes the energy behind news, right? News is tribal. And so all of these media types are sort of compressing and and where do they compress?
+
+Well, they, they come out in feeds. Everybody wants to own a feed that delivers this sort of singular new media type, right? And so obviously there's the X feed, the Instagram feed, the Facebook feed, the TikTok feed, the Snapchat feed, the LinkedIn feed, you know, like Substack wants a feed.
+
+Netflix dreams of having a feed that blends consumer generated content and games and entertainment into a feed. Robinhood wants to be your financial feed, right? And, you know, a gamified financial feed. So, you know, we have this illusion where we think, well, that's not quite true because media is kind of massively niche unified, right? Like we actually have more. You know, sort of segments and types of content that deliver against your own passion points or your unique needs. But those are just the sort of personalized dimensions that fit into this, you know, algorithmic driven feed system that represents the singularity. and I just think that what it is, is the singularity, is you and your relationship with the network. And, you know, the, the, that, that is a, a kind of modern reality in media where the distinction between types and the things that define different media types sort of iconically, right? The difference between entertainment and news. It's all converging
+
+and it's converging in a media type, and it's converging in a, in a delivery system. And inside of that, we don't even, I don't even know what you're seeing because, you know, we're, we're, we're connected, but we're also. You know, supported through our own unique drip feed system. And, and so I just, it's, it's, it just, I think it's a concept that does explain a lot of what's going on in media where the old notions of, of type are no longer useful in, in, in thinking through the difference between, between, you know, media companies and, and I think there's probably consequences for, you know, media talent, right?
+
+Like we all want journalists now to be characters like they're stuffed in a Disney suit at the park, 
+
+[00:17:04] Brian: Well, I think, I think what you're getting is, is the feed itself is. Is really problematic in many ways. Hate to be always negative, but, you know,
+
+[00:17:13] Alex: Well, we had a very positive episode last week, so stamp two.
+
+[00:17:17] Brian: you know, because the feed itself, it, it forces each piece of content to compete with the other piece of content. And that inevitably is going and when engagement is the currency that inevitably is going to lead to a race to the bottom, that is why being bombastic is, is, is rewarded, being oppositional, having enemies is rewarded.
+
+This wwe f kind of, I guess this wwe now I'm all,this WWE style of like communication that has taken over. It's basically responding to the incentives. Of the feed powered by algorithms and the way that you win in that environment is, and I think that sort of inevitably, maybe this is Marsha McClean too, like it just sort of leads you back to where we are now with, with how information is produced 
+
+[00:18:08] Alex: I mean, I think this is right and I think that the, you know, we're in a place now where distribution really only flows through a single model, which is the feed, right?
+
+even, even in, in, gaming, you know, like the steam feed or whatever is recommended is, is what you're, what you're fighting for. and it does change the way, you think about content and it does kind of force you to play in every field, right? Like it has to be news and it has to be entertainment, and it has to, you have to go into commerce, like everybody's doing a little bit of everything.
+
+and that does change things. And it also, because it's like such a visual medium. Much of the distribution, piece is such a visual medium. It does also change the type of content you make and why you make it. Right. You wanna, like, it's even changed. Like, this massive change with comedians with the way they do their shows because they, you know, they started figuring out that hecklers were a great way to get clips in and it's changed comedy and then comedians started talking about current events and there's like fewer, fewer and fewer just plain joke 
+
+comedians 
+
+[00:19:12] Brian: Well 
+
+that's 
+
+the 
+
+[00:19:12] Alex: Like they, everybody's becoming a a yeah, everybody's becoming a pundit basically. Right? Everybody's becoming a pundit that applies their skill to everything.
+
+[00:19:22] Brian: and look, combat Combat does well in feeds, without a
+
+[00:19:26] Alex: yeah, yeah, but where does this end, Troy do it is like, do we have a media terminator?
+
+[00:19:32] Brian: But I just wonder, Troy, does this like bifurcate, right? Like where you have, I just think that inevitably people have more agency a lot of times than tech people pretend. And that some people, I don't know, maybe not the majority, will kind of opt out and will return to a packaged media format because they realize that the serendipity afforded by these feeds is not really serendipity.
+
+[00:19:57] Troy: that's right. I think that's right, but I think it's also like vinyl.
+
+[00:20:01] Brian: Yeah. Vinyl's. A nice,
+
+[00:20:03] Alex: Well, how much, like vinyl? The, the thing is how much, like it's not, I mean, I mean it's great, but, you know, uh, how much like vinyl does it 
+
+[00:20:09] Troy: Well, it's like vinyl except people forget how to listen. Right? That, that, that's the problem. It's, it's that you don't go from being a kind of kinetic, you know, feed consumer to being a long form media, you know, consumer. 
+
+[00:20:25] Brian: but Once, Once, they're, once they're lost to the feed, it's, bye-bye.
+
+[00:20:30] Alex: But you could also say, Troy, that like media has always been an abstraction of reality that is created in a certain way to attract eyeballs, where the incentives are always a little awkward because, you know, you need to be supported by either people buying your advertising, which pushes you, push, pushes the dynamic where you create content, for commerce.
+
+And therefore, you know, media has always kind of been funneling everything into either single point of view during like, the monoculture of the sixties, seventies, and eighties, or, and it's just different now, right? And Maybe it's a little bit of that thing where people say, you know, music used to be good when ugly people were allowed to make it.
+
+Like, it's just, it's just there's a different set of characteristics that you need to participate in the media and audience needs to build a different set of, you know, the way they kind of train themselves to scrutinize it in a different way. but the monoculture is definitely 
+
+out. 
+
+[00:21:30] Troy: I, I'm not 
+
+saying it's, 
+
+[00:21:31] Alex: is definitely like on its way out.
+
+That's true.
+
+[00:21:35] Troy: I'm not saying that it's. That it represents anything apocalyptic. I'm saying, I'm making an observation that the way that we defined media and the forces behind it are collapsing. And you can take from that what you want. If you're running a media company, you might do the obvious things and think, we don't hire journalists, we hire talent. Right? If you are thinking about, you know, how you invest and you are a maker of long form entertainment, you might reallocate money and resources to different types of entertainment, right? If you're thinking about, like everything is now driven off of a news peg, so you're sort of, you know, I guess maybe Hollywood always responded to cultural patterns very quickly.
+
+Now even faster. Where entertainment and news kind of collide. And of course, when you squish this giant big ball of stuff that is media, you're always gonna get, you know, people that opt out. You're always gonna get counter trends. You're always gonna get those things. But I think if you look at it holistically, it's an interesting way to observe what's gone on in media.
+
+[00:22:48] Brian: Yeah, it's funny 'cause I, I think the feed, I keep coming back to the feed, but like, I feel like the feed originally was a really good force function. I remember just being on the B2B side, I would say, well, the feed just ended this idea where people would have a different expectation of the content they, they read to stay, like informed in life and, and, be entertained and the things that they consume for their work lives.
+
+Like those things all sort of blended together in the feed and so you're competing. And so that was good. It was a force function that like, if you're gonna get someone's attention in the feed, you have to compete. so that part was, was good. I just think it, it ended up leading to an inevitable,race to the bottom.
+
+I think it's gonna be difficult for a lot of media companies to do it all. To win at the feed and to win in packaged media. I think overall, one of the sort of lessons of the last year was that a lot of publishers in particular tried to do too many things at once, and they had already complicated businesses that became even more complicated and their, their, was even more misalignment.
+
+so I kind of admire, in this sort of niche era, people that opt out of even trying to compete on the feed. I'm going to like a niche magazine conference this weekend, with all these little niche magazines that are, hoping for a little bit of a renaissance. And I think it's not like gonna be a giant area.
+
+And, and most of these business models are, you know, fronts for, for better businesses like commerce or events or brand activations. but I think we we're, it's going to be a vibrant area. It's area, it's gonna be growing. Because to compete in that like that, that that feed environment is, is just becoming really perilous.
+
+[00:24:35] Alex: it is, but it's also, I think it's just become, well, I have two, two questions. First of all, do you think like advertising and marketing is getting blended into that singularity because it just feels like marketing itself and marketing people I talk to feel like they're getting sucked into it.
+
+[00:24:53] Brian: How do you mean?
+
+[00:24:54] Alex: Where, where it's all about the feed, right? And it's, it's, there's no longer kind of a clear distinction between like content and marketing and news and marketing. And you, marketing has to be responsive to news. So it appears in the feed, right? It's, it's the, the, the kind of the, the, the framework for, for distribution of nearly everything now is a feed somewhere.
+
+Those feeds are owned by like four companies, right? And, if you want to get any atten, if you're in the attention economy in any way with whether you're a media company, an advertiser, somebody advertising stuff, a marketing executive, you are in that business. You're in that attention 
+
+business, which is, you 
+
+[00:25:33] Troy: I think you guys drove by two of the items in our agenda, and one is the vinyl equivalent in the publishing world is tech meme. And tech me and you also highlighted Brian one that I actually like, which is a stripped down list of things to read every morning called Media Star.just tells you what's, you know, a
+
+[00:25:56] Brian: Yeah.
+
+Old school link dump.
+
+[00:25:58] Troy: So easy to use and useful.
+
+[00:26:01] Brian: I click on something every 
+
+[00:26:02] Troy: I sent, what's his name from Tech Meme,
+
+[00:26:05] Brian: Gabe. Gabe Rivera.
+
+[00:26:06] Troy: Gabe. I sent note, gave a note. I have been looking at the thing he made 20 years ago. It's its 20th anniversary called Tech Meme. I look at it on and off pretty much every week. I look at Media Gazer and I look, those are both kind of ones really media focused.
+
+The other's tech focused, media, media gazer and tech meme. I look at them all the time and they are, what algorithmic and maybe human curated list of links,that
+
+show tech meme 
+
+[00:26:35] Alex: Yeah, it's, it's, there's a lot of human, human
+
+[00:26:38] Brian: It's human 
+
+[00:26:38] Troy: human 
+
+[00:26:38] Brian: but they use bots
+
+[00:26:40] Troy: Yeah. And they show all the other people that are writing about a, a particular item. the interface hasn't changed since I met Gabe a long time.
+
+I mean, it's never changed, and there's something wonderful about that. So congrats to him. And, it's still, you know, not
+
+everything becomes, it, it's a feat of its own, but not everything becomes, you know,
+
+[00:27:02] Brian: well. It's a human curated. One. And I think the question is like, whether there is, I kind of think that there's a return of, of aggregation in some ways. I mean, it's just like being called curation, 
+
+[00:27:15] Troy: Well, the things I think I like about it is it ends, it just, it's it's a list of stories from today and
+
+it, you can just consume
+
+[00:27:23] Brian: You know what product I I, I, of all the products Yahoo killed that, I resent is they bought this company Sumy that became Yahoo News Digest. And it was built by this like 21-year-old like English kid
+
+[00:27:37] Troy: I think It 
+
+[00:27:39] Brian: It did. And then I think he got outta media smart kid. and, but what it had was it had finish ability.
+
+It was like, here are the 10 things you need to know to be like up to date. And they actually, I, I heard, I, I, I talked to him once at some conference in Europe and, and heard him talk. And he was, he was really impressive young guy. And they were optimizing to how to getting people finished. Like their thing was how, how quickly can we get people finished with, with our product rather than the incentives, that we see now, which is how can we keep people hooked?
+
+How can we keep people more engaged? And we're seeing this go over into AI that those chat bots, I keep telling these chat bots, would you stop telling me to put this thing into a, whether I want to put this thing into a notion template or something, I have no idea where you got this idea. And to just keep with the engagement bait and the engagement
+
+bait to try to keep people, hooked.
+
+[00:28:36] Alex: Brian, this is the type of talk that will get to that Facebook Sta was talking about.
+
+[00:28:40] Brian: If Willis,
+
+[00:28:42] Alex: Well, yeah. It's, it's just like, the, the going, philosophy in Silicon Valley is that you need to keep people on your product for as long as possible.
+
+Now, you know, EE except if you're maybe like, 
+
+[00:28:55] Brian: and that's totally opposite than what Google was, was built off.
+
+And the whole open web idea was that Google was gonna be the arbiter, but their interests were to get people off google.com as quickly as
+
+[00:29:06] Alex: Because we used to sell utility and now we're just selling engagement. Everybody's in the engagement business. I mean, even video games are being made to be so long because their success is tracked by how long you stay on that video game rather than, you know, you bought it. Why can't you be happy? Like, if, if everybody buys your game and it's two hours long, that's fine.
+
+but it's, you know, you, you make them hundreds of hours long so that you can keep that engagement going because you, you want to, ' cause you don't want to kind of disappear in that flood of, of media and content. And, and 
+
+[00:29:38] Brian: So what is a comparison to that? How long was Ms. Pacman give it to something I can
+
+[00:29:42] Alex: I don't think you could even finish Ms. Pacman, but these games well, well, well, but here's the thing, as an interesting example, so these were arcade games. They were made to actually be incredibly short, runtimes where you would keep putting quarters and keep dying, right? Pacman, I don't know.
+
+But there were other games that you definitely, if you played through them today, and had like unlimited lives, you could finish them in an hour. 
+
+[00:30:03] Troy: Hey Alex, my brother would, would always bring a stool up to the game defender because he could play it and asteroids, he could play it till, you know, till the arcade closed
+
+[00:30:14] Alex: He 
+
+was probably, 
+
+
+[00:30:15] Google Says Open Web Is Dying
+---
+
+[00:30:15] Alex: hey guys, can, can we just circle back to this, you know, minor kind of news moment that was created around Google saying, look, the Open web is dying
+
+[00:30:25] Brian: It did in a legal, in a
+
+legal filing. 
+
+It 
+
+[00:30:29] Alex: in legal filings that they admit to obvious.
+
+[00:30:31] Brian: it, admitted, as much it stated that, the fact is that today the open web is already in rapid decline. Google. Then the PR team scrambled and, and said, no, no, no, no. This was about ad tech. It's just, you know, the advertising on the Open web is, is in free fall, rapid decline, not the open web, which makes no sense whatsoever.
+
+'cause the open web is supported by, well advertising. and Google has choked off, you know, traffic on the open web. I did a podcast, earlier this week, I think it'll be released next week with Sherry Phillips. She said, Forbes, depending on the day, is down 30 to 40% in traffic. That's from search.
+
+Ouch. 
+
+[00:31:12] Troy: Well, they were the kings of SEO, so no one was better. having said that, let, let's break down this Google thing a little bit.
+
+So they said, you know, we're not a monopoly because the open web is dying. Is that, is that the logic?
+
+[00:31:26] Brian: the logic that they're saying is, w are we a monopoly? Well, look at all of our competitors. They're rapidly diversifying, which is totally true, into connected tv, retail media, digital, out of home, literally anything that is not putting ads on webpages, these SSPs, DSPs, et cetera, don't have much 
+
+[00:31:44] Troy: A person, both myself and Alex, that spent a long time trying to, you know, maybe solve for the impossible. The impossible, which is how to get a human being to do two things at once, which is basically the nature of display advertising, right? If it's not in the flow of your, you know, journey or what you intend to do, it's asking you for your attention while you're doing something else. So the underlying base, sort of human case for it is totally flawed. I think what's really interesting about the, the declaration that Google made, it's is, it's kind of an admission that the primary model of monetization for the open web has failed. It just has, it's failed. And what has come in, its in its place.
+
+Well, content and advertising. Have kind of merged as a consequence or this long arc of the maturation of Native, which became, you know,
+
+publisher. Everybody's a publisher, the old John Patel line, you know, the, the, the, complete democratization of content coming from anyone, be it a commercial interest or you know, someone with some, you know, agenda. And so we've got two types of advertising that kind of survived on the open web after display failed. And one is content marketing, which is basically just most of that spectrum. And the second is anything that's performant, right? Anything that shows receipts,
+
+whether that's Google or affiliate
+
+or retail media. 
+
+[00:33:20] Alex: you just to explain to some folks that might, this display all, all those like banner ads that you would see and, what you're talking 
+
+[00:33:26] Brian: pushing the
+
+page down, coming up from the bottom 
+
+[00:33:30] Alex: which you'd still see. And, and then the performance stuff is anything that's a link that tracks, you know, performance.
+
+[00:33:35] Troy: what what you get there is you get, Google represents
+
+the best of intent 'cause they have intent. You get, meta is the best of turning engagement into intent. That's what their algorithms
+
+do. Or, or 
+
+[00:33:48] Alex: away their code to like, you know, this underwear brand or 
+
+[00:33:52] Troy: yeah. Influence as transaction
+
+[00:33:55] Brian: Right. But that, 
+
+[00:33:55] Troy: like at scale it's Amazon doing, 
+
+[00:33:58] Brian: it's 
+
+[00:33:58] Troy: transactional 
+
+[00:33:59] Brian: it's embedded within the content. Now, native advertising was supposed to be better than display because it was gonna mimic the content. And that like, gets you so far, but then it's like, huh, wait a second. What? Why are we keeping the chocolate and the peanut butter separate?
+
+Let's just make it all one product. And, and that is, you know, the most powerful forms of native advertising slash content marketing is, it's just, it's just content. It's 
+
+[00:34:25] Troy: But, 
+
+[00:34:25] Brian: just part of it. 
+
+[00:34:26] Troy: but for people to freak out that the open web is dying, I think is completely wrong because it's just, it's nature is changing. But if you step back and look at the open web, and, and this is where I think we hit the browser conversation, Alex,
+
+[00:34:41] Brian: Can I just give you a fact 
+
+[00:34:43] Troy: well, just a couple o just a 
+
+o Open Web, Google sourced traffic to free ad supported publishers dying. Okay? But the web as a delivery mechanism for. Commerce the web. Web as a delivery mechanism for content marketing. The web as a delivery mechanism for community IE Reddit, the web as a mechanism to deliver AI experiences. How we most of us experience OpenAI The web for, you know, booking, travel, researching, travel, the web for doing your banking, the web, for paying your utility bill.
+
+Like all of that alive and well alive and well. So to kind of like put it all together because a bunch of sad publishers don't have banners that like and are not getting traffic from, from Google. Uh, is like the open web and is dying is disingenuous.
+
+[00:35:40] Brian: OK Open web publishing. 
+
+[00:35:42] Troy: How's that it's a, it's a Casey Newton. It's a Casey Newton Gotcha. Headline is what it is.
+
+[00:35:48] Brian: Okay. One of the things is, Tolbert said that, and AI is absolutely part of the story that human visitors to websites continue to decline. Seven down 10% from Q1 to Q2. And, and, in the first quarter, one and Q hundred visitors was AI again, according to Tolbert, they've got a dog in this fight. In the second quarter, it was one in 50. I mean, you can see the direction of 
+
+[00:36:08] Troy: I love it when you read advertising on the podcast.
+
+[00:36:12] Brian: Well, I'm trying to get Tolbert. We'll see. No, see if Jesse could, Jesse, I don't know. They raised 31 million. They must have like
+
+[00:36:20] Troy: Yeah. There's gotta be
+
+[00:36:21] Brian: 20 5K for like, you know, a webinar.
+
+[00:36:24] Troy: Yeah.
+
+[00:36:25] Brian: Alex, what, what is going on? First, we, we've got these definitional issues about the open web and look, you know. Email is predicted to have been dead for the last, you know, 25 years. It's, it seems, seems fine as,
+
+as it is, and we're seeing a lot of like friskies on the browser front. So obviously that indicates if someone paid, if, if Atlassian paid 610 million for a browser nobody uses, like literally nobody uses, then you know, there must be some value there.
+
+[00:36:52] Alex: yeah, Atlassian bought the browser company who makes arc, a browser I use, which is just like a built on Chrome, just had extra features for, for power users, and they switched to. Building dia, which was the AI powered, browser. They always had ambitions to build a consumer product, but they just were bought by Atlassian.
+
+And now, you know, the CEO's been pretty transparent through his thought process and he's, he's now admitted that, they're no longer pursuing the consumer product, but they're going towards a, you know, an enterprise product, which I think is really telling. When you look at the open web, we're seeing the consumer, let's maybe call it the consumer web, losing dominance as people use more and more of their phone, of their phones to consume media, or, you know, other devices like an Apple TV or an iPad, but mostly the phone.
+
+You know, and AI is also kind of eating away at that because it adds this layer,between the content and you. But in the business side, on the enterprise, I would hesitate to say that the vast majority of people, just install a browser and then use everything through the web. it's, it's, you know, on your, on your laptop.
+
+You get, you set up Chrome and you have your Jira tickets and your Google Docs and your Gmail. and, and even, you know, Figma Figma, which is a design app, will run in the browser. So the, the, the web itself is thriving on the enterprise. It's a great, you know, when you're managing hundreds or thousands of people, it's a really great way to essentially manage everything.
+
+You don't have, you know, you only have to security patch the browser. Everything else is kind of running off servers. When you onboard someone, you give them a browser and a laptop and then they log in. it's easy to disconnect them when, when, you know, you let them go. so, so the browser is actually like a really great, thing for the enterprise, and I think that's what Atlassian is seeing here.
+
+and they're building this DIA browser, which is essentially like Chrome with a. With a chat bot on the right and you can tell it to do, to do things. I started using it to test it. It's, it's, it's pretty good, but it's essentially just chrome with chat GPT on the right. and I feel like if you're an enterprise,and you can get maybe rather than just using Chrome and getting an enterprise only browser that's managed by Atlassian, that has like centralized user management, that also may be kind of like Trojan horses, like, some AI features so that your employees start using AI more regularly because it's been hard to get AI adoption going.
+
+I think it's, it's a great move. And then for Atlassian, they become kind of the entryway to people's business lives. but you know, that's to say like on the enterprise side, the enterprise web is thriving. It's thriving. It's like, you know, you can run your entire business just on the web. And that's, that's it was Salesforce original promise, right?
+
+Salesforce used to have these no software ads. And that was kind of the big thing at the time, the beginning of the Web 2.0 era. Where, where application we could build websites into applications. Uh, I think it's fully matured and it's not going anywhere, except on phones, but people 
+
+
+[00:39:49] Publishers Getting Paid
+---
+
+[00:39:49] Brian: I get that on the enterprise side, but can I bring it back to the web publishers and their sat programmatic, display banners for just a minute. Humor me here. there is, the economic foundations of the old open web are crumbling. I mean, when you're, when you're down 30 to 40%, an SEO is a major part of your model. That's tough. and, and with ai, you know, training on a lot of this data, it, it is still unclear how the economic incentives are going to be realigned. Google's incentives are less to send free traffic to publishers to monetize through programmatic and, okay. Too bad. So sad. That's one. Position, but I don't know, I'd like, I'd like, I'd like a thriving web publishing ecosystem to survive too, not just the enterprise Web. this week, there was a, an interesting announcement of a new group that is trying to use the RSS, standard to create what is called really simple licensing. It's an open content licensing standard that allows publishers to basically tell bots, you know, whether they should, scrape their sites, what they should scrape, and then,what the, financial, terms are going to be to, to get access to that content. This has got backing from Reddit, Yahoo Medium, Quora People Inc. The artist, formerly known as Meredith.
+
+This is basically updating the, the old system of robots, txt, to add licensing and royalty terms. It sounds great. It depends on whether these AI companies are going to, abide by it or just work around it. any thoughts on this, Alex?
+
+[00:41:32] Alex: Yeah, I mean, I, I, you know, we were talking about the vinyl industry, I think, I mean, text is the vinyl industry, you know, just, I mean, I, I'm 
+
+[00:41:42] Brian: What about email text?
+
+I just sent out like 1500 words.
+
+[00:41:48] Alex: feel,
+
+uh, I 
+
+mean, at some point, like text becomes, and look, everything's going to go that way at some point, probably with ai, where you can kind of remix everything and it, and, and, and, and the type of content that is like, I don't, I mean, I can see my behaviors and, and I find that my behaviors usually kind of seem to kind of become more mainstream over time.
+
+I don't go to any sources for information. Most of the stuff I read is filtered through AI now, or, or, or I go to Reddit. You know, I said last time, I mean, I think my breaking use place is Reddit. That's where the comments are. it's happening 
+
+[00:42:28] Brian: You really like to do that? Like for what? 
+
+[00:42:30] Alex: sure. 
+
+[00:42:31] Brian: so 
+
+inefficient. 
+
+[00:42:32] Alex: did Charlie Kirk thing did?
+
+Charlie Kirk thing happened. I just went to Reddit and I like opened the, the one of the posts there and the comments were way faster than anything else I was getting as to what's happening or the guy got caught, the guy got released. it's, 
+
+just like, 
+
+[00:42:45] Brian: What 
+
+is that? Is that like the vi, the gaming portal? Because I'm just like, I find
+
+[00:42:49] Alex: but why would it, I mean, it doesn't have to be enjoyable.
+
+I just want the information. It it, it's 
+
+[00:42:54] Brian: Even if like 70% of it turns out to be inaccurate at the time, I'm like, I can wait a day. 
+
+[00:42:58] Alex: but if I was going to add something else to Troy's media singularity, is that people have also bled that community into that. I think this is why podcasts works so well, like somebody called podcast Friendship Porn, where you listen to people and you feel like they're your friends and you're not lonely.
+
+And I feel the same way when a big piece of news happens. I go on Reddit and I have all these random strangers that are commenting on it, but I feel part of a community and that feels a hundred times more validating, valid, entertaining, comforting than watching CNN
+
+[00:43:31] Brian: I
+
+[00:43:32] Alex: and, and, and there's 
+
+[00:43:33] Troy: Yeah, it's the difference, Brian, between a gooey and a command line. Alex likes command line.
+
+[00:43:39] Brian: That's graphical user interface and command line. Okay. 
+
+[00:43:43] Alex: I I feel that the, the sense of commu, like personality, we keep talking about personality, but we, we haven't really, really discussed like those, the relationships that people build. And it's, it's an added thing that you get from, from this new kind of like, you know, amorphous media that you di like, I like some of the people I listen to, like, I listen to them because they, I feel like I have this, this, this, this relationship with them.
+
+And so I find that my news sources I go to is that, or if I don't get that, just give me the raw feed. Just like chat, GPT, what happened? Go everywhere.
+
+[00:44:17] Troy: But, but you know, guys, you know, the interesting thing, what's it called? RSS, what's the new RSS called?
+
+[00:44:22] Brian: RSL. 
+
+[00:44:23] Troy: RSL. So whether it's RSL or the CloudFlare attempt to create a marketplace around content, monetizing it for AI or the toll bit, you know, efforts that I'm not up to speed on. You gotta have a, to have that marketplace, you have to have an ability, you have to have buyers.
+
+And, you know, Google's not a buyer yet, and they're, they're probably a third of the market more. I, I think that the idea that, you know, every time Dick Harry, you know, getting, you know, their content, being part of a, a giant toll system, I think is probably unlikely. Having said all that, I think that the, one of the biggest weaknesses with complete adoption of OpenAI is its ability to do the current right news. Like, and, and you see, if you use it a lot, you'll see that, you really long for it to be authenticated to your news sources,so that it, it picks up all that signal effortlessly and feeds it back to you.
+
+And I think that that's an unsolved part of this, this new, new service.
+
+[00:45:26] Brian: so Google is experimenting with something, I don't know if it's widely, available, but it's basically preferred news sources where people can identify their preferred news sources and then that becomes, you know, ranked higher 
+
+[00:45:40] Troy: in the generative response. 
+
+[00:45:42] Alex: Yeah, I think that the dia, the DIA browser is interesting because it's, it's, it's early days. It's just like a beta piece of software, but you have commands that you can add, and you can ask it. People create, people create commands and they put them on the marketplace. And some of them are about like, verify.
+
+So whenever you're on a news source, you have this little thing on the right and you can type, you know, slash verify or slash. You know, whatever you want to call the command. And that command is just a prompt that you can edit. And in that prompt you say, use these sources, use this bias, right? Like, and, and it's an interesting look at, at how, you know, how, how news is going to be consumed.
+
+[00:46:21] Troy: And, and people are gonna keep publishing, even if they're not compensated in links like they're used to. Like, if you're Forbes and you wanna be the kind of canonical, you know, publisher on, you know, billionaire rankings, you're still incented to, to do that, even if you're not getting all the clicks to
+
+[00:46:38] Brian: Yeah, because it's like a, you know, they're selling integrated media packages. They're about like 25% events at this point. They do 200 and like 20 events a year. I mean, that's a high octane events business.
+
+and
+
+these 
+
+franchises 
+
+[00:46:52] Alex: the, the the the text is going to be a rough business though. I, I really 
+
+feel, I mean, no, I 
+
+[00:46:57] Brian: beating up,
+
+[00:46:57] Troy: yeah. 
+
+[00:46:58] Alex: Well, it, it is though, because like, like look at, like Architectural Digest for example. I, it feels to me like right now, 97% of Architecturals Digest, you know, presence is their YouTube videos, you know, those, those house visits.
+
+Like, it, that's the, that's, you know, the, the ones that are kind of 
+
+[00:47:17] Troy: Not a great example because people didn't read it anyway. It was really about the pictures,
+
+[00:47:21] Brian: about pic. Big
+
+[00:47:22] Alex: I mean, photos are, photos are also on the way out, right? Like, it's think they're, they're just two modalities that make more sense. It's like video, which is like all, you know, absorb your attention. And then audio, which is, you know, you can, you can participate in people's lives.
+
+Yeah. People like pictures. I, I, I agree.
+
+[00:47:41] Troy: which is a perf, maybe a good segue, to the, 
+
+[00:47:44] Brian: the,
+
+Apple thing. Let's 
+
+go on with the Apple
+
+one. One quick note on that. That's why Miami is the future. 'cause Troy was very frustrated when he was here because he, he was looking for a bookstore and they, they pointed him to like a Tash, which is, I believe he called it, it's like adult picture books, right?
+
+[00:48:01] Troy: It was ridiculous. And the Ashen bookstore was, I mean, to get to a bookstore in Miami, you have to travel like seven mile.
+
+[00:48:08] Brian: Yeah. It's the future. It's the future. Words
+
+are out. 
+
+
+[00:48:12] Apple Announcement
+---
+
+[00:48:12] Brian: Let's, let's talk about Apple real quick.
+
+So they came 
+
+out, they speed runner, they came out with what, like thin phones? five blades. some
+
+[00:48:20] Alex: yeah. they came out with a new iPhone 17. They came out with a new iPhone pro, which I'm excited about. It comes in orange, but it's got like a big, like, it's got stuff that you wanted. Bigger 
+
+[00:48:31] Troy: That orange is a huge
+
+[00:48:32] Brian: It
+
+comes in orange. 
+
+[00:48:34] Alex: the orange.
+
+[00:48:34] Troy: looks like a discount item at the Arc Direct store.
+
+[00:48:37] Alex: Yeah, maybe that's, it's pro man.
+
+um, that that format of the kind of prerecorded high production value, zooming in and out is becoming really tired. I think it's just like, I, it's, it's easy to stop paying attention. And the other thing that I noticed, I, and I really felt like at this time, only in a couple of ways, apple used to be.
+
+Kind of, they, apple taught everyone how to communicate a product, which is like, Hey, this is a need, this is a need you have, you might not know it. And here's this utility that you know, that that would make your life better. and, and here's, you can do it without product. And there's very little of that because I think like, you know, like, you know, you can tap out your audience, you can tap out your customer base, but I think they've tapped out their utility.
+
+Ratio, like these phones do everything you need them to. The phone three years ago still does everything. 99% of people need them to. so that's why they, they spend a lot of talk talking about like vapor chambers, dissipating heat. Like, I don't think, I've never really felt like my phone gets too hot.
+
+Like that's gonna, like, and the pictures are slightly better and, and everything's really impressive, but nothing really, matters,including that thin phone. The only one that really I think is, and it's, it's going to be apple's like sleeper product.
+
+Sleeper hit over the next decade, I think is, is the AirPods, which now have 
+
+like, 
+
+[00:50:04] Brian: translate. Right. That's amazing.
+
+[00:50:07] Alex: rate tracking translation, that type of thing. 
+
+[00:50:09] Brian: When that nails, that's gonna be a holy shit thing when you can go to a different country and
+
+get real time translation from 
+
+[00:50:15] Troy: Nobody does that. 
+
+[00:50:17] Brian: well, nobody does it because you can't do 
+
+[00:50:19] Troy: You can wave your arms and everybody speaks English. uh, 
+
+[00:50:21] Alex: Maybe places you go to Troy,
+
+[00:50:24] Troy: okay, let me do my quick two, two second review.
+
+First of all, when is my folding phone coming? Okay, now the next. Great phone will
+
+be the air fold. The air is just a preview of the folding phone.
+
+It's gotta come. I want it and I need it soon. Alex, the headphones show hints of the future. Absolutely. Right? Like, and, and that you can track your, your, your, your vitals through the headphones. Like a, a little kind of sensor on behind your ear is remarkable. I'm getting them. But the headphones really merge with the glasses
+
+soon. The, the AirPods, they're, they're gonna merge. Like, it's, it's, it's a device that can sit without interruption on your face. The air, they're, they're going to be an integrated product
+
+[00:51:09] Alex: Well, I mean, you could see, they could see the technology in the, the air, which is incredibly thin, where like basically the whole phone, the screen and the battery is, is most of the phone, and the whole phone is in that little bump at the back. Right. so, so for sure I, I mean, it is absolutely telling. I just think that like, to me, you know, in contrast I saw Dyson.
+
+If, if anybody wants to watch it, Dyson did their little. Video about their new product. Yeah. Yeah. And he comes on stage and it's this old man and he talks about how thin his motor is and how it goes into the thing. And he's like, he's there on stage talking about the product
+
+that he knows about. And, and there was literally in the, in the Apple event is like, there was literally a line that sounded like we've extended the capabilities, to allow for better innovation or something like that.
+
+It was the most like vapid shit you've ever heard, rather than saying, look how tiny this vacuum is now you can fit it in your closet. You know, 
+
+[00:52:07] Brian: I mean, a lot of these things,
+
+like, I always just wonder whether, look, I think men's attachment, particularly to gadgets reminds me of how a lot of women are attached to shoes. It's just like the equivalent. I mean, I think your, your wife actually, when we had dinner, made a great observation that like men with geopolitics is exactly like astrology with women.
+
+Like I don't understand personally the obsession with consumer gadgets. Like I really could care less about all of this stuff, but I wonder if it's just like the end of that era of being excited about these gadgets.
+
+[00:52:38] Troy: Well, the, the use case that they lean on most heavily through the product line is fitness because I, I think that everybody wants to be, you know, stronger, better looking and, and, fitter and, and I think there's lots of practical applications of technology to fitness. I think the one area where there's a huge number of use cases, Alex, that they don't explore, and I think it's because of. You know, the, the, the sort of perils of the pr privacy implications are recording, like how
+
+a device and your phone like becomes granola on steroids
+
+and processes, processes your words, and turns them into things that you keep, that you summarize, that give you next steps. All those things are huge, huge, huge, you know, use cases.
+
+People want to turn it into a medallion on your, around your neck. And Apple, I think, is terrified of that territory because it, 
+
+[00:53:32] Brian: They made 
+
+[00:53:32] Troy: it's it's gross quite frankly. 
+
+[00:53:34] Brian: they made a big deal about privacy. They've been marketing themselves on privacy
+
+[00:53:39] Alex: Yeah, but I mean, I think, I think, I mean, we're, we're getting, I think there's a point where the utility and Apple's been good at that. I mean, they, apple managed to make Bluetooth headphones headset work. Like, do you remember what a Bluetooth, a 
+
+Bluetooth headset made? You would never have children, right?
+
+Like it was so dorky. but when the design and the utility kind of reaches a stage, people will, people will get past on the qualms. I've, I feel like, I mean, apples. Building these incredible processors in it that they have to sell as like is going to do this 2.5. Nobody thinks their iPhone is slow right now, unless you have a more than a 3-year-old iPhone.
+
+You never think your iPhone is slow. but they, they're pushing and pushing and pushing. because at some point all of this stuff can be done on device and when it can be done on device, I think it, it passes the threshold of like privacy that you feel much more 
+
+[00:54:28] Brian: Honestly, like new phones are not gonna excite regular people. Most people hate the amount of time that they're spending on their phones. Like, I just don't see, like,
+
+if, if they, 
+
+[00:54:37] Alex: in how bad it is for 
+
+[00:54:38] Brian: if they announce like some kind of humanoid robot or something, I, yes. Do the like, big, like launch. I would love to hear, I, they're gonna do a car.
+
+Amazing. But a lot of this stuff is like, like I look at and just from a, as a non gadget person, I'm like, who cares? Like,
+
+okay. incremental 
+
+[00:54:57] Alex: they're, they're playing. they're they're, they're playing the feed play. They do this event. They get all the little media shrimp to feast on this little thing, 
+
+[00:55:08] Troy: The little media shrimp. Did you hear that Brett? You're one of them.
+
+[00:55:11] Brian: no. no. It was 
+
+[00:55:12] Alex: out and, and 
+
+uh, and, and kind of feed the coral somewhere else. And then it ends up on a feed.
+
+And my, you know, like my dad who listened, I mean, my dad's probably paying more attention to tech than most people, but like, you know, he asked about the Apple event. I think people heard about the thin phone and the orange phone. You 
+
+[00:55:30] Troy: Is he? Is he a blogger?
+
+[00:55:32] Alex: my dad, no, he is not a blogger. He is an avid listener. Troy, 
+
+[00:55:36] Brian: All right.
+
+
+[00:55:36] Rupert Got What He Wanted
+---
+
+[00:55:36] Troy: we gotta round this off with a couple things.
+
+[00:55:38] Brian: okay.
+
+[00:55:40] Troy: Well, I'll, I'll do one little brief one before a good product and it won't
+
+take it, it's just, Rupert got what he wanted, as he always does,
+
+and even
+
+he see the guy sees the cube, 
+
+Rupert Murdoch sees the cube and
+
+the, the little nepo nepo children were under this kind of foolish illusion that they could do a kind of open heart liberal transman on daddy's mean conservative, you know, empire,
+
+which 
+
+was like a, 
+
+it is like a rich, it's a 
+
+[00:56:12] Alex: what I was, 
+
+[00:56:13] Troy: fantasy
+
+[00:56:14] Alex: yeah. Also like, excuse me, when you're like literally weeks away from like, you know, meeting your end, the thing you really wanna 
+
+[00:56:22] Brian: I wouldn't, I, I wouldn't be so sure of that.
+
+[00:56:24] Alex: oh, and it's true. But I would like, the thing you wanna fight for is like, I really wanna get into lawsuit with my children.
+
+So Fox News remains right wing. It's kind of like, oh, I'm so 
+
+[00:56:35] Brian: This just, this reassured me that billionaires are not like the rest of us.
+
+That they just are
+
+[00:56:41] Alex: You know, at some point I would go like, you know what? Fuck it. Let's hang up. Let's, let's all have Thanksgiving together. Eh, let's let them, you know, fuck it. 
+
+[00:56:49] Troy: Yeah, 
+
+[00:56:50] Brian: lived to like 102. He's gonna be with us for, for a while longer,
+
+and he's gonna throw money at the problem.
+
+[00:56:55] Alex: Yeah. I 
+
+[00:56:56] Brian: And he, and he, got 
+
+another victory. He got a, he got, he, he, I will give. Rupert Murdoch has, has handled Trump better than any oligarch around, I think He has not gotten sucked into the orbit.
+
+He has used his leverage, he's used the Wall Street Journal in very,strategic ways. Either the editorial board or let's face it, the news reporting on Trump has been tough. And this week we saw the, you know, he's in, Trump has sued the Journal and Rupert personally for defamation over their story about the Epstein birthday book drawing.
+
+And that surfaced, this week and sure backs up. the journal looks, looks good for him on that front too.
+
+[00:57:40] Troy: Yeah.
+
+[00:57:41] Alex: It's bad drawing.
+
+[00:57:42] Brian: The bad part, the fly in the ointment is dt. Is is RFK,is really going through with wanting to, curtail if not outright ban direct to consumer pharmaceutical advertising.
+
+In my time watching Fox News and Brett Bear, at my parents, that's like a good two thirds of their ads, so
+
+[00:58:02] Troy: Right.
+
+
+[00:58:03] Good Product
+---
+
+​
+
+[00:58:06] Troy: Well, we'll quickly move to Good Pro. I have a little thing that touched me. You know, there's this, this company, Alex, I think you like the mischief 
+
+M-S-C-H-F. Right? They're like what Mr. Beast would be if he was actually cool. Um, and they, they do all kinds of great shit. Mo, you know,
+
+[00:58:26] Brian: they're an agency now too.
+
+[00:58:27] Troy: They, you know, hit a original Picasso in hundreds of copies of this thing called the Real Copy of P by Public Picasso. you know, they have that, that thing called the Museum of Forgeries. They've turned a, you know, one of those stabilizing boots into a fashion i, this fun goofy shit. This week they made, or last week, they partnered with Hot Wheels to do something called Not Wheels, which was a Hot Wheels car that looked like something like an early nineties, you know, Japanese import that had, that was all banged up, had three different wheels, and, you know, it was dented and rusted and kind of amateurly repaired, and it sold out in like three seconds.
+
+So it was like a kind of, you know, destroyed little hot wheels. And it was just a, you know, like a really sweet, beautiful idea. These guys are really great. They're really
+
+[00:59:20] Alex: I mean, I think it's way, it's way more interesting than, what's the other brand that does all these drops? Like people your age go there. They wait in line to get sneakers. It's the red box 
+
+logo in White 
+
+[00:59:30] Troy: Supreme
+
+[00:59:31] Alex: Supreme. Yeah, yeah, yeah.
+
+Uh, 
+
+[00:59:33] Troy: my age, old men go 
+
+[00:59:36] Brian: private
+
+equity people. I
+
+[00:59:37] Troy: Yeah. 
+
+[00:59:38] Alex: old, old, yeah.
+
+[00:59:40] Brian: Supreme is in Supreme is in its private equity phase of life. There's
+
+the, the harvesting is on, big time. Kit is in the same private equity phase of its existence.
+
+Every brand must must pass 
+
+
+[00:59:51] Good Conversations
+---
+
+[00:59:51] Troy: So Brian, are we
+
+making good conversation a new segment? Is that a proposal?
+
+[00:59:56] Brian: I was thinking about it. 
+
+I just wanted to highlight a conversation that I came across that was good. It was, Derek Thompson, had it with, this neurologist and author Suzanne O'Sullivan. she's just written a book, age of Diagnosis, and it makes the argument that, you know, when we talk about chronic disease, we're actually stretching the definitions of conditions like say, A DHD, autism.
+
+'cause we make them all on a spectrum. And we live at a time where people wanna label things that many people from many generations have gone through. And that this ends up diverting resources from the more acute and serious cases and leads people to using, these medical diagnoses as some kind of like label or even cover, honestly.
+
+for 
+
+[01:00:42] Troy: It leads to my daughter mainlining Adderall.
+
+[01:00:45] Brian: Yeah. So, or sometimes it, it gets you, it gets you access to an Adderall, prescription. it was a, it was a very good conversation. I think, you know, Derek is really great at these 'cause he's genuinely interested in the subject matter he covers. And I think when we talk about media now, one of the great things about it is that it rewards energy.
+
+And if you bring energy to a, to a subject, I think, it does so much better. Whereas traditional journalism often, you know, you're told to be, both a generalist and then removed from the subject matter and, and people end up responding to energy. and this was a really good conversation. Recommend everyone check it 
+
+[01:01:19] Troy: Well, 
+
+[01:01:19] Brian: Alex is pissed because he, he adored his A DHD, Well, it's part of, it's part of this, it is part of the identity. It, it becomes an identity. 'cause we, we've lost religion and so 
+
+[01:01:29] Troy: Yeah. And also like a DH, ADHD and autism are like, code for I'm smart, but low uh, I'm well. Pretty high functioning. Troy. I.
+
+[01:01:39] Brian: I have severe procrastination.
+
+Like nobody, nobody, 
+
+gives 
+
+[01:01:42] Alex: I think, I think, it's, it's, it's true, but like with everything, it's, it's multifaceted. I think part of it is also that we've done a good job as a society to become more comfortable to talk about mental health and things that, you know, that bother us.
+
+And at, at some point that's good too. You know, like people talk about depression and anxiety more than they did, and they do more shit about it. It used to be you just go to the bar and get drunk and punch a guy.
+
+[01:02:06] Troy: Sounds great.
+
+[01:02:08] Alex: Yeah.
+
+[01:02:09] Brian: Anyway, it is a good conversation 'cause it is more nuanced, that, that than that. It's not just making fun of how everyone has peanut allergies now. I mean, like, I would've suggest, I would've thought that there would've been multiple kids dead in the school yard. 'cause nobody asked if anyone had a peanut allergy at St.
+
+Genevieve's. but somehow the kids all survived. check it out. Derek 
+
+Thompson. Plain English. Very good. 
+
+
+[01:02:31] Outro
+---
+
+[01:02:32] Alex: This was also a good conversation. Great episode. This.
+
+[01:02:34] Brian: good episode. 
+
+[01:02:35] Alex: and subscribe.
+
+[01:02:36] Brian: Like and subscribe. See you
+
+next 
+
+[01:02:38] Alex: I guess. Get us on the fucking feeds. We're all part of this media
+
+[01:02:44] Troy: Singularity,
+
+[01:02:45] Alex: soup. Yeah, 
+
+singularity. All 
+
+[01:02:47] Brian: right. See you guys. 
+
+[01:02:48] Alex: Okay. 
+
+Bye. 
+

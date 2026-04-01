@@ -1,0 +1,1057 @@
+S2E61
+===
+
+
+
+
+[00:00:00] Cold open
+---
+
+[00:00:00] Alex: Well,
+
+we should ask OpenAI now that it's running again. 
+
+[00:00:03] Brian: never went down.
+
+[00:00:05] Troy: Oh my god, it was almost , the end of the world. At least that's how the, media treated it.
+
+My father in law, who I'm traveling with, didn't know what was going
+
+on. And then when I told him, he's like, who cares?
+
+[00:00:16] Brian: this is gonna trigger Alex. The best, tweet was, someone was talking about explaining it to their spouse, and the spouse was like, oh, sounds like nerd drama.
+
+[00:00:25] Alex: It was, it was very much nerd drama. 
+
+
+[00:00:27] intro
+---
+
+[00:00:50] Brian: I wrote a little bit about the narrative stuff and I've never lived in the San Francisco Silicon Valley area. And unfortunately we're going to have to traffic in generalizations because that's just how life works.
+
+Operates. Otherwise, we couldn't 
+
+talk about the economy if we didn't traffic and generalization. we literally could not talk about 
+
+anything 
+
+[00:01:10] Alex: just realized something. Is that how everyone in the media thinks then? 
+
+[00:01:14] Brian: Though, 
+
+immediately, That's the generalization. 
+
+[00:01:16] Alex: at the table
+
+at you're the master, you know, like in Game of Thrones There's a master of coin. You're the master of media 
+
+[00:01:22] Brian: Me? No, I'm not. I'm not. Although, I did see That, CZ, had to, like, plead guilty,
+
+[00:01:27] Troy: Nobody knows what you mean by CZ, the
+
+[00:01:31] Brian: oh, I don't know how to pronounce his name, Chaozhang, 
+
+[00:01:34] Troy: the CEO of 
+
+Binance, 
+
+needless to say. 
+
+[00:01:36] Alex: who was involved with the 
+
+FTX,
+
+[00:01:38] Brian: Yeah, the CEO of Binance, pled guilty. 
+
+Also, I think he made the, the Forbes cover list, right? It's the same as,Oh, they all do. it's like a steady
+
+line, of, people...
+
+[00:01:48] Alex: I mean, that should just be your mugshot at this stage.
+
+[00:01:51] Brian: Troy's gonna
+
+[00:01:51] Alex: You know, it was like 
+
+[00:01:52] Brian: top rope. This Forbes slander will not 
+
+[00:01:55] Alex: Elizabeth Holmes.
+
+[00:01:58] Troy: I think your, , your boss man was on the cover too at one point,
+
+Alex. 
+
+[00:02:02] Alex: it's gonna be telling.
+
+[00:02:03] Brian: So okay, so this began on Friday, I believe, Friday afternoon, it was a perfect timing. The news, shock news, came that Sam Altman was fired as CEO, and the notes, certainly I know in our text, it sort of pointed towards. It's just bad stuff, fraud, scandal, he wasn't entirely candid. And then this all played out over Twitter, really, which I found remarkable in that for all the obsession.
+
+That quote unquote Silicon Valley has with the media. The media was complete bit players in all of this. For instance, it turned out that it was just like misalignment with the board and Sam Altman's many different, side activities. It was a regular power struggle. And the media was totally MIA, totally missing.
+
+Literally asleep at the switch, what is the job of quote unquote the media if it's not to interrogate these things that were being done in the open, much less behind closed doors. So, so Silicon Valley has successfully defanged the media and so we're left with the information space and
+
+[00:03:09] Troy: was it just the media though? I mean, just pause for one second
+
+because... Microsoft seemingly made a 10 billion commitment to open AI, perhaps not questioning the, kind of conflicting objectives in their, in their governance structure between the nonprofit holding company and the for profit subsidiary, right?
+
+So, knowing that a decision could be made at the top of that, that pyramid that would basically neuter Microsoft Office Word Microsoft Word 97 2003 Document MSWordDoc Word. Document. 8 their investment, right? That was one. The second story, perhaps that was missed by the media, Brian, is that if you read the charter from Open AI, their mission, it's, pretty aspirational around protecting the interests of humanity from, this, Amazing new technology.
+
+And,maybe that ideal connected to the commercialization of that technology, maybe that didn't get enough scrutiny.
+
+[00:04:09] Brian: But isn't it strange, if you really think about it, looking back, that these things are all in the open, right? the report that Sam Altman was, raising money, he's raising billions of dollars in the Gulf, this is not done secretly, right? the Johnny Ive project to build its own AI device, et cetera, et cetera.
+
+it's interesting to me that none of, that this came as like a bombshell, but leave that aside. A lot of people clearly were. asleep at the switch here on this and what I'm left out is like there was so much immaturity and lack of seriousness and all of this that I think that's gonna be the long term impact of it because things are not all that different.
+
+I don't think it's gonna. It's gonna be a speed bump in the development of this technology. But anytime power centers emerged in society, we have regulations, we have systems, we have apparatuses that hold them in check. That's how societies operate. Okay, and this betrayed to
+
+me. 
+
+[00:05:01] Troy: apparatuses or apparatus,
+
+[00:05:03] Brian: apparati. apparati.this to me, betrayed like, Soup to nuts, a total lack of seriousness in this field.
+
+And I wonder what I want to
+
+interrogate is 
+
+why? 
+
+[00:05:14] Troy: Can you explain that to me? I don't know what you mean by lack of 
+
+seriousness. 
+
+[00:05:18] Brian: Altman takes in these, we're told on the one hand, and I think it's very popular nowadays to say that we can hold two opposing things 
+
+in the mind at the same time. Yeah, it's like, it's like a meme. So we're supposed to hold one thing that this is going to change society and humanity.
+
+Right? I believe, Alex, you tell us the, the spaceship is over the White House. Correct?
+
+[00:05:39] Alex: That is correct.
+
+[00:05:41] Troy: He has that. 
+
+[00:05:41] Brian: Okay. That is correct. So let's just assume 
+
+that 
+
+this is
+
+true. Let's assume that this is not Web 3 all over again, because I heard this stuff. Troy tried to peddle this with crypto. You're, you're good because my, my Bitcoin is back above water, but like the Ethereum I want to talk to you about.
+
+but we were told this about lots of other things that didn't pan out, but leave that aside. Let's just assume that this is going to change society and humanity. Now, 
+
+[00:06:03] Troy: I don't think you have to, by the way, change your thesis. You might have to change your horizon.
+
+[00:06:09] Brian: Okay, yeah, of course. So, we're also told that, technology clearly is one of the Biggest power centers of society right now other power centers use the military industrial complex finance industry Pharma, we we regulate these industries, but we're not supposed to regulate this industry because it's It's different or special or whatever, innovation, entrepreneur y stuff, okay.
+
+How are we to restrain the development of this if we assume that it is going to affect society in such a profound way that its proponents, who by the way are very powerful people, they're not nerds anymore that have been stuffed into lockers. They're very powerful people. They've rubbed 
+
+shoulders with prime 
+
+[00:06:59] Alex: Even worse, they used to be those nerds, so now they've got a grudge.
+
+[00:07:03] Brian: but the reality is Sam Altman is not like a nerd. We don't even really know what happened at Y Combinator and why he left there. That's why I'm saying like none of this stuff has been interrogated. So I'm just wondering, one, Alex, what is and if there is a culture of Silicon Valley? Because there seems to be like...
+
+A deep immaturity that is baked into this, and I know there's many different types of people in every society and group, including even the media. What goes into this? Because from the outside, I'm just like being very honest about this, it seems a very strange group of people that have very strange belief systems, and I think that we should interrogate those. Am I wrong?
+
+[00:07:49] Alex: no, 
+
+[00:07:50] Troy: you're not 
+
+[00:07:50] Alex: not.
+
+[00:07:51] Troy: just before we get Alex to comment. I think what we have to do is remember that everything in the world can be traced back to high school and Sam Altman moved between the theater subculture, the theater group in high school, maybe, or certainly the nerd group, right?
+
+Maybe the chess club, blah, blah, blah. And. in high school, those people, maybe among themselves, they thought, we're going to go to Ivy leagues and own the world, but among the rest of the, more important at the time, anyway, subcultures in high school, they were not seen as players.
+
+And then they become, There's very much an elite vibe in San Francisco where we're the smart ones that are, Inventing the future. once they're emboldened, they're no longer part of that subculture that used to be made fun of. Once they're emboldened, they morph into a very different creature. 
+
+I don't know, Alex, do
+
+you 
+
+[00:08:48] Brian: So you lived there, but you lived there for how
+
+[00:08:49] Troy: I lived there for six years and I spent like a good 10 years there all the time. But what's interesting about Alex, Alex's experience is that he came from like Smurf land, Crete. 
+
+And. 
+
+[00:09:03] Brian: You've said this a few times.
+
+[00:09:05] Troy: it's part of my ongoing joke is very tiring for Alex, but he came from a place where they did all the same things and they were smart kids and designers and technologists, but they were sort of living in a place of irrelevancy. And then he moved to the center of it all, but
+
+[00:09:23] Brian: If you're making Farmville games, it's one thing. If you're changing society and humanity, and you wanna, like, drop the immaturity. Drop the super as an adjective. Just drop it. Like,already went through
+
+the hoodie shit. Drop 
+
+[00:09:37] Troy: let's, get the perspective from
+
+Europe. 
+
+[00:09:39] Brian: from Europe, vaguely from somewhere
+
+in Europe. 
+
+[00:09:42] Alex: there's a lot there. I mean, 
+
+[00:09:44] Brian: Explain this
+
+group 
+
+[00:09:45] Alex: well, but I think what's like under the undercurrent of this narrative is that this is like some sort of revenge of the nerd situation. The, folks that like have been beaten down, finally are in power and now they behave like a jerk.
+
+[00:10:02] Troy: that an official description?
+
+Neurodivergent? 
+
+[00:10:05] Alex: it was okay to say six months ago. I don't know if it's still okay to say now, but it's definitely 
+
+yeah, because I think I'm technically, I, I might qualify because of my ADHD and, overall sense of superiority. I, look. 
+
+[00:10:20] Brian: get distracted 
+
+easily. Can I? Can I 
+
+be? 
+
+[00:10:22] Alex: for sure, 
+
+[00:10:23] Brian: Oh, good.
+
+[00:10:24] Alex: but these different industries attract different people, right?
+
+Like you can't say that Hollywood or the music industry is full of folks that are very serious people. I think maybe the more important question is how 
+
+[00:10:38] Brian: But they're making music. Dude, it's like different. Do you know what I mean? Like, you can, you can wreck, you can wreck hotel rooms if you're in the music
+
+industry. 
+
+[00:10:46] Alex: Right. I guess what I'm trying to say. I'm just trying to the the finance industry I don't know if you've ever been to one of these parties Brian, but this is not a bunch of serious people acting seriously, right? 
+
+[00:10:57] Troy: Oh, yes.
+
+[00:10:58] Brian: I don't know, like, would this stuff have happened with JPMorgan Chase?
+
+do you really believe 
+
+that? 
+
+you think Jamie, Diamond would stop and take, his, selfie with the guest badge? These are not, this is not, 
+
+[00:11:10] Alex: oh watch watch Wolf of Wall 
+
+Street, But here's a here's the point. I'm trying to make Different, different industries will attract different types of individuals, different types of brains and, and people that carry different type of baggage, right?
+
+the thing that we're dealing with here, and which is why I'm actually pretty pro regulation and making sure that there is some sort of Supervising power on top of this stuff is that we're talking about companies who grow so quickly. And when you grow so quickly, the structures in place and the environment that you're building and the relationships that happen between that, I joined Airbnb, that were 35 people on my team.
+
+I left Airbnb, there were 600 people on my team. At some point I had this switch where there were so many people that I didn't even, couldn't even remember everyone's name. That was like kind of a, but it happened. So quickly, it didn't happen over 20 years, 30 years. And so when you have Microsoft coming in and looking like the adult, I think what's happening is that these guys have gone through all that.
+
+You know, those ups and downs and the weird, the weirdness, and they've managed to shed it and now function like, a mature organization, but a lot of these tech companies have grown so much faster than anything we've ever seen before. And to expect people to hold on to that and have all the.
+
+Foresight to know exactly how to structure things and behave and how the board is going to behave. It's kind of wild because when you're in it, you have a hundred thousand things coming at you. At the same time, you're quadrupling your team, overnight you're dealing with regulators. You're dealing with a service crashing, like you're dealing with geopolitical stuff.
+
+You're dealing with election, like it's, Yeah, yeah, it's kind of it gets it gets weird. But also, I don't want to that to be an excuse for a lot of people not acting seriously. And I think when people are put into a lot of stress, 
+
+they this happens. 
+
+[00:13:00] Troy: maybe I would challenge that. I'm reading that. I was reading the book on the plane yesterday called The Fund, by Rob Copeland. And it's about Ray Dalio and the story of, Bridgewater. and Ray you know, according to your construct, he is not a serious person.
+
+He is a weirdo. And the way that the company was managed and the way that he tried to create this weird kind of psychological management framework that abused the staff and, kind of,
+
+[00:13:33] Brian: for the course. That's just 
+
+power 
+
+stuff, right? 
+
+[00:13:36] Troy: kind of investing approach that work. I mean, and they were managing 167 billion this 
+
+hedge fund. And so don't think that
+
+You know, 
+
+[00:13:47] Brian: all weird in our own ways. Okay. 
+
+[00:13:49] Troy: well, is it we're all weird in our own ways or that, we live in a, this kind of accelerated culture and certain things become the current story. And now, like we feed the current story into this kind of crazy media complex that exists in America and something just becomes the narrative for the weekend.
+
+Right? Like if, if we didn't obsess about what happened to Sam, I mean, it's an important technology, important company and all of that, but like it got thrust into our consciousness because it started because we're all like wired up, as human beings and it became this kind of crazy, irresistible narrative for a few days and now it will evaporate
+
+[00:14:32] Brian: yeah, I wonder if it will.
+
+Maybe. I don't 
+
+[00:14:36] Alex: look, I think maybe it, this is very likely true, but maybe to this stuff a little bit, it was a massive, massively valuated company that just had their supposedly app store moment, where everything was rosy. And then this, this board just fires the CEO.
+
+So I think to me, that's a story more worth of attention. compared to what happens to, like,I don't know,you know, Kanye divorces the, Kardashians or whatever. I understand why people were interested in that story. It was kind of a wild ride. and it was also very, very, very, very silly and funny because, it, it reminded people of succession all of a sudden there's like hearts happening on tweets.
+
+And the guy that was like, 
+
+but part of the rebellion, 
+
+[00:15:19] Brian: The hearts on tweets. 
+
+Like, these people are claiming that they're going to, change humanity, and they're gathering together and saying, we're gonna retweet
+
+with hearts. 
+
+the fuck?
+
+[00:15:32] Troy: I'm coming around, Brian. You're kind of right about
+
+this. 
+
+So, 
+
+[00:15:36] Alex: also, also, wait, Troy, Troy, one more
+
+thing. let's remember part of this conversation has been people agreeing or disagreeing whether or not AGI will destroy humanity. Like, it's not like, you know, like, 
+
+[00:15:48] Brian: have heart tweets? We're communicating through 
+
+heart 
+
+[00:15:51] Alex: There's a, moment in Oppenheimer where he gets fired and then people start tweeting hearts and then he comes back and he leaves again.
+
+And, and, and you find out that the guy that kicked him out actually changed his mind. Like that would be incredible. 
+
+[00:16:02] Troy: oh yeah, the guy that changes his mind. He's like, wait, you're going to destroy the world. Nah, actually I love what we're building.
+
+Oh, there's a child popping up from behind you. Where's Waldo? Okay, but Brian, so not only are we trying to put , the world, seemingly the world's most consequential technologies into like, 
+
+[00:16:25] Brian: Junior high cafeteria?
+
+[00:16:27] Troy: yeah, into this kind of like high school narrative, but the leaders in Silicon Valley are different. Like financial bros go to the club and they play golf and maybe they play squash or whatever.
+
+The bros of Silicon Valley, talk about singularity and go to 
+
+[00:16:42] Brian: Yeah. 
+
+[00:16:43] Troy: They're different.
+
+[00:16:44] Brian: So my question is, in all seriousness, or as much seriousness as one can treat this stuff with, shouldn't that be interrogated more? Because it just seems like, There is a broad set of, of beliefs and habits, and biases that exist within different groups and there are particular ones with this group, like for instance, it's very clear that there is a in ground belief that rules don't necessarily apply to people who are innovating
+
+put it in quotes if you want, right? time and again, we've seen that the rules that exist, people say, Nah, not for this. Uber did it. Uber wouldn't exist without ignoring the rules. Airbnb would not have existed without ignoring the rules. And we see it again and again, and then we see it run into problems.
+
+When it's not just talking about starting standing up an unregulated taxi or hotel service when we when it starts to go into regulated and serious industries I do believe that there is a straight line between the Elizabeth Holmes stuff, the FTX stuff, the CZ stuff, and this. There is. There
+
+is
+
+a, 
+
+a 
+
+general, 
+
+[00:17:54] Alex: cover. 
+
+[00:17:55] Brian: uh, well, that's part of, no, no, no, in all seriousness, that is absolutely part of it.
+
+Part of the entire thing, and the reason I wrote about narratives is In, over the years, I've always been like, New York, San Francisco, the, the media is New York, okay, in this, very basic. And then San Francisco, Silicon Valley is tech, okay? And there's always, there's just, they're totally different value systems, seemingly.
+
+And I don't think that we as a society have done enough to really interrogate, one, who are these people? Two, what do they want? And let's take them literally and seriously, because I don't know what the alternatives are, even though they're spending their time with the heart emojis and stuff like this.
+
+Because this isn't developing the FarmVille games, if we are to, again, to take them literally and seriously about them wanting to change humanity. So shouldn't we really understand, who we're dealing with?
+
+Seems to 
+
+be,
+
+like, 
+
+obvious. 
+
+[00:18:52] Alex: there are two things here. Isn't this idea of kind of trailblazers, rule breakers, part of American capitalism ? That's number one. And two, aren't these people already scrutinized? Like Zuckerberg, Elon Musk. They're all, but they're all constantly in the press being talked about. More than celebrities in some cases.
+
+[00:19:11] Troy: Yeah, I'm 
+
+trying to figure out what you mean by scrutinizing, Brian.
+
+[00:19:13] Brian: okay. So here's the thing when there's power centers Okay, we restrain those power centers in various ways one is very straightforward. It's government regulation now We're told we can't really have a lot of government regulation in this area for various reasons We can't treat it like the pharmaceutical industry.
+
+We can't treat it like the military industrial complex We can't treat it like the financial services
+
+industry
+
+and on and on and 
+
+on 
+
+you could not you have you have more rules generally speaking I do not believe that the, the vibe in Silicon Valley is pro government regulation. It might be in your small patch, but I I
+
+think 
+
+that's safe 
+
+to 
+
+say. 
+
+[00:19:49] Alex: no industry willingly wants to be regulated. All right. But I think there are a lot of people, right? I can't think of what really like the auto industry or when, people would get,
+
+[00:19:59] Brian: No, everyone chafes at it,
+
+everyone 
+
+chafes 
+
+at 
+
+it for 
+
+sure. But like,
+
+most, mature industries recognize that, you know, in order for them to exist, they need to have rules 
+
+of 
+
+the road 
+
+set. 
+
+
+
+they might chafe at how they're
+
+applied, 
+
+but... 
+
+[00:20:10] Alex: I mean, I think the scrutiny should be towards how the government is regulating these things. The fact that, Elon can lose his fucking mind and still have government. Military contracts is is worrying the fact that we're, letting some of these technologies run rampant is worrying like there's a lot of this stuff that we need to get on top of I think that's the stuff that we should scrutinize the fact that there are weird people at the top of multimillion or billion dollar companies, acting a certain way.
+
+I don't know what that data 
+
+acting. 
+
+[00:20:38] Brian: was that? Of
+
+weird? 
+
+Or of the air
+
+[00:20:41] Troy: That's happened to me before. By the way, it's worth telling the audience that 
+
+you 
+
+triggered 
+
+some, 
+
+[00:20:47] Brian: Balloons. 
+
+[00:20:48] Troy: it's happened to me on Zoom calls. 
+
+Oh, 
+
+[00:20:50] Brian: Oh, there it
+
+is. It's 
+
+the air 
+
+quotes. 
+
+[00:20:52] Alex: I did air quotes and, and I had confetti and balloons pop up, but, the fact that there are weird people, weird, powerful people, billionaires at the top of these companies that don't want to get regulated is not a new thing, You know, I went to Hearst Castle, like, I watched The Aviator, none of these guys wanted any government, at some point you make enough money that you turn into a libertarian, you build a compound, and you try to immortalize yourself, like it, 
+
+[00:21:15] Brian: Get the guns. So wait, so, so do you think it like doesn't matter necessarily? I guess one, like, is there broadly speaking a Silicon Valley culture that informs the products that are going to be built that will reorient, again, we're going to assume that these
+
+things are going to 
+
+change 
+
+society 
+
+and 
+
+humanity. 
+
+I 
+
+don't 
+
+necessarily think that's necessarily true, 
+
+[00:21:39] Alex: it might seem counter to my kind of, Socialist background, but even though I'm pro regulation, I'm also happy that Microsoft is deeply integrated into this open AI stuff, because, there's, I don't like using this adult in a room thing, but like having Microsoft around to just to stop fucking around, can be pretty important.
+
+And also not only that Microsoft is going to be more scrutinized and regulated than these other companies, you know, so, so I don't 
+
+[00:22:06] Brian: well, that's why I think and again, I'm, I'm trafficking generalizations, but like Silicon Valley, you know, swatting away, quote unquote, the media. I mean, that's like easy, right? this is an industry and decline. It's really not a fair fight and it's like playing pat a cake, but there's serious people who exist in Washington They're at they are serious people and they're smart.
+
+They're smarter than journalists Like say what you want about people in Washington. they study they're a students. They're not B students and I would imagine looking at this shit show Is just going to accelerate the push to rein in whatever is coming down the pike with AI.
+
+I think it will have an impact because I think this entire saga, when people talk about winners and losers, I think the tech industry overall and their reputation is a giant loser. And it comes on top of the Silicon Valley
+
+Bank 
+
+[00:22:59] Troy: you know, I think we would be remiss not to petition this. As something that, flowered at the intersection of very, very, kind of profound changes in our world, right? Meaning we have, technology that we really, no one really knows what the implications of it are.
+
+There's people that think it's catastrophic, people that think it's going to create, Basic income and and bliss. they're at the same time. We have I think we all feel a sense of kind of political and social instability broadly. And to me, there's a culture of anxiety in America.
+
+And I think it's bigger than America, to be honest with you.
+
+And, I mean, it has to do with, obviously, with wars and, but it's, it's bigger than that. And then we have this kind of, life is media, construct where, it's modern media. It's social media that has created this kind of reality where we all feel like everything is instantly political.
+
+We all have to pick sides. Every kind of news topic becomes. part of our identity system and, the current character kind of explodes over the weekend and we obsess over it. And so, like, these things together create this kind of, It's almost like cultural nausea. Like I just want to go live on a farm.
+
+Like, I don't 
+
+care. 
+
+[00:24:26] Alex: Hey, that's what I've been doing.
+
+[00:24:29] Troy: No, but it's like, Oh, you guys sent a text yesterday. Oh, guess what? Sam Altman's back at open AI. It's like, no shit. Like we knew this was going to happen.
+
+[00:24:40] Brian: like the guy was ever 
+
+going to go be a middle manager at Microsoft. I'm like, what is the point of trying to change the, the, like humanity and society, if you've got to be like a middle manager at Microsoft, I mean, fuck,
+
+[00:24:52] Troy: But then the speculation was like, crazy. He's going to be the next CEO of Microsoft. It's just like nutty stuff.
+
+[00:24:58] Brian: but it is funny how everyone like knows now that they need to feed the content machine. I shared with you some, I don't know, some person from open AI who. Benioff haddipped into his DMs. And instead of being like, oh, Mark Benioff is trying torecruit me. he screenshotted it and is like, what did he say?
+
+It was like one of those other immature 
+
+things. Oh, we are so going to make it we're so back. 
+
+[00:25:21] Alex: Yeah, I mean, that was that was distasteful. I don't understand 
+
+[00:25:25] Brian: it just doesn't seem like a coincidence. That's what I'm saying. What's in the water,
+
+Alex, can you 
+
+please 
+
+break it down 
+
+for 
+
+me?
+
+what is going on? Is it the 
+
+drugs? Is it the orgies? Like, 
+
+[00:25:35] Alex: not that interesting. But is 
+
+it it's the centers of money and power. You know, a tool that a lot of people use. And there is drama there. Like, I don't understand you guys. Isn't that what you guys have been, that's like your career is like finding human drama and talking about it and then, you know, discussing it at a tasteful dinner or webinar.
+
+And now, like, I don't it's like you're too old 
+
+media guys going like, you know, what's really 
+
+annoying 
+
+about culture today is that something big happens and everybody talks about it. I mean, it's like, who gives a shit if it's Paris Hilton or Sam Altman. It's just a big story.
+
+Like we just want, stories and the more human they are, the better. 
+
+[00:26:12] Brian: I agree with. 
+
+[00:26:13] Alex: telling me it's not 
+
+interesting that there's a board that's in conflict, nearly to a religious 
+
+extent and that one of the founder tries to 
+
+[00:26:19] Brian: why I was like, glued to it. 
+
+[00:26:21] Alex: should be glued to that.
+
+If you're into tech, it's kind of fun. It's turns 
+
+[00:26:25] Brian: Well, that's the thing, it'sfocus on the things that aren't going to change. And people's addiction to narrative and storytelling is never, ever, ever going to change. I don't care what the tech people come up with next. It's not going to change.
+
+We've been this 
+
+way since we were 
+
+in the 
+
+caves.
+
+We'll 
+
+be this 
+
+way until the tech people wipe away 
+
+humanity. 
+
+[00:26:43] Alex: you
+
+know, you tell gossip. To someone put into an MRI machine and the brain lights up because we fucking love it because gossip is has some sort of primordial It hits some sort of pleasure centers in our brain and this is the same thing and the bigger the gossip the better it feels like I was lucky enough or unlucky enough to get like firsthand information from some of the stuff that was going on And it was kind of, you know, exciting.
+
+I was on the side that was hoping that OpenAI would stabilize and that Altman would,you know, get back to, to the job. But I don't think there's any, anything specifically weird there, except for the fact that yes, yes, these companies often run. And, and, and especially kind of in the more technical fields.
+
+by people who, would be considered as outsiders. That's one. Two, they grow really fast and people get a lot thrown at them. And I don't think, whether it's fame or, or that type of money or that type of power and influence, you get too much of it too quickly. You're going to go crazy. Look how many child stars, like, don't make it.
+
+Like, it's 
+
+just, 
+
+[00:27:45] Brian: Bonaducci. I
+
+hope 
+
+Sam Altman does 
+
+not 
+
+become like 
+
+Danny 
+
+[00:27:48] Alex: right. I mean, I, and actually, actually one of, one of the things that was going on is that Sam Altman is seen as one of that kind of the, more reasonable kind of down the middle, people, and, and probably a good person to lead the effort, versus somebody who's, either too much of an accelerationist or too much of somebody who's like a doomer, on the AI stuff. I think this was an interesting 
+
+[00:28:09] Brian: So that's like an interesting, you brought up the, the, the, I'm very focused on this. E, is it EAC? How am I saying this? I don't know. I only read 
+
+it on 
+
+Twitter. 
+
+Thankfully, 
+
+nobody around me discusses this. Yeah, 
+
+[00:28:20] Alex: that stuff 
+
+is 
+
+weird. 
+
+[00:28:21] Brian: there's EAC and then there's D cell and the D cells are the media, 
+
+the 
+
+woke 
+
+wokists, 
+
+the 
+
+[00:28:30] Alex: well, no, actually the, a lot of these, a lot of D cells
+
+are including. one of the guys who,started us all off at, Google and, and left in protest, people who basically want to make things go slower because they're scared about where this is going.
+
+And they're worried about, they're worried about corporations owning technology that is so powerful. Because if you think about, a brain that is. essentially has unlimited power, never needs to sleep and can come up with all sorts of, crazy concoctions and that's kind of scary.
+
+And then there's people who are, like Andreessen, who are accelerationists, who say like, Get out of our fucking way, we know what we're doing, the future is built by people like us. and I think both, both those sides are filled with idiots. Being an extremist on either side is never an intelligent position to be in, right? I think there's subtlety there that gets 
+
+completely lost. 
+
+[00:29:21] Brian: divergence within quote unquote Silicon Valley in that it's not just, you can be deeply embedded with technology. You can even be rich, right? cause a lot of times it's waved around that people who try to restrain Silicon Valley are just jealous cause they're not rich.
+
+Or even if they are rich, they're not as rich, which is weird. It's like. Okay. Well, what's the level of your bank account, where your opinion matters, I don't know, but, with this, you can be within the technology to deeply understand the technology also have all of the accoutrements that,ascribe value to you within that system, but you can also be for
+
+restraint. 
+
+Correct. 
+
+[00:29:58] Alex: Yeah, I think you 
+
+can. 
+
+[00:29:59] Brian: Okay. So it 
+
+is 
+
+possible. 
+
+[00:30:01] Alex: mean, I think a lot 
+
+of 
+
+people are. Some people are even for... Pretty selfish reasons because they see their entire, you know, we talked about interfaces, but there are people who, make their money off interfaces who say like, Whoa, Whoa, Whoa. This could completely upend our business.
+
+I mean, every media person is, is worried about it. digital artists 
+
+are worried about it, you know? Oh, sure. 
+
+There are some people who woke 
+
+up. And are terrified by it because they plot a line from where we are today to where we'll be in the future. And they, they see some pretty, dangerous conditions ahead.
+
+So 
+
+[00:30:33] Brian: Hmm. 
+
+[00:30:33] Alex: look, there's a lot of different opinions here, which is why I think there was in the tech area, there was a. a lot of support for Altman because he is generally quite liked and, he was seen as a reasonable person to lead these efforts because I think the, both kind of extremes are not, the norm if you ask 
+
+normal 
+
+[00:30:50] Troy: Yeah, 
+
+another thing that bothers me about all of this and it's, it has to do with why I think technology and silicon value is unique, Brian, and it has to do with leverage the leverage of software in the modern world. and I've been thinking about this a little bit because, the downstream effects of a director at Google making a decision.
+
+can literally impact the lives of thousands of people and in many cases wipe out entire categories of media and so what happens is It's all justified, or I think it's mostly justified under the sort of banner of capitalism and optimizing an interface to the needs of a customer, right? So getting your weather or your flight times or your shopping information inside of the Google search response is technically probably less friction filled and better, right?
+
+But in the old days, moving your company. horizontally or vertically in a way that wiped out an entire category was difficult because it wasn't software. It didn't have that, ability to be sort of deployed and optimized instantly against millions, if not billions of people, and that instantly shifts value chains in the favor of of the hegemonic platform power.
+
+And so, software technology is kind of by definition of bites. The virtue of how it works is massively leveraged. And so what it means is there's a massive power imbalance
+
+[00:32:27] Brian: Yeah. 
+
+[00:32:28] Troy: I can't tell you how many hours I fucking wasted for years worrying about some random decision or speculating on the decision of someone in the bowels of Google or Facebook and how that might change my ability to
+
+deliver a P&L tomorrow. 
+
+[00:32:46] Alex: and you know what, when you're, when you're in those bowels,
+
+I was, because I had, Lots of conversations with people in Facebook and Google. You kind of lose track of the fact that you're going to run an experiment and it's going to show up in front of 50 million people. Because that's a subset.
+
+you know, you're going to drop an experiment or you're going to put something out there and like, 10, 20 30 50 million people are going to see it. 
+
+[00:33:07] Troy: You can't just open, 10,000 Chipotles.
+
+You can't do that 
+
+in 
+
+other 
+
+industries, 
+
+[00:33:12] Alex: And this is happening like at, an individual level, people making individual decisions. I mean, even I had this running joke when, when we were trying to design a position of a button that says that, don't worry about it. Only like 50 million people are going to see that it's, I mean, you have to work really hard at it, not driving you kind of crazy because the, once again, I think that any, anytime there's such a big power imbalance, fame.
+
+it creates a weird environment. I think people get a little strange. And, the fact that things function as well as they do is sometimes a surprise to me, but I do, I do think, scrutinizing the regulators, scrutinizing the large companies is going to be very helpful here. Like I am scared of.
+
+Of both like a small company going rogue and doing some crazy shit and the massive, Apple's microsoft's and google's just owning that entire stack like, both of these Outcomes are 
+
+[00:34:03] Brian: Yeah. there's no good outcome really at the end of the day, because regulation just entrenches power. Right. The, the 
+
+[00:34:10] Alex: Yeah 
+
+[00:34:10] Brian: always benefit, and, and the incumbents always benefit from regulation.
+
+[00:34:14] Troy: you know, what's, what's interesting is how you're starting to see, I think you're starting to see apple emerge in this AI stuff. So apple is moving around, approaching midsize media companies and basically offering them call it the size of a large insertion order. So 500, 000 to 1 million to allow them to slurp up all their billions.
+
+archive content in order to train their forthcoming LLM in a way that is in the future defensible legally, right? So that they paid for that content. I think it gives them a number of things. I think it gives them a sort of higher moral ground. I think it probably protects them in the future against lawsuits.
+
+And in another way, It also raises the cost of coming in and competing because if you have to pay a bounty to everyone, I mean, the open AI and other LLM's already slurped all that stuff for free, but we're essentially what it does is it says the cost of entry is going to be hundreds of millions of dollars.
+
+[00:35:16] Brian: Well, how many are there going to be? Cause I mean, it doesn't sound like a lot of money. 500 to 600, 000 is not going to 
+
+[00:35:21] Troy: Well, but imagine that being a small media company and you times that by, literally by a thousand.
+
+[00:35:28] Brian: Yeah. If a thousand people are paying you that, then that's good.
+
+[00:35:31] Troy: No, you're not getting paid that by a thousand people. A
+
+thousand companies 
+
+are 
+
+getting that 
+
+bounty 
+
+from, 
+
+from
+
+[00:35:37] Alex: it's it's it's money that they didn't have it's all upside for them 
+
+[00:35:40] Troy: yeah. How do you do that math if you're like a publisher? You're like, well, I could, choose to take the higher ground and
+
+not 
+
+go with it, 
+
+and 
+
+I 
+
+don't make 
+
+any 
+
+more money. 
+
+[00:35:49] Alex: I mean, that's what 
+
+[00:35:50] Brian: Publishers always take the money. Always. They
+
+[00:35:53] Troy: Well, that's what publishing teaches you. You know, when you have to do a deal with Facebook or Google, you just say, yeah, I'll just take the.
+
+[00:35:58] Brian: I mean, Alex's favorite content ad recommendation networks
+
+prove that
+
+iron 
+
+rule. 
+
+[00:36:04] Alex: Yeah. 
+
+It doesn't matter who you are. You'll always have taboola at the bottom of your article. 
+
+[00:36:09] Brian: I 
+
+didn't say that. 
+
+[00:36:10] Alex: we should wrap it up because my starting to take out the lightsaber. 
+
+[00:36:13] Brian: alright. 
+
+
+[00:36:17] good product
+---
+
+[00:36:17] Alex: any good products, in Dublin? 
+
+[00:36:19] Brian: Oh, yeah. 
+
+Guinness. 
+
+[00:36:21] Troy: that's a good question. Oh, I have a couple of Beefs. 
+
+Well, one is that when you buy an expensive airplane ticket, you expect it to come with, the perks that you normally associate with buying an expensive airline ticket, right? my family came to Dublin, including my wife's parents, and I wanted to show them a good time.
+
+we had, Good flights and front of the plane kind of stuff and we got to the airport and they had created a Ticketing system and a queue in front of the Delta Lounge I mean, I guess it's because it's Thanksgiving but
+
+I had to queue up after buying that expensive ticket to get into the
+
+lounge 
+
+annoying and 
+
+[00:37:02] Alex: Yeah, 
+
+[00:37:02] Brian: Yeah, Delta has a major problem with too many people,
+
+having lounge access 
+
+[00:37:07] Troy: lounge. 
+
+[00:37:08] Alex: yeah, no, I mean, all the
+
+loungers are getting that because they opened it up, to so many people now 
+
+[00:37:13] Brian: But their business models are all about those loyalty cards. That's where they make most of their money, so they're misaligned. Their
+
+[00:37:20] Troy: Dude, I don't care. 
+
+[00:37:21] Brian: to 
+
+[00:37:23] Troy: you know, I expect that when I buy that ticket, I get into the lounge plus the lights were so bright in there,
+
+[00:37:29] Brian: But Delta, you know... Delta has a good product, though, overall. did 
+
+[00:37:34] Troy: really do you 
+
+know that you have to, I wanted a Guinness and that's an upsell in the lounge. 
+
+[00:37:39] Brian: in the lounges?
+
+Hmm. It's Ed Bastien. It's good, I got a little Delta stock. That's, that's, it shows that this guy's focused on margins.
+
+Maybe we'll keep him. 
+
+[00:37:48] Alex: Yeah. 
+
+[00:37:50] Brian: United is coming out with 
+
+targeted advertising on the backseat 
+
+[00:37:54] Alex: so the the
+
+American express lounge for the platinum card stuff that you,that you get with certain cards, had a similar thing and then they kind of, They look, apparently they look at your spending record and they put you in a different class and where we went in, we said, well, we're full, but it looks like you're like hit your limits.
+
+So we'll let you in. Or, and I was like, what the fuck just happened? So it's not only do you have to have the card, but then you have to spend money. I fully expect there to be like. Ultra business lounges popping up 
+
+everywhere. 
+
+[00:38:24] Troy: It's already creating this for the top.
+
+[00:38:27] Alex: Yeah, 
+
+[00:38:27] Troy: what? 
+
+[00:38:28] Brian: supposed to be the idea behind the Centurion?
+
+[00:38:30] Alex: yeah,
+
+[00:38:30] Troy: Centurion also 
+
+has 
+
+[00:38:32] Alex: yeah. 
+
+yeah. 
+
+I mean, that's the one we 
+
+we 
+
+finally, 
+
+[00:38:34] Brian: understand the lounge as a product anyway. Just don't get to the airport
+
+[00:38:37] Troy: know what? I, I was thinking if I just forgot about all of this nonsense and wanting to get, into this lounge, and I literally went to the Shake Shack and got the bacon cheeseburger
+
+and
+
+those 
+
+[00:38:49] Brian: Yeah. Yeah.
+
+[00:38:49] Troy: on them, I would have been 
+
+happier. I 
+
+[00:38:51] Alex: That's what I, that was, I always argue with my wife. She always wants to go to the lounge because we pay for it and we can get the free eggs there. But I'm like, I actually genuinely, I genuinely like grabbing a hamburger at the airport. I like seeing the people hanging out. It's way more fun, Getting some oysters the bra 
+
+[00:39:08] Troy: like that they thought you were 
+
+marginal 
+
+until they looked at your 
+
+spend 
+
+[00:39:12] Alex: Yeah, exactly. 
+
+[00:39:13] Troy: Yeah, 
+
+[00:39:14] Alex: then we were let in through a different entry. very special.
+
+[00:39:17] Troy: Alex, just before we go , I wonder if I, I think I could get you to do this just to tie the whole episode in a bow. and I think that your perspective of being like, in Silicon Valley, is special. I got to know you, you were always the same kind of person as someone that I would have worked with in San Francisco.
+
+But then when you and your posse came over. and started living there. bought the company, if you recall, right?
+
+you 
+
+moved over 
+
+from Cyprus to San Francisco. Like, what was your, six month observation about that 
+
+world? 
+
+[00:39:49] Alex: I mean by the time I joined, it felt a little bit like the story that people worked really hard was a little exaggerated. Cause I felt that we,from where we were, we had to hustle way harder to get anywhere and things seemed very easy there. it was also nice to be in a place where people like talking about technology, and, you know, not feel like a complete outsider.
+
+So it felt, it felt very exciting, you know, the same way when a theater kid goes to, LA and, and bumps into a bunch of other actors, I'm sure it's, it's just gotta be. But from the beginning, I felt like there's a lot of waste here. There's a lot of money and there's a lot of waste. And there wasn't that much in our company. the company you, you were running, Troy, because we were a media company and we were always hustling and struggling. But, every time I, I bumped into others, it didn't seem that people were working quite as hard or being quite as much as into the hustle as I expected them to be.
+
+You know, I came in with this idea of this, that the pirates of Silicon Valley, everybody's in a garage building something new. And a lot of it at that Stage that attracted a lot of the NBA crowd trying to make a buck. 
+
+[00:40:56] Troy: you happy 
+
+you 
+
+did 
+
+[00:40:57] Alex: oh, yeah, man. Yeah. It changed my life. It was great. I mean, San Francisco is great. California is great. I met great people. I have a pretty, you know, I think a different perspective, of working in Silicon Valley than most people do. think it really attracts like really interesting people.
+
+[00:41:12] Brian: So one of the things I would add, I actually want the technology industry to succeed because it's a great American industry. Like it is the new auto industry. It's better than financial services, which are also good at, and it's the source of American power. I just think that at the same time, there is this lag between the power that this industry exerts and the structures that every society has that directs that hopefully in a, in a place where it benefits broadly speaking, because societies are very complex society,
+
+that's why I don't understand this, immature
+
+black and white 
+
+stuff 
+
+that 
+
+ends 
+
+up, 
+
+being 
+
+messaged. 
+
+it's 
+
+like you're either an acceleration or a
+
+decel, 
+
+and it's like whoa, what are you talking about? 
+
+[00:41:56] Alex: everything's heightened, everything's accelerated, if it wasn't that it was Windows versus Unix, it was iOS versus Android, it was Xbox versus PlayStation, you know, people who are deeply into something are like deeply into something, right?
+
+I'm sure, the 1800s, somebody punched somebody over the Oxford comma or whatever the fuck, People decide to 
+
+[00:42:16] Brian: Hugs for Count. Is that? What is that? Oh, is that? Oh, that's trying to minimize the 
+
+media. 
+
+[00:42:23] Alex: I'm not trying to 
+
+mini 
+
+[00:42:24] Brian: You want to cut that. You want to have 
+
+Vanya cut 
+
+that out 
+
+for 
+
+your own sake, I 
+
+think. 
+
+[00:42:27] Alex: like using the Oxford comma what I'm saying somebody There's always something silly that we as humans in an industry that's got like a heightened sense that's, that's really important in whatever era we're in where you're going to have factions, right?
+
+There was a, faction of what type of current we should use when electricity appeared. There were different standards 
+
+between, blu rays and HD DVDs. It doesn't matter. People always think that their technology and especially the smartest people will get an idea in their head that kind of germinates and get.
+
+It gets stuck in there and they'll slowly kind of like become an absolutist about this specific thing. And I think that's the same thing that's happening now. And I keep seeing it like I was like against using 256 color for icons because I was really good at using 16 color, like, you know, to design icons as a designer.
+
+And I thought that people using 256 colors for icons were. was like six months of my life. I'm not proud 
+
+of it, but it happened. 
+
+[00:43:25] Troy: Do you like that song? 
+
+[00:43:26] Alex: Which one? 
+
+[00:43:27] Brian: with the Oxford
+
+comma song? 
+
+[00:43:29] Troy: yeah, who 
+
+gives a 
+
+fuck about an expert? 
+
+Kama, 
+
+Vampire 
+
+[00:43:32] Alex: Vanktar Weekend.
+
+Yeah, 
+
+
+[00:43:34] outro
+---
+
+[00:43:34] Brian: Next episode we can go over the AP style book wars. those were from a
+
+simpler time. 
+
+[00:43:39] Troy: Alright, you guys are the best. 
+
+[00:43:40] Brian: is fun. I 
+
+gotta go 
+
+to the beach.
+
+[00:43:41] Alex: Alright, alright, okay. 
+
+[00:43:42] Brian: see 
+
+ya. 
+
+Have a good 
+
+Thanksgiving. 
+
+[00:43:44] Alex: Alright, 
+
+there's a lightsaber being turned on here. Happy Thanksgiving, everyone!
+
+[00:43:48] Brian: 
+

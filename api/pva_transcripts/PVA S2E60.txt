@@ -1,0 +1,1377 @@
+PVA S2E60
+===
+
+
+[00:00:00] Cold open
+---
+
+[00:00:00] Troy: ​Brian, we did the same post today,
+
+but you have a flair that I'm missing. 
+
+[00:00:04] Brian: All of our greatest strengths are our greatest weaknesses. And your strength is you're very smart and thoughtful, but your greatest weakness is you have to make sure everyone knows. 
+
+[00:00:14] Troy: No, I just tried to report the facts, sir.
+
+[00:00:16] Brian: Oh, come on. You wanted to show off.
+
+[00:00:18] Troy: Oh, you think I was, like, intellectually whipping it out there?
+
+Wait. So you saying you took my points, turned them into a post and then Brian turned that into a post and I'm not getting anything out of all 
+
+[00:00:28] Brian: That's media. That's media.
+
+[00:00:30] Troy: Because, in modern media, your threads and. Texts then get taken by Troy. Troy makes something and I make something off of
+
+[00:00:37] Brian: Troy and then we make a podcast 
+
+[00:00:39] Alex: you guys are like an LLM.
+
+[00:00:41] Brian: Cycle goes on. 
+
+[00:00:42] Troy: we ate the old pig here at PVA.
+
+[00:00:44] Brian: exactly.
+
+
+
+
+[00:00:45] Intro
+---
+
+[00:01:07] Brian: And so I want to start to talk about this interface shift. This is something we talked about before, mostly through the lens of, of chat, but I think it's, it's kind of more profound. And I'm gonna like mix up terms so you can, we can argue over what, what words mean, which is these days what, 90 percent of the discourse is, just arguing about the meanings of words.
+
+But the reality is it seems like we are on the cusp of a change. in how we interface with what I consider digital media, but now is really the information space. And I think about it on two vectors. Me, this is my sort of simplistic view, search, and then also smartphones. And I think both those things are going to change in there and they're mixed up. What the open AI, demo day, and then also combined with, humane AI to me. It sort of points to where things are going. I know there's going to be a lot of, to me, it's just a matter of the timing, but Alex, maybe you want to start just as a refresher for why
+
+interface rules, everything around us, 
+
+[00:02:10] Alex: just to get that out of the way first, the humane stuff gets lumped in with the open AI stuff, but one is nothing and the other one is, is everything. So, the humane stuff,I don't think is the future of computing and a lot of this. Integration 
+
+[00:02:26] Troy: It might be, good to remind people what the 
+
+[00:02:28] Alex: yeah, 
+
+[00:02:29] Brian: we're going out of order. What happened to my structure?
+
+[00:02:32] Troy: Yeah. Answer the question,
+
+[00:02:35] Brian: Yeah. Can we just go back with the interface? Just start with the end of, don't worry. We're going to get the brother
+
+spirit and all of the good shit later. 
+
+[00:02:41] Alex: all right, let's 
+
+[00:02:42] Troy: okay. okay. Let's go.
+
+[00:02:44] Alex: all right,
+
+so going back in computer history, we've seen. the shift in inputs and we, call those like these interface shifts, and they've happened from, going to punch cards to going to keyboards, to going to mouse, to going to touch screen, and in each one of these steps, the idea is to remove the number of layers of abstraction between what the person wants to do.
+
+And when the computer does, right? So that's why they call it human computer interaction. And this is all like pretty obvious, but everybody's been waiting for whatever the next interface shift is, right? And this is where, Zuckerberg and Tim Cook have put a lot of effort into, things like, augmented reality, right?
+
+Just bringing the screen closer to your eyeballs. but I think what happened with the launch of ChatGPT, it just, surpassed the expectations of what we could do with computers because it was the first time, we built a truly intuitive interface.
+
+you know, I'm a designer and I've designed interfaces for a long time and. Everybody talks about intuition and intuitive, right? And ease of use. but I think until Chad GPT, we hadn't really experienced that in a meaningful way. and I quoted, a good friend, Adrian Cleave, Troy, but I said, these are the first interfaces that understand computers.
+
+Of course, when I posted that on threads, 
+
+I got a 
+
+[00:04:03] Troy: Hold it, hold it, hold it, That wasn't your thought?
+
+[00:04:06] Alex: that was our thought. 
+
+[00:04:07] Troy: That was Grumpy Adrian's thought?
+
+[00:04:09] Alex: Mm hmm. 
+
+[00:04:10] Brian: Oh,
+
+[00:04:10] Troy: Which became your thought? Which became my thought? Which became Brian's 
+
+[00:04:13] Alex: Brian Scott. Yeah, it's 
+
+incredible.
+
+[00:04:16] Troy: We really did eat the whole pig here. Thank you, 
+
+Adrian. 
+
+[00:04:19] Brian: usually, some of the ears are left, 
+
+[00:04:21] Alex: I mean, let's face it, we're all people who sit on the shoulders of much smarter people that, are less, eager to,share their thoughts with the world. 
+
+So, through my conversations with folks, there's a definition that came up is that these are the first interfaces that understand humans, right? A lot of people push back on that saying that everybody working on this would never define it as understanding humans.
+
+However. I think that when you have, an interface that can kind of understand human language in a way that it can create a task in a computer that is relatively complex, it is, de facto understanding. And if it's a, you know, people would tell you that it's just a stochastic parrot, stochastic parrot can read my taxes and come back with some context, then I think that's stochastic parrots essentially understands what I'm saying.
+
+And so it's been. surprising actually everyone how large language models, work, at these types of tasks, even though they're not perfect. and we've only seen this used in an interface because I think chat GPT was the first interface for one year. And God knows what will happen over the next year.
+
+That OpenAI presentation showed us the future, I think. and one of these things was that it can turn anyone into an engineer. And I don't think we understand what the repercussions are when the friction between an idea and execution is reduced so much. Sure, there's a ton of stuff you can't do, right? But there's a ton of stuff you can do. Google maps created Uber and Airbnb. There was no Uber and Airbnb before Google maps, because there would have been leap from going from not having a map to having a map was too big for any startup, to take on. And now we have these incredible models that will that allow people to come up with all sorts of really cool ideas.
+
+And not only that, build them essentially in real time. And so a lot of engineers will come to you and say, well, it's, not very efficient and it can't do a bunch of stuff. Sure. but we've never had that ability. We don't even know what it is today. It's, there are websites like ifttt, if this, then that.
+
+com that allow you to connect the weather to your. Alarm to whatever. You can do all sorts of smart home automations. You can connect Google Docs via Zapier to Notion and stuff like that. All that stuff is incredibly difficult for most people. but what these GPTs allow you to do is really complex tasks and come up with all sorts of new ideas.
+
+And so that for me is a, is massive interface shift because it means that the human computer interaction is made. Even more frictionless and we're, we're going to see an explosion of stuff yeah.
+
+[00:06:53] Brian: Yeah. 
+
+[00:06:53] Troy: I like what he just did there though. He did something I didn't expect. So on the surface, you could look at. simplistically and just say, instead of buttons and toggles and, entering my flight, to from information, I just enter a query into a search box and it knows a little about me and it proceeds to kind of do all the work.
+
+That's the interface understanding me. better in the most simplistic way. What I think Alex did is he kind of moved it down a level and he said, correct me if I'm wrong, Alex is, it's not just that it's that we can get closer to the computer in ways that we hadn't been able to before, because we're not all programmers.
+
+So now what we can start to do is get much closer to. A kind of deeper layer of or a deeper relationship with a computer like a programming level with the computer without knowing how to
+
+program 
+
+[00:07:52] Alex: Yeah. 
+
+[00:07:53] Troy: And that's that's in a
+
+deeper part of this kind of 
+
+connection. 
+
+[00:07:57] Alex: and it's, it's actually more,
+
+profound having the computer write code based on what you say, right? Like we use Unity to build our games. There are some components that we could put in where I can write simple code by talking to the computer.
+
+This is bigger than that because in the back end of it, people are also building all these integrations with an existing universe of, programs and data sets and all these things. So not only is it saying, Ooh, I would like a program that does X, Y, and Z, but it's also saying, I would like a program that checks the spreadsheet.
+
+Logs into, this database, checks the weather system, turns on my lights, whatever, whatever you want to connect, to each other through these agents technically. and that to me is, I don't even know the ideas that people are going to come up with. It's, it's impossible to predict the future from this moment on.
+
+because We've just put this light through a prism and now there's like a spectrum of like millions of different ideas that are going to pop out of it. I have no idea, If, if Tik Tok created all these new media formats, because it was just millions of people throwing shit at the wall, there's going to be a revolution that is similar to that, but with applications with executions on the computer And so when we're talking about like,consolidation of media and, programmatic ads or what's happening to search, I think that's going to feel like nothing compared to what's happening now. I think the entire framework around computing changes, and I know it's, it's really hyperbolic that I'm saying that, 
+
+[00:09:29] Troy: Drop the mic, dude.
+
+[00:09:31] Alex: yeah, 
+
+[00:09:33] Brian: Okay, so the entire, the entire computing paradigm changes, but more to the specific points.
+
+[00:09:39] Troy: Way to take the way to take the
+
+poetry out of it.
+
+[00:09:42] Brian: Well, 
+
+I mean, 
+
+we got a, you know, we 
+
+got to go from poetry to prose, 
+
+[00:09:46] Alex: people versus the 
+
+press is like in full effect here. 
+
+[00:09:50] Brian: the press. Oh my God. I mean, kudos to the tech people if they come up with an innovation that makes their tribe less valuable, but somehow I'm not gonna hold my breath because I believe in power. what I'm interested in is, can you just unpack the significance of GPTs and agents and what, what those mean, and why that's, It's a big change from, because a lot of this to me is like you said, the human to computer nexus has been janky at best.
+
+A lot of times it's forced humans to cosplay computer, whether it's by putting in Boolean search queries or whatever, like we're, we're basically trying to act like a, a,
+
+computer
+
+to some degree or trying to think like a computer rather than 
+
+vice versa to me, you're 
+
+[00:10:36] Alex: Right. And a lot of human and computer interactions required a human to think like a computer, right. That is starting to become no longer the case, not for, caveat, not for everything, but for a lot of things and for enough things to fundamentally change.
+
+How we use computers and we don't even know new ways that we're going to figure out to use computers because there's, there's going to be this new, like I said, this explosion of like different ideas around that. I don't even know. I'm, the framework that I've been trying to use to figure out what's going to happen is not what will change, but what's going to remain the same, what are the things that.
+
+People have always done, but it's kind of shitty to do right now on a computer. And I can list like 30 things off the top of my head that could be fundamentally improved, once these GPTs are out, because it's version one, right? It's very simple, but imagine this
+
+using a conversational interface, you can create your custom miniature GPT that is powered by the massive LLM that is.
+
+kind of running on OpenAI servers, but includes key information. So, for example, I'm working on two GPTs now. one kind of knows all my life, I'm downloading my son's school calendar to it. I'm kind of bringing in all sorts of key information so that, I can just ask it because there's things that I do all the time.
+
+Like I try to remember when a vacation is, when a holiday is or whatever. And the other one is a narrative GPT. We've talked about that idea before where I'm putting the entire lore, the entire kind of narrative structure of our video games into a GPT so that anybody working on the game can ask, can query the GPT, About relationships or kind of a technology that happens in the game, etc. This is months of work that can be, replaced with, with something like this. These are two incredibly low level ideas. and it's as a version 0. 1 of this product. 
+
+[00:12:32] Brian: I think about it a lot. Just like what you're saying is so there was always so much turnover in newsrooms. I mean, at best, if people stayed around for like 2. 5 years, it was a win, right? Because the reality of the profession is there's a lot of churn and I don't care. You could.
+
+Have Nirvana, you could have all the best snacks in the world, a great 401k, people are going to switch jobs because that's how the profession works. But the biggest challenge to me was getting people up to speed as quickly as possible, because there was a period of time in which they were not going to be fully productive, I mean, that's where I see, companies with this more with less era is you can get people up to speed really quickly.
+
+I assume by using GPTs internally, that corpus of knowledge that exists within companies is significant. people don't know how to operate. it's like the old thing where people say they don't know where they're
+
+the restrooms are and 
+
+stuff like this, but that 
+
+[00:13:22] Alex: it's,
+
+incredible what you will be able to do. You know, we were working at Airbnb. you would ask a question from HR or whatever, and they would always tell you, look, it's so 
+
+clearly labeled, it's so clearly labeled 
+
+in the handbook, 
+
+and I was never like, I don't even remember which software we're using for what.
+
+And instead of that, the amazing thing is like, you technically don't even need to upgrade the software. You don't need to kind of do a data transfer from all these disparate systems into one and make sure that, the old system that's running here is now running on, the new content engine.
+
+And so you can find everything. And then we build a new search system. Like we spend months on that stuff instead, just let all this old stuff run. Right? Put an AI between the human and that stuff, and the AI will answer the question, 
+
+[00:14:08] Troy: Oh my God, it's modern slavery. The poor 
+
+AIs have to deal 
+
+with the old systems to get you what you 
+
+want.
+
+You're 
+
+so
+
+callous
+
+[00:14:16] Alex: You're 
+
+joking, 
+
+but I think AIs are going 
+
+to be used to cover up all sorts of badly built stuff . You know, the government, keeps promising that it's going to make those arcane systems modern. You know what's going to happen? Somebody is going to keep those arcane systems running and there's just going to be a layer of some sort of open AI on top of it with some custom hooks, feeding that into a website
+
+[00:14:38] Brian: Okay. So, again, Troy, since you cheer for power, who wins and who loses in this, in these scenarios?
+
+[00:14:45] Troy: well, thank you for asking Brian. the first thing is it would seem that changing the interface in ways that we've just discussed, meaning that. you don't, for example, have to build an Expedia app to channel someone's intentions into a flight booking. Means that the layer that sits on top of everything, i.
+
+e. where the query begins, I want to book a flight. becomes really, important and will, control a huge amount of the economics. I think of that as the platform layer. I think if anybody's going to harness, I mean, assuming that they get out in front of it, going to harness the power of a series of smart commands that can do a bunch of things against, a big corpus of knowledge and a bunch of APIs, then it's the platforms and the platforms are the hardware 
+
+owners like Apple or 
+
+Android 
+
+[00:15:47] Alex: and video.
+
+[00:15:47] Troy: or, well, that's even down another level.
+
+but I think it has to have something that touches the consumer. certainly a lot of value in the chip layer. But, as such, the people that own that starting point from a platform or hardware perspective control a lot of the economics. And, there's great power in that, I suspect. It's hard not to imagine how media just doesn't continue to get thrown around and bamboozled and beaten up in this process because even the lucrative hacks become futile. that exists today, which is finding a way to the top of a distribution pile, Google in particular, with service content, as you always call, you call, what do you call it?
+
+The chop shop or whatever.
+
+[00:16:31] Brian: I'm been mostly using SEO glue factory
+
+[00:16:34] Troy: Yeah. so that that's where it begins. I think the people that Have access to the Silicon and control the dominant large language models become incredibly powerful. Even today I noticed. So Just as a sort of exercise. And because actually it's quite practical. I think Alex would back me up here.
+
+I run on my system, my desktop of my phone. I have, the chat GPT app, and I'm finding that for routine queries, I go to it far more often than I did before. And it's certainly taking time from what I would have used to, what I would have done with. Google or Siri for that matter, because I do use Siri a little bit for what's the score in the game or what's the weather or whatever.
+
+But, now inside of chat GPT, I can do images and it can also access, up to date information to April on their model. And then, through their Bing partnership on the web. My point is they are creeping into. Other use cases. I don't need my mid journey subscription anymore. Administered Brian through,
+
+[00:17:38] Brian: 
+
+[00:17:38] Troy: discord, which you
+
+[00:17:40] Brian: I was just on discord this morning
+
+and I was thinking, 
+
+Alex is wrong. I hate this 
+
+shit. 
+
+[00:17:44] Troy: week? you, know, the, the, the bear in the parka, what I did is I uploaded last week's bear that was created in mid journey via discord. I uploaded it in two seconds to. Open AI or to chat GPT. And I said, make something like this, except change it in the following way.
+
+And it, it spit it out in a couple of seconds. The point is that once you have that model and that interface point as a chat GPT has, you can do a lot with it. There's a lot of
+
+power there. this is going to be a very, very important company in my estimation.
+
+[00:18:22] Brian: I think it already is an important
+
+[00:18:24] Troy: Well, yeah, but I mean, I think there was, you know, it was sort of like this unlikely consumer application.
+
+Many people
+
+thought that it was a kind of demo station for a 
+
+B2B 
+
+business, 
+
+but like, this is an important 
+
+company, 
+
+[00:18:36] Alex: I mean, especially at the beginning of, of the adoption of any technology, you have these companies that kind of pop and then disappear as the incumbents kind of figure out how to integrate it. But OpenAI seems to have reached a velocity to, to, to pull out of that, with their execution with a model that's way better and with a hundred million users.
+
+And I don't know if we know what's, What's going to happen here? Because it's also like uniquely structured, right? It's, it's not a traditionally structured corporation. It's, it's partially a nonprofit partially, you know, has this massive Microsoft investment. I would be worried if I was Google or Apple, I think Google and Apple both look weaker than they ever have. know that they both have the interface, the hardware. To the software. that's a huge advantage, but open AI has, just proven that they have incredible, velocity here.
+
+[00:19:29] Brian: but on a more day to day level, you've made the point that a lot of companies are at their essence interface levels are layers, right? and everyone wants to control the interface. in digital media, I always think of. I think of Google controlling the interface to the open web basically because it was search, right?
+
+And search is the nervous system, whatever metaphor you want to use of the open web. And I think what publishers, they already saw the shoe drop from social and The search shoe is dropping and that is a major, major issue. But I also think of like what you're saying that a lot of companies are interface levels, right?
+
+Like Expedia is just an interface layer to a bunch of data, isn't it?
+
+[00:20:13] Alex: Yeah, 
+
+[00:20:14] Troy: yeah, it's an interface and Amazon's an interface to shopping
+
+and
+
+TikTok's an interface to video 
+
+creation and 
+
+consumption. Like yeah, they're just interface 
+
+[00:20:23] Alex: I would say if we run through those though,
+
+Expedia is much more of an interface company, a pure interface play, because that's what it does, it uses the fact that these systems of travel booking and stuff like that are so archaic and so disconnected that it creates 
+
+[00:20:37] Troy: I mean, it doesn't 
+
+have the other bits like fulfillment 
+
+[00:20:40] Alex: fulfillment or even Airbnb, 
+
+which has like a pretty unique database, right, of properties.
+
+So there are a lot of companies where, I'm pretty sure executives are pretty anxious right now as to what this does 
+
+[00:20:53] Brian: Yeah. Okay. So use one of those companies, Airbnb or Expedia, you have to lock down your data I guess my point is we will not have a universal interface because of power dynamics. It's not a technology issue is that Google was able to, to really pull off something amazing, which was to purportedly organize the world's information by constructing.
+
+An uneasy bargain in which people got enough benefits and the taxes weren't too high, right? The taxes were pretty high. When I love, I love these, you follow internal tech emails, Twitter ex account. It's, it's an entire, account devoted to the internal emails at the tech giants that come out in all these lawsuits.
+
+And they're amazing because you start to see what is really happening beyond the,bright painted balls and the free chefs and all the scooters and all the other nonsense. And you start to realize that these are incredibly sharp elbow. I mean, you obviously know it, you guys know it, but the, the public perception of these companies is very different from how they operate.
+
+They're obviously, very sharp elbowed. I'll say that. and these, these emails make it incredibly clear. And so what I wonder is like universal search is pretty much dead, isn't it? Like, I mean, the idea, because you're, you're basically creating a situation where it's not in so many people's interests to contribute to any sort of commons, and so it's going to end up being.
+
+Completely balkanized. So explain to me how this like universal brain can even work because everyone's just going to lock down their data or any unique assets and not allow these
+
+LLMs
+
+to, to,
+
+go 
+
+[00:22:41] Alex: Well, that's the new, frontier. And that's what
+
+keeps this business. I think what we're going to start seeing 
+
+and we're, we're hearing it
+
+from, folks like Reddit that they're going to start locking out their content from Google. I expect Google is going to start, you know, if I were at Airbnb or one of these companies, I would consider that I would do the math as to how much traffic Google's brings us and the potential loss that we could incur from having all that stuff,absorbed, it used to be that the deal was you couldn't say no to the Google deal.
+
+Let us take this stuff because we send you to traffic. But in this world, that calculation becomes, lopsided, right?
+
+[00:23:15] Troy: Yeah, can we back up on this a sec? Cause I think that's a really great question, Brian. And, and I think that what you see from, the open AI, dev day announcement is I think of it in three pieces and it's an acknowledgement of what you're saying, which is there's your data, right?
+
+The things that are uniquely yours, there's effectively our brain. That makes sense of your data and connects it to other things. And then there's a mechanism to connect both of those to all the pulleys, the API is effectively of a world that allows you to get things done, the action world. So there's your information, our brain, and then all the processes that we've invented over a long period of time to, to activate technology into things that, that create utility for us and then what we're going to do is we're going to allow you to make your own thing. And it was just so clear to me when they were doing those demos that this is the new page builder. This is the new website creator, 
+
+[00:24:17] Alex: App creator. 
+
+[00:24:18] Troy: the, it's the app creator and a website creator, because now I just put in all of my menus, my local information, the knowledge from my company or whatever.
+
+the lens that I've just, that open AI has helped me create allows me to create a world around that information. Our brain makes sense of it. And now you can activate the Instagram or, Expedia, APR, whatever completes that equation. And so I think that that's what they're doing.
+
+And then they're saying, we'll create a store for that. So there'll be a marketplace for those things, the modern replacement of the app store. But the interesting part about it is that. just hold that thought for a second. Then Google can't tank the SERP because tanking the SERP tanks their business completely.
+
+80 percent of their revenue comes from the SERP,
+
+[00:25:06] Brian: Yeah.
+
+[00:25:06] Troy: right? So they need that surface area to monetize and pay for all the crab legs in the cafe. And so what open AI is doing is really different because I believe, I mean, I have a 20, I think it's a 20 subscription to open AI to use an, like an unfettered chat GPT.
+
+So their monetization layer is both them selling the APIs and that functionality to businesses, right. And be a consumer subscription. Proposition and advertising is nowhere in there, nowhere. And that's what I think we kind of, I haven't reconciled in my mind. Like how does advertising, how does the ability to use money to tilt the system, to get leads or awareness, which is advertising, how does that factor into this new thing? Maybe it's just that a company needs to build their own GPTs. That's their advertising,
+
+except you're still going to need to pay to 
+
+get attention 
+
+to that GPT, if that makes
+
+any 
+
+
+[00:26:07] end
+---
+
+[00:26:07] Troy: sense. yeah, 
+
+Does that make sense, 
+
+[00:26:08] Alex: open AI is going to probably have a multi billion dollar advertising network 
+
+[00:26:13] Troy: in their 
+
+app store, 
+
+[00:26:15] Alex: Yeah. Yeah, Yeah. Yeah. I mean, it's, it might 
+
+be something different. 
+
+[00:26:19] Troy: Because it all, everything always gathers up at the, at the, at
+
+the gatekeeper 
+
+point.
+
+[00:26:23] Alex: Absolutely. 
+
+[00:26:24] Brian: That's not really 
+
+advertising. Okay. I think you've actually 
+
+made
+
+this point. It's not advertising, right? 
+
+[00:26:30] Alex: it not really understanding 
+
+[00:26:31] Brian: I, to see, I told you every single one of these discussions, it goes into a argument about like words and what words mean. advertising 
+
+to me. 
+
+[00:26:41] Troy: or distribution fee or a 
+
+[00:26:43] Brian: Okay.
+
+That's what it is not creating demand, right? 
+
+Brand advertising is creating demand for product, not harvesting demand. All these, all these performance marketing goons
+
+have convinced the world 
+
+that, advertising
+
+is just about 
+
+harvesting
+
+demands.
+
+[00:27:00] Troy: he says in 
+
+passing. 
+
+[00:27:03] Brian: No offense to any of my performance 
+
+marketing friends. I honor your 
+
+labor.
+
+[00:27:07] Alex: What's the difference between Amazon showing the LG TV at 
+
+the top of the search results for TV to OpenAI tastefully integrating LG TV's link when you ask what's a good TV? I mean, I'm simplifying the, 
+
+[00:27:23] Brian: So I would say this. So, so a lot of advertising as practiced by Google is in my mind, probably killing them as as an advertiser, which is not smart business. It's a protection racket at the end of the day. I mean, they walk around the neighborhood and they're like, Hey, that's a nice business. You have be terrible.
+
+Something happened to it. again, this internal tech emails and it's all coming out everyone knew this was the case, right? Barry Diller, he's like, I was not born yesterday. He sent this amazing email to Philip Schindler, the chief business officer a couple years ago in which he 
+
+just. at
+
+Google and he laid out the case.
+
+He said, look, we got this, this VRBO travel. They were getting 500 million visits from Google a year. Okay. We were spending 21 million. We increased that to 300 million over five years. Guess how many visits we're getting?
+
+Same.
+
+That is a different 
+
+business and 
+
+that is not 
+
+an
+
+advertising business. 
+
+[00:28:23] Alex: but flip it around. I, I'm surprised I'm the one saying this, but let's look into things that are not going to change 
+
+[00:28:30] Brian: that 
+
+I like 
+
+[00:28:31] Alex: things that's not, going to change is that 
+
+companies will be willing to pay a lot of money to generate demand. And that to me is advertising, whichever way you slice it, pay money to generate demand to the shit you sell, right? If the interface to knowledge becomes. Open AI, or chat GPT or collection of all these things, then there will be a market for that type of stuff. And it will happen on those platforms too.
+
+I, we have no idea what that looks like, but that there will be a way to generate demand 
+
+[00:29:02] Brian: sure, but so the nature of advertising is obviously changing to me. It's like in a giant accelerant, the erosion of brand advertising as it was practiced will erode. I think the other thing that will probably erode what I'm interested in is. we talk about things that won't change. Advertising generally has remained at about 2 percent of GDP since the 1920s.
+
+I was always thinking it would decouple from that and it would decline. because after all, why shouldn't it, right? Everything becomes much more efficient. The old John Wanamaker thing. If you didn't know, 50 percent was wasted. That should. That should have sort of gone away, right? it should be more efficient than, and so it should go down as a percentage of GDP.
+
+Won't this eventually decouple those two things that have basically gone hand in hand for the last hundred years?
+
+[00:29:53] Troy: don't think so, actually. even if the goons come, and even if John Wanamaker, even if we can now measure the other half, we will still buy it. Happily, as long as the marginal revenue exceeds the marginal cost. and what we'll look to do is optimize the systems of value creation in our business, such that our revenue profit engine can produce more than somebody else's so we can buy more growth, right? Like that's how the
+
+[00:30:23] Brian: Okay, yeah, that I get. But that is very
+
+different than the kind of advertising 
+
+that is sold by publishers.
+
+I guess I'll bring it back to 
+
+the publisher.
+
+Yeah, 
+
+well, I mean, come on, controlling an interface and, then pushing demand around because you've got a bunch of people using your interface is very different than trying to do persuasion on a webpage.
+
+it just doesn't seem like a growth 
+
+[00:30:45] Troy: Well we're seeing how that's going and is this how you transition into,
+
+you know, discussion about Jezebel 
+
+or something, or is that what we're 
+
+[00:30:51] Brian: I mean, 
+
+we can, but don't 
+
+think it's like a, GPT. 
+
+Issue. 
+
+[00:30:56] Alex: we're clear, this interface shift doesn't mean that there won't be needs for formats for media formats, right? I think people will still be watching TikToks, And maybe. the kind of the shrinking of the Google search programmatic search thing and website advertising, increases the amount of advertising that happens on, take talks and Twitters of the world. and also, you know, if you're a media 
+
+[00:31:18] Troy: That said, Google happily hedged with 
+
+YouTube, by the 
+
+way. Is 
+
+[00:31:22] Alex: yeah, yeah, it is. let's look at Google psychology for a little bit. Google had their eyes so firmly on that advertising ball, even though they say that, that's not what their company is about. They were so fixated on it, that they paid a bunch of engineers to build to build the technology, right, that allow open air to exist and release it open source and never thought to really use it themselves, right, because nobody at 
+
+Google could, 
+
+[00:31:51] Troy: that 
+
+doesn't seem right. 
+
+[00:31:52] Alex: the entire foundation of this revolution started 
+
+with Thank you. Thank you. A lot of the technology that was built at
+
+Google and that was acquired by Google and that was released into the world.
+
+Now, I'm very excited and very happy that stuff is, is released as open source , but the truth is also that they didn't integrate it. They didn't build anything. They didn't launch chat GPT. 
+
+[00:32:14] Brian: I'm not gonna feel 
+
+too 
+
+bad 
+
+for 
+
+[00:32:16] Alex: but literally, 
+
+I think
+
+what happens 
+
+[00:32:18] Troy: So your 
+
+take is they were just like, 
+
+Ah, nah, that'll fuck up our 
+
+[00:32:22] Alex: yeah, I, my take is that 
+
+it didn't get the time of day, the same way they 
+
+invested. A lot of money into their 
+
+gaming star, a gaming startup with Stadia. They spent like a few months on it and then they've, what is it making? How much money is it making? And whatever money it does, it's 
+
+a fraction of 
+
+advertising. 
+
+So the executives go like, well , let's kill it 
+
+[00:32:41] Brian: I mean, too bad. 
+
+So sad. they're one trick 
+
+pony and just so 
+
+happens their trick was the 
+
+greatest business model of all time. 
+
+[00:32:48] Alex: But they're not even a one trick pony. They're a pony that invents
+
+tricks for other ponies
+
+while
+
+it focuses on the one trick. Google could be owning this entire, revolution, but 
+
+[00:32:59] Brian: Well, I want to talk, I want to talk about the people. I'm not, I don't, I don't care about the gatekeepers as much as you guys do. Like whatever, there'll be, there'll be, some oligarchs will benefit and some other oligarchs will slightly have less benefit. I get that. That's how it always is. I'm, I'm more interested in the villagers and where, so what doesn't change?
+
+Because I think what you said was really interesting because this is something that I don't know if it's always been. It's come to me, the last three days, this has been said to me like four or five different times or have come across this. I came across a Jeff Bezos. story from like 2017, I think it was, or something, or maybe it was 2007.
+
+He talked to Harvard Business Review about this and he said, you know, a lot of people try to predict the future and how things are going to change, but it's better to focus on what won't change the track record of predicting the future is horrible. So it's better to focus. And his thing was like for Amazon, people always want low prices.
+
+They'll always
+
+want convenience. They'll always want
+
+to get the stuff really quick. And we're just going to 
+
+focus on that 
+
+stuff. And we'll manage all the rest of the 
+
+stuff. So 
+
+if you're like a 
+
+publisher, for instance, 
+
+[00:34:07] Alex: also the Warren Buffett thing, right? 
+
+[00:34:08] Brian: yeah, I mean, there are all these sort of things. but for some reason it's just come up, a few times over, the last couple of days with me.
+
+I think it's actually pretty useful reminder. what, what won't change There's a lot of stuff that's changing and you just can't control, but what won't change? 10 years. What's what won't
+
+[00:34:26] Troy: don't go changing to try and please me. I don't, oh, I don't know. You didn't prepare me for this question. 
+
+I'm gonna have to dance, Troy, dance. What doesn't change? I mean, all the stuff we talk about that, there's nothing you cannot, Compare the output of, Of an LLM to, well crafted, intimate, personal, output from a, thoughtful, passionate human being.
+
+mean, maybe, you can, and maybe, 
+
+[00:34:57] Brian: probably. 
+
+[00:34:58] Troy: will be
+
+better 
+
+[00:34:59] Alex: But you know, Troy, when, when you asked what's not going to 
+
+[00:35:01] Troy: Well, let me finish. Can I can I finish? Because I'm going to ladder them up to all the way 
+
+ladder. So maybe, maybe, maybe there's that. I hear you so much in the words you put on on the page, Brian, I enjoy reading it.
+
+I can't see that, that that'll be replaced immediately. I think that voice and humans talking is you made the point today, I think, Brian, in your newsletter, I think that's that's unchanging. Well, I think the onslaught of, I mean, I think that the economics of content creation, Katzenberg said this week that the cost to create an animated movie will be reduced by 90 percent on account of AI.
+
+so, the, the thing that we'll see there, more stories and, more content, but the media product on a timeline is not gonna, it's not going to change. We're still going to enjoy storytelling in. Video formats. All of those things, I think, are kind of unchanging It's just important to recognize that a lot of what we grew up with in media was based on words and pages and advertising contextually inserted between those. And so that little part of the spectrum, which, by the way, is very high impact to culture. and to the delivery of news is really small in terms of it being a business.
+
+So there's a big, big, big persistent, ongoing media business here. it's just that the part that we spent a lot of time in is, is under siege. 
+
+[00:36:29] Brian: Yeah. Well, that concerns me. I don't know. Just from a
+
+[00:36:35] Troy: No, but well, it does, it does and it should, but you're picking away at a formula that, works inside of that new set of rules.
+
+[00:36:43] Brian: well, hopefully for now, I feel good about my approach and de risking across those vectors. I mean, my problem is that it depends on, professional publishers of some scale
+
+existing. To be honest with 
+
+you And, otherwise they'll be, I can't, I can't deliver 
+
+leads to people that don't, like they, 
+
+they 
+
+won't 
+
+exist.
+
+They're just like, it just 
+
+won't work. 
+
+[00:37:04] Alex: Are you like the little fish that lives next to 
+
+the whale? 
+
+[00:37:07] Brian: How did it work out 
+
+for the 
+
+little fish? 
+
+[00:37:09] Alex: when I 
+
+try to answer that question of what doesn't change in media, I go a bit of a higher level. because I think if you, if you look too narrowly, then you start saying, well, that none of that will change.
+
+Then that means you should just tell people To keep doing what they're doing, which is not the exercise for me. I think in media, there's essentially two modalities. I either want to be brought up to speed, or I want to be entertained. And then sometimes a little bit of both is good, right? I think that the up to speed part of it is going to be 95 percent eaten up by AI. there's no reason why I need to kind of sift through stuff to get, to get updated on anything. So if you're in the news business, you're going to have to start figuring out different business model, including like feeding the news into the LLMs that then pay you for it.
+
+Maybe if you're entertained. What you definitely need to do is make sure that you don't, you know, hide your individual brand behind, just like a massive corporation, because that's also going to be, changing. So I think a lot of stuff is going to change, but it's going to happen in some industries quicker than others, you 
+
+[00:38:17] Brian: I don't know. I'm kind of like, yes, but no. I mean, I sort of get what you're saying, but it's, it's for, to me, and I know it will ladder up or whatever, to, it's for a very commoditized, like, who won the Sixers game last night? Sure. there hasn't been a reason for a human to write that story in.
+
+Many, many years. I think that there's still room for a lot of news that is about connecting dots and I have yet to see.
+
+Have you had a 
+
+conversation with chat
+
+GPT 
+
+about any 
+
+issue that is not black 
+
+and 
+
+white and that 
+
+is thorny, i. e. 
+
+Most of 
+
+humanity. All of it is like, 
+
+this is a very 
+
+complex 
+
+issue.
+
+I'm 
+
+[00:39:01] Alex: right, 
+
+[00:39:01] Brian: do you keep telling me this? of course it 
+
+is like, 
+
+[00:39:04] Troy: agreed, 
+
+[00:39:05] Alex: I mean, you're using the vanilla model. I think what, when you talk about 
+
+opinion, 
+
+[00:39:09] Brian: model 
+
+that doesn't keep telling me that 
+
+things are
+
+complex? 
+
+[00:39:12] Alex: Okay, so who, who's been doing a great job of this. 
+
+Ezra Klein has been doing it the best job of anyone to try to cover the stuff happening in Israel and Palestine, right?
+
+Like he's 
+
+bringing 
+
+all sorts of different voices.
+
+[00:39:24] Brian: thought it'd been good. He said, he said different 
+
+[00:39:26] Alex: that is 
+
+a, great source of that. I expect people, consume 
+
+that a lot for entertainment because they enjoy listening to you know, you could get the salient points out of any of these things. one of the tweets that talks about the main points The reason you listen to this is that you enjoy That type of discourse and that type of conversation and it's essentially an entertainment product at the end of the day and so that's why I say if if it's just keeping me up to speed on what's going on then there's not a lot of space for the 700 word article 
+
+[00:39:56] Brian: but what is keeping up to speed? Because I think you're sort of taking, I think you have a very particular view of news. I think you could probably get
+
+most of your news from like 
+
+Captivate, the like elevator 
+
+network, you know, that's like, by the time I get to the 17th floor at 
+
+WeWork,
+
+I've been pretty much caught 
+
+up. 
+
+[00:40:15] Alex: look, 
+
+I, think it's, pretty universal. I think there are topics that people they just want to know what's happening. And, that's the weather that's, 
+
+[00:40:24] Brian: the weather,
+
+sure. 
+
+[00:40:25] Alex: news. That's, events locally that 
+
+[00:40:28] Brian: Yeah, but look, the weather channel exists. Why does 
+
+the weather channel exist? 
+
+What? Why? Like people, you just know the weather everywhere. Like it's like a 
+
+massive company. 
+
+[00:40:36] Alex: turn it on as entertainment. 
+
+[00:40:37] Brian: No, no, I get that. But that's what I'm saying. It's like what people want out of news. And I think a lot of people in the news industry sort of gone tangent, but like, it's a podcast.
+
+lot of what people want out of the news industry is really not to keep informed. It's, yeah. It is almost a form of entertainment and like cheering for my team against the other team and taking a side and seeing how things will turn out. Oh, there's a twist. There's a turn. And it's sort of horrible to me in, in that there's real people with real lives being affected.
+
+And a lot of
+
+people treat these issues 
+
+not to quote unquote keep informed, but it's like a spectator
+
+sport to some degree. It's not all that 
+
+different from the 
+
+civil war 
+
+when rich people would go out 
+
+and get 
+
+good seats and view 
+
+the
+
+battles 
+
+[00:41:24] Alex: Yeah. 
+
+That's why. Trump was 
+
+so great for news media because it turned most news into entertainment for most people, right? People were glued to that 
+
+[00:41:31] Troy: But, hey guys,I hate to play moderator, but,
+
+yeah, it's nice that we can hear your take on, the role news plays in our lives, but the, uh, I'm curious about something else closer to the interface, concept, and I'm wondering from you, Alex, what. is the form factor and interface of a phone 
+
+going to change materially in the next five years? 
+
+are we going to see a big departure from what 
+
+[00:42:02] Brian: Yes, 
+
+[00:42:03] Troy: brewing, like that I have in my hand?
+
+[00:42:06] Brian: it makes no sense that we carry around these phones. Seriously, go around. I put this in my newsletter today. I'm sorry to jump in here. I go around New York sometimes and I just say, I'm going to count how many people are looking at their phones, walking around the streets or holding their phones.
+
+And usually it's about 50 percent when I'm going to it. That is so weird.
+
+That is so strange. 
+
+The idea that people are 
+
+walking around 
+
+looking at a phone that they don't
+
+even use as a 
+
+phone is bizarre.
+
+It's so strange.
+
+[00:42:36] Alex: Okay.
+
+boomer 
+
+[00:42:37] Brian: How is that not? That is, 
+
+first of all, let me tell you this. 
+
+In 10 
+
+years, the most boomer 
+
+behavior will be, 
+
+will
+
+be you looking at your phone and you 
+
+won't be looking at your 
+
+phone. You're going to have 
+
+on like a 
+
+VR headset. I know
+
+[00:42:51] Alex: I don't entirely disagree. I maybe have a more 
+
+subtle 
+
+response to it. 
+
+[00:42:55] Brian: I go blunt.
+
+[00:42:56] Alex: I think that, and, maybe it's the right time to talk about the AI pin after that. I actually think that, 
+
+this new technology. Is going to basically slow down the urgency of trying to reinvent the interface within the device.
+
+So I feel that, people could just see like, well, it used to be punch cards and then it was keyboard and it was mouse. And then we brought it even closer because you touch it with your fingers. And now the next step is to bring it even closer and just beam it into your eyeballs, right? And this, this will still happen likely, you know, and, and it's, going to be, interesting to see this progress, but, I expect like the perfect, the perfect AI interface, for a lot of activities, not all activities is actually a small screen that fits in your back pocket and air pod in your ear.
+
+Where you can talk to it. And when there's something you need to see visually, you look at it. Oh, can you show me the map of this thing? Then you pull it out of your pocket. I don't know if there's any better way to do that, but it seems to be really good enough for 90 percent of the use cases and the technology we have today, which is. All the pieces are there. OpenAI's chatbots with voice, Apple iPhones with AirPods is essentially the future, that you saw in her, right? especially as a company, as a technology improves, the only thing that's keeping us away from that is that Apple is not letting you integrate open AI in a, in certain ways.
+
+there's a little bit of a delay between responses and stuff like that, but all of that stuff is there. So I actually don't think that there's that much urgency in reinventing the thing. You have a tiny computer in your pocket that has a screen when you need it. You have a tiny earpiece in your ear that can talk to you.
+
+Maybe you can add glasses to it that connect to the phone as well. but that feels like it's a very viable ecosystem, which is why I actually think the AI pin is a complete dud because Why? Why does that even have to exist? A little thing that you clip onto your lapel that has a speaker on it, that has a projector that projects onto your hand.
+
+It feels like it's a solution in search of a problem because The technology is there. It's massively, used, it's massively produced. It's becoming cheaper. phones are staying, phones are, are 
+
+the device for the 
+
+next three decades,
+
+[00:45:18] Brian: Well, I think the 
+
+problem is the phones. I think it's, it's pretty clear that, I try not to fall for like moral panics. I can remember
+
+when, Americans supposedly were watching like 13 
+
+hours of television a 
+
+day. And it was a major panic 
+
+around that, 
+
+like the 1980s. And so phones are the version 
+
+of that. 
+
+[00:45:35] Alex: but phones. are essentially TVs. 
+
+I mean, we call 
+
+them 
+
+[00:45:38] Brian: Yeah, that's true. Cause I mean, 
+
+I was, I 
+
+[00:45:40] Alex: just 
+
+portable 
+
+[00:45:41] Brian: mean, Troy, you've talked about like,sit on the couch, looking at your phone is now normal thing, like a bunch of people, they do my work at seven 87, a coffee shop around here. And. This young couple sat down across from me.
+
+They each looked at their phone for 45
+
+minutes next to each other, showed each other a couple of TikTok 
+
+videos, and then suddenly after 45 minutes, one like hit the other 
+
+one in the shoulder and they
+
+got up and left together. 
+
+I'm like, 
+
+this is
+
+fucked up. 
+
+[00:46:04] Troy: Alex, kudos to you because that was your second mic drop in the episode. I think that's a really good way to look at it. That maybe, maybe the importance of the screen. And it's augmented more actively by something in your ear that can pick up voice.
+
+because so much of what we need to do can be done In new ways supported by an AI interface that our dependency on staring and scrolling and pinching and opening apps and stuff is reduced and yeah, maybe it moves to the face in terms of some type of augmentation. That's completely
+
+feasible, I think.
+
+that's the next wave that we're about 
+
+to.
+
+[00:46:46] Brian: Well, I think AirPods to 
+
+me are going to be more 
+
+important to 
+
+Apple's 
+
+future than the iPhone. 
+
+I mean, maybe that's a sweeping statement about stuff I 
+
+have no idea about, 
+
+[00:46:54] Troy: But listen, the first time you're at a party, and someone starts pinching and looking at the time on their hand, with a little projector, or listening to music on, or touching their, their,
+
+pin, 
+
+[00:47:05] Brian: yeah. 
+
+[00:47:06] Troy: think, what an asshole. 
+
+[00:47:07] Brian: but, 
+
+I thought the same thing when Gary 
+
+Vee was 
+
+wearing around AirPods 
+
+originally, I said, what 
+
+an 
+
+asshole. 
+
+[00:47:13] Alex: still think that, but, but, if you look at the modalities and the uses
+
+of it, most of the time, and, and I don't think most, people have experienced that because the technology needs to get to a, once you're talking about conversational AI, it needs to get to a level of quality and reliability that is so high that we haven't really experienced it yet.
+
+But if you have something small enough in your ear that allows for pass through info, not only pass through audio, but even improves the audio that you hear. I use those things at a concert and it reduced the loud sounds and allowed me to have a conversation. I mean, technology is getting there as AirPods being an amazing augmentation to people.
+
+You will still need a tiny computer with a tiny screen because it is your TV, your laptop, your everything. Oh, I need to, I need to look at this image. I need to look at this video. Right. So why would you get rid of that? Now, maybe next iPhone looks like glasses that you wear on your face, but it's still an iPhone.
+
+You know, it's still the same thing. It's still the, the merging of a TV computer phone into 
+
+[00:48:17] Brian: Yeah, I guess, I guess the part that I 
+
+think about 
+
+is, I think 
+
+phones are the new cigarettes. I think we're going to look back 
+
+on phones like cigarettes, like the way 
+
+[00:48:26] Alex: And you're talking about software. This is a software concern. It's not a hard work. It's not a form factor concern. the software on phone is the cigarettes. The phone is just a computer 
+
+[00:48:37] Brian: Okay. It's not the bullets bullet. Some kill people. 
+
+[00:48:40] Alex: no, 
+
+no, no, no, no, that's not that's not what I'm saying. This is not, 
+
+[00:48:43] Brian: the, it is the bullets. It's not the guns.
+
+[00:48:45] Alex: but it's not, even what I'm saying. It's just like the 
+
+if you want to change the behaviors around like phone usage and where people, are just addicted to tick tock, you have to change tick tock.
+
+The, the phone itself will not disappear. 
+
+[00:48:57] Troy: Okay, there you go. I'm glad we had this conversation. I actually have to bounce soon
+
+[00:49:02] Brian: Wait, can I just have a final topic on that Humane AI thing,
+
+brother spirit? 
+
+[00:49:07] Alex: Jesus. 
+
+[00:49:08] Brian: the, article The New York Times 
+
+wrote about,
+
+humane ai, I, I urge 
+
+everyone to watch the, 
+
+video if 
+
+you have. And it's,
+
+it's quite a. 
+
+It really is out of Silicon 
+
+Valley, the TV show. 
+
+[00:49:19] Alex: of Silicon Valley, the TV show. 
+
+[00:49:21] Brian: Yeah. 
+
+that's what I mean. It's, it's really out of that. but apparently in a buried part of this lead, I got to ask Aaron Griffin, who I believe wrote the story with what she was thinking. apparently they, the founders, consulted Mark Benioff's, He, who is he? He's an acupuncturist, his name is Brother Spirit, and, sitting beneath a palm tree on a cliff above the ocean at Mr.
+
+Benioff's Hawaiian home in 2018, they explained both devices. This one, Mr. Benioff said, pointing at the AI pen as dolphins breach the surf below, is huge.
+
+it's gonna be a 
+
+massive company. Brother Spirit blessed it, and then they're off to the races. I guess,
+
+first things off, 
+
+do you know Brother Spirit? 
+
+Alex, you're in the
+
+area.
+
+[00:50:05] Alex: Yeah, we all know Brother Spirit. No, I have no 
+
+idea who Brother Spirit is.
+
+[00:50:10] Brian: I don't know, it's a 
+
+small, it's a company town. 
+
+[00:50:12] Alex: Talk about a name that is, 
+
+self important, huh? 
+
+[00:50:15] Brian: Brother Spirit. 
+
+[00:50:16] Alex: Yeah, it's just like, 
+
+[00:50:17] Brian: He's, I bet he's 
+
+fun to hang out with. 
+
+[00:50:19] Alex: I'm sure he is. The way they announced this product doomed it to failure, even if it was the best product ever. I think sometimes people leave Apple. and think that they can have the same amount of self importance and hubris outside of Apple than they did in Apple, but then 
+
+realize that, 
+
+[00:50:37] Troy: a hundred percent.
+
+[00:50:38] Brian: I was like, who is this guy? guy? I was like, uh, is this a satire? I don't know who this person is. Why is he acting like this?
+
+[00:50:46] Troy: the way he touched the devices and, and kind of held them up and presented them was, was very spoofy. Yeah, it's, it's kind of 
+
+cringe. But, Brother Spirit, we should see if we can get a hold of him. We can get 
+
+him on the podcast, 
+
+[00:51:00] Brian: it. I'd love to have him on this. 
+
+[00:51:01] Troy: Alex, can you get him on? You haven't got any guests yet.
+
+[00:51:04] Alex: I'll try to get Brother 
+
+[00:51:06] Brian: Are you connected to him on LinkedIn? Is 
+
+he on LinkedIn?
+
+[00:51:08] Alex: I mean, He's 
+
+on 
+
+Twitter. He's on
+
+Twitter. I'm not sure. I mean, there's going to be more than one Brother 
+
+Spirit. 
+
+[00:51:16] Brian: If we don't, if we can't get him, I 
+
+can 
+
+get Nigel,
+
+my dark monk. 
+
+[00:51:19] Alex: Let me ask you some clarification on, on the fact 
+
+Was that story something they 
+
+willingly shared or was it leaked? 
+
+[00:51:26] Brian: you see, that's the part I don't know because I'm like, just based on the launch, they got a lot of PR and behind them and stuff. And I would think, I don't know PR, but I, I would definitely, if I was advising them, I'd be like, maybe we keep the brother spirit story of the back
+
+pocket. 
+
+[00:51:42] Troy: but the end, the journalist was clearly having fun. Like as the dolphins breach the surface of the
+
+[00:51:48] Brian: Oh my god, if someone was telling it I was like, I would just basically try not to react 
+
+Because that's one where you're getting this detail. You're 
+
+like, oh my god Why are
+
+you giving me this 
+
+rope to hang you with
+
+why would you do that to 
+
+yourself?
+
+[00:52:02] Troy: pinheads. 
+
+[00:52:03] Alex: 
+
+
+[00:52:05] Good Product
+---
+
+[00:52:05] Alex: you
+
+have a good product, Troy? You 
+
+[00:52:07] Troy: well, I have one that I thought you might appreciate Alex because I think you, feel like we've been shitting on your game stuff and we know
+
+that 
+
+The gaming is important to the kind of, entertainment and cultural 
+
+economy, 
+
+[00:52:19] Alex: Thank you. 
+
+[00:52:20] Troy: you're welcome. my good product this 
+
+week 
+
+is, tennis on the switch. 
+
+is that funny? 
+
+Is that funny to the gaming community?
+
+[00:52:28] Alex: no, no. It's great. 
+
+[00:52:30] Brian: what's What's is that like? 
+
+We, 
+
+is that the new we 
+
+[00:52:34] Troy: Yeah, it's it, the, the switch is a great product. It's portable. You can plug it into your TV 
+
+it's really, and 
+
+[00:52:41] Alex: you 
+
+talking about? 
+
+So 
+
+[00:52:43] Troy: it's the new one. It's whatever we sports and 
+
+the new version of it. And, 
+
+[00:52:47] Alex: All 
+
+[00:52:48] Troy: You grab those two controllers on the
+
+switch 
+
+and you play, you know, alarmingly
+
+fun and competitive and 
+
+dare I say, lifelike 
+
+game of 
+
+tennis with your kids.
+
+It's blast. I love
+
+it. 
+
+[00:53:00] Alex: That's a good, that's a good one. 
+
+[00:53:02] Troy: Good 
+
+product. 
+
+[00:53:03] Alex: Yeah.
+
+
+
+[00:53:03] Troy: Well, I, it wasn't like, you know, clean 
+
+air, 
+
+[00:53:06] Alex: you were going to say 
+
+[00:53:07] Brian: air is actually a 
+
+great product.
+
+Mountain air, mountain 
+
+air is great product. 
+
+You know, if You 
+
+go to the 
+
+mountains, that first breath of like mountain 
+
+air, you're like, 
+
+
+
+[00:53:17] Alex: Yeah. And 
+
+[00:53:19] Brian: this 
+
+is,
+
+life. 
+
+[00:53:20] Troy: you know, what else is a good product if you want,
+
+you know, those Turkish pizzas, they're called 
+
+PD.
+
+[00:53:26] Brian: Oh yeah.
+
+[00:53:27] Troy: Those are good.
+
+[00:53:28] Brian: Those are really 
+
+[00:53:28] Troy: good. 
+
+[00:53:29] Alex: I think if you're gonna buy a switch, you should really consider 
+
+the new Steam Deck, which 
+
+is the the the PC version done by Valve and it's a portable PC they just released an OLED version. It's 600 bucks five six hundred bucks and it's it's what I recommend everybody buy, if they're trying to get into gaming.
+
+It plugs into your TV, it's portable, it's powerful, but it doesn't come with tennis, 
+
+[00:53:53] Troy: the games for it? Where do you get the games for it?
+
+[00:53:55] Alex: Steam, 
+
+so Steam is,the, kind of the 
+
+biggest market. 
+
+[00:53:58] Troy: And how do you control it, 
+
+Alex? 
+
+What's the 
+
+[00:54:00] Alex: It's got, it's got sticks, it's got pads, it's got touchscreen. It looks like a Switch, it looks like a Switch, essentially. 
+
+Yeah, I have one. I'm thinking about 
+
+upgrading it. it's pretty portable and pretty affordable. great, great, great product. Very exciting to have 
+
+technology hardware. 
+
+[00:54:17] Troy: Just so everybody knows. I might get one. 
+
+[00:54:19] Alex: deck D E C K. 
+
+[00:54:21] Troy: Okay. 
+
+[00:54:21] Brian: Steam deck. Okay, 
+
+[00:54:23] Troy: All right.
+
+[00:54:24] Brian: cool. 
+
+
+[00:54:24] Outro
+---
+
+[00:54:24] Alex: you know 
+
+what, it feels like media has become. It's a bunch of tech people complaining about writers not being fair and a bunch of writers complaining about, tech people being assholes. But the truth is they both want to be each other.
+
+The only optimistic one I like, which is still critical is, the verge cast.
+
+They're great. 
+
+[00:54:41] Troy: They're you.
+
+[00:54:42] Alex: they're me, they're 
+
+[00:54:43] Troy: Yeah. Those are just They're just your people, you know,
+
+
+
+All right.
+
+[00:54:47] Brian: cool. right. Thanks guys. 
+
+[00:54:49] Alex: you. It's been fun. Bye. Like, and subscribe. 
+

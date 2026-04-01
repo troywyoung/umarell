@@ -1,0 +1,1373 @@
+PvA S3E150
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Alex: It's a big day today. 
+
+[00:00:03] Brian: what's today? 
+
+[00:00:03] Alex: Well, as you've all heard Hollow Knight: Silksong is coming out. We've all been waiting for it for seven years, right? 
+
+[00:00:09] Brian: I have no idea what you're 
+
+talking about.
+
+[00:00:11] Alex: what, this is a, media podcast. You, you're not, you're not clued up about the biggest media event 
+
+of The day. 
+
+[00:00:17] Brian: No,
+
+[00:00:18] Alex: it just came out 
+
+today and, it's crashed. Every 
+
+system, 
+
+it's a massive media event that most people are never going 
+
+to 
+
+[00:00:26] Brian: Well, and the thing is, it's, this is the problem,
+
+It's not like lining up for windows. I mean, that was when times were good. 
+
+
+[00:00:32] Welcome
+---
+
+​
+
+[00:00:43] Brian: welcome to People versus Algorithms. A show about 
+
+connecting the dots in media, technology, and culture.
+
+I'm Brian Morrisey, joined by
+
+Dr.
+
+Pan Gloss, AKA, Troy Young and the misunderstood Alex Schleifer
+
+[00:00:57] Alex: Thank you. 
+
+[00:00:57] Brian: the gaming community.
+
+[00:00:59] Alex: Thank you. 
+
+[00:01:00] Troy: you big huggable game. Are you? 
+
+[00:01:04] Brian: I'm eager for, for this pan gloss. Packaging just to set it up. I just had breakfast with someone who's been in the media industry for 30 years, I'll just say. And one of his first comments to me was, I can't believe young people go into this industry. Now you can go, Troy. 
+
+[00:01:21] Troy: Well thank you
+
+Brian. Thank you for having me this week. before I
+
+start, I was 
+
+admiring human computer. Alex got the memo that everything is media. So, he took a bunch of his hard won venture capital and in advance of releasing a game is creating basically a video game media
+
+company. And he's got the Intrepid Elliot out there doing sort of
+
+well-scripted YouTube videos about his favorite
+
+His
+
+favorite gaming experiences, the one he did this week made me wanna play a game, to be honest.
+
+The one where you, what it was like, you skip around in some spaceship and it's kind of ambient noise and you know, you got all these wicked kind of
+
+landscapes that you fly around in and it's not like, you know, traditional gaming mechanics.
+
+I thought it was cool. 
+
+[00:02:11] Alex: I think you're talking about Sword of the Sea, potentially. You're kind of surfing on a sword over the sand. It's
+
+like it looks like a, Yeah.
+
+yeah. 
+
+
+[00:02:19] Everything is Fine
+---
+
+[00:02:19] Troy: Anyway, the, everything is fine narrative, Brian, to get back to it 
+
+was, 
+
+[00:02:23] Brian: you're gonna channel your Neil Vogel. Go on. 
+
+[00:02:26] Troy: Yeah, I mean the changes that we're living through and I guess we can start to see the outline of the future. We can talk a little about that, but they're pretty tectonic and for people that we know and love in the digital media space. The distribution changes brought about by AI and Google's kind of deprecation of 
+
+the juicy, you know, traffic filled link have been hard on the
+
+industry, particularly if you had, I don't know, 60% of your traffic that came and drove
+
+your advertising affiliate or subscription line item.
+
+You know, it's been hard. Obviously, the, other big narrative is the, disintegration of the, cable box and the bundle and everything that that's, you know, forcing with what were once the best businesses in media. But I maintain that if you survey the market broadly, you just see a ton of healthy innovation, maybe
+
+less on the business 
+
+model side where money's pouring out of the, you know, out of sort of, you know, what, I guess were, LA larger, kind of more generationally established businesses to, you know, smaller, maybe more transitional media companies. And if you look, you just look at, and I, and I was just thinking like, look, look at all the things that I sort of delight in. And you look at maybe what you might call the sort of
+
+Indie Wonders or the, O tours, and they've stripped out all the 
+
+costs and they leverage platforms and the audience potential of platforms and the business and the virtue of it 
+
+extends from, usually from the founder.
+
+And you know, the business model may vary between, you know, advertising subscription and events and maybe merchandising. But it, you just, you don't have to look very far to just see an endless number of you know, really
+
+interesting people in sort of emergent media bar, whether that's The person we talk about a lot, Emily Sunburg at 
+
+Feed Me That's doing great.
+
+Or
+
+[00:04:25] Brian: She just hired 
+
+just hired her first couple people. Managing editor and 
+
+I believe a contributing editor,
+
+[00:04:32] Troy: Nicholas Carlson, who seems to be off to a good started Dynamo Media. I watch
+
+this oil platform video that 
+
+has a couple million views on it that he did that was super interesting and I think a sign of independence making kind of ambitious, you know, 20 minute YouTube content. Oliver Darcy seems to have
+
+taken his sort of whiny liberal media criticism beat.
+
+[00:04:56] Brian: dialed that back. Come
+
+[00:04:58] Troy: Yeah, a little bit. And you know, he used to be a, Republican, which I 
+
+didn't know, but he was on Peter Kafka's podcast this week, and he's smart and unrelenting and it seems, status seems his, it's called status, if you like, You know, an aggregator, John Ellis, I've talked about it before at news items, makes Tasty Morning content on the bigger side.
+
+We see a couple years after leaving the Times, Barry Weiss might
+
+bag a hundred million dollars plus exit with her sort of feisty brand of right-leaning stuff at the Free press. And maybe paramount,
+
+[00:05:32] Brian: That's, it's very important to be
+
+[00:05:34] Troy: But the, the list is, is long, right? A lot of it's, you know, podcasting, but you've got the Tech brothers their podcast network, TBPN, you got Pivot that's making people a lot of money.
+
+You've got All In, which is,
+
+you know, a big podcast with lots of convening power. We've had 
+
+Henry. We got M-K-B-H-D, we got Henry Blot now with his new, you know, kind of positive Slanted Solutions podcast. We got, you know, the old stalwarts in podcasting like Dax Shepherd with armchair expert who built a nice business you know, plain English Ben Thompson's podcast.
+
+How 
+
+long gone? 
+
+[00:06:14] Brian: Get the Thompson straight. 
+
+[00:06:15] Troy: Oh, Derek Thompson. Yeah. 
+
+Ben's got 
+
+[00:06:19] Brian: It's like the worst 
+
+[00:06:20] Troy: Ery. Ben has a nice business. Huberman has a nice business. Smartless has a nice business. 
+
+[00:06:26] Brian: They're all small.
+
+[00:06:27] Troy: Friedman. I mean, no, they're small, but they're serving us 
+
+well. 
+
+[00:06:31] Alex: I mean, and there's new ones.
+
+[00:06:32] Troy: Amy Poer has a hot new podcast. The
+
+Kelsey Brothers have new heights, dude. Perfect. Is doing a tour across.
+
+Theaters with Regal and then, and you know, 
+
+so there it's going, there's a lot there and it's going well. Then you have the guys that are aggregating people like Puck 
+
+is Argu, arguably a aggregator that blankets four or five verticals with 
+
+emails every day.
+
+You know, has 
+
+people that are really 
+
+sort of getting, you
+
+[00:07:04] Brian: they're breaking, they're breaking news. And Di 
+
+[00:07:06] Troy: news. Lauren, Lauren broke the news on, 
+
+on Vogue's new editor.
+
+I think that they're sort of 
+
+unrelenting, they're ever present in my, in, in, in my kind of media 
+
+[00:07:16] Brian: Very 
+
+small business. Small business.
+
+[00:07:18] Troy: small business. And then Semaphore is trying to lead a 
+
+different play, which I find kind of fascinating.
+
+So kind of make a, 
+
+a, a premium, internationally oriented 
+
+journalistic product, keep it kind of unrestrained by a subscription imperative.
+
+Drive, I guess high levels of awareness and influence with that. Start to do niche events and then really try to 
+
+get a big event. And if You can get a big event that other people build small events around and you see that, you know, those are coveted assets like so by 
+
+Southwest or Can or CES or Met Ball or Davos, you can build something extremely lucrative and
+
+[00:08:02] Brian: like a $400 million 
+
+business, I 
+
+think, Thomas. So it's, it's a big, 
+
+[00:08:05] Troy: yeah. And so they're, they're aspiring to do that with I think their World Economy Summit. 
+
+Justin, who's the, you know, business lead at 
+
+Sfor, Justin Smith seems comfortable there and they made new hires this week, you know, in, in,
+
+in, in the event
+
+[00:08:22] Brian: All like events, you know, 
+
+[00:08:24] Troy: all of what they call, they call live journalism, right?
+
+And then we're seeing. The people that are trying to escape the gravitational pull of the cable bundle. And we're seeing that with Fox and ESPN. The annoying part here is, is Alex pointed out in a text to me is the authentication on ESPN is a, is a bullic for sure. Because you know, they're forcing you to use your, in my case,
+
+YouTube tv or your, you know, your Comcast authentication to get or your Disney authentication to get access to that content.
+
+But they're trying to basically turn sports consumption into something that's more active. I don't know what Fox is doing 'cause I haven't checked it out, 
+
+[00:09:10] Brian: They got Portnoy. They got Portnoy up, up in there. They've got, McAfee is on. I mean, this is, this is part of being talent aggregators or talent managers. I think that's a,
+
+a 
+
+[00:09:20] Troy: yeah. 
+
+[00:09:20] Brian: good lane basically. 
+
+[00:09:22] Troy: so all of this means that the kind of distribution through line that was like the old way that, you know, distribution in media is the thing to always look at, to
+
+figure out how people win or lose.
+
+And I would argue if we do want to talk about Vice, vice could have 
+
+been a great business and definitely had a, a a, a kind of highly differentiated kind of, format and point of view.
+
+But other 
+
+[00:09:51] Brian: just missing an 
+
+audience that that was 
+
+[00:09:52] Troy: well, other than grabbing a TV station in a dying cable 
+
+world you know, they had too much spend against 
+
+a shitty distribution or an unstable distribution strategy. But if they had just stayed 
+
+closer to being a production company, it could have been a terrific
+
+[00:10:10] Brian: Yeah. If they stayed 
+
+a a front for like being a 
+
+production like arm. Great. Sure. Sure, but they had no audience. That was
+
+[00:10:18] Troy: Anyway, what I think I communicated or at least tried to is across these different media types, whether you're focused on being, you know, kind of
+
+lean and vertical and a tour led, or you're trying to build a big event franchise, or you are, you know, you have the luxury of sitting. I think it's interesting to see
+
+kind of news 
+
+providers start to inherit. The mantle of cable news and they look really, really different. So I think, for example, New York Times benefits from that. And these kind of organizations are hybrid media organizations now. They're text and audio and video in addition to being more than just news, like news and lifestyle. And so you, you get, you know, what I think is a huge amount of inno innovation and a very, very well-served consumer.
+
+So the best of times, Brian. 
+
+[00:11:12] Brian: Yeah, I mean, absolutely. know, I think one of the issues if I could as I tried to point out throughout it, is most of these are very small businesses. So like you have a, a sort of tale of two worlds the best of times and worst of times. It used to be much better to be bigger. And in some cases it is in the case of like the New York Times, wall Street Journal still is a good business.
+
+Bloomberg Media, I think they had one of their like best years last
+
+year or earlier this year. I think they
+
+had one of their best quarters. Great. But for most of the legacy businesses, 
+
+it is managing decline and I think that does get probably oversized a attention.
+
+[00:11:48] Troy: those legacy businesses that are managing decline? Just to put like, to be really specific about it,
+
+[00:11:54] Brian: Oh, well, I mean, I think, I think Hearst on the consumer side, your, your former perch to me, they're managing decline. 
+
+[00:12:01] Troy: lifestyle magazines. 
+
+[00:12:02] Brian: Yeah.
+
+Forbes is managing decline. Fortune is in harvesting mode, I believe you would call it. It's set all of the, the, I think in some cases you see, look at, look at what has happened to Buzzfeed.
+
+You know, Vox is trying to be like a talent
+
+management arm at this point. They've got a bunch of legacy assets that, that aren't, you know, very exciting right? now. So it is a good time to 
+
+start from scratch. You're not forced to have that, that scale has 
+
+become an albatross of costs. you have to get as lean as possible, and it's a good 
+
+time to have a front business too. A lot of 
+
+the businesses that you're talking about are media businesses, but really they're using 
+
+media and service of a different, much better business. I mean, Justin can call events like live journalism. He used to be looked 
+
+down upon. It's funny because like I can remember Henry Blodgett calling Digiday an events company with a website and he didn't mean it 
+
+complimentary. And now any port in the storm, I guess everyone wants to be an events company. Everyone wants to talk to me
+
+about their events. As Alex has said, a lot of people are choosing the second worst business model out there, which is agencies. They're basically what Brian 
+
+Goldberg is as a party planner right now, right at at Bustle. I, I mean, I respect it. It's just a totally different industry and
+
+[00:13:21] Troy: the point I was making about the events thing is 
+
+there's having a group out to a bar to convene a, you know, 40 person event in support of an ad sale. And there's the coveted position where you get to an event that's actually the center of an ecosystem in a really valuable event. And that one is really hard to
+
+get to because it takes a long time, it takes years, And you have to convince a whole bunch of people that your event is worthy of kind of broader community aggregation.
+
+And if you get there, you have a very different asset on your hands heads. 
+
+[00:13:59] Alex: just to go back at the, maybe the higher level narrative here is that, you know, I mean I, we've all been guilty about just like beating down in this business and I've been guilty than most, but, I think to the consumer, to the media consumer right now, this feels like a golden age. It feels like it's also golden age for a lot of creatives. A lot of talented people are able to kind of go on their own. And not only that, but hire, right, like M-M-K-B-H-D hired people, Dr. Murrow hired people. There is kind of an industry, these are not just like people in their bedrooms. And, and they're small businesses, but there's a lot more of them it seems.
+
+[00:14:33] Brian: Oh, for sure. 
+
+[00:14:33] Alex: like, and also when you think about it, like the, the the declining businesses, like when I look at declining business around me, there's like, declining business. Businesses that have had real structural and societal impact, right? There's massive malls that are lying empty in the middle of communities.
+
+You know, there's like, you know, churches, there's all sorts of infrastructure that's kind of, you know, falling apart and really impacting the community. But what happens if a large media company disbands, what usually happens is like maybe 10, 20% of those people are going to go start a substack on an exciting YouTube venture, and. Nobody else feels the pain. You know, it kind of like gets
+
+[00:15:15] Troy: Well, the only people that feel the pain are you and me that have to live in Trump's world. I would argue
+
+[00:15:21] Alex: Yeah,
+
+[00:15:22] Brian: What does that mean?
+
+[00:15:24] Troy: what that 
+
+means is
+
+that there's no, there's no common truth in only the shameless survive. And, and, and you can, you can only understand the modern political environment by a complete shift in how people consume media.
+
+[00:15:39] Alex: Fair. 
+
+[00:15:40] Brian: Yeah, I've been amazed that since, like, it's interesting when the incentives change of going sort of independent. I mean, he talked about Oliver Darcy, he's in my view, he's, you know, he does a great job with status, but he's also sort of downplayed a little bit, like started to soft pedal, a little bit of the oppositional anti-Trump stuff.
+
+You know, he is still democracy dies in darkness, but you know, when you get out into the market, you, you end up doing differently. Then you look at someone like Tucker Carlson. It turns out he was restrained at Fox News. He's gone completely to the other side because the market rewards conspiracy thinking and just asking questions about all kinds of things.
+
+World War ii, do we know who, who, which side was, 
+
+[00:16:19] Alex: I mean,
+
+that's the, that's the
+
+the whole new thing right now is just like. I like, we're kind of reconsidering all those Indiana Jones movies to see was he maybe the bad guy?
+
+[00:16:28] Brian: It's hard to say. It's hard 
+
+[00:16:29] Alex: I don't know. Would it have been bad if the arc of the Covenant 
+
+
+
+[00:16:33] Troy: Putin versus Biden meme is hilarious. 
+
+That's a, that's pure tucker.
+
+[00:16:38] Brian: So I guess it is the best of times in some way, shape or form, and I'd love to see data on this. I haven't actually researched it. I would like to do some. But at the same time, I feel like people are perpetually unhappy with their, their, their media choices, particularly around, around news.
+
+And figuring out what is real and what is not real is, is fairly difficult. I was struck by, however, the weekend did you see Trump is dead, was trending on, on X, and then the, the quote unquote, the media got blamed by Trump and the media like ignored it. This was all this.
+
+[00:17:15] Alex: ignored it. That was actually one of the big narratives across Reddit and Twitter was where's the media here?
+
+[00:17:20] Brian: It's like you cannot win. Like really? I mean, look, the media is not without its sins. Clearly. It's been beaten down so much that I feel like it's done. Its benet and like still, if something like this explodes across social media, it gets blamed on the media at some point. Like, you just can't win. 
+
+[00:17:41] Alex: But what is the media as well? Who, who felt blamed? Who got, who got shit for this? Nobody.
+
+[00:17:46] Brian: oh no. Trump said this is why you can't believe fake news. You know? I mean, this 
+
+[00:17:49] Alex: I mean, there were also like uh, when there are trash backs thrown, it's, it started now, right? Like the idea that, that the fake news idea is going to be supercharged with ai. And there was some trash backs being thrown out of a top window of the White House, and he said that wasn't real.
+
+That was ai.
+
+So, I mean, I don't even, I don't even know if it's real at this stage. But that's, that's going to be the, the ongoing narrative, which is why I do think that. At some point, kind of like a, more like modularization of the media landscape where you kind of have sources which are more often than not going, start becoming personality led.
+
+At least you know, people. I think there's going to be more of a press towards, I mean, it's been happening for a while, but pushed towards like people and individuals versus corporations because like nobody knows what's real. I wrote in my newsletter, I wrote, wrote about this thing about the AI squinting, right?
+
+Where you kind of look at everything and you're wondering if it's real or not. and I feel like there is an antidote to that. And I go to Reddit and I go to Twitter and, and I go to YouTube and I find the people whose voice I trust, and I listen to them, and it, it, it doesn't feel that bad right now.
+
+Like for a while there it felt like,
+
+[00:18:59] Brian: Wait, you you have specific Redditors who you like turn to.
+
+[00:19:03] Alex: I mean specific Reddit communities for sure. I, I
+
+read most of my news on Reddit. I, you know what? I read, I read the headlines on my New York Times app after I do the games, and then I go on Reddit.
+
+[00:19:14] Brian: I see what it has to say.
+
+[00:19:16] Alex: I think
+
+it's a valid media consumption behavior.
+
+[00:19:19] Troy: How about Instagram? Are you consuming like news on Instagram, 
+
+[00:19:23] Alex: I find that difficult. I think my Instagram is like too small. I don't know. And TikTok, I feel like TikTok is just, TikTok is like walking into a casino, like you don't know what time it is. You end up smoking cigarettes and you get out and it's four in the morning and you've lost 
+
+money. 
+
+[00:19:38] Brian: on 
+
+Instagram.
+
+[00:19:40] Troy: But that's a perfect take actually.
+
+It's either a casino or, or, or a mall with teenage girls. Yeah, it's awful. 
+
+[00:19:46] Brian: Do you know Mo News? Mo News is actually an interesting
+
+one. This guy he used to work for for NBC or CBS Evening News Mo Nu and he started this on Instagram, just on his personal Instagram over the pandemic. He just started aggregating news and basically making it into a, a, a nice little Instagram format.
+
+And it really took off and it really took off. Among I've talked with Mo a few times about this. I've it really took off among like, like Midwest moms. And, you know, he started doing first person videos and now he's got a thriving little business. You know, it's, it's podcast, it's video, it's Instagram, it's newsletter. And there are lots of these businesses that are being built and what the ceiling of them is, I don't know. They're probably not made for say, venture funding. Exactly. But you can actually build, I, I think that we're gonna see it, we're gonna see lots of $5 million businesses for sure. I don't think we're gonna see many 
+
+[00:20:45] Alex: But I, I think if you're, if you're, if you're savvy, and, and I think what people are noticing now is that if you're savvy and you have audience. Right. I, I think like you need to, which is, which is maybe something that like. Pure play media. People don't see sometimes, like if you're savvy and you have audience, there's an opportunity to build something else around it.
+
+I'm not building a media business because I wanna sell media. I wanna build, I'm building a media builds this because I'm building audience for my video games, which have,
+
+[00:21:11] Brian: Yeah. It's a 
+
+[00:21:12] Alex: a good
+
+margin. It's, It's, I mean, it doesn't have to
+
+be, I think it can be, I think it can be very cohesive. I, Dr. De Murrow has this cars and bid sites.
+
+I'm sure he makes, you know, like, I think if you're enterprising enough, it doesn't, or. I feel that a lot of the events business is media, people having a lack of imagination. It's going, oh, how, how do we turn this into money?
+
+[00:21:34] Troy: I don't think that I, 
+
+[00:21:35] Brian: Well,
+
+no, it's just 
+
+easier to rent out a room or
+
+do do an event. They're not gonna build software. I mean, there is this 
+
+idea, and I've seen it, 
+
+that it's like, oh, we have an audience and
+
+[00:21:45] Troy: Brian, you get his legs. I'll get his face. We'll, 
+
+[00:21:47] Brian: we'll, 
+
+[00:21:48] Troy: get the 
+
+[00:21:48] Brian: we'll just
+
+build software.
+
+[00:21:51] Troy: No. Here's the 
+
+thing. Here's the thing, Brian, 
+
+[00:21:53] Brian: Give 'em a wet. Willie,
+
+[00:21:54] Troy: The capitalism, capitalism will, will, will sort it out. Don't worry about the $5 million businesses where it makes sense to aggregate them. Some fucker will aggregate them right where it, like Vox will aggregate them or talent will, will migrate to, to, to to bigger media platforms like it'll, we're in an in-between time.
+
+The golden age is, I can now cancel station. I can cancel. Parts of my media bundle without having to wait on hold with a cable company, I can get vertical news with abandon from people I trust and like I can move around. The only real victim is shared truth.
+
+[00:22:35] Brian: Okay. It's a small, small price to pay. Hey, I wanna get your take on um, on where. We got a bunch of YouTubers, but we just Yeah. 
+
+Societal collapse. 
+
+
+[00:22:45] Vogue
+---
+
+[00:22:51] Brian: I wanna get your take on, on Vogue specifically. Vogue has a new quote, unquote head of editorial content. Chloe Mao, I guess it is. She's a Nepo baby and I like that she's owning that she's a Nepo baby. Because the Nepo babies get too much grief, I think it's time for them to have their, have their time in the sun anyway. She's now head of editorial content because, you know, they're, the editor in chief is a thing of the past, and to me it's, it's actually a sign of how, of where these publications are going. They're brands. At the end of the day, you're more of a brand manager than you are an editor. And because the money is, is gonna be different. Vogue just came out with their September issue and it was a healthy 365 pages. You know, it used to be. Up to a thousand pages. And she had a, a lot of very sensible things to say in the New York Times article about her appointment particularly around the role of print.
+
+'cause I think I, I wanna talk about print for a little bit and physical media and, you know, she talked about it being basically a less is more thing. You're gonna publish less frequently even than like monthly. And it's going to be around quote unquote cultural moments. This is basically just code that you're gonna come out with, with issues that are going to be part of activations.
+
+They're gonna be part of franchises, and this is a sensible direction. For print, what was your, what's your take on the state of Vogue, Troy?
+
+[00:24:15] Troy: Um, You know what I love when, when Jason Calcan sets the handoff up mid, like mid paragraph so that the person on the other end knows that it's coming, but I knew it was coming today because you're not gonna ask ask Alex,
+
+ask to ask Alex about this. I like it. I 
+
+think
+
+[00:24:35] Alex: a very Troy heavy. Troy Troy centric episode.
+
+[00:24:38] Troy: Yeah. Go to Troy on this.
+
+I like it. I like it. She seems smart. She seems nerdy. She seems like a content person. I think that this, we used to have a notion at, at at, at Hearst called Months to Moments, and it was the admission that. You know, the, the, the sort of water carrying monthly, you know, magazine was, was, was being replaced.
+
+And you know, I think that she, she, she recognizes that you can't have a digital channel, like a website that's filled with, filled with bullshit and clutter that you need to find moments where you have influence. The way I look at it is what sort of carries the water for you when you're, you know, vogue was point of view, but the sort of, you know, the, the have to print delivered that to a lot of people that kind of made that point of view have consequence.
+
+And now I think instead of that, you know, monthly cadence and something that matters to people, you have to, you have to capitalize on the moment as a distribution mechanism. And so that means everything from putting you know, what's her face, Jeff Be's, 
+
+Lauren Sanchez on the cover to just, you know, finding the thing that you can, that you can lead with.
+
+and clearly the brand still has a, you know, reputation for its critical point of view. And and I think, you know, she sees of time in the future where we always used to get excited pot about the potential revenue in the magazine business of the Bookazine, which if you go to Target right now, you don't really see magazines.
+
+All you see is Bookazine and they're kind of moment or kind of topically oriented, thicker publications that have a high sticker price and aren't nearly as dependent on advertising. So
+
+[00:26:25] Brian: all
+
+recipes, Mediterranean Diet book Bookazine.
+
+[00:26:28] Troy: Yeah, yeah, yeah, yeah. That kind of thing. The keto diet, you know, you know, you see a lot of those. So you're gonna see Vogue kind of, you know, on the print side, you know, basically the magazine and the book magazine have a baby, and you're gonna change the frequency and you're gonna try to find ways to, to kind of merchandise that, make a little bit of money and maintain influence around it.
+
+But I, I, I personally thought she seems smart. She seems like she. Is like a, like more of a content person than a sort of superficial fashiony person. And she's a journalist. And I think that what's required in the next generation of the brand is someone that really understands what those moments are, what, who, who's important, what moments are important, what news you need to focus on, and, and, and kind of what trends you're gonna own.
+
+And, and to me that, that, that requires a really, really savvy kind of cultural observer. And, and to the extent that she's, that, you know, like go with God,
+
+[00:27:30] Brian: Yeah. Alex, any anything to add on this before we get onto Google?
+
+[00:27:34] Troy: she's also a huge gamer.
+
+[00:27:36] Brian: Is she,
+
+[00:27:36] Alex: Is she,
+
+[00:27:37] Troy: Yeah. 
+
+[00:27:38] Alex: uh, 
+
+[00:27:39] Brian: Candace Bergen's daughter. 
+
+[00:27:41] Alex: Oh really? That's crazy.
+
+One thing that I thought about is that the old boss is going to be a few doors down the hall, and I think that's never a good sign.
+
+[00:27:50] Brian: No, I mean, look, I don't know if it's, if it's gosh to say, but Anna Wintour should have like, sort of sh sh shuffled off. I mean, 
+
+it's just like knee capping, like a successor
+
+By, by still being there and everyone holds on too long. Like why, 
+
+what, what's wrong with just like passing the baton? Like this is not a Supreme 
+
+[00:28:08] Alex: Yeah. ask
+
+ask 
+
+[00:28:09] Brian: is she like Ruth
+
+Bader Ginsburg, that didn't work.
+
+[00:28:12] Alex: Yeah. That didn't work. I don't think it's very generous or, or, or it doesn't, it feels it's very unhelpful and it feels very egocentric to do that. 
+
+
+[00:28:21] Google
+---
+
+[00:28:21] Brian: I wanna talk about Google really quickly, or not quickly. Big Rolling came down. 
+
+[00:28:26] Alex: What a
+
+bummer. What a bummer.
+
+[00:28:28] Brian: so basically, you know, look, we can get into the details about the data sharing and stuff. This all, all comes down to antitrust is about either structural or behavioral remedies. And every company's gonna fight tooth and nail not to have the behavioral remedies. They can slow walk that, they can tie it up. And what Judge Amit Meta came down with, and I think he surprised some, was instead of forcing Google to say split off Chrome. They basically got a slap on the wrist. Their stock skyrocketed.
+
+And so the details are the details, but the big picture thing is Google basically just has to do some small behavioral changes and the judge came down by saying they got helped by chat chippy t And my conspiratorial thinking when I was on the subway this morning was. Maybe Google slow walked. Its AI rolling out its massive advantage in AI to allow chat GPT to get a little lead.
+
+They never, it never hurt Google's core business. And then they had an excuse to head off this antitrust case that has been in the works since at least 2008. Microsoft was drumming up this case in, in the, like mid two thousands. They used to have this guy Ben Edelman, like on their payroll and they would send him to me to say about how Google had this anti-competitive position and, and it was impossible for any company to compete.
+
+It's literally the exact same case that it eventually got, got brought against them and Google has headed it off. Alex, this is great news, right? 
+
+[00:30:11] Troy: It 
+
+is good 
+
+[00:30:12] Alex: is,
+
+this is terrible news. look, I'm not, I'm not a legal expert, so maybe this is the right ruling,
+
+[00:30:20] Brian: was the original you know the original title of this podcast, Troy, you remember that, right?
+
+It was, it was, you wanted to call it, I'm not an expert, but, and then ellipses. Go 
+
+[00:30:30] Alex: Uh, 
+
+Well, how, how, how things have changed. Now we have opinions about everything. yeah, no, I think, so to me, what I was looking forward to, just as a technology enthusiast was. The dismantling of the Google Apple deal where, you know, Google pays like 30 something billions of dollars for Apple never to innovate. and I think it would've done like really interesting things to 
+
+[00:30:52] Brian: Just to be clear, this is the distribution deals that Google has been striking since the 
+
+beginning. I mean, there's 
+
+a reason 
+
+that they report traffic acquisition costs, 
+
+traffic acquisition costs are paying people to have a poll position.
+
+[00:31:03] Alex: On the one hand, it's the, this distribution deal with Firefox, with the Mozilla Foundation that keeps the Mozilla Foundation alive because it's 80% of their revenue. On the other hand, it's a thing that, like, I think Apple has been kind of, on a downturn just from the product innovation side, I think this is part of it where they've never had to really innovate on search. They get, they get this like essentially free money from Google every year to make sure that just Google is the first thing you see when you open up a browser. I think that, you know, especially with, you know, the age of ai, et cetera, it would have been great to see like Apple try something out the same way they did with maps and, and shake things up a little bit. I think it would've been interesting to see what happened if you split Chrome off. I, I feel like all of these big companies being split up would, would, would kind of like feed the ecosystem a little bit and allow for new things to come up now. The judge thought that because there was competition from ai these remedies were too severe.
+
+I think you're right. I, I'm pretty sure there's a bunch of products at Google because they really kind of, like, if you look at their product roadmap, it's really been constrained. They, they kind of gone f. They kind of built a little moat around Chrome and certain things where like, why is, you know, why am I
+
+being shoved?
+
+Like, why am I being shoved all this AI when I like writing a Google Doc? But yet it's like, so it's not, it's not even, you know, it's hardly visible in Chrome. Right. And, and why haven't we heard of more conversations between Google and Apple? They have this great search deal. You know Apple, Google has Gemini.
+
+Why, you know, apple is in trouble with ai. Why aren't we seeing more of that? A hundred percent. They were like, oh, we don't know what we're doing. Now they, now they get to flip all those switches 
+
+[00:32:49] Brian: is like, this is like pro
+
+wrestling. I mean, this is the, this is a trick old oldest trick in the book. I mean, you 
+
+[00:32:55] Alex: it's like, it's like, okay, we we told the tiger not to bite it anymore. So we're cool now. Like, I think
+
+[00:33:00] Brian: What's noteworthy with this to me is the, the ad tech case is the ad the advertising antitrust remedy is coming up and they've basically said that the government was overreaching when it came to a structural remedy. So that is gonna put pressure on this subsequent ca case, which a lot of people I've talked to just assume that Google is gonna get rid gonna have to spin off.
+
+Its, its ad tech assets, the former double click assets that are now Google Ad Manager. you know, Sundar Phai has really managed this quite well. The other thing that came out is SEM Rush. Did, did a study that showed that AI is actually growing the search market. It's not displacing, so they'd found that chat GBT users actually expanded their use of Google from 10.5 searches a week to 12.6.
+
+Now this is a, a data point. I think there was an assumption that chat GBT is replacing Google, but it could just be that the search market is growing even more good time to be a Google shareholder.
+
+[00:34:02] Troy: Are you inviting commentary or are you socialists done now? I mean, it's like it, it'll get sorted out. I mean, it may take longer than you want. It may take longer than you think, but like 
+
+[00:34:15] Brian: These antitrust cases are 
+
+[00:34:17] Troy: listen,
+
+there are lots of cases when someone corners an industry in a way that obviously suffocates innovation discourages 
+
+entry into that market,
+
+[00:34:28] Brian: Price fixing like meat 
+
+[00:34:30] Troy: Yeah. But. You, you know, I think the history of involvement in, in, in, in, in kind of litigating against competitive powers in technology space is just like too little, too late. And what happened, guys, is a new competitor is taking, I don't, I don't care if search. Queries went from 10 to 12, you know, because, you know, it's a new type of behavior that AI is has created and it's kind of making the pie bigger.
+
+The fact is there's lots of options to, to get access to an index of what's on the web. And it's really cool that Google actually makes good products that we all benefit from and have benefited from historically in lots of ways. We all use Google Docs for free. We use Google Sheets, we use their communication, but we use Gmail.
+
+We like Chrome. There hasn't maybe been enough in, in innovation in the browser space, admittedly, and search has worked really well for consumers and now the market is picking away at it because there's a disruptive new technology. We don't need the government here, 
+
+we don't need the government taking this apart. 
+
+[00:35:43] Brian: Hey, this is, 
+
+America. This is 
+
+[00:35:45] Troy: this America. man. 
+
+[00:35:46] Brian: We 
+
+let 'em play. Alex. In sports, you get two kinds of refs.
+
+You got the ticky tacky guys who are
+
+always throwing flags, and you got the 
+
+[00:35:54] Alex: you guys, you 
+
+[00:35:55] Troy: look at what, look at what Europe has done in attempt to, to to, to
+
+limit the power 
+
+[00:36:00] Brian: Get get after GDPR. 
+
+Hold 'em 
+
+down, Troy,
+
+[00:36:02] Troy: To get its legs.
+
+[00:36:04] Alex: Uh, I, I'm not a fan of J-J-D-P-R and I don't understand why it always comes down to these lines. I think that 
+
+[00:36:11] Brian: because
+
+they were, some 
+
+people wanted another of those 
+
+[00:36:14] Alex: You guys,
+
+you guys don't realize like there is socialism in America, socialism for corporations.
+
+Like wait till you run a corporation, how much easier it is. You get chapter 11 protection. If your bank gets too big and starts crumbling people stomach intel is like 10% owned by the government now. So
+
+let's not talk about 
+
+[00:36:29] Troy: Yeah. Yeah. But Intel, I, I, 
+
+you know what? Intel is a different 
+
+[00:36:33] Brian: that's state directed 
+
+capitalism 
+
+to you, 
+
+[00:36:35] Alex: hang on, hang on, hang on. I think you have a very like. I think you're showing a lack of imagination by saying, look at Google Docs, look at sheets, look at Chrome. All of these products are in some sort of form of arrested development because of the incentive that these companies have, like even Safari Safari, the, the, the open web that we so loved, right?
+
+We, we are having these companies like not innovating on that based because they have incentives to keep these systems closed. And yes, sometimes some intervention is good. These companies. We we're the first trillion dollar company was like 2015. Now we have a $4 trillion company. And we're like, no, this is fine.
+
+Nothing's
+
+[00:37:14] Troy: Thank God we do actually, thank 
+
+[00:37:16] Alex: I was watching this show called Alien Earth yesterday. Which is on in the Alien franchise. And they were kind of setting the scene where these five corporations that each own a chunk of the world and everybody's inden is, and, and, and my wife said like, oh, wow, this feels more realistic than it ever did.
+
+And I think these companies are too big and it's, it's hurting, it's hurting consumers. Like the, the Apple Google deal is not good for us. Like, nothing's this, this stuff, it feels like, you
+
+[00:37:44] Troy: Hey, apple is coming out with a search engine, Alex.
+
+[00:37:47] Alex: I hope so, man. But they're never gonna say goodbye to those 30 billion 
+
+[00:37:51] Troy: It's 20 billion, but yeah, they're coming out with a search engine. 
+
+[00:37:55] Brian: All right.
+
+[00:37:56] Troy: And guess what? If Apple keeps fucking around and not innovating and not serving their consumers, they're going to go away. There will be change. And right now it is just about to happen because it's not a phone plus ai.
+
+It's AI plus a phone. 
+
+And that's coming quickly. And,
+
+[00:38:14] Alex: Yeah. And the apple,
+
+this Apple event that's coming in on uh, September 9th, I think is going to be a dud. And I think people, I think like it's going to,
+
+[00:38:24] Troy: And then a bunch of little competitors will jump in and everything will be kumbaya.
+
+[00:38:29] Alex: I don't think competitors can jump in because the moat's too big and because nobody's doing anything against it I'm not saying you Europe, Europe doesn't know how to do this either, but at least they do something.
+
+[00:38:39] Troy: Well, China knows how to do it, and what they do is they put a lot of money behind their big kind of industrial franchises.
+
+[00:38:46] Alex: And if you complain
+
+and then they make, they disappear you for six months. If you
+
+[00:38:50] Brian: They have, They have, an interesting system there. There's a, there's a new book I really want to read about. I was just listening to one of many podcasts that the author did Dan Wang or Wong, I guess, about the, the China industrial system. It is like, you know, they're, they're, they, their leadership is filled with engineers.
+
+Ours is with lawyers. That's the shorthand. but they have like a ruthlessly competitive system. So it's like a weird state directed capitalism, which I guess we're trying to. 
+
+Imitate. I, I have doubts that I just think our system is more, you know, we're, let 'em play. I, I don't, I don't, I don't think we I mean,
+
+[00:39:22] Alex: uh,
+
+you should should listen to this week's episode of Plain English 
+
+[00:39:25] Brian: Oh yeah, I did.
+
+[00:39:26] Alex: Oh, by the way, uh, this, but
+
+this just didn't, I don't know how much it matters to people, but Atlassian just bought the browser company which makes arc. 
+
+[00:39:35] Brian: God, talk about a dud of a company. They talk, they talked more than they actually shift, it seems to me. 
+
+[00:39:42] Alex: Oh, they 
+
+shift.
+
+They shift plenty. I just like, you know, and, and people love the product. It's just maybe, I think it's one of those it's one of those things where this maybe should have been a, a, a, a billionaire's you know, lifestyle business versus a venture backed business.
+
+[00:39:58] Brian: It is hard to build a browser.
+
+[00:40:00] Alex: It's a, yeah, and it's a great browser.
+
+It's actually not that hard to build a 
+
+[00:40:03] Brian: Is it a wrapper on chromium or 
+
+is it like, 
+
+okay, so it's not even, that's what I mean. You know.
+
+Oh, well,
+
+[00:40:09] Troy: Brian, is there anything else you want you had on the docket that you 
+
+
+[00:40:12] J.Crew AI Models
+---
+
+[00:40:12] Brian: Oh, one thing that I just wanted to, to touch on really quickly was, it's hard for me to understand when backlash is real. I, because most of it seems like a version of Astroturfing. But J Crew did you know, did some AI models for some products and they got called out for this. And I just see more of these instances, particularly among the creative class, no doubt where there is a negative reaction to the use of AI in any kind of creative work.
+
+Now, I don't know when that becomes a brand problem for, for ai. Alex, do you, is this real, 'cause this doesn't seem like a real grassroots phenomenon, but I'm wondering if, if this can actually impact AI adoption.
+
+[00:41:02] Alex: Yeah, I think it does. I mean, I think it does. And maybe so in gaming particularly, it's it's a big enough issue that, that, that some games got in big trouble when you know, there was a, in, in some sort of like prompting, like remnant that came up in, in a video game and they were using it for translation or something like that.
+
+And there was, you know, pretty severe backlash. But then video game has, you know, pretty demanding consumers. i, I think it is. I think people have some sort of like AI repulsion when they see it. They, they don't really wanna see it. But what they're not, I think what will it, it's, it's only happens when it's noticed.
+
+I think what will happen over time is that people will learn how to use it enough little by little, so that people get used to it and at some point we won't even think about it. But yeah, AI generated stuff generally gets a fair amount of backlash. I mean, did you see that Rod Stewart thing where you had AI generated version of Ozzy Osborne hugging Tupac that didn't get, that was maybe, that was maybe a faux pa. But yeah, I, I, I think it's an issue. I think, I think
+
+[00:42:02] Troy: Brian, who broke this story? Blackbirds, who broke the story?
+
+[00:42:06] Brian: Oh, this is Ab B's favorite. I think you're a little late to this
+
+Blackbird spy plane. 
+
+[00:42:11] Troy: yeah. So they did kind of a gotcha thing and they said, oh, J Crew bought back, you know, eight nineties or eighties lifestyle imagery with the help of ai. Like, who cares? Seriously. Who cares? I get it. If you have, if people are gonna have, I mean, 99% of people moved through that on Instagram and thought, Hey, those are cute vans.
+
+Oh, I remember this. J Crew vibe move on. Like this is, this 
+
+[00:42:37] Alex: Right, but, but, but, but here's the, here's the difference. Troy and I, I gotta hop off because I have a hard stop. I think that people are fine on, but if you queried people and you told them, are you cool with this being ai? They would, many of them would say no. And, and, and, and there's like a subtle difference there.
+
+And I do think it's something important for people to think about. 
+
+[00:42:56] Troy: yeah.
+
+[00:42:56] Brian: right.
+
+
+[00:42:57] US Open With AB
+---
+
+[00:42:57] Brian: Let's bring in Ab
+
+[00:42:58] Troy: Ab 
+
+[00:42:59] Brian: you 
+
+[00:43:00] AB1: Hey, 
+
+[00:43:00] Alex: Yeah. I'm gonna, I'm gonna sit around for five minutes and, and listen to
+
+[00:43:04] Troy: You just wanted, you just wanted, to say hard stop, huh? 
+
+[00:43:07] Alex: Uh, I 
+
+[00:43:08] Brian: That's, that's his, that's 
+
+his, new brand. 
+
+[00:43:10] Alex: warning.
+
+[00:43:10] Troy: What? 
+
+[00:43:11] AB1: to doing massive zoom calls, so that's one of the, the typical keywords you have to use. 
+
+[00:43:16] Troy: I'm 
+
+running outta Zi Zins here. Ab, so what do you got this week?
+
+[00:43:19] AB1: Did you guys already talk about tennis? 
+
+[00:43:21] Brian: No, we didn't talk about tennis. This is the US Open. I had, I had a source. Tell me that you were at the US Open and you, and you were one of the people who bought the a hundred dollars chicken nugget boxes with 
+
+caviar. Is this true? 
+
+[00:43:35] AB1: Yeah, we bought like six. Yeah. 
+
+[00:43:37] Brian: Good investment. Gimme, gimme the case for, it's not that outrageous, considering that the, that
+
+[00:43:43] Troy: No, it shows up in a deal p and l as miscellaneous expense. It's 
+
+what he does. 
+
+[00:43:48] AB1: I don't bill it back to my clients. I mean I think the surprising thing is actually was really tasty, but I think when you pay enough for the tickets and the experience, like an extra a hundred dollars for caviar 
+
+[00:44:00] Troy: I'm glad they convinced you of that ab, but I had those nuggets in there like fancy 
+
+McDonald's. 
+
+[00:44:06] AB1: is good, but it's one of those weird things where you don't think caviar's gonna go. I, I think fried food with the most random things is pretty good. But I. think Brian, you wanted to talk about how it's become more of like this consumer event, 
+
+[00:44:17] Brian: Yeah. Well, I mean, I'm interested, I'm, I'm mostly interested in rich people 'cause I think the future of media is not, is not really niche. It's niche, yes. But it's niches that cater to the proclivities of rich people. And tennis is one of those, I mean, we, we already, we see it in golf. We see it in F1. And tennis to me is perfect because it's, it's a, it's a sport for people who hate 
+
+sports 
+
+[00:44:42] AB1: Yeah, I mean, it's called the sport at Kings, right? So you can play it your whole life. You're more active if you actually play tennis. You're way more active than if you play golf, meaning you, you, you get a real workout. The other thing too is like. It's not that expensive to have the equipment so you can spend money on all the other things.
+
+So, and.
+
+it's fun to watch. 
+
+[00:45:01] Troy: Yeah, and it's a sport that you can, you can participate in as well as watch, which is nice. The other thing that's happening AB is the convergence of sort of club life and these type of sports. Like the ki example with Patel 
+
+[00:45:14] Brian: it's, it's, it is the rich fan flywheel that F1 has 
+
+perfected. 
+
+[00:45:19] AB1: It's good. I mean, you see this with, there's golf, these in city golf clubs where people are being charged even in like second tier cities, 20 to $30,000 membership fees to just be a part of a golf club that has a restaurant. It's like a mini soho house. It has a restaurant in a bunch of hitting base, but I think it's good for tennis.
+
+I mean, tennis is this wonky thing where. The tournaments are all sort of owned separately, and then the rights are divided out in a weird formula. One is like the opposite of that, right? It's like very streamlined. They do a really good job of hosting events. Across the world. They monetize those events.
+
+Most the physical events, most in cities that are trying to repair their image because they're in unique spots. And then they have a really, they do a really good job because they, one organ, one organizing body controls all the, the rights, the TV rights, and the other meteorites. And then like, LVMH just did a massive deal with.
+
+Formula One, and that's not possible in tennis. But for Formula One, it works. I think the good thing about tennis is there's a, a, a lot more tennis players and there's a way to show your personality. In tennis, that's different than a lot of other sports 'cause you don't have any, you don't have a face mask on.
+
+You're there for two hours. There's different spots in the game where you can be mad or happy and yeah, It's, cool. 
+
+[00:46:40] Alex: it's actually like a pretty perfect sport for this day and age where you can, you have like real reaction from like the, the audience is closed, there's kind of a, a, a set of characters around it, you know, like, and then there's a lot of time on the actual players. So it's, it's really personality based. 
+
+[00:46:56] Brian: And there's drama there. There's a lot of drama, particularly in the US Open, and I feel like tennis players are made for drama because they got taken out of their homes like when they were like 12 and sent to, to the Nick Ary Academy. So they all have like arrested development and so their emotions are a complete mess.
+
+So they have regular meltdowns and,
+
+and that plays really well. 
+
+[00:47:18] AB1: Yeah, and, the tournament format is weird because in most other sports, you keep playing. Like in golf you make the cut and you keep going, but the tournament thing is like you, some of the best players get knocked out, and so it makes even the first. Match is important to watch because unique like things can happen where a really highly ranked player can get beaten by someone that's like an unknown, and then it can become its own little story as part of the tournament, 
+
+[00:47:41] Brian: Yeah, but let's be real. This, this is about like another thing 
+
+to cater to rich people. See Alex like this is, it's a, it's, it's great. This is all sounds wonderful, but it's mostly just, it's another congregation area for rich people and that's, that's who, you know, JP Morgan wants to be attached to, et cetera. I'm just struck going around New York City the last, like, week, how many activations there are with copious brand sponsorship. I, I live down near South Street Seaport. Don't ask why. And you know, there's, there's a, there's a nice racket. 
+
+R-A-C-Q-U-E-T. Yeah.
+
+I didn't, no, I didn't. I 
+
+just cased
+
+[00:48:19] AB1: Next time, next 
+
+year? 
+
+[00:48:20] Troy: I think AB
+
+is involved with 
+
+that company. 
+
+[00:48:23] Brian: yeah.
+
+[00:48:24] AB1: I invested a little bit, but Kate, what Caitlyn's doing is amazing. Um, That event was 
+
+fun. 
+
+[00:48:28] Brian: founder of Racket. It's been around for a while, almost like a 
+
+decade. 
+
+[00:48:32] AB1: Yeah. It's been, I think that the market is finally, you know, she's using the magazine as like a currency to explain what her kind of go to market, and then she can have it come alive with these events and other things. 
+
+[00:48:45] Brian: So, walk me through this, because we had a little back and forth when AB went first. Principles on Matri. I got, I, I got disciplined. He told me I needed to think from first principles. I was like, oh my God, we got Chamath on the line. But you know, to me, I, I, I was saying, you know, look, I always believe these things are front businesses like you use, and maybe it's me being a quote unquote content guy. I'm like, okay, well the content is just like an excuse to like run the activation. Like, it, it's, it started as a quarterly magazine. What is it? Down to Like twice a year the newsletter arrives like sporadically. It's not even like weekly. It's like sometimes it's every three weeks. I went back and checked, like there, there's, it just randomly arrives. So like, yes, is it a media business? 
+
+Okay. 
+
+Sort 
+
+[00:49:33] AB1: the, yeah, the, the magazine or whatever the content helps refine like an authentic voice that brands want to buy into. Most of the writers that write. For racket or for any of. these boutique magazines will also take their byline off and do that same type of content for the brands. Right. So it's, it's in a way, it's like a mini marketing agency. 
+
+[00:49:53] Troy: In a 
+
+[00:49:53] AB1: some, It is. That's what it is. But that's 
+
+[00:49:56] Troy: So,
+
+you know, we, we, it's like this is talking to the tax man about poetry here. I mean 
+
+[00:50:01] Brian: this is Troy's irritation yeah, the, the irritation meter just went up. the truth is, is that tennis as a content driven sport is very, very difficult, right? Tennis lifestyle as a content 
+
+[00:50:13] Troy: driven enterprise is non-existent.
+
+And so you have to create this sort of veneer of a luxury brand, deliver it, you know, in a magazine that's well put together, but no one reads and try to convince people to subscribe to it, which is extremely difficult outside of a very niche group of people. And then do activations for brands. And, and, and really you can sit alongside the tournaments and do stuff like 
+
+you saw Brian and it makes lots of sense.
+
+And she's a really, Kenny, you know, aficionado and, and, and, and, and high high 
+
+[00:50:44] Brian: hustle.
+
+Total 
+
+[00:50:45] AB1: but when we're being, so like, 'cause when we're, we're being negative of magazines, like the simple fact is nobody ever read magazines, right? I've sold a bunch of magazines and most of their files. There's sub files. Even when there was 500,000 or 700,000 people, most of that was Phil. What I, what I, mean by that is kids would walk around their neighborhood and get people to subscribe to magazines and the magazine would never get any money from that, and it was basically a BS way for the ad sales team to go to big brands and say.
+
+And you multiply that number by five and you say, that's our audience, that's 
+
+[00:51:21] Brian: I, food 
+
+[00:51:22] AB1: everybody knows 
+
+[00:51:22] Brian: coming, 
+
+keeps coming to my 
+
+apartment. I don't, I never subscribed. 
+
+[00:51:26] AB1: and Berg made this really good point, like six months ago, which was like, are you actually ever reading any magazine that you get? It's just like a, it's sitting there, right?
+
+It's just like an object. And so if you can, if you agree with those points, so I, I we're both like, we're saying. You can have two things that are true at once. What you're saying, Troy is the right thing, which is, is anyone reading it? No. But did anyone ever read this stuff? Not really. Magazines were a currency to get people on the 
+
+[00:51:52] Troy: Again, you're missing, you're missing so much nuance and you really 
+
+like, so,
+
+[00:51:58] AB1: You're getting mad. 
+
+[00:51:59] Troy: I'm not getting mad at all. I'm saying that there were, there was rate-based inflation across the industry because the advertising market in, in print magazines was so good that it made sense to inflate your rate base to get your rates up so you could sell higher priced magazines in some categories of magazines is not one category.
+
+Right. There was never a big tennis magazine. There is no 
+
+such thing. 
+
+[00:52:24] AB1: There isn't gonna be a big tennis, there isn't gonna 
+
+[00:52:26] Troy: right.
+
+And, and where you saw sort of. You know, superficial readership numbers was in the fashion magazines, right? Because no one ever paid up for those subscriptions. On the other hand, there were those that, that, that, that, that did a good job of living in both worlds, like Cosmo, that really did have high readership, right?
+
+Or there were the news magazines that had very dedicated readers, whether that was The Economist or in the old days, Newsweek or Business Week or whatever. So some magazines were truly driven by subscription revenue. Some were that just there as a vehicle for, you know, carrying advertising and the entire industry was in, was guilty of some rate-based inflation for sure.
+
+But you know, today they're all just souvenirs.
+
+They're 
+
+[00:53:14] Brian: So
+
+I'm interested in ab Why are you, you're, you're, you're an investor in a 
+
+couple of like magazines. This is, is this, this is like, this is like a, this is like a rich person 
+
+hobby. That's my, that's my, 
+
+[00:53:26] AB1: at all. Not at all. So I'll 
+
+[00:53:27] Brian: is just to go to like
+
+parties. 
+
+[00:53:29] AB1: I'll tell you my, investment thesis, which the rack, and this is, this is not Caitlyn's. this is purely me speaking. So it's never going to be a hundred million dollar business, right? I think, I don't know if the valuation was talked about, but it wasn't that large.
+
+Her last round. And I think the, the goal is to grow that to a couple multiples of that, but not much. You can, you can't, it's not feasible because your market is not that big. The goal of the magazine is to contextualize tennis and to go get premium advertisers and do the, the revenue mix is not going to be like a magazine of the past is gonna be more brand work events, things like that.
+
+And the future buyer of any of these premium properties is someone who already owns something in tennis. And says, okay, I need to figure out a way to get LVMH to give me more money. I want to go get more wallet share. So it's not gonna be the core brand of the biggest tennis media property. It's gonna be an adjacent property.
+
+So if LVMH walks in the front door and says, we wanna give you $50 million, like figure it out. You can say, okay, you can have this section of Arthur Ashe Stadium. We can put the print magazine in all the hotels where everyone's coming into the US Open. We're doing all, we're doing all these five things.
+
+And So it's just another way to reach the consumer. Racket is not gonna be a billion dollar business. Caitlyn, like everyone is aware of that. It's like, you know, I think the, there's been a lot of these premium titles that people perceive them as much bigger than they are. There's not a lot of value to be created, but I think done right, it becomes like a really interesting marketing vehicle.
+
+[00:55:05] Brian: So you think that in some like niches, 
+
+particularly ones that that 
+
+[00:55:10] AB1: Formula one is a perfect one. Yeah, there's
+
+not a good, 
+
+[00:55:12] Brian: Neve? Yeah. Okay.
+
+[00:55:13] AB1: yeah. Yeah. 
+
+[00:55:14] Troy: I think that's a decent thesis as long as you get in at the right price, that, that, that group of people as a kind of merchandising arm for a bigger strategic partner could make a lot of sense. And maybe you turn a little trick off it. It's just, you know, it, it's a question of getting in at the right price and you know, doubling your money. 
+
+[00:55:34] Brian: Yeah. 
+
+
+[00:55:34] Paddle vs Pickle
+---
+
+[00:55:36] Brian: I also wanna talk about paddle. Paddle's having, it's, it's been having quite a moment. It's replacing pickleball. I think it's a classier version of pickleball. I think pickleball has too many connotations of you know, the villages and retirement communities and whatnot. And paddle's a little bit more active. Money, people like, like ab love it. Because you can put three paddle courts on one tennis court. Right. And you've got, I was in Grand Central this morning. There's a giant activation. New York is mostly just activations these days. For ki which is a, which is in basically the harvesting phase. It's a cool brand in the harvesting phase.
+
+And so they're opening some high-end paddle club. I dunno, it costs like $40,000 a year and it's gonna have an air w in there too. 
+
+[00:56:24] AB1: Mm-hmm. Yeah. 
+
+[00:56:25] Brian: an air wand. 
+
+[00:56:26] AB1: Can I just reframe one thing? I don't think it's rich people. I think it's just, there's kind of different parts of, of the wealth thing. It's like it. It's like middle, a little bit above middle. It's like whenever you have, whenever you're earning enough money to achieve like abundance, which means like you can take maybe two trips a year or you can, you basically have enough wealth to have a little bit of free time and spend it, spend money on things that are not just necessities.
+
+I don't think it's just rich people because like there's a lot of families that watch tennis and stuff. Like you don't have to. That's the crazy thing where I live, the te, the tennis thing that I paid way too much money to join. Is far away. I can just go to the high school tennis courts and play tennis whenever I want.
+
+So like tennis is really accessible and it's closer. 
+
+[00:57:09] Brian: Yeah, no, I don't doubt that. I'm just saying that the, the, the attractiveness of these as businesses is mostly around the fact that they're a good vehicle for aggravating or for aggravated, for aggregating
+
+high household income people. 
+
+[00:57:25] Troy: Yeah, he, 
+
+it's fine.
+
+[00:57:27] Brian: a populist.
+
+[00:57:28] Troy: No, well, you have a little bit of a rich 
+
+[00:57:30] Brian: A little bit. I try to 
+
+do both. No, I 
+
+[00:57:32] AB1: I don't have any 
+
+chips 
+
+the, chips in my pocket.
+
+[00:57:35] Troy: you know, what's, 
+
+you know, what else is in that category? I, I think is backgammon. 
+
+[00:57:39] Brian: Heck, 
+
+[00:57:41] Troy: Yeah.
+
+Yeah. I think that backgammon has become a sort of popular social convening moment. Interestingly, my favorite Backgammon app, the one that has the best algorithm is called xg.
+
+The guy who made it is some kind of ba, you know, al Backgammon algorithm savant. And it was recently bought by Travis from Mover, the app. And hopefully will get a much needed facelift 'cause the UX is really bad but people are playing backgammon in social settings a lot and it's a great game 'cause you can be sort of really good at it, but you can also be okay at it and just sort of engage socially.
+
+I think backgammon is, is sort of the tennis of, of board games.
+
+[00:58:26] Brian: Hmm. 
+
+[00:58:27] AB1: But yeah, paddle's cool. I mean, you the cool it, it's a fast game, right? So it's like racket, racket ball with a court. 'cause you can hit it off the ball. 
+
+[00:58:36] Troy: I'm not sure. It's cool.
+
+[00:58:37] Brian: It's cooler than pickleball.
+
+[00:58:39] Troy: It's definitely cool than pickable.
+
+[00:58:40] Brian: I mean, it's really all about comparison. I just see, basically it's like, it's very big in Miami and, and, and usually that means that it's, it's some sort, sort of like superficial thing for extremely, extremely rich people. It, it just makes for good high-end clubs. I have no idea why. I don't, I don't doubt that like, you know, you go into, you know, many lower income neighborhoods and, and you've run across tons of paddle players. Okay. 
+
+[00:59:09] AB1: The reason, I mean, the reason why this stuff is interesting, so like golf kind of sucks, right? It's like it's too long, it's like four or five hours. It's like not, that's not fun. The reason why I like tennis and I think why Pat Patel is better is because like you said, it's a smaller court so you can throw it into cities much easier.
+
+But in one hour you can get a good workout, you can hang out with your friends, and there's a lot of formats that you can play where you can actually mix in like eight people. So I have a men's tennis group and we have eight guys. So it's not just two on two. You can mix, mix it in with an instructor and in an hour, like you got to hang out with your friends, you got a good workout and you can go on with your day and you're not stuck on a golf course, which is boring.
+
+And so, I don't know. That's, 
+
+[00:59:50] Troy: It's a big part of my social life. We convene, 
+
+tennis, go on 
+
+[00:59:55] AB1: But it is fun. Like you can take a break, you can sit there, you can play you can switch. It's, it's a really fun and since you're playing each other versus just hitting a a golf ball, it's actually like engaging. It's a competitive. 
+
+
+[01:00:07] Where's the money going AB?
+---
+
+[01:00:07] Troy: But you, you'll notice that AB is glowing a bit this week. Brian, because he got a deal done a big deal. 
+
+Yeah. And that was good for AB and it was good for me too, so that's good.
+
+[01:00:18] Brian: Oh, chicken nuggets with caviar for everyone. 
+
+[01:00:21] Troy: he's in the thick of it. He's, what else is going on in the world of, of 
+
+[01:00:25] Brian: Where's the money going
+
+[01:00:26] Troy: where's the money going?
+
+Ab 
+
+[01:00:28] AB1: So, I mean, I think basically what's happening is this m and a market, and I don't think it's ever gonna get better. I think it's just going to keep getting more chaotic. And so 
+
+[01:00:37] AB2: bankers and lawyers who can help navigate more unique situations. Are just gonna be more in demand. So we're busy, we're working a lot of interesting things, but they're not the normal 
+
+[01:00:47] Brian: What's a unique situation? What, let, let's, let's, 
+
+[01:00:49] AB2: So Ty, typically the best deal for a banker to get is a, is like a company that's been growing 10 or 15%, has great margins, has a great management team.
+
+You get hired, you market it to 20 or 30 people, you get a bunch of bids 
+
+in, you get to pick the best bid. 
+
+You negotiate that and you do a 
+
+deal, right? That's not happening anymore, especially in media. It's never gonna happen again. and So, we get hired because we know, how to bring a solution. We know how to get deals done. Deal making is not like the movies and a, a lot of bankers still treat it like the movies where they can be aggressive. 
+
+And it's like, that doesn't work anymore. So, I don't know. The market is working. People wanna sell stuff and we're helping people buy stuff. So I think, and then the other trend about this deal that we announced this week is like you have insanely talented operators who are able to navigate the current market and scale businesses at rapid paces that no one has ever seen.
+
+And, and That's really exciting. So. 
+
+[01:01:47] Brian: Give me, give me the banker case for why the free press is worth. I liked, I like Dylan's spread somewhere between a hundred and 200 million. So, you know, somewhere in between there this is like something like a 10 to $15 million subscription business. Give me the case for this on 
+
+this Is, this has nothing to do with spreadsheets. 
+
+[01:02:06] AB2: No, I mean, so here's, here's, here's the simple thing. So when I was hanging out with Troy, because I, I don't watch tv, so I got to watch the latest season of South Park and I was like, oh, this is really fucking good. Like, these guys have been making the show for a really long time, and they're still, they can capture the zeitgeist, right?
+
+It was a hilarious episode, which made me then subscribe to Paramount Plus and watch the next couple episodes. So what David Ellison is doing is saying. We know that this company has messed up its connection to consumers, and we have historically been able to cultivate really good IP that we've pissed people off and they've left.
+
+The per perfect example is David Chappelle that sh they should not have messed that up. And so what he's saying now is, I'm gonna be less value sensitive. He paid the South Park guys 
+
+whatever, a billion dollars for 10 years. I'm just gonna go get the best content. So they did the UFC deal. Paying Barry a hundred or 200 or $300 million does not matter.
+
+She goes after a a a market that's consuming news that's younger, more interesting, more relevant. Most TV news viewers are like 70 years old, right? And so I wouldn't worry about the price. It's more about the strategy of what he's doing. And I think you're gonna see this across his like networks, which can exist now on YouTube and all these other places.
+
+He's just gonna go and pay whatever he needs to for the best ip. So I, I bet he does a Dave Chappelle deal. I bet. He goes and basically figures out. 
+
+Here's the consumer that I wanna go after. What are they watching and how do I make a more premium version of Netflix with content that people actually wanna watch? 
+
+[01:03:36] Troy: That's a great take 
+
+[01:03:38] Brian: So this is like a 
+
+talent acquisition basically at the end of 
+
+[01:03:42] AB2: Yeah, but Barry's not. It's so funny everyone writing about, it's 
+
+like you've never been inside an m And, a deal when one media company is trying to buy another one for a news product. You don't 
+
+blend stuff together. It doesn't. That's not how this stuff works. It's like crazy to see this riding. I'm like, oh, my God. If you just were around one deal, You would realize how 
+
+this works. Barry's not going to touch the core product. She's going to be 
+
+adjacent, right? She's not gonna go lead a newsroom. If she, if they put her to lead a newsroom, all the writers would just walk out. So Barry is gonna be another flavor of news.
+
+That's the great thing. 
+
+[01:04:13] Troy: it's a brand. 
+
+[01:04:14] AB2: It's a brand. Yeah.
+
+It's not gonna get mashed together. And guess what Barry has figured out. Substack. It's way better for David Ellison to spend a hundred million dollars to figure out Substack for a company that's actually done it. versus a random CNN launching a bunch of random newsletters.
+
+That's where they just copy everybody. 
+
+So, yeah. 
+
+[01:04:32] Troy: And, and then I think when we make the subscription decision, we say, what's in there Right? What's in there? And you're gonna say, oh, I can watch UFC and I can watch South Park. And oh, Barry's got a, fun show on there. 
+
+[01:04:43] AB2: Exactly. 
+
+[01:04:43] Troy: I, I, think it's about assembling a, bunch of things that someone will say yes to for 9 99 a month. 
+
+[01:04:49] Brian: so does this say anything then about these kinds of creator led micro? I know you hate Microm 
+
+Media, but these are small businesses, right? 
+
+[01:04:58] AB2: No, no. I think 
+
+that's It 
+
+Barry's a news product, right? So there's other sub sectors that are covering culture and things like that. Barry's a news product. 
+
+She made it about her because she left the New York Times under Duress, 
+
+and so people know It's, Barry and then Barry goes to Jeff Bezos wedding, but it's, a news product and it's, captured this like independent thinker mentality. 
+
+I, don't know. It's just like you when you come to market in 
+
+order to 
+
+differentiate 
+
+[01:05:22] Brian: What I'm saying is are there other properties that, that are 
+
+comparable, or is this just a, 
+
+[01:05:28] AB2: One of, the other subsets that we've talked about on this podcast. Not Sun Berg's, but another one will get bought here in the next couple weeks. So I, yeah, it's gonna happen. I mean, these are media companies. They want to 
+
+go and buy and acquire audience, and if that means 
+
+buying a substack, then they'll do that. 
+
+[01:05:44] Brian: Okay, so we're gonna see Substack m and a.
+
+[01:05:45] AB2: Yeah. 
+
+[01:05:46] Troy: It is kind of back to what I said that. Capitalism. We'll sort this all out. Brian,
+
+[01:05:50] Brian: I I always bet on capitalism always 
+
+[01:05:53] Troy: a great place to drive. 
+
+
+[01:05:55] Good Product
+---
+
+​
+
+[01:05:57] Troy: Well, I'll do a 
+
+[01:05:58] Brian: Capitalism is a good product. It's, it's, it's, it takes, its, its dings every now and again, but 
+
+[01:06:04] Troy: I, um, I didn't pay much attention when Nick Carlson left bi and I did always admire how he lit up their sort of video feeds with like, you know, video of, you know, robots or production lines or wild and weird things that happened in nature And all the stuff that he was able to do. 
+
+[01:06:24] Brian: Bagels
+
+[01:06:25] Troy: And then I circled back this week and looked at his, his new brand, what's it called, 
+
+dynamo.
+
+[01:06:30] Brian: Yeah.
+
+[01:06:31] Troy: I watched a video that had 2.4 million views from something like a month ago. The video is entitled, I visited abandoned oil rigs and found something terrifying underwater. And it is that type of YouTube content that's ambitious in 20 minutes and is a, a kind of cheap and cheerful replacement for a more funded documentary.
+
+And it's great content. It's really good content. It's led by, you know, a kind of passionate person. It's, you know, the, it, they, he, he went out on a boat to these old oil rigs. it was something that, you know, it was well kind of augmented with infographics. It was just a good product. and I think it's another reason why you know that it is the best of times because we're getting that kind of content everywhere.
+
+It's, you know, content with ambition on YouTube, with, you know, enough 
+
+quality and enough personality that you really wanna watch it. 
+
+[01:07:34] AB2: The monetization has finally caught up. So in the last couple months, I've had 
+
+conversations with large media companies who finally get I. My belief is today is the cheapest time to ever buy a YouTube channel, and the 
+
+price is just gonna keep going up because ad sellers and the brands have finally figured out, oh, this is. 
+
+Like tv and if we sell it like TV and we buy it like tv, it will have like tv like outcomes positive. So, there's Cleo Abrams, there's Macy, there's a lot of these people that are leaning 
+
+into YouTube, and then also vertical video, And I think it's like the next frontier.
+
+Yeah, they're doing really cool things.
+
+So. 
+
+[01:08:09] Brian: I, I know I've mentioned him before on here, but Pablo Torre had another banger of an investigation and I think what's, what's interesting about Pablo Torre is that he's doing investigative journalism in a new format. It's part YouTube, part podcast. He just had an investigation that he did about the Clippers possibly looks like they violated salary cap rules with Kauai Leonard, he did an investigation into Bill Belichick and his girlfriend.
+
+He's done, he's done a few of them and he has a deal now with the athletic part of like the New York Times. And I think we're gonna start to see a lot more of these kinds of deals, which are more business partnerships. And that I think is the, is the most interesting part of these two parts coming together where legacy media. Needs the sort of energy of the creator class and, and both sides can, can bring something to the table.
+
+[01:09:09] Troy: Perfect. 
+
+The only thing I would say as a footnote, Brian, is you didn't mention the Disney article in your, the only thing 
+
+matters is people with money. Right? Because I guess the Disney experience has become more of an app experience. Everything's an upsell. People are psychotic about using the app, Disney benefits with all the data that comes with, with the direct relationship to to people booking that way, and the whole experiences is ghastly expensive for people that Disney 
+
+[01:09:41] Brian: And it's a brand problem, you know? I mean, it was like a totem of sort of middle class existence. I know. My dad packed the entire family into a country Squire station wagon, seven of us, and we drove down to Orlando. There were no flights in the 1980s, and if there were, we weren't on them. And nowadays to go to Disney is, you know, incredibly expensive.
+
+And, but I think that's just part of the reality of, of, of income inequality. Capitalism gives, sometimes it takes away, we have chicken nuggets with caviar and 
+
+people can't afford to go to Disney. It's fine. 
+
+[01:10:18] AB2: I mean, the sad look, the, the sad reality, and this is just gonna keep getting worse, is like, what, what's this? There's like 30% of Americans who can't, if they run into like a thousand dollars issue, they can't pay the bill. That 
+
+sucks.
+
+So, yes. Do I feel bad about buying that, a hundred dollars caviar? Yes.
+
+And if someone on the 
+
+street, if someone asks on the street, asks me for money, I give them 
+
+money. So, but I work really hard to make All this money, and if I want to have fun and spend some of it, I'm going to, so I, I don't know. But there's, there is a lot of issues with this wealth inequality and it's just gonna keep getting worse.
+
+So my random thing, I did get these, these are good. The Apple headphones, 
+
+[01:10:55] Brian: Beats. 
+
+[01:10:56] AB2: the, the app. These are really good. I just got 
+
+[01:10:59] Troy: You are, you're a couple years late on that
+
+[01:11:01] AB2: I know, but the thing I, I completely agree with that, but I think the thing is, what's always great about Apple products is when you get them, you're like, oh, they actually made 'em better.
+
+I have the Bose headphones too, but I wanted to try these, so,
+
+
+[01:11:12] Outro
+---
+
+[01:11:12] Brian: all right. There we go. Let's leave it there. Thank you for that, Troy
+
+Ab.
+
+Talk to you next week. 
+
+
+

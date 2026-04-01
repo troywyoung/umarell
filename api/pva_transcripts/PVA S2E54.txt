@@ -1,0 +1,943 @@
+PVA S2E54
+===
+
+
+[00:00:00] Cold open
+---
+
+[00:00:00] Brian: 
+
+[00:00:00] Troy: Have you guys watched this kooky show that's driving lots of viewership on Max called Naked Attraction?
+
+[00:00:07] Alex: it's sort of like a dating show where they're in these boxes where they slowly, reveal bottom, mid and top, and everybody's naked.
+
+[00:00:14] Troy: And,
+
+[00:00:15] Brian: Really?
+
+[00:00:16] Troy: Wow. I don't know what that says about where we are now as a culture and
+
+nudity is the ultimate content hack, right? It's the cheat code, 
+
+[00:00:23] Alex: they still managed to screw up the Max logo by putting the HBO little circle inside the A, and it's, it's just like terribly designed,
+
+but you know, 
+
+[00:00:31] Troy: no one's going to get upset about that, 
+
+[00:00:32] Alex: no one
+
+cares. 
+
+[00:00:34] Brian: are going to get upset, change a logo and you're going to
+
+upset people. 
+
+[00:00:37] Alex: I love the way, everybody says, like, nobody cares about design, but then, like, some of the most successful companies in the world, like Apple. Proof to everyone that design does matter. Like Nike, Apple, all
+
+[00:00:47] Troy: okay. Okay. Okay. Hold on. Take, take it easy. You know, Alex, you gotta, gotta cool it with the generalizations. 
+
+[00:00:53] Brian: This is a podcast. That's the heart of
+
+[00:00:55] Troy: yeah, thank you. You always remind us of that. No, I w I was simply saying that the little a and the max logo is not going to even be recognizable to most people. What I didn't say was that people don't care about a useful, well designed product. Okay, so you can be a designer and be proud and be courageous and be making the next beautiful thing for the world. Okay, Alex?
+
+[00:01:18] Alex: Alright, alright,
+
+[00:01:19] Brian: That's, that is a wonderful segue. I don't know if you intended it to, 
+
+[00:01:22] Troy: Brian, I secretly manage all of
+
+this. 
+
+[00:01:24] Brian: know 
+
+[00:01:25] Alex: Yeah. You kind of, ruined it by calling it out, Brian.
+
+[00:01:27] Brian: Oh, well, Troy's preferred role is, puppet master. I know that. 
+
+[00:01:31] Troy: Yeah. 
+
+[00:01:31] Brian: and that would make me a puppet. 
+
+
+[00:01:34] Intro end
+---
+
+[00:01:56] Brian: I want to talk about product people and making products. did you guys see the Linda Iaccarino, interview at Code?
+
+[00:02:03] Troy: I didn't have the, fortitude to,
+
+[00:02:05] Brian: Oh, really? Well, it is, it is what you would expect it to be. and these are set pieces and I want to get into the product thing, but I want to as, you've done these, right? Troy? so, they're like a set piece of being, an executive, and to me, they're, like, they're a little outdated.
+
+You know what you're gonna get, and you just have to, like, perform. And it's performative. It is a performance. I don't put a ton of credence into it. But obviously, it was widely panned. is this important at all? That someone is leading an organization and screws up on that part of the job, which isn't really directly related to the job.
+
+I mean, it's a part of the job, but it's like optics.
+
+[00:02:43] Troy: mean, is the question, it matter that, Linda contributes to the positive perception of Twitter publicly?
+
+[00:02:52] Brian: Well, okay. There's positive perception in quote unquote, the media to use Alex's formulation. Who are primed to hate Twitter and all that and,
+
+[00:03:02] Troy: Of course it matters.
+
+[00:03:03] Brian: okay,
+
+[00:03:04] Troy: Right, because what happens is that there's a kind of, blobby, cloud like perception of something that influences the way a lot of decisions are ultimately made. And what you're looking for if you're Linda is that People may be, I mean, I think judging from, certainly from what I've read is she would like the world to believe that X is not Twitter, that they're on a kind of bold new path.
+
+So don't think about Twitter when you think about it, they're going to redefine it. And that there's going to be some bumps along the road, but she's there to. provide kind of reassurance to the ad market and others and that, they're on the road to something better. And I think at the same time, she's trying to prove to somebody herself, the world, her family, I don't know that she's more than an ad salesperson.
+
+And an ad leader rather and so on both of those accounts, it looked like her and Ilan were out of sync and it looked like, the road ahead was going to be as bumpy as it has been for the last year or so. So I don't think that helps anything. I think
+
+[00:04:09] Brian: obviously it doesn't help. I think my biggest takeaway, I mean I wrote about this this week, But I think my biggest takeaway was the gulf between being a quote unquote product person, which we've talked about on this and being a sales leader. and, and you can be a sales leader and be a product person.
+
+I think the, the curve is steeper, I think in many ways, particularly when you're talking about technology, because having an Alex, I want to get your thoughts on this, of having people who are not immersed in the product, who are running what. Are in essence product companies. I just think it's really difficult.
+
+And the history of this in Silicon Valley is really bad for someone coming in now. Her role is different. And I think that's the weirdness of it. I don't know if she's really CEO because it's a product company. She's not running product. but talk to me about that. Sort of culture of like rejecting people who are not immersed in the product.
+
+[00:05:00] Alex: yeah. 
+
+yeah, Carino interview was kind of wild and the only thing I could think about was that she's. She's Elon's Tom Wamsgans. She's his paint sponge. She's just there to shield them from all the stuff, but I think it was probably a mistake to pull the curtain and really show how in, out of sync they are because until we saw her talk we thought that maybe, maybe this was working out, But I can't imagine advertisers We'll feel more confident after this. I, I mean, I don't know if it happens as much, but there were like a, lot of cases of, young tech people, product people bringing on, a senior CEO to run the show and
+
+[00:05:37] Brian: the grown up the grown up phase
+
+That was the you know Cuz Eric Schmidt came in and he was the adult and and I guess Sheryl Sandberg in some ways was like the babysitter for Zuckerberg before got a little bit more 
+
+[00:05:50] Alex: yeah. and I've been exposed to situations where, you know, either as an advisor or, through people that you Talk to various team, even within teams themselves in larger companies where somebody is brought in and, quite literally called the adult in the room, but doesn't have the software experience, or the experience of building anything, but, you know, understands business in quotes, understands, how things should work.
+
+And, that interview really kind of. Reminded me of what happens when you have somebody like that and that cannot talk to the product that you're building, cannot motivate teams to do the right things. And more importantly, I think they often don't know what to prioritize over not because there's very little context of how long something takes to make, you know what I mean?
+
+I'm sure this exists in media as well. Like just do the thing, just make that happen. This is what we need. And you have no idea if it's going to take a week or three months. And that makes you completely ineffectual as a leader. which honestly I think has happened. You know, we're talking about CEOs.
+
+Now, I think there's a lot of product managers in Silicon valleys that are like that, that were brought in that have an MBA. We're brought in into a successful product while Facebook was successful and, managed to grow the product, because some of these things. You know, I had a joke that I used to do at Airbnb sometimes when somebody would come up with an idea that I didn't feel was particularly interesting.
+
+I said, like, it feels like we could all go home and the company would grow 8 percent by the time, you know, in, in three months, like we could just all stop working. Like, I don't think we're adding anything here. and there was a lot of that at Facebook and Google and other companies, which has made a lot of unremarkable people, a lot of money and gave them a loud voice in product, even though they're not people who know how to build.
+
+And, you know, I don't know if there's much more to say about that, but that's, 
+
+[00:07:38] Brian: You've, you've, you've veered off to take shots at the product, managers 
+
+quite, quite a
+
+[00:07:42] Alex: I know I've noticed that I said, caught myself, saying
+
+[00:07:45] Brian: I think this is how I would say it is like the quote unquote product. And we're talking about being a product person, but it's different being a product manager.
+
+That field has exploded and it is the best way for a non technical person to get the perks that, that are accrued by technical people. 
+
+Right? It's the 
+
+fastest path. 
+
+You don't have to learn to code. 
+
+[00:08:05] Alex: and it's easy enough to like, just look at, podcasts and conferences and books being written. A lot of people who are not particularly,you know, impressive people that are getting a lot of. a lot of 
+
+influence in those fields.
+
+[00:08:16] Troy: you may or may not be an MBA, but you're probably not a lawyer. You might be a lawyer. Who knows? You're not a doctor. You're probably not a doctor. You may not have a professional designation. You're not a rabbi. You're not a priest. but if you want to, you know, modern professional designation of esteem, you're a product person.
+
+And so it's semi religious,designation, self appointed of people that believe they see the world in a different, better, more insightful way. Some people anoint them, they often anoint themselves. the requirement is obviously that you build something that people use or people find useful, but let's just rewind a little, Brian, if you don't mind, now that I have the floor.
+
+[00:08:56] Brian: Okay, the puppet master takes over.
+
+[00:08:59] Troy: so first of all, I would just remind, you guys and maybe the listeners that. You should kind of not ever, it's a bad, probably a bad practice, particularly in public speaking to remind people of what you are or not. so her, her protests that I don't just run advertising or I led innovation at NBC or I made NBC a more innovative company comes off as kind of hollow and, I wouldn't spend a lot of energy saying that on stage to people because I think it looks disingenuous.
+
+So the other thing I would say in, respect to Linda and all of the people that have led media sales organizations is that sales is hard. It takes special people to do it. Well, it's one thing, right. To do sales well, but to do it, you have to be really good at packaging up kind of an amorphous thing into something that's viable, marshaling a team, getting them to execute and when, all the complexities and dealing with large groups of people in sales operations, marketing, sales organizations, and representing the product in a compelling way in the market.
+
+And then using your personal skills to kind of change people's minds and get people to buy something from you. So all respect to salespeople.
+
+[00:10:13] Brian: There's a but There's a but coming.
+
+[00:10:15] Troy: Well, this is about, about the change to being that and other, to overseeing an organization as a CEO. And, there, you've got to balance a lot of things.
+
+I mean, it starts with an, a vision and getting people to buy into where you want to go, but really underneath of it all, it's about. balancing the needs and energy against different constituencies inside of an organization. So in media, it's like how to balance edit and sales, really key, right? Where against a consumer need, that's like the core thing that you have to do.
+
+how do you manage, add low little things, right? Like advertising and the needs of the consumer. How do you balance short and long term priorities in terms of investment, in organizations that are under transition, how much energy do you put into the new thing or the new revenue line?
+
+And how do you manage the old one? Because you need the old one. So you've got lots of competing objectives, lots of personalities. and then underneath of it all, is the point that I think Alex is making, which is. Largely in companies that make a thing that serves a consumer, you really do want your CEO to be at least partly a product person, right?
+
+Meaning that they have deep respect for the thing that's made, the quality of the thing that's made, and how you make it, and all of the trade offs contained therein. And I think it's, it's a job. There's a lot of balancing and a lot of complexity in that. So let's take it back to Twitter. And so, you know, we're saying to someone great, you've succeeded at being an extraordinary sales leader.
+
+and I, and I feel for Linda here because not only is she trying to do something that's broadening her purview professionally, but she's doing it under a lunatic. and this one is particularly hard because it's not just obviously it's product and technology and making decisions about that.
+
+It's a vision of a company in transition. What do you add To kind of separate yourself from a kind of past as, you know, toxic group chat and then you have, policy issues that are not just hard to decide on, but I think hard to represent publicly. That's a really big dimension of this job that I think is really hard and increasingly.
+
+You can see this in the deal they did this week with Paris Hilton or any of the other white ring guys that they brought onto the platform. You're making content decisions and partnership
+
+decisions. So you've got sales plus product, plus technology, plus sort of content decisions, plus policy. All of that, you know, thing where there's a lot of pressure on you because you have a huge debt payment to make so I think it's trial by fire.
+
+It's really, really, really difficult. and I think one last thing I'll say about it. And I really love how Alex thinks about this. I think there's We're back at product now. there's product building. Against what is seen. So I need a new kitchen, design me a new kitchen, make me a new kitchen.
+
+Well understood process. You know what the functional requirements are, all of that. or there's building against the unseen, right? Which is, I want to build a new app or I have a new idea for something that doesn't exist now. or let's create a new type of. social network that brings together people without any of the sort of challenges of the old kind of social network that we have.
+
+So I think that the product is different in situations where where there's no precedent and you don't know what you're building.
+
+[00:13:41] Brian: Yeah, so Alex, is it possible? I mean, I know it's possible But it seems highly unlikely for someone who is quote unquote a non product person To run one of these organizations because product is at the heart of it I mean you could be the best salesperson in the world, but I don't know if you could succeed running A Silicon Valley in quotes product company.
+
+I mean, it's just, it seems to me like one, you just won't have the internal constituency and I don't care what your title is. Like people will sniff out bullshit from a million miles away and you'll lose the room very quickly. If
+
+[00:14:19] Alex: Yeah.
+
+[00:14:20] Brian: as someone who spent a lot of time in the cubicles, let me tell you, the cubicles know exactly what's going on and who is real and who is not.
+
+You guys don't have cubicles over there, do you? I mean, everyone's just like sitting on their golden toilets and whatnot.
+
+[00:14:32] Alex: How did you know it was
+
+cool? 
+
+[00:14:33] Troy: Golden toilets. Is 
+
+[00:14:37] Brian: That was Alex's line. That was Alex's line.
+
+[00:14:40] Alex: There's definitely a kind of this extra added difficulty for non technical, non... people to lead people who spend day in day out building stuff has spent their entire, oftentimes, like since they were kids, passionately putting something together, and then having somebody at the, at the top who doesn't seem to understand or have the empathy for, for the work being done.
+
+And I think that creates an environment where people will drag their heels. So I've seen it in rooms where, you know, Technologist in the room kind of waves their hands saying, Oh yeah, well, it's not possible. And this is why we can't build it. And leadership is unable to sniff out bullshit. so I don't think it's, possible to, to build something.
+
+That really creates a brand new space, something new in the world. If leadership doesn't understand the fundamentals of how the thing is going to be built. If only just because the role is about, as Troy said, like it's about prioritizing, it's about making decisions, it's about calling out stuff that you will do and won't do, but it's also about connecting the dots.
+
+Right. It's about going to one department and seeing a piece of technology and another one and saying, Huh. If you maybe put these two things together, we can achieve some things that we couldn't do if the individual teams,worked in silos and I think it's very frustrating.
+
+So my model for that was, whether it's a CEO or whatever leadership you're putting in teams, because my frustration is always when you have a team of really smart. People who build shit and you bring an MBA to lead them because that person knows how to run a business, and, the way I would always ask is like, if you were building, if this was your first hire, your first, product manager, your first, you know, head of engineering, your first, whatever, if you were just doing a startup, is this the person you would hire?
+
+Could this person be productive? As an individual, and that framing often allows you to quickly suss out people who might not be as productive in the role. Like, honestly, I don't know if, you ever think about it like that, but if we built a company and we were all taking on the kind of the lowest roles in those companies, could we do them?
+
+[00:16:43] Troy: Right. But Alex, there's a lot of examples that break that rule. Brian, can a salesperson run a media company?
+
+[00:16:48] Brian: They usually do. 
+
+[00:16:50] Troy: Can salespeople run, film production companies? can non welders run welding companies?
+
+[00:16:55] Brian: mean, to me, I think the technology organizations are different. I just have seen over the years, and I've never been inside of one, that I just think culturally they reject, people from the outside who are not quote unquote product people. Like, 
+
+I mean, 
+
+[00:17:09] Troy: Do doctors have to run
+
+hospitals? 
+
+[00:17:11] Brian: I 
+
+look and 
+
+think about 
+
+pharmaceutical 
+
+companies a, 
+
+lot of time their chemists 
+
+Merck had a great CEO, probably their best CEO recently, and he came from fending off the Vioxx lawsuits. I mean, you can succeed in a lot of these organizations as long as you bring a point of view and have credibility. I think. Where you run into it, and maybe sales would run into this is not having a point of view on product like the skill set you deliver that you develop as a salesperson.
+
+I'm sure she did as a sales leader. Sometimes that doesn't translate as well. And I think you saw that in some ways in that interview, because, Linda is known. I don't know her personally, but she is. known for her P. R. And it's all very packaged and it all has a perfect anecdotal lead that we would always make fun of in the newsroom.
+
+But her crying over her like bowl of shrimp scampi and it was total bullshit. It was all made up. but it was to, you know, that she rehearsed all the up front non stop. It's a little different when you're on stage under the hot lights and you have to, like, explain on the go in an adversarial environment, what point of view you have and how you're gonna make those trade offs.
+
+Because Yeah, Just never had to do it,
+
+[00:18:15] Alex: But look, the thing is like, I'm not an engineer, right. But I have enough intuition around engineering because I've, spent a lot, time building stuff. And I think there's a big difference, for example, between a Bob Iger and a Bob Chapek running Disney, And the type of company you want Disney to become like Iger definitely has more.
+
+Intuition around artists needs, et cetera, that shape act didn't have. you know, jobs, wasn't a technologist jobs understood like how to connect the dots between technology and all these different things to build a great product. but the idea is if you, especially if you're running a company that's kind of going zero to one, that's trying to build something new or innovate in the space, I think it's really dangerous to just.
+
+Take a CEO from, or somebody that's just, run a sales organization on a, on a successful product and tell them to reinvent you know, a
+
+completely new 
+
+platform. I can't 
+
+[00:19:08] Troy: look at it really personally in media. I thought that one of the difficulties in old media transitioning to new was a lack of understanding of all the enabling... tools required to make digital media I thought that, ultimately a good digital media company or a good modern media company had to have, the additional circle of being extremely adept in building, deploying and iterating on technology and data.
+
+my favorite meeting of the week and the meeting I never ever missed, was our product meeting. And I was, deep on everything we were building. in many cases I was the instigator. to me, it was central, to what we needed to do as central is, maybe not as much, but certainly the, hiring decisions and decisions that we made around.
+
+The content we created. I think that maybe it's less about, are you an engineer? and more about, a deep sense and curiosity about what the end product is for the consumer and how it comes together with different, with different skill 
+
+[00:20:14] Brian: Yeah. I
+
+think it's the analog to like, if you were to run a magazine, you needed to have, taste. You know, like,if you didn't have taste, you couldn't run, a magazine. And I don't care how good of a manager you are, like, that would be insane to try to run, you know, in the heyday of magazines without taste.
+
+Like, you just, it's impossible.
+
+[00:20:34] Alex: And I think you do notice and maybe we can separate financially successful businesses from, I think, culturally important businesses, because I think there's a lot of Hollywood studios that might've had a few hits, but are not, Maybe reliable kind of creators of culture and, but if you look at the hell of those, there's people who deeply care about movies, right?
+
+At the very least, right? They're curious, they care about them. They love the industry. They love what's being put into them. And when you see CEOs that do not seem connected to that stuff, I don't think the output is ever as good or the company ever stands a chance of being a successful, if only because people want to work for people who love the craft, right, that they're in.
+
+and, but I gotta say, just to, talk to my comment earlier, I do have a massive bias for being. Deeply suspicious of people who haven't made anything. If you're not a writer, a coder, a designer, or somebody that's put something together, it takes me a long time for me to trust you. It took me a long time for me to trust Troy.
+
+and his taste. but, because my whole way of working is, I always like building a kitchen. And to me in the kitchen, like whether you, the chef can cut the carrots, everybody needs to know how to cook a meal. if you're the 
+
+[00:21:47] Troy: hmm. How, How, are 
+
+we, 
+
+[00:21:48] Alex: cook a fish. 
+
+[00:21:48] Troy: Alex? 
+
+[00:21:49] Alex: I mean, you're kind of more of a Metro Detroit, but, Brian and I definitely
+
+[00:21:54] Brian: Yeah, we're back in the kitchen, man. We're like 
+
+[00:21:57] Alex: Heh, heh. 
+
+[00:21:57] Brian: on break. 
+
+[00:21:58] Alex: I'm like, backup
+
+[00:21:59] Troy: Alex, Alex, I don't think that's entirely fair at all, that assessment. I mean, you and I were 
+
+in the kitchen, we were in, we were in the kitchen together tasting the soup, Alex.
+
+[00:22:11] Alex: That's true. 
+
+You, you are. Yeah. 
+
+[00:22:13] Brian: like an 
+
+[00:22:14] Troy: You'll, you'll notice when the headline of the last week's episode needed to change. I got into
+
+the, you know, 
+
+[00:22:21] Brian: You get rolled up 
+
+your sleeves. 
+
+[00:22:22] Alex: Oh, that's true. You got it. yeah. You
+
+got into the code and changed that. 
+
+[00:22:26] Brian: you see, you escaped agency life, just quick enough to like get out of that. Cause otherwise you'd be trapped in your PowerPoints forever. I remember, Do you remember that agency? undercurrent that was like, we're born digital and we're going to like come in and we're a digital think tank.
+
+Do you remember them? I remember meeting with the guy, Josh Spear. And I was like, what do you do? what do you, what do you produce that people pay? And what is it? it's a PowerPoint and he was like, no, we use keynote.
+
+[00:22:52] Alex: Yeah. That's why, 
+
+[00:22:55] Troy: love Keynote. 
+
+[00:22:56] Alex: 25 percent if you 
+
+[00:22:57] Troy: Yeah. 
+
+[00:22:58] Brian: was like, Oh, well, 
+
+that's why you're making a 
+
+[00:22:59] Troy: No, seriously. I was the provincial keynote champion in Saskatchewan.
+
+[00:23:03] Brian: That's good.
+
+[00:23:04] Troy: Yeah. I'm rank ranked.
+
+[00:23:06] Brian: about a product guy. Cause I want to talk about like the quintessential product person. Alex, try to calm down a little bit here, but it's Elon Musk. And I think, say what you want about the guy. but I 
+
+[00:23:15] Troy: I thought we already established that Alex has Elon Derangement
+
+[00:23:19] Brian: he's Elon EDS. The guy has some really interesting points of view, on how you make a product. And, I gotta say, like, just in general, they make a lot of sense. Like, 
+
+[00:23:30] Alex: I think it's really great because his product ethos is try new shit out and if it doesn't work, blame the Jews. like, it's 
+
+[00:23:38] Brian: Jesus Christ. 
+
+[00:23:40] Alex: really, it's really 
+
+[00:23:41] Brian: the direction I wanted to go. 
+
+[00:23:43] Alex: No, but like, 
+
+I just needed to say that. I just need to get it out my system. putting that 
+
+stuff aside, I think he's a, Quin. I think he's actually 
+
+[00:23:49] Troy: a, 
+
+good, that was funny. 
+
+[00:23:51] Alex: Yeah, if, 
+
+[00:23:52] Brian: Yeah, but these... 
+
+Did 
+
+[00:23:52] Alex: I did, yeah,
+
+[00:23:53] Troy: Yeah. 
+
+[00:23:54] Brian: that? 
+
+[00:23:55] Alex: no, 
+
+[00:23:55] Troy: He had that in his, notes.
+
+[00:23:57] Brian: not in the document.
+
+[00:23:59] Alex: I have a wall where I scribble all, all the things about Elon 
+
+and, 
+
+you know, 
+
+[00:24:04] Troy: Yeah. But, before you set this up, Ryan, you're going to talk about sort of Elon's five 
+
+[00:24:09] Brian: Yes. 
+
+[00:24:09] Alex: yeah, 
+
+yeah, 
+
+[00:24:10] Troy: Right. 
+
+[00:24:11] Brian: to go through them. And I think we discuss them one on one at a time. One is question every requirement. each should come with the name of a person who made it. You should never accept that a requirement came from a department such as the legal department or the safety department. You need to know the name of the real person who made the requirement.
+
+Then you should question it, no matter how smart that person is. Requirements from smart people are the most dangerous because people are less likely to question them. always do so even when the requirement came from me. This sounds 
+
+[00:24:40] Troy: Perfect. Actually. totally sensible. Yeah. Well, I mean, what are we dealing with here? So what are the issues that these principles are trying to address just to back up one step? Right. So in many companies at many times, either Let's assume the vision isn't missing. So let's assume we know where, what we want to build.
+
+We want to build a rocket 
+
+to go to Mars, 
+
+[00:24:59] Brian: from vision to execution, 
+
+[00:25:00] Troy: right? So you can't make it or it's a shitty product or it's the wrong product or more than likely, which is what happens in every meeting, in every product meeting in every organization, it's going to take too much time or cost too much money. It's like, I can't believe it's going to take that long.
+
+Really? You know, that, that's really the, the lament 
+
+of the executive. 
+
+[00:25:21] Alex: Yeah. I used to have a line. I said, I know 14 year old Swedish kid. They can do it for us in two weeks. I used to always make my team really happy. 
+
+[00:25:29] Troy: Yeah, 
+
+[00:25:29] Alex: going. Do. 
+
+[00:25:30] Brian: their head.
+
+[00:25:31] Troy: right. So, principle one was scrutinize requirements, put a name to the people that, request them. And, don't believe the people that just ask for things because they say they're important.
+
+I think that's what you said. 
+
+[00:25:45] Brian: Yeah, I think the hardest part of this is when it gets into the org chart. Because what I always noticed was the person, like, that was higher up in the org chart always had the best direction for the product. Even if they weren't involved in the product.
+
+[00:25:58] Troy: God, everything in your world
+
+is colored by the cubicle. You really have a complex.
+
+[00:26:03] Brian: don't have a complex, I have experience.
+
+[00:26:05] Troy: Okay. 
+
+[00:26:06] Brian: been the person who has had bad ideas that have gone through just because I was sitting at the head of the table. 
+
+[00:26:12] Alex: Do you think making it into leadership turns you into an asshole? Or that you have to be an asshole to become a part of leadership? What is it? 
+
+[00:26:19] Troy: We did that episode.
+
+[00:26:20] Alex: Yeah.
+
+[00:26:21] Brian: I think that you can start to sniff your own farts if you sit at the head of the table too long. Absolutely.
+
+[00:26:28] Alex: Mm-hmm. , I like Elon's five points. I think they're pretty well known in engineering circles that did their engineering principles, which make a lot of sense, which is don't make stupid mistakes, question this thing, make sure you understand where the requirement comes from. and question the processes and.
+
+I think these
+
+are incredibly useful. Yeah. Yeah. I can read them out. I can read them out. 
+
+Oh, sorry. You had them in front of you.
+
+[00:26:51] Troy: thought this was my segment. This was assigned to me. 
+
+no, no, I don't. 
+
+[00:26:56] Alex: Go 
+
+[00:26:56] Troy: Yeah. 
+
+[00:26:57] Brian: Well, the second one is delete any part of the process you can. So maybe I just
+
+deleted that part. 
+
+[00:27:02] Troy: know. So that one's a classic sort of an MVP thing, right? 
+
+Like slim it down, edit, edit, edit, edit, right? And then the third one is this same thing, which is once you've edited and you have the right requirements and then you edited, simplify it again. And when you think about it, one is make sure you're building the right shit.
+
+Make sure people are accountable that are asking you for things. Then it's. edit, edit, edit, and then it simplifies. Isn't that right? Brian? 
+
+[00:27:27] Brian: Simplify and optimize. This should come after step two. A common mistake is to simplify and optimize a part of the process that should not even exist in the first place,
+
+[00:27:35] Alex: yeah, 
+
+[00:27:35] Brian: I think is important. I think that's important for people who are leading like the, the, the process or ideally the system because, no matter what, everything becomes a conveyor belt in life. Everyone goes into autopilot. I feel like it becomes 
+
+like the Lavernage early 
+
+opening 
+
+[00:27:49] Troy: I, I have a thought about this too. 
+
+So go ahead, Alex.
+
+[00:27:53] Alex: no, I was going to say like, these five points, let's just run through like accelerate number four is accelerate cycle time. And number five is automate. Right. So it's kind of this loop. they're all very. both obvious, but also very hard to implement in organizations because I'm sure a lot of, well meaning CEOs are going to read this and are going to try to implement them.
+
+And I'm not really going to understand what simplify means or what removing a part of the process means. and it's always in the execution, This type of stuff is always in the execution and I think what Elon does very well, very well is that he has an ability and like enough energy to kind of actually dig into every part of the process and individually questioned them.
+
+I don't think it's always easy to get an organization to behave like that because deleting part of the process literally sometimes means removing a team. Or making somebody's job redundant.
+
+[00:28:49] Brian: yeah, I mean, come on, like, it's the old thing. It's bureaucracies like exist to perpetuate themselves, right? So like, if your job is, is to a part of a process, you have not invested in deleting
+
+[00:29:02] Troy: me give you a simple example that just happened to me and I couldn't really figure it out. So. I'll start at the very beginning because it's kind of amusing. But anyway, there's a problem with potholes in New York City, in particular, they're going out to Shelter Island on the L.
+
+I. E. so which means that my car suspension has been ripped apart on three occasions. And I took the car to the dealership and there's a process and you drive the car in and they give you a tag. And then you go and you wait in like a doctor's office sort of thing, and then the dude calls you up and he then diagnoses what's wrong with your car, he types it in, takes a long time, and then he says, go over to Jennifer, after he takes all your information, who's in the area, the loner area, and then I wait for 10 minutes while Jennifer fills out a bunch of forms, prints them, hands them to me.
+
+I sign a couple of things and then I wait for the car, the replacement car to be brought up. And I was just thinking, you've done this literally thousands of times and I'm waiting a half an hour to get the, I mean, this is just, there's gotta be a way you could tear this apart and get me in and out of here in, in literally 
+
+five minutes.
+
+Like 
+
+[00:30:14] Alex: I mean, at Tesla, I had the same, you open the app, you chat to somebody on some WhatsApp clone, they tell you to drop off the car, they don't even need to be there, you leave your key inside, they can unlock it remotely, a hundred dollars of Uber credits get sent to your phone, and that's all, and they fix it.
+
+[00:30:31] Troy: Right. But you see what I'm saying? Like, literally, there's a dot matrix printer under the counter going, Doot, doot, doot. Printing out this thing. I'm waiting. There's a guy behind me. It's, there's no reason why you need this process.
+
+[00:30:46] Alex: The amount of dead trees just for this stupid process. I mean, when you go to doctors here, they need to fax something to get your referral. So like,the, the world is full of this stuff.
+
+[00:30:56] Brian: this is where I think the Japanese are amazing at that. This is why I love Japan because they think about every single process and how to optimize it. and it's makes life very calm. the, the last two things were accelerate cycle time. Every process can be speeded up. Okay. And then the last one is to automate.
+
+It comes last. You got to go through all the other steps before you can or should. Automate. And the final thing is that he added was that all technical managers, to your point, Alex should have hands on experience, managers of software teams must spend at least 20 percent of their time coding. Imagine that.
+
+[00:31:32] Alex: guys, guys, I've interviewed people for design roles, big design roles that pay big money. Who told me I haven't designed anything in 15 years.
+
+I've talked to people who say my manager at Google doesn't know what I do. And this is where like my model of using the kitchen analogy. Like I was like saying.
+
+If you're being, building a technical team where it's design or whatever, you build it like a kitchen, you build it like a kitchen. You don't want anybody in the kitchen that if the guy that's cutting the carrots cuts his finger, the chef needs to be able to cut the fucking carrots. All right. and this is what I said, like the industry, if there's one thing to say about Silicon Valley, it's got, it's that it has unfortunately allowed people that were maybe remarkable one day, but lost that over time to become very wealthy.
+
+Very dominant, very loud. And the amount of design conferences that you will go to, where it's just some dude talking about how he scaled a team, like who the cares, and it's been really frustrating. It's part of why, like I was kind of ready to leave it and start building my own thing where everybody on my team here does a thing or can do a thing.
+
+[00:32:38] Brian: but that that's also just to go back to the agency world because I like to take shots of the agency world every now and again, that would always be the case with like the cheat quote unquote global chief creative officer who would be a way I would be like, you've been judging awards around the world for the last eight months.
+
+I'm like, what was the last time you made an ad? the 80s, there is, someone had a joke about why like the, like podcasting is where you go when you, when you don't feel like writing anymore 
+
+because writing is too hard. 
+
+So I'm into podcasting. 
+
+[00:33:07] Alex: there's a group of designers that once worked at apple very prominently, and then you look at it, it's like they redesigned iTunes in 2012. And that's been it since then, you know, then you do the speaking circuits.
+
+yeah, no, I mean, I feel like it's really important to have, especially with people are doing a technical job, to have somebody that leads them to that knows what they're doing, if only just for mentoring younger people, right? You, you want somebody on the team that can teach you something.
+
+[00:33:34] Brian: Yeah. So
+
+let me ask you this. I, I don't know either, but like Brian Chesky strikes me as a product guy. Is he a product guy?
+
+[00:33:41] Alex: Yeah. I mean, he's curious. He's very, yes, definitely. I mean, he's got a design orientation. He's curious and he's relentless about asking questions and he's got a similar,I don't know who's remember who said this, but they said, Steve jobs was like, it wasn't a product manager. He wasn't a designer, but he was a product marketer, which is a very specific role.
+
+Somebody that understands how to connect different pieces of technology and create something that the consumers really need or want and understands that pulse. And I think, Brian has, similar traits to that. And then he comes from a design orientation. So for him, it's about building something perfectly once and then figuring out how to scale it.
+
+and that process, has worked for us. definitely something that makes him a good CEO. And, the rest of it, he's, learned on the job. I think,
+
+you know, it's a fast learner. 
+
+Oh, nice. You want to, 
+
+[00:34:29] Troy: No, I, I thought the s of sss, what word am I looking for?
+
+[00:34:32] Brian: Sycophancy? 
+
+[00:34:33] Troy: Sycophant. I thought that segment
+
+[00:34:35] Brian: Sycophancy is rarely said. It's 
+
+usually
+
+sycophantic. It's 
+
+sycophancy. 
+
+[00:34:41] Troy: Just joking. 
+
+[00:34:41] Brian: weird. 
+
+[00:34:42] Alex: I, mean, I do think like, that maybe that's some trait that he shares with Elon. It's like the impatience of getting some stuff done right or, getting it wrong a few times, I think a lot of these very successful people are also very impatient, which can lead to like a velocity.
+
+But I, think managing to modulate this is important at times, and this is, most of the time when we, but it has, it was mostly around that, just like the impatience of getting something done, right. or he wanted it done, right, but he wanted it done 
+
+right in,
+
+less 
+
+[00:35:13] Troy: I butted heads with you on that. 
+
+[00:35:15] Alex: thing. 
+
+[00:35:16] Troy: Well, sometimes you gotta, sometimes you're, 
+
+[00:35:18] Alex: It's 
+
+[00:35:18] Troy: you're slow as molasses. A lot. yeah. 
+
+Yeah. Oh,
+
+[00:35:21] Brian: You were 
+
+late to the podcast. It 
+
+[00:35:23] Troy: oh my God. Yeah. No,
+
+[00:35:25] Brian: was like 1. 33. We were sitting there, like, doing
+
+[00:35:27] Troy: no. 
+
+You're a 
+
+cogitate. 
+
+[00:35:29] Alex: is always like, why can this person that can do something I can not do it faster. You do 
+
+it. 
+
+[00:35:34] Brian: Ah, that old, that old Trump card. That's why you have to be able to do the shit. Because when people say that, you're like, move
+
+[00:35:41] Alex: Like I 
+
+went to Detroit's credit, Detroit's credit. It's not that I'm slow. I'm actually very fast. It's just, I'm very unreliable and I will procrastinate for days and then do it in the last two
+
+[00:35:52] Brian: Well, that's why deadlines
+
+I like deadlines are the 
+
+[00:35:55] Troy: it, drove me, crazy. Alex is amazing. And the, the one thing you can be assured of is that when you give Alex an input, the output is going to always be really great and surprise you. But sometimes he would like, if there was 10 days to do it and you're, you know, you ask him, how's it going, blah, blah, blah, it's fine.
+
+And he literally does it in the last hour. 
+
+[00:36:14] Brian: Oh, that's always 
+
+[00:36:15] Troy: waits and waits 
+
+and waits. 
+
+[00:36:16] Alex: It's 
+
+the creative 
+
+[00:36:17] Brian: but that's why you need deadlines, right? I mean, it's just the ultimate for, but I want, I want to talk about a little bit about, our products at media products, right? Because, and I think this Airbnb, example is interesting because I think when you're operating marketplace businesses, it's hard because the product.
+
+Can be really affected and driven by forces that aren't really in your control, for instance, the, the cleaning fees. it was, it had a tremendous negative impact on the perception of the product, but at the same time it wasn't really in direct control of Airbnb. And I feel like in media, it's Q4 and I went on the Daily Beast.
+
+I'll name the Daily Beast. I went on the Daily Beast today to read an article and like I could see maybe two sentences. I posted this in our chat. the autoplay from the top, from the bottom, there was one coming in on the sides. it was very aggressive. And it told me Q4 is here. We got to try to scratch out a good quarter.
+
+but a lot of that is because like making a media product is really difficult because they're just forget about the internal constituencies. You're trying to serve so many constituencies. You're trying to serve the audience. You're trying to serve your advertiser. You're trying to serve Google and Facebook, like try to stay in their, rules.
+
+So it's just really difficult, but is there any sort of similarities? And what are the complexities of building a product where a lot of the aspects of the product aren't under your direct control?
+
+[00:37:36] Alex: I mean, Airbnb was interesting because a lot of, you know, you could set certain rules up. there were reasons why you couldn't sometimes, which were just like purely regulatory, The way you kind of manage a platform is, is sometimes really regulated. but what it taught me is really this kind of like behavioral change you can, impact by just doing small changes and seeing how they impact.
+
+Yeah. just like incentivizing the right behaviors around cleaning fees by changing something in the interface or, communicating something or just showing by example, what works and what doesn't. it's actually happened quite quickly that we could affect some of these changes just by building the product in a certain way, and that required a certain type of intuition And just, like thinking about the problem in a different way, which often made people who are deep in technology, very frustrated because technology is all about control. you have these inputs and outputs and you can manage them. but I think the main thing it goes back to my patient's thing is that to look at the product today.
+
+But also have a sense of one where you want it to go six months a year or two years from now. And when things are either very successful and growing very fast or struggling, you're doing stuff with a lot more urgency and you're kind of flailing. And I do think that's what's happening with media companies.
+
+And so, yes, there are certain things that you 
+
+cannot control. Well, not growing too fast. No, no, 
+
+no. 
+
+But the fact that things, things are generally. Things are generally changing too fast, either in good or bad ways, and decisions are made with really short term insights in mind, rather than having a long arc to work
+
+against if 
+
+[00:39:09] Brian: arc, you might be dead. So you're not going to get there
+
+better to be alive. And 
+
+[00:39:13] Alex: I think that it's often overblown. I think you make decisions like survival decisions when you're not really in a survival state. you're just, there's a constant state of anxiety, and I think that's when you're sign off. you, you give away a lot of power to Google or you make stupid deals or you plaster your site with ads rather than playing the long game.
+
+And I, that happens all over tech. and I think that sometimes that move fast and break things. It's also just like a sign of just being incredibly anxious and making the wrong decisions. so I would tell everyone to, move fast and slow down at the same time, Like have a longer arc. Things move slower than you think they will.
+
+Things improve slower than you think they will. and it took me a while to learn that, right? And if you look at Airbnb, the improvements that we put into the product, from the day I joined to when I left, like some of the stuff I started working on. year one and they were actually in full effect only three or four or five years later, which is a kind of why I like working in video games because there's a commitment to something that takes two or three years to build,
+
+[00:40:17] Troy: Can I build on that from a different angle? 
+
+[00:40:19] Brian: yeah, 
+
+[00:40:19] Troy: moderator. ,
+
+[00:40:20] Alex: I 
+
+[00:40:21] Brian: that's a swipe.
+
+[00:40:22] Troy: okay. so there's lots of media companies, right? And there's very few utility companies, That's just kind of how things go. The best utility. Wins, particularly in a modern kind of app era or the internet era, the best utility wins, Google wins, Facebook one, Instagram kind of one, and then new ones come along, but utility companies are.
+
+Either monopolies or oligopolies, there's lots of different media companies. And ironically, if you look at a company, say like Yahoo, the reason that Yahoo has been kicked around and mismanaged and, traded hands and all of that, but never killed is because of three or four utilities underneath of the Yahoo umbrella because of mail, because of fantasy, because Yahoo finance.
+
+And a few other things that have, at a very low cost delivered, sort of captive or repeat audience. It's not the content that kept Yahoo in business, although the content is definitely part of the, value proposition. And so it's one of the few media companies that can build, or, digital media companies that has been able over its long historical arc to build.
+
+Utilities and those utilities have, kept it in business in the media business, on account of on how long it takes to build a utility. So, for example, I put in the utility bucket, I would put things like games on the New York times. but, in the utility bucket, requires different skill set, deeper tech and product, capabilities.
+
+the timeline to deliver those are different, and it usually doesn't serve the needs, the immediate needs of a sales proposition or salespeople. And the competencies, often do not exist inside of media companies. So I think one of the interesting things is, basically the creation of the ability to look at, your value proposition in the long run and build utilities around media brands has been, I would argue, probably underexploited in media. where something somebody could have built a marketplace around their brand or could have built, cosmopolitan should have been the original, dating application, Or I mean, there's many examples that you could think of, right? And it and it did happen in sport. where the better sports brands built an ability to manage complex data sets and fantasy and interactions and all that kind of stuff that really helped them both lower the cost of audience sustain through good and bad times.
+
+[00:42:50] Alex: and it's kind of. related to what the New York times is doing with gaming as well, building 
+
+this, 
+
+gaming 
+
+[00:42:56] Troy: That's what I mentioned. 
+
+[00:42:57] Brian: Yeah, that's an interesting point because, I think we've, we've discussed a little bit. I mean, basically you'd rather have Yahoo than, CNN. Like I mean, CNN is very, very profitable, but I think if you were looking to make a bet about which would you think has a brighter future, would you say Yahoo or CNN? 
+
+You're 
+
+[00:43:16] Troy: Well, 
+
+[00:43:17] Brian: you're both conflicted, right?
+
+[00:43:18] Troy: that Yahoo has a lot to, I mean, the question with
+
+Yahoo is. 
+
+[00:43:23] Brian: on. That's basically what I'm trying to
+
+[00:43:24] Troy: We should get Jim on. We can reflect on that. I had that as an, item in
+
+our, on our list here. Not, not on to get Jim on, but to reflect on whether having a guest worked or not, or whether people, thought it was a good episode
+
+[00:43:36] Brian: Oh, it worked. You know that. You just want to say that I was wrong and you were right.
+
+Stipulated. Stipulated. Now let's get
+
+Jim on. 
+
+[00:43:43] Troy: what?
+
+[00:43:44] Alex: So Yahoo or CNN, you're trying to, talk your way out of it. 
+
+[00:43:47] Troy: I think that, Yahoo is a lot of work to do to modernize itself. but, we'll be around for a long time as a profitable company. there's a definitely a role for a global news. brand like CNN and, but the transition is going to be extraordinarily difficult.
+
+And it's hard to pick. I don't know. I'd probably put my money on Yahoo.
+
+[00:44:05] Alex: CNN being bundled into max now just makes, finally gives me access to news in a way that makes sense to me on TV. 
+
+Well, 
+
+it's just meant to 
+
+happen. 
+
+[00:44:14] Brian: Power of 
+
+[00:44:15] Troy: Good question though. 
+
+
+
+
+[00:44:18] Good product
+---
+
+[00:44:18] Brian: give me a media product that you think is actually a good product.
+
+[00:44:21] Alex: can it be a platform or something that creates content?
+
+[00:44:24] Brian: I mean, I would say, okay, like a content based media product that is a good product.
+
+[00:44:29] Alex: You
+
+[00:44:29] Troy: Well, you know, 
+
+[00:44:31] Brian: Like a video game. 
+
+[00:44:32] Troy: is a good product. I think Wall Street Journal is still a good product. I think that POC's a pretty good product. I think that Netflix is a good product. I'm trying to think of one that's less 
+
+obvious. 
+
+[00:44:42] Alex: Yeah. 
+
+[00:44:43] Troy: I like your media product, Brian.
+
+There you.
+
+go. Yeah, I thought you did a good job.
+
+It's getting a little ad heavy. I have to say 
+
+there's a lot of junk. No, There's 
+
+[00:44:50] Brian: There's not chunk. That's not 
+
+true. 
+
+[00:44:52] Troy: stuff before I get to the Brian,
+
+[00:44:54] Brian: Oh, so John Kelly told me to do that. He said like it's an old like magazine, you go through the front of the book He made a very persuasive, you know, he's very persuasive. You're gonna have him on too, but like He made a case that I should
+
+[00:45:06] Troy: junk up the beginning.
+
+[00:45:08] Brian: Yeah, cuz like then if you ever notice like that you could you go through and then you get
+
+[00:45:12] Troy: I mean, okay, I mean, I know you think that I, give you a hard time a lot, but I also throw a lot of a sunshine. 
+
+[00:45:18] Brian: every now and then.
+
+[00:45:19] Troy: So this, this headline, serious people was a, terrific headline. 
+
+[00:45:23] Brian: Oh, thank you. 
+
+[00:45:24] Troy: after I got through all the junk, I finally got to read your 
+
+[00:45:26] Brian: It's not junk. 
+
+They're 
+
+called recommendations.
+
+Only one of... 
+
+which is sponsored.
+
+[00:45:33] Troy: can we do a good product quickly?
+
+[00:45:35] Alex: Yeah. 
+
+[00:45:36] Brian: Good. Maybe we can make this recommendations and I can
+
+slide in a sponsored one. 
+
+[00:45:40] Troy: Yeah. So, there's this guy that some of you might know, I don't think Alex knows him. Mark Howard insisted the other day to me that he'd be the good product, after he made
+
+fun of me. 
+
+[00:45:50] Brian: him a product. I invited him to one of my dinners 
+
+[00:45:52] Troy: Yeah. 
+
+[00:45:53] Brian: to me.
+
+[00:45:53] Troy: but I think that's a bit preposterous. but the FIG has resonated with a lot of people.
+
+I've heard from a lot of people that agree that the FIG is a good product. was thinking this week, you know, I like city bikes and I love Amazon Prime and I love a sunny day. I think that not driving, in life is a good product like just don't drive just find ways to get around and not drive I don't think that the iphone titanium is a good product.
+
+I think it's ridiculous and it's it reeks of desperation I wouldn't recommend that you get a rumba rumbas are stupid sweep your floor or get a vacuum and this week in my house, the exterminators were here and they're definitely a good product when you need them,you would not believe what happened in my house.
+
+It was like It Yeah, it's another episode, but I actually settled on something you can't really do in American offices I used to want to do this I had this huge beautiful office and I always wanted it around two o'clock. My body would say bring me rest at two o'clock. Just not a lot, like 20 minutes, just a little.
+
+So my good product this week is a nap. I think naps are really important. I think the 
+
+[00:47:00] Brian: Yeah, 
+
+[00:47:01] Troy: have it right on that, particularly the Italians,
+
+[00:47:04] Brian: don't know if it screams leadership though to take, you know, the blinds down.
+
+[00:47:09] Alex: Oh, 
+
+I've, took naps in my office many times.
+
+[00:47:12] Troy: I love it. I love 
+
+a nap. 
+
+[00:47:14] Brian: I'm just going to be out for the
+
+next 20 minutes. 
+
+[00:47:16] Alex: it the creative recharge was very,
+
+[00:47:18] Brian: You can get away with that in California. I don't think you can get. We had a zen den at the last place I worked and an intern was found asleep in the zen den his first week, which is fine. I mean, why have a zen den if not? I was in favor of this, young man, but it didn't go over well with his, supervisor.
+
+[00:47:35] Troy: Americans think that naps are anti productive and 
+
+[00:47:38] Alex: yeah, for the lazy. you've stretched the definition of product again, considering you can't,
+
+you can't buy it and nobody's made it. but, just to keep this honest, I'm going to reiterate a good product I've mentioned before because it has, it's had some major updates and I think all media people should be using it.
+
+And that's artifact artifact is building. A product from the ground up that is turning itself into some, social network, it was an article feed reader. They added AI, they added, ways to kind of highlight clickbait, they added ways to summarize articles. They then added ways to post your own links a la Reddit.
+
+And now they've just added, posts so you can actually publish your own content on it. it's the ex Instagram, folks, It's a company built by builders, These guys are themselves pushing code into the product. it's really well built and I, I would pay attention to it.
+
+[00:48:30] Brian: Is it 
+
+[00:48:31] Alex: I just would, I don't know how popular it is actually, but people, a lot of people that I know use it and have started making this the only way that they read the news.
+
+Especially, when you can clean up the page, during the 
+
+quarter where everybody just puts a bunch of ads on it.
+
+[00:48:45] Brian: we're just getting started.
+
+[00:48:46] Troy: what did you think of nap? Alex is a good product.
+
+[00:48:49] Brian: He didn't like it. He said
+
+that.
+
+I
+
+thought Artifact's a good 
+
+[00:48:53] Alex: I don't think it's a product. I like an app, but I don't
+
+[00:48:55] Troy: Every week I come to the table with something innovative with something interesting with something that isn't the obvious and whenever I go into 
+
+[00:49:03] Alex: Spaghetti. 
+
+[00:49:04] Troy: you guys tear me down.
+
+[00:49:06] Alex: We're just trying to keep
+
+this,
+
+honest. 
+
+[00:49:07] Brian: just a really quick thing on, on Artifact. I have no idea how strongly held this is. My. Total hot take on it is it's going to be Flipboard 2. 0. Something that like a small group of people is like, this should be huge. And it never gets big. Flipboard is still around, which is like remarkable.
+
+And Mike McHugh is still running it. I just found out, which is just tremendous and Flipboard never took off. It never reached its, supposed potential, kind of like 
+
+[00:49:33] Alex: Yeah, 
+
+[00:49:34] Brian: But 
+
+there, there are certain products that 
+
+just never. 
+
+[00:49:37] Alex: that's 
+
+a good. point. I think it's smarter and better built than Flipboard. 
+
+[00:49:40] Troy: Yeah. I mean, from my perspective, I do use it and I, and I kind of like it, but I think it's maybe, first of all, we've already addressed it on the podcast and it's maybe an obvious, obvious choice. Alex.
+
+[00:49:50] Brian: Is
+
+[00:49:51] Alex: right. Well, let's all go take a nap 
+
+and think about it. 
+
+
+[00:49:54] Outro
+---
+
+[00:49:54] Alex: All right. 
+
+[00:49:55] Brian: things. 
+
+[00:49:56] Alex: Yeah. Okay. Thanks everyone. 
+
+Remember to like, and subscribe, and write reviews, and 
+
+share it. 
+
+[00:50:03] Brian: I'm supposed to do that. 
+
+[00:50:03] Alex: And, do all that stuff and follow Brian on LinkedIn where he posts 
+
+hot takes, 
+
+[00:50:08] Brian: had like a semi viral post today The key to semi viral posts on LinkedIn is you need to like tie it in to like a 
+
+professional interest kind of thing. So someone trying to buy a 
+
+link on the rebooting. I 
+
+did a Q4 joke. 
+
+[00:50:21] Alex: Okay. Bye all.
+
+[00:50:23] Brian: Bye. 
+

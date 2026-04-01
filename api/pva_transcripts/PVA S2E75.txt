@@ -1,0 +1,1227 @@
+PVA S2E75
+===
+
+
+[00:00:00] Cold Open
+---
+
+[00:00:00] Troy: all right, how are we feeling?
+
+[00:00:01] Alex: Amazing.
+
+[00:00:02] Troy: really? Did you do your homework?
+
+[00:00:04] Alex: Uh, yeah, I did.
+
+[00:00:05] Brian: I'm going to go over Mark Thompson's memo.
+
+
+
+[00:00:07] Troy: I think it's almost a sort of a rite of passage in the transformation narrative that you write pithy memos that people take apart on the internet that contained, recycled platitudes from Mackenzie Dex and memos of yore.
+
+[00:00:22] Brian: Is that why they suck?
+
+[00:00:23] Troy: I don't know. When you start screaming things at people like innovate or find new sources of money, do more with less. Who says future proof the business. We gotta manage cultural change. They're all reasonable and I'm sure I've said them all before so, deep apologies to anybody. But skeptics are gonna make fun of you. It's part of the process.
+
+[00:00:44] Brian: I mean this with admiration. I think you were, you probably did, tacked away from that. Cause it's like the safest zone is to like, you know, you just roll out the future proofing and the multi platform, and gotta vague.
+
+
+[00:00:58] Intro
+---
+
+[00:01:20] Brian: Welcome to People vs. Algorithms, a show about patterns in media, technology, and culture. I'm Brian Morrissey. Each week, I'm joined by Troy Young and Alex Schleifer to assess the crazy time we're going through as we enter into an unknown new AI era and media fragments in all directions. Our goals are always the same, and that's to bring our own different experiences and viewpoints to bear as we try to do what everyone else is doing, figure out what the hell is going on.
+
+This week, we discuss how to turn the ship at two very different companies facing different challenges. CNN and Google at CNN, former New York Times CEO, Mark Thompson is looking to reinvent the still very profitable broadcaster into a more nimble, digitally focused operation as its viewership and most importantly, its cultural importance fade.
+
+Google is facing its biggest threat yet in the form of AI and science with Gemini's image search debacle that there might just be something to those complaints about it having a woke culture plus. Nostalgia for websites, invisible paywalls, and Substack's next chapter are covered. Now, as I mentioned, Mark Thompson has a massive challenge on his hands.
+
+And now, on the one hand, it's an enviable one. I mean, this is not like entering a situation, such as Vice, which had never made money and was best at hemorrhaging it, in fact. CNN is not that. It had 800 last year. Not revenue, EBITDA. And that's a great starting point. But watching CNN, it feels like it's from a time capsule.
+
+I mean it is the original ambient media. I'm talking about doctor's offices and airports. As publishing moves from traffic to audience, they're not the same. So too is media overall moving to prioritizing intentional viewing. I mean that's the currency, or at least it was supposed to be, of streaming. You didn't turn on TV and find something to watch.
+
+You turned into a specific program. And many expect Thompson to enact the same playbook. That he used at the New York Times, which has become something of a darling because it has mastered a DTC business model. Different brands require different strategies, though. CNN flirted with DTC, and it has always pulled back.
+
+I mean, it's hard to imagine, after blowing so much money on the CNN Plus debacle after a cup of coffee, that it would return to that path. And the realities, though, are that live TV will not suddenly come back. So the answer for the future of most legacy brands, I think, at least. Lies in looking to their past.
+
+I mean, I was listening to a Marc Andreessen conversation recently where he spoke about the differences between bourgeois capitalism and managerial capitalism. And that's because in bourgeois capitalism, it's usually operated by the people who built the enterprise and then they usually enter into this period of a lot of people with MBAs or.
+
+Experience in McKinsey coming in and optimizing the business. And these businesses usually become more profitable, but less innovative. CNN has itself long left behind its cowboy roots when Ted Turner, started it and proved it's many doubters wrong. Troy has a good post up ahead of this podcast about CNN's future.
+
+And what I liked about it is that he takes the challenge of the moment, and the internet is undoubtedly having a breakdown and taking media with it, and Sketches, at least a practical path forward that taps into what made CNN distinctive from the start. It was always on. It was everywhere.
+
+It was global. It was news. and it most importantly leaned into new distribution paradigms. The cable revolution. Was at its time, at least the TV industry as disruptive as AI is going to be in TV, media and many more industries. But the point is, you know, CNN's roots lie in taking advantage of technological change instead of fighting rear guard battles.
+
+I mean, why not use the chaos that will inevitably be caused by AI to become the ultimate in ambient media? I mean, I still can't get over how many vertical video screens that are now seemingly everywhere. And those will all, all of them, will need programming. I hope you enjoy this episode, it's a bit of a long one, but a request, leave us a rating or a view, love to get those, love to get your feedback, and also, send in questions you'd want.
+
+Addressed in future episodes. I'd like to start a Q and a segment, or maybe even entire Q and a episodes. You can send the questions to me. I am B Morrissey at the rebooting. com. That is M O R R I S S E Y. Thanks so much.
+
+
+
+
+[00:05:54] Episode start
+---
+
+[00:05:56] Troy: pretty soon we'll get started,
+
+with or without Alex. Alex is taking a nap before the episode.
+
+[00:06:02] Alex: all right, we can get started. 
+
+[00:06:03] Brian: Did Alex
+
+say that he was in San Francisco, the hub of internet humanity?
+
+I mean, he said he was in town. I don't know if there's like a town outside of the town.
+
+[00:06:14] Troy: oh, he's probably in some town in Sonoma, around Sonoma.
+
+[00:06:18] Brian: Yeah. It's, it's always embarrassing when people in San Francisco, the outskirts suburbs call San Francisco the city, give me a break. It's not a city. It's a village. Alright, let's get started.San Francisco is also back, too. Oh, go figure. Money solves everything, that's the thing. the only way to solve pretty much any problem, I feel like, in a capital, hyper capitalistic society like this is just through growth.
+
+You have to grow your way out of it. That's every problem.but I want to talk later about how publishers can grow their way out of their current, pickle because, there are not a lot of paths to grow. So they're going to have to find them. But I want to talk about a couple of things in the news segment, before Alex, figures
+
+[00:07:04] Troy: I think we can do a great brainstorm today. I have a seed of an idea for CNN that maybe you can help me build on.
+
+[00:07:10] Brian: Great. I can't wait to get to that, but let's do news first.
+
+[00:07:13] Troy: News. 
+
+[00:07:14] Brian: I don't know if this was something, you vaguely mentioned something like this, and I don't know if, this
+
+[00:07:19] Troy: Yeah, someone wrote it up. Axios wrote it up.
+
+[00:07:21] Brian: Okay, so basically what it's very vague. It was written by Dan Primack, Primack, Tolbit, raised 8 million and this is Something that you had called, I believe, an invisible paywall.
+
+And basically, it is trying to create, a marketplace between publishers and AI companies. The big negotiations are only going to touch a small percentage of publishers, and everyone else is going to be left out. So, the idea behind this is What is a scalable way? The way I understand it and tell me if I'm wrong.
+
+What is a scalable way that you can detect what content is being, used these LLM training slurped up and and then there's some kind of economic exchange. This sounds.
+
+[00:08:11] Troy: It's a toll booth for AI bots.
+
+[00:08:13] Brian: Yeah, this sounds great. And you know what's funny is Silicon Valley loves Tollbooths when they're collecting them. And I wonder how they're going to feel with this one.
+
+[00:08:22] Troy: The question is, are the big few players going to let a middle person, control the toll booth technology TBD, but the idea is a really good one. You can, decide whether you're going to let the robots come in for training purposes, and you can let. certain ones in I mean, I'm assuming ones that you might have an economic agreement with, I think there'll be all kinds of sort of,things to figure out around effectively what the rate table is like, what content is worth what and under what circumstances, but, um, Puts a publisher in control and says, if I'm going to give up revenue to the, aggregators to the context sucking AI machines that I'm, going to get paid for it and, think it's a great thing.
+
+It's a great thing. It's a great idea. 
+
+[00:09:08] Brian: It's 
+
+[00:09:09] Troy: it means that like, you can sort of systematize or, do what essentially programmatic advertising did to advertising by stacking big machines at the center and instantly quantifying attention in a millisecond. this would be the same thing where the value of your content was,kind of instantly quantified and you could decide if, if you were going to let the, effectively the new networks in to, to pay you.
+
+Love it.
+
+[00:09:34] Brian: can I assume the, the role of someone who maybe picks, some points of contention with this? 
+
+[00:09:40] Troy: Why not?
+
+[00:09:40] Brian: I like your, Comparison to programmatic because what we saw anytime a publisher would set a floor price, it would be too high for what the market was judging the publishers inventory is worth.
+
+There's always been a giant spread between what the market judges the content is worth or the ad inventory and what the publishers who all claim to be, premium, by the way, what the publishers
+
+[00:10:08] Troy: Everybody lies, Brian.
+
+Everybody's 
+
+[00:10:10] Brian: realize I quoted you in my lead. Do you like I just do I just I quote you just by first name because I feel like you need to move into sort of
+
+your 
+
+[00:10:18] Troy: like the Madonna
+
+[00:10:19] Brian: soccer player Madonna kind of thing.
+
+like the Silicon Valley like CEOs it's like it's Sundar, it's Larry, it's Sergey. But isn't that going to be it to me I'm like these ideas sound great. They always break down over the business rules this isn't necessarily a technology problem it's a herding cats problem.
+
+[00:10:37] Troy: I'm always amazed how these problems get solved because the sort of enterprising arm of capitalism kind of finds a, unharvested opportunity and swoops in and builds something that can in some way sit next to money, take a toll and solve a problem.it seems to me to be a very, very logical and good idea.
+
+[00:10:59] Brian: Okay. But
+
+[00:11:01] Troy: But you mean, how do you set the pricing on it? I mean, that'll get figured out. It'll get priced at what it's worth. So what you don't like about the floor price in programmatic advertising is publishers were out selling 10 and 20 and 30 dollar CPM advertising. And the programmatic nerds came in and said, you're not going to clear out all that inventory unless you set the floor price at a dollar.
+
+And that was a moment of reckoning. The truth was it was only worth a dollar.
+
+[00:11:26] Brian: Yeah. That is a, that's deeply offensive to Steve Katelman. He is. He's not a dork or nerd, I believe you said, or a dork.
+
+[00:11:33] Troy: Well, he's the Hunter S Thompson of the programmatic ad world.
+
+[00:11:38] Brian: Steve's the most fun guy in programmatic advertising, 
+
+that actually reminds me because I had a meeting earlier this week with, this young woman who's, who's taking a whack at variable pricing for subscriptions, not totally micropayments, but It just reminds me more people are coming back since subscriptions hit a wall, and I didn't prepare you for this, but can you just give me the two minute spiel?
+
+Because I end up just being like, it never works. I can't go through all the reasons that they they're varied, and they change, but it's never worked like There's so many of these ideas when it comes to publishing that make total sense on paper on a whiteboard that fall apart when trying to be instituted and particularly micro payments as well.
+
+[00:12:17] Troy: are you asking? Why
+
+[00:12:19] Brian: Why is it? Why does it never work? From your standpoint.
+
+[00:12:22] Troy: I don't know if it never works, but my suspicion would be that a, you don't have a wallet at the ready. So it's not completely frictionless the first time you're asked to authenticate or connect your credit card It's getting easier by the way, because you probably have a credit card loaded with Apple or Google but It's forcing you to make a kind of calculation that you don't really want to make because you're not used to making it.
+
+So it's like, do you want to read this article for 30 cents? And it really just needs to be dead simple. You can't be forced to authenticate in any way, really, literally, you got to put your finger on the button and it's done.so I, I think it's partly mechanical, partly mindset. But I don't think it can't work,
+
+[00:13:09] Brian: No, I think it'll eventually work. I just think it will work, but also, I mean, remember, like, I might read 20 articles in a morning, if I have to bounce around and pay 20 times, and if there's in any way friction around that, it's, it's going to be awful.
+
+[00:13:25] Troy: So I think that in a perfect zero friction world, it's not. A terrible idea. Micro payments all the way. 
+
+[00:13:32] Brian: The microtransactions very briefly because it's it has a, Even a worse than a checkered history, even though it makes total sense, because there's lots of things that make total sense that for some reason, never end up catching on, but this was a topic in the news that you had shared.
+
+It was a really good podcast that Hank Green, he's turned the tables on Nilay Patel, on the Decoder podcast, and 
+
+[00:13:57] Troy: Maybe tell people who Neelai Patel
+
+[00:13:59] Brian: He is the editor in chief of The Verge you know, The Verge is a technology publication brand under Vox Media. it really was born in a different era we're going to be talking about retooling for a new era.
+
+The Verge is going backwards to me to go forward and, the whole conversation was interesting to me because, I gave a sort of full throated defense of the website at a time when, Not a lot of people are talking up their
+
+[00:14:31] Troy: mean, did you listen to the whole thing?
+
+[00:14:33] Brian: I listened to the whole thing. I thought it was interesting.
+
+[00:14:36] Troy: Did he say anything beyond
+
+[00:14:37] Brian: There wasn't enough commerce talk, but he mentioned their commerce group.
+
+[00:14:42] Troy: I fell asleep? 
+
+[00:14:43] Brian: you were unimpressed with Mila's,
+
+[00:14:46] Troy: No, it's not that. I mean, I, I'm a romantic and, and I like a good website. I made a note of it when the Verge redesigned their homepage and had the courage to try to make it something that people would actually use where they,did a lovely job with, typefaces and content presentation and balancing short and long and their little short format that they put in there.
+
+I don't find that it pulls me to their homepage though. I would say I probably still use aggregators and, and, and I actually find that My personal bias is websites that do less, that get me the information quickly without a lot of pomp and circumstance. It kind of like just to,get to the facts.
+
+I mean, I think that I appreciate. Some of the editorial design flourishes of the New York Times, particularly when they're delivered flawlessly inside of their app.I like a big image here or there and stuff, but,I don't know. I've sort of in my past have tested the limits of clever design in The presentation.
+
+I mean, it's this sort of magazine aspiration and it's fun to do sometimes to bring a feature to life, but for the most part, I just want to get to the content
+
+[00:15:58] Brian: Yeah, it just seems like it's, it's almost impossible to base a brand. If you're starting a brand, I understand people have legacy brands. Because we had a dinner, at the, for the rebooting last week. And at some point I was just asking people, nobody's talking about putting ads on webpages, why are you just talking about your events and stuff?
+
+I want to talk about putting ads on webpages. And there are all these sort of excuses
+
+[00:16:24] Troy: who, who, who you said that, or
+
+[00:16:25] Brian: I said that, I was like, why don't we talk about, ads on webpages? and not many people wanted to talk about ads on webpages. There are always like exceptions. Bloomberg, The Wall Street Journal, FT. They sell out display ads.
+
+But for the most part, I feel like the, general vibe is centering a publication on a website doesn't mean websites don't exist
+
+[00:16:47] Troy: there are categories where there's healthy demand for display though, just to
+
+[00:16:51] Brian: right. 
+
+[00:16:51] Troy: that. 
+
+[00:16:51] Brian: No, no, no, I know. And again, I'm not saying that display advertising is quote unquote dead. Nothing does. it's hard to understand the central role that it will play for, for many publications.
+
+I don't think you start a publication with, with a website at the center nine times out of 10. No,
+
+[00:17:08] Troy: Yeah. Can you please reprise the main points that Neal I made before on the podcast before I passed, I fell asleep, honestly.
+
+[00:17:15] Brian: Oh, okay. Well, his main points were that, one, the platforms themselves are pushing this idea of individuals over institutions.
+
+[00:17:27] Troy: there, the, as part of some conspiracy.
+
+[00:17:30] Brian: No, I mean, well, I mean, it benefits them. I don't know if that's a conspiracy. I think that's just operating businesses and
+
+[00:17:35] Troy: So the platforms would like to see a world where there's lots of empowered independent contributors, laying their lives out inside of their platforms. Makes sense. Yeah.
+
+[00:17:44] Brian: Yeah. And that, The overarching brand, the collective, if you will. I mean, he calls it a collective. I'm not sure if it, it literally is because the people cycle in and out. And
+
+[00:17:54] Troy: The age old media brand is important.
+
+[00:17:57] Brian: yeah, it's a signal. and
+
+[00:17:59] Troy: point of view, a standard bearer of quality,an expectation maybe.
+
+[00:18:04] Brian: Absolutely. and then one of the more interesting points he made was that,you know, since blogging's demise, And the pivot, if you will, to writing for algorithms, the job has not become fun for a lot of people. I know that sounds weird when a lot of people have lost their jobs, but a lot of the internet has, has kind of lost its, mean, Mark Thompson, we'll talk about later, he talked about getting back at Swagger, it lost something.
+
+I think I trace it back to when, when, when Gawker went away, I think the web. Overall, the open web and when it comes to content has has lost a lot of that on the brand level. I think it's moved to to individual smaller publications, newsletters, podcasts, etc.
+
+[00:18:51] Troy: Maybe. I mean, I still find I navigate my world with a lot of media brands.
+
+Okay.so I think that the pendulum has shifted, but we still, we still read New Yorker stories. We still read, you reference an article you read in the Financial Times. we talk media brands still,
+
+[00:19:08] Brian: yeah, I don't mean to look as I said, nothing dies. I mean, 
+
+[00:19:13] Troy: except for Alex's internet connection.
+
+[00:19:16] Brian: internet connection dies to Alex, you're back.
+
+[00:19:18] Alex: Can you guys hear me okay?
+
+[00:19:20] Troy: Did you get, did Wi Fi?
+
+[00:19:23] Alex: No, I actually, I mean, I, I was trying everything out and then I decided to run through a VPN. So right now I'm. Reaching out via London. So I don't know what's going on. 
+
+[00:19:33] Troy: we gotta carry the 
+
+[00:19:34] Alex: cloud, cloud flare issue or whatever.
+
+Oh, Troy's worried about carrying the momentum. Let's do it.
+
+[00:19:39] Brian: Yeah. So we were just going over Nilay Patel's, Requiem for the website. he's fighting the good fight for the website. you had some thoughts on this.
+
+[00:19:47] Alex: Yeah.
+
+[00:19:48] Brian: your, I mean, to me, it's a, it's a wonderful battle to fight.
+
+It's just, it's going to become a niche part of, of this brand and most brands,
+
+[00:19:56] Alex: yeah, I think, I think we maybe get lost in the website talk. I overheard Troy saying that he found it boring, was wondering if it's because it didn't include enough SEO talk or,
+
+you know, or maybe.
+
+[00:20:10] Troy: He was dying
+
+to drop, to drop that one,
+
+right?
+
+[00:20:15] Brian: He connected through London just to say that.
+
+[00:20:18] Alex: yeah, you know, like just put a bunch of ads for what best insurance to get, instead of writing articles.
+
+[00:20:24] Brian: Hey, they got a commerce team.
+
+[00:20:27] Alex: he mentioned something interesting. He said that,a few things actually. He says that, building traffic is easy or used to be easier. Building an audience is hard. But that once you have an audience, you have a group of people who are interested in what you do.
+
+So by building a website, what they've managed to do is give people a reason to engage with. the editorial team at The Verge having fun, and I think it works. I think, they're publishing to everything. They're on YouTube, they do a podcast, and they make good content.
+
+And their thought was, I mean, he mentioned that, that if they could build something that even gets one more visit per user, then they'd be doing fine. and that's what they did. And I talk a lot about, Using, your media brand or your capabilities to build a new format to build some new.
+
+interactions, some new utility, and they've done that. They have a little kind of feed on top of it. They've been trying different things out and 
+
+hey, 
+
+[00:21:21] Troy: use that feed? You use that little feed they got up there?
+
+[00:21:24] Alex: I engage with that brand more than I engage with any other brand. I visit that site more than I visit any other side. 
+
+[00:21:31] Brian: More than, like, once a week, twice a week, three times
+
+a week, every day. 
+
+[00:21:35] Alex: but I'm also very much like a podcast consumer versus a reader, as you know,But I do think that, their content is something that I engage with nearly daily.
+
+and they're trying. And his point was, you know, if we succumb to platforms, then you're only building traffic. And then, you fall into that trap that. platforms are doing, which is there's only value, and the individual, no value in the media brand, because there is no value in the media brand on platforms because platforms don't particularly want you to become bigger or big enough so that you can exist outside the platform.
+
+So instead, you know, they'd rather have a bunch of teenagers making free content. why deal with, the challenges that. Working with the media brand is so like
+
+him or not 
+
+[00:22:18] Troy: are people too, 
+
+[00:22:19] Alex: not joy. He's the only one Oh, it's one of the few that's actually doing something rather than saying, Oh, we have this 100 year old brand.
+
+Let's just get AI to generate stuff and watch the ship burn. and I think they've been quite successful and
+
+honestly, 
+
+[00:22:34] Troy: why you're coming at me here. I, I, I'm not against what Nilay was saying. I 
+
+[00:22:39] Alex: I think we should have them on. You are 
+
+[00:22:41] Brian: you're, you were this close to calling him naive.
+
+[00:22:43] Troy: I said I fell asleep when he started talking about the website. 
+
+[00:22:47] Brian: You used to love building websites.
+
+[00:22:48] Troy: the problem is, is that there's no notification mechanism and there's no sort of frictionless,aggregator experience.
+
+So you're at a message, massive disadvantage. Web pages are clunky and hard and
+
+they don't work very 
+
+[00:23:01] Alex: don't, I know it. The thing is that. You could give up and just sell your brand to private equity, or you could try this out, including, including when you say there's no notification, Apple has no benefit in providing great notification on web. So they won't. But, if you look at federation as an opportunity, it's, it's no longer about.
+
+Having notification coming from the browser, but having your content federated across different things existing on your website, existing on things like mastodon and maybe threads and blue sky and stuff like that. And that stuff is, but you saying Jesus Christ to that is the same.
+
+[00:23:35] Troy: No, I love the idea of Federation. People have been talking about Federation since RSS and feed readers. I love it. It's never happened. Right. it's just that when you use mastodon and blue sky in the same sentence, I get freaked 
+
+[00:23:50] Alex: Well, lots of, lots of things never happened, including newsletters becoming a thing or, IRC chat becoming a thing until Slack became a multibillion dollar business. Like you can't give in to this. That's, I think that's, Nealize,
+
+[00:24:03] Brian: That is hard, though, in publishing because so much shit has not come to fruition that I have to admit my I have to catch myself and I don't most, most often that my knee jerk reaction is bah that'll never work. I don't think that that feeling is unique to me. I think it pervades a lot of
+
+quarters and publishing.
+
+[00:24:23] Troy: you know what, Alex, I appreciate everything you said. I think it was really well said. I have spent many cycles in my life as a. advocate and excitable website maker and only to be, both as I think as a consumer, as I was saying to Brian, frustrated and, and as a creator that, the work never really added a kind of veneer of premiumness, nor did it make it easier for the, for the consumer to access or read or consume it.
+
+[00:24:50] Brian: What was your favorite website from over the years? what's a website you're like, you know, that was a great website.
+
+[00:24:55] Troy: Me personally, Yeah. 
+
+great website.I like stuff like, tech meme.
+
+[00:25:00] Brian: Really? That's like saying Craigslist. So I mean, that's like basically the anti website website.
+
+[00:25:05] Troy: I mean, 
+
+if I was to look at where I spend the most time, it would be between the Wall Street Journal and the New York Times 
+
+[00:25:12] Brian: Yeah, but that's for the content. That's for the content. They could put anything.
+
+[00:25:16] Troy: What, what, what do you mean?
+
+I,
+
+you know, like niche stuff? 
+
+[00:25:19] Brian: website is a way to present. It's saying, here's our brand, here's what we're about. Personally, I don't like the Verges thing. It's all like the black. I don't like that. No, that's not for me.
+
+[00:25:28] Troy: The aesthetic is not for me. The usability is not for me. I don't like it. I gotta tell you, you know what? It's funny, I, I did it today. I went to two or three homepage. I went to the BI homepage and.
+
+[00:25:41] Brian: go one more day and then you'll hit Barbara's, Are you a digital go getter? Because that's who they're after.
+
+[00:25:47] Troy: I think I'm a digital go getter. Yeah.
+
+[00:25:49] Brian: I
+
+[00:25:50] Troy: I also tried another website, which is post website called vetted. ai today.
+
+[00:25:56] Brian: had that in my newsletter.
+
+[00:25:57] Troy: Yeah. I read your newsletter when it's, when it's free.
+
+[00:26:02] Brian: That's a mistake.
+
+[00:26:03] Troy: and it's basically an AI bot tuned for product reviews and it sucks all the good stuff out of Reddit and everywhere else. It can find stuff on the web. So if you want to find best cookie sheet, it will give you a summary of best cookie sheets.
+
+[00:26:17] Alex: mean, I think, we could be reaching, a time soon where we're no longer really paying so much attention to all the infrastructure of AI and start looking at utility, like new types of utility being built. And the web is, is, is not a, Bad way to distribute that, right? and so whether your content platform or not, I think that, that there's an opportunity if you keep investing in your website because the tools have also become much easier, like building a website is easier today than it used to be and you can build interesting things and build communities.
+
+There's companies like fourth wall, which basically gives you a. White label version of Patreon, right? So if you wanted Brian to kind of put stuff behind more paywalls, yet more paywalls, you can, you can build completely custom ones, with custom feeds, and all that stuff. So I do feel like we might be throwing out the baby with a bath water a little bit around, around the web.
+
+I think Nele, Atal he does these grand proclamations and I don't think, he means 100 percent of what he says all the time, but I think they're kind of good thought starters as to, not letting yourself, just give yourself all your shit away to platforms,it's that chase for traffic that we saw happen over the last 15 years that got us where we are today, chasing for traffic only got to do was, destroy 100 year old brands and feed all your content into LLMs.
+
+Well done. And now the only thing you can say is like, well, nothing else worked. Well, you didn't really try anything else.
+
+[00:27:46] Troy: Hey, Alex, it kind of is a nice segue to a little, the, my, rant corner.
+
+[00:27:51] Alex: Great.
+
+[00:27:52] Brian: Is this about substack or is this a
+
+[00:27:53] Troy: Yeah, no, it's the sub stack thing. It's like, I read that someone, some sub stacker, I don't know who it was, was, was, providing instructions as to how to turn the email delivery back on inside of the app. and I was complaining to Brian, a few weeks ago that I wasn't getting any of his emails, the rebooting.
+
+This is when pre ghost Brian, when you were on Substack 
+
+and I thought they were all just going into the bin and I didn't, find them there. And then it occurred to me that when I read this thing about Substack. That they had turned off on, I can, I subscribe to like 20 newsletters. they turned them all off, to prioritize just delivering them into the app.
+
+It's the nastiest, horrible, monstrous thing
+
+[00:28:42] Brian: I have to, I have to defend the honor of, of Substack here.
+
+[00:28:46] Alex: let's frame it first. Are you saying you, Troy, because you downloaded the app and logged into the app, all your email delivery got automatically turned off. It's not Brian's email.
+
+[00:28:57] Troy: No, Brian's was a symptom. I didn't know why. And then I realized that when I turned on the app. It had basically turned off all the emails.
+
+[00:29:05] Brian: they, when you originally, you're probably an early adopter. They originally had, I believe it, it defaulted to, if you downloaded the app, you want all your content in the app. Then they added
+
+[00:29:16] Troy: Well, that's insane. Why would they think that
+
+[00:29:19] Alex: Oh, I didn't know you could do that. That's so much better. I'm just going to go turn that on right away because I'm, I don't want to receive emails anymore.
+
+[00:29:26] Brian: No, it's very, I, to me, I understand the consumer
+
+[00:29:29] Troy: is yeah, 
+
+but you're, 
+
+[00:29:31] Brian: but the problem is I, I think it's, it's a very esoteric activity to go to Substack and, and just fire up the app and, kick back just
+
+[00:29:42] Troy: Think about what it is broader than that. They're saying we're going to control the place where 
+
+[00:29:47] Brian: Oh 
+
+yeah, 
+
+[00:29:47] Troy: content. They're a platform. 
+
+[00:29:50] Brian: They're backed by Andreessen Horowitz. Dude, they gotta meet like a 400
+
+million dollar Zerp era. Dude, that pisses me off. That's why I'm not on Substack anymore.
+
+[00:29:59] Alex: right. I mean, I think, there's probably some product manager out there that got a big fat raise out of this, but 
+
+[00:30:04] Brian: Oh, good. I'm
+
+glad I suffered for that. And Troy. More importantly, Troy has suffered.
+
+[00:30:12] Alex: But isn't it the same thing as like,Spotify going out there and trying to welcome. a bunch of podcasters sense that they can change the models of podcasting and put them behind a wall.
+
+Like everybody wants to control the means of distribution. So don't trust someone who says, we're a newsletter platform, and the problem is there aren't many good products, right? Patreon is a terrible product could be competing with that. but place like fourth wall where you can manage all that stuff yourself or ghost.
+
+are essentially websites, right? and websites that you control. And as a content creator, putting a defensive line between you and the platform seems like a good idea because there you go, Substack did it. Are we surprised? No. Is it probably good for them? Yes.so
+
+[00:30:54] Brian: Yeah, I mean, well, Substack has moved
+
+away have done it as a product leader, Alex? Would you have put email default off?
+
+[00:31:02] Alex: not if we were a newsletter company. No, I don't
+
+[00:31:04] Brian: Well, they're not. That's the thing. They changed from being a newsletter company to being a platform. And they started to like to stop. If you look, they don't talk about newsletters. They don't talk about email. They're pushing a lot of their writers to start uploading video and to doing audio and, and they've got one of the top podcasts out there is hosted on Substack.
+
+So it's moved into, into trying to become. I guess like the YouTube for people who live in Fort Greene. That's how I would
+
+[00:31:37] Alex: But what, when this is the thing, what are they becoming? Cause I'm not sure. I
+
+[00:31:41] Troy: Why do you always use Fort Greene as your sort of
+
+canonical, 
+
+[00:31:45] Brian: it's a silly neighborhood.
+
+[00:31:46] Troy: canonical Brooklyn neighborhood?
+
+[00:31:48] Brian: I don't know. I've got a ranking of, of Brooklyn neighborhoods and
+
+that's just where they are. What's number one?
+
+The number of my, Carroll gardens is the number one neighborhood in, in Brooklyn. Although I would say without the transportation personally for me, Red Hook is, is that's. I'll move back to
+
+[00:32:04] Troy: That's like pioneering, right? You got to be a pioneer. You got to have a car out there. Yeah. Are
+
+[00:32:08] Brian: Yeah, yeah, no, I want a car.
+
+I want to have like a station wagon or something like that and live in Red Hook.
+
+[00:32:13] Troy: you going to get a dog?
+
+[00:32:14] Brian: Maybe. I'll get a dog if I have to.
+
+[00:32:16] Alex: I can't actually find how to turn off newsletters in the sub stack app. So I don't know, maybe on an, maybe you're part of some sort of experiment. Troy. I still get, I still get a bunch of emails that I archive instantly.
+
+[00:32:27] Brian: It's gonna be very interesting for Substack sort of next iteration and because it's coming at a time when the supply of, of content creators that are available has never been higher. And there are a ton of people that they're on onboarding onto this platform. I was talking to a, a substack writer who was concerned that there, there's gonna be an influx of newcomers that are.
+
+That are grabbing at the at the pie but they're gonna really I think tack away from They've sort of played around a little bit with with Existing publishers, but they want to take their best talent for sure. They're going to see an opportunity to to do that. 
+
+[00:33:07] Alex: I would just say that this is all, people making those decisions right now should really think as to whether or not they want to put all their effort into another business that's going to, turn the monetization into some sort of algorithmic, ever changing landscape, and then, I'm pretty sure if this goes on, and sub stack is successful.
+
+We're going to start hearing about these sub stackers burning out. Like we're hearing the YouTubers burn out. Yeah.
+
+[00:33:32] Brian: Yeah, so let's get on to the beef the the main part of the program which we're going to talk about Turning the ship of very large organizations through the lens of a couple of cases that are in the news. One is CNN, which I think is going to be a fascinating Harvard Business School case study. and similarly, I think Google will be a fascinating case study because, I mean, these things are always overdone and Google is, is fine.
+
+But, they've reached a point where, I don't know if there's been more pessimism around the company's future. And I feel like a lot of the criticisms of Google have come to a head with how it has rolled out, Gemini, it's AI product that apparently did not like. Many white people. let's start with CNN.
+
+Mark Thompson came out with one of his with the grand internal memo that was obtained by every single reporter covering the media business within five minutes. These are a bit of set pieces. ever since the New York Times innovation report got leaked, they're sort of expected from from new leaders and Thompson has been signaling again and again what is coming.
+
+But he came out with a strategy that on the surface is fairly anodyne. there's there's sections like Building our digital future and then talk of a global integrated multimedia news operation and future proofing TV production, developing new sources of revenue, go figure, and everyone's favorite communication and culture.
+
+Troy. Let's just get on, just organizationally. have you written one of these, these kind of grand, grand strategy memos? What's the secret to them? Because they read, they, a lot of times they read to the, as the sitting representative of the cubicle class, they read like a lot of pavlum.
+
+[00:35:27] Troy: I would say that anything at a high enough level, high enough, meaning that you're not signaling anything that is going to upset people.at the same time you want to prepare people for sort of a model and a construct that is the. the kind of change map that you're going to navigate, you end up writing in three or five principles of things that you're going to do.
+
+And they end up sounding like future proofing the business or managing cultural change or innovate more quickly or whatever we discussed before. So I think,I think that particularly given the severity of the change agenda, you want to communicate and you want to signal that, that things are going to change and you want to give the organization a framework, but it ends up feeling kind of,as you said, anodyne I have a kind of construct that I thought we could play with, if you, if you don't mind.
+
+[00:36:21] Brian: Yeah, of
+
+[00:36:22] Troy: And, and I actually think we could come up with something that would be interesting. So, but let's say at first we dispense with. the really hard reality that there's massive cultural upheaval in navigating towards a new CNN, particularly given, the scrutiny and the talent and everything that goes along with changing that and, and that there's entrenched, audiences that Perhaps like what, what they do today, but how will it meet the moment?
+
+And I think one of the complexities about the moment is it's like ch changes. Like it's, you're changing inside of something that's changing dramatically. So you have change squared. Right. And it, and I was walking the dog today and I was thinking about it and I was like, well, what, what, what would be radical?
+
+Right. And I was thinking about. Kind of something you were highlighting Alex, which is,the internet is being rebuilt from chips on up, right? that's why Invidia loves it so much because they're now worth two trillion dollars and You know we're basically reassembling the internet and it brought back memories for me because I remember in the late mid to late 90s in early 2000s when companies likelike Cisco and Sun Remember that?
+
+What was their tagline at Sun? The network is the machine. IBM, Netscape, Qualcomm, Intel, still Microsoft. They were building the rails, right? but to me, they're, we were, we created something where you could make pages and you could read pages, right? And we put little boxy ads on top of them that we made a directory and a search engine and all that.
+
+But really the new world in some ways. Maybe challenge me here, but was a skimorphic of the old like we used to do pages and now we were doing digital pages And then some people at the time thought it was cool because it was cool But if you were in media suddenly your market expanded from Columbus, Ohio to the entire world So that was a neat idea and it was cool for a while Until everybody got the same idea And they could all make stuff, right?
+
+But then, NVIDIA powered moment is to me is kind of like so different than the last one, because now we have this layer of intelligence on top of all information and all the APIs essentially. So we stopped thinking about pages instead. Now everything is like conversations with smart machines.
+
+And, and the machines can respond with text and images and soon video and, I guess down the line, they'll sense things too. So they'll see things too. Right. And yeah, sometimes they make the wrong stuff or stuff you don't agree with. But to me, that's just a detail. So paper pages to digital pages wasn't it was a way to comprehend things.
+
+And now we can see how disruptive that was because everybody suddenly had the capability to make anything they wanted. Right. So we've got AI is this new aggregator. And so my construct that I would would encourage like that we should talk about is how do you keep up with the new aggregator? Right. And I guess there's a couple ways to do it.
+
+You can Kind of embrace that AI driven abundance, which will, I don't really know what that means, but let go with it. we could find the difference in the people behind the machine. So embrace the, the humans that make things really interesting in our world, or we could start to deeply personalize it.
+
+Right. And I won't get into this much, but I thought of precedence. I think that one way or the other, like forget about Fox or MSNBC or the, the way that we measure CNN today, they don't matter. I think that if you're competing in the phone, you're competing with the New York times.
+
+And they're really good at it because they're good with text and they've never made the kind of money that CNN makes and they occupy like a clear part of the cultural political spectrum and are trusted for that. And they, they know how to go DTC, they know how to manage a consumer against a bundle and they created a daily habit there, right?
+
+And then I was thinking, in some ways, CNN could go like, and this, you don't want this to happen, but there are a lot like vice in a way where vice is a TV station and lots of content, people around the world and a production capability and a website and all that. And if you think about it even more broadly, I would say that the transition from kind of news magazines or news publications, magazines, Newsweek time, U S news fortune business week from print to digital was a disaster. Like most of them are just shells now, right? And maybe the economist in the New Yorker did a little better, but they were one of a kind products that old people seem to still like. So, And then I, I went back and, and now we'll get to the, the idea and then I went, like, what was CNN? Right.
+
+So Ted Turner created this thing. It was 24 seven news. It was like 1980, 79, something like that. first of its kind, the people that made fun of it called it the chicken news network because it was like low production value and they thought it was crappy and it would never work. And then like, There was the Challenger space disaster, like the Gulf War, 9 11 and
+
+all 
+
+these 
+
+[00:41:30] Brian: War was it. I 
+
+[00:41:32] Troy: and it's just like, boom, CNN was part of the landscape, right? And so I was wondering if you really had to just kind of reinvent this thing is you really get behind AI, right? And you become, like the biggest, baddest aggregator of kind of all types of news and where news connects to, other lifestyle stuff on the planet, you create basically n number of streams, you are video news all the time, however you want it.
+
+And your core capability is probably to to make AI that fact checks AI or people that fact check AI. But like you stream Lots and lots of video around the world in every language, with whatever talking head you want, because AI can give you a dead person or Jake Tapper or whoever you want. And you kind of go toe to toe with AI.
+
+You build the most ambient. ever present, fastest moving news stream, like you do cheddar on steroids, and you do it incredibly cost effectively. And you own the format of video news talking head and yeah, you do features and docs and all that stuff. But you really have to have the substrate of like, The A.
+
+I. Funnel of news all the time, but you definitely build it like a dock production capability to make docks at a furious pace. and at the same time, I think you want to try to Embrace the new media stars, Brian, that you talk about that are these weirdos that live both potentially inside and alongside your media brand, but have their own world, right?
+
+Like the Kara Swishers of the world and the like, people that have. built their own mini little narrative world and, constellation. And you create a construct that invites them in. You don't have to own that talent. You're a form for that talent.
+
+But, you rush the, rush the show. and I will pause and we can discuss this
+
+[00:43:36] Brian: Well, let me just ask this then, I'm going to throw it to Alex. Is this a DTC business or a wholesale business? Because I think that a lot 
+
+[00:43:43] Troy: It's both. It's both if you turn your phone on and you want a video feed of the news right now and you want to know what's going on, I can turn it on and it's delivered by a dinosaur and it's from CNN and it's coming at me live on my phone always.
+
+[00:43:58] Brian: Like literally from a dinosaur?
+
+[00:43:59] Troy: Well, like, you know, yeah, yeah, why not? Exactly. Thank you.
+
+I did the dinosaur thing. Alex likes that stuff or Snoop Dogg or 
+
+[00:44:07] Brian: What, he likes dinosaurs? 
+
+[00:44:08] Alex: I mean, at the very least it sounds like a bold focused plan and it, it means that you, Build some utility around a core competency that you might have, which is this coverage around the world of what the hell is going on. and,
+
+[00:44:23] Troy: any language, any character all the time.
+
+yeah, but it requires a ton of courage because you'll need to be ready to screw up. You'll need to be like, could completely reduce your cost structure. And I would say that there's a bunch of talent that is currently at CNN that no longer lines up with that. The talent that was, built around gather, Yeah. We'd probably do a talking head of Anderson Cooper and we'd pay him handsomely for that. And we'd have him doing documentaries with us, right?
+
+[00:44:51] Alex: Yeah, I think the documentaries are interesting because then you, you've got places like Max and stuff like that to redistribute them, including YouTube and Max, you don't have to own the, those channels yeah, it requires a leap of the imagination to consider. The idea of there being a CNN bot that is the best news bot in the business,and that, adapts to your liking.
+
+And even, sometimes I would love to know what is going on with. This, and I do get, that from perplexity, et cetera, but perplexity, it's interface is never, it's not quite made for, for news. Right. So it's not generating the maps and the infographics that are coming up or anything like that.
+
+You could create a really interesting use product out
+
+[00:45:33] Brian: Hmm. By, by the way, I, I shared this. did not know. Perplexity has a tech meme, like you might like this, Troy, a tech meme like news site, perplexity News, and they also have a news podcast that I assume is being read by ai. And I gotta say, I don't know, it could just be a random British person, but I think, I think 
+
+it's AI Alex, maybe you can run your AI test over it.
+
+[00:45:56] Alex: yeah, they have a discover tab, which seems to pull out, which is essentially their news. google. com.
+
+[00:46:03] Troy: they're formatted, they're formatted queries, right? That, that are delivered to you. Smart, actually. You know what? You, you guys are helping me. I think I'm going to write this up in a newsletter and, perplexity is an example of what you would want to do, but videofy it.
+
+[00:46:16] Alex: and video is one thing, but also I think a lot of the stuff that CNN was famous for, which is all those infographics, the map, the voting
+
+maps, all that types of, 
+
+[00:46:24] Troy: The 
+
+wall, called?
+
+[00:46:25] Alex: yeah, whatever 
+
+[00:46:26] Brian: King, 
+
+[00:46:26] Alex: that, stuff was called. We haven't seen much done with that, but I think that's a huge space for innovation there, by 
+
+the way, 
+
+Perplexity continues to be an amazing product, by the way, guys. It's
+
+just, it's it's it's huge.
+
+[00:46:39] Brian: I, I used it for one of my recipes over the weekend. And it worked. It worked just fine. Sorry to say, Neil. I mean, Kenji's Detroit style pizza, but If I just need to know, like, how long something needs to be on for so I don't get sick.
+
+[00:46:57] Troy: Brian, what do you think of, what do you think of the idea?
+
+[00:47:00] Brian: I think it's good, but I think would like to get at is just the internal challenges around that. Because you've got a brand that, for all of its challenges, produced a billion dollars in EBITDA. In 2023. how do you operate the legacy business? You're not, you gotta operate the legacy business while you're building, the next business.
+
+And, I mean, you have experience in this, but that's gotta be devilishly difficult.
+
+[00:47:27] Troy: I, I don't know if they can maintain close to 50 percent margins. I, I, I don't know. I mean, and if you look at maybe the natural state of things, the New York Times would be a better indicator with actually slightly more revenue. They're doing 300 million in EBITDA against 2. 5 billion in revenue. So to me, CNN is floating.
+
+At an unnatural cable driven profit level.
+
+[00:47:54] Brian: it's Wile E. Coyote, basically.
+
+[00:47:57] Troy: I don't know what that means.
+
+[00:47:58] Brian: We remember like he would go off the cliff and there was a moment where he didn't, he didn't think that he was falling and 
+
+[00:48:05] Troy: I mean, I, I would imagine the accountants are, are, pretty sober about. the sustainability of that level of profit. But, it's going to take a really, really strong leader creating frameworks about what the future looks like. It's going to be about cutting all of the costs out of the traditional or historic.
+
+delivery mechanism, i. e. television while maintaining a product that's okay. It's going to be about channeling that money into new competencies. I'm arguing that that should be an AI centered news gathering and distribution process, and a production capability. And it's going to be about changing the relationship with talent materially so that you're not paying 20 million a year to an anchor.
+
+What you're doing is creating a universe that allows lots of actors to live inside of it. And I think it's also going to be about dramatically, there's something I'd love for you to comment on, Brian, which is these new sort of Let's call them platform based content wackos that are like blurring the lines between politics, conspiracy theories, and lifestyle.
+
+And they're, they're strangely compelling,
+
+[00:49:23] Brian: Yeah, I think that's, that's something we were talking about earlier. I, I thought about it from, that New York Times story that, it's funny they did it in, They did it in like the style section and I thought that was, actually it was, it was the journal, about, this woman who is a, she started as, they call her like a mommy blogger, but she was talking about like interior design and, raising kids.
+
+Her name is Jessica Reed Krause and her site is House in Habit. And then she just pivoted into like conspiracy theories, celebrity news with the Johnny Depp, trial, Amber Heard, that, that sort of meshed into the conspiracy theory world, and then she just straight went into politics because that's where the money is.
+
+And she is building a brand that is all a total mix of all these things that I think it's difficult to. Put your finger on what some of these brands are, particularly in this new strange world. I think when you align 
+
+[00:50:25] Troy: but it's so weird, right? Because if you just think about the environment, you're on Instagram, okay, like this is an Instagram centered news and lifestyle brand, and you're flipping through. Right. And you hit her and like, it's a selfie or then you hit her and it's an interior. Then you hit her and she's like at the fucking White House or something like that.
+
+you
+
+know, 
+
+[00:50:47] Brian: on tour with RFK Jr. I
+
+[00:50:49] Troy: yeah, 
+
+like it's, it's sort of like the medium is the message stuff. Like it's in your feed and it's going to find a soft way in and then you're going to get red pilled.
+
+[00:51:01] Brian: Yeah. But I do think that there are tremendous opportunities for brands to be built that are more interesting because just like DTC did away with some of the more rigid. Categories. I think this version of DTC media can do away with some of the rigid categories. You can be a few different things and and build a following because a lot of times you're trying to confine yourself.
+
+Because of your business model and to stay in your lane. Whereas I feel like individuals have much more,
+
+[00:51:31] Troy: They don't care.
+
+[00:51:33] Brian: yeah, they just be idiosyncratic and it makes you more human to be
+
+[00:51:36] Alex: I think, I do think that individuals and some, it's not monolithic though. Even very successful individual, media producers get into this trap of focusing entirely on a single platform. there's this kind of very specific YouTuber, right? and, I think you're kind of stuck at, the whims of like the algorithms changing, et cetera.
+
+The, the, the successful, folks I feel are building businesses that are multifaceted and there must be some sort of, and I'm trying to work it out, but some sort of set of pillars around that where it's just you have your platform coverage, you have your own kind of, utility that you provide.
+
+Maybe it's a password protected recipe that only certain fans get, whatever that is, right? you make sure that you strike deals with bigger brands. Hey, great. If you can get your show on Netflix or prime or whatever, also good. And I think that having this kind of healthy distribution is, is probably the future, but I can't imagine any brand surviving without some sort of.
+
+Owned utility, some sort of, whether that's a website or an app or whatever that is, you can't just merely survive just 
+
+[00:52:44] Brian: Yeah. Well, I mean, it, it used to be, you build the product and then you build like a media arm to lower negative cack. And now it's the reverse.
+
+[00:52:53] Troy: well, Alex, tell me, build on this then, okay? So if, if CNN was the global, multilingual, AI driven video stream, what would you need to own to make that defensible? Would you need to own the process of making that stream? all of the sort of guts that, that allowed you to execute like that in real time and be the place that was the most current?
+
+Would you need to own an app? Would you need to own,obviously you have a brand and, you're, are you all of those things?
+
+[00:53:26] Alex: I think it's all of those things, right? You need to own the brand DIP. So whether that's, that's kind of the media brand, but also voices and the people that you That you see on screen, a good, like operational capability of generating that content in a way that feels like, Oh, I can't get this anywhere else.
+
+and that's great to become very valuable because you'll be able to get nearly everything everywhere else. Does that make sense? Like AI, AI models are becoming so commoditized that a lot of junk is going to just be so cheap to get. that having a, people are still going to look for something that is diversified, that, Properly even like somewhat human edited, etc.
+
+[00:54:06] Brian: But is this done by the media brand or is this done in partnership with technology companies that are looking to differentiate their LLMs and,
+
+you know, for instance, I think Troy dismissed it as a, ad deal, but you know what Semaphore is doing with, with Microsoft to try to bring that functionality at least to their site.
+
+But I just wonder if media brands end up becoming ingredients. Into just feeding the LLMs.
+
+[00:54:34] Alex: Well, it goes both ways, right? I think if you look at it Of a semaphore reddit deal in that case. they are Getting an additional revenue by selling their corpus to 
+
+[00:54:44] Brian: Yeah, that's the data stuff. I mean, like building real utility.
+
+[00:54:48] Alex: oh, yeah the utility stuff I think there is going to be Partnerships my thought though is that what is it that you can build and own? I mean, maybe it's because i'm in kind of this independent kick. I run an independent studio. I didn't get any investment I find that that stuff like always tends to kind of pull you towards down the path that you're where you're not nimble enough and so for me I would say the good thing for media creators, whether independent or large corporations, is that there's a giant battle happening at the, at the platform level, at the infrastructure level, where everybody just wants to provide these tools to you, right?
+
+Whether it's Google or OpenAI or Microsoft, they're all, giving access to the, platforms, to their models. That is not including, newcomers, or kind of like, third party players like Like perplexity and, the guys who did Claude and Mr. Allen, all these things on top of that, there's open source models coming. what I'm trying to say is the infrastructure to build this stuff is available. You don't have to sell your soul, and partner with a technology company.
+
+You can just license this stuff and use it yourself. And guess what? If, if things go wrong, you can swap models. around this stuff is
+
+[00:56:00] Troy: imagine though, if you took the perplexity team and you merged it with CNN and you didn't have all the sort of hubris and stuff in the way that made that combination. Impossible. You could build something cool.
+
+[00:56:13] Alex: or you could absolutely build something cool. My, caution is that if you're doing these partnerships with the platforms as a media company, also look at what you can build internally, especially since now building things is easier because I get a sense that there's always these partnerships with.
+
+Platforms and big tech companies and they always consume what the media company wants to do. It's like, they're the worst boyfriend that says they're going to change, but it's never going to change. 
+
+[00:56:38] Brian: Wait, who's the 
+
+[00:56:38] Alex: with people, 
+
+[00:56:39] Brian: boyfriend is
+
+[00:56:40] Alex: I mean, technology is tech companies are. 
+
+Yeah, they don't want CNN to exist.
+
+The tech companies do not want CNN to exist. Whenever they say we want these media brands to be successful. They don't, they want them to explode into a million little Adams and for Anderson Cooper and Tucker Carlson or whatever, to just have shows on their platforms that they can just manage at scale.
+
+So, so if you want to build a media brand, I'm not saying pull away from everyone. I'm just saying. Build something that you can truly own. because that's always the most defensible and stable component of your business
+
+[00:57:16] Brian: So this is actually an interesting point. So what's being painted as going quote unquote independent and, and Neil, I got to. This point, what's being painted as going independent oftentimes is really just going to like be a slave to,
+
+[00:57:31] Troy: You're indentured. Yeah. 
+
+[00:57:32] Alex: A 100%. 100%. And I think it's, it's like I'm going to quit my job and work for myself, but you're not. You're working for YouTube. it's the same thing happened with Uber drivers, right? When you were in San Francisco, when Uber first started, everybody thought it was great.
+
+talk to Uber drivers today, and they've been, algorithms into working lower than minimum wage, for like 18 hour days, 
+
+trying to make ends meet. 
+
+[00:57:57] Troy: and I took the Waymo?
+
+[00:57:58] Alex: Yeah, we did take the robot car. Troy was very impressed. 
+
+[00:58:01] Troy: You were impressed too, Alex, I don't think this is some kind of criticism on your capitalist friend.
+
+[00:58:07] Alex: No, no, I was, I love those things. I've been using them forever. I, but the thing is so, so maybe a good analogy, right? The Waymo future of robot taxis is the futures that any of these drive sharing platforms want. So they never have your interest. at heart Difference is, with platform like YouTube is they'd rather manage and pull the rug on a million different independent producers than giant corporations that have lawyers.
+
+you know what I mean? if YouTube doesn't want to make deals with CNN, and Yet they all started like that. If you, if you saw the beginning of a lot of these platforms, they always strike deals with the big media companies. It's always a Trojan horse. so build your own shit. even if it's a little bit like start building that muscle, please.
+
+[00:58:52] Brian: So flip side of this, it. 
+
+[00:58:54] Troy: Are we doing Google
+
+[00:58:55] Brian: Yeah, we're doing Google. So another competing CEO memo. this one came, from Sundar Pichai. he addressed the company's Gemini controversy, I guess it was, just a couple days ago. And, it was actually last week. He called it wrong. He said it was completely unacceptable.
+
+and, and the controversy over this was the. Gemini image creation, tool was, spitting out embarrassing, some would say offensive results. A
+
+[00:59:26] Alex: I mean, some would say slapstick,
+
+hilarious, it is. I mean, to me, it was hilarious. I don't understand. Like, all the people who claim to be offended 
+
+[00:59:36] Troy: I didn't read it. What did he say that was so slapstick?
+
+[00:59:39] Brian: No, no, no, the actual, the Gemini results, people were saying, Oh, give me, give me images of Nazis.
+
+And it showed a very like Benetton ad
+
+version of Nazis, 
+
+which I think is just, 
+
+[00:59:50] Alex: subjectively funny. I'm sorry, 
+
+[00:59:53] Brian: Okay, it is objectively see I could good. I'm not offensive. 
+
+[00:59:56] Alex: of course, it's offensive, but the funny thing about it is that it's, it's just like such, it feels like it was written for Silicon Valley,
+
+but then thrown out because it was just so crazy. and it's a sign that A lot of things 
+
+[01:00:09] Brian: it a sign of anything? I guess 
+
+that's what 
+
+[01:00:10] Alex: Yeah. It's a sign of many things I can, I can list a few. first of all, it's a sign of the fact that Google's is being. Asked to move fast and they got pulled into this and they they were trying not to because google hasn't been moving fast You know a lot of their successes It came free and far between and if anything they kind of like they've been pretty timid at innovating right considering their roots And this is what happens when you try to get a company that's not used to move fast move fast to there's definitely some sort of like Cultural thing where people are making just stupid ass decisions and, leadership isn't properly using the product because 
+
+somebody saw this. 
+
+[01:00:50] Troy: the, the woke mind virus
+
+[01:00:53] Alex: Yeah, I'm, 
+
+I'm, 
+
+[01:00:54] Troy: you're saying? In a nice way.
+
+[01:00:55] Alex: no, I don't actually think that that's the problem. I think that some well meaning people somewhere tried to make this happen, and plugged it in, and then people saw it, but nobody felt that they had the authority to make that call and say, this is not fucking possible. 
+
+Well, because, because I think that part of it is, is structural, where there isn't
+
+[01:01:17] Troy: Because dissent is squashed, because people can't have their own points 
+
+of view. Because, 
+
+[01:01:22] Alex: I think if you're Red Pill, that's the place you go to.
+
+I think there's definitely a cultural component to it, 
+
+[01:01:28] Brian: It's just a monoculture. There's like monocultures that develop everywhere in
+
+journalism and 
+
+tech. That's why I,
+
+think it's kind of funny that where 
+
+tech 
+
+[01:01:35] Alex: a slightly different, 
+
+[01:01:36] Brian: is not part of
+
+[01:01:37] Alex: but that's not, the monoculture isn't multiracial, Nazis, the culture is like trying to build an environment where people feel welcome. Okay. Let's say that's the culture that they want to build.
+
+Fine. Let's put that aside. Here's the structural problem at Google. They don't have a real sense of what people are working on. There's no key leadership. everything's experiment based. nobody takes ownership of stuff. So unlike, Apple, which is, I think is a deeply courageous company because there are people at the top that will use the product and say that's not going out.
+
+there's, there's not that mentality at Google no longer exists. Stuff moves slow. A lot of stuff is by committee and a lot of the people in the committee don't really have the authority to say kill the product or 
+
+make the 
+
+[01:02:20] Brian: you 
+
+[01:02:23] Troy: watch YouTube now, and I saw a video of Sergey Brin addressing the troops, and it was all sort of idolatry, and people sitting back, and he comes in and his hair's messy, and he's wearing, like, actually a very nice plaid colored jacket.
+
+I really like the jacket, actually. 
+
+[01:02:38] Brian: It was at a meetup, by the way. It was at an AGI 
+
+meetup. He was 
+
+[01:02:41] Troy: right. 
+
+[01:02:42] Brian: wrong.
+
+[01:02:43] Troy: Yeah, he's like, he's no Mark Zuckerberg, guys. This is not, you know, wartime leadership. This is a guy that's high on decades of cash and burning man 
+
+[01:02:54] Brian: He's 
+
+[01:02:54] Troy: back to rescue the company. And he took a few hours out of his kiteboarding schedule to come in and talk to people about how smart he is and how he can.
+
+Transcribed opine in terrible generalities about the A. I. Future.
+
+It's a leadership problem. 
+
+[01:03:10] Alex: a leadership
+
+[01:03:11] Brian: did you see the question he took with the guy in the, t shirt that was like the image of exposed women's breasts on it? It was just, He went to the guy because he was like, Oh, that's a funny t shirt. And like the guys asking him a question, weirdly, he looks like the Ethereum guy.
+
+that sort of summed up the whole Silicon 
+
+Valley, the TV show scene.
+
+[01:03:29] Alex: this is a structural problem with Google. I know many people who worked at Google, who work at Google, it's impossible to get stuff done there. A lot of people are just sitting around noting, knowing that it, it is an inherently political organization and they put a CEO at the helm of it that is really good at making things feel like everything's under control.
+
+But the fact is that, they haven't built anything new. They've killed products that people loved and there is no, structural leadership in place to the point where people that I hired from Google sometimes would say, well, it's the first time I work for a manager that knows what I'm doing.
+
+[01:04:06] Troy: I feel like I'm going to work at a restaurant, not to work there just to eat there. and that's why I would go work at Google because the food's pretty good.
+
+The, do you think Sundar, 
+
+do you think the Sundar is the, the Ballmer of, of Google, the Steve Ballmer? Do you think that his days are numbered?
+
+I don't know because that company can, the way the, the board is set up, they'll just, try to keep the pace and I think that there's likely things that are about to change but Alex, can I give you some facts here? And not that you, so Google. Prince 80 billion a year in net income.
+
+[01:04:42] Alex: yeah.
+
+[01:04:42] Troy: They're sitting on 120 billion in cash. They employ 150, 000 people and 30, 000 engineers. I mean, this is staggering. Okay. This is now, and then back up just a little bit. 
+
+[01:04:57] Alex: I bet you, I bet you anything that 80 percent of that revenue sits on the shoulders of 1, 500 people.
+
+[01:05:03] Troy: Oh, I'm sure, I'm sure. You could Elon Musk that thing to death.
+
+[01:05:08] Alex: Well, I mean, yeah, I mean, let's, when you say that, you mean actually make the business collapse because that's
+
+[01:05:14] Brian: I mean,
+
+[01:05:15] Alex: you
+
+[01:05:15] Troy: but because, because CNN and Google are very different disruptive challenges. One is a victim of massive distribution disruption. That's CNN. And the other is what I would call ATM sickness,
+
+which is they have a it's yeah, they're Nipo babies. And here's the thing. Google made better search. Almost everything else was acquired.
+
+Google is a systems integrator of sorts, or a company integrator, right? And it has to get smaller. And, you know what? I looked at what companies, imagine the modern Google, and imagine companies that they either bought and integrated and expanded. So, Google bought the following. Android, So mobile operating system.
+
+Double click the ad delivery infrastructure for the internet. Nest. All the Google Home stuff. Motorola, the phones that you get, Fitbit, the watches. YouTube, the biggest video delivery, platform on the planet. Ways, ways for mapping HTC. More phones. AdMob, another ad network. DeepMind the AI capability looker.
+
+Which is, data presentation rightly, which became Google docs. Okay. So that, that is, they did a great job acquiring those companies. I'm sure there's lots that they acquired that
+
+weren't 
+
+[01:06:36] Brian: of, bunch of ad tech tuck ins, 
+
+your former interns company.
+
+[01:06:40] Troy: they made gmail former and yeah, my former intern, Nat Turner,
+
+[01:06:44] Brian: Yeah, I remember you, you told me to meet with him and I was like, oh
+
+my God, this 
+
+[01:06:48] Troy: an intern. He, at the time, I think he was selling snakes and stuff, and I literally mean that. I don't mean like he's a snake oil salesman.
+
+[01:06:55] Brian: He 
+
+[01:06:55] Troy: snakes. 
+
+[01:06:56] Brian: size platform that sold to Google, 
+
+[01:06:58] Troy: Yes. Okay. 
+
+[01:06:59] Brian: cancer.
+
+[01:07:00] Troy: Yeah, no, he did that already.
+
+[01:07:01] Brian: Oh. So he's a post
+
+[01:07:02] Troy: No, he's doing baseball collectibles.
+
+It's a churning company. Yeah. Okay. So, Gmail, they made Alex. I think they made the original maps.
+
+That was cool. They made Chrome. I don't think they bought Chrome. They made BigQuery,
+
+Kibernetes. they bought, right?
+
+They bought Android, Google Translate, I think they made, and then, and then AdSense was based on,
+
+you know, Overture. you also have to look how badly run a lot of these acquisitions were like nest and, how the founder of nest came out complaining about how Google is run and how that's where innovation goes to die. But back on the thing, because I think there's a lot of. 
+
+air 
+
+[01:07:40] Alex: Like a lot of noise around the fact that the woke mindset has taken over Google and that's why it's failing.
+
+Here's the thing. You gotta expect young people to have strong beliefs, man. Every generation does. And that's fine. Just be a leader. I can tell you that I was in the room many times when A well meaning young person came and proposed the design that they thought was going to make things better or was what people wanted to see and I had to be the one that says, maybe make a controversy then it's just, I don't think this is a moment to make a statement.
+
+[01:08:12] Troy: Right, but but it's a little out of control, Alex, when you, 
+
+okay, let's do it, let's do a game, and you'll tell me if, whether or not these are offensive sayings to say in a meeting at Google, or not. Build Ninja,
+
+[01:08:24] Brian: Uh, 
+
+that's offensive.
+
+[01:08:26] Troy: is that offensive? I Cultural appropriation, that one. well, yeah, I I
+
+[01:08:30] Alex: think nu that's fucking stupid it shouldn't be offensive.
+
+Come on, fuck. the old cash.
+
+What?
+
+[01:08:36] Troy: Nuke the old, the old cash, you know, like the, it's a military metaphor, we don't like that. How about sanity check?
+
+[01:08:43] Alex: Troy, I was once
+
+[01:08:46] Troy: No, no, no, let me keep going, I'm not done my little exercise, because sanity, sanity check maybe disparages people with mental illness. Yeah, that's 
+
+[01:08:54] Brian: true. 
+
+[01:08:54] Troy: or a dummy variable. That also disparages people with disabilities. 
+
+[01:08:59] Brian: Oh, the dummies. 
+
+[01:09:00] Alex: so, I do think that there is quite a,Okay, okay, David Sachs. Like, I mean, I was in a business too, like, you might have heard, you might have heard stupid shit. when I was not living in America, I heard Freedom Fries. Have you ever used Freedom Fries? You haven't. It doesn't mean, people say this, doesn't mean everybody says it, or everybody agrees with it and there's not a bunch of people who
+
+just roll their eyes or don't 
+
+[01:09:22] Brian: 000 people, so
+
+[01:09:23] Alex: Roll their eyes or don't give a shit.
+
+that's what i'm saying. There's going to be And they're going to lean left, and maybe liberal part of it's because they're young and they're educated
+
+in tech So 
+
+[01:09:33] Troy: to Freedom Fries?
+
+[01:09:34] Alex: well what i'm saying is 
+
+like i'm not i'm not gonna come in here and say every american says freedom fries America is all about freedom fries.
+
+I'm saying this happens in meeting. I heard some stupid shit in my day where I said That is just stupid, and that's okay. but 
+
+[01:09:48] Troy: about a culture of a company that's failing
+
+[01:09:51] Alex: you're talking about hearsay that like makes you define the culture. The culture is a leadership culture. You're always gonna have young and old people saying silly stuff. Okay? I'm pretty sure there's plenty of Trump 
+
+[01:10:03] Brian: think it's, a, story of monopoly. When you have a monopoly, you get fat and happy and you indulge in all kinds of stupid stuff. 
+
+[01:10:10] Alex: Like if your, if your organizational leadership structure is so brittle that some, young, well meaning person can come in and break your LLM model to render diverse Nazis, It's not the young,well meaning kid that's the problem. It's the person, it's the structure you put in place that let that get a ship.
+
+so I know we love the media, especially loves blaming young people for everything that's wrong, but they just have new ideas. And if they're not kept in check, then fine, then blame somebody else, but they're definitely not running the business. 23 year old. I'm definitely not running Google.
+
+[01:10:48] Brian: Sergei kind of blames junior people. He said we definitely messed up, messed up on the image generation. I think it was mostly due to just not thorough testing.
+
+[01:10:58] Alex: it's not testing. Somebody saw it and it wasn't reported because nobody's in charge. And that's because these companies are set up and they built a business 
+
+where they hit, 
+
+[01:11:08] Troy: to say it.
+
+[01:11:09] Alex: okay, they're scared to say it, then stop being a bunch of sissies and say it. what the fuck? I, 
+
+[01:11:16] Troy: say sissies because it's 
+
+[01:11:18] Brian: That's 
+
+true. 
+
+[01:11:18] Alex: my God, 
+
+[01:11:19] Brian: done.
+
+[01:11:20] Alex: it sounds a little bit 
+
+like, like Dave Chappelle on stage talking for two hours about how he's being de platformed and you know, how he doesn't have a voice anymore.
+
+Like People in power are still in power. Make the decision. Catch the issue. Fire the people. You have all that power. And if you're too cowardly to, you know what it is? It's feels like some adult that walks into a bunch of teenagers smoking in his backyard and feels like too scared to tell them anything.
+
+Well, maybe there's teenagers
+
+[01:11:49] Troy: I usually 
+
+[01:11:50] Alex: of Google. 
+
+[01:11:50] Troy: bum a cigarette.
+
+[01:11:52] Brian: That's the
+
+[01:11:52] Alex: There you go. I mean, I, I feel like, it's a red herring, all that stuff. And it's definitely fuel for all the David Sachs's in the world. I just waiting to show you how woke mind virus is what's affecting, a young content strategist at Google.
+
+It's not what's affecting,
+
+[01:12:08] Troy: is not coming from the content strategist, Alex. This is coming from the HR apparatus, is not run by 23 year olds. Okay. There is a, culture of fear of, of saying things, including self expression or your political alignment when it's outside of what it is meant or what it ought to be inside of a company like Google.
+
+It's a messed up culture and now it's touching product. Listen, when you ask a gigantic machine to give you a single answer, there's always going to be problems, right? Suddenly you have to make decisions. So I think that the whole thing is really, really a difficult situation.
+
+But I think that if we're assessing Google broadly, we have to talk about a company that is deeply entitled and. extremely single minded in its, politics and culture in a way that is not open to free,expression.
+
+[01:13:03] Alex: it's a leadership issue.
+
+[01:13:05] Troy: So what are you going to do? You're running it. issue.
+
+You got to sell off some shit, cut it
+
+[01:13:10] Alex: Oh, I know exactly. I know exactly what I do. If I run it, I fire 80 percent of the product management organization. I cut the, organization way down, simplify the business structures so that they're much more functional and lead up to a handful of people that make, A lot of the big decisions. And let me tell you, it's not about removing or disempowering your team.
+
+It's about taking responsibility for what ship. And that's why these guys always hide behind is as well. You're just disempowering your team. No, I'm taking responsibility for what's shipping. So I'm making the decision here. And if you start doing that, then you start building a better, product there's no reason, in 20 minutes, somebody.
+
+With like basic access to this product can find what's wrong with it. While these people had like hours and days and months to, to work on again, didn't see this and didn't call it out. And I'm sorry, a VP, would have known that this was wrong and could have said something. There's no, there's no world where like this organization is too woke to like, say like, Hey, maybe maybe diverse Nazis isn't, isn't good.
+
+Cause I think everybody can get behind that. Maybe that is the thing that gets us. To come together is that diverse Nazis doesn't work for anyone. Not even Nazis. Everybody's offended by it 
+
+it's it's actually pretty perfect 
+
+You
+
+[01:14:30] Troy: I think you may have just executed podcast. That was 
+
+[01:14:35] Alex: you. 
+
+[01:14:35] Troy: sincerely sensible.
+
+[01:14:37] Brian: By the way, at least according to Glassdoor, which does lie a lot, a VP of Google makes a little over 500k a year.
+
+[01:14:44] Alex: Oh, yeah, these people make a lot of money.
+
+[01:14:46] Brian: yeah.
+
+[01:14:47] Alex: Yeah.
+
+[01:14:48] Brian: Got to make decisions at that.
+
+[01:14:49] Alex: By the way sorry, one last thing, you know 
+
+a huge issue in Silicon Valley is that 95 percent of everyone that works here no longer builds product. product is built by 5 percent of the people. 
+
+[01:15:03] Brian: Well, that's the project, the product manager thing. You're, you're sort of, you're anti product manager. 
+
+Just the fact that 
+
+Lenny's, 
+
+newsletter has 500, 000 subscribers tells me that product management was something of a ZERP phenomenon. I'm not saying no product managers, but I'm saying that if a newsletter about product management 
+
+has 500, 000 subscribers, something has gone amiss.
+
+[01:15:24] Alex: definition of product manager, the way it's defined is what's the problem. Product manager shouldn't be a career path. It should be a title. So once You've had a long career as a designer or a long career as an engineer or a long career as a writer or or or a marketer or whatever then maybe you can own a product and be a product manager I don't understand how you can have a definition that is you can start as a junior product manager.
+
+That is like saying you you know You're starting as a junior captain or as a junior president. Like you, you build your way up to it. So I think the role of product manager should exist. Somebody makes decisions around the product, but the problem is that it was turned into a career path. And Hey, guess what guy you could work in tech, make the same money, but you don't have to be good at design or go to engineering school.
+
+[01:16:12] Brian: a great shortcut. 
+
+[01:16:13] Alex: Oh, 
+
+wow. 
+
+[01:16:14] Brian: the accoutrements of the tech without
+
+[01:16:16] Alex: I guess what all you need to do is listen to a podcast, listen to a podcast about OKRs and how to set, make decisions. And that's all you need. Don't worry. That's all you need to build a product that changes culture, man. That's all you need. 
+
+[01:16:29] Troy: You know, we, Alex, we, may. 
+
+We made someone's week last week when we mentioned him on the podcast, Mike Smith, he's really happy. But when I'm mad at Mike, I call him a junior executive.
+
+[01:16:40] Alex: It's the most offensive thing you can say.
+
+[01:16:44] Troy: No, not for me.
+
+[01:16:46] Brian: well good for
+
+Mike, we should actually have Mike on this podcast for an hour and a half of ad tech and just see what happens to Alex
+
+[01:16:54] Troy: No, Jesus. tech on this podcast.
+
+[01:16:56] Brian: Just gauge Alex's mood throughout, So let's get into good product.
+
+[01:17:01] Troy: 
+
+
+[01:17:04] Good product
+---
+
+[01:17:04] Troy: I don't know if you're going to like where I'm going with good product once again, but
+
+[01:17:08] Brian: fruit, nut, legume
+
+[01:17:10] Troy: like,I told you that I've, shifted much of my discretionary, relaxation video time to YouTube and last week I thought I w I gave vice, like there was just so much overwhelming schadenfreude about bad decisions that were made in that company, either in terms of, the cap table or executive compensation or,things they shouldn't have done, but it really does to me overshadow.
+
+what was a company that made some amazing content,
+
+[01:17:40] Brian: You said that video content. I said, coming to the dinner,
+
+or? no, no, no. But so I'm sitting watching YouTube and I watched two amazing kind of mini docs yesterday and they were my good product this week. And they were both about skateboarding. And one was a spike Jones stock, which I would encourage you to watch.
+
+[01:17:58] Troy: And it was a vice, production on how he came up as a skateboarder. And then. as an enthusiast skateboarder and then as a photographer for, a defining photographer in the history of skateboarding and then started making some very, very notable music videos and then became a feature filmmaker.
+
+And Spike plays a big role in the documentary and all of his, his, his skateboarding posse from the old days. It's a, it's a amazing sort of testament to his creativity and it's a great one. And there's a second one that landed. I think it was called Drugs, Skate and Violence. It was on this filmmaker Harmony Kareem.
+
+Do you know who that is? He 
+
+[01:18:44] Alex: Yep. 
+
+[01:18:44] Troy: movie, he made the movie Kids.
+
+[01:18:46] Brian: Oh yeah, kids. That's a very Vice movie.
+
+[01:18:50] Troy: yeah, and he's, he's a nut. He's a kind of multifaceted artist. He's a kind of does outsider art and writes films and makes Makes all kinds of stuff, but he lives in Miami, Brian, and he has sort of a McMansion in Miami and strolls around with a cigar in his mouth.
+
+But, but he's, he's a very interesting guy. Very, very interesting.
+
+[01:19:14] Brian: But you know what strikes me about those are actually good products. I'm going to check them out. But both of those are very close to the original vice, right? And I think if you were going to go back, you know, vice probably should have stuck to its, its origins more of being a counterculture out of Montreal skateboarding, graffiti, the rest of it.
+
+And the detours into news that both vice and Buzzfeed took, Really in retrospect were doubly disastrous.
+
+[01:19:44] Alex: yeah, you could say that for BuzzFeed, too. Just getting it to news is a bad business. So maybe CNN should just get out of news to it. Maybe that that is, um.
+
+[01:19:54] Brian: you gotta go with the, the, the one you brung and it, and they brung new, what I liked about Troy laying out that, that vision, compelling vision, for CNN was that it went back to its roots, right. And, vice all these companies get, got away from what the whole brand it was about.
+
+[01:20:12] Alex: it got me thinking, I was thinking about vice and it got me thinking of Andrew Callahan's channel five. 
+
+[01:20:17] Troy: 
+
+[01:20:17] Alex: it's, it's, it. 
+
+[01:20:18] Troy: did a great one on San Francisco. If you haven't seen
+
+[01:20:20] Alex: yeah, he did a great one in San Francisco. He did a great one on the border crisis. He's, he's in his twenties. he used to ride around in an RV and it's like it reminds me of the early vice stuff, gonzo journalism stuff, just, kids with cameras going to places where they shouldn't be.
+
+And, It's incredibly watchable, like really good stuff. He's got a really interesting story and I hope we can get him on the podcast one
+
+[01:20:41] Brian: So, that's a good example because I think you don't need a vice exactly to make this anymore, right? Or, or will you still? Like, I mean, yes, it helps. And I think vice is new. It's latest path. It's probably too late, but it makes sense for them to just become a studio model. But
+
+[01:21:00] Alex: I think you can. I mean, I think, I think even like Andrew Callahan stuff, right? Like people have lives and they get older and more tired and they don't want to be on, like running around every day. So
+
+[01:21:10] Troy: no media brands, totally media brands are super useful 
+
+[01:21:13] Alex: yeah, just 
+
+bringing more people on. I mean, you know, we talked about The Verge earlier on and I think it's, it's a valuable media, media brand.
+
+It is built around personality, including Nele's. But when Dieter. one of the podcast hosts left, they survived that because they still had the strong brand. And I think, you hide behind the rebooting. Hopefully one day you can just replace yourself, with a bunch of eager 25 year olds who just 
+
+want to 
+
+[01:21:39] Brian: that would be the dream. 
+
+[01:21:40] Alex: Just do the webinars for you.
+
+[01:21:42] Brian: No, I'm gonna do the webinars. but 
+
+like, 
+
+[01:21:44] Troy: some capital and
+
+[01:21:45] Brian: this podcast and then the newsletters? Absolutely.
+
+[01:21:50] Alex: podcast.
+
+[01:21:52] Brian: It'll be pretty funny when I send my chief of staff, who is a former product manager at Google, to do the podcast. 
+
+
+[01:21:58] Outro
+---
+
+[01:21:58] Troy: 
+
+[01:21:59] Brian: Thank you all for listening, and if you like this podcast, I hope you do. Please leave us a rating and review on Apple or Spotify or wherever you get your podcasts. That takes ratings and reviews. Always like to get those. and if you have feedback, do send me a note. My email is bmaracy at therebooting.com.
+
+Be back next week. Troy, I'm excited for your dinner tomorrow. What's on the menu?
+
+[01:22:20] Troy: we're gonna have some sashimi and some rolls and some little Japanese small plates
+
+some steak
+
+Alex, wish you could come. you're more than welcome.
+
+[01:22:29] Alex: No, I'll be getting ready for the game developer conference. So if anybody's going there,
+
+[01:22:33] Brian: Oh yeah. 
+
+[01:22:34] Alex: hit me up on threads.
+
+[01:22:35] Brian: 
+
+[01:22:35] Alex: See you later. 
+
+[01:22:36] Troy: Thank you.
+
+[01:22:37] Brian: Bye.
+
+[01:22:37] Alex: 
+

@@ -1,0 +1,673 @@
+PvA S3E135
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian: tried to get a Tupac lyric for this podcast and chat BT said they, it wouldn't give me the lyric. all of a sudden it was like, no, that's copyrighted material.
+
+I'm like, excuse me, who am I speaking to?
+
+[00:00:11] Troy: What was the Tupac lyric? More interestingly? 
+
+[00:00:13] Brian: I don't know. I didn't get it. Well, it was about changes, you know? It was that you know, his song changes. It's like the old way wasn't working, So we gotta try a new way. That's what I'm kind of thinking about, with this agentic web. I'm like, okay, this sounds terrible. But at the same time, like, have you visited a website recently?
+
+Like why don't we give it a shot? I.
+
+
+[00:00:32] 
+---
+
+[00:00:32] Brian: ​
+
+
+[00:00:54] Welcome
+---
+
+[00:00:54] Brian: So we're gonna get into, I think this was a really important week, when
+
+it comes to a lot of what we've been talking about for the last year plus, and it's really about what,
+
+[00:01:04] Troy: are you?
+
+[00:01:05] Alex: Who are you?
+
+[00:01:06] Brian: what
+
+[00:01:07] Alex: Brian Morrissey. Are you Brian Morrissey? 
+
+[00:01:10] Brian: I don't
+
+[00:01:11] Alex: Is this, not everybody listening to the podcast has heard the podcast before, let alone read who's on this. just politeness. 
+
+[00:01:21] Troy: I went to lunch with, he said that he couldn't keep track of the different people on the podcast.
+
+I'm like,
+
+[00:01:28] Alex: Yes,
+
+[00:01:29] Troy: Euro.
+
+[00:01:29] Brian: That's,
+
+[00:01:30] Alex: me. I'm Alex Schleifer, human
+
+[00:01:32] Brian: like
+
+[00:01:33] Alex: computer,
+
+[00:01:33] Brian: anyway. Okay. Well, welcome to the show. I'm Brian Morrisey. I'm joined by Troy Young and Alex Schleifer. guys wanna identify yourselves for, for the listeners?
+
+Troy, you wanna go first? 
+
+[00:01:44] Troy: the one with the sort of slight Canadian accent.
+
+[00:01:47] Brian: Okay. Slight Canadian accent 
+
+[00:01:49] Alex: and I'm the one with the hard to describe European accent.
+
+[00:01:53] Brian: yes. How, how, by the
+
+way, how did the, Eurovision party go? there was some controversy around the Eurovision.
+
+[00:01:59] Alex: It was fantastic. everybody got really into it And and my favorite part of Eurovision is
+
+the scoring. is the, is the moment where they spend an hour and a half just like getting different scores from different countries. it is, it is so tense. and, even the kids were just watching a spreadsheet for an hour jumping around.
+
+It was, it was fantastic. and somebody described it as, three hour halftime show, which is, which is true. That show is incredible, guys, worth a watch every year. And, and this year Austria won and I'm, I'm part Austrian, so I'm, I'm gonna hopefully record the next year's PVA from Austria, live from Eurovision. I think we should do that.
+
+[00:02:43] Troy: from some perverts basement in Vienna.
+
+[00:02:45] Brian: That they do have a reputation.
+
+[00:02:48] Alex: Yeah,
+
+[00:02:48] Brian: there's a lot of controversies that always come out of, of Eurovision. I, I think it's impossible for them to try to keep this apolitical. Israel's the big controversy 'cause they're in Eurovision, supposedly because they're public broadcaster is part of the public broadcaster group that puts this on.
+
+[00:03:03] Troy: I have no idea. just a curiosity, Alex, aside
+
+[00:03:06] Alex: Yeah.
+
+[00:03:07] Troy: negative historical, framing, what is the sort of cliche difference between,German Austrian and a German.
+
+[00:03:15] Alex: I mean, what's the difference between a Canadian and American? I don't know. I mean, I guess, Austrians are seen as, 
+
+[00:03:21] Troy: humor.
+
+[00:03:22] Alex: maybe Austrians are seen as more, I don't know, I'm gonna get myself in trouble, but like more, you know, rural and affable. I don't know.
+
+[00:03:31] Troy: you? The, the
+
+embassy? 
+
+[00:03:34] Alex: The embassy does call me when I say things about Austria. Yes. 
+
+
+[00:03:38] AI Tears Down The Front Door Of The Internet
+---
+
+[00:03:38] Brian: so I think this was a pretty important week. I wanna start off, we'll get, we'll get to a bunch of different topics hopefully if we don't get caught up here. But I think a lot of what we're talking, we've been talking about for the last year happening now.
+
+we're seeing, change happen all at once. What did they say suddenly? And then all at once. And the page-based internet is kind of going away it looks like. and this week we had the developer conferences, Google and Microsoft came out with a bunch of news and we're seeing AI basically, tear down the front door of the internet and, And I think that's gonna have a major impact, obviously. And I think the shift right now that we're seeing is going from browsing, to one where agents interpret our intent, protocols execute, our tasks and pages basically disappear into the backend. and in this kind of protocol era of the web, if you can get kind of wonky, we can delve through it.
+
+but it has major implications for publishers, product designers, pretty much everyone. And you know, some of the quotes just came out, from this were really striking to me, like
+
+one was this former executive was quoted from Bloomberg as saying, giving traffic to publisher sites is kind of a necessary evil. The main thing they're trying to do that's Google is, is get people to consume Google services. so.
+
+there's this natural tendency to want to have people stay on Google Pages, but it does
+
+diminish the sort of deal between the publishers And Google itself. that's a understatement. And then even Google's head of search said the search results page was a construct.
+
+I mean, to, get metaphysical about it. And I think the message that was very clear, we'll go through all the things that they rolled out. And some of the stuff I don't think really matter in the, long term because it's about, it's about search really. At the end of the day. That's the mo That to me, that's the biggest thing, to, to discuss.
+
+not like some deal with Warby Parker for glasses. No offense to Warby Parker or the glasses. because Google has been the underpinning of, of the web without search, the open web just simply doesn't really exist. and so profound change.
+
+Troy, I want you to start off,
+
+Google came out with a bunch of stuff at their, at Google io, that we've got AI mode that is now, going to be, into the search box so you can switch into AI mode.
+
+They did some other things like these AI Ultra plans and, and the VO three to, to catch up on, on, on video and now it can include voice too, and that's all nice and everything, but to me it's, the message was really around search, but I'd like to get your take.
+
+[00:06:18] Troy: On the event Brian or the,
+
+[00:06:21] Brian: What The implications, not the event, not like the catering.
+
+[00:06:25] Troy: I have been struggling to imagine, I don't know, the conceptual form of the next internet and, what it means to people that, that make content and the whole kind of ecosystem around that, including monetization and the idea that, I guess we've seen coming for a while that there's a, a, a, a new natural language powered AI layer on top of anything that pulls most of the value from a page. It's pretty profound because suddenly you lose, you know, all your surface areas as a content creator. And, you know, to build a media business, you know, at least in a kind of old fashioned con context or construct, you need, you know, audience and in a way to get something in front of that audience.
+
+So you need a page. And so you, it just forces you to, to fundamentally rethink where, how, how you get attention, how you build, sustain something sustainable. and I think that, you know, like what's gonna underpin an, an, an, you know, next generation of media companies. Now this is the obvious observation, which is anything that has focused attention in a timeline, IE audio or video is very well positioned.
+
+'cause it will continue to be a place where you can direct a user's attention that. That's some kind of partner message, know, I spent a long time making things that trapped audiences and monetize them in the form of, you know, media businesses that were anchored on webpages. So it's, it's pretty profound. I, I guess you can start to see a world where there's these sort of three, this new kind of conceptual stack, or you have an agent layer protocol layer in the data, and the agent layer is, is sort of, I guess gonna be chat, GBT or copilot or perplexity or, or Gemini. And that's, you know, where more and more of your time will be spent and more and more and more of the value will be aggregated. there will be protocols that connect, you know, services and knowledge, and those are emerging now. One's called MCP, which stands for what? Model context protocol. There was the thing that, Microsoft, launched last week at their build conference called NL
+
+[00:08:46] Brian: Yeah.
+
+[00:08:47] Troy: and, and these are essentially ways of allowing, you know, agents to connect with your data, which are your pages, your content, your functionality, with each other. So you can imagine, you know, an emergent world where, know, more of the activity on the web is, you know, robots connecting to robots, and then you have a kind of service and data layer, which is websites and tools and and products, and where, you know, the underlying value that's kind of surfaced by the agents. So, you know, in, in that, in that, you know, new, new construct, you know, sort of everything changes. And, you know, I think Obviously there's a new, gonna be a new art in how things get surfaced inside of, of the aggregation layer or the agent layer. There's, you know, I think a necessity, things by necessity become more transactional because you can't, kind of, can't take that away from someone. So you can aggregate content and you can have content, you know, sucked up by a, you know, the AI and recontextualize and all that. But, if you have to buy something, you still have to process that sku. Someone has to ship it to you, whatever. And that includes any service or, you know, any event. All of that.
+
+So I think that it makes more transactional. I think that it, it forces everyone to think about not as repositories of content, but as. You know, as Alex will expound on a little bit like, places, for utility
+
+[00:10:22] Brian: Okay.
+
+[00:10:23] Troy: the consumer, think that, you know, we're seeing a world even more conceptually, I think, where language like the, the interface to e everything can be in natural language and that includes code. And it also means, I think, kind of strangely that, all languages, like people will continue to communicate in Chinese or French or Italian, but there's no longer an an obstacle in communicating to someone in another language. Because it can be all translated in real time and it's just ultimately moving, you know, through a system and becomes code. And so I, I think that that's pretty wild. And I also think that, you know, on the more, you know, practical side, the browser as a construct itself is kind of up for grabs because, you know, it's, I think gonna become browsers and applications become, you know, more important interfaces to everything. and very, closely related.
+
+I think it's gonna put a lot of pressure on p on on, and we're seeing this now with the announcement last week or this week of the bizarre marriage of, of Sam Altman and, and, and Johnny. I, you know, people are gonna, if they want to own the interface layer, they're gonna want to own the hardware. you're gonna see more innovation around hardware and that's gonna come in the form of. New kind of phone like devices I suspect, and things like glasses like I'm wearing right now. So lots and lots of of, of implications. You know, webpages become kind of background infrastructure value shifts to actions, certainly not impressions. all sites become legible to agents and, I think increasingly advertising just becomes totally dominated by performance if it hasn't done that already.
+
+So those are some of my observations.
+
+[00:12:08] Brian: Okay, Alex, you wanna, jump in on, on some of the details here? 'cause I mean, to me, like again, you know, when search goes from being interaction instead of navigation, that really, that really changes sort of everything. And I think one of my conversations with publishers, that one of the things that comes outta a lot of them is. Sort of being paralyzed about not even knowing what to build at this point. because we're talking about, you know, webpages just become repositories, I guess, right? Like, and for agents. So you're almost like, we've gone from like writing for algorithms to like, now people are gonna be creating for, for agents, and then there's just this unknown grand economic bargain that seems to need to be struck at some point, because there's just simply not going to be the content that are, that is fed into these machines. If there is no economic incentive to create it, I know Google is out there saying, this is just more search, search is getting bigger. And then every single publisher is like, gimme a break. Our search traffic is going down. You, you see it with the AI overviews no matter what Google says, I, and I feel like the Silicon Valley's been trying this for a generation.
+
+They've been pissing on people's legs and telling 'em that it's raining and, and it just doesn't fly as much anymore. because, well, because they've been pissing on people's legs for a generation, anyway, Alex, that take, take it from here as far as, as what the big implications of this will be, particularly for our friends, the publishers.
+
+[00:13:39] Alex: I think we need to focus because it's, This week's been a lot, right? There's been a, there's been a lot announced. and, you know, the AI news is kind of flooding the zone. I mean, the, the Open AI announcement, the Microsoft stuff, the Google stuff, some would say that, a lot of stuff that actually is more important and likely more, societally earth shattering is not what happens to people who make websites.
+
+[00:14:04] Brian: But for the focus of this show, I think we should focus on that because, both. We can do the societal impli 
+
+[00:14:10] Alex: just think, I just think, just to put, to cast that aside for a second, because there are lots of people are gonna talk about it. We're, we're witnessing, an acceleration in this technology where, you know, it was hard to make it look good that Will, will Smith could eat spaghetti and now they have fully voiced.
+
+Acting, singing characters that can be recorded in video. we're looking at, you know, these agents that will do all these tasks for you. We're, look, so, so there's, there's millions of things, and I don't, I think it's kind of a rabbit hole to get into, but it's, it is profound the changes happening in computing and, we should all like just look at what's happening, because it'll change all our lives and the way we work, et cetera.
+
+But let's, let's hone in and focus on, on the, the web and people making money off websites. I think, what's definitely happening is that anything that is content and used to be, you know, we saw it with text, right? Like text was the easiest thing, in the early days for Google to use and kind of. project, onto a search results, before you had to click a link, whether it was, you know, the contentious thing that they had with Yelp showing basic reviews or showing the weather.
+
+there's this whole kind of surface layer of content that has been chipped away at, and then, and then, and that's completely gone, which is what we talked last week about CNN launching, a weather app that, that seems, like misplaced resources. but what we're seeing now is that like also video, audio content can be, done with that.
+
+And then the, the last bastion, which I talked about a lot, which was utility, like the ability to, to, to do things right. So, the utility of like a website was that it would show you an article and that is a. That is gone. I don't need your website to give me that utility. I can, I can ask an AI to just give me the gist.
+
+and if anything, the thing that AI gives back to me is better than the article with a clickbait, title and, you know, 1500 words before I get to the point. so I think that's, that's a terrible place to be at right now. but I do still feel like utility is going to be a defensive maneuver, right?
+
+Like I can see that a website, that provides a very specific type of utility that requires a specific type of visualization or, set of controls, will provide some value that people will be willing to pay for. now a lot of these will probably be absorbed by the LLMs. Like I can't see how, even just like financial data.
+
+Data visualization, mapping all this type of stuff, which you could kind of safely say was like, well, people will come to my website to see that. People will come to my website to see, you know, the, the, the grid of flights. You know, that, that I, that, so I can compare all these different flights, right?
+
+Which is why you, we used to use something like Kayak, like interface used to be something you could sell. And even that's kind of going away. So,
+
+[00:17:09] Troy: You know,
+
+[00:17:10] Alex: do.
+
+[00:17:10] Troy: I, I wanna just add to that with a real world example. Just quickly. So I'm on the board of a company that's in the sports space. We were having a conversation with the product and development team yesterday.The whole idea of what you, you know, essentially they trade in news about sports around the world, soccer in particular, and all the data that goes along with that on players, games leagues, et cetera. So if you imagine, you know, essentially one webpage for you that is high in sort of its utility quotient, it, you would come there and it wouldn't look anything like the webpages that we create today, which are a bunch of boxes that have, you know, the lead story and secondary story and all of that. You would immediately look for a small piece of data that would allow you to spit out that you're a Manu fan and it would update you instantly as, you know, like a pre-formatted query, effectively on, on chat gt,
+
+[00:18:03] Alex: Right.
+
+[00:18:04] Troy: And it would give you that news. And then below it you would have, you know, the games that were happening tomorrow, today, whatever.
+
+And you could interact with it. You could look at, you know, the data in different ways. You could place a bat. you might have interactivity that tells you where to watch it or how to watch it and all that stuff. And essentially the future of their. You know, of sort of sprawling set of pages and sections is really one page for you, and that page has to be highly functional and highly interactive. But as you point out why, I mean, in the long run, maybe you don't even need that because I
+
+[00:18:39] Alex: Yeah. And, and it, it,
+
+[00:18:40] Troy: in a chat
+
+[00:18:41] Alex: and look it,
+
+[00:18:42] Troy: of that, that, that information and, and get it visualized in all the things that, that I want to do.
+
+[00:18:47] Alex: right? And there were all these inter pieces of the interface that, that provided huge value, right? Like now, I mean, it seems nearly ridiculous now that we would try to make any money putting text on a page, you know? But, but then you look at the more complex ones, like notifications, right? So yes, but I like my sports app because I can set it to give me notifications when my team scores.
+
+Well, why can't I ask the AI that? And, and why can't I ask the AI to also merge that notification and, and contextualize it for me? Like, all of that stuff is up for grabs. So that surface area where, where there was, you know, like the kind of like the, you know, we are, we're all middlemen, right?
+
+We're all middlemen between the thing that people want, you know, and, and the people. And we would build interfaces. I mean, even back in the print days, like a magazine was an interface for content delivery, right? And we made them, we, we built them online and then we built all these complex features in it.
+
+And like, well, you know, we built this nice search into the site and a way to categorize all your articles. but as it turns out, you know, machines can now do a lot of that incredibly well. and, and it's only getting like, you know, the modality of it is only expanding, I would say. Like, I feel pretty good being in gaming because gaming feels like something that can't be completely abstracted by ai.
+
+and I do think that that's where I would like try to find a space and there's going to be a. Two spaces for media companies to exist in one, which is you provide your information to ai or you build a collection of individuals that are compelling enough that you want to interface with them directly.
+
+Right. I think YouTube is doing great,because of that. And, and, and, and I think if you have, if your personality is what you're selling, that remains safe. We, we've kept talking about that. The other one is like, can you build an interface which is so compelling, to, to use outside of ai that people will still use it.
+
+And I think like the easy one is social, right? The easy one is like you're talking about sports. I think, fantasy Sports League, which is kind of gaming adjacent, is something that you'll likely do, you know, you know, with your friends on some sort of site that has specific visualizations. I think that, there are probably a few things like that, that you can kind of pull out and say, can we build a product, a site that is.
+
+so focused, around that interaction that, you know, people will come there and we can still do it better than, than anyone else. And, yeah, just like community is part of that socialist part of that. And then maybe, maybe there's room for very custom experiences where the open web becomes just like a collection of, either data sets that you've never interface with as a, as a, as a user, and very specific, functionality and, and features that, you know, the chat bot or the AI cannot replicate in a way that is, satisfactory.
+
+So, that, that's the thing where I would try to, I would try to find that space, and it's kind of a long-winded way of saying find that space. I don't know what the folks at do that Meredith are saying today. Like, like, like, is it o is everything okay? Is everything going to be fine? Am I still going to tolerate a popup window asking me to subscribe to their newsletter before I click a cookie out appreciation setting, and then watch your video.
+
+[00:22:08] Brian: Eats was part of the Microsoft demo. 
+
+[00:22:11] Troy: Yeah. But, but
+
+[00:22:12] Brian: so I don't know.
+
+[00:22:13] Troy: to what al the tension Alex was talking about,in how utility and attention shift between the page and the aggregator. It's like the NL web thing for Microsoft is, is about creating more utility at the webpage level where you can interface with that dataset on the page in real language. But why, why would I do
+
+[00:22:35] Brian: That's what I was, I was like, why do I go to Serious Eats to do that? I mean, basically the example was instead of gonna Serious Eats and having, you know, just go going to the recipe, say, Hey, I want some sort of crunchy topping and I've got like chicken and I don't like this and I don't. think a lot of this, that's why I'm saying that like I understand why they're marketing this way, but it's going to inevitably be centralized on the consumer level.
+
+It seems pretty clear that this is a completely different construct than visiting a bunch of websites to accomplish a, a task in that I can just tell an, an agent to go and accomplish these tasks. That means there are, is no visiting websites. That means there's no page via, that means there's no ad impression, et cetera.
+
+Like
+
+[00:23:18] Alex: With with that, with that,
+
+[00:23:19] Brian: that.
+
+[00:23:20] Alex: I, I know. I mean, I think.
+
+[00:23:22] Brian: perspective, that sounds very attractive.
+
+[00:23:24] Alex: It, it does. But I think that,I mean, advertising's going to be interesting thing to, to solve either way, but we're, we're also at a time where we kind of don't know. I, I think we're, we have a little bit of a fog of war as to the, the, what people are going to come up with.
+
+I think it's hard for us to tell how this thing is going to play out. Maybe we're in that space where we kind of knew e-commerce was coming, but the best people could come up with was we're gonna walk around in a 3D store and pick up objects that we put into a virtual, you know, shopping cart. 'cause in the beginning we didn't know that we would have list of products and we would put them in a list of a shopping.
+
+[00:24:01] Troy: back. We're gonna get back to that.
+
+[00:24:03] Alex: what I'm trying to say is like, there, there are products out there that could be massive, multi-billion dollar products that could be built with these, with these tools like NL Web. that we, that, that we just cannot imagine today, and that will make, make, going to the website, going to the URL downloading the app worth it, right?
+
+We're only looking at the, we're categorizing right now the things that we see in front of us today. And we're saying, yeah, all these things are fucked. and that's potentially true, but, I can see that like you could have a very specific data set and you force people to come to your website because that's the only place to access this.
+
+And not only that, it's, it's, it's actually more compelling to access it through this customized NL web based chat bot that has these custom interfaces than it will ever be through, you know, the chatbot that's built into your phone or whatever. We don't know. And I think this is where it's both very scary and also very, very, very exciting.
+
+[00:25:01] Brian: Like, put a pin on in it then, as they say. 
+
+
+[00:25:04] Sam & Jony
+---
+
+[00:25:04] Brian: let's talk about the new buddy movie that's rolling out,
+
+over in Silicon Valley. And that's Sam and Johnny. OpenAI has purchased, Johnny Ives, what is it called again? Not, not Love from that, that wasn't acquired. It was Io
+
+[00:25:18] Alex: No. so, so, so it,
+
+[00:25:20] Brian: It was around for what, like 18 months. That sounds fair. Good,
+
+[00:25:24] Alex: yeah. So it looks like there was some sort of, spun off project that was built out to, to build some sort of AI
+
+[00:25:30] Brian: spin out
+
+[00:25:31] Alex: product.
+
+[00:25:31] Brian: 6.5 billion. They have no product as we know. No,
+
+[00:25:35] Troy: 20 million per employee.
+
+[00:25:37] Brian: this is good. This is great. I started my newsletter like two years before this.
+
+[00:25:44] Alex: it's stock, right? So it's, it's,Yeah. I mean, we don't know. We don't know the, 
+
+[00:25:49] Brian: Something like 55 employees. quite, that's quite, quite a purchase price. They also rolled, rolled it out with, there's no product exactly, but apparently one is coming. And, I think this is sort of symbolic in some ways. Johnny, ive was of course well-known for his partnership with Steve Jobs and everyone, it seems like in Silicon Valley is constantly trying to recreate the magic of Steve Jobs. And so now I guess Sam Altman is our new Steve Jobs in this maybe, I don't know. Alex, what does, what does all of this mean?
+
+[00:26:24] Alex: I don't know. I mean, I think the comparisons to Steve Jobs. Steve Jobs would probably not have had a video where he didn't show a product and just talked about the future, saying it was a done deal. I do find this stuff a little, distracting. We don't know what they're building. It could be incredible.
+
+it seems pretty naval gazy and pretty,I don't know. There's just, there, there's, once again, I think part of the big challenge I have with AI tools is that we have access to all these incredible things right now, and so much effort is spent talking about the potential future of this thing that's coming.
+
+And we had the rabbit and we had, the pin and you know, and I get that, you know, everybody's upset with the phone and wants to find something or feels guilty about, you know, being part of the invention of the mobile phone,and feels like, you know, there's this interface shift coming and here's the opportunity and, and Apple's feeling weak right now.
+
+But, It means nothing to me. Just seeing two people talk about how great they are and how great the fu the, the, the future's looking. even, even if they might be, I think Johnny Ive is, is a genius. The team, he's built around them as some of the best designers in the world. They understand consumer products.
+
+Altman is obviously an interesting and, and smart guy and chat and open AI that, you know, is like an incredible company. but like all that stuff is, is hot air. And I, you know, I think it would've been so much more powerful to, say, Hey, there's something happening and, you know, give a six month and we'll drop the product.
+
+Like, I'm, I'm just, I'm just, I don't know why in an age where we have miracles, fucking miracles happening and announced. In computing. Everybody's so obsessed with this potential, like prototyping visions of the future that we may never reach. And we're, we're talking about a device that will completely change the paradigm of how we work with computers, as if having a little screen wasn't important to our lives.
+
+I think the phone is, is here to stay for a long time. It's a great form factor. or, or the fact that we're going to have this generalized intelligence when holy shit, look at what we can do today. And all of this stuff is so underutilized. We're living in this kind of odd space right now where as consumers, we don't have products that take advantage of the things that we have access to today.
+
+And we have a bunch of people promising us a future, that is potentially completely made up. So, it could be a great product. It could not be, I ca I, I couldn't, I don't care for it.
+
+[00:28:53] Brian: idea
+
+[00:28:54] Alex: don't care for him.
+
+[00:28:55] Brian: or when it's going to be released or what
+
+[00:28:57] Alex: It's, look, I'm so curious and
+
+[00:29:00] Brian: getting segue flashbacks.
+
+[00:29:02] Alex: when you think about it, the Segway was a great product and it, and it was.
+
+[00:29:06] Brian: prd it that it was gonna change. We were gonna have to
+
+[00:29:08] Alex: Yes.
+
+[00:29:09] Brian: cities.
+
+[00:29:10] Alex: that is, has always, that has always been the thing. Meanwhile, Steve Job came on and shows, pulls out a little thing out of his puck and say, Hey, I have 10,000 songs, or whatever the fuck in here.
+
+Right? Like that, that, that's the thing that changes the world.
+
+[00:29:22] Troy: to see I can't get over the photo. The
+
+[00:29:25] Brian: I knew you'd have thoughts about this
+
+[00:29:26] Troy: Okay? with the, the, the head on the shoulder. If someone paid $6.5 billion for my company, I would put my head on, on his shoulder
+
+The
+
+[00:29:34] Brian: a hundred percent.
+
+[00:29:35] Alex: is, the flashbacks I'm getting, when Johnny Ive talks, I'm, I'm feeling, you know, I'm feeling, you know, early aughts apple or like he, because he narrated so much of their stuff. really nice to listen to her. He's got a lovely voice.
+
+[00:29:49] Troy: he, he does
+
+[00:29:50] Brian: Lemme say English.
+
+[00:29:51] Alex: Yeah.
+
+[00:29:52] Troy: of a kind of techno poetic draw.
+
+This English thing that he does, it's great but it's nice to see someone who's, who's about to experience a renaissance in their late fifties as a, as creator. So I can
+
+[00:30:07] Alex: You
+
+or I, I I I find that, are having your own Renaissance, Troy.
+
+[00:30:11] Troy: right, exactly. 
+
+[00:30:12] Alex: And that's why.
+
+[00:30:13] Brian: Troy.
+
+[00:30:14] Troy: yes, it's amazing to me that this, the way that, that, Sam Altman has orchestrated. kind of structural moves around fundraising, around kind of socializing a, a very important technology globally, and then managing to kind of pull in, someone like Johnny Ives into this. So, so kudos to him. And at the same time, a move that, you know, what, certainly what Chachi PT has done, is completely change the tempo at Google. Like we're seeing that, we saw that in io, right? Like they are on high alert and they are starting to push out products, you know, at a pace we've never seen before. But this one is threatening not just to Google, it's threatening to Apple because owning AI interface begs for hardware. whole o obviously the promise of a, of, of acquiring, io is to build a new kind of, device.
+
+And maybe it'll sit on your face. Maybe it's a new kind of phone, but like, when you think about how you use your phone, it's like, I know Alex, you're really bullish on the form factor, but like, why do we need a hundred apps on our cell phone? We don't need it anymore.
+
+[00:31:27] Alex: Absolutely.
+
+[00:31:28] Brian: Nobody wants to use their phone more. It's as simple as that for me. Nobody wants to use their phone more. Nobody gets to the end of the day is like, I wish I had looked at my phone more.
+
+[00:31:36] Troy: I think that this device is gonna be really difficult because like a form factor, like the glasses can be kind of magical, but there are so many technological limitations. The largest being battery. It's like you gotta, you, you gotta charge it every three hours. 
+
+[00:31:51] Alex: I know, but let, let's say the gla, the thing is we should always look at a let, let's not get hung up by. You know, the science behind it, because I think, like, let's say, let's say we need a few minor miracles for these glasses to be light enough so that you can wear them, et cetera.
+
+I think, you know, we see minor miracles happening all the time. so what I say, let's say the glasses do exist, right? I still think that having a little glass little sheet on your phone that you can doodle on and draw on and tap and point at and show to someone, that stuff's not going away, right?
+
+So, so I think what, what we're going to see with the development of that is a collection of devices, right? Some of them you wear on your face, which is going to be interesting. Some of them you might, they might be in your pocket and listening to you at all times. some of them might be in your back pocket, some of the phone you might even leave at home because it's, it's, you know, you don't really need it around you all the time.
+
+And people do that already with the watch and AirPods, you, you're fine without your phone. The, the, the, the thing that I think is more pertinent is yes, like the, the usage case, like having a hundred apps on your phone, paying for all these apps or downloading, maintaining, updating them, all of that stuff is, is is where apple's risk is.
+
+I don't think it's actually in hardware so much because, I think they can build it. I think they've shown that they can build it. I think that they've shown that they can,you know, I think the, the, if somebody comes up with technology that allows them to do build super light glasses, apple will be a year behind and every, and people will wait a year for Apple's version of it.
+
+Right. But, the software interface and the way we, we interact with computer is just going to be, become. much more diverse. I, I think we can't get into a mindset where everything's just going to be replaced, but if you look at your phone, there's a good like 50, 60% of things that you can say like, yep, I could do that just by talking to my machine.
+
+Right. And unfortunately for media people, a lot of that is consuming media, right? Yeah. So,
+
+[00:33:47] Troy: Well, on a
+
+[00:33:48] Alex: that's.
+
+[00:33:49] Brian: note, I found that the kind of, it, it, it's almost like this kind of fake San Francisco casualness Hey, we're just meeting up in a cafe. Meanwhile, there's probably 50 people on the crew. They've cleaned the homeless off the streets and,they had a drone.
+
+[00:34:07] Troy: the, the packaging of it was, was amazing to me.
+
+I, I
+
+[00:34:11] Alex: I mean, I won't let you berate San Francisco like that. It's got its issues like every other cities. There's plenty of places where you can walk around. there's plenty of places where you can walk around without, without, without any of that stuff. But yes, I think there's an artifice to these types of videos.
+
+[00:34:26] Brian: that feels a little bit, But I don't know, maybe this is like a pivot back to a little bit more of packaging. Like I always think pendulum swing back and forth. I go back and forth with Troy Arch and me, Ben Smith a little bit on this, where he thinks that there's a pivot back to professionalism. That this we've reached the end of this period of this sort of rough and ready and we're, you know, ready to put on business casual.
+
+And maybe this is a more package. It doesn't, it doesn't scream authentic. I think it's a little bit different than, you know, the kinds of things that say Zuckerberg has been doing, with meta. but who knows? Maybe this is why not.
+
+[00:35:05] Troy: It
+
+[00:35:05] Alex: you, you're, you're
+
+[00:35:06] Troy: to me, but, I, you know, I think Johnny Ive looks good as a 58-year-old and, and, and I would, you know, hope to look so good. But when, when that date hits in my life, which is a long way off 
+
+[00:35:16] Brian: Yeah. At least 15, 20 years. 
+
+[00:35:20] Troy: where was I going with Is Brian, your thing about the, the Ben Smith, you know, return to gatekeepers, packaged media, maybe that's what we want. I don't think it ever, I don't, you know, I, I think that the, the kind of creator energy doesn't go anywhere. I think in, in many ways there's an army of people making content, and they're only getting more and more sophisticated, and that is evident every day. If you look at YouTube, the preferred
+
+[00:35:44] Alex: It is, it's evident. And also the,
+
+[00:35:46] Troy: and more sophisticated in how they tell stories in package
+
+[00:35:49] Alex: and it's getting way easier, it's getting way easier to do it. It's getting way easier to do it. Like a lot of the craft is like the editing, even the writing of the script, the, the, the color correction, the, I mean, this, this entire podcast is going to be run through an AI to do all sorts of things to manage the way our voices sound, to cut out noise, to, and all of that stuff's getting easier.
+
+So yes, there's a professionalism coming back, but it is not by the professional class. If, if anything, there's a deprofessionalization of the entire, of the entire entertainment and media industry.
+
+[00:36:23] Troy: Right. And, and, and I will confess that the scaled players, in news that do original reporting, that package kind of, you, you know, like reporting at scale are doing fine, Particularly the big news brands in, you know, from print. Financial Times, wall Street Journal, New York Times, et cetera. And, you know, maybe you can put Semaphore in that group, because I think that in that category we long for consistency and trust and credibility and packaging. That means that there's still relevant for lots of people that seek out that kind of news. For lots of people that don't, there, it's completely irrelevant. But, you know, I personally know that, that the first thing I do every morning is I go to, you know, established legacy media brands to get news. And I don't, I, I don't think that's changing. One thing that's struck me, Brian, and, and, and I
+
+[00:37:19] Brian: Mm-hmm.
+
+[00:37:20] Troy: to make this connection quickly, one of the, the things that media brands do other than, you know, packaging content you know, in, in a certain way with a certain level of professionalism is their gatekeepers not just. For people that wanna, well, for all types of people that wanna reach their audience, including advertisers, because they're expensive, right? You need to pay up to be inside of the New York Times. And what's happening is the gate gatekeepers, lunatics, like the people that sent me 20 emails this week, go direct,
+
+[00:37:59] Brian: They're not real people.
+
+[00:38:01] Troy: Right.
+
+[00:38:01] Brian: They're not real people.
+
+[00:38:03] Troy: there. One, one of the interesting
+
+[00:38:04] Alex: Please.
+
+[00:38:05] Troy: last week is, is illustrative of a need that will never go away, which is the need to market your services irrespective of the type of company you're, and we published an episode last week on substack, a podcast episode, and sent out an email. Somebody was able to take that email address mine, right. And use that, process our transcripts from our podcast and start pitching. Different people to be on this pod, and they were all created with ai. I, I got at least 30 of them, emails
+
+[00:38:41] Brian: I got several. I got several.
+
+[00:38:42] Troy: that, that, that took our, our transcripts said, here's why.
+
+You know, this person is interesting to you because of what you said on your podcast. And oh, by the way, I love your podcast and you should have
+
+[00:38:56] Alex: And here's the three things you said about this thing that is relevant. Yeah.
+
+[00:39:00] Troy: Yeah. And they
+
+[00:39:01] Alex: Yeah.
+
+[00:39:02] Troy: were also,
+
+[00:39:02] Brian: look for the person being like pitched though, isn't it? I don't even know if the people being pitched are real. At one point the per a new, like AI bot seemed to be pitching another a AI bot, but maybe they're not AI bots. All of them.
+
+[00:39:18] Troy: promotion unconstrained into your email box via, you know, accelerated and scaled with AI is a nasty thing. It's just creates junk.
+
+[00:39:29] Brian: Yeah. It'll, it'll be interesting to see how PR changes with a lot of this. I mean, it could be, you know, I think everyone is trying to figure out what the successor to SEO is and that's to get into the, the chatbot bot answers and everything is gamed on the internet. Everything. This, this will be no different. And you know, there's some indications that the best way to, to get to worm your way in there. 'cause everyone's gonna be marketing their wares, like you said, is actually through, guess what? Trusted journalistic outlets, journals, trade publications. This could be the time for my pay per pitch idea where you tax the PR industry and you know, they have to pay a tax every time they pitch one of these outlets, because they've been taking money basically from them.
+
+[00:40:17] Troy: gatekeeper not only plays a role in ensuring that you're getting quality media, but actually in some ways ensuring that you're getting quality outreach
+
+[00:40:25] Alex: you're, you're implying that, the gatekeeper itself can't be automated, right? You're talking about an issue right now. For example, this specific issue with your email, a much smarter inbox. Would make you never have seen that, would you? AI would just say, Hey, there's this dude that just sent us 30 things.
+
+I just decided to trash them. And I think that I, I, I, and I'm finding and look like I always say I'm an early adopter, which means I adopt things and behaviors earlier that might never be adopted, but I think a lot of them do. I use AI a lot to verify and validate information. Now I know that I can imagine things and stuff like that, but I found myself surprised that I would go and say, Hey, find me the best high-end, you know, hotel that has this specific design language and dah, dah, dah, dah, dah.
+
+And I didn't go to to reputable source for that. I asked the ai and then I added my own layer of, you know, of, of kind of editing on top of it. But I think over time, like. Even the sources become, potentially at risk, right? Because I do that less, I don't actually, I have a New York Times subscription.
+
+I never go there. I just don't do it anymore. I just say, Hey, give me a rundown of the news of what's going on right now, and here's the topics I follow. And so, I, I think source is going to be really important. I just wonder how much people care. I think people don't want to be flooded with junk, but I think that junk is going to also be easily cut out by, by the same tools, you know?
+
+[00:41:54] Troy: maybe what people don't appreciate as much, you know, as a nod to, to the gatekeeper point, is that really what this change represented is an ushering in of new gatekeepers.
+
+[00:42:07] Alex: Yeah.
+
+[00:42:08] Troy: pivot was a little podcast now it's an enormous business and it's just a new media brand all in, has become the official media arm of the, you know, of the Trump government. And, you know, as such, you know, become established media in their own way, you know, where it was just, you know, four dudes before. So, you know, really it is a kind of generational, you know, sh shift in the players, but still, you know, attention aggregates always.
+
+[00:42:37] Brian: Yeah, for sure. 
+
+
+[00:42:39] Bernie on Flagrant
+---
+
+[00:42:39] Brian: I don't know if you saw it. Bernie Sanders went on, Andrew Schultz's flagrant podcast. So the Democrats are going back to, they're saying, Hey, we're gonna go into these environments and we're gonna hold our own. You know, Bernie's a, Bernie's a different, type of character, so he did a nice job on there.
+
+He's an avuncular kind of sometimes a little grouchy. Older guy and, I don't know the, the, the Democrats also, you know, they had an entire like, meeting. I, I don't even know if they're gonna be able to, to master this. I mean, they're in a world of hurt right now. they're continuing to try to figure out their, their Joe Rogan strategy and, and looking to get what was really, I don't think this is, we've now gone beyond cringe here, where it was, they're starting to talk about return on culture and they hosted an idea on, I don't know if that's gonna do it, 
+
+[00:43:30] Alex: I mean, this is all like, such a waste of time for them. The, the, the, the, the first time they thought it was social media, so they all focused on like, oh, social media elected Trump. So let's all go on that now. It's like podcast elected Trump. So, okay. The, the solution we need is to have our own podcast and solve our own podcast.
+
+You know, it's like they have the Microsoft problem where they see Apple being successful with something, so they try to do it and they do it too late and worse. it seems to me like that the issue that they have is just a broad communication message. Like by the time they figure out podcasts, they'll be something new.
+
+Like, and it's, it's kind of sad to watch them just like flail, like that they're so terrible at, at this, what's your good product, Troy?
+
+
+
+
+[00:44:10] Good Product
+---
+
+​
+
+[00:44:13] Troy: I didn't see anything remarkable this week.
+
+[00:44:15] Alex: You didn't see anything remarkable this week,
+
+[00:44:18] Troy: No, I mean, yeah,
+
+[00:44:20] Alex: have you?
+
+that I said that. I mean, what do you want me to say, Alex? That, that Gemini is a good product. Which it is, by the way.I'm gonna say that that AI mode is a good product
+
+[00:44:30] Troy: well, the am
+
+[00:44:31] Alex: and I, I'm sorry.
+
+[00:44:32] Troy: fast. If I was gonna pick a good product this week, it would probably be VO three. VO
+
+[00:44:37] Alex: That's right.
+
+[00:44:38] Troy: is Google's new video creation, ai.importantly now you can add voice to it. you seen some of the videos where people are talking, ai people are talking?
+
+uh, and I'll, uh. 
+
+that guy made, Alex, that's, that's the one that said We can talk.
+
+[00:44:58] Brian: It's exciting that it, it is. it means another Google subscription.
+
+[00:45:02] Troy: here I mean, look, here's the thing. None of these, so these products actually should be more exciting for people building products with ai. Google's key market is going to be the cloud stuff where they will be able to sell these things. And then the search, right? That's what's gonna make their whole money actually a lot of their consumer side of the products, including the VO stuff and the tools for it, are not particularly good.
+
+[00:45:22] Alex: And it shows maybe like a lack of interest in Google in turning these things like VO into consumer products, but rather, you know, as like ways to kind of amplify their core businesses, which are going to be cloud. so this stuff as a service or search, which is like ads and, and generating stuff like that.
+
+But let's, let's look at this ad and, and these are all just for the audio listeners. You should watch a dis, these are all generated with video. Audio.
+
+[00:45:49] screenshare: We can talk. No more silence. Yes, we can talk. Ah, we can talk. We can talk. We can talk with accents. Oh, I think that would be marvelous for, yes, it is very fun. But yes, it is very good. I thought it's very fun. I can talk. Yes, yes. We can talk. Yes, we We can talk. We can talk. We can talk. Yes, we can talk. Yes, we can talk as cartoons. This is amazing. Imagine all the narrative possibilities. Let's talk. So what are we gonna talk about now? What are we gonna talk about now that we can talk? I have no idea. What do you wanna talk about 
+
+[00:46:27] Alex: so if anybody complains about the fact that maybe sometimes their eyebrows look weird, like. Just relax, man. You know, like things are gonna get better, even better. This is insane. and I think we're kind of become so numb to it at this stage, but like this is a full scale in invasion of, of, you know, the creative industry.
+
+and I don't, I don't even, I cannot, I cannot comprehend what this means, in the long term. but it's definitely means something. 
+
+
+[00:46:58] Distribution Direction with AB
+---
+
+[00:46:59] Alex: Hey, ab anonymous banker joined us.
+
+[00:47:01] Brian: ab thank you for joining us. I think 
+
+one of the big questions that I, I end up having is all distribution is fraught right now. And obviously we talked a lot about search already on this episode. We don't need to recover that ground, but it seems pretty clear that for a lot in media that distribution is gonna end up in the paid direction. It'll, there'll be a toll, there'll be a tax. I noticed like even when Sundo Phai was like posting about the all in episode He did, he was doing that like LinkedIn. First comment strategy where you put the link in, the first comment, I was like, my God, how are you humiliating? Like everyone has to do this stuff. it seems like it's pretty clear. I mean, look, this marketers always like, if you want, if you want reliable distribution, you just pay for it. And it's gonna be a big cost, a new cost, to, to the business. But seems, seems like that's the direction things are going. What do you think?
+
+[00:48:00] AB: No, I agree. I mean, the media companies who have a built-in audience can keep people there and aren't worrying ready to get traffic, but for most of them, I think it's gonna continue to get tougher to, to get new people to come to their platforms. In the, just the general consumer marketplaces around travel. You saw this week Airbnb talking about new offerings that they want to bring to their marketplace. and I think it's, it's interesting when you look at, so there's basically three large publicly traded companies in this space, bookings.com, Expedia and Airbnb, and they have all figured out ways to elongate their their monetization of a consumer around travel.
+
+Airbnb Has had added experiences on a few years ago, but I think they realize that they're not going to add more inventory or get necessarily significantly more booking volume, but they want to grab more of the wallet share that people use when they go up to travel. Right. So to, in 2024, there was five, 500 experiences and nights booked on the platform. And I don't think that number's gonna go up up that much. But where they see value is adding another 20 or $30 of revenue on that should effectively become contribution, to help boost revenue. And just that little amount of additional revenue could actually grow the entire business' revenue, at 20 or 30%.
+
+So when you look at some of these different consumer marketplaces, I think they're even getting smarter about, okay, instead of paying to acquire these users, the users that they have on the platforms, they wanna make it more valuable.
+
+[00:49:38] Brian: Troy, any thoughts?
+
+[00:49:39] Troy: I mean, same as it ever was, right? I mean, listen, nobody, Google doesn't know anybody anything, right? Like, I mean, when people, win sha about losing position on Google, I mean, it's a drag. I get it. But you know, they, they, they have no to drive traffic to your. To your, your property.
+
+They're just a website. They can do whatever they want. They're a business, they'll make decisions, et cetera. And, And, so yeah, we're leaving a time when we expected, know, in media dig, digital media distribution to be, you know, free and it's, it's not gonna be anymore. And I, I'm not quite sure what you're saying ab about the Airbnb thing, about getting, you know, using, I guess your distribution, get a larger share of wallet.
+
+I mean, it makes sense, right? So you're, but that's like every business, every business does that. companies.
+
+[00:50:33] Brian: noteworthy about that is like they end up becoming advertising. Like when you look at like how fast Uber's advertising is growing, it's growing like 60% a year and it's like a billion dollar business, right? Because their advertising is just, they're just selling distribution. And I think for a lot of publishers that's a big challenge in that. you look at where the platforms are going, they're just gonna be selling straight distribution and like advertising kind of fades away a little bit from
+
+[00:50:58] Troy: I
+
+[00:50:58] Brian: a lot of this.
+
+[00:50:59] Troy: the harsh truth of the modern condition, which is that we spend far more time in transactional interfaces like Uber and like DoorDash and like Amazon. and those places also have more data and those places are better places for performance advertising, period.
+
+[00:51:19] Brian: I was also interested, I wanted to get your take ab I don't, did you see the Wall Street Journal article about the stealthy wealthy? I mean, this has been like a, regular sort of meme, in X for the last couple of years. But the way you get rich is by boring businesses. And, you know, there's a whole, there's a lot of like, you know, the sweaty startup guy.
+
+There's, there's a whole bunch of like the course type people.
+
+[00:51:41] AB: the HVAC guy. There's a bunch of these people.
+
+[00:51:43] Troy: this is just the same as it ever was. the rich guys in my town own car dealerships and apartment blocks and restaurants and, you know, agricultural supply businesses. It's, it is the same as it ever was.
+
+[00:51:59] AB: let's circle back really quick to the marketplaces. 'cause I think there's actually something interesting 'cause Troy said, what, what was your point? So the point I'm making is the original idea behind some of these internet marketplaces is will basically transfer this intent to a pool of people that brought.
+
+So in the example of Airbnb, all these people that are selling or renting their rooms out, the
+
+Amount that you have to pay to acquire those customers to come to your site and and then all the other fees and, and people that you need to service that is actually not that profitable. And in certain instances, the value has been completely lost.
+
+So things like job boards, all of the incre, like the only, the, the profit that these places are making are selling that data and offering these consumers other, other offers. And so it's pretty, it's pretty interesting to see. You're having to pay so much more for the consumer that the only way that you could make money is attaching a bunch of other things on the whatever you wanna call it, the, the unsexy businesses.
+
+I think where these people became even more wealthy was when all the extra money came in during the COVID, the different COVID cash infusions, because you see like houses in the Florida panhandle now going for like 20 or $30 million. And so you've seen these guys that own the car dealerships. smirking Ryan, but it's, like, it's crazy.
+
+You houses.
+
+[00:53:20] Brian: I just didn't think the panhandle was, was going $20 million, but.
+
+[00:53:25] AB: Yeah. I mean a real estate in some places in Florida that none of us would ever wanna live is just as expensive as, as Malibu. I think, you know, in that article it talks about the guy who has the carpet business for elementary schools, like that business will never go away with ai, you know, unless they start using tile floors So the carpet for these, things.
+
+But I. In the media world, there are people making that much money, in sort of unsexy ways, but it's usually around arb. and they don't always have such stable businesses. But these guy, these people can always figure out new sort of arm opportunities where they're able to create large, profitable businesses with not that many people.
+
+It does exist in digital media.
+
+[00:54:07] Brian: How, how is lead, all the lead gen businesses gonna fare with, with all of these changes? Let's just move on to the next hustle.
+
+[00:54:15] AB: Yeah, I mean, I think the thing is whenever they ha if they're not just like handing off the lead and they're actually providing some way to basically validate or perfect the intent, I think they have sticking power. because it, it doesn't make sense for an open AI or Google to get into that game. The companies that come to Google to advertise, I don't think will ever get sophisticated enough with their data to, to, to buy correctly.
+
+but if you're just pushing people off from your AI r review to an Amazon product page, I don't know how long those physicists stick around, but if you're actually helping people navigate which has control company to sign up for, or which home loan, I think those have staying power.
+
+[00:54:58] Troy: This is Brian. This is what we talk about. This is the unseen, of transformative layer that exists on the internet that no one really o other than people that are in the business understand. And it's that, a law firm, for example, spends $5 a click on Google and is tremendously inefficient with that spend. And so over the years, many middle players have emerged that actually transform the intent from Google into something that is valuable for a law firm or a health company or a bank or, you know, there's, there's innumerable places 
+
+where that layer has 
+
+created value. And you one could easily ask themselves, what, why didn't Google just take all of that value?
+
+'cause they could, they could build funnels around all of this stuff, but they haven't. 'cause there's, there's a lot of noise and complexity with dealing with fragmented markets like a med spa, a law firm, you know, any, any number of financial companies. And so, you know, I think that those, those companies. Will go on. mean, I think that AI can, can sort of extend the talents of the aggregator deeper into the, you know, value creation layer. But I said to to, to Abby's point, I, I think that as long as you are something more than a link provider, as an affiliate company, as long as you are transforming that transaction in some shape or form and adding value to it, I think that that, that, that will exist for a long time. But I do think what, what is I think really relevant for publishers is that the business that became really important to them, which is just product affiliate, leading people to buy a vacuum cleaner on Amazon, is gonna get tough. It's, it's, it's not gonna go away. It's just gonna not, it's gonna shrink or not grow.
+
+
+[00:56:50] Understanding Risk Profile with AB
+---
+
+[00:56:50] Brian: final thing I wanted to talk a little bit about was understanding risk profile in a time like this. 'cause I think it could be paralyzing. I mean, I, I, I, I get that feeling when I talk to a lot of publishers in that there's so many unknowns that. People make the worst choice, which is the not make a choice.
+
+And I, that's what I was asking Alex about like, what do you build now is because there, it seems like the risks are, are in some ways a lot higher now when you're trying to understand very, it's very unclear where things will land and where you should bet. so I don't really have like something very formed around this, but like, a b you deal with with, with risk, all the time.
+
+h how would you advise people to think about risk? Because we have the, like risk fetishists that like to, you know, say everyone should just be like a riverboat gambler and usually those people already are rich and so they can take on that kind of risk. but for most people, they're not gonna take on that kind of risk.
+
+[00:57:49] AB: Yeah, I mean, I think the publishers have gotten burned so many times when the internet companies were getting big, like Facebook would offer publishers, some sort of video thing where they said, Hey, we're gonna guarantee revenue for the first six months or a year. People would build up a team to produce videos just for Facebook.
+
+And either that program didn't have the audience efficacy or advertising efficacy. So I think from a publisher's perspective, they've been like, risk off for a really long time, not just in the current world of AI disrupting their businesses. I think they've learned to not chase, New potential areas of consumer engagement and sort of sit back and wait to see where the market evolves.
+
+I mean, you've seen. A bunch of these publishers starting to turn on Substack. but that doesn't really cost any money 'cause it's just basically pushing out content in the new channel. but I think for them, a lot of it is that they, unless they can see revenue within a year or, or not even that within a couple months, they can't really lean in and,commit the capital and the teams to build out things or invest in new tooling or whatever, with the hope that it will help increase their business.
+
+So I think from the, the general media segment, I think they have a really hard time being innovative. And then more broadly, as you think about sort of capital allocators and investors, you know, depending on who it is, if it's a a, a vc, they're getting paid to take a lot of risk. and depending on who gives 'em capital and, and what their focus is.
+
+to us, it may seem like they're making stupid bets, but that's why someone gave them money, is to invest in a certain segment. and hopefully that person giving that VC or PE person money has allocated capital in other ways. So they're not, their risk is sort of offset by a much broader portfolio of investments. So I think from a business operator perspective, though, most of these media companies just can't take risk.
+
+[00:59:38] Troy: Hey, Brian. I would add a dimension to it. When you're
+
+[00:59:41] Brian: Mm-hmm.
+
+[00:59:41] Troy: media p and l, you're basically looking at three or four cost buckets. is how much you spend on content. other is how much you spend product and tech, essentially your own platforms. third is sales and marketing. And the final one is kind of overhead operations, all that kinda stuff, right?
+
+Like that enables the whole thing to function. think what you, you end up seeing and, and, and maybe a lot of us, myself included, got this really wrong, was in your own platforms. IE CMSs and all that stuff was kind of futile in, you know, if you look at it over long arc. And what you're gonna probably do is, unless there's a very clear idea around how you create utility with technology, you minimize your spend on product and tech.
+
+Because you just use other people's platforms, be it substack or whatever, you, increasingly are gonna be way more judicious in how you chase down, on Madison Avenue, like how you sell advertising. and you're gonna look to, you know, partner with people do programmatic stuff that where monetization is, is, comes at a lower cost and you're gonna really try to invest in talent and product and content, not product, talent and content. 
+
+and, and, and and I just think there, you can see, you know, over a shorter duration, a return on that investment. But, it's right now, I think it's like you batten up the hatches and you figure out where your marginal dollar's gonna make, you know, the most difference. And that's probably, you know, in trying to find out what kind of like video or audio investment's gonna make sense to you.
+
+[01:01:16] Brian: Yeah, I was really interested to see the, the Vox Media deal with Kara Swisher and Scott Galloway. it's, it's a different kind of deal. It's a talent deal, these kind of publishers. I don't think that's the very typical, where, Kara and Scott will be taking 70%, of what they sell. totally a different kind of deal.
+
+And I've, I've expected publishers to be doing more of these kinds of things. I think it's a great sort of in-between, where they don't wanna run sort of their own. Company clearly, and Vox has all the infrastructure. They can distribute it, they can do the monetization and the marketing. and so I think, I think those kind of deals make a lot of sense.
+
+Do you?
+
+[01:01:57] Troy: Well, th 30% is a pretty standard cost to sale, right?
+
+[01:02:03] Brian: Mm-hmm. 
+
+[01:02:03] Troy: the level that they are at in terms of annual revenue, whether it's somewhere between 15 and 20 million, 25 million, maybe to producing it is a rounding error. 
+
+Like, let's say you had, you know, a million dollars production cost a year, I, you know, I don't think it would be significantly more than that. And, and so. A deal where you're basically taking 30 cents of the dollar to sell a product. And I'm sure that if, you know Vox fumbles there, there's some kind of out if they can't deliver the revenue. But, you know, I podcast ads are, are, you know, I don't, I don't think that they're easy to sell, but if you have a big audience, they're, you know, they're, they're pr these days, they're pretty, pretty straightforward to monetize. So, you know, seems like a, a reasonable deal.
+
+[01:02:53] AB: Yeah, I think what probably happened there is they shopped it, they couldn't get a GA minimum guarantee from anybody else that they like at a level where they thought even if there. audience went down a bit, they would still make more money doing this chair. There's a, a part of that article where it says Vox still owes them a good amount of money, on like $15 million and so.
+
+Yeah. And then they, they were like a reference to, oh, we're, we're dividing up these payments to be most tax efficient. But the way that I read into it is like, even though their audience is, is pretty large, it's still like this B two, kind of B2B issue, or like industry focused. And I don't think they probably found Spotify or serious interested in their product and were willing to, to pay them for it.
+
+So this was like the, the way for them to make the most money. They know the partner. um.Even if, like I said, the audience goes down, a bit, the revenue goes down. a bit. this is the way to make the most money.
+
+
+[01:03:44] Outro
+---
+
+That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+[01:04:06] Troy: It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:04:18] Brian: All right. Cool. 
+
+you. 
+
+[01:04:20] Troy: stopping by Abian.
+
+[01:04:22] Alex: All right. See you guys. See you. 
+
+
+

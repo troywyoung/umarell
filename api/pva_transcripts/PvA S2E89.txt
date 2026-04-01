@@ -1,0 +1,1063 @@
+PvA S2E89
+===
+
+[00:00:00] Troy: I'm supposed to go to a party tonight, I don't know, 
+
+[00:00:02] Alex: oh, wow.
+
+[00:00:03] Brian: You know what, you should go with an eyepatch.
+
+[00:00:05] Alex: I patch. I mean, is it pink eye?
+
+[00:00:07] Troy: I don't know. I asked ChatGPT, didn't know.
+
+[00:00:10] Alex: Well, when chat GPT says, it doesn't know, then you're really screwed. . It wouldn't even make something up.
+
+[00:00:16] Troy: 
+
+
+[00:00:39] Intro
+---
+
+[00:00:39] Brian: Welcome to People vs. Algorithms. I'm Brian Morrissey, and each week I am joined by Troy Young and Alex Schleifer to unpack the most important developments across media, technology, and culture. And that means, of course, with CAN starting next week, we will spend the full hour reading the tea leaves on Michael Kassin's new consulting venture and debating whether we are Team Kassin or Team MediaLink.
+
+Will there be warring cocktail parties at the Hotel Du Cap? Who gets custody of Will. i. am? I'm kidding. we're going to talk mostly about Apple's, triumphant entrance into the AI arms race and what that means downstream and media is always downstream. Alex is our resident AI expert, as well as the only person I know who admits to owning an Apple vision pro we break down what Apple released, but also what it means for the direction AI will take.
+
+And my biggest conclusion is that. Things are about to get very uncomfortable for those who are intermediaries. And like it or not, publishers often act as intermediaries between people and information, distraction, and entertainment. And that's going to get a lot harder as Apple has painted a picture of AI It is more practical than the nerd drama over when AGI will arrive and whether the world will end because AI will go overboard trying to make a bunch of paperclips, but instead about letting people accomplish their tasks a lot easier, in a way AI will be the ultimate friction remover.
+
+And many entities in media and marketing, it has to be said, are at least in the view of these technology companies, unnecessary and inefficient friction. I often hear publishers basically harumph that oh, they'll miss us when we're gone. And that is, that is true, but only as Alex points out that if you're causing pain for consumers, the ones who spend, all that money on Apple products, you're yourself in for a world of hurt, because technology, it just always tries to remove friction and there's not going to be a lot of people who line up to protest.
+
+And Apple's perfect to do this. I mean, Troy points out that Apple is a master of product marketing and it has packaged up its view of AI, and skipped the mumbo jumbo and instead has a compelling vision, that is almost exciting as a consumer, at least compared to the fabulisms of open AI and.
+
+very Microsoft shock and awe approach to shoving AI into every possible product. And even Google's sweating us to not be left behind with its half baked AI overviews in Search. Instead, Apple is showing how it calls it Apple Intelligence, of course, can be used to get stuff done without opening several apps or wading through tons of emails and one small example that it used that really stood out to me is that it's going to be bringing AI to the inbox. this is something that Google is already doing. Yahoo is also doing, and that is going to inevitably negate the need of people to wade through email. Now, as a consumer, I totally agree.
+
+I am overwhelmed by email. I am terrible at it, even though I send quite a bit of it. And guess what? That friction that exists in email is the lifeblood of a lot of publishers and marketers. So there's a little bit of a catch 22 because kind of understand the issues that are being addressed. And if you take a pure consumer, Point of view.
+
+a lot of these things you'll be in favor of, but I think the entire ecosystem is a little bit more complicated than that. So there's going to be a lot of adjustment that needs to take place. And, we're going to be discussing it each week. So as a reminder, if you. Do you like this podcast?
+
+Please leave us a rating and review on Apple, Spotify, wherever you get your podcasts. you know, the world is increasingly unkind to intermediaries, but for some reason, these massive tech companies themselves serve as intermediaries for things like podcasts and they exempt themselves from these changes.
+
+Go figure. Now onto our conversation.
+
+
+[00:04:21] Episode start
+---
+
+[00:04:23] Brian: Alex. This was your, Christmas. This is Christmas, right? 
+
+[00:04:26] Alex: no, this is my Super Bowl, but it's just one big ad.
+
+[00:04:29] Brian: Yeah, which is also hilarious. I feel, I feel a little bit weird even doing this episode because I always hated having to pretend that marketing events are news as a reporter and I often had to do it. But here we are, Apple
+
+to marketing event that is treated as news.
+
+[00:04:50] Alex: But Apple is a different type of company. So it is news when Apple does it, not always, but I would say that this WWDC, which is their worldwide developer conference, usually starts with a big keynote around an hour and a half. And this time, I think it was one of kind of the most consequential ones they'd done in like a decade potentially.
+
+and they announced a lot of new features in iOS 18. And I think. You know, over a billion people use those devices every day. So it is consequential in that way, more consequential than a car announcement or, you
+
+[00:05:22] Troy: Because now I can use my phone in dark mode?
+
+[00:05:25] Brian: Well, let's go through, let's go, let's go through,
+
+some of this. There's a giant calculator. Okay, 
+
+[00:05:29] Troy: just for the record, I thought it was, like, I too, for a moment, I was, I was driving back from, from Boston and I just listened to it. I got kind of, you know, caught up in it for a second. Then I was like, wait, they're getting, this is what it's come down to.
+
+We're excited because, We can change the icons on our phone's home screen.
+
+[00:05:47] Brian: there's Memojis. There's a giant calculator that's coming
+
+to the iPad.
+
+[00:05:52] Troy: The calculator, I have to say, was extremely cool. Yeah,
+
+[00:05:55] Alex: well, the, the thing with the calculator on the iPad, if you know, the history is that they'd never had a calculator on the iPad because Steve Jobs was never happy and he wanted to do a calculator that could only exist on the iPad and they stuck to that. And everybody was calling their bluff, but this time they actually launched something that could only exist on the iPad, which is a calculator that you can use with your pen and just write up equations.
+
+It's pretty impressive
+
+[00:06:18] Brian: is smiling. 
+
+[00:06:19] Alex: in heaven.
+
+[00:06:22] Brian: Are we assuming that he's in heaven?
+
+He 
+
+[00:06:24] Alex: actually 
+
+[00:06:24] Brian: a lot 
+
+[00:06:25] Alex: what, maybe the underworld is, is very
+
+well designed. 
+
+[00:06:29] Troy: maybe he'll finally fix it.
+
+[00:06:32] Brian: Alright, so they, they came out with a bunch of announcements. some of 
+
+what I came out of this is that, you know, Apple has caught up with Microsoft and Google is never really behind. It's going to embed AI into all of its various products and services.
+
+That's step one, whether it's emails, app or maps, apps talking to each other, Siri. There's just a lot of foundational work to be done. There's, there's some emojis in the giant calculator too. that is my. Take away and I think the big to me, the headlines out of this, were that AI is going to, they have a particular point of view about how AI is going to work with their products.
+
+And it's pretty clear that AI is a feature. Not a product, at least in the Apple view of the world, it's on the device, it's not in the cloud. There's got to be a privacy angle because that's what Apple likes to do to sell more devices and then kneecap the ad business in order to take some of it for itself.
+
+Alex, what, what should we be paying attention to?
+
+[00:07:32] Alex: Well, I mean, I think it was important. Let's first maybe set the scene, right? This event happens every year to announce their latest operating system. And they usually release some sort of beta, to developers that you can use for, all of their operating systems to watch the phone, max, et cetera.
+
+So this year they split it in two, in two, specific, Parts. One was the first 45 or so minutes was about all the issues coming to every upgrade to every operating system that they have, which is quite a few right now. but the big one was iOS 18, the iPhone thing. And it was a lot of like,pretty neat little features, including the stuff that Troy doesn't really appreciate, which is all the visual modification stuff, like being able to place the icons anywhere.
+
+Yep. This stuff always gets a chuckle, but the thing is, that's what sells phones to most people. Cause most people see like a way
+
+[00:08:24] Troy: I liked it. I liked the duotone icons. I like that.
+
+[00:08:27] Alex: yeah. I mean, I think this is the type of stuff that people like to do on their phones. Their phone is an accessory. And so, so these features actually way more important than you think.
+
+But they were rushing through it because they were they were about to announce some bigger things, including they spent literally five seconds to tell us that we'll be able to send text via satellites so that when you don't have cell rain cell signal, you'll be able to point your phone at space and send a text message, which is.
+
+Insane, but you know, here we are. So they announced a 
+
+[00:08:56] Brian: wait, how many times you live like in the middle of nowhere, but I,
+
+[00:08:58] Alex: Oh, all the time, all 
+
+[00:08:59] Brian: I've ever had a
+
+[00:09:00] Troy: Does that mean I can send texts on the subway?
+
+[00:09:03] Alex: No, you need space, man. You need space.
+
+[00:09:06] Brian: Okay, so It need to have to wait. Now I have to wait till the next stop.
+
+New York
+
+[00:09:10] Alex: I mean, a lot of the, a lot of, the world is not connected to the, to the internet
+
+[00:09:14] Troy: So when my phone says SOS, I can send a text message.
+
+[00:09:17] Alex: We don't know, it's not out yet. We don't know exactly how it's going to work. They rushed through it. The reason they rushed through it and, and And this first part, by the way, this is the stuff that's going to exist on every phone that every iOS phone that is supported by the upgrade, right?
+
+The next stage. is when they brought Tim Cook back and he announced what they call apple intelligence And 
+
+[00:09:38] Troy: standing on the roof at that point?
+
+he was probably standing on the roof. Yeah. I don't know. There's a lot going on. I couldn't keep track of everything Did he, did Tim jump out of a jet?
+
+[00:09:48] Brian: Be great
+
+[00:09:48] Alex: no, it was the other guy
+
+[00:09:49] Brian: Remember they used to do that at the Super Bowl? Like
+
+[00:09:51] Alex: craig federighi craig federighi jumped out of a plane at the beginning and parachuted
+
+[00:09:56] Troy: Was that, was that an AI sequence? Is that, were those effects or did that really happen?
+
+[00:10:01] Alex: I don't know if it really happened. It was effects. But but you know, I But like two weeks ago, like a month ago, did they film people like, parachuters over the headquarters?
+
+I don't know. I was, I was 
+
+[00:10:11] Troy: thought people like you knew those kind 
+
+[00:10:13] Brian: the meetings.
+
+[00:10:13] Alex: I don't know. I mean, the production, the production stuff is less interesting to me. it was heavily produced, right. And it was also being broadcast live in front of an audience of developers at Apple park and stuff. So anyway, second part starts. Tim comes back and announces Apple intelligence and it's the very.
+
+Specific way of doing, AI that is only Apple. They hadn't mentioned the words AI, in the
+
+[00:10:36] Troy: They just said machine learning repeatedly.
+
+It's
+
+[00:10:39] Brian: so That's so annoying
+
+[00:10:41] Alex: so the way they look at intelligence is 
+
+[00:10:43] Troy: they're
+
+very careful with language.
+
+[00:10:45] Alex: I mean, they're great communicator. And I, I would, I would compare Apple's announcement yesterday with both Google IO and the Microsoft event, Which felt really like companies scrambling to slap AI to everything.
+
+And there, it felt much more considered and a much more refined approach.
+
+[00:11:02] Brian: and
+
+cohesive, right? They're there, but that's Apple. They're, they're closed ecosystem. They're like the Japan of technology. It's fully
+
+integrated 
+
+[00:11:11] Alex: to keep this, and to keep this short and sweet, because there were rumors that open, chat GPT would power their AI stuff. Here's what's happening. Apple intelligence, it's all custom Apple stuff. It either runs on the phone or on a virtual, on a, on a server that is. Run specifically for you and where you crypto graphically connect to it so that there's no kind of shared information.
+
+and this is the power of the platform, the power of the operating system, since the phone has all your context, it can see your photos and it can,you know, know what you send in text. And since it's all done locally and because people, people trust Apple Privacy, you know, good job.
+
+They did that work. this is 
+
+[00:11:52] Troy: Do you think you could tell me what's wrong with my eye?
+
+[00:11:54] Alex: I think it could probably tell you what it could probably not tell you what's wrong with your eye because Apple's intelligence is not, it's not like a big LLM like at a chat GPT, but it's, it's actually much more focused and much smaller. So Siri will
+
+[00:12:08] Troy: So it's like Apple kind of intelligent or like it's not that intelligent.
+
+[00:12:13] Alex: What is contextual intelligence as it knows stuff that's happening on your phone and it, but it might not know if you asked it.
+
+Ask 
+
+[00:12:19] Brian: about certain things, but it doesn't act like it knows everything about everything.
+
+[00:12:23] Alex: exactly 
+
+And 
+
+[00:12:25] Troy: That's the headline. Just smart enough. 
+
+[00:12:27] Alex: smart thing is that They added chat gpt as what they call like kind of an external external intelligence or whatever they call 
+
+it
+
+[00:12:34] Brian: call that backfill, I think,
+
+[00:12:36] Troy: Doctor, I have some questions about the
+
+[00:12:39] Alex: but 
+
+[00:12:39] Troy: partnership 
+
+[00:12:39] Alex: yes, and so it's it's great because what it does then it says hey, I siri will tell you I cannot answer these questions Can I go to open ai and then you will say yes, my guess is that you will be able to add You Other models as things go forward, they're being very clear.
+
+This is not an integration like what Microsoft's doing, but it's really just having open AI as a third party that you can connect to
+
+[00:13:01] Brian: and they're gonna connect to other third parties, llama or whatever. And,
+
+[00:13:05] Troy: So they're like just in a, they're like an aggregator of LLMs.
+
+[00:13:09] Alex: you know what? So they don't need to really right now, scramble to build the biggest one, deal with all the code. 
+
+[00:13:14] Brian: you have a billion devices. You don't need to do any of that shit. You don't need to
+
+[00:13:18] Alex: deal with all the legal stuff. Nobody's going to, nobody's going to beat the phone as an AI device. Sorry, humane, sorry, rabbit. And so they're sitting pretty and they don't have to take all the risk and the cost.
+
+It's likely that 
+
+[00:13:30] Troy: it sounds to me like you're cheering for them. Are you cheering for them?
+
+[00:13:33] Alex: I mean, I like Apple as a company. 
+
+[00:13:35] Brian: I think the sneaky surprise is that Alex Cheer is actually the one who cheers for power. That's that's the sub current 
+
+[00:13:42] Troy: Well, let me ask you
+
+[00:13:43] Alex: If it's well designed, if it's well
+
+[00:13:45] Brian: Well designed
+
+[00:13:46] Troy: hey, Alex, there's, there's two, I sort of thought while they were presenting that there's the, you know, two sort of, you know, gates out of the ecosystem. one of them, you know, I mean, it used to be that just because I think there's lots of parallels to previous moments here where the, their ecosystem needed to be augmented by other service providers in the past, like maps as an example.
+
+Right. And so Google maps is an important part of the functionality of the OS. And, you know, Apple, I suppose thought that owning that map position was strategic and they invested in it and it displaced,Google. But, it made sense for Apple to. Keep the passageway open to search because Google was so much better at it and all of the complexity of search, not just managing the index and making a good product, but the monetization of it, made a lot of sense to pass that over to Google.
+
+So that, that passageway from your browser from Safari, they hand it over to Google, Google paid them 20 billion for that. And it became a material part of, Google's business.
+
+of, uh, of their, of their P& L. Now, my question to you is it's kind of similar on, on the open AI side, but very, very different importantly.
+
+And, so they'll, they'll allow you to kind of leave the ecosystem to go use open AI if you need to. By the way, one, one little anecdote here. I think that there's a, we should do a podcast on the fascist lifestyle presentations of tech. In tech where people say things like create a, a video from my photos when my family and I went to Patagonia, versus show me how to,what do I use instead of ketchup on my mac and cheese? Or how do I make my gun rack not come off the back of my RV or stumped? you know, there's better scenarios that I think would appeal to a broader, broader group of people.
+
+[00:15:34] Alex: Do you think a lot of that as a marketer, do you think a lot of that is though, like you kind of want to put people into an environment they wish they were in? Isn't it like, look at this guy drinking beer. Yeah,
+
+[00:15:44] Troy: right. How, how, how to cover up a black eye? 
+
+You know, there's better,
+
+[00:15:48] Brian: I have conjunctivitis?
+
+[00:15:50] Troy: Yes. But anyway, that wasn't my point. That was just the. A little aside, exactly. But, so when you go out to OpenAI from Siri, all it does is at this point, there's no, the, the key difference between going out to Google and going out to OpenAI is going out to Google is a toll booth, right?
+
+Google makes money every time that happens because that's the nature of traffic to the, you know, web ecosystem. Every click is worth money. Going to OpenAI. Today is, you know, it'll be a free service. The majority of people will use it for free. And all it does is it costs, OpenAI money. And, you know, the universal rule of things in the world is that distribution has a cost in all cases, right?
+
+and OpenAI is getting distribution, but I don't think that. They're paying Apple for it, nor do I think Apple is paying them. I think it's a free partnership. What do you think? I think that like basically open AI saying, you know, we're going to figure out later how to make money from this.
+
+And maybe there's, enough traffic that we can upsell them at some point on, on subscriptions to open AI. But today. it's just tons of costs for OpenAI, and I don't think Apple paid him a nickel. What do you think?
+
+[00:17:12] Alex: I think that it's, it's, it's very, it's definitely hard to tell whether there was any, any money that changed hands or, or even which direction it went. I think that there are many benefits to open AI in the position it's in now, where it wants to come across as, it wants to come across as reliable as the,
+
+[00:17:30] Troy: Well, OpenAI needs distribution, Alex. They need it.
+
+[00:17:33] Alex: but even beyond the distribution, I think there's kind of like a halo effect of somebody.
+
+On an Apple stage saying, and we chose the best current language model, blah, blah, blah. It's there. it did seem like, and I would love to see if
+
+any 
+
+[00:17:46] Troy: it puts a lot of pressure on OpenAI to figure out how to make money? When are they gonna start, when are they gonna join the real world, you know, not the kind of venture funded world and start hitting consumers hard for the, you know, the paid upsell.
+
+[00:17:59] Brian: I mean, we've seen this before, right? It, it takes a long, I mean, before it was burning VC cash, but then the amount of money is, is substantially more than with like Uber. But I right now, this is just all being funded by a lot of the cash that has been accumulated by having monopoly positions.
+
+Okay.
+
+[00:18:20] Alex: components of this, but it's also potentially more data, right? Coming through to their servers, which is good, good to teach their models. and it could be, you know, if you're generous, it could be that they think that they're so well on the way to.
+
+AGI and that their chat GPT 5 is going to be so stupendously powerful that, just being in the limelight is good enough. And, it kind of just, the upside is, is worth it. I don't see a lot of money changing hands because my guess is that there were a lot of different,providers that would have kind of liked that position.
+
+So I think it's really unlikely that OpenAI is paying Apple. I think that it's equally unlikely that Apple's paying a lot to open AI. I suspect the agreement is we will partner with you. And if this becomes, if our distribution becomes a material revenue source, you will start to share that revenue with us. Does that seem 
+
+[00:19:13] Troy: reasonable? 
+
+[00:19:14] Alex: potentially,
+
+[00:19:15] Brian: I mean, right now, this stuff isn't making money, Like, a lot of money is being lit on fire. And at some point, and this is the way it goes, right? At some point, the, the revenue faucets will be turned on . 
+
+[00:19:28] Alex: back to Apple, because I care less about,chat GPT. I think it's important for our audience, maybe to understand that the next version of IOS is a significant step in this Star Trek future. We keep talking about where you just ask Siri something.
+
+And importantly, importantly, guys, it's not just a voice. They're making it much easier to type into Siri. Right. What is typing into Siri? It's essentially a search bar, right? And when you ask Siri, what is this? Or when is that movie playing or et cetera, et cetera, there's a lot of traffic that would usually go to Google that might be rediverted either nowhere, just stay on your phone, or be, be sent to chat GPT.
+
+and that's significant. I think it's, it's kind of a profound change in the way things work.
+
+[00:20:13] Brian: Yeah. I have a 
+
+[00:20:13] Troy: that's a great 
+
+[00:20:14] Brian: What, what about the expectations that change? Cause it seems that we would have, we would either be in a text mode or a voice mode and they're like sort of almost like different. I think we, we sort of mix them a lot with you get a call and you just text back like, I'll talk to you later.
+
+But, I'm interested in that because, I think a lot of times they're presented as either or, but, It seems like this would point to a future where the computing interfaces are increasingly mixing, you know, voice and text commands.
+
+[00:20:45] Alex: Yeah. I mean, I think so.
+
+[00:20:47] Troy: I build on your observation, Alex? Because I think it's really interesting. you know, like interfaces and attention is just energy, right? It's like, where does energy flow on a device? and, and like I said, you know, a lot of the energy in, you know, the, the kind of previous mode of technology usage was open, use your phone for.
+
+call it a set of utilities that are applications on your phone and a lot of the energy went through a browser to some, to some ecosystem, right? And in that the directory or the, the sort of navigational device was Google. And, and it was a very well instrumented kind of navigational tool from a monetization perspective, right?
+
+So every click, you know, every time you type to your point, you know, someone got paid or Google got paid and other people, You know, got traffic that ultimately helped them get paid.now that you can type into Siri and Siri is connected to an LLM, and we already spend a lot of our energy using text to chat and interact and communicate with people, a lot more energy is going through that kind of mode or that part of the device, and now it's not like I can just text you guys. And you see it, right? Like in our, in your mind, think about how much energy goes through text today. And even how our, our group chat is now a, I would say, I've always thought group chat was interesting because it represent, represents a quasi permanent connection to you guys that are out there. You're always in my life.
+
+There's always something there every day. And even if we don't talk, you're in my life. Like I think of you all, I think of both of you all the time because of that thread that's always open. 
+
+[00:22:33] Brian: now, if I'm not limited by just talking to my friends, I'm, I can now ask it, you know, what to make for dinner.
+
+[00:22:40] Alex: You can, you can also, and the context thing is, there are moments where you'd like kind of get lost on the internet and probably lose 20, 30 minutes of your life without noticing, because you went to check for flight details and you went into your email and you saw a newsletter and then you clicked on the link and whatever, right.
+
+That stuff is slowly going to be replaced by somebody just going, Hey, and they had that demo, right? Where they said, remind me, can you tell me when my, my mom is landing again and how long it'll take me to get there? Like that stuff, right? So many of our interactions and our attention is taken in these interstitial moments, and it's, it's
+
+[00:23:12] Troy: think it's going to absorb a lot of 
+
+[00:23:14] Alex: a lot, 
+
+[00:23:15] Troy: And I agree with you that that's energy that would have otherwise gone into a browser. And now instead of going to WebMD to find out whether this is conjunctivitis or pink eye, I can now do it through the place
+
+[00:23:26] Brian: But Troy, isn't that the end of surface area?
+
+[00:23:28] Troy: Yeah. Oh, the end of it?
+
+[00:23:30] Brian: Well, I mean, it's the
+
+[00:23:31] Troy: extending it in a new
+
+[00:23:33] Brian: well, I don't know. What is the future of surface area? Media has always been, you know, okay, you need a surface area. And then you either people either pay to have access to it or they, or they pay with their, their attention and data. But if people don't need, I mean, it seems pretty clear that the idea that you're going to be opening up an app in five years versus telling Siri to just get stuff for you.
+
+It doesn't, that doesn't seem like
+
+[00:23:56] Troy: If more of your energy is put into a new place where you text, that's always, and we know this is a rule from. from, you know, the, the, the dawn of social media, the place where you do your communication is the place where you spend time that you start connecting communication, i. e. texting, which is I think probably more important than any social media to a utility that answers any and all questions that you have.
+
+they're going to take 30 percent of traffic to the web. I mean, I just made up 30%, but you know, you get what I'm saying. There's a,
+
+[00:24:29] Brian: very exact.
+
+[00:24:30] Alex: but, but the, the, the thing is that they, they don't like not, and it's not in a nefarious way, but. Their motivations are different to media's motivation. Their, yeah, their utility is in kind of getting you as quickly as possible to the thing you want to do. Hopefully making money off an app you download, etc, etc.
+
+It's like, they don't want you to waste time on the internet. Like
+
+[00:24:53] Troy: know
+
+[00:24:54] Alex: a 
+
+[00:24:54] Troy: you 
+
+[00:24:55] Alex: if it doesn't.
+
+[00:24:55] Troy: I don't know if it's about saying things like they don't want you to, but I, I, one place where reconnect Alex is, I think this is all because of GDPR.
+
+[00:25:03] Alex: Yes.
+
+[00:25:05] Troy: I mean, listen, I, I don't, I mean, I don't
+
+[00:25:08] Brian: Break this down. Wait, was this Alex's theory? This was
+
+[00:25:11] Troy: this has been my theory 
+
+forever. 
+
+[00:25:12] Alex: I just blamed that. I just blamed that the far right one in the European parliament because of GDPR. But most bad things in Europe I can blame on GDPR now and on
+
+[00:25:21] Troy: Yeah, I'm going to Europe on Friday and I was looking forward to going except for GDPR.
+
+[00:25:26] Alex: Yeah, because it is even, you know, no matter how bad we think the cookie clicking thing here is here, it's even worse in Europe. Oh, Oh, that's what I'm saying. Way worse. That's all the open web needed with like floating video players and, you know, banner ads and native this and that is every time you go to a website, you have to like press a button to do something you don't even understand to allow them to
+
+[00:25:49] Brian: Some of those consent things are like full screen now.
+
+[00:25:52] Alex: So I think I was listening to, I mean, that's an interesting point and which is why, like, Apple is going to be so dominant, in this age. And I think, I think we saw them like executing really well, which is why I feel even more confident, but I think it was Ben Thompson at Stratechery said like, That all these efforts to, to, to push privacy is actually helping the large companies take a bigger foothold.
+
+And it's hurting all the little guys,
+
+[00:26:17] Troy: GDPR hurt the web and helped all the platforms.
+
+100%. percent,
+
+[00:26:21] Brian: all regulations,
+
+[00:26:23] Alex: you don't get a, it's because of the interface, you don't get a stupid little
+
+[00:26:26] Troy: Where did GDPR come from? Where did it come from? The evil people running Europe. Yes.
+
+[00:26:33] Alex: Well, meaning well meaning.
+
+[00:26:36] Brian: Brussels bureaucrats.
+
+[00:26:37] Troy: It's policy without understanding the details of its implications down to the level of user experience.
+
+It's a total failure, complete and utter policy failure brought to you by the policy that the privacy people in Europe, don't let them run anything.
+
+[00:26:55] Brian: well, I think the question is, then that's why when, when I think the AGI stuff is a bit of a 
+
+marketing play 
+
+[00:27:03] Troy: GDPR created the far right. Totally.
+
+[00:27:06] Brian: Because incumbents always want regulation because it, it, it, it locks in their advantage.
+
+[00:27:11] Troy: know who else wants regulation? Crazy liberals.
+
+[00:27:14] Brian: trick take has
+
+[00:27:15] Alex: but and it's a, and it's a funny kind of like disconnect, like mental gymnastic where they want that regulation. But at the same time, that regulation helps these massive corporation that's, they supposedly don't like, and so this has been like, yeah, just like a massive failure.
+
+And, you know, on the, on the question of trust and, and, and privacy and stuff like that, it's, it's quite an, did you notice, did you see what happened with Microsoft and their rewind feature?
+
+[00:27:41] Troy: Yes.
+
+[00:27:42] Brian: And by the way, the, the rewind feature, it basically is taking constant screenshots of what's
+
+going on your computer, which could never go
+
+[00:27:49] Troy: No, but worth explaining though,
+
+[00:27:51] Brian: by a company that is notorious for getting hacked. Non stop with their
+
+[00:27:55] Alex: so, so, so here's the thing, right? This is where trust and brand is such an important thing. yes, Microsoft announced this rewind feature. You could, it, it's, it's the promise of AI where you're doing stuff in a computer and he asked the computer, Oh, remember that phone number I saw? And it can find it. It feels like magic.
+
+Now, of course they released that. And as with everything, everybody's scrambling except for Apple, even though I think that was really fast for Apple, what they did. And it was probably,faster than they were used to. But, Microsoft released a tool that essentially takes screenshots every second.
+
+Now that could be fine because you didn't kind of run an OCR system over the screenshot and can be text for it. It's kind of disappointing because they control the U S that they can't do more than that. But the thing is that they were just, they were saying everything is saved and done on your computer.
+
+So it's safe. However, It wasn't encrypted. These were just screenshots saved on your computer. So if anybody got hold of your computer and windows is, you know, famously very safe, they could not only see what you do on your computer right now. They could also see the past few months of activity on your computer.
+
+[00:28:56] Troy: and so they had to, they had to walk it back. They had to change the tool. They have to make it opt in and they completely, you know, a bigger story here, Alex, is that basically, big tech is in the pockets of Democrats, right? Like
+
+[00:29:10] Brian: What is it?
+
+[00:29:11] Troy: largest single contributor. to the Democratic Party from a lobbying perspective. And now, interestingly, all the people kind of representing the kind of startup investment side of it, and also I think the sort of techno libertarian side of Silicon Valley have shifted to the right.
+
+And it's all because of GDPR.
+
+[00:29:34] Brian: But by the way, since this happened, Microsoft has really suffered. they, their market cap is at 3. 22 trillion.Um it gained. So
+
+[00:29:43] Troy: How much has it come down?
+
+[00:29:44] Brian: It's gone up in the last month, 8 percent
+
+[00:29:46] Troy: Oh, they've suffered. Oh, you're, you were being
+
+[00:29:48] Brian: Yeah. It was being sarcastic because again, it doesn't 
+
+matter. It doesn't
+
+[00:29:52] Alex: but I, I understand. I understand, but the market is also not reality. It matters in a way that they had to, they had to walk back. But I think to me, the more interesting thing is that some companies have permission because they've built up that trust over time and some companies don't.
+
+And I think Microsoft doesn't have a ton of permission. Microsoft doesn't have a ton of permission for us to trust it with a search result. It doesn't have permission to start saving and reading our files because we don't trust it since
+
+[00:30:20] Troy: I what, I wonder what the world would look like if We hadn't a shutdown Internet Explorer as being the predominant browser at the beginning of the kind of, you know, internet age. And as a result of that, Microsoft controlled that interface, because they would have been the dominant browser provider, and then therefore would have taken the search business, right, because they would have controlled that interface in that starting point.
+
+And then with the whole world of look like, you know, like the DMV? Like what, what would, uh,
+
+[00:30:52] Alex: yeah.
+
+[00:30:53] Troy: what, what would be the consequence
+
+[00:30:54] Brian: still have Pop Hunters.
+
+[00:30:56] Alex: Yes, probably.
+
+I we still have that, that, uh, encyclopedia? What was their encyclopedia called? 
+
+Encarta,
+
+[00:31:02] Brian: Encarta Encarta, was great. I liked Encarta when it was CD ROM. That was,
+
+[00:31:06] Alex: Yeah. just on that point, I think that Microsoft You know, I don't know if any of you have used windows lately and they've, they're making an effort, but they'll, you'll still have an ad here pushing some sort of thing, or you'll still have, you know, some on windows, right?
+
+Like they'll, they'll constantly be pushing you some stuff you don't want, you know, your one drive account. And it's, it, it constantly feels like spam where on your, on your computer, even when you just installed it. And so I don't think people. Are rooting for these guys to win the same way with, you know, the Adobe stuff that happened where they updated their terms of service.
+
+People latched onto a thing they said, and people don't trust Adobe because if you use Adobe software, it's full of ways that feel like they're trying to screw you out of your money. that's it. Apple doesn't feel like that. Apple doesn't feel like that. And yet they get more of my money than anybody
+
+[00:31:54] Brian: Well, they screw you out of your money, but they do it to your face, with the prices. I think a good way to end, or ruin a day is a Microsoft Teams meeting. I'm reminded again of the, of what they've perpetrated.
+
+[00:32:07] Troy: Yeah, why it, you know what I used it the other day in a meeting and I was like, it's not so bad. It crashed, but it wasn't so bad. And then I thought, why do I always judge people when they send me a link to
+
+[00:32:16] Brian: either European or they're in a horribly bureaucratic organization. If they use teams
+
+[00:32:21] Alex: wait, were you using, cause this is very clear. We're using new Microsoft teams, which is what it's called. Or we're using Microsoft teams for work and school because those are different apps apparently, or we're using Microsoft, 
+
+[00:32:34] Brian: for office, for office 360 live,
+
+[00:32:37] Troy: Are you playing 
+
+[00:32:38] Alex: it's, it's, madness.
+
+It's madness. No, I'm not playing with you. I might have embellished it, but this is, they have multiple
+
+apps. 
+
+[00:32:44] Brian: I got my, my LinkedIn account hijacked recently. And I had to go through, they kept telling me I needed some authenticator app. I had to escalate it with, with LinkedIn. they 
+
+[00:32:55] Alex: Wait, hang on. You didn't, you did not have,
+
+[00:32:58] Brian: I got, my name got changed to States Morrissey.
+
+[00:33:02] Troy: That's cool.
+
+[00:33:02] Brian: It was some rogue, some, some, somebody was going rogue with my LinkedIn.
+
+So if anyone got to it. States like S T A T yeah, I don't know. And nothing seems like it happened. I just, it was going back and forth. I've, I've since locked it down. It's okay.
+
+[00:33:17] Alex: I, are you sure you haven't been like Manchurian candidate like no, no, don't blame the victim.
+
+All right. did you not have two factor authentication?
+
+[00:33:27] Brian: I do now, but I, as much as I'm a big, LinkedIn booster, I hadn't, I hadn't really You know, you have it for so long. Anyway, that I think one of the big, takeaways that I had, out of this and tell me if this is wrong is that the phone is here to stay, that this idea that AI is going to displace, The phone.
+
+The phone to me is like email. People complain about it, people say that they want it to die, etc. And it's, it just stays around.
+
+[00:33:53] Alex: It's madness to think that the, it's, we've stumbled, I think, on the perfect form form factor. It fits in your pocket. The battery can last. More than a day, it holds a bunch of compute. It can connect to the internet. And when you need it, it has a screen, a microphone and a camera. Wow. What else do we need?like cool, put glasses on as an accessory, put headphones on as an accessory. By the way, the next AirPods at some point are going to have cameras on them so that the AI can see what you're looking at if you ask it to it's the phone, it's all going through the phone. You know, and to think that that 
+
+was like a vector of 
+
+[00:34:27] Troy: I can call my mom
+
+[00:34:28] Alex: Then you can call your mom 
+
+[00:34:30] Troy: and
+
+still call my mom.
+
+[00:34:31] Alex: to think that you could replace that, you know, when they own the software layer and the hardware layer is, is madness.
+
+[00:34:37] Brian: Okay, so who
+
+[00:34:38] Troy: Well, I like this again, Alex tees up a really terrific idea, Brian. We can't just dry, keep driving by these good ideas because putting a phone on you know, Jess said it when she joined you, you weren't there, Alex, but she, you know, we asked Jess what her favorite product was. And she, like many said, You know an airpod airpods are truly greatI tried to punish myself for losing the 30th pair and buy a shitty one because I was so mad at myself And it lasted two days.
+
+I had to go and buy a pair of
+
+[00:35:06] Brian: you mean like a non Apple AirPod?
+
+[00:35:09] Troy: I bought I bought a beats one because it was 100 bucks less and I was just like you deserve this because you can't keep Anything you lose everything troy So I punished myself And I went back to the store, took them back, got the real ones. They're so terrific.
+
+And putting, a camera on them is incredible. It's a great idea. You should patent that. It's a 
+
+[00:35:30] Alex: will, 
+
+I will. Don't worry. I think there's a lot of, distracted conversations happening around, around the future of computing. And I think, you know, it'd be, it remains the phone with just more intelligence and context. And Apple actually showed us the more cohesive, the most cohesive version of that.
+
+
+
+[00:35:46] Alex: and it shrinks the surface area that media can exist on. It definitely doesn't, you know, push like, 
+
+[00:35:53] Troy: Okay. I know this is your segment, but a couple of other observations. I didn't
+
+prepare as much you. I don't have prepared 
+
+[00:36:00] Brian: This is, this is his episode.
+
+[00:36:03] Troy: this is his episode. No? Sorry.
+
+[00:36:05] Brian: Well, we're going to have a canned preview. We're going to talk about Michael Kassin.
+
+[00:36:08] Troy: Okay. So, one of my observations was this is the kind of, family fun AI made useful in your phone interface. There's all kinds of ways that AI was shown to be useful, ranging from, the creation of, emojis to, basically the augmentation of every app in their portfolio.
+
+Although by the way, it kind of sucks that all that stuff, by the way, is manifest in, Gmail, all the Google applications, all the Microsoft applications. So none of it's really new, but they made it nicer. They made it feel like it was usable. You know, and you notice how they had sort of three types of illustrations that you could use when you do generative stuff there.
+
+They just kind of make it finite and package it. They're so good at packaging, consumer product packaging. The other thing is, I think that for them and Alex, I hate to say this, and we can do a little update from your vision quest corner, but the, the, the headset felt like an embarrassment, to be honest, it was like, fuck, did we really have to do an update on, you know, this thing that has no software for it?
+
+I'm talking about, vision pro and it's almost like they did the little vision pro segment, but they kind of didn't want to. You know, it's like a product that'll be useful some way because all that technology will be Will appear on the camera on my airpods But no one is ever going to keep using those kara swisher said today that she watches movies So she doesn't have to listen to her kids, but I don't think that's true.
+
+[00:37:36] Brian: Well, Alex, you are, you're not wearing it now.
+
+[00:37:39] Alex: I'm not wearing it now. No, I, I use it regularly for certain things. I think it's, it's particularly useful when we're doing some work sessions with somebody else who has the device. I have a friend who uses it, Elliot, that you know, Troy. whenever he's
+
+[00:37:54] Troy: But how many times can you watch june 2? I mean
+
+[00:37:57] Alex: No, I mean, you can watch any movie.
+
+It's better to watch. It's genuinely better to watch a movie in this than in any other device. 
+
+[00:38:03] Troy: except with my conjunctivitis. It would like it
+
+wouldn't
+
+work 
+
+[00:38:05] Alex: it wouldn't work, but, it is better than on my, you know, I have a projector, a really nice projector at home and it's better than my projector. you know, it's, it's, it's great. It's great when you travel.
+
+[00:38:14] Troy: your projector's not strapped to your head.
+
+[00:38:16] Brian: It's going to be like the Cybertruck. It's going to be noteworthy when you see one.
+
+[00:38:20] Alex: I mean, I think it depends what you, how you set your expectations. Right. I don't think
+
+[00:38:25] Brian: Well, I set my expectations high from a company that has a billion devices out there and makes a big deal about something. 
+
+That's why we're talking about their 
+
+PR event. 
+
+[00:38:35] Alex: It took them a while to figure out the watch, you know, so I don't know. I think, they want to have a position on every, every type of interface and they now do. That's it.
+
+[00:38:44] Brian: Okay,
+
+[00:38:45] Troy: You know, the other quick observation, and this is pretty obvious, but every time a platform company like Apple, or arguably any of them, adds a little feature, it wipes out. Like 10 companies.
+
+[00:38:56] Brian: but does it?
+
+[00:38:58] Troy: Well, I don't know. I don't really think I need Evernote anymore.
+
+You know, I'm not sure. got taken out. Remember the, remember the
+
+I don't really think I need the trail map application after yesterday.
+
+You'll notice they did some demos around, all the, the, the national parks being preloaded onto your phone and you can use AI to do your planning of your walk. Or, I mean, a bunch of stuff
+
+[00:39:19] Alex: I mean, I mean, the big ones, To think about like the first, you know, when I was looking at it, Grammarly, right? Grammarly is, you know, I mean, with all this AI stuff happening on, on the app, it's, it's just, going to be in, in trouble. I mean, it has a big, you know, everybody keeps reminding me, you know, this is just the iPhone, But yeah, but the iPhone is the, iPhone user spend, spend a lot more money on apps and software and commerce than any other user, one password, right?
+
+I mean, I'm thinking of switching to one password because they're building it all into the US and then, you know, I have less all trails. Has anybody ever used all trails? It's like a trail mapping thing that's gone. and then there's a lot of little apps,they, they added this thing to mirror your, your phone.
+
+which is a genuinely cool thing where you can now mirror your phone on your desktop and you can use your phone with your mouse and type into it. So any app that you just have on your phone or anything like that, you can just use on your
+
+[00:40:10] Troy: Can you hold your laptop to your head and make a call?
+
+[00:40:13] Alex: You can, yeah, you can just, but you gotta hold it with your cheek like that, like, you know, in the old days. yeah. But it is, 
+
+[00:40:19] Troy: That showed, that was another observation, kind of a meta one, would be the tightening of the ecosystem. Once you're in there, you're never getting out.
+
+[00:40:27] Alex: yeah, cool feature, the phone thing.
+
+you know what, I was telling my wife about these features because on my side of, you know, a lot of tech people were bemoaning the, you know, how apple was actively attacking, you know, this independent company, one password who raised 160 million, by the way, but, or, you know, how it was
+
+[00:40:46] Brian: a little Silicon Valley mom and
+
+pop
+
+shop Yeah. Or hurting the ecosystem. But I ran through the features with my wife, who's not a very technical person. But when I told her these features, like the password thing, she goes like, Oh, that's great. I don't want to have to use another app. That's it. That's how people are. 
+
+[00:41:01] Alex: yeah, that's fine.
+
+Like let's just use notes and messages. It's so nice. Everything just
+
+[00:41:05] Brian: does the innovation energy, which is fed Silicon Valley in this amazing American sector, where does it come from when? When apps are not the on ramp. I mean, what, how are you going to have a thriving ecosystem? I know things change and that's, that's great.
+
+Creative destruction, et cetera. but it seems like all of these things are pointing to this being a centralizing
+
+[00:41:29] Alex: it's a natural, it's a natural cycle of things, right? apps that are features or that deserve to be features that are integrated, get integrated and become features. There's so many things that we used every day to day that used to be an app that people used to pay for. and they kind of, you know, get turned into mulch and become part of our everyday existence through the operating system.
+
+That pushes people to invest in, new applications, new modes of interactions, which I think is still relatively like a field that is so wide, right? Like finding new interaction models, new ways to consume content, new ways to do things, new, new capabilities. And then as those things become, No part of the fabric, then maybe they get ingested by the operating system, either by an acquisition or something.
+
+But I think it actually forces everyone to keep changing the operating systems to keep adapting and adapting to what's happening in the, in the app environment and the apps to kind of keep pushing further, like at the end of the day, for the For the customer, it's way better to have all this stuff integrated.
+
+Like it's way better. It's like that GDPR thing where you feel like, well, maybe privacy would be better. But at the end of the day, people don't want to keep clicking on the thing, you know, and so, to me, what makes people happy usually is the way things should go. So
+
+[00:42:42] Troy: wish they'd turn GDPR into mulch, Alex.
+
+[00:42:46] Brian: You
+
+[00:42:46] Alex: I don't get, what I don't get is like, I keep seeing all these browsers, including like Safari now and everything like that, like doing all this ad blocking and, and removing of, of cookies and, and, and trackers. I just want a browser that just like removes all those GDPR banners by default.
+
+[00:43:02] Brian: So despite all this, war on advertising that your type of people are, are undertaking, advertising is about to cross 1 trillion. One trillion dollars. And some of that is just how advertising is measured because you just define it differently. And so a lot of the retail media things that weren't considered advertising are now considered advertising.
+
+I was actually talking with the lead researcher at group M about this, about this report. And what's interesting is I'm doing actually a talk with her in Cannes in case anyone's gone to Cannes. is, You know, they see search advertising growing and what's amazing is they see all kinds of advertising sectors growing and it comes at a time when, you know, publishers are dealing with a lot, would be euphemistically called Edwin's, but advertising itself, very robust industry.
+
+[00:43:52] Troy: moves with GDP.
+
+[00:43:54] Brian: Well, that's the thing. She says that that is not true.
+
+[00:43:57] Troy: What'd you say?
+
+[00:43:58] Brian: She said that that was, I don't know.
+
+[00:43:59] Alex: say she said it doesn't. That's why people come here for the facts.
+
+[00:44:07] Brian: don't know. You have to come to my session. It's at
+
+the group 
+
+rooftop
+
+[00:44:11] Troy: Can I live stream it?
+
+[00:44:12] Brian: at. 10 a. m. on Monday.
+
+[00:44:14] Alex: All right. Well, sorry, did we, did I talk over a Brian ad? 
+
+Sorry, just like go over,
+
+[00:44:19] Brian: didn't even get, I didn't even get into Tuesday. Then there's dinner that night and then Tuesday we got some sessions. I'm gonna be with Neil Vogel at the dot dash Meredith with Sarah Fisher too. Sarah, me, Sarah, and Neil. 
+
+[00:44:32] Troy: Hi, Sarah. Hi, Neil. okay.
+
+[00:44:34] Alex: So I have just like a question about, about the advertising thing. How do we define advertising? Because I, whatever we're talking about here is never going away, right? People need to, Buy products and then merchandising and presenting those products to people is going to be a business But I from what i'm seeing from where i'm standing and I don't know much as i've been told.
+
+but it seems that You're sitting you're pretty okay If you're very close to the customer like you're at the operating system layer or or you're you know amazon Or you're very close to the product And you can kind of like, you know sell the product directly like that a Walmart potentially or,you 
+
+[00:45:14] Troy: you're either aggregator or a skew.
+
+[00:45:18] Alex: right.
+
+Or you provide the skew everything in the middle, which is, I think the bulk of the people we're talking to, I'm sorry, is, is. It's not going away, but it's, it's probably under some pressure.
+
+[00:45:29] Troy: Wow, you've really moderated your position.
+
+[00:45:31] Brian: that's a nice euphemistically way of putting it, yeah.
+
+[00:45:34] Alex: I don't know. I'm just coming at it. Like I'm just looking at it. I don't know. I don't know what I'm talking about. Just feels 
+
+like 
+
+it. So 
+
+[00:45:41] Brian: Yeah, look, advertising has shifted to performance, right? That's just direct marketing. There's a ton of data, direct marketing has always been driven by data, and so now, if you have the best data and you're able to apply it the best way, closest to a sale, you're doing great. Is that advertising? Is that creating demand?
+
+Is that, madman? No.
+
+[00:45:59] Alex: mean, how many people are having martinis at two in the afternoon? That's what I'm wondering. It
+
+[00:46:03] Troy: Hey, Alex, even after, you know, Google created a directory of all things on the planet and I could go in and type personal injury lawyers in Brooklyn, Brooklyn. there's still a whole ecosystem of people that help make connections between lawyers and people that need personal injury lawyers. So there's, there's so much space in that trillion dollars for people to facilitate marketing promotions, transactions, et cetera.
+
+We still get direct mail. I've had Terminix come to my house five times and I still have cockroaches.
+
+[00:46:32] Brian: Can we talk coupons? 
+
+[00:46:34] Troy: What do you want? What do you want to talk about the coupons?
+
+[00:46:36] Brian: I mean
+
+Valpak. I mean, Valpak's still a great business. Something I learned.
+
+[00:46:42] Troy: VALPAC is a terrific business, yes. Our friend owns VALPAC.
+
+[00:46:45] Brian: They send coupons. Do you know Valpak,
+
+Alex? They send giant envelopes of coupons.
+
+[00:46:51] Alex: Oh, they're the ones like that. The landfills guys. 
+
+[00:46:54] Brian: It's 
+
+[00:46:55] Alex: many, 
+
+[00:46:55] Troy: That's not how they position
+
+[00:46:56] Brian: It's a great business.
+
+[00:46:58] Alex: I can I like contact anyone to
+
+[00:47:00] Brian: No content, all ads. No journalists that are having post it, vein, Alex. All ads. post it
+
+protests. 
+
+[00:47:08] Troy: Brian dinner. had dinner with the VALPAC guy.
+
+[00:47:12] Alex: Yeah. Were you sitting on a bunch of burning trees? Mm
+
+[00:47:14] Troy: Actually, we were sitting at a beautiful little slice of Saint Tropez on Shelter Island.
+
+[00:47:19] Alex: hmm. Where does the central pay on shelter Island?
+
+[00:47:22] Troy: It's
+
+like Saint Tropez.
+
+[00:47:24] Brian: sort of. More board games.
+
+[00:47:26] Alex: Okay. Well,
+
+[00:47:28] Brian: People don't, people don't pull out backgammon at Saint Tropez. Doesn't happen.
+
+[00:47:33] Troy: a massive influencer, Brian, it turns out.
+
+[00:47:35] Brian: Bella Hadid? Gigi Hadid? Who are the 
+
+[00:47:38] Troy: Best friend of,
+
+you know, 
+
+[00:47:39] Alex: was a Hadid.
+
+[00:47:40] Brian: No, it was a friend of a Hadid who's a friend of a Kardashian.
+
+[00:47:43] Alex: Oh, wow. get on Shelter Island. You get the real deal on San Tropez.
+
+you were, you were rubbing shoulders with, with royalty.
+
+[00:47:52] Troy: We had a good time, Alex. I had, I had Brian came over for breakfast.
+
+[00:47:55] Alex: Wow. Did yeah, it great. I didn't break, I didn't make breakfast, but
+
+Okay, I'll, I'll be expecting that treatment in August.
+
+[00:48:02] Brian: I had a bagel. Are you coming to New York in August?
+
+[00:48:05] Alex: yes. 
+
+[00:48:05] Brian: Oh, great.
+
+[00:48:07] Alex: Yes,
+
+[00:48:07] Brian: Let's do a live podcast.
+
+[00:48:09] Alex: let's do 
+
+[00:48:10] Troy: Okay. 
+
+[00:48:10] Alex: We should do one.
+
+[00:48:11] Brian: one thing that stood out to me with, this is kind of niche, but in the Apple, demo, whatever you want to call it is, is the gathering war on the inbox. Like it's finally happening. If you look at what's happening with Apple gave a example of how, and it's an obvious use of AI, everyone is going to use that it's the go into the inbox, separate all out, all this stuff.
+
+And the inbox, as Troy has been pointed out, has been hacked by, by publishers to be a place to publish content when it really was never meant to be that. Not the publishing would ever hack something, that wasn't meant to do what they want it to do. Google is doing this. Yahoo just came out. A lot of people sleep on Yahoo.
+
+Massive, massive footprint in mail. They're going to be doing this segregation. And so that is, that's going to really hurt a lot of particular niche publishers. Cause there was always this idea that it was a direct connection. That email was this direct connection to a consumer and it was never true. There's always some sort of technology provider standing in the way.
+
+So now they're going to summarize, they're going to gather it all together in a hidden area, a newsletter tab.
+
+[00:49:24] Alex: you guys sound so surprised. 
+
+[00:49:26] Brian: I'm not, I'm not surprised. 
+
+[00:49:28] Alex: first, we turned the web into a hell hole of advertising and gotchas and buttons and pop ups 
+
+[00:49:35] Brian: Interesting offers, you mean?
+
+[00:49:37] Alex: interesting offers. And then we moved to the inbox and we're wondering while those are like, You know, there's an opportunity for someone to make it better by, cleaning
+
+up the 
+
+[00:49:46] Brian: don't
+
+[00:49:47] Alex: graffiti that you've put
+
+[00:49:48] Brian: This is 
+
+[00:49:49] Troy: You know, I can't, I can't decide if, if what we've done here, Brian, is genius or just completely undermining our,
+
+so we said, let's create a pod. Let's create a, no, no, let's create a
+
+[00:50:01] Brian: Mr. Adbusters 
+
+[00:50:02] Troy: Right. Let's create a podcast. We'll talk about media patterns and culture. We'll talk about advertising. I got an idea.
+
+We'll bring on a guy that's anti everything. and,
+
+[00:50:12] Brian: like a weatherman. 
+
+[00:50:13] Troy: it'll be a great, it'll be a great service to the listeners because he'll provide a thoughtful and a, you know, perspective on, what's wrong with
+
+of it. 
+
+It's kind of genius, right? 
+
+[00:50:24] Alex: it 
+
+[00:50:24] Troy: this is how it turned out. And I just need to remind people that maybe are, you know, have joined the podcast a little later.
+
+There, there was a time when you didn't want it. You told me. You didn't want to say anything. You were just going to be the producer. You didn't want to say anything. And then you said, okay, I'll do tech corner. And then you started talking a little bit and now you, this is your show.
+
+[00:50:44] Alex: It's, it's a little bit of an analogy of what happened with tech and media. But, but maybe like if we're more generous with my, With where it's coming from I did maybe i'm i'm trying to Share things so that it helps people think through what the future might bring. Because I truly believe my, my, my hypothesis is that if you're in a business that that is in the business of friction, you're in trouble because I think we're going to see the end of friction that has always been the pathway, the end of friction, get the thing.
+
+The next day, click on the thing and watch the movie. Get through this. And so when you're there and you're saying, wait, hold on, let's, you know, here's all this junk you have to go through, et cetera. Of course, somebody is going to build a browser that tears that out. If you start flooding my inbox with a bunch of junk, of course, I'm going to do that.
+
+I would pay for a service today that did this with my real mailbox. You know, like there's always going to be an opportunity when you provide pain and people want less pain, they want less friction, they want things to come easier. So, so there is a product out there that. That doesn't have to exist in 
+
+[00:51:51] Brian: But, you know, I would just say this, Alex, freedom is messy. And if you're going to have an open system, you're going to have a little bit of messiness. We accept this in democracies. They're not, it's, this is, this place, New York City, it is chaotic. It's it is not like Singapore at all. yet at the same time, it has its charm. 
+
+[00:52:10] Troy: Yeah. This isn't Singapore, Alex.
+
+[00:52:13] Alex: All right.
+
+[00:52:14] Brian: You want to get caned for your chewing gum on the sidewalk. Remember that? Remember when that kid got caned? That was like a national.
+
+[00:52:22] Alex: That is not, that is, yeah, I mean, I would say that is
+
+[00:52:25] Brian: Time magazine was all over it.
+
+[00:52:26] Alex: getting caned is also friction. So maybe what I'm looking at is like for something in between, but you know, there's, there's some, I'm being pretty serious about what I'm saying, but yeah, I agree. I mean, it's, it is messy.
+
+[00:52:38] Troy: I'll design the poster, Alex, for your new book tour. You should do it. The End of Friction. Alex Schleifer.
+
+[00:52:44] Alex: Nice. I like it. Can we co co launch it with your book on power?
+
+[00:52:48] Brian: On And then Brian's book on freedom is messy.
+
+[00:52:51] Alex: Oh man, we have three books. Guys, there's going to be a publisher and the thing we'll, we'll make a book that we then sell digitally online and 
+
+[00:53:01] Brian: the way, I've noticed, the new, sort of internet personality move is, is to publish books. There's a lot of books, they've moved on from courses to books. I'm seeing a lot of books come out, from internet personality types. Take that for what, for what it's worth.do we have a good, good product?
+
+
+[00:53:19] Good product
+---
+
+[00:53:22] Troy: So this is as much a call for help as it is. you know, a recommend, a recommendation. But I did sleep on a great bed last night at a, at a good hotel. and I was just like, this is perfect.
+
+I just want, I, I, I took a photo. I texted my wife and I said, get all of this, whatever they have. That's the best. Cause it was perfect. 
+
+[00:53:41] Brian: it have one of those? I don't like when they combine the top sheet with the, what is it called? The sham
+
+[00:53:46] Troy: it was the four seasons. They have the best sheets and they have the best bedding and the beds are super comfortable and the pillows are
+
+[00:53:53] Alex: yeah. So did your wife get staff to make sure that that happens every night?
+
+[00:53:57] Troy: I got, no, it's just that I think that great sheets are a really wonderful luxury, and I'd like maybe to hear what the best ones are, because I don't think we've arrived yet.
+
+[00:54:09] Brian: kale.
+
+[00:54:09] Troy: Yeah.
+
+[00:54:10] Alex: well, you know, Melissa, my wife did, did, work for a short time for the wire cutter and did a whole, Sheet section. 
+
+[00:54:19] Brian: She did a sheet review. Wait, she was in the affiliate hustle.
+
+[00:54:22] Alex: she was, yeah, for
+
+[00:54:23] Brian: Wow. This is very complicated. Oh
+
+[00:54:25] Troy: Maybe I can follow up with you on that, Alex,
+
+[00:54:28] Alex: I think it's mostly the mattress.
+
+[00:54:30] Troy: Yeah, the mattress is good for
+
+[00:54:31] Alex: It's mostly the mattress. And, there's this interesting, mattress that's called, eight sleep, which I'm considering, 
+
+[00:54:37] Brian: That's a 
+
+[00:54:38] Troy: you tilt up the 
+
+back of it? Does it have a like a, 
+
+[00:54:40] Alex: it tilts up the back, but it also 
+
+it controls heat individually for the left and right side because In general women and men, run at different temperatures when they sleep So i'm always too hot melissa's always too cold.
+
+So we're considering that but it's like It's like 
+
+[00:54:56] Brian: get two twin beds.
+
+[00:54:58] Alex: yeah, that's that's when we give up. 
+
+[00:54:59] Troy: But if you can tilt the back of it means you can eat in bed, right?
+
+[00:55:03] Alex: That's exactly that's what you need
+
+[00:55:05] Brian: That was the height of luxury in the 1980s. The idea that
+
+[00:55:08] Troy: Yeah. In the eighties, I used to smoke in
+
+[00:55:10] Brian: basically like a hospital bed.
+
+[00:55:12] Troy: Yeah. 
+
+[00:55:13] Brian: arrived.
+
+[00:55:14] Troy: yeah,
+
+No, it's it is. Alex, I would warn you. I think that sitting up in bed and, you know, starting to do more activities that you would otherwise not do in bed, is is
+
+[00:55:25] Alex: yeah, no, no, we don't have that. We don't have TVs in our bedroom. Definitely not this. This raises automatically when you start snoring and helps you stop snoring.
+
+[00:55:36] Troy: are automatically with AI?
+
+[00:55:37] Alex: Yeah, probably 
+
+[00:55:39] Troy: It's an AI, but 
+
+[00:55:40] Alex: got 
+
+[00:55:40] Troy: the 
+
+Are you, again, Brian, do you have a TV in your bedroom?
+
+[00:55:43] Brian: No, that's, that's very
+
+gauche. 
+
+[00:55:46] Troy: Do you think that, but when you're in a 
+
+[00:55:48] Alex: feels like every time we say something, we're losing like 3 percent of our audience until we get to zero mean people like TVs in their room. It's fine if it works for them.
+
+[00:55:58] Brian: What? No, it's not.
+
+[00:56:01] Alex: Alright, so
+
+[00:56:02] Brian: Read a book. I mean, it's terrible for you. I mean, when you're in. Your bedroom, you give, there's two things you should be doing in there, and it's not watch TV,
+
+[00:56:11] Troy: Reading?
+
+[00:56:13] Brian: reading, And sleep, yeah.I don't even know if you should really read that much. I mean, just because your body is supposed to be trained, that when you get in there, particularly as you get older, you have to, like, focus on having good sleep, because it gets harder. I think good sleep hygiene is
+
+good sleep hygiene.
+
+That would be like saying, someone, oh, people don't brush their teeth, that's okay. Why? It's just bad hygiene.
+
+[00:56:33] Troy: But do you, do you look at your phone, lay in bed and look at your phone?
+
+[00:56:36] Brian: No, I try not
+
+[00:56:38] Alex: I try not to,
+
+[00:56:39] Troy: Do you, Alex? 
+
+But 
+
+you do. 
+
+[00:56:40] Alex: to. Yeah, it's bad.
+
+[00:56:42] Troy: Do you wear your Vision Pro in bed?
+
+[00:56:45] Alex: You know what I tried it once actually really bad window. It's one of the bad Big failures of the vision pro for me is that it doesn't work well when the lights are off. So I tried to watch a movie at a hotel once and I had to turn all the lights on. And then I was like, okay, this is too complicated. So, so no. 
+
+[00:57:02] Brian: Does it have a carrying case? do you carry like a bowling ball?
+
+[00:57:06] Alex: Yeah. It has a carrying case famously, like really interesting, like fluffy carrying case from Apple kind of looks like 
+
+[00:57:13] Troy: do you carry it around, do you carry it around to meetings and stuff?
+
+[00:57:17] Alex: I mean, what do you mean? I work from home most of the time. So no, you know, 
+
+I'll, I'll travel with it. It's cool, man. I like it.
+
+
+[00:57:25] Outro
+---
+
+[00:57:25] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week.
+
+[00:57:44] Troy: I'm supposed to go to a party I don't know if I'm going. 
+
+[00:57:46] Alex: Just put, yeah, just kind of compress on put some tape over 
+
+it. Said, said, you know, you got, an injury in the eye and you're just waiting for it. 
+
+[00:57:53] Troy: See you
+
+guys. 
+
+Bye. 
+
+[00:57:55] Alex: Bye.
+
+
+

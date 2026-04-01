@@ -1,0 +1,963 @@
+PvA S3E149
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Troy: we can feel lucky that the interpersonal dynamic is so good here that we can, sometimes skate by with little preparation. Alex,
+
+tune in for, the camaraderie and banter.
+
+[00:00:12] Brian: this to me is much more like, kind of like, um, housewives, of media, you know, what are they called?The real housewives of media.
+
+[00:00:21] Alex: The Real Housewives of Media. That's what we're calling 
+
+[00:00:23] Troy: ​
+
+
+[00:00:33] Welcome
+---
+
+[00:00:33] Brian: welcome to people versus algorithms. I'm Brian Morrissey, joined as always by Alex Schleifer and Troy Young and
+
+We got a lot to discuss, even though we're going into Labor Day weekend and there's usually, it's usually a slow time for, for news. I, you know, as you guys know, I like to, I like to focus on narratives, and I think I have sensed that the narrative has been slowly changing, in, in all of this AI stuff.
+
+
+[00:01:02] AI & Coffee
+---
+
+[00:01:02] Brian: So, Nvidia had another great, earnings report. sales were up 56%, 
+
+[00:01:07] Troy: Not good enough. Apparently 
+
+[00:01:08] Brian: but not good enough. Sales being up 56% is not good enough. so they, they lost a couple points on their market cap. they're barely over, what, 4 trillion now. It's, it's, it's tough times at Nvidia, but I think behind this is, I think we're entering into this a little bit of a mini trough of disillusionment with ai. And, and it's where it matters, which is productivity, growth. And you know, businesses asking, what are we getting for all of this money we're spending on AI? Because all of the hyperventilation over AI overturning the economy and we shouldn't even worry about our 4 0 1 Ks 'cause we're not gonna have jobs or might not even exist in 15 years, is running up against reality which always happens in these booms, which generally infrastructure spending gets ahead of people being able to put it to productive use. And MIT had this viral study, I guess that claimed that 95% of gen generative AI projects at companies are failing. There's been other research by McKinsey, that backed this up. They said eight in 10 companies have generative AI projects, and that, just about the exact same amount said they're not having any impact whatsoever. this is when something like 61.9 billion, according to IDC, is being poured into generative AI by businesses. kind of an inevitable, phase. even Sam Altman ever, the Carnival Barker is looking to get ahead of this, in a little briefing he had with reporters. I think he took him out to dinner, which is always a nice thing to do with reporters. 
+
+[00:02:50] Alex: How did you feel about that? By the way? I was listening to the hard fork with, the guys, and they were talking about their dinner with Sam Altman. Something didn't feel right, but I'm not a reporter. How did that feel to you? Would you, would you, would you go for dinner? Would you get treated for 
+
+[00:03:02] Brian: would I, oh yeah, for sure.
+
+My role as a reporter was I would, I would take. Anything consumable like, you know, so like meals were okay.
+
+Yeah.
+
+I mean, maybe not per se, although I, I, like, I went to 21 ago, was it 21? I forget What was the fancy restaurant in, 
+
+[00:03:20] Troy: 11, 
+
+[00:03:21] Brian: in Union Square? Yeah. 
+
+[00:03:22] Troy: 11.
+
+medicine. 
+
+I had, I had the, I had the best, one of the best meals of my life at 11 Madison. It's like being served, you know, weirdly cooked carrots by fascists.
+
+[00:03:33] Brian: yeah, you get something on your plate and it like, doesn't look like much, but then unbelievable, flavors. So, um, I
+
+don't regret that one bit
+
+[00:03:42] Alex: I, I have more questions, but I don't think that's what the 
+
+[00:03:44] Troy: I'd rather stick my hands in, you know, a, a, a collective meal that we share together of, you know, humus and, you know, shish.
+
+[00:03:54] Brian: Ethiopian food's good for that. A lot of communal hand to hand.even Sam Altman was basically coming close to the B word, with the over exuberance in investing. this is a pattern in all of these booms. It happened with railroads, I think. I think we all dealt with it like in the.com era. 
+
+[00:04:16] Troy: The funny thing is the.com. Brian, I remember, you know, the internet is gonna remake how we shop and how we communicate, and it will restructure how we organize suburban communities because we will order shit online and it will be delivered to us in trucks and all of that. And all of it happened eventually, all of it happened.
+
+You can buy anything you want online. You can order Starbucks and go pick it up, but there's still a Starbucks and there's still a Walmart.
+
+[00:04:44] Brian: right.
+
+[00:04:45] Alex: Yeah.
+
+[00:04:45] Brian: There's always that lag. And that's what, that's what Gartner and their hype cycle had called the trough of disillusionment. And it is a very reliable, phenomenon. It always happens with, with these, and I don't know, am I wrong? I sense that it's happening right now. There's just the vibes are turning into where's the beef?
+
+And so you have these parallel realities where we still hear all about the comic book fantasies and they get more, they get more outlandish as we go on. I mean, I've been listening. You ever listened to D Darkish Patel's podcast? I think he's actually AI generated. 
+
+[00:05:23] Troy: you, you know, we wrote about him last week, Brian, or the week before. 
+
+[00:05:27] Brian: Did we? I don't even remember. 
+
+[00:05:28] Troy: part 
+
+[00:05:29] Alex: he's the
+
+hypermedia consumer,
+
+[00:05:30] Brian: it's very interesting. I, I, I had this theory that, Silicon Valley is creating these, these media personalities in like a lab somewhere. 
+
+[00:05:38] Troy: Well, he's a baby Tyler Cohen, right? Like he wants to know everything. He
+
+wants to be the world's greatest polymath.
+
+[00:05:45] Brian: Well, yeah, and I, I, I've always, I've long, held, prodigies with a little bit of disdain, so I, I have a, I have a bias against prodigies. 
+
+[00:05:55] Troy: Well, I almost pulled my car over when I was listening yesterday to diary of a CEO on the way out to shelter with this ex, what Chief Business Officer from Google Mo Goda, who, you know, talked about the coming AI singularity, where all the evil people were, be replaced by a kind of omniscient,powerful AI that governs all things and that we will live. After 15 years of turmoil in some kind of blissful communal AI state,
+
+[00:06:27] Brian: Wait, when does this begin? 
+
+[00:06:29] Troy: it, I think it'll take 15 or 20 years.
+
+[00:06:31] Brian: But, so it starts in 2027. 
+
+[00:06:33] Alex: You, you know what's funny with all that stuff is that they keep telling us that AI's gonna get smart enough to give us a bunch of answers, but we have a bunch of answers today and we can't just get our shit together. know, like
+
+we know vaccines work. But that's a thing. And like, it's not like an AI's gonna come in and change everybody's minds and we're gonna get to do that.
+
+but that 
+
+[00:06:53] Troy: people will be the problem.
+
+[00:06:55] Brian: they always are the problem.
+
+[00:06:56] Alex: I think if I ask Chad GPT today, Hey, how do I solve, you know, Hey, how, how are ways to solve x and y issue? It'll come up with, you know, stop doing wars, give people healthcare. I don't know. There's a lot of ways to do things better. We still don't do them or we can never agree. So I don't think an AI is going to solve it, the
+
+God ai thing.
+
+[00:07:16] Troy: changes outside of maybe, you know, Apollo losing a couple of analysts to an AI modeling software package. I asked Brian about this today, like, where does it really start to rear its head?
+
+And 
+
+[00:07:29] Brian: We have 4.2% unemployment. Explain to me where we we're not growing that 
+
+[00:07:34] Troy: well, we would have robotic strawberry pickers, Brian.
+
+We would.
+
+have,
+
+you know, we would have self-driving semis. 
+
+We
+
+[00:07:44] Alex: know what I think is also happening, you know, what I think is, is happening I think like just to, to split up the, the conversation a little bit. There's that all that like a GI God AI shit conversation, which I think is like really only there to tickle the people talking about it and get investors excited.
+
+I actually feel like. The general population isn't very interested or even scared about this, that nobody wants to hear it. And I think as things are moving forward, they're noticing that it's going to be very, very hard and nearly maybe impossible to reach there. So, and then there's this other side, which is the productivity side, which we should be seeing productivity gains already with the tools that we already have.
+
+It's just, I think there's a, there's a slight in, there's like an integration problem. We don't quite know how these tool, integrate into, the
+
+[00:08:31] Troy: Well, the
+
+[00:08:31] Alex: 
+
+[00:08:31] Troy: best visual metaphor, Alex, was the Chinese robot Olympics watching the robots play soccer. you
+
+see that? 
+
+[00:08:42] Alex: Yeah. It's not Terminator yet.
+
+[00:08:43] Troy: They're not very good at it. 
+
+[00:08:46] Brian: Uh, they look like Americans playing soccer.
+
+[00:08:48] Troy: Uh, even, even worse. Yeah.
+
+[00:08:50] Alex: think 
+
+[00:08:50] Brian: I always notice that Europeans 
+
+keep the ball like on the ground at all times, and then when you see an American like passing the ball, it bounces a lot. That's it gives me no confidence
+
+[00:09:01] Alex: is very astute.But, you know, I look, I think robotics, robotics is potentially transformational and there have been lots of leaps and, you know, it's one of those things where it's gonna move slowly and potentially move fast. But, I, I think we have seen productivity gains in Silicon Valley, ironically.
+
+And it's not because I think AI has proven to be, particularly useful yet. It's because it's given companies ground cover to fire a bunch of managers. You know, 
+
+[00:09:30] Troy: that leads me to a Starbucks rant, Alex, which has become, which is really
+
+the most disgusting place on earth,
+
+[00:09:37] Brian: it's really expensive.
+
+[00:09:38] Troy: while I sat in one yesterday, waiting for my order of my disgusting breakfast sandwich. They absolutely don't know how to make food.
+
+[00:09:46] Brian: They should, they shouldn't
+
+[00:09:47] Troy: you know what? Like, listen, I've gone on, I've gone public, I've gone on the record before
+
+with the fact that an Egg McMuffin is a good product and it's still prepared.
+
+You know, seemingly on the
+
+[00:09:59] Alex: it is better than the Starbucks one. I'll 
+
+[00:10:01] Troy: the Starbucks, there's three of them. They're disgusting.
+
+[00:10:04] Brian: it's like airline food. 
+
+[00:10:05] Troy: watching these
+
+young people make. The drinks that America wants to consume. Like all now we're in pumpkin spice season. just like goo and stuff coming outta pumps and all the crap that they put in there and whipped cream on the top, like whatever happened to just getting a coffee. But like if AI is gonna be fully realized, Brian, A, a Starbucks becomes a giant dispenser, like a robotic dispenser.
+
+It has to, 
+
+but I don't want that. 
+
+[00:10:38] Alex: you don't even need a robot. I mean, okay. A couple of things on that, because we opened one of. Troy's extra tabs on our browser here, so audience keep track of We have multiple tabs open 
+
+[00:10:49] Brian: I was gonna open up. I was I was gonna do,
+
+I I was gonna segue that into my, you know, 
+
+little 
+
+[00:10:54] Troy: we rehearsed this 
+
+Alex, when 
+
+[00:10:56] Alex: Okay. Well, well, I 
+
+[00:10:57] Brian: do a Serbian
+
+coffee review,
+
+[00:10:59] Alex: why I also, I, I mean, I have a, I have an ink, I have a British coffee reveal. I, I, I realize something. I, first of all, Starbucks is in trouble. Luckin coffee. The Chinese brand is kinda starting to move into the US and they're like a no frills, like cheap coffee thing. And I think that's what most people want from a Starbucks.
+
+But, I noticed also like there's a, there's a difference between the way brands, the same brands have evolved in Europe and in America. Starbucks in America is where you go when there's nothing else, or you really need to take a shit, right? Like that's where you go star. Starbucks in Europe is still kind of a thing, and I think the European consumers maybe will complain more, but they're getting a way better deal than in, in the us.
+
+What. We're constantly being like the, the quality of the product's con constantly being reduced and we're just taking it like Starbucks has become a hellhole. And, and you know what? It doesn't even need to AI to be turned into,an automated coffee machine. When I went to, England, every gas station, they have a chain that called Costa, which is their local Starbucks.
+
+Every gas station has a Costa like you boop on a screen and a cup comes out, tastes exactly the fucking same
+
+because it's just an automated espresso machine.
+
+'cause like it or not, you know, 
+
+[00:12:09] Troy: Did you take his shit there? 
+
+[00:12:11] Alex: no, I actually went in, you know, I think in it's, it's actually way easier in Europe to find, , bathrooms.
+
+But honestly, like why do you go to Starbucks? They're, they're trying to refresh that brand and turn it into a neighborhood coffee shop. And the thing is that people want just a neighborhood coffee 
+
+[00:12:25] Brian: They have a beautiful Starbucks in Italy. And my theory about it, I went by a beautiful one in, in Rome, and I think they have to up their game
+
+because, you know, they're supposedly an Italian quote unquote, style, coffee shop. And so they can't roll out, you know, the Union Square Starbucks 
+
+[00:12:42] Troy: well they have that premium brand, Brian, that they've released in Big.
+
+Yeah, they have one in Shanghai. That's extraordinary. 
+
+[00:12:50] Brian: one in Tokyo that is a temple. It's literally a
+
+[00:12:53] Alex: I think every American should travel and then realize how differently we're being treated here by the same brands in Europe. Like, you go to McDonald's in Austria and you know, you want to dress up for it. Like it's, it's,
+
+[00:13:06] Brian: Oh yeah. 
+
+[00:13:08] Alex: and here and here, it kind of smells weird. you know, you're not sure what's going on. 
+
+[00:13:12] Brian: funny you say that. 'cause the McDonald's, in Belgrade is like the McDonald's there are like, are lovely,
+
+you know, they, they're interesting architecturally. and even
+
+the Starbucks there, interestingly, they, the star, I like the Starbucks there because they do it in Relic and Starbucks and Relic.
+
+The, the brand is, is gives it a little, 
+
+[00:13:32] Alex: Yeah, a little something. Well,
+
+I, I think the, the unification of everything we get in the us, everything that scales is maybe, an education, right? Because I don't, I think we get a lot of great new things, but they always turn, they always get worse. Like they always get worse over time.
+
+[00:13:49] Brian: Can I do my quick Serbian Serbian coffee review? So when I, I don't, I don't like Italian coffee personally, but when I go to, to Serbia, they have this thing called Dome Cho, which is like the, like h like, you know, like domestic, like house, like coffee, but it's their like Turkish coffee, which they
+
+don't call Turkish coffee for,
+
+for obvious reasons.
+
+But the Turks, you know, used to roll over, Serbia for, for centuries, and they left behind kebabs, which are now Shavai, which is like the buffalo wing of the Balkans, but also Doha. And it is a, I used to find this, offensive, but I really got into extremely strong cup of coffee. The grounds are in it, so you
+
+can't get too aggressive with it.
+
+It's gritty. It is a, it will wake you up
+
+[00:14:41] Alex: Did
+
+they read your future? You flip the, you can, you flip the cup around and all the grit kind of pours down it, and then you read somebody's future from it. 
+
+[00:14:50] Brian: no, just a, a grim faced waiter 
+
+[00:14:52] Alex: That entire neck of the woods is great because wherever you go, you just say whatever the country is coffee and you get yourself a Turkish coffee.
+
+You just never say Turkish unless you're 
+
+[00:15:01] Brian: You just don't say the Turkish part. And then they, they sort of deny that. They just rebrand it.
+
+okay, so, can we move on to Rebrands real quick?
+
+[00:15:09] Alex: Sure.
+
+[00:15:10] Brian: there's no segue here. you know, there was, did you see the, this is 
+
+[00:15:14] Troy: Did we dispense with the AI hype segment of the show?
+
+Are we done? 
+
+[00:15:19] Alex: I mean, you, we open up so many tabs. I don't even know where that tab is anymore. 
+
+[00:15:23] Brian: yeah. Do, do you, 
+
+[00:15:24] Alex: just, just, just, just, just to wrap that up. it was, it was striking how Sam Altman downplayed, DEI, hype after chat GPT came out. I think, the, the
+
+GPI, the GGPT five came out, I think a lot of that kind of bravado comes out when you need a bunch of money.
+
+Just some information I had, I was invited to maybe participate,at $300 billion a week later, it moved up to 500 billions. I think that's the numbers that they shared, and I just got invited to participate in.what is the other one? Anthropic at one $170 billion. And all of these places are having no problem raising money.
+
+So I think they don't even need the hyper hyperbole anymore. That's what's happening. You know what I mean? 
+
+[00:16:10] Brian: I didn't get, I didn't get these invitations.
+
+[00:16:12] Alex: you didn't, oh, you're not on the, you're not on the right WhatsApp group. no, we just talk about it at the, at the club. but, but, but, but it just shows like, you know, there's, there's a bunch of these companies able to raise a bunch of money.
+
+There's all this kind of secondary influx of money that's feeding these startups that are all kind of buying services or product from the NVIDIAs and the open ais And, and it does feel like it does a, feel like a bubble. B feels like also they're trying to, some people are trying to make it a soft landing where the, I think we're gonna see the a GI talk like kind of fade and at some point they're gonna go A GI.
+
+What? No, no, no. This is just about automating starbuckses, you know? 
+
+[00:16:56] Brian: Yeah. Yeah.
+
+[00:16:57] Alex: Yeah. You know, so 
+
+[00:16:59] Brian: The B2B 
+
+SaaS is gonna 
+
+go, go to 
+
+[00:17:00] Alex: money is.there, there's also an adoption problem where people have adopted, you know, obviously chat, GPT, you know, 700 million users, incredible while traveling, people adopted in their daily lives.
+
+People aren't adopting it as quickly in their work, for, for various reasons. and it feels a little bit like the first PCs at, at work where, where companies really had to force people to use them. And so now they're, you know, we're getting news that like, you know, companies are, are asking their employees to report in as to what they've.
+
+Done with ai. So they're getting a little desperate, like lots of companies in Silicon Valley doing that.
+
+[00:17:34] Brian: Yeah. When you look at that MIT study and the other studies and you dig into it just like one tab, you, the, the biggest hindrances are human at the end of the day and, and resistance from people for obvious reasons. but also just organizational, you know, companies are disorganized just by, by
+
+[00:17:56] Alex: Companies are, people are, and, and new to and also like, I think it's, people are the problem in both ways. Some people just don't want to use it. I think there's a general, you know, disgust with it sometimes to generate certain types of tasks. But on the other side, uh, it sounds like in, in, I think some research that some engineers get are, are very optimistic about it and they thought they would, they did it 20% faster, but actually research shows that it was 20% slower.
+
+It's just that they didn't 
+
+[00:18:21] Troy: Well, I think we'll see a kind of social bifurcation where on one side we do have sort of guitar strumming, kind of hippie like creatures making coffee by hand, you know, around a fire, singing folk songs, talking about the beauty of interpersonal relations. And on the other side, chip enhanced,you know, kind of techno, techno humans that, that, that pay fey to the God of ai,
+
+that, look for,a way off of earth and,the, the rise of super intelligence that makes society governable governable.
+
+[00:18:58] Brian: Which direction will you go? 
+
+[00:19:00] Troy: I think I'm gonna hang by the campfire. To be honest. I
+
+didn't, I, you know, I, but I'll probably have a, you
+
+[00:19:06] Brian: I
+
+you'll have one foot in both 
+
+[00:19:07] Troy: yeah. I, I think I'll, I'll do a little both. I like tech, you know.
+
+[00:19:11] Alex: Troy enjoys a barista that acts like he's better than him. 
+
+[00:19:16] Brian: You gotta, you gotta watch out for the Australian coffee places. They're real coffee snobs. 
+
+[00:19:21] Troy: But, and they're good. They're good at it.
+
+A flat white. A flat white in Sydney is, is, high 
+
+[00:19:26] Alex: Oh yeah. I agree with, John Cena has a whole little YouTube video of how a flat white in, in Australia is like the best flat white you can get.
+
+[00:19:33] Brian: Oh,
+
+[00:19:33] Alex: okay, I'm gonna close, I'm gonna close this tab now. I had a seen a tab open, 
+
+[00:19:37] Troy: Okay. Brian, over to you. Over to you.
+
+
+[00:19:39] Re-brands
+---
+
+[00:19:39] Brian: there's, there's no segue to this, but, have you guys been, keeping tabs on the Cracker Barrel? in,
+
+bro,
+
+they changed their logo. I always, I am a sucker for logo changes, rebrands, because they're always divisive and they're perfect summer stories. If you wanna drop one of these in like August, get a lot of people upset.
+
+People get upset when logos get changed. cracker Barrel changed. This is part of an overhaul. I honestly did not know Cracker Barrel still existed, and I've never set foot in a Cracker Barrel in my life. I don't know if you guys have, anyway, they had an old timey logo,featuring, this. kind of old time guy in there.
+
+And it's a, it's a brand that I guess some people feel very strong about. They did a very bland logo that immediately became seized upon by like the alt-right as, being a woke logo, I guess. they were, they're looking to modernize the menu spruce up the store. Maybe they had in some sort of like, pride day or something, in the office. Trump weighed in, actually, he got involved in this. He said that they could use the negative, press to their advantage if they acted quickly. And you know what, they followed the guy's advice and they rolled back the logo, change, their stock had dropped 12% on this thing. And, then it, it bumped back up, 3%.
+
+kind of amazing that these rebrands immediately become. Political. I don't, it's, I always looked, I always looked to scance at the idea that CMOs were being brave, but maybe they are being brave these days because you make any change to one of these brands, all of a sudden you're gonna get accused to being like too woke. you guys have been part of Rebrands, right? Alex, were you part of the Airbnb logo change that people 
+
+said, 
+
+that looked like a vagina.
+
+[00:21:36] Alex: Yeah, I just, I just joined, as it was happening. I became kind of the face of a lot of the design stuff there, so I, I got the brunt of like, the testicle jokes and the tits. But, I mean, no, no rebrands ever easy. This is a 
+
+[00:21:50] Troy: I
+
+want a metaphor for a nice place to stay of, you know, reasonable. 
+
+[00:21:56] Alex: and it, it's, you know, whoever looked at it would see what they want. It, it was kind of like a mirror. I I, I think the Cracker Barrel look, the thing is like the Cracker Barrel logo, it's actually not bad. Like technically the way they kind of managed to carry over.
+
+No, no, the new, the new logo as a transition, if you're going to do a change like that, it's not, it's, you know, technically pretty good.
+
+and it would, it would've modernized it. And it's the type of thing that Olive Garden did, you know, just a little while ago. and nobody complained about that, but apparently the old man hang out like nobody would in, in today's world, it's very hard to keep a logo that is so complicated, just from technical point of view.
+
+it just shows that you can turn anything into a thing, right? Like 
+
+[00:22:38] Brian: yeah. Content. 
+
+[00:22:40] Alex: and it's that, that outright, grievance machine is really, really kind of like activated and ready to go whenever something like that happens. So 
+
+[00:22:48] Brian: guy 
+
+weirdly named, no Relation. Robbie Starbuck, who,
+
+like, it's his entire career
+
+is seemingly, is to start these, religious wars over these little corporate marketing things. Strange
+
+way to spend your time.
+
+[00:23:06] Troy: Yeah. But, but underneath of it all, gentlemen, it, I have been to a Cracker Barrel and it has
+
+a special place in, in our, family's road trips.
+
+And I Like the breakfast and
+
+I like, well, you go there for breakfast. And I like the little store that's there that has the little junk peg games and little fun family stuff.
+
+[00:23:26] Alex: wait, it says a store. Yeah. Tell us because you've been invited into one. These are your people. So what do you. 
+
+[00:23:31] Brian: I I did not 
+
+[00:23:32] Troy: it's an old timey, it's an old timey kind of diner place that's meant to, you know, feel nostalgic and it has a little store that you can go, you know, buy little trinkets in. It's like a souped up gas station store. And they, you know, grew roadsides next to places where you get gas and kind of grew with the, you know, with interstate travel and, are beloved by many and feel like, you know, you're going somewhere that had, that was, you know, the, the sort of anti-fat food place and that it felt old and traditional and all of that, and that's what they were marketing.
+
+So I don't really understand why they want to turn it into something that feels like a. You know, like a, a sort of more clinical, you know, EE garden kind of modern,
+
+you know, what do they call those? fast serve restaurant, that category, that
+
+Fast casual. rather that, that, that dominates, you know, like suburban neighborhoods. and so to me, the brand, the nostalgia is, is this sort of anchor in the brand. So why
+
+you would dispense what? That makes no sense to me. And I, I, I, I don't know. I think that they were, you know, the obvious observation is that, you know, there was too many old people coming, not enough youngs, and they wanted to make it feel more contemporary. So they, they sharpened it up a bit and they, that was reflected in the design of the restaurants and all that. And I suspect that that's not why people go there. 
+
+[00:25:04] Alex: I don't think people were complaining about the marketing strategy, but that's insightful. I, I don't dis I don't disagree with you, but, it just, you know, after the Sydney Sweeney thing and this, it's just like, it's impo, it's an, I don't, I wouldn't want to be in marketing.
+
+You 
+
+[00:25:17] Brian: Yeah,
+
+maybe they are brave. I have to take back my whole like shtick about.
+
+[00:25:21] Alex: they deserve, they deserve to spend a week in can, not really doing anything
+
+they do 
+
+[00:25:29] Brian: all
+
+right. I apologize 
+
+[00:25:30] Troy: I mean, I was more put off by the knuckleheads over at, M-S-N-B-C talking about their rebrand than the 
+
+[00:25:38] Brian: They're Ms. Now. Ms Now
+
+[00:25:40] Troy: Ms. Now, but like you, you, you kind of add insult to injury where you have that new mark combined with I dunno, the, just that, that, that cable news feels so outta step with, with how we consume now and to have them talking.
+
+But did you know that Ms, the MS referred to Microsoft? Like what, what are you talking about? Of course, like we knew that, or, or we didn't know that, but like the wom the woman from Morning Joe was like, I did not know that. 
+
+which is is surprising
+
+[00:26:14] Alex: That makes it, yeah, that makes, yeah, that makes us, that makes us trust their judgment when reporting the fucking news. it, it, it, but it's 
+
+[00:26:21] Troy: Is there anybody
+
+more insufferable than, 
+
+than than Joe Morning Joe? I mean, come on. 
+
+[00:26:25] Alex: yeah. 
+
+Type M. Type MS MS now into a browser, right? And it takes you to a Chinese holding page for the domain. Like it's, it's, it's complete amateur.
+
+It feels like, a, like a kind of like a mark of shame. Like somebody's punishing them. 
+
+[00:26:39] Troy: Yeah. 
+
+[00:26:40] Brian: have to do this. but a serious question, is there a way to do this without igniting ire? I just have ne I never see anyone,
+
+[00:26:47] Alex: Never. No,
+
+No, no, Never. But there's a ways to do it where you can see as a professional, like, where you can see this is going to blow over and in the end everybody's going to love it or be excited about it. 
+
+[00:27:00] Brian: Okay. So give me a recent rebrand that you as a professional, thought this was elegantly done. 
+
+[00:27:08] Alex: I think it doesn't even need to be elegantly done. I just think it needs a commitment. And I think, even though I was, you know, poo-pooing the strategy, like metas rebrand. People have moved away from thi that stuck. People have moved away from Facebook. The name is broad enough for, it's even kind of like being moved away from the metaverse analogy and now meta's a thing.
+
+and I feel that it's, it's, it's, it's very feasible to, to do that. do you have any others? Troy?
+
+[00:27:36] Troy: Oh, I was just thinking about that. what are the big brands in my life that, 
+
+[00:27:40] Brian: X. 
+
+[00:27:41] Alex: Oh
+
+[00:27:42] Troy: X is a good example. Yeah.
+
+[00:27:44] Alex: really?
+
+[00:27:45] Brian: It's worked. It's worked. I think people call it X now. 
+
+[00:27:48] Alex: Yeah.
+
+[00:27:48] Troy: How about the Washington Bullets To the Washington 
+
+Wizards? 
+
+[00:27:53] Brian: back.
+
+That was a terrible rebrand. 
+
+[00:27:56] Alex: I mean, sports, sports fans are just the worst. But yeah, if you get embroiled into political debate, the problem now is that it gets amplified right to the top. Right. And that's, that's the other, maybe you want that, maybe, I mean, maybe some, some brave CMOs will do stuff that's essentially done to piss 
+
+
+[00:28:13] Decline Of Cultural Criticism
+---
+
+[00:28:13] Brian: Well, this brings me to the, the, the idea that we are all critics now. Like we're the, the masses are critics. We're in a populist era, and I think we're seeing a continuation of the decline of cultural criticism. I know, Troy, this is an issue near and dear to your heart, so I want to, I wanna give it over to you.
+
+[00:28:37] Troy: I noticed that there were a few articles this week on. The sort of changes in the, the, the landscape of cultural criticism and they were the guardian writing about how the New York Times reassigned, people on the cultural bench to do other things. How, the Chica, is it the Chicago Times?
+
+Brian, they killed their movie critic.
+
+[00:29:05] Brian: Not literally. Right.
+
+[00:29:07] Alex: Oh, they, yeah, it was a public.
+
+[00:29:09] Brian: B. Can't do that. 
+
+[00:29:10] Troy: it was the, this great piece in the New Yorker about how,music criticism had become softer, highlighting, you know, how pitch the normally stingy and now beaten down Pitchfork had. you know, started to hand out higher rankings, their infamous decimal system.
+
+And, and I'll come back to that in a second. and you know, they, I remember there was a, a, a famous kind of pitchfork review that set the tone in 2006 for the site where, they gave, this band jet, they had an album called Shine On. Instead of a written review, they gave it a 0.0 and embedded a video of a champion, of a chimpanzee urinating on itself. And, it became part of the kind of pitchfork ethos where, you know, criticism is performance and that's kind of, you know, what, what, what made that brand. But, you know, I was just thinking about it 'cause I had, I read reviews on Pitchfork, but I skim them and I find them useful. Navigation still to this day. And, I had found, a, a review of an album from a band called Water From Your Eyes, a band that I didn't know about and was, kind of delighted to, to, to, to read that. It, it, it, the, the review was, you know, very Pitchfork esque and they gave it an 8.3. So there's no friction in sampling music. So a music review is like, yeah, read a couple of sentences.
+
+I don't need a thousand words. I'll go over to, you know, Spotify or wherever I get my music from and, and sample the album. And, and that's enough. And it made me think of how I use reviews really. And, I find them, you know, useful in some categories. Like, I like to read a food review on Eater or infatuation, or. Even a longer one if it's well written on the New York Times. 'cause I'll go, you know, I'll check the restaurant out. I don't read a lot of, you know, film criticism, although I'll look at the short ones, but it did remind me of, you know, the Great New Yorker, film reviewer, Pauline Kale. And I went back and looked at some of her reviews and they were, you know, rewarding in and of themselves. She did this one for The Godfather that feels, you know, shockingly current, in how it characterizes, the, the, the kind of, mob modification of the US economy. And now we see that manifest in government. But, you know, mostly reviews have been outsourced to the commons. Places like Letterboxed or, you know, some dude's review on TikTok, uh, or obviously a Rotten Tomato score that shows up in a Google search. And,you know, long form professional, you know, criticism, you know, feels like, I don't know, falconry, it's like out at, you know, it's, it's not, not part of how we, how we operate now, but the one thing I do think we'll never die is the sort of profile review. And there, you know, I mean, it's just sort of like, when I think of these things, it's sort of like, how would I, you know, apply a narrative to my journey this week and, you know, things that I read or stumbled upon. And there was a really brilliant. Profile of Mc DiMarco, who's sort of, you know, singular in his ind Indianness and is, you know, grew up in Edmonton and, you know, I always like to, to, to, to, favor, my Canadian, you know, cultural icons, of which he is definitely one. And it was a review, or it was a profile of him moving to the San Juan Islands from Los Angeles and kind of,living a little bit kind of off the land there.
+
+And it really helped me understand who he is and what he represents and why he is so singular, unique in a singular way as an artist. And he has a new album this week called Guitar. so I don't know. I, I think that in, you know, in some, I do appreciate something that's, that's well crafted, but the, the, the, the category is definitely, uh, no longer.
+
+[00:33:18] Brian: Yeah,
+
+I mean this is the decline of institutions and gatekeepers just writ small, you know, isn't it? to me it's been going on really the advent of algorithms did away with the need for this kind of gatekeeping. I think we've discussed this before. I feel like there's a set of people who are annoyed by this because they put in the work and now you don't have to put in the work. Like you don't have to put in the work. You just have, you let Spotify do, do the hard work. You let the algorithms do the hard work. 
+
+[00:33:50] Alex: it's funny because these are all, I think, behaviors that used to be, normal for people who were extremely online 10 years ago. I mean, which I count myself one, you know, like you'd check on Reddit and or you'd, use some tools that I did recommendations. And a lot of these things have just become really commoditized, right?
+
+Like Spotify and Apple Music do a decent job as at recommending music. Now, you know, it does keep you kind of isolated from new things. But then TikTok. Even YouTube where you have Antony Fantano and stuff like that. You have, it's, it's, it's, it can be a pretty good business if you have like your own one, 2 million subscribers.
+
+You listen to record, you say what you think about them, you get your audience, but 
+
+[00:34:30] Troy: He's
+
+made a business out of reviewing music right
+
+[00:34:33] Alex: yeah, exactly. And he's a personality and, and it, he just needs a webcam, right? Like, it's not a, I find the idea of like paying staff to write reviews in a magazine is, has seemed crazy to me for the past 10 years.
+
+and then even with restaurant, there's certain products that I will read reviews from. They're usually like higher price points, like a video game, which is 50 bucks or something like that. but with ai, like, I even noticed that the restaurant reviews, like I, I just traveled and used chat GPT nearly exclusively just telling me like, I'm in this neighborhood.
+
+Give me the top five restaurants that are like highly rated but not like, you know, not like, kind of ruined by tourists or whatever that is. 
+
+[00:35:12] Brian: Yeah, you gotta watch for those TikTok places, they're the
+
+[00:35:15] Alex: Exactly. And, and so you can filter, you know, chat, GPT is the ultimate algorithm at your fingertips. And I, you know, I got quotes from like, here's what the, uh, eater says, and here's what, I never went to these websites.
+
+so they're doing the work for free. and, and Reddit is doing the work for free. So there's so much access to this stuff. 
+
+[00:35:35] Brian: But I think that's 
+
+[00:35:36] Alex: like I
+
+feel more educated than ever, 
+
+[00:35:38] Brian: the new gatekeeping is like, is the Google doc. You get the Google Doc someone puts together, which is their well curated list that they, they just share with like, close, close friends. And like those kind of recommendations are more, and maybe that's different than criticism, but I think it's
+
+all in the same sort of milieu because you're, unless you're just enjoying look with criticism of cultural criticism, it is a form, it's an art form in some ways.
+
+Like I would read the, the Anthony Lane, you know, film, criticism because like he's a great writer and he has flair, more, more so than like for the utility of it.
+
+[00:36:17] Alex: Yeah, I mean, I've seen, uh, some, movie reviewers just like separate themselves from their, their publication and just start doing their own YouTube channels where they do these little 10 minute movie reviews, which I listen to. And I think you can kind of survive as an individual if you kind of, if you've built up a reputation.
+
+But there, I don't think there's a media business in it, per se.
+
+
+[00:36:39] Apps Are Back
+---
+
+[00:36:39] Brian: let's talk about the, the, the sort of shifting nature of the web. Something we always talk about, and apps are back in some ways. feel as
+
+well, I feel a shift when it comes to like, you know, the, the miniature industry that is known as publishing. obviously the open web is if not dead, it's dying.
+
+And for a lot of publishers, apps had a moment, but the problem is their, their business models were so premised on, on scale and getting people to webpages that they, they chose the open web over apps and now the game has completely changed. It's all about direct connections. It's about smaller, more durable audiences and yeah, newsletters, et cetera.
+
+That'll get you data. But the app. Is kind of back in some ways. I mean, look at the New York Times app. It's a, it's a, it is a good product. and we'll talk about the times, a little bit, but Troy, what do you, what do you see going on with apps? Are apps back. 
+
+[00:37:38] Troy: I think that. it was, it was almost impossible for something as niche as a, say, a magazine media brand to create in the era of Google and Facebook,kind of traffic generation to make good app creation, profitable or worthwhile for the publisher.not only that, it presupposed, strength and connection and velocity of content that almost never existed, and it didn't really follow the behavior of the consumer.
+
+So people would, you know, create apps that were sort of an aggregation point for their content and no one would ever use it. And what the promise was however, was, the promise was real, which was, a closer to the metal experience that. Was more elegant. I feel like publishers were more restrained in their, you know, app experiences such that they weren't kind of littered with ads and, and, and kind of broken experiences in the same way the web was. apps handle video on audio much better, obviously, as they, and they also handle kind of, authenticated persistence and coherent ex experience better than the web does. And, but, you know, it, they never became a big part of the, the, the, the, the media, sort of experience outside of big news providers. And what's happened, I think is. Because the whole cable industry shifted to streaming apps became way more important, whether that was on your TV or on your phone or your computer, because that's how those experience, those media experiences are delivered. And you're right, Brian, like New York Times or ft.
+
+Or Wall Street Journal, I mean, I consume all of those, via apps.
+
+[00:39:33] Brian: Whoa. The fts app sucks, but go on.
+
+[00:39:36] Troy: I mean, I think it's better than the web experience. And so, the weird thing about apps though is that the ecosystem is controlled by two companies and they decide how revenue is split and they also decide who gets promoted. And so we've seen, you know, some consternation around that with Elon suing. Apple. his contention is that they are privileging open AI in their app store listings. and, you know, apps are really, really important to the biggest, most important utilities and experiences in our digital world. And that's, AI communications and
+
+[00:40:19] Alex: The, the funny thing is that the app Yeah. End games. And the funny thing and is that actually the app store is notoriously terrible at surfacing, at surfacing, you know, discovery for new apps. So the fact that he's suing them, saying that they have all that power is interesting. And also, I think it's because he didn't reach the top, you know, one or whatever when they released the New Rock.
+
+But Deep seek, managed to do it. I mean, it's interesting because, you know, you, you're still kind of paying the 30% tax on all apps, so it must be, their data must be showing that it's immensely valuable to have the app. And yet, it's, I think that's also being supported by the fact that I think, especially Apple, but Google in some ways is, you know, diminishing the capabilities of the browser.
+
+So the apps feel more, powerful. You know, a lot of these apps are essentially websites, you know, but just having the icon, the way the UI is built, the way it promotes and prioritizes what, what, you know, so-called native apps, essentially makes it better to, to shove a website into a deliverable app package than, than just a, than just a website.
+
+Because they make it so difficult to use the open web because they're incentivized. Right? Why wouldn't you? Right? The second you have the app installed, now you get 30% of every transaction. 
+
+[00:41:36] Brian: you know, I, I know it's, it's a discussion within sort of industry circles. It's a big,deal, but it hasn't faced really consumer, backlash. It hasn't hurt its brand. It's outrageous tax on these apps. I mean, the 30% take rate is just, it's obscene really. I mean, it's one thing I feel like anyone outside of Apple can be pissed off about together.
+
+[00:42:02] Troy: Yeah,
+
+[00:42:02] Alex: don't think consumers 
+
+[00:42:03] Troy: if, 
+
+if we were to break up anything, it would be their monopoly on that, 
+
+on that distribution point. I think that
+
+[00:42:10] Alex: But, 
+
+[00:42:10] Troy: extremely valuable.
+
+[00:42:11] Alex: but until very lately, you haven't been even you until very lately. with, with kind of some of the latest court rulings, you haven't even been able to say that there was another option.
+
+[00:42:21] Brian: Yeah. Well that's the, it's crazy. The Epic lawsuit is just that, I mean, like, it's hard. It, it's not, it's not hard to pick a side in that I feel like,uh, maybe I'm, I'm wrong. Most issues are not black and white. This one feels this. This actually, filtered down into the Substack world because Substack has mo, you know, they moved into this app and that's actually when I lo when I left Substack.
+
+'cause I saw the direction they were going,
+
+which was the same as any sort of platform and Lock-in comes after that. Then of course, they raised the big funding round and. Guess what, they are now taking, you know, apple subscriptions through Apple. The problem with that is not only do do you do you have the tax which they're passing on to the consumers.
+
+So you actually pay more for the, the app,through Apple. But you are, you're not able to keep your subscriber data. So the whole point of, of, of Substack was the idea that, you know, the creator in quotes, owns the sub, the subscriber relationship, and they were able to do that 'cause they're just a wrapper around Stripe. And with that portability gone, you know, now they can point the finger at Apple, but all of a sudden they have lock-in, with, with their, with their publishers, which is 
+
+[00:43:41] Troy: Y Yeah, I mean even more what, what a lot of this points back to, outside of the transactional subscription experience and the toll you're describing is the utter failure. Of the ad model, of the, the open web. And, you know, part of it is the, you know, I, I think what what is kind of true is that doing two things at once is kind of impossible for humans. And so, you know, advertising alongside content to me is, is a difficult proposition. At least magazines had sequential advertising, which I think worked far better where you would go page of content, page of advertising, page of content, page of advertising. But the, the. The display experience, you know, faced with eroding traffic and yield.
+
+All that's happened is even what I think of as sophisticated publishers that gave a shit, if briefly, about the consumer experience are littering the things with, you know, permanent banners at the bottom of the pages and floating video players. And, you know, the web is becoming, you know, it's been said many times, but it's just becoming unusable. And I think that sits in sharp contrast to the people that have, you know, a, a, a an app led subscription flywheel where you can have a decent media experience. And all it's gonna do is mean that there's a few winners and lots of junk on the web. and, and you get this kind of bifurcation where you have. You know, kinda something that looks like the old media world where you have an oligopoly of, of large media companies that can support a decent experience. And then you have Reddit on the other side, or YouTube that you know that are driven by individuals and that all of the websites that sit in the middle middle become this kind of giant trash heap
+
+and underneath of it all.
+
+It's that the paywall model, the web-based paywall and advertising model is shit, period. 
+
+[00:45:52] Alex: I
+
+mean the, the irony of it is though, that, that it's still, like the web is still a big part of the funnel to get you to download an app. You know, the, the actual internal app ecosystems. The app stores, the Google Play stores
+
+are really bad at discovery. They're, they're trying 
+
+[00:46:08] Troy: Yep. Well, discovery works on the web because of Google and because you have control of your experience. Ironically though, commerce works fine on the web. Alex like shop, a Shopify store on the web works just fine.
+
+[00:46:21] Alex: or they, they've solved the payment issue, right? Like you basically, you are 
+
+[00:46:25] Troy: Yeah. and they're not trying to jam advertising in the side door while they're presenting content to you in the front door.
+
+[00:46:31] Alex: the media's web product has, has suffered really rapid and ification that has made it completely unusable. And I think, you know, it's, that, that's absolutely true. What I wonder is like, why hasn't there been a Shopify for, for media where I can just, part, part of it is, is friction is always 
+
+[00:46:50] Troy: man, there has, it's called Substack. It's 
+
+[00:46:52] Alex: it, but they're terrible. They, they're alter. Shopify is an incredible experience. Shopify is
+
+[00:46:57] Brian: stand Anytime you put an Apple News link, I have to then Google it. 
+
+[00:47:01] Alex: That sucks. Yeah. But, but what I'm saying is if you look at, and 
+
+I've 
+
+[00:47:04] Troy: you hear what he just said Alex, don't send Apple News links in the chat anymore
+
+[00:47:10] Brian: don't, it's a 
+
+[00:47:11] Alex: aren't we all on? Aren't we all like on iOS devices? 
+
+[00:47:15] Troy: kinds of assumptions,
+
+Alex, which is,
+
+to say, by the way, I'm gonna show up as a green bubble in the coming months, 
+
+[00:47:22] Brian: Oh, you're going to 
+
+[00:47:23] Alex: that'll last, that'll last, Three, three weeks.
+
+[00:47:25] Troy: well, that new number 10, you know the Pixel
+
+[00:47:28] Alex: I got it. I got it. It looks great. It'll last three weeks, Troy. Oh, what's the over under? Like there's no way you'll last longer than 
+
+[00:47:35] Troy: I can zoom in a hundred 
+
+x. 
+
+[00:47:37] Alex: sure, 
+
+[00:47:38] Brian: you'll get less advertising because the 
+
+algorithms say that you're less, less 
+
+[00:47:42] Alex: Uh,let's let before we open another tab on that a hundred x zoom, which is interesting.
+
+just be before that. There is no Shopify for media and we can say Patreon is a thing and substack is a thing. I think both of these companies have completely shut the bet on delivering products that are actually useful. Payment is a, is a pain in the ass on Patreon. Patreon is a ter terrible video experience.
+
+Substack, we're trying to push our, our podcast through that all their tools are severely lacking, everything that they're adding and things that we don't want. Meanwhile, Shopify is a great product, great ux, consumers and store owners love it. Like it's just, we don't have the right product in media.
+
+Like, like I
+
+Sub Substack and Patreon are products that like feel 10 years behind at this stage. 
+
+[00:48:29] Brian: I, I think in some ways it's because the market, I'm making this up as I go along, but I think the, because of the size of the market, everyone wants to be Amazon versus Shopify. You know, because like you have to take more to, and that's why it was inevitable that Substack would go in this direction to be more like Amazon than to be Shopify because it, the models don't work.
+
+Like if you're venture funded 
+
+[00:48:54] Alex: I mean, sh Yeah. At the same time I kind of wish we had more Shopifys, you know? I mean, I think, I think they're doing stuff that is actually genuinely supportive of small businesses and better for the web. I'm sure there's issues, but you know, 
+
+[00:49:06] Brian: and they haven't tried to take control of the relationship, they haven't, you're, you're, you're transacting with the merchant and Shopify is, is powering that. 
+
+But that's great. It's like Stripe. I love Stripe because like nobody knows, regular people don't even know Stripe. And like it's what one, 2% of world GDP, great.
+
+Do the 
+
+[00:49:28] Alex: Yeah, absolutely. 
+
+Absolutely.
+
+But I think there's
+
+room, if anybody wants to, raise some money to, uh, start building the Shopify for media. I think there's, there's room. can I just talk about, you're talking about the Google Pixel 10 being able to zoom a hundred times a hundred x.
+
+[00:49:45] Troy: So Google announced a, a phone, which allows you to zoom in a hundred times. It is actually physically impossible to do that with the optics. So what you're, what you're doing is actually you're zooming in a hundred times. It looks very pixelated what, what you're actually shooting.
+
+[00:49:59] Alex: But then they use generative AI to guess the picture that you're taking. So you're not zooming a hundred percent, you're, you're zooming a hundred percent and then generating. An image that you can call a photo and because they know that, that that photo isn't real. I mean, no photo is real anymore.
+
+Everything's being touched by ai. but that, that photo is, is nearly fully generated to the point that if there's a human being, it will avoid scaling that human being up. You will, that human being will remain blurry because they might make it look like somebody else. and I think we're going to be fed a lot of, like, the, the, the, the camera on the phone is the kind of the, the Trojan horse to get us to get used to generative images.
+
+People that are completely against generative art are generating images every day. No photo you're taking is actually the moment anymore.
+
+[00:50:48] Troy: Good 
+
+[00:50:49] Alex: Buy a, buy a hassle, 
+
+[00:50:50] Brian: Everything is distortion. Fantastic.
+
+
+[00:50:54] NYT Activist Investor
+---
+
+[00:50:54] Brian: why don't you summarize your take on the activist investor at the New
+
+Okay. Well, the New York Times has an act, a new activist investor for some reason, they, they attract activist investor, and this is an alumni of a previous, activist investor campaign against them from Value Act, value Act, few years back. Coincidentally, right when the New York Times was like taking off.
+
+it is the exception to the norm in the media industry and it's actually successful business. this is from five span. I mean, it's two people. Let's be real here. They're activist investors. They're, they're claiming that, the New York Times is not a go figure using, leaning into AI enough, and that they also, should be doing more also go figure short form video, et cetera.
+
+these are, these are, more, I, I, I look at this, look, this is, this is a tough business, but I, I'm sorry. I, I find all of this kind of annoying and condescending, to be honest with you. ab I wish AB was here because he took it more seriously than, than than I do. Troy, do you take this seriously? 
+
+[00:52:03] Troy: no,
+
+listen, if you're gonna take over the New York Times, don't do it on account of, them not using ai. I have three thoughts on if you're gonna take it over. Basically, don't. Do it on account of them not running their business properly by leveraging technology to grow the subscription base or do more video or transition from, you know, one medium text to, to, to, to one that the kids like. you do it because you want to hijack a, you know, woke institution and, you know, play with what really amounts to be the most powerful kind of media institution on, you know, in, in the liberal world. And, you know, that would, that would be fun to see personally. I'd like to see that. and I would hope at the same time that they force them to be more economical in how they create content.
+
+Because the New York Times is, you know, abuses frequently commits abuses of article length and, and
+
+[00:53:11] Alex: I would say I would become an investor, uh, like an activist investor for that, just shorter 
+
+articles.
+
+[00:53:17] Troy: Shorter articles.
+
+[00:53:19] Alex: That's, that's 
+
+[00:53:20] Troy: You know, what if you just, you just, you know, you just kind of get 6% than 10% and your whole rationale is shorter articles. 
+
+[00:53:27] Brian: yeah. 
+
+Alex, sell this video game company for like a trillion dollars
+
+and then become that kind of activist
+
+[00:53:33] Troy: you know, the family has the, the, it's, it's a dual structure. The family controls the business, no one's gonna take it from them. yeah, I mean, it's, it's just, I, I think that if, if they succeed at running up the stock price by, you know, shining a light on. On, you know, on, on the attractiveness of the New York Times as one of, as a singular media entity in terms of its, kind of power in, in, you know, in in, in, in the political, its political, the political space, and as its potential to kind of grow, revenue per user because of, you know, that unique position that it occupies then, you know, maybe you can invest a bit of money, turn a trick, and make a bit of cash, so fine. But as something more profound than that, I think it's, it's not, not real,
+
+[00:54:25] Brian: I mean the, the New York Times has 11.3 million, 
+
+[00:54:29] Troy: it's real. I mean, It's 
+
+big, big,
+
+it, it's unique. It's unique.
+
+it's very successful. I, I'm sure. Yeah. I mean there's, there's, there's things that,Uh, they bridged in, they bridged into new media types really well, including audio really well. 
+
+[00:54:43] Brian: Yeah. 
+
+What happened to Viveka Ramis Swami's, hostile bid for, he was, he was being an activist investor with buzzfeed of all places. I dunno where that went.
+
+[00:54:54] Troy: Yeah, I dunno what
+
+[00:54:55] Alex: But do you think that this is like one of the, you know, the guys at a bar and I say, you know what, they, they, it's a good business, but it it, it could be a, a better business if only they did short form video and AI shit. Do you think it, it came out as that, or do you think that the strategy is kind of cover for some something else?
+
+Is that what you're saying?
+
+[00:55:13] Troy: I think you could see it as having more value. So you take a stock position, you build some energy around it and you know you can't take control of it, but you can make some money. Yeah.
+
+[00:55:22] Alex: But is it that energy? So I was having a kebab in San Francisco. I could overhear very loud, like two tech bros having a very loud conversation how one of them just came back from Bali and he knew exactly how they should fix their economy after a week there. You know, they should just, uh, you know, like kind of remo and reshift their blah blah, blah.
+
+And I was like, shit. Yeah. That's the energy here, right? You spend a week in Bali, the Somali, and now you 
+
+wanna 
+
+[00:55:48] Troy: hilarious.
+
+Yeah. That's hilarious.
+
+
+[00:55:54] Good Product
+---
+
+​
+
+[00:55:56] Troy: okay. Well, you know, I have a funny, good product and it's certainly not, Starbucks, that's for sure. But because I was waiting in Starbucks, the reason it's happened is I've been going to the physiotherapist. And, I haven't done it in years and I have two of my family members go to physio and they love going, one of my, my siblings has a PhD in physiotherapy of all things. So, I went because I've, like destroyed my two fingers playing soccer and they were dislocated and, I can't seem to get movement back in them. So, 
+
+[00:56:29] Alex: know, you're not meant to use your hands.
+
+[00:56:31] Troy: yeah. So I'm committed to, going to physio and I love going, I love going and I've been ordering all of these, therapy gadgets like this one that I have in my hand, which is a big rubber thing. 
+
+[00:56:46] Alex: Yeah. That looks like something else.
+
+Yeah, I, I think we're just gonna cut that without context and 
+
+[00:56:53] Troy: Yeah, but I've got, I've got the putty to work my hands. I have these things that straighten my fingers. I have all types of these rubber things. 
+
+Um, I've got these things that allow you, that my son uses to practice guitar or his to strengthen his guitar hand. And sitting there and sitting there, I, I, I go in, there's a robot receptionist, which I don't love, but it works. And I then get, passed to the back of the physio office. I sit down and I shoot the shit with the other people that are waiting on the physiotherapist. 'cause I'm a social guy and we, we talk about nothing. There's a TV playing above,where you sit and they've had prices right on for the last couple of, sessions. Prices Right. Reminded me that it is the highest form of native advertising. Ever invented, where you can promote, you know, a trip to Alaska on a cruise or a, a Mitsubishi car that just isn't moving off the lot. Or, you know, like a rice cooker. And, you can, you know, present it as a game and, you know, millions of Americans will watch it and get excited by it.
+
+Still to this day, it also is a reminder of the effectiveness of Ozempic, which I think, the host, you know, the host is Drew, drew Carey. 
+
+[00:58:15] Brian: He's skinny now.
+
+[00:58:16] Troy: He is super skinny now.
+
+Yeah, he's all zed up and, you know, it's fun to watch. I had a discussion with the guy next to me 'cause I thought they should put it on the Travel Channel or the Smithsonian channel. and he really liked prices, right? and then the attentive physiotherapist, you know, massage my hand and gave me some exercises and, and really helped me. And I, I, I'm grateful to them. Good product.
+
+[00:58:42] Alex: Nice.
+
+[00:58:43] Brian: On the ozempic thing. It is very strange when you see people you haven't seen like in a while who got on that and they're like,
+
+they're like shrunken versions of them. So they look completely,
+
+[00:58:55] Troy: I
+
+think I 
+
+might go
+
+back on it. I got, I, I went on it and I got a little skinnier. Now I porked up again. So I'm, I'm thinking of,
+
+[00:59:01] Alex: I tried it. I noticed that I was less anxious on it, and I think it's like I have kind of an addictive personality and maybe that it 
+
+[00:59:08] Troy: I have a drawer full of it at home. You should try it. I, next time you come by, Alex,
+
+[00:59:12] Alex: Well, where do you get it nowadays? Like every, everybody, it looks like the Ozempic company's been suing everyone. That's, 
+
+[00:59:18] Troy: I'm an investor in a company that sells this, so I get it 
+
+[00:59:22] Alex: hook.
+
+[00:59:22] Troy: Best friend price,
+
+[00:59:23] Alex: All right. Hook me up. 
+
+[00:59:24] Troy: but, but by the way, you can't take it without, without, clinical
+
+advice. Right? You 
+
+[00:59:29] Brian: we need, 
+
+[00:59:29] Alex: of course you can. I'm just, I'm kidding. I'm fine.
+
+[00:59:31] Troy: don't hand out ozempic to my friends. I just wanna. 
+
+[00:59:36] Brian: one travel note from, from me. I'm, I'm, I just came back from Belgrade yesterday. really interesting side effect in Belgrade is, you know, Serbia's not a place with a lot of migration. not a lot of people move to, to, to Serbia. but they had the numbers vary. They go from 40,000 to a hundred thousand Russians who moved to Belgrade, when, when the war in Ukraine started, they didn't want to get drafted, et cetera.
+
+And they settled in Belgrade. And, and they've had a major impact on the city because they don't have a lot of, of migrants and they don't have a lot of outside communities and they clump in certain areas. And there's this area dorsal, which is like the lower east side of, Belgrade. And they have their own like cafes and restaurants there.
+
+'cause these are all Russian hipsters and. They're very, they're very popular places because they're the one place in Belgrade you can go where smoking is not allowed. They don't let smoking happen inside. And they're very anti caffeine too. They have no caffeine and they're usually atta, there's usually yoga involved and they're
+
+very pet friendly. but they've, they've developed their own like parallel
+
+[01:00:44] Alex: Yeah. These
+
+people sound like they would've been unsuitable for fighting a war.
+
+[01:00:48] Brian: Right. No, that was the one. Serb said, well, 'cause like, you know, they're very like, you know, I said, well, how is it with the Russians, you know, being here and this, this Serbian was like, these are the wrong Russians. He's like, we, we like the Russians that are like, you know, the sort of like aggressive Russians where we got, we got the, we got the hipster Russians that want to be, DJs. but, they've, they've like doubled rents. I think that's been a big problem because these are moneyed Russians that have come in and so, with a little bit of friction there, but you have more non-smoking, places. 
+
+[01:01:21] Troy: Is that a good product or, I'm trying to just kind
+
+[01:01:24] Alex: good product.
+
+[01:01:25] Troy: Russians and Belgrade. That's a great one. That may be the best one we have yet. 
+
+[01:01:29] Brian: I went to a great,
+
+like 
+
+[01:01:30] Troy: You fucking criticize me for like bringing up a fig, which is a really wonderful product. You know, that, that, that, that, that, that grows, you know,
+
+with the hands and benevolence of
+
+nature, 
+
+and you bring 
+
+Russians in Belgrade.
+
+[01:01:43] Brian: yeah,
+
+no, I mean, look, I went to a great, great cocktail bar, a Russian cocktail bar. there, there was a dog running around. There usually is a dog running around somewhere.
+
+[01:01:52] Alex: this segment has stopped being relevant for people, for people listening for, for a while now, Troy. And I think we're just, we're just like living with it. I was going to recommend the, the British, west country countryside. It's beautiful. often overlooked, but it's a really nice thing about Europe 
+
+[01:02:11] Brian: Were you there with JD Vance? Was that where it was? The Cowa? I don't even know
+
+[01:02:14] Alex: Yeah, I, I, I, yeah,
+
+[01:02:15] Troy: He was part of, the JD Vance security detail.
+
+[01:02:18] Alex: I am. but honestly, I think, I think, you know, we, we keep saying how Europe's in trouble and it might be, but every time you go to Europe, like be, you know, you, you'll, you'll drive through and then you'll find this 15th century manner house that's been turned into a really tasteful, large with a gallery in it.
+
+Things are way cheaper than in California. The food was amazing. it's, it's a good life. You know, it's not bad. You, you can deal, you know, we had great weather. So, you know, one of the reasons I wouldn't live there is, is the rest of the time's probably not that nice. But,the quality of life in Europe remains really good.
+
+And I know that there are issues, but I think that there's some stuff from there that we could kind of import in at times. Just like good living, 
+
+[01:03:04] Troy: I've been debating spending more like a chunk of time there a year. no, like it's either Florida or Italy. 
+
+[01:03:11] Alex: is that there's,
+
+there's, there's definitely a contingent of wealthy Americans who say, living in America is great, but they travel to Europe for their vacations or for their healthcare. The amount of 
+
+[01:03:24] Brian: I, Hey, I engaged in some, I engaged in some, Serbian healthcare while I was there. 
+
+[01:03:30] Troy: but honestly, good, good healthcare. It's, it's amazing. Like the pri like I got blood work done and like, you know, this is, this is at a private clinic and it was like. It was like 40 bucks. An abdominal, like ultra ultrasound ultrasound is 40 bucks.
+
+[01:03:45] Alex: When we were in London, our kid had a rash and we asked the, the hotel if we could find a doctor. And I said, well, do you want them to come to the room? And we're like, okay, how much is that gonna cost? And they go like, oh, 150 pounds. I was like, Jesus Christ. How does that, how does that even work? How does that even happen?
+
+And, and I forgot. I, I, I, so, I don't know. I think as, as Europe is in decline, as I keep hearing, it's gonna be interesting how some of these things changed. There's definitely a lot of these social, support structures that are going to have to be 
+
+[01:04:17] Troy: We should also look at, we should also look at parts of British Columbia. Alex, like the San Juan Islands is a nice choice not 
+
+[01:04:24] Alex: yeah, Canada's Yeah, that's true. 
+
+[01:04:26] Troy: 
+
+[01:04:26] Brian: on that note, let's wrap it up. 
+
+
+[01:04:29] Outro
+---
+
+[01:04:29] Alex: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+[01:04:50] Troy: It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+
+

@@ -1,0 +1,1059 @@
+PvA S4E168
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian: do you know about the umati? 
+
+It's the term for, older Italian men who like to go and monitor the situation at construction sites with their arms held behind their back. 
+
+[00:00:12] Troy: Oh, I do that. I do that in my house.
+
+[00:00:14] Alex: that's been my entire working relationship with.
+
+[00:00:18] Troy: That's funny. How, how we doing, Alex? 
+
+[00:00:24] Brian: 
+
+[00:00:24] Troy: hold it. Oh, wait, wait, wait. I saw something new. Alex, you were cleaning your eves and you fell. Fell down. Why do you have
+
+[00:00:30] Alex: I was building a tree house got a little too brave and I fell nine feet onto my shoulder. 
+
+[00:00:38] Brian: Are you dislocated?
+
+[00:00:39] Alex: no, it's a fracture.
+
+[00:00:41] Brian: Oh, wow.
+
+Well, I'm glad that you are, on the mend. Alex, let's get started. 
+
+
+[00:00:46] Welcome
+---
+
+​
+
+[00:00:56] Brian: Welcome to People versus Algorithms.
+
+Show about detecting patterns in media technology, culture. Chris Aliza,
+
+[00:01:02] Troy: Number one podcast. Number one podcast in the
+
+[00:01:05] Brian: Number one in his queue. He said it's his new favorite podcast. former CNN, commentator. He's now, he's now feral. He's out on his own. He's one of the, he's one of the independent folks out there. Thank you. Thank you. Chris. I assume you're listening, but he said you liked it. Well probably never hear from him. Maybe he just does that direct. Uh, no, I think it was a genuine, compliment. So I, I appreciate those. I dunno if you guys do, but I do. we got a big storm coming here. This is very exciting. so those of you who are not in the face of, you're gonna hear everything about it because New Yorkers love nothing more than when a storm's gonna hit New York.
+
+I am monitoring the situation like an Elle old Italian man, checking out the construction site. This is the first storm I will have experienced since 2018. So I'm excited. I don't know what you do to prepare in New York
+
+City.
+
+[00:01:58] Alex: lived in Florida. Are storms like a regular fair in Florida?
+
+[00:02:03] Brian: Well, no, no. This first snowstorm No, no. The storm. The thing is, snowstorms are fun, right? Like hurricanes are terrifying. Like they rip your, 
+
+[00:02:12] Troy: Do you have, do you have cross country skis? I like the, the shots of people skiing in Manhattan.
+
+[00:02:18] Brian: No, I don't have cross country skis. 
+
+Um, I'm not a cross country ski guy.
+
+[00:02:22] Alex: I was there, during the first or whatever the first time it was called Snow Snowmageddon. I walked through the streets with, and they were empty. It was amazing. 
+
+[00:02:31] Brian: When was that? That was like early two thousands, right? There was some like 26 inch snowstorm that I
+
+[00:02:36] Alex: yeah, yeah. yeah. I walked to the sale office, Troy, back in
+
+[00:02:40] Troy: this you just you and your donkey,
+
+[00:02:43] Alex: Just me and my dog. Yeah. By the way, you keep telling people I'm c which I'm not. I just, I just wanted to make a correction. People are getting confused. I'm French. I, I lived in a lot of places, including Cyprus, 
+
+[00:02:55] Troy: or did you go to high school? You didn't go to high school. It, it's all about where you went to high school,
+
+[00:02:59] Brian: He did good. Alex dropped out in eighth grade. That's
+
+[00:03:03] Alex: went to high school in four countries. I went to high school in Jordan and Cyprus in Austria, and in and in France. Yeah.
+
+[00:03:10] Brian: were your parents arms dealers?
+
+[00:03:12] Troy: yes. Or drug dealers, one of the two.
+
+[00:03:14] Alex: it's never been proven.
+
+[00:03:17] Brian: anyway, I'm excited for the storm. reminds me of childhood going down the toboggan at, militia Hill Park. I don't think toboggans exist anymore. They were extremely dangerous, like hit a tree with them. so let's get started. We have a lot to, to discuss as they say. we had a media heavy episode last week, which I enjoyed.
+
+Sorry about that, Alex. So we got a return to AI Matters. now that Open AI is bringing ads to chat bt. but meanwhile, Claude Code, is the new hot viral AI thing. that is again, raising questions about the future of software development. We'll talk about that. I am, I'm, I'm monitoring this situation quite a bit.
+
+none of us are at AVAs. Troy, I think you are usually our planetary aary there, but you are not there, this year. That's fine. but I wanna talk about how much, you know, Trump has really shifted how world leaders communicate. and I wanna look at how they are, maneuvering in the information space to create leverage.
+
+It's just totally different. Mark Carney, which I want to talk about, is, you know, was a real throwback there. I really enjoyed his, his speech and, you know, frankly
+
+[00:04:22] Troy: He used commas effectively, and, great economy in, in, in word in words, I thought the speech was.
+
+[00:04:30] Brian: You mean he like, spoke like, you know, a world leaders used to speak? Yeah. That, that is, it was a real refreshing break.
+
+[00:04:37] Alex: Yeah, no joke. That felt, I was watching it. It was like, this feels, what? Does this feel so strange?
+
+[00:04:42] Brian: What is this, what this, what is this articulation? I don't, I don't like that. Um, and finally,
+
+[00:04:48] Troy: I had never really thought of myself as from a middle power. 
+
+[00:04:51] Brian: yeah, middle powers
+
+[00:04:52] Alex: I always considered you a middle power. Troy yourself
+
+[00:04:56] Troy: I always thought of myself as a, as a bottom.
+
+[00:04:59] Alex: a power bottom.
+
+[00:05:01] Brian: finally in a reminder that, nothing truly dies. The, the Goodwill Hunting guys, came up with a reminder that, really all of these changes just mean you gotta just make good shit. And, and you'll find a way in media. And then a AB is gonna join us to break down prediction markets, which I find a scourge.
+
+I'm gonna refer to this, this book I'm reading about the history of capitalism that's gonna last. Last me all year because it's like 1300 pages. So let's start. We good? Like, 
+
+
+[00:05:29] OpenAI Getting Into Ads
+---
+
+[00:05:34] Brian: let's start with OpenAI getting into ads. You know, they did the inevitable on Friday. when it was very telling that they posted an announcement on Friday afternoon that it would soon to run ads.
+
+It was almost like an apology and it was very defensive. They're gonna run them on their free and low price tiers. this is going through the typical. Silicon Valley adoption of ads, which is first claim. You're never gonna run ads. Second, like say, ads are the worst thing in the world. And then third, you know, meet with your investors.
+
+or, or, you know, hear from, from the market that there's no way you're gonna avoid ads and then, you know, roll out ads and, and almost be like apologetic about it. And ideally call them something other than ads. But I wanna get into what this means for OpenAI. Obviously they are racking up lots of losses.
+
+they are expected to lose about $14 billion this year. I think that's a lot of money. Meanwhile, Gemini has mostly caught up, as far as functionality goes. And Google has a massive ad machine in search that it can use to, I think the. The common sense wisdom is that it is gonna use that to strangle open ai.
+
+The, the vibes are against open ai. I guess the good news for open AI is that it got back, some of the defectors to that went to with Maura Mirati, one of its, co-founders to the Her Thinking Machines, project, which has somehow raised $12 billion. 
+
+[00:06:53] Alex: can we pause on that for a second?
+
+[00:06:55] Brian: yeah, which part?
+
+[00:06:58] Alex: 12? The, the amount of money they raised.
+
+[00:07:00] Brian: Yeah, they, they
+
+[00:07:01] Alex: I, 
+
+heard that number and I 
+
+[00:07:03] Troy: I thought you wanted to discuss nerds fucking each other. 
+
+[00:07:06] Brian: Yeah. Well, I mean they, I think, yes. I don't know if it was part of their pitch deck, the Poly q but something about Wall 
+
+[00:07:13] Alex: was there another molecule? I don't know. I don't know.
+
+[00:07:14] Brian: yeah, they got
+
+[00:07:15] Alex: you know, in California that's not news, so we don't really talk
+
+about it, but, but
+
+[00:07:20] Brian: drama. The drama is like rife in these organizations. but I wanna start, with, you know, the adoption of ads. 'cause it 
+
+[00:07:27] Troy: It's just Brian, it's just first principle thinking. Don't, don't worry about it.
+
+[00:07:31] Brian: It's okay. It's first principles thinking. But what was interesting to me is, is you know, people on Silicon Valley hate ads, even though the only things that they've really created are ad networks and SaaS. We're gonna talk about both, right? But it is like, fine. I like that, that you can, it's kind of like how Alex is like, you know, got a family office and, and is a socialist.
+
+This is the ideal place you wanna be. You wanna have a 
+
+massive, 
+
+[00:07:57] Alex: this, type of character I almost stand with by this,
+
+[00:08:01] Brian: what do you do? Hit me.
+
+[00:08:02] Alex: character assassination. No, I think, I'm gonna impose
+
+[00:08:06] Troy: back back. What was your Italian term, Brian? 
+
+I know 
+
+[00:08:10] Brian: Um, Omar, the, um, Omar is the, uh, 
+
+[00:08:13] Troy: I did, um, Omar on Alex. I have done Ari on Alex a lot, and I, I'm guilty of that,
+
+[00:08:18] Alex: That's, that sounds like a sex thing, so I would like, yeah. I don't want
+
+[00:08:21] Troy: I, I did Amari on you and I'm sorry. 
+
+[00:08:24] Alex: into little social clips. Okay. 
+
+[00:08:26] Troy: I had to convince Alex, for, for, for years that a, that, that ads were, you know, had minor kind of externalities, but were were productive things that he should just, you know, embrace.
+
+So we, we do have that as part of our history. You've gone from hating ads, Brian, to loving 
+
+[00:08:44] Brian: I, I love ads. Yeah. No, I don't hate ads. I ads, look, I kind, I always say this is the, this is the New York versus Silicon Valley divide, right? Like Silicon Valley, you know, they don't really like ads, but they like controlling distribution, and then they'll, they'll insert things in there. It's just, it's more of a protection racket.
+
+[00:09:03] Alex: Let, let's have, let's have a little bit of an intelligent conversation here. I, I would say 
+
+[00:09:08] Troy: Oops, wrong podcast. 
+
+[00:09:10] Alex: yeah, I just paused for a second. Now. I would say that like, when people say hate ads, don't hate ads, I think as a business you need to look at that as like a, you know, there's like a. There's a revenue stream in front of you and you should be, that allows you to acquire more customers that are never going to pay for your product.
+
+but consumers generally in every single poll, hate ads, like more than anything
+
+[00:09:35] Brian: Okay, what people say and what people do you, you put a free service in front of them, supported by ads. 85. 90 to 95% will choose that
+
+[00:09:44] Alex: But what we, what we've also seen is that the second you have enough money to buy the Noad product, you will do it. And also. We've also seen, the internet and search specifically Google search, you know, kind of become a little bit of a, of a, of a lesser products because of ads, you know, a Google search today.
+
+And that's what put Google on the back foot. Ironically, when OpenAI came out, all of a sudden there was a thing without ads that would deliver an answer and it became,a threat. So like, I, I 
+
+[00:10:13] Troy: God. I I, have to pause for some, for a rant. Do we have time for this? It's like the d the door you've been watching,Cory doctoral videos, on, in acidification, and that worm has made its way into your brain
+
+[00:10:27] Alex: I wasn't, I was, that's, that's, I, I, I never watched one of his videos, 
+
+[00:10:32] Brian: Yeah, Google has a real disaster on its hands with, that search engine and it's terrible
+
+[00:10:37] Alex: mean, there's a
+
+[00:10:37] Troy: oh my 
+
+god. Companies make trade 
+
+[00:10:40] Alex: of the the meme of the, moment, the meme of the moment was that, that, you know, you were typing Reddit into Google, right? because the Google search results were so bad. And so I, I think that there's a real. There's a, there's, we have to be a little bit more nuanced.
+
+When we talked about talk about advertising. It has, it has made a lot of product that people love significantly worse. People generally dislike ads you know, I, and you and Troy as much as possible will pay everything you can to avoid any ads. I'm sure you have YouTube premium.
+
+[00:11:15] Troy: You, you, you know what, Alex? My, it's, it's a
+
+big, bigger picture thing here. 
+
+[00:11:20] Alex: Okay, well, you're a weirdo.
+
+[00:11:21] Troy: Well, that, that,
+
+that's, 
+
+[00:11:22] Brian: do, how do I 
+
+[00:11:23] Troy: I
+
+there, there we agree. It's 
+
+completely 
+
+[00:11:26] Brian: delight. I want to be delighted and
+
+[00:11:28] Alex: That is bananas. Like YouTube Premium is, the best product on the internet
+
+[00:11:34] Brian: Weren't you guys but behind trying to like, you know, get around pre-roll ads by like making a new ad ad format and then it was just
+
+like, nah, 
+
+[00:11:41] Troy: pop, the pop, the popup sausage in the video player. Yeah. Alex made that.
+
+[00:11:46] Alex: Not everybody makes a product that 
+
+they love 
+
+[00:11:48] Brian: it, just put, just put a commercial in front of it. But Alex, I wanna get your take as a, as a, as an, as a noted anti a guy, because, it is a Silicon Valley sort of mindset. And I, what was interesting to me, and that was why they dropped it like on a Friday, like, you try to bury things and it was almost like apologetic.
+
+Like, no, we're not gonna ruin it. They're not gonna ruin it. you know, in, in Davos, competitors took shots at, at OpenAI that this is, this is a sign of weakness. Now, two years ago, Sam Altman called Ads the last resort. I mean, come on. Don't do that. That's just dumb. Every single person adopts ads in Silicon Valley.
+
+Okay. Jeff 
+
+Bezos called it what? You know, the tax you pay for having an unremarkable product, massive ad business now
+
+[00:12:31] Alex: Well, I mean, I think in the long, in the, in the long list of bullshit that Sam Altman has said that turned out to be completely untrue or just something he just picked out of the air. Like this is one of them that is. So, yeah, not even, yeah, no, truly, I, I think, And I also think, you know, some of it is calculating where Sam Altman will say whatever, I think he understands that it doesn't matter two weeks later, things don't matter.
+
+So you say whatever you need in the moment. and OpenAI, since it's, you know, kind of hit with chat, GPT has kind of behaved like a cornered rat, right? Just. Kind of being very reactive. So, yeah, people don't like advertising here. I think especially when it comes to, something like, because it comes in direct conflict with this original thesis that the internet would become, the source of knowledge and truth, um, available to everyone.
+
+And unfortunately, advertising, Was the best way to allow for that to happen. But it's also, one of the easiest way to corrupt it by, you know, being able to pay for, you know, the first result in, in the search results. And so when the,chat bots came out and, and AI came out, like you had this kind of.
+
+Ideal of a knowledge machine, like a Star Trek level knowledge machine. And this thought for many people of putting advertising into that, felt really corrupting. you know, I still think that's the case. I still think that, it's, it's, it's a scary thought. Because they're gonna start, you know, just to take an aside, I think they're gonna start with little blocks on the side of the answers that are very clearly marked as ads.
+
+[00:14:07] Brian: Oh yeah, they can't go. They can't go too native. This is a weird situation where they actually can't go native. 
+
+[00:14:12] Alex: until they 
+
+can, until the checks start getting signed and 
+
+then that shit 
+
+[00:14:16] Brian: Troy. Troy's ready to come in over the top rope as the voice of reason. Don't call me naive, Troy. 'cause Alex is the naive
+
+[00:14:23] Alex: I'm, I'm, I'm not, I'm not setting, I'm not setting a case for, against it. I'm just setting like what the atmosphere
+
+[00:14:28] Brian: is a guy with a compound in Sonoma talking.
+
+I do, I do think, Some of us believe in, in lead generation and performance,
+
+[00:14:35] Alex: I am. I am, I am, trying to be not, I'm not taking a side here. I'm just explaining where some of this rationale comes from. All right. This is, I mean, you guys are in media. You trust in news, and all of a sudden if you could buy the headline of the New York Times, you might say, well, actually, like, that's a problem for me.
+
+But like, I, I, this is, imagine that. 
+
+[00:14:55] Troy: yeah. I don't, I don't, I don't go for the in acidification line. Okay. I, I
+
+[00:14:59] Alex: I never used that term either. 
+
+[00:15:01] Brian: They should 
+
+[00:15:02] Troy: good.
+
+I'm, I'm, I'm not coming. I'm not coming after you.
+
+[00:15:04] Brian: Be like the Yahoo Portal homepage. Sell a skin. A daily skin.
+
+[00:15:09] Troy: You know, I, I think that in a, in a system, someone like Google, for example, makes decisions about trade-offs between free and paid consumer engagement and monetization, you know, kind of sustainability of the business market.
+
+Share all those, let those people make those decisions. it's not some evil plot to exploit consumers in, in, in, this grand nefarious plan like Cory, Doctorow outlines, right? These are just decisions that companies make around products, and if they make the decision the wrong way, they create, you know, opportunities for people to come in and create a better product.
+
+So, so that's kind 
+
+of how I think about it. 
+
+No, no, no, Just, no, you're not allowed, you're not allowed to talk right now. Actually, no, because, 
+
+[00:15:53] Alex: just, Troy, you gotta stop listening to Trump and think he's your daddy. Like you can, like, just hang on, hang on. Just before, before you can, I will let you get your point across. I'm just gonna say this, I don't under, I don't know. Doctorals thesis. All I'm saying that there was, there, there is a concern even though advertising, as I said, is the best way to fund and dis and, and, and make available free tools on the internet for people, that it has a corrupting impact that could be amplified because of just the way these, chat bots are structured and the way information gets relayed.
+
+I, I still think that's the truth 
+
+and 
+
+[00:16:33] Troy: I, I think, I think, in, in, in every, Alex, we've done this together in every new product surface, there's new challenges for advertising. Advertising on a timeline in video requires and, and sustains a level of detachment between ad and content that we are well accustomed to. and by the way, there's a smaller marketplace of ad buyers in those markets.
+
+So you tend to get, you know, toilet paper ads on a football game. so, so there is, there, the, the contextual alignment is weak typically. I think what's interesting is every new surface, every new environment requires new thinking around how to make advertising feel right in that environment. In this case, there's a deep intimacy that supersedes the intimacy that we struggled with in creating ads for social.
+
+Because that was new and that pulled content creation away from professional creators and this kind of detachment layer and said, suddenly I'm advertising in a place where people are communicating. So it created new challenges for advertising, I think broadly speaking. If you look at a, open eyes challenge here, you have sort of advertising as marketplace, which is Google, right?
+
+Which requires the harvesting of intent around intimate alignment, which requires a huge marketplace of buyers. And then you have advertising against a profile, al, which is like, we know a lot about who you are and what kind of vibes, you know, you're, you're given off. And we can harvest that deep knowledge of, of, of who you are and do very, you know, effective, you know, types of targeting in that environment.
+
+So an ad in open ai. You know, or in Chachi PT ends up feeling kind of slightly more ambient. And I think that this is the discussion. It's sort of like, is it gonna be a marketplace performance solution where basically the ads are skews either for products or services, or is it gonna try to be, you know, a slightly different al algorithmically driven thing like, like Instagram is, which has proven very effective,
+
+I think that in this case, that the idea that they're gonna sort of harvest my personal information and put ads in there that are not aligned with what I'm doing in that moment is not practical
+
+[00:18:57] Brian: It is not a feed, it's a question and answer.
+
+[00:18:59] Troy: so I think what's gonna happen is it has to be basically skew based performance advertising that turns it into a marketplace that requires lots of participants.
+
+And if it does that, I think it creates value for the user. I, I, I think there's lots of examples that we all know personally where an ad is not entirely like, can be extremely useful, particularly when it's a product or service that you're interested in. 
+
+[00:19:24] Brian: The two home runs are 
+
+Google search and, and 
+
+meta, like an Instagram. Really like those are the two home runs and they're. they're gonna start, I, I think 'cause they're selling this, not on performance, but all roads lead to performance. Everyone is, all the big brands are gonna pile in and they're gonna try to do like Instagram, remember when Instagram, when Kevin Systrom was hand selecting, like approving, the advertisers that didn't last very long.
+
+These things all go to scale. They have the same people who were working on Google, who then went, to work for Meta, who are now working for Open, open ai. So it's a known like playbook, I feel like now. And I think this is the first ad surface that has come up that is really exciting for a lot of, like, advertising.
+
+They're gonna pile into this every, nobody's gonna sit this out. So they're gonna do really well with advertising, I 
+
+[00:20:15] Alex: I think they're gonna I think they're gonna do great. Although I think the resp, don't know. I don't think, we're looking at this realistically. 
+
+[00:20:22] Brian: Are people gonna switch? Are people gonna switch to Gemini because of this?
+
+[00:20:26] Alex: No, 
+
+no. no, That's not what I'm saying. I actually think, I don't think Troy understands my point at all. There's, there's a couple of things going on. Google has never managed to fully monetize something like Gmail. Gmail because it was a personal space and there was a lot of,people don't react well to seeing advertising in that space where they're talking about family members, where they're talking about trauma, when they're talking about work, where they're talking about banking.
+
+Okay, the same, the same. Yes. do you advertise? Do they advertise at the same scale as as search?
+
+no, 
+
+they don't. Okay. Similarly, similarly, right? Like if you want like a history lesson, The first, what, what we used to call social media, which is no longer social media. the first versions of that, which is you connected with your friends and family was difficult to advertise on because the topics, were difficult to advertise against, these, social networks.
+
+Created a shift, which at first was very unpopular, but they created these kind of feed engines where now 80% of what people see are from strangers, and the feeds are being categorized and distributed so that they can kind of like allow you to, place ads within them, more thematically.
+
+Right. On top of that, you know, these engines over time have become so good that they start making connections or like, this person has said that she's pregnant, that this, this, so we're gonna start advertising diapers. The fact that we have this. System where people are talking to it so much that they're falling in love with and losing their fucking minds, that there's an, a capability of inserting advertising into it that could over time become nearly indiscernible, is, scary to some people.
+
+Right. Is it going to do well? Absolutely. Is it the thing that they need to do to survive also? Absolutely. But I understand why people are worried about it. 
+
+Right. I'm 
+
+[00:22:10] Troy: you, 
+
+[00:22:10] Brian: These pe these people will get over it. Google only monetizes 20% of searches. They're not monetizing the therapy sessions. I think their biggest problem is if, if too many of their conversations are not commercial. The examples that they show are things like Neil's recipes. You know, if you, if you're asking for a recipe and involves hot sauce, they're gonna show you that they bring 
+
+in 
+
+a 
+
+feed of products, and that's 
+
+[00:22:34] Alex: that's like 2007 advertising. That's how, that's how it starts. They're, they're, they're doing, they're doing minor deals of under a million dollars with a few brands, and they're going to be display advertising. They're going to charge per view as well. They're not charging per click, right?
+
+They're because they need to show whatever the most palatable version, the most traditional version of advertising is, and 
+
+when the money starts 
+
+[00:22:58] Brian: He was, Instagram ads were like lovely and beautiful and artistic to beginning with, and then it goes into performance.
+
+[00:23:05] Alex: I agree. I agree. The thing is, the thing is that there's like a, there's a capability, a massive chasm of capability between an Instagram feed and, an artificial intelligence that you might connect into your home that might listen to talk about your, your thoughts and your, your, you know, you know, do your.
+
+Meditation with or used as a therapist and the fact that you're telling me that this data will never be used to target me, right. That if I'm depressed, I'm gonna get ice cream, which is, you know, a, a silly example, but like, I, I'm, you know, look, it's gonna work. Doesn't mean I. Let me just ask you this. How many times do you have the experience of, you're almost positive that, quote unquote, they are listening to you, and that some conversation led to an ad that appeared in your feed? Like, 
+
+Yeah. I. I 
+
+try to convince people that that's not what is happening. But in fact, you know, they, they 
+
+[00:23:56] Brian: It's hard to, it's really hard to convince people of that. I, I once asked a, a room full of, of, of advertising agency people, how many people believe that Facebook is listening to you for ad targeting? And over half the, over half the, the hands. Now I don't actually think Facebook or Meta is actually doing it, but I do think that there are data brokers who work through some kind of app and are able to, to, to hear that it is just too
+
+[00:24:24] Troy: Yeah, I, I would just finish this chapter of our beautiful conversation with this is that my bigger concern is even though it's easier to make tech, even though these pro these products are well-defined now, creating a marketplace takes a lot of time. It requires a lot of participants. And there is, you know, there is a, a, a fair bit of, of product nuance, and I think it's gonna be really hard to get, you know, I, I, I think that Google has an enormous moat there, but I think the bigger issue is I've been.
+
+Using Gemini next to chat GBTA lot. And I think OpenAI has a lot to worry about. I think that the answers off of Gemini are better. I think that their search index connection is better, which is incredibly useful in a, in, in a chat product. And I also think this week, I don't know if you guys notice, but Google asks you inside of Gemini, if you wanna connect to your, you know, web of connections that are already sustained in the Google ecosystem, which includes mail calendar, Google Drive, Google Docs, et
+
+cetera, and that everything Alex, and you literally just do, it takes five seconds.
+
+You do the checkbox as you press a button and suddenly the most important part feature of a chatbot product is memory and connectivity and context. All of that is solved in Gemini, and I think that that open AI's product becomes inferior in light of that. And I think it's really dangerous.
+
+[00:25:51] Alex: And once again it was, it was, I mean, I actually agree with Ben Thompson here, that OpenAI should have just gone straight out with ads, like any type of small products to get people used to it. Because right now Google doesn't actually. Makes enough money to run Gemini without ads, you know, the same way they ran, to Gmail without ads and, and propose a better pro product.
+
+And, and Altman has, has just been very, you know, it's like, it was pride talking, right? That they didn't need ads, right? Because they were so transcendent as a product. but everybody needs money
+
+[00:26:21] Brian: needs money.
+
+[00:26:22] Alex: it always leads to good things, as Troy would say. 
+
+[00:26:26] Brian: yeah. 
+
+
+[00:26:26] Claude Code's Escape From The Nerdery
+---
+
+[00:26:34] Brian: Well, I, one of the things that I've learned in this capitalism book, have you guys heard about this book? It's, I'm like using it. Vin Eckert, he's, an economic historian. He wrote some tome about the history of capitalism and, right from the beginning, people were very distrustful of the merchant class.
+
+We just don't like it. I, I, I just think humanity likes people who make stuff or, you know, it's just, it's unnatural. It was viewed as like sorcery, or some kind of sin. And I think that's just our underlying discomfort with, with merchants. 
+
+[00:26:57] Troy: What 
+
+else did you learn in your capitalism book? Brian
+
+[00:27:00] Brian: Oh, well, one other thing is like, so capitalism like sprung up basically around like thou, you can, you can like sort of finess it, but this guy, like really it started to take hold, around like a thousand, 11 hundreds. And, always around like port places. That's where the merchants like to gather. And merchants are at the heart of capitalism.
+
+You know what sprung up almost immediately after, capitalism took hold, trade shows, events, they started having trade fairs in order to bring together a buy and a sell side. That's why I believe in B2B in this house. it's just, it's, it's entwined until we get rid of capitalism. And the only thing, the only thing 
+
+[00:27:40] Troy: You, you should put one of those handmade signs above your door that says, you know, trade shows live
+
+here, or something like 
+
+[00:27:46] Brian: yeah. yeah. In this house, we believe in high margin.
+
+[00:27:49] Troy: Yeah. 
+
+[00:27:50] Alex: B2B is the highest rung of, of, of, uh, well, no, of just, of like capitalism. I think B2B is, is the, is the most, closest to God, I think.
+
+[00:28:02] Brian: Yeah. Well that's why I'm worried about sas, you know, because Claude code
+
+is the 
+
+[00:28:07] Alex: I wake up worried about SaaS every day too.
+
+[00:28:10] Brian: it's, it's very worrying is Claude Code is the new hot thing and this is a hot thing that seems,
+
+[00:28:18] Troy: most elegant transition you've ever
+
+[00:28:21] Brian: uh, I 
+
+[00:28:22] Alex: Until Troy came and stepped on it.
+
+[00:28:24] Brian: cla Claude Code is at risk of breaking out of the Nerdery. There are a lot of people who are, who are vibe coding, their own apps.
+
+I have yet to vibe code something. I got a note that we should all try to, we should all vibe code and have a little vibe code in contest here
+
+[00:28:40] Alex: Oh, I did one yesterday to, to get ready for this podcast, and I ha I have some, I have some reporting
+
+[00:28:47] Brian: Okay, so I, I want like, break down Claude code because I think, I don't wanna tie it into, to, to SaaS, you know, because the predictions are coming fast and furious. Again. Anthropic, CEO, Dario Amai, you know, is now back to predicting that, software will be fully automated in a year, 18 months or so.
+
+[00:29:06] Alex: that company also concerned for open AI because, you know, they're, they're. You know, they're monetizing it differently. They
+
+[00:29:12] Brian: and guess why, guess why B2B? Because they took the B2B angle in their house. They believe in B2B too. what's going on with Claude Code? Is this, is this something? Can I, can I vibe code,an app for 
+
+[00:29:25] Alex: Well, I mean, I think,it's a kind of a broad category, but like cloud code itself, Really good. Claude has been ahead of the pack in, in coding for a while. it is a very considerate tool for coding. You can, create kind of, rules-based files if you wanna do more complex stuff because, you know, code can take different ways and you can imagine.
+
+if a, if a newspaper has a style guide for how reporters should write articles, engineers, need similar guides to say, here's what this connects to. Here's the tools we use, here's how we write this, here's how we document stuff. And it, it's, it's always done that very well. Now, on top of that. You can use it straight, you know, kind of like the, the, the, the one that Anthropic provides the tools that Anthropic provides, but it also powers a lot of, the backend for all of these other tools that came out, you know, that allow you to do a vibe coding and whichever you know, interface that you prefer.
+
+Like yesterday I tried, you know, Figma make, which actually, I'm not entirely sure if it, it was, running cloud code in the background or Claude. But that's not really always using their tools. They can kind of access these things via an API. And so Claude is also the underlying infrastructure for all of these, a lot of these kind of really good, coding tools, that provide more or less handholding depending on who you are.
+
+and it's really, really good. Guys. Yesterday I had an idea for a game a prototype. I thought I'm making myself a nice little messy prototype of this game. It's a two player game. It's kind of like a checkerboard type game. I had an idea for a new, new, new type of game that could, that could be fun to play with two players.
+
+And then, I thought like, well, I'm gonna start adding graphics, but I want to, you know, I, I started talking to it like an art director. you know, I'd like this to look better. I'd like this to look simpler. The product that I had at the end has sound, looks. Pretty amazing. Feels like a complete product.
+
+And just before going to bed, which was a mistake 'cause I stayed up too late, I said, Hey, can you program an AI that will play this game I just invented against me? And the first version was kind of dumb. And the second version, I have trouble beating. 
+
+[00:31:31] Troy: That's so cool. What a great story. Honestly, 
+
+[00:31:34] Alex: this is like the, the ChatGPT moment all over again, because I don't understand how software, I mean how a lot of software providers survive this.
+
+[00:31:44] Troy: I wanna, I wanna open it up a little bit, Brian, and, and first I want to, I'll have a little quick anecdote. Like Alex is, I have a music streaming SY system, that, you know, has an API. and I was in the car, my wife lovingly calls it driving Miss Daisy 'cause she drives and I just use my phone
+
+and, 
+
+[00:32:03] Brian: Morgan Freeman movie.
+
+[00:32:05] Troy: and I want, I want to create, I want to use their API to pull out album art and metadata so that I can put it on this new, large mural screen that might exist somewhere in a room. So I want to build a custom interface to manage a data pull from my music rep, repository and, and, and pull the art out the way I want to. And I asked Claude to help me with it. And it was, first of all, I had to go out research the API figure out if it could be done and, and then start building on top of it.
+
+It is, it is really remarkable what what you can do. And, and someone like me, I'm not nearly as technical as Alex, could never have gotten close to that problem in the past. But then it made me think Brian, and, and, and I was, I, I'm kind of confused by this, so I'll, I'll start there, but like clearly there's a new.
+
+Approach to managing information systems in corporations. One that means that the whole SaaS layer or the, you know, the application layer that is where business rules and interfaces live, is gonna change and shift to being agentic. And you'll have a new type of system of record connected to your, your databases.
+
+That system of record will be some AI company that you, you know, that you build on top of really rapidly. That's obviously gonna put a lot of people pressure on the, you know, the, the B2B market or the SaaS market that creates those interfaces for companies. I don't think it'll be immediate. I think, you know, they provide, the value proposition is broader than just, you know, business rules in an interface.
+
+It's,
+
+[00:33:39] Alex: are risk averse. I
+
+[00:33:40] Troy: and, and, and 
+
+businesses are risk or Yeah. Security
+
+[00:33:45] Brian: Benioff. I think Dreamforce is gonna be with us for a while to come.
+
+[00:33:50] Troy: I think so too, but I do think it, it, it starts first where it's like really hard on the sector and you'll see a lot of pressure. You, you'll see more competition from lower cost providers. You'll see margin erosion in b in SaaS and, and the category as a financial category will, will suffer.
+
+But what it, the other thing it, it that I'm, I'm more interested in is I spent my whole life working, with engineers and designers and, you know, accustomed to a process that took a long time to build features and was, you know, you know, really kind of frustrating for business people often. 'cause, you know, it would take so long to get
+
+what you want. Yeah, because, because I couldn't do it. And, and, and I, I, I, the following, are some of my early conclusions. One is the composition of teams changes dramatically. Where you used to have a product person, a couple designers, and like eight engineers, the math of that team is gonna change. Really significantly, well, you'll, you'll have far fewer engineers and the pace of of release should, should be a lot higher.
+
+there's a lot of places that you can look at to say, you know, software was a differentiator in media. We always wanted software and technology to be a differentiator. It wasn't always, I know that you, Brian, are very, you know, skeptical about, you know, the platform promise in media companies. But for example, if you run a media company that has 300 brands across.
+
+20 geographies, and you need to create a common system to manage all of your media inputs and outputs,around that. You spend a lot of money developing software just to make it work. And or if you're like, I'm on the board of a sports media company, you know, there's a lot of feed management. There's in, you know, game day presentation of, you know, lots of, you know, facets of, of, of, of the information and connected to like, you know, email updates, notifications, you know, apps.
+
+Like, it's a really complex,set of technologies. The pace of development in companies like this is changing dramatically, and I think over a longer term software is no longer a differentiator in companies like that, and the game shifts. To, you know, a better place maybe where it's the quality of what you create, it's your talent and you know, it's the art of, of making a great media company.
+
+So I, I think that that plays out in lots of places. We're about to see disruption in software that looks like the dis, the disruption we've been living through in media for 20 years. And, and I think it's, it's, it's super, super interesting and I think it's ultimately, it's ultimately good
+
+actually. 
+
+[00:36:33] Brian: software folks, it is really fun. This kind of disruption is really fun. Every day brings, brings more 
+
+joy. 
+
+welcome,
+
+[00:36:40] Alex: What are you gonna build, Brian?
+
+[00:36:42] Brian: You know, I wanna build like a CRM. I mean, I want to know if I can do that, because what I find is a lot of the off the shelf CRM tools are either too much, but they're not.
+
+I have like, specific needs and those kind of things really excite me. But they also like. Concerned me in that, you know, just 'cause my business, I, I work with a lot of like, SaaS companies and I just wonder does the, does the buy versus build become, or rent really, because that's what the heart of SaaS is, that you rent software.
+
+did you know that Mark Benioff got the idea for Salesforce while swimming with dolphins? Supposedly everyone has to have these ludicrous like stories. So he was swimming with dolphins, like on a, a sabbatical from Oracle and came up with the idea for instead of selling, software as a package to sell, you know, rent the functionality,
+
+guess what we call it now on the cloud.
+
+Um, this is a massive field that sas. Is the second best business model. Probably after search. I mean, I know this because I add one person to Panda Doc to sign a, a contract and they whack me for like another $300 and they, they provided nothing. It just goes straight to the bottom line. I'm outraged. if this gets me to dump Panda Doc, I'm all for it.
+
+[00:37:58] Alex: I love Benioff, but having the You know, the experience of swimming with Dolphin and thinking about software over the internet. Like what a dork. uh,
+
+[00:38:08] Brian: story. I like when he does
+
+[00:38:09] Troy: What a a a, what do you think about when you swim with dolphins?
+
+[00:38:13] Alex: I don't know. I haven't done it yet. I would probably, I probably, I would have some sort of epiphany maybe, How, how we could properly build advertising for AI chat bots. I think that would be, um, I, I, I, you know, AB is here, but I was going to say, I'm excited, if we're anybody trying, to build apps,there, there are many different tools and one that is kind of exciting is, Zapier who, who that manages
+
+integrations and 
+
+[00:38:37] Brian: not calling it Zapier, are we? Is that how it's
+
+called? 
+
+[00:38:40] Alex: Zapier. Zapier, Zapier, 
+
+Zapier, 
+
+uh, that does a, that I am, uh, that does API integrations,
+
+[00:38:48] Troy: it,
+
+is it like papier?
+
+[00:38:50] Alex: that's why 
+
+I 
+
+was reading it. 
+
+[00:38:52] Brian: lots of stuff, but I'm pretty sure it's not.
+
+[00:38:54] Alex: I mean, uh, it's like, it, it, it's Home Depot, right? a lot of the stuff that people are talking about building require integration and tools like that actually now have a vibe kind of coding thing in it where you can say, Hey, I'm trying to integrate this Google Doc with this system that I have, and it will kind of run through its system and figure out the type of API integrations they have.
+
+And because there's a lot of people bump into this as they're trying to build stuff. I just wanted to put this out as a recommendation. so 
+
+[00:39:21] Troy: other one I would, I would put out Alex. That's a great, that's a great heads up. download the Claude Desktop app, and if you are a, paying customer, you can use something which is their coding tech, you know, light version called Claude Cowork. And you can have it access, I mean security be damned, but you can have it access the files on your desktop.
+
+I am not a particular particularly fastidious record keeper. and so I had it go through all of my credit card bills that lived on my computer and set up, Excel files for my tax guy. 
+
+[00:40:02] Alex: It worked. 
+
+[00:40:02] Troy: a, it did, it did a great job. Yeah.
+
+[00:40:04] Alex: Amazing. do you need the $200 a month? Uh
+
+[00:40:08] Troy: just need the $20 a month one.
+
+[00:40:10] Alex: oh really? Wow. 
+
+
+[00:40:12] Prediction Markets
+---
+
+[00:40:12] Brian: Okay, let's get really quickly, 'cause AB is here. you actually have, you, you have some similarities with your hairstyle to Benioff. Actually ab I always wanna talk about a's hair.
+
+[00:40:22] Alex: Got great hair and
+
+[00:40:24] Brian: Wonderful.
+
+[00:40:25] Troy: I guarantee you that if AB is swimming with dolphins, he's thinking deal, 
+
+[00:40:29] Brian: he's thinking deals. Yeah. Yeah.
+
+Yeah. 
+
+[00:40:31] AB: Troy, how much, how much prompting did it require to do
+
+[00:40:35] Troy: to, to, oh, not too much. I had to tell it what categories I wanted. I had to tell it what I wanted to pull out of the Byzantine credit card transaction description and then the kind of ordering that I wanted from it. But other than that, that was it.
+
+[00:40:49] AB: Wow.
+
+[00:40:50] Brian: Yeah, someone vibe, vibe coded one of these like subscription cancellation tools and you can use these things pretty easily, but it, it, like, it re re, it returns all of your subscriptions and with a link to how to, cancel it. And they like gin this thing up and have made a bunch of money off of it. So it's, it's inspiring, ab. Prediction markets. I'm on record finding them, load some, just societally, it just seems like a bad turn.
+
+But I am interested because a lot of media companies are striking deals with these companies and, there is, there is clearly something there. They're being cited nonstop. and you've got, you've, you've been monitoring the situation with prediction
+
+[00:41:36] AB: Yeah. Yeah. And I sold the company. So when sports betting, sports betting went through this evolution, where they came out, the state, the state regulators, sort of, because it takes the states a lot longer to regulate even when a company's breaking the rules. So the companies like jumped into the market.
+
+You had a pullback and then work through the different states to get legalized. and so I sold the company into that hype cycle once it was legalized. And I think what you're seeing right now is this hype cycle around the consumer product of the prediction markets. but when you look at even a, I'm among one of the prediction markets right now, you look at the volume of some of the top predictions, it's not that big, right?
+
+And so I think what you're seeing in these companies is that they're. And this is what happened in, in sports betting, is that the way they pitch it to the investors and accumulate all this capital is they say, look, here's where, here's where the market's going to be. Help us make sure that we get as much market share as possible, and as it evolves, we're gonna be able to take more money from these people.
+
+And there's, we'll be this whole ecosystem. I think what's different about prediction markets versus sports betting is that it's more on the commercial side, the less sexy side where hedge funds and investment banks and other people are using it to hedge out. Future risk around certain events, and that's where a lot of the value will actually be created.
+
+It'll be much lower margin, but a lot of these contracts were already created on like a more bespoke custom basis of not around events, but potential pricing changes and things like that. And so Brian, I think while you're seeing publishers do these deals is just to get more revenue. I think Consum like it's just another data point for someone reading an article to say, oh wow.
+
+Like this is what. Consumers are saying, I think the 
+
+we 
+
+[00:43:20] Brian: like DraftKings, right? I mean, it's, it was like, you know, they saw the sport, the sports media companies are still feeding at the trough of, you know, the, the gold rush, or I guess it was a land grab, for the sports gambling company, the, the DraftKings, et
+
+cetera.
+
+[00:43:34] AB: Yeah, 
+
+[00:43:34] Alex: Globes that had that poly market ticker at the bottom?
+
+[00:43:37] AB: yeah. And so it's, it's just another way to feed information in. There's probably like an awesome. Rev share deal where depending on where, what publisher site it's on, if they get people to sign up, they're getting some sort of CPA. And so they're happy to put the content on there. They think it provides value to their readership.
+
+but what's interesting in a lot of the, and this is what I think people have figured out in, in sports betting, is you don't actually make money on the traditional bets. It's more on the parlays where the odds are different. and so I think what you're gonna see here is. Yes, exactly. and that's where the mar in a typical like, you know, Las Vegas sports book that has existed for a hundred plus, you know, whatever, 80 years, like the margin on that is like 10%.
+
+'cause you're just make, you're setting a line and then you're taking beds on both sides. similarly in these prediction markets, I don't think the actual margin on the current consumer ecosystem is that high. They're able to. Point investors to the future size of the market and get capital based on capturing more of that market share and hopefully growing into it.
+
+But my, my thinking is that the commercial side of this and effectively making a more liquid market for institutional investors actually is where all the value's gonna be created. 
+
+[00:44:51] Alex: I mean, aren't they terrified of the, the risk of regulation? This feels like, this feels like smoking indoors. This feels like, man, at some point somebody's coming, going to come in and stop this 
+
+[00:45:02] Brian: I dunno. Smoking 
+
+indoors had a nice run. 
+
+[00:45:04] AB: yeah, I mean, the interesting thing with, with regulation in financial markets, it, it is really driven by the administration and who they put into these different seats. because regulation is, if it's gray, it typically tends to be proactive at the federal level. So I think there's enough.
+
+Alignment where, with Trump and crypto and things like that, where I think the belief is they'll sort of work through the potential issues. But there's a lot of things happening in the crypto markets that I think most people thought wouldn't happen, but the administration and who's leading it. Both internally, and then some of these, like people that have one foot in one foot out want to move to more decentralized markets, more liquid markets, more transparent markets, even to your guys' point on insider trading, like I get it, but I, unless the administration changes, like they, they have an ability to kind of continue to lean in here and grow without significant.
+
+Basically, these markets will work with regulators to figure it out.
+
+[00:45:59] Troy: Yeah. So my, my take is again, gonna be maybe on the right side of this, this podcast, let the people speculate who gives a fuck. Seriously. I, I don't, I don't understand why everybody, like, just let them, you know, cave people would've said, you know, what are the, what's the probability of getting that mammoth?
+
+And they could have exchanged, you know, pieces of pottery. 
+
+[00:46:23] Alex: Because it's dereg, because it's deregulated gambling, Troy, and, and 
+
+that doesn't 
+
+[00:46:28] Troy: Great. Great. No, 
+
+well, let me finish my point. And I, And 
+
+I think that in 
+
+[00:46:33] Brian: the merchant class for sure. 
+
+[00:46:34] Troy: In the modern, information marketplace, you cannot control information flows. And so the thing I find interesting in these markets, and, and you know, the guy that wrote Sirens call, what's his name?
+
+Brian, uh, Chris Hayes went off on the fact that what he was saying on like Kimmel or something, there was a instant,you know, poly market bet set up on it. And it was prerecorded, meaning that the opportunities for like insider information, are rampant all over the place because a lot of people saw that, a lot of the producers, all the people in the audience, yet it went out as a bet for a live program, right?
+
+So he was kind of flummoxed by this whole thing. Now, I, you know, you want insider trading and you wanna price it in and, and, and 
+
+keeping insider information. 
+
+[00:47:23] Brian: Wait, wait, wait, wait. You want 
+
+insider trading? Explain this. 
+
+Explain this. Peter Thiel. Go. Go on.
+
+[00:47:29] Troy: well keep keeping out insider information keeps the price wrong for longer. Just, you know, the people in the market can bet that that guy has inside information or not.
+
+Right. You know. 
+
+[00:47:40] Brian: of the no conflict, no interest, 
+
+[00:47:42] Troy: Exactly. And you demand a higher price. If you take the other side where you think someone else has insider
+
+information, 
+
+[00:47:48] Alex: it's, uh, 
+
+I think this is part of the extraction economy that takes away, that, that keeps taking away, o options from young people and extracting value out of them by telling them the only way you can get money is by 
+
+[00:47:59] Troy: Yeah. That's a great millennial take on, you know, like Big Brother take on the generation that comes after them. It's, it's fine. Protect, protect the, the young people from
+
+what they ought not to be doing. 
+
+[00:48:11] Alex: gonna be an election, so this stuff's gonna stick around. Don't worry.
+
+[00:48:14] Troy: Cocaine has never been more popular. 
+
+[00:48:16] Alex: With boomers. 
+
+[00:48:19] Brian: I think it's Europeans. Europeans seem more into
+
+cocaine. 
+
+[00:48:22] Troy: Yeah. That's where all the Venezuelan stuff is going. you know, you demand a higher price. If you take the other side where you think someone has information. All of the bets are recorded on the blockchain, so you can build analytical tools to see who's doing what.
+
+I mean, it's just a reflection of the chaos of the marketplace, whereby some people have more information than others. It's not all regulated. It's impractical to regulate it. And I think it's, it, it's, it's a reflection of how we trade information in 
+
+[00:48:49] Alex: is very easy to regulate transactions. It's really. We do it on the stock market. We do it with gambling, we do it also
+
+[00:48:55] Troy: I, and I would argue that the stock 
+
+market is ripe. Is ripe. with insider trading.
+
+[00:49:00] AB: asymmetric. It's right with asymmetric information. Yeah. 
+
+[00:49:04] Alex: so this is another one where we sell democratization of things, power to the people, but it's just a more way to extract money from the people. That's how I see it.
+
+And I have a hard stop 
+
+[00:49:13] Troy: Who's extracting the money? Hard stop.
+
+Who is the 
+
+nefarious actor here? Who's 
+
+the bad guy? 
+
+[00:49:19] Alex: into, who's putting money into poly market?
+
+[00:49:21] Troy: You're saying that the people that are, that are that, that, that are exploiting these naive investors on the other side of a bet.
+
+[00:49:28] Alex: I'm not saying they're naive. I think gambling is, 
+
+[00:49:31] Brian: It 
+
+is problematic. It's problematic. 
+
+[00:49:33] Alex: I mean, we have a lot of data around gambling, a lot of data. Troy.
+
+[00:49:37] Brian: Look, I I, I've been on record for a long time. We're gonna end up regretting having rushed into, the legalization of sports, sports, gambling For sure. And it's created, it's, it's creating major problems 
+
+with, uh, 
+
+[00:49:49] AB: I mean the nice thing with prediction markets is they're all year, like with sports betting, it's primarily around a couple sports and a couple times per year, so that just opens up more gambling. I, Brian, but to your first question of like, because of the spot that most publishers are in right now with, you know, facing.
+
+Degradation and organic traffic. It's like it doesn't validate the legitimacy of a business by doing a publisher partnership anymore 'cause they just need revenue.
+
+[00:50:14] Brian: Yeah, for sure. I wanna do, I wanna 
+
+[00:50:16] Alex: I got, I got a hard stop before you do your transition. Sorry, I've got a 
+
+[00:50:20] Brian: okay, 
+
+[00:50:20] Alex: Bye everyone.
+
+[00:50:22] Brian: I wanna do some, 
+
+
+[00:50:23] Quick Hits
+---
+
+[00:50:23] Brian: I wanna do some, some, some quick hits. 'cause we didn't get to a bunch of stuff. I don't know if you saw this actually. You probably did. 'cause I put it in there. 
+
+But like, you know. All right, ab, good to see you. Matt Damon and Ben Affleck, were on Joe Rogan and Matt Damon went through all of the ways that like Netflix has, has changed movies for the worst.
+
+He does this shtick a a few different times and he knows the industry really well. And I feel like people are always surprised that, that, particularly Matt Damon and Ben Affleck are, are really smart. And I'm like, why are you surprised? but anyway, he's very good at that. And he talked about how Netflix, you know, makes you repeat the plot three or four times.
+
+You have to get right into it. And I liked Ben Affleck's like reaction to it. 'cause he was like, whatever. Like, things change. You adapt. And like ultimately if you make good shit, it's gonna break through. And that, that to me was a good reminder. These things never die. They just adapt. Like you can still, you can still make a good business out of making magazines.
+
+You can, you're still gonna be making, be able to make a good business out of doing newsletters. You're still gonna be, make a good business, out of podcasts even if there are a million of them and things. AI can summarize things. So I thought that was a good reminder. Any thoughts Troy?
+
+[00:51:35] Troy: Well, they landed on an example where Dwayne the Rock Johnson drew on his dysfunctional relationship with his father to come up with a very poignant scene in that movie. about the early days of UFC that he started, I can't remember the name of the movie that was directed by one of the softie guys.
+
+Great movie. I watched it on the plane the other day. And, it was a remarkable performance by, you know, a person that we maybe dismissed as just a muscle man. It was really terrific. And, and you know, there,his point was, Matt Damon's point was like, this guy's like harvesting deep reserves of kind of emotional experience to come up with something that is like incredibly nuanced and massively human.
+
+And I totally agree. I mean, like, we'll make shit like, you know what, AIS don't, they don't have original ideas. They can't draw on emotional experiences, right? This is, this is where we, this is where we thrive as humans. And so I think there's nothing to worry about. I do think that. The blanket. And this is where I think it's interesting, the blanket dismissal of AI content as slop is stupid.
+
+Because I actually think what you're starting to see, and it's happening in interesting ways, love to get your take, is the use of that technology to tell a certain type of story by an individual in a certain format. And quite frankly, I find some of them entertaining and humorous. So you take the script from Donald Trump's rambling speech and Davos and you make it come from a bunch of baby politicians and you create a funny thing around it and it's like funny social viral content.
+
+And you see a lot of that. It, it's, it's like modern wealth yourself or you see, you know, militarized polar bears in Greenland standing up against the, you know, American oppressor 
+
+and you know. 
+
+[00:53:46] Brian: It's, empty. calories. It's great. 
+
+[00:53:48] Troy: another social format and people can make them on their own and they're better than what, you know, the, it's the next meme is all.
+
+[00:53:56] Brian: Right. And, and, and that stuff, it's like, it's like punts. Punts are like the lowest form of humor. I mean, this will, I, I don't, I haven't seen yet AI content that rises above the level of middling to, you know, just empty calories type content. maybe I, I assume it will continue to progress. I think I, it's very, striking to me how far AI has come with something like writing code versus when I use it and see it's, I, I can't stand, it's writing.
+
+Like I, I have deep antipathy for how chat PT writes. I, I frequently yell at it. but, you know, maybe that I, and I honestly think it's getting worse. I don't know if you've noticed this. I think the writing that, that, that 
+
+comes out of, and the 
+
+[00:54:47] Troy: you do use it though, Brian, for your mindless, you know, B2B, you know, decks that circulate after the, the Zoom call that you put together. I 
+
+[00:54:56] Brian: no. I use I, I use it as a tool. I think that it is not a good creation tool. It's still mostly like a research tool. And it's interesting that like you can tell AI written content and I don't think it's normalized yet because
+
+[00:55:12] Troy: sure. You can always tell, I'm pretty sure that Brian Sugar, who writes a thoughtful newsletter, is using secretly using AI to put that together.
+
+[00:55:21] Brian: don't know for sure, but having known Brian, I suspect that's the case. He's a
+
+[00:55:26] Troy: I, he's a hacker and I can tell by the sort of cadence of the sentences that, that there's, that, there's some fucking, like serious chat GPT in there.
+
+[00:55:35] Brian: Well, you know, some people accuse Mark Carney of using, Chat BT for his extremely well received speech. You don't see a lot at, at Davos. You don't see a lot of speeches. And Mark Carney of those who don't know, that'd be really insulting. He's the prime minister of
+
+[00:55:49] Troy: I mean, write me a speech in the, you know, flavor of you name the historic politician Churchill that talks about power dynamics in international relations. Make sure that the sentence construction is concise, blah, blah, blah. Like it can do that, man, it can do that.
+
+[00:56:08] Brian: Okay? I don't think he actually used it, but the speech itself, I was very taken with polar opposite, you know, communication styles. Carney is like a central banker. I mean, he ran the Bank of England even though he is Canadian, which I guess is like a bonus you guys have as part of the commonwealth. I don't know.
+
+but he is not like a typical politician and, you know, he mourned the death of the sort of, he didn't even really mourn it of the liberal order, with, with everything that Trump is enacting right now. And then Trump blows in and does the Trump Act, which also has leverage. Gavin Newsom showed up in Davos and was basically a comment troll like the entire time Al Gore was heckling.
+
+Howard Lutnick at, at some Ava's dinner. We're in a totally different information
+
+[00:57:01] Troy: Al Gore letting it get off the stage and Al Gore walked up to him and went, boo, like, what's going on? And Newsom told European leaders to take off the, the knee pads. is going on in our world? 
+
+[00:57:18] Brian: You know, I think there's two lanes you can go. And I think that, Gavin has, has decided that he's gonna basically do performance art to try to, to show how ridiculous the, the Trump Act is. And he's g he, he's gone full troll. And this is his. We'll see who gets through. I mean, I think that there is a case that you, you go down the Carney route, which he, he does.
+
+He's a, he's a creature of Davos, really. And you know that you go back to articulation, making logical points. personally, when I heard like the ma, the, the, the Carney speech, I was like, man, can we trade for this guy? Like, I wouldn't mind. 
+
+[00:58:00] Troy: Yeah,
+
+[00:58:00] Brian: must have made you proud to be a Canadian.
+
+[00:58:03] Troy: I liked it. Yeah. No, no, I liked it for sure. I'm finding that a lot of people in my circles are evaluating their future in America, and I think that's really sad. I have 
+
+[00:58:13] Brian: Really 
+
+[00:58:14] Troy: who I really love and she,
+
+[00:58:15] Brian: like, who aren't American citizens or who are
+
+[00:58:17] Troy: Well, in this case, she's like a Canadian transplant to me, but she's like, I'm moving to Vancouver.
+
+This is crazy. I don't want to do this anymore. And I, I, I don't like that. It upsets me.
+
+[00:58:28] Brian: Well, it's a big risk. It's a big risk if, if America does lose that, the ability to attract ambitious people, because the brand, the brand is a little different. I got a friend who's, who's a diplomat in Denmark. I was like, good luck man. He must be taking a lot of incoming hope. He gets a hazard.
+
+Pay for that. I'm very intrigued by speaking of nothing ever dying. Have you seen that X is running a, a $1 million contest for its most viewed, like long form article. It has this new feature where you can post articles to X and you know, X is, is. I can't quit it. I think it's fascinating. I, I'm not giving up on it.
+
+the likely winner of this is a, a self-help piece that won. It's not gonna win any, any awards, but it was a nice, refreshing change to the regular, fair on X has 170 million views. and I think this is part of the reality that there's room for everything and that like, you know, x I'm sure they see that, that they need to be more than just empty calories.
+
+You know, they have a lot of powerful, important people there. But also just a lot of people who are experts, particularly around technology. Now, there's a lot of like growth hackers and Grifters on there of course, but, I don't know. I think this is an interesting development, because, everything can't become short form video and there's a, there's a lane people will gravitate.
+
+Maybe it's not to my 1400 word, economic history of capitalism book, but at least to, you know, a thousand words on self-help. 
+
+[01:00:03] Troy: Right. Well, I'm a, I am looking forward to reading that piece because it's all about agency. And I hear that a lot from my kids now because they're struggling. They're at a time of life where they're trying to find their place in the world. And, you know, when the traditional paths of, you know, land, land a corporate job and become, you know, you know, climb the ladder and all that, don't feel it is welcoming anymore.
+
+And so the notion that they need to somehow develop a strategy for their own personal agencies, what that article's about, and I think that's cool. I think that there's too much recirculation in X, meaning the pool isn't growing. It's still a really active place, but I think that they're being eaten away at in different parts of the spectrum.
+
+So like liberal social communication, you know, that goes a little bit deeper. That's maybe not that important. A lot of that has moved, you know, to, to threads. I, I think that substack has taken, you know, the more thoughtful, longer part of,what was previously the Twitter, you know, Twitter activity.
+
+And I think X is still really important and I actually find it useful. I find it, I know that you, you think it's, you're overwhelmed by, its to toxicity, but I find it to be a, a, a good place for information, particularly around like reactions, AI technology. the other side of the story, like I, I, I, I do find it useful, but I think he has a, he has a TAM problem where it's used by too few people and there's not enough new blood coming into the.
+
+[01:01:40] Brian: and the reason those too few people love it are the reason that. That's what constricts the tam. And this is, you know, a typical, typical issue. But no, I still find a lot of value in X. I wanted to get your take on something that I, I ran across, which is that there's this little kerfuffle, it is a little around Hudson News, considering dropping like magazine distribution.
+
+I mean, these are the, the staple of airports. and obviously, you know, magazines, outside of, you know, magazines and whatnot are, are struggling. I mean, this is like, you know, this is in the harvesting phase, I believe. can you explain a little bit why these kind of distribution points are so important to the old line magazine industry?
+
+[01:02:23] Troy: it's not important to everybody. It's important to people like Neil Vogel with a, with a mass title like people, which are one of the, which is one of the few that actually do any amount of newsstand. I don't think it's important financially. It is definitely important in terms of perceived, kind of perceived cultural, imp premature of the product where, you know, magazines represent this kind of cultural snapshot that exists in the checkout lanes and magazine,stands, you know, across the country and used to be the thing that, you know, a celebrity proudly held up on, on Letterman.
+
+All of that has kind of gone away and, and after, you know, you pay for distributions and returns and the margin that someone has to make that's retailing it, it's not. It's not something that you make a lot of money off of. So I, I don't think that it's gonna be painful in that regard. I, I do think that it's obviously, you know, a, a shot to their cultural relevance for sure. 
+
+[01:03:23] Brian: I have an idea for Mom Donny. 'cause you know, he's following the Trump playbook of always be on the news, do these little teeny things that get you on the news. He just went, you know, went after like junk fees at, at hotels. He's got a list. I want him to add to the list that any of these newstands on New York City sidewalks, and they literally are labeled newsstand, has to have a certain percentage of actual news products in them.
+
+Some of them have no, none. Not one newspaper
+
+[01:03:52] Troy: they're not really newsstands, they're ZI stands
+
+[01:03:55] Brian: Exactly. Do not call yourself a newsstand if you're, if you're selling zens and not news products. Donny, go after that. before you seize the, means of production,
+
+[01:04:06] Troy: Before you're completely overwhelmed by your own naivety, 
+
+[01:04:11] Brian: No, he is gonna do a ti He's gonna be so popular in a year. He's gonna do tons of popular little stuff. This is why, like populism, it, it, it exists on the right, it exists on the left. And, you 
+
+know, before you get to the unpalatable stuff, you, you go to the popular stuff and he's gonna do the popular stuff.
+
+[01:04:30] Troy: He hires the wrong people, he makes the wrong, he has the wrong priorities. He's doomed. It's bad. It's very bad. 
+
+[01:04:38] Brian: hey, come down to Miami. Dylan Byers had a nice little,tidbit that CNN's profits are, are down, by 50%. But the good news is there's still 500 million. CNN still makes $500 million in profits. Like, you know, managing decline is, you know, it might not be the most fun thing, but pays well.
+
+[01:05:00] Troy: Why when you throw a bunch of liberals around a table with a token conservative and have them argue Fox style, is it such a shitty product? It's just that liberals are bad at that stuff.
+
+[01:05:12] Brian: you think what? Arguing
+
+[01:05:14] Troy: mean, I just, what's the name of the show on Fox? Where they all sit back and in, in like, you know, chairs and, you know, say ridiculous things.
+
+Um, one of those, yeah. Yeah. Fox and Friends, or what's the other one with the, the guy's name? It's, it's named after the, I don't
+
+know, I don't watch Fox. 
+
+[01:05:32] Brian: bear with my parents. 
+
+[01:05:33] Troy: Yeah. Anyway, I think that CNN is is mostly ridiculous, yeah. 
+
+[01:05:39] Brian: is it? You know, mark Thompson's gonna be on in the hot seat soon. He's been in this job a while. I don't know what exactly. I mean, you know, if I got a job like that, the first thing I would do is say I'm going on a two year listening tour. The listening tour is the best way to buy some time. And I would want to do a multi-year listening tour.
+
+I'd be like, it's a big organization. I gotta, I gotta get my arms around it. I gotta do a listening tour. 'cause you gotta buy yourself time. That's my
+
+[01:06:07] Troy: What, and then what, then what would you have done? Brian, 
+
+[01:06:09] Brian: Well, I would, I'd try to extend the listening tour. I honestly, I don't know what you do with CNN I'm, it's, it's well above my pay grade as they say. I think we are, I wanna call a moratorium on Barry Weiss coverage. it, it's getting, it's getting into Olivia nzi,territory. 
+
+[01:06:27] Troy: the, did you read the New Yorker piece on her? It felt like her team had sanded off the edges pretty
+
+[01:06:32] Brian: yeah, I mean, I think that was a big w for crisis pr. She had brought in a crisis pr, which is, is a wonderful field. I love the idea that there's crisis PR and I think Crisis pr, is doing the Lord's work. but no, it was like, kind of, you know, the opening with, oh, she, she, she kissed Trump, Trump on the cheek.
+
+Ah, I mean, I don't know. I mean, I've give it over like, I don't know, like whatever. Like it doesn't really matter. I mean, it's a nice little like anecdote. Nothing in there was new. Nothing was surprising. Variety came in, later with like the 50th, lot of people are upset with, her management style at, CBS.
+
+[01:07:06] Troy: out of 10 people said that CBS news is becoming dysfunctional. 
+
+[01:07:10] Brian: Yeah, 
+
+basically status. Then came in it breathlessly reported that, Barry Weiss deed to actually call, reporters and speak to them directly before, 60 Minutes finally aired that Sea Cot episode. This is getting, getting ridiculous. I think it is. And I, I don't know. I guess this is very strange for me to say.
+
+There's, there is, there's too much like media on media coverage.
+
+[01:07:34] Troy: Yeah. Well it was, it was fun to see your buddy Lachlan take off the gloves and go after, what's her face from that,
+
+[01:07:41] Brian: Sharon Waxman. She, he called her, uh, Sharon Wack job. I, I 
+
+sent him a note. I was like, okay, that's pretty good. not for Sharon. No offense to, to Sharon. I just, I like, I like spectacle.
+
+[01:07:52] Troy: No, to sell, never, never steal a scoop from Lachlan.
+
+[01:07:55] Brian: Yeah, no, he just like, I was like, I love this. 
+
+
+
+[01:07:58] Brian: Um, 
+
+he is very feral. and you know, Mediaite is now talk about performance art.
+
+We've reached the absurd level. They are now launching a paid newsletter that a, a paid media newsletter that aggregates other media newsletters. This is a business that's by all accounts in like terminal decline. It just shows that, you know, journalists love, love, other talking about journalism and media will always, be obsessed with, with
+
+[01:08:29] Troy: Well, maybe they can write about the silver tongue. Justin Smith rationalizing the semaphore valuation, by the way. So smart. and really, you know, I
+
+[01:08:39] Brian: By the way, I'm glad I got in early on that I, I, you know, this is another high agency, which I don't always have. I'm, it's gonna be totally, I'm like very scared about this high agency era. I really have to retool. But, I got, you know, I got in early on the parade of podcasts that, that Justin and sometimes Justin and Ben did in the aftermath of this, of this fundraise, which has ignited a lot of, I've, I've gotten some like pretty like, like very, I got some like pushback that I did.
+
+I was not like, tough enough on them. There's a lot of
+
+people 
+
+[01:09:11] Troy: he did a great job of justifying the multiple up against, you know, Axios and Politico based on, you know, forward revenues and stuff like that. I thought that, you know, he never really, he knew how to not step in the shit and Ben was a little bit irritated that, that Justin was doing all the talking.
+
+So Ben was like, wait, I'm here too. 
+
+[01:09:31] Brian: Ben is also irritated, I'm guessing. I'm just gonna speak for Ben and I think this is what Justin was trying to do because like the problem is like you go out and you pr it in, which he had for, for a little while, that, hey, events are central. This is an events company. He's literal, he said that, and then it's like, no, we're not an events company.
+
+Events are just where we start and
+
+[01:09:49] Troy: Yeah. And, and look at the people that he's got lined up for that Washington event. It's insane. They have done a great job of that hats off to them. my other favorite part of that podcast is when, when Dylan resorts to the line that you're probably, you know, have used in the past, which is like, I'm just a, you know, a literature major.
+
+I don't know, 
+
+[01:10:08] Brian: uh,
+
+I don't, I try not to do that.
+
+[01:10:10] Troy: Yeah.
+
+[01:10:11] Brian: I, I was a history major. I know how to read. I, I don't know. I can read a balance sheet. I'm, I'm fine with it. yeah. Anyway, good for them. Look, events are, they give you a shot. To me, they're a business model hack. I mean, we talked about this. We, we've talked about hacks.
+
+Hacks give you a shot. Usually people have distribution hacks. This is a monetization hack. And the after the hack, some people are able to turn it into, you know, they're able to use that advantage and like, become like fully fledged media companies. And that's the challenge. They have to put meat on the bones.
+
+They have to be critical to these power brokers in these, in these areas. Are they there yet? I mean, I would say from an outside perspective, they said I, no, I don't think so. I think they're very smart in having, in having very strong media coverage. 'cause I think that also gives them a little cover. 
+
+[01:11:04] Troy: Listen,
+
+I think that something like the entertainment beat from Puck or the, the fashion wand kind of steered by Lauren at Puck becomes indispensable to people in that industry and they'll pay up for it. And that is the essence of, of really sound B2B multiples in media. I think that that, you know, Sam Before's got a nice brand.
+
+They have real. A real news beat, real reporters, they'll expand that coverage. I suspect that they'll try to go deep in some verticals and find subscription, and it'll be as hard as subscription always is. In the meantime, they'll try to establish, must attend events that are, that are highly profitable and kind of shift the Davos vortex to Washington.
+
+And I think it can be a really nice business. The long-term lesson in the thing is you take tons of capital, I don't know, but that capital probably has pretty extreme terms on it, or preference. And your valuation gets big, the business struggles to keep up with it and you exit. But you know, you, you know, the, the, the, the, the employees and the principals don't make any money.
+
+And you know, I think that's the risk.
+
+[01:12:18] Brian: Yeah, that's a big risk. you know, good luck to them. I, I am rooting for every sort of success case in media. I'm just gonna try to be even handed about it. one last thing, Pitchfork is pivoting to subs. you know, Pitchfork was one of those. There's a lot of times when, the business model just mismatches with the brand.
+
+Like pitch work doesn't, didn't really make sense within like, Conde to me. Like, I mean, Conde is like an, an ad machine at the end of the day. and you know, Pitchfork has a lot of loyal, I, I'm not a Pitchfork guy 'cause you know, I don't have like great taste in music, but like, if it is so essential to
+
+people, 
+
+[01:12:57] Troy: Gwen Stefani album, you know,
+
+like Four Outta 10. My favorite with Pitchfork is, is the, their, one of their inaugural reviews that gave it, an album a zero and only had a gif of a chimpanzee peeing in its own mouth.
+
+[01:13:13] Brian: yeah, look, I mean, there, there is a market for that. The tam, I don't think is massive. So you're gonna have to get, you're gonna have to have a direct, 
+
+[01:13:21] Troy: Uh, you know, I think that Conde didn't look at it like, oh my God, there's a lot of advertising that sits naturally around this. 'cause clearly there's not. But it is, you know, the title in music criticism and it is a, a, a premium title, and that seemed to fit well with, you know, a stable of, of, you know, market leading kind of titles that Conde's always been known for.
+
+So, so they bought it, but it was a shitty business. The question is, do people want to pay to be able to add their voice to a review or comment on an album review? That's their, that's their subscription feature. 
+
+[01:13:54] Brian: that's, that's tough.
+
+[01:13:56] Troy: I mean, can't I mean, subscriptions are tough. Subscriptions are tough at the end of the day, and I think people re recognize that. And I think, honestly, just to go back to like Semaphore, I think they were smart with their sequencing because, look, I, I think there's like a brewing like rivalry between like puck and semaphore.
+
+[01:14:13] Brian: They do overlap a little bit, but they started kind of similar times and whatnot. They have somewhat similar approaches and whatnot. They do, they take a different approach. But I think, you know what, what John was seeing, John Kelly was that they're gonna go subs first and they stayed out of the events business.
+
+for the most part though, they do the little events, the DC events and the Hollywood, like four year consideration events. but, and they're, they're, they are doing like a, a ticketed event too, but. I think that that is an interesting little rivalry. 'cause they, they're, they, they took, they took different approaches and both are gonna have to
+
+add 
+
+[01:14:52] Troy: for me as a reader, one of the biggest differences is tonal, because puck is so rooted in the voice of their partners. So you really feel like you're reading a Dylan piece or a Lauren piece, 
+
+[01:15:08] Brian: good and bad. I mean, there's a lot, they got a lot of hate readers too. I mean, people complain to me about Buck all the time. 'cause it's smug
+
+[01:15:13] Troy: don't hate on hate reading. I mean, I, I find I listen to pivot, pivot, pretty regularly, and I, I hate listening to that thing. I hate that podcast. I hate it, but I listen to it.
+
+[01:15:25] Brian: Yeah. I mean, I'm glad that he talked about his plastic surgery. It's time, it's time. Just to be open about that. do you have a good product?
+
+
+[01:15:31] Good Product
+---
+
+​
+
+[01:15:34] Troy: I don't actually, you know, lest I, you know, say, you know, AI social co, you know, a news commentary slop, like, turning the world leaders into babies that are, you know, slightly amusing. you know, my, my, my kind of viral content sensors are, are very, not, let's call them boomer, you know, they're, they're not very nice.
+
+And 'cause when I, because my son shows me stuff that he looks at, that's like. Like edgy shit from X that's like he thinks is really funny and it's always super dirty and weird. And, I'm like, hmm, that stuff isn't in my feed. And I like it. It's funny way to go, keep sharing, but, I'll send him something like, you know, the armed bears from Greenland and he'll be like, fuck off.
+
+What are you doing? my sensors aren't very good. what else did, what else delighted you this week? yeah, I don't, I'm not very happy right now. I don't know what delighted me. I'm going to Jamaica to play tennis. That feels delightful.
+
+[01:16:33] Brian: Oh yeah. well, I hope you get out with the storm. No, I've just been back in New York City and enjoying the wonders of this city in, in the winter. it's a little bit of a, a change of pace, and I'm excited for the storm. That's my good product. I, I, 
+
+[01:16:48] Troy: A 
+
+[01:16:48] Brian: know, I don't, 
+
+[01:16:49] Troy: is a good product to you.
+
+[01:16:50] Brian: I do not like, I do not like the, the melting, I don't like the slush puddles and whatnot, but like, when, when it snows in New York City, it's kind of fun.
+
+So I'm looking forward to it. I haven't, I 
+
+[01:17:01] Troy: Well, let's, let's use that this week.
+
+[01:17:04] Brian: Okay. 
+
+
+[01:17:05] Outro
+---
+
+[01:17:05] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:17:39] Brian: All right. Let's leave it there. 
+
+[01:17:41] Troy: All right. Ciao. 
+
+
+

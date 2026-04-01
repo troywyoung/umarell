@@ -1,0 +1,1219 @@
+PvA S2E81
+===
+
+[00:00:00] Troy: I read in the New York Times, there's a massive
+
+polycule in Boston. 
+
+[00:00:04] Brian: That is so weird to me, just because it's Boston. That was the only thing that 
+
+[00:00:08] Troy: I mean, Sonoma. Alex is nodding. Maybe. 
+
+[00:00:12] Brian: then it would, I don't think the editor, the editor would have been like, bring me something new, if it was 
+
+West 
+
+Coast. 
+
+[00:00:18] Alex: I think that makes it
+
+more interesting. 
+
+[00:00:20] Brian: That, that it's in Boston? 
+
+[00:00:22] Alex: Boston. 
+
+[00:00:22] Brian: it's mainstreaming. 
+
+[00:00:23] Alex: I wonder how they, pronounce polycule there. 
+
+[00:00:28] Brian: I don't even think there's a name 
+
+for it in Miami, it's just accepted. 
+
+[00:00:31] Alex: Yeah, 
+
+[00:00:32] Brian: Polycule is just, they're like, what, what are you talking about, 
+
+[00:00:34] Alex: it's just friends, just friends
+
+hanging out 
+
+[00:00:36] Brian: 
+
+
+[00:00:59] Episode start
+---
+
+
+[00:00:59] Intro
+---
+
+[00:00:59] Brian: Welcome to People vs. Algorithms. A show about patterns in media, technology, and culture. I'm Brian Morrissey, and each week I'm joined by Troy Young and Alex Schleifer. I'm recording this after three days spent at the Possible Conference, which is a sprawling and somewhat newish marketing conference in Miami Beach.
+
+Check that possible presents as marketing conference, but walking around the many branded cabanas and running into so many people. I recall that, like most marketing conference. This is really a marketing and advertising technology conference. the brands are the lure. But the real purpose is creating a marketplace to connect buyers and sellers around technology.
+
+Something of a metaphor for modern media, I think. Even if Alex laments how the internet will become nothing more than a giant QVC as AI further entrenches itself. I try to be practical about these things. an industry conference reminds me yet again that we are all in sales and that's what keeps this economy and society humming.
+
+The Carnival of Capitalism just rolls on and AI will be no different. but what AI will become is an open question. cause I think it's the ultimate fusion of technology and capitalism. And the question is. What do we want AI and robots to do? And what do we not want them to do? And we discussed this in this episode.
+
+And my conclusion is that we tend to not want AI and aspects of our lives where we value tastes and human connection. It's not lost to me that the company is paying for this conference, our technology providers who at their base are offering tools to more effectively and efficiently do what humans once did.
+
+And yet talk to any of these tech companies about their marketing spending. And I did just that over the last three days. So hopefully, very successfully. And you'll find that they, value face to face interaction over all other ways of selling. And the media industry is somewhat unique for its events fetish.
+
+But this is one that I classify under the Bezos dictum. To focus on things that don't change. And I don't think that's going to change. we get into all of this during this conversation. I hope you enjoy it. Please leave us a rating and review wherever you listen to this podcast and, send in your feedback.
+
+we always enjoy it and, share it in our text thread, that we use to plan this podcast. My email is bmorrissey@therebooting.com. 
+
+[00:03:22] Troy: Can you tell us, can you start by giving us a little debrief, like the good, bad and
+
+ugly of this conference 
+
+you've been hanging around at? 
+
+[00:03:29] Brian: The event is called Possible. It's in Miami. And the whole idea of it is basically to Americanize Cannes. Because I think the Americans are like, Cannes, it's too big. It's too expensive. It's too French. Let's be real. And going to France, Is always great in the summer, but companies, I don't think, I think it's like it has an opening to steal some of Cannes' thunder because going all the way to the Riviera to meet for American companies to meet with other American companies never made sense.
+
+So basically they started this quote unquote marketing conference in Miami last year. This year, I think it's like 3000 people. Now, of course, any marketing conference is, the marketers are like a very small sliver of the audience. It's all the quote unquote ecosystem providers, aka the people who want to sell to the marketers.
+
+So it creates a very strange dynamic, but it's at the Fontainebleau. Have you guys ever been to the Fontainebleau? 
+
+[00:04:31] Troy: Unfortunately. 
+
+[00:04:32] Brian: People in Miami call it the Fountain Blue, which I think is hilarious. I was talking to you guys, it's like non Miami people, so I adapt. But in Miami, everyone calls out each other, 
+
+[00:04:44] Troy: How, how is AI affecting the
+
+ad tech world?
+
+[00:04:48] Brian: so, you know, these events are just entire, sales, orgies, like at the end of the, not literal, but like, 
+
+[00:04:55] Troy: You never know. 
+
+[00:04:56] Alex: Yeah. 
+
+[00:04:57] Brian: don't know. But I mean, it is the Fountain Blue, so it is, it is possible. I ran into this ad tech investor, he also podcasts and he was like, the next wave of ad tech is coming and it's, it's all this AI and they're just going to build the companies differently. And, you know, there's all these, conversation, whatever the panels on, on AI, but one of the things, this agency guy was showing me this Waldo dot FYI and it's, have you, I shared this.
+
+Did you guys go over it at all? 
+
+[00:05:27] Alex: A little bIt. 
+
+So I was a little flustered running in here. My son's watching Netflix, on the floor of my office. 
+
+[00:05:34] Brian: Shouldn't he be at school?
+
+[00:05:35] Alex: he's sick. 
+
+[00:05:36] Brian: Don't kids go to school
+
+anymore? Did I read something that kids don't go to school anymore?
+
+[00:05:40] Alex: no, no, he goes to 
+
+school every day. He's, got like a nasty raspy cough, and he hasn't been sleeping well. 
+
+[00:05:45] Troy: instructed by the leaders of the polycule.
+
+[00:05:50] Alex: yeah. 
+
+[00:05:51] Brian: This is inevitable. I think when, when de Blasio started dating, while married and his wife started dating too, 
+
+[00:05:57] Troy: That's a Park Slope thing. That's a Park
+
+Slope phenomenon. 
+
+[00:06:00] Alex: wait, I didn't, I didn't know that was It's a short walk to a polycule,
+
+[00:06:04] Brian: I think.
+
+[00:06:05] Troy: From where? 
+
+[00:06:06] Brian: From dating while married to, you know, I forget what they, they had some phrase for, 
+
+[00:06:13] Alex: I think, I wouldn't underestimate how hard it is to manage multiple kind of deeper relationships at once. I think, a big part of a Polycule is very much logistics and meetings and scheduling.
+
+[00:06:28] Troy: Said by a person that seems to know the 
+
+challenges. 
+
+[00:06:31] Brian: that's tough for you because you, you don't like product managers because 
+
+you, you would need one. 
+
+[00:06:36] Troy: if Alex isn't in a polycule, he's definitely adjacent. Because you would do the, all that.
+
+[00:06:41] Alex: California, I mean, but think about it, right? Like you need to manage like different people's schedules and energies and what they like to do, like. I mean, it's not, it's not as easy. Like two people, a relationship with two people is hard enough.
+
+Three, four,
+
+five. That's crazy. it's just a perfect segue to 
+
+[00:06:59] Troy: AI. 
+
+[00:07:02] Brian: what AI is going to change and
+
+what it's not going to change. Because one of the things that came out of this, to me, I've just been at that Possible thing for, for a couple of days is, AI will definitely change advertising, and because a lot of what, look, there's a lot of amazing advertising.
+
+I want your, input. You both have worked in advertising or advertising adjacent agencies, right? 
+
+[00:07:23] Alex: I mean, I ran one 
+
+and then that got acquired by what was a publishing slash ad network slash
+
+media, company. So yeah, 
+
+my, the first like 20 years of my careers were soiled 
+
+[00:07:37] Brian: Okay. It's a dirty business. But anyway, this waldo. fyi, it just does all the brand briefs. It does all the brand research. It can create, the pitch deck. It can, and you know, it doesn't, I haven't used it too many times for, there's so much work that goes into just the pitching process that is going to be done.
+
+By AI without a doubt. So I can see how advertising holding companies are salivating about this, but it would seem to me that a lot of, we already see a lot of marketing copy. It's clearly been written by AI in some areas. but what is your take on, on the impact that it'll have for
+
+advertising specifically? 
+
+[00:08:20] Alex: The creative componentt of it is going to be really, massively upended because, you know, rather than testing out, you know, 20 different variants and charging for the creative for those, you'll have AI is just generating hundreds of thousands of variants, you know, it came out that TikTok is even, starting to pitch AI, Influencers for brands because it's much easier to just, you know, have your influence influencer kind of communicate your message and then deal with people and all that stuff.
+
+So I think, both on the planning, but also on the creative and then also on the targeting, it's all going to be to be massive shifts. And my, my worry is that it only reinforces the power of the, incumbents, right? Like the people who have all the compute and all the data and all the stuff like that.
+
+So it's going to be more Amazon, Google, Facebook kind of, not only serving the ad, but generating the ad and, and potentially doing the strategy. You can just tell it, Hey, I need an ad that sells this shit. And, and, and it spits something out, you know, why wouldn't I go there? Am I simplifying this Troy too much?
+
+Am I being naive? 
+
+[00:09:29] Troy: No, I think you're right. I mean, I can't think of any way, you know, there was a demo. I don't know if you guys sent it around, but there was a demo at Google clouds event two weeks ago that showed something similar to Waldo or whatever it is. FYI, where you basically upload, you know, Merchandising.
+
+imagery, all of your brand materials, You know, really all this sort of ingredients of, of marketing campaigns, and it does most of the work, like a lot of the middle work that was the sort of busy work that keeps advertising agencies, you know, billing. And then you think about the things that Alex mentioned, which are like media optimization, media planning, targeting, creative optimization, all of that feels like it's pretty optimizable or, you know, supportable by, by, you Smart systems.
+
+And then there's the stuff that's not. And it's what gives, products meaning, which is the top, top layer of storytelling. And that will fuel, you know, a type of, content creation that will persist and be done by really high end talented storytellers. But even that will be rationalized to some extent because the creative process of making things is going to be massively AI assisted.
+
+So I think it's going to change the industry a whole lot. And, and I think that it's going to do something that people have talked about for a long time, which is put more focus on the product, right. Which is, if the product's good, you know, you still need to market it and you still need to kind of frame it and contextualize and tell stories about it and all that.
+
+But you, You know, the part of the product is a lot of the talking, which was, it does remind me of, of the, I mean, we can keep talking about this, but it just, well, I'll put a pin in it that the auspicious reviews or launch of the AI pin this week, which
+
+was really quite, quite 
+
+[00:11:18] Brian: Yeah. I mean, they could hire Droga5, but that that's not going to do
+
+it for that thing. 
+
+[00:11:22] Troy: as soon as it got into the hands of the people,
+
+people realize 
+
+[00:11:25] Brian: Yeah.
+
+[00:11:26] Troy: deeply 
+
+[00:11:26] Brian: can't muscle your way through
+
+with marketing anymore, but you know, this is 
+
+like sort of one of those lags, right? 
+
+[00:11:32] Alex: this product is exceptionally bad and, marketing for it was exceptionally misleading. I think some product products you could shove through, you know, if you, if you spend the money on, I think this one is,
+
+the cat's out of the bag, but yeah, sorry, 
+
+Brian. 
+
+[00:11:45] Brian: Well, let's talk about, can you, can you do that? give me an example of, of that. You can just muscle it through with like a lot of ad spend, leave aside. Like if you control distribution, 
+
+you can 
+
+[00:11:55] Alex: Oh, I mean, I mean, I think, that is the problem right now where, The internet including you know, a lot of the people listening to this podcast are quite excited about turning the internet into qvc I think you know troy talks about commerce and we keep talking about commerce saving content.
+
+Well, I mean, I 
+
+[00:12:12] Troy: Why would you, why, why would you say that, that
+
+about our 
+
+[00:12:15] Alex: me out. Hear me out there. there.
+
+is a potentially 
+
+[00:12:19] Brian: It's an interesting audience strategy 
+
+to 
+
+go antagonistic. 
+
+[00:12:23] Alex: But here's the let me kind of reframe this it's appealing to think that You you know, a lot of future of, the way content creators are going to generate, revenue is through commerce, right?
+
+We talked about commerce as a broad thing, but what technology and, platforms have allowed is to turn everything into basically QVC. Like if you look at the amount of shilling that's going on right now on TikTok constantly, either by the TikTok stores or whether within the influencers. And since you have like.
+
+This kind of giant logistics networks and fabrication networks that allow you to create all sorts of junk really quickly. The space has been flooded with junky products, you know, step onto Instagram. I keep getting some new cable management system or a pair of pants or a thing like that, and you buy those products and 
+
+[00:13:12] Troy: But there's some times, Sure, sure, sure, sure.
+
+[00:13:16] Alex: But a lot of them, I mean, Timu and stuff like that, it's like lowest common denominator stuff that it's just, you know, that you're getting just blasted in front of you. And then you buy this thing that ends up in a landfill, you know, three weeks later. I think we're 
+
+being shipped, we're being, we're being pushed a lot of junk right now because advertising has 
+
+[00:13:36] Troy: You need to get into a new segment, my 
+
+[00:13:38] Brian: no, 
+
+you going to be in like ad busters now? This is like,
+
+[00:13:42] Alex: well, no, it's not 
+
+[00:13:43] Troy: we're gonna It's not the, it's not the band I hate, it's their fans.
+
+[00:13:47] Alex: it's not true? 
+
+[00:13:48] Brian: are you talking about Fish? 
+
+[00:13:49] Troy: Yeah. 
+
+[00:13:50] Alex: I'm sure I just want to, I just want to say like to whoever's listening to us right now.
+
+I'm not talking about you.
+
+I'm talking about the other guy.
+
+[00:13:58] Brian: Yeah. The other guy, that's what, you know, actually to bring it back to advertising, David Kenney. I was doing a call with him after they sold a Digitas to publicists and it was him and Maurice Levy. And I was like, David, just first question. I was like, you've told me for five years, you would, the advertising holding companies were dinosaurs.
+
+Why in the world would you sell the one? And he's like, Oh, I was talking about the other ones.
+
+[00:14:18] Alex: Yeah,
+
+[00:14:20] Brian: Anyway, So if you were to start an advertising agency today, Okay, and you're looking at this stuff coming down the pike, because I think we've talked a lot about, there's no moats, there's no safe places, but like, what do you, I mean, it's not like fields are going to disappear or something.
+
+If you're going to start an advertising agency today, what, what would it be like? What would it be like? I would assume it would be just a few super creative people who can do amazing, creative work right around building on the product. Cause I, I keep coming back to. I just think there's a delay. If you think about the early organic days, I remember talking with Bob Greenberg all the time and he was like, advertising is just going to be, you know, product demonstrations.
+
+And in some ways he's kind of right. You know, it was 
+
+[00:15:01] Troy: He's kind of right. Right. It's like the thing that you sent around, Alex, that, that variation on the kind of personal recorder that goes with that software. What's the name of that? 
+
+[00:15:13] Alex: It's called limitless. ai and it's called the limitless pendant. 99 bucks.
+
+[00:15:19] Troy: 99 bucks, no subscription. They built the software first. You can clip it on. you know, on your clothing or put it on your key ring or whatever. And it's like a little single kind of purpose utility to help you remember things and record things and transcribe them and all of that. And it feels like it's quite useful.
+
+It didn't need a lot of storytelling. The founder is like a nerdy tech guy. And he made a long video about why he made it and what it
+
+does and all that. And that was enough for me.
+
+[00:15:47] Brian: Yeah. The future of advertising is loom.
+
+[00:15:50] Alex: Right. But I mean, okay. if I was going to build, an advertising agency today, it would be just. You know, a few creatives, that understand where to pull out, where to create things of value in a world where so many things are devalued. If somebody comes to you with a product that is brand new in a brand new space, that is competitively priced and well put together, then maybe you don't have to do so much work.
+
+But if it's a white t shirt or if it's just, Some sort of apparel that has a lot of competition. You need work to to put kind of objects into into the culture and get people to buy them. There's a lot of different
+
+[00:16:27] Troy: You totally do. Imagine that you were a seller of a thing. Say you were, you know, you made a new knife brand or something, and you wanted, or any product that you wanted to achieve some kind of Veblen status, i. e. it was a premium item, an item that's price was part of it's value. value proposition or some type of perceived premium.
+
+You know, there's a lot of work to do that just robots can't do to think about what the strategy is to do that. Why does your product exist? What's the story? Who needs to have it? You know, how do you kind of like ease it into culture? Where do people find it?
+
+How do they discover? I mean, there's all kinds of stuff that's really strategic. If you want to. Create something that is coveted beyond its, you
+
+know, utility value. I
+
+[00:17:14] Alex: actually why I think I think you see a lot of these pants brands just go with utility, right? Because I say. Everything's being turned into QVC. Everything is like Do you ever do this? And somebody spills coffee on their pants or tries to put a wallet that's too big in their back.
+
+And then they show you how the product solves the problem. But there's a bunch of products that
+
+do not fit within that
+
+[00:17:39] Brian: yeah. And I think that they're going to tack away from the digital advertising because it's going to be optimized into oblivion. Like the best, I think like out of home is going to be interesting. I was talking to some out of home people at this event. So maybe I got swayed by, but I think actually having a presence in the, in the physical, in the meat space, if you will.
+
+Is going to be more valuable than ever. I mean spending money on a flagship store in the design district is a great investment. I mean it gives you heft and the real world when you're on instagram. It's just a feed of pants of lighters of all kinds of different things. 
+
+[00:18:16] Alex: Yeah. And every. and the feeds are going to be completely swamped with that stuff, right? It's going to be indiscernible You know, like right now you have these fake podcasters advertising products. Have you seen that they look like It's meant to look like it's a guest on Joe Rogan and they'll talk about something But all these guys are actors and they're just recording
+
+30 of these a day or whatever wants 
+
+to 
+
+[00:18:36] Brian: thought about making LinkedIn ads
+
+like That 
+
+[00:18:39] Alex: think you should I 
+
+mean, I think we should spend, you know At least half an hour of what we're doing just shilling some supplements but, but once you do that, like once everything, you know, kind of swarmed with all these ads, yeah, absolutely put a billboard out on the 101, you know, or, or buy a store that seems to
+
+be a way to stand out. 
+
+[00:18:59] Brian: Do you see Airmail has a, newsstand? It's the first, I think it's the first newsletter to newsstand, 
+
+[00:19:05] Troy: thought airmail would get this far, but the content's really good and the
+
+packaging is good 
+
+and they're doing, 
+
+[00:19:11] Brian: the financials.
+
+[00:19:12] Alex: how do we get there guys?
+
+[00:19:14] Troy: Okay, sorry about that. By 
+
+[00:19:16] Alex: Like, we're not, we're not selling enough here.
+
+We're not, just, 
+
+[00:19:20] Brian: I 
+
+[00:19:20] Troy: just, 
+
+[00:19:21] Brian: coming up.
+
+[00:19:22] Troy: what do you, hey, Alex, do you think that this is a death blow for Humane?
+
+Do you think that, Yeah. 
+
+[00:19:29] Alex: yes. Yeah. Yeah. Yeah. 
+
+[00:19:30] Brian: It's not a death blow, it was DOA. That's not a, if you make a shitty product, if people are gonna find out, you can't just muscle your way through it. What, 
+
+[00:19:38] Troy: one of their employees, one of their employees, said on X, the head of new media said that, attempting to put a, a brave face on the reviews cycle, he said, feedback
+
+is a gift. 
+
+[00:19:50] Alex: right 
+
+[00:19:52] Brian: like, trying to 
+
+blame the negativity of social media, or quote unquote hit pieces and all this stuff, it's like, 
+
+[00:20:00] Alex: I don't think they're doing that. I think I think they actually didn't do that because I know the type of person that feels like That mentions that they've once they shared an elevator ride with steve jobs So now they're like gifted with the wisdom of the ancients, right?
+
+And I think a lot of people that come out of Apple, feel like they're, they're, they're leaving Apple with Some incredible assets, which they are, you know, like working at Apple is, is no small feat, but the problem is they don't, they lose the aura of Apple. They lose the infrastructure of Apple. They lose the decades of product development of Apple.
+
+And they come out thinking that they're going to release something and fall in love with their ideas. The thesis was wrong here. The product was badly executed. It works worse than, than I expected. And it, and it feels like a, a,
+
+It is just nowhere to go, you know, they So you're saying there's a chance, basically. Yeah. 
+
+this doesn't feel like a V one of something special.
+
+This feels like, yeah, this should be a 69 clip that connects to your phone if people want that form factor, and, I think the leadership, has lost a lot of. The aura that they started with. And I think that company is a joke now. So I have no strong opinions,
+
+but I look, I like the, 
+
+I like people I like people trying new things out, taking swings, but, they released a product that they knew was going to be reviewed like this because they knew it wasn't delivering what they said it would. 
+
+[00:21:29] Troy: Would you call them pinheads?
+
+[00:21:33] Alex: man. Yeah, I don't know. I think it's
+
+kind of incredible to like charge 
+
+700 bucks for 
+
+[00:21:39] Brian: do you think, they knew that? 'cause I always wonder that with like epically bad movies, if the people making it are like, oh my God, this thing sucks. Like, I thought it was gonna be better. I would assume they know it 
+
+[00:21:51] Alex: Everybody knows. Even even the thing that happens with movies or with any product more often than not is that people think it's going to be bad. But it turns out to be a success. You know, Lucas with star Wars. I think the reverse is rare to happen when a movie, everybody feels that that thing's a hit and then it flops.
+
+That's much more rare in product when the thing doesn't work. Like they knew it didn't work. They knew it took 10 seconds to answer. They knew it overheated. They knew it was so heavy that it pulled your shirt down. That's why everybody's wearing thick jackets. That's why they learned how to demo it by continuing to talk after having put the query in, you know, the projector on your hand, I mean, my hands aren't that wrinkly, but I'm pretty sure I can't read anything on them. You know, like it was just, it came from a thesis of like screens are bad. So what can we do to not use a screen? And answer is like screens are actually super useful sometimes, especially when you need to look at a map or review the photo you're going to take.
+
+Like that's, that's the truth. Having a little screen in your pocket is awesome, right? The fact that we're addicted to it. It's like saying, well, you know what? Like lighters help you smoke. So we should get rid of the lighter. It's a software problem. The addiction
+
+part of it. It's not like removing the screen.
+
+[00:23:06] Brian: But put yourself in their position. What, what do they do then? Did, did they, what should they have? Just like shut it down and been like, Here's the rest of the money. Back 
+
+investors. 
+
+[00:23:13] Alex: think it was hubris. I think if you look at the presentation when they announced it, they thought that most of the things would be fixed by then and they needed to announce something. They announced something as if it was, you know, the new iPhone. And leadership, in the company thought that they could solve all the problems I have a sense that they slapped on the ai thing because That thing had been in development prior to kind of Gpt's becoming mass market So I think they had a good idea and they had a bunch of people, you know, powerful people around them that
+
+told them they would change the world and they started believing it. 
+
+[00:23:50] Brian: Like, I wonder that about Quibi, what did they know and when did they know it? Because it seemed like when Quibi came out, it was obviously DOA, it didn't take, you didn't have to be Nostradamus to say that this thing's not gonna work. And I would hear like the guy we had, it was covering, it was trying to make, make a good case for it.
+
+To me, I 
+
+was 
+
+[00:24:08] Troy: I had a
+
+production deal with them,
+
+so I was optimistic.
+
+[00:24:11] Brian: Oh really? 
+
+[00:24:12] Troy: Oh You personally? 
+
+No, at Hurst. 
+
+[00:24:14] Brian: Oh, what did you guys make? Did you make that one, the, the, the guy with the gold, golden arm one?
+
+[00:24:20] Troy: No. We made several actually.
+
+it was like, it was a lot of money.
+
+[00:24:24] Brian: Was it good money? 
+
+[00:24:25] Troy: I mean, it
+
+was promising, yeah.
+
+[00:24:27] Brian: Yeah. So you believed in it or you just believed in the check?
+
+[00:24:31] Troy: I believe that we needed to make content for lots of distribution points. 
+
+Me 
+
+[00:24:40] Brian: He's got that, grin that says that the money was really good.
+
+[00:24:43] Alex: Well, I think that was the problem. Kriby is not a bad idea. I think at its core, it's something 
+
+[00:24:48] Troy: Well, it's been validated. It's been
+
+[00:24:51] Alex: TikTok validated it. It's just that, you know, the trick was to get people to create free content for
+
+you, you 
+
+[00:24:58] Brian: This is a problem. Tag people. This is the first principles. Is this first principles thinking? Like first principles. Don't pay for content. Get other people to do it for 
+
+free. 
+
+[00:25:09] Alex: mean, first principle that it's just like, don't do, don't, 
+
+[00:25:12] Brian: it. 
+
+[00:25:12] Alex: yeah, first principle just means don't assume that the way it was done before is the right way to do it and start over, but yeah, sure,
+
+[00:25:19] Troy: For the sake of the audience, let's step it up a bit and move on. Brian, you got other news items for us today before we
+
+get into the, into the, the main course. 
+
+[00:25:28] Brian: Well, I, I was, intrigued by, I want to keep with this AI theme, because I saw one of these videos about, an AI robotic, massage therapist that was coming out and, and. It was being demoed by the founder. And I was like, Oh my God, I know that guy. And his name is Eric Littman. And he used to run a mobile ad analytics company, and now he's doing robot massage therapists.
+
+And I think this is actually, I think this is a good use for, robotics. 
+
+I don't I think that's, I mean, it's fine, right? Like we've all sat in a massage chair, Brian. I have massage in my car, right? Like it does that, but it's not very good. Thing is I got a massage
+
+[00:26:12] Troy: yesterday, actually. I hadn't got one in a while. That's 
+
+[00:26:15] Brian: What is getting a massage? It's not 
+
+[00:26:17] Alex: No, but having a massage, having a 
+
+massager in your car.
+
+[00:26:21] Brian: well, getting a massage on a Monday is a humble brag.
+
+[00:26:23] Alex: Yeah,
+
+[00:26:24] Troy: well, 
+
+[00:26:24] Brian: I 
+
+was out there working at a
+
+[00:26:26] Alex: Troy's a walking, talking humblebrag, but
+
+[00:26:31] Troy: well, it made me think that there's just some things that we should agree that AI shouldn't do. There's just some things that we don't want AI to do or robots. I mean, it's fine if you want a cheap massage by a robot, but I would rather have a massage by a masseuse. I think,
+
+[00:26:48] Alex: it doesn't 
+
+everything. I mean, honestly, I'd rather, I'd rather have my art painted by a human too. I mean, I don't, I think it's
+
+just a cost thing, right? If you have a little, 
+
+[00:26:58] Brian: And convenience. I use like a massage gun. Is it, is it, is it as good on my Achilles as like a professional sports massage therapist who treats runners? No, but
+
+[00:27:08] Troy: well, that's a little different, right? That's therapeutic
+
+use of a sports gun on your whatever,
+
+but 
+
+[00:27:13] Brian: what kind of massages are we talking
+
+about? 
+
+[00:27:16] Troy: Like full, 
+
+like like a real massage.
+
+[00:27:18] Alex: all right, but Troy, Troy, what does it, what does it start 
+
+breaking there's certain things in society. You don't do 
+
+Okay. Just, he wants to, he wants to, run through a list Okay.
+
+[00:27:29] Troy: I don't want to run through this. I want, I thought maybe you guys would bring things to say. Absolutely not. Here's the thing that we've never seen a technology like. AI that purports to do so many things that touch so many industries where suddenly we're questioning our value as living, breathing creatures on the planet.
+
+[00:27:51] Alex: I'm going to throw one out. I mean, I was, when I started thinking about it, I started thinking about ones that you
+
+might choose. so I started going like, Zaleh, sommelier, you know, these types of things, but I, 
+
+yeah. 
+
+[00:28:03] Troy: don't want, I don't want a robot waiter. I don't care what they do. I don't, I want a real human being at a restaurant. In fact, I was having sushi the other day and a robot came to get my tray or whatever my plate and it was assisted by a human. But like the robot came over
+
+and I was like, get this thing away from me. I
+
+[00:28:21] Brian: that's interesting. It was assisted by the And I think that's the sort of really dystopian thing. I mean, I can see like a robot assistant, 
+
+[00:28:29] Troy: What? I, I think it 
+
+[00:28:30] Brian: robot, 
+
+[00:28:31] Troy: right? But I,
+
+think 
+
+[00:28:33] Brian: well, no, but I think that's where it's going, right? The, the, I mean, you see this already in the self checkout, like ridiculousness where you've got a, you got one human now, everyone else is doing, doing the work.
+
+I guess it'll be robots then. And the human just steps in when they have to,
+
+[00:28:49] Troy: but I don't want to talk to a. Robot therapist. I don't,
+
+I don't want to have I 
+
+[00:28:56] Alex: think therapy is probably why I draw a line. 
+
+[00:28:58] Brian: oh boy, 
+
+[00:28:59] Alex: You don't want to have sex with a robot. Wait, do you want to have sex with your robot therapist? You know that they could lose their license. 
+
+[00:29:08] Brian: that is true. 
+
+[00:29:09] Troy: I don't, I don't want a robot to cut my hair. I 
+
+[00:29:12] Alex: by the way, I know you have, I agree with you. However, I think sex and advertising are the first thing to fundamentally completely change because of
+
+AI and robots. It's unstoppable.
+
+[00:29:24] Troy: this is my list though.
+
+[00:29:26] Alex: It's the same as the internet, like together, sex and advertising always go together because you know 
+
+what?
+
+Like 
+
+[00:29:32] Troy: we have it. 
+
+[00:29:33] Alex: content that's, it's content that's created that people are too ashamed to talk about. So it never gets criticized. So, you know, porn and advertising. So that's where we
+
+try all the wacky technologies on. 
+
+[00:29:45] Brian: Well, that is true. A lot of internet technologies and media technologies were really sort of came out of porn, right?
+
+[00:29:54] Troy: I mean, I don't want a family dinner where there's a beautiful, you know, stew cooking on the, on the stove where it's being lovingly prepared by. people I want to hang out with, and I don't want a robot replacing that.
+
+I don't want AI doing that for me. 
+
+[00:30:11] Brian: Well, that's because it's human connection. It's not like you're not looking to
+
+get a meal. If you, if it's just like a transactional thing and that's, there's a lot of middle stuff in life. And I feel like with the AI discussion, everyone goes to the, to the things with the most meaning. No, it's not going to replace Nick Cage song.
+
+Like it's no. 
+
+I mean, it's going 
+
+[00:30:31] Troy: Nice Nice reference, Brian. Nice reference. I thought you were gonna 
+
+say What? Straits or something.
+
+[00:30:39] Brian: I hear straights. Well, Nick Cage came, well, Nick Cage came out against AI
+
+and he's like, they, 
+
+[00:30:45] Troy: Oh, Nicolas Cage. I thought you
+
+said Nick Cave.
+
+[00:30:48] Brian: Nick Cave. That's what I meant. Nick Cave came out against AI. He was like, it's never suffered.
+
+[00:30:53] Alex: Yeah, that's great. I think that, You know, that's all well and good until you start talking about the hundreds of thousands of people Who cannot afford assisted living and would truly benefit from a robot cooking their meals or giving them massages or
+
+Helping them clean the toilet. 
+
+[00:31:11] Brian: my wife and I
+
+didn't have children. So
+
+like I'm betting on the robots 
+
+caring for 
+
+[00:31:14] Alex: yeah,
+
+exactly. 
+
+after complaining. 
+
+[00:31:16] Brian: in this fight.
+
+All 
+
+[00:31:19] Alex: vision pro like strapping your vision pro while your robot masseuse gives you
+
+[00:31:24] Troy: Hey, listen, guys, I can go through my
+
+list of things I want the robot to do.
+
+[00:31:28] Alex: Okay, that's 
+
+better. I knew you would enlist 
+
+[00:31:31] Troy: No, but I, I was thinking and, you know, doing what I always suggest you guys do, which is prepare for the episode five minutes before I put a
+
+[00:31:39] Alex: Do I sound 
+
+[00:31:40] Troy: but no, you sound prepared. Brian doesn't sound prepared.
+
+The, 
+
+[00:31:44] Brian: What are you talking
+
+about? 
+
+[00:31:45] Troy: but like, I don't want, to go for a
+
+walk with a, with AI. 
+
+[00:31:49] Brian: Again, I don't, I don't agree my house.
+
+I'm fine with that. That's not human connection 
+
+That's taste. It's human connection and taste So you know, it's just a white box with a 
+
+why am I getting so much 
+
+[00:32:05] Troy: What do you not want the
+
+AI to do for you, Brian?
+
+[00:32:08] Brian: Anything to deal with human connection, right? So I don't care about reading, marketing, messaging. That's from a Ai, okay? I don't wanna read a novel that was written by AI because 
+
+[00:32:22] Troy: want AI to be your coach? your 
+
+[00:32:25] Brian: like life coach, I don't know. I mean, I've asked like the ai, like perplexity and, and Claude three. stuff that's beyond just like factual information. I don't find it very good, at least right now. 
+
+[00:32:39] Alex: I love turning on the chat GPT kind of voice conversation mode. I was doing it while I was cooking. I was making corn tortillas. And at first I was just asking It to help me with some measurements For some reason it asked me like if I was adding stuff to it and I said, oh i'm thinking about doing that and then Yeah, I said like well You know if you did that you could do that and then I ended up having a conversation with it And I found out it was very engaging and I thought this is absolutely something that's gonna happen.
+
+[00:33:07] Troy: Was your son, your son was rolling around coughing on the floor in 
+
+[00:33:11] Alex: Yeah No, I was actually I was alone in that moment and I felt like really it wasn't a sense of It wasn't like
+
+companionship or stuff like it was 
+
+[00:33:19] Troy: anytime.
+
+[00:33:20] Alex: But it it felt it felt like a like a lot of people are lonely, right? And I I think if it helps it helps where where ai worries me more is in the mass produce production of stuff that is just heavily targeted to to elicit a behavior from us so either like mass produced content Mass targeted content, advertising, even down to like, Timu creating, generating like custom products that get 3D printed somewhere in China, you know, and shipped across the world because you just, you know, Google red shoe at one point in your life, like that type of stuff worries me more where AI becomes so great at turning the world because I do think now I believe now that the technology.
+
+Yeah. you know, the end state of capitalism and technology is to turn everything into QVC, like everything will be like, Oh, you wanted this, here's the thing, right? And you can do that with content and soon with hard goods. And, with real goods and
+
+[00:34:18] Troy: Yeah, I do do you believe that, Alex? Because if that was the case, then there would be a massive hole for the opposite. Because people wouldn't want that. You wouldn't want that. And I would market something bespoke
+
+and made to you.
+
+[00:34:33] Brian: yeah, this is not coming for Brunello. I mean, it's, it's like what you're talking
+
+[00:34:38] Alex: but you're talking about like, but that's but then we're talking as like the one percenters who say like, well, you know, you'll always enjoy this. But the fact of the matter is right. But the fact of the matter is like the vast
+
+majority of people will have very little money 
+
+[00:34:51] Brian: Oh, I didn't say this is going to be a democratic thing. I mean, if you looked outside in society, I mean, give me a break. Like, this is going to go, this is going to widen the gulf between the haves and the have nots. And 
+
+[00:35:02] Alex: It's
+
+going to 
+
+[00:35:03] Troy: Or the ha the have nots are gonna have more.
+
+[00:35:05] Brian: Yeah, they're gonna have more crap. But 
+
+[00:35:07] Alex: I'm gonna have more ca don't
+
+[00:35:09] Troy: And they're gonna have massages and they're gonna have like yeah. Troy, you, you asked, you asked about what, what we didn't want AI to make. What I don't want AI to become is the perfect way to extract more out of the, vast majority of people that are, that are poor in this world.
+
+[00:35:25] Alex: I think that's what it's going to become. We're, we're like,
+
+[00:35:28] Troy: Or to emancipate them.
+
+[00:35:30] Brian: yeah. So you're, again, you're against the sommelier becoming
+
+a, a ai 
+
+[00:35:34] Alex: I'm just saying what I would. I'm not saying it's going to happen. I'm saying that's what I don't want to happen. we could kind of have a renaissance where we feel like, you know, like when everything is devalued, we look for things of value and the things of value are things that is, it is the spoon that was carved by some somebody, or it is like time together, or it is a real song.
+
+Yeah, sure, sure. I hope so. However, algorithms plus AI plus, you know, massively optimized fabrication logistics is a great way of like turning the majority of the population into like, macro consumers that keep buying shit. That's why Timo is so
+
+big. It was why these sites are exploding. 
+
+[00:36:15] Brian: Yeah. But it's inevitable, isn't it? I mean, it's inevitable
+
+that this is technology plus capitalism. I mean, that's, 
+
+[00:36:22] Alex: but it's game over for, for us, for culture, for the
+
+planet, right? 
+
+We 
+
+[00:36:28] Troy: Whoa.
+
+[00:36:28] Alex: our, 
+
+[00:36:29] Brian: Shouldn't, the marketplace like replace, I don't know, the marketplace always 
+
+springs up with alternatives. 
+
+[00:36:34] Alex: hope 
+
+so. 
+
+[00:36:35] Troy: What if it gives us much more time to be with one another? What if it gives us much more time to,
+
+[00:36:41] Alex: We're talking about different paths here, Troy. If it does, yes.
+
+Great. If it doesn't, then not great. 
+
+I'm not saying It will happen. 
+
+[00:36:48] Troy: But no, what you're saying, what you're saying is actually, in some ways, to me, very sort of pessimistic about the nature of people. Right, like that we're just going to allow capitalism to feed us Timu endlessly because we are just these kind of slaves to, you know, the these kind of endorphins that are produced by these big kind of algorithmically driven machines.
+
+And we're just going to like keep
+
+ordering on our phone.
+
+[00:37:17] Brian: I don't know. I mean, if you look at like our behaviors in general with Instagram even X, these algorithms, you know, are, are the first step and then you can imagine AI is going to be the most 
+
+amazing 
+
+[00:37:31] Troy: don't know, man. I was just outside. It's a sunny spring day in New York city. And there's a lot of people hanging out, enjoying themselves. And think that, that you can overgeneralize our, our complete kind of servitude to the screen,
+
+[00:37:46] Brian: Yeah.
+
+Although I like to, I like to play a game when I, when I walk in, in New York and sit and count the number of people who are looking at their phones that I see. And just do it sometime and see what percentage, be like, yes, no, yes, no, yes, no. 
+
+[00:38:00] Troy: you know, that's true. Alex, I used to, I used to have this, same. I felt like I had to bring this observation to the elderly, management at, Hearst that that particular day on my commute to the tower, there wasn't a single person on the subway reading a magazine. I mean, that obviously doesn't shock you.
+
+Right. But like, It was news to, to certain people. Listen, there's a bunch of things Alex, and I know you'll be sympathetic to this because you, I think, share with me some executive functioning problems. I want AI to do my taxes really well and to save me money. I want AI to drive me around for sure.
+
+I love, I love it being driven. I drove with you, Alex, in an AI car. I want AI to fold the laundry, clean the house, get groceries. I want to do all that shit. I wanted to organize my desktop on
+
+my computer.
+
+[00:38:55] Brian: Oh yeah. 
+
+Well, efficiency, that, that stuff has nothing to do with human connection or
+
+taste. 
+
+[00:38:59] Troy: I've been reading a lot of legal documents this week. I wanted to help me
+
+[00:39:03] Alex: You know what? I think I'm often the optimist about technology and I am optimistic. I'm very excited about, about the state of technology right now. Just like caveat what I'm about to say. I agree with you. I'm excited about all of these things and all of these things are great.
+
+I think if you can pay a subscription and, you know, pay enough, you know, to cover the compute and stuff and have a pretty raw You know on filtered access to to the LLMs to the AI to the intelligence that we have tapping into if you're poor and that thing needs to be subsidized by advertising and commerce. Then you'll have a very different experience. Troy, then your reality of of how you're doing your taxes or picking up a pair of pants and stuff like that will be will be filtered through, gigantic commerce engines that will constantly try to extract some value out of you because you're not paying a subscription.
+
+And I feel that there's two realities here. One, which is we just to simplify it, one, which is you pay for a subscription model, you get the utopian version of AI where it helps you, where it talks to you, where you're making your tortillas, where it helps you through ship. The other one is the dystopian version of AI, where it is constantly, it's an intelligence that is so smart, knows anything about you.
+
+And it's constantly trying to extract value from you. Constantly trying to extract value from it. It's what algorithms do today, 
+
+right? And you can't say that the Social media, I think I mean in some some days. I think it's all made us crazy a little bit There's some stuff that we think is normal that five years ago.
+
+We would have thought it's completely insane behavior Because we've been so conditioned by by feeds which are just meant
+
+to extract value from us. That's all they do 
+
+[00:40:48] Brian: But is there data about, I think what Troy's point is like, there's, You know, there's an extremely online, population, and I think we tend to think it's larger maybe than it is. I mean, I find that sometimes I, it's refreshing a little bit to be in Miami for that reason, is that people have none of the concerns that like everyone always talks about.
+
+Nobody talks about politics. Like nobody, everyone's like, oh, how do you live with dissent? It's like nobody talks about it. I don't think 
+
+people care, 
+
+[00:41:13] Alex: for him. We don't 
+
+[00:41:14] Brian: but nobody gets, most people are apathetic the way it used to be. And I'm sure in New York and San Francisco, fine, 
+
+[00:41:19] Alex: Oh yeah, most people don't give a shit. Yeah, that's true. Yeah.
+
+[00:41:22] Troy: Listen, you guys, I mean, I, I think the biggest challenge of our time is coming. And if we build these sort of general cognitive systems, like everything changes, right? And so I, I guess I agree with you, it's going to be fundamental, like how the economy works, what's valued, do we need universal basic income?
+
+You know, how do we find like all the other things, like the cognitive labor that we did, like, how do we find meaning in work and the pursuit of something that, that, that's kind of defined much of our adult lives? you know, like this is a massive social economic transformation that will touch all aspects of how we organize ourselves.
+
+And I just, I can't, I just have more faith in us that we're, you know, going to get fed by Timu
+
+because of, you know, pernicious algorithms. 
+
+I, I we, we definitely adapt, but it's going to, it's going to be, it's going to be messy because the way that we adapt is through just sort of, you know, different people picking sides and kind of arguing it out and it's going to be nasty and there may be, there may be flashpoints that are very, you know, regrettable,
+
+but we're on our, we're on our way to a
+
+very new system.
+
+[00:42:45] Brian: Well, it'll be interesting. 
+
+At the very least, it'll be interesting. There was a great podcast, Ezra Kleinhead with, the Anthropic CEO. Dario Amadai. He came across to me as, as very thoughtful, in a way that I don't sometimes get that feeling from, from some of the people when they're talking about this.
+
+Well, who knows? It'll be good. We think it'd be great. You know, they always do a hand waving though with the drug discovery and I'm like, yes, great. Do the drug discovery. But why did you start them with where you did? Like, why don't you just make this around drug discovery? 
+
+[00:43:17] Troy: He was great, but you know, one of the points he made repeatedly was what I would call this sort of techno determinist kind of point of view, right? Which is, we got no choice. The Russians are going to have it. The Chinese are going to have it. Fuck, the North Koreans are going to have it.
+
+So, we're all going that way. And the best way to defend ourselves is to understand it better than them by building it first. And that's kind of true, you know, well, it's kind of like, oh, we discovered the round wheel. How do we ever go back to the square wheel? We can't. You know, I mean it, there's something about progress and technology and humans that means that we just are kind of like enslaved to, to this kind of, pursuit of progress.
+
+And I think he's right. I think the point gets me, but you're in, and listen, it's easy to stand back and say, no, wait, wait, wait, well, can't we be more thoughtful about it? Can't we put it in the hands of government versus put it in the hands? We don't even know what it is. We don't even know what. I would like to put it in the hands of the technocrats in Washington versus the technocrats in Silicon Valley doesn't make me feel much better. Right. But like, I just, I don't know, I think it's what we're about to go through is really staggering. And one of the things that brings it home to me, Brian, is the changing nature of warfare. 
+
+[00:44:39] Brian: Oh yeah, 
+
+[00:44:40] Troy: what good is it now to have an aircraft carrier? Do we need an aircraft carrier? Let's just
+
+build a billion drones and send them over. 
+
+[00:44:48] Brian: I take back anything I said about the video gamers being
+
+incest because we need them on the front lines 
+
+to be operating these drones. These are the most, these are a valuable national asset.
+
+[00:44:58] Troy: Yeah. 
+
+[00:44:59] Alex: I mean, I don't think we even need them. I think everything is just going to be
+
+automated.
+
+[00:45:02] Brian: So we don't even need 
+
+them. 
+
+[00:45:03] Alex: Yeah. 
+
+[00:45:04] Brian: That was a question I thought at the end that was interesting in that conversation. When Ezra Klein asked what he would advise. his children to, to go into, and, and what skills they should even acquire. You know, there was, it was just, I swear, it was just a couple of years ago.
+
+We liberal arts majors were being told browbeaten to learn to code. Okay. Learn to code, learn to code, learn to code. And now when you know it, it seems like that might be the first thing that get that skill that gets completely and utterly commoditized and taken away. The answer he came up with was kind of pad.
+
+It was like, it was, it was about adaptability. Cause I think that's the techno, what is it called?
+
+Techno, techno determinist thing. It's like, we're in the barrel. We're going over the Niagara falls. 
+
+[00:45:52] Alex: but I think that you should, there's no era where you shouldn't have taught kids that, right? Because when I was, when I was growing up and all I wanted to do was work on computers, people at school was telling me, well, I should learn to become an accountant, right? And I
+
+went out to 
+
+yeah, I mean, you know, I was in France.
+
+There's like, get a real job, like accounting or, 
+
+[00:46:13] Troy: Hey, Alex, I see your kid behind you. Is he aware of AI? Does he know what it is?
+
+[00:46:18] Alex: Yeah. It's just,
+
+[00:46:19] Troy: Can you have him come over to the mic? If you asked him what AI is, what would
+
+[00:46:23] Alex: talk to the computer. Hey, buddy. Can you pause it, please? Press pause. Spacebar. Spacebar.
+
+[00:46:28] Troy: It's
+
+Alex telling the 
+
+[00:46:31] Alex: Space. Yeah. space 
+
+Oh no, you don't pause this. It's a game. Sorry. Come here. you see these, these two men? They kind of look like Santas. They want to know, do you know what AI is? Of course I do. What is it? I don't know. What is AI? Bye. All I know is a computer that I, that you ask questions to and it tries to answer.
+
+That's a good answer. That's all I can,
+
+that's all I know it Do you, 
+
+do you think it's, do you think it's smart? It's probably as smart as a person because someone had to make it. Hmm. All right. Well, that makes sense. Thank you so much. Thank you
+
+for calling in. That was great. 
+
+Yeah, I mean, I think it's 
+
+[00:47:18] Brian: because the person had to make it.
+
+[00:47:19] Alex: well, you know, the first time I showed him that he was, and he's, you know, he was only five then. I think it was generally like kind of a moment for him.
+
+Like I could see his, his, his something clicking. And it was so nice to see that he just wanted to ask it questions. Like he kind of understood the power of it immediately. And he knows he can just ask me to Google something usually, but there was something different there. I think it's, going to be crazy to watch him grow up in a world where this stuff is just everywhere. 
+
+[00:47:46] Troy: One thing I, I want to write something smart about, but I don't have anything to say that's meaningful yet is what happens to the nature of truth in this whole thing. There was a story in the Wall Street Journal this week, Brian, about the dude who had some guy
+
+on Fiverr create a 
+
+propaganda machine for a hundred bucks. 
+
+[00:48:08] Brian: bucks. 
+
+[00:48:08] Troy: Yeah, and then I looked at the video of it and it was, I don't know, was it in Iowa or something? Basically, they set up this, you know, a little instance of a, you know, website on WordPress or something and then had all the articles generated with through the, chat GPT API and gave it a right where like a right slant and it just kind of went out and made tons of content and it looked like a local news site. now you or I would not go to that and read it and spend any time with it right like. I don't
+
+think it would justify that. Or I think obviously alarm bells 
+
+[00:48:44] Brian: Well, it just pops up in feeds. I mean, these already exist. They're done by either Macedonian teenagers or the Russian, you know, intelligence 
+
+[00:48:54] Troy: right. So you find them in a different context. You get them in your feed, you click on it. You arrive at the site quickly. It looks legitimate. You think it's legitimate.
+
+[00:49:01] Brian: Yeah.
+
+[00:49:01] Troy: that the mechanic? 
+
+[00:49:03] Brian: I mean, that is the mechanic. I mean, that was the, the R. I. P. BuzzFeed News, story about the Macedonian teenagers creating, at the time, it was because, it was an, ad tech story, really, because they were just being motivated by plugging in programmatic advertising, getting revenue from, you know, using the Facebook algorithms to, to get traffic to incendiary content that said the Pope endorsed Donald Trump.
+
+[00:49:27] Troy: But to me, it sits along a continuum that started in my mind. Now, it may not have started here, but with Trump and it was that there's something fungible about digital culture. And about the content that we create, that we kind of live and breathe on, in our feeds, where, the idea that, a politician would spew, observable lies at that time.
+
+Remember, I didn't know what this would have been like, 2014, just seemed crazy to me. and I think to most people in media that we're documenting all of the things that Trump said that were in fact not true. And now we just call him a liar.
+
+but at the same
+
+[00:50:10] Brian: And it doesn't affect him. 
+
+Doesn't 
+
+affect him at all. I mean, Joe Biden ran for president and
+
+had a drop out because of he like. plagiarized Neal Kinnick's like,
+
+[00:50:20] Alex: mean, there's also, there's also psychology there that whenever, when people are so polarized, you know, the truth doesn't really matter at that stage, like because they think that the lie, as long as the lie is there to help their side when it's fine. So I don't know if it's, it's
+
+that people are just being swindled more or rather 
+
+[00:50:38] Brian: but this is the, so I, I love like this Jeff Bezos thing that he says, humans are not truth seeking, truth seekers by nature. We're, we're social animals and that's for protective purposes. Like we need to have, we need to be on a team. We need to be in a tribe because there's a A lot of threats out there.
+
+And so we end up coalescing around that and creating out groups. And it's, it's sort of human nature. And I think a lot of these technology systems are tapping into human nature, but because of their, because of what they do and the way they're able to accelerate and speed it up and metabolize it so quickly, and then reconstitute and spit it out, that, that is where the sort of danger.
+
+So none of it is truly new, but the scale 
+
+[00:51:21] Alex: But I think, I don't know if there was research, but anecdotally, I think if you talk to Gen Z, they're much less susceptible to believing in things being true. Not only online, but in general, just a little bit more suspicious of things. I think we, we grew up in an era where you couldn't believe all the texts you were reading was true.
+
+And that was something new for a lot of people, right? To have a site that looks official, where you, something looks true. And then quickly, you know, with AI and with other tools, well, what you hear wasn't immediately true. Then photos, then videos. I mean, I think the entirety of, you know, The way we can kind of create content is being proven as being falsifiable.
+
+Therefore, it either turns us into people who believe what they want to believe or do people that are suspicious. I'm a little bit more optimistic there because I think that generations that grew up in that, build that resilience, 
+
+[00:52:15] Troy: You know what's just,
+
+you know, what strikes me, Alex, is that there's this kind of parallel reality that's part of modern technology and AI where I can load a bunch of information into the AI and have it immediately sort through it, categorize it, summarize it, find the truth, find the patterns.
+
+Find the things that ultimately are real and true. And on the other hand, we can use the same technology to create a world that's completely unreal and virtualized, which is it's, it's a fictional narrative, right? and to me, every time a complex system gets built around lies, it eventually collapses. Like it can't sustain. And so my hope is that like, and I just can't reconcile these, these two realities where we have so much information, the ability to parse through it and get at what's true, what's real, like all of that. But at the same time, fact that we create our worlds, these disposable digital worlds, every
+
+minute of every day means that truth is just 
+
+[00:53:24] Brian: Yeah. It's kind of crazy to think about like growing up analog and to think of, think about having access to all the information basically in the world. And just that would have been mind blowing. But then to think the end result is going to be, people are going to be less informed, more confused and less sure of like what is true and what is not true than when.
+
+And I guess you could say that sort of ignorance was bliss in, in that analog age, but I just wouldn't, I would have assumed that more information means, a better
+
+coalescing around what is real and what's not real, but I guess the opposite happened.
+
+[00:54:03] Troy: hmm.
+
+[00:54:03] Alex: While I have a hard
+
+stop on that note,
+
+I got to get back to reality myself. No, we never skip a good 
+
+[00:54:11] Troy: we never do. 
+
+
+[00:54:14] Good product
+---
+
+[00:54:16] Troy: Well, you know, I'm struggling. I was struggling this week a little bit. I thought maybe we'd just cut it short and I would say it's such a glorious day in
+
+New York City and the spring is really wonderful. People 
+
+are out and they're excited. 
+
+[00:54:27] Alex: gonna 
+
+[00:54:27] Brian: the good product?
+
+[00:54:29] Troy: No, well, that's not what it was going to be.
+
+do you guys ever listen, do you ever listen to a song on repeat?
+
+Like No. a song I do. Yeah. to it
+
+[00:54:37] Brian: Oh, I I do it. songs like, I go into phases. Yeah. 
+
+[00:54:41] Troy: No, but will you listen to it like a song over and over again? You ever done that, Alex?
+
+[00:54:45] Alex: Yeah, I do it all the time 
+
+[00:54:47] Troy: You do? 
+
+
+
+[00:54:48] Troy: Four. 
+
+[00:54:50] Brian: in a row?
+
+That's not that many.
+
+[00:54:53] Troy: I listened to a song today four times, but I'm not going to use that eitheR. you know, I gotta say, I, I'm, I'm obviously, invested in the outcome of, you know, Yahoo's change process. It's interesting to watch and wonder if Yahoo is just going to be the one big last website on the planet. And, you know, it is among the biggest websites other than like the utilities and the social platforms, but I noticed this week that the team at Yahoo Finance relaunched finance.
+
+I don't know if you've seen it, Alex. But it's like a good product. And, I wish that they had the news scale and might of say a Bloomberg, right. That could keep, you know, cause, they have Yahoo finance, which has a kind of little mighty news team, but it's largely fed by
+
+syndicated content.
+
+
+
+[00:55:45] Brian: it's a stock ticker, isn't it? The Yahoo thing is like people come from the utility and then you build, you know, some, 
+
+you know, some content around. I mean, Yahoo Finance is one of their top verticals. They have, they have quote unquote real content there, but, 
+
+[00:55:57] Troy: sports is making progress as well, but Yahoo finance, as of yesterday, Is a newly launched product and on desktop. It's kind of amazing. Not kind of amazing. It's just
+
+good. 
+
+[00:56:08] Brian: But the strength of it is not the product. The strength of it is the lock in. Once you have your portfolio in there, you're, you're less likely to change, right?
+
+[00:56:15] Troy: true, although, you know, Google has much of the same functionality built into the SERP and Yahoo has managed to, I guess, to your point, because people have, you know, invested time in, in the, you know, their own data into it, but, you know, it'll be interesting to see that Yahoo has survived and on account of scale.
+
+and on account of having their own DSP and their ability to manage the ad stack has kind of like will become the the last big website. And then what they do from there will
+
+be, you know, TBD, but I don't 
+
+[00:56:47] Brian: They still got all that AOL dial up money coming in to grease the machinery. You think Jim can come on? Jim Lanzone, the CEO? That would be a great 
+
+[00:56:56] Troy: I mean, it'd be great to have them. 
+
+[00:56:57] Brian: He bring like four PR people?
+
+[00:57:00] Troy: I think so. 
+
+[00:57:00] Brian: Yeah.
+
+sucks. Tell him to do it. He should do the rebooting show instead. I allow that. Sometimes. 
+
+[00:57:07] Troy: Well, 
+
+[00:57:08] Alex: that's why we're the flagship. 
+
+
+
+[00:57:10] Alex: yeah, yahoo also bought artifact, right? Did you
+
+mention 
+
+that? 
+
+[00:57:13] Troy: did. I
+
+talked to Matt about that. Yeah.
+
+[00:57:15] Brian: The guts of it. What are they just going to do it for the recommendation algorithm?
+
+[00:57:19] Troy: Yeah, I think they have a good head start on figuring how to connect different pieces of content together. 
+
+[00:57:24] Alex: Yeah, it's exciting. It's exciting. I to and i've talked to them about that I wish they went back to their old logo. Well,
+
+they they still have the 
+
+old the old serif 
+
+[00:57:35] Brian: Oh, they do? Lowercase?
+
+[00:57:39] Alex: It was all uppercase, actually.
+
+[00:57:42] Brian: They were lowercase at some point, I thought. 
+
+[00:57:44] Alex: Well, Mercemer changed it, right? But there was this kind of, the one that looked like a Nickelodeon cartoon.
+
+Troy can add it to the
+
+newsletter.
+
+[00:57:53] Brian: Marissa American, she brought the purple back. She was all into the purple.
+
+[00:57:57] Alex: Oh, yeah, good product. Other good product is, you should, all try out Limitless which, Captures your meetings and audio notes and they're releasing that AI pendant where you can just record notes into it For people like me who
+
+have a terrible memory. It's very exciting 
+
+[00:58:12] Brian: Oh, my good product in that is Shortwave. This AI email app, it's made a giant difference for me. It, 
+
+[00:58:20] Alex: I started using it, but I I don't think I use it Well
+
+like you do so I might ask you how you use it. How do you use 
+
+[00:58:28] Brian: I, I just, I have batches for like sales emails, I have batches for newsletters, I have, you know, batches for different things and then just pin stuff that I have to get to and I, cause I get lost in email. I'm just, I'm a terrible 
+
+[00:58:41] Alex: does it create batches? Isn't it like just like rules in Gmail where it's like same
+
+people or is it smarter than that? 
+
+[00:58:47] Brian: It's, it's smarter. I mean, the AI agent is okay, but I mean, I use it, like I say, How much was this contract for? You know, and it'll go and find it. It's not always, it's not a hundred percent. 
+
+[00:58:58] Troy: I know we're at the bottom of the episode but I have one little update.
+
+[00:59:02] Brian: a correction? 
+
+[00:59:03] Alex: Okay. I'll admit it. 
+
+[00:59:04] Troy: Okay. all right, Brian. Someone named Mike Smith volunteered to pay for an annual rebooting
+
+subscription for me.
+
+[00:59:16] Brian: know, he's a gentleman. And he's always been a gentleman.
+
+[00:59:19] Troy: Yeah, so he's gonna
+
+pay for it and he went on and he tried to pay for it. 
+
+[00:59:23] Brian: The thousand dollar one? 
+
+[00:59:24] Troy: I don't know. We'll have to see. And I think it depends whether it's tax deductible or not, but he said I couldn't do
+
+it because you already have a membership. 
+
+And I
+
+said, I your membership.
+
+you did? Can you Yeah. it, please? 
+
+[00:59:36] Brian: Oh, good. I already
+
+did? it. I think it'll expire in like a few days because you said it wasn't worth it. So I canceled it. 
+
+[00:59:43] Troy: Okay. 
+
+So that, It's not worth it. Forget it.
+
+Well, anyway, Just so you know, I'm, I've got a new annual one
+
+coming in 
+
+[00:59:52] Brian: Good Good Yahoo. Yahoo marketing group. They they just I saw a subscription come in from them They're dry. I don't understand this get a group subscription I'm gonna like have to go to them if you're listening Yahoo, like get a group subscription Don't put marketing at yahoo inc. com like it's that come on.
+
+Don't we know this just make up a name 
+
+
+[01:00:12] Outro
+---
+
+[01:00:12] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com. 
+
+[01:00:28] Troy: Brian, I have to, someone just texted me about you. 
+
+[01:00:31] Brian: Fuck, I don't like that
+
+[01:00:33] Alex: This is worth me being late for my meeting. Just
+
+[01:00:36] Troy: she's a friend and she said, I don't understand Brian's subscription offer. He seems to block the end of post and says, for subscriber content, go here. Then when I get to the subscription page, the two offerings seem to be for events and business insights only.
+
+I don't want those.
+
+He needs to tweak his language because I was ready to 
+
+subscribe. But to all content, not 
+
+[01:01:02] Brian: Jesus Christ. 
+
+[01:01:03] Alex: Brian, this is 
+
+free user feedback. 
+
+It's 
+
+[01:01:06] Brian: I know, I 
+
+[01:01:07] Alex: Take it as a gift. 
+
+[01:01:08] Brian: I'm taking it. 
+
+I'm taking it.
+
+[01:01:10] Alex: Okay. We
+
+can work. the whip with my product guy.
+
+Yeah, I can help you out. 
+
+[01:01:15] Brian: Thanks guys.
+
+
+

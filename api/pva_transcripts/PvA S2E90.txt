@@ -1,0 +1,511 @@
+PvA S2E90
+===
+
+[00:00:00] Brian: Were you there for Fête de la Musique on Friday
+
+[00:00:02] Troy: I was out that night. I was out that night.
+
+[00:00:04] Brian: wasn't it? 
+
+[00:00:05] Troy: Yeah. There's a lot of activity.
+
+[00:00:06] Brian: was fun.
+
+[00:00:07] Troy: Yeah, it was music everywhere, people on the streets, 
+
+[00:00:10] Brian: We need that. We need that in the United States of America, 
+
+[00:00:13] Troy: It was good to be in Paris, although I really have to say I hate that Paris airport. 
+
+[00:00:18] Brian: Degales needs some, a bit of a rethink.
+
+[00:00:21] Troy: no lounges there either.
+
+[00:00:23] Brian: Yeah, but lounges are overrated.
+
+[00:00:25] Troy: Not the good ones.
+
+[00:00:27] Brian: Really? The Virgin Lounge is the best lounge that I've been in.
+
+[00:00:30] Troy: Virgin Lounge is good, so is the Emirates Lounge. The new American lounges at JFK are really good. It's good.
+
+[00:00:36] Brian: The Delta lounges are terrible. They're pits of despair. 
+
+[00:00:39] Troy: I,
+
+[00:00:40] Brian: my snobbish take from premium economy. 
+
+
+[00:00:43] Intro
+---
+
+[00:01:05] Brian: Welcome to People vs. Algorithms. I'm Brian Morrissey. Each week, I am joined by Alex Schleifer and Troy Young. We discuss patterns in media, technology, and culture. this week, we are back after a week off because I was traipsing around the Riviera. But unfortunately, because of the time difference and various scheduling issues, Alex didn't join us.
+
+So Troy and I took the opportunity to focus squarely on the state of the media business. What else? I'm not sure we broke too much new ground on this episode, but I think one of the main takeaways that I had from Cannes is a general clear headedness out there about the current challenges facing the media business.
+
+And I think that's good. I don't think any people are claiming that, they don't exist. And I don't want to be called a negative dude, but that's simply a reality for most of the people in this field. Yet, as Troy points out, we're not the only We can sometimes go overboard with that extinction narrative because after all, anyone running a media business should at this point be used to playing balance sheet whack a mole.
+
+I mean, Google's war on couponing subdomains, you know, creates a million hole in the balance sheet. Well, you rush to fill it with services revenue. Indirect traffic subsides because Facebook breaks up with news and really The overall publishing ecosystem and Google becomes less reliable.
+
+Well, then you got to look to direct channels. Closed loop attribution exposes the flaws of your smoke and mirror media research that shows in Troy's words, someone has a six times more likelihood to buy a barbecue grill because they read your articles. Well, then it's time for events and activations. now while some
+
+companies go out of business? Almost certainly. Yes. Will more people lose their jobs at publishers? I'd be surprised that that is unfortunately not the case. Is there a path forward that is obscured? I can't come to any other conclusion after asking several publishing CEOs what their businesses look like in five years.
+
+I got No clear answers on that, with most saying there's simply no way to know with how quickly the ground is shifting. After all, as Neil Vogel pointed out in my podcast with him in Cannes that you should absolutely check out on the Rebooting Show. 18 months ago when they began talking to OpenAI, the world was simply a far different place than it was when they struck that deal with OpenAI in the spring.
+
+Um,and in many ways what's happening now at Publishers is a reorganization to prepare for the further challenges ahead. And I think that From my conversations last week in Cannes, this was a clear message because the current challenges, I think a lot of people are looking down the road and seeing them, become even greater, Axios CEO, Jim VandeHei, recently had a, column I don't think he's really known as someone traffics and hyperbole, and he certainly doesn't have an incentive to, um, To be alarmist in my view.
+
+but he wrote in this that, this is quote the most difficult media moment ever. And that in his words, only urgent dramatic change will save most companies. we discuss all of this, penchant for a well curated hotel playlist and whether AI will replace tour guides. And finally, the continued power of media made from a place of passion rather than.
+
+Simply manufactured. And finally, we addressed whether being called a advertising guru is insulting. My position is it beats B2B to be an influencer. Now onto the conversation with Troy. 
+
+
+[00:04:17] Episode start
+---
+
+[00:04:17] Troy: the thing about this, the thing I learned at this hotel, I had been thinking about what it means to appeal to people enough that they feel loyal, committed membership, right? that was a bit of a theme of, things I was looking at. Like I was at an event, in London a few days before with a company I'm involved with that had done this kind of pop up viewing party for the Euros.
+
+And, it was in kind of a warehouse in a, I guess the Bushwick of London fun. It had some merch, so it had a little bit of shopping, big, bar, foosball tables, big, screens to watch the game. I sat down beside a guy and, Started talking to him about why he was there and he had said, you know, well, I really love this brand The brand is called mondale and i'm a subscriber to their digital and print products.
+
+They have a quarterly magazine and it's really about the kind of love of the game kind of rooted in nostalgia and it's it's a magazine for fans and It just occurred to me that got people that I think this is kind of where we're at with media memberships right now which is like All the kind of hand wavy stuff that used to be done to get subscribers in the magazine business.
+
+I think it was different with newspapers because they had local monopolies. But, you know, to get people to buy a publication that they don't have to buy,there was a lot of discounting and. monthly magazines were just part of the fabric to do it now. That's why people say, you know, it's like the niche nichification, you really have to have a hugely differentiated product, but it's just people that, people didn't know.
+
+No, they know, they know if you're good at what you do, they know, if you're deep, they know, if you care and it's kind of just something that I realized that what, what, if you're going to make a premium, anything You have to do a lot of things that are not economic, necessarily, you got to make stuff for the love of it.
+
+You got to go really, really deep. And you have to have a team of people that are not like, just sort of slavish to the, the kind of membership economics or getting more traffic or whatever, like you got to do it because you love it and you care. And you do the unnecessary things that attracts people that don't.
+
+Love it too. I
+
+[00:06:36] Brian: you mean like a viewing party?
+
+[00:06:38] Troy: well, no, I'm just saying that the people came to this event, went out of their way to come to this event because they really liked the brand and they, they were just deep enthusiasts. It's also I guess for me, what set me off is, there are people that really know how to be in the hospitality business, know how to run a great hotel, that understand the little things you do to make a customer happy, that just make you feel like you belong.
+
+And this hotel had tried to make up for that by having a lot of technology. Don't lean on technology in a hotel because your customers won't know how to use the toilet and they won't know how to turn the lights on because
+
+[00:07:20] Brian: And you're never going to win
+
+[00:07:22] Troy: of little,
+
+[00:07:22] Brian: You're never going to
+
+[00:07:23] Troy: you're never gonna win. I mean, it was a nice hotel, but like the tech was out of control.
+
+[00:07:28] Brian: And my wife was trying to use it and was pissed off that she couldn't figure out how to turn the lights on. I had that this morning. I've been, I've been, I've been living in hotels for the last two weeks and it infuriates, I want to, I want to design hotel rooms. I decided, I told my wife last night, I was like, this is, this is what I want to do with my life.
+
+[00:07:47] Troy: you know, what made me think of this also, Brian, I was, I was staying at another hotel. To me, it's a really good hotel and it's a hotel in London called the Nomad and it's in Covett Garden. And there's a inside the lobby is kind of a library where you sit and, you know, have a drink or have breakfast or whatever.
+
+And a couple things I noticed there that made me just kind of love the hotel. And one was the playlists. And the playlists were so good and they were like a mix of like old soul and a little bit of kind of dub and reggae and some kind of pop stuff. And they, they were playing this artist that like, I just, stuff that I knew or that was, and they weren't just running a, like an automated playlist off Spotify.
+
+Like someone had thought about it. And I asked the person, I'm like, who makes your playlists? And she was like, well, we have our brand experience person. Spends a lot of time on our playlist and I was like, well, that's cool because they're really great And then in the library, she's I was saying, you know what?
+
+These aren't just bullshit books on the shelf Like this is really well researched and these are like these are fun selections And she said if you look at the menu, you can see all the sections of the library like there's crime here architecture there There's an opera section. There's there was like just kind of music biographies and, and music guidebooks.
+
+And then there was a whole section on London. And if you went in and looked at any of the titles, like they were all, someone had spent a huge amount of time picking great books and organizing them. And I think that's the kind of thing you appreciate. It's real, it's deep. It's got love in it.
+
+I think that's what's required if you really want. real loyalty from, from someone, loyalty in, in the form of someone coming back to your hotel or, buying a membership or whatever. And right now we're at this like interesting point in media memberships where the, the whole thing doesn't line up.
+
+It's like we scrambled to meet the distribution needs of A system that asked us to be fast and wide and sort of uncaring in the content we created, which was essentially serving Google, right, or before that, social. And, and, and basically that drives the revenue. So the trade offs, which is really what management of all media businesses is like, how do you manage trade offs of going, deeper, more thoughtful, less volume by necessity,fewer and serving fewer people better runs, real counter, you know, runs counter to, to the need to, to just kind of.
+
+[00:10:24] Brian: We've said this a lot, right? To, to, to, to find, just, vats of impressions. So, It's a good, I want to use that we'll see where this goes, but I want to, I want to, I want to use that for the title. Vats of Impressions.
+
+[00:10:38] Troy: but I was just speaking to, to Chris Kimball, who's the, just before this call, who's the, founder of ATK and Milk Street now. And, you know, he was talking, he's got a store and he's got a membership business. And he was talking about, well, how do I unify these? Cause the whole thing is about delivering an experience to someone that is about, you know, a media product and a media membership that gives you access to recipes and other content, but also, you know, it's, it's a store.
+
+They sell knives and pantry and tabletop and all kinds of stuff. And so the current kind of challenge is how do you align those things so that it all feels like, these are the benefits of being part of this brand. And little things that we do, like we, we don't really think about what happens after a person says, you know, I want to be a member.
+
+So I'll give you an example. So like Yeah, there's people doing research and creating recipes that all, become part of the membership bundle. And there's someone designing a knife that, is something that you can buy at the store, maybe with a discount if you're a member. But if there's not a role in the company that's like a concierge role that says the new member that comes in needs to be greeted and treated like, Hey, how you doing?
+
+thanks for joining. And here's a terrific recipe that you might like, that I really like, that I made for my family. And we hope you really enjoy your time as part of this club that we've created. And by the way, if you have any questions or you need help, or the platform's not supporting, you know, you can't log in or whatever the problem is, reach out to me and I'll help you.
+
+And I just think that, re reconsidering what it means to, to, to bring someone into your world. And to make them feel like that belonging is, is, is something we don't really pay much
+
+[00:12:22] Brian: Yeah, I often get frustrated by, you know, everyone talks about events. I've done a lot of events in my time. And, they're also mechanized to some degree. Like, you end up in a terrible hotel ballroom, and it doesn't, It's all interchangeable. And even, honestly, even in Cannes last week, it was, it could be that way.
+
+In that you're at the same villa and everyone has the same villa or you're at somewhere and it's the same views, like even a dinner I did, like I noticed like on, on LinkedIn, like five other people. You know, we're having dinners there at different times. Even one place that I went, it was in the hills, like above Cannes, this amazing place, La Bastide Saint Antoine, and they, they have different, you have like cocktails in these little garden areas, but they're They're tiered.
+
+And so I, I came back actually last year. It didn't happen this year, but for the story I should say this year, I came back from, from the restroom and I, I got a little lost and I ended up like in a Pfizer cocktail party instead of like my own, where they're getting their media agencies and stuff together.
+
+but I think differentiating the experience is going to be, it's going to be difficult for a lot of publishers. I noticed that, in Paris, I didn't go to Vogue World, but that's going to be a big future for a brand like that. To be able to
+
+[00:13:41] Troy: you gotta, you gotta, I, I personally think you gotta hand it to those guys. underwriting an event like that, I mean, not just the ability to convene, those kinds of people to get the, that real estate was notoriously hard to get out in front of the Ritz there, whatever that circle is called, where they did it.
+
+apparently others have tried to get that part of the street blocked off and someone at Condé Anna or someone managed to get it done, but just convening all those people around that event and I'm sure this is I think the third one losing probably fairly significant amount of money. for the first couple of years takes real fortitude.
+
+It really is hard to fund ambitious event programs off of a P and L where you have so much profit pressure and you got to try to crank out margins on an event to make it work doing something at that scale. And,Having the courage and the, the kind of long term view to, to, to, to make it work and invest in it is, is pretty impressive.
+
+I think it only works with certain brands. Of course, it's hard to do that something of that scale with a lesser brand, but impressive, really impressive.
+
+[00:14:55] Brian: Yeah. Do you want to hear some of my takeaways from camp?
+
+[00:14:57] Troy: of course. You know, I didn't know, I wanted this to, I will, I will, I will admit this to the, so I've been, I don't know how many times I've been to Canada, quite a few. And,
+
+[00:15:07] Brian: I counted, I'm between
+
+[00:15:08] Troy: of,
+
+[00:15:09] Brian: and Isn't that
+
+[00:15:10] Troy: I have this weird emotional reaction, which is I feel like I should be there, but I don't want to go. and I, I mean, right now I don't really have a reason to go other than just to kind of say I'm here, just kind of my, preserve my relevance, I suppose.
+
+But, when I see on LinkedIn, the, the kind of regurgitation of Cannes, It both makes me wonder, like, did I really miss out or do I never want to go again?
+
+[00:15:36] Brian: Well, there's a there's that that selfie photo. that again with the sameness sort of thing and and linkedin is pushing everyone. By the way, linkedin is absolutely having a moment that it's going bonkers with video. you know, like you had made the point that you got to get on a platform early and getting on linkedin with like short video.
+
+Now is the time. And I was thinking we got, we got a flood linked in with a little short video clips, but there's a certain type, the, the, the photo. And for a week, I don't know about your, it's just nonstop of. The, the group selfie. I don't, I guess they're not selfie photos, but whatever they're called, and it's rewarded, but because again, everyone, the algorithm shapes what everyone does.
+
+And if you, if you want engagement on LinkedIn, you just post a photo tag, a bunch of people. It's easier than writing a newsletter. I'm going to be honest
+
+[00:16:27] Troy: I figured out though, that in my feed, it's the same 10 people all the time. That are
+
+[00:16:32] Brian: which ones, who are the,
+
+[00:16:34] Troy: just people that are, you know, a mix of kind of shameless, self promotional, at the major events. It's all the people. I mean, you know, it's led by the, yeah, I mean, the most, the funniest of all of them, of course, is Terry Kawajo, but
+
+[00:16:49] Brian: Terry did. Terry did is another edition. I think this might be the 38th edition of the can parody video. people are going to be like in, in, in a, like walkers. I guess, but you know, it's a franchise, I suppose. I've never been in one. Have you?
+
+[00:17:06] Troy: I think I was in one once, yeah. I don't stick my hand up for that, to be honest.
+
+[00:17:12] Brian: For the parody video? I think that's a, I think that's a good rule.Yeah, I'm going to pass on that. No offense,
+
+[00:17:17] Troy: Anyway, what are your, let's hear your observations.
+
+[00:17:20] Brian: I mean, some of the things, as you know, Cannes is all about meetings and stuff, all the stuff that people talk about on stages that nobody goes to. It's just about like hobnobbing. And so I just used it as a, as a time to have, you know, meetings. There's a bunch of people in the same place and, you know, they're having Rosé.
+
+And so they're more likely to talk. I sense of growing. I think it's just, there's this, there's this, This welter of frustration, obviously, Cannes has the top, the boss class goes to can not the worker bees. I think there's a
+
+[00:17:50] Troy: A certain type of boss class, right? Not the boss boss.
+
+[00:17:53] Brian: well,
+
+[00:17:54] Troy: layer below the bosses. The bosses of agencies go, but you know, not the media bosses.
+
+[00:17:59] Brian: yeah depends. Anyway, I think that I sense like a growing frustration to me like AI and all this is it's just an accelerant and a lot of times it's just used as an excuse and I think a lot of what is going on at publishing companies right now. I mean I wrote about this today it is There is this roiling war in a lot of places between management and employees at a time when arguably can't really afford it.
+
+I mean, Jim Vande Hei had a really good piece,in Axios that was, was very succinct, in which he talked about, you know, these kind of like hard truths that this is a really difficult moment in, in media. But I think a lot of it is corrective and a lot of my discussions. betrayed a frustration that organizationally,people are not really seeing that this is not another blip and that there are major structural changes that need to happen in a lot of these organizations.
+
+Now, it's very awkward to be making these points in the south of France. Let's be real here, but that's this business. I don't know. I don't, I don't make up the rules. That was one and another one
+
+[00:19:09] Troy: Well, there's always been a problem with the juxtaposition of any type of industry or economic austerity and the excesses of Cannes always.
+
+[00:19:18] Brian: Yeah, and you just never get around it and
+
+[00:19:21] Troy: kind of like part of the, that's like the theme of the event.
+
+[00:19:25] Brian: Basically inequality what which I
+
+[00:19:28] Troy: but back to that, that that's interesting. so you've got on one side. I think this, these kind of media realists like Jim that are, you know, and he's, he's really smart and kind of, calls balls and strikes and he's sort of, to serve an audience, either through advertising or memberships or whatever you, there's got to be this incredible, back to what I was saying earlier, this incredible clarity and that yields differentiation.
+
+And you, you have to make, you have to step back and really figure out what, Kind of product the world needs right now from you and I, I noticed that, that's like John Kelly's point of view too. on this WAPO thing that they're taking, it's, I think they're taking a bunch of heat for right now,
+
+[00:20:12] Brian: I was saying this to John's partner, Liz Goff. I saw her actually in Paris. she didn't go to Cannes, but I was saying how Dylan Byers he's like a heel. Like he's like very, there's a lot of people that don't like Dylan. I like Dylan. I worked with him very briefly. 
+
+[00:20:26] Troy: I think he's usually well informed, but like you saw them pummel Chris Licht and then, you know, in some ways have been, I would say relatively more generous to, to Will Lewis. But, I think underneath of it all. Dylan, maybe, maybe Dylan, I haven't read that piece, but John's take on, on the, on his podcast was just like, this place needs, really, really fundamental change.
+
+[00:20:50] Brian: yeah. Well, a competitor to, to the post,top, maybe one rung below the absolute top was expressing like outrage to me, that they're investigating, that they have a group investigating their CEO and then the, the newsroom, the, I guess they defenestrated to use a puck term, the incoming editor, and that's, to me, it's just, it is very indicative of, there's a lot of tension between the groups and when we see this with these, these AI deals, The workers at at B.
+
+I. at Vox are at the Atlantic are demanding answers and are coming out against these these deals. and saying we need to understand what they are. and it's, it, to me, it speaks to like a fundamental weirdness of this business, particularly on the new side where you run a comp, you run the company, but you don't run half the company really.
+
+[00:21:44] Troy: which was a privilege once reserved just for the most, just for a small group, really for the New York times and Washington post and for, big kind of resilient entities where there was a clear separation between the role of the publisher and the editor. And there was a line that was, you'd never crossed it.
+
+[00:22:00] Brian: I don't know if that's tenable anymore. I'll be honest. I don't think it's tenable anymore. I don't, I don't see how. In a time of, of this, this many challenges that you can sort of, that seems like a luxury structure to some degree, and it seems outdated. And I don't think anyone would structure an industry like that, from scratch.
+
+I mean, I wouldn't, I wouldn't have that personally. I don't think somewhere like Bloomberg has that. I mean, that's the advantage of having your name not only on the
+
+[00:22:28] Troy: well, the funny thing was, is that the magazine industry always hit it, right? And they, it, it, there was always a mushy middle in the magazine business and it came in the form of the old days of editorial credits that were given to,to luxury brands that spend a certain amount of money in a book.
+
+they would essentially get, you know, an equivalent amount of coverage that came in the form of a kind of a semi, like a structured system of credits. Where if you spent an amount of money, you would get a certain
+
+[00:22:57] Brian: Yeah, that's the leverage. I mean, that's how I want to say that's how Vogue wrote up. But I mean, like, let's be
+
+[00:23:03] Troy: Well, that's totally how Vogue worked. 100%. How Vogue worked. For sure. You count the credits on the cover image. Who got what? Vogue. How much love did they, did they give on the, on the outside? So it always existed in magazines and there was always a deep collaboration between the editor and the publisher around what you should cover and what you shouldn't.
+
+you know, it's different in a newsroom for sure. And I don't, I think it will be different in the newsroom 
+
+[00:23:26] Brian: I just mean, the, the, there needs obviously to be more collaboration and there needs to be more, less of, of this adverse. I just don't see how if you're going to be If there's, it's just like when, when they, they go to like a team on the sidelines and, and, and the players are fighting, I don't gamble, but if I'm gambling, I'm like, I'm betting against, I'm betting against that team.
+
+if the receiver has his helmet off and is screaming at the quarterback, I don't feel really good about them in the second half. that's. That's me. I think the other thing, which is just obvious, I guess, to some degree is just how much competition there is in this weird ad world. I mean, Ben Smith did say that this is, this is where everyone like bends the knee to, to the, the paymasters that are the advertisers.
+
+And you know, the CMOs are celebrated and can, and, and that's because they pay the bills, but it's just amazing how many people line up I mean, there were so many celebrities, amazing amount of athletes there, which was something that the sports was overwhelming there. And I think it's because it's the last mass cultural product that we have.
+
+And it just shows also that all this, all this focus on performance and all this focus on hyper targeting that, brands still want like mass cultural impact. They just don't have a way to get it. I mean, they don't, they don't really like this world. They just operate within it.and the other is just, you know, It's unbelievable how much retail media was the focus.
+
+It's like ad tech moved into like retail media. Now retail media is like everywhere. Instacart had a massive installation outside of the Palais. This is a long ways from, you know, celebrating the creativity of advertising. We've got, you know, the grocery store app,
+
+[00:25:12] Troy: Yeah, I guess that's reported a lot. It's a good point. And, I just think that's so existential, right? Like you're, if you've ever sold advertising, you know, lifestyle category, the, you know, the soft pitch of association with the right kind of content is something that you, that you'd then try to fortify with a little bit of research around how your, bullshit media research around how, your readers are, six times more likely to buy a barbecue or whatever. You have,that up against people with no content costs that are basically selling slotting fees as media. And it's brutal, brutal. I mean, sold on a performance basis. Like how do you, how do you, it's you become this kind of Hey, it's nice that we're going to do a deal with Brand X.
+
+Cause they're gonna, write a bit of content about us and do a nice party. that, that doesn't smell like a lot of leverage to me.
+
+[00:26:08] Brian: not really. No. I did a, I did a podcast there, with our friend, Neil Vogel.
+
+[00:26:13] Troy: Fast talking, Neil.
+
+[00:26:14] Brian: Yeah. Is he a fast talker?
+
+[00:26:16] Troy: Well, Neil is, Neil is what happens when you juxtapose an investment banker into media.
+
+[00:26:23] Brian: He, his big message was, was that everyone, everyone's, doesn't know how to run their businesses and that they're blaming AI. That was his, his, his big
+
+[00:26:31] Troy: But so what, what does that mean?
+
+[00:26:34] Brian: I mean, meaning that like a, Look, it's the same way when, when COVID hit, there's a lot of cover that happens and there's, there's, there's AI cover.
+
+And this, the, one of the hard truths of this industry is that if you're not adaptable, you're dead. And there's a lot of changes going on right now. And, nearly all of them have nothing to do
+
+[00:26:53] Troy: my God. It's it's, it sounds so funny. Cause I mean, I feel like we had this conversation every year for the last 10 years. You know what,you're making me think that you're, you're obviously, you need to, to find ways that you're, you're different than that, which a machine can do and how it aligns with some type of distribution position.
+
+But I was thinking about this, Brian. this'll maybe be a pulling forward the good product part of the show, but, so I was As I walked around Paris and London, I was using OpenAI to if I saw a landmark, or, you know, a building, or I was in a kind of place that I wanted to know more about, I would just take a picture and ask Chachapiti what it was.
+
+And it turned out to be incredibly effective, unbelievably
+
+[00:27:43] Brian: Really?
+
+[00:27:43] Troy: going to try it in Belgrade. I bet, I bet they don't, they haven't, they don't know.
+
+okay. So, what's the name of that, that, that statue? I think it was, Juliet, 1830, you know, in Paris with a kind of golden figure at the top of the column, the Génie the Spirit of Freedom. And so I snap a picture of it. And I say, you know, what is this and what's its significance? And immediately it spits back.
+
+It tells me it's kind of historical significance and all of this. And what was really interesting about it, is there was a big swath of graffiti at the bottom of the Of the, the column or the, the sculpture, right? Like the, it's a big tall tower and I can't remember what the graffiti said, but the graffiti was in the picture that I took, that I, that I uploaded to chat GPT And then after I,asked its significance, it included the following, the graffiti seen on the column detracts from its historical and cultural significance as it is a monument that honors the struggle for liberty and the spirit of revolution in France.
+
+So not only did it, did it contextualize this Particular piece of, historical, this monument, but it, it made a comment on the graffiti that was sprayed on its side. And then I was just thinking, well, as you know, we've talked on this podcast many times, the, when friction disappears, you know, the places where it's easy for you to do things and are frictionless when, and as soon as you can just hold your phone up and snap anything that's in front of you, think about this, Any building I, I did sort of parts of buildings to see if it would recognize it.
+
+I did parks. I did, Oh, I pointed it at this elaborate, they had been tying in, I forget the name of the park that I was in, but they had been tying fruit trees to these sticks to shape them. How they, how they grow. And this was a park in Paris and I wanted to know what it was called. And it gave me the technique and why they do it and what the history of it was.
+
+And I was like, there's no need ever for a guidebook, like Lonely Planet, Sayonara, anything that you wanted context on all the stuff that we used to think of as being like, Evergreen content that told you the things that you should know about a building or a monument or any of that, it's all, that stuff has all gone because this stuff is just going to become seamlessly integrated into the operating system.
+
+I'm going to be able to take a picture. This is why the, the Apple, what's it called? The Apple intelligence is so significant because it's connected to your photos into that device. And now any photo I take, we'll have this layer of AI metadata attached to it. Where it can tell me, everything that I need to know about it.
+
+So, I mean, just one little victim of this whole thing,
+
+[00:30:33] Brian: I gotta see if it works outside
+
+of though. There's a statue of a Serbian writer, Borislav Pekic, out front of my hotel. I'm gonna try it on Borislav and see if it knows Borislav. Report
+
+[00:30:44] Troy: I'm pretty sure it'll work. I'm pretty sure. But then you think about the, these AI agreements in that context. So. All of, I don't know what you call that category of content that I just described, but that's one kind of layer of, the stuff that media companies made to survive this digital transition, discuss service content.
+
+I take a picture of a dish at a restaurant and it tells me how to make the equivalent, like suddenly the starting point is my camera.you can just see. when you, when, when I think about the AI deals now, what are they trying to do? They're trying to get news into that system. So if it's not just, content that, has long shelf life, but also anything that is of the moment, it would seem to me that publishers need to be really careful that they're not giving away the only stuff that the AI can't.
+
+kind of usurp, you know, in a way that completely undermines your value proposition and news is like news and point of view would be number one and two.
+
+[00:31:45] Brian: Yeah, I mean, I think with the backward looking content, everyone I've talked to basically makes the point. They took it already. Right? They've got so much money. You can lawyer up. That seems like a long shot. Even though the legal argument is certainly no slam dunk at all. And so get the best, get, get the money while you can.
+
+Right. I mean, that was that was basically what Neil was saying with all the, I mean, he's claiming that is evergreen content that they are updating it constantly and that it's not that the value of it is not static and that the deals and that the deal is an indication that since they already had the content that they See the value of now.
+
+This
+
+[00:32:27] Troy: That makes sense. Right. You're turning evergreen into news, basically.
+
+[00:32:30] Brian: yeah, but I mean, I think that's the point of a lot of this these battles between the newsrooms and their leadership over Doing these deals with these companies because when you see with perplexity It's really interesting to me that perplexity has been chosen as the boogeyman, right?
+
+I mean, OpenAI is a much better villain, I feel like, out of central casting. We have that, that woman Mira Malati, she, she regularly comes out and says things that piss a ton of people off. I mean, she just basically said that if AI replaces your creativity, maybe it wasn't that special to begin with.
+
+You can imagine how that went over. Not great, not great. And this came after her, YouTube, she became a meme after being asked if Sora was slurping up YouTube content, which of course it is. but perplexity is the new, villain, which I find kind of, it, it's interesting to me that that would be the villain, not, not, Chat GPT, but have you seen these things that it's dealing with?
+
+It, it basically took a Forbes paywall, paywalled article, we discussed this a little bit the other week, and reproduced it on a perplexity page. And the publishers I talked to, Are basically saying, this is exactly the direction all of this is going to go. They're going, and when you look at a perplexity page, it's pretty clear they can integrate advertising pretty easily into this.
+
+And then they're going to say, okay, we'll do a little rev share.
+
+[00:33:55] Troy: Yeah, like you can tell there's a banana in the smoothie, you know, they blended it up. But in this case,
+
+[00:34:02] Brian: They didn't, they just made the mistake of not having the key thing of all of this industry, which is plausible deniability. You need plausible deniability.
+
+[00:34:11] Troy: know, they kind of serve the banana,
+
+[00:34:13] Brian: They
+
+served a know, but sundae, 
+
+[00:34:15] Troy: Y Yeah. And what what was amazing about that I'm actually super sympathetic to, to Forbes and the publisher and the industry in, in, in that case, because there wasn't a bunch of variations on this particular, on that particular article that could be put in the smoothie and turned into something else.
+
+There was one story and Forbes wrote that story and they stole it
+
+[00:34:37] Brian: but they reformatted it and made it in, that experience was way as a consumer. I would absolutely choose the perplexity page over the Forbes page. First of all, I don't have a Forbes
+
+[00:34:48] Troy: great.
+
+[00:34:48] Brian: I'm just saying it from a, I don't want to say right or wrong, but saying it's a very compelling consumer proposition. Just like Napster was a very compelling consumer proposition. I found it
+
+compelling. 
+
+[00:35:00] Troy: Yeah. Like a stolen library of content, of, of first run
+
+[00:35:04] Brian: it was just streaming
+
+[00:35:05] Troy: is a very compelling
+
+[00:35:07] Brian: But so if we remember at, at during the Napster, it was the defense of it was, well, you don't give us an, you didn't give us a legal opportunity Avenue for this. And then it led to Spotify. Eventually. I don't know. I feel like perplexity weirdly is going to be the Napster of all of this.
+
+because,
+
+[00:35:25] Troy: That's a good analogy.
+
+[00:35:27] Brian: you know, they also are A lot of things are breaking down, I feel like, with the internet. And I think that's something that people sort of need to think about with the open web is, you know, one of the things, it's a little bit dorky, but like the robots. txt, it's always been used as a way to block pages from, from search engines, indexing them.
+
+I can remember we had like transaction pages, we put like robots. txt on and Our early web developer put them on all of our pages so we weren't being indexed in search. It was just like, oh my god, one job. but they're just ignoring that. I mean, they have, they're saying no, it's a third party crawler.
+
+Again, they, they got that part of plausible deniability. the end effect is, is the same. And we see the same, this is a point I think that, that Neil made very
+
+[00:36:15] Troy: So they just, you just brushed over that they had. The origin of their crawler was an IP address that wasn't blocked and people didn't, I mean, it wasn't clear that it was coming from perplexity so there was some duplicity in the whole exchange. Wasn't
+
+[00:36:32] Brian: I don't want to say duplicity. I'm just saying that like a lot of publishers right now are, are taking actions to either block AI crawlers, right. Or at the very least use people like toll bit to see who's, who's slurping up their content. And, Eventually, they're going to ask to get paid and then when the crawlers say, we ain't paying you, they're going to have evidence maybe that they can use to create leverage, legal leverage.
+
+That's, that's how I understand it.
+
+[00:37:02] Troy: I don't know exactly how to kind of play this one out because the difference between this and the music. scenario is 70 percent of recorded music is controlled by three labels that could come at you. And the market is more organized in an oligopolistic structure. And in this case you have everybody creating content.
+
+[00:37:23] Brian: Well, remember those two weeks when there was talks of publishers banding together? I mean, I had a dinner where, you know, after a few glasses of wine, people were like, we should all get together and fight for our rights against,these AI companies slurping up our content. And the reality is any publisher coalition never works.
+
+It just never works. I don't know. I think it's just because they're out there trying to kill, kill each other in the marketplace, but the reality is the competition for publishers is not from other publishers. This is not, not anymore. I mean, the white walkers are
+
+coming. 
+
+[00:37:57] Troy: I mean, I wish Alex was here because he would just say, you know, this is how it goes, right? I
+
+[00:38:01] Brian: This is how it 
+
+[00:38:02] Troy: is going to get a better, going to get a better interface. No friction, no friction, and, 
+
+[00:38:07] Brian: You might not get any original
+
+[00:38:08] Troy: So there's going to,
+
+[00:38:09] Brian: anymore. If we get Reddit, you get
+
+you get. You get Reddit, giving you health tips, because it's very authentic. but one of the things that's breaking down that I think that, that Neil, brought up, they're very dependent on Google. You know, they say it's 50 percent, of the, of the traffic to dot dash Meredith properties comes from Google, right?
+
+the bargain is off, right? When Google stops sending traffic out and starts competing with you, cause you know, it used to be, okay, you get to index our site, you get to present our content basically on search result pages and sell ads against it, but you're going to send us traffic.
+
+We're going to monetize that by showing people ads, which by the way, are going to come through Google system. And so you're going to get a taste. On the back end too, and this is an uneasy bargain, but it's a bargain and everyone sort of complained about, bits of it, but it went on and now that's kind of off, and I, I, I
+
+[00:39:05] Troy: Is it though? Is it, is it really off? Or is that kind of industry hyperbole? Because here's the thing. Yeah. You can't have, you need a, a system for commerce. You can't just shut that off. You can't, it's not just publishers that, that affects it's everybody. The whole, if you imagine a world where, some huge percentage of products and services are sold via digital channels, then you can't not have a toll booth.
+
+To manage, levers of transit for transactional volume. Google is never going to shut that off. Never. And they can't. The people that, that, that depend on them need them to do it. They need to do it. so is there going to be a system where maybe more of your query is, is, is kind of factored and answered inside of the SERP for sure.
+
+But is there going to be ways to like, extract value from, economic interests that need to kind of follow intent in that system? For sure there is. And so it's not going away. It's going to
+
+[00:40:12] Brian: no, it's not going
+
+away, but like,Google is so big and so dominant that even if it's 15%, that's, that's major. I don't know. I mean, so for example, the coupons, okay, I was talking with one publisher who talked about one publisher is telling me left 7 million hole on their balance sheet.
+
+Oh, that's, that's just straight trade profit, right? And they were coming after like
+
+[00:40:38] Troy: but it's important to put that in context, right? So now they've circled back on that a, and they're saying, if you, if you have deals that are not just syndicated from some centralized coupon deal factory, then we'll consider re we'll re index those pages and you can do that. But,
+
+[00:40:56] Brian: right? There's an
+
+[00:40:57] Troy: You know, I mean, they, it left, it left a 7 million hole, but remember the transition from print to digital left.
+
+huge holes everywhere.it's part of this, sadly, probably a 30 year evolutionary cycle from a time where distribution was controlled. oligopolies kind of came out of this system. It was, everybody was fat and happy, and there was limos at Condé and good lunches at Michael's, and that all was what it was.
+
+And now You have to earn and you got to kind of like eat what you kill And it's this kind of friend Distribution frenzy of the internet yeah, we're adjusting to a new normal and one of the gatekeepers is going through a massive transition right now and we all have to transition like I I I just think one needs to be cautious in Being too apocalyptic about this particular change. It's just another one go back to work You gotta just figure it out. So you tilt your business a little bit more towards direct channels and subscriptions and new types of syndication and deals with open ai, and that fills a little bit of a hole here or there. And you, you have to, very importantly, you run your business way more efficiently than you did before.
+
+And by the way, through it all people are pissed. People are fucking pissed off because there's a lot of roadkill. And I don't mean to be, I don't mean to be dismissive or in any way. kind of not sympathetic to the people that are affected by this, but you know what the wall back to the WAPO thing, this is a lot like the conversation we had six months ago when I said, Okay, imagine a world where you actually invite CNN into your life.
+
+via your primary media consumption device, your phone, right? Or if you're younger than you're older, you probably watch TV or something. I don't know what you do, but your phone and you decide that you value CNN's content enough that you subscribe to it and you have an alert. They're a sort of platform publisher and you download their app and you get their notifications and you embrace the kind of content they create.
+
+Oh my God. Yeah. All I want to say to you is the kind of content and the kind of people creating content, they need to live in that world is so different than what they have today. So different. On air personalities, investment in tech, all the surrounding content, interactivity, ability to manage a direct relationship with a consumer, merging the dot com with the broadcast stuff.
+
+this isn't like, Oh, I'm going to go negotiate with the union, right? Like we're going to put all of this sort of change clauses in our contracts, so we're protect, this is, this is catastrophic.
+
+[00:43:45] Brian: Wait, wait, you just told me not to be apocalyptic and you went to
+
+[00:43:48] Troy: No, no, no. I'm saying we're right. Okay. Fair enough. What I'm saying is in certain types of organizations, the need to change the product forces a change.
+
+This is way less so in Neil's world than it is in CNN, right. Or, or, or, or Washington Post. I mean, with all due respect, Neil's, editorial teams March to the beat of the economic drummer. that's not the case at the Washington Post. so I'm just saying that there's going to be media for a long time.
+
+There's going to be people that survive in the arbitrage between, someone who has a need and someone who needs a lead. need to lead. There's going to be businesses there for a long time, and it's not going to be two platforms that suck up all of that economic activity. And I just think that we're hysterical right now. a little bit hysterical. Yes, we are.
+
+[00:44:43] Brian: I'm glad you're I miss Alex.
+
+all right.
+
+[00:44:46] Troy: So those are your canned observations. I thought I was, did you have a good time? Can we, did your dinner work out?
+
+[00:44:52] Brian: I had two dinners. they were great. I want to, I want to thank my partners at primitive and X. co Xco.
+
+[00:44:59] Troy: did you smoke?
+
+Do you 
+
+[00:45:01] Brian: no, I didn't smoke. I didn't go out, I didn't go to the Carlton Terrace, by the way, very confusing. You remember the Carlton Terrace? It was like the famous, the sort of,
+
+Meeting. So they, they closed it after COVID, which is crazy.
+
+and then have been rehabilitating it for, for two years, I guess. And it finally opened. This is the first can it was open and they rebranded it the Carlton Cafe. And then they, they named something in interior courtyard, the Carlton Terrace. So it's very confusing for meetings. I'll just say, this is meet me at
+
+[00:45:33] Troy: But was, was there a scene outside of the Carlton every
+
+[00:45:36] Brian: I think so, but I wasn't there. I didn't, I stayed outside of Cannes and I was, I was busy doing,doing my hustle. So great dinners, did a few very good podcasts. The one with Neil, I encourage everyone to
+
+[00:45:48] Troy: No, I, I noticed that Ben Smith called you an ad,
+
+[00:45:53] Brian: I know I saw that.
+
+[00:45:55] Troy: I thought that was a little belittling,
+
+[00:45:57] Brian: You think it was
+
+[00:45:58] Troy: I don't, well, I like it that you're, you've reached guru status, but I, I, to call you an advertising just to be in the ad guru is a little icky, isn't it? Aren't you more like a media authority?
+
+[00:46:12] Brian: Well, maybe he's trying to box out competition. I don't know.
+
+[00:46:15] Troy: futurist?
+
+[00:46:16] Brian: Futurist is
+
+[00:46:17] Troy: Or?
+
+[00:46:18] Brian: Faith Popcorn. she built a big business off that though.
+
+
+[00:46:22] Good product
+---
+
+[00:46:24] Brian: one thing with, a bad product I have for my European, which I'm sure you hate. Did you notice the water bottles, the, the caps don't detach here now? they just, they stay on and it's, it's, I think it's an environmental, regulation. And so you can't just unscrew a cap and take it off. It like attaches so it hits your nose and or the side of your face when you're trying to drink the water bottle.
+
+You didn't notice this?
+
+[00:46:52] Troy: No, 
+
+[00:46:53] Brian: Really? 
+
+[00:46:53] Troy: I usually, yeah, I usually notice these things.
+
+[00:46:56] Brian: Were you not
+
+[00:46:56] Troy: well I can add to the, I can add to the bad product, list. 
+
+[00:46:59] Brian: the thing is, right when I, the worst part is right when I had this experience of this water bottle, I was like, Oh my God, when Trump uses this, he's going to go crazy.
+
+[00:47:10] Troy: Well,
+
+so I'm glad I bought, I have in my head the rabbit, and I, I'm glad I bought it because it's kind of a, souvenir of the transitional time in technology. It's ridiculous. there's nothing that this will ever do that your phone won't do 10 times better. it's slow. It's hard to figure out how to get going on it.
+
+You have to do a huge amount of set up. I give it to my son. He's like, why would I ever use this to play a Spotify song or to render an image on mid journey or something like that? You can see the rabbit bouncing around.but it's the color is delightful and it's kind of cute. 
+
+[00:47:44] Brian: no substance.
+
+[00:47:47] Troy: that sucked. And then, the other thing that was good, I went to this tennis tournament that was named after the sponsor called cinch cinch, which is like a car rental company or something. Anyway, it's at the Queens club in London and it's the tennis tournament with tier one talent that precedes Wimbledon on grass courts.
+
+And it's kind of relatively speaking an intimate tournament and it was so fun. So fun up close. best players, saw Alvarez play that British guy, and lose actually. do you, it was great. I would recommend it highly,
+
+[00:48:21] Brian: I'm
+
+Middletown's Imagineers. US Open a few
+
+[00:48:24] Troy: Other than that, that's what I got.
+
+[00:48:27] Brian: All right, cool. And any, no other good products? Did you have a good product?
+
+[00:48:32] Troy: Well, my good product was the depth of, someone who actually invests in non economic ways and making an experience that they love. We talked about it earlier around the hotel.
+
+[00:48:43] Brian: Okay, good.
+
+
+[00:48:44] Outro
+---
+
+[00:48:45] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week.
+
+
+

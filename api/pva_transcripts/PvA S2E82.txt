@@ -1,0 +1,1091 @@
+PvA S2E82
+===
+
+[00:00:00] Brian: none of zins today? Zin deficit?
+
+[00:00:03] Troy: gonna hit one now. 
+
+[00:00:04] Alex: I love that I love that energy guys I gotta be honest this is amazing
+
+[00:00:09] Troy: big, big time
+
+[00:00:10] Alex: big big time energy just full
+
+[00:00:13] Brian: Well, 
+
+I'm
+
+jet 
+
+[00:00:14] Troy: Why are we recording right now? Who gave a, who turned recording on? Why are we recording? We're warming and we're doing
+
+[00:00:19] Alex: do it we call it we we call it we record we
+
+[00:00:22] Troy: then, this is a bunch of, there's a bunch of junk here and potentially compromising content.
+
+[00:00:27] Alex: Wait, where is the junk?
+
+and compromising content? 
+
+[00:00:30] Troy: This dialogue,
+
+
+
+
+[00:00:31] Intro
+---
+
+[00:00:53] Brian: Welcome to People vs. Algorithms, a podcast about connecting the dots in media, technology, and culture. I'm Brian Marcy. Each week I'm joined by Troy Young and Alex Schleifer. This week, I'm in London. Where I spoke at the PPA festival and today attended the INMA World Congress of News Media. I was delighted to run into several listeners at both events.
+
+It's always very exciting for me. Thanks in particular to Simon Regan Edwards, who did a yeoman's job, marketing PVA to several colleagues when we, met up. Thank you so much, Simon. You'll have to continue to listen to this one at 1. 25 speed, if not a little bit faster, because I am still a little jet lagged than I was when we recorded this on Monday evening here.
+
+This week's, show digs into the future for magazines, as branded storefronts, for other more lucrative businesses, and we go over again reports from the middle aged malaise. But we also have a guest this week, Jonathan Nelson, architect of Omnicom's digital strategy. We've all known Jonathan, in different ways over the years. Troy began his career at Organic, which Jonathan founded and is perhaps the earliest, web shop, if you remember back in those days of agency. com and Razorfish, which I do, and it turns out Jonathan was also once Alex's landlord. I'm not sure if we ever really got to the bottom of that. As for me, my connection is that Jonathan was at my brother's wedding and I would speak to him regularly over the years when covering the ad industry. Although he was always cagey with me. We talk about how ad agencies are viewing the coming AI wave. It is telling to me that Omnicom made a giant purchase, for this area, when they paid, 835 million to buy Flywheel Digital from Essential last October. I can remember when the massive ad holding company deals were for other agencies.
+
+I'm that old. But Flywheel isn't really that. And Flywheel uses software for digital commerce. It is part of an overall shift we discuss. It used to be that there was a bright line between above the line work, designed to build brands. And below the line direct marketing work, which was honestly the less sexy part of the business.
+
+Now, those lines were erased over the years and truth be told, the direct marketing side of the business won out. And now I think you're seeing a further blurring in which the blurring between advertising and commerce is happening. And this is something that Alex has been lamenting because the web, in his view, is becoming nothing more than QVC Now, it is pat usually to say that agencies are doomed and watching a demo of the new capabilities coming from Google cloud raises that specter new.
+
+It holds the promise for AI to do everything from planning to the creation and distribution. But I would not bet against advertising agencies, mostly based off the track record. They have proven to be very resilient and it is a business sector that roughly tracks the growth in GDP. As Rashad Tobaccowala memorably, said, ad agencies are like cockroaches. They always find a way. Hope you enjoy the episode and please send me your feedback. I am bmorrisey@therebooting.com, and leave us a rating and review wherever you get your podcasts. 
+
+[00:03:57] Troy: Hey Brian, what are you doing in London?
+
+[00:03:59] Brian: I'm speaking tomorrow at the PPA fest and then, I'm going to stay around and go, there's this big, Journalism media event here. They love festivals in Europe, I've noticed. Do you know Inma? They were nice enough to, allow me to worm in. Thank you, Inma. Yeah, so I got meetings and meeting up with people. I like London, I know a lot of people here. 
+
+A couple of clients, partners, it's good. It's 
+
+always good to be in London. 
+
+[00:04:24] Troy: I like being there too. I'm going soon. Hey Brian, this is what I was thinking. I really wish record wasn't on right now. It's an affront to my rights. But anyway, I don't know if it's just an anomaly in the season or whatever. I don't look at the numbers very often, but I noticed the last two weeks when we didn't have guests, like numbers are, lesser. I was looking at your proposed agenda. Thank you for that. And I love your, your central idea. That was cool. and then I was thinking, I had to catch up with Jonathan and I know that, he's been, witness and part of every sort of chapter of the digitization of advertising and media since the beginning.
+
+So he has lots of perspectives. He's a smart guy, but I thought that this Google AI thing, I went back and I looked at it after you sent it out, Brian, and I was like, yeah, it is pretty staggering that the entire infrastructure of a creative services business could be handled by a robot. that's kind of what it showed.
+
+And, and, and Jonathan has a lot of knowledge of that. So I wanted to catch up with him. I said, maybe we should have him pop on for a half hour. And I, I know sometimes Alex doesn't like, last minute additions and things like that. And, so we just have to wind him into the conversation in a way that made sense.
+
+Brian, and since you're the moderator, I wanted to get your attention on that. And after a long winded bunch of things about it, then you're like, what? In the thread, meaning you didn't read any of the above. And, then I tried to call you and, I, you'd turn off your phone cause you don't pay for international service or something bullshit like
+
+[00:05:52] Brian: There's actually a story there. There's a story there. This is like, this is like a three's company episode, except with an extremely aggressive, like man. Middle aged man in like a zin deficit because I love london, but london has one problem You get your phone stolen all the time. So I had my phone stolen before I got to my hotel I was just walking down.
+
+I was listening to My First Million podcasts. Okay Preparing in my own way It took an hour and a half to get the train. Because i'm a man of the people I don't get what do you? Like a a Your driver picks you up, but I don't have that. And so I take the, the, the new Elizabeth
+
+[00:06:32] Troy: why do you do that? Why do you have to do that? Why do you have to do that class thing?
+
+[00:06:35] Brian: I take the Elizabeth line and I take
+
+[00:06:38] Troy: Did they fly you over to London in first 
+
+[00:06:40] Brian: line. No. And I went in econ, so I was all, not even premium econ. Cause I usually go to the airport with Virgin and just pay 280 bucks and get into premium and it's fine. 
+
+[00:06:49] Troy: You flew to London econ.
+
+[00:06:51] Brian: It was so rough and I barely slept. And so I was, I was all dazed.
+
+[00:06:55] Troy: too old for that. You're too old
+
+for that.
+
+[00:06:57] Brian: dazed and all of a sudden I'm listening to Sam Parr and it cuts out. I, it was because I didn't have my phone anymore.
+
+[00:07:08] Troy: Where'd it get 
+
+[00:07:09] Brian: It got stolen from my pocket. So I, I looked this up cause this happened to, to my wife, Anna, last in December when we were here. And I was of course being like, you know, it's your fault.
+
+You're not paying attention to shit. And then sure enough on the schmuck who this podcast just cuts out. And so therefore I had to go. I went to a new part of London I'd never been to to get a, new phone I got a European phone and stuff like this. So I had no idea about the backstory.
+
+That's, it's a Three's Company episode. Come and knock on my 
+
+[00:07:45] Troy: It's justice for you chastising Anna,
+
+[00:07:48] Brian: It is, it is, but the only reason I put 
+
+[00:07:50] Alex: I still don't understand how they stole your phone. What do you mean out of your pockets? You got pickpocketed?
+
+[00:07:54] Brian: yes, so, did you know that I, I then went on Reddit and a phone is stolen in London every six minutes. Because shoplifting is such a European crime. We, we like barely have it in the 
+
+[00:08:08] Alex: Pfft. What are 
+
+[00:08:09] Brian: States.
+
+[00:08:09] Alex: you talking about?
+
+[00:08:11] Troy: Alex, tell us about shoplifting.
+
+[00:08:12] Brian: you a shoplifter 
+
+[00:08:13] Troy: grow up shoplifting?
+
+[00:08:14] Brian: did
+
+[00:08:15] Alex: Yeah, the school system teaches us that.
+
+[00:08:17] Brian: because there's an art to it. There's, there's a craft to shoplifting or to to shop shoplifting. To pickpocketing.
+
+[00:08:23] Alex: it's a gentleman's sport.
+
+[00:08:25] Brian: Yeah. We have guns. So you know, our, we 
+
+play for keeps. That's what I was saying to the lady at the Apple store. I said, we have real crime in New York City, She was impressed.
+
+[00:08:37] Alex: I still don't understand why Don't those things just get disabled immediately? And are they still stuff that you can sell? Can I, can you sell a hot iPhone these days?
+
+[00:08:46] Brian: Apparently you can, because it is a vibrant business. They go around on bikes. This didn't happen to me. But they go around on bikes and take it out of people's hands.
+
+[00:08:55] Troy: I was watching Andrew Callahan's little documentary on the Kia bandits or something like that.
+
+[00:09:01] Alex: Yeah, boys.
+
+[00:09:02] Troy: Kia boys, you can get, if you rip off a Kia, you'll get like a hundred bucks for it.
+
+[00:09:07] Alex: Yeah, but that's because they give it to other kids that like want to joyride it or, just go do something nefarious.
+
+[00:09:13] Brian: that the, uh, catalytic converter thing or is that different?
+
+[00:09:16] Alex: no, no, they could, they just figured out how to open Kias using a
+
+[00:09:19] Troy: flathead screwdriver.
+
+[00:09:21] Brian: Oh, well, there's a scourge. And so, Troy, I didn't get your messages. I didn't get your calls because I'm dealing with, I'm a victim of crime. So thank you for making it worse.
+
+[00:09:32] Troy: Did you get a new phone?
+
+[00:09:33] Brian: Yeah, I got a new phone. I got a little phone. It's like I'm, I'm going away from that, like the big phone, the phablet, phableter 
+
+is over time to get smaller. It's hard to type on that. That's why there's all this typos and
+
+[00:09:45] Troy: You should have not got a phone. You should have just got an AI pin.
+
+[00:09:48] Brian: That would have been good. I want to talk about that AI pin a little bit more. That's my report from, from London. But before Jonathan gets here, I want to talk a little bit about, about magazines. This is, I know this is Alex's favorite toPic. I wasn't able to drop by, but the airmail newsstand is now, is now open in the West Village.
+
+Which is very exciting. And then the New York times had an article about high snobiety. And, I I've found high snobiety, a really interesting company. I don't know if you know, David, the, the founder of high snobiety. Really cool story. He started it like as a sneaker blog when he was, student in, in Zurich, or I think it was Zurich that he was in and in Geneva.
+
+And then build it into, I guess, kind of like the number two, but I, he'd say the number one, like against Hypebeast. 
+
+[00:10:38] Troy: And it was sold. It was sold,
+
+[00:10:39] Brian: Yeah, it was, it was sold to Zalando because Felix Capital put a bunch of money into it for them to do commerce because it's like the ultimate magazine, because it's all about shopping.
+
+It's all commercial, people get it because they're into buying sneakers, buying watches, buying collectibles.
+
+[00:10:58] Troy: And then God forbid they won, they won a national magazine award this year.
+
+[00:11:02] Brian: I know, which I've never thought of Heisenberg. It was, it was a sneaker blog, that produced a magazine for what a magazine is now, which is, just marketing and the brand. I think it's kind of telling though, where, where magazines are right now, don't you think?
+
+[00:11:17] Troy: That what?
+
+[00:11:17] Brian: Well, I mean that there, the top example of a magazine, for, for the New York times to do their deep dive is one, a company that isn't really a magazine to it's owned by an e commerce company 
+
+[00:11:31] Alex: You don't
+
+[00:11:31] Troy: Well, the alternative, the sort of these kind of media outsiders are having a moment in the New York times. Last week it was the great Rusty Foster, Forster? Foster? From Today and Tabs. Who is funny and who is not. Yeah, he, they did a profile on him and he's the kind of, preferred reading for sort of cynical media insiders.
+
+And he writes it from where, where does he live? He writes from Maine or something like that, but it's, it's pretty delectable. I love Today on Tabs and it was a profile last week, but you know what, I'll tell you one thing that made me think, Brian, maybe you could help me on this concept, but it's, it, I did also listen to another podcast the other day, or yesterday, from your friend at The Media Operator with, Andrew from Recurrent, and, it just made me think that there's There's always what I, what occurred to me is there's always what I call P, this is my new acronym, PMW, prevailing media wisdom,
+
+[00:12:31] Brian: Hmm.
+
+[00:12:32] Troy: which is, is, is something that runs through the veins of the media industry.
+
+And it's sort of like, is our, our sort of accepted notions of what you need to do to survive in media now, right? So through time it shifts, right? And, and, print magazines are, are, are kind of like. One dimension of the current PMW, which is, they're not really good for anything, but they're they're good at Establishing scarcity and therefore the importance of something to say that your media brand has a magazine says, we can, lock culture up in a box and present it, even if it only goes to 1000 people and nobody reads it.
+
+And, gives an opportunity for, in the case, I think, of Heisenabadi, a good curator to say, if nothing else, here's a, here's a cover, and the cover gets circulated around, and it's a gesture, just like last week, it was Nylon and the Beyoncé. Was it nylon? Yeah, I think it was nylon, the Beyonce cover.
+
+and so anyway, print is part of the current PMW prevailing media wisdom that it, that it gives dimension to a fashion media brand that might not otherwise, sort of have that, that credibility. yeah. So anyway, Heisenbody, the, the one thing I would say in challenge to, or Listen, good media is good media.
+
+People that know how to get attention, to kind of define the moment, to get people to want to kind of follow them or buy the things they recommend or, feel something for a brand. To me, it's like, I don't care about the tactics. I care that you know how to make media that becomes part of culture.
+
+And I think that's what people that are good at media do. And they'll always be able to do it. And they'll always find some angle. to to to monetize it. When you try to turn that in a machine like Recurrent tried to kind of say, Hey, there's a formula where we can roll up a bunch of, aging or, somehow neglected media brands and put them on a platform and, harvest more affiliate revenue out of it and make the advertising part more efficient and all of that.
+
+It feels like I mean, I get it. It makes sense, right? But it just feels like those systems are fine. But what really matters is, do you have great people inside of, companies that can distinguish output as something people want to be part of?
+
+[00:14:56] Brian: And also Joanna Coles is, is back in media, daily
+
+[00:15:01] Troy: And she's talented, right? So it'll be interesting. That one is, it's cool. I actually did text Joanna when I saw that. after the day that they announced it, she declared that they were going to hire, I thought it was kind of funny, that they were going to hire a Lauren Sanchez columnist. And then immediately after she said that, the New York Post picked up on it and reported on it.
+
+And this was also in the wake of what's his head from, Balthazar, 
+
+[00:15:30] Brian: Keith McNally. Yeah. 
+
+[00:15:32] Troy: Keith McNally, who has a popular Instagram account, came out, I think kind of needlessly, indicting the first couple of commerce, Jeff Bezos and Lauren Sanchez, saying that they were a hideous pair. And this is what hundreds of billions of dollars does to people.
+
+And, it was just a full frontal attack,
+
+[00:15:54] Brian: Well, she has like exploded. That's like amazing. I mean, she was not well known and then all of a sudden she's, I won't say everywhere because celebrities are almost smaller these days, but, I don't know, she's become very present in the,
+
+[00:16:09] Troy: well, but this Joanna, bringing her kind of British, tabloid sensibility understood that as an opportunity. And that's part of her brilliance, I think. And, and she said, my first act, you know, act will be to hire, a lower Lauren Sanchez, editor or something.
+
+And, I thought that was, that was kind of funny. It was a funny move and it got attention for, for a minute. I think the whole transaction is kind of interesting. You have a business that's, I don't know, been around since 2013, never made any
+
+[00:16:41] Brian: Remember when they combined it with Newsweek?
+
+[00:16:43] Troy: Yeah. But it's probably got a 20 million cost structure as kind of a crappy ad business.
+
+It's got a, I think it's a difficult subscription proposition as it stands today, lots of free alternatives. Obviously they just increased their cost base with Joanna and her, her business partner, Ben. And, I don't think there was a lineup of people that wanted to buy the Daily Beast from, from Barry Diller.
+
+And so I think it's kind of a good outcome in that. They're going to get half the equity in the, in, in the, the entity, they get a business that's already started and ready to go. They can take it from here and see if they can make it into something that's worth a lot. And they're obviously both really talented people and, they'll get paid, get the equity and have a platform to start from.
+
+And so, 
+
+[00:17:33] Alex: What does the Daily
+
+Beast 
+
+
+
+[00:17:35] Brian: What is it? Tina Brown started it. I mean, this is also the decline and fall of magazines, incredibly talented generational magazine Editrix. I don't know if they still call it that. She went off and started, Daily Beast, and yeah, it had a lot of buzz. I can remember Michael Wolff being obsessed with it.
+
+I loved when I wrote the story on Daily Beast. And then it just became another middling, internet site.
+
+speaking of that on the, on the, the rise to, of, individuals that to replace these kinds of brands. Do you, who do you rely on for gadget reviews, Alex?
+
+[00:18:12] Alex: Mkbhd which i've been watching. 
+
+[00:18:15] Brian: YEah, this is the
+
+Marquez Brownlee, 
+
+[00:18:18] Alex: Yeah marquEz. Definitely if it's a
+
+[00:18:21] Troy: Let's tell people who that is, guys. Come on.
+
+[00:18:24] Alex: Marques is a, YouTube, big, big, big YouTuber, probably the biggest and most important tech reporter in the world right now, I would say.
+
+[00:18:33] Brian: but he started in high school.
+
+[00:18:35] Alex: he started in high school.
+
+That's amazing. You can actually watch his first videos. And, and he's, he's a real kind of example for perseverance. You see him as a little kid reviewing, The remote control that came with his laptop because he was recording the review on the laptop. So, so that's the only thing he could review. I think that was one of his first reviews.
+
+And then he kept going at it. And, it's, it's a behemoth now really well produced. I mean, he's obviously charismatic. He also does car stuff and he has 16 million subscribers. Always liked him. He doesn't have that usual tone that you get on a lot of YouTube reviews, where it's kind of, just grading for me.
+
+Everything's well produced, it's to the point.
+
+[00:19:16] Troy: What else do you look at? 
+
+[00:19:17] Alex: I'll definitely look at Reddit, which is always a good source, of real reviews, the Verge remains a good source, of reviews for certain objects. And then, Amazon, I mean, you gotta be honest. If you can, if you know how to search through the Amazon reviews, there's a lot of, I like reading the four star reviews on Amazon, because that's always when somebody has been like.
+
+liked it but had some sort of concern that they want to highlight. So, so filtering down to the four star reviews is always a good idea. Because the five stars and the one stars are useless.
+
+[00:19:49] Troy: Where do you Interesting. not a gadget person.
+
+But what about if you're gonna get like a sweater or something?
+
+[00:19:56] Brian: A sweater? I don't know. I mean, I go on Do you do sweater platforms. I don't like, do you? Yeah, I don't listen to reviews. Do 
+
+[00:20:06] Troy: What about 
+
+a 
+
+car? I usually pick my way through. I agree with everything you said. I think if you want, There's a bunch of really niche sites in the hi fi category. YouTube remains a great place to get, good insight on, on hi fi stuff. For cars, there's certain individuals that you can, that you can follow and read.
+
+Some like Dan Neal from the wall street journaL. I still read car reviews at, at Car and Driver. but yeah, just poke around. I think Reddit's good too.
+
+[00:20:37] Brian: But this MKBHD, I mean, he's more influential. He's basically the Walt Mossberg now. I mean, there's no Walt Mossberg now, but Walt Mossberg
+
+was, 
+
+[00:20:48] Alex: I think he's, he's bigger and more, more influential than, Walt Mossberg
+
+[00:20:53] Troy: then then Jesus.
+
+[00:20:55] Alex: I mean, he's got more reach and I think, he also has a, a, a, not only tech specific audience. So, yeah, no, I think he, I, I think it's, he's a big deal. 
+
+[00:21:04] Troy: Okay, so that we covered that off. I didn't see that in the notes. did we finish the Daily Beast conversation, Brian? Are you satisfied that we covered that?
+
+[00:21:13] Brian: I'm satisfied, yeah. Is there more on Joanna?
+
+[00:21:17] Troy: Well, it's not that, it's just, it'll be interesting to watch if you can create. enough of a kind of, excitement, like if you can create moments that some around that brand that you can take to the bank.
+
+[00:21:29] Brian: How do you do that? 
+
+[00:21:31] Troy: Well, on one side you have, I would say Puck does it by having opinion leaders in all of their verticals and, driving subscriptions. On the other side, you have a scale business where New York Post or the Daily Mail. Does, volume and ad business. And I think if you're doing the Daily Beast, somehow you have to create kind of cultural authority so that you can, create events and stuff that people want to go to.
+
+I think you have to, you probably have to have, you probably have to do, subscriptions and events.
+
+[00:22:04] Brian: So something I wanted to talk to you a little bit about, unless you want to do more on that is, because Jonathan's coming in 13 minutes, is more on this, this, middle aged lament. And then also, I think it's leading to, I'm trying to figure it out, like an age of outlaws. Like, I think most people now are.
+
+Not most people. A lot of people believe that playing by the rules has gone from a safe bet to a soccer's bet. And Simon Cooper, who's one of my favorite columnists, he writes for the FT Weekend, and he wrote this weekend, whatever career you choose will likely implode before you finish your race. I trained with local journalists in 1994.
+
+Do any of them still work in what remains of local journalism? Friends who became academics, architects, or civil servants have seen their salaries and status fall remorsely relative to other professions, sometimes even in absolute terms. He finishes with, that basically everyone should have gone into Tech. I mean, he's talking about people in their, their mid fifties, who have been cashier, but it seems to be a, I don't know. I just see this all over the place, in, in all stratas of, of the workforce, but maybe it's, I don't know. Maybe it's not that
+
+[00:23:18] Troy: What is up here today? Let's
+
+[00:23:20] Alex: I don't know. You guys get, you, you guys both. You came in with like shitty energy Troy, I gotta be honest, man. Let's spice it up here. I I, I like Brian's point. Troy,
+
+[00:23:31] Brian: I don't know. I don't feel like you want to talk about this, but you don't contribute anything to
+
+[00:23:35] Troy: What is So I,
+
+[00:23:38] Brian: I 
+
+don't know.
+
+[00:23:39] Alex: You've been just dragging your heels
+
+[00:23:41] Troy: I, I 
+
+do contribute to the preparation and I feel like it's a great topic. And I read the piece on the weekend, Brian. 
+
+[00:23:49] Brian: Did you? 
+
+[00:23:50] Troy: Yeah, and I think it fits in with, I think why I wrote that post on power. I think a lot of people feel disempowered and I think it's, obviously, exaggerated for folks that have less, time left in their career.
+
+And he was writing as a 55 year old. But it was kind of sad.
+
+[00:24:10] Brian: Well, he's living in France. Isn't that the like golden years?
+
+[00:24:13] Troy: what's, uh,
+
+[00:24:14] Brian: Alex, you can talk to that. Don't you know? What are the golden years?
+
+[00:24:17] Alex: In France. 
+
+[00:24:18] Brian: Yeah. 
+
+[00:24:19] Alex: What does that mean?
+
+[00:24:20] Brian: I thought that the French have this concept of you like retire, like at 55 and you have 10 years in which you travel and you can still hang out and stuff you're not like decrepit yet.
+
+And
+
+[00:24:32] Alex: I wouldn't know. I can't speak for the French. I mean, I'm, I'm, technically French, but they've disowned me since
+
+[00:24:38] Troy: yeah, 
+
+if I was going to pull anything out of that article, Brian, I mean, it, it said be adaptable, find a low cost space, Don't live in big cities and don't have a job that will require you to live in expensive cities. Avoid, I think, what he called the identity trap, which is where you have to spend a lot of money to keep up with the Joneses, right, in your home and your second home and your clothing and all that stuff.
+
+And then the one part I liked in the piece was there was a bit on how to behave at work. the advice of just be yourself is fine as long as you're part of what he called the dominant demo. Do you remember this?
+
+Did we read the same article? And so if you're part of the dominant demo, like you're a young dude in a tech company, then you can be yourself.
+
+But if you're not part of the dominant demo, you better, act like the dominant demo.
+
+[00:25:32] Brian: I wonder if we're seeing that across the, because there's this reaction to the bring yourself your full self to work. Google was arresting employees last week, for doing a sit in at the Google Cloud CEO's office. It was pointed out on all in that they must have known that they were going to get fired.
+
+I don't think you can do that without getting fired, even, even at GooglE. but yeah, I mean, I think that is,
+
+[00:25:54] Troy: Was the, was the event catered?
+
+[00:25:56] Brian: I don't know. just saw the photos of everyone wearing masks in this guy's office. But Google, seems like it is turning, the page on, on that maybe 
+
+[00:26:09] Troy: This is the new law law and order Google.
+
+[00:26:11] Brian: Yeah, it's the new law and order, Google. And the
+
+same thing happened in Columbia. 
+
+[00:26:15] Troy: yeah, when today it's intensifying at Yale? Would that have happened at Airbnb, Alex?
+
+Can you a sit in 
+
+Yeah.
+
+sit
+
+in.
+
+[00:26:24] Alex: I can't imagine I mean to be honest like we Didn't have to deal with the same controversies that google did so It would have happened. I can't see I mean honestly like I would have recommended for people to get fired for that, but cynically, maybe I'm thinking that some of these folks might have thought that they could have kept their job at the time, or they, or that well may or maybe that Google, Google just, might have kept their jobs in a different era where they were competing on talent, but today I think a lot of these tech companies are looking for excuses to let people go without having to pay severance.
+
+So, and I'm not saying that's what happened here, but I think that there's a different market conditions that make this far less appreciated in the company. And, and, and so, that stuff might've passed before. I don't know. I think it's hard to
+
+[00:27:17] Troy: I don't think Google's worried about paying severance. I think Google's worried about law and order and drawing the line. And this was the time,
+
+[00:27:25] Alex: Yeah. And I'm not, and I'm pretty sure that they won't get a ton of pushback internally. There was a time, especially when there was a lot of, a lot of kind of competition around talent where, I think employees got away with stuff that they wouldn't get away with todAy. but you know, I don't have, I don't have examples from Airbnb around that.
+
+[00:27:45] Brian: NPR is also an uproar. I don't know if you 
+
+saw, did 
+
+[00:27:47] Alex: is not thing, a whole nothing burger, 
+
+like some disgruntled dude wrote something
+
+[00:27:53] Brian: He did, he went to a substack, no less.
+
+[00:27:55] Alex: well, isn't that the way
+
+[00:27:57] Brian: And he wrote about, he wrote about a monoculture which exists, and of course it exists in NPR. I mean a lot of it is like, oh my god. Yeah.
+
+Gambling in Atlantic City.
+
+[00:28:10] Alex: yeah, everybody's got three names. and they all speak the same like of course Like you go there for a certain type of content relax, man,
+
+[00:28:17] Troy: It seemed like a suicide mission. That too, right? The
+
+[00:28:20] Alex: isn't that like a
+
+a real pathway from like being like seen as a leftist that says something controversial And and then you become kind of like a right wing hero and you can build a whole new media brand around yourself You know, I just found out that the the lady who had a psychotic episode In that airplane is now Becoming a, MAGA spoke spokesperson.
+
+Like that's, that's the pathway, like you just, you
+
+just, if, if
+
+[00:28:47] Brian: Wait, the one who said that that guy was not real?
+
+[00:28:50] Alex: yeah, yeah, yeah,
+
+[00:28:52] Brian: She's MAGA? I could see that, actually. 
+
+[00:28:54] Alex: now she has things to say about trans people. However, like it, it seems to be a pretty reliable way to be build a media company. And I think as we , as we're trying to help people out here, it's just like, just go nuts guys. Just take whatever pill you need to take to jump sides
+
+[00:29:10] Troy: Here's the bigger, here's the bigger issue, okay? It's, wake up dude, it's NPR. And by the way, it's mostly list listener funded by progressives. And, the problem is obviously they take money from the government and somehow that must mean that they, they should, represent both sides.
+
+The problem with, media embracing the right in a sort of even handed way is, it's not really right or left. It's, it's about embracing views that are distasteful to, even to remotely engage with, because it's not, to me, right. It's a kind of revolutionary, kind of liberal values wingnuts and to embrace them inside of your media company in any way feels
+
+almost impossible 
+
+[00:30:00] Brian: Yeah, there was a couple of months with the, everyone was reading the Hillbilly Elegy, then that sort of went away. And, Yeah, there's going to be these running battles throughout, but Trump is now he's in a courtroom. It's remarkable, but it led me to think that we're, we're really in an age, where it, It pays to be an outlaw, I think and I think it does tie.
+
+I think people have people always have a soft spot for outlaws like people who break the law. But, I think that we're in a time because following the rules. for a lot of people feels like it was a sucker's bet that the people who, who break norms, break rules, get attention and accrue power. I mean, would you rather be Elon or would you rather be Sundar?
+
+[00:30:47] Alex: and speaking out against your own Feels like that in a way as well, right? It's like an outlaw and then you automatically get make friends with the other side But it is also an outlaw behavior What do you think about that joy
+
+[00:31:00] Troy: but which part, Alex?
+
+[00:31:02] Alex: Just outlaws just the thing brian said Just
+
+[00:31:05] Troy: Well, I mean, listen, guys, it's great to be an, it's a good time to be an outlaw because you can own your own media. You can have your own TV channel, your own radio station, your own print app, your own media apparatus. So it's a great time to be an outlaw because you need media. The problem is, is don't try to be an outlaw.
+
+back to the advice from your FT guys column, don't try to be an outlaw when you have, you don't have the right power position.
+
+[00:31:34] Brian: Right. Yeah. I was talking about this with a former colleague and she, she was saying, well, if you don't have a kids in a, in a mortgage, you can be an outlaw, but
+
+[00:31:45] Troy: you control the company, you have no expenses or you're independently wealthy, go be an outlaw. Why not? But the other thing is you have to have the constitution to be an outlaw. I, my little fragile constitution couldn't handle it. And I can't, 
+
+[00:31:59] Alex: You don't think you're an outlaw. 
+
+[00:32:01] Troy: I couldn't imagine sitting through, just imagine every day for Trump is a fight, a battle, and he thrives on that.
+
+I mean, how humiliating would it be to see?
+
+[00:32:14] Alex: It would break
+
+[00:32:15] Troy: Court drawings, it would break most people, of your sad face and people endlessly commenting on you falling asleep in court. Well, people take you apart for paying money to a porn star that you slept with and had to silence before an election. And your partner, your family, your kids are all watching it.
+
+I mean, do you do that?
+
+[00:32:39] Brian: it's a superpower.
+
+[00:32:41] Alex: It's impressive. I mean, it's, it really is, Right? 
+
+[00:32:44] Brian: let's just be real. It really is that's what he's got. Like he's got the ability to take it all and, and seemingly enjoy it. I don't know.
+
+[00:32:53] Alex: It's, it's incredible. I, and that's why he keeps. succeeding in in his own way even while he's failing because he he outlasts everyone he's just so determined and i think if you've got enough of that determination and like lack of self awareness and whatever you need i mean it's very powerful 
+
+[00:33:14] Troy: I mean, the ability to not give a fuck is I think a path to happiness. I think it's really great to be able to live your life and feel confident enough in who you are and your decisions that you don't have to constantly worry about being judged or how people are seeing you and all of that. But like, Oh my god, takes it to another 
+
+[00:33:35] Brian: It's a lot. So what are we going to talk to Jonathan about? 
+
+[00:33:38] Troy: Well, he's seen it all. Jonathan started with the first, I think among the first digital agencies in the world. So when, When they were way below the line, Brian, digital agencies. And then, he was front row for the buildup before the big dot com crash in, 2000, 2001.
+
+And then saw all of the development from the agency side, in his case, Omnicom, as that entire industry evolved to, manage, a digital reality and programmatic and everything. And now is I think front row to the how AI is going to impact, the, the agency world. So Jonathan has a lot to say.
+
+[00:34:21] Brian: So Omnicom was always different than a lot of the other holding companies. I just remember Omnicom being more hands off. And that they organize real estate and whatnot, because the holding company model is a little odd. I mean, they, they have agencies that compete against each other and they say, if there's going to be three agencies in there, let's have two to have to have a shot at it.
+
+And some, it was always that WPP and Martin Sorrell would, would always want to be shoving agencies together, creating bids. Bespoke agencies for PNG or whatever, but that Omnicom was less hands on with their agencies. Is that fair? 
+
+[00:35:00] Troy: More of a federation, I think. Yeah.
+
+[00:35:02] Brian: No.
+
+[00:35:03] Troy: And they owned really, differentiated, assets, whether it was, Well, they had big, big agency networks like BBDO and TBW, but they also had Goodby and, Wolfolens and sort of distinguished independents.
+
+[00:35:17] Brian: I haven't focused on the agency business in so long. 
+
+
+[00:35:20] cut
+---
+
+[00:35:20] Alex: wow this episode is gonna be 25 minutess of slow speaking. see if Jonathan saves it.
+
+
+[00:35:25] Guest Sta rt
+---
+
+[00:35:26] Troy: Here we go. 
+
+[00:35:27] Jonathan: There. Oh my God. Look at it. worked. is. Hey, hey.
+
+[00:35:32] Troy: Hey, look, Fidel, your old landlord is here.
+
+[00:35:35] Jonathan: yeah, I feel like I, I'm sorry I trimmed my beard for this.
+
+[00:35:39] Troy: Hey, Brian, do you know Jonathan Nelson? 
+
+[00:35:41] Brian: I do. It's been a while Jonathan. How are you?
+
+[00:35:44] Jonathan: It has been. I'm good. How about you?
+
+[00:35:46] Brian: I'm doing well,
+
+[00:35:47] Jonathan: Look at you with your podcasting microphone. This is fucking fancy shit.
+
+[00:35:54] Troy: Brian is 
+
+[00:35:54] Alex: is, 
+
+[00:35:55] Troy: London.
+
+[00:35:56] Jonathan: Oh, nice. Look
+
+both ways. 
+
+[00:35:58] Brian: Well, I 
+
+got my phone stolen.
+
+[00:36:01] Alex: Jonathan, I gotta be honest with you. This has been very low energy. And, and I'm putting all my hopes into you just getting this whole podcast going, kicking 
+
+off.
+
+[00:36:11] Jonathan: You mean the whole podcast thing is low energy or just 
+
+[00:36:14] Troy: this,
+
+[00:36:14] Alex: this one. 
+
+Brian's tired.
+
+Troy is I see. he's he's out of zines or something. So I've been 
+
+[00:36:22] Jonathan: Yeah. All 
+
+[00:36:24] Alex: not working out. so I'm sure, Troy,
+
+you kick it off and introduce Jonathan, please. 
+
+[00:36:29] Troy: what are you, my mother? 
+
+[00:36:32] Brian: Yeah.
+
+[00:36:34] Troy: I love Jonathan. I've known Jonathan for a very long time. we met in what year, Jonathan?
+
+[00:36:38] Jonathan: somewhere 
+
+[00:36:41] Troy: You came over to my house in Toronto.
+
+[00:36:44] Jonathan: I did.
+
+[00:36:44] Troy: Met my dog and my wife and my child Coco. And,
+
+[00:36:48] Jonathan: Was Coco running?
+
+[00:36:49] Troy: yeah. I think, or she was either around or she was in the oven.
+
+[00:36:53] Jonathan: Yeah. 
+
+[00:36:54] Troy: Anyway, Jonathan has, seen everything, I think, in the evolution of digital media, starting as a kind of pioneer in the services side. Jonathan, was Organic, the first or among the first digital agencies, right?
+
+[00:37:07] Jonathan: yeah, it probably was, I mean, it's certainly the first internet one.
+
+[00:37:11] Troy: Right.
+
+[00:37:11] Jonathan: I think there were probably some digital
+
+agencies on, uh, oh yeah, Razorfish, those guys are young'uns. No, it was, we were founded in 93. So Modem Media, I think predated us, but they were working on, they were working on first class, which was the Proto AOL and,
+
+[00:37:30] Troy: First class, you mean the, the, the billboard in a box? The, BBS?
+
+[00:37:35] Jonathan: was, was the BBS that became AOL. I mean, we're talking Mesozoic era here,
+
+[00:37:40] Brian: Modem also brought us the first, the first banner ad. Let's not forget that.
+
+[00:37:44] Troy: That's not entirely true, 
+
+is it? 
+
+[00:37:46] Jonathan: I can't, yeah, I can't forget it because I actually did half of them, but,
+
+[00:37:51] Troy: I thought you were the creator of the but those guys are good. you?
+
+[00:37:54] Jonathan: we, we formatted it, but, there actually were a bunch of firsts.
+
+So many 
+
+of 
+
+[00:37:59] Troy: me. Jonathan, you told me you and Andrew Anchor created the first banner.
+
+[00:38:02] Jonathan: I've gotten away with it for decades.
+
+[00:38:05] Brian: So many people claim, nobody likes the Bannerette, but so many people claim to, to have been like the creator of 
+
+[00:38:12] Jonathan: yeah. 
+
+Well, the truth is that Hotwired created the format, and when Hotwired launched, which was on October 30th, 1994, there were a bunch of firsts. When it turned on, there were eight banner ads. And so it was Timex. Modem did Zima and I think AT& 
+
+[00:38:32] Troy: Zema was a, was a 
+
+[00:38:33] Jonathan: think new ideas or which was called on wrap at the time.
+
+Did one, I forget like sprint or something. And then organic did the other five.
+
+[00:38:41] Troy: Is it still 
+
+[00:38:42] Brian: It was like, have you clicked yet? Like you will.
+
+[00:38:45] Jonathan: That's the one. Yeah. Those guys. Yeah. That's the one that, they publicize. Yeah. It was, we all did, this thing called you will, and the ad that we did was kind of great, which is if you ever envisioned, you know, Making a phone call from your wrist and it said you will and that was the banner and obviously that came true
+
+[00:39:03] Troy: Right. At the time. The closest you got to it was Maxwell Smart, making a phone call with his shoe.
+
+[00:39:09] Jonathan: For a shoe. Yeah, exactly. 
+
+[00:39:12] Troy: Yeah, I remember that Zemo campaign Bizarre that you just, brought that up. I remember that being one of their big accounts at Modem.
+
+[00:39:19] Jonathan: You still drink that
+
+stuff don't you 
+
+[00:39:20] Troy: Love Zemo. So anyway, Jonathan's seen it all and then, after.
+
+The rise and then fall of digital agencies, they moved, made their way back to advertising holding companies, and you went with it, Jonathan, and then you've seen, I think that kind of brought broadly the transition of that, entire industry, from a time when they, digital was a novelty to, it being the foundation of the business today. Yeah. Jonathan. And now you've spent how many years at Omnicom as the CEO of digital or something like that? 
+
+[00:39:54] Jonathan: Like that, but 23 years.
+
+[00:39:56] Troy: 23 years.
+
+[00:39:57] Brian: Holy shit. Do you 
+
+[00:39:59] Jonathan: Yeah. 
+
+[00:40:00] Troy: They give you like a, a Rolex?
+
+[00:40:04] Jonathan: it, 
+
+uh, it's a, it's a metaphorical watch. I wear it around my neck.
+
+[00:40:11] Troy: So, 
+
+so Jonathan, I called you today because brian was talking about the changes that AI was gonna, or the effect it would have on the ad industry broadly. And I thought of you immediately. And then one of the things I did was I was watching a video that was created as part of the Google cloud event.
+
+And. it demoed a, I guess, a fictitional company called Symbol Outfitters, a tent maker and showed how, via Google, Google tools that it would sort of ingest the entirety of your kind of marketing asset library and all the things that you do in the company and provide this kind of crazy level of assistance in, in How you plan all of your marketing activities from envisioning, your products in different settings to, to creating a mock podcast between, two people to, creating live videos that you could post on social media, all kind of instantly rendered with AI suggesting to me that there's, I guess it will take a while, but there's big change ahead.
+
+And I thought maybe, you could help us understand that better.
+
+[00:41:25] Jonathan: Sure. Yeah.
+
+[00:41:26] Troy: Where do you want to begin? what's going what's going on out there? Jonathan,
+
+[00:41:29] Brian: Yet another existential risk to ad agencies 
+
+[00:41:32] Jonathan: yeah, exactly.
+
+[00:41:33] Brian: for like 40 years.
+
+[00:41:35] Jonathan: yeah, I mean, 40 years of existential risk. Yeah. The first one being pencil and paper being democratized. yeah, I saw that same Google video. I mean, it, it's not wrong. It's certainly something that we've been playing with at Omnicom for a long time. we baited previewed our assist stuff in this platform we call Omni in May of last year.
+
+And it does a lot of the same stuff. It doesn't write a podcast script. So, but most of the other stuff, I was interested in the animation. And that was, was interesting. I hadn't seen that before, but most of the other stuff I'd seen, there's no doubt AI is going to affect, quite a bit of everything and help with the ideation phase and, eventually the execution phase of advertising.
+
+So it's a, it's a huge, threat and other side of threat is opportunity. So
+
+[00:42:24] Brian: So is the opportunity just more complexity and more complexity agencies love more.
+
+[00:42:30] Jonathan: Yeah. In agencies, generally complexity is our friend. I mean, it's not as simple as write a prompt and push a button. There's, there's a lot more to it. The other thing that. It occurs to me as our clients at Omnicom, who are generally some of the largest advertisers in the world, they pay quite a bit for the craft, for the, the perfect language, the perfect image, the perfect, called action.
+
+Managing it across an incredibly complex, copyright environments, political environments, internal politics, external politics. I mean, to think what we do is just simply copywriting and creating images is, is not really understanding exactly what large agencies do, not to mention all the media buying, targeting, all that stuff.
+
+[00:43:15] Troy: do you think all of this impacts what we see as consumers? 
+
+[00:43:19] Jonathan: I have a fear and a hope, and the fear is that we're going to see A whole lot of nonsense, kind of like when email got opened up and we're looking back to the 90s right now, that we saw a whole lot of, spam and Viagra ads and stuff probably most of us didn't care about. And so the level of noise rose, and I think some of the descriptions going on around the election this year are quite well founded, where the could drop, know, the signal to noise ratio drops because the noise level rises so high.
+
+Thank you very The hope is, if we do this correctly, and, and we can figure this out, hopefully you're going to see advertising that's more, what we call mass personalization scale, a little bit more tailored to you, and a little bit more interesting to you. So, if you're into buying guitars, you'll see a lot more guitar ads, and hopefully a lot less, nonsense ads that you just don't care about. And then within those ads themselves, the ads will be tailored to you, your specific interests, your, your point of view and what whatnot. So I hope we get good at that. I think we are, but that doesn't mean there's not gonna be a whole lot of noise surrounding it.
+
+[00:44:29] Troy: What do you say to a guy like Alex that brings a steady kind of disdain to his take on advertising?
+
+[00:44:39] Brian: He hates it.
+
+[00:44:40] Jonathan: Well, somebody's got to pay for all this. look, if you, I think a lot of people say they hate advertising. I mean, it's obviously it's your right to hate advertising. However, You probably don't hate it if it's as much if it's something that you actually care about.
+
+And not that everybody cares about cleaning products or, or whatnot, but I think there are things that you actually care about.
+
+Like when you're about to buy that fancy Rode microphone that you're talking into right now, if we had targeted you with great choices for podcasting microphones, you might be interested and might hate it a little less.
+
+[00:45:14] Alex: yeah, no. And also, we all play a role on this podcast. But what I hate maybe more is, what's happened to advertising where the, the, the capabilities that allow it to be so performant have basically completely separated from what it used to be, I think, in the past, which was at least some significant part of culture.
+
+Right. Like you created content that existed and it was advertising product, but it was also shaping our culture in a certain way. And it meant that, companies and people could participate in, in culture creation. Like now, as if you plot a line from where things are, I might. In 10 years time, I might just get a string of gibberish, which means nothing to anyone, but makes me buy those socks, you know, because it's just like, you know, neuro linguistically program to just make me feel like, and I worry about algorithms.
+
+Right. And I think, I think advertising plus algorithms is, great if you're a small business and you need to target a specific type of audience. But it's also turned advertising into something else. And that's what I often complain about,
+
+[00:46:18] Jonathan: Yeah, I, I mean, that's certainly an opinion of it. I'm, I've never been so precious about advertising's place in culture. I mean, of course there are examples of, got milk and just do it and things that transcended advertising into pop culture. But I would argue everybody needs socks and when you're in the market for socks, may be appropriate to see them.
+
+And, that is,
+
+SOC companies tend to be small businesses and
+
+[00:46:46] Alex: that is is is advertising the best product for that, or is asking an AI, tell me what the best socks are, the best product for that.
+
+[00:46:53] Jonathan: Oh, doing like an agent based thing? Well, that's another angle on it, is as we, I mean, I think the next phase of this is AI as agent, where, yeah, exactly, go out and find me what the best SOC is, based on my, my experience. need state or at least what I can tell you or what you can infer from my behavior.
+
+And then you send an agent out in the world and it comes back with here's your top five socks, that you need. Or you can go to Google and they'll just tell you here's the people that paid the most to tell us to tell you what socks are.
+
+[00:47:23] Brian: So do we see, do we see more advertising or less advertising? Because I think that the promise has always been the targeting. I remember David Verklin saying, Oh, only dog owners will see dog food ads and all that stuff. And then the idea was, Oh, well, we'll actually have less advertising because it'll be performant and, and it never, never is the case.
+
+But won't, won't the economic function of advertising decline to a degree? Do
+
+[00:47:48] Jonathan: It's hard to say whether overall will decline. I mean, the GDP is going up, the advertising business, the budgets are going up slowly, but they are going up. It's advertising overall is cracking a trillion dollars for the first time this year globally. So it's going up. I think you are seeing more messages probably for a shorter duration. But, how much it affects you, I think it is somewhat, algorithms and combined with people
+
+trying to create content that Jonathan, hasn't it just proven to be a fairly stable formula between percentage spent on advertising marketing as a portion of GMB. And, if the world becomes agent based, then your job will be to get on the other side of those agents and bias, make sure that your clients, have the opportunity to be featured as part of the agent agents choices.
+
+Yeah. In the same way that we do organic search versus paid search, I think partially our job will become how do we format things correctly so that agents can pick them up in the, in the best way possible. 
+
+[00:48:55] Brian: Do you think this has a bigger impact on the creative side of the business, the strategy side or the distribution side 
+
+[00:49:02] Jonathan: That's an interesting question. I don't know the answer to does it have more. I think it dramatically affects all of those and it democratizes all of those. So if you look at that Google video, there was some strategy, tell us about your brand. There were some creative, I guess there was not that much around the distribution side of it, but you know, maybe, by creating your own podcast about your tent company, symbol in the case of this Google example, you are creating media.
+
+So it's owned media was their distribution strategy, but it affects everything hard to say which one's bigger.
+
+[00:49:37] Troy: Hey, Jonathan, would you say if you stood back, over the long arc of your tenure at Omnicom that, that there's been a decided shift inside of your company and your capabilities to things that are specifically performant. that.
+
+[00:49:54] Jonathan: Oh, absolutely. Yeah, yeah. Going down funnel. Yeah, from the torso to the tail, kind of. Yeah, and we just bought a company called Flywheel this year, which is really an outcome space. It's the largest buyer of media and merchandising on Amazon, Walmart, a number of the other, you know, e commerce sites. And the, the strategy behind buying it was ultimately people do advertising to drive outcomes and Flywheel is an outcomes company. And so it's the largest acquisition in Omnicom's history. And we bought it because we see it all going down funnel, away from aware, not just awareness, but it's really awareness, consideration, purchase, post purchase. And so getting into the consideration and post purchase or purchase and post purchases is quite a bit of our efforts focused there.
+
+[00:50:40] Troy: Hey, Jonathan, kind of related. I mean, I would have thought that was the case, but you know, on the media side, you see a lot of people, that, that make kind of jokes about what it's like to. take media offerings to young, people inside of ad agencies and and subjugate themselves to the decision makers inside of that nasty process which you know I think is changing and becoming more mechanized how how do you think about the different strata in the media world and your 
+
+relationships with media outlets Guess that's a kind of a broad question, but
+
+[00:51:20] Jonathan: that's, parse that for me a little bit. What do you want to know inside there? I mean, what do we
+
+think? We like them. I mean, but, but we're, we're trying to figure out, okay, right message, right person, right time, driving the right outcome and building tool sets to help humans solve that equation. So, it's quite a bit of analytics sitting behind all those, those people that the media companies are talking to.
+
+If you're a true partner media company, you're talking to pretty senior people and you're co developing those tools with us in many cases.
+
+[00:51:53] Troy: Seeing what does that mean? What do you mean? Someone that just has scale? 
+
+[00:51:57] Jonathan: Scale are a particularly interesting opportunity and AI is an example of that. So a lot of our development is in conjunction with media companies. So think of things like, clean rooms, those don't exist in a vacuum. They really become a neutralized join. Kind of a demilitarized zone between media companies, media sellers and media buyers. So helping with privacy, that was, those tool sets were co developed with Facebook, with Google, with Amazon, with some third parties.
+
+[00:52:27] Troy: Did the senior people in the media buying company still have the same valued long term relationships with media that they had a decade ago?
+
+[00:52:35] Jonathan: I think so. I mean, it's become a huge business. I mean, it's a, it's hundreds of billions of dollars at this point. But if I want something done, or I have a question, I call people at my counterparts at the, at our partner companies. So the people side of it doesn't go away. It's not all just technology.
+
+[00:52:56] Brian: need far fewer people. That's always the question and programmatic. on more people. So
+
+[00:53:03] Jonathan: I think this is an interesting thing, and that's pretty, it's a very interesting thing in the age of AI. Technology has not, I mean, it's hard to say how many people we didn't hire because of technology, but our, I believe our head count at the media buying businesses is at an all time high, and here we are 20 plus years into automating it. So you still need a lot of people to do this and I think that's going to be true with AI, at least for a good long while here. And that has been true of my entire
+
+career. I mean, the digital 
+
+[00:53:34] Brian: the, on the programmatic front, cause you have seen it like really from the start. Has this been successful ? Right. Right. I mean, think about all the, the sort of negative externalities and the whole purpose of it was, was greater efficiency and doesn't seem all that greater efficiency.
+
+I don't know, on, on, on its balance, has the programmatic revolution been goOd? 
+
+[00:53:56] Jonathan: I think so. I mean, we, we have better, I believe that we have better fidelity. We have more choices. It's empowered more. media companies to scale. And I know that that could be debatable. But if you look back when I grew up, it was three networks, a handful of newspapers, a handful of print publications, your local radio station.
+
+That was your media choice versus today when there's literally millions of websites that are ad sponsored, not all of them are great or successful, but there are millions, as you Know. And I think programmatic led to that.
+
+[00:54:31] Troy: Interesting.
+
+[00:54:32] Jonathan: There's a long, you know, the whole idea of the long tail, right? The long tail exists particularly because of the internet first and programmatic second.
+
+[00:54:40] Brian: Does the open web matter 
+
+to 
+
+you or to your clients? Do you care if it 
+
+[00:54:45] Jonathan: the open web? Oh, very much. So yeah, it's usually,
+
+I mean, I think there are certain folks that they just say, look, let's give all our money to
+
+the top players. And, you know, call it a Yeah. You have four of them now. It's like, why, It's sort of like the madman there where it's yeah, split it three ways between CBS, NBC, and ABC.
+
+And let's go have a two martini lunch. There are certainly folks and clients that believe that kind of stuff, but I don't think, most clients actually believe that and behave that way. So Alex, you had a
+
+[00:55:14] Alex: Oh, it's a dumb, it's a dumb question. I know I'll hear shit from Troy for this, but do you still build websites for clients? Is this still happening?
+
+[00:55:21] Jonathan: Of course. Yeah.
+
+[00:55:22] Alex: Yeah, there's like people in rooms designing websites having conversations about websites We keep talking about the death of the website, and everything moving over to platforms so it's nice to hear that that still happened.
+
+Somebody's still out there coding css
+
+[00:55:38] Jonathan: Well, we all still go to websites, I mean, they don't just make themselves, somebody's
+
+[00:55:43] Alex: Yeah, mean when was the last time I went to a website for a brand though? That's what i'm wondering
+
+[00:55:48] Troy: What are you talking about?
+
+[00:55:49] Brian: The microsite? Elf yourself?
+
+[00:55:52] Troy: No.
+
+[00:55:52] Alex: microsite. I want to buy, I want to buy some speedos. Do I go to the speedo site? Do I still
+
+[00:55:57] Brian: Get an immersive experience. That was a weird era.
+
+[00:56:01] Troy: What an interesting choice. Yes. Yeah. 
+
+[00:56:03] Alex: WelL, it's springtime, you know.
+
+[00:56:05] Brian: It is 
+
+[00:56:06] Troy: did you guys, 
+
+[00:56:07] Jonathan: Yes, suddenly this podcast sped up.
+
+[00:56:10] Troy: did you go, Jonathan, did you build speedo. com? It's 
+
+[00:56:16] Jonathan: exactly. 
+
+[00:56:17] Troy: I like the virtual try on.
+
+[00:56:20] Alex: Yeah, you have to,
+
+[00:56:21] Troy: So after all that, that was your question.
+
+[00:56:24] Alex: Yeah, man. I just wanted to know. Weren't you curious? I'm curious. Oh, I had another 
+
+[00:56:30] Jonathan: I think, I think we all go to websites constantly. I mean, somebody's got to build all this stuff, right? I was just looking at gravel biking shoes. And I went to a rating site that reviewed them all and
+
+[00:56:42] Alex: but yeah, but you didn't go to the 
+
+[00:56:43] Jonathan: linked to the commerce. 
+
+[00:56:45] Alex: went to the you went to some sort of content site, right? 
+
+[00:56:48] Jonathan: I went to a content site and then I logged on to your podcast, but I was about to do some deeper research into.
+
+[00:56:54] Alex: got it. A very specific shoe that I was interested in. And last night I was, I'm just looking at gravel bikes right now, was looking at the OEM site, the original equipment manufacturing site for a couple of the brands 
+
+[00:57:09] Jonathan: that interest me.
+
+So, so I think we all 
+
+[00:57:11] Troy: do
+
+you have a deep nostalgia for old browsers? Do you, do you use?
+
+[00:57:18] Jonathan: yeah, for old technology. No.
+
+[00:57:21] Troy: Was a joke folks, because Jonathan, 
+
+sorry, Jonathan had to download Chrome to get on this podcast. So I,
+
+[00:57:28] Jonathan: I have lots of browsers, I just don't have Chrome. Now I have Chrome. 
+
+[00:57:36] Alex: Today, you know, young creatives that see advertising as a great career or even maybe as a launchpad to, getting paid for the work that they do until they can, do something elsE. what would you tell people now that are just like on the cusp of going into on the market?
+
+[00:57:56] Jonathan: I think you got to look at stuff a lot more holistically than just being an illustrator or a copywriter. You have to understand a little bit about data, though data is getting more interesting, or, or not more interesting, but easier to understand. So a lot of these AI assistants,
+
+[00:58:10] Alex: Yeah.
+
+[00:58:10] Jonathan: you point them at data sets, they can answer questions in real speak, but of understanding audiences a little bit more holistically, understanding how assets, they Assets are created, assets are tagged, assets are assembled, there's a much more holistic platform environment that you have to work With.
+
+likewise, I think, yeah, so it's sort of think more broadly and then. What I keep reminding people is bring your whole self to work. It's sort of amazing how, how much, they'll go to art school or they'll go to an advertising college or university and they'll come thinking that they understand advertising when it's really just like, think of yourself as a consumer.
+
+Kind of what do you do? You know, look at yourself in the mirror, figure out why stuff works the way it works
+
+[00:58:52] Troy: I thought you weren't and stay focused on that. I go. I think a lot of people try to leave their personal self at home and try to bring their professional self to work when it, when really they are the customer and thinking a lot about how the craft works and it's evolving and how to use these new tools that don't entirely exist yet.
+
+[00:59:10] Jonathan: I mean, interesting thing about that same Google, demo that they did at Google next, Gemini pro is not released yet. All the technology that they showed, it's not available. So it will be available and it'll be interesting to see what it what actually happens out of it. But, most people don't have access to it.
+
+We have test access to it right now. But, AI is changing remarkably quickly as you guys all know, and anybody listen to this knows.
+
+So yeah, just be flexible.
+
+[00:59:39] Alex: so? Brands have probably become more flexible about the creative that goes out with programmatic, right? Where before there was some executive at the brand that was looking at every kind of poster ad going out, right? Now if you have programmatic or generative stuff, the brands are going to have to become more comfortable with having a little bit less control over their message, right?
+
+Is, is that, is that changing? Is that an attitude shift, 
+
+[01:00:04] Jonathan: that has yet to happen
+
+[01:00:07] Alex: right?
+
+[01:00:07] Jonathan: right now. A human looks at almost every, or I mean, as far as I know, every piece of creative that goes out the door gets signed off on.
+
+[01:00:14] Alex: Yeah, but do you
+
+[01:00:15] Jonathan: Nobody's quite saying, Oh, those LLMs are just fine here. yOu know, do a creative out of a prompt and run it. 
+
+[01:00:21] Alex: it's an interesting thought exercise, right? Where in my like, hypothetical future where DLLM, the kind of Algorithms has just figured out my trigger words for making me buy those socks Is is just throwing bombas, you know and and saying some gibberish bombas is gonna have to be okay with that or not You know,
+
+[01:00:41] Jonathan: Yeah, I think, I think you're, you're correct, but I'm just saying we're not there yet.
+
+And there's a lot, I mean, we got to get our heads around copyright, which is a big, big issue here. We got, we got to keep these LLMs from hallucinating to the degree that they are, put some guardrails around it. We got to get a whole lot more used to it.
+
+And, and the biggest thing holding back technology in many cases is just people, right? It's hard for people to change. It's hard for people to trust. And it's going to take a while for that scenario of true mass personalization at scale to happen. I think, it'll be an incremental process, but you're not wrong at the end state.
+
+I think we'll get there. It's just going
+
+[01:01:20] Alex: mean it'll people will change fast if it performs, right? It'll motivate them I think
+
+[01:01:26] Jonathan: Yeah, I don't know when I started in the early to mid nineties, I thought, Oh, the black boxes are going to show everybody what, what's going on here. And in fact, I started a company, a crew software that did measurement was very successful in public in the nineties. And I did it because I thought, Oh, it's going to be so obvious that this is performant.
+
+And it was very obvious that it was performant. But it took a decade and a half before digital media actually became 50 percent of the media By
+
+why was that? It wasn't because we didn't have metrics proving the point. It was because people for many, many reasons didn't want to change.
+
+[01:02:04] Troy: Hey, Jonathan, one of the things that I think is interesting about what you got to see at Omnicom is the rise of Google and Facebook over the last 20 years. When, and you guys were. Lockstep with that. What, what did you see at Facebook as an example is how they became so incredibly successful in advertising.
+
+[01:02:26] Jonathan: Well, they understood they had a depth of understanding around individuals that nobody else had, and particularly in their early days, when Apple still allowed like IDF and by the way, the rise of mobile happened at the same time. So those two go hand in glove, but. It was a bit of the Wild West, right?
+
+Like cookies had not been deprecated. IDFA, which is, the tracking standard from Apple, hadn't been deprecated. Android had ID fully on. So you really could attach personal and personal preference and a, and a, social graph to content. And that's what drove the rise of Facebook.
+
+[01:03:05] Troy: And now when,
+
+[01:03:05] Jonathan: And now those guys are becoming very, very good at, at inference and, correlation versus causality before they had causality because they had absolute deterministic identifiers and now they're, they're using, in many cases, AI machine learning algorithms to try to figure it out and are also quite effective.
+
+But, but that, but I think that determinism in the early days really drove and with mobile. 
+
+[01:03:31] Brian: How does it change the power dynamics between you guys and the agencies and the technology platforms? Because I mean, obviously they've been, it's been really weird because usually the media provider is always subservient to the buyer, right? They can just pull, pull the buys, but they've got whatever, a million, a million and a half customers.
+
+So, the dynamic is different and they have all the data and now they're going to have. All the training data, 
+
+[01:04:00] Jonathan: Well, There are a number, I mean, there's a handful of companies, I should say, and we all know who, the Fang ish companies, tend to have lots and lots of data, and they tend to also work with small and medium sized businesses, as well as Fortune 500, who are, the Fortune 500 is our client, and so they, they, the, the proportions are different, but, The discussions are quite interesting because we also have a lot of data and we have a point of view and we have neutrality, which is we can spend our money wherever we want.
+
+We don't have to spend it with one or the other. We can spend it with both or neither. There's the nice thing about the internet, this connects to that previous question about the long tail, is there's lots of choice and, people are people, right? We don't all just, spend our entire lives on Facebook or Google, we go to lots of different places.
+
+And if we can identify where you are, or cohorts of people that look like you, we can spend our money there. And so there is a bit of a pal, a balance there, right? You have to show up to a data conversation with data of your own. And that's exactly what we do.
+
+[01:05:00] Troy: Hmm. So Jonathan, you're, you're, you like to use the term looking around corners. And if you were to think about the way we use the open web or the internet broadly anchored by Google, how do you see that shifting over the next five years?
+
+[01:05:17] Jonathan: I think we touched on agents. That's a very, very interesting idea, which is you can, by choosing your browser, you may be choosing your agent
+
+[01:05:24] Troy: Mm hmm.
+
+[01:05:25] Jonathan: and having. A computer that kind of acts on you as your agent on your behalf, kind of assembling information that's of interest to you. Whether that's videos or content or coMmerce. I think you're going to see an age of agents really emerge here. Likewise, a lot of the AI things, which we're so excited about right now, but are really quite speculative and brand new will start to be kind of just woven into the fabric of everyday life.
+
+So that will change, you know, back to Alex's question, the sign and copy and all that.
+
+[01:05:56] Troy: you're sitting where, where you are, you probably would rather not have tick tock disappear from the landscape.
+
+[01:06:04] Jonathan: Oh, that's a loaded question. I think overall choice is good. Choice is good for advertisers.
+
+[01:06:10] Troy: Right.
+
+[01:06:11] Jonathan: Choice is good for democracy. TikTok has some challenges and, and some really great things as well.
+
+[01:06:18] Brian: not too much to us. 
+
+[01:06:19] Jonathan: Yeah,
+
+[01:06:20] Brian: Well, I mean, all markets, right? Don't, don't they all become like that
+
+[01:06:24] Jonathan: Well, I, I, I mean, as a marketer, I like choice of, of media channels, of audiences, of, we kind of started out with complexity as our friend. It actually is. I like complexity, embrace complexity. Complexity and choice are synonymous in my world. And I think it allows us to craft better messages and better solutions for our clients.
+
+Better performance.
+
+[01:06:47] Troy: right, any last questions, guys? Alex, you want to know
+
+[01:06:50] Alex: No, we should ask we should ask jonathan if he has a good product I I remember jonathan has always had cool stuff in his house whenever I got to see him seems to be a person who knows what to buy we were just talking about that any any Any good products 
+
+[01:07:06] Jonathan: be good. There's stuff.
+
+[01:07:08] Alex: Yeah
+
+[01:07:08] Troy: Yeah, what's a good product, Jonathan?
+
+
+[01:07:10] Good product
+---
+
+[01:07:12] Jonathan: Oh, interesting. I've been looking at gravel bikes. The new specialized bikes are pretty cool. I'm always looking at really low wattage stereo amplifiers. Troy. To single ended triode amplifiers and open baffle speakers is sort of my latest passioN. 
+
+[01:07:27] Troy: But if I was to ask you outside of things like those things that 99 percent of No, no, no, no. It can be an experience. It could be, an app. It could But, like
+
+[01:07:38] Brian: stuff?
+
+[01:07:39] Troy: Open baffle speakers is not, something that most people care
+
+abouT. what, is there something that's delighted you recently, Jonathan, that you just think was a great, great product?
+
+[01:07:49] Jonathan: Yeah, there's something that I saw, I guess, was it last week it came out? Odeo? Have you seen this thing? Where you can prompt it to write music. It's kind of great. I am not affiliated with the company, but it is pretty cool. UDIO, like audio without the A. And, and that's pretty cool. And that delighted me. it was singing a blues song about how we're all going to lose our jobs to robots. It's kind of great. You guys, drop the link, as they would say on YouTube, drop the link below.
+
+[01:08:17] Alex: We'll drop the link and I think we'll generate, a song
+
+about, 
+
+advertising. 
+
+[01:08:37] Jonathan: I mean, this is people versus algorithms right here,
+
+[01:08:40] Alex: That's
+
+[01:08:40] Jonathan: but that's it. I mean, it's kind of amazing. It's remarkable what's going on right now. And I think we're all sort of waiting to see what sort of really turns out to be here as we move from a, to a text, a video, paradigm how, accurate
+
+[01:08:53] Brian: But you guys can't touch any of this stuff because of all the copyrights and clients that now want to get sued don't you have to certify that you don't use AI and making any of the ads?
+
+[01:09:04] Jonathan: No, why, why would we, I mean, there's a, this, I referred to this before. Copyright is a big issue because the Copyright Office has come out and said you cannot, you You cannot trademark or copyright something that's created by a computer with no human hand. So assigning ownership rights to something that was created by a computer is quite challenging, and clients need to get their heads around that idea.
+
+If we're going to get to that paradigm that you talked about, I think it was Alex, where you talked about kind of auto creation and no human intervention other than setting up the system. I think we're not there yet. In fact, I know we're not there yet. It's just not, we're just not ready. That's not to say it won't ever happen.
+
+It will. But it's going to take a while. I think clients are very intrigued by all this stuff. however, I've yet to see the great, even the first great AI ad. We're, it's just so, so early.
+
+[01:09:55] Troy: Will Smith eating spaghetti. That's
+
+[01:09:57] Brian: why are the clients excited by it? Are they excited to make better stuff or are they excited to spend less money with
+
+[01:10:04] Jonathan: I think clients are across the spectrum. Some want to save money and some want to do better work and 
+
+hopefully, I mean, the good ones are going to see this as an opportunity of experimentation. It's just, it's, it's obvious. It's like the next obvious, I mean, you can't escape it. It's every, the cover of every newspaper has at least the requisite one article on AI every day.
+
+And it is, it's an exciting time. I mean, I've been doing this a long time. And this is the biggest bang since the first big bang, which is the internet itself.
+
+[01:10:33] Troy: Is it bigger than crypto?
+
+[01:10:34] Jonathan: It's cool. It's even bigger than the metaverse.
+
+[01:10:37] Alex: you heard it here first, folks. 
+
+[01:10:39] Jonathan: Yeah, crypto is a solution in search of a problem. yeah, AI is going to get infused into everything, but we got to figure this out and we got to do it. There's quite a bit of ethics and, safety stuff that we got to figure out along the way.
+
+[01:10:49] Alex: NIP, right? We need to, we need
+
+[01:10:51] Jonathan: And I, I mean, IP is IP is one of them guardrails, like just understanding how to, how to get the output to, to be appropriate is it's actually really, really hard. Everybody thinks it's easy because anybody can write a prompt while doing it at a professional level, literally billions of times a day, which is what we do.
+
+We buy multiple billions of impressions a day. So it's a, it's a super scale problem.
+
+[01:11:17] Troy: Well, I'd like to put in a good word for the rebooting. If you're looking to spend money, that's Brian's media business.
+
+[01:11:23] Brian: Wow, thank you, Troy, that came out of nowhere.
+
+[01:11:26] Troy: All right. Thank you, Jonathan. Appreciate it.
+
+[01:11:28] Jonathan: Thanks guys, nice to see y'all.
+
+[01:11:30] Alex: good to see you again, Jonathan. Thank you.
+
+
+[01:11:32] Guest end
+---
+
+[01:11:32] Alex: Hey, Troy,
+
+[01:11:34] Troy: hey, Alex,
+
+what an upbeat episode. Yeah. Listen, I was happy to have Jonathan. I think the episode was decidedly low energy. If you're listening to this now, it's coming back to you at 1. 2 times speed. I feel badly that my colleague Brian, was, very tired after a long flight.
+
+you know what? It made me think the Jonathan thing, and Jonathan's a grown up and, and, and basically it is very interesting that when you pull back, you see that the percentage there's always a percentage of the economy that's dedicated towards the creation of demand and that percentage has actually been remarkably static over time as a percentage of GMV.
+
+And what happens is that, new opportunities are afforded because of technology and all of that. Like you asked Brian, did we net net, like, were we more efficient because of the hundreds of millions and billions of dollars of investment in automating advertising through programmatic?
+
+And the fact is, through that, some people got advantage through that. Maybe we created an environment where small businesses could access advertising in new ways. But in the end, we still spend the same amount of money on advertising.
+
+[01:12:50] Brian: I'm reminded of what Rashad Tabakawala said about advertising agencies. They're like cockroaches. They always find a way. Bring on the
+
+[01:12:58] Troy: And so agents are going to empower consumers in new ways. And then the advertisers are going to fortify on the other side, creating new complexity for marketers to create ways to have their products selected.
+
+[01:13:12] Brian: QVC internet.
+
+[01:13:14] Alex: continues. the QVC internet, I'm
+
+[01:13:18] Troy: Well, what was interesting is Alex is all big talker when like Jonathan isn't there about how much he hates advertising and all that. And then he kind of shrivels up when Jonathan joins.
+
+[01:13:28] Alex: that's, that's bullshit. I explained, I explained the nuance of my, my thinking. You know, there's not much of it, but there's some at least that I'd want, I'd like to have clarified.
+
+
+[01:13:38] Outro
+---
+
+
+
+[01:13:39] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week. Alright, we're going to have to leave it there because I'm falling asleep. 
+
+[01:13:59] Alex: Well, so is everyone in the audience. So that's good.
+
+[01:14:02] Troy: Thank you 
+
+[01:14:04] Brian: bye. 
+
+[01:14:05] Troy: you later. 
+
+[01:14:06] Alex: Bye. 
+
+
+

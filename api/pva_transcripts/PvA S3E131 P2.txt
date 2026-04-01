@@ -1,0 +1,477 @@
+PvA S3E131 P2
+===
+
+[00:00:00] Troy: Those are the, the physical platforms that you need. Alex, I
+
+think we, 
+
+we, we own, we own the communication platforms, but we don't own the physical platforms.
+
+[00:00:09] Alex: The communication platforms are easy to replace because at some point, you know, you just need to turn off the internet on your side of the country and launch your whole own internet, which China did, right? And so it's, it's, it's not a very defensible position to be in. And, and the West and America specifically has been kinda building this service IP communication, media based industry, that is, you know, now at risk of not looking as, 
+
+there is like this utopian world where you have. Lot of, a lot of the knowledge work that can be done with ai, so a small team can do that. Then we have all the means of distri, of distribution and communication that are your fingertips.
+
+And now the means of production where you can outsource things big and small. You know, friend of mine gets like custom PCBs done so that you can build these custom computers. They come back from China, they're amazing. and you could absolutely also build a car, right? The infrastructure for building cars as platform is available.
+
+It's in China right now, which is why there's like an explosion of electric cars. All of the issues that we're gonna face, all the down,the, the, the headwinds that we're gonna face seem to be geopolitical because you just need to turn that faucet off. Like if, if AWS was, Amazon's AWS which to people might not know is where, you know, a lot of the internet hosts their sites and it's, it's, it's compute on demand.
+
+If that was a Chinese company, You would always be at risk of that stuff being turned off. And, I think that's going to severely slow down this,
+
+[00:01:41] Troy: Yeah, which is kind of my point about this chaos economy. I think in the, in the innovation space, in the chaos space, we're, we're going to, we're gonna do really well. I think the American economy is really well suited to that type of innovation. But when you need big, coordinated things, that require industrial policy and potentially public investment and lots of coordination, whether that's roads or military or transportation or, you know, healthcare things we're, we're terrible at it.
+
+[00:02:08] Brian: Well, I mean, this is the centralized versus decentralized you, right? I mean, we, like America is Android, I mean, and, and China is, is Apple to a degree. I mean, that's like a top down system and you know, we're, we're not, we never will be.
+
+[00:02:23] Troy: I wonder about, by the way, related to this and, and I think this might make you cringe, but this won't be the first time or the, last, the, you know, Elon's got a problem because he, he fucked up the Tesla brand. Maybe Apple could take it off his hands and then they'd be in the car business.
+
+[00:02:41] Alex: they could. That's an exit.
+
+[00:02:43] Brian: I just to, to put a point on, on that, just not in the car economy, but windsurf, the coding assistant, I guess OpenAI is looking to buy it for 3 billion 170 employees.
+
+[00:02:56] Alex: and they tried to acquire Cursor, which is probably the leader in the field of like AI programming and, cursor refuse. So Windsurf is the next best thing. yeah, a hundred million dollars, in revenue. For a company that's small, there is a lot of, there is a lot of money to be made right now.
+
+[00:03:14] Troy: What is that? 10 to $15 million in employee? 
+
+[00:03:17] Alex: yeah, 
+
+[00:03:18] Troy: nice.
+
+[00:03:19] Brian: I mean, this is, this is the sort of new math I guess, that can exist in some of these kinds of companies in the sort of knowledge outside of the, the bits, the actual, you know, the Adams space,
+
+[00:03:32] Alex: the, the paradox with these types of movements is that the, the fact that you can kind of generate so much revenue so efficiently means that there's going to be so many competitors and that revenue is going to be peanut butter. Throughout that, right? Like through the first movers, get a huge advantage of showing like the efficiency and, and you know, the same way when you were moving first into YouTube or podcasting, you got there early with your team of two and all of a sudden your podcast was making, you know, $10 million a year.
+
+I think, we're gonna have these like, you know, small teams creating artisanal state software that generates a lot of revenue, but it's going to get a lot of copycats. Like it's, and, and, and somebody's going to figure out how to do it with three people and how to, you know, provide the service for, for $8 versus $9.
+
+it's why I would've sold if I was dead,
+
+[00:04:27] Brian: 
+
+
+[00:04:27] Analogy Machines vs Rational Animals
+---
+
+[00:04:27] Brian: Did you, I don't know if you saw, there was some clip going around in Jeffrey Hinton talking about, what I wished we had anonymous background for this, how we were, you know, the, the human brain is not actually, you know, rational. It's an analogy machine and how we need analogies to make sense of things.
+
+this, this, this hit close to home for me. I mean, I think we're entering, 'cause Troy, you've made this period where we're entering into a period, particularly with ai, where a lot of this stuff is so complex. Then when we get into quantum computing, it's, it's like, forget about it. is that the only way sort of normal people can sort of make sense of it?
+
+Is, is through analogy and really we have kind of all along this is how, this is how we do it. And I noticed whenever you look at like how politicians talk about things like they always are using. Analogies to, to try to communicate to. And anonymous banker who unfortunately was not able to be here, was, was talking about how, you know, 'cause the rational sort of explanation about things in a very technical is, is like one form, but it doesn't really break through.
+
+Like, and I, I feel like that is, particularly as the world becomes more complex, that we're gonna lean on analogy more than ever.
+
+[00:05:41] Troy: Who was the OG there, wasn't it? Douglas Hofstadter the philosopher or the, or? Douglas, I think his
+
+[00:05:49] Brian: is, is that his brother?
+
+[00:05:50] Troy: he's the cognitive science guy. He wrote that book that everybody referenced in college. You know the, maybe you can bring it up, Alex, if you just search Douglas Stader.
+
+[00:06:02] Brian: I, I think it's Richard Hoft.
+
+[00:06:04] Troy: Well, we'll find out really soon.
+
+[00:06:07] Brian: This is tension. I yeah, let's see. 
+
+[00:06:11] Alex: there we go. Would you, who do you think is right?
+
+[00:06:15] Troy: Yeah. And what was the name of the book? There it is. Go to Cher Bach. That's the one. Click on that. Find that book. Alex, I love bossing you around like you're the guy on all in. Yeah, this one. The Eternal Golden Braid. He's the guy. You know what his thing is? Analogy is the core of cognition. That's his take
+
+[00:06:36] Brian: What is it?
+
+[00:06:37] Troy: that we think in analogies.
+
+[00:06:40] Alex: We also have to think in analogies when the subject matter becomes so complicated that our brains have trouble processing it. Right. And, I think what AI is actually really good at is analogizing all sorts of things for us. So that, I mean, it, it's helped me tremendously. Like I've always, used analogies, to communicate and learn and teach things because it really helps me, you know, kind of understand and, and, and store things in my brain.
+
+[00:07:07] Troy: 
+
+wonder if it'll help you tracking a time on your schedule.
+
+[00:07:10] Alex: I had to, well, yeah, I mean, I think if you create a calendar for analogy, like maybe it's a glass of water that gets fuller and fuller, and if I let it spill over, it'll, But I have a funny story about analogies. I was known to really like analogies at, at, at work, and I once got a,a text from someone that I worked with that said for the person who loves analogies, but, iOS truncated it.
+
+So it just said for the person who loves anal, and I didn't know if I should, if I should tap on it. I was, I was, I was kind of, 
+
+[00:07:45] Troy: Was it a, you thought it was a gift guide?
+
+[00:07:48] Alex: I thought it was, I, I genuinely, like so many thoughts went through my, I said, this is somebody 
+
+[00:07:53] Brian: could be some affiliate 
+
+[00:07:54] Alex: texting, texting me something by mistake. and, I nearly, yeah, I, I, it was fun. but yeah.
+
+[00:08:01] Troy: That's a great story, Alex.
+
+[00:08:03] Alex: Thank you. It's what? It's what the listen.
+
+[00:08:09] Brian: All right. Are we done on analogies?
+
+[00:08:10] Troy: I mean, what El what? What El? I mean, Brian, you know, I don't know what else to say 'cause I don't know anything about it other than I do know that you are an exceptional narrative thinker. That's what you do. Maybe it's just years and years of writing stories.
+
+[00:08:24] Brian: I think it's years and years of writing stories. I mean, analogies are how people relate to information that they're unfamiliar with. I always find like there's this engineering brain that is a little bit different than the narrative brain, and the reality is that there's different forms of intelligence and, I think what Obama was saying, and I don't necessarily think this is, is true, he was like, you're better off with a liberal arts degree because we're entering into a period where a lot of technical knowledge, and we talked about this last week, is being commoditized and we're, we kind of are not, we're not ready for intelligence as we understand it very narrowly to be a commodity.
+
+We, we were ready for, physical strength to be a commodity or, you know, being, you know, having manufacturing technical expertise be a com commoditized. But for some reason we always think that the intellectual will not be commoditized. But it seems pretty clear that AI is going to commoditize a lot of the, you know, what we thought of as, as being, you know, high level intellectual work.
+
+I mean, we
+
+see this with 
+
+[00:09:39] Alex: But doesn't that just like, doesn't that just maybe clarify that a lot of this intellectual work isn't really high level and it is in fact just muscle? It is in fact just like kind of, you know, you know, turning the.
+
+The, and so maybe what happens, and I don't want to kind of become too like, you know, tech utopian on this, is that actually when you, in a world where you can instantiate any idea that you have and make it real, whether it's digital or you know, physical or narrative, that the most important thing becomes like your own power of like creating the, the, the, the prose or whatever it needs to be.
+
+That like instantiates, that thing, right? And that's the way you stand out in a, in a world of full abundance where you can just ask the computer to do anything. It's the asker that gets most of the power versus a computer.
+
+[00:10:31] Troy: Yeah, I agree. I think it's a, I think it's an emergent skill actually. I think that, you know, I was frustrated to. Today because, I mentioned this to you, Brian, I was taking a walk, beautiful. Good product, Brooklyn. And, I was thinking about all the innovation that's happening, how much chaos is in the world, but how beautiful it was in that moment.
+
+And I was like, you know, how resilient is our world? you know, I'm worrying like, you know, everybody's worrying about, you know, what happens to my investments and you know, what, where the economy's going and all of the other, you know, kind of geopolitical risks that we've, it feels like we're living in.
+
+And then I was like, how do I reconcile that with what appears to be a tremendous amount of kind of economic activity centered around innovation and how good America is at product service, software innovation. And it's just like a long, long, long and experiential innovation. There's a long history there, and that actually has been where the value has accrued, and suddenly we're nervous that that has both left out a lot of people and that it's a risk to, you know, a, a a, a bigger Thank you Alex.
+
+[00:11:47] Brian: Alex is showing Brooklyn,
+
+[00:11:49] Troy: very stereotypical Brooklyn.
+
+yeah, that's, that's a
+
+nice Troy's part.
+
+Yeah. Anyway, you know the story and I came back and I started asking chat GPT to help me work that question through. And I prompted, and prompted and prompted, and I got a response back. And then I said, write me an essay on it. And I wanted to hand it over to you guys as kind of a prompt that we could use in the podcast.
+
+And to me, the, the. A, being able to ask those questions and to create scenarios that technology response to is really, an important new skill to think about. You know, questions, hypotheses, things that need to, you know, get, get, you know, researched and, you know, things that you want to kind of compare and dig into and analogize and all of that.
+
+The output, can be very, very frustrating because it never quite comes out the way you want it. it's either too literal or you send it down the wrong, into the wrong place because something that you've said sends the, the LLM to, you know, a kind of, you know, just not entirely relevant part of the knowledge space.
+
+but, I think that that people, that there will be people, there are people that are good at doing this and people that are not. 
+
+It's a, it's a
+
+[00:13:10] Alex: skill.
+
+I've been thinking about this because I think it's a new skill and it's, it's one that's hard to, triangulate our brains around because I think it is, it is kind of a mixture, an uncanny mixture of using a tool and managing a person.
+
+And I don't, you know, I don't mean to anthropomorphize the ai, but I think there are, it, it, it's, it's so counterintuitive, intuitive because we are actually,kind of programmed by the world around us to say like, okay, this is how you manage a tool, which is very specific. It follows a set of rules and how you manage a person, which is much more,you know, emotionally tinted and, and all of that stuff.
+
+And yet here we have this tool where you have to learn how to do both. It is both a tool and, and, and dealing with an individual in a way. And I think it's, it's a really completely new way of interfacing with a computer and I don't think it's going to change. Overnight, right. Even if they come up with a GI, I think the E, even to the point that I sometimes have clawed and chat GPT open and I get clawed to help me write the prompt that will do a certain thing for chat GPT and I get better results.
+
+That makes no fucking sense. That shouldn't 
+
+[00:14:19] Troy: you 
+
+know, a Alex, I think about it too in everyday like, process, type questions. So for example, I have a couple of friends that are creating a new energy drink and I had looked at it 'cause they, I spoke to them about investing in the company and you know, I was looking at, you know, how the fundamental challenge of how this particular product would stand out in a, you know, dramatically c cluttered environment inside of a bodega or, you know, whole Foods or wherever.
+
+And their, their answer was, well, we'll just go hire an agency and get them someone who's made you know, a good can before to make a can now. And I'm like, that's not how I would do it anymore. And what I would do is I would really think through the prompt, right? Which is, what is unique about this drink?
+
+What is the positioning? Why do we think it's gonna resonate with an audience? I would start working back and forth on essentially what the problem statement is and how we're gonna, you know, position it for the consumer. And then I would start literally making designs like with different, with different, you know, names and different kind of positioning hierarchies.
+
+And I would feed in a project file, the LLMA bunch of other examples I would, and a bunch of influences and stuff that I liked. And I would literally get to a place where I had 10 examples that I was happy with, that we could then mess with, you know, by hand, you know, that you could tweak inside of a design, a piece of design software because the, the, getting very specific with words to design is very hard to do.
+
+[00:15:55] Alex: It, it, it is. And I, and, and I'm so happy you said that. I,
+
+[00:15:58] Troy: No, no, but just let me, let me finish Alex. And then what I would do is I would quickly take those out to everybody I knew and I would line up the 10 cans and I would say, tell me what you're thinking, what you're
+
+feeling. Help 
+
+me understand. Yeah. And as opposed to like briefing a design agency and going through that whole process, you would never do that.
+
+[00:16:17] Brian: So wait, so unpack, so basically you would get to start quicker, right? And it, it's going back, but this is not replacing the designer in the
+
+[00:16:28] Troy: it's, you know, I think you need the designer at the end of the process. I think you need them to refine some of the ideas, and I think you need them to, to make the mechanical art perfect. But, actually Brian, get to start quicker. I was having lunch with the person and I just started doing it at lunch.
+
+I just did it. On chat, GPT, I'm like, let's just break down the hierarchy of kind of, you know, what of benefits of, and, and, and let's start designing cans. And it was 
+
+like we have a perfect conversation around a design product like we used to in the old days, but would've taken weeks.
+
+[00:16:59] Brian: Wait, lemme say one thing, I'll get to you on this because I think that is like the skillset that is gonna be more important almost than like raw intelligence. 'cause I wish AB was here 'cause he was talking about IQ and I've got a thing about IQ because it's a specific type of intelligence, but like that is gonna get, a lot of that kind of intelligence will be commoditized.
+
+That's why we have so many experts right now, because it's easy to read up on something and get briefed on it by, or whatever, and pass yourself off as like a quasi expert, right? But like that sort of like, you know, in the valley they call it high agency, like the willingness, like to dive in and like get to start.
+
+That is probably a bigger skillset, a more important skillset to have, which really, you know, bothers me as someone who's, who sometimes struggles with it than, you know, raw, like, you know, IQ horsepower.
+
+[00:17:50] Troy: That's important in the chaos economy.
+
+[00:17:52] Alex: it is, I, I developed this, way of working, which I think applied well to me because I was a designer and, and, I could make, you know, I could make things real and I would always say like, that's what I like to do. I like making things real. And it was never about, is it a, is it words or is it images or is it photos or is it fonts or is it graphics?
+
+It's whatever. You need to get the job done to remove these layers of abstraction between your idea and what it is that you're making. Right? So sometimes it could be clay or it could be like, pick a right set of fonts or just drop some colors in there and, and this and this idea that you started with a document, which is why sometimes I, I get confused for somebody who doesn't like words, but I, I think that you, the having the format set the intention of what you're trying to build completely changes what you're building.
+
+And, and, and yesterday we had an amazing like five hour meeting where we just had a, a Figma board or mirror board or whatever tool you use. And it's not like we were writing words or images. We had screenshots in there. We had. We had little digital PostIts post-its, we had graphs, we had examples of fonts.
+
+We had somebody scribbling something down and, and then you kind of pull that out and we call it, we call it shaping, but you pull that out and you make it as real as possible so that you can put it in front of people. If it's a car, make it out of clay. If it's a soft drink, make a fake can, you know, like whatever it is.
+
+And, and this idea of like writing a spec, bringing it to an agency that's dead. If you're doing that right now, you're, you're, you're, you're setting yourself up to be 10 times slower than any anybody else to get your idea out to market. And, and that's, and that's the biggest skill. And it's not about being dogmatic about which tool you use or how you express yourself, but maybe, maybe kind of this new technology like ai.
+
+Not only is giving us more capabilities, but it's also teaching us like what maybe we kind of need to be multimodal. Maybe we need to be like video and image and text generators supported by this tool. Like generate yourself a fake ad. Make it, see how, how you feel, see if you're going in the right direction.
+
+It's so powerful. Computers are so powerful. And yet we've like forced ourself down this like archaic academic kind of path of like, well you first, you set this up and then you turn it into a list of to-dos. And then you give each one of those to their own professional, you know, who owns a piece of that slice.
+
+And the problem is, if you do that, if you individualize like, well, you do this, you do this, you do this, everybody's doing 5%. Everyone's 5% becomes their a hundred percent. And nobody's, you know, nobody's looking at the whole
+
+picture 
+
+[00:20:21] Troy: the truth is that the distance briefs were usually stupid and designers usually didn't really pay much attention to them.
+
+[00:20:28] Alex: no.
+
+[00:20:28] Troy: what I mean? It's just like
+
+we, we spent, 
+
+[00:20:31] Alex: We're feeling, seeing, hearing, tasting creatures. Right? And we always wanna imagine our own thing in it. And the more you allow for that abstraction to happen, the more it happens.
+
+[00:20:41] Troy: as Gavin Newsom would say, here, here,
+
+[00:20:43] Brian: Okay,
+
+[00:20:44] Alex: No it guy would say on his podcast And now for an ad break 
+
+[00:20:49] Brian: is he's monetizing very heavily.
+
+[00:20:52] Troy: uh, iHeartRadio is monetizing heavily. 
+
+[00:20:55] Brian: love that. Does he read them? I don't listen to it. Does he 
+
+[00:20:59] Troy: He, no, he's not a
+
+[00:21:00] Brian: That would be great the way, can we talk about 
+
+[00:21:03] Alex: 30 seconds? 30 seconds That the Governor of California has ads on his podcast is a and more than most is absolutely fucking insane.
+
+[00:21:14] Brian: And I meant that question asking if he, if he was reading them, it was completely plausible. Like if he was like reading an an Athletic Greens act,
+
+[00:21:21] Alex: Right before we go, before, before we return to Kanye West, let's listen to an ad for MeUndies.
+
+[00:21:26] Brian: you know, I, that's why did you ever listen to like Ben Shapiro's
+
+podcast 
+
+or something? He just, all of a sudden there's no like interlude or any sort of break. He'd just be like, you know, like about like cancel culture and then he'll be like, boom. And he's running, he's like reading out like with gusto, like
+
+a 
+
+[00:21:42] Alex: He's amazing, huh? He's
+
+amazing. he's great.
+
+you know, tr Troy and I make fun that you're shameless at plugging, but like, you know, you need more of that Shapiro energy.
+
+[00:21:51] Brian: Yeah, I'll do it. No problem. 
+
+
+[00:21:53] Pete Buttigieg and the Manosphere Media Moment
+---
+
+[00:21:53] Brian: did you see, I don't know if you saw it, but Pete Buttigieg, went on to, the Andrew Schultz podcast. What is that? What is this podcast
+
+[00:22:01] Troy: I love this. For those that can't see it, it's like, it's like Ben Shapiro, A-S-M-A-M-R. It's just like we're talking and he we're just, we just have a talking head beside us of Shapiro. Oh, he looks good now. You see what he, he's got a beard now. Budgie.
+
+[00:22:17] Brian: Yeah, Buttigieg has a beard. He went on Flagrant, which is the, um, very popular, Andrew Schultz podcast. he's also part of this, this, this Manosphere Media, which is, I'm trying to unpack. I'm, I'm also doing a conspiracy, sort of the matrix for, for that. But anyway, Pete is famous for going on Fox News and to the Lion's Den and holding his own.
+
+And he, he did the same, he did the same in, on flagrant. And, you know, he took a lot of like, you know, the jokes and all the, the, and, you know, coming and he took them in stride and I, and. From everything I've read and whatever I saw, you know, he did real well. and so I think, I think we're starting to see a, in, you know, we're talking about people emerge on different sides of the, of the political spectrum who are willing to go into these environments.
+
+You know, on the, on the contrast
+
+[00:23:14] Troy: we're sorting through the talent based on a different medium. By the way. He should r up a bit. He should TRT that shit.
+
+[00:23:20] Alex: Yeah, you should, you think he should wear a baggy t-shirt and start wearing a chain like Zuckerberg? I I think he should start, he should start doing the jab and 
+
+needs to 
+
+go, 
+
+[00:23:29] Troy: Well, the linen, the, the, the, the, the royal blue linens. Yeah. He could,
+
+[00:23:34] Alex: but, 
+
+but, uh, but it is, it is true. And, and so I was, I was listening to, I don't love it, but I was listening to Hassan speak about, the topic that that the Democrats should really put themselves out there and keep pushing because Americans are more, ma more malleable than we think.
+
+Like media really influences people and the more you go out and, and, and, and, you know. Talk your book on all of these podcasts, the more you're gonna kind of start incepting some of these ideas in people's heads and they're finally doing it. And I don't think that, and else, I think that they're doing it with mediums that actually don't only reach people just in numbers, but just like emotionally, right?
+
+Because I think these, these things no longer work on c,
+
+[00:24:15] Troy: Yeah, and by the way, you just need to be a better bullshitter. Like he's good. He, I mean, he's, I find him to be a sort of compelling thinker, 
+
+[00:24:23] Alex: he says, but 
+
+Yes.
+
+[00:24:24] Troy: I don't Yeah, is,
+
+is a term for not, 
+
+[00:24:26] Alex: Yeah, 
+
+[00:24:27] Brian: yeah, 
+
+the bullshitters are, well, are actually really well positioned for for the future, I think.
+
+[00:24:32] Alex: I mean, people can just talk. I mean, that's the power, right?
+
+[00:24:36] Troy: Brian, if you don't mind me hijacking your agenda a little bit. I was on the phone with you before the podcast and you started rendering out the battles inside of the kind of manosphere pod podcast world as if it was a, you know, an epic wrestling match.
+
+Would you, would you do that for, for the, for the
+
+audience And just break,
+
+[00:24:53] Brian: So basically I was spurred down this, this path with the Douglas Murray character and he, 'cause I, I remembered seeing
+
+[00:25:03] Troy: people who Douglas
+
+[00:25:04] Brian: so Douglas Murray. But I remember seeing him before, 'cause he is, he's conservative. He's like a, he's a British journalist, 
+
+[00:25:11] Troy: anti woke 
+
+[00:25:12] Brian: know, anti 
+
+woke.
+
+And so I thought of him as like conservative side and also he's got like a knit to pick with, you know, with Islam. I always like, heard him like talking, you know, a lot of stuff about, about Israel Palestine and, and, and that, and, and then he 
+
+[00:25:30] Troy: He worries about sort of sovereign purity.
+
+[00:25:33] Brian: He worries about the decline in fall of Western civilizations.
+
+You know, that, that's his, that's his lane. and he is got the British accent. So, you know, Americans, 
+
+you know, they la this up? Yeah. 20 20, 20 to four. I mean, this is, this is how agencies, you talk about those briefs, I mean this, every single, every single planner is British for a reason. and so he went on Joe Rogan and just went and went right after him and went right after him for platforming, Holocaust deniers and whatnot.
+
+And, he had Joe on the ropes. Joe brought this comedian, Dave White, who we talked about. Who? No, Dave Smith. Sorry. Dave White. It could be Dave White. It's like the most anonymous name. Nobody's actually ever seen him be funny, but I've only seen him basically just be libertarian on these things. And so he really held his own because Joe is the kind of, you know, king of this area.
+
+But then after the podcast. He goes on to Sam Harris's podcast. Now, Sam Harris was formerly linked with Elon Musk 
+
+and he St 
+
+Good friends, but then they broke up o over Covid and then, he still kind of buddies with Joe Rogan, but they're, they're trying to, they're trying to have an intervention
+
+[00:26:46] Troy: is like the thinking man, Joe Rogan, right? Like he's like smart and sensitive.
+
+[00:26:51] Brian: but he's also very, he also has a, has a problem with Islam too. So they, they like kind of allied on that because the Douglas Murray guy is, is promoting his book Democracy and Death Cults. and so basically then Joe Rogan has. It's Joe Rogan and that guy, Tim Dylan, who I guess is a comedian, but he's also involved in this, this, this weird world where the comedians and the sort of libertarians are, are overlapping and they're making fun of Douglas Murray for, his British
+
+[00:27:28] Troy: So they climbed so Rogan and this other guy climbed up on the ropes to body slam. Doug Murray.
+
+[00:27:33] Brian: because like, he, so basically, Douglas Murray was the first one to, you know, really go into Rogan and smack him around a little bit. And, and so he's become a bit of a hero to people who absolutely disagree with him nine times outta 10. But you gotta, you know, you can't pick, you know, we were aligned with, with, with Stalin during World War ii, which is something that a lot of these guys are obsessed with.
+
+Anyway, I'm still trying to unpack it, but 
+
+[00:27:59] Alex: but 
+
+this is the, but this is this is the Joe Rogan playbook, and this is why people actually, if you look at that, there, there, I mean, elephant Graveyard has done some of that where Joe Rogan, actually in the moment might not be that great at defending his views because he's pretty malleable, right? And he's pretty, and even when people fact check him, saying things like, well.
+
+Where are you getting that from? And somebody will cite a very reputable source and it's like, well, do we really trust him? Or even especially like kind of getting a little dismantled during his own podcast and then afterwards using his massive platforms to just try to destroy people. I mean, these are, it makes, I, I think there's, there's a few cracks happening and a few different alliances and it does feel like there's a very game of thronesy thing happening.
+
+Like, well, okay, well we both hate these people, but we kind of like this guy and so we're gonna get together and then we're gonna make fun of this dude. And the fact that comedians are in the center of all this is insane.
+
+[00:28:57] Troy: Yeah. And then Joe Rogan comes out just to kind of be a little bit disruptive and says he likes puppies and due process.
+
+[00:29:04] Brian: Yeah, but it's like, I think it's a form of this participatory nature of media in some ways because it's, you know, it's WEI mean, a lot of what's going on with Trump and Trump is like, you know, the U-F-C-W-W-E President, right? And, you know, you, you create drama, you have people who turn, heal, you know, all of a sudden they were, they were tag team partners and now they're like sworn enemies and then you have a battle royale and 
+
+[00:29:29] Troy: Tim Dillon the guy that, that, that, that was on all in that last week?
+
+[00:29:33] Brian: Yeah. So they, they, they all, that's why I'm saying like, so all in left this sort of sphere of like, sort of Silicon Valley media and like moved into this area. ' cause 
+
+[00:29:44] Troy: Great observation. Yep. 
+
+[00:29:46] Brian: Is sort of the mass, you know, the top, there's more niche areas. I haven't mapped it all out yet, but I'm gonna work
+
+[00:29:52] Troy: No, it's like us, you know, you get tired of talking about technology and stuff. You gotta move into other
+
+[00:29:57] Alex: But I mean, it's, you know what this is, this is though, it's it is a, a YouTube phenomenon that's been happening for a while in some of the younger,with the younger YouTubers, including folks like Destiny and some of the gaming streaming and stuff like that, is that there's that whole meta narrative of all the drama.
+
+There's, there's channels. If you, if you YouTube that there's channels based just on YouTube drama, it's like, the, the, you know, the housewives of YouTube, is happening in the background and it's a massive ecosystem of like. Like, you know, like Tabloidy drama and people love it. I don't know how much of it is manufactured, but the amount of times this type of, oh, this guy did that on his stream and you know, cheated on this guy's, you know, girlfriend and whatever.
+
+and it's all happening there. And YouTube is this massive place where all of this is happening, which is why, going back to your point, Troy, I don't think X is the big, is the big driver of all that. Everything is happening on YouTube. Everything is happening
+
+[00:30:52] Brian: Yeah. But, and I think what's interesting is podcasting has be, has basically been swallowed by YouTube. You see basically the podcasters adopting all of the YouTube gimmicks and, and you know, that's where the debates all came. I was like, why is everyone doing these debates on these podcasts have been listening to?
+
+And it's because it's a YouTube format.
+
+[00:31:11] Alex: yeah. It's a YouTube. A podcast is now a YouTube show that you also distribute as audio only. I.
+
+[00:31:16] Troy: Yeah, I wanna make a point about our podcast right now. I, I, I may, I had the misfortune of following it on YouTube. Alex and I, I don't, I don't love, you know, playing in, in the, in the video space. But if we could do it like this, this is great. I just like,
+
+[00:31:35] Alex: like this. 
+
+[00:31:36] Troy: like, 
+
+[00:31:37] Alex: people still listen. People still listen to it.
+
+[00:31:39] Troy: Alex is basically surfing the web as we talk and it's, it's kind of soothing, it's relaxing.
+
+I really, really like it. And I'm actually enjoying making the podcast more because as we sit and talk you're bringing up references and it's, it's kind of cool, like, I think we've stumbled onto To may maybe what our, our format is that that's acceptable. And actually, you know, because our format on on YouTube doesn't work in my opinion.
+
+'cause it's, you know, three aging white guys talking and it just doesn't work.
+
+[00:32:10] Brian: I mean, that's what we got to work with, but we can, we can embellish it. I can't change that.
+
+[00:32:15] Troy: Yeah.
+
+[00:32:15] Brian: I guess I could. 
+
+[00:32:17] Alex: also, it, it, it, we, can you live in Miami? Of course you can change that. Just need some big fat lips and some hair plugs, and you'll be good. All right. I have a hard stop. So do you have a good product?
+
+Except this podcast, the video version of this podcast is a great product.
+
+[00:32:34] Troy: Yeah. If we could keep it up. Alex, thank you for doing it. 
+
+​
+
+
+[00:32:37] Good Product
+---
+
+[00:32:40] Troy: I, I already told you my good product. It's New York on a Spring day, plants
+
+down. 
+
+[00:32:43] Alex: good product is, the Insta 360 link to webcam that allows you, to record your video really well and not look like, in a
+
+[00:32:52] Brian: I'm telling you, send me the link and I'll use it. So I have a good product, but it's, it's a bad product, but I think it, it highlights a good product. So I, I was in the Detroit airport yesterday and I passed by one of the, the economists branded stores. And it, like right near, it was a Wall Street Journal store.
+
+They were the exact same store. And so all of these media 
+
+brands, you know, in the airport, retail, like there's a Buzzfeed,
+
+[00:33:21] Troy: They're just dumb licensing agreements. Brian.
+
+[00:33:23] Brian: Dumb licensing agreements. And so they just like do 'em as cash grabs. It's the same neck pillows in as in any store. And I think it's a disservice to the brands to treat it this way compared it to like someone like Monocle who makes it like a real business line with their airport retail like experiences.
+
+You gotta like tend to these brands and I think it's like, it's pretty bad when, you know, look a lot, we've talked a lot on this podcast about how, you know, IP harvesting, brand harvesting, whatever you wanna call it, is a big part of the future of a lot of these brands. Well put some effort into it, like don't just slap your, lap, slap your logo that you've, you know, is hard earned respect over so many years of journalism on like the same old neck pillow store.
+
+I would like to go into like a very economist
+
+[00:34:14] Troy: you think a neck pillow is a good, good product? If I see you in the airport with a neck pillow walking 
+
+[00:34:19] Brian: No, look, it's a very con look. It's very controversial in, in comfort. Plus you wouldn't know it at the front of the 
+
+[00:34:24] Alex: Yeah. Troy, there's the, the seats at the back of the plane, Troy, they don't turn into beds. It's really 
+
+[00:34:31] Brian: Yeah. Nobody makes your bed. There's no pajamas. That's why people wear their pajamas onto the plane. You 
+
+know? 
+
+[00:34:37] Troy: So do you have a neck pillow?
+
+[00:34:39] Brian: I own a neck pillow. Yeah. I don't use it most times.
+
+
+
+
+[00:34:43] Outro
+---
+
+[00:34:44] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+That was great. 
+
+Thanks Alex. thanks for the visuals that'll make the show better. Appreciate it.
+
+[00:35:22] Brian: cool.
+
+[00:35:22] Troy: All right.
+
+[00:35:23] Alex: Alright.
+
+[00:35:23] Brian: Bye.
+
+[00:35:24] Troy: Bye.
+
+[00:35:24] Alex: Bye.
+
+
+

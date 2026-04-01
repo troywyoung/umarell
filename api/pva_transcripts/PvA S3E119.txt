@@ -1,0 +1,957 @@
+PvA S3E119
+===
+
+​
+
+
+[00:00:01] Open
+---
+
+[00:00:01] Troy: don't know if you guys knew, but today is Data Privacy Day. I found this out from Ad Exchanger. Do you read Ad Exchanger, Alex?
+
+[00:00:09] Alex: daily.
+
+[00:00:10] Brian: It is, it is all about programmatic advertising.
+
+[00:00:13] Alex: Oh, wow.
+
+[00:00:14] Brian: just like, it's non stop programmatic advertising. And they inform you that today is Data Privacy Day.
+
+[00:00:19] Troy: Alex, they break up the article with nudes.
+
+
+
+​
+
+
+[00:00:45] GDPR
+---
+
+[00:00:45] Troy: I was actually thinking about that when I was going to bring this up. Alex, do you think you could design a really elegant, as Troy would say, and just very thoughtful, cookie consent implementation. Like, can that be done? Cause I feel like the Japanese are really good at that where they take these very quotidian things and they just like break it down.
+
+[00:01:04] Brian: And they're like, how can we make this as good as it can be?
+
+[00:01:07] Alex: I mean, yes. I don't know. I don't think it's that interesting, but I always thought it should just be built into the browser. 
+
+[00:01:15] Brian: I mean, 
+
+[00:01:17] Alex: should just be built into the browser.
+
+[00:01:19] Brian: you say that about everything? It's like payments should be built into the browser. Everything should just be built into the browser.
+
+[00:01:24] Alex: right. I mean, I think that the second you let people build their own websites, they suck. I mean, that's pretty much the rule of the internet. So, you know, these things, should be, should be, it would be fine if it was just like a browser level or an operating system level, you know, thing that you can just 
+
+[00:01:41] Troy: Well, the data privacy stuff should definitely be built in the browser. It's like, it's like taking a train into the Alps. It's just works. And the collective had to decide that it was a good thing rather than, you know, traffic jams and honking horns and chaos. So, you know, sometimes the collective makes sense and that's, that's what Alex is saying about the browser.
+
+[00:02:00] Alex: Yes. And, and you, and you can, you know, if you, if you, if you, I don't know why we're talking about GDP now. Because this is definitely not of the moment, but there is a Chrome plugin, called consent o matic. And I think there might be others where you can just preset and it will just handle it for you.
+
+[00:02:16] Brian: Oh, I love consent o matic. That's
+
+perfect. cool. Let's talk about DeepSeek. this was the sort 
+
+[00:02:22] Troy: But privacy day was a joke. You don't celebrate it. You don't, you don't go to dinner with your, you know, with your, your ad exchange, your friends or something like that.
+
+[00:02:29] Brian: no, I mean, you just, you. I think you reflect on it for the most part,
+
+[00:02:35] Alex: You,
+
+[00:02:36] Troy: So, so we're, we're done?
+
+[00:02:38] Brian: I feel like we've reflected enough. 
+
+I think we're all, I, you know, I'm in favor of data privacy, I guess. I don't really fully understand what it, what it means. I remember like early in my career doing like one of these stories when it was just all about data privacy. You know, the advertisers worried about people deleting their cookies like that was the big problem. And 
+
+[00:02:58] Troy: What do you think that GDPR accomplished? Can you name a couple things that it accomplished? Did it make you safer? Did it prevent someone from watching what you were browsing?
+
+[00:03:08] Brian: it's unknown. It's unknown what it did, because my defense of GDPR, and it's a very weak one, I admit, is that it forced every organization, large and small. To have meetings that they weren't going to have otherwise about how they handle, people's data now, whether that it's impossible to know whether that really had any real impact on, on people, particularly at the cost of you needing, particularly the fact that this is about you try that you have to like, click out of all of those like cookie consent windows.
+
+And I know you're just, you're just off Europe. And like, that is a real 
+
+[00:03:41] Troy: even, it's, it's worse there, but you know, you know, the, the thing isn't, isn't me, Brian. It's that we are all, invested in making the open web work for publishers big and small, for creators big and small, outside of platforms that don't have to put buttons on everything. And, once you're in a platform, you have consent.
+
+So I think the big tragedy of is it made the web shittier. And that's not good for something I care about, which is free and open expression of people, big and small.
+
+[00:04:12] Brian: Okay.
+
+So it's about free expression. Okay. 
+
+[00:04:14] Alex: yeah, I think it's a, it's a little more complicated than that because those platforms were the ones tracking you across the web. So it's, you know, I'm not, I, I don't think the execution was right, but you know, our attention is valuable and the more we let these people track us, the more they get better at 
+
+[00:04:32] Brian: Yeah, it will be interesting to see if all this is, to me, it's just all going to be wiped away with this, like, Moving towards this agentic AI, because I think I'm hearing a lot more people talk about the end of websites. Really? Now we've talked about it a little bit here, but like the website itself seems like it's just a clunky interface for like a database, right?
+
+Like, I 
+
+[00:04:54] Troy: totally still totally vital, I got some feedback. We got to infuse this this podcast with some positivity Negative, media's dying junk is not the subject of of this podcast today. At least I would hope
+
+[00:05:10] Brian: it's change. It's evolution, 
+
+[00:05:12] Alex: Yeah,
+
+[00:05:13] Brian: evolution, things die
+
+and a healthy ecosystem has death.
+
+[00:05:17] Troy: you know, how, some people have talked about the future of malls being maybe a space where you just put a bunch of robots doing things because, you know, like, it's a great way of kind of, retrofitting a space and just, you know, You know, haven't heard, I haven't heard this, Alex. Some
+
+[00:05:33] Alex: well, you know, I've like, I've like the, the idea that a robotic future is coming.
+
+And when you have robots, you can just kind of put them everywhere and get them to do stuff for you, like in this industry and, and, and reuse kind of these, empty spaces that we have. I think the internet might become that, I think like websites might remain. and, But they might be mostly used by agentic systems because that's it.
+
+The web is actually a really good way for these systems to do the jobs you need to do. So you got to tell it to go buy something or do some research. and it turns out that, you know, Google forced us all to start making websites that were easy to SEO and easy to read by robots. And it turns out that in the future, Websites might only be read by robots.
+
+That's the way it's going.
+
+[00:06:19] Troy: I use websites every day. You know what I did just as a
+
+[00:06:21] Alex: Yeah, but you listen to like music on vinyl, Troy. Like, 
+
+[00:06:25] Troy: yeah, but just, you know what, I had a, can I finish please? I had a chance to change out my default web, or my search engine on Chrome. And I changed it to chat GPT and it lasted about four minutes.
+
+Then I went nuts. Because, you know, you don't want, I mean, and I didn't have little agents running around, like it's fun when everybody talks about agents, but that's like talking about or robots for that matter. Like, when was the last time you saw a robot, Alex? I saw a robot in Davos, but like, you know,
+
+robots that they're not 
+
+[00:06:57] Alex: and more. I'm seeing more and more robots. I see delivery. I mean, maybe it's California, but we see delivery robots.
+
+[00:07:04] Brian: You live in New 
+
+[00:07:04] Troy: in Sonoma? You don't 
+
+[00:07:05] Alex: driving cars. 
+
+[00:07:07] Brian: York is like 50 years in the past, like with technological adoption.
+
+[00:07:11] Troy: my, my point is, is that I don't need AI sitting between me and, a website interpreting it
+
+[00:07:18] Alex: mean, you already do even when you use Google, sir. Yeah,
+
+[00:07:21] Brian: Hmm.
+
+[00:07:22] Troy: Google also has a list of destinations that I'm looking for, and I can efficiently go to those. I'm just saying it's going to take time. I'm
+
+not trying to be, you know, it's going to like, I mean, maybe more time than this podcast has. In its entire arc of its life.
+
+[00:07:37] Brian: I did. Let me just, and then we'll, we'll move on. Cause I can tell Troy's very antsy. There's this like anonymous account, like on, on, on X. I try to, I try to avoid X, but I go back every now and again. It's called Signal with a U and an umlaut. And this is what Signal looks like. Had said most the Internet will be completely obsolete very soon.
+
+It already feels like an abstraction. We tolerate for lack of a better alternative agents. Replacing it would essentially reduce the web to a set of APIs and scrape data repositories. Just raw material for agent mediated interaction. No need for direct user involvement. They fetch, synthesize, and act.
+
+Search engines obsolete social platforms distilled into personalized outputs. Even quote unquote websites as a concept might evaporate. Why visit a web page when your agent brings you the content or makes decisions for you?
+
+[00:08:26] Troy: I mean, I can see how you get to that logic of that dirty future porn talk, but like, it's, it's, it's not realistic.
+
+[00:08:33] Alex: it's a hundred, it's a hundred percent realistic. and 
+
+if timeframe, over what timeframe, 
+
+[00:08:37] Troy: Alex? 
+
+[00:08:38] Brian: three to five years. 
+
+[00:08:39] Alex: yeah, that, 
+
+[00:08:40] Brian: I don't know. This podcast isn't going to last that long, so
+
+we'll have a reunion 
+
+episode. 
+
+[00:08:45] Troy: may, this may be our last 
+
+episode. 
+
+[00:08:47] Alex: you just saw the release of deep seek and, and, and we can talk about it, but that shot up, that shot up to like number one 
+
+
+[00:08:54] DeepSeek
+---
+
+[00:08:54] Brian: Well, let's talk about DeepSeek because that is, that is the first topic. Then we're going to get into what, what work and careers are in the future. DeepSeek, it came out in December. It's DeepSeek R1 and it's really caused the stock market to crash. And all of a sudden, you know, people to wonder about Silicon Valley's approach to AI, which is mostly about using financial firepower. And that's mostly because this research paper came out last week and people started to dig into it. And what they're claiming, and this is from a Chinese research lab that I guess that spun out of a hedge fund, which is kind of hilarious, that they were able to do this at a fraction of the cost. Like, I don't know, 5 million or something.
+
+They didn't fire up a nuclear reactor. They didn't raise, what was Sam Altman talking about? 7 trillion. 
+
+[00:09:40] Alex: million.
+
+[00:09:41] Brian: So what was it,
+
+at first he was 
+
+[00:09:42] Troy: Billion 
+
+[00:09:43] Alex: 500 billion, sorry, 
+
+[00:09:45] Brian: our leading, 
+
+[00:09:46] Alex: center, like a third of the size of Manhattan.
+
+[00:09:48] Brian: yeah, our leading AI expert, according to Donald Trump, even though he has two years of computer science, under his belt. so this caused a lot of consternation, Nvidia's stock got whacked.
+
+and beyond the, I don't care about the stock market stuff. I mean, personally, yeah, I do, but like, I don't think that's really here nor there. These companies are. Completely overvalued, probably so, Alex, give us your, your sort of gobsmacked, I guess, over this. Why is this so significant? 
+
+[00:10:19] Troy: titillated actually 
+
+[00:10:20] Brian: the Chinese have yet again proven that, having a lack of resources drives true ingenuity rather than having every single resource possibly at your finger.
+
+Like our tech oligarchs.
+
+[00:10:32] Alex: Yeah. Well, to,to just frame it, you know, there was, there was a, a, a chip ban that, meant that these. the Chinese AI companies didn't have access to the same kind of advanced chipsets, specifically the ones that can access a ton of memory. which were the big sellers by NVIDIA and it, it seems to have forced them down a path where they just, you know, constraints, breeds innovation and they built, a system which was likely, you know, to be fair.
+
+also trained, off existing LLMs. So, so, you know, I think everybody's kind of doing that where, where they're training their 
+
+[00:11:06] Troy: what's what's the dirty word for that Alex distillation
+
+[00:11:09] Alex: distillation. Yeah. Where they train their models off other models, everybody's kind of doing it. You can do it through API calls or by having an, you know, some, some, something reading off a screen as you type into the GPTs, but, Here's what they've managed to do, they've managed to build a first of their V3 model, which Parable to chat GPT which was pretty impressive.
+
+And they said that they built that for 5 million. Now, they could be exaggerating that it, you know, even if it's, but even if it's 10 folds, it's still, you know, 10 folds less than what other people seem to be spending. 
+
+[00:11:44] Troy: It's a little like your proclamation last week that you designed the logo in half an hour But it took you 30 years to be able to do it
+
+[00:11:50] Alex: Yeah, but they also proved something that, that folks thought was impossible and they lit a fire on everyone. Now, the stock market reacted impulsively as it does, right? The stock market reacts like, you know, it's, it's seeing a tiger, tiger in the forest every time. But, I think when it's settled, it kind of, told the story of who this is going to benefit.
+
+They, there's now an open source engine and they released a lot of, of the, you know, things that are called weights, et cetera, just the logic of this system. and it, and some of the, some of the technologies that they use have always really been validated in labs. So it shows that this thing is actually the real deal.
+
+at a fraction of the cost, it takes a fraction of the cost to run and it and it and it matches up with chat GPT's responses. On top of that, they also released a reasoning engine, you know, chat GPT released this reasoning engine where you ask a query and it does kind of multiple queries that it tags together.
+
+And that reasoning engine is available for free on the app store now, you know, and it. And it competes with chat GPT. And it was done literally for the price of what the compensation is for one engineer at these companies. And, I think the guys that are looking the worst right now are Altman and open AI, because they've been talking about these, like, incredible costs, but mostly because I think they've, they've really are like, the poster child for this closed source thing.
+
+We're going to, you know, we're going to close this source and we're going to keep it to ourselves because it's too dangerous for humanity. Right. and, and there comes this, you know, Chinese company with a fraction of the budget and catches up with them. a sign that like, if anything, I think a lot of people should be angry that open AI has.
+
+Slowed everything down by keeping everything close source and going against its, its founding principles. but 
+
+[00:13:38] Troy: Am I detecting a hint of acceleration ISM in your voice?
+
+[00:13:43] Alex: not, I'm not an accelerationist. I mean, I'm, I'm, I'm as scared as where you stand where you want
+
+[00:13:48] Troy: to where do you stand on all this?
+
+[00:13:50] Brian: Wait, this is a good thing. Wait, wait, Wait, I'm sorry. Like beyond, beyond people's 401ks or whatever, just because Nvidia and all these companies are overweight in the, the S& P 500, like why is this not, I found myself actually agreeing with Donald Trump's reaction to this, which is, is, which is not a common like feeling, he said, the release of deep seek AI from a Chinese company should be a wake up call for our industries.
+
+They need to be laser focused on competing.
+
+[00:14:18] Alex: think absolutely. 
+
+[00:14:20] Brian: He's actually really, really nailed the
+
+issue because the time to build stuff. And this is the start that I, because like, we've sort of had this bargain with our tech oligarchs, which is like, you get all these spoils, you get untold riches and everything. But the United States is going to be dominant in tech.
+
+You have access. You have every advantage in the book. Our capital markets are not only broad, they're unbelievably deep. Try to do any of this stuff in China. It's way harder. We've got export controls. They've got access to the best chips. They've got the government now behind them. They're part of the government at many, and that's the bargain.
+
+And so it should be a wake up call. Because there is a reaction overall against all institutions out there and the tech is another freaking institution. If anything, it's our most powerful institution. And
+
+it seems to me like they've got egg on their face here.
+
+[00:15:14] Alex: I mean, yes. I mean, OpenAI is the one that, that looks absolutely the worst here and, and same, same Alton, the, kind of the myth that everything needs to be closed source because, you know, otherwise it's going to get out there while it turns out it's out there, turns out that maybe the constraints we put on China forced them down a path where they built something super efficient and but on top of that, I mean, DeepSeek didn't have to release this into the open source.
+
+It's, it's an incredible gift. It's an incredible gift to anyone. It's especially an incredible gift to, Amazon who didn't really have, you know, wasn't really building the best LLM or Apple, right. the people were saying they were behind, or even Microsoft who I think they just started really noticing that, the LLMs are going to become, You know, pretty common and, and table stakes.
+
+[00:16:01] Brian: So therefore that's not where the money is going to be. The money is going to be in building tools, selling access to them, et cetera. so companies like open AI and, and a lot of these VCs who have been, investing in these companies are kind of scrambling right now, but for the rest of us,you can be sure the patriotism is going to come out real quick. Everyone's
+
+going to get on their USA speedos
+
+[00:16:23] Alex: you know what? It nearly doesn't matter anymore because this thing's out and it's open source and people are already learning from it. You know, it's, it's pretty impressive. One thing, one thing that's really great because I think also I think it's a great consumer story, consumer product story.
+
+one thing that they did with their reasoning model, which, which open AI decided not to do is share the thought process. So when you ask it a question, it's a, you can see a little bubble that shows up. It says, okay, so the person just asked me to look into this, but I also remember that they told me that, and it shows you the entire thought process of the AI, and this is something that,um, Really like decided not to do because they didn't want to share any of that of that information.
+
+but turns out that was a huge mistake because I think consumers love it. People find it cute. It makes you trust the system more. It teaches you how to ask better questions. I think it's a, it's a pretty landmark moment in this. you know, I was telling my wife yesterday, it's like, as if, you know, Sam Altman has been telling us that we need to build this giant rockets, but somebody just strapped an engine to a Subaru and just shot into space.
+
+[00:17:30] Brian: I have to say, I, I'm a proud American, but I kind of feel like I'm rooting for like the Soviet hockey team here a little bit because like,
+
+there's a lot, I'm rooting for Ivan Draga because in some ways, like this is a really great story and it's very reminiscent of Of what happened with Sputnik and that's why I think it's actually telling to, to, to, to describe it as a Sputnik moment because, you know, the Soviets didn't have nearly the resources that, Americans had in or, and they, Sputnik was such a shock because it developed, it showed technological superiority to the American system. It happened in 57. The next year, NASA got formed, and the U. S. government, in some ways, it led to Kennedy getting elected, and the space race, took off. And what was really interesting about the space race is that America, Was a very centralized approach and the Soviet Union was very decentralized and in some ways It's sort of similar here where we've got the Chinese the communist dominated China taking an open approach and America awash in all this capital and these oligarchs taking a very closed approach I don't know some similarities history does rhyme
+
+[00:18:45] Alex: Yeah, I think this is all, I mean, I genuinely think this is good news. you know, there's the proliferation of software cannot be stopped. It's not like you can contain this stuff and having this be open source, is going to, you know, benefit everyone.
+
+I think long term,
+
+[00:19:01] Brian: What is your, what's your take? What's your angle?
+
+[00:19:04] Troy: hmm What is my angle here? Well, I I remember, the competitive, positioning like, during the development of search engines where at the time Brian helped me, there was like Lycos,
+
+Google, AltaVista. And early on,
+
+it was Excite, Excite at Home, yeah. it wasn't clear, who was going to win that? And, and the spoils did go to one company and, and, Google kind of burst onto the scene.
+
+I actually remember the, I remember the day when it was like, Oh my God, this thing, uses a different approach of creating, authority and relevance on the internet, and it just works better. And they had built, More efficient delivery infrastructure to make it possible in scale. And Google became a household name.
+
+The interface was Spartan and, and the, you know, they kind of pulled ahead, but it, what really reinforced that win was. the, the execution or the development of a good business model and an ad model that was, that became dominant and, you know, filled up the coffers and make it, made it the, the world's most valuable company and enabled them to invest in kind of, product reinforcement around the core product in all kinds of ways that made, you know, Google an inevitable part of your life, whether that was mail or docs or. You know, eventually, you know, self driving cars, I guess my point is, the LLM as the product is, is it, the LLM is not the product
+
+and it's a step towards the product. And, and so I think that what, what this kind of points out is that. You know, chat GPT is cool, and we're seeing it develop slowly into a product.
+
+They're trying to add things like, you know, agentic capabilities that'll enable it to become a bigger and bigger part of your life. But we are like in the early chapters of a race to create a product that consumers love. And right now we're just sort of seeing the scaffolding. And. And, we're not there yet.
+
+So we don't have a product and, and the, and what wins longterm. And I actually think this is kind of refreshing is. Brand UX, like great product and
+
+vitally always distribution. And in this case, open AI got a little jump on distribution. Cause there was so much buzz around the chat, GBT launch that they had, you know, a fair bit of usage and chat became the household name, just like Google eventually became a household name. And I think what this shows is that the war. You know, this battle for dominance of the new interface isn't over yet. And we're going to see, we're going to see, you know, better products that come out and delight us in new ways. Like Alex gave the great example of reasoning as a dimension to the product that, that that's a nice addition. 
+
+[00:21:59] Alex: you gotta, you gotta just, just because you, you mentioned Google winning, one of the key reasons that Google won is that they came out and it I think shared during their S1 filing, they came out that they had built their data centers off, you know, off the 
+
+[00:22:14] Troy: Commodity machines. 
+
+[00:22:15] Alex: commodity machines. And then, and then therefore like their cost structure was completely different.
+
+And this is also where, you know, in, in, in media, this is, we're saying there's, you know, the, the product isn't there yet, maybe the consumer product. You know, is being developed. but I think there's green, there's already Facebook meta, for example, will benefit hugely from this because all its ad systems are going to be run and generated by AI.
+
+It's already happening, right? This stuff is 
+
+[00:22:40] Troy: And Apple will, like, as you pointed out, will benefit because these models can run on small devices or on your desktop.
+
+There's other things too. 
+
+[00:22:48] Alex: the best small device, their, their devices. And it's not talked about enough are, I mean, they, they seem, 
+
+[00:22:56] Troy: the way they use memory.
+
+[00:22:58] Alex: Which, which way, which is why Zuckerberg's, you know, comment about, you know, Apple not inventing anything is crazy because they've just actually. completely reinvented their chips and build chips that are entirely ready for AI because they can access so much memory.
+
+so this stuff is, is the, the, the interesting thing is that it's still, there's still so many kind of chess, chess plays to be played here, right? Like we're going to see huge swings, like, Apple looked weak. Now it looks really strong. Open AI looked unbeatable. Now it 
+
+[00:23:27] Troy: Well, I always thought, I always thought, you know, I named off a bunch of search engines. There was also, you know, iterations in who was going to win the browser war. I I've always thought that open AI will be our, you know, this, this generations. You know, Netscape and and I, and I think it will Ethan Moloch, who's an AI researcher at the Wharton school made the point by the way, that the cost for GPT 4 dropped a thousand X in the last 18 months. So he write, he wrote that like a 95 percent price drop in reasoning models, which is what this, this, Deep seek represents, you know, isn't going to destroy the marketplace. And not only that, we saw Google last week release, release its own kind of reasoning model, very, very inexpensively built on similar techniques and you know, the market didn't freak out. So I actually think that there's, there's a kind of a overcorrection happening. And I think that. The models that the frontier models that are the best that win will actually find some novel executions, just like Google did with the search engine. And then they'll build better product on top of it. So deep seek, if you use it, by the way, I know we're all smitten with it.
+
+And it's kind of cool. Cause it, it, you know, it's at the top of the list on the app store. It's not that good. It's kind of cool, but It's
+
+not that It's 
+
+not 
+
+[00:24:50] Alex: great. 
+
+[00:24:50] Troy: I have been, I've been using it all morning. So, you know,
+
+we, we, it's not better than, it's not better than chat GPT, Alex, it's just not,
+
+[00:25:00] Brian: Yeah, I think, I think what I
+
+wonder and maybe it's because I, I think a little bit more in like narratives is, is I just find it, it, to me, it's like the, the, the most interesting part of this and we'll see how it like plays out in the future is that. There were a lot of seemingly bad bets that were made, and I think incentives come into play. You had a bunch of players who are trying to lock up an industry, right? And so the best way to lock up an industry is make it too expensive to compete. And you're always going to have the advantage, these multi trillion dollar companies, of locking out potential competitors. Because again, It stands to, to, to repeat, it's Silicon Valley hates competition.
+
+These companies do not want competition. They want the rest of us fighting it out in a giant squid game, but for themselves, they do not want competition at all. Okay. And what I like about this is it's throwing open the doors to all kinds of competition. So forget time to build, it's time to compete. Okay. They've got untold resources. And the fact that they were caught unaware while they were having all these dumb ass academic debates about whether we've achieved AGI or anything that nobody really gives a shit about, instead of building real products, a lot of this stuff right now has been such a boring story of could, it might, these agents could do this stuff, whereas like on the day to day product level, I don't know, is it worth reopening Three Mile Island for like, Clippy like on steroids.
+
+It just doesn't seem that 
+
+[00:26:31] Alex: you know, if, if, if, if I think that any of the investments we do in power generation and power distribution, is actually pretty good, even if it turns out, that, a lot of this is a bubble, you know, the same way that, People laying down fiber, at the beginning of the internet, didn't turn out to be a great business case, but we're still using that fiber today.
+
+So I'm okay for anything that like, you know, gets up, grid up to speed and generates more 
+
+[00:26:56] Brian: okay So if they have an overcapacity of GPUs or whatever like that is not going to be a complete waste if all of 
+
+[00:27:03] Alex: the. Yeah. I mean, if you believe some people that, you know, that capacity will get used at some point, the problem with GPUs is that, you know, that they, they, they're depreciating and they're kind of useless after three years. So there's going to be a tremendous amount of waste there, and it's not real, that's not real kind of lasting infrastructure.
+
+it's, it's Satya's thing about that. Everybody's quoting today about Jevin's paradox.
+
+[00:27:26] Troy: Is that the 
+
+way to pronounce that? Right. Which is that as AI gets more efficient and accessible, you see usage skyrocket. you know, turning it into some kind of commodity. We just, you know, we, we, I think it'll just lead to, you know, kind of, you know, computing ubiquity and just free availability of this kind of
+
+tool, which will then, well then, but then yeah, it's like wifi Brian, but then the one thing it will do is that I love that these models like DeepSeek will be free.
+
+And my thought was always that they would end up being free like Google's free. And we're gonna, we're gonna by necessity see kind of an acceleration in needing to have a,ad driven,model to support them.
+
+[00:28:11] Brian: I saw, I saw a Clever post that said, that noted the irony of the fact that a quote unquote non profit is, is charging us 200 a month for access and that a hedge fund is giving it to us for free.
+
+[00:28:23] Alex: I mean, yeah, that's 
+
+great. Yeah. I mean, that, uh, OpenAI is looking ickier by the day, you know, and I think 
+
+[00:28:30] Brian: If only there was a sign.
+
+[00:28:32] Troy: Brian, Brian has a real thing, has
+
+[00:28:35] Brian: I don't like Sam Altman. I think he 
+
+[00:28:36] Troy: doesn't like,
+
+Sam at all. 
+
+[00:28:38] Brian: I think he could, I think he could be like the, the, the Adam Neumann of, of AI. Like, you know, just because like, again, like where there's smoke, there's fire. And like, I
+
+just believe that people, you should believe people when they tell you who they are.
+
+And like, this is not like a Three's Company misunderstanding with Sam. Like, it's like repeated instances of him acting in, in 
+
+[00:29:03] Troy: what was the misunderstanding in Three's Company?
+
+[00:29:06] Brian: It was always, every single episode was a three, was, 
+
+[00:29:08] Troy: Jack's gay? 
+
+[00:29:10] Brian: Yeah, well, that was just a sort of
+
+ploy to get to, segment here,
+
+but
+
+yeah, I mean, every, every episode boiled down to, it was a giant misunderstanding.
+
+Mr. Furley thought something that wasn't actually true. And then the, the sort of resolution was, Oh no, it's just a misunderstanding.
+
+[00:29:26] Alex: it just seems, it just seems as well, like just seeing how the relationship with Microsoft is going, et cetera, it just feels like, there's a little bit of shiftiness in there that doesn't make it particularly, you know, it makes him feel, seem pretty self serving either way. I think, they're probably sweating right now because this was probably the, look, here's the thing, there's going to be.
+
+Cheaper AI that people can build stuff with is not going to cost as much money to run. These are all good things. Good for the environment. They mean like you can test things out more efficiently. Right now, this stuff is really capital intensive and it's also showing people that,you know, things can be built in a better way.
+
+So that's going to be exciting, to see. but you know, these, everyone's going to be fine.
+
+[00:30:10] Brian: So one side note, I just want to like sort of stray into from this is. Did you see the perplexity is, I don't know if this is serious. This is another guy. I'm not sure about, the perplexity CEO. He does 
+
+[00:30:21] Troy: certainly has a nose for PR.
+
+[00:30:23] Brian: Yeah. I don't
+
+know. Like when he jumped in on the New York times and the tech unions, I'm like, is this guy serious?
+
+And some of his statements, I was like, Hmm, you might be, you might be smoking your own supply here. anyway, supposedly they want to, they want to own tick tock and I get, and maybe this goes to The, and of course cut like Trump in somehow or the government, but like, maybe this goes to, the, the distribution question because, you know, perplexity, you talk about being like the Netscape, I don't know, this is like Netscape junior where, it's, it's it's pretty much impossible for perplexity to win against, against Google and, and even like chat GPT.
+
+And so they need. 
+
+[00:31:07] Alex: It's best, it's best outcome here. It gets bought by Apple, you know, or something like that. You know, that's, that's what happens. I can't,
+
+I can't see, I mean, I think, it, and, and the news, I mean, the actual news about, about deep sick sick is great for the, for the dominant players, it's great for Facebook because it just shows to them that they can.
+
+You know, generate more AI to generate more surface area for their ads and more ad logic, and it's going to cost them less and less. So the economics are better. It's great for Amazon because, you know, they're also an ad network and they just want to rent you servers. It's great for Apple, because they can run it on their.
+
+on their phones. it's great for Google because, you know, they want to run AI everywhere and just shows them that they can run it for much cheaper. and for companies like perplexity, potentially, but I think it's going to be really hard to just like beat out the operating systems. Like here's the thing as this, if, if this AI stuff and every day we're seeing signs that yes, it is, you know, I know Troy's disappointed by deepseek but it's like, It's genuinely incredible what it's accomplishing.
+
+it's not that I'm disappointed, I don't think it's superior
+
+it's like, imagine Troy, there was a baby that could dunk and, and you, the baby, there's like a tiny little baby and it's six months old, but 
+
+[00:32:28] Troy: I love it, I love it when you use babies in your analogies, you know this. the baby can, you put the baby on a pit on a, on a field or whatever, and the baby can dunk like, like beautiful back dunks.
+
+[00:32:40] Alex: And you're like there and you're saying. Yeah, but I've seen better in the NBA. Like that's what we're saying here. And the fact that there's a baby that can dunk is the, actually the most impressive thing. Not that he's slightly worse than, you know,
+
+[00:32:51] Troy: That's gonna be our first, our first line of schwag do baby can dunk.
+
+[00:32:55] Alex: baby can dunk. So now that baby can dunk, we need, you know, you, you kind of need to, to look at, you know, what happens. So therefore, the, the small, like. Players have left less of an advantage over the big players because all that Apple needs to do and it's what they've been doing is turn it on and all of a sudden, you know, I, am I going to go into a website and download perplexity to do my searches or a Siri, you know, and they'll get it right over time.
+
+and, and 
+
+[00:33:21] Troy: I think that's right, and I think actually what'll happen is in a, You know, seeing, seeing that kind of picture play out perplexity is going to try to mature their ad model and, and they're doing really aggressive partnerships and they will get sold basis on based on their ability to become someone's ad model in the AI market. That's what'll happen.
+
+[00:33:43] Alex: Fun times, everyone.
+
+[00:33:45] Brian: Should 
+
+[00:33:45] Troy: All right. But babe, hey, Brian, baby can dunk brother.
+
+[00:33:48] Brian: no, I know, I know. 
+
+[00:33:49] Troy: I'm going to make a t shirt. I'm making a t shirt baby can dunk. And I'm also making a t shirt baby noose.
+
+[00:33:54] Brian: baby news,
+
+[00:33:55] Alex: I realized I use babies in my analogies a lot. I once called Airbnb a baby with a chainsaw.
+
+[00:34:01] Brian: what does that mean?
+
+[00:34:02] Alex: I don't know. I thought because it was, it was, it's unintended consequences. I don't remember. It made 
+
+[00:34:10] Troy: I thought you meant that, that the company comes off as being kind of benevolent with the vaginal logo and all that, and then Brian's a monster CEO behind the scenes, you
+
+[00:34:19] Alex: Yeah. It's not a 
+
+monster, dominant, no, no, no. And in the, in the, in the best 
+
+[00:34:23] Troy: way. world domination. Yeah. Yeah.
+
+Does 
+
+
+[00:34:26] Rethinking Work
+---
+
+[00:34:26] Brian: I want to just to take a moment to, to think about rethinking work. Our, our, I think he's a friend of the pod. Rashad Tabakawala has a new book out on this. Troy, you and I went to his little, event, here. and. You know, look, there's a lot of like focus again, the return to office stuff is, is finally playing itself out and, you know, Mark Zuckerberg came out with his idea that companies need more masculine energy.
+
+We can talk about what that, means, but I do think we're, we're, we're a few years. We're a few years down the road, right from the pandemic, right? And I think one of the lasting changes really has been the relationship of people to work and career. And, you know, I think AI just complicates this more, it accelerates it.
+
+I know a lot of my conversations that I have with people, particularly in middle aged, because middle aged people should be hanging out with other middle aged people, otherwise it'd be weird. lot of 
+
+[00:35:19] Troy: I got to start hanging out with my kids and their friends?
+
+[00:35:22] Brian: No, I mean, you should hang out with other middle aged people. That's just normal, I think.I mean, you should be aware of what young people, but you'll never be cool. I think one of the essential things about being middle
+
+aged is recognizing you're not gonna be 
+
+[00:35:34] Troy: pretty cool. man. 
+
+[00:35:36] Alex: the lamest middle aged people are the people, are those that think that they're cool.I think you want to say you're pretty hip.
+
+[00:35:42] Brian: but anyway, I keep, I keep, basically, this is a really weird and difficult time. I feel like, and this is for the laptop class, this is not for like factory workers, right? figuring out like where work fits in, in lives and also what careers mean. Cause I think that that is going to be completely upended, with the way the economy and society is going.
+
+This return to office stuff to me is, is a sideshow to a much more modern way. of working that is more fluid, that's more networked. I don't understand if the rest of society is becoming this way, why would, why would work still be hierarchical? Why would it be fixed? It just doesn't make sense to me. So let's have a conversation about this.
+
+[00:36:28] Troy: I like it.
+
+[00:36:29] Brian: Troy, do you have any opening remarks on, on, on how I frame that?
+
+[00:36:33] Troy: I mean, maybe, just maybe we created a construct in sort of civilized corporate kind of norms and, and, and, and structures where we normalize the idea of being, A kind of, you know, middle managing corporate patsy and that for the millions of people say, like my son who never decided to go on that path because, you know, he's got a different, you know, trajectory in life, but 
+
+[00:37:04] Brian: for the millions of,has time to become a middle manager.
+
+[00:37:06] Troy: he never will.
+
+He never will. And I will advise him to never do that. But for the millions that never belonged, you know, as you know, the kind of structure inside of corporations, get the fuck out. Like, it's not worth it. And it's, it's not worth it. Rewarding. It's not fulfilling and you know, you have no agency and you'll hate what you do, the way you spend a third of your life. And so I think that there are still going to be people that strive to get ahead in corporations and big companies will exist and, you know, people will, will do everything they can to kind of climb the ladder in those, but like for a lot of people that used to. Occupy the safe positions of, of condom middle management. There's a lot of other ways to make a living and have more agency. And that's what I want for people. And that means. You know, that, you know, working across, across, you know, it depends on what you want to do, but like working as a consultant across lots of companies, starting your own company, just finding a way where. You kind of eat what you kill and you, you're, you're taking care of yourself. And I think there's something like what was the number of 6 million new companies started in the U S this year. I think we're seeing, you know, a lot of people decide that, that, you know, kind of tools and technologies and architecture of modern society is going to enable us to create, a new type of employment relationship that doesn't look like what it used to. And I think that's a great thing. Thank you. I think it's a great thing to be honest. And, and, and to me, the, the, the return to work thing is I'm, I'm very confused by the return
+
+[00:38:56] Brian: We'll return to office. We've been 
+
+[00:38:58] Troy: to 
+
+[00:38:58] Brian: to work. We never left work,
+
+I haven't returned to work, but,returned to tennis lessons.
+
+[00:39:04] Troy: yeah. the return to office thing is, no, I'm, I'm kind of rambling, but the, the return office thing is very confusing for me because,I would want to create and use it as an opportunity to create a company that did meet, the needs of, of the customers of that company that did it in a way that allowed people to live better lives and be more efficient. I just am constantly reminded how much time we wasted with all of the kind of artifice of going into the office, particularly in places where you spent an hour going in each direction. And, you know, I still advocate obviously for doing everything you can to create culture and connections with your coworkers, but the way we structured work before was. and I think that you can think about it differently and people can lead better lives. And that makes me happy with their families and for their, you know, kids and stuff. So,
+
+[00:40:03] Brian: Alex, how are you building your work environment? You know, you're not in an office, right? Are your, where
+
+are your 
+
+people everywhere? right now, I mean, I'm re re this is my studio. I'm remaking it. So it's a bit of a mess, but, no, we're distributed. honestly, you know, we, we all wish we could go to an office, and work together because I think for, for the type of work we're doing, it's great to have proximity.
+
+[00:40:28] Alex: but 
+
+[00:40:28] Brian: why not do that? You can get an office in San Francisco. My
+
+Yeah, I think we all, I mean, everybody lives a little bit. Yeah, you know, there's like Portland, Sonoma, San Francisco, and then LA. So, you know, it would require people to move, but,make a move.
+
+[00:40:44] Alex: Yeah, 
+
+[00:40:45] Troy: my company, we're building it with very determined to keep it small and, expand as needed with, you know, collaborating with other companies or working with contractors.
+
+[00:40:57] Alex: So like a collection of, of, you know, individual contributors and, and, and other studios. so we don't want to have You know, 600 people at the company. but I think at a certain, I, and I want that for everyone. That's what I'm choosing to do. I used to run a team that was like over 700 people and it's exhausting and it's inefficient.
+
+And there's a lot of, reasons why that doesn't work, but there's also a lot of reasons why you kind of need certain structures at scale because it becomes really hard to manage a collection of cats who run independently. You know, like it, it, it works when you, you know, we meet every morning and we chat and we're, yes, we're working remotely, but we like connection communications happening all the time.
+
+that's fine and easy when it's five people, when it's like a thousand people. You know, you get kind of that overhead, and that structure that actually brings a lot of people comfort, you know, a lot of people want to go to work and be just told what to do and, you know, do their night five and head home and do the thing that they actually enjoy.
+
+[00:41:58] Brian: and, and they don't want the whole agency of, making all the decisions and, and being,yeah, it sucks.
+
+[00:42:04] Alex: Yeah, I mean, yes. And, and so, especially when you're getting paid very little, when you're starting out, you kind of just want to be told what to do and not having any of these responsibilities. So I think it's hard.
+
+and I 
+
+[00:42:16] Brian: think it's beyond that, honestly. I don't think it's just necessarily an experience thing. Like, I think a lot of people want predictability. And like you were saying, Troy, like there's so many advantages to having agency, right? But usually people would exchange eating shit for stability. Right for 401k matches for health care for honestly, the, you can go into work and have a bad day and there's other people to cover up for you.
+
+Like, you know, if you're eating what you kill and you have bad days, like, then you're not eating.
+
+[00:42:47] Troy: You're making a good point, but you're assuming that there's, you know, you're inside of the beast and you have all of those benefits or you're outside and you have, you know, you have to kind of fend for yourself in all aspects. What if we imagined a different work relationship where there were structures that helped us to take care of some of those things, but still be independent.
+
+[00:43:09] Brian: Well, that is the, that's the, that's the sort of dream. I mean, I was like briefly interested in like dowels and whatnot because alternative structures of working, because like, we've got this issue where I think all of us feel like we want autonomy, but then we want collaboration. And it's just like you're saying with your company, Alex, like you guys wish you could all live together, but like, whoever you have is living in L.
+
+A., there's no interest in moving to San Francisco to make that happen.
+
+[00:43:37] Troy: it's worth noting by, by your company, Alex, is that, that you think about it, you know, like that, that's a natural amalgamation of, of people and talents that live across, you know, five different locations. In the old days, we would have forced everybody to move to the city,
+
+[00:43:54] Alex: oh, sure. Yeah. Yeah. 
+
+[00:43:56] Troy: you know, like when I met you, Alex, if we had bought your company, you know, it today in Cyprus, you know, you might not have moved to the U.
+
+S. might've 
+
+just, you might've just stayed in Cyprus. So I just think that our mindset around, you know, how we think about, you know, location and commuting, has changed materially.
+
+[00:44:15] Alex: and, you know, it needs to, I think commuting is, I always said, like, I don't know if people hate working at an office as much as they hate to commute. Right. It's always been the commute. That's the issue. it's being stuck in traffic. I mean, you can see that a lot of people making decisions for return to home have great commutes.
+
+You know, that like those executive at Apple, that just it's a bike right away. It sounds, it sounds, it sounds great to them. But, one thing I'm wondering is as, if the agentic. You know, agent kind of AI future is upon us and companies are going to hire humans as well as, robots to get jobs done.
+
+And, these, a lot of these, you know, AI agents are going to exist in the cloud. It's going to be kind of weird to ask people to come to an office. Like by definition, that's a fully distributed workforce. You know, some of them are in the cloud. Some of them are in Minnesota. Some of them are, you know, in New York and, and it doesn't really matter where they are.
+
+And the tools are definitely going to help with that. I think, part of the issue right now, it's definitely structural, but it's also very much. Tools based. And it's the way people use their tools or communication tools aren't really great. You know, it's either you write an email, you're on Slack or when you're on the zoom call.
+
+None of these things are, are, are particularly, really good at getting information across. it's, it's hard for people to, to track information when things are, you know, it is like Google docs is great, but you look into anybody's Google docs and it's just like hundreds of documents and, and people are losing track of things.
+
+And, This is where I think like, you know, the future of the SaaS model and of these tools is really going to make some of that stuff feel so much easier and so much less of an overhead, right? because people are getting tired of sitting in front of screens with meetings and reading through hundreds of Slack messages a day.
+
+Like you see people working remote and a lot of them that I talked to really hate it, you know? 
+
+[00:46:08] Troy: same. I hear people saying they need human connection. I do hear that. So
+
+[00:46:13] Brian: well, I, it was like, so the, I think this, I, I should have, gotten the statistic, but basically like people are spending. More time at home now than at the peak pandemic. And like, so there, I think it's hard to disentangle the two of those, right? Like, I mean, while there is like a lot of high price profile efforts to drive people back in the office, a lot of people are working from home.
+
+And I, I just had a dinner, last week, and saw a former colleague and, you know, he, he went from. Our old company that, that was, you know, remote to like, he's basically been like, man, there's some days I don't leave my apartment. You know, it's great to come to this
+
+[00:46:51] Alex: it's, it's really, it's truly, it's truly, I mean, when you, when you consider like the societal impacts of that, you know, like a lot of people may met their partners at work, right. it's staggering amount. And, you know, I was talking to some young folks who were working,at there's there's ways to do this via Slack. I mean, I'm out of
+
+[00:47:09] Brian: that game, but sure, that
+
+[00:47:11] Alex: sure.
+
+But, but I think like, if you, if you look at that lifestyle where you're not separating your work life. From your, your, your home life, right? I think it has a, it's a psychological toll. I could afford just having this little office that's just outside my house. So at least I need to walk out the house and that I think is beneficial.
+
+But, some guy I was talking to said, yeah, I use this computer all day to work and then I make dinner and I bring my dinner to my table and then I watch my shows on the same fucking computer. It's dystopian. And a lot of people do that because, you know, that's their TV and that's whatever. and, and there's no, there's no gap between work and life.
+
+And, and while I like, I think hypothetically, the idea of being completely free of where you work is, is really great because, It, it saves us from a lot of time wasted. and it means that young parents can spend more time with their kids, et cetera. It also, I think kind of creates this, you know, just blurred lines between your home life and your work life.
+
+And you're kind of always doing neither.
+
+[00:48:14] Brian: we should have saved this episode, honestly, because I'm, I'm actually, I didn't tell you guys I'm pitching a, I won't say which one, because I'm pitching them. I'm pitching like a large, like landlord. And in New York city to sponsor people versus algorithms
+
+[00:48:27] Alex: First,
+
+[00:48:28] Brian: to get people into offices. So everyone, you should go to offices.
+
+This particular landlord's very heavy in Dumbo and Williamsburg. but 
+
+[00:48:36] Troy: made a comment though, related to that, Brian, about what you're seeing inside of WeWorks. So I wondered if you could,
+
+[00:48:42] Brian: Yeah, so I have switched. So I don't, I work from home a little bit, but I have an industrious, I had WeWork, for a couple of years. WeWork's a pit of despair. It's, you know, the bankruptcy, post bankruptcy WeWork. Yeah, they got more efficient. But it, it got, it got pretty grimy in there. I mean, it's still fine.
+
+It's like Starbucks, you know, it's like late Starbucks, not the, not the like 1990s Starbucks. So I switched to Industrious, which is to 
+
+[00:49:11] Troy: are the, are the bathrooms clean?
+
+[00:49:13] Brian: So the, well, the WeWorks greatest innovation was the, there were two innovations. One was to have the staircase connecting the floors to have that kind of connectivity. And the other was the floor to ceiling,bathroom stalls. And honestly, I think that's a big part of why people don't want to go back to the office. which I don't blame them. it's, it's, it's an unnecessary humiliation. We're the richest country on earth. Like you should have private bathroom stalls.
+
+It's ridiculous.industrious is a little higher end. I find more carpeting, which I like, you know, we work because it's always like hardwood floors and it seemed like we work was designed for assuming that everyone was developers. And it's in fact, they're always filled with salespeople. I know this because I hear the salespeople selling all day and we works and so they didn't really think that through because they're too loud, but I like industrious.
+
+Industrious is a good, you know, you still get out. I'm going there this 
+
+[00:50:06] Troy: They have free coffee.
+
+[00:50:07] Brian: free coffee, but I don't, I don't drink the coffee there, but they have little snacks to, you know, popcorn seasons pretzels. Those are pretty good. Not those like little vegetable straws. Those are terrible. That's like,
+
+[00:50:19] Alex: I love working in co working spaces. I mean, I think 
+
+[00:50:22] Brian: Oh my God said no one ever. 
+
+[00:50:25] Alex: I, I, I just, I like working in coffee shops. I think my, with my brain works, I enjoy 
+
+[00:50:31] Brian: Oh yeah. 
+
+[00:50:32] Alex: by, by activity. 
+
+[00:50:33] Brian: I write in coffee shops.
+
+I do, I do my sales work and, and
+
+[00:50:37] Alex: I have some really nice ones. I have some really nice,co working spaces that aren't chains in, in the North bays, you know, they're kind of one offs and, and, and people have opened these as, as, as.
+
+Businesses. And I would recommend to everyone that's working from home, like look around, you do a search, don't just look at industrious and, and we work. I don't know if, if, if I'm talking against one of our future sponsors here, but, there are individual, little coworking spaces that open up and some of them have really nice little perks and you get to know the people and I actually enjoy.
+
+my week is, is spent working in a whole bunch of different spaces. The space I'm in now is the one where I have a lot of equipment for recording and music making and stuff like that. But otherwise I'm just on the laptop and, and the working from home thing I think is, I don't think it's particularly healthy, but working from anywhere.
+
+That's awesome.
+
+[00:51:27] Brian: yeah, 
+
+[00:51:27] Troy: yeah, so I'm wondering I had a couple questions for you guys about this so you have I get what your point Alex that You know meeting and socializing and company culture Particularly and I think creative industries is really important. Do you think that? the the kind of core role of Manager, which is directing, coordinating, evaluating, measuring work has suffered because of remote work has, has that part of it, are we, are we, are we still effective in, in, cause you know, I'm on the board of a company, 600 people, it's all remote has only ever been remote, you know, it seems to be doing, you know, an effective job at, you know, kind of efficiently creating the products that they create. And the only thing is I've always thought that, Oh my God, if like a bunch of the leadership left, this would be fragile because the bonds that exist between people or, or maybe superficially created, you know, by through digital connections, but like are, is the role of management is, is effective in, in, in a, in a remote setting.
+
+Do you
+
+[00:52:41] Brian: Can I go first on this? Because I have a lot of thoughts on this.
+
+I think it's, I think it is exposed poor management and poor managers because the office is a command and control center. And it is a blunt instrument. it doesn't require a lot of finesse. you get to sit at the head of the table, you get to see, you know, you can gauge who's doing what and, and whatnot, the, the connectivity is easier.
+
+You do drop buys and whatnot. You have to work harder. I feel like as a manager, and I think a lot of the war on middle managers, maybe it just exposed that many of them were worthless at the end of the day. And that is my sort of
+
+[00:53:19] Alex: Yeah, I agree with that. I think, I think it's, it's really, exposed,a class of management, which was basically just there to fill in the gaps. I think there's, there's another thing that the office provides is the fact that there's space and the fact that there is, this kind of understanding that, the levels.
+
+You know, the levels of reporting, are respected because they, they kind of line up with space, right? Okay. Well, you go talk to your boss and then your boss goes to talk to your boss. And then that person goes to the CEO. What happens when you make everyone distributed is that it completely flattens out that process.
+
+Like, why the hell should I send a Slack message to you? So you can send one to him. I'm just going to send it to him. And it's turning out that like people are noticing that I don't need two layers of management between me and these people. And, and so, so it's, it's kind of exposed all that. and, and once again, that's like a big tool story, like the, the, the, the integration of, of, of, of Slack into the workforce, and the ability to just kind of jump in a zoom call with everyone, is one of the secondary effects that That came from the pandemic and we're working at home that that showed a lot of people that, wait, I don't need these people.
+
+Like I had experiences when the pandemic hit and we all. Start working from home where we stopped some manager meetings, like they just didn't become useful. Like I didn't realize it at the time, but we would just like, end up doing like these bigger meeting where stuff was communicated to a bunch of people rather than these kind of like staged meetings where I communicate things to one layer and then they 
+
+[00:54:54] Troy: Right. So, so you're saying, these are great points, you guys, you're saying that you can have a much broader pyramid in that Hollywood, Hollywood squares kind of environment.
+
+[00:55:04] Brian: I love Hollywood squares.
+
+[00:55:05] Alex: it's like the Peter principle, like, brought to light, you know, the Peter principle it's, it's this management, concept is by Lawrence Peter and it was that people in a hierarchy tend to rise to a level of respective incompetence. Employees are promoted based on their success in previous jobs until they reach a level in which they're no longer competent.I think that's fair. I, I think it does require these flatter pyramids do require leaders that are much able to get much closer to the work. 
+
+[00:55:38] Brian: You gotta do the work anymore. The, the, the ridiculousness I feel like of companies was the idea that you had to get really good at work. You had to be a great designer in order to not design. Like, that's how you got ahead
+
+was to stop designing,
+
+right? Like, and like writing, like, I don't know how many times as a reporter, I was always, I was going to like an editor and I'm like, the last time you filed a story was like 15, 20 years
+
+ago.
+
+Like, 
+
+[00:56:05] Alex: it is the amount of feedback that I got, that I was too close to the work as head of design at a company, staggering and, and the thing, the thing I always thought is like, wait, here's how you reward people for being great at what they do, stop doing it. Just stop doing it.
+
+[00:56:23] Brian: But I think in these organizations and as you go to a flatter, more networked organization, having your hands dirty and being able to do the work and being really good at doing the work is even more important. You can't just coast on hierarchy and the fact that you have some title and maybe your office is in a nicer part of like the office, like you have to lead by having not just competence, but having like really being really highly skilled.
+
+[00:56:52] Troy: It's practitioner leadership. I couldn't agree
+
+more. And I mean, I even remember, you know, the wonderfully designed, you know, Hearst Tower
+
+was, was completely built around the notion of reinforcing Yeah. You know, your sort of pay grade with, with architecture and the entire, every floor plate was built that way and a lot were for, but once you
+
+[00:57:15] Brian: The executive dining room, those guys with the white gloves, 
+
+[00:57:18] Troy: you know, I had two bays outside of my office. Wood walls. I had basically, you know, a 2000 square foot office or a thousand square foot office. And you know, like when you went up there, it was, it was almost kind of ritualistic like you were, you were going to see. You know, someone really important. It looks
+
+[00:57:40] Brian: did Alex go? Did he have enough?
+
+[00:57:43] Troy: no, he lost his connection.
+
+[00:57:46] Brian: This is a star link. Do you want to continue?
+
+[00:57:50] Troy: yeah. And so what, what I did is I actually put my desk in a cubicle and, it, it culturally, it was really awkward. It was really awkward because the whole system was about kind of distance and reverence for leadership. When someone's sitting in a cube next to you and the person's the president of the company, like it was odd.
+
+[00:58:12] Brian: Yeah.
+
+[00:58:13] Troy: back up to the office. Yeah, no, I mean, I, but, but yeah, it
+
+[00:58:18] Brian: But I do think that there's, this is something that I've been thinking about is like, I almost think of it as more like consensual leadership. And that like a lot of times in traditional companies, your position is dictated by where you are in the org chart. Exactly. And like, that's like in theory. And in reality. The rank and file know who's like real and who's not, and the respect levels sort of rise and fall to me with that. And I just think now that's more accentuated and that in order to, to be a leader of any organization, it's going to be more consensual at some point. It's going to be 
+
+[00:58:58] Troy: I agree with you. And I think that's why I never really could understand this kind of, I don't know, I mean, this is bullshit masculine energy thing that was coming from
+
+[00:59:07] Brian: Oh yeah.
+
+[00:59:08] Troy: first of all, if you know him or the legend of him, he's always been sort of like ruthlessly competitive. And, you know, the kind of attributes of masculinity, To me, we're always kind of manifested at Facebook and it's also reflected in, I think, as you pointed out what last week in the composition of their workforce, but like, doesn't I, I don't know, doesn't it, doesn't the future of the workplace look more like the attributes that would we would have associated with female leadership?
+
+[00:59:39] Brian: I think so. It's more about networked and more about like getting people on the same page in some ways. I think what he meant by masculine energy, it's like, basically it's code for aggression right at the end 
+
+[00:59:53] Troy: ruthlessness, meritocracy, you know, fighting to win. I don't know. all those characteristics. I mean, I, I would have thought were always manifested at Facebook. I think that the modern kind of leadership position would be better compared to like how we kind of grow, nurture, mentor, you know, which would be characteristics that I would associate with female leadership.
+
+[01:00:17] Brian: Yeah, I, I, I 100 percent agree with that. and I think one of the other things that I would say is like, I don't know if he was flicking at this, but, I do think within companies, I haven't worked in a company since whatever, October 2020. So take it for what it's worth. but like the culture of offense that sort of rose up, I think maybe is like flicking at that a little bit.
+
+I think. In the very understandable and correct drive to make offices more respectful environments, more open and welcoming environments to people of of all of all backgrounds and types that, There can be, when that becomes bureaucratized, and this is to me, the, the, the most substantive arguments against the, the quote unquote DEI is that when it becomes bureaucratized, like it become, it can go in weird directions. And, you know, this is any bureaucracy basically existed to, to continue itself. And sometimes I, I feel like it gave rise to like a culture of offense and like, I think one of the realities of being able. Having a more, having a work environment that's more consensual and more autonomous and gives people that autonomy and is very accepting is you have to accept that, you know, people aren't perfect and that people have like rough edges that we've always sanded down and should continue to sand down in professional environments.
+
+But like, you're always going to have like screw ups at the end of the day. And, I think that is something. That the modern sort of organization will have to come to grips with, and I just think it's like why it's so much easier to deal with, like, smaller organizations, because you can. You can solve a lot of issues and issues are always going to come up, particularly interpersonal issues in smaller groups, rather than having sweeping, having it intermediated by a bureaucracy always sucks.
+
+I think that's why anyone not anyone. I think most people in companies sort of has like a. A weird relationship with HR. Maybe that's my family. My family has always had a weird thing with HR.
+
+[01:02:22] Troy: What do you mean by that?
+
+[01:02:23] Brian: I don't know. Like, I mean, HR is always like the, the boogeyman of like, you know, like they're the dumping ground for like lots of like, you know, issues that like executives don't want to deal with. And, you know, they're just like some kind of, intermediary, that, but maybe that's my, that's my thing.
+
+[01:02:42] Troy: Yeah, I've been talking to some folks that, you know, are involved in their corporate DEI efforts, and they've said, you know, contrary to the pressures that you're seeing coming out of Washington, they still want to, to kind of maintain efforts to make their workplace more efficient. Diverse and I think that's probably a good thing to be honest. I do think when it becomes the defining characteristics of advancement and the kind of event of, like you said, of kind of the rules of the bureaucracy that maybe, you know, merit can be a victim. But the idea of being A more inclusive environment, but maybe more slightly more permissive. And we may be interpreted it a little bit wrong that, that people are, you know, people are complicated and that we need to have, we need to create an environment where people can kind of make mistakes and stuff is, is really what we need to get back to without throwing the whole thing out.
+
+Okay, Alex, you're back. Just in time for a good product,
+
+
+[01:03:43] Good Product
+---
+
+[01:03:43] Brian: ​
+
+[01:03:45] Alex: I have, somebody working in the basement and they took the power out.
+
+[01:03:48] Brian: You have a lot of people working on 
+
+[01:03:50] Troy: Yeah. And you look, 
+
+[01:03:51] Brian: do you manage that?
+
+[01:03:52] Troy: Well, he dresses like the Unabomber.
+
+[01:03:56] Alex: I don't know, this Is 
+
+[01:03:58] Brian: Is he working on your boiler? Do you have heat?
+
+[01:04:00] Alex: we, we're building a, a pantry in the basement. It's very nice.
+
+[01:04:04] Brian: Oh, fun. Why would, oh,
+
+you must, are you a prepper?
+
+[01:04:08] Troy: Yeah.
+
+[01:04:09] Alex: We, we do our own, we do our own canning. We have a garden, we have 
+
+[01:04:13] Troy: Oh, I can attest to the fact that they make unbelievably nice preserves. I had some this weekend, Alex. 
+
+I went back to Shelter Island and there was, your guys preserves were there.
+
+The spiced peach chutney or whatever it was. Delicious.
+
+[01:04:27] Alex: we should, you should, you guys should come to the pharma. We should record an episode here.
+
+[01:04:31] Brian: I'd 
+
+[01:04:31] Troy: One of the great things that you made are those homemade, dried tomatoes. The,Well,
+
+[01:04:38] Alex: wife is, is, is mostly responsible for all this. I, I, you know, I'm the muscle. Sometimes,
+
+[01:04:44] Brian: you do the actual canning?
+
+[01:04:46] Alex: some, some, some of it, some of the picking,
+
+[01:04:50] Brian: Do you sell this at all? Do you go to
+
+[01:04:51] Alex: no, no, we just give it away. We, we give it away or we give stuff to the food pantry, but, it's, it's, you know, AI is coming to take over. You got to learn other skills, man.
+
+[01:05:01] Brian: Yeah, no, 
+
+[01:05:02] Troy: some, send some more my way. I wouldn't mind getting a gift
+
+[01:05:06] Brian: All right. Well, that is a good product, but what else do we 
+
+[01:05:09] Troy: Well, I, you know, I was debating this because I, I had some folks over to watch that sad football game. I'm a big Buffalo Bills fan
+
+[01:05:16] Brian: Oh, I thought you, I was, the Eagles game was very 
+
+[01:05:18] Troy: I hate the Eagles. And,
+
+I really wanted to see a Buffalo Washington final. So
+
+[01:05:23] Alex: Well, that's what I came back for.
+
+[01:05:25] Troy: Bad weekend.
+
+No, let me get to it, Alex.
+
+Just be 
+
+[01:05:27] Alex: right.
+
+[01:05:27] Troy: please. And, and I was, I hadn't eaten all day. I was really hungry. And in my mind, I don't know if I'd seen an ad or my son and I had talked about it. I wanted Domino's pizza. And, you know, when you're in New York,
+
+you don't order, you don't order
+
+[01:05:40] Brian: I always wonder who gets Domino's pizza.
+
+[01:05:43] Troy: is excellent.
+
+It tells you Abdul is making your pizza and like, it tells you that it's, it's ready for quality checking and then it's out
+
+for delivery and you can track the guy. It's really nice. The pizza came and I had custom ordered it. It was decent actually. you know, it was a little processed. So I actually went down the street and got kind of a locally made one. But,
+
+so did 
+
+[01:06:04] Brian: Nothing endorses a good product that you ordered a pizza and got a 
+
+[01:06:07] Troy: well, a few more people came over. So I
+
+ordered some more people. anyway, the Domino's pizza kind of delighted me to be honest. And,
+
+I liked the pizza too. Cause I got, I got Hawaiian. I'm a big fan of
+
+Hawaiian pizza. I really like Hawaiian and I got. 
+
+[01:06:23] Alex: I'm, I'm, I'm all in on Hawaiian. I think he's right. I think a little bit of 
+
+[01:06:26] Troy: I mean, Hawaiian is a good product.
+
+It's not my product this week.
+
+I put onions on it, which wasn't a terrible idea, but I like, I like just a lot of ham and a lot of pineapple on my pizza. I think that's terrific. It is a Canadian thing, by the way. I was also reading, and I don't know if I brought this up in the, but you know, Tina Brown's newsletter, I love Tina Brown, and 
+
+it's called 
+
+[01:06:46] Brian: It's well written.
+
+[01:06:47] Troy: It's so well,
+
+[01:06:48] Brian: She's a good writer.
+
+[01:06:49] Troy: really great writer, but I, that's, she's not my good product this week. I I'll tell you, this is, I was very impressed with,Willa Bennett's debut as the editor of Cosmo. And, I, I think I haven't, I, usually, you know, an editor joins, and then, you know, a magazine brand or whatever.
+
+And Cosmo is a really difficult one because, you know, it's really suffered economically and, you know, You know, it's, it's having a hard time kind of positioning itself in, you know, a market, you know, dominated by young people using social media. So it's a tough job. And, it's, it's made more difficult by, in some ways, when you're in the hearse tower and you're the editor of Cosmo, you're sort of suffocated by, The kind of ghost of Helen Gurley Brown, who was the, the founder and the great kind of inaugural editor of that, of that publication, who, who kind of led it for many, many years and created this kind of iconic, you know, kind of sex positive, you know, media brand that defined For lots of people, a kind of new mentality for a generation of women.
+
+And it was really powerful and the old timers at Hearst who rightfully worshiped Helen Gurley Brown were very nostalgic for that era. So it was always difficult for an editor, a young editor to sort of step outside and kind of try to reinterpret the brand media is of course, about reinvention. Challenging convention and, you know, creating controversy. Hearst. Doesn't love controversy. So it's, it's a tough job. So her first cover, right? She's been there for a couple of months and her first cover I thought was really great. And it's, you should look it up. It's Macaulay Culkin and Brenda Song. So you never have two people, especially a man, or at least historically on the cover of a Cosmo. And. Macaulay Kin and Brenda Song are very low key.you don't see much of him at all. And, I thought that the spread was terrific. They're in their PJs, hanging around the house, and I thought, what a great way to introduce your version of this brand. And,
+
+[01:09:02] Brian: Oh, they also, they also reenacted the John Lennon Yoko Ono 
+
+[01:09:06] Troy: Yeah, they did. Yeah.
+
+[01:09:08] Brian: And she's from, she's from High Symbiote, right?
+
+[01:09:11] Troy: w Oh, the woman, you,
+
+you mean, Willa Willa Bennett. Yep.so the, both of them, Macaulay, I don't know where, where did Brenda Song get famous? Was she a child actor too? I think she was. Anyway, good cover, good sort of, you know, introduction of a new editor to a magazine in a, in a difficult spot.
+
+And, I applaud them.
+
+[01:09:32] Brian: Good
+
+for them. 
+
+[01:09:33] Alex: Good
+
+[01:09:34] Brian: model? Ads?
+
+[01:09:35] Alex: Webinars.
+
+[01:09:38] Brian: I have one tomorrow. If 
+
+[01:09:39] Troy: I also wanna say, you know, we, 
+
+[01:09:42] Alex: he just, 
+
+[01:09:43] Brian: You're just stepping on my 
+
+[01:09:44] Alex: his pitch, man.
+
+[01:09:45] Brian: You're stepping onto my pitch.
+
+1 p. m. tomorrow. 
+
+[01:09:49] Alex: Brian's here is that, so he can shill all his webinars. 
+
+[01:09:52] Troy: 1:00 PM tomorrow guys means nothing. Because what we had to do this week, and, and we'll own up to the audience, is record early, which is why our deep seek
+
+information's probably outta step with what's gone
+
+[01:10:05] Brian: And this is
+
+going to, this is going to air, but here's the thing, here's the thing, Troy, even though people are going to hear this after the online forum, not webinar takes place, they can still sign up and get, the replay. And
+
+[01:10:17] Alex: Where did they sign up?
+
+[01:10:19] Brian: we'll, we'll drop it in the show notes
+
+and 
+
+[01:10:22] Alex: Troy's not amused. Another good reason to go there.
+
+[01:10:26] Troy: we didn't
+
+[01:10:27] Brian: it's going to be fascinating. It's with the Newsweek's chief product officer, by the way, Newsweek is a weird, success story. And in publishing, like I know it's grading with a curve, but Newsweek is growing, it is profitable. they're actually doing really well
+
+and you know what it is? Cause everyone needs a side hustle. It's the, it's the listings. Business it's the 
+
+[01:10:46] Troy: Affiliate? Lists and affiliate or just lists?
+
+[01:10:50] Brian: just like lists, best hospitals, like, you know, those, you know,
+
+[01:10:53] Troy: that's accolades basically, right?
+
+[01:10:55] Brian: yeah, like licensing and then you like license the, whatever the mark to people, but they've, they've done really well. They just hired,the, the former head of events at digit. I just went there, Megan that, so they're going to get
+
+deeper into, into events and. Yeah, 
+
+[01:11:11] Troy: Well, now that people have probably tuned out 
+
+[01:11:14] Brian: have more traffic than the Washington Post. Did you know that?
+
+[01:11:18] Troy: I did not know that's impressive. I did get a couple of notes saying it was refreshing for you to take a break from depressing media talk and do an episode on productivity. so, you know, people, I, I was, you know, I was skeptical about us doing a kind of, you know, evergreen episode like that.
+
+Turns out, you know, Brian. People liked it,
+
+[01:11:38] Alex: or at least a small sample of people liked it, which is why I sent this note out to say, we could talk about the future of work. And,We good. We weaved it in. We weaved it in. I'm going to have to, I'm going to have to bounce.
+
+[01:11:50] Brian: too. 
+
+
+[01:11:50] Outro
+---
+
+​
+
+[01:11:51] Troy: Can you send me some preserves? Some of those tomatoes, Alex. I love those tomatoes.
+
+[01:11:55] Alex: I'll see if I, some more, I think we might've run out. You need to come in. You need to start coming in the summer when it's picking season. We, we might have avocados this year.
+
+[01:12:05] Troy: I'm coming. I'm going to come to San Francisco soon. I got to
+
+[01:12:07] Alex: Yeah. Just give me like more than like 24 hours warning. 
+
+[01:12:10] Brian: All right, 
+
+[01:12:11] Alex: just drops in. Yeah.
+
+[01:12:12] Troy: it 
+
+[01:12:12] Alex: Yeah, 
+
+[01:12:13] Troy: Hi, Alex. I mean, 
+
+Yeah, Alright guys, 
+
+[01:12:16] Brian: All right, 
+
+[01:12:17] Troy: Thanks. 
+
+[01:12:17] Brian: Bye. ​
+
+
+

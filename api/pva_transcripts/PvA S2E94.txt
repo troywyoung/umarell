@@ -1,0 +1,991 @@
+PvA S2E94
+===
+
+[00:00:00] Alex: lot of Americans have adopted, Britishisms. 
+
+I blame Madonna. 
+
+[00:00:04] Brian: A lot of people say cheers now.
+
+[00:00:06] Alex: I say cheers all the time. but I'm allowed because I'm European.
+
+[00:00:09] Troy: and the slow kind of socialization of the C word, which will take another decade in America.
+
+[00:00:15] Alex: yeah.
+
+[00:00:16] Brian: not going to happen.
+
+[00:00:17] Alex: It seems very rude when it's said here. It's like funny how it's completely diffused when you say it in england it's the same word in french. and it's used colloquially everywhere everywhere It's not you don't you don't even reference it.
+
+Which word in French?
+
+the french c word.
+
+[00:00:32] Troy: Couchon.
+
+[00:00:32] Alex: Yeah, that's right crucial
+
+
+
+
+[00:00:58] Intro
+---
+
+[00:00:58] Brian: Welcome to People versus Algorithms, a show about detecting patterns in media, technology and culture. I'm Brian Marcy, and each week I'm joined by Troy Young and Alex Schleifer. And this week we're also joined by Joe Marchese. Joe's an old friend. He's the operating and build partner at Human Ventures.
+
+He's a confirmed venture capitalist, but he's also a veteran media executive. Joe's been on many All sides of the business. He's been on the ad tech side, with Truex, which he sold, to Fox. And then at Fox, ran advertising there. he's been at Fuse. and he's done a bunch of other things, in this industry.
+
+And. We discussed a bunch of different things during this episode, but I think one of the things that really stood out to me was when we talked about the obsession with performance marketing and how it's created, incentives for so many intermediaries to focus on giving the appearance of being responsible for a sale rather than actually contributing to the sale.
+
+This is an important distinction. And that's led to so many short term approaches that skip the basics of building lasting brands. Now, You can argue that that doesn't matter, and I guess time will tell, but as Joe points out, culture right now is on discount, and by that he means that brands have always tried to align themselves with culture, if not actually create it themselves.
+
+And he's a great example of how the Porsche buying decision begins as a 13 year old, right? Even if the purchase ends up happening 27 years later during a midlife crisis, most likely. Plus, we discuss what the feminine, means about the direction of news and political campaigns. This is one of the many memes that were unleashed by Kamala Harris, becoming the new nominee for the democratic party and why Netflix points to a shrinking TV ad market and the perils of operating content and commerce businesses as part of one company.
+
+Hope you enjoyed the conversation. 
+
+
+[00:02:52] Episode start
+---
+
+[00:02:52] Alex: There's so much news guys
+
+[00:02:54] Troy: this is going to be really next level stuff to watch Brian pull a thread through this.
+
+[00:02:58] Brian: Well, yes. Watch genius happen.
+
+[00:03:02] Troy: Mm
+
+[00:03:02] Alex: he does he know what he's getting himself into he's a
+
+listener Yeah.
+
+[00:03:07] Troy: Yeah, Joe knows what he's
+
+[00:03:08] Brian: Yeah, I mean, just a set to table. Joe, he's been on a lot of, parts of this ecosystem. I first met him when he was doing, do you remember Social Vibe, Troy?
+
+[00:03:18] Troy: sure.
+
+[00:03:19] Brian: It was like a Facebook app it was basically combining like advertising with doing good. Yeah. Like social causes.
+
+And it like rode the Facebook wave, right? When Facebook was really getting started. but then he went into ad tech with, with Truex. I mean, he, he pivoted into ad tech, sold it
+
+[00:03:37] Troy: then it was acquired by Fox and then he became their head of revenue.
+
+[00:03:41] Brian: but then he was also at Fuse. I went to, actually, I went to a Madonna concert with him once. Speaking of
+
+[00:03:46] Troy: Well, I mean, the connection to the podcast was he listened to it. and he thought we were beating up on you, Alex. And that Brian and
+
+[00:03:55] Alex: him already.
+
+[00:03:56] Troy: We're not seeing clearly how AI was gonna impact the media world or the advertising world. And he said, I want to come in now, you know, I want to tag up with Alex.
+
+And so when he said that, I thought that was a nice idea.
+
+Hi, Joey. How you doing?
+
+[00:04:12] Joe: All right, 
+
+[00:04:13] Troy: Nice to see you. Meet your, new wrestling partner, Alex.
+
+[00:04:17] Joe: I love it.
+
+[00:04:18] Brian: We were just going over your bona fides, Joe, we didn't even get to to human ventures 
+
+[00:04:24] Troy: you didn't get to the tequila's part of the story.
+
+[00:04:26] Alex: Well, let's let's start. Let's start at the beginning. Brian. Why don't you get the audience caught up? Because this podcast has a tendency of sounding like you're walking into,
+
+an Italian restaurant.
+
+[00:04:36] Brian: That is by design. anyway, so Joe, welcome. we're going to do this just as we do normal podcasts, right? so how do you sum up your career? I can go through all the different, cause you've been on a lot of different parts of the ecosystem. I think that gives
+
+you interesting point of view.
+
+[00:04:54] Joe: one time media executive, multiple time founder, venture capitalist in Tequila Maven.
+
+[00:05:01] Brian: Okay. That's with Comos. how's Comos going? I see it everywhere.
+
+[00:05:05] Joe: It's going very well. Now, 40 countries. Where is everybody today?
+
+[00:05:11] Brian: What do you mean?
+
+[00:05:11] Joe: Oh, like, where in the world?
+
+[00:05:13] Brian: I'm in New York City.
+
+[00:05:15] Alex: I thought, Brian, did you think he meant emotionally?
+
+[00:05:18] Brian: Yeah.
+
+[00:05:20] Alex: Because he's staring at, at our faces just, 
+
+just like emotionless. Brian is in, where are you now? In
+
+[00:05:27] Brian: New York.
+
+[00:05:28] Alex: New York. Troy's in New York. They're both in identical white rooms, which makes
+
+[00:05:33] Troy: I mean, I'm, I'm on Shelter Island
+
+[00:05:34] Alex: oh, you're in Shelter Island.
+
+So you're not sharing, a holiday in, that's what it looks like. And I'm in Sonoma, 90 minutes from san francisco.
+
+So yeah works 
+
+[00:05:44] Joe: I just finished a board meeting, so I'm, New York, but I'm in Midtown.
+
+[00:05:48] Brian: Oh.
+
+[00:05:49] Alex: Fun times
+
+[00:05:50] Brian: it's like going on a vacation. Great.
+
+[00:05:54] Alex: since you're so clued up and I'm a man of many talents and also you seem to be, wanting to back me up on the AI stuff. we thought You know rather than an interview kind of include you in the conversation here
+
+[00:06:06] Joe: That's perfect. I'd prefer that. 
+
+[00:06:08] Alex: Yeah, great.
+
+I want to get into the AI stuff, but let's start with,TV, and where TV's going. cause, you know, this, this area quite well, Joe. and I want to talk about Netflix versus Apple TV. I mean, it sort of seems like opposites, right? 
+
+[00:06:23] Brian: this week, we had like Netflix earnings, but we also had Apple TV cutbacks,with, with Netflix, they discuss the new homepage that they have, that the growth is in the interface. and they added 8 million subscribers in Q2. at the same time, Peter Naylor parted ways there, which I found very interesting.
+
+So where they're going with advertising, is, is, is TBD, but just give us the state of like, where you think Netflix. Is with, I mean, it seems like they're, they're the ones who have broken away from the pack and the quote unquote streaming wars.
+
+[00:06:56] Joe: I think in streaming total, yes. I think that, the trouble is we broke the bundle and we broke the bundle in two ways. We broke it with too much advertising and Netflix is not going to want to make the deal that they'd have to to get advertising back to where it was, which is,20 minutes per hour of advertising and no such thing as frequency caps.
+
+And so if they're going to mind the user experience, which they are, they're going to stay smaller and advertising for longer, although they have a little bit of sports now with, with one NFL game. But, the, the joke at can this year was that, Netflix and. Amazon were selling during the upfronts was the NFL and Shonda Rhimes shows that's what we were selling 10 years ago in television and 32nd spots and 15s.
+
+The problem is the volume just isn't there because you started with people without ads and then just just took a smaller subset that opted in. So I don't know. I think I think we are just beginning to understand. The reconstruction of the bundle isn't going to happen, or at least the economics isn't going to happen.
+
+And so there's just going to be less money in the ecosystem. And, we'll talk a lot about where it's all going, but it's not going to other traditional mediums. It's going to, quote unquote, performance media and retail media. And then that money doesn't find the 
+
+[00:08:13] Brian: Hmm. That's interesting. So how do you mean mining the user interface? cause I mean, they, they came out with this, this new UI and I'm sure Alex can talk to it. but how do you mean, mining?
+
+[00:08:24] Joe: user experience. I mean, I look, I think that the
+
+Cable was always a great deal for consumers. It was just a terrible user experience, right? The amount of ads you weren't allowed to fast forward, the cable was a terrible user experience on purpose because of advertising, right? think about Thursday night, must see TV.
+
+Like why was all the best stuff on Thursday night? And I couldn't watch it the next morning on TiVo, even when TiVo was out, you know, a decade plus ago, it was because Friday is when movies open and people People go shopping and go, go shop for cars on the weekend. So they wanted everyone to tune in Thursday night.
+
+So they made it as much as possible, force people to do it. And obviously Netflix isn't going to do that. they're not going to make people tune in at the same time to see something unless it's a sporting event and we already have sports and we know exactly how much ad load that holds. So I just don't see how you get back to where it was and still keep a user friendly experience.
+
+[00:09:18] Brian: so this is like basically the, the tech companies always wanna remove friction and be like user focused. It's like, no, you're in the wrong business.
+
+[00:09:26] Joe: Advertising, advertising, in general, like what was Google's big innovation? Was it wasn't the highest ad bid. It was the highest ad bid times click through rate because they wanted relevance in the advertising, right. Or making the ads contextual and, and AdSense on, on pages. and that was like, it was revolutionary because it was user friendly advertising, at least in some, some regard now someone say it's gone too far, that There's so many ads that you're not even getting relevant search results.
+
+[00:09:54] Alex: interesting. So you think that, there is kind of a limit to how much Revenue Netflix can generate from ads without impacting the user experience so much that they will start hurting their business, right? there's the, the trade off there. And it seemed to be coming, that, that, that seemed to be the message coming out of the,earnings call, was that, they're not kind of driving themselves towards,completely kind of free ad supported tier, right?
+
+Where they felt that this might happen in a couple of countries, but they didn't see it happen. And I think, yeah, they're probably in touch with the fact that at some point users are going to bail. The Amazon stuff was interesting because I'm a prime subscriber and Amazon was just like, yep, now you have ads.
+
+Amazon's got a brand where they can, they can do that to you. I think if Netflix or Apple do that, they would probably be, punished more severely.
+
+[00:10:45] Troy: video was an add on to prime. So it was like, you were lucky to have it and we gave it to you free as part of a bundle anyway. So I think it was a different proposition. The fact is, is that net Netflix is, you know what, 9 billion business with, 2. 1, 2. 2 billion in net income. They have a good business.
+
+They need to continue to optimize it for the consumer and people that don't want to pay up can fall into the ad tier, but advertising will never be as important as it was at Fox or NBC. Never,
+
+[00:11:13] Alex: Their content costs might also go down because all they have to do is wait it out till all these other players decide that, being in the streaming world is. Is is crazy and just become production studios and start selling their content back to netflix, right? which is also likely to happen.
+
+So I mean they they increased net income by 45 percent or something which is which is crazy. Most of that is obviously, the shared account stuff, but
+
+but yeah, 
+
+[00:11:38] Troy: for, for, I guess, maybe more than one reason, the experience of television in the cable world, the experience itself could never become a moat. But from my perspective, the experience both from a UX perspective and a personalization perspective is a huge differentiator for Netflix. Yeah,
+
+[00:12:02] Brian: impressed by it? And why? Why should it? Why should it 
+
+matter? 
+
+[00:12:05] Alex: don't know if I don't know if impressed. I mean, there's only this many things you can do But I just taking a step back The thing with Netflix that is important, and the reason why we care about their UI at all is because they've maintained a walled garden, right? They haven't, they haven't participated like other players in things like, the Apple TV, unified interface.
+
+you can't, on Apple TV, you can't even search into Netflix.
+
+And, and Netflix has been keeping control of their user interface because they know,the fight you don't want to get into is Just the amount of content you have, user interface is the moat, right? We're seeing this with companies that can do it are saying no to carplay, right?
+
+And that's Rivian and and test right now Because they don't want to kind of give away their user interface because that's that's the access That's where a lot of the growth is going to be and what what they're doing now with their user interface it's certainly cleaner. They've moved the You You know to move the animation to the top bar It was just some of the stuff was just frustrating to use now It's i've said like netflix wasn't a great interface.
+
+It's just fast and it works reliably which a lot of Apps do not do, like Macs, for example. but what it, what it tells me is that they're trying to kind of structure things in a, in a way so that they can push, push more life content so that they can surface content in a better way. bottleneck.
+
+It was just a series of carousels and it was hard to promote big things happening or. I think the example they gave, if I turn it on on a Sunday evening and you know that I have a family, turn it into a movie night, a mode and all that stuff. And I think that's, that's what they're getting ready for.
+
+[00:13:43] Brian: Let's bring in Troy. He's getting rammy. I can
+
+[00:13:45] Alex: Yeah. 
+
+[00:13:47] Troy: I mean, I think it actually does make a difference. And I think their interface is so much better than Max's. And as a consumer, I mean, listen, obviously it's content in the end. Nothing else matters really. If it's a great show, it's a great show, 
+
+but once you start, it does, especially when you're balanced, I would call it like the four kind of enter three or four entertainment modes.
+
+And one is catalog. The other is live, which is a very, has a very different set of requirements. Cause you have to push attention into a moment. The third is they're building games into it. More significantly than they have in the past. You notice how they're doing animation on the game tiles now. And, and then the fourth is sort of your personal, pointed your, your, your personal view on things.
+
+So I think that that doing it extremely well at scale is, is, is actually super difficult.
+
+[00:14:36] Joe: Well, let's be clear. I mean, this is going from just a user interface to an operating system and operating systems where all the money is right. Microsoft has an operating system for PCs. Google. You can make an argument as an operating system for the Internet. there was like, this, this idea that it's going to be an entertainment operating system.
+
+Is very important because the operating system gets to be the filter, or the arbiter of what people see. So, the last negotiating deal with the unions in Hollywood was, Hey, there are certain shows we're going to pay if they hit this level of streams. Well, who's to say who gets featured on the homepage and who's making the decision?
+
+that's the real battle, like Roku versus Fire TV versus Google TV or, Android, versus Apple TV. It's that operating system layer that would be so much power. And there's never been consolidation of that layer. I mean, Apple stayed about the same share of market for a very long time. Same with Roku, 
+
+[00:15:29] Alex: it's going to be also interesting to see if there's anything that happens at the regulatory level that, that opens up, Apple's app store policies so that then, because right now it's kind of a hack, right?
+
+If you buy if you buy games most of these games you can't actually play them on the tv. Although that's being worked on. I think you know i'm hearing Netflix is working on tons of games right now. There's going to be a deluge of games. but uh, Okay
+
+I I
+
+[00:15:57] Troy: Well, I, I, I say that knowing that Joe is an Android person, so he is
+
+[00:16:01] Brian: I was surprised that when you, you popped up as a green ball. I still.
+
+[00:16:05] Joe: man of the people, man, all the engineers,at
+
+human ventures, 
+
+[00:16:08] Brian: is having a moment. So
+
+[00:16:10] Alex: Yeah 
+
+[00:16:12] Troy: Are you a Roku guy? Joe?
+
+[00:16:14] Joe: I have Apple TV at home, but I also have Roku. I try them all.
+
+[00:16:18] Troy: Yeah. Okay. no judgment.
+
+[00:16:19] Brian: I have TiVo. It came with the HOA.
+
+[00:16:23] Troy: Okay. Brian, move us along.
+
+[00:16:24] Brian: All right. So our theme, our theme, our loose 
+
+theme is is the tiered.
+
+[00:16:28] Troy: episode. 
+
+[00:16:29] Alex: that was a, 
+
+rude way to interrupt 
+
+my 
+
+[00:16:30] Brian: I can tell I can tell Troy's getting impatient.
+
+[00:16:32] Alex: I know.
+
+
+
+[00:16:33] Brian: it is, is the tyranny of complexity. I wanted to get that, but, there, there's obviously, there's so much complexity in the media and advertising like systems nowadays that, parsing through it is nearly impossible.
+
+I just wanted to start, I know like everything leads back to this crazy time we're in, but it's like, It's crazy. Just since the last time we recorded this podcast, Biden dropped out. Kamala Harris is the new nominee. There is a apparently grassroots phenomenon in quotes, around, Kamala Harris that's happening, on TikTok.
+
+And, it's impossible to understand. At least for me, what is real and what is not. Like when I see all of the, the Kamala Harris memes and it's very clear this is gonna be a meme election. I think that's, that's obvious. And both can, both candidates actually are very memeable. I think. when I see these, I'm reminded of all of the memes about Putin being like a manly man, him with like his shirt off.
+
+And we look at it all and we're like, look at this ridiculous propaganda. We do the same thing in our own convoluted information space. don't you think, Troy? What is your
+
+[00:17:43] Troy: I love to ride horseback, shirtless. Yeah.
+
+[00:17:48] Brian: I mean, this is like, the dance memes, it's turning a weakness into, now apparently this is, a great strength. For some reason this never existed when she was a candidate, all this grassroots fervor, and all of a sudden it exists now, which is really mind blowing to me.
+
+[00:18:03] Joe: The media landscape has changed four years later, and even, even when Kamala was first a candidate, or was a candidate, a vice presidential candidate, she wasn't the candidate. It was Biden.
+
+And then before 
+
+[00:18:15] Brian: president. She got, she, she dropped out because she got
+
+[00:18:17] Joe: but very, but it was very early on, right? It was. It's kind of just coming out. I think this is a totally different level of attention, and so many more, people talk about this being free media, but if you count the human hours that go into the creativity to come up with these things, for every one you see, there's probably tens of thousands that never got seen.
+
+So add up all those people hours, and it's probably the most expensive media ever earned.
+
+[00:18:43] Brian: that's interesting. I mean, she's now a Feminomenon.
+
+
+[00:18:45] Femininomenon
+---
+
+[00:18:52] Brian: and I think at the underlying this is how real is this? I think anytime there's a new candidate, there's like a surge in, in interest. And usually that was filtered through What's called the mainstream media.
+
+I like to call it packaged media. but now all this is playing out and the algorithmic battlegrounds of TikTok, and I guess with
+
+more conservative people, it's X,
+
+[00:19:13] Alex: it's hard to tell how much that's going to sustain itself, but one way to measure it is just seeing the money that came in. Right. I mean, maybe it was just pent up, but that's, it's real money that came in. Also, I think the left is better at memes.You know, whatever you put it, there's higher production values.
+
+[00:19:29] Troy: Hey, Joe, how did you find out about, Biden dropping out? Do you remember?
+
+[00:19:33] Joe: I think, I think I got an update on my phone and then I read the, I read the X post,
+
+[00:19:40] Brian: which was pretty remarkable that he posted it to X, I think, I, although I wasn't on threads, Alex, was it on threads?
+
+[00:19:47] Alex: I'm sure it was. I mean, is it remarkable?
+
+Like he was, quarantining. He was like, he's an old guy quarantining by himself. He's probably just on Twitter. 
+
+[00:19:58] Troy: I got a tweet from that Liza Minnelli account on my, my e vape. 
+
+[00:20:02] Brian: I actually found out through Alex.
+
+[00:20:04] Alex: That's.
+
+[00:20:04] Brian: put Biden is out, I think that we can then set aside the concern that we're not all going to be, even though we're not watching cable news, we're, we're, we're all going to be appraised of the important events of the day, one way or the other.
+
+[00:20:18] Joe: I did immediately turn on cable news and just put it on in the background. you guys don't automatically flip on, I go to, I go to my YouTube TV, then I flip around. It was fun to hear what, first I'd see what CNN said about it, then, then watch Fox News about it, then flip over to BBC to see what the Brits thought about it.
+
+It I find that, I find it still interesting. I
+
+[00:20:43] Alex: a lot. I don't, I famously don't have cable or YouTube TV. So I decided this time to just look at, I went to YouTube and typed in Biden live and it was really good at getting me like a CBS news or whatever, one of these news feeds, in real time.
+
+And I, I realized I didn't even need cable to watch these channels, which I didn't know that was 
+
+great. 
+
+[00:21:04] Brian: But I think it points to the fact that nobody, nobody has a primary news source anymore, like that's just, that's a myth that a lot of news organizations sort of want to perpetuate and maybe it used to be that way, but most people, they do not have a primary news source. And so is going to come at people through all kinds of different ways.
+
+and. memes and packaging it as, as ironic and unironic jokes is, is absolutely part of it, I think now.
+
+[00:21:35] Alex: I, I think, I think this all goes back. I mean, obviously bias, but it always goes back to interface for me, because as everything becomes frictionless and you have access to so many things, then habits become less important. Like the habit of just turning on the TV and it's on the channel that, you know, and stuff like that's kind of harder to change.
+
+Then you got to open the, you got to open your phone anyway and start typing something. So you might as well watch anything. Right. And I, and I think, we've seen it with music, right? When you were collecting records, you collected them in a certain style and people were much more stuck in a specific type of music.
+
+Now, Habits gets people to jump all over the place. And I think it's happening to news because it's all accessible without friction. And news is entertainment. So once I'm done, bored, done with the Fox take or, or you might, you might just check BBC to see kind of like what the Brits are saying about it, because at some point it becomes entertainment to see what the different takes are, because you know, the news, nothing's really changing, that quickly, right?
+
+Yeah.
+
+[00:22:31] Brian: does this mean for this, the packaged media sector? Vogue, Vogue's Jill Biden cover is hitting newsstands now, says, says we will decide our future. didn't age well, I believe, as they say. Yeah.
+
+Time on the other hand, I mean, they're, they're doing a good job with these kind of viral covers, that gets spread around.
+
+I don't know what it does for the business, but I guess it's, it's a nice, it's nice for the brand.
+
+[00:22:56] Troy: At some point you want analysis from thoughtful people, don't you?I have my own way of getting that. I think that we all 
+
+[00:23:04] Brian: That's why I didn't show here. VCs. That's my source.
+
+[00:23:07] Troy: I don't know, maybe, I, I don't know what becomes in that landscape, what becomes a valuable business, if. If the sort of, what you have to do is a media packager to make it a viable business outside of entertainment,that, that, that might be a question for Joe.
+
+[00:23:24] Brian: Joe, do you invest in media businesses?
+
+[00:23:26] Joe: wouldn't say, I don't think starting up a media business would be a good idea or something we'd invest in right now. However, I do think actually what you call packaged media businesses are going to have more value. I do think that the vogues of the world or, just brands that have built up trust or some sort of.
+
+currency with an audience, like what Travis is saying about having some informed opinion on the news. So the news breaks and now I want to hear something about it from someone who might know more than me. and when I got the Biden news, the first thing I thought was, is this real? Right.
+
+And then I clicked through to find out the person was from NBC news. And then I was like, okay, now I believe that this is real. And it was because they had NBC news in their bio. Now, I mean, that could have been fake too, but you know, then you start to see it more and more. So I, I think that in a world of, I mean, obviously we're going to have to get to AI because everything gets to AI at some point, I'm sure.
+
+But in a world where infinite content can be created, something has to be a curator for me. And then something I have to believe their take on it. And I think. Legacy media brands have some sort of authority in that world and I, and so I, I think there is value in it. I think that would be very hard to start today though, from scratch.
+
+[00:24:41] Brian: Right. 
+
+[00:24:41] Troy: though, from scratch.
+
+[00:24:42] Brian: Let's get into AI. it's a good segue. because I kind of feel like we're in this, the phony war part of AI, where there's not really all that much happening to, to media businesses. There's a lot of talk about it and there's a lot of could, might, will. Did you see this demo? Did you see this, the thing that doesn't exist?
+
+and I think the big question ends up being, when are we going to really see? the predicted impacts of AI on the media and advertising world. Let's leave aside the fact that, yeah, depending on how you define AI, it's already at use in all kinds of like ad targeting systems and, and the like. But the reality is, what most people are dealing with day to day, particularly on the publishing business is nothing to do with AI, right?
+
+a lot of the problems in the market have nothing to do with, with AI at all. so when, what is going to be the big impact? So I know you're, I believe more partial to Alex's, spaceship over the white house point of view.
+
+[00:25:38] Joe: I am. I mean, I think that it's not what AI is doing right now today, but the rate of change is just mind blowing. And if you don't think that that is going to have massive effects, and I don't, I don't think I mean, spaceship over the White House, I don't think it has to be catastrophic, but,runway.
+
+Did a little presentation out of just out of fortune, brainstorm, talk about your, your packaged media, throwing, throwing events that curate people.
+
+they
+
+did a, they did a little presentation where they just showed the last four years, like the capabilities of this video generation, generative AI. And it is.
+
+Just shocking. Like I was sitting next to people who are in the film media space and like jaws were on the floor by by what the last one can do. And, and I, I will say that it's like the one thing that gets me, everyone says, well, look, CGI came and then there was animation and they used to take thousands of M animators drawing something.
+
+And then they had the voice, but all of that still required actors. They needed a voice actor or you needed a, you need actors in front of the camera going back in time. Plays to movies to whatever now, the new generation stuff, like it is, it is going to be a massive shift. I'm not saying it has to be catastrophic, but it is, it is going to be big.
+
+[00:26:51] Brian: Okay. That's on the, like the creation side. Right. So when are we going to start to see this actually?
+
+[00:26:57] Troy: Well, Brian, I think there's two places that are interesting to look at right now. There's an app that I, that I am playing with called break the web. Are you familiar with it?
+
+[00:27:07] Brian: No.
+
+[00:27:07] Troy: And it's just a sort of all out AI aggregator, top stories, notifications, packaged imagery, text. Here's what's going around. and there's no sort of presumption that there's a human involved in the process, much like by the way perplexity does in there.
+
+Packaging of media and, perplexity extends it into an email perplexity has an auto generated podcast at a daily or multiple times a day. so you are starting to see, kind of the baseline curation layer being absorbed by AI for sure. And that's not the, the sort of packaging perspective I think that you or Joe referred to, which is, someone you trust or point of view and all that.
+
+And I think that sustains, but there is a kind of hunting gathering packaging at, at the lowest level that that's happening already for sure.
+
+[00:27:59] Joe: Well, and, and to your point of that's on creation. Like again, I don't think we're quite there yet. We're almost there, but the rate of change is going to get us there to a place where if content creation gets easier. And I mean, What is TikTok was a suite of tools so everybody could be better at content creation, right?
+
+And now it soaks up huge hours of people's days, which by the way, Netflix would say they're competing with TikTok and movies are competing with TikTok and cable was competing. Everything's competing for the same 24 hours in a day. And so if there's going to be a Cambrian explosion of high quality content that is worth our time, or let's say the world goes from 1 million content creators to, 1 billion content creators who can make, make a great film or a short, I mean, I haven't done economics since college as an economics major, but I do know if, if the time in the day is fixed and the amount of content seeking that time in a day goes to infinite, the, the value of, of time and attention just become, goes to infinite.
+
+Like I, and the business model being broken, like we were talking about before with advertising and the cable bundle subscription, and the I mean, to me, that's just, there's too many ingredients there to, to not think that everything has to change.
+
+[00:29:10] Alex: well, I mean, the modes are being kind of destroyed, right? So like the distribution mode was destroyed. You can kind of distribute a movie now.now, and if the production modes are, are destroyed too, then we are going to see a lot more competition at, at the kind of more premium levels of linear media that we didn't see before.
+
+So yeah, absolutely.
+
+[00:29:30] Troy: I mean, I don't, I certainly don't think the distribution modes are being destroyed. They're 
+
+[00:29:34] Alex: I think they absolutely. absolutely. Well, let me just, it used to take you a lot of money to release a movie that would maybe show on cable or VHS so, Or theater, et cetera. You used to not be able to upload a 4k or 8k video for free to a distribution platform that could play it. You couldn't really figure out, the building, the hooks so that you could get paid
+
+for your content 
+
+[00:29:57] Troy: my point is different. Alex. It, it, it's just when a tree falls in the forest, dude, 
+
+[00:30:02] Alex: Oh, absolutely. Absolutely. That's going to be like, 
+
+[00:30:05] Brian: Why do book publishers still exist? It's kind of crazy, right? Well, I mean, it's, it's 
+
+very 
+
+easy. You just, you just, you write 
+
+the thing, you upload 
+
+[00:30:13] Joe: problem with movie going isn't the theater, it's movie marketing, right? Like the, like the local AMC doesn't know how to market to the local community to say, Hey, here's what's at our AMC. So they have to wait for Disney to tell the entire world, go to AMC this weekend.
+
+And so the desire to go do things is, has not changed. So it's, it's not the distribution. That's change. It's that the district to distribute to the physical world. You need to count on usage. You need to, you need butts in seats and you can't count on that the way it's happening right now. And so, that, that was the old argument, so it's kind of crazy was, if you release here, your potential audiences X pick, pick a,network, but if you just put it out on the internet, isn't, is your potential audience the entire world?
+
+Well, yes, except for who's going to be your, your new, Distribution gatekeeper are either the algorithms or the amount of money you have to spend on marketing.
+
+[00:31:08] Brian: Yeah. Are you surprised that more, it seems like,TikTok stars stay on TikTok and YouTube on YouTube the idea used to be that, they would go into TV world, but it seems like they're completely different. Like Mr. Beast, maybe Mr. Beast makes it in like an Amazon world, but he probably doesn't even need Amazon.
+
+I don't know. I mean, Tik Tok stars, Tik Tok stars want to make it to YouTube though.
+
+right, I can see, but you're, I don't know. Is, is there evidence that, that, I'm sure there's, there's some instances, but it seems like each ecosystem creates their own stars within, and this is why Threads needs their stars.
+
+[00:31:44] Alex: Threads got Karaswisher.
+
+[00:31:46] Brian: Okay, well there you go. It's got a star. And there isn't a lot of crossover, it seems 
+
+Mr. Beast is a complete creature of YouTube.
+
+[00:31:54] Troy: Yeah, I mean, there's the mechanical part and then there's the part that's really fascinating, which is the way we process news. And I think that's really interesting. So you know, this phenomenon, it's kind of new to me. It's called horny copy pasta. I shared that with you
+
+[00:32:10] Brian: Oh yeah.
+
+[00:32:11] Alex: Yeah, he did. I was, I did not understand what was going on. I 
+
+[00:32:15] Troy: Well. 
+
+[00:32:16] Alex: a seizure.
+
+[00:32:16] Troy: Well, 
+
+[00:32:19] Brian: there's
+
+[00:32:19] Troy: 15 emojis well, it is, it's all caps stream of consciousness, including news, very kind of perverse. as a tweet that combines real news headlines with like crazy whimsy. And it feels like how my kids communicate what it is, is it's. It's people, we are all in the simulation together. We are all processing information as participants in real time.
+
+And what comes out of it is who knows what. And it's, it's always going to be that beautiful, weird, wonderful thing that is just our sort of weird collective,kind of expression where usually the most unexpected and weird stuff is what creates the next cultural wave. I mean, All it is, is news, in a tweet, in all caps, with sexual references and emojis.
+
+And it's fast, and people get their news that way. I mean, who would have predicted this? It's really unusual. Or it's, it's like the Liza Minnelli outlives Twitter account. Okay, which is, it's, it's news events where Liza Minnelli has outlived someone who's passed away. That's the purpose of the Twitter account, which became a breaking news account, which someone said, well, how did you find out about?
+
+Biden stepping down and they said the first bit of news I got was from the Liza Minelli Twitter account on my vape. I mean, I don't mean to, to, to, I only wanted to introduce these weirdo concepts because,we're, we're, we're living in a kind of gaming environment.
+
+[00:34:01] Joe: Yeah, but I think, okay, let's use that as an example, then what you basically got the news from was X, right, because the X algorithm decided to deliver it to you, or send you a notification for it, because I bet you don't get a notification for everything, and you don't subscribe to that Liza Minnelli one, but what you actually are getting a So X is now the distributor and that lies in Manila account.
+
+Whoever runs it, you know how ESPN has the Manning cast where you can watch Monday night football with the Mannings instead. And then every year in the super bowl, CBS has the Nickelodeon when they have it, you can watch it on Nickelodeon with different com. Basically X just has infinite numbers of those channels and they're not paying them or they pay them very little and then they decide which one it comes to you on, but the, but the platform is the distribution. And now there's just a ton of personalization, but the talent isn't really getting paid for that. And that's again, fine.
+
+the person who's doing that account probably isn't doing it to get paid or, if they do, they can maybe cut a couple of affiliate deals. The question is, What happens to the entire ecosystem as more and more attention goes to place that's either unmonetizable or isn't part of, isn't part of it.
+
+it's not aggregating. 
+
+[00:35:09] Brian: It shrinks. 
+
+[00:35:10] Joe: That's what
+
+I think for sure. I think the amount of subscription that's coming out of cable right now, the amount of advertising that's moving to mediums that aren't supporting content creation, ticket sales at movie theaters, like just licensing because you don't, you're not licensing secondary.
+
+The ecosystem for content creation is going to shrink at some point. 
+
+[00:35:32] Brian: Well, for professional packaged content creation. Because, I mean, it seems to me it's very clear that the platforms that control the distribution, they want to have, not hundreds of like content companies that are paying the ass to cut deals with. They want to have millions and millions of individuals who will feed the content and pull the lever and hope that they become the next Hawk Tua or Gen Z in a mini.
+
+[00:35:59] Joe: Yeah, that's, and, and, but that is. I mean, going back to the days of the Facebook newsfeed, they have, or even before that, back to Google search, it has basically incentivized an ecosystem to create content so that it can generate margin for the platform, right? Versus. Margin for the content creator. there's some set of content creator tools.
+
+and that's why I do think there's a new wave of tools coming. This is where we would invest in a media company to your question earlier, Brian, where human would look is there are two things, sets of tools that allow. Content creators to monetize, in some way, right? Self distribution, monetization, et cetera.
+
+that's interesting because we, if AI democratizes the ability for content creation to everyone, then, then the question of what do you do with your audience?
+
+[00:36:47] Brian: Yeah. being able to like, get an audience to take action is basically where it's at, because it's like, if you can't get the audience to take some kind of action, you're going to get undercut in some 
+
+way. 
+
+[00:36:58] Troy: worth kind of restating that what you just said, Joe, because I think it's really important and it stitches together a bunch of ideas. And, and I think it actually will put us on a path to discuss the Houdinki thing, Brian, because what it does is it's It's new surface area that isn't content driven, which is basically retail media and a shocking amount of new inventory coming online there.
+
+It's the sort of algorithmically driven sophistication of platform performance in advertising. And there's no going back from that, right? There's still going to be the rare You know, insert your message in a timeline at premiums, but like not enough scale to, to, to replace anything close to what came before.
+
+And then there's going to be, the ability to activate a group of people in some shape or form, that, that comes around media brands or individuals and stuff, creating things like you just did last week, Joe, with your, with your fortune event.
+
+[00:37:59] Joe: No. it's it's just a kind of reordering of where money's made in the ecosystem, but it's nothing like it used to be 
+
+[00:38:07] Brian: so Joe, what is your take on the, this, cookiepocalypse that never was? So for those who have not been following, and I can't imagine why you would not, the last five years, Google, a 2. 3 trillion company, has looked to phase out the third party cookie, which is often used for ad targeting, even though it was never meant for that.
+
+And it was forced into doing this by Apple. and I cannot understand why exactly it's a major privacy of all the things that are invading our privacy. I don't. The third party cookie doesn't keep us, keep me awake at night, but whatever. and somehow they've arrived now after five years of tangling with regulators to the point where, and this will warm your heart, Troy, their solution is yet another pop up for people.
+
+[00:38:53] Troy: really tragic
+
+[00:38:55] Joe: I like to picture like Cookie Monster down at Capitol Hill lobbying to keep it like
+
+[00:39:00] Brian: It's I know what we, I know what we should do, guys. Let's do another pop up.
+
+[00:39:04] Joe: I mean, I don't know. I, I have such a, cynical view of, you The ad tech ecosystem right now and, and, most cookies and that, we have kind of created an entire ecosystem of machines seeking credit for commerce, not creating commerce, right? Meaning There's a certain amount of commerce that just occurs in the world.
+
+When eight, when the ad tracking, when Apple shut down ad tracking, we didn't have less consumer spending. Maybe a couple of people didn't buy some impulse purchases here and there. and, and you have to believe one of two things with, 
+
+with, Performance media, broadly, retail media specifically, either
+
+AdTech is getting credit for a purchase that was going to occur, or AdTech caused a purchase.
+
+And if it truly caused a purchase, then next time that customer wants to go buy something, they can move them to a different purchase. So that means that anyone who relies completely On performance quote unquote media, their margins will eventually go to zero because someone else will pop up that has more margin to spend on advertising.
+
+I mean, I guess the best examples are look at some of the Amazon sellers. that one wish dot com came along, came up next. And now Timu and Sheehan are willing to spend more on advertising. It's not that you don't, you don't have to use performance advertising in your mix, but I will say that we look at a company and performance advertising is driving a certain percentage of your revenue.
+
+You're, you're already in trouble and you don't even know It 
+
+[00:40:31] Brian: Unpack that a little bit. Cause I mean, that to me is like what happened to a lot of the DTC businesses. They didn't really have, they just kept having to buy their customers. It was the customers were Instagrams. They could put them to anywhere. Didn't
+
+[00:40:42] Joe: Right. Well, I mean, that's the whole point. I mean, look, this is, this is what's funny about this argument of performance media and moving out of brand. And this is like why I think culture is on sale. right now, you believe that performance media can get you a customer, right. And that that is your gateway to getting that customer.
+
+And you have to believe that That whatever that gateway to that customer is controls that customer, meaning they can give you, so if I sell batteries and I buy a cost, a transaction through a platform, then next time a customer wants to buy a pair of batteries, they're not coming back to me. They're going through that platform again, unless my batteries are so revolutionary that they're going to start a subscription to me.
+
+And now they're just going to only order batteries for me. And so the, the idea that. you can build a brand or business on performance media alone is, I think is totally flawed. And that is what happened to tons of it. I mean, we look at it when we're, when we're investing on that side, we say like, the only way to reduce a customer acquisition costs or CAC over time is brand.
+
+And you can't measure brand on a, on a short feedback loop. It's just not possible.
+
+[00:41:51] Brian: But everyone wants to just, I think your, your point about wanting to appear like you, you added value, I guess is, I mean, this is sort of a human instinct too. There's a lot of this that goes on. the appearance of adding value is very important. 
+
+[00:42:04] Troy: can you just build on that a little bit? I 
+
+[00:42:10] Joe: Yeah, I mean, I think the idea is that, advertising used to be the opportunity to show a message you want to be adjacent to culture, or at best, maybe you're part of creating culture or shaping culture. but, that is. The feedback on the ROI, your return on investment is in, not measured in days or weeks or months.
+
+It's probably measured in years or, multi year. And the best example right now, like the two richest people, I use this example a lot, but the two richest people on planet earth most recently at any given time, Bernard Arnault and Jeff Bezos. Jeff Bezos famously said, your margin is my opportunity.
+
+And Bernard Arnault has the highest margin products on earth. And I can tell you. But LVMH does not spend a ton of money on is performance marketing and, selling, selling a handbag,on a pay per click basis, they're investing in a brand so that they can maintain a margin over time.
+
+And so it doesn't have to be that, but look in the middle at Nike, the Lululemons, like you think, I think that there's like almost A tipping point for if you become too reliant on discounting and performance media, you end up slipping down and then it's 
+
+commoditized and eaten by the 
+
+[00:43:16] Troy: modifies. the other thing that typically happens is that you realize to win at performance media, you have to drive, your cogs, which makes you create shitty products.
+
+[00:43:28] Joe: Yes. And by the way, this, what we're describing right now applies just as much to content as it does to products. You could take everything we just said and say that applies to content as well. And the only, by the way, you can't compete with free content creation and that's what you get on the major platforms.
+
+[00:43:45] Alex: mean, it's also why we've been seeing kind of that, the, collapse of B2C businesses, right? Instagram is 
+
+flooded with, 
+
+I mean, the only thing I see right now on Instagram is ads for white t shirts from just brands that I'll, and, and the only thing, the only hold they have on me, if I buy something
+
+is, is the newsletter, 
+
+is, is a newsletter.
+
+Right. Yeah. Yeah. 
+
+[00:44:06] Brian: this is, this is what ad tech got us. 
+
+The guy wearing a black t shirt gets the
+
+[00:44:11] Joe: actually, I think the shoes I'm wearing, I'm wearing on running shoes. I bought them on Instagram with a single click through. So on can be very happy that I bought those shoes, but like, I'm not like if I buy another pair of shoes, it might be someday. Cause the Instagram served me a pair of black shoes.
+
+Now I don't know what on paid to get me to buy the shoes, but I'm going to guess it's very close to whatever their profit margin was on these shoes. Hoping that I would become a fan of on shoes,
+
+[00:44:36] Brian: I 
+
+want to talk about content and commerce, and this is a, this is an idea that like I've been hearing about, going back to Alloy, Bolt,two companies that I enjoyed covering. And. The latest, the latest adventure in this is Houdinki. They've mostly thrown in the towel on this idea that they're, they started as a watch blog, and grew a nice niche business there.
+
+and the obvious thing particularly at the time was to pivot that into a commerce business. We saw a lot of companies do this. And so they took on a bunch of, bunch of funding and, it was completely at the wrong time, because the watch market, the watch ended up collapsing and they bought a watch resale service, Crown and Caliber, and they ended up holding a ton of inventory and it did not, it did not end up, working out that great.
+
+Troy, what is your diagnosis of this? Is this, a lot of these things are very execution driven. Is there a larger lesson to be
+
+[00:45:32] Troy: Well, I, yeah, I mean, I think that we can have a good discussion about this because we write off the notion, I think, at our peril. And I actually do
+
+[00:45:40] Brian: of 
+
+of 
+
+[00:45:42] Troy: the, connection. Well, let's broaden this a little bit. So, and, and I think that, the, the churning guys who are very smart, really vocal about how do we invest in.
+
+In, in, in brands, in IP, in media, but not be reliant on what they, I think, I don't want to put words in their mouths, but is a broken monetization model in, in, in digital media and 
+
+advertising that is volume based, yes, impression and volume
+
+[00:46:11] Brian: So it was like, okay, let's find niches food 52. Um, you dinky,
+
+[00:46:15] Troy: they, they want genuine engagement,real personalities that, that, that front real intellectual property that internet monetization is broken, that the internet is a transactional medium, that there's better ways to align content with a downstream transaction. And let's kind of remove the two step of advertising, which is build an audience package, the media sell the media.
+
+Right. And, and so I think that, that, that was a visionary thesis in a way where there was a lot of truth in it, right? The way we thought about monetization in media was kind of broken in the internet era. And, and we wanted it to be like it was before interactivity and, and, and a complete on demand platform.
+
+distribution system, which is what characterizes the internet. So, but the, the problem is, is that, this is that media is a trade off business. You need balance. You need to balance the needs of a reader back to the Netflix conversation, right? With the balance experience and the needs of the advertiser.
+
+And then when you push it all the way down, you essentially move the risk from the advertiser and you say it's content to commerce. You're moving the risk from the advertiser to the media outlet. Because you are then accountable for a sale. And in the, in, in, in the context of, of Houdinki, I think that Crown Caliber became an anchor around their neck and it twisted their editorial mission.
+
+And they lost audience because they lost trust because they had so much invested in essentially skews that they had to, pervert the content to try to move product. And then they lost focus on their overall editorial mission and the trust they had with their audience. Now that's not even addressing the bigger sort of bugaboo with content to commerce, which is maybe manageable for some.
+
+And there's lots of examples where it is, which is the media business. Is really hard and really complicated and you have to do events and you have to manage a tech stack and you have to have, different types of content and the commerce business is a unit. Margin optimization game of product sourcing, distribution, fulfillment, like it's got its own complexities, right?
+
+So yes, there are examples where I think people have replaced advertising with a different form of monetization in the form of taking a toll from products. And the examples I would cite. in some ways it's like a gift shop at a museum. It works. It can work, right? It works for goop. It works for meat eater, another turn in investment.
+
+I think it works for Epic gardening. It works for my friend, Chris Kimball at milk street. There are marketplaces that sit next to media, but when you combine them in the wrong way and you lose trust, I think that it's really tough.
+
+[00:49:08] Joe: but I would say that it's because I know this this world and I agree that visionary should should make sense in a static in the way the world was, but we just talked earlier about
+
+media competition
+
+is actually going to get greater. So media choices are getting greater. the intermediary is the is the algorithm, right?
+
+So you're now competing on two fronts. It's very hard to beat. Build make content that keeps an audience is very hard to make a product that is the best product. Now I need to make like media that keeps an audience and make the best product, right? Those 2 things have to be connected.
+
+[00:49:46] Brian: both of those 
+
+businesses. 
+
+[00:49:47] Joe: And that's my so I remember I'm going to steal a story from someone. let's see if I can do the quick version, which is. someone comes in from a, from a big, jacket maker and they come into the studios and I'm at Fox and they, they go to talk to the heads of the studio and they go, look, we just want to talk to you about, cause we want to get into the content business.
+
+Right. And the head of the studio goes, that's great. Cause we're going to get into making jackets. And, it is just that re like the two things don't, it's, it's very hard to get into the business. Now, what, what, Churnin did that was revolutionary, was they actually took two successful businesses and put them, they took a successful retail business or commerce of some sort in a successful media business that had legacy, like value and put them together.
+
+The question is how you sustain it when media is constantly changing and today, if media becomes infinite, it gets very hard because you're, you're competing on too many fronts.
+
+[00:50:35] Brian: Troy,
+
+[00:50:37] Troy: well, I don't think that he disagreed with me. Did you disagree with me, Joe? What did I miss 
+
+[00:50:41] Joe: Well, 
+
+[00:50:42] Brian: it sounds like my summation has sounds great in, on, on paper. but to actually execute that almost impossible. Okay.
+
+[00:50:50] Joe: Or, or was, and I think it was for a period of time, this current world right now where, where we are, I think it would be very difficult. Like I think it'd be like, you could see a company like, Launching new types of wire cutters, right? saying we'll be, we will be a source of truth and we'll make an affiliate fee off of what goes through us.
+
+But owning both the commerce and the media, it gets very, very hard.
+
+[00:51:16] Brian: Yeah. I mean, I think everyone, it seems like Troy, like you see such a success in affiliate and you say, well, we should just make the products ourselves. Like, forget 
+
+about 
+
+[00:51:26] Troy: I think the line is when you start making the products. So let's, let's reframe the question a little bit, guys. Someone asked me this yesterday. They said, what if we started digital media 20 years ago and our model wasn't basically imitating magazines? Right, where we said that there was going to be content alongside that content, there would be contextual advertising in the form of a banner.
+
+And, we would, we, we would price it on an impression basis. And, then we all race to get more and more impressions and try to find a balance between the thing that you were doing that was keeping your attention and the thing that was annoying you on the right hand side. So what would we have done differently? And One of the things I think that was You know, and, and, and, and I think isn't going away is the alignment of content with. Something that's helping you make a decision or buying something. So when you have an high intent environment, you're searching for how to solve a, a financial need. And you go to nerd wallet and they, list 10 places where you can do debt consolidation.
+
+I think that's a service. And I think that's the alignment of content and ultimately a transactional opportunity. They don't have to make the debt product, but they're sitting as an intermediary that that's 
+
+a useful position. 
+
+[00:52:43] Joe: that is where I think, I think that's what made me fire up that email. I do think that, saying, saying I want to tag me in, I do think that high intent searches are the first thing that are at risk in a gen AI world where the answers are being brought to people perplexity style because that's now, now we're not talking about media anymore.
+
+like no one's like, Hey, I need to figure out what financial products I want. So I'm going to go to NerdWallet and then search. They search, they get NerdWallet, and then they go, they end 
+
+[00:53:09] Brian: I don't know. I hear NerdWallet radio ads. They're trying to get people to go direct.
+
+I 
+
+[00:53:13] Joe: Yeah. Well, they, well, of course they are. If I'm them, I would for sure be trying to get people to go direct because search traffic is going to fall over time.
+
+It might not going
+
+to go to zero. But 10% Down in search in a high intent or high value. If we just took all the S SEM search engine marketing charts and said, what are the most valuable things out there? I don't know, you guys probably remember the ads for mesothelioma on television all the time, because that search term was worth like.
+
+10, 000 of someone clicked through and joined it. They, if you took them biggest search categories, I bet you, those are the terms that like, if Jenny, I starts to eat them is a big deal. And those are not, I'm not reading newsletters, but I'm loyal to that can then, Transferring over to commerce for those terms.
+
+So I just think that's different than content to commerce. 
+
+You 
+
+[00:54:01] Brian: Yeah, I think one of the issues that, that, that Houdinki seems like they, they run up, ran up against is also just like their, their audience segments were for like watch obsessives and Crown Calibers were for people who were just going to buy one watch as like a bucket list item. Like I've always wanted to have a Rolex and I've now made it.
+
+And, So they, they kind of had a mismatch too with, with combining those businesses because the entire idea of content and commerce is that your content is going to serve as part of a sales funnel, right? And so then you get the negative CAC idea where you don't have to buy the customers, you can actually make money while acquiring the 
+
+customers. 
+
+[00:54:41] Joe: know, Troy, to your point earlier about what would we do with the internet if we weren't trying to do this. here's what you're trying to look at and here's what's being annoying to you on the right. copying magazines. I think we'd build one that was probably more paid for. Like subscribe to what was it was a jobs or cook who said, if you're not paying for the product, you are the product.
+
+Well, the Internet's been free for a very long time, which means we've all been the product for all of it. Right? And, and the realization of that in a world where,
+
+Now, our time and attention isn't even properly valued. So we're not even a good product. And Ryan, this even ties into your cookie conversation earlier that the cookies are being maintained.
+
+Well, that's because the only reason us surfing around the web is worth anything is because there's a cookie somewhere telling an ad tech company to fire off a pixel. And so basically we're trying to maintain this free status as hard as we possibly can, but we're not willing to pay people. For what they're actually worth.
+
+And so it's almost like we've become a bad product. Like our attention, even though it's highly valuable is a bad product because no one wants to pay for it. Unless we're, unless we buy something in that moment or tomorrow or the next day. And we don't buy things on that. They put in my favorites, dad.
+
+I. the first time Porsche is influencing young men, they're 13 years old, and if they're lucky, they're buying a Porsche when they're 40, right? there's no, there's not a feedback loop on this. so that stuff has become so undervalued. That's what I mean by culture is for sale. All these things that you say, what has no, we can't close the loop on it.
+
+So it has no value. Right. Is it means that we're a bad product.
+
+[00:56:16] Brian: it's funny. I mean, this is the sort of performance marketing brainwashing that's happened, which is sort of amazing to me. I mean, there was always this direct marketing was always viewed as the lesser of the disciplines to brand. I mean, that's where it was like, sexy and then there was the direct male guys and maniola and then it got rebranded as performance.
+
+And it
+
+[00:56:36] Troy: It's interesting, lot cooler.
+
+well, it's interesting to hear that from you, Brian, because I thought that you were, you know, on team performance, but not, not only that,
+
+[00:56:45] Brian: I'm on team, like respond to the market and the market. I don't, I'm not, I'm not like a prophet who arrives here and is like, no, you must repent. I don't care if people want MQLs, I'll deliver MQLs.
+
+[00:56:57] Troy: Alex, what team are you on?
+
+[00:56:59] Alex: I'm on, I'm on team good riddance, but it all like lines up with the dead internet hypothesis. Where's this heading choice still thinks we're going to have websites. I think you were saying everything's fine. Troy last week. How do you feel now?
+
+[00:57:13] Troy: I still think it's fine.
+
+[00:57:14] Joe: I think everything to be clear. I think it's also going to be fine if the free internet doesn't look like it did before. If we need tools, more tools for media and publishers to re engage directly with, with their audience, but it, but they can't be, it won't be intermediated by search in the same ways.
+
+[00:57:31] Alex: it's kind of amazing though, that the trick that they, the trick that's been pulled on us, I mean, by ourselves is that,
+
+in some ways, most businesses, media or product, the only way to maintain a direct relationship with their customer is email.
+
+there's no other way to have a non platform relationship with your customer
+
+[00:57:50] Brian: Well, to be clear, the, the platforms themselves are like the biggest emailers in the world.
+
+Right. I'm getting emails nonstop Well, they primarily benefit from app notifications is really the
+
+It's just a different form. I
+
+mean, like at the end of the day, 
+
+[00:58:07] Alex: look, email was the first use case for the internet. It's, it's our first experience of the internet. That was email. And now it becomes the last bastion of like control
+
+that you can have as an independent business.
+
+[00:58:19] Joe: Yeah, and that's why you're seeing like, companies go to push notification enablement, right? You, you land out with, there's a company called Pushly that I sit on the board of like this idea of enabling. Now that's a big ask for
+
+[00:58:30] Troy: So does that, you're responsible for all those additional annoying pop ups that come
+
+[00:58:34] Joe: I wouldn't say I'm personally responsible for all of them, but I might've helped.
+
+[00:58:38] Troy: Yeah. Good job.
+
+[00:58:40] Joe: Hey, well, that, that annoyance is, is a website in response to saying, I would really like to communicate with you directly because I don't know if I'll ever see you again from a search or from a newsfeed because those things all fell off a cliff, right?
+
+[00:58:53] Brian: so what, what areas of media are you optimistic about? If you, if you were to, to like invest in, in media sectors, I mean, you're, you're involved in, in Pushley
+
+and Adelaide. 
+
+[00:59:03] Troy: creator, tools,
+
+[00:59:04] Joe: Yeah. Yeah. I mean, Brian, you know, I'm incredibly biased, but I'm biased for a reason. But, Kinema, which is, allows a filmmaker to self distribute films, right? To allow the audience to do the marketing for it, ticket sales, rights management, right? So there's going to be an explosion of filmmakers out there.
+
+The problem with distribution is that like self distribution is very hard and you can't pair it with marketing.
+
+
+
+[00:59:28] Brian: What other areas? what are you, what do you think is, is, is well positioned with all the unknowns 
+
+Okay, 
+
+[00:59:37] Joe: but I built my book because I invested in the things I think work. Adelaide, which we invested in is attention measurement, trying to put some context to like where we think people are spending time and attention so that you can be an arbiter, like kind of what Moat did.
+
+back in the day, before it got bought by Oracle. So I think measurement tools, monetization tools are interesting. Things that are kind of a, a source of truth, rather than problem is when I look at a lot of ad tech, there's a lot of money to be made without creating real value. It's just not sustainable.
+
+So, so I kind of, I've been very interested in that. I'm very interested in Brands like building brands and products are things that cause activity in the real world to Troy's point earlier Because there's there's a finite amount of it 
+
+[01:00:22] Troy: in the 
+
+[01:00:22] Joe: Tequila, for 
+
+sure. 
+
+[01:00:25] Troy: my wife was saying this morning that she was out last night, and she She thought she, her whoop told her that she got 70 percent on her, 77 percent on her whoop this morning, which is her way of saying that she had a reasonably good sleep. she said it was because she just drank tequila and water.
+
+[01:00:41] Joe: I as not a doctor I can either confirm or deny but that sounds scientific to me if it was comos
+
+[01:00:46] Troy: If it was comos, well, that was a good discussion. 
+
+[01:00:52] Brian: I think we're on to a good product.
+
+[01:00:54] Troy: and it's fun to have someone to join us here. 
+
+
+[01:00:56] Good product
+---
+
+[01:00:58] Troy: my good product, I guess, is a media product. I, you know, I remember I told you guys this before about the intercom story growing up with, there was a guy on the anchored, the CBC morning show in Canada named Peter Zosky.
+
+he felt like he was part of the family. It was a fixture in the home and it was truly great media. I guess it was a three hour format interview show, morning show. I think that Ezra Klein is a generational talent actually. And I was listening to his analysis of the Republican convention and more importantly, A kind of deep dive he did into the psyche of J.
+
+D. Vance and how, which I think is, there's a really important question here that we're looking at with Trump, which is how do people change their minds? How do all of these people come around to calling, calling Trump? A person, equating them to being an opioid or, close
+
+to Hitler Might be America's Hitler or cultural heroine to completely bending the knee. And, the discomfort of, that kind of cognitive dissonance and the steps that we go through as human beings to go from, obviously there's political opportunism on one hand and,going through a kind of emotional, social, intellectual process to actually.
+
+Change who you are, change what you believe. And we're seeing it in with, Alex's friends in Silicon Valley. And we're, we're,
+
+[01:02:29] Alex: of these people are my friends. You
+
+[01:02:39] Troy: kind of. Amazing to watch, but the thing that I appreciated about Ezra when I was, when I was listening to him, you know, he's obviously incredibly well read and I think he's a good interviewer as a result of that.
+
+And he's kind of natural curiosity. But the one thing I like about Ezra is he leaves. room for me to have my own ideas, where it's not just pure punditry. And, clearly he's an intellectual and a liberal, but he's not getting in my way of, of trying to, to, to kind of formulate my own opinions and thoughts.
+
+And, and so I think that, that, Ezra's show is certainly, one of my favorites, and I think he's truly, a kind of, he's really, really gifted at, at podcasting. And, he's like, what's his face from this American life? It's really, he's really kind of a generational talent. 
+
+[01:03:28] Joe: we're starting out other podcasters here. 
+
+I'm going to add, I agree with you on Ezra, Derek Thompson. If you guys
+
+listen to
+
+[01:03:33] Troy: called abundance. Yeah.
+
+[01:03:36] Joe: are they really
+
+[01:03:38] Brian: Yeah, which, which surprised me because I think, I think of them as like rival characters in some way. Not like ideological rivals, but 
+
+I, I, I think that they're rivals for exactly the role that Troy sends. Because they are 
+
+both, they're both 
+
+[01:03:51] Alex: Yeah. 
+
+[01:03:51] Brian: their own, 
+
+[01:03:52] Alex: And the podcast is, is plain English.
+
+[01:03:54] Joe: Plain English. Yeah.
+
+[01:03:55] Troy: That's right. And 
+
+[01:03:58] Alex: And 
+
+[01:03:59] Troy: to I read glass a minute ago. So that's,
+
+[01:04:01] Alex: Yeah. 
+
+[01:04:02] Troy: so that was my good product this week. And I would, you know, I always like to hand it to Alex or, you know, you, Joe, or even Brian. So now, and then he has, he has something to offer. So what are you guys seeing in your world that, that you love?
+
+I like your, I like, comos. I knew I would like to get there. They don't sell it on shelter Island.
+
+[01:04:19] Brian: You gotta
+
+fix that. I'll have it out there for you. Tell me where you are. I'll show you where you can get it. I'll throw something out there on the, on the political side. Good product. If you live in California, look at the Lieutenant governor race. So a man named Michael Tubbs, who was the mayor of Stockton.
+
+[01:04:33] Joe: Before he's running for lieutenant governor is incredibly dynamic. He was the youngest mayor of the major city in the u. s he's crazy life story so if you want to see some hope in politics go go check out, michael tubbs's announcement video Lieutenant governor of california.
+
+[01:04:48] Brian: Is he a democrat?
+
+[01:04:50] Joe: He
+
+[01:04:51] Brian: Oh, he'll win. 
+
+
+
+[01:04:51] Troy: Alex, you're going to like this. you ready? on one hand we all, or I certainly appreciate what, the spirit, the sort of hard charging spirit of Elon Musk and what he's contributed through, his companies and, electric cars and all that, but he is becoming such a fucking asshole. And he, it really is his, his tweet, some it's intolerable 
+
+actually. And he's 
+
+done. 
+
+[01:05:17] Alex: are 
+
+you, are you, telling me you're all caught up finally?
+
+[01:05:19] Troy: No, no, it's not that it's just that I 
+
+[01:05:21] Alex: You missed, you missed, three seasons of that show and you're just caught up.
+
+[01:05:25] Troy: Thank you. I really wanted to bring my gloves down so you could punch me in the face for cutting you off earlier, but the,
+
+no, but Alex, on this brand thing, Joe, he's done just irreparable harm to Tesla from a brand perspective, I think at this point. And I mean, yes, it's starting to show up in the results.
+
+And could you make a car that's cheap enough and efficient enough and technologically advanced enough that, and maybe appeals to 30 percent of the world that believe in your nonsense, it's still, viable and all of that maybe, but can you imagine if Tesla. Had a real CMO and had,someone that was packaging that company in the appropriate way and wasn't kind of detracting from its, people's, feeling about that brand in the world.
+
+Different story
+
+[01:06:14] Brian: So wait, do you think that Tesla would be a more successful company without Elon Musk as
+
+[01:06:20] Troy: Yes. 
+
+[01:06:21] Alex: Well, maybe not five years ago But the last three years have probably been detrimental. I think it's going to be interesting to see when the shareholders start Getting annoyed with that wherever you stand on his politics or whatever. He has kind of mismanaged that that brand at this stage 
+
+[01:06:37] Brian: But I don't, I, I don't follow the sector, but I mean, I know enough, but I would assume most of the challenges have nothing to do with his tweets or X posts,
+
+[01:06:47] Troy: I mean, listen, early on liberals love that car and that's 
+
+[01:06:50] Alex: Yeah 
+
+[01:06:50] Troy: of money.
+
+[01:06:51] Alex: The amount do people really make the decision not to buy a
+
+[01:06:53] Brian: Tesla My, wife wouldn't yeah. in a, in a Tesla.
+
+[01:06:57] Alex: I see, I see this bumper sticker all the time here and bear in mind, this is like Northern California. So it's gotta, but there's a sticker that says, I bought this, I bought this before he went insane. 
+
+[01:07:11] Joe: I, I don't drive, so I haven't, haven't had the opportunity to consider a car purchase living in lower Manhattan. but I would say that this is just a broader issue with all brands. Remember Michael Jordan's famous line, the red States buy shoes too. and that the idea is. If something becomes synonymous with one side of a political party or another, anything like, does it sell the same over time?
+
+Or do you cut half your audience off and then the half that you have left, how many of them are actually in your core demo? It's, it's a,
+
+[01:07:39] Brian: But isn't it almost like inevitable? I mean, I think you could make the argument that he saw this as almost inevitable. Like every brand gets pulled into this. Starbucks got put, it doesn't matter. Like everyone gets pulled into
+
+[01:07:51] Joe: don't know. I don't, I don't know. I don't know what the politics of Delta CEO is.
+
+[01:07:55] Brian: Ed. Well, you know, that brings me up. Okay, The 
+
+CrowdStrike thing happened on Friday, and Delta is begging me to cancel my flight, which is supposed to leave at 4. 30, and they're still calling it, it's almost like Trump calling it the China virus, they're like, the CrowdStrike outage. I'm like, dude, that was last week.
+
+Biden was president. Like, I mean, you gotta be kidding me. You can't be, no other 
+
+[01:08:19] Alex: just just so we're 
+
+[01:08:20] Brian: this. Every institution is letting us down and Delta is the last institution I had faith in.
+
+[01:08:27] Alex: God, Biden is still president. Brian. Brian, I'm a Delta Is he still to speak ill of them. I'm getting on a Delta flight tomorrow night. You'd be nice to them, 
+
+[01:08:36] Brian: Are we, do we think it's going to be a recording? Is this going to be live?
+
+[01:08:39] Alex: the what?
+
+[01:08:40] Brian: Biden, he's supposed to talk tonight. Is 
+
+it 
+
+going to be 
+
+[01:08:42] Alex: be an AI. I mean, I just 
+
+[01:08:44] Brian: It's going to be AI. Did you hear the voice? Do you think it was AI?
+
+[01:08:48] Alex: I don't know. I don't know. I think this election is going to be a wild ride, guys. I had a couple of good products. Do you want to hear them?
+
+You might like them. So I have been talking about,
+
+you know, 
+
+the fact that there's going to be Uh, no, it'sI'm 
+
+[01:09:03] Brian: I have a bidet in Florida.
+
+[01:09:05] Alex: I have a few interesting things to, to talk about.
+
+So I've been looking for like a, a iPod, something that works like an iPod that doesn't look terrible and it's quite small and Astell and Astell and Kern, is building an Android powered little iPod that you can take with you. It just plays music. You can run Spotify on it. I think this, these types of one single use devices are going to have,
+
+[01:09:27] Troy: I have about seven iPods 
+
+[01:09:29] Alex: for Troy for Troy. Yeah, it's just like impossible to maintain now. And for Troy, FIO, F I I O has both a portable CD player with high quality audio and a portable tape player. So if you want to have your collection of, vinyl and tapes and CD players, these, these are making a resurgence and they actually look great.
+
+and they have high quality, digital out. So, so if you want to, if you're into that, I recommend them. Cool stuff. Technology
+
+is, is cool again. 
+
+[01:10:02] Troy: Joe? Anything from you?
+
+[01:10:03] Joe: Oh, no, I think, I think that's, I think I already gave mine.
+
+[01:10:07] Alex: He just mentioned a a race 
+
+political race that's not a product,
+
+[01:10:11] Brian: Oh, well, I mean, addition to Comos, I definitely highly recommend if you, if you like a spritz, Doladera, it is the, the natural version of, of an Aperol. Are you worried about this? Cause Gen Z supposedly they're not like drinking like long term. And you talk about brand and thinking about down the road. I mean, 
+
+[01:10:30] Joe: lot of observational science in what, what kids do. I could find you a New York Times article from 2007 that says, these kids don't like TV. They, they like blah, blah, blah, like YouTube videos. And now they're all binge watching Suits and Grey's Anatomy and stuff. That's like, and Sex and the City, stuff that was actually out at the time, ironically. 
+
+[01:10:48] Brian: okay. So you, you think that this is They're not going to just be tea toddlers forever, 
+
+[01:10:53] Alex: I 
+
+think they got to go back to, 90s alcoholism. I think that's cool again.
+
+[01:10:58] Troy: But it's a good point, though, because Aperol is kind of gross, so I'd like to find that, try that product. I have an album of the week for you, Alex, if you're interested. It's the new Bonnie Light Horseman album, and it's called Keep Me On Your Mind. It's
+
+[01:11:12] Alex: All right, well, Thanks Joe. 
+
+[01:11:14] Brian: cool.
+
+Thank you, Joe. 
+
+[01:11:16] Joe: guys. 
+
+[01:11:16] Brian: everyone. 
+
+[01:11:16] Troy: Joe.
+
+[01:11:17] Alex: so much. 
+

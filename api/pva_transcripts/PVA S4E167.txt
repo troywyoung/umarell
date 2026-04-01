@@ -1,0 +1,1041 @@
+PVA S4E167
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian: How would you describe your style, Troy, 
+
+[00:00:03] Alex: I call it country club lesbian, 
+
+[00:00:05] Troy: I dress like a, like a baby,
+
+[00:00:07] Brian: 
+
+[00:00:07] Alex: you look good.
+
+[00:00:08] Troy: If I had your hair, if I had your hair, I'd never wear a hat. You are a handsome mofo. 
+
+[00:00:13] Alex: Thank you. 
+
+[00:00:15] Brian: I thought you were talking to me. Shit.
+
+[00:00:18] Alex: I mean, I think he's talking to both of us.
+
+[00:00:19] Brian: Okay, good. Well, let's just assume that no need, no need to
+
+[00:00:22] Alex: It was presumptuous of me to think That was 
+
+[00:00:24] Troy: how
+
+[00:00:24] Brian: ​
+
+
+[00:00:35] Welcome
+---
+
+[00:00:35] Troy: Speaking of male, male vanities. Now maybe I got this wrong 'cause I was kind of dozing off, but Scott Galloway has been away from Pivot for a while 
+
+[00:00:43] Alex: Oh, I didn't 
+
+[00:00:45] Troy: It was, some people were concerned. He, he came back this week and it turns out he was off for plastic surgery.
+
+[00:00:52] Alex: No 
+
+way. 
+
+[00:00:53] Troy: um, So he had, he had his,
+
+[00:00:55] Brian: Did he get he describe, no, I think he redid his nose and he got rid of the bags under his eyes and maybe put some, some you know, structure, more structure into the chin. 
+
+[00:01:06] Alex: Does that, does that ever work out? Well, I mean, at some point you should get used to your face, man, when you're in, like you've been living with it for 60 years.
+
+[00:01:12] Troy: He described his nose as looking like a minivan. 
+
+[00:01:15] Alex: Okay.
+
+[00:01:16] Brian: I like how plastic surgery has become something that I, I think it's actually a positive thing where everyone, like people are just open about it. It's like, yeah, I got like, you know, plastic surgery, like before there was like a deniability. One of my favorite shows in the early 1980s before we get into this episode was lie detector with f Lee Bailey.
+
+I dunno if you know it, like I was, I was very young when it, but I, I loved it. They put, people, hooked him up to a lie detector who's great drama and they hooked up Reagan's like hairstylist, I guess barber back then. He didn't have hairstylists for men. about whether he dyed his hair like that would've been like a real scandal back then for a president to like dye his hair.
+
+[00:01:53] Troy: Well, we can get into, we can get into this more in good product, but I, I did notice that the abundance of plastic surgery at the, The Montecito Country Mart. There's a country mart in Los Angeles and there's one in Marin. You've probably been to it, Alex.
+
+It's near Larksburg. The one in Marin. It's like a, they take shitty outdoor malls and they curate them with, you know, stuff that you wouldn't find in the classic luxury lane. Like, it's not lvm a's luxury. It's more California than the, and good food and, and really there's something completely apocalyptic about it.
+
+But I, I can get into more of that later.
+
+It'll give everyone something to look forward to. Near the
+
+[00:02:33] Brian: absolutely. Let's get started. Welcome everyone to people versus algorithms show about detecting patterns and media technology and culture. All three of us are back together for the first time. Last week Alex had a hard stop and I had a travel.
+
+[00:02:46] Troy: got seriously pissy
+
+[00:02:48] Brian: I know. I know, I know. But we're, we've, we've made up, I think.
+
+Anyway, it's good to have you back, Alex.
+
+[00:02:54] Alex: It's good to be back. I'm
+
+[00:02:55] Brian: Okay. Troy in the beanie. Welcome. 
+
+You're supposed to say hello so people know your voice. That's, I think that's how 
+
+[00:03:04] Troy: hi Brian. It's good to be here. We did a nice episode last week, Alex. You know, we didn't miss you. 
+
+[00:03:09] Brian: Well, I will say this, I will say this super fan Brad wrote in, and if you, I, I wanna just quote from it, if you don't mind. He said, finally an episode of the significant percent of your thoughts and insights. Loved it. Please share more of your thinking of future episodes. Need more, Brian? Deep cuts like this.
+
+So maybe you've been holding me back, Alex. It's unclear.
+
+[00:03:32] Alex: I tend to agree with that.
+
+[00:03:34] Troy: Yeah, I think Al, Alex, I think we should
+
+just hang on, just let Brian
+
+[00:03:39] Alex: if I'm not here, then you can talk 20% of the time, Brian, which is, which is a upgrade 
+
+[00:03:44] Brian: it's true.
+
+
+[00:03:44] CES 2026
+---
+
+[00:03:50] Brian: AB also takes, I, I don't know if AB is joining. He's at an affiliate marketing conference. Probably a different, I'm surprised you're not there. Alex, but it might even be in Las Vegas, which sounds having just come from four days in Las Vegas, an affiliate marketing conference. If this is in Las Vegas as I think it is 'cause I
+
+[00:04:00] Alex: Imagine that an affiliate conference in Las Vegas in the kind of remains of CES, like, you know, it's like in, in, in the kind of the, the, the, the path of damage that CES just did. That sounds like hell,
+
+[00:04:13] Brian: so, I did the podcast 
+
+[00:04:15] Troy: it's just the, the affiliate guys and ai, sex toys, vendors. That's all that's left.
+
+[00:04:20] Alex: I mean, it sounds like a party. 
+
+[00:04:22] Troy: I mean, how, how many times did you see that video of the jerk off machine that like, you know, CNET
+
+[00:04:28] Alex: that. Troy. I don't know. Our, our, our, looks like
+
+[00:04:31] Brian: my CS was very different.
+
+I had, I had activations. I did not have that.
+
+[00:04:36] Alex: Do you wanna keep that for, I want to, I want to hear about that on good product
+
+[00:04:39] Brian: I had a different kind of activation going on there. There was some ate, but nothing that lascivious anyway, CS was great. We talked about it a little bit last week. I won't bore you, Alex, with all of the details um, but
+
+[00:04:52] Troy: We did get a nice shout out, Brian, from your friend Lachlan the Breaker. Lachlan 
+
+[00:04:56] Brian: Oh yeah, yeah, he did. I like, you know, I like that. I, I know I think Emily Berg who also I will address. She, she objected to, to something from last week's episode. But you know, I like that bold face names. Emily has said like, too many people are doing it. I tried it once. It was, it's not for me, with our party, 
+
+[00:05:15] Troy: I'm not sure people understand what you mean by
+
+[00:05:17] Brian: okay.
+
+So like a lot of newsletters, a lot of newsletters like put in this newsletter and then they have a list in bold of all of the names. Puck does this. This is an Locklin
+
+[00:05:28] Alex: the, names of the of the people
+
+[00:05:30] Brian: Of the people. Right. Because, you know, people just want, I saw it, I saw 
+
+Brian Morrisey and I was like, boom, I'm going.
+
+And you know, it was, it was all the way at the bottom, but I was absolutely going to be like fully engaged and, you know, seeing, although Lachlan doesn't run ads, he should,
+
+[00:05:47] Troy: Yeah, you were worried that he caught you with an AI sex toy.
+
+'cause that's, you know, he's a got, he's a
+
+[00:05:53] Alex: Meanwhile. 
+
+[00:05:54] Troy: Anyway, in cs there was, I, I like the boldface names thing. I think, I do think it's overdone status. Does it a lot of like media publications do it.
+
+[00:06:02] Brian: I think Lachlan, it makes a lot of sense for it. 'cause he's got that tabloidy sensibility and that is a tabloid approach. But I don't know, it's
+
+[00:06:10] Alex: I get, I get it feels a little bit like the beginning of a sitcom to me, but I get it because every other piece of media, you know, whether it's YouTube videos or even music now, everybody tells you to just put the meat of it like right at the top so that like you can get people hooked on.
+
+[00:06:25] Brian: Yeah. You know, Politico turned 20 this week and they, they started with playbook. They started saying Happy birthday to, to readers in there. And I a I had asked some, I'm like, does this, why do you do this? Like, I don't know who these people are. And they're like, oh, there's some legislative assistant.
+
+They're like, it does really well. It, it, it fosters some kind of like connection and that's what all of media is trying to do, 
+
+[00:06:48] Alex: Well, 
+
+everybody's favorite 
+
+[00:06:49] Troy: of Brian, speaking of, I, I was in one of those curated kinda stores at the Montecito Country Mart and you know, they have like something I really appreciated. They have vintage op shorts. My dad had op cordo O op shorts in every color. I used to steal them from him. I went in there, they had stacks of
+
+vintage op shorts. 
+
+[00:07:10] Brian: inch inseam 
+
+[00:07:11] Troy: Short. Yeah. They're short shorts and they're 
+
+thick cords. Great color, little op insignia. Nice stuff. But what I noticed in this store, which was funny, a new format that I hadn't really thought about was a Braille Playboy, which is a vintage braille playboy.
+
+[00:07:27] Brian: those 
+
+[00:07:28] Troy: It's a, It's a, good idea, right?
+
+[00:07:30] Brian: Oh yeah.
+
+[00:07:31] Alex: We used to make things in this country.
+
+[00:07:33] Brian: yeah, that was right after probably a DA got passed. Okay. So one thing from, from, I did meet, you know, I meet a lot of Alex Eastes out, out in the wild. Alex, you don't know you're, but you're 
+
+[00:07:44] Troy: Haters. The haters, The the haters and the lovers. 
+
+[00:07:47] Brian: where 
+
+[00:07:48] Alex: never meet anyone who knows the podcast
+
+[00:07:51] Brian: You wanna, you wanna be, you wanna have, you wanna have some haters. I, I, I came in contact with Juan. PVA fan, but they, they, they hate listen for you weirdly. I, I don't think, 
+
+[00:08:06] Troy: I 
+
+do the same. I totally get it.
+
+[00:08:08] Brian: the criticism and this person might have been drunk, which is also a very
+
+strange 
+
+thing. not 
+
+[00:08:13] Alex: out. That's 
+
+[00:08:14] Brian: drinking at these like work events.
+
+You start to realize a lot of people are bombed. I didn't know, but I'm like, why are you talking so loud to people? And, and then I was like, oh, you're drunk. That's why. 
+
+[00:08:25] Alex: that is a hack for anyone wanting to get ahead in life is don't drink at the events. You'll always look better than everyone else.
+
+[00:08:32] Brian: yeah, exactly. Yeah. Yeah. But, you know, people need social lubricant. Anyway, his basically, his beef, I'm gonna say it was, Hey, I'm gonna gender this person. I don't think women come up and criticize about podcasts because they have better things to do men do. But he basically criticized you for being too consistent.
+
+So. Yeah. Well, yeah. So you gotta, you gotta, you gotta come up with some, some curve
+
+[00:08:58] Troy: Yeah. But if, if I, if I'm guessing the person, this person is sort of maga adjacent. He hates, he hate, he puts, he hates, yeah. Alex as a, as a, as a liberal
+
+[00:09:08] Brian: Oh, okay. I didn't, okay, so he was dressing it up in Oh, I didn't
+
+know 
+
+[00:09:13] Troy: oh 
+
+yeah, yeah.
+
+yeah, yeah, yeah. 
+
+[00:09:14] Brian: Well, that's what you get for being a 
+
+[00:09:16] Alex: That's, that's great. Yes. Sure. I'll be proven. I'll be proven wrong by history. 
+
+[00:09:22] Brian: Exactly. We got a bunch of things I want to 
+
+[00:09:25] Troy: there's there's nothing. A maga adjacent person hates more than a Cadillac socialist. I mean, it's the worst.
+
+[00:09:31] Brian: Ca Cadillac. This, this is very, this is very dated Troy. 
+
+[00:09:36] Alex: I'm just European.
+
+I'm just European. by the way. I'm just like pretty like centrist
+
+[00:09:41] Brian: is like a r Alex is a right wing European,
+
+[00:09:43] Troy: Cyrus isn't, Cyrus isn't, 
+
+Europe. Cyrus isn't Europe guys.
+
+[00:09:48] Brian: Yeah, but 
+
+he's culturally
+
+[00:09:50] Alex: literally in 
+
+[00:09:51] Troy: It's 
+
+not. It's only Europe by a sort
+
+of quirk of history.
+
+[00:09:55] Alex: That's only something like a disgruntled Canadian would say. I'm sorry that everybody makes fun of your country tour, 
+
+[00:10:00] Troy: They don't, they wanna move there. They love it. Now it's warming up. The people are nice.
+
+They're 
+
+[00:10:06] Alex: up. Yeah. Now you get, you get, three weeks of springs instead of just one. 
+
+[00:10:09] Brian: I wanna get into Retro Digital. We'll see if this works. But I want to cover a few, like news items. First, if, if you don't mind, I had Justin Smith from Semafo, we discussed it last week a little bit Troy, 
+
+[00:10:20] Troy: he's doing, he's doing the rounds. Brian. I see him
+
+[00:10:22] Brian: Well, yeah, but I, you know what, I got in line early.
+
+I got, I sort of pipped Dylan Byers, which was really nice. Sorry Dylan. You know, he, like, he waited and he was like, well, we're gonna have, you know, Justin and Ben on later this month. And I was like, no, Justin, let's just do it Friday. 
+
+
+[00:10:38] Semaphore and Media Business Models
+---
+
+[00:10:38] Brian: And so it was interesting 'cause you know, I don't know if you know Alex Semaphore, but
+
+they are. Okay. So they, they raised another $30 million and it was at a $330 million valuation for whatever that's worth. But what's interesting, I think about semaphore is we're all talking about the theory of the case in media and, and, and what it is to build like one of these sustainable businesses.
+
+Where Sefo ended up. And I don't think that's where they intended to go. And anytime you start a company, you know, you go in different directions, right? Where events are a big part of their model, it's alm, it's a half of their, their revenue. And I, I found it interesting to talk with Justin largely because, you know, this wasn't really events were gonna be a support, not the main part.
+
+At least in the initial, my initial understanding of semaphore and events are a great hack. I mean, this was the story of my last company at Digiday. You know, events are a way to get in revenue ahead of the brand, really, you know, and I think then you can double back. Really build the brand to fit in that.
+
+And I think that is, is where semaphore is. Where in some ways, and this is no knock on SEMA four, it just takes time to establish yourself in any area. And they are, are trying to be global in all of these power niches. It is gonna take time. 
+
+The business is now ahead of where the brand is. 
+
+[00:12:04] Troy: I like it. What do you really think, Brian?
+
+[00:12:07] Brian: What, what do you mean? I told you what I really think. That's 
+
+[00:12:09] Troy: That's not, no, that's the nice Brian. Like, what's, what do you really think? Can they catch up with the event side of I? It's just like, come on. Remember what you wrote in the, in the, in the summary transparency.
+
+[00:12:19] Brian: Yeah. Of what I believe. I'm being transparent. Like I think, I think that that, that 
+
+[00:12:24] Troy: I
+
+like the old Brian. I like the mean Brian.
+
+[00:12:26] Brian: Okay, well, I believe right, that events give you, like, we've talked a lot on this. You need to find some kind of hack, right? You gotta find, you can find a distribution hack, you can find a format hack, and you've talked about this and I agree with it is that you then gotta double back and you gotta put meat on the bones.
+
+Like you can't just, and events are a revenue hack. You know, particularly if you have if you have entree into these circles, you can call in favors and you can build an events brand. But if you're going to build a, a full fledged media brand, you're going to have to be influential based on your content or you be an events business.
+
+That's fine. It's fine to be an events business, but like that's a different type of business than if you want to be a quote unquote real media business. Do you disagree with me?
+
+[00:13:13] Troy: No, I agree with you.
+
+I
+
+was just giving you a hard time about what you really believe. Listen, I think that those guys have done a really admirable job even getting to, you know, whatever the speculation is, 40 million of revenue with a
+
+[00:13:28] Brian: It's not speculation. They like told, they told people that. 
+
+[00:13:31] Troy: Okay, great. 40 million.
+
+[00:13:33] Brian: 2 million in ebitda.
+
+[00:13:35] Troy: I think that they've proven to be able to execute on a kind of convening value proposition in a way that is, is really hard to do.
+
+[00:13:44] Brian: Or what do you really think, Troy? It's enough of this mealy mouth stuff.
+
+[00:13:48] Troy: well you know what? I really think, 'cause I tell you all the time, but the, I think that there. events, it's not like there's, there's different kinds of events, businesses, all right? There's like the kind of two dimensional events that are like, you know, come around and we'll add some veneer onto your ad buy.
+
+And there's events that people pay for and there's events that like the most powerful people in the world go to. And they become really important kind of platforms for deals, for, for, for new relationships. Like they're important events and they're typically paid events. And so I think if you can kind of reinvent Davos in Washington as semaphore, that's, you know, hugely valuable.
+
+I do think at some point you probably want the intimacy of a paid content relationship underneath of the business. That's a real media company today, I
+
+[00:14:41] Brian: Right. And they have to get there. And you know, Justin spent the first half because I, I was going in with the events. 'cause one time when we were going on stage at a Digit day event, I was like, well, all these people. Are gonna be listening, but like, they wish they had a terminal business and I wish I had a terminal business.
+
+And he is like, oh, these events are your terminal business. I'm like, not, not quite the same thing, but you do have to find a revenue source in media. A lot of times these days that is, you know, outside of, of selling just ads and subscriptions take a long time. So, good for them. 
+
+
+[00:15:16] CBS News and Media Transformation
+---
+
+[00:15:16] Brian: CBSI wanna talk about CBS news a little bit.
+
+So they're trying to make, how do you pronounce this guy's name? Tony Duke appeal. Like he, they're trying to make this CBS news host almost like a YouTube style influencer. I, I, I believe, you know, he's like doing a lot of of these and this is a very difficult format and I think it's impossible. I think Barry Weiss.
+
+I don't know her. Everyone says she's very talented. I I'll, okay, I agree. Let's just stipulate that I think this is Marissa Mayer 2.0 trying to revive a broadcast news. You are managing decline, so like, why not try these things? There's a image circulating of, you know, whiskey Fridays with Tony.
+
+It's, it's completely like, branded, I guess, Jack, Jack Daniels. And he's gonna, you know, crack open, crack open a whiskey and I guess have, have a drink with someone which is a nice little shtick.
+
+[00:16:15] Alex: That's a, that's a mockup. You know, I think like, you know, when you work at a company that's looking at activations, the, the creative teams that kind of come up with stuff like that, that's just like, never would make it to the air. I mean, I'm no fan of their, what they've been doing, but, you know, I just wanna be careful.
+
+Just wanna be factual.
+
+[00:16:33] Brian: But I thought like Jim Van Dehi had, you know, Dylan did have Jim on Grill Room. It was a really good conversation. And Jim Van, who's the, he was a founder of Politico, and then he went on to found Axios. And he's a very lucid both thinker and then actual communicator about the media business.
+
+I, I find and it's because like he's a journalist and that's refreshing to me to see journalists running these media companies versus salespeople. Nothing against that, nothing against salespeople out there. Love you. And he made the point that changing these bureaucracies is incredibly hard, you know, and it's almost like a, it's the deep state in some ways and, and in journalism it's even harder because as Ben Smith has noted, journalists are almost working for the guild, you know, both small G and capital G and that they're working for their profession. And you have a very strange situation where in a lot of these media companies, the, you know, the, the newsroom isn't even report the isn't even reporting to the CEO, it's very strange.
+
+They're, these are strange businesses and, and they're already challenged businesses, but the, the task of enacting change in any large organization is incredibly hard and you're gonna get a ton of blow back. And I thought that was a good reminder. Trey, you've been, you've been painted at least in your career as some kind of change agent, right?
+
+Like, I feel like we, I feel like I, you know, that one where we called you, where someone called you brusque, like, you know, I think the, the, the through line of that outside of the brusqueness was, you know, that you were being brought in to, to Hearst to force change. I'm sure you got a lot of pushback.
+
+Knocking down walls, making people go to cubicles. What did you do? Open office plan.
+
+[00:18:20] Troy: Yeah. Yeah, I was a fan of that. 
+
+[00:18:22] Brian: Save on real estate. 
+
+PE 
+
+[00:18:25] Troy: what's what's your question?
+
+[00:18:27] Brian: My, my question is, I want you to, to evaluate how hard it is to change these organizations, whether you're talking about CBS news or say what is happening at Wall Street Journal with Emma Tucker, who continues to make changes there, and I'm very impressed with 
+
+[00:18:46] Troy: well, Emma is, Emma's smarter than, than me for sure. So, and, and more kind of even handed, but I can contrast them a little bit. First of all, I would say that Jim Vander High and John Kelly are my two. I think they are the clearest thinkers about this type of media.
+
+[00:19:04] Brian: John Kelly, the puck
+
+[00:19:05] Troy: yeah, I just love listening to both of them.
+
+I think that they. Appreciate the history and have a really good grasp on the operational complexity and, you know, really just what's going on in, in, in, in the media world. So I, I thought that was a terrific podcast. I think the, I would encourage anyone to listen to the Grill Room with Dylan and Jim, 'cause it was terrific.
+
+the, it strikes me that, that these are very different use cases and, and that the, the Barry versus Emma use case are really different. And I'll explain why in a second. I, I, I have to admit that I like Jim in cheering for Barry, and I think that this is a bit of a death mission and it's, it's incredibly difficult and I think that.
+
+Not only is she trying to accelerate the rate of change inside of that company, but it's also an ideological shift. And so she, she's, she's going into the lion stand and, and, and, and challenging, you know, a lot, a lot, a lot of biases and, and kind of how, and not just in how the, the product is created and the sort of metabolism of broadcast news, but you know, how they think about the world.
+
+And I think that's a really dangerous place to be. And, and, and I think, you know, Barry's incredible. I, I I think that, you know, she's, you know, walked away from the Times, built a company, you know, the free press, like couple million subscribers. Not, not, you know, free and paid. And, you know, she exited in, in a, in a really great way for, for her and her shareholders.
+
+So I'm, I'm a big fan and I think what she's trying to do at CVS is, is, is really difficult. Now, the difference between Barry and Emma and their situation is. Emma has all the bonafides and an English accent. You know, she's kind of pacing the change at the Wall Street Journal. It's easy to do that 'cause it's a subscription business and it can tolerate slow change.
+
+People aren't gonna cancel their subscription. The business model will sustain. And, and, and she can kind of pick away at, you know, changing the, the, the sort of tempo culture and, and, and overall kind of vibe of the newsroom. So, so I think that she's, you know, against the kind of evolutionary mandate, she's doing a great job.
+
+I think that CBS has two paths. You could have just said, listen, we're the third we can pick away at being, you know, picking up ratings points on, on on A, B, C and NBC. It doesn't really matter 'cause
+
+[00:21:39] Brian: Well, it's all going to zero. 
+
+[00:21:41] Troy: Our audience is old and dying and the format's dying. And so we can just kind of make the money and slowly pick a away at it, rationalize costs, et cetera.
+
+Or, you know, slow and deliberate doesn't seem to be her game. She's a kind of shortest distance between two points kind of person. I can sympathize. That's how I approached it. I couldn't stand the agonizing pace of change. Where I was at Hearst, it was sort of like the line, you know, everybody wants to go to heaven, no one wants to die.
+
+It, it's like, listen, this medium, which is kind of magazines is dying. We have to change. It's not about changing, you know, the, the business model. It's about changing what we make. And that was, you know, greeted with extreme hostility. And I was an imperfect deliverer of that message. 
+
+Right. 
+
+But all I 
+
+[00:22:33] Alex: you were, you weren't. You were, I think the things that, that's being missed here, and I would love to hear what Brian thinks, is that you weren't going 
+
+in 
+
+there. 
+
+[00:22:42] Brian: kidding about that. Brass super fan, Brad Floyd,
+
+but go 
+
+[00:22:45] Alex: No, no, I mean, fair enough. troy, you didn't go into Hearst trying to change an ideology for what most people see as a self-serving kind of like political movement.
+
+Like that 
+
+[00:22:58] Troy: that's why I felt like I needed to make that point, Alex, that it's not just about, you
+
+[00:23:03] Alex: It's hard for me to, it's hard for me to re like, to be like a, a, a fan or rooting for a person where it's like so transparent what's going to, what's happening there. This is not like we have to save CBS, this is like, there's a dying asset and it can be a mouthpiece for whatever apparatus we have set in, put in place and let's turn it into that
+
+[00:23:22] Troy: But let's set that 
+
+aside for a second. Alex. I, I, just
+
+[00:23:26] Alex: I 
+
+[00:23:27] Brian: I think you could easily paint that as repositioning it in the market. That's a nicer way of
+
+[00:23:31] Alex: Right. 
+
+Okay, 
+
+[00:23:32] Troy: Yeah. Yeah. It's a 
+
+repositioning from quote unquote center left elite serving, you know, a a, a kind of old media that isn't transparent enough and doesn't serve its audience to being, you know, the
+
+opposite of that But well, I, I, I don't know if we can litigate that right
+
+here, but what 
+
+[00:23:49] Brian: I mean, you let's, let's give it some time. Let.
+
+[00:23:52] Troy: what I'm seeing underneath of it is interesting, Alex, and that is put Tony on the road, increase the speed at which we create formats and content.
+
+Let's experiment a lot. Let's turn it into something that feels familiar to a younger audience, you know, kind of more entrepreneurial and, and, and, you know, lot, you know, unpolished and more conversational, YouTubey.
+
+Let's 
+
+[00:24:20] Alex: what it, is that what it feels 
+
+[00:24:22] Brian: YouTube. No, but 
+
+I 
+
+[00:24:23] Alex: tone, the tone, is still the 
+
+[00:24:24] Troy: That, that's the direction of travel, Alex, that that's the direction, right?
+
+[00:24:29] Brian: I think the interesting question is, can you do that? Is this putting a saddle on a donkey and calling it a horse? Because, you know, ultimately you're, I mean, CBS was called the Tiffany Network. The evening news is such an anomaly, and they're all trying to do this.
+
+I was, I was watching Fox News as I usually do on a, a Wednesday late afternoon. And they have, they have their own like podcasters now on Fox News. They have this guy Will Kane and they have like the podcast mics on tv. It's very, it's a very jarring experience. At least for me.
+
+[00:25:01] Alex: I, I, I get that. But it, it, to me, it feels like, I mean, if you wanted to do something like that, you know, just get Andrew Callahan from Channel five and give him CBS. Like if you really wanted to
+
+[00:25:10] Troy: Shane 
+
+[00:25:10] Alex: young people. 
+
+[00:25:11] Troy: Andrew.
+
+[00:25:12] Alex: Oh, yeah. the, the thing is that this feels like the fee free press, which the audience was, you know, billionaires at cocktail hour That's fine. 
+
+[00:25:22] Troy: Well, it's 
+
+[00:25:22] Brian: They have a million paying subscribers. There's only like, what? Like a,
+
+[00:25:26] Alex: Telling it to, telling it they're gonna make it look young by putting podcasters on is just like already like 10 years behind this curve. Like, like is this us? Is that's us. Then that's, we're the new face, the new youthful face of media. Come on.
+
+[00:25:42] Troy: Yeah. What I, what I see at large Brian is a really interesting experiment and change that might. Capsize the boat. What I see is this interesting opportunity where you have a couple million subscribers. Remember that something like broadcast News has no direct relationship with the consumer, whereas Free Press does, right?
+
+So if you could take that direct connection that's in your email box that's authenticated all of that stuff, and then somehow connected to the authority, the legacy, the kind of media machinery of broadcast news, that's really interesting. I would be looking really hard if I was her, and I'm sure she is at 60 Minutes, which is an incredible brand, incredible asset.
+
+Looking at how we bring more talent into that fold and take their formats and evolve them for
+
+social and 
+
+really, really push on 60 Minutes.
+
+[00:26:34] Alex: Due due to 60 minutes. What? Like, you know, Saturday night lives managed to do, like, keep changing the cast, 
+
+[00:26:40] Brian: Yeah,
+
+[00:26:41] Alex: people on. Yeah, 
+
+[00:26:42] Troy: analogy. 
+
+[00:26:42] Brian: Andrew Schultz segment on 60 Minutes. Who says No to be Bill Simmons for a minute.
+
+[00:26:48] Alex: But, but I, I think I, I do think like that the problem with that CBS news was that it was boring and stuffy. It wasn't an ideological problem. And if you see the problem as ideological, you're gonna fix the ideological issues, and I don't think you're gonna be focused on the right thing. So that's all I'm saying.
+
+I'm not, I'm not taking a side here. Just doesn't look, particularly what I've seen doesn't look particularly interesting.
+
+[00:27:09] Brian: Just to wrap this up, I think, I think that Jim Vande High had a really interesting point. I mean, it's a simple, but I think it's, it's it, it is at the heart of a lot of these issues is knowing who you are is so important now. And like, you know, a lot of, you know, network news is the definition of, of generic and like his point was generic news utilities, that the age of that is, is simply over.
+
+just leaning on brand recognition built up over decades or generations. You just simply can't do that anymore. It doesn't work. You need to be distinctive and essential in all the things that we talk about now. But it's really hard to do that within that format. And that's why I, I think it is, I don't know.
+
+You said a death mission. Troy, I mean, I think it is that it's Marissa May trying to fix Yahoo. I mean, I don't think it was at least then like fixable as it was. And I don't know. I think, I think it's good to have like a unsentimental approach to it and running up against, you know, entrenched organizations is always difficult and I think it's even more difficult in media and then you layer on top the fact that you're trying to do this within a lot of like dying formats.
+
+So 
+
+[00:28:23] Troy: Yeah, I mean, I, I think that the, the best advice she could get is make sure the boss has got your back. 'cause there's gonna be a lot of noise. Bring humility to the process in that you're gonna make a ton of mistakes. And, you know, your ability to learn as a change agent and a manager is always trumped by your energy, entrepreneurial spirit and insight.
+
+But you can learn the former, the latter is born this way and she got that. So let's see how it goes.
+
+Let's cheer for this, except the ideological part which Alex doesn't like. 
+
+But
+
+[00:28:59] Alex: I mean, let's cheer For 
+
+[00:29:01] Brian: That's fine. 
+
+[00:29:01] Alex: I don't get it
+
+[00:29:02] Troy: for someone going in and doing their best to change a stodgy old organization.
+
+[00:29:08] Brian: it's a very thankless job, Alex. So let's cheer for someone doing a
+
+[00:29:12] Alex: Oh, well, I'm sorry. I'm sorry. I'm like Barry. Barry, Wes gets, gets enough thank yous by all the people she cares about. That's fine.
+
+[00:29:19] Brian: Enough bouquets for Barry
+
+[00:29:21] Alex: Yeah, that's all right. You know, you Get invited to all the, you get invited to all the great parties, I'm sure. And I, and look, I'm rooting for her. Good for, I would say like, 
+
+[00:29:29] Troy: You're not rooting for her at all. What are you talking about?
+
+[00:29:32] Alex: I mean, I don't want people to lose their jobs.
+
+I mean, I'm, I'm fine. I want something to succeed, you know? 
+
+[00:29:37] Brian: Yeah. 
+
+[00:29:38] Alex: don't understand the strategy. I think you take CBS news, you shrink it down to the smallest it needs to be to do the boring news that it needs, needs to. 
+
+
+[00:29:45] Creating New Products from Great Talent
+---
+
+[00:29:45] Alex: And then you take some of the great talent out of that and you start creating new products around it.
+
+Like maybe you do that instead, like trying to change something like that, that has so much like equity in whichever direction from the inside means you can kind of destroy it and make it blow up. And I think that's what's happening. That's all I'm saying. I'm not 
+
+[00:30:01] Troy: That's a nice point. That's a nice point. I'm gonna stop trying to change you. I 
+
+[00:30:04] Brian: yeah, I think one of the things that, it'll be interesting to see how they manage and just overall, I think how institutional media manages is everyone loves to talk, particularly in the news business about trust, trust, trust is this like, you know, very airy, squishy notion of, of, of trust, but it's real.
+
+And all the statistics back that people trust individuals over institutions far more. They trust influencers more than, you know, national news organizations with, you know, decades of experience and all kinds of process and rigor and whatnot. This, this idea, I think that is, that is gaining traction, which is that establishing trust is almost impossible and that the best thing is to be transparent, is to be transparent with your biases and because everyone has them, and I think that was part of my sort of trend of the year. Quasi prediction last year, which is that we are gonna see individuals and biased, quote unquote biased individuals, which we all are really come into investigative reporting. I don't think that this individual part of, of the media ecosystem just stays on the sort of commentary and connecting the dots and analysis layer.
+
+I believe it's going to go into the meat of reporting and it will be coming, you know, whether it's like, you know, Nick, there's gonna be, there's gonna be tons of Nick Shirley's out there. They're gonna be, they're, they're gonna be going out and doing investigative reporting. Maybe the business model is actually getting those like rewards for like uncovering fraud.
+
+And people are gonna have come at these things with their own agendas. I mean, Shane, you mentioned Troy, that Shane has, has a new friend and Andrew Callahan. What is going on there? 
+
+[00:31:47] Troy: they're in Denmark.
+
+[00:31:48] Brian: Okay.
+
+[00:31:49] Troy: Standing in front of the Parliament building they're tracking the Greenland transaction.
+
+[00:31:54] Alex: I mean together is Shane, are Shane and Andrew like doing something together? Is
+
+[00:31:58] Troy: Yeah, yeah, yeah. They're, they're, they're all over Instagram
+
+[00:32:00] Brian: So for people who don't know Andrew Callahan, how would you describe his shtick?
+
+[00:32:05] Troy: He's like modern Gonzo news. You know, he does a pretty good job of getting, of, of sort of rigor. He's like a kind of newfangled YouTube news guy, you know, smart does a lot of research and and, you know, lets, lets the camera roll. And so it's kind of fun to watch. He's done a lot of notable segments.
+
+Then he got canceled. Unfortunately, apparently he was not very nice with the ladies. I don't know. I have no idea.
+
+[00:32:34] Brian: I didn't know that. Really 
+
+[00:32:35] Alex: I didn't know that. 
+
+[00:32:37] Brian: Okay. Don't know where to pivot from that.
+
+[00:32:39] Alex: yeah.
+
+[00:32:40] Troy: Well, I have, I have two things.
+
+[00:32:42] Brian: moving on from Andrew Callahan. 
+
+
+[00:32:45] Retro Media
+---
+
+[00:32:45] Troy: I have a couple things that we could pivot to. One was the notion, I think this notion of retroed is really interesting and I, because I went through the exercise, Brian and I made a list of all the reasons
+
+why media is kind of retro now, and
+
+[00:33:00] Brian: I love narratives. You 
+
+[00:33:01] Troy: lists. Yeah.
+
+[00:33:03] Brian: explain to me what, so what do you think? 'cause I do think this is real and it's like a, a nice like topic. But what does it mean? What does retro digital mean? 
+
+[00:33:11] Troy: I guess it means that a lot of the attributes of media that were manifest in the media we grew up with are resurfacing today. As you know, the big shift was always was obviously that, you know, control of distribution. Went out the window when the internet came along and anyone could create and anybody could access your stuff.
+
+And you know, we've been living in that massive kind of disruptive moment for, you know, 20 years as we've tried to, to reorganize. And it's still playing out. By the way, I would just add that it was interesting to me, we wrote about this a little last week in the newsletter, Brian, but YouTube just beat the BB, C as the most watched network in the uk, which is really pretty incredible as a testament to how important it, it's becoming, you know, on television screens.
+
+But having said that, you look at, you know, all of these things that, like, what's the one retro idea that stood out to me is, and I welcome it, is that the New York, New York magazine is doing classifieds, which means that, you know, your friends from your kind of New York magazine community might list, you know, a, a beautiful vintage, modern, you know, chaise lounge on their classifieds that you could pick up.
+
+And that would be kind of fun. You know, classifieds to me work really well through a lens, through a filter, through curation, so that they were doing classifieds. Remember all newspapers had 'em, and when they lost him, it was a sad day. so, so New York magazine's doing classified as kind of a retroed move, right?
+
+Even SEMA four, getting a $300 million valuation is like a retroed moment, right? It feels like
+
+[00:34:57] Brian: well, events are retro.
+
+[00:34:59] Troy: Events are kind of retro sponsored news segments. Jack Daniels bringing you the CBS news. That's retro man. Ab the anonymous banker can 
+
+talk about, 
+
+can talk about micro dramas.
+
+Those are, you know, back to the future kind of thing, right? They're like soap operas, you know, extreme like emotional tropes. They're branded. Starbucks is doing them. KFC is doomed. They're fast and cheap. They do look a hundred episodes in two weeks. Yet they're starting to do micropayments. Hey, that's back to the future.
+
+You used to buy a newspaper with the change in your pocket. Now you can buy a micro drama with a micro transaction. That's kind of cool. I like these. I, I like these titles of, of, of these micro dramas. Like my husband murdered me and then I won the mega ball. 
+
+[00:35:49] Brian: Okay. uh, hell, my boss has my nudes.
+
+Hot
+
+[00:35:53] Alex: our brains are completely, our brains have been completely fried by algorithms, haven't they?
+
+I think. I
+
+[00:35:59] Brian: Well, I think that's 
+
+[00:36:00] Alex: and algorithms have just like, we are just all, we've gone insane.
+
+[00:36:04] Brian: I think Troy force fit the micro dramas into this, but I do think it, there is something here with, within the title of, of this podcast in, in people versus algorithms because, I mean, the digital media has gone on so far, has gone on so long that now, you know, things can be retro because it's, it's been so, so long.
+
+And and it's also, I believe a reaction to what happened in the social media era and what is hap what is now only accelerating in the AI era. For instance, I think there's a space for social networks to come back. Go figure 7%. Apparently 7% of what people see on Instagram are, is content from their followers.
+
+There's nowhere to go to actually have a social network. One of the, I have like, this is kind of good producty, but I think a really good social networking product is something called an aura. Not the ring aura, but like Aura. A URA. It's a, it's a digital frame that you just like send photos to
+
+[00:37:05] Troy: Oh, I bought them for all the old people in my life.
+
+[00:37:08] Brian: yeah, my, my, my, my mom is like, loves this thing.
+
+So 
+
+[00:37:13] Troy: Everybody in my family shoots photos to my
+
+[00:37:16] Brian: And, but do you know the reason that she uses this and that the, the rest of my family uses this is because they used to use Instagram. She used to log on, as she says to Instagram to see, you know, photos of her grandkids and now great grandkids.
+
+[00:37:31] Troy: Or Facebook. Yeah, that's right. 
+
+[00:37:33] Alex: Yeah. And now it's all, now it's 
+
+[00:37:34] Troy: feature the Ora Frame.
+
+We did Fe, we did feature the Ora Frame as a good product on an
+
+[00:37:41] Alex: We did, yeah. Because that's, I mean, we are targeting the right age groups here. can we, when we talk about retroed, can we
+
+[00:37:47] Brian: old people have a lot of spending power. Have you 
+
+seen the stats? They're sitting on
+
+[00:37:51] Alex: I know that's what, that's where I just got an a RP card in the mail for 
+
+some fucking reason. 
+
+[00:37:57] Brian: at like 50
+
+[00:37:58] Alex: I know, it just made me feel ways I didn't like it. so I have a few 
+
+[00:38:03] Troy: What about, what about Pete Davidson doing Avid, a video pod, like a talk show on Netflix as a podcast? Is
+
+[00:38:10] Brian: Talk 
+
+shows are back. Talk shows are back. 
+
+[00:38:12] Alex: Talk shows podcasts were talk shows. We were just using, we're also, everything's so stupid the way we talk about it. like 
+
+[00:38:19] Troy: Yeah, I 
+
+[00:38:20] Alex: show. No, but I'm saying like, oh, maybe podcasts are becoming talk shows like Rogan and, and, and fucking mark Marin. And, you know, they were doing this like 15 years ago, guys.
+
+There were talk shows then there are talk shows now. It's just nobody re nobody in the media took it seriously. So we, they didn't get to use the term talk show and now they are because now they're on Netflix. So now they're real tv. Well done everyone. 
+
+[00:38:44] Troy: Do you wanna add to the 
+
+[00:38:46] Alex: things. 
+
+[00:38:47] Troy: theme, Alex? Or do
+
+[00:38:48] Alex: Yes. Sorry, 
+
+[00:38:49] Brian: you wanna argue against the premise? That's usually Troy's role.
+
+[00:38:52] Alex: I, I, I, you know, because I wasn't here for the predictions episode, I'm also mixing it with some
+
+predictions, 
+
+[00:38:57] Troy: tell people how you reacted. Like a little, like a little 
+
+[00:39:00] Alex: retro. I did some work you like like 24 hours before you say, can we record it now? And Troy always gets his way. God, you 
+
+[00:39:09] Brian: I was glad 'cause I was gonna have to send that message and I, I, you know, I didn't send it 'cause I was worried about Appium from you, so then Troy did, I was like, oh, this is great. Troy can
+
+take it. 
+
+[00:39:19] Alex: I was. 
+
+[00:39:20] Troy: it Alex.
+
+[00:39:21] Alex: I'm gonna be quick because we have AB on the call now. Free, free tv, fast tv, right? People are using that stuff more and more. Apparently, like 30% of US households just a few years ago and now 45% of US
+
+households. 
+
+[00:39:34] Brian: watched Tuby?
+
+[00:39:36] Alex: I have never
+
+[00:39:37] Brian: Do you know anyone who's watched Tuby? Like Tuby, like fascinates me? Maybe AB can win, like
+
+apparently lots of people watch Tuby.
+
+[00:39:44] Alex: Look, I'm a person that subscribes to every single app and like hardly wa and only watches YouTube. So I'm not the right person to ask. But I'm sure people watch Tuby. Pluto TV two B, the Roku Channel, these types of things. Anyway, let's keep moving. I'm gonna keep talking about the rise of the browser.
+
+The browser is back and part of that is ai, everybody. No. And part of that is just that the energy. Nobody can beat the o operating system in and, and accessing the user like you're not going to. Launched a competitor to iOS or Android or Mac, S or what, or Windows. So the best thing you can do is to try to launch a browser so that you can kind of own that access into people's lives.
+
+message groups you were talking about social media networks. I don't know if you guys tried, but like WhatsApp has pretty complete message group community building things with groups within groups and channels and, and, and moderation and all that type of stuff. And that's very old school.
+
+That's very IRC back in the nineties. And it worked then and it's working now. And then a story that's been emerging is the rise of Reddit Big. I'm a big fan of Reddit. You guys keep making fun of me. Reddit overshot TikTok usage in the UK last month. I think that's important. And I think that like people are a bit tired of these feeds and maybe culture and behaviors, you know, ebb and flow, and people are going back to or finally discovering that Reddit is actually a really good product and it's a good product because you, you get context, you get trusted in 
+
+[00:41:12] Brian: Hmm, but hasn't it been spammed as the SEO people have just moved up? They're like, oh, okay, you want to, you wanna send all the traffic to 
+
+Reddit? Well, we got tricks.
+
+[00:41:22] Alex: I think the experience in every other app that I've used has significant, significantly decreased in quality. Like even the ones that I don't use regularly, like TikTok feels like QVC. Instagram feels like QVC. I mean, forget Facebook that's gone. Twitter is just whatever the fuck Twitter's doing.
+
+Reddit remains kind of a pretty good experience because in part of the. Like the community management of its own forums and the way that they manage spam and stuff like that. I, there's, there's no big spam concern that I have with my, my, my own Reddit experience.
+
+[00:41:55] Brian: All right. Good. Ab, I wanna bring you in. Are you, are you in Vegas right now? 
+
+[00:42:01] Alex: I feel like AB is in some sort of like liminal pocket
+
+[00:42:04] Brian: It, well, I thought maybe he had been detained in Las Vegas.
+
+[00:42:07] Alex: He could be detained in Las 
+
+[00:42:09] Brian: It's, so, It's, his, it's his
+
+[00:42:10] Troy: He may not. He may not in fact be real.
+
+[00:42:13] Alex: Yes. I think he might be in it. Yeah.
+
+[00:42:16] AB: Yeah. I was only in Las Vegas. I was less, I was there for less than 24 hours, which was nice.
+
+[00:42:20] Troy: Ab, are you in the Brutalist banker 
+
+[00:42:23] AB: Yes. To West Village of 
+
+New York. 
+
+Yes. 
+
+[00:42:27] Alex: the podcast Echo Room.
+
+[00:42:29] AB: Yes.
+
+[00:42:29] Brian: Okay. 
+
+
+[00:42:30] Affiliate Summit
+---
+
+[00:42:30] Brian: Any report from the affiliate summit? I mean, there must have been all kinds of characters. There must have been like a Star Wars bar.
+
+[00:42:37] AB: Yeah, I'm always surprised about how people make money, but I one. As, as we think about some of these like different like to be, or communities we always view it from, do we use it? Is it, is it, is it valuable to, to us I think one of the things that people are talking about in the commerce space are these, like couponing in other saving communities.
+
+So it's like, I don't think we worry necessarily about using cash back and coupons, but it is something that's driving a lot of revenue for certain companies. And so 
+
+[00:43:07] Brian: that's retro. I love it. Couponing 
+
+baby. 
+
+[00:43:09] AB: but I think it's like a, a strong point in that sometimes when we hear the term community, we think, okay, it's the Andreessen Horowitz WhatsApp group with.
+
+The 10 or a hundred people that matter in Silicon Valley. But I think in media, some of these trends, it's not interesting. Like, I don't think we're gonna be a part of a coupon community, but they're really valuable and they're growing and basically people are using 'em in two different ways. So the people that own them and actively manage it and things like that.
+
+But the other part is the people that are trying to influence and get their links into 'em and things like that. So yeah, I just, I was surprised
+
+to 
+
+[00:43:44] Brian: it a big business to like own like a coupon community
+
+[00:43:47] AB: Yeah. 
+
+Yeah, 
+
+[00:43:48] Brian: and people post? Why don't I
+
+[00:43:50] Alex: All right, Brian, just that's, that could be the
+
+[00:43:53] Brian: Pivot is on. Pivot is on. I am pivoting to coupons. Who is? It's John Amato who like Valpak. He like Valpak great business. I want Valpak type business.
+
+[00:44:02] AB: yeah. I mean, as you talk about retroed, it's like getting 
+
+[00:44:05] Troy: Does John, does John know about coupon communities? If he does an ab, that's a perfect banker
+
+entree. 
+
+[00:44:11] AB: Yeah. 
+
+[00:44:11] Troy: a call. If you don't call him, I'm calling him.
+
+[00:44:13] AB: I'm sure you'll, but like as we talk about retroed, it's like just getting back to ad formats that work. You know, like that's, I mean, yes, the Jack Daniels thing in the CBS newsroom is a little bit wonky, but I think that advertisers have always played a critical role in powering media. And so there have been weird evolutions of content, especially with organic traffic before it's now getting cut back where people have tried to make money in other ways, but.
+
+Getting back to in-person events and convening and charging for that, doing better brand placement. And brought to you by, it's like how these, these companies are not gonna compete with Google and meta selling ads programmatically. So the only thing they can do is more monetize the physical
+
+component. 
+
+[00:44:57] Alex: know, you, you gotta be thinking, it's like podcasting Advertising has been pretty retro up to now. Just having the host read out, read out the brand, and having a affiliate code that, that feels like, you know, early fifties kind of soap opera shit. Right? and, and they 
+
+[00:45:12] Brian: Newsletters. I mean, news, news, I'm sorry. Newsletters are total retro. Like, I mean, like this was pamphlet hearing was going on a long time ago and you know, newsletters were always, you know, in financial, they were really Grants interest rate observer, you know, newsletters were a nice business and it, it's another retro format that's come back.
+
+[00:45:34] Alex: Isn't it ironic that like while every kind of technology ad and, and technology company is, is. Pitching us a future that does not exist and might not exist for a while. Like the amount of ads that I see here. And I keep seeing like everybody's using agents, right? So here's what you need to manage your agents.
+
+Like nobody's fucking using agents, I don't know. And meanwhile, 
+
+[00:45:54] Brian: Well, you should have come to Las Vegas and gone to my, my panel about Ag agentic advertising. 
+
+[00:46:00] Alex: Wow. Well, I, I think we're in a world right now where like, people 
+
+are actually. Most people are actually kind of retreating back to things that worked. and we're trying to get pitched all these new things that actually don't work yet, which is interesting. I dunno if there's something there.
+
+[00:46:14] Brian: But is that like partially just the, the appetite for risk in this area is, is just far lower, I think now. And I think, you know, in some ways that leads to curtailed ambitions. Like, I mean, I like SEMA Four four. It has a big ambition. You know, it's not there. That's why I say when they say that the, you know, their competitors are like the FT and the Economist, it's like, not really.
+
+I mean, not now, but I get it. You have to like say that from a brand perspective. But yeah, I don't know. I, I think in some ways it's
+
+[00:46:44] Alex: I wanted to hear abs take on 
+
+[00:46:45] Brian: Oh, good. 
+
+[00:46:46] Troy: well, I wanted a ab did you finish your affiliate summit? Take, did you
+
+see the ai, the AI devices? 
+
+[00:46:52] Brian: thing you saw there? 
+
+[00:46:54] AB: I didn't see anything weird. I think my last take is. The platforms play. The platforms play such a significant role. Like there's a lot of talk about Amazon changing reporting and like that can move a whole industry. So I think it's just, it's scary in a lot of places we play in media, it's really dependent on a couple of partners and how they decide.
+
+And I don't think the interest of Amazon and a lot of this ecosystem of commerce and things like that are not completely aligned and Amazon doesn't really care 'cause they know they're gonna get the traffic anyway. And so. It is pretty wild to, as a company in this space, maybe driving traffic to Amazon for affiliate, that you could wake up one day and your core product doesn't work because they don't offer you the data feed.
+
+So that's top of mind for a lot of people.
+
+[00:47:36] Brian: Meet, meet, meet the new boss. Same as the old boss. I mean, that's this, you never get out of being, you know, at least like downstream of some kind of massive choke point. 
+
+[00:47:47] Troy: You also had a take on on micro dramas, didn't you? Ab
+
+[00:47:51] AB: Yeah. Well, how much have you guys talked about him already? Or not?
+
+[00:47:55] Alex: Oh, we just gla went past them
+
+[00:47:58] AB: Yeah, I mean, I thi
+
+[00:48:00] Alex: yeah, 
+
+[00:48:00] Brian: were you gonna say glazed? That's like 
+
+[00:48:02] Alex: we didn't. Troy. Troy was glazing them, but 
+
+[00:48:05] Brian: you're a glazing. Affiliate marketers. 
+
+[00:48:07] AB: yeah. The first person that brought him up to me was like this. Really well regarded like documentary producer, and he brought it up in the context of like the traditional premium it IP model is completely broken. After COVI, he's like, I would've never thought about exploring this space of micro dramas, but.
+
+Obviously the production budgets are significantly smaller than what a Hollywood movie would be, but I think as we get into this new phase of people's limited attention span, and as you guys mentioned, I don't know how much people know about the micro dramas, but basically you're, you're watching a couple minutes a day and then paying for the next episode the next day.
+
+And so that's why they 
+
+[00:48:43] Brian: S and, and I'm sorry, just to jump in, super popular in China. There's a lot of things that, that are super popular in Asian markets that do not translate to the, the US and European markets, but
+
+[00:48:53] Alex: Those, those apps do chart. Do chart.
+
+Here. 
+
+[00:48:56] AB: And I mean, there's a lot of, there's platforms today popping up to facilitate this micropayment action. But there's like these funny quirk, it's like soap operas, so they have a lot of the same actors. And it's, you guys mentioned the hyperbolic titles. It's like it's meant to cap, it's like going after a segment of like women.
+
+And it's like dramatic. And so they show up every day and watch their couple minutes. Obviously brands are getting into it here because I think it's, it's inter, it is like a hot topic, but over time, I think it's a place where you'll see some of the larger studios start to build out teams and create real ip.
+
+Not super expensive, but you'll actually see more talent flow into it because it's a way to tell a story over time, monetize it, even though it might be 50 cents or a dollar. The cumulative effect over a season, you actually might make more than a subscription bundle. And you have a captive audience and you can move them from one series to the next.
+
+You have similar characters and things like that. So, it's like getting, what's funny is that there's actually a lot of companies from Asia filming in the us and I think a lot of that production talent is then morphing its way into more English 
+
+[00:49:59] Brian: but, but I, is there, I mean, this is a different type of ip, right? Because this, this seems like disposable media, like it's very thin
+
+and 
+
+[00:50:07] Alex: the way to see this, the way, the way to see this is, is, and I, I have, I have a hypothesis on why this, how this thing is working. The model is very much similar to those free online gaming models, right? Like do you think about Monopoly? Go every day? The video game on your phone monopoly. Go. Do you think about it every day?
+
+Do we talk about it like semaphore? We don't, but it just, it, it closes $3 billion a year. Okay. And that is on the backs of 90 people experiencing it for free, which you can with a lot of these micro dramas, right? If you wait long enough, the next episode will pop up for free, right? And then 15% of like people who spent a little bit on it, and then 5% of whales.
+
+And if you can get a business like that, you're not gonna have. Much, if any cultural impact. I mean, you might, you know, I, I think in the came case of Pokemon Go or something like that, they, they, they, they might kind of transcend that, but it's essentially like a casino model where, where you're making a ton of money of people who are, who get completely of the small number of people who get completely addicted to whatever content you have.
+
+So you need to output a lot of content. You're doing a lot of AB testing and it's exactly that same model but now done with media 
+
+[00:51:20] Troy: your model added up to 110%, which is a great business.
+
+[00:51:24] Alex: Oh yeah, that's right. Yes. Did I say 90? Like 80, 15 5. Sorry. That's the
+
+[00:51:28] Troy: Yeah.
+
+[00:51:29] Brian: but it 
+
+[00:51:30] Alex: like, 
+
+[00:51:30] Brian: of gross. I mean, it's 
+
+[00:51:31] AB: I mean, I think that 
+
+that. 
+
+[00:51:32] Brian: extraction.
+
+[00:51:33] Troy: our new company, Alex. 110%.
+
+[00:51:36] AB: Here's the nuances. Like as media companies, you're basically figuring out how to navigate, like what, how am I, how am I gonna pay for consumer attention, right? So Netflix can pay a hundred million dollars for a couple hours of content, or they can pay Pete Davidson and Ad Split and have the same sort of audience.
+
+And so yes, they need some of those tent pull shows, but more and more I think their goal is to figure out ways to just people, to get people to stick to the platform and then monetize that attention. So micro dramas is just another way of like. It's not premium ip, but it's a, it's a way of, of a media company that does production to produce something, pair with advertisers and get people to watch it.
+
+So, and they can view it 
+
+so quickly. Yeah. 
+
+[00:52:17] Alex: they own the distribution. Because once you download the app right, you kind of own the distribution. You're not running through YouTube or whoever needs to do that. Right. So you, you own the entire stack. Yeah. I've got a hard stop. I'm gonna go
+
+[00:52:29] Brian: All right, we'll get onto a good product. We thank you for sticking around as long as you did Alex.
+
+Uh, Okay. This doesn't sound very inspiring to me, the micro dramas I have to admit. But I'm sure it'll be a massive market. It reminds me of vacation when cousin Eddie said, I don't know why they call it hamburger Helper does just fine on its own.
+
+Let's get to good product.
+
+[00:52:47] Troy: Nice.
+
+
+[00:52:47] Good Product
+---
+
+​
+
+[00:52:50] Troy: I'm in California. I used to live here I'm in Southern California north of Los Angeles. I was reminded. Yesterday that California's an extremely good product. And you know, the billionaires that are complaining endlessly that on the All In podcast should, should leave actually.
+
+If they, you know, and hopefully the billionaire tax grab evolves. So the legislation is, if it's gonna go through is, is workable because there's a lot of liquidity problems around it when someone doesn't have actual liquid
+
+wealth and. 
+
+[00:53:25] Brian: on assets. 
+
+[00:53:26] Troy: That's fine. Totally. Yeah. But I was driving down the coast around Santa Barbara, Montecito Ventura yesterday, and, and then up into the mountains.
+
+It's intensely beautiful. The food is amazing and fresh, and they care about it. The bakeries seeming are better. I don't know why. The bakeries are good, they're better. And you know, the weather's incredible. Like, I can't seem to convince my partner, Jillian, that Miami's a good place to hang out. And you know her, Brian, she's,
+
+[00:54:00] Brian: She's not, she's not a Miami. I'm not a Miami person, but
+
+[00:54:02] Troy: But you know, the weather here are like cold nights, gentle, warm days. Piercing winter sunlight. It's beautiful. Mountain hikes and people don't seem super agitated that Minneapolis is under siege. You know, they're just living California living and Scott can get his plastic surgery here in Los Angeles and, you know, you don't have to go to Miami.
+
+So it's, it's really nice being here. and, and, and I also got to see one of my favorite people in Ojai Amanda Hesser. And,
+
+uh, she's been, yeah, she's been writing a lot about this home project she's working on. So I got to see her incredible new home and I
+
+[00:54:44] Brian: Did she talk about, did she talk about the end of food? 52.
+
+[00:54:48] Troy: Well, I, you know, I think 
+
+that's a, that's an, yeah, it's a private conversation. But the uh, I was at the Montecito Country Mart, which is really a phenomenon. I encourage you to go there because it's it's wonderful and weird and, and I think whenever need in your life is met, you go to Montecito Country Mart.
+
+And so it's a lot of plastic surgery, a lot of dogs, a lot of good food, a lot of heavily curated retail. And I met the owner I, you know, hamfisted Lee told him that I, it reminded me of AI because this is what the rich people will do when they don't work anymore. They'll come to his country mart.
+
+And he didn't understand what I was saying, which is not new for me. Anyway, he the other thing I saw there which I thought was very cool in California, was a purple Tesla y, completely rebranded as a Mustang. So all like they put forward where it said Tesla, they put the horse on the front. You know, like on the grill they changed all the emblems on the car and I thought that was funny.
+
+in some AI future, all you have to do is seek out the best, you know, barbecue duck confi with garlic aioli and chicken piccata. So good. So good man. I thought that I was gonna buy that Braille, braille, playboy. I thought that was a funny format, concept. I, I didn't, instead we bought some vintage op shorts. 
+
+[00:56:12] Brian: was a good 
+
+[00:56:14] Troy: yeah, California is, so, it's, so, like right now all the cactuses are blooming and I'm staying on a, at a turtle conservancy. So there's like huge tortoises like out my front door and that's cool.
+
+[00:56:26] Brian: Turtles are fun. They live a long time. That's great. There was something I was, oh, one last thing I just wanted to add for, for the retro thing and maybe it's a good product. We'll just like shoehorn it in, is Gourmet Magazine. Has relaunched as a newsletter. A former colleague of mine, kale Weisman, is involved in this project.
+
+So we're, you know, bringing it back, gourmet shuttered in 2009 in the financial crisis. And they are reviving it as a worker owned co-op. There. It will be a twice a week newsletter, half culture stories, half recipes, all fun and games is how they put it. And they're gonna be sharing some of their profits with contributors.
+
+And I like it. It's, you know, I, I, I'm, I'm in favor of these worker cooperatives. Like, why not?
+
+[00:57:16] AB: It is this. So they got, they basically just figured out that Conde forgot to register the ip, right? And, and just picked it up. It is kind of it, all these media brands have so many. Things just sitting on the shelf that have like domain names and all this awesome content. If this sort of works out, it'd be fun to see more of the media com.
+
+'cause what are they gonna do with these brands? They're not gonna sell 'em, so it could be a fun model to where they hand them out to legitimate writers and teams to actually try to turn 'em back on.
+
+[00:57:45] Troy: Pe-people have been trying to resuscitate the glory days of Ruth Reel at Gourmet for a long
+
+time. The surprising thing is I, I'm assuming to avoid any litigation they. They executed the logo in a way that was basically the opposite of the gourmet logo. Have you seen it?
+
+[00:58:03] Brian: Yeah, the logo's a little crazy.
+
+[00:58:05] Troy: Yeah. So, so it's sort of like we're called gourmet, but we're not that gourmet.
+
+[00:58:10] Brian: It was designed by someone who is an avant-garde trombonist, so.
+
+[00:58:15] Troy: yeah. We're back, Brian. It's a great podcast
+
+[00:58:19] Brian: All right, we're back. Any last thoughts? AB 
+
+[00:58:23] AB: California has, I mean, Troy checked all the boxes, but it has some good rituals too. Like the Sunday car. Yeah, like every town you go to in California always has the Sunday car meetup. 'cause it's like, the cool thing about the west coast is you get up earlier, so like, I'm sure Montecito has it, they always have this like cars and donuts So every time 
+
+[00:58:42] Troy: that, that's so great. I got up 
+
+[00:58:44] AB: yeah.
+
+[00:58:44] Brian: I'm sorry, what is a cars and donuts? What? You just drive to get donuts? What
+
+[00:58:48] AB: No people, people that own their nice cars come and park 'em in the parking lot, buy the donut shop, and like, it's not, it's organized so in each town, but like you, it Rancho NFA has like an awesome one. And so yeah, there are these like fun rituals that just happen to exist in California. I,
+
+[00:59:05] Brian: That's cool. Can I drive my Altima there or is that not welcome? The
+
+Altima's? No. 
+
+[00:59:09] AB: I'll be there 
+
+
+[00:59:09] Outro
+---
+
+[00:59:09] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[00:59:44] Brian: All right guys, let's leave it there. I'm 
+
+gonna wrap it up. 
+

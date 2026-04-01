@@ -1,0 +1,637 @@
+PvA S3E128 P1
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Troy1: Will your lifestyle get better when you move to Hungary? I'm thinking of moving to Hungary except for the,
+
+you know, the government. There's not much but better. Yeah.
+
+[00:00:09] Nick: Who, who, who's Fasc guy?
+
+[00:00:10] Brian1: The isn't Orbin Orin's kind of like, he's like a quasi authoritarian, isn't he?
+
+[00:00:15] Nick: Uhhuh. I mean, I guess you, y'all would know all about that.
+
+​
+
+
+[00:00:19] Intro
+---
+
+[00:00:41] Brian1: All right. Let's get into it. This is a very special edition of people versus algorithms. Alex Schleifer had a hard stop, so he couldn't make it, but we've got Nick Denton.
+
+[00:00:52] Brian2: Who may or may not have just sold his lovely apartment in soho And is moving to Budapest. Nick is the former CEO of Gawker Media founder of that. Probably an iconic, I would say it was like an iconic, that's, that word is overused, but, you know, it was one of the defining, media properties of the last era of digital media. I, I always thought there was, there was Buzzfeed Envy, and then there was Gawker Envy. That a lot of people in the industry had, and I think sometimes, like we lose sight of the fact that, you know, Gawker was early to a lot of
+
+the 
+
+trends that, that were sort of
+
+speed running right now. I mean, it had the authentic 
+
+voices. it.
+
+was a network of niches, had a tech infrastructure that was participatory with, with Kenia, and it moved aggressively into commerce, which is Troy's darling. 
+
+And now, you know, this 
+
+media industry is, has just been swallowed by what we call the information space.
+
+It is basically viral Twitter accounts.
+
+It's, outsiders that have Political agendas. It is openly partisan. It's all kinds of different things. It's both exciting, but it's, also a little bit scary. So wanted to have, have you on 
+
+Nick to talk about all of this Troy, how would you set up this conversation? 
+
+[00:02:08] Troy2: I would set it 
+
+up, in a way 
+
+I'll try to maybe not flatter Nick too much. I remember when I was at Hearst and
+
+David Carey
+
+was a big fan of,
+
+yours. Nick, 
+
+and I think among the executive ranks at
+
+Hearst, there was
+
+great admiration
+
+for what 
+
+what Nick had created at
+
+Gawker. 
+
+And, a desire, even if they didn't really, you know, like that old line,
+
+everybody wants to go to heaven, but no one wants to die. A, a desire to try to kind of find some of the Gawker magic inside of Hearst, which was a.
+
+[00:02:42] Nick: which was a,
+
+[00:02:43] Troy2: You know, a, a, a huge, transformation from,
+
+you know, this kind of deeply paternalistic
+
+print,
+
+sort 
+
+of holding company to, to something that resembled Gawker. But when I met Nick, I remember
+
+coming to the 
+
+Gawker office and talking to you a couple times, Nick, and what I saw was everything that, that I kind of admired in digital media at the time, that I thought was sort of
+
+the right formula where
+
+it clearly you
+
+had.
+
+You know, the aspiration.
+
+to build longstanding media brands.
+
+You had a kind of rabid high metabolism
+
+editorial team, maybe a little too rabid at times.
+
+[00:03:20] Nick: we'll get into 
+
+that. 
+
+[00:03:21] Troy2: Yeah. But, but you know, certainly understood the distribution mechanics of digital media. It's important to 
+
+remember that like, you know, I was 
+
+dealing with with. With editors that had really no 
+
+sense of what it meant to be connected to audience.
+
+So like magazine editors are notorious, notoriously detached from the realities of what it doesn't matter what their audience thinks.
+
+It matters what they think.
+
+and then you had this
+
+analytical system, whether or not that was inspired by Jonah or not, but like that fed them. sort of performance insights and it re resulted in, they 
+
+were big sites, you had big traffic.
+
+The other thing I admired always was you, you seem to find the right balance of
+
+Monetization and audience experience, right? You never did what a
+
+lot of people did, which is sort of
+
+fed the audience to the wolves 
+
+and, and so that was admirable. And then you, you did again, what a lot of the sort of consolidators or 
+
+aggregators or portfolio media companies wanted to do, which is you had a 
+
+single sort of, platform that
+
+was templated. And I Remember at the time having these, like unbelievably
+
+drawn out long arguments about whether
+
+a single system could serve
+
+L and Harper's Bizarre simultaneously,
+
+which is 
+
+just like so 
+
+maddening and so frustrating, such a waste of 
+
+energy. And then every time I talked to you back then, 
+
+You were obsessed with Kenia. Now maybe that was just me reading into it, Nick, but
+
+I saw in that
+
+That 
+
+you 
+
+were a systems thinker
+
+and you
+
+realized that.
+
+like a lot of the aspirations of, of, of a handful of media entrepreneurs that you wanted to find the intersection of
+
+technology 
+
+and media that would give you 
+
+a little bit
+
+more of a moat than, than what the sort of
+
+treadmill of,
+
+digital media would've otherwise
+
+given to you.
+
+And so you, 
+
+wanted to, to 
+
+find a 
+
+way to get. Sort of self-sustaining ecosystem with the audience kind of involved. And community media was always the idea. So I, I fucking loved what you were 
+
+doing. and then I, I gotta tell you, as a guy who sort of faced, 
+
+you,
+
+know, the pressures of cancellation, I guess that's a maybe one way of framing it, 
+
+[00:05:27] Nick: it. Oh, what, what, what, what was yours?
+
+[00:05:29] Troy2: Well, I kind of got 
+
+on the wrong side of the union and stuff at Hearst and, and you know, Ben
+
+Smith kind of went after me in
+
+[00:05:36] Brian2: Oh no, we're not gonna a bit. So, but, but let's not, let's not get into it. 
+
+Well, that's for the second half of the 
+
+program. 
+
+[00:05:42] Troy2: Yeah. 
+
+[00:05:43] Nick: Just to tell you, I, I wasn't even particularly
+
+aware.
+
+[00:05:46] Troy2: Yeah. Yeah. Which I, which I love about it but, but you could have been like, incredibly bitter about the 
+
+Peter Thiel thing. You contextualized that moment to me with grace and 
+
+kind of frame it in a way that I, I don't know. I just love how you think about it 
+
+and 
+
+[00:06:02] Nick: did, he 
+
+did me a 
+
+huge 
+
+favor. 
+
+he did me a favor 
+
+that 
+
+I, I, I'm only now 
+
+beginning to comprehend, what a, what a huge favor he did. he 
+
+did it for me. 
+
+[00:06:12] Troy2: Well, you probably wouldn't have got 140 
+
+million for the company if you sold it when it. to 
+
+sell it. 
+
+[00:06:17] Nick: Well, I mean, I mean, I, I had an alibi for 
+
+selling.
+
+[00:06:20] Troy2: Yeah,
+
+[00:06:21] Nick: You know, if you're founder selling is always 
+
+very difficult because why are you selling?
+
+[00:06:25] Troy2: right, 
+
+[00:06:26] Nick: What, what, what is it 
+
+that you see that other people do not see? and 
+
+so if, if you're actually making a a, a free will choice to 
+
+sell, you're immediately 
+
+in a weaker, in a weaker position, you know, you, you immediately have an explanation to give.
+
+So he, he gave, he gave me a, a pretext, he gave me a, a reason 
+
+to sell. I've, I've said, I've said this before, but I was relieved when gorka.com was 
+
+shut. It, it, it was, it was time. I, I, I wasn't able to do it 
+
+myself. I. I did fire half 
+
+the staff in 2015 and bring it to Heal then. But, but I, but I hadn't 
+
+shut it down. And I probably should have shut it down just, just for sheer business reasons, just because there was Gizmoto 
+
+and Life, er 
+
+and Kotaku and these other incredibly valuable, extremely successful, highly profitable 
+
+sites, that were being dragged down by this, 
+
+political, jihad that was taking place within Gawker And to a lesser extent, Jezebel.
+
+
+
+
+[00:07:29] Future Model For Sustainable Media
+---
+
+[00:07:29] Troy3: Nick, where I was going with this is
+
+interested in if, if, if Gawker to me Sort of represented
+
+all, 
+
+the things that. You know, media shifted from being kind of supply led in the magazine era to being demand led in the internet era,
+
+and it.
+
+meant all the fools rushed in.
+
+So it was endlessly competitive, obviously. 
+
+And you
+
+know what it meant was, I was
+
+I was having breakfast with the magazine editor this morning and she was like, well, you know, the moment you
+
+shifted the business.
+
+from being, you know, what used to be the civility of print to where we all had to kind of grind it out to get audience every day, everything changed and it felt really, really, really relentlessly hard. But if that was,
+
+so, so we, we, you know, everybody that was kind of trying to build stuff and that era wanted
+
+to build,
+
+you know.
+
+the economics, the efficiency, the incentives, the kind of data structure, community involved, all the things that
+
+Represented
+
+g the Gawker moment. And what
+
+I, I'm interested in
+
+is, is is kind of like. Do we ever have a kind of sustainable media system moving forward? I mean, we still read the New York Times and I still read, you know, a lot of, you know, the Atlantic or whatever you're reading, but like, they all feel so fragile right now. And is is there, is there a model, you know, in the future? And, and I think that to me, without asking too broad a question that doesn't
+
+really have an answer to me. There's something happening that, which a lot of people don't see, which I think is built around the idea of audience participation. 
+
+And 
+
+it has to do with really interesting things like prediction markets and AI
+
+and how they're gonna sort of change the way we interact with information and our, and the models we have of assembling people to build audiences is really far from where we end up.
+
+[00:09:26] Nick: WW where, where do you want me to start? With the past or the present?
+
+[00:09:30] Brian2: present and future. We can go back to the past later.
+
+[00:09:33] Troy3: But yeah, with reminding us of, of how the past got us to the fu gets us to.
+
+[00:09:38] Brian2: Yeah.
+
+[00:09:38] Nick: So trying to analyze myself, which is hard. I think I've, I've always seen the, community was the, was the real thing, was the, was the core of the thing. And media is just one of them means by which you draw people of a certain kind. In, into a community. And, and so that the, the original Gorka business, you know, whether it was a talent spotting business or whether it was a media management business with measurement tied very, very closely to comp compensation and a very simple feedback mechanism for riders to, you know, maximize, well, first of all, page views well before buzzfeed, by the way. And then later influenced by Buzzfeed, tied to uniques. So, so there was that side of Gorka. But, but the, I mean, the core, my core interest was always in creating a space for people to discuss and to build upon. Articles to, to make new stuff out of the, out of what was already there, out of the, out of the narrative that was already there. And, and my belief was also that that couldn't just simply be a, an ideological echo chamber, that that was boring. That, that, that was not, that, that wasn't the essence of a good community, a good party, a good event for, for a, for that to be a good event. You needed a mix of people and they needed to be able to discuss stuff and argue, and for that argument to kinda get, rough at times.
+
+But, but for that all to be part of, part of the community. And so, so that was always probably, has always been, my, my focus when it comes to systems design is like, is trying to create an environment in which people are drawn out of common interest. But they're actually able to, to argue and discuss and joke with each other and kind of have, have fun, learn and have fun.
+
+[00:11:29] Troy3: In in those days when you were building Kenia, were you the sort of product inspiration behind that? Were you pushing the teams to build that?
+
+[00:11:38] Nick: Yeah. That, that was all me.
+
+[00:11:40] Troy3: How would you have described Kinia to someone? I guess it's at its most basic, it's a commenting system.
+
+[00:11:45] Nick: Yeah. The, the idea was simply that it was a, it was a com commenting system in which it wasn't a free for all, but it, in which the person who had put up the original comment, the thing that had got gotten the response, or the author of the original article, would have control over which comments they would respond to and which would be displayed prominently. And so, yeah, it's not that different to the way the Twitter comments are organized, except the Twitter comments actually also include all of the, the junk at the end, the stuff that didn't get any replies by the author.
+
+[00:12:18] Brian2: and they were really high quality. They were additive. And this was at a time when, you know, internet comments were, I mean, I compare it to, to entering like a porta-potty. You, you know, you don't look down like there's nothing good on the page when you look down on the comments and Gawker's comments were additive and throughout the, the different properties in Coer 
+
+[00:12:37] Nick: I, I, I, I mean, I was, I probably, I probably started to compromise around 2000 10, 11, 12. but I was a perfectionist, a perfectionist publisher, that I, I, I couldn't stand the idea that there would be, such idiocy on my pages. So I I I, I couldn't bear the idea that we would actually have dumb, dumb comments or, or that the sicker fans would win, or, just the, the pure idiotic trolls. You know, you, you, you, you talked about how, you know, concerned we were about the environment. You, you know, the moment when I kind of gave up emotionally on Gorka, it wasn't, I know the impending trial or the suspicion that Peter Thiel might be behind this legal campaign or the unionization of, of Go Curve, although that didn't help. But it was actually, I think it was the moment when I had to, sign a contract without Brain. I think it was, whatever those junk list junk links. Was it Tabula? Maybe it was Tabula. I can't remember.
+
+[00:13:36] Brian2: They're the big two, although our 
+
+[00:13:38] Nick: I like those guys revolt me and I, I revolted myself, uh, for, for, for, for putting that junk on the page. You know, when, when we had, you know, plenty of interesting discussions to put up there, you know, we, we didn't need to interrupt anybody with a bunch of irrelevant links. But whatever the internet is as it is.
+
+[00:13:59] Troy3: So how does that connect to the future in your mind, Nick? What, how, how do you think about the model for the future? I'm, I.
+
+[00:14:07] Nick: I mean, I, I still think discussion is, is, is where it's all at. I suppose you could include podcasts in that. TWI Twitter gets interesting when, when there's a discussion. There was a little exchange between, was between Matt lazier the center centrist. Economics and political writer, and Joe Lonsdale, who was kind of, kind of part of the teal group.
+
+And there was a thread in which they were, they were basically agreeing a hundred percent that, you know, America was abdicating its empire, its imperial responsibilities. You know, it was allowing the system change to happen without even a fight. Like complete agreement between people who were sort of, at least nominally in opposition to each other. And, and that like, that, that's the kind of thing that you still pretty much only see on on Twitter. So TWI Twitter is still, I think, where the action is, as far as I'm concerned.
+
+[00:14:58] Troy3: Ezra Klein agreeing with, Elon Musk.
+
+[00:15:01] Nick: Uhhuh, there's a, there's a big sway from kind of know right wing social democrat, you know, through to neo reaction.
+
+[00:15:11] Troy3: Well, the whole book abundance is, you guys are right, except don't be assholes about it.
+
+[00:15:16] Nick: And, and they say this after 30 years, after 30 years, they wake up and say, oh, oh, maybe housing is an issue.
+
+You know, or, or, or maybe we need a connected up regional transportation network to bring people from the housing to the jobs, 
+
+[00:15:30] Troy3: or 
+
+maybe our form of government doesn't work, but we, we can make it work.
+
+[00:15:34] Nick: the most pathetic thing ever was seeing Pete Bud, however you pronounce his name, a after the election, talking about lessons learned and where the Democrats go from here and, and saying that, oh yeah, I think Ezra Klein and Mattius had some interesting ideas on Hauser. I mean, no kidding, but, but, but the, but the fact that you're just, just now waking up, you know, after administration, after administration, of overspending and irrelevant wasteful government action, like, and now you're waking up to the abundance agenda, you know, way too late. It is irrelevant.
+
+[00:16:11] Brian2: Yeah, I, I'm interested in like, when you're talking about conversation and it being, you know, on x, you know, it might not be the, the best quality conversation sometimes, but it, it, it happens. Can media, can institutional media, for lack of a better word, serve that role anymore? It seems like the, the sort of abdicated that, I mean a lot of, a lot of properties ab abdicated their, the
+
+[00:16:35] Nick: think, I think the New York Times comment, I think the New York Times comments are meaningful. You know, it's a, it's a, it's a pretty good bellwether for, you know, moderate liberal opinion. The new New York Times comments and, you know, just the, the change in the New York Times comments on, say trans issues. Has been, kind of, kind of remarkable. So, you know, they, you, you can kinda see the Democratic Party mainstream moving on some of these issues if you, if you follow them. But yeah, beyond the New York Times comments, I'm not really sure what true discussion platforms there are.
+
+
+[00:17:09] AI Scenarios
+---
+
+[00:17:09] Troy3: did you talk somewhere, Nick, about your love of using AI to kind of cast scenarios
+
+[00:17:18] Nick: Uhhuh.
+
+[00:17:19] Troy3: Brian, I want to try to connect two thoughts here. 'cause Brian is kind of, of the belief and he said this, the day that it launched that poly market was really future media. Are you, are you familiar with you, you know,
+
+poly market? Right. And,
+
+and that this notion of, you know, the, you know, of
+
+course.
+
+the internet made media two way, and of course we're more engaged when
+
+we get to be, you know, in the cast Right. And comments make us part of it. So it's kind of natural. It's as close as media gets to gaming.
+
+[00:17:53] Nick: right.
+
+No, it's, it's not as close as it can get. Even 
+
+[00:17:56] Troy3: well, it gets closer in prediction markets is my 
+
+point. And it gets closer in sports betting and it, it, it gets closer. I mean, arguably the whole creator economy is a manifestation of that same idea, right. That
+
+we're all part of it. And I was reading with interest, you talking about scenarios I want, is that media
+
+[00:18:19] Nick: Well, lemme just tell you what I do. So I, I trade as, as a thing you see from the bio on my account. I trade stocks, shorts long, typically, 
+
+[00:18:33] Troy3: Did you hit the Tesla short at the right time?
+
+[00:18:36] Nick: One of them at the right time. Two of them are looking at underwater right now, but, there's a lots 
+
+of, a 
+
+[00:18:41] Troy3: hit the apple short too, right?
+
+[00:18:42] Nick: a Uhhuh a lot. There's still a lot to play out.
+
+Look, I do what any business journalist would do. You know, I was with the Financial Times, in the Eastern Europe covering emerging markets, derivatives. Then technology. I was value wag. That's probably the more important part of my biography than being publisher of Gorka. Certainly for my current incarnation.
+
+You know, I, I, I was actually value wag. I wrote Value Wag, in 2007.
+
+It was the summer, 
+
+[00:19:09] Brian2: Like I remember you moved out there 
+
+[00:19:11] Nick: It, it. was about It It was like, I think it was eight months in
+
+total. Without wanting to boast too much, the, when I did it, it, it was on everybody's screen. So, and they were all riding in, you know, with, all of them, you know, Andreson, Musk, the whole dam, cast of characters all riding in with their tips and their arguments and their grievances and all that kinda stuff.
+
+It was very easy, to put oneself in the middle of the information flow. Then, So, electric cars, this is kind of how I came into all this. I, I was kinda, I was into the SU seven, the zmi, SU seven, it looked, it looked cool.
+
+It had a kind of inoffensive Porsche style design. And the specs and the cost were like, it was just like off the charts in terms of where it ca, where it came in, you know, $27,000 for a, like, top of the line kind of Porsche equivalent. 
+
+[00:20:02] Troy3: A super Car? 
+
+[00:20:03] Nick: Well, the ultra is a supercar.
+
+And, and that's a bit more expensive.
+
+That's whatever, 70 to $80,000 in, in China. But, you know, this is a car that is not, not made by cheap labor, but it's made in a, in a completely or very, very highly automated factory. Not even by a car maker, but buy a phone maker, you know, on its first, its first outing in the auto market, and it comes out with, you know, it comes out with this, you know, and then you compare it against Tesla and then you start to do the questions like, you know, okay, that's BYD versus Tesla, Tesla sales in 2030. Let's, let's take conventional wisdom. Sometimes I would starve the AI of information. So I, I would, I would turn off its web search and just have a look at its 2023 knowledge base. I. And just gonna gimme the conventional wisdom on where BYD is going and where Tesla is going in terms of sales. And then you start to drop in little facts, you know, sort of, oh, oops, oops, Roman salute, uh, that's not good for European sales. Germans still a bit sensitive about that one actually. And you know, so you, you drop in these new little bits of information and then you see the projections change. And, you know, when I was getting to a 10 to one ratio of BYD to Tesla, forget about Zami and Neo and all the other Chinese manufacturers, but BYD to Tesla 10, 10 to one in 2030. And then looking at the relative stock prices, which I, I think is now five to one, I was maybe eight to one when I started all this. So you look at that and that looks like the most obvious trade you've ever seen in your, in your entire life. And, and the most argue, most obvious argument that you could ever make, in a financial newspaper. That's, you know, Tesla relative to BYD on a medium term, say five year time horizon, looking, you know, Tesla is extremely overvalued in relation to BYD. 
+
+[00:22:04] Troy3: Or, or 
+
+[00:22:05] Nick: come and argue with me 
+
+[00:22:08] Troy3: the narrative written. Another way. The Chinese inspired collapse of the global car industry creates a Nazi renaissance. As the German automotive industry collapses,
+
+[00:22:20] Nick: Okay, now, now you're running ahead with the story a bit. 
+
+[00:22:23] Troy3: I mean, it's not, it's not that hard to believe.
+
+[00:22:25] Nick: the, my, my story actually has Elon on Mars, that the, that the Chinese are magnanimous enough and wise enough to give America its victories. Give it Greenland, you know, like, let, let, let America take Greenland. It, you know, needs something on the map to show that all this dismantling of empire was actually worth it. You know, let it, let it have its North American bastion, you know, let it take Cuba, you know, it's, it's gonna need, America's gonna need to 
+
+[00:22:51] Troy3: Not Canada, Nick.
+
+[00:22:52] Nick: I, I mean, I, I'm, I'm guessing Canada would be surrounded on three sides by Alaska. Greenland and the mainland United States, so that, that that room for maneuver is gonna be limited. But, but yeah, I'm assuming that they don't occupy Canada. But green Greenland is another matter. Greenland wouldn't be too, too difficult. And then Mars, you know, a wise Chinese leader would let the Americans do as they have done since, like, their ancestors' time. You know, when the, when the going wasn't that good back in your home, consonants on your home planet, you know, you up and you leave, you know, you cross the ocean, you cross into planetary space and go and set up a new civilization, a new branch of humanity spreading forth into the starts.
+
+So, so I, if you wanna go novelistic here, that's, that's the end of my novel, you know, is that humanity does split and the, and the Americans go off into the, into the void, to pursue their own future.
+
+
+[00:23:50] Media is Looking for a Better Business Model
+---
+
+[00:23:50] Brian2: It's possible. So how does this intersect with media? Not, not this part, but like the, what we're talking about with, you know, trading on information because, you know, there was, there's been hints of this, this things like Hunter Brook and media's looking for a better business model. 
+
+Ads have do you, what do you, think a, what do you think an investment is? You know, like, what do you think a stock purchase is like? There's a memo. 
+
+[00:24:11] Nick: There's a memo, and, and the, and the memo goes, you know, here's why BYD will, in our belief, be worth more relative to Tesla in 2030 than the market currently recognizes.
+
+You know, here, here is the argument. Here are the branching counterarguments. Here's the thread, here are the sub threads, the comments if you, if, if you
+
+like. And, and the, the whole thing together makes up a, a tree. It's a knowledge tree. It's an argument tree, an argument tree that the AI is actually pretty good at understanding. You know, it thinks in these terms too. It thinks in, in spatial terms. It sees the argument, you know, as, as some kind of, as, as some kind of network. And so if you allow the argument to be expressed as that kind of, as that kind of network, well, first of all, it is pretty easy visually just to see which narratives look plausible to you.
+
+A human being, an intelligent human being, you know, who's well read, you know, has read The Economist on the Financial Times and, you know, certain select, Twitter accounts for, for long enough. You know, we'll be able to tell what's plausible or not, and that AI will be able to help, and understand the issue better having seen this structured argument. And so my, my theory is that actually there's no real difference between. Media and investing, or to that matter, I mean, the line with software is pretty blurry too. So, so even to, even to talk about a media industry, as, as some kind of distinct thing makes
+
+[00:25:40] Brian2: Yeah, but it's also, it's a better model, right? Like it's a better model than getting people, to webpages to put, 
+
+to put 
+
+ads in 
+
+[00:25:48] Nick: ads in front of. '
+
+[00:25:48] Brian2: cause you're basically,
+
+[00:25:50] Nick: I'm certainly finding it a lot more fun,
+
+[00:25:51] Brian2: but you're basically like, you're, you're injecting a meme, like, and memes like are, are consequential. I like, I've like, they're consequential.
+
+I feel like, as, as to how the, the whatever this media system, if it is a system, how it works, like memes.
+
+[00:26:06] Nick: I mean, I don't know actually, because like the, the, the China, China Hagerman meme, you know, the China will win. In, in the industry. China will win like that, that meme, I mean, it's been going around on the internet a a bit. You know, there's the Xi Jinping meme, you know, do nothing win. You know, there are the cyberpunk cities, there are those memes that go around, you know, now you've got black influencers marveling at high speed trains and, and cities and su sevens, in China.
+
+So you, you have those memes that are, are going around. But in terms of like, you know, who's on the China train, like right now, I'd say it's, me, gls, as of maybe a couple of days ago, Balaji of asin, I mean Ray Dalio obviously for quite a long time. But we're talking about individuals here.
+
+We're not talking about any institutions. You know, the, the, the moment when the Financial Times or the Wall Street Journal or the Economist will. You know, suddenly put their institutional weight behind. An idea is like never, like they, they, they never put themselves out on the line like that as institutions. And which is why, you know, if you really wanna be ahead of the markets, you have to follow individuals rather than institutions
+
+[00:27:19] Brian2: Was Wirecard.
+
+like publicly traded when? When the FT took it down? I mean, that would've been great to trade 
+
+[00:27:26] Nick: trade against.
+
+they came out with some, some apparent discrepancy in the Tesla books, but then maybe walked back from them from that, angle. I mean, they, they're definitely looking, I mean, every, everybody's looking at Tesla now. So, you know, if you're, if you're a business jour, if you're any kind of business journalist in this world, financial journalist, business journalists, industrial journalists, automotive journalists, if you're, if you're anywhere close to any of those fields, like, you know, this is the greatest story there ever was.
+
+You know, like rise up of, out of your slumber like I did, because the, because it doesn't get any better than this. This is, this is absolutely epic and it's playing out, you know, right. On this phone that I'm looking at right here, you know, at the end of this call, I'll just go and I'll switch back into whatever Elon is saying since his emotion last night.
+
+
+[00:28:13] Media is Leaking Power to Individuals
+---
+
+[00:28:13] Brian2: Troy, how does this intersect with how you're looking at, you know, where the media industry in quotes goes because I mean, we talk all the time. It's like media itself has never been more plentiful and more powerful in many ways. Yet at the same time, this sort of institutional media industry is, like Nick 
+
+mentioned, it's leaking power to individuals.
+
+[00:28:32] Troy3: yeah, it makes me think a lot of things. It makes me think that, first of
+
+all, so, so Nick is the equivalent of a high
+
+powered programmer. In the media context, right? And, a high powered programmer doesn't like a lot of distance between their thoughts and the metal of the machine, right?
+
+Like they wanna write assembler code and, and so you go to where the conversation is happening, right? You go down a level in media. That is not to say that you still don't need an interpretive layer on top of Elon Musk and, you know, whoever Matt Glas and all those people to make it understandable to a lot of people.
+
+It's just a smaller business. And I think that, that, that media is, is vitally important. I think a couple things, have, have happened. Is that broadly speaking, I don't think prior to, say two years ago, we ever spent as much time questioning, the veracity of what established media was saying and the amount of interpretation that goes through an ever, through every headline, and therefore the amount of bias in it. And so there, I, I think that there's a healthy sort of like questioning now of the system by which we used to get information. It may be more chaotic, it may lead to like, you know, unfortunate outcomes, but I think it's really important. What it makes me think about as an investor, is that I, for the most part, I think that digital media, and I really, I didn't ever want to admit this before.
+
+I think it's incredibly hard to win. You just can't win the game. Like Jonah couldn't win the game and ultimately Nick never won the game. And because there's no protect, because distribution is,
+
+[00:30:15] Nick: It's, it's the wrong game.
+
+[00:30:16] Troy3: it's, it's the wrong game. Distribution is destiny and you
+
+can't. 
+
+The only way that you can control distribution is if you have the power of network effects and platforms, and those don't really sit alongside, you try to do it with Kja.
+
+They don't sit alongside media particularly well.
+
+[00:30:30] Nick: Look, I, I I think we had it, we had it for a few years. We had it from maybe, maybe 2006 to 2012, before our discussion environments got, got swamped, you know, swamped by Facebook and Twitter. You know, those niche discussion environments. That definitely, definitely worked for a few, a few years there.
+
+So I, so I think we had, we had the, you know, we, we had that mode of power that you need. But, but yeah, it's, it's, it, it is definitely difficult. you know, the, the media skills are so valuable in other fields. I like, like I wonder why everyone's, you know, around there pecking for pennies in the dirt along with the chicken. You know, like it's, it's, it's very demeaning. And a lot of, you know, there are a lot of media people with, with extremely good brains, you know, who are absolutely early to see big system changes. You know, maybe they can't do the most, the most diligent earnings, analysis. So maybe they're not great stock analysts in the, in the traditional sense, but I, I, I don't say much stored by those numbers anyway.
+
+And to the extent that they are meaningful, that, that meaning is priced into the numbers, beforehand. So I think those journalist, journalist skills of kinda understanding who's up, who's down, which Mees are. Pumped up, which, which memes are looking, are looking vulnerable. The, those are skills that are very, very well suited to this current phase of the markets.
+
+[00:31:55] Brian2: So gimme an example that like, sort of brings that home that, someone who uses media but not to like, get people to web pages, to, to put ads and even to pull and operate links in front of them.
+
+[00:32:07] Nick: I mean, okay, lemme tell you, the weekend that I put the Tesla, my big Tesla shorts on, probably prematurely. I should have waited till now. But, but whatever I, I, I felt like I was in a rush. But it was the, I, it was the weekend after Musk had first been restrained After the, after the chainsaw had been transmuted into a. Into a scalpel. I think that was the word that they used. And this was gonna, these were gonna be more delicate cuts, going forward. And he still goes down to Mar Largo. He doesn't, he doesn't get up and go back to his factories, as any self-respecting businessman would. So, but he, he's going down still clinging onto Trump's leg, going down to Mar-a-Lago. You know, he's, he's there trying to get his picture being in frame with the president, at, at the dinner. And, and then through the night, I think it was 3:00 AM I was, I think I was in Europe then. It was, it was 3:00 AM East coast time, Florida time. And he is like tweeting, stuff. White babies, models of white babies on bayonets at some South African. Demonstration, like just pure race, war, race baiting. And, and, and I'm thinking to myself like, he's not going back to those factories. He's not gonna go back to those factories anytime soon. He is completely captured by his audience on x. And, and the reason I know this is because I've seen it myself. I've seen how riders, myself, probably parly too.
+
+I don't think ever
+
+completely. But I've certainly seen how the Gorka riders got absolutely caught up in their audiences, you know, around 20 11, 12, 13, 14, 15, during the peak of lefty Twitter. And I see that happening to mosque now, and there is no easy way out.
+
+
+[00:33:57] Meme Nation & Meme Currency
+---
+
+[00:33:57] Troy3: you talk about memes though, Nick. You called America Meme Nation of the Dollar, a meme currency. What, what What does that 
+
+[00:34:05] Nick: does that mean? 
+
+So I think we all understand that there's a lot of psychology that goes into market prices. Yeah. Now if you just look at the Tesla price since two 30, I dunno what it is this 
+
+morning. Two eight. 
+
+[00:34:15] Troy3: a meme stock too, which is probably true. I.
+
+[00:34:17] Nick: Yeah. People call it a meme stock. And yeah, if you just look at the news, the news has been, you know, the pa, the panels of the cyber trucks are coming off.
+
+The glue doesn't keep them on. It's not forged outta one piece of metal. You know, it's, it is not one piece of metal as I had imagined. You know, it, it's actually, it looks 
+
+kind of 
+
+shoddy. 
+
+[00:34:36] Troy3: decided not to get one,
+
+[00:34:38] Nick: Well, Darius was, Darius was kind of into them, and, and that actually did persuade me that the, teenage though the design might be, it's, it is individual. And when you see it walk running along Crosby Street here in Soho
+
+and, and every single delivery guy, and, you know, like every UPS guy is just ogling this thing and they're all, you know, turning to each other and smiling and laughing and, you know, it's the event of the day for like, you can't hate it. 
+
+[00:35:10] Troy3: Yeah. 
+
+[00:35:10] Nick: I, I, I, I couldn't hate 
+
+[00:35:11] Troy3: People don't voice in Miami, Nick.
+
+They don't look twice in
+
+[00:35:15] Brian2: No
+
+[00:35:15] Nick: Oh no. 
+
+[00:35:16] Brian2: plumbers like have their like decal 
+
+[00:35:18] Nick: detail. our kids have got little toy cyber trucks, you know, like they, they're cool. Like you, you look at the value of Tesla as a car company, it's maybe worth 5% or 10% of, of what it is right now. So the rest of it is, you know, I had the, very, very ambitious projections of robot rollout. And robot car rollout. Robot taxi rollout, or just Musk magic, real life Iron Man. You can't bet against Musk. People have lost so much money betting against Musk. Do you really wanna be one of the people that loses money betting against Musk?
+
+So it is that, it's that kind of magic factor, and that's probably like those two things together. The magic of the numbers and, you know, optimistic forward projections. And then the magic of Musk's aura. Probably they account for nine tenths of the value. So you, you have to look at that as being a meme stock. And then you look at the dollar itself, you know, every single time I go anywhere else, like Hungary or Brazil, I, I'm filled with a sense of panic that I need to get my money out of, out of. Dollars into a place where it can buy a real nice house for $2 million in the middle of Sao Paulo, you know, with a great gym and school and all the amenities you'd ever want of a big, big international city right there at maybe one quarter of the cost of the big American cities. And you know, and you start to look at the US and the dollar itself, you know, the, the whole idea of a re reserve currency is a psychological thing. Reserve currency is the ultimate meme stock. You know, it, it, it, it depends on people's perceptions of the strength of that power behind it. The, the, the, the strength of the military power, the financial power, the, the hidden reserves.
+
+You know, how much gold is there in Fort Knox? Who, who does it belong to? And you know, when you start to question all of that stuff, then things get very scary. Indeed,
+
+[00:37:22] Brian2: But it seems like to me it's like media has moved from being about like acquiring attention, you know, to then translate into money, usually through ads, but to trying to create these memes, like we talked about, abundance, like they created a meme and that's like, that is, that is the currency for influence these days is to be 
+
+[00:37:40] Nick: I, I mean my, I mean my, I think my currency, I mean, I would like to think is a bit, is a bit different. The, you know, like, like a, you know, like journalists through the ages, I believe you, you put out some information in order to get information. You know, so you, you, you, you put, you put out some of the information and the insights that you developed on that information, whether you've done it just through, you know, you through human intuition or through ai, assistant analysis doesn't really matter. But, like you can, you can take that. Information, and you can make, there's no reason why you shouldn't be able to make money out of it, but directly, I, I like, I I don't really understand the, let the, why we're complicating things so much, so much when a traditional journalistic practice of putting out information and getting in information, building on the information that you already have with new information and building up the structure of the argument in your head, looking down every single contingency. I, I don't see why that isn't actually perfect, as a, as a way to analyze the future and potential investments. And I don't understand why journalists are always so incredibly hesitant about acting upon their own insights.
+
+[00:38:56] Troy3: Have you played with this, what's the name of that application where you can follow the trades of the Congress people. Congress people?
+
+[00:39:04] Nick: I, I dunno, but I, I think I made a mistake on the Lockheed Boeing, bakeoff, because I, I, I think the congress, the congress critters were buying Lockheed, the head of the transaction and it was a mistake. And I think, I think I went, I went in alongside them, which was un unwise. 
+

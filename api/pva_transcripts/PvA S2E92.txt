@@ -1,0 +1,843 @@
+PvA S2E92
+===
+
+[00:00:00] Alex: Have you been watching the bear?
+
+[00:00:02] Brian: Is it good 
+
+[00:00:02] Alex: yeah, it's good. I always find it, Interesting because we allow to take themselves so seriously And then you kind of remember that it's just they're cooking food.
+
+[00:00:11] Troy: but couldn't you say that about anyone? I mean, I could say that about designers 
+
+[00:00:15] Alex: I think I think chefs and chef media and cooking media has this kind of Thing of like them being so cool with their tattoos and everything's really serious and they're taking themselves really seriously. And then you remember they're just Putting jus on top of plantain and it's great.
+
+first you have to make the jus.
+
+Sure 
+
+[00:00:32] Brian: that's where the magic is the magic isn't making the zoo
+
+
+[00:00:35] Intro
+---
+
+[00:00:58] Brian: Welcome to People vs. Algorithms, a show about media, technology, and culture. I'm Brian Marcy. I write the Rebooting Newsletter and host the Rebooting Show. If you haven't already, please do check out both of them. I write twice a week about building, economically sustainable and resilient, media businesses.
+
+This podcast helps me figure out those issues. and this week my, co host, Troy Young brought up a very interesting, idea. And the idea was, the question he asked was, you know, what are the characteristics you need to win in the information space? we had a little bit of a fun game, playing this because look, the cost of content creation is near zero.
+
+It is going to zero. And, that's led to what, the New Yorker editor, uh, David Remnick recently called a tidal wave of crap. I'm hopeful that he adapted that from the turn of phrase, tsunami of crap, which, featured on The Rebooting Show, in a conversation with Peter Kafka. So I can't be sure though.
+
+In any case, in any such environment, there are ways to win, right? Look, it helps to play to algorithms. It helps to, put out a ton of volume, but it also helps to be controversial. I mean, this is no time for hamming and hauling. It's a great time to get into fights. it helps to be authoritative or at least present yourself that way.
+
+And it doesn't really matter if you're a VC. If you read up on, Enough and particularly Wikipedia can get you 80 percent of their You too can hold forth on global affairs and all kinds of issues. And above all else, and this is critical. The enduring piece of leverage in the information space remains shamelessness.
+
+we have several others that we discuss. I hope you enjoy this exploration. it was a fun conversation for me. and I invite you to contribute your own by sending a note to bmorrissey@therebooting.Com. And if you like this podcast, please leave it a rating and review on Apple or Spotify or anywhere else that takes such reviews.
+
+
+[00:02:43] Episode start
+---
+
+[00:02:46] Brian: let's start with, you know, we published this episode last week's episode on July 4th strategically. everyone should check it out. It's one of my favorite ones. 
+
+[00:02:56] Troy: You're kidding , I thought it was a train wreck.
+
+[00:02:58] Brian: no, that's why it's one of my favorite ones. But the next day we, we, Troy and I both, I feel like aligned to beat up on Threads.
+
+And then the next day, the anniversary was, and Meta came out and was bragging about how Threads now has 175 million users. It's I don't know, fastest growing app, whatever. this to me
+
+just 
+
+[00:03:19] Troy: in five people that have Instagram were given a Threads account.
+
+[00:03:23] Brian: but this, they say monthly active, this just proves to me that distribution is everything and product is like third or fourth on the list. my takeaway.
+
+[00:03:32] Troy: Were you thinking of setting off a conversation about Threads?
+
+[00:03:36] Brian: Well, I wanted to give Alex a chance to, to, you know, be
+
+like, see, yet again, I was right. You're was quick to our little personal text to defend himself and say, look, look, look how popular Threads is. And then I posted a response from,
+
+Ryan,
+
+[00:03:53] Troy: Ryan, 
+
+[00:03:53] Brian: Ryan Broderick. Yeah. I mean, basically Ryan Broderick said, you know, there's, there's nothing cultural happening on. On threads and that it has, it has big numbers just because it is distribution and that for it to truly break through. He was actually piggybacking off of Taylor Lorenz really in the Washington Post, but in order for it to truly break through, it needs to have its own main characters.
+
+It needs to have its own memes. It needs to have creators and maybe it doesn't. There's lots of different kinds of platforms. So maybe that's just not a
+
+[00:04:28] Alex: don't understand where all that information is coming from. First of all, people use it. I don't know what, I think people are pretty myopic about what they call cultural relevance. Is it like, I mean, the Hawk Tua girl didn't even show up on Twitter, right? So I don't know
+
+[00:04:43] Troy: oh, definitely, she was made on Twitter.
+
+[00:04:45] Brian: Yeah. 
+
+[00:04:46] Alex: I mean, was it, but
+
+[00:04:47] Troy: It was a Twitter 
+
+[00:04:48] Alex: it, wasn't it a TikTok?
+
+[00:04:50] Brian: Yeah. But those
+
+[00:04:51] Troy: starts there, but then it really catches fire on Twitter.
+
+[00:04:54] Alex: Sure. I didn't find out on it on Twitter, but sure. And so I don't understand like what a benchmark for value is, I guess. I guess I don't understand why you guys are so excited about dumping on it and why All
+
+[00:05:07] Troy: Because, Alex, what it does is it creates a nice tension on our podcast between,
+
+[00:05:11] Alex: Right.
+
+but I don't I I mean i'm I the problem with that tension is that it's not it's not very potent because I don't care that much about threads. I just
+
+[00:05:20] Brian: I want you to care a lot about threads. Can 
+
+[00:05:22] Alex: you,
+
+know, I don't I have other things to care about I 
+
+[00:05:27] Brian: you don't wake up in the morning. You're like
+
+grasping for your phone to open threads.
+
+[00:05:32] Alex: Yeah, like I need to create I need to become part of this, this tribe that's pro treads and find the tribe that's like pro X and, and make sure that we get
+
+[00:05:40] Troy: No, we think it's kind of fun. It's if you had an Android. And we would 
+
+[00:05:44] Alex: Oh, okay. 
+
+[00:05:45] Brian: Yeah. That, well, that's what threads is. It's the, it's the Android of these kinds of social communication tools. 
+
+There's nothing wrong with Android and Android is very popular.
+
+[00:05:56] Alex: yeah, yeah. here's, here's the deal. I don't like social media. I don't want to be on it. I have decent amount of followers and it helps me. right now when I need something answered or I need advice, so I need to hire somebody for a job, it's great to have that reach, so I'm maintaining it.
+
+I don't think social media is very interesting at the moment. If the hawk to a girl is kind of like our main,
+
+[00:06:18] Brian: Yeah, well, 
+
+[00:06:20] Alex: event,
+
+[00:06:21] Brian: well, first of all, the Hawk Tua girl, I think that she, she is proving, a very potent media brand. Okay. She's, she's got it all going on. She has, she got us a million followers on Instagram in 10 days. and she's got this video crew following her around. She's, she's creating some true, Some true hashtag content out there.
+
+I, it'll be very interesting to me whether or not she becomes you know, the guy on the skateboard. what was he chugging? Like grape soda,
+
+cranberry
+
+juice. 
+
+[00:06:52] Alex: to dreams, right? Yeah.
+
+[00:06:55] Brian: Or if she can actually make the leap into, becoming, Something a little bit more. and I think what's interesting is she got a lot of attention for the salacious thing that she said, but it seems like her staying power is that she's very relatable and quote unquote, authentic. And I think that is we're in this weird period of time where you can be like, being authentic is, is so prized.
+
+there's so much leverage in that. I mean, you're seeing that kind of like in the presidential election, to be honest with you.
+
+[00:07:27] Alex: Yeah. And I think authentic, we have to be mindful of that. I think what, what's happening as well is that she has some sort of charisma that people are latching on to, right? I think there's a lot of, there are a lot of people who might be authentic that don't have any
+
+[00:07:42] Troy: I don't think it has anything to do with authenticity.
+
+[00:07:44] Brian: I think that we've fallen into this poor person's life, any other real story of this kind of voyeuristic moment that you would find in any kind of reality TV show that is compelling and addictive.
+
+[00:08:00] Troy: And she took that and it started in a kind of sexy moment. So it was like, who is this girl that says things like that? So that's enough to get you started. And then it turns out she's from a small town in Tennessee and she wears a cowboy hat. And, you know, she She's, I guess, authentic in that she's a real life, small town, you know,
+
+[00:08:25] Brian: Yeah, real American, Troy. You should
+
+get out there. and then it's fun, it's fun for a second.
+
+[00:08:32] Troy: To kind of fall into her life, figure out what she's all about. And we can all talk about it, but I mean, what, what does it mean? Authenticity? It's she's not acting. She's not Bella Hadid. She's not some, you know, Instagram concoction. Yeah. She's a real person, but you know, reality TV is about real people and it's been massive for a long time.
+
+It's not, I just don't see it as a moment of, you know, the rise of authenticity. That's not what it is. Yeah. Yeah,
+
+[00:09:01] Brian: Yeah, but I guess when I think about authenticity,I'll go into the politics thing. Trump comes across, he presents as authentic to,the audience. whether he's authentic or not, it doesn't really matter, really. and the old political playbook of being very polished and repeating the the applause lines, it doesn't work anymore.
+
+And it seems pretty clear that we're in this moment and culturally that being perceived as authentic has tremendous leverage. 
+
+[00:09:36] Alex: Thanks for watching! And I think it's kind of feeling comfortable enough in your own body so you can say stuff that other people might think, but they would feel embarrassed saying. And then if you have Some sort of charisma on top of that which both trump and this woman have There can be longevity in this.
+
+Oh, you said something that made us all a little uncomfortable But maybe we all thought it
+
+[00:09:58] Troy: I think it's that, Alex, and I think it has to happen at the right time, and the timing on this is important because kind of attractive young white girl said something sexy at a time when we're pushing back kind of notions of wokeness. And so she kind of opened up a lane for people to say, hey, look, that's funny, we can joke about like dirty sex stuff again. And at the same, and then we, we, we wanted to know more about this person. And I think, I think that's why this started.
+
+[00:10:30] Brian: Hmm. 
+
+[00:10:30] Alex: yeah, yeah, i'm with you on that I think it was a right moment in time I I think the fact that she felt likable and that she was unapologetic made people feel good and that's
+
+[00:10:43] Troy: Yeah. And it gets around. Cause you can say haktu at a party and you get a snicker
+
+[00:10:47] Alex: Yeah.
+
+[00:10:48] Troy: people are like, Oh, I'm on the internet. Oh, I know what that is. ha
+
+[00:10:52] Alex: how long till, till it's My son was intense that I even knew what it was.
+
+[00:10:56] Brian: He was incensed.
+
+[00:10:58] Troy: He was like, how do you know what's going on on the internet?
+
+[00:11:00] Alex: because have you listened to our podcast?
+
+[00:11:02] Brian: I mean, 
+
+[00:11:05] Alex: this is all we talk about. I mean, I do think that there is a, cultural shift happening where people, want to feel a little bit more comfortable about what they're saying and that's fine. You know, I don't know.
+
+[00:11:17] Brian: Right. I also want to discuss this, David Remnick, interview and El Pais. and, you know, he was, he was talking about the position that traditional media, occupies. And I think that's, that's something that, that keeps coming up, right? It's what is the, what is the role it's going to play?
+
+And I think the New Yorkers is, is really actually a really interesting example of, I mean, it's part, it's part of Condé Nast and it's, It's this the work that that the New Yorker does is good is is already a luxury good, right? And that's why the subscription model works, ideal for them. And I think when you see what's going on on Facebook with all of the A.
+
+I slop that has overtaken it. and you see what is coming with the, The
+
+costs of content creation go to zero. It's pretty clear that there is going to be a lean for well researched, well written, well produced content, that I just do not see being auto generated by machines. And I think, I feel like we get it caught into this trap of, of sort
+
+of 
+
+mean, I've been pretty consistent on this. I would have to say. First of all, David, David Remnick wrote a piece as well in the New Yorker. He's a terrific writer.he's scary smart. His whole staff must be super intimidated.
+
+[00:12:36] Troy: of course, is what I would say. Yeah, of course. I mean, first of all, I would ask you when you say that Facebook is being overtaken by a I slop. I have. Do you know that, by the way? have you or is that something you read on Twitter
+
+[00:12:51] Brian: I don't go, I have to admit,
+
+I don't I don't go, I don't go, I don't go on Facebook. I
+
+[00:12:55] Troy: go on Facebook and it's not overtaken by
+
+[00:12:57] Brian: what's going on on Facebook?
+
+[00:12:59] Troy: I don't know. My cousins are doing shit. And there's those Facebook stalwarts that are always there. And you know, it's like Facebook.
+
+[00:13:08] Brian: Is it fun?
+
+[00:13:09] Troy: No, I only do it when I want to feel badly or I'm, but I, I get, sometimes I get notifications and I look at a Facebook for two minutes and then I'm like, I'm done.but I don't see. I don't see it being overtaken. And I do actually see it with the community, you know, people from my past, people from my hometown and stuff like that, like it's, it's well used. Like Facebook to me is still a vital social network. I don't think it's a news environment. Like it was Brian, go on your Facebook feed,
+
+[00:13:43] Brian: All right, I'm going
+
+on.
+
+[00:13:44] Troy: but that's not your point. Your point is that there, that, that AI will never replace premium media. Of course it won't. I don't, I agree with you a 
+
+[00:13:54] Brian: I'm trying, I'm trying, I'm trying to get on Facebook, 
+
+[00:13:56] Alex: I think there's, there's two, there's two things there. first of all, Facebook is overrun with AI stuff. Like I just ran through my feed and 30 percent or maybe 20 percent of the photos that popped up was AI. One was this AI generated girl, one image, which was this,
+
+[00:14:14] Troy: who put up an image of an AI generated girl? So a friend of yours?
+
+[00:14:17] Alex: it's, one is called Amrutan fruits and vegetables.and it shows a picture of this What looks like a nine foot tall? 1200 pound guy covered in rupees Walking around a city in india and then the text goes the founding of mercedes Benz dates back to 1926 when carl's benz. So it just talks about the founding of mercedes benz and it has 44 000 reactions 1.
+
+4 000 comments. Let's go read the comments When it will burst, please inform. The younger generation will think this is real. Money is there in the stomach. Amen, amen, amen, amen. Thank
+
+[00:14:55] Troy: Yeah, I, maybe you clean up your feet a bit, maybe, you know, take some
+
+[00:14:59] Brian: Yeah, 
+
+[00:15:00] Alex: that's not my job. Just, they should clean up my feed. Why is
+
+[00:15:03] Brian: I don't know who all these people are. Who 
+
+[00:15:05] Alex: don't even get why I'm getting this.
+
+[00:15:07] Brian: No, mine isn't AI Slap, it's strangers. I don't know 
+
+who these 
+
+[00:15:10] Alex: Yeah. mine is a bunch of strangers. There's Keanu Reeves holding up a t shirt with Native American says, that's saying, we are the ones who should have built the wall. I mean, it's all, it's, it's ridiculous. It's, it's, and it's not going to get 
+
+[00:15:23] Troy: I'll tell you what I do see. I see a lot of sort of Instagram esque advertising.I see Gary V. see a bunch, I won't even mention their names, people from my town or people from, that are always on Facebook. You know, 
+
+[00:15:36] Brian: then on Facebook. Find Troy there, add him, poke him, post on
+
+us. 
+
+[00:15:44] Alex: there's an AI generated photo of this woman sleeping on the street, with seven babies, and underneath her is a pile of money. And the person goes, why don't pictures like this ever trend? And it's got 16, 000 reactions. Yeah, no.
+
+Facebook is a healthy, you
+
+know what, you know what I understand why you use Facebook, actually .
+
+It's It's amazing.
+
+[00:16:14] Brian: speaking of AI, before we get to the main thing, which is going to be about podcasting, I promise. did you guys read this, Goldman Sachs report? It got a lot of, got a lot of play. it was very bearish. Well, a lot of the people they interviewed were very bearish about Goldman Sachs hedged a bit.
+
+And the basic gist of it that I got is that they spent a trillion dollars, on CapEx, which is basically laying all the, basically in the picks and shovels phase. you know,
+
+you've 
+
+[00:16:42] Alex: all the fiber
+
+[00:16:43] Brian: Yeah, you gotta, you gotta invest in data centers, the chips, AI infrastructure. Now, it's been great for NVIDIA.
+
+NVIDIA's done, you know, crazy well. It's been great for consultancies. What it hasn't been great for is productivity. And, return, which I think in, in, you know, in these economies, you need to do that. so the way Goldman Sachs,let's see what they have is that for the 1 trillion estimated costs of developing and running AI technology, it must be able to solve complex problems, which its head of, global equity research, Jim Covella says it simply isn't built to do.
+
+in his book. His estimation. And so they one of the people they interview. I'm going to screw up. His name is Darren Osama glue from M. I. T. and he he sees all this a investment leading to all of 0. 5 percent increase in productivity and a 1 percent increase in GDP in the next 10 years. so we in the are we firmly in the trough of disillusionment of the hype cycle.
+
+[00:17:48] Alex: I mean, we're in the trough of like, where people are splitting into factions with different opinions. It's, it's hard for me to, you know, if you, if you look at the problem as it needs to be able to solve complex problem, if you look at the challenge like this,Then, yeah, we might be further away because it's also hard to define what the complex problem is.
+
+But I actually think that the world is riddled, riddled with relatively simple problems that need to be solved and that can be deeply impacted by AI. I was trying to Sign up, with verizon yesterday and I was on a chat room with real people that kept disconnecting or forgetting what I was asking them or changing the price on me and I felt like I could I would have already been a customer in in five minutes rather than spending 45 minutes on that.
+
+So I think that many many corporations have A lot of very easy paths to optimization is if they invent properly. The problem is that integration will take time. They have old systems, they have, old structures, you know, teams, you know, with managers that don't particularly want to downsize. and so it's going to take a long time for these companies to optimize.
+
+But I think there's a ton of, productivity gains. I mean, it's not going to be
+
+[00:19:03] Brian: So, I don't know, a trillion dollars to eliminate call centers? Hmm.
+
+[00:19:07] Alex: One thing is improving what we have. The other is the inventions of the invention of things that we, do not know about yet.
+
+[00:19:14] Troy: Well, the, the number one thing to start is the reduction costs is increasing efficiency, for sure. And if you, look at, for example, early days of the internet, you know, something like email, broad adoption of email was, you know, kind of radically efficient. as was, I would argue, e commerce or direct connections to companies to get, you know, not just products but services. And then on top of that, everything that started to kind of fall out of that innovation when we got, you know, GPS, mobility, all of these things made, you know, all kinds of, you know, life enhancing services possible. I think that A. I. Clearly is remarkable, but I think you have to kind of break it down on one level.
+
+It's just fancy interface to things. If interface is like an on off button or something to calibrate something or get something, A. I. Gives essentially interface infinite possibility and changes the way we use machines. But that is maybe sort of In the case of a call center, that's deep interface right into a company.
+
+And, clearly we're, we're, we're not there yet judging from Alex's anecdote, but the, you know, I, I don't, I don't think that's radical. I think it's going to be baked into how we do things. As a new type of technology or interface layer, but it's not radical. I think the radical parts of it are probably what you'll see in things like complex modeling in drug research that enable the discovery and modeling of proteins and things that allow you to do drug development far more efficiently than we've ever done.
+
+[00:20:56] Brian: it can't do basic shit, like why is
+
+it gonna like cure cancer? 
+
+[00:21:00] Troy: I was saying that interface on certain types of information, like evergreen content is really useful. If I ask the AI, like some, you know, perfunctory question about a historical timeline or how to use a word or how to condense a piece of content or summarize a piece of content.
+
+And I think the applications in education extending from something like that are really important. And and probably efficiency creating. I just think that like we always do. We thought at the beginning, it's like crypto is going to change like the Federal Reserve or eliminate banks. No, it's not. And I think there's an analogy here.
+
+I think that There's still going to be media. There's still going to be premium media. There's still going to be Google. There's still going to be websites. There's still going to be all these things. And I, I, and then lastly, all I'll say is that anytime I've seen a new technology, the profound effects take minimum of five years.
+
+[00:22:02] Brian: Okay. 
+
+[00:22:02] Alex: I think that a challenge right now is that we're seeing a lot of the input. into AI, Nvidia stock price, you know, the massive valuations these companies are getting, the money people are spending on those models. And the output is, oftentimes just seen as a parlor trick as like something that Microsoft adds to a tool, et cetera.
+
+so first of all, there's a lot of like really. Simpler challenges like, like a call center that will absolutely save companies lots, lots of money. But then what, what Troy is talking about, the medical stuff, could be things that we consider as deterministic problems, right?
+
+so AI is not great at non deterministic things. for example, if you're driving a car, there's all these kind of chaotic moments that can happen. And they could kind of. Confused the model because it's never happened before. And so that's really hard to solve, but you know, what's much easier to solve programming, programming, you have a thing, you're telling it to do a thing.
+
+You can ask it to test itself, to test its output, to test its performance. And that's why, AI can be really good at, at programming. and yesterday, for example, I was in preparation for this. I was testing out cloud 3. 5 sonnet, which has been told is really good for programming. And I programmed a pretty complex web based tool without coding.
+
+I built it. And it works. 
+
+[00:23:25] Troy: What does it do?
+
+[00:23:26] Alex: It's it simulates a terminal window, you know, like when you type like when you open like your terminal windows or dos I wanted to simulate that in a website and have have it play a little game of a little Text adventure game like in the old days, but do it that and do that in the browser, right?
+
+It's it's a relatively Complex thing that would have taken me a couple of weeks to make and in 25 minutes I had this thing up and I think that You you need to start looking at like, well, what are these deterministic problems that you could ask AI to solve? If you can, for example, connect AI to a wet lab and it can test out all these different compounds, then you start making these problems much more deterministic.
+
+Hey, if this thing reacts like this to that, then we're solving something. And so, you know, you, you can't look at all the things that AI is doing today. And I think it's wrong that we've been calling it artificial intelligence, making it sound like it's a, it has really broad,
+
+[00:24:21] Troy: Maybe one of the reasons I'm challenging it so hard, Brian, Alex is because. We treated it like it was the end of the internet.
+
+[00:24:30] Alex: I still think it's the end of the internet,
+
+[00:24:31] Troy: Well, that's put some, put a time frame on it. You can't make those. Well, actually you can. That's the smart way to do it. Make an Atlantis prediction. Just don't put a timeline.
+
+it was the end of search, the end of Google, the end of websites, the end of social media put like whatever, you know, open AI was going to take out Google, all the kids, this crazy talk. And so that's why I'm reacting because you've known I've been pretty consistent. That I think that the change is going to be far less severe than people have, hypothesized.
+
+[00:25:03] Brian: Yeah, well, this is your time to shine. Because I think we're entering into.
+
+It always enters into this phase where people are disillusioned. That's, that's why it's the hype cycle. Now some, some technologies stay there. I think crypto, for the most part, Web3. I mean, I live through DeFi summer 2021.
+
+[00:25:23] Troy: You got me into crypto.
+
+[00:25:24] Brian: You know, it's the opposite way around. I remember that. You were like, you must take this seriously because I started making snarky jokes about it. It's worked out. I'm up. It's fine. just some Bitcoin, Ethereum. 
+
+[00:25:36] Alex: I don't see how you can give the world the tools to create an infinite amount of content. A lot of it texts, but also audio video. And not see industries based entirely on surfacing content, content be hugely impacted by it.
+
+[00:25:53] Troy: we can definitely use a computer to create an infinite amount of irrelevant content.
+
+[00:25:58] Brian: Yeah, for sure.
+
+[00:25:59] Alex: I think the Okay, so let's just point back to your example from Facebook, where you were befuddled by the woman with the children on the ground.
+
+yes,
+
+[00:26:08] Troy: last month, or five years ago, that would have been some kind of cat meme. The world hasn't changed.
+
+[00:26:14] Alex: I think there is a different, scale. There's a different scale to this, and there's a, a different, Relationship with reality, right?
+
+[00:26:22] Brian: Well, I think the big question ends up being, it comes down to money, right? there's a trillion dollars
+
+that 
+
+got directed. Yeah. 
+
+[00:26:28] Troy: Let's not accept things to be, just because you think them, it doesn't mean they're true. Because we think that, that, that Facebook is flooded with AI and it's changing poor suckers minds, because they're all fucking idiots, it doesn't mean that it's true, 
+
+[00:26:46] Alex: I never say it's changing people's minds. I say
+
+[00:26:49] Troy: Well, that's, you know, because disinformation is flooding the internet and we are suddenly electing lunatics all over the world and it's changing the way that we think because everybody's being lied to.
+
+Is that true? I don't know that it's 
+
+[00:27:06] Brian: I don't know. I mean, I was, I was listening to a podcast about this the other day with, Bill Maher. And, Sam Harris. and I think they made a lot of assumptions with that. And they were like, yeah, this is like a crazy time. what would you, polarization, politics and, and Bill Maher is like social media.
+
+I'm like, really? I don't know if social media is really to, to blame. I, I, the studies I see, it's, it's not, not the case, but maybe. And I don't, I don't think AI is any different, right?
+
+[00:27:38] Alex: sure. I don't know how you're framing the argument.
+
+[00:27:40] Troy: have manufactured messages. People have lied to us. People have used media to present their version of reality in some shape or form for decades
+
+[00:27:50] Brian: Well, the thing that I found interesting after the debate, I don't want to get into the politics stuff, but like after Biden's disastrous debate, I thought it was like, it was shocking to me. That anyone would be shocked and I felt like there was always this this thing where we always a lot Me, I would just say as a representative of the media would focus on the sort of right wing echo chambers But you would have to be in like a serious msnbc Like vortex to have been shocked that an 81 year old clearly declining guy had a cognitive issues during a really high stress event.
+
+Like I, I just, that, that was the most shocking thing to me.
+
+[00:28:33] Alex: I think the challenge is that Everyone was being told like Things like oh, you know, I just had a three hour meeting with him a sharper than a 25 year old then 
+
+[00:28:43] Brian: But who bought that? 
+
+[00:28:44] Alex: Well, I mean, I think people started the people who believed it said, okay. Well, you know, all right, maybe that's true Maybe that's true.
+
+And then when he came on stage everybody go everybody realized that oh, no, we were right. That is insane This is elder abuse, you know, 
+
+[00:29:00] Brian: but I think people will believe what they want to believe. Like we can't blame the algorithms for that. Like people want to believe things because their motivations oftentimes are not quote unquote, the truth.
+
+[00:29:14] Alex: I mean, here's what algorithms are good at, right? I mean, People are biased towards believing things that they feel is right and algorithms are biased at showing them things that they that they like. So what algorithms, algorithms do is that at scale, at scale, they amplify people's biases and what they believe. And therefore, it means that people can Really use and abuse these things to kind of, you know, disseminate, like, certain types of truth. I think we can say, well, people have been lying to us since the big dawn of time. But never at that scale. I, I, I don't think, I think it's always like this, this false equivalency, or this always happened.
+
+The, the issue has always been the scale. It's not that this is entirely new. You know, and, we can't deny the scale of these things and the ability for people to create so much fake content that it'll just entrench people more, right? I don't know. The thing with people being shocked about Biden was that they actually trusted people where people were telling them the truth and they found out no, they're not.
+
+And all, maybe all these memes were correct about Biden, Biden being seen now. Don't you agree?
+
+[00:30:20] Troy: Well, I sort of think that it's like this, Daddy's a drunk. And we, our family always knew it but we kept the secret because we felt shame. And because, we thought the kids at school would use it against us. And, because Daddy hits us when we tell other people that he's a drunk. and the Republicans obviously used, Biden's similarity against him in, in, sundry evil ways.
+
+And so it became a third rail item. And, it just became a thing where the incentive was never to sort of let the secret out because that was career limiting. And so I, I don't really think it was a career. As much a conspiracy theory as it was, daddy's a drunk and we just didn't tell the world and our incentives were to not do it.
+
+And then we made the mistake of saying he has good days and bad days and we'll prop them up on a day. And we'll, you know, we've largely contained exposure to Biden and we will, we will expose him during the debate and he'll be fine. He'll be fine. He'll seem like a nice old guy. And it got away from the Dems.
+
+[00:31:31] Brian: Yes. Well, I will also say this. This is a great, to me, this, this is a great example of why it's good to have a balanced media diet. That, and any balanced diet involves Cheetos too, right? And that's where X comes in. yeah, you don't want to subsist on, you know, Cheetos, but every now and again, you got to have some Cheetos.
+
+And so you head on over, right? To x and i've started to get like it's junk food and junk food is very popular but you do find out things and I think this is part of my sort of information space theory that If you don't, expose yourself to a lot of different sources, some of which are going to be biased, and I think that was part of the issue, was that a lot of the people pushing this, that what turned out to be looking like a fairly accurate notion that, Biden has had, some severe cognitive decline, that they had ulterior motives, and of course they did.
+
+Of course they did. Doesn't mean they were wrong, and I think in, in this case, it is a case for a diverse information ecosystem that,
+
+[00:32:39] Troy: Yeah. You know what it makes me think, Brian? It, one of the things is that, and we know that Trump saw this, I think before others is that in the information space, hyperbole is really useful. Extreme points of view are really useful. Conspiracy theories are really useful because they cut through a otherwise, you know, kind of dense fog of just sameness.
+
+and even if at least people react it's kind of like you set a bomb off and then kind of people scramble and they reconfigure. and I just think that it's a, it's, it's, it's a kind of new language and it requires, it does require a certain level of media literacy.
+
+The thing that freaks me out most about the Biden thing is I tuned into it. I'm like. Let's watch it, son. This is the super bowl of debates. And, he's like, okay, let's watch it. And we turn it on. And after 10 minutes, he left the room. He's like, this is absolutely unbearable. This is all. And you know what?
+
+His reaction was a little knee jerk. It was like, this is all just bullshit. And that's tragic
+
+[00:33:42] Brian: wait. How old's your son again?
+
+[00:33:44] Troy: he's 23 and,
+
+[00:33:45] Brian: yeah.
+
+[00:33:46] Troy: and him reacting to, you know, American politics in that way, I find discouraging. you know, we're, we're meant to put forward people that you can look up to, you 
+
+[00:33:57] Alex: Oh man, we're far from that at the moment. We, we, we're trying to put up people that stand up, you know, stay up like right now. This is, I
+
+[00:34:08] Brian: be the end of the gerontocracy. this is it. This is it. We gotta, we gotta get people in there. I've decided the perfect age for president is mid forties to mid fifties. I think you start to lose your
+
+[00:34:20] Troy: but Brian, it's worth you writing this up though, if you ever have the energy, which is the new rules of the information space.
+
+[00:34:27] Brian: Okay, I like that. I like an assignment.
+
+[00:34:29] Troy: and, and I think that you could, you could start to distill them down because there are always rules in media. Right. And there were rules before Google rules after Google rules before social media.
+
+[00:34:40] Brian: And now Wait, wait, let's, let's, let's do this here. I, I don't have to do the work. I'll just fill it in like AI.so, one of the rules I think that you just came up with is that you got to have a hook. You got to have a, it's better to be divisive and have it, well, how would you frame it? The, the conspiracy theory? 
+
+[00:34:58] Troy: that, attention is the starting point.
+
+[00:35:00] Brian: Okay,
+
+[00:35:01] Troy: So you do what it takes to get attention
+
+[00:35:03] Brian: Yeah, that's true. Cause I think the algorithms, and the algorithms will push you to, to extremes because they want
+
+[00:35:11] Troy: Yes, 
+
+right. And that, you know, the sort of hock to a rule is that shamelessness is rewarded. Obviously, Trump is the pinnacle of that. which means that there is no sort of like the sort of old rules of kind of gentlemanly conduct or whatever the the right framing is for that are sort out the window.
+
+[00:35:30] Alex: think a third rule is like flood the zone, you know, just, just, just don't stop. It used to be like, you know, pace yourself, right?
+
+[00:35:40] Brian: Yeah, it used to be an Instagram rule, you don't post more than twice a day. And all 
+
+[00:35:44] Troy: Yeah, there's another really important rule is that entertainment wins and that's 
+
+related to the first rule. Like if you want to get, you know, if you want to get them, make them laugh.
+
+[00:35:54] Brian: Well, that's the best idea that I saw about, they need to turn this, I mean, Biden's not going to be the nominee. I just don't believe it. they need to turn this into a reality show. The only way that they can compete is to have some kind of national reality show, like thing where they reveal the new nominee and there's a plan out there, Semaphore had it for them to like, have a big reveal and, They're gonna bring Barack out, and Bill, and, and, and maybe Joe, and then they're gonna like, you know, have the candidate reveal, after like a national primary. I like it. I, I like it. do it, do it like a talent show.
+
+All right, do we have any other rules?
+
+[00:36:35] Troy: got to be more.
+
+[00:36:36] Brian: Well, I think one is I want to get at is, and I understand this, you got to finesse this, but it's around presenting as authentic because you, authoritativeness is viewed suspiciously. Experts have been, have been, are now often, particularly in the information space, are treated with, with suspicion.
+
+think back to the pandemic, I would not have thought that Anthony Fauci would be some villain in, in, in large corners of the information space. It's just like, remarkable. 
+
+[00:37:07] Troy: Maybe another rule might be you want to playbook, see late night TV.
+
+[00:37:12] Brian: explain that.
+
+[00:37:13] Troy: Well, it's just like, you know, people hawking stuff. Like it's, it's really related to the shamelessness point. And it's just that it's crude. And it's, it rewards, execution above, above all else, like just getting out there.
+
+[00:37:29] Brian: Oh yeah, relentlessness too. I mean, it's I think like the perfect media brand out of this is Is Barstow, right? I mean, Portnoy's a genius with making, with the drama and he's always had this,
+
+[00:37:43] Alex: Yeah, I think that's why that's why we talk about entertainment winning. But I wonder if one of the rules should be like, you either need to have an enemy or be the enemy, like 
+
+[00:37:54] Troy: that's a great one. Yeah, yeah, yeah. There needs to be an us in them.
+
+[00:37:57] Brian: yeah, and if you have to turn heel, turn heel, if you gotta do it, if you're gonna, if you're gonna win in the information space, you gotta be all in. And if it calls 
+
+[00:38:05] Alex: I think it's, I call that strong beliefs loosely held.
+
+[00:38:09] Brian: well, it's like wrestlers, they weren't precious about it. it's at some point in their career, they, they sat down like Hulk Hogan and were like, you're going to become a bad dude. you know, they were playing the Star Spangled Banner and you were the one who was like, you know, USA, USA, no, you're a bad
+
+[00:38:24] Troy: Again, related, truth can never constrain what you do.
+
+[00:38:27] Brian: I like that. Yeah, truth is the ultimate friction. That, that, you gotta get rid of that.
+
+[00:38:32] Troy: Oh, well, that was a nice little unexpected.
+
+[00:38:34] Alex: All one last one. I think pretty potent. It's like repetition, repetition, repetition.
+
+[00:38:40] Troy: 100%. I think that like I wrote, I think like a couple years ago about this, that to build a brand, you have to really think about like a political campaign. And in political campaigns, you repeat things all the time. And that's what Trump did with build the wall, build the wall, build the wall. And you're constantly repeating things because people are, There's so many things going on I think a lot about like, how do you, how do you have little catchphrases and slogans that you try to Yeah, there's another one, guys, sort of, again, related, which is, you have to define your position sharply or they will define you. and I think that my example there would be Kamala Harris, where if you listen to her prosecute an argument, like a prosecutor, she was one, and lay it out, it's, it can be very compelling.
+
+She's really smart. And she was, you know, kind of sort of raised as a, as, you know, a thinker and someone who presented sharp, thoughtful arguments. But when that, when the platform moved and you needed to become something that felt more like amorphous and celebrity like as the vice president, someone that was defined by a broad vision, or, had to create a platform as opposed to just kind of prosecuting an argument.
+
+I think that was a big shift for her.
+
+and and I think that that kind of space is where Trump does extremely well. It just creates this kind of narrative around himself, unconstrained.
+
+[00:40:12] Brian: did you see the Kamala Harris meme?
+
+[00:40:14] Troy: The coconut tree.
+
+[00:40:15] Brian: the coconut tree, is
+
+[00:40:17] Alex: know. I never understood it. What is it about?
+
+[00:40:19] Brian: she, she said her mom used to say to her, you think you just fell out of a coconut tree.And then she, she has a trademark, laugh,
+
+[00:40:28] Alex: is very, 
+
+[00:40:28] Brian: which I think can be, I think it can be good. I think, I think she could actually make this, 
+
+make this 
+
+[00:40:33] Alex: I think one of the issues that we're not getting, she's obviously very smart, but she's not charismatic. I don't. And I like it feels like here as well, like people keep looking at charisma. and then you actually see a lot of on both sides, right? the left and the right.
+
+Some of these younger politicians that are getting a lot of light and light. They found some sort of way to use their charisma to get attention. And that includes like, you know, psychopaths like Bobert and folks like that. I think there's something there, you know.
+
+[00:41:05] Brian: Yeah. 
+
+[00:41:05] Alex: And when you don't have that, it's kind of hard.
+
+You know, shamelessness, charisma. that's what can turn you into a little bit of a bully and have other people rally behind you and, I'm, I'm worried that some of these folks don't have it.
+
+[00:41:17] Brian: Her catchphrase is we have the ability to see what can be unburdened by what has been. It's been roundly memed and, and kind of mocked, but I think it's it's better to get
+
+attention. 
+
+[00:41:27] Alex: it makes you squint a little bit.
+
+[00:41:29] Brian: I mean, it's kind of think, I think, 
+
+[00:41:32] Alex: but it doesn't feel authentic, does it?
+
+[00:41:34] Brian: No, this is the problem, I think, with a lot of these, you know, Trump, I think, is the, the ultimate, he's an orthogonal challenger, you know, and I don't think the political class has figured that out.
+
+[00:41:46] Alex: I think Biden was authentic. I think he's just too old, but I, you know, when Biden would slip up and say, whatever, you know, he'd be 
+
+like, 
+
+Yeah, I mean, he'd be fine. He'd be fine. He'd find like, he'd be like just this old dude that like has his quirks But as he is truly himself I think the problem now is that like he can't set string a sentence together and 
+
+[00:42:05] Brian: But even then, it's like morals of an alley cat. Now I'm going to repeat the, the, the, you know, there are, there's all these one liners for debates that then get repeated at the, the, you know, in the rallies afterwards. and I think that's just, I think in general communication is, is just changing. 
+
+[00:42:24] Alex: What do you think about that morals of an alley cat? Is that is that I
+
+[00:42:27] Brian: guess offensive to 
+
+[00:42:28] Alex: to it I, 
+
+think it's 
+
+gonna resonate with 
+
+it. 
+
+[00:42:31] Brian: mean, the Alleycats are just doing Alleycat things.
+
+And they're like, why am I getting dragged into this, you two old 
+
+crotchety 
+
+[00:42:40] Alex: you saw it? When was the last time you saw an alley cat in an American city? First of all, that's what I would like to ask.
+
+[00:42:48] Brian: Up to no good. Up to no good. That's what I'll say about the Alleycats.all right. Well, that was good. And I want to segue that into, because I think that's at the heart of of podcasting in some ways. We've talked about podcasts. Every podcast must talk about podcasting. and what, what role podcasting is emerging to play in this information space?
+
+Now, Troy, you've given this some thought, I hope.
+
+[00:43:13] Troy: well, I don't know if we really appreciate yet how important podcasts have become. And I think that they have, there's an element of obviously talk radio, kind of blogging, and late night talk show.podcasting has attracted everybody from kind of celebrities to, you know, self help folks, to enthusiasts, to people like us.
+
+and then we've watched it become a platform for, I think in some cases, kind of establishing the legitimacy of candidates, political candidates. And just to really, in some ways, a new vocabulary. in terms of how you have a, a discussion with someone where it's, it's not compressed into 12 minutes or 10 minutes.
+
+It's not, is doctored or specific as the written word. There's room for gesture and there's room for conversations. So to me, as a, you know, someone putting themselves out into the public space, it's, it's a really compelling and, somehow kind of more human way just for, for people to see you. And so I think that the podcasts have just become, I mean, a really good way to do everything from entertain myself with something like a how far gone to really understanding, you know, interesting and important personalities with everything from like Tetragrammaton to, you know, what's his face.
+
+So that does the super long podcast with Lex. Friedman, to like my news update that I get every day, whether that's from stratechery or God forbid, pivot. And so I guess 
+
+that, 
+
+[00:44:56] Brian: a good podcaster.
+
+[00:44:57] Troy: who is,
+
+[00:44:58] Brian: Scott Galloway is a great podcaster.
+
+[00:45:00] Alex: You think so? He turned me off a little bit.
+
+[00:45:03] Brian: Because if you think about the rules of the information space, he like follows like all of them. He gets it. He's completely shameless. Come on.
+
+[00:45:09] Troy: the, the, the one thing that I would say too, is that the discovery mechanism I'm a bit perplexed by, because it means that you get kind of a long tail structure where. Lots and lots of podcasts exist because there's no cost to create them.many of them are under 500 listens and then very few, break out.
+
+[00:45:34] Brian: Why is that bad?
+
+[00:45:35] Troy: I never said it's bad or good. I just, I don't understand, what happens, I think I find in my world is I, I go, I have a kind of a routine where I open up my podcasting app. And I go to my library and then I look for the newest episodes. And what happens is I stay in a lane. I don't add new ones very often.I don't know. I, I wish, somehow wish there was a better way to find out about podcasts.
+
+[00:46:00] Alex: Well, there's no good way to advertise podcasts. And I'm, you know, I'm surprised I'm going to be the one to wish there was better advertising. But I think one of the challenges with podcasts is Even if you have the money, you can't, really put stuff in front of people, you know? And interestingly, it's even hard on YouTube, right?
+
+Because when we say podcasts now, we mean, we mean audio and, and YouTube. there isn't a lot of like content cross promotion that happens. It's
+
+[00:46:25] Troy: Well, ironically, Alex, YouTube is really the penultimate mechanism for podcast discovery. That's why, if you're serious about this, you should be on YouTube. Because it shows up in the algorithm, like stuff shows up.
+
+[00:46:38] Brian: Yeah, but so I guess the, the, the thing, the intersection with YouTube, I find interesting because it seems to be a hack, a distribution hack because of the, the poor, you know, mechanics on, on Apple and Spotify, right? But, the, the user behavior of listening to a podcast via YouTube or watching a podcast, is a little unusual to me.
+
+I mean, I would assume people just, I've done it, you know, you, you keep one open, like in a tab while doing other things. and a podcast to me, that that's one of their charms in some ways is that you can, you can, they're made for multitasking, right? I mean, are people like watching, like literally watching,
+
+[00:47:18] Alex: I think a lot of them are washed, but they're also, I mean, people, people use, video differently now. Often YouTube is kind of this, ambient thing 
+
+that they put on. and so yeah, I mean they are watching it. It's on their second screen. It's playing on an ipad somewhere it's it's a type of like company that that that people have I think when they put something on screen That might be interesting people might raise and and look look at that and which is why I think they also Can afford doing longer shows.
+
+It's not about sitting down and paying attention, right? Like podcast is the only thing that's really surviving this shortening of all media 
+
+[00:47:55] Brian: It's going in the opposite direction for a lot of podcasts. This one, for instance, Um, 
+
+[00:48:04] Alex: What happened? 
+
+[00:48:05] Brian: it does go in a different direction. I, but I think that's, that's it has the ability to go longer because it's ambient. Like you're not asking too much from people because they're going to be doing something else during it versus I feel like watching a movie.
+
+is going to be a big ask for people in, for a lot of people. A two hour movie. that's, that's a big
+
+[00:48:30] Alex: I mean, aren't we seeing it now that people have maybe one or two big movies that they'll go see at the theater and maybe a handful more that they will watch at home and then a few TV shows and then the rest of their media time is taken up by Instagram and TikTok, right? Like the commitment is, it's hard to commit to any of those things in, in, in modern life.
+
+[00:48:52] Troy: I guess, I guess, I guess overall though, big departure, and it's like everything on the internet is, we went from a world of timeline governed media, which was live radio, to, you know,a bunch of media assets on the shelves that you can pick from, and virtually, you know, infinite selection, which is.
+
+really the defining characteristic of, I think, the internet and certainly of podcasting and of modern streaming, right? And as soon as people lost control of the timeline, the economics shattered.
+
+[00:49:26] Brian: Well, that's, I mean, that's why podcasting is, is sort of ideal form of modern media because 
+
+[00:49:33] Troy: yeah, 
+
+[00:49:34] Brian: impossible to
+
+[00:49:35] Troy: and I'm like a radio baby. We had a, we had an intercom in our house from as far back as I can, maybe since I was eight years old. 
+
+[00:49:43] Brian: We had an 
+
+intercom 
+
+system too. That was like the height of 1980s technology. 
+
+[00:49:48] Troy: in the kitchen, and then every, every room had a little satellite thing that you could turn on. And there was, in, growing up in my house, CBC was always on the radio.
+
+We listened to it in the kitchen in the morning, we listened to it in the afternoon, and it was just always there. And I listened to it at night when there was, you know, there was a times in my life when I drove a lot, I listened to NPR a lot. Now my NPR consumption has fallen off completely in favor of podcasting in the car.
+
+I don't know. I, I, I couldn't, to me, it's the greatest thing that's happened in media in the last five years.
+
+[00:50:20] Brian: Oh, wow. That's a strong opinion. 
+
+I do. I do. I like, I like it. I like it 
+
+as a media form. 
+
+[00:50:28] Alex: know why it's great RSS
+
+feeds, the only, only like still open system of distribution
+
+[00:50:35] Brian: Impossible to monetize. Lack of impossible to monetize impossible to control. yeah, I mean podcast is, is, it's funny because it's, it, it. It's been around for so long and it's been important for so long But we're I think what we're seeing now is that we're comparing it to the decline of all these other things, especially long
+
+[00:50:55] Alex: format
+
+
+
+[00:50:56] Brian: But don't you think one of the reasons that podcasting has remained like a nice media format is because there's no money there. So like it couldn't be ruined because nobody, it wasn't worth anyone's
+
+[00:51:07] Alex: I mean, I think Kara Swisher makes a ton of money on podcasts
+
+[00:51:10] Brian: know, but you know what I mean. There are exceptions, Joe Rogan, et cetera.
+
+[00:51:13] Troy: have a, do you have appointment podcasts? Like for example, Media Monday. I love John Kelly's and encyclopedic knowledge of media. I find that I look forward to listening to it every Monday 
+
+[00:51:25] Brian: Yeah, I change. I, I will admit on, on a Friday that nothing I like more to ease into the weekend. Then a good hour of all in podcast. I've caught, I've gone over to the other
+
+side. 
+
+[00:51:38] Troy: like hitting all in on Friday too.
+
+[00:51:40] Brian: I like it. I, I think it's a good program. I think, I think Friedberg's gonna, gonna leave. I think he's clearly doesn't like all this politics stuff.
+
+It's got good characters. I was just talking with someone who I used to work with my first job with Jason Galganis. And I said to him, I said, He's, he's the WordPress CTO, now. And I was like, are you ready for the possibility that the person we know, each of us know, who's the most famous person that we know is Jason?
+
+So we're both like mentally prepared for that.
+
+[00:52:16] Troy: Well, I, you know, I, I, yeah. And then they, they have truly become well formed characters. you know, I'm the Friedberg of this podcast.
+
+[00:52:23] Brian: what do you think, let me ask on this, what cabinet role do you think David Sachs gets, in, in the Trump administration? What do you think he's, what do you think he's angling for?
+
+[00:52:33] Troy: I don't know. You know, I mean, the obvious would be big one would be, you know, Ford affairs.
+
+[00:52:39] Brian: Yeah, I think we'll go, we'll go for defense, but we'll get like, we'll get commerce.
+
+[00:52:46] Alex: yeah, that's a rosy picture we're painting. Jesus, 
+
+[00:52:50] Brian: Yeah, well, what are
+
+[00:52:52] Troy: guys, I, I do have another call, unfortunately, 
+
+[00:52:55] Brian: Wait, we have good, we have 
+
+to do good 
+
+[00:52:56] Alex: Well, Troy, Troy, we're glad you could make the time and, and, call us from the port a potty that you're calling us from. We appreciate it. 
+
+[00:53:04] Brian: Wait, do we have a good product?
+
+[00:53:06] Troy: I have a good product, yeah. 
+
+[00:53:07] Alex: is it headphones and a mic?
+
+
+[00:53:09] Good product
+---
+
+[00:53:11] Troy: we're now in the full swing of summer. And, one thing that's been going down in my household, we have a lot of guests. we've been playing a lot of this card game, called Dutch Blitz. you ever played Dutch Blitz?
+
+[00:53:24] Alex: Is it played with normal cards or is it
+
+[00:53:26] Troy: No, they're custom 
+
+cards, and it's, it's a speed game, speed, awareness, dexterity, maybe a little bit of strategy, and,
+
+[00:53:35] Brian: What would you compare it to?
+
+[00:53:37] Troy: I don't know, some collective form of solitaire or something, I don't know, you, what happens is you all get your cards, right, I can't remember how many, they all have unique markings on them, I And then you lay them out and you have four piles in, well, you have four cards in front of you and one pile has ten cards in it.
+
+And the, you call Dutch Blitz when you get rid of those ten cards. You have to play them in the center, in the right order. So it's a speed game and, you know, kids can
+
+[00:54:06] Alex: Oh, is it played in, is it played in pairs?
+
+[00:54:09] Troy: No, you can play five at a time. You can play as many cards as you have. Super fun. And then my bad product of summer is something I've been, or ticks. I'm getting so many ticks.
+
+[00:54:19] Brian: That can be dangerous.
+
+[00:54:20] Troy: I know, I just pulled one off myself right now.
+
+[00:54:23] Alex: I mean maybe it's time for a PSA. Did you get the target, the bullseye target?
+
+[00:54:27] Troy: Oh, they would, I, apparently that's bullshit, but no, I didn't get it. Thank you.
+
+[00:54:31] Alex: keep the tic, freeze it,
+
+[00:54:33] Troy: I think my dog brings ticks into the house.
+
+[00:54:36] Alex: yeah. So is the, the bad product tics or your dog? 
+
+[00:54:41] Troy: anyway, Dutch Blitz, great game. fun for the whole family. I couldn't recommend it. Alex, you might want to try it.
+
+[00:54:48] Alex: I just ordered it from, I just ordered it from Amazon, you were saying.
+
+[00:54:51] Brian: Really? Yeah, I just did it. There you go.
+
+[00:54:54] Troy: I do. What do you guys have to offer? if you, you don't sound very enthused about my pick this week.
+
+[00:54:59] Alex: No, I mean, I do have a product to offer and it's called, the Books Palma, B O O X P A L M A.
+
+It's a, So
+
+well, it's not a phone, it's the size of a phone, but it's an e reader. It's an e ink reader, but it's, it's essentially has Android on it. So you can install audible and you can install Spotify, but you can also install Kindle and, and any PDF reader you have, and there's something about it being just an e ink reader, which stops you from going onto YouTube or into rabbit holes, but it's really good for reading and because it's the size of a phone, you can hold it with one hand, which is really nice when you're on your commute or, you know, you're having a sandwich or whatever.
+
+[00:55:40] Troy: can you read it while you're driving?
+
+[00:55:42] Alex: Yeah, I do it all the time. I have a Tesla. I just don't look at the road. That is a joke. I don't do that. I, I, you can't trust that. but the great thing about it is that it has audible in it as well. So when I'm driving, I'm actually listening to the book and then when I have time to read, I'm actually reading it, which has allowed me to actually finish
+
+books.
+
+[00:56:00] Troy: it have a selection of voices? Can you have,
+
+[00:56:03] Alex: No, no, it's not. It's a, it's a, it's a real audible app. It'll, it'll, it'll, whatever app runs on Android, it'll run. So it's, it's actually read by
+
+[00:56:11] Troy: that's nice. And then, then Alex, I sent around the link for that, that new phone. That, that phone seems cool.
+
+[00:56:17] Alex: oh, yes the nothing? Cmf
+
+phone one. 
+
+[00:56:20] Troy: brand name, right?
+
+[00:56:21] Alex: Nothing is the kind of parent brand cmf is their budget brand and they just released. They're phone one, which is this beautiful kind of, modular 199 Android phone. which I really wanted. It's actually, if you, if you thought Oh, I really wish I bought a rabbit that worked.
+
+You can just get that. It kind of looks like the rabbit,
+
+[00:56:42] Brian: Why do 
+
+you want, like, what's,
+
+[00:56:44] Alex: AI on it. 
+
+[00:56:44] Troy: got to tell you, the, the rabbit is the worst product I've ever got ordered. It doesn't work.
+
+[00:56:49] Alex: No, it doesn't.
+
+[00:56:50] Brian: that's why, that's why only rich people should be early adopters.
+
+[00:56:54] Alex: was your question about the phone?
+
+[00:56:56] Brian: Why would you want it? like the accessories, it was cool.
+
+Like, why would you, why why would you want it? Like, why would you want, like, if you have one phone, why would you want a second, unless you're
+
+[00:57:06] Alex: look, look, I mean, I, I just, I just like that. It's a pretty design phone that, that looks really nice. I just want to buy one. I had to have no reason to buy one. I have an iPhone pro 15 max 
+
+[00:57:19] Brian: That's why none of these things are little, they never, they never take off, right? Because they're not like
+
+[00:57:25] Alex: Well, not in your, you know, highfalutin scenes maybe, but it's 199 for, but look, here's a great thing about it. Here's what I like about it. Technology is getting fun again. People are doing interesting things. Yes, processors, processors, the operating system, the software is allowing people to, to build stuff quite easily.
+
+And the competition is making people want to stand out. And I think what you're seeing in the CMF phone is really like the kind of the Ikea phones, like a phone that is really cheap, but really cool. and, and looks very different. And I think we're, we're seeing, you know, there's this company that's doing, their own version of an iPod, which looks super fun, that books, reader that I talked about that's allowed by, you know, kind of the product, you know, availability of these processors that are quite, quite cheap and the operating system.
+
+And these, this is cool. There's like just more options, there are more options and AI is going to probably also, you know, it won't be the rabbit and it won't be the pin, but there will be interesting things that come out through
+
+[00:58:25] Brian: Will there? I, I, maybe. We'll see. 
+
+[00:58:27] Alex: I mean, yes. I mean, that's
+
+I mean, that's the thing. It's I wonder when it's just the same thing with crypto in that there was never a big use case and then people sort of gave up on it. Brian, here's the difference.
+
+[00:58:41] Brian: I understand it's good to apply to put writers out of
+
+business.
+
+[00:58:44] Alex: 
+
+I do. I do think, though, just to wrap that up, crypto was usually working as intended. We just couldn't find the use case. The use case for AI is here, you know, it just doesn't work as well as we need it to. So if you believe that it will one day, you know, it's a, it's a, it is just a different calculus.
+
+Doesn't mean I'm a, you know, but we'll see. 
+
+
+[00:59:04] Outro
+---
+
+[00:59:04] Troy: God, I love you guys. But the only thing we didn't mention is the dot dot Meredith
+
+results. While they're warm, I'm only going to say congratulations to Neil. It's great to see this was Q1, 24, really healthy digital growth on top of
+
+digital growth in 
+
+[00:59:20] Brian: I think it was 
+
+[00:59:22] Troy: on top of growth in Q1,to 23, they're fighting print declines, but it's great to see that, there's a digital business out there that's making good progress.
+
+So that's what I
+
+would say. 
+
+[00:59:33] Alex: I think they probably got the people versus algorithm bump. So you're welcome.
+
+[00:59:38] Troy: Okay. We'll see you Alright,
+
+[00:59:39] Alex: All right. Bye.
+
+[00:59:40] Brian: Bye. 
+

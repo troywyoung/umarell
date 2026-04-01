@@ -1,0 +1,671 @@
+PVA S2E65
+===
+
+[00:00:00] Troy: before we get started, it would be hard for me not to take a shot at Alex whose, need to have order in this world is certainly, offset by significant executive functioning problems.
+
+[00:00:12] Brian: Well, unfortunately he won't be with us this week, What was he doing? He was hauling something. 
+
+[00:00:16] Troy: The great irony of Alex is he likes putting everything in boxes, organizing his studio, fidgeting, making sure that like download files, get a name replacement by AI, like all this kind of, tool maker tool stuff. And then he seemingly can't organize like home services at the right time so that we can record a podcast.
+
+[00:00:40] Brian: 
+
+
+[00:01:02] Intro start
+---
+
+[00:01:02] Brian: I joked earlier this week in a newsletter that these end of the year posts roundups trends. storylines, predictions. They're all basically the same play, you just like dress it up different. 
+
+[00:01:14] Troy: reflections,
+
+[00:01:15] Brian: Reflections.
+
+[00:01:16] Troy: looking back, looking
+
+[00:01:18] Brian: But then looking forward, you look back to look forward, et cetera. to me, big headline for me this year, all these things are always accelerations, I feel like, but that mass media is in terminal decline, and that what replaces mass media are going to be individuals and individual led brands, that will fill them.
+
+Yeah. the void in this chaotic information space. and I think a lot of the weaknesses that were papered over in the post pandemic just became incredibly, couldn't avoid them, this year for a lot of, institutional media brands. Did you see that?
+
+[00:01:55] Troy: Couldn't avoid one.
+
+[00:01:56] Brian: You can't avoid, the reality that everyone thinks that mass media is like going to be here forever, but I don't understand why. Like it doesn't, it made sense for a brief period of human history, but it doesn't mean that it's going to be around forever.
+
+If 
+
+[00:02:10] Troy: kind of medium. Medium is the message thing always, right? It all goes back to that, right? Like mass media is a function of the distribution structure and the distribution structure moving from one to the next takes time because there's massive sort of industrial monetization implications, et cetera.
+
+And everything that we're going through now is really. An extension of a long transition in media, I would argue, because, really what, when you think about Brian, like Just going back to the sort of ad tech, media always needs the, there's the media box, the things we make to engage people.
+
+And then there's the monetization box. And we spent what, 15 years building, creating a capability to instantly value attention and auction it off. that's what the ad tech, Ecosystem did. And it was remarkable really that you could arrive at a site. I could, take that information, look at who you are, use some sundry group of signals and say, I want that person or I don't and bid on you.
+
+And,that was programmatic advertising but you know, the form factor. Was basically, originally, a real, kind of descendant of the previous media, monetization structure where you put boxes next to content. Right. And then we thought, well, let's put links inside of content, right?
+
+There's better ways to do this. And, Now we're finding that that whole structure, of media brands to,feeds of content from a media brand and then, an underlying monetization mechanism, primarily of display advertising, particularly, on tax kind of, it feels outdated.
+
+And, now we're trying to figure out what the next one is. And, and as soon as that kind of comes apart, the, the economics of, industrial media have started to come apart and that's what's forcing this, different structure where independents have more opportunity. I suppose there are different types of obviously subscription based media or media that is sort of institutionalized like the New York times and have scale that have done well.
+
+But outside of that. All of those businesses that exist to, aggressively compete with one another inside of a, third party distribution mechanism are on terminal decline. I agree.
+
+[00:04:28] Brian: Yeah, and that distribution is key because the platforms have really cut off publishers at the knees. I mean, this has been an ongoing story, but I forget it. I hate those things on Twitter when you find like some, nugget, I guess X now I'll just go with X, and then you, I don't remember who it came from so I'm like stealing it but it's just because it's chaotic.
+
+But anyway, they posted a comScore chart that was comparing digital audience in November 2023 from a year earlier. The numbers are like amazing. Vox down 17 percent, CNN down 20 percent, New York Times down 29 percent, Insider down 22 percent, Wall Street Journal down 16 percent. Politico down 35%. Then you have Forbes up 17%.
+
+17. 6%. So they found some seed. So there, there's still hope out there. We gotta, Forbes found something to increase its com score.
+
+[00:05:29] Troy: Well, Forbes, it's no, Forbes didn't really, I don't think that came from. The traditional media part of Forbes, a big part of that was them opening up the marketplace business, which competes in a number of verticals from finance to insurance to, home to
+
+[00:05:45] Brian: Oh, does that get rolled up in their com score, the, for the
+
+[00:05:47] Troy: sure I'm sure.
+
+And it's a lot. It's a lot of traffic and a lot of pages.
+
+[00:05:51] Brian: Okay, so basically, I mean, that kind of says the story though, right, too. I mean, setting up, a side operation that's very commerce focused, it's more like a
+
+[00:05:59] Troy: No, the quality is very high. there is an independent editorial organization. It's like a big group of people and it's opened up,a real. neck kind of new pillar in their, content feed.
+
+[00:06:11] Brian: it's just, it's putting the Forbes brand on something that exists, that would exist,I know commerce content, I, I honor all monetization, Troy, don't get me wrong. But at the same time, like we've seen outsourcing, some commerce content, you're basically
+
+[00:06:26] Troy: It's not the same. It's not the same at all.
+
+[00:06:28] Brian: it to someone else who's really good at, being a traffic monster for stuff that has nothing to do with Forbes . 
+
+[00:06:33] Troy: I would say that the key part of their success is making good content. So, you should just be careful with how you're just entirely dismissive of the efforts of lots of people. I mean, you know, and I. Just 
+
+[00:06:44] Brian: I don't know if I, okay, it's true. It is, it is the end of the year. I would,
+
+[00:06:49] Troy: Yeah, let's,
+
+[00:06:50] Brian: I'll,
+
+[00:06:50] Troy: let's get the generosity up a bit here. Yeah. But,
+
+to compliment Forbes. Look, they're up when everyone else is down. That's a, it's a good thing. yeah, I had a conversation about it with a friend of mine who I love and I got to see this morning, Kate Lewis. we were talking about. The challenge of basically paying for long form. And I just bring two quick thoughts together. long form, journalism or essays or point of view content or whatever.
+
+And I'll put two or three things together just quickly. One is last week I embarked on an experiment because of Alex and Alex has got this unique. way of consuming media. That's has no time for the fluff that holds together a bunch of points in an article. So he'd prefer to summarize everything or just get the bullets or and augmented by his love of podcasts.
+
+He listens to an endless number of them seemingly. And then,so, so basically what I did is I had this list of, long form essays that I get in this newsletter that are all worth time, at the end of the week. And instead of reading them or reading a select number of them, I fed them into perplexity and I asked for.
+
+summaries in different ways, 10 bullet points, just the key facts, the key arguments, whatever, just try to find a formula for pulling out an abstract that made sense to me. And what I found is I was able to move through a huge number of articles in very little time. And it was really efficient. And I said this to Kate and she said, well, you know, I enjoy reading a long article because it's not just about the facts.
+
+And I said, you know, often I'll read something like that very 17, 000 word, Bennett essay about the
+
+[00:08:39] Brian: well that was too long. 
+
+[00:08:40] Troy: the rot inside of the New York Times. and I end up walking away remembering very little of it. So there's just the fax ma'am kind of thing was an interesting experiment.
+
+And then what I
+
+[00:08:51] Brian: Wait, let me ask you this. Let me just jump in. Do you think you would have felt that way like ten years ago? a lot of this has changed our brains, and I don't think that the human brain has meant, is meant to be able to try to ingest all of this content and information and chaos at once.
+
+And so, we're clearly 
+
+losing 
+
+[00:09:08] Troy: yeah, it was much more leisurely then, right? And Kate and I also talked about this, is that you would do a couple Long pieces in a magazine combined with short front of book stuff with, just like a whole bunch of formats in a single publication and your ability to pull all those together and monetize that cure curated package thing was what made, newspapers and magazines work now it's been all, atomized or fragmented and really, there's no way to pay for long journalism.
+
+It's just extremely difficult to pay for it. And at the same time, there's 
+
+[00:09:52] Brian: Is that a demand problem? Has the demand gone down or is it just a market failure in that the ways that you are able
+
+[00:09:58] Troy: I think it's two things on the supply side, you can't bundle and therefore monetize the whole package on the demand side. There's, and this is the more interesting question. There's new ways to get information that. break journalistic or editorial conventions about how you package content. And I think that's the more interesting one.
+
+Like, do we really need story formats like you typically see in, Newspapers or magazines when three bullet points will do and we're living in, the, the information space as you describe it, where there's so many other things that so many other ways of packaging information and so many other ways to get all kinds of information.
+
+[00:10:42] Brian: So you just want bullet points? 
+
+[00:10:44] Troy: Well, I, I don't think it's just bullet points. I mean, I think you hear lots of different things. You hear. I get more and more in mind of my content from podcasts. I get my news from TikTok. it's just, it's completely different. You can't just look, Brian, at the changes in media as you do. You make the point repeatedly, and I like it, that we're seeing the shift from sort of institutional to individualized media creation.
+
+And I think that's one piece of it. Right. But there's a bunch of other pieces that are at play here. And it's there's a lot more information, there's better tools to sort through that information. There is,an ability to, to channel narrow interests much more effectively.
+
+There's a lot of things that play the video audio, right. And. All of that is creating something that I don't think we have a name for or we, we don't have a clear mental model for what modern media looks like. I fail at describing it and I just call it the meat grinder.
+
+[00:11:44] Brian: the meat grinder. the sharp end of the meat grinder is the search results page. it's always been the workhorse of digital media because distribution and interface controls it. And Google has been the gatekeeper. and search has gone through a profound change this year.
+
+[00:12:02] Troy: I'm very concerned about it. 
+
+[00:12:04] Brian: when, we look back on all of the changes that have gone on, yeah, this is gonna be the number one.
+
+That's why I think when people were talking about AI, it was always going to the creation and all that. It's like, whoa, whoa, go to distribution first, because the creation doesn't matter if you don't have distribution. it doesn't matter if a robot's making it or a human. I understand why reporters and writers and people like me want to go there first, but it seems better to start with the distribution.
+
+[00:12:30] Troy: Yeah. Yeah. It's the
+
+[00:12:32] Brian: I remember Neil Vogel saying to me, at,Dutch Meredith. And he was like, sure, I'm dependent on an algorithm, but this is the most dependable algorithm. It's dependable. it's been around for so long. It's well, guess what? It just got a lot less dependable.
+
+[00:12:45] Troy: I saw him this week, he's, he's super smart, but he's a book talker. So, he's an optimist. And that means that you represent your reality in positive ways. Now let's talk about it. the end of the SERP is nigh and, we can start to see what the new SERP looks like.
+
+And there, I call it, the new SERP and you, are seeing it with OpenAI. You're definitely seeing it with Perplexity. You're starting to, you're seeing it with Bing. And I suspect soon you're going to see it with Apple. 
+
+[00:13:15] Brian: but the reason that I single out the Apple one is because the Apple one is distribution. Plus the SERP, right? It's like the next level of distribution because it's in your pocket. They own the iOS, all that. So if you took perplexity and as a reminder, we've talked about perplexity a couple of times.
+
+[00:13:33] Troy: What's interesting about it is it's the connection between a search index and an LLM. Okay. And what's going on in there is you ask it anything, anything that's, that's current and it'll go out and look at it on the web and grab that index and interpret it with the LLM and deliver you back. a text based response.
+
+It will add images. It will suggest subsequent queries and it'll show three or four. Sources at the top. So it's a lot like what you would see in the Google results, if they were unencumbered by paid links and more dependent on an LLM because it's subscription, it's 20 bucks a month. There's none of the other nonsense in there. And so it very much 
+
+[00:14:20] Brian: Wait, can you define the, the nonsense in there? I thought you were just like singing the praises of the nonsense. When I, 
+
+[00:14:26] Troy: Well, the, 
+
+[00:14:27] Brian: dared, I dared to besmirched the nonsense earlier. If we
+
+could 
+
+[00:14:31] Troy: the nonsense is, 
+
+I'm talking about it purely from a kind of give me the stuff straight to the vein consumer point of view, the nonsense makes businesses function.
+
+[00:14:40] Brian: Well, that's what Forbes is up 17% on the nonsense, isn't it?
+
+[00:14:44] Troy: Let's, this isn't about Forbes, my dear. Let's, let's move on. So,
+
+[00:14:49] Brian: I'm going to have to adopt a subscription model, that's clear.
+
+[00:14:52] Troy: So couple
+
+[00:14:54] Brian: not going to advertise.
+
+So is there a window for Apple to compete with Google in a more meaningful way and forfeit the 27 billion that they're paid and they're held hostage by Google? So this is going to finally be the way for Apple to compete
+
+head on with Google
+
+[00:15:10] Troy: perplexity built a better product than Google and they've done it in the last 18 months or so.
+
+[00:15:16] Brian: So wait, remind me in Perplexity, there was this one, some faction that split off over, 
+
+[00:15:22] Troy: It was one, I don't know, one of the DeepMind guys or something, I don't know. There's this cabal of brilliant AI people that start companies and seemingly
+
+[00:15:31] Brian: Yeah, I just want to know whose side I'm supposed to be on.
+
+[00:15:34] Troy: I don't know. Let's talk a little bit more about it and you can decide. So there's the new SERP is coming. We don't know what it'll do for sure.
+
+It has less room for a lot of people to compete to get, get clicks. It means that a new ad model is required. Remember the creation of the search monetization ad model was the great kind of colonizer of the open web, right? Like that was a huge moment. They figured out a way to monetize search 
+
+[00:16:08] Brian: It used to be the least valuable pages on the internet.
+
+[00:16:12] Troy: I took a Waymo the other day and I realized that that ad product was accountable for Waymo. Okay, truth, very, very tight connection between Waymo and search ads because Google made so much money because of the, sort of liquidity and effectiveness of their ad model.
+
+[00:16:32] Brian: They had a money printing machine.
+
+[00:16:34] Troy: had a money printing machine.
+
+They literally made so much money that they had to hide Profits 
+
+[00:16:40] Brian: Yeah. 
+
+They had to hire all those people too. 
+
+[00:16:43] Troy: hire free crab blades, lots of people, crab legs, dry cleaning, and, you know, moonshots, right? Moonshots like, balloons that offered wifi to sub Saharan Africa. Like. Google Glasses and like Waymo and you get into a Waymo and you're like, holy shit, who paid to develop this thing?
+
+Because it's crazy the amount of work that went into making this. 
+
+[00:17:08] Brian: Everyone bidding on that Mesolithemia keyword. 
+
+Thank you.
+
+[00:17:13] Troy: so that gave us Waymo. in AI SERPs, there's fewer opportunities for paid link competition. So
+
+[00:17:21] Brian: But it's, it's a cul de sac, is it not? I mean, at the end of the
+
+[00:17:24] Troy: when it's a call to SAC, you can monetize it. It's just that the monetization looks different. We don't know what it looks like yet, 
+
+[00:17:31] Brian: but.
+
+less traffic is going to go. So if you have a, if you have a model, if you're a publisher, you have a model based on traffic and most legacy, most legacy publishing businesses at
+
+[00:17:42] Troy: Oh, that, the, the, that, that gig is up. That gig is up. So we're assuming that gig is, 
+
+[00:17:46] Brian: is it the gig is up or the jig is up? 
+
+[00:17:48] Troy: let's, you say
+
+tomato. Okay. So, what's interesting inside of Google, I'm sure it's chaotic. There's like a million analysts analyzing what the new SERP looks like in terms of potential monetization against the new product of the old SERP.
+
+They rushed out these new models, like it's chaos there. I talked to people that sat inside of the demos of Gemini. And, they said Google is in a real state of disarray. Like it feels chaotic and that's a side note. So what's, I think the interesting tension inside of this SERP question is this, competition.
+
+We'll reduce traffic to Google, right? Remember now they're over 90 percent market share. They've got a, there's got to be something that, that, that starts to challenge that, but what they can do uniquely is they can take with the LLM search SERP, they can take a larger share of experience, right? Just like they've done for years.
+
+And they had to apologize for it every time. Oh, they added maps. Sorry, MapQuest. Oh, they added shopping. Sorry, Shopzilla. Oh, they added, like,travel search. thank you, Barry Diller. oh, they added weather. on and on and on and on and on. And now, more of the experience, more and more of the experience of the open web gets sucked into this new interface that Google controls.
+
+They create a new ad model. To, monetize that, which will be different than paid search, but the same kind of spirit of it, I suspect. And so they manage reduced traffic, like an aging monopolist by. flexing their muscles and absorbing more of the open web. And I don't know whether to short Google or not, they enjoy massive advantages all the way from the chips to the models, to data from the likes of YouTube and all the other touch points they have for years and devices.
+
+So they have this whole continuum of stuff, right? That's kind of future proofs of the business. But the one thing where they make like. 60 percent of their total revenue. It's 77 percent advertising, but 60 percent of it is the SERP and it's wickedly high margin. It pays for way most that one's going to go through a period of disruption.
+
+And how long will it take? What will happen in 24? Not sure.
+
+[00:20:12] Brian: Not sure. That's the point of the episode. You got to tell, tell us what's gonna happen. Okay. Well, that, that actually leads into the second thing that I learned and that I'm going to be looking at next
+
+[00:20:22] Troy: Oh, can I add one other point on this? These are not predictions as much as they are questions. One of the things in my mind is I've been spending a little bit of time in this sort of app underbelly, the app economy. And it's not something that you or I think about that much. We more think about the kind of open web economy.
+
+Now the app economy has got its own tactics and the people that know how to game the app stores and how to slide offers in front of consumers to squeeze money out of those apps and all that kind of stuff. Now, the question with, AI as interfaces, what happens to the app economy, because a lot of the utility embodied in apps are like singular. offerings of utility, right? Like get the weather, get the, get the compass app, get 
+
+[00:21:07] Brian: They're slightly better web pages, aren't they?
+
+[00:21:10] Troy: Well, yeah, materially better, but, 
+
+[00:21:12] Brian: I'm, well, they're accomplishing a job that web pages used to
+
+[00:21:16] Troy: right. But you know, going to Uber on the web certainly isn't a thing. Cause the apps have notifications, the apps have access to the metal of the phone, like there's lots of
+
+[00:21:24] Brian: Yeah. They're the successor to the webpage.
+
+[00:21:26] Troy: right. Except that what happens to the app economy when it too gets hijacked by AI interfaces and, When you start to use AI more and more as the default interface point on your phone, do you need all those apps? not. 
+
+[00:21:41] Brian: No. 
+
+[00:21:41] Troy: need many of them.
+
+[00:21:42] Brian: Apps were always a hack. Who wants the, scrolling through screens on your phone to try to find the app you want? Because you only have, like, the first screen. Most people, you don't want to go to the
+
+second or 
+
+[00:21:54] Troy: your favorite app? Like some stupid running thing.
+
+[00:21:57] Brian: No. I mean, like, Instagram or something, basic.
+
+[00:22:00] Troy: Oh, you're a big Instagrammer. I notice that you walk around New York City 
+
+filming 
+
+everything. 
+
+[00:22:04] Brian: Yeah, it's my phone. Cute. no, I'm not into like, particular, you know, utility apps, news apps, that kind of stuff. But,then I hate going through to okay, if like I use Toro once, do I really want to go and try to find the like Toro app on like screen seven?
+
+they're just hacks. You know what I mean? Like, they made sense and they were revolutionary at a time, and I just feel like we always think things are going to continue as is. Even the people in, like, these disruptive, bleeding edge, whatever, fields, seem to always think that everything is going to, stay the same for them, but just change for other people.
+
+It's like, boo hoo, the app people are going to get whacked.
+
+[00:22:43] Troy: Jesus.
+
+[00:22:44] Brian: I don't know, publishers have been getting whacked for, like, a generation? At least they're used to it. At least they're sort of trained.
+
+[00:22:50] Troy: Yeah, we should maybe introduce a new segment. It's reality talk with with Brian. Let's get real,
+
+look, it's, I don't know, it's too bad, so sad. but I wonder if this is going to lead to a new bargain between the tech platforms and publishers, because it's untenable, right? I mean, this, it was always like an unhappy bargain, at least on the publisher side, right? But it, it broadly worked, right? Well, so we're on to we're on to the next one here. That actually is a great segue.
+
+[00:23:24] Brian: know, that's what I 
+
+was trying. 
+
+[00:23:25] Troy: it is It's the new syndication. We got the new SERP and we got the new syndication. I love it how the market reacts And I did this, like when we see a glimmer of hope as a publisher in the future, because Axel Springer did a deal with open AI. Okay. So just as a reminder, it's two dimensions to that deal as I understand it. One is they're going to train their models on Axel Springer's content from insider politico, on a morning brew, whatever else they are. And, they're going to, return snippets from their stories in AI queries.
+
+And in return. They're going to offer Axel Springer, I presume, an annual payout of millions of dollars. And so 
+
+[00:24:05] Brian: Seven figures, supposedly.
+
+[00:24:07] Troy: okay, so it's real, but you know, it's sort of like, buy one, get one at the crack store and, it usually only leads to dependency and broken hearts and addiction.
+
+[00:24:18] Brian: What happened to the spirit of generosity?
+
+[00:24:21] Troy: Well, let's just keep on this new syndication thing because play it out. We used to make millions of dollars from MSN in a model that was not that different, except that they would take our content. We set up a feed mechanism to give it to them in this granular way that they wanted it. So we had. hundreds of titles or, 24 brands spit them out content by category, beauty, fitness, celebrity news, et cetera.
+
+They would put it through the MSN meat grinder. They would pay us a fraction of what. One might've thought that, you would get off a story, but it was on the margin. It was terrific. And we did literally so many page use cause MSN was on the start page of every PC that, people don't go to MSN because they love it.
+
+They go there because it's part of the operating system. So we would make millions of dollars from that. at hers. and so this is the same except that it's all part of the back to the Kate Troy conversation, which was, there's no brand value in those snippets that we're returning. We're journalists, not snippet makers. there's no brand value. There's no curatorial value. We don't own the package. Monetization requires curation and packaging. the differentiating power of a brand. And so it's just further fragmentation. It's like syndication plus, and we used to trade link revenue. were just trading link revenue from Google for LLM revenue.
+
+And I guess in some way it's like Disney selling shows to Netflix, but, it
+
+[00:25:50] Brian: Every single publisher will scramble to get that deal if the money's
+
+okay. 
+
+[00:25:54] Troy: will want to get the deal 
+
+[00:25:55] Brian: Straight to the bottom 
+
+[00:25:56] Troy: but it doesn't change anything about the fact that you're a dependent. On horizontal applications, your market power is de minimis and you probably have a slightly more diversified but inadequate revenue stream to fund your newsroom.
+
+[00:26:13] Brian: doesn't sound very positive.
+
+[00:26:17] Troy: I don't know where you got that. This is all pot. This is happy hour.
+
+[00:26:21] Brian: usually people at the beginning of the year, maybe it's not what they want, but it's what they
+
+[00:26:25] Troy: Well, let's look for the silver lining. Let's say that, the only people that get the LLM. Deals are big, well funded media companies. So those, there's not an infinite number of LLM deals to go around,
+
+[00:26:40] Brian: No.
+
+[00:26:40] Troy: right? So maybe it returns media, which it used to be to an oligopolistic kind of, industrial structure that used to exist when there were like three big magazine companies and, the like, so only the big guys can do deals with.
+
+LLMs, they have the scale and negotiating power and et cetera, get meaningful revenue out of those new interface points. But I would ask you just to back up. And at the end of the day, if you're feeding. An experience where a robot is making text and surfacing snippets. How good a business of that is in the longterm.
+
+You know, if you're a cultural media entity, how good a business is that? And I would say it's maybe, it's okay on the margin, but it's not, not a great business.
+
+[00:27:29] Brian: Yeah, I mean, no, it's not going to be a great business, but what are the options? so I, what I think what's interesting about the Axel Springer deal is the paywalled content, right? all of the incentives are going to just accelerate the demise of the open web as a thing. Like it's just going to be paywall after paywall after paywall.
+
+the incentive structure no longer exists. If you're creating differentiated, high quality, quote unquote premium content to allow it to be crawled and to exist on the open web, there isn't, there isn't an economic underpinning to that content living on web pages, is there? And like, making it for like, programmatic advertising?
+
+no, it's not going to work. Is it? Am I missing something?
+
+[00:28:17] Troy: I thought we already solved this.
+
+[00:28:18] Brian: Did we?
+
+[00:28:19] Troy: And yeah, I don't think, the new interface points will be controlled by a small number of large media companies. And that might be an okay way to pay for journalists.
+
+[00:28:32] Brian: So you think that, this will benefit larger media companies 
+
+[00:28:36] Troy: hundred percent. A 
+
+
+
+[00:28:38] Troy: Yeah.
+
+[00:28:38] Brian: Interesting.
+
+[00:28:39] Troy: Yeah. and then everybody else gets sucked up in a indexing of the open web for which they will never derive economic benefit.
+
+[00:28:48] Brian: So will that lead to, what, just few, cause like, I would think that,
+
+[00:28:52] Troy: Fewer, more passion based publishing, more video, more audio, blah, blah, blah.
+
+[00:28:58] Brian: But the LLMs are coming for that too. It always starts with text, but then it goes to the more lucrative
+
+areas. 
+
+[00:29:05] Troy: The LLMs are coming.
+
+[00:29:07] Brian: They are coming, they're coming for the video.
+
+[00:29:09] Troy: Yeah. 
+
+[00:29:10] Brian: I
+
+actually like ChatGPT. I use, I use ChatGPT just to make, I don't use MidJourney anymore. I use it to make images. They're just as good. And I don't have to use
+
+[00:29:17] Troy: yeah, you've really taken, I mean, no offense, but my, my bear formula and applied it to the astronaut. 
+
+[00:29:23] Brian: I don't know, it's the freaking LLM. I don't know. It's like,
+
+[00:29:27] Troy: the formula is find a character and apply character to different scenarios to support your story.
+
+[00:29:32] Brian: okay. I put them in a classroom. And it's the last thing. Anytime, we used to have, we didn't have like art directors or whatever. Well, we did, but they were working on. And so like anytime with the story art, it was like, it was the last thing that was ever done. 
+
+[00:29:47] Troy: I
+
+love story. 
+
+[00:29:48] Brian: was treated that way.
+
+[00:29:50] Troy: What else do you have on your docket? I feel like we did an okay job of covering that stuff. I
+
+[00:29:55] Brian: well I had a couple of, it might not totally fit in this. I think one of the things Is that many of the geniuses that were that were among us were zero interest rate phenomenons. And I think that it'll be pretty interesting to see in 2024 because I think one of my big takeaways from this year is there are so many people trying to use the playbooks of the past for a totally different era.
+
+And I understand that. But it seems to be a very short term strategy. For a lot of publishers to try to use what worked in the past for a time when it's not working. I mean, when I talk about publishers, I'm often like here, some variation on. The stuff that used to work doesn't work anymore. and so, I think it'll be interesting to see who comes up with new models in 2024.
+
+I think models that are smaller, I'm more biased towards that, but even though I see like with what like a punch bowl has done in a short period of time in a really difficult market, to me we're gonna have more punch bowls. We're gonna have fewer buzz feeds. So I think that's gonna be good.
+
+I think that'll be an interesting development in some ways. 
+
+[00:31:07] Troy: agree.
+
+[00:31:07] Brian: Actually, let's move to, I'm interested in where the, ongoing culture wars go. Because I feel like media has been caught up very squarely In these cultural wars, whether it's like tech versus the media, or whether, obviously with the election going on next year, it's going to be front and center.
+
+everyone references the loss of trust, and I think it was this week it was the last week last week. James Bennett. Former New York Times editorial page editor who got defenestrated, to use a puck term, after he published a Tom Cotton op ed calling for some sort of form of martial law, troops in the street.
+
+he wrote an exceedingly long piece in The Economist, and really kind of torched his former employer. Did, did you make your way through the whole thing?
+
+[00:31:58] Troy: I skimmed it, yes.
+
+[00:32:00] Brian: He skimmed it.
+
+[00:32:01] Troy: Mm hmm.
+
+[00:32:02] Brian: Did you put it in perplexity?
+
+[00:32:03] Troy: Mm hmm.
+
+[00:32:04] Brian: What did perplexity say?
+
+[00:32:06] Troy: I broke it down, ten points. 
+
+[00:32:07] Brian: I think the most salient point was that the times, It's in some ways have become a bit of a caricature of itself and, like I read the times every day. It is. It is one of my apps on my first screen. I think it's amazing what they've done as a business. I think the cost of that pivot to subscriptions has been inevitably, you become more customer focused.
+
+And when you become more customer focused, you, you start to reinforce the, viewpoints of, yeah. And I think that was basically what I took away from from Bennett's many, many, many words.
+
+[00:32:43] Troy: Yeah. Listen, I have to, it's, full disclosure, I look at this pretty personally, to be honest. so I think that the times creates a product for their audience, their paying audience and that's got a kind of liberal mindset. And I think that's perfectly fine. I think that at worst, what you get is writing from the headline and a conclusion.
+
+back and, contorting the story and the facts to, to support a point of view. that blocks you from seeing or even entertaining the other side or another perspective on the story. And I think that the right in America has become so distasteful to many on the left or even in the center that.
+
+It wasn't even worth kind of interrogating any of those ideas. And then you have a time early in COVID and this is kind of a visceral emotional memory for me because,in the wake of Black Lives Matter, every organization from, I would say from media to anybody that said, DEI function, scrambled to, to change.
+
+their organizations to meet real or perceived threats from their employee base, from journalists, from people that were holding them accountable for that. And I think the New York Times definitely got caught up in that. I say it because I was basically assaulted by them. they had a story they wanted to write about challenging time at Hearst and a battle with the unions and the stuff.
+
+And, I was inside of that story. And so I think that at another time in another place, another environment, This is just me, talking about it personally. It's hard not to do that. As I said, that story might've been reported a little bit more carefully with more than one perspective at what was really going on.
+
+And, it wasn't. and it changed my, my life for better or worse. And, it certainly gave me a perspective on how. the New York times at that time was, and, Ben Smith and the other woman that wrote it with him were going after a very, very particular headline. you know, I look at it like that, but I do think that.
+
+That Bennett probably is, bitter about how, his path in the New York Times was cut short and that he saw a company that was, probably veering off the rails a bit. I think much of that has changed now. And, I really don't think today you can say that the New York Times serves their liberal audience any differently than the Wall Street Journal's serves a right wing audience.
+
+[00:35:28] Brian: I don't know from the news, baby. I would say it is a little, it's, it's still sort of preaching in the choir. but a lot of that is just cultural, really internal culture. I think a lot of times people outside of news organizations think there's some sort of dictate. Or something but usually it's just it's based on like personnel's policy and it's it's hiring and like once, once things get in the, it's just self reinforcing right at that time.
+
+when you went through the ringer, that was a time that in any news organization, everyone wanted to have the story. We spoke to 23, people, everyone. I saw it. I edited these stories 
+
+[00:36:07] Troy: Yeah. 
+
+[00:36:08] Brian: trade publication about digital trends, I feel like digital trends. Like, I mean, why? Like,
+
+[00:36:14] Troy: there was a group of journalists and outlets that loved those stories for sure, including the insider, including New York, magazine. And,the union narrative or backdrop or, what was a really, really important part of it.
+
+And there was a story that, a gotcha story that was, was delicious. So, but you know, the bigger story in any of these organizations is navigating massive change, letting a lot of people who were heretofore comfortable in these jobs go from the organization. And so the person that had to lead.
+
+a group of young, we're talking to Kate about this today, the difficulty in digital media in making money and driving the machine meant that a lot of pressure got put on editorial teams to just relentlessly And I would say that, the union response, though generational, was very much the result of a group of people that were paid very little and asked to do something.
+
+work extremely hard. And that was a big part of the whole thing. So you can't interview 20 people when the organization has 3000 people in it. And you're not looking to talk to the people, the people that at that time, very important, Brian, at that time to say, Oh my God, I support this person. He was great.
+
+She was great. It was like, throwing yourself into the story in a way that you were going to be assaulted. there was no environment where the people that said good things felt comfortable saying good things because that wasn't the environment. It was an environment of fear, pure and simple. 
+
+[00:37:54] Brian: Do you think that's ending? I mean, there's definitely been 
+
+[00:37:56] Troy: well, you know, I didn't want to talk about this that much to be honest. And do I think it's ending? I think yes, but if you're me, you're still a little bit bitter about it because you forever have an article associated with your name that changes. the risk profile of hiring or, working with someone.
+
+And, 
+
+[00:38:17] Brian: Well, the good news is search result pages are going away. I don't know. I'm trying, trying to spin this positively going into the new year. 
+
+[00:38:26] Troy: right. But 
+
+[00:38:27] Brian: okay. 
+
+[00:38:28] Troy: it'll be
+
+[00:38:28] Brian: No, I think, there was like a weird fever that went on and I know a lot of people will, again, there's justifications and, and, but I think we're seeing with what's going on right now, it's, it's reached a logical conclusion where it's like, this is impossible.
+
+This has become a circular firing squad, and all of the inconsistencies and yeah, when you see this in the New York Times, I think now they have a. They have a new caucus within their union that is like fighting against the union, taking stands on the Israel Hamas war. and so these things always just sort of,
+
+to me, every revolution ends up like,fizzling to some degree because it just becomes untenable.
+
+well, in, in many revolutions, the oppressed want to take something from the oppressors. And the, one of the problems with the, the revolution in kind of unionization in media, is that Those companies are under such strain that it's a battle fought against someone who has no kind of choice but to massively rationalize and change their companies where the union wants, job growth.
+
+[00:39:42] Troy: compensation, growth, security and all of that. I mean, I feel for Roger at Condé Nast, like they've taken the battle to the bathrooms. They're putting posters up, you know, where is Roger? and like charging his office and, saying, you can't let people go. But at the same time, like that's a company that really hasn't materially made money in a decade.
+
+[00:40:03] Brian: Yeah, I'm Mark Stenberg had asked me From ad week if they're like reddit You know steak if that will like then change their decisions about how many people they're gonna let go These businesses 
+
+the way they work they're not working They're not working like and and they You know, you gotta make those kind of changes.
+
+That's why I think, these jobs are terrible are kind of bad jobs now. I mean, look, I don't feel still highly paid and whatnot. But at the same time, there's a lot of grief to a lot of these jobs because,in some ways to me like you're a steward of declining assets and that that's not as fun.
+
+[00:40:44] Troy: Yeah. I mean someone had asked me the same Brian about what would you, you even asked me this, what would you have done differently? I sort of compared Condé to Hearst. and if you looked over, say a 10 or 15 year horizon, Condé has arguably better products. In, and brands in the categories in which they compete, like in fashion, they have Vogue, Hearst is Ellen Bazaar,AD versus, other stuff, that in the Hearst portfolio, GQ versus Esquire, Condé has good products.
+
+but over that long horizon, 10, 15 years, Hearst has pulled billions of dollars out of the market in profits and Condé has not. And now we sit at a place where there's a new start, call it now, and you have to ask yourself like through their investment in their products, but you know, however critically you want to look at that, did, Condé Nast invest that money in the enterprise in a way that's going to help it make more money in the future?
+
+And I think that's hard to say yes to. So basically a lot of money was reinvested and it never made the enterprise more competitive nimble. future ready, et cetera. they invested in video and that costs tons of money and never did anything. And they invested in commerce and that costs tons of money and never did anything. they've admirably invested in things like, met ball and continued the franchises like, vanity fairs,the Oscar party and all that. But those are tiny parts of the, the whole media equation. And so I, I think it's interesting, probably what you would have had to do is go in and just.
+
+Aggressively divest brands costs,you know, license the brand focus on affiliate commerce, like do way more inactive, I mean, just stuff
+
+[00:42:28] Brian: I think what's interesting to me is they have done elements of all of the things that people do they've done elements of commerce, they did the video, they did the IP you know I mean it's almost like mad lips and everyone has some sort of version of it right but it's, it's all about execution and like I think Teen Vogue, right?
+
+Like, why was that even a thing? why in the world? I just think when you look back, when you think about the structural challenges to these businesses, nothing against Teen Vogue, or the legacy of Teen Vogue, or whatever, but it became this oppositional, anti Trump Teen Vogue, and then it became, there was, like, a scandal with, a new editor and stuff like this, and, or, or, high school tweets and stuff like this.
+
+[00:43:11] Troy: He should have taken it out back, like, put it out of its misery. You gotta be kidding me. Teen Vogue? Can you imagine sitting there and having these meetings about Teen Vogue? the whole, it's like, whatever does that mean? It's like, this is fine? the whole thing's on fire. And you're like, are we really having this meeting about Teen Vogue? I think that's a great point. That's kind of what I'm saying is you would have had to get. Much more gangster on your portfolio.
+
+[00:43:32] Brian: I mean, I would guess so. I mean, it's the thing is, it doesn't do you any good anyway. You You still got fight being taken to the bathroom stalls, still getting marched out of your office, so you might as well. But now I feel like that has has changed and a lot of these changes come from Silicon Valley and that's given a lot of cover to, what Elon Musk has done.
+
+and why, a lot of the companies there have, have now followed suit with cutting tons of people. media, I think I saw they cut like 20, 000 jobs this year. That's by one estimate. Unfortunately, I think that's going to continue next year. these organizations are probably going to have to get smaller.
+
+Don't you think?
+
+[00:44:12] Troy: Yeah. I mean, I think that seems to be the theme of what we've talked about, but let's get optimistic as you seem to want to end the year on an, on an upbeat note. We can, so new SERP. new super is interesting because it's just going to create tons of opportunities for people that figure out how to get in there and whether they're media brands where they're kind of provenance and, structure is preserved inside of the new interface, whether it's commercial entities that figure out what the new SEO, SEM game is inside of the LLM, LLM, whether it's app, you know, nascent or upcoming, Companies like that used to dominate in apps or new types of apps that can exist in an AI powered world.
+
+There is a huge amount of opportunity for innovation because the interface of the web and the phone is about to go through a major transition. So that's exciting. And I think
+
+[00:45:07] Brian: So you think you can still build brands off of indirect audiences, 
+
+[00:45:11] Troy: I
+
+mean, I, 
+
+[00:45:12] Brian: you don't control. 
+
+[00:45:13] Troy: think that you can always build brands. I just think that. The surface area in which you do it changes materially and it may not be by writing long articles. So yeah, of course you can build brands. You built a brand without
+
+[00:45:26] Brian: no, but what I mean is I did a podcast with Bridget Williams, from her newspaper side, 
+
+[00:45:32] Troy: Yeah.
+
+[00:45:33] Brian: Yeah, she's smart and she, and Bridget was talking about, controllable audiences and like just shifting the focus to controllable. Cause like there's so much out of your control as publishers. And now at this point, it's completely out of our control. And to me, like it's, it sounds all great, controllable audiences, but that just means you're just going to be way smaller because these brands are built. I mean, you look at the numbers. with those declining traffic, they're built off of search and
+
+search, 
+
+[00:46:01] Troy: It makes me think of so many things. I think that's a great term. Bridget, like controllable audiences makes a lot of sense. And I think that it is probably a smaller business because the whole. promise of, search and social driven internet publishing was that you could reach beyond your, the boundaries that had existed in a physical world, whether you were, a women's magazine that could move from, a narrow provenance to be celebrity, to be all things across a much larger space.
+
+Like,Cosmo was a certain type of publication and it could be now it could compete with an entertainment publication or a gossip magazine or whatever. So, they all broadened their horizons and now the world is saying you need meaningful direct relationships in this controlled.
+
+audience concept, which is smaller. The problem, one of the things that that makes you think, and it's just won't spend too much time here, but the, is that in, in local newspapers, you would think that in the local news business, that there's a lot of interested. participants in the ecosystem that really want content from you.
+
+And I think that's partially true, but I think the flip side of it is monetizing that outside of subscriptions is really difficult. And I think that there's a whole generation, first of all, selling to small businesses is. Is, is really expensive selling to unsophisticated small businesses in the, digital products is very difficult.
+
+And they also, all of those businesses now have the new tools of, meta and Google that they can use to do performance based advertising. I think that managing a performance based advertising stack is very difficult for any media company because it demands a huge amount of sophistication and technology to actually make it work.
+
+So as the world has shift to,
+
+[00:47:53] Brian: Yeah. And that's where the entire market has shifted to performance.
+
+[00:47:57] Troy: well, performance, machine learning, massive amounts of data to power these very sophisticated self serve systems. Like it's really hard for. local media to pull the economics out of that. while there may be an audience for their content, I think that, that's just the reality is that monetizing it via subscriptions and advertising is, is just going to be a challenging business, but that's, come on, you just pulled me back into negativity.
+
+I was getting all 
+
+up with, up with, new interfaces, getting all up in the interface. So
+
+[00:48:30] Brian: I'm very optimistic for next year. I think it's going to be good. 
+
+[00:48:33] Troy: to talk good product
+
+[00:48:35] Brian: Do you have a good product for the end of the year? One last thing that I learned, this is on my own sort of business front. one of my big, I was going through, you know, wins, losses, whatever for the year. And, you know, it's ragged at the end of the year, it always is. I think the big lesson that I learned this year is you can't outsource sales. you can't outsource sales. You just cannot. You have to do it. Because you'll never understand You'll never have true empathy for the customer, and you won't be able to make products that make sense if you outsource sales.
+
+you always have to, you have to always be talking to, to customers. And you have to talk to your audience, but you also have to talk to customers, if you're going to have an advertising model. And I, that's why I just think about, how crazy it is to outsource. relationships in programmatic advertising.
+
+I understand, the buy side decides how they want to buy. I just don't understand how you can have any control of a business if you don't have control of distribution one, and then you don't have direct relationships with your customers. That's just, that's wild to me, to even attempt that, but that was my big takeaway, personally.
+
+[00:49:44] Troy: that makes sense. The other reason why it's so critical, Brian, is, your ad products are really new nuanced and you're trying to figure out how to. Integrate a, sponsor's message need for leads into your, media products and activations in a way that isn't cookie cutter. And so it, it really involves the bending of your primary product to accommodate advertising in creative ways.
+
+And, I think when you're front and center on those discussions, you can do a better job of it.
+
+[00:50:19] Brian: Yeah. 
+
+[00:50:19] Troy: So 
+
+that's the key. 
+
+
+[00:50:24] good product
+---
+
+[00:50:24] Brian: So what's your, what's your good product?
+
+[00:50:25] Troy: well, I sent you guys a link of this company called The Pudding and The Pudding does, 
+
+[00:50:31] Brian: page.
+
+[00:50:34] Troy: well, it's called the pudding. cool. I don't know anything about the company other than they do like the style of kind of information presentation or infographics, sophisticated information kind of interfaces that you sometimes see on the New York Times.
+
+And one of the great. results of the New York Times having money to invest in technology is that their storytelling is, particularly when they use interactive elements or they blend that into sort of gaming interfaces is really fun. I mean, and that ranges from kind of pure gaming like I play connections every day.
+
+And that is the first thing I do when I open my time zap up to, just rich, combination of images, video and, and text in, in storytelling. And that's what the pudding does. That's not my good product. My good product is last week. Alex said to him, he said, and we got to react a couple of reactions to this.
+
+He talked about in our little mini episode, he talked about, This kind of transcendent existential moment he had sitting in traffic talking to the chat GPT, using the chat GPT chat. interface going back and forth. He was trying to figure out what the ending should be for his game. So he had this, discussion sitting in traffic with, LLM.
+
+And he said it was like incredible because, because it was audio and chat, he didn't formulate his, his questions or statements precisely. And there was an organic back and forth and all that. So I was inspired by that. And last week I was on my way to a meeting and I was walking in Brooklyn and I had my headphones on and I was interested in particular around the future of the Serp.
+
+And I started having a conversation with chat GPT about what happens to Google, the pressure for them to monetize, what the new interfaces look like, who their competitors will be, all of that. And I would say I had a conversation that was 80 percent of the way to like someone I would have like. a really good human interaction and 
+
+[00:52:41] Brian: give you pause at all? I, I, maybe I'm becoming old, but I see all the statistics of loneliness and the fact that people don't have friends anymore, don't see people. And I don't know if they're like, I, did you see the AI girlfriend? I shared that in the chat. Like I, of course, of course.
+
+It's very stereotypical that it would be one of the first applications.
+
+[00:53:01] Troy: Does it give me pause? I mean I looked at it as a tool where I could make better use of my time and Think through something in the place that I most like thinking through things which is walking And, that I could actually have the benefit of a huge reference pool to inform that conversation, which is what the LLM brings to it.
+
+And then all of that, that entire conversation would be transcribed and I could grab it off my phone when I got home. 
+
+[00:53:27] Brian: Okay, that sounds fine. 
+
+But, I think the but, is that when this replaces, like, I understand why AI came about in a certain, within this milieu. Because, humans are friction, they're a pain in the ass. They're just, they're, they're a pain. I'm, I'm going to some plant store, I'm in like a dispute with a plant store.
+
+like, why, why do I want this? Why do I want this in my life? It would be very easy for me to just avoid the MIMO garden center, plant war that's going on. But I think that there's a risk that it accelerates an already, a situation where people are already sort of retreating within their own personal bubbles to an alarming degree.
+
+And it's showing up in all of the statistics with the, with mental health issues, with loneliness. and just with a lack of empathy, I feel like for for other human beings and I understand how that would, I would think that that would accelerate as you have less interactions, whether just casually.
+
+Or not. I'm not arguing against, being able to work through the search engine result page with a robot. That's fine. The AI girlfriend stuff is where it gets a little scary for me.
+
+[00:54:42] Troy: Yeah.
+
+[00:54:43] Brian: And you start with the SERPs, next thing you know, you're dating a robot. I don't know. 
+
+[00:54:48] Troy: Well, I worry,
+
+I worry less about those things. if a person can be happy with an AI girlfriend, like good on them and that's great. And well, just let me finish. Let me finish. I think that the how it impacts how we deal with real humans and how it changes, as you said, the sort of empathy equation. that worries me for sure.
+
+I think the bigger issue right now around mental health is that. Coming out of covid, we've gone through so much change that it's impossible to keep up with. If you're a young person, you can't afford a house and there's a tremendous amount of economic insecurity. And I think all of that. Is more worrisome than me having a conversation with a chat bot.
+
+And so young people aren't doing better than their parents. If you have the fortune or misfortune to live in a coastal expensive coastal city, like I do, your kids have. Choices about, that are constrained by just the economics of living in cities like this. I think a lot of people don't feel like they have any economic security.
+
+And I think there's a lot. And then you add to that, conflicts in the Middle East and in Eastern Europe, and it's a time of great anxiety. Great anxiety, add climate in, add, political situation in the U S. And so I worry more about that and its impact on us physically and mentally than I do a chat bot.
+
+And I think that what happens when you 
+
+get things like 
+
+[00:56:15] Brian: related.
+
+[00:56:16] Troy: new technologies that do stuff like that, they drive you, they, they, they talk to you, all that stuff. People react and then they, go. there's always a pendulum swing where we now, have renewed interest in book circles or whatever, like human, human centered interaction without technology.
+
+So I feel like we correct 
+
+for, for those things. 
+
+[00:56:40] Brian: we're calling friendships these days? Human centered interactions without technology. 
+
+[00:56:44] Troy: Yeah. so anyway, I appreciate this podcast because I get to talk to you, Brian. And it's one of the great joys of my week always.
+
+[00:56:55] Brian: it's been a fun part of this. You know, the lack of monetization is disappointing, but, You know, that's okay.
+
+[00:57:03] Troy: Yeah. if two things happen. So if three, Alex suggested that we do this podcast, you and I were like, we did it. We all got to know one another a lot better. And I'm very grateful for that. I think it forces you to open your eyes during the week and, really try to understand the world. We're grateful for that.
+
+If it enriches anybody else's life, because we've given them an idea or a point of view or a new way of thinking about things, that's great. all of that makes it worthwhile, I think.
+
+[00:57:33] Brian: Oh, I agree. I hear from people about this all the time. So,
+
+
+[00:57:36] outro
+---
+
+[00:57:37] Brian: do send in your feedback. my email's brian at therebooting. com. 
+
+[00:57:41] Troy: You want a PVA address? I could get you a PVA address
+
+[00:57:45] Brian: No, I want to keep my, my brand going. I'm actually, I'm switching platforms. I'm switching from Substack to Ghost. They're like an open source, kind of like WordPress, but hipster. 
+
+[00:57:54] Troy: hipster. 
+
+WordPress. 
+
+When does that happen? When's the cutover? 
+
+[00:57:58] Brian: we're just doing it like now,it'll be fun.
+
+[00:58:01] Troy: All right. 
+
+[00:58:02] Brian: All right, this was fun, 
+
+[00:58:03] Troy: what an episode. 
+
+[00:58:05] Brian: 
+

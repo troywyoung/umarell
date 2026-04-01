@@ -1,0 +1,1033 @@
+PvA S3E137
+===
+
+
+[00:00:00] Intro
+---
+
+​
+
+[00:00:01] Brian: This is a special edition of people versus algorithms. I am losing my voice. I don't know why. I think it's because I made, , I made a joke, , on a plane about why people were still wearing masks on planes.
+
+And sure enough, I'm losing my voice now after taking a flight. So there you go. Troy and Alex are, are unable to be here. Troy's traveling. Alex had some conflict. I wouldn't move the time. but ab you're always reliable.
+
+I
+
+[00:00:29] AB: As long
+
+as it's in my calendar, then I can be reliable. Yeah.
+
+[00:00:32] Brian: it. You, I love it. You know, I think that's a good trait in a banker.
+
+Reliability. I don't want fickle bankers.
+
+[00:00:39] AB: This is gonna be like the rebooting podcast.
+
+[00:00:41] Brian: ​
+
+we were gonna do an episode about like the future of the knowledge economy, but I thought like, 'cause of the two of us, we should really dig more into And to what's going on in the m and a market. We did a little bit of this on, on the rebooting show, but there's so much more, to, to get into, and I heard from a lot of people on it.
+
+People really liked it. You're like a star ab I don't know if you know this.
+
+[00:01:25] AB: They liked it. Yeah.
+
+[00:01:26] Brian: Yeah, no. You're a
+
+[00:01:28] AB: it.
+
+[00:01:28] Brian: Yeah, they loved it. Again, I'm just literally te saying like, basic information, but not everyone has access to it, so,let's get into
+
+[00:01:36] AB: I'm
+
+Happy people like it. Yeah.
+
+[00:01:37] Brian: don't, have access to. 
+
+
+[00:01:39] NY Tech Week
+---
+
+[00:01:39] Brian: but let's start with New York Tech Week. It is. I don't even, I, I still don't think New York Tech Week exists, but it, it does apparently for some unknown reason. and so that means there's like parties and, and different things.
+
+I went to one like last night with Axel Springer.I don't know any takeaways from like New York Tech Week.
+
+[00:01:57] AB: is really
+
+the idea is really good, but where
+
+decentral,
+
+Decentral. 'cause it's not easy to host a conference in New York. Right. So it's completely decentralized.
+
+[00:02:06] Brian: in New York City.
+
+[00:02:07] AB: Where have
+
+now gotten is the RSVP for everything.
+
+And then so you get added on to these event pages. and you see it's like 500
+
+go, I,
+
+I've been to, this was last year, I went to an
+
+event where 500 people were RSVP'd and then like
+
+40 people actually showed
+
+[00:02:24] Brian: That's the 
+
+[00:02:24] AB: Um. yeah, so obviously the dinners and I
+
+think, 
+
+other likecurated events great because everyone seems
+
+to be here, from like the West coast and other places. But,
+
+I think the general large format events,
+
+think
+
+they're gonna have to
+
+figure out something do with it because it's like not
+
+working.
+
+It's, you know, pushing everybody.
+
+They
+
+have like this,
+
+it's
+
+kind of funny when you go to calendar, you know, they have all these
+
+random events 'cause anyone
+
+can post
+
+on it. And then,
+
+what it's supposed to be doing, I think is, it's kind of losing the juice because there's a bunch of random events, like I said, there's 500 people
+
+RSVPing to stuff where 40 people
+
+come. I, I, I bet Andreessen will
+
+kind of
+
+push to make it better. but it does feel
+
+like just in general, the market
+
+for.
+
+B2B conferences and stuff like that,
+
+it's like tilt. Right? I feel like every time you go on LinkedIn, there's another
+
+event that, 
+
+[00:03:16] Brian: There has to be a limit. Correct. Like at some point like we're gonna find the limit and it, it's funny 'cause. Not funny, but, you know, business Insider had its, its cuts and they cut over 20% of the staff. it's even worse in the uk It's really strange in the UK that like, they like decimated their entire sales team in the uk.
+
+but it's really strange, you know, in the UK you can't just like. You can't just like lay people off, like you have to go into some like consultation process where they're just still working. Like, but like you're, you're getting rid of them, which is very strange. I don't know the best way to do these things.
+
+I'm not sure if that is though. but BI said that they're going to, you know, get into events now, and this is. This is a really crowded area. Like, I don't know about, you know, that, I mean, look, I, I'm actually gonna be talking with like the head of bi bi live in Cannes at another massive event in a couple of weeks.
+
+but like, you know, I'm going into that conversation with, you know, I do have skepticism about just the sheer number of these events that, and I came from Digiday, which was a heavily, heavily reliant on, on events. So I, I, I know. I know how they can work particularly, you know, monetarily. and particularly now, you know, publishers want to get away from their exposure to the page view economy.
+
+I mean, I did, I did a podcast, I think it was last week with, Jess Sibley, from time, and I was struck by one of the sort of metrics that are being like rolled out was how little. Revenue is tied to like basically ads on pages.
+
+[00:04:56] AB: I mean, it's, it's the one, well, there's a couple parts of these media companies that are not tied directly to CPM. but it's the one where
+
+the ratio of ad dollars
+
+to audience is like the most different compared to the traditional way that they
+
+make money. And so,
+
+you know, some of
+
+the, like an Axios can charge.
+
+A significant amount of money for getting 10 or 25 people in the room. whereas if they had 10 or 25 people to one of their pages that are
+
+not subscribed to one of their newsletter
+
+products, that's like less than a penny of value. And so, but I do think.
+
+it feels
+
+like these, these event
+
+bursts go in cycles
+
+because Basically when they come
+
+out
+
+and they, they launch
+
+in the first year or two, everyone has like a FOMO of like, I need to be here because my clients are gonna be here,
+
+or the people that I need to talk
+
+to. But I think pretty quickly, you've seen this with a
+
+couple events where the second or third year's attendance has been much
+
+lower because people realize like, I didn't
+
+need to go. But I feel like this year is still,
+
+especially as this economy continues to
+
+kind of hum along right now? Is
+
+that everyone is
+
+going to everything. I've been
+
+to los, I've been to Las Vegas four times this
+
+year. 
+
+[00:06:13] Brian: Oh, I'm sorry to hear that.I'm not, I'm not a Las Vegas fan.
+
+[00:06:17] AB: So it's, but it's like that's, that's,
+
+and it's all
+
+conference related, you know, 
+
+[00:06:22] Brian: Yeah, A lot of it is, is what the ROI is in that it's like, can is you're gonna be in can. 
+
+[00:06:28] AB: Mm-hmm. 
+
+[00:06:29] Brian: Okay. 
+
+
+[00:06:29] Cannes - A Carnival Of Capitalism
+---
+
+[00:06:29] Brian: so can is I guess like in, in two weeks, 10 days or so, and. It's funny from the publisher side, you know, can itself started as an advertising creativity. it was an award show, basically, which of French ad agencies back in the day.
+
+but it's com it's completely more from that. And it is now, like, I call it a carnival of capitalism. and it's not about the red carpet and the awards, it's about deal making. You know, they say like they get like, I dunno, 13,000 delegates, but they probably get two or three times that many people who are going and having meeting meetings in the Carlton and on yachts and on beaches and cafes and the rest of that.
+
+and so I, I'm interested to see with, with can. is funny 'cause you say like, well the economy's like humming along and I'm like, I talk with publishers AB
+
+and it is not humming along for them, which is like scary when you think about like what could happen and they're like, a lot of them are.
+
+Trimming their plans there. Some of it, some of it was just because they didn't see the ROI on this and, and so they just pulled back one, one publisher, I, I had asked, him if he was going publishing executive, and I wanted to see if he would come to, to a dinner and he was like, no. Like, we spent 400 K there last year, didn't get one deal.
+
+and then others like, swear by it. You know, I, I had a. I had a podcast with Josh Stinchcomb, this week from the Wall Street Journal. And, you know the, the Journal House is, yeah, that's a, it's a profit center. I like, I like marketing expenses that become profit centers.
+
+[00:08:14] AB: Yeah, I mean I it's probably what, as a media company it's like who are your client? Who, what clients are you catering to? I know when people have done editorial editorializing, like the evolution of can they always look at the boat mine up, right?
+
+So you look at food. Who's, who's has the biggest booth?
+
+Who, who has the big, or not booth, but like
+
+the setup. and you could sort of see the evolution of
+
+players, I think, you know, with the,
+
+[00:08:38] Brian: Will I see you on the, uh, SS
+
+Experian at some point during
+
+[00:08:44] AB: But you sort of see this, evolu, like I'm sure open AI is gonna have like an, like a, a massive
+
+presence there one way or another, or right? Because basically,
+
+[00:08:53] Brian: chump change. 
+
+[00:08:55] AB: yeah, it's chu change. There's no real ROI needed, like, part of the reason they're probably showing up is
+
+just to make sure they don't get 
+
+[00:09:01] Brian: Bread and circuses is what I call it. It's just like, you know, Google sort of, was the first to really catch well, Microsoft really was the first to catch onto that, but it was really Google, 'cause Google was coming to eat the entire industry. I. And they thought all of it was ridiculous. 'cause they're an engineering company.
+
+And I remember Tim Armstrong when he was the head of sales, I remember someone like saying to him, saying about him. It's like, oh yeah, they just sent Tim to collect the checks. and that was like, you know, for a massive business. Like it was, it was never. You know, Tim Armstrong could be like the CEO someday 'cause he's in charge of like, you know, 90.
+
+It's like, no, like, that's not how these businesses work. and so they treated like, can they, they thought it was like ridiculous, right? But then they realized kind of like what they realized with politics was like, oh, you just spend a little bit of money and like, you know, you can, you can have like a lot of impact.
+
+And so they're like, oh yeah, we'll just splash out on some like massive beach and stuff and keep them. You know, keep, keep the little, the advertising people, happy enough.
+
+[00:10:03] AB: I think one thing you know, you saw this at at
+
+CES doing a little bit better and people are willing
+
+to do more m and more m and a. I think one of
+
+the things that always do executive check-in. There's, executive two
+
+investors sort of check-ins, it's sort of conferences that even a 15 or 30
+
+minute can spur larger larger transactions.
+
+because it's a people to talk about, Hey, here's how Hey, here's how my company's doing. And
+
+so I think obviously like these sorts of conversation are not as are not as prolific as ad deals and other
+
+sorts of partnerships, but places, especially when they when they attract. entire the entire executive class.
+
+the one way to way to push deals along, especially when you're trying to
+
+do a more strategic transaction.
+
+And you're seeing right you're seeing right now in the market is. less processed like businesses that are being shopped to 20 plus buyers and more so more so of finding the you know, the three to five relevant people, that would potentially be interested in acquiring the asset. it's obviously there's, obviously you can't tie an R-R-R-O-I metric to it, but to it, but it's a utility that executives can
+
+get from 
+
+[00:11:14] Brian: Sure.
+
+[00:11:14] AB: in places because it, the funny thing though is thing though is
+
+you can't, talking I was talking about
+
+sitting at the
+
+meeting with, in this and they're like, oh, let's do it at let's do it at the company booth. And we are not we are not gonna have your potential aguire walk have a meeting at meeting at one of the 
+
+[00:11:29] Brian: you have like a secret location
+
+that you go, 
+
+[00:11:32] AB: I mean, we've d I've done hotel. Like No, I, I uh, 
+
+[00:11:36] Brian: You do like the ramada, so, because nobody.
+
+Come to my hotel room
+
+[00:11:41] AB: we've gotten hotel rooms specifically for
+
+20 minute meetings. Like we've like we've
+
+gotten like very expensive rooms just for, touch base because you're trying to, you know, provide some privacy and
+
+level of discretion. But it, I think people would think people would be surprised about how quick things can move from those
+
+sorts 
+
+of touch points.
+
+
+[00:12:00] Creator Events
+---
+
+[00:12:00] Brian: so I, I think the, I think there's gonna be two, a couple of, of big themes that come out of it. Like one is, the creators are gonna be everywhere.
+
+we are gonna see, I. You know, it's funny 'cause I talk about it as the information space because everyone competes with everyone and you know, you talked about it like on the level of like getting like 10 or 20 people in a room like Axios, you know, can do that. Like, guess what, like individuals can do that too.
+
+certainly sort of what I see and you know, I think the creators themselves, that's where the heat is right now and they're going after the big budgets.
+
+[00:12:35] AB: Yeah, I mean the nice thing with the creator, this happens in media through the cycles, is
+
+there,
+
+there is always like grace period where what's hot doesn't necessarily
+
+need to tie to
+
+pure value yet. And I feel like that's where we are now
+
+in the creator space where you know, brands are turning on substack,
+
+[00:12:53] Brian: Not in the B2B creator
+
+space ab. 
+
+[00:12:57] AB: But there's a lot of opportunity for these creators. I,
+
+you know, I talked to someone who's hosting a creator event and her point was like, everyone's going to, all the, everyone's gonna be here right from the creator side. So,
+
+I think, and probably last year, there's
+
+a, a handful, but it's just, it's interesting see how quick they're moving to. The ad dollars and to your point, like they can take down very large
+
+now. Like their, their ability to influence or their perceived ability to influence, is high enough now where can, they can get direct from very large advertisers, which hasn't always been right. Like a typical creator could expect or $50,000. But I think it's getting more and more
+
+as brands figure out different ways of doing the partnerships and have to lean in, there's like more competition so the prices go 
+
+up. 
+
+[00:13:47] Brian: Yeah, 
+
+I mean, how many of these creators are building like tradable assets?
+
+[00:13:52] AB: Very few. like look at the Mr. Beast
+
+business, right? So, like the value that he's like yes, the YouTube channel has a ton of
+
+engagement, but in the deck that they were shopping the business with like the, his chocolate
+
+company, Feast Bowls was like a core. pillar of value and how they like future value creation is, is additional businesses not necessarily in their, in his core, core, vertical around
+
+video, but I think it's really tough.
+
+Like it
+
+takes someone who is basically multifaceted to basically wear the a of a creator, but then also pull back and have the energy and the desire to
+
+build other 
+
+things. 
+
+[00:14:35] Brian: Yeah, and you gotta get beyond like just the brand partnership deals and certainly the YouTube payouts, because you gotta figure out how to build that. Other business. You know, I always say like, media is like a front business. You know, you gotta have a front. I mean, that's what, that's what Politico was.
+
+You know, Politico is the front business for a Bloomberg esque, you know, business in the back at the end of the day. and figuring that out is the key, because the page, the economy ain't coming back. And when you are exposed to CPM ad deals, I don't care if you're on YouTube or whatever, that's limited.
+
+And, I don't know that that's what I think the most valuable, businesses are gonna be created.
+
+[00:15:19] AB: Yeah, I agree. I mean, you saw the, the Hailey Bieber, transaction around her cosmetics brand. It's I think it's a little bit different than the Mr. Beast. context because she had kind of partners. I'm sure she was somewhat involved, but it was purely on the back of her
+
+audience. And there, I mean, the product was smart. There's like a lot of things that into it. it's hard
+
+to add, like you see
+
+the LinkedIn takes on it and it's hard to abstract like how that was made with like three bullet points. 'cause I think a lot went into it, in terms of market positioning, pricing, dah, dah. dah. But, it's a billion dollar. you know, transaction. so 
+
+[00:15:53] Brian: Who's building 
+
+these kind of business? Like gimme, 
+
+like name, check, a couple people that you think like people should keep their eye on because. Maybe they're not Hailey Bieber, but like that they can build real serious enterprise. They're building real enterprise value, not a lifestyle business.
+
+[00:16:11] AB: let me take it in a little bit different direction, which
+
+there are, there's this company called Infinite Garden Garden and so Infinite.
+
+[00:16:18] Brian: This This is cool. 
+
+[00:16:19] AB: Yeah. and
+
+so this is a
+
+business that, it's from the co-founders of care of, which is like a a good D two C brand. They grew it. And They sold it. and so their new company
+
+is able to take, basically pa, they pair themselves up with creators or influencers. And can spin up a
+
+brand in like weeks versus months or years. And so, because it's really hard to tell, especially if hasn't released a product before, how well it's gonna be received by
+
+their audiences.
+
+Like there is, you know, some signaling data that you can get.
+
+But I I think a business like this is really interesting in that
+
+The, the speed to market is
+
+really quick, and then you can of test and learn from there. And I think they're going
+
+to create a really valuable platform where they're partnered with hundreds of creators and providing, so what they create is like supplements and other things that can be, you know, delivered nutrition and other things like that, that can be
+
+delivered.
+
+Through the mail. but they do all like, and everything is like AI powered, right? So they do the branding, they can do all these things, with the help of AI in a much faster, timeline. And then they know all the producers and
+
+like that. So I would say like from where
+
+I sit, that's that's, a bankable company. I think that there's
+
+always gonna be consumer products created by these creators. it's it's, it's gonna be very lumpy, right, in terms of where true value is created, where most of
+
+them,
+
+you know, will end up like kind of shark tank companies where
+
+they're generating a couple million of ebitda. like, It's a business, but it's not really something that's gonna trade
+
+and be covered in 
+
+the Wall
+
+Street 
+
+[00:17:58] Brian: Yeah, 
+
+
+[00:17:58] AI Creative
+---
+
+[00:17:59] Brian: I think one of the other
+
+big themes is gonna be AI creative. I mean, you sort of flicked at it a little bit. You know, we're seeing what is going on with the ad holding companies. I mean, they're going in a completely direction, a completely different direction because it's clear that Google and Meta are, are not just coming to eat like some of their lunch, but like the whole lunch and maybe their, their 
+
+dinner and maybe their house and maybe their spouse.
+
+because like they're. They're basically, I mean, they identified, and it's funny 'cause I, I, I mentioned Tim Armstrong. I always go back to a meeting I had, with him at, the Astor Place Starbucks, which was the greatest Starbucks in New York City, by the way. Sad that it closed. and he sketched out for me this little system where he was like, you're gonna, you're gonna, a company's just gonna upload all of their SKUs.
+
+And there's not gonna be any of this advertising. We're just gonna take it and we're gonna use all the data and whatnot. This was like 15, 20 years ago, and we're gonna like. Just distribute it all over the place and they're just gonna pay based on, sales. And so we're not gonna, and that was always the Google thing.
+
+It's like, we're not advertising, we're a cost of sales, uncapped budgets, et cetera, et cetera, et cetera. And it's pretty clear that, you know, ad holding companies, are not gonna be able to, compete with their old models. And they are. Drastically changing their models. And, it's gonna be, it's gonna be a weird thing to me that like this Festival of creativity is gonna all all be about how robots can do the cre creative.
+
+[00:19:28] AB: Yeah. I mean the, the agency world and the way that use them, I feel like is always in this cycle where companies will some of this stuff in-house And then pass it back to them. And when you learn more
+
+about like some tech
+
+that
+
+people wanna try to pitch to companies to improve their advertising and they realize, oh, I to go talk to The agency to get traction here. The agencies provide a level of
+
+service that's good enough, like good but then they also provide for the cm, the people that are hiring
+
+them,
+
+like for the performance, right? So yes, the buck with the CCFO or CRO, but they can also pass some blame
+
+their agency partners
+
+when things go wrong and
+
+they like to take credit when things go right.
+
+And so there's still a significant role for the to play. I think what they're gonna try 
+
+[00:20:18] Brian: That's not much of a 
+
+moat. AB 
+
+CYA
+
+is, 
+
+[00:20:22] AB: It's is just how the 
+
+[00:20:23] Brian: it's a niche
+
+[00:20:24] AB: they, they a lot, they provide a lot more value than that. But I
+
+that when it, when it's ever
+
+to like technical innovation or new ways of doing thing, they've been like, it's really tough to go direct to a company. You always get to.
+
+Talking to their agency. And so, not saying that's the only reason why people use agencies, but they serve a need.
+
+And I think that.
+
+yes, Facebook should be able to develop better, better AI tools than an agency can. but I think they can. Build up enough and still
+
+provide this level of cl client service that you can't necessarily from a Facebook. I mean, I think if you talk to most people in terms of their engagement their Facebook or their rep, they're usually pretty frustrated. they say it's disorganized. they say that they don't, they don't, care about me. Um. 
+
+[00:21:12] Brian: by the way, their ad
+
+systems go down constantly. 
+
+[00:21:15] AB: Yeah.
+
+[00:21:15] Brian: Which is, which is insanity. Like I, to me, it's like they, they're this always on and they're talking about, Hey, I'm like, you can't keep your ad systems up and running. Like, I mean, obviously it's massive scale, but it's also like massive money.
+
+So I just kind of expect, if you're the most sophisticated con companies in the world, you should be able to keep your ad system that is like most of your revenue up and running. I like stopped running the stories about, at Digiday about the, the frustrations over how their systems kept going down.
+
+During peak periods, important periods because it was just like gambling and Casablanca. At some point I was like, okay, well look, if people just accept this as like, okay, like it's kind of like scaffolding in New York City. Like, I mean, I think it's like insanity that people live like this, but if that's the way the majority of people want, you know, the city to be, so be it.
+
+[00:22:04] AB: Yeah, So it's, but that, start, like as you talk about themes, it starts
+
+to show you where agencies may go. They've been pretty active on the creator space,
+
+just
+
+to pick up that. Audience, but we, because if there's an ability to make more ads, then you need to manage of that creative. And like, if you can create a thousand more creative, you know,
+
+copy You that you're basically programmatically delivering to the audience that's gonna convert highest, Someone's managing that, someone's leading creative. So you may less like hands on the keyboard to make the creative, but you're gonna have someone still
+
+it. there's other providers
+
+are
+
+providing like the brand safety and the measurement, for that stuff.
+
+Like that's critical. I think the other thing, these AI engines. Only well when the right customer data fed into them.
+
+And a lot of companies don't have properly
+
+set up, even if they they do. And you can see it's the, pr it's it's the
+
+simplest thing for agencies to like lean into is cleaning
+
+up that.
+
+you know,
+
+the CDP, the customer data profiles and things like that to help basically better facilitate Facebook's targeting or Google tar Google's targeting. So you have like the full funnel of 
+
+information.
+
+[00:23:20] Brian: and there's a 
+
+lot 
+
+of handcrafted stuff in the agency business still. Like there's a lot of people who are doing stuff that, I mean, I don't even know if AI is needed. I mean, maybe just like, you know, Zapier at some point could be, could be used. Like there's a lot of that. And So, I mean, we're seeing, you know, group M just, rebranded, I guess is WPP media and they're like cutting swaths of people.
+
+and look, they'll, they'll redeploy because, you know, but it'll be a different type of people. And I think one of the things, it is a little bit outside of the banking realm, but,One of the things that I think is not quite appreciated, Troy has like mentioned this before, is a lot of people went into advertising, who are, who are creative individuals.
+
+It might not be their quote unquote passion, you know, but it was, you know, they were DJs or there were, there were painters or, and this was a way to little bit have your cake and eat it too. Like you didn't have to be a starving artist. You could be an ad creative, but also still do your art. and look, I know there's so many second and third order impacts when we talk about ai, but I also like sort of concerned about that, right?
+
+Like, I mean, the, the reality was like this was a profession that supported a lot of people who were doing other, like, creative things that I hope, like enriched,our, our society and culture. To a large degree, but also is like, I don't know, it's like a society. It's good to have people that are able to pursue creative, endeavors.
+
+and that is an avenue that is gonna be, less available, to, a lot of people. I'm, I'm not saying there's still gonna be people who are incredibly creative, but you're not gonna need the, the same numbers.
+
+[00:24:58] AB: Yeah. I mean, there's gonna
+
+be this, there'll still be a lot of people, but I feel like it'll be weighted more, the, the hyper creative people will be able to produce a lot more. And so you see situations, you could see like this profile the New York Times in like five years where like this one, you know, this one
+
+25-year-old person created like the top 10 advertising cream for the Super Bowl.
+
+Like he basically, or he she, he or
+
+[00:25:23] Brian: Within five years, an individual will win the top award in Cannes 
+
+or any individual working with like a ton of AI bots, like it's inevitable that this is gonna
+
+happen. You know, it's, it's someone like, I know this guy like Jason Zada, he was an ad creative, right?
+
+But he is really a filmmaker. And I mean, I knew him like when he was the ECD at this, uh, San Francisco agency called EVB. they did the Elf Yourself. Do you remember Elf Yourself?
+
+[00:25:51] AB: Yeah, I mean, I think that that one interesting 
+
+[00:25:54] Brian: But no. No, but he does, he 
+
+does 
+
+all of this. He, he, he's making these like AI films basically now. Uh, they go
+
+[00:26:02] AB: mean disruption disruption. can be can be enabled at a much rapid, more rapid pace
+
+market the market favors a change. And so in terms of like general content I. you know, it's know, it's not a healthy ecosystem, right? The costs have gone up so much after COVID. It is like the government spending. It's like costs are up way too much. the audience
+
+is going down, the amount
+
+of people wanting to buy content has gone down. And so. that is like opportune for this AI component, even with like the different unions who are trying to hold it back. but it's like the
+
+perfect environment for lower cost of content creation to exist. 
+
+[00:26:44] Brian: Yeah, on that. Like it's, I think 
+
+it's pretty interesting how 
+
+the, the Hollywood unions were like kind of ahead of it. Like, you know, they dug in their heels on, on the use of ai. But I, I wonder if that's gonna be like a giant long-term LI. Which I think honestly, I mean I look, I understand like unionization, I took a little shot at unions like last week with regard to, you know, BI and all of these people, all these companies that have, that I've witnessed, go into terminal decline.
+
+Like just about all of them have been, went through these union battles. Like, I think about it, I'm like, well, the, the white walkers were coming and you're battling over like who's, uh, whose slice of the pizza was, was bigger And like, there ain't no pizza left. You know? I mean, congrats, you know, vice, vice unionized.
+
+It doesn't exist. I mean it exists but went bankrupt. and you know, I think in some ways it's gonna. You know, they're gonna have to compete and it's gonna be a totally different cost basis. That's gonna be a tough one, I think, in a lot 
+
+[00:27:47] AB: Yeah, the the market demanding.
+
+a a reset in the cost, right? You cannot today easily make, like you cannot in have like a independent content production company. Like it's not, it's way harder than it was five years ago. The other nuance is like there are ways to go around the union, right? So like there, the union stop the distribution of content.
+
+They get mad about that, but their only control
+
+is over the labor supply that's also unionized. And so. there's a lot of content
+
+that gets put down on TV that's non-union. And so I, there is,
+
+they don't have like a complete stronghold obviously on the stars, you they do. But, and it could amount of the talent,
+
+But there are ways to start to crack. away at how
+
+the the ratio
+
+of content that's produced in a real environment versus in this AI world that's like a 
+
+non-union, non-expensive 
+
+content. 
+
+[00:28:44] Brian: Yeah. look, that's one of the reasons a lot of events are in are in Miami. Like, I mean, we did this like at my last job. I mean, you, you start to do events in New York City and you realize that you just paid more for someone to like, bring in a TV than the TV costs. And all of a sudden you're, you're really into, you're really into Miami as an option, because that's, you know.
+
+This is the laboratory. This is a laboratory, not just of democracy, but of capitalism and see, which it's, you gotta compete.
+
+
+[00:29:12] Newsletter: Great Business
+---
+
+[00:29:12] Brian: let me ask you this, 'cause I, I had a meeting with a, a newsletter person
+
+[00:29:16] AB: Mm-hmm.
+
+[00:29:17] Brian: today. and this is sometimes I think kind of lost about how the
+
+economics of some of these businesses can be really good.
+
+'cause we talk a lot about, at least I do, about the doom and gloom. 'cause that's only one part of like the media ecosystem. It's massive. And this person I said, I said I would, I would, I would make them anonymous. But really, they should be like bragging about this. I'm gonna do like almost $3 million this year at like 90% margins.
+
+Like one person, no FTEs, like newsletter, podcast, and some like small activations, great 
+
+[00:29:53] AB: And yeah, I mean the the one you're talking about, the question is like,
+
+can you turn, I mean, if that person wants to turn it into more of a B2B media company if they're
+
+just happy with 
+
+a
+
+couple million 
+
+[00:30:05] Brian: Well, that's what we were talking about is, is, is, and that's what I wanted to get your 
+
+your take on, because I wanna connect you with them.it's funny, I, I gave them advice over the last couple years. I'm like, Jesus Christ, I like your business more than my business. What am I doing here? Um, but in a very lucrative niche, I'll just say.
+
+And, not that, not that publishing is not a lucrative niche. I mean, it's not. But like, I think the question is do you want to keep, like do going at those kind of like margins or do you want to build like a quote unquote like real business? I think AI scrambles a lot of this. I don't know if other people have this, but I feel like a lot of.
+
+A lot of layoffs that are happening now, or a lot of people are just like delaying hiring because you just don't know what will be able to be done by robots versus adding more fixed costs in a completely like unknown environment. Like every day. Like I see, it's like, it's like every day it's like. Dario says that like, you know, 90% of doctors will be gone in three years.
+
+I'm like, oh, okay. Like these days you just like sort of shrug. You're like, okay. Mm-hmm.
+
+[00:31:15] AB: the layoffs that are happening now are more of this disruption of. Traffic less about AI impending doom. and the problem too is like, so like, it's interesting, this whole cost thing is.
+
+is, something relevant to talk about at media companies? So. say you have an employee base you
+
+have an office here in New York, you have these things, right? Your
+
+costs are gonna go up least three to 5% or more per year, and they've gone up a lot higher post COVID. the
+
+problem is the media companies revenue has not matched that. And so even if you just keep your revenue the same, you have to trim. Headcount And costs to maintain the same
+
+ebitda.
+
+And that I think this cost issue is, apparent in,
+
+in, everything the government budget, like the amount we're spending on like Medicare or Medicaid, it's like double what it was in 2019. And so it's happening at companies. And so some of these layoffs are not necessarily their revenues. Down that much.
+
+In some
+
+it is, but it's just fact that Things have a lot more expensive and they're not
+
+making much more money. And so they're basically having to say, okay, how can we do the same less people? that's the nice thing about too. There's doesn't really require that much? Sometimes
+
+these, these, media companies outsource part of the and planning, so they don't really take risk. They bring in advertisers up front. They 
+
+sell tickets. 
+
+[00:32:38] Brian: They take risk. I mean, you gotta put down deposits and and 
+
+[00:32:42] AB: A little. Yeah. But it's, it's pretty, it can be pretty mitigated. but
+
+back to your newsletter person.
+
+The interesting with like, media companies when they sell for large amounts of money, like it's kind of
+
+like a venture backed where you're delaying profit. In the hopes that your audience and
+
+revenue grow big enough to where someone comes along and buys you.
+
+There's been very few like Axios
+
+is pretty unique where you've created like sustainable businesses that were fully independent 
+
+[00:33:14] Brian: But look at Politico Politico didn't make any
+
+money.
+
+[00:33:17] AB: Yeah. But most of the time you're basically banking on fact that you're gonna grow and then find to buy you. and so.
+
+I think for these substack and newsletters that are generating a
+
+a couple million in revenue, they, everyone wants to kind of and. When they, like a lot of people write these, everyone asks them like, when are you gonna hire more writers? When are you gonna go through the normal cycle of what a media does? And like adding more content, building the audience, increasing monetization. But it's like, for them, I think they know that if they start doing that, they're not going to.
+
+make the same level of profit.
+
+And there's an insane of risk associated with it, because the pool of potential buyers. Is much less than ever has been. And so I think for a person, that you mentioned, the
+
+the $3 million person, the ways to figure
+
+out how to create additional enterprise value is in like different
+
+vectors where you can tap into the audience. Provide them some level of service or value that they for. that's different than reading the content.
+
+[00:34:21] Brian: Yeah. 
+
+Is revenue 
+
+per employee an increasingly 
+
+important metric? Has it always been important or like, 'cause to me, like a lot of times I want to, I've noticed like a change in, People used to always say like, how many employees they had as like a, a sort of flex. And it was like, it was like, okay, well you can sort of figure out how they're growing.
+
+They're like, well, we have like 75 employees. And you're like, okay, I'm gonna, it's a media company. I'm gonna like, you know, do some basic multiplication.
+
+feel like it's kind of the opposite, like a lot of times. If you don't have like any full-time employees who are like, Ooh, nice. I, I find it a lot 'cause as, as someone who does it, like people are like, good job.
+
+Like, I don't know if that is a good job. but is that like, do the metrics end up changing the KPIs,
+
+[00:35:11] AB: I think there's like, it depends where, where you're at, right? So if
+
+you're selling a company, you tend to use like benchmarkingdata. like Revenue per employee.
+
+If your company, you basically pick the metrics that make your company that you're selling
+
+look good, right? And
+
+so, yeah, we've used that before. and it's meant to show that like you
+
+have an organization that.
+
+Is really efficient and you figured
+
+out something because if you think about it, like in a competitive kinda capitalist society like your margins
+
+should down because more competition should come in And tell like the profit is at a normalized level. And so I think one of the things by showing the revenue per employees, you can just show how you are and it should. Correlate to profitability unless there's like some fixed cost or not fixed, like some other cost that is a significant part of the p and l that's not attached to, uh, attached to, employees.
+
+So real estate, You know it like there's other costs. Typically, for a lot of these businesses, employees is the number one. 
+
+[00:36:12] Brian: I feel like in the 
+
+last era you would have these, Particularly the venture funded companies where they have like $200,000, like per employee and then you look at like, you know, a punchbowl model and it's over a million. 
+
+and that's more along the lines of, of what you see in,
+
+in other businesses.
+
+I don't wanna say like in, in all tech businesses, but I mean, look, these businesses are not tech businesses. But if you're, you know, you're small. To me it's like, you know, you, you better, you better make a lot per employee if you're small.
+
+[00:36:44] AB: Yeah, it's interesting, like if you think about it from the difference, 'cause it's the, the, best way to do
+
+benchmarking is compare like for like companies, right? And so a punch bowl might have a
+
+different revenue mix than a,
+
+a larger media company. to me, like an interesting example is like an academia,
+
+the ratio of like
+
+administrators. To to professors has I gotten completely out of whack? and so think the metric can probably tell you when an organization is completely bloated. And so one way you like just talking about it from an m
+
+a context, if you had a benchmarking page and you were acquiring company whose revenue per,
+
+per per employee was low,
+
+you could say, I wonder if we can gain efficiencies by.
+
+Laying off some people,
+
+right? Because you can say, this is a bit out whack. Like this organization is run inefficiently. Can we improve
+
+it? 
+
+
+[00:37:33] Newsweek Buying Ad Prime
+---
+
+[00:37:33] Brian: so one other topic I wanted to 
+
+talk to you about, 
+
+which was, I saw Newsweek is buying I Ad Prime, which is a healthcare DSPI think Newsweek is a, is a really interesting business. You know, it's gone through. So many different, like things that like, you know, there there was like lawsuits, there's all these accusations.
+
+They were, you know, content farm for a little while. and then they've like quietly been doing like, really well under, under dev perga. I'm trying to get Dev on, the rebooting show. We keep late. I'm trying to schedule it, but totally different type of business now than obviously, than it was when it was like a News weekly, but they're like zeroing in on these B2B niches like health.
+
+I'm a little wary. I. We're gonna have a little debate there because, like, without knowing any of the details, when I see a publisher has bought an ad tech company, I, I don't investigate anymore. And I say it's a terrible idea. It's, it's like when in a horror movie, when like the babysitter, opens up the door to the basement and decides to explore, I already know it's a terrible idea.
+
+So tell me why it's wrong. I'm wrong.
+
+[00:38:44] AB: let's,
+
+[00:38:45] Brian: Why? Why should Newsweek go into the basement?
+
+[00:38:47] AB: yeah,
+
+with the screen mask on.
+
+So let's just start with, the,
+
+how Newsweek got successful. And it's a kind of a fun story. Like if you Google it,
+
+they had the Korean Christian cult
+
+guy in there. It's like a whole random 
+
+[00:39:00] Brian: it's a movie like it's.
+
+[00:39:01] AB: Yeah. there's one place. Where Google has favored publishers, and publisher, there's a couple publishers that have from the favorability with Google.
+
+And so what I mean by that
+
+is when websites have a long
+
+publishing history, significant back links and are perceived
+
+by Google as reputable, even if like maybe it's dimmed in in a couple over a couple years and produce less content, there is a lot of value
+
+in, you know. Probably having one of the first news sites on the internet, like that, where when you to lean into the right content, it's going to rank and show up much higher than else. And so I think what they've done really
+
+well is just retooling
+
+content, and done it in a way to where they've created a profitable business.
+
+And like Newsweek is, you know, there's a couple of these like news brands that don't mean anything, but kind of mean everything, right? So like US News. 
+
+[00:39:58] Brian: Yeah, 
+
+[00:39:58] AB: is like, what is that? It produces news. It college rankings, but they've created 
+
+[00:40:02] Brian: it's a complete 
+
+listings 
+
+business, isn't 
+
+[00:40:04] AB: Yeah, But they produce 
+
+news. Like there's news on the 
+
+website. 
+
+[00:40:07] Brian: Yeah, But 
+
+that's like a. 
+
+I don't know. I mean, like that's, that's not what the
+
+business is. 
+
+[00:40:12] AB: But same thing with Newsweek. It's like sure. It it 
+
+[00:40:15] Brian: It's got a programmatic 
+
+ad business, you know? That's 
+
+[00:40:17] AB: Yeah, it is a brand. I think we're Newsweek. And the reason
+
+why I think acquisition is interesting is one, it doesn't like it's that big of a deal, like in of total value. And
+
+I would say that if you weighted value of
+
+what they paid for, it's less about the tech and more about the
+
+direct relationships with
+
+healthcare companies. so. Me meaning, 'cause Newsweek has a large audience in this space and
+
+they can growing it. But what advertisers look for whenever they go to any publisher is they wanna make sure the audiences enough scale that They don't need to do 20 different direct buys. They can do. A couple. and so a lot of publishers that are growing always struggle to win larger RFPs because their audience isn't big enough. And so I think the first thing that this solves is that they can compete and, and, it's a programmatic solution too, but it gives them access to their side audience. and they have all that data those people, but then everywhere else on the internet to deploy advertising. and this is both. If you look up that company, really hard to figure out what they do. I think I figured 
+
+[00:41:24] Brian: What Ad Prime 
+
+or 
+
+Newsweek? 
+
+[00:41:26] AB: ad
+
+[00:41:26] Brian: Oh yeah. 
+
+[00:41:27] AB: meaning the website is like cryptic. and so from what I gleaned the CEO's LinkedIn bio is it does both consumer and
+
+professional advertising. and so the professional space that's like, there's so much money spent. I mean, every time, like whenever you're in a doctor's office, you see those. Those drug reps showing up to try to sell in, you know, whatever the new whatever new drug that's like 10% better that they're trying to get market 
+
+[00:41:54] Brian: they're bringing in the sandwiches. 
+
+[00:41:56] AB: Yeah. And so there's a lot of money
+
+spent there. And then separately, on the consumer side. the proliferation of a lot of
+
+new companies around
+
+blood testing direct to consumer.
+
+Hair loss ed, all these things like
+
+the, the, money that's moving in.
+
+[00:42:12] Brian: no. no. It's a massive market. It's like, you know, I mean, pharmaceuticals 
+
+alone is what, like 15, 16% of the economy. I think it's a curious market for Newsweek. I don't know, like, I think a lot, I think the question for a lot of these type of brands, look, you can find pockets of any kind of group in, in your audience if it's big enough, right?
+
+But that ends up, maybe it's me as like a content guy. Like, I'm like, do you have permission in there? Like, I mean, why? Why, like Newsweek and, and health. I mean, I, I want to ask Dev, like, why in the world would Newsweek be synonymous with like health? I don't get that.
+
+[00:42:49] AB: It is. It is just, it's a point. Point. These brands mean everything and nothing. So like he came now with that. New revenue lean into building out. And maybe he has a bunch of news, I don't know, newsletters or something,
+
+but he can lean
+
+into to creating health content. And my point about his positioning with Google is like he will get traffic.
+
+Like he's probably not gonna rank better than the Mayo Clinic, but he has an opportunity to
+
+leverage the advertiser dollars to then fund new content creation. the the one wild card where this
+
+acquisition makes like. 10 x is if RFK turns off pharma advertising. Right? So if
+
+that stops like on tv,
+
+[00:43:33] Brian: tv. 
+
+[00:43:34] AB: that will have all that money. Who knows? Because right now it's really 
+
+[00:43:38] Brian: That's too, that's too big. It's too big. It's like, it's like when Trump was like, I'm gonna 
+
+raise, I'm gonna raise the taxes on the richest people. Like Trump doesn't back down on anything. 
+
+I haven't heard it. I haven't heard anything on that since he 
+
+[00:43:50] AB: Yeah, they're never gonna take away the carried interest pool, but the this advertising industry is the most weighted towards
+
+traditional media. It's still 50. 50. So in most cases it's way more towards digital. Now, in terms of where the ad dollars are spent, depending on consumer, vertical, healthcare is still 50 50. So even if there's a little bit of friction around advertising on Fox News at six o'clock, I think it benefits company. well, so my, 
+
+[00:44:20] Brian: Rupert Rupert is gonna like turn up the heat 
+
+if that happens. 
+
+[00:44:24] AB: so the value I in this acquisition is less about the
+
+tech, cause it's probably easy to replicate. It's more
+
+about the advertiser relationships and being able to,
+
+supply the advertisers with what they want, which is more audiences.
+
+The
+
+cool thing too is Newsweek should be able to sell in. Additional premium content and other packaging. Healthcare companies are notoriously bad at creating their own content. Like they'll pay a brand like McKenzie or Bain to build websites around new drugs just to educate consumers, that they need, need them. So I think there's a lot of opportunities for Newsweek to make money on this.
+
+[00:45:00] Brian: let's do a very quick, good product.
+
+
+[00:45:03] Good Product
+---
+
+​
+
+[00:45:05] Brian: This is a little cliche, but New York City in like early June, fantastic product. You know, it's not, not during February, I think it's a terrible product. January too, and, and large swaths of the year.
+
+It's not a great product, but, having been here, this
+
+[00:45:21] AB: It is hot. It's hot. right now. 
+
+[00:45:23] Brian: like 75 degrees. It's like amazing. I don't know how, I don't know how young people afford to live here, but if they can, if they can get their parents to pay for it, I don't understand why any young person wouldn't live here.
+
+I, I was walking back from the Axle Springer house. they're in no Nolita and walking back downtown. Through like the, the East Village and Lower East side, and they, they're closing off like Orchard Street and stuff now. It's like amazing. It's like run clubs around rollerblading clubs. It's great.
+
+[00:45:55] AB: Yeah, it's a great city. Yeah, it's definitely back after COVID,
+
+so Yeah. That, 
+
+[00:45:59] Brian: that meme, that meme is gone, 
+
+I 
+
+[00:46:01] AB: there are still some
+
+characters running around, 
+
+[00:46:04] Brian: Well, that's what keeps it real. I mean, this is like the last place where, 
+
+you know, the, the rich, the not. Rich, but like resentful that they're not rich and like the, the extremely poor all rub up against each other, like, you know, to,different types of effects. But it's, yeah, it's unique.
+
+[00:46:25] AB: yeah, the grittiness is good.
+
+[00:46:26] Brian: Okay. Thanks ab. We'll be back with a regular episode,
+
+next week. 
+
+
+[00:46:32] Outro
+---
+
+That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+[00:46:53] Troy: It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+
+

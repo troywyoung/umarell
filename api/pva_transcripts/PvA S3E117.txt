@@ -1,0 +1,911 @@
+PvA S3E117
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Troy: so anyway, Brian, you can see where we're going here. I particularly like this pink flare up on the right, and I like what he's done with the blue over top, cause it suggests. Tension, like two things smashing together. I hate the circles, but Alex is going to take some time. I can't figure out, and this will come up in the productivity episode, whether Alex is just like, he's a genius that needs time or he's wildly unproductive.
+
+I think maybe, maybe both.
+
+[00:00:27] Alex: I like, I like you, Troy. I still have a job.
+
+[00:00:29] Brian: all right. Welcome to people versus algorithms show about media technology and culture. I am Brian Marcy. I'm joined each week by Alex Schleifer, 
+
+that's 
+
+[00:00:43] Alex: me, 
+
+[00:00:43] Brian: who just decapitated Troy Young. Welcome guys.
+
+
+[00:00:47] Intro
+---
+
+​
+
+[00:01:10] Troy: we're doing a brand review. I, I'm glad you like it, Troy. I was,no, it's fun. I it's, you know what, Alex, it just brings me back to the old days when we used to in the same kind of back and forth, I would sort of make something crappy, shame you, send it over, and then you would make something better. But it was always my strategy to put something out there that you could react negatively to sometimes positively, but more frequently negatively, and then get you to make
+
+[00:01:36] Brian: Do you like that Alex? Or are you like,
+
+stop with the amateur design, leave this to the professionals.
+
+[00:01:43] Troy: Troy and I have been working together for long enough. So it's, it's pretty transparent at this stage. I like, I really like working with Troy. I think, I do have. A very busy job and on top of that, my,I had a meeting today.
+
+[00:01:55] Alex: I have contractors that 
+
+[00:01:57] Brian: Troy just got out of 
+
+tennis 
+
+[00:01:59] Alex: morning, 
+
+he had a morning meeting at the Gramercy or whatever hotel.
+
+I don't know. I don't think, yeah, across B3, I have, contract. I have, you know, it's sad. I have contractors in my basement because the concrete's peeling off. yeah, I'm so busy I couldn't get my tooth fixed today. So I will do, we're, we're, for the audience, we are talking about doing a rebrand for people versus algorithms.
+
+And Troy has been pestering me and, and Troy, you know, I think inspiration will strike you at different times of the day and then you just want something done. and I try to, I try to accommodate. Also, Troy's trying to get me to pay for his Figma license and I'm not going to do
+
+[00:02:36] Troy: I'm not trying to do that. I just don't understand why I can't literally copy a layer on Figma because I'm
+
+[00:02:42] Brian: Because that's their business models. This, all of these SAS companies, except for my clients are scams 
+
+[00:02:48] Troy: I need you to cut the layer, I need you to cut the layers up then and send it to me because I don't need Figma. I'll pay for anything you want, but I don't need Figma.
+
+[00:02:57] Brian: SurveyMonkey, SurveyMonkey, unless they're not a partner, they're the worst. Like the idea that like someone else needs to log in to actually do the, put the survey on my team and then all of a sudden I gotta pay way more money just 'cause someone else. It's, it's ridiculous. 
+
+[00:03:14] Alex: Dave made it much easier to catch. it used to be that it was pretty. Invisible, you know, people would just ask for edit permission and you just say yes. And at some point I looked at my bill and it was like 720. And I was like, we have four people. and, and there were like 12 people getting free
+
+[00:03:29] Troy: big, big picture is, we could, we could go with a design from the Troy Young design skunk works, which is not the best product that you'll ever see, but it's not bad. It's there's some ideas there. 
+
+[00:03:42] Brian: heavy on the authenticity front. 
+
+[00:03:44] Troy: yeah. Or, or, you know, there's a podcast with someone who's a distinguished design thinker and person, who could contribute to it.
+
+How long did this take you Alex? An hour?
+
+[00:03:54] Alex: Yes. 
+
+[00:03:55] Troy: Yes. Okay, so let's put a couple more hours in and see what we can get out of this
+
+[00:03:59] Brian: let's see, we triple that. We might, we might have something pretty good. 
+
+[00:04:03] Alex: it took me an hour and 30 years of experience.
+
+[00:04:06] Brian: exactly.
+
+[00:04:07] Troy: Okay, Picasso.
+
+
+[00:04:11] Productivity
+---
+
+[00:04:11] Brian: I mean, that's how you become productive. So I want to have this productivity episode. We've got to mix things up every now and again. We don't want to keep it to be stale. And also we're doing this episode earlier in the week.
+
+So there's less to discuss. And something that has been on my mind quite a bit is about productivity. And the promise of productivity and our endless quest for productivity. And then also a lot of what we talk about now and how the economy is changing and how AI will further this, this, this quest for productivity.
+
+So one of the things I think with productivity is, is when we talk about economic growth, we, we need productivity. In particularly, we need labor productivity. And it's the most, you know, direct relationship to economic growth. And that's basically, we want to produce more goods or services with the same or fewer inputs.
+
+that's what we're really getting. we're cooking with gas. And a lot of that has come through technology. I mean, the greatest gains in, in, Productivity in the U. S. economy or between 1995 and 2004. it averaged about 3. 2 percent annually. Weirdly around the financial
+
+[00:05:17] Troy: like, corresponds to when I moved to America. I wonder
+
+[00:05:20] Brian: That is probably you got.
+
+[00:05:22] Troy: casual
+
+[00:05:23] Brian: Yeah. Weirdly, though, then directly afterwards, it dropped. Okay. to 1. 3 percent annually, since 2005. And if you think about that, we have these like smartphones in our, like, we have all of these productivity device. We have notion. My God, we have notion and productivity has not risen. and now, Of course, we have AI coming down the pike and it is promising yet more productivity because our, we, we just, we worship productivity and I want to get into whether we're ever going to see that productivity gain, but then also how all of us.
+
+Relate to productivity and try to be productive in our own ways without getting trapped into this sort of treadmill of productivity. because I think right now we're at a time when the current vibe is around jumpstarting productivity beyond AI. You know, there has been this cultural shift to greater labor productivity.
+
+I think that's underlying a lot of the return to office mandates, even the culling of middle managers. I mean, middle managers in the coordination work, you know, they're not as productive as the people who are on the front lines producing like Alex with the actual designs. and then you have just the overall vibe of like being extremely hardcore.
+
+doge. Which is basically about getting the government more productive. They're asking their volunteers, this is old school productivity. You just work more hours. You gotta do 80 hours a week, which is such bullshit. Nobody works 80 hours a week. I don't believe it. so let's talk productivity. Okay?
+
+[00:07:06] Troy: You've wanted to do this for a long time, you've been asking to
+
+[00:07:09] Brian: I do because I struggle with productivity.
+
+So this is, this is, the best podcasts are self help sessions.
+
+[00:07:15] Troy: I mean not on my list, but let's see how it goes. Let's see 
+
+[00:07:21] Brian: I put a lot of work into this.
+
+Let's, Let's, do 
+
+it.
+
+[00:07:24] Alex: I think people appreciate things that teach them something. So
+
+[00:07:27] Brian: 
+
+
+[00:07:27] Cult of Productivity
+---
+
+[00:07:27] Troy: well. I notice Just timely 
+
+[00:07:30] Alex: 
+
+[00:07:30] Troy: tim ferris who I've never, it's, he's never really made my thing sing. uh, 
+
+[00:07:36] Brian: work week. I just got that.
+
+[00:07:38] Troy: well, it's not, he's got the four hour body and the four hour work week and the four hour chef and whatever, everybody's doing things in four hours, but he's also got a new book out that he just promoted today and it is called, it's something about how to say no.
+
+which see, that seems kind of interesting, but I don't know if you need a book for that, but
+
+[00:07:59] Brian: Oh, all these books should be articles.
+
+[00:08:01] Troy: called the, it's called the no book and it's, it's clocking in at 500 pages. I'll just say no to that. But
+
+[00:08:08] Alex: I mean, all of these productivity gurus are a little bit of a scam. Because a lot of it is, is just about, you know, making sure that you hire somebody. that, that, that works somewhere cheap to do a lot of the menial tasks for you. That's great.
+
+[00:08:23] Brian: Yeah. But what I think is interesting with that, because there are tons of these productivity gurus and like, I think Tim Ferriss was early on with this, but YouTube is filled with, with productivity gurus. I went, I went. Outlooking for some of them, and they all have that sort of like surprised YouTube guy face.
+
+which
+
+[00:08:41] Troy: listen, speaking of listen to this is from the intro to the book. I think you'll like this Brian. I, I, Alex, you'll certainly like this 'cause you do it basically. But, it's co-written by another guy with Tim Ferris and he writes, Tim is the master of No. As I write this in mid-October 2023, his text messages have an auto response that reads.
+
+I'm traveling overseas until November 7th. If your text is urgent, please reach out to someone on my team. Otherwise, please resend your text after November 7th if it still applies. Since catching up would be impossible, I'll be deleting all my messages upon my return and starting from scratch. Thank you. I like that.
+
+[00:09:26] Alex: Yeah, sure.
+
+[00:09:27] Brian: well, that's
+
+[00:09:28] Troy: it's saying that it says the message you sent me is your priority, not automatically mine. It's a screaming yes to life.
+
+[00:09:37] Brian: That's true. That's nice. although he was sort of part of, of really kicking off. I think a lot of this cult of productivity and. Not to point fingers, but this all emanates, I believe, out of Silicon Valley, the home of optimization, and they started optimizing these websites, and then they decided to go optimize lives.
+
+And so now we have to track everything. We have to track our sleep. We can't go out for a run. We gotta, we gotta track that too and, and try to be more productive when we're exercising. And a lot of this I think is leaving people feeling like they're never going to get product, productive. Like I feel like it's almost like the aspiration of productivity because the data shows that we are not more productive.
+
+The smartphone really didn't make us more productive. The internet made us slightly more productive. It did make us more productive. But if you think about the power of the internet, because it distracted us and wasted us, and then when we, or wasted our time, and then when we got into social media and the phone, I think we've become, less productive because of that, because the internet has evolved into being this adversarial attention capitalist.
+
+Capitalism machine, where basically everyone is trying to distract you and make you less productive. I mean, the notifications on computers, Slack. I last had Slack when I left my job in like October 2020. I haven't missed it at all. That ding? Oh my god, I wouldn't wait. I wish that on my worst enemy.so why aren't we productive?
+
+Alex,
+
+[00:11:17] Alex: I mean, there's probably a bunch of different reasons and I'm, I'm not a productivity guru.
+
+[00:11:22] Brian: you have a podcast. You are now.
+
+[00:11:24] Alex: yeah, I am not, that's true. I think it is, it is the distraction. it is kind of like a, the fact that it creates noisy environments. So. You know, email has become just, just assaulted by things that people don't want, like spam, but mostly, you know, things that people have subscribed to, like, like, you know, they might be getting newsletters or, or, or ads or when you buy something.
+
+So just running through your email feels to be part of work, right? It was asking some people that my last job, you know, and they would say like, you know, they spent like. 30 to 40 minutes just sorting through emails, you know, on a daily basis just to make sure that they're catching the important stuff.
+
+you know, that meant that like the executives would have, wouldn't have that problem because they had an assistant reading their emails for them, which is, which is crazy. Slack is a massive culprit. Slack has taught people that it's okay to constantly interrupt people. And then when people want to get access to the information, they need to kind of read back and try to catch up.
+
+You know, it's like walking into a room where conversation is ongoing. and I think people have just become very, accustomed to just, you know, whenever something pops into their head, they send a message. We don't have a sense of what's important or not important anymore. It's a job. So nobody wants to.
+
+Say no to stuff or let people wait, you know I think the urgency of slack is something that's kind of Breaking people's brains a little bit and I think the more the tools got integrated actually on our phone The more they they became interrupted like that, you know, it's been it's been at least like four or five years where I turned off every notification except for messages And maybe, you know, my alarm system or something like that.
+
+and I told people, you know, email, expect an answer within 24 hours, you know, during work days. Slack, you know,
+
+[00:13:14] Troy: You never, you never told me that.
+
+[00:13:16] Alex: but Sometimes it takes 48 hours.
+
+I have groups, I have groups of priorities. And then, and then, text if you're, if it's absolutely urgent, and then you kind of You set up, you know, it's important in life to set boundaries and you set a boundary and then you make people know that if their intention is to disturb you, they really have to mean it.
+
+cause there's no cost in disrupting people right now with, with things like Slack or email. So, it's, it's a big part of that for sure.
+
+[00:13:45] Brian: Troy, what did you get done this week?
+
+[00:13:48] Troy: not a lot. Um,I got Alex to make a logo. I have some beefs with what you guys are saying. I mean, I have some behaviors that I'm not happy about for sure. Like I use my phone when I'm watching football a lot. And I, but my phone has made me such a good backgammon player. I've learned a lot from this one back.
+
+I'm an application, but I think, yeah, you're right. Most of it is a. is a time suck that you really don't get a huge return on. But, at the same time, I, you know, I read five newspapers in the morning and I couldn't do that before. or tap is, you know, into as many. You know, different people that have things to say via, you know, newsletters and such.
+
+So it's, it's really a gift in, in that regard, I think. I feel, I feel very informed.my, I don't do this productivity shit, Brian. I, I, all I do is I look for little
+
+lessons. No, no, no, I don't. I just, I'm not good at it. I'm super dis, I'm kind of disorganized and I just kind of follow my nose, man. I just go to what's
+
+
+[00:14:50] Measuring Productivity
+---
+
+[00:14:50] Brian: So do you feel guilt about like, not being like
+
+organized? And it's like, how do you measure your personal productivity?
+
+[00:14:56] Troy: That's not a concept over here.
+
+[00:15:00] Brian: That's amazing.
+
+[00:15:01] Troy: No. And, and I, I definitely don't do that. And, and I, but I do look for lessons like. When I was struggling to, to fart out a newsletter every week, you said to me, just write, just write, just get it down. Just like run at it. Don't sort of edit yourself. Don't overthink it.
+
+Really just kind of get the words down and, and, and do it like you were entering into a conversation. And that was a, incredibly valuable lesson to me that I, that I benefited from. So I like that. And there are other lessons that, that I value too, like. You can't be creative. You can't put things out to the, this is why we're living in the age of shamelessness and the people that do that seem to, to, to, to thrive.
+
+It's like not caring or really caring, not in a, not in a way that, that, that hurts people, but not caring what people think is, is like vitally important. Like that, if you can, if you can manage that idea and really always kind of come back to what's really important is what you believe in what you think and what matters to you.
+
+and, and, and stop sort of second guessing, you know, how others are judging you like that. That's the kind of hack I'm into
+
+[00:16:15] Brian: Yeah, I think that's exactly it. Cause it, it, it, it sort of rhymes with what Alex was saying about boundaries is like, we're always, and I want to talk about AI next, but like, we're always looking for the next sort of hack or technology that's going to solve all of the things that are making us less productive, which comes down to technology and distractions, and we just, it's just this endless loop and ultimately.
+
+Nothing is coming to, like, save us. The only thing that can save us is ourselves,
+
+basically. I think about this with my ex. I have only, I have opened ex, like, three times in the last week, okay? And 
+
+not for, not for 20
+
+[00:16:55] Troy: I opened threads and I almost puked all over my phone, by the way. The problem with threads is there's too many people that used Instagram that got the invite for threads that went onto threads but they're not words people and they shouldn't be there. They
+
+[00:17:08] Alex: Well, you guys should all move to Blue Sky. we're proud of you, Brian. Blue Sky has, Blue,
+
+[00:17:13] Brian: at a time. One day at a time. 
+
+[00:17:15] Alex: Blue, Sky, has been pretty good. It's interesting. I do think that part of the, What we're seeing maybe in that drop in productivity lines up pretty nicely with when computers, like, which I include phones in, started becoming both personal and work devices.
+
+[00:17:31] Brian: Yeah, 
+
+remember leaving work and you left work? And, like, you came back in on Monday and, like, put on a computer. A desktop. Let me hear Adwey cubicles. That
+
+[00:17:40] Alex: and I think it's like a really nice thing to be able to go. I mean, we're going to lose some of this stuff is in, in, in work from home as well. I'm sure, you know, there are benefits to it, but, but, but the idea of being able to sitting down, having a machine that's dedicated to just work, is, is very powerful.
+
+And it's actually what I'm setting up here, which is why my, my studio is a mess is that I have this. My audio area, which is where I record this podcast and make music. And that's all it does. I will have my area where I do all my art and video game stuff. And then my gaming computer. I'm moving out of this space and putting a completely different part of the house.
+
+I'm lucky to be able to do that. But I think to me 
+
+the 
+
+[00:18:25] Troy: Do you have an email area? 
+
+[00:18:27] Alex: My email area is like, I 
+
+mean, 
+
+[00:18:30] Brian: French. I love it.
+
+[00:18:31] Troy: Where did you make the logo? In what area? 
+
+And go over there and make more
+
+of it. 
+
+[00:18:36] Alex: I 
+
+[00:18:37] Brian: workbench.
+
+[00:18:39] Alex: find it hard to, I find it hard to focus for, for a extended periods of time. And I also have time blindness because I have pretty severe ADHD. So I've become very good at being a highly organized, 
+
+[00:18:52] Troy: I know you pretty well, dude. You're like a massive spasmodic creator.
+
+[00:18:57] Brian: By the way, did you, I was
+
+[00:18:58] Troy: No, no, no, like Alex is like, he won't do it. He won't do it. He'll put it off. And then you'll bug him and bug him above. And then like in, in, in an hour, something will come out. It was like the Lord touched the guy and it's just like, what the actual fuck?
+
+It took me two weeks to get you to, and you did this in an hour. This is how he operates.
+
+[00:19:18] Brian: years of experience.
+
+It's weeks.
+
+[00:19:21] Troy: yeah. Okay. It took me two weeks. Okay. But these other guys like, you know, Bach, Edison, Twain, Da Vinci, these aren't, these guys weren't productivity hackers, like, you know, you know,
+
+[00:19:34] Brian: Michelangelo was that guy got a lot
+
+[00:19:37] Troy: Mark Twain, like was a mess. He wrote books in bed was like, you know, like, Einstein office, Einstein's office was notoriously like a, like a disaster zone.
+
+What was. What was his quote? Oh, it was if a cluttered desk is a sign of a cluttered mind of what then is an empty desk a sign of.
+
+[00:19:58] Brian: That's a good point.
+
+[00:20:00] Alex: That's good.
+
+[00:20:01] Brian: yeah, no, I need, I need, I actually need my desks to be empty because the more I even, I even, I used to be, you know, so into like, you know, hardcore productivity. I used to have, you know, three screens, you know, one with where all my emails would come in in real time, one where I would do the work.
+
+[00:20:18] Alex: I got rid of all that. Every computer that I now use has a single screen, and it, it requires me to focus on one thing at a time. I used to have, you know, RSS feeds popping off with whatever news would break, and I would immediately get it, and I would also, like, drink four or five coffees a day, but I would, I would be an, an anxious, nervous mess, and I think I did work 80 hours a day.
+
+Um, then, I like that period, 
+
+I was easy to kind of take advantage of by powerful executives. I,
+
+[00:20:46] Troy: the, the
+
+[00:20:47] Brian: easy to scare too. Don't, don't sneak up behind 
+
+[00:20:49] Troy: No, I, I think one of the great, the great Brian, one of the great productivity hacks is the simple concept of iteration. It's like, get something out there in one hour and then let it live for a minute and look at it and let it stew and then come back to it. And for the most part, you know, the world I grew up in was about finished, perfected, polished artifacts that you put out in the world, largely because I think, you know, that was the system of media,
+
+[00:21:18] Brian: was expensive to put something into Right. And, and, and, you know, like all media because of controlled, you know, distribution channels was, was very polished. And now it's like, you know, the logo is not right, but, but it's on the website and now we can, we can smell it and we can look at it. We can have some fun with it and we'll make it better next time.
+
+[00:21:42] Troy: Like that, that, that kind of spirit to me is, is really, you know, Brian, you said the other day, You know, or Alex was bugging me, write an email to correspond with the, the, the podcast and I put it off, put it off, put it off. Then I did it and it wasn't very good. And you said, let's do, and then the next day you said, let's do it as a back and forth where we'll comment on the other person's entry.
+
+That was a great innovation. We did that. Then you came back and said, add a table of contents and make it into a weekend journal. Like, that to me is the absolute essence of, it's, it's, it's iteration that's the most important
+
+[00:22:22] Brian: Right. But that runs counter to like what I consider the current like cult of, of productivity, which is optimizing our time to get more output, than our input. And our inputs are our time, right? And a lot of us are in the knowledge economy. We're not working a lathe or something. Maybe Alex is on the side.
+
+but we're always under pressure to produce more, no matter what, right? And if you're worried about yourself too, it's like, it's literally in your face. Like, I mean, you're like on a treadmill constantly trying to produce more because when you produce more in
+
+capitalism, 
+
+you get more and you're running around this maze.
+
+And I think the part that I struggle with is how to divorce. Yes, we should all try to be productive in our own ways and lead. A life that is true to whatever our goals are but to not get caught up in our labor productivity being like synonymous with like worth or
+
+[00:23:23] Troy: I mean, dude, you're going to die, right? Like Well, yeah, I'm reading this book 4, 000 weeks, so it's like literally we have 4, 000 weeks basically on
+
+one ever went to their deathbed saying I should have been more productive. 
+
+[00:23:35] Brian: but but there is in maybe I just like,
+
+[00:23:38] Troy: I mean, you should have found more joy. I should have been better, a better husband, a better father, or, you know, I should have done more with it, but like I should have
+
+[00:23:45] Brian: But in the moment, in the moment, I feel like the way our modern society is in our version of capitalism particular, we are pressured into feeling that it. Every single day is a test of our self worth by how productive we are.
+
+[00:24:04] Troy: I mean, if you're on, if you're, if you're on Tinder and you see someone that says they're in whatever, if you, if you're, if you meet a person, that's an inbox zero person run
+
+Yeah, I am an, well, I, I am an inbox zero person. I, uh,oops.
+
+[00:24:21] Brian: It's 
+
+awkward.
+
+[00:24:22] Alex: but here 
+
+
+[00:24:23] Optimizing Productivity
+---
+
+[00:24:23] Alex: guys, I, I, I do feel like, the, the, the idea of productivity has been hijacked and, and, we know in tech specifically, we have these highly productive companies, Meta makes more than two million per employee, right?
+
+that are also, in their own way, incredibly wasteful. And in part it is because, you know, we've gone through a, you gotta do as much work as possible, throw as much stuff at the wall. And a lot of it is actually, it's not a, it's not actually very considered. and I have a theory that, I don't think any company fails because they're not productive enough.
+
+I think every company any I think it's always or hasn't doesn't have the right ideas. Most of the time. I think it's all about prioritization. I think most companies and if and I've consulted many companies and you step in and The issue that I see over and over again, and even in, in people's lives is that they're not prioritizing the things that they, they should be productive on, but rather are trying, you know, a thousand different things because it's so much easier to, to start a thousand different things right now and see what sticks
+
+[00:25:31] Brian: Well, that's the optimization thing. You don't need to have a point of view. You just throw a lot of stuff out there. And then you optimize
+
+[00:25:38] Alex: Exactly. and I have butted heads so many times, which is why like, you know, I've struggled with not all, but a lot of product managers because a lot of the work became, well, let's try a hundred things and see which one turns, you know, the spreadsheet green.
+
+And that's the one we 
+
+keep rather than, you know, well, let's maybe think about it for a little bit longer and, and try three things or even better. Let's do one thing incredibly well. 
+
+And, 
+
+[00:26:03] Troy: that would annoy, that would annoy me if I was a product manager, but I get it. I get the vibe. I brought quotes for you, Alex, because I thought that, you know, the great
+
+[00:26:12] Brian: you already had Einstein. Where are you going next?
+
+[00:26:14] Troy: while we're, no, we're going to go to the great industrial philosopher, Peter Drucker.
+
+[00:26:19] Brian: Oh.
+
+[00:26:20] Troy: Who said, and you'll like this Alex, There is nothing so useless as doing efficiently.
+
+that what should not be done at all.
+
+[00:26:27] Alex: Yes, exactly, exactly. exactly. And, and, you know, when we start rewarding our engineer for lines of code, or our writers for, for words that they write, then, then, then that's what happens. And in some ways, you know, social media is rewarding us for the amount of shit we put out into the world. That's the amount of, like, You know, you know, when, when you see like, you know, the official Instagram page saying you need to post 12 times a day.
+
+it's amazing how much is expected of our, of our attention at a time and how little time we're meant to take on the stuff that we put out into the world. I once had this argument with somebody at, at Airbnb who told me and I was looking at it. At some work and I said, this is, this is a terrible experience.
+
+And they told me, but it's only going out to, to, you know, 1 percent or something like that. And I was like, shit, that's 2 million people or something. You know, it's like, or, or even if it's 200, 000 people, that's like a third of the population of San Francisco and we don't care?and, and I do feel that in the end, that type of behavior leads to less productivity because you have more stuff going through the system.
+
+You require more managers. You have more noise in your system. There's more meetings happening rather than saying, Hey, why don't we all work on this one thing? Which is what I'm trying. I mean, it's much smaller team, but what I'm trying to do with our studio is that any given week we're all working on the same thing.
+
+And we don't need a bunch of meetings and managers and things like that. And I really believe that most companies, most enterprises fail because of prioritization and leadership has a hard time prioritizing, has a hard time saying these are the one, two, three things we're working on. 
+
+And if, if they did, yeah, no, I mean, for sure.
+
+I mean, so, so am I, I think we get excited about ideas. We have resources, we can make things happen, but like. You know, I've become much better in part because I, you know, I'm, I'm, you know, likely neurodivergent and Crippled by a DHT to say I'm gonna do, you know, three things, right? I want to do five different podcasts, but you know, I'm just doing one and it's not always fun, but I'm here every week.
+
+Sometimes, but kidding. I love it. but doing things that
+
+you 
+
+[00:28:38] Troy: I, I don't know. I, yeah. What, remember when you just wanted to be an observer slash producer?
+
+[00:28:44] Alex: I did. I just, I like making content. I don't like being in the limelight. 
+
+[00:28:48] Troy: that's bullshit, but we'll just go with that. Let's just go with that. So where do you want to take this next? What can we do for the audience to help them
+
+[00:28:56] Brian: Well, I'd like to know, like, you know, we're not like productivity gurus, but I want to talk about like our specific approaches to,
+
+[00:29:03] Troy: seems pretty productive. My favorite productive person, Brian, 
+
+[00:29:08] Alex: he is.
+
+[00:29:08] Brian: that, that's interesting that you said, let's, let's actually, let's, let's visit. Let's visit that for a little bit because both he like he has like a very 1980s sort of approach with the like he's going to work like nine hundred and twenty hours a way, whatever.
+
+I have no idea what the number is. and obviously he's, he's, you know, some sort of mensa genius and the two, I find, you know, the, the idea of working 80 hours a week is it's farcical. Anyone who claims that they work 80 hours a week, I think is. Is lying or has an extraordinarily expansive definition of of work.
+
+At least that's my my view. I mean, because you have diminishing returns and to be truly productive to just do to just add time, it's been proven, you know, over and over again in studies that you just basically fatigue causes, you know, more errors and worse decisions. et 
+
+[00:30:06] Troy: I, I, I, 
+
+[00:30:07] Brian: I never understood. 
+
+[00:30:09] Troy: work 80, hours a week.
+
+[00:30:10] Brian: I don't
+
+[00:30:11] Troy: Here's a, because I can call you at nine o'clock and that's work and you'll pick it up and we'll talk about something work
+
+[00:30:17] Brian: Well, okay, maybe, but I don't like that. No, I like talking to you, Troy. I don't know. I'm, I'm, like, very focused on this because I, I do think that, like, I read this, this wonderful
+
+[00:30:29] Troy: I've never called you and you said to me, I can't talk right now, I'm not working right now.
+
+[00:30:33] Brian: Well, that's my own challenge. But, like, I read this 
+
+[00:30:37] Alex: man. That's why 
+
+I said boundaries and priorities.
+
+[00:30:39] Brian: Yeah. I mean, ultimately, I guess it comes down to that. but I, I'd love to talk about like how you, you guys think about and how you approach your own sort of labor productivity and also within your own like organizations or, you know, Troy, if you go back to like hers, how you, how you ended up measuring productivity.
+
+because it's easy in some things, like sales it's pretty easy, it's like you sell stuff or 
+
+[00:31:03] Troy: Yeah, 
+
+in most cases it's outputs, right, not inputs. You don't want to measure inputs, you want to measure outputs. Did you
+
+[00:31:10] Brian: I don't know, I mean, maybe, but I mean, so for instance, like if you go into a, like newsrooms are a good example, right? I can't believe because a lot of times I feel like things that come out of the UK, like are a little delayed by like four or five years, you know, like, and so they can, it was like the mirror.
+
+It's like, they've just instituted like page view quotas. What year are we in? Like, it's very strange, like a little delayed transatlantic phone call. but that was always the thing. It's like, how are you going to judge the productivity of it? You know, content, people, whatever, journalists, whatever you're doing, and, you know, page views was always, was always the one that stood out.
+
+It was like, okay, well, that's the output, right? And I think always journalists or anyone who is making stuff was against that because they said, well, you know, it should focus on the inputs. And there's so many different things, which is, we know, particularly now that control those outputs. Like, I mean, the fact that a Facebook algorithm picked up a story had nothing to do with the inputs.
+
+Like 
+
+[00:32:17] Alex: I have very strong opinions about that. 
+
+I think, I think, that, I mean, I'm sure it's the same in the media, but it's the same in tech, same for a lot of knowledge work, that I don't think we should track people's performance against outputs. because because the input metrics are actually the ones that you decide as a leadership team strategically to say, okay, this is what we want to do.
+
+We want to hire good people that can write this amount of stuff. Okay, that's what we're tracking. Then the, what happens to that is like something like the page view, That is out of anybody working on the team's control, even, right? Like, you want to make sure that you hire the right people, but like, put it at, put it at, kind of, responsibility on, you 
+
+[00:32:59] Troy: you say the team, you mean the broader team, like the
+
+[00:33:01] Alex: Yeah, yeah, I think, I think leadership should be held accountable for how many pageviews something gets, right?
+
+But at the end of the day, the, or, or whatever that, or, or sales or whatever that, that, you know, that, that output metric is. But what really matters to people every day is like, here's what we expect you to do. we expect it to be of this quality And that's fine. Like, I don't, I've, I always found it weird when you kind of rewarded, writers based on page views because they don't really have much control over like strategically where the company's going or whatever it did.
+
+All these metrics get people
+
+[00:33:36] Troy: that's a really tough one, Alex. I understand what you're saying. and every sort of money person that I've ever worked with on a, on a media deal wants to understand. The productivity of the content investment. And in order to do that, you got to say like how much money we were putting in and how many heads, you know, and what is the outcome and the outcome is either soft things like impact and influence, which is.
+
+You know, hard, hard, hard to measure,
+
+or it's something quantifiable in, in, you know, unique subscribers, page views, and then those translate sort of elegantly and into money.
+
+if you're looking at someone that then comes to you and says, we have 150 people in the newsroom and we need 200.
+
+Like somehow you have to, you gotta have a, a system or a kind of rubric to evaluate, you know, what you should be investing in.
+
+Like it's a, it's a, it's a tough problem.
+
+[00:34:35] Alex: I think it's what I'm saying is very specific is that the leadership team can look at at the metrics of sales or, you know, kind of the core high level metrics that are important to the business. I just feel that we've become very quick to assign those metrics to individuals.
+
+so, 
+
+[00:34:52] Brian: Well, it's also, it, it, it, people like to go into the unit economics approach. So it's not just the individual, it's like every piece of content. Is evaluated, like, did it succeed or did it fail? Did it hit this quota? And it's always, to me, it was always problematic as an approach. Like, did this, did this convert someone?
+
+Well, that's like last click attribution.
+
+You have to is like that, Brian. We talk about box office numbers. We talk about ratings. We talk about, it's, there's always a, there's always a kind of quantitative thing at the end of the line.
+
+[00:35:27] Alex: and sure, and you can maybe pay bonuses to people, where I think it becomes a little bit more perverse and easy to manipulate, or, or like create just like the wrong behaviors is when you tell a writer, you know, you're, you're, you're Pay Is going to be based on how many pages these articles get these because it gets them to focus and obsess over Metrics that they don't really have any control over and technically they would write the
+
+[00:35:52] Troy: right but it but I think we're beyond that now I think it would be a mixed measure and it wouldn't just be page views It would be a qualitative assessment of impact. It would be the number of subscribers generated and it would be page views You would look at that and the people, the stars inside of an organization that were, you know, generating, you know, kind of more, more audience and, and, and just like, like kind of more of the thing that matters to the company would we would be.
+
+compensated
+
+[00:36:25] Alex: I really don't I really I really feel strongly that like you don't want the people making the stuff to be overly burdened by the impact their stuff is going to have on the business. There's a few reasons why. One is when you tell someone like, You know, this is the number you need to move and that number is like, you know Point one percent of the overall revenue that becomes a hundred percent of their their focus.
+
+That is the one thing. It's it's it relates to you know their career and and how much they're getting paid to like they are working against Constraints and,factors that they have no control over, like more subscribers. That could be a UI issue. There could be socioeconomic issues.
+
+This could be because
+
+[00:37:12] Troy: it could be, right? But in all businesses you apply
+
+[00:37:15] Alex: I, I know, but I think, I think it's like saying like, all right, people putting the tire on the tire on the four trucks, you know, you're going to be. You're going to be responsible for how much, how, how, how these F 150s sell. And, and I think, I think that there's been, to me, like I've, I feel like there's been kind of a,
+
+[00:37:37] Troy: Wait, wait, wait, wait, wait. I don't think that someone working on the assembly line putting tires on a car is the equivalent to the person that's making the entire package of content and putting it out to the world and measuring whether or not that was effective or not. They're completely different ideas.
+
+[00:37:52] Alex: I don't think they're as different as you say they are.
+
+[00:37:54] Troy: They're massively different. One is you're accountable for the output. Like, like for the total product. 
+
+[00:38:00] Alex: how you, but how you, 
+
+how you accountable for the total product? How you accountable for Google's algorithm? How you accountable for Facebook changing the way your articles show? How
+
+[00:38:10] Troy: Oh, well you're, every, everybody lives in that ecosystem For the content, 
+
+[00:38:14] Alex: for the content management team to have built the tools that you need.
+
+[00:38:17] Troy: or beyond that, Alex, it, the content's out there, it's sent out in an email. It's not because of the CMS. Are you kidding me right now?
+
+[00:38:25] Alex: I mean, I think, I think that at some point, like if, if you're going to be held accountable for the traffic that you have, that you generate for business as a content creator, you might as well just go on your own and do it for yourself. I mean, you're like, why, why, do you, why why do you even need leadership?
+
+Like, guess what? We're just going to hire a bunch of people. The ones who make money
+
+[00:38:43] Troy: sadly, Alex, there's a lot of other pieces to the job, right? The monetization of that content. You know, the promotion of the company, like there's all kinds of the, the, there's all kinds of other sort of mechanical pieces make a media company work.
+
+[00:38:57] Alex: It's a race to the bottom. You can always incentivize people making. Pieces of a product for your company
+
+[00:39:03] Troy: you look at the productivity of someone on your, on your gaming team? Someone writing code?
+
+[00:39:08] Alex: we look at what's been done and how fun it is to play and how much we like it. At the end of the day, they're not going to be responsible if the game isn't successful. It's my responsibility.
+
+[00:39:17] Brian: I So you abstracted basically from the, like, I think we basically saying like, there's, there's different like, levels of productivity when, when you're on like a leadership level, you're gonna take like accountability for and for a lot of stuff that's
+
+[00:39:30] Alex: Yeah. I mean, how did, how can we put people that are like, Hey, you're in like, you know, a base level salary at this company. And you're also responsible for the sales that your stuff generates.
+
+And then, and then.
+
+Well, I mean, you are, right? Like, I
+
+[00:39:44] Troy: No, the salespeople are accountable for the sales.
+
+The people that make the product 
+
+are responsible for the amount of audience that it generates.
+
+The people that write the code are responsible for some other type of, 
+
+[00:39:55] Alex: but, but then, 
+
+[00:39:56] Troy: productivity measure.
+
+[00:39:57] Alex: then they're, they're responsible for the onset audience that is generate without having like full strategic control over the editorial strategy, over the system, over the platforms that you're publishing on over.
+
+you know, I think
+
+[00:40:08] Troy: I mean, it sounds like a lot of a lot. I mean, you know, I think when everybody's working together to make a thing like a movie over a long period of time, then it's different, right? You're focused on the craft and collaboration. And it wasn't fun. And did that scene entertain me? And then at the end of it.
+
+There's a, there's a kind of measure, I think, in terms of, you know, discrete products being made every day, you're going to, on some level, you're going to be looking at a, at some measure, or you're going to end up making shitty cars like they did in Russia.
+
+[00:40:41] Alex: I think, I think you'd turn out making shitty, whatever you are, if you measured people based on like the audience that they
+
+[00:40:47] Brian: I, I, I wanna spin this forward just a little bit. This has been fascinating, but like, um, it. No, I mean that we got a little, it got a little repetitive. 
+
+
+[00:40:56] AI and Productivity
+---
+
+[00:40:56] Brian: let's talk about how AI is going to impact this and, and particularly our relationship to me, like I, what I wonder about is our relationship with productivity, right?
+
+Because like productivity has always been held out because we're basically competing against each other, right? If you're not productive and someone else is going to be more productive and then they're going to get some rewards or they're going to get your cubicle and, and that's how, that's how it works, but then we're.
+
+We're left with the idea that, and we see this, with, with developers, it happened immediately, they can't compete. Like, you know, they can't compete with, with the bots and, and AI, Zuckerberg, in his Joe Rogan interview was talking about how most of the code at Meta will be, will be written by AI fairly shortly.
+
+and this is obviously going to come to a lot of different professions and I'm interested in how it changes our, our relationship with productivity being about outputs when you were never. Ever going to be able to produce like at the level of like of the bots at the end of the day.
+
+[00:42:03] Troy: correct. correct.
+
+[00:42:05] Alex: like, if you think that, true success comes from prioritization, the ability to set, you know, to, to pick the right bets, et cetera. the, the idea that we're, you know, we're just going to need less engineers, because, because of AI, I think I, I struggle with sometimes or engineers or anyone else because, there are downstream effects for each of these things.
+
+So, so I'm just going to give these two examples. I'm going to talk about engineers and writers, because I was thinking about this, for this podcast.engineers, We'll just be able to do more, but also there will be more of a demand for software. I think there's, there's always more of a demand for software, like, you know, the, the,A, most software is pretty bad.
+
+B, a lot of things that require software still don't have software. and so I think there's just going to be as much demand for this stuff. The job is going to change, and there's probably going to be more lines of code generated. And a lot of these things are not going to run unattended. I think it's just that, you know, an engineer will be able to write, you know, five, six, seven, ten times the amount of code.
+
+There are different parts of engineering, like, you know, of managing, the source code and, and, and all the different, Things coming in and that stuff is going to be helped by AI. So I, you know, I kind of struggle with the term replacement here. I think there's some structures that are maybe changed. Like, I think, you know, Indian coat shops are going to be probably in trouble. You know, like these places where they have five, six, ten thousand, low to mid level engineers that they, that they rent out to companies. That type of stuff might get disrupted for sure. and then on the writing side, I think, when you have such an abundance of content, Then the, the AI generated content, I think there's not going to be any value in it.
+
+It's going to be worth no money. and I don't know how much these companies are just going to get away with it. Like, I think, you know, why do you want to write all this content that's AI generated? Nobody reads. I don't know, I haven't seen like a clear path to like just jobs being, you know, Blanket replaced by AI yet.
+
+[00:44:15] Brian: Yeah, I didn't mean jobs being replaced. I mean, I just saw one study that said like AI makes software developers 26 percent more quote unquote productive and that's with. Output, output of code, 
+
+[00:44:27] Troy: I mean, I think there's places where, you know, the, the, the connection between the human and the, and you know, the AI will become seamless and it'll just be part of what you do. Like we use computers today will be a kind of extension of, of your skill as a decision maker, as a taste person, as someone that understands.
+
+What people need. and I think there's places where it'll just chase the humans out of the building. Like today there was an article in, in Bloomberg where, you know, they used to have human beings, you know, do you ever drink the lemonade at Chick fil A? It's pretty good. Actually, they have the slurpee one.
+
+They just opened a new chip filet in my neighborhood.but, now they got these gigantic machines that are just incredibly good at squeezing lemons and then, you know, packaging it and all that kind of stuff. So there's no need for humans to do it. And, and so, yeah, there's going to be. All kinds of places where our behavior, but there's been going on forever, you know, we evolve certain roles are no longer valuable. And then I do think, though, there is a kind of. There's probably a point where things get a little surreal, and that's where we need to probably think about things like basic annual income, where, you know, our ability to manifest intelligence with software through hardware, like, meaning robots are smart and doing things for you and cars are driving you and AI is doing, you know, all the work that you would have done, where there's going to be, you A lot of surplus labor
+
+[00:46:06] Brian: Right, but I guess what I'm trying to get at is, is productivity, like that, in that scenario, I mean, and productivity has been basically synonymous with, you know, how useful a person is in the economy.
+
+[00:46:20] Alex: Do you feel your productivity has gone up with AI?
+
+[00:46:23] Troy: Oh, yeah,
+
+[00:46:24] Brian: Me?
+
+[00:46:25] Alex: Yes.
+
+I know Troy's has. 
+
+I know mine has.
+
+[00:46:28] Brian: yeah, I think it has. I don't know whether it's like 10 percent or 15% But it's gone up.
+
+I mean, just researching little
+
+[00:46:37] Troy: uh, 
+
+yeah Yeah, you're writing little essays with gemini on influencers and 
+
+[00:46:42] Brian: No, 
+
+[00:46:42] Alex: I mean, 
+
+[00:46:42] Brian: no, I'm going back and forth with lots of these bots and trying to, trying to get, I find it useful. Yeah, sure.
+
+[00:46:51] Alex: mean, I think I'm probably saving at least three hours a week just by not going and Scanning Google to try to find an answer to something, you know, I think that the productivity is going to be amplified. I feel like, like, for example, call centers are interesting because a lot of these call centers are, are You know, people are saying, you know, call center jobs are going to go away.
+
+I think there's going, definitely going to be a lot of changes in the call center. But, right now most call centers are understaffed. You call, you know, I call the kind of local electric company. I wait, I wait for 15 minutes and instead maybe with the same amount of people, they can answer immediately and then have the humans handle, you know, the, the more kind of complex tasks that are coming in.
+
+Like, I think. I think that these roles are going to be fundamentally changed and amplified, you know, with AI. I'm relatively optimistic about that stuff. You know, I think, I think that some of this stuff is going to be okay.
+
+And just better 
+
+[00:47:53] Brian: like
+
+[00:47:53] Alex: of us. I
+
+[00:47:54] Brian: we're always going to be promised that. I mean, I think, Troy, I think you, you shared the thing from OpenAI, like they're getting agentic with,chat GPT can now handle reminders and to do's. And there's, there's always going to be this hype that. Whatever new technology come, comes down, like this is going to be, this is the productivity, this is the secret to finally being productive, like, you know, and the reality is it makes you more productive in one area.
+
+And then you, you, you fill it in with other areas. It's like traffic, like, Robert Moses was 
+
+[00:48:28] Troy: I mean do you buy that stuff? 
+
+[00:48:30] Brian: Robert Moses
+
+was obsessed with, like, getting rid of traffic. And so he kept building highways and he kept getting more traffic.
+
+
+[00:48:37] Read More With Less Time
+---
+
+[00:48:37] Troy: Well, I'll, I'll share some other things that I'm working on around productivity that I, so there is definitely more information to read. My hero in that regard would be someone way smarter than me with an ability to digest tons of information, a person like Tyler Cohen, like his output, he's an economist and, has had a blog since I don't know, the nineties and.
+
+Seems to process an immense amount of information. It is incredibly knowledgeable. I don't know how he does it. I can't do it like him. I wish I could do it like him. One thing that I would like to do, I don't read, I don't read enough books. I'm real. I find that. It's really hard for me to get from, I want to read a lot of books, but then. It comes in waves and to get deep into a book, I just find that I'm, there's so much other that tempts me, the other stuff that tempts me, it's really hard. But anyway, one thing that I'm, I'm, I'm interested in is learning to skim more effectively. How do you read more with less time? That I'm interested in.
+
+How do you just sort of like take a newsletter? Like there's so much stuff and people 
+
+[00:49:47] Alex: mean, I can AI 
+
+[00:49:48] Troy: inefficiently. I have a bunch of things I just want.
+
+[00:49:50] Alex: summarize, man.
+
+[00:49:51] Troy: But the problem AI summarizes and always that good, it misses a lot of things. And, and, and, and I think you lose a lot of nuance when you do the AI summarize, dude, but I do, I do it a lot, but, but I think learning to skim.
+
+It's really important. I think that people, this, this, this is going to sound bad, but don't, don't take it the wrong way. People are tremendously inefficient in how they communicate verbally because by the time you open your mouth, Alex or Brian, I know what you're going to say most of the time. And so I think that we being efficient as a communicator is really important for me.
+
+Even though I'm, you know, we restate things, we over contextualize things. We, we package up information when someone gets what you want to say or what you're trying to say very quickly. Right. And, and so I think those are interesting things. How do you communicate more effectively and how do you consume more efficiently?
+
+[00:50:42] Brian: Do you, do you listen to podcasts on like 1. 5 
+
+[00:50:46] Troy: Sometimes. Yes. Yeah. Yeah. And, and, and a lot of times I listen. Yeah, I got it. Yeah, I do. I do. And sometimes I listen to podcasts for different reasons. Speaking of which, I think it's important to match the things that you're doing, like match modes to activities, like walking in silence.
+
+That's a good match. Very, very productive. Why? Because there's something about taking steps and moving your body that allows your mind to go to new places. It's always productive. I think cars and podcasts? Insanely good mix. Peanut butter and chocolate. Cars and podcasts. Right? I, I, I, I, I think that forcing yourself to run at the things you hate, like doing your taxes, is just like you just have to push yourself to get in front of it.
+
+Then it's not that bad, but it's the beginning. That's really, really, really hard to do. And I have tried many, many times to do two things at once. And I haven't figured it out. I wish I could figure that out. Like I can't play backgammon and watch a drama and keep up with what's going on on the television.
+
+[00:51:50] Alex: Maybe that's a way for your brain to tell you shouldn't be doing that.
+
+[00:51:53] Troy: Yeah. I mean, I can play backgammon and, and, and watch a football game
+
+[00:51:58] Alex: I think it's, it, it all, it, no matter, no matter how, how much tools. improve ability for an output. I think what you're talking about, Troy, is setting the right boundaries for yourself, you know, developing focus and making sure that you prioritize the right things, right? And you can put. You know, 80 hours of effort into mostly the wrong stuff, and it's way, way worse than 20 hours of effort on the right things.
+
+And I think that part of the problem with prioritizing and setting boundaries is that if our brains are constantly stimulated, it becomes harder to do those things.
+
+[00:52:39] Troy: Yeah. I think that that's where the M that's the master level stuff. I think it partly, you know, it is, you know, saying no and focus and structuring the time spent against the right things, but to me, to me, that last thing is really important. Like I, I, for example, I worked on a deal for. Eight months and I feel like I wasted so much time doing things that were just Like that I thought were important part of getting the deal done But we're not and now i'm kind of looking at a new deal as an example and a deal is a long process You got to get You've got to evaluate a company.
+
+You've got to sort of figure out what your thesis is. You've got to put all the money, the models together that says this is how the math works. You then have to line up, you know, all the people that are going to, you know, help you do that to help you pay for it, help you do all the legal work, all that kind of stuff.
+
+And now. The way I'm thinking about this new one is sort of like what actually is going to be what are the most important things that I can do early on to assure that this is worth my time, like the stuff that I would have avoided, you know, because I just wanted the deal to keep going. I want to ask those hard questions at the beginning. So that you can kind of like figure out whether or not the, whether or not it's actually real, it's sort of like when you become a, when you get to a like level of mastery or some of something, you can see what's going to happen down the line. And so you bring a bunch of that stuff forward to say, is this the right thing to be spending time on?
+
+You know what I mean? Like, you know, you know, where it's going to be a waste of time because you've wasted time doing it before
+
+[00:54:23] Alex: Yeah, I mean, I think, I think, I think that's definitely a big part of that, but always, I mean, I think you should always think that you're probably doing like 30 percent more than, than you should be focusing on. you know, I feel the, the myth of the multitasker, which technology like is really good at trying to enable. And so I like the idea of just like setting up these rules where you say, you know, when I'm walking, 
+
+I don't listen to a podcast. Podcasts are great for, and, and also like, you know, I do think that turning off your notification is the dumbest thing. Like literally I just have reminders and text messages on my phone.
+
+That's the only thing I have.
+
+[00:55:01] Brian: text messages.
+
+[00:55:02] Alex: I have a rule in my email now that any. Email that has the word unsubscribe in it goes into a folder, and I check that later. It's just not as important, whatever it is, even if it's a newsletter. and I check my email twice a day, and I always get to inbox zero.
+
+[00:55:19] Brian: the, the, the twice a day thing is something I aspire to get to.
+
+I've tried to get there. zero.
+
+[00:55:25] Alex: yeah, it's not rocket science. Here's the thing, here's the
+
+[00:55:28] Troy: I got like, I got, I think, 230, 000 messages in my
+
+[00:55:32] Alex: Okay. So you need to do, you need to, you need to do an amnesty because it's not good for your brain. Look, part of that is that I think,having ADHD, means that like time is an issue for me. There's either now or not now. 
+
+So what I do when I go through my email and also like finishing tasks, you know, that's how I get my
+
+[00:55:50] Troy: Do you actually have it though? So many people say they have ADHD. I'm just like, bullshit. 
+
+[00:55:56] Alex: Oh, I have it. 
+
+[00:55:57] Troy: to me.
+
+[00:55:57] Alex: Yeah. No, I have it pretty strongly. I got 
+
+[00:56:01] Brian: It's probably a competitive advantage because the rest of us just have like amateur ADHD.
+
+[00:56:05] Alex: Yeah. I mean, I think, it's an advantage in certain things, but you know, I'm pretty typical, like ADHD. but, but on the, on the email front, the reason I like going to email, inbox zero is that most email clients have a, have a snooze thing. So you either, there's three things, three decisions you need to do when you get in front of an email.
+
+You either handle it now and send them an answer. You either ignore it and archive it. You don't need to get to it again. Or you snooze it because you know, you're going to handle it later. There's no reason for that email to remain in your
+
+inbox. a snooze function?
+
+Yes. Yes. There's like a, well, I mean, and this allows you to
+
+[00:56:43] Troy: So how do I get through the 236, 000? Do I just select 
+
+[00:56:47] Alex: amnesty, just, like archive, 
+
+[00:56:49] Brian: gotta, it's too, you're in too deep. 
+
+[00:56:51] Alex: them. You're in too deep.
+
+[00:56:52] Brian: one of the things and then we can wrap it up. Just like I, I like dividing the day into like, I try not to have any business oriented meetings in the morning. Like, the mornings are only about. Content stuff, because I find context switching makes me incredibly unproductive because, you know, you have to do so many different things, at least in what I'm doing, and they're wildly, they require different types of thinking, and I find reorienting to having a sales conversation after, you know, in the midst of writing, it's just, it's the worst.
+
+So I like the idea of having like email in batches, having writing in batches, having sales and business type stuff and at certain times. This is in 
+
+[00:57:43] Alex: out. 
+
+[00:57:43] Brian: time, by the way, just 
+
+[00:57:45] Alex: Yeah, 
+
+I think blocking out your day like that is is really is really good actually because it creates like a structure And it removes another decision for you to make like do I take this call or not? It's just like no I committed that I wouldn't right and and we do get decision fatigue I think we're making you know hundreds of decisions every day should I answer this email?
+
+Should I take this call? Should I? Whatever and and the more like rigid we are about our boundaries and they're easier there to remember the less overwhelmed we'll get because it's all taxing at the end of the day and and and these things are not rocket science but technology is is really geared towards any tool it doesn't matter if it's a sass tool or or tick tock any tool is kind of Built in, in, in generating engagement.
+
+Every one of these tools like measures how much time you spend on it. So their metrics are completely perverse and, and, and mean that like they're actually not making you more productive. So the better you are with boundaries, the better you get.
+
+[00:58:45] Troy: Yeah. And I also think Brian, this cult of productivity thing that you talk about is, is kind of a sickness and I think most people are kind of full of shit around this stuff where they lament not having any time or being too
+
+busy or the busyness disease. Very busy.
+
+Yeah, but they're not that busy actually.
+
+And they feel like they have to be busy because that's a sign of their value in the world. And that's,
+
+[00:59:07] Brian: Yeah, it's part of our existential dread. We're going to do religion in the next episode. Uh, do you have a, uh, good product, productivity, productivity edition? Notion? There's a, also the Notion people. Do you know the Notion people? Like, there's a certain type of person who's really into Notion.
+
+They're definitely deep into the
+
+[00:59:27] Alex: Notion is a little too too complicated for most people. It's, it's hard. I think it's hard to integrate into
+
+organizations. type
+
+[00:59:34] Brian: that's into Notion. 
+
+[00:59:35] Alex: it's, it's 
+
+[00:59:36] Troy: yeah. 
+
+[00:59:36] Alex: product. I mean,
+
+[00:59:37] Troy: There's a nice Peter Drucker quote again, that sums us up from 1974, which is productivity when linked to purpose. And this is the vital link, right? Can become the engine of human fulfillment, without purpose, it's mere toil. And, I think that's accurate, but that'll take us to, our, you know, our beloved good product segment. 
+
+
+[00:59:57] Good Product
+---
+
+​
+
+
+[00:59:57] 
+---
+
+[00:59:59] Troy: I, my good product did this week. I, I mean, I love, I got to say, I've been, I'm really into, and I used to think they were despicable. Medjool dates. I really like right now we've got these big fresh ones and, and I think they're unbelievable. they're great in a smoothie. They're a natural sweetener, but they're good on their own.
+
+But that's not what I think people should do on the productivity episode. I think that maybe the most important thing you can do is prioritize fresh cut flowers. 
+
+and and I do think that that's a good service. I don't know that. There is one. I mean, we have a local flower seller that has beautiful stuff, but, having fresh cut flowers in your home, on your desk, near your work area, in the place where you hang out is.
+
+Is, is an embrace of the nice things in the world and life. And I think you should always do it if you can, if you can afford it, if it's accessible. You can cut them in the garden, you know, in the summertime. you know, that would be my, my good product. I don't know if you guys do that. But, what could 
+
+[01:01:04] Brian: yeah. The bodegas that usually have a good selection York.
+
+[01:01:08] Troy: Yeah, I mean, go home with flowers tonight. Everybody and, and, and just find a nice thing, take it home. Just don't, it's not a necessarily an offering. Just say, I bought some flowers for the house or I like, I like, I like, 
+
+[01:01:21] Alex: I like making bouquets from stuff. I pick around the property here. So,
+
+[01:01:26] Troy: Yeah, that's nice. um, 
+
+[01:01:28] Alex: yeah, that's a nice, it's a, yeah, it is a nice thing. It's also, I mean, having nature in the house is always. You know, our brains react very specifically to nature. And, and so you were talking about walking before and specifically walking through nature, can really unlock your mind.
+
+as, as far as like a productivity tool, I, I also have a good product. I, I tend to change and try tools all the times. one of my commitments, Last year was like to use less tools and I just started using the app stuff that's on my phone more more readily So I use reminders for everything Also, I I set
+
+myself that mean your phone, the alarm goes off all the time?
+
+Well, they they pop up and they they do the reason my phone's alarm goes off all the time Is that most of the day I set recurring 20 20 minute alarms So every 20 minutes my phone reminds me that I've been doing whatever I've been doing for 20 minutes And asks me if I want to do, keep doing it or do something else.
+
+Uh, I find 
+
+[01:02:23] Brian: 20 minutes. That's hardly deep work. Alex.
+
+[01:02:26] Alex: Uh, you can do a lot
+
+[01:02:27] Troy: Were you going to bring this? This is like a big revelation. Were you going to bring this up in earlier in the episode?
+
+[01:02:32] Brian: You're like Ben Franklin.
+
+[01:02:33] Alex: It doesn't mean that you have to stop doing what you're doing. You just get a reminder that you just spent
+
+[01:02:37] Troy: Does, does your life partner or anybody in your life ever say, can you just stop with the alarms? Because my, one of my kids has an alarm constantly and it's so aggravating.
+
+[01:02:48] Alex: It buzzes on my watch, actually, so nobody else notices it. It's 
+
+I mean, it's like a Pomodoro type 
+
+system, but I just, I, Well, the main thing for me is that, like, it's, I have three chunks within an hour, and sometimes I notice that I've sat down to do something, and 20 minutes went by, and I haven't actually truly started it.
+
+Because I went down a search and fucking, and, and just being,um, me of a dog that circles a lot before they lay down.
+
+[01:03:16] Troy: yeah, that's exactly what I do. I circle a lot around my laptop,Right, it's like two, two weeks you circle and then you pop the logo out in an hour.
+
+I 
+
+think the key for your productivity is to, like, figure out how to turn that circling into one week.
+
+[01:03:32] Alex: Well, I mean, I think, you know, you, you just need to keep pestering me at all times of day, night, weekends. 
+
+
+[01:03:39] Recap
+---
+
+[01:03:40] Brian: All right. So prioritization 
+
+boundaries 
+
+[01:03:44] Alex: Prioritization boundaries focus.
+
+[01:03:46] Brian: focus self forgiveness because you're never going to be productive.
+
+[01:03:50] Alex: Yes.
+
+[01:03:50] Brian: of the day, as you thought you were going to be in the beginning of the day, because most people suck at prioritization, like, if you'd only try to get three things done, you're never going to get the eight things done.
+
+[01:03:58] Alex: Turn off your notifications. Don't try to multitask. Only use one screen.
+
+[01:04:03] Troy: Maybe put a guitar in your office? So now and then you can you know, just distractions that are,
+
+[01:04:10] Alex: You know, in closing, I was just like before, you know, my last two years at Airbnb, I took on a lot more of the product stuff and we tried to work on less things and there was a worry that the velocity would go down because rather than working on 100 different things, we work on 10 things at a time and it did feel, especially in the beginning, like things were moving slower, slower once it started picking up, you know, once the co organization got more aligned to that, Things do end up moving faster.
+
+Like, I think that there's, there's You could walk into most companies today, whether they're media, tech, or, and we're talking, you know, knowledge worker, white collar worker, and they're, they're trying too many things out at once because technology allows you to do that. And the hardest thing, and I think the, you know, thing that Steve Jobs was really good at was just like saying, like, these are the four things we're doing.
+
+And most leaders. And, uh, there, there was a lot 
+
+of work that we went through to make it work. Um, uh, and, uh, a lot of people really got into it. And they really wanted to make the software look like it's
+
+[01:05:16] Troy: I think that's right. And then what happens, Alex, is that meets the fear of executive management that's driving against some type of business, objective and really feels like they have to see 
+
+[01:05:28] Alex: Because, 
+
+[01:05:29] Troy: of productivity to, to feel like they're going to achieve a
+
+[01:05:32] Alex: exactly, because productivity, because productivity is easy to track, look how productive we are, and you know what's not going to get you fired is trying a hundred things and picking the three things that work, but what might get you fired is picking the five things that you should work on and maybe making the wrong call.
+
+And I think that it's it's kind of the modern structures of tools and stuff like that has allowed Leadership to step away from the responsibility of making decisions making calls and prioritizing because prioritizing is hard so most of the time I think most companies that fail is because there's like no leadership courage and making the calls as to As to what are the top three things that the company should work on.
+
+[01:06:08] Troy: Yeah. And I would, I would just finally echo your point on Sonos that they've completely failed with that app. It's, I, I, I just had my house rewired for, for Wi Fi, and I had to reconnect all my Sonos devices, and I wanted to kill myself.
+
+[01:06:27] Alex: It's uh, it's a disaster
+
+It's 
+
+quite terrible software is hard, but you know, 
+
+maybe not that hard. 
+
+
+
+
+[01:06:34] Outro
+---
+
+[01:06:34] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:07:08] Brian: All right Cool. 
+
+This is a cool episode. Appreciate it guys.
+
+[01:07:12] Alex: Yeah. See you later ​
+
+
+

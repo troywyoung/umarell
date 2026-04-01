@@ -1,0 +1,997 @@
+PvA S3E148
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Troy: know how we met. No. We went to a par. I was at a party
+
+[00:00:04] Pablos: Yeah.
+
+[00:00:04] Troy: some, Deutsche Bank banker guy
+
+[00:00:07] Pablos: Anonymous banking 
+
+[00:00:07] Troy: you gotta meet Pablo. He's the most interesting guy at the party. 
+
+[00:00:11] Pablos: was bankers? So not a
+
+[00:00:12] Brian: Yeah.
+
+[00:00:13] Pablos: bar
+
+[00:00:13] Brian: Low bar, low bar.
+
+[00:00:14] Troy: low bar. uh, we had a nice chat. 
+
+since then, you, I think you launched your book and I said it would be fun to have you on because,
+
+I'm confused by AI Pablos. So I'm, I'm, I'm looking for some insight from you. And then I dropped that consciousness article in the, in the thread and you say it's a bunch of, crap. And so, you know, I think we can have a, a, a good, a good conversation.
+
+
+[00:00:36] Welcome
+---
+
+[00:00:36] Pablos: ​
+
+[00:00:46] Brian: I should do the whole, welcome to people versus algorithms. this is a summer edition. We are joined, by Pablo Holman. also joined by Troy Young. Alex is not here. He had a hard stop. Pablos is a technologist. You're an investor. You're a hacker. From what I read, we just met. I read about the, the lasers. And the mosquitoes and I thought it was very, it would be really good.to really get into the what's going on with ai, with someone who understands it better than me. At least I don't, I'm not, I don't wanna speak for Troy, 
+
+Pablo, do you wanna, you wanna give us your, give us your cv.
+
+[00:01:19] Pablos: yeah, I'm a hacker, defected to working on hacking everything but computers, a long time ago. So helped start Blue Origin, which is a spaceship company. And then I started a lab with Nathan Ald called built or called, uh, intellectual Ventures. Bill Gates was there back to a lot of our projects and invented stuff with us as well. And we got 6,000 patents on our own inventions. And so that's all over the map. every kind of thing. The thing we're most famous for is a machine that can find mosquitoes and shoot 'em down with lasers, but we also invented a nuclear reactor that's powered by nuclear waste and a machine to suppress hurricanes and all kinds of other wild stuff. And now I run a venture fund investing in other mad scientists who have invented, you know, what we call deep tech breakthroughs. And, it's a lot of 'em and, all kinds of wild stuff. And we can talk about that if you want.you know, all along the way we've been using computers to advance all these technologies and we've been using AI of, you know, every generation to, to try and go after big problems.
+
+And so I have a little bit of experience we can talk about with that stuff too, 
+
+[00:02:30] Brian: so the serious tech stuff, not the Web 2.0 like stuff, right?
+
+[00:02:35] Pablos: I think the SaaS holes kind of
+
+[00:02:38] Brian: SaaS? Well, I wanted to talk about B2B SaaS.
+
+[00:02:41] Troy: talk about something more superficial just before we
+
+[00:02:43] Pablos: Okay. Yeah. Start with that.
+
+[00:02:44] Troy: interview because your signature, you know, move is the glasses. Right? And, you
+
+[00:02:49] Pablos: Well, I
+
+[00:02:50] Brian: Yeah.
+
+[00:02:51] Troy: part of, 
+
+[00:02:51] Pablos: and I found good ones, but Yeah, 
+
+I've,
+
+[00:02:54] Troy: time ago, like 
+
+[00:02:55] Pablos: yeah, I've been wearing the same ones for like 20 years. 'cause they're the best glasses ever made and you can't break 'em, so 
+
+[00:03:00] Troy: they're made out of, they're
+
+[00:03:01] Pablos: titanium. But they're, but yeah, and so since I've been wearing 'em so long people. Think that, they're just part of me and so they ended up on the cover of the book. So
+
+[00:03:13] Brian: Oh, good. It's a branding thing. That's good.
+
+[00:03:15] Pablos: it's, I didn't know what branding was when I started wearing these glasses, but I've been told, so.
+
+[00:03:20] Brian: You know, it's funny 'cause I was, I was in Italy, just until this morning and I, you know, there's a lot of guys who wear those, those bright like red glasses and whatnot. usually they're bald. And I asked my wife, I was like, you didn't think, you know, maybe, maybe I could, maybe I could become like a bright red glasses guy.
+
+And she said, no,
+
+[00:03:37] Pablos: too late.
+
+[00:03:38] Troy: those gas station glasses,
+
+[00:03:40] Brian: no. You know, the, like Seth Godin has, has them.
+
+[00:03:44] Pablos: you go.
+
+[00:03:45] Troy: Okay.
+
+[00:03:46] Brian: It's a look.I, 
+
+
+[00:03:48] AI, what is it good for?
+---
+
+[00:03:51] Brian: so let's get into the AI stuff. 'cause like I think, I, Troy you had shared that Mustafa Soleman, article and, and, Charlie Worzel had had a piece about AI as a mass delusion event. And I do think that right now, amongst like the normal people, I guess, and, and that's in quotes, right?
+
+That we're getting to a point where people are starting to question where we are going with this. And I think GPT five's release in some ways was a tipping point. because the model felt like, You know, I, I'm a believer in, in, in vibes and narratives, right. Pablo, so I'm not a technologist or a futurist.
+
+and I think that we're starting to see a couple of lanes develop. One is that this is really overhyped and that GT five was hyperventilated about by Altman, who is a master marketer. And it's becoming very apparent to everyone that this guy is a master marketer. And when it was released, it seemed like, okay, fine.
+
+And in the background to normal people, you have a lot of tech people talking about these obscure things about how it could win some math competition or, or model weights and all this stuff that nobody understands, right? And then they use this stuff and it's, it's wrong. It can't like, summarize like a spreadsheet.
+
+Well, and you know, fine. Maybe.
+
+[00:05:04] Troy: entirely true. I
+
+[00:05:05] Brian: Well, okay. Well, I, I.
+
+[00:05:07] Troy: of fruitful use cases.
+
+[00:05:08] Brian: Fine. But I find errors in using it an everyday basis. And also people are just using it for some very basic things. And, but then you, if you listen to like tech podcasts, they're talking about like putting like data centers like in, in space and like covering all of Spain with solar panels.
+
+and there just seems to be this kind of disconnect on one end. And on the other hand, you have the typical thing of there's a lot of these second order effects and like, AI psychosis is gonna be a thing. We're gonna, we're gonna read all about it. Every single case that that is gonna come out, we're gonna read about it.
+
+It's gonna be a moral panic. No doubt. And I think what Charlie did was what's known in journalism as the conceptual scoop was he brought it all together and was like, this is a mass delusion event. Right. Which is, you know, he does that a lot. But, I, I would love to get you to unpack like where we are right now, because I mean.
+
+[00:06:03] Troy: kid influencer was, was a tragic part of that story.
+
+[00:06:06] Brian: Yeah, it was a great hook. I mean, as, as a narrative device, it's a great hook.
+
+[00:06:10] Pablos: sorry, what's the story?
+
+[00:06:11] Brian: Jim Acosta, basically Charlie Worzel wrote in, the Atlantic, and he used the case of this ex CNN he used to like fight with Trump, and then he got, he got, he got canned. and he, he did this interview with a, a vir, an AI virtual version of one of the Parkland shooting victims.
+
+[00:06:30] Pablos: Oh
+
+[00:06:31] Brian: And so
+
+[00:06:31] Pablos: heard.
+
+[00:06:32] Brian: with the family, I guess the family wanted, and the family is, at least in the interview, was like talking about like turning the deceased child basically into like, I guess like an AI influencer of some kind.
+
+Um. look, I mean, there's a million things we could talk about. you touched on a few of them that, you know, I think the first thing people need to do is understand that ais are not omnisci, they're not omnipotent with the current technologies we have. They never will be. so there's a mismatch between what people are. expecting from them and trying to use them for, and what they're actually gonna be good at. And so that's gotta get sorted out over time. we have this problem in other contexts as well, right? You could, you, you, you, know, you can, you can do the wrong thing with somebody. I mean, a great example is if you hire somebody and give them the, put 'em on a job and they fuck it up.
+
+[00:07:28] Pablos: That's like, happens every, every day all over the world. We see that all the time, and you have to learn to deal with it. That's kind of what's going on here, is we're giving these things the wrong, giving them a, a test that they're not really built for. Now, it doesn't help that some of the folks building them are being disingenuous about what, what they're good for and sort of overstating what they're good for, while also using very hedgie language to themselves now when the things fail.
+
+But I think this, this is just a, a process that we have to go through and you gotta learn. What you can count on the thing for if you make, you know, if you hire somebody start working with somebody, you have to sort of feel 'em out and figure out what they're good for and figure out what they suck at and, and over time,
+
+[00:08:15] Troy: What?
+
+[00:08:15] Pablos: well,
+
+[00:08:16] Troy: at?
+
+[00:08:16] Pablos: so an LLM, which is the thing that, you know, everybody's wound up about right now, is kind of the first AI that speaks English.
+
+You know, before LLMs you had to have a PhD to understand an ai, but this one speaks English and so everybody can interact with it. So, you know, any old muggle can use it instead of just the wizards. So now we're at a point where you've got to, you know, those people have to learn. That means all of us have to sort of learn what is it good for?
+
+Well, an LLM as has, you've been beaten over the head by about this a lot of times is just trained on all the stuff humans have ever written. So, and a whole bunch of other stuff that was written by computers. you know, code and spreadsheets and stuff. So now we have, this kind of stuff going into it.
+
+And so the thing is, you know, for a lot of things, the right answer does not come from, or the best answer does not come from consensus. It doesn't come from averaging, right? If you ask the internet who the smartest person in the world is right now, ask an LLM, you're probably gonna get a Kardashian the result, right?
+
+Because this is an average kind of thing where, you know, that's what, when we talk about model weights, that's what we're talking about. We're just counting. How many times does, know, do people, get excited about or say something positive about a person? Well, the person who's probably had the most positive thing said about them is probably a Kardashian.
+
+I don't actually know which one, but we could ask cha EPT because it just counts. It counts every time somebody says something nice about a Kardashian, well it, you know, a lot less people have said nice things about you and me. Um, we might be nicer than Kardashians. We're better than Kardashians at something.
+
+I don't know for sure. But, you know, that's the kind of thing that's going on. And so you gotta extrapolate that over everything. And so I think that people are just sort of misunderstanding. These things are not wisdom engines. They don't understand what the best thing to do is under a circumstance. They know what the, probably the most likely word to put next is.
+
+That's what tokens means. And they do that, but they're not great at everything. So, as a counter example, let me give you some counter examples. So example, we built these computational models, which again, what you would call an AI infectious disease. And we started doing this maybe 15 years ago. And these are models of data to the spread of a disease like malaria, HIV, tuberculosis. These are diseases that are still wiping out a lot of people, not probably in your neighborhood, but definitely south of the equator. And so we would collect data on what affects the spread of those diseases.
+
+So, climate, rainfall, travel of humans, you know, all the things where the roads are, things that can affect, know, how the disease spreads. And then because you have a model that, an AI load to go up with that data, it can run simulations. So we call that but simulations are using the model.
+
+Say, what happens if I try this? What happens if I, you know, if you're going after malaria, can I put some. Bed nets here or spray DDT there or set up a laser and shoot mosquitoes and what effect will it have? 'cause then the simulation can extrapolate out into the future based on all the data it has, everything it knows the disease gonna spread and that can help you, that can, that does help us out how can we attack and intervene those diseases.
+
+And so, we built a team to do this. They've been advising 75 different countries on how to optimize their resources and deployment of those resources to stop diseases. can see very clearly in the first Ebola outbreak, 12,000 lives were lost. And then a couple years later, the second Ebola outbreak, 12 lives were lost. And that's in part because using ais we're able to see our possible futures. Choose the one that's gonna work the best for what we're trying to do in this case. Stop Ebola. Go after it. And that's what would have been possible with COVID.
+
+[00:12:42] Brian: Yeah,
+
+[00:12:42] Pablos: what I mean?
+
+[00:12:43] Brian: that sounds amazing,
+
+[00:12:44] Pablos: are, it is amazing. This is important.
+
+This is what AI is for.
+
+[00:12:47] Brian: but it sounds different than the comic book fantasies that I hear about all the time.
+
+[00:12:51] Pablos: right? Because,
+
+[00:12:52] Brian: I love this.
+
+[00:12:53] Pablos: This is
+
+[00:12:54] Brian: Yeah.
+
+[00:12:55] Pablos: would love it. You don't, people don't know about this 'cause these aren't ais that speak English. You can't chat with them.
+
+[00:13:00] Brian: Yeah.
+
+[00:13:00] Pablos: this is what they're doing. And so what, you know, people have this sort of very skewed notion of what we mean by ai.
+
+AI is these, you close your, you you, you're a guy who loves stories. You probably have a, you do have a model that you've trained in your head, and it's trained on everything you've ever seen, everything you've ever read, every conversation you've ever had. If you close your eyes and think about, okay, imagine laying in bed. The lights off. Which way is the door out? Your bedroom? If you open that door, what do you see? Which way do you turn to go to the bathroom? Like you have trained a model. You have that answer. I've never, I don't know where your bathroom is. I have that model for my Yeah, and Troy has
+
+[00:13:48] Brian: It's a small hotel room.
+
+[00:13:50] Pablos: Yeah. So you've trained a model then in the moment when it's time to go to the bathroom, that's inference. You just don't think about it. You get up out of bed and go to the bathroom. So what's going on is humans are training a model in our mind. We're really good at it. Mine is different than yours.
+
+Everybody has trained a different model and all of these models are out there floating around in the world, competing with each other for access to food and chicks. So then what happens is, in a computer, we've gotten to the point now where we can train it. We can train models in that computer of our world. Now LLM is trained on our world of language and increasingly world of, you know, cap images. what we can do is train those models to understand more important things about our world. So, for example, Maps as an AI you've been using for 15 years, right? We don't call it an ai, but it's got a model of all the roads. It's got data on all the traffic. If you're driving to work, you know how to get to work, but you still ask Google Maps 'cause it knows more than you. It can give you a better route to work. 'cause it knows what the traffic is. It knows where construction is. It can route you around those things. It can guesstimate the timing. You can't do that the same way it can. It's better than you for that task. So you ask it, show me how to get to work, what does it do? Well, it shows you that blue line. Here's the fastest way to work. Then it shows you a couple of gray lines, right? Here's, you know, if you wanna stop at Starbucks or
+
+[00:15:26] Brian: Oh yeah.
+
+[00:15:27] Pablos: some gas or whatever, it shows you your, these are your possible futures and you can choose, and that's the thing people need to take responsibility for.
+
+Still up to you to choose which of those futures do you want. But the computer can tell you your actual possible best futures are based on a lot more data than you can handle.
+
+[00:15:47] Troy: what happened Pablo?
+
+[00:15:48] Pablos: So what happened is we just got off the rails, right? So people are, it's like asking Chad GPT to drive you to work.
+
+[00:15:55] Brian: It's like the Uber drivers don't know where anything is anymore. They just follow the lines.
+
+[00:15:59] Pablos: because,
+
+[00:16:00] Brian: don't, they don't know.
+
+[00:16:01] Pablos: know as well as their map can tell them. Right?
+
+[00:16:04] Brian: But sometimes it's like common sense, like they don't know. I, you know, it's like.
+
+[00:16:08] Troy: knowledge.
+
+[00:16:09] Pablos: well, you, you would second guess your, your own common sense. I do that when I'm driving, right. I'm literally.
+
+[00:16:18] Brian: There's nothing more frustrating than where you're like, I know where this is and I'm actually getting lost because like I'm following some other, anyway. Um, there faster 'cause you're following the map. 
+
+[00:16:28] Troy: So we, Pablo, we made this thing into our therapist. We
+
+[00:16:34] Pablos: Probably prematurely.
+
+[00:16:35] Troy: into our teacher.
+
+[00:16:37] Pablos: Possibly prematurely,
+
+[00:16:39] Troy: we are trying to make it into our friend and, you know, characters that,
+
+[00:16:46] Pablos: yeah.
+
+[00:16:47] Troy: companionship.
+
+[00:16:48] Pablos: Yep.
+
+[00:16:49] Troy: we are doing un all kinds of unholy things with your little model generator.
+
+[00:16:54] Pablos: I 
+
+[00:16:54] Brian: I like the malaria stuff. I like the Ebola, you know, surveillance. I, I like that. And the mapping,
+
+[00:17:00] Troy: But, but
+
+[00:17:01] Brian: this other stuff.
+
+[00:17:02] Troy: Pablo, you're like a financial guy now. Okay. So we, we, we have the global economy. on the economic potential of all of this compute and all of this technology, right? Like, and, and on. And what, what Charlie said in that article is basically, yeah, it's okay. It's good for some things, it's fine it, like, the way we're, and, and we classically do this, we do it in America more than anyone.
+
+The pendulum swings so far in America. It's
+
+[00:17:34] Brian: Yeah.
+
+[00:17:35] Troy: characteristic of America to me.but it now has become, like, it just, you know, obviously for people that lived through the.com implosion of the early aughts
+
+[00:17:46] Pablos: Yeah.
+
+[00:17:47] Troy: nineties, it feels really reminiscent. And I'm wondering like. Where, where does it go?
+
+What if it, what if it's not as good as we think it is? Is it just a question of time? there, there, there's lots of speculation as to the sort of effective ROI for this thing that you just described inside of corporations don't know. and the social side of it is, is, is is obviously incredibly unpredictable, but, wh where, where do you think what happens next?
+
+[00:18:17] Pablos: Well, I think what you're, you know, what you're expressing is just a kind of, totally reasonable, you know, frustration and confusion. Everybody wants to know where it's gonna land. We don't know where it's gonna land. but I can tell you it's gonna be, it's gonna be some of both. It's both gonna be extraordinarily better than anyone imagines for some things. It's gonna be extraordinarily shittier than people are imagining for other things. So you get both. But right now, we're at this point where, you know, the, the potential has been proven. You could say. Now I think people are misunderstanding that it's not just about chatting, the potential is there to get better answers more computation, So even though people are annoyed at hallucinations and stuff, the truth is the ais, as we know them today, are showing that with a massive amount of computation, it can do a much better job of answering the question of what word comes next, That's the job of the LLM, and it is doing that at a way better than has ever been possible before with all of our other old shitty computers, with crummy algorithms and terrible tricks and not enough data. So now we need to do is aim that it's saying, okay, how do we make the right kind of model? So right kind of AI for helping us get a better answer. Now, Google Maps is giving you a better answer. A Tesla is giving you a better answer, like it can drive the car. Chachi. BT is the wrong kind of model to drive the car, so please don't ask it to try. But Tesla or Waymo has a model that can do that, is trained to do that. So if you want a teacher or a therapist or an accountant or a lawyer, any of those things, can train a model to do a good job of that. Now we have the fundamental technology to do that. Now, might not be, uh uh, might be a helpful part of it, but that is not what you need.
+
+Like there's no logic in it, right? There's a averaging voting engine. That's what's going on. You can see what all the people who came before you would've voted for, they would've voted for some pretty dumb shit that you don't want. So I don't think that you can count on. current models to give you good advice.
+
+You can, they can give you average device and if you're, if you don't have a something better, that can be pretty good start. But I think where it's gonna go is we're going to fine tune these things. You're gonna end up with a zillion products. One of them is going to be the winner at therapist. One of them is gonna be the winner at doctor and lawyer and all the other things that you, that you want them to do. And it will be really good. But I think it's really a life cycle that we're in and we're at a developmental stage that is, you know, not even in preschool yet.
+
+[00:21:16] Brian: Right. 
+
+
+[00:21:16] Is AI conscious or not?
+---
+
+[00:21:20] Brian: So what do you think? I mean, I, I think what you bring up an interesting point about, 'cause I think you know, that that's Mustafa Soliman, article that, that he wrote was, was about this seemingly conscious ai. Right? And I think one of the issues, and maybe this is a design question, right, in that the way these things have been.
+
+[00:21:35] Pablos: it's just a lot of bullshit with nerds pretending to be philosophers because we don't have a definition for consciousness. So this is an idiotic conversation to have for Mustaf or anyone else. It just,
+
+[00:21:48] Brian: but I think it arises.
+
+[00:21:50] Pablos: and then we'll come back to this. I mean, 
+
+[00:21:51] Brian: Right? Right. But, but, but I think it arises from the way these things have been released to, to everyone, right? Like in that it's been introduced as anthropomorphically. Like, it, it, and I think it's it,
+
+[00:22:08] Pablos: not consciousness.
+
+[00:22:09] Brian: right? So, and I think that's the way it imitates. Like it's an, Imma like, on one level, like, I'm like, okay, why am I to, why do I get mad at a toaster?
+
+I'm like, why am I getting mad at this thing? Like, that won't like, do things that I want it to do. But I find myself slipping into that. And I think one, the moral panic that's coming about AI psychosis really was inevitable from. The design of of these systems to make them appear like they're conscious.
+
+[00:22:37] Pablos: Well the, it's not that so much. I mean, look, you want, evolved to know how to operate humans. We've all, you know, all of our ancestors interacted with a lot of humans. That's why we created language and, you know, gestures and all this stuff. You know, we have a system we know how to communicate with a human. We compromise ourselves to communicate with machines in our entire history. You know, you have to sit down and deliberately learn how to operate. shift, you know, when you're a kid. We did anyway. I don't know about, but not anymore. I think the last stick shift has gone out of production. So
+
+[00:23:18] Brian: You can still find 'em around Europe every.
+
+[00:23:20] Pablos: but even there, we tried to converge on how do we make the machines operate more like humans.
+
+That's why we got the automatic transmission. That was the whole breakthrough with desktop metaphor in your mouse is that you're born with the ability to point at shit. You want. So a mouse controls a pointer and you just point at shit you want on your computer. You're still doing that on your Mac, you know, on your phone.
+
+You just point at the stuff you want because that's what humans have. And so we've been wanting to make our computers better and better at operating like the people and understanding And that's what's going on. And that the computer can. Speak your language and understand your language, you can interact with it the way you would interact with a human. That does not mean it's a human. Not all humans are the same. And we understand that, you know, we learn that we talk to kids differently. We expect something different from our lawyer than our frat buddies. You know, you have a kind of, ability to, you, you do. You build a mental model of what is that human good for, And so we need to start doing that with You know, you don't go to Microsoft Word and ask it to do your taxes. You might go to Excel and ask it to help with taxes, but you've learned what are these different things good for? And so right now people don't have a sense of the bounds of chat, EPT or of an AI because it's not clear like, you know, Excel just gives you a box this big and you know what you can do in it. So I think the problem right now is people are just going a little nuts. You know, projecting onto these things that what they and understand from dealing with humans and because the thing is not putting any bounds on that and it's not expressing constraints. people are imagining a lot more than what's happening. 
+
+[00:25:14] Troy: 
+
+
+[00:25:14] What's next in tech innovation?
+---
+
+[00:25:14] Troy: you write a lot about how the disruptive patterns in Silicon Valley that really reshaped software inside of corporation, SaaS, ultimately media, social connections, all the things that we've seen for the last, you know, 20 years, that so much of that technology and thinking and approach to reinvention has not hit other industries that it's coming quickly. And so you tell a bunch of stories about that in your book, right? Like how we're gonna see. You know, n next generation kind of waves of disruption hit stuff that has traditionally been really I don't know, conservative or
+
+[00:25:56] Pablos: Yeah.
+
+[00:25:57] Troy: to change.
+
+[00:25:57] Pablos: Yeah.
+
+[00:25:58] Troy: Can, can you, can you tell me like, what should we be, what should we be thinking about in terms of where, you know, we're technology innovation is gonna kind of rear its head next?
+
+And, and, and, and why does it matter? 
+
+[00:26:12] Pablos: So if you look at our, say the last 20 or 30 years, you know, computers kind of got to a point in the, you know, mid to late nineties where they were useful, you could say. and so they went into every industry, every business, and, and that in the nineties, and then with the internet, they started to get a lot more useful.
+
+So, they started to go only businesses, but also people's homes more and more, eventually onto people's laps and into their pockets, and pretty soon onto their glasses. But the, but the, you know, along the way, what happened is. the computer got, you know, more powerful and lower cost and all those things, you know, it just was generally applicable and, and you could put it everywhere.
+
+So we went, we've lived through that era, but there, and, and, and what happened in the last 20 years with, especially with sas, what we, we think of as kind of a SaaS epoch here is we were able to go make companies, know, startups really that could replace entire industries. And you've seen that in every industry.
+
+That is basically a, you know, a data or information business because computers just smoke it at information. They love it. So, so you could make software that could go. And disrupt insurance and, you know, billing and, you know,
+
+[00:27:43] Troy: Taxis.
+
+[00:27:44] Pablos: know, zoom and slack and even taxis, which turned out to be mostly an information thing.
+
+It's like, you know, the information about like, who needs a ride and where are they, is basically what that business is about. You know, picking 'em up and driving 'em is just a small part of it. It's really about the information. So, you know, so it was a, these were sitting duck industries, most of them because the incumbents, you know, like the, any taxi company in the world could have made an iPhone app. None of them did. that's a really great way to think about every other industry. Every other business are they are, do they have their eye on the technology that's coming? Are they trying to bring it to market or are they going down kicking and screaming? always the latter. So opportunity is created for. Someone who's got the new technology in their hands, force multiplier that makes them 10 x better, a hundred x better, a thousand X better. Somebody who's wielding that can disrupt the industry. And that's what you saw with Uber wiping out the taxi industry. That's what Facebook did to media. And you guys have know more about that than me even. And that's what, you know, Airbnb has done to hospitality. That's what's going on is we're replacing industries with startups so that all that playbook is worked out, proven, highly developed in Silicon Valley, but they haven't been able to go past those. Just the information based businesses. What does that mean? Well, think about the stuff every human on earth relies on. energy, water, waste, food, sanitation, construction, manufacturing. Every single person on earth is a customer for those things. Silicon Valley hasn't touched any of them. So that's the frontier, and that's what's about to change, is that the same playbook that we've been using to go after these information industries now going to start being used in all of these a hundred, 200 year old industries. And those are trillion dollar industries. They're massive and opportunity.
+
+[00:29:54] Troy: of one that
+
+[00:29:55] Pablos: You know, like I, one time I added up all the, the revenues of all the software companies in the world. And if you do that today, including Microsoft and Facebook and Salesforce and all of them combined, it's about $2 trillion a year in revenue. Global GDP is over a hundred trillion dollars a year. So our giant tech industry that we're also wound up about and reading about in the news every day is 2%. Of what humans rely on. other 98%, industrials. know, that's, uh, the things I just mentioned and we're about to go disrupt all
+
+[00:30:37] Brian: Yeah.
+
+[00:30:37] Pablos: now we can bring, 'cause now we can bring our technologies to create 10 x multipliers and those things.
+
+So I'll give you a simple example.
+
+[00:30:45] Troy: Is
+
+[00:30:45] Pablos: Yeah,
+
+[00:30:46] Troy: the ship that can sail
+
+[00:30:47] Pablos: that, that's a great one. So we have a company making cargo ships that can sail themselves. So what that means is, no crew, 'cause it's autonomous, you know, duct tape a Tesla to the front of this thing and it can drive itself across the ocean. So that, that's not even very hard at this point.
+
+It's easier than self-driving cars because there's nothing to hit out there,
+
+[00:31:11] Brian: It's true.
+
+[00:31:11] Pablos: documented pedestrian ever. Um, so sailing that's been working for centuries, it's wind power. So you don't need fuel. There's no emissions. Why wouldn't you do that? There's nothing not to like, right? I don't think the shipping industry is gonna get around to it. So we'll do that. That's what, you know, Silicon Valley will do that tech, the tech industry will do that. We'll build the first chip, deliver some cargo containers full of Happy Meal toys from China to Los Angeles. And after that it's not tech anymore. But guess what? Shipping is a $2 trillion industry. It's as big as software. And half of those ships on the ocean right now, half of all ships on the ocean are moving gas. what they're doing. They're moving fuel around. That's all they're doing. Half of. And if you go look, it's crazy. It's a marine traffic website. You can see half of them are just moving fuel around. And so we don't even need fuel for our ships.
+
+[00:32:11] Brian: So this is basically moving from like bits to carbon, right? I mean it's the information tech to hard tech.
+
+[00:32:16] Pablos: But it's still ai, right? It's what we
+
+[00:32:18] Brian: Mm-hmm.
+
+[00:32:19] Pablos: ai. 'cause now it's an AI that can drive a ship. It's an AI that control the sails. You know, it's just computers doing this stuff that before we couldn't have, they weren't, wouldn't be good enough to do that.
+
+Now they can do that. There's very little left that they couldn't do in that sense. And then, you know, we wanna take these ais of course, and embody them in, now they can speak English and listen to English. Let's put them in a, you know, English shaped body and
+
+[00:32:47] Brian: Yeah.
+
+[00:32:48] Pablos: ' cause we built our world for humans.
+
+And so why not put, put the computer in the shape of a human so it can navigate our world and help us out in more ways. That's really where
+
+[00:32:58] Brian: Yeah,
+
+[00:32:58] Pablos: with this Now.
+
+[00:32:59] Brian: I think it's really interesting in that like, you know, before all, you know, ai, ai, AI became all the talk that, you know, we were talking about climate change all the time and decarbonization. Right? And a lot of, you know, and, and we didn't have all the talk about net zero. We don't, we don't have the technology to get there, right?
+
+But our leading technology companies were also just simply not focused on, I mean, this is energy, what we're talking about. Then all of a sudden they were like, oh, wait a second. We need a ton of energy now. And so I'm like hopeful that a weird spillover effect of all of this is that we're getting the motivation, the capital, to actually, you know, make a major change to, a, an issue that we really hadn't made as much progress as we should have.
+
+[00:33:42] Pablos: you got it exactly right. It's the hyperscalers that are gonna save us from climate change. And the reason is, you know, we, we, we just fucked up as, as a species, you know, we conflated reactors with nuclear bombs and we outlawed the wrong one. And that was, you know, before we were born, you can, blame, 
+
+[00:34:05] Troy: boomers.
+
+[00:34:06] Brian: I grew up near Three Mile Island, so I remember.
+
+[00:34:09] Pablos: Well, yeah, but you survived, didn't
+
+[00:34:11] Brian: no, I was, I don't know. But yeah, I guess I was alive during it. yeah. No, no, I know that, that that was a, that was a own goal, I guess.
+
+[00:34:18] Pablos: And so, yeah, so we, we haven't been honest with ourselves about that. We got on the wrong course in history. we had done it the other way around, you never would've heard of global warming. But we are, as you said, you know, we're like these story powered creatures, you know, and once we get the story in our head, it can take generations to recover. yeah, fortunately my daughter thinks Chernobyl is a TV show for old people. So, you know, so there's no, you know, so we, we lit, we had to wait it out for 50 years, we've done that, but now we're gonna build these nuclear reactors. The hyperscalers are demanding them. They control Congress in a way that, you know, the oil industry used to control Congress,
+
+[00:35:03] Troy: Right.
+
+[00:35:04] Pablos: it's gonna happen.
+
+We're working on that right now and it's amazing because we were putting the cart before the horse, you know, we're getting wound up about climate change and trying to find a to stop it without being honest with ourselves that this is fundamentally going to improve unless we solve energy and we
+
+[00:35:23] Brian: So,
+
+[00:35:23] Pablos: finish that job.
+
+
+[00:35:24] Is it worth the investment?
+---
+
+[00:35:24] Brian: yeah, I never really thought about, I mean, I, I am like with the energy industry, right? So now I think everyone all of a sudden is like, you know, thinking about energy and never thought about it before, right? Because for all of this ai well, yeah, but like all of this AI to be, you know, to, to actually come to fruition, it's gonna need massive amounts of energy and massive amounts of compute, right?
+
+And, the, the, the amount of energy needed, at least from everything that I read and all the podcasting is just unbelievable. Right? So you're, as Troy said, you're also like an investor. Like the outcomes have to be massive. And I think that is the sort of struggle is like trying to see the outcomes at that would justify.
+
+All of this massive amounts of investment going into create the energy and then also the compute.
+
+[00:36:17] Pablos: You know, if you the amount of energy, that a person on earth gets, it's equivalent to about one toaster. So super glue the button down, run it 24 7. That's how much the average Earthling gets Americans because we are so smart and good looking. Get eight bonus toasters. 
+
+[00:36:38] Brian: Yeah.
+
+[00:36:39] Pablos: So we get nine times as much energy as the average person on Earth.
+
+And to get those averages, 3 billion people have to live on less than one toaster. So we already have a problem in this world, which is we need a lot more energy than we made. We made 8 billion people and we did not produce the energy for them to have an acceptable living standard. You know, I maybe Americans are overdoing it.
+
+Europeans are, you know, used to be five or six toasters, now they're at four or five toasters. but they are, you know, that you could call that an acceptable living standard. to 10 x global energy production, not even counting ai. That is where we're at now. That sounds crazy. And unfortunately I'm the only one saying that everybody else is like, oh, grow a few percent a year. No, we need a 10 x global energy production. And it sounds crazy, but we have done it before. We have 10 x global energy production in the last century. Now we did it by digging everything up outta the ground and burning it. we learned our lesson, and we're not gonna do that again. need to 10 x global energy production.
+
+We need it to be clean and we need to be cheap, and we know how to do it. we've known how to do it for 60 years. we need to build nuclear reactors to do it, and we couldn't do it. We outlawed the nuclear reactors. We weren't allowed to build them. our, my lab, we invented one the most modern nuclear reactor 18 years ago.
+
+We're still not allowed to build it. the cool thing is in the last year, the US has totally flipped. The DOE is pushing us. We have a nuclear reactor we're working on. You bury it a mile deep in a borehole. It's unquestionably safe. There's. There's 10 billion tons of rock between the reactor and anyone's backyard, which by the way is like, it's a mile from anyone's backyard.
+
+So there nothing, no, no radio activity can get to the surface. It's super cheap. It's super practical. We were on a track to get the first one built by 2029. The US Department of Energy is pushing us to get it done by next July, and they've approved us this week to do it. So
+
+[00:38:52] Troy: you got a signup list? I'd like one of those.
+
+[00:38:54] Pablos: exactly. Everybody wants 'em. And we're then they're gonna get 'em.
+
+We're gonna build them in a gigafactory like Toyota's and just put 'em everywhere. what's possible. And that will change the world. So we're gonna do it first for hyperscalers,
+
+[00:39:09] Troy: Into something more nefarious.
+
+[00:39:11] Pablos: like everything else. We're gonna subsidize this by using rich people. And right now the richest people are hyperscalers with data centers for ai. That's gonna get the cost of these things down and we'll put 'em all over the world. So that's what I'm, that's the future I'm building.
+
+[00:39:26] Troy: one and do something bad with it.
+
+[00:39:27] Pablos: what could you do? I mean, it's, it's a mile underground. I don't know how you're gonna get to it. Right? what? Give me a scenario, I guess. I mean, somebody will think of something.
+
+[00:39:38] Brian: Troy, you're gonna be like enriching, like,
+
+[00:39:41] Troy: Okay, so let's, I wanna, I, Brian, I'd like to move to media because I
+
+[00:39:46] Pablos: Yeah.
+
+[00:39:47] Troy: there, there is an elegant off ramp here,
+
+[00:39:49] Brian: Okay.
+
+[00:39:49] Troy: but before we do it, I, I, I'm, I would ask,
+
+
+[00:39:52] Exciting or Scary Tech
+---
+
+[00:39:57] Troy: I would love to know Pais, what technology you're most excited about and most fearful of. industry specific, it
+
+[00:40:00] Pablos: Yeah.
+
+[00:40:01] Troy: point solution, it could be
+
+[00:40:02] Pablos: You know, I don't, I think just the notion of being fearful of technology is the wrong kind of relationship to have with it. Right now I'm fearful of idiots. That's, that's what scares me. I'm not fearful.
+
+[00:40:18] Troy: podcast 
+
+[00:40:19] Pablos: Yeah, I'm fearful of idiots. I'm not fearful of technologies. These are tools for us to use. A hammer is a tool I can use to smash your head or build you a home. And probably the first hundred years, all we did was smash heads and eventually we learned, oh, we should probably just use them for building homes. And now we do a lot more of that. So over time, humans develop a more re relationship with technologies. You know, we kind of got fire under control.
+
+That shit's really scary. But you know, we've figured out a mature relationship with it. And so we're, it's very important to think of these things as tools.
+
+[00:40:54] Troy: a specific example of something that you think is really cool that the, you know, that people could, could, could look forward to.
+
+[00:41:00] Pablos: Well, I think the nuclear reactors are the best. We have other things coming, you know, solar panels were kind of a miraculous invention and we've done a great job of figuring out how to produce them at scale and get the cost down. But the relentless onslaught of night keeps fucking with our solar panels. So, we have a company that's figured out they can just take the solar farm, it up into a rocket, launch it into space, and the solar farm in space will get eight times as much energy. It looks like nighttime in space just 'cause we have a bad angle on it. It's actually noon in space all the time. So a solar panel in space will get sun 24 7 and then you can beam that energy down to earth using radio waves that go right through clouds. this is a way to make a solar panel into a base load energy. So if you don't like the nuclear reactors, whatever. Fine, we'll put solar farms in space and we can beam that energy to any city on earth in the middle of Africa or know, Antarctica if you want. And so that's what's coming. And so, and I think
+
+[00:42:05] Troy: Pablo had a concept for a space coffin that
+
+[00:42:08] Pablos: coffin good. Yeah, I love it.
+
+[00:42:10] Troy: Yeah,
+
+[00:42:10] Pablos: Somebody,
+
+[00:42:11] Troy: we would shoot grandpa into space. It's a great concept. It comes with an app.
+
+[00:42:15] Pablos: there was actually like a movie that,
+
+[00:42:17] Troy: into
+
+[00:42:17] Pablos: wanted to do that.
+
+[00:42:18] Troy: it's low cost genic freezing of the body, such that when we figure out what to do with a frozen body, we can resuscitate it. Moreover, on your, your app notifies you when, when, when grandma Grandpa's overhead.
+
+[00:42:30] Pablos: I think this wasn't this, this plot of Idiocracy, like
+
+[00:42:35] Brian: There you go.
+
+[00:42:35] Pablos: our life.
+
+[00:42:36] Troy: I don't
+
+[00:42:36] Pablos: I mean, I, I dunno. Yeah. Something like that.
+
+most prescient movie of all time, you know, I mean, it's, don't feel bad.
+
+
+[00:42:44] The Force of Media
+---
+
+[00:42:44] Troy: Brian, one, one thing I was thinking about, for, for Pablo related to, to, media you know, as he's become this kind of tech prognosticator and venture capitalist, he, he's been forced to become a media person.
+
+[00:43:00] Brian: Wait, is that forced? I don't. It seems kind of natural. I just met Pablo, but.
+
+[00:43:03] Troy: he's a good talker, but he seems to be, he seems to be doing, he is written, he's done all the things right.
+
+He's got the podcast, he's written a book, he's got a newsletter. He sends out little missives when he makes an investment. He's doing the, he's doing the rounds. he sort of has a model. He is sort of like the Anthony Bourdain of Deep Tech and, and so he's, he's, he's endeavoring to become a media personality with his own formats and point of view and all the things.
+
+[00:43:28] Pablos: Sad. 
+
+[00:43:30] Troy: so I, we could help him with that. Maybe Brian,
+
+[00:43:32] Brian: Well, I'm interested, I'm interested in Pablo. How do you look at, like, all, all the stuff you're working on, what, what is the purpose of media to, to you, not like media in general, but I mean in, in your work and what you wanna accomplish. Because it's interesting to me that like media is still very powerful as like a force for people who are working on some
+
+[00:43:53] Troy: That's right.
+
+[00:43:54] Brian: massive things.
+
+[00:43:55] Pablos: it's a force. one of the things we got wrong in the tech industry early on is, you know, we sort of thought we could just build cool shit and people would excited about and use it we really undervalued important it was to get out in front of telling these stories, right? So again, like nuclear reactors are a good example, just 'cause we've been talking about story went wrong. and I think that. There was this, there was a moment in the tech industry that was very, very striking and memorable where like, one guy at one company started telling the story about the technology right before it came out, and that was Steve Jobs. And everybody was like, why is this nerd talking to the media?
+
+Like, why is anybody listening to this guy? Why is he on stage doing keynotes? Like it was super weird for nerds to do that before that we just didn't do it. and then, you know, with the success of Apple, every nerd tries to do it now. Um, so
+
+[00:44:59] Troy: point of
+
+[00:45:00] Pablos: yeah.
+
+[00:45:00] Troy: being this inflection point in nerds doing storytelling.
+
+[00:45:04] Pablos: yeah. And he really was, and, and it, and I think it was that, you know, I was, I grew up with the first Apple two, I had the first computer and I that you could have at home basically.
+
+And so my, since I was like a 10-year-old kid. was constantly trying to convince people that like, Hey, this computer thing is gonna be cool and useful, and nobody believed me. And so I desperately felt like I had this superpower and I wanted to share it with people. And so from, I think from my, you know, from me, yeah, I'm a computer nerd, but I also had this weird side effect of wanting to share and, you know, seeing that this computer could make things better for people and wanting to convince them of that.
+
+And you can see here I am, you know, 40 years later I'm still doing that. I'm trying to convince you these technologies are coming, computers are gonna be awesome. and so there's a kind of, that streak is in me. and so. I found is that to do that, I had to be able to explain these things in a way that didn't lose people, make them both interesting and compelling.
+
+And accessible. I don't think, you know, all these other assholes talking about AI are talking about transformers and tensors and deep learning and neural networks and all this shit. Nobody understands, and so you haven't heard me do that. You know, I'm trying to make people feel like they can understand it because it, you can't. And so I think that with technologies, you know, it's very important to the positive, practical vision of where this goes so that people have something to get excited about. They have something to look forward to. They have something to help build and to work on. And since nobody's doing that, most of the stories are all dystopian.
+
+Bullshit.
+
+[00:46:51] Troy: but wait a minute,
+
+[00:46:52] Pablos: Yeah,
+
+[00:46:52] Troy: because the counterpoint here
+
+[00:46:54] Pablos: yeah.
+
+[00:46:55] Troy: we were fed a bunch of bullshit
+
+[00:46:56] Pablos: What bullshit.
+
+[00:46:57] Troy: while we were fed the idea that Facebook was gonna create a kind of global Kumbaya.
+
+[00:47:03] Pablos: It did. That's not the only thing it did, but it did do that.
+
+[00:47:07] Troy: else did it do?
+
+[00:47:09] Pablos: I mean, I, I don't know how much credit you give Facebook, but we absolutely got, think about when you were, I don't know, you grew up in Canada somewhere. Is that right? Where'd you grow up?
+
+[00:47:19] Troy: from here. Yeah.
+
+[00:47:20] Brian: Regina, Regina, let's be specific.
+
+[00:47:22] Troy: Yeah. The Prairie Race. Saskatchewan.
+
+[00:47:25] Pablos: is? Yeah. So how many other kids were,
+
+[00:47:28] Troy: know where your neighbors, you know, capital cities are, you know, provincial capitals, but capitals nonetheless.
+
+[00:47:34] Pablos: weren't taught that in school. Um , yeah. Propaganda. yeah, where I grew up, you remember me, I'm like the fir I had a, I was a computer nerd. I in Soldana, Alaska, you probably know where that is. And this is a small town. Nobody for a thousand miles had ever seen a computer. Where's my tribe? Where's my community? mean, nobody had ever met a computer nerd before, but they were, you know, hip enough to know that they weren't cool where I lived. So, you know, getting online, I got on a modem when I was like 12. I found my tribe, right? Imagine, you know, whatever, you're some weird teenager, you're into like taxidermy or manga or you know, whatever it is that you think is cool, nobody around you thinks is cool. You know, imagine you're disabled. Imagine that you have, you know, you got trauma victim of some kind. Like where do you find your tribe? solved that everybody can find their community. Now those got polluted with ads and they got polluted with trolls and they got polluted with a lot of other stuff.
+
+But we could all find our tribe. So there's work to do to make those things more functional. But it absolutely has been a boon. It's been a boon for those things. Now we gotta get
+
+[00:48:56] Troy: Yeah.
+
+[00:48:56] Pablos: again, we're in, we're in junior high with this.
+
+[00:48:58] Troy: know, you're,
+
+[00:48:58] Pablos: No.
+
+[00:48:59] Troy: fucking with us a bit Pablo. Like, I
+
+[00:49:01] Pablos: And you're not fucking with me.
+
+[00:49:02] Troy: you know, the, the, the invention and global spread and
+
+[00:49:06] Pablos: Yeah.
+
+[00:49:06] Troy: effects of, of social media with the internet and its utility
+
+[00:49:10] Pablos: Okay.
+
+[00:49:10] Troy: disingenuous.
+
+[00:49:11] Pablos: Okay, good. So, you wanna blame Facebook,
+
+[00:49:15] Troy: I'm not
+
+[00:49:16] Pablos: but
+
+[00:49:16] Troy: anybody.
+
+[00:49:17] Pablos: No. No. Okay. But, but people
+
+[00:49:19] Brian: What.
+
+[00:49:19] Troy: aggregated by a very few people that make certain decisions that change society in admittedly positive, in a lot of negative
+
+[00:49:27] Pablos: yeah, yeah,
+
+[00:49:29] Troy: Then it deserves a certain amount of scrutiny. And there
+
+[00:49:33] Pablos: yeah.
+
+[00:49:33] Troy: and, and, and I think that
+
+[00:49:35] Pablos: But where do you place the responsibility?
+
+[00:49:38] Troy: Where do I responsibility for its externalities
+
+[00:49:41] Pablos: Yeah. 
+
+[00:49:42] Troy: I mean, I think it's a system. I, I, I, I don't place it. I, I think that, we have to be very careful about the kind of relentless, naive optimism of a few people that are feeding us a self-interested view of the world
+
+[00:49:59] Pablos: Yeah,
+
+[00:50:01] Troy: and are more interested in near term sort of power outcomes than long-term,you know, good for society.
+
+[00:50:10] Pablos: But you have some volition in this. You could choose not to use Facebook. Now. Nobody does that, but you could, you like you never wrote a check to Facebook, right? They've been giving you free shit for your last 20 years and you've been gladly taking it and using it. And so I don't think it's right to just blame Facebook.
+
+We didn't have to choose Facebook. That's a big wall garden. We all ran right into. By of our own volition, we made that choice. And I think it's gotta be up to us to decide, okay, we overdid it on Facebook, we're gonna need to back outta that and do something a little cooler. And we totally have that ability.
+
+We can go build better things and use them. So I don't think, I think, you know, I think the reason we can't see society improving is because we don't have a society that wants to take responsibility for their own choices. And, and so I think they're getting what they deserve from Facebook.
+
+[00:51:07] Brian: Well, I think, I think that is the big, I think that's the big question of this AI future, right? Because
+
+[00:51:12] Pablos: Yeah,
+
+[00:51:13] Brian: this is going to be used for manipulation. It's going to be used for all kinds of bad and good. I, I hope we get, I hope we get way more of the good, but I think it's going to be up to everyone to be able to resist that.
+
+And I think what I, I kind of worry a little bit about like whether, you know, when we're gonna hear a lot of these cases, and I'm sure you know a lot, it will be waved away by the Mark Andreessen's of the world as, oh, this is just the media trying to deflect away from their lost power, blah, blah, blah, blah.
+
+Right? But like, they're real. And a lot of it is, I think that these manipulative systems, you know, can lead to really bad outcomes. And I think that is some of the concern that. We're seeing with some of this AI psychosis is that for some people they're, they're, they're susceptible to this. And, and, you know, there are cases where it's not just like sort of people with, you know, mental illnesses, that are susceptible to falling into these, these delusional rabbit holes.
+
+[00:52:18] Pablos: Yeah. Someone just had a bad breakup or whatever. I, I don't think that. is rosy, right? But I think you have to be honest with yourself about you know, what is the life cycle a new technology. We're in junior high with Facebook, still poorly behaved, but like I said, we're in grad school with fire and knives and, and hammers, so. With ai, we're not in preschool yet, so there's a developmental stage that you're at and you have to go through them and you have to build a mature relationship. And like any other drug, you gotta learn to get it under control. You, you know, American teenagers overdo it on booze for a bit, and then they figure out how much is too much, and, and they build a mostly functional relationship with it.
+
+And occasionally some people go way off the deep end. And we've decided as a society that like, well, the booze is pretty good, so we're gonna let a few people, you know, destroy themselves with it now and then. And same with highway. So you just have to be honest with it yourself and say, okay, how do we minimize the damage?
+
+How do we raise kids that can build up an immune system for these things? How do we build a functional relationship with these things? Look, I, I overdid it on Instagram for a couple of weeks when I got
+
+[00:53:41] Brian: Yeah.
+
+[00:53:41] Pablos: you know, then I learned how
+
+[00:53:43] Brian: It is interesting though. We, we reg, we regulate, we regulate those things.
+
+[00:53:47] Pablos: Well, you, no, as an individual, you regulate them.
+
+[00:53:50] Brian: The state regulates those things.
+
+[00:53:52] Pablos: is not gonna regulate Instagram to make it functional for you. Go to
+
+[00:53:57] Brian: alcohol.
+
+[00:53:58] Pablos: want. That, that
+
+[00:53:59] Brian: I, I don't know if I want it, but like that the, the state absolutely regulates things that have negative externalities throughout society.
+
+[00:54:05] Pablos: a good job of it. What are they doing with alcohol? What are they doing with highway deaths? I mean, they didn't regulate safety into highways. They tried, they failed. Tesla's doing it. So I don't think you're, think you're really being honest with yourself about like what actually works for making society better.
+
+Occasionally
+
+[00:54:24] Brian: Seat belts worked.
+
+[00:54:25] Pablos: Seat belts work. There you go. Big win.
+
+[00:54:28] Brian: It's a big w
+
+[00:54:30] Troy: Okay.
+
+[00:54:30] Pablos: Seat
+
+[00:54:31] Brian: Eastern Europeans, by the way, often skip the seatbelt. They're still not, they're, they're still a little skeptical of that technology I've noticed. 
+
+[00:54:38] Pablos: Yep. 
+
+[00:54:39] Troy: I didn't Brian that we were bringing on a Randy and Libertarian.
+
+[00:54:44] Brian: I love it.
+
+[00:54:45] Pablos: that, it's just that I think, you know, there's no right answer. You have to recognize like we're in a war of all the time, like a war of like our species has to advance and survive and improve and get better. There's no like stasis. You can't just kick back and watch Netflix for your whole life and expect things to get better. And I think that too many people are trying to do that. So in my mind, like why would you do that when there's so many cool things that we could do to make the world better. We have the best toolkit and human history now that we have ai. We can do things we couldn't before. Let's figure out what ver, I don't even care what future you want, just like go try to build it. And they, all of our little futures need to compete with each other and we'll figure out which is the best one we always do in the long run.
+
+[00:55:38] Troy: That's cool perspective.you know, now that we're approaching the one hour mark here, do like to, 
+
+[00:55:45] Brian: okay. Good product. 
+
+
+[00:55:47] Good Product
+---
+
+​
+
+[00:55:49] Troy: the one that I was thinking about was this. You know, I, you know, I guess all interesting media is sort of a juxtaposition of a couple of things.
+
+And, you know, you always see it as, as I always see it as a sort of Venn diagram. And I think that the, the Michael Wolf Instagram, I think Sefo wrote about it a little while ago, but it, it struck me as being a, a nice innovation on, in, in format where, we take this sort of, tranquil,Hamptons house porn and, you know, a a, a reminiscent of a spread in Ad Architect's Digest. And then we, we, we, we connect that to, you know, his own, the own sort of ranting in immutable style, calm, admittedly of Michael Wolf, you know, talks at length about the shadowy relationship between Donald Trump and Epstein. And, you know, his seemingly well-informed political sort of insider take on what's really going on in Washington. But every single shot is perfectly framed, framed. Some part of his agan at home, right? And his, I think his partner's wife, whatever, is she, they subsequently or in parallel released another Instagram account called Our Agan at home. she's clearly a good curator of spaces. And so you have this incredible garden and a beautiful quilt next to this
+
+[00:57:25] Brian: It's the house that Trump built.
+
+[00:57:27] Troy: Thing of flower Totally. Uh, flowers and, and, and Murano, Murano, glass chandelier and, and all white, you know, ceramics in a, you know, beautifully curated in a kitchen cabinet
+
+[00:57:40] Pablos: Do they have black hexagons too?
+
+[00:57:43] Troy: no black exa anyway. And then
+
+[00:57:46] Pablos: I have,
+
+[00:57:47] Troy: in the middle of the frame
+
+[00:57:49] Pablos: yeah.
+
+[00:57:49] Troy: the Michael thing, and it exploded. It's
+
+[00:57:53] Pablos: Yeah.
+
+[00:57:53] Troy: media format
+
+[00:57:54] Pablos: Okay.
+
+[00:57:55] Troy: both comforting and
+
+[00:57:56] Pablos: Hmm.
+
+[00:57:57] Troy: at the same time.
+
+[00:57:58] Pablos: Hmm.
+
+[00:57:58] Troy: It's that juxtaposition that's makes it a great product. 
+
+[00:58:01] Pablos: Okay. 
+
+[00:58:02] Troy: obviously authoritative. And the backdrop is, you know, I mean, you search for these
+
+[00:58:08] Brian: He is like talking like Trump, Epstein conspiracy theories like into like his lovely garden.
+
+[00:58:13] Pablos: that a, is that from Pottery Barn?
+
+[00:58:15] Troy: And you know what it made me think about is like, you know, lifestyle publications like an El Decor or an ad never had enough juice to make it through the internet gauntlet, Like they were fine as something you perused as a print publication if you wanted to redecorate your home, but they could never make it into the feed.
+
+'cause they weren't that interesting, They couldn't fight in the feed.
+
+[00:58:37] Pablos: Yeah.
+
+[00:58:37] Troy: So you had to find ways to get them to fight in the feed. And this is like the perfect juxtaposition, right? Where, 'cause it's not
+
+[00:58:44] Pablos: Yeah.
+
+[00:58:44] Troy: content and distribution, it's about content that carry itself, right?
+
+[00:58:51] Pablos: man.
+
+[00:58:51] Troy: as distribution. That's really what
+
+[00:58:54] Pablos: Well, it's
+
+[00:58:55] Troy: because
+
+[00:58:55] Pablos: because.
+
+[00:58:55] Troy: distribution's been commoditized, commoditized.
+
+[00:58:58] Pablos: I mean, despite my, you know, ranting on your podcast here. I mean, I really, the reason I do it is because I, I care. Like, I really wanna get these stories out about things, you know, people should know. We could make selfs sailing cargo ships like nobody else is telling you that.
+
+So I feel like I have to do it, but I don't know if I can compete in the way that you're describing. 
+
+[00:59:21] Troy: think we, we could 
+
+[00:59:22] Pablos: I go make,
+
+[00:59:23] Troy: as a little less cyberpunk. I
+
+[00:59:25] Pablos: do my dance moves on TikTok, and then talk about nuclear actors,
+
+[00:59:30] Troy: how do you feel about a nice kind of j crew, cashmere sweater over your
+
+[00:59:34] Pablos: man. Oh, you think that's my problem is I don't have,
+
+[00:59:39] Brian: Style him?
+
+[00:59:40] Pablos: think I can cosplay as a, as a, you know, Ivy League elitist.
+
+[00:59:45] Troy: Yeah. Okay.
+
+[00:59:47] Pablos: I'm not, I'm not believable.
+
+[00:59:48] Troy: my contribution. Do you, you have anything that you think is, has been, that touched your life in a way that's meaningful as a product or product service?
+
+[00:59:56] Pablos: I'll give you one. 
+
+[00:59:57] Brian: 
+
+[00:59:57] Pablos: maybe you guys know this, but like I, my podcast, I don't do Zoom. I don't like Zoom. I think we're not, we're like, we like it sets off neurological triggers
+
+[01:00:08] Brian: Yes, I'm with you.
+
+[01:00:09] Pablos: person is not real. You can't trust them. They're totally fake. there is an evolutionary, modality or, or. for talking to someone you can't see because, you know, light bulbs are a hundred some years old. So before that, we were just talking to people in the dark all the time. I think phone calls or calls without video are actually much better conversations. But, but on my podcast, I won't do them online.
+
+I do them in person and I travel so much. I just grab the smartest person I can find everywhere I go. And I record those conversations because I'm just picking people's brains anyway, so I figure I'll record it and share it. so my entire podcasting rig this thing
+
+[01:00:52] Brian: Oh, Alex has that I think.
+
+[01:00:54] Troy: What is it?
+
+[01:00:55] Pablos: road lav mics. So you pop, as soon as you pop one of these things out,
+
+[01:01:01] Brian: Yeah.
+
+[01:01:02] Pablos: starts recording. So you can't have any network screw ups or anything. You just grab this and clip it on somebody and clip one on me. it
+
+[01:01:11] Brian: Yeah,
+
+[01:01:12] Pablos: recording that's
+
+[01:01:14] Brian: they're great.
+
+Ab 
+
+[01:01:16] Pablos: all over the world. 
+
+[01:01:17] Troy: your computer or
+
+[01:01:17] Pablos: I dunno,
+
+[01:01:18] Brian: No, no, no, no, no. A 
+
+[01:01:20] Pablos: I just clip this on you and me anywhere. I can do it in a park, I can do it anywhere.
+
+[01:01:25] Brian: yeah.
+
+[01:01:25] Pablos: will cut out all the background noise. I can do it in Manhattan and the AI will go get rid of the sirens. It's amazing. So I just
+
+[01:01:32] Brian: S.
+
+[01:01:34] Pablos: literally from anywhere hanging out with people. And that, I think that's one of the things I love the most.
+
+And, and it's mostly, I'd say it's partly this thing, it's partly that AI is so good now that it can clean up the audio.
+
+[01:01:46] Brian: That's what AB broke out at Joe Marque's party. And we went into the wellness room and, instead of doing coke, we did a, we did a little podcast.
+
+[01:01:55] Pablos: Well it's, has it really wellness.
+
+[01:01:59] Troy: Okay, Brian, hit it man.
+
+[01:02:02] Brian: Oh, the only thing I wanted to bring up was I was in Rome for like two days on, on the way here. And, you know, they still have old school, newsstands. I'm an, I I, I'm embracing this AI future reluctantly Pablo. But,
+
+[01:02:16] Pablos: Yeah,
+
+[01:02:17] Brian: um.
+
+[01:02:17] Pablos: I get it.
+
+[01:02:18] Brian: I miss, I miss the old school Newstands and Italy has a long history. I ended up turning, then this is where, this is where I think like Chacha Peti is amazing because I'm like, tell me, tell me the whole history about these newsstands.
+
+And they're called Adi Alas, uh, sorry. Anyone Aula who is Italian listening to this. but they have a long history. They, they became like communal, like gathering spots and they persist. They're, they're dwindling and they keep dwindling. And, and now they're selling like, knockoff labu boos and like the Chow Bella like, tourist, tat.
+
+And as Troy knows, I look, I look for metaphors everywhere. And so I saw one for the publishing industry there. I mean, here is an institution, that served an important role and now it is, unfortunately selling, sim cards. So.
+
+[01:03:09] Pablos: I mean, I think, a couple things. One, we, we romanticized the publishing industry of the past, but it, it was not doing everything that needed to get done. still don't have, you know, probably what we would want, but we are exploring and trying different things and, and we need to do more of that.
+
+I think,
+
+[01:03:31] Troy: that he was looking for a response.
+
+[01:03:33] Pablos: yeah, and I, I get that. You can cut this part out, but, but here's where I was going. There's a, the part you said that's actually really cool is that those. Whatever they're called newsstands, were a community gathering place.
+
+[01:03:46] Brian: Yeah.
+
+[01:03:47] Pablos: And so that didn't, you know, show up in like the economic report, but that was the thing that they were actually valuable for.
+
+[01:03:54] Troy: Right.
+
+[01:03:55] Pablos: was their prosocial positive contribution. And 
+
+[01:03:59] Brian: Well this, yeah, I mean, this is the.
+
+[01:04:01] Pablos: by other things.
+
+[01:04:01] Brian: Yeah, this is the larger point of going to, you know, I spent the last like week and a half like in Italy, and it's like any sort of American that goes there. You know, you read in The Economist about like Italy or Japan being economic basket cases, lost generations. And you go there, I'm like, this is amazing.
+
+Yeah. All these people, like, you know, having a TiVo with like three generations of families, they live six years longer than we do. And I'm like, where's the failure? And it obviously, it doesn't show up, in our, our GDP. Hopefully we can have both. As Americans, we're just, we're gonna scale everything and we're just gonna go for economic growth.
+
+[01:04:35] Pablos: know, look, everybody's got a different role to play here and
+
+[01:04:39] Brian: Yeah.
+
+[01:04:40] Pablos: to bring to it. So I think, you know, Italy's gonna be a great place to retire.
+
+[01:04:44] Brian: They're gonna, I think they're gonna wait out this AI thing. I gotta be honest with you, Pablo, I saw no evidence. I saw no evidence.
+
+[01:04:51] Pablos: for sure. Yeah. I know. I get it. I go everywhere and I see, I see those things too. But I think there's a kind of, you know, this is why you need 192 different countries. This is why you need diversity. You need different places to focus on different things. I think it's awesome that they're kicking our ass on
+
+[01:05:09] Brian: On tomatoes. On tomatoes, like unbelievable, unbelievable. Can,
+
+[01:05:14] Pablos: We've never had a good tomato in America and they, they're just over there.
+
+[01:05:18] Troy: not true.
+
+[01:05:19] Brian: I've never taste, I've never tasted,
+
+[01:05:22] Pablos: Where do
+
+[01:05:23] Brian: like completely different.
+
+[01:05:24] Troy: tomato out here. They're, they're fine. They're great.
+
+[01:05:27] Brian: No way.
+
+[01:05:28] Pablos: I'll come visit. I've, mine are like styrofoam. I think there's a, so I think the, the job here to do, if AI
+
+[01:05:36] Brian: Okay.
+
+[01:05:36] Pablos: job or a robot takes over your job, rejoice, and then help us figure out how do we build back in those community dynamics? How do you build back in those, you know, social experiences that, we, that we damaged or gave up along the way?
+
+[01:05:54] Troy: if only that you can use those gatherings to steal a wallet.
+
+[01:05:58] Pablos: Well, you know, that might be part of it, you know, we're stealing while it's online now, and it's working much better. So.
+
+[01:06:06] Brian: All right, let's
+
+[01:06:07] Troy: really happy that you, that you came on here. It was
+
+[01:06:10] Pablos: Well,
+
+[01:06:10] Troy: it was gonna be terrible, but it worked out.
+
+[01:06:13] Brian: I, I could, I, I could see why you thought that. no, thank you. cool
+
+[01:06:17] Pablos: delightful. I mean, I'm, I'm not as big of an asshole as I seem on the internet, but. You know, I gotta, I gotta try and beat people over the head about these things sometimes. So,
+
+[01:06:26] Troy: gonna, we'll send over a, uh, stylist and, maybe we can turn you into the next sort of
+
+[01:06:31] Pablos: stylist,
+
+[01:06:33] Troy: you
+
+[01:06:33] Pablos: that what's wrong? I just have,
+
+[01:06:35] Brian: stylist.
+
+[01:06:36] Pablos: a hacker from the
+
+[01:06:37] Brian: He's got a nice shirt.
+
+[01:06:38] Pablos: I'm not, 
+
+[01:06:41] Troy: from a William Gibson novel.
+
+[01:06:43] Pablos: I'm looking at w Michael Wolf's styling and I mean, he, he does have something going that I don't have, so let's see if,
+
+[01:06:50] Troy: Yeah. It's a New England vibe. It's non-threatening.
+
+[01:06:54] Pablos: I, I'm definitely, uh, more intimidating than I, than I should
+
+[01:06:57] Brian: Well, he's, he's banned from Elaine, so he has that going for him. 
+
+[01:07:01] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:07:35] Brian: All right, let's leave it there. 
+
+[01:07:37] Pablos: All right. Thanks you 
+
+[01:07:38] Brian: Good to me, Pablo.
+
+[01:07:39] Pablos: All right, thanks. 
+

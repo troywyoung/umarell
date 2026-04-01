@@ -1,0 +1,1193 @@
+PvA S3E102
+===
+
+​
+
+[00:00:00] Brian Morrissey: 
+
+
+[00:00:00] Open
+---
+
+[00:00:00] Troy Young: why did they ask us to do this? Cause they liked the podcast.
+
+[00:00:04] Brian Morrissey: Yeah.
+
+[00:00:04] Alex Schleifer: Are you surprised. You sound surprised. Why do 
+
+you sound surprised that people like the podcast? 
+
+[00:00:08] Troy Young: I don't know what people like Alex.
+
+[00:00:11] Brian Morrissey: yeah, it's on October 10th. It's the, I don't know. It's like the close, the closing keynote of it. They say that to everyone. 
+
+[00:00:17] Troy Young: Yeah.
+
+I'm uh, 
+
+[00:00:21] Brian Morrissey: got to butter people up.
+
+Everyone gets a keynote. 
+
+[00:00:24] Alex Schleifer: commit to it live on air. You're gonna do it guys
+
+[00:00:27] Troy Young: I'm going to the West coast. I'll fly back the day before. So I'll come back. I'll do it.
+
+[00:00:31] Brian Morrissey: Good.
+
+It'll be fun. 
+
+​
+
+
+[00:00:55] Episode Start
+---
+
+[00:00:55] Brian Morrissey: Welcome to People vs. Algorithms, a show about detecting patterns in media, technology, and culture. Alex is back this week. You were on, what was it, an Ayahuasca retreat? That's
+
+[00:01:06] Alex Schleifer: yeah mostly with other ceos and 
+
+[00:01:10] Brian Morrissey: I'm also, we are also joined by Troy Young, who is just recently christened the Kingmaker, in Puck by Dylan Byers. Troy, that 
+
+[00:01:17] Troy Young: it. Why? What are you 
+
+[00:01:18] Brian Morrissey: that must feel,
+
+pretty good, right?
+
+Because you can't be a king unless you're born into it or you're in private equity.
+
+[00:01:25] Troy Young: okay, so I'll never get the king, but king makers, not bad.
+
+[00:01:28] Brian Morrissey: Yeah, do you want to, do you want to tell us all about the, the, the Forbes plan or do you not want to talk about it?
+
+[00:01:35] Troy Young: Let's just keep going. We'll go out other stuff.
+
+[00:01:37] Brian Morrissey: All right. I just, you know, I have to do,
+
+you know, people would give me shit if I didn't ask you about it and I respect, you know, confidentiality.
+
+[00:01:45] Troy Young: for what? For
+
+[00:01:46] Brian Morrissey: Well, because and we're going to talk about this later today, about
+
+[00:01:49] Troy Young: own podcast.
+
+[00:01:51] Brian Morrissey: About yours, it's ours. you know, about the role of journalism and all that. And, you know, but I appreciate that. You're not going to, like, spill the beans. If there are any beans to spill, it's up to 
+
+[00:02:03] Troy Young: knows. Speculation, Brian,
+
+[00:02:05] Brian Morrissey: That's how we don't comment on rumors and speculation. I love that.
+
+[00:02:08] Troy Young: great business in an enviable position given the media climate. And I'm proud to be, in some minor way associated with it.
+
+[00:02:16] Brian Morrissey: Oh, so you're confirming 
+
+[00:02:18] Troy Young: No, I'm not confirming anything. It's public knowledge that I'm on the board of a Forbes marketplace.
+
+So, you know, that, that, that, that's not a secret.
+
+[00:02:25] Brian Morrissey: There's a lot of stuff being written. There's more stuff being written about, because I don't think anyone 
+
+[00:02:29] Troy Young: just read what they're writing and then you'll get all that you need to know.
+
+[00:02:33] Brian Morrissey: Okay, so it's accurate, this stuff about
+
+[00:02:35] Troy Young: I never said it's accurate. You said it's
+
+[00:02:37] Brian Morrissey: Okay.
+
+[00:02:38] Alex Schleifer: What is 
+
+[00:02:39] Brian Morrissey: goes, Alex? Isn't this 
+
+good content?
+
+Isn't this good 
+
+[00:02:41] Alex Schleifer: gotcha journalism? Troy is,
+
+[00:02:43] Brian Morrissey: is, this is, this is my Kara Swisher 
+
+[00:02:46] Troy Young: right?
+
+[00:02:47] Alex Schleifer: hopefully, yeah.
+
+[00:02:49] Troy Young: we, move into
+
+[00:02:49] Brian Morrissey: Next question. Next question.
+
+[00:02:52] Troy Young: Yeah.
+
+[00:02:53] Brian Morrissey: I did want to talk about the ayahuasca because I think the VCs are down bad. They've gone from blaming like Jerome Powell to, well no, it was the media. Quote, unquote, the media to Jerome Powell to now there's have you seen this? It's maybe it hasn't made it to threads Alex, but, some of the VCs now are blaming, ayahuasca for the lack of good founders.
+
+They say a lot of founders have gone off. And gone to some ayahuasca retreat and come back and been like, I'm not doing this. I don't want, I don't want to spend my entire life in San Francisco where restaurants close at 8 PM and I have to like go back to my little apartment and make a B2B SaaS software. is there any accuracy in this? You're on the scene.
+
+[00:03:36] Alex Schleifer: wow, that's a lot to put 
+
+[00:03:38] Troy Young: He lives in, he lives, he lives off
+
+[00:03:40] Brian Morrissey: It's a lifestyle.
+
+[00:03:41] Troy Young: He, 
+
+[00:03:42] Alex Schleifer: mean, just to, I used to have a big, high powered job in the city, and now I live on a farm. So, so there you go. Have I, have I done psychedelics? Maybe.were they 
+
+[00:03:53] Troy Young: I think I've done them with you before, so I, I, I can, I can
+
+[00:03:57] Brian Morrissey: I like this. You don't comment on rumors and speculation either. I take it. 
+
+[00:04:01] Alex Schleifer: No, no, I think, well, I think there's a couple of things.
+
+First of all, California and the Bay Area is,a place where you can, where you can come and experiment with psychedelics, if you're interested in those, there are a lot of ways to access them, 
+
+there are a lot 
+
+[00:04:15] Troy Young: you go to, that's where you go to
+
+experiment? 
+
+[00:04:18] Alex Schleifer: I mean, no, I mean, seriously, like, right, like, isn't it, 
+
+[00:04:20] Troy Young: I thought it was Nevada. I thought it was the Black Rock Desert.
+
+[00:04:23] Alex Schleifer: But I think you have a lot of access to them and it's culturally acceptable and people are doing all sorts of, 
+
+[00:04:28] Brian Morrissey: but I just want to get to the business angle. Is, is, 
+
+[00:04:30] Alex Schleifer: On the business angle, I think it's been, it's been happening in tech for a long time. 
+
+[00:04:36] Troy Young: Are you high right now, Alex?
+
+[00:04:38] Alex Schleifer: I'm always a little high. I actually, I actually am drinking fucking decaf so that I can be 
+
+[00:04:45] Troy Young: Right, but you're uh, have you done the ADD meds this morning?
+
+[00:04:50] Alex Schleifer: I stopped doing those actually.
+
+no, but what I'm saying is like, just like the culture of Northern California and, and psychedelics has always been, what I'm trying to say is it's always been there. It's always been intermingled with tech. I don't know what's changed so that it's become the new scapegoat, you know, the new kind of, you know, like satanic panic of VCs now, but I think they just need an excuse of why things aren't working and why, 
+
+and why 
+
+[00:05:15] Troy Young: better ayahuasca 
+
+[00:05:16] Alex Schleifer: people are feeling.
+
+[00:05:17] Troy Young: than trust falls.
+
+[00:05:20] Brian Morrissey: true.
+
+[00:05:21] Alex Schleifer: Yeah. But I think the iOSca thing is interesting because if you have a, you know, such a, you know, after draining your internal mental ocean, if the first thing you think about is I got to quit my job, then, hey, that's better now than later. Right? 
+
+[00:05:37] Troy Young: Is that what 
+
+[00:05:38] Alex Schleifer: I think they should get,
+
+[00:05:39] Troy Young: team at OpenAI?
+
+They all did ayahuasca on a retreat, or did they all
+
+[00:05:43] Brian Morrissey: yeah,
+
+[00:05:44] Alex Schleifer: mean, Talking of Kingmakers, I think, Sam Altman is just like Game of Thrones ing himself, like, to the top of the Iron 
+
+Throne there, right?
+
+[00:05:51] Troy Young: Finally, you and Elon Musk agree on something, Alex.
+
+[00:05:55] Alex Schleifer: while we agree on a lot of things.
+
+[00:05:57] Brian Morrissey: the drama of, of the, the tech scene. It's kind of off the charts. I mean, open AI is a great example of this. I, I can't like, maybe Twitter had this similar level of drama, but Twitter was always like a bit player. Really? I mean, it wasn't, you know, as a company, it was never, A massive platform. It was obviously major impact on the information space.
+
+But, I mean, open AI is trying to at least purportedly, you know, build this entire new technology paradigm and lead in it and billions and billions of dollars. And it seems a total mess. It seems completely dysfunctional. It gives me a lot of hope to be honest with you.
+
+[00:06:39] Troy Young: Sorry, Hope 4.
+
+[00:06:42] Brian Morrissey: Well, I mean, cause I think we all, I don't know, maybe I'm speaking out of term, but like ended up thinking, you know, inside any organization, I feel like you feel like, Wait, is everywhere kind of a shit show or is it just here? And you know, any organization I've been part of that has been a shit show internally.
+
+Right. But this seems like on a different level.
+
+[00:07:01] Alex Schleifer: yeah, OpenAI is a different level. I mean, maybe it's simple. Maybe it's, you know, they started with this ambition with a very research minded organization. that's it. you know, where people thought that they could run this as an organization and it wouldn't ever amount to that much.
+
+but then, you know, and apparently it was Sam Altman who pushed for it, you know, they released ChatGPT, and they became the kind of coolest kid in school all of a sudden and they said like, well, you know, fuck all the research and, other ambitions we had.
+
+This is a big business and we're going to raise a bunch of money. And it created, you know, a rift in the organization. And now at this stage, I think everyone that was part of the old world has left. And it's now, you know, a tech company that's going to move 
+
+[00:07:46] Troy Young: Wait, are we going to start getting 404 errors in chat, GBT?
+
+[00:07:50] Alex Schleifer: I mean, Well, he said he's going to focus on, on the product now, now that he's, he's, he's, and I'm like, wait a second, you're not even technical. okay. but I, what I find interesting with this is something you, you've mentioned it, Troy, which is tension. In organizations, right? And I think a media organizations, there's always tension.
+
+[00:08:08] Brian Morrissey: I wrote about this in a newsletter. so I stole it again from you. there's always tension between sales and editorial, but about rushing, rushing out products versus, you know, making 
+
+[00:08:19] Troy Young: You mean like a productive tension,
+
+[00:08:21] Brian Morrissey: well, that's the thing you have productive tension and then it becomes a rift, right? Like you can have productive tension and you need productive tension. Right? And
+
+[00:08:32] Troy Young: tention to me kind of defines a lot of media organizations because it's essentially about the, the, the sort of push pull and collaboration between sales and content. And
+
+that's, that's what those orgs are and productive tension in the magazine world, for example, was. You know, the interplay between the publishing and editorial organizations and one would, you know, need, always need to find new things to sell and the other, the other side wanted to make what they wanted to make and have the other people sell it.
+
+And it was that kind of tension that grew the business.
+
+[00:09:02] Brian Morrissey: Yeah.
+
+[00:09:03] Alex Schleifer: problem with the tension here, right, is not that like, oh, you're going to release a product and it's going to be like an AI pen that people are not going to buy and you're going to look like a fool. I mean, You know, even that they've released a new OpenAI has released a new one engine that has been deemed a medium risk for chemical, biological, radiological or nuclear threats.
+
+Like it's not, you know, the tension is, you know, this whole 
+
+[00:09:29] Troy Young: Oh, the it's existential. I agree with that. Yeah. It's at the it's it's it's mission level.
+
+[00:09:36] Alex Schleifer: the question is, do you trust Sam Altman or not? and It started with a, you know, don't worry, we're nonprofit. Then don't worry, we're nonprofit with a for profit arm. Don't worry, we still have researchers. Don't worry, all the old founders are still there. Now don't worry, Sam Altman's got it, you know, 
+
+[00:09:53] Troy Young: And then the ayahuasca weekend it's don't worry, be happy.
+
+[00:09:57] Alex Schleifer: mean, maybe, maybe after Sam Altman does Ayahuasca, he'll be like, you know, shut it all down.
+
+I don't know. but, but it, it is, it is, I mean, they are kind of at the forefront, their technology that, that Oh, one engine. people hate us using those words, but, it simulates reasoning a lot better. It,
+
+[00:10:15] Troy Young: something that can solve connections on the New York Times.
+
+[00:10:18] Alex Schleifer: for example, which, which is, when you think about it, you 
+
+[00:10:22] Brian Morrissey: Yeah. Have you seen the good AI's already ruined, apparently, like online poker?
+
+When are we going to get the benefits? That's 
+
+what I had. My tension is when are we going to get the, when are we going to get the upsides without all the downsides?
+
+[00:10:33] Troy Young: yeah, because it's a tragedy that online
+
+[00:10:35] Alex Schleifer: well, have you guys been using, have you guys tried using, Notebook LM, Google's kind of like research and learning?
+
+[00:10:42] Brian Morrissey: I have, but
+
+I haven't used in a little while.
+
+[00:10:45] Alex Schleifer: I uploaded a hundred episodes of transcripts. And I asked, 
+
+[00:10:49] Troy Young: from, from this
+
+[00:10:51] Alex Schleifer: from this show, first of all, listening to the podcast about our podcast is kind of incredible. Maybe we can slice a couple of clips here.
+
+
+
+
+[00:10:59] Notebook LM clip
+---
+
+[00:10:59] AI: All right. So today we're diving into people versus algorithms. This podcast, right? That's all about AI and how it's changing media and tech. One of the things that really jumped out from this people versus algorithms stuff was this idea of a huge interface shift.
+
+Alex, he's the design guy on the show, he's saying we're about to see something as big as when we went from like physical buttons on everything to those, you know, sleek search bars we use now. Okay. So it's not just that it's convenient, it's that the AI understands what you need in a human way, almost. Yeah, and that's where Alex really gets going, like, mind blown by it all. But people versus algorithms doesn't sugarcoat things either. It makes you think, if anyone can easily make content now, how do we find the good stuff?
+
+And that's where Troy comes in. He's the media expert on the show, he's got a different take. He thinks AI could actually be the solution to this too. Imagine AI as a filter. But AI could give more power to The platforms, the ones controlling these algorithms. And that's what worries Troy.
+
+He sees media companies becoming way too reliant on these platforms, basically at the mercy of their algorithms for, like, everything. Does People vs. Algorithms offer any hope there? Well, Brian, the journalist on the show, he's surprisingly optimistic. He actually thinks independent creators could do really well, even if it seems counterintuitive.
+
+Really? He says they need to focus on what algorithms can't do yet. Really unique, high quality content for a specific audience. So find your people, build that loyal following, offer something that stands out from all the AI generated stuff. Exactly. 
+
+[00:12:32] Alex Schleifer: uploaded it 
+
+[00:12:33] Troy Young: Oh, did it, did It like our podcast? 
+
+[00:12:36] Alex Schleifer: says, this is a podcast that's talking about media subject, about media with heavy hitters like Troy Young from Hearst and media analyst, Brian Morrissey and Alex Schleifer, head of design at Facebook.
+
+[00:12:48] Troy Young: I wish I would have said fallen, fallen angels.
+
+[00:12:52] Alex Schleifer: Well, I mean, the fact that it said Facebook is, is, is, it's funny. So I asked it to like rate our characters and our, our, 
+
+[00:13:00] Brian Morrissey: but wait, can you just, can you just back up for those
+
+who are not total AI nerds and and just explain,
+
+[00:13:06] Alex Schleifer: Yeah. Notebook, notebook LM. And there's a really good Verge cast interviewing one of the people on it. It's basically, you know, there's similar things with Claude and, but notebook LM is specifically a learning resource tool where you can upload a lot of, different documents or links or, or copy paste stuff into it, and then it will absorb all this knowledge, have access to it all at all times.
+
+So you can ask it questions. So, for example, you could upload literary work and say, when does this author,
+
+[00:13:36] Troy Young: When does Frodo get the ring?
+
+[00:13:37] Alex Schleifer: or more, more abstract stuff. Like, when does this author use romantic language to actually build tension? Right. Like, 
+
+[00:13:45] Troy Young: There was a great example, Alex, when he had notebook LMD, this author had him deconstruct when in the text, the instances where the author used foreshadowing and how they were resolved,
+
+which is pretty amazing,
+
+[00:13:59] Alex Schleifer: some more kind of everyday practical stuff is that I'm downloading PDFs for every appliance that I have in my apartment, and I'm going to upload them in there so that if 
+
+[00:14:08] Brian Morrissey: Is this why you missed the last episode?
+
+[00:14:10] Troy Young: that's deviant behavior.
+
+[00:14:12] Alex Schleifer: that's, you know, so 
+
+[00:14:13] Brian Morrissey: Yeah, go back to the Ayahuasca. 
+
+[00:14:15] Troy Young: Did, oh I think this, is this, is this what happened after the ayahuasca? You're like, I'm gonna get straight with my
+
+[00:14:20] Alex Schleifer: I don't know, I think people listening, I think at least half the people listening will think this is great. We don't all want people to do like to turn on a coffee maker. or learning like music theory, kind of, you 
+
+[00:14:31] Troy Young: So did you
+
+make an announcement at the dinner table? That, you know, moving forward, if you have any questions about appliances in the house, you have a
+
+[00:14:38] Alex Schleifer: know, Troy, it's for guests, it's for guests if it's if ever like Brian or you want to come to San Francisco and you want to crash at my place, you'll know how to use my German appliances because they're inscrutable. Okay. 
+
+Yeah, now we're getting too deep into this. If 
+
+[00:14:52] Brian Morrissey: Like a European washing machine? I
+
+mean, LLM for one of those. 
+
+[00:14:57] Alex Schleifer: they're very efficient, but they're Anyway, so I asked it to, to see who speaks the most. it, it 
+
+it 
+
+[00:15:03] Troy Young: it's not, it's not Troy. it's, not 
+
+[00:15:05] Alex Schleifer: hang on, it says, it says it's hard, without a quantitative analysis of each speaker's word count, and all the transcripts. But, 
+
+anyway, it said, it weaseled itself out of it, it said, it says, In general, Troy frequently steers the conversation.
+
+He enjoys playful banter and frequently teases his co hosts.this suggests that Troy is a very active participant. Brian often plays the role of moderator. Brian is the main host. He sets the agenda for the episodes and sometimes tries to 
+
+[00:15:34] Troy Young: And Alex, Alex is what, the pain sponge?
+
+[00:15:38] Alex Schleifer: Alex's conversational style is more reactive.
+
+Alex participates actively. He's often responding to points made by Troy O'Brien. He occasionally expresses frustration with the direction of the conversation. However, feedback from listeners suggests that Alex's contributions 
+
+[00:15:52] Troy Young: is a revela this is a revelation. 
+
+[00:15:55] Alex Schleifer: Yeah, 
+
+[00:15:55] Brian Morrissey: You're like the 2D character in
+
+[00:15:57] Alex Schleifer: uh 
+
+huh. And then, and then, uh, and then I asked her to judge our characters and Troy's opinionated and insightful, playful and provocative and connected and in the know.
+
+Brian is measured and analytical, respectful and diplomatic, 
+
+[00:16:09] Troy Young: when he fuc*ing when he freak, when he freaks 
+
+[00:16:12] Alex Schleifer: oh, self aware, 
+
+and open to
+
+[00:16:14] Brian Morrissey: Self aware! open to feedback. I love this 
+
+[00:16:17] Alex Schleifer: And Alex is direct and candid, values authenticity and appreciates appreciates design and user experience, which means I must talk about this shit a 
+
+[00:16:26] Brian Morrissey: These, these AI things, I appreciate that, but they're all suck ups, I find.
+
+[00:16:31] Troy Young: They 
+
+are. They're 
+
+sycophants. 
+
+[00:16:32] Alex Schleifer: They're sycophants. Yeah. Which I can't, you know, you know, 
+
+[00:16:35] Troy Young: Did it say you were, did it call you, Alex, did it call you woke? Did it ever bring that up? Yeah.
+
+[00:16:45] Alex Schleifer: Grok, uh, told me to go eat shit, cuck. I, uh,
+
+but, you know, the sycophancy thing is interesting, but it's also for me why I tend to go to Cloud or OpenAI to. So I had questions about a specific technical issue I was having with some hardware I was having and I know that if I go into a forum or Reddit forum there's always going to be something well that's because you're using a Mac you should be using a PC or you know like there's always somebody in there that's upset about what you're trying to do or how you're trying to do it.
+
+it's kind of nice to get an answer from some, you know, no matter how stupid your question is, you know, 
+
+[00:17:27] Brian Morrissey: So Troy, can 
+
+you 
+
+[00:17:28] Alex Schleifer: to learn. 
+
+[00:17:29] Brian Morrissey: apply this to media? Like, okay, this is very early, but we've all played around with this. And so where does this take us if this really does catch on and really does develop the way it seems it's going to develop? We should 
+
+[00:17:42] Troy Young: We brought this up last week and at the risk of exceeding my word count. I think that there's something going on that challenges the fundamental structure and that we've been playing with as digital media people for a long time, which is, you know, the, the website and, and. the website and then the website augmented with social media. and the way I see it is that there's a couple of kind of things that stand out of my mind. The first is that newsletters were really I think a route around a broken web. So they offered,a finite amount of space with way fewer disruptive ads that came to me and as such were a welcome departure from the noisy cacophonous. You know, terrible things that we did with advertising on the internet. And then platforms, I remember this, I think Alex and I, in the old, old days, used to talk about how platforms train consumers because that's where they spend the majority of their time. Right. And so the, you know, it started with feeds and what did feeds do? They showed you that content was short and connected and algorithm that can be delivered and you could move it with your thumb and they were perfectly suited for the phone. now what we're being, we're educating people with question and answer, right? Which is you, you have a question, you get something perfectly customized to you, like that personalization is manifest in an answer to yours and only your question, you know, and mostly, or potentially per the case of notebook LM, something that's trained on your corpus of information, right?
+
+So we're now, you know, snippets. without headlines, without bylines, without decks, without the trappings of these very clunky, what seemed clunky to me now, you know, web page article as a construct, right? And so the web originally, if you went back, was a document repository, I think communication, but also a document repository. and it's defining. characteristic was that it was interconnected with links, right? That was the web, right? Documents connected with links. And, it was a new medium. And when we, we created media on it, we, we basically were, it kind of was an elegant extension of the print world where we thought, okay, well, there's, you know, homepage is my cover and, articles are article pages and we're going to put advertising in there.
+
+Right. Except that. We broke a couple of rules is 'cause the web, the print was a way better ad model because it was sequential. It was like article, mostly article ad, article ad, article, article ad ad. And what we did on the web is we, I'm answering this question. Maybe I do talk more than you guys. the, the, the, uh, an 
+
+[00:20:24] Alex Schleifer: you don't, you don't, 
+
+you don't need iOS to have a re revelation 
+
+[00:20:28] Troy Young: Yeah. But I'm going to get to the, I'm going to get to
+
+the point now. Cause
+
+[00:20:30] Brian Morrissey: episode
+
+[00:20:31] Troy Young: well, I had an ayahuasca guys. I had an ayahuasca like moment when I used network LM, because I realized that it was kind of pointing to what the future looked like and what did we do that kind of made the modern web kind of shitty?
+
+One was we put ads on pages and basically ask consumers to do two things at once. Look at an ad and look at content. To me, that was a troubling, construct.
+
+Secondly, we 
+
+[00:20:56] Brian Morrissey: I think there was tension there.
+
+[00:20:58] Troy Young: publishers handed ad rights to middlemen, right? So in the old days back, I remember this very, very explicitly when I was working at a newspaper in Montreal, we would never give a third party the rights to sell our advertising. Because it was an undercut what we're able to do in the market, but on the internet, we gave our ad rights to everybody, right? That was, that's really the sort of the, the, the, the, the foundation of, of programmatic.
+
+[00:21:18] Alex Schleifer: where you had to. 
+
+[00:21:19] Troy Young: Well, cause the aggregators sat on top of you, both aggregators in terms of interface and aggregators in terms of ad sellers, right?
+
+So then that kind of made this all up. Now, when I looked at, at notebook LM, I was like, the more I use chat, GPT on my phone or, or Gemini, the more I get. Comfortable with a frictionless model. I have a need. I get an answer.
+
+And 
+
+to me, that's going to influence how content is delivered and and and publishers and media companies need to respond to that.
+
+The second thing I thought is that maybe notebook L. M. Is really just the new CMS where the job of the content creators in, in, in companies is to load the knowledge base. And that doesn't mean there's not features or articles or things that need to be delivered intact. But like if you're, if you're, your CMS is a repository for, for, for a document construct and all the content that you put out as a, as a publisher. And now notebook LM is, is, is the same kind of repository. But you query it differently. Right. And it delivers things back that are sort of personalized and it's multimodal because it'll create a podcast for you, or it'll give you an answer to a question. So to me, I think that what it sort of. You know, points to is a world where the fundamental construct of, you know, homepage, section, page, article, page, all connect together by Google.
+
+And then social comes along and it delivers things in the feed. There's a new paradigm coming up. That's way more personalized and, and there's still room for people to create ownable IP inside of that world, but it's going to change radically.
+
+And, and and the notion is that a citation sort of replaces the link. And what is the difference between a link and a citation? Well, a citation is the reference point when the question is already answered. If you want more information, whereas a link sends you somewhere to get the answer.
+
+Different, Right.
+
+so I think all of those things together are what our audience and people in the industry need to figure out, which is where to all your people creating content and selling access to those audiences.
+
+Where do they live in this new world? And you gotta map it. 
+
+Cause it's, it's way different. Was it
+
+[00:23:30] Brian Morrissey: I think a few things like one, anyone in our audience who isn't using these tools really should, I think this goes back to like early social media. I remember just talking to a lot of, you know, CEOs and executives who are closer to like my age now, but they weren't using, you know, the tools and they didn't really get an understanding of how fundamentally, social media was going to change.
+
+how, how information was distributed. I think the other thing is this is same day delivery. For information, right? When Amazon came out with same day delivery, it set a totally different expectation. I can remember after that going to buy a, a gift for, I guess my now wife and then girlfriend.
+
+And it was like an expense. I don't know. It was some, it was kind of expensive, I guess, some piece of jewelry or something. And it was 
+
+[00:24:13] Troy Young: Vitamix? 
+
+[00:24:14] Brian Morrissey: it wasn't, it was like five. It was, but you had like seven day delivery or something. it was like, this does not compute 
+
+[00:24:20] Troy Young: Wait, you bought you, you bought your girlfriend jewelry on
+
+[00:24:23] Brian Morrissey: I don't remember.
+
+It wasn't on Amazon, but my point is it just changes expectations. And I think when you start to use these tools, you start to realize that's why I keep saying about the back button. It's really difficult to understand how a publisher is going to compete. With those kind of expectations that are set when you use one of these tools and, you know, the more I use them, the more I see it. Like, I use Claude this weekend because I was doing this research report, which everyone should check out. it's a state of sustainable news businesses. it was really helpful in going through a ton of information.
+
+I'm not going to say it was the editor, but it did editing. Absolutely, you know, and not like line editing, but it was I uploaded transcripts of interviews. I uploaded a ton of data. I uploaded, you know, the survey that we had done and, you know, it was absolutely part of this. And to me, the, the experience, that's just the creation experience, but actually retrieving information is going to be, it's clearly going to be more interactive.
+
+It's going to be more. I think of it as a choose your own adventure kind of thing.
+
+[00:25:31] Alex Schleifer: Absolutely. we've been talking about how profound this change is. And I'm pretty sure a lot of people that are running media companies can also see it, but the issue is, I think you have inertia in organization to adopt new technology. I was listening to the Ben Thompson podcast and he was talking about the volition, of people in organization to accept new technology.
+
+And when the computer came out, it's not a people thought like, Hey, this is going to make my job easier. Most people were pretty reluctant to start learning a computer. So the first changes that happened were the ones where you could replace one to one, a person with a human being, because you could do that decision at the top and say, well, we used to have a person crunching those numbers.
+
+And now we have a database computer that's doing that. Right. And it, I think it's similar with AI, because I mean, I can see it. I can see my behavior changing. I can see that I can adjust my tone of voice via an AI and it makes my writing easier. And then I see that I use the AI to adjust the content that I'm receiving, and adjust it and reshape it in a way where I can absorb it better.
+
+And I can't see anyone like, you know, not doing that over time. I mean, maybe not with fiction or things like this. but it's, it's becoming. Totally malleable, right? The way you can absorb information and then 
+
+put 
+
+[00:26:46] Troy Young: Alex, when, when do you think you need to preserve the integrity of the, of the artist's work?
+
+[00:26:51] Alex Schleifer: I don't know. And I don't think it's when you need, I think people are just going to do what they do. And, shared this experience where I was right. I was reading this fiction. book, the science fiction book. And I wasn't liking it. And I was like, I see where this is going. I'm a third in there's another 400 pages.
+
+I don't want to read this. So I asked Chad GPT, like, Hey, without spoiling the book, can you tell me if I should continue? can you tell me if it's heading in that direction? It says, yes, without spoiling the book, it's heading in this broad direction. I was like, okay. all right. I'm not gonna, I'm not going to read it, but can we talk through the ending and kind of the philosophical and, and, and, and, and it helped me through it.
+
+And you know what? I would have stopped reading the book, but, but the thing I want to talk about is I, I shared that on, 
+
+[00:27:32] Troy Young: gave you like, gave you like 20 hours of your life back.
+
+[00:27:36] Alex Schleifer: Yeah. And I, and I think it would have been like, if I had a friend that read the book, I might've asked a friend, Hey, I feel this book is going in that direction. So most people were interested when I shared it on, on social media, but there's like 30, a good 30 percent that said, this is the dumbest thing.
+
+You're killing art. you know, how dare you? And don't, you know, it's probably imagined that whole ending, et cetera. Now here's the issue, right? Forget, forget 
+
+[00:27:57] Troy Young: Are they getting snarky in
+
+your threads, 
+
+Alex? 
+
+[00:28:00] Alex Schleifer: yeah, for 
+
+[00:28:00] Brian Morrissey: This is the downside of 
+
+[00:28:01] Troy Young: They're getting snarky on, on 
+
+[00:28:03] Alex Schleifer: let, 
+
+[00:28:04] Brian Morrissey: you know, 
+
+welcome 
+
+[00:28:04] Alex Schleifer: but that's, all right, here's the, here's the context. So here's what's important.
+
+everyone listening, you have people like that, or you might be one of those people in your organization. you need this, this volition to say, Hey, there's this new technology. It comes with flaws. It is not perfect. Right. But I'm noticing it as well. And sometimes in my team, we say, Hey, AI coding tools, and then an engineer, their first task is to try to find everything wrong with it, rather than to try things, and it was the same way with computers when I was, you know, or digital video editing, right, where I had video editors telling me, we'll never switch from film and, and I would show them, but look what this can do.
+
+And they would be so good at figuring out every fractional issue that there is with it. This is the thing that's going to keep companies back, right? This is where, and I'm not going into my own founder mode here. It's just like, You need to hire people that have the energy, volition, spirit to say, Hey, this is something really interesting.
+
+And we're going to kind of work around the rough edges and we're going to try to figure out philosophically what it means to us, rather than the people are going to sit back and just constantly say no. 
+
+[00:29:11] Brian Morrissey: yeah. But here's the thing,in reality, in reality, you need, and just to try to shoehorn the theme in even more is you need that tension. You need the sort of, I think they call them insultants, right? You need people who pump the brakes, right? Because otherwise you're just going to be taking ayahuasca, taking all your clothes off and like worshiping the AI gods,
+
+[00:29:31] Alex Schleifer: I would say that there's a balance and I would say tech companies are, maybe shifting. Too much on the, like, gung ho, let's just go for it. But media, I, I think on average media people feel more threatened by AI than many, many other industries. 
+
+[00:29:46] Brian Morrissey: Yeah, because they 
+
+[00:29:47] Alex Schleifer: you need to, 
+
+[00:29:48] Brian Morrissey: I 
+
+mean, there's a 
+
+[00:29:49] Alex Schleifer: to figure out that balance, right?
+
+You need to 
+
+[00:29:51] Troy Young: This is my, this is my free radical theory. All societies and organizations need free radicals
+
+[00:29:57] Alex Schleifer: Okay. 
+
+[00:29:58] Troy Young: You just need to disrupt. Like, you know, for better or worse, you know, Trump, Elon, whatever. They're free radicals. They shake the foundations of how we live and how we think.
+
+And, you know, as such, I think are really valuable.
+
+[00:30:10] Brian Morrissey: You know, something kind of interesting to that, just a 
+
+little. Sidebar
+
+is, you know how a lot of people when they're running organizations, they say we have a no assholes policy, which I'm always like, Oh God, you gotta be kidding me. Like who has like a yes assholes policy. It's just such a dumb thing to say.but what the more interesting thing is, what is your troublemaker policy? what is the ratio of troublemakers you're willing to have in your organization? Cause I think, The highest functioning organizations, they do need some troublemakers, right? A lot of salespeople are troublemakers. I've noticed they're really good salespeople.
+
+They're feral, right? And
+
+[00:30:46] Alex Schleifer: I think that with AI, there's a balance, right? That, that notebook LM thing I tried, the first thing it did was get my old job wrong. Right. And there are some people that would have jumped on that and say, well, throw it all out the window. And I think we, you can't have people in your organization that, that say, throw it all out the window.
+
+I think you need critical thinkers. I'm not saying everybody should just go out blindly and be, you know, pro replacing everything with AI. But there are, you know, I think a litmus test is 
+
+[00:31:16] Troy Young: Dude, it's not like it made you a junior designer at
+
+[00:31:20] Alex Schleifer: But it doesn't, it doesn't matter if it didn't even, like, I have seen computers being able to struggle to move a white dot around the screen and now rendering somebody's sweat in 4k like in an NBA video game.
+
+Like we've seen this, this, this transition so I can look at this and, you know, project it out into the future. And I don't know if you guys have noticed every two months there's something mind blowing that comes out. You know, everyone, please go to NotebookLM, upload anything, and render one of those fake podcasts.
+
+It is uncanny. It is, and sure it is silly, and, but I do think, like, do that litmus test. The people who will, like, come back with the first three points of feedback is everything that I got marginally wrong. When you have a computer that is, absorbing information and outputting it in a way that is coherent, without seeing the wonder of that, or at least, like, the.
+
+Terrifying change that this implies to your industry. I think, you know, you gotta have a serious talk with those people because like, like the, the spaceship remains 
+
+[00:32:22] Brian Morrissey: Oh, not the 
+
+[00:32:24] Troy Young: You're using your word count up.
+
+[00:32:27] Alex Schleifer: while I'm trying to, uh, I'm trying to catch up with you.
+
+[00:32:29] Troy Young: Yeah. Well, can we transition from this Brian? If you don't mind me doing what the AI says I do, just a quick, not a long one
+
+[00:32:37] Brian Morrissey: can you make it a tension because that's the that's the theme i'm trying to 
+
+[00:32:41] Troy Young: Well, this is sure. Anything can be made attention. This is about, how meta so massively outsmarted
+
+[00:32:48] Brian Morrissey: Yeah, that's tension. They have a tension in their different, approaches
+
+[00:32:51] Troy Young: I know that Alex is not using his Vision Pro.
+
+He's going to lie. He might say it's going to be great to have it, Alex, but it is a bookshelf item. Now, I I just like my, you know, that little orange thing that I have here, Alex, you're at the house. You saw it. what was that device
+
+[00:33:08] Alex Schleifer: The rabbit, 
+
+[00:33:09] Troy Young: The rabbit, 
+
+will, I barely even turned it on. It's just going to go on the bookshelf. Stupidest device ever. Now. Okay. So meta. Does this partnership with Luxottica, genius partnership, right? And they're the glasses are nice. It's a brand that people will put on their faces and they have a basic use case, right? Record videos connected to the meta apps and make calls. Apparently really great for making calls. You'll use it for that and keep the sun out of your eyes if you need that. So it's actually useful. Now you have a starting point with a device that you can iterate on and put more and more technology into. So they've started, they've spent whatever it is, 50 billion dollars.
+
+Building. a kind of future oriented version of this, that they showed the market this, this week that, combines a, a wristband with a heavier glass that's not quite ready for prime time. with a sort of an offloaded some of the compute into something you put in your pocket,
+
+like a little transponder unit. And now what you have in this unit is basically all the functionality that you have in the Vision Pro. So you can see things on top of the world, you could watch a movie, you can do a voice call, you can play, or you can do a video call, you can play Pong with someone. And, You have basically something that you can start to see people actually using because they don't look utterly ridiculous, and you're not cut off from the world. At the same time, they release Their new VR product, right? Which you can see through basically does everything that vision pro does, but it's two 99, it's 299, not 2, 000.
+
+[00:34:46] Alex Schleifer: What are you talking about? Three and a half thousand dollars. The vision 
+
+[00:34:49] Troy Young: okay. Oh, three and a
+
+half thousand dollars. Right? So like for two 99, parents will put that under the tree, right? It's 300 bucks. It's a cool gift, 
+
+right? You can play you know, a ninja game with somebody like, so to me, unless you have enough people buying at a low enough price point, you can't create the ecosystem that allows you to get developers making content because there's no incentive to do it. They've gotten all the costs out of that technology at 209. I think that people will actually buy it as a toy. It will mature from there. And at the same time they have these new glasses, they are absolutely checkmating the industry right now. And at the same time they have. an open source AI project that will start to, create. The environments without costing huge
+
+amounts of money. It's amazing. Actually, I
+
+think it's really amazing. 
+
+[00:35:44] Brian Morrissey: Did you listen to the Zuckerberg podcast on the acquired podcast that he ended up doing? I mean, he talked very clearly about they're taking a, I guess, in Silicon Valley, they've called an orthogonal approach, which makes sense. I mean, you're not going to beat at, you're not going to out Apple, Apple, right?
+
+So you're going to have to go mass. They're not going to do close. They're going to do open. And, You know, whatever they can say. And he says, it's like pragmatic. Sometimes open makes sense. Sometimes closed makes sense. I think people try to make it ideological. It's whatever is best for your competitive position in the market.
+
+So, I mean, right. I mean, why would you want to try to compete with Apple on a high end, everything like integrated perfectly? Why not go mass? It just makes a ton of sense. And. You know, we'll see. I think that's the best thing is people taking different approaches and then the market deciding, 
+
+[00:36:31] Troy Young: so so Apple is going to spaz out and they're going to need to compete with glasses. For sure. There's no doubt they got to make that product. Google's got to make that product right now. There's three companies in the race, Google, Meta, Apple. They're all going to try to compete around the glasses and potentially around VR.
+
+Although I think it's a smaller market
+
+[00:36:52] Brian Morrissey: Wait, what about 
+
+Microsoft? 
+
+[00:36:53] Troy Young: Microsoft?
+
+won't even be in the game. They just can't do it. And snap is going to get completely decimated. There's no way that snap can play the game. I
+
+[00:37:01] Brian Morrissey: They should bring the Zoom
+
+[00:37:03] Alex Schleifer: snap doesn't have the infrastructure. I mean, I think even so I agree with you, Troy. I think the, the, maybe a couple of things that really changed the game were those Ray Ban glasses that didn't try to put stuff in front of your eyes, because they made a useful product today rather than,potential.
+
+Yeah, 
+
+no, I, I would, no, I, don't have them. I would potentially buy them. I think the other thing is that the reason I don't use the, my vision pro as much is that Apple has completely given up on it. 
+
+[00:37:29] Troy Young: They didn't build an ecosystem 
+
+[00:37:30] Alex Schleifer: No, the expectation, my expectation was that a bunch of developers would buy this, but that Apple would be funneling money into it.
+
+So, but the updates aren't even coming out. And there's one that would be truly useful for me, which is a new white screen where you can have an extra large computer display when you're working on certain things. And I'm just waiting for that update. It's meant to come out in, in fall. So we'll see.
+
+[00:37:52] Brian Morrissey: I mean, if you go to an Apple store, it's like in a corner now.
+
+Like, you just look at real estate.
+
+[00:37:57] Alex Schleifer: I, I, and Apple, I don't think is doing particularly well on a, on a lot of fronts right now. I mean, I think the OS is, is getting overly complicated. I think they got, they, they got caught completely flat footed with the AI stuff. And and then three, I think Zuckerberg's reinvention has made him more confident.
+
+I mean, he's still an awkward person. I don't love Zuckerberg 
+
+[00:38:18] Troy Young: I think he looks really good right now. I think
+
+[00:38:20] Brian Morrissey: Otzok Otnihil.
+
+[00:38:21] Alex Schleifer: It's incredible what a multi billion dollar 
+
+[00:38:24] Troy Young: No, but he used to have that like Roman emperor cut. And like, now he's got kind of teased curly air. He's jacked. He looks good.
+
+[00:38:32] Alex Schleifer: Yeah, I know. That's a, I'd remember everyone that's available to everyone. 
+
+[00:38:36] Brian Morrissey: you see his shirt that he came out with? It said Aut Zach Aut Nihil Like,
+
+Without Zach With nothing or something
+
+[00:38:43] Alex Schleifer: I, I, look, look here. You know what? He's one of the billionaires that hasn't been red pilled yet, so I'm pretty good with it.
+
+[00:38:50] Troy Young: Oh, he's been red pilled.
+
+[00:38:52] Brian Morrissey: I will say this for, for Zuckerberg. I said this on a previous podcast. I think like being a child prodigy is just the worst fate like someone can have, right? Having success, extremely young, rarely works out well to being a functioning
+
+adult. And like, you know, for everything, considering like what, he didn't really have a young adulthood at all. And I think, you know, you've got to grade, you know, how you like on a curve, because I mean, look at how many, you know, Child prodigies become complete weirdos and failures. 
+
+[00:39:23] Troy Young: It's been tough for me. I got to tell you,
+
+[00:39:25] Brian Morrissey: eh.
+
+[00:39:27] Alex Schleifer: I think a lot of that's been, you know, linked to coming from, you know, poor family and having this massive leap. I mean, I think, 
+
+you know, 
+
+[00:39:35] Brian Morrissey: Zuckerberg? Isn't his 
+
+[00:39:37] Alex Schleifer: a lot of No, that's what, no, no, no. Here. That's what I'm saying. Like a lot of the, 
+
+[00:39:41] Brian Morrissey: He lived in Scarsdale, I think.
+
+[00:39:43] Alex Schleifer: that's what I'm saying.
+
+He, that his leap wasn't as big as like, you 
+
+know, uh, growing up and, 
+
+and then all of a sudden being like pulled into, look, I still don't love Zuckerberg. I still don't love meta, but I think they are, doing it right. And I wouldn't be surprised if Apple completely resets their ambition around. and I mean, after last, Apple event, their big push is going to be health stuff.
+
+and honestly, if they release glasses, I would probably buy the Apple glasses because they would connect to my phone. They have an ecosystem play. And 
+
+[00:40:15] Troy Young: that 
+
+well, that's, that's met as met as biggest fear, right? Is that the ecosystem of Apple is so powerful, but I would make
+
+one last observation on this, Alex, is that. I said this before and I don't, I have, someone just texted me from Apple. I love both of these people that, that I have a couple of friends there. great company. You know, I've, it's been one of the great pleasures of my life using their products. their current presentation of their products and their brands gives me the icks. It makes me sick. It's, it's so polished. It feels so fake. It feels so sort of Northern California, idealistic sanctimonious that I don't like it.
+
+I like their products and I think their, their, their new phone will do really well. Having said that, contrast that with what face, what Zuckerberg did two days ago. And what they did is, They made mistakes on stage. It was kind of haphazard. They showed off uncompleted technology. To me, it was more like, it was more, this is how the life is. This is how the world is. I, I found it better. I liked it better
+
+[00:41:20] Alex Schleifer: I 
+
+[00:41:21] Brian Morrissey: that isn't that the tension between like the Apple approach is ship things that are finished. And I think maybe they're like embarrassed by the vision pro because it went against their, their sort of ethos. But Zuckerberg on this, on the acquired podcast was talking about, you know, they had to get back to shipping things that are imperfect to iterate on that's, that is their view of how to build technology.
+
+And, 
+
+[00:41:44] Troy Young: they're software people. Yeah.
+
+[00:41:46] Alex Schleifer: Yeah, but I would say that, I mean, part of the tension with Apple, and, and there's been a turn with how people see the brand. I don't know if it's, I mean, we're, you know, in our own bubble, but people would call me after Apple events and say, what should I get?
+
+And, I used to be able to explain what the fuck was going on. I actually don't know what Apple intelligence is and what it can do and not. And they're, they've, they've kind of broken. And I don't know if it was a rule at Apple where they went from, you know, talking about feature and how they can impact your life to talking about a technology and underlying technology, because they feel like they have to, and they feel like they're on the back foot.
+
+Right. And what, what you're sensing now with Meta is that there's a company that's confident and with Apple, there's a company that's like lacked confidence. That's like losing confidence. You know, they're, they're adding more buttons. which is great. The, the AI stuff is just being sold 
+
+[00:42:33] Troy Young: Can you make the AI, can you make it go? Can you show us on the screen? Can you? Make the little, the thing around the perimeter flash or pulse or whatever.
+
+[00:42:42] Alex Schleifer: it, it actually doesn't look as nice as old Siri.
+
+[00:42:48] Troy Young: Oh, that little shake is cool.
+
+[00:42:50] Alex Schleifer: It is cool. It gets pretty old pretty quickly. 
+
+[00:42:52] Troy Young: Alright, 
+
+[00:42:54] Brian Morrissey: When the phone comes out, 
+
+[00:42:55] Troy Young: move move on. move us to the next topic
+
+[00:42:58] Brian Morrissey: all right. The next topic. No, the next topic is I want to talk a little bit about, MKBHD. he, he came out with, a new product. You know, and look, a lot of times you use, you use attention, right, and this is the, the new playbook, is you, you get the attention, and maybe it's ads, sure, maybe it's subs, but maybe, Maybe use it to turn that attention to a better business, like making a product. he came out with this wallpaper app, I 
+
+[00:43:23] Troy Young: You're talking Marcus Brownlee, the famous YouTube reviewer, 
+
+[00:43:28] Brian Morrissey: YouTube reviewer.
+
+I think he's mostly known as MKBHD now, but
+
+[00:43:32] Alex Schleifer: Yes. MKBHD. 
+
+[00:43:33] Brian Morrissey: he has a little like, I guess, product studio. He came out with this wallpaper app that's been You know, utterly panned, by I don't know, maybe it's the Twitter thing, but, it just
+
+seems like,
+
+[00:43:44] Troy Young: it's a wallpaper app, guys. 
+
+[00:43:46] Brian Morrissey: it's a grifting app with like, well, it costs like 12 bucks a month.
+
+[00:43:49] Alex Schleifer: Well, I 
+
+mean, this is more of a story. This is not a tech story and this is more a story about reputation, right? And, and software being hard. and I mean, he's still going to probably make a bunch of money, but, I think his, his 
+
+[00:44:00] Troy Young: Software being hard, it's a grifting story.
+
+[00:44:03] Alex Schleifer: Well, I mean, it's, it's incredible how his, how his brand has suffers from, from this, right?
+
+There's there's been plenty of influencer products, you know, like Logan Paul has this prime hydration stuff. And then 
+
+Mr. Beast has been, no, it's terrible, but you know what? It's sold 
+
+to kids. It's sold to kids which are not discerning, right? 
+
+[00:44:22] Brian Morrissey: I know. 
+
+[00:44:23] Alex Schleifer: that's, 
+
+[00:44:23] Brian Morrissey: you want to make your 
+
+[00:44:24] Alex Schleifer: that's where you want to make your money.
+
+Right? But, if you look at, at I mean, what you want to be, you want to be like a Rihanna with Fenty, or you know, Jenner with Kylie Cosmetics or something like that. these things are, You can do that transition into a good product. And Marcus Brownlee has had like interesting product collaboration with this, this wallet brand and shoes and stuff like that.
+
+And those have been well received. 
+
+but I think, yeah, I think where this, I think where this dropped is also where there's a tension where people are sick and tired of, you know, applications on the app stores. And I think Apple's really guilty at allowing stuff to happen, which are so, there's so many dark patterns, right?
+
+There's so many rules around the app stores. You're not allowed to say this and that, and here's how you place a link all around, like making sure that, uh, payments funnel through Apple. But then there can be such misleading tactics like tracking, you know, overuse of advertising, a weird subscription system.
+
+And, and I think people are genuinely tired of this. I don't think there's one person that is not tired and not suspicious of an app. So when somebody 
+
+[00:45:31] Troy Young: You should download the, the, the, the ad app. It's just ads. All the time.
+
+[00:45:35] Alex Schleifer: yeah. When, when somebody that you trust, when somebody that you trust tells you to do this thing, and now you have a place to voice your frustration, that is actually a frustration with the entire ecosystem of 
+
+[00:45:48] Troy Young: Alex, we should build this. Seriously, we'll get AI. We'll, we'll 
+
+build this. We should build, Just,
+
+as a lark, just ads.
+
+And the app is called Ad.
+
+[00:45:57] Brian Morrissey: yeah. A D. It's a real, 
+
+homepage. it's million. It's like, remember the million dollar homepage? 
+
+[00:46:02] Troy Young: No, but we'll do a better, which this is way better because it's going to have animations and
+
+leaderboards and all that 
+
+[00:46:07] Brian Morrissey: yeah, Rich media. Eye blasters.
+
+Um,
+
+but yeah, I mean, I think a lot of people are looking for different ways to launder attention, 
+
+[00:46:15] Troy Young: That's our first product. You guys, people versus algorithms
+
+app ad, and it's just ads. It'd
+
+[00:46:21] Brian Morrissey: This is. 
+
+[00:46:21] Alex Schleifer: I would say Troy. What did the ally I said is he says Troy often likes to inject humor into discussion. Displaced fullness, however, sometimes borders on being dismissive.
+
+[00:46:35] Brian Morrissey: Borders. See, as I said. 
+
+AI is a suck up. That's the problem with it. 
+
+[00:46:41] Troy Young: Oh, no, you know what we can also do. The second app we'll do is just called paywall, just a paywall, different
+
+[00:46:48] Alex Schleifer: Sorry, 
+
+[00:46:48] Brian Morrissey: Yeah, we'll just take the money.
+
+[00:46:50] Alex Schleifer: just to pay well,
+
+I mean, that's, isn't that every media app?
+
+[00:46:53] Brian Morrissey: But I think this is the story of, again, I'm just gonna keep going like the tension, but like in modern media, you're trying to launder attention in different ways and influence, and you're trying to redirect it into better economics, basically, you know, whether that's establishing a reputation over, over many decades and laundering that into, let's just say, SEO, optimized content for affiliate,or it's something like this.
+
+He's just trying to launder attention at the end of the day. And I think that can work, right? And there are examples of it working, but we also see tons of examples on the media side and on the influencer side where you try to launder that attention into an area like a product. And look, this is, we've talked about the content and commerce problems a lot on this and it just doesn't work.
+
+I mean, these are different skill sets, 
+
+[00:47:44] Alex Schleifer: I think that's true. I think it can work. I think we've, we've seen, you know, like influencers or artists, you know, very successfully going into products, you know, whether it's like Clooney with tequila or whatever. 
+
+Uh, George Foreman with the grill. I do feel like the story here more is more about a tech journalist or somebody that you trust, releasing a tech product that suffers from, the issues that so many societies have.
+
+apps suffer now, which is this kind of, they've been weaponized to extract as much attention or money out of you as possible. And I think there's like people that at a breaking point with a lot of these interactions, it's incredible that you cannot, that you cannot find a video game right now on the app store that, that isn't somewhat, you know, structured to either make you see an ad or, or get rid of, take more and more of your money 
+
+[00:48:39] Troy Young: I hate to fulfill my destiny as the, the, I would predict, but like, this is getting, okay. Yeah, they sat in a meeting. They said, we need to make more money. How are we going to monetize our fame? Oh, let's make an app. What kind of app do you want to make? Oh, let's make one of those apps that. Makes lots of money. Oh, we could do a, what's the easiest app to make? We're not going to do a social network. We're going to do a screensaver app or a wallpaper app. And they make a stupid app and he, someone makes it and they put it out and it's not well thought through. And that's the end of the story.
+
+It's not that complicated. This is bad judgment. It's bad judgment.
+
+[00:49:14] Alex Schleifer: I mean it's a hundred percent it's bad judgment. Yeah,
+
+[00:49:17] Brian Morrissey: Yeah. Okay.
+
+[00:49:19] Alex Schleifer: that's well. All right, let's move 
+
+[00:49:20] Troy Young: I mean, I'm
+
+sorry to end this conversation, but it's like, I feel like we're
+
+[00:49:24] Alex Schleifer: I think you're 
+
+[00:49:25] Brian Morrissey: All right. No, no, no. Let's Thank you 
+
+[00:49:27] Alex Schleifer: good. 
+
+[00:49:28] Brian Morrissey: as, as predicted accurately by AI. Good.
+
+[00:49:36] Troy Young: Elon mechanic?
+
+[00:49:38] Brian Morrissey: Yeah, but then let's get into a good product because Alex, Alex has a hard stop.
+
+[00:49:43] Alex Schleifer: Wow, I better not say anything about that trump topic because 
+
+[00:49:46] Brian Morrissey: Uh, we're talking Trump again. I, okay. So my Trump thing that I want to talk about this week, a little bit, but then you can take it in your own direction is it's, it's going to be fascinating to see Kamala Harris is going to weigh, she's way outspending, the Trump campaign in, in advertising. And, I don't know if it's going to be as effective.
+
+Trump has hacked this system. Like he's hacked all of the information space. And his basic thing is why pay for the ads when you can be the show. And whether that means creating like crazy, you know, conspiracies with their eating the pets and whatnot. it doesn't matter as. As J. D. Vance said, because, it's going to get people to talk, talking about an issue that Trump wants them to talk about, which is immigration and its impact. And it is going to bring up the, it doesn't really matter if it's true or not, basically that's what it is. So I'm, I'm interested to see if the, the traditional approach, which I think Kamala Harris is really taking a very traditional campaign approach, how it, It fares against, Trump who always goes in a different direction.
+
+Troy, what is your take on this?
+
+[00:50:49] Troy Young: Okay, so the first thing is my favorite political campaign ad of the season is the remix of the part from the Trump Harris debate where he says he's eating, they're eating the cats, they're eating the dogs,
+
+I mean everybody at this point has probably seen it, but it's, they put that, that genius guy puts that sort of Latin dance track behind it and it's, they're eating the cats, They slow Trump down.
+
+They're eating the dogs.
+
+They're eating the pets and the people that live. It's hilarious, right? 
+
+
+[00:51:20] The Kiffness - Eating the Cats ft. Donald Trump (Debate Remix)
+---
+
+​ 
+
+[00:51:36] Troy Young: I can't quite understand who it's an ad for. Is that an ad for Trump or is it an ad for Harris? But it's the one I remember most and it's the one I see the most. And it's distributed for free because it's distributed by the people. to per your point, Brian, one thing that you and I have talked about a lot is I always tried to sort of deconstruct the Trump. Mechanic, right? And it's one that I think he understood before us. before most people, right? And it's that democratic media, the internet in particular, would fuck the rules up and that the next winners would throw out the long bomb, right?
+
+A radical idea that was like, what the fuck? What's this idea? this is crazy. They're eating the cats who eats cats. And it's weird enough that we all moved to it. Like moth to flame. It's like, this is weird enough. And he sort of like, this is a, it's just a disruptive notion. And so then people go there. So he owns the moment. He owns attention in that moment. We moved to it. He defines the conversation around that weird thing. And. it, it defines the discussion for a day or two, but interestingly, is that underneath of the crazy, there's always the shred of a story. He always does something that is, will lead you somewhere where you're not completely empty handed.
+
+So for example, if you watch, you know, Channel 5 News on YouTube, that great little sort of Gonzo documentary thing that that, that kid does. He did like the people living
+
+under Las Vegas. He did people on the streets of San Francisco. So he just did one. Around what the hell is going on in Aurora? Right.
+
+Are the Venezuelan gangs taking over Aurora? Have they really occupied this condominium complex? And did they do it with guns and all of that? And of course the truth is yes. And yes, migrants come up from Venezuela through into Colorado. And do they do disruptive things?
+
+Some of them, the other side of it is, is that there's lots of hard work and people that live there and are trying to figure out how to get away from a nasty authoritarian place and build a new life. So it's both right. There's criminal elements.
+
+It's nasty. There's lots of stories there. It's. You know, we're letting people into the country, without any kind of systematic, filter.
+
+So, there's going to be problems, and at the same time, there's a lot of people that are coming here and contributing to the country and making a better life for themselves. So, I guess what's been interesting is, This, this mechanic is throw out the long bomb, make sure it's connected in some way to something that people are going to be, wait, look, there is something here where there's smoke, there's fire. And he's done it brilliantly. 
+
+[00:54:24] Brian Morrissey: I think he's just a natural. He gets memes.
+
+I, think he gets memes 
+
+without even knowing what memes are. 
+
+That's why he's killing with Gen 
+
+[00:54:31] Alex Schleifer: you,
+
+right, you're, you're, You're looking at someone who is just reflexively saying shit, right? And then you're 
+
+applying all that line. Wait, wait, no, no, let me, let me be dismissive for once, because I think that is not an interesting conversation. You're saying, well, Every person that talks about, conspiracies, it is always linked in some truth. It is always connected to something that happened. Nothing ever comes out of thin air. You can go talk to that crazy guy next to the bodega, and you'll go, hmm, you know what?
+
+he, you know, this guy might be drunk, but actually There was some weird stuff with aliens or there are UFOs like you can always find a source of truth. He's not like the way people are applying genius because this guy is so shameless and just like rattles off whatever comes in his head as a way to protect himself or gain some sort of power and then start thinking that there's like he's some sort of media genius.
+
+He's just craving attention 
+
+[00:55:32] Brian Morrissey: So wait, you,
+
+don't think he's, you don't think he's a media genius?
+
+[00:55:35] Alex Schleifer: Oh, I, I think he's a, he's a 
+
+media savant, which is different, 
+
+[00:55:38] Brian Morrissey: Dude, he was a reality star who
+
+became
+
+[00:55:41] Troy Young: Are you kidding me? Someone said to me someone said that he, you know, he is, maybe we'll go down for the next,
+
+[00:55:48] Brian Morrissey: with Jared Kushner running his campaign. No, I think he's a media genius.
+
+[00:55:52] Troy Young: he's definitely a media genius. He's the new Barnum. And someone would say that someone said to me yesterday, he'll go down for the next, like hundreds of years.
+
+They'll look at him as the
+
+[00:56:00] Alex Schleifer: guys, guys, guys, guys, guys, guys, All right. 
+
+[00:56:04] Brian Morrissey: You can dislike him. That's okay. But you gotta like
+
+[00:56:07] Alex Schleifer: right. Wait, wait, wait, wait, right. I'm, I am putting that to your side. Let's have, let's have a reasonable conversation here. You can put a gorilla in the ring and say, Hey, The gorilla is going to tear the guy's arms off. But what's happening is you put the gorilla in the rain and he's saying, look at this gorilla.
+
+He is so strategic. He's thinking this through. Look at that. How he flung that 
+
+shit at the other, the other fighter. But no, but like, like, I want 
+
+us 
+
+to be just like,
+
+[00:56:33] Troy Young: No, let him 
+
+[00:56:34] Alex Schleifer: uh, let let me, I, I want us to be intellectually honest here. There's logic. And then there's just instinct. This guy runs on instinct 
+
+and, but okay.
+
+Instinct isn't genius. You can call it anything you want. But the fact you're saying, you know, when he said this cats and dog thing, he was thinking that people will trace it back and then figure out, and he was like, beautiful minding this thing. He just didn't know somebody told him cats and dogs. He goes yeah, I hate Brown people.
+
+And that's probably. True or I'll get the people going and he just said it. All right. So what you're dealing with is a guy that's purely made of it That's just of course. He's a savant, but he's a gorilla. 
+
+[00:57:12] Brian Morrissey: but here, 
+
+so 
+
+here's the thing, 
+
+[00:57:13] Alex Schleifer: He's he's not Bruce Lee. He's a gorilla He's gonna win the fight, but that's not 
+
+[00:57:17] Brian Morrissey: This is a bugbear of mine because I find that there are different forms of intelligence
+
+that people, that people of the, and this is where a lot of the resentments that they put, there's different types of intelligence that people have.
+
+And we, as societies, particularly in the quote, unquote, elite areas. Overrate a particular type of intelligence. It's usually the type that you get from learning books and being, and being very like quote unquote, traditionally smart, there's totally different kinds of intelligence, that the, someone like Trump has, it's very instinctual.
+
+Okay. And I'm sorry, he understands more. About he's not precise, but he is accurate. He understands, he understood more about where the country was than all of the people from like Yale who spoke in complete, perfect paragraphs. Okay. And I
+
+think there's different 
+
+forms of intelligence. 
+
+Salespeople have a different form 
+
+of intelligence. That's why I honor my friends on the sales side.
+
+[00:58:16] Alex Schleifer: the, the problem with me is that we're implying thoughtfulness in this process, which then kind of elevates him 
+
+to somebody who can 
+
+[00:58:22] Brian Morrissey: it's thoughtful at all. I think,
+
+he's got a preternatural feel for this stuff.
+
+He just sniffs 
+
+[00:58:27] Alex Schleifer: think he's very, he's very easy to manipulate, right?
+
+And the people who, who know him can do that. There's a lot of, and, and so when he did the cats and dogs thing, he's just responding. He's just like an expert. He's like an animal in his element and he's responding to the moment. I think just the language we use is important because, because, you know, these are, there are different convictions to how you're doing something.
+
+And, and I don't think he's calculating. I think just the way he responds to the world has hacked the media ecosystem has hacked our attention because he is just so, 
+
+[00:59:02] Troy Young: Well, that's why, that's where we started. And that was
+
+actually the point we were making. So,
+
+[00:59:06] Brian Morrissey: Yeah. He's an amoral genius. Okay. Let's get on to good product.
+
+[00:59:11] Troy Young: Alright, alright, alright.
+
+
+[00:59:12] Good product
+---
+
+[01:00:17] Brian Morrissey: My Good Product is, This week my son, like yesterday or the day before, released an album. And, I think it's a good product. So, his name is Seb, and he's on a journey, and he recorded this album traveling across the U. S., mostly spending time in California last, well, I guess about six months ago. And, his project is called, I don't know if this project has been, I don't really know actually, it's called Chronically Offline.Brian, I think that you would like that. So his, that's what, That's the kind of moniker moniker he's using, and the album is called Made With Longing. So it's kind of, I think, of our time, and it's about, a young man coming to terms with, his place in the world. And, you know, dealing with childhood shit. to me, it feels like a California record. and he doesn't, he doesn't love to compromise. He wanted to make a whole record. He wanted to make art. He wanted to make something. He played, he played everything on it. He wrote it. He sang it. He did the harmonies. He produced it. He had the help of this great guy, Tim in California that helped him do some of the production. And the part he hates actually is marketing it. and in it, I feel, I won't review it. It's, it's hard, you know, whenever your kids make music, you think it's great. Cause it's like your DNA making music, but it feels a little like the Beatles. There's a huge influence of his, a little like kind of fountains of Wayne, the little Mac DeMarco in there who he loves and Elliot Smith.
+
+[01:01:47] Troy Young: and maybe a bit of Bon Iver. he plays a little banjo on it, so that's cool. and it's kind of deeply inspiring to me, and, you know, I personally don't want to stop growing as a human being, and it's really great to watch him grow, and Kind of produce something that's so deeply personal and we should play a clip of it and see what People think but it's cool and it's definitely like every week when I do the good product It's sort of I don't pick a good product it I kind of encounter something in my life that got my attention that made me feel something that That I want to highlight and this is what I wanted to highlight this week I think you in you know, seb, you don't know seb brian, but to alex, you know seb and
+
+[01:02:31] Brian Morrissey: Well, he was on the podcast. I mean, I know him as a podcast 
+
+[01:02:33] Troy Young: Well, yeah, he was on the podcast but alex you might maybe even listen to the record.
+
+I don't know
+
+[01:02:38] Alex Schleifer: I will 
+
+i'm going to listen to the record 
+
+[01:02:41] Brian Morrissey: so if you were to go back to when he was like eight, are you, would you be surprised that like you made a, cause I'm interested cause I don't have children, but you have two kids and they went in totally different paths. Like is it
+
+three kids? I was sorry. But like your daughter and like said, went in different paths.
+
+[01:02:55] Troy Young: daughter is a banker,
+
+[01:02:56] Brian Morrissey: Right. So are, were you surprised at where they ended up? if you were to go back when, when they were like young or are you not surprised
+
+[01:03:04] Troy Young: You know, maybe a little bit, I remember when I first bought Seb electric guitar. we lived in Mill Valley at the time and he never touched it for three years.so a little bit, he then, he, yeah, he kind of, he, Seb isn't the kind of person that You know, like you couldn't sit him down at a piano and say, you know, learn the piano as a young person.
+
+He has to discover things himself. That's who he's, yeah, A little bit surprised. My other daughter's kind of super, super driven, analytical, you know, like kind of, you know, banker type. So
+
+she 
+
+[01:03:34] Brian Morrissey: child? 
+
+[01:03:35] Troy Young: uh, she's a, I'm gonna outwork you and I'm gonna beat you kind of
+
+[01:03:41] Brian Morrissey: Oh, yeah. Okay. You got to do the 80 hour weeks.
+
+Alex, what do you, what, what profession do you think your son is going to have here to have to predict right now?
+
+[01:03:49] Alex Schleifer: Oh boy I don't know. I think it's either going to be making video games or Working on a farm. I think it's like he's, you know, between those two worlds right now. So, 
+
+[01:04:00] Brian Morrissey: It's safer to go into, I think, the
+
+[01:04:02] Troy Young: Maybe what he'll do is make the new Farmville. 
+
+[01:04:06] Alex Schleifer: Yeah.
+
+that would the amount of, farming cozy farming simulators that are coming out in gaming. I don't think, you know, but it's, a massive industry of just, you know, chore simulators of people managing and I think post pandemic and just, you know, people can't buy their own houses and they, they, they don't have time to go out and touch the grass.
+
+So they play these video games where they plant beets and, and, and 
+
+[01:04:29] Troy Young: We can maybe make that our third game after add and paywall,
+
+[01:04:33] Alex Schleifer: Yeah, I find, 
+
+[01:04:35] Brian Morrissey: Farming Is
+
+a great tax strategy, right? If you're super rich,
+
+I think. Yeah, 
+
+[01:04:39] Alex Schleifer: All right. tell me 
+
+[01:04:40] Brian Morrissey: like, 
+
+owning, I think that's why Bill Gates owns, there's that, that's why the conspiracy theory about Bill Gates, because he owns so much, farmland.
+
+[01:04:47] Alex Schleifer: Well, I know that there's 
+
+like, there's, you know, there's a lot of benefits to, having farmland because you can just apparently, make an egg building and build whatever you want in it, which is what people are doing around here. 
+
+[01:04:58] Brian Morrissey: if you're in the EU, they'll pay you not to farm on it too, depending on the market. So, it's good. 
+
+[01:05:04] Troy Young: you keep coming back to hijacking media.
+
+[01:05:08] Alex Schleifer: Me or Brian?
+
+[01:05:10] Troy Young: Brian, you put it in it.
+
+[01:05:11] Brian Morrissey: Yeah. 
+
+[01:05:11] Troy Young: in your notes,
+
+[01:05:12] Brian Morrissey: Well, it has.
+
+[01:05:13] Troy Young: right? 
+
+[01:05:16] Brian Morrissey: Does that even have to be said? Like, I mean
+
+[01:05:19] Troy Young: Well, but at first you talked about it like it was a new format. Yeah. Where this sort of conversational go direct to the, to the audience format and tech people saying we can make media too. We don't need your,
+
+your, your shit. and then to me, I just sort of thought of it as, I don't know, having lived in, in Silicon Valley and work with lots of technologists, it's sort of, uh,The job of tech as it applies to media and most things is put a new layer on top, right? To aggregate and to take, take it directly to the user and take data control and break shit to get there if necessary. Right? that's what Facebook is. And that's what Google is. It's the layer on top of the media. And through that you find immense power. And what you see in the way tech thinks is this kind of black and white.you know, they're all really kind of fundamentally smart, the, the good ones, obviously, and there's, there's this kind of tech righteousness that understands the world is a sort of solvable problem where they have better solutions for media. They do media better than media, right? And, you know, they were also neglected in high school, mostly,
+
+[01:06:32] Brian Morrissey: But they also look down on media. I mean, it's very clear. I mean, Zuckerberg is 
+
+now, like, just coming out with it. 
+
+He'smost of these publishers don't even have He goes, we won't even take their content if they don't want it, but it's not that valuable anyway. I 
+
+[01:06:41] Troy Young: So yeah, they make media, right? And they should make media because
+
+if they make media that's better than the media that you make, good on them. Like amazingly, say what you want, Alex, all in made media that people like better
+
+than other media. 
+
+[01:06:56] Alex Schleifer: Right. 
+
+[01:06:56] Troy Young: I mean, 
+
+not, uh, not a lot of business media, not a lot of business media can sell out six,
+
+7, 000 
+
+[01:07:04] Brian Morrissey: I agree. 
+
+[01:07:05] Alex Schleifer: But you conflate, you conflate me not liking them, and not liking their politics, and not liking their message with, with me thinking that 
+
+they're not successful. I, I I can say that, like, Fox is really successful. Troy, really successful. Alex Jones had a massive podcast. Joe Rogan is hugely successful, but success to me doesn't validate why I should listen to them. Like, you 
+
+[01:07:34] Brian Morrissey: I think to me it's more like I like to look at things and learn from them and understand them and then sort of
+
+take them and like reconstitute them. Because I think if you just dismiss things
+
+that are clearly successful, you're not going to aren't there. Lots of video games that you see that you don't like the dynamics of them or
+
+[01:07:52] Alex Schleifer: Sure. Sure. Sure. But you're, you're, you're a media analyst and maybe there's value to that. But even let's say Jason speaks like 20 minutes, 40, 30 minutes on this show, Saks speaks another 20 minutes on this show. I'm not wasting 45 minutes of my week on these guys. Like, uh, why I, they're successful.
+
+They ran a successful show. People come in their show because they're successful. Good for them. I have other things to do. I just don't like them and I don't find them particularly insightful and once you've heard that shtick over and over and you're, it's kind of, you get it. Yeah, I get it. I get it. and I also like know that there's a huge kind of industry around successful people.
+
+People want to listen to successful people. I can tell you from firsthand experience that when I was head of design at Airbnb, I could fill a room of thousands of people that wanted to listen to me speak about I run the team and how I got here and stuff like that. I couldn't give them that knowledge. I got lucky.
+
+I did what I did for 15, 20 years. So I was good enough to get the 
+
+job, but, but, but, but, but we'll get to that. But I think that at the end of the day, people want to be close to, to, to what they see as power or success, because they feel that they can learn from it. Which is why, and you know, if you're an NFL star or whatever, then if you have a modicum of like, You know, media smarts, you can create a product.
+
+I think it's completely unfair comparing like a billionaire to like some upstart journalist because the billionaire has like the light to the mouth attraction and that people want to hear like, well, I'll hear about their life. And 
+
+[01:09:29] Brian Morrissey: Oh, I get it. No, no, it's, an unfair. It's an unfair. It's leverage is an unfair advantage. Quote, unquote unfair.
+
+that's why 
+
+[01:09:36] Alex Schleifer: we're applying media genius to, to all this stuff. It's not, it's just that's the way it is. 
+
+It's like It's like saying it's like seeing the the the the housewives of whatever minnesota are media geniuses it's like people just like to watch the car wreck and like to see the Wealth and like to hear the thing and it's it's it's great.
+
+I'm happy for them Like i'm so happy that jason's successful. He's so deserving of it I mean, you know like he's been brown nosing for 20 years that guy deserves a 
+
+break 
+
+
+[01:10:04] Outro
+---
+
+[01:10:04] Brian Morrissey: it's inspiring 
+
+[01:10:05] Alex Schleifer: It is inspiring and I think it should teach us all to just suck up just do it You Just 
+
+[01:10:12] Brian Morrissey: yeah, no, that is true. If there's if there's 1 lesson we can take from this episode is that the ends absolutely justify the means.
+
+[01:10:20] Alex Schleifer: Yes.
+
+[01:10:20] Brian Morrissey: Okay,
+
+[01:10:21] Alex Schleifer: Good luck to them. 
+
+[01:10:22] Brian Morrissey: This is fun.
+
+[01:10:23] Alex Schleifer: I'm glad we stayed on
+
+[01:10:24] Brian Morrissey: Bye.
+
+[01:10:25] Troy Young: you ​
+
+
+

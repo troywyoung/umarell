@@ -1,0 +1,633 @@
+PvA S3E103
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:00] Brian Morrissey: we got a negative review by the way, that there's too much bickering on this podcast.
+
+So 
+
+[00:00:04] Troy Young: Oh yeah? 
+
+[00:00:05] Brian Morrissey: Yeah, 
+
+[00:00:06] Troy Young: Why didn't you share that with me?
+
+[00:00:08] Brian Morrissey: oh, it's, it's, it's on, it's on Apple, podcast review.
+
+[00:00:11] Troy Young: Oh, did they single out anybody? As being divisive like the A. I. called me divisive.
+
+[00:00:17] Brian Morrissey: No, a previous one. Did you see the one that called you the Troy bot needs to stop interrupting? I wrote that one though. 
+
+​
+
+
+[00:00:47] Intro
+---
+
+[00:00:47] Brian Morrissey: welcome to, people versus algorithms where we connect the dots between media technology and culture. Normally we are joined, by Alex Schleifer and Troy Young, but, I'm using the Royal way, me and the audience. but this week again, Alex has some kind of conflict.
+
+What did he's at a conference? Is it?
+
+[00:01:06] Troy Young: I don't keep track of Alex.
+
+[00:01:07] Brian Morrissey: Okay, he's at a conference. I can't imagine Alex at a conference. but I've never met him in person. I told someone this last night and they didn't believe me. And it's true, I've 
+
+[00:01:15] Troy Young: I, you can't imagine him at a conference. Why?
+
+[00:01:18] Brian Morrissey: I don't know why.
+
+[00:01:19] Troy Young: of cave dweller.
+
+[00:01:20] Brian Morrissey: No, I just, I don't know. It's 
+
+[00:01:22] Troy Young: Maybe it's like a Comic Con or something.
+
+[00:01:26] Brian Morrissey: I don't know.
+
+Having been to a lot of like conferences in my day, I don't know. Alex doesn't 
+
+[00:01:30] Troy Young: and the, and the 
+
+[00:01:31] Brian Morrissey: he doesn't seem like a conference type. He doesn't seem like a guy who would put the lanyard on, but maybe, I mean, that's, it's reassuring to me as a, as a person who is a webinar provider that, you know, Alex also does, the conference circuit.
+
+I want to talk about this like packaged media and how they deal with free radicals. You used this term free radicals the other week and I really liked it. Cause I've been like thinking of them as like troublemakers, but that's too negative.
+
+And I think free radicals is a nice, it's a nice branding touch. Because what I meant by it is within every organization, You're going to have, you're going to have people that line up and, you know, you don't have to worry about it, but anyone who is running these organizations, you're going to have, you're going to have the people that don't stay in line and they're going to, they're going to 
+
+[00:02:13] Troy Young: I liked them. I liked having a few. Until they went, you know, over the edge. But I liked having pre radicals in
+
+[00:02:20] Brian Morrissey: Yeah, it's a balance, right? But what I, what I wonder is if what I'm trying to, to brand packaged media, can keep the free radicals. Because there's so many, because they, they don't necessarily fit within there. And now they have like a lot of options. Taylor Lorenz to me is a, like a lot of people, she's a lightning rod.
+
+And that's a great thing to be these days. I really admire Taylor for that. And she just left the Washington Post where she was a technology columnist. And prior to that, she was a technology reporter at the New York Times. She, she has been a technology reporter at the Atlantic. And before that. At the Daily Beast.
+
+This is all since 2017. And also shout out to the Daily Beast, which has incubated a lot of really great talent, over the last decade or so. I think that's an underappreciated thing. But Taylor, you know, she penned her, inevitable. I'm, I'm going to sub stack, which I'm shocked that it hasn't happened before.
+
+This is not the most surprising thing, because, I don't know, like she's, she's always involved herself in, in like controversies either through her own means or just because there's a lot of people out there on the internet, who I guess she rubs the wrong way. But one of the things that Taylor, wrote and you know, she focuses on internet culture and I, I give her a ton of credit for taking that approach.
+
+This area, seriously and before other people did, and she's been doing it for a long time, and I would always use her as an example with their younger, or less experienced. I should say staffers about how going narrow and deep, makes you really valuable in the marketplace. So she's going off to sub stack.
+
+She started her own. publication there called User Magazine. And in her departure, she torches old school institutions. she said, legacy media has tried desperately to position itself as a credible source for news about online culture. But many of these institutions for all their power and prestige have proven themselves fundamentally unprepared to navigate today's chaotic, contentious, fast paced, and highly nuanced online media landscape.
+
+and I think she has a bit of a point. you know, Substack has, we've gone past the 2021 sort of era of is Substack coming for the New York Times? No, it's not. But it's interesting that there's still this, this drip drip of legacy media, package media, whatever you want to call it, losing free radicals.
+
+What do you think, Troy? 
+
+[00:04:56] Troy Young: so I think for someone like Taylor, it's probably a good idea. And I think broadly what Substack shows is that, and it really had to do with the transition from ad supported to paid media and other monetization alternatives, which meant that if someone created. A platform there were platforms before there were plenty of blogging platforms and there's plenty of social media platforms and there was, you know, tumblr and all the places where you could make content and, you know, distribute it. But we then hit the kind of subscription era where. You could start to see that like Matt and Glacius, who's got, I don't know what they say to the 18, 000 paying subscribers at 80 per a year. that there's a, you know, really good living to be made as an independent and it's admittedly for the few, but basically Substack drove out all the costs and complexity of being a free radical, of being an independent. And, you know, there's no, I got to deal with advertising nonsense. There's no. you know, CMS nonsense.
+
+At the same time, we decided to basically abandon the complexity of page based web publishing and just go like to simplified formats, mostly connected to an email. And so it sort of showed a different way. I would extend that because. I'll share this little anecdote. I was having lunch with a person that's a sort of investigative reporter, like kind of, I don't know, late career, mid career, late, mid career, senior, on the weekend. And she said, Troy, she's a big fan of the podcast, by the way. she said, how much time do you think I've got? she's like, I don't want another job. Like how much time do I got? And I sort of like knee jerk, you know, replied. I said, I don't know, five years. and I said, maybe you need to start a side hustle soon, you know, we started a discussion and agreed pretty quickly that even in the I world, you know, we still need reporting, which is what she does. Right? you need someone that can wave through the complexity of the world and pull out the important stuff and use your eyes and ears and your judgment and all of that.
+
+And, you know, AI is no good at that. I mean, at least not yet. Right? Like
+
+it's, it's so reporting's really important. then just to kind of extend the story, then I was like, well, let's, let's create a construct of like,what I refer to or think of is above the line and below the line above the line is shit that I can't do or that you should be investing in and below the line is all the parts of media that, Impacted massively by AI should be replaced, should be automated. All of that stuff.
+
+Right. 
+
+[00:07:41] Brian Morrissey: hmm. I like this.
+
+[00:07:42] Troy Young: Yeah. And so I was just like, let's start to separate because if like, we're clearly going through, this isn't just like a Google platform shift, this is a media platform shift that we're going through. And then you send me that thing on the text thread, which is like, dude, Jason Silva, you know, doing like sort of philosophical jazz with chat GPT. You know that thing from Twitter that you sent? Do you remember
+
+[00:08:09] Brian Morrissey: I didn't say I think that was Alex. That 
+
+[00:08:11] Troy Young: Yeah, 
+
+[00:08:12] Brian Morrissey: Why was he on why was he on Twitter
+
+[00:08:14] Troy Young: oh, Alex jumps in now and
+
+see a Anyway, there's this guy having this incredibly dense conceptual, mystical kind of spiritual conversation with the AI. And it's like a real, you know, kind of wonderful back and forth.
+
+And, like, this is, This is like singularity shit, like you're seeing an ability to navigate, you know, even if it is just pattern matching in an intense amount of, you know, against an intense amount of processing. To me, it, if it, you know, it looks like natural connection, making insightful, instinctual intelligence. Right? Like it's, it's, that's what it looks and sort of asymptotically, we're clearly approaching something that is human like but we still need reporting. We still need, you know, humanness. We still need humor. So you sent me that. And, and then I was looking at one last kind of data point, which was the open AI dev day. And that was like, I think a couple of days ago.
+
+And they were showing now they have a new, what's called the real time API. And they were showing the real time API against other API calls. So a conversation. About being in a city, going from place to place with the A. I. In real time, but also connected to a map A.
+
+P. I. And showing like real time like images and then links to other places. And then in the end, they actually asked the. In a funny little kind of demo, they asked, GPT to find a place to get treats for the developers in the audience. And it literally made a phone call to order a bunch of chocolate strawberries.
+
+[00:10:02] Brian Morrissey: hmm. Okay, so that's the agent sort of 
+
+[00:10:05] Troy Young: so you're seeing this sort of Agentic,
+
+future, right? And
+
+[00:10:09] Brian Morrissey: that. 
+
+[00:10:10] Troy Young: So, you know, media gonna change. A ton. And so, in my mind, Like the web model of pages and links is going to feel very old, very quickly.
+
+Now we've talked about this for two episodes, right? So an AI is kind of retraining us to expect something easier and more helpful and less frictiony and all that. And. Once again, publishers are going to straddle two worlds, just as they did bridging sort of print broadcast worlds to digital on demand worlds. And you can't abandon one in favor of the new. Those are the trade offs that we always talk about. Right. And then
+
+nimble innovators will be better off, blah, blah, blah, blah. But, I sort of think that you then have to go and you've got to say, well, what's above the line and what's below the line. And I've been doing that exercise.
+
+[00:10:57] Brian Morrissey: wait, is the line just survivability?
+
+[00:11:00] Troy Young: The line is stuff to, I guess, I mean, it's a, this is a new Thought so maybe you can help me with it. But I was thinking that the line was the stuff that humans do uniquely well in media and and then below the line was stuff that gets essentially gets automated or is done better by the technology. By AI.
+
+And so I, I, I made a list.
+
+[00:11:22] Brian Morrissey: Give me five things that are above the line and a 
+
+[00:11:25] Troy Young: Well, obviously, like I said, real source reporting, right? Probably augmented by your little AI helper, but real reporting, original, informed, thoughtful point of view. this is what I
+
+think, this is what my 
+
+[00:11:39] Brian Morrissey: Reported analysis is going nowhere. Tim, Tim Kawakami, this, really good, um, sports columnist just had, he just left the athletic and he torched the athletic too, for being a bureaucratic mess and losing its way, but he's just went over to SF standard and I think he's totally right on that
+
+[00:11:55] Troy Young: So, human, humanness, personality, right, a. k. a talent, right, like what we think of in the business, talent, humor, A. I. isn't funny. I mean, at
+
+least I haven't done it to be funny. It's, you know, it's weird
+
+sanctimonious. It's 
+
+yeah, yeah.
+
+yeah. 
+
+[00:12:13] Brian Morrissey: It's always telling me, 
+
+[00:12:14] Troy Young: I got more, I mean, recommendations provided by trusted brands or qualified humans, right? The best, I don't know, SUV for X, Y, Z, according to someone you trust or someone that you know, I think that's important. you know, at some point quality of
+
+[00:12:30] Brian Morrissey: I think that's straddles above and below the line. 
+
+[00:12:33] Troy Young: Okay. So that's a straddler. We'll call that a straddler. And then I think your Your data, your unique functional offering connected with AI, right?
+
+Like, how do you get, I mean, think about this is the hardest question. So we have these aggregators, right? Like Google was an aggregator. you know, Instagram Tick tock's an aggregator. What I, and media has been slaughtered by aggregators, right? Cause they create better interfaces for information and they create more ways for more people to put more content into a system. 
+
+[00:13:04] Brian Morrissey: and also they don't pay for the actual 
+
+[00:13:06] Troy Young: Yeah. And that's a benefit too, 
+
+[00:13:08] Brian Morrissey: of it that don't while you take out all the costs of actually making the shit. Yeah.
+
+[00:13:13] Troy Young: So,
+
+[00:13:13] Brian Morrissey: looks better.
+
+[00:13:15] Troy Young: if you want to, you're going to say, you know, someone in your tech group or your product group is going to say, we'll just do our own AI interface on our CMS. And like, why would you use that?if you're like, why would I go to a webpage to use that?
+
+Unless the dataset was super, you know, proprietary and useful and unique, and it really was worth my time because. The kind of generalist or horizontal models are getting so good at doing everything,
+
+[00:13:42] Brian Morrissey: I don't know. I might part ways with you there.
+
+I think, I really think that there is an opportunity. Did you see that Politico is doing this 
+
+[00:13:51] Troy Young: Right. But, but that's my, that supports my case. Cause they have, they have their like a
+
+unique data set at augmented by AI, 
+
+[00:14:00] Brian Morrissey: Right. Right. Okay. So yeah, yeah. The middle gets slaughtered no matter what, you know, for instance, I think with this, like Alex uploaded the, all of the, the podcast episodes and notebook Ella, I think there's actual value, I don't know how much the value is, but I think there's value to be created, if, if people could have a natural query with the insights that particularly you have shared during this, during this podcast, like, I think that there's actual value to be created there.
+
+For sure. what I'm surprised at is that I did a dinner last night with a bunch of publishing executives. And I just asked. What are people doing with, what are you doing with AI? Give me, give me a business use case, just anything, small, medium, very little,
+
+[00:14:43] Troy Young: right.
+
+[00:14:44] Brian Morrissey: either not sharing it or they're just not doing it.
+
+And I think the, the real danger is that this just becomes another game of defense and I get it, these businesses are difficult to make work, but you got to kind of get beyond the defense, get onto the efficiency. I did this little,this little schematic 
+
+[00:15:02] Troy Young: to talk like a consultant. It's nice.
+
+[00:15:04] Brian Morrissey: Oh, yeah, I did a little schematic too. It reminded me of that like 
+
+[00:15:08] Troy Young: a napkin 
+
+[00:15:08] Brian Morrissey: we did.
+
+Um, Yeah. 
+
+no, it was the, it was the Kubler Ross like stages, but it was like denial. and then you get into, um, 
+
+[00:15:17] Troy Young: project this 
+
+you projected it with a projector
+
+[00:15:20] Brian Morrissey: No, I didn't project it. it was in a newsletter. and, and you can also, everyone can like see this, but you're going to see the explanation. You need to subscribe to TRB Pro.
+
+[00:15:30] Troy Young: shit? I got to remember
+
+to cancel my subscription
+
+[00:15:33] Brian Morrissey: please don't, please don't. anyway, but you go into the efficiency and I think that's where the stuff is going to start, right.
+
+But you have to get beyond just 
+
+[00:15:41] Troy Young: Well, that's what I would bring this back to okay, so to bring it back to the taylor thing, Way, way too much money in what we would call digital media or publishing, whatever you want to call it, is spent on the enablement of the content, like 60, 70 percent ad sales operations. You know, all the things you do to make the content. 
+
+[00:16:03] Brian Morrissey: Oh, by the way, within the editorial, there's a ton of money that goes to that. To me, you remember, like we were talking above the line, below the line, working 
+
+[00:16:11] Troy Young: we haven't finished 
+
+yet. 
+
+[00:16:13] Brian Morrissey: sorry. Cool. I'm just eager.
+
+[00:16:16] Troy Young: Well, let's go below the line now. What do you say? Because this is where it starts.
+
+If you're going to compete with. For talent, like in the case of WAPO and Taylor Lorenz versus Substack, you need to be More efficient, more tolerant. You have to give people more room. You have to pay them more. I mean, you have to pay talent more like real talent, right?
+
+And let's, let's assume that Taylor is that. So what you have to do, I mean, I think below the line means take all laborious costs. You know, expensive process processes and use and automate them. Right. And so like in particular ad tech or anything or, and not even ad
+
+[00:16:57] Brian Morrissey: You've really turned on ad tech lately.
+
+[00:16:59] Troy Young: not just ad tech duty. It's,
+
+it's, there's usually three people for every sales person in a media company.
+
+Okay. And those are the people that package up grids and do the strategy and make the decks that get thrown in the garbage. It's a complete waste of time. And by the way, the skilled providers and the platforms, they don't do any of that shit. Right? Just the little tiny companies that take the sub 15 percent of the revenue against the platforms pitch and pitch and pitch and make decks and do the dining and do all the stuff, right?
+
+So that needs to get more efficient or you can't put, you can't compete with the efficient mechanism that the marketplace is giving independent talent, but let's keep going. Okay.
+
+Below the line, right? So obviously historical or evergreen content below the line, right?
+
+LikeWell, it's, but it's more than that.
+
+And I want to make this point
+
+because the philosophical conversation, the Carl Sagan conversation that Jason Silva had with the AI. I mean, that was like all knowledge that existed before this moment in a book, in a conversation, in a movie, like the AI swept all of that up. So it's like my friend, Chris Kimball will say to me, well, they, you know, it won't automate my recipes. I'm like, Chris, maybe it will. If I want to make carbonara, I know you make it really well. Like you're really good at it and you got your own little Milk Street twist on it, but there's like access to a carbon era recipe in two seconds, which had GPT.
+
+And then
+
+to query it, if you really wanted it to make it cause you had one ingredient and on another, like it's, it's kind
+
+[00:18:35] Brian Morrissey: That's what I like. That's what I like about, I use perplexity for recipes pickle.
+
+[00:18:39] Troy Young: recipes, right? So history, geography, physics, chemistry, recipes, you name it, unless you can convince me that you are a very, very specific recipe that is very, very special, right? It just gets harder. It's not impossible, but it's harder. But stick with me. Here's what I've been finding lately. So I was in a car dealership and it was aggravating as, as always.
+
+[00:19:00] Brian Morrissey: are you going to car dealership?
+
+[00:19:01] Troy Young: I just want to get another car. I just, my car, 
+
+[00:19:05] Brian Morrissey: I've never, I've never bought a car and I'm like scared about the process.
+
+[00:19:08] Troy Young: yeah. So, yeah. What I found is that the nice salesperson was just annoying because chat GPT was like a hundred times better, because if I want to compare the trim levels on two models, like it literally just spit the answer back to me in two seconds
+
+and I could. 
+
+[00:19:24] Brian Morrissey: he or she is there to negotiate. They're gonna 
+
+[00:19:27] Troy Young: no, there's no negotiation in this kind of dealership.
+
+Like there, no, no, there's no, you just, there's a price. You pay
+
+the price. Yeah. So here's what I'm finding. Much of the, what I would call new knowledge content, stuff that's current or new will fall below the line. And we don't like to admit that. So what that means is. And by the way, with little economic recompense, like the stuff that is like the demo that they showed at the open AI dev day was like, Oh, we're hungry.
+
+Where should we eat in? I don't know, whatever city they were in San Francisco or Los Angeles. And it said, try this restaurant and this restaurant and this restaurant. And so those are current pieces of content, right? And you would like to think that I can still put those on my eater site and differentiate, but increasingly everybody's doing deals with the aggregators. Increasingly, people will feed the aggregators for free and aggregators. I mean, the new interfaces, whether it's Gemini or, or chat, GPT or perplexity or whatever, and they're closing the gap between evergreen and new,
+
+they're closing the gap, dude, you just use it every day and you'll see that the gap is being closed.
+
+So unwittingly or not, content creators of all stripes feed models with the best restaurants in Lisbon. Yeah.
+
+You know, and by the way, that information changes, but not that much. Listen, travel content on AI killer use case. Yeah, I I've done it. I've done it. Not only is it a killer use case before you go, it's a killer news case while you're there.
+
+I was in Paris taking pictures of monuments with chat GPT, and it would just explain it to me. Like, I don't need lonely planet.
+
+[00:21:14] Brian Morrissey: You know what a lot of people are using? And I don't know how this plays into your above the line, below the line, but with travel content and that. Is Google Docs. a shared Google Doc is like the new hottest app for finding, things to do in cities. Because it's human recommended. It's like you, like 
+
+I know this, 
+
+[00:21:31] Troy Young: Well, you're not building a, you're not building a, you know, Media company off that. I'm sorry.
+
+No, no, that's what I mean. because everything has become optimized to the point of absurdity, and because everyone gets the same recommendations, if you're going to find the deep cuts in Tokyo, you're going to get Colin Nagey's Right, right. For free. But, but what I was trying to do there is kind of show you that it's not just evergreen. It's kind of like evergreen plus
+
+new stuff. And so as media, your ability to justify web based friction in exchange for moderately valuable new content will be modest. Um, it just will be because friction crushes most things. And if I'm using the chat bot, but you're like, come over to my webpage and get something for me, it's getting harder. so, so that's a below the line item for me. Here's another below the line item, curation curation's not useful anymore, right? AI can curate a million times better than humans. Not only can it curate. But it can also provide the next step, which is to present information in the way you like it. Long, short, bulleted, summarized text, audio, we're seeing it, right? I want my news read in the voice of William Shatner. Like, great. Alex wants his read in, you know, in bullet points by Snoop Dogg. so like the packaging and curation of information is becoming a below the line item because it's so good at personalizing for you. 
+
+[00:23:00] Brian Morrissey: Define curation. 
+
+[00:23:02] Troy Young: here's things that you should read today because they're hot or because you like them or because you're interested in this topic or this is your passion or, you know, the most topical things of the moment. Like I mean, of course, everything has a human kind of like boutique angle, right? Like, Oh, I get my album recommendations from the like, how long gone guys?
+
+Because they're, you know, tastemakers. Sure. Okay, great. But this isn't media, man. This is like little tiny, little tiny businesses. 
+
+This is little boutique. This is boutique shit,
+
+[00:23:40] Brian Morrissey: I mean, I do think that there is a lane for packaged media curation, right? Like, I mean, the economist's point of view is never surprising, as I say, but like, there's still value in In that, and there's influence and power in, in their curation of what is going on in the world that 
+
+[00:24:00] Troy Young: but, but the economist is a reporting organization with a brand, you know? So I think that's useful for sure. That makes sense to me. Right? Like the other thing is, is it below the line, what I would, is what I would call the AI I don't know the context engine. So any piece of original content can be infinitely contextualized with AI. Remake it, augment it, add a timeline, show precedents, add imagery, connect to locations. All of that AI is so good at taking. A piece of knowledge and just making it more useful.
+
+[00:24:38] Brian Morrissey: well, you know, what is also really good at is we've talked about it before about the versioning. Right. And I think what it's going to be, you know, I, what I believe a lot of publishers going to be using this is to take the content and create new forms of content off of it. 
+
+[00:24:54] Troy Young: You know, and you already see it with like substack and they're, you know, the AI, you know, creating a podcast.
+
+[00:25:00] Brian Morrissey: Yeah, right now. It's not perfect. It gets a couple things wrong notebook LM and whatnot. That's fine. Right? That's it's going to get better. you're always trying to guess, it's like, should it be this format? Should it be that format? It's like, no, it's going to be like every format.
+
+you're gonna be able to just version it out in so many different ways. I think the challenge ends up being everyone is going to have access to these tools. And I'm not sure how you create leverage at all as a media organization in that kind of. Ecosystem.
+
+[00:25:36] Troy Young: let's list it out. I think it's back a little bit back to your economist example, which is your brand connotes, trust your format and your reporting, is useful and, and, incremental to what, you know, could be done in the future. By automating retrieval of information, And I think that what will be demanded of those organizations is that they're hyper efficient. So more and more of the revenue can go back to seasoned senior talent that exhibit the characteristics of being human. Having strong, clear, valuable point of view, personality, humor, whatever it is, and, and their ability obviously to do deep, deep reporting and be experts. Frankly, it's just that they're experts.
+
+Hmm.
+
+But I a question that why would that, why would that talent want to be part of, 
+
+well, 
+
+because because if Taylor existed inside of a different construct in the Washington post and there was less bullshit and more money, she would stay there.
+
+[00:26:42] Brian Morrissey: I think that's the interesting thing of, our friends at Puck is that they're trying to thread that needle. And I think every, every publisher is going to have to figure out where they're going to lie on that continuum. And they're going to have to give, I think that there was like a lull, With the sort of substack wave, but this isn't this isn't, sort of going away.
+
+And the problem critical problem of it is that. the most talented and arguably most valuable people are going to be the ones who end up taking this path because it's, it's, you know, it makes sense. 
+
+[00:27:17] Troy Young: I think it's dangerous. And I really think it's yet another. Reason for folks. And by the way, I think it's a tremendously exciting time to be a media entrepreneur because we're going through this massive platform shift, but like nothing is sacred and it all starts with, with human behavior, a, much more of the spectrum is going to be aggregated, processed, and, you know, kind of recombobulated by AI.
+
+B, Talon is going to platforms where they eat what they kill. And I would say that on the, on the consumer front, I found, like my wife said the other day, she's like, I don't spend that much time on substack and, our friend, Jane Pratt, had announced this week that she, was going to take her joint to the, to substack. 
+
+[00:28:04] Brian Morrissey: I. was excited by that. I'm 
+
+glad she went with Substack cause she 
+
+[00:28:07] Troy Young: Well, and you and I, you know, I got her to talk to you, I think. Right? Didn't I?
+
+I love 
+
+Jane. 
+
+[00:28:13] Brian Morrissey: I'm taking credit to everyone.
+
+[00:28:14] Troy Young: And I was like, Jane, stop talking about building like a big website and getting all this funding and all this. Go write content, make content, get some people to make content, go to Substack.
+
+[00:28:24] Brian Morrissey: Yeah. It's a perfect minimum, minimally viable product 
+
+[00:28:27] Troy Young: yeah, right. And so she, she's doing that. And, my wife wanted to read it and she's like, I kind of love Substack. Yeah. Like she was sort of got the, it was the first time she got the app and started seeing, you know, all the, I'm like, don't subscribe to too many. I subscribe to a lot of them and you can use mine.
+
+[00:28:44] Brian Morrissey: Yeah, well, 
+
+[00:28:45] Troy Young: The subscription thing. is out of control in this house. Out of control.
+
+[00:28:49] Brian Morrissey: You should, you should give it back. 
+
+[00:28:51] Troy Young: That's why I got to cancel rebooting. It's like, it's too much.
+
+[00:28:54] Brian Morrissey: God. Casey Newton had his like four year anniversary. I have my actually four years coming up, next week. It's been four years 
+
+[00:29:01] Troy Young: Wow. Time flies. 
+
+[00:29:03] Brian Morrissey: I know. So I'm going to do a, a subscription offer. So you can renew at like a 20%, discount.
+
+I don't do, I don't discount a lot. but for a week, you'll be able to get 20 percent off. but I think what Casey was saying, which was kind of interesting is, he left sub stack over the Nazis and, You know, he was very honest about the tradeoffs to that.
+
+And, you know what he found is basically people don't convert as much on, on these other, you know, whether you just have a member full or I don't know exactly what, what setup he's on. I think he's on ghost. but a lot of it is just like, they've got the credit card. On there, and that's going to be their lock in.
+
+They're going to have incrementally.
+
+It's so much easier to just add an extra one to to the account. look, ultimately, everyone I say to everyone who asked me about ghost versus sub stack versus be high or whatever. You have to make a decision if you're going to build a business on a platform or if you're going to build a platform around a business, right?
+
+Because you can do, you can take the latter half, you have more independence, you have You know, Substack is a platform through and through now, same as YouTube, et cetera, you're going to be at, I don't care about the niceties that they're saying, they've got a ton of money from Andreessen that they have to return, and you're going to be at their mercy.
+
+There's a lot of upsides, but there's absolutely downsides if you want to take a truly independent path, but I think those are the binary decisions people have to make. And most people, it, it makes 98 percent of the cases. I think it makes sense to be on Substack or Beehive or one of these platforms. rather than build a whole website.
+
+I saw 
+
+[00:30:42] Troy Young: Well, that, that that relates to that question that you had from a reader, which is like, how do you prioritize what you do as a media company?
+
+[00:30:50] Brian Morrissey: yeah, because this was, I'll redact, the, the, the publication and ask, them. but what they were saying was that. You know, it's a lament you hear from a lot of people in publishing. They're like, we're doing like 14 different things now to make money. And then we're also trying to focus. It's like something has to give and you can't be good at everything.
+
+And, you know, they were like, of course, we're not doing, you know, five of these things well at all, but we kind of have to do all of these things. And, oh, by the way, the organization can't add resources to do these things. And that's why I think the AI for efficiency is just like inevitable. And every publisher has to figure out how, you know, the, the doing more with less, it's just, it's obvious, right?
+
+and so you have to figure out how to get leverage in these models. But I think that's a difficult one to square is how do you figure out, you know, where you're going to win without putting too many, you want to have enough bets, But you can't have too many bets.
+
+[00:31:57] Troy Young: Right. And then, you know, adding to that complexity, almost every publishing business, save for. The sort of new upstarts find themselves with a foot in the past and a foot in the future. It's just the nature of it.
+
+[00:32:10] Brian Morrissey: Yeah. That's why I think this is a 
+
+[00:32:11] Troy Young: we still publish a magazine and now we also do digital, but digital, we, and we can't stop doing digital, but we have to do social and we not only have to do social, but we have to do video and wait, now we have to do AI and we have to do newsletters and, oh yeah, we have to do affiliate or we're not going to be able to pay the bills.
+
+there's sprawl. It's a really good question.
+
+you know, I mean, it starts with obviously like courage, but you gotta, you gotta look at the kind of Meg meta environment or the kind of big picture environment and say what's above the line and what's below the line. Where can we possibly differentiate, create uniqueness, create value over the longterm against a media brand.
+
+And where can't we, how do we be ruthlessly efficient? And in all in media, there's no longterm. There, there just isn't. So anything that's like new initiative has to get to revenue, you know, pretty, pretty fucking quickly. Or, you know, it's never like, it's not like you're going to build a new wallpaper app, or maybe you will, but if you're in media, but you know, you likely aren't going to. And, so you're, you're going to be, you know, stuck in that, you know, In that kind of short term mindset, just by necessity in the nature of the business, I think,
+
+[00:33:29] Brian Morrissey: I mean, I was talking with another, like a lifestyle publisher, you know, we're talking about their tick tock strategy, quote unquote. I have no idea why they were there. they're like, you know, we, we have to be there. We feel like we have to be there. And it's it's completely all about, you know, individuals, not like brands, but we have to be there.
+
+and I think that is the, I don't know if that's a relic of the past, but that's a really difficult position to be in. at a time of, of obviously scarce resources and the need to focus on what's working and leave aside the stuff that's not working. By the way, also, you know, being forward looking and trying to be innovative and all the rest of that.
+
+It's just a really difficult, it's difficult to operate, I feel like. And like you're saying, there's so many advantages to having a blank sheet in, in these kinds of, times. I mean, we saw it with the transition to the internet, um, 
+
+[00:34:24] Troy Young: of like the folks that have the blank sheet can get really good at one medium. And from there create, I mean, I think that's probably one of the most important answers. It's tough when you got to pay bills and you feel like you've got to have your fingers in everything, but. Really, we're in the sort of IP era of media, which means that your ability to distinguish yourself across platforms, and have something that's uniquely yours is everything. And so, you know, I mean, the all in guys did a podcast, that's it. They did a podcast 
+
+[00:35:00] Brian Morrissey: it's now a lot more. 
+
+[00:35:03] Troy Young: Well, it isn't, right? But it. kind of flew They didn't have to publish. They didn't have to make media every day. They didn't have to balance the needs of advertisers and subscribers. They made a podcast and then they were able to turn that into an event. 
+
+[00:35:16] Brian Morrissey: I mean, it's hard to tell with subscribers these days, but they've got 672, 000, subscribers on YouTube now, getting over a million views on, several of these videos, which is pretty, you know,
+
+[00:35:28] Troy Young: And getting real money for a ticket had to an event.
+
+[00:35:31] Brian Morrissey: yeah, so all credit to them, well done. it's funny, there was a bit of a throwback.
+
+yeah, I miss the days when, when publications would like sort of brag about their, their new redesign of their websites. I always liked those.
+
+[00:35:45] Troy Young: What the hell was that? What? We should care that TechCrunch got a new homepage?
+
+[00:35:51] Brian Morrissey: Yes, I mean, well, it was 
+
+[00:35:55] Troy Young: Not only that, it's got a menu that sticks at the top that
+
+[00:35:58] Brian Morrissey: I know, I know, Well, take it up with Dan. Code and Theory did it. Actually, it took two design chops, which is never a good sign. But,I believe Code and Theory was, it was definitely one of them. Um, 
+
+[00:36:08] Troy Young: the most important thing if you redesign your homepage is get the body copy right, so it's easy to read. And I'm not sure they got that right.
+
+[00:36:16] Brian Morrissey: Make the logo bigger and just make sure there's a sticky nav 
+
+[00:36:20] Troy Young: You know, Brian, I did this thing one
+
+[00:36:23] Brian Morrissey: Oh, by the way, they also clearly added the ads at the last minute, which is always a pet peeve of mine of design.
+
+[00:36:29] Troy Young: Anyway, we're cheering for them. I mean, God, that brand's lasted forever. And
+
+it's remained, you know, after Arrington, it kind of went on to live its own life. And it's still important. And, you know, God bless them. It's owned by Yahoo. And I'm cheering for Yahoo. So go.
+
+[00:36:47] Brian Morrissey: yeah, I mean, it's an original web to survivor media brand. I mean, Mashable that got sent off to the factory, uh, the glue factory. 
+
+[00:36:59] Troy Young: Mashable's owned by Ziff Davis, right? You want to call Viv X shop a glue factory? You won't like that.
+
+[00:37:04] Brian Morrissey: I'm calling, I mean, look, I don't know. I have not been to Mashable in a little while. It's a little bit different than, than, than where it started. Right. I mean, it's, it's it's 
+
+a 
+
+long ways from the the the Pete, the Pete Cashmore days, of Grumpy Cat, at South by Southwest. but they've basically faded from, look, there's, 
+
+every, every, every brand, every person goes onto a different phase of, their existence.
+
+[00:37:29] Troy Young: I once did this sort of naive exploration into why people read or watch content and I wanted to break it down into the buckets, you know, as a sort of helpful guide to think about what actually motivates someone to, to watch. Do anything to watch content and we know the basics, right? Like we know, cause this will lead to a news item of the day that I think is actually
+
+important and interesting. And you know, we know the basics, like your passions are addictive, right? Like the question was what makes content addictive?
+
+Like if I'm looking for a car or a, you know, a pair of speakers or whatever, like I go deep, I go hard, I'm very motivated, whatever.
+
+If I'm interested in a topic, you know, whatever AI, I go hard at it. So that, you know, passions, interests, there's vertical categories, super addictive, right? The new, remember Robbie Myers from Elle magazine. I said like, Robbie, what makes content addictive? She said, it's the new, the latest,
+
+right? The thing that nobody had seen before.
+
+I thought it was a great answer. and then I, you know, I kept sort of investigating and, and there's like FOMO is a great one, right? That's addictive, right? Or, I think that there's, you know, sort of the car crash allure, right? Which is like the misery of others
+
+is a very addictive, you know, that's the daily get to the mother, the daily, the daily meat, the daily, the source of daily mail thing, right? And then ultimately social media taught us that really the most addictive thing is you. You and your network, right? So it became like content about the people, you know, and about you are, you know, people are, are, interested in their own little world and themselves in particular. So the answer probably more than anything else is what makes content addictive is you. Like the, and so back to the headlines at the bottom of meta, after they did the, the, the AR VR demo day, they said that they were going to start inserting, AI content into your feed a test basis. And they were careful to say it was a test, in Instagram. Now, what that means is you could be scrolling Instagram and you could see a generative photograph of Brian Morrissey jumping out of a birthday cake or wearing a pumpkin costume or whatever, like taking your friends, your network, your image and automatically creating content around that that's synthetic and pushing it back into you in the feed.
+
+I mean, how dystopian
+
+[00:40:06] Brian Morrissey: Gross. 
+
+[00:40:07] Troy Young: it's like
+
+[00:40:08] Brian Morrissey: Kevin Systrom is on a yacht somewhere in the Mediterranean just like sick to his stomach.
+
+[00:40:13] Troy Young: well, now my Instagram feed is going to get filled before, before someone outside of Meta generates content and tries to jam it into the feed with robots. Meta is going to do it for you and they're going to have more data than anyone else. And they're going to like, You know, make you even more irresistible, put
+
+you in a speedo in the Mediterranean and put 
+
+[00:40:37] Brian Morrissey: me with the speedo. But like, this is a good example of how everything moves on to a different phase of life. I mean, this is a more positive sort of phase, you know. They, they started Instagram to celebrate like photography and there was a big art feel everyone can be like creative with the lenses and whatnot.
+
+And, you know, they, they did a tremendous job at that. I mean, when they started advertising, system would like approve every ad and now it's on to a different phase of its existence and 
+
+[00:41:11] Troy Young: Well, it it also, if you want to look this up, there's a guy that was an engineer at Metta that in the last couple of weeks has released something called social AI, which is basically shows a social, a synthetic social interface to AI, which is imagine Twitter. But everybody that responds to your tweets is a robot. So you set it up and you say, I want to be followed and commented on by people of, you know, this kind of predisposition or whatever, like angry people, cynical people, nice people, helpful people. And it's all of these sort of different characters. And you tweet away. And they respond to you and you get into conversation with a synthetic social network.
+
+It's called social AI. And his point is, is this is sort of what the world's becoming. And this is just a different interface to AI where a lot of different points of view, because the, one of the knocks on AI in particular is there's one answer. You ask, chat, GPT gives you one answer. And so this is the idea is that you can get different perspectives and you can engage in conversation back and forth, even if they're all Automated and, uh, 
+
+[00:42:22] Brian Morrissey: they're synthetic. They're 
+
+not automated, right?
+
+[00:42:25] Troy Young: anyway, that there's a, it's a freaky world, dude. And, um, that's where we are.
+
+[00:42:30] Brian Morrissey: freaky world, dude. That could be a good title for this episode. yeah, no, I think that's, that's absolutely coming. I don't know if people want that, but we will see. It's, it's up to the people, you to decide whether you want these kind of this synthetic life. Um, I guess it's going to be appealing to some.
+
+it 
+
+[00:42:50] Troy Young: you got a, got a good product.
+
+[00:42:52] Brian Morrissey: I thought it was gonna be bullshitting.
+
+[00:42:54] Troy Young: I mean, that's what I got this week, but I didn't know that you were going to give it away without the, without the big, uh,
+
+
+[00:43:04] Good Product
+---
+
+​
+
+[00:43:06] Troy Young: Two little stories. One is this kid called me one time and he told me he was going to do a media rollup and that he was raising capital and he could bring together in a kind of recurrent type way, a bunch of different media properties and get the economies and
+
+[00:43:20] Brian Morrissey: Is it Brian Goldberg?
+
+[00:43:21] Troy Young: No. And I said, you're full of shit. You don't know what you're talking about. But what I didn't do is I wasn't my usual, like I wasn't dismissive as much as I could be when I was a, when I was a, lesser person. And,and I got to know the, the person and I, and I, I still call, say this to him to this day that he was like an extremely good bullshitter. And I actually invested in his company after that. And it's been a great, relationship. So I'm, I'm
+
+[00:43:48] Brian Morrissey: So define a bullshit to 
+
+[00:43:50] Troy Young: Well, but, but, but this isn't the story. I'll get to the bullshitter part. One of my favorite bullshitters, and one that I admire actually, and I think that his bullshitting is borderline manifesting, is Shane Smith. And, This week, I mean, I, I listened to it today, it was delightful to hear Shane go on for two hours and tell his story to Rick Rubin on the Tetragrammaton podcast.
+
+[00:44:16] Brian Morrissey: Oh my God. There's, there's a two hour podcast of Sean, of, of Shane Smith and Rick 
+
+[00:44:21] Troy Young: yeah. And so I've heard many of the stories over the years, like having dinner with Shane or chit chat with Shane or whatever. And I think he's, A remarkable person who's had, if life is defined by experiences, he's had a lot of them. and like some of them are, are really amazing. And I'm kind of jealous, like going to North Korea. is, an amazing thing to do. And I remember Shane and Vice Media, because I worked at the Montreal Mirror. Vice media was across the street from us. It used to be called the voice of Montreal. They dropped the O and it just became vice. And it was like funded by like the, the. I don't know, the government, they took grants or whatever. And they, they were just crazy, nutty punk rock kids. And they built this great thing. And along the way they invented or iterated on a type of journalism. They, became the envy of the industry. They bought a cable network. They built. They made a lot, they won a lot of Emmys. They made a lot of great content
+
+and they, they, they, they fucked it all up and got eaten by private equity.
+
+And, you know, did all the other
+
+[00:45:31] Brian Morrissey: Yeah, it's a perfect millennial story. 
+
+[00:45:34] Troy Young: It's a 
+
+great story. It's a great story. And I admire him. So much because along the way he used his great skills of bullshitting to manifest a company and to sell a lot of advertising and to get a lot of people to believe a lot of really smart people to believe. 
+
+[00:45:49] Brian Morrissey: He got Rupert Murdoch to come to Williamsburg.
+
+[00:45:52] Troy Young: got Bob Iger do a group to believe, you know, I mean, he, he's. An incredible guy
+
+[00:45:57] Brian Morrissey: So, but what goes, what makes someone a good bullshitter? I guess that's my 
+
+point. I guess, 
+
+That 
+
+[00:46:03] Troy Young: uh, 
+
+optimism, being able to think in the moment to dance. you know, creativity and imagination and the realization that truth isn't an objective thing. And truth is
+
+necessarily backward looking.
+
+[00:46:19] Brian Morrissey: You know what I think it is? I think it's just recognizing that, that I'm stealing this a little bit from Jeff Bezos, but that people are not truth seeking animals. They don't want the truth. Really. I mean, they want, they want confidence. They want you to tell them. Like, I think that's what I've learned with like a little bit 
+
+because bullshitting is part of sales.
+
+I will 
+
+[00:46:39] Troy Young: I don't know, like, it's like the channel five thing that really is a, certainly, you know, is in the, is a, is a legacy media brand from, you know, the, the ground that, Vice tilt for sure on YouTube channel five, that Andrew guy. but like Shane makes the point that there was a time in kind of traditional structured media distribution control where someone would be, you know, posted to. Iran and would stay in their hotel room and would report back to the anchor and the anchor would read it. And that was the truth. Right. And they went in to Afghanistan and they like, this is the vice kids. And they turned on
+
+the camera and they, you know, started recording a different version of the world. And that, that, you know, Now we don't really quite know who to believe
+
+and like last night on the debate I would say and now I'm getting I'm all over the place, but like Vance is an extraordinary bullshitter He's a way. He's a better bullshitter than walls is
+
+and and and so, you know bullshitters are You know are are valuable
+
+[00:47:48] Brian Morrissey: Well, Trump's a classic bullshitter. 
+
+[00:47:52] Troy Young: So anyway, I didn't think good product bullshitter. It's not a bad one. I mean, I've had better. I had a really good apple today. I really, I'm into apples right now, but, um,
+
+[00:48:02] Brian Morrissey: I like the bullshitter one because I think it's, it is like, You know, like Adam Neumann is, he's back with WeWork, which just, 
+
+[00:48:09] Troy Young: grade a grade a bullshitter.
+
+[00:48:12] Brian Morrissey: a perfect bullshitter. He's, he's running the same playbook, which is hilarious because like, as we discussed, everyone has one playbook and they just keep running.
+
+Very few people have more than one playbook. And so he's just going to redo WeWork and the guy's still a great bullshitter.
+
+[00:48:26] Troy Young: I want to bullshit better. I want to be better at it. I'm sometimes I don't let myself bullshit. I used to do this thing where I would get bored at one of my great weaknesses is that I, I get bored talking to people and what it means is I can be seen as less than sort of. Like I can, I move around, I can just like, you know, I, I, I go kind of discontinuous and I, I've been at parties with, with my wife and once she's caught me a couple of times doing it where, someone comes up to you in, in a very American fashion, they're like, what do you do?
+
+And I, and I would be like, Oh my God. I would say, well, I'm an emergency room surgeon. Cause I think that would be a great job. And because it's just like, you're in it, right? Like it's, it's, it's kind of like. You know, like ultimate in intensity and my wife is up behind me. And she's like, well, what the, what the fuck are you doing? You're like, you told them you were an emergency room surgeon. I was like, I was just playing around. And, and so she, she, she, um, shamed me. And, I, You know, I moved on, but you know, that's just lying. That's not that, I guess that's,
+
+[00:49:32] Brian Morrissey: Well, I think that's what, so I think bullshitting Because of Theranos and a lot of other things, and Madoff even, it got like tied up into fraud, and I think bullshitting is
+
+[00:49:47] Troy Young: I wasn't about to cut someone open, Brian, but, you know, in this case, I was just kind of being playful.
+
+[00:49:53] Brian Morrissey: I mean people like bullshitters. 
+
+You know, 
+
+[00:49:56] Troy Young: they're fun. 
+
+[00:49:57] Brian Morrissey: and I think I'm reading this book, that was recommended by another PVA listener, the Gio Moses, why Buddhism is true.
+
+[00:50:06] Troy Young: She texted me this week. I love Lucia. She's a nice 
+
+[00:50:09] Brian Morrissey: Yeah. About how we create all these like illusions, in our minds. And that was kind of the, the part about Buddhism that I found was kind of interesting, but I think bullshitting is kind of similar. It's we kind of want the illusion to some degree.
+
+[00:50:22] Troy Young: People like you, I, I would have, you know, I, I, I'm not very good at it. 
+
+[00:50:26] Brian Morrissey: You think 
+
+[00:50:27] Troy Young: you're, No, not at all.
+
+[00:50:29] Brian Morrissey: I know.
+
+[00:50:30] Troy Young: No, I mean instead of building up this incredible media company that you've created you talk about webinars Like that's the opposite of bullshit, you know, like 
+
+[00:50:38] Brian Morrissey: nagging. It's like self nagging. It's a, it's a strategy.
+
+[00:50:42] Troy Young: right
+
+
+[00:50:45] Outro
+---
+
+[00:50:45] Brian Morrissey: All right.
+
+I'm bummed, Alex. Is he, is he doing like a, like an Austrian goodbye? I appreciate that he's busy with 
+
+[00:50:52] Troy Young: What you need to realize about Alex is that he when you add a lot of complexity to his schedule. he just, he's like, I'm out.
+
+[00:51:00] Brian Morrissey: Yeah, me too. 
+
+[00:51:03] Troy Young: gotta go, I gotta dinner. talk to you later.
+
+[00:51:04] Brian Morrissey: Dinner? It's like 4. 30. Alright, 
+
+see 
+
+ya. 
+
+[00:51:07] Troy Young: someone. 
+
+​
+
+
+

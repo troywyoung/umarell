@@ -1,0 +1,501 @@
+PvA S3E131 P1
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Troy: Do you like my sweatshirt?
+
+[00:00:02] Alex: I think you should turn off the blur. That's what I think.
+
+[00:00:06] Troy: Alex. I never wanted to be a video star. I never even
+
+[00:00:10] Alex: here you are. Yet here you are.
+
+[00:00:12] Brian: uh, the reluctant podcaster that that's wasn't that Alex's role.
+
+[00:00:16] Troy: I'm happy to do a podcast. I just don't want to be like a YouTube character. Like I, it is not my jam.
+
+[00:00:22] Alex: I don't wanna wear pants, but here we are. 
+
+[00:00:24] Brian: Perfect analogy.
+
+[00:00:26] Alex: Exactly. 
+
+[00:00:28] Troy: you got a sermon to give Brian?
+
+[00:00:30] Brian: Well, uh, I do actually. 
+
+​
+
+
+[00:00:55] Welcome
+---
+
+[00:00:55] Brian: Welcome to people versus Algorithms. I'm Brian Morrisey, joined by Troy Young with a blur on his camera.
+
+Troy, you got a Zi in, you're ready to go.
+
+[00:01:05] Troy: Ready to go.
+
+[00:01:06] Brian: I saw a guy in an airport earlier today, earlier today, yesterday, who, he was wearing shorts in Detroit and like a backwards baseball cap. And I was thinking, that's the Zis guy. And sure enough, he, he popped one in.so that was fun. And Alex Schleifer.
+
+Alex, welcome. I.
+
+[00:01:24] Alex: Glad to be here.
+
+
+[00:01:26] Ode to Zins
+---
+
+[00:01:26] Troy: a sec? Can we talk about it? Did you wanna start with a
+
+[00:01:28] Alex: That's all you want to talk about. Why not?
+
+[00:01:30] Brian: What Zens
+
+[00:01:31] Troy: well, I bought, I, I just wanted to try, I'm looking for the perfect Zen and there's European zis and there's American zens. The American ones are much better, in my opinion. Some of them are like wet and they're, they're not nice.
+
+So I tried this, this, new product called, athletic, just like an athletic nicotine sin.
+
+[00:01:52] Brian: Athletic,
+
+[00:01:53] Troy: I've got it,
+
+[00:01:54] Alex: That's like the athletic greens of nicotine addiction.
+
+[00:01:57] Troy: multiple flavor. And you can see why it would appeal to someone that you're having a product that's an athletic,
+
+[00:02:03] Brian: there's a non-alcoholic beer caught athletic too is that's not
+
+[00:02:06] Troy: so their slogan, their, their line is taste, victory. It's just kind of catchy.
+
+And I think they have, they actually had Rick Rubin and Joe Rogan on their website. I don't know if they're official sponsors, they, they're, it's notable because they have a 1.5, which is very light, and they have a no taste one like I do threes, but you can go up to like nines, like nines are like crazy, crazy.
+
+Threes are nice. 1.5 light, little buzz. Anyway. they suck. They're no good. I, and I don't mean, you know, good luck to the people that are making them, but the thing is that the packets that enclosed the, the, the, the beautiful powdery nicotine on the zens cannot have not been, you know, beaten. And these are the best.
+
+[00:02:54] Alex: And this is the content you guys come here for. This was our nicotine patch review corner, so don't buy athletic.
+
+[00:03:03] Troy: I've struggled with nicotine addiction for a long time, and it, it 
+
+[00:03:06] Alex: Oh. 
+
+make me feel good about myself. I, I,Me both buddy.
+
+[00:03:10] Troy: if
+
+[00:03:11] Alex: and me both.
+
+[00:03:11] Troy: you, you know that, I, as a, as a boy, I like cigarettes as I got, I'm like Obama, I like a cigarette. And then I went into the gum phase and I had gum, but there was gum everywhere in my house.
+
+Underneath every surface there was, Jill used to yell at me about gum everywhere. Then I started hitting the
+
+[00:03:30] Alex: I think we lost like a third of our audience just now, but keep going.
+
+[00:03:33] Troy: the, but the mince, the mince were nice, but I got so addicted to the mince. I was doing like a, like, at least a bundle of mince a day. And the whole problem was, is that I kept, like, when I would go to Europe or when I would like, you know, be like a quiet moment away from the house, I might sneak a cigarette here or there.
+
+So I was always trapped in this addictive cycle. And these keep me there, but they prevent me from smoking. The thing is, is that I just need to cut the nicotine habit 'cause it's a 30 year habit. But, it brings out the best in me, as you've seen in this podcast.
+
+[00:04:05] Brian: Yeah. Well, it's worth it, Troy. good luck with your addiction, but for now at least it's given you some leverage on the podcast. YouTuber front. 
+
+
+[00:04:15] Tech's Alternative Media Playbook
+---
+
+[00:04:15] Brian: I wanna start by talking about something that I wrote about in the newsletter. I'm trying to, in my newsletter, I'm trying to link the two a little bit more.
+
+it was kind of about how tech is creating this alternative media ecosystem. Slowly but surely it's putting together the pieces. And, we had talked about this TBPN, the Technology Brothers Programming Network. and I think it represents something important to where the media business is going, particularly in tech because as we know, everything is downstream of tech.
+
+but it's a live streamed three hour YouTube show hosted by entrepreneurs John Coogan and Jordy Hayes Coogan was a co-founder of Soylent, and apparently he was in on some nicotine gum product.
+
+[00:04:57] Troy: Loosies. He did
+
+[00:04:59] Brian: Lucy, do you know them?
+
+[00:05:00] Troy: Yeah, yeah, yeah.
+
+[00:05:01] Brian: What are they? Good?
+
+[00:05:02] Troy: No, it's people putting a brand on a product that's inferior.
+
+[00:05:07] Brian: Oh my God, nobody would ever do that. Never, not in DTC. That would be crazy. Anyway, TVPN is, it's a fast growing, it's, it's nicely produced. I think, I see it mostly all over X, which is my addiction. I don't have a nicotine addiction. I have, I have an X addiction. 
+
+[00:05:23] Alex: You still have that, it's probably worse for you than nicotine
+
+actually. I'm blowing past. I'm like, don't remind me until tomorrow.
+
+[00:05:31] Brian: I'm fine for today. I can quit 
+
+anytime I want. 
+
+[00:05:33] Troy: those dudes are handsome too.
+
+[00:05:35] Brian: Yeah, they're handsome. And they also have it, it has all the trappings of CNBC. It has a running ticker, it has multiple tickers. It has like three tickers. It has tech, it has all these tech sponsors. they have, they do this three panel sort of shot where the guest is like in the middle.
+
+And then the two dudes who are handsome are on the sides. And anytime I see it on XI know I. It's the technology brothers, and I don't know, it's being shoved down my throat or I'm just finding it. and they have all these, you know, entrepreneur guests and, and whatnot. And I thought about it, it's kind of in many ways the what all in used to be, it was before it veered into, its Manosphere lane.
+
+but TBPN, like they have, they basically are the tech world's version of CNBC. And it's like a place where you're not gonna get like hard hitting like interviews or adversarial quote unquote journalism. I mean, in fact, Coogan was in EIR at Founders Fund. Okay. And Founders Fund has, they've already spun out pirate wires, which is another element of this.
+
+Okay. And then I was looking at other sponsors 'cause I was, wow, you got a lot of sponsors and like half of them are founders fund portfolio companies. So this is a great model. Right. Like, and I think that 
+
+it's part, 
+
+[00:07:00] Troy: your conspiratorial juices flowing.
+
+[00:07:03] Brian: it's not, it's not a conspiracy. I am, I am, I have taken over a room in my house to like, you know, take over the wall.
+
+[00:07:10] Troy: it's a media conspiracy. What you can see is in the product is because they started with sponsors. They made room for sponsors in the interface. You can see them all over the, the top one is ramp,
+
+[00:07:21] Brian: Yeah. It's like a nascar. I love it.
+
+No, we, I, that's, that's my goal. I want to have
+
+[00:07:27] Troy: But that skill, Brian. 
+
+[00:07:28] Brian: company sweatshirt.
+
+I wrote about them and then he like followed me on X. So I think like he's, it, it
+
+[00:07:34] Alex: you're even more addicted. it's crazy that I hadn't heard, heard about it. I, it's the first time I hear, heard about it was when you guys discussed it as a, as a topic. But yeah, I, it's funny that the, the format is very CNBC and it maybe shows that, you know, like there's still some valid formats out there.
+
+You just need to change the cost structure and simplify everything. And it, it can build a, you can build a beautiful media business. It's not
+
+[00:07:58] Brian: Well, well, here's the thing, Alex, you don't only change the cross structure, you change the entire business model. Necess, like, so this is one of them, but there's a lot of these outlets because to me, this is a typical instance of an arbitrage opportunity. Media has a tremendous amount of influence. You know, the influence is high, but the market value is low, and it's never been lower.
+
+Really for, for media it's really difficult, to make money in media. I don't know if you know that, but traditional journalism is expensive. It's slow, it's constrained by institutional norms, you know, all this fact checking and nonsense, but still shapes, narratives, sets, agendas. It gives legitimacy. I mean, I think that Elon Musk buying X was actually a good investment.
+
+so I think that basically tech is looking at media in order to have a different type of business model. Now, Andreessen Horowitz is like really deeply involved in the, into the, into this go direct movement. Right. And I think this is the updated playbook. 'cause it says it's a media company that just monetizes through investing.
+
+Right. And I, I know a lot of people kind of use versions of that, but I think there's something there. I mean, just this week, Andreessen Aqua Hired, Eric 
+
+[00:09:16] Troy: What do you think of that homepage image? 
+
+[00:09:18] Brian: I, it's fine. I, I like it.
+
+[00:09:20] Alex: You're talking about the Andreesen side.
+
+[00:09:22] Troy: Yeah,
+
+[00:09:23] Alex: Yeah, it's got a
+
+big coin with, uh, is it,
+
+[00:09:25] Troy: that's American exceptionalism right there in a coin or some kind of golden,
+
+[00:09:30] Brian: it like a challenge coin? I'd like to have one of those.
+
+[00:09:32] Alex: yeah, it's maybe a, a, a shit coin. but yeah. Sorry, you
+
+[00:09:36] Troy: interrupt. We interrupted your long narrative
+
+[00:09:38] Alex: I'm trying
+
+[00:09:39] Brian: Try I let you do here. I thought you said you wanted us to prepare. I prepare a little whole like 
+
+[00:09:45] Troy: it. I'm taking it in, man. I made notes. Go.
+
+[00:09:48] Alex: Yeah. it's fucking bullshit.
+
+After breaking your flow, let this guy cook. He was just, he just, 
+
+[00:09:53] Troy: Yeah, he's cooking. 
+
+[00:09:54] Brian: anyway, I think like, you know, all in showed the way with this because, you know, they, they monetize completely differently than regular media. And you, you see this in the tech, tech media space. They kind of gave up on the journalistic side of media.
+
+You know, they used to spend a lot of time working the refs. Nick Denton was on here, few weeks ago, and he talked about how Mark Andreessen and, and Musk and the others were sending him notes and trying to get him to like, write about this or write about that. And that was the old way of doing things.
+
+Now it's like we're gonna create our own media, which, you know, Andreessen does. And now with Turpentine, they'll, they'll control more media, but a lot of times it's using that sort of soft power. They're backing other kinds of media. There's friendly media. The incentives are out there. If you're on Substack or in a podcast and you know you're friendly enough, you're gonna get the right guests.
+
+And Mark Andreessen, you know, pops up a lot. He'll, he'll promote it and he'll get a lot of people there. It's not exactly a new thing, but I think that there are building a really interesting ecosystem, and it's no surprise that the two totems of this are Andreessen Horowitz and Founders Fund, from Peter Thiel.
+
+Those are my, that's my conspiratorial. I don't think it's conspiracy, I
+
+think it's just out in the open.
+
+[00:11:16] Alex: if you take a step back though, isn't it just that, it's just becoming infrastructure, you know, like every company has become a tech company or needs to be a tech company. Right? and that every company today needs to also be a media company. And media is just infrastructure.
+
+As part of building a, a, a, a, a solid company. It gives you influence, it gives you reach, it gives you access to, to your customer base. It is 100% what, you know, 50% of our time in our studio is developing media because we want to own the audience. And we think that by the time we release the game, having an audience is going to be very valuable.
+
+but the fact that they're doing it the way they are being in, in an industry like kind of VC and tech, which is about back scratching and that they're using that playbook, is also not surprising. You know, but they're good at it too. Right.
+
+[00:12:06] Brian: Yeah, I mean, I think, like from what I've like heard, you know, having, having like a video studio as part of like your setup, in, at tech companies or VC is just the regular, regular thing. And the fact is, despite the camera troubles that Troy has and, and I do, it's never been more accessible than ever, to do this.
+
+And it's not like they're, they're lacking money and you can buy distribution in lots of places. And, I think what's interesting is it presents, it takes on a lot of the conventions of. Sort of traditional media. Like if you look at the TBPN, it looks like a regular, you know, cable news program. Right.
+
+And I'm not saying, look, the, the content itself is, is pretty good from what I see. You know, I haven't watched any three hours of it, but I have seen plenty of clips in it. And I think that there's a place for this. I think it's just really difficult. It, it's, it's yet another participant in this marketplace and you know, it, it's got a, what do they call in Silicon Valley, an orthogonal strategy to it.
+
+[00:13:14] Alex: Hmm. But I, I mean, that's the thing, right? They, they have an orthogonal strategy. Their cost structure is completely different. They record like a ton of, so, you know, they just sit down and start recording video. There's always news. They, they have a, a system of bringing people on that are, friendly, right?
+
+And it becomes kind of, and everybody's got different media companies. So you do kind of that audience capture of bringing people to your podcast. And then what they have very likely is a group of editors that go in and slice up stuff into little soundbites that addicts like, you get to like, just like gobble up on Twitter.
+
+It's a great, it's a great strategy. I think. I think they're doing a great job. Like I kind of wanna watch it now. I find it, I find all the tickers and everything really mesmerizing. I mean, it's very maximalist. What do you think of the design, Troy?
+
+[00:14:01] Brian: It's definitely that.
+
+[00:14:02] Troy: well, it looks a little like the Onion News Network, but the, it's the green maybe, 
+
+[00:14:08] Alex: I
+
+mean, it could be an onion news network thing. tech bros. Channel 24 7 Tech bros. Just talking about themselves.
+
+[00:14:14] Brian: Well, they're, they're owning the tech bros thing, which is fun.
+
+[00:14:17] Troy: yeah, they're owning that. I like that. a few observations I would have just while you were talking, Brian. One is they have this skill today. They talked about Kevin Strom complaining about in court about, Zuckerberg starving Instagram of, financial resources early on, a post-acquisition as sort of testimony to the fact that he was buying a competitor.
+
+They talked about that for like half an hour. I just talked about it. That's it. There's not a lot to talk about. And so I think that's a great skill. They do that on, obviously they do that on M-S-N-B-C, on CNBC, on CNN, just people bullshitting endlessly. This, this kind of skill to just talk, talk, talk.
+
+Which yeah, do that. I saw, I talked for two and a half hours yesterday.
+
+yeah.
+
+[00:15:07] Alex: we
+
+[00:15:08] Troy: blah, blah, blah. I 
+
+[00:15:10] Alex: blah. 
+
+[00:15:10] Brian: ever do that? Two and a half hours straight
+
+[00:15:12] Troy: no, so, so they Troy. Troy, do you ever like sit down and pontificate for a long amount of time? Just going
+
+I mean, I've been known to try to talk things You just, you just started this podcast by talking about Zen for 15 minutes.
+
+yeah. The other thing is, is that people are building media businesses on Twitter. I think they're probably the biggest distribution for these guys is clips on Twitter. Right. And, and now their, their ad product is built into the video stream. It travels on Twitter. Like Twitter. Twitter is, is back. They just traded the audience out.
+
+And, you know, kids love Twitter. it's the only place, it is really the only meaningful text-based social network. everybody that counted it out was 
+
+[00:15:54] Alex: That's crazy. You're
+
+[00:15:55] Troy: It you, you were wrong. All of the libs were wrong.
+
+[00:15:59] Alex: insane. This is, this is like, this is the moment everyone listening to the podcast. This is the moment we turn all in and next election cycle, Troy is. Has some sort of like Twitter czar status. What are you talking about? Twitter
+
+[00:16:13] Troy: People release news on Twitter. The government uses Twitter. The tech bureaus use Twitter. Like pe My kids use Twitter, pe people like Twitter People Act. Brian loves Twitter. I actually
+
+[00:16:25] Brian: I hate it. I, I'm addicted to
+
+[00:16:27] Troy: It doesn't matter. It doesn't matter. Brian uses Twitter and regrets it, but he uses it
+
+[00:16:33] Brian: called x. I, I don't think Twitter is, I don't think Twitter is dead. I'm, no, I refuse to call it XI don't, I don't think Twitter is dead. I think it's, it's, it's probably doing fine, but there is more, there are more options today than ever and every one of these guys on every single network. Twitter definitely has its pockets of like, especially people who have built
+
+[00:16:54] Troy: Twitter is still massively influential. There's always gonna be, you
+
+[00:16:58] Alex: Traffic was down and, and,but, but I would say like for these guys, like. 
+
+This is, this is, this is not a Twitter success story. This is like a YouTube success story. This stuff is like this stuff. YouTube is so huge. It's the everything network, all these shorts and everything like that that are happening on 
+
+[00:17:17] Troy: I, I agree that that YouTube's big part of the formula, but distribution on Twitter is really important. If you look, look, look at, look at the number of subscribers
+
+[00:17:25] Alex: a, it's a part of it. It's a part of
+
+[00:17:27] Troy: Hey buddy, why don't you do this? They've got 5,000 subscribers on, on, YouTube, it's nothing. Now go pop over to X and look at the brothers.
+
+[00:17:38] Brian: the technology brothers,
+
+[00:17:39] Troy: Yeah. Are they actually brothers?
+
+[00:17:41] Brian: no.
+
+[00:17:41] Alex: No,
+
+[00:17:42] Brian: You know, brothers. 
+
+[00:17:44] Alex: they have 50,000 'em next.
+
+[00:17:46] Brian: Brothers. Like with a, with an 
+
+[00:17:48] Troy: So, so, so they have 10, 10 times the distribution on
+
+[00:17:51] Alex: But look, let's look at some tweets. Let's look at some tweets like. Like you, you're talking out of your ass. This got like seven re this is
+
+like two hours, 
+
+[00:18:01] Troy: as Brian would say,
+
+[00:18:03] Alex: but, but it's like they've got 20, they've got 20 retweets for something they posted 18 hours ago. I don't know what their distribution is, but
+
+[00:18:12] Troy: Hey, hey Alex. I'm not talking outta my ass. They have 58 people watching it on YouTube right now.
+
+[00:18:19] Alex: it maybe we're just talking about something that nobody's watching.
+
+[00:18:22] Troy: Yeah.
+
+[00:18:22] Brian: It could be. It could be. But like, here's the thing, it's like they are getting like the, they are getting like real guests on here and it is, I think, look, you can buy distribution like, right? Like I think in some ways I. Carlos Watson was, was on to something like, you know, he was creating, he was creating, he was just ahead of his time with, you know,
+
+the media entity that he 
+
+[00:18:47] Alex: these, I mean, so this is, this is a great topic actually. 
+
+[00:18:50] Troy: This is good. 
+
+[00:18:51] Alex: tech has a group of successful people. Right? I don't think, I don't think CEOs and founders outside of tech has have ever had the status of being celebrities, but we know for a fact that bringing on some of these, CEOs on your podcast will make your Zuckerberg happening, appearing on your podcast.
+
+Brian, Chesky, my old boss appearing on a podcast. It brings an audience with it because all of these guys are huge 
+
+[00:19:15] Troy: Maybe we can get 'em on our podcast
+
+[00:19:17] Alex: Well, you know, I haven't been trying not to use like my, you 
+
+[00:19:21] Troy: Yeah. No, 
+
+[00:19:22] Alex: people out. Maybe I should.
+
+Maybe I should. 
+
+Maybe I should,
+
+[00:19:25] Brian: that would be a terrible idea.
+
+[00:19:26] Troy: it's a
+
+[00:19:26] Alex: great model, like, you know.
+
+[00:19:28] Troy: but Alex, while you're at it though, it's interesting to look at the, at the distribution formula. 'cause there isn't a single video on YouTube that has more than 2000 views.
+
+Okay. So, so, so it's, it's pretty, pretty niche on YouTube. If you go here, they have 50,000 followers. I don't know what the reach is on a post, but it doesn't look like it's massive. They're doing, they're pretty aggressive on Instagram. Would you mind flipping over to Instagram
+
+[00:19:49] Alex: Yep. PN live on Instagram.
+
+[00:19:52] Brian: Look, it's very well produced. I guess. It's easy to do these
+
+[00:19:55] Troy: They
+
+have four 
+
+[00:19:56] Brian: Little too 
+
+close up.
+
+[00:19:57] Alex: They have 
+
+[00:19:58] Troy: no
+
+I What are we talking about here? Maybe we're TikTok.
+
+What?
+
+[00:20:03] Alex: You see this is like, it's, it's outsized influence because you're just bringing people on Dev. 2200 70,000 followers on TikTok. So this is something we should really look into.
+
+[00:20:14] Troy: how old is this brand? How long they been in
+
+[00:20:17] Brian: So they started doing it daily, I think, in January. Cogan just left Founders fun as 
+
+Z-E-I-E-I-R. But this is, so this is it. So you have very little of a footprint, right? This is what I'm talking about. Yeah. I don't wanna, they used to call it AstroTurf media, right? Where it's just becomes, it's just, you know, RT and whatnot.
+
+Like, you just like set up things that look like media, but actually is something else. I'm not saying that this is, you know, that, but it's kind of like this version where it looks completely like, you know, regular startup media, but no, it's not. This is, this was incubated out of a venture capital fund and so all of a sudden you, I look at all of those sponsors and I was like, oh my God.
+
+Wow. Like this is like, this is like a big thing.
+
+[00:21:03] Troy: The guy on the left though looks like he's gonna star on a show about a banker that becomes a serial killer.
+
+[00:21:11] Brian: I think that's the soy link guy.
+
+[00:21:12] Alex: It just like there's not even enough data on Google Trends to have them. This is it. I mean, I think it's a very, but here's the interesting thing. I think this is a very insular, kind of, group of people that can get each other on the podcast because the entire VC and tech industry is about this kind of back scratching
+
+[00:21:31] Brian: a lot of industries are about this and I guess I think about it a lot 'cause I was talking to like a
+
+[00:21:35] Alex: No other industry. No Brian, no Under industry has, a kind of, such a wide network of people with that footprint, with like clear success stories to talk about with like media savvyness and stuff. Like we're not seeing the petroleum com, petroleum industry do this. We're not seeing the car industry do this.
+
+We're not seeing any other industry do this. We're not even seeing the media industry do this. And you guys love to talk about yourselves. I 
+
+[00:21:59] Brian: That's 
+
+[00:21:59] Troy: Oh, that's true. Thank Guilty. Hey, Brian, I guess we're in the media industry. uh, the, the thing is, is that per just an observation, so this is a nascent. Media startup. Really nice idea unfolding in public. As I've said many times, everybody in media lies. Typically what you would do at this stage of the development of the company is talk about how big you are and grow into that, right?
+
+Except that you live on platforms, so everything is transparent, and you can see that there's not a tremendous amount of distribution across any of the channels. The thing is, is this format of two guys talking about Kevin's system for a half an hour is really boring. Like the, the, you know, transplanting the sort of CNBC format onto YouTube in a live thing with account, it, it's really hard to get audience and to kind of amass it into a kind of time and place.
+
+So you then rely on the editing and the cutting and the distribution across other, other channels, and hopefully that's how you kind of realize the potential of the brand. And it hasn't happened yet.
+
+[00:23:02] Brian: Well, I, I keep fine. It hasn't happened yet, but like, let's, let us remember Cheddar, okay? Just for a moment,
+
+let us remember. No Cheddar, cheddar sold for, let me get how
+
+much Cheddar sold for 
+
+million. Like John is the best salesperson in the world, next to his dad, who apparently is the best real estate salesperson in the history of Manhattan.
+
+do you know Cheddar? we must have talked about it before
+
+[00:23:27] Alex: I know Cheddar. I just, I, I Yeah, you probably saw it at the 
+
+[00:23:30] Troy: gas 
+
+[00:23:30] Alex: all those, I got 
+
+[00:23:31] Brian: That. Thank you. I was part of that. anyway, it was, it was basically trying to create this kind of cable news network for the distributed world. I mean, they didn't like start off on, on YouTube, which was probably a mistake. they just tried to go on all platforms, particularly Twitter. anyway, I think you're gonna see more of these kind of things because name's Cheddar.
+
+There's Cheddar. yeah, the logo for Cheddar is also Swiss too. That was also a tell, but it
+
+[00:23:56] Alex: But, but I wanna, I wanna call out like the, the format, you know, Troy was kind of blaming that, that format, the format does work. I mean, if you look at like, you know, political pundit slash gamer, destiny and Hassan and these types of guys, this is what they do. They sit at a computer and they just pontificate about like, whatever else they've got.
+
+Like, I mean, you know, they've got this kind of crazy chat going on and, you know, are different kinds of guys, Alex, that's a different kind of format really,
+
+is it though, I mean, are they not just trying to transplant that format of like, just like, talking it
+
+[00:24:34] Troy: me it's not something reminiscent of CNBC, which is a sort of news-based, talking heads thing. It's opinion. It's more like Rush Limbaugh. And I think that that kind of format works and it works as an audio product and, and then it, you know, people watch it, you know, either sort of half tuned in or not on, on YouTube.
+
+
+[00:24:53] Chaos Economy
+---
+
+[00:24:53] Brian: all right, let's leave it there. Let's move on to the chaos economy. Troy, this is your time to shine. tell us what you're seeing in the chaos economy.
+
+[00:25:00] Troy: Well, it was a really, you know, well, maybe I can combine good product into this, Brian, if you would. I mean, it was a beau, it was a beautiful day in Brooklyn,
+
+[00:25:08] Brian: Of course I've heard this like from like everyone in New York City. It's like, there's one good day and like you, you, you, a couple 
+
+[00:25:15] Troy: of 'em, Brian, and it's, you know, it's sort of, you know, God's country when it's a beautiful spring day and people are out getting pastries and 
+
+[00:25:23] Alex: It's never God's country. I'm sorry.
+
+[00:25:25] Troy: Okay. So maybe that was a little bit of a detour. I was walking around and I, you know, using, you know, I was on the internet and then I was on the street and I was thinking, you know, there's. An insane amount of innovation in this country. And there, you know, you were, you, you're sort of simultaneously trying to process this insane macro narrative, which is, you know, Trump is destroying the country.
+
+You know, tariffs are gonna suffocate, you know, companies large and small. all of which may be true by the way. and that, that, you know, we're heading for, for a cliff. And then you, you see on the other hand, just like this is like Hustle Nation, you know, like there is, there's something like you can, this is the most resilient country, you know, because under, and, and, and it just got me wondering like, are we approaching a kind of very new industrial sort of innovation structure where I.
+
+You know, it doesn't matter if Harvard isn't doing basic research. It doesn't matter if we've, you know, kind of, strangled, you know, Walmart's, you know, business in selling low-cost Chinese products to people, we will just kind of soldier on. And there's a really fundamentally new kind of ingredient in the economy, which is ai.
+
+And it's empowering people to, in a very kind of micro fashion, to kind of build, to create like, you know, all the, the theory that used to exist about corporations. Why do they exist? Because they, they're more efficient than markets in making decisions, in moving information. They internalized trust.
+
+Everything is in a negotiation. It made me wonder if, like, the fundamental structure of corporations isn't changing to a, you know, smaller, more nimble. Kind of entity empowered by technology and that the fundamental kind of modern reality of media, which is people and platforms, right? These great big platforms that allow you to create, distribute, kind of manufacture any type of media isn't coming to the rest of the economy where we can use all of this crazy technology at an individual or, you know, small group kinda level. 
+
+that we're, you know, kind of in a new period where we're just gonna see a, a new wave of, of growth and innovation powered in the most distributed way that will apply to kind of virtually every industry. And even though it feels completely chaotic out there, you have this kind of economy that lives inside of the chaos.
+
+This, that where people are, you know, kind of imp like everybody's kind of entrepreneurial and everybody has access to incredible tools and people are building new things. And, and so that, that's what I was wondering about. And you know, I'll leave it there and then I have a kind of related thing, but to me it started in media.
+
+We see it in retail, we see it in EDU education and, and are we gonna see it in industry where new types of factories kind of, you know. Provide AWS like capabilities to entrepreneurs that wanna make things that are powered by kind of machines and robotics. And, and I think that's the big fear right now is that that particular capability of atoms, of creating, you know, physical things has been lost in this country.
+
+And there's no kind of, you know, capability to, to, to kind of create the atoms space side of there's no platform for atoms in this country that, that needs to get fixed and that some type of industrial policy has to kind of figure that out. But, you know, there are things that need big coordination, right?
+
+You know, transportation, you know, military, maybe home building, stuff like that. But there's a lot of things that are just gonna like rocket forward because of this tremendous in, in, in innovation potential of AI connected to platforms. And so, so that was my, my thought on that.
+
+there's a lot there. I mean, I think what, what maybe you're talking about is that it's, no longer linear, you know, and that, it used to be that you used to go into field and had a clear path in front of you and, that the industry and opportunities that the country would provide were clearly laid out in front of you, so that if you went down a path of getting educated, because you mentioned universities and getting proficient at something, you could go down this, this, path and then the country would get better at, better at, say, building cars or airplanes, et cetera.
+
+[00:30:14] Alex: And it now feels much more chaotic and non-linear because, you know, industry has been not only shipped out, but will. Get automated. and and yeah, exactly. Turned into like an a Amazon AWS that provided service for everyone who wanted to build a tool. Now maybe you can just start printing out, you know, physical products out of that.
+
+And the fact that you started off in one career path and ended up, you know, selling custom ashtrays, that are manufactured 3D printed somewhere is just a path that people are gonna take. And that's going to not only apply to individuals, you know, starting businesses, but also, potentially like industries as a whole.
+
+And so it feels kind of messy right now, but it maybe isn't that bad because AI is gonna save us.
+
+[00:31:01] Brian: Yeah, I've noticed like an interesting thing, about that. 'cause I think that the pendulum is kind of swinging back towards, you know, small versus big. 'cause it, it was always like if you were starting something new, people would say, well, how many people are you? Yeah. Like, and it was always, the idea was the more the, the number it that was bigger, that meant like it was, you were more successful.
+
+And so I, I feel like that is changing, like, to some degree. like, you know, I had a, I had a podcast conversation with Janice Min, who she was behind, like the rise of Us Weekly in the, two thousands. And then she took over Hollywood Reporter and, and did, its like reinvention. she's like very well known in the magazine world, right.
+
+And she, she's now running the Anchor, which is, it's on Substack, you know, and they have like 14 people. And she had said basically that, you know, the game now is about, about like how, how, how, like lean you can, you can be for as long as, as you can. and I think that is like changing because you have, and I think it's just at the, the start of it.
+
+I know for myself it's, you know, when I read a lot of, like Barack Obama was, was out talking about ai, which is always like interesting when, you know, the politicians are talking about to see how they frame it. You know, he's a master communicator and he was like sounding basically the alarm. And he was doing it with, with, and we'll talk about this a little bit later, but with analogies about the automation that came to manufacturing.
+
+And that obviously had a major impact on, employment there and that at coming to just about every area. And, you know, people go to like Cody now and how, it, it is, it is evaporating those jobs. I mean, bill Gates was, was saying, you know, I, nobody even flinches at these things now. He was talk, talking about doctors and teachers being replaced by AI in 10 years, 
+
+[00:32:57] Troy: And, but I guess if you look at it and, and you know, I apologize that my thesis isn't crisply articulated, but the, small teams are building planes. New companies are creating new types of, you know, really important companies in the defense industry, like Andel. all kinds of small businesses are creating and challenging packaged goods companies.
+
+We've seen that, of course, with DTC people. Alex, if you look up on YouTube, are 3D printing the most amazing things like, you know, gaming, peripherals and like crazy stuff. People are making it, you know, in their houses. and, and then you, you, you look a little further and you're like, wait, Foxconn, the company that makes and assembles iPhones is about to turn, is about to make cars. And they're gonna look like, you know, conceivably had it not been for this, you know, kind of tension between the US and, China, you would see like, why can't they make a car for Apple? Why can't they make a car for somebody else who wants to make a car? you know, the production of something that is a major driver of the industrial economy is being created by a company that puts, you know, boards together with batteries and screens, primarily driven by software. And you, you know, you gotta look at it and wonder if it wasn't, you know, abandoning whatever kind of approach they took to the, you know, their entry into the automotive industry beyond just CarPlay that all of these firms, Zomi, Huawei, Alibaba, and Baidu are in some shape or form building automobiles. Chinese technology firms that previously made, you know, mobile phones
+
+or other types of software products.
+
+[00:34:45] Alex: Yeah, it's, it's all true. I feel that the, the change is happening, which is, you know, like more distribute, more ways to distribute, which we, which we've talked about, about, but now also more ways to get things into production is really benefiting small industries, or small startups, because it's much easier to apply those changes to certain types of products.
+
+But the one thing that will come in between that, you know, where we are today in Utopia, is the fact that all of that production capacity lies in China. And that's a huge, I think geopolitical risk long term. Because, you know, Troy, you still need to build big airplanes and big ships and big buildings and big factories and, and all of that stuff is, is, 
+

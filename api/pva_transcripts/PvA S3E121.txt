@@ -1,0 +1,897 @@
+PvA S3E121
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Alex: Do you ever get mad at AI?
+
+[00:00:02] Brian: the
+
+[00:00:03] Alex: No, I don't get mad at machines, which is why I think I'm good at using them.
+
+[00:00:06] Troy: I've been doing this thing where I, where I have it read our text thread and pull out all the links.
+
+[00:00:13] Alex: I'm proud of you. This is well, what I wanted to do is a series of things. I wanted to look for context of the link, The second thing I wanted to do is if it can't get context, I wanted to read the link and to come back and give me a headline. Then what I wanted to do is deposit all of the links into a document with clickable Items that I can actually use and literally like it keeps messing it up and I keep asking for it And it's like, sorry, I'm gonna fix it for you But it doesn't fix it and I get really mad at it Just like I would get mad at like a stupid intern
+
+[00:00:44] Brian: which AI are using?
+
+[00:00:45] Troy: the best one is still open ai It's the best by far
+
+[00:00:48] Alex: I don't know. I'm finding Claude is. better than OpenAI for some stuff.
+
+[00:00:52] Troy: maybe because you like the things it tells you, 
+
+[00:00:55] Alex: You should try Grok.
+
+
+
+[00:00:58] Alex: it's extremely hardcore. It'll work extra hard. make sure you're happy.
+
+[00:01:02] Troy: ​
+
+
+[00:01:25] Realignment
+---
+
+[00:01:25] Brian: should we get started? I want to talk about, we want to talk about realignments. Whether we're in a great realignment, right now, and these are usually tied in with politics, but there's instances where the cultural realignments take place alongside or even push it forward political realignments.
+
+And at least the U. S. History is, you know, Sort of filled with these realignments. I think the first one was really the Federalists against like the Jeffersonians, Federalists won that one, spoiler alert. but more recently, I think the biggest realignment was probably the conservative revolution. Started with Goldwater Crest with Reagan. and we might be in the midst of, of one right now. And I think it started with the populism that we saw, probably going back to the Tea Party and even Occupy Wall Street. and now we've got this weird fusion.in, in MAGA between the populace, the pitchfork people and the, the, the brawligarks, it's a very, it's a very strange coalition.
+
+I mean, most of these political coalitions are strange, but there's obvious inconsistencies and contradictions embedded in them. So while this is not a political podcast and we don't want it to be, I think. If you're going to understand this landscape, you have to touch on this, this realignment, because a key pillar of it is how tech is aligned with the The, Republican political party in a way that is kind of unprecedented. so Trey, you were one of the links that you had shared. You were taken with,your, idol, JD Vance's, speech in Paris at an AI summit, Europeans love to have these like 
+
+[00:03:01] Troy: Well, he's, I find him handsome, actually. He's handsome. 
+
+[00:03:05] Brian: He is handsome. He's improved quite a bit. My my sort of stylist. He's improved really rapidly as a politician.
+
+I think that's kind of admirable because he's done. He's done it under the hot lights and I can't really believe that the, the, that the, the attack line on him was that he was weird. I don't think he's weird. I might not agree with what he says, but I don't think he's weird. That was a strange, that was a strange attempt
+
+[00:03:28] Troy: Yeah, if you listen to him, he is, if you listen to him, he's very weird. Sure.
+
+[00:03:32] Brian: I mean, not, what's weird? 
+
+[00:03:35] Troy: I don't 
+
+[00:03:35] Brian: I, I, like, I don't, someone having different views is weird. Anyway,
+
+when his, 
+
+[00:03:40] Alex: sure. Sure. Let's just, let's just wrap it all up by saying all of this stuff is just normal.
+
+[00:03:45] Brian: well, I mean, no, I think but, but Alex, Weird was, we, we can disagree, and I'm not, I'm not advocating for JD Vance. but,
+
+these people are in charge, so I think we should take them seriously and maybe if The thing that I admire about him is he's a bare knuckle, kind of wrestler. Like he, he's I find that he, he, he kind of spars with, with media, but like with the best of them. And so he, he's, I, I just find that he's never kind of put in the corner.
+
+[00:04:15] Troy: He's really, really skilled debater.
+
+[00:04:18] Alex: Yeah.
+
+[00:04:18] Brian: Okay. But let's get to the substance of what he was, he was basically, he was going to Well, what do you, I mean, I, I think this is important, right?
+
+[00:04:25] Troy: Because because you hire, you know, put in an experienced person is in his vice president that has to go out and, and, and, and do, you know, a lot of, a lot of the work and he's thrust onto the world stage and can stand up and hold his own.
+
+And, and
+
+[00:04:42] Alex: God, I wish I had a job where, where whatever I say, it doesn't fucking matter. That would be great. I'd look like a genius too.
+
+[00:04:49] Troy: well, but I'm
+
+[00:04:50] Alex: It doesn't matter. Nothing matters. Nothing matters. Nothing. He can say 
+
+[00:04:54] Troy: we, what are we, what are we doing right now, 
+
+[00:04:56] Alex: I don't know, man. I think we're giving, we're giving JD events a performance review and I'm saying, yeah, he's, he's 
+
+[00:05:03] Brian: Okay. Well, let's, let's review his performance in Paris just for a few minutes. I mean, he went to this AI summit. There was a lot of European leaders there. if you count like Trudeau as a European leader, but Macron was there, Modi was there too. So I guess it was more, more than just Europeans. Pharrell was there.
+
+Like, so all the heavy hitters. And, you know, JD Vance went with, a sort of simple message, I think, to, it was basically don't regulate American AI companies because the government's got, you know, this was, I think, always implicit or explicit in the bargain, 
+
+[00:05:39] Troy: think it was bigger than American AI companies. It was don't regulate American tech companies with bullshit
+
+like the digital services act and GDPR
+
+[00:05:48] Brian: Yeah, GDPR got a mention, Troy. Did you, were you like cheering I mean, I was elated. I was elated. It's it's, it is, it is, it's a shameful piece of, of legislation that has made lives a life more difficult for, for people that make media and that makes me sad.
+
+[00:06:04] Troy: It.
+
+[00:06:08] Brian: those contradictions of this great alignment and whether it like continues, where I think the rubber meets the road, where he was trying to argue that AI is mistakenly painted as anti worker and that is actually pro labor. because they're trying to square the circle of the pitchfork populace, which I think of as, you know, represented by Steve Bannon. And then you've got the sort of techno libertarians, let's say Marc Andreessen. I know if those two are going to have a brawl, I know where my money's going. It's going to be on Steve Bannon, like every day of the week.
+
+cause that guy has been in the joint, firstly, and then also, you know, he fights to win. He, he ends up, whether he wins or loses, he's got pieces of flesh under his fingernails. I don't 
+
+[00:06:49] Troy: an evil genius, man.
+
+[00:06:50] Brian: I don't
+
+know, I don't know if Andreessen's Salons had the same kind of energy.
+
+[00:06:54] Alex: yeah, it's going to be, I mean, I'll give JD events that he's really good at memorizing. Whatever David Sacks tells us, tells him to say, 
+
+[00:07:00] Brian: There were some sax flourishes in that, that's for sure. When they went into the, the, the, the black George Washington, that was right out of, that was
+
+ripped, ripped from the, an all in episode.
+
+[00:07:10] Alex: and look, I think we can we can all hate on GDPR and I don't particularly love it But like, you know europe is allowed to regulate its shit as much as anyone else is so I think it's just it's all very self serving right now. And I know that we all like are really tired of having to press on a button but but like forcing other countries to Deregulate to deregulate themselves so 
+
+[00:07:31] Troy: pushing on a button. It's the 
+
+[00:07:33] Alex: that they so that they can so that 
+
+[00:07:35] Troy: UX blunder since I've met You Alex. 
+
+[00:07:38] Alex: right, so, so we're gonna, they're going to use like, you know, they're these tactics to, force countries not to regulate what happens within the walls of that country. I know that the internet makes that weird, but like, There are also a lot of privacy laws and, and things that started in Europe that we wouldn't have, you know, you know, and the example I always give, you know, like maybe, maybe they'll go next and say, Hey, you should stop regulating your food supply the same and do it the same way we 
+
+[00:08:06] Brian: Well, wait, wait, wait a second. That, that is, that is part of every trade negotiation. You know, the, the food regulations in any of these countries, Is part of trade negotiations. And I would guess this is just like, to me, it's just tech becoming just another industry that is tied in with the government. We act like these giant, industries, whether it's financial services. or even technology now are not, are not like in with the government. They, they are, I mean, the government negotiates on their behalf. They have trade missions and they trail along a bunch
+
+[00:08:39] Alex: But they're in with the government and but there's like there's a different criteria here, you know, I mean There has been a shift in in in in how integrated they are and how integrated the messaging is either way I mean, I think this stuff is like you know, there's a lot of things where they'll do like they'll put one nice thing like hey gdpr is bad and And mix it in with a bunch of other stuff like deregulate crypto.
+
+So, you know, it's it's fine It's all very self serving. Maybe it's because i'm in the middle of it here, but it's like Holy shit, like the hen house is open. Let's go, let's go, you know, I think that it's going to create an environment. you know, we're already in a bubble, very likely that that stuff's just going to get overheated.
+
+and on top of that, like, I don't know how much this like. Self serving of the tech billionaires agenda is going to benefit them over time as well Because I think like the ties might be turning at some point when when it's just so obvious, you know that That the messaging of the white house is actually being dictated by you know, seven people that run The biggest technology companies like that's I think that's potentially a, you know, bad news.
+
+[00:09:53] Troy: let's back up a little bit. The reason that this started for me, the notion of the realignment is, you know, You can see it in virtually of every aspect, you know, of how we live right now from U. S. politics to, you know, AI regulation to how we, you know, to healthcare, to climate, to how we work. And I was sitting there watching J. D. Vance sort of scold European leaders about, you know, regulations impacting or inhibiting big U. S. Tech companies. And then at the same time saying, you know, that that, unlike the previous administration, we are not going to be focused on on safety that that this transformative technology. You know, that we've seen, you know, in, in his recent history, and we should be leaning into innovation and, you know, take that for, you know, however you want. And then, you know, After that, he said we are going to use it as a force for job creation in the U. S., which strikes me as, as an inter, it just kind of started to highlight the inherent contradictions of where we are with this kind of realignment.
+
+I was thinking, what is it that we're moving from and what are we going to, what are we realigning to,
+
+[00:11:15] Brian: what are they trying to push? Right. Like, and it's like trying to push the fusion of capital and labor doesn't like those coalitions rarely. I mean, the divide between capital and labor has been like,
+
+[00:11:24] Troy: Well, on one side, you know, you got to protect the populist forces that elected you, and on the other side, you got to get behind the money.
+
+[00:11:32] Alex: I mean, not. I mean, I think on one side, it does not. I mean, protect the populace. I think on one side, you have to. The narrative is full on populism, but the actions. are, you know, accelerationist, pro corporation,
+
+and anti populist. I mean, if you stop 
+
+[00:11:53] Troy: mean, I agree with you, Alex. I think they're threading a very difficult needle here.
+
+[00:11:57] Alex: yeah, and I, I mean, I, I mean, I don't think they're threading it.
+
+I think, I 
+
+[00:12:02] Brian: Well, I don't know. 
+
+[00:12:03] Alex: you know, like, you know how, you know how clowns, clowns draw a smile on their face to make themselves look happy? I mean, this is what is happening. It's a bunch of clown faces. and,
+
+[00:12:11] Brian: look, people quibble with the results, but like, you know, the early actions are clearly, you know, they're taking red meat moves. Like the U. S. like populist hate, like this is straight from, by the way, the, just the regular playbook of waste, fraud, and abuse. I mean, my first job was for some, it was a bunch of Republican speechwriters.
+
+I worked for this speechwriting firm. Waste, fraud, and abuse was always, always the go to. For like, you know, trying to attack some bureaucracy or government, agency on behalf of some corporation that was paying us, you always go to waste, fraud, abuse, and they're, they're just rerunning a similar playbook because guess what that works.
+
+People hate waste, fraud, abuse. 
+
+[00:12:49] Troy: I guess the, the thing that I appreciated is, The mechanics of media. And, you know, what, what, you know, what Chris Hayes has written about recently and what's his book, Sirens Call, or
+
+[00:13:04] Brian: Oh yeah, I'm reading that now.
+
+[00:13:05] Troy: is, you know, I just believe there's a real appreciation in the GOP that, That kind of modern media mechanics have favored their tactics massively. And, you know, it's in addition to, you know, the, the money in power by sort of, forcing,you know, what, what's happened is forcing the big tech companies to sort of heal. there's an appreciation that, that. You know, this, this modern media landscape that turns politicians into influencers has massively, benefited, you know, the, the, the, the right, and, that combined with this kind of flurry of executive orders has, you know, shown just like the, the, the, the left is sort of like flat footed here, like they don't know what to do. Like, it's, it's an incredible time to be, like, the, the resistance is completely neutered.
+
+[00:14:03] Brian: But what is the, the mechanics that they're playing to is obviously spectacle, right? I mean spectacle is great. Fights are amazing. You look at where the algorithms you know, point you. A lot of times it's the conflict. And Well, it's, it's, it's, it's a ten year erosion of the authority of media,
+
+[00:14:20] Troy: I mean, here's here's what I'm wondering Is that so much of that was on the back of being? the non mainstream, the underdog, the silenced, right? meanwhile, you know, the parade, a bunch of billionaires, you know, we've got Joe Rogan there, which is, so they're quickly, and they're, they're, they're, they're kicking out all the mainstream, so called mainstream media.
+
+[00:14:47] Alex: from the press room. So they're creating an environment where the reality that people are experiencing is that they're no longer the underdog, no longer kind of punching up, but are fully in control. and I don't know how long that narrative holds like that, because at some point, you know, people might get wise to the fact that Elon Musk is in the White House with his son.
+
+Um, 
+
+[00:15:10] Brian: That was a 
+
+[00:15:11] Alex: internet, the internet has renamed this kid Kevlar Musk, by the way, because he, he seems to, he seems to just, carrying him around in public. But, you know, talking about how. It's crazy that unelected bureaucrats are making all these decisions him as an unelected bureaucrat and the the we do have to look at the the whole narrative and the the way the I think you can talk through saying like look there's all this mainstream media There's tv and it's on the airwave and it's telling you all this stuff and it's controlling Everything but once you've changed that reality for people, how long does that message hold?
+
+You How long does that message hold when eggs are still too expensive and Elon Musk is, you know, standing by, 
+
+[00:15:58] Brian: I mean, the hope is that it holds for two years because historically you get, you know, if you're in power, you get, you get shellacked in the midterms and branches
+
+goes away. 
+
+[00:16:10] Alex: I feel like we've always been teetering on this, and it's been really smart to, and Bannon has talked about it, right? Like that the culture war is a way to, To, you know, galvanize a group of mostly young men to, you know, to get angry about something, but in truth, it's a class war and we're seeing Bannon like shift towards the more class war model because he doesn't, he doesn't like the, the billionaires.
+
+And I wonder if like, there's like kind of like a third arc coming up here, which is going to be. It's going to be really hard to not talk about, to talk about like the elites, you know, when, when, you know, JD Vance and Elon and all these guys do come 
+
+[00:16:48] Brian: But it's worked. I don't know. It's, it, I I agree
+
+[00:16:51] Alex: I mean, it's worked in so far, it's worked in so far as they had a couple of extra percentage 
+
+[00:16:55] Brian: Well, no, they won, they won an election on the back of, you know, claiming that like, billionaires were, the were the ones who were not elites, but that, you know, journalists living in Fort Greene, like with two roommates were So, I, I mean, I, I don't know, like a lot of this, you know, populous stuff is not. It's really about messaging. I think what Troy is saying is really smart and that like, they have won the ability to, to put these messages, which are kind of tough cells, like, but they're selling, you know, pretty well. They're selling better than other 
+
+[00:17:30] Troy: look at, look at the numbers, I shared them with you guys, they're selling, they're still selling extremely well. And, and, and I was just pointing out,you know, what is the, the, the, the kind of mechanics of our time, which is. Populism combined with a new structure of media driven by platforms and how, and just how I think one side has, has done a much better job at, at kind of like appreciating and harnessing the, the, the, the, the, the underlying, you know, power of that, you know, that, that type of message dissemination.
+
+[00:18:04] Alex: But isn't this, but isn't this like the same thing that has happened countless time when there's a new technology that fundamentally changes the landscape of media together with, You know, some sort of like, you know, environmental causes like financial. Distress or whatever that creates an opportunity for people to completely overwhelm the message, right?
+
+Like the printing press Did that the radio did that? and now it's it's kind of the late stage the late stage completely decentralized internet is doing that You know when you have like theo von like at the inauguration And you're you're telling yourself like this place is the same place that it used to be It feels really weird like you turn on the tv and you see And I only do that when I go to a hotel.
+
+I turn on the TV and there's a bunch of people in suits sitting around a table and they each have like eight, 18 seconds to, you know, say what they want to say as, as like there's a Chevron going down at the bottom. That feels completely archaic right now. People are not receiving their information like that.
+
+And, the Democrats were completely held back by norms. Like this is how you do it. You put on a suit, you get behind the camera, you do the thing, you do the interview, you do this, whatever. And, It's obvious what's happening, right? This is like, this is, this is, this is the printing press. This is like people being able to print pamphlets, 
+
+[00:19:20] Brian: what are you saying? You, you were, you were talking up some, like, you're our correspondent from like, progressive YouTube. What's going on in like, progressive YouTube.
+
+[00:19:30] Alex: I mean, I've, I, and I don't, you know, it's hard to get to make any sense of anything because the algorithm puts you in a bubble. but there's definitely been, I feel like a rapid rise of interconnected,YouTubers that are just highly political. So, I mean, we've had like some of 
+
+[00:19:50] Brian: So let me just jump in That's like a mirror of what happened really, I think, that powered a lot of this in the, in the manosphere, if you will. I mean, all these, there's these
+
+loose, loose coalitions, federations that help each other. They're on each other's shows. There's
+
+whether it's explicit or implicit.
+
+yeah, and I think it's, it's, I mean, I think that's also always existed, right? And specifically targeted mostly at young men, your life is shit, here's how you make your life better. So a lot of, you know, the content starts with, you know, the Huberman Health stuff and working out, but also goes quickly into conspiracy theories and anti immigrant sentiment and 
+
+[00:20:26] Troy: making quick 
+
+[00:20:27] Alex: that shit.
+
+Because you, you're kind of a guy you want to, you know, you need, you feel like you need to have reached a specific level. You feel 
+
+[00:20:33] Troy: Yeah, but, but, but just to get to the point though, uh, you
+
+had found a, that, that British, that British guy, what was his name?
+
+[00:20:40] Alex: Gary's economics, Gary's economics. And, and
+
+[00:20:44] Troy: who was a little
+
+bit more thoughtful, right?
+
+[00:20:46] Brian: dimly lit kitchen. 
+
+[00:20:48] Alex: I think he's great. I think he's like, he's like a good looking dude, grew up blue collar. Managed to break through went to the london school of economics made it. He's he's he made a ton of money trading and and he started this channel to to tell people how to make it in the world and quickly shifted into understanding that the The game is kind of rigged, right?
+
+So when you're kind of in a specific class, you might be able to do a little bit better than somebody else in your, in your same income class, but there's no way you're going to break through. And he experienced that through his experience at the London School of Economics, et cetera. And he does these, and he's trying to build a political movement out of that.
+
+and he's, he's, he's gathering folks, including like ex, you know, right wing YouTubers who are now shifting from this culture war. to the class war and I think it's a, it's, it's, it's being fueled a lot by like, like the images when, when you think about like, there's these images that are like really incredibly powerful that they're using in media to see like the richest man in the world.
+
+Standing, you know, in the White House or, you know, like, like imagery like that, that is so evocative and, and their, their main message, it's, it's moving from culture war to class war and it's that, it's the Bernie Sanders message essentially, is that the wealth gap is, is increasing and that is the only reason why you're in the state you're in.
+
+And it's talking directly to young men and, this stuff started popping up. Now we have some American ones that have like really big that are on the left, you know, Hassan and, Destiny are two big ones, but they're both, yeah, they're both, they're both very problematic characters. They also hate each other and there isn't.
+
+It's kind of the left in America has a tendency of just like
+
+[00:22:36] Troy: I don't think Hassan, I don't think Hassan is resonating with forgotten males. I think that he's not the right character here,
+
+[00:22:43] Alex: No, but if you look at somebody like Gary, Gary from Gary's economics, I think that there is this new tone and look, it's the internet. When something works, people are going to start just like, gathering around that. So I, I, you know, 
+
+[00:22:56] Troy: let's can we back up on think those are really interesting points I want to back up on the youtube thing because you know, the stats that came out this week that talked about how YouTube on televisions, you know, was eclipsing consumption on mobile. YouTube success, Alex, you know, if, if, if we went back to the early days of kind of like, you know, long tail content creation via blogs, et cetera. And, you know, that they were kind of a minor threat. To, you know, establish media. And then, you know, there was an emergence of, of, a group of new types of digital publishers that challenged established media, people like Buzzfeed, refinery 29, vice, et cetera. And, and, you know, many of those understood the distribution mechanics of the internet and got really good at, at, at, at kind of besting old school media in those environments.
+
+But interestingly. They all kind of skidded out. Right. And, and what I find interesting about the YouTube thing that we're going through right now is I, at the time I would have never predicted that basically long tail video would come to dominate so much of the kind of information space spectrum. And, and we're seeing this in YouTube where, you know, basically a colossal library of content created by amateurs is outperforming professional media.
+
+[00:24:28] Alex: on, on, and especially, I mean, the news today that you were referring to is that, you know,
+
+[00:24:33] Troy: and it's moved to the U. S., yes, in the U. S., YouTube is consumed more on TV than any other device. That, that means, it's just, it's just like, you know, we talk about like, you know, behaviors and modality on this podcast a lot, but it means that, that's the thing that you do with your family around you, or 
+
+[00:24:51] Brian: Well, that's the lean back. I mean, that was always the thing. It was like, well, UGC is fine, but it doesn't monetize.
+
+[00:24:57] Troy: I mean, that, still want lean back. They want high quality.
+
+that it's moving in either via influencers or sort of craft video makers or semi professional content creators, that it has moved into the professional space the way it has is remarkable, I think.
+
+And, and then the other thing that's happening in parallel is, you know, Sort of YouTube is finally, you know, like traditional video media companies or network media companies are so bad with, sort of, productizing tools that make the creative group much more productive and making sort of community, applications that make, that really transform the nature of the product. And what we're seeing with, with YouTube are things like, have you seen this community, the community features that they've been building that allow you to kind of like, you know, roll together the energy of a community around your content or this new feature they've got called hype. Have you seen
+
+[00:25:56] Brian: Oh, I like that. We should do that.
+
+We should get people to pay to be able Right. Or like the way you compare your, you compare your iPhone with your TV. So you can use it as this really sophisticated remote control or creation tools that use AI, like this thing called dream screen or dream track that make creation of content that much easier for an amateur. It's just like, it's only going to get. More technical, more, kind of video plus community and the tools are going to get better and better and better for amateurs to create content. And, and I think you're just, and at the same time, YouTube has done a remarkable job of creating a monetization ecosystem that basically trumps everybody in the market, which is in sense people to just put their energy there. And, I, I, I think that really like, like companies like NBC never saw it coming. That'd be my take.
+
+I think that's fair. can
+
+we move on to talk about? 
+
+[00:26:54] Alex: yeah, sorry. I just wanted to add that even movie studios right now are putting Some of their old inventory on youtube for free because they think it's probably better to get You know pennies on the dollar of what they would charge, you know a rental fee to put it up on a streamer But they get more action there like the the the the broad reach of youtube the thing that youtube managed to do which Nobody saw coming is that you could that the audience would be So receptive to consuming such such different type of media.
+
+It goes from like 10 second shorts to 2. 5 hour movies, you know, and I, and we always feel like, you know, and this was like something that happened a lot in tech. I remember that when I was at Airbnb, we were talking about the fact that, a lot of people didn't believe that the, Airbnb customer would, would go beyond kind of the room sharing scale at, in the beginning, but then over time, you know, we kept disproving that, that the audience was nearly infinite.
+
+And if you built a good product product could be universalized. So somebody that wanted to rent a 50, 000, villa for their wedding or somebody that wanted to rent a 35 a room night would use the same product. Same thing is happening on, on YouTube where people will watch like, You know, citizen Kane on it and some guy like, you know, you know, juggling watermelons, 
+
+[00:28:14] Troy: Yeah. And then, and then the broad, the broader, point to Alex, I think is that the old ideas about what defines quality have changed. And,
+
+[00:28:24] Alex: Sure. Yeah.
+
+[00:28:25] Troy: I, and I think that that's, that's
+
+[00:28:27] Brian: also the tools have improved to narrow the gap between what a professional and a co
+
+[00:28:33] Alex: But the thing is, I think the, the, the, the thing that they missed and, and, and, and we also, and we, you know, when HBO got merged into max, people were saying, well, now I'm going to see some shitty, you know, reality show next to succession. And that doesn't make any sense. And I think that that was very much an interface issue.
+
+The reason YouTube can. afford to do this. Is because it's because it's algorithmically based like my youtube feed never feels completely out of whack. You know what I mean? and that's the thing that everyone missed because when you're used to linear programming you might say Okay Well, the big revolution is on demand that is still like Categorized somebody's building boxes and putting pictures in and stuff has to look normal Otherwise, it looks completely crazy But if you're saying now it's a blank slate and And I can tell you, you, an interesting experiment is like, open somebody else's YouTube, like, especially when you will go to an Airbnb and somebody might have logged in and stuff like that.
+
+That shit is, it's completely different.
+
+It's a 
+
+[00:29:34] Troy: Although you algorithm is extremely heavy handed.
+
+[00:29:39] Alex: I mean, if you look, if you look for a doughnut recipe once that it thinks that you just want doughnuts for the rest of your life, I mean, it's not particularly good.
+
+
+[00:29:47] BuzzFeed's Social Platform
+---
+
+[00:29:47] Alex: that is a very good segue, because I want to talk a little bit about, Chelsea Peretti's brother, Jonah Peretti,Thank you. Thank you 
+
+[00:29:54] Brian: out, you're welcome, I'm sensitive, came out with a new manifesto, Jonah has been good at manifestos over the years, This latest manifesto is the anti snarf manifesto in which basically, you know, he goes through all the problems of these algorithmic platforms and algorithmic recommendation systems and how they reward, you know, what he calls, snarf content.
+
+And, you know, that is sort of lower quality content. I mean, you know, he breaks it down into it being stakes, novelty, anger, anger, Fear and then well, retention as they are, but basically, you know, these, these are engineered to sort of divide us. And I think Buzzfeed grew up in a different internet and a different Facebook.
+
+And, you know, it was like 31 things only a middle child would understand. And, that is obviously not panned out. I mean, the, the stock is down 94%. So Jonah's manifesto was a great case, I guess. I'm talking to him tomorrow, actually. So this will be good preparation.
+
+but it was a great case that I think he made against all the downsides of this, the solution, which was buried quite a bit was that, you know, Buzzfeed itself will be building its own social platform.
+
+[00:31:10] Troy: The details on this, incredibly hazy. I don't expect to get, to get a better understanding of this, but basically it was, it's going to be a human curated, social platform, that is designed to bring joy and playfulness back to the internet. It is going to enable, playful, creative expression. It's going to use, guess what, AI to give users agency instead of stealing their agency. So 
+
+[00:31:43] Brian: you know Jonah well, what did you think of, what did you think of 
+
+I think 
+
+[00:31:47] Troy: I mean, good for you, Jonah. I mean, I think that You know, all media companies are struggling with how they, insulate themselves from the whims of platforms. And, and it's, you know, you should have built it five years ago. You should have
+
+[00:32:00] Alex: before, well, should have built it before TikTok built it. But like, I don't know, taking away the crack pipe and handling, handing someone a, a clove cigarette doesn't seem to be a, a, a, a, a easy thing to do.I listened to the, I listened to the Peter Kafka interview on, on his show channels because I thought I should probably listen to this to get ready for the podcast. And honestly, it was like some of the most inane shit I'd ever heard. Like there was no, there was, I, I mean, I, I, I, I, there's nothing against the guy, but I was, there are no answers here.
+
+Also, You don't need things to be human, correct? The reason that these and he mentioned it. I mean, he mentioned all the hits, right? because enragement builds engagement and that's what you sell ads on. if you want to create a social network, it doesn't need to be human curated. You can just tweak the algorithm.
+
+So that, it just elevates more positive shit. The problem is you don't have the scale, you don't have the scale. And if you don't have the scale, it's impossible to build a social network right now, unless you can build scale, you're not going to mean anything. And, and, and coming up with a manifesto to say, this is what we're going to build.
+
+Is is I mean he's doing it for investors, right? Like there's 
+
+[00:33:17] Brian: it's not working. 
+
+[00:33:18] Alex: No reason you would do that
+
+[00:33:20] Brian: I mean, the stock didn't move. It was actually down 4 percent since
+
+[00:33:24] Alex: Yeah, but I would have I mean I you know, it went from me just ignoring this thing to thinking Oh my god, I would take all my money out of this.
+
+[00:33:32] Troy: There's no
+
+money left, Alex. 
+
+[00:33:34] Alex: Why are we talking about it,
+
+[00:33:35] Troy: well, we, because we, because
+
+[00:33:38] Brian: just got valued at 2. 5 billion.
+
+There's, There's money out in media, 
+
+[00:33:42] Troy: of the people that sit at the intersection of media and technology, Jonah is a very, you know, accomplished person and a good thinker. Sadly, he's in a situation where he's managing expectations of a market. And he has three media brands that he has to say, look, they have purpose and we make content that has a place in the world.
+
+And by the way, we're also going to create a social network. I think that's, hard to do, but. You know, I,
+
+[00:34:10] Brian: personally, out Coming out there and says we're going to build a the manifesto was not a manifesto. It was just, we're building a social network. And,with no details on what the social network will actually I think I would 
+
+[00:34:24] Alex: it, is it, is it federated? Like, I mean, at least like do that, right? Like, I don't, there's nothing,
+
+[00:34:29] Brian: to me. I read it and we'll see what
+
+[00:34:31] Alex: I mean, is he like, do, is he a
+
+Troy? Troy seems uncomfortable. Is he like a friend? I'm, I'm sorry.
+
+[00:34:36] Troy: no,
+
+no, I mean, I think that we here at this, the People vs. Algorithms podcast, we
+
+generally, we're generous and we cheer for media. And we like it
+
+someone has said, you know, listen,
+
+instead of being beholden to a platform, we're going to make our own. And I thought the manifesto was kind of goofy, but like, I want to
+
+see you care if you, if you care, if you care, then you know, sometimes you need to give some tough love. You're wasting your time your money and also you wasted my time because I listened to that podcast for 35 minutes and I And so and that made me that made me very 
+
+[00:35:13] Brian: thought you were in a good mood this week. You know,
+
+we 
+
+[00:35:15] Alex: wasn't in a good 
+
+[00:35:16] Brian: feedback from, from Brad Robertson and, I just want to put this in here. He said, I've enjoyed the increased content you three are pumping. I don't think it's been increased, but it might seem that way. he said, there has been a, a greater shift.
+
+Maybe it's a realignment in the dynamic between the three of you that I enjoy even more. Who knew Alex could make me laugh so much?
+
+[00:35:37] Troy: Well,
+
+[00:35:39] Alex: I mean 
+
+[00:35:39] Brian: how you want, Alex.
+
+[00:35:41] Alex: yeah, I don't know if it's with me or at if you know anything about Alex, what's the gentleman's name, by the way, what,
+
+[00:35:46] Troy: what, what Alex is extremely good at is throwing the second punch. Yeah.
+
+[00:35:54] Alex: thing you shouldn't we all we
+
+[00:35:56] Troy: Here we go. Watch.
+
+[00:35:57] Alex: I just wanted I just wanted to tell 
+
+[00:35:59] Brian: He just eviscerated Chelsea Peretti's brother, so.
+
+[00:36:02] Alex: Look, I still love Chelsea Peretti. That is nothing to The fact that her brother has a terrible 
+
+[00:36:07] Brian: Keep her out of it. 
+
+[00:36:08] Alex: for I mean, I don't know, maybe it works for them. I think, I think it's just, wild to just announce stuff with a manifesto and announce that with manifesto.
+
+That being said, I did receive some comments that people were worried that Troy and I are, constantly at each other's throats. Troy and I love each other very much, like brothers. Although he could be my father, but he, uh, and, part of the dynamic here is that we use this one hour to just like error, you know, grievances and differences.
+
+And, and, 
+
+[00:36:39] Troy: Yeah, I mean, I, the nice thing that's happened and I made a mental note of this is that at times I want to write you, you know, off as a sort of like, woke cuck. And what I, what I've been doing lately is is I've actually been thinking about the things you've been saying. So I think it's a
+
+[00:36:54] Alex: there you go. There you uh, tolerance.
+
+That's how we shift. That's how we shift. 
+
+[00:36:59] Brian: Just to bring it back to the Right, and by the way,You, you, you really did go from being sort of sympathetic to a lot of things to being really harsh about this social network thing, which is a kind of Republican move, I would say.
+
+[00:37:12] Alex: oh, really? Well, you know, I'm not, I don't, I don't subscribe to anyone ideology. I just look at what's right. And,this, it didn't sound like something somebody would have said in like 2011.
+
+[00:37:22] Troy: No, it sounds like what
+
+[00:37:24] Alex: Like, you know, you remember? 
+
+[00:37:25] Brian: Well, I think, I 
+
+[00:37:27] Alex: remember?
+
+[00:37:28] Brian: I think you're actually right with that, Alex, because I hear a lot, basically, because To me, it's like, there's a lot, there's too much nostalgia, I think, in the publishing business overall. And there's a lot of regret that I don't even know if it's regret. It's like, Oh, if we only didn't fill in the blank, if only we didn't last night, I did, I had like a dinner that I did. With my partners at Omida, in which, you know, there's, there's regular periods where, you know, publishing executives are like, well, if only we didn't do this, if only we didn't go along with the Google thing, because they're trying to, in this great realignment in these publishing companies, they're trying to realign themselves and they're trying to operate their existing business and rebuild a totally different business.
+
+So. They have to continue on this traffic treadmill to pay the bills while trying to build some like smaller, more like engaged business model. And it's really hard to do both at the
+
+same time. 
+
+[00:38:24] Alex: And this is like with, with, with Buzzfeed, it's like, this is an impossible task. It
+
+It would have been impossible, It would have it would have been impossible, it would have been, BuzzFeed's entire growth and success was based on the fact that they adopted, and they got into bed with all these social networks. And when, when media company says, if only we would have done this or that, not only would, should you, if you had done it and all of your peers, If you had all gotten together in a dark room and said, we're not going to allow, you know, Google to, to kind of search through our stuff and we're not going to allow, they would have had to organize all the media companies to get together to do this at once individually.
+
+It 
+
+[00:39:02] Brian: ended up in jail 
+
+[00:39:03] Alex: It would, yeah, exactly. So individually they could,
+
+[00:39:06] Brian: guess this was a better 
+
+[00:39:07] Alex: they could individually, they could have done nothing. And I, and I actually truly think that like right now, even individual actions like bus feeds are going to lead to nothing. The only thing, the only thing that could maybe make a dent is like.
+
+If, if these companies organized, themselves around that, maybe adopted a centralized federated system and went out and said, okay, we're going to start doing this at scale because they have scale when they get together. The problem is that an individual level, nobody's going to throw a rock and put a chip in Facebook, like that's crazy.
+
+[00:39:36] Troy: just want to kind of try to summarize this a bit, but I would say, Brian, that,
+
+[00:39:41] Alex: So I'm coming across angry, well, no, but I think you would agree with this, Alex, is that first of all, Brian's point that you have to have a foot in the past foot in the future in media is so true. He needs to manage. You know, expectations of the market.
+
+[00:39:55] Troy: He needs to keep revenue up on his existing media brands, and he needs to make something new. The problem I have is that new products need an insight and new social. There's never been a social network that was built on, on happy times happiness, like the Happy Super social Network. That's not a thing,
+
+[00:40:12] Alex: Do you remember PATH? I miss PATH.
+
+[00:40:16] Troy: was really, really fun and I used it for a while,
+
+but the, the,the, the idea that, like the idea that we're snarfy is not a new idea. Okay. Like people have been complaining about super social networks, amplifying negatives, you know.
+
+Sentiments long, time. Yeah. And it's got a
+
+long,
+
+[00:40:33] Alex: TALK RADIO, 
+
+[00:40:35] Troy: All content. I did a, whole presentation of this one, a keynote presentation on what makes content addictive. And I think that, that, you know, media companies at their best understand why people need content, what compels them to consume it. And therefore what makes it. And what makes it,you know, something that you really need, what makes it addictive.
+
+So I think that, you know, if you look at TikTok, it was based on, you know, some, some simple ideas, right? That if you flooded, a system with video content and had a single feedback mechanism and built an algorithm to create an experience based on that, that you could kind of create a, a, a delicious product.
+
+And it worked. And what they then did is they spent hundreds of millions of dollars buying, essentially floods, flooding it with, with new users and therefore content. And so maybe Jonah has a plan, maybe he's got a plan that's built on some new social mechanic that we haven't seen because he was too busy talking about snarf and about the brand positioning of his existing assets.
+
+[00:41:38] Alex: don't call it fucking SNARF. Like, can we stop with the acronyms? Like, I really think even DI is way easier to attack because nobody knows what it means.
+
+The thing I would say is that the insight here that is often missed is that something like TikTok, it wasn't a media strategy. Nobody, it was a, it was a cognitive hack, you know, people understood that if, if you, if you, if you hype, there's this, I think it was in this old TV show called, max headroom, 
+
+[00:42:10] Brian: Oh, I liked max 
+
+[00:42:11] Alex: Yeah, me too. I think at some point they had these, things where like ads would blast into your face running at like a hundred miles an hour. and it turns out that like, you can overload the cognitive system and then it's very hard to let go of it. That's, It's not a media strategy. and, and most social networks are built on that.
+
+Okay. Like if you keep people in a heightened state of like mental arousal, you will maintain their attention for longer. All right. Irrespective of the media. Okay. Today it's, you know, it's a culture war thing, or it's a class war thing, or it's like, the amount of content that is being created right now that is just like.
+
+You know, if we looked at it 10 years ago, it would feel like insane, you know, and then, and then you find out that people watch this stuff at four X because our brain are like incredibly susceptible to this, like, you know, media fire hose that we're creating. So if you're, you know, try to separate your cognitive hack strategy, which is, which is like, how are we going to get people to engage with this for as long as possible and your media strategy, which is like, Oh, we're going to push out happy content.
+
+These are two different things. And so if you're building a social network based on a media strategy. That's that in the water. Like it makes, you know, I think it's pretty obvious to me. So you can ask him that Brian, when you talk to him tomorrow and I'm giving you another chance to pitch your other show,
+
+[00:43:26] Brian: Okay, great. I'll do
+
+[00:43:28] Alex: what is it, what is it called?
+
+What is it called?
+
+[00:43:30] Brian: The rebooting show.
+
+[00:43:31] Alex: The rebooting show it's out when?
+
+
+
+[00:43:33] Brian: Tuesdays. Yeah,
+
+be out 
+
+[00:43:35] Alex: Tuesdays. So next Tuesday.you can listen to Chelsea Peretti's brothers on Brian's other show, other show, his other family.
+
+[00:43:43] Brian: be great. I'll, I'll bring all of your critiques, and we'll see if I get any answers. I I'm mostly interested in, in, in, Honestly, because it's hard for me to discuss a product that doesn't exist. Like I have no idea, like if it doesn't exist and there's no, there's not even like a demo video, there's not even a PowerPoint,
+
+[00:44:02] Alex: no thesis around like what doesn't work. Yeah.
+
+[00:44:05] Brian: I I'm more interested in talking with Jonah. I haven't talked to him in a while. I've done several podcasts with him, because he's been sort of. He's had his hands in this from the start, right? I mean, I admire him, but he's, he's, he's still operating the business, right? And this has been a long run and, and a lot of ups and a lot of downs.
+
+And, I think Buzzfeed. Maybe it's, it's obviously diminished now, you know, but it was in its time, at least it was looked at as a very consequential time,
+
+[00:44:32] Alex: Isn't it probably, maybe, isn't it, and I don't know that, because it's got HuffPo and, and, and a few other things 
+
+[00:44:39] Brian: Yeah. Now it's got a collection of sort of, I
+
+[00:44:41] Alex: Yeah.
+
+[00:44:42] Troy: it's. 
+
+[00:44:43] Alex: Isn't it like a decent. I mean, except forgetting the stock market or the valuation stuff. Like, isn't there, isn't there like a 
+
+[00:44:50] Troy: It's not, it's not that you can go look at the financials. It's three brands. It's a news brand. It's an internet culture brand and it's a food brand, tasty HuffPo and, and,
+
+[00:45:00] Alex: Yeah.
+
+I watch a lot of tasty content even.
+
+[00:45:03] Troy: yeah.
+
+let's move on, Brian. Let's where do you want to go next in the great, realignment? Do you want
+
+to got seven minutes.
+
+you want to talk
+
+[00:45:10] Brian: We have seven minutes.
+
+I mean, we only have seven minutes. 
+
+
+[00:45:14] Super Bowl Ads
+---
+
+[00:45:14] Brian: Can we talk about the Superbowl real quick?
+
+[00:45:16] Troy: Okay. Where do you want to
+
+[00:45:18] Brian: You don't want to talk about the Superbowl.
+
+[00:45:19] Troy: happy to talk about it.
+
+[00:45:20] Brian: All right. So, I mean, the Superbowl, I'm sure you guys all watched it, right? I mean, the Eagles watch, it was a boring game.
+
+Um, Oh, thank you.
+
+[00:45:30] Alex: I made myself watch the Super Bowl because I, I haven't been able to let like, you know, at some point of sport clicks for you, like I've had this experience with rugby, I had this experience with tennis and with Formula One where like later in life, I kind of got it and I was like, Oh, I get why people watch this baseball, basketball, same 
+
+[00:45:49] Troy: Are we really doing Are we 
+
+[00:45:51] Alex: football,
+
+football, I 
+
+[00:45:52] Troy: No one gives a fuck about your sports tastes. 
+
+[00:45:55] Alex: But I still, I just want to say I still watch it. It's a very long, it's a It was a terrible game. It's a terrible, it's a, it's, it is the greatest game in the world, but it was a terrible game.
+
+[00:46:04] Brian: Yeah, so it drew 128 million, viewers, the spots went for like 8 million, the, the, I, I like it, I don't like it as a football. yeah, I think the championship games are way better. It's on a neutral field. It's filled with corporate like suits. Like, it's just a weird environment. The game lasts too long.
+
+There's too many breaks. And so it's
+
+always like a strange football
+
+[00:46:26] Alex: remove something, not having a home, home team and a thing like that, that, that, that tension kind of feels like it, 
+
+[00:46:32] Brian: But it's, it's a spectacle. It's the carnival,
+
+carnival of capitalism, which I love personally.
+
+[00:46:38] Troy: was there a spot that stood out for you other than Alex? I thought you pinpointed The really, truly one great spot was the seal.
+
+[00:46:45] Alex: Oh my god, no, it, it, it, this made me want to burn down everything, the What, why? I thought it was hilarious.
+
+is, hey, Alex, seal is a seal. Get it?
+
+know, I've been 
+
+[00:46:55] Brian: it's a big idea. 
+
+[00:46:56] Alex: sat in those meetings. So many people had to say yes to this and then Seal had to say yes to this and I'm like At some point.
+
+[00:47:04] Brian: The
+
+CFO had to say yes to it 
+
+[00:47:06] Alex: Maybe maybe maybe it's maybe it's like maybe it's more. I don't know. I maybe it's because of like the times where we live in to see all these celebrities just like You know do tricks for a few bucks is it's hard to watch.
+
+[00:47:19] Brian: Yeah.did you see the open AI commercial? Because I mean, I was like mostly focused on like the AI stuff. You know, their agent force was, was out. I think people, I think most people still don't know what Salesforce does
+
+[00:47:32] Alex: It was produced in two days Apparently, I don't know what led to that. But 
+
+[00:47:35] Troy: I thought it was great spot. I loved it.
+
+[00:47:37] Brian: What did you like about it?
+
+[00:47:39] Troy: well, it just tried to set. open AI in a historical context of great innovation, right? Like there was
+
+[00:47:46] Alex: You said hysterical.
+
+[00:47:47] Brian: rubbed me the wrong way, because I'm like, you guys have been like, overselling the reality, this is, we talked about this last episode, my, like, you've been overselling the reality to normal people. Like, let's not talk about some like, future state and all, like, okay, great. But like, normal people are not see, it's like,
+
+[00:48:06] Alex: I'm with 
+
+[00:48:07] Brian: I feel like 
+
+[00:48:07] Alex: on this one. I'm, I'm, I'm, I'm with Brian on this one. I think the messaging The messaging has either been like, you know, examples of slice of life examples of how people use AI. And most of the time it, it, it, it's either a key. And I think Apple's been responsible for that, or it's showing an unrealistic example of what would actually happen.
+
+Right. Or it's like, trust us the future, you know, we're going to cure disease and put people on Mars and, and, and you're like, neither of those things feel relevant to me and you've been saying it for two years.
+
+[00:48:41] Troy: Yeah, actually really, really difficult creative problem, actually, Alex, because you can turn features into human benefits in a spot to say, look, it helped my kid with homework, it turned the lights off, it got me an airline ticket, all of that. Or you can say, this is an important consequences, 
+
+consequential technology company. And we, we are the leader. We are the leaders.
+
+[00:49:02] Alex: but there's a, 
+
+[00:49:03] Troy: and, and not only that, I'm a real sucker for someone who creates a kind of beautiful brand identity and then kind of figures out how to, 
+
+how to articulate around
+
+[00:49:14] Alex: enjoyed that. I enjoyed that too. I thought, I thought the execution, the graphic design was, was great. but there is a, like a thing lost where you're saying you, you, you know, you, you have like fucking. You know,the snack brands doing these things that feel very different. Even there was like a toilet paper brand that said that the entire ad was a countdown and say, you know, essentially told people to go take a shit while the ad was playing and it was for toilet paper.
+
+Great. Right. Like subversive type of let's try something different.
+
+[00:49:43] Troy: did
+
+[00:49:43] Alex: A 
+
+[00:49:43] Troy: did you, did you, did you take A shit? 
+
+[00:49:45] Alex: great idea. I, I mean, actually it was doing that during the game. the ads were more interesting. I, the thing is like when you're open AI, couldn't have done something more interesting, like have a special chat bot or have the AI, like respond in a special way and ask people to go, Hey, if you go to the chat bot now, we're going to put this up on a billboard somewhere instead showing another one of these tech, like, like they literally like are 
+
+[00:50:11] Troy: Yeah, it's a, it's a good, it's a good point. It's sort of like the, there was two examples I would give. One was there was an ad that had that John Denver country road song on it.
+
+then they had the whole audience at, they played it in the stadium
+
+and sang along. Right. So nice idea. And then there was the spot, the Bill Moore, the Bill Murray Yahoo spot, which didn't really talk about Yahoo, but got you to email Bill Murray.
+
+[00:50:37] Alex: Yeah, great.
+
+[00:50:38] Troy: bill, bill something at yahoo. com. And then there
+
+was, I emailed him and there's
+
+forth and, and, but like, those are fun, but they're a little bit sort of gimmicky. I think, I don't know how many people do it. I'd rather, you know, from where I sit, I'd rather just a good, a good. Idea that is sort of contained within the spot and stays with me after like the seal ad like I don't I can't remember what the seal ad was for though.
+
+What do you
+
+[00:51:05] Alex: Exactly. Exactly. Yeah, exactly. Was an ad for seal? 
+
+it made me physically sick.
+
+[00:51:12] Troy: Who was it? What was it for?
+
+[00:51:14] Alex: I don't know, some Gatorade shit. I don't know. It was, it was, it was, it was terrible. but apparently like we're talking about it. No, I, I think that, I think that, maybe it's because I've seen so much of it and it's very much like the type of messaging that exists within the, these companies is that it's all like very, you know, either highly emotional.
+
+You know, let's, let's tap into kind of what it is to be a human and just like humanize the technology, or let's put ourselves in a place where we're kind of defining what's coming. And I don't think that's. I don't think that's as relevant anymore. It feels, it feels like it washes over people and I think they don't care.
+
+[00:51:53] Brian: Yeah, by the way, the seal ad was for Mountain Dew. Do the 
+
+do 
+
+[00:51:56] Troy: you go
+
+[00:51:57] Brian: one thing on the on the AI
+
+[00:51:58] Alex: Put more sugar into
+
+[00:51:59] Brian: and showing the benefits because I do think a lot of these commercials are more effective when they actually show them. I did like I like the Super Bowl because it's like the one time of the year that Americans invite.
+
+The brands into their lives and say, okay, we're going to like, not only we're going to pay complete attention to you are going to be stars. We're not going to avoid you, but here's the thing. You've got to entertain us. You can't, you've got to entertain us. And we're going to talk back and we're going to, we're going to rate you.
+
+I'm going to make fun of you. And some of you might lose your jobs because you've wasted a that NFL women in foot flag football spot resonated in my home I thought it was really well done too
+
+[00:52:36] Alex: the Nike one was good as well. if you want like an ad that had a message, one of my favorite ones was the Harrison Ford Jeep one, because it really did feel like Harrison Ford would drive a Jeep. Right? While, while Seal I don't think drinks Mountain Dew Lime.
+
+I, I, I have a 
+
+
+[00:52:54] AI Use Cases
+---
+
+[00:52:54] Brian: It's weird that there's so many celebrity shots. I, I, Last night, actually on the dinner, I want to talk about AI use cases real quick. you know, I'm always asking people, I said, what do you, how does this move in your business? How does it change? And then this like B2B publisher, they're using an AI call center.
+
+They replaced their call center. So they took all the transcripts of their calls that train the AI. And apparently these, and I'm wondering if I've spoken to like an AI customer service agent, because they add like little touches, like they, they do little coughs And you hear the keyboard going in the background.
+
+So I like that. 
+
+I 
+
+[00:53:31] Alex: you sometimes also hear like, like, kind of like, they call that room tone from the background to make it sound like you're talking to someone that's within a room that has more people in it.
+
+[00:53:41] Brian: so it is performed better than their outsourced solution before.
+
+[00:53:44] Alex: Boom. That's it. That's it.
+
+[00:53:47] Brian: better or worse, 
+
+[00:53:48] Alex: I mean, I can't, 
+
+[00:53:49] Brian: So, so don't think just cause you hear the person coughing that, that they're a person.
+
+[00:53:53] Alex: mean, look, 
+
+[00:53:54] Brian: asked, I asked Ana, my wife, if, if she, if this would bother her. Cause I was like, man, I think I've like spoken to one of these robots thinking it was a human. And she was like, no, I don't care. It gets the answer. It gets the answer. I thought it was interesting. Cause I was
+
+[00:54:07] Alex: that's interesting.
+
+[00:54:08] Brian: I was kind of like offended by the idea that like, like when I sent my otter to that meeting, you were in, Troy, you got offended.
+
+[00:54:14] Troy: Well, I don't like it when you send a robot and you don't come yourself and then it's taking it's recording
+
+[00:54:20] Brian: the point? What's the point otherwise?
+
+[00:54:22] Troy: Yeah,on a it's a new reality. I've been actually surprised by how comfortable people are because also, you know, these jobs have been completely dehumanized and, you know, we're used to talking to these folks and, you know, we know that they're just a script. And, and so, I think replacing those things with robots is going to, it's just going to happen very naturally.
+
+[00:54:44] Alex: And I mean, especially when the benefit is like the thing picks up instantly, the thing just, You know, like all of that stuff is, is going to feel,like a huge benefit and it's going to, impact a lot of jobs, mostly, 
+
+[00:54:56] Brian: were talking about, I don't know if we can talk about this. Can we talk about this? Like you were talking about this company that does like AI, like for like leads.
+
+[00:55:02] Troy: Yeah, I mean it basically takes any Connection point you have to a consumer like when they fall out of a you know a funnel Whether you have their email address or their phone number And then you kind of map out a set of Ongoing communications via SMS, email, potentially phone calls. And it's all just this kind of orchestrated outreach strategy.
+
+All of it managed by. by AI and, yeah, all those sort of lifelike little features are built into it where there's pauses and, you know, kind of human, just like human type, ticks and things that make it feel like it's, it's real humans,
+
+[00:55:43] Alex: wonder, what happens to our little ecosystem when all these apex predators are released from every single brand that know that you want to sell something, we're just going to be like, it's going to be impossible. This thing is going to just get impossible when you have these like.
+
+[00:55:59] Brian: well, sales is going to be impossible, right? I mean, like, imagine what LinkedIn is well, you're going to need, you're going to need your own, your own personalized Iron Dome
+
+[00:56:07] Alex: Yeah. I recommend people watch, there's a science fiction, short film on YouTube, YouTube once again, called, Solstice Five. And it's, it's, it's, it's kind of shot like a documentary and it's of these giant spaceship and it tells the story of a planet that's made entirely out of oil. And these two companies send these, automated robots, and this AI just becomes, Just,completely obsessed with trying to mine as much as possible.
+
+And all these ships start creating themselves until the island, until the planet is completely taken over by AI, just trying to, serve the mission of getting more oil out of the ground and it's, I think it's a good parable for what's going to happen to our digital lives. Like when multiple AI's are trying to sell us stuff.
+
+[00:56:49] Brian: So now that we have to go into WhatsApp because of Troy, like I'm,
+
+I'm face to face with like my HOA group more, and they're like advocating for these robot guards to be like patrolling around the perimeter. I mean, so then it's like coming for like security guards too,
+
+[00:57:03] Alex: There we go.
+
+[00:57:04] Brian: because they've got cameras and they can, they can do it all.
+
+So let's get into good product.
+
+
+[00:57:08] Good Product
+---
+
+​
+
+[00:57:11] Troy: maybe we can, bring this a little more down to earth. You know, I was sitting here, I'm on Shelter Island, and I noticed that, there's a lot of red cardinals in my, they're called northern cardinals, I think, in, in my yard. And they're extremely beautiful. And they don't, they're non migratory, so they're here, all year round.
+
+And, I really, really appreciate them. And then I, I looked up, You know, you know what the significance is, is and it says many people see cardinals as symbols of loved ones who have passed away. So, you know, maybe it was like my, my dead father outside the, the window looking at me. But, I thought that was, was kind of a nice, a nice thing. The Red Cardinal is a nice product, but that actually isn't, isn't my choice this week. You know, in, in an email, I did get a couple emails about, about this, this character. His name is Hugo Hamlet, and I've sent it to you guys before, but
+
+he's like, Ever present in my in my Instagram feed now, and I think he's really, really extraordinary. it's a combination of, you know, his kind of positivity and his kind of like pop, you know, philosophy. Kind of vibe that he, that he gives out, but his
+
+facial expression, his hair, the way he, the way he messes up words and, and, and, and, plays with
+
+[00:58:32] Brian: the accent helps. He can pull it off with an American accent.
+
+[00:58:36] Troy: it turns out you can book
+
+him Theo Vaughn does.
+
+well, if, if you go to his site, you can, you can have him join you with like a spiritual reading, which I think we should maybe consider.
+
+[00:58:49] Alex: Yeah, business model?
+
+[00:58:50] Troy: I think it's part of it. Yeah.
+
+Go a webinar.
+
+He does a webinar, Brian. Yeah, he
+
+[00:58:55] Alex: if you want to also another good product, 
+
+there's an app called Merlin by Cornell lab, 
+
+[00:59:01] Troy: Yeah I 
+
+[00:59:01] Alex: app that you 
+
+[00:59:02] Troy: It's 
+
+a cool, cool app.
+
+[00:59:03] Alex: You run it on your iPhone and then you just press record and, using AI and using your location, it records all the bird sounds and tells you the birds that, that are in the space.
+
+You, so it's like you put that out in your garden, you leave it running for 
+
+[00:59:17] Brian: Wait, what is it called? Verlin's? Merlin, Okay. 
+
+[00:59:20] Alex: like the bird, like, or like the wizard, whichever way you want. that guy, Troy, I like him. He's just like. On the edge of insufferable for me. So like, like maybe like a drink that's too sweet. I can only have a sip.
+
+And if he was
+
+like taking up more space on my feed, I would have to just
+
+[00:59:39] Brian: Yeah. Once a week. Once a week.
+
+when you share it in the 
+
+[00:59:42] Alex: It's like, it's like a, it's like a Bailey's, you know, it feels nice. but you kind of done with it after it for a while.
+
+All Right.
+
+guys, I got to 
+
+[00:59:49] Brian: All right. 
+
+[00:59:50] Troy: you later. 
+
+[00:59:51] Brian: Bye. 
+
+[00:59:51] Alex: Bye.
+
+[00:59:52] Brian: all right. Are we finished?
+
+[00:59:54] Troy: Do we, we usually just have a little What
+
+do we refer to this? Recap?
+
+[00:59:59] Brian: this is where, when, when Alex leaves, we can talk about. Emily Sundberg, by the way, is, we were way early on that. We had Emily on, like, when? six months ago? Longer? Might have even been longer. She's getting, like, she's, it's funny because she's getting a lot of the, you know, she's getting the photo shoot treatment, from the New York Times.
+
+I'm so happy for Emily. She's doing great. airmail wrote about her too. So she's got the sort of vibe of being the it publication. I think it's like very telling in some ways because. I mean, she's like a one person operation, like running a substack and, you know, this, you know, it just says that like, you know, the media is, it's getting, it's getting smaller.
+
+I mean, I was struck last night at this dinner, two different executives who are C level executives at big media companies. Different points just expressed, God, I wish this company was smaller.
+
+[01:00:52] Troy: yeah.
+
+[01:00:53] Brian: And because a lot of, I, it was like operating the existing business and building a new Emily does a few things. First of all, she kind of merchandises a kind of fake lifestyle that you want to read and be part of. She's also really good at scoops. And, You know, sort of her, her, her DMS are always open and people feed her a lot of information. So she gets a lot of stuff early and, and, and that's cool. And I think she, she writes with a kind of social media flair that makes it really easy to read and really, you know, consumable with lots of links and it's fun to read every day. So people, people like it and it's, you know, it's a little bit stylish and, and yeah, the, this sort of, you know, East coast media types have kind of embraced her as being, You know, an important new character.
+
+[01:01:41] Troy: So she's, she's super hardworking. she's a cool cat and I'm very, very happy for her. So way to go, Emily.
+
+[01:01:49] Brian: I'll be interested to see if, it becomes the business of Emily Sundberg or if she uses this. I mean, she's talked about it, about building a bigger media platform and whether this ends up becoming, graduating into more than a sub stack. 
+
+[01:02:05] Troy: well, she's conscious of that. And I use you as an example for her all the time, which is,
+
+know, well, that big first hire is a hard one, right? Which
+
+is, you know, someone who's gonna You know, take the business side and, and, and kind of help you grow it, whether that's, you know, arm's length through an agent or, or someone who's, you know, going to, you know, take a piece of equity in the company and help you turn it into a business, professionalize your ad sales, you know, kind of grow the IP that's distinct from your, you as a human being, she doesn't want to be.
+
+You know, I, I don't think, I don't want to speak for Emily, but she, she doesn't want to be a, what's her name, Alex from, you know, the, the podcast
+
+[01:02:45] Brian: Alex Cooper.
+
+[01:02:46] Troy: She doesn't want to be the kind of, you know, the big famous person behind the media brand she, she wants, or that, that is the media
+
+[01:02:56] Brian: Well, what they're doing, the photo shoot of you. I don't know what to tell you. Like, that might be the, the problem of that is there's so much leverage in the individual in these businesses that it's completely, you end up trapped by that, even if that's because you know that like you want enterprise value if you're like, and you can't, if it's just you, like, I think about that with Mr.
+
+Beast, like, I mean, Like the entire company goes to zero if the guy gets hit by a bus or picked up by the FBI for something like goes to zero 
+
+and that I don't know that might be just the reality of a lot of these businesses. Did you see that? that Fox bought News Corp? I guess like, but, but, Red seat, which is like a, it's a, I guess it's like the backend, like, 
+
+[01:03:42] Troy: sort of like a right wing influencer management company.
+
+[01:03:46] Brian: yeah,
+
+you know, Megan Kelly, Tucker Carlson, et cetera.
+
+[01:03:51] Troy: it seems like a that seems like a good hedge and you'll probably be looking into Shapiro's company Like
+
+[01:03:57] Brian: yeah, there supposedly if you're Fox You need to diversify those cable dollars and make sure you have a foot in the next thing 
+
+
+[01:04:03] Outro
+---
+
+[01:04:04] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:04:38] Brian: All right, Troy, I gotta go. We gotta go to the airport. 
+
+[01:04:40] Troy: Have a good 
+
+[01:04:41] riverside_t-roy_raw-synced-video-cfr_people_vs algorithms_0232: trip. 
+
+​
+
+
+

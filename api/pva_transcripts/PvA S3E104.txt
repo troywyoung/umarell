@@ -1,0 +1,843 @@
+PvA S3E104
+===
+
+
+[00:00:00] Open
+---
+
+
+[00:00:00] 
+---
+
+​
+
+[00:00:00] Brian Morrissey: We're back. Alex is back from conferences or demos. What are we doing?
+
+[00:00:06] Alex Schleifer: I was, uh, I had investor events that I had to attend. So,
+
+[00:00:11] Brian Morrissey: got to butter up the money, people. Uh, Troy, we're doing a public appearance together later. I can't wait for that. closing keynote.
+
+[00:00:20] Alex Schleifer: Wow.
+
+[00:00:22] Brian Morrissey: Going to Hudson yards. Is it, it's Hudson yards, right?
+
+[00:00:25] Troy Young: I don't know. I'm looking forward to you telling me where to go and when, cause I
+
+[00:00:28] Brian Morrissey: Uh, yes, 
+
+
+[00:00:28] Intro
+---
+
+​
+
+[00:00:51] Brian Morrissey: welcome to People vs. Algorithms show about connecting the dots in technology, media, and culture. 
+
+[00:00:57] Troy Young: I noticed is wearing those, uh, those glasses that you can record with. Is that right?
+
+[00:01:02] Alex Schleifer: Yeah, I am. I was, I was, I've been doing the experiment of, seeing how long it takes for people to notice. It took my wife, three hours to notice I was wearing them, and then she said, Ugh. 
+
+Um,
+
+[00:01:14] Brian Morrissey: which, class are, they're not the meadow
+
+[00:01:16] Alex Schleifer: they're the meta Ray Ban smart glasses.
+
+[00:01:20] Brian Morrissey: Oh, they are. Those are smart classes.
+
+[00:01:22] Alex Schleifer: Yeah, they look pretty good.
+
+But, I mean, they don't have anything showing up on screen, it's just What's very nice is that you have a speaker over your ear so you don't have to put stuff in your ear and I think that's the killer feature. I don't really, I don't really want the cameras on them, I just want the speakers. I just want Apple to make like AirPods that are glasses,
+
+[00:01:41] Brian Morrissey: Yeah, this, this points to like an amazing future. What could go wrong? Couldn't even, couldn't imagine. Mass surveillance by everyone? Yeah, can't wait for those to be in the locker rooms.
+
+[00:01:53] Alex Schleifer: yeah, well, I'm, I just took a picture and I'm just
+
+[00:01:56] Brian Morrissey: This is great. I can't wait. Did you see that? Like, I don't even know if it was true. I don't know what's true anymore. There's some, somebody hacked these, apparently, like Harvard, that was then dox people. just you, they fed it through, image recognition, facial recognition, and we're able to basically go around and see who people are and, um,
+
+[00:02:18] Alex Schleifer: I mean. I mean, when all the pieces of technology exist in some form, you can imagine that somebody's going to put them together, right? Like using a photo of yourself, you can pay a service or even use free services to find a bunch of stuff about yourself. And then you tie that to an always on camera on glasses.
+
+Yeah, you're there. 
+
+[00:02:38] Brian Morrissey: Yeah, so privacy will go from being a human right to basically a luxury good.
+
+[00:02:42] Alex Schleifer: it's kind of like people feel icky about having, you know, cameras on glasses and I do, I don't, I don't particularly like it. But it's also the killer feature that everybody wants is something that reminds them of everyone's name, you know, when you walk into a room, like we all want that secretly, you know, 
+
+[00:03:01] Brian Morrissey: Yeah, lanyards. This is a solved problem.
+
+[00:03:03] Troy Young: Hello. My 
+
+name is, 
+
+[00:03:05] Alex Schleifer: you spend too much time in conferences. 
+
+[00:03:09] Troy Young: I don't usually wear the line.
+
+[00:03:11] Brian Morrissey: Yeah, 
+
+Do you ever leave like a name tag on when you leave one of these events? Just walking around New York City with a name tag on? Um,
+
+[00:03:19] Alex Schleifer: way to get mugged.
+
+
+[00:03:20] Misinformation
+---
+
+[00:03:20] Brian Morrissey: so this hurricane, had gone through, Florida. I, I was not there.
+
+It was too dangerous. So I came to New York for advertising week, which is a very strange event. Do you know about advertising week, Alex? 
+
+[00:03:33] Alex Schleifer: I think I might have done something for it at some
+
+[00:03:35] Brian Morrissey: Oh, really? It's been around for 20 years and, it is a great celebration of, the great industry of advertising. So you're missing it. A lot of panels. A lot of, a lot of parties by technology, ad tech companies. I don't know. Have you done anything, Troy? Advertising week related?
+
+[00:03:53] Troy Young: Well, I don't know if this is related. I went to a book launch last night from, my friend, Lauren Sherman
+
+[00:04:00] Brian Morrissey: Oh, 
+
+[00:04:01] Troy Young: Chantel Fernandez launched their book
+
+[00:04:04] Brian Morrissey: The Victoria's Secret book.
+
+[00:04:06] Troy Young: Correct. Yeah. Yeah. It was fun. Good to meet, see a bunch of people.
+
+[00:04:10] Brian Morrissey: Okay. I think this, this hurricane, but I can't tell whether this is a minority experience of it, because it's become very much, In the information space. There's a lot of there's characters coming out of it. There's some guy called Lieutenant Dan, who wrote out the storm in, in the Bay and Tampa on a 20 foot boat.
+
+and Caroline Calloway, who, I believe is, by some thought to be the worst influencer in the world. At least she's been christened that, she's down in Sarasota. She's also riding out the storm. she's promoting her book. Everything's an excuse for content. A lot of content creators are out there.
+
+And then of course, a lot of misinformation. and there is a disturbing number of people that think that the government apparently controls the weather. It's not that I've noticed.
+
+[00:04:56] Alex Schleifer: I mean anything more than one seems to be disturbing to me. I don't know if it's a, I don't know if it's, if it's as substantial as the news makes it out to be. But you know, a lot of people, enough people believe that the Earth is flat for there to be a conference business built around it, right? 
+
+You should always see like , oh, flat earthers have 
+
+[00:05:15] Troy Young: we're, we're speaking at it later. 
+
+[00:05:17] Brian Morrissey: Oh, 
+
+is that what this is 
+
+[00:05:18] Alex Schleifer: Exactly.
+
+[00:05:21] Troy Young: Um, I, I don't know. I mean, it's just people playing around in the information space. Brian, I don't know how many people really believe that
+
+[00:05:28] Brian Morrissey: Well, I think that's the interesting thing is when you get into these,
+
+more confined spaces, when you get beyond mass media, is that, you start to lose sense of like, what is like widespread and what is not, you know, sometimes I find if I spend too much time on, on X, it's completely warped my sense of reality.
+
+Like, I'm like, there, no, this is not how, Quote unquote the majority of people like are seeing the worldI think it's going to be interesting as we retreat into these these niche spaces Because it does warp your sense of what real is like going on X like for me I would think that like a large group of Americans believe that the government controls the weather 
+
+[00:06:11] Troy Young: Hmm.
+
+Maybe you need to follow different people.
+
+[00:06:15] Brian Morrissey: No, it's not followed because it's, it's all algorithmic.
+
+[00:06:18] Alex Schleifer: Yeah, I 
+
+[00:06:18] Troy Young: I don't know. I thought that I turned on the news last night and came home and, you know, it's a strange world. I, the, the, Main screen was, you know, photos of, or live video feed from Tampa. the the ticker bar at the bottom was updates on the war in the Middle East. And then below that was the,the record breaking day in the markets. you, you start to wonder, what is this place we live in, right? Like it's, it's a strange world to, to navigate. 
+
+
+[00:06:51] Podcast Election
+---
+
+[00:06:51] Brian Morrissey: the presidential election is in its, homestretch. And again, just to go back to this information space theme. It's really remarkable that the approaches that the campaigns are taking. Now, obviously, American elections have become these battlegrounds over, over niches, basically niches of voters, whether it's in the collar counties around Philadelphia or in, you know, The Midwest or demographically, there's a lot of fight for young, low information voters at this point, right?
+
+whether that's young men, young women, I mean, just this week, Trump was on a, was on like a comedy podcast. meanwhile, Kamala Harris, was on call her daddy, podcast and then Tim Waltz walls got, He got deployed to He was on a Twitch stream.
+
+[00:07:45] Troy Young: These are the new talk show appearances, right? This is the podcast election.
+
+[00:07:48] Alex Schleifer: I mean, if you look at the numbers, like, if you look even at the nightly shows, numbers and stuff like that, they get completely destroyed by those YouTubers and podcasters, right? And then on top of that, politicians get likeyou know, like more time to talk and it's, and it's less likely to be like, a serious reporter that's going to ask them questions.
+
+So they might, I mean, I think she did 60 Minutes, right? And then she did a bunch of podcasts. And then Howard Stern, I think it's a smart media strategy. I mean, I think that's just the way things are today. 
+
+[00:08:20] Troy Young: She did 
+
+[00:08:21] Alex Schleifer: are finally, she did Colbert. But Colbert, you can see those things like those, those nightly numbers aren't, aren't that big, but then it's all the kind of YouTube clips that and tick tock.
+
+You know, that, that, that make, make up for it. it's just a very, I mean, it's finally, I think it's finally shifted. I don't know how the next election looks like, you know. Is there still the 60 minutes and stuff like that beyond that, you
+
+[00:08:44] Brian Morrissey: Yeah, but I think this, this, this carries over into, I mean, to me, what's interesting is presidential campaigns are incredibly compressed, right? And so they, sometimes, they're a harbinger of, of trends that will wash over, the entire media ecosystem. They just have, they just, there's more urgency in, in these kinds of,
+
+[00:09:07] Alex Schleifer: Maybe we can put a clip of that, podcast appearance by Donald Trump on, on flagrant, it's Andrew Schultz and Akash Singh, I think. 
+
+[00:09:16] Flagrant: I have a hard time doing it to them because I'm based, you know, I'm basically a truthful person but, and, and frankly, no, but frankly, no, but frankly, 
+
+[00:09:26] Alex Schleifer: it's quite something because he starts talking and they, they burst into uncontrollable laughter and it's, it's glorious.
+
+So
+
+[00:09:35] Brian Morrissey: well, they can't help it. I mean, he's, he's funny. He knows he's funny, right? Right.
+
+[00:09:39] Alex Schleifer: but it's more like he says, I think he says something at some point, like I'm a truthful person and, and, and the host cannot contain himself. Uh, it's definitely good entertainment, you know? 
+
+[00:09:49] Brian Morrissey: I think it's fine that it's not just like, I think when it's like, yeah, the New York times editorial board,I mean, at this point it is low information voters and it's fine. Like most of the decisions that are being made are based on like vibes. So this is fine.
+
+You get like a cut of their jib and see if, See if it sticks. I don't know. I don't think it's such a bad.
+
+[00:10:14] Alex Schleifer: Why would you think it's bad?
+
+[00:10:16] Brian Morrissey: Well, I think that there is, there's a knee, knee jerk reaction within sort of institutional media because it's viewed as a threat, right? so, you know, You know, a report came out about Tiktok being used as a news source and, oh, surprise, surprise, you know, most people on Tiktok are not following like institutional news accounts or journalists, they're following quote unquote creators, right?
+
+And it's part of, I think, the, the waning power of, the overall news media. I think it's like, it doesn't get replaced. There's just more sources of information now. And so obviously anyone trying to influence public opinion, whether you're an advertiser or a politician and politicians are basically advertisers.
+
+you're going to diversify how you reach people because. That just makes sense.
+
+[00:11:10] Alex Schleifer: I mean, I think it's just more at the end of the day, everything's entertainment. People are trying to maximize their minutes, you know, by making them entertaining. And I, and this is all about, having so much access to commentary, right? everybody really kind of wants commentary that's contextualized into something they like.
+
+So it's either, you know, watching the original Daily Show because they made the news fun. And then we found out very quickly, right, that most young people that was 10 years ago was, were getting the news from the Daily Show, right? And then that switched over to kind of the YouTube sphere gurus on the left and the right that recontextualize the news.
+
+So the news ecosystem is still there. They all use clips, you know, from CNN and everything like that, or they all talk about this article they read, but they're just recontextualizing it for their audience. And I think we're just building layers of abstraction between the news, and people.
+
+And then what politicians have found out is, well, let's go straight to the commentators. 
+
+[00:12:07] Troy Young: Yeah. It's funny though, the, the buildup to any election is about a process of understanding promises and policy and character, so that you can minimize the risk of making a decision as a collective. We used to filter all of that through, a small group of elites that would allow, that would, that would provide us with a construct and information to make a decision, and now, it's coming at you from. You know, every direction and it's turned into a, you know, like a weirdo beauty pageant and it's just, you know, so you, you, it's just hard to understand, first of all, how you make the decision. I mean. and then, you know, I think more troubling is how we hold or how we manage accountability after that decisions made, you know, in terms of you have someone who's elected that's doing things that cost people lives that change the fabric of a country that, you know, that have real consequence. And so. You know, if, if the run up to this thing is a sham and we don't make good decisions and then afterward we're sort of incapable of kind of holding people to account because there's no good information, that's really troubling, right? it's hard to understand where the checks and balances are in a system that at the, you know, at the end of, of it all have, have real consequence to how people live.
+
+[00:13:41] Brian Morrissey: Yeah. I think a lot of that is again, Trump scrambled everything, but I think when you look back at the rise of Trump, I think one of the mistakes that the, the, the quote unquote, the news media made was to get sucked into the, the daily Trump show drama. And instead of focusing on government accountability, like, I think that a lot of, news, newspapers in particular should get out of the endorsement business.
+
+I think they've scrambled, they've scrambled it up too much and, that's not the role to me, telling people how to vote. the role is to hold government accountable. I don't care who's in office. Eric Adams was pretty clearly corrupt from the beginning. The fact that it, you know, nobody was covering that.
+
+You know, nobody was, was digging into that. Now, is that because of politics? I have no idea. But like, this idea of, of getting swept up into the drama, Of the politics versus actually holding government accountable. Like I don't care who's running the government. That's that to me is a very viable role. 
+
+[00:14:45] Troy Young: That's
+
+why this Balmer thing that we highlighted a couple weeks ago is I think important, which is a sort of media brand built around just the facts and explaining them to people.
+
+[00:14:54] Alex Schleifer: Right, but the problem is you're building these, can't really blame the media, and I can't believe I'm saying that because of the way the system is built. And there's a profit motive attached to it. And having opinionated media is what people want right now. So everybody's kind of pulled into that.
+
+And then when the biggest show in town is Trump making either a fool of himself or showing people the light, then, the, the, the news outlets need, need to cover it and, and they're, they're trying to run a business and I think. at the end of the day, what's probably healthier is that we have more access to content and layers of abstraction and people that can, you know, provide, you know, context via YouTube or podcasts on top of the news.
+
+That seems to be where the thing is settling because I think we're gonna, wait a while if we think that there's going to be a news source that come that's, that does all these things, right? That says like, well, we're just going to be about the facts and we're, and it's successful because people want.
+
+You to pick a side every it's like it's just such a strong Force when there is none of that, when there is not that much choice, then sure, sure. Yeah, we'll all look at something and it'll be factual. But, when I can choose a new source, that is fun to watch that kind of blast the other sides that has an opinion, I'll choose that.
+
+and that's, what's happening right now, you know, like it's, you can't really blame the media. Like, what are you going to do if you run one of these businesses? not cover Trump, not do this.
+
+[00:16:21] Brian Morrissey: I wouldn't say 
+
+not cover Trump, you know, we're going to talk about bad bets, right? I think, I think betting on the op being like the opposition was a bad long term bet. It was a, it was a very good short term bet and all the incentives, the profit incentives were there to take the resistance role.
+
+I don't know how the election is going to turn out, but there's, according to the betting markets, it's going in Trump's direction. Right. And. I don't think it's a coincidence that, you know, taking the opposition role, if that was like genuine, really didn't work at all, right? And, and the, the trust numbers have just gone down for, for news media.
+
+So that was a bad bet, I would say. 
+
+
+[00:17:05] Bad Bets
+---
+
+[00:17:05] Troy Young: Do you want to introduce this idea of bad bets as a segment?
+
+[00:17:08] Brian Morrissey: I want Alex to.
+
+[00:17:10] Alex Schleifer: I was looking at, you know, past episodes that we had. And we, we, we made a lot of, predictions, around AI and then that's the different companies were doing was either Microsoft kind of going on it, all in on, on open AI, you know, Zuckerbergs, Berg's bet on the metaverse,Google's kind of, you know, Feeling that Google was kind of caught like a rabbit in the headlights.
+
+There were, there were lots of, you know, Microsoft spending 70 billion on Activision. and the world looks pretty different now. And some of these have been, you know, bad bets and then also bad calls by us, I think, and I wanted us to, to kind of review them and then also look at, at media, bad bets and good bets, you know, some things that we might have not expected would have worked, have worked, uh, some things have fizzled out.
+
+So I thought we would, we would look at kind of decisions, ours and, and theirs, that might've been bad. Does that make sense?
+
+[00:18:05] Brian Morrissey: Yeah, that makes sense.
+
+[00:18:06] Alex Schleifer: this is why I actually bought and wore my meta glasses today. Because I was always coming in hot against meta and I think they've been having, they've been doing gangbusters.
+
+All it took was Zuckerberg to get like a six pack. and now everybody loves him. but I still think, you know, that the metaverse bet was a bad bet. And, Apple did the worst bets of all, which is it got, you know, pulled into this fight with the vision pro and then completely dropped it because turned out that the next wave was AI.
+
+And it's interesting if you look at where we were a year ago or a hundred episodes ago, two years ago and where we are today, people are sitting in very different positions and I would say Google sitting way is way better than it, than I thought it would be Apple's in the worse position than I thought it would be Meta's in a better position than I thought it would be and Google's open AI and Microsoft's open AI bet might not, you know, have been, the best decision, but we'll see about that. So 
+
+[00:19:04] Troy Young: do you think is a bad What's a bad bet in media, Brian?
+
+[00:19:07] Brian Morrissey: Wait, let me, let me stick with, with tech for instance, because I think you can't really compare the two because like, bad bets. I mean, it's bad bets with like monopoly money. Like, so Apple made a bad bet. It's it's market cap is up 28 percent in the past year. That's a bad bet. That's what, that's what losing looks like in these industries.
+
+I mean, this is basically Lena Kahn's like arguments. Like it doesn't matter if you're the house, like you can't lose. so if you're sitting on a pile of cash, if you're Google and you have basically the greatest business model ever invented, you can make. Like 50 bad bets, just make the bet at that point, like, is Oculus a bad bet?
+
+Who cares? Like, I mean, they have so much leverage in these businesses that to compare it to like a media business, they can't make big bets. you can take moon shots when you have a stranglehold on these markets. is it even a bet when there's no downside?
+
+[00:20:06] Alex Schleifer: I don't think there was no downside I think Meta's had to work really hard to kind of work its way out of, of, you know, the situation they were in with, with all that, you know, investment into the metaverse to talk about the metaverse. And now their story makes a lot more sense. Now the bad bet was betting against meta.
+
+because I think, I actually think Zuckerberg is also a smart guy and they've worked really hard to, to move out of that, but the 
+
+[00:20:33] Troy Young: Maybe don't be too quick to say the Metaverse is a bad bet.
+
+I mean, I just disagree with that.
+
+[00:20:39] Alex Schleifer: Well, I mean, maybe in 10 years, but I think, I think the, that 
+
+[00:20:43] Troy Young: I mean, there is no path to a new platform, you know, this, all of the stuff that, the stuff you're wearing on your face without the Metaverse. And I would argue that The metaverse was an accelerant for their AI development because the AI and kind of metaverse go hand in hand and now they've done You know the extremely hard work and investment required to build the competency in hardware that you know TBD but it looks like it's gonna pay off so 
+
+in you know I mean, I I don't think it was maybe you know a clear
+
+[00:21:15] Alex Schleifer: that's why I'm saying like my. betting against Meta was the bad bet. I'm calling that out and, and part of that is that I think that the thing that they demoed, at their event, the glasses that kind of like looks somewhat like glasses and can project, mixed reality in front of your eyes.
+
+they're still big and they still cost like 10, 000 to make, but I thought we were 15 years away from that. You know, I didn't think, I didn't think we were, we were that close to that. And that's completely changed the game. And it's probably, you know, Apple might have something in their lab running like that, but I think it's just, that was, they just threw fuel on that fire and I, and I expect we will have these types of products, you know, in the next two, 
+
+[00:21:55] Troy Young: think Brian's point is, is terrific that, you know, when your company's throwing off billions of dollars in cash flow and, you know, the market's preventing you from acquiring your way to the next, you know, equilibrium that, you know, you throw a huge amount of money at innovation and, you know, the, the path is, is non linear.
+
+I think that the biggest bad bet I would, I would, to transition the conversation to media, I would say would be, probably CNN and, the bet there was they could, you know, continue to rely on, cable news is the primary distribution,you know, environment for them and that they would, you know, build a big free website. And had they changed the way they thought about, you know, their primary distribution vehicle and everything that would be required to serve that. New customer. you know, CNN would look more like the New York Times, that have built, you know, a subscription based business against cohorts, diversifying news to games to lifestyle and figuring out how to, to build, you know, really, you know, a trusted kind of, you know, app based relationship on the phone that will sustain the subscription business. And now you see, you know, CNN kind of coming to the. the paid, you know, internet based or DTC game really late. And, you know, still a lot of profit in the business because of, you know, the, the cable system. But I, I think that the transition is going to be really, really hard and they're, they're, they're sort of a day late. A dollar short
+
+that so they they they could have made a different bet on shifting distribution much earlier And the company would have looked a lot different.
+
+[00:23:39] Brian Morrissey: What do you think broadly, though, within the publishing landscape, from the beginning of the internet, was like the worst bets? Now, a lot of them, I don't know what the alternative was. Like, you know, betting, betting on distribution you don't control. you know, throwing your lot in with the platforms.
+
+Clearly in retrospect, bad bet.
+
+[00:24:02] Alex Schleifer: was like stage two, right? So stage one was deciding to put out free content
+
+[00:24:08] Brian Morrissey: Okay, yeah, free content, but that,
+
+[00:24:09] Alex Schleifer: then that forced you to generate more traffic that only the platforms could give you. And then you sold your soul to the platforms. That was like the second sin, right? you know, and then that the cap was out of the bag after that, for sure.
+
+Right.
+
+[00:24:22] Brian Morrissey: right, but like, were those truly bad bets? Because it wasn't like you're, you're sitting there like meta or anything you can do like, whatever man is up 82 percent the last year. is that because they made good bets? I don't know. I mean, it's just, that's just how it goes. 
+
+[00:24:37] Alex Schleifer: I don't want to bring it back into tech, but I wouldn't underplay the fact that there's like real consequential decisions that these guys are making
+
+[00:24:44] Brian Morrissey: of course they make consequential decisions. I'm just saying that
+
+[00:24:47] Alex Schleifer: and, and it doesn't mean like in, in tech, especially with these. The big guys, it's not like the bets are going to, yes, you know, maybe the, the media bets we're talking about are the catering budget of meta, right?
+
+And the bad bets are existentials for the CNNs of the world, but that doesn't mean that not like hugely consequential and, allowing the companies to kind of dominate in whatever fields are emergent. 
+
+[00:25:11] Brian Morrissey: yeah, like opening up three mile, island again, I guess that's a medium sized bet for Microsoft, or is
+
+[00:25:16] Alex Schleifer: oh yes, they opened up a nuclear plant just to, to, to power the LLM. But, mean, I think the CNN, but the thing about that, that kind of baffles me is that everybody was seeing that the car couldn't make the jump over the cliff, right? Like, and they were just going, no, no, no, let's do it. Let's like, let's not pump the brake.
+
+Let's go this, this way. We're going to, we're going to jump that cliff. And, what happens in the room when they make decisions like that? What do they 
+
+[00:25:43] Troy Young: I I mean the real time bet on this is happening right now I mean really happen. I I I like your point you guys that you're saying when you were in that and you were not only Optimizing a media business for a new type of content creation. So for example, if you were a print business that made a publication or a newspaper, you had to learn how to do all the other things, right?
+
+You had to learn how to publish at a new frequency with more intimacy, with all of, you know, with, you know, challenged by the kind of, Personality and authenticity of a world where everybody could create. And so you had to learn a kind of new content creation, vocabulary, and new mediums and new rules of distribution.
+
+And you're like, Holy shit, one's going down, you know, 10, 20, 30 percent a year. We got to figure out how to make money quickly to get this thing going. So it's like you know, whether it's a, it's better, it's just really survival. And, and, and then you can kind of reflect back on it and say, well, what if we had, instead of doing all of that, we just really focused on niches on quality content on subscription when, by the way, there was, you know, very little consumer appetite for subscription or infrastructure to make it kind of frictionless on the internet. And you didn't have the sort of tech investment to do it. But right now the real time. 
+
+
+[00:27:00] AI and Media
+---
+
+[00:27:00] Troy Young: new bet that all the media companies are entering into. We saw Hurst do it last week. We've seen, you know, dot dash Meredith do it. New York times. Everybody is we're, we're selling arms to a new aggregator. Right. And, and like we are saying, okay, well on the margin, we can use that 
+
+[00:27:18] Brian Morrissey: But you're talking about the 
+
+[00:27:19] Troy Young: 20, 30, um, all the AI deals.
+
+Yes. And anybody that uses AI realizes that it is. Just like the last model where the aggregators completely slaughtered media, because it was a better interface to information that aggregated multiple players into a single well executed interface.
+
+And now we're doing it all over again. And the interface is even more powerful because there's AI behind it. And we're saying we'll
+
+close the gap. I mean, look at what's, what it really means is. We'll close the gap between basically historic or evergreen content that the LLMs did well at the beginning, like all the knowledge in the world with current real time knowledge, right?
+
+Cause we're going to give you all our current stuff that we're making. And now the new interface AI is going to be, you know, twice as useful as search was. And, you know, I mean, the simple math of it is it solves a consumer problem better. And yeah, I looked at the new. a Google prototype the other day and, basically think of the SIRP response as being a generative response to whatever you want, how to get a stain out of one, you're, you know, like a stain out of clothing. So that was all generated. And then below that was a bunch of what I would call, you know, content or content marketing, like an article from Tide and an article from, you know, You know, better homes and gardens in a little strip in the middle. And then below it, three or four big links directly to sellers of the product.
+
+So think generative response, a little tiny media layer, and then commerce. You with me? and, and and so that is the replacement. That's your reality media. That's, you know, in the best case scenario for the replacement
+
+[00:29:07] Brian Morrissey: I would say take, take the middle position because 
+
+[00:29:10] Troy Young: well, the middle position.
+
+is the content that's creating the generative result.
+
+And the bottom position is the sort of abdication of the affiliate economy to the aggregator, right? Commerce going to direct commerce to, to F from, you know, beginning point to end point. Right. And that little poor middle layer, not only is getting no screen to, you know, screen visibility, but it, you know, it's given its content up to the, to the generative response above.
+
+And it's given the performance revenue, i. e. affiliate revenue to the spot below. It's like, that's
+
+death.
+
+[00:29:46] Alex Schleifer: if you look at the playbook that's been used, it's not even a new playbook, it's been used many times over, right? Where, I don't think it's entirely intentional, but this is what happens, right? tech company makes a platform, they build up the platform's utility by using content that is, commercial content, high quality commercial content, they might get in trouble, then they make deals and as they make deals, they get, they get the consumer used to a new behavior and they reduce all that friction until they figure out a way to get content for free.
+
+You start out, it's actually a piracy site. People go there to see NBC universal shows. They get sued. They build up all that infrastructure, make a bunch of deals with a bunch of people, but all of a sudden consumer behaviors have changed to become a huge platform. So most of that content gets created for free by creators, in an economy.
+
+This will, I mean, it's the same thing. Like if you think that you're kind of abstracting the, the, the, the content consumption so much from, from the writers. You know, in the New York Times building, and you're going to survive that. It's kind of like, it's kind of a scary thought, because at some point, it turns out you have the greatest editor in the world.
+
+You have training data that has learned from all the greatest writers in the world. So it means that anybody's like Twitter stream can be turned into a thoughtful article if that's what you want to read or like a bullet point list if that's what I want to read. And, I don't, I don't think that endgame looks very good for media.
+
+And, and I don't, I think there's a world where we wouldn't even notice because the models are so intelligent that they're just grabbing all that free and available content that people are willing to put into, onto the web, and turn it into high quality content. And, I mean, we listened to that podcast that was generated.
+
+That's just the beginning. Like that's, that's the stuff that I feel like, if you're, if you're just in the content creation business today, what you were benefiting from is an infrastructure to where you can create a high quality product, which most people don't have access to, but that's changing, right?
+
+Like you're getting people used to new behavior and then that's impossible to work. 
+
+[00:31:49] Brian Morrissey: So, So, Troy, is this a bad bet though? I mean, is this cause like, yes, the deals are not great. Like they're not going to get a lot of money and it's, it's pretty, the, the track record is pretty set at this point. But again, I'm left with what are the alternatives? This is I feel like. The publishing industry has been like a basketball team that's down 12 points with two minutes to go.
+
+You're just trying to extend the game. like that's all you're trying to 
+
+[00:32:14] Troy Young: Well, if you know, the sports analogy is you probably have to rebuild for a few years and, you know, get rid of your expensive talent and find a bunch of new talent. And, you know, I think that what all of this means is that. The constraining function in media companies, unlike, as you pointed out in tech companies is bridging past a future with limited resources. And so the only way that you can bet on something that is longer term is to have mass rationalization of your cost and so, and, and, and Rishad Tobacco wallet makes this point in a recent post that that he made, you need a new kind of organizational structure that bridges inside and outside in new ways where, the sort of, as he calls it, the 2 dimensional, you know, structure of.
+
+That implies authority in, in what was the kind of traditional org chart needs to give way to something way more flexible, way more organic, way different than we've seen in the past, which fundamentally means a rethinking, I think, of the relationship between, employer and employee. And, and, and I, I do think that, that this is, it is a really important thing.
+
+Like the, you know, That's what struck me about, about that, that article, which is like, we need to rethink the pact and, and, and what it means is that, yeah, you may have more of, instead of a employee employer relationship, you may have something that's Flexible over time. That's the defined by maybe a minimum payment that, that is almost like a retainer over time where health care isn't either on or off, where you can have a kind of primary and secondary relationship.
+
+Your primary relationship might hold your, you know, your health benefits and, you know, a small payment over time, and you can flex that up or down. and, and you're free by the way, which you never used to be to, you know, do a podcast with media company, a, while you do your own independent gig on sub stack,
+
+you know, and, and media companies traditionally have tried to put, I mean, I used to do this, try to put. A very firm wall around, you know, the talent relationship. And I just think that that's not going to work anymore and enter in this discussion, a beleaguered group of people that have felt like they've been, you know, they were the sort of, you know, They were the fuel in the machine for a broken media industry, which are the editors and writers and people that make the thing that, you know, we told to make more, make it faster.
+
+You know, you earn your audience, you know, hit the numbers and they're saying, no, fuck that. Like we're going to unionize and we're going to try to find a little bit of power in this relationship when that. When that pact becomes, you know, more rigid on account of a contract between a company and a union.
+
+I'm really concerned about that because what the future demands is way more flexibility in that relationship.
+
+And, and, and so, so I, you know, I'm concerned that not you have these beleaguered media companies that are, you know, that are massively constrained by their, by low trust employee relationships and it's very troubling.
+
+[00:35:38] Brian Morrissey: Bingo. I think that the one thing that comes through, I mean, you've, you've been singed by union battles before, is, when I talk with people running these organizations and just hearing, I just don't see how they can turn around the ship with the kind of adversarialness that has been embedded within these organizations.
+
+I don't, I don't get it. it's just, it's really, really difficult to run these businesses. And so much of. The battles right now are counterproductive. And, you know, if you look at that, it's not, it's not stopping the layoffs, the cuts are going to happen regardless. And I just don't understand how you can get to that more flexible model.
+
+With this kind of industrial approach to, employee employer relations. I mean, I think the dock worker strike was a harbinger and how AI and automation, in this case, it was automation of the ports. Assume AI is involved somehow. Always is, was a major part of it. And this is coming, you know, the, the, the negotiations are all within these media companies are going to be increasingly about how AI is applied.
+
+And that is just going to slow down the adoption of these models that are needed because non unionized places are not going to wait. And so I think it's going to be a, a, it's going to be a liability, I think, in a lot 
+
+of, for these companies that are trying to turn around their models. 
+
+[00:37:08] Alex Schleifer: it seems like there's a future structure.
+
+It 
+
+[00:37:14] Brian Morrissey: It's like the worst thing. It's impossible, by the way, to assign a story as an editor to any reporter to write about the impact of unions on this business. Because they either won't write about it, because they're going to get attacked on, on Twitter. By their friends, or they're just going to advocate.
+
+and just like turn, turn a blind eye to it. That's my point. 
+
+[00:37:33] Alex Schleifer: it seems like, when you're somebody talented, that's joins a club. a corporation, they come to you with a set of things that you couldn't have on your own. Right? And it used to be infrastructure. Well, that's all, like all the infrastructure is available for free anywhere.
+
+It used to be distribution, well, that's also available everywhere. and then it used to be like, well, but you can make more money here. Well, that's kind of also going out the door because we're seeing all these talented p people, you know, turning their, Their audience into, you know, newsletter signups or whatever.
+
+So I think you need to have a new structure where you hire less people. you invest less in infrastructure, but you kind of give the promise to everyone that, you know, if you're successful, you guys are all going to be rich, you know, in some ways kind of a tech, playbook where I can't see if you're, if, if you're in any way, somewhat successful, why are you staying, why are you staying in a.
+
+in a media structure, if you could,
+
+[00:38:30] Brian Morrissey: Well, I will take a little bit of the opposite because I, Taylor, 
+
+the Renz, yes, but Taylor, the Renz was an example of this. And Kyle Chayka, one of our, our former guests wrote an article and was nice enough to quote me. in the article in the New Yorker about this and, you know, Taylor, she's, she's very dramatic and I like Taylor, but, she's very dramatic and gets in lots of conflicts.
+
+And I think she's totally made for, for the independent path, not for being inside of the Washington Post or the New York Times or the Atlantic or anything like that is just not the way those, those, those brands operate. but I think that that story really highlighted, A lot of the upsides of taking the independent path.
+
+Now what I said to Kyle also though, and like, he knows really well, is when you're within those organizations though, they make your shit way better. Way better. like I'm always, I've been like, I've been in a couple of New Yorker stories and it always, it's always a kick that like the fact checker calls and goes over the quotes, goes over everything and it's like, and a lot of writers really need good editors. A 
+
+[00:39:38] Alex Schleifer: Right. But this goes back to, well, okay, but it goes back to, I guess I'm forming a thesis, right. Where you used to provide infrastructure, right. And that infrastructure was very valuable. You literally couldn't put word words in a form that people could get right. And as 
+
+time goes by. 
+
+[00:39:54] Brian Morrissey: not going to set type.
+
+[00:39:56] Alex Schleifer: exactly. And as, as time went by that infrastructure, became more and more available, more and more free.
+
+And now I believe that with AI, right, because it's all interconnected, the infrastructure of editing,
+
+[00:40:09] Brian Morrissey: Yeah.
+
+
+[00:40:09] Content and AI
+---
+
+[00:40:09] Alex Schleifer: I'm going to start writing a newsletter for the company Oh, you are. it, yeah, yeah. ads on it?
+
+You can, absolutely. Uh, I, uh, we
+
+[00:40:18] Brian Morrissey: Your investors are going to love this. It's going to be a new like 
+
+[00:40:21] Alex Schleifer: Um, but a way I do it is I use this app called Cleft and it will, I'll just speak into it.
+
+Like I'll just speak into it with a bunch of ideas that I have. It'll record 30 transcribes that turns it into like a contextual list of things, bullet points. I grabbed that bullet point. I dropped it, drop it into chat GPT, turn it into voice mode on my commute. I discuss all the points I want to make.
+
+Then I ask it to write Transcribed first draft of my newsletter, then it spits it out, ask it to make it shorter, then I put it in a thing, I then rewrite it, but it takes me like, it 
+
+[00:40:53] Brian Morrissey: sounds so complicated, Alex. I just order a cup of coffee and sit down
+
+[00:40:57] Alex Schleifer: but you're a writer, you're, you're a writer that like seems to be able to write without
+
+[00:41:02] Brian Morrissey: This is all taking away that skill. I appreciate that.
+
+[00:41:05] Alex Schleifer: But you see what I mean? Like, I think even, even video editing stuff that is time consuming will, will, will be kind of all that infrastructure is no longer, you no longer need the New York Times or CNN. You can create great stuff 
+
+in 
+
+[00:41:19] Brian Morrissey: think, I think the hard part will be around things like legal, like services that are not able to be automated yet. for instance, liability insurance. Substack initially tried to like, you know, have something about this. You can get sued. powerful people 
+
+like 
+
+[00:41:32] Alex Schleifer: Brian, Brian, I, I, where I'm sitting right now, I can tell you there's probably 10 businesses saying there's this new creative economy. What do they need? Liability insurance. Okay. Let's make a four click thing. That is liability insurance. They already did it with, you know, there's already all these startups like pilot that handled basically like a whole CFO system, right?
+
+All of the things that made you. Made it difficult to, you know, to, to, to exist outside of a corporation is being automated.
+
+[00:42:02] Brian Morrissey: Yeah, that's true. I mean, I think 
+
+[00:42:03] Troy Young: yeah, I would, I would, I would bring it back to one thing that media companies, you said that a good media brand or the infrastructure of a media company makes you better. Brian, I totally understand that. One thing that media does is packages, you know, it turns content into a form that is More rewarding to read, I suppose, and I think that that's really the ultimate use case of AI because packaging becomes personalized and it becomes, you know, multi format. Is delivered in a way that you wanted bullets, paragraphs, audio, video, whatever. And so that role in media, which is we take information from reporters and smart people and package it. we package it with a brand. We package it with editors. We package it with images. All of that is being automated.
+
+[00:42:56] Alex Schleifer: But we've seen the decline of the brand package, right? more people use things like Google News or Apple News and, and don't even care about the source, right? turns out you only care about like, it's like, it's like music albums, right? Like, I like this song, I like that song, and, and Spotify turned it into playlists.
+
+And we all lament the, the loss of the album, the art of the album, but that's not what people want. And AI is actually incredible 
+
+at at 
+
+[00:43:22] Troy Young: Hold 
+
+on one sec, guys. Just, just one sec. Hey, Steve, what do you need from 
+
+[00:43:27] Alex Schleifer: which Steve?
+
+[00:43:29] Troy Young: You know, it's, he shows up now and then. Yeah,
+
+[00:43:33] Alex Schleifer: might show up later in 
+
+the episode, hopefully. Can you get him, can you get him back later on to do a good product?
+
+[00:43:38] Brian Morrissey: Oh yeah, that's good foreshadowing.
+
+[00:43:41] Alex Schleifer: all right, okay. 
+
+[00:43:42] Troy Young: do that. You know Steve, he's a big hunk of a man. 
+
+[00:43:47] Brian Morrissey: What were we talking about? Oh, yeah. Oh, but there's still a halo, right. To, to brands. Like, I mean, like we talked with Emily, I think we talked about it, but I've talked to her about it, Emily Sundberg, who was a former guest on here. I mean, she still writes for occasionally for, you know, brand publications, because there's, there's still a halo to that.
+
+Right. cause I was like, well, economically it 
+
+[00:44:08] Troy Young: Brands are still an important connective tissue. You know, I was thinking about this, I was, you know, Taboola, if nothing else, has been important. Incredibly successful in grabbing an immense amount of supply at the bottom of pages all over the internet, right? Like huge from Apple news to Yahoo to publisher ABC, like they're everywhere.
+
+And then you ask yourself, even if there is good content in some of those slugs below an article, right? Why do you dismiss them? Right. It's, and part of it is that a good piece of content might be next to a toe fungus, you know, content marketing slug. And. the truth is, is that without the net, all those chunks of content, those individual pieces of content without context, without brand at the bottom of a page are useless to me because there's nothing to signal quality or, you know, relevance. And, you know, I think it's for, for their part, the part, part of it is just the system where anybody can inject content into something that's going to spray all over the internet, but, you know, and, and as a result, there's, there's never. There's never any context. And in that world where pieces of content are completely disaggregated from the signals you need to say, am I going to spend time here or not? They're, they're random. They're totally random. And then the price of them drops to the price of randomness.
+
+[00:45:33] Brian Morrissey: So I have, I have a question then. 
+
+
+[00:45:35] Open Web
+---
+
+[00:45:35] Brian Morrissey: Was, was betting on the open web a bad bet? 
+
+You should have stuck with Pathfinder. Yeah, I mean like the open web seems like it's disappearing. it doesn't have a lot of, people who are 
+
+[00:45:46] Troy Young: is the open web disappearing though? I
+
+don't think that's true. I think we have to be careful when we say that. I mean, new interface forms like OpenAI exists on the OpenWeb. I use it on the OpenWeb. I get, I continue to get a lot of information from the OpenWeb. Reddit's on the OpenWeb. we get our email on the OpenWeb. You know, the OpenWeb, it never take away my OpenWeb, you son of a bitch.
+
+[00:46:12] Brian Morrissey: This is definition. This is definitional. You know what I mean by
+
+[00:46:15] Alex Schleifer: I think it's a tricky question to answer though, because it's, it's, it's multifaceted. One, like, if the open web had an infrastructure for payments built into it early on, which, which, which 
+
+people, I think, like, Which, which should have, but like there was a philosophical kind of disagreement around whether or not that should be the case.
+
+I think media companies would have been less pressured into moving all their content into, you know, platforms, which in turn made the open web less relevant for this type of stuff. But it still remains like one of the best, ways to distribute 
+
+[00:46:46] Troy Young: think of, yeah, I mean, it really, there's all, there's, there's payments and then there's access to native functionality on devices that really limited it to be more of a dumb document repository. And then we spent years and years and years putting JavaScript on top of it to make it behave like something more sophisticated and it never quite did.
+
+Got there,
+
+which gave way more power to the, to people that made apps. Apps are naturally, you know, are natural, have a power law more so than the open web.
+
+[00:47:15] Alex Schleifer: well, I mean, also, also both, you know, Google and especially Apple is incentivized not to make the web better, right? 
+
+There are lots of things like, you know, putting a website as a, as a, app, as a shortcut app on your, on your iPhone's desktop is just, you know, complicated and messy enough so that it's not compelling.
+
+[00:47:35] Troy Young: by the way, pet peeve, pet peeve number 2000.
+
+[00:47:40] Alex Schleifer: I think it's a new segment.
+
+[00:47:42] Troy Young: no,
+
+it's like a peeve. Um, 
+
+[00:47:45] Alex Schleifer: I think it's 
+
+[00:47:47] Troy Young: So, so Apple, Apple has had years to muscle their way into premium content through the acquisition of Texture and the creation of Apple News and Now it's a, it's a, what is it? A left swipe, on your, on your phone. It's built into, you know, a kind of native notification system.
+
+They have every single advantage in the world and the interface to content via Apple news sucks. It's so bad. It's so hard to find stuff there for you feed is ridiculous. And, you know, they've tried to work in audio and, you know, interactivity and games and stuff, but Apple really has, to me, has squandered what could have been the most beautiful interface to information.
+
+[00:48:36] Brian Morrissey: And it's wildly successful. That's
+
+[00:48:38] Troy Young: Well, because they have
+
+[00:48:39] Alex Schleifer: it's there. 
+
+[00:48:40] Brian Morrissey: what I mean. It's like, it doesn't I want to make these bets where like, no matter It's like, yeah, let's make a bet. Tail, tails we win. Heads we win. I don't know. What is the
+
+[00:48:49] Alex Schleifer: I think we're gonna,
+
+[00:48:50] Brian Morrissey: I'm surprised they don't produce worse stuff. Because without that kind of downside risk
+
+
+[00:48:56] Big Tech
+---
+
+[00:48:56] Alex Schleifer: I can't help but to think that it would be the best thing for companies like Apple and Google that, people come in and start, that governments come in and start just like messing with their structures. Because I think at this stage, It is actually, you know, the ability to make bad bets that have very little repercussion is kind of cancerous in an organization.
+
+You know, it let Google just like stagnate and, and that got an existential risk when they noticed they didn't really invest in, in, in, in just like building consumer AI as they, as they should have. And, and it would, you know, it could be a great thing,for Apple. If the, in, if there was like somebody that forced them to open up the app store, it would be a great thing for Google.
+
+If, somebody, uh, you know, forced them to open up the app store or, or broke them apart, because then it would actually get like all of this energy and this talent and this technology that they've created. kind of accumulated to be used to actually compete in the market.
+
+[00:49:49] Brian Morrissey: So wait, are they still doing this sort of hoarding of talent kind of thing?
+
+[00:49:54] Alex Schleifer: Oh yeah, 
+
+for sure. I mean, man, they, they, they, you know, they, they, they buy companies for hundreds of millions of dollars just to 
+
+[00:50:01] Brian Morrissey: yeah, well, that's another sort of aspect, you know, the DOJ came out with its proposed remedies in the search case and, you know, they're going there. I mean, they're saying that, you know, this probably needs structural. I don't know if they'll get, get, get this through. And these things are always tied up forever.
+
+Right. But the fact that it's now widely being discussed, the structural remedies, not because, you know, I think you can only get away with it so long. I mean, these consent decrees. Every single time they're violated, and these fines just don't stop these companies at all. you know, look at Facebook with, what is it, Whatsapp?
+
+It's just like, it doesn't, it doesn't work. So, I think it'll be interesting to see if that actually comes to pass. And they're, I mean, I wrote a little bit of today about what this kind of post Google, I don't mean post Google, Google's going away, but like, you know, Google's grip as basically the, the dictator of the internet, you know, being, loosened is going to be massive.
+
+[00:51:03] Troy Young: Yeah, the one of the, I struggled a little bit to me, any big company, a big company is defined by market power. Market power largely means some type of moat because you have a network effect or distribution dominance or some kind of hold on, you know, talent or resources. And, You know, big companies are sort of by definition inefficient and, sort of exist and kind of float along because they have this unnatural power that, that prevents them from being disrupted at any moment by someone more nimble, you know, smarter, think, thinking new ways. And so if you break down Google, there's really like five or six entities that. All each of them have their own market power dynamic. That could be separate companies and thrive as such. So YouTube has a massive network effects as being the video aggregation point for millions of creators and millions of consumers connected by an algorithm and a brand that supports that.
+
+You know, natural business, huge in and of its own right, cloud, particularly when you add AI to cloud, huge business, right? Search is the connective tissue of the open web. You know, Android is the thing that controls millions and millions and millions of mobile phones and, and, and the connective tissue for an economic.
+
+a marketplace called the app store. So all of these businesses are in their own rights, businesses with distinct distribution, power moats, network effects, et cetera. 
+
+[00:52:39] Brian Morrissey: Ad 
+
+[00:52:40] Troy Young: a, 
+
+[00:52:40] Brian Morrissey: ad tech. Let's not 
+
+[00:52:41] Troy Young: ad tech.
+
+which is, yeah. And, and all, and all of them to me, when you add AI onto them and the sophistication and investment required to manage AI on top of them makes them that much more powerful. Like add AI to search and suddenly it's the only place to get answers, add AI to search and suddenly it's the place that connects a content query to a commercial query, add AI to, you know, a YouTube video marketplace and it becomes the clearinghouse for all content that's harder and harder to permeate, add AI to the cloud and it becomes the You know, the place that not only delivers, you know, basic compute to you, but also solves your problems and, and has the density of something that's thinking on your behalf. So, you know, it's like someone ought to break Google up and it'll be just fine. There's like, there's like a bunch of things that can stand alone inside of that company. 
+
+[00:53:37] Brian Morrissey: Yeah, and and the AI in ad tech is the PMAX, you know, I mean, they're just gonna do end to end black box
+
+[00:53:43] Troy Young: Oh, you add AI to add tech and it just becomes something that people, you can't even deconstruct anymore. You know,
+
+[00:53:52] Alex Schleifer: yeah,
+
+[00:53:53] Brian Morrissey: ending
+
+[00:53:54] Alex Schleifer: yeah, perfect.
+
+[00:53:55] Troy Young: bad bets, bad bets from Alex Schleifer.
+
+[00:53:58] Alex Schleifer: Well, I mean, just to maybe just one last point. And actually, ironically, it was the Google's bad bet here might have been that they, um, actually allowed secondary stores to open up because they went fully open source and, and, Apple. At the ruling against Apple's App Store, it, you know, Apple's still allowed to have a locked down App Store, but Google, because it had other stores and was, then forced to kind of strong arm people into installing the Play Store, they, you know, they had a much weaker case.
+
+so 
+
+[00:54:28] Troy Young: Yeah, 
+
+because they had to do those deals. yeah,
+
+
+[00:54:32] Good vs Bad Bets
+---
+
+[00:54:32] Troy Young: I mean, there's lots of bad, here's a bunch of bad bets that we can watch going forward, right? Obviously, you know, we can put the ones behind us that are That are, you know, seemingly already played out like cable made a bad bet by giving up, you know, dominance to streamers and, oracle made a bad bet on ad tech when they, you know, paid way too much for moat and grapeshot and blue kai and that all evaporated.
+
+So oracle never did ad tech, We're about to see what the outcome is. Is Elon and Tesla's bet on camera versus LIDAR at way lower cost, a bad bet or a good bet? And so today is the, you know, we robot event, where, Tesla is going to introduce their next generation of self driving vehicles. Apparently, the difference between putting LIDAR on a Waymo and, you know, a bunch of cheap sensing camera devices on, on, on, on a Tesla, the, the, the economic difference is massive. We'll see whether or not the, you know, the, the sort of Elon bet is a good bet because of, because it's cheaper, but it can't actually get to the place of self driving.
+
+So, you know, that's a big bet. You know, there's lots of bets like, you know, again, SpaceX made a bet on fundamentally changing the economics of, of, of space. Right? Like, you know, shooting a rocket up at one tenth the cost of NASA that enabled them to do repeat missions and put satellites into space. And so that was a good bet, right?
+
+That one's proven. I like this. I like this construct, Alex. Good versus bad bets. And there's the ones that we don't know yet.
+
+[00:56:06] Alex Schleifer: yeah, we should do another episode on, on, on, on good bets, coming up, but I got to run. 
+
+[00:56:12] Troy Young: What do you 
+
+[00:56:12] Brian Morrissey: right, we have to do good product. We're gonna have a guest good product. Is
+
+[00:56:16] Alex Schleifer: Uh, yeah. 
+
+[00:56:18] Troy Young: Well, there's a guy 
+
+[00:56:19] Alex Schleifer: in? 
+
+[00:56:19] Troy Young: here, you know,
+
+[00:56:20] Brian Morrissey: Your 
+
+[00:56:20] Alex Schleifer: All right. So well, yeah, he he gets up and he tells my kids to make him coffee and, walks around in his underwear.
+
+Can you, can you introduce him for people who don't know who he is like myself?
+
+[00:56:32] Troy Young: well, he's kind of a legend in the, advertising world. I call, I used to lovingly call him the Hunter S Thompson of advertising. And, he, for many years, many, many years, Played a pivotal partnership role at Omnicom, connecting, you know, the, that, media holding or that advertising holding company to all the big tech companies.
+
+And so it was well known by everybody in the industry and these big character lovable guy. And he, drops by now and then and
+
+seemingly sort of takes 
+
+[00:57:01] Alex Schleifer: great. 
+
+[00:57:01] Troy Young: the house. 
+
+[00:57:02] Alex Schleifer: So, let's bring him on.
+
+[00:57:04] Brian Morrissey: Let's do good product. Is it time for good product?
+
+[00:57:07] Troy Young: Good product 
+
+
+[00:57:08] Good product
+---
+
+​
+
+[00:57:10] Troy Young: we got steve cattleman as a guest good product commentator here.
+
+[00:57:14] Brian Morrissey: Isn't it Ketelman?
+
+[00:57:15] Troy Young: it katelman or cattleman? It's both
+
+[00:57:19] Brian Morrissey: Interesting.
+
+[00:57:20] Troy Young: steve Why don't you try to figure out a way to get over here?
+
+Hold on one sec guys
+
+[00:57:24] Brian Morrissey: We have a special guest, good product here from Steve Kattelman Kattelman,
+
+[00:57:29] Troy Young: Okay, hold on.
+
+[00:57:30] Brian Morrissey: a legend of, the advertising industry, particularly the ad tech, uh, ecosystem. Seeing him. I think I last saw you, Steve, lounging poolside at the Fontainebleau.
+
+[00:57:41] Troy Young: hear you guys. Is that a problem?
+
+[00:57:43] Brian Morrissey: No, that's fine. We're just talking about you.
+
+[00:57:45] Troy Young: They're talking about you, and you don't, you don't hear anything. Hold on one sec. Looks like it's good stuff. It is good. We'll just take these off for a sec.
+
+[00:57:54] Alex Schleifer: Are you guys gonna share
+
+[00:57:55] Troy Young: Hold on. Just a minute. Don't touch me. I can't help it. Can you say something, Brian?
+
+[00:58:03] Brian Morrissey: Yes.
+
+[00:58:04] Troy Young: I can hear you.
+
+[00:58:05] Brian Morrissey: Okay, I don't know if that's gonna work with the Echo, but Steve, we do good, good product. I think Troy has briefed you on it. Do you have a good product for us?
+
+[00:58:12] Troy Young: You had a whole bunch. I, yeah, I listed off five to 10 things that I thought were good,
+
+[00:58:17] Brian Morrissey: right, we'll choose one,
+
+[00:58:18] Troy Young: well, no, no, they're all sort of, uh,
+
+good products. First thing that came to mind was, you know, I'm a homeowner in Nebraska and anytime I need to glue something, I said, liquid nails, liquid nails is a product that you know, that if you squeeze it out of the tube and stick something to a wall, it's going to stay.
+
+My next, do you want to comment on it or do you want me to just
+
+[00:58:38] Brian Morrissey: Well, I'll just, is that different from Crazy Glue? I mean, I'm an
+
+[00:58:42] Troy Young: different than Krazy Glue. Krazy Glue doesn't work. Krazy Glue gets all over your fingers and sticks your fingers together. Liquid nails, takes a little longer to dry.
+
+But, you know, like it's just, I remember commenting for the past 15 years, that every time I buy liquid nails, It's a product that actually does what it's supposed to do. So I've always been impressed with liquid nails. It's just something my, my, my heart feels. Steve, this broadcast ironically is brought to you by Liquid Nails.
+
+Oh, it is. Good. So good. That's, anyway.
+
+[00:59:07] Brian Morrissey: That's nails with a Z, right?
+
+[00:59:09] Troy Young: Liquid Nail, I don't know. It's got a, it says gold, gold label. Next thing, also related to Nebraska. I am a proud member of the Ultimate Sip Club from Panera Bread. And Panera breads are all over the place. And Panera, not only do you get free wifi, but you get for 11.
+
+99 a month, unlimited drinks. I thought it was 12. 99. in Omaha, Nebraska. It's almost like a, Planet Fitness. It depends on where you, where you start. It's kind of the opposite of Planet Fitness. Oh, no, no, no. This is good stuff. This is, it's healthy. I thought it was soda drinks. Well, you can get a diet soda.
+
+Oh, you can also get iced tea. So it's unlimited coffee, unlimited sodas. And for a while they had this thing called charged iced teas. Charged iced teas were like five times the caffeine of coffee. and you could go fill it up anytime you wanted. They'd, I went there one day and it was gone and I said, what happened?
+
+They said, teenagers were going insane. So they have, you have to ask for it, behind the counter.
+
+[01:00:07] Brian Morrissey: Oh, that's what, that's how you know it's the good
+
+[01:00:10] Troy Young: when you're, you know, I, I, I drove to Burning Man and a couple of Airstreams and I, I checked on my phone all the time where the closest Panera bread was off the I 80 and I'd pull in and fill up all my, all my containers with soda and charged iced teas and coffees and checked my wifi.
+
+a wonderful product. I am, you know, I was happy with it. another relevation that I was very happy with also about moving to Nebraska. There's a phenomenon of unlimited car washes. And me being a student from Berkeley, I was always very upset about these people in the Midwest that were washing their cars every day.
+
+I just thought it was a waste, waste, waste. But with them, they have free vacuum cleaners. You can, you can, as long as you drive in through the exit and go in through the outdoor, as they say, led Zeppelin folklore. You could go vacuum your car, car for free, and they had sprays where you could clean your tires.
+
+You could clean your windows. All that. You do that. Is your car clean? Well, I mean, I, yeah, I have OCD. Okay. Yeah.
+
+[01:01:09] Brian Morrissey: Yeah. But I mean, this is, this is just a recurring revenue play, right? I mean, I, I see these membership. I went to a car wash for the first time in 20 years and they had memberships they were trying to shove down my
+
+[01:01:21] Troy Young: Correct. Correct. You have, but they, they're very high tech. You can't cheat the system. They check, they scan your license plate, do all sorts of stuff. So roughly 20 a month, you can wash your one car as many times as you want. Again, kind of gross in concept, but with that, there's a way to game the system a little bit and use a, you know, vacuum your car and clean the windshield without paying
+
+[01:01:44] Brian Morrissey: That's amazing. It's amazing. Alex, can you even do this in Europe?
+
+[01:01:48] Alex Schleifer: in Europe, no I think car washing is outlawed.
+
+[01:01:51] Troy Young: It is. I was, yeah, I was just in Scotland and nobody had the free, how do they clean their cars? Um, they, uh,
+
+put a 
+
+[01:01:57] Brian Morrissey: too poor. They don't have
+
+[01:01:58] Troy Young: on a, on a rag and go down and, uh, yeah. And they, the cars are on the wrong side of the street.
+
+It's all backwards. Yeah.
+
+[01:02:06] Alex Schleifer: All right, well, thank you so much. Oh, there's another one.
+
+[01:02:09] Troy Young: There's more. I'm not done. I am. Are you, are you kidding me?
+
+[01:02:13] Alex Schleifer: when Troy comes, usually when Troy comes here, he'll say something like, you know, an apple or bullshitting.
+
+[01:02:20] Brian Morrissey: This is good. This is like the closing keynote.
+
+[01:02:22] Troy Young: Well, you missed it last week, Alex. It was bullshitting.
+
+[01:02:25] Alex Schleifer: Oh, I heard it. I listened
+
+to it. 
+
+[01:02:26] Troy Young: we had a good one last night 'cause we were playing pool at the bar. Troy and I, met for a, a late dinner and then afterwards we went to a bar and I always think like I'm. I, again, moved to Nebraska, don't have a lot of friends, so I built a bar in my basement. I don't go out to bars 'cause there aren't really any good ones.
+
+But last night we were down in the East Village or somewhere and the idea of going to somebody else's place and getting a beer and, and drinking and you don't have to clean up and you can talk to strangers that you wouldn't normally talk to. I still love that phenomena and in this bar was a pool table.
+
+And another thing that I really love is pool tables in a nice local bar. Troy and I played, I, I beat him. Crushed me. Yeah, what else you
+
+[01:03:10] Brian Morrissey: they should have, they should have pool, memberships at those bars, right? Like, just unlimited pool.
+
+[01:03:15] Troy Young: the 7 beer that they paid 60 cents for.
+
+Yeah. Yeah. And the pool table is high tech now. I don't know 
+
+if you guys know this. You can now pay with a credit card. You just, you just tap your card on the table. It's, it's, it's everything's high tech. Yeah. So, and the English guy was a good competitor that we played. He was a little bit like, you know, trying to like, I made up a term called getting a sifo in.
+
+Well, Like it's when you take advantage of a moment that you shouldn't like, and he was doing that last night. Well, and he had that rule about putting the ball anywhere. What do you call it? Hold your ball in hand.
+
+[01:03:44] Brian Morrissey: Yeah, ball in hand, so that's a,
+
+[01:03:46] Troy Young: He also said, check this out, Brian, tell me what you think. If you scratch on the eight, you don't lose.
+
+Then this dude pulled up a rule book out of his phone. Like you can scratch on the eight, you lose dude. Get, get,
+
+[01:03:56] Brian Morrissey: those are weenies. Those people are weenies. They're the, like, the people who insist that, like, who correct you when you use data, like, as 
+
+[01:04:03] Troy Young: Yeah, I mean, remember how handy that pool thing was? It was not like he was searching for the rules, he had it handy.
+
+For the record, For the
+
+record,
+
+the American association of billiards does you don't lose until the, eight ball is hitting the well, then you, you, thankfully you beat him and he, he 
+
+left and the final, well, now that you're on the road a lot, you like, like me and others really appreciate YouTube TV, which is your cable box in your pocket, right?
+
+I was saying I do pay for, I pay a monthly subscription, which is because of the live TV, but I, I'm a fan of YouTube television. And also I was just in Scotland for 17 days and YouTube free version. I think it's phenomenal. I got so much good content. It was like, I always used to say back in the day, as I was a fan of the newspaper, because I, you know, I'd read a story and I didn't know that I was interested in this other story that was right next to it.
+
+It's similar to the YouTube television. It just plays stuff that it thinks you're interested in. I found out, I think it was kind of, I didn't realize it. YouTube television is pretty badass, dude. So good. This was better than if we had planned it. No, I didn't. I appreciate you coming by. All right. I'm going to go.
+
+Can you finish the laundry? I'm going to get rid of your laundry. I'm going to see you guys. Yeah.
+
+[01:05:13] Brian Morrissey: See you, Steve. 
+
+
+[01:05:15] Outro
+---
+
+[01:05:15] Brian Morrissey: ​
+
+Okay, we should leave it there 
+
+Good episode, guys. Troy, I'm gonna see you later. I still have a few topics you guys
+
+[01:05:22] Alex Schleifer: Break a leg.
+
+I think, I think the dance number is going to,
+
+[01:05:25] Brian Morrissey: I didn't do, I don't believe in panel prep call.
+
+[01:05:29] Alex Schleifer: all right. Well, good luck guys.
+
+[01:05:30] Brian Morrissey: All 
+
+right. 
+
+[01:05:31] Alex Schleifer: Like remember, remember to tell everyone to like and subscribe and whatever they need to do. Okay, we're on YouTube, we're on podcasting 
+
+platforms. Max shamelessness, 
+
+Max Okay, all right, See you. 
+
+[01:05:44] Troy Young: So,
+
+​
+
+[01:05:45] Brian Morrissey: 
+

@@ -1,0 +1,695 @@
+PvA S2E84
+===
+
+[00:00:00] Troy: Jess, we're very grateful that you're doing this.
+
+[00:00:03] Jess: Thanks for having me. Great
+
+to see you, Brian and Troy.
+
+[00:00:05] Brian: we usually do a little banter, but, let's get going. 
+
+[00:00:08] Troy: Jess means business here. she's like at the
+
+Milken conference. She wants to get busy.
+
+[00:00:12] Brian: thanks for filling in for, for Alex, who's, where is Alex? What's he doing? 
+
+[00:00:17] Troy: I don't know, is that the doctor or something?
+
+[00:00:19] Brian: 
+
+
+[00:00:19] Intro
+---
+
+[00:00:41] Brian: Welcome to people versus algorithms, a show about detecting patterns in media, technology, and culture. I am Brian Morrissey and each week I'm normally joined by Troy Young and Alex Schleifer, but Alex is away. It's unclear where exactly it is, but instead we're joined by Jess Sibley. Jess is the CEO of Time.
+
+She was named CEO there about 18 months ago, after eight and a half years at Forbes, where she was the COO. She is a media veteran. She's been through all the ups and downs. And we talk about a variety of topics with Jess, including the current chaos and search and how publishers can navigate it. The deals that are being cut for AI to access publisher content
+
+most recently dot dash narrative cut one with open AI. And we also get into Jess's approach for modernizing a legacy brand like time. And one of the things I took away was the part where Jess talks about time being a B2B company. And in this, she means that time isn't going to rely on consumer revenue.
+
+one of her first things at time was she took down the paywall, which in some ways was a little bit of a, man made thing. Bytes Dog story because everyone is fleeing in the publishing industry to consumer revenue. And I found that refreshing because sometimes the success in particular companies, particular pockets of publishing and make people believe that everything should be a subscription model.
+
+And that's just simply not realistic. And it's also not necessarily an attractive proposition. the vast majority of digital content Has been and will be ad supported. And that means building sustainable models that can support that. And we get into that in this conversation. I hope you enjoy it.
+
+And please send me your feedback to bmorrissey@therebooting.Com and leave us a rating and review on Apple, Spotify, wherever you get the podcast. Now here's our conversation with Jess.
+
+
+
+
+[00:02:33] Episode start
+---
+
+[00:02:33] Brian: Jess, thanks for joining us. It's now been 18 months at time, four then eight and a half years at Forbes.
+
+[00:02:39] Jess: Correct? Who's counting?
+
+[00:02:40] Brian: You're scouting. we want to talk a little bit about this week, about how. We're between eras in media. It's kind of a theme of this, this podcast. And I think this week in general has sort of brought that home. the one thing that I've been obsessed about is Search being in chaos. Google's has its biggest update of supposedly, that it's ever had.
+
+and there are always winners and losers to these. unfortunately, Google apparently has come for a lot of coupon. Subdomains, publishers, I know the Times, Times is still up and running, so some people just took them down, but Troy, do you want to say, what, what is, what is your take? What is going on right now with the search results?
+
+[00:03:25] Troy: You know, a lot of people have been noisy and openly critical about what's I think that, Google did the quality content update not long ago. I think it's, working really, I mean, people endeavor to optimize content to match,Google's whims and preferences and, and sometimes between the two consumers are not well enough served.
+
+So I think that the company is endeavoring to clean up search a bit and looking at areas. These are, these are, this is not algorithmic change that's happened in the last couple of days around coupons. They literally, these are like manual. Uh,you know, I don't blame a publisher for lighting up a coupon, folder underneath of their domain.
+
+It seemed like a logical strategy. We all live in a world of. trying to find new revenue streams. That's just what media is right now. And so, a long, long, long list of publishers fielded, offers from people that basically put together lists of discounts to host coupon sites, or to host, coupons.
+
+so people. just did those deals. And they were great deals because you might make a couple million bucks. You might make 5 million bucks by working with a coupon company and you trade your domain authority,for, basically a percentage of revenue off coupons. They show up in the SERP if you're looking for Coupons for outdoor furniture, coupons for Crate and Barrel or whatever, make revenue off that and it was a good little hustle for publishers until, Google said, we don't want to do this anymore. And so they took them down. And, and I think that, that, for publishers, it's a bit of a bummer because it's just pure
+
+profit. 
+
+[00:05:11] Brian: It's passive income, the internet, I, I always see on the internet people promising passive income. I love the idea. 
+
+[00:05:17] Troy: you like this stuff, right? Jess? I mean, it's nice passive income.
+
+[00:05:21] Jess: Yeah. Well, look, I think there's two things that you're kicking us off on in today's conversation. One is around,the search engine results page and the changes that have been pretty constant, butmaybe more so recently than prior,what I would add or what I would say around that is competition, right?
+
+Maybe Google has some real and new competition now in an area that they've virtually, owned. the second is, is coupons and, and yeah, like as publishers, What I've done at, at time and prior, Brian, you mentioned my prior role at Forbes is around, especially for traditional legacy media companies, that are resilient, is revenue recalibration, revenue diversification.
+
+The interesting thing about coupons, for time is. We've done coupons. I can, I'd love you to come to my office, can show you, we have every issue of Time Magazine ever printed for the last 100 years, and my team looked back, and in the 1950s, like, we pulled up, issues of Time Magazine with coupons.
+
+not only classified ads, but coupon ads. So it's something that we've done in the past, and we digitized obviously more recently. It's not been a big source of revenue for us, but definitely something that, we tested and we work with a really strong partner. I think partners are really critical, in today's media environment.
+
+[00:06:54] Troy: Totally. And by the way, Brian, it's not the first time that a company has gotten squished by Google in an overnight change. Remember
+
+what was it? Price grabber, 
+
+[00:07:04] Brian: Oh my god, yeah, you're going way 
+
+back, 
+
+[00:07:06] Troy: Shobzilla, price grabber. The, these were the, 
+
+[00:07:10] Brian: at DM News. 
+
+[00:07:11] Troy: these were the companies that preceded Google shopping. And I believe that Price Shopper was sold to Scripps for 500 million,You know, catastrophic Google, changes and then it got sold to Connexity for like a little bit north of a hundred million.
+
+It's now owned by Taboola and,was decimated overnight. I talked to the guys years ago about like they woke up one day and literally they just didn't have a business.
+
+And so this isn't the first time. 
+
+[00:07:40] Brian: Yeah,
+
+[00:07:40] Jess: Yeah, and I think
+
+of lessons there. You don't want to put. All of your business in, one place and relying on,
+
+one thing we've learned that , right? 
+
+[00:07:50] Troy: You know, Jess, it reminds me of these, quite noisy air purifier people that are out screaming right now that, that they're like way down in the syrup 
+
+[00:08:00] Brian: this is house fresh for those who are not keeping up in the, SEO land.
+
+[00:08:04] Troy: yeah, they have a, they have a vertical property that probably does an okay job at rating and ranking air purifiers. And if that's your media business, like wah wah,
+
+cause it might not work out for you. 
+
+[00:08:17] Brian: Well, they're down 91 percent and they're blaming Neil
+
+[00:08:20] Troy: they're blaming Neil. Yeah. They say he's swarming the syrup.
+
+[00:08:24] Brian: slurring. I mean, I don't mean to laugh at the air purifier wars, but 
+
+[00:08:29] Troy: Hey, listen, just because you review and bring some air purifiers into your office, it doesn't give you a right to be the top of the Google page. I'm sorry. It's not that hard to review air purifiers. I could do it. Brian, I could do it. I'm
+
+sure 
+
+it's a moat. 
+
+[00:08:43] Brian: but let's be real, like what Google is trying to do is, and they called it, right, like people using their reputation for something else. Now, it's always, there's always a lot of gray areas, but what I would be concerned about is Google viewing, I think you've used the word, like commerce. Which has elements of this in some models as an invasive species to be ruthlessly stamped out.
+
+And when you look at what, who the winners are, Google is, Reddit is up three or four times in visibility in, in the results. They're not trusting. site content as much as they are quote unquote human content. They're finding a lot of AI based content there that is kind of crappy and What's to stop Google from saying okay coupons first I said nothing but then they came for my affiliate links
+
+[00:09:39] Troy: Well, here's how I would look at it. I think if you get close to the skew, Google's going to crush you because Google can present skews against a filter in all kinds of ways. Google's going to look for areas where you ha where you occupy a layer and you add lots of value and they can measure it. And you're creating some type of contextual relevancy, value, review, kind of quality, whatever, for the consumer to make a decision.
+
+I personally think the idea that people get upset because, and I would love to hear both of your take on this, that You are operating in a space which you ought not to be operating in as a media brand to me seems absolutely fascist.
+
+[00:10:25] Brian: I don't know fascist might not be the word 
+
+[00:10:28] Troy: okay, so Google's gonna tell time or Forbes or Fortune or whomever that they can't do a certain type of content, pet content as it pertains to insurance or 
+
+[00:10:41] Brian: But the pet insurance content. 
+
+[00:10:43] Troy: Well, it's, like who that's not up to Google to decide whether Forbes endeavors to do a good job of covering that particular, part of our world. Why, why should Google tell me what my media brand can and can't do?
+
+It makes no sense to me. 
+
+[00:10:59] Brian: Well, I don't think Google is, is going to tell you. I mean, but Google has a difficult job in deciding what is relevant, right? And what's best 
+
+for 
+
+[00:11:07] Troy: No, my, my point is, is that the air purifier guys are saying, why are these, these brands operating outside of their domain expertise? And I'm saying that's up
+
+to them. 
+
+[00:11:19] Brian: Jess, how do you think about that? I mean, even commerce, business with time stamped. What do you think about the idea of what permission? I don't know. You don't need permit. I guess you do need permission from Google. Everyone needs permission from someone. But look, we, we've seen like a lot of people stretch the brand to include everything.
+
+I personally don't think, I don't think of pets when I think of Forbes, but
+
+[00:11:40] Troy: It's not Pets Dude, it's pet insurance. 
+
+[00:11:43] Brian: that's true, but they have a lot of pet related content.
+
+[00:11:46] Jess: Yeah. Look, Taboola is one of the first moves I made as a CEO. they've been a great partner. We'll work through stuff together. I agree with Troy that you're looking for information. You're looking for information. You're levered, using search and you want to get trusted. Reliable content that you can make decisions based off of, especially whether, you're going to buy pet insurance or not.
+
+And we need to have partnerships that can help us perform and succeed. And also highly prioritize not just our content, but ultimately the users. And as a user of search, yeah, there's a lot of improvement. One thing I'll say is. I have a 23-year-old son. I learned a ton from him. He, is working in AI for a startup.
+
+and since chat, GPT launched just a year ago, I don't think he's been on Google search since then. So I think we need to look at sort of the next generation of. Internet users or 
+
+[00:12:52] Troy: is he doing okay?
+
+Is he hallucinating? 
+
+[00:12:57] Jess: hopefully not try he's doing pretty well and Look, he's in ai so he's You know, building this stuff, working on this stuff every day, getting
+
+paid to do it. and 
+
+[00:13:09] Brian: convince them to go into
+
+media. 
+
+[00:13:10] Jess: tried, no, he said, no, thanks. No, thanks mom. He made the right choice. And yeah, I just think we have to, I think that's a disruption for Google.
+
+I really do. I think all of the, the new ways that people are going to. Search and requests and get information. Obviously that's an issue for media and I, I'm sure we'll get into that, in the conversation today, but yeah, there's other, there's other ways now to get access to information that helps you make decisions.
+
+and I, and I see that for our business
+
+and I see that in the world around me. 
+
+[00:13:50] Brian: So, I mean, it's like Satya Nadella said, that they were going to make Google dance, which I thought was, I don't know if he intended it, but the Google dance was what the term was always used for when Google changed its algorithms back in the day. I think the big risk is that Google overreacts to, this new threat and starts to trample all, I mean, we've seen this all the time with platforms and that they're fighting these intergalactic battles with each other.
+
+And sometimes it is trample publishers, just by accident, by what they do because their interests aren't totally aligned. And I think there's an argument to be made that those interests, particularly as search changes are less aligned than they've ever been.and so one of the other big pieces of news was, dot dash Meredith cut a deal was the latest to cut a deal with open AI.
+
+We've seen several of these deals. I'm always saying, what's the number? I don't know all the other parts of the deal to me are, standard stuff. Troy, what was your takeaway? I mean, am I wrong to focus like on what's, what's the number, like how much money are they getting?
+
+[00:14:54] Troy: I guess that the exercise you should do, Brian, is you should plot all of them in a spreadsheet. And to the extent that you can get The number or the number that people are speculating on, you should put that in a column and put the revenue of the company in another column and see how close they all are to one another with, amount paid by open AI, Google, whomever, as a percentage of revenue, is it 2 percent is 3 percent and just see if there's a pattern there. And so I, I think that. When we hear when, when I don't know what the number is for Neil, but it'd be interesting, to see what what the target was in terms of either the percent of revenue represented by this deal or by the group of deals around AI or in another way to look at it is what percentage of search derived revenue is it? Because that's what it's offsetting. So if your search is going to, as people speculate, I don't know if it's true, I suspect it's not as big as 25 percent down. I mean, it will vary across categories. Then. if you have 100 million business, you, you're going to lose, a material amount of revenue.
+
+And how much does the open AI, deal or, or that, that group of deals offset, losses from changes to your primary distribution model. That's what's interesting to me. So because overall, that's going to tell you whether or not you have to make big structural changes to kind of write the cost structure
+
+inside of your company.
+
+[00:16:25] Brian: Hmm. Jess, are you blocking AI crawlers.
+
+[00:16:28] Jess: Are we blocking? Well, look, there's two paths here and Brian, this was in your newsletter. Today, litigate or negotiate, right? Litigate or negotiate. You do a great job. And you must read newsletter. So get really smart and be a student of the industry. I tell everyone that I work with, that's a must.
+
+And there are those that are litigating, negotiating, and then there are those that are. Actually doing both. And I think Troy is right. Number one, we're never going to really know. No, one's going to share that. entire information on, in terms of the value exchange. I think it, Troy, you're right.
+
+is it persona of revenue? some of the companies won't reveal they're private. They're part of larger conglomerates. Is it. data set, file size. I think you wrote, Brian, that, it's reported that having kind of other assets beyond text is important. So whether that's video, photo, I think it's really early days and I'd look at any payment.
+
+Regardless of size is a short term strategy. the longterm is what we just talked about, which is the changes in search, the newcomers in search, with, chat GPT and others. And how does time play a role in this, major technological change? And how do we, make sure that. We're in those results, that we participate and collaborate with these new companies and these new technologies.
+
+And it's not just what we're writing about today, but our hundred years of archives that are really meaningful.
+
+[00:18:19] Brian: So, but do they have access to those archives or is that like the negotiation? 
+
+[00:18:24] Jess: They do. They have access.
+
+[00:18:26] Brian: Oh, they do. Do
+
+[00:18:27] Jess: Yeah, 
+
+[00:18:28] Brian: you give 'em access or they just take it
+
+[00:18:30] Jess: well, I mean for time and I can't speak to other publishers But we did take down our paywall. I made that announcement a year ago. So Not that I don't believe in paywalls and paying for content. It just wasn't working for time. It wasn't the strategy the vision and quite honestly the economics That we were going to pursue and it also wasn't You Wasn't aligned with our purpose and our mission.
+
+And so 80 percent of people that access content actually don't pay for it. And those that access content in that 80 percent group are getting unreliable or distrusted, mistrusted, fake, whatever you want to call it, information. And there's a place and a role that time can play in being, the, Trusted guide to humanity and writing for a larger global young audience of people that don't necessarily Want to pay or get blocked so by doing that Yeah, that's just not what we do, today, but also our our archives of a hundred years our covers digital covers and everything that we've that we've written about we have time for kids and news literacy and getting information that it's accessible, available, trusted, objective, balanced.
+
+I mean, those are important things. Yeah, so maybe we're, we're in a different place than, than, than some other publishers who have a really hard, one click, must, must pay to read anything paywall. I don't really know. A lot of this will, be in the hands of lawyers, I'd imagine. That are looking at this more closely.
+
+[00:20:14] Troy: well, can I, can I stop you on that for a sec? Cause I would applaud, I applaud you for that decisiveness and that decision, Jess, because I think your member strategy, your paywall strategy has to match your editorial strategy and mission. And I think that's what you're suggesting. And if you want it to go the other way, there's too many publishers that have content, content, feeds that kind of emerged in the scale period of internet growth that were rel, might may well have been valuable content, in a free kind of equation, but,probably in many cases didn't justify, membership commitment from a consumer in which case, because either.
+
+maybe the content didn't kind of fit into that equation, or maybe it wasn't vertical or enough, or maybe it didn't speak specifically to very sort of expert or niche needs. But what you end up having, having in these companies, and I've seen many of them is you have a member revenue line that's really small.
+
+You have really high churn and you're delivering a really annoying product to the consumer. And so unless you decide that you're gonna completely change the time editorial strategy and do, the kind of content, really vertical, content that serves a community in such a way that you can make a high value subscription pitch, then you may as well just open it up and look for other opportunities to monetize your media business.
+
+And I think it was, it was a good decision.
+
+[00:21:54] Jess: Yeah. And it was also, it was part of a larger vision and strategy and quite honestly, transformation of time, which is the pivot from a B2C company to a B2B company. And what I mean by that is we have a nice subscription based business for our magazine, smaller for time. com, but we, you're right. The editorial.
+
+The, the amount of resource that we were putting towards in the B2C space. So getting checks from consumers, small checks that have high churn. And that when you look at performance marketing and acquisitions, it, I knew right away, this wasn't right for time. And I saw overall in the industry, it was changing everywhere.
+
+Including Netflix and Hulu, and the subscription businesses were either peaking or in decline. And working in the B2B space, which is getting checks, or the rev, the monetization and the revenue coming from businesses. We want to do business, not with consumers, on the revenue side. But with companies that are blue chip, best in class, biggest brands, biggest budgets where we have direct very senior level relationships that are ongoing, where we can drive their business and they can drive ours.
+
+And again, that gets us out of not just the B to C but also we don't want to be transactional media. And we can't rely on, as we just talked about Google or an algorithm or all those things that are constantly changing and influx. I have a lot of people at time who are focused on that and are working on that every day, but that's really the direction that we've taken, that we've taken time
+
+and it's, it's really paying off. 
+
+[00:23:51] Brian: So how is the business different now materially from like 18 months ago? You talk about being a B to B and I think you're saying your customers are the brands who who will sponsor an event or be, be part of the time 100 and the tent poles and yes, advertising to, I think from the outside, It seems like it has elements of a lot of, I feel like the playbooks that are out there for magazine brands.
+
+Okay. And I think everyone organizes it based on the brand. But how do you describe, how the company is different now, 18 months after you joined?
+
+[00:24:26] Jess: Well, B to B is now over 50 percent of our business on the revenue side. So I, as you guys know, I come from the sales side. I've been a P and L leader.I'm here to support trusted journalism. I think it's critically important more so now than ever before. And that's our mission. That's my purpose. And how we do that has changed.
+
+And it's changed in terms of, yeah, we're, We're, we're driving a multi platform integrated business where we are working directly with technology companies, automotive companies, luxury companies, companies in the enterprise space, financial services. And we're, we're, we're, we're, we're, It's based on our brand, a hundred years of trust.
+
+it's based on our product, which is our journalism, our content, which is now cross platforms and on Google, but also search and many other places. And, and it's based on having those direct ongoing relationships with them. So we've leaned into that. The second part is We have been heavily weighted in print, both advertising and subscription businesses, more so than some of our legacy competitors.
+
+And I say competitors very widely defined, and I've worked at many of them, Forbes, you mentioned, but also wall street journal. And that's the kind of, not just the diversification, but the recalibration of our business, leaning more into where the market is, whether that's digital, you mentioned events.
+
+Yes, we're doing, a lot of events. But it's and it's anchored in our journalism. So we're bringing that content on stage. And we're bringing that those communities, the Time 100, Time 100 Next. We just launched Health 100. We did AI. We're doing that again this year. bringing that journalism, bringing that content, bringing those communities to partner with, With our big, marketing companies.
+
+So that's been a huge change and a huge transition. And we're really proud of that. We're really proud of the companies that we're doing business with and that's going to continue. That's our journey. The other thing I'll mention is, we, we are, doing a lot with what I call strategic partnerships. So whether that's Taboola or other partners.
+
+we've brought in Statista. Coupons maybe didn't, go as we were expecting, but we're going to continue to explore ways that we can, expand, the revenue streams and the revenue sources for time. I'm excited this year. About, a road map with local language licensing additions and bringing a global footprint, larger global footprint in the world, time as a role in a place and in key geographic markets that we want to be in and, and that's really important.
+
+And then, and then lastly, you know, I'm here in L. A. Really excited to about what we're doing this evening, Amazon studios and time studios and, Megan, the stallion documentary will come together and work on that doc, in real time with our partners at rock nation and kind of put the final touches.
+
+on that before you'll be able to see it. So new ways of storytelling, new formats like documentaries and docuseries, we've leaned into that. That's, 25 percent of
+
+our business and growing.
+
+[00:27:53] Brian: hmm. So the magazine is now what, what, what role is the magazine playing? I always have to ask this question.
+
+[00:28:00] Jess: it was nearly 50 percent of our business and now it's 40 in a year. We love our magazine. We're still a million subscribers. It matters to be on the cover of time. It matters to be in the magazine. We're still going to have a magazine business, but when we look at our largest global audience in our hundred year history at 120 million.
+
+There's a lot more ways that our readers, users, our other consumers, which are critically important are engaged with time and we're across all platforms, not just the magazine. People ask me, I spoke at Milken yesterday and they're like, do you go by Jess or Jessica? I'm like either one, just not time magazine, just 
+
+time.
+
+We love magazine, but they still refer to us as Time Magazine, but we're 
+
+so much bigger than that.
+
+[00:28:57] Troy: I have so many questions. I have some, a couple of key questions. One is, when you do, you guys do lists really well, and I think you merchandise them extremely well and you put on terrific events. So congratulations for that. I went to one of your events not long ago and it was delightful to see you there and just, just like the, the quality of the crowd and everybody was amazing.
+
+And I'm wondering, do you, do you feel pressure or do your editors feel pressure to have ongoing reporting and depth in the areas where you light up a list franchise? Say AI or health or
+
+climate. 
+
+[00:29:37] Brian: Well, that's the permission question, right? and how is that
+
+different from a search context? what is the permission to pop up in the real world with a, a Health 100 list?
+
+[00:29:46] Jess: So we don't look at ourselves as a list business.
+
+[00:29:50] Troy: Well, I wasn't saying that and I don't, I, I, I, that's not what I'm
+
+[00:29:53] Jess: no, I, I know what you're, I know what you're saying. I think we have to be really careful with that. And I think you're, you're both saying exactly what I. I'm going to talk a little bit about what we do with our lists because we, we do them in a different way than, than anyone else can.
+
+And I'll say two things about that. Number one is. we just launched our, our health 100 and prior to that, our, our time, 100 time, 100, you are named as one of the most influential, important people in the world today, not because of your gender, not because of your age, not because of, you're the color of your skin.
+
+And I just I, I love that. And I, and the diversity of our lists in terms of CEOs, activists, politicians, heads of state, icons, entertainers, musicians. It's just, and we put everyone in the same room together. It's unbelievable.where have we expanded? Health. We have done health for a hundred years. I became a voracious reader of time during COVID because I couldn't put down the health coverage that I felt like it was just a must read, you know for for me.
+
+we did AI. We have deep reporting. We have some of the best journalists in health, in AI. I'm here at Milken, as I mentioned, Justin Worland, also has been moderating, climate panels. He's the number one climate journalist in the country. We do Climate 100. And again, when we did AI, we had an 18 year old activist on our list.
+
+We had Jeffrey Hinton, the godfather of AI 40 percent women, 50 percent global. We, we recognize, those in every, every area of AI, peril, progress, you name it. So it's just a wide variety, but it's all rooted in areas that we already own, as a, as a brand, as a business. and in, on the editorial side.
+
+So it's a natural extension of what we have been doing. You
+
+[00:32:15] Troy: Okay. That makes sense. The, can I ask you a question about the production business? Cause I remember talking to you early when you got the job and, you were really enthusiastic about the production side of it.the video production studio that you had, and you had a number of, I think just like things in production and it was a sizable amount of revenue.
+
+How do you see that business now and what role it will play in the future of time? can, can it be, can you make money from it? Does the time brand and the capability that you built feel like a good business in a long term business for you? Mm
+
+[00:32:51] Jess: yeah, as I mentioned with time studios and what we're doing this evening here in LA with Amazon is all about what we just talked about with our list, with our community and with trust. So Megan, the salient was on the time 100 next list and then the time 100 list, and it went, it came time for her to share her story and do her doc We were the easy choice.
+
+And so, we sold that project to Amazon. So there's real opportunity. but it's all around our number one core value, which is, is trust. I'm, the business has changed during 18 months with strikes and, and all of that, for everyone. But I'm equally excited and confident in what we're doing.
+
+Able to do at time studios. we just put Frida Kahlo out. There's a lot of Oscar buzz around that, and we've got a lot of projects in the queue and what's interesting now from a business perspective is brands wanting to tell their own stories in these new formats. And moving away from sort of what we would consider traditional advertising, whether that's digital, social events, and actually have a narrative and have a story.
+
+I think we've seen Nike move in this space. and we're going to see a lot of other brands and we're really ready, because we're already working with brands, with brand content, with red border studios. And there's so much more that we, we can do. And there's longer projects that are less profitable to answer your.
+
+Sort of monetization question. And then there's other projects that we can do directly with brands. I think a lot of media companies have tried to do this and haven't been as successful. I take no credit for time studios cause it all preceded me, but we have a team of, of incredible leaders, that come from this space that That have done docs have done formats and series and are native to these formats into this industry and have all the relationships and it wasn't just, you know, here we're print business and we're going to try to do digital without digital expertise.
+
+We started this business as a studio. with experts in, in these areas, and it exists today, and it's going to increasingly be an important part of what we do at Time.
+
+[00:35:14] Troy: That's cool. I wonder what it's like to have. Yeah. a crazy successful, rich guy entrepreneur is your boss. What's that like?
+
+Just as a reminder, Mark, Mark Benioff owns Time
+
+[00:35:26] Brian: Mark and Linda Benioff,
+
+[00:35:28] Troy: Mark and Linda, Disclosure, yes. Mark and Lynn Benioff hired me as a CEO. I work with and for both of them. They are the co owners and co chairs of Time. They own it together. They're both very involved. They're both incredible owners, and very supportive of everything that we're doing at Time.
+
+[00:35:50] Jess: And, Lynn is very involved in our studios.
+
+[00:35:54] Troy: do they push you hard?
+
+[00:35:55] Jess: What do you think?
+
+[00:35:57] Troy: I don't know. I want, I mean, I, I, I'd love to know.
+
+[00:36:00] Jess: Yeah, they do. 
+
+[00:36:02] Brian: But what did they want to do? They wanted to break even because it's, it's gotta be different operating a brand like Time owned by billionaires than operating like Forbes that was looking to SPAC. for like a tie, it has to be somewhat different, but at the same time, this isn't like a charity.
+
+[00:36:18] Jess: that's exactly right. This is a business. They hired a P& L revenue leader. you, you've talked about this previously, on your podcast about me and about time and Mark is, I am so lucky because yeah, they push me, they challenge me, they, they challenge all of us at time to keep doing what we're doing and to keep, Growing and doing better.
+
+they are always available. They are very supportive And I get the opportunity to work with and for both of them. And yeah, and mark is one of the greatest Living CEOs of our generation. And he's reinvented what it means to be a CEO. And I get to learn and, and have not only his leadership and mentorship, but also he knows a lot of great people.
+
+And
+
+[00:37:09] Troy: But give me a nugget, Jess. Give me a nugget. me to so many people.
+
+What is it? Give me one thing that you were like, holy shit, that's a great point, Mark, and something you learned. Can you think of it like a little nugget of wisdom or advice
+
+or, you know, 
+
+[00:37:25] Brian: asked you this question in Chicago,
+
+Jess. 
+
+[00:37:28] Jess: Everyone asks me this question. 
+
+[00:37:30] Troy: no, because we want to know, we want to know what you're learning. Sure.
+
+[00:37:33] Jess: I am learning. Every day, and I'm a life learner, and I'm I am, Joy, look Every day I learn something, I have learned from from Mark so many things, he was here with me in L. A.he asked one question, what what is your biggest surprise?
+
+What is your biggest surprise? 
+
+[00:37:54] Troy: You mean at time? On your journey at time?
+
+[00:37:57] Jess: Correct, or he would ask a lot of people that who joined time that I brought in or what's your biggest surprise? 
+
+[00:38:05] Troy: What was your answer? 
+
+[00:38:06] Jess: Well, it's changed because I get surprised every day, but everyone asks me including in the last 24 hours Are you having fun? And I never thought they would ask me that question You guys all talk about all week how hard this business is and how challenged and changing and Coming up with solutions less.
+
+So we've talked more about the problems you said just we're going to talk about the problems and what are your
+
+[00:38:31] Troy: I never talk, I just talk about solutions, Jess.
+
+[00:38:33] Jess: and And that's my biggest surprise and I guess I I said tomorrow. I don't know this isn't fun
+
+This is not, I wouldn't say this is fun. 
+
+He said, give it a year. Once once you hit a year, it's going to be fun.
+
+And he was right. And once I, I felt like we were moving in the right direction and I had the right team and we had the plan and the strategy and the vision and the support, it started to feel more like
+
+fun. 
+
+[00:39:01] Brian: But what does he say about the media business?because he, he pioneered one of the best business models in the world, like software as a service is an amazing business model. and then the media business is totally different. Does he ever, is he like, Oh my God, this, this business is really messed up.
+
+Not, not the time business, but 
+
+just the overall business. 
+
+[00:39:22] Jess: Mark and Lynn bought time in 2018. So this has been over five years. they know what's happening in the media business, and if you know anything about Mark, some of his closest confidants run big media companies, and he is very close to some of the most incredible broadcast journalists and, journalists around the world.
+
+And I've gotten to know a lot of them through, Through him. has an incredible respect for the media business. He, he's very aware of the difference and I 
+
+[00:39:52] Troy: You push back on them?
+
+[00:39:53] Jess: go back and forth. I do. I do. I have to
+
+[00:39:57] Troy: Now, have you, have you ever said, no, Mark, you've got this all wrong?
+
+[00:40:01] Jess: I would say it differently. I I'll give you an, I'll give that's why you're better at this than me. That's why
+
+[00:40:07] Troy: I'm trying to understand Jess.
+
+[00:40:09] Brian: I want to build on what you're saying, 
+
+Mark. 
+
+[00:40:11] Jess: You guys. Okay. Mark. One thing that Mark and I are completely aligned on is that we both are customer facing road warriors. We love we we love to be, in front of our customers and our prospects, and we share that and we are we are salespeople revenue people, at the heart and anytime we need any introduction and any help.
+
+The first person who's there is Mark Benioff and Lynn. So that's number one. And I've, and I've leveraged that for time.and I've gotten to meet so many people that are now, part of our community and that are time customers and probably always should be, but hadn't had a chance to meet them. No us or
+
+[00:40:58] Troy: So he, he appreciates your sales hustle. He loves that.
+
+[00:41:02] Jess: yeah, yeah.
+
+And that's what I started. Like the first thing I had to do, I'm a growth, I'm a revenue growth CEO. The second is, just managing the business. So yes, Brian, this is a business. This is not charity. And I have as the CEO, the fiduciary responsibility of making sure that we are managing this business efficiently and wisely.
+
+And we are, we are doing that. And I've talked about that, very publicly.And, and he has such an appreciation for the mission and the purpose and the value that time brings and it is about trust. And I will say two things that I think are, that, that AI and Google and everywhere else in the industry and in the ecosystem, can't change.
+
+Which is, number one, and, Troy, you're at our person of the year event. Taylor Swift, she gave one interview in five years. One. Number one, she doesn't need to give an interview. She can talk directly to her fans. She gave the interview at a time. She gave the interview to Stan Lansky. She 
+
+[00:42:09] Troy: And then this week, Oh my God, you guys did the first thing that Joe Biden and, and, and Trump ever agreed on, which is they both, they love that cover story.
+
+[00:42:19] Jess: And Trump gave us the interview. And yeah, and when you look at Google and the Google results, we did very well. And we were, we owned, we dominated
+
+[00:42:27] Troy: Tell us about, tell us about that
+
+story, Jess.
+
+[00:42:30] Brian: Wait, how many times has Trump been on the Time cover? Because I think he was like, claiming that he was on it the most, even though he wasn't. I think he was like, no, the Pope wasn't on it as much. Oh,
+
+[00:42:39] Jess: there is a president that's been, former president that's been on it more, I'll have a little time trivia for you guys, but he's been on it a lot, and he, he gave us the interview, it was actually two interviews, with, our, Reporter, Eric, who's based in our Washington, D. C. Bureau, who was in Mar a Lago with him, had two sit downs with him.
+
+We published the transcript. It's an 83 minute read. The story on time. com is a 26 minute read. And yeah, Biden said it's a must read. former Trump and his team said it's a must read and AI can't replace that. And that's the kind of deep reporting journalism. And I think people trust time. They look at us as balance and objective.
+
+I said that prior in this call.
+
+[00:43:27] Troy: story got more page views? That or the T Swift story? 
+
+[00:43:30] Jess: Well, we're still counting the page juice for Trump. So I'll, I'll give you the 
+
+final, but we still. We sold more, we sold more issues of Time Magazine with Taylor. We did, not only did she give us the interview, but she did a photo shoot, seven, eight outfit changes. We had three different covers. partnered with Tim Armstrong's Flowcode and had a QR code that was on the Nasdaq billboard that was in Time Magazine.
+
+And other places where you could just scan your phone and if you had one cover you could buy the other two you could buy
+
+[00:44:04] Troy: Don't you wish T Swift was running for president?
+
+[00:44:07] Jess: I'm not
+
+here to comment on politics
+
+[00:44:09] Brian: I stopped in 
+
+[00:44:10] Jess: I look at her as a CEO, you know, you don't have to be a 50 to see the power and the economics that she's driven through career and like craft sales are up and hotel sales are up. Everyone wants her to be in their market. And perform because the financial outcomes
+
+of her presence are insane.
+
+[00:44:34] Brian: She affects the unemployment rate. I mean, 
+
+[00:44:37] Jess: we, restocked our newsstands in Vegas. Like we just keep going. We just keep going on that one. But, we're going to continue to do that. Mark has, incredible respect and support for Sam Jacobs, who, I named editor a year ago for, for me and the team and, and the results that we're driving.
+
+[00:44:57] Brian: yeah. thing was a coup,
+
+[00:44:58] Troy: Jess. Nice one. To your 
+
+[00:45:00] Brian: You guys, you also had the coup with, with Zelensky and like,so you, I always find like, I'm interested in where you see times like, because the role of the magazine is totally different, right? And I think the role of the journalism, the journalism changes really too. And I get, I mean, this is my sort of outside perspective.
+
+You guys pop up with some like big stories every again, but I don't think of time as you know competing with the new york times or something like this on a day to day basis because Historically, it's been like a weekly magazine, right? And the news magazine. And I think news magazines have clearly been trying to find their way in a modern way.
+
+We see this with, the latest iteration of Newsweek. And I remember growing up, it was Newsweek in time, right? how do you end up thinking about the role of the journalism within it? Because I think it's definitely different for what I mean, we're talking about the changing nature. I mean, time now is totally different than the time that I grew up with in the 1980s, where it was all about the magazine and the journalism in the magazine.
+
+Whereas now, I mean, I saw I think last year, except your live events business was up 70%, right? I think at some point the events business becomes bigger than the magazine business.
+
+[00:46:10] Jess: Yeah, but it's just an extension. We have to anchor everything in to our journalism. And the extension is we're able to do events because we launched the Health 100, the 100 most important influential people in health today. We're going to have an event on Monday. You're both welcome to join. We've got incredible partners, Eli Lilly and Northwell Health.
+
+Deloitte is an insights and data 
+
+[00:46:36] Troy: Are you giving, are you giving away Ozempic?
+
+[00:46:39] Jess: We are not. 
+
+[00:46:41] Brian: They don't, 
+
+[00:46:41] Jess: But we can talk about it. there. And so we're bringing that community together, in an event, but it is anchored in our journalism, which is all around Alice Park and the most incredible people that we have writing on health every day and our health 100. We're going to do a health leadership summit in the fall, and we're partnering Merck and others on, on that.
+
+So it it's bringing this community and bringing this content to life in another format. And of course, with an event, we've got photo opportunities, video opportunities, all kinds of ways that we can scale that event further. I love what you said about Zelensky. I think that's another great example of where we're headed with time and what's changed over the many years.
+
+Simon Schuster has been writing about and covering Zelensky. he's been with him, in the most tenuous places and circumstances for years. He just wrote his book, which is now in talks to, to be produced, in a, documentary format. So that's exactly where we want to head and where we are going with time.
+
+And it's, it's iterative. It's changing. I told this story yesterday at Milken, on a panel of CEOs, all men, and the moderator that time a hundred years ago was founded by men for busy men that didn't have a lot of time. And we had, as I mentioned, Taylor Swift, who was person of the year. Well, that was man of the year.
+
+Up until the year nearly 2000, when we changed it to person of the year, we wound up rewriting our own history and we went back for 100 years starting 1920 to identify who would have been the woman of the year that year. And we turned that into a project that we sold to Amazon. and, and those are the things that we're really excited about.
+
+And it comes together with our editorial team and our team of And our product teams and our, and our sales teams.
+
+And yeah, we're going to keep going.
+
+[00:48:46] Troy: Jess, I want to just, Benioff is like a culture CEO. Like it always seems to me that he builds or that he built a really strong culture, a unique work environment that was very performance oriented inside of Salesforce. And there was a real, Like when you work there, you know that it was, like a unique place to work, right?
+
+It's one of those places.have you tried to do the same thing at time? this is a big CEO job and now you get to shape a company and a culture and set it up for the future. have you found that there was, the need to evolve the culture? And if so, how did you do it? And I'm also curious what you say to people that join the company. What kind of place are they joining and what do you want it to be?
+
+[00:49:33] Jess: Yeah, well, I'll say that we are editorially and operationally independent from Salesforce. And while we are owned by Mark and Lynn, let me finish. We're owned by Mark and Lynn. I run the company as CEO and I am a very big culture person. And you can talk to anyone who's ever worked with me or for me at the Wall Street Journal and at Bloomberg and, and at Forbes.
+
+Media is in constant change and in constant shift. And in my mind, if you don't have the right culture, you're never going to make it. To me, culture is about authenticity, about transparency, about communication and just treating people like amazing human beings. And that's what I've done my whole career.
+
+And I'll never change that. I would say the culture of time and the cultures that I've experienced in many other places in high level positions, maybe not a CEO, was in a need of change and transformation, also reinvigoration, confidence. And I think followership is really important. I think people, I've always felt like you, you need to earn people's respect and their trust.
+
+And just because you have a title or you're the top. in a top position, you, you need to earn that every single day. And that's what I've tried to do. we have an incredible newsroom. We, have, many union employees and I just lead with. Excitement, enthusiasm, what I've done my whole career, which is a sense of a higher purpose Because I I'm so excited and I believe in trusted journalism and without that we can't do anything So I want people to love what they do as much as I do.
+
+I want them to work. It with excitement and passion strong work ethic. I carry that with me every day and I love being surrounded by You People that have been with time for a really long time and some new leaders and some new talent that we've brought in. And I think it's a great mix, but it's 
+
+iterative.
+
+[00:51:37] Troy: I was, the reason I asked is that someone that works with you, it was to work.
+
+[00:51:46] Jess: you couldn't have led with that Troy.
+
+[00:51:49] Troy: Well, you know, I wanted to hear, I, I, I just wanted to understand what I think that managing legacy media organizations requires the kind of leader to really kind of push on what we can be and how do we bring new energy and excitement to this company to reinvent it, and it's great.
+
+Great to hear that you're doing that.
+
+[00:52:12] Jess: Thank you. It's more fun now, but it is also hard and we're fighting the fight and, we're going to keep going.
+
+[00:52:18] Brian: Yeah. How do you get people excited about growth at a time when you hear a lot of negativity about this space? Not on this podcast, but other places.
+
+[00:52:28] Jess: Yeah. I, I kind of said it, you just, you have to have the vision. The belief itself, the strategy, and you have to communicate where you're going, what the goals are, the realities of the challenges and the changes, and you're going to lose people along the way. Life's too short. I get it. But if you have those that are signed up and are with you, you're going to succeed wildly and treat people fairly, treat people, honestly, get people excited and lead by example.
+
+That's what I do. You started Brian by asking me to travel a lot. I, yeah, I am committed. I, I will do whatever I need to do for time for Mark and Lynn, that I need to do. So yeah, I'm, I'm in the office running the company. I'm traveling, I'm trying to get time and our brand and get those to opt
+
+in and want to be part of this journey.
+
+[00:53:26] Brian: Yeah. Your LinkedIn looks very glamorous, but stressful to me.
+
+[00:53:30] Jess: Yeah, to
+
+both, right. You know,
+
+[00:53:32] Brian: I'm like,
+
+that's a lot of travel.
+
+[00:53:34] Jess: I am, I am having, I am having fun. I worked at McGraw Hill, for years, so not as long as I was expecting because, Terry McGraw sold us, sold business week to Bloomberg. So then I was at Bloomberg, but the CEO of McGraw Hill said, I could see it on your face, you're having fun.
+
+And I said, yeah, I think I am now. Thank you. When you're having success and you're moving in the right direction, I guess that comes along the way and it's work. And, I love the team at time. I love this job. I'm really excited. I'm so honored to work, for Mark and Lynn and yeah,
+
+So I'm, I'm where I'm supposed to be.
+
+
+[00:54:12] aside
+---
+
+[00:54:12] Brian: one quick, aside, let's talk about brand safety a little bit. This issue always comes up and the news industry. constantly complains about keyword block lists and they are kind of outrageous. They're very much a CYA exercise. It seems when they block ads appearing next to keywords like abortion, domestic violence.
+
+is this an issue that you run into?
+
+[00:54:37] Jess: Yeah, brian, thank you for bringing that up this is a serious issue and a big challenge For for time but for the industry overall for trusted journalism and publishers the the block lists have morphed into What I'd say is a, is a whole new threat, which is an unintended consequence of the defunding or demonetization of trusted journalism, and I can give you three examples.
+
+And Brian, we didn't get to connect at possible, but I spoke on stage on a panel on this topic. It was moderated by Jonah Goodhart, who's done incredible things in the industry, and he's working on this with his new company, Mobian, and we're partnering with them. Three examples, we talked about Taylor Swift and Person of the Year.
+
+She gave time, the only interview she's given in five years. She hasn't given an interview since. And that article was noted as not brand safe. The words, in terms of the block list were, was like feminism and exclusivity.you could imagine with her new album, the tortured poets department, tortured, 
+
+was Considered, that this, anyone who's written about this, or this album, it's considered, not brand safe.
+
+The second, I think this is one of the egregious examples was we, we named, not only do we do personal of the year, but we did, innovation of the year was, which was the James Webb telescope. And again, one of the most incredible innovations of our lifetime. And we mentioned stock stars dying. Meaning stars in the sky that was considered, not brand safe.
+
+We also named, Sam Altman CEO of the year. He gave time his first interview after everything that happens. This was in December words like spies testifying, or I think there was one sentence around AI posing as a, an existential risk or threat. That was.
+
+you know not safe. so then what happens is well, we don't want to pay for those impressions And then we have to have a collaboration or a conversation
+
+[00:56:58] Troy: people understand just how this all works, but basically the ad server hits another service. And so that service says that this is not a safe page on account of the words that. are on an exclusion list and it prevents the ad from being served and you don't get paid for it.
+
+[00:57:14] Jess: yeah, and there's no context around it. There needs to be human intervention, if you will, on that, because it's gotten so extreme. I keep reading and rereading, Suzanne Vernika's, I think it was in 2019, what she wrote in the Wall Street Journal about blocklists and the Wall Street Journal not being able to just run or deliver campaigns.
+
+But now it's gotten to be so extreme. Here we are in 2024 where we're writing about Taylor Swift and the word feminism is, 
+
+[00:57:44] Troy: What do you think the industry has to do about it? Who do you think needs to to evolve?
+
+[00:57:50] Jess: Well, we're working with Mobian, to show Brand Lift, to show different, campaign values of those campaigns, and to show this is a story about this. And it mentions that and we know that it's brand safe. And so we're trying to use data and information to work with our partners and also work with the third party validators to improve the overall industry, because if Taylor Swift's article or the name of her album is
+
+not brand safe, we are all in trouble.
+
+[00:58:27] Brian: I would say with two things.
+
+It's like one is news has to perform like the the advertisers are not in the social work business. No matter what they say on stage if possible, like they are not about making a better world. They're under pressure to deliver results. And if News content was delivering those results.
+
+We saw it with YouTube. Remember the YouTube boycott that didn't last very long. And that's because like they get results from YouTube. And so performance has eaten the world and they have, you have to perform. The other thing that I think is underrated in this is, Unintended consequences of after 2016 election, there was a bunch of activists who popped up.
+
+Well, meaning let's just assume good intentions and tried to defund places like Breitbart and other places like Fox News. And, a lot of advertisers felt that heat and a lot of agencies are not about the screenshot business. And they were just like, Hey, Yeah, we'll, we'll keep our clients away from any of this stuff.
+
+And that is when I think a lot of times people have knee jerk reactions to perceive problems that they don't think through the second order impacts to me. I just remember that era of the sleeping giants and the people who were going after anyone who was, articles that in my view is just against their, their political persuasions. That's my little soapbox segment. 
+
+[00:59:55] Troy: Yeah, I mean it frustrated me endlessly, Jeffs And I just felt like there was never any incentive on the buy side for them to fix it And essentially publishers had to pay the toll,
+
+[01:00:08] Jess: Yeah, no, you said it Troy.
+
+Therein lies the problem.
+
+[01:00:12] Brian: Nobody wants the screenshot.
+
+
+[01:00:13] aside end 
+---
+
+[01:00:13] Brian: So I have one final question. This like what are the like three KPIs you focus on, right? And I don't mean like revenue or the financial, you know that that lagging indicator Like what do you because I think we're coming out of the the traffic era But what are the KPIs for a business like time is now?
+
+[01:00:31] Jess: I've said it probably too many times. It's trust. We've built that over a hundred years. That's our number one core value. The second is impact. We, whether it's, bad bunny, Brian, we talked about that. 
+
+[01:00:45] Brian: 
+
+[01:00:45] Jess: it's, 
+
+[01:00:45] Brian: Miami guy
+
+[01:00:46] Jess: right. Trump, we've got some other things coming up soon. We want to be, we want to make an impact and we want to tell the stories.
+
+In every format that are building a better future of the incredible
+
+people that people want to read about. But how do you measure that?
+
+[01:01:04] Brian: that's like very like qualitative, isn't it impact? 
+
+[01:01:07] Jess: there's, there's so many different ways to measure it. There's our revenue growth. There's our, how many people are coming to our events and coming to time. com and buying and reading our magazine, like reading our newsletters. We have 120 million. We have the youngest. readership in our history, the largest and youngest.
+
+I think it's really important for time to reach leaders of today and tomorrow and reach, 45 percent or 35 and younger. We're doing some, we're doing a lot, right. When bad bunny gives two interviews, one to billboard and one's time. And we did the first all Spanish language, cover in our history and all Spanish interview.
+
+Like we're doing, we're getting picked up by CNN, Espanol. It's new audiences that are relevant. they're going to drive our future. We're doing a lot right. There's a lot of ways to measure it.
+
+[01:01:59] Troy: Awesome. 
+
+
+[01:01:59] Good product
+---
+
+[01:02:03] Troy: Well, Jess, here's a question for you.we have a segment if you've listened to the podcast before at the end, that it's typically my responsibility to highlight a good product each week. And that's a product that, delights you for one reason or another. It could be an experience, could
+
+be,a physical thing. 
+
+[01:02:23] Brian: Could be a legume some weeks, 
+
+[01:02:25] Troy: Some weeks it's been, fruits and vegetables. I thought I would ask you if you could, if anything came to your mind. Something that's like a really good product. Something that you love,
+
+[01:02:36] Jess: Can you see you're holding up something, your AirPods.
+
+Mm hmm. 
+
+[01:02:40] Troy: You can't 
+
+[01:02:40] Jess: live 
+
+without 
+
+I can't. And if I, people who've traveled with me, if I misplace these or I lose these, these are, and I, I would say I use them because clearly you're both in headphones, I'm not, I use these, for what's, what's my mindfulness, which is. My, sorry, I'm not listening to your podcast, but music.
+
+So music is my religion. And I guess when I put these on, I go right to Spotify and I love Spotify because, the exploration of songs and, and musicians that I might have never heard from before or experienced, but they know what I like and what I'm listening to. And I have a. Playlist that I launched, before I joined time during COVID.
+
+Cause I started running and I don't like running, but I like music. So I figured I could just listen to music and forget about the running. And I named my playlist it's time. And I now have 700
+
+songs on that playlist. 
+
+And so this is my connection. and I like these because they're the noise canceling one.
+
+So, and it 
+
+[01:03:53] Brian: Yeah, 
+
+[01:03:54] Troy: Nice. 
+
+[01:03:55] Brian: I'm on my fifth AirPods. I've lost several. 
+
+[01:03:58] Jess: You can find where they are 
+
+[01:04:00] Brian: Well, not if you leave them like, you know, that little teeny pocket on, Delta seat back That has swallowed like three. Cause it's like a perfect size for an AirPods case and you're like, I'm like guaranteed to then forget it.
+
+[01:04:12] Jess: so now there's a business opportunity of how we can like send off an alert
+
+when you're like 
+
+[01:04:17] Brian: Oh, this is part of the business model. This is what Tim Cook has brought. it's like, Oh yeah, we're going to make this product that people lose constantly. And so we'll just have to resell it to him It works. 
+
+
+[01:04:29] Outro
+---
+
+[01:04:29] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week. 
+
+[01:04:47] Jess: Thank 
+
+you so much Yeah. thank you fun. Thanks for taking the
+
+[01:04:51] Brian: time in LA.
+
+[01:04:52] Jess: you 
+
+[01:04:53] Brian: 
+

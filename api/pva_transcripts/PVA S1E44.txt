@@ -1,0 +1,1287 @@
+PVA S1E44
+===
+
+
+[00:00:00] Cold open
+---
+
+[00:00:00] Troy: ​how's that? Is that any better?
+
+[00:00:01] Alex: you sound so good.
+
+You sound like nighttime radio dj. It's great. 
+
+Well, I got a few people, coming to me and saying I was being a little mean towards LinkedIn.
+
+[00:00:10] Brian: I actually wanna start on that topic and give, you both a chance to apologize and to retract your
+
+[00:00:16] Troy: What about getting Alex to apologize for dropping the F bomb so often?
+
+[00:00:20] Brian: Well, that did upset my mother 
+
+we got some feedback on one piece. I'm gonna anonymize this piece of feedback. ask me to ask my co-hosts, to, stop cursing that said it was distracting. all the F bumps.
+
+[00:00:34] Alex: I know this is aimed at me. I'm sorry. I listened to it. to the episode last week and I thought like, ah, I swear a lot. I think
+
+[00:00:39] Brian: many times did you say Fuck?
+
+[00:00:42] Alex: like 17 times.
+
+[00:00:43] Troy: I think it happens, Alex, when you do it either between a word as a conjunction or you do it multiple times in a single sentence, I think the strategic use of the word is, useful. 
+
+[00:00:55] Brian: Yeah, just can't be overused. 
+
+[00:00:57] Troy: yeah, I think you should curb gratuitous usage. I would
+
+[00:01:00] Brian: But in your defense, English is what your like third or fourth language? Fifth.
+
+[00:01:04] Alex: Seventh.
+
+[00:01:05] Brian: Seventh language.
+
+And I've run into this before I had a Swiss German friend, Sven, who came and scandalized my parents by dropping the F bomb approximately 50 times during a dinner at their home and by saying thank you after we said Grace, 
+
+[00:01:24] Alex: At least it wasn't. Fuck. So, yeah, I'll stop. but I swear a lot. I've been told that before, so I'm sorry if I offended. all you prudes out there.
+
+
+[00:01:34] Welcome start
+---
+
+[00:01:57] Brian: welcome to People versus Algorithms. Show dissecting patterns in media, technology and culture. Our goal each week is to help you connect the dots and navigating the chaotic changes we're in the midst of during the somewhat unique period of time Each week, I'm joined by Troy Young, longtime Media Executive and investor, and Alex Schleifer, former head of designer at Airbnb and c e o at Gaming Studio Universal Entities.
+
+Something I keep thinking about, and maybe this is obvious to others, is how often we focus on the economics of media shifting, and they are. But in the media, business economics are downstream of distribution. Every business deals with disruption and challenges, but the media business is somewhat unique in having such profound upheavals to distribution paradigms.
+
+Music faced this first. Publishing went next, and now we're seeing entertainment, whether that's TV or film, face the same turbulence as distribution shifts to streaming and the economics change profoundly. That is at the heart of Hollywood's Summer of Discontent as actors have joined Writers on Strike, and I think the biggest immediate impact of AI on the media business, well undoubtedly.
+
+In how it changes distribution, not in creation. I harp on Google's generative search experience because seeing it makes clear just how profound of a change AI will have on distribution and changes in distribution, mean changes in economics, and that means getting more efficient. There are simply more people than ever fighting for a pie that is not growing as fast as it once did.
+
+Later on, we talk about whether companies can create moats by clinging to values, and Alex explains how Airbnb puts design at the center of everything it does to create competitive advantage. Although Troy doesn't seem that impressed. Finally what I hope will be a recurring segment called The View From Premium Economy.
+
+I review my recent stay at the Homewood Suites in Horsham, Pennsylvania. We appreciate all your feedback. This episode has far less cursing on it at the request of at least one listener. Thank you, Nick, and also my mother. Send me your feedback at brian@therebooting.com.
+
+
+
+
+[00:03:53] Welcome end
+---
+
+[00:03:53] Brian: let's start with 
+
+and this is more of a correction, for both of you. And so you can recant what you said last week because I submitted that LinkedIn is a good product. And Andrew Grossman, chief of staff, to Scott Havens at, Bloomberg, also had a corporate strategy wrote in to say, I'm gonna quote him.
+
+Cause he had, he made a much better case than I, I made, and he's, this is his defensive LinkedIn, he said, Juan, it's pretty cool. That there's effectively a universal professional directory available for free on the internet. This is a source of annoyance for rich established people. No one in particular comes to mind that have established networks, but isn't it kind of great that any junior person can get a view into the org structure, professional networks, et cetera, without spending a lifetime of
+
+going to lunch? 
+
+[00:04:35] Troy: No one said it wasn't useful, 
+
+[00:04:36] Brian: Although I like lunch, I love lunch. Troy, the next one, his next point is actually directed specifically at you and it said, Troy should love it. It's a very valuable performant ad product. He knows you deeply. He knows what moves you, performant ad products. And then the other points were also, I think, pretty solid.
+
+And the fact that lying to make yourself good is, is the same thing that happens in every social network. It's, it's just the human condition. And lastly, and this is most important, I think no one ever accused LinkedIn of subverting democracy or driving teen girls to depression. Although it can make you a little anxious,
+
+[00:05:11] Alex: Just to be clear, I don't, think Instagram or Facebook or Twitter is any better. and we didn't say it wasn't a good ad product. I gave quite a few people references to work at LinkedIn because I even heard it was a very well run company and I do, admit that it's probably different when, you know, depending on where you are in your career.
+
+and I would like to add that whenever a recruiter contacts me, I will thank them and appreciate, the
+
+fact that
+
+[00:05:34] Brian: do you say, I 
+
+[00:05:35] Troy: What is going on
+
+with you.
+
+today? 
+
+[00:05:37] Alex: No, I mean, I, I think, that there is value there. I'm not gonna backtrack on the fact that there's a little bit of a vibe of desperation, which makes me not wanna visit the site.
+
+That's all, it feels like a, like a business, networking event. everybody's just pitching themselves and I'm not sure there's a 
+
+lot of connection.
+
+[00:05:54] Troy: Alex, I don't, I don't like you when you're conciliatory like this. 
+
+[00:05:58] Alex: Well, I've been told not to swear and say sorry to Microsoft 
+
+by Brian. 
+
+[00:06:01] Brian: you're overcorrecting. You got
+
+agro. And 
+
+that was good.
+
+[00:06:04] Alex: Brian keeps saying, Alex, we, you we're never gonna sell ads. 
+
+[00:06:08] Troy: LinkedIn, is a perfectly legitimate product. It's very useful to, to many people, myself included. It's cringe.
+
+Okay. LinkedIn is where people are the cringing ist, that's all we said. Yeah. Is that people say things and do things on there that feel kind of cringy. 
+
+[00:06:23] Brian: Yeah.
+
+While we're
+
+actually 
+
+[00:06:24] Troy: And not only that, Brian, I I have to say that it, it's cute to how you've taken on the kind of LinkedIn flag and that you're all like about this.
+
+you're, you're underneath you're making fun. This whole thing is like performance art 
+
+[00:06:37] Brian: it's complete. It's completely genuine. And that's offensive, to be honest with you. It's offensive.
+
+[00:06:43] Troy: That's not with.
+
+[00:06:47] Brian: Yeah. But like you can change your mind about things and I have appreciated LinkedIn not for what it isn't, but for what it is. And it has weirdly, coincidentally, the deeper I get into advertising sales, the more I appreciate LinkedIn. I admit it. but that's just cuz I didn't have exposure to that, area as much as I have.
+
+I have recently. But on that topic, cuz I think your problem with LinkedIn and both your problems with it is it isn't cool. I think that's basically it. LinkedIn is not cool. 
+
+[00:07:14] Troy: Neither is threads by the way. It's so uncool. It's not even funny.
+
+[00:07:17] Brian: Right. But here's the thing. Things that are not cool often are very popular. And are often very useful and are more often very lucrative. So like I think the future is increasingly uncool. 
+
+[00:07:30] Troy: The future will always be cool if you're cool.
+
+[00:07:32] Brian: Yeah. If you have uncool businesses in the background like that, make
+
+[00:07:36] Troy: There's always uncool businesses. There always will be.
+
+[00:07:38] Brian: Yeah. Better to be in the uncool business with like cool businesses at the front. That's why I think media
+
+[00:07:44] Alex: that statement sounds like clickbait, man. the future is not uncool or cool. Do you think actually what we're seeing now with with the studios fighting, actors, is that cool people and uncool people are just like fighting this war for dominance. and the uncool money. People in studios are thinking they're the future with, now that AI is making all the cool people redundant, is that what's happening?
+
+[00:08:06] Brian: much. Yeah. Yeah. Gunner yeah, he's gonna win that guy at Warner Brothers. The, the beam counter, the one with the spreadsheets. Yeah. He's gonna win.
+
+[00:08:13] Alex: There's always cool and uncool products. There's plenty of uncool products that are great and deserve to exist. I think Troy did mention that LinkedIn is cringy and there is, 
+
+[00:08:23] Brian: Isn't that just a euphemism for uncool?
+
+[00:08:25] Alex: no, not always. I think there's stuff that is uncool that is absolutely fine. stuff that is just boring and just does the thing it needs to do.
+
+I would say Google Docs or whatever. I think when you're building a social network, there's a certain vibe that gets generated by the community. Now, LinkedIn is a great product, may make a ton of money on ads. They've got a great team behind it. But the way the community is incentivized to behave is kind of uncomfortable.
+
+And I think what Troy is also discovering is that similar things are happening on threads I don't know what it is. It's a sense of desperation and weird. Like, look at me, look at me. 
+
+and that, that's done by the community
+
+[00:09:02] Brian: Most people are
+
+uncool.that's humanity. Your, your problem is with humanity. It's not with LinkedIn. 
+
+That's 
+
+[00:09:08] Alex: I think most people are cool.
+
+[00:09:09] Brian: And threads the same thing. The people hating on threads are the cool snarky kids. And because Twitter was made for cool kids, that's why I like Twitter. I'm cool in the sort of ad tech sort of 
+
+[00:09:23] Troy: I mean, do you think generally it's not cool to make products that already exist, that have no imagination, that don't solve a new problem, that don't show insight or poetry or something Beautiful Threads isn't just an opportunistic extension on Meta's Empire and on Instagram and thrust at the market by exploiting one social graph and dragging it from pictures to text.
+
+And the outcome of it is an experience that doesn't feel interesting. It doesn't feel good. And it's uncool. Yeah, but it's like more than uncool. It just kind of why
+
+[00:09:58] Brian: But it's gonna work. I bet it's gonna work. because like we brought all this on ourselves with optimization and like the future is uncool because it's just optimization and there isn't a premium placed on originality that I see.
+
+[00:10:12] Alex: I think the exact opposite's gonna happen. I think that, it's gonna be a, More important to be cool and relevant in your own way. I think Gen Z, is actually a generation that understands that you don't have to be a certain way to be cool.
+
+and that there's a lot of, many, many, many subcultures, but it's all about trying to be authentic or, just like expressing yourself in interesting 
+
+ways, 
+
+[00:10:34] Brian: we love to suck up to 
+
+Gen Z. The only 
+
+reason they're cool is because millennials were so uncool.
+
+[00:10:38] Alex: you know, I grew up in an Asia. If you weren't into grunge, you were not cool. 
+
+if you walked into a party and you said, well, who's your favorite artist? And you said, Peter Gabriel, you got kicked in the nuts, As you should have been because I was away.
+
+[00:10:49] Brian: I like him a lot and he is very popular on 
+
+[00:10:52] Troy: Where did that happen? Exactly. That didn't happen where I'm from.
+
+Did that happen at 
+
+[00:10:55] Brian: being kicked in the nuts for liking like Salisbury Hill.
+
+[00:10:58] Alex: that was in, that was in Austria? I think. 
+
+[00:11:00] Brian: isn't that just like a regular activity?
+
+[00:11:03] Troy: I mean, I think there's bands you get kicked in the nuts for pretty much. Is there any good music coming out of Austria, by the way?
+
+[00:11:09] Alex: Falco
+
+[00:11:10] Brian: fuck. 
+
+[00:11:12] Alex: 
+
+[00:11:12] Troy: I think that's the most ridiculous thing that you've ever said. You got kicked in the nut in Austria for saying you like Peter Gabriel.
+
+[00:11:18] Alex: ridiculous
+
+[00:11:18] Brian: and Gabriel was cool.
+
+[00:11:19] Alex: Yeah, sure. not when you're 16 and Nirvana's, you know, hitting the scene. anyway, back to my point. I think algorithms make everything uncool and everything gets generated, by ai. And so therefore, real people with real stories that have something new to say will stand out.
+
+It's as simple as that. And the problem with places like LinkedIn, it doesn't incentivize you to do that. and the thing that was great about Twitter, it kind of optimized around if you were weird or did something crazy, you would get some attention. but that's also not healthy. I think social networks are not cool 
+
+and, and I think people will realize over time that it's not cool to spend all your time on social networks. Jesus Christ. The most uncool thing is to watch some influencer posing in front of Maserati they don't own. And then quickly moving on to the next thing just
+
+[00:12:04] Troy: But it is cool when an influencer makes little ice cream sounds.
+
+[00:12:07] Brian: You saw that one?
+
+[00:12:08] Troy: Oh my God. Well, who didn't see that one? That one was crazy. That one took the internet this week. 
+
+[00:12:13] Pinkydoll: So good.
+
+Mm. Ask. So good. Ooh, ooh, ooh. Oh. Thank you. You got feeling like a queen, huh? Fire, fire. Fire, fire. Fire. Ooh. Game game. So good. That was so good. Coconut. Amazing. you, love you, love you, love you. Love you. ask me. So good. 
+
+[00:12:47] Alex: that's the future of media. Troy, 
+
+[00:12:48] Troy: Yeah. 
+
+[00:12:49] Alex: it?
+
+[00:12:49] Troy: Making sounds to get people to donate to you. Like an what? What is the category? Nfc, non-functioning character, video
+
+[00:12:57] Alex: Oh, is that what it's called? That's what it's 
+
+[00:12:59] Brian: I have no idea what you guys are talking about.
+
+[00:13:01] Troy: You're 
+
+[00:13:01] Brian: This was not in the show notes.
+
+[00:13:03] Troy: Okay. It's a woman in Montreal who's doing, you know, the weirdest place on earth right now is at Live TikTok. It's the strangest, most just kind of B like, it's bizarre.
+
+Do you ever watch live TikTok?
+
+[00:13:17] Brian: Temu.
+
+[00:13:17] Troy: it's 
+
+like everything from literally people on meth 
+
+to, just really, really odd characters doing strange things to get attention. This particular case was, a sort of sexualized character performing as a, I don't know what it is called, a non-functioning character.
+
+It's 
+
+[00:13:35] Alex: it says comes from gaming. It's non playable characters.
+
+[00:13:38] Troy: Non playable character, right? which is a, like a secondary character in a video game and making little kind of re repeatedly making little sort of, verbal noises when people, gave her gifts. And one of those gifts was ice cream. 
+
+[00:13:51] Alex: Yes. it's an NPC stream, it's called. And she's, called specifically the one that kind of, went viral. It's called Pinky Doll. there's like usually attractive people, usually girls. and they just stare at the screen and little messages come up and people pay cents to put up a little badge.
+
+And that badge might be of something, specific and whatever it,is they will say something and do a little weird word. So if we had, like you, Brian, you know, you could say, we'd show you a dollar sign. You say Tasteful advertising. Tasteful advertising, tasteful advertising. 
+
+[00:14:20] Brian: that's kind of my role on 
+
+[00:14:21] Alex: like Exactly.
+
+LinkedIn. LinkedIn 
+
+professional networks, and you would put on a little hat or whatever. and 
+
+they're making bank, they're making oh, you put on a little hat with a LinkedIn logo
+
+on 
+
+[00:14:33] Troy: well, 
+
+[00:14:33] Brian: okay. Well, I mean, if it's part, if it's part of a partnership, it's a different story,
+
+[00:14:37] Alex: To me, to me, people, people thought it was incredibly weird. It is incredibly weird, but if you extrapolate it, it is just advertising.
+
+It's what we all do. I mean, you all do. I'm trying to stay out of it. it's to sell yourself and say stupid shit so that you get money. The crazy thing is that a, apparently, a lot of people who spend a lot of money on it have a control fetish, and these, people have learned how to capitalize on that.
+
+It's the future of media, man. It's the future of media.
+
+[00:15:01] Brian: So, speaking of the future of media, my segue
+
+is no, I don't, I it's getting too video gamey and weird, and I don't, I'm not a video game guy and everyone's been lecturing me about video games for a generation now. And you know what? I'm just gonna sit 'em out
+
+and 
+
+[00:15:18] Alex: guy 
+
+[00:15:18] Brian: no,
+
+I'm 
+
+[00:15:19] Troy: I don't think he would say he was 
+
+the cool guy for sure. 
+
+[00:15:22] Brian: I'm, cool.
+
+Within like LinkedIn ad tech, LinkedIn,
+
+like, 
+
+[00:15:27] Alex: sure. Yeah. You 
+
+get 
+
+[00:15:28] Brian: pick the 
+
+right, you gotta pick the right categories
+
+[00:15:31] Troy: I think you're cool in in like B2B 
+
+[00:15:33] Brian: I don't like this. Yeah, that's what I mean. B2b, 
+
+you, you, I'm fine with that. I'll take that. I, I just did a podcast with David Carey. I put, put it out 
+
+today. it's like over, over half of hers business.
+
+Is these what I would consider, what cool people would consider these grotesques businesses that are I, half their profit, excuse me. Information services for like aircraft, repair and maintenance and stuff, and
+
+Fitch ratings Camp Systems. 
+
+They pay 2 billion for that. It's not like the glossy magazine stuff, but that's cool.
+
+Money's cool. Free cash flow is cool. 
+
+[00:16:08] Alex: Nobody's saying that. 
+
+[00:16:09] Brian: Let's, 
+
+[00:16:09] Alex: long as you're not cringe, man.
+
+[00:16:10] Brian: let's talk about like distribution, 
+
+[00:16:12] Troy: coolest guy at HVAC conference in Vegas.
+
+[00:16:15] Brian: Totally. Yeah. There's nothing wrong with that. 
+
+Look, the, the reason cool industries have always underpaid people because they get people making uneconomic decisions, whether they have trust funds or whatever, or because they think it'll get them into parties and whatnot.
+
+[00:16:30] Troy: That's cool. Yeah.
+
+[00:16:31] Brian: you know, what's even cooler, like having leverage as a worker, I think that's cooler,
+
+you know?
+
+But like, think about an immediate, I always go back to like, industry dive was valued basically at six times what Buzzfeed is, industry dive home of, like waste dive electric utility dive That's a meaty company that like people would say is quote unquote uncool. Well, guess what? It's
+
+like 
+
+[00:16:53] Troy: It has nothing to do with it. It's cool or not cool. It's picked categories that it can create valuable niche content in and monetize it, and that was effective,
+
+[00:17:03] Brian: Well, guess what? Guess why they were able to fit? Well guess why they were able to pick those categories? Because like they went into specifically uncool categories that were uncrowded cool categories are overcrowded, fashion overcrowded, 
+
+waste 
+
+management. Not that crowded. All right, let's talk about distribution.
+
+Cuz distribution, I think changes, the economics. And I maybe I'm like sort of framing this in a way that Troy's gonna hate. but you know, I think what's
+
+[00:17:27] Troy: Brian Distribution is my middle name. I I love
+
+[00:17:30] Brian: well that's why I thought I was playing into you, but then you responded to the notes that you insisted on us having cuz we're having to pivot to preparation if everyone knows that don't like, and, Troy responded with his, like thoughts in all, in all caps, which was a pretty toxic move to be honest with you. You can't go all caps.
+
+[00:17:49] Troy: You know
+
+what? We're starting. Let's Alex restart the podcast.
+
+Brian. Brian, I don't like it when the bitterness is out of you like this.
+
+[00:17:58] Brian: not, 
+
+[00:18:00] Troy: the listeners. I just feel like as we move into our, I don't know, 40th episode or whatever, that some, sometimes we get on and it's like, first of all, you become a bit of a caricature because you run out of original things to say cuz that's just the nature of things.
+
+And I think that if we wanna serve our audience and, you know, continue to be proud of this podcast, we have to do a little bit of preparation. That's all. I insisted on that we come up with the topics and we have time as individuals to do a little bit of preparation. 
+
+don't think that in all caps, that's what you're gonna hit me on now is a way to differentiate the type in the feed 
+
+[00:18:39] Alex: And I've just decided to be more accommodating. So I, I love
+
+LinkedIn. I 
+
+[00:18:43] Troy: And that, that's just, I mean, that's like, oh my God, the producer in me is just like, Alex, I think that you should be yourself. I think that this like, oh my God, people aren't gonna like me because I'm like, sassy is not the right, direction.
+
+[00:18:55] Alex: I would rather to be sassy and cringy, I guess.
+
+[00:18:58] Brian: That's true. So anyway, what I was trying to get at was what's going on? I, in Hollywood I find fairly fascinating. you know, it started with the writers and now, The talent. This actually was well timed with our, actually it was a little bit late, but with our episode last week around the repricing of talent.
+
+And I think a lot of this is around distribution changing cuz underneath all of these battles that are happening in Hollywood is the fact that distribution has changed and when distribution changes, the economics change. And there's a lot of different like side issues being thrown in there about David Zos love's like salary and about ai, but ultimately, isn't this about distribution is changing, if not has changed and therefore the economics are gonna change.
+
+Try.
+
+[00:19:45] Troy: Yeah. I've always felt like the resilience in media businesses like me, media is just you. You have a way to get to people. That's the distribution side, the more reliable. And ownable that that distribution mechanism is the more valuable it is. And the more the content that you're making is advantaged because you have a predictable way of getting, content messaging and advertising to a distribution base that you own.
+
+if you don't have distribution, you're a production company or you're an IP company, and when you have both, when you have reliable protectable distribution and content, you have, you know, a resilient media business. So the history of strikes in Hollywood, actually in now, kind of all three cases come at times when there have been material distribution shifts.
+
+or format shifts, one from movies to television. from,television to video To DVDs and video and, you know, that era. so there was a new sort of surface area to negotiate over because there was a new place that you were gonna make money as a content creator.
+
+And now from, television to streaming, and all of those are related to either technological or, or distribution shifts that fundamentally change the economics of the business. it's really crazy this, this particular shift. and I think that there's a lot to think about and talk about and write about.
+
+Because first of all, from being this kind of shiny example of the shift to streaming, Disney it seems to me is gonna be facing like. A real, real uphill battle for several years. and again, it's cuz of the shift in distribution because first of all, almost half of their profits came from television and cable, and roughly a third of their revenue.
+
+that is a no growth and a declining business
+
+[00:21:31] Brian: And now they're saying that most of these assets are quote unquote non-core. I mean, Bob Eger gave a, interview at that Sun Valley thing, like on the sidelines, and basically put a for sale sign on a B, C. And or espn. ESPN looks like they're
+
+gonna have a 
+
+[00:21:46] Alex: and other things that 
+
+[00:21:47] Brian: fx. Yes. Let's not 
+
+[00:21:49] Troy: Right. 
+
+[00:21:50] Alex: and and they, they're probably gonna be forced to buy Hulu and God knows what
+
+all 
+
+[00:21:54] Troy: Well, and, and the Hulu thing, I mean, I feel like this has been reported on pretty widely at this point, but the Hulu thing is connected to the Fox move. The Fox move was a 70 billion transaction to basically buy catalog, and that included Simpsons and like X-Men and other stuff like, and a few cable networks.
+
+But along with Fox and by the way, buying catalog because it was underneath of the sort of strategic pillar of, you know, good content and good IP or what's gonna get us through this, distribution or technological shift. And then what came along with that was Fox's percentage of Hulu. And now Disney owns two thirds of Hulu and is kind of stuck with it.
+
+Like they have to buy it and there's one person that can kind of sell them the rest of it. So they're gonna have to really pay up. I mean, the point of it is that, saddled the company with a whole lot of debt. So you have a whole lot of debt for, I mean, I think reasonable ip. you've got,pressure in the parks.
+
+You've got a declining TV business. And quite frankly, I think that Bob Iger, who's like a brilliant sort of statesman CEO, is running out of opportunity to blame it on 
+
+[00:23:01] Brian: Yeah, but it's kind of funny. I mean, is that like 
+
+my wife's like reading, like Bob i's like book. I'm like, does this hold up? it's interesting time to be digging into this cuz he was like taking a victory lap and talking about running for president and
+
+[00:23:13] Troy: Well, I read the book. He should have just shut it down at the end, wrote the book and walked away.
+
+[00:23:17] Brian: Yeah. and now he's got the, the board is like, here you fix it. but it, it is interesting to see how Alex how do you like, compare this with the video game industry? Because again, I don't know, video games and like how do the distribution dynamics work in that industry? And cuz it just seems like when we're looking at all the pressures on media that some aspects of it like gaming they have different dynamics, than other parts.
+
+[00:23:44] Alex: Yeah. Although it's, shifting, right? Microsoft just had a huge win, in their, road to purchase Activision. they're doing distribution play, where they're shifting, Their efforts to a subscription service, as well as, streaming services, 
+
+they see the future as that. and you know, and I think that's making people worried in some cases. But, you know, video games has been very, there's a few key players that control all the distribution. One is Steam on the pc, which is a massive company, that outside of gaming you don't hear about.
+
+Then there's, you know, Sony with PlayStation, Xbox, and Nintendo and outside of mobile, you know, this is where you go to make the big bucks. And so, what has happened up to now is d i p holders, people like that had the call of duties or, the big Halo franchises or stuff like that Would have a lot of leverage.
+
+But what's happened is a lot of these large companies like Sony and Microsoft are just been buying out studios. and you need incredible scale and incredible investment to build these, what they call AAA games. So the distribution players are now pretty much, owning all the big studios. and so there are concerns are concerns.
+
+I mean, you know, in 2016 there were a video game, voice actors strike. You know, these people are part of sag I think, and, that might happen again if the economics change, but it hasn't happened so far. And I think one thing that's different with video games is that there's a very active and very, lucrative independent gaming, industry that kind of offsets some of that, like the independent movie industry doesn't make.
+
+Any money. I think that's the problem, right? some people are, saying that actors should start working on a bunch of independent productions, but very few of these independent productions get any traction, Or any marketing or anything like that. while on something like, video games, you have pretty much access to the same distribution.
+
+so I don't know.
+
+[00:25:30] Brian: So it seems like it's, it's a more healthy ecosystem. I'm just wondering why, why the dynamics are different. In that, cuz it's easy to say that scale is dead and like it's gonna be about niche and stuff like this, but getting distribution is really difficult in, in media and it's, it's getting harder.
+
+for instance, like when we think about AI search was a, was the main distribution lever. And when distribution gets harder, these businesses get even harder than they already are.
+
+[00:25:55] Alex: Yeah, 
+
+I mean, I think what's happened is, with Disney specifically, is that they've always saturated their own market. they made excellent deals. Like it's important to remember that they bought Marvel for 4 billion and Lucas Arts for 4 billion, buying every single franchise that our, childhood was made on.
+
+then they oversaturated the market and these, big tent pole films and stuff like that are on the performing. and I don't know why, but I think video games,still have the ability to have reliable franchises that make a ton of money. when a Call of Duty comes out, it makes a ton of money.
+
+When the next Spider-Man game comes out, it makes a ton of money. So all of these companies, Have access to that. And they know that if they make a good game, they'll make a ton of money. Nintendo's been making Super Mario games for 30 years and they make a ton of money. maybe it's because production time takes so long, or maybe it's because just there's less saturation.
+
+it doesn't feel as unreliable. But right now studios are spending 200 million on a movie and I think completely flops, Indiana Jones is not doing great. I think they shot themselves in the foot creating too much content. 
+
+[00:26:57] Troy: that point is valid and, and really kinda ladders up to having to. Compete in a new distribution paradigm with an abundance based direct to consumer relationship to compete with really the company that kind of fucked it up for everybody and ushered in the departure from the bundle.
+
+And that was Netflix. And, it really is, you just got me thinking, you know, Brian, we talk about the sort of deterministic nature of a revenue model and in media, if you wanna understand the media business, look at, how it's, driving revenue, but it's really distribution.
+
+And, and what happened is that the internet made, shelf space available to everyone. And when that happened, These businesses, you know, and I was part of, of them, had to find a way to get some kind of stability around distribution. And the way that you tried to do it was, your headline was meant to be better distribution equals clickbait.
+
+Your SEO team was meant to try to fortify your distribution position, Search engine optimization. Your partnerships to distribute content to Snap or MSN or whomever you had a relationship with were an attempt to solidify your distribution. And all of that led to a model where there was this huge amount of inventory that you couldn't monetize.
+
+Cuz everybody had distribution, everybody was competing. So it became a programmatic marketplace of monetization.
+
+[00:28:23] Brian: Hmm.
+
+[00:28:24] Troy: And two things are happening right now. I think The first thing that happened is, Any bumps in the distribution system that affect a company, say like Buzzfeed and you don't control that distribution.
+
+You live as part of it, but you don't ultimately control it because it's somebody else's algorithm, somebody else's rule. And then any bumps that happen in a monetization system that you don't control down the line, right? Programmatic yield, whatever. I mean, that's not to say that the whole sort of model of, page based advertising wasn't really challenging to begin with, but both of those things meant that you could make all the great content you wanted, but it wasn't gonna ensure your success.
+
+So what really happened, and then now this is just happening inside of the video world. It happened in newspapers, it happened in magazines, and now it's happening in video
+
+and. And, and then all I can think of is my mental model. I used to use this mental model that didn't seem to resonate much, that the internet is just a gigantic meat grinder of content.
+
+Like it mixes it all together and, and serves it back with a feed. But I really do think that the modern model of media are these platforms that take content from everybody and feed it back to you with a machine, like with an algorithm and. Increasingly company's ability to get leverage in these, against these platforms is diminishing and therefore the economics are diminishing.
+
+you know what used to be the biggest category of moneymaking entertainment in cable? It was like reality stuff, right? Cheap to produce, and in many cases, extremely popular, Reality programming, everything from Ice Road Truckers to the Kardashians. And what is reality TV now?
+
+I mean, of course it still exists. Nothing in media fully evaporates ever, but reality television is TikTok. What happens when writers and actors go on strike? People entertain themselves. They just do it differently. one of the looming sort of existential things in this strike, other than.
+
+I think that the residuals, discussion is really complicated because it's harder to do the math on what a show is worth to drive l t v on a subscription versus what it's worth in syndication against an ad stream. it's a harder thing to calculate, the competition is, the millions of people making content all day long.
+
+And, I gotta tell you, I can be entertained for minimum 90 minutes on TikTok all the time. I can be entertained by a lot of things that have nothing to do with, professional entertainment.
+
+[00:30:51] Alex: I mean, I think that there's been this fight for attention going on forever, right? And, people worried about taking away their eyeball minutes from, big budget movies for, cheap reality tv. But throughout that, in reality TV's heyday movies were still doing well.
+
+I think the cannibalization doesn't usually happen from one type of media to another. It's within, a specific category. So, so there was a video game crash, because that they flooded the market with low quality video games, yesterday, I was trying to figure out, we sit down as a family and watch a show, 
+
+We are not gonna watch TikTok. We watched like a 30 minute show and there's so much shit and I can't figure out, like there's reservation dogs and there's a new season of, what we do in the shadows and there's fucking, you know, all these shows that we 
+
+absolutely wanna watch 
+
+[00:31:37] Brian: your first one.
+
+[00:31:37] Alex: oh shit.
+
+See, you're making it worse.
+
+and meanwhile, I'm such a huge Star Wars fan and I haven't seen half of the Star Wars stuff that came out because I'm tired of it. And so I think, these people have. To fight Netflix. Everybody went into a, kind of scorched earth.
+
+create as much content as you can pump all that money into this and that party's over. yet Netflix, you know, is up like 150% in the last 12 months. I don't know what's gonna happen, but I definitely think we're gonna see a lot less 
+
+[00:32:07] Brian: Yeah. But, but to bring it back to, to publishing for a bit, I think we're starting to see deals get struck cuz Barry Diller gave an interview, this week about the writer strike, but he pivoted it to the battle going on between publishers and quote unquote AI companies, whether that's Google or Microsoft, or open ai and.
+
+They want money, they want want money. this is no longer of this like, oh, we're gonna do these distribution deals and stuff. No, no, no, no, no. This is, give us money because you're taking our content and you're, training models on it, and then you're gonna claim it's something else. But that content came from somewhere and we paid people to create that content, and that's our intellectual property.
+
+And they're starting to cut these deals. AP struck a deal with, OpenAI this week. a lot of it is like one of these typical, tech platform deals where they claim they're gonna work together on this and that, but a lot of it is just money. and Barry Diller was very clear that Google and Microsoft and the other companies need to CTC cut the check.
+
+Now, I don't know if 
+
+that's 
+
+gonna,
+
+[00:33:10] Troy: on that? 
+
+[00:33:11] Brian: I 
+
+don't know if that's gonna cover much, but that seems like a pretty profound
+
+shift because 
+
+[00:33:16] Troy: And I, and I think that will happen. just a couple questions and, comments on it. One is when there are, thousands and thousands of creators and content providers, How does the platform become the sort of central bank for that ecosystem? yeah, you can cut a deal with, Dow Jones, wall Street Journal, Barry wants to cut a deal and save his investment in, you know, Meredith and, there's a handful of big publishers that will benefit from that.
+
+and I think that's fine. And we saw variations of that story, whether it was deals that we were doing with, there were some with Google, there were some with Facebook. They never lasted, they weren't resilient and they only ever represented, say, less than 20% of your actual p and l if that, like all the syndication deals that you stacked up.
+
+The real issue there is, it's nowhere near. the sort of cohesive structure that, if you wanted an analogy, it would be how the cable providers, through syndication p fees paid ESPN and all the cable channels, right? Where it was a controlled universe, everybody got paid, only certain people could come in.
+
+it was a very, very controlled and scarcity driven ecosystem. And so this like the abundance of the internet and this idea that, three or four algorithmically generated kind of technology slash platform companies are gonna be, making this system equitable seems, seems tough to me.
+
+And the only other point I would make is, as a content creator in that system, you have zero leverage. You just don't have any leverage. And Yeah, Barry can go out and scream and people can write negative things about the tech companies and all of that. And it'll work to some extent, but it, it's never gonna bring the kind of stability that existed before in the ecosystem.
+
+And, all of that kind of adds up to what's happening between the unions and the bosses today in, you know, so there's a lot of discussion, Brian, and, there was an article written in the Atlantic this week called The Businessman Broke Hollywood.
+
+it was an, interesting perspective from a writer saying that, they fucked this up and now we have to deal with it. And I suppose there's some truth to that, 
+
+you 
+
+know? 
+
+[00:35:19] Brian: like publishing.
+
+[00:35:20] Troy: but did they break it or did it just happen because. the sort of unstoppable gears of technological progress meant that the system changed. could they have held the bundle together, Brian, in a different scenario? The bundle was awesome.
+
+[00:35:34] Brian: hindsight is always 2020 as cliche goes. there are a lot of fundamental mistakes I think that could easily be pointed to. I mean, the fact is that Netflix was enabled by short term concerns, because they just licensed, they could have strangled Netflix, Netflix needed to have the IP from these studios in order to build
+
+[00:35:56] Troy: Yeah. Famously Stars sold their catalog to Netflix that enabled them to get started, blah, blah, blah. But then they had cheap money to go make their own stuff.
+
+[00:36:04] Alex: I don't know, man. The way I see it's the same problem, is that companies are run by business people. They want to make the company grow. They want to reach scale. Scale is inherently incompatible with the creative pursuit, because creative works become, less and less valuable as you scale them.
+
+And you need to keep creating new things, Troy, to be cool, right? To the point that you've made. And so, there's this tension where creative people see business people ask, always asking for more, more and more. business side of things, always seeing creative people as the, anchor that drags them down and they both wish they didn't 
+
+[00:36:40] Brian: Is that true? Oh yeah, totally. 
+
+[00:36:41] Alex: Creative people want to be independent. And 
+
+[00:36:44] Brian: Troy, 
+
+[00:36:44] Alex: you, because 
+
+I've been in the room, I've been in the room business, people wish that they didn't have to deal with them. I literally have somebody said the day the day I can get, AI to replace illustrators will be the happiest day of my career because I'm sick and tired of working
+
+with these premadonnas.
+
+true. I'm not saying everyone's like this, but I'm thinking there's an inherent tension and incentives here. Creators
+
+[00:37:07] Troy: you think there's a business creator dynamic between you and I, Alex?
+
+[00:37:12] Alex: think you're quite different, but I think that tension will
+
+remain. 
+
+You want me to do things right? You want me to do, you wanted me to do more faster, better. 
+
+[00:37:22] Brian: on you frequently?
+
+[00:37:24] Troy: Oh, yeah.
+
+[00:37:24] Brian: Jesus. 
+
+I 
+
+couldn't take 
+
+[00:37:26] Alex: chills. 
+
+down my spine. yeah.
+
+[00:37:28] Brian: I'm too precious. 
+
+[00:37:29] Troy: Well, I know 
+
+what not to do next. I'm 
+
+[00:37:31] Alex: Petro, there's this inherent tension and you can't say that, 
+
+[00:37:34] Troy: I don't
+
+[00:37:34] Alex: it's a good look for, Bob Iger to you make 60 million a year or something.
+
+And, wonder why, this guy who had like a big part in a sitcom wants to make a living. I mean, come on.
+
+[00:37:45] Brian: Well, I mean, look, a lot of that is to me it's like marketing to some degree because it's easy to like point to, everyone always points to CEO pay and executive pay during these things, but it because 
+
+[00:37:57] Troy: Look at Star Pay. Look. Look at, 
+
+[00:38:00] Brian: Yeah. But that those, they're creating the value, 
+
+there's a reason. Look, athletes are underpaid. my belief is like LeBron James should make a billion dollars a year. He should not make whatever he makes like 40 million. That's ridiculous.
+
+[00:38:12] Alex: what mess he made, right?
+
+[00:38:13] Brian: He should. And that's what they should. Why do these nitwit owners now they call them like governors or something cuz it's too creepy to call 'em owners.
+
+why do they get all of the spoils of this? These are not run like companies. I don't
+
+[00:38:26] Troy: Well, the owners put up the capital to own the company and they're paid on their capital,
+
+[00:38:31] Brian: it's a cartel. It's a freaking cartel. Gimme a break. These 
+
+sports 
+
+[00:38:35] Alex: Okay. Hang on, hang on, hang on, hang on. I just, just to be clear, not saying that people are bad. I'm just saying that there's 
+
+a, okay, fine. there is a disconnect in the incentive between the creative class and the business
+
+class. Okay. Every creative wants to be independent and businesses wanna scale, A lot of people managed to thread that line really well. Some people managed to do it for, I think Bob Iger was one of those people that did it really well. But at some point the market pressures will come in and will create conditions that make it uncomfortable and unpleasant for creatives. Okay. And then the technology will come along that will force you to create more content.
+
+Because we gotta fight Netflix and everybody goes, okay, we gotta fight Netflix. but then another technology could come along and you could say, wait, I could remove, like I wouldn't have to pay extras a hundred bucks a month and I could replace them with AI generated characters. Fuck yeah. I'm gonna do that.
+
+I don't wanna deal with people. People are the things that slow down scale the fastest, the most efficient company is a hundred percent run by ai, right? So that tension will always be there. And we've just seen. Five years of a fight for scale that's created an environment that is no longer tenable.
+
+[00:39:45] Troy: Do you think AI should, do you think it's legitimate if you were running a studio or building a game that AI should replace extras in a movie? is that immoral? Is that actually an articulation of the tension between creative 
+
+and capital? 
+
+[00:39:58] Alex: I don't know if it's immoral. I think that right now the deal that they were trying to put through was that as an extra for day's pay as an extra you could get scanned and your likeness would be owned by the studio for perpetuity. That is immoral. If you are telling me that there's a business model and there's a standardized contract that I don't need a lawyer, to be a lawyer to understand that will mean that I can generate passive income from my likeness and I do it then that is not why would the studios even offer that?
+
+[00:40:29] Brian: But I think the reason that this is obvious cuz like the pie is shrinking in a lot of these industries and then the fights, which, and they're always gonna be fights over whose slice of the pie is like bigger, right? And when the pie is growing, The fights are easier, but when the pie is shrinking, they get like pretty brutal.
+
+And I think that's just what's happening in these industries and that's why I think the revival of unions is like really a sight to behold. I just saw this like stat today. I thought unions were a thing in the past and 71% of Americans now have a positive view of unions. It has not been this high since the 1970s.
+
+I mean, it probably comes with a distrust for corporations and institutions as well. Right. well, trade unions are an institution,
+
+[00:41:12] Alex: that's true.
+
+[00:41:12] Brian: So I think a lot of this is, and particularly when we're talking about like how, you know, the business models change and the dis and like nobody is safe and stuff like this. I think from the worker, if I could speak for the workers here a little bit, it's like, welcome to our world.
+
+every single person who is like a worker for these companies has dealt with being laid off over hiring, and then all of a sudden you're firing thousands and thousands of people and then all of a sudden the people at the top of the companies are like, it's so hard to operate these businesses with such, such fast changes.
+
+It's well, really, I mean like we're all already Uber drivers, so welcome to the, the new world. I guess we're all Uber drivers for tech platforms,
+
+[00:41:57] Alex: And you know what, like business is about using le you leverage to get the best deal. And that's what both parties are doing. So, you know, good on them. 
+
+[00:42:05] Troy: I, mean, are, are you looking for a counterpoint, Brian, or, 
+
+[00:42:08] Brian: Yeah, go ahead. I, You stand up for the boss class? 
+
+[00:42:11] Troy: I think that you 
+
+[00:42:12] Alex: think that's unfair. I don't think Troy is trying to say that he's trying to have a more
+
+nuanced view 
+
+[00:42:16] Brian: I'm trying to, 
+
+[00:42:19] Alex: Yeah. 
+
+[00:42:20] Troy: listen, I, I think that there is a reality to the point that you said we're all Uber drivers and that is that more of, the content experiences that we have are governed by platforms that support.
+
+The inputs of many, many, many people, a world of abundance and, a kind of highly democratic system of content creation that presents harsh realities to professional communities that make content. I just think that's true, and I think that people are, completely justified in fighting for their piece of, the pie.
+
+And that's completely fine. But I think that when, for example, you start to measure the pennies per play like Spotify does on their catalog and then divide them up between, you know, all the musicians. So you take the pot, you say, how many streams did you get? Here's how much money we made, you get your piece.
+
+When that happens in the modern media world, which isn't driven by a TV schedule and, a framework of scarcity, there's gonna be a lot of people that make content in Hollywood where the residual conversation is superfluous because there's just not enough money there. And a lot of people will get a little, and a few people will get a lot.
+
+And that's kind of the law of the internet. And it's harsh, right? Just like you want LeBron to make a billion dollars and then what he's gonna suck a billion dollars outta the ecosystem. And then 
+
+[00:43:44] Brian: Yeah. Sorry. Chandler Parsons, you're making 65 k.
+
+[00:43:47] Troy: Exactly. And so, that's just the machine, that's the capitalist machine.
+
+[00:43:53] Alex: Right. But I think if you are part of the creative class right now, you wake up and you feel that you're being attacked both by the distribution model. And that's going to happen to games as well where you, get put onto a subscription system and then you get a slice of whatever time people are playing on your game within the subscription system and they're adding more and more games.
+
+You have no control over that. And that's going to be the only way to publish your game if corporations have their way because subscriptions are great. You are, a writer, or an actor. And you're seeing less and less residual value. you're getting, potentially replaced for
+
+parts 
+
+of your job that 
+
+[00:44:26] Troy: then what man? 
+
+[00:44:27] Alex: ai.
+
+[00:44:28] Brian: like, this is becoming a communist 
+
+[00:44:30] Alex: but put up a fight. I think we're seeing that under attack. Everybody that creates
+
+right 
+
+[00:44:34] Troy: And then you get, then you go to law school or then you find a different job.
+
+[00:44:38] Alex: is this the future that you want, Troy? That technology and business efficiency makes it so unlivable for the creative class that we don't have art anymore. And art become an entirely just supported by, a few, billionaires, patrons. I'm not saying you're saying that, but what's I'm in on the fight 
+
+[00:44:54] Brian: by the way, there will still be, even in that doomsday scenario, there will still be LinkedIn, so I'm just saying
+
+[00:45:00] Alex: There'll be a bunch of artists for jobs on LinkedIn.
+
+[00:45:03] Brian: open to work, hashtag. 
+
+[00:45:05] Alex: if media, if these companies want to survive, they need to try to build business model where you can have a thriving creative environment where people make a living
+
+[00:45:13] Brian: Okay. My question is just to spin this a little bit forward to topic two is moats. Cuz a lot of what we're talking about is there are, are few moats available for anyone and, and anyone sort of in most professions, particularly creative professions, knows that there's no moats for them. the minute that they're able to be replaced by someone cheaper and whose replacement level they'll get replaced.
+
+And that's how it, it goes. And I feel like for a lot of businesses, the moats are gone. there are no moats around distribution as we've talked about. and trying to create. Moats. I think in particular, we've seen a lot of people try to create, I don't know if it's a moat, but really brand value around their own values in particular.
+
+I think one of the things that, that stood out, I think we shared it earlier, was this Wall Street Journal brand, autopsy, I would call it, of Allbirds. a phenomenon that I never understood. I mean, maybe you can explain it, to me, Alex, because people in Silicon Valley seem to think that Allbirds were attractive shoes to wear.
+
+but Allbirds seems like they screwed up on a bunch of different levels, but one of which is people don't really buy the shoes based on this, sustainability and like values based, marketing that a lot of these companies try to go with.
+
+[00:46:25] Alex: 
+
+I mean, I did see a lot of Allbirds around. I never bought into them, but, 
+
+[00:46:29] Brian: Everyone denies it in retrospect.
+
+[00:46:31] Alex: no, I never owned a pair. I was offered 
+
+a free pair and I, I said, no.
+
+[00:46:34] Troy: Allbirds was decidedly not cool, 
+
+[00:46:37] Brian: They were 
+
+[00:46:38] Troy: shopping, 
+
+[00:46:38] Brian: I can agree that they're not cool.
+
+[00:46:40] Troy: well, I didn't, I don't like buying shoes with my mother-in-law, I took her to the Allbirds store and I was like, you should get a pair. I'm not getting a pair. I think a lot of companies in the fashion space do trade in a Kind of social currency that has to do with values.
+
+VA is the, newer one in, footwear that have like vegan running shoes and stuff like that. but you know, and famously Nike has, taken stands where it made sense, like with the Kaepernick thing, maybe that was a little bit of an easier position to take cuz it felt like there was a clear lane there, but they took a risk.
+
+Certainly. you know what's interesting? I was in the store the other day, on Shelter Island to pick up some beer. And, when I walked by Bud Light, it was like, I wouldn't even have thought about it before. I mean, I don't buy Bud Light, I don't think, but all of a sudden it was this decision that you had to make, right?
+
+Because suddenly Bud Light comes with all of this kind of baggage and. I think when you're a mass product like Bud Light, that's the last thing you want. I don't think you wanna make the purchase of a mass beer brand into a political act or a social act. And I think that, They went from supporting lots of different subcultures.
+
+I think Bud Light has a long history of doing things in the L G B LGBTQ community to being a polarizing brand. And it's just probably the worst place you could be with that kind of brand and emboldened right wing consumer base decided to, to take the same action against Target that wiped like seven or 8 billion off their market cap because they were selling like rainbow onesies or some shit.
+
+[00:48:20] Brian: I don't know if one could look back and say did Disney handle the DeSantis thing in the right way? Well, I mean, if you look at the attendance at the parks, and if you're talking about
+
+[00:48:29] Troy: I don't think that's what that is though. Do you think that little Republican households are going, should we go to Disney? Tommy and Tommy's like, well, I, I really want to go, I really like Buzz Lightyear. But they're horrible liberals. 
+
+[00:48:41] Brian: I don't think Tommy's calling the shots in most 
+
+households. 
+
+[00:48:44] Troy: But, but I think that it's more like, people are, it's hot, it's expensive, we're going to Europe this summer. Like, I think there's other stuff going on
+
+[00:48:52] Alex: Yeah, I mean, so what I've been, hearing from the numbers is that, with the euro where it was, and people having been cooped up after the pandemic, a lot of people were traveling outside the US and that's definitely hurt
+
+us traveling. But,the thing about values, I mean, once again, Troy, you said something really profound, which is things being cool.
+
+the way Nike did it with Kaepernick was cool and spoke honestly to the brand's core values and to what their customers cared about. And that worked out for them, to Bud Light it, didn't align to, to the brand and didn't feel honest and didn't align to their audience. If you are Patagonia, it works really well.
+
+And so, all of these things like values or just eccentricity or. You know, high design or whatever you want to do needs to be applied correctly to the brand. People need to know what they're doing, you know, and when, when Apple started becoming successful, everybody wanted to ize their product, even if they sold canned carrots.
+
+But that's not how you do things, And so I don't think there's any issue with values that can be very powerful. Airbnb was values driven, but it's done in, in a way that I think is subtle. And then on the flip side of it, I think for Disney, they need to show a lot of, specific values because they wanna attract creatives.
+
+And that creative class usually aligns to a certain set of values. So, you know, I think
+
+for 
+
+[00:50:13] Troy: Yeah, you have to break all of these down, right? Like I think that in the Disney case, I've heard people complain that, a kind of social agenda has made it made its way into entertainment decisions in a way that compromised the entertainment. Meaning if you can't really ever optimize to two things, and what you're really optimizing for is the quality of the story, not a kind of, I suppose you can, you can do the right thing and tell stories with integrity or that, that, 
+
+[00:50:42] Alex: But it's 
+
+about shoehorning. You don't want to, if you 
+
+shoehorn
+
+[00:50:45] Brian: look at Barbie. I mean, they've reinvented Barbie as like a femini. I would never have thought Barbie could possibly come back. 
+
+I mean, 
+
+[00:50:51] Alex: but that's because it was well done.
+
+[00:50:52] Troy: right? But like Apple has a great big rainbow in the middle of the infinity loop, the, the CEO of Apple is gay and proudly so, and, and will advocate for, the, the rights of that, of that constituency. But they don't push it out front in their messaging in a way that in any way, and not only that, they have a dominant product, but they don't push it out front in a way that makes it part of the calculus of buying the product. Like, there's a big difference between that and, and a product like a beer where the brand math of it is, is all about what it represents,
+
+[00:51:24] Brian: Yeah, I think Tesla's a great example of that for all the, that people complain about Elon Musk and there's a lot of people who hate Elon Musk and maybe deserves it or something. And I think they say, I'll 
+
+never buy a, well, I mean, I don't know. I mean, there's a lot of jackasses around. I don't get too excited if I'm not gonna buy.
+
+Like Steve Jobs was a psychopath. I still
+
+bought Apple 
+
+[00:51:45] Alex: All right. Steve Jobs was a psychopath, so was, where a lot of these people, Elon Musk we have a, a direct view into his brain and what he thinks and his pretty like ever increasingly scary views on all sorts of shit.
+
+[00:52:00] Brian: I mean, I don't know how
+
+[00:52:01] Troy: Yeah, I had people over the other night and I asked for women whether they would buy a Tesla, and all of them said no. I thought that was interesting. The following day I read a study from Autotrader that said that Tesla's the most considered auto brand globally, based on, you know, some calculation of search intent.
+
+[00:52:19] Alex: it's a monster, but part of it is, around the world. Most people don't give a shit about Elon Musk and don't know about it. They're not attaching themselves to value, they just don't know. They just know he's the space guy. and so that's part of it. And the other part is that there are literally very few options that you can buy and go to a store.
+
+And you can't buy an electric car today, you know, for, in most cases that, that 
+
+matches,you know, model three or Model y,
+
+[00:52:42] Brian: Well, they make a
+
+better 
+
+card. They make a 
+
+better product and ultimately pe this stuff is it's suck. It's not the entree for most people. There are a group of people who consider every single thing that they buy and how it lines up with the whatever they have listed in, in this house, we believe. But like for a lot of other people, if the Tesla is way better than the Chevy Vault to just buy the
+
+Tesla, 
+
+[00:53:08] Alex: sure. 
+
+I mean, I own a Tesla. I could afford selling my Tesla and replacing it with somebody else, something else as a statement, I don't, because I'm not going to like,
+
+[00:53:17] Troy: You
+
+should, 
+
+[00:53:18] Alex: up, 
+
+[00:53:18] Troy: you
+
+should. You should get something baller.
+
+[00:53:20] Alex: Yeah. What is baller today? What car would you recommend? I, I hate old cars.
+
+[00:53:24] Troy: Well, it's time to go back to petrol.
+
+[00:53:26] Brian: Yeah. Something diesel.
+
+[00:53:27] Alex: Well, I do have an F-150 so that I'm, I'm pretty good on that.
+
+That's, 
+
+[00:53:32] Troy: A guy like you, you should be in a Bentley.
+
+[00:53:34] Brian: all right. We've actually had a lot, this is like already over an hour. I wanna do good product, but, 
+
+[00:53:39] Troy: You know why Brian? 
+
+[00:53:40] Brian: well, no. well, they should be shorter. I wanted to get Alex's, maybe we can do it next week. Then. I wanted to get, I saw this like Brian Chesky talk. It was on LinkedIn.
+
+seriously, it was, and, it was about how they like, sort of pivoted to make design the, the core of the business 
+
+[00:53:56] Troy: Let's let you this topic in there. Just quickly, let's get 
+
+[00:53:59] Brian: All right. 
+
+I 
+
+[00:54:01] Alex: I mean, this is a whole topic. I was, I was deeply integrated into
+
+[00:54:03] Brian: okay. Maybe we can, maybe we can play like a little clip from, the talk, 
+
+[00:54:08] Chesky: then I said, we're not gonna do AB test unless AB test, AB testing is abdicating a responsibility to the users. And so we're gonna do a little bit of experimentation, but if we do AB testing, you're gonna only do it if you have a hypothesis. If B is better than A, you have to know why B was better than a, otherwise we're stuck with that for like the next 10 years 
+
+[00:54:27] Brian: First of all, is this, any of this true?
+
+[00:54:29] Alex: what, what is,
+
+[00:54:31] Brian: I don't know, people go to conferences and say all kinds of shit.
+
+[00:54:34] Alex: let's end on a cliffhanger and you'll, hear all about it. The deep insight and insider view on the, the shift to
+
+[00:54:42] Brian: No, he said he, they, they reoriented Airbnb. I don't know if this is after your time, but I think it was after your time there. like around their roots, which were all about design and it, the thing was design is very infrequently do designers become CEOs. Like at most they're tolerated and, maybe they're slightly valued if they can create the dark patterns that, that drive, high margin, business,
+
+[00:55:06] Alex: Oh no. we don't have a lot of time to get into this. It is a hundred percent true. it is what, got me to be very excited about,leaving my old job and joining Airbnb was that they were building a, a company built around a design ethos that would apply to everything that we do.
+
+It was very true. It's why my role, grew at the company and a lot of it was kind of trying to restructure the incentives around, a design process versus these more data-centric processes. And we had, honestly, a lot of pushback. I could talk to this for hours, you know,
+
+[00:55:37] Troy: I mean, come on. Alex, you mind if I just make a quick comment? Airbnb is a sleigh of hand, the whole company. Okay. It's amazing what Brian did, and it's a sleigh of hand because it existed before Airbnb was called V R B O or for Rent by Owner. there was a whole category where you could wrench shit, and they came in and did it better.
+
+You came in and did it better. And a big part of that was consumer or human-centered thinking and design packaging of a whole category, which in another world just felt like a junkie. V R B O listing,
+
+[00:56:10] Alex: and also one of the things that I'm really proud of that took many years and, and we started talking about things like threads, is that the host, right? Of people creating content, Over time, we managed to elevate the quality of everything that they posted, the writing, even though we weren't writing it, the writing, the photography, but just creating an environment where that was incentivized.
+
+So when you go on a, on an Airbnb listing, it usually looks better than a VR b listing. The writing's usually better and stuff like that. And that, I think could only happen by stopping to look at the metrics every day and build a great product. I can guarantee it was already started when I joined.
+
+It was at full swing when I was leaving. And it is even more, organized around, that today. And that is like the, customer 
+
+[00:56:52] Brian: So, 
+
+[00:56:53] Alex: So it's not,
+
+[00:56:54] Brian: so Troy, your, your point is that because they're basically just an interface company, quote unquote, or.
+
+[00:57:00] Troy: I think that they're, interface slash marketplace company. I think that they made it feel materially different to rent someone else's house. So the front end of the experience felt more like, Renting a hotel, then it felt like renting a crappy house on a Craigslist listing or whatever.
+
+And I think that set the stage for all of the participants in the marketplace. And suddenly, yeah, Airbnb became the world's largest sort of hospitality booking system and one that felt good to use and inspired the community to, play in a more kind of slick way inside of that world 
+
+[00:57:40] Brian: but you're saying basically that this is not 
+
+very 
+
+extensible. 
+
+[00:57:44] Alex: What 
+
+do you 
+
+mean?
+
+[00:57:45] Brian: is that just because this is a particular category or can this type of approach work
+
+[00:57:52] Troy: Well, I mean, I think it works in all. I have one example. we bought this company once that, is a very great company called Bring a Trailer. And Bring A Trailer is the sort of best, biggest, you know, vintage car marketplace in the country. And a big, big part of the success was enforcement of the listing format for the vehicles, on the community.
+
+And they all became, you know, tons of pictures with very, very high quality in a standardized description for, for the vehicles that was either written by. The folks that bring a trailer or, you know, certainly a structure that was enforced on the community. And it became, as a result of that kind of, you know, I would call it experiential or design thinking, a bigger marketplace.
+
+And, and there were many precedents before Autotrader, many others, but they just made it better. And you can't control the whole experience if you're Airbnb, but you can control the booking experience and you can control, how hosts participate in that community. So, they did a great job of that and they built a wonderful company as a result.
+
+So I would, I don't know what Chesney what, what he said, but yeah, it's cool that he's like 
+
+[00:59:04] Brian: I put the link in the preparation document. You should have it.
+
+[00:59:07] Troy: Oh, I was too busy writing
+
+comments and. 
+
+[00:59:10] Alex: you know, I've, I've heard a lot of this before, and I agree with Troy, I think, most companies could benefit from looking, for example, I mean, and like I said, we, I could talk about this four hours. there was a very clear moment where we shifted to really.
+
+Building things without scale in mind at first. So trying and, which is really hard where you're building a marketplace that is entirely driven by scale, but thinking through an experience, as a one-off and just building out the experience and then working backwards into scale.
+
+And that type of thinking, which is messy and kind of intuitive, really broke people's brains that had worked five years at Facebook 
+
+[00:59:46] Brian: Yeah, 
+
+[00:59:46] Alex: Or at Google.
+
+[00:59:47] Brian: well he kept going back to the optimization and testing stuff cuz it was like, yes, of course we do it. And you can't, like nobody can speak bad
+
+[00:59:55] Alex: Sure. and I get very agitated about this, but here's the example. I would tell people, they, they would say, we wanna just put a test out. It's just gotta be rough to test if it works. And why would you want to test something that isn't good?
+
+[01:00:07] Brian: Well, he was saying you need a hypothesis, like 
+
+[01:00:10] Alex: Exactly why, why are you testing? Why are you testing it? And you can't just put like 15 different dishes into people's mouths that have been randomly put together and asked them which one's good. You just, it is a company that values intuition and most of tech does not value intuition and does not incentivize it.
+
+and this is why it was also always great to work with Troy, because Troy always valued and respected into tuition and forgave when intuition didn't work out. And, I think that's how you built a successful, well-designed company. and here you go. You can make a great business out of it, but you know, you can also make a great business out of Facebook.
+
+So who am I to talk? Or LinkedIn, right?
+
+[01:00:46] Brian: Yeah, that's a great business. It's amazing business. They make a ton of money off recruiters. I wanna get to good product, but just can I just do a quick view from premium economy?
+
+[01:00:55] Troy: Yeah, we're 
+
+[01:00:56] Alex: Yes. 
+
+[01:00:57] Troy: the good product corner 
+
+[01:00:58] Alex: Right, and we'll try to
+
+make a jingle 
+
+for it. 
+
+
+[01:01:00] good product
+---
+
+[01:01:02] Brian: I had a, family gathering, this past weekend, and I went back to suburban Philadelphia. And because it was a family gathering, I come from a fairly large family, although back then it wasn't large, but now it's large. There's, there was five kids so there was no room for me to stay.
+
+And so anyway, I had to get a hotel in
+
+suburban 
+
+Philadelphia. 
+
+[01:01:22] Troy: Brian of every sperm is sacred.
+
+[01:01:24] Brian: Yeah, exactly. which was actually very remarkable cuz my, my parents had, all of the family like gathered and there was like 40 people around a table you start to really understand exponential growth cuz we're onto like great grandkids at this, at this point for them, obviously.
+
+I didn't have any kids, but I didn't fulfill my end of the bargain. But like, I have brothers and sisters who had four Ps and stuff, so, and then they have kids and it just keeps going and going. You start to realize maybe, I mean this is Elon Musk would love this stuff.
+
+there was tons of people around, lots of humans, all ages, lot of dogs too. but I needed a place to stay. So I went to, do you know Homewood Suites? do you guys stay there? 
+
+No, they're one of Hilton's, like 65 different brands. I have no idea why Hilton needs this many brands.
+
+They have multiple suites, brands. My wife picked it, I think because like in a European context suite says you're just gonna have a really like great room. But in an American context, it means you're gonna have a small refrigerator and a place to cook. So you're just gonna be, it's for families.
+
+And so I always wondered who stays at these hotels? Not in a random suburban location. It's people traveling. So Homewood Suites was packed with families that were on their way somewhere else. And I knew this when I checked in because the elevator had a sign, no jumping or horseplay allowed. Which I thought was strange cuz I'd 
+
+never seen that 
+
+[01:02:48] Troy: did it have a spa?
+
+[01:02:49] Brian: it had a fire pit and an outdoor pool.
+
+And I knew about the fire pit beforehand, but I, the outdoor pool was very obvious because the elevator was covered in, chlorinated water from children who had been running onto the elevator, from their time in the pool. but overall, I give it an eight out of 10. It does the job. One of the things that I really like about Homewood Suites, and I think this is the best for these kind of hotel motel situations, is that they had an Outback steakhouse that was sharing the parking lot with them.
+
+So instead of having a crappy restaurant, you just walked over to the Outback Steakhouse. where by the way, you can still get, you can, they have $7 cocktails at Outback. I don't know if you guys know that either.
+
+[01:03:32] Alex: No rules, just right. 
+
+[01:03:34] Troy: a, a Negroni for seven bucks?
+
+[01:03:36] Brian: don't do negronis, they do much more like sugary. I don't get the cocktails at Hop Back
+
+Steakhouse. 
+
+[01:03:41] Troy: have a lot of, I have a few questions. First of all, did you go in the pool?
+
+[01:03:44] Brian: No, I didn't. This is a, this is a 
+
+[01:03:45] Troy: Oh, 
+
+[01:03:46] Brian: trip, so I didn't have
+
+time in the pool. 
+
+[01:03:47] Troy: I bet the pool was absolutely disgusting. did, they have free breakfast, like 
+
+[01:03:52] Alex: I. 
+
+[01:03:52] Troy: and stuff? Like Hamptons?
+
+[01:03:54] Brian: Yeah, they had free breakfast. I don't eat breakfast, but I got the coffee and then I walked outside. Cause I like to enjoy the 
+
+outdoors again. I didn't, I
+
+didn't eat. But what they do is then what I've noticed with these hotels, and it's the future is there's no room service or anything. They just had a suite shop that's s u i t e shop in which you could buy your water, beer, wine, bud Light, snacks, combos.
+
+[01:04:20] Troy: Okay. I have more questions. I have a thing with a friend of mine who I drive back and forth occasionally to, to shelter Island with, and sometimes we stop kind of mid Long Island to get dinner and we try to sample different suburban offerings. And so my favorite currently is PF Chang. I really like PF Chang.
+
+[01:04:39] Brian: Yeah. They, they 
+
+were 
+
+[01:04:40] Troy: time, 
+
+[01:04:41] Brian: they were on the short list for this, like the outback
+
+[01:04:43] Troy: well here's the 
+
+thing. We went to, we, we went to, cheesecake Factory, which is vile. And I was wondering Outback's on my list? Is it any good?
+
+[01:04:52] Brian: Well, No, 
+
+no, I didn't have, I didn't have any of the food over there. We went over one night for,
+
+[01:04:59] Troy: Do they have coconut shrimp?
+
+[01:05:00] Brian: a night cap. No, they, their thing is they've got a bloom and onion. That's their, most of these places do
+
+something with an onion. 
+
+[01:05:06] Alex: the problem with Outback is that their signature stuff is steak and cheap steak is, never good. And you can get really decent steak at, most places in America. So I would say if I like Red Lobster, is that for me, that's the one.
+
+Cuz you can get stuff at Red 
+
+Lobster you can't get any, I mean, You'll feel like shit, but you'll love it while you're there. 
+
+Comes with a little bit of a hangover. There's so much butter. with our five-year-old, his rubric for fancy restaurants is is it fancier than Red Lobster?
+
+yeah. In the south of France we have a, we had a $500 meal and he said it wasn't as fancy as Red Lobster because he didn't get free breadsticks. 
+
+[01:05:44] Brian: Exactly. 
+
+So anyway, 
+
+if anyone is ever 
+
+traveling, 
+
+Homewood Sweets. 
+
+[01:05:49] Troy: Speaking of that takes us back to 
+
+the, kind of values as the moat, Brian. And, it hasn't seemingly stopped. the chicken place called? Chick-fil-A.
+
+[01:05:59] Alex: Chick-fil-A. 
+
+[01:06:00] Troy: Yeah. I mean, people like those sandwiches, even if they're liberals.
+
+[01:06:04] Brian: Oh yeah. A good 
+
+chicken sandwich wins 
+
+[01:06:06] Alex: Are, you know,
+
+fine 
+
+with 
+
+peop look, I mean, my, my, the soap I buy has Bible verses on the bottle. You know, 
+
+I'm fine with that.
+
+[01:06:15] Brian: What's wrong with bible 
+
+[01:06:15] Alex: is it Braner, Dr. Braner, Doesn't it have Bible verses?
+
+[01:06:19] Brian: We should include 
+
+a 
+
+prayer. 
+
+[01:06:20] Troy: Jesus. 
+
+[01:06:21] Alex: 
+
+[01:06:21] Brian: Think. You see my joke when we would get together, like for like meetings? I was like, who wants to say grace? People didn't find it that funny.
+
+That's why I don't work in an office anymore.
+
+[01:06:30] Troy: I think this is a good product. I'm holding up the magnetic card holder from my iPhone and has been a positive thing in my life because I don't carry a wallet anymore.
+
+So that's kind of boring. 
+
+[01:06:43] Alex: Oh, does it work though? Does 
+
+[01:06:45] Brian: that. I'm, I, I love that. Does 
+
+[01:06:46] Alex: I was considering that,
+
+[01:06:48] Troy: right, you don't, you guys don't use that
+
+[01:06:50] Brian: I use
+
+the, 
+
+[01:06:51] Alex: worried shit would fall out of it.
+
+[01:06:52] Brian: I use 
+
+[01:06:53] Troy: falls out. 
+
+[01:06:53] Brian: that comes around asparagus.
+
+[01:06:55] Troy: No, that's a good idea too.
+
+[01:06:56] Alex: Is it a wa is it, do you travel around with a wat of a hundred dollars bills with a rubber
+
+pan around 
+
+[01:07:02] Troy: No, 
+
+I
+
+mean, the downside is, you know, someone wants, someone said, I can't remember who said it, like a gentleman ought to always have cash in his pocket, his or her pocket. And I think that's sort of true because you know, there's always times when you need to 
+
+tip or you need cash or whatever. Yeah, so I think it's important to carry cash, but I, I used to carry one of those, come to Gar, zip up wall wallets.
+
+I never carry it anymore. I only carry this and I find it holds three cards. Extremely useful. That's all you need. You just walk outta the house with your, with your phone, and there's one less thing to lose. one other thing that while we're considering, you know, we're talking about a lot of people are on vacation 
+
+[01:07:40] Brian: This is like a QVC episode. You've got these things 
+
+like lined up 
+
+[01:07:45] Troy: Well this 
+
+is, no, this is an ashtray from the Michelin restaurant in
+
+[01:07:51] Brian: Oh god.
+
+[01:07:52] Troy: London. I think.
+
+[01:07:53] Brian: You've taken a right turn from Outback. 
+
+[01:07:56] Alex: Star restaurant or a Michelin restaurant?
+
+[01:07:59] Troy: they, it's actually, it's in the Michelin building. 
+
+It's a beautiful, beautiful space, and it's a Michelin rated restaurant run by someone else. It's a fancy restaurant. Anyway, I think that collecting like ashtrays and little dishes from weird European hotels is a wonderful thing to do. 
+
+[01:08:18] Alex: By collecting, do you mean steel?
+
+[01:08:20] Troy: yes. 
+
+[01:08:20] Alex: Okay.
+
+[01:08:21] Troy: Yeah, I mean, like if you go 
+
+to 
+
+Este in, Lake Como, like take the ashtray,
+
+[01:08:26] Brian: it used to be very popular to, take the like,whatever the matches from places.
+
+[01:08:31] Troy: well take the matches or you know, take the ashtray from the golden nugget in Vegas. 
+
+[01:08:35] Brian: Yeah, 
+
+[01:08:36] Troy: like buying plane cards when I'm, when I'm traveling to, you know, like branded plane cards from like a hotel 
+
+[01:08:41] Brian: So, 
+
+[01:08:42] Alex: Hmm. Yeah.
+
+[01:08:44] Brian: Yeah. Commodity products. Why not?
+
+[01:08:46] Troy: I mean, that would lead me to my final good product, 
+
+[01:08:48] Brian: What else do you 
+
+[01:08:49] Troy: which,
+
+it's a card game called Cribbage. Have we talked 
+
+about this before?
+
+[01:08:53] Brian: Not cribbage.
+
+[01:08:54] Alex: I don't know.
+
+[01:08:55] Troy: you know cribbage? They, a 
+
+lot of people seem, 
+
+[01:08:57] Alex: episodes in. I
+
+[01:08:58] Brian: I know it. I know of it. I think my
+
+[01:09:00] Troy: okay. Well, there's a board where you peg, you go around, you have to get 121 pegs. it really is one of those great games that's defined by both skill and luck. the lousier player can occasionally win. just on account of getting the right cards and it's sort of head to head.
+
+You can play with four, you can actually play with three. But you, the preferred way to play it is with two. And it's a great game. Cribbage,
+
+[01:09:24] Brian: Hmm.
+
+[01:09:24] Troy: good product.
+
+[01:09:25] Brian: Good. We didn't even get to talk about pickleball. all right.
+
+[01:09:27] Troy: cribbage is the pickle ball of card games. Yeah.
+
+[01:09:30] Brian: Good pickleball. I played pickleball for the first time, and I get it. It's a virus. It's gonna be everywhere. As my brother says
+
+[01:09:36] Troy: it's got the appeal of ping pong and the kind of, you know, aspiration of tennis. But tennis is a way better game than pickleball.
+
+
+
+
+[01:09:43] outro
+---
+
+[01:09:43] Alex: All right. Well thank you for listening to this episodes of three middle-aged men and with time on their hands.
+
+[01:09:49] Brian: I gotta go sell. about you.
+
+[01:09:52] Alex: Oh, I'm just gonna go, um, relax, 
+
+[01:09:55] Brian: ranch.
+
+[01:09:56] Alex: tend, tend to the ranch
+
+Okay. Well, you for listening
+
+everyone. Please rate and review. This was a long one. We're over time. We're running out of tape here
+
+[01:10:04] Brian: No, I didn't think that was part of the podcast.
+
+[01:10:10] Alex: 
+

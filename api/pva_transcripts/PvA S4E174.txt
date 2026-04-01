@@ -1,0 +1,841 @@
+PvA S4E174
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Troy: Brittany Spears just got arrested for DUI in California.
+
+[00:00:05] Brian: That's nostalgia. 
+
+[00:00:06] Troy: Have you ever had a DUI?
+
+[00:00:08] Brian: No, I haven't. 
+
+[00:00:10] Troy: you ever had a DUI.
+
+[00:00:12] Alex: wasn't working.
+
+[00:00:12] Troy: UI in in Miami.
+
+[00:00:14] Brian: did, I I never had A-D-U-I-I
+
+[00:00:17] Alex: for driving on cocaine. 
+
+[00:00:18] Brian: No. Although they do have like, PSA, placements down here. educating people that it's not just alcohol that you
+
+[00:00:25] Alex: Really? That's
+
+[00:00:26] Brian: pulled over
+
+[00:00:27] Troy: I mean, I, I thought you could probably drive better on, you know, stimulants, 
+
+[00:00:32] Alex: Yeah. I would say you can drive like better, faster. 
+
+[00:00:34] Troy: We encourage it here at PVA. 
+
+[00:00:37] Brian: Yeah. 
+
+​
+
+
+[00:00:48] Welcome
+---
+
+[00:00:48] Troy: By the way, on the robots front, I'm always keeping tabs on cocoa and the whereabouts of cocoa. They're definitely getting more confident. there are disturbing videos going around. One, one Cocoa in Miami was, was groped. Also the, these robots are like, Yeti boxes with wheels, right? Like they're just little coolers.
+
+[00:01:06] Brian: yeah, but they're an ad network. This is, this is, this is just a way to get, to get, to get to an ad network. This is where it always goes. Look at Amazon. Look at how much money they're printing off their, their ads. This is how it goes. Let's get started. Should we, welcome to People vs Algorithms. I am Brian Morrissey.
+
+We are. Joined by a full compliment this week. Alex Schleifer is out of the sex dungeon. He's back, he's preparing for the launch of his video game. we're gonna find out about that. Troy Young is out of the sauna and with us, and AB is gonna swing by later for what I'm considering. Money Corner. Talk about the money.
+
+Talk about m and a. 
+
+
+[00:01:45] Human Computer's Ballgame
+---
+
+[00:01:45] Brian: Alex, let's get started with, as I said, you're a little frazzled, I feel. you've got a big launch coming up. People always, people ask me what you do a lot, you're, you're an object
+
+[00:01:56] Alex: And you tell them you don't, you don't know. You don't understand.
+
+[00:01:59] Brian: Like, I don't even know this guy. I met him once. What do you want from me? What, what is he like, what, what is this video game?
+
+video game launches are interesting because there's a big, they take a very long time. So a big milestone is usually announcing the game, which is what we did. We announced a game with a trailer and a release window. And, we're going to be, doing a live demo at a booth at something called Day of the Devs in San Francisco.Day of the yeah, it's like a, I mean, what would you call it? yeah, it's like a
+
+what are the people like? I went, I went, I went by a debt conference in the Lows in Miami,
+
+[00:02:38] Alex: would say it's probably a little different to that.
+
+There was a lot, there were a lot of chinos. Yeah. a debt conference. I
+
+It's more like, it feels more like a, have you ever been to like a craft conference where all these, like craftspeople who
+
+[00:02:51] Brian: I like maker.
+
+[00:02:53] Alex: like a Yeah, it's kind of more like that, but they, everybody makes video games. 
+
+[00:02:57] Troy: can only say that I'm extremely, well, first of all, I'm super happy for you and because when I look at the game, I see, an enormous amount of. Time that went into making that and all the ba, all the screens, the backdrops, the movement, the physics, the little interactions, the gameplay logic.
+
+It's cool, but it's like it's a golf game
+
+[00:03:20] Alex: yeah, yeah. Well, I mean, the trailer
+
+[00:03:22] Brian: You don't strike me as a golf guy. Troy strikes me as a sauna guy, but you don't strike me as a
+
+[00:03:26] Troy: No, but I can't, the truth is I can't wait to play it. Alex is there, can you get me a copy?
+
+[00:03:31] Alex: I, I
+
+[00:03:32] Troy: Does it come on a floppy disc?
+
+[00:03:34] Alex: It comes on 12 floppy disks.
+
+[00:03:36] Troy: No. No.
+
+[00:03:37] Alex: yeah, I can get you some, some code. We'll
+
+[00:03:40] Troy: do I, do I need to set up steam to play it or do I, can I play on my phone?
+
+[00:03:43] Alex: you'll need to set up steam and I'll send you a secret code. 
+
+[00:03:47] Brian: Well send it to me too. I wanna play it. I don't know why I'm left out.
+
+[00:03:51] Alex: well, I mean, it needs a controller and my guess is you guys don't have a right
+
+[00:03:54] Brian: I'll get a freaking controller. Just 'cause I didn't get the camera doesn't mean I'll get, not get the controller.
+
+[00:04:00] Alex: that's, yeah. No, it's, it's, it's been a lot of work, getting here and there's gotten a lot more work left, but it's, you know, it's a, it's like for me, the thing I'm, I'm building a studio, so it's, it's the first game it's in.
+
+It's important. I'm looking like two, three games ahead. it's a rough. As all media businesses and all content businesses and all creative businesses, it's a rough, intense, cutthroat business, that's changing very much so. It's an interesting time to be making games, so it's gonna be, it's gonna be fun.
+
+GDC is the big game developer conference in San Francisco, where everybody essentially comes there to, to meet and make deals.
+
+[00:04:37] Troy: Yeah, Alex, my hope for the game is it's something that people could play casually and have a good time, or you could get really good at it. Is that like, and it could challenge, you know, like a skillful player, can it? Does it do that?
+
+[00:04:52] Alex: I mean, we hope that's the, that's what we're trying to do, like that you can, you can, you know, you can play it, an 8-year-old can play it or anyone that just enjoys video games. And then there's also stuff in there for the freaks.
+
+[00:05:05] Brian: Hmm. Is it like golden tea at all? I used to love that game.
+
+[00:05:09] Troy: It's not like golden tea. It's like, It's like golden tea meets subway surfer.
+
+[00:05:13] Alex: meets. Yeah. I mean, it controls kind of like, super Mario meets. angry Birds?
+
+[00:05:19] Brian: So is this a solo game that you're, you're gonna be playing like by yourself? What about like a social component? I mean, golf is, you know, look, it gets a bad rap. I don't really like golf, but it's a social activity. You go out and you, you, you play with, with others. You go to the 19th hole afterwards, have knock back a few drinks. 
+
+[00:05:37] Alex: you know, like, I, I'll just try to make this
+
+[00:05:39] Brian: No. I mean, is this gonna be like an arcade game? Like why not bring
+
+[00:05:41] Alex: Yeah, yeah. I mean, I, I think, to make it interesting for the audience, like, We want to put social components in it and multiplayer. But, making video games is really an exercise in prioritizing in scope because they can become very big and every thread you pull kind of creates like a bunch of work, right?
+
+And so one of these big threads is the second you start making something that more than one player can play at a time. It increases complexity. If you put an online network, it, it adds a whole bunch of stuff to it. so our, our goal right now, and part of why we want to visit be part of a festival is like see how like people respond to it on mass, like come through the game.
+
+And honestly, if a, a ton of excitement for it, we'll probably decide to invest more in the game and extend the development time. If, if, you know, if, if the game gets a little bit of interest, but you know, it's, it, it feels a little bit, Riskier, we'll narrow the scope and, and release something smaller.
+
+And then, you know, at any point in time we can release updates and stuff like that. So these, these
+
+things take so long 
+
+that you kind of change a lot over time, right? You change directions over time a lot.
+
+
+[00:06:45] AI & Game Dev
+---
+
+[00:06:45] Troy: did, did AI change your development approach? Like I noticed a lot of richly rendered backgrounds and stuff. Was that, was that stuff hand, hand created or was it AI rendered? I.
+
+[00:06:58] Alex: Everything's hand created on the, definitely on the art side. it's like really important to us. I, I also worry, first of all, I think it's like in gaming, I don't think the audience, I mean, I don't, I don't think the audience appreciates AI generated art, in part because of just like.
+
+You know, the source of the data that was used to train these models. but pragmatically also, I, you know, my guess it's going to be hard to copyright any of this stuff. I don't think it looks good. I don't want to remove the fun stuff from our studio. I want to keep making stuff by hand. but when it comes to coding and, you know, you do things like pull requests and there's a lot of code coming in from different systems and different people into a main repository.
+
+So what you're doing is like, imagine like you're working on this giant, highly complex Google doc with dozens of people that are adding art and code and, and ai and specifically Claude has been really great at troubleshooting. Like, Hey, what happened here? that's great. That's like, that's, that's, that's transform transformative.
+
+The other thing that we do, which might be useful for people is that we use, a lot of AI agents, in our Slack channel. So when there's a conversation, I can just, ask our linear agent, which is our ticketing system, you know, that manages all our tasks and stuff like that. Say, Hey, create a ticket for this, assign it to that and include no.
+
+And, you know, include those notes in it and the thing will go out and do it. I can get it to run through in the day's entire slack room and pull out all of the tasks to do from there. so, so we have a distributed team, have to team is remote that it's really powerful. That's stuff like everybody should be 
+
+[00:08:33] Troy: Is there any chance that HEGs ha is gonna want to use this to train agents of war?
+
+[00:08:38] Alex: Uh, my game. I mean, it is a ballistic game. It is about getting things from one place to another. So potentially, but yeah. Great, great, great transition there. I
+
+[00:08:49] Brian: Dual use. 
+
+
+[00:08:50] Anthropic Pentagon Clash
+---
+
+[00:08:52] Brian: Let's start with war. Let's get into it. so when we were recording last week, Alex, you were not here. Troy was telling me I was naive because Anthropic was, was caving to the Pentagon. Didn't happen. Troy, Dario Omada who just let me take a little bit of a victory lap here 'cause there's a lot of stuff I said that's not true.
+
+I identified this guy as, as a main character and that he was an interesting character. And he 
+
+[00:09:17] Troy: You called him a Wi a Wizard,
+
+[00:09:19] Brian: he is a wizard. He is a wizard. And he presents really well. I'm sure he'll disappoint me. 'cause that's the way these things go. But he told the Pentagon to stuff it when it came to, using, war Claw, which is a hilarious name.
+
+and. Pete Hegseth, basically said You're woke. Ai, you know, Trump fired off his, his true social posts said they're gonna rip off, rip out, anthropic from, government systems. And then also this is not gonna be held up in the courts, I believe, but, you know, designated them supply chain risk, which has all kinds of cascading impacts because Claude is, is used within all of these companies that are major Pentagon contractors.
+
+This is clearly the government going after a, a, a sort of enemy business. there was a time when this kind of thing would really excite, the, the right wing of the political spectrum. Those times are, are over. Weirdly enough, I think this is kind of a master,class by philanthropic. They rocketed up the charts of the download, list.
+
+they are nipping, they're not maybe nipping at the heels of chadha bt, but this positions them in the market to be a real player and consumer. And by the way, they don't, their, their business is a B2B business and the whole safety angle fits great with B2B, I see nothing but W's, for anthropic. Troy, why am I wrong? Why am I naive? More importantly.
+
+[00:10:53] Troy: Well, I mean, I don't think that, I mean, I think that this highlights a, this is gonna be an issue for the rest of our lifetimes, which is when we create God powered, you know, God level technology, how do we negotiate the usage of that between. Public entities and private ones. And so, you know, this is just the first battle in many to come around, the growing,kind of global power of, of these massive tech brands.
+
+And, you know, how, you know, the government will, will kind of bring in that power to use it for national interest. And I, I, you know, underneath of it all, I don't think anyone's denying the fact that, that, first of all like ethics is good marketing. And that somehow, anthropics stumbled into negatively position positioning their biggest competitor as being sleazeballs.
+
+[00:11:42] Brian: What do you mean stumbled in? I mean, isn't this the easiest call in the world? I mean, the, the CEO of their rival is 
+
+transparently untrustworthy.
+
+[00:11:52] Troy: part of a negotiating process that he thought that Sam would kind of sneak into the White House and negotiate his own deal and, and try to pick it up instantly. I mean, it was a, and then, and then had to circle back a couple times and said essentially we have the same deal as Anthropic.
+
+And then amended the agreement afterwards.
+
+[00:12:09] Brian: He did an A MA on X, which is also a
+
+[00:12:12] Troy: I don't know. If I was an employee of OpenAI, I would think, oh, who, what is this guy? Who is this guy?
+
+[00:12:18] Alex: I mean, yeah, I, so I'm, I'm having a hard time following. Are, are you saying Sam is,
+
+[00:12:24] Troy: Oh, I'm definitely seeing Sam as a s sleeves ball. And I, I, I was, I did, set an overall context for this by saying that this is a very, very complex issue and that I understand why the government would be concerned about,AI company asserting control over technology that was fundamental to national defense.
+
+Yes, I do think that's an issue. I.
+
+[00:12:47] Alex: I think, I think that there's a lot of context there. I think first of all, it is not a nuclear weapon yet. Right? This is, I mean, and for all intents and purposes, the AI isn't at that scale because I think that I hear that thrown around like, you know, what if the, you know, at and t developed a nuclear bomb, wouldn't you want the government to come and take over?
+
+we're not there yet. the big thing, and I think the thing that Sam noticed, because he's very reactive is when this stuff started happening, it became a recruiting and a retention nightmare in Silicon Valley. Like if you are a, top, you know, AI scientist and there are very few in the world, there are certain levers that you can pull and there's a very small population of, of engineers and scientists that can still have a lot of impact on the company's direction.
+
+And I don't even know if Amadei had that in mind when he did it. You know, I think everybody could have LA just landed where they did and, and reacted the way they did based on, you know, the only information that they had. But like I am hearing that like. There's, there's a lot of action around Claude using this as a recruitment tool now out of open ai, and that's, that's potentially one of the big things that got Sam to change his mind and ask the government to resign the contract. 
+
+
+[00:14:03] AI Narrative Wars
+---
+
+[00:14:03] Brian: Can I just jump in with a little narrative note here? It is really remarkable how this AI story is such a drama. We've had like the leaderboard shift, Google was behind, left for dead cautionary tale. Google comes back open. AI is, is filled with drama. They're like dead. They've got a coup. Then all of a sudden they're like, ascendant.
+
+Claude hangs around, just keeps hanging around doing boring B2B stuff, doing some activations with puck air mail. Um,and then all of a sudden they're, they're up top.
+
+[00:14:41] Alex: Allegedly now they have a $20 billion run rate as of this week, the fastest growing. business to get to that
+
+[00:14:50] Brian: I've switched. I've switched. So claw they, they came out with some, an interesting 'cause we've talked about memory as the moat. They came up with a tool that you can port over your memory supposedly from. chat GPT because I think that is the one thing, these models are clearly commoditized, right? And I think that's an interesting, and then I think this is actually hopeful for where things go is because at that point, what is the differentiation?
+
+Well, it's unique data sources. If you have unique data sources, that is going to be an advantage in the market. So publishers out there, if you've got unique data cut deals, look at, look at the ap, the AP cut a deal to license its DA data, it's its elections data to, to meta meta's cutting a lot of these deals.
+
+It's an opportunity if you have data. 
+
+[00:15:44] Alex: Yeah. 
+
+[00:15:44] Troy: I mean, I think that there's lots of stories coming. Brian, one of them is almost like about property rights. It's like when the government designates a company, a supply chain risk, it essentially completely can, you know, is borderline guts the company of its commercial viability. And it's almost like they're saying you can't be in business.
+
+And so there's like a lot of complexity and as these models and all the tech around them becomes more and more powerful, this is gonna be a big, big, big long term issue.
+
+[00:16:13] Brian: Yeah, there's a lot of
+
+[00:16:15] Troy: and the irony and the part that I really, I, I can't really comment on that much is, is like in the end, the OpenAI position to me, at first, they just stuck to that, the kinda line that actually X used, around, freedom of speech, which is as long as it complies with the law.
+
+And, in the end, you know, open AI's position on this is almost indistinguishable from philanthropic. 
+
+[00:16:39] Brian: Well, I, I, that's why narratives and vibes are so important these days. I mean, we're talking about. This is a recruiting battle. this is a consumer battle. This is about signaling and it's also about values. And this could be, I mean, maybe I'm being nostalgic, but maybe this is a return to being rewarded in the marketplace for, for having principles.
+
+[00:17:01] Alex: I think that's the amount of people that have reached out to me to ask me how they can move from OpenAI to Claude. Right. It's pretty astounding. And I think that, I think that maybe this is like a, a technology that is uniquely framed where values are going to be important because people are the, all the shit that people are worried about with ai, which is like mass surveillance.
+
+you know, just like kind of being shady in general. Claude is winning the narrative war on that, you know, I think right.
+
+[00:17:34] Brian: I think so. 
+
+
+[00:17:36] War News Fragmentation
+---
+
+[00:17:36] Brian: and I think that narrative where I wanna talk about the, the, the war itself, 'cause we're back, we're back at wars in the Middle East. Who knew? Thought those were over. so the US used Claude too, with Israel to attack, Iran. this has been a really interesting, modern sort of media war too.
+
+'cause with the, you know, I talk about the information space. The information space comes from you know, the, how Russia talks about, like controlling, communications and, and how people perceive things. I, I remember back the, a first Gulf War, like watching that on CNN. It was like a video game in some ways.
+
+And now when you're trying to keep up with how this war is progressing, it's really difficult. Because we're in this post institutional media world, and one of the things that I've really been struck by is how different it is to read about this war in the New York Times versus when unfortunately I still open X 'cause X.
+
+Now, they came out with this filtering, mechanism where when you open the app, you can filter to topics and so you can filter to the Iran war. maybe they call it a conflict. the vibes on there are universally. Against this war, both in the competence of how it's being executed and the objectives, why it is happening.
+
+I don't know if it's like my feed, but the contrast between the conclusions being, drawn there are completely different. In the New York Times, and this is my theory. My theory is that everyone wants to make this left versus right, but we're really talking about institutional and something else. Call it independent, maybe call it some something else, and that is the divide.
+
+The New York Times at the end of the day is an institutional media source. They are not going to this girl's school that got blown up. It is assumed on X that this was done by the US and or Israel. it is the, the, the sort of, well, it happened, you know, the New York Times is calcium and all that doesn't happen in, in the feral world of X.
+
+Now there's a lot of nonsense, on there. There's a lot of AI generated, content that is, that is untrue. But it's interesting that to me, that this does not, at least from, from my experience, line up neatly with this, the, the partisan,you know, context that we put on, on everything. And I don't know, have you, how are you guys keeping up on, on, on making sense of what is going on?
+
+[00:20:15] Troy: I asked you about this and a couple just you on the, in the, in the group chat and because I was frustrated, I thought that you're right, we all pointed our attention at, at, at something like a CNN in the past. And if you watch, I find it unwatchable and, and I, it, it does always remind me of Alex's characterization of baby news.
+
+And, you know, I think that when you, you know, start doing news as fentanyl and going right to the vein and, you know, kind of mapping intense conversations from X to. To, you know, whatever your chosen news sources is. New York Times or other dense types of, of media, CNN is, is, is hard to watch. So what I found, I've been doing, Alex suggested that I watch the BBC.
+
+It's, it's more tolerable than, CNNI have been doing that. I've noticed that, the New York Times, that what this does is thrust them into a position in some ways of replacing CNN. So there's way more use of. Kind of live, real time, live blogs, and you're seeing this kind of,necessity to kind of continually update the homepage feed, and they are, and then to try to thread video into that, which they're not quite doing well yet, although they are, you know, as we've talked about before, making video a bigger part of the feed.
+
+But I, I personally have had the same experience. I do like the, the filtering mechanism on X Bryan, although, you know, X is disorienting. I think, you know, I've been going back to Dr. To Drudge lately. I've been using Drudge as an aggregator, which is, I find there's always, you know, something that, that, that never hit your radar there.
+
+I've been using, using YouTube more to, to, to find, you know, segments that are interesting and people that have a kinda a little more drawn out, thoughtful commentary on this. but I think I've, you know, it's pulled me back to X more than ever, to be honest. 
+
+[00:22:04] Alex: so let, let me get this straight. you, you, you're saying that the, the tone on X is anti-war while the tone on the New York Times is what? More neutral or more apologetic? I,
+
+[00:22:20] Brian: look, when push comes to shove, the New York Times and all institutional media will line up behind institutions. They, they regularly hold back information based on, you know, what the government wants. You know, this, this is reality. And the, I think this is to me the positive version of Elon's entire case, four x in that, you're having your information being filtered.
+
+You don't think that, like the good guys versus the bad guys. This is the other thing that I've, I, Troy was slipping into this in the, in the group chat, and I feel like that is like old news. Like the idea of like, the United States is always the good guy, and the other ones, they're always the bad guys.
+
+There's. You know, they're, they're talking about, oh, they're, they're a bunch of Marco Rubia, they're a bunch of religious fanatics. And then like, there's like military officers in the US like saying this is all part of God's plan with Trump to, to begin Armageddon. You know, again, there was, there, there was school, like a blown up there, of school kids, school girls.
+
+you know, we don't, the, the New York Times has not really, gone hard into that. I'm sure eventually they will. We've seen this before in Gaza. You know, fingers are pointed, it's unclear and whatnot. I'm just saying that like on on X, there is an unvarnished view that is happening, and at least in my experience, it is not even close.
+
+It is very far against this being successful. It's very far, it's very against this being a good idea. 
+
+[00:23:50] Alex: I think general sentiment seems, seems to be like, not pro-war, but I find it really hard to follow the news on any of these things. I mean, I think the New York time does give me a sense of that. I'm gonna open the page and what's most. Pertinent right now is going to show up.
+
+but honestly, like X drives me absolutely up the wall. I think part of the key issues is that anything with that, any post that has a link in it gets down, voted. So everything that you see is usually kind of confined to X and just becomes part of that echo chamber. is why, once again, I'm gonna recommend Reddit.
+
+Reddit's really good for this stuff because it's pulling sources from everywhere. And then there's context added by the community. And it, I think it's actually, that's kind of my, I I, I don't think I'm built for tracking the news on social network. I, I have friends who are following on TikTok.
+
+I, that's.
+
+[00:24:40] Brian: Oh my God.
+
+[00:24:41] Alex: when I lived in those countries, you know, that have since been hit by bombs, you could always kind of move the satellite dish to a certain position and tweak it to get kind of the raw feed of news that they would use to upload all the B rolls to, to places like Reuters.
+
+So you would just see like all these random clips going up of like wars and things like this. it feels like that, it feels like, what the hell am I paying attention to here?
+
+[00:25:03] Brian: I, I think one other thing that's, that's become clear to me is there are some parallels between how this war, is being fought and what's been going on in the media business. Hear me out. you know, Troy, you've talked about how institutional media just lost out to the guy with the selfie stick because just the cost advantages were to were completely different.
+
+You know, the, the broadcast networks were building these massive, expensive studios, and they were losing to like people on zooms basically. and something similar is taking place where you've got Iran relying on these dirt cheap drones in the US and Israel shooting 'em down with, with million dollar rockets.
+
+I think the new, there's gonna be a modernization that is going to take place. I think in the way that, I mean this was obvious in, in Ukraine, we could have used this as an advantage to actually learn, is that there's obviously been a change in how, how war is being fought. And in this case, the institutional part on it, on the defense side is, is with our defense contractors.
+
+they clearly are, are not building,weapons that are made for this type of war. Ukraine is sending, sending advisors to, to help the Gulf States in, combating, all of these swarms of drones. One other thing that that came out, this is a little bit more culturally, people really hate Dubai.
+
+there's, I don't know why Dubai has become a symbol. like people don't like Miami, but like, they hate Dubai. and mostly, I assume, I've never been to Dubai. It's a little crass. there's, there's a lot of influencers there. Maybe some only fans models,
+
+I don't know. 
+
+[00:26:47] Alex: influencers, like one in 20 people as an influencer because they have a kind of a golden visa situation for influencers.
+
+[00:26:54] Brian: Oh, it's like 
+
+[00:26:55] Alex: Uh, well, it's an interesting, it's an interesting thing because they, they, they provide all sorts of like support and free office space and stuff like that. And then you have all these influencers announcing that they're moving to a place that's free, where they can freely run their business.
+
+Meanwhile, they, they're moving to a place which is essentially influencer socialism and where they had to kind of walk the party line when they talk about stuff. it's 
+
+[00:27:17] Troy: But, but back back to the media thing, I, I think what I'm missing here is a kind of spinal cord in the coverage, and it's just that in this kind of fog of media fragmentation. The, the continuity of people point of view, timeline, understanding what's important right now through a single media outlet is I think what I'm missing.
+
+And it, it's too hard to piece it together on your own
+
+and and so I guess you could pick that up from the New York Times if you want that, that point of view. But, but other than that, that's I think why, you know, you miss having, you know, something like a CNN that you can point at that's reliable and consistent and can kind of help you understand the little stuff in the big stuff.
+
+[00:28:05] Brian: Uh, you, so you're basically advocating for babyness. 
+
+[00:28:09] Troy: I mean, if it, if it didn't feel like what CNN feels like, I'd probably watch it.
+
+[00:28:12] Alex: You, you might wanna try to think Glen Beck is doing, he's, asking an AI version of George Washington, what he thinks about the war, 
+
+[00:28:19] Brian: It's also, by the way, it's also, it's like a hot George Washington.
+
+[00:28:22] Alex: Oh, he's fuckable.
+
+[00:28:26] Brian: It's an important note.
+
+[00:28:28] Alex: Yeah, for sure. I
+
+mean, 
+
+[00:28:30] Brian: but 
+
+like his teeth are fixed. 
+
+[00:28:32] Troy: Is he black?
+
+[00:28:33] Brian: no, he's 
+
+not 
+
+[00:28:34] Alex: back.
+
+I mean, Glen's, Glen's looking at him with loving eyes. Let's just put it this way, 
+
+[00:28:39] Brian: AB is here. 
+
+
+[00:28:40] Layoffs & AI Excuses
+---
+
+[00:28:42] Brian: One block cut, 40% of employees its stock immediately soared. It used, it, used the ai, the great AI excuse it papered over the fact that it apparently spent like $75 million on a company party and was clearly, 
+
+[00:28:55] Troy: Offsite, Brian Offsite.
+
+[00:28:57] Brian: awesome. I it clearly a poorly run company. we saw with X that, Elon Musk stroll in with his, with his sink cut, 75% of of people at Twitter and the site still worked.
+
+my, my guess on this, I don't know, it's like probably like 20%, 25% is just regular over hiring. I think every company could, could probably cut a lot of people. Another 25, maybe, maybe 35% is, is the tech premium on, on being bloated and then maybe the rest is a little bit of ai? How does that sound? 
+
+[00:29:34] Troy: It seems reasonable. 
+
+[00:29:35] AB: I think people just like reporting all this stuff right now. Morgan Stanley laid off 2,500 people and it's like a headline, but it's 3% of the workforce. I think it's like a normal cut. 
+
+[00:29:44] Brian: Yeah, it, it's, it's a great excuse to do the, the, and, but the, I think the. The bigger thing is that look, everyone and everything responds to incentives. Layoffs have always been catnip to, to the stock market. And I always assumed a lot of these companies just kept, kept a bunch of people in the back to be sacrificed for the stock price when needed.
+
+but this now gives this, this gives permission and it gives the incentives for maybe these cuts were gonna come anyway. But I mean, the assumption is there's gonna be a, a rolling series of these, to keep up with the Joneses and keep the stock
+
+[00:30:23] Alex: The, the thing I'm frustrated with, with that is that like Jack Dorsey has been a terrible CEO for a long time. it's a known secret in Silicon Valley, and he's, and he's been kind of whiplash in this company into all sorts of direction, you know, like going on a yacht with Jay-Z and then buying his company and then trying to integrate it and then moving, and then first before that, doing 50 50, a 50 50 CEO job with Twitter, which he also Miss Fran.
+
+and this idea of like, this is ai, you know, knowing people who, who have left there since, is pretty laughable. And to have the market just react the way it did is also shows that it's kind of like, I mean, nothing, you know, I think this, this, this excuse is going to be used a ton,
+
+[00:31:06] Troy: Bad market. Bad. 
+
+[00:31:08] Brian: What does
+
+that mean. Troy? 
+
+[00:31:09] Alex: I mean, 
+
+[00:31:10] Troy: I mean, come on. I, so, I mean, on the, the other side is he might be a shit, CEO,
+
+[00:31:16] Alex: I mean, he is the only, he's the only one that should get fired, really. 
+
+[00:31:20] Troy: they perhaps, they overhired. Okay. But, you know, on the other side, people criticize companies for doing rolling, rolling waves of layoffs. They're, you know, everybody will always
+
+[00:31:30] Alex: So, Troy, this 
+
+company has been Troy, 
+
+this company 
+
+[00:31:33] Troy: at once, So we did it all at once.
+
+[00:31:35] Alex: He did not do it all at once. This company has been in, in a refactoring itself for the past two and a half years. A lot of the people that got laid off just went through doing their own list and layoffs and, and restructuring it. it wasn't a clean all at once thing.
+
+This thing has been dragging on and, they hit a wall and they just decided 
+
+[00:31:54] Troy: refactoring itself right now,
+
+[00:31:55] Brian: Well, so, okay, fine. I
+
+[00:31:57] Alex: mean, I don't get why you are always willing to jump in front of a bullet for any CEO
+
+[00:32:01] Brian: haven't even gotten to Zla.
+
+[00:32:04] Troy: you know why? Because there's a secret fraternity, Alex, and we all support 
+
+[00:32:09] Brian: cabal. 
+
+[00:32:10] Troy: Yeah.
+
+Yeah.
+
+[00:32:11] Brian: yeah, I look, this, this is, this is, this is gonna, continue. I don't, I I'm nostalgic for, the times when, when boards would, would, would hold CEOs accountable. That would be, that would be a crazy idea. because someone, it's, it, whatever. It's the guy in the hotdog costume, memes. Like, we gotta find out who did this?
+
+Wonder who did it, who did it, Jack. Maybe we could find
+
+
+[00:32:32] Holding CEO's Accountable
+---
+
+[00:32:32] Troy: Speaking of, we should hold the the McDonald's CEO accountable for not taking a
+
+[00:32:36] Brian: do. So the McDonald's, CEO, was, as they say, put on blast after awkwardly eating their new burger, the big arch, which comes in around 10 bucks. That's, that's a, that's a premium. McDonald's burger, I remember a $2 Big
+
+[00:32:49] Alex: expense is expensive. Inn
+
+out here is inn out here is better and cheaper. I don't get how that works.
+
+[00:32:54] Brian: So this guy, he called it, he, it was very awkward.
+
+He called it a product. This is a great product versus a sandwich. 
+
+[00:33:01] Troy: He's been. 
+
+[00:33:04] Brian: yeah, has definite McKinsey,vibes, but turns out he's from B, c, G, which is even worse, right? he's also just a CPG guy. Classic MBA, right? just going through his resume Big arch, by the way, is, is a half pound and it's, it's a thousand calories, so that'll fill you up for a while.
+
+you know, I think this thing hit because this guy is a, an example of, the, the managerial class that Troy loves to, like, cover up for. he has clearly has no feel for the business, for the product. I saw, you know, one, again, I don't know how true, like this guy who used to work in McDonald's, as like a, as in their like chef division, I guess.
+
+and he said he had like an, they, they had like an all hands meeting when this guy joined and he asked him what his favorite food was and he was like, eh, I don't really like much food. I guess Fish didn't even mention,
+
+[00:33:56] Alex: Yeah, no, I mean, 
+
+[00:33:57] Brian: McDonald's. Bring back CEOs who give a shit and understand 
+
+[00:34:01] Alex: I'm, I'm not even blaming the CEO first of all. Like, whi, which comms person put this guy on camera and let him, and, and they looked at this video and it's him going, this is a very nice product. it, it's like he calls it a product, first of all, which is like always a red flag for me.
+
+When somebody calls the thing they make a product. Jesus, that was, everybody watched that video because, that coms team, needs to rethink
+
+[00:34:26] Brian: I understand it because of the time. It's like, okay, the CEO now has to be a kind of influencer, but you gotta know who you're working with. It reminds me of Delta's turnaround. I trace back to when they got, when they moved on from that CEO insisted on, Richard Anderson, who insisted on welcoming you on the
+
+[00:34:43] Troy: You guys need to take 
+
+[00:34:44] Brian: It's never a good sign when the CEO casts himself and it's always
+
+[00:34:48] Troy: okay. They never hired this guy to be a fucking burger influencer. They hired him to rationalize supply chain and make distribution strategies and manage the finances of a public company. They didn't hire him to eat burgers on a camera.
+
+[00:35:04] Brian: So why did he do it?
+
+[00:35:06] Troy: Well, I mean, you know, we all, you know, we, mistakes were made, dude, like the guy tried to eat the hamburger on the camera and he is like a nerdy BCG guy.
+
+Like, what the hell?
+
+[00:35:17] Alex: Troy.
+
+[00:35:18] AB: It is funny. In this world of clips, people eating awkwardly like goes Really? Like think about when Obama drank, drank the water. Weird. Like
+
+[00:35:26] Troy: man.
+
+[00:35:27] Brian: No, that was 
+
+[00:35:28] AB: thing. It's the way that you perceive people being awkward or autistic or, I mean, this guy is an autistic, but.
+
+[00:35:35] Alex: I mean, we don't know, but,here, here's the thing, Troy, 
+
+[00:35:38] Brian: it's proven 
+
+[00:35:38] Alex: like, like,
+
+like decisions were made. I, I'm putting videos out, right? we are putting videos out. I know. I'm not as, as good on camera as Elliot is. So Elliot is mostly on camera because
+
+I'm fucking, what? Okay, fine. But you love me. So that's 
+
+different.
+
+But like, we gotta be able to, Troy, even if they're CEOs, I, I know that you think that they're a protected class, but even if they're CEOs, we are, we have to be able to, to, to review their performance. It includes slo,
+
+[00:36:07] Troy: judge the guy on the quality of the, the 
+
+company 
+
+[00:36:11] Alex: man, My man, my man, my man, You just, you just gave jack props for doing all the firing in one Let me just list out, 
+
+[00:36:19] Troy: No. What I did, what I did is I said, well, you guys are having your jolly swarming. The guy. Let's look at the other side of this a little bit. That's my responsibility on 
+
+[00:36:29] Alex: right. So 20, 24, they laid off a thousand people. Then 25 they laid off another 9, 930. And then, they just laid off 4,000. Like a lot of the people that had to make lists to lay off people and get, were getting ready to lay off people just months ago got relayed off. This has been done in a panic.
+
+He's not a good CEO. The McDonald's guy. The McDonald's guy, let me finish. The McDonald's guy hired these cops. People looked at that video and said, this is good to go. Let's put this on the internet. That is that. I'm sorry. Those decisions were made. Decisions were 
+
+[00:37:02] Brian: Okay. Stock price is up 7.64%
+
+[00:37:05] Alex: you go. That's all that matters.
+
+[00:37:07] Troy: It 
+
+[00:37:08] Brian: is, that is all that matters. All that 
+
+[00:37:10] AB: his Instagram has a pretty good follow, has like over a hundred thousand followers. That's where the video came from.
+
+[00:37:16] Brian: Yeah. cause they're put, they're putting them out there as like, as an influencer. I mean, come on. They're buying ads on it. This isn't like, this isn't organic. I mean, he is not like, so
+
+[00:37:26] Alex: the other CEOs from Wendy's and
+
+[00:37:29] Troy: How many people have you laid off at your company, Alex, or fired?
+
+[00:37:32] Alex: In my lifetime,
+
+[00:37:34] Troy: No, in recently. You know, I, because if you have 10 employees, you've laid off 20% of your staff. Easy,
+
+brian, how many salespeople and or sales ops people have you laid off? You've laid off 50% of your company more than once.
+
+[00:37:47] Alex: Troy, Troy, you're misunderstanding your misunderstanding. The problem is not layoffs. I've had to do layoffs. You know, I, I mean, if we're talking numbers, I, you know, I've had to do big layoffs. I mean, these are not easy. I'm not saying people take those things easy. I'm just saying that there's AI washing that's happening around these layoffs that's hiding a performance of an executive team and a CEO that is really, really subpar and has been for many, many years.
+
+[00:38:14] Troy: He should be a fucking yoga teacher, man. I get 
+
+it. I get 
+
+[00:38:17] Alex: So that's why we're saying, but instead he's, he's firing people saying AI is gonna replace them while, when you know anything that's happening in this company, you know, that's entirely untrue and the market reacts the way it does. I think that's interesting. Right? But if we want to just like, put a veil of sanctity over any CEO, then fine.
+
+We can't talk about it.
+
+[00:38:36] Troy: no, we can talk about it. Let's keep talking about it. Brian, do you wanna move to the next topic?
+
+[00:38:41] Brian: Yeah, let's, like, I think we've, we've exhausted the, the McDonald's co. Let's talk a little bit about p Paramount prevailed, to, to take control of Warner. Netflix dropped out. so, to me this is, this is General's fighting the last war. you know, I, it'll, it'll be a year in regulatory and meanwhile the culture will move on.
+
+David Zaslav, you know, turned into.
+
+[00:39:04] Troy: this? You wanna get this off the docket?
+
+[00:39:07] Brian: David Oslo, pulled a rabbit out of his hat here and, I assume in the CEO PE cabals that you're part of Troy, you know, he is venerated, right? bill Simmons took a shot at him, said that, you know, no guy should, pull down like $800 million, from basically
+
+[00:39:25] Troy: Thanks, bill. Nobody should be paid the amount you were paid for selling a shitty podcasting company to Spotify. I mean, you, you do what you get away with, right? I mean, it, it happened. The guy was king of the hill in cable, facing a very uncertain future. Made a huge bet, took on tons of debt, and bought, a ton of IP and the last great studio, and was handsomely rewarded for it.
+
+Good for you. It's called capitalism. He did it. They paid him. He, he, he, he managed a, a sale process that drove the price up. Five x Good for him.
+
+[00:40:00] Brian: look, the results are the results and he had a job to do, and somehow a lot of things lined up for this to like, work out for him, right? I mean, that's good. I guess like, I mean, I don't know what,
+
+[00:40:12] Troy: Remember the stock was trading at $7
+
+[00:40:15] Alex: I know, but you keep looking at like, that's the, that's the, that's the problem I think with like, looking at every, everything as like, a zero sum game that has to lead up to some sort of metric. Like can we rate his performance just like for a little bit, like he
+
+[00:40:29] Troy: no. You should rate his performance, Alex. 'cause you can do it better than the market can. All he said, listen, you go in, you're like, here's my employment contract board. I'm going to create this amount of value. If I do, you pay me this amount of money. Board says, great David, go ahead. Go do it. He engineers this exit for a a, an ailing cable company and he manages to make all this money
+
+[00:40:52] Alex: All right. So Daisy, 
+
+[00:40:53] Troy: to make money for shareholders. He has a deal. Wait, Alex, don't talk over me. He has a deal and he gets paid on the deal. I don't think there's anything wrong with that. 
+
+[00:41:02] Alex: I don't.
+
+I I think he did. I, I'm just
+
+[00:41:05] Troy: And then what you're doing 
+
+[00:41:06] Alex: I'm not saying, ah, 
+
+[00:41:08] Troy: he's a shit. CEO. Just like you're doing what?
+
+Because Alex thinks he's a shit. CEO. It's completely irrelevant
+
+[00:41:15] Alex: Let, let me give you an example. Let me give you an example, because there's like factually, like an analogy. Maybe David Zoff came in and borrowed your Porsche and says, I'll bring it back in better shape. He drives it like crazy and crashes it into a celebrity, and now the Porsche is worth more because it crashed into that celebrity.
+
+The, the decisions that were made, he, he came out on top. But look, he, he, he burned money on CNN plus the rebranding of HBO Max. The, the, the, the scrapping of all the movies, the, the, the acquisition itself of saying, we're gonna, we're gonna buy this and we're gonna reduce the cost structure and increase the re like the, the revenue, to 16 billion or whatever he said at a time.
+
+It went from 12 to nine. Like the fact that somebody. Some, somebody is ready to pay an insane amount of money because they want the studios, like they could have just waited. They, he could have just done nothing, nothing. Just do nothing for six years or whatever. How long he is, and I don't think that's good performance, man.
+
+Like that doesn't matter if you
+
+[00:42:15] Troy: I think you should. You should start a CEO ranking and rating service. You should.
+
+[00:42:20] Brian: would be great because I think a lot of this is, is 
+
+[00:42:23] AB: quality of a CEO in media is knowing when to sell. Like I, he, like him Selling now is a perfect time, right?
+
+The, the headwinds. 
+
+[00:42:31] Alex: to sell? Wasn't he forced to sell? Wasn't he 
+
+[00:42:34] Brian: No. 
+
+[00:42:34] Alex: by Paramount?
+
+[00:42:35] AB: He was gonna do a split off.
+
+[00:42:37] Brian: He put 
+
+[00:42:37] AB: split off, he was gonna split the assets into two.
+
+[00:42:40] Troy: no, 
+
+[00:42:40] Brian: Yeah, I look, this is, I think this is basically just the discomfort with the incentives, of this, you know, the, how we do capitalism basically at the end of the day. And so,
+
+[00:42:52] Troy: hate the player buddy. Don't
+
+[00:42:53] Brian: hey, there was a great po Well, it wasn't great, but like, it could have been great. Derek Thompson did a conversation with this philosopher about why, why metrics are, are screwed up and because, you know, they, they mix up, we love to have a metric on everything to hit a metric, hit a number.
+
+and it sometimes it obscures or, or even acts contrary to what the purpose, you know, ultimately is. I mean, the purpose of the, these, of this company from its origin, you know, was not to, was not this
+
+[00:43:25] Alex: yes, I, I mean, I, and, and this is what like, frustrates me about this conversation and hearing, don't hate the player because you will, Troy, I've seen you, you will watch a basketball game where your team might still win, but your players play shit and you hate the players because you're reviewing their performance.
+
+Like, this is what happened here. He played shit and he still won the game, and that's okay. It's 
+
+not illegal. good. 
+
+for him, 
+
+[00:43:48] Troy: That's a great shit performance.
+
+[00:43:50] Alex: Would you hire him? Would you hire him to
+
+run your company? Really, but you would hire Jack Dorsey too then.
+
+[00:43:56] AB: I don't know 
+
+[00:43:56] Troy: No, I know anything about Jack Dorthy other than it seems like he's a bad CEO. So I kind agree with you on that. But I, I'd hire you even though you complain all the time.
+
+[00:44:05] Brian: Okay, ab, what did you have to say?
+
+[00:44:07] AB: I was gonna say, I don't know if it's necessarily like if you're, it's just his performance. I think it's the broader media market is tough, so sure there's been misfires with CNN plus or whatever, but like there's not too many media CEOs that you're saying, oh, they're doing a great job when they're stuck with a lot of these traditional assets. 
+
+
+[00:44:25] Cal AI Exit
+---
+
+[00:44:25] Brian: You know, well, I wanna get your take on this, very inspiring story. This, Cal AI app that was start, started by, actually, it wasn't in, it's not inspiring. I don't like, I don't like prodigies. it started by like 17 year olds, like high school students, and then they 
+
+sold it in like
+
+[00:44:40] Alex: new today. 
+
+[00:44:41] Brian: They got to like, what I've, I've, I've stated that I don't like prodigies.
+
+Um, 
+
+were 
+
+[00:44:47] Troy: I've got a prodigy story for good product. Actually, I'm gonna
+
+[00:44:50] Alex: AM is a 
+
+[00:44:51] Brian: Prodigies are always weird, and a lot of times it, it becomes a cautionary tale, because you shouldn't, you shouldn't meet success very early in life. I think it, I think it screws you up, but good 
+
+luck to these kids.
+
+MyFitnessPal, bought it. I, this thing got to like 40 million in a RR, and they bootstrapped it.
+
+So are we gonna see like a lot of these like bootstrap success 
+
+[00:45:15] Troy: yes. So just a reminder, Brian, I don't know if you know the context, but the good folks at, Francisco Partners bought, 
+
+[00:45:22] Brian: Good folks. Our friendly PE shop on the corner,
+
+[00:45:26] Troy: Yeah. They bought,nicely located in the Presidio actually, of beautiful offices.
+
+[00:45:31] Brian: ye old pe Shoppy
+
+[00:45:33] Troy: they, they bought, that asset, what's it called? The, the,
+
+[00:45:36] Brian: MyFi.
+
+[00:45:37] AB: Or my. 
+
+[00:45:38] Brian: My, My, 
+
+[00:45:40] Troy: they bought MyFitnessPal from Reebok, I believe.
+
+And it was a asset that when, you know, people were talking about, you know, athletic apparel companies combined with software,
+
+[00:45:50] Brian: Oh, that's hilarious. Brand utility. Very Web 
+
+[00:45:53] Troy: lost. They lost, yeah. Brand utility. They lost a lot of money on it. They sold it to Francisco Partners. Francisco Partners optimized it and made a ton of money really, really successful acquisition until these little 19 year olds came along and started, using AI to be able to rank, you know, and, and, and evaluate calories in your food.
+
+And suddenly there
+
+[00:46:15] Brian: You basically take a photo of like pancakes and it's like 9,000.
+
+[00:46:19] Troy: you need to know. Right. Whereas with MyFitnessPal or Buddy or whatever it's called, you had to, they had to like do all the hard data work. You know, now you don't, and AI can do it for you. So it was a threat and they bought it in, I don't know what it sell for a couple hundred million dollars.
+
+Ab I, 
+
+[00:46:34] AB: probably, yeah, it's not, it's not posted, but
+
+[00:46:38] Alex: mean, it was the right time to sell. That's the type of, of, of app that would also quickly be disrupted by just like a button on an on an iPhone, you know,
+
+[00:46:45] Troy: for sure. Yeah.
+
+[00:46:46] AB: It should have been, but I don't know why MyFitnessPal never did. I mean, it was like this, it's one of these things I think's gonna happen more and more as people that don't have the coding experience see, like a friction point. Like putting food into a calorie track wrap is painful. And so just taking a picture and getting it right in there probably increases app usage and stuff like that.
+
+So there's probably synergies over at MyFitnessPal to get people to keep using the app. So I think the, the, the storyline is young guys, they kept posting on Twitter that they didn't get into any Ivy League schools and they had a successful exit. They're starting like a new venture firm to kind of keep doing this type of stuff. 
+
+[00:47:23] Brian: Okay, good.
+
+[00:47:25] Troy: Do we applaud these people? Alex?
+
+[00:47:27] Alex: why wouldn't we?
+
+[00:47:28] Brian: Yeah.
+
+they break the Stanford, you know, Y Combinator, cabal, there's so much like insider dealing that goes on. I mean, then the amount of like soft landings that get engineered by var, the various cabals in Silicon Valley, 
+
+[00:47:43] Alex: I think agitators are good. I think, I think like we need more agitators that, that change things and, and less people that just move money from one
+
+[00:47:51] Brian: Good for these kids. I mean, I don't like them because they're prodigies, but otherwise, you know, they didn't like, rely on, you know, trips to Gary Tan's sauna, um, to get ahead.
+
+
+[00:48:03] SXSW Nostalgia
+---
+
+[00:48:03] Troy: Brian, I, I, I really liked that you were framing the episode with nostalgia, and I feel like we've, we've, we've lost that lane a little bit other than you made this post about South by Southwest where instead of talking about like Web 2.0 apps that track calories, you, you're talking about defense tech at South By, is that, is that
+
+[00:48:22] Brian: Yeah. I mean, I, south by Southwest is coming up, I guess next, I know two weeks. I was thinking about that and, you know, tech has become a real drag because it's become so important and it's become so entwined with, with war and government and society and wiping out humanity. And I had nostalgia for like the GroupMe, grilled cheese truck.
+
+you know, there was every year at South by Southwest there would be some Web 2.0 app that would try to be the new Foursquare because Dennis Crowley it was down in Austin playing, drawing in chalk with Naveen to do, you know, Foursquare. And they took off there and everyone was trying to battle to be the new viral app out of there.
+
+And now that's all gone. I miss it a little bit. South by Southwest is not, not quite the same. And, it would be great to get back to where, where tech is a little bit more fun again. Maybe Alex's game can kick that off.
+
+[00:49:23] Alex: I mean, that vibe is definitely more, you know, something that is at those like game events a little bit, even though it's been a bit somber with the industry being where it is. But, yeah, man, I don't know if we're gonna get back into that. I think it's gonna be a while until all this AI stuff gets normalized.
+
+There's just too much change happening. Too much money being fed into the system. It's, it's too chaotic right now.
+
+[00:49:45] Brian: should we get to good product
+
+[00:49:46] Troy: Well before we do Good pro, I thought there was an interesting, and, and fortunate outcome for our friend Vik Shah, where, The market's pretty negative on digital media assets.
+
+His is a particular, a particularly complex one 'cause he has a bunch of disparate kind of business types and, and properties under one banner.
+
+And he took his, I think it's called his data segment, which includes like speed testing software called uc and sold it bizarrely to Accenture, I think for $1.2 billion, which was more than the market cap of the entire company of, of Ziff. And the stock popped like 78% in one day and that was two days ago.
+
+So, good for VAC and there is another, fortunate outcome for A CEO.
+
+[00:50:35] Brian: I mean, I don't, did did you see this? there was this post that was going around, it was using a data about the, the tech. news sites and their traffic declines. I mean, ZD net down 90%.
+
+[00:50:49] AB: trends down
+
+[00:50:51] Brian: Digital trends, 97%. I mean, tech radar down 74%. CNET down 47%. PC Mag down 41%.
+
+Mashable down a mere 30%. Tough times for the Pageview model. I did a podcast with Adam Ingold, Bulah, CEO. and he was basically saying that, I thought it was kind of interesting. It was a Google once Search to die and that, they're gonna make more money from Gemini. And so this is, this is curtains for, for this part of the business.
+
+Roger Lynch, Conde Nast, CEO, came out this week and, and said that they're fully on board with Google Zero. They don't believe it's going to be a meaningful part of, of their business. getting traffic from search and then putting ads against it, in the future. So,
+
+tough transition, tough times for
+
+[00:51:45] AB: Can we talk? The thing is actually really interesting, can we talk, if we go into that, so 'cause VEC bought it in 2014 for only $15 million, most of us have interfaced with one of these products whenever you are at home and your internet slow, like you go to speed test.com and it like measures the speed.
+
+But they were able to turn that into like a massive B2B product. So it's a 50% EBITDA margin business. So they, Accenture paid 10 times EBITDA for this, like these four digital assets and I was trying to figure out why they bought it. Because everyone thinks of Accenture as a consulting business, but it also has a much higher margin business in managed service providing, so like they manage data centers and things like that and manage connectivity.
+
+And so it's pretty cool to see how Zif took, and I don't know at the time if they had a B2B element, but they added a massive B2B element to where they take this consumer data. They've made a bunch of tools. So if you have data centers, networks, things like that, it manages uptime connectivity. And because 250 million consumers every year submit their speed test, they have like a pretty good array of benchmarking data to see how your internet's working.
+
+And so, 'cause there's like a lot of, in the press release it's, it talks about ai but I think it's more about like just pure data center management. The other thing, the other thread here is they do all that government rural broadband stuff. And so I think Accenture's a big contractor to the government and I'm sure as part of these outlays to getting. People in Mississippi, broadband internet at, you know, $20,000 a household. Accenture wants to play a role in measuring the speed and saying it's working and things like that. So I think it's good on zif to unlock value. they, when, when they came to market, they said, they didn't say we're gonna sell it.
+
+They, they said, we're gonna explore strategic options. So they weren't forced to sell it. And then I think the market, as Troy said, appreciated the sale. 'cause now they have $1.2 billion in cash. 
+
+[00:53:44] Troy: Boom. do you want to do good product today, Brian? 
+
+
+[00:53:47] Good Product
+---
+
+​
+
+[00:53:49] Troy: I think we shit on the algorithm a lot and sometimes it, it brings wonderful things to our lives. And, you also talked about prodigies for some reason this week.
+
+I, you know, I, you know, I like YouTube and I use a lot, and the algo had surfaced, sort of, or put me in the improvisational orchestrate or, or orchestral segment, which is some, you know, people like prodigies, like this kid Jacob Collier. Do you know who he is? He's an English musician and he's, he, he does these kind of multi-track arrangements.
+
+He went viral on YouTube for doing these Stevie Wonder songs. Don't worry about a thing where there would be like a matrix of 10 of his heads and he'd be singing, harmonies to different parts of the song. And he's like, incredibly gifted. I would argue He's, I'm sure he is a musical genius with like this incredible grasp on harm harmonies in the math of music.
+
+So then he does this thing in October. At the, with the San Francisco Orchestra, and I think his mother's conducting, she gets out of the way and he does this, like, he uses the orchestra, like it's garage band, and he composes a song by pulling in different parts of the orchestra and giving them harmonies, and, and getting them to do it in real time and having the audience participate.
+
+It was, it was really magical. I noticed in the comments on YouTube that someone said, you know, I was at this show, it was the most moving concert of the 71 years, and I, and I've been to hundreds of shows at, at the San Francisco Orchestra. So, somehow I got in this kid's segment. If you don't know who he is, he's pretty famous now.
+
+He is won a couple of Grammys and stuff, and. He has a, a ton of content on YouTube, and then of course, sensing that I was interested in this improvisational kind of thing. You know, YouTube started delivering this stuff to me. And then I got all the Ben Folds content when he did something similar with at, the JFK, performing Arts Center in renamed, sadly in Washington.
+
+you know, where he composed a song in real time. He's at the piano and he is telling the orchestra what to do, and Ben Folds is a really talented guy. you know, that's the beautiful thing about the algorithm. I mean, we talk about, you know, the whimsy of a human being, programming content for, for us, and you know, how they can look at, you know, introduce us to things that we wouldn't have otherwise seen.
+
+I don't know why I saw this. The algorithm did it for me and I loved it. 
+
+[00:56:17] Brian: Okay, great. 
+
+[00:56:18] Troy: ever had that experience where you were delighted with the algorithm? 
+
+[00:56:21] Brian: Yeah, of course. Yeah. All the time. there's a lot of downsides to it. I'm having, I'm getting nostalgia for, for 1990s New York, 1990s nostalgia is, is is kicking in
+
+[00:56:33] Troy: Is that 'cause you're watching that Kennedy
+
+[00:56:34] Brian: yeah, I'm watching this Kennedy show and I don't really, you know, the, the love story part of it. I'm watching it with my wife. It's like, you know, it's a nice couple's activity.
+
+[00:56:41] Troy: But it brings back old New York pre-cell phones. John Kennedy Jr. Is riding his bike around Tribeca. You've got, they, the first date was at Pana two. Great place used to go there all the time. It still exists. This, Indian place in the East Village, that has these, this crazy lighting. the Odeon where you and I, I ate one time Troy and you seem bothered that I suggested we go there.there's no, it's too packed. There's no elbow
+
+[00:57:13] Brian: square Diner. I was just there with Jason Krebs. it was a PVA listener Great diner there. Walkers gets, gets a shout out. And, and Tribeca,
+
+[00:57:23] Troy: So is this, is this a good show? Are you highlighting this show as a good product or is it nostalgia or is it 
+
+[00:57:27] Brian: It's nostalgia. It's 1990s. 'cause like, I think it has a, it has great music too. Maisie Star Seal Di Vinyls. I touched myself. Underrated song, 
+
+[00:57:39] Troy: I named my dog after Maie star.
+
+[00:57:42] Brian: Did you? Lenny Kravitz is in there. cranberries. It's good. The only thing that doesn't hold up with the nineties and I know everything comes back nineties.
+
+Fashion just atrocious. I mean, John Kennedy can pull it off 'cause he was like the sexiest man alive. But otherwise really bad, really bad era for, for fashion. Anyway, that's my thing.
+
+[00:58:04] Troy: Nice one.
+
+
+[00:58:05] Outro
+---
+
+[00:58:05] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[00:58:40] Brian: All right guys. 
+
+[00:58:41] Troy: Good one.
+
+[00:58:42] Brian: Good to all be back together. 
+
+Have a good week. 
+
+[00:58:45] Troy: Take care everyone. 
+

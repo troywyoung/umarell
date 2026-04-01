@@ -1,0 +1,861 @@
+PvA S3E133
+===
+
+​
+
+
+[00:00:00] Open
+---
+
+
+[00:00:01] 
+---
+
+[00:00:01] Brian: Do you feel it's weird without Troy?
+
+[00:00:03] Alex: It is calm.
+
+[00:00:04] Brian: Where is Troy? What is he doing?
+
+[00:00:06] Alex: I got a signal gate with Troy.
+
+[00:00:08] Brian: Oh, really?
+
+[00:00:09] Alex: he sent me the wrong note about some, some deal.
+
+[00:00:12] AB: Was
+
+it Signal or WhatsApp?
+
+[00:00:14] Alex: it was WhatsApp. Actually. He's not, he can't use two 
+
+[00:00:16] Brian: that's the kind of opsec that people love in professional services, right? AB.
+
+[00:00:20] AB: Mm-hmm.
+
+​
+
+
+[00:00:22] Intro
+---
+
+[00:00:43] Brian: so, AB is going to be joining us, here this week to, I wouldn't say replace, Troy, but
+
+[00:00:50] Alex: I mean, it's, it's, it's like an audition. It's a little audition.
+
+[00:00:53] Brian: It's an
+
+[00:00:54] AB: Yeah.
+
+Troy, I, Troy's not replaceable. I can't be as mean as him, so.
+
+[00:00:58] Brian: we're all replaceable as we find out in life.
+
+
+[00:01:01] AI Search Shake-Up
+---
+
+[00:01:01] Brian: just off. I had the media product forum yesterday, at Chelsea Pierce.
+
+[00:01:05] Alex: Allow me this, Alex, okay. Take a swig of water. it. Um.
+
+[00:01:09] Brian: like over a hundred, media product leaders. and it was really, it was kind of fascinating. It was a great event and, I'm biased, but I thought it was great. I don't know, a lot of the takeaways are at least that I came from. Is that a lot of what we're talking about here right now, people kind of dismiss, I'm be honest with you, in publishing and they think that it's, this is gonna take a lot longer to get down to quote unquote the normals.
+
+They think that Alex, with his like spaceship over the White House is like 10 years too early, like he is with his Vision Pro. what I got. I got a lot of pushback. It actually, not a lot of pushback, but I got that, like one of the feedbacks from I, we had these round tables where people had discussions about specific topics.
+
+'cause I don't like just straight broadcast programming. I take Alex's, role that you have to be participatory to heart. And one of the, the round table leaders sent me a note and. She summed it up as nobody with, with practical uses of AI to, to drive their businesses forward. She said, nobody has this figured out.
+
+And I was shocked at how big the AI ambition to execution gap really is. People are making big theoretical bets, but are really struggling to operationalize. So I thought this week we could, go over some of that particularly zero in on, on what a lot of people were focused on there, which really comes down to going on with the future of, of search.
+
+so I thought we could attack that from a few different angles. with, AB you had pointed this out, you know, Google is now testing this AI mode inside their core search. it's gonna add in chat style answers. query threads, shoppable cards. This is very exciting.
+
+[00:03:01] AB: Mm-hmm.
+
+[00:03:02] Brian: Google has a classic innovator's dilemma on its hands.
+
+I mean, I would love to have this dilemma, just to be clear, I'd love to have my own search engine that everyone uses to access information in the world. but ab what, what is, what's going on here with, with Google Tiptoeing its way into, you know, this is the first real, I think this is the most serious challenge that it's had to its cash cow,
+
+[00:03:24] AB: Yeah, people are starting to change their habits and start with their questions on something else besides. At the google.com, but it's a, are we gonna start? 'cause I, I, I think it's interesting, Brian, I went to one of your other events where you had people sort of dueling on stage where the one person used this thing that a lot of people sometimes say is AI is not useful yet.
+
+And it's just, it's a word predictor and it's predicting the next word. And I think what was nice is you brought up someone else on stage who basically said that person was an idiot. in a little bit nicer of terms. So are we gonna, because I think it's worth actually talking about that point first.
+
+[00:04:03] Brian: What about the people who are idiots?
+
+[00:04:05] AB: Exactly. No. Or is it useful yet? And I, I think it, it is. I, I think with that person who is sitting at one of your tables, the point they were making is more so on the, it feels like there's an agent role or a, a, a business process role that AI hasn't stepped into yet. but to me, when I hear someone say, oh, it's not useful yet, they just don't know how to use it.
+
+[00:04:29] Brian: do you think, Alex?
+
+[00:04:30] Alex: think. kind of out of, everyone's a little bit out of sync. I think some people are strategizing ahead of what the technology can do today. I definitely think the AI companies are overselling some of the capabilities which isn't helping. then there's all, there are all these capabilities that exist today that are pretty profound, that, somewhat get overlooked.
+
+So I think we're both, we're both experiencing people that are both planning and selling ahead of what the capabilities are and people completely underestimating the capabilities of it. And very few, I think, have aligned with where the technology is today and what's, what, what it's capable of doing today.
+
+There's really incredible things that could be done. I can't, I don't really understand how not every organization can be profoundly impacted or changed by AI in some way. Whatever you do. Right? Some more than others. yeah, I, I don't, I, I, I find, I find old conversations. I find a lot of conversations really frustrating because they're either selling stuff that you can't do yet, or that isn't possible or that isn't viable to integrate, or, they're completely dismissing it. Does that make sense?
+
+[00:05:42] Brian: Yeah. And that makes total sense. I mean, this, this other, this other person had sent in, a quote from, from their, round tables and said, no one's working. Reworking processes from the ground up. There's, there's shockingly little structure to any of this. It's a pile on effort where curious people who would explore this territory anyway aren't getting dedicated time or space.
+
+I mean, this is like, you know, not to dwell on the, the, the perils of publishing, but you know, there is this acknowledgement that they need to change these businesses and kind of from the ground up really. But at the same time, they have to continue to operate in these old, paradigms. And so, you know, on the one hand, what I, there's always this whiplash where, you know, people talk about these audience-centric models and shifting to them, and then in, in the, in the next breath, they're like, you know, Google discovers really hitting it for us.
+
+We're still getting the traffic. 'cause they have to, they have to keep this traffic flywheel going. and then they're mostly monetizing through, through programmatic. And, you know, programmatic as, as the internet spot market, has been, has been hit already by, by the tariff concerns. So there's, there is a major gap between just the, the sheer resources that publishers feel like they have. So I think it leads to a situation where there's sort of sitting there and waiting, you know, waiting to be told. Sort of, okay, how's this gonna work out? How, how are we getting told? and that was, you know, our, our friend Neil, Vogel Wa was, came and did a talk with me there, which was really, nice of him and, and good.
+
+but you know, I think Neil is, is a good example and dot dash Meredith of, you know, they have gotten on with the getting on, right? I mean, of all the businesses that are incredibly exposed, the legacy, do the legacy about.com business would be like top of the list. he, he had one stat that, that piqued my interest that Google is now, just a third of the traffic source for their properties.
+
+And that's down from two thirds and probably 85%. That was two thirds when they bought Meredith properties a few years back. And it had to be 85% when, Neil and his team took over what was then about.com,
+
+[00:07:54] Alex: Has it been replaced with something?
+
+[00:07:56] Brian: yeah, I mean they're, they're, they're replacing it with, you know, with, with Reddit, with all the different cer,traffic sources that can, I mean, one of the good things is is publicly traded, so they, they have to publish their sort of core, or they don't have to, but they publish their core traffic metrics.
+
+Right. And, you know, they've held steady, you know, and, and holding steady is, good for a lot of people right now. To, to be clear, like what's really interesting is there are a lot of publishers who are continuing to successfully operate these traffic models. You know, a, a publisher like Newsweek, right?
+
+Which has a totally different, economic purpose at this point of its lifecycle. Than it did say in the 1980s. Like, I mean, Newsweek is never ever going to be a, a weekly news magazine source they're winning at traffic. Like they've expanded their traffic tremendously. They're really good at Google.
+
+They're really good at Google Discover. I was talking with Barak, chief product officer there, he's like, of course it terrifies me every day. You know, of course it does.but
+
+[00:09:10] Alex: What's, what's,
+
+[00:09:11] Brian: a lot of these models work.
+
+[00:09:12] Alex: maybe that's a question for ab are. We talk because when we had, Neil from dot dash Meredith, he shot me down when I was talking about all the freaking out he should be doing. Uh,yeah, he pretty much did. but most of your guests, most of
+
+[00:09:30] Brian: Come
+
+[00:09:30] Alex: mo
+
+[00:09:30] Brian: we all
+
+[00:09:31] Alex: I,
+
+[00:09:31] Brian: ought to box our corner.
+
+[00:09:33] Alex: gotta be honest, I don't think I've been, I've, it's gone well with any of our guests that we've had on me.
+
+but, is, is it a,
+
+[00:09:40] Brian: You're a truth teller. Alex and truth tellers throughout history, 
+
+[00:09:43] Alex: thank you. That's, that's, that's a very generous way of putting it. But I wanna Is, is this, is this a timeframe issue? I mean, sure. You know, I'm sure things are going well now, but, right now what we're seeing is really, organizations, the platforms and the media organizations just shifting the models and moving things around.
+
+But the true wave that comes in usually with technology, and it, it, it happens slowly and then really fast is consumer behavior. Consumer behavior changing, right? Like, there was a world where we still had Yahoo and, and different search engines and Google coexisting, but then there was this, this wave where everything just shifted to Google and, and we haven't seen that yet, right?
+
+Like in, in, in expected behavior. People still have like traditional Google search connected to their, browser. Everything's kind of on rails. Most people don't change behaviors that quickly, but going to happen. I mean, I can't see this technology. I, I use Google probably 80% less than I used to. And I, and that's not because I'm weird.
+
+[00:10:46] AB: Yeah,
+
+[00:10:47] Alex: early adopter.
+
+[00:10:48] AB: I think we're, it's just too early. And some of the, and Brian, we've talked about this before with dot dash where when you look at their reportings, it's, it's la it's a lagging indicator because they were leasing earnings a couple months after that quarter or year has closed. And so, I dunno if this is like the worst analogy to use, but, you know, in a tsunami, like the water has to go out first before the impact really hits.
+
+And it feels like that's, we're at the beginning stages. You're starting to hear publishers see the percentage of traffic from these different, language models start to tick up. and there is like a fragility in these businesses that can happen pretty quickly. it's gonna take, I look back, you know, Chachi BT was, was released, I think it was November of 22.
+
+and so things have taken when I, when, when it first got released, I was like, oh, this is gonna be game changing.
+
+I
+
+would've given you a couple years. We're already now, what, three or four years after the launch, and it hasn't had as big of an impact. But I, I do think there's a lot of fragility to those businesses.
+
+I think Neil and other publishing executives have to, there's what are they gonna do? They can't change the business. And so, but you've seen them make moves, like taking, taking the open AI money. They've done things to just continue to shore up their current earnings with the desire to evolve the business.
+
+They're turning on this ad product to hopefully get a closer connection to the, to their customers who are the brands and, and spend more of their money, not just on dot dash, but on the rest of the internet. So they're trying, I think, to have strategic positioning to increase the duration of, of the viability of their businesses.
+
+But there's a lot of content that they produce today. Like you mentioned, Brian, like the, the recipes that OpenAI, or whatever model you use should be able to do a much better job.
+
+[00:12:34] Brian: Yeah, it's funny, I, I, I talked about the recipes with Neil a lot. and you know, 'cause they're, they built like they had a, my recipes domain, and so they built this recipe box basically you can save your recipes to it. Someone in the audience said, like, I, I had a skeptical look on my face when he was talking about the recipes.
+
+So I try to be polite. I mean,
+
+[00:12:54] Alex: I can't, I can't see. I can't see these. I mean, the recipes, rep recipes are yellow pages. I, it is just once you get, I, I, I, you know, I, I did that thing where I, I connected this like smart. Additional smart button on my phone to, chat GPT voice, the one where you chat. And I haven't listened to a podcast during my commute in a few, in a couple of weeks, which, which is bad for preparing for this.
+
+I did try the All In podcast, but then I, I started throwing up in my mouth. Mouth, so I stopped doing that. But
+
+[00:13:25] Brian: mouth derangement syndrome.
+
+[00:13:27] Alex: we should all have that. the ability to just press a button and, and talk to a machine and just get questions answered and run through things, is really going to hurt these, these things.
+
+I mean, I do it now. When I need to cook something, I press it and I said, I have, you know, this much stuff, what do I do? And it's, it's good enough for 90% of the recipes that I need help on. And the rest of it you get from like specialists, which is either like that YouTuber you love, or America's Test Kitchen.
+
+And these guys gonna probably have a space still, right?
+
+[00:13:56] Brian: have some of that, right? They have a lot of recipe assets. you know, all recipes I think is is challenged by a lot of the commodity recipe content. I know Neil will disagree with that. Sir. has a little bit more of branded. They've, they've got some, you know, you're gonna want to co you want you, you want to cook like Kenji Lopez,
+
+[00:14:15] Alex: Right, exactly. But, but
+
+[00:14:16] Brian: chicken,
+
+[00:14:17] Alex: once again, it's, it's more,you know, you, you, you got, you got someone behind there, you're doing something because you're, you have this kind of, relationship with the, with the creator behind it. So it's, it's really shifting towards the creator economy again.
+
+[00:14:32] Brian: one of the things was, that I found interesting is, is he says internally they do, like the instruction is to, to, to plan for Google Zero. Right? I mean, you, you know, Google Zero would, you know, it wouldn't, it wouldn't end that business. But like, you know, he admitted that like a Google Zero scenario would be, you know, incredibly challenging.
+
+Right? but you know, I think preparing for that is probably a good idea for a lot of these publishers. because. Obviously Google keeps trying to change and it's trying to protect this incredibly lucrative core asset while at the same time it's under a lot of pressure from people taking different approaches to the search market.
+
+And I keep feeling like the other shoe has not dropped yet with a lot of this stuff. you know, one of the, one of the people who was there was this guy Daniel Hallick, he's a chief growth officer at, the Free Press, and he formerly was a chief product officer at Hearst. you know, basic thing is like, I'm so glad I don't have to even worry about this anymore. You know, because the free press is a totally different model. It's all newsletter driven. And I think that's, you know, that's where a lot of people are because a lot of people are, have to operate the, the old models, and try then to build the new models. I mean, that's what, you know, Neil was talking about with like the people app, you know, it's more like TikTok and, and that is, you know, that is the way that these businesses have to go. I think the question is whether they can get there quick enough at
+
+[00:16:02] Alex: it happens and AB probably knows that, but it, we always overestimate how quickly things happen. Right. And then we, we kind of, then we sit back, you know, it's, I, I find that the technology wave come like, tropes in horror movies where you feel the danger is near, then they cut to something where that makes you feel safe again.
+
+And that's when the guy with a knife comes out and this feels like,
+
+[00:16:24] Brian: sure.
+
+[00:16:25] Alex: feels like that. And
+
+[00:16:27] Brian: you mentioned the, the, the yellow pages like. And I, I actually was, I wrote for DM News. Okay. Direct Marketing news. And like we had like a Yellow
+
+[00:16:35] Alex: Nice.
+
+[00:16:37] Brian: Okay. And
+
+[00:16:38] Alex: beat. The beat to be on.
+
+[00:16:40] Brian: yes, it was the end of like the directory era. And I was covering all the internet internety stuff, right?
+
+And I was like, okay. I walked down my apartment building and there are just these piles of phone books that nobody has has collected. But there was this overhang where people were still producing all of these phone books that like every apartment building had a mountain of them because nobody was using them anymore. And it was still a massive industry that was going to be taken. And it was taken by Google. Google swallowed it whole,
+
+[00:17:13] Alex: Yeah.
+
+[00:17:13] Brian: But all of the rationalizations, I remember being told when I did talk to the people who were operating. Basically the digital version of these, of these directories businesses. we have the feet on the street.
+
+Google will, people are not gonna, the pizza parlor is not gonna set up a website. They're not going to go and do a self-serve. We've got 25,000, pairs, I guess, of feet on the street, et cetera. There were all these rationalizations and it did take a little bit longer. You had to walk by those mountains of, of phone books, to get into apartment buildings.
+
+But eventually they disappeared.
+
+[00:17:51] AB: just circling back really quick, it's interesting when someone from like a free press or some of these upstart media companies are like, I don't have to worry about doing these other three things. I think it's like yet, right? So there's only so much headroom you can grow your subscription list unless you grow it and then sell the business, but.
+
+As much of these niche media players like to pretend that they're building something new and they're able to, basically navigate around some of this AI disruption coming. E every large or growing large media company will end up in similar spots where they're gonna have to tap the advertising market like they're gonna evolve into needing to touch Google, right?
+
+Like there's the, you can't just build a media company where you ignore some of the biggest levers of, of ad revenue.
+
+[00:18:39] Brian: Yeah, that's fair. 
+
+
+[00:18:40] Perplexity’s $50m Venture Fund
+---
+
+[00:18:40] Brian: one of the other things that caught, caught our eye this week was perplexity is, they're starting this $50 million venture fund. it is the AI search, upstart. It's a very, it's evolved into like this kind of, very unpopular among publishers. Like, I went to a, a cocktail party earlier this week among the publisher people, and hate perplexity.
+
+[00:19:04] Alex: It is like the Napster, it's like publishers of Metallica and perplexity is Napster. That's what it feels like.
+
+[00:19:10] Brian: You know, I mean, they're used to being screwed over by technology companies and they're kind of like numb to it, but like, don't be a dick about it. I think that's basically it. It's like, we get it, you're gonna screw us over, you control the interface, et cetera. And, you know, they're like, there was this movie Better Off Dead, like I think it was in the late eighties and like the, John Kuze was in, it was a great movie and the mailman kept taunting him, I'm gonna steal your girlfriend.
+
+And like, it's like kind of annoying. And perplexity is that mailman I feel like. anyway, publishers wanna destroy perplexity. They hate them. that was my big
+
+[00:19:45] Alex: The, the CEO seems to be like pretty abrasive, doesn't really have a very, he's not very soft spoken about this stuff, I guess is what I wanna say.
+
+[00:19:54] Brian: I mean, well, I mean I give him credit for being like when the New York Times, I guess Tech Guild had their like walkout. He like did this like PR stunt, like, hey, we'll take over your like, you know, tech and keep you running and stuff. And it's like, dude, what are you doing? Like, gimme a break. Why don't you build, why don't you build a profitable business first?
+
+Which is also something that maybe you, AB can explain this to me. Perplexity is a wildly unprofitable enterprise, I believe. Okay. All of these AI companies are, they've taken on a shit ton of funding and then they're using that funding. Okay? So basically pension funds and various other pools of capital give money to these, these VCs to allocate it.
+
+They allocate it to a company like Perplexity and then Perplexity takes some of those funds and then they're gonna allocate it. Shouldn't they be using these funds to build a profitable business, not to like fund other businesses?
+
+[00:20:46] AB: I
+
+I mean, there's a, they're probably, they're taking advantage of, of a lot of market enthusiasm to where they can basically tell the VCs, Hey, we want to do this other thing and you better fund it, or otherwise we'll find other money. there's so much money going into businesses like this. I think there's been, in the last 12 months, you know, the, the stock market and public equities provided significant return for people over the last couple years.
+
+And then there's now been a rotation back into sort of the private market. And so I think what you're just seeing here is people wanna invest in perplexity, the CEO and the team there can say, well, hey, we want to. A sleeve of capital to put to work on startups that we're bumping into. I think Sam Altman has done a pretty good job at OpenAI, through like a sidecar fund, basically enabling startup companies in the space, giving 'em access to his models, things like that, his network to, to make them grow quicker.
+
+so you're starting to see it work for them. and then on term, in terms of the perplexity, I think basically what they're telling the bcs is like, we have better access, we're gonna find interesting companies. The the weird thing is like perplexity doesn't have its own model, right? So they're just basically on top of, it's a consumer interface on top of other people's models.
+
+Yeah.
+
+[00:21:58] Alex: yeah. I, I mean there, there're definitely kind of a huge risk and I don't, you know, I don't see any natural acquire, although there, there would be plenty, but wasn't ab like, to me, the first thing that struck me is that, didn't it used to be seen as kind of. Off to use Venture Fund to create your own venture fund, essentially.
+
+Like, isn't it, is it even le Legal?
+
+[00:22:21] AB: The way, here's the way to think. Here's the way to, here's the way to think about it, is because of the frothiness in this market, a typical business like Intel or just think of anybody visa like all these large enterprises have a, have a venture fund to effectively invest in and around their ecosystem.
+
+and so yet,
+
+[00:22:42] Brian: dude.
+
+[00:22:43] AB: Yep.
+
+[00:22:43] Alex: they're established. What's, what's perplexity ecosystem? I, I guess I would understand open AI and infrastructure, right? People building the pipes. I, I get that more like what's perplexity ecosystem here?
+
+[00:22:56] AB: That's a good que I think it's access, right? They're saying, Hey, we're around all these other companies. I, I, I think the open AI or the, the anthropic pitch is a better one versus this perplexity and the, the $50 million is not that much money.
+
+I.
+
+[00:23:09] Brian: I
+
+[00:23:09] Alex: No, it's not. Yeah, it's not. It's just an odd one that they would
+
+[00:23:13] Brian: To me
+
+[00:23:13] Alex: allow them to do.
+
+[00:23:14] Brian: I, to me, it's just the tell of like, it's kind of like the tech guild thing.we, you know, that sort of stunt stuff and I'm like, are these serious people at the end of the day, because this is so frothy and any frothy market, you get a lot of money that goes to jokers, you know, and
+
+[00:23:30] Alex: Oh. I've seen, I've seen, I've seen a lot, I've seen a lot of pitches over the last two months where I, pretty sure somebody used chat GPT to generate AI business and it's just pitching it and then attaches some sort of like, this is why, this is my life's passion to it. Cha these pitches so much, easier to make. 
+
+[00:23:50] Brian: I
+
+[00:23:50] Alex: sure somebody has a prompt on.
+
+[00:23:51] Brian: when MySpace was at its height, going to a Webby Awards. I know I'm dating myself. which Neil Ne Neil was the, that ran the Webby Awards then. but I remember going to one when they were at their height and I was just like tracking Crystal Wolf like during the evening. it was very obvious that they weren't gonna work. 'cause he was very into being like a celebrity at the Webby Awards. I was like, he's not serious. He's not, he's not gonna take him like Facebook, like Mark Zuckerberg's gonna eat him for lunch. And obviously he did. So I think I have a good instinct for these things. One of the things also, when we talk about these Crystal Wolf there, what can you find Tom? MySpace Tom, he just dropped off the radar. He did it right. He was like, no, like this was my one thing and I'm just gonna, he like does art and, and just lives off of his MySpace money. you know what needs to be revisited is Sandbank and Frees investments. He had a stake in anthropic. He had a stake in, in, in, in Cursor. Like they actually, if it wasn't for the Frauding, that would've been, that would be a really great business. It seems like.
+
+[00:24:56] AB: Yeah, I think they returned all the money back to the people.
+
+[00:24:59] Brian: And this guy's in jail and, and what's his name? The, the WeWork guy is, he's still raising funds for, nobody really knows what he's doing with this flow code thing.
+
+[00:25:10] Alex: No, 
+
+[00:25:11] Brian: it's a narrow, it's a
+
+[00:25:12] Alex: it,
+
+[00:25:13] Brian: You walk in these
+
+[00:25:14] Alex: you know, they say that,know, charisma gives you a little bit of a shield, you know, you know, if you're trying, if you're trying to do, if you're trying to defraud without charisma, I mean, you're really like raw dogging crime. Here
+
+[00:25:29] AB: Mm-hmm. 
+
+[00:25:30] Alex: you 
+
+[00:25:30] AB: No charisma and his,
+
+[00:25:32] Brian: they always tell you as a journalist, you can't use the F word 'cause you get sued for the F word. I'm
+
+[00:25:35] Alex: Oh, yeah, yeah, yeah. No,
+
+[00:25:36] Brian: that, you know, Adam
+
+[00:25:38] AB: allegedly not. Yes, allegedly.the interesting thing is the way that you could frame it is at the end of the day with, With WeWork is the shareholders lost a bunch of money. In s in Sam, Bankman Free's endeavors. Everyone got their money back and probably would've made a little bit more of a return if they hadn't had to sell out on their positions.
+
+[00:25:58] Brian: Hmm. I bought WeWork stock during, the pandemic.
+
+[00:26:02] AB: Nice.
+
+Alex, did you see any,
+
+[00:26:04] Brian: It's
+
+[00:26:05] AB: did
+
+you, did Alex, I don't know if you saw the Stripe stuff in terms of the sort of staying on this ai, theme. 'cause it looks like they're releasing their own foundational model.
+
+[00:26:15] Alex: Yeah. I mean, everybody is at this, at this stage. I haven't really dug into it much. you know, it's, I mean it's really trying to get, through. 'cause they have both an interface and they have a lot of data. so you can imagine that all of these companies have, will benefit building foundational models. It's just, and we don't know how much stripes is costing. This stuff is so expensive that it's, know, I would, I would make, I would make the calculation of, whether or not to use somebody else's model. instead of, instead of building your own, did they say they were actually building their own or were they basing it off an open source one? Do you know that?
+
+[00:26:50] AB: I think it says they're building their own. And then to your point on like the corpus of data they have, they have all this transaction data that not, not everyone has access to.
+
+[00:26:59] Alex: that makes a lot of sense. the thing that makes less sense to me is building your own foundational model. I even think. I would, I would be a proponent of even saying Apple doesn't even needs its own, you know, Apple's one of those companies that should sit back and let other people spend a trillions of dollars putting all that, you know, infrastructure and then you can build on top of, the, the stuff is really, really expensive
+
+[00:27:22] Brian: Yeah.
+
+[00:27:22] Alex: and, uh,
+
+go, can you go over what exactly Apple is doing right now in, in ai? Like, it just seems like it's fumbled this tremendously. And I usually, I take like, sort of, you know, the articles of the Grain of salt, but I trust my own like, experience with it. And like the Apple intelligence has been so, like comically bad, like they even rolled back, they tried to point AI at, at their, their, their mail yeah, yeah,
+
+[00:27:48] Brian: it was
+
+[00:27:49] Alex: yeah.
+
+[00:27:49] Brian: Just even separating out messages was, has been a complete disaster. They gave, they gave me the option just to roll it back and I immediately took it with them.
+
+[00:27:58] Alex: I'll be quick. But here's, here's what I'm hearing and here's kind of what makes intuitive sense. Apples. Really good when it takes its time. And they've always known that, which is why they were never afraid to be late to the game. that's kind of the Apple story. But they would come out with something that was more thoughtful, more complete, and and could then take over the market, right?
+
+Because they had all this, hindsight built, built for them by other companies, and then they would really apply their design. And the, the way things work at Apple, it is very slow. I mean, it, it, you know, they, they, they, it feels like they move fast because they have all this momentum. But at the same time, a lot of this stuff happens over years before we ever see the things. And what happened with AI is that they got caught, in the worst possible position for Apple A. They had to respond to, What is an interface shift? I mean, what people like me and, and, and, and people at Apple also believe is an interface shift, which means consumer behaviors are going to change. So you can't just, they felt like you couldn't just sit back.
+
+And on top of that, their privacy stance meant that they could do less than others. Does it make sense? and so they had to find all these new ways of integrating AI without, breaking their privacy promise. And, and Tim Cook has been a, a, you know, in many ways a great CEO, but also like a dogmatic one.
+
+I think Apple is a company that can become really dogmatic and even to its own detriment. And in this case, I think with AI we're finding that people are pretty open to this. Like, reducing their, their, you know, their privacy in return for the utility that it provides. And, and so they promised they did things that they hadn't done before. I think they. To me as a, as an interface designer, it, that interface does feel rushed, right? It felt very, it felt, very afterthought from what I hear. It was kind of chaos and panic at the company. and they did another thing, which is they announced a feature that they wouldn't even let developer test out at W-D-C-W-W-D-C, uh, you know, which you would, you would always get features announced that consumers couldn't use, but usually when they were announced, they, they would be given to developers so that dev developers could build off them there.
+
+They wouldn't even let people like hold the phone and try it out. All of these demos of the smart series were completely canned demos. so now they're noticing that a probably, and I'm, and now I'm, now I'm going to very speculative mode because it's very hard. Probably the, the, the privacy constraint that they put upon themselves are really hindering their progress. two, it's, it's hard to build this stuff and it doesn't work as well as advertised for a company that requires things to work in a certain way. Like, you know, you can't have Siri just starting, you know, like the stuff you can ask, chat GPT to do, they, they, apple cannot let Siri do that. Does that make sense?
+
+[00:30:56] Brian: Mm-hmm.
+
+[00:30:56] AB: I remember like seeing one of the first step when they did the open AI partnership and they're like, we are gonna have, let's have, let's have open AI create a playlist for you. And it put it in the notes app and you're like, why didn't you just go into Spotify and make like, this doesn't make any sense.
+
+But then to your point, it's like you can't give a control to start making actions on your phone until it's 99% correct.
+
+[00:31:21] Alex: Exactly there. There's actions and there's just even just the replies, right? The Siri integration with chat, GPT, which is comical in itself because yesterday I asked it to remind me about something and it a, it asked me, would you like me to ask GP chat GPT about that? I was like, this is, it's, it's, it's getting, it's getting ridiculous and people are, are starting to see the cracks. but it is just, they're so scared that even when they send you to chat GPT, it's like you have to sign another kind of terms of service agreement. You know, we are now sending you to chat GPT. This is no longer Apple. Please do not blame us for anything that happens and all of these restrictions, all of that perfectionism, all of that polished, The, the expression of being so polished and put together their, their attention to the words being spoken by their interface is proving to be, I think, nearly like an insurmountable problem because the technology cannot allow for these fail saves. Uh, at the moment.
+
+
+[00:32:20] DOJ vs Google Ad-Tech
+---
+
+[00:32:20] Brian: I, I want to just, what did I say? Put a pin in that you, you can actually go get a drink or something, Alex. 'cause we're gonna talk about Ad Tech for a couple minutes.
+
+[00:32:27] Alex: Oh yeah. I might,
+
+I might, I might get something, uh, like a stiff drink, like at 11 in the morning. Yeah.
+
+[00:32:34] Brian: I, I wanna just touch on, on the, the DOJ versus Google, ad tech and Lio that's been with us for it's seemingly forever. I mean, between that and, and the farce, that was the third party deprecation. Like it went on for like seven years. I think people wrote thousands of articles about it. a bunch of companies scrambled entire teams, people changed their entire roadmap and nothing ever happened.
+
+It was perfect, just chef's gifts. Perfect. So ab how is this going to, turn out? I always think, you know, typically when the DOJ gets involved with technology. It's, it's always a daylight short. It's always fighting the last like
+
+[00:33:15] AB: Mm-hmm.
+
+[00:33:15] Brian: we saw this with Microsoft. It was trying to, you know, loosen Microsoft stranglehold that was already being prized away from it by the market. This seems kind of similar in that, you know, Google's ad tech assets are less strategic to it than it it has been before. but it seems like they're gonna try to at least give a show of, of holding on to, to them and having like a remedy that is more behavioral than structural, though, based on what the judge says, I'm not a lawyer, of course. it doesn't seem like that's gonna do it for the judge at least.
+
+[00:33:52] AB: I think there's probably, and this is like a, a diplomatic way of saying it, but it feels like there could be a win-win here where there's certain.
+
+market
+
+opening, things that the court can do to allow a little bit more competition in here, to where Google has to break up certain parts of the value chain, which may not require them spinning off an asset.
+
+but more so just allowing other people to play in this sandbox. I think Google will always figure out the next way to make money, and so maybe it, it will allow businesses to be created or other people that are playing in the space to get a little bit better. but I don't think this is not the end of the world, for Google.
+
+They'll figure out a way around it and it should allow for more competition in the space and maybe drive better efficiency in ad dollars. But I feel like to your point, you're getting here a little bit too late and the way that money will be made.
+
+in the
+
+In the internet or on the internet over the next five to 10 years is changing pretty rapidly.
+
+And so this, they may be kind of too late to the party. And so sure, they'll make structural changes that will allow some competition to come in, maybe some new companies to be graded. but I, I feel like they're kind of missing the boat on, on the future here.
+
+[00:35:01] Brian: And most people don't really, I, it's like the action has moved on from open web programmatic at the end of the day. and like I understand they've stitched together everything because they control YouTube inventory and there's a lot of, of levers that they use to exert their control over this ecosystem, and they do control it.
+
+And, you know, I think pro, you know, remedying that is going to be complicated. But at the same time, when you look at where the entire ad market is gone and, and where it's going, it's not towards this, you know, I mean, it's, it's, it's, it's Zuckerberg's vision that he laid out with Ben Thompson. You know, he wants to take over all of it. They want to take it over all of it. No ad agencies. Not no ad agencies, but like they wanna automate everything and use AI just to be a customer vending machine. And, you know, advertising, feel like everyone in technology has looked at advertising and been like, wow, what a mess.
+
+This is an engineering problem that should be solved. And gonna keep trying to solve this with engineering and to basically eliminate all of the different layers that exists in between a company looking for distribution. You know? And I think that, that to me is like the inevitability
+
+[00:36:24] AB: Yeah, I mean the, the, the part of the business that they're saying they may need to sell is the exchange part. And the valuable part that Google has is the consumer attention. So even if they get rid of the exchange share, they're gonna lose a little bit of margin, but it's not going to disrupt their business.
+
+[00:36:41] Alex: At a macro level, don't we feel that? Because there's a lot of, there's a lot of activity happening around, you know, meta and Google and Apple. you guys feel that this, some of this stuff might be the best thing that could happen to these companies. You know, like if, if, if Apple stops receiving those 30 billions of a year from Google for some reason, then it'll push it into a brand new business might kind of force it to change.
+
+Like it feels like pruning a garden a little bit. All of these companies are going to be better off if that happens. You know,
+
+[00:37:12] AB: That.
+
+[00:37:13] Alex: like, medi losing some of the companies that acquired right. And start maybe innovating inside it. I, it's definitely great for the ecosystem, but I actually think it's good for these companies the end of the day.
+
+[00:37:24] Brian: I think long term it could be.
+
+
+[00:37:26] AI & Mental-Health Risks
+---
+
+[00:37:30] Brian: By the way, on that note, it was interesting. Did you see Kevin Strom? He talked about, his belief. lot of these AI chatbots are falling into the same trap that defined, the mess that was Web 2.0 and all the social internet in that they're just optimizing to engagement and they're constantly just trying to like keep you hooked. every time you, you get an answer, they're trying to push you to go like deeper and more and more and more. And I've definitely noticed that. I mean, people have pointed out and I think they rolled back a little bit, you know, 4.0 is a complete suck up. I mean, all of these AI agents are, are suck up.
+
+It's really difficult to put in anything in there. And for it to say that's a terrible idea, it's
+
+[00:38:08] Alex: Mm-hmm.
+
+[00:38:08] Brian: I tell it is like brilliant. But it's like great point. You know, it's like I could put the most wild stuff in there and they're like, that's a great point, man.
+
+[00:38:18] Alex: I think you can prompt it to become a little bit more critical, but its default state isn't like that. And I mean, I think it's also why, you know, wasn't there an article that was written about the fact that, you know, there's mental health risks, with ai, right?
+
+[00:38:32] Brian: the inevitable part of the s the, the cycle that I wanna get into. I mean, the moral panic is part of, of the, it should be a part, of the Gartner hype cycle, right? Like, you reach, you reach a moral panic phase. It's like when, when sat snapchat started to like get popular. It's like, it's for nudes, disappearing nudes.
+
+And like, know, we somehow got around that, that moral panic it seems like, or just accepted that. and, you know, New York Post is documenting Chachi PT induced psychosis. There's a lot of pearl clutching articles. I think there was one in New York, basically about the wanton cheating that basically students aren't learning anything, they're just doing everything through chat, GPT, there's a recent MIT study that found that conversational LLMs triple, the formation of false memories, and simulated witness interviews. I know just from my own like anecdotal experience with it, I do feel, I, I do think it's pretty, I do think that there's, there's a tremendous risk that these kinds of technologies obviously drive people further into themselves and particularly just reinforce sort of kind of nutty idea that people have or just encourage them to obsessive about things.
+
+And we saw, the other week we, we had cited how the big, I think that the, the fastest growing use case for a lot of these AI chatbots is kind of like therapy. And we live in like a sort of like therapy age and, We saw how connecting the world could go wrong. So I think that there are a lot of risks here, but I'm also mindful of the fact that the moral panic is, is part of the process.
+
+[00:40:18] AB: There's a, there's a good book on the evolution of YouTube, which talks about how the engineers
+
+were
+
+were focused on certain KPIs, which would then make the algorithm do really weird things, like showing kids bad, bad content. 'cause they were just optimizing to total view time. And so you can see how that can easily spiral outta control with AI and the responses it's giving.
+
+'cause you could change the models. To make them, even like you said Alex, you could tell it to be more critical, but over the long term, continue to basically say you're the best person and your ideas are so great. Which would then lead to your point, Ryan, where it's reinforcing bad ideas. and it's interesting to read these, these articles because for me the way that I use it is it's not like I, I got on Twitter or X yesterday and I hadn't been on it in like a week or two.
+
+And before you get like sucked in and tricked into reading it, you're kinda like, this sucks. It's like going on and off of nicotine. Like you're like, why am I doing this? Then you do it. And, and so I feel like for me, at least right now, the, the chat GBT experience is, is not that 'cause it's purely a utility, but you could see as it continues to touch more and more consumers.
+
+And then the other thing I would say is like,
+
+the way that Zuckerberg is talking about including these personas in the different apps is that's, that's where it's probably gonna get the most addictive and weird is when it's a part of your feed. And if you don't have real friends and you want to talk to somebody that will respond and respond in a unique way, you're gonna start just talking to the technology.
+
+[00:41:51] Alex: having dealt a lot of folks that, are the ones who choose the incentives. Because you know, the incentives, for people building those tools become the in incentive of the tool, right? Like, so what happens is you have a bunch of product managers in an organization and you, you know, you want to generate X amount of growth and you slice that percentage up and you give each one like, Hey, your target is to grow engagement or retention by 0.5%. And, you know, you, you start, you start running a bunch of experiments and the ones that kind of show a green number and the spreadsheets are the one that stay. And then a few weeks down the line, you're noticing that the AI is flirting with people because it makes it harder to cancel the subscription.
+
+Right. And I, I'm trying not to be hyperbolic and I'm trying not to get my kind of distrust of Zuckerberg as a, as a, as a, as a person to get into this. But Inot optimistic about. this and how it will rewire our brain. I mean, we're already seeing social media rewire all of our brains.
+
+Right. Brian here is completely addicted to X, right? I mean, I think
+
+[00:43:01] Brian: drool if I haven't been like
+
+[00:43:03] Alex: Yeah, exactly. I think it's, it's his vaping. and I find myself, you know, already like just reprogrammed by this stuff. And when you're looking at the. ability for,bots to interface with us in a much more human way is going to make us really confused.
+
+[00:43:21] Brian: And I think it's going to impact kids in unforeseen ways. And so when, you know, Zuckerberg is saying that he was surprised to hear that people have three friends, I think the data he was quoting was, you know, three to five close friends, which sounds much healthier, right? Because I think people have a lot of acquaintances with few close friends, and then he wants to start replacing those with potential AI friends that are going to be sycophantic, that are going to kind of let you, kind of like, you know, dwell in your delusions. you're not, you know, he's kind of, he's kind of coming in and, you know, it's like Marlborough selling vape sticks, right? Just saying like, look, we, I know we caused this problem, but we're gonna make it worse. I mean, look,
+
+[00:44:02] Alex: yeah.
+
+[00:44:03] Brian: that, that is, that is, that is the condition of capitalism, right? I mean, Philip Morris, God bless 'em. I remember the year they were in Cannes with a giant like advertisement and how they were gonna boldly lead us into a smokeless future. They're like, it's time to end. It's time to end.
+
+They
+
+[00:44:20] Alex: Yeah,
+
+[00:44:21] Brian: saying
+
+[00:44:21] AB: Hm.
+
+[00:44:22] Brian: time to end all of the smoking.
+
+[00:44:23] Alex: it is like, it's like BP rebranding itself with a green flower. no, I, I think I, but I think the scale of this stuff and its impact on the human psyche is, is different, I think, to chemical addiction. And we, we don't know. We don't know where it's heading. I, I don't even know. I was actually, I mean, ask yourself this question.
+
+Does your interfacing with chat GPT, like, has it changed you? Do you feel smarter than you actually are? Are you gonna, you because it must, right? I mean, we're just like flesh bags with neurons, you know? I dunno.
+
+[00:44:55] AB: I mean, I, to your point on, it's different than a chemical addiction. I think the personalization of ai, and it kind of, it could lead to like a, a fun and also cruel Black Mirror episode, but you could see the future where you get so addicted to one of these AI bots, it condenses you to leave your wife, send it all your money.
+
+You know, there's, I think that's the unique thing of AI versus a chemical addiction is that it actually can start to tell you and prompt you to do things that you may not have wanted to do and lead down like a really kind of crazy path. Because the people that are committing crimes on the internet today, why wouldn't they turn on a bot to do that and get some guy to send them all their money?
+
+So it's, it is scary.
+
+[00:45:40] Alex: it starts, it starts. I actually think that part of the inception of this is when you start saying, oh, how do we sell advertising on ai? And then you go, well, what is advertising? Well, advertising is influence. Well, how do you influence people? Well, you try a bunch of experiments and look at that. You know, we made him sad, so he bought a bunch of ice cream. You know, that, that, I mean, I'm, I'm simplifying it, but that you can plot a pretty direct line to that. But we're, we're in, we're in the kind of speculative realm right now. Just be careful, everyone. Be careful out there. Yeah.
+
+[00:46:11] Brian: And look, we, we've seen how these, these incentives have led to, lot of kind of gross behavior. I mean, stuff is, is continuing to come out about some of the, the targeting that that was done, you know, at Instagram and, you know, basically like preyed on, on, on young women particular who, who had, know, body image issues. They, they, I don't mean to laugh at it, but
+
+[00:46:36] Alex: Yeah.
+
+[00:46:37] Brian: they then put them in the beauty and tender bucket. They're like, oh, these per, these are, these are perfect, perfect young people to, to sell these beauty products too,
+
+[00:46:44] Alex: I've talked to some of these people. I've hired some of these people that worked on some of these products, and they can have, they have a really good reason to say, look, we, we didn't even know that was happening. All we saw was some metric changing, But turns out hey, you were advertising things specifically to people because the signals that they were sending, that they were about to break up with someone, you know, but they don't even know.
+
+And I think with ai, the layers of abstraction between the action that happens to the user and the decisions that you make as a developer, there's even more of them now, right? It used to be that you build a thing, and that's the thing. You put it in front of people and then algorithms kind of like separated you from that a little bit.
+
+And now LLMs, most people, most people at OpenAI don't really know how it works, you know?
+
+[00:47:31] Brian: reassuring.
+
+[00:47:33] Alex: You know, so.
+
+[00:47:34] Brian: wanna talk a little bit about like, old line media. We're in a golden age of like memoirs about the Golden Age of Media. I don't know if this is part, did this happen at the end of the Roman Empire? I don't know. I have to read up on that.
+
+[00:47:45] AB: I don't think they live long enough to capture the value.
+
+[00:47:48] Brian: no.Barry Diller is, is coming out with, his new memoir.
+
+He, it was, was excerpted in New York magazine. and really it hung on, on, you know, the story of his five decades with, his wife Diane von Furstenberg. it also included, you know, that, that is, is bisexual, and that is, know, it's not exactly, I don't know, it wasn't exactly like a giant, like secret or something like this, but like he, he wrote a very, a very nice piece in, in New York Magazine, and it reminded me a couple things.
+
+One is at Narrative Control. this was not like some sort of spur of the moment thing. I mean, he's, he's 84, and two New York Magazine. Let's give New York Magazine credit. I, I saw, Pam Wasserstein she, she ran New York and, and sold it to, to Vox. And I told her, I was like, wow, you guys have done like a really good job, here because it regularly comes up with really fascinating articles.
+
+They've got, they've got, they've got one out this week about, like the, the, the West Village girlies. And they regularly hit on these things and I think it is impressive that they have, as I said, I said, you've kept any harvesting of only the classiest type, which that you found very funny, I think. but that, you know, they've sort of stuck to what made it a very unique brand. And yeah, it's completely different now than, than maybe it was in Heyday, but like it is still incredibly culturally relevant, I think.
+
+[00:49:20] AB: Yeah, I I think they've done a good job and they, you know, even with the Cut, which is more like a, a product review site, they actually have like a fun AI tool that they've implemented, which is, it helps you find, it's like a gift guide and you can just type in, Hey, I'm trying to buy, I.
+
+my dad He doesn't like me to buy him anything, something for Christmas and spend this amount of money.
+
+So they've continued to innovate and obviously, like he said, they have articles and content that, can grab headlines and get people talking. It's still a very small business, you know, that's the, the,
+
+[00:49:51] Brian: know, Tim, you don't have to do the, but okay. We were, we were going on a nice thing about media for a minute.
+
+[00:49:56] AB: yeah.
+
+[00:49:57] Alex: Yeah, I think it should just be, we should just have an asterisk that whenever we talk about a media success story, we say, well, it's pretty small.
+
+[00:50:04] Brian: I know. Like,
+
+[00:50:05] Alex: It's,
+
+[00:50:05] Brian: why are
+
+[00:50:06] Alex: but it, you know, it is. It is YouTube's catering budget.
+
+[00:50:10] Brian: Like, why are we gonna do that? Like, it's fine. It's
+
+[00:50:12] AB: What did, so what did Pam say when you complimented her? What did she say?
+
+[00:50:15] Brian: She just laughed. She was like, thank you. This is like great,
+
+[00:50:19] AB: She's happy to probably still have a job. Yeah.
+
+[00:50:21] Alex: thank you, but it's still a small business.
+
+[00:50:24] Brian: I mean, you know, I always ask people, it's, I'm like, what do you like, you know, you get the same like you give, the same questions you get, like, people are like, what are you finding interesting. You know, like, and it's funny that a lot of people don't have, they don't have ready-made answers, right?
+
+Like, you know, they'll fall back, they'll be like, punch ball. Like, you know, like there aren't a lot of ambitious media companies that started out there. I didn't get to, this is like being back in New York. There's so many social events here. and there was one for Dynamo, Nick Carlson, who, who was the, editor in chief at Business Insider. And I have a podcast coming out with, with Nick, I think, next week on Tuesday. and you know, that's a pretty ambitious, you know, for now,for these days. That's a pretty ambitious, project that he has going on. You know, he's, he's creating, they're creating basically. A YouTube network of kind of high-end ish, like explainer videos about, around how business like explains the world.
+
+it's, it's a very risky, proposition. I mean, to be entering YouTube on 2025, it's not like YouTube is, is lacking a lot of, a lot of content. They're gonna, they're gonna focus on YouTube in addition to LinkedIn. My favorite, and everyone's
+
+[00:51:36] Alex: you know, like YouTube, YouTube remains like a pretty safe bet. Like it's, it's a because as their, their, their audience is growing and their algorithm does get you access to an audience, and, and it's, and it's slow. It can be slow at first, but it's, you know, the discovery engine and stuff like that. So I don't think you can be too late for YouTube.
+
+I recommend everybody move to YouTube. It has been, it is, it has been the, I think it's actually probably the most stable platform to invest in right now in media. 
+
+[00:52:06] Brian: I 
+
+[00:52:07] Alex: Yeah.
+
+[00:52:08] Brian: I mean, it
+
+[00:52:08] Alex: Uh,
+
+[00:52:09] Brian: right? I mean, that's why SEO was the foundational, the foundation of about every publishing
+
+[00:52:16] Alex: yeah. And I think, I think even if it gets split out of U YouTube, that won't change. I, I, to me, and I know there has been some controversy with creators feeling slighted and algorithm changes, YouTube has been the most reliable, the most incentive matched platform for media in a decade, hasn't it? Like we've seen everything come and go.
+
+We've even seen Substack in its short life, you know, do stuff that kind of gets, people that have newsletters to freak out a little bit. We've seen, social media networks changed their interest towards something else, but YouTube has become, you've invested in YouTube 10 years ago, you're still on YouTube. You, you're not trying to move your audience to TikTok or anywhere else. And I think it's going to remain like that.
+
+[00:52:59] Brian: I think AB and I have have like talked about this like, you know, it seems like the formula for a lot of like successful. Media businesses, maybe they're not the biggest, right? Is to establish yourself on YouTube and then to find your, shoulder business that has better economics so you can,
+
+[00:53:16] Alex: That you really own. That you own. Yeah.
+
+[00:53:18] Brian: good golf and like, you know, the, the economics behind a business like that.
+
+And that's what I was saying to Pam. I'm like, the kinds of businesses that I think are most interesting in media are like, you know, these kinds of businesses that are highly profitable and that are focused on a, a high value area and are frankly not dependent on advertising and traffic in quotes, like the, the previous generation.
+
+Like, I just don't, I don't see anyone for good reason trying to build the next version of Vox Media. Nobody is, and I think that that's a bad idea to do that.
+
+[00:53:57] AB: Yeah, 
+
+[00:53:57] Brian: Yeah,
+
+[00:53:58] Alex: trying to build the next version of Vox Media? no, I think they're kind of deconstructing themselves. 
+
+I'm mourning as a, as a person in the video game industry, I, I'm, I'm mourning Polygon po. Like a lot of those people at Polygon are people I have very, a lot of affection for, and they, they were done wrong. Yeah.
+
+
+[00:54:15] Valnet “Sweatshop” Roll-up
+---
+
+[00:54:15] Brian: well, ab, do you want to go through. We didn't get into the sorted. Eh, it's not sorted. It's just a different industry. It's a contiguous industry. you know, I think it's kind of telling a little bit like Vox Media Marquee, you know, it was supposed to be the Conde Nast really of, of the internet era. You know, they sold one Polygon, their video game asset. I think it's better to call it an asset at this point with where it's going to, to val net. which is a, a holding company that probably a lot of people have not heard of. but these are the new acquirers of these, these digital media assets. Do you wanna explain the
+
+[00:54:56] AB: Sure. Yeah. And I know on your show we didn't talk about. Their unique past. We can maybe get into it a little bit today 'cause everyone can find it on Google, but yeah. The, the founders of of Valmet Canadian, uh, based firm,I think started or were around some of the more prolific, pornography websites that exist today.
+
+And so they sold those, I think it,
+
+[00:55:19] Brian: Is, is the, is the go-to,
+
+[00:55:21] AB: yeah. And so
+
+[00:55:23] Brian: other people's. 
+
+[00:55:24] AB: your go-to and so, they sold those. But what's really interesting, and, and actually not no one talks about, but they actually owned like a kid's brand too. Uh, YouTube channel that they sold. This was, sequential, so they didn't own those. At the same time, they've now gotten into a combination of, content rollup, and then they have the thing called Val t, which is more on the software side.
+
+And so I think they're, they're doing a good job. I mean, the, the reason why people like Val Net and Static Media, I. Are doing okay is when they started to get these assets, their entry points were on an adjusted basis. After people's perception of the future of the internet had changed to where everyone wasn't investing behind new content creation, but they realized that they needed to be more in a harvest mode.
+
+so a val, that operator is gonna look at a business and strip out a lot of the costs. So I'm sure Vox had this pretty well staffed. so they'll probably rip out. Most of the full-time people have freelancers. They'll have some full-time people to run like basic editorial ops, but everyone else will be a contractor.
+
+[00:56:28] Alex: they let go like the vast majority of that, of that. And a lot of those folks were kind of founders on Polygon, you know, 'cause I know them well. But, um, they're all gone.
+
+[00:56:39] Brian: they're involved in a lawsuit with, with the rap over calling rap, calling Valette a, a digital sweatshop,
+
+[00:56:45] Alex: I was going to say this, this,
+
+[00:56:47] Brian: digital sweatshop.
+
+[00:56:48] AB: Oh yeah. It's sweat shop. Yeah.
+
+[00:56:49] Brian: to sell an ad deal
+
+[00:56:50] AB: Yeah.
+
+[00:56:51] Alex: was going to add if, if you qualify them as SEO Glue factory, Brian, that's your term.
+
+[00:56:56] Brian: I don't know. I don't know if that creates liability. They,
+
+[00:56:58] Alex: No, we don't know.
+
+[00:56:59] Brian: to be rather litigious, so
+
+don't come after me about that.
+
+[00:57:03] AB: Yeah, I don't think it's, I mean, the good thing the sweat shop implies that someone's like forced to work there, but most of these freelancers can do other things. They're picking up the jobs I. and there's like a cost per article and a cost per, per word, and it is what it is. So it's, it's definitely, uh, not a good time to be a writer.
+
+but you've seen with some of these more
+
+[00:57:22] Brian: have performance-based pay too.
+
+[00:57:24] AB: and
+
+free lunch. but I think for some of these, so in like, video games or auto, what's been nice for some of these creators is they've been able to go out on their own and, stand up new content because things like Substack make it so much easier. So I think if you're just like a general news writer and you're local newspaper lays you off, you're kind of stuck.
+
+I think folks that, I'm sure a lot of the writers on Polygon have large followings on X and, and other platforms, discord, deda, and so they can use that to basically restart, what they were doing, maybe combined with a couple of other riders. But. To me, I'm not as worried about them as like just a general news writer.
+
+And you've seen this, like I said, in the car space. people that were at the recurrent ventures, the drive and donut media have like left and some of them left the donut YouTube channel and already have a couple million followers on their own. So there is ways to move the audience to your homegrown content and probably make the same or a little bit more money than you had before.
+
+[00:58:28] Alex: Yeah, there, there was an interesting thing that happened. one of the,big, video game magazines,was shut down, right? it was, it was acquired by, by GameStop and was shut down and a lot of these folks kind of went solo and started doing solo project and they since have reacquired it, so Game Informer relaunched with the original crew that was hired by them, but they just, you know, gathered the funds and managed to relaunch the site, which was like an interesting thing to happen in the game space.
+
+The game industry for, for its scale is a very bad place to run a media business in. know, except if you're a streamer, 
+
+[00:59:05] AB: Yeah, it was.
+
+[00:59:06] Brian: that, that, that, that's the media business that
+
+[00:59:08] Alex: oh, the, Yeah.
+
+[00:59:10] Brian: know, I, I don't think, I don't think that there's a me like, tell me if I'm wrong, but like, putting words on web pages and putting ads around them about video games doesn't seem like the best, way to
+
+[00:59:21] Alex: I mean, I think there's probably a room for a couple. I think, Jeff Keeley's, you know, game awards is, is doing, is doing well. And I think, you know, IGN is is kind of the big player here and, and does pretty well. I was surprised to hear that Polygon was getting 25 million uniques a month. I don't know if that's good or bad, but that seemed to be, you know, reasonable. And, and gaming is not seasonal. There's, I mean, somewhat seasonal, but there's, there should be always releases and, and advertising and stuff like that.
+
+[00:59:50] Brian: they're
+
+[00:59:50] AB: I,
+
+[00:59:50] Brian: 25 million a, a month, but like how much They're just, you just publish like game reviews. It's the same as like, you know, game of Thrones recaps, like, I
+
+[00:59:58] AB: I th
+
+[00:59:58] Brian: these are SEO.
+
+[01:00:00] AB: so I, I, I talked to the GameStop people about an idea because this is like a perfect play, with retail media, and they sh this is what they should have done. cause my advice was always right, but, uh, they ha basically what happened with Game Informer is it used to be a magazine, I think that would go out like six times a month.
+
+and it was paired with like a premium offering at GameStop. Almost like Best Buy has like the membership program based on how much money you spend it, they underinvested in it. And so they, they basically decoupled a magazine from this premium subscription. And so it started to lose money, but. The real opportunity if GameStop was to keep it.
+
+And the problem with GameStop is because it became a meme stock and they raised all this capital, is they have much different ambitions than staying as GameStop. But it would've been the perfect play to continue to build audience and sell retail media against it because you, the audience that's at GameStop is reading the magazine and you can drive them back to do additional purchases and things like that.
+
+And I, I think that's, you haven't seen this happen too much yet, but I do think smart retailers will try to own media or become partners with it to allow it to broaden their retail media networks. 'cause at, at some point you run outta space on your own site.
+
+[01:01:13] Alex: Alright. It makes perfect sense.
+
+[01:01:15] Brian: there's like the Best Buy cnet, tie up that I think a lot of people go to and hasn't been replicated. Exactly.
+
+[01:01:21] AB: Yeah. And there is a world where Best Buy probably should have, could have bought cnet, but it was probably just too big of a purchase price.
+
+[01:01:27] Brian: Well,
+
+[01:01:28] Alex: Well,
+
+[01:01:29] Brian: price keeps changing by the, the week.
+
+[01:01:33] Alex: I have a hard stop in five minutes, so
+
+[01:01:36] Brian: let's,
+
+[01:01:36] Alex: land this plane,
+
+[01:01:38] Brian: Troy sent in. I am, I am. This has been a mostly smooth ish
+
+[01:01:42] Alex: I think it's gone really well.
+
+[01:01:43] Brian: Troy hasn't been here. Uh, anyway,
+
+[01:01:46] Alex: Well, you know, you know, like, AB and I have been missing each other like ships in the night. I think. I don't, I think, uh, I 
+
+think 
+
+[01:01:52] AB: our first time on together. Yeah.
+
+[01:01:53] Alex: Yeah. So people probably thought we might be the same person except AB knows what he's talking about.
+
+[01:01:58] Brian: Okay. You
+
+
+[01:01:59] Mogul Memoirs & Reputation
+---
+
+[01:01:59] AB: Can we, we, I have one topic that I think is kind of interesting, and it goes back to the point we didn't really get into it, which is the Barry Diller, biography, which is some of these people that existed in like the Janis Men's of the world and the Tina Brown, like, who were hyper relevant 20 years ago and are still relevant today.
+
+Like they can get into these new platforms and still do a really good job.
+
+[01:02:20] Brian: that's true.
+
+[01:02:21] AB: Like I've been, I read the Tina Brown Substack and like, obviously
+
+Keith McNally is a restaurateur, but I think he like took the opportunity when, Tina went over to his apartment to kind of lean into the moment and post like they were getting married or whatever.
+
+And that made me buy his biography. Right. So like they know how to manipulate.
+
+[01:02:41] Brian: age. That's another golden age. I mean, it's like media. It's like, it's all like mixed in a memoir that's coming out. Keith McNally, he's very good at Instagram captions, I'll tell
+
+[01:02:51] AB: Yeah. And so it's like these people that know how to manipulate or not manipulate in the negative way, but basically
+
+Create a
+
+a narrative and create like a new cycle. They can continue to do it even in these new mediums.
+
+[01:03:03] Brian: Yeah. I mean, if you're talented at it, you're
+
+[01:03:04] Alex: More than ever. More than 
+
+[01:03:06] AB: Yeah. 
+
+[01:03:06] Alex: Yeah.
+
+[01:03:07] Brian: all right, let's do, let's do a very quick good product. 
+
+
+[01:03:09] Good Product
+---
+
+​
+
+[01:03:12] Brian: Troy had sent it in, from wherever the heck Troy is. it's Trump watches. I don't know if you guys saw this or have one ab do you have a Trump watch?
+
+[01:03:21] AB: Uh, no. I'm sure he gets given a lot of Rolexes, so it's, I don't know. Where do all presidents keep their gifts? I guess they're libraries. I.
+
+[01:03:30] Brian: a hundred thousand dollars tour beyond, I don't even know what that is. And a four, it's $499. mass market variance. you know, Trump keeps monetizing. I I don't know if there's any sort of takeaways from this that, you know, point to the future of media with, with how, Trump is, is monetizing, I guess.
+
+[01:03:51] Alex: I think he mo he, but he does monetize. He did, he did.
+
+[01:03:56] Brian: I don't know, watches.
+
+[01:03:57] Alex: I don't think they are, but it's, I wonder what they're made actually, and if they're gonna be hit by tariffs. But, Trump's funny because he, except for the crypto coin, right? And, and obviously there was, there were people that are kind of pushing him in, in that direction.
+
+He seems to monetize in things he's comfortable with. you know, he's, he is, he's still stuck in, in the eighties a little bit, so it's gonna be watches and perfumes and things like that. Right.
+
+[01:04:23] Brian: Well,
+
+[01:04:23] Alex: don't think Trump's gonna do a substack.
+
+[01:04:25] Brian: you run in watch circles, don't you?
+
+[01:04:28] AB: I mean, we've bid on ky, I help someone try to buy ky. I, I, I have a,
+
+[01:04:34] Brian: big watches.
+
+[01:04:35] AB: I have a friend that's in a bunch of those, mark Andreessen WhatsApp groups, and he said, you know, I, I'm surprised at how much these wealthy people talk about their watches. So to me, I get made fun of for the watches I wear, but I don't know.
+
+It's not, it's not that interesting. Exactly. Cassie. I can't, that's like a, that's like revealing too much. So I'll give you my good product for the week.
+
+[01:04:57] Brian: Go ahead. 
+
+[01:04:58] AB: So I think
+
+one interesting thing with this with AI is like voice, has it been completely figured out in terms of the transcription layer? Right? So like, sometimes the quickest way to get.
+
+Yes, typing is great, but to get chat bee to, to do something as I like to just do it in a transcript mode. And so I got this new app called Aqua Voice, which seems to do a better job of quickly transcribing your voice. It's like helped
+
+in in different,
+
+different, apps and things like that go much quicker,
+
+[01:05:25] Brian: Okay.
+
+[01:05:25] AB: but I've been trying a, yeah, I've been trying a bunch of these,
+
+[01:05:28] Brian: my meetings and, and
+
+[01:05:30] AB: No.
+
+[01:05:31] Alex: well, if you want, if you want, if you want that for your meetings, just I'll, I'll, I'll tag that on. Aqua Voice is interesting because it, it actually runs on your Mac as well, right? It's like a 
+
+[01:05:40] AB: Mm-hmm. 
+
+[01:05:41] Alex: I find chat GPTs. Decent. But yeah, you're right. There's, there's room, room to get better. it, it, the, the best meeting transcription app is by far right now, granola. And, it doesn't show up on your meeting like an additional agent. It doesn't store the transcript, it just writes it down and then creates a little bot where you can query the meeting. So granola is great for, for meeting. I've been using, chat GPTs, like conversational voice AI on my phone, and I, I find that, you know, between that and the chat GPT app that I can summon with like a keyboard shortcut on my desktop. I'm pretty quick, but on my phone I just talk to it, you know.
+
+[01:06:18] AB: it is a prediction. I bet in six months there'll be a fun business insider article about how granola has been loaded on all. 80% of venture capitalist computers and the fact that Saudi Arabia or China hacked in, because the way, basically what the app is giving you, you're giving it
+
+access to
+
+to your sound card.
+
+[01:06:37] Alex: Yeah. 
+
+[01:06:38] AB: There's
+
+the granola team is great, but there's not too many people on that team with any InfoSec experience. And so from what I've heard and people who've looked at the technologies, there's a, is a, there's a big worry that you're basically letting an app record every conversation and everything you're doing and there's no security.
+
+So.
+
+[01:06:57] Alex: That's a good call out. That's why we have AB on the show. Well, good thing I only talk about stupid video game shit, like
+
+I'm not gonna use it.
+
+[01:07:05] Brian: OPSEC with granola. I don't
+
+[01:07:07] Alex: Yeah. All.
+
+I, I hear, I hear about granola all the time and I suspect it's like notion. Like there's, I feel like there's gonna be granola people and then there's notion people.Yeah,
+
+[01:07:18] Brian: interested in
+
+[01:07:19] Alex: we, we just found out that Grau,
+
+[01:07:21] Brian: a granola con, I will go.
+
+[01:07:22] Alex: we just found out that Notion had been charging us for its AI tool. Even though we, we, we, we turned our account off for like six months. We've just been paying for AI we never used on, I don't know. That's just me being angry at Notion right now. 
+
+
+[01:07:38] Outro
+---
+
+That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+[01:08:00] Troy: It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:08:12] Alex: Alright, folks, I'm gonna go, thanks for that.
+
+[01:08:15] Brian: All right. Thank you. 
+
+[01:08:16] AB: Bye
+
+
+

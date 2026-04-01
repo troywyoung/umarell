@@ -1,0 +1,8947 @@
+PVA S2E51
+===
+
+
+[00:00:00] Cold open
+---
+
+[00:00:00] Brian: Wait, you were late because you were on a webinar about a USB plug? 
+
+[00:00:04] Alex: know I always watch and live tweet the Apple events.
+
+today was... no different
+
+[00:00:09] Troy: so we 
+
+have a more powerful
+
+phone and a 
+
+USB C 
+
+plug? Is that the 
+
+whole 
+
+event? and the watches are better. 
+
+[00:00:15] Alex: at a high level, there was a lot of subtle updates. the expensive pro phones are getting some of the more interesting features. but it's mostly like material 
+
+changes.
+
+[00:00:24] Troy: the thinnest steel
+
+rail ever. 
+
+[00:00:26] Alex: What's really funny is that the biggest change is actually the USBC plug, which means that it's essentially killing off the lightning plug, which has been an Apple staple for a long time.
+
+Yeah. 
+
+[00:00:36] Troy: it's much
+
+to do 
+
+about 
+
+nothing, 
+
+right? Alex, 
+
+basically 
+
+[00:00:39] Alex: what I
+
+was trying to say is there's really big updates around their environmental stuff.
+
+they're no longer going to use leather. some of their batteries are a hundred.
+
+percent recycled cobalt.
+
+these are actually 
+
+pretty big moves for a company that scale And pretty impressive.
+
+I can see Brian rolling his eyes because anything new and interesting is eye rolling
+
+[00:00:57] Brian: they don't have anything in the pipeline if they're like talking about Leather. I
+
+[00:01:01] Alex: what's interesting about media companies in the pipelines they're just turning into service
+
+companies 
+
+webinars 
+
+[00:01:07] Brian: agree. I, I included webinars. My segue, we should do this as a webinar. I just did a webinar with, Blueconic 
+
+[00:01:13] Troy: stop it. 
+
+[00:01:14] Brian: it.
+
+was about generative AI. 
+
+[00:01:16] Alex: was 
+
+it just an hour of you rolling your eyes and,
+
+complaining
+
+about tech pros?
+
+[00:01:20] Brian: No, I don't do that. I got no 
+
+problem with that, Rose. 
+
+[00:01:23] Troy: That's 
+
+your 
+
+role,
+
+Alex.
+
+[00:01:24] Alex: Oh, is 
+
+it? 
+
+[00:01:25] Brian: 
+
+
+[00:01:25] intro
+---
+
+[00:01:48] Brian: I did a story today off a podcast, I did a podcast really, with Jason Wagenheim, who name checked Alex. I was like talking to him about like where the business is going and stuff.
+
+and he was saying how like they're doing most of these agency like deals And he called them 360 campaigns before he like mentioned it, he mentioned he was, this is going to drive Alex crazy. And he called it 360 campaigns. So you're really developing quite a persona as like the bet noir of the 
+
+digital advertising. 
+
+[00:02:15] Alex: Media companies are turning themselves into media agencies, which is the second worst business after being in a media company.
+
+[00:02:22] Brian: And so, like that was I thought was 
+
+really interesting. And Troy, you would have like, so you remember, it's funny when Bustle launched in 2013.
+
+Both you and I, because I went back and read it. We're in the New Yorker, like pre launch feature. 
+
+[00:02:37] Troy: I met the I
+
+can't remember the, 
+
+name 
+
+of the journalist. I met 
+
+her and
+
+Brian. 
+
+Yeah, I 
+
+met 
+
+Lizzie and 
+
+Brian at 
+
+my Alino, which 
+
+was the
+
+great. 
+
+Roman restaurant in 
+
+the 
+
+Gramercy Hotel
+
+And 
+
+Brian 
+
+was 
+
+kind of holding 
+
+court 
+
+and 
+
+was 
+
+delighted 
+
+that a 
+
+New Yorker reporter 
+
+was 
+
+following him around
+
+[00:02:53] Brian: she gave him the shiv though, she called him like a pudgy,overgrown six year old then in the story. And then he started working out.
+
+So it was good in the long run. 
+
+[00:03:01] Alex: That would 
+
+motivate 
+
+[00:03:01] Troy: amazing to reflect 
+
+just for a second on 
+
+how 
+
+far the media industry's come since 
+
+then,
+
+because 
+
+Brian's known for 
+
+his provocative 
+
+ways, And at the time would
+
+say that he was going 
+
+to 
+
+be the new Condé Nast or 
+
+Hearst or
+
+whatever. 
+
+you 
+
+know, 
+
+as it 
+
+turns 
+
+out, Oh, 
+
+the 
+
+other 
+
+thing he said 
+
+at the time 
+
+is that,
+
+He 
+
+would 
+
+take 
+
+down 
+
+refinery, 
+
+which seemed 
+
+inconceivable at 
+
+the time because 
+
+refinery 
+
+is a
+
+really 
+
+healthy a 
+
+hundred 
+
+million dollar business. 
+
+And it turns 
+
+out that 
+
+refinery 
+
+went to the shit 
+
+bustle is, 
+
+certainly a 
+
+much stronger company. 
+
+you know,
+
+the 
+
+magazine companies have 
+
+really 
+
+had a hard
+
+time. So, 
+
+in a 
+
+way 
+
+they 
+
+all got, 
+
+their sort of comeuppance, 
+
+but 
+
+especially 
+
+refinery and 
+
+relative to the
+
+competition, I 
+
+think that Bustle's done very well. And one of the 
+
+main 
+
+reasons is Jason. 
+
+I 
+
+mean, I think 
+
+Brian's real smart and stuff. If you, Some 
+
+people 
+
+find him 
+
+distasteful, but
+
+he's 
+
+very, 
+
+[00:03:52] Brian: very 
+
+smart. It's a great LinkedIn endorsement right there. 
+
+[00:03:55] Troy: But 
+
+Jason, 
+
+I 
+
+read 
+
+the summary to
+
+your podcast 
+
+and I 
+
+was like, 
+
+Oh 
+
+my 
+
+God, is this refreshing 
+
+Because 
+
+actually,
+
+it was 
+
+entirely 
+
+consistent with 
+
+what Jason 
+
+told me 
+
+at lunch at 
+
+the summertime. 
+
+[00:04:07] Brian: No, he was actually honest.
+
+It was a great conversation.
+
+[00:04:10] Troy: and 
+
+he 
+
+was 
+
+like, 
+
+yeah, 
+
+he was 
+
+honest 
+
+and it wasn't like media bullshit. It 
+
+was great.
+
+[00:04:14] Brian: I want more guests like that. Because there's a lot of times where I'm like, oh god. Oh, God. I know. I understand how it goes, but like, it's a flaw of the system. But I thought, one of the things that really stood out, and this is when we were texting about it, I included this in my little write up, Alex.
+
+I don't think you get my newsletter, but that's okay. and... Oh, I do.
+
+I 
+
+do. Oh, good, good, good. 
+
+yeah, copy paste it into an AI and get 
+
+it
+
+to summarize 
+
+it 
+
+for 
+
+me, 
+
+Okay. 
+
+Do you click on the webinar links? Register. We need first party data.
+
+[00:04:43] Alex: Really? I'll try. Yeah.
+
+[00:04:46] Brian: But one of the things that was interesting to me is like when you talk about a different era is How different that business is and it is agency like to me. I don't know how you would describe it. If you can talk about studio models and stuff like this, but you know, it's something like the nylon house at Coachella, the nylon house at Art Basel and getting the influencers and the DJ and the party.
+
+And it's like, wait, this is a different business. And is this the path for a lot of lifestyle media? Troy? 
+
+[00:05:15] Troy: I suppose 
+
+there's an inevitability 
+
+to 
+
+it. If 
+
+you 
+
+can't 
+
+harvest your primary 
+
+media asset.
+
+which is how 
+
+media 
+
+works, right? You either 
+
+sell 
+
+access to it, or you,
+
+parcel 
+
+it 
+
+out on a 
+
+CPM basis. 
+
+Then 
+
+you 
+
+have 
+
+to 
+
+use 
+
+your 
+
+other assets, which are your brand and 
+
+your 
+
+ability to 
+
+wrangle
+
+talent 
+
+and to. 
+
+create 
+
+content 
+
+as, as 
+
+how 
+
+you 
+
+create value
+
+and 
+
+it's 
+
+distributed 
+
+by 
+
+other 
+
+means. 
+
+so 
+
+you 
+
+sort of create 
+
+the vibe, 
+
+you 
+
+know, either 
+
+through an 
+
+activation of through 
+
+content or through 
+
+partnering with, 
+
+talent And 
+
+then 
+
+you distribute 
+
+it 
+
+as 
+
+Jason 
+
+pointed 
+
+out in your, 
+
+podcast, 
+
+wherever you 
+
+want to
+
+distribute 
+
+it.
+
+So you 
+
+use your 
+
+primary handles 
+
+and stuff and distribute it 
+
+in social, but 
+
+you 
+
+can 
+
+also pay to activate 
+
+it. And 
+
+what 
+
+he made the 
+
+point that he can get, 
+
+you 
+
+know, a 
+
+million eyeballs to a 
+
+piece of content 
+
+or 
+
+a hundred 
+
+million eyeballs to a piece of 
+
+content. 
+
+
+
+[00:06:03] Brian: it doesn't matter. It doesn't matter if you have the audience.
+
+I think Ozzy was the purest, maybe this guy was onto something 
+
+[00:06:10] Troy: funny. 
+
+so yeah, it it 
+
+makes 
+
+you 
+
+more 
+
+than a 
+
+services company because. 
+
+Services
+
+companies 
+
+don't have, 
+
+the media 
+
+brand to 
+
+work with 
+
+or 
+
+the, 
+
+editorial 
+
+talent 
+
+or, 
+
+you 
+
+know, 
+
+in many 
+
+cases, 
+
+the in 
+
+house 
+
+creative, 
+
+to 
+
+make a 
+
+kind of broader That's 
+
+Activation content 
+
+offering, 
+
+but 
+
+yeah, 
+
+you're 
+
+just a 
+
+fancy 
+
+agency with 
+
+similar assets.
+
+[00:06:30] Brian: and your reaction to this Alex was terrible business.
+
+[00:06:35] Troy: Well, 
+
+of course, it's
+
+not wonderful 
+
+news because the great 
+
+part of 
+
+media 
+
+is 
+
+that 
+
+you have 
+
+no 
+
+marginal 
+
+cost when you 
+
+increase 
+
+revenue, 
+
+right? 
+
+It's a 
+
+marginal 
+
+revenue 
+
+kind of
+
+thing. 
+
+And 
+
+so, 
+
+what's 
+
+always 
+
+happened 
+
+historically in 
+
+lifestyle media, magazine 
+
+media 
+
+is 
+
+that 
+
+the 
+
+number 
+
+one in a 
+
+category 
+
+always made like 
+
+multiples of
+
+what the 
+
+number two made,
+
+Because 
+
+imagine 
+
+you're a 
+
+magazine, you're, 
+
+you 
+
+know, 
+
+the 
+
+second or 
+
+third player in a category 
+
+versus 
+
+the first player, the first 
+
+player 
+
+could 
+
+basically have 
+
+a 
+
+similar expense 
+
+structure, but 
+
+way more revenue.
+
+So 
+
+you'd make way more money.
+
+you 
+
+know, 
+
+in the 
+
+services business, you make, 
+
+if 
+
+you
+
+run 
+
+it right, you 
+
+make 20 points and that's it. 
+
+You're 
+
+probably 
+
+more 
+
+likely to 
+
+make 15 points.
+
+what is 
+
+interesting 
+
+about Jason acknowledging 
+
+how tough it 
+
+is out there 
+
+and their evolution 
+
+of a company
+
+as a 
+
+company is 
+
+It's 
+
+going to be a few more
+
+years before Brian gets the 
+
+exit he wants.
+
+[00:07:24] Brian: Well, I think also the question ends up being what that exit is, because, when a lot of these companies, Bustle didn't raise as much as the other ones, but when they raised, it was the idea that they were Raising from the type of investors who had expected tech multiples and whatnot.
+
+And, obviously, look at BuzzFeed. That is not happening. Alex, your reaction to, services, because you were like, like an agency, and like, it was very, I would say dismissive. because... 
+
+[00:07:50] Troy: Well, what about 
+
+your, didn't 
+
+you tweet a photo 
+
+out 
+
+of the, 
+
+BuzzFeed 
+
+News 
+
+stand in LaGuardia 
+
+[00:07:57] Brian: I did, because like, and I put it on Instagram, because I just think it's kind of like a musing relic in some ways, and I got multiple responses that just said, LOL. it really is, to me a testament to, like, how far a lot of these brands that were poised to sort of take over the world, if you will, have fallen to the point where, it's kind of funny to see a BuzzFeed, store.
+
+I mean, I bought a water there, so I'm doing my part.
+
+Nice one.
+
+Nice I did. It was, it was fine. it was just water. So, whatever. but Alex, you had, you had said services businesses are tough. You've been involved in services business, and look, it's better than being dead. I mean, it's a pathway, I put it in my newsletter, like in a storm, every port, whatever.
+
+[00:08:40] Alex: Yeah. 
+
+[00:08:41] Brian: but give me your background on this and why. This is not like an exciting path, if a necessary one. 
+
+[00:08:47] Alex: Well,
+
+I'm going to go out on a limb here and say 
+
+that 
+
+the people who put money into these businesses are probably not stoked that they're turning 
+
+themselves 
+
+into 
+
+services 
+
+businesses,
+
+because 
+
+the services 
+
+businesses,
+
+You know, it's hard. It's very, labor intensive, in a labor market, that's,
+
+already 
+
+pretty tough. 
+
+it doesn't
+
+scale very well. at least beyond a point, 
+
+it's hard to optimize a lot of the things that you do because you constantly have 
+
+to, 
+
+improve the product you're making, 
+
+and on top of that, and you're making that product for clients. So you're not really building a ton of your own equity.
+
+Youa lot of the stuff that you do 
+
+as a services business, you give away at the 
+
+end of 
+
+it. 
+
+and then you get, 
+
+cash in return. So 
+
+it's really like just like an effort for cash business 
+
+thing that at least 
+
+you know 
+
+that technology 
+
+and and media companies are meant to 
+
+bring is 
+
+this
+
+these 
+
+margins that are 
+
+created 
+
+by 
+
+leveraging IP, leveraging technology, both of which scale 
+
+really 
+
+well.
+
+But 
+
+just saying like, yeah, we'll make more events. 
+
+and we'll hire more 
+
+people. 
+
+It's not a great business, and, ask that. Of anyone 
+
+that's 
+
+working
+
+in 
+
+an advertising
+
+agency or as a 
+
+consultant, 
+
+you 
+
+know,
+
+it's 
+
+not a
+
+great
+
+business
+
+at 
+
+all 
+
+[00:09:54] Brian: Yeah, I can remember there was this strange period of time in I think it was about 2013 or so, like Google hired like a guy from Y& R and a couple other people and people were like, Oh, Google wants to take over the advertising agency business.
+
+And I was like talking with an ad agency executive. He's like, they want this business. They can have it. I'll take theirs. Like, have it, go ahead. and look, there's, there's tons of agency businesses out there, but the, the dynamics of them are. Are far different. 
+
+[00:10:23] Alex: I 
+
+also think it's a distraction 
+
+right 
+
+like 
+
+I'm facing this a little bit, i'm trying 
+
+to build
+
+our own products, 
+
+I 
+
+can
+
+thankfully
+
+get 
+
+Jobs as a consultant while we're building some of our products, but it's 
+
+very 
+
+easy 
+
+to kind of 
+
+Get 
+
+sucked 
+
+into
+
+that, 
+
+that type of a 
+
+world and it takes 
+
+over your time and then you're not 
+
+building your own equity into your own things.
+
+And I 
+
+I think it's a 
+
+distraction, 
+
+right?
+
+So if, 
+
+if 70 percent 
+
+of your money is coming 
+
+from the services business, your services company, you're 
+
+going to stop, 
+
+you 
+
+know, you're 
+
+going to stop 
+
+putting 
+
+the 
+
+effort 
+
+and money 
+
+[00:10:50] Troy: Alex, I'm 
+
+a consultant 
+
+now, 
+
+[00:10:53] Brian: we're all in the services business here, aren't we? 
+
+Sort 
+
+of. I'm in the services business. I just did a 
+
+webinar. Me 
+
+too.
+
+[00:10:58] Troy: Me 
+
+too. 
+
+I 
+
+like to 
+
+get on the cap table though, that that, 
+
+that 
+
+gives 
+
+you 
+
+some 
+
+offset. 
+
+[00:11:03] Alex: Well, yeah, that's what I was going to say that at least when I do a consulting gig and advisory gig, I am usually on the cap table. I don't think you usually do that as a 
+
+as a 
+
+company 
+
+where, you 
+
+work 
+
+as 
+
+an 
+
+agency. 
+
+So I
+
+think, 
+
+[00:11:14] Troy: I 
+
+should be 
+
+on your 
+
+cap 
+
+table, 
+
+Brian. Why am I 
+
+not on 
+
+your cap table?
+
+[00:11:19] Brian: have you invested any money in it? I've invested time in it. In a rebooting house. 
+
+That I put 
+
+up with you.
+
+Yeah, I, 
+
+Oh, by the way, I did. I finally did a deal
+
+with Dan ads. I did. I finally, I finally did a deal with Dan as I'm talking at the self serve summit. If anyone wants to, by 
+
+[00:11:37] Alex: Troy, Troy, is there a way 
+
+to track how many people end up at Brian's 
+
+webinars that 
+
+listen to 
+
+this podcast? 
+
+Cause it 
+
+seems 
+
+like we're one 
+
+[00:11:45] Brian: one of them brought up the curve cafe.
+
+He remembered it I'm 
+
+telling you breaking. So 
+
+we're 
+
+like the top of funnel
+
+for 
+
+you 
+
+here. So 
+
+We
+
+need a cut. 
+
+we 
+
+are 
+
+[00:11:53] Troy: They 
+
+should have a 
+
+buffet at the self serve summit.
+
+[00:11:55] Alex: He
+
+gave that advice. See, you 
+
+should 
+
+charge for 
+
+that type of advice. 
+
+[00:12:03] Troy: can I 
+
+get 10 percent on that deal?
+
+[00:12:05] Brian: It took two and a half years. I don't dunno, multiple marketing people, but 
+
+we're not 
+
+gonna refer there, we but business 
+
+to you. 
+
+I like it. I like it. We got there. So more of that. Alex, you haven't like,funneled any business by way as far as I can 
+
+tell. Have I not?
+
+I don't. 
+
+I 
+
+[00:12:21] Troy: I had a
+
+funny
+
+thought
+
+I 
+
+should 
+
+write 
+
+up a 
+
+blurb on 
+
+this, 
+
+but 
+
+I 
+
+haven't. 
+
+So 
+
+last night. 
+
+I was 
+
+Technically, 
+
+I guess 
+
+I 
+
+was 
+
+at 
+
+the 
+
+highest
+
+pub 
+
+in Ireland. It's 
+
+called Johnny Fox's. 
+
+[00:12:32] Brian: Oh, I've been there. Yeah. 
+
+It's 
+
+a 
+
+nice pub. 
+
+It's like a weird sort of thing. Although there's like a gift shop sort of vibe to it that I don't like.
+
+[00:12:38] Troy: Well, 
+
+I don't know, but the 
+
+Guinness 
+
+is tasty. And I had a,
+
+I 
+
+had 
+
+a 
+
+pie 
+
+and 
+
+it 
+
+was 
+
+good 
+
+and all that, 
+
+you know,
+
+there's a, it's fun. 
+
+It's a
+
+fun 
+
+place. 
+
+Anyway, 
+
+the music and stuff. 
+
+we, I took an Uber back 
+
+and
+
+the 
+
+guy had 
+
+this, 
+
+cable 
+
+in 
+
+the 
+
+car
+
+those 
+
+cables that have LEDs 
+
+in 
+
+them,
+
+it 
+
+looks like 
+
+sort 
+
+of 
+
+light 
+
+is 
+
+pouring 
+
+out 
+
+of them. 
+
+So 
+
+the 
+
+front 
+
+of 
+
+the 
+
+car
+
+with 
+
+these lit 
+
+up 
+
+cables look like, kind of like 
+
+a 
+
+cheap 
+
+strip
+
+joint. 
+
+and 
+
+it, 
+
+just 
+
+a 
+
+couple 
+
+observations
+
+because first of 
+
+all, I 
+
+thought 
+
+it was part of 
+
+the 
+
+car 
+
+and the 
+
+car had all these sort of 
+
+accessory
+
+lighting 
+
+things 
+
+that 
+
+made 
+
+it 
+
+very 
+
+flashy.
+
+And 
+
+he 
+
+said, no, no,
+
+no. I bought 
+
+this as, this 
+
+is a 
+
+cable 
+
+for my
+
+phone. 
+
+it like literally 
+
+looks 
+
+like 
+
+you're 
+
+sucking 
+
+out 
+
+of 
+
+a 
+
+straw. 
+
+You're 
+
+sucking 
+
+the light out of the straw. It's like a, 
+
+It's 
+
+just like 
+
+a 
+
+normal,
+
+I 
+
+guess 
+
+it's a 
+
+USB cable that has 
+
+LEDs in 
+
+the 
+
+cable. 
+
+Anyway, 
+
+he 
+
+said, Oh yeah, 
+
+I got 
+
+it. 
+
+It's 
+
+great. 
+
+I bought it from this new website 
+
+called 
+
+Timu. 
+
+[00:13:34] Brian: And,
+
+[00:13:35] Troy: it 
+
+made me think of a couple 
+
+of things 
+
+when 
+
+he 
+
+said 
+
+that. 
+
+it 
+
+made 
+
+me think of the 
+
+following, 
+
+first of all. 
+
+Most 
+
+people 
+
+don't 
+
+know 
+
+about 
+
+all 
+
+the 
+
+stuff that 
+
+we concern 
+
+ourselves 
+
+with, like, is 
+
+Elon 
+
+an 
+
+asshole? 
+
+Or 
+
+is Timu 
+
+spyware? 
+
+you 
+
+know, like 
+
+all the stuff that, 
+
+people 
+
+in, you 
+
+know, 
+
+in 
+
+the 
+
+business 
+
+talk 
+
+about 
+
+To 
+
+him, 
+
+he 
+
+was getting,
+
+he 
+
+said, 
+
+I 
+
+got 
+
+it 
+
+on 
+
+Timu. 
+
+it 
+
+was like three 
+
+euros, and 
+
+they 
+
+shipped 
+
+it 
+
+to 
+
+me 
+
+in 
+
+a 
+
+week. 
+
+And 
+
+then I 
+
+was 
+
+thinking. 
+
+Oh 
+
+my 
+
+God.
+
+First 
+
+of all, 
+
+he 
+
+doesn't care. He got it 
+
+from 
+
+T Movie. He doesn't 
+
+give 
+
+a 
+
+shit 
+
+about 
+
+the 
+
+company. He just got what he 
+
+wanted 
+
+for 
+
+a 
+
+low 
+
+price. 
+
+I 
+
+was thinking 
+
+in 
+
+the 
+
+world, there's 
+
+really two 
+
+models. 
+
+You're 
+
+either 
+
+price 
+
+led or you're 
+
+luxury, 
+
+I mean, 
+
+I guess you compete on features, but 
+
+features 
+
+are 
+
+really 
+
+just 
+
+price, 
+
+right? 
+
+So 
+
+you're either price led 
+
+or 
+
+you're 
+
+luxury. 
+
+And that price 
+
+kind 
+
+of wins
+
+90 
+
+percent 
+
+of 
+
+the 
+
+time. 
+
+I 
+
+mean, 
+
+I'm not, it's just 
+
+good 
+
+prices.
+
+that's what people 
+
+care 
+
+about 
+
+And 
+
+that 
+
+the 
+
+business 
+
+model 
+
+for 
+
+Timu 
+
+is either 
+
+for 
+
+a 3 cord 
+
+delivered 
+
+to 
+
+you 
+
+That lights up like that 
+
+is 
+
+hurting 
+
+someone
+
+I 
+
+mean, 
+
+someone 
+
+is, 
+
+or, 
+
+maybe 
+
+not hurting someone, but 
+
+the 
+
+business model is what? 
+
+We're 
+
+going to make 
+
+it 
+
+up 
+
+in 
+
+the 
+
+next 
+
+transaction. Cause we 
+
+ain't making money on 
+
+the 
+
+3 
+
+thing. 
+
+So 
+
+we 
+
+got to make 
+
+it, 
+
+like, we're acquiring you 
+
+with 
+
+that 
+
+transaction
+
+Or, 
+
+we're installing spyware 
+
+on your 
+
+computer. 
+
+And 
+
+we're going to somehow 
+
+harvest you in another 
+
+way 
+
+by 
+
+selling you to the Chinese 
+
+government 
+
+or 
+
+something 
+
+nefarious, 
+
+or 
+
+I don't know what the third 
+
+model 
+
+is, 
+
+that. 
+
+Somehow 
+
+we're making 
+
+money off a 
+
+3
+
+transaction. 
+
+[00:15:09] Brian: And this guy doesn't give a shit. He just wants 
+
+his free 
+
+[00:15:12] Troy: He's got a
+
+cool Uber and 
+
+he's 
+
+got the light, 
+
+and 
+
+we 
+
+thought 
+
+it was cool. 
+
+But 
+
+it's 
+
+just 
+
+interesting to me, 
+
+like, 
+
+you 
+
+think 
+
+media is a tough business. How about commerce? 
+
+a really tough 
+
+business. 
+
+[00:15:24] Brian: this is a, you know, to sort of bring it back to Jason for a minute. We talked about commerce, and he was... very against They tried to do like on page commerce Transactions and I believe you guys were doing so some of that got shut down recently 
+
+[00:15:40] Troy: Well, 
+
+the 
+
+difference with 
+
+those guys 
+
+is they actually put 
+
+the 
+
+shopping cart on 
+
+the 
+
+page.
+
+It wasn't 
+
+an affiliate 
+
+business, 
+
+[00:15:46] Brian: so affiliate was painted as oh, that's just the first step because when people talk to me about commerce I'm like, are you talking about affiliate? Like you've invented something. I'm like affiliates been around since the Dawn of the commercial internet, like, no, this is commerce.
+
+We're going to sell our own like products. We're going to, build like a shopping engine, blah, blah, blah, blah. That stuff all got oversold at sea. Like, I mean, from what he was saying, they got tons of people on the page. People don't want to transact on bustle. com. 
+
+[00:16:13] Troy: That's 
+
+true.
+
+I 
+
+mean, I 
+
+think 
+
+there 
+
+are businesses that are making a 
+
+go 
+
+of 
+
+it.
+
+I'm 
+
+really impressed 
+
+with the progress that 
+
+Chris 
+
+Gimbel's making on
+
+Milk Street 
+
+and its 
+
+media 
+
+and 
+
+commerce. 
+
+But, it 
+
+feels like a store 
+
+and 
+
+he's 
+
+built the 
+
+credibility to 
+
+earn that.
+
+business.
+
+[00:16:28] Brian: What do you see then as being the difference of those that can execute this versus I think a lot of times it's big publishers where this is another incremental budget and if you're going to make it like your main thing, you got a shot, but if you're looking at this as your 4th or 5th like revenue line.
+
+Yeah, 
+
+[00:16:47] Troy: Well,
+
+I saw it 
+
+first 
+
+hand because, 
+
+we 
+
+had a 
+
+business called Shop Bazaar. 
+
+that 
+
+was 
+
+not 
+
+unlike what Brian was 
+
+trying 
+
+to 
+
+do. 
+
+So 
+
+it 
+
+was 
+
+taking inventory, selling 
+
+luxury 
+
+products,
+
+et 
+
+cetera. 
+
+The 
+
+first problem is
+
+typically if 
+
+you're 
+
+selling other 
+
+other 
+
+brands, 
+
+you 
+
+have a cost of 
+
+goods 
+
+problem.
+
+So 
+
+the 
+
+product costs you so much. 
+
+by the 
+
+time 
+
+you acquire the 
+
+customer and pay 
+
+all your 
+
+expenses and stuff, you 
+
+don't 
+
+make 
+
+any 
+
+money. 
+
+I 
+
+think it's 
+
+hard, for the 
+
+comment that 
+
+Jason 
+
+made, 
+
+to convince 
+
+people 
+
+that you're 
+
+a
+
+The 
+
+real trustworthy, credible 
+
+retailer. 
+
+in fashion, 
+
+you 
+
+have a 
+
+lot of 
+
+complexity around 
+
+sizing 
+
+and inventory 
+
+management 
+
+stuff like that that 
+
+comes 
+
+along 
+
+with the category.
+
+[00:17:27] Alex: Returns.
+
+[00:17:28] Troy: in Returns.
+
+And 
+
+in the 
+
+case 
+
+of,
+
+milk Street,
+
+they 
+
+sourced 
+
+their 
+
+own 
+
+products. 
+
+They, 
+
+created 
+
+their 
+
+own 
+
+products. They 
+
+have a. 
+
+Probably 
+
+one of the best 
+
+selling 
+
+kitchen 
+
+knives in 
+
+the 
+
+country 
+
+that 
+
+they 
+
+designed 
+
+and 
+
+manufactured and 
+
+all 
+
+that. So the margin profile is
+
+good and the product is 
+
+exceptional.
+
+I 
+
+think that 
+
+pantry and kitchen 
+
+goods, 
+
+is a 
+
+better 
+
+category. And, 
+
+quite frankly, 
+
+because 
+
+of 
+
+the kind of 
+
+experts 
+
+they are, they 
+
+have a 
+
+lot of 
+
+credibility in 
+
+that 
+
+category 
+
+that 
+
+matters to 
+
+people. 
+
+So, 
+
+and by 
+
+the 
+
+way, it was 
+
+a 
+
+long 
+
+journey. 
+
+So it is, a significant part of the 
+
+business, 
+
+but 
+
+it 
+
+took, 
+
+you 
+
+know, 
+
+three 
+
+years 
+
+to, 
+
+sort of 
+
+get 
+
+everything 
+
+right 
+
+to get sourcing, 
+
+inventory
+
+management, 
+
+customer acquisition, all the 
+
+platform related stuff to 
+
+get all that down took several years. 
+
+[00:18:12] Brian: To use one of your heuristics, like you need to major in this. It can't be one of two minors alongside. yeah, 
+
+events. that's right.
+
+Like you can dabble in events and branded content and stuff. I don't think you can dabble in commerce. You can dabble in affiliates. 
+
+[00:18:27] Troy: yeah. 
+
+That's right. 
+
+[00:18:28] Brian: Alright.
+
+Should we talk anyway, 
+
+we're off topic. 
+
+Should we 
+
+get over? No, no, no. We're on topic. We're on 
+
+[00:18:32] Alex: No, the, The recurring topic, media is a terrible 
+
+business and everything 
+
+[00:18:35] Brian: Well, 
+
+[00:18:36] Alex: that media 
+
+companies try 
+
+to do is,
+
+just ends 
+
+in more tears. 
+
+[00:18:39] Brian: Yeah. But it, that's what makes it interesting. this came up on the webinar I was just on no other businesses under just constant existential threat like this.
+
+It's keeps you on your toes. It's 
+
+[00:18:54] Alex: oh for 
+
+sure, 
+
+For sure. 
+
+for 
+
+[00:18:56] Troy: Yeah. 
+
+Please 
+
+don't 
+
+talk 
+
+to webinar 
+
+anymore. 
+
+but 
+
+Hey, Alex, I think 
+
+what really 
+
+happened after Brian 
+
+had 
+
+his 
+
+meltdown 
+
+is 
+
+that he basically 
+
+decided 
+
+that, 
+
+He'll do begrudgingly 
+
+do 
+
+the 
+
+podcast, but it'll just be his,
+
+sort of branded 
+
+content 
+
+offering 
+
+his promotional offering.
+
+[00:19:13] Brian: Well, actually I got an inspiration. Do you ever listen to the Monocle podcast or read Monocle? It's a ludicrous brand. The fact that exists. I'm just, I'm obsessed with it. I, I wanna make it a life mission to, to meet Tyler Brule someday. and he actually apparently invented a circumflex on his, view of his name.
+
+but they do a really great job with weaving in their, like,different, self promotions. So I'm 
+
+[00:19:37] Alex: right, but you know
+
+the 
+
+difference 
+
+with 
+
+Monocle and 
+
+us, 
+
+is 
+
+that 
+
+they 
+
+all 
+
+get 
+
+paid 
+
+for 
+
+it,
+
+[00:19:41] Brian: Well, I, hey, look, we're talking about business models. I am totally in favor of a DTC business model for.
+
+People versus algorithms, if you guys want to go that direction. but otherwise, we're going to have to go the indirect, model, and, it gets kind of 
+
+messy. 
+
+Well, 
+
+[00:19:57] Troy: I 
+
+really 
+
+like creme brulee any relation.
+
+[00:20:01] Brian: I don't know. 
+
+[00:20:03] Troy: See on most 
+
+podcasts you 
+
+don't 
+
+get that quality of
+
+surrealistic humor.
+
+[00:20:08] Brian: Yeah, exactly. one of the topics that I had wanted to, to talk about, because I think it's kind of tangentially related, is about Instagram as like the ultimate, advertising. 
+
+I thought we 
+
+were 
+
+talking about bundling and cable. We're gonna, we're gonna, but I'm, I'm, I'm getting there through Instagram.
+
+I just want to talk a bit, a little bit about Instagram and what makes it like an amazing, because I think it's the best ad experience that I've seen in media, to be honest with you, because paid search is a great, it's a home run model for, for Google in particular. But Let's face it.
+
+They're not generating demand a lot of times. They're just harvesting it. But like with Instagram, it's perfectly executed. it's a really good ad experience. I think I would prefer Instagram with ads than without ads. 
+
+[00:20:53] Troy: That's 
+
+a nice 
+
+thing to say. 
+
+[00:20:54] Brian: Isn't that? See? 
+
+[00:20:55] Troy: Yeah. 
+
+you want to 
+
+know why? 
+
+[00:20:57] Brian: Yeah, why, why is it?
+
+I assume it's just because like they Well, you tell me. But I think it's, it's the feed, it works really well within the feed, and then they have so many frickin advertisers that, I, looked at, like, an e bike, and, I have discovered, a million e bike companies. I had no idea there were so many e bike companies.
+
+[00:21:13] Troy: Hmm. 
+
+Obviously
+
+the 
+
+ad 
+
+models or 
+
+ad products are easiest 
+
+when 
+
+you 
+
+have 
+
+intent.
+
+so 
+
+that's 
+
+the Google 
+
+case. 
+
+And 
+
+then 
+
+in 
+
+Instagram's 
+
+case, you 
+
+don't really, 
+
+I 
+
+mean, 
+
+you have 
+
+so 
+
+many people 
+
+and 
+
+so much 
+
+data 
+
+that. 
+
+You can, 
+
+try 
+
+to 
+
+understand 
+
+where 
+
+intent is, but 
+
+you 
+
+don't 
+
+have 
+
+people 
+
+asking 
+
+for 
+
+things 
+
+the 
+
+same way 
+
+they do on Google,
+
+But 
+
+then 
+
+you have the other next
+
+dimension 
+
+of 
+
+the 
+
+ad product, 
+
+which to 
+
+me 
+
+is 
+
+the 
+
+sort of 
+
+mechanics 
+
+of it. 
+
+IE, 
+
+does 
+
+it 
+
+fit 
+
+in 
+
+the 
+
+feed 
+
+effortlessly, or is 
+
+it native? 
+
+Do 
+
+you have 
+
+payments 
+
+connected 
+
+to 
+
+it? Do 
+
+you have. 
+
+you 
+
+know, a 
+
+catalog 
+
+connected to 
+
+it in the case of, 
+
+you 
+
+know, 
+
+having commerce? 
+
+does 
+
+it 
+
+feel 
+
+easy 
+
+to 
+
+use 
+
+and 
+
+accessible? 
+
+and 
+
+then 
+
+is there 
+
+the whole 
+
+buying 
+
+infrastructure on 
+
+the 
+
+other 
+
+side 
+
+for 
+
+the 
+
+advertiser that makes it easy to 
+
+find 
+
+audiences, 
+
+target 
+
+audiences, 
+
+execute 
+
+campaigns, 
+
+And 
+
+they have 
+
+all that, 
+
+right? So 
+
+the consequence 
+
+of 
+
+that 
+
+is 
+
+they have
+
+And 
+
+a 
+
+huge 
+
+amount 
+
+of 
+
+scale 
+
+in terms of 
+
+number 
+
+of 
+
+advertisers, 
+
+and I 
+
+think 
+
+that's 
+
+key 
+
+because 
+
+when you have that, 
+
+and then you 
+
+have 
+
+lots of 
+
+audience, 
+
+then 
+
+you 
+
+can do the thing 
+
+whatever, which advertising needs 
+
+to 
+
+do, 
+
+which is you can 
+
+solve the 
+
+matching 
+
+problem. 
+
+And 
+
+They 
+
+match 
+
+incredibly well. 
+
+You get 
+
+stuff 
+
+on 
+
+Instagram 
+
+that 
+
+you 
+
+are
+
+interested in. 
+
+And 
+
+as a result,
+
+you 
+
+know, 
+
+they 
+
+basically 
+
+completely 
+
+hijacked 
+
+the 
+
+lifestyle 
+
+media 
+
+advertising category and 
+
+It's 
+
+better than it ever was.
+
+I 
+
+agree with 
+
+you totally. 
+
+[00:22:36] Brian: Yeah, I, I can remember over the years all the efforts like Project Devil to make.
+
+Yeah, that 
+
+was AOL's
+
+fancy ad platform. Yeah, we're going to make, a fancy banner ad that is like the same as like the full page ad in Vogue. And, and, I believe Tim Armstrong was, was hawking this at an advertising week. 
+
+[00:22:53] Troy: I 
+
+think it was 
+
+it 
+
+was 
+
+admirable. You 
+
+know what, they cleaned Alex 
+
+and I 
+
+did the same. 
+
+We 
+
+called 
+
+it 
+
+the 
+
+clean 
+
+campaign
+
+[00:22:59] Alex: we have t shirts and 
+
+[00:23:00] Troy: we 
+
+cleaned 
+
+up 
+
+pages
+
+Yeah, 
+
+cleaned 
+
+up 
+
+pages, better ads, 
+
+bigger formats, all that. 
+
+[00:23:05] Brian: So Alex, you 
+
+used to work on ads. I mean, what, why the hatred of ads? 
+
+[00:23:09] Troy: Oh, 
+
+Alex knows a
+
+lot about 
+
+ads.
+
+[00:23:11] Brian: Maybe 
+
+that's why he hates it. Yeah, 
+
+I 
+
+think 
+
+maybe I 
+
+did. 
+
+I 
+
+don't 
+
+communicate this 
+
+well 
+
+enough, but 
+
+I come from a place 
+
+of 
+
+You've been in the belly of 
+
+the 
+
+[00:23:19] Alex: yeah, yeah, I 
+
+know it. 
+
+Well, 
+
+and and 
+
+part of the 
+
+Anxiety around 
+
+advertising is the fact 
+
+that 
+
+I 
+
+think 
+
+They just became
+
+worse 
+
+for the 
+
+readers and, the consumer and, just 
+
+better for the 
+
+platforms 
+
+and the 
+
+large 
+
+systems. I, 
+
+[00:23:34] Brian: what I wonder is like.
+
+It seems like it's almost impossible for, let's say, publishers to have an ad experience that is like Instagram's, in that, at least to me, the Instagram ad experience is Additive in some ways. And if it's a tax, it's a reasonable tax. It's not a ridiculous tax. If you go to most publisher websites, so adversarial.
+
+It's so anti audience. 
+
+[00:24:00] Troy: There's so many
+
+reasons. 
+
+[00:24:01] Alex: Because there's so many 
+
+reasons And I think 
+
+part of 
+
+that is, 
+
+so a lot of the things that Troy said, right, like 
+
+mechanical, 
+
+right, the 
+
+UX of 
+
+Instagram, 
+
+um,Fits perfectly 
+
+you know, 
+
+we've been talking about native ad formats
+
+and 
+
+the 
+
+ads just fit 
+
+into the flow the 
+
+same 
+
+way 
+
+tv 
+
+ads used to.
+
+You know, it's 
+
+actually the 
+
+[00:24:18] Troy: Not only that 
+
+there,
+
+there's 
+
+not 
+
+as 
+
+much. every
+
+media 
+
+property.
+
+that 
+
+I encounter 
+
+these 
+
+days 
+
+just 
+
+reeks 
+
+of 
+
+desperation.
+
+And
+
+when 
+
+you 
+
+have 
+
+a hundred million users, 
+
+maybe 
+
+more, a 
+
+500 
+
+million users 
+
+and 
+
+no 
+
+content 
+
+costs, 
+
+You 
+
+can 
+
+develop 
+
+an 
+
+extraordinary 
+
+ad platform by side 
+
+and the 
+
+creative 
+
+side. 
+
+Then, you 
+
+know, the 
+
+user 
+
+experience, 
+
+you 
+
+can 
+
+manage 
+
+ad 
+
+density 
+
+with, 
+
+grace, 
+
+That's 
+
+the 
+
+biggest problem 
+
+that we have today is, 
+
+is ads 
+
+that are 
+
+so 
+
+desperate 
+
+on 
+
+publisher 
+
+sites, 
+
+because you got to get yield up 
+
+that it just
+
+destroys the 
+
+[00:24:51] Alex: right and also 
+
+and also like it's 
+
+you 
+
+have 
+
+different incentives when 
+
+You're 
+
+taking a visitor to your site as, Oh my God, we better monetize this visitor 
+
+as much as we 
+
+can, 
+
+because that 
+
+person is going to leave and 
+
+not come 
+
+back for a week 
+
+rather than knowing
+
+that 
+
+people are 
+
+coming in multiple times 
+
+a day. 
+
+And 
+
+on top 
+
+of 
+
+that, the 
+
+important thing is 
+
+that
+
+it 
+
+changes the mode.
+
+Of the 
+
+visitor. When I go to a 
+
+site to read an 
+
+article, I'm there to read that article. 
+
+I go on
+
+Instagram with a meandering feeling that I'm just going to 
+
+browse 
+
+around. I don't 
+
+really have any specific 
+
+tasks 
+
+in mind. I do it multiple times a 
+
+day. Right.
+
+And so therefore clicking on 
+
+an 
+
+ad 
+
+and 
+
+getting distracted
+
+is 
+
+probably a pretty. 
+
+Common 
+
+occurrence 
+
+compared to 
+
+say, 
+
+being on 
+
+a, 
+
+on a 
+
+new site. So,
+
+Modality is a 
+
+hugely important 
+
+factor, 
+
+right? It's 
+
+also 
+
+why 
+
+commerce 
+
+is so hard to 
+
+get right. Usually,
+
+But 
+
+Instagram 
+
+users are,
+
+there to 
+
+fuck 
+
+around. So like, 
+
+why not 
+
+go 
+
+and try out some 
+
+new 
+
+tactical 
+
+material 
+
+pants with 
+
+stretch 
+
+fabric?
+
+[00:25:47] Brian: There's a year, that's a year.
+
+[00:25:50] Alex: Oh, it's all wait, what did, what, what actually let's play this game. What do you 
+
+guys get? I get? pants. 
+
+Stain resistant 
+
+pads. cable
+
+management. 
+
+and 
+
+lately I've been 
+
+getting... 
+
+No, that's pretty much 
+
+it.
+
+[00:26:02] Brian: I get e bikes.
+
+I get, grills. and then 
+
+also, like,
+
+[00:26:06] Troy: girls, for your teeth or 
+
+for your 
+
+[00:26:08] Brian: No, no, grill, like, grilling. I follow a lot of, like, food accounts. So, like, I get into, like, the, I get, like, meat services But I'm very, very heavily in, analog and e bikes. Are they called analog bikes? What are they called these days?
+
+[00:26:23] Troy: Normal
+
+bikes, 
+
+old fashioned bikes. 
+
+So 
+
+a 
+
+couple a couple of little anecdotes 
+
+about 
+
+that 
+
+at 
+
+the 
+
+risk of, 
+
+divulging
+
+my content 
+
+preferences. 
+
+I 
+
+found it 
+
+interesting 
+
+the 
+
+other 
+
+night when I was sitting 
+
+with 
+
+my 
+
+son 
+
+and his 
+
+friend, 
+
+my son's back 
+
+from 
+
+LA and he was 
+
+at 
+
+the house, 
+
+they 
+
+don't 
+
+congregate 
+
+around 
+
+the 
+
+television. 
+
+They 
+
+sit 
+
+in 
+
+a 
+
+room 
+
+and 
+
+they all 
+
+look at 
+
+their phones independently, and we 
+
+were 
+
+talking 
+
+about
+
+what 
+
+segments 
+
+we were in. 
+
+I 
+
+was, 
+
+I'm
+
+currently on 
+
+Instagram cause I, 
+
+watched to conclusion a 
+
+couple 
+
+of 
+
+fart 
+
+jokes.
+
+or people pranking 
+
+other people by like 
+
+farting 
+
+And 
+
+so 
+
+I'm 
+
+in 
+
+the 
+
+fart 
+
+segment 
+
+now. 
+
+And 
+
+so 
+
+they keep serving 
+
+because 
+
+it's all 
+
+dynamic 
+
+segment 
+
+creation. 
+
+So 
+
+they're 
+
+serving a 
+
+lot 
+
+of them to me. 
+
+and 
+
+they're, 
+
+they've 
+
+been 
+
+shared 
+
+with other 
+
+members of my family. 
+
+So 
+
+they 
+
+obviously 
+
+got a 
+
+couple data 
+
+signals. 
+
+They think 
+
+that's the 
+
+content I 
+
+want 
+
+and I'm in 
+
+that segment, 
+
+but 
+
+I 
+
+thought 
+
+We're 
+
+not 
+
+talking channels or programs in 
+
+the home, 
+
+We're 
+
+talking 
+
+segments,
+
+which 
+
+is 
+
+kind 
+
+of a 
+
+sign of 
+
+the 
+
+times 
+
+and 
+
+sharing. 
+
+Hey, you got to
+
+look 
+
+at this, like 
+
+handing 
+
+phones 
+
+to 
+
+one 
+
+another, 
+
+as 
+
+opposed 
+
+to watching. 
+
+Entertainment 
+
+as a, 
+
+as 
+
+a family. We ain't watching the Waltons, that's for sure. 
+
+[00:27:28] Brian: Well, that's what I do. I, I want to get off this, but like, with the privacy stuff, I do think, some of that is just age related in that, it's almost like a game with, younger people. They understand exactly what is going on.
+
+I mean, that, like, sort of Wall Street Journal thing of, what they know and stuff like this. It's oh my god, no, this is not a, this is an old person problem. It's not a young person problem, at least to me. okay, let's move on to the re bundling, did you guys watch the football game last night?
+
+[00:27:55] Alex: Nope.
+
+[00:27:55] Brian: Aaron Rodgers went like storming onto the field with the American flag and then he was like being carted off like four plays later. anyway, it was on ESPN. ESPN came to a,conclusion of its fight with Charter head off that sort of existential challenge. But ESPN is, I was speaking at this event last week in Boston,HubSpot's inbound conference.
+
+And, I got this question about some word association about ESPN. Which by the way, I, have you guys been to any of these tech trade shows lately? They're massive. It's like massive. Like 10, 000, 15, 000 people. Just like shockingly large. Just. It's inspiring. Is it 
+
+[00:28:33] Alex: Is it 
+
+inspiring? 
+
+[00:28:34] Brian: It is inspiring.
+
+The Survey Monkey, I shared with you 
+
+[00:28:39] Alex: What 
+
+type 
+
+of emotion does it 
+
+inspire?
+
+[00:28:41] Brian: the, like, the musky aroma of capitalism. I love it. Anyway, I had the question about ESPN and I was like, future HBR case study. 
+
+[00:28:52] Troy: That's 
+
+the funniest 
+
+thing 
+
+you've 
+
+ever said.
+
+The 
+
+musky aroma 
+
+of capitalism 
+
+is 
+
+so 
+
+true.
+
+[00:28:58] Brian: Oh, yeah. It smells 
+
+like 
+
+booths
+
+and bad I 
+
+used to say that about our, Digiday summits, like the eight minute meetings. There's a heavy, heavy musk of capitalism that was hanging, hanging in the room. it was great. 
+
+[00:29:13] Troy: We 
+
+didn't 
+
+have that
+
+in camp in Canada.
+
+[00:29:15] Brian: But you guys have like socialized medicine and stuff.
+
+Anyway, it's an HPR case study, uh, waiting to happen, I think. Troy, give me your like breakdown about, I mean, are you fascinated first of all by this story? Otherwise, maybe it'll be a short segment. 
+
+[00:29:27] Troy: And loosely actually. 
+
+I 
+
+think it's 
+
+really interesting.
+
+I 
+
+don't 
+
+know where to start, Brian. 
+
+first 
+
+of 
+
+all, like.
+
+it's 
+
+interesting 
+
+to 
+
+briefly 
+
+consider 
+
+what 
+
+was 
+
+cables 
+
+undoing.
+
+so 
+
+I thought 
+
+about 
+
+that 
+
+for 
+
+a 
+
+second.
+
+and 
+
+first 
+
+was 
+
+like, 
+
+we 
+
+shifted our construct 
+
+of 
+
+how 
+
+we 
+
+get 
+
+entertainment 
+
+from 
+
+timeline 
+
+to 
+
+library,
+
+and 
+
+we lived in a 
+
+world 
+
+of 
+
+constrained 
+
+choice
+
+and 
+
+it 
+
+shifted 
+
+when.
+
+Netflix, 
+
+you 
+
+know, evolved 
+
+their 
+
+DVD 
+
+by 
+
+mail 
+
+business 
+
+to 
+
+watch whatever you want on our platform. 
+
+And 
+
+suddenly 
+
+we 
+
+had 
+
+this library 
+
+construct, 
+
+and 
+
+it it's 
+
+better, 
+
+you know, you 
+
+can 
+
+watch 
+
+what 
+
+you 
+
+want 
+
+to 
+
+watch 
+
+when 
+
+you want 
+
+to 
+
+watch it and 
+
+you 
+
+can watch 
+
+it 
+
+without ads. 
+
+And 
+
+so, 
+
+obviously 
+
+that 
+
+was 
+
+a, 
+
+big 
+
+factor.
+
+And 
+
+then you had,
+
+I 
+
+think 
+
+as 
+
+important 
+
+was 
+
+we 
+
+got used to. 
+
+The 
+
+bundling 
+
+of 
+
+access 
+
+with 
+
+content,
+
+right?
+
+So you 
+
+had 
+
+to 
+
+deal 
+
+with 
+
+your cable 
+
+company 
+
+to 
+
+get, provisioning 
+
+of 
+
+your 
+
+internet 
+
+and cable service 
+
+along 
+
+with 
+
+it, 
+
+you
+
+picked 
+
+from 
+
+a 
+
+really,
+
+constrained 
+
+number of choices 
+
+And 
+
+it 
+
+was great for the business 
+
+obviously.
+
+and 
+
+then if you wanted 
+
+to 
+
+make 
+
+changes, 
+
+it 
+
+was extremely painful. 
+
+And 
+
+now in the direct to 
+
+consumer 
+
+reality 
+
+that 
+
+we live in, you 
+
+can. 
+
+add or subtract services 
+
+with 
+
+the click 
+
+of a button. 
+
+and 
+
+all 
+
+of 
+
+these 
+
+companies, once
+
+content 
+
+was separated from 
+
+the 
+
+provisioning 
+
+of, 
+
+of 
+
+a 
+
+wire 
+
+into the home, 
+
+I 
+
+think you got 
+
+two 
+
+good 
+
+outcomes. One was,
+
+the 
+
+people 
+
+that 
+
+were 
+
+selling 
+
+connectivity had 
+
+to 
+
+get 
+
+better 
+
+at 
+
+it. 
+
+There 
+
+was 
+
+more 
+
+competition 
+
+and 
+
+the 
+
+people that make content had to 
+
+build platforms 
+
+to 
+
+serve you. 
+
+and 
+
+they 
+
+did 
+
+it 
+
+much 
+
+better. 
+
+And 
+
+so,
+
+that, 
+
+started 
+
+to 
+
+put 
+
+pressure 
+
+on 
+
+the 
+
+system. 
+
+And 
+
+when, 
+
+Netflix 
+
+had 
+
+runaway 
+
+success, everybody wanted 
+
+to 
+
+get into that market, 
+
+without 
+
+maybe 
+
+an 
+
+appreciation of how good the past was, 
+
+Cause you can consider 
+
+for 
+
+a 
+
+second,
+
+could 
+
+the outcome have been any different? 
+
+And 
+
+I think 
+
+it's an 
+
+interesting 
+
+question. If 
+
+everybody 
+
+had said, we want 
+
+to preserve the 
+
+bundle, 
+
+[00:31:15] Brian: Could 
+
+cable companies... 
+
+Wait, wait, who's everybody? who's everybody? 
+
+[00:31:18] Troy: well, 
+
+all 
+
+the 
+
+interested 
+
+parties, 
+
+so 
+
+the 
+
+content 
+
+providers of 
+
+cable 
+
+networks, 
+
+the 
+
+networks, 
+
+and 
+
+cable. 
+
+If 
+
+you had 
+
+said, 
+
+let's 
+
+not let this 
+
+thing 
+
+go, 
+
+it's the greatest 
+
+source. Business 
+
+model 
+
+of 
+
+all 
+
+time, 
+
+what 
+
+would you have had 
+
+to do?
+
+It's 
+
+worth asking.
+
+[00:31:34] Brian: But that's impossible. You can't stop. 
+
+I mean, that's the way it's 
+
+[00:31:38] Troy: Well, no, but it's 
+
+[00:31:38] Alex: Oh, but, but, but actually, Brian, actually, Brian, one could say that 
+
+decisions were 
+
+made in 
+
+how 
+
+content was 
+
+given to 
+
+Netflix and 
+
+they 
+
+thought they 
+
+had old content 
+
+[00:31:47] Troy: well, wait, 
+
+[00:31:48] Alex: a 
+
+cheap 
+
+deal 
+
+to put that stuff on there. Yeah. 
+
+[00:31:51] Troy: You 
+
+don't give your 
+
+content away. 
+
+you 
+
+develop 
+
+a 
+
+really 
+
+good 
+
+consumer platform. 
+
+you create a library 
+
+offering 
+
+next 
+
+to the 
+
+programming 
+
+guide. 
+
+You 
+
+up 
+
+customer service, 
+
+You give more choice to the consumer. 
+
+You'd 
+
+have to do 
+
+all those 
+
+things. 
+
+But 
+
+here's the 
+
+thing.
+
+if 
+
+the 
+
+cable company 
+
+started 
+
+doing 
+
+that, 
+
+I 
+
+think 
+
+the content 
+
+companies 
+
+on 
+
+the 
+
+other side would 
+
+have said, 
+
+hold 
+
+it, slow 
+
+your 
+
+roll. 
+
+Because 
+
+it's bad 
+
+for the 
+
+economics. 
+
+If you 
+
+get more churn, 
+
+if, 
+
+you 
+
+know, 
+
+you start 
+
+putting 
+
+our 
+
+content in the 
+
+library, if 
+
+you 
+
+start compensating us by how much people watch. 
+
+And 
+
+so, I think it 
+
+would 
+
+have 
+
+created 
+
+an 
+
+untenable political situation between 
+
+service 
+
+provider, content provider 
+
+[00:32:30] Alex: or 
+
+it was just bad decision 
+
+making 
+
+through arrogance where they 
+
+would, 
+
+we're looking at
+
+these 
+
+new 
+
+platforms 
+
+as 
+
+beneath 
+
+them 
+
+and, 
+
+and 
+
+they felt that 
+
+they 
+
+were 
+
+invincible.
+
+I 
+
+don't 
+
+disagree with you, 
+
+but like just simply 
+
+improving 
+
+the user 
+
+experience 
+
+of the, 
+
+cable, 
+
+products,
+
+right. 
+
+They 
+
+never really 
+
+invested in that,
+
+It remains
+
+terrible, 
+
+because 
+
+people 
+
+were buying it. 
+
+Whatever the 
+
+case, you 
+
+know, 
+
+just the quality 
+
+of the 
+
+content 
+
+went down. 
+
+quality of the 
+
+experience went down. 
+
+Customer 
+
+service 
+
+was 
+
+terrible. It 
+
+was impossible to 
+
+disconnect 
+
+from, 
+
+you 
+
+know, 
+
+if you, called 
+
+and asked to cancel your service, they would, make your 
+
+life a living hell, 
+
+these are 
+
+not companies that were treating their customers
+
+well. 
+
+[00:33:08] Brian: top of that, it's also, there's also a human.
+
+dimension to it, I feel like, and in that, this is brought up to me by, Andrew Rosner has this really good, newsletter called Parkour, about this. He used to be at Viacom, and he talked about how all the executives running these companies are wholesale. They're wholesalers, and they're not retailers, and like, they don't have that DTC experience mindset.
+
+They don't have the playbooks. They don't have, and more importantly, They were never incentivized to make that change. so, I don't, I'm not sure, like, I think it's easy to sort of go back in some ways and be like, Really, if you think about it, this was obvious what was happening, right? All through cord cutting, ESPN executives went out there and poo pooed the idea.
+
+They said, we still have 90 percent of a hundred million. That's like massive. Forget about this cord. That was only in 2016. They were still saying this stuff. there was a little bit of denialism there. 
+
+[00:34:03] Alex: it's always the same, 
+
+hubris, right? 
+
+where
+
+these guys 
+
+cannot
+
+Expect
+
+a million years that people's behaviors will change, even 
+
+though their business was built 
+
+entirely on new 
+
+behaviors that 
+
+destroyed another. 
+
+Industry, 
+
+But their 
+
+industry won't be the one it 
+
+happens to. 
+
+if you, 
+
+draw up a little matrix, a 
+
+little 
+
+product chart, and you say 
+
+streaming 
+
+video, 
+
+streaming 
+
+apps and 
+
+products versus, bundled 
+
+cable, 
+
+and you 
+
+look at the pros and cons, 
+
+There's not 
+
+a 
+
+lot that 
+
+makes you want 
+
+to 
+
+keep the 
+
+cable bundle. And that's, that 
+
+is 
+
+nothing 
+
+new. 
+
+That 
+
+was 
+
+apparent 
+
+10 years
+
+ago. 
+
+it's just 
+
+that 10 
+
+years ago, 
+
+Netflix was 
+
+still small,
+
+but what they couldn't 
+
+see 
+
+was that way, there's this much 
+
+better 
+
+way of doing this, 
+
+But they couldn't
+
+see that people would be 
+
+inclined to 
+
+change to 
+
+that 
+
+new, better way of 
+
+doing things. And 
+
+I 
+
+think these 
+
+corporations 
+
+are to 
+
+blame for 
+
+doing 
+
+that. And they're in some ways 
+
+still doing it, 
+
+right? I think 
+
+Disney 
+
+overloaded 
+
+their 
+
+stuff with 
+
+bad content. 
+
+HBO 
+
+Max's app is a nightmare to 
+
+use. 
+
+they're 
+
+really not learning, 
+
+and all of these companies 
+
+are 
+
+willing to be disrupted 
+
+just 
+
+purely 
+
+because they're 
+
+not willing to,
+
+I think
+
+Respect
+
+their 
+
+customer in a 
+
+way 
+
+where Not 
+
+only 
+
+feel 
+
+like they 
+
+should be 
+
+providing an 
+
+experience that is
+
+better. 
+
+But 
+
+also understanding 
+
+that 
+
+people's,
+
+behaviors 
+
+change, 
+
+and 
+
+they can change really quickly.
+
+Hey, 
+
+[00:35:15] Troy: Mr. Mr. 
+
+Mr. U. X. You 
+
+know what the hardest 
+
+U. X. problem 
+
+is, Alex, is, 
+
+the 
+
+intersection. 
+
+No, 
+
+I 
+
+know 
+
+you 
+
+get 
+
+caught up 
+
+in stuff people don't care about 
+
+It's 
+
+[00:35:26] Alex: wait, wait, 
+
+says the, 
+
+says 
+
+the 
+
+guy 
+
+that 
+
+just 
+
+got 
+
+excited 
+
+about. 
+
+Advertising being good. 
+
+[00:35:31] Troy: Okay 
+
+Okay.
+
+[00:35:32] Brian: People love good advertising. I 200 people were on that webinar. I mean as long as you have a value 
+
+[00:35:38] Alex: Hey, guys,
+
+guys, yesterday I watched, I watched, I watched a performance of synchronized walking that had filled a stadium with 5, 000 people. So people are 
+
+interested in 
+
+all sorts of stuff. But we digress. Troy wants to 
+
+put me 
+
+down a peg. 
+
+[00:35:52] Troy: Okay. 
+
+Well, 
+
+while 
+
+we're
+
+in 
+
+putting 
+
+down 
+
+mode, 
+
+this isn't 
+
+about putting 
+
+you down. it's 
+
+just a question 
+
+and, 
+
+a 
+
+UX 
+
+problem 
+
+that I 
+
+would 
+
+like to 
+
+see you solve at some 
+
+point 
+
+which 
+
+is the intersection 
+
+of live 
+
+and 
+
+library.
+
+It's 
+
+very 
+
+hard to do 
+
+Well,
+
+Okay. 
+
+So 
+
+What 
+
+that 
+
+means 
+
+is,
+
+you're 
+
+on 
+
+Apple TV 
+
+and there's a 
+
+baseball game 
+
+on 
+
+or 
+
+you're on 
+
+Apple 
+
+TV and there's 
+
+a soccer 
+
+game 
+
+on 
+
+And, 
+
+you 
+
+want to 
+
+watch it, you got to watch it right now. 
+
+So 
+
+that's 
+
+what 
+
+the programming 
+
+guy 
+
+did. It said, 
+
+what's 
+
+on this station at this moment in 
+
+time? 
+
+As 
+
+opposed to a 
+
+library 
+
+construct 
+
+which 
+
+is. 
+
+here's 
+
+what's new, here's what the algorithm says 
+
+you should watch. 
+
+Here's 
+
+the 
+
+genre, 
+
+what 
+
+you 
+
+want to watch. 
+
+And 
+
+those 
+
+are 
+
+two very different things. 
+
+One 
+
+is, 
+
+this 
+
+is 
+
+on right now.
+
+tune in. 
+
+And the 
+
+other one is 
+
+find 
+
+something to watch 
+
+and 
+
+they're very different.
+
+[00:36:40] Alex: They're 
+
+different, but I mean, 
+
+there's no...
+
+I 
+
+don't 
+
+think it's difficult adding a 
+
+live tab
+
+to something like the Apple TV app or your TiVo
+
+app. 
+
+
+
+[00:36:49] Alex: not your 
+
+TiVo, 
+
+your, 
+
+Amazon 
+
+Prime 
+
+streaming stick or 
+
+whatever.
+
+I 
+
+feel 
+
+[00:36:53] Troy: Have 
+
+you 
+
+seen how,
+
+Have 
+
+you seen how 
+
+Amazon 
+
+struggled 
+
+with 
+
+putting football on the Prime interface? 
+
+[00:36:59] Alex: Amazon 
+
+is 
+
+[00:37:00] Troy: Apple?
+
+[00:37:00] Alex: Amazon is not a, I 
+
+don't 
+
+think Amazon 
+
+sells great 
+
+UX 
+
+issues in 
+
+a, in a, 
+
+pretty good way. 
+
+I don't 
+
+think it's the 
+
+hardest problem to fix. 
+
+[00:37:08] Troy: yourself there.
+
+[00:37:09] Alex: Amazon 
+
+is 
+
+one 
+
+of 
+
+those 
+
+companies, 
+
+that I 
+
+don't 
+
+think takes that very
+
+seriously. But, 
+
+which is why it's
+
+so 
+
+hard to 
+
+find 
+
+like content that they 
+
+spend millions on, on, 
+
+their 
+
+product. You know, 
+
+Apple's much better at 
+
+merchandising. 
+
+I 
+
+do think that 
+
+merchandising 
+
+live stuff is 
+
+harder, 
+
+but I don't 
+
+think it's 
+
+that hard. 
+
+if 
+
+you go to YouTube, 
+
+they do a 
+
+pretty decent way of 
+
+mixing 
+
+their 
+
+algorithmic feed 
+
+with. 
+
+pre 
+
+recorded stuff and 
+
+stuff that's 
+
+happening live and you 
+
+know, 
+
+sometimes it's 
+
+just a 
+
+card. 
+
+Sometimes you 
+
+can 
+
+Categorize 
+
+and see all the 
+
+live stuff. 
+
+It's easy 
+
+enough to 
+
+subscribe to the 
+
+sports that you're watching. I 
+
+it's a way easier to solve 
+
+of a 
+
+problem 
+
+than than a lot 
+
+of 
+
+these 
+
+other 
+
+issues that, 
+
+other 
+
+social 
+
+networks and 
+
+media companies have 
+
+solved. So I don't think that's the
+
+issue, 
+
+But 
+
+even the traditional cable 
+
+experience, right? 
+
+The feed and the 
+
+table and stuff like that, 
+
+if you want YouTubes. 
+
+These tech companies are running circles in UX 
+
+around 
+
+all 
+
+these other old companies, even 
+
+though 
+
+people 
+
+could 
+
+just take YouTube 
+
+TV's experience 
+
+and make 
+
+their stuff much better. They 
+
+don't. 
+
+and that's 
+
+because making 
+
+decisions in those 
+
+companies 
+
+is, 
+
+is, hard 
+
+because the 
+
+incentives aren't 
+
+there and they're 
+
+not, able to
+
+hire the best people, but 
+
+[00:38:17] Brian: That's actually... This year, you don't have it, I'm sure, Alex, but I bet you do, Troy. Sunday Ticket moved to YouTube and YouTube TV is now, I just, got it and I, I've gotten the, the Sunday Ticket used to be through DirecTV.
+
+It's a nightmare. 
+
+[00:38:32] Troy: The worst. 
+
+[00:38:33] Brian: the YouTube TV interface is great. 
+
+It was Glorious. 
+
+It was 
+
+a great experience. 
+
+[00:38:38] Troy: I 
+
+can't 
+
+wait 
+
+to 
+
+watch 
+
+it. I'm in Europe 
+
+right 
+
+now and 
+
+so there's all 
+
+the, 
+
+I 
+
+can't 
+
+watch 
+
+it, but 
+
+when, anyway, 
+
+it 
+
+was 
+
+one click 
+
+to 
+
+add it.
+
+it 
+
+was 
+
+so 
+
+beautiful 
+
+to 
+
+add 
+
+it, 
+
+I 
+
+got 
+
+the 
+
+50 
+
+bucks off, clicked it, done. 
+
+it's 
+
+part 
+
+of 
+
+my, 
+
+this 
+
+is why identity 
+
+is 
+
+so 
+
+important 
+
+on 
+
+the internet, 
+
+Google 
+
+is really good at managing your identity, 
+
+it 
+
+strings 
+
+through all 
+
+your 
+
+Google, 
+
+applications, 
+
+including YouTube TV. 
+
+great 
+
+product, by 
+
+the 
+
+way. 
+
+and 
+
+now 
+
+I 
+
+can, 
+
+Add 
+
+or 
+
+subtract 
+
+any 
+
+of 
+
+my 
+
+content 
+
+bundles 
+
+with 
+
+a 
+
+click of a button. There's no call centers. There's no nothing. 
+
+It's
+
+just 
+
+perfect. 
+
+And 
+
+also 
+
+the interface itself is wonderful. 
+
+[00:39:13] Alex: yes. 
+
+[00:39:14] Troy: one other thing. 
+
+[00:39:17] Alex: and 
+
+[00:39:18] Troy: There you go. 
+
+[00:39:18] Alex: of 
+
+it.
+
+[00:39:19] Brian: got it just for the Olympics. 
+
+[00:39:20] Alex: Yeah,
+
+[00:39:21] Troy: Yeah. 
+
+Cypress had 
+
+a great team 
+
+this year.
+
+[00:39:23] Brian: Oh, really? 
+
+[00:39:25] Alex: no. 
+
+I 
+
+will 
+
+watch the 
+
+MLS on Apple 
+
+TV. You 
+
+were, 
+
+you were going to start a sentence
+
+story. Sorry. 
+
+[00:39:30] Troy: Well, 
+
+the pieces 
+
+of the puzzle, 
+
+it 
+
+feels like 
+
+there's 
+
+going to be 
+
+a 
+
+couple 
+
+of 
+
+scaled
+
+entertainment 
+
+bundles. 
+
+Netflix 
+
+will 
+
+be one of them. Some combination 
+
+of, 
+
+this 
+
+is 
+
+going 
+
+to, 
+
+by the 
+
+way, completely reconfigure, existing 
+
+entertainment 
+
+companies 
+
+like NBC. 
+
+But, 
+
+so 
+
+it'll 
+
+be 
+
+Netflix, it'll 
+
+be 
+
+some 
+
+mix 
+
+of 
+
+like Paramount, 
+
+Peacock, and 
+
+Max, or Warner. 
+
+But 
+
+what's interesting, 
+
+the 
+
+pieces of the 
+
+puzzle 
+
+that, 
+
+I 
+
+think... 
+
+are 
+
+the ones 
+
+to watch are what happens to 
+
+sports 
+
+and 
+
+news, 
+
+because 
+
+if it 
+
+wasn't 
+
+for 
+
+sports and 
+
+news, 
+
+you don't 
+
+need NBC 
+
+anymore.
+
+Right? They're 
+
+going to 
+
+take 
+
+their 
+
+best 
+
+programming and put it on Peacock. 
+
+Nobody's
+
+watching 
+
+NBC 
+
+in 
+
+primetime. So 
+
+the 
+
+only 
+
+reason NBC exists is 
+
+for... 
+
+some 
+
+sports 
+
+Olympics. 
+
+Increasingly, 
+
+they're 
+
+putting 
+
+that 
+
+on 
+
+peacock 
+
+and football 
+
+and 
+
+news. 
+
+What's 
+
+interesting 
+
+about 
+
+sports? 
+
+And 
+
+I 
+
+think that Apple kind of gets this 
+
+well, 
+
+I'll 
+
+call it the notification power 
+
+of sports.
+
+And 
+
+what I 
+
+get 
+
+from 
+
+a 
+
+combination of 
+
+Apple 
+
+News 
+
+and
+
+Apple 
+
+TV 
+
+are 
+
+notifications 
+
+when Microsoft A 
+
+game is starting
+
+or 
+
+when 
+
+something 
+
+important 
+
+is happening in a sporting event.
+
+And 
+
+so that notification 
+
+comes 
+
+through 
+
+on 
+
+their 
+
+platforms, 
+
+which 
+
+are the dominant 
+
+platforms 
+
+in 
+
+the 
+
+world, 
+
+for 
+
+me anyway, 
+
+the 
+
+iPhone
+
+and 
+
+my laptop. 
+
+And 
+
+so 
+
+now 
+
+they've got 
+
+a 
+
+really important
+
+promotional 
+
+vehicle 
+
+to 
+
+get 
+
+people to 
+
+pay 
+
+attention, 
+
+Sports, 
+
+the 
+
+scores, 
+
+when 
+
+it starts, action 
+
+in 
+
+a 
+
+game,
+
+tennis 
+
+is 
+
+going 
+
+to a 
+
+final 
+
+set. 
+
+something is happening, two 
+
+minute warning, whatever. 
+
+And 
+
+so 
+
+notifications 
+
+in sports 
+
+represent. 
+
+a 
+
+really, 
+
+really important way of getting consumer attention in a 
+
+platform world where we're all not tuning into 
+
+the 
+
+programming guide.
+
+[00:41:14] Brian: That is true, but I would say this,if you look at NBC's primetime broadcasts of the NFL, Last year they averaged 19.9 million viewers. that's Sunday night football. That is Mar Marquee. Amazon Did had Thursday night football, which usually are dreadful games. And I'm expecting the same this Thursday with the Eagles against the 
+
+world. So 
+
+you're 
+
+about to qualify this statement that you're trying to make? 
+
+Yeah. well, 'cause I, I try to be realistic. Amazon averaged 9.6 million viewers. And ESPN did 13. 4 million. I mean, free broadcast TV, I think, is still going to have a place for, you don't need a notification. It's like, put on the TV at 8pm on Sunday.
+
+[00:41:56] Troy: I 
+
+don't even, 
+
+but that's 
+
+fine, but that's not going 
+
+to 
+
+exist 
+
+in the 
+
+future. 
+
+And I 
+
+don't even 
+
+know 
+
+how 
+
+to 
+
+turn on the 
+
+TV to get what you're talking 
+
+about, nor do 
+
+my children. 
+
+What 
+
+do you mean 
+
+turn 
+
+on the TV 
+
+to 
+
+watch what
+
+[00:42:06] Brian: I don't know. You like, you just, you put on the television. Look, 20 million people.
+
+Why are more people seeing NBC's like broadcast of, are they getting notifications to watch on the phone? They're just watching 
+
+on 
+
+[00:42:19] Troy: first of all, 
+
+mine was a forward looking statement about the important and, and so for context for the listeners and
+
+for 
+
+you, Brian, 
+
+the notion
+
+is 
+
+sports. 
+
+Yes, 
+
+in 
+
+order 
+
+to maintain, 
+
+particularly 
+
+in the 
+
+big 
+
+sports 
+
+like
+
+NFL, 
+
+to 
+
+maintain 
+
+the size of revenue expected 
+
+by 
+
+the 
+
+league, 
+
+you 
+
+have 
+
+to 
+
+be 
+
+mass, 
+
+that content 
+
+has 
+
+to 
+
+go everywhere. 
+
+but 
+
+my point is, 
+
+it's 
+
+harder 
+
+and 
+
+harder 
+
+to be 
+
+mass 
+
+in 
+
+our world. 
+
+to 
+
+me, 
+
+sports 
+
+rights 
+
+go 
+
+to 
+
+places 
+
+that 
+
+a 
+
+have 
+
+monetization
+
+diversification. 
+
+i. 
+
+e they have 
+
+deep 
+
+pockets because 
+
+they 
+
+have 
+
+platforms 
+
+to 
+
+sell advertising and other 
+
+shit. 
+
+And 
+
+secondly,
+
+platforms 
+
+that 
+
+can 
+
+bring 
+
+you in
+
+to 
+
+the 
+
+broadcast 
+
+with 
+
+something 
+
+like 
+
+the 
+
+idea 
+
+of 
+
+a notification gives 
+
+a 
+
+large 
+
+platform, be it 
+
+Amazon 
+
+or 
+
+Apple 
+
+or 
+
+whomever 
+
+else 
+
+has 
+
+the, 
+
+scale 
+
+to 
+
+do
+
+that, 
+
+it 
+
+gives them 
+
+a 
+
+really 
+
+important way 
+
+of pulling customers into their 
+
+ecosystem. 
+
+My 
+
+point 
+
+is 
+
+sports 
+
+is 
+
+hugely 
+
+valuable to broad based 
+
+platforms 
+
+and, 
+
+the 
+
+connective 
+
+tissue 
+
+of 
+
+a live update is
+
+one 
+
+of the 
+
+really 
+
+important 
+
+reasons 
+
+because 
+
+it's 
+
+one 
+
+of the 
+
+last 
+
+remaining 
+
+few 
+
+things 
+
+that are 
+
+not polarized, not 
+
+polarizing like news 
+
+that 
+
+can bring people into an environment
+
+[00:43:34] Brian: So you think it's inevitable that the technology companies are the re bundlers when it comes to this? And that's why I think... 
+
+[00:43:41] Troy: on 
+
+the sports front, for sure, 
+
+[00:43:43] Brian: as sports goes, everything follows, right? I mean, to me, it's like, sports is the linchpin. It's what's holding together pay TV.
+
+I mean, you can talk about news, but really, I mean, 
+
+sports lasts. Well, 
+
+the 
+
+[00:43:53] Troy: the one 
+
+thing 
+
+I don't, I don't understand 
+
+what 
+
+happens 
+
+to news. Brian, Maybe 
+
+you 
+
+have a better 
+
+idea. 
+
+So
+
+like 
+
+I said, something 
+
+like 
+
+a 
+
+network
+
+television 
+
+largely 
+
+exists 
+
+today 
+
+because 
+
+of sports 
+
+and 
+
+news. 
+
+what happens 
+
+to 
+
+news 
+
+as 
+
+whose 
+
+opportunity 
+
+is that 
+
+as 
+
+it, 
+
+as 
+
+it 
+
+falters? 
+
+And 
+
+one of the things I was 
+
+thinking 
+
+about 
+
+is 
+
+as 
+
+cable 
+
+news 
+
+and 
+
+network 
+
+news 
+
+becomes 
+
+less 
+
+relevant, 
+
+what 
+
+an amazing opportunity for the New York Times
+
+[00:44:21] Brian: Oh shit, I thought you were 
+
+going to say... I thought you were going to say Cheddar. 
+
+Yeah, 
+
+I 
+
+saw 
+
+cheddar 
+
+at the 
+
+gas 
+
+station 
+
+the other 
+
+day. Did you? Was 
+
+the volume super high? 
+
+I ran into some people from Cheddar and they said like apparently the gas station owners like control that and I went on twitter then because they said they get I rate emails from people because they go to fill up their gas and like The chatter is on 11 and blasting people.
+
+[00:44:47] Troy: what 
+
+I'm saying 
+
+is 
+
+like 
+
+how 
+
+news 
+
+manifests 
+
+either as 
+
+like outside 
+
+of the 
+
+cable 
+
+bundle 
+
+is 
+
+interesting. 
+
+Can 
+
+CNN 
+
+have 
+
+a material, profitable? 
+
+News 
+
+app, 
+
+right 
+
+outside 
+
+of 
+
+the bundle.
+
+Tvd don't 
+
+know. 
+
+that 
+
+business requires scale, 
+
+right?
+
+And to staff your 
+
+bureau, 
+
+you 
+
+need a 
+
+lot 
+
+of 
+
+people, 
+
+Especially 
+
+if you 
+
+have 
+
+a 
+
+kind of 
+
+global 
+
+perspective,
+
+You 
+
+have 
+
+to 
+
+have 
+
+people 
+
+all 
+
+over 
+
+the 
+
+world.
+
+You 
+
+have to have, 
+
+you 
+
+know, just 
+
+lots and lots of 
+
+reporting. 
+
+I 
+
+think 
+
+that 
+
+news is actually 
+
+really 
+
+interesting 
+
+because 
+
+network 
+
+positions 
+
+in news 
+
+are 
+
+going 
+
+to 
+
+atrophy. 
+
+I 
+
+think it's going to be 
+
+tough times for cable news, 
+
+And, 
+
+in 
+
+many ways 
+
+a 
+
+company 
+
+that's an 
+
+app 
+
+And 
+
+that 
+
+has 
+
+their 
+
+own 
+
+set of 
+
+sort
+
+of bundled features like 
+
+games and recipes 
+
+like 
+
+the 
+
+New 
+
+York 
+
+Times 
+
+has 
+
+a 
+
+chance 
+
+to continue to grow market share 
+
+against 
+
+something 
+
+that 
+
+they 
+
+would've otherwise 
+
+We would've 
+
+never seen them in the 
+
+same 
+
+competitive 
+
+bucket,
+
+New 
+
+York 
+
+Times versus 
+
+M S N B C or c M N. 
+
+and 
+
+I think those worlds are colliding. 
+
+So that, so that, that's my, 
+
+take
+
+on this. 
+
+[00:45:47] Brian: Let me ask you this, Alex, like on this world's colliding. Can you imagine, like,Apple owning Disney? It's always the thing that's held out there, that 
+
+eventually, Apple Disney. 
+
+[00:45:58] Alex: Yes and no. I 
+
+think, 
+
+Apple
+
+owning 
+
+Disney 
+
+without the 
+
+parks makes 
+
+a 
+
+lot 
+
+more sense to
+
+me. Like 
+
+the 
+
+parks
+
+would 
+
+be, I 
+
+think, 
+
+culturally, 
+
+really 
+
+difficult, It 
+
+would add hundreds of 
+
+thousands of 
+
+employees, 
+
+and it's definitely
+
+not, 
+
+[00:46:11] Troy: But we 
+
+could 
+
+have 
+
+like 
+
+an 
+
+iPhone
+
+theme 
+
+area 
+
+[00:46:15] Brian: you imagine goofy walking around with like an ipad 
+
+
+
+[00:46:17] Troy: No, we could run, you 
+
+could ride the iPhone.
+
+[00:46:20] Brian: Yeah
+
+[00:46:21] Alex: The 
+
+presentation today was interesting because it 
+
+really showed 
+
+Apple being very confident. 
+
+They had 
+
+a comedy 
+
+sketch 
+
+about 
+
+the 
+
+environment, which shows a 
+
+really 
+
+confident 
+
+company.
+
+and 
+
+I 
+
+wonder, you 
+
+know, bringing on such a 
+
+large organization like 
+
+Apple
+
+would... 
+
+Seriously derail 
+
+things and they, 
+
+don't 
+
+And 
+
+the 
+
+ones that they did, beats, 
+
+you 
+
+know, it's just lingering there. I mean, 
+
+[00:46:43] Brian: Is that a big acquisition?
+
+[00:46:44] Troy: Several 
+
+[00:46:45] Alex: know. I 
+
+mean, it was one of their bigger ones, but it wasn't a 
+
+huge acquisition. I 
+
+mean, it 
+
+was beats audio. It 
+
+was 
+
+like 
+
+it made it 
+
+made 
+
+Doctor Dre a billionaire.
+
+So I 
+
+think it was pretty big. yeah. 
+
+that 
+
+being said, I 
+
+don't see 
+
+them buying Disney. I think 
+
+Disney is 
+
+too too 
+
+much of a mess. 
+
+and 
+
+also I 
+
+wonder, I mean, 
+
+governments are starting to pick up,
+
+the season has begun, 
+
+right? 
+
+Like Google's is under 
+
+scrutiny. 
+
+All these 
+
+companies are going to be 
+
+heavily 
+
+scrutinized.
+
+I don't 
+
+think there's, we're going to be 
+
+seeing 
+
+that 
+
+many big acquisitions. I 
+
+think 
+
+they're all, 
+
+factoring 
+
+that 
+
+in 
+
+now, right? The 
+
+Microsoft Activision thing is 
+
+still,
+
+if 
+
+that was a difficult 
+
+acquisition, 
+
+Apple buying Disney would 
+
+be even 
+
+bigger.
+
+Because 
+
+Microsoft is 
+
+not a 
+
+dominant player in 
+
+gaming, 
+
+I think 
+
+we're going 
+
+to see 
+
+a lot more 
+
+sports 
+
+acquisitions, 
+
+though, 
+
+I 
+
+can see That 
+
+happening. That
+
+seems 
+
+[00:47:30] Brian: Yeah, I think the model, it seems to me, is like, why own it when you can do deals without owning the content and getting in there? I mean, if you look at what Apple is doing with messy that's a better and cleaner model where everyone is benefiting without the stickiness of, you know, straight out.
+
+And I think, I assume that's why the discussions that apparently are going on between Amazon and ESPN, is some kind of transaction in which they're aligned in some ways. But I don't think tech companies want to own large media companies at all. I don't think they want the headaches. 
+
+[00:48:04] Troy: I 
+
+totally 
+
+buy 
+
+what 
+
+Alex 
+
+is 
+
+saying. I 
+
+think 
+
+parks is a 
+
+nightmare. 
+
+I 
+
+certainly don't think Apple wants to clean up 
+
+the 
+
+legacy 
+
+media 
+
+business. 
+
+I actually 
+
+think 
+
+what's going to happen 
+
+is
+
+this 
+
+is 
+
+maybe a bold
+
+prediction, 
+
+but I think 
+
+that,
+
+Disney's 
+
+going to 
+
+be
+
+taken 
+
+apart.
+
+I 
+
+could see Apple 
+
+buying 
+
+some 
+
+of 
+
+their 
+
+IP.
+
+I 
+
+could see 
+
+Apple being interested in some of 
+
+their franchise 
+
+IP.
+
+[00:48:25] Alex: Like the whole LucasArts stuff would fit well 
+
+into 
+
+Apple. 
+
+I mean, 
+
+Apple 
+
+owning 
+
+Star 
+
+Wars and Indie and 
+
+all that type 
+
+of stuff, 
+
+you 
+
+know, 
+
+that kind 
+
+of works, 
+
+right? 
+
+I think they're 
+
+[00:48:35] Troy: yeah, I 
+
+mean, I 
+
+think that there's a 
+
+lot of 
+
+reasons to believe that Disney gets taken apart
+
+[00:48:40] Brian: I like you buried the lead.
+
+This is perfect. This is going to be the... I think this is going to be the title. Disney Envy.
+
+Just took
+
+us an hour or two minutes to get here. It's all 
+
+about the journey,
+
+not the destination. 
+
+[00:48:53] Troy: It 
+
+would 
+
+be 
+
+tragic 
+
+to see 
+
+the 
+
+theme 
+
+parks 
+
+in, I 
+
+mean I, I couldn't 
+
+personally 
+
+care less, but, 
+
+you know, do you see them 
+
+in the 
+
+hands of 
+
+like Red Flag or 
+
+one 
+
+of those 
+
+other companies 
+
+that 
+
+does a 
+
+bad job 
+
+of managing. 
+
+[00:49:05] Brian: Flags. Six 
+
+flags, 
+
+I grew up going to Great Adventure in New Jersey. It was 
+
+always like a, it's a potpourri of humanity. 
+
+[00:49:13] Alex: That being 
+
+said, if 
+
+Six 
+
+Flag 
+
+bought 
+
+Disney 
+
+Parks, 
+
+that 
+
+would 
+
+be a 
+
+red 
+
+flag. 
+
+
+
+[00:49:19] Troy: that's what I meant. 
+
+[00:49:20] Alex: I think Disney is, is still 
+
+strong enough. I, I 
+
+can see 
+
+them 
+
+selling 
+
+the sports. I can 
+
+see 
+
+them selling, 
+
+parts 
+
+of 
+
+their 
+
+inventory. 
+
+But,
+
+[00:49:27] Brian: it's 
+
+going to 
+
+be hard to 
+
+find 
+
+somebody 
+
+If anyone wants ABC, I think.
+
+[00:49:31] Troy: You 
+
+know, 
+
+I wondered about that today. I 
+
+was walking down the 
+
+commercial 
+
+strip 
+
+in 
+
+Dublin 
+
+and 
+
+I 
+
+saw
+
+a 
+
+Disney store 
+
+in the 
+
+main commercial 
+
+area 
+
+and there 
+
+was 
+
+no 
+
+one 
+
+in 
+
+it. 
+
+and I 
+
+was just like,
+
+do 
+
+kids 
+
+really 
+
+care about old Disney IP anymore?
+
+is 
+
+that 
+
+a 
+
+thing?
+
+I 
+
+just wonder 
+
+the world isn't kind of moving ahead 
+
+quickly 
+
+without Disney.
+
+[00:49:51] Alex: It 
+
+always surprises me how well
+
+those 
+
+live action
+
+versions 
+
+of the 
+
+old 
+
+cartoons 
+
+do, 
+
+even though there 
+
+must be 
+
+some 
+
+diminishing returns, 
+
+I think it's 
+
+in 
+
+some cases, yeah, 
+
+they 
+
+still 
+
+own 
+
+like 
+
+really, 
+
+really, 
+
+valuable
+
+IP, 
+
+[00:50:03] Troy: It's 
+
+true, 
+
+Alex, 
+
+but 
+
+remember,
+
+and again, 
+
+what, 
+
+I'm saying 
+
+is 
+
+is 
+
+meant 
+
+to 
+
+be 
+
+just 
+
+provocative, but remember that.
+
+You 
+
+know, 
+
+many 
+
+families 
+
+parked 
+
+their children 
+
+in front 
+
+of Disney I. P. as 
+
+they 
+
+were 
+
+growing 
+
+up 
+
+and it 
+
+created 
+
+a 
+
+strong 
+
+lifelong 
+
+connection with those characters in those narratives 
+
+and 
+
+increasingly,
+
+
+
+that's 
+
+been taken over by social media.
+
+[00:50:25] Alex: I 
+
+mean, 
+
+a 
+
+lot of 
+
+younger 
+
+kids 
+
+still 
+
+spend
+
+time in front 
+
+of 
+
+the 
+
+[00:50:29] Brian: I find it strange adults that have a connection to like Disney characters, I 
+
+think is Uhoh, highly suspect 
+
+[00:50:35] Alex: shots 
+
+fired at Disney adults. 
+
+[00:50:37] Brian: without children who go to Disney World like for like a honeymoon or something.
+
+That's weird. 
+
+Listen, we, Disney. 
+
+Thank 
+
+God, my wife and I were aligned on that completely. 
+
+It's 
+
+not considered for a
+
+honeymoon.
+
+[00:50:53] Alex: Wait, What's
+
+the, 
+
+what's the, 
+
+what's the, 
+
+problem? 
+
+I 
+
+mean, 
+
+[00:50:56] Brian: it's so weird. 
+
+[00:50:57] Troy: It's, Alex,
+
+It's, 
+
+creepy, Come on. 
+
+[00:51:00] Brian: so weird. I mean, you might as well dress up like a character at that point. 
+
+[00:51:04] Troy: No, 
+
+you're, it's 
+
+masking
+
+furry
+
+behavior.
+
+[00:51:07] Brian: Yeah, 
+
+exactly. but even that, like who, gives a 
+
+shit? Like, I mean, I 
+
+don't 
+
+I 
+
+don't do
+
+it. 
+
+[00:51:11] Alex: we 
+
+only 
+
+have 
+
+one 
+
+life 
+
+to 
+
+live, 
+
+right? 
+
+who's to tell 
+
+like 
+
+people 
+
+what the, what to 
+
+do? 
+
+[00:51:16] Troy: I 
+
+would 
+
+have never predicted that 
+
+you would 
+
+be standing up 
+
+for Disney 
+
+adults.
+
+Alex. 
+
+[00:51:20] Alex: I mean,
+
+look, people have a certain type of energy. They need to release it. Like, I 
+
+don't 
+
+want to 
+
+yuck 
+
+anyone's 
+
+yum or 
+
+whatever. 
+
+I 
+
+guess 
+
+we're good.
+
+[00:51:28] Troy: Since 
+
+when did you come 
+
+out, 
+
+what's going 
+
+on 
+
+right 
+
+now?
+
+[00:51:32] Alex: There's 
+
+nothing 
+
+going on. 
+
+I 
+
+don't, punch 
+
+down on
+
+what people love to 
+
+do. If
+
+you, 
+
+[00:51:35] Troy: Except 
+
+on the whole ad community. 
+
+[00:51:37] Alex: This is 
+
+like your whole, like,coastal elite shit.
+
+this is 
+
+why 
+
+media companies are 
+
+failing is because you 
+
+can't see what 
+
+you 
+
+want 
+
+to act 
+
+all, 
+
+liberal, 
+
+but 
+
+then 
+
+you 
+
+still 
+
+judge 
+
+people's 
+
+behaviors.
+
+Who 
+
+cares 
+
+what 
+
+people
+
+do? 
+
+I 
+
+don't care. 
+
+[00:51:49] Brian: All right, fine. I take it back. I still think it's weird though, 
+
+[00:51:52] Alex: You know, 
+
+what's 
+
+weird. 
+
+It's 
+
+weird 
+
+that grown men talk 
+
+about. 
+
+Younger 
+
+men running around grass holding a 
+
+ball 
+
+and 
+
+talking 
+
+about statistics of 
+
+shit 
+
+that happened 
+
+20 
+
+years 
+
+ago. Like it 
+
+matters. 
+
+That's 
+
+also weird.
+
+it's 
+
+it's right. Exactly. 
+
+So, 
+
+So, 
+
+that's not like a thing 
+
+thing we fabricated.
+
+I don't 
+
+think 
+
+it's any 
+
+weirder to be like 
+
+into 
+
+a 
+
+vintage 
+
+edition 
+
+of like a 
+
+1955 Mickey 
+
+Mouse 
+
+mug as 
+
+it is, 
+
+you 
+
+know, 
+
+talking 
+
+about the 
+
+time 
+
+in 
+
+72 when 
+
+[00:52:19] Troy: different. 
+
+[00:52:19] Alex: when 
+
+somebody 
+
+dropped a 
+
+fucking 
+
+ball.
+
+[00:52:21] Brian: I 
+
+still remember that. I don't give
+
+[00:52:26] Alex: I don't give a 
+
+shit. 
+
+like, 
+
+honestly, 
+
+like, I 
+
+equally do not give a 
+
+shit about 
+
+all 
+
+these 
+
+things.
+
+[00:52:33] Brian: All right.
+
+I think we should end it on that note. 
+
+I 
+
+[00:52:37] Alex: think we 
+
+have a 
+
+good 
+
+product. 
+
+Or,
+
+or, something. 
+
+[00:52:40] Brian: I, I decided to go with the, the stuff that lead, cause John Kelly was you know, with their like newsletters, they have the little tidbits like, and then it gets to the main thing. And so that was the approach for this, podcast.
+
+[00:52:52] Troy: so 
+
+to 
+
+wrap 
+
+up 
+
+the 
+
+bundling 
+
+conversation, 
+
+Brian, which, 
+
+you 
+
+know, I 
+
+like 
+
+to 
+
+wrap 
+
+it 
+
+up 
+
+for 
+
+folks. 
+
+I 
+
+mean, what's 
+
+the 
+
+good 
+
+news, bad news, who 
+
+wins, 
+
+who 
+
+loses, 
+
+right? 
+
+Like 
+
+it's 
+
+great for 
+
+consumers, 
+
+the 
+
+resolution of 
+
+the Disney charter thing, which 
+
+happened
+
+today 
+
+or yesterday, 
+
+means that 
+
+increasingly 
+
+my 
+
+relationship with 
+
+my 
+
+content providers is like 
+
+a marketplace. 
+
+Like 
+
+if I'm buying from a 
+
+cable 
+
+company, 
+
+I'll 
+
+have 
+
+Choices 
+
+around 
+
+what 
+
+goes 
+
+into 
+
+the bundle 
+
+and what doesn't which is what consumers have 
+
+been 
+
+wanting for years 
+
+I 
+
+can now pick up a 
+
+streaming 
+
+service 
+
+around 
+
+that. So 
+
+we're 
+
+seeing
+
+and 
+
+we 
+
+now have 
+
+Apple 
+
+and 
+
+YouTube
+
+and 
+
+amazon 
+
+And 
+
+Roku that basically 
+
+are platforms 
+
+to 
+
+buy content services, 
+
+right? 
+
+I 
+
+can pick and 
+
+choose 
+
+what I 
+
+want to 
+
+buy. 
+
+I can 
+
+use 
+
+it 
+
+for 
+
+a 
+
+while 
+
+like 
+
+Alex I can get 
+
+rid of it after 
+
+the 
+
+olympics 
+
+are 
+
+over. 
+
+so 
+
+I 
+
+have 
+
+more choice 
+
+I 
+
+can get it 
+
+ad 
+
+free 
+
+or 
+
+not 
+
+ad free 
+
+hopefully 
+
+it'll mean that 
+
+You 
+
+know the 
+
+people 
+
+that 
+
+provide 
+
+internet 
+
+connectivity 
+
+will 
+
+do 
+
+a better 
+
+job of that Or 
+
+whoever provides 
+
+my 
+
+phone 
+
+service 
+
+will do a better job of that Not unlike
+
+when 
+
+my 
+
+phone was 
+
+unbundled 
+
+by Apple
+
+from, 
+
+my 
+
+carrier, 
+
+right? 
+
+So 
+
+I 
+
+didn't 
+
+have 
+
+to 
+
+get 
+
+a 
+
+phone. 
+
+Like 
+
+I just 
+
+go buy 
+
+a 
+
+phone 
+
+and 
+
+get 
+
+whatever 
+
+carrier has the best 
+
+plan and 
+
+the best 
+
+coverage. 
+
+And 
+
+so
+
+it's 
+
+kind 
+
+of mimicking 
+
+that, evolution. 
+
+And 
+
+so this is a 
+
+good 
+
+thing. 
+
+It's 
+
+all 
+
+good.
+
+And 
+
+what I think 
+
+you'll 
+
+see 
+
+is a 
+
+few 
+
+entertainment 
+
+services. 
+
+Sports 
+
+will go to the people with the biggest 
+
+reach 
+
+and 
+
+deepest 
+
+pockets 
+
+and 
+
+the 
+
+best 
+
+ability 
+
+to 
+
+monetize.
+
+Sports 
+
+remains the last 
+
+bastion 
+
+of 
+
+live 
+
+tune 
+
+in, 
+
+so 
+
+that's 
+
+important. 
+
+and 
+
+news, 
+
+who 
+
+knows 
+
+what 
+
+happens to 
+
+news. 
+
+It's 
+
+confusing, the news people. 
+
+
+[00:54:30] good product
+---
+
+[00:54:33] Troy: On that, I have one more complaint. So it's the, bad product of the week. 
+
+[00:54:37] Brian: Oh, okay. 
+
+[00:54:38] Troy: I was in london and 
+
+I 
+
+booked 
+
+a 
+
+flight 
+
+really 
+
+late 
+
+to 
+
+go 
+
+to 
+
+Dublin.
+
+And 
+
+my 
+
+only choice 
+
+to get there 
+
+when I wanted 
+
+was 
+
+Ryanair. 
+
+[00:54:46] Brian: Oh, dear. 
+
+[00:54:47] Troy: and 
+
+it's 
+
+like 
+
+greyhound 
+
+buses. It's 
+
+dirty. 
+
+It's 
+
+uncomfortable. 
+
+But 
+
+more 
+
+importantly, 
+
+we 
+
+had 
+
+a 
+
+bunch 
+
+of 
+
+bags, right? So I went up and we were there like a good hour. 
+
+
+
+[00:54:57] Troy: Oh 
+
+my 
+
+god.
+
+So 
+
+it 
+
+reminds 
+
+me 
+
+of 
+
+the 
+
+Timu 
+
+thing 
+
+because 
+
+the 
+
+whole 
+
+model 
+
+isn't 
+
+based on. 
+
+it's 
+
+based on the 29 
+
+fare 
+
+or 
+
+the 
+
+100 
+
+fare, whatever, 
+
+and 
+
+then the 
+
+upsell, 
+
+you 
+
+gotta, 
+
+get money 
+
+on 
+
+the back 
+
+end of the 
+
+consumer, 
+
+which 
+
+becomes 
+
+a 
+
+kind 
+
+of 
+
+piranha 
+
+like 
+
+experience. 
+
+And 
+
+I 
+
+get 
+
+to 
+
+the 
+
+desk, 
+
+and 
+
+I'm 
+
+an
+
+hour and a 
+
+half before the flight, which by 
+
+the 
+
+way 
+
+was 
+
+delayed 
+
+an 
+
+hour, 
+
+so it 
+
+was 
+
+technically 
+
+two 
+
+and a half 
+
+hours 
+
+before 
+
+the flight. 
+
+And 
+
+I said, 
+
+you 
+
+know, 
+
+I 
+
+got 
+
+bags. 
+
+I 
+
+just 
+
+thought I would 
+
+check 
+
+in, 
+
+here's
+
+my 
+
+shit. 
+
+And 
+
+they said, 
+
+you
+
+didn't 
+
+check 
+
+in 
+
+online, 
+
+it's 
+
+55 euros 
+
+ahead. 
+
+and 
+
+I 
+
+said, 
+
+well, 
+
+I'll 
+
+do 
+
+it 
+
+now. 
+
+And 
+
+they 
+
+said, well, sorry, sir. You have to do it two 
+
+hours 
+
+before. And 
+
+it 
+
+was 
+
+like 
+
+I 
+
+was 
+
+at 
+
+like 
+
+an hour
+
+40. 
+
+So 
+
+I spent 200 
+
+bucks 
+
+just 
+
+checking in. 
+
+Checking 
+
+in 
+
+to 
+
+go to, 
+
+from London to Dublin
+
+monsters.
+
+These 
+
+people are monsters, 
+
+[00:55:43] Brian: It's it is the quintessential adversarial business model Reiner's is fairly despicable, 
+
+but it's the same time. it's like 29 year old flights. 
+
+[00:55:52] Alex: right, but 
+
+it's 
+
+allowed. why is 
+
+it 
+
+I'm 
+
+going to sound like 
+
+I'm going to sell sounds. So 
+
+[00:55:57] Brian: the European who wants to 
+
+[00:55:58] Alex: no, no, I'm 
+
+actually I'm going 
+
+to sound 
+
+pretty 
+
+Silicon 
+
+Valley 
+
+here. 
+
+I don't 
+
+I 
+
+don't 
+
+want to get into whether the 
+
+fact that super cheap flights is really great for 
+
+the 
+
+environment or 
+
+whatever, but 
+
+it's more 
+
+that, 
+
+this 
+
+type of anti 
+
+consumer behavior is 
+
+only really 
+
+allowed 
+
+to exist 
+
+in an industry 
+
+that has monopolized 
+
+and 
+
+hasn't innovated in so 
+
+many 
+
+years,
+
+so 
+
+what happens 
+
+to an 
+
+industry like 
+
+that? 
+
+like we 
+
+talked 
+
+about 
+
+bundling is somebody 
+
+like 
+
+Netflix 
+
+can come in and innovate 
+
+and then 
+
+create a 
+
+product, which is much better for the consumer. 
+
+But 
+
+the, 
+
+airline 
+
+industry is 
+
+so 
+
+tightened 
+
+down 
+
+and 
+
+so 
+
+held 
+
+back by 
+
+technology
+
+that 
+
+the 
+
+only 
+
+innovation 
+
+is 
+
+to 
+
+just 
+
+drop the 
+
+prices. And 
+
+it's 
+
+really 
+
+interesting to 
+
+read about 
+
+Ryanair's
+
+nearly,
+
+like 
+
+the way they 
+
+make product 
+
+decisions 
+
+is, nearly like. 
+
+treating the 
+
+customers 
+
+like cattle, 
+
+like 
+
+there's 
+
+stuff 
+
+that 
+
+happens 
+
+from what 
+
+happens in the meeting room there and the 
+
+type of, 
+
+principles they 
+
+abide by and it's, 
+
+really 
+
+rough, 
+
+but 
+
+that's the only 
+
+way to innovate in 
+
+that 
+
+industry.
+
+And it's 
+
+just 
+
+a 
+
+sign that the 
+
+airline 
+
+industry is 
+
+just,
+
+you 
+
+know, 
+
+it's 
+
+just 
+
+stuck 
+
+there.
+
+[00:56:58] Brian: Would it 
+
+be like unethical for you to use your powers of like design and product for that purpose? 
+
+[00:57:05] Alex: Would it be unethical?
+
+[00:57:06] Brian: Well, like, you can use them in order to like improve consumer experiences and stuff. But like, I assume if you're in that role at Ryanair, your job is complete opposite. 
+
+You're like, okay, 
+
+like, how can we trap these people? And like, how can we like screw them over? Or 
+
+[00:57:21] Troy: yeah, upsell 
+
+percentage.
+
+[00:57:26] Alex: well, there's 
+
+upsell percentage and there's also what I 
+
+think and it's 
+
+the 
+
+bucket you 
+
+fell into troy and it's 
+
+called, it's lovingly called 
+
+the 
+
+idiot
+
+tax So, 
+
+you know 
+
+that 
+
+five percent of 
+
+people are 
+
+not going to know what the 
+
+fuck they're 
+
+doing So 
+
+they're 
+
+going to end up 
+
+paying 200 to 
+
+check 
+
+in
+
+Those 200, 
+
+those 
+
+whales, right? Unintentionally, 
+
+but 
+
+they're 
+
+acting as whales are 
+
+actually going to 
+
+allow, 
+
+the 
+
+dude who's checked in 
+
+six 
+
+months ahead of 
+
+time and 
+
+bought the 
+
+ticket on a discount 
+
+to 
+
+get a 35 
+
+year flight. 
+
+if it 
+
+wasn't built around like capturing 
+
+idiot tax, 
+
+then 
+
+I don't think their business model would 
+
+work. if 
+
+it makes 
+
+you feel better. you 
+
+were 
+
+an 
+
+important 
+
+part 
+
+of 
+
+that, entire 
+
+cycle, 
+
+Troy.
+
+you s 
+
+[00:58:02] Troy: feel 
+
+better. Well, 
+
+I'm now 
+
+I 
+
+got to leave, 
+
+but 
+
+I'm 
+
+going 
+
+to go 
+
+to a good product, which is 
+
+I'm 
+
+going to go to an excellent 
+
+Irish 
+
+pub. 
+
+Good 
+
+[00:58:09] Brian: Great. Enjoy. 
+
+
+[00:58:10] outro
+---
+
+[00:58:11] Brian: Thanks so much for listening. As always, I welcome your feedback. My email is brian@therebooting.com, and if you enjoy this podcast, and I hope you do, please recommend it to others, and leave us a rating and review on Apple, Spotify, or wherever you listen to this podcast.
+
+great. 
+
+Good episode. Thank 
+
+you 
+
+guys. 
+
+[00:58:27] Troy: Bye. 
+
+
+

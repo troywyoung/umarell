@@ -1,0 +1,805 @@
+PvA S2E79
+===
+
+[00:00:00] Brian: 
+
+[00:00:00] Sara: Where are you, Brian? Are you in Brooklyn? 
+
+[00:00:02] Brian: No, I'm in Miami. 
+
+[00:00:03] Troy: Brian's not kind of a Brooklyn type. Have you ever lived in Brooklyn, Brian? 
+
+[00:00:06] Brian: I lived in Dumbo, which isn't really Brooklyn. It's like a brand activation. 
+
+[00:00:11] Sara: I'm so confused. I thought you gave up on Miami.
+
+[00:00:14] Brian: Well, we moved back to New York, but then, Miami called us back. of both worlds. 
+
+[00:00:19] Sara: do you live?
+
+I can see the Washington Monument from my window right now. 
+
+[00:00:24] Brian: I lived in, Washington for two years.
+
+[00:00:26] Sara: I know, I remember, but it wasn't your
+
+place. 
+
+[00:00:28] Brian: I didn't love it, I gotta admit, but I don't think it bears many, much resemblance to when I was going to the Hawk and Dove. So Hawk and Dove's still there?
+
+Oh good.
+
+Tune in.
+
+[00:00:39] Sara: Tune in there. These are the, these are my college bars. Yeah,
+
+[00:00:43] Brian: when I was like 25.
+
+Should we get started?
+
+[00:00:46] Troy: Yeah, why not?
+
+[00:00:47] Sara: let's do it.
+
+
+
+
+[00:00:47] Intro
+---
+
+
+[00:00:47] Episode start
+---
+
+
+
+[00:01:10] Brian: Welcome to a new edition of People vs. Algorithms, a show about detecting patterns in media, technology, and culture. I'm Brian Morrissey, and each week I'm normally joined by Troy Young and Alex Schleifer. This week, with Alex still traveling on the other side of the world, Axio's senior media reporter Sara Fischer joined Troy and I to break down the current state of the world.
+
+of the media business. Sara has covered the media business for Axios for the past seven years after starting her career on the sales side, which I think gives her a unique perspective that many journalists lack. Sara's weekly newsletter, Media Trends, is a must read. I've done a few podcasts with her over the years, including one earlier this year at Rebooting Show, another podcast I do.
+
+I encourage you to check that one out. during that episode, I noted. how many of the headlines of Sara's pieces were rather downbeat. And I often hear a plea from listeners and readers for more optimism in discussions of the media business. I hear you. I'm sympathetic to that.
+
+At the same time, I try to balance highlighting those undeniable bright spots with a dose of realism. And because there is a growth story to tell in the media industry, and we talk about it in this episode, too often the struggles of legacy players obscure some of those bright spots and there is palpable feeling.
+
+That exists, and it's just reality that more shoes are going to drop in the media business as it undergoes yet another distribution disruption. As Troy notes in this episode, same as it ever was. One point that Sara made that stands out is that creating distinctive journalism Is being rewarded in the marketplace in some pockets.
+
+Okay, it's often to say make better journalism as a prescriptive. That's great, but it's more complicated beyond the New York Times success. And we discussed the now semi viral chart. About how much of the time spent with the New York times brand is in non news areas like gaming. You know, the Atlantic has made real progress in building a sustainable business through the strength of its journalism.
+
+It recently topped a million paid subscriptions and it is now profitable. imagine that. And same time, the realist in me says that this isn't a solution for all legacy brands. The Atlantic playbook, Isn't necessarily the right one at other publications, like Time, for instance, where the brand serves as more of a central node for other businesses, such as experiential awards, franchises, a studio business, commerce, you name it in this market.
+
+It doesn't pay to be sentimental. I mean, Time still does good journalistic work, such as its scoop late last year of a rift between Ukrainian President Volodymyr Zelensky and his top military commander. But Time, which took down its paywall last year, is pursuing a far different strategy. And that's okay.
+
+we're going to need a bunch of different strategies. we talk about that. And among the other topics we cover, why TikTok is winning, The death of aggregation is a competitive advantage. Why social media is a big reason why women's sports is having a big moment right now. The New York Times, as an extensible model or not, why the most promising growth areas still lie in niches and the future of print magazines as marketing pieces.
+
+Now on to our conversation.
+
+All right, Sara, thank you for joining us. Sara, you're the senior media reporter at Axios. I think this is our third or fourth podcast together. You're a reliable drawl and a wonderful conversationalist. So thank you for joining us. If this doesn't do well, it's all Troy's fault because we've A B tested.
+
+[00:04:39] Sara: Thanks for having me. I appreciate it. And you mean you can't fully blame Troy. If it doesn't work out, it could just be me.
+
+[00:04:45] Brian: I don't think so. I don't think so. 
+
+[00:04:47] Troy: I don't think 
+
+I sent you the time for the podcast, so I had a, there was a clerical error on my part,
+
+[00:04:52] Brian: yeah,
+
+[00:04:53] Troy: which Brian's kind of
+
+[00:04:54] Brian: well, Troy's one of those people who's had assistants for too long. And then they're like, when
+
+[00:04:57] Troy: my whole life pretty
+
+[00:04:58] Brian: they're like, they're adrift at sea. but luckily, Sara is like a true journalist who can just
+
+absolutely just turn it on and, be cogent and insightful about all these topics.
+
+[00:05:12] Troy: My favorite thing talking to Sara, I had breakfast with Sara last week and my favorite thing was when she was. her sort of instinct around like how people actually consume media. Maybe it was a little bit of Axios book talking, but I think it was truth. It was truths.I just find it's, it's maybe rare that even journalists are really reflective of how people actually want to, or how they actually consume the news.
+
+[00:05:36] Brian: Okay, well, lay it on us,
+
+[00:05:38] Troy: Yeah. 
+
+Well, you had a lot of theories, Sara.
+
+[00:05:40] Sara: I think more people are consuming TikTok and short form video than, you know, establishment press likes to think. And it's because, you know, we pour so much time, money, effort, resources into quality journalism. And the vast majority of what people want to hear about is Taylor Swift and Travis Kelsey on Tik TOK or fashion trends.
+
+You know, we are just not in a period right now where people care a lot about politics and news. Compared to the 2016 Trump era, where people were obsessed and fascinated. Like we're just not there. And I think a lot of news organizations are sort of in denial. There are others that are not, and they're really leaning into lifestyle products because they get it, but there's just no way that one could say that this country is obsessed and fascinated with the news cycle, like we used to be.
+
+We're just not.
+
+[00:06:30] Brian: But that was always a historical anomaly, wasn't it? I mean, 2016, Trump is an anomaly and that period was anomalous to history. And I feel like people have been tuning this stuff out for a while. We, we used to hear all the time that people are apathetic and not paying attention and then all of a sudden it's like, wait, maybe you should pay attention a little less to
+
+[00:06:50] Sara: So they're apathetic. I agree. And they have been, but what's different is. We have such a wider array of media channels and things to absorb your attention than we did in the past when the news cycle was 
+
+[00:07:01] Troy: I think that's right. And I also think we had systematic delivery of a news update that was part of our sort of daily calendar in the past that meant we were all kind of had a baseline of information, I feel. And now that's just not part of what we do. Like nobody watches the six o'clock. I mean, maybe your parents do but like not a lot of folks do that.
+
+[00:07:21] Sara: Yeah, not a lot of people get their, you know, news agendas set in the morning by newspapers, right? It's, it's totally different whether you're seeing an email on your phone or you're listening to a podcast or you're not consuming anything at all. Like it's just, everyone's news diet is 100 percent completely different and I think that is, that has been the major shift over the past 10 years.
+
+[00:07:41] Brian: So a big theme of this podcast, I think is that we're between eras. Right, and what that next era is, it seems like it's going to be defined by AI. And we're obviously coming out of a particular era. I would say it's probably around scale and traffic. But do you have a theory of the case, Sara? Because I'm interested in how you determine what you cover, because we've discussed this before, but you, it's just you covering media at Axios, so you could write about so many different things, and do you try to make sure that they map back to a big megatrend?
+
+And if so, what are they?
+
+[00:08:21] Sara: Yes, and I have two colleagues who helped me cover a lot of things on deals, Tim Basinger and Kerry Flynn. But I think the way we see it at Axios is, what is a smart professional need to know about media? And what could we deliver that is unique that others can't? So, for example, I don't do content reviews because there are a million blogs out there that are going to do a better job than I can of reviewing the latest episode of, whatever Game of Thrones or whatever show that it is, but where I think Axios is a lot of expertise is in the convergent the convergence of topics So whether it's a trend in political media I'm writing a story tomorrow with one of my colleagues in the politics desk about rfk's media Coverage, or if it's a trend about deals and media or markets and media, like that's where I think access does really well because we're a small, nimble subject matter expert focused, and we can team up to deliver really smart insights, mostly for people who are trying to get smarter faster for their jobs, where we're not as strong and where we don't really care to be as strong is like entertaining you with our coverage of the media.
+
+Like I don't do consumer based coverage. I'm like, what's the hottest thing on Netflix right now?
+
+[00:09:29] Troy: you had made an amazing point to me the other day that on one side you have the continuum you have breaking news when you break a story and then on the other side you have what Sara you have like, point of view or trendest point of view or sort of in depth,like a reported feature and you're like the stuff in the middle which is just sort of like aggregating up content for people has less and less relevance.
+
+can you tell us a little bit about your, thought on, on that kind of scale of things?
+
+[00:09:59] Sara: Yeah. It, I mean, there was a time. When in the media business ecosystem, there was value in aggregating things quickly and providing them in a, a format where you could be optimized on Google search, you know, through AMP accelerated mobile pages or on Facebook instant articles and gather tons of traffic and make advertising revenue off of it.
+
+And now that we're shifting more towards. You know, consumer reader revenue with subscriptions or events or membership programs or even donations Like you need to offer things that are super distinct. So for axios, we care a lot about scoops We care a lot about things called like conceptual scoops where it's not necessarily that I broke a story based off of sourced information It's that I was the first to say something about A piece of data that nobody else had found.
+
+And those are novel things. You're only going to get them on our site. We hope to drive the conversation and then have other people aggregate them. You know, if there's still some, if there's something that's really huge that another news outlet will do, will break, we'll still aggregate it and provide that service to our audience.
+
+But like our goal is to be distinct. And I think that there's more of a premium right now on distinctive journalism than ever before. I think there's more pressure right now. On journalists to be really, really distinctive. And that's actually super refreshing because I think for the past few years in the scaled traffic era, there was a lot more pressure to get clicks.
+
+And that led to quite frankly, like a race to the bottom in terms of quality. Now, especially in the media beat, I look at puck. I look at semaphore. I look at all these upstarts that didn't exist a few years ago with incredible reporters doing really good journalism like that to me is. Amazing. That's what we're aspiring to do.
+
+[00:11:35] Brian: What's, give me an example of a conceptual scoop that you're proud of recently.
+
+[00:11:41] Sara: I think a good example is we found data. We requested data. We went through a whole bunch of it to find what is the trajectory of growth in the ad market for Google and meta? And is it slowing? And to what extent is it slowing? And why? And what the data found is that for the first time, I think it was in 2022.
+
+Whenever I wrote that story, 2023, they would be representing less than half of the digital ad market for the first time in 10 years. And if you were to take a look at the data for the next 10 years, moving ahead, their piece of the ad pie is getting smaller and smaller and smaller, smaller as retailers like Amazon.
+
+Increase their presence. And so this notion of the duopoly, like it doesn't exist anymore. You know, they are no longer like the majority, the two of them. And so that was like, go combing through tons of data, representing it really well, visually. We had a ton of, news outlets from the wall street journal, all the way down to smaller trade blogs, follow us and, you know, report on that data after we were the first to find it.
+
+And that's not necessarily someone coming to me and saying Hey, I have this great stuff. That's me going out and asking like, Hey, what does this look like? What is the future trend? And then doing the work on the backend and sorting through the
+
+[00:12:51] Troy: Like the story today when someone mapped out time spent on the New York Times, and I know this might be debunked by you, Sara, a little bit, but more than half of the time on the New York Times is now on their apps, I think is what, where the data was from,
+
+[00:13:05] Brian: 
+
+[00:13:05] Troy: is in games, more than half.
+
+[00:13:07] Sara: Was that app data? Was that,
+
+[00:13:09] Troy: It says global time spent for New York owned apps.
+
+[00:13:13] Sara: so I
+
+[00:13:14] Brian: this meme that the New York Times is really a games company with, you know, news at the front.
+
+[00:13:19] Sara: here's what I would say about that. The most, the New York times is at this point, like far more revenue is coming from subscriptions than ads and the way that they're really making money on subscriptions is bundling them together. And so, you know, you look at time spent, which is important for engagement.
+
+And important for marketers, right? That you want to help them reach people through advertising. And that's an important metric. But what's more important is like how many new people are buying these subscriptions. that's the most key
+
+[00:13:48] Troy: Fair enough, Sara, but, you know, survey of one, I really like playing Connections every morning and it keeps me loyal to the app. And it is a really nice counterbalance to, you know, a lot of the trouble in the, to the lot of the trouble in the world. Yeah.
+
+[00:14:02] Brian: and also the Times, the Times shrank
+
+[00:14:04] Troy: Do you see what they did today on, on connections?
+
+You guys play connections?
+
+[00:14:08] Sara: what they do today. I
+
+[00:14:09] Troy: instead of words, you have to connect, you know, you have to connect conceptually different, different words together. and there's four rows of four, so there's 16 squares and you have to connect them. Today they did it with icons or like emojis and you had to connect the different sort of like little tiny images.
+
+So the first time they'd ever done it and people went nuts. We had a good morning.
+
+[00:14:31] Sara: mean, everyone's saying with that data, Oh, the New York times is a gaming company now. I mean, I think that the New York times is a lifestyle services company. In addition to a news company,
+
+[00:14:39] Troy: I got you. I totally get it. But you know, every media business has a little hack, right? Has a dirty little secret, has the content that's just way more efficient than anything else. And like dollar for dollar, these are like extremely, you know, productive investments, and people like them, their loyalty driving.
+
+I mean, it is worth noting that the biggest trend. in modern media is that you fight for distribution That's the that's the mega trend in media where you don't have a controlled system of distribution any longer So things that create loyalty and things that bring people back Are the things that you need to look for and I think that that's what's important about this story You know one one related thing brian and i've brought this up a number of times.
+
+I can't tell you now how well Apple is using sports data as a way to get me to pay attention to them. So they'll say, I'll get a notification on my phone or on my television or on my computer that the Nets Lakers game is, or the Nets Golden State game is heating up. Right? Like it's using a real time, you know, kind of data point to pull me into.
+
+you know, a service. And I think that's also representative of this trend. It's like, you can't rely on, the programming guide anymore. Right. So you have to find ways to get people connected. And that's why I think it's an important story.
+
+[00:16:07] Sara: mean, I agree, but I just, the thing I want to stress is if you, I'm looking right now at the New York Times, investor letter for the year. If you think about the ARPU, the average revenue per user for the New York Times digital only subscriptions, The news subscriptions, that, the amount of revenue that you're getting per news subscriber is nine and a half dollars.
+
+The amount of revenue you're getting from other single product digit, single product subscriptions, whether that be games or cooking, is three and a half dollars.
+
+[00:16:35] Troy: Right. But we don't, don't, don't I get games with my New York times sub or do I pay for
+
+[00:16:40] Sara: Well, if you get the bundle, yes.
+
+[00:16:42] Brian: Well, the bundle is where they're right. I mean, this is the success of the time. I mean, they've had a lot of success and I don't know how replicable it is. and I don't, do you have, I, we haven't seen. So everyone goes to the New York Times as a success case, and it is a success case, but I don't know if it is a model that can be replicated.
+
+Because it simply hasn't been, and why haven't, why, why hasn't the Washington Post pulled off this model? Why didn't the LA Times pull off this model? It seems like it's sui generis 
+
+[00:17:13] Troy: mostly because they don't have good apps and they haven't had good product thinking around it, I think.
+
+[00:17:17] Sara: Bundling we know works, it's just that the news industry has not figured it out perfectly, but we know it's working for music, we know it's working for retail, right? There's a reason why you get, you know, discounts for certain music or, television streaming apps when you get your Walmart Plus subscription, right?
+
+Amazon, the entire Prime subscription, right? Subscription is a bundle. So bundling works. I think the reason why that works for the times is like I said before, they're a lifestyle services company. They're, they figured out a target audience, which is mostly liberal elites, and they are serving them with things that they know they're going to like intellectual games, cooking recipes, product reviews for high end items.
+
+This works for their target audience if you want to build out ancillary services for your audience First of all, I think a lot of news companies don't know who their audience really is That's the problem with the washington post and second of all if you want to build out ancillary services for them You need to figure out what's endemic to their audience Lifestyle and their habits.
+
+And I think a lot of news companies, because they don't know their audience, they don't even know where to go in building that. And that's their huge issue. I think the journal endowed Jones does a pretty smart job. They have figured out that their audience is smart professionals. And so they give B2B data and services for those smart professionals and they sell.
+
+Enterprise bundles to people in the workforce, like that is a strategy that actually works. So it's not just that the times is the only one. I just think when we are comparing other national newspapers, most other national newspapers. Haven't figured that out, but there are some that are starting to get it.
+
+[00:18:46] Brian: Yeah, and I don't even know if there are any other national newspapers. The LA Times isn't a national, I don't know if the Washington Post, the Washington Post keeps going back and forth about
+
+[00:18:54] Sara: Yeah, and that's their problem, right? USA Today would be the other national newspaper But obviously the bundle that you get as a part of that is just access to other hyperlocal things if you even care But you're right. There's probably nothing that's parallel on the newspaper front on the national like news website front I mean It's, it's, it's, there's, we've talked about this a lot, Brian.
+
+It's like professional services journalism tends to do bundles really well with data and services and events and exclusive membership things. Nonprofessional services journalism for general audiences does not do so well.
+
+[00:19:25] Brian: Also, just a quick shout out to Al Newhart for his, I think it was Al Newhart, for the Cause, audience, distribution hacks are not new. I mean, what a brilliant distribution hack to get every hotel in the country to deliver the USA Today to people's door. I mean, amazing.
+
+[00:19:44] Sara: Yeah. I mean, you know, it's funny in DC. A big hack that we all used to do when we were selling, political subs was we would give them, We would make sure we had free distribution in starbucks and coffee shops at politico We did this and that way we were able to increase the distribution that we could go to advertisers and say look we reached X amount of million people in washington dc when in reality like you don't actually read that reach those many people in print You know what?
+
+I mean? These are not people who are like actively paying for your paper. It's just You're dumping them for free wherever you can within the DCDMA.
+
+[00:20:16] Brian: Yeah, so give me, give me, I want to talk about optimistic views of whatever this, this chaotic future is for, for media. We know the tech companies are going to be fine. I just, I trust that. but publishing and media companies are 
+
+[00:20:29] Troy: Aren't we, didn't we do the optimism episode already? 
+
+[00:20:32] Sara: We could do it 
+
+twice. 
+
+[00:20:34] Brian: we? 
+
+[00:20:35] Troy: All right. 
+
+[00:20:35] Brian: You don't want to do optimism? All right, 
+
+[00:20:37] Troy: well, it doesn't really, it doesn't really sell.
+
+[00:20:40] Brian: Optimism sells. Are you 
+
+[00:20:42] Sara: I'll give you some hot and some cold. Here's what I think is hot, and here's what's optimistic. I think you've got a lot of distressed properties finding better owners. So you think about Sports Illustrated coming under the umbrella of Minute Media, which is a unicorn
+
+[00:20:54] Troy: time over there. Crazy time. 
+
+[00:20:56] Sara: think about whoever takes on Paramount will be a better fit than it being publicly traded right now.
+
+[00:21:01] Troy: Authentic brands sued him today.
+
+[00:21:03] Sara: Yeah. And they probably have a Wait, who? The five hour energy guy?
+
+[00:21:07] Troy: Yeah. Yeah. And Ross sued him last week.
+
+[00:21:10] Brian: Oh man, he's a real like hedgehog. He really gets into it, right?
+
+[00:21:13] Troy: Yeah. He's a hedgehog. 
+
+[00:21:15] Sara: You have a lot of distressed assets that have better owners. I mean, look at Yahoo and under Apollo is doing much better than it was under Verizon. I'm seeing a lot of optimism in women's sports and a huge market being developed around it, which is
+
+exciting. 
+
+[00:21:29] Troy: Yeah.
+
+And We're seeing
+
+that in the, in the, in the tournament, right? It's so great. The numbers are really strong.
+
+[00:21:36] Sara: They're very strong. I think for talent, it's a really good time because even though there's a lot of layoffs, which is unfortunate, we also are seeing a new trend where media companies recognize you can't just unilaterally hold on to people and not give them opportunities to branch out if you want to retain stars.
+
+So Stephen A. Smith has a podcast deal with Odyssey, but he's still on ESPN. Taylor Lorenz works for the Washington Post, but she's doing a podcast with Vox Media. Jonathan Lemire, works at Politico, hosts a show on MSNBC. I think this is going to continue to be a trend of more talent flexibility, which is empowering for journalists.
+
+So there's like, threads of good, optimistic things that are happening. But I know you love to talk about the chaos, Brian.
+
+[00:22:14] Brian: No, I don't. No, no, no, no, no. I want to talk optimism. Troy doesn't want to, talk about optimism, but I want, I want to. Those are all good. let's go back to the women's sports one. Cause I find that really interesting. Cause at first I wasn't sure whether this was a grassroots thing or whether this was like the brands want, want this to happen, but it's happening.
+
+what, what do you see? What is the. I mean, obviously cultural changes, and there's just some, some amazing stars happening right now. How does that trickle down to and change the media
+
+[00:22:41] Troy: You know what I think a huge part of it is, Brian, is that a big part of sports and, and, and, you know, just watch the NFL to understand this is packaging, right? It's marketing and packaging. And I think that, you know, ultimately you're a sports fan. it's the, the, the drama that we create around something in the stories we tell and the way that we make it fun to watch.
+
+And finally, people are doing this for women's sports.
+
+[00:23:05] Sara: And we have this like, once in a lifetime generational talent. Caitlin Clarke is truly once in a lifetime, has broken the men's record, women's record.
+
+[00:23:13] Troy: but my take is that there's heroes in every tournament, right? there's always something, there's always a story. This is a particularly good one, I agree. But I think it's the way that we get people excited about the human narratives that make sports really addictive. I just think it's happening more because we decided to make it happen.
+
+That's
+
+[00:23:31] Sara: Well, what's happening is women are really good at social media. And if you take a look at the numbers on Instagram for women right now in sports, they are just crushing men. They know how to promote themselves on Tik TOK on Instagram. And as such, they're developing stronger fan bases, which now actually has trickled down effect because of NIL.
+
+So you see these women that are. Coming out with these massive deals in college. And then suddenly they're getting scattered and they're bringing those marketing partnerships with them to the WNBA with them, to the end of USL and bringing the viewership and the fandom with them. And so when you see the WN, NWSL striking this like landmark deal with four networks, scripts, ESPN, Amazon, CBS, like that, I think it actually does come from people following and being interested in the players.
+
+You're seeing so much momentum around women's clubs. It's amazing. It's unreal. They're selling at valuations that are just astronomical. the, the one concern, though, I have, and it's, it's a huge problem for women's sports, it's also a problem for men's sports, is The leagues are so desperate to cash in that they're dividing their rights amongst so many players that I do worry it gets a little bit of, burden some on consumers who now are like, all right, where do I find this game?
+
+I'm a fan, but I don't even know where to access this. Oh, I don't have a subscription to that service. I need to get primed to get this. there's a cost in the short term, I think of divvying up the rights, but. The overall deal packages are huge. Like numerically they're making so much more money.
+
+These leagues are for the women than they ever have in the past.
+
+[00:24:57] Brian: But that's also a story of the streaming marketplace, right? I mean, the unbundling ended up being, it got out of control for, I think, for consumers. it's hard to find anything. It's hard to know where anything is.
+
+[00:25:08] Sara: Yeah. And this is why I'm honestly kind of excited about the end of peak TV. there's that data that came out from FX that said last year was the first time barring the pandemic that the number of new original streaming shows. Has our new original scripted shows has started to slow. I think consumers are being unindated with new stuff across way too many services.
+
+And so now hopefully if you have consolidation among services, there's a little bit of a slowdown of new programming. Like it allows consumers to take a breath. Whereas before it was getting, and even now it was just so overwhelming.
+
+[00:25:37] Brian: I mean, I think overall we've reached peak, peak content. Like the idea of creating more content in most categories, it's, it's not a really compelling offer. and so maybe better would be
+
+[00:25:48] Troy: A lot of battles going on too, right now. Right. That makes it an interesting time in media. We have the sort of the mega battles like Kasson versus Zimmer or
+
+[00:25:57] Sara: TikTok versus Universal Music.
+
+[00:26:00] Brian: I can't believe he started with the Michael Kasson one,
+
+[00:26:02] Troy: Or Rona McDaniels versus, you know, the people of NBC.
+
+[00:26:06] Sara: Or NBC's people of NBC against its management.
+
+[00:26:10] Brian: So circular, circular
+
+[00:26:12] Troy: Peltz versus Bob Iger.
+
+[00:26:14] Sara: that's a good one. We're gonna get that proxy vote this Wednesday Which I think that Disney will pull through but what is so interesting is There was this huge wave of activist pressure around media, like even the New York Times had Value Act pressuring them, and they weren't doing anything wrong with their strategy.
+
+You know, News Corp was getting pressure to divest Dow Jones or their real estate business, like activists were coming out like crazy. And I think the success of the proxy vote on Wednesday with Nelson Peltz and Trion versus Disney could dictate whether or not activists continue to push. Because a lot of them have been, you know, largely unsuccessful in these battles.
+
+The only one that's been somewhat successful has been Elliott management. They put a lot of pressure under then Twitter and they got Jack Dorsey pushed out. They put a lot of pressure under Nielsen, eventually took it private. Like Elliott, they were the ones that pressured the divestiture of DirecTV. So Elliott wins.
+
+Everyone else, not as much. Yeah,
+
+[00:27:10] Troy: Disney too, right? We have Dana Walden versus, what's his name? Yeah, Patara from ESPN.
+
+[00:27:16] Sara: we're
+
+starting to see files come out.
+
+[00:27:19] Troy: Sherry Redstone versus the world. Versus, you know, whoever is going to pick apart that carcass.
+
+[00:27:25] Sara: I think Skydance, KKR, and, Redbird probably gets that bit. Cause she doesn't, Apollo, we reported, was interested. There were reports that Apollo wants that movie studio and TV studio. She doesn't want to sell it in pieces. I mean, she just, wasted all of her political capital trying to bring these firms together.
+
+To only sell them in pieces like five years later is, she doesn't want that. And I think that they'll try to get out the whole thing.
+
+[00:27:47] Brian: Yeah, so what is your, what is your take on on where the cable business ends up going? I mean, obviously it is YouTube TV is emerging is the big winner. but who else is a winner here?
+
+[00:28:00] Sara: Hmm, that's a good question. I mean You have the leagues still investing in cable. So the NFL in particular, I mean, they signed an eight year deal with ESPN not so long ago. we'll see how ESPN deals with that once they break out their like flagship network, which is basically they're taking their cable, network and separating it from the bundle.
+
+I'm very, in 2025, they say they plan to do that. I think that could have a huge impact on what happens with the bundle. But I think for the most part, you have to wait until the existing sports Expire. And I just don't foresee them. Even the newer ones that we're going to have to wait for NBA this year.
+
+I just don't foresee them lacking a cable component. I think it's pretty clear that we're going to get something here on ESPN or TNT. And so the cable doesn't collapse until that happens. And by the way, the floor for that, if you were to just say, okay, let's say everyone leaves cable, but sports bands, analysts will tell you that that's about 50 to 55 million households.
+
+That's still massive. Like most streamers would kill to have 50 to 55 million subscribers domestically. So it's, it's not, it's dying a slow death. It's not going away like overnight. I think the, the bigger shift that's going to happen is once we do decide, okay, it's done, you have to figure out how you're going to make as much money in the non cable world as you did the streaming world, and I think that's going to be very hard for most companies.
+
+[00:29:19] Troy: Oh my god, totally. What's your take on the fast world and things like Tubi?
+
+[00:29:23] Sara: There's just no, the, the, if you look at the numbers, right, the CPM, the cost for a thousand impressions that you could get on a cable television Is nowhere near that in streaming simply because one, we don't have the scale and we're trying to sell everything in such a targeted manner. You cannot, even though you can charge a higher CPM, a higher rate for a more targeted ad, you're not selling as large volume on those more targeted ads.
+
+And so I just think all of these companies are going to find themselves in a perilous position. They're not going to just take all of the TV ad revenue. It's not going to work that way. So there's going to have to be consolidation amongst those players, or they're going to have to figure out how to drive value.
+
+Outside of just advertising, which, you know, some are experimenting with all these crazy things, like shopping and TV and affiliate. And I don't think much of that honestly ends up working. I 
+
+[00:30:09] Troy: Do you need to shop on the TV when you can shop on your computer and it's right there or on your phone?
+
+[00:30:14] Sara: I think the companies that can marry like some strong retail data with connected advertising, full funnel inventory, like an Amazon prime will do just fine.
+
+And 
+
+[00:30:23] Troy: Yeah, but that's a, that's a data play. That's not a shopping play, right? that's validation for, you know,
+
+advertising performance. Yeah, yeah, for sure. But I'm just saying the act of actually shopping on your TV doesn't seem very
+
+realistic to me. 
+
+[00:30:36] Sara: no, I don't think it's very
+
+[00:30:37] Troy: I can hardly put my password in on the TV. You know, with your remote, it's pretty hard.
+
+[00:30:42] Brian: You don't have to with the QR codes and whatnot these days.
+
+[00:30:45] Sara: I don't think any of that works. I think this, I think the, everyone's saying like, oh, it's all about, ad supported, streaming TV. this is where the momentum is. And I agree. I just cannot foresee most companies free ad supported streaming services ever bringing them the type of money that they got from their very lucrative cable networks.
+
+And that's gonna, that could be the death for a lot of big entertainment 
+
+[00:31:07] Brian: Yeah, and it's also hard to measure. I mean the media business always just flees to the area that measurement, has not caught up yet and then just go on
+
+[00:31:15] Sara: You know who we should talk about, though? I gotta say, you have all these, upstarts trying to take on Nielsen, you have the amps, and yeah, they're striking these deals with TV companies, but if you talk to the NFL, they're not using any of those. they're still going with Nielsen, and so I will say, the death of Nielsen has been, you know, greatly exaggerated, or whatever that expression is, that's true.
+
+[00:31:35] Brian: I worked for, I, I, I have a 401k from Nielsen because they owned Adweek when I was there. I actually worked under the Boeing guy. He was running Nielsen and then he went to run Boeing. I don't know if that experience helped him in running Boeing. yeah, no, Nielsen has always been the, I mean, ever since I started, covering this industry, everyone was talking about how backwards Nielsen is and how it needs to be replaced.
+
+And guess what? Never has been. No.
+
+[00:32:02] Troy: Well, it was also a week of, sort of, vice stories. Did you guys notice that? Did you
+
+read the 
+
+one 
+
+[00:32:08] Brian: I read that like long one. That was like really strange,
+
+[00:32:11] Sara: And Shane apparently coming back in to buy up some assets
+
+[00:32:14] Troy: I love Shane.
+
+there was a story in the Hollywood Reporter and a
+
+[00:32:19] Brian: caught a few strays in that verge story.
+
+[00:32:21] Troy: He did, he did, but he also, you know, he responded.
+
+[00:32:24] Brian: He did. I like that. He had a really pointed quote. I wouldn't have buried that and that story he sort of threw the two co CEOs under the bus.
+
+[00:32:34] Sara: I'm curious to see what happens to some of these other assets, like Refinery29 being sold to Essence possibly. there's still a few other things that need to get shaken out. I think Karlie Kloss bought ID. You know, there's, what's going to be left, I'm not sure, but there's still a few things that need to be sold.
+
+[00:32:48] Brian: Yeah, they'll sell the agency and they'll sell a few other things. I mean, it's like going to be salvage operation, 
+
+[00:32:54] Sara: Yeah, it's crazy to think about like refineries sold in 2019 for 400 million. I don't think that they're going to get more than 40 million.
+
+[00:33:06] Brian: and Phillip should, should buy it back. If you're listening, Justin and Phillip, buy it back. every, the original, I 
+
+[00:33:11] Troy: They don't want, they don't, they
+
+[00:33:12] Brian: should,
+
+[00:33:13] Troy: don't want, to, Brian.
+
+[00:33:14] Sara: You know what? That's an
+
+interesting, 
+
+[00:33:14] Brian: no, but they should be forced to.
+
+[00:33:16] Sara: that's an interesting though, trend, Brian. if you think about network buying complex, they brought back all the originals to come in and run the place. 
+
+[00:33:24] Troy: Moksha and the editor guy, they brought him back. Yeah, they didn't bring Rich back. Rich Antonin, they
+
+[00:33:29] Brian: No, Rich doesn't want to be back. I asked someone, they said he's
+
+[00:33:32] Troy: No, he's too busy doing household posts on LinkedIn.
+
+[00:33:35] Brian: Yeah.
+
+[00:33:36] Sara: I think that you have some people who are looking at their old. You know distressed now assets and they're thinking like I could go back in there. I could just make it better I could just fix it.
+
+[00:33:45] Troy: think Reed Hastings has the right idea. He's going to. Open a ski club in Powder Mountain. He just bought Powder Mountain. That's a good call. Come on. Your victory lap is owning Powder Mountain. That's a good idea, don't you 
+
+[00:33:57] Sara: sounds nice
+
+[00:33:58] Brian: Buying a mountain sounds like a great idea if you got the money. is that a future, the, the distressed asset? Because unfortunately, I want to make this optimistic, but there are a lot of media brands are really just brands at this point, and they're going to be bought for the brand. And, you know, what Authentic Brands Group has done with various, you know, they do it outside of media too.
+
+That playbook is going to be run on a lot of quote unquote storied quote unquote iconic brands, it seems to me.
+
+[00:34:27] Sara: I mean, I think I feel as though forbes is in that category jess simply has done a lot of really smart things at time But I think time in a sense is in that category like it's no longer about the premium journalism anymore You're not going to the media You don't think of Forbes as being like the steward of all the big breaking stories in business.
+
+[00:34:46] Troy: Although they, they do catch a few now and then.
+
+[00:34:48] Sara: they 
+
+do absolutely 
+
+[00:34:49] Brian: coverage is good.
+
+[00:34:50] Sara: tech 
+
+[00:34:50] Troy: Yeah, I think you need to give Forbes a little more credit,
+
+[00:34:55] Sara: I wonder 
+
+[00:34:55] Brian: Troye, Troye is a Forbes stan for some unknown reason. no, I like, I mean, what am I saying? I like
+
+[00:35:01] Sara: The business is really, you know, heading into a trajectory time too, right. Where it's these like branded summits, you know, Forbes 30 under 30 Forbes, 50 under 50 Forbes, 30 into 30 Asia, right? Like it's 
+
+[00:35:12] Troy: the billionaires 
+
+[00:35:13] Brian: Dhabi,
+
+Billionaires Azerbaijan,
+
+[00:35:16] Sara: that's the business. Same thing with time, right? It's like time 100 AI, time 100
+
+[00:35:20] Troy: Yeah, I just think the feed on Forbes is a little more robust. So I give him credit for that. I mean, look at it. You can do the time thing, right? Which, you know, Jess has done a good job of bringing some urgency to the revenue side through largely through activations and the power of the brand. Or you could go the Atlantic route.
+
+And the Atlantic route is to invest in heavy journalism and, and, you know, try to find a path to subscribers and do it on the back of, you know, a patient philanthropic owner. And I think that Atlantic has done a good job of that, right? And I think by the time Jess got to Time, it was like, let's make money now because we spent too much money, even though I am, you know, a rich guy.
+
+So, you know, when, when Mark hired Jess to do, to be the CEO of Time, it was money time.
+
+And so, so I think, you know, there's, there just wasn't the appetite for, The kind of journalistic investment required to put that brand, you know, to, to, to bring it to a different place.
+
+[00:36:20] Sara: Yeah, I just think there's a different ethos and, drive in some of the new Upstarts on the news side. Like when you think about scoops, you're thinking puck, you're thinking semaphore, you're thinking Axios, you're thinking Politico, you're thinking like these newer, punch bowl, right? Like that, that's their whole value ad is just breaking news.
+
+And then when you take a look at some of these more legacy assets, it's, we used to be those people who broke all that news and now we are. Sophisticated brands that can curate, you know, experiences and people. And that is our value add. And I don't necessarily think there's anything wrong with it. I just think there's probably a happy medium between the two of being able to curate those stages and experiences, but also stay relevant enough day to day.
+
+[00:37:04] Brian: Yeah. Although I would say, you know, magazines were the original conceptual, conceptual scoop machines really. I mean, because it was an, it was a weekly, I mean, I grew up reading Time magazine and there weren't a lot of choices. There was no internet. So, it was a way to put in context all of what is going on in the world is think the business models to support that now, know, difficult.
+
+[00:37:26] Sara: You know what magazines are now they are marketing. If you talk to anybody who's still printing magazines, they've reduced the distribution. They do a thicker, more beautiful quarterly, and they want it to sit on your coffee table as a marketing experience so that you will buy into their other 
+
+[00:37:42] Troy: Your souvenirs. You
+
+know, I feel like we have the truth speaker on the pod today. She's the speaker of the truth, the hard truths. 
+
+[00:37:49] Brian: Hard
+
+Sara Fischer. That should be your brand extension. Tell, tell Jim that this superstar journalist trend was highlighted. Jim, if you're listening.
+
+[00:37:57] Sara: know, it's funny. We did a series at Axios called hard truths, and it was the, one of the hardest things we ever had to do. It was forcing all of our subject matter experts to do deep dives on DEI on our beats. And that was really, really, really enlightening. I think one of the big hard truths that we figured out was just like, there's so little investment in minority owned media right now.
+
+And always has been. but then, you know, there was an era during Black Lives Matter where you had group black and you had capital B was started, which is actually doing very well. and that seems to have died down. There's also something we're tracking closely at Axios, which is like the anti DEI backlash and what that means for investments in like minority media.
+
+But so the hard truths brand is already an Axios brand. I can't 
+
+[00:38:40] Brian: Okay, there you go. You can, you can take it over maybe. I don't know if you want to pivot away from the, the, the original. focus. but yeah, I mean, look, that was always, I don't want to say it was a zero interest rate phenomenon, but when times get tough, that stuff can sometimes unfortunately, get cut.
+
+And, I mean, group black never bought anything. I, I'm still
+
+[00:38:59] Troy: Yeah. But there's still, you know, in the game, aren't they? I was delighted to hear that friend of PVA Vivek Shah had actually made a significant investment in group black.
+
+[00:39:11] Sara: Yes, he did. Yeah.
+
+[00:39:12] Troy: And I thought that was super cool. And he told me that last time I saw him.
+
+[00:39:15] Sara: I'm very curious to see what he does, in all of, you know, Ziff Davis, what they do in buying a bunch of properties. I think that there's more to come there. They bought Lifehack, right?
+
+[00:39:24] Brian: Yeah.
+
+I mean, that is the real, to me, like on the publishing side, a really interesting thing is, is who the buyers that emerge because you have, you know, Zipf has a really, you know, for, for publishing, it's a very successful model, right? And some of their properties are very different than types of properties we talk here about a lot here, but they, they make money.
+
+And you know, there's a lot of areas of the media business that are nicely profitable. and they're just run differently from, from other, the other parts of the media industry that tend to get more focus,
+
+[00:39:57] Sara: You know, the role of business is really hard. Like outside has tried to do this with outdoor lifestyle magazines. They had big backing from Sequoia. They raised 150 million series B. They later had to do layoffs because it's hard arena group you're seeing is a whole nother issue, but that was a rollup, a publicly traded rollup that's struggling big time.
+
+have recurrent ventures, which is like a sort of like a private equity based digital world company. We reported countless times that they're having layoffs. And so like the idea that you could roll up a bunch of digital brands put behind them shared technology and back end services and power them is it's it's proving to be harder than I think a lot of folks took into account and.
+
+Well, I think Ziff Davis, or I guess what are they now? Are they Ziff 2 now? J2, Ziff Davis,
+
+No, they, they changed the J2 for a small period of time, but then they were like, nobody knows what this is, even for a B2B brand. them. They're smart because it's not just publications, right? It's like backend services. Right, the grimier, the, the, the closer you get to the grime, the more profits for sure.anywhere with a call center, you know that there, I'm sure there's call centers involved in, in, in Zip. Troy, do you know if there's call centers?
+
+[00:41:09] Troy: wouldn't surprise me.
+
+[00:41:10] Brian: I wouldn't surprise you.
+
+[00:41:12] Troy: that's that's that means that there's an operational complexity. They run data businesses. They run, you know, complex, you know, service content based businesses, everyday health and others. So, you know, I think it's probably there's a call center nestled in there somewhere.
+
+[00:41:28] Brian: Yeah. there's nothing wrong with the call center. it's,
+
+[00:41:31] Troy: The 
+
+[00:41:31] Brian: companies that have it. I'm, I'm happy to have a call center in Ireland, calling people up in order to, get leads and whatnot. no problem. So, give me an optimistic take on these negotiations with, between AI companies and the media
+
+[00:41:46] Sara: I'm not super optimistic about it. So, you know, I cover the trade organizations cause I'm here in DC. If the, you, if, if the. Industry came out with a very united front. They'd have a ton of leverage, but what happened was the New York Times sues OpenAI claiming billions of dollars worth of damages. And it's peers start striking these deals for, you know, so much, significantly less, it really is pulling the wind out of their sails.
+
+And we know News Corp and OpenAI are going to strike a deal. That's like coming pretty soon. When that happens. You know, they're not going to disclose how much, but you can imagine it's like similar to the Axel deal, right? We're not talking hundreds of millions of dollars, probably tens of millions of dollars makes it so much harder for the New York times to convince a judge that they deserve billions when their most direct rival is accepting tens of millions.
+
+And so I think you're going to continue to see these one off deals. Eventually years from now, New York times, open AI gets settled in court. It's somewhere in between what they're asking and the tens of millions that their peers are settling for. And. As an industry, we would have been much better off going in as a united front, and we tried it.
+
+Barry Diller tried to pull that coalition together, and it failed, in part because everybody has such disparate interests. And, we didn't do it. 
+
+[00:42:59] Brian: Yeah. 
+
+[00:42:59] Sara: that'll bite us.
+
+[00:43:00] Brian: So the economics change of the industry. Yeah. 
+
+[00:43:03] Sara: Yeah, 
+
+[00:43:04] Brian: we don't know
+
+[00:43:05] Sara: well I think that you're not, I think that the, let's say the New York Times sued OpenAI and not a single other media company struck a deal with an AI company, they would then be by default the position of the industry. But because that's not what happened, but because dozens of news outlets are likely going to strike these deals at a far smaller rate than what the New York Times is alleging in damages, they're not the default position of the industry, and it makes it harder for a judge to side with them.
+
+With as high of a number that they're demanding.
+
+[00:43:32] Troy: but let's, you know, even bigger picture. I think you're right, Sara, but I think that no industry was ever saved by suing the next frontier of a consumer service into oblivion. I just think it's incredibly short term thinking, right? So if there's, if it's a question of, yeah, is there an extra toll here that's going to make marginal improvement in my P and L?
+
+Great. The fact is that we're in the middle of a shift in how people get information. And, you know, we're going to have to differentiate the kind of stuff that we create so that it's different from what the machines, you know, suck up. that's just how it goes.
+
+and the idea that Barry Diller would get it's great.
+
+Get 5, 10, 20 media companies together, there's hundreds of them. There's hundreds of them that all want a piece, that all think they deserve more than they're gonna get. The idea that an AI company is gonna become the central bank for media is insane.
+
+[00:44:29] Sara: I totally agree with you. Here's where, how my brain sees it. There's a reason why you have, let's look at the streaming world right now. If you are not considered a traditional pay TV company, you are not required by law to have direct negotiations with local networks, there's a huge regulatory battle about this right now, because that could.
+
+Really undermine the streaming industry's business. It's similar thing is happening here I'm not saying that open AI becomes a central bank, but I think sometimes Small legal or regulatory definitions do help you define and carve out your business model moving forward And I do think that this New York Times open AI case will set the 
+
+standard 
+
+[00:45:09] Troy: Okay. Right. 
+
+But really what we're fighting about is there was a distribution mechanism that we tuned media businesses to that existed for a long time. And I, by the way, will exist for a long time in the future. And, um, Yes. Yeah. Yeah. It's like people, it's not going to get switched off immediately.
+
+Listen, if you want to find like all that a page created by, you know, a motivated, intelligent person is, is a formatted query when you think about it, right? Like it's a page still has value. just because the machine can crunch up a bunch of information and spit it back at you doesn't mean that it's always going to be better than something that was created thoughtfully by, you know, loving hands.
+
+So, you know, I just think that That a, it's going to happen way slower than you think. I think we get caught up in, you know, I mean, it was like the old, you know, the joke at our dinner, Brian, when, when our good friend Reed said to you, Hey, Brian, like slow, your role perplexity. Are you kidding me? AOL still makes 400 million or something like that, you know,
+
+like 
+
+[00:46:13] Brian: that too. I thought it was revenue.
+
+[00:46:16] Troy: Well, I don't
+
+think there's a lot of costs on it. My point is things
+
+change more 
+
+[00:46:21] Brian: costs 
+
+[00:46:21] Troy: than you think. And
+
+[00:46:22] Brian: dial up. Service
+
+[00:46:23] Sara: The whole model of private equity, right, is like you take distressed assets and you squeeze them for their profits faster than you foresee them declining. that's why private equity firms are gobbling up like distressed newspapers and like TV outlets. So I 
+
+[00:46:37] Troy: Yeah, that particular play has been,
+
+[00:46:39] Sara: I, I, I Sarah. Sara. Troy is very pro private equity. So watch, watch where you
+
+[00:46:43] Troy: I'm anti naivety is what I
+
+[00:46:46] Sara: it's fine, but no, I agree that it's not, the spigot isn't going to turn overnight. And you're already seeing like open AI is starting to pay, you know, again, not that we need to be relying on their. Funds to fuel our industry. But there you're starting to see there is a bit more of a thought towards fair value exchange, right?
+
+They're paying now Axel Springer for real time news. results in their queries. But I think you're right. Like the news industry has to figure out how they're going to fit into this. Like we can't just expect the handouts.
+
+[00:47:12] Troy: Yeah, you're going to see a lot of evergreen content get gobbled up because it's low value. And in the future, it's going to be functionally better inside of a chat interface. You're going to see a lot of snippets of articles that actually perform similar functions to what search did, right?
+
+They're citations, and they still drive traffic. You're going to see these new platforms as you have today, like perplexity start running advertising when they become you know, traffic brokers or attention brokers for hungry businesses that want to buy us the game with money, which is the history. All of that will keep existing.
+
+It just will manifest in different ways.
+
+[00:47:49] Sara: Totally. And just on the search thing, there was a time when if the New York Times published a 20, 000 word story and the HuffPost aggregated a 150 word story with a huge headline from one sentence in that 2000 word New York Times piece, they will get a higher search rank depending on the query. Then the times with that broke the story, because at the time, that's how Google's Algorithm was prioritizing what was best and most relevant for the reader.
+
+And so what did the times have to do they had to pivot to subscriptions, right? They had to pivot their business model around something else like the same thing's going to happen for those who publish the evergreen content They're now going to be doing affiliate more and they're going to be doing events more.
+
+Look at dot dash Expanding the food and wine festivals, right? this is the direction it's going They know that their evergreen content will get eaten They'll just have to move to something else that they don't feel like they have to compete You With the AI platforms on it's just a question of who can execute and who can do it fast enough.
+
+[00:48:40] Troy: Yeah. I think Neil Vogel is the face of the rebellion. You know, Neil Vogel was on the podcast. he's one of the great book talkers of all time. He's, quasi religious in the way he presents his company. It's awesome.
+
+[00:48:54] Brian: okay. Well, he's got zeal. That's good. what about upstarts? I mean, we, we need upstarts, right? who, who are upstarts that you're excited about? Cause I can remember in the previous generation, you know, Axios was an upstart. you know, at the time like Buzzfeed and Vox, unfortunately those are, you know, those models didn't, didn't do so well.
+
+there are some small, Smallish things happening right now. I would classify Semaphore and Puck as kind of smallish. And I think that's indicative of, where this industry is going. But who are upstarts that you think, are going to define sort of what comes next?
+
+[00:49:28] Sara: think it's the hyper hyper niche that's able to Make it right now angler and entertainment payload and space punch bowl and politics like go 404 and tech like go super niche Give yourself license to expand from there. Be a little bit profitable. Don't borrow too much money. That I think is what we're going to see in the future.
+
+If you try to, you know, raise a ton of money and do everything at once, like messenger style, 
+
+[00:49:55] Troy: But some money is, some money is good money. You know,
+
+[00:49:58] Brian: Troy loves high cost capital. Sara, if you watch yourself, I'll try to, I'll try to force some on you before the end of
+
+[00:50:04] Sara: some businesses. Let's go back to minute media. There are some businesses that have proven a niche value at like minute media. Specifically caters to not to sports publishing tech, like that is niche, but because they do it well, they have found a way to take on sizable investments. I mean, FanDuel, I think put in a few dozen million in the last round could be able to put something out.
+
+That's pretty meaningful. I mean, it's a big, successful business. 
+
+[00:50:31] Brian: Yeah, they're, they're, making it seemingly work. I just, the, the history of combining this, oh, we're, we're a platform, but we're also, we have publishers operating on it, is, is a little checkered, but I hope they, they, they make it work.
+
+[00:50:44] Sara: agree. my line.
+
+[00:50:45] Brian: What? That is checkered?
+
+[00:50:47] Troy: No, well, the platforms, right? You used to challenge me on that all the time. And it turns out that we were both right.
+
+[00:50:52] Brian: Well, Troy was doing this like a generation ago. Is it a generation ago at this point?
+
+[00:50:56] Troy: We were OG Platform Media, yeah. Remember when people were calling them platishers? 
+
+Yeah. Yeah, remember the Clean campaign?
+
+[00:51:05] Sara: I think there are a lot of people who have gotten out of that. Vox has completely ditched their tech. Efforts. The one I'm waiting on, like when is the Washington Post sell arc, like that is almost 10 years coming and still not profitable. that should be done at some point or
+
+[00:51:21] Troy: What about a couple of hot takes from Sara? Because you're like amazing, so I wouldn't mind throwing a couple at you. No,
+
+I want to get them from
+
+you, 
+
+[00:51:33] Sara: me. Hmm. Well, what kind of topic on publishing
+
+[00:51:36] Troy: let's get your hot take on Threads. 
+
+[00:51:40] Sara: on threads?
+
+[00:51:41] Troy: Yeah.
+
+[00:51:41] Sara: I don't think that engagement is nearly as is as nearly as good as they might pretend it to be. I think the all.
+
+[00:51:49] Troy: inaugural tweet or thread or whatever is all right, let's do this thing from AOC. It makes me want to kill myself.
+
+[00:51:56] Sara: I just think, I just think that everyone has tried to unsee X and they haven't done a great job of doing it. X has fundamentally changed. We're still heavily reliant. I actually was scrolling through X, screenshotting all the publishers that were running ads, ads now on X. I saw the information.
+
+I saw Puck, like it was just a temporary blip that people
+
+said they 
+
+[00:52:15] Troy: seems to like X. I see their ads on there.
+
+[00:52:17] Sara: Yeah. I think X is doing. It's holding its ground, you seeing all these competitors shudder. I don't foresee it being unseated by anyone, particularly not like Truth Social.
+
+The Truth Social numbers that came out today are like so sad. That's the biggest meme stock of all time. I'm 
+
+actually 
+
+[00:52:34] Troy: It's not even worth covering.
+
+[00:52:35] Sara: What are your thoughts on the Reddit IPA? 
+
+[00:52:38] Troy: I
+
+think that, well, you buy it for one day. Because that's the trend. Listen, I think they've, you made the point, Brian, not long ago that if it was easy to create a sort of high yield, high functioning, scalable ad model around it, they would have done it.
+
+it's a really difficult challenge. You have to, maybe it's slightly different time now. I think that There's a lot of intent in there, and that's what really matters if you want a high value performance ad product. so, so Google obviously deals in intent. They're the intent arms dealer of the world.
+
+Facebook has the big machines that turns browsing into intent, and they're able to optimize to give you performance. Reddit, Has a lot of forums where someone's like reviewing a credit card or something. This is a high intent environment. So I think that there's an opportunity for them to grow their. positioned significantly.
+
+Jen Wong is super smart. I, you know, I'm optimistic about that, but they have a long way to go and they're trading at a really big multiple. So I think it comes back down to earth. I think we need to see a couple quarters of solid over 20 percent growth, and then we can decide Sara, Brian, that would be my take.
+
+[00:53:57] Brian: Okay. 
+
+[00:53:58] Sara: It's just funny, you watch like the Pinterest of the world. And Pinterest stock is relying at this point on rumors that Google's going to buy it. I think that's what becomes of Reddit, right? It's not going to grow fast enough for it to be on its own, this high performing publicly traded platform. Company it's value.
+
+I think it's going to come from other bigger giants becoming interested in trying to buy it. What's different now though, versus a few years ago with the Pinterest rumors is, and again, I don't know who's going to be president, come November. the antitrust climate is so different. So if you're Reddit.
+
+It used to be that maybe in a year or two after, I don't know, quasi, okay, ad growth, your stock could spike on a buying rumor from a big rival tech firm. Like nowadays, it's really hard to get bought by a big rival tech firm because of the antitrust climate.
+
+[00:54:43] Troy: just for clarity on the Reddit thing, guys, the big ad machinery stuff that drives performance for small ROI focused advertisers is really, really investment intensive and really hard. Okay, it's really hard to do. And. I don't think you're going to see a bunch of big brands suddenly step in and say, Oh my God, Reddit, what a wonderful environment for my brand messaging.
+
+The way the revolution starts at Reddit is small people with things to sell, find, you know, and performance oriented marketers find ways of getting ROI out of Reddit. And the question is, are they going to have the savvy and the investment levels and the machinery to kind of harness that kind of performance advertisers where they, they're developing.
+
+You know, thousands of advertisers, not the business of, you know, the hundred that go to camp.
+
+[00:55:36] Sara: Totally answer is no right now. I mean,
+
+[00:55:38] Troy: well today it's snow so I mean TBD
+
+[00:55:40] Sara: But I mean, like, look at Snap. Snap has been trying to get at this since, what, 2018 when they went public, 2017. They are a 4. 7 billion ad business. That's not great. Nothing, but it's not massive. You know, meta is well over a hundred billion dollar ad business. I think it's a hard world to compete in.
+
+[00:55:59] Brian: Okay.let's actually leave it there. . 
+
+[00:56:01] Troy: Let's do it and maybe we'll finish and and maybe Sara will even have a point of view on this but I could do the good product corner
+
+you have something for good
+
+[00:56:09] Brian: product? You know, this 
+
+[00:56:10] Troy: you know, this episode kind of, jumped out of nowhere. but I could pull something out of my ear.
+
+
+
+
+[00:56:14] Good product
+---
+
+[00:56:17] Troy: I would start it by congratulating W magazine on their Beyonce cover,
+
+[00:56:23] Brian: The digital cover.
+
+[00:56:24] Troy: the digital cover, whatever. Sign of the times. give Brian Goldberg
+
+[00:56:29] Brian: Yeah, because Brian sells based on like how many people pass it around, 
+
+[00:56:33] Troy: right?
+
+So clearly, Beyonce is a goddess and I'm not like, you know, oh my God, I have every Beyonce album and I do all that thing.
+
+But I'd listened to the album twice today. And it, it's called Cowboy Carter. It's a double album. It's You know, this a little bit perplexing in that it's kind of half country and half, you know, other stuff But Beyonce has this way of kind of making albums that are events They're big and they're about power, you know, and they're about ambition and they're about challenging our views on social systems and, and, and the, you know, racial relationships.
+
+And, and I just think that it's an incredibly impressive album. there's a single on it called Texas Hold'em. That's number one on the hot charts. country songs chart. she involved this woman named Linda Martel, this black country singer who's had an album, I think in 1970 called Color Me Country, which she was the first charting, country hit by a, black woman.
+
+I don't know if you guys have heard the Miley Cyrus duet. I think it's called Most Wanted is amazing song. There's a Post Malone song on there that's kind of fun. And her interpretation of Dolly Parton's classic Jolene is definitely worth listening to. So the good product this week would have to be this Cowboy Carter release from Beyonce.
+
+[00:58:24] Brian: Okay,
+
+[00:58:24] Sara: Good do you think? 
+
+[00:58:25] Brian: I haven't listened to it.
+
+[00:58:26] Troy: Are you a fan? Either of you?
+
+[00:58:28] Sara: Yeah, definitely.
+
+[00:58:30] Troy: Brian, do you listen to like Steely Dan or something? What's your jam?
+
+[00:58:33] Brian: Steely Dan, mostly Steely Dan.
+
+[00:58:37] Troy: Dire Straits? Is
+
+[00:58:38] Brian: I don't, I mean, I don't rush to get the, the new Beyonce album. I'll, I'll, I'll, I'll listen to it. 
+
+[00:58:43] Troy: See what you think. 
+
+
+[00:58:44] Outro
+---
+
+[00:58:44] Brian: Thank you all for listening, and if you like this podcast, I hope you do. Please leave us a rating and review on Apple or Spotify or wherever you get your podcasts. That takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week. This is a great episode
+
+[00:59:05] Sara: thanks for having me, Brian. It's good to see you.
+
+[00:59:07] Troy: Thank you, Sara. You're the best.
+
+[00:59:08] Sara: Talk to you soon. Bye.
+
+[00:59:09] Troy: Bye.
+
+
+

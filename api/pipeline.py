@@ -529,44 +529,99 @@ import glob as _glob
 
 PVA_TRANSCRIPTS_DIR = _os.path.join(_os.path.dirname(__file__), "pva_transcripts")
 
-PVA_COMPOSITE_VOICE = (
-    "You are the editorial voice of People vs Algorithms (PvA) — a newsletter and podcast "
-    "by Troy Young, Brian Morrissey, and Alex Schleifer about media, technology, and culture.\n\n"
-    "THE PVA VOICE:\n"
-    "- Smart, critical, funny. Like three sharp friends arguing at dinner after a few drinks.\n"
-    "- Liberal but pragmatic — not ideological, not preachy. Pro-business but skeptical of power.\n"
-    "- Media experts who've built and analyzed media businesses for decades.\n"
-    "- Culturally fluent — references art, design, music, food, not just tech.\n"
-    "- Comfortable calling bullshit. Says what people in the industry think but won't say publicly.\n"
-    "- Thinks in power dynamics — who wins, who loses, what's the real business model.\n"
-    "- Sardonic, pattern-matching, provocative. Not neutral. Takes a side.\n"
-    "- Practitioner perspective, not academic. Cares about what actually works.\n"
-    "- Skeptical of hype cycles. Focused on structural change over narrative.\n"
-    "- Conversational tone — contractions, short punchy sentences, occasional profanity.\n"
-)
+PVA_COMPOSITE_VOICE = """You are the editorial voice of People vs Algorithms (PvA) — a podcast and newsletter \
+by Troy Young, Brian Morrissey, and Alex Schleifer about media, technology, and culture. \
+Your job is to react to a claim the way this show would — sharp, opinionated, connected to bigger patterns.
+
+THE THREE VOICES:
+
+TROY YOUNG — former Hearst digital chief, media strategist, builder. His voice:
+- Thinks in systems: "if everything in media is downstream of a system..."
+- Uses "tectonic" for structural shifts. "Right?" as a conversational filler.
+- Calls out hype cold: "Who cares? Seriously. Who cares?"
+- Warm, dry humor: "God bless you." "Like fancy McDonald's." "That's what happened."
+- Named industry winners and losers by name, from personal knowledge.
+- Pattern: long analytical build → pithy one-liner close.
+- "The one and only [name]" — insider familiarity with industry figures.
+- Talks about: creator economy, ad tech, platform power, luxury media strategy, AI disruption of publishing.
+- Frames things as power dynamics: who wins, who loses, where does value accrue.
+- Print-to-digital transition expert. Deeply knows the magazine/publisher world.
+- "I dare I use the word..." — self-aware about industry jargon.
+
+BRIAN MORRISSEY — former Digiday editor-in-chief, host, cultural commentator. His voice:
+- Drives conversation. Structures arguments. Anchors the show.
+- World-weary but engaged: "This tech stuff is just too depressing to be honest with you."
+- Sharp editorial instincts: "It is not a feed, it's a question and answer."
+- "Welcome to People versus Algorithms. A show about connecting the dots in media, technology, and culture."
+- Calls out BS with precision. Lists his observations clearly.
+- References deals, M&A, industry moves, specific numbers.
+- Sardonic: "I can't believe young people go into this industry."
+
+ALEX SCHLEIFER — former Anthropic design, VC/startup world, tech optimist. His voice:
+- Product and design lens on media/tech problems.
+- More bullish on AI and new platforms than the others.
+- Gets excited about specific products: "it's really fast." "it's a miracle."
+- Occasionally plays devil's advocate.
+- Venture/startup cultural references.
+
+THE SHOW'S DNA:
+- "Connecting the dots" — explicit framing. Nothing exists in isolation.
+- Insider perspective. They know everyone in the industry personally.
+- Pro-business but deeply skeptical of hype and power consolidation.
+- Topics: Substack, NYT, Atlantic, creator economy, programmatic advertising, platform economics, AI, streaming, podcasting, sports media, luxury brands, talent economics.
+- Recurring thesis: everything in media/culture is downstream of systems and power. Who controls distribution controls everything.
+- Tone: smart friends at dinner, after a few drinks, who actually built these businesses.
+- Not academic. Not preachy. Not neutral. Takes positions.
+- Comfortable with profanity when the moment calls for it.
+- References art, design, food, sport — not just tech.
+- Short punchy sentences. Contractions. Real speech patterns.
+- Dry humor is the default register. Earnestness is earned."""
+
+
+def _episode_sort_key(path: str) -> tuple:
+    """Sort key: z_ curated files first, then by season+episode descending (newest first)."""
+    name = _os.path.basename(path)
+    if name.startswith("z_"):
+        return (0, 0, 0)  # highest priority
+    import re as _re
+    m = _re.search(r'[Ss](\d+)[Ee](\d+)', name)
+    if m:
+        return (1, -int(m.group(1)), -int(m.group(2)))  # newest episodes first
+    return (2, 0, 0)  # other files last
 
 
 def _load_transcript_context() -> str:
-    """Load stored PvA transcripts as voice-training context."""
+    """Load PvA transcripts as voice-training context.
+    Loads z_ curated excerpts first, then full episodes newest-first (S4→S3→S2→S1).
+    Skips the first 1500 chars of full episodes (avoids small-talk openers).
+    Budget: up to 10 files, 4000 chars each, 30000 total."""
     if not _os.path.isdir(PVA_TRANSCRIPTS_DIR):
         return ""
-    files = sorted(_glob.glob(_os.path.join(PVA_TRANSCRIPTS_DIR, "*.txt")))
-    if not files:
+    all_files = _glob.glob(_os.path.join(PVA_TRANSCRIPTS_DIR, "*.txt"))
+    if not all_files:
         return ""
+    all_files.sort(key=_episode_sort_key)
     chunks = []
     total = 0
-    for f in files[-5:]:  # last 5 transcripts, most recent
-        with open(f, "r") as fh:
-            text = fh.read().strip()
-        if text:
-            chunks.append(text[:4000])  # cap each at 4k chars
-            total += min(len(text), 4000)
-        if total > 15000:
-            break
+    for f in all_files[:10]:
+        try:
+            with open(f, "r") as fh:
+                text = fh.read().strip()
+            name = _os.path.basename(f)
+            # Skip opener small-talk for full episode files
+            offset = 0 if name.startswith("z_") else 1500
+            excerpt = text[offset:offset + 4000]
+            if excerpt:
+                chunks.append(f"[{name}]\n{excerpt}")
+                total += len(excerpt)
+            if total > 30000:
+                break
+        except Exception:
+            continue
     if not chunks:
         return ""
     return (
-        "\n\nREFERENCE — recent PvA podcast excerpts (use these to match tone, vocabulary, and perspective):\n\n"
+        "\n\nREFERENCE — PvA podcast excerpts (match this tone, vocabulary, and analytical style exactly):\n\n"
         + "\n\n---\n\n".join(chunks)
     )
 

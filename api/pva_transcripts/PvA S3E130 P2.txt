@@ -1,0 +1,521 @@
+PvA S3E130 P2
+===
+
+
+[00:00:00] The Future of IP
+---
+
+[00:00:00] Brian: Okay, let's talk about I IP Law, Jack Dorsey, you know, released, we talked about how you, you wanna release memes these days and he's, he's pretty good at it. You know, he's, he's trying to be a Rick Rubin type. He's certainly looking more and more like Rick Rubin as the years go on. he just posted a, an X is, is that what we're calling it?
+
+A tweet, an X, whatever it is, delete IP laws. And Elon agreed with this. and you know, this is obviously people get very, I. Upset about IP on both sides. Right. And it is pretty clear though, with where we're going, that IP laws will need to be modernized. and so the people taking like extremist positions on one side, to me it's like free speech content, moderations, like, come on, like you gotta be grownups because this stuff is getting very, very, very messy.
+
+I mean, you look at the studio Ghibli, is it Ghibli or Ghibli? I don't know, style like art through Chachi pt. You know, I can understand how the artists are very upset at the same time. It was very fun to make a, studio ly image of Lake Troy on the mission accomplished, banner when GDPR 
+
+fell.
+
+[00:01:09] Alex: No. You know what else was fun? Napster was super fun. BitTorrent was super fun. I mean, I, I think it was, it was great, but at the end of the day, somebody has to pay artists, and I'm not, and, and I don't want this to sound like I'm just, like, IP law I think is perfect today.
+
+but, you always have to look at people's motivations. And one thing's for sure is that, because crypto didn't work out so well, Dorsey is now all in on ai,because he's very much a legacy guy 
+
+and he wants to, he wants to have a legacy 
+
+[00:01:37] Troy: I think you have to look at the motivations behind, behind the things that they're
+
+[00:01:42] Brian: Oh, yeah. Yeah. Co Everyone's biased. Everyone, everyone has their own sort of, you know, as what, what Nick said, like, you know, he's got skin in the game now. Everyone's got skin in the game, and that's fine, that's fine. 
+
+[00:01:52] Alex: Yeah. So, so actually there was a conversation with James Cameron and he said something interesting that got me thinking about is that, you know, in the age of ai, and I'm paraphrasing, what we're really going to have to do is look at the output and not the input, which is, which is the way IP has always worked, right?
+
+Like, when I'm making a a, my movie, I can use somebody's copyrighted material as a, as a, as a, as something to inspire me. But once it goes out into the public, you know, I need to, to have those rights. and in the same way with ai, I think we should be paying more attention to the outputs than the inputs.
+
+So, so the problem isn't really what these things ingest, but what you create with them now, I think. It becomes complicated because like, does that mean open AI should be forced to regulate the stuff because it looks like Ghibli, right? Or it looks like Disney, or it looks like a character that is copyrighted.
+
+but that's the type of stuff that's going to be very, very, very difficult. But it does mean a a, a that wouldn't mean such a huge rewrite of copyright law. but it would, it would, it would mean, something. I don't know what that means.
+
+[00:02:58] Brian: agreed. Troy.
+
+[00:02:59] Troy: Well, first observation is saying extreme things, you know, is the modern distribution tactic. So if Jack can say, get rid of IP law and you can agree with him, it's hard to, on some level, you can appreciate, again, these sort of, we're getting used to the, the kind of proclamations from, you know, whatever these big, you know, big, big, big thinkers that build things like that.
+
+We would be that the death of IP would accelerate innovation and, you know, get more people, you know, kind of using other people's ideas to build on them and make things and propel us forward as a civilization. So, I, I, I get it. I think what it also, ma to your point around, you know, what are, what are the motivations, I think it massively,creates, it creates massive value for the aggregators.
+
+And who, if you're an AI company, the last thing you want is to wade through, you know, a bunch of pesky IP litigation. So I think it makes sense. And, but you have to ask yourself what happens to, like pharma and entertainment companies when there's no longer incentives to invest and make things to really do, you know, kind of scaled innovation around an idea that can only be paid back through IP protection.
+
+And then we hear, you know, some fuzzy principles that, you know, we we're gonna use blockchain somehow to kind of register the providence of, of an idea and, and that will somehow protect, you know, the creator. I don't really understand
+
+[00:04:34] Brian: Yeah, I think the, the issue with all of these things is ip, like law is a regulation. It's like anything, the regulations are just rules it. These are rules, right? And rules are always twisted by incumbents to crowd out competition. They always are. That's why regulations, a lot of them end up being very well-meaning, but they end up doing the opposite of what they're intended to do because incumbent players use that to make sure that they don't have to face new entrants.
+
+And IP law is typical of that. You see, you see that the kinds of business process patents over the years and things like this entire area is rife with, you know, true like waste, fraud and abuse. and yeah, you wanna have incentives for people to make breakthrough biotech, et cetera. but. Particularly when it comes to, to media and ip, it's pretty clear that the genie is not going back in the bottle with, with ai.
+
+but time will tell as they say. 
+
+
+[00:05:33] AI Enterprise Adoption
+---
+
+[00:05:40] Brian: Did you see Andre Carpathy? I think he's actually an I AI expert. I think he, he qualifies as one, right? he had, he had an interesting post this week where he pointed out something kind of basic, but I think it's, it's important, which is that at this point of AI adoption, like individuals are.
+
+Ahead of the enterprise. And I think it, originally it was, it was, oh, this is gonna flood the enterprise. But it seems like enterprise adoption is lagging behind what just individuals can do because they, obviously, individuals can move quickly. They're not siloed into like groups of co of, of supposed experts within a company.
+
+they don't have individuals, don't have legal departments. At least they don't need permissions. and, and that's where the momentum is coming from. I thought this was pretty interesting. Is this, what is this how you see things developing ox. 
+
+[00:06:28] Alex: yeah, I think so. I mean, I think there's always the, the large company kind of change tax that needs to happen. A lot of,I think sentiment around AI is generally negative right from every study that we're seeing. And it's been shown that people are reluctant to apply to their work. You know, a couple of weeks ago we saw to, Toby from, Shopify, try to, to really engage the company by saying that performance reviews would be based on AI. Adoption seems to be working pretty well at Shopify, but I know it's not working well at other companies. I know it's creating chaos at other companies where people are like, I don't know what to use this.
+
+I'm being told to use this. It doesn't really work for me. And also I think part of the thing is that the tools are, the tools require a fair amount of flexibility and, and the qualities of like being able to try shit out, which actually don't, apply really well to cooperative work at scale, right?
+
+So when you're like vibe coding something, your vibe code is not something that you can just merge into like the bigger code base. And it's gonna make a lot of sense. You know, a lot of this, this stuff is messier sloppy, it's less organized. it's harder to plan. so there's a lot of structural reasons why just being a solo developer right now, you can probably like do 80% more than you could before because now you can do stuff that a designer could do.
+
+You could do stuff that an engineer could do. You could put all these things together and working by yourself on your own code base is, is, You know, relatively straightforward. If you work in a group, it's actually much harder. Just like the, the, the tools themselves make all of this kind of harder.
+
+yeah, so I think that you are definitely going to see like two or three person companies doing things that, are going to be pretty substantial. yeah, small, small teams right now have a huge advantage. I think it's gonna be hard to change large companies to adopt this stuff like so hard.
+
+[00:08:24] Brian: Yeah, but this is just another, this is another example of how being very lean and nimble, as lean as possible is such, is such a competitive advantage. and, and there's just so many different areas where the, the bigger you are, the more challenging it can be these days it seems. 
+
+[00:08:45] Alex: It's always been like that though, 
+
+[00:08:47] Troy: uh, no, but, but I, I think what's disruptive about, Alex, you make a great point about merging your vibe code into the code base of a company, and I think that that's written across every department. When you think about how legal response to the request to enable an AI feature, who's, you know, output is unpredictable, you know, big company litigious scenario.
+
+Like it's, it's, it's a fuzzy. It's a technology that's the opposite of, you know, the history of most technology we use. It's not declarative, the results are unpredictable and fuzzy. But I think what it does do, and the point that that he made in, in, in, in that expost was I think in some ways it starts to recon, it creates new, a a a really important new input into what modern industrial structure looks like, where you have far more companies that are built around a small empowered group of people that are using tools at the individual level in a new way.
+
+So I watch, you know, the example we brought up last week is how Brian works. And, you know, I've seen, you know, a new generation come into media companies and go, why are there so many people here? Like we, we, we don't need that many people. and, and I think we're seeing that in software and we're seeing it all over the place.
+
+So it's, it's, it's, it's probably great. Actually, it probably means you're gonna get, it's kind of like the creator economy, you know? And, and you're gonna get, you know, lots of innovation in, in, in, in the economy. And I think though, what you, what you can't do at kind of micro microscale, but at least not yet, is the kind of, you know, large scale Chinese type manufacturing that requires lots of people, lots of investment, incredibly sophisticated technology at scale.
+
+you know, the, that that kind of,you know, those kind of companies, you know, really benefit from, you know, industrial policy, huge amounts of investment and, and lots of people.
+
+[00:10:54] Brian: It seems like we're gonna have like armies of like one to like 10 person like companies and like a bunch of foxcon,
+
+[00:11:02] Troy: Yeah. Yeah. I was fascinated this idea of, do you know this idea of dark factories?
+
+[00:11:08] Brian: No.
+
+[00:11:09] Troy: It's a, it's a concept that you see in China and places. It'd be really interesting to see where there's no lights on inside because you don't need lights. 'cause it's just robots working. 
+
+Robots don't, don't need lights, 
+
+[00:11:22] Brian: dystopia.
+
+[00:11:23] Troy: dark factories. 
+
+[00:11:24] Brian: Is that what
+
+[00:11:25] Alex: we're gonna get? I thought you were going to talk about Ghost Kitchens, but Yeah, I think, I think having, a lot of the infrastructure now for software kind of works like the Foxconn industrial system where, you know, when you're making a piece of software, you are outsourcing a lot of the big stuff, a lot of the big stuff like the AWS, the server hosting, the AI itself, right?
+
+All, all of that stuff. You, the, the payment processing, all of these things that actually require big teams and a lot of, you know, legal experts and infrastructure and services, stuff like that. All that stuff you can plug into, right? So, so the software environment is already made for that. So a, a small team can build something at real scale now.
+
+
+[00:12:06] Elon's Legion
+---
+
+[00:12:06] Troy: Yeah. Meanwhile, Brian, it was interesting that Elon Musk is trying to create a baby factory, a
+
+[00:12:12] Brian: Yeah, a legion, his own legion. Alex has his legion, and Elon is going a
+
+[00:12:17] Alex: Uh, we should stay in LA and apparently you, you're not allowed to talk about Elon.
+
+[00:12:21] Brian: by making, his own legion to me. What was nowhere? This was a Wall Street Journal, I guess it was an expose. they've had a few good ones on the Elon beat. They were, they were the ones who got the, apparent,liaison that he had with, former vice presidential candidate and Serge Brin's ex-wife.
+
+this is a strange timeline we're living on. but the 
+
+[00:12:41] Alex: I think
+
+he's great. I just wanna put
+
+[00:12:43] Troy: But don't Hold on, Alex. Let him make the point. Let.
+
+[00:12:46] Brian: But the Wall Street Journal has, it's become friskier. I think we've mentioned it a few times here, but this is a great example. I don't think there was anything necessarily quote unquote wrong with the Wall Street Journal. It was just stodgy. It's the Wall Street Journal and they brought in Emma Tucker.
+
+I guess it's been like a year and a half or so now, and I've noticed it just, I think it's, it's a much better and livelier read I, that was a great story. This is the most under, this is the most over covered, overexposed individual in the history of humanity, probably at this point. And they came out with a new original and gripping story about him.
+
+So kudos to the Wall
+
+[00:13:33] Troy: kudos. Just, I would say cancel the New York Times and replace it with Financial Times and Wall Street Journal. It would be fine.
+
+[00:13:40] Alex: Where do you get 
+
+[00:13:41] Brian: It's,
+
+yeah, 
+
+[00:13:42] Troy: you gotta 
+
+just get a games membership for connection. 
+
+[00:13:45] Alex: All right. Well, there you have it. That's the, That's 
+
+the media diet. 
+
+That's your media diet. 
+
+[00:13:49] Troy: Yeah.
+
+[00:13:50] Brian: that one kind of like went over like a fart in an elevator? I thought it was gonna be a little bit more better, but, 
+
+[00:13:55] Troy: Should we have, anonymous banker join?
+
+[00:13:57] Brian: yeah. 'cause I gotta talk with Janice Min in like 20 minutes 
+
+[00:14:01] Alex: And I've 
+
+got a hard stop now, 
+
+[00:14:02] Brian: celebrity.
+
+[00:14:03] Troy: Okay, so let's, let's swap out Alex. That's, that's hard. What do you call it? hot swap. 
+
+[00:14:09] Alex: say hi. To say hi to anonymous banker for me.
+
+
+[00:14:12] Frisky Golf Media With AB
+---
+
+[00:14:12] Brian: Okay, great. We got ab on ab. Thank you for, for joining us. I wanted to talk about golf media because you're a banker, so you must know golf, and I think it's a very vibrant area. There's a, I don't golf, so I don't, I'm not totally in on it, but I, I keep getting notes about the, the different, like how interesting like YouTube centric golf media is, and we're seeing a lot of like activities in this area.
+
+What, what's interesting to me about golf 
+
+[00:14:42] AB: I think so. When people look at 
+
+sports. Group, all of them together. But golf is unique. It's, it's similar to like a Formula One, in that 
+
+there's effectively like one, one and a half governing bodies, right? You have the PGA and Liv. so it's a streamlined. Ownership of the tournament component and then the teams, or in the, in the situation of golf, the players are all independent contractors, so you have a lot more flexibility when it
+
+comes 
+
+to the participatory nature of 
+
+the athletes in the content.
+
+whereas in, in other
+
+sports, like N-B-A-M-L-B, things like that, there's a, a, a lot more rules around how the athletes can participate. and the other thing that's really interesting about golf, I was, I was looking up some of these numbers, the amount of people that play. 
+
+Both on and off course, it's like 45 million 
+
+people a year.
+
+So there's like 25 million people that are going to the actual golf courses and then another large chunk that are going to like top golf and things like that. So between the media side where people are watching the sports 
+
+and then playing
+
+them, buying all the equipment, it's a big 
+
+industry. 
+
+[00:15:50] Brian: Who, so I saw like good, good golf, raised 40 million. and then full swing, which is from, Chad Mum, who encouraged me actually is the reason I got a pizza steal. I did, a podcast with him, over the pandemic and he convinced me to get a, pizza steal. but he started this with X, I think x the, former puck.
+
+CEO is, is in this too called full 
+
+swing. They raised 20 million. who are the other players in this? 'cause there's, there's a lot of them. We talked about that one
+
+[00:16:19] AB: There's a, yeah, there's a bunch of smaller YouTube 
+
+channels I think. Good, good golf. '
+
+This is one of these, we've talked about this before, where some of these businesses have been in market trying to find capital or some m and a for over a year, and the markets come around to appreciating what can be done on the digital side.
+
+But what's interesting about both of these businesses is they have. Legitimate partnerships with like the actual league in the sense of, pro shop, the full swing, business. It's like basically they're pulling out from PGA, the production apparatus and then looking to stand up the digital side and then commerce, and then good, good Golf has a partnership with one of the large networks, so they're, yes, they're focused on YouTube and going after this younger demographic.
+
+But they also have ties into the incumbents in the space. So they're, I think looking, yeah, it's not just digital. They have an eye towards, and that's like one of the things that has to happen to get people to 
+
+watch golf on TV is to push the audience from 
+
+digital back to the traditional 
+
+media 
+
+[00:17:23] Troy: The, the commerce angle on, it's interesting too because there's this you know, not only is the sport 
+
+something you can watch, by the 
+
+way, legendary masters last weekend, you know, record numbers, great story for the people of Ireland. You know, just incredible entertainment. with Rory McElroy winning that, you know, coming from, you know, a really uneven game to 
+
+win.
+
+It was great entertainment, but it's, it really is a 
+
+kind of unique lifestyle integration where, you know, you watch, you play, you can live in the clothing, and as a result we see commerce brands emerging around these media brands in ways that maybe will work better than it has elsewhere. Right. They're full.
+
+They're full on like life, lifestyle kind of 
+
+integration with the sport. 
+
+[00:18:12] Brian: I mean, they, and they're perfect for this content to commerce thing that has a, a rocky history. But, I'm, remember I got, I got a note, from, from one of our listeners about this a few months ago. I had mentioned it, like he talked about the YouTubers, like Grant aught, and he's like selling clubs and whatnot.
+
+He's got, he's got licensing deals. I. 
+
+I guess Bryson Busta, Jack. I don't know who these people are. taco golf. Do you know taco golf? 
+
+[00:18:36] AB: No, but I mean the, good thing there's ver, if you compare this to like A UFC, right? That's also big among this 18 to 30 5-year-old demographic. the only way that that. Sport is getting monetized is through like pay-per-view buys, right. The athletes, even though if you follow the UFC, there's notable names, no end.
+
+There's, there's various few endemic brands in the the fighting game and then all those athletes Have a hard time getting sports deals. Getting, sponsorship deals elsewhere, but, but golf is one of these things, like, Troy mentioned, like you're gonna buy a golf shirt, you're buying golf clubs. There's all these things that you're buying around participating in the sport, and people are actually playing golf.
+
+You're not gonna go, maybe you join a UFC gym, but otherwise you're not gonna really play this sport. And then more broadly speaking, brands love to be tied to the athletes, right? Car OEMs. Like it's, it's, it's Like tennis in that it's, 
+
+a really brand safe space.
+
+
+[00:19:30] Open AI Direction
+---
+
+[00:19:30] Brian: one other thing. This is not golf related. and that's, you know, OpenAI had raised I think 40 billion a couple weeks ago at this point. It's, it's interesting because, you know, an AI company raising 40 billion is, is like, gets a little bit of attention for a couple days and then people just move on from it.
+
+But they have a lot of money obviously, and, If they're now talking about building a social network, which gives me some amount of 
+
+pause,but it is pretty clear that to, at least to me, I, 
+
+I think of them like, it seems like they're moving Into being like a real product company. 
+
+what, what is your analysis about, about what they're, what direction they'll end up going as a company? 
+
+[00:20:10] AB: I, I mean the, the new model just came out, the oh three, yesterday and it's, it's amazing like the progression of the tech from just an output. Have you guys tried it? 
+
+[00:20:19] Troy: it's cool. 
+
+[00:20:20] AB: Yeah. I mean, I feel like the last
+
+one was like, you know, people would term it the intern. This one 
+
+feels 
+
+[00:20:26] Troy: What's weird is the sort of parasocial relationship you have with a piece of technology because the, the, its beauty is in the nuance of how it responds to things, right? It, it's, it's in, you know, the language and what it sounds like and how it assembles it. And it's so, it's really a, uh,I find I gravitate to the OpenAI product just because I like the, the, the way they, they, they make the output feel.
+
+[00:20:52] Brian: Well, I trust that it remembers things before they even came out with this memory thing. I'm like, they have all my data. I've uploaded all my key data and I'm always gonna go to it. I'll go to Grok for a few things. Claude. No, I've done, I'm done with Claude. I'm just going all in on chat.
+
+[00:21:08] Troy: well, that's one of the reasons that the social networking thing is interesting because gr is good when, particularly when you wanna dig something outta x. And
+
+one of the reasons you might want your own social network is to kind of create your 
+
+na, your own native data repository.
+
+[00:21:22] AB: bring up the new model because I think that open AI will continue to get. Into more areas where it, it's, it's sort of unintentional, but it just happens because of the power of the model. 
+
+example, we're testing right now a lot of the investment banking, AI companies, platforms, and to justify the additional cost per seat.
+
+I've been just sort of testing between these more specialized platforms, which say, we can go get better data. We know what you're doing versus what a open AI can do. And in a lot of cases, open AI is actually providing a 
+
+better
+
+[00:21:55] Troy: You know what,on that ab you, you get a sense of how truly disruptive it is when you see it applying horizontally like that better than a, vertical company could do it, The other I, and I noticed this in a, simple way, yesterday, I used to scan bottles of wine with vineo. I wanna know their providence and where to buy 'em or 
+
+how expensive they were, that kind of stuff.
+
+Yesterday I scanned it with OpenAI with at bt and it was a better result. 
+
+[00:22:22] AB: hundred percent. And so people use these analogies, like when 
+
+Google came out, it didn't try to get into every 
+
+business line that it impacted because they had such a large. Opportunity to go after advertising, 
+
+but in order for Google to, to move into any category, it. was an intentional thing where they had to put people against it.
+
+I think what's completely different 
+
+here, and I, I think what's gonna catch a lot of people off guard is the improvements in these models will just make in, in the example I gave these specialized finance 
+
+products, like not that useful. 
+
+It's everyone's just gonna be going to open ai, which is a 
+
+[00:22:55] Troy: and
+
+and you imagine also collaborative features where, let's say I use projects a lot now where I put a bunch of documents into a folder and essentially used it. I did it with the newsletter this week. I put a. bunch of transcripts in there. But imagine that. We had a project folder for this podcast.
+
+Imagine that You have a project folder for your neighborhood. Imagine that you have it for, you, know, a national, you know, like any kind of project that requires people to put information in and share in a kind of common set of data. You can 
+
+see social dimensions to that as a product, right, where you can share across lots and lots of people. 
+
+[00:23:35] AB: so I would view, I would view that the social thing to me is like a distraction. I think that's Sam, 
+
+just Messing with Elon. I think the, the more interesting news was them 
+
+looking at buying Windsurf, uh, which is like the 
+
+coating, um, 
+
+[00:23:48] Brian: billion apparently. And, but this is also, this was, I mean, isn't this one of those, like wrappers? I mean, at first it was saying don't bill, 
+
+like wrappers with a w that don't build like, you know, rappers, but like, clearly there's value in some of these. 
+
+[00:24:01] AB: Yeah, and we, I mean, we don't know all the details. There might be 
+
+a, a talented team there where Sam effectively has unlimited 
+
+money to spend now and he's going after 20 really 
+
+good 
+
+[00:24:12] Brian: Oh my God. $3 billion. Acquihires We live in. We live in amazing 
+
+[00:24:16] AB: Yeah. Well, think about, I mean, think about the original opening 
+
+idea with Microsoft.
+
+It was like 10, $10 billion. and so I, I think that's what coding is probably one of the first things that
+
+is, is having, is getting the biggest impact 
+
+with these, models because coders are really good at prompting. and so it's like this positive, 
+
+and so that's probably just a land grab and to starve off other competitors 
+
+from 
+
+from leaning into that space. But I
+
+I just think that the evolution of this 
+
+tech is going to usurp a lot of 
+
+wrapper business models 
+
+that have raised hundreds of millions of dollars, and they have this like, unique market in a specific, 
+
+vertical where the power of these models 
+
+just kind of comes over the top and can do a 
+
+better job. 
+
+[00:25:01] Brian: Well, I wouldn't this go
+
+back to our earlier conversation, like if you're like Harvey in the legal community now, I'm getting definitely out outside of any area of expertise. you're gonna need to comply with literally so many different things. So like chat BT can, you know, if I'm doing like some kind of like basic agreement or something?
+
+Yeah, I might, I might, I might go to like chat B-T-E-S-Q, 
+
+but you're gonna need something a little bit more specialized in these fields, right. With all the regulations and,
+
+[00:25:28] AB: That's, I mean, that's what I thought. Right? And so on the finance platform side, I thought they would do a better job. They have access to a few data sources that OpenAI hasn't tapped into yet, but just the overall power of the, of, of the technology is, is getting better results. 
+
+maybe it, maybe it's more on the consumer side first, 
+
+and then they start to go into Harvey, like scenarios 
+
+[00:25:49] Brian: Troy, any final thoughts before, I regal 
+
+everyone with my good product.
+
+[00:25:54] Troy: No, other than you can hear me right guys. this has been a week of wonderful technology snafus. One thing I find interesting about the product evolution at Open API is the need that will emerge to manage different identities. You don't have the same conversation in all aspects of your life.
+
+You might have a private one, you might have a public one, you might have a professional one. And, and I think there's gonna be a lot of thought put towards, you know, how you show
+
+[00:26:21] Brian: Well, it's gonna understand that I, I don't like, I have different projects for different, like things that I want to, I want it to focus on, but to me that's, that'll end up going away.
+
+[00:26:32] Troy: Well, it's almost like people using different Twitter 
+
+accounts, right? For different things.
+
+[00:26:36] Brian: True. 
+
+[00:26:37] Troy: anyway. No, I'm handing a good product over to you. 'cause I know you're passionate about
+
+turtles.
+
+
+[00:26:41] Good Product
+---
+
+​
+
+[00:26:44] Brian: All right. This is experimental. 'cause I have a hard stop. I've been very into sea turtles lately, because it is sea turtle season in, Miami. There's a lot of sea turtle nesting that goes on here. And there's all these like warning signs up that you need to keep your lights low if you, if you're, if, if you have a place on the beach, I don't, I'm across the street.
+
+But like, I didn't really quite understand it. I did, I went to chat BT and I learned a lot about it. It turns out that sea turtles are born with a single use tool called a Carle that is almost like one of those like IKEA tools. It's like you use it and then it's useless. And so they use that to bust out of the egg and then they actually ha, they, they, they wait a day and they feed off of the like sack.
+
+Juice and whatnot and get their strength up to make the dash relatively speaking to the, the ocean where they then go off for decades. They can float like hundreds or even over a thousand miles away. And what's amazing is the female turtles make their way back using something called magnetic imaging of the earth's magnetic field in order to find the exact location where they were born and they return to then, lay eggs.
+
+to repeat the cycle decades later, can be 30 plus years later. Pretty remarkable. All because of the kunkle. 
+
+[00:28:03] Troy: Nice. 
+
+[00:28:03] Brian: where we take that. 
+
+[00:28:05] Troy: No way. Perfect.
+
+[00:28:08] Brian: We'll go back to your woofers next week.
+
+[00:28:10] Troy: All right.
+
+[00:28:11] AB: I have a good, I have a good, can I do my, a good product? I know I'm not a, a regular or I'm not 
+
+on, on the 
+
+podcast, but, I've been using This AI agent called Block it for scheduling. I think I showed it to you guys and what's interesting is like it can really pick up on the context and 
+
+conversation. So people have tried these different scheduling bots before in, the past, and they're 
+
+always pretty shitty. But this one is better than like an assistant because you, you I can talk to it and tell it what to do, and then you, can have different. 
+
+Sort of code words if you don't actually wanna schedule a meeting with somebody where It 
+
+picks up on that and it will kind of 
+
+just pl like play around with that person to kind of push off ever doing a real meeting.
+
+it knows like when you're traveling, it knows to put time in between in person and Zoom meetings. 
+
+It just has all it, it basically, they've 
+
+captured all of the edge cases. and I think the most interesting 
+
+thing cause it kind of Shows you how these AI agents are gonna be priced. When you do the demo and you do the two week trial, they give you like a range of pricing.
+
+So they say, Hey, this is gonna be 
+
+between 150 and 
+
+$500. And then once you, it's basically you've started using 
+
+it all the 
+
+time, two weeks later they come back and tell you the 
+
+price, you're kind of already stuck using it. 
+
+So 
+
+[00:29:25] Brian: Wait, 
+
+[00:29:25] AB: I've just
+
+a 
+
+Yeah, they say it's based on the number of 
+
+meetings, but they, there's no, it's completely opaque 
+
+pricing.
+
+They just, They came back and, and kind of picked a price in the 
+
+middle of the
+
+range saying this, you're right below 
+
+a power user. This is 
+
+what we think, 
+
+[00:29:42] Brian: so wait, I, I, thought that all of this AI stuff was going to make like SaaS obsolete and because it's all 
+
+bloated and overpriced, and now you're telling me that like Calendly is gonna cost 500 bucks a month. 
+
+[00:29:55] AB: Hey, but this provides real utility. 
+
+[00:29:57] Brian: All right. We should leave it there. I'm not happy ab 
+
+
+[00:30:03] Outro
+---
+
+[00:30:04] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+See you guys
+
+[00:30:39] AB: Bye. 
+
+[00:30:39] Brian: all right. We'll leave it there. Thank you all.
+
+
+
+[00:31:01] Brian: 
+

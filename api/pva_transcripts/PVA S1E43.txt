@@ -1,0 +1,1243 @@
+PVA S1E43
+===
+
+
+[00:00:00] Cold open
+---
+
+[00:00:00] Troy: 
+
+don't eat an apple on the podcast. What's the matter with you?
+
+[00:00:03] Alex: Troy, did you know that have a condition, that, chewing noises make me very angry.
+
+[00:00:07] Troy: Let's see how that condition is going,
+
+[00:00:09] Alex: it's called misophonia. It makes me especially angry when we were waiting for you and you were late and now you're just eating an apple
+
+[00:00:16] Troy: Oh wait, I gotta think of a good product. It's an apple, Brian.
+
+[00:00:19] Alex: at Apple?
+
+[00:00:19] Troy: I sold a deal today for $35,000 and,
+
+Brian, can we not make your sales efforts like a big theme in this podcast again,
+
+[00:00:29] Brian: why not people would be interested in it. I'm interested in it.
+
+[00:00:33] Troy: not at that price point.
+
+[00:00:34] Brian: 35 k.
+
+[00:00:35] Alex: Troy just spent this much changing his tires on his cars.
+
+[00:00:38] Brian: Big money. big money. 
+
+big money.
+
+
+
+
+[00:01:03] welcome start
+---
+
+[00:01:03] Brian: Welcome to People Versus Algorithms, a show about detecting patterns in media, technology, and culture. My name is Brian Morrisey. Each week I'm joined by Longtime Media Executive and investor Troy Young and our resident advertising skeptic and video game maker Alex Schleifer. This week we discussed the repricing.
+
+Of talent. We are between eras in the media industry specifically and in technology broadly. And one key trend we've continually tracked on this show is the power shift from institutions to individuals. Another key trend is how we've left behind some of the craziness of the zero interest rate era and entered into a painful period of repricing, and that repricing is coming to talent.
+
+ESPN has begun calling some of its roster of big name commentators, preparing for a drastically different economic picture as the subsidies of the cable bundle dwindle and eventually go away. The land grab phase of the streaming wars fooled many into thinking there was bountiful money to go around. In fact, It was just cheap debt fueling players buying market share.
+
+We have seen this repricing happen across the media industry at institutional brands. I mean, look at the talent that sits atop magazine brands. Those jobs of being editors of these brands are not as lucrative as they once were. One theory about Edward Enfold leaving one of the plum purchases in magazines, the editorship of British Vogue is that he can make more money as a stylist.
+
+I mean, this is a nuanced issue. Since independent talent with direct connections to a community stands to make outsized gains. After all, ESPN is cutting football, talking heads. Yet it also struck an 85 million deal with Pat McAfee, and the reason is that McAfee moves the needle and most on-air personalities do not.
+
+There are household names, mostly because of espn, not vice versa. One of the biggest challenges for anyone who fancies themselves as talent is to understand how much of that value is created by the individual versus the brand. And it's always a mix, but many times talent overrates its power in the equation.
+
+After all, Fox News wasn't hurt too much by losing Bill O'Reilly. Maybe it will be different with Tucker and it's hard to see c n in peril because Don Lemon isn't around. We also discuss why Threads is yet another sign that the news business is a terrible business and I attempt to defend the honor of LinkedIn against Uncalled for onslaught of attacks by the others.
+
+As always, please leave us a rating and review on Apple or Spotify. We got a nice one recently, from Fola oh one, it said A journalist, an ad seller, and a designer walk into a bar. Compared to other media centric podcasts out there, this is the best representation of a modern media company and the internal struggles the journalist wants.
+
+Intellectual honesty. That's me. The ads seller wants effectiveness and big data. That's Troy and Optimized ad still. Troy and the designer wants beautiful ux. And that's Alex. And then the struggle begins three guys who are incredibly intelligent and also honest. It's the best pod in media. And needs some more love.
+
+Hence this review. Thank you so much. fah Ohand. I love this review because it's both complimentary and it also pitch and holds Troy as an ad seller. And Troy as a fellow ad seller, let me tell you, it's an honest living. So please do leave us a rating, review, share this podcast with anyone you think would find it, valuable or entertaining, and send me your feedback directly.
+
+my email is brian@therebooting.com. Hope you enjoyed this conversation. 
+
+
+[00:04:18] welcome end
+---
+
+[00:04:18] Troy: I'm committed to the podcast and I feel our dialogue around topics has been a little sort of flacid. 
+
+[00:04:23] Brian: No, but it's the 
+
+[00:04:25] Troy: it's
+
+a summer. So in advance of the call, I called up one of my favorite media journalists and just said what is going on? what's interesting out there?
+
+had a good conversation, butI think that it's pretty slow in medial end right now, Brian. there's no deals or there's very few deals. I mean, we're talking about age verification, in Mississippi, which. basically cuts anyone potentially under 18 from using the internet the way it was meant to be used.
+
+kind of fits in with last week's theme, which was, the internet becoming a series of kind of identity gated gardens. 
+
+
+
+[00:04:56] Alex: are you saying that there's no media news this week? That's interesting.
+
+[00:05:00] Troy: I didn't see a lot. No,
+
+were you talking like threads? Is that
+
+[00:05:03] Alex: Threads just reached a hundred million users. Can, can you imagine? Who cares?
+
+[00:05:08] Troy: Yeah.
+
+[00:05:08] Alex: I don't 
+
+know. 
+
+[00:05:09] Troy: it's boring. It's an awful experience. I hate using it. I'm not interested.
+
+[00:05:13] Brian: why do you hate threats?
+
+[00:05:14] Troy: it's like Twitter without all the good stuff.
+
+[00:05:16] Alex: I mean, 
+
+Nazis, 
+
+[00:05:17] Brian: Yeah, but all the good stuff is why Twitter is not popular. Exactly.
+
+I mean, I like Twitter, but it's not for the average person.
+
+[00:05:25] Alex: I think we should talk about Freds. I hate the fact that I'm rooting for Facebook, but that launch was pretty spectacular and just shows, they've kind of solved the chicken and egg, thing of launching a social network because they've launched one with a lot of people, 
+
+[00:05:37] Troy: I've never heard an individual speak more despairingly about a company than you about Facebook.
+
+[00:05:42] Alex: I fucking hate them. Yeah, 
+
+they're fucking 
+
+terrible. 
+
+[00:05:44] Troy: that another sort of slice of our social networking universe is gonna be controlled by a single shareholder, who makes saccharin products that are uninteresting, connected to Instagram.
+
+It's a feature of Instagram,
+
+[00:05:56] Alex: Well, I think it's more than that, but here's the interesting thing that maybe we could talk about, because I've been 
+
+really 
+
+[00:06:01] Troy: but now I can't. You we're starting out on the wrong foot. This whole episode
+
+[00:06:05] Brian: I was gonna start on premium
+
+[00:06:07] Alex: Wait, hang on, let me just cover my thoughts on this because I don't think it's only, Instagram launching 
+
+[00:06:12] Troy: I gotta do a zen for this.
+
+[00:06:14] Alex: here's why this is interesting. I think they've announced that they will release Activity Pub, that's number one. And these all
+
+[00:06:20] Brian: oh wait, can you explain, can you explain, for those of us who are not total dorks, what 
+
+[00:06:24] Troy: Yeah. 
+
+[00:06:25] Alex: So Activity Pub, is actually, the open protocol that, things like, Mastodon, Ranan, basically imagine a, generalized protocol for social media posts that says, this is the text. This is an image, this is what's attached. And then technically, the idea is that with activity pub, you can access, the data of a social network from any client.
+
+So you can build your own client. That's one. And secondly, you can run your own activity pub server. So let's say we could run our own server with our own rules on it, and then people could follow us via the Threads app, similarly, somebody could use another app and follow, somebody that's on threads.
+
+that's one thing. Let's, let's put that aside.
+
+[00:07:02] Brian: I'm sorry. Why does that matter? So I could take my shit to a different like platform
+
+[00:07:06] Alex: hypothetically you could take your shit to a different platform. I think it allows Facebook to tell creators, Hey, don't worry it. If, creators no longer trust these big tech companies because they feel that they're going to shut down any minute.
+
+They keep launching and killing stuff, so you invest a bunch of time into something. But here, if you build an audience, technically you can shift your audience to another platform very easily. It's an open standard, but I think there's a bigger plan around that. and I'll get to it.
+
+Second thing is that they said that they're 
+
+[00:07:32] Troy: Take. Take your time. 
+
+[00:07:33] Brian: Yeah. It's good to have a cliffhanger,
+
+[00:07:34] Troy: Yeah.
+
+[00:07:35] Alex: not interested in news. they keep saying that they're not interested in news. I think they're not interested in controversy.
+
+[00:07:40] Brian: think they're being honest about not being
+
+[00:07:42] Alex: Right. I, and I think Zuck doesn't want to be dragged in front of Congress anymore.
+
+and third, they're using that,
+
+[00:07:48] Troy: How do you not do news? Alex?
+
+[00:07:50] Alex: Have you
+
+[00:07:51] Brian: used threads? 
+
+[00:07:51] Troy: Yeah. I saw a picture of people talking a lot about Martha Stewart posting from her pool. I'm here. I'm here.
+
+[00:07:58] Brian: so let me finish my point.Wait,
+
+[00:08:00] Alex: need to, 
+
+[00:08:00] Brian: Alex is just warming up. Let him
+
+cook.
+
+[00:08:02] Troy: Okay.
+
+[00:08:03] Alex: up, man.and then you're building this on top of it's really powered by the Shain freuder of watching Elon suffer. Like this is really showing how much people are willing to side with Godzilla to beat Moth Ma or whatever, they hate Zuck just a little less than they hate, Elon.
+
+I think what they're doing, they just need to announce that they don't want to do any news and then they just need to announce that, hey, we will support all these, activity pub services. So if you wanna be weird or a Nazi or anything like that, You can do it, you just make your own server, 
+
+So therefore we are gonna just stay the fuck out of all of this. We're gonna say we don't want any news. Of course, people are gonna publish news on here and then, they're going to build the feed in a way that really doesn't actively promote who's been banned or not. They've already, stated that they're not going to actively tag misinformation the way they did, and they're building a much friendlier, and I think more advertising friendly network like that.
+
+And if either of the sides of the political spectrum tells them, Hey, why are you banning us? They can say, look, we're not, you can always go to, your right wing servers or your left wing servers. We're also not really promoting news. The algorithm doesn't promote that.
+
+They're trying to stay the fuck out of there. And I think there's going to be a trend in all these social networks that they don't want to be part of that discourse because there's no money in it.
+
+[00:09:17] Brian: I think that that's totally true and 
+
+I think
+
+it's a smart 
+
+[00:09:19] Alex: fucking smart. 
+
+it's 
+
+fucking smart
+
+[00:09:22] Brian: because I
+
+think that in general this, we're gonna look back on a few things and be like, that was very strange. One of the things we're gonna look back on is this idea that news should be injected into our, like social feeds was strange.
+
+it was always an outlier and it wasn't meant to be there. Like when the Facebook feed got taken over by news, it made people miss poking and, and poking sucked. I mean, think about it. Farmville was the worst part of the Facebook experience. And then your racist uncle came in man, that made Farmville look pretty good.
+
+And it was terrible for business, terrible for society. And people need less news. Not more news.
+
+[00:09:57] Troy: fair enough. But do you do news, Brian, you, you're quite a little tweeter yourself. is,
+
+[00:10:02] Brian: Oh yeah. I love, I love news.
+
+[00:10:04] Alex: Oh, it's mostly snark though. It's all snark.
+
+[00:10:07] Brian: I mean, I'm trying to keep tabs on Prego and what he's up to and. Whether he is in Belarus or not. And I still think he might just be in league with Putin to come at it from another shot at Kiev. a bunch of the old guys were up getting coffee in Miami talking about this in the lobby.
+
+[00:10:22] Troy: so would you make it into the new threads feed
+
+[00:10:26] Brian: or will you bifurcate your efforts between Twitter and, and threads? You'll do like, oh, I'm going for a run on threads, and then on, you'll talk about, pian on, on Twitter.
+
+precursion is for Twitter. going for run is for nowhere. I, I got complaints in early Twitter because I had a running blog and I would post both and people were like, I don't want this running stuff. I want you to talk about Ad Tech. I was like, what?
+
+What are you insane?
+
+[00:10:57] Alex: those words were never uttered.
+
+[00:11:00] Brian: no, but I think this is it's healthy. The idea that everyone was gonna like that there's one place and one Uber social network was always dumb. you should have different spaces for different types of conversation. And the reality of our political discourse and news in general, which revolves around politics, is that it poisons the, well, at the end of the day, if it's a little bit about news, it's all about news, I don't see anything wrong.
+
+I mean, threads, will I spend as much time on threads as I, did on Twitter? No, of course not. It's just random, like dogs balancing, graham crackers that I see, and that's compelling content. Don't get me wrong. but I don't know. It's, it's fine. I think for your average, everyday person, I think this will be a very successful product.
+
+I don't think there's anything wrong with it. Why does news have to be everywhere?
+
+[00:11:49] Alex: I agree that different social networks for different, content, but I think in this case, you can't have this as very similar interface exist and people use both. I think people use Twitter and Instagram.
+
+I don't think people will use Twitter and threads. I think it's gonna be either or. They're too similar and it makes it very difficult to, to make a call as to what works and
+
+[00:12:08] Troy: Mm-hmm. So what are you posting to Instagram or to Threads Brand? I'm just trying to understand I wanna know if I should follow you.
+
+[00:12:14] Brian: well, here's the other thing is I don't think threads really, matters with following, and I 
+
+[00:12:18] Troy: you, did you post to Threads yet? Can we just get clarity on this? 
+
+[00:12:21] Brian: Yeah, yeah. Post the threads.
+
+[00:12:24] Troy: what?
+
+[00:12:24] Brian: I don't know. I'm just like playing around. I'm just experimenting with,It's
+
+not 
+
+[00:12:28] Alex: I've been marketing the podcast.
+
+[00:12:30] Brian: I haven't been marketing it that much.
+
+[00:12:32] Alex: I know,
+
+[00:12:32] Brian: I track who works hard on this? 
+
+only person who likes LinkedIn?
+
+[00:12:37] Alex: I don't know, maybe it's because of the job I've had. LinkedIn. LinkedIn is depressing.
+
+[00:12:41] Troy: Oh my 
+
+God, it's so awful. Ugh. It's the worst. Ugh.
+
+[00:12:45] Brian: I love to get in mail. What are you guys nuts?
+
+[00:12:48] Troy: an InMail too, but it's awful. Come on, it's gross. You know what it's like my friend Rich on LinkedIn. Like, what's going on? What is
+
+[00:12:55] Brian: Rich Anello. 
+
+[00:12:56] Troy: Well, I try
+
+just to, 
+
+[00:12:57] Brian: it. You gotta 
+
+want it. 
+
+[00:13:00] Troy: hustle, hustle.
+
+[00:13:01] Alex: I got like some sort of, I don't know what they call it, that InMail cold mail on LinkedIn and I didn't answer it. And LinkedIn is one of those things where like, I approve everyone's follows or whatever. I don't even know how it works because I think that maybe one day that network will be useful.
+
+If you keep employing all those people, you're gonna need a job, Alex.
+
+yeah, 
+
+it's true. I got one from one person. He messaged me and then I didn't reply and then like three messages in, he goes should I be worried for your health? Did something happen to you? It must have, otherwise you would be interested in this amazing, network marketing offer.
+
+it's fucking sounded like a 
+
+[00:13:31] Brian: Okay, but let me, let me defend LinkedIn a little
+
+bit here. In that, when you go into LinkedIn, it's all about celebrations. It's about milestones, it's about thought leadership. Sometimes it's about a white paper or a webinar. It is to me, like a, a return Yeah. Thought leadership.
+
+[00:13:50] Alex: Wait, are you angling for a LinkedIn? ad This sounds, this sounds like Please.
+
+[00:13:56] Brian: what I'm trying to be genuine
+
+here. 
+
+[00:13:58] Troy: Oh 
+
+my 
+
+God. It, 
+
+[00:13:59] Alex: how 
+
+much did they pay you? 
+
+[00:14:00] Troy: yeah.
+
+Oh my
+
+God. If I have to see another photograph from some event where they're like, look at me with my lineup of people and look at all the different kinds of friends I have and look how it can, like, it's awful.
+
+[00:14:15] Brian: I once had the LinkedIn photo, the profile photo of the person like holding a microphone. It was only briefly,
+
+[00:14:21] Alex: at an event. Yeah. pointing
+
+[00:14:24] Brian: just thought, I was like, this feels like something I should do. It feels
+
+[00:14:26] Alex: Look, I, I think the problem with LinkedIn is that it really feels like,when you go into one of those corporate meet and greets and, everybody's just angling to sell something and congratulating you as a way in, I think somebody, somebody wants, did their research really badly and, and told me, cuz I have a, a link for merch on the website.
+
+They said, I make video games and there's like a tiny link for merch and they obviously had scanned it and it's oh, congratulation of opening your new merch business. I'm really interested in buying your products. It's like, I don't make fucking t-shirts, 
+
+[00:14:56] Troy: You
+
+guys, 
+
+LinkedIn is the world's biggest marketplace for accepted lying. It's about lying. And so if you like the truth, it probably bothers you or rubs you the wrong way because what it is is like, I just spent eight great years at this company. worked with the best people in the world.
+
+It was the best, and it's, I I feel blessed to have been here. Meanwhile, the guy's like, I fucking ate those guys. They
+
+[00:15:19] Alex: I'm so fucking luck. Glad I left. Every 
+
+[00:15:22] Brian: I'm in, the comments. Great run Grant.
+
+[00:15:26] Alex: now will you spend $35,000 on a tasteful advertising integration.
+
+[00:15:31] Brian: it's fine. I, I 
+
+don't 
+
+[00:15:32] Alex: Okay. Okay. I'm kind of randomly reading. So proud of the team I've been promoted
+
+to Oh. Feeling much pride for this.
+
+[00:15:41] Troy: Hey, let's do, Hey Alex. Let's do a new segment, realtime commenting on LinkedIn. Leave a 
+
+[00:15:46] Alex: exactly. 
+
+[00:15:46] Troy: say something nice.
+
+[00:15:47] Alex: I'll say something nice. I'll write one down now. I'll say, wow, that's awesome.
+
+[00:15:52] Brian: okay, fine. Mock LinkedIn, all you want. Name.
+
+a 
+
+social network. social 
+
+platform 
+
+[00:15:57] Alex: a, smiley face. One second.
+
+[00:15:59] Brian: name. A social platform that has lasted this long and has provided so much value to so many people.
+
+[00:16:05] Alex: it 
+
+[00:16:05] Brian: wait.
+
+[00:16:06] Troy: Just wait. I'm thinking. 
+
+[00:16:07] Brian: I can't think of one. What is the worst? You've basically said okay, that, but it's not a social platform. You've said the worst part about LinkedIn is people being like salesy. Basically. At the end of the
+
+day, I can't,did you like, are we having a freaky Friday episode where you're like sort of playing me or something like this?
+
+It's not lying, it's just selling.
+
+[00:16:24] Troy: Okay. I think maybe iMessage is the greatest social network or the longest lasting
+
+[00:16:29] Alex: Yeah. And also it lets you sort out the friends who have iPhones and don't, and so you can stop being friends with them, but 
+
+[00:16:35] Brian: wrong with Android. 
+
+[00:16:36] Troy: because we want a technical monoculture. Alex, what are you 
+
+talking about? I'm still waiting for my folding screen, Google Pixel to come in the mail.
+
+[00:16:43] Alex: Oh, I tried that out. 
+
+[00:16:45] Brian: Yeah. 
+
+[00:16:45] Alex: the lumps gonna drive crazy. 
+
+[00:16:47] Brian: just to get back to threads, I think threads for me, like,follower counts are dead. Okay. And I think this sort of plays into, what is the talent premium? Because I think my working theory of where things were going would be like, okay, well talent's gonna be even more valuable.
+
+And that's the way you get out of this algorithmic, monoculture where you're just like feeding content into, the AI smelter. But the reality I think is. Algorithms are taking over all this thing. And, and when you see with threads is they just want you feeding the algorithm and the algorithm is gonna sort it out.
+
+The Facebook algorithm is gonna sort it out, and there's no followership. There's a reason that they're not, they say that they're gonna add the sort of thing where you have a chronological feed with your followers and stuff, but everything is going in the direction of TikTok where you just feed content into the machine. And as someone who has labored to build 43,000 something Twitter followers, I feel ripped off.
+
+[00:17:43] Troy: those followers available, for an ad program?
+
+[00:17:46] Brian: No, I don't, I don't sell, sacred ground like Twitter with tasteful advertising.
+
+[00:17:51] Alex: we can talk about Elon for a second in a minute, the one thing about Twitter is that even if you create like a really great post that performs well, it doesn't actually add anything to you, and you're always starting back from the spot where you were.
+
+So it's very hard to break through on Twitter. you've created these posts that go viral and you get like two followers from it. If. there's a reward mechanism built into threads, that means that, posting something that, generates a lot of attention, gets you more attention, either by more people following you, or the algorithm benefiting you over time, then I think creators are going to want to go there.
+
+It's really hard right now on Twitter, even like me, like I have 7,000 followers. The reach is not particularly impressive, I get a lot more engagement on threads with 150 followers, which is weird.
+
+[00:18:32] Troy: That's all you got. That's
+
+lame. 
+
+[00:18:34] Brian: Yeah, Yeah, but followers are dead. I keep saying things are dead. This is terrible. 
+
+[00:18:38] Alex: I boycotted Instagram, so I don't have anyone.
+
+So it's not like I moved with a
+
+thousand followers, you know? 
+
+[00:18:44] Troy: if you want.
+
+[00:18:44] Alex: Well, I follow you already. I guess you don't follow me back though. I've been tracking. I've been 
+
+tracking. 
+
+[00:18:48] Brian: doesn't matter. Followers don't count. It's all gonna be the algorithm and the algorithm's gonna serve. And the, the truth of the matter is, I would like to think that people want to follow other humans, but I think the algorithm's gonna beat that. It's gonna beat the follower graph you get around the Cold Start problem and Twitter never figured that out.
+
+And they were too hostage to the early adopters and not changing it enough. And the one thing with Zuckerberg complain about him as much as you want, man, he's a good, like wartime general, it seems like he's ready to, you know, when he like just powered through so many controversies and so much, so many people like complaining about the newsfeed and stuff.
+
+I think this is, is a tough one for, for Twitter.
+
+[00:19:31] Alex: Yeah. It is a tough one for Twitter can we just talk about the way Elon responded he's flooding the system with this stuff. and after like suing Twi.
+
+[00:19:39] Brian: it with? 
+
+[00:19:39] Alex: Well after suing Twitter for like,hiring all the people he fired, his latest two tweets were Zuck is a Kuck, and I proposed a literal dick measuring contest.
+
+oh,
+
+he just turned 52, 2 weeks ago, which what I'd say that,
+
+[00:19:53] Troy: that true? Is that what he said? 
+
+[00:19:55] Alex: yeah, 
+
+[00:19:55] Troy: No, the suck is a kuck one that's got a nice little ring to it, but the other one is really shameful. That's,
+
+that's
+
+ridiculous.
+
+[00:20:02] Brian: Yeah, there's an article on the New Yorker about that.
+
+[00:20:04] Alex: yeah.
+
+Yeah. 
+
+[00:20:06] Troy: to summarize that article, Alex.
+
+[00:20:08] Alex: yes. 
+
+[00:20:08] Brian: That's about penis enlargement surgery. I'm just assuming that Elon has had it. I think that's 
+
+the thing. 
+
+[00:20:13] Alex: you know, we can't normalize this. We're, we're seeing the implosion of somebody who is really important.
+
+it's really crazy. I actually feel like a lot of this, threat stuff is fueled by 
+
+[00:20:22] Brian: Yeah. 
+
+[00:20:23] Alex: just wanting to like,
+
+[00:20:24] Brian: but isn't it part of like the, the end of an era of social media? I'm probably always trying to end eras and stuff, but like this all in one social media era. It was dumb. It was dumb. We're not all meant to be in one room talking about everything at the same time. And like the splintered nature of media, digital media in general should come to these social media platforms.
+
+why should we have just one or two? Why? Why don't we have dozens for different purposes?
+
+[00:20:53] Alex: Yeah, I don't disagree. I mean, I think because, we value scale in a certain way, so many social networks that could not reach, kind of the velocity of having more than 10 million users shut down. because the way venture 
+
+capital works and exec and Yeah.
+
+Advertising exactly
+
+[00:21:08] Brian: now like we're moving towards like subscription is now the default. It's not perfect, but subscription is the default versus advertising for a lot. Like nobody's starting with advertising as not nobody, but it's not as much. Before I remember covering every single tech company, they talked about turning on the revenue spigot with ads, which I thought was a hilarious way to put it.
+
+and it was 
+
+just obvious. 
+
+all roads always led to advertising.
+
+[00:21:32] Alex: now, God, I can't believe I'm gonna say this. But can social media work with subscription? I know that's what we're saying, but advertising seems to be a much more honest,transaction here. Because when you create social, when you go on social media, you are the one creating content.
+
+And therefore you want to create an environment where maybe, you can participate in the revenue generation of your content. And advertising is actually a really good model for that. and I don't know if like social media and subscription services work, I think if you're creating content and you give like Netflix or the New York Times, sure.
+
+[00:22:03] Brian: But if you're like Twitter, I'm not gonna pay you so that you can monetize my content fuck off. And I think many people feel like that. I wonder if that's like maybe a too, too big of a gap to cross,You think many people think that they should be paid for their tweets.
+
+[00:22:18] Alex: I think many people feel that. I think what's 
+
+[00:22:21] Troy: opposite of that actually.
+
+[00:22:22] Brian: Oh, 
+
+[00:22:23] Troy: He's saying that ad supported social networking makes sense and you can have revenue sharing in that construct. But the idea that you're paying to see other people's sort of, personal, crowdsourced or, or community created content is not really aligned with subscription unless Alex, I think you'd agree that subscriptions give you some kind of superior tooling to filter or store
+
+[00:22:47] Alex: give you more reach, 
+
+[00:22:49] Troy: yeah, something 
+
+[00:22:50] Alex: give you 
+
+[00:22:50] Brian: but that, that's within a mass social media context. Why? Why would people not pay for a very like curated social networking 
+
+[00:22:59] Alex: because that's iMessage and WhatsApp.
+
+That's it. There's no space for that type of business anymore. iMessage is by far the biggest social network that I use every day. We, I have your group, I have different friends groups, and then second to that is WhatsApp, because it's more international.
+
+but I don't need a,a social network for my family or people make video games or whatever. That's, that all exists already. if Threads algorithm starts showing me stuff from people that I, whose information I like, then I'll like it, but I'm not gonna pay for it. because, I don't think there's value there. as a consumer, 
+
+[00:23:31] Troy: All right. Should we move on to the big story?
+
+[00:23:33] Alex: That was the big fucking story. What is the big story? 
+
+[00:23:35] Brian: it's related to this, but it's like whether, whether there is going to be a talent premium. I mean, I'd like to think that there is going to be, and that there's gonna be a human premium with the deluge of crap from AI that we're gonna have. But sometimes I like wonder whether there is, and you see sort of signs of it around like ESPN is cutting a lot of their Marques people.
+
+I mean, they make a lot of money even Stephen A. Smith is saying, I'm not safe what is going on here? Because I think we've seen this in other areas of media, but it seems like it's going everywhere. That talent is being repriced to some degree. I think about like magazines, the people who are running magazines now.
+
+the quote unquote talent, the editors and stuff are making far less than the same person was making 10 years ago. Like being the editor of Vanity Fair is very different for, who is it? Dika Jones versus like when Grayden Carter was running.
+
+[00:24:28] Troy: Mm-hmm.
+
+[00:24:29] Brian: And I think that's happening across all of media to some degree
+
+[00:24:32] Troy: It's 
+
+definitely, 
+
+[00:24:33] Brian: change.
+
+[00:24:34] Troy: it happens anywhere I. Where there isn't a stable distribution premium that can be shared with talent. So I would argue that it'll persist in movies where, a celebrity has an sort of outsized impact on the economics of a film, or they're taking share on, box office.
+
+it's very profound right now. I had a friend over this weekend who was an ex cable executive who grew up in the sort of good years of cable. And he said, I'm watching the whole industry be effectively repriced. And, and so many of my colleagues from those extremely good years in cable are outta work.
+
+he's like a lot, a lot, a lot, a lot. and you're seeing it in real time with, like you said, Brian, the the ESPN thing. But basically, we all know that the distribution system created economic surplus that drove up talent prices. And those networks were so dominant that they made people famous.
+
+So you got, sort of. Big, news hosts making 20 million people like Don Lemon. And now, ESPN's trying to get in front of a very, very different economic reality. And they know that mostly people are pulled in because of your rights content, right? You tune into watch a football game or tennis or whatever, and you can get by on the top 10 or Sports Center or even insightful NFL commentary without paying the 5 million big neme commentator.
+
+And so those salaries get depressed, radically, radically. Those people can
+
+[00:26:04] Brian: But I think we're, we also might see a bifurcation in some ways in that, Steve Young, nothing against Steve Young. He's fine, but like Steve Young at 5 million a year, no. nobody's gonna notice if they swap him
+
+in with 
+
+someone is making, 
+
+yeah. Meanwhile, at the same time, I, I believe it's like a 62 million deal that, or even more that ESPN cut with like Pat McAfee.
+
+And so I think we're seeing different types of content or different types of talent premium in that if you can be like a Pat McAfee who can develop a true following, then you can get a talent premium. 
+
+[00:26:39] Troy: signature talent on the best and still the biggest rush programming,Sunday night football are still gonna get premiums, but people that do SportsCenter are not gonna get premiums. So,
+
+[00:26:48] Brian: right, but the thing is people come for the games where it's like Pat McAfee created something outta a nothing. Okay. And he created in a barn in Indiana. I think that is true talent. I think what, what a lot of quote unquote talent think that people are coming for them when they're coming for the brand.
+
+It's kind of like sales. It's are you a really good salesperson or is the brand you worked for really good and, and you're just there. Do
+
+[00:27:10] Troy: Right. 
+
+[00:27:10] Alex: I wonder
+
+also, 
+
+is? No, but I'm 
+
+getting it, I'm getting it from context. there's a couple of things that are probably, working against these big talent, prices premiums. one is that probably culture moves along so much quicker now and people rotate around, I think these,celebrities used to have these extremely long and kind of sticky careers and that might be changing.
+
+maybe these companies are seeing, well, it's not as worth it to invest in a single person. the way we used to the second one is I wonder if there's also a calculation of we're gonna spend a bunch of money on this person, and the second that they reach any type of velocity, they'll just go and, start their own thing, 
+
+it's kind of become,probably just like more economical to just. Get people cheaper. Bring them up earlier in their careers and then rotate them around rather than, spending 20 years building somebody up or 10 years and then watching them go somewhere else and start their own network.
+
+Cuz the, cost of starting something new is so low. they have a lot of options.
+
+[00:28:05] Brian: Yeah, I'll be very interested to see how someone like Tucker Carlson does out on his own. Now,
+
+he could be the 
+
+exception. 
+
+[00:28:11] Alex: he's 
+
+doing, worse and worse. his videos have been going, worse and worse.
+
+[00:28:15] Troy: this story hasn't even started Tucker Carlson can raise money and start a, the problem I think that he's got is that his audience is not on Twitter. And so, 
+
+yeah, I think there was a, uh, I think there's some curiosity there, but I think he's gonna have to have a different kind of platform to see if it, how well it works.
+
+But the other, the other side of it, Brian, is that you've got these, now you've got networks for sort of democratized star making machines. I read with interest this story of,this comedian who's a phenomenon on TikTok, who's now becoming kind of, star material. Matt Reif. Do you know who he is?
+
+[00:28:49] Brian: No.
+
+[00:28:50] Troy: They just did a feature on him in New York Times. he's, a handsome boy comedian, kind of funny, has a big following with kind of middle aged women. And,he had been doing standup for 30, 40 people and decided to start putting his stuff on TikTok. And, the first video got seen by 10 million people or something.
+
+He happens to be extremely 
+
+attractive.
+
+became now there's lineups around the block to, take a picture with him for 150 bucks. it's like a huge kind of another TikTok celebrity phenomenon.
+
+[00:29:20] Brian: Okay, but that's what I'm saying, Matt Rife he basically just fed an algorithm, hit a seam, and the algorithm took over.
+
+[00:29:26] Troy: Yep.
+
+[00:29:27] Brian: It's like buying a lottery ticket.
+
+[00:29:28] Troy: Right. It's just that, the network's there, nobody is anointing him. he had the right formula and it worked. And there's gonna just, that's the future. And the machine,outside of, very, very neat or narrow cases. the distribution machine is not going to pay talent like it used to.
+
+That's just the story. probably, I think one of the biggest single,kind of harsh new realities of the media business. And you're right. Yeah. editors sitting on top of, big magazine brands made good money, had long careers, and very glamorous roles, that's all gone now,
+
+[00:30:00] Brian: And I think that's gonna go, so basically the only way to make a lot of money is to be off on your own, not like attached to some institutional brand.
+
+[00:30:07] Troy: pretty 
+
+much. 
+
+Yep.
+
+[00:30:08] Brian: Okay, well we just need to step two, which is make a lot of money. but I got step one now.
+
+[00:30:13] Troy: this 
+
+is where
+
+[00:30:13] Brian: right.
+
+[00:30:14] Alex: I don't know if it's, it's as simple as that. Troy, you probably found out about this guy on the New York Times, and I feel like,there's still a boost that a lot of these creators get when they're, exposed on more traditional forms of media.
+
+nobody's making any money on TikTok itself. So, in this case, this guy can do live shows. They're all doing live shows, but
+
+there's gonna be 
+
+a saturation of those, right? 
+
+[00:30:36] Troy: didn't need the New York Times to write a feature to be famous, Alex,
+
+that may have been. 
+
+[00:30:39] Alex: but for you to know him about
+
+[00:30:41] Troy: For me.
+
+Yes. Yeah. Yeah. I'm not a, the following, good looking 22 year old comedians on TikTok. No.
+
+[00:30:47] Brian: Yeah. To 
+
+reach the Shelter Island crowd. He still needs the New York Times.
+
+
+
+[00:30:50] Alex: 
+
+other creators do want to get on YouTube and things like that, you
+
+[00:30:53] Brian: I, but I think the point, Alex, is that if you're gonna be quote unquote talent and make a lot of money, the pathway is pretty much never going to be work for an institutional brand. Have your agent negotiate high salary. that will be the case in some instances.
+
+But I think in more instances it's gonna be, I. Like we talk about L L C on L l C action in a previous one. it's gonna be like Pat McAfee. Pat McAfee was doing a deal with ESPN as Pat McAfee's,his company. Not that's the way forward if you're gonna be talent is you can't trust espn.
+
+If Stephen A. Smith can possibly take a bullet from ESPN, then nobody is safe.
+
+[00:31:32] Alex: are you saying that the media brands are not going to be worth anything and in at the end of the day, it's all gonna be creators and platforms,
+
+[00:31:38] Brian: Oh no. in sports media brands are, are gonna be worth a ton because of, sports rights. But if you're the talent, maybe it's s espn, maybe it's Amazon, maybe it's Google, maybe it's Apple. I don't know. If you look at what Messy did, the messy deal is basically Amazon subsidizing, he's coming into this deal as.
+
+Talent. Yes. But as a media company, he's got distribution, he's gonna do content. It's like everything, but the fact that he can dribble a soccer ball,
+
+[00:32:05] Alex: Yeah, it's crazy. Yeah,
+
+[00:32:07] Troy: Hm.
+
+[00:32:07] Alex: yeah, 
+
+[00:32:07] Brian: he's still pretty good though, right?
+
+[00:32:09] Troy: Still? Yeah.
+
+[00:32:10] Alex: yeah. It's 
+
+[00:32:10] Brian: He's little. 
+
+[00:32:11] Alex: Yeah. 
+
+[00:32:11] Troy: He's the greatest football player in the world, dude. 
+
+[00:32:14] Alex: Yes. 
+
+[00:32:14] Brian: I would've thought he would've gotten, chewed up a little bit by some of the big boys,
+
+[00:32:18] Alex: No lower, lower center of gravity, Maradona was the same. 
+
+[00:32:21] Brian: That guy could party. I saw a documentary on that guy.
+
+[00:32:24] Alex: Oh, yeah.
+
+[00:32:24] Brian: He would go after it and then he would just get right for like two days and then go back to going after it. It's inspiring stuff.
+
+[00:32:31] Troy: All right, so we exhausted the talent topic. did we got anything else, Brian, or are we going to,
+
+[00:32:36] Brian: Let's go right into good product.
+
+[00:32:38] Troy: already I know, I feel like we didn't, do we have a third topic? You got? You gotta have three.
+
+[00:32:42] Brian: No, I just had two topics.
+
+[00:32:44] Troy: Alex, 
+
+you got any bees in your bonnet?
+
+[00:32:46] Alex: I've been having conversations with folks, especially folks I haven't seen for a long time. And we catch up and people in tech and, the conversation will always go towards AI and, chat g pt,and it's kind of interesting meeting people you haven't seen in a while, because you can go over how insane the leaps been, even though it's, less in the news now.
+
+AI is living through this kind of quieter phase right now, because we all got 
+
+[00:33:09] Brian: Hmm. 
+
+[00:33:09] Alex: to it. But I get about a 50 50, Percent response on what people think about chat as the interface. and some folks say, oh no, that's a fad. nobody will want to chat with a computer.
+
+we'll need to build new interfaces for it. And others, which feel like chat is the future. and the more I've thought about it, the more I think that yeah, chat is indeed the future. conversation is the most natural interface we know. It's the one we know as children.
+
+It's the one that humans have had the longest time to get used to. and I think that everyone should look And everything around them and see what could be replaced by conversation. Because I think that that's going to be one of the major shift is that more and more of what we do is going to be turned into conversations.
+
+And when people tell me, well, people don't like to type stuff, people do not call each other anymore because they type to each other. People love typing, People love typing. And I would say that people would probably use Siri more if there was an easier way to just type things to Siri. I'm not saying interface is going to go away.
+
+There's going to be all sorts of tools that are going to need to exist, especially in the creative field where I am. but so much is going to be replaced by interface that it's going to have pretty dramatic impacts on, 
+
+the way we use 
+
+[00:34:16] Brian: yeah, I don't know if you saw Sam Altman did a little q and a with Time Magazine. and he said, you'll be able to do this with two-way voice. It'll feel real time. You'll be able to talk like two people doing conversations, and that'll be powerful. You can eventually imagine a world where as you're talking, it's like the Star Trek holodeck.
+
+But I think the thing that will matter most is how much of the stuff you want to happen can happen from a relatively small amount of conversation. As these models get to know you better and are capable of more, you can really imagine a world where you have a fairly simple and short conversation with a model and a huge amount of things get done on your behalf.
+
+So that's 
+
+[00:34:55] Alex: Yeah. I mean, 
+
+[00:34:56] Brian: Sam sees things going.
+
+[00:34:57] Alex: I don't think we'll be spending a lot of time in email. people hate email, but if something had context, then you could tell me like, what are the meetings that I have today? Can you remind Bob about that one in the afternoon?
+
+And the thing understands context. That's not, Crazy to think about, but once things turn into conversations, then I think we'll also be having different conversations about media and advertising where things 
+
+fit, because that's gonna change everything, so.
+
+[00:35:20] Brian: I think AI is heading for a summer of discontent. I think people are gonna say, this is bullshit. The numbers are gonna plateau on the number of people using chat. G p T. We're already seeing some like reports that, oh, well, it's flatlined and fewer people are using it. a lot of the would've it can, it will will be like, well, where's the beef now?
+
+If I could date myself,
+
+[00:35:42] Alex: but that's predictable, And we all know what happens after that lull is that it takes over. So let everyone like, kind of their guard, But,
+
+[00:35:50] Brian: I dropped my guard with web three.
+
+[00:35:52] Alex: there you go. And, crypto billionaire, Because of it.
+
+[00:35:55] Brian: My Bitcoin, I'm almost, I'm like only 6% away from being even on my Bitcoin.
+
+[00:35:59] Alex: Oh, really? I turned $3,000 into $40,000. I was up at 95. So pretty good. Pretty good.
+
+[00:36:07] Brian: I invested $500 in WeWork over the pandemic. Do you know how much it's worth now? My $500, $2 and 43 cents.
+
+[00:36:15] Alex: Okay. Well I think Troy's getting bored. 
+
+[00:36:17] Troy: no, 
+
+no, no, 
+
+[00:36:19] Alex: UI thing 
+
+[00:36:20] Troy: no. I think it's actually super important. I'm glad you brought it up I'm not quite sure what to add to it, but it's so much of how I think, and I think how we think is the hierarchical organization of information and interaction on a screen. And it, it's defined all the work that, I think we've collectively done in designing media and service interfaces for a long, long time.
+
+the first move of media to the internet was to get it to kind of look like a magazine. So there was a lot of effort put into, the sort of flourishes that come with feature design in magazines. And when it, becomes a, box that you interact with, you just have new design challenges.
+
+I mean, I think there will still be artifacts that you can click on to enhance the experience, but it's sort of more like sequencing and tone and sound and. length and, how you answer a question, how you feed information. It's a whole new vector for design.
+
+I think, Alex, because everything still is designed right? you're still giving someone a product and they react to it emotionally and rationally and I think it's a new frontier in design. it's very cool. the obvious is that it does introduce new complexities for advertising that generally are about, a percentage of the screen,
+
+[00:37:41] Alex: advertising is not going away. advertising hijacks the interface, right? That's why it's so successful. and when you have lots of stuff to run through, then you have lots of points where you can hijack people's attention.
+
+I think it's gonna be harder with ai, but once it gets in there, it's going to be much more insidious and hard to, discern. how do you track something motivating you? It's gonna be like product placement in movies, 
+
+you know what, do I do if I'm dehydrated?
+
+well, you could quench your thirst with Gatorade or similar products, And Gatorade's just paid more. quench. Quench. Yeah,
+
+[00:38:14] Brian: I like quench though.
+
+That would be a 
+
+[00:38:15] Alex: is pretty good.
+
+[00:38:16] Troy: we should 
+
+[00:38:17] Alex: Sounds. 
+
+[00:38:17] Troy: a new brand Squinch.
+
+[00:38:19] Brian: Yeah. I'm just getting the domain now. actually be a great knockoff Gatorade
+
+[00:38:23] Troy: Yeah.
+
+[00:38:24] Alex: quench your thirst.
+
+so one of the great virtues of podcasting, not that, everybody does this, but is that you can fast forward through the commercials.
+
+Right. I mean, I do it
+
+
+
+[00:38:34] Troy: doesn't do it.
+
+[00:38:35] Brian: Well, that's why I do my native
+
+reads. I 
+
+inject it. It's ad injection.
+
+[00:38:41] Troy: yes. But Brian, do you know if they disable the fast forward button on Spotify during the ads?
+
+[00:38:46] Brian: No, 
+
+they do in like SoundCloud.
+
+[00:38:48] Alex: oh,
+
+[00:38:48] Brian: I'm still on the ad version of SoundCloud and they, still give me like Spanish language ads, like nobody's business. Cuz I lived in Miami for a little bit.
+
+[00:38:56] Alex: That's amazing.
+
+[00:38:57] Brian: for all the precision of digital advertising, it's such bullshit. I'll like how, like basic stuff is not done correctly.
+
+[00:39:04] Troy: now that we're finally talking about advertising, before we get to good product, just one little thing I didn't write about this week, I took a week off. But really the beginning of the end for, digital advertising outside of social and the platforms was really gdpr.
+
+GDPR killed the advertising
+
+industry 
+
+[00:39:21] Brian: G D P
+
+[00:39:22] Troy: with a passion. I think it's useless. I think it does. No one a favor, it's just bad legislation, bad interface. Everything about it is bad. But the more important part is that without identity, the open web didn't stand a chance. it just made identity via cookies, even the most basic form of it in retargeting that much more difficult.
+
+It meant that poor publishers had to create a whole new layer of tech around,what do you call it? Management of, what's the, that category of ad tech Brian? not, not permission, what's it called? companies like Ben's company that you just manage,adherence to privacy principles
+
+or 
+
+[00:39:57] Brian: yeah, yeah, yeah. CD the, consent management
+
+[00:39:59] Troy: management was a 
+
+whole new thing that, that everybody in publishing had to spend on and worry about and all of that.
+
+In the meantime, yeah, there was workarounds to try to get identity, but are publishers any better? The predictions where maybe publishers will be better off? Cuz at least they have context and that didn't come true, I would argue. publishers aren't running away
+
+with it. 
+
+[00:40:17] Brian: going to retail media because they, they have the data.
+
+[00:40:20] Troy: Right. So GDPR undermined the identities, the even sort of, imperfect identity mechanism of the open web. It made it even more punishing to have to deal with a webpage cuz you had to click on a bunch of buttons. It made it more complicated for publishers and who won in that? What do we feel like our data's more safe now because someone can't look at an anonymous cookie trail.
+
+It's a total joke. GDPR is the biggest public policy or public legislation failure of our lifetimes.
+
+[00:40:49] Brian: I mean, that's a little extreme.
+
+[00:40:50] Troy: Well, okay, but whatever this.
+
+[00:40:54] Brian: There have been a lot of
+
+failures, Alex, you're European, defend 
+
+this. 
+
+[00:40:58] Alex: was very much for what it was trying to accomplish. I don't wanna be tracked on the internet, fuck that. But,
+
+[00:41:02] Brian: I, don't understand. Why. Why? What is the problem? 
+
+[00:41:05] Alex: Man, think that maybe it's because I've seen behind the curtains, but the more you are able to absorb data and track people, the more you're going to be able to become very, very good at targeting shit to them, forcing them to buy something.
+
+And I think it's a little unfair. Like, I'm not against hunting, but I'm against hunting with a AR 15. at some point when these systems become so good that they kind of understand if you're pregnant or you just broke up and advertised the type of things that you might be more, predisposed to buying at the time.
+
+I think that stuff becomes bad as these systems become smarter, that you just become more powerful. So we do need a way of getting the fuck out of the system. and most people didn't understand that there were being tracked site to site and there's too much that you can g claim from that information.
+
+For me, it was a terrible execution. They didn't standardize it. They should have integrated it into the browser. So you say yes once or no once, and then you're, you're good to go. it allowed all the incumbents, all the large companies to really win because they had all the UI designers and the technologists and all that stuff to create these, interfaces sometimes with dark patterns still got you to, accept to stuff even if you don't.
+
+I'm not gonna spend 20 seconds checking boxes when I can just say yes and it's easier. So I think to me, it was all an execution issue. I am all for Facebook not tracking me as I'm jumping from side to side. I'm really sorry. Like too much information can be. gotten from your browsing habits.
+
+it's crazy that we expect that to be the norm. It's insane. It's like saying we want facial recognition and cc t v cameras 
+
+[00:42:34] Troy: a long way from that. Alex. No. publishers to benefit from retargeting is a long way from facial recognition.
+
+[00:42:41] Alex: I would say Troy, that there's a direct line between the rise of retargeting and G D P R.
+
+[00:42:47] Brian: Because the creepiness, I know it's been in this industry forever, but that weird, who knows what creepy is It depends on the person. But I'll tell you, early internet, anytime I explained to family members, what I did, they would be like, you mean those pop-up ads?
+
+Why do I get those? And then it became, you mean like I saw something on the internet and I'm followed around by those shoes? It just became synonymous with what to people felt. And feelings, or feelings was an invasive, ecosystem,
+
+[00:43:17] Troy: so we're gonna let the platforms own that space. They're gonna be the only ones that can deliver performant digital advertising because they have the data and they have the technological
+
+means. And, and then the answer on on the other side is, oh, well, too bad we couldn't get the browser companies to do anything.
+
+Well, of course we can't because it's Google. That is the number and Apple that control the browser
+
+[00:43:41] Alex: but that's what I'm saying. Troy, I'm not disagreeing with you. the outcome of this should be that most people do not know that they're tracked on the internet. To the degree that they're tracked. And I think that is not a good thing.
+
+Now, the way this was executed actually helped the big guys and hurt 
+
+everyone else. And it's 
+
+made, 
+
+[00:43:57] Brian: do. Don't they
+
+[00:43:58] Alex: no,
+
+this is, you know, you know what, that's such a us-centric point of view. Everything that the government does is bad, so we should get it out of everything. and 
+
+then, 
+
+[00:44:06] Brian: it. Or leave it, Alex. 
+
+[00:44:07] Alex: but then you elect people who just wanna do things badly.
+
+Soyou don't have anything. Regulation can be hugely important and I don't know why we're not regulating this shit. More I don't want Facebook to see which site I'm jumping on. It's crazy that they have a track record of all the site, a visit on the internet. That's insanity.
+
+People were upset when, the FBI was tracking which books they were taking out of libraries. And this is okay.
+
+[00:44:28] Brian: Well, that's the government
+
+[00:44:29] Alex: is the government worse than Facebook?
+
+Just 
+
+come on.
+
+I mean,
+
+Americans are so distrusting from the government and so trusting for their, benevolent corporations, by the way, those benevolent corporations that would allow, pieces of rat and human meat into those canned products until the government said, Hey, we, maybe we shouldn't do that.
+
+the, profit motive doesn't make you good and you need regulation and you need a lot of it. Sorry.
+
+[00:44:53] Brian: Well, I,
+
+[00:44:54] Alex: trusted.
+
+[00:44:54] Brian: We generally culturally have a little bit of distrust of centralized governmental authority.
+
+Um, 
+
+[00:45:00] Alex: That there's a healthy version of that. Is is fine. Are we 
+
+turning this into the All in podcast, sir? We gonna be.
+
+[00:45:06] Brian: I'm like very reasonable about it. I mean,
+
+You are,okay, let's do, let's do a good product. What's a good product? Guns? 
+
+[00:45:12] Alex: 
+
+
+[00:45:12] good product
+---
+
+[00:45:14] Alex: I'm gonna say Threads is a good product. What an impressive product launch. Impressive. 
+
+[00:45:19] Troy: first of all, you didn't have permission to take the good product slot and then fill, fill, it up with your, with, junk. Really, we're gonna fill it up with threads. You know what? I like to, I like to take good product and, connect it to the things that bring us joy in our lives.
+
+Even if it, means that sometimes we meander a bit to an apple or a fig, or, a toaster or whatever. I, here's a good product. My friend Roberta's a good product. this isn't
+
+[00:45:49] Alex: on. A good 
+
+products, something we should be able to buy 
+
+[00:45:51] Troy: okay. 
+
+[00:45:52] Alex: for sale.
+
+[00:45:54] Troy: Maybe, I don't know, but,
+
+[00:45:55] Brian: you don't meet a lot of Robertas these days. 
+
+[00:45:58] Troy: let's use her then generically for the kind of people in your life that organize impromptu dinner, get-togethers with friends and they, they make a big batch of curry a beautiful bean salad and, and something else that's green and uncooked or cooked.
+
+everybody gets 
+
+[00:46:15] Alex: is, 
+
+[00:46:15] Troy: and
+
+[00:46:16] Alex: becoming oddly specific, 
+
+[00:46:18] Brian: Yeah, 
+
+[00:46:18] Alex: this, good product feels like 
+
+[00:46:20] Brian: Troy went to dinner 
+
+[00:46:20] Alex: it feels like reading a recipe that I found on Google. She's like, all right,
+
+[00:46:24] Troy: no, it's like you're, you are always guaranteed a good meal and a good time and a good conversation if you go to Roberta's house. And so that's a good product.
+
+[00:46:33] Alex: That is, that
+
+is a. 
+
+[00:46:34] Troy: people like that in your life? Is that your home? Yeah.
+
+[00:46:36] Alex: I try to be, we, we try to be that, but thankfully we have a very large group of friends and our entire thing is, making meals either at homes or, at two in the morning on the top of some mountain.
+
+[00:46:48] Troy: It's those people that create community and that community 
+
+feels warm. So really the product is community and food 
+
+that's my good product of the week. do you wanna build on that or do you want to submit another? 
+
+[00:46:58] Brian: product Roberta or Curry
+
+[00:47:00] Troy: Well, it's kind of the 
+
+[00:47:01] Brian: and Curry? Roberta's Curry. 
+
+[00:47:02] Troy: Roberta Scurry. We'll leave it at 
+
+that.
+
+[00:47:04] Brian: guy
+
+[00:47:04] Alex: I had an interesting, conversation with someone, it's not nothing to do with what you just spoke about, but I just made me remember that I struggle with all this Elon stuff. I struggle with being a Tesla owner, and I usually try to separate myself from that.
+
+I have Tesla power, Bo wall batteries, I have fucking starlink and I have a Tesla, model three that I bought in 20 20, 20 19. And it is a great fucking product. that's the thing that's annoying. Their UI is better than most. it's noisy and it's not particularly well built, but having rented cars that aren't Teslas, I'm kind of.
+
+still surprised by how good it is as a product, but, I feel bad. Like I genuinely feel bad driving it around. except somebody just told me that actually since I have an older model, which has the chrome finish around it, rather than the blacked out finish, the new models don't have any chrome.
+
+They have the blackout I'm virtue signaling that I bought my Tesla prior to us knowing that Elon was crazy. So therefore this car that looks slightly older, this like 2020 model of the Tesla Model three is a great, way to, guilt free drive 
+
+around a Tesla. 
+
+So I say pre 
+
+2021 Teslas. 
+
+[00:48:13] Brian: do you generally like. Not buy products or whatever, because of the owners
+
+[00:48:20] Alex: Yeah. Because of just a general, I mean, usually the owner's less
+
+important, but in 
+
+this case, he's such a big presence in
+
+[00:48:27] Brian: you move to a state that politically not aligned with your political beliefs?
+
+[00:48:33] Alex: Nope.
+
+[00:48:33] Brian: Really?
+
+[00:48:34] Alex: look politically, California sometimes isn't a lot. But if 
+
+there was a state that, banned abortions or,the things that I found egregious, yeah. I wouldn't move there. I don't wanna live there. I don't want to pay taxes
+
+into that. 
+
+it Elon that you are upset by, or is it the other Tesla owners? It's, Elon, I think more and more it's the other Tesla owners, the amount of people, who have vanity license plates that write Elon for life. I mean, those Elon guys are, are terrible. But at this stage, it's kind of Elon. I don't mind if folks are a little crazy. I just think he's been like really disgusting.
+
+[00:49:07] Troy: he's 
+
+me for a second of that lyric from that great Canadian band, the Bear Naked ladies. 
+
+[00:49:13] Brian: is not a band. 
+
+[00:49:13] Troy: no, no, no. And the lyric is better than the band, but it's, not the band I hate, it's their fans.
+
+[00:49:19] Alex: Yeah. I mean that's, that's also true. the fans are pretty terrible. the discourse around threads has been amazing. There's long parables of, fans that are saying, imagine building a product like Twitter and spending your hard work and all your ideas to build something like Twitter.
+
+And then having Zuckerberg, come and copy it. I'm like, motherfucker, he didn't even build it. it's pretty wild. but yeah, so, it's been hard for me. I wouldn't move to Miami. I'm sorry, Brian. I know you love it there.
+
+[00:49:45] Brian: no, I just, think there's a good case to be made. even if you disagree politically, you should move to places where the political climate is different. I mean, you can vote there, I assume, and then you can maybe, perhaps change it to
+
+[00:49:58] Troy: Yeah, I'm kind of with Brian on that one. The thing I like about Miami, I wanted to have a house in Miami and my wife, feels like you do Alex, and she's like,over my dead body 
+
+[00:50:07] Alex: yeah.
+
+
+
+you know why she feels differently about my, about, Florida because she's a woman, things are 
+
+slightly, 
+
+[00:50:15] Brian: be all men. It's gonna 
+
+be, 
+
+it's gonna be 
+
+a giant men's hotel. 
+
+[00:50:21] Troy: no, she just thinks it's, she just thinks it's weird
+
+[00:50:23] Alex: Yeah. It is weird. 
+
+[00:50:24] Troy: and that's what I like about it, to be 
+
+[00:50:26] Alex: Yeah.
+
+[00:50:27] Troy: Have you been there, Alex?
+
+[00:50:28] Alex: I like Miami, actually. I think
+
+Miami's fun. 
+
+Yeah, 
+
+[00:50:31] Troy: I like it too.
+
+[00:50:31] Brian: We should do the P 
+
+V A summit in Miami. 
+
+[00:50:34] Alex: and the thing to remember is that even those states, I would say that, nothing's homogenous,
+
+but,I don't want to pay taxes in a place that I feel where my taxes are being used for evil
+
+shit.
+
+[00:50:44] Brian: like no taxes in Florida, so.
+
+[00:50:45] Alex: Well, that's
+
+true. 
+
+[00:50:47] Troy: that argument.
+
+[00:50:48] Alex: goes that. I.
+
+[00:50:49] Brian: I dunno how they do all their evilly. Where do they get this from?
+
+I think it's from sales taxes. 
+
+[00:50:54] Troy: But let's just, you know, I, someone made the comment once that we end the podcast by talking about how we're gonna end the podcast. I mean it's not like our podcast is wildly popular. I think it has its fans 
+
+and 
+
+[00:51:05] Brian: it's popular? I got another note about it today.
+
+[00:51:07] Troy: I think you should share those with Alex cuz 
+
+[00:51:09] Brian: It's someone called it H V A though, not people are algorithms. It's like humans for algorithms.
+
+[00:51:15] Troy: 
+
+[00:51:15] Alex: it's more specific.
+
+[00:51:16] Troy: I prefer people. But I wonder who would come if we had an event. Like would we get a bunch of your dwe be like ad tech people, or what would we get?
+
+[00:51:23] Brian: Are you, 
+
+[00:51:24] Alex: Well, 
+
+[00:51:24] Brian: Are you,
+
+talking to Alex? Those are the people he makes dinner for at 2:00 AM.
+
+[00:51:31] Troy: No, but who would 
+
+come? 
+
+[00:51:32] Alex: think he was talking about your people, Brian, just to be clear.
+
+[00:51:35] Troy: Oh. I don't think Alex is in part, a member of the Ad Tech community. Are you?
+
+[00:51:40] Alex: No, left.
+
+[00:51:41] Troy: You were kicked out.
+
+[00:51:42] Alex: They were kicked out.
+
+yeah, 
+
+[00:51:43] Brian: no, I think we'd get a good group.
+
+[00:51:45] Troy: What's 
+
+the 
+
+[00:51:45] Brian: so. 
+
+[00:51:46] Troy: feedback did you get today on H V A?
+
+[00:51:48] Brian: trying to find it. I, because I went to LinkedIn cuz it felt like
+
+[00:51:51] Troy: Because U usually what you like to do right now is the segment where you tell me how popular Alex is and how my popularity is declining.
+
+[00:51:58] Brian: 
+
+
+[00:51:59] outro 
+---
+
+[00:51:59] Alex: but my favorite part is the end when we just talk about nothing.
+
+Meander. Yeah, I agree. 
+
+
+
+this is, the highlight of my week guys. this is our 43rd episode. I think that once we reach a year, we should, have a chat about some new format ideas or maybe,
+
+new energy. 
+
+[00:52:16] Troy: Alex, we have a format idea that's approved by the board on the table waiting for implementation.
+
+[00:52:21] Alex: Uh, the call in.
+
+[00:52:23] Troy: the call in technology. I'm waiting for it.
+
+All right. Let's leave it there.
+
+[00:52:26] Alex: yes. Let's have it there.
+
+[00:52:27] Brian: All right.
+
+[00:52:27] Alex: Bye. 
+
+[00:52:28] Troy: Okay. Don't, don't, don't leave yet. 
+

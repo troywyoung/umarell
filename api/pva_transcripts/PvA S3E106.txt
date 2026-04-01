@@ -1,0 +1,753 @@
+PvA S3E106
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian Morrissey: you look like you're in vacation mode. Got
+
+sunglasses on, you're, you're seemingly outside in a European environment.
+
+I'm in Lisbon.
+
+Do you like Lisbon? 
+
+[00:00:09] Troy Young: I've had a good time. It's a pretty town. Lots of hills to walk up. the food's been great. 
+
+[00:00:14] Brian Morrissey: Alex, do you miss that, that European work life balance? 
+
+[00:00:18] Alex Schleifer: I mean, 
+
+I grew up in the Mediterranean, which has a very specific pace of life, which is delightful. But in many ways, I couldn't, I couldn't wait to leave it because I felt I was always moving, wanted to move a little faster, but now that I'm older, I kind of miss it.
+
+[00:00:32] Brian Morrissey: Yeah, we should all retire to Europe.
+
+[00:00:36] Alex Schleifer: Yeah. Well, isn't that what, you know, Europe is America's new Florida.
+
+
+[00:00:39] Intro
+---
+
+[00:00:39] Brian Morrissey: ​
+
+Welcome to People vs. Algorithms, a show about detecting patterns in media, technology, and culture. I'm Brian Marcy. I'm joined as always by Troy Young and Alex Schleifer. this week, New York Magazine published a terrific feature package on the state of the media industry with a simple, if obvious headline, can the media survive?
+
+This gave me pause since, the rule in journalism is that anytime you have a question headlined, the answer is no. Although in this case, I don't think that's actually the answer. Anyway, many of the themes covered by the 57 power players interviewed, New York calls them the most powerful people in media, will be very familiar to any listeners of this podcast.
+
+In fact, they represent something of a new consensus in the media business. The big outstanding question, of course, is what this industry overall looks like in five years, but there is this emerging consensus of the moment that goes something like this subscriptions are the only credible business model for a serious news operation niche and specific is far better than mass in general, media is downstream of tech, and it needs to come to terms with the implications of that position.
+
+Transcribed A new class of aggregators is emerging and they will have very different incentives from the last generations. Lean and highly efficient media models are a must. The past is simply not coming back. And yes, that means print and the homepage, I'm sad to say. The middle is, as always, a perilous position and many legacy players are stuck there.
+
+Individuals are trumping institutions and will continue to do so. Micromedia will grow and proliferate. Often at the expense of mass media, you need to diversify. If you're in the text content business, many media companies will end up becoming fronts for other better businesses. IP is still valuable and there are myriad ways to build a business around it.
+
+Even if that business doesn't have the same contours as the past, the New York times is an outlier. Local news is the hardest problem to solve. Growth hacks never last and can't be a core value proposition, and the competition is not other publishers, but a far broader information space filled with everyone from tech platforms to grocery store chain, ad networks, and anyone with a phone.
+
+And, oh, by the way, AI bots to, maybe all this means is choice as in our conversation that we need a new idea, or perhaps as I posit, maybe this is fragmentation or decentralization was just an inevitability from when the Internet began. And what we're in the midst of is not an end, but something of a new beginning and a morphing.
+
+I mean, new models are emerging. they don't look exactly like the old models. They're often smaller. And I believe that we will see not hundreds, but thousands of these kinds of micromedia businesses, in the future. it is difficult to operate a much larger business. but I do believe that the future overall is pretty bright.
+
+for the media industry. Anyway, let me know your position on that. You can email me at bmorrissey@therebooting.Com. Now, on to the conversation with Troy and Alex..
+
+​
+
+
+[00:04:13] Navel Gazing Media
+---
+
+[00:04:13] Brian Morrissey: I wanted to start off because, and Alex, you're going to have to bear with us on this because, you know, the media business loves Naval Gazer. And it's just it's amazing. so New York magazine came out with a, a package, which I was disappointed. You weren't in and try. I think I like that. They should have included you.
+
+[00:04:31] Troy Young: Maybe I was one of the anonymous people in there.
+
+[00:04:33] Brian Morrissey: You could have been. I just figured they anonymized they and they
+
+anonymized all the, all the good stuff. I, I liked how she included Charlotte Klein, I think put it together.
+
+a lot of the sort of sniping that is the media business. It's great.but I wanted to, I wanted to start off by getting your sort of, what did you sort of take away? Not, not a ton of surprises in there, you know, subscriptions, niche, et cetera. We talk about a lot cus but, give me your vibe. Check on it.
+
+[00:04:59] Troy Young: we talk about it so much on this podcast that none of it really, Felt, you know, super insightful. we, we do appear to have a new consensus, right? And, and I guess it's that earning a direct relationship with the consumers is really the sort of true lingua franca of media and therefore subs matter and blah, blah, blah niches are the future.
+
+And now Apple news is good, which is, you know, I think. Something we can debate and that voices are, you know, a new organizing point for, you know, challenging media brands, all of which says to me that maybe we need a new idea because in media we stampede, right? Oh, there's a guy up on the balcony here with a falcon.
+
+To get rid of the pigeons, a killer falcon. Anyway, sorry folks. so in some ways, Brian, I think that media, in the media, everything old is new. I think we have this kind of digital media notion that everybody could build a media business. But before, it wasn't like that. And it was extraordinarily expensive.
+
+The barriers to entry were high and you had to earn in. And it was extraordinarily difficult to build a flywheel subscription mechanism. My, my takeaway is there's very few businesses that have meaningful, I mean, other than sort of, you know, micromedia businesses like you run, but the, very few of them have the sort of subscription flywheel.
+
+And that to me is the kind of hot, you know, the watermark that you want to get above.that's not to say that you're not augmenting the subscription revenue with other things, you know, advertising events, whatever. But, the flywheel's essential if you want resilience and you want to do real reporting.
+
+And, yeah, we all look kind of, Belongingly at the New York Times because they have a subscription flywheel that is,you know, very resilient and, and, defensible. And it enables them to create a better product and very, very few media brands have that. Let's call that a, like a 50 million subscription business or even a 20 million subscription businesses material.
+
+And in that, that switch, you know, locals clearly the big casualty because local struggle of local media businesses have, have not been hugely successful in generating sub revenue. Two thirds of the jobs are gone in the last decade. And this is an interesting step. The New York Times employs 7 percent of newspaper employees.
+
+So, if you can't make that subscription flywheel work, and increasingly being purely ad led is just, it just feels like it's getting harder and harder, you need to have a media adjacent business, right? And is that a marketplace business, an affiliate business, a licensing business, lists, you know, maybe IP based video businesses, but You, you're, you're sort of adjacent to, you know, a core, publishing proposition.
+
+I was reminded of it, Brian, and we had a little, back and forth on this. I'm in, I'm in Lisbon and there's, this is in 2014, I think, the first timeout market started in Lisbon.
+
+[00:08:20] Brian Morrissey: Yeah, it was
+
+[00:08:21] Troy Young: Uh, and now they have them in a bunch of places, including in Brooklyn, and it was packed, really big market. I think there's, there's, I agree with you that there can be a kind of a food court vibe that 
+
+[00:08:36] Brian Morrissey: It's a food court. It's a food court. Like, what are we
+
+[00:08:38] Troy Young: none of the food is really that good or that distinguished.
+
+But it's fun, you know, it's lots of people, there's a vibe there. Now they're doing, it forced me to look up their business, which is publicly traded. In London, it's, I think, a little under 150 million and loses money and has a bit of debt and in a bit of a tight spot. and they're trying to expand to multiple markets, right?
+
+They had one in Miami, they're doing one, I think they're doing one 
+
+[00:09:05] Brian Morrissey: The one in Miami closed. Didn't
+
+[00:09:07] Troy Young: okay, so they're doing one in Dubai. They got a whole bunch of markets, on, on 
+
+[00:09:11] Brian Morrissey: Yeah, Cape Town and they're, they're going to stamp it. I think I always liked
+
+the original. I remember I talked, I did a couple podcasts with Julio Bruno, who was leading that. That effort to change that business. 
+
+
+[00:09:22] Media as a Front
+---
+
+[00:09:22] Brian Morrissey: And I think that's a great example of a lane that has developed where the media has lost its original core economic purpose, right?
+
+Like timeout. You don't pick up timeout to figure out what's going on in the city around you. I don't, I
+
+[00:09:38] Troy Young: was half the, it was under half the revenue when I looked at it.
+
+[00:09:41] Brian Morrissey: Yeah,
+
+and so they, they built out a marketplace business, which is really not a market business, not a marketplace business. they built out a market business really hard. It's capital intensive. They took on a ton of debt. you know, Julia left like a couple of years ago, the pandemic. Like hit them.
+
+Actually, that's why the Miami thing didn't work. They were just opening it at that time. and you know, they're soldering through. But I think that that is these lanes are developing. I think when I was reading the packages thinking about like our conversations. It seems pretty clear. There's a, there's the escape velocity lane, which is, you know, the New York.
+
+It's very small. It's like the New York Times. That's everyone goes to the same examples or it's business publications like Bloomberg, which also, by the way,
+
+has a terminal business. Ft Wall Street. You're not going to be fine. Okay. And then you've got some like, Okay. Deep, what I consider DTC cultural, like the Atlantic, the Atlantic.
+
+It looks like they have a model, you know, they were able to make, to make the turn on, on subscriptions. It's not going to be a
+
+[00:10:39] Troy Young: it really has become a bit of a doomsday publication, right? 
+
+[00:10:43] Brian Morrissey: It 
+
+Is but it 
+
+[00:10:43] Troy Young: anything, is there anything more depressing than reading the 
+
+[00:10:46] Brian Morrissey: Well, did you see Trump shared a, or no, Elon Musk shared, same thing, shared a, fake Atlantic, story. and. It was, you know, it, it was plausible that it could have been,an actual story.
+
+but we, we're in this, this sort of post truth world. but that's, and the New Yorker, I think the New Yorker has done a really good job. And there are a few of those and that's a lane that's fine. But the reality is most people are not going to get that lane. The middle is going to get crushed. So. You, you need to be either extremely small and focused, and I, I read within that piece a sort of, I guess, nostalgia for the way this business used to be because there was a dismissiveness to, you know, in the anonymous comments to the idea of having, why do these people just want to have like a profitable business with like 9, 000 like paying readers? Well, because that's business that tells me that this person one has never built anything in their life positive They never built anything and to that They've probably been stewards of money losing businesses constantly and three think that this is not actually a business You have to run profitable businesses Wow go figure and a lot of the previous models, they didn't work in a different era and they're not working now.
+
+And so then the other lane that it, that opens up is you become what I consider like a front operation for a different, better business. Media is good, good to get attention, right? But the reality is, if you look at advertising spending and you go through these reports, publishing, Advertising on publishers is now in the other category. Like, it doesn't even warrant a section. You know, and that's not coming back. I don't see that changing exactly. There's only so much subs to go around. So, yeah, the most resilient models are gonna be smaller. Right?
+
+[00:12:43] Troy Young: And you know what, for all, I mean, for all of the sort of hang ranging, news might be a good and okay, you know, segment to be in. News might be okay if you can find the path.
+
+[00:12:58] Alex Schleifer: Why do you say that? I
+
+[00:12:59] Brian Morrissey: Yeah. How many of these beards have you had?
+
+[00:13:03] Troy Young: I say that because it's always new, because we are in a moment where One entire category of news is dying, which was all the local stuff where there's one big successful liberal media organization called the New York Times. And then there's a few business pubs. Because news needs to be made every day, and if you can figure out your own formula, which helps people navigate the world better.
+
+They'll subscribe to you. I'm not sure it's easy to build a subscription proposition around fashion, unless it's B2B fashion. It's very difficult. Lifestyle categories are really difficult. That's why. I, I, I just, where, where are you going to find that? So to me, you know, one of the great examples to discuss in terms of that, you know, that one that's very difficult.
+
+I mean, listen, you could easily, I'm talking about Time Magazine, you could easily put that into the, like. Okay. We're going to harvest it for IP. Right. and, and we're going to do time studios and we're going to documentaries or, you know, clearly,
+
+[00:14:13] Brian Morrissey: what, they are doing that.
+
+[00:14:15] Troy Young: well, that's part of the business. The other part of the business, essentially a list brand, right.
+
+You know, the top, you know, people in 
+
+[00:14:23] Brian Morrissey: By the way, that's Newsweek. Newsweek is very successful. I think that's, we should have Dev on here, because they've actually been successful with this model. Go 
+
+[00:14:31] Troy Young: what brands have kind of emerged that maybe have a shot. Does puck have a shot? Is that news kind of news, right? The semaphore have a shot. Does Axios, is Axios a business? Is Politico a business? These are all news businesses. 
+
+[00:14:48] Brian Morrissey: Sort of.
+
+[00:14:49] Troy Young: Well, it's just that, like, I mean, in the magazine category, lifestyle businesses were always ad led. They're
+
+always ad led businesses. And I just, I'm struggling to figure out how that model is going to last long term. Right? Everybody just said, well, if it's, if our advertising isn't growing, we'll, we'll offset it with affiliate.
+
+To me, affiliate is under, particularly product affiliate, is under tremendous pressure. 
+
+Google doesn't like the 
+
+category anymore.
+
+[00:15:16] Brian Morrissey: mean, it seems to me it's pretty clear that most magazine brands will end up in that sort of front business category. it'll be a front for, for something, whether it's brand activations, whether it's a lists and rankings business that, you know, these brands still have value, to be rung.
+
+[00:15:34] Alex Schleifer: a problem. Then, like, how do you retain people? Because do people dreamt of becoming writers all their life? Want to work on a fun activation for a
+
+[00:15:44] Brian Morrissey: well, you don't tell them that Alex.
+
+[00:15:46] Troy Young: don't, and you don't hire them.
+
+[00:15:48] Alex Schleifer: Well, but that's what I'm saying. Like, like, what is the talent go? I think that's, you know, often missed. Right. 
+
+[00:15:54] Brian Morrissey: Well, I mean, That's I think that's a good because that's the doom loop scenario. I don't want to get negative, you know, I think counter to that. And I think it sort of glossed over. 
+
+
+[00:16:02] Solo Type Media
+---
+
+[00:16:02] Brian Morrissey: This is there's a lot of people developing really successful solo type businesses downstream of news. And whether that's podcasting or or newsletters.
+
+Yeah, these are small, right? Some of these are really profitable. you know, Maddie Glacius.
+
+[00:16:19] Troy Young: Yeah, but, but let, right. But like, well, let's not put those aren't real media businesses, dude. Madagascar, it's it's like a couple million bucks. It's not a business.
+
+[00:16:29] Alex Schleifer: you have a hundred of those. It's better
+
+[00:16:31] Troy Young: it's a hot dog. It's a hot dog stand.
+
+[00:16:33] Alex Schleifer: you put a hundred of 
+
+[00:16:34] Brian Morrissey: first of all, it's not a hot dog stand. I actually looked this up because a pizzeria, like, you know, they're, they usually top out at like 600,
+
+thousand 
+
+[00:16:41] Troy Young: It's a pizzeria. It's a pizzeria.
+
+[00:16:44] Alex Schleifer: but, but 
+
+[00:16:44] Brian Morrissey: There's a lot of pizzerias 
+
+out there 
+
+[00:16:45] Alex Schleifer: a lot of pizzerias that were, it's like, you know,
+
+[00:16:48] Brian Morrissey: Excuse me,
+
+Papa 
+
+John's. 
+
+[00:16:52] Troy Young: I'm not saying you can't Brian. I don't know. Let's not take this 
+
+[00:16:56] Brian Morrissey: I'm offended. I feel attacked.
+
+[00:16:58] Troy Young: No, Brian. I think that you're, I mean, without disclosing 
+
+anything, you 
+
+probably 
+
+[00:17:03] Brian Morrissey: I have a front business and a newsletter business.
+
+[00:17:06] Alex Schleifer: And a burgeoning podcast business, I would 
+
+[00:17:08] Brian Morrissey: Yeah. 
+
+[00:17:09] Troy Young: guys, but, 
+
+[00:17:10] Brian Morrissey: off my lawn. 
+
+[00:17:12] Troy Young: I'm happy for you, Brian, but like a couple million dollars is not a business. It's not a big business.
+
+[00:17:18] Alex Schleifer: but here's the thing, right? You have these organizations that hire, used to hire hundreds of people live on an excellent business that is advertising huge margin. and now, you know, that that's exploded and it means maybe instead you have 200 businesses with one person that makes 2 million a year.
+
+That's way 
+
+[00:17:37] Brian Morrissey: 200, there's gonna be thousands of them.
+
+Thousands. 
+
+There's gonna be so many of these businesses, and they're not necessarily gonna stay where they start, right? Like, look, Eric Newcomer left Bloomberg, okay, and he just did his four year anniversary post, and He generated 2 million. He's gonna generate 2 million this year with 50 percent margins. Okay, so he's gonna keep hiring and like that will become a smaller version. Maybe Eric can get that to like a giant business. I don't know. But at worst, I think it becomes like a smaller version of this era is like TechCrunch. It's he's he's right between VCs and startups at a time of a gold rush into AI.
+
+So he's making a ton of money off events.
+
+[00:18:21] Alex Schleifer: we're seeing like these media organization no longer breaking the scoops or having the big interviews, right? Like, like there's, there's hardly, I mean, there might be a 2 million business, but to the consumer, it hardly matters. 
+
+[00:18:33] Troy Young: because it's all good. It's all good. I'm very happy for the journalists that used to make 200 that's now making 80 and, and is, is, you know, cleaning the dishes and writing the 
+
+[00:18:43] Brian Morrissey: I, I don't know. I feel like, 
+
+[00:18:46] Troy Young: It's great. No, I'm, I honestly think it's great. It's not a scaled business. 
+
+[00:18:51] Brian Morrissey: It's
+
+not a scaled business. Absolutely.
+
+[00:18:53] Alex Schleifer: well, maybe it was, yeah.
+
+Maybe that's what we're saying.
+
+[00:18:56] Troy Young: yeah, It's 
+
+[00:18:57] Brian Morrissey: W we're
+
+[00:18:57] Alex Schleifer: this election, this election isn't being run by like scaled media business, 
+
+[00:19:02] Brian Morrissey: How
+
+big is Joe Rogan's business? I don't know. What do you
+
+think? 
+
+[00:19:06] Troy Young: it's at least a hundred. It's at least a hundred million. Yeah. 
+
+[00:19:09] Brian Morrissey: got that like 250 million deal with, Spotify and that's a good, is that a scaled business?
+
+[00:19:16] Troy Young: It's Papa John.
+
+[00:19:17] Alex Schleifer: are the margins on that?
+
+[00:19:19] Troy Young: They're killer.
+
+[00:19:20] Alex Schleifer: Yeah, they're killer. It's just some dude in a chair.
+
+[00:19:23] Brian Morrissey: basically a lot of the media businesses are caught between being upstream to downstream and that like tech is upstream of media. They take most of the value because they control the distribution.
+
+There are the commanding heights, et cetera. and then downstream you have, particularly in the, in the news industry. People are making lots of money without doing the, like, the, the really hard, like, reporting work that is not economically feasible. I mean, we always talk about these podcasts, you we talk about, like, you know, people who are doing the reporting and they're just providing the raw materials for an entire, these might be uh hot dog stands or pizza parlors. But, they're profitable, unlike a lot of, news companies. And
+
+[00:20:09] Troy Young: Only the companies that have the subscription flywheel can do the reporting for the real reporting because the reporting isn't, it needs. Supportive hundreds of thousands of subscribers because it's not an economic affair
+
+as a kind of input and output,
+
+[00:20:25] Alex Schleifer: for reporting, it's not something you can copyright, or truly own. So it's very easy to just, Pick up and recontextualize for an audience, right? So these tiny businesses with tiny cost structures have like their field reporters are, you know, the two or three large news outlets, social media and, And then, you know, they don't need that infrastructure anymore. That's kind of 
+
+what's tragic, right? If you spend money on reporting, you can't really protect it. that's always been the issue with news is that it's like a, you know, the second you gave everyone else the infrastructure to publish, then they had free access to content.
+
+And maybe you got it three minutes later but you could essentially rebuild your news pro, program from. 
+
+[00:21:07] Troy Young: I had a question for Brian around this Alex that I put in the text thread and he didn't really answer it
+
+[00:21:15] Brian Morrissey: I either missed it or I didn't know the answer.
+
+
+[00:21:17] News Centrists
+---
+
+[00:21:17] Troy Young: well, I'll ask it to the audience and I'll ask it to Brian but I'm getting frustrated with these sort of It's not that they're news, they're sort of these news centrists. They're like Bill Maher and, and our, and, and our buddy Shane Smith patting each other on the back saying, Oh, we, we like to get information from both sides.
+
+We're tired of liberal media bias. You know, you, you gotta dig deeper and we know how to dig deeper and we're not just going to go along with what the liberal media says. Because we need to because we need to see the other side of the story and and to me underneath when I peel it back part of it is the sort of it's the all in the Lex Friedman, the Joe Rogan, the Shane Smith, the Bill Maher, they're all trying to grab power from the sort of what was previously the Kind of this protected media elite that had a lock on, on, on kind of the one point of view, right?
+
+The reported point of view. And this is a kind of a power grab, right? And, and they too have, and part of it is kind of funny because they want to say we don't like the, we don't like Kamala and we don't like her. Can't say that we like Trump, but we kind of like Trump and some of them just say they like Trump, but they're, they're, they're these kind of new center right group, but they're, they challenge mainstream media, but they use mainstream media to back up their points of view.
+
+We've said that before, and I don't know where it goes. It's just like. You know, and, and people listen, you know, they have huge audiences, right? But there's nothing underneath of it from a reporting perspective. It's just like us, a couple of fucking idiots talking about something and pretending they know something on a podcast,
+
+[00:23:14] Brian Morrissey: Yeah,
+
+[00:23:15] Troy Young: you know what I mean?
+
+Where's the 
+
+[00:23:16] Brian Morrissey: to the information space. well, I mean, I would say a few things. One is, I think this is just a normal sort of toadying up to new power centers, right? I mean, this is like the reverse of David Brooks. I mean, David Brooks was always the guy who would be like, Oh, I'm a Republican, but like, I'm the kind of Republican that progressives, can tolerate.
+
+And so, you know, signaling that
+
+[00:23:38] Troy Young: those, I know those, those types.
+
+[00:23:40] Brian Morrissey: yeah, you're not about the wackos, et cetera. There's always, because the, But I feel, and we'll see what happens in the election, I have no idea, but it feels like there has been a shift from,
+
+[00:23:50] Troy Young: You don't want to be a Republican in high school. It's the worst. You want to be 
+
+well, no, I mean, we've seen those statistics like, young women will absolutely out of hand not date someone who is a, is a Trump supporter, a lot of them. So It's not, it's not sexy. 
+
+[00:24:05] Brian Morrissey: that's a tough, like, that's a tough, that's a tough
+
+call at the ballot box for a young man. I gotta say. You might want to make a business decision guys.
+
+Like I'm just saying
+
+[00:24:17] Alex Schleifer: know what I love about speaking about the news just for a second, I'm sorry to interrupt you, but it's the way, you know, all of these people with sprayed faces discuss these statistics and then they're like, huh, that is an interesting statistic. Like, why is that happening? And then you're like, well, I don't know.
+
+You know, maybe it's because he's a sex offender and 
+
+[00:24:36] Brian Morrissey: yeah. Well, that's 
+
+also a common 
+
+[00:24:38] Alex Schleifer: women's rights. Maybe that's why women are pissed off. I don't know. I
+
+[00:24:41] Brian Morrissey: That's common in like the Joe Rogan kind of thing where he's like no no No, they're and he goes look it up and then they look it up and they're like, no, it's totally different. He's like Yeah, but those, those statistics are not,
+
+[00:24:52] Troy Young: Fungible.
+
+
+[00:24:53] Media Bias
+---
+
+[00:24:53] Brian Morrissey: yeah, it's like, okay, well,
+
+it's a lot of virtual virtue signaling because the, the, the, the pendulum has swung a little bit.
+
+We've seen this in, in the political discourse and society in general, you know, we went through a little bit of a, a wacky period where things went too far. You know, I think it got branded as woke and whatever. And a lot of news organizations are trying to pull that back. I mean, the LA times this week, the owner.
+
+Yeah. Yeah. And this is how screwed up these businesses, you know, the owner wanted to, like, get them out of, which is kind of interesting because his daughter apparently is like super progressive, but wanted to get them out of the endorsement business, which I mentioned this podcast, I'm very in favor of newspapers getting out of the political endorsement business.
+
+I mean, focus on government accountability, not endorsements. Don't tell people how to vote.
+
+[00:25:41] Troy Young: Not only that, but like literally who cares what the LA Times Like, yeah, that's what I mean. You're not even having an impact. Like, like, nobody's voting based on the
+
+Like they can barely review a movie.
+
+[00:25:54] Brian Morrissey: what other business and then, and then the, the union protested to this and there was like, how can an owner you know, be instructing, how pushing them how to like, actually make the product. And it was well. I how do you operate these businesses if you own them, but can't actually. Operate them. It's just it's a very, it's a very screwed up situation, but I think that's a, it's part of a larger and really the times as part of this, like the times has been trying to claw its way back from. Frankly going too far, I think and now it's interesting because in the run up to the election I would never see this you see like super progressive people claiming that the New York Times is biased against progressives.
+
+It was like, oh my god
+
+What is 
+
+[00:26:43] Alex Schleifer: well, I mean, I I mean, I don't think the New York times is, but when you see some of the reporting, I think the thing that's driving. People and honestly, me crazy, like me crazy is, is the way the reporting is framed where, you know, there's one side saying things in a, in a reasonable matter, you might disagree with them even, even strongly, and then the other side, it's just some rambling lunatic.
+
+And you can see all the gymnastics to put that into an article that makes it sound sane. And that is, to me, like, that is, I'm so angry at the news right now. I just like, I could watch it, I could watch this whole shit burn down. The horse racing stuff, there's nothing substantive. And then they'll literally pick a tweet where there's like, 37 words that made no sense next to each other and they'll recontextualize it.
+
+So it makes it makes somebody's doing his homework. and that feels like the New York Times constantly doing that. Just like going across the middle, trying not to offend anyone. you know. I don't know that that's kind of I think
+
+[00:27:47] Troy Young: It's a hard, it's a hard time to cover the GOP, no, no doubt about it, because they're insane. It's a fucking clown car. And, I don't know how, to your point, I totally agree, Alex. How do you make, how do you, you, you try to kind of be a little more balanced, but not point out that this is, like, unhinged behavior? 
+
+[00:28:09] Alex Schleifer: everybody kind of like immediately flares up to like a hundred percent, but it's, you know, to use the word of the moment. I think it's just the New York Times being demure like. Well, we can't stoop this low. So even though, he's, you know, stood up and vomited on his audience, we're just going to say, you know, he had strong words against, you know, the current immigration climate or something, you know, but, isn't it like maybe that's like old ways of doing things and reporting the news in the way that, that feels like.
+
+Kind of gracious right where they don't want to be mean overly biased and it comes across as just completely edited, and sanitized for their audience. So it's it's
+
+[00:28:51] Troy Young: And yet there's, there's nowhere for a good conservative, like a conservative with a kind of, cultural liberal. There's nowhere to go. Where do you go? 
+
+The choices 
+
+[00:29:05] Brian Morrissey: is that, the lane that the Free Press is trying to, to occupy?
+
+[00:29:09] Troy Young: A little bit, sure. 
+
+It's the lane that I, it's the, it's the road that I personally travel. Uh, but, 
+
+[00:29:16] Brian Morrissey: I thought you 
+
+were more of a PirateWires guy.
+
+[00:29:18] Troy Young: I mean, I find Pirate Wires to be amusing, to be honest with you. they're, they're, um, you know, cynical and strident, and they admit that, you know, that Trump is PT Barnum, but they're, they're, you know, they're good conservatives. They're cutting. They're nasty.
+
+[00:29:36] Brian Morrissey: Yeah, that's fine. the dispatch actually is trying to occupy that lane. I think they got, they end up getting, they try not to have the TDS as you call it, as everyone calls it. but at the same time, they are, they're Republicans who just cannot, abide by, by Trumpism and MAGA. I think, I think the centrist lane is one that like so many people are trying to get to, and I think it's, yeah. It's gonna be really difficult. I mean, I think the culture has changed, but I don't know if there's a tremendous market. and if Trump wins this election, I think we're gonna go back to craziness.
+
+[00:30:10] Alex Schleifer: go back, go back, to creating, 
+
+[00:30:13] Brian Morrissey: It hasn't been crazy the last four years. We just
+
+[00:30:15] Alex Schleifer: no, I mean, it's been, it hasn't, it hasn't, but the media landscape has, it's funny, right? Because a lot of it, if you look at where we started 4 years ago, there's been this shift towards. Whatever, tone, the Rogans, et cetera, have, you know, kind of kept amplifying, which is kind of the pseudo fake intellectualism, pragmatism, both sides leaning slightly right, anti woke, it's just, it's just being cranked up, and I do think that if the election is actually going to, for a lot of them, dictate it.
+
+Like where they end up right a lot of it is, is masked in some sort of, it got amplified when, when he lost because then, you know, you could, it works very well with the victim mentality. Bill Maher, I can't listen to because he is like, he has turned into kind of like this constant victim mindset and you see it in the way things are phrased 
+
+[00:31:09] Brian Morrissey: He's 
+
+[00:31:10] Alex Schleifer: Joe Rogan. 
+
+[00:31:11] Troy Young: No, we like, Bill, Bill Maher is now the quote unquote most trusted journalist in America.
+
+[00:31:17] Alex Schleifer: Yeah, sure. 
+
+[00:31:18] Brian Morrissey: I mean, no offense to Dan Abrams, but I don't know.
+
+[00:31:22] Troy Young: I'm just using, these are just the facts, these are just
+
+[00:31:25] Alex Schleifer: well, what happens, you know, when one or the other side wins and you can no longer play the victim, I do think we're going to, like, there's going to be some tonal shifts, whoever wins, and it's going to be interesting to, to 
+
+
+[00:31:36] If Trump Wins
+---
+
+[00:31:36] Brian Morrissey: but do you think that, like, let's just say Trump wins. Okay.
+
+And, I think that is completely a possibility just based
+
+[00:31:44] Troy Young: Do you wanna, should we keep the podcast going, Alex?
+
+[00:31:46] Alex Schleifer: I just, 
+
+[00:31:48] Brian Morrissey: just based 
+
+on 
+
+the 
+
+actions of the campaigns. I think that 
+
+[00:31:51] Alex Schleifer: I'm just having a 
+
+panic attack here. What? Let's, 
+
+[00:31:53] Brian Morrissey: It's like, kind of like investing where you, you assume that, that other people have more information and you just follow them. Like, I assume that campaigns with a billion dollars have more information on what is going on in this election than like 538.
+
+And if you look at the actions that they're doing, I think it's, it's pretty clear the direction that this is going. Now, let's just assume for a minute that Trump wins. Does
+
+[00:32:15] Troy Young: Will it mean that we pay less taxes?
+
+[00:32:18] Brian Morrissey: um, depending on how you're doing,
+
+[00:32:20] Alex Schleifer: Finally, I can dump that toxic sludge I've been holding into the river.
+
+This is, this is a good time for those holding toxic sludge or crypto.Why is it, it was all generated by all the crypto I've been mining, does, does the, the news media quote unquote, do they return to like hashtag resistance? Or do they continue this like awkward kind of dance of trying to trying to occupy the middle? I mean, what, from a business perspective, I don't know if it's going to be as effective to get subscriptions by taking the hashtag resistance.
+
+Oh, I actually think completely the opposite. There'll be,a huge part of the population, probably a, a majority, right? that, I don't think we'll tolerate this kind of middling by down the middle,reporting on what's going on. Like, I 
+
+I 
+
+think, I just, I just, it's going to just, get like, I think it's going to get ramped up, like, we keep saying it's like, it's kind of like all entertainment, entertainment is comfort, right?
+
+Life is difficult. And I think if people are just like so bummed out, they just want to turn the news and hear somebody say, you're right. This is fucked. Look at this idiot. Like, you know, like people seek comfort and, and when, you know, everything looks like it's going the wrong direction. the last thing you want is to have somebody gives you like the pragmatic view of what's happening.
+
+Like, I, I, I, I, you know, I don't think there's, there's any other way than, than things ramping up. Don't you think? You think the opposite?
+
+[00:33:55] Brian Morrissey: I think there is going to be a return to a little bit of the democracy dies in darkness. Stuff I think that's I think that's a lane to occupy. I just don't know from a business perspective. I know I'm like, talking about the business and it's all about
+
+[00:34:08] Alex Schleifer: Sure. But I mean, the business is what's going to keep those things running.
+
+[00:34:12] Brian Morrissey: Well, look, the reality is. Pivoting to, you know, being oppositional in 2017 was a great short term business decision for publishers, and you can't divorce that from the fact that they took it. Trump was amazingly good for the bottom line of these companies because
+
+[00:34:33] Alex Schleifer: was like a tornado or a war in the Middle East. Like he's just, you know, there's just like something
+
+[00:34:37] Troy Young: My fear, I wonder, though, if the whole sort of system, like, the system kind of tips over. Meaning it's sort of like our connection. The only time these days it seems that our connection to reality really matters is when someone like gets hurt or gets killed, right? When someone's fundamental rights are taken away.
+
+But like everything else, it's just like, well, what did he say? Oh, that was a lie. everything has kind of been virtualized. We live in this kind of fictitious play world where we all kind of use, you know, self reinforcing truths to help us feel better about what we already believed.
+
+And nothing, I mean, it was so much easier when there was, even if it was biased, there was some kind of like. You know, connection to an authoritative truth dictated by admittedly a small group of people, but these sort of overlapping points of view of a, of a kind of global cacophony of creators and different opinion leaders and the people that are more clownish somehow went out in this world.
+
+It's like, what the fuck? Like, does it just. what's the natural end of that process? That's what I don't understand, 
+
+[00:35:57] Brian Morrissey: are you reading
+
+the Yuval Hariri book? Because I, I just started getting into it. He talks about the sort of naive view of like, and which was peddled, frankly, by like Facebook and a lot of Silicon Valley,
+
+um, 
+
+[00:36:08] Alex Schleifer: the book? Well,
+
+[00:36:11] Brian Morrissey: he talks about how, you know, this, the basic that more information means, like, we'll, we'll agree on quote unquote truth. You know, which is different than facts that we will come to an agreement on truth, and we'll be more enlightened clearly has not happened. Like, we have more access to information now than any time at all on earth. And it is actually had seemingly the opposite impact in that there is less of a center of gravity around what is true and not.
+
+And even. if if truth matters, I mean, you see this a lot with the, they're eating the cats, they're eating the dogs. Basically, defense of the fact that
+
+[00:36:49] Troy Young: I, I love that, I love that, I love that 
+
+[00:36:52] Brian Morrissey: is it doesn't matter. It doesn't matter. It doesn't matter if this thing is
+
+[00:36:55] Troy Young: No, but this is why the moment, the Elon moment is so weird and beguiling, right? Because physics is true, right? We'll agree that like, catching a rocket ship out of thin air is true. That's crazy. Like electric cars are true, conductivity through satellites, that's true. Like physics is true. We applaud the, the, the creations of a mad innovator, right?
+
+But like, the rest of it, like, what does it matter? It's like, does Elon just appreciate something that, that Alex doesn't? That the world, it, it, it, we're, we're, truth just, it's just like, whatever story you want to make up. But he can still, like, make rockets. Physics matters. We can make things. We can be a, we can get to Mars. Did 
+
+[00:37:44] Brian Morrissey: We're going, we're going 
+
+back to post modernist and this is like Clinton, uh, depends on, depends on the meaning of the word is.
+
+[00:37:50] Alex Schleifer: well, I think 
+
+[00:37:50] Troy Young: no, but,
+
+Elon Musk is a very confounding person
+
+for this world. 
+
+[00:37:57] Alex Schleifer: like one of our you know, as a species, one of our weaknesses, which is when we kind of, find something attractive about a person that we immediately want to find everything attractive and what's happened with, like, you know, where everyone's media, we're noticing that, yeah, Elon, like that rocket stuff is, is really impressive and there's obviously like a lot of, you know, intelligence in the man, but also like really deeply flawed, you know, needing to be loved kind of 
+
+energy. That's that. 
+
+[00:38:28] Brian Morrissey: Hasn't this always been the case?
+
+Gauguin 
+
+[00:38:30] Alex Schleifer: I think what's happened, actually, I was thinking about that what's happened over the last decade, maybe 15, maybe 15 years, is that like, we've really have to come to terms with like, not, Not getting too close to our heroes. I mean, there was definitely me too.
+
+We're just like, um, you know, people that had been kind of revered for so long, just,
+
+[00:38:50] Troy Young: Yeah, but that's demented, violent behavior, but we're talking about stuff
+
+[00:38:55] Alex Schleifer: but I think his is demented, violent behavior. Like, I, I mean, I, I don't know how you guys feel about it, but like a lot of that rhetoric it will hurt people, right? so for me, it's not just like I, there's like a, a character that has quirks and throws a guitar out of a hotel room and, you know, has crazy parties. these are genuinely people that have, want to pass regulation that is going to impact people in a really physical way. So I don't see it as just like quirkiness.
+
+And, and so when that happens, I think we're kind of like, it kind of breaks our brains and I think we're
+
+[00:39:31] Troy Young: Yeah, what's weird about it though, Alex, is that at this point, even the supporters can't take half of what Trump's saying seriously. And they're just like, okay, yeah, he's going to say that shit, but when he gets into power, it'll all be moderated. And
+
+you 
+
+[00:39:48] Alex Schleifer: he gets into power, the people we don't like won't be and that's the price worth paying, you know,
+
+[00:39:54] Troy Young: What do you mean?
+
+[00:39:55] Alex Schleifer: well, I think, I think a lot of people look at it. It's like, it's not really about whether Trump wins or loses, but whether the other side loses, you know, and, uh, and whoever gets into power. I mean, he literally called Ted Cruz's wife ugly and Ted Cruz is like licking his boots. I mean, it's incredible what people will do to get close to power.
+
+[00:40:16] Brian Morrissey: think there was something of a backstory to that, though.
+
+[00:40:19] Alex Schleifer: Really? What would it 
+
+be? 
+
+[00:40:20] Brian Morrissey: have to go back and check and get it. Yeah, there was something of a backstory.
+
+[00:40:24] Alex Schleifer: But you know,
+
+[00:40:24] Troy Young: Well, he, I mean, we have the leader of the free world saying that 
+
+like the 
+
+[00:40:29] Brian Morrissey: the leader at that time. I'm not, look, I'm not defending, look, Trump's, he's Trump. I guess my hope is, and then we'll move on to another topic, is, at least this time around, I think that a lot of, news organizations have, Have learned a little bit, right? And I think getting caught up in the dumb leak drama.
+
+I just hope that does not happen again. Who's fighting with who? Who said like, Okay. This is playing into, like, Trump is a carnival barker, he, he understands how programming, and he programmed this reality show, White House, that we don't hear any of that stuff with, with Biden, none of it, like none of it, I never hear about people fighting and whatnot, like didn't for the last four years, and that was like, tremendous. and I don't think it illuminates the public at all, and I think it all ends up just creating just this swirl of drama that, like, it's impossible for a normal person to understand what is important, and the histrionics and the hysterical tone
+
+[00:41:39] Alex Schleifer: mean the coverage of the Trump White House?
+
+[00:41:42] Brian Morrissey: yes. I think they played into his hands as a carnival barker, and I 
+
+think it led to a public that is less was less illuminated on real issues.
+
+And then when there was issues, they got, they got so hysterically covered that everything, everything was
+
+like the collapse of civilization and most people. I think when you look at like, why the trust in media is so low and it has It has actually accelerated with, with Trump and granted he's out there delegitimizing them is because a lot of people looked at him like, well, wait, this Russia stuff didn't turn out really to anything like all these things didn't, at least in the view, I think of a large group of the population.
+
+A lot of a lot of the hysterics were not warranted. And so it's The 
+
+[00:42:35] Alex Schleifer: ratings were through the roof, right? When you're turning political 
+
+[00:42:39] Brian Morrissey: was Al Capone's vault. I watched that thing.
+
+[00:42:42] Alex Schleifer: what?
+
+[00:42:43] Brian Morrissey: You didn't get that in Cyprus. Al Capone's vault.
+
+[00:42:46] Alex Schleifer: No, 
+
+[00:42:47] Brian Morrissey: Fox, an early Fox, early Fox, quote unquote, found Al Capone's vault in Chicago, and they had a primetime special to open the vault. Got it got a ton of people to watch. I
+
+watched as a kid. 
+
+[00:43:00] Alex Schleifer: I think um, what the, the, the difference here is though that like your, if, if that happens again, of course all the worst parts are going to be amplified because much of the news media is even more desperate. So they're not going to all of a sudden say, well, now's when we're going to start making the right calls that are just not, trying to just drive, you know, engagement through an arrangement, right?
+
+I mean, that's the hack, like, you know, Facebook taught everyone this is how you do it. and there's no reason not to do it. You know, and so I think unless people, people's interface to media fundamentally changes their media diet. I think all of this stuff is still going to be created and pushed towards you because that's what we gravitate to, 
+
+
+[00:43:45] New Aggregators
+---
+
+[00:43:45] Brian Morrissey: let's let's move on from this. Let's let's talk about the new aggregators. A perplexity is raising, at a 9 billion valuation. News Corp suing them. Meanwhile. Tollbit, which we've talked about here before, they raised 24 million. They help, they help publishers understand who is, is crawling, their sites and scooping up their data, with the idea that they'll at least be able to, to set up something of a, of a toll booth and get paid for all of those crawlers. and I think what we're seeing is we're going to see a really interesting year as Google pushes out AI overviews and search changes, quite a bit. Troy, what do you think about News Corp going after Perplexity?
+
+[00:44:26] Troy Young: I think it's essential. I hope they see their ass off.
+
+[00:44:30] Alex Schleifer: Wow. 
+
+[00:44:30] Troy Young: I mean, it's just so clear that, that these are the sort of unpaid ingredients into a business that, they'll sort of genuflect to, equitable relationship with media. But this is, let's be honest, this is just kind of reprocessed intellectual property for the most part.
+
+Um, I find this new generation of aggregators to be very compelling from a consumer perspective, like I've been testing the new news aggregator particle, it uses all the sort of, you know, expected AI techniques to make the aggregation of news more compelling for the consumer, and it works. And they too will go out and say, we don't mean any foreign media.
+
+Here, we'll do a little deal with you, but you know, I mean, the market will work it out and the tool bits of the world will try to create a tool booth in the middle and maybe that revenue looks like something that's the new programmatic, assuming that there's enough revenue on the aggregator side to parse up to like parse between 100 different providers and actually be meaningful, but it's troubling, man, like, The revenue stream for, for, you know, most folks from small media brands or mid sized media brands for, for perplexities is going to be really tight, you know, really tiny, unless they have enormous scale.
+
+And, you know, for them to kind of evolve to be the central bank of the media industry seems scary to me from a business point of view and what they're doing right now does pretty much amount to IP theft. So. I think that, you know, I, I get why it's a good product. I use it. I think it's interesting. I like the
+
+interface ideas, but you know, they wouldn't exist without your hard work
+
+[00:46:22] Brian Morrissey: Hmm. 
+
+[00:46:23] Troy Young: and and they just wouldn't, they would not exist.
+
+And unless there's
+
+alignment 
+
+[00:46:28] Alex Schleifer: it's also a good, a great product. Napster. Napster was a great product. You could get all this and, and I think it's just, but here's the thing I, I worry like if it doesn't. Yeah. 
+
+[00:46:40] Brian Morrissey: but 
+
+[00:46:40] Alex Schleifer: it doesn't, 
+
+[00:46:41] Brian Morrissey: died so Spotify could live,
+
+[00:46:43] Alex Schleifer: right. And if it and you know, some would say that Spotify wasn't a great deal for a lot of artists.
+
+I think, we always get better at trying to get information and people's work out of them for free, whether it's to promise them,exposures by them creating content or. You know, exposure by allowing Google to, you know, kind of siphon off their content and expose it on, on search results.
+
+[00:47:08] Troy Young: Google, the Google trade was easier.
+
+[00:47:10] Alex Schleifer: But the Google trade, the Google trade was a step, a single step in the same direction. Right. And then it kind of like adjusted the norms, everybody, the, you know, so, so you're looking at the open web and. And you're looking at, wait, wait a second, like there's no reason we send these people there because we already have all that information.
+
+And unless that gets legislated, it's hard to see how any non kind of like, uh, subscription based content, you know, survives or gets monetized in an efficient way.
+
+[00:47:41] Brian Morrissey: Yeah, I think with Napster, it's interesting because let's just stick, stick with that. Like, there's no RIAA of publishing,
+
+right? Like, I mean, News Corp can't, can't do it on its own, right? And, and publishing, like, I think Spotify is imperfect, but. The music industry is doing all right. Like, I mean, I think if you look at the, the life of artists now, it's very different.
+
+You can't just go into the studio and like cut an album and sell a bunch of CDs and
+
+make a ton of money. You got to be touring like 150 days a year. And, it's a grind, but you know, the, the industry changed at the end of the day.
+
+[00:48:17] Alex Schleifer: Yeah. And I mean, I think that's the big difference. And that's why you're seeing a lot more activity with, with kind of these music generators like Suno is that the music industry is ready for that 
+
+[00:48:27] Brian Morrissey: Oh yeah, 
+
+[00:48:28] Alex Schleifer: They're still good at it. They've got a playbook. The film industry, I would say is the same. And then, I mean, if media had the same thing, it would be such a different landscape.
+
+You know, these businesses would, would, would really have to struggle to try to, You know, generate it to kind of, you know, build their LLMs off that content. I mean, I wonder how much of that is also that's because it's text, you know, 
+
+[00:48:52] Brian Morrissey: Well, that's what we talked about last week. I
+
+mean, text is, is a bad position to be in in some ways. A
+
+[00:48:57] Alex Schleifer: it was the first thing that we could generate quickly. It's, easy to distribute.
+
+most people can put something together, and so it's, it's very hard to, it's very hard to defend, unfortunately. 
+
+[00:49:10] Troy Young: Hey guys, I got a good product in the chamber you know, talk forever. 
+
+​
+
+
+[00:49:15] Good Product
+---
+
+[00:49:17] Troy Young: I was at a friend's house the other day. I got a couple of good products here. Had a good media product, and a good product. So my friend has one of those Rivians and it got the Halloween update.
+
+And when he pressed the button to open the car, it made the Halloween sound, which was like an owl coo, like, and then he's like, get And he shows me the screens and there's all these crazy Halloween graphics and the lights outside and inside the car go multicolor and it's kind of crazy. And then he's like, check this out.
+
+And he puts on the kit, the, you know,
+
+like the David Hasselhoff Knight Rider. thing and everything, all the dash changes into like all these analog gauges or these, you know, old computer gauges like kit. And the soundtrack starts playing. And I thought, what a fun way to bring a brand to life, you know, like having that surface area for, you know, surprise and delight and assignment, the cars are becoming less about mechanics and more about software and entertainment.
+
+So I thought that was cool.you guys can chat about that. But the other thing I wanted to, to, to mention is that sometimes I, I look at my dog and I feel guilty and I wonder if my dog is bored and I'm like, Oh, my dog is so fucking bored and I feel like I need to entertain the dog you know, the dog's sleeping or laying for hours on the sofa or whatever.
+
+I'm like, poor thing, she's bored. And you know, I will never know. But, I was thinking about the dog because I watched this great movie on the airplane, from Vim Vendors, and it's called Perfect Days, and I think it's a great movie. it's about this character named Hirayama, and he, There's obviously a backstory.
+
+There was some sort of life tragedy fall from grace. You know, he was a corporate man or married or whatever, but they don't get into any of that. Ben doesn't get into any of that. He's a toilet cleaner in Tokyo. The remarkable bathrooms of Tokyo and the movie is, and he's happy is the thing. He seems very, very happy.
+
+you wanna know if he's lonely, but, and or what keeps him going. but really his life is in like the sort of, he's much more than what he seems because he takes great joy in the craft of his work every day and the rhythm of life and in the simplicity of his life. And, you know, he cleans toilets.
+
+He looks at the trees he loves trees. He reads books, and he listens to great iconic American rock like we read there's a great soundtrack. All right. And, the movie has this kind of rhythm of life with Tokyo as the backdrop and, you know, Tokyo architecture. it, it's just the light and the buildings and the character.
+
+I think he won at, Ken, he won Best Actor and it's, it's nominated for an Academy Award in the International Film category. Anyway, the movie's called Perfect Days. It's definitely a good product. And I was really surprised by it. So I hope you, you, you watch it.
+
+[00:52:29] Brian Morrissey: Alright, I'm gonna check it out. Let's leave it there. This was a compact episode for us.
+
+[00:52:33] Alex Schleifer: I'm, I'm good with that.
+
+[00:52:35] Troy Young: Really? What about the Rivian? Do you like the Rivian
+
+[00:52:38] Alex Schleifer: 
+
+I nearly bought the Rivian. It just wouldn't fit in my garage in San Francisco. so getting something else, but it's a great, great car, great software, 
+
+
+[00:52:47] Outro
+---
+
+​
+
+[00:52:48] Troy Young: Thank you very much for all the birthday wishes. I 
+
+[00:52:52] Brian Morrissey: Oh, is it your 
+
+[00:52:53] Troy Young: it. I mean, 
+
+[00:52:54] Brian Morrissey: wow. Happy 
+
+birthday.
+
+[00:52:57] Troy Young: wasn't going to bring it up
+
+[00:52:59] Brian Morrissey: Well,
+
+now you
+
+have. Happy birthday. Are we, are we doing next week's episode in costume, by the way? 
+
+[00:53:06] Alex Schleifer: Oh, maybe. Let's Yeah, let's, Let's Let's try 
+
+it. Let's do it. Ciao
+
+costume. Alright, Bye. ​
+
+
+

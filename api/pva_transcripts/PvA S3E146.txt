@@ -1,0 +1,687 @@
+PvA S3E146
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian: I got to meet Alex for the first time the other night. That was exciting.
+
+[00:00:04] Alex: it was great. Were you surprised by anything?
+
+[00:00:07] Brian: No, nothing surprised.
+
+
+
+[00:00:08] Troy: he's a large specimen.
+
+[00:00:10] Brian: I don't know. He was about the size I expected him to be. Uh.
+
+[00:00:13] Troy: Yeah. 
+
+
+[00:00:13] ‌
+---
+
+
+[00:00:35] Intro
+---
+
+[00:00:35] Brian: Today we talk about parallel worlds as our shared reality gives way to something different, where the fracturing predicted by filter bubbles goes from something temporary to something permanent.
+
+AI is always an accelerant, and we discuss this across three vectors. First, how we learn and understand information is rapidly changing and it is not going back. Many years ago, just as Twitter emerged, a very prescient friend of mine joked that soon we would visit the Natural History Museum to find an exhibit featuring the last person on earth able to sit and read a book.
+
+That day is fast. Approaching technology has been applied to reduce friction and wading through books and long articles and words in general is inefficient. AI is, at its core, a cognitive technology. It is often painted as saving time, making us more efficient and therefore more productive. And this is true of course, yet studies are emerging to counter that.
+
+in one coders estimated they saved. Quite a bit of time using AI coding tools when in reality they actually took longer. What they did save was effort. it seems to me that in a world where quote, unquote intelligence is available on demand, the true moat will be those who can resist the readily available shortcuts, and instead do the hard work of deep learning when the tools and marketplace incentives, are to glean enough information to be able to perform mastery without actually doing the hard work of achieving mastery.
+
+Next, we dig into the creeping feeling of moral revulsion at AI generated content. I am a writer by nature. I am. of the old fashioned people who believe that the act of writing is the act of thinking. So I am perhaps biased in my reaction to the LinkedIn posts, obviously written by AI that I see on a daily basis whenever I visit the world's greatest social network, which is LinkedIn.
+
+It. The tell is not just the M dash, it's the, it's not this, it's that, it's that framing and the overuse of, of dumb words like high signal. but let's assume that, that will get fixed. And words, as I always say, they always go first in these things. AI music tools like Suno and Google's video generator VO three are improving rapidly and, and they show how AI is moving up the content value chain, if you will.
+
+And this is inevitably leading to conflicting feelings. I tend to think of this as how processed foods overtook, a large swath of the food system because processed food. Is cheap, it's fast, and it's also engineered to be addictive and using these tools, particularly chat GBT on a daily basis, I'm constantly reminded of these tools are being engineered to be addictive.
+
+There's a reason that chat GBT is continuing to ask you questions about going deeper and deeper and deeper. And this is fine, you know, with the kinds of things that, a, a lot of people are using it for. Many people are using this for therapy. many people are using this as a life companion. how young people are using these technologies is vastly different, to how those of us in middle age, are using them.
+
+And, I think just as the processed food system, you know, led to the creation of farm to table restaurants and organic food co-ops, so too will. you know, information glean the old fashioned way become luxury signifiers. I think that this will happen, particularly as synthetic content inevitably overtakes the information ecosystem.
+
+And finally, we dig into the parallel worlds being created in the information space, notably in the rise of the new right, alternative media ecosystem. Them. I find this scruffy sector fascinating. there's, an incredible array of characters. there's constant drama. and that is, is not a bug, that is a feature, a core feature of this.
+
+and I think it's, it's gonna be re replicated across many areas and, and I think of them as successors to filter bubbles, which, you know, back over almost 15 years ago, assumed a shared reality. From which felt bubbles, deviated. But we've gone well beyond that obviously since then. and you know, something that I've observed in my recent deep dive into this alternative media ecosystem is that yeah, the growth hacks of just a few years ago are, are now quaint.
+
+I mean, the engagement farming that is going on now is far more sophisticated. you know, the algorithms are all being injected with ai and, so we're gonna look back at those old curiosity gap headlines as, you know, something a bit old fashioned now onto our discussion. 
+
+
+[00:05:12] Welcome
+---
+
+[00:05:15] Brian: welcome to People versus Algorithms Summer edition. I'm Brian Morrissey. Welcome, Troy. Troy Young. Alex Schleifer. 
+
+[00:05:22] Troy: What surprised me over dinner was that, you know, I had wanted to get a monkey for a while, you know, just to have as a pet and to do, you know, basic like, help me with things and stuff, fetch things. And Alex told me he had a monkey. 
+
+[00:05:38] Brian: Yeah,
+
+that was a twist. I, I didn't know you grew up, with so many animals.
+
+[00:05:42] Alex: We grew up with every animal like 
+
+[00:05:45] Troy: He told
+
+me that the monkey was a disaster.
+
+[00:05:48] Alex: Monkeys are disasters. And I'm sorry, I don't know how many PVA listeners and new listeners, that might, might be monkey owners. and I'm sorry if it, I'm sorry if we're confusing new listeners, but this is monkey talk. Yeah. Monkeys are terrible. Pets. Monkeys are, Little, evil humans and little monkey bodies, I think.
+
+And they will, they will do things just to, to annoy you. They're, they're too smart to be pets and I don't think they like it.
+
+[00:06:14] Troy: Okay. So did you, did you guys keep it for a while? Did you discard it? How, what did you, what do you do if you get tired of the monkey?
+
+[00:06:21] Alex: I think the monkey passed away.
+
+[00:06:23] Troy: Hmm. 
+
+[00:06:24] Brian: Oh, that's 
+
+unfortunate. 
+
+[00:06:25] Troy: What wa
+
+what was the largest number of animals that you had in the house, do you think, at any given time?
+
+[00:06:31] Alex: Over a hundred,
+
+but that's counting birds, you know, and 
+
+[00:06:35] Brian: Birds don't count. 
+
+[00:06:36] Alex: birds don't count. Don't need
+
+[00:06:39] Brian: I mean, I mean, if you're gonna compare like, you know, a monkey just being one animal and like a bird being one animal, it's like they're different.
+
+[00:06:47] Alex: But monkeys are like, I think people always think monkeys are a good idea. And so the thing that made Troy laugh is that I told them about how the monkey masturbated, I think it was a, as a, as an act of aggression because he would look at you in the eyes while he was doing it. And then, uh, sometimes if you tried to move the monkey.
+
+He would pee on the most like inappropriate thing, like your sandwich, just to make sure. And it, it was just like a sign of like deep, deep intelligence, which makes you hate it more. You know when a stupid dog does something, you're like, Ugh, you're just an idiot. monkeys don't do that. monkeys, 
+
+[00:07:19] Brian: monkeys,
+
+monkeys do have a, a reputation,
+
+[00:07:21] Alex: every year people, somebody gets thrown off a balcony by a monkey in India. I don't know. Follow the news, man. 
+
+Yeah. Groups of monkeys. Groups of monkeys just push people. I think the, some vice mayor or something of a, of a town, or they, they'll throw rocks at people. I was once in, uh, Malaysia, I was once attacked by a group of monkeys.
+
+I don't know what they wanted. I expected one to pull out a little switchblade. It was like, like situation. But yeah, no, I don't love monkeys. they deserve to be free in the wild.
+
+[00:07:51] Troy: Did you ever have a monkey Brian?
+
+[00:07:52] Brian: I never had a monkey. I did go through a PA phase, which I think most, boys have, but they grow out of, which is, a fascination with monkeys and wanting to have a monkey. I
+
+[00:08:02] Troy: Did you have a ferre?
+
+[00:08:04] Alex: I thought you were gonna say snake. You look like a person that would've have a reptile aquarium maybe.
+
+[00:08:08] Brian: me. I'm not, that's, you got the wrong guy. No, uh, no gerbils at, at the most, some hamsters, but again, that's a phase, you know, boys go through. at least they used to, I don't know if they do now. Maybe they just play video games now, but they, they usually go through like a rodent phase.
+
+[00:08:27] Alex: I'm considering an aquarium.
+
+
+
+[00:08:29] Brian: That's good. 
+
+
+[00:08:30] Quick Hits: Google Traffic
+---
+
+[00:08:30] Troy: All right. You want to hit it, Brian, with the quick hits? 
+
+[00:08:32] Brian: let's start. you know, one of the things that, that struck me, you know, there's, I know this is media talk, but We'll, we'll get into the AI talk 'cause I think it's, it's related. you know, Google came out with, I, I guess statistics, I mean, it's their own, basically they're saying that actually AI overviews, are sending just as much traffic to publishers.
+
+And this was created with publishers as like, give me a break. because there's, they've seen a decline in search traffic and this has been happening for years. There's a lot of obfuscation going on with what's happening. with search traffic patterns. I mean, Google has been turning off the tap for some time now, and this really came to, relief I think when, the former Meredith, reported its results, as people link.
+
+And, just the, the sheer a amount in just two years, you know, Google has gone from something like 53% of, of their traffic to like 28%. and you know, the traffic has been, you know, mostly flat a little bit up over that time, but it just shows. I mean now it, they're, they are something of like a bellwether I think for, for traffic patterns on the internet.
+
+And, you know, Google coming out and saying, no, no, we're sending, we're sending traffic out just as much. It, it's not very believable. 
+
+to me it's, it's, it's pretty clear the direction this, this is going.
+
+I'm not sure why Google is, is coming out with, with, with this stuff. I mean, I, I don't doubt that they're, that they're sending traffic out there, but it's pretty clear the direction of travel and so might as well get on with it and just say that you're gonna be getting less traffic and you should.
+
+Basically plan for that. Am I missing something here, 
+
+Troy? 
+
+[00:10:12] Alex: well, can I just mention something? This was kind of, so Neil Vogel, who's CEO of People Inc. Previously Dotdash Meredith and likely future CEO of Peloton. we don't know that. We don't know that. I'm joking. so what I raised that with him last time we interviewed him, you know, there wasn't much 
+
+[00:10:31] Troy: Just to be clear, Alex, we, we would be sued independently on this podcast, and I, I hope he, he takes, uh, legal action. 
+
+[00:10:38] Alex: Yeah. 
+
+No, I don't think, I mean, I actually think I, we all know that do Meredith has actually been a success story, but when we, when I spoke to him or asked him question about that and the worries around that, you know, he didn't seem all that worried, but, but the numbers keep showing these kind of massive drops and it looks like what we're hearing.
+
+Nobody's really
+
+[00:10:59] Troy: What, what, what? Wait, wait, wait, wait. What numbers?
+
+[00:11:02] Brian: Well, pew. Pew claims that the.
+
+[00:11:05] Troy: up to be clear.
+
+[00:11:06] Alex: Fair. Fair enough. I'm specifically talking about kind of the SEO traffic coming in Right. into, into these properties. Right. And sorry, pews numbers, Brian.
+
+[00:11:18] Brian: Yeah, PEW'S numbers had said that basically that search results without AI or reviews, the 50% of 15% of people click a link and with them 8%.
+
+[00:11:28] Alex: Yeah. So it's like a drop, a drop in half either way. I mean, I actually, I actually think, people Inc. Is like, like we said, a success for story as well run. They're finding revenue streams coming from elsewhere. And I, I'm not specifically saying that they're in trouble, but it seems like there's a lot of, and there has been a lot of kind of bearing your head in the sand by the media and then, and then supported by kind of Google.
+
+Dropping these, you know, these kind of like numbers. Like no, this is actually not that bad. And don't worry, as many people are gonna go there. Meanwhile, we all see it. Like, I mean, you can just look at your browser history. I visit a lot less sites than I used to. Like, it's just, it's just, it's just, I think, clear to anyone.
+
+And, and so that's going to have a, there's a fundamental shift happening in the market and it's not getting worse. As these models get better, they'll give you more answers and you'll have less need to get to a site and they'll surface more media just directly to you. I mean, I just did a search, just using chat GPT, and it gave me a shopping list, you know, like with links and photos and things like that.
+
+I don't use the internet anymore. The way it's intended to. So,
+
+[00:12:38] Troy: I think you got there on the internet.
+
+[00:12:40] Alex: no, I mean, I think, I think the open web, the web, this, this, this, this kind of like, I, I, I mean, I don't even get what Google at this stage is either saying that they're still sending links to people because the link is essentially like, at this stage is, is turning into a relic really quick.
+
+That's all I'm saying. If it's not a three alarm fire in all of these media companies that are making money from people coming in from Google, it should be. But you think, I mean, you're both looking at me like I'm saying something stupid. I don't know
+
+[00:13:07] Brian: No, I don't think you're saying something stupid. I mean, I think a lot of the, the, I I, I'm impressed that they've been able to, you know, keep growing. Honestly. I mean, making that kind of switch is, is major because a lot of the traffic that Google sends is the most valuable traffic. It's, you know, to their properties.
+
+I, and, and making up for that with, with Apple News dependency is, is not the same.
+
+[00:13:29] Alex: I mean, I think, and I think they're both, both parties, both the publishers and Google, they're kind of complicit with each other's, and they're, they're both incentivized to say it's not that bad, right? Nobody wants to say it's that bad, but the media companies don't wanna say it's that bad because they don't want to hurt their stock.
+
+Google doesn't wanna say it's that bad because 
+
+[00:13:45] Troy: I mean, I think there's, there's the. The kind of detailed line by line examination of a business and its growth prospects. And when you look at 52 to 28% coming off Google and you look at, so, so there's a decline there. Then you look at growth. From, say, apple News and or other syndication sources. And you look at the fact that a company like People Inc.
+
+40% of their revenues print and then you, then you look at you, you know that, you know, there's a new line item in. You know, model revenue opening ideals, stuff that they're doing to sell their content to the aggregators. then you look at the fact that they've got decipher, which is, shows their, I guess, their ambition on the kind of ad network side.
+
+These are diversified businesses,that can, you know, kind of bob and weave with changes in the market. So I think that. With that said, you get a, you know, a flat to little bit up quarter. And the bigger picture though is Wall Street says the company's worth very little. And, people Inc. Sits inside of IAC most of i's value comes from their stock holdings in MGM.
+
+And it would suggest that basically. You know, there's, there's two other companies in there. One's like a search, a company, the other's care.com, and then People Inc. It would say that the market's probably valuate valuing it at less than $500 million. There's always a bit of a knock on, a conglomerate in terms of how you value the, the parts.
+
+But you look there or you look at Ziff, the market hates these businesses and the bigger picture is there, is broad, per your point, Alex, there is a broad behavioral change that is, you know, undeniable. 
+
+
+[00:15:43] Processing Information
+---
+
+[00:15:47] Troy: And when we get into the segment that, like that I'll lead on the pod today. It's like what I, what I'm imagining.
+
+This is, I guess, a preview or what I'm enjoying as a media consumer is a completely different way of processing information.
+
+[00:16:01] Brian: let's get into it. Let's just go, well, this is jazz, Troy.
+
+[00:16:03] Troy: You want to get into it?
+
+[00:16:05] Brian: Yeah, I wanna get into it.
+
+[00:16:06] Troy: Well, 
+
+[00:16:07] Brian: We'll deviate. 
+
+[00:16:08] Troy: I'm gonna
+
+take my Z out then.
+
+[00:16:09] Brian: Oh wow. It's serious.
+
+[00:16:10] Troy: Um, you know, I've always, I've always thought that the most powerful type of media. In terms of your ability to, you know, develop a passionate audience base is something that's by its essence is active when people part, you know, largely participate as constituents in a community or people that interact with your content.
+
+We know, we remember things better when we interact with them and, I, you know, and, and I think that the best kind of new media people. you know, understand that people like Emily Sunburg over at Feed Me, like she uses, she plays substack like a fiddle, right? She uses all of their community interaction tools and I think that the audience feels that, I think it makes them loyal and I think, you know, it increases engagement.
+
+Even something as simple as games or, you know, obviously comments, games, liking all the things, engagement matters. Media at its best is participatory. So it was with that, that I, I went on this little journey this week and I, um, a friend of mine said to me, you, you gotta try this, this podcast tool.
+
+And I'm like, I need another podcast kind of player. Like I, I, I need a hole in the head. But, I tried it and it was called, it's called Snipd It sounds like a sort of mo mohel aggregator service, but it, it's not, it's, it's SNIP. Is it snipped or snipped? Snipped. Right.
+
+[00:17:48] Brian: Snip Snipley is the mohel aggregator, but.
+
+[00:17:53] Troy: Anyhow, It's really, really powerful if really, you know, complicated. Now, switching from a platform podcast tool that I use, like Apple's native podcast app. I don't use Spotify. A lot of people do, and a lot of people use YouTube, but you know, you have your lists in there of your podcasts and you get notifications when there's new episodes and so on.
+
+But this is basically. The construct is what I want in all my media, and that is the integration, the deep integration of AI with my media. So I can go through a podcast and it'll break it down into segments. It'll pull out all the insights. If there's video for the podcast, it'll break it up into little pieces, and I can take a podcast and flip through really quickly, something that's an hour and a half scan.
+
+The kind of bulleted points from each section. Grab the stuff that I'm interested in, either listen to it or just read it quickly. I can see the little snippets that other people are, are, are, are grabbing from other, from, from other pods. That's a discovery mechanism for me. I can ask questions. The full transcripts are there.
+
+I can't tell you how many times I want to take a podcast. Find the transcript and feed it into chat. GPT. You ever had that experience?
+
+[00:19:16] Brian: All the time. I had it this week
+
+[00:19:18] Troy: It's really useful. cause they're a linear construct, obviously they ask a lot of your time. It's the same thing with YouTube transcripts.
+
+I want to just get the best out of them, therefore I want the transcript, put it in AI and process it and get back to business. And if I'm interested, I'll go deeper in it. Right. And. To, to find transcripts is a hunt and peck process, and many times they're not there anyway inside of this app. you know, it, it, it, it's all there.
+
+So SNIT is really interesting and as I was in snit, I was, Somehow landed upon this podcast. I think it's from every, it's called AI and I and it featured Dke. Now you guys may or may not know of Dke.
+
+
+
+[00:20:04] Troy: He's sort of a, kind
+
+[00:20:05] Brian: dark
+
+darkish.
+
+[00:20:06] Troy: DKE is like a mini Tyler Cohen. He,
+
+[00:20:10] Brian: He was created in a lab.
+
+[00:20:12] Troy: his goal is to kind of maximize his knowledge while he is on planet Earth.
+
+I
+
+[00:20:17] Brian: He's like 24.
+
+[00:20:18] Troy: Yeah. What, what does he say?
+
+He 
+
+[00:20:21] Brian: knows everything about everything.
+
+[00:20:22] Troy: he says like, I want to know everything. Right? Like he, he, he's,
+
+[00:20:26] Brian: He does the work. You, you must, you love his 
+
+[00:20:28] Troy: Well, if you don't know this, there's a common refrain for me on this podcast, like, do the work guys, we gotta do the work. 'cause people aren't here to kind of develop basic two dimensional parasocial relationships with a couple of idiots.
+
+Like Speak for yourself We need to have some substance. So doing the work is important. I think the best podcast's where you do the work and the people are, and it's a dysfunctional sitcom like ours. So, anyway, I, I, I, I, I started reading about D'S process and I remember going for dinner that night with my son and my son pulls out.
+
+A pack, a dinner, like some autistic kid of like, he's 25, so it's like, like of index cards. And I'm like, oh, what are we gonna talk? What are we doing? We're going through index cards. And he had like cease sharp, suspended. Like he had every chord and every scale written out on every card. And what his guitar mentor had done is instructed him to stop playing 15 instruments, but master the guitar.
+
+So he set up, you know, he set out to master the guitar, and then one of the ways that he's doing it is with index cards. So it turns out that. Door cash has got like a whole process for absorbing information that's deep, like that really resonated with me, right? Like he keeps the, he likes Claude. He keeps the clo Claude tab open.
+
+He loads books into the ai. He asks questions of the books when he has guests. On his podcast, he does deep, deep, deep research supported by AI until he can find a question. That the AI can't answer, and he thinks then he's discovered something that he wants to have a conversation about. Stuff that is sort of y, you know, yet unexplored.
+
+And while reading this, I'm coming to the end of my monologue here. you know, there's sort of endless prognostications on, you know, what ai, how AI is going to decimate the sort of white collar, you know, middle management class. And I think that that refrain is getting stronger, right?
+
+And so there's this urgency. To sort of get smart to figure out how we can absorb information inside of this tsunami better. And it struck me that this is really timely. Like how do we consume media? How are we active participants? How do we get smart, smarter? And then today I open up the FT and there is an article that says in Germany that they, that when they give young children tools with like tools on how to learn. The, their performance, you know, they, they, I don't know what it's called, Alex, but they bifurcate the paths of young people. Like either you're gonna be a mechanic or a doctor in Germany, they put you on a different path. And the kids that they gave sort of learning cog cognitive tools to did 16% better in terms of getting into the elite programs.
+
+And so it's, it's, it's, I think, a lesson to us in some ways. It's kind of like, how do we keep up with. Mechanized knowledge, but to me it was like media's changing my interface to, media's changing. We need to learn better as human beings. All of that together. And it was manifest inside of this little app that I used 
+
+[00:23:50] Brian: So I have a question for you with this. Do you actually feel smarter with all of this? Because I think that that is what. I think there's, there's a lot of attention and being focused. I was listening to a Derek Thompson,podcast with Cal Newport about this, and it, it was about the, the demise of deep learning and, and literally doing the work, like it's a pain in the ass.
+
+Reading, like reading books is a pain in the ass, like getting a summary of books and, and putting it in a flashcard system in order to perform. Is is very efficient and I understand why that's attractive. However, it it studies have shown that using AI to accomplish writing tasks, like writing is thinking is a new meme or out there.
+
+'cause I believe it, we've discussed this in our podcast and I'm biased in there. Is that, you know, we're losing the ability to do deep learning. Like literally our brain synapses are, do not fire as much when we're using these AI tools. And so that what
+
+[00:24:51] Troy: Or it fires more.
+
+[00:24:53] Brian: well what Cal Newport was saying was, you know, that's what the data is showing and that like, maybe this is just an inevitable transition as we commod commodify intelligence, like we've commodified everything else.
+
+And so it really just becomes. Back to what you're saying about the media ecosystem, it just becomes about the performance of, of intelligence not actually
+
+having the deep understanding. 
+
+[00:25:15] Troy: I 
+
+[00:25:16] Alex: we're Yeah, I think we're conflating a few things. I think that there's the, I think that, What you can do when you, you know, kind of MinMax hack your way into absorbing more and more information is that you don't give yourself a ton of time to process it or to question it with the same way when you 
+
+[00:25:32] Brian: Well, it's friction
+
+processing information is Exactly. And I mean, my, my topic is a little bit about, about that, but I think that, As we're replacing all the friction, with just more space to absorb or create more, right? Like it's an input output, right? we're actually like re reducing the moments of friction where our brain is actually going to do these cognitive connections or even mistakes that lead you down a path.
+
+[00:25:56] Alex: And so I do think, I do think both things can be true. I do think you can kind of like max out your information intake so much that it actually has very little. Value or just it, it becomes like a, nothing more than a party trick at some point. but you know, like I think that for learning, if, if you're intentional about it and you learn and you understand how you learn best, because I also have a bias and I think that.
+
+The education system is, is made by people who write the books and people who write the books love to read the books because their brain absorb information like that. And now a bunch of kids are being told, Hey, this is how you learn. Look at me. I wrote this book. You have to absorb it. But, I can sit down with an AI and learn any topic in the way that I like to learn it, which is through examples and analogies and asking questions.
+
+Yeah, I do that and I feel like it's been useful, you know, like if I'm going to admit something, there's a few books I know I'll never read. I'll never read War and Peace. So sometimes when I am in my commute, I'll sit down with the AI and say, Hey, what's War and Peace about? Can you give me the cultural reference?
+
+What happened when it came up? How culturally relevant is this now? Have there been, you know, what, what? Piece of culture that referenced this book because I keep hearing it. and that can be useful. I think that there's the a, a place where you can kind of become an addict. I think I was there when RSS feed started out.
+
+I don't know, Troy, when you met me, I was consuming 600 articles a day, and I have a, I have a, 
+
+[00:27:24] Troy: You.
+
+I loved you. 
+
+[00:27:26] Alex: I still have, I mean, I still have like a lot of, I retain a lot of information about pop culture and things like that because I do read a lot. I skim a lot. I absorb culture pretty well. But at some point, I think the problem is like we're constantly mediated now and we're never letting our brains rest.
+
+Whether it's to stop and think what we're gonna write next, or it's whether to stop and think about the 
+
+[00:27:47] Brian: Yeah.
+
+So one of the things that came out in this podcast that I thought was interesting was the fact that the use of a lot of these AI tools is being shown not actually to save even time. It saves effort because like you actually have to put in effort, like to, to read and to sit with a book and to do deep learning.
+
+[00:28:08] Alex: Well, there was this data about the coders who thought it was, they were 30% faster, but they were actually 30% slower,
+
+[00:28:14] Brian: and we're just easier. We just wanna take the easy way out. So I think what what's interesting to me is how these technologies are being made. I'm going to, I'm gonna traffic in generalizations 'cause this is a podcast, are being made for a minority of peop by a minority of people. Like you're saying that like the education system is being designed by, by, you know, people who like, you know, words and so, you know, for their own interests and whatnot.
+
+But now we sort of have the reverse, right? We've got a lot of people who learn in a particular way and are a distinct minority. Really? I believe that we will, we'll find that out, but we'll, we'll, we'll see. And that it's overturning the entire, the entire system. Cal Newport is, is a professor and he's talking about how students are using these technologies and they're using them constantly all day, and they're using them, of course, as social technologies.
+
+Everything becomes a social network. And so we sort of talk about these things as productivity tools, but the way they're actually being used, they're being used for therapy. They're being used, what did she mean? This pasting and everything. And so, I think that's an entirely different thing altogether because it is, it sort of holds out the, the idea that this will overturn how people have all interpersonal relations and how their brains work.
+
+I don't think we've,
+
+we know yet. 
+
+[00:29:40] Alex: I think it's a crazy thing that we have now come to take for granted that every communication tool we have proposes the answer. Like, you open your email, Hey, do you wanna say this? You open your chat, Hey, do you wanna say this? No, I wanna respond to this person. Why are you pushing this to me?
+
+You know, which is, I, I, and, and I don't know what it, what happens to our brains on, on this type of like, constant intermediate, kind of friction removal that happens, that stops us from, um, doing a bunch of stuff that we should just be good at. It's, it's, it's, it's, it's wild, you know? 
+
+[00:30:18] Troy: I, I think these are really good counterpoints and that suggests to me that this format that we're taking this week where someone brings an argument and the other people contribute is a
+
+[00:30:27] Brian: say, 
+
+[00:30:28] Troy: I like it, and I like this idea that knowledge becomes performative, right? That Dke is performative.
+
+Because having a conversation with a, you know, a nuclear physicist on your podcast requires a certain level of understanding of the topic, but you don't have to make nuclear physics. 
+
+[00:30:48] Alex: Yeah, and it's likely fleeting, right? I mean, he might have a 
+
+[00:30:51] Troy: right? You're not, you're not working the equations, you're not making the 
+
+things on the other hand.
+
+On 
+
+the other
+
+[00:30:58] Brian: A lot
+
+of this stuff is parlor tricks. 
+
+[00:31:00] Troy: We, we are, we are in fact living. Like, what I struggle with is the amount of information that I want to process a day and the amount of in like, and I wanna also find where I wanna go deep and take the time. And I think that, that, that using the tools as a way to investigate what I'm interested in is rewarding and memorable and not performative. I think this is like literally the crux of a, of a huge discussion of our time, which is how do we learn, how do we sit beside the machines? And, and, and how do we act? What is our interpersonal dynamic like? You talk about like. A guy just pitched me a business, which is basically, you know, been pitched, I would think I told him a hundred times, which is like OnlyFans in ai.
+
+And, and, and this week, you know, in a kind of honest,endeavor to understand this a little better, I, I, I didn't start doing porn talk, but what I did do is I went over to X and I started having a conversation with. The, the, the maga squirrel or raccoon that, that Elon created you the, this,
+
+[00:32:11] Alex: Is that one of those AI
+
+[00:32:13] Troy: it's an AI character that you can talk to and it'll start yelling at you and being vulgar and,
+
+[00:32:18] Brian: I thought you were talking about cat turd. 
+
+[00:32:19] Troy: no, no, no, no, no.
+
+It's, it's an animated character that's, that's one of the agents on X and there's another one, which is like a sexy manga character. And you, the more you talk to her, 
+
+[00:32:29] Brian: Yeah. 
+
+[00:32:29] Troy: take her clothes off or something
+
+like that. And, I felt when I was using it, like I tried both of them. I can understand why this becomes a completely addictive experience for people.
+
+[00:32:42] Brian: Yeah, and I don't think it is, to me, the, and, and then we can move on to, to the other topics. A lot of it is around who has like the con self-control enough, right? It's like, it's like the eist bikes, like if you use Eist bikes correctly, you're going to actually get a better workout. It's been proven
+
+[00:33:01] Troy: Well, I would
+
+[00:33:02] Brian: But a lot of people just don't want to pedal. Like, let's be 
+
+[00:33:06] Alex: So the, the the analogy is more, I mean, I think it's, it feels like the beginning of the internet. So for the people who kind of got on the internet early on and which I was one of them, I was just, I was just like fire hose, like. Conspiracy theories, uh, chat. Well, sure. I mean, mostly like alien stuff and, MK 12, or mk, well, I don't remember. 
+
+[00:33:28] Troy: Well, I would finish Alex with, with, with a quote from your famous favorite super villain. Mark Zuckerberg, do you remember when Mark told us that social media was gonna create like, global Kumbaya?
+
+[00:33:41] Alex: yeah, instead of created, genocide. 
+
+[00:33:44] Troy: but there's a quote in his memo this week about, you know, the it, it's the sort of reset memo for meta, like the pursuit of super intelligence. That is just completely, you know, I don't know whether it makes my case, it probably doesn't make my case, but it's sort of like I'll read it. As profound as the abundance produced by AI may one day be, and even more meaningful impact to our lives will likely come from everyone having a personal super intelligence that helps you achieve your goals, create what you want to see in the world, experience any adventure.
+
+Be a better friend to those you care about and grow to become the person you aspire to be. I mean, it's 
+
+[00:34:28] Alex: Yeah, it's nauseating and I don't trust him and I don't think he understands how people work. I, I, I mean, 
+
+[00:34:35] Brian: Well,
+
+to give him a break, like he hasn't been around regular people like literally his entire life. He's like a child prodigy. They 
+
+always grow 
+
+[00:34:41] Alex: a shit.
+
+He's not a child prodigy. He's not a child prodigy. 
+
+[00:34:44] Troy: said a child 
+
+[00:34:45] Alex: Let's, come on guys, let's like some, some of these people got lucky. they played their hands well, they're fine. I don't 
+
+[00:34:51] Brian: Well, you don't think he's a child prodigy. I mean, he was like, he was like going around with the, I'm the CEO bitch, like, business card. Like when he was like 21 and wearing like the flip flops, he didn't develop like a,
+
+he didn't have a cha. Well, 'cause he didn't have a chance. It's like, I know a guy who was like in the tennis world and he, he said, well you have to realize is all these tennis players are freaks.
+
+'cause they never had like normal childhoods and they weren't able to like, 
+
+[00:35:14] Alex: Yeah, but if it look, Zuckerberg is a freak. if you wanna compare it to tennis players, like saying Nadal was looking into the girls' locker rooms, slipped and then ended up with a racket on his hand and won the tournament. I mean, his first product was a hot or not thing on college.
+
+And then he created, he turned it into something else. he's, he's not a stu, he's not a stupid person. I'm, Tired of making these people into some sort of geniuses, uh, because then it becomes, then we start listening to them when they start telling us where society is meant to go. And I don't trust him with that.
+
+I think he has been a great business person, obviously a smart man. look, here's the thing, right? Everybody's trying to build. A version of, we we're, computers are a story about removing layers of abstractions. Before we had the punch cards and before that you were building things.
+
+And then we brought the computer closer and closer to us, and then we got a mouse, and then we got a touch screen, and now we wanna put it over our eyes and in our ears. Right. And so if you're talking about like a learning aid, a thing. Omnipotent and intelligent so much that I can have a conversation with a nuclear physicist, and this thing is in my ear giving me the answer because the thing that's happening in your email will happen. In real life. That's, or that's where they want to take it. Unless we reject it. And this is kind of part of my topic, but unless we reject it, you will have a thing in your ear that everybody has. So we all forget about it. And somebody said, will say, have you seen the thing? And you will just pause for a second and say, oh, you mean that thing?
+
+It's like, have you seen that movie? Oh, you mean the 1978 production or the original German production from 1945? You will know everything, but you will know nothing. And I think this is where we're heading. You, if you, if you check all the minor technological miracles that need to happen, which, which will be checked off, this is where we're heading.
+
+And so the stuff that we're talking about today in 10 years will feel really quaint. but I don't know what that does to culture. I don't know what that does to our brains. And I don't know if we, if there's a rejection of it, which is 
+
+[00:37:12] Brian: There's totally a rejection of it. It is so uncool. AI is so 
+
+[00:37:16] Alex: Okay.
+
+So were Bluetooth headphones before AirPods came out.
+
+[00:37:20] Brian: maybe, 
+
+[00:37:21] Alex: what I'm saying like. 
+
+culture does change. Culture does change, you know?
+
+[00:37:25] Brian: Yeah, 
+
+[00:37:26] Alex: Uh,
+
+and so,
+
+
+[00:37:27] Moral Disgust With AI
+---
+
+[00:37:27] Alex: maybe that's a good segue to my point.
+
+[00:37:29] Troy: Hit it. 
+
+[00:37:30] Alex: so so what I wanted to talk about is like, is actually what I'm calling the moral disgust of ai. humans have for, survival reasons, disgust responses, you know, which is why we find certain things, certain smells disgusting is because they feel dangerous to us.
+
+as we developed as a species and developed culture, we developed this idea of moral discuss, which are like culturally based, like, oh, this person is weird or is acting strange. you know, I was reading, this, person that works at A 16 Z, which has this great substack called Push to Talk, which is about video games.
+
+And he was talking about this idea of AI squinting that we all do, like whenever we're consuming media and art. Now, once in a while we'll just squint and say, is this ai? Is this ai? Is that, is that M dash in there? Is that ai.
+
+[00:38:15] Brian: LinkedIn. LinkedIn has got a 
+
+[00:38:17] Alex: You are constantly doing it 
+
+you're you're constantly do doing it. And I, and I was thinking about it, I said, that's a very good point.
+
+And it's also exhausting. It's an bit of, you know, I'm a designer UI designer, so I think about cognitive load a lot and this is an added cognitive load I was thinking about, it's like, why do we even do this if it isn't some sort of fear response? Which I think maybe at a lizard brain level, there's like a, a sort of a, a fear response where we're looking at it and we, and, and, and, and I think there's a moral discuss that, that even people who are pretty optimistic about ai, have this reaction, like you can do a test where you show somebody a piece of art and then you tell them it's ai and you ask them if it changes their mind and they say, well, I like it less now. Right. and so, so maybe we feel cheated by it. maybe we feel guilty because it's like there's a sense that it's like we are using it to replace artists by using the artist works, which just feels icky.
+
+Like no matter what, like, you know, copyright law ends up,saying, but there's like a level of moral disgust that creeps in, And, and right now, I think that's what's taking over. It used to be that like last summer, you still had arguments with people where they say, well, AI is not good enough.
+
+But I think the summer of 2025 has been kind of a, a, a, a milestone period for, for tools, right? VO three has shown that you could create videos that look near production ready, or can be production ready. Like even the people would just say, well, it'll never be as good as are saying, oh shit. Oh shit. It might be as good at 11 Labs just launched their music thing.
+
+And honestly, like if I heard one of these songs on the radio, I might even like one of them. You know, I might, I might just say like, yeah, that's not bad. but, but we've also like seen the response to people, hearing about AI artists on Spotify, et cetera. There's like the, the own, the, the, the tools, and, and the, the way the products are, you know. Are, are being sold to us is that there's this creative revolution happening, right? And here are all the things that you have and the tools are capable of doing that. Yet there is, I think, a cultural wall that is built that is not allowing this to happen, right? Because we would be in a generative ai, you know, creative, you know, renaissance phase right now.
+
+and I think it's, I think it's, it's really, really telling that, that, that there's so much
+
+[00:40:34] Brian: but how, how, how widespread do you think that is? Because, I mean, I, I get, I get it like in, like, I would have that kind of the feeling, but I think most people kind of to use the Bonhoeffer thing, they're like, oh, first they came for, you know, the writers, then they came for the designers. But isn't that.
+
+Like particular groups of people versus like the general population. Are they, that's what I end up wondering
+
+[00:40:56] Troy: I 
+
+mean, I think in cultural production, Alex, there's always gonna be, reaction to things that are perceived as inauthentic or anti-human.
+
+[00:41:05] Alex: For sure. But I think, but I think it's, it's, I think I have, I have three scenarios that I think can work out. You know, Troy, you like making lists. but I, I, I feel like, I don't know, I think that right now it's pretty widespread. I think that people, it's a complicated kind of, issue. I think people like ai, a lot of times the AI that they like is talking to chat bots.
+
+I think they like. Sending people, a funny little, you know, studio gili kind of version of themselves, but I don't think that they want to consume it as art or culture yet. I think, I think that a lot of people find this icky now. It doesn't mean anything because culture changes. And I think there's three scenarios, right?
+
+The first one is the optimist, AI optimist scenario. It's the one that Google and the Elevenlabs and these AI tools, so. Audiences are going, audiences and creators are going to embrace it right 
+
+now. Of
+
+course, Of course we will. And we will find new and novel ways to explore cultures like computers and the 
+
+[00:42:02] Brian: this shit forever. It's the
+
+same stuff. They just changed the
+
+[00:42:05] Alex: you know. And, and maybe it's, maybe it's like computers and synthesizers, right? Like syn when synthesizers came out and even, or, you know, use electric guitars or whatever, like people used to look down on them. And then Giorgio Moroto drops. Like, I feel love and everybody loves synthesizer and it changes music forever.
+
+So maybe that's what happens. Maybe we haven't seen what human and ai, generative artists, maybe a 16-year-old. In her bedroom makes the next Star Wars and we don't see it. Okay, so that's, that's the AI optimist. The artist optimist is like, there'll be a rejection, right? So Art will, this kind of AI art will proliferate in ads.
+
+It'll proliferate at your dentist bathroom. You'll have it everywhere. But It'll, it'll be just stuff that you ignore, but the actual kind of premium real art will be sold at a premium. Culture will reject the fake, like people will go to more concerts. you know, maybe, and we're seeing this a little bit right now, like.
+
+Like Magee, right? This artist that we love, his sound sounds like it's recorded in a bathroom. It doesn't sound like ai. It's really trying hard to make it look. Look how unpolished I am, right? Like I'm anti aesthetic. and then the third, scenario is the realist scenario, which is, which is me, which is at some point the dam will break culturally.
+
+so there'll be a trickle of like, okay, we're using AI for this, but over time a lot of us will stop caring and we will just consume. Media, you know, Spotify will push more and more AI media, which, which you can do for free and doesn't have to pay anyone for. and much of our culture will be generated from things that came before and that like, has a bunch of ramifications, you know, that I, that, that, that we need to talk about in a different topic.
+
+But there's just too much energy behind using ai. Hollywood cannot 
+
+afford to do $200 million 
+
+[00:43:50] Troy: Day.
+
+It's like cultural Groundhog day.
+
+[00:43:53] Alex: I think, I think the past is eating the future constantly, like already with, with algorithms and stuff like that. When we were growing up, we weren't exposed to all the stuff from the past and now we've constantly shown clips and stuff and blah, blah, blah. And, and, and AI will just make that worse because it's just like constantly regenerative.
+
+But I still think that right now there is a moral disgust
+
+[00:44:15] Brian: But don't you find it's very strange that we, you know, we live in a time of like extreme agency, yet we all sort of throw our hands up and be like, oh, well. You know, this is just how things are gonna go. Isn't that, doesn't that discount the fact that, you know, people actually have agency with this? Or is it just that time?
+
+And again, it's proven that through a lot of different social mechanics, that technology has been able to get hooks into people and to get them to act in ways that honestly are against their interests. Like if you do believe these studies that this is cognitive. You know, it's hurting you cognitively.
+
+Like I know, I personally, I feel that like I'm dumber, than I used to be. And I don't feel smarter.
+
+I don't think I'm unique in that. Like I feel, I feel dumber. Like I feel, I felt smarter and more informed when I read books versus when I read the internet. Like I don't think that the internet has made me any smarter.
+
+I think it's actually been the reverse and I think a lot of people feel that way and it's accelerated with. the use of ai, for instance, I've kind of stopped trying to stop using chat CPT, all that much. I think it's just a crutch. And personally, it's funny with the, you say about VO three, I think that like Chatt in particular has gotten even worse at writing.
+
+I don't know how, but it's gotten worse and 
+
+[00:45:35] Alex: I think that there's a, there, there's a, there's another, and I don't know, I don't remember the psychological 
+
+term for It. 
+
+[00:45:41] Troy: Recognition of how it writes that 
+
+makes it 
+
+[00:45:43] Alex: Yes. 
+
+[00:45:43] Brian: not 
+
+this, it's that. It's high 
+
+[00:45:45] Alex: and so PE people who work in video games have been talking about this for a while. When you had your original Xbox and you played a video game, you looked at that video game and you were like, that looks photorealistic, right?
+
+But as you're exposed to better and better graphics, you can now see the patterns where this looks completely, it looks terrible now, right? It looks really bad. And I think we're just be, and you know. There is a progress that's happening in us where we are becoming better and better at pattern recognition.
+
+But there's a time when this technology will surpass that. And I think at that stage, it's problematic. I mean, already today, spend an hour on TikTok, you're dumber. I'm sorry you didn't spend your time. Well, you didn't make memories. Your time goes by so quickly. it'll make you feel like you, you, your, your life has gone by quicker and you've had less experiences in it than, than sitting down and being bored.
+
+[00:46:34] Brian: So what drug,
+
+so what drugs can I take? Is it peptides? I see a lot of talk about peptides. Is that, what do they
+
+[00:46:41] Alex: Is that, is that your topic? Because we've got seven minutes. 
+
+
+[00:46:44] Parallel Media Worlds
+---
+
+[00:46:44] Troy: Yeah, why don't you, why don't we talk about the drugs next episode? 'cause 
+
+Alex has a lot of anecdotes. what, what do you, what do you got, Brian? What's
+
+[00:46:52] Brian: So one of the things that I've been like thinking about, do you remember, do you remember a guy, Eli Pariser? So Eli, sort of, he rose in the last generation. He gave a, he gave actually back when like people, paid attention to Ted Talks. He gave a Ted talk and then he turned it into a book, I believe, like about filter bubbles.
+
+And at the time we, we were all concerned about filter bubbles that we would be stuck in a filter bubble. And that assumed that we were going to basically use the person, the person, the personalization of the social technologies, the information technologies at the time would basically push people into creating their own self-reinforcing bubbles.
+
+And this was the big threat. And I think in some ways, like that was correct. Eli went on to, to found Upworthy, which is one of the, the classic clickbait, sites of the time. Although they denied being, being clickbait, but they were, and now I almost think that we've created. Parallel worlds. and I've been digging into the alternative media world, because I think that understanding the dynamics of the, particularly of like the sort of right wing podcast, YouTuber, world X shit posters and all the rest of this is They're at the forefront.
+
+I think of like sort of. Where this information system is going. And what's interesting to me is like they're developing an entire parallel system. They have their own technologies, they have truth, social Rumble Rumble has its own like Substack, I had no idea. It's called Citizens. It's like also a community platform.
+
+And they have their own set of advertisers. Like, listening to, I listened to Tucker Carlson interview Candace, Owens. Do you know these, do you know Tuck Candace Owens? Like, she's like, she, she is. And it was all about how bridge Bridget Macron is a man. And like this, this would've shocked me. Like sort of, I would like, this is bizarre, but now it's just kind of like, oh, okay.
+
+Yeah. This is one other thing we get that gets thrown into the substrate and it's impossible to tell what is real. And at some point it doesn't really even matter what is real, because the whole point of
+
+[00:49:07] Troy: Well, it matters when someone gets arrested, but
+
+[00:49:09] Brian: it matters when someone gets arrested. She is being, Candace Owens being sued by the Macrons, over this
+
+[00:49:15] Alex: You can always, I mean, I mean, all of these people are, I mean, they're hacking the algorithms. They're hacking 
+
+[00:49:20] Brian: Well that yeah, that's the thing. It's like, yeah, it's, but it's all engagement farming and what I've like noticed is that we sort of decried and a lot of people decried, clickbait as and, and like clickbait is like, when you look back it's like such like. It's so quaint, like the, the, the engagement farming going on now.
+
+And that's why I think Trump is, is like a singular figure in this, in that he has one foot in the old world. He's obsessed with tabloids, he's obsessed with the New York Times. He calls reporters. He's working the refs. But like the real, he also is a natural in the new world in this. He's a natural information entrepreneur and he's able to get attention.
+
+He knows this in his blood. From WWE E, and if you look at like what you have to create drama, everything is a performance. Have you, do you know this guy Nick Fuentes? He's like a kind of like white nationalist kid. I don't mean 
+
+to kind of, I don't know how to describe him. I like, I guess he is, he's incredibly talented performer and I think he's incredibly dangerous because of that, because he's such a good performer and that's what like pops these days.
+
+He's in a dispute with, with Tucker Carlson. Candace Owens, and they create all these WWE like feuds. And you see it with like, you know, the comedians who are sort of geopolitical strategists in that it's all this ongoing sort of soap opera that sucks people into this parallel world. And when you enter it, you honestly don't know what is real.
+
+Like, I mean, I, I've been like, you know, immersed in this and I expect Barack Obama to be arrested for treason any day now. 
+
+Like, it's Like, it's it's assumed that this is going to happen, like in
+
+[00:51:05] Alex: I wonder, I wonder if folks, in the audience could write in and, and figure out who we should have a feud with. I 
+
+[00:51:11] Brian: I, 
+
+I, 
+
+it's gonna be Dylan, Dylan Byers. 
+
+[00:51:15] Alex: Okay. Well, I mean, I think we also have one with, we, we also have one with, Kara Swisher and, Scott Galloway, but they don't seem to pay attention to us, so,
+
+[00:51:24] Brian: well.
+
+[00:51:25] Alex: it's mostly, it's mostly Troy as well, so, you know,
+
+[00:51:27] Brian: So the other thing is they have, they have a parallel set of advertisers, and it's like the response, it's the, successor to like DRTV, like late night ads. but it's like CBD for pets. Tucker has his own, his own, ZI brand. he was doing ads for, for pistols. There's a lot of prepper ads that go on here, unsurprisingly.
+
+[00:51:47] Alex: And a lot of negotiate with the IRS, on your behalf ads. and so they don't have to have a foot, they don't have to have big brands support them. They've created an entire parallel universe, and I don't think, like, I don't see this coming back together. I think this is just the way. the way things are gonna go in the information space.I wonder sometimes though, and, and I know we, we, we both have a hard stop, Brian, but one thing I wonder about is that, it's hard to really understand the reach and influence of people nowadays because sometimes, like just the exposure that you have from them and, and how the algorithm decides to show things to you or me, just because it, me versus like, you know, Versus like maybe, maybe kind of their true audience isn't that big or isn't that valuable. And then we're kind of the secondary audience that we Well, a kind of a circus.
+
+[00:52:43] Troy: maybe we should have known that the consequence of all this would be the suspension of the laws of information gravity, right? It's sort of like, okay, when anyone can create with no consequences and there's no kind of process or for objective truth telling, you get this kind of world of cosplay and virtualization of, which means that we're all per, it's all performance.
+
+[00:53:08] Brian: Which is why like this is, I'm very interested in how the tech world is creating their own parallel media ecosystem. You know, because they tried to
+
+[00:53:19] Troy: And, and it's a great, you've talked about it for a long time, Brian, and the truth is,
+
+guess what? It's true. And if, if you look at, even look at the reach of the A 16 podcast like they're real, it's.
+
+[00:53:32] Alex: 
+
+[00:53:32] Brian: Yeah, we're gonna have to pick up the, the, the tech thing because like I I, I've spent a lot of time unpacking what, like, I take these people literally and seriously, and I mean, I don't think I should take them literally because they're being intellectually dishonest a lot of times.
+
+But what Mark Andreessen says about media, some of the things I'm like, okay, some of these facts. I actually agree with. Now, the dots that you connect, I find intellectually disingenuous and you simplify it into a very neat narrative of good guys, tech, bad guys, journalists. And in some ways I, I originally, I thought this was a bit of performance art to sort of shine the, the, to hold up a mirror to how tech, 
+
+[00:54:11] Troy: a, it's
+
+just a power play.
+
+[00:54:13] Brian: yeah, no, it's just about control and power.
+
+Then I realized that this is not
+
+[00:54:16] Troy: All right.
+
+[00:54:18] Brian: all right. Should we do a good, quick, good product or no?
+
+[00:54:20] Troy: Well, let's just pretend that, that that snipped product is a, you know, a flawed but good product and some something that we can, substitute this week. But I would just reflect on, we, we, you know, to, to anyone that's gotten this far, we, we made a subtle, format change a little
+
+[00:54:36] Brian: Oh, don't, don't show the wires that like, nobody cares about that.
+
+[00:54:40] Troy: Okay. 
+
+
+
+
+[00:54:42] Outro
+---
+
+[00:54:42] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+Good to see you, Brian.
+
+[00:55:18] Brian: Good to see you. Bye.
+
+
+

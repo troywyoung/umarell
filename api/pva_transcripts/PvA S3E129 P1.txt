@@ -1,0 +1,653 @@
+PvA S3E129 P1
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Troy: I was in, in London and there was a guy that was previously kind of a super fan 
+
+He said, you know, I used to listen to your pod religiously all the time, but then you guys just talk about the same shit every week. So I stopped listening to it
+
+[00:00:13] Alex: nice? 
+
+[00:00:13] Troy: and 
+
+
+
+[00:00:13] Brian: It's good to get feedback. 
+
+[00:00:15] Troy: I like the feedback. I, is that true? I guess we do, do we 
+
+[00:00:18] Brian: not very 
+
+[00:00:19] Troy: whine
+
+and talk about media all
+
+[00:00:21] Alex: Yeah. I mean, I, I know that I try to change the topic and it's always back, but let's talk about SEO and ads and I'm like, fucking hell man. 
+
+[00:00:28] Troy: Fuck it. Yeah. It's good to see you, tiger. What's 
+
+going on? 
+
+[00:00:36] Alex: It's good to see you too.
+
+[00:00:37] Troy: Yeah. 
+
+[00:00:38] Alex: spring break. Next week I'm going to Palm Springs.
+
+[00:00:40] Troy: Oh, that's nice.
+
+[00:00:41] Alex: Yeah, I love Palm
+
+Springs. 
+
+​
+
+
+[00:01:05] Welcome
+---
+
+[00:01:05] Brian: Welcome to people versus Algorithms. I'm Brian Marcey. I'm joined by Troy Young, who was just in the uk, but is back in Brooklyn. Alex Schleifer does not have a hard stop until at least 3:00 PM Eastern.
+
+[00:01:17] Alex: Yep.
+
+[00:01:18] Brian: Is the SEO expert gonna join us later, or no?
+
+[00:01:21] Troy: dunno. I think maybe we'll have him on next week. And also we're, you know, as a little preview, we we're also gonna have Rich on Rich Antonella from 
+
+[00:01:28] Brian: Oh yeah. That'll be fun. That'll be an explicit 
+
+[00:01:30] Troy: a
+
+LinkedIn hustler hustle guy, 
+
+[00:01:33] Brian: He's got a lot of life advice. This is Rich. I love Rich. I've done some great podcasts with him in the past. he definitely proves my theory that if you're, you know, if you're on the internet long enough, you become a, you become a life coach. 
+
+But I like, I like
+
+[00:01:46] Troy: about, 
+
+
+[00:01:46] Troy's Rant - Everyone's An Expert
+---
+
+[00:01:46] Troy: I have a rant about this. I have a rant about this. I didn't even mean to lead us to this topic. 
+
+[00:01:51] Brian: Go ahead. Then we'll get into 
+
+tariffs. 
+
+[00:01:53] Troy: Well this
+
+is sort of related to terrors, so. I don't know, what did I see? Something about Chamath Palihapitiya on X and I hadn't been reading much media. I was busy. And then I noticed that he's holding court on the Flagrant podcast, sort of like bloviating about the deep logic of Trump tariff policy and the underlying, you know, stuff, macroeconomic and sociopolitical logic of it all. He's on YouTube, lots of audience being interviewed by a famous comedian, Andrew Schultz, who, the YouTube famous comedian and his comedian dude, pod posse. And just as a, as a reminder, Chamath studied electrical engineering at Canada's University of Waterloo, and he got lucky and dumb rich. By becoming the Facebook growth guy at just the right time.
+
+Right. And has, by the way, since renounced the evil work he did there, Heh and I'm sure he, he, he's, you know, has wonderful growth skills and you know, at times he's reasonably articulate and dare I say occasionally insightful.Alex May disagree with me on that. he's not an economist or an experienced policy person.
+
+He was what, about eight months ago, red pilled by his poker pal, David Sachs.since then, Chamath has seemingly developed a taste for proximity to power and kind of freely leveraged this and his newfound pod celebrity to sling it around. To support the Trump agenda, which is up to him. I'm happy for him.
+
+his new celebrity seems fun and he has nice sweaters.and then I stood back and was like, comedians interviewing a Loro Piana influencer slash growth product person about tariff policy is basically what we've come to expect in the new infor in the information space. That's media now, 
+
+[00:04:02] Brian: it's great, isn't it? 
+
+[00:04:03] Troy: in the old times I was like, well, what would've happened before?
+
+And we would've had like seasoned kind of policy journalists backed by like economic policy expert editors, backed by fact checking teams, interviewing actual economists and actual experts. And what does it mean to be an expert? Well, you understand the cause effect connection between things because you're.
+
+You, you're learned, you've studied history, you've studied policy, you've studied economic models, you like, you know your shit. And, 
+
+to watch the sort of Trump tariff policies spill out across social media reminds me, I, I just kept thinking this is like Model UN in high school meets the Comedy Cellar and like, but on like a Tuesday night, you know, like not a good night. 
+
+And, and then over on the other side we have Zach, do you remember Zach from say Media? Alex? He was Nat Turner's partner.
+
+[00:05:10] Alex: Yeah.
+
+[00:05:10] Brian: Weinberg.
+
+[00:05:11] Troy: Yeah. Zach has become kind of an aggressive debater on another YouTube
+
+thing, interviewing the.
+
+[00:05:19] Brian: all the crypto guys one
+
+[00:05:20] Troy: Yeah. Yeah, it was really refreshing actually. He was going up against Keith Robis, who's like a mindless Trump supporter and, and kind of schooling him to be honest.
+
+And, you know, you got these two guys, this kind of entrepreneur come venture capitalist with this kind of semi entrepreneur, venture capitalist guy, you know, telling us what we need to know about,whether tariffs are, in fact, you know, we're trying to get to use our might to get to a zero tariff world so we can engage in fair free trade, or that we're trying to exercise some kind of like industrial policy so that we can.
+
+you know, build back, you know, industrial supremacy in America and protect the long-term interests of the country and use, you know, sort of tariffs as a policy device, seemingly contradictory things. Having this conversation and like, I'm all for, you know, conversation and, and, and I guess that like everything we say and do in public spaces is just media now.
+
+But if my lower back hurts and I wanna know if it's cancer or not, I'm going to a doctor. And if I wanna know how to, you know, diffuse a nuclear bomb, I'm going get the right guy. And so, you know, I, I, I just, it, it, it's, it's, it's really a confusing time and I think this tariff moment is really kind of illustrative of how I miss experts in media. 
+
+[00:06:55] Alex: yeah. and it's hard to tell really if it's just like the Dunning Kruger effect where people who, I mean, I think Chamath is very much that, right? Like he, he had success, so he thinks he knows everything about everything right now, and there's a lot of confidence in when he says thing.
+
+But, There's also the fact that it, today, it doesn't matter if you change your mind. I mean, it just, it's just proof, that, you can say whatever you want and that the media river just flows by and the next week you can completely change your mind. And we've all seen the super cuts of people reacting to market declines under Biden, like freaking out.
+
+All 
+
+[00:07:33] Brian: Yeah, Benny Johnson had one that, that was one that he was, he was freaking out over some little decline, I guess like a couple years ago and then it's like cuts to today and he was like, having money's no money is fine. It's 
+
+fine. 
+
+[00:07:49] Alex: money doesn't cost you 
+
+[00:07:50] Brian: He is
+
+like, what's the big deal?
+
+[00:07:52] Alex: Losing money doesn't cost you anything. 
+
+[00:07:54] Brian: you didn't have any money as a child.
+
+You were happy. 
+
+[00:07:56] Alex: yeah, exactly. It's, you know what it feels like a little bit, 
+
+[00:07:59] Brian: It's different
+
+in your fifties though,
+
+[00:08:01] Alex: Yeah. Did, did you know that, the, the Mission Impossible movies are really interesting because the way they start shooting those is that they set up the stunt and they said, okay, we want Tom to fly off to jump off a cliff on a motorcycle and land on a train.
+
+And they go out and they shoot that stunt and then, and, and maybe a couple of others, and then they build the script and story around it. So they start shooting without a script. And this feels exactly like that. Somebody woke up one morning and started throwing random numbers out, and now you have all these sycophants and, and people that are holding court, like you were saying.
+
+And it does feel like that, just trying to build the script around the stunt. and it's, it's maddening, because it works.
+
+[00:08:41] Brian: But it's also, it's also, it's kind of thrilling. Let's, let's admit it, like, right, like, I mean, I, I, I understand what you're saying Troy, about like. Wishing to have the August like economists and unpacking this in a very somber way. But we're, we're well past that, and I don't think there's any going back to that, I found just following this over the last week to be really fascinating.
+
+I
+
+[00:09:06] Troy: I was eager to hear your take though.
+
+Did, did, did, did X Turn against Chamath after that stupid podcast?
+
+[00:09:12] Brian: It's hard to say. It's hard to say. 
+
+[00:09:15] Troy: Because there's 
+
+also like, there's also massive Chamath, there's Chamath fan boys deconstructing in, in multi, you know, layered, threads. Like what this great man is telling us. Like people take him seriously.
+
+This is, this is what's weird about it. 
+
+[00:09:32] Brian: did you know he,
+
+he's one of the top
+
+[00:09:34] Troy: He's the fucking growth guy from Facebook. 
+
+[00:09:37] Brian: He's one of the top grossing sub stackers. He has like a $10,000 a month substack, and that actually has vaulted him into the top 10 of like substack. There's enough people out there that are paying him over a million dollars for access to his substack, 
+
+according to a chart that AB shared. 
+
+[00:09:57] Alex: it? It's like confidence plus shamelessness. Like how do we, how do we like get in on
+
+[00:10:01] Brian: Well, it's the appearance of competence. I think that really is the only thing that matters right 
+
+[00:10:05] Troy: just that when we verge, you can talk to me about whether you think the, New York Giants made the right trade. And you can just be some fucking guy and that's fine. And you can talk to me about, you know, whether you like the Chinese food at the new Chinese restaurant in soho. Great. You can be some, some person, but when you start talking to me about, I.
+
+Like really nuanced macroeconomic policy. Sometimes I want you to be a doctor
+
+[00:10:33] Alex: Yeah. Yeah. 
+
+[00:10:34] Brian: Well, maybe not Dave Portnoy weighed in. I mean, this actually, I, I think this is one of the pressure points was Dave Portnoy was, was turning against Trump. Now he's a, he, he represents an important constituency and the, the reality is Trump won from low information voters. I mean, I think it was made the point that like 60% of Americans rated a sixth grade reading level or lower, that came out during this, didn't fact check it, but that sense.
+
+which is fine. but like you have to think like the idea that someone is gonna just listen to a Nobel Prize winning economist is just out the window. I mean, look, Trump has branded these things as reciprocal tariffs and the New York Times has to put it in quotes 'cause it's like literally they're not reciprocal.
+
+Like they don't match up. So that, that you can't, you can't just take a word and say it means something else. you have to put it in quotes. 
+
+[00:11:24] Alex: Is there a breaking point though? Is there, is there like a breaking point where, to me it's like, it seems to be escalating and the, the, the, it's so, flagrant, you know, like the podcast, that it's, it's like at some point it becomes noticeable.
+
+Wait, the shit you were telling us last year, it's completely different to the shit you were telling us this year. And the whole like, manosphere, grift space, like that, it, there's all these playbooks that are being played up all the time where people just change their minds or just say the opposite thing that they were last week or become Christian because all of a sudden there's rape accusations like Russell Brand, right.
+
+Russell Brand 
+
+turned 
+
+[00:12:02] Brian: is a Floridian. He's a Floridian Now. 
+
+[00:12:04] Alex: So yeah, move to 
+
+[00:12:05] Troy: I think he's actually, I think Russell Brand is also 
+
+a, uh, a macroeconomic policy expert.
+
+[00:12:11] Alex: If anybody moves to Florida and becomes a Christian, something's coming,
+
+[00:12:15] Troy: Short that stock,
+
+yeah.
+
+[00:12:17] Alex: short. It. 
+
+[00:12:19] Brian: But, so here's, here's my, here's my positive take on this, right? Is the way these things normally, and I'm gonna try my best. The way these things normally take place is they're very controlled rollouts. Everyone gets to their talking points, and you have surrogates that go out there with their talking points.
+
+That is not what happened here. We had the world's richest man who is also a close advisor of the president calling his top trade policy architect, Peter Retardo. I can say that now 
+
+I have no money in my 401k, but I 
+
+[00:12:50] Alex: It 
+
+was worth it. It was worth. 
+
+[00:12:53] Brian: you know, we've got Dave Porter, we have Scott Besant sent out to do the hard yards, not just on 
+
+[00:12:59] Troy: But the character, he's become in this sort of expert, the new, new expert land is he's the guy that made his mark with smart trades. He, he, he's held up by everyone to be at, well, at least there's Scott. At least someone's smart there, right? At least there's someone who knows what they're doing. Oh, Scott, you know, is soft spoken and has thick glasses.
+
+He's like, nerd stock. He's like, real, he'll take care of it. He'll 
+
+[00:13:26] Brian: he's got a, he's got a good part, he's got a classic part, you know, like he's got the, the sweep. It's good. He looks, he looks good, he looks apart, but he was on Tucker Carlson explaining it, and then he was on like, all in. So it, it's interesting how this, this, stuff is now, now filtered through the information space.
+
+I did you see that Walter Bloomberg, which is an pseudonymous, x account, caused a $2.4 trillion swing in the market by, by misreporting, that the, the terrorists 
+
+[00:13:57] Troy: Is that, is, is that Bloomberg's brother? 
+
+[00:14:00] Alex: Hey, is this, is this what happens when you, uh, when you sell blue check marks for like eight bucks a month?Uh, you know, all of these like things of no consequence are having like really real consequences.
+
+[00:14:13] Brian: But here's my positive take on it. I would rather have like, like his advisors, duking it out in public and have this sort of all playing out transparently than the strategic leaks and the talking points because it lays bare, sort of how the sausage is truly made. Now, I think it's extreme in this case, but it's anyone who's wor 
+
+ever worked 
+
+in a 
+
+[00:14:37] Troy: That, that's a, actually, that's that, that's become a maga talking point actually, 
+
+which is where the most
+
+transparent we're the, we're the most transparent government ever. Mm.
+
+[00:14:46] Alex: Yeah, exactly. 
+
+[00:14:47] Brian: true. I, it's true. Like they're definitely not hiding Trump. They might want to, but like they're not hiding him, that's for sure. You cannot accuse them of that. 
+
+[00:14:55] Alex: I, I, I don't want it to get conflated with honesty though, right? Like, I think it's, it's still super dodgy what's going on with, with all of this stuff. And I, and I think transparency would also require honesty. I mean, you know, there's, they're saying stuff, but you know, it doesn't mean that it's true or it's what
+
+[00:15:13] Troy: I mean, like you said, Brian, we came last week when we talked memes with Nick. You know, narratives are powerful things and, you know, the, the, the Republicans have have stolen the kind of working men Main Street platform and, you know, the, the, this is all seemingly, I mean, you know, there's a lot of conversation about motives here.
+
+Like what are the motives, what's our objective? And, you know. You can see a kind of populous narrative underneath of this, that this is all about not rewarding the, the, the, the bankers and lawyer class, but, but, you know, doing something for Main Street and Scott's out, Scott Beins out talking about this and Trump talks about it and all of the sick offense talk about it.
+
+meanwhile, I cannot, I walked home from a meeting this morning and I was just like, walking by stores and, you know, just kind of, I don't think that there's a single business that isn't like shitting their pants right now.
+
+[00:16:12] Brian: Yeah. 
+
+[00:16:12] Troy: small businesses that have lost, you know, not just that they're, you need to thrive in volatility, but like, you know, that they can't order next season's clothing for their little clothing boutique in New York City because of, they don't know where they're gonna get it
+
+[00:16:31] Alex: Yeah.
+
+[00:16:31] Troy: at what price, 
+
+[00:16:33] Alex: I mean, 
+
+it's happening to Apple.
+
+
+[00:16:35] Tariffs' Impacts
+---
+
+[00:16:35] Brian: Yeah. Well, let's talk, let's talk about the downstream impacts of the, the real world impacts beyond this, like information sta space nonsense, of this. 'cause it is going to, I mean, look, this thing is whipsawed back and forth and now it's, it's apparent, it's back to, oh, it's just about like China and this is going gonna go on for a long, long time. 
+
+[00:16:55] Alex: Yeah, but I mean, let's stick, stick to the information space. Like advertising, advertising. Like forget 
+
+Ian Shehan. Timo, that that's gone. all these little, you know, B2C retailers that kind of like, you know, that I keep seeing on Instagram that are trying to sell me beard oil. I mean, maybe the beard oil is fine, but you know, like little clocks and
+
+[00:17:17] Troy: Where do they make, where do they make beard oil.
+
+[00:17:20] Alex: I don't know. Mine is kind of like honest Amish, so I think it's, it's 
+
+over 
+
+here. 
+
+[00:17:24] Troy: make it.
+
+[00:17:25] Alex: Yeah,
+
+[00:17:26] Troy: Oh, so maybe it is American made.
+
+[00:17:27] Alex: yeah. Maybe. And then they sell it to the English. like advertising. Like what, what happens? Like this, kind of magnificent seven stocks are being shorted. I think in large part Google and Facebook and, and Meta because of kind of the advertising hit this is gonna take, this is gonna bring with it.
+
+No. Just sticking to media and talking about
+
+[00:17:47] Brian: Yeah, I mean, look, the, the, it's always downstream of that. I mean, advertising is the easiest thing to turn off. You can't like stop building a plant or data. I mean, I guess you can. Microsoft stopped a data center, but it's harder. Capital investments are harder. You can always cut advertising. I always joke that, you know, a recession's coming when one of those articles pops up on adage saying the worst thing to do is to cut advertising during a downturn.
+
+And ev no, CCFO apparently reads adage because they always cut it. 
+
+[00:18:15] Alex: we cut it at Airbnb like pretty, pretty extensively. and for a second it didn't make a difference. So maybe that was the 
+
+[00:18:22] Brian: oh well that was the performance stuff. I remember that stunt. yeah, it's gonna, I think one of the big sort of impacts of all of this with is with the overall soft power of America, like America's exports are, are mostly in services. Yes. But in like cultural products. And I think that's a, an underrated aspect of this.
+
+you know, it, the American, the US National Anthem is being booed at NHL Games in Canada by your people. Troy and I, I kind of don't blame 'em to be honest with you. And I think that's gonna have a real impact. I mean, obviously China is going to go after Hollywood. I mean, there's a reason their stocks got got crushed.
+
+They've done this before. They're gonna stop showing, Hollywood movies. there's gonna be a tremendous amount of impact of this disruption. 'cause I do not see, I do not see Trump and the Trump administration all of a sudden snapping back to being like, oh yeah, well we tried that and that's, you know, we're just gonna go back to being like normal.
+
+This is, this is gonna be three and a what, a three and three quarters years at least of this.
+
+[00:19:28] Alex: Yeah. And then, so in that time, that's you, you, you need, you need at least two to four years to start onshoring anything. I don't know who's gonna start doing that. So that's the, the external factors of that is, is definitely like the, these new alliances forming, right? We might be seeing new alliances in Asia.
+
+Like a lot of the news I'm hearing from Europe as a European actually feel pretty good about, right? Europe feels more united than ever before. they're going to invest in their own defenses. They're, they're, they're going to start, I mean, talk about Onshoring, like I think Europe is, is starting to build,You know, it's kind of, it's like reinforcing itself against this stuff, and it will create new alliances. I mean, like, this is, I mean, it's terrible for China in the short term, right? Terrible for China in the short term. But in, in the long term, China's going to be making alliances with all these other Western alliances.
+
+And that's what happens when you run a country as a fucking business. A business doesn't have alliances, doesn't have friends in a business, you're always competing. And if you lose out, if somebody else wins, you usually lose out. You see everybody else's competitors, or at least that's the way these folks are seeing it.
+
+And that's not a way to run a, a a, a country. And so 
+
+[00:20:39] Brian: although Trump is, is kind of like he's going back to the Gilded Age and that mercantilism where there were a lot of alliances businesses allied with, with each other in order to avoid competition. 
+
+
+[00:20:50] End Of The Tyranny of GDPR
+---
+
+[00:20:57] Brian: So there is hope for that, but one positive that has come out of this, Troy and I thought of you when I saw this, um, I went to politico.eu and I xed out of a massive cookie consent banner to find that the European, I'll just read it.
+
+The Europe's most famous technology law, the GDPR is next on the hit list. As the European Union pushes ahead with its regulatory killing spree to slash laws, it reckons are weighing down its businesses. So GDPR, all of this could be in service of a greater good. And that is the end of the tyranny of GDPR. Congratulations.
+
+[00:21:34] Troy: I mean, it, it couldn't have happened, soon enough, to be honest. It's ridiculous. It doesn't protect anyone and it adds terrible friction to an already horrible consumer medium as a media delivery mechanism. So great. It's great. It was 
+
+[00:21:50] Alex: Can, can you 
+
+explain, can you explain what it is and what the impact is on people 
+
+[00:21:54] Troy: people's privacy, let people know that they're being tracked in some shape or form, either as a, a cookie that helps, you know, create functionality on a website or is used for ad targeting.
+
+And, you see it on every website, the little bottom banner that says, you know, you can opt in or opt out. Everybody engineers it. So actually opting out is way harder. So everybody, you know, the opt-in rates or something like 60% or something like that. And it's just, it's, it, it, it, it was, it created an entire new industry in ad tech that are, I guess, good for people like Brian, that take their money for, well, advertising the consent 
+
+[00:22:30] Brian: business. No, I haven't. I tried to sell Source Point,but no, it, I did, we 
+
+didn't do any business. 
+
+[00:22:36] Troy: It was yet another 
+
+expense for media companies, by the way. And, and the people that had authenticated users like Google and Meta never suffered at all you 
+
+[00:22:46] Brian: No, just locked in. It locked in competition. 
+
+[00:22:48] Alex: I would say It 
+
+benefited, benefited this podcast as well because it's probably 15% of our content is Troy complaining about it. So it's
+
+[00:22:55] Brian: What it cost. It cost. I, I saw a study it cost between 1.7 million for small, medium sized firms to up to $70 million for compliance. The, the, I couldn't find a total cost of GDPR. and for what? Like what did we get out of it? What did it do? It 
+
+[00:23:11] Alex: Well, here, here's the thing, maybe also to clarify and, and Troy, Troy is so, I'm gonna ask, how does that, why 
+
+[00:23:18] Troy: Alex, instead of trying to poke me, 
+
+[00:23:19] Brian: you 
+
+can't, you can't defend Alex. 
+
+This is one 
+
+thing 
+
+[00:23:23] Alex: I'm
+
+not defending it. I'm not, I mean, it unites Europeans. how does GD, how does, 
+
+[00:23:29] Troy: Hey, Alex,
+
+tell me what's in my sausage. Don't like put a ba, a useless banner on the bottom of my website.
+
+[00:23:37] Alex: No, I'm good. I'm good with that. I'm literally asking, like we, we talk, it's maybe a, a chance, and Vania, maybe edit this out. What I'm trying to frame is 
+
+[00:23:45] Troy: No, you can't, you can't, keep doing, you can't keep doing that. Part of the, the beauty of, of your mind and this podcast is spontaneity. Alex. No, 
+
+[00:23:54] Alex: Uh, 
+
+[00:23:55] Troy: let Vanya edit out 
+
+[00:23:56] Alex: what,
+
+what, what, what I'm trying to ask you is like, let's, let's frame it for people. Like how did GDR, because a lot of people I talk to here about GDPR and I explain it to them is, but isn't that a European thing? How does that affect me?
+
+[00:24:08] Brian: You have to follow GDPR because you can't serve different customers in different markets. It's a global market for information, and so if you're operating, you're gonna have to change how you operate because of GDPR, you're 
+
+[00:24:23] Alex: So, so in 
+
+[00:24:24] Brian: As a, 
+
+[00:24:25] Alex: terms, yeah, in real terms. The cookie, ugly cookie window you get at the beginning of a page that's GDPR. 
+
+Even,
+
+[00:24:34] Brian: That's the most tangible manifestation of GDPR that all of us have had to endure. you know, now Americans won't have money to travel to Europe, so they won't have to endure it. So there's that too. 
+
+[00:24:45] Alex: right?
+
+[00:24:46] Brian: Oh, it's, it's horrific. Yeah. You're just axing out Troy. Weren't you just like closing cookie consent windows 
+
+[00:24:52] Troy: I don't even 
+
+[00:24:52] Brian: days?
+
+[00:24:53] Troy: in Europe.
+
+[00:24:53] Alex: think about it, like part, part of, but what I mean, you, you, you're, you're saying that, but I think it, it actually pushes people, away from the open web and towards apps, right? There's like all these downstream effects that came from it. And it was probably like one of the, just like one of the most, anti open web.
+
+policies ever, like I'm very anti GDPR. Also, if you wanted to do this force, the browser makers to make some sort of, you know, built-in browser interface that handles that, don't 
+
+[00:25:21] Troy: Plus, you know, Alex, the cookie was the only con concession towards a coherent kind of u recognizing the user in a browser session. 
+
+[00:25:32] Alex: Yes. it's also asking people to make a decision that they don't fully understand, and so people just click Yes. Oh, I don't care. none of that. So I think the idea was flawed, the execution was flawed, and in the end, everybody suffered. And the fact, how long has it been, going on for?
+
+[00:25:49] Brian: I 
+
+don't know, 
+
+six, seven years. 
+
+[00:25:51] Alex: So I'm all, I'm, I'm all here for this nightmare to end. Troy, I'm with you. I, I poke the bear a little bit because you get, you're funny when you get angry at
+
+[00:25:58] Brian: Seven years. Seven years later 
+
+[00:26:00] Troy: You're so cute when you're angry.
+
+[00:26:02] Alex: You're cute. You're cute when you're angry. 
+
+[00:26:05] Brian: I mean, it's, but I, again, this is, this is due to the pressure that is being put. On a lot of it is like good changes can come, like Germany is now spending, you know, they, they're stopping their, their silliness with like, you know, against any sort of
+
+debt. And so a, you know, good things can come out of, this kind of disruption.
+
+So let's, let's be open 
+
+[00:26:28] Troy: I am worried about Germany, as you know. 
+
+[00:26:31] Brian: are you, you're worried about their infras levels of in infrastructure
+
+[00:26:34] Troy: I'm worried that there are, the industrial backbone is about to be decimated by the Chinese, by the, the destruction of the automotive business. 
+
+[00:26:42] Brian: the 
+
+BYD and my brother was just in, in China was just like, he's like the, it's like their car industry is just so far ahead of, 
+
+[00:26:50] Alex: I mean, do you know like the, the China increased? It's export. So the Chinese car industry used to be kind of very internally facing, but they, they increase their export and the one of the biggest increase are the combustion engines because they know they, they have a, a massive production capacity for combustion engine.
+
+But Chinese consumers aren't really buying combustion cars anymore. They're all switching to elec electric cars. So all these combustion engine cars are flooding the markets outside of China. so it's, it's, it's kind of wild. They've, they've, they've leaped ahead in that. and meanwhile here, we're hoping to bring back, you know, manufacturing jobs in Detroit to bit good, good old fashioned cars, like in the
+
+[00:27:34] Troy: You know what Alex, if you had just waited and not bought that lucid, you could have paid maybe, I don't know if you can get a BYD if you pay a massive tariff on it, or they're just completely restricted from the US market, but they now have one that has, comes with a drone on top of it. They have a partnership with the drone company.
+
+And so you can control the, I presume you can control the drone from your dashboard. I saw one, like the cops have them in New York. They put a drone tethered from the top of those SUVs outside of major events. So if they ever have to do crowd surveillance, they just let it go. Um,but now everybody has one of those, right?
+
+Can you imagine driving down 
+
+[00:28:10] Brian: So what to like, 
+
+[00:28:11] Troy: you're, 
+
+[00:28:11] Brian: look at the traffic ahead, like that kind of 
+
+[00:28:13] Troy: you know, like you're driving through the countryside and you want a, you want an aerial shot. You just release the drone. You know, you probably see the image on your dashboard in the car. It's kind of cool. It's like, what if little 13-year-old boys design cars?
+
+[00:28:28] Alex: Well, you know, 
+
+[00:28:29] Troy: on top.
+
+[00:28:30] Alex: I, I'm very happy with my lucid. It's, it's a really beautiful car and, and apparently it's done really well. I mean, I think it's, it's, it's picking up 
+
+a lot of Tesla. 
+
+[00:28:38] Troy: of them a month. 
+
+[00:28:39] Alex: orphans.
+
+[00:28:40] Troy: Yeah. There, there is no beat, there is no lucid without PIF. Lucid is entirely funded in a, as a massive loss making company by the Saudis. Just so you know the trade you're making.
+
+[00:28:52] Alex: Well, I don't, I don't, I don't 
+
+[00:28:54] Troy: Yeah. Did you get the model Khashoggi? 
+
+[00:28:56] Brian: Oh, 
+
+[00:28:57] Troy: one. 
+
+[00:28:57] Brian: oh my God. we've 
+
+[00:28:59] Alex: Wow. 
+
+[00:29:00] Brian: the Khashoggi stuff. 
+
+[00:29:01] Alex: you wanna move, move up the kind of like the, the production line for any product you own and see, see how it makes you feel. I don't know, 
+
+
+[00:29:08] Apple Is In A Pickle
+---
+
+[00:29:08] Brian: So one of the other, downstream impacts is Apple is, is in a pickle. Right? I don't know. Can, can you unpack this a little bit? 'cause I think Tim Cook's legacy is really gonna be real interesting with how this turns out because
+
+[00:29:23] Troy: bring on our Apple specialist, Alex,
+
+[00:29:26] Brian: he was the supply chain guy and it seems like they missed on, on ai.
+
+And there's the, that's the two big totems of this, of 
+
+[00:29:33] Troy: watch for a little blip in their sales. Last week and the week bef I ran out and I bought an iPhone. 
+
+I didn't wanna pay 
+
+[00:29:40] Alex: of, 
+
+[00:29:40] Troy: bucks more for my iPhone. I 
+
+[00:29:42] Alex: yeah. I mean, they're, they're scrambling and apparently, even before the tariffs were announced, a lot of kind of like, PC manufacturers and Apple were trying to front load imports of their most expensive models. So like a lot of high-end models were brought into the country.
+
+cause they expected some tariffs. but at this rate, I think, apple is a bargaining. No, nobody did.
+
+Nobody did. That's why it wasn't factored into the market. Like, it's, it's nobody did. it was priced in, it was priced in at like something way lower. No, I mean, Apple's in real trouble. They, they're, they're building some of their stuff in, in, in India.
+
+you know, they try to shore some of these things. I think Apple. It could be existential if they don't strike a deal. and I'm sure Tim Cook is spending a lot of time at Mar-a-Lago right now to try to get this done. it used to be that, and it, there's always been this risk, right? Like a big,like one of the biggest geopolitical risks was, you know, if China invaded Taiwan, for example, right?
+
+And that would, severely disrupt our entire, you know,semiconductor industry and computing and stuff like that. But Apple would be in real trouble because it would probably, you know, stop anything coming from 
+
+[00:30:55] Troy: Is it true, Alex, that you need tiny, little, delicate adolescent fingers 
+
+to do the final assembly 
+
+[00:31:00] Alex: Yeah, I 
+
+think American fingers are a little too big 
+
+[00:31:03] Troy: Yeah, 
+
+[00:31:04] Brian: Did, did
+
+you see the, the Chinese
+
+[00:31:06] Troy: can you fact check that Alex? Is that, is that, can you, am I fact checking that with you? We probably can't do the assembly just because of our anatomy.
+
+[00:31:13] Alex: Yes. It's
+
+[00:31:14] Brian: Well, did you see the Chinese memes that were being created? The AI memes of like fat Americans trying to screw in like, um, uh, Little iPhone 
+
+[00:31:24] Alex: Well, I mean, Dave Chappelle had a good line where he said, you know, I wanna wear Nikes. I don't wanna make 'em. Uh, 
+
+[00:31:30] Troy: If Americans designed iPhones or actually executed them, they would look like those things that you hang over top of a baby, 
+
+[00:31:37] Alex: yeah. 
+
+[00:31:38] Troy: the knobs.
+
+[00:31:39] Alex: I mean, but that stuff isn't onshoring that stuff. I mean, I've heard different numbers, like between five and 10 years. it would make the iPhone cost like two and half thousand dollars. I mean, it's not, it's not a, it's not a serious, it's not a serious plan. And at, at the same time, like, what do you do, right?
+
+This, this, this trade war has, even if it resolves itself. I think it's fundamentally changed the way people look at,where they get their parts from and, and what's reliable long term. And Tim Cook, you know, that's his legacy, having set up this incredible, incredible supply chain that meant that these new phones would come out every year with no fault.
+
+People would deliver them. They wouldn't have delays, they wouldn't have any stock issues. I mean, it's incredible what they set up. but turns out it's a house of carts. and a lot of people are very, very worried and. The Mag seven, which includes Nvidia and Apple,also has been holding up the stock market, right?
+
+It's like big chunks of people's portfolios. And 4 0 1 ks is held up in these stocks. and I think what we're, the decline we're seeing in Apple right now could feel like a tiny blip compared to what happens if these tariffs, like, if the tariffs war kind of keeps escalating, it's at 145% now. I mean, that's essentially no trade from China, 
+
+[00:32:57] Troy: Does it mean we're not gonna get a new season of severance?
+
+[00:33:00] Alex: I mean, it means, means that it means, I I I think that the billion that they're losing on Apple TV will just seem like a, like small fry. They might just wanna spend entirely on services. I mean, it could mean like massive things, right? The delay of the next iPhone. It could mean, For me, it could mean like, I don't get my switch two when it comes out.
+
+You know, Nintendo had announced a switch, two pre-orders, were meant to start yesterday or, or this week. they basically canceled their pre-orders for, for the us the rest of the world got to pre-order. We didn't, 
+
+[00:33:30] Brian: I don't think it's crazy to, to think there's a possibility that Apple and Amazon spend less on the, the streaming. That's, that's losing money. What? Why? Why would that be 
+
+[00:33:40] Alex: be, because services is the only thing that's like, if, if the hardware faucet has to stop for a while, like investing in services, the only thing you can do. I don't think Apple doesn't need to save money. I think they have, they're sitting on plenty of cash. They can wait things out at the very least.
+
+if, if they have trouble supplying hardware. I, I would, I would see them investing fully in software. You know, they're gonna release a new iOS version, and fully on services, right? Services is also the, the, the part of the, business that's growing the fast, fastest. So, I, I wouldn't see that happen.
+
+And I think right now they're looking at the service port as a portfolio. they're not seemingly caring so much about how much money they're losing. I mean, a billion dollars for Apple is nothing.
+
+[00:34:24] Troy: Alex, do they have to bifurcate their production so that they serve the, they they sell iPhones in China. They, they serve the Chinese market and the European market, and those not affected by the American tariffs from a Chinese production facility and try to serve the rest of the world in other ways.
+
+How does it evolve?
+
+[00:34:47] Alex: I have no idea. I mean it because it's, it's 
+
+so, it.
+
+[00:34:50] Troy: get Chamath on.
+
+[00:34:51] Alex: We should get Shaath on. Yeah. I've never heard him say that that would be, anybody who thinks anybody who's friend friends and takes Jason Ka seriously, like we should kind of look at 
+
+[00:35:04] Troy: I'm coming around 
+
+on Jason, to be honest with you.
+
+[00:35:06] Alex: really, well,
+
+he laid me off. So there's that. but, but yeah, I don't know. I don't know. I think it's, it's, I think we're gonna see a lot of, I think Apple for sure is going to be used as a bargaining ship as, as this goes on, and I don't know how long it can go on for. I mean, they're, they're, they're planning 2, 3, 4 years ahead for these next, next iPhones.
+
+And that must have put everything up. You know, everything. Everything's in turmoil right now.
+
+[00:35:30] Brian: but also, I mean, the big, you know, the card that, that China can play is just taking, is just saying, all right, we we're not respecting any intellectual property
+
+[00:35:39] Alex: That's the big part. Everybody's terrified of that.
+
+[00:35:42] Brian: you 
+
+[00:35:43] Troy: Sorry 
+
+[00:35:43] Alex: say 
+
+[00:35:43] Troy: before. 
+
+[00:35:44] Alex: no. They 
+
+did. They did. And
+
+it, there's a semblance of them doing it. And, and they did enough so that large companies like Apple felt comfortable working with, Foxconn and things like that, knowing that their intellectual property would be respected.
+
+Now, fine, you can still, you can go to China and there's like a cafe somewhere called Disneyland, and nobody's doing anything about it. And you can get a fake Nikes and stuff like that. There's a, there's a black, it's, but it's, it's handled as a black market that changes, right? If you're saying, well, you're implying those tariffs, now we're putting a freeze on any IP, partnerships that we had in place.
+
+And that's, you know, okay, well now we're gonna start selling iPhones in, 
+
+[00:36:27] Troy: Yeah, you have a night, you end up waking up in, you know, cold shivers, realizing that if you had to live in a, the country of America where everything was made in America, it would be like living in Russia where everything, where they have fake McDonald's, 
+
+[00:36:40] Alex: Russia, interestingly, no tariffs. 
+
+[00:36:44] Brian: I would've a lot of trade. the DTC industry is, is gonna be, that's a tough one. any thoughts there, Troy, on second order impacts? Because, you know, a lot of these
+
+[00:36:55] Troy: I think it's, I, I honestly think it's catastrophic for, for a lot of them. you know, even people that design their own products, I, you know, know several that design their own products that are manufactured, you know, in China or elsewhere, you know, are looking at huge price increases in, in a really, in a business that just has really n narrow margins.
+
+So it's, it's pretty, it's gonna be, it's gonna get pushed, you know, to, to the consumer or they go outta business. 
+
+[00:37:23] Brian: when ad pricing Rose went because of 
+
+different, like, 
+
+[00:37:28] Troy: That shut down away the DDTC companies, you know.
+
+[00:37:31] Brian: now, now, I mean, you know, they're already operating on thin margins and they, there's all reliant, almost all reliant on, Chinese supply chains. And, and that's because they weren't really product companies.
+
+They didn't make the products. I mean, I guess that is sort of at the heart of all of this is that even the companies that we think of as like making and selling products, they don't make the products. They, they just, they're branding. I mean, that's why I always think Authentic Brands Group is like the ultimate company of like late stage capitalism because.
+

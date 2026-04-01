@@ -1,0 +1,855 @@
+PvA S3E125
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian: Alex, you look good, man. You got a job interview or something.
+
+[00:00:03] Alex: No, 
+
+[00:00:05] Brian: I used to have this guy who, who was on my team, and he, he came in one time, he was wearing like suit pants and like a nice shirt and he got his haircut and I was like, you got a job interview? You know, that kind of like joke.
+
+[00:00:17] Alex: yeah, and he did.
+
+[00:00:19] Brian: He's like, yeah, man. And then like a week later he like gave his notice.
+
+I, I respected that.
+
+​
+
+
+[00:00:47] Brainstorming Surface Area
+---
+
+[00:00:47] Brian: Hey Alex, I was thinking about you yesterday. I was watching some nerdy YouTube thing on, the y one of the Y Combinator guys talking about with the notion founder. 
+
+[00:00:57] Troy: Just about, kind of new forms of interface stuff that we've talked about a lot in the past and how these AI things are fundamentally, you know, changing the, the discipline and, and, and how we think about hu human computer interaction. Just stuff I hadn't thought about where suddenly designers, and this has gotta be a good thing, like designers have to care a lot about audio and the relationship.
+
+Like not just how, say in the Sesame case howyou know, AI speaks to you, but also what the prompts are on the screen, how you know that a computer's thinking how audio, audio is represented visually.
+
+lots of new challenges it seems for, for the designer and, and also this, the kind of rise of. I guess you call it like the Figma esque Infinite canvas interface and how important that's becoming, like I think it will be coming as a kind of a brainstorming surface area inside of, I sort of think of it that that's what I would like to see inside of something like Chu bt, when I'm talking to you on the phone and you're like, Hey, wait a minute, look, can you open up something? It's always that.
+
+[00:02:08] Alex: I was very pro, getting rid of everything, like, product design documents and game design documents. You know, usually when you're making something, you write these long documents with all the features on it, and then, you know, six weeks later it's out of date and nobody manages it.
+
+And it's hard to add visual stuff to it. And, and, you know, it's like a Google doc and everybody's jumping in on it. but instead we use these kind of like infinite figma boards where, you can just drop videos, you can drop images, you can drop text into it, you can scribble something. Just make it as, and when you need to find something, you just do the same thing you do in real life, you zoom out.
+
+Right? And so, a lot of which is why I think like, we keep using these old analogs of doing things and we had a conversation about books last week about people not reading anymore. And, maybe I was thinking about why I was less freaked out by it than Brian was, or even you. I think it's just like the way people use things changes.
+
+It changes dramatically. And, and I think we're living through this, the years where, where decades of change are happening now in user behavior. It's gonna be interesting to see, you know,
+
+[00:03:16] Troy: You sound like Steve B. You sound like Steve Bannon. You're like Steve Bannon on ux.
+
+[00:03:20] Alex: Great, great. I'm gonna just flood the zone
+
+[00:03:24] Brian: That's a niche.
+
+[00:03:26] Alex: and then I'm gonna embezzle some money or something.
+
+[00:03:29] Brian: It's interesting that that conversation was with the notion founder. I've got this thing with notion, notion people, ' cause they're the, they're the product managers who have like, sort of like usurped a lot of power because process has been, it's, everything's been so process driven. I'm, I'm kind of remember, I kind of remember how, remember how you used to have to use like PCs and like how you organized your documents was like incredibly important because you just couldn't just search for things, you know?
+
+And that was like a real, like there was an entire architecture to it and then that just all sort of went away. and I wonder, you know what I mean? Trey, you talked about vibe coding. And, and now Google is actually coming out with AI mode too. but I'm interested in this sort of, I feel like we're in an in-between state with AI's development, whereas right now it's very process driven.
+
+Like I shared with you. something that the, this,friend was sharing about how they use deep research and all of the, it was very process driven, right? In order to get to a good result. And I feel like that's where we are with a lot of these AI tools.
+
+[00:04:34] Troy: Would you mind explaining? Explaining that, that that process at a high level? 'cause
+
+[00:04:39] Brian: Well, I told him I was gonna like keep it like, you know, I don't wanna violate this sort of thing. But basically he was explaining to me how he was using deep research in order to cut out about 50% of the work of creating, you know, research reports basically. And, you know, I've been trying to use a lot of these AI tools to get, get more efficient and what I realized is that they expose one of my greatest weaknesses, if not my greatest weakness, which is organization, which I think both of you know well.
+
+not that either of you seem seemingly great at it either, to be honest with you.
+
+[00:05:15] Troy: pretend pretends to be good at he
+
+[00:05:17] Brian: well, Alex can zoom out on his Figma boards and whatnot. I don't
+
+even have a Figma board. 
+
+[00:05:21] Alex: I think I'm generally organized because my mind is not very well organized and I forget everything, but I 
+
+[00:05:27] Brian: Yeah, but you're not like a notion person. You're not
+
+[00:05:29] Alex: No, I, I, I actually think Notion is a tool that's really, I mean it's interesting for certain things, but I think it's one of those tools that is actually built it with a bunch of old paradigms.
+
+I find it's one of those tools that everybody gets excited about using, but then, you know, a couple of months later it's, it's, it's totally out of date and, and, and things get, get lost. I think anything that requires maintenance, is just difficult, in a company. But, but you were saying, you were saying that it requires your, your friend is doing something that requires process.
+
+I mean, it's a tool. Like everything requires learning and how to use it and a process to get it to do what you want it to do in the right way. Right.
+
+[00:06:11] Brian: Well, yeah, but I think that that is usually heightened, like in the early days of it, in that you have to sort of start to like think as the tool will think. It's just like in the same way that to use internet search, you had to do all these sort of boo strings and whatnot. There were these little hacks that you were doing with search.
+
+[00:06:31] Troy: Just like when you were organizing your desktop, you had to have different folders and sub folders and everything, and then, then you could just search for it. Like, you know, and the disorganized people were like, ha ha. but, but Brian, I think, I think that maybe why it resonated with me is that the knee-jerk reaction in media circles early in. AI's development was, you know, gosh, we'll, we'll never use this. How dare you suggest you take, you know, humanity out of media and, you know, and then guys like Ben Fa went down for the count by using it to write, you know, affiliate articles or whatever with fake, you know, I don't know what, what he was actually doing, but, you know, the, and then there was this, I think it was a CNET incident or something where they used it to, to author some product reviews or something, and then you read kind of what you're doing, or we had that conversation on the phone and you're like, it actually really, really helps me in a process of, of, of mo, you know, creating content for the multiple kind of distribution points, both audio and text that, that, that you, kind of create in every week.
+
+And that ranges from, you know, organizing a transcript and turning that into the outline for an email to. To cleaning up your notes. Like it's, it's kind of cool, right? Like you, you would, and then I asked you how much time it would save you and you said probably 50%. Like that's a big deal.
+
+[00:07:53] Brian: Completely. Yeah, a hundred
+
+[00:07:55] Alex: Yeah, but I also, I also wonder, I, I think we're, we're in an, a little bit of a, a strange space with the tool because, first of all, like, I mean, even the example that. Troy shows are not things you're rooting for. And that's a lot of what came out at first. Like, I'm
+
+[00:08:10] Troy: Which example
+
+[00:08:11] Alex: well, the CNET slop and, you know, affiliate link articles and stuff like that.
+
+I mean, I think there's people in certain circles that get excited about that, but the consumers don't really benefit much. I also think that the tools are being sold. the way the tools are being sold is just you talk to them. They're not tools that everybody's trying to sell them as things that has zero friction and that will deliver results with zero effort.
+
+Right? It's, and, and if anything, when you try that, you hit a wall pretty quickly. But if you use it as a tool and you say, you know, this is the same thing as using Photoshop or a database or something like that, it just has different inputs and outputs. it's hugely powerful and it feels good using, you know what I mean?
+
+It
+
+
+[00:08:54] New Creation Space
+---
+
+[00:08:54] Troy: Yeah. Yeah. That's kind of the epiphany I had, Alex, when I saw this new creation space that bridged curiosity with research, with creation and, you know, and, and a kind of a back and forth process. And that was creating projects, in Chue and using, you know, it as a canvas to, to create inside of, and, and I think that's a, I mean for me it's, it's a big shift from, from writing in Word or whatever and, and it's playful. It's just really exciting. And then that, that's why I freaked out and sent you guys that, that video from, billow Wall Du, who is an X Map Google Map guy, who does I think, really remarkable videos on YouTube.
+
+And, he showed a bunch of different use cases that were sort of, how he was playing with, you know, co-generation LLMs and creativity to make things and those in, in included making a little 3D rendered city. You know, another one was throw away software to manage shot lists for a video. Another one was applying metadata over top of video that he had to sh to show things like, you know, how many targets he hit at the shooting range to it, giving him.
+
+Pretty professional level feedback on a presentation that he was doing when he uploaded the deck and a video of him rehearsing and it breaking it down slide by slide as to how he could, you know, be clearer, you know, use more gestures, you know, slow down, speed up, that kind of stuff. And, you know, I just think all, all of these things together, or another little use case I thought was cool where let's say you, you know, there's an academic paper that, or, or a longer paper that you wanna absorb and you don't have the time for it, or maybe you're not interested in the deep dive.
+
+You upload it to Google Notebook, notebook lamb, and you have it, you know, digested and make a 10 minute podcast that you take on the road with you.
+
+[00:10:58] Alex: we did that two weeks ago. I, I sent. my partner, this big kind of report on the state of video games and he didn't have time to read it, so we just rendered a little podcast that he could listen to on the ride home and it, you know, it gave him the key
+
+[00:11:12] Troy: pretty cool, man.
+
+[00:11:13] Alex: It's awesome.
+
+[00:11:14] Troy: You know, it's like the, the entree car carpathy thing, who was the co-founder of, of OpenAI and his tweet yesterday was, you know, the hottest new programming language is English. It's a pretty, you know, that's a
+
+[00:11:27] Alex: Hey guys, I gotta tell you, I gotta tell you, and I, and I think once again, I think if you, if you take a step back and you start thinking about, you know, the movie Her, and you're just gonna tell it to all the examples that these companies give about booking a trip for you or finding a meal for you, for you.
+
+Wife's, you know, 40th birthday or something are insane that they're just the wrong examples to give. But, this, just this week, I, I, I was using a very specific tool for, for that to, to create art for video games. And it wasn't exporting things properly and a very, very tedious process. And it had a, you know, it had a, it has a scripting language called Lua.
+
+And I went into Claude 3.7 and I said, Hey, I need a script that does this and exports all these folders and it names them this way. and it built it and it documented the code and I put it into the software and it, and it did it. And it took me a minute and a half to do something that would've taken me five hours.
+
+Like, and, and, and so you apply that across the entire, like technology ecosystem. You apply that to people who didn't use to be able to program before. It doesn't mean that they're going to, you know, build Google Maps using, you know, you're just talking into a microphone. But all these little things that you can now do, it's, it's profound, you know, it's, it's huge once you start using it as a tool and not try to break it or write the Seinfeld episode.
+
+[00:12:45] Brian: I think that is what, where we are, and that's the sort of in-between, because you have, it's like CliffNotes, right? I mean, the bad students use CliffNotes as a replacement for actually reading the, the, the, the work. And the good students use it as a study guide to
+
+[00:13:01] Alex: or, or, Chegg or whatever they're called. 
+
+[00:13:03] Brian: or check whatever, you know.
+
+But the good students use it as, as a, as a tool to enhance the learning. And I think that, I mean, Troy, had an interesting conversation. You had shared. 
+
+
+[00:13:12] Oral Exams
+---
+
+[00:13:12] Troy: I have a, a, a professor, a philosophy professor, friend who's been a, a, a, a dear friend of mine for a long, long time. And, you know, in some ways he's kind of glad that, you know, he's late in his career because, you know, the, the practice of teaching and the institution is, is gonna go through just like.
+
+You know, change that, that, that I, I don't, I don't know if he wants to be there to, to kind of navigate it, but,
+
+[00:13:38] Brian: He's into. It's too late now.
+
+[00:13:40] Troy: he makes points like it's impossible to teach kids how to, to write right now. It's really, really hard to, ' cause they rely so heavily on the tools. He makes points like,you know, good students use these kinds of tools to be more curious and get smarter and, you know, a big part of the curve of people that are just trying to get through, use it to, to fake their way through.
+
+He said that, you know, there's classic things that you do in teaching philosophy. Like ask someone to write a paper on what were hobbes's arguments and what are the counterpoints and how might he defend them. Right. And, and, and he said that, you know, like someone who really understands the texts and the ideas can kind of do the how might, how might he have defended them thing?
+
+Well, and it would require a lot of thought. He said, but that's a perfect thing for AI to do. He's like, now he's like, before 10% of the people would get something, you know, smart and coherent on, you know, that part of the assignment. Now everybody gets it right
+
+
+
+[00:14:40] Alex: they're gonna have to completely reconsider how to evaluate people. But,
+
+[00:14:44] Troy: well, you have to move to oral exams, don't you?
+
+[00:14:46] Alex: and, and, and on the flip side of that, like Ima imagine what it's like to be a student right now. A, you keep, keep being told like all the jobs are going to disappear and or change, college is more expensive than ever before, and the odds of you getting a guaranteed job out of college, whichever discipline you take, right, are lower than they were, you know, five years ago and are probably gonna keep going down.
+
+So like. At the end of the day, like a lot of these listening to an interview yesterday,and a lot of these, gen Zers are like learning how to maximize, like right from the beginning they're just hacking the system. You know, like, if I'm gonna get through college, I'm gonna just, optimize this, I'm gonna do, you know, three kind of hustle jobs on the side.
+
+And it's, it's very tumultuous out there, like, I understand. Yeah. I'm not, I'm not sitting down and reading a book for six hours, man, I got no time. I gotta fucking find the next meme coin that's gonna pop. I, I,
+
+you know, I, 
+
+I'm kidding. But it's a little like, that. 
+
+[00:15:45] Brian: I do like your point, Troy, about oral exams coming back. I didn't think we had to discuss that. I actually, I, I went to school for a couple years in Europe and they, I don't know if you had this, Alex, but they, they had oral exams versus written exams. They didn't take attendance. There was no tests.
+
+It was just all like an oral exam at the end of the, 
+
+[00:16:02] Troy: thought you quit school,
+
+[00:16:03] Brian: the end of the semester.
+
+[00:16:04] Alex: Well, I mean, before I quit school I always did better at oral exam and anything freeform. But, yeah, I didn't finish high school like that. It was funny. A little, a little
+
+[00:16:14] Troy: that's one of my favorite, one of my favorite little Alex
+
+Factos. love that about you. 
+
+[00:16:17] Alex: a little aside, why while, you know, in Europe, 
+
+[00:16:20] Brian: Did you take a teal fellowship?
+
+[00:16:22] Alex: yeah, no,no, I didn't know join the, the Nazi Youth Party.
+
+I, uh, In Europe, it would be like, I would hide the fact that I didn't finish high school, let alone go to college. Right. but I remember coming to America and I think that might have been when I came to say Troy, like, I think on the first day somebody, somebody had heard that, Hey, this guy didn't even finish high school.
+
+And everybody was like, that's amazing. You know, it's like, alright, these people are fucking crazy. But I like it
+
+[00:16:50] Troy: Well, it didn't help that half of them went to Yale, but
+
+Yeah, Yeah. true.
+
+[00:16:54] Brian: But I think the point like kind of is broader than that. Like I don't, did you see Gavin Newsom's new, podcast, which is now like, you know, it's completely normal that the, the, it's like, oh, the, the governor of California has a podcast. And I was like, okay, yeah, sure. but I think to me, like what he's doing with this podcast, I think he's the wrong character to be doing it.
+
+But politicians are gonna have to go into basically the oral exam phase, and that was the sort of knock against Kamala, et cetera. And I think it's gonna be broader than that. I think it's with business executives, all kinds of people in that you have to do the oral exam. You have to be able to think on your feet.
+
+And that's a different skillset than being really good at being prepared.
+
+[00:17:37] Troy: like the Bannon and Shapiro principle. They're just like spar, verbal sparring guys. They're terrifying.
+
+[00:17:44] Brian: I wouldn't want to be in like a debate with one of those guys. No. I'd be chewed up and spit out with the first like five minutes. so yeah, obviously they, they want, I mean, Gavin Newsom had on Charlie Kirk, who I know,
+
+I know Alex And and, he kept fucking hate him, but he kept, he kept, like Gavin Newsom kept saying how his teenage son is into Charlie Kirk. Like, that is the, yeah. Like, you know, like, It was, it was an interesting, it was an interesting way to connect with him, considering, you know, and I thought it ended up pretty softball.
+
+[00:18:19] Alex: And I, I think that's funny. Like when Gavin Newsom is actually in the hot seat, he's a really good debater. Like when he was on Fox and things like that, when he becomes the host, he kind of starts taking on the,I mean, he still, I would, you know, I'm gonna say he still acts like a Democrat. He, he takes on the kind of the rules of being a host and not being too much of a jerk and, and listening and not interrupting and being the one that asks questions.
+
+while that's not how these guys do it, you know, like I think if, if you go, if, if you listen to Steve Bannon show whatever, they'll full on, make sure that even as the host, they get their points across, not the guest's point. And I think, I think that's why it's maybe,
+
+[00:18:57] Troy: The therefore they're way less unen. They're way less encumbered, for sure.
+
+[00:19:01] Alex: yeah.
+
+Yeah. I mean, he's incumbent because he is a governor and. 
+
+[00:19:04] Brian: Like it's a different skillset at the end of
+
+[00:19:05] Alex: I mean, I think he's got the skill. I think it's just the rules of the game. 
+
+[00:19:09] Troy: yeah, I dunno, I, I, I kind of thought it was a good idea. I agree with Brian on this. I, I, I think that this idea that as Democrats, you take the high ground, you don't engage, you insist on telling, you know, the truth, and, you worry that, you know, full engagement means platforming someone with toxic ideas.
+
+I, I don't, I, it just doesn't strike me that you win that way. Get into it, you know, figure out what your weapons are. And, and just get into the conversation. Like 
+
+that's the modern sort of digital Socratic way. Get into it.
+
+[00:19:43] Alex: but the thing is he's not really able to get into it for whatever reason. I mean, this is not like,
+
+[00:19:48] Troy: He did get into it though, Alex, did you listen to it?
+
+[00:19:50] Alex: the, I didn't listen to the latest Bannon one. I listened to the Charlie Kirk one, and I felt that that was like frustrating because he was just, 
+
+[00:19:57] Troy: was too polite. Did you think or
+
+[00:19:59] Alex: I mean, he was full on like, yeah, I don't think he was, he was fighting back.
+
+You know, if you, if you're listening to somebody on, on the extreme end of this, if you listen to somebody like Destiny, I don't know if the audience knows who Destiny is. He's, he's all sorts of, you know, a character. But this guy, this guy is full on, like, this guy kind of, 
+
+you know, 
+
+[00:20:17] Brian: he's rabid. He's feral.
+
+[00:20:18] Alex: exactly. So like, you're gonna get into a bare knuckle fight, you know, go bare knuckles.
+
+And the thing is like, I thought Charlie Kirk got Gavin Newsom to say things that he wanted, he, he got to, you know, say all sorts of, all sorts of things without being really, truly refuted. Like Gavin Newsom was being very polite. I didn't hear the, the Bannon one. That's a lot.
+
+That's a lot. 
+
+[00:20:38] Troy: it's, it's, Brian makes this point and, and, There was a fellow who was kind enough to respond to the last week's, PVA weekend newsletter. And talked about, how we are living in this kind of post Gutenberg world where, you know, the logic and formality and structure of, you know, of, of a society driven by written media, is evaporating into a new world of, of that that looks more like it did, you know, pre the, you know, before the printing press, where it is a kind of oral culture.
+
+And it is about, you know, who can, who can move groups of people most powerfully with their words. And in, in that, you know, truth is fungible and, and, and, and kind of personality is an important weapon. And, you know, audacity is important and that's what kind of Trump,does so well at. And anyway, the guy, the guy wrote it all up in our, in, in the comments section of the email.
+
+And did you read that Brian?
+
+[00:21:43] Brian: Yeah. No, I thought I was right on. but I think that it, it all goes back to that idea that like the sort of skillset needs to shift. Like I always think, I've always run into. Executives that I need to talk to that I know, like on a personal level to be thoughtful and interesting and able to like spar with ideas and back and forth.
+
+And then if we go on stage at an event or they show up for some podcast, interview because they wanna have an interview, not, not, not a conversation, and they got a PR team in tow. Okay. they, they're different. Right. And that was always the rules of the road is that you needed to be media trained.
+
+And media training to me was, it seems to me you've been media trained, right? Troy? Maybe unsuccessfully, but like, I've never been, I Who was the media trainer for you? What was it?
+
+[00:22:33] Alex: I've, I've been media trained many times. like being potty trained.
+
+[00:22:37] Troy: And I still soil myself. Yeah. you know, but you, you know, you, I think you can smell it now more than ever because you can see when people are pulling the discussion back to talking points you can de see when they're not answering the question and they're, they're, they're saying, look over
+
+[00:22:54] Brian: You see the wires
+
+[00:22:55] Troy: Yeah. You see, you, see, 
+
+[00:22:56] Alex: I, I, I, I, I think we always saw the wire. I, I think it's one of those things that, that we do as people. Like I think we always saw the wires and we always, we never felt entertained by it. Like if you ever saw like a corporate speak. know, like a, a meeting and it just washed over you.
+
+Like, or an interview like I was re you know, with markets being where they are just turned on CNBC and there's so many, they bring some of these, of these CEOs on that just say, fucking nothing. And you're like, your eyes glaze over. And, and people need to remember like, everything's entertaining. And if you're not engaging, and if you're not charismatic, great, that's fine.
+
+But then you, you shouldn't be on tv. that's it, right? Like, time is finite. We want to, we're ready to consume seven hour podcasts. If, if the, if the people are saying interesting things that feel true, but like PR press releases or spoken, you know, spoken or written are just like never something people read and they have never read them.
+
+Nobody has ever cared about this shit. We haven't changed. It's just people started doing differently and people go like. Wait, you can do this. Like, there's this great joke in, in the, in the show party down where somebody like this, this guy who's a caterer, goes to this rich person's house and he goes like, let's go.
+
+We, I got a karaoke in the back room. He goes like, karaoke in your own house. Is that legal? Is that possible? You know, it's just like, oh yeah, you can do this, you can do this, and we don't have to endure it. And I think that's what we all opened our eyes to,
+
+[00:24:22] Brian: Well, that's why I think that the whole Silicon Valley go direct thing, which was kind of corny when it first came out, but I think it's, it's, it's accurate, right? And I think a lot of things that happen in tech wash down through the rest of the economy and basically go direct is I. Don't outsource your communications to a PR staff.
+
+If you're running a company you're in charge of of that. And, and to me, the, the the, this is kind of like how a lot of the CEO class there wants to take back from power from HR that they believe that they gave away during the DEI era. I think the go direct is to take back power from being overly scripted, from being overly, managed with talking points.
+
+And it used, that used to be a competitive advantage. And I think now it's a liability, right? Like if you can't think on your, on your feet and you can't go into, look, it's corny. All the stuff that people like Charlie Kirk say about like, he's like, long form ca podcasting is like going into the arena and it's a test of your manhood and 
+
+stuff like that.
+
+That's that's so 
+
+[00:25:30] Alex: guys, these 
+
+[00:25:31] Brian: guys gotta stop jerking off to the 300 movie. Like, it's fine. I, But that said, I think underneath that there's some there. There is. There I guess 
+
+[00:25:38] Troy: I'll change my plans tonight.
+
+[00:25:41] Alex: That it's, it's easy, it's easy to say that, but it's also like, and, and, and it's fresh to me because we just recorded some videos and, and we, you know, we had a, we have a few cuts and in the end the stuff that's coming out is as, is as stupid and hopefully as real as we are. But it took us a while to get there.
+
+It's, it's vulnerable to do this. It's vulnerable to be yourself. It's easy to hide behind and be a speak, you know what I mean? Mm-hmm. Like, it's, it's, it's the, the same way, like it's, it's,
+
+[00:26:09] Brian: Yeah. And it's easy to let chat GPT do your work for you rather than use it as a tool so you can do better work. That's what I'm saying.
+
+Maybe we have a I, yeah, I know. I, but I think, I think that a lot of these CEOs and these executives, they, they're not performers. They might not be extroverts and, and the way things were done was, I've actually, everybody was kind of happy with it. but like, it's, it's gonna be interesting, right? Like, we talk about Apple a lot.
+
+[00:26:32] Alex: Their stuff is so polished, they never say a word out of line. But I think that's starting to show
+
+up as brittle. 
+
+[00:26:37] Troy: Well, that's where I thought 
+
+we would go next. 
+
+Right? The, the world
+
+sits somewhere between, us.
+
+
+[00:26:42] Apple Shipped the Turd Emoji
+---
+
+[00:26:42] Troy: yeah, between, you know, the Twitter responding to any PR inquiry with a poop emoji to, you know, to Apple on the other side, who's, you know, the, the polish of it feels gross. Actually, to me, it doesn't feel right.
+
+[00:26:56] Alex: Well, it feels, especially now when they literally, I mean for 
+
+[00:27:00] Brian: shipped a turd emoji with Apple intelligence. That,
+
+that too. 
+
+[00:27:04] Troy: Let, I wanted to hear Alex talk about this, this turd that they shipped.
+
+[00:27:08] Alex: this third that they shipped, I'm not sure that I'm qualified to talk about it. I 
+
+[00:27:12] Troy: Siri. 
+
+[00:27:13] Brian: It's a podcast.
+
+[00:27:14] Troy: Yeah. No one ever said you had to be qualified. You talk about media all the time.
+
+[00:27:17] Alex: no, I mean, I think, I think the, The AI stuff has been like right from the beginning, right? I think the ads were pretty tone deaf. It was showing horrible people, doing stuff that, you know, that di is not gonna be great at doing.
+
+The tools are probably one of the first time I ever turned off a feature, on iOS. Like I said, I like, I'm an early adopter and, and the whole thing was that they, they promised a better Siri and I, and hopefully we can cut this clip in a little bit of this clip in from curb your enthusiasm of the guy yelling at 
+
+[00:27:47] Troy: Hilarious. Hilarious. 
+
+[00:27:49] Alex: Let's just put 10 seconds 
+
+[00:27:50] Larry: Siri Directions to Wolf's Glen Directions to Great Wolf Lodge. No Siri Wolf's Glen Restaurant, one option. I see Woods Garden Supply on Benedict Canyon. No, no, no. You're not listening. I said Wolf's Glen Restaurant.
+
+In Westwood, a wolf's den is a habitat that provides wolves with stupid fucking idiot. 
+
+[00:28:13] Alex: because that is all of us. And it's, and Siri actually, feels like it's gotten worse and, and they delayed it and it's been delayed indefinitely. And, and the trouble with Apple is that their polished way of communicating is great. because when it lands, right, it's just, yes, we're late, but here we are.
+
+Here's what we're doing, we're integrating it into your life and it's gonna work really well. but this time not only did they. Not have the stuff ready. They started advertising stuff that wasn't ready. and the advertising now feels completely misleading. And if you look at what Apple Intelligence is on the iPhone, it's, it's, it's, it's nothing.
+
+And didn't have to do this. They didn't have to do any of this. They could have just sold the phone. They could have just made us wait another two years. Everybody would've been fine. And they didn't have to 
+
+[00:28:59] Troy: So it was avoidable. Well, you know, it hit me yesterday, Alex, because I was, I had a computer somewhere Oh no. In, in, on Shelter Island that I never used, and 
+
+I turned it 
+
+[00:29:11] Alex: Humble brag.
+
+[00:29:12] Troy: and I turned it on. What? Having an extra computer. That's a 
+
+[00:29:15] Alex: Yeah. But could I have a computer? I never 
+
+[00:29:17] Brian: Yeah, 
+
+[00:29:18] Alex: Unsheltered Island.
+
+[00:29:19] Troy: The, 
+
+[00:29:20] Brian: all my computers. I actually only own one
+
+computer, let's move on. Okay. So
+
+I own one jacket too. I'm like Bernie. Bernie Sanders.
+
+[00:29:26] Troy: So I, I, I turned on, on, it was an iMac actually. It turned it on and it updated and it, the first thing it did after the update is it put me into, Apple's New, I don't even know what the software's called, but it's a new little application connected to the OS that allows you to generate images with ai.
+
+[00:29:44] Alex: Image, playground.
+
+[00:29:45] Troy: And it was so stupid and so slow, and so nanny, it was like nanny wear. Like it was just like, oh, you can make a goat that looks like an octopus. Ooh, that's cute. And, you know, it, it, it just felt like, I mean, when you compare that to the feelings that we were talking about of being completely emancipated by connecting LLMs to coding, to writing to,
+
+[00:30:09] Alex: are you having a conversation? You had a conversation with a computer last week, right? That we put at the end of the podcast.
+
+[00:30:14] Troy: Oh yeah, yeah. Sesame. Yeah. That was incredible. And you compare that as this with this little emoji creator or whatever that thing is. I, I just think what it, it said to me that, that. That, that, that Apple's got a lot of work to do. And I, I'd be concerned about the company's performance, to be honest. And one of the thing, it just struck me thinking about it, that sort of AI is this probabilistic thing, right?
+
+So it's, it's kind of naturally wrong. A lot of the times it's very human and Apple is a very kind of deterministic company where they like, you know, a real kind of tightness in how they launch products and features and all of these. And, and Apple is, if nothing else, I think you would agree, is an interface company.
+
+And at the heart of the AI revolution is, you know, completely new thinking per the beginning of this podcast and how we think about interface. This is a real threat, right? And, and, and I think that Google is. It's just gonna be fundamentally better at it, not just because, you know, they have deep, deep bench in ai.
+
+They have real, you know, an, an ability to manage the search index and connect that to AI in all kinds of great ways because they can launch Android across multiple devices and make AI the heart of it. and, and, and need to invest in being super good at that. you know, a, a Apple because of the path they've chosen and because who they are as a company is going to have to let others come closer to the metal of their software and their hardware to create product like OpenAI, right?
+
+To create products that enhance the marketability and desirability of that device. And they don't wanna do that. 
+
+So you're sort of like half, you're half pregnant, right? Like you're not an AI company or you're trying, maybe you're trying to be, but like there's so much innovation happening around the periphery that you have to let that in or you have to be great at it.
+
+And they're, they're not good at either of those things. And I find that really, I would, I'd find that really concerning to be honest.
+
+[00:32:14] Alex: Do you think that, let me ask you a question. I I, I get a sense that people in those companies are actually, if they, if they had a choice, would prefer if AI never released, because I think they're all acting, everybody's kind of acting desperately. Even open AI is constantly talking about what's coming next, completely distracting us from what you can do today.
+
+Microsoft's doing its thing. Google's like not sure how, how, you know, they're starting to integrate AI into their search. But, you know, some research is showing that, hey, surprise, surprise, 98% less people click on links when an answer is given to you. You know, 
+
+[00:32:50] Brian: Uh, 91% according to 
+
+Tobit, the Tobi does 
+
+[00:32:53] Alex: All right. Well, let's say, let's, let's cut it by half.
+
+Let's, let's be generous and cut it by half. That's still, that's still less than, than today. apple is acting desperate. A Apple made a lot of desperate decisions, which they
+
+[00:33:05] Troy: Well, you're starting to hear calls for Tim Cook's head and people calling him Grandpa and such. Like, you know,
+
+[00:33:10] Alex: I think there is a generational challenge there because, because like when you see the way they've treated gaming and the way they are, like not trusting developers to try to solve
+
+[00:33:21] Troy: I know Vision Pro was a huge fail series, a huge fail. These are big, big, ch,
+
+[00:33:26] Alex: I, I, agree. I agree. And I'm agreeing with you. I'm agreeing with you.
+
+[00:33:29] Brian: John Gruber brought up John Scully. That's never a good sign.
+
+[00:33:34] Alex: No man, I think Tim Cook was the right person for the right time, but it, it, it's, it's moving so fast. It requires someone that's not as worried about tarnishing their legacy. You know what I mean? I think if, if you're on your, kind of your final five years and you have to make such big risky changes that it might kind of like make you look bad, I think, you know, that's, that's what they are.
+
+Or I should be, I'm actually having dinner with some Apple people. I should be more
+
+positive 
+
+now. I'm speaking the truth, man. This is the new world. We're all just like jamming.
+
+[00:34:05] Troy: Are they are, are they fruits,
+
+
+[00:34:08] Google's AI Mode
+---
+
+[00:34:08] Brian: On that note, Troy, I want to get your take on, on Google's AI mode.it's coming, as Alex referenced, obviously, you know, AI in search is a looming disaster for a lot of publishers. Like, what do you, what do you think the impact of this approach that they're taking now with allowing people to switch on AI mode 
+
+[00:34:31] Troy: Hmm. You know, let's go back to a thing that Professor said that surprised me a little bit. He writes, I, in fact, I designed his last book cover. He writes these, you know, just academic books that have an audience in the hundreds or maybe low thousands, political philosophy and stuff like that.
+
+And he said, increasingly, we need to write our books for ais, not for people. Because the, most of the people that are gonna get information about the arguments and thoughts we create in our books are gonna get them abstracted through an AI layer. And I just bring that up. 'cause I think that's a,
+
+that's a profound, enough, enough for it to matter,
+
+it's a profound notion that your audience is, is automation or a robot or, you know, some, some kind of mechanical brain.
+
+[00:35:21] Alex: But does that mean you have to change the way you write Troy?
+
+[00:35:24] Troy: I mean, I think you have to always be conscious of who the audience is and how, you know, what the economics of that are for sure. and that I think, takes us back to the media argument. I, I'm pretty convinced that, you know, we've, we've had a lot of discussions, Brian, about how content needs to change when the friction is taken out of the places where people used to make money.
+
+And the connection between search and content largely, you know, evergreen content is, is a good example of that. I think, you know, you see stuff become more human, more personal, more point of view, you know, more substack, all that. So more niche, more expert driven, et cetera. I'm, I'm pretty convinced that. Someone like chat, GBT. It's funny, in, in, in kind of consumer networked or consumer technologies like, like chat BT, when you get an early lead and you become the Kleenex of the category, you can usually maintain it. Now they're trying to maintain it on two fronts, right? They're trying to evolve. There was announcements this week around how their APIs are gonna become more sophisticated so that, you know, people that build things on top of OpenAI can do more and more things with their core technology.
+
+But really I think the power is in them being the default for consumers. And in order to do that, I think the winner has to have a free offering. Or at least a subsidized offering where advertisers stiffer the cost to the consumer of the product. and so, you know, they will maintain and be, and kind of realize their market value aspirations if they can create a product that everybody uses.
+
+And for that they, by necessity have to have a commercial layer connected to it. 
+
+And so, I don't know, you know, I could speculate where the ad product kind of manifests inside of new interfaces. How do you turn, I mean, it's, there's an insane amount of economic opportunity inside of a response. But how do you do that?
+
+I think the next challenge in advertising is when something is designed to give you the best answer, how do you weave advertising into that when it's not the best answer?
+
+[00:37:31] Brian: It's an answer. There's no truth there. You know, it's just the advertiser's truth and then the AI's truth,
+
+it's fine. is going to be weird because ai, 
+
+are back.
+
+[00:37:41] Alex: ai uniquely, if the inference cost, and I'm, you know, this is very hypothetical, but if the inference cost can be brought down low enough, then there is value in just ingesting all that data of all those queries and the conversations with people. So there is a world where potentially one of these player manages to generate value without advertising.
+
+I think advertising is going to be really hard, and if it works, it's going to feel really insidious. because it's going to just mean that like you're biasing answers towards advertisers, which, you know. Sure. I think it's, it's, you know, I think there's a big opportunity for commerce. Like it's such a great tool to find a thing that does a specific
+
+[00:38:23] Troy: Well, maybe Brian makes the, a good point, Alex. 'cause that's kind of what I was just saying, but maybe there is no best and maybe you, you know, in a follow up question, you suggest that someone looks at this electric toothbrush, not that other one,
+
+[00:38:38] Brian: Catchy. BT gives me multiple answers all the time and asks me which one's better. They don't know. They say which one they, they put 'em
+
+[00:38:45] Troy: But even humans don't really know. 'cause it's preference. Right? It's trade offs in
+
+[00:38:49] Alex: But, but that's what I'm saying. Like, I think, I think it's, I don't know. Maybe there's a whole new commerce layer to that, and maybe it just goes back to affiliate links. But, I think chat GPT is actually, is actually really good at finding what is best for me.
+
+And I think that they could, that there could be like a commercial transaction there. Let me give you a very specific
+
+[00:39:09] Troy: You know what we do in those cases, Alex Interstitials.
+
+[00:39:12] Alex: Yeah. But I think it's a, it's a, it's not, it's not traditional, it's not advertising, but, but, I was looking for. a mixer, right? To record music on right now, specifically, I could look for Best mixer and I would get the answers that the internet comes up with.
+
+but for me, I needed a mixer where all the plugs were at the back, not at the top because I need to fit it in a tight space that nobody had ever written that article. But charge GPT managed to find me the best mixer with the plugs at the back that will fit in my space,
+
+right? al? What are you making with that mixer
+
+I'm making some, I'm making music, I'm a musician.
+
+[00:39:49] Brian: But yeah, I mean, you're pretty far down the funnel at that point, like when You, you are, you are. But there's no reason why. But, but I think this is what these tools allow us to do. Like the funnel
+
+[00:39:59] Alex: gets, the funnel gets compressed. 
+
+[00:40:01] Brian: is, the bottom of the funnel is gonna probably collapse in, in many ways with the actual commercial transaction. That makes complete sense. But people are gonna still need, to understand the world around them and what all of these amazing products that capitalism creates, are all about.
+
+They, they're, they're gonna need that. I'm, I'm long on advertising.
+
+[00:40:22] Alex: It's, it's an odd ag,
+
+[00:40:23] Troy: right? Imagine back to Joe's point, if he's writing for the ai, now you're the guy that makes the mixer and you have a guy or a person that's really good at analytics and they figure out that really what people want is having plugs in the back so they can put it in compressed spaces.
+
+Then they start creating information that gets fed into the ai, which is the modern, you know, the, the AI equivalent of, of search engine optimization to make sure that their, you know, product features and the virtues of back plugs are fed into the system.
+
+And there's a, 
+
+yeah, that, that, that, that, that kind of commercial optimization flow is gonna happen immediately.
+
+[00:41:05] Alex: But, but this is, but the thing is like, I, I think I, I do feel like that these AI companies, because there's, because you have to think about it, that there's so much competition. Open AI is not, you know, it's not sitting pretty. Right. Like, deep seek came out, you know, and just shot up to the, to the, to the number one spot for a second.
+
+He, the 
+
+the 
+
+[00:41:24] Troy: But but it's interest. That's an interesting statement. 'cause deep seek gum and deep seek go 
+
+[00:41:30] Alex: Right? Right. 
+
+That's, that's absolutely, that's fine. But, but if, you know, if you start injecting advertising or if there's a sense that the content that I'm getting from this machine that I'm talking to, this is a different relationship. When I'm looking at Google, I can. You know, even though it is kind of, the way they do it is a little, is a little cheeky.
+
+I can, I can parse out the fact that there's advertising and that it is not advertising and I'm doing that research. When you're having a conversation, you're building a relationship with this chat interface. Right. It's going to be really hard to, I. As to sell me the idea that some of this stuff is going to be, paid advertising.
+
+Right? That, and, and, and in a large competitive space like that, it opens up, an opportunity for somebody who's running like a cheaper inference or whatever to say like, Hey, our answers are not paid for bad advertisers. Our in our answers are true and real. Like this is a competition that Google never had to Google, never had a competitor that came out and says, look, we're nearly as good as Google, but, you know, our results are ranked, you know, you know, they're not pay to play.
+
+and it's still free because the, because the data could be worth it. Like, I, that's gonna be really interesting to watch. I don't, I don't have an answer, but like, I don't, I don't expect ads right at the answer layer to to be like an easy solver, one that can even be solved. Just that 
+
+[00:42:51] Brian: Okay. 
+
+[00:42:51] Alex: supports.
+
+[00:42:52] Brian: Okay. As they say, I wanna p put a pin on that one because I think this, I think this one you're, you're right on a lot, on like nine outta 10, Alex. But this
+
+[00:43:01] Alex: Hey, man, I said that like, 
+
+[00:43:02] Brian: vision pro where
+
+[00:43:04] Alex: you know, I was, I was laughed out of the room when I said like, you know, the 
+
+AI spaceship is over the White House. Take the 9 out of 10 
+
+[00:43:11] Brian: Elon was
+
+crazy take the 9 out of 10.
+
+[00:43:14] Troy: Oh 
+
+shit. I knew that was gonna come up. Hey, by the way, Alex used to be the best designer of my ad products. Alex and I, you know, inter, you know, created some of the most dastardly ad products on
+
+Oh yeah the worst.
+
+the worst the worst. Uh, 
+
+[00:43:27] Brian: I mean, anyone out there has been ever been annoyed by a YouTube overlay ad. Thank these two.
+
+[00:43:33] Alex: You're yeah. We made it, we, we made it and got no credit for it. Also, the expanding banners, oh, the lower third. What do we used to call that? That thing that existed at the bottom of the browser that I despise
+
+[00:43:44] Troy: now. Oh, that one. That never goes away. Yeah, the tray.
+
+[00:43:48] Brian: I dunno. 
+
+
+[00:43:48] Frachise Value
+---
+
+[00:43:48] Brian: I wanna talk about franchise value 'cause I, I should add to everyone, I should have done this at the top. I keep forgetting. you should get, you should sign up if you don't already get the PVA weekend editions peopleversusalgorithms.com. Troy's been very diligent. He's leading. Alex and I have been less diligent.
+
+[00:44:04] Troy: Annoyingly. So I would say, yeah.
+
+[00:44:06] Brian: I got a, I write a lot. 
+
+[00:44:07] Troy: I, I get 
+
+it, but you know what, it's not time. 'cause I sent it out early this week. I got nothing. Crickets. Alex will send me a, a text tomorrow. It'll say where, what, where was the link for that again? I sent it like two days ago. He's not gone in there. Crickets. And you know,
+
+[00:44:22] Alex: Uh, 
+
+people have to understand what our WhatsApp thread looks like. If you don't look at it for two hours,
+
+[00:44:27] Brian: Yeah. It's a bit of, it's a
+
+bit of a mess. 
+
+[00:44:29] Alex: it's,
+
+[00:44:29] Brian: but AI is gonna solve for that anyway. You have a good piece in here about franchise value. I didn't see this. Where did, AB an honors banker share this media valuation spreadsheet? I didn't get that. I'd like to see
+
+[00:44:41] Troy: oh, AB and I have a, a
+
+[00:44:44] Brian: It's a back channel.
+
+[00:44:46] Troy: Yeah, yeah, definitely. Okay, well I want to get into that one too. So anyway, let's talk about franchise value because I, I start to wonder whether franchise value even exists in media anymore. Maybe you should just build these media businesses, you know, just arbitrage it and, you know, have one foot out the back door because, you know, your operations could get shut down like
+
+Well, it just struck me as I, it's, it's a, it's a buffet idea and it, and it, he used to describe local newspapers as having franchise value because, you know, if you were, you know, a media consumer in the, in those years, you remember that, that someone that owned in my town, it was called The Leader Post. And, you know, there was, you know, you know, newspaper delivery kids and, you know, they would come and collect at your house.
+
+And it was a absolutely essential part of living in that community. And it, it had franchise value because it had market power, it had pricing power, it had a moat. it was essential. and I think that other types of media have different types of franchise value. Like something that, you know, cheers had tremendous franchise value 'cause of its IP and longevity and, and distinctness,
+
+there were, you know, there were obviously lots of programs on network television that had tremendous franchise value. Vogue Magazine had tremendous franchise value, and I, and I always, you know, everybody always envied Vogue because it had, you know, whether it was realized because of their cost structure or not.
+
+They, it had just like way more profit potential and way more pricing power than the second, third, fourth, fifth competitors in the fashion space. And, you know, Vogue had franchise value and Marie Claire was a survivor. Right. And there was a big, big difference be between the two of 'em. And so, you know, me, the, the rarefied world of, of franchise value is when your, your kind of media brand or media business, you know, gets left off.
+
+And it could happen for reasons that are local monopolies could happen for reasons of just, you know, perceived quality or real quality or the quality of the talent, or it could happen for reasons I think of operational complexity and mastery of that, right? And so he was showing me. The, the banker, anonymous banker was showing me kind of valuations in the market.
+
+And, and you see up at the, in the high valuation, like 15 x plus, like enterprise valued ebitda. you see at the high levels, that, that, you know. There's a couple of media companies in there, like New York Times, which I would argue is tremendous franchise value, but like most of the others are kind of platform media hybrids, right?
+
+Whether that's kind of Netflix or Amazon or, you know, I mean as you move down you see Disney and then as you move down further and, and you start to see kind of old media that doesn't occupy the middle anymore because the far right to me was always someone that was like an ad network, pure monetization, arbitrage, right?
+
+People that just make money in the kind of byzantine world of digital ecosystems. And so they trade around like four or 5, 6, 7 x whereas franchise things can like a, like a Google or Amazon or whatever that have tremendous modes, trade, you know, 20 and up, right?
+
+[00:47:59] Brian: So you're saying arbitrage, the arbitrage plays are, have the lowest, like,
+
+and it's on they, they did, they did accept. You're now seeing the, the, the middle, what I call the survivor media companies like would've been maybe, you know, local television like a Sinclair or, you know, scaled newspaper businesses like a Gnet. They're getting pushed down, you know, into kind of arbitrage territory in many cases worth less as a multiple than arbitrage.
+
+[00:48:26] Troy: And the poster child there is my friend,Vivex company, Ziff, that's trading for like four times forward enterprise value ebitda, uh, multiples, which is really kind of crazy because. Company has 30 to 35% margins. But you know, the market is hammering their stock price either because they think they have, I guess, tremendous platform risk because of the changing nature of Google.
+
+Or, you know, they, they don't understand. The comp is a really complex business. There's data businesses, there's c cnet, there's, so there's, you know, PC Mag, there's, you know, coupon businesses. So it's a, it's a complex story to understand, but it just occurred to me that in the, the world today called it media, media tech platform, there's, there's a continuum.
+
+And on one end you have things that have kind of franchise value slash market power, and on the other end you have the kind of arbitrages and, and that was really the, the, the genesis of, of, of that, little blurb. I'll throw it in the email this week.
+
+[00:49:26] Brian: so just to put like a number on that, Z Davis is in the last year, their, market cap is down 41%. that's kind of rough. I assume that a lot of that has to come from just, they're so exposed on search. that's the essence of that business, right?
+
+[00:49:41] Troy: You would think? Yeah.
+
+[00:49:43] Brian: So tell me like, how do you build franchise value now and is it possible even, like, is it, is like 'cause a lot of the examples you use? 
+
+Well, yeah, because I mean, I think, I feel like, it's harder than ever to build franchise value. If you look at the strongest parts of the media ecosystem, a lot of them around. You know, personal brands, niche and like, I don't know if you can build as much franchise 
+
+[00:50:08] Troy: Yeah. I think it's hard. It's either platforms or personal brands and personal brands are fleeting. You even see it in. But you do see, I mean, I would argue straight from valuation perspective, Mr. Beast raising with a basically no profit business at $5 billion, there's gotta be franchise value in there.
+
+It wouldn't. Now whether that's real or 
+
+[00:50:27] Brian: Yeah. It is interesting that Mr. Bees is like, you know, he has like pretty much an unprofitable media business with, with a candy business. so even the new guard apparently are not making money
+
+[00:50:41] Alex: Yeah, and he is definitely building franchise value. He is going to, you know, probably like build up other, influencers, but it's all the commerce stuff. It's like, you
+
+[00:50:50] Brian: ' cause he's a brand. Like he's, and that's the thing is like these, these older companies, a lot of people like to give grief to Forbes, right? I've given some grief to Forbes over the years. but look, they've got a really strong brand that still means a, a lot to a lot of people in a lot of different contexts.
+
+And I always said, I was meeting with a magazine, executive yesterday and I was like, yeah, every, every single magazine company needs to decide how Forbes they're gonna go because there's only a few of them that can be on. I guess you put it on the left side, on the left side of that continuum on the franchise side.
+
+And you can go, you can have a direct business, you can be the New Yorker. you can maybe be the Atlantic, but you know, most are gonna end up either on in that middle or most likely are gonna get pushed to the 
+
+[00:51:37] Alex: But it doesn't go. It kind of goes back to a point though. It's not, I don't, I think you can, you can absolutely build franchise value today, and maybe it's for certain people it's easier than ever. Right? Like Kardashians skims or like the folks that did a 24, these are like comp companies that have huge,franchise
+
+[00:51:55] Troy: a 24 is a, a 24 is a great example.
+
+[00:51:57] Alex: So, so, I mean, and these guys just, what did they do? The thing is like, what you cannot do anymore is get a bunch of people in suits together with $200 million and say, now we're gonna build something big that is no longer the case. You need, to either have like true creative vision or really kind of understand culture a certain way or be, be able to be like such an influencer that you can build brands out of, out of them.
+
+This is how it's all starting, right? the, the fact is the, the moat is no longer do we have a bunch of money in MBAs. The MO is like, are you, are you, are you able to place yourself in the world in a way that is, that stands out so much that you can build franchise value around it and hey, the chocolate is going to outlive Mr.
+
+Beast. You know, like that, that's what's gonna happen. But, I think it's at the inception point that all this stuff is changing.
+
+[00:52:46] Brian: Yeah. And we have to get, we have to get AB back on because I, they, they're are,uh, uh, are, are not saying their name.
+
+our pi our pipeline to regime media. They, they have, they have ties to regime media. AB wrote about this like the other week about how news Newsmax, you know, that deal for Newsmax does not get done without, Trump and the White House.
+
+We've gone this whole podcast without mentioning Trump. but it'll be interesting to see how you can build franchise value if, if you go on the regime media side, because you know what? Nothing is forever. And that's, but then I guess you just, you just, you just go into the opposition. That's, that's the way to do it.
+
+[00:53:25] Troy: Yeah. Should we make it, an elegant transition to a good product?
+
+[00:53:29] Alex: Yes.
+
+That sounds sure. 
+
+
+[00:53:30] Good Product
+---
+
+​
+
+[00:53:32] Troy: I have two things on my mind. always start it some way, like something like that. But should I get the easy one outta the, it's just that, uh, I'll start with the No. No. Okay. 
+
+[00:53:43] Brian: we can cut that out for sure. 
+
+[00:53:44] Alex: a tease 
+
+[00:53:45] Troy: yeah, yeah. No, no, no. It's just that I mentioned this video that kind of changed.
+
+I want to get a little more specific about why I saw this guy annotating his workflows, doing a range of things from making throwaway software to making little graphic. Things that he would use in his social media to annotating a video to having the AI coach him and making a presentation at Ted. and, and I just started thinking about how I.
+
+crazy. This was, and then the notion of vibe coating was, was launched by, this guy Andre Carpa Carpathy. And then, you know, there's a funny meme going around because people have turned Rick Rubin into a meme for vibe coating because Rick Rubin loves music and makes music, but doesn't play instruments.
+
+And the notion of vibe coding is that you can make code, you know, without being a coder. Right? And, and the quote from, I dunno whether this was made up or not. Tools will come, tools will go, only the vibe, coder remains. It's like Rick Rubin, right? I was like, well, what does it mean? And I started to bullet it out and I, and I would really encourage you to watch, we'll put a couple links in, in, in PVA weekend, that you can subscribe to or, or download or maybe we can put 'em in the show notes.
+
+There was also a video of the Y Combinator people, the smart y Combinator people talking about vibe coding. But I was just thinking about it 'cause it's big in my household. 'cause my son is, artistic or is a musician. And he is like deep, deep in this stuff. He wants to be a coder. He's deeply inspired by it.
+
+So the things that I would say about it, four or five things to consider. One is art encoding or merging. And that a new technical literacy is requirement in all creative di disciplines, whether you're Brian Morrissey or Alex Schleifer or my son.Software applications increasingly become fit for purpose.
+
+We make tools as we need them, and I think that that's at a micro level, like creating a little tool to help you make set lists for a shooting schedule, for a video to SaaS tools that annoy you, Brian, like the stuff that you wanna do, like you can make that stuff increasingly, I think this is really i'll, I'll get to the point of where, where I think this leads us in a second.
+
+Right. Coders don't need to spend nearly as much time coding. Like I'm hearing stats where like 80, 90% of code is written by ai. So they become product people by necessity or systems designers, right? Because they're not there writing the code, so they, they, they have to get closer to the consumer or closer to the, the kind of meta framework.
+
+I think that it changes, like I said, how we think about SaaS and packaged software. I think the way we string tools together is in total flux and a new industry of sort of tool and productivity gurus emerge. People like the guy that I put in that video, the, the video I think you should watch, I think back to the professor.
+
+we re we have to rethink education, role definition and career paths. These are huge things. Technical moats disappear, right? If you're not just, you can't just win by technology, right? Taste. Experience and attention as everybody always talks about growing, growing importance as differentiators. And finally, this is what struck me, this was my visceral feeling in watching this video, is we begin to think about our world differently as an ever evolving kind of virtual and physical stew that we collectively create.
+
+And I just feel like it's a real transition point in, in, in everything from kind of how the winners win and, and how we make things as creative, you know, beings and you know, what we teach the next generation, and what will be required of them to make their way in this world. So that, I don't know if that's a good product.
+
+I guess that's a bit of a speech, 
+
+[00:57:49] Brian: It's, it's not 
+
+almonds. I mean, this is a
+
+[00:57:51] Troy: It's, it's not almonds. It's not almonds. And if you want to get into almonds, I am. I used to sit Brian on my, you know, in, in many households there's a bifurcation of TV watching between the father and the mother. I don't know if, if this happened, it's happened in my household.
+
+I'm embarrassed to say I have my zone and Jillian has her zone. they meet occasionally. in my house growing up, my dad would watch one thing and my mother would watch TV in the bedroom and I would lay on the bed with her and watch Carson. And so for me, talk shows were a warm, are a warm memory.
+
+I love live television talk shows. And so John Mullaney iss out with his new one on Netflix and it's called Everybody's Live. And it's weird. I. It doesn't quite work yet, but this week, like live on Netflix, I find very interesting the concept this week he had on Michael Keaton, Joan Baez, a writer named Jessica Roy, who I don't know, and Fred Armon.
+
+And you know, he's got this co-host that, that weirdo, Richard Kind. Do you know who that is?
+
+[00:59:00] Alex: Yeah, he's great. He's, he uh Bing Bong 
+
+[00:59:03] Troy: Yeah. And they, it's, it's totally unscripted. There's a theme, this, this show's theme was finance. I mean, it's a talk show, but it's like a theme, like a podcast, right.
+
+[00:59:13] Alex: I mean, you gotta change the format. I mean, it's, I think it's, it is right
+
+[00:59:16] Troy: they had Tracy, what's his face from SNL as King Latifah, who died in the audience.
+
+and then they had Cypress Hill as a musical guest. It's a strangest show. It's really, really awkward. You know, there's Alex, you'll love this. One thing I loved about it is they, they do these little interludes, these shots from LA and they just have this shot of an abandoned, sideways hot tub on the side of the highway,
+
+[00:59:44] Alex: That's
+
+[00:59:45] Troy: and it's just like so great, right?
+
+You'd never see that on, on any other kind of produced network. Television.
+
+[00:59:50] Brian: So is is it does, what is the live element
+
+[00:59:54] Alex: It's 
+
+[00:59:55] Brian: do to it? 
+
+I know, but like why, what, how does that add to it?
+
+[00:59:59] Troy: unpredictable. People say weird shit.
+
+[01:00:02] Brian: Because I do wonder whether like live will come
+
+[01:00:05] Troy: Hill is playing and George and, and, Richard Kind and Joan Baez are dancing to Cypress Hill. Like weird shit happens.
+
+[01:00:12] Alex: I think live is a, a completely different experience. Knowing that it's live is a completely different experience. And,And it's why I think like, you know, where YouTube and TikTok, are interesting oftentimes is that live stuff like go on Live TikTok.
+
+And it just like, you could you experience it completely differently because you don't 
+
+[01:00:28] Troy: W Live. TikTok is a terrifying place. I
+
+[01:00:30] Alex: It's fucking insane.
+
+[01:00:32] Brian: I've
+
+[01:00:32] Troy: It's 
+
+[01:00:34] Alex: insane. I mean, if you wanna get in touch with the culture, go in there, just explore it,
+
+[01:00:40] Brian: Yeah. I think we should see more live stuff. I'm glad that, binging is over. It seems like binging is over.
+
+[01:00:47] Alex: Well, I mean, because the problem with binging is that it wasn't creating these cultural moments, right? Severance has the, this thing that where every week, you know, they're dropping an episode and a lot of people talk about it. and I think they quickly 
+
+[01:00:59] Brian: always been? just
+
+[01:01:01] Alex: Yeah, yeah. No, absolutely. I mean, I think people are just adjusting, but at the same time, 
+
+[01:01:05] Troy: I like it. I'm gonna vote for it.
+
+[01:01:07] Brian: binging. 
+
+[01:01:08] Alex: Netflix dropped a, a, whole season, when Netflix dropped a whole season all at once, they became the talk of the town. And, and you know, it, everything ebbs and flows. You can't just stay static. 
+
+[01:01:18] Troy: I love that White
+
+[01:01:19] Brian: I never liked, I never liked it from the beginning. I was, you know, that's the thing. If you take the Andy Rooney thing, you're gonna be right a hundred percent of the time on new stuff. 
+
+That doesn't pan 
+
+[01:01:28] Alex: this 
+
+world is not for you. You read books.
+
+[01:01:31] Brian: I do.
+
+[01:01:32] Alex: You read books. You only
+
+[01:01:33] Brian: Although, you know what I was talking. I was taught, I don't have one computer and I read books, but like, I failed because, you know, I've been trying to slog through, which is not even a long book, that Chris Hayes attention book.
+
+[01:01:44] Troy: Why? Just, 
+
+[01:01:45] Brian: I keep, 
+
+[01:01:45] Troy: summarized,
+
+dude. 
+
+[01:01:46] Brian: losing, I keep losing focus, which I think is like, kind of funny about it. But then 
+
+I went to visit my parents and I left it there 'cause I liked it.
+
+[01:01:57] Troy: I'm sure they've I lost my attention.
+
+[01:01:59] Alex: yeah. 
+
+[01:02:00] Troy: but are you watching White Lotus Brian?
+
+[01:02:02] Brian: Yeah. I am that and that's perfect. That's like once a week. It's 
+
+[01:02:06] Troy: a vibe. It's perfect.
+
+[01:02:07] Brian: you know, and that's all I need. And like people can complain about it not being as good as the previous season. I'm like, I don't care. Like, I don't, it's not a piece of art. 
+
+[01:02:15] Alex: It is, it's a piece of art. It's a
+
+piece of art, and it's 
+
+fine that it's, it's, it's fine that it's different and, 
+
+[01:02:21] Troy: okay. Well maybe we can bring that up in a later episode. 
+
+[01:02:24] Alex: let's, uh, let's wrap it 
+
+[01:02:25] Brian: episode. 
+
+[01:02:26] Alex: stop
+
+
+
+
+[01:02:26] Outro
+---
+
+[01:02:27] Brian: Okay, Alex has a hard stop. As always, everyone check out, people versus algorithms.com for I'm gonna be submitting my, response. It's an interesting format. We're 
+
+[01:02:36] Troy: it.
+
+yeah. Are you gonna get in there? Are you gonna get in there, Alex and, and make some comments? I, I always call you out and then I'm like, oh, I guess I better edit that 'cause he never
+
+came by. 
+
+[01:02:45] Alex: called? What is it again?
+
+[01:02:46] Troy: Stop it. Do not ask for the link 
+
+[01:02:49] Brian: 
+
+in a voice memo from Alex. I think that would be
+
+[01:02:51] Troy: I like that. Yeah. Put in a voice memo. 
+
+[01:02:55] Brian: Use whisper, or whatever
+
+that is. Take it 
+
+you guys. 
+
+[01:02:58] Alex: Bye. 
+
+
+

@@ -1,0 +1,815 @@
+PvA S3E116
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian: usually like podcasts have like a little spiel that they do,
+
+know, but that gets so I find that corny sometimes.
+
+[00:00:07] Alex: I don't know but you know shame being shameless is how you build a media brand and being repetitive being repetitive and predictable
+
+[00:00:15] Troy: Okay, hit it out. You mind if I call you Al?
+
+[00:00:18] Alex: What's happening?
+
+[00:00:21] Troy: Hit it, Alex.
+
+
+[00:00:22] Welcome
+---
+
+[00:00:22] Brian: ​
+
+[00:00:44] Alex: Hi, welcome to the podcast. I'm Alex Schleifer.
+
+[00:00:47] Troy: And I'm Troy Young.
+
+I'm Brian Marcy. good to be back. I had another norovirus. I don't know if it's another more norovirus from the PVA virus. but I'm, I'm feeling a lot better. Thanks for asking. we got a lot to cover this week. also, we should also send our, you know, just acknowledge of what the devastation that's happening in L. A. because it is beyond.
+
+[00:01:11] Brian: It is. It's, the, the picture is coming out of that. The video is, it's pretty shocking and unfortunately it probably will become a bit of the norm, for a lot of areas, and blame games have started. It's been, I mean, we're going to get into this, but like, if you open X. this, it's not,
+
+[00:01:32] Alex: If you open X, 
+
+[00:01:33] Brian: it's not a good, like the, the blames, the, like, there's a VC who is, is
+
+[00:01:38] Alex: they blaming DEI?
+
+Are they DEI got blamed. Absolutely. 
+
+[00:01:43] Troy: But can we just start, we just start by just thinking for a minute about
+
+[00:01:47] Alex: a meteor about to hit
+
+[00:01:48] Brian: know, well, okay. Yes.
+
+[00:01:50] Troy: just just take a minute, just take a minute. People that I know, people that you know, People that have nowhere to go, rich people,
+
+poor people, 
+
+[00:01:58] Alex: I have good friends that live there. I have, I just talked to one of them yesterday, and they lost their house,
+
+[00:02:04] Troy: yeah, we're thinking about these folks. So 
+
+[00:02:06] Alex: and, and, you know, I live in a, I live in a fire zone here. We, we also had like in Northern California, the wettest, winter. So it's, it's surreal to see Southern California on fire.
+
+But, you know, we had some, some close calls and just that fear of like not knowing where you, whether you should evacuate. And then actually seeing the flames, you know, over the horizon. It's terrifying some of these videos, and it's so populated there. It's just crazy. but yeah, the discourse has been, as expected, on X, terrible.
+
+
+[00:02:39] Zuckerberg's Turnabout On Moderation
+---
+
+[00:02:39] Brian: but let's not start there. let's start with, Mark Zuckerberg's,Turnabout on moderation, and or pandering to the incoming administration this week. he announced a wholesale dismantling of content moderation apparatus that he put in place. Let's, let's not forget it. Although he'd like to us to forget it in 2017, in response to the uproar over Facebook's role, Trump's 1st election, Russian interference, remember Cambridge Analytica that supposedly swung the election.
+
+He threw mainstream media under the bus. He threw Biden under the bus. it was pretty clear that this was a, an attempt that we've seen pretty much across the board, to bend the knee, I think, to, the current vibe. Instead of the, the army of content moderators, he's basically adopting community notes.
+
+he's even calling it community notes. Yeah, we've seen this. I mean, every tech company and and leader has in their own way accommodated themselves. You know, they've all donated either through the company itself or individually to the inauguration. Trump is swimming in money. I read something in the New York Times that they, they now can't even give, you know, million dollar donors any real perks.
+
+Like, they've run out of perks. Like, they just said, like, they have got like fire codes. So, I'm kind of reminded of, of one time I, I went on a walking safari, in South Africa and we came across a lion on a hill and it charged at us, but then the guide fired warning shots in front of the lion and it sort of skidded sideways and retreated because it understood that it came across some, something that was more powerful than it.
+
+so I think a couple of ways for us to look at this. I mean, one. Maybe Masterstroke by Zuckerberg as a business operator, and he's, he's done this before, he's, he's ruthless, and he is shameless, or it's just more cravenness, and it's probably a little bit of both. Troy, you want to, give us your, your insights?
+
+[00:04:32] Troy: Well, I wonder if it, if it will really matter. That's what I'm curious to find out. It's sort of like if you read the sort of, sadder commentary from the endlessly pessimistic Ryan Broderick from Garbage Day.
+
+[00:04:49] Brian: Well, he spends a lot of time online, so, like, I can understand
+
+[00:04:52] Troy: much, you know, he's like sad Ryan. but, you know, it's like this will turn,you know, Facebook to even more of a kind of reality bending bullshit vortex than it, you know, seemingly is today and that ultimately will as a society be worse off because of this, because we don't have, you know, armies of, you know, sort of lightly engaged fact checkers, you know, you know, Deciding what content goes on Facebook or not.
+
+I think in the end, you know, it, if you look at the information space broadly, you can kind of find places to say whatever you want and not be censored. And it somehow all manages to kind of, you know, make it, make itself available to people, whether it's on X or Reddit or somebody's sub stack. So I think in the end, it'll.
+
+It'll be a nothing thing. And,if it is, if it does overwhelm the feeds on Facebook, then Zuckerberg will pivot again. What's amazing about that guy. I mean, more broadly is that he just moves fast and he sees a change in the market and he's done it 10 times and he pushes that company to the next thing.
+
+Whether, you know, that was a creation of, you know, the, the newsfeed in the early days or Building the app platform or moving to mobile or copying Tik Tok with reels or rebranding to meta,
+
+[00:06:17] Brian: he copied Snapchat.
+
+[00:06:18] Troy: okay. And now it's, it's, we're going to change moderation. I'm going to put a new face on our public affairs group by getting rid of Clegg.
+
+And, you know, this is, this is a Facebook for, for a new administration and a new political reality and let's go. So that's why, He's very successful and that's my take.
+
+[00:06:37] Brian: Okay, Alex, is the sky falling without the content moderators?
+
+[00:06:42] Alex: I don't know, the switching over to community notes is fine. I think the announcement was, I mean, I don't know. It felt, it felt, to me like he was throwing a bunch of people he hired under the bus by calling them biased and political and saying, we're going to move to Texas.
+
+[00:07:00] Brian: Yeah, that was a weird one. We gotta move out of California. 
+
+[00:07:03] Alex: I mean, it's, it's so obvious that, he has always been shameless. I don't like him. I was told not to talk about Facebook at my last job because I had a tendency to, say things that were, Pretty negative about the company. I haven't changed my mind.
+
+I think he'sParasitic the way he he responds to things and that's fine. That's how he runs his business something successful He had luck once managed to build a big company surrounded himself by people who allowed the company to grow and now he just looks at what's happening in the market and adjust to it.
+
+He's pretty shameless. Like I think it you know like just the way he The way that video kind of played out,showed like he was pandering, and also showed like the administration is open for business, guys. Everything's transactional now. And, these giant tech companies are very comfortable being transactional, so it's just gonna happen.
+
+And I think, Trump administration is gonna be pretty cheap, like, hey, fuck, we can get rid of a thousand people, a headache, you Under the guise of free speech and and non politicalness And on top of that we get a bunch of goons to like us more now. so I don't know. I don't think 
+
+[00:08:14] Troy: Alex, could you tone down the anti Facebook rhetoric please?
+
+[00:08:18] Alex: No, fuck him.
+
+I I I talked to a lot of people who are at Facebook, who I don't think would have had any trouble with a shift away from human moderation to, to different systems. look at their leader, with a little bit of disdain at the moment. I don't think that changes anything for him. I think people, You know people need the job and they're going to work there and it's going to be fine but yeah, I I just felt like the whole thing felt kind of nasty to me.
+
+beyond the cravenness, let's, let's leave aside the cravenness for a
+
+I mean if beyond the craveness
+
+elon is a genius beyond the 
+
+[00:08:53] Brian: whole content moderation thing and the idea like platforms have been an impossible position and they were put in impossible position. Maybe they put themselves in that of adjudicating. You know, what speech was misinformation and ultimately you are going to have false positives without a doubt.
+
+If you're you're just going to right. And so I think the question ends up being like, how do you get out of? Playing the arbiter. Now, they tried to outsource that in some ways, a bunch of different fact checking organizations who he then flew through under the bus as being biased and left leaning, et cetera.
+
+[00:09:33] Alex: and maybe I don't know, but,it's, it's simple, like they, they, they keep telling, I mean, in his, in his little speech, he talked about how the, I'm surprised you're not more upset, Brian, because he talked about how the, the, the press was pushing them to do that. The press, the
+
+[00:09:49] Brian: Oh, yeah. Yeah. Well, the press is always, I mean, come on, you were, you attack the media all the time. So I'm um, and, but, but yeah, sure, you know, poor, poor little Facebook was forced by the media
+
+[00:10:03] Alex: to 
+
+[00:10:04] Brian: I know, but let's leave aside his craveness. 
+
+We know the 
+
+
+[00:10:06] It's All About Section 230
+---
+
+[00:10:06] Brian: guy at this point. 
+
+[00:10:07] Alex: here's the only play that happens. It's all about section 230. right So the last administration threatens them with section 230 by saying, Hey, you can't have things that are dangerous on your platform.
+
+Otherwise you might lose section 230. Wouldn't it be like a problem for you to lose the one thing that allows you to have pretty much infinite cashflow through the, you know, the creation of content by millions of people on your platform. Now the new FTC chair comes in and says, you know what, with all your censorship, and we know what they mean by censorship, The, you know, it would be a shame that you lost section 230.
+
+That is their one thing that they don't want to happen
+
+[00:10:42] Brian: So just to recap, Section 230 is, is the law that basically gives them a pass for being responsible for the things that are posted on their platforms.
+
+[00:10:52] Alex: I mean, I'm surprised like the media is not more upset about that. It's the thing that allows these platforms to be a media platform without any, any of, the liabilities that traditional,
+
+media 
+
+[00:11:05] Brian: just to be clear, the media, the media has been complaining about this, like, forever. I mean, going back to, like, calling Google is Google's a publisher. Google's a 
+
+[00:11:13] Alex: They should have done something because apparently they control what
+
+[00:11:17] Brian: Nobody listens to the, the, the media, despite the media pulling the, the, the strings, apparently, in all of society, despite it being in terminal decline.
+
+it isn't actually that powerful. It turns
+
+[00:11:27] Alex: it's it's all it's all about 230 You know, like it's all
+
+about 230 shit. You're gonna take 230 away So we'll put your friend dana white on the board of meta
+
+[00:11:38] Brian: And Joel Kaplan, who Troy had mentioned before, who is a longtime Republican operative, who has replaced Nick Clegg, as their head of public policy and assuming, I assume he will be their ambassador to the administration. I think it was 
+
+[00:11:54] Alex: You know, if if Bernie got elected, I think we would have had a speed from Zuckerberg, how he's forcing everyone into unions, like it's, it doesn't matter, like 230 is such a powerful thing for them. If they lose 230, they lose everything. Right. And, and 230 has been the get out of jail free, like, You know Zoom zoom.
+
+Let's make as much money as possible. All of these companies have like like no liability It means it's why google is allowed to like advertise shit to children under the guise on youtube under the guise of like well, it's just community content like the 
+
+[00:12:30] Troy: that I'm not following, but you guys would, would admit that, as Brian said, I think importantly, that the idea that platforms are put in a position where they have to decide whether content should be viewed or not is a troubling place for them. uh, 
+
+[00:12:45] Alex: they have a job, because they have some sort of responsibility.
+
+It would be so hard. 
+
+Oh, yeah.
+
+these platforms are always so great at saying, you know what, like, we'd like to figure out a way for not letting children longing on Instagram, but it's so difficult.
+
+It's so difficult. Meanwhile, we're talking about, we're building, you know, generalized artificial intelligence by building, you know, by, Oh, let's, let's reignite nuclear power plants so we have power for this shit, but all this other
+
+stuff is too 
+
+[00:13:14] Brian: honestly, physics is, easier than this stuff.
+
+[00:13:16] Troy: Yes, Definitely.
+
+[00:13:17] Alex: bullsh*t bullsh*t they should be liable 
+
+[00:13:20] Brian: it's 
+
+cut and dry. I mean, like physics is physics, like, whereas, you know, whether the Hunter Biden laptop story was Russian disinformation or not is like, that's hard to figure out. And I don't, like,
+
+[00:13:33] Troy: Or if something that's distasteful to some people should be taken off the platform when it's potentially, you know, some other people see it as legitimate conversation.
+
+[00:13:42] Alex: absolutely. And this is why Elon did the right thing by moving to community platforms and completely, snuff out the
+
+[00:13:49] Troy: This isn't about Elon, man. Let's, this isn't, I'm not 
+
+[00:13:52] Brian: he said a nice thing about it.
+
+[00:13:53] Troy: Well, no, he said that he, he went to community notes and then he censors, personally, which is, is hypocritical and
+
+[00:14:02] Alex: hyper hypocritical. All these companies are hypocritical. It's all about sections 230 though. Like I said, I don't mind that they have decided to move from human moderation to community moderation because human moderation is untenable. Yes, we get it. It's difficult.
+
+People are biased, where the political winds are turning can stifle, communication and these platforms want to remain as open as possible. However, they're all hypocritical. The main thing that they want to keep is an ability to To kind of put content in front of people with as little liability as possible.
+
+They want to maintain 230. They will do whatever they, they
+
+need to, and 230 is the
+
+[00:14:37] Troy: of it all guys is this staggering truth, which I'm reminded of from the earliest days. I remember when, when. We were talking about, you know, Facebook in the early aughts and how it was emerging, you know, from the campus of Harvard into being a generalized social network and taking on my space and all of this.
+
+And the dialogue at the time was, yeah, but, you know, nobody wants to advertise on social networking and can this be a business? And now we're in this kind of gilded age period where. You know, a handful of people, not unlike Carnegie Rockefeller and, you know, JP Morgan, you know, control huge swaths of the economy, which is really just tech through systems that have no liability or content costs and make just staggering amounts of money. And the amount of money made by a handful of companies, which, you know, gives them the ability to, you know, really kind of not just influence, you know, politics, but kind of reshapes society is, is amazing to me. 
+
+[00:15:46] Alex: the, the, the top, the, the, the magnificent seven of the, in the stock market have a larger market cap than I think 200 of the companies that follow them. 
+
+[00:15:57] Troy: 400. 
+
+Well, then 200, then larger, but they, it's 30 percent of the index is 
+
+[00:16:02] Alex: Okay. So, so, and, and here's the thing when, you know, if we're talking about Zuckerberg specifically, because I think we can be very impressed with him as a leader, but I think once that that thing had wheels, right? And once Facebook had wheels and created the amount of revenue, free cash flow that it did, it allowed him to make so many mistakes.
+
+Like we're saying, yeah, bought Instagram. He could have built Instagram. He didn't build Instagram. These companies are, are, are Their safety net is so huge that they, they can with otherwise like very mediocre strategic decision, decide to spend 20 billion on the metaverse and then go say, whoops, now where I am, and everybody goes like, man, you're so smart.
+
+No other companies could spend 20 billion and burn them 
+
+[00:16:44] Troy: Oh, it's, I think it's like 20 billion a year.
+
+[00:16:47] Alex: A year, right?
+
+And so, so then we look at these 
+
+people like, like as geniuses, as if the same way we look at somebody that inherited like, you know, 200 million as a business genius when he managed to make a successful bagel shop. Like, it's impossible to make mistakes.
+
+It's impossible to fail for these companies.
+
+[00:17:05] Brian: I compare it to the United States, like we can, we can, as a country, the United States can make so many errors and screw up so many things, but because of all of the advantages of geography, of the military, of scale, like, it's, it's, it's going to be fine. Like, I, Belgium we talk about these people like they're fucking geniuses.
+
+I don't think, I mean, I don't know.
+
+[00:17:25] Alex: not
+
+[00:17:26] Troy: pretty, they're pretty, they're pretty smart. They're pretty smart, Alex. Okay. So that I 
+
+[00:17:31] Brian: Is this because maybe he's like cheating at the, Elon Musk is cheating at video gaming? I wasn't able to open that link in Apple 
+
+[00:17:39] Alex: of 
+
+course he's cheating but like I don't even care about elon musk anymore. I mean that guy's I think even trump's getting tired of him 
+
+[00:17:45] Troy: but how did he get so good at that game, Alex? 
+
+[00:17:47] Alex: these companies, it is unhealthy when companies are so big that they're like unable to get any repercussions for the mistakes they make and, on top of that, these individuals are, are too, these people are too powerful and it's very worrying when you get into an environment where you know, political apparatus is, You know, it's like, it's ready to trade because these people have an infinite money and I don't want to live in a technocratic, like, thing that's run by people who actually now believe their own bullshit and think that luck had nothing to do with their success.
+
+So, like, I'm worried about that stuff. And, Let's see the you know, at least hopefully it just lasts four years and just like brace ourselves
+
+[00:18:26] Brian: don't think it's gonna last only four years. I think that's the new reality. I mean, the, the finance industry is what, like 15 percent of the economy or so. I mean, they're a power center. They've had Goldman Sachs was called government sacks because of the revolving door. You go from Goldman Sachs to the Treasury Department bounce back and you're seeing something similar.
+
+happen with tech now and being embedded in Washington. I don't think that's going to change. I mean, when you become a massive power center, you're going to interact with the government, which is the ultimate power center. I mean, that's, that's not going to change. I don't care who is sitting in the White House.
+
+you know, tech is, is, I don't see, I mean, AI is not going to, to make this, sort of less important, right? I 
+
+[00:19:14] Alex: No, 
+
+I think what I mean by change is that I think like we're likely going into a cycle where 90 of the population just votes whoever tells them they can fix the economy for them and Neither can so we're going to flip flop between like, you know The different parties and so in four years, it'll just be a different set of of pandering that happens and you know, I think I think that's what we're gonna see right now.
+
+It's just feels like this administration is just going to be very very open for business. so like, you know fart coin is up That's great. I don't know if you bought fart. Have you bought fart coin
+
+[00:19:49] Brian: I didn't, I don't up Uh, that's unfortunate. You could be you could be a millionaire
+
+[00:19:54] Troy: guys. Can we move on please?
+
+this is not where I want this to, I mean, this is not a political podcast, okay?
+
+[00:20:01] Alex: Is this not political? 
+
+I'm not talking about anything
+
+[00:20:02] Troy: Well, it's, it's like grievance. Like, let's just move on. Let's talk about media.
+
+[00:20:08] Alex: Well, we are talking about we are 
+
+[00:20:09] Brian: about, 
+
+
+[00:20:10] CES 2025
+---
+
+[00:20:10] Brian: let's talk about CES. I miss CES this year. I had been the last few years, but, didn't have anything going on, decided to skip it. Which is a weird thing that the sort of media world goes to CES, but doesn't really engage in the tech part. They just have like a lot of meetings with like advertisers and whatnot.
+
+but anyway, at CES, um, revealed, some interesting things. Interesting announcements around a personal supercomputer running its new Blackwell chip, as well as a new partnership involving some kind of driverless truck technology. Jensen, you'd pointed this out, Troy, that Jensen, Huang is, is like an old school, Steve Jobs, because there, there isn't like of all the like sort of tech CEOs, you know, none of them have the showmanship of, of Steve Jobs.
+
+I mean, You know, Musk is sort of stuttering and, and awkward. Zuckerberg is, is still kind of wooden and doesn't seem human. Tim Cook is just Tim Cook, the The Google guy. I don't, yeah, he's, he's from McKinsey. Right. but he, he's a very interesting, tech CEO type. He's got the leather jacket.
+
+Look, he signed
+
+[00:21:15] Troy: Alligator for CES, he had an alligator
+
+[00:21:18] Brian: Oh, you had an alligator one. Oh, that's cool. that's part of the vibe shift, I guess. he signed that boob one time. and he also seems to kind of like an agreeable dad type versus the. The kind of trying too hard cage fighting, you know, approach taken by some of these other CEOs.
+
+I'm interested in Alex in in your First of all, like what what do you think about these announcements that made do they matter at all? After the announcements, NVIDIA's shares, were down 6. 2%, and some of that is, is just, you know, one, one analyst, said that, you know, there were technically interesting announcements, but at the same time, you know, investors were looking for more, more progress, on this Blackwell and, and when the next generation GPU platform Rubin will be, rolled out.
+
+[00:22:09] Alex: I think what comes across with, with him is that he actually is like, deeply knowledgeable and loves what the company does. I think what we're losing with, with himwith Apple's presentation, specifically with Tim Cook, is that, it, he doesn't, there's no, the passion doesn't feel real. And I think the production around it makes it feel even more fake.
+
+But having this dude on stage for two hours talk about chips, is more interesting because he seems genuinely passionate about it. And, and, and sure he's charismatic, but a lot of these other dudes are. It just feels like he's somebody he is the comp he is like an integral part of that company rather than just an
+
+[00:22:48] Troy: Yeah, that feels right. That feels right. But Alex, any, any insight on, you know, being able to put the entire internet and a huge LLM on a supercomputer that you can put on, you know, on your desktop? Is that important?
+
+[00:23:00] Alex: mean, yes any of these tools that kind of allow us to do more things with the with these llms is going to allow us to start seeing the creation of like tools and products That are Actually useful. I think we need, you know, a couple of years to kind of, figure out what can be built. But you know, my thing has always been that like right now, I mean, we're mostly just like tapping straight into the chat bot, into the LLMs via chat bot.
+
+And we're not really seeing exciting tools come in. I think Brian, you were talking about that Google research thing as being kind of like, wow, that's an expression of these types of things. And And we don't know what happens when you can actually have something run,
+
+run locally, like in a business 
+
+[00:23:45] Troy: because because 
+
+Well, maybe I just challenge you a little bit that the tools, you know, maybe applications of them in, in more, in narrower ways haven't manifest yet, but Brian's example that Gemini's research tool could string together queries and match it with a really deep web search could then bring back basically a research report in five minutes is pretty impressive tool to me.
+
+[00:24:12] Alex: No, I'm so that's what I'm saying. I'm saying these are the types of tools that we're It's it's some of the first tools that we're seeing that have like some real use outside of like well It's it's kind of easier to just get to the chat bot. I think a lot of the other stuff we're seeing including in in ios and everything like that is just like summarize this shit and you know here i'm going to help you respond to that message or you know, like ask me a question with my ai agent all of these things feel like you know early internet Experiments that, you know, didn't really hit until we started getting
+
+[00:24:44] Brian: but it doesn't feel like there's been some like killer, like, probably like, Oh my God, I must have this. This has changed
+
+my life. And it's I sent this morning? The AI male pleasuring device. I mean, it's water
+
+I haven't tried it. 
+
+[00:24:58] Alex: Well, yeah, that was at ces yeah, yeah, that was I 
+
+[00:25:01] Troy: one of those every year where you 
+
+you can connect it to video, I think. And so it's it's like, you know,
+
+[00:25:08] Alex: It watches your video and changes the rhythm of it,
+
+yeah thank you.
+
+Yes,
+
+I mean that's you know what I think the nice thing about that is finally technology doing something against the loneliness epidemic 
+
+[00:25:20] Troy: Yeah, yeah. 
+
+I just wonder where you put that when you're done with it. Do you put it like near the small appliances
+
+[00:25:27] Alex: Well, apparently it's not waterproof so you can't put in your dishwasher.
+
+but you didn't want to talk about politics. So I
+
+[00:25:33] Troy: No, no, but Alex, I had another question. These are serious questions that are coming up now.
+
+[00:25:38] Alex: No, but let me just 
+
+finish just before you start with your other question. because it's hard to come up with answers about this is the type of stuff that we're going to start seeing. I'm definitely interested in, in having kind of like an LLM that can run in my house. That sounds interesting as an experiment, but the example I always give is like, you know, There was a, the, you know, the, we, we talked about the web 2.
+
+0 revolution, right, which was like a very, technically kind of interesting thing, but it didn't really provide a ton of value. But the main thing it allowed you to do is, is update websites in real time using JavaScript. So now your websites could behave a little bit more like applications. And at, and at, and at first, would see just like interesting things happening, but it would really only satisfy kind of nerds like me and say like, oh, this is pretty cool until, until we started getting, and it took us a while to figure out what that looked like.
+
+But we started getting things like Google Maps and, and Google Docs and, and it kind of, Both changed the way people thought about how application could be delivered over the web, but then things like Google Maps allowed for the creation of things like Uber or Airbnb, and you kind of created these like brand new types of tools that that had societal effects.
+
+Right, like not just like, oh, this is a slightly cooler version of the thing I used to use, but this is like something I couldn't do before. I couldn't be on the street, press a button, and the car comes, you know, and of course, you needed a collection of technologies like the phone and GPS and everything like that.
+
+But so right now, when you're thinking about AI, it is one of it is part of that, you know, part of that core technology, we're gonna have to see kind of like, Technologies that, and products that exist around side of it so that people can start building on top of it. So anything that's released like that, that allows it to be more portable, more localized, doesn't that allows it to run without having to be kind of constantly connected to the LLM, reduces the cost, open sources, these things, it's just going to open up the field for these new type of tools.
+
+And I don't think we've yet seen a tool that is the Uber of, of the LLM era. Like we haven't seen the tool that allows us to do things. something that's completely different, a completely different behavior, rather than stuff that we used to do in a slightly different
+
+[00:27:47] Troy: that was good. Good context because it was, it reminded me of two small, two small things. One is the NVIDIA announcement of, I think it's called Cosmos, which allows the robots to essentially train off of images and real world information, which allows you to see a time when actually robots could. You know, be deployed, suck up all the information as to how to navigate the world and, and be useful.
+
+And that's essentially what's happening with, with self driving cars using, you know, sensors to, to, to map the world and therefore become. You know, autonomous. So that was the, the Cosmo announcement. The other one, Alex, I thought was cool was to me. It's sort of like, Oh, look, the Alex features coming to, my television.
+
+And it was on a Google TV where you could just say, summarize the news. And it would go out, I suppose, to, to YouTube and to the web and to I, I guess any other professional source. give you a couple bullet points on your TV and point you at a couple of clips, which would prevent you from having to watch Baby News and Zero, you know, get you, you know, it's 
+
+[00:28:58] Alex: for the new listeners, baby news is what I call things like CNN and
+
+[00:29:01] Brian: So we, we did like stitch together. Does it like stitch together like clips? So it just takes like the video
+
+[00:29:08] Troy: I mean, I, I think eventually Brian, but I think at first it's like a couple of bullet points and directs you to a clip on YouTube, but what. Struck me from that is, when you start seeing all the things that have hijacked publishers via aggregation on the Internet, right? Things that have made it harder for you to, you know, control your surface area as a publisher.
+
+And you see that coming for television. That's when media is really going to freak out
+
+because. lawyers are going to get involved
+
+well, there's a lot more money involved and, and, 
+
+[00:29:43] Brian: mess with the text people. That's fine. But when you start to get into closer to 
+
+[00:29:46] Alex: I mean, good luck, 
+
+good luck with this administration and the advisors they've got on because I think that similarly as section 230 being Kind of the, the brittle foundation of these massive social networks, IP law is the brittle foundation for all these LLM because, you know, they've been stealing shit, right?
+
+And they're continuously stealing that shit. It's essentially Napster, but what if Napster just had all the music and changed it enough, so it didn't sound like the original song. and if, if, if that legal battle doesn't get, you know, one in the next couple of years, it's going to be very hard to untangle.
+
+So, I mean, I keep hearing the media say, well, you know, wait till our lawyers hear of this. What's happening?
+
+[00:30:30] Brian: don't, I don't hear that though, honestly. 
+
+[00:30:33] Alex: You can ask, you can ask Google, the new VEO, video, kind of generator from Google, which has likely been trained on YouTube,you can tell it to generate a humanoid sponge that lives under the sea and it will generate Spongebob Squarepants. It won't generate a weird humanoid. It will generate Spongebob Squarepants.
+
+So that means it's trained entirely on copyrighted, not in part in copyrighted data. And, there's nothing nobody's doing about it. So, I think,any media that's on the internet, it can be behind a paywall or whatever, with new agents, you'll just type in your paywall information, all that stuff can be clipped and reformatted,and brought back, and I don't think there's any legal way to kind of bounce out of that.
+
+
+[00:31:18] Rabbit Holes and Attention Spans
+---
+
+[00:31:18] Brian: so I want to move on to rabbit holes and attention spans. this is a good reminder that everyone should sign up for the companion, the PVA newsletter companion, that has been revived. It's a work in progress.
+
+I think it's, I think it's coming along pretty well. 
+
+[00:31:31] Troy: I like it
+
+[00:31:32] Brian: yeah, it's a conversational format. We take five topics, mostly from, You know, what we're discussing here in the podcast and, we go back and forth on it. and there's also what is it? Anonymous banker?
+
+[00:31:44] Troy: Yeah, we, we like bankers because they're sort of like, real estate agents that went to Ivy leagues and, no, no offense to, to any bankers listening, they're enterprising, right? They got to go hustle. They got to find deals. They got to find out where they got to make opportunities. And so, we know some bankers and one of them said, I'd like to contribute to your newsletter and we'll just do it anonymously.
+
+And he actually better than Alex, dutifully sends his copy over,each week. And he, this week, he made a, A comment about the, consolidation that's happening around sort of influencer, affiliate marketplaces with the, the mo, mo, most recent acquisition of what's the company called?
+
+Maverly? Yeah, Mavely was acquired by a company called Later, but essentially there as ad tech
+
+[00:32:32] Alex: These are all made up names. What is those real companies?
+
+[00:32:36] Troy: yes, there were companies as ad tech has become less interesting with the decline of the webpage, the, you know, influence get an influencer to promote a product and get pay them on performance and have a marketplace that stacks up influencers on ones or creators on one side and filters and offers from retailers on the other side has become, a good business, I guess.
+
+[00:32:59] Alex: I mean, this is how you get 10 year olds into skincare routines
+
+[00:33:02] Brian: This is capitalism.
+
+[00:33:04] Alex: Yeah, it's the best type of capitalism. It's the one where you don't have any limitations of how you advertise to people and blurs the line between advertising and content. We love it. it's so 
+
+[00:33:15] Troy: raw.
+
+but we were doing
+
+rabbit, we were doing rabbit holes,
+
+[00:33:18] Brian: Yeah, we're gonna do rabbit holes, Troy, 'cause you, you let off the, the newsletter this week with, with an ode to the wonder of rabbit holes, which are, you know, I think you pointed out they're, they're one of the defining features of the information space. And, and that's because, you know, as the name of this podcast and the newsletter is, it's, it's algorithmic.
+
+I mean, algorithms are about rabbit holes and, you know, algorithms are great about leading you down a rabbit hole. It's not like rabbit holes just appeared. but they're much more common now because algorithms are directing the, the media consumption patterns. I take a little bit of a different point of view because I'm trying to break my, Twitter slash X addiction.
+
+That is longstanding, I admit it, and, it's, it's really difficult. I, I hit the two hour limit, that I set for myself, 
+
+[00:34:10] Alex: Do 
+
+you have a little, are you using that screen time feature or do
+
+[00:34:13] Brian: Yeah, I do, I do the screen time feature and, you know, it's, it's very, it's, it's terrible because it leads you down all kinds of paths that I don't want to be down.
+
+And it's very
+
+[00:34:26] Troy: I mean, you might, you might want to think about you should maybe get a dog or, or, or a cat or something
+
+and 
+
+spend some time there, maybe take up another sort of more offline habit like crochet or there's all kinds of golf
+
+things you could do. 
+
+I love rabbit holes though Brian and and and I like the counterpoint that that you're, you're beholden to, to a platform, and that you can't control your own, your own urges, but Because I use YouTube a lot, I think Alex is right about this. YouTube is a rabbit hole in kind of platform. And I just noticed that I've had some wondrous media journeys and obviously modern media is like, you know, the opposite of a timeline. So we used to have the programming guide and the timeline, and now we rabbit hole.
+
+And that's why I think it's interesting and important where I like, Oh my God, this Ron, like I've been rabbit holing on Carson, old Carson interviews. Carson was a talk show host that my mother watched, but he had, you know, this was a legendary time in that format. Regan, Was on there between, you know, governorship of California and presidency and the things that he said echo the present in lots of ways.
+
+Not only was he kind of, seen at the time is like, who is this outsider actor politician, but was, you know, conservative in this and and and railing against. The, you know, government overstepping like the present, but, you know, just watching Rob Williams on, on Carson or, or Frank Sinatra. I mean, this is gold, this stuff.
+
+Anyway, it's interesting. Yeah. The YouTube algorithm is not perfect because it assumes that you, once you're interested in one thing, you want to consume endlessly on that tip. But like I got on this Harmony Corrine tip, he's this wackadoodle guy that, is a filmmaker and a, and an artist and a writer who famously wrote the script to this movie kids that 
+
+many of you have probably seen.
+
+And he's just after that movie came out, he's 19 years old and he's on Letterman. And it is a surreal interview and he is kind of earnest and authentic and seemingly at the time sees the ridiculousness of the kind of celebrity interview format and kind of fucks with it. And I fell down to harmony.
+
+rabbit hole. There's a bunch of content and even, you know, current interviews with him and then kind of moved into his, you know, in rewatching kids and I watched spring breakers, which was like one of the first films from a 24 that he made. And he's made this bizarre movie called gummo. And so that was my rabbit hole.
+
+And, and I, I find that I'm consuming media like that very often now. So that's, that's my contribution.
+
+[00:37:11] Alex: I think the impetus for the rabbit hole really matters here because I think what Brian talks about when going on next is that Something grabs him by the neck and drags him down a dark alley Well, he sees all sorts of things that he doesn't want to see it's a little bit like being invited to a ditty party know, 
+
+[00:37:30] Brian: Yeah, grooming, grooming gangs. I didn't know. I don't need to, like, be 
+
+[00:37:34] Alex: It is 
+
+breaking, Brian, I think we need to like have have have an intervention for
+
+Brian because it 
+
+it is 100 You are. You sound like it. 
+
+Yeah.
+
+[00:37:44] Brian: I am. Because I think, look, I, I really believe that we have, I wrote about this in my newsletter today. We have this, like, Crisis really of attention spans, and it's really all because of this algorithmic media, system and how chaotic the information spaces. And I think when you I've experienced it, like, I think it's really difficult to focus for a lot of people.
+
+And, you know, you read a lot about burnout, this is, Ezra Klein had a really good podcast, about burnout, and I think a lot of it comes down to the fact that people feel overwhelmed by a lot of the information that's coming out at them. and. You know, the reality is they need less, not more. And I think it's, it's hard being in the information business to, to say that.
+
+But it, it, it really is a problem when people can't focus. And when your attention becomes commodified, because that is how these companies make money. The reason that their rabbit holes exist is because that is, is their business model.
+
+[00:38:54] Alex: And that is why Facebook has been experimenting putting on AI generated content into the feed because it's just more stuff that can be more targeted and it's more surface area
+
+[00:39:05] Brian: More personalized, it's going to be more addictive.
+
+[00:39:08] Alex: It is why some of the most, popular TikTok content is a screen split in two, well, where they might show a clip of a podcast at the top, but at the bottom, they'll put like somebody, you know, playing with play doh or car crashes or people falling down like a ski slope because, because your attention is hijacked by that thing.
+
+It's, it's so, so the only way to do it is you delete the app. I was talking to my nephew,and, you know, he's a young guy. He says he's deleted all the apps. He feels better. I. Don't think you need it for work anymore. I went on to X this week, just to check on something. I was actually checking if there was any news about, the fires there.
+
+and it descended into this thing that like, yeah, it's become really the algorithm and the people that engage in it have become way too good at playing this game. So it's all about like enragement bait. It's all about hijacking your attention and we're no longer able to get bored. So And, these tools are only going to get worse.
+
+and so, yeah, Brian, you just need to get off it,
+
+[00:40:14] Brian: Well, I, just delete 
+
+[00:40:16] Alex: it. Can you do it? Can you do like a, you know, like there's a no, not November, like, you know, no,
+
+[00:40:22] Troy: Could we find a, do you guys think there's anything good in rabbit holes? Like, here's the thing, my rabbit holing is pulling me, is, is pulling me away. It is pretty
+
+wholesome and it's, it's pulling me away from mindless Netflix shows. Like I just don't watch that crap anymore. And I think that instead what I'm watching is the American experience on the gilded age or a review of a, new tube amp or an explanation on how transformers actually work.
+
+Like I'm a better man. for rabbit holes.
+
+[00:40:59] Alex: my first kind of like, you know, because I was very early internet user and I was in forums and stuff like that and rabbit holes were the first kind of real experience I had over the internet where you could find a topic and then click a link and then click another link and then click another link and it felt like you were kind of uh, Navigating like an, you know, like a detective through the internet and finding out new things.
+
+And it felt so satisfying, but even, you know, our beloved YouTube, Troy, like, I'm sure like now it's like, Oh, you like Carson. Here's all of Carson, everything Carson, because the, because it's algorithmic. Like the, you know, when I looked
+
+[00:41:34] Troy: Okay. That's a problem with the, with the algorithm that needs to be cured and tweaked a bit.
+
+[00:41:40] Alex: but as a behavior rabbit holes are interesting. Yesterday I listened to like a Lisa. Two hours of coffee Zilla and then I went, I went into a mild depression because I said there's so many of these influencers that are just like not getting any repercussions for their
+
+[00:41:55] Troy: well, well, um, can we pause for a minute? Because 
+
+
+
+
+[00:41:58] Coffeezilla
+---
+
+[00:42:00] Troy: Brian, who, tell us about Coffizilla, Brian.
+
+[00:42:02] Brian: well, he is Steven, Findelizen, chemical engineering student. he was a chemical engineering student at Texas A& M and he's a, he's a YouTube creator. He started a different channel called Coffee Break that didn't really take off. And then he, he saw a lot of, of the scams, particularly in crypto, and he, he rebranded himself as CoffeeZilla.
+
+He has this sort of film noir, thing going on, like he built the studio and he wears the suspenders like he's like someone out of like a film noir, movie. And, basically investigates online scams at the end of the day. He did FTX. he did, what is it? Was it Jake Paul or Logan Paul? Probably both of
+
+[00:42:47] Alex: Jake Paul, Jake Paul's like crypto scam with, crypto zoo. He did, he did Mr. B stuff. and, yeah, I 
+
+[00:42:54] Brian: But 
+
+he's like 27 years old, right? And he's like an independent guy. I think he's got like a, I listened to the, the Joe Rogan one with him. And he's got like maybe a couple of people like who, who work with him. And, I think it's fascinating because 
+
+[00:43:09] Alex: he's, 
+
+he's Patreon. it's also like if you, I don't know, because I don't think our audience are going to be people that are, maybe attracted to Coffee Zilla because there's a whole aesthetic. It's, it's kind of, it has pretty good production values, but he is, you know, he wears suspenders.
+
+He, he's called Coffee Zilla, which makes no sense. His videos are set within, kind of a virtual. Cyberpunk world, there are parts of the video where he goes to a bar and speaks to a robot, because I think he's also, he also, 
+
+likes making computer graphics. so it's very, yes, it's, it's, it's, it's very specific and you might be turned off by some of this stuff, but it is some of the most compelling to watch and infuriating,investigative content on the
+
+internet.
+
+It's, it's, too, right? Yeah.
+
+Yeah, yeah,
+
+[00:43:58] Brian: Mr. Beast is one guy I could definitely see like a, a downfall, like a entire like Netflix series about
+
+[00:44:04] Alex: Brian, none of these people are getting there's no repercussions. Are you there's no repercussions. The 
+
+only 
+
+[00:44:11] Troy: Brian,
+
+just this, 
+
+[00:44:12] Alex: repercussions
+
+[00:44:13] Brian: But, but here's what I think is important about Coffeezilla is like, I think a lot of times people in the institutional media are like, well, who's going to do the investigative, you know, journalism, he's doing a form of investigative journalism.
+
+He might be talking to a robot bartender. I mean, I think there's going to be a lots of coffee zillas out there. I mean, there's, there's sub stacks, you know, like, the bear cave and, you know, they're, they're basically, you know, almost like a, short seller sort of research kind of thing. And they're in specific areas, but I think that there is an opportunity.
+
+And you see with, with coffee zilla to have real investigative work being done. and I think a lot of times it gets dismissed. I mean, Troy, you had, brought up in the newsletter, this Julia Angwin,who used to be a Wall Street Journal reporter. She, she did a, a research report recently about what like mainstream media can learn from, from creators.
+
+And, you know, you gotta have, you gotta be talent and you gotta
+
+[00:45:11] Troy: but that was really, that was really good, perspective. If, if just to visit it for a second, because we rely on media brands and the processes that they employ to create this kind of understood relationship between reader and brand that there's kind of trust in that transaction. And that, journalist kind of fits into that scheme and it's assumed that they bring, you know, the trust of the institution to the table.
+
+And this report, which was called the future of trustworthy information learning from online content creators kind of said like, well, that's actually not true because people don't trust the media like they used to, but they, but their trust, Levels are high in many cases with creators. What do creators do to create trust? And they sort of, she, she sort of broke it down into like transparency about their expertise and intentions, putting that right in the content, not assuming that it's there real interactions with not like, you know, interactions in comments with the audience and, and, and incorporating feedback from the audience.
+
+And just kind of like, it's not pretending to be objective, but trying to be sort of. Transparent instead. And, and I just thought that was an interesting reflection on how trust is created in this new media mode that, that what that's sort of replacing the trust with the blind trust we have in institutions.
+
+[00:46:43] Brian: it never really made sense. The idea that someone just because someone got hired, That makes that you should be, you should be trusted because like HR like approved you. I mean, to me, it's the same with credentialism overall. Like, you know, people who constantly remind you like where they went to college or God forbid the Stuyvesant people.
+
+like big deal. Like, what did you do? Like, who cares? Who cares that you went to like Harvard? Why do I, why do I know it? Like, why do you keep telling me it? And I think in the same way, like we're in a populist time and that kind of, you know, unearned, credibility. Is, is gone. And so it needs to be rebuilt.
+
+And I think it needs to be rebuilding a lot of these organizations, around, you know, their individual quote unquote talent, you know, I think the wall, the Washington Post this week had had more layoffs, right? But one of the layouts, they, they eviscerated their PR team that was getting their like reporters on like, you know, cable news and whatnot.
+
+And now they're gonna have like a talent division. You know, and I think that's like part of, of, of rebuilding these organizations is they're going to have to have, you know, individuals who, who build that kind of trust. Yes, there's going to be a halo of, of the brand itself. but that's just critical to me.
+
+[00:48:04] Alex: I don't know if the brand doesn't become though, like, it may be doesn't help or even hurts because a lot of these influencers, what they build is this parasocial relationship with their audience, right? It's one sided relationship, but the audience feels very connected to them. And they feel connected to them because they experienced the content that they're building professionally.
+
+They also often have like, You know side content of like, hey, watch me play some video games or here's here's something personal i'm doing so they feel really like they have, Insight into their lives and then the funding model is either, you know brands that The creator really gets behind Personally, or things like Patreon, which is, you know, the community itself, like funding it.
+
+And all of these things are then constantly scrutinized by the community. There's often the Discord server where people are talking. So it all feels really transparent. And I don't think corporations can, Ever match that because there's just like legal HR concerns, all of these things that once you get into, into a corporation, you no longer have the capabilities to do that.
+
+So it's going to be hard to build the same type of trust with. You know, somebody that works at the New York Times or, you know, then a coffee Zilla, who's like an really independent spirit, like just from, from the ground up. and so, so I don't know, I don't know how you even copy that model because, because it's so fundamentally different.
+
+[00:49:29] Brian: I don't know if you copy the model, but I think that you, you, you have to like, Learn from it and, you know, like I think like we've talked a lot about what Marquise Brownlee, like, what is it? MKBHD. I get the letters sometimes confused. and he's the new Walt Mossberg, right? Like, I mean, Walt Mossberg was the, it was like the most valuable page that the Wall Street Journal of advertising that the Wall Street Journal would sell supposedly was the one across from Walt Mossberg's column.
+
+Yeah. Right. And he one day was talking to like an ad salesperson. He's like, what does that go? And he found out how much it went for. And he was like, he, he did the calculation with how much he was paid. And he was like, Oh, brace.
+
+[00:50:10] Alex: Yeah. I mean, and I think that's what also happens, right? One of the kind of best example of the collection of creators was, I don't know if you remember, there was a time where Bon Appetit had this like incredible YouTube channel, it was in the kitchen, they had a cast rotation of all these different people that came in and that blew up pretty spectacularly and they all went up and did their own things.
+
+You know, most of them are quite successful. The thing is like, once you raise somebody to a level where they're successful, Why wouldn't they go, you know, independent? I mean, especially a lot of people who make content are kind of independently minded, you know? why share the spotlight? Why share the profits?
+
+Why? I don't know. I think it's, I think all that stuff's going to be hard. I think, maybe the way to look at yourself if you're a media company is more like a talent agency, right? Like you said,
+
+[00:51:00] Brian: Yeah, I mean, the Puck model is interesting, right? Like, I mean, they're sort of running out of the, they're becoming more to me like a traditional, you know, media company. I mean, they have publications now with multiple authors. So it's not just individuals. There might be a lead in that, but some of them don't like, but they at least have, you know, put the, put the personalities, or the people at least in the early ones, they, they had, You know, they had equity in the company.
+
+They were partners, I guess they called
+
+[00:51:27] Troy: But while we're on this topic, Brian, you went off in the, in the chats this week about Lex Fridman and,
+
+[00:51:33] Brian: Oh, uh, and, and, 
+
+[00:51:35] Troy: and I don't know, I don't know what you got against Lex Fridman. I think that he's kind of fallen out of
+
+[00:51:40] Brian: I don't, I don't under, I don't understand the appeal. I understand the appeal of a coffee Zilla. I understand the appeal of, of Joe Rogan. I understand the appeal of a lot of, of, of these characters. Some like, you know, if they're not like a Mr. Beast, like I'm not like a 13 year old. So, I mean, I take that, but like with Lex Friedman, I kind of don't get it.
+
+Like, I don't get like, he, he got an interview with, With Zelensky and he talks in this monotone and he wears the black suit. He looks like an undertaker. And, and you know, his, his tech podcasts are good. You know, he's, he's, you know, He, he's very technical, I guess he's, he's at least, computer scientist, when these guys get out of their field into politics and into, you know, things like, like a serious situation like in Ukraine, and he interviewed Zelensky and, and there was this ridiculous back and forth.
+
+About what language they were going to like talk in and like he wanted to do it in Russian and Obviously Zelensky is not going to do the interview in Russian like Zelensky is a native Russian So he's not going to do it in Russian. I mean, that's just dumb. Like I mean, they're they're at war with Russia anyway, they did the dubbing and whatnot and he did the three hour interview and he I watched it and there were so many points where it was just this, like, this naivete of him being like, you just need to love and you need to like, just like, dude, you're talking to the president of a country at war.
+
+Like, I'm sorry, it's not just like, yeah, you have to understand Putin loves his, his country. It's like, no, like, that's just not gonna, you know, I think Zelensky came, came off pretty good during it. I don't think, I don't think Lex Friedman did. And, you know, he's talking about Joe Rogan's comedy club.
+
+Are we kidding me? I'm like, I'm not sure if we need to go back to like, just having like traditional media do these interviews, but like, seriously, we're like, he's like, you've got to come to Austin and go to like Joe Rogan's comedy club.
+
+Not a great 
+
+moment. 
+
+[00:53:48] Alex: his
+
+[00:53:49] Troy: He said that?
+
+[00:53:50] Brian: yes, he was. He's like, I want to bring peace. And Zelensky was like, well, I've got a busy schedule. Yeah.
+
+[00:53:59] Alex: he's, he's sycophant and he started doing that with all, he, he kind of, I think, allows his guests to feel like, you know, philosopher monks, like he is talking about, like, but isn't it all about love and brotherhood and, and oh, yeah, yeah. And then they try to like, you know, be very thoughtful and philosophical.
+
+He's a dork. And he, he's, he's, he overplays his hand every time. He's not even. technically that interesting to listen to. he's somebody that keeps reminding of humble, curious, and, and loving he is, which is always a fucking red flag. yeah, he, just like, you know, you get a guest and then it brings another guest and everybody loves really like, wow, that's good.
+
+This is going to be the safest place for me to, to spout all this stuff out. rich and powerful these people are, the more they love hearing the sound of their own voice. I mean, look at us. and he gives this really cozy, comfortable, little warm duvet of like, you know, fucking nonsense, like just like fuzzy philosophy around stuff.
+
+And then maybe, maybe Trump is all about love. And maybe, maybe we all are about love. And, he's just a bullshit artist. yeah, I mean, the, the quicker that type of stuff, like, goes away, the better, but I'm, I'm afraid it won't, you know? And you can see Zelensky's fucking frustration, in his eyes.
+
+Like, you know, having to remind him, hey, you know, when somebody carpet bombs your family, it's really hard to love that person when they're not getting any. And so, I don't know. I find all these people. He's kind of like, an example of mediocre tech people that have outsized, outsized success. And, let that go to their head and start feeling like they're some sort of techno guru.
+
+[00:55:39] Brian: but this is a particular execution issue to me. Like, I think there's a space for alternative media to have these kinds of conversations with. All kinds of people, including world leaders. I think they have a different dynamic. I don't think it has to be just someone from 60 minutes having like a edited interview.
+
+Like 
+
+[00:55:59] Alex: I mean you
+
+don't have to convince me of that. Like I wish everything was just on YouTube I wish CoffeeZilla did that interview.
+
+[00:56:05] Brian: All right. Should we get to the good product? 
+
+​
+
+
+[00:56:09] Good Product
+---
+
+[00:56:11] Brian: Do we have a good product? I have a good product. If you don't, if you
+
+[00:56:13] Troy: We got some good products I got some good products this week,
+
+[00:56:16] Alex: It's CES So there's that masturbation device you saw on
+
+CES. Yeah quiet.
+
+[00:56:22] Brian: Middle aged men talking about that stuff 
+
+is just not,
+
+[00:56:25] Troy: Yeah, well, you know, this is I was gonna start an ode to the breakfast meeting, but I won't I won't go there I think breakfast meetings are the best. They're the best Meeting of the day, but, they used to do these great breakfast meetings at the private dining room at Hearst Tower that they were always so good.
+
+the, the other one I want to get into my good product, but just on the way there, I've been consuming these just now and then instead of alcohol, these, this company called Can, C A N N, which are. I have like a cranberry Sage THC refresher, but it's only a couple of milligrams. So you can bang back a couple and just kind of takes the edge off a little bit.
+
+It's nice product can cranberry Sage THC refresher. It's a nice product, but you know, there's a company, I don't know if this is a good product or not, and maybe I'll get feedback or you guys will. Cause I don't think that one should have too many appliances on their countertop. I think that it's, it's.
+
+You know, messy and noisy, but this company Ninja has taken over tick tock such that people, you know, of my daughter's, my youngest daughter's age get influenced by their blenders and things. And, she brought home this upside. It's basically an upside down blender positioned as an ice cream maker.
+
+And what you do is you, every night you freeze. whatever you want to freeze, whether it's, you know, a frozen margarita or, you know, bananas and almond milk and vanilla and a little bit of sweetener. And you freeze it and then you put it in the machine and the machine drops down this whirling blade into your frozen thing and it turns it into ice cream.
+
+And, it's a countertop device and think, you know, a blender turned upside down that. does this
+
+thing. it called, Troy?
+
+It's called the, the Ninja Ice Cream Maker. I
+
+[00:58:24] Alex: what it's called?
+
+[00:58:26] Troy: think so. And what's interesting about it is what comes out of it is really good. yummy. yummy. So that's a good product. It's a good 
+
+[00:58:34] Alex: Yeah 
+
+[00:58:34] Brian: have, they have another popular thing out there. The, they've got a crisper. They got a new, they've got a new air fryer. It's glass and it apparently, it's, I don't know, it's, it makes crisp, things crispy.
+
+[00:58:46] Troy: No, Ninja, I thought it was, you were going to say it makes like you a new kidney or
+
+[00:58:51] Brian: no, no, it's just crispy. I mean, that's why they call it the ninja ice cream maker makes ice cream and the ninja crisper makes things, well,
+
+[00:58:58] Troy: yeah, I mean if you got room on the counter and you want to make ice cream every morning, it's kind of a nice, it's a nice thing. 
+
+[00:59:04] Alex: ice cream in the morning is weird But it's it's also called a ninja creamy and it is all over tiktok.yeah, it's probably You know product of the moment in september 2024. So thank you for bringing this to our attention troy
+
+[00:59:18] Troy: yeah. Once again, I've smashed it with good product. Yeah.
+
+[00:59:23] Alex: want to make troy happy just get him bring him some ice cream at the morning meeting Make him feel
+
+[00:59:29] Brian: Where, where do you like to have your morning meetings? Do you have, what are your go to
+
+[00:59:33] Troy: Oh, every time, Crosby Street Hotel, that's where I go.
+
+[00:59:36] Brian: Oh, okay.
+
+Yeah, I saw, you know, your boy Scott was there today, Scott,Why?
+
+[00:59:42] Troy: Scott Galloway, you know,
+
+and, uh, yeah, I think he's tall, right?
+
+he was sitting down, but he is tall.
+
+Yes, Karl Lagerfeld there once.
+
+I met with the, I, I had a nice breakfast with the ex CEO of Politico who stumbled upon our podcast and, became a fan of it.
+
+He likes, he likes you guys.
+
+Wow. I don't know how this one's gonna turn out. I feel I, I was, well, that's but I appreciate it. Thank you. Well, why don't you bring a little po I know. Do you got any positivity before you bounce anything positive to add to this podcast?
+
+[01:00:17] Alex: what's bringing you joy right now? Alex,
+
+I, you know, I think, there are many good, thoughtful creators and comment, and commenters on YouTube. And sometimes when I feel like the world is crazy and I turn on the news and nobody's talking about it, it's nice to get online and hear people say that, even though it's essentially things that I know.
+
+so folks like CoffeeZilla, you know, highlighting things or, things like that. I find that engaging.
+
+[01:00:45] Troy: I have a good, I have, I have one already lined up for next week with,do you want to u 
+
+[01:00:49] Brian: Creator.
+
+[01:00:50] Troy: do All right. What's your good product? Just outta curiosity.
+
+[01:00:53] Brian: My, my good product is, 
+
+[01:00:55] Alex: rude now. 
+
+I'm 
+
+an IV.
+
+[01:00:57] Brian: Yeah. And IV is amazing. I got, I got a norovirus this week and I had to, I had to go to the hospital. I don't know. I don't know. I've ne I do not, I'm not sickly. I, I got the PVA virus and then I got this norovirus. I don't know what exactly is going on.
+
+it was very, very
+
+[01:01:12] Troy: what ha what ha, what Well, Nora, Nora, Nora, Nora is, Nora is everywhere. And also, you know, IVs, IVs, at least in, in some California circles, you know, it's the, it's a great cure for hangovers. People 
+
+[01:01:27] Brian: Oh, I, 
+
+I'm in Miami . There's 
+
+[01:01:29] Troy: Yeah. 
+
+right, like two blocks away. Have you tried the nin, 
+
+[01:01:32] Alex: in New York. That's true.
+
+[01:01:33] Troy: the Ninja IV 
+
+[01:01:35] Brian: It's 
+
+[01:01:37] Alex: shoots, it shoots ice cream straight into your bloodstream 
+
+[01:01:40] Brian: have had like, 
+
+[01:01:41] Alex: cannabis infused as
+
+[01:01:42] Brian: I used to run like a lot, like a lot of long distance races and I got super dehydrated a few times and had to go into the medical tent. I would get an I. V. I would go from like, I've gone from like, not knowing where I was. to feeling completely fine after, after an IV. IVs are amazing.
+
+it did the trick with this. I didn't feel like amazing afterwards, but it got me on the road to recovery. So never turn down an IV. That's basically my advice.
+
+[01:02:12] Alex: Wherever you are, you could be anywhere.
+
+[01:02:14] Brian: Honestly, in, in, in triathlons, like, they make people like, after they finish, like, particularly iron Ironman races, they, they make you, they weigh you beforehand and weigh you like, when you go into the medical tent, because a lot of times people fake needing an I.
+
+V. Because they know that it will speed the recovery so much, and they'll feel so much better. So they don't really need it, like, technically medically, but it's like, such a bonus.
+
+[01:02:42] Alex: Right. 
+
+[01:02:43] Troy: go folks. 
+
+[01:02:44] Alex: All right. You've heard it here. 
+
+
+
+
+[01:02:46] Outro
+---
+
+[01:02:46] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+Thanks 
+
+[01:03:21] Alex: right. 
+
+Thank 
+
+you. 
+
+Bye. Bye. 
+

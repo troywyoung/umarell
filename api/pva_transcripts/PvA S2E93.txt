@@ -1,0 +1,839 @@
+PvA S2E93
+===
+
+[00:00:00] Troy: Alex, I had sent a New York Times profile on JD Vance and he returned, an article that's called In the Room, where German tycoons agreed to fund Hitler's rise to power. I think I should introduce you to this guy. I think you'll get along.
+
+[00:00:13] Alex: I mean, nothing's quite like anything, but
+
+it's a mess right now. 
+
+[00:00:17] Troy: judging from our feed, our communication, you like a little drama.
+
+[00:00:21] Alex: I like a little drama. I actually, I don't want
+
+[00:00:24] Troy: You're a bit of a drama queen,
+
+[00:00:25] Alex: I think this week was, was drama
+
+[00:00:27] Brian: Well, I want to talk a little bit about the drama. everything can become a political podcast. This isn't political. To
+
+[00:00:32] Troy: Drama!
+
+[00:00:32] Brian: it's a media story. and that's the angle I'm most interested in, personally. 
+
+
+[00:00:37] Intro
+---
+
+[00:00:59] Brian: Welcome to People vs. Algorithms, the show about detecting patterns in media, technology, and culture. I am Brian Marcy, and each week, I am joined by Troy Young and Alex Schleifer. This week, we had to cover the assassination attempt on Donald Trump. It was a stress test, in my view, for the information space, and a reminder of just how much Media has changed.
+
+I mean, you had mainstream news outlets jockeying with individuals holding forth on X and Reddit with a collection of expertise, conspiracies, jokes, memes, and partisan potshots. Some of it was informative. Some of it was frankly hilarious. Some of it was undeniably infuriating. And much of it was, and I realize we are talking about an attempted murder here, much of it was entertaining.
+
+and that is what the information space is. Warts and all is in my view. so we better get used to it. As Troy put it in our discussion, the network is the media and for what I've taken to calling package news media, I think we saw a future path, and that's serving as a counterweight to the chaos of user generated content on places like Reddit and X and instead presenting a slower.
+
+And more neat package of information for those who frankly have better things to do than piece together, random slivers of information, some true and some less so in order to arrive at a semblance of what passes as truth or perhaps more prosaically as reality. it's a vital role, although it's, likely a diminished one as the package Media industry becomes yet another node in the network.
+
+I hope you enjoy this conversation. we also have,some very good, good products to discuss at the end. if you have feedback, send me an email. My email is bmorrissey@therebooting.Com. Thanks.
+
+
+[00:02:48] Episode start
+---
+
+[00:02:50] Brian: I don't know if you guys saw, there was an assassination attempt,this weekend. and to me it was indicative of, of how Entire media world has changed because it was like totally in the information space and you could dip in and out to different, outlets.
+
+You could go onto X, you could get the unfiltered feed, you know, you could wait for the packaged,what it all means, but to me, the, the big takeaway was, was kind of packaged information versus raw information. Cause I think we're seeing a bifurcation. Where mainstream media will end up playing a slower bit more plotting role and have a productized version of the news.
+
+Some of it will be leaning towards, people's biases. But on the other hand, you have places like X that, are complete information chaos. And you, you can dip in there, gather enough raw material to support your case or to make a meme and, and, and then go on with your life. And I think the best is, is both personally, but I'd be interested in hearing how both of you sort of how you encountered this obviously very historic event, with your media choices.
+
+Alex, you're, you're, you're living in the future, so you go first.
+
+[00:04:06] Alex: You know, I was writing some notes about it. Actually, I spent most of my time on Reddit with this because it's actually where I, found out that it was happening. I was just reading something on Reddit. I refreshed it and it was at the top. and then, the comments were a pretty good way of tracking things in real time. tried to switch over to radio or, or news to have something in the background. And I realized that I didn't have any access to that easily.
+
+I, I, I didn't know really what to find. CNN stuff, stuff wasn't quite working. YouTube wasn't a place where I could. figure that out. so I think, yeah, I think Reddit was the main place. Then Twitter was a hell storm and, to Zack's credit, Threads managed to stay really unpolitical.
+
+I went on there and there were people talking about fonts and movies. So if you ever want to get out of the new stream, it's the only place. It's the safe place to go. which is kind of amazing. I mean, it's an, I think it's going to be valuable. I think it's a great strategy to have a place that doesn't have any of the mess,
+
+[00:05:04] Brian: So were there memes on there? There were no memes or anything?
+
+[00:05:07] Alex: It was surprisingly, tame. Yeah, no, there was a, I mean, there were a few people,talking about things, but it was surprisingly
+
+[00:05:13] Brian: sounds terrible.
+
+[00:05:14] Troy: Sounds awful.
+
+[00:05:15] Alex: Well, I mean, you don't always need to be blasted with, 
+
+Oh, I, when I, my, my wife told me we were out, we were, actually we're in like dime square. Have you ever been to dime square? I was like 25 years too old to be there. What is that?
+
+[00:05:28] Brian: an area of Manhattan, I guess the Lower East Side slash Chinatown that became popular, particularly with the young people during the pandemic, because they sort of closed off streets and took it over.
+
+So it's actually the most European area of Manhattan. of New York where you have like outdoor
+
+[00:05:45] Alex: Sounds great.
+
+[00:05:45] Brian: and it's great, you know, when you enter it, when you hit the Chinese takeout, van that actually sells weed, there's no Chinese food there.but, I immediately hit, hit X. I wanted the, I wanted the raw feed. I mean, I've balanced it out. I'm like, okay, well, I'm not going to take, and it's the thing. It's if you're going to, if you're going to go into that environment, I think media literacy is the answer. Cause you're going to find all kinds of stuff. Half it's going to be completely untrue. There's an amazing amount of memes and there's some interesting information and tidbits that, you're not going to find in the packaged media.
+
+So I think it's part of a, a healthy diet. It's like a, it's like a Krispy Kreme donut,
+
+[00:06:26] Alex: let's, let's, let's rate it. I mean, this was a big news event. This was the news event of the decade, probably. Well, how do you rate X, the new X during that time?
+
+[00:06:36] Brian: Troy.
+
+[00:06:37] Troy: Well, I, I, I don't, I don't think that's the right question. 
+
+[00:06:40] Alex: Great.
+
+[00:06:42] Troy: let's talk
+
+[00:06:43] Brian: That's when you know, someone doesn't have an answer.
+
+[00:06:44] Troy: Yeah.
+
+[00:06:45] Brian: Let's talk about measurement.
+
+[00:06:46] Troy: I mean, rate it, right. I mean, as, as an immediate reaction, I don't keep saying that, but as an immediate reaction, I think it was, useful as a second time period, kind of everybody's doing their own analysis and representing different points of view and interest groups.
+
+It was, there was some voyeuristic pleasure in it. So you could see the X green beret sniper seeing, that the way this unfolded was implausible, or you could hear,Elon Musk fully repositioned himself as, a supporter of, the RNC and Trump, you could see, crazy conspiracy theories and some humorous kind of stuff alongside it.
+
+So, it's, it's what, it's what you expect it to be. And then if you're a thoughtful media person, you move between, I think it and whatever your other chosen sources are, the Atlantic, the New Yorker, the New York times, cable news, if that's your. If that's your jam, but I think it's the reason I say it's not the rating of it is that, media like I want to talk about media broadly and what, what this moment, I think, like Brian kind of it's teaching me as I think about that's what I'm interested in about about what the new world looks
+
+[00:08:06] Brian: Well, this is part of the new world, right? So I'm reading this book when the clock broke and it's about con men, conspiracists, and how America cracked up in the early nineties. Sound familiar? And like when you're reading it and you start to get into the talk radio, and I can remember during that time, talk radio was blamed for some kind of like lame assassination attempts.
+
+some guy like tried to fly a little Glider, like into the white house and it was blamed on talk radio. I was like, Rush Limbaugh did this because, and a lot of this really repeats itself. And when you're going, when I'm like reading the book so much as like resident of the current situation, technology was blamed for, dividing people for making them lonely.
+
+I mean, even the, the ATM machine was being blamed because then you didn't have to go into the 
+
+[00:08:54] Troy: Well, yeah. To me, 2 24 is the moment in this, what you call the, I guess everybody calls the information space that seemingly Trump understood before others. And the one, this, the environment that enabled him to, to kind of legitimize his instinct to trade conspiracy for truth to deposition, his rivals with I don't know, like a low energy Jeb or a sleepy Joe or a lion Hillary.
+
+it was normalized and. Through that normalization,to me, the, the Democrats are like, where are we? How do we play this game? Do we play this game? And in the meantime, he took complete and total command of the Republican Party. And now, we'll see. Maybe he can moderate. But it just it felt like a time, or it feels like a time to me, where the right defeated the media. And maybe that's a big statement and a little hyperbolic, but, the media in the kind of right vocabulary, right wing book was always the necessary other, right? It was liberal dominated. There was a sort of style and kind of disposition that was naturally anti Trump because he's distasteful to the, to the tasteful.
+
+It was anti intellectual. they're anti intellectual, it was intellectual. Maybe the media was always an antagonist in some level to the conservative cause, but not nearly as much as when Republicans shifted their party from sort of right wing gentlemen to the party of the disenfranchised. And it just feels like,I, there's a couple of, I grabbed a couple of, of, of quotes that also kind of to me memorialize it.
+
+It was this bitter exchange between Donald Trump Jr. reporter on the floor of the convention, I think his name was Jacob Servaroff, and hefor specific about what's Trump's father would do on the immigration issue and to which Donald Trump Jr responded, I expect nothing less from the from you clowns every day, even 48 hours later, you couldn't wait.
+
+You couldn't wait with your lies and with your nonsense. So just get out of here.and then, and then Carrie Lake, do you know who Carrie Lake is? She's a senatorial candidate from Arizona. She's a former anchor, actually. She said, when she got on stage at the convention, she said, Hello, America. Welcome everybody who's watching at home and welcome everybody in this great arena tonight.
+
+We love you all. Actually, wait a minute. I don't mean that. I don't welcome everyone in this meeting in this room. You guys up there in the fake news, frankly, frankly, you guys up there in the fake news have worn out. You're welcome. And so there's, this, there's obviously antagonism, right?
+
+But it's to me, if I was going to remember Trump for anything, it was this, it's we live in a time that like media's largely been hijacked by, Trump and the, the people around him. And by the way, when facts die, you don't really need media that much because you just make up your own.
+
+[00:11:48] Brian: Yeah.
+
+[00:11:49] Troy: that's kind of the time we're, we're, we're living in and it's just, I just think it's really interesting and then I think if you want to keep going down this, this political thing, I think then they've sort of found a new intellectual center in JD Vance, right? And he's useful to power the new kind of Republican media machine because,he creates connective tissue between, like he creates the sort of the idea or the intellectual center and also a space where you can connect right wing issues to people.
+
+That's his, that's, that's what he
+
+[00:12:23] Brian: Yeah. I, I thought it was interesting is how, and I do think that, I think how, quote unquote, the media handles Trump too, it's going to be a totally different situation. The hashtag resist thing is not going to be very tenable. There's not going to be some sort of Trump bump, but I did think that overall, quote unquote, the media did a pretty good job of not, you know, rushing things.
+
+I think, you know, look, everyone's looking for screenshots and I'm saying, you know, Trump rushed off stage when something immediately happens. Let people on Twitter speculate, let people, you know, say that, Oh, this is an inside job. It's, I think that there's a really good lane for packaged media. And that's what it is at the end of the day.
+
+It's always going to be slower. It's always going to be less interesting. And it should be like trying to out Twitter. Twitter is dumb. And,
+
+[00:13:17] Troy: I totally agree.
+
+[00:13:18] Brian: and so that like even taking off, you know, morning Joe. while it might, you know, in the near term backfire, I
+
+[00:13:25] Troy: Well, that was weird because that's a reaction
+
+show and that's a. 
+
+[00:13:28] Alex: can you bring us up to
+
+[00:13:29] Brian: Yeah, basically, you know, Cesar Conde, everyone is trying to reposition for what's to come, because I don't think anyone believes anything other than it's just a matter of how much. At this point, Trump is going to win by it. And that's why you see the people bending the knee. That's why you see Jeff Bezos rushing out like a tweet.
+
+And, and you see this in Silicon Valley. Power, power recognizes power and Trump is, is coming back to power. And he's going to have a tremendous, it looks like he's going to have a tremendous amount of political capital. And that is a situation that anyone who's close to power understands very well.
+
+that's why everyone's scrambling to get to
+
+[00:14:12] Troy: Well, there's
+
+[00:14:13] Brian: But I think with Morning Joe, they took him off, him and Mika, I guess, off the air for Monday. In order to basically just protect themselves because they position themselves as an oppositional force. And they speak to a certain part of the progressive spectrum.
+
+And, I don't know, it's to me, it's just a prophylactic. But overall, I think, I
+
+[00:14:35] Troy: doesn't seem particularly
+
+courageous, 
+
+[00:14:37] Brian: I think they did fine. They
+
+didn't rush to judgments. They kept a lot of lunatic, lunatics off the air. They, you know, there were some missteps, but you're always gonna have them.
+
+[00:14:46] Troy: know, to me, one thing I was thinking, Brian, is that the term misinformation feels wrong and kind of almost old fashioned because it presupposes that there's sort of like real information and fake information. And, and the way that we described how we consume media, I think the truth is different. It's layers.
+
+There's the reaction layer and then a kind of interpretation point of view layer and a kind of packaging media layer and they all coexist. It's not like there's misinformation and truth.
+
+[00:15:16] Brian: Well, I think that's the big change, right? I mean, there are, like, facts, right? But I think that's where a lot of the conservative view of media, and frankly, the Silicon Valley view, which is, is sort of merging into one, is The media should just be unearthing like various facts and and then they're going to be packaged upstream for people to get more value out of it.
+
+And we see this again. I mean, this is why I believe that there's emerging is because this is the Silicon Valley playbook. They want to commoditize everything and then be upstream of it and control it and take all the benefits from it. And that's why Elon Musk loves Twitter. It's like, okay, here's the raw material.
+
+I can form the raw material and create like the value and take all the, the sort of the value that's created
+
+[00:16:01] Troy: Yeah, I think that's right. I think that there's shared purpose in the power of platforms to enable participation in media and the, call it the rights need to kind of, what's the puck term, defenestrate media because it's, and, and to rob it of its
+
+[00:16:20] Brian: and then to cite it and then to cite it all the time
+
+[00:16:23] Troy: When it's 
+
+convenient, 
+
+[00:16:25] Brian: because someone has to go out there and gather the information It's not just gonna be the random sniper on on Twitter and so You know, you, that's why you listen to say the all in podcast and they'll go from, from basically saying the media is all corrupt and everything to citing the Financial Times of Bloomberg and the Wall Street Journal.
+
+And it's like, wait, choose one. I think that's just inevitable. but I think the role of The, the media will be to really lean on what they're the best at, which is, which is reporting.
+
+[00:16:59] Troy: you know, what's been one outcome of this? That's quite shocking, frankly, and I think would have been hard to predict is the normalization of conspiracy theories as part of a kind of broad storytelling
+
+[00:17:10] Brian: It's not going away. It, to me, it's like memes. They're here to stay because they're great storytelling techniques, right? Everyone loves a conspiracy.
+
+[00:17:18] Troy: Do you like conspiracy theories? Alex,
+
+[00:17:21] Brian: What's your favorite conspiracy theory? 
+
+[00:17:22] Alex: uh, I don't you got your news, so I didn't get that many conspiracy theories. It was, I mean, it depends if you're talking about, you know, the media or Twitter or Reddit, just. definitely a lot, happening right now. I'm honestly,
+
+[00:17:37] Troy: you're shaken,
+
+[00:17:38] Alex: know, I'm just a little concerned about how we're discussing this stuff.
+
+[00:17:42] Troy: you know, I think we're in a news environment where it's hard for people to get the right information. And I think, it, it doesn't seem to really matter what the source is because at the end of the day, people just have access to media. And it turns out that. I think people, are not as kind of, discerning.
+
+[00:17:59] Alex: Well, no, I think there may be more discerning than we think.
+
+They'll listen to the stuff that makes them happy. And I think people are pretty quick to switch from Fox to Twitter to CNN, even if they don't like what they're hearing, because I think people take news as entertainment. and in the moment there's something happening and You know, everybody's going to glue to it for a second, but then it kind of becomes boring.
+
+so you switch to something a little spicier. Like I remember, I went camping with friends and, across the river, we had a bear with a bear cub eating berries and. an eagle, a bald, bald eagle landed right next to it. And we were, holy shit, this is the greatest thing we've ever seen. And we were watching it for two, three, four minutes after seven minutes, eight minutes, we were like, eh, kind of seen enough of this.
+
+And I think, I think what's happening right now is that people are switching between all these media sources for, for, for entertainment. And, the conspiracy theories are entertaining. I don't really know what people believe anymore, because, I mean, the fact that we're talking about Trump winning and that being, just the way it's going to be is kind of bananas when you, when you think about it, it's also kind of bananas that, Biden's still running, even though he has trouble stringing sentences together.
+
+So I'm a little shook up about that. But when it comes to people and their, media, I think everything turns out, ends up being entertainment.
+
+[00:19:24] Troy: Hey Alex, the good news in all this, and it made me think of you,
+
+[00:19:28] Alex: I have a European passport. I agree. It's great
+
+[00:19:31] Troy: no, it's that, it's about gaming Alex. And I was, I thought about this when I read, there's this piece on the, I can't remember what it's called, on the flattening by, Charlie or sell in the Atlantic. And in the end of the piece, he writes, quote, he said on X.
+
+I saw a post in my feed suggesting ironically or not, quote, I know this sounds insane, but everyone will totally forget about this in 10 days. And he said, the line is stuck in my head for the past few days, not because I think it's true, but because it feels like it could be the flattening. of time, of consequence, of perspective, more than the rage or polarization or mistrust is the main output of our modern information ecosystem.
+
+And I was thinking about it like, almost like watching my son play video games, like play Fortnite. And it's like this kind of, in my mind, the kind of essence of these gameplay environments and watching them play. Whereas, you watch the kid move from one skirmish or fight in the game to another.
+
+Gleefully sort of yelling obscenities at his friends with his headset on, or his enemies I suppose. And they just, you just kind of live in this world. Most of which is abstracted away where you, you live or die and you come, you know, you come back to life and, you move from kind of one minute of excitement to the next.
+
+And it's, I guess it's the consequence of kind of total virtualization. It just
+
+[00:21:00] Alex: But don't you feel, don't you feel like we're already moving away from that story? Like doesn't, doesn't it feel further away than the Reagan assassination attempt? After just a few days?
+
+[00:21:10] Troy: well, that's what he was saying.
+
+[00:21:12] Alex: I mean, he was saying that hypothetically, but aren't you feeling it in real time, in real terms now, doesn't it feel like it like where, I think this is why the
+
+thing might even have less of an impact that photo might have less of an impact
+
+[00:21:25] Troy: is the world more insane or is the way we navigate it different? 
+
+[00:21:29] Brian: I think that's the way we navigate it. But I mean, Alex, like you're, you, you said that like basically the best media businesses are going to be ones that are based around interactivity, right? So why would it, it makes sense then that conspiracy theories, memes, all this other stuff, it's an interactive way to engage in information, right?
+
+It's, it's more interesting. I would imagine it's way more interesting. Right, 
+
+[00:21:56] Alex: it's role playing it's because
+
+[00:21:57] Brian: passive consumption of what the New York Times or the Washington Post or whomever Says packages up your your quote unquote news content.
+
+[00:22:06] Alex: yeah. And I think, It's role playing and it's a way for you to play detective I think reddit is actually really good at that. There have been some incredible Reddit. People have recreated Trump's skull as it was moving,
+
+showing the 
+
+[00:22:19] Brian: Did you see that? I was that what did that happen on reddit? I saw it
+
+[00:22:23] Alex: I don't know. I don't know. But the fun thing about Reddit is that there's conversations around it, and that feels like interactive news, right? Twitter, for most people, folks, for most people, Twitter is just a stream that they kind of shove their head into and then step back out. Because Reddit has threaded conversations, you can actually follow a conversation, which I think is kind of interesting in this news environment,
+
+[00:22:47] Brian: Yeah, I get that but I think there's something in between that happens where maybe it's closer to twitch or something like that where there is an element of being Involved it's a dynamic experience. I think that to me is the most important thing rather than being an active participant in making the meme.
+
+Because I think the, the, the wonderful thing
+
+[00:23:09] Alex: No, no, but I think it's a format thing, right? I think, for me, where, when you're talking about it, you're watching people engaging with content in real time in some sort of structured way when it's a conversation and Reddit versus Twitter, which is just like things popping.
+
+And I, I do find it interesting to see where is the best place to go when news events like that happen. and I think it's the one that the ones that will win at the ones that can get you information quickly. And then once you've kind of. Gotten everything you want out of it. Have all this peripheral stuff that can exist around it.
+
+Oh, look, look at all these crazy, conspiracy theories that, that came, that came about this. Or, or, or look at this conversation or look at this, sniper expert explaining what happened to the trajectory of that bullet. I mean, all that stuff, if you want to dive deep, it's all there. And I think, People generally want entertainment, and this, this, as grim as it sounds, this was entertainment, this,
+
+[00:24:02] Brian: Oh, a hundred
+
+[00:24:03] Alex: 25 minutes after it happened, it went from being shocking to worrying to just this is not entertainment. And the entertainment could also be, You know, a lot of the kind of the comedians and stuff like coming out with jokes, some of them like in really poor taste because, you know, real people did die.
+
+but it can be kind of that more interactive detective work, which I think is, I agree. It's kind of fun, right?
+
+[00:24:24] Brian: Did you see the meme with Melania having a sniper rifle? just said damn.
+
+[00:24:30] Alex: There was so much so quickly.
+
+[00:24:32] Brian: Yeah, I mean, it was just amazing. And, and also the merch, just to go to Troy's earlier point, I give you kudos for being early on that. the merch was on Wildwood, New Jersey boardwalk, which is an amazing boardwalk if anyone has not been.was there by the next day, the, the, the Trump merch. And I think one of the things with, with Trump is, I don't know.
+
+I mean, the guy is clearly just built different. The fact that he popped up and had the presence of mind to create like the moment with the pumping the fist. I don't know. You don't teach that kind of stuff. And what was interesting to me was you've got thousands of smartphones there. And the iconic image is, was going to be shot on film by a professional photographer for the Associated Press.
+
+So there's room for, there's a room for like everything
+
+in, in this information space. 
+
+[00:25:24] Alex: well, not film before we
+
+[00:25:25] Brian: Oh, he didn't shoot It on film? 
+
+[00:25:27] Alex: it was a digital camera. It
+
+[00:25:28] Brian: Okay, fine. He shot it on a digital 
+
+[00:25:30] Troy: mean, something we've talked about before too, is the importance of group chat as a kind of even lower to the closer to the metal, information zone than Twitter. I found that a lot of news for me comes in group chats before I, like that's where it starts. And then actually a lot of memes hit the group chat very quickly.
+
+you guys were talking about one you like, this one's kind of funny. It's, Biden with a machine gun. And the line is, I think I just clipped Putin.but yeah, all kinds of them floated in. So that actually is one of my earliest sources of news is the
+
+group chat. 
+
+[00:26:06] Brian: So what are the longterm, what's the longterm impacts of this? Cause I think, you know, I think one of the things when this, when these kind of things happen, I find now they're just seized upon because you just take the raw material and you seize upon it to, to push whatever you want to push. Cause like immediately.
+
+I don't know, maybe it's my, my feed in, in X, I've just gone over to call it X, of the female secret service agent, who, couldn't holster a weapon or, or something of that nature. And immediately became seized upon as the symbol for all of the, there's a lot of these anti DEI people out there. I don't know, maybe I haven't, I haven't worked in a company for, for years, so I didn't, I didn't really know that DEI was, was so onerous.
+
+But, I wonder, I'm wondering what is the long term impact, if any, From, from something like this, right?
+
+[00:26:58] Troy: Well, I, I would go to my, back to where we started, which is, it's hard not for me to see this as, the conclusion of a, I mean, someone will write a book about this, of Trump's complete assent from reality, reality show Nipo baby to, a complete mastery and ownership of the Republican party in America and the next president.
+
+And I think ironically, a more moderate. States person. And that's my hope, by the way. And that I think that the, if, if you plotted out each chapter of this, you would not believe it. If I told you the story, you just wouldn't, which would be like, here's this guy. And, early in his campaign, they get them on video saying like crazy shit about women.
+
+And he goes on to be, there's court cases and he's indicted and blah, blah, blah. And he's redeemed with,in a kind of moment of martyrdom. And, he becomes, what is it like the, was it the 46th president? Is that what it is?
+
+47. The final. And, and to me, it's, it's not just the Trump story.
+
+It's a story of him navigating a new kind of media.he did it,
+
+[00:28:24] Brian: Masterfully.
+
+[00:28:25] Troy: Masterful. He did it. And so much so that it just became totally instinctual. Like him. Where are my shoes getting up? Fight, fight, fight. and I just, I think that Trump's story is a story of the disintegration of kind of packaged.
+
+Mainstream media and navigation of the new networked information space. And to me, you could sort of indict social media in that, but it's really not social media as much as a, it is a McLuhan esque thing where, but the media isn't social media, those are tools to read and write. The media is the network and it's as soon as it became two way and as soon as it just became like that's its definitional quality right that we are all creators now and in that space if you played it out the rules of kind of public demeanor of politics of, conspiracy versus truth of all of that changed in ways that just I can't, I can't Now it just kind of seems almost normal.
+
+So the long term impacts of what happened is, I think that this is the new normal.
+
+[00:29:32] Brian: Hmm. But what is it going to mean in like, when we're living in MAGA America, let's just assume we're going to be living in MAGA beginning next January. I'm interested in what, in what cultural changes that that can bring. I mean, obviously we can, I I'd rather leave aside the, the democracy collapsing stuff.
+
+I know it's, it's obviously very important. but we're not going to hash
+
+[00:29:53] Alex: That's not, let's not bum ourselves out with that.
+
+[00:29:56] Brian: Well, we're just not going to hash that out. And I feel like everything goes there and it's, it's also 
+
+[00:30:00] Alex: we, that's not what we, what we
+
+[00:30:02] Brian: I don't think people like really care about my, but I am interested in how societally it changed because I think everything to me is a reaction and a counter reaction in societies and you get power centers that push back and people are trying to grab for power and I'm not like an idealist.
+
+I don't believe that. I think when you see the Silicon Valley. elite scrambling to get at the front of the MAGA parade, you start to realize this is just about power. That's it. I mean, Trump proved that he was more powerful and then Gavin Newsom said to Elon Musk, you bent the knee. And of course they did.
+
+Of course they bent the knee. but what is this going to, to me, it's, it's a counter reaction to a lot like right or wrong. I don't know, but it's a counter reaction to a lot of changes that. People felt went too far. and, and now we're going to be living in a different, I think in a, in a, in an altered society, because, there's one thing that I'm, I'm tracking is I think this is like the pivot back to masculinity.
+
+It's going to be a weird, weird era. because this thing happened actually right on the heels of, were you subjected to that meme, Gen Z boss and a mini?
+
+[00:31:18] Alex: No.
+
+[00:31:19] Brian: it's a meme of, of, of young women doing some kind of dance routine in, in an office. and, there is a lot, there, there, I perceive that there is this, this shift overall away from, This period where everyone was, and I think that's why, DEI or wokeness or anything became a symbol of having to be incredibly careful about pronouns and all this thing.
+
+And I'm like, whatever, as long as people are comfortable, I don't care what they do. but there's clearly been a reaction against that. And I'm interested in how the media plays this. when they're living in MAGA, MAGA America again, and it's going to be a different MAGA America, particularly if he goes in with 330, 370 electoral votes.
+
+That's political capital. So, I don't think that, I,
+
+[00:32:06] Troy: I mean, you gotta see it as a major power shift away from the media.
+
+[00:32:11] Brian: Right, but how do they react? What do you do? Capitulate?
+
+[00:32:14] Alex: No. I capitulate? Isn't the media is doesn't the media kind of shine when it plays against power? That's the whole point. I mean, I mean, unless we go, the thing I'm not getting right now is there have been other candidates that looked like they were gonna win. And, didn't seem that everyone bent over backwards to make themselves look like aligned with them at the time.
+
+Are they seeing something different in Trump? Is there a fear like, Oh, If things are going to get real bad, I better, I better start showing my allegiance.
+
+MSNBC 
+
+will be doing 
+
+[00:32:46] Brian: Well, I mean, the downsides of 
+
+going up against an apex predator like Trump are very different than going up against, crossing like Mitt Romney. They just are. 
+
+[00:32:54] Alex: if I was an ad seller on a MSNBC, I'd be super happy for Trump to win,
+
+[00:33:00] Brian: Yeah, it'll be interesting to see whether this, this results in, A sort of mini bump of, obviously Trump was right about this. He was great for the news business. He was really good. He sold a lot of subscriptions. the act sort of worked then, but it'll be interesting to see if there are business implications here.
+
+What do you think,
+
+[00:33:19] Troy: Yeah. I think that Alex makes a good point and I think media's purpose is to scrutinize power. And I, I think that there will be a resistance. I just think that more broadly speaking, we're living in a world where a way bigger part of the spectrum is dominated by, the people. and we're not talking about, other media types, entertainment, B2B media, we're talking about the news media and analysis.
+
+And, I think they've been mortally wounded. And I think that they will soldier on, as a diminished force, but. The way in which we navigate the things that happen in our world is just fundamentally different. And Trump is just going to exaggerate that re that that reality in my opinion. So yeah, I think there's, I think it's good times for MSNBC.
+
+I, this is a great point and 
+
+[00:34:16] Alex: doesn't it push, like we're showing that maybe certain types of Certain media outlets have less of a hold on an audience. I mean, we don't even
+
+hear about the dominance of Fox anymore. 
+
+[00:34:26] Troy: I think the way to understand media is I remember the day I got Sirius FM in my car, and I started listening to ad free music.
+
+And there,
+
+[00:34:36] Alex: That
+
+[00:34:38] Troy: The point is, you never go back. And when I watch a new generation consuming media on Reddit, on YouTube, on TikTok, they're never going back. And the way that they participate in the consumption process, they're Is fundamentally different and it just means that there is going to be these kind of layers where a big part of how we understand the world is us, aggregating, sorting, creating information together.
+
+And that's the outcome.
+
+And so, so inside of that, Brian, the question is, who wins in that world? Who wins next? What is the next head of the, what do we need in the next challenger candidate to Trump?
+
+[00:35:27] Brian: Oh, I don't know about the politics stuff. I'd rather stick to the media business stuff. I don't know, I don't know who wins in politics. 
+
+[00:35:34] Alex: my guess is that there's, there is a back and forth, right? I mean, I think the, when things become so erratic and the, you know, you're at the wheel and you're trying to stop the car from going into a tree, you swerve left and you swerve right and you're, and this is what we, what we're doing right
+
+[00:35:49] Brian: and I would just say this about politics stuff and then get out, but like the, every political party goes into the wilderness and reforms itself. It happens repeatedly and usually, They take a drubbing. I mean, if labor just came back to power in Britain, and you would not have imagined that after the Jeremy Corbyn, experience.
+
+And they had to go through that to, you know, reform the party, purge some elements of it. Same thing happens, I think, in politics and
+
+[00:36:20] Troy: where the Democratic party goes will be, be different. the other thing will be to, see how, The Republican Party transforms itself how far will it move into this kind of populist positioning, right? So that it's anti immigration, anti interventionist, pro union,
+
+[00:36:39] Alex: 
+
+[00:36:39] Troy: What I'm saying is the other remarkable observation is the transformation of the policy foundations of the Republican party. And clearly the selection of Vance is going to solidify that. And I think it'll be interesting to see how it plays out from a policy perspective.
+
+How so?
+
+[00:36:58] Alex: Yeah.
+
+[00:36:59] Troy: anti immigration equals in some ways, pro labor. there is a connection between Vance and Lena Khan in that, the competitive environment is overly, does not foster, a free and open marketplace. And these are just things that, leaders of corporations typically support Republican candidates because they want their agenda.
+
+[00:37:24] Brian: Yeah. But now the Republican party is wants to slap 30 percent tariffs. They want to stop. First of all, business loves immigration. It's a bigger, it's a bigger town. It's a bigger labor pool. And you can, you can play workers against one
+
+[00:37:37] Alex: And all business, by the way, both, both, both kind of blue collar
+
+[00:37:41] Brian: Yeah, yeah. No, that's that, that you said, that's like. Gone. And I think that the big thing is, I think for, for this discussion is the role of the technology industry. And this is now, this is an entrenched institutional interest at a time when institutions are not very popular. And, look, tech is a big field, but there is a lot, there's big tech, right?
+
+And, and these are big companies, big institutions. And, being able to sort of go back to the Google in a garage stuff that just doesn't, it doesn't wash anymore. And it is interesting how Silicon Valley, which knows power is getting behind Trump. Meanwhile, JD Vance is like Troy said, he's pro Lena Khan taking on quote unquote, big tech.
+
+It is big tech. There's no quotes needed.
+
+[00:38:34] Alex: I don't know if tech is coming across as like a homogenous pro Trump thing. I mean, the, the mood feels like there's a massive split coming and it's not only big and small tech, but it's just like the politics, which, you know, the politics were always here, always pretty left.
+
+[00:38:50] Brian: But esoteric left. I mean, there's a lot of libertarianism that seems to go through. I mean, come on, like there's Burning Man is hard to like, like
+
+[00:38:59] Alex: I mean, it's. Well, I mean, people's politics are complicated, right? They're never, they're never quite that
+
+[00:39:04] Troy: yeah, I don't think that you're necessarily representative of the, the sort of, the archetypical. Silicon Valley kind of Cadillac socialist, Alex.
+
+[00:39:14] Alex: I don't think Cadillac. What year is
+
+I don't know what I, yeah, I don't know what a Cadillac Socialist is.
+
+[00:39:20] Troy: Well, you can figure it out. You are one.
+
+[00:39:23] Alex: Well, no, I'm like very much a European style socialist, because guess what? 
+
+[00:39:27] Troy: Change the brand.
+
+[00:39:28] Alex: change the brand?
+
+[00:39:29] Brian: Which brand?
+
+[00:39:30] Troy: You could be a Tesla socialist. You could be a Mercedes socialist. You could be
+
+[00:39:34] Alex: I don't, I don't want to be any type of socialist. All I'm saying is that there isn't, I mean, my, my sense of what's happening now is that there is a, split and emboldening about talking about, supporting Trump. That is new. Maybe it was always there, but it's not like,everyone's saying, oh, phew.
+
+I, I always wanted to say that and now Silicon Valley is right leaning. I think, like the rest of the country, it is pretty split and, in some ways it is, there has been a little bit of a shift that came with AI and kind of the,
+
+[00:40:07] Troy: Yeah. It's really interesting. I think that I would have never characterized it as right leaning or left leaning, but it was more of a kind of, self deterministic kind of libertarian vibe.
+
+[00:40:20] Brian: Yeah.
+
+[00:40:20] Troy: And that's what it always represented to me. And they found, like guys like Mark and Dreesen found kinship there with. 
+
+[00:40:28] Alex: but I think you also have to like, I mean, we can't separate supporting the individual withthere are two conversations here, right? one is you know, the politics and I think center left was probably like, actually dominant if you were talking to people in Silicon Valley, center left or center right, maybe.
+
+But, you know, that's, that's all fine. But I don't like supporting Trump isn't really also supporting a certain type of politics is supporting also an individual that has whims and sometimes is like very unpredictable. but I think people have figured out how to talk to him and get what they want out of him.
+
+So, now that's, that's changed.
+
+[00:41:06] Brian: so you think it's just transactional?
+
+[00:41:08] Alex: I think it's a hundred percent transactional. Yes. I think including Trump,
+
+[00:41:12] Brian: yeah, I don't think I mean, I think this is what this has become. If you want, if you want transactional politics to get things done, right? Then, then you know who to go to,
+
+he doesn't trust AI.
+
+[00:41:23] Alex: I mean, fine, but somebody's gonna make him trust AI.
+
+[00:41:26] Brian: it doesn't matter. came over to crypto, which I'm surprised took this long.
+
+[00:41:30] Alex: I mean, maybe he doesn't want something with a ledger that you can trace. I
+
+[00:41:35] Brian: interesting. Like he, he's not in favor of a strong dollar, which is, Intriguing, because that is another sort of thing that United sort of all of this center left center right, like believing in a strong dollar. it's been sacrosanct for a generation.so that'll be interesting. I mean, because a lot of, a lot of these things are don't line up very, very neatly, with what, The beliefs of J.
+
+D. Vance, at least as I've read them, and, and even Trump as much as you can sort of divine it, because he does change his mind quite a bit.
+
+[00:42:05] Alex: Trump is going to do what Trump does to protect himself and, get out of whatever, situation he's in. But I do feel like there is a, sense that there is a political party that is open for business, right? And, and that doesn't mean it is pro business specifically. It's just, it's just there to, to have conversations.
+
+And I think that's where the tech industry gets excited. especially after, the Lena Khan stuff, right? Like every, I mean, Microsoft's just hiring everyone in companies because they can't buy companies anymore, And, so what I, what I feel is going to be really interesting is. is this, are we really going to see this favoring small tech over big tech thing, right?
+
+Because, I think, big tech is actually, in our world right now, these, you know, Apple, Microsoft, Google, they're like nation states. They hold a ton of power. and so that big tech versus small tech thing is going to be an interesting thing. playing out. I definitely expect if, Trump gets elected that there's going to be a lot of acquisitions.
+
+There's a lot of people waiting to acquire companies right now, that, they don't want to do it under this environment. So, so they're rooting for, for a change in regime to, to allow these, these kind of consolidations to happen. I think it'll also happen in media. I think if Trump gets elected, there's going to be mergers and acquisitions.
+
+The wazoo for everyone. we're gonna end up with four companies.
+
+[00:43:31] Troy: Stop it, Alex, please.
+
+[00:43:33] Alex: No, I mean, I mean, seriously. Do you think that's not on. No, I, I think that,
+
+by the way, there's no judge, there's no judgment in that. forget the four companies. That was a joke. There's no judgment in that, but there's a lot of acquisitions on hold right now. because the regulatory environment, is, is currently afraid of these like multi trillion dollar companies owning everything
+
+[00:43:56] Troy: I think it's a pendulum. I think acquisitions and mergers are part of the ecosystem. I think that if they are being and unnaturally withheld right now, there will be some loosening and therefore more volume. And I think that. There will still be scrutiny on people that have kind of unnatural amounts of power, largely because of things like network effects.
+
+And I think you'll see a lot of pressure again from JD Vance on the power of platforms. I think that Trump has shown that one day he's open for business. The next day he's against, you know, a merger because it's not in his interest. I think it's hard to predict. To be honest. but I think there's also been some kind of reactionary pressure that have meant that small, insignificant or, you know, seemingly, just kind of innocuous acquisitions have been,discouraged and I, and I hope because I think it's part of the natural order of things that those start happening again because we need more G wagons in the Hamptons.
+
+and all I see when I'm there are fees, transaction fees. but I wanted to ask Brian a question as we close this and
+
+[00:45:08] Alex: of me is this is all normal. Everything's going to stay the same. It's cool. It happens all the time. This reminds me, it does remind me of the 90s where we had multiple trillion dollar companies, Troy, with the, profits higher than the GDP of most 
+
+countries. Things are, well, things are different, man.
+
+Things are different. like these tech companies are, we have larger and more powerful
+
+[00:45:29] Troy: Well, that's but I 
+
+[00:45:30] Alex: had. 
+
+[00:45:30] Troy: that I acknowledge 
+
+[00:45:31] Alex: So saying, that,I'm being hyperbolic and, and it's,
+
+[00:45:34] Troy: You said four companies, Alex, you did it to
+
+[00:45:37] Alex: I made a, I made a joke, Troy. Like I, I try, 
+
+I'm trying to 
+
+[00:45:40] Troy: Maybe we can have a little light behind you 
+
+[00:45:42] Alex: a little bit. I know you get, I know you get upset because you see, you think I'm kind of like the de facto
+
+[00:45:49] Brian: All right, we got to move on to other
+
+issues. 
+
+[00:45:51] Alex: sort of thing, but
+
+[00:45:52] Troy: No, I liked it that you do that. I think it keeps us honest. But Brian, just quickly. 
+
+[00:45:56] Alex: I mean, because otherwise we're just talking about saying everything's fine.
+
+[00:46:00] Troy: You're the editor. Everything is fine. You're the editor of let's call it major media institution, New York Times, and 
+
+[00:46:10] Alex: Right. My, my only, my, my only point, sorry, sorry. My only point to finish because you kind of hijacked it. I'm sorry, is that I think that the shift in Silicon valley. Is that there's that, with AI happening and with a lot of kind of acquisitions on hold and with an environment that doesn't seem very friendly and the fear of regulation, they're seeing maybe a political regime that will be more friendly to that, which is why I think we're seeing
+
+[00:46:36] Troy: agree with
+
+that, especially on the regulation
+
+[00:46:39] Brian: kind of political malpractice that the Democratic Party could not have gotten that faction over to their side. It was kind of easy. I mean, there's a lot of stuff that, that Trump is out there doing that is clearly against the interests of this power center. So from the political standpoint, don't really get it.
+
+Go on. I'm running the New York times. Amazing.
+
+[00:46:59] Troy: Okay, great. Good job for you. so, um,you need to react to the environment that you New York Times or or a smaller organization, and you need to react to the environment that you're in. And part of your question before was, you know, how does the environment change? And one of the things that came out of this were the, the digging bats on X, putting up headlines that came out early in the news cycle, and they're like, you know, look at look at the corrupt press.
+
+But. the difference is obviously is that media and media brands have consequences that they have to deal with, and individuals do not, right? Like you, there's consequence. You have to fact check. You have to, be careful about what you say. You have to try to avoid backlash, right? And,will media start to operate?
+
+Or would you advise your editors to move more quickly at the risk of making mistakes?
+
+[00:47:52] Brian: probably not. No, because I, to me, it's like, why do you, I remember like you would never want to out Google, Google. And it's the same way, like you're not going to win against a horde of people feeding content, information, misinformation, malinformation, whatever you want to call it into these machines.
+
+So. The best way to differentiate is to have a packaged product that can, is completely different than this stream of, of information. Yes, you're going to be slower. That's fine. Like I, I saw this study, it hasn't been released, but it basically said that less than 10 percent of people have a primary news source now.
+
+And every, not every, but a lot of these news organizations are trying to fight the last war of being a primary news source when nobody has them. And, and yeah, if they do have them, it's going to be Fox News or it's going to be New York Times, it's going to be more identity based. So you have to figure out where, how you're, like you say, like how you're going to win.
+
+And, You know, you're going to win in one, in different like audience segments, you can't like own the waterfront as John Kelly says. and two, you're going to win by offering a package, not like trying to out Twitter, Twitter, in my view. I mean, look at the, the iconic, image again, it came from mainstream The next shoe to drop is exactly what the hell happened with this.
+
+I mean, you don't have to be a dingbat conspiracy theorist to find all of this very curious and troubling and weird. And guess who has a ton of reporters still? Not just the, the sniper guy on, on X doing a selfie video while he's walking through an airport. media companies do. So, I don't know.
+
+Lean on reporting. Find out what happened. I'd like to know. because everyone else is going to make the memes and It doesn't seem like a good ground to, to win on. want to move on. something that just to follow on from last week's, episode, we talked about podcasting. I saw Lenny Rochitski actually alerted me to this, from Cumulus Media.
+
+It said that YouTube is now the primary podcast destination by far. it is the most utilized podcasting listening platform in the U S 31 percent say they use it followed by Spotify and then Apple. So 31 percent YouTube, percent Apple. I would have thought Apple was way higher. and it's mostly it skews younger.
+
+And it skews mail. I don't get it. I just don't get it. I don't get, podcasts on, on YouTube. am I missing?
+
+[00:50:30] Alex: I mean, I get it. You want to know the, do you want 
+
+[00:50:32] Brian: let me know. It's really nice to have an app. It's on your phone. It goes with you. You got your AirPods in. You can be in the grocery store. You can be driving. It's
+
+[00:50:42] Alex: It's discovery. It's discovery. A lot of people consume this YouTube content, actually, listen to it. YouTube stays YouTube on your phone stays playing, keeps playing. If you, if you want it to,
+
+you listen to it. Yeah. I mean, I, maybe you need to get premium, but there's a, there are ways to do it. lots of people, have YouTube, man.
+
+I'm watching like you can click. Uber rides and the guy has a new, like some, some YouTube talking head on his dashboard. the main difference here is that YouTube, provides distribution discovery, which we do not have in any podcasting app. And, and it was actually like a huge miss that I felt like, Podcasting is such a great format, but yet when something like this happens, when news happens, you go there.
+
+There may be a couple of feeds that I'm registered to, like, have, these news alert, but there's no discovery. I can't really search for things. and there's definitely no algorithm. Although, Apple is trying and Spotify is trying, it's never really worked out. So, I think that's the main thing.
+
+And, and it's, in its part, it's like one of these apps where you'll watch your, your clips. You, you'll watch the trailer for the movie you're interested in. And why not? You listen to a podcast. It's a single app that does everything. The amount of people who listen to music exclusively on YouTube.
+
+So they don't, they don't have to pay for Spotify. I saw somebody DJing a party through YouTube in Thailand. Like, you know, but so it's, it's the kind of the everything app for, for video content and, and video content can essentially be audio content and it's, it's ambient and it sits there in the background.
+
+So that's why. and the reason it's mostly, you know, younger boys is because a lot of that original content that made it big, there was like kind of manosphere gaming content. So, Including stuff like, like Rogan and stuff like that, right? a lot of, a lot of clips from that came,
+
+[00:52:34] Brian: Yeah, it's weird to me because it's not native to YouTube and the most powerful content on any of these platforms is content that's native to it. It's really difficult for these For to move between platforms, people like Mr. Beast is maybe he's the exception to moving into like Amazon and you know, mostly most people, most people stay within their, their, their platform that they became famous.
+
+That's why threads needs, maybe you can be the first threads influencer to break out.
+
+[00:53:04] Alex: I think it's much more fluid than that. If you look at MKBHD, he has a successful podcast. Translated really well from YouTube. Exists both on YouTube and podcasts. I consuming it in audio only, same thing with the verges podcast and things like that. I, I think the format actually works really well.
+
+They did, the thing with video and it's something like YouTube is that it can sit in the background. It can be in another tab. It's just a really fantastic tool. Not 
+
+[00:53:29] Troy: you're just not modern. Brian,
+
+[00:53:32] Brian: Is that
+
+[00:53:34] Troy: is right. Everything Alex said is 100 percent right. Except for the earlier part of the podcast.
+
+way. Um,Okay. Next item.
+
+[00:53:43] Alex: Okay, that went well. Yeah,
+
+[00:53:46] Brian: let me see what
+
+[00:53:47] Alex: try only mildly managed to undermine me.
+
+[00:53:49] Troy: Okay. What are you talking about? I just gave you a nice compliment.
+
+[00:53:52] Brian: Troy, I wanted to say, did you see that, our friend Ben Falk got, he got a piece written about him in The Verge? Advan has become a boogeyman of sorts. I've, I've grown to have Advan what is a, how would you describe Advan?
+
+It's a, it's a commerce marketing agency. Basically publishers outsource their commerce content to Advan.
+
+[00:54:14] Troy: Yeah. And then they bring brands in and sell them positions in that content.
+
+[00:54:19] Brian: Okay. So they, they create the content, they distribute the content. They used to do it. The founding sort of idea behind Advon was that they had They understood the publishing agreement with Amazon. So they would get your publisher content on Amazon where,if you looked up, best hair dryers or whatever, they would have,kind of name brand content in that environment.
+
+[00:54:42] Troy: And then Ben and his team would go out and sell brands into that feed. So they would take a slice of the affiliate revenue and they would take essentially listing fees. And that's kind of how it worked. But then, you know, it seems like in an effort to make the whole thing more efficient, they got a little fast and loose with content quality and with, kind of really drecky A.
+
+I. Content. And then, I don't think there's any, but there was any, for me, there was no big revelations in that piece.
+
+[00:55:11] Brian: I mean, you package it up and it can seem very, I mean, the reality, I, I guess I, I sort of have become, a little less, I don't know, moralistic about it. there's always these, these areas to make money. I mean, this is how you make money on the internet. You find some seam, some distribution seam, some monetization seam, and you fill it and then it closes and
+
+[00:55:31] Troy: And I think, like everything when you're a publisher, it's about trade offs, right? are you going to trade the crappy user experience of running a video player on a page for a little bit of extra money? It's all trade offs. And then shame on the folks that got it wrong and traded their long term equity of their brands or their relationship with the consumer for drecky content that was created by AI and, slotted in with an agreement, an ad bond agreement.
+
+So, I, I think, you know, Ben was trying to find ways to, you know, to make, make money for both publishers and himself. And the one great flaw of publishing on the internet is there tends not to be a lot of audience loyalty. Therefore, when you're making the trade off calculation, you often do it, you often, and, and, and, and, and the, and the monetary environment has been hostile.
+
+So you trade off, experience for cash. And people sometimes do that at their peril. And they did that with the help of Advon.
+
+[00:56:29] Brian: it's like I used to live in Dumbo and like it's a tourist area. Everyone came to get that photo of the bridge. You know, you've seen it, like the bridge going between buildings. And when you live in like a tourist area, none of the restaurants really give a shit because they're going to see new people like every day who came for the photo.
+
+So it's not in their interest to be like, loyal to, you know, their everyday customers
+
+[00:56:51] Troy: It's like never have dinner at the top of the CN Tower.
+
+[00:56:54] Brian: Yeah. All right. On that note, I want to, Alex, this is near and dear to your heart. our friends at Taboola, Adam, I can't like Taboola has emerged as, maybe it's a likely winner.
+
+I mean, Adam's done an amazing, and their team has done an amazing job executing, but they struck a deal to sell ads with, for Apple. And I gotta say, I found this in very interesting brand collab. but maybe you start with, with Troy, what, what, what did
+
+Taboola, what did Taboola get right?
+
+[00:57:23] Troy: Cause I, it gets a lot of grief, Taboola
+
+[00:57:26] Brian: gets it, Outbrain good, What did they get right? They got right. Persistence, good, sharp, advantageous deals with publishers. I think, Adam has been an extraordinary salesperson and has signed up, a meaningful amount of distribution, enabling him to beat Outbrain at the game.
+
+[00:57:48] Troy: So they're the market share leader. They have the most end points. They have the, therefore they can do, they can offer advertisers the best product. Now, before Apple there was the deal with Yahoo where,the native placements inside of the Yahoo feed on the homepage, you know, elsewhere on the site, all of what used to be called, what was Yahoo's native business called, Gemini, were replaced by, by Taboola in a deal that gave Apollo slash Yahoo, Yahoo.
+
+a meaningful part of, taboola's equity and that long term 30 year partnership. Now on the apple, in the case of apple, it's always been very poorly monetized apple news and publishers found it difficult to extend, even though they were distributing their content, they're found it difficult to extend buys into apple.
+
+and match the kind of ad product targeting, et cetera. In that environment, you'll recall that NBC did a deal to take the Apple news inventory and make it part of their digital offering. And now Basically, I'm assuming that Taboola came in with a better technical solution, probably a better guarantee that NBC because NBC probably got burnt on the deal and, now have all of this new territory to monetize.
+
+[00:59:10] Brian: but, but Taboola operates firmly on the performance end. And I would just have thought that Apple, particularly with its white glove premium this premium that would. I mean, we'll see what the implementation
+
+[00:59:24] Troy: Yeah, but they've tried that, right? And I don't think you're going to see Taboola pivot to like interstitials or brand ads. I think you're going to see more ads. crappier ads and, a higher fill rate.
+
+[00:59:38] Brian: Well, Alex, you're a big Apple fan. Good news is you get a higher fill rate.
+
+[00:59:44] Alex: That's all I wanted. That's all I was missing.
+
+[00:59:46] Brian: It fills that hole in your soul.
+
+[00:59:49] Alex: it does. It does. you know, I've been beta testing the new iOS, iOS 18, and that's what's missing, fill rate. so, and I'm happy they chose Taboola because, I love their products.
+
+You see, we all bend a knee. This is the, this is the theme at the end of the day, we bend
+
+[01:00:05] Brian: We bend the knee. I love it. one other topic before we, we, we move on to good product is, it's interesting how everything becomes politicized these days. I don't think that is, that's not going to be something that changes anytime soon. But there is a, there was actually congressional hearings about something called GARM, which is the Global Alliance for Responsible Media.
+
+And again, this, this sort of sprung out of the moral panic about misinformation, malinformation, disinformation. And it's sort of dovetailed with a lot of this brand safety, mania that, has had really a lot of, to me, negative impacts because everyone I can remember, you know, we wrote these stories back in my last job about right after The election in 2016 about advertisers who are quote unquote supporting,white nationalist sites, but then you sort of, go into the Breitbart zone, Breitbart got pulled in after like info wars, and then it got really sticky.
+
+And so now there is this counter reaction, of course, against. this group that, basically tries to make sure that the, the buy side, the agencies and marketers are not ending up in places that they don't want, that don't align with their quote unquote values. And again, this is, I think, part and parcel of an era that you could argue is, is coming to a close.
+
+but it was very interesting to me to see. being called before Congress, or being at least mentioned, with Ben Shapiro there and Elon Musk tweeting about it, like random ad agency executives, it's a new world. but it also enshrines, what I call the fifth freedom, the, the freedom to, to monetize.
+
+Musk has been on this, I don't, I don't totally get it to be honest with you. I just think that the conspiracy of big brands is to not get anywhere near this kind of like controversial stuff and all news is controversial these days. I don't know. What are your thoughts, Troy?
+
+[01:02:11] Troy: Well,I think that the taste of many brands you cited, like a Unilever or the sort of young people that make contextual decisions on behalf of brands aligns with, the kind of taste profile of liberal media elites. And therefore there's a strong bias against,anything that this is on one hand, by the way, anything that is seen is kind of this stays full controversial.
+
+I mean, this is aside from all the sort of what would be considered like malfunctions of the ad safety world, which I think are well documented, where you can have an article about time person of the year that doesn't get advertising because there's like keyword mismatch and the ad and the ad systems break down.
+
+But I think that. There's some truth to it that there's a bias against, you know, certain types of media that maybe is. unjustified. I think that a lot of it has been ironed out in some ways because the shift of performance means that context doesn't matter that much. And we make decisions on hard numbers, as opposed to, I like this publication better than this publication because it seemingly aligns with my
+
+[01:03:27] Brian: Yeah, and never in the history of the world have there been more advertisers. it's not like you have to appeal to the top, whatever, the Fortune 500 to have a giant ad business. I mean, how many advertisers do these, does Google have?
+
+[01:03:40] Troy: it's when advertising became distribution that a lot of that just kind of went away. Everybody needed distributed.
+
+[01:03:47] Brian: should we do 
+
+good
+
+product? 
+
+[01:03:48] Troy: Sure. 
+
+
+[01:03:49] Good Product
+---
+
+[01:03:51] Brian: What do you have?
+
+[01:03:52] Troy: well, so food is nostalgia, right? And, and it's summertime, right? So, having, a kind of jello salad with fresh sour cherries. Top with whipped cream is like listening to Yacht Rock, I suppose. It makes us feel like we're kids again.but I don't think that's a very good product because Jell O is kind of gross.
+
+[01:04:14] Alex: Are you talking about, what is it called? That's,
+
+[01:04:16] Troy: Ambrosia?
+
+[01:04:17] Alex: um, Ambrosia salad. Yeah. The first time I ever had that was at a golden Corral, all you can eat buffet on the side of the
+
+[01:04:24] Troy: Yeah, this was a little bit more sort of heritage or, craft because it was a, a friend of mine and she had made dessert last night and she had got, you know, You know, from the farmer's market, beautiful sour cherries and pitted them and thought it would be funny that we had those with jello and then some unsweetened, organic whipped cream on top.
+
+[01:04:47] Alex: this is such an America, North American
+
+[01:04:49] Troy: so American. And I think it's not that good. I mean, it was, it was kind of fun because it was like, Oh wow, this is like being a kid again, but no, that's not my good product.
+
+[01:04:59] Brian: Oh,
+
+that was a 
+
+[01:05:02] Alex: Oh, man, this is the, the journey is 
+
+your good product, 
+
+[01:05:05] Troy: Yeah. 
+
+[01:05:06] Brian: like one of those recipe sites.
+
+[01:05:07] Troy: but my, my good product is, is simpler. And I think that,
+
+[01:05:11] Alex: I need an AI to just just get me to the meat of this.
+
+[01:05:15] Brian: get the backstory.
+
+[01:05:17] Troy: well, I think that when you take real iced tea, home brewed iced tea. Yeah. 
+
+and you sweeten it with lemonade, like you can get it out of a carton
+
+[01:05:27] Brian: an Arnold 
+
+[01:05:27] Troy: fine. You get an Arnold Palmer and an Arnold Palmer with, with a fresh slice of lemon and a bunch of ice is unsurpassed. It's much better than the Jell O whipped cream situation.
+
+And I just think this week we should all praise the Arnold Palmer as really the great, the great, the great drink of all drinks.
+
+[01:05:47] Brian: That's great. it.
+
+Something I noticed, I think it's a good product, but maybe it's nostalgic product, is it's only in select markets, but Pizza Hut is bringing back its lunch buffet. It's
+
+back. 
+
+[01:05:59] Troy: that, isn't that kind of gross though?
+
+[01:06:00] Brian: Now, 
+
+[01:06:01] Alex: Isn't that, just a sign that the panda pandemic is truly over?
+
+[01:06:05] Troy: Yeah, you can sneeze on your friend's food.
+
+[01:06:08] Alex: They, they have little windows. I I love lunch. I, I always go to the buffet.
+
+[01:06:12] Brian: This is all part of the vibe
+
+[01:06:14] Alex: Salad bar.
+
+[01:06:15] Troy: When you go to the buffet in Sonoma, what are you, the artisanal buffet? 
+
+[01:06:19] Alex: it's at the grocery store here. Yeah. I mean, it's not, yeah.
+
+[01:06:22] Troy: Whole Foods Buffet?
+
+[01:06:24] Alex: It's like what, how do you say that? Ear worn? How do you even say it? I don't even know how to
+
+[01:06:28] Brian: say it. Airwan? Is it an Airwan? 
+
+[01:06:31] Alex: No, I don't even know what that is.
+
+[01:06:33] Brian: Really?
+
+[01:06:34] Troy: It's a famous store from Los Angeles.
+
+[01:06:37] Alex: Oh, yeah, well, I don't know that. yeah, so, buffets are great. I agree with you brian.
+
+[01:06:42] Brian: Well, I mean, it's, it's, it's an inflation buster. You pay one price and, you know, if you 
+
+[01:06:48] Troy: But then they start to put, it's all bread, no cheese. Like, it's not good.
+
+[01:06:53] Alex: You need to go to a good buffet though. No 
+
+[01:06:55] Troy: is there a good buffet that you would recommend?
+
+When I was a kid, it was Ponderosa.
+
+[01:07:00] Brian: Oh, yeah. Oh, but other kids called it Ponderosa. But I like, there's good French, French breadsticks they got there. The Ponderosa 
+
+[01:07:09] Alex: French something that all french people know exist
+
+[01:07:13] Troy: Have you guys ever been to a sushi buffet?
+
+[01:07:15] Brian: Yeah, the thing that sushi buffet, there's a, there used to be a sports bar, Japanese sports bar on the Upper East Side that had, had an all you can eat sushi buffet. But the twist was they charged you extra if you had any sushi left on your plate.
+
+[01:07:29] Alex: That is
+
+[01:07:30] Brian: So it incentivized people if they had extra to like shove it in their pocket.
+
+[01:07:34] Alex: Yeah, yeah, no waste, yeah, yeah, I actually have something useful. uh, 
+
+[01:07:40] Troy: say it. Go ahead. 
+
+[01:07:41] Alex: well, there's this. so there are a lot of exciting tools coming out for, people to, to create stuff, in ways that might be easier. and one of those things that has been kind of difficult for people to get into is, is creating 3D graphics.
+
+and there's this tool called Wamp that came out, at wmp. com. And it's essentially the Sigma or, you know, like a web browser based, 3D software. So you can quickly make 3D. And now the interesting thing about that and, and why I love technology is, it, the interface is actually in your browser, but the rendering, the heavy rendering of kind of creating, rendering the shapes, which is very intensive happens on the cloud.
+
+So you can actually create like photorealistic or just, very realistic, goopy graphics, even on a Chromebook, and it's all being rendered on the cloud and that, that type of stuff's really exciting. So
+
+[01:08:38] Troy: Can you remember what you, what you rendered recently?
+
+[01:08:41] Alex: I was just, I was just messing with it. I just did a bunch of doodles. So I haven't done,
+
+[01:08:46] Troy: So you doodle and then you put, you doodle on your computer and then render it.
+
+[01:08:50] Alex: It renders it for you in real time. So as you're designing it, the actual rendering part is happening on a computer and then streaming that on your computer. so it looks like you're using a very powerful workstation. Because it's all happening on your screen, but it's actually happening in the cloud.
+
+It's this hybrid thing. So the interface is on your computer, and then all the other stuff is, is running on the cloud. 
+
+[01:09:12] Troy: Could you make us a 
+
+[01:09:13] Alex: really? Yeah, for sure. I'll make you, you goopy logo made out of glass. should be good.
+
+
+[01:09:19] Outro
+---
+
+[01:09:19] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week.
+
+All right, cool. Let's leave it there. I got a call.
+
+[01:09:41] Alex: me too.
+
+[01:09:42] Brian: All right. See you guys.
+
+[01:09:43] Alex: Yeah, say bye.
+
+[01:09:44] Troy: Bye. 
+

@@ -1,0 +1,843 @@
+PvA S4E156
+===
+
+​
+
+
+[00:00:01] Open
+---
+
+[00:00:01] Troy: we got a really big show today, folks. We got Alex Schleifer, we got Brian Morrisey, the one and only, and we have a big agenda.
+
+[00:00:09] Brian: Is that what you want me to do?
+
+[00:00:10] Troy: No, but there is such a thing as podcast voice. It's when
+
+people really put a lot of energy into it with like lots, like Casey Newton is the king of it.
+
+[00:00:19] Alex: This is Alex Schleifer from People versus Algorithms, and today we're talking about how Troy is always late.
+
+[00:00:26] Brian: I don't do that.
+
+This is more indie.
+
+
+[00:00:27] Welcome
+---
+
+[00:00:27] Troy: ​
+
+[00:00:38] Brian: let's get started. I am Brian Morrissey and Troy Young has arrived a bit late.
+
+Appreciate uh, squeezing us in. Troy and Alex Schleifer. Alex and I have, been catching up here. He's just back from Copenhagen.
+
+another failed European 
+
+[00:00:55] Troy: I am glad you had to catch up because when you first made met in meet space, like. after spending a lot of time together on podcasts, it was a little awkward.
+
+[00:01:03] Brian: Will you keep saying, this is
+
+my, like I'm I'm awkward in person. This is a,
+
+[00:01:09] Troy: your, you're great on camera though. You should see ab,
+
+You guys should see abs, new digs, man.
+
+[00:01:15] Brian: are they good?
+
+[00:01:16] Troy: Oh my God, it's great.
+
+[00:01:17] Brian: Does he have a cubicle for me?
+
+[00:01:19] Troy: yes.
+
+[00:01:20] Brian: I loved, I would love to, work in 
+
+[00:01:22] Troy: It's probably one
+
+of the few weird kind of brutalist buildings in the West Village.
+
+[00:01:29] Brian: okay. 
+
+All right. So just to set up what we're gonna talk about today, because we got some feedback
+
+[00:01:35] Troy: I got a note from someone saying that it was all over the map last week. 
+
+[00:01:38] Brian: I want to know who it is.
+
+[00:01:40] Alex: Yeah.
+
+[00:01:40] Brian: we're gonna talk about performative reality, or the lack of reality in the information space. 
+
+and we'll, we'll touch on a, a, a, a bunch of different things. 
+
+
+[00:01:48] Old Internet Is Truly Dead
+---
+
+[00:01:48] Brian: but I really wanna start with
+
+this sort of uncanny feeling that like the old
+
+internet is truly dead. And I went back to this Max Reed 2018 piece
+
+about how much of the internet is fake.
+
+And at the time, that kind of fakeness was around bots, fake metrics, engagement, fraud,
+
+and it was all side effects really, of the optimization economy. but I think now it's gone deeper and the internet itself is becoming synthetic. it is no longer a, a real place in many ways. it, AI synthetic content has finally surpassed the, the content that is being, created by humans.
+
+And I think we all sort of feel it in our. In our, our souls, if you will, the line between fake and real, keeps blurring and perhaps even more disturbing, it might not even matter..and I think in this kind of environment, what I, I've sort of hit on is that
+
+performance is really the organizing principle,
+
+and it's always performance in the service of a narrative. and that's why we're seeing, I think, institutional media lose ground, continually, is because there aren't experts at the performance aspect of it. And and so they're losing ground to those that are. There was a article, about how Trump has failed his administration with media figures, cable hosts, YouTubers, et cetera. And one of his, one of the MAGA meme lords had a, had a good line in there. he said that it doesn't have to be
+
+true, it just has to go viral. think we're seeing that across the board. So let's, let's discuss this a little bit. Help me unpack what is going on. Troy, I, want you, I know you have thoughts on this. 
+
+[00:03:30] Troy: I have a half baked thought, right?
+
+And it, it's not about whether it's happening or not, it's about what. kind of world we're, gonna be living in And that our, our notions of fake versus real or truth versus lies are those becoming outdated ideas to describe how we navigate the world. and that.
+
+has, you know, the internet kind of through its evolutionary moments. From sort of, you know, I don't know, it's document period, And then communications, then social, and then became transactional. Now It's sort of, your thought partner and increasingly synthetic to, you know, I think that there are people like Mark Zuckerberg that would like to make it ambient and all around us. And through all of that, more of our existence is sort of connected to the reality that is the internet. and, and I wonder if, you know, the kind of, idea that something is real or fake, just stops mattering as it and what, you know, what really matters is do you see yourself in the narrative? And does it tell, is it, you know, consistent with the story that you wanna believe or the one that fits with your. Sort of self identity, and that's really all that matters. Obviously, there's the consequence of, you know, fake versus real when it comes to, you know, many things in our world, whether it's, you know, driving a car or, you know, guns or money or transactions, but like a big part of the place that is in any way related to kind of the, the importance of a story, an interpretation of things in our world is becoming entirely subjective. And I I just wonder how, like, we're, we're not going back, right? So where does it go next? Is, is really what I'm trying to kind of get my head around. And is it just that like suddenly. You know, the, the institutions and, and kind of moral system that we understood as defining a line between truth and fake kind of reign supreme again, 'cause we get a new president or, you know, something else happens.
+
+I, I don't know. I don't think so, actually. I think increasingly we, you know, a, a big part of our lives are lived in this kind of narrative simulation and we'll develop new language and understanding of what it means to live in that world. Now, I, I get, I get that this is kind of an, you know, like a, a, a, a, a fuzzy idea. But I think it's actually, I think it's actually an interesting thing to, to try to understand.
+
+[00:06:25] Brian: Yeah. Alex, you're, you're, you're in the video game world, and I think for those of us who are just getting immersed in this, what do we have to expect? 'cause I do feel like we are, I, I, I don't know if you guys feel this way, but I increasingly feel like we're living in some kind of video game to some degree.
+
+
+[00:06:43] Authentic Media Relationships
+---
+
+[00:06:43] Alex: yeah, I mean, I think, and then also I, I wonder sometimes if, if we're not, you know, to play devil's advocate here, if we're not, if we're not overreacting, and we're, that we're overreacting to something that is potentially going to happen and we don't really understand it because it's changing.
+
+But, I feel that in some, in some ways, like we have become disconnected from reality, right? We're experiencing a lot of things behind the screen. But, you know, that, that used to happen in the eighties and I feel like in the eighties, I didn't have a direct connection with the people creating my content.
+
+I didn't have any sort of relationship with them. I didn't have any sort of access to them. Yes. You know, we are seeing Sora too, and we're seeing all this kind of AI slop take over your Instagram feed. but I wonder how much impact these things have in general. Right. I feel like in general, I feel like I'm, I have more authentic relationships with the media figures that I follow. And that seems to be the case even with younger generations where, however, like, you know, you kind of, you, you can look into like the kind of the biochemistry of the brain and what it does to us to spend, for kids to spend time on Fortnite or in front of their phones. a lot of that stuff remains like kind of social, partially social experiences.
+
+So I wonder like, I, I actually, I've been thinking about that a lot and I keep kind of plotting this line where I, end up in a world. That Troy explain, you know, is describing which, it doesn't matter if it's true or false, the only thing that matters is if, the fiction, talks to you in a meaningful way and, you feel included in it. at the same time, I think that, you know, whatever, whatever seems to be happening now, like I also have way more direct connection, more meaningful connections with the people who create my media both directly and indirectly, right? so it's, it's interesting.
+
+[00:08:38] Brian: So for now, right, I mean, Michael Magno, who I believe is the VC at, at Lightspeed, he had a hit, a good substack in which he wrote about the next phase being that creators will be replaced. That the, the platforms first they disempowered media companies because you can easily shove around millions of individuals so much easier than like, whiny organized media companies that use their political, capital against these tech companies.
+
+So they're like, yeah, let's go into the creator economy. But you're, you're seeing at least, and this is his argument, that instead of, of, relying on individuals, right? That we talk about a lot to supply the content. Well, they're just gonna supply the content that as synthetically Mr. Beast has like talked about this being like a major threat to the creator economy. and I don't know, maybe we live in an, in, in a time when everyone is just paranoid because of the. Increasingly insane predictions about AI as they, as they light on fire, more and more money. but his point was we are now entering the third and final phase of social media. Platforms love distribution efficiency because it drives consumption. And this third phase their guaranteed to get it. As generative models improve, platforms will pair on the fly content creation with algorithmic distribution. Instead of sourcing from creators, they can create content tailored to individual preferences at scale. Production
+
+shifts from human to synthetic.
+
+
+[00:10:09] The "Social" In Media
+---
+
+[00:10:09] Alex: Right. So it, it went, I mean, this is the thing, right? This is the, and, and there's new data coming out of meta from court filings that shows that, you know, we've, we've known that social networks started about, it was about talking to your friends and family, right? That it went to following celebrities than it went to following everything and from everyone.
+
+And meta just revealed that only 17% of time spent on Facebook today is content from friends. And so, you know, maybe that's not astonishing, but it's like 
+
+[00:10:41] Brian: Yeah, because they're not showing it. I mean, oh, go
+
+[00:10:43] Alex: A a hundred percent. I mean, and, and they're, and, and they're showing this data to prove that they're not a dominant,like the dominant social media, platform because they're no, they're no longer social media.
+
+They're just media. Right. so they, they dis they're disavowed the social network term. And I think, and I think that like, is that, but does that mean, does that mean, does that interaction is just pushed to other creators? Which, which could be fine, right? Which could be real. Or is it, is the pushed, is there this, this third phase where the push becomes fully synthetic because that's the most, know, that's, that's the most efficient for them to just generate stuff that they put in front of you that is never 
+
+[00:11:21] Troy: dunno man, I think it's a good question. Nothing becomes fully anything in media, but the, what have you guys played with soa, Brian, have you played with it? So, just a couple comments 'cause I used it for the first time yesterday. The, the onboarding is, is, remarkably easy. You, you take a picture of yourself, turn your head left and right, and then you read three numbers on the screen, which is apparently enough for it to get your articulation, your mouth movements, and and your voice. So the onboarding literally takes what, 30 seconds. I then started prompting it to make videos of me rapping. And I, I, I made Fat Troy 
+
+[00:12:00] Brian: Is that with a pH?
+
+[00:12:01] Troy: just f
+
+and I'll, I'll share them with you. my wife then took them and sent them to our, all of our friends back in Saskatchewan, which, uh, I think that they were basically indistinguishable from reality other than I had gained like 75 pounds. it was kind of funny and I've heard from multiple people that they spent days with friends in the last like week or so making these, cameo fueled
+
+AI video. 
+
+[00:12:28] Alex: Cameo is their term for like a copy ver a ver version of you that they can use. 
+
+[00:12:33] Troy: yeah. And then the ins another product insight was that I can take your cameo and build it into my video so I can prompt around you and around myself. And I think that the only thing, the most sort of addictive and powerful force in the media world is always you. It's you starring it it's content about you. And, you know, social media kinda improve that, right? Like it's, everybody wants to be in the show. I mean, listen, there's always gonna be times I still listen to vinyl and I'll still watch long form content and we'll go to movies and stuff like that. But, more and more and more of you just have to look at it over a longer arc and imagine a world where these tools, I mean, become so sophisticated that we can, you know, prompt machines to just to make incredible visual, like accurate worlds
+
+[00:13:27] Brian: Mm. 
+
+[00:13:27] Troy: that we star in.
+
+And, and, and, and there's so little friction in it, Brian. It's not just the onboarding. It's like I can give it a vague prompt and it'll write me singing, like rapping a song. 
+
+It'll write the 
+
+[00:13:40] Brian: sounds, This sounds, very wholesome and, and enjoyable and, and really great for engagement. unrelated news, Chachi Bt is, is opening itself up to what, Sam Altman Chastely calls erotica. So now combine that with, with this move.
+
+[00:13:56] Troy: well, I, I think they're related and I, you know, I thought that was interesting for just the simple observation that people talking in sort of intimate and therapeutic ways to chatbots is a huge use case for these guys. Massive.
+
+So much so that they needed to put the guard rails on, but they really needed to circle back and make sure it could be used for that use case.
+
+[00:14:19] Brian: Yeah. It just doesn't seem like necessarily a healthy step. with the loneliness epidemic and the various other epidemics, for this to, I, I, I don't think anyone saw this, maybe, maybe some pers and, and said, oh wow, this is great. This is tremendous.
+
+[00:14:35] Alex: No, I mean, and I, and you know, we saw it that when, you know, when they released, Chad GT five, you know, they kind of nerfed the, Chad GT's attitude and. And, and just personality, and turn it more into a tool. And, and a lot of people hated that. And I think I, I look, I mean, I think that we're gonna get tools of creation that provide like no friction.
+
+The, the ability with no friction to create pretty extensive works, right? And whether or not you wanna call them that or not is, is, is a different story. Now. I, I feel, I wonder first of all, like when everything, when there's an abundance of everything, like where's the value? Like when, when, I, and 
+
+[00:15:19] Brian: the value is in whatever is scarce.
+
+[00:15:22] Alex: yes.
+
+And, and you know, being a, making movies in the early days of cinema was really easy. All you had to do was shoot a fucking train coming to the station. And that was your avatar of the summer, right? Like people would line up to see, train arriving at the station. Then it was like, wow, this one has sound and this one has color.
+
+And, and if you, and if, and everybody kind of expressed themselves creatively through that and tried to tell new stories, now there's going to be just an explosion of tools. And I, I think we're kind of leapfrogging to a stage where at least a certain type of media content will be zero friction and zero cost.
+
+Now, that is, if the economics keep working out, because I don't believe the economics work out. I think there's like so much, you know, these companies are burning through so much money and, it's unclear whether or not they can make advertising work. they're, they're not 
+
+making 
+
+[00:16:14] Troy: who? The AI platforms, the
+
+[00:16:16] Alex: ai, the, the AI platforms.
+
+I think, I think 
+
+[00:16:19] Troy: I, I wouldn't, I wouldn't worry about that, 
+
+[00:16:20] Alex: I I mean, I'm, I mean, I worry right, because the, the numbers we're talking about, you know, we're not subsidizing Uber here. Like it's, it's, it's way bigger than that. And we're talking about, you know, trillions of dollars spent on. And, you know, companies like Nvidia, you know, investing in companies that buy Nvidia cards and all that type of stuff.
+
+I think like, you know, there is a, there's a, there's potentially like, this could be the golden age where we feel like, remember when we could all generate this for free? but let's say it keeps going. Let's say we don't worry about it. I think the thing that so did that's really clever is that they made it all about yourself, right?
+
+And what meta didn't, because Meta has no taste or no understanding of like how people are Meta did something similar. They jammed it into the AI site and they just let people prompt generative video and they thought that that would be it. But, but by focusing in on like, hey, generate, create your own content, they create a lot more value because then they, you know, you are only, you are technically the one that can create your own content unless you, you know, explicitly.
+
+Allow others to do so. and you put it out there so there's, there's value for you, which is a great place to start, and then there's value for your friends and maybe it goes beyond that. So I think there is a real future for this type of content, but the question is like, you know, what does that do to authenticity and, and all of these things.
+
+Are we just going to be completely,like immune to that? 'cause the strange thing that's happening alongside this guys is that shows like the nightly shows like traditional TV are actually losing out because people are finding these shows really inauthentic. And they'd rather listen to some guy with a bad mic talk about the news on a podcast.
+
+So I know we're seeing technology and media go one way, but at the same time we also see culture bifurcating and going totally towards authenticity to the point that like things that are overproduced aren't performing as well. Does that make 
+
+[00:18:19] Brian: Yeah, I, 1, 1, 1, 
+
+[00:18:21] Alex: I wanna where it balances out.
+
+[00:18:22] Brian: Yeah. One data point on on that, with the numbers working on it, the FT got a hold of some financials, open ai, they're, they're gonna do $13 billion in revenue this year, which is pretty good, right? Yeah. Problem is they're gonna spend about a trillion dollars on compute in the next 10 
+
+[00:18:38] Troy: dollars this year. They're gonna 
+
+[00:18:39] Brian: in the next 10 years, in the next 10 years. So, like, they gotta make those numbers work. and It's an 
+
+[00:18:45] Alex: Yeah. It's also 
+
+[00:18:46] Brian: that you make, that you make Alex, about like, what, what passes this sort of authenticity in this kind of, in this kind of environment. I've been using, do you know Lex, I've been using the, that AI editing tool.
+
+[00:18:59] Troy: It's basically like a, a word, right? But, like a word, like word, program. But you Google Docs, but you can also use it to, it's like, oh, check it for brevity, for grammar, for, for, you know, repeating and stuff. And so I use it. I'm like, okay, great. Like, I don't have an editor and, and I would rather not to use the passive voice and whatnot. And the end result of it though, even just that, it's almost like I read it and I'm like, yeah, this is good. It just doesn't sound like, like me as much. so I don't know if that's just it, me being, I mean, listen, it's, it's the economic be of our lifetimes, Brian, and the way that I, I look at it and, and there is an, you know, I don't know whether it's a trillion dollars or more collectively across the hyperscalers and everyone in the industry that's gonna fund, you know, a new set of infrastructure to power, you know, this kind of new modality of computing that, that we're all really excited about. But at, in the end, someone pays for it, right? And you have to believe, and I think you, you know, there's bears and bulls on it, right? You gotta believe that either consumers will find it deliriously, either useful or entertaining, such that they'll pay 20 bucks a month for it.
+
+[00:20:11] Brian: Only 5% due right now for 
+
+
+[00:20:13] AI In Commerce
+---
+
+[00:20:13] Troy: okay, so, so let me keep going. That, that, you know, Walmart today was announcement today, it was shop, Shopify two weeks ago. And,Etsy the same week that more and more and more commerce will be, they've dumped their catalogs effectively into the ai, into chat, bt in partnership with OpenAI. And that, that, that environment will become a nexus for commerce.
+
+And if it does, it's worth a whole lot of money. And they're clearly in that case, just taking money from, you know, from television, from me, no, from media broadly and from Google,
+
+right? And that increasingly, and you can break it down like by class, different types of workers, right? So like the service industry will find that either. You know, they'll use AI to be materially more efficient in how they deploy people to solve problems such that AI will capture more and more and more of the value, right? Whether it's in healthcare or in marketing, or in consulting or in the legal profession, like huge swaths of labor essentially will be augmented by ai and that that value will be captured and that, you know, all of those use cases and, and I'm sure there are others, just all add up to a huge amount of money that's gonna pay for all these new data centers. And, and, and I, and I think that what I would, my learning would tell me that America's a pendulum nation, everything always swings too far one way or the other. That inevitably there will be. An unconstrained deployment of capital, which will, you know, be used irresponsibly by many. But that what really what that, that, that compute will be absorbed and it'll be absorbed in economic ways.
+
+Ultimately, and really what's happening is there's a bunch of people in Silicon Valley, including like ex Googlers that are whispering in Sam Al Altman's ear saying to him, listen, now is your time. This is what happened to Google. And when you're in a position where you have the attention of the world and 800 million users, you go hard.
+
+[00:22:32] Alex: everything. 
+
+[00:22:33] Troy: you. go hard.
+
+On every You and you made the point last week in the email, Alex, you go hard on everything and it's time to do it now, and it's okay because by the way, the capital you're taking is very inexpensive because your valuation is so high. So you can make all kinds of crazy deals and go nuts and listen through this process.
+
+The uninformed or the people that don't have the same insider sophistication or whatever, many people will get burned, but this compute will be absorbed in some shape or form. That would be my take.
+
+
+[00:23:01] OpenAI Is A Better Google
+---
+
+[00:23:01] Alex: Yeah, and I think that's, there's an inevitable path to, OpenAI becoming a better Google. And by that I mean, yes, it will subsume like a lot of stuff that TV does and, and, and things like that. But like it is already, it's a better Google, it's a better Google to search to shop.
+
+So they're building all this tooling in. Now when it comes to creating media, you know, I think we've already seen it change, change things, but I wonder like, people use a lot of different tools, right? Like I know that, I know that, that there's often this talk of like, when you start seeing a trajectory where companies starting to consume all the different parts of our lives, that you think that in the future, that one thinks that in the future, you know, everything will become subsumed with this way of doing things.
+
+And I. You know, and at the same time we've seen like how people use different tools all the time, right? People experience media in different ways. There's there's things aren't, aren't entirely linear like that. And I, and the real thing, and 'cause when we're talking about authenticity, I don't care about authenticity when it comes to, Hey, find me this, you know, magnetic max, safe battery pack that will fit my phone and work with my case like that.
+
+I don't care, right? But as we, the, the question is like, how much of our time engaged with media or with, with screens or whatever, is going to be spent with content that is authentic, non generated and real, right? Because we're hearing people warning us about the dead internet theory, right? That like most content on the internet is going to be bots, talking to bots, that, Sora's scaring the shit out of everyone.
+
+[00:24:34] Troy: people are, you gotta be more specific because that's a stupid idea. I'm sorry.
+
+Like, 
+
+[00:24:40] Alex: it doesn't, it, it, it's, 
+
+[00:24:41] Troy: as soon as it's bots talking to bots, no one will use it. But people will use, you know, generated entertainment that stars them and their friends and that will take up spectrum from everyone else.
+
+There's no doubt about it. That is gonna happen. That is definitely gonna happen.
+
+[00:25:00] Alex: Absolutely.
+
+[00:25:01] Troy: and they, the, the, the idea that, that like, you know, suddenly the internet is useless, is ridiculous.
+
+[00:25:09] Alex: I agree with you,
+
+[00:25:11] Troy: It's, it's, it's nonsense. It's people that it, it, it, it, it's just contrarians trying to get attention
+
+[00:25:18] Alex: I think the people that are mostly scared and why a lot of this stuff is getting a lot of media attention is that it'll change moats. It'll change moats, like honestly, like being a great English speaker that can write and knows all the vocabulary is a moat.
+
+Being a Hollywood studio that can allocate a hundred million dollars towards a, a movie is a moat. Being a broadcaster that has, you know, radio channels is a moat. Like all of these moats are going away. And so what happens, like, you know, like, I no longer need a team. I can create all this stuff. Right?
+
+And, and we're seeing this with YouTube creators are worried about it. Like, you know, like people like M-K-B-H-D create these like elaborate setup, like high production values. They, they use expensive cameras. They use color correction, they use all that stuff, right?
+
+[00:26:06] Troy: You know, that's
+
+[00:26:07] Alex: all that stuff's going.
+
+[00:26:08] Troy: ' cause they were triumphant when they, when they disrupted,
+
+you know, old 
+
+fashion institutional media, poor, you someone's making it easier and faster than them. Listen,
+
+humans we, we re we rero the system around. Shit that doesn't work. It's already happening with broken webpages.
+
+When I see video players and all kinds of bullshit on a, on a, on a webpage, I, I root around it. And that's why email became important. And that's why Substack became important. And that's why Instagram continues to be important. And so like we just root around it and we find other stuff. And on the entertainment, I'm just saying on the entertainment front, if I was gonna short anybody, I would short Hollywood and I would go long on AI entertainment.
+
+[00:26:51] Brian: Okay. So you think that just takes out entertainment time from 
+
+[00:26:55] Troy: I don't think anything takes out anything. I think that it just reduces the amount of time and it
+
+[00:27:00] Brian: Well, that's what I mean. I don't mean it takes it out like
+
+zero. I'm just saying there's only so much time that people necessarily have. I think it's, it seems like these AI answer engines are actually adding to search, so it's actually additive,
+
+like the search markets become bigger.
+
+and that's why I think Google is gonna go fully into, you know, the AI 
+
+[00:27:20] Troy: The, the legacy that I focused on, that I did a bad job of articulating before is that we are in fact, living in a pro truth world, Brian. And I think that the, the lasting legacy of Trump and the way the internet has changed us all, creating and being in our own narratives is that, in, in, in, in all the places where we used to rely on the integrity of fact and narratives, that's going away.
+
+[00:27:45] Brian: but I doesn't, come on, it's not going away.
+
+[00:27:48] Alex: 
+
+[00:27:48] Troy: it's, it's badly wounded, Brian.
+
+[00:27:51] Brian: I mean, maybe the webpages are going 
+
+[00:27:52] Troy: I mean, it's a continuum, right? Like on the far side you have facts, facts from the government that you may or may not believe in the middle. You have the financial times in the, in, in maybe the New York Times or something that you do believe. Maybe if you don't put bias into the question.
+
+And on the far side, no, in further down, you have the New York Post that writes so heavily towards a point of view that you can't fucking believe anything they're saying anyway. And then on the far right, you have fucking TikTok videos.
+
+[00:28:23] Brian: I believe so. I, I would say I ran into the CEO of, the New York Post this morning. Sean, let's good guy.
+
+[00:28:29] Alex: Did you, did you feel, 
+
+[00:28:30] Brian: What they, they had the whole, the Hunter Biden laptop. Give them, give them their laurels. You didn't believe
+
+that, huh? 
+
+[00:28:36] Alex: I think, at the end of 
+
+[00:28:38] Troy: I thought I had a good theory.
+
+[00:28:39] Alex: no, it's not a bad theory and it could go down that path. And I think it's a pretty nihilistic and maybe like, you know, I'm surprised you came up with this because you actually love people, but it implies that people just want to,you know, get what they feel is true and is kind of celebrates themselves.
+
+And, and 
+
+[00:28:58] Troy: it's, it's partly that Alex, and it's partly, you also have to remember that the distribution piece, which is algorithmic and personalized, is a big part of the, of, of, of the, the kind of breakdown in what used to be facts and institutions because it's
+
+not just that, that content's being created, it's not just that our procession of truth is objective increasingly, it's that we're all living in little, you know, tubes of, of, of that that, that are personalized to our points of view. 
+
+[00:29:30] Alex: Right, 
+
+[00:29:31] Troy: a fragmentation too.
+
+[00:29:33] Alex: right. But at the same time, I mean just, probably being overly optimistic here, as algorithms and AI tools increase, they might be able to like better get you to the truth rather than you having to jump through interfaces.
+
+[00:29:48] Troy: is happening here? You be me for a while and I'll be you.
+
+[00:29:53] Alex: I, I, I, I, because I do find, let's, I mean, it's hard because we, we get politics involved, right? And everything like that. But let me just, like, it's, it's hard to, let's go back to commerce, which is maybe less loaded. I don't feel like I'm being given the truth when I search on Amazon. I don't feel that this is a genuine experience that is targeted at getting me the truth, right?
+
+I don't trust the reviews anymore. I don't trust the first results. 
+
+[00:30:19] Brian: I don't trust Reddit and neither do these AI engines anymore because everything gets gamed on the internet.
+
+[00:30:25] Alex: yeah. But I find that using my AI, I can kind of prompted into a specific direction that gets me to a better truth. And I have done better purchases from that, right? Like, 
+
+[00:30:37] Troy: don't, I don't believe that there's truth in there, and I don't believe there ever was.
+
+[00:30:41] Alex: Hang on. I, I saw this Instagram ad for this special type of screwdriver that has this magnetic lock on it. Is this, is this good?
+
+Is it a scam? Yes, these screwdrivers are good. Here's the actual brand that created it first. All these Instagram things are a lie. Here's some Reddit posts about it. Here's some form posts about it. Like that would be research that is impossible for me to do. And I do believe that I got to a truth that is better than what I saw on Instagram, better than what Amazon showed me, better than what the first result of Google was, because I applied my own lens to it.
+
+And I think this is where like, I don't think AI is by definition, like, kind of like, you know, obfuscates the truth right now. It can manipulate the truth, but I, I, I think that because you control it much more than a Google search result or Amazon search result in this case, I think I've, I got to the truth better and I, so I, you know, I don't, I don't think it's a linear path towards everything being fake now.
+
+Here's the thing, like what I think is definitely gonna happen in which, and I don't know what AI video actually is. I think everything's going to be AI video, your camera and your iPhone right now is AI video. Nothing you shoot on your camera is an actual real scene. Everything's being modified When you zoom into something, your skin tone, the color of the sky, everything.
+
+Right? And I think that's gonna happen more and more. I think there's going to be more and more influencers that use more and more filters to like light their room or make their sound better. You know, that's kind of like in the, you know, the kind of more, innocuous side of it. And then all the way to changing their face and their voice and then gender and whichever way they want to say whatever type of message, the amount of ads that are fully generated by AI that look like some podcast that I get on Instagram is crazy 
+
+
+[00:32:21] Who wants fake?
+---
+
+[00:32:21] Brian: Can I be an old person here for a minute? Like, who wants this?
+
+[00:32:24] Alex: Nobody,
+
+[00:32:26] Brian: Aren't we just
+
+assuming? And there's,
+
+[00:32:29] Troy: Can you be more specific, Brian? Who wants what?
+
+[00:32:31] Brian: well, like this world that you're ping, like where nothing is tangible. It's impossible to understand what's real. Like to me, the opportunity for like, let's say someone in media is to simply exit, is to, is to exit. Trying to make sense in this world and to build and to play a different game. Like, I just think that there, I think that there's more, maybe I have more faith in, in human agency that a lot of people will reject being immersed in this ambient world of fakeness.
+
+Like, I, I just don't, yeah, fine. I'll like, you know, I'll, I'll, I'd love to see your, you know, fat Troy, you know, hip hop video.
+
+[00:33:14] Alex: What are you talking about? You see fat joy every week. Baba.
+
+[00:33:17] Brian: But 
+
+[00:33:18] Troy: I, uh, I really 
+
+[00:33:20] Brian: not gonna live in that 
+
+[00:33:21] Troy: I I'm almost tempted to have Alex put it up. Do you wanna see it guys? We'll do it right now.
+
+[00:33:25] Brian: I'm happy to see it and I'm sure it's
+
+very amusing, but the idea that that is gonna be my world is, is, is ridiculous. I'm gonna 
+
+[00:33:33] Troy: you're literally gonna go nuts 'cause you're gonna like it so much.
+
+[00:33:37] Brian: I'm the last person on the earth reading a book, I'm gonna be that person.
+
+[00:33:41] Alex: but, but I'm sure it's very fun. But we've had lots of little fun moments that, and I'm sure it's Fanta. Look, here's the thing, 
+
+here's, 
+
+here's the 
+
+[00:33:48] Brian: yourself. Great. 
+
+[00:33:50] Alex: the, by the way, the JibJab guys just, the Spirit Ellis Brothers, that's what I think they're called. They're just opened, they got funding for an AI animation studio.
+
+
+
+[00:33:58] Brian: many articles about Elf Yourself. It was a seminal moment of
+
+microsites. 
+
+[00:34:03] Troy: is better. But you're right, it's the same spirit.
+
+[00:34:05] Alex: it, it's this, it's a similar spirit for sure, but like, the, the conversation actually is I think more interesting when we talk about. Scarcity. Right. Brian, you mentioned that the, the, the train coming to the station right now, once five people managed to shoot trains coming into the station, that had no value anymore.
+
+And I do think that we're going to bump against the scarcity issue, like really, really quickly, really, really quickly when it comes to this stuff because we get bored incredibly easy. It's amazing. Even just like seeing there's something in video games that happens and in, in, in, you know, I don't know if it's been studied, but you know, you watch something in, in 20 2005, you would walk into somebody playing the latest NFL football game and, you know, parents and stuff like walking into their kids' room, thought that they were watching actual tv, right?
+
+Because the graphics were so close and mind blowing the same people. If you watch that today, your brain has been completely refactored into seeing this as looking completely fake and polygonal and stuff like that. And so. Our ability to adapt to things and adjust to things and seek scarcity, and try to find something that doesn't look like stuff that came before it.
+
+I, I think we cannot underestimate that. 
+
+[00:35:23] Brian: So do you know, 
+
+[00:35:24] Alex: a pretty huge,
+
+
+[00:35:25] Anemoia
+---
+
+[00:35:25] Brian: do you know the term anemoia? It is, it is a term that for it's nostalgia for a period you never experienced before.
+
+[00:35:32] Alex: oh, yes, I wrote about this. Yes. Yeah, it's a great word.
+
+[00:35:35] Brian: And, this is, this afflicts a lot of, of young people apparently. and, and there's something there I believe, and that's why I keep going back to, you know, real experiences when I, I had a, a breakfast earlier today with a lot of, of publishing executives and it's just, it's remarkable to me how much they've almost just given up on, you know, websites and, and, and web pages.
+
+I mean, they still operate that business. They still wanna like, you know, eke out as much as they can from, from traffic and whatnot. But all they're talking about is like doing, is doing events, doing tent poles, doing franchises.
+
+[00:36:15] Alex: this, but isn't this a little bit like the movie studios like, you know, stars of the Silent Era, like not knowing what the fuck to do when sound came on and they were like, you know, like we've had these moments over and over where a technology shifts and people are left completely, you know, wrong footed as to how to handle it.
+
+And instead, like, it should be like, but wait, do you guys are media creators? The tools are becoming so much better. You should only have amazing websites. You know? but in fact, like they only see like, well, this website that we created that was, you know, made for the world five years ago is no longer working.
+
+So let's throw everything out and you know, everything, you know, the digital side of things is dead. So let's shift completely, entirely into like,
+
+you know, real world experience people. It's a, it's like a huge lack of imagination I'm finding, because in fact, like people's demands from media, is, is, is bigger than yet ever.
+
+I think people end up reading more, watching more, consuming more stuff. They need stuff of all types of quality. Sure. You hear data about like, you know, kids just like being stuck to AI slop eight hours a day. But that's because, you know, there's nothing really competing with it at this moment. So, I dunno, I think we're in a weird time, but I feel like, people get bored.
+
+People get 
+
+[00:37:35] Troy: Yeah, just guys watch. I mean, it, it, it, it, it, one of the, the great ways to watch platform shifts and their effect on culture in people is US elections. So you'll recall, you know, six years ago, or, or, and, and the election before that was, and Brian, you'll know more about this than me, but that was, it was like the Twitter election, right? And
+
+this was, this was, I don't know, the podcast election or the TikTok election. Let's just see what happens with fake content in the next election and with things
+
+[00:38:07] Alex: Oh, it's got a, a messy few years, 
+
+[00:38:09] Troy: it's gonna, it's gonna be mayhem.
+
+[00:38:10] Alex: Well, I mean, the 
+
+
+[00:38:11] What is our next reality?
+---
+
+[00:38:11] Troy: and I guess what I'm curious about, and we may never resolve it on this podcast, is. Where do we, where do we go next? And what is a resting point that's reasonable because we had a kind of semblance of agreement around institutional kind of,trust for many, many, many years. And now we've been subject to these kind of platform changes that have steadily eroded at that.
+
+And I just wonder where, like, is the next election and is our next reality entirely performative? Do new media brands like Fax Inc. Or Trust Inc. Or you know, the, the ones that are already scaled, like, like at times or journal or whatever, become bigger and more important to us? Like where does it land next is kind of what, what I've been thinking about. 
+
+[00:38:59] Brian: Yeah, and I think you bring a good point. This is a pendulum country and the pendulum will swing back. I think, you know, when, when they talk about trust, like I was at, I, I left that breakfast and then I, I hustled over to moderate a panel at, at these news fronts, which is trying to get advertisers to spend money on, on with news publishers. you know, trust gets, you know, you could, you could do a drinking game, based on like how many times trust gets thrown around. And meanwhile you've got these AI.
+
+[00:39:27] Troy: Jess Sibley's. Favorite word at time.
+
+[00:39:29] Brian: These AI engines, which are, are notorious for like literally making shit up. Like forget about like actual, you know, bias or any of these sort of qualitative things.
+
+They just make things up all the time. We all experience that. But the, the real trust issue falls to these publishers, and I think this is part of what I was talking about, the performative internet. Like conspiracies are really good narratives, right? And so everyone, I think there's conspiracies were always fun.
+
+I always found 'em fun, but now it's become baked into the media ecosystem. And so I think that is like part of people thinking that there's a hidden hand behind everything when it's usually just, you know, incompetence and just regular human frailties. and it's just ironic to me that the trust falls on, you know, institutional news publishers, but people trust. Sam Altman created, ai like that seems very strange to me. I don't, I, and 
+
+[00:40:29] Troy: no, but I don't think, yeah, I don't think it's that, that it's that like it's just like extend out the Trump stuff. It's like the Epstein files are, you know, not an issue. Forget about it. We're moving on. Or you know, any fact that's inconvenient is discarded. Anyone that works with your narrative is, and then people believe it or they don't believe it, they don't care that
+
+it's 
+
+[00:40:53] Alex: mean, I think if, if you look at, I, I think part of the issue is like we're kind of, is surprisingly, even though we have access to so much media, like, we're, we're drying in, in media that is making us, making us feel that what he's saying is working like. You know, statistics show that it's probably not working and that a lot of people don't believe it anymore.
+
+Statistics show that a lot of these, like, you know, kind of conspiracy theories that hit the mainstream actually lose steam once they hit the mainstream. Right? Like, uh, you kind of need to be, the underdog and it needs to be, so this stuff all ebbs and flows. I'm 
+
+[00:41:28] Troy: it. It does Alex, but I would encourage you to think about it differently, and it would just be that there used to be this tension between the administration and the media. Where there was a check process, that check doesn't exist anymore because one just completely disregards, one just makes up its own narratives and disregards the checkpoint of the other,
+
+[00:41:47] Alex: Oh, that's, yeah, that's happened. Yes. 
+
+[00:41:49] Troy: right? 
+
+[00:41:50] Alex: But, 
+
+[00:41:50] Brian: And, I, I, I would actually argue that that is a playbook that the technology industry overall is using. Honestly, they good luck fi, good luck, finding Mark Zuckerberg giving an interview to quote unquote institutional, mainstream media, whatever you
+
+wanna call it. He's on every other podcast. He'll go on like TBPN friendly outlet, you know, whether they're just friendly for tech or, or, or because it's in their interests.
+
+You know, I, it's, I, I admire it, whatever. they've got like 300, you know, viewers
+
+of it. And,
+
+[00:42:20] Alex: it 
+
+[00:42:20] Brian: and there like just, you know, there, there is just this Josh Kushner, you know, who's never been like really like out there. They just had this massive profile that dropped. And like another friendly outlet, Colossus, they're creating their own media ecosystem. Of safe spaces that they go that ha, that have the trappings of, of journalism, of capital J journalism. It looks like it, it, tastes like it. but it's qualitatively different now,
+
+whether that, whether that works in the marketplace, I guess we'll find out.
+
+[00:42:54] Alex: I mean, I think the, the irony of it is that like right now, you know, I think we have these two kind of massive bodies of waters that are hitting each other, which is one, we still have a population, including ourselves. Whether we wanna or not still has trust in media or enough trust in media to talk about the distrust of media, right.
+
+Or, or the changes in it. And then you have people that have figured out that they can hack these norms and create their own media channels. Because people still look at like, you know, the, the, the, the irony is like Rogan says stuff saying, don't trust the media while he's the media. Right? Like, he's bigger than CNN Right. And I think at some point, like my wonder, I wonder is that are people going to get like, a little bit more immune to these, to these kind of norm breaking things, right? Because it does feel a little bit like these hacks work on people who are still living in a world where media means something. where, you know, you talk about doing your own research, but your own research is listening to the most popular podcast in the world.
+
+and that over time. We shift and we shift away. We consume media and that's the thing that we're having a really hard time trying to grok is like, what does the future media consumer look like? The person that's never born in the time where like, you know, news used to mean something. You used to turn on CNN and stuff used to mean something.
+
+Well, you know, you used to go to the train station and look at the bulletin board. If somebody had, you know, printed something and put it on there, that probably meant it was true. But you would never believe something's, you know, glued to the wall of a train station today. You know what I mean? Like, I think 
+
+[00:44:33] Troy: Well, yeah, 
+
+[00:44:34] Alex: more hardened.
+
+[00:44:35] Troy: those are great points, Alex. The, the, the, the thing that made me think is this, is that in, in in a society of deep, deep, deep polarization, either one side is, you know, reading the world differently or they're misrepresenting the facts or they have a completely different kind of moral compass.
+
+[00:44:56] Brian: Yeah.
+
+[00:44:57] Troy: And, and, and I think that when you add that this deep polarization to media fragmentation and then add on that the idea that truth is fungible, which is really what's happening, you get even more polarization in my opinion.
+
+[00:45:12] Brian: Yeah, and I think that also. Like, some of this can be overplayed, right? Like, Stawell just, they, they own the Harris poll and they, they did a survey, that just came out today. And, you know, the headline is this, 85% of young people get their news from social media. Okay. It will, guess what the least trusted sources of news are?
+
+Social media influencers and social media stories. So, you know, the ones that are, are viewed as the most biased are social media influencers.
+
+I mean, they're, they're, they're over national politicians where people trust the most are friends and family. Local TV does really well and local
+
+newspapers and websites, so 
+
+[00:45:56] Alex: And also, and also social media often means a clipping from an existing media source or somebody that, you know, like I have people I know personally who share stuff on Instagram about the news that they watch, and that's how I receive news. But it's essentially like I'm getting it from a friend,
+
+[00:46:12] Brian: Yeah. And I think what is, what I think is actually maybe hopeful is where interests align is, you know, you look at what OpenAI is doing with, with apps in chat, GPT and I, I was doing something in there and they just had a little teeny popup that said, why don't you, do you want to do it in Figma? You know, with one of the, the, the apps they have, I think that they will clearly find is that they're gonna be publisher.
+
+Why would there not be a publisher app store in there? Like, where I would want, like, I mean, you talked about, you know, verifying it with your credentials. I would want them to be drawing from publisher apps. I don't think I'm, I'm, I'm alone in that. And maybe, maybe this world that you're talking about, Alex comes, comes 
+
+[00:46:58] Troy: No full full app like content integration into the chat bot would be great.
+
+[00:47:03] Brian: you know, so
+
+Sam Altman, if you're listening. 
+
+[00:47:06] Alex: this this, is why the, prompting. I think, going back to my search when I'm looking for a store, the prompting, I was saying it, here's the sources that I wanted you to pay attention to. Don't pay as much attention to these sources because I don't trust them.
+
+You know, like it's impossible to do searches like this in Google. I do feel like it's not black or white. You know, like I think oddly enough in this kind of generative world, it might be easier to pull back the veil of some of the bullshit that the natural structure of the internet has created, which was, you go to Google, you end up wherever, whoever had the best SEO, and you read the thing, and then that's the thing you do.
+
+Right? And I don't think that's particularly healthy. I think it's way healthier going to a computer and say, Hey computer, here's the nuance of what I want to get, and that might actually source more truth. Then second to that, I think that if everything becomes fudgeable, I don't think the issue is going to be with a bunch of fake content.
+
+It's going to be the fact that nobody trusts the content anymore. Nobody trusts the content anymore. Nobody sees a handsome dude on TikTok and thinks that guy isn't using filters. Right? So what does that create? It actually creates a low trust society, but at at, at the very least, one that doesn't like just believe everything they see online.
+
+I think that's, that's the, that's, that's going to be like the massive change. And so if you can create, if you can differentiate differentiate yourself, by having an audience that trusts you and then trusts what you create and maintaining that trust, I think that's going to be hugely valuable.
+
+Because if anything, I think the flooding of like fake content is just going to make us not believe anything we see, we see, which is actually healthier than anything like, but right now, right now, we still live in a world where if I go on Facebook, there are people that I know who will like a picture of fig, you know, shrimp Jesus or a baby, uh, a baby, a baby in India that's carving a fucking Jesus statue with using a tiny little baby chainsaw, right?
+
+And then, you know, you know, like a boomer, a boomer saying, this is so beautiful. Kids used to be so talented. I'm like, this is fake, but like. None of these people will be allowed. None. 
+
+[00:49:14] Troy: Who 
+
+was Alex? Who 
+
+was it 
+
+[00:49:16] Alex: uh, this is like par par parents of friends, parents of friends. I'm just 
+
+gonna put it out, but it
+
+[00:49:21] Brian: is AB 
+
+[00:49:22] Troy: getting on right now. Do do you want as a break? AB has a, a theory that rich people wanna own media. So he, he wants,
+
+[00:49:29] Alex: yeah. Let's bring them on. 
+
+[00:49:30] Troy: I I, I kind of got annoyed with him 
+
+in the, in the car because I said, of course
+
+[00:49:35] Brian: Did you
+
+drive? 
+
+[00:49:36] Alex: I mean,
+
+I'm gonna, while while we wait for ab I'm gonna put, fat Troy wrapping. Here he is.
+
+Yeah. No, this is 
+
+incredible. Yeah, it's 
+
+[00:49:54] Troy: the feature is gonna be in the cinema soon.
+
+[00:49:56] Brian: Okay.
+
+[00:49:57] Alex: It's incredible.
+
+[00:49:58] Brian: I'm gonna try to res, I'm gonna try to resist the, the slop as much as I can, but
+
+[00:50:04] Alex: I'm just gonna keep making some.
+
+[00:50:07] Troy: I don't know. That was, I thought it was kind of fun.
+
+[00:50:08] Alex: It was 
+
+[00:50:09] Brian: no, it was 
+
+great. 
+
+[00:50:11] Alex: B AB 
+
+[00:50:12] AB: Okay. It 
+
+[00:50:13] Brian: hair different? 
+
+[00:50:14] AB: No, it's like not gelled perfectly.
+
+[00:50:16] Troy: No, he is doing young. Steve Bannon.
+
+[00:50:19] Brian: Yeah, it does have a little, 
+
+[00:50:21] AB: It is funny. Steve Bannon.
+
+started his career at Goldman Sachs. It is a 
+
+random fact. 
+
+[00:50:27] Alex: Oh, makes everything makes sense now. 
+
+[00:50:28] Brian: yeah. So ab, I heard, I heard that you made a startling discovery, which is that rich people like to buy, like to buy media properties. 
+
+[00:50:41] AB: That's what Troy said. He said it wasn't an original idea.
+
+[00:50:44] Brian: Do tell me how you came upon 
+
+[00:50:46] Troy: I did. Yeah. But good enough for a podcast. 
+
+[00:50:49] AB: I mean, it's not, I think that it is not like a discovery. It was more everyone keeps asking who's going to, who's like the next Skydance Paramount, who's gonna keep buying media companies And a lot of the. Natural sort of incumbents that are publicly traded or even some of the family owned media companies like Hurst and Conde Nast.
+
+I think they've moved away from active m and a. And so the point I was making is that If you look to some of these tech founders who've, accumulated a lot of capital and a lot of value could be some of the more active people buying the 'cause, they're the best position. 'cause their main companies make a lot of money.
+
+And so the toys that they have are part of the ecosystem, the content platforms they have, they want to probably add to them. So that 
+
+was the point I was making. 
+
+[00:51:35] Alex: I think that's actually a really good point and I think, I mean, we've seen it with sports team, but I do know folks here. That have made in an incredible amount of money and actually wish that they were running something as fun as a media company. Because at 
+
+[00:51:50] Brian: yeah. It's, it's, 
+
+[00:51:51] Alex: right, like your SaaS product and whatever, isn't that fun as running a media company 
+
+[00:51:55] Brian: no, it's not fun at 
+
+[00:51:56] Alex: Charlize and whatever, you know, like that's great.
+
+I mean, there's probably a hint of Apple doing that, right? Like, because, you know, it doesn't really make that much sense. Right? But man, they want to hang out with Brad Pitt at a DF one track. So, 
+
+[00:52:11] Brian: What, what's y'all saying? The best, the best way to have a, the best way to have a small fortune is to start with a big fortune and, and buy a media company,
+
+[00:52:19] Alex: Yeah. Or maybe it's like boats 
+
+that you're, you're, 
+
+[00:52:22] Troy: you wanna break it down a little? Do you wanna break it down a little further for SAB, because you're an analytical person.
+
+[00:52:27] AB: Sure. I mean, so you look, just give a couple examples, right? So, and these are gonna be, they're obvious ones, but it's like. Most of these tech folks have some sort of, angle of people consuming content on their platform or adjacent, right? So the simple ones, Zuckerberg with Instagram, Bezos with Prime Video and Twitch.
+
+the Google guys with YouTube, Jeff Bezos, as you pointed out, Brian with the Washington 
+
+[00:52:52] Brian: Do you forgot to add Washington Post in the text 
+
+[00:52:54] AB: Yeah, yeah. And 
+
+[00:52:56] Brian: Not a good sign for the post. 
+
+[00:52:58] AB: I mean, it's not a good or bad side. Just that's kind of an example of tack on acquisition that's not core to what Amazon is doing. They tried to have the technology platform, the CMS platform that didn't really scale.
+
+but I think more and more, and obviously Paramount is like if they have. In a way to monetize the consumer at a much more significant level. I don't see Instagram buying necessarily content. You could see them in the future going after sports rights because if you, you, you can feel this in the feed of Instagram as there's more and more video.
+
+there's a lot of suggested people to follow and they're really pushing video, because it makes more money. And so the 'cause it, this all goes back to everyone keeps asking me? who's gonna be buying the next set of these up and coming fast growth media companies. And I think we have to look to the, the tech platforms and their, whatever you wanna call 'em, their appendage media company or appendage audience as the, as sort of the route to finding who's gonna buy, who's gonna be doing the next set of deals.
+
+[00:53:58] Brian: Gimme like
+
+three up and coming media companies that are gonna 
+
+be very valuable in three to five years in this environment. 
+
+[00:54:06] AB: In what's, what do you mean? Oh, like specifics.
+
+[00:54:10] Brian: Yeah. Like literally companies. I'm interested 
+
+[00:54:13] AB: That's a secret sauce. Why don't we talk? Oh, why don't we talk it at a high level?
+
+[00:54:16] Troy: so I'll give you a better way of answering this question. So I believe you'll see the larger media companies going after YouTube channels en mass. Like they'll either figure out how to turn them on themselves, like real channels not, we've talked about this before, the shoulder content.
+
+[00:54:30] AB: we've talked about, and if you want specificity, it's like the golf YouTube channels and what's happening there is really interesting. And So you could see someone like an ESPN wanting to go get that audience and basically monetize 'em in a 
+
+different way or like 
+
+[00:54:43] Troy: today AB yesterday AB with Spotify and Netflix and their podcast broadcast on Netflix. 
+
+[00:54:49] Brian: yeah. 
+
+[00:54:50] AB: I know that we're negative on some of these. Smaller, magazine companies. But I do think it's a valuable way depending on what media company or what. Enterprise, you are to basically get, advertising in the hands of consumers that are already adjacent to your events and things like that.
+
+So that's not big m and a, but I could see that happening. And then this, like the easy one is the newsletter. It doesn't need to be a Substack, it could be a beehive, it could be someone that just has built up a large list that's doing it themselves. But I think more and more media, because think about these headwinds with organic traffic, they're like very sizable. and if you have all this advertising demand and you're like. Oh my goodness. Our traffic dropped again, 5% this month. It's the simplest way because the frequency behind the newsletters allows you to have a lot of, sellable inventory. It's the easiest way to basically attach it, and you probably are gonna get synergies because your sales team, if you're a bigger media company, can sell that and has already sold that at a higher CPM. 
+
+[00:55:47] Troy: I agree with you. You know, I have a friend who has a very large substack and is currently being pursued by a tier one investment bank and a tier one kind of media focused private equity company.
+
+And I think that those are a good place to look for signal as to what, you know, how companies will follow with their corp debit efforts.
+
+
+
+
+[00:56:07] Hasan Piker Shock Collar
+---
+
+[00:56:07] Brian: Oh, one thing is that, that 
+
+this actually fits in with, the, the post-truth internet, because I had no idea what Alex was talking about when he, he mentioned Ha Hassan Piker. And, and some do. I didn't even know, I vaguely knew who Hassan Piker was. he's like a, a sort of
+
+[00:56:26] Troy: he is a liberal 
+
+[00:56:27] Brian: Joe, Joe Rogan kind of character.
+
+[00:56:30] Alex: Left wing, but also controversial, 
+
+[00:56:32] Brian: was a controversy about him sh putting a shock collar on his dog, and I was like, okay, this sounds like a typical controversy, but then there was a counter controversy about it not being true.
+
+[00:56:45] Alex: yeah. Well, I mean, I think, I 
+
+think 
+
+[00:56:47] Brian: This is exactly it I'm 
+
+[00:56:48] Troy: What do you believe, Brian? 
+
+What do 
+
+[00:56:50] Brian: don't need it. I don't need it. 
+
+[00:56:52] Alex: I mean, that's a, I mean, this is the thing, right? And, and the thing that's coming up now, which I thought was kind of, so, so his dog's always in the shot. There's a shot of the dog leaving the, his, his, because he's like just streaming.
+
+He's a, he is an ex, uh, gaming streamer, potentially a Twich streamer. but the dog leaves and then you see him pick something up and press it and you hear the dog yelp in the corner and come straight back down to sit down. which is like, alright. He, you know, he did it. He did it or not. he denied it.
+
+He denied that he had a shock collar. Then he says, yes, I have a shock collar, but it's only set to vibrate. You know, it kind of like, it kind of, but the thing that I thought, 
+
+[00:57:29] Troy: I'm gonna do a video of my wife putting a shock collar on me.
+
+[00:57:32] Alex: but the thing why it ties well to this conversation we had about authenticity and also it ties back to abs.
+
+you know, people wanna buy media companies so that they can control the narrative. They want to have their audiences, they wanna attach themselves to power and all of these things. But there is a pretty massive count of movement of, of online sleuths. A lot of it happens on Reddit where people immediately went in and started like, this is the model number.
+
+We saw him on Frame 72, and they're just, they completely, and they create their own news cycle by doing all this basically detective work in the background. Right. And people are doing incredible detective work, trying to see. Well on things that are actually really useless. It's a waste of everybody's fucking time.
+
+But like they take, uh, two photos from the Kardashians and notice what one had been retouched because in that one you see her coming out of a taxi and she didn't have that scar, but here she has it. Or, you know, like looking at the, the image kind of like compression and figuring out which type of camera, and I wasn't taking on an iPhone and stuff like that.
+
+[00:58:38] Troy: I mean, that's a hobby, Alex, but at that point it's too late, right?
+
+[00:58:41] Alex: but it is a fun hobby, but it is also, but like the stuff that happens with Assan, like actually shows that these things, these, these, these kind of like authenticity seekers, are actually like pretty powerful, right? They, they, they kind of ruined his week. and so as we're seeing this, as we're seeing kind of the, the fear of the death of auth authenticity, there's always kind of like a counterforce that emerges
+
+and this is one of them.
+
+So I think like. Now the problem is this stuff was relegated to sub, sub sub forms of sub sub subcultures. Right? But what AI allows you to do is to surface these things. Hey, go do some deep research. What's going on there? If I just saw CNN or if I just read the stuff that Brian read, I wouldn't have all the context about the dog thing, right?
+
+And I only wanted it because I was going to talk about this on this podcast,
+
+[00:59:31] Brian: Taylor Lorenz about it.
+
+[00:59:32] Alex: but Taylor fine, right? But you read, you read Taylor Lorenz because you, you like, you know, Taylor Lorenz's 
+
+[00:59:39] Brian: I can't get enough. Taylor, the content. Yeah.
+
+[00:59:41] Alex: So, so I don't know. I think the tools as always there is, has been kind of a balance of the tools of deception versus the tools of like, kind of like truth seeking and, things are still in balance more or less.
+
+And I think, and part of that is because of the human energy that gets put behind trying to find truth in all the lies. 
+
+
+[01:00:02] Good Product
+---
+
+[01:00:02] Brian: Okay, great. Should we get to good product 
+
+[01:00:05] Troy: Let's do it.
+
+​
+
+[01:00:09] Brian: my good product is I went to Chateau Royale, I think it's a new restaurant in, in, in the village on Thompson Street and yeah. Nice French restaurant. The, the server spoke with a very heavy French accent that was he way heavier than I experienced in, in
+
+[01:00:23] Alex: Are you sure it was authentic?
+
+[01:00:24] Brian: I know. 
+
+[01:00:25] Alex: think people play it up.
+
+[01:00:26] Brian: 90% sure it was not, she was like, I was like, really?
+
+I was like, you know, everyone in in, in Paris was like, 
+
+[01:00:33] Troy: It doesn't matter as long as it felt right.
+
+[01:00:35] Brian: But the interesting part was when the table next to us left, they, they were turning it over and they, they put a new tablecloth on it and then all of a sudden they produced an iron and we're like ironing it with the, the smell of like a linen being ironed and the steam.
+
+And I had never seen that before in in a restaurant. It's a very simple thing that is a real differentiator. So I think more, I think everyone has to find their
+
+[01:01:02] Troy: Did you throw them your shirt and said, would you mind?
+
+[01:01:04] Brian: No, I didn't. but we stayed around because the next table then like, you know, left and I was like, I, I kind of want to experience this, this again. 
+
+So ironing during
+
+[01:01:15] Troy: You know, I'm really looking forward. I'm gonna London next week and I'm going to that, that restaurant. Jim Carna. Jim Carna.
+
+[01:01:22] Brian: oh yeah,
+
+[01:01:23] Troy: Yeah. I'm looking forward to It 
+
+[01:01:25] Brian: you're gonna go to the basement 
+
+Don't they have a basement area?
+
+[01:01:28] Troy: I think so. Yeah.
+
+
+[01:01:30] Outro
+---
+
+[01:01:30] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:02:04] Brian: All right. On that note, let's leave it there. 
+
+[01:02:06] Troy: All right. Thanks guys. 
+

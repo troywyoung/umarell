@@ -1,0 +1,799 @@
+S2E67
+===
+
+
+[00:00:00] cold open
+---
+
+[00:00:00] Troy: on the way back from school today. I was listening to the Dire Straits album that has Money for Nothing on it, and woof, that was good. 
+
+[00:00:07] Brian: Yeah. 
+
+Vanja, could you scratch
+
+[00:00:09] Troy: that please? It's literally, literally, it's so
+
+[00:00:13] Brian: was a great album. 
+
+[00:00:14] Alex: Money for nothing and 
+
+[00:00:17] Troy: stop it, please, come on.
+
+No, 
+
+[00:00:19] Alex: ain't 
+
+working.
+
+[00:00:20] Troy: Guys, this is, uh, this is like Boomer Music Corner. 
+
+[00:00:23] Alex: Troy is so worried about being called a boomer. He's gonna be 
+
+[00:00:26] Troy: no, I just, I'm worried about being super uncool, which is what
+
+that,
+
+[00:00:31] Brian: definition, 
+
+[00:00:32] Alex: You know, what's uncool is being worried about being uncool. You dork 
+
+[00:00:36] Brian: Yeah.
+
+[00:00:36] Troy: thank you Alex. 
+
+[00:00:38] Alex: The Money for Nothing music video was the first time I saw computer graphics on TV and is what really made me want to start doing computer graphics. And the rest is
+
+[00:00:48] Brian: Oh, wow. That's amazing.
+
+[00:00:50] Alex: 
+
+
+[00:01:13] intro
+---
+
+[00:01:13] Brian: Welcome to People vs. Algorithms, a podcast where we detect patterns in media, technology, and culture. I'm Brian Marcy. I write the Rebooting Newsletter and host the Rebooting Show podcast. And each week I'm joined by longtime media executive and investor Troy Young and Alex Schleifer, former head of design at Airbnb and CEO of Universal Entities.
+
+This week, we're discussing hit pieces, fairness, drugs, and VR. If you enjoy this episode, Please leave it a rating and a review on Apple, Spotify, or any other podcast platform.
+
+
+[00:01:46] episode start
+---
+
+[00:01:46] Brian: We're going to talk about a few things this week. We're going to talk about hit pieces. We're going to talk about the concept and the practice of fairness. We'll talk some CES stuff, something about goggles. I don't know. Nobody's going to buy them. Nobody's going to wear them.
+
+That's my take. So, I want to talk about hit pieces, because one, there was a couple that came out this week that are being called hit pieces. one was the Wall Street Journal, which has been, which has been poking around a lot on Elon Musk. And, they came out with a story about Elon Musk's drug use.
+
+now Elon Musk is arguably one of the top five most powerful people in the world, right? And so people's personal behaviors, I think, in general, particularly in, in business, unless it directly affects their business, it's whatever, this has been dismissed by a lot of Ilan's many acolytes as a quote unquote, hit piece, trying to take him down, tying it together with some of the other moves to reign in his power, which is across many different areas.
+
+And the other one that I found interesting was Bill Ackman, who is, what he used to be called. They used to call them corporate raiders. I think one of the great, rebrandings was. Changing it from corporate raider to activist investor. Sounds so much nicer. Anyway, he's made a lot of good bets. He's incredibly rich and, business insider.
+
+He recently launched his own attack against, various forces, but particularly universities over, Their free speech policies and, what he believes is an epidemic of anti Semitism on their campuses, DEI, the rest of it. And so, B. I. investigated a little bit around the academic credentials of Bill Ackman's wife because Bill Ackman had led an investigation into, that resulted in plagiarism charges that took down the Harvard University president. Claudine Gay. Now, I think what was interesting about this story from B. I. is a couple of things. One is, whether this kind of piece, and I think it, it, we can go back and forth with, with the must piece, whether that's a quote unquote fair. Target for a piece. Now, you know, journalism has historically at least believed itself and held itself up to be,accountable to actually force accountability, to comfort the afflicted, and afflict the comfortable, et cetera.
+
+What's your take on whether this is kind of fair game because, Troy, because this, this to me plays into a lot of the narratives that we've talked about, the media, quote unquote, against big tech.
+
+[00:04:25] Troy: So what's the question? Was it fair?
+
+[00:04:28] Brian: Yeah, is it fair? Is this a hit piece?
+
+[00:04:31] Troy: I mean, what's a hit piece? A hit piece is something that Attempts to aggressively hold a person of power accountable to their actions or their hypocrisy or, things that, might be considered, I don't know, bad behavior, abuses of power, etc. So that we zero in on. on an individual and try to kind of bring them, hold them to account.
+
+I guess that's a hit piece.
+
+[00:04:59] Alex: I think Troy, I don't think, I think that's a very generous definition. I think the way when you call something a hit piece, it's specifically working backwards from trying to find something, about a person to bring them down, whether it's because, there's a sentiment around the world or with their audience that that guy or this woman, should suffer in some sort of way or as a 
+
+[00:05:23] Troy: so so a hit, a hit piece in this case is give Bill Ackman a taste of his own medicine by going after his wife.
+
+[00:05:29] Brian: Yeah. Basically. I mean, because like, to me, a hit piece is you work backwards from the desired result. You're like, we gotta, knock this person down a peg. Let's investigate them. Let's 
+
+[00:05:40] Troy: I find,
+
+I find it ironic that you're telling me what a hit piece is, but I,
+
+[00:05:44] Brian: well, we're going to get to that, we'll poke around. You ask enough people. We talked to 54 people, et cetera. in this case, what I found interesting, and I think it makes it like more, fraught in some ways is that. It was about his wife, not him. if Bill Ackman was, going after these university presidents, particularly Harvard's president, with accusations of plagiarism, and when he himself was a plagiarist, Bill, if you're listening, I'm not accusing you of being a plagiarist.
+
+I don't want to get on that guy's bad side. Whoa. then that to me is total fair. That's like,pox on both houses, hypocrisy. We've talked before about how journalists hate hypocrisy more than pretty much anything. But the wife kind of makes it a little bit, I don't know, marginal. 
+
+[00:06:29] Troy: Bill Ackman has decided to live a public life. And,I think that the, the rules, of playing in that arena are pretty, you know, you, you live by the sword, you die by it. So, I think that if, a journalist has good reason to go after a public figure or, I mean, I think arguably his partner is a public figure, yeah, it's a, it's a gotcha thing that would, highlight some hypocrisy, but, feels fair game to me.
+
+I wonder whether the story's legitimate is a different question. It feels incredibly petty, and, my understanding of the sort of crime is, doesn't feel like plagiarism to me. It feels like, you
+
+[00:07:12] Brian: Sloppiness.
+
+[00:07:13] Troy: yes, just sloppiness. so then you start to say, well, what was going on between writer of the story and the editor in advance of, as they were preparing this story, like obviously, I mean, we've seen this from Business Insider lots of times.
+
+This is, something that's going to get a lot of attention and the incentive is to publish it. And so they go after it, but I think it's an absolute waste of fucking time. to me, it's just high carb, gotcha bullshit and not worth, a lot of time.
+
+[00:07:44] Brian: Mm. 
+
+[00:07:45] Alex: it does seem to play to people's worst instincts as well. they're going after This I guess he's a billionaire, right? He's he's very
+
+wealthy, right? Okay. Well, think they're going after this billionaire There's like check
+
+[00:07:57] Troy: it do? What's the use? Who cares? 
+
+Like 
+
+literally who 
+
+[00:08:00] Alex: the use buddy is to have more clicks to sell more ads.
+
+the use is always that because it's got, look at this checklist, 
+
+[00:08:08] Brian: dude, this is, this is a bad economic decision. If that's, if that's the goal, let me tell you, this is not going to make very much money in 
+
+programmatic ad revenue versus the cost of, of, of making an enemy of one of the most powerful people. this is not a good economic decision. Like no business person and anyone who's operated within media company, the business side will always say, forget this, it's not worth it.
+
+Always. Which is because it's a rational decision. I mean, I've experienced this before like I mean they it's always for who for what why do we want to do this is this worth it. So always said by the business side.
+
+So this is not a
+
+business decision. 
+
+[00:08:49] Alex: You're reported and you want the attention, right? I mean, it's all everybody wants to gain more attention, get more credibility, get more notoriety, whatever it is, this checks a lot of boxes, right? It's got, it's attacking a billionaire. it's hypocrisy in quotes, because like there's some sort of symmetry between the things that are people are being accused of, it attacks a kind of Attractive woman who oh, why is she so successful, right?
+
+Like it taps into people's worst instincts about what they want to get at
+
+[00:09:21] Brian: So what you think it was, you think this story It's, sexist in some way. I mean, it's going after Bill Ackman, let's be real. This is not about, Neri Oxman.
+
+Like, I 
+
+mean, 
+
+[00:09:32] Alex: I don't know if it's sexist, but there's something about you know attacking this man's Spouse, I think people have a lot of opinion about I don't know, she seems to be younger than him, potentially, I don't, there's all that stuff, it feels somewhat salacious, the way it's being recovered, so I totally understand why it's out there, if you want to get the attention, if you want to scoop, right, isn't it important to scoop shit in your, line of work,
+
+[00:09:57] Brian: I'm, I'm post journalism, but yeah. No, I think scoops are definitely important. And that, that is a Everyone wants to excel in their chosen profession. I assume that designers want to design stuff that people like and whatnot.
+
+[00:10:10] Troy: This is just another skirmish between the much maligned media and power centers in tech and adjacent to tech in the financial world. And, Bill Ackman showed that he could throw his weight around. and it started not with a plagiarism accusation. It's important to point out. It started
+
+withthe, freedom of speech or lack thereof run amok on college campuses and then the whole antisemitism thing on the Harvard campus, so that's where it started.
+
+And then the sort of tension was, or the, pressure was elevated with plagiarism claims, that seemed to be legitimate actually. and, 
+
+[00:10:50] Brian: but but but but let's be real this you could say it was almost the same as a hit piece Right, like you're working backwards. It seems like Bill Ackman's issue was something completely different with, with Claudine Gay. It had nothing to do with her academic credentials. his problem was the policies that Harvard has in place under her and her testimony, from Congress.
+
+And so. The plagiarism stuff was kind of like 
+
+[00:11:18] Alex: yeah, 
+
+[00:11:19] Brian: taxes, right? I mean, it was just a 
+
+[00:11:20] Alex: is so thin, it's so thin, that thread, it's like so, so, so, Inconsequential. It makes no sense. I just think as a media story, I'm surprised you guys are surprised this thing got published because, hey, man, it's too juicy, right?
+
+[00:11:36] Brian: Oh, I'm not surprised it got published at all. I am surprised that, and I think it's, look, I, I like the tech dramas, but I love media dramas too. And Axel Springer. Which owns BI and Politico and eMarketer, it should be said, came out with a, we're going to investigate the provenance of this story and the motivations of it now to any journalists out there, I mean, they're selling out their newsroom in the biggest way.
+
+You just don't do that. Like it is. You don't do it. Being in the media business is a sucky. Business and part of the problem, quote unquote problem of the news business is you are going to piss off people if you're not about that, go into a different business and part of this, honestly, I think it's also German media culture,there have been scandals in German media that it took like the New York Times to uncover.
+
+Like not, not the German media. So there, there's a coziness there. Axel Springer in particular has, some fairly interesting and for American and an American context, unorthodox, ways of, operating its news business. It has its journalists sign a pro Israel pledge. They, they suspend that for the American publications, at least for Politico, I don't know about BI.
+
+and so I think that is going to become a major problem, and we'll see, we'll see what they do. I mean, it's, Bill, Bill Ackman to his credit is, is publicizing everything that the, the powerful people do. They go to your boss and they go to your boss's boss and if they don't get like what they want, they go and they lean on your corporate overlords, whether that's your investors or whatever.
+
+I mean, this is how it works. I'm glad it's out in the open.
+
+[00:13:24] Troy: When you say like this, this shouldn't have been done. Are you saying that the corporate should just put a shield around, the reporters and, and never step in like that. I mean, if you felt like maybe they do feel that there's something wrong with the reporting here, or is it that they've announced it?
+
+[00:13:40] Alex: What's wrong with it? I'm just trying to be clear.
+
+[00:13:43] Brian: Yeah. I'm just saying from the perspective of the newsroom, you've like sold out the newsroom. they're going to have a major issue on their hands, certainly at BI, because you put in place processes and, you know, ultimately you have to stand. You have to stand behind your, people if there's something like egregious and I have yet to see I see Bill Ackman.
+
+He's moved his rationale. I don't even think he is the sexist thing. I mean, he first he said it was anti semitic because they, request a comment like after sundown on Friday. then it moved on to it's not really plagiarism. It's just, I don't know something else. So I'm not really sure. he claims he's he is.
+
+Actually, disputing the facts in the story. I haven't seen that in the, maybe they're buried in the like 14 million words he publishes on Twitter, but I haven't seen that he hasn't like cogently explained what is wrong exactly with the story. but, ultimately when you have a story that is actually accurate, that. To step in like that is very fraught, because first of all, they would never do that if it wasn't a powerful person, right? Like if this was just a regular person who was like, I have been maligned, this shouldn't be a story. Do you think ever that Axel Springer would do that? 0 percent chance. So it just kind of 
+
+shows like 
+
+[00:15:04] Alex: Troy is done with this topic or deep thought, but yeah, I, I don't know. I, I, I don't know. I think it all seems very odd to me.
+
+[00:15:11] Troy: Well, it seems like the facts are, unimpeachable, and it feels like Bill Ackman called the senior leadership of either Axel Springer or KKR and said, what the fuck? And they were stupid enough to reflect that conversation to the public and said that we're looking into the sort of motivations behind this particular piece.
+
+that rests squarely on the shoulders of the editor, Nick Carlson, who made a decision to assign and, release the piece. And it is clearly kind of gotcha journalism and, a logical. kind of brawl inside of,like it because it just has hypocrisy written all over it. and, is it in good taste?
+
+I don't know. Maybe not. is it fair? to challenge someone who has put himself in the center of this, debate publicly, I would think so. And so it just feels like it's kind of where we are. It just was where we are and it's sad because we're wasting time talking about something that is about quotation marks.
+
+And it has no, it has no consequence anywhere other than a, little petty sort of, power skirmish. I mean, have much more to say about this from a personal perspective
+
+[00:16:35] Brian: Well, that's what I would like to, if you would weigh in, because you, I mean, do you consider the, I think Ben wrote it, right? The Times story
+
+about you at Hearst? 
+
+[00:16:44] Troy: I have been so fair about this in so many ways. And I think that Ben Smith is a really smart guy who's written many good things, but he's pretty much a sociopath. And I think that in many cases, journalism turns you into one. When you become a scoop machine, your god is the scoop.
+
+Right? If you want to break stories, that's what's most important to you. And what I noticed is the climate of 2020, BLM, unionization waves in media newsrooms, the anxiety of staying at home, a DEI reckoning inside of organizations. I was living it. Calls on organizations to report on your diversity numbers.
+
+obviously tons of blood in the water from really bad people like Weinstein and others in this me too movement. Right. And I was at the front line of a union battle. and I watched us very sadly actually have the sort of people inside of our organization turn against one another because there were, the people in power and the people fighting for power.
+
+And I started getting phone calls from people saying they're coming for you, Troy, they're going to come for you. You're going to get taken down. And these were friends of mine that were. Journalists that saw this kind of story about me taking shape and I completely dismissed it, but you know, I was a perfect candidate for this, right?
+
+I was a perfect candidate for the headline, Because I was a change agent. I have a big personality. I had to fire lots of people. I had to make changes where they weren't welcome in an organization. I had to tell very senior tenured people that their time had run out you know, and also, you know,whatever brusque or, you know, have a point of view or make in a, but, but here's the, the, the, the part of it is none of the good stuff could get reported.
+
+None of the good stuff. So all the positives are ignored. Change in the fortunes of the business, a massive amount of innovation, a perception that a company had gone from being a laggard to an innovator, the quality of the product, diversity at the executive team and how many supporters there were in the organization.
+
+I was a prize. I was a prize for Ben and, his colleague Kate and they were going to get that prize. So you go in and you get all the information you need to take me down. And the other side of the story, nobody, not even my friends, none of my great friends or colleagues or people that I continue to have great relationships with.
+
+Nobody in age, I'd never had an HR infraction of any kind. And nobody was going to stand up. And say, Oh my God, he's a great guy. Yeah, he's a little autistic, but he's a great guy. That isn't happening because, why? Because you'll be slaughtered for that, right? And so, you get in, you tell the story, you say you did X, you find all the people that are disgruntled, you put together something, they come to you, and you try to present the other side of the story, and not a single sentence of it makes its way into the document.
+
+into the final story. And so, here's the tragedy of it. I just have to share this with you, right? Because What are my options? What is a person's options? To go nuclear? To do the Trump thing? To fight back? To call Ben Smith an idiot publicly? To, pull Hearst into the fray and Hearst management?
+
+I'm not going to do that. these are people I respect and are making decisions that they need to make. It's not my personality to do that. I'm not going to go to war, So the end of the story is that there is a story in the public domain. That's as close as a Google query. That's forever associated with your name.
+
+And, Troy Young becomes the person that was the head of a toxic organization or some bullshit like that. And that's your new bio. And so Neri Oxman is now a plagiarist, right? So, is she a plagiarist? I, I, I'm not sure she's a plagiarist.
+
+[00:20:44] Brian: I don't know. I don't know the woman. I think one of the hard parts is when we talk about fairness and stuff, and that's why I want it. Cause I have this fairness chain, I feel like. I think a lot of times reporting 
+
+Sometimes it can be unfair by design in some ways, and I think a lot of it comes to the story format and how it goes, but you're telling a version of a story that cannot possibly be the fullness of it. And even if it's like 100 percent accurate, it can be 100 percent accurate.
+
+It can also be unfair. At the end of the day, I
+
+[00:21:14] Troy: right. So the reason I say that. So the next day, right? Let's say that your life has been forever altered. And the next day you're licking your wounds. And your phone rings. And it's a call. It's Ben Smith on the line. And you're like, now what? Right? And he calls you.
+
+And he says, I need some information on this Esquire Bryan Singer story. And you're like, what? And just for context, it had been a story that had been reported on and gone up and down because it was perceived that Hearst didn't care about journalism because they killed a story about Bryan Singer. And there's lots of, just trust me on this, there's lots of reasons, lots of reasons that are well grounded in In how you decide to run a journalistic organization protect the interests of, everybody involved that led to a decision to not run the story.
+
+Right? First prerogative. And, Ben called me the day after wanting to do reporting on this, picking my brain on it. And I just find that to be psychotic. I'm sorry, completely psychotic. my career has ended, right? I'm literally reeling. From something that's unfathomable to me, because I don't believe that I've done anything.
+
+And this guy calls me to get, like, a scoop on another story? That I've somehow killed this Bryan Singer story and he wanted to get the inside scoop on it? that's insanity. maybe it's petty, but that's, that was sort of my experience, and, I think that sometimes, the prize is there, it's so appetizing for a, a journalist looking to make a name, and you don't realize what the human consequences are. 
+
+[00:22:56] Brian: yeah, no, I 
+
+could see that. 
+
+[00:22:57] Alex: Thank you, Troy. 
+
+[00:22:59] Brian: I really do think that a lot of it is, whether it's fair, you know, at the end, I get hung up on that. Like, is it fair? I guess if I was the editor it was pitched, it's like, is this a fair story? Is this of the public interest?
+
+And what purpose does it serve? And so I think that was a particularly weird time where.
+
+[00:23:19] Troy: was a very weird time, Brian, and the consequences I could not have imagined. Because on more than one occasion, I have been sitting next to an opportunity that's perfectly suited to me, that is out of my reach because of that story. I cannot pursue these opportunities. My life is forever changed because of that story.
+
+does that feel fair? I don't know. Open 
+
+[00:23:43] Brian: no, I mean, I don't, I mean, I don't think it does, but know, I, I don't, 
+
+[00:23:47] Troy: when did this episode come about this anyway?
+
+[00:23:50] Alex: think this is, great, Troy, and I 
+
+really, 
+
+[00:23:51] Brian: interesting. I actually got way more 
+
+interested. 
+
+[00:23:54] Alex: yeah, I really appreciate it. But you know, it's a culture of shaming, and sometimes it's warranted, sometimes it's not, but the issue that, because it's on the internet, it has a scale and a long tail that never existed before, and it's therefore hard for people move away from stuff, and I think I talk to people and I often find that those statesmen's, difficult to understand where people say, well, you know, they've got a lot of money, they can take it, or, they're famous, or they put themselves in the, in the limelight, so it's all fair game.
+
+and I think our definition of what fair game is, is, is very loose today. Because I.
+
+even if it is plagiarism that she copied a couple of paragraphs or, I think it gets amplified to an extent that isn't fair
+
+[00:24:37] Troy: wish I
+
+had been a plagiarist, 
+
+[00:24:38] Alex: yeah, I mean, 
+
+I think that would have been,
+
+[00:24:40] Troy: it would have been better it came back to me. I will just tie it together with something more optimistic. And maybe it is a bit of an epilogue. so. Late in 23, I had an opportunity to do something, related to the acquisition of a company. and there was a, private equity firm involved.
+
+And, at one point in the process, the well meaning individual partner at the firm said, well, maybe you can get involved in some way, but. You know, your involvement will have to be limited because of your history. And I was like, well, hmm, that's interesting. So I've basically been tried and found guilty without any process.
+
+Like it just was, cause of that, moment. And it really hit me, right? Like I was like, holy shit, like this is really tragic because it in no way reflects on who I am as an individual and what I would offer in this particular instance. And I was telling a couple of friends of mine about it.
+
+and one woman said to me, a woman that had worked for me said, why don't you just get letters from people like me? And send them to the ESG person at the private equity firm or the DEI or the ESG person. that tells them a little bit about you about the time and about what it was like to work with you and all these kinds of things.
+
+And. for a minute, I thought that was a good idea that I would start like a sort of, defense campaign. And, I just decided, nah, who cares? I got to find a different path. This is my reality, but you don't have any choice. I'm just telling you as soon as
+
+someone 
+
+[00:26:14] Alex: thought that was optimistic, Troy.
+
+[00:26:15] Brian: Well, it was optimistic in that he's now on this podcast. 
+
+[00:26:19] Alex: I mean,
+
+that's 
+
+right.
+
+[00:26:20] Brian: He's telling us, Alex, that he doesn't want to be on this podcast.
+
+[00:26:23] Troy: No, I'm telling you what my watch words for 24 are no fear and courage. And, you get to a point where I've lived for the past two years or three years with a lot of fear and a lot of shame. And it's affected my life it's affected my health and, and I'm sucking do it anymore. So, No fear, dude. that's the resolution for 24. And,I'm not going to live with any fear of being judged or, or any, I'm just going to live. and, and so that's the optimistic part.
+
+[00:26:56] Alex: Well, Troy, I gotta say you're an inspiration and I know I give you a lot of shit, but, um,
+
+[00:27:02] Troy: Just do your homework, Alex.
+
+[00:27:03] Alex: Fucking hell. I was trying to be nice, 
+
+[00:27:06] Brian: Well, I do hope all these, like, the essential tension is society needs accountability. Okay. And I understand that the role of media organizations has shrunk. With that. That's that's a reality. And, hopefully accountability will be filled in a bunch of different ways. But I do think that there is still a need for the fearless, reporting and uncovering of malfeasance of problems.
+
+I do believe that that is still really necessary. but at the same time, I recognize how that instinct and The that accrue to those who are able to, break those stories and can lead to excesses and the reality is the cultural environment, particularly at that time over the pandemic was such that every single news organization was looking for scalps and, some of those scalps were deserved and some of them were just people who like all of us have good parts, bad parts, flaws, upsides, all kinds of things.
+
+And, I hope going forward that we can figure out a way that it's fair to people and to the fullness of people. But at the same time that there is still. this need to uncover problems in society. Like you said before, when you, like, when you get to the bottom of this with the Ackman stuff, it's like, what are we talking about here?
+
+Like, 
+
+MIT, like, how many people even read this dissertation? No offense to Neri Oxman, but like,
+
+[00:28:47] Alex: I mean, that's the thing, but it's, it's, we just started valuing capturing attention over anything else, over anything else. That's the only thing we're doing now. And with that, there's probably a bunch of whistleblower shit news that came out at the same time and where everybody's talking about this, you
+
+[00:29:04] Brian: well, 
+
+like, Epstein was operating, like, and it's like, wait a 
+
+[00:29:08] Alex: Jesus fucking Christ. TheEpstein list came out and we're talking about this, woman who might've copied a paragraph from Wikipedia, which is what everybody does. By the way, it's the same, thing as, when people get shamed for, watching porn or doing drugs, which is something everybody does, but everybody loves piling up on because they want to make sure that nobody
+
+[00:29:26] Brian: All right. So let's just quickly touch on that. Is 
+
+[00:29:29] Troy: But, but just, just before, before we finish it, it's sort of, The environment favors people that have, kind of organizational indemnification, meaning they're not beholden to the system. And they have the money and the means and the personality to challenge whatever is fighting them on the other side.
+
+In some ways, we're creating a culture that advantages people like Trump that just come back and say, attack the attackers, right? it's an uncivilized environment,
+
+where it's like, you say one thing, they say another thing, and it's just these constant skirmishes. And God help you.
+
+if all of a sudden you're unemployable because of something someone said that you didn't deserve and that you don't have the means to fight back. 
+
+[00:30:21] Alex: I think a lot of people nowadays feel very helpless and, powerful, rich, famous people. become kind of a totem for this justice that they're seeking. And so when some, somebody that's high up or powerful gets, shamed in 
+
+public, they feel, they feel good about all the s t.
+
+God, my manager's a d khead too, you know, like that's how they feel. And, we're feeding that in by scoring points and it's, yeah, and it's not, there's no grace in, in all of that. It's, it's very disappointing.
+
+[00:30:51] Troy: Yeah. And one other point I'd make about it is that somehow If this plays out in that there is just this kind of, omnipresent culture of fear, then we lose something, we lose something, we lose personality, we lose a kind of environment where it's open to the human foibles, right?
+
+It's like I want to live in a world where people can make mistakes. I want to live in a world where people can be kind of goofy sometimes, and someone doesn't airlift that out of context and say, Oh my god, can you believe that he or she said that? Like, context matters, right? and people say stupid shit. guilty, okay? I say stupid shit. In either the pursuit of humor or insecurity or whatever it is. But I want to live in a world where we have tolerance for those human imperfections. And it doesn't mean that you've got to be literally this sort of, corporate robot to survive the kind of, onslaught of scrutiny that you get in this, in this world of gotchas.
+
+I really think you lose something. I really do. 
+
+[00:32:01] Brian: Yeah, I think you do.
+
+[00:32:03] Troy: And I think that's one reason people cheer for Elon. They're like, yeah, the guy did ketamine. Good on ya. I did it too.
+
+[00:32:10] Alex: Yeah, but I do, I do feel Troy that the conversation on both sides like tries to bucket this is like wokeness, which I don't think is a thing. but there is this gotcha culture where everybody feels powerless so everybody's trying to get the other person on some sort of technicality so they can score a point.
+
+There's somebody that I know didn't particularly like me at work, and I can share that now, that complained that I kept using the word guys in meetings, and that I was, making them feel uncomfortable. So I changed it to folks, which is why I use the word folks a lot, because I didn't want to, I didn't want to deal with it, right?
+
+but, 
+
+but, 
+
+[00:32:46] Brian: would take the HR complaint over using
+
+[00:32:48] Alex: Well, I mean, I think, you know,I was just trying to circumvent all of these types of issues, but I've, I've seen my fair share of people trying to do good and doing good and calling stuff out that is wrong and that's fine. But also people that had no business doing that, just trying to score those points.
+
+And, I think Elon is no better. I mean, that's the thing that's like drives me crazy is that he's no he's no better He's doing it in his own way on the other side of the thing. He's not fighting that behavior It's the same behavior across the board. I just think some of the stuff he does is probably worse than somebody telling me not to use the word guys, but
+
+[00:33:23] Troy: Do you feel comfortable talking about your point of view on drug consumption?
+
+[00:33:28] Alex: Yeah, man. Sure. I love drugs. 
+
+[00:33:33] Brian: it's not going to help our sponsorship efforts. Or it might
+
+[00:33:36] Alex: well, I'll, you know, like Elon, I will be tested regularly and they will not find anything. Turns
+
+out 
+
+that. 
+
+[00:33:41] Brian: that. He was like, I don't deny taking
+
+drugs, but I 
+
+passed all the 
+
+[00:33:43] Alex: is undetectable. So, you know, there's a bunch of drugs you can take that are not, yeah, I think so, right? It doesn't get out of your system in no time.
+
+I don't know. imagine for you, I don't know if you've taken mushrooms, I have. but imagine if you will, being the richest man on earth, both loved and maligned, bunch of daddy issues and likely mommy issues, you have 13, 000 kids, and you're high as fuck on mushrooms. What does the universe tell you? What? What? When? When that whole world opens up, what happens in your brain and you're already kind of probably like pretty neurodivergent brain, I don't know if it's ego death. I don't know if the ego loops in on itself and it's just like you come out even crazier as you went, then you went in.
+
+and a lot of this drug taking, can be, I think, really beneficial, for introspection. I mean, psilocybin, there's a lot of research there. Ketamine, a lot of research there. but the issue is they need to be done with the right amount of context. Work at before and after it so you can kind of absorb the changes that you might notice.
+
+Go in with some sort of intention. make sure that you're dosing yourself correctly. make sure that you 
+
+[00:34:52] Troy: getting all 
+
+[00:34:53] Alex: structure around you to 
+
+do this. 
+
+[00:34:55] Troy: on us.
+
+[00:34:56] Brian: Yeah. It's just like good 
+
+[00:34:57] Alex: I'll I'll openly say 
+
+like, I'm looking, I'm looking into doing ketamine therapy for, for various things, including trauma and all these types of things.
+
+I'm interested in that stuff, but I think if, if you take it like with a certain type of mindset, yeah, that could, that could be very interesting. That being said, I don't know if he's taken drugs, but let me tell you. When 
+
+[00:35:17] Troy: you 
+
+should listen to Dire Straits on
+
+ketamine. You'll love it. 
+
+[00:35:20] Alex: mean probably would be amazing. I can tell you that it's kind of an open secret that he is here like it's for some reason
+
+[00:35:28] Brian: Well, it's also, it's a
+
+cultural divide, right? I mean, I just feel like the, tech West coast, you know, West coast has always been more into drugs if I could say,
+
+[00:35:36] Troy: Didn't Obama inhale? Like, isn't this just a
+
+[00:35:38] Alex: I mean, why is everybody such a fucking dork in five 
+
+years? The fact that people are getting, the fact that people are being put in jail for smoking weed or eating a mushroom is going to seem like insane. It's 
+
+insane that we do that. so I don't care if he takes drugs. I think that, 
+
+[00:35:56] Troy: in the hot tub.
+
+[00:35:58] Alex: yeah, just don't do it in the hot tub.
+
+Rest in peace. 
+
+[00:36:00] Brian: No, what, what I, these stories I always find, they always have to try to find a hook to make them fair and legitimate in that you have to tie it to. The business and fiduciary responsibilities and 
+
+he look, Elon Musk is a very strange person. He's very good at running organizations. to be able to do all the stuff like
+
+[00:36:21] Alex: I'm not going to accuse him. He exhibits behaviors of somebody who does some sort of, mind altering thing in where four in the morning, it triggers him to posting a lot of crazy stuff. Right. However, Isn't it laughable that all of a sudden stuff's coming out from the boards of Elon Musk's companies where they're saying, well, we worry about him taking drugs.
+
+What about worrying about him saying the crate drug or no drugs, drug, or no drugs? like, well, I know that he went in and called this guy pedo and then was antisemitic and then said crazy shit that made our stock tank. But the thing we're really worried about is that he's doing that on drugs. It doesn't 
+
+[00:36:59] Troy: The, 
+
+[00:36:59] Alex: he's doing it sober on 
+
+[00:37:01] Troy: the the stock didn't, the stock didn't tank. And, one thing that I found, I found that story that you sent around, Alex, on, extending out. SpaceX trajectory to where we really are in like colonization mode and we're launching 300 rockets a day. She's like, pew, pew, pew. 
+
+[00:37:19] Alex: Yeah. 
+
+[00:37:21] Troy: came from a really good mushroom trip.
+
+[00:37:23] Alex: Oh, for sure. For sure. For sure. either way, I think it's one of those things where like, you know, prudishness, whether it's sex or drugs or whatever, is one of those things that gives every story a 20 percent bump and allows people to go like, yeah, that's, that's why I got to say, I don't. I don't understand why that would be the thing that like uncovers Elon Musk's inability to be, to be good for society. I think, I think 
+
+there's, you know, 
+
+there's 
+
+cars flying off cliffs, you know,
+
+[00:37:55] Troy: You know, I was,
+
+[00:37:56] Alex: 
+
+[00:37:56] Troy: I'm in. Los Angeles and I was, in I was reminded of the practical economic realities of Teslas, and our coastal obsession with, Elon, the brand and the brand of Tesla. As I was driving with a young woman in a, Tesla yesterday in Los Angeles, and I said, do you like this car?
+
+Oh, I love this car. And I'm like, uh. Why do you like it? And she said, well, I don't have to pay for gas. And the car was inexpensive and it has the screen on it. I said, do you know about the fart feature where you can press the button and it, makes fart sounds from different parts of the car.
+
+And she said, no, really? And I'm like, here, go here, do this. And she's like, this is the best thing I've ever seen. and I said, well, would, your perception of Elon Musk change your, desire to have a Tesla? And she said, I couldn't care less. She just wants a car. 
+
+[00:38:45] Alex: a lot of people couldn't care less. And think I can maybe separate Elon, the person and the company. 
+
+I do think. 
+
+[00:38:52] Troy: have, you, for a while there, you had bad derangement syndrome.
+
+[00:38:55] Alex: I'm getting rid of my, I'm getting rid of my, my Tesla because, I can afford it and I'm going to buy a nicer car. But, Like I said, I own everything he makes, but, I do think, I do think that he's made some strategic mistakes that feel like he's unraveling a little bit, that could hurt his companies in the long run.
+
+And if I was a shareholder, if I was on the board, I would be kind of asking questions. It's just like there's a behavioral thing about having somebody has so much power. he's put more satellite in space than, everybody else. having somebody like that being so erratic, it's kind of scary.
+
+Like it kind of scares me a little bit that he'll say shit like the way he does. when somebody like talks about replacement theory and he goes, interesting, or that's the truth. I'm like, re like, really? Like he has NASA contracts with this kind of attitude. I don't know if you've been reading the news and I, I couldn't verify it, but apparently a bunch of.
+
+writers have been kicked off twitter that 
+
+[00:39:50] Troy: Let's wait 
+
+[00:39:50] Alex: to
+
+him 
+
+[00:39:51] Troy: get the facts, on
+
+[00:39:52] Brian: Yeah, I don't know about that. Well, I mean, I've seen like talk of it, but, 
+
+[00:39:56] Alex: I mean, we've seen him do it right? I mean this free speech thing is not free speech,
+
+[00:40:00] Brian: like this is all again, it'll get a fall into the hypocrisy thing. Like everyone is a hypocrite and he's not a free spoo, speech opt to absolutist. He's already proven that. but 
+
+[00:40:10] Troy: you know, his song recommendation wouldn't be Money for Nothing. It would be, it would be Satellite of Love by Lou Reed. 100%,
+
+yeah. 
+
+[00:40:20] Alex: cool enough for you to share? right. 
+
+[00:40:25] Brian: All right, let's, let's do AI talk and then I want to talk about the goggles. quick stuff on, on AI. A couple of things in AI that, that caught my eye, but I'd love to hear, hear your take, Alex, in particular. one is something that it came up in the all in podcast, but, saw some more on this, which is AI will affect things like SaaS.
+
+And I think of this a lot because I have a lot of B2B SaaS clients. but like software as a service is a great business, right? And we focus a lot on how AI is changing the creation of content, but it seems like the biggest impact these, these AI tools have had so far is with things like copilot enabling just far more productive, Developers and engineers.
+
+And, think Chamath was, was mentioned on the all in podcast that a lot, in a lot of ways, B2B SaaS, some kind of like engineering arbitrage, which I don't even know if it's that the right use of the word, but everyone uses arbitrage, in which. Basically, companies wouldn't have, wouldn't go through the trouble of trying to hire engineers and developers because it wasn't worth it.
+
+They were too expensive and stuff like this, and so they would basically just outsource it to SaaS companies which had unbelievable margins. But now it's getting to the point where you can do so much more with less that, That leverage would be disappearing in some way.
+
+[00:41:49] Alex: Yeah, it's interesting. There's some sort of reckoning coming, but it's unclear. what the scale of it is because, I spent, 30 years nearly, seeing amazing new technologies appear that would fundamentally change, companies. Operations if they only implemented it well and seeing companies drag their heels So I think there's probably a long tail of people just doing the same old same old That being said I think AI is going to fundamentally change SAS because SAS is just a, you know, 90 percent of the time, just some sort of middle layer, of software that connects just a jumble of messy data to people who are, not super qualified and just want easy access to it.
+
+Right. If 
+
+[00:42:29] Brian: Yeah. 
+
+[00:42:29] Alex: a lot of that, it's just like,
+
+[00:42:31] Brian: They all start with a dashboard, right? Like, so that's basically what the boss class
+
+wants. Give me a. dashboard. 
+
+[00:42:36] Alex: And there's a huge category folks which work in in data science or engineering, that are really only writing, queries for machines, to return information in some sort of human readable way. And then designers who make it look pretty enough so it doesn't break our brains, with AI fully integrated into these systems.
+
+I think there's a lot of stuff that goes away. first of all, like the impetus to constantly update and upgrade your software, because you can likely have old software running in the background that an AI can just deal with. You know what I mean? like these kind of ancient archaic databases or whatever.
+
+but also, You can, from an AI query, like infer,you know, I think Troy had that set up at Hearst where, somebody could ask Slack to give them the latest numbers on a page or whatever. we have some stuff integrated that when you start looking at even just the integration of an AI chat bot, being able to go into your company data and return information, that's more than 90 percent of what people need. don't need to like. Technically load up a tableau or jump into this kind of accounting software. I just want Quick and even I just want to be able to ask the thing. How much money did we spend? How much money do we have left and whatever? Right. that's going to shrink the space right now where a lot of people are employed, which is kind of that, that just connecting the dot space.
+
+And, and I think that could be pretty transformative to the SAS space. I can see a lot of companies that technically don't need to exist in five years, a lot of
+
+them. 
+
+[00:44:04] Troy: I would say the following one. It's going to take way longer. This isn't a 24 thing. It's 24 and way beyond. I think you'll see that, there's probably a lot of analogies. We could someone to think about the deflationary impact of. programming and analytical resources that approach zero cost.
+
+And, it will start to, reduce the cost of making any product. So I think that you're going to see, AI is a deflationary technology because it. you either go one of two ways. You either reduce costs or you make things that people want to spend more money on. So I think it'll change where we find premiums and the things we spend money on.
+
+It's a little bit like the GLP argument that it's going to, reduce the stock price of Frito Lay meaning, you eat
+
+[00:44:59] Alex: Right. Like a Zempik will make people eat less and airlines will use less gas and snack food companies will lose market share. Yeah, I, think so. That being said, think it's still pretty safe being an engineer because if you look at the world around us, there's so much stuff that hasn't been turned into software or good software.
+
+there's, there's just like a mass of like terrible software, terrible connectivity, terrible interfaces across everything from cars to home interfaces, to the stuff that, they use at the doctors or, like the dentist uses to put in, the gum height or whatever, and, there's likely.
+
+A lot of work to be done there. And I, I hope that engineers become more efficient and I hope they start looking for jobs outside of just social media or SAS companies, because there's more opportunity that I've seen it already with, folks here that, as the tech companies are first to kind of shed A lot of the engineers that they have simplify, optimize themselves through AI. people that would have never looked for a job at a bank, right? Or for a job at a kind of grocery chain are going there. So I think there's also going to be kind of a redistribution of engineers across the industry because they're much more affordable now.
+
+[00:46:14] Brian: Yeah, and also the big tech companies are no longer stockpiling engineering talent, 
+
+right? 
+
+Warehousing them. 
+
+[00:46:23] Alex: Oh my God. I was so frustrated with, with Facebook at a time when we were trying to hire and grow the team where, people with two years experience were. Coming to an interview with what they called exploding offers where they had like one week so they couldn't really go through the entire interview process and they were trying to rush it because Facebook was giving them 150, 000 signing bonus just to go sit on a bench and move a share button left and right, that stuff's gone.
+
+I think that's really good. That's really healthy because, we need smart people to go, to go solve really important problem. The amount of like the brain drain that we've had of people that could have been like building, you know, healthcare interfaces, but instead went into trying to like capture more attention so that we could sell more ads is fuck it's depressing.
+
+So, I'm happy with some of those changes. I think it could, it could be beneficial. 
+
+[00:47:14] Brian: right. Let's skip the other AI thing because we were going on long and let's talk about the Apple vision Pro out on the metaverse stuff for at least another three years this not ready for Alex you're getting you're getting these goggles with a wire on them.
+
+[00:47:29] Alex: at this stage, I'm going to make a call on the day, but at this stage, I'm 90 percent certain I'm going to get one. I'm going to wake up at 5am, and order, order one, straight from Tim.
+
+[00:47:40] Brian: Oh, you're not going to like,line up or do people not do that anymore? 
+
+[00:47:43] Alex: I mean,
+
+dorks, 
+
+maybe? I don't need that. No, I mean, yeah, it could be fun. I'm not sure if you can. I think you need to sign up and then they schedule a fitting and stuff like that. I mean, it's a whole situation. 
+
+[00:47:54] Brian: this going to do anything? Because I mean, we've, we've, we sort of like, there was that burst of the metaverse stuff with, with Zuckerberg and stuff. And then chat GPT came and just like sucked all the oxygen out of the room. And mean, Silicon Valley can turn on a dime. People just 
+
+[00:48:10] Alex: yeah, 
+
+[00:48:10] Brian: Like it was, 
+
+[00:48:11] Alex: right. 
+
+[00:48:12] Brian: a NFT. 
+
+[00:48:13] Alex: good, because both Crypto and the Metaverse was a complete red herring. here's the way I feel about the Metaverse. It is both already here for people that have been playing video games for a long time or watch anybody on Roblox or fortnight. It's already here.
+
+They just want to put the screen closer to your face Right, but let me tell you if you buy one of those curved samsung screens 49 inch curved screens. You're pretty much in it and at the same time it's nowhere close to ready because it's still an edge case to have the space both in, in your day and in your apartment to, to make this stuff work.
+
+there hasn't been really a, real reason to spend a lot of time in a metaverse in some sort of interactive way. The reason I'm buying the. vision pro is because we run a studio remotely and I've always been bullish about the fact that this stuff is really impressive when you do things that involve presence So if you both put on a quest And you do a 3d doodling app and you're both in that space and you're both drawing together It trumps any fig jam or mirror board or whatever where you have a webcam on because presence is It's so magical once you feel it.
+
+So for me, the, the hopeful use case is that I use this instead of a really expensive screen. when I'm talking to my team and we're going to buy two and I put it on and we can have, the Unity kind of game development tool kit running on one screen on one side, a giant whiteboard on the other, a way to kind of drop in 3D objects and shapes.
+
+And a way to see each other point at this stuff and see if it helps, with the feeling of remoteness when you're working like that. And so that's, that's my bet on it. I think that's going to be Apple's bet that, and maybe watching, media on it. I don't think they're doing, this is a metaverse bet.
+
+And that's why I think it's going to, it's going to sell out. and then we're going to see how they execute it on. It's going to be really
+
+interesting. 
+
+[00:50:06] Brian: going to, I mean, sell out. I guess it depends on how many they make. 
+
+[00:50:08] Alex: they're going to sell infinite of these things.
+
+[00:50:10] Brian: really?
+
+[00:50:11] Alex: it's not for the right reasons, but they will. they can't really like show us how cool it is, which is why all the advertising campaigns, are showing like, the, the latest one is clips of like different movies where people put on goggles and visors and,from back to the future and Star Wars, it's not going to be cool.
+
+And I think. People will try it and want it. And I think it's going to become a status symbol, to just own one. and, and all these influences are going to put them on for sure, just because of that brand power and just because of our weirdest thing is, I think it's going to feel pretty magical when you have a giant floating screen.
+
+You know that you're sharing with you know, buddy kind of floating around your room. I think that stuff's gonna feel pretty bananas and I can't wait to use it on a flight then look at you know The flight attendant with my weird screen eyes. I have a big face. So that thing's gonna look ridiculous on me
+
+[00:51:04] Brian: I don't know. know if I'm ready for anyone in premium economy to be wearing that next to me.
+
+[00:51:10] Alex: Oh, nobody in premium economy is going to be wearing one of these, Brian.
+
+That's 
+
+[00:51:15] Brian: business class for a
+
+while. 
+
+[00:51:17] Alex: need, you need, you 
+
+[00:51:18] Brian: At least. 
+
+[00:51:19] Alex: Yeah, exactly.
+
+[00:51:21] Troy: I thought that add a couple of things. First of all, I'll meet you wherever you want to call it, Alex, in the metaverse or whatever. I think that that'll be great. I think you'll see them all over planes and you'll laugh at first, then you'll get used to it. the ad was inspired, I thought. The ad that had, like, the bandit mask and, like, the, the Star Wars mask and stuff and it was just nice to see, the communications team not focus on what you'd expect and just kind of try to de stigmatize the act of wearing a goggle.
+
+[00:51:50] Alex: I think it's, the first good Apple ad in, in years. Because they actually have something hard to do. they actually have to work hard at it, right? All the iPhone stuff and watch stuff has become so lazy, having to pitch this to people and the price and everything is so, it's
+
+[00:52:09] Brian: Well, I'm not like an ad guy, but I mean, it hasn't, that stuff is more just like demos that they're like dressed up demos
+
+of 
+
+[00:52:17] Alex: the new ad we're talking about is,
+
+[00:52:19] Brian: no, no, I know the new ad, like, because you're, you have have to do storytelling and narrative, because actually trying to change behaviors, whereas the iPhone and the watch have just become more, here's a demo of new features to upgrade. 
+
+[00:52:32] Alex: Right. 
+
+[00:52:33] Brian: knows what they are and
+
+[00:52:35] Alex: Apple hasn't been that great at doing the Steve Jobs thing of showing the problem and the solution, right? Like, they haven't done that in a while. They haven't had to. I think in this case they're doing the smart thing of hopefully getting enough people get excited about it, influencers and stuff like that, because you really need to experience it,to understand what, what it feels like.
+
+I mean, I've had amazing VR experiences, that you cannot communicate in any way, through, through a video. So I think they're just going to let it play out and let the word of mouth kind of do the work for them. 
+
+[00:53:05] Brian: all
+
+right. Troy, do you have a good product to 
+
+
+[00:53:07] good product
+---
+
+[00:53:10] Troy: I don't really have a good product
+
+this week. 
+
+[00:53:13] Alex: talked about coming in prepared.
+
+[00:53:14] Troy: I have a couple of things on my mind. I mean, one thing is there's certain flaps on disposable coffee cups that I find very off putting.
+
+[00:53:22] Brian: I, they, they did become very varied. There's like a million different permutations of coffee cup
+
+[00:53:28] Troy: I prefer the one with the look just with a straight up little oval so that you don't have to peel the white thing back and put it down and then it gets filled with coffee. And sometimes, so I
+
+[00:53:38] Brian: but the new one like detaches, it's a little thing that detaches and you have to find its little holder on, on the lid. I noticed.
+
+[00:53:47] Troy: Well, the other thing that comes to mind just because it's immediately beside me is that I think it's a nice touch when hotels have, cutesy branded gestures and This hotel always keeps a copy of the great Hemingway novel, The Old Man and the Sea, 
+
+next to the bedside. 
+
+[00:54:05] Brian: are you in Malibu, 
+
+[00:54:06] Troy: in Santa Monica. 
+
+[00:54:08] Brian: Santa Monica or 
+
+Malibu? 
+
+[00:54:09] Troy: let you guess what hotel that is.
+
+And, I like that. And it's a sunny day in Los Angeles. I walked on the beach this morning. That's a good product for sure. LA's a different vibe, huh? I haven't been here in a bit.
+
+[00:54:21] Alex: I love LA. Any excuse I can get, I will go to LA. It's great.
+
+[00:54:26] Brian: Yeah, I'm pro L. A. too.
+
+[00:54:28] Alex: Yeah, I think
+
+it's maligned. 
+
+[00:54:29] Troy: If you could, if you could live in Miami versus LA, what would you decide? Like, how do you rank the two of those?
+
+[00:54:37] Brian: I don't know, I don't know, L. A. well enough, it's to say. been like, ten times in my
+
+[00:54:42] Alex: I think what Brian's trying to say is that it depends on what his crypto is doing. So
+
+if, if crypt, if 
+
+crypto is up, he's going to be a Miami boy. 
+
+[00:54:51] Brian: I mean, I'll admit, I admittedly, it's not the number one 
+
+decision, 
+
+but, tax regime is awesome. By the way, did you see that Miami had an alien invasion? Have you seen this? 
+
+Yeah. So, Bayfront Park, there was supposedly 10 foot aliens walking around. There was about 500 cop cars that descended, on Bayfront Park over New Year's and,
+
+[00:55:14] Troy: they, did they catch them? 
+
+[00:55:15] Alex: And 
+
+[00:55:15] Brian: well, 
+
+[00:55:16] Alex: about it because we're all talking about plagiarism.
+
+[00:55:18] Brian: they, they are claiming that it was just a bunch of kids were throwing firecrackers at people and, you know, people reacted sensibly, like, in America, assuming that it was a mass shooting.
+
+And they were doing some looting and stuff like this. And so they called a citywide police, whatever, where everyone descends on one area, which is 
+
+strange to me, but 
+
+[00:55:40] Alex: So, so, so some kids who are lighting firecrackers and so 
+
+[00:55:43] Brian: Yeah, 
+
+[00:55:44] Alex: the military vehicles with 
+
+[00:55:46] Brian: yeah, 
+
+[00:55:46] Alex: yeah,
+
+[00:55:47] Brian: Flood the zone. there was some grainy videos, which is strange to think about with all these great, cameras we have on phones, now of what looked like 10 foot tall, like creatures walking around, but that the police said was just, shadows. But, we do not know. Maybe the 
+
+aliens have showed up in Miami.
+
+[00:56:05] Alex: Well, the video is always grainy because they have, magnetic field technology that, distorts videos so they can never be recorded. But,
+
+[00:56:12] Brian: I just think like what is the chances, what are the chances that they would have legs and stuff and be like proportioned like us? It's just like very
+
+[00:56:20] Alex: You just grow the legs to be on Earth. If you think about it, when we go down to the ocean, we put ourselves in a submarine that kind of looks like a fish. Same thing.
+
+[00:56:29] Brian: Oh, you think they got into like a human outfit?
+
+[00:56:32] Alex: Yeah, yeah. You've seen Men in Black. You just put your, why would you come out with all your tentacles? That's crazy. You just look too strange. 
+
+[00:56:40] Troy: Right. Plus you need a way to move around. 
+
+Legs are 
+
+[00:56:43] Alex: Legs are good here. 
+
+[00:56:44] Troy: Yeah, 
+
+[00:56:45] Brian: Yeah. 
+
+But why be 10 feet tall? Why, why, why not 
+
+[00:56:48] Alex: Well, you kind of also want it. I mean that maybe the body you have to fit in there is that that's the size. Yeah. 
+
+You got to 
+
+[00:56:55] Brian: true. 
+
+[00:56:55] Alex: them in somewhere. I mean, a submarine looks like a very big fish. 
+
+[00:57:00] Brian: Yeah. 
+
+I never thought about that.
+
+[00:57:01] Alex: Well, there you go. Think about it. Do your own research. 
+
+[00:57:04] Brian: Okay. 
+
+[00:57:05] Alex: your own research, everyone. 
+
+
+[00:57:06] outro
+---
+
+
+
+[00:57:07] Brian: All right. Let's leave 
+
+it there. This, this is a good episode. Thanks everyone for listening. we'll be back next week with a new episode. If you like this podcast, please rate and review us on Apple, Spotify, 
+
+wherever you get your 
+
+[00:57:19] Alex: We, we might read your review. We'll, we'll put you into some
+
+sort of 
+
+club. we'll call it the, the. 
+
+The big boy fan club. No, no, that's not good. Just we'll we'll read the reviews guys. Don't
+
+[00:57:31] Brian: yeah, we'll read the reviews. 
+
+[00:57:32] Alex: All right. 
+
+[00:57:33] Brian: right, catch you next week.
+
+[00:57:35] Alex: Bye 
+

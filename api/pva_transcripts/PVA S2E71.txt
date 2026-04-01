@@ -1,0 +1,1073 @@
+PVA S2E71
+===
+
+
+
+
+[00:00:00] Cold Open
+---
+
+[00:00:00] Brian: Alex is in a virtual world.
+
+[00:00:02] Alex: I Am You guys ready for this?
+
+[00:00:03] Troy: Is this the reveal?
+
+[00:00:06] Alex: How are you doing Troy, Brian?
+
+[00:00:09] Brian: Oh God,
+
+[00:00:10] Troy: can we deconstruct this a bit? He's got fake glasses on. You don't need the glasses. Alex, 
+
+[00:00:15] Brian: Isn't 
+
+[00:00:16] Troy: elected to do really short hair with his avatar and a trim beard, and he is actually a few pounds lighter. Interestingly.
+
+[00:00:24] Alex: Thank you. I thought it was flattering. honestly I feel that working in this thing is better than working out of this thing. And that is a revelation. I am, very excited to talk about it because I feel it's going to be, an important way we work at some point.
+
+[00:00:40] Troy: Do you have a body? are you wearing pants?
+
+[00:00:42] Brian: you there, Troy.
+
+[00:00:44] Troy: I'm not going anywhere. I'm just
+
+[00:00:46] Brian: Well, you, you literally
+
+any new technology. The, the first thing that people go to is what's the porn angle? 
+
+[00:00:54] Troy: great, observation, but I'm wondering is the body mapped? we're dealing with a floating head.
+
+[00:01:00] Alex: Yeah. There's no body.
+
+[00:01:01] Brian: that's intentional. Come on. 
+
+[00:01:03] Alex: Yeah.
+
+[00:01:03] Troy: that?
+
+[00:01:04] Brian: because these devices, the immediate knee-jerk reaction is like Beavis and Butthead. 
+
+[00:01:11] Troy: it's not these devices. It's part of being human
+
+[00:01:15] Brian: What pants.
+
+[00:01:16] Troy: sexuality, 
+
+[00:01:17] Brian: That is true.
+
+[00:01:20] Troy: desire 
+
+
+[00:01:22] Intro
+---
+
+
+
+[00:01:45] Brian: the episode because I think we need to talk about this. 
+
+[00:01:48] Troy: I, 
+
+honestly, I think this is really cool that we're now like doing this, vision thing, but like Alex bobbing around on the side is
+
+[00:01:56] Brian: I don't care. I'm already 
+
+[00:01:58] Alex: should just get used to it. Troy,
+
+
+
+[00:02:07] Alex: that for a while and kind of. Wondering when it would happen. And I gotta tell you, after spending probably 20, 30 hours in this thing by now, it is, yeah, I've slept in it.
+
+No, like it has passed a bar that makes it inherently useful as a computing device. And if Apple's an ecosystem, what they need to do is provide the best device in each category. And this is not a category. It's not a category. I don't wanna play VR in this. sure I'm looking through screens and the pass through is grainy.
+
+But the second I pay attention to what's on the screen, what's on the windows floating around me, all of that goes away. And I'm just like in this space where I'm immersed in this interface and it's really, profound and that. Doesn't mean that I'm saying I wish we would all wear these walking around because that's super dystopian.
+
+The same way. I wish we didn't put kids in front of iPads or couples weren't like both watching their phones in bed. but as a computing platform, it's passed a threshold and the press around it has mostly been negative. I don't know why. Maybe it's because they felt bamboozled in the first 30 minute demo or whatever.
+
+but this is I was ready to send this back and I would say they've cracked it. I've been designing interfaces for 30 years and I've tried every single headset since the first, Oculus, Kickstarter, and this is. Just the quality, this integration with the software, all of that is just like, they cross the line where it's become truly useful to me and I would not give this away.
+
+I don't know what that line was like, the quality of the screens, the interface, it's all the things working together. But, I 
+
+[00:03:46] Troy: thought you said you had buyers from Morris, Alex.
+
+[00:03:48] Alex: I had reversed buyers remorse. I bought it when I first bought it. I was like, fuck, why did I buy this? This is stupid. and I'm just gonna buy this so I can experience what it's like to look at screens that are such high resolution.
+
+And the more I used it, and then I started just putting stuff around the walls and I have a calendar here and I have you guys floating in front of my window and I can,
+
+[00:04:09] Troy: Do you have a Zen in a virtual Zen?
+
+[00:04:11] Alex: no, I don't have a Zen, but I, I am on Adderall if that helps. I, 
+
+[00:04:16] Brian: Just snort some Adderall, put on the goggles.
+
+[00:04:19] Troy: That's what it, that's what's going on right now. It's the virtual bobbing head, it's his that He's on Adderall. 
+
+[00:04:26] Brian: the lines of Adderall.
+
+[00:04:28] Alex: so Adderall actually calms me down. there's a lot of joking around about how stupid those, avatars look and they look absolutely stupid. and there's a lot of talk about how stupid the eyeballs look. They look absolutely stupid.
+
+Yes, it is a bit heavy. but if you can get used to it, it's fine. and there's a lot of stuff like Steve Jobs would've never launched this as if everybody now was talking to the ghost of Steve Jobs, you know, Kara, Swisher, all of them were like, no, Steve Jobs
+
+Jobs 
+
+[00:04:53] Brian: let's 
+
+[00:04:54] Alex: away by this 
+
+[00:04:55] Brian: you're, obviously a proponent of this, so let's go through I think some of the, the sort of early criticisms are, and then I would love to get into why you think they're misplaced. I think the top one that I read that I sort of agree with, and I think those who are not in technology businesses, but are in tech enabled businesses, which are most of the people, right?
+
+That they wanna know when this thing's gonna be mainstream. Most of what I've read, and I've not experienced it, but what I've seen, it tells me, nah, I don't have to worry about this for at least a year, probably multiple years. 'cause it's not gonna be mainstream, at least for foreseeable future.
+
+[00:05:35] Alex: it's a good question. I think we sometimes frame any new Apple device as the iPhone killer or the next. platform that will take over like the iPhone. I'm not sure Apple even needs that, because, like I said, Apple's values around its ecosystem. The fact that there are phones is built upon the fact that there are Macs and the watch is connected to phones and, so I don't even know if this needs to become mainstream now, the, the Mac is 40 years old this year.
+
+And, the iPhone, you could say was a successor to the Mac that took, 30 years to build. and also like people are so shocked that Apple's building a $4,000 device, they sell a $3,000 screen. they sell like, $200 keyboards and it's just
+
+[00:06:16] Brian: they sell $10,000 bottle service at the F1, so I
+
+[00:06:20] Alex: Right. Well, but, but I mean, this is a very Apple product, and I think that it is definitely a professional or prosumer product. I use it for work. I've found it like, I mean, I like to get close to screens and I now work remotely. and I, I managed to zoom out, a zoom call where somebody was sharing their screen and look at the fucking pixels on that thing.
+
+and so for me, right now it's a professional device. I wouldn't recommend anybody buy it. Neither do I particularly want the future where everybody's just wearing goggles, staring at each other. That's not what I want. but if you frame it like that in your head, like, that's the future we need, and it's not there yet.
+
+Yes. Maybe that takes 30 years. it's probably like three or four minor miracles away from being, glasses like you or Troy are wearing right now. Like batteries need to change. Laws of optics need to be. bent somehow, somehow computing power needs to be, minimized. know, like, my only way of reviewing this is, is it useful today within certain use cases?
+
+And yes, it is more useful than buying a fancy screen. Right? And I would buy two fancy screens usually. it is a fully portable device. it is an entertainment device. and the more I've used it, the less stupid I feel about having spent
+
+[00:07:36] Brian: Well, okay. That's the other factor I want to get into. Let's get into it. It's the dork factor, right? And
+
+[00:07:42] Alex: like a 
+
+[00:07:42] Brian: do not, don't get defensive, Alex. Nobody's
+
+[00:07:45] Alex: no. I never, I'd never denied, I never denied that. You look like a dork using this. You
+
+[00:07:50] Brian: There is a dork factor that, some would say, I would say, right? Like we've all seen the photos of the people. And what I wonder is whether that matters, right? Whether, and it's not you know, just like snarky people, I don't think there is a leap that takes place and it's not the, it's not the same as wearing AirPods.
+
+Those look goofy. But this is
+
+you remember the first time you see someone wearing this thing in the Starbucks?
+
+[00:08:16] Alex: or those guys driving Teslas and stuff like that, a lot of people are, Pushing what you can do with it. And I think they're having fun with it. The entire interface of this thing, the entire software is not built for walking around a Starbucks.
+
+It is built for sitting around in a, in an apartment or sitting at an office and organizing your space around you, and it just turns whatever room you're in, into basically a giant desktop. Once you start walking around, it actually, like, it's not intended for that. but what walking around allows you to do is really kind of the edges of what this thing can do.
+
+And it's really impressive. Right. you absolutely look like a dork. I think that's why people are pretty quick to review it badly, because they don't wanna be part of the dorks that are gonna get like their
+
+[00:08:59] Troy: you, you with it on?
+
+[00:09:01] Alex: No, I just, I. it is such an interesting use case. I will sit down on my desk and put it on and have my screens where I can look around and see the different things, and I can, take a screenshot and like with my fingers, drop it into a messaging room.
+
+I have, one of my partner's screens shared here. He sees my screen. We can both talk about, I can
+
+[00:09:22] Troy: How many of your part co-workers have them
+
+[00:09:24] Alex: just one and it, it kind of feels like I wanna buy everyone one, but it's expensive. But so the thing about the dork factor is that it's absolutely not important because it doesn't matter because it passes a threshold
+
+[00:09:36] Troy: How much of your day do You use it your workday. What percentage of your workday
+
+[00:09:41] Alex: I tried to do two hours yesterday. Okay, imagine this. We had a massive storm here, a, 80 foot oak tree fell on power lines, and there were live power
+
+[00:09:52] Troy: the virtual world or the real one?
+
+[00:09:54] Brian: you like live in a video game? There's always like hauling
+
+[00:09:57] Alex: Oh, I, it's California, man.
+
+so I'm running entirely on batteries and satellite internet. preppered up.
+
+I have
+
+[00:10:07] Brian: You can just get an apartment in a city. You know
+
+[00:10:09] Alex: eh, I know. I put on this headset and I'm having live conversations with people while my, house is out of power. And then I, I told myself I'll spend a couple of hours in here, you know, until I get tired. I don't want to get a headache. I spent a whole eight hours of my work day.
+
+I took it off for lunch. I went for a walk and then I put it back on and.
+
+[00:10:28] Troy: did your kid drop it? Come in and see it?
+
+[00:10:30] Alex: When he came home, like I showed him I had worked because, I like to explain things to him. The eyes are just weird, you know, and when you wear it, actually, it's hard for people to see that you see through. it's dorky and it's definitely not something I would wear outside. I will wear it on an
+
+[00:10:43] Brian: So the other thing is, in your experience, is this a VR device or an AR device mostly? Or do you
+
+[00:10:50] Alex: is very much, an AR device. And I was so here's the thing, even though,
+
+[00:10:55] Troy: so much better than the meta version.
+
+[00:10:58] Alex: Yes. Yes. it's very strange because the real world is actually rendered at lower resolution than the windows and then the interface. it's 
+
+[00:11:07] Brian: it that way.
+
+[00:11:08] Alex: No, no, but I think, part of it is like the amount of work that those cameras are doing for me to look around and it feels real.
+
+'cause you know what, what cameras do, they wash out the brightness, they need to adjust all that stuff. It's handled incredibly well. When I look at my hands, it really feels like I'm just looking through maybe sunglasses. But the interface itself is nearly in discernible from reality. It feels like a movie where something's floating in front of me.
+
+And when you're in here, you spend most of the other time looking at interface, the background kind of fades away. But the background's really important because it gives you a sense of space. It does make you feel so isolated. and whenever you want, you can turn this thing into the best VR headset in the world.
+
+Like right now, I'm turning the dial and you're sitting in White Sands desert. There's the wind blowing. It's incredible. But no, I think that's the threshold it passed. it has made wearing this thing not feel disorienting. It's, crazy.
+
+[00:12:01] Brian: Yeah, 
+
+[00:12:01] Troy: get one for your partner?
+
+[00:12:03] Alex: no, she's not interested.
+
+[00:12:04] Brian: she's smart.
+
+[00:12:05] Alex: she's not But I, I, I showed her pass through of what I was seeing
+
+[00:12:10] Brian: women are gonna wear this for so long.
+
+[00:12:13] Alex: she understood the appeal. Like I think, 
+
+[00:12:16] Brian: I've yet to a woman wear one. Have you? Like I've never, of all the, the Twitter
+
+[00:12:21] Alex: reporters, yeah. I've seen some tech
+
+[00:12:23] Brian: Okay. Joanna because she was, from the Wall Street Journal 'cause she was, reviewing it, but I don't
+
+[00:12:28] Troy: the Apple store, the main Apple store in Manhattan yesterday, and they've, interestingly, they've divided the store up into a quarter of the store is a vision pro demo area with elegant leather and wooden kind of seating and, and as the Zeiss machine or whatever it is to, take the prescription off your, your eyeglasses and find the right inserts for the headset.
+
+And it was completely full. The nice thing about it is you could, go there at four in the morning and get fitted and get a demo. 24 hours and it was completely packed. But, they've made a huge, I mean, just think about the floor space. They've made a huge, huge commitment to this product.
+
+Amazing. I mean the, the most speculative Mac product or Apple product I've ever had, Alex, I mean, I've had all their, pretty much every product since the beginning, but the Newton was the one that was, to me, the most speculative use of technology and, clearly was a long term arc to the phone. but in its first incarnation was a terrible device.
+
+[00:13:33] Alex: Yeah, mean,
+
+[00:13:34] Troy: recognition was terrible. It was heavy, the battery was bad, the
+
+[00:13:38] Alex: was, somebody, then speaking about how Steve Jobs would never release this.
+
+[00:13:43] Brian: right. Let's go beyond that.
+
+[00:13:44] Alex: that, that just like fucking, but it's annoying. It's annoying. People use the ghost of Steve Jobs here. Here's what I'm going to say. Troy. I was expecting this to be that, that I, a, a device that I could enjoy as a technology as, wow, look at all these, kind of chips stuck together to make disappear a certain way.
+
+And I've, like I said, I've, I spent a lot of money trying VR headsets, I mean gaming. I've never used one for more than like, an hour and a half. and I hardly ever go back to them because I actually don't enjoy that experience. they've cracked it. And I actually think those short demos are not the way to show this unfortunately.
+
+I think what people need to do to really get into this is actually spend time with it,
+
+[00:14:24] Brian: Well, let ask you this. if you were still in your position at Airbnb, what would you be telling your teams that you had a focus on? Or would you be like, eh, don't focus on this stuff. 
+
+[00:14:36] Alex: I would say like, absolutely this is not useful for Airbnb right now. What it is, it is useful for me as a, as a video game studio, where I'm, I'm doing work and I have conversations on one side and I'm looking at screens and I'm talking to my team. I think it's a, very nice, laptop enhancement, right?
+
+It connects pretty seamlessly to my MacBook, so I have my whole MacBook screen. I can, virtually resize it. And honestly, it is better than any screen I have ever owned. I mean, I don't think people understand that watching a movie in this is better than going to an IMAX cinema and so I would say as a workstation, and as a kind of.
+
+Addition to your workstation. It's really powerful. I don't think Airbnb needs an app for it. The iPad app will convert pretty seamlessly. Very smart, right? I've already bought a bunch of iPad apps that I can use to, do stuff, including this Riverside app. This is not a, vision OS app.
+
+it's an iPad app runs seamlessly. the webcam's replaced with my weird avatar face. my window. I have, my time, the weather forecast. I see my emails here. it's great. As a workstation, I think, there are so many tools that you could build for this that I would pay a lot of money for, like a virtual whiteboarding tool.
+
+where we can share multiple screens together, like a virtual office system. any type of three-D stuff, a way to walk, like genuinely walk around a house or a space. You know, anybody that's kind of checking a space or doing a, a review of a space or something like that, records everything. You can leave tags and notes running, understands the spatial components of it.
+
+There's so many new interfaces that you could build for this that it's crazy,
+
+[00:16:11] Brian: But wouldn't, wouldn't that say like for Airbnb, shouldn't you be able to walk through the, the home before you stay there? Like, are we that far off?
+
+[00:16:19] Alex: We're not that far off, I think. there's a lot of things you can do with depth. I think that those would be, distractions. Imagine it like a giant desktop, like it can do the three-D stuff, and that's very cool when you have three-D floating in front of you.
+
+but at its base, it's so useful just as a way to have different apps around. So I can have the map here on the right and I can have the Airbnb app on the left, and I can plan. Now, what I cannot do yet is do that with somebody, virtually sitting next to me that's also wearing one.
+
+Right. That, space sharing isn't, isn't quite done yet. But you know, if you're in media specifically, I mean, I think, not too hard to convert your, your iPad app to something like that, but sports is gonna be crazy. I think people are gonna spend like front row seats, court side at the Lakers or whatever you want.
+
+that's possible
+
+[00:17:06] Brian: And I think, I think what's gonna be unique with this is true personalization. 'cause one of the problems with watching sports is you get one singular angle and now they're like changing that a little bit with options. But you're gonna be able to, be courtside and just be able to focus on Caitlin Clark if, if you're Caitlin, Clark fanatic and all that, that you can't do with just one broadcast, I would guess.
+
+[00:17:29] Alex: Yeah.
+
+[00:17:30] Brian: All right. by way, we're by Rafat Ali, very shortly. 
+
+
+[00:17:33] Rafat
+---
+
+[00:17:34] Troy: Raffa, how are you doing? Nice to see you. 
+
+[00:17:37] Rafat: Hey. how are you?
+
+[00:17:38] Alex: Hey, I'm sorry. I was just showing these guys the thing I was, planning to get back to reality by the time you got here. But I guess I'm stuck here now.
+
+[00:17:46] Rafat: the good news is I don't know what your real face looks like, so for me, this is your face forever.
+
+[00:17:51] Troy: It looks a lot like that, but just a little worse.
+
+[00:17:53] Brian: So we doing, or Rafa, we were, we were just doing, Alex's obviously been using the Vision Pro. he's our resident, early adopter. Troy's, Troy's not far behind, and I lagged the pack by two or three
+
+
+
+[00:18:07] Troy: ways behind 
+
+[00:18:08] Brian: little ways, I just, I don't wanna rush it. let me ask you this. What do you think, because I was asking Alex, after using this, and, and Alex was the head of design at
+
+[00:18:17] Troy: If he keeps resizing windows while we're talking, I'm literally 
+
+[00:18:20] Brian: I, I've
+
+it out.
+
+I've anyway, so, Robin, your CEO is focused on the, the travel industry. Do you have any early thoughts about whether this matters for travel industry?
+
+[00:18:34] Rafat: I think where it's headed towards does matter in the selling of travel a hundred percent, which is, ambient information. That you can access as you are discovering things, whether it's, in the pre-buying phase of travel or while you're traveling. Certainly I can see a lot of implications while you're traveling.
+
+It becomes less douchebaggy versus the big thing that is today. And so, enhanced information that I'm doing as I'm traveling certainly seems to be a very, one of the things I'm fascinated by is if, like real time translation, like actual real time translation does happen between two humans. the two are speaking in two different languages.
+
+It feels like this type of form factor will, is moving towards enabling that. so, yes, I do see implications there. Whether it's gonna help in like, oh, I can walk through a hotel before I booked through a hotel, though that seems less of a important use case then,
+
+[00:19:33] Brian: good. That's the one I brought up.
+
+[00:19:35] Alex: it's actually the media capture has been made quite affordable because you can take spatial video with the iPhone 15 Pro and even though it's not like a full walk through virtual world where you're flying through, it gives you a sense of depth and just, taking a, a video of myself running through the house, you know, walking through the house gave me such a better sense of space.
+
+Now, I just don't know if people will put this on to do that sort of research. I think especially travel planning, you want to open an iPad or a laptop and the family sits around it. I think this is a different type of device, but definitely a space. for anybody who's working remotely.
+
+I think
+
+[00:20:13] Troy: Did you say you ran through the house with it on?
+
+[00:20:16] Alex: I, I walked through the house. Sorry.
+
+[00:20:18] Troy: Mm-Hmm. I don't think 
+
+you should run. 
+
+[00:20:20] Alex: no, you shouldn't.
+
+[00:20:21] Brian: Rafa, we happy to have you on to talk a little bit about, we, we were just talking about the future, but let's talk about the past. 'cause it's media. Let's talk about the past. 'cause I think what we're seeing right now, this has been a long time coming of, what's happening with a lot of the pullbacks in the media industry, and you've always been very vocal about it.
+
+how do you sum it up? Because there's a lot of like the quote unquote doom and gloom out there. And of course there's lots of pockets of the media industry that are still growing. but what's happening right now with all of these layoffs and cutbacks and closures.
+
+[00:20:54] Rafat: two things. One, I have a grand theory of, of what's happening with media, and I also don't have a grand theory of media, and I'll explain what I mean by that. So, one, the grand theory that I've sort of wrapping my head around really, I'm gonna say in the last, six years to a month, probably over 2023, I would say primarily is the cultural obsolescence of media mainstream. And we will, I'll continue to sort of, I emphasize. Mainstream consumer western media. ' cause that's the lens that today we're looking most of the media analysis from. And that's where most of the doom and gloom is. one of the things I've been saying, people have been trying to try analyze it as a business problem.
+
+We've been, you and I have been doing this for 20 twenty-five years of the business challenges of the, of the media industry. we've also been analyzing it from a product challenge of like, oh, if, only the product market fit gets right, media will be fine. I just don't think anybody for the world that it is today, you can argue how, how screwed up the world is we can all debate whether that's true or, or not true, or, or this is bad or this is good.
+
+The reality is, as the world is today, whatever media is offering, whatever is offering mainstream media, nobody wants it. There's something Sarah, Sarah Fisher just put out. I'm gonna say 10 minutes ago, whatever, half an hour, ago on Axios that nobody's engaged with, political news for this cycle.
+
+[00:22:16] Brian: Yeah imagine the same thing 4, 5, 6 years ago, whenever it was, when Trump was first running and the engagement was, was very high, particularly when Trump was first running. The outrage meter has run out. Nobody is engaged. Now So that's my theory of culturally, mainstream media is obsolete. Nobody wants it.
+
+[00:22:37] Rafat: You can argue all they want is confirmation bias. Okay? What they don't want is what, what the mainstream media is offering. So that's my, I think it's, not even doom and gloom. It's sort of past that, which is like, it's obsolete. Nobody wants it 
+
+[00:22:52] Brian: But are you just talking about the news part of
+
+[00:22:55] Rafat: much news media is what I'm talking about. 
+
+[00:22:59] Alex: that's a big category. When we say news, it's not only, the news capital N, right? there's a, a lot of lifestyle stuff in there,
+
+[00:23:06] Rafat: correct.
+
+[00:23:07] Alex: you talk.
+
+[00:23:07] Rafat: Daily output of, mainstream media today,
+
+[00:23:11] Troy: Now, are you, are you seeing that as fatigue? Are you seeing that as fragmentation,
+
+or platform shift? I mean, are you talking about a movement away from television news or, traditional or established media brands? Like, I'm just trying to like maybe you could, because I, I, I feel what you're saying, Rafa and, I think it's a, it's, interesting that we are sort of it some ways, I don't know, maybe like we we're just kind of tired of it.
+
+[00:23:38] Rafat: I mean, this, this will sound totally ridiculous and like we're, we're in a post-News world, like it just is. and it's all of what you said, by the way. I'm not saying I fully formed every part of my thesis, but elements of this are playing out as we're, we're doing.
+
+Like you guys talked about CNN in the last podcast I was listening to, I think, this whole thing about whether now the news is that they're thinking about putting it online and charging for it. Under no circumstance, however they think about the product. Is anybody going to pay for CNN in this world as a structure today?
+
+Just whatever they do. And so, yeah, so that's my general thesis on it. I think part of it is fatigue. Part of it is that, I did say this in one of the tweets that I did, which is it feels like the world is playing 40 chess and the journalists are sort of, checkers at this point.
+
+[00:24:31] Troy: Have you thought much about what we lose from that or what we lose from that, or what we gain?
+
+[00:24:35] Rafat: Oh, tons of loss has happened. in terms of all the stuff, I don't have to repeat this to you. all the stuff that everybody else has been saying. But what I'm saying, I'm not making moral judgment on whether this is good or bad. I'm saying this is the phase we're in and media does not know how to exist in today's world.
+
+that's my general sense. So, and I also said this New York Times, everybody cites New York Times is, is like, oh, it's an exception. Today's doing well, my general,
+
+[00:25:03] Troy: pretty, pretty interesting take on this.
+
+[00:25:07] Rafat: which is that in 10 years it will be a lot less relevant than it is today. For now , it's banking on inertia. Some of these outliers, are essentially have a longer cycle of, Obsolete coming in the future.
+
+[00:25:21] Troy: So, hey, does it mean that, I don't have the stats, in hand, but we're still spending more time than ever consuming media Rafat. So what's taking up that time? Are we just getting, are we becoming less informed? Are we becoming stupider?
+
+[00:25:36] Rafat: Well, I mean, is interesting. Your, podcast is an example of, of the new forms of media that people are really influenced by. and, you and I were talking about this the last time we met, like the majority of my time now from a media consumption perspective is now spent on YouTube. I'm not on Instagram. I'm not a TikTok, so I'm sort of an anomaly that way.
+
+[00:25:59] Troy: You said something to me that, I thought was kind of interesting. You said that you were listening to the All In Podcast and something they said changed your perspective about media.
+
+[00:26:09] Rafat: Yeah, I mean, I've, I've been brought up in the, the usual sort of liberal, mainstream media tradition as a journalist covering the business of media over the last 20 twenty-five years. as somebody who came to us, did his masters in journalism in US, and covered and worshipped people in the mainstream media for my whole life.
+
+I just don't think we were ever exposed to the other side in a non-confrontational way.
+
+[00:26:35] Troy: The other side, meaning the other, like a different political perspectives or any, just kind of 
+
+[00:26:40] Rafat: Just any type of perspective. And for all the,
+
+[00:26:43] Troy: In other words, there was a single kind of dominant narrative.
+
+[00:26:47] Brian: I don't, I, it's not narrative though. I just think groups of people, they see the same thing and they perceive it differently. Right. And like when you see any, and I think it's most. fraught with politics, but the same thing can happen and, two different groups of people can interpret it wildly differently based on their value system.
+
+And I think. It's hard to talk about the quote-unquote media as like a singular entity. But I think what you're getting at Rafat is there is a cultural milieu in which this profession broadly exists within, and it's really difficult, just like it is within a, a lot of different closed little areas to put yourself in the other people's shoes and to see things from other perspectives.
+
+And I don't think that the media has done a great job of doing that. I go back to the explainerism, I understand explainers, but it's really arrogant, right? It's really arrogant to be like, no, you're wrong. This is what it really is. And that just has really, I think, turned off a large group of people because it speaks to a lack of curiosity about the world.
+
+And understanding that other people don't share the exact same viewpoint and experiences as you do, as a certain group of people are very dominant in media, right?
+
+[00:28:04] Rafat: Yeah, so the, again, all the podcasts we can snark about who, who, who the people are on there, et cetera, et cetera. I happen to, There are two of us on this podcast who share a, former boss on it. but,
+
+I think there's something about podcasts, the audio coming in your ear in sort of the intimate fashion that does make you listen more than reading something. and I think that was the first pushback that I listened to and I said, huh.
+
+And, that I should be more critical of everything that's presented to us. Why not? I've always held that as a, as a principle, but if, as you said, Brian, if the cultural milieu sort of puts you in a, in a mainstream opinion, it's very hard to then critically question anything.
+
+and I think that's, that's my general disillusionment with, liberal mainstream media, if you will. And I mean, liberal, not in like a totally political sense. I mean it in, in terms of mainstreamness, of the people that, get employed by it. and so it's a journey that I've had for the last year, year and a half really.
+
+the conservative right-wing media was easy to discard 'cause it was just too shrill. And this, left. Based, or this, other mainstream media, is an ongoing cycle, so I don't have full theories on it. That said, coming back to your question about what is working, you, guys have talked about it obviously a lot, which is in vertical communities, a lot of stuff is working.
+
+[00:29:31] Troy: Yeah. Do you think that the organizing principle of a media brand, you know, there was that Brian, you had circulated a, a document or No, an article today from the Guardian that was about, mark Thompson's insistence on a certain type of coverage or a certain way of covering, the war in Gaza.
+
+And, a point of view around, how to cover Hamas and what the Israelis are doing. I think a lot of people inside of CNN were, critical of that point of view. the idea of a media brand is that you coalesce a number of. I think distinct, but different, different opinions coalesce into kinda one unified point of view that's represented by a media brand.
+
+that's governed by a hierarchy inside of a, inside of a media company. Do you think that that structure is under pressure or outdated?
+
+[00:30:25] Rafat: Is that question from me?
+
+[00:30:26] Troy: Sure. Yeah, of course.
+
+[00:30:28] Rafat: I think so. I mean, look, when, when I said, 
+
+[00:30:31] Troy: I mean, but you run a media brand, Rafat. tell your, do you tell your editorial team what to write?
+
+[00:30:36] Rafat: no,
+
+[00:30:37] Troy: Do you tell what not to write?
+
+[00:30:38] Rafat: sometimes, if it's like, oh, don't quote the same freaking expert 10 times over the story, but like, mild, not in the, in the sense that, that you are saying, 
+
+[00:30:49] Brian: What, what if someone's like a, like a total environmental activist and is just hell-bent on cruise ships like being eradicated from the face of the earth.
+
+[00:30:57] Rafat: or good news is we cover the, we we don't cover as much cruises. So easily spare that question, part. Um, I think the B2B media does exist in a little bit of a parallel world. and I, I'm happy for it honestly. Like, so happy for it.
+
+[00:31:14] Alex: How does this all track though, with the fact that I would say the most, or one of the most successful news outlets right now is conservative and it feels like a, a good way of kind of hanging on for as long as possible is to be aligned, to an extreme side, rather than having kind of this open-mindedness of showing different sides.
+
+I, I can't, I mean, CNN's been talking about doing that forever, showing both sides. There's been apps that came out during that, and I, I don't know if you know, you were talking about the culture not really being interested in that stuff anymore, is you kind of turn news into a vertical, like Fox is like the vertical of conservative thinking.
+
+and it, it sounds like news is going to get more focused into whatever extreme, so that they, they snatch up that audience, right.
+
+[00:32:05] Brian: yeah. And news, the way you get like depth is in ideology, particularly when it comes to politics. Like if you're not gonna get breadth, you gotta go for depth, right?
+
+[00:32:15] Rafat: Yeah, and I think you are bringing up a point, Troy on it. It seems like in general we are more informed than we've ever been, and this is the biggest irony that I'm still trying to sort of wrap my head around for people who want to be informed.
+
+[00:32:30] Troy: You gotta do a lot of work though. I feel incredibly well informed, but it takes a lot of
+
+[00:32:34] Rafat: It takes, it takes a lot of work. This is why the analysis that I listen to on YouTube when there's podcasts and stuff , is so fascinating because I'm able to get in-depth expertise from people that I would never get, in traditional media in general.
+
+[00:32:49] Alex: Isn't less work though than it used to be to get there? It feels like less work to me. I mean, it feels like media is so, like YouTube is such a resource, newsletters are such a resource. Podcasts, I feel like my feed every day, I just need to consume it and sit down and consume it.
+
+[00:33:05] Brian: I. think there's undeniable fragmentation of sources. I mean, I think lot of people can just like. Get their worldview from the New York Times. And that's like an option. And, and people like my parents just get, it's all the Wall Street Journal plus Fox News and that like takes care of everything. 
+
+[00:33:23] Rafat: Well, YouTube is very good at pushing you stuff. It's incredibly incredible machine. it, it really is. I don't, I don't know TikTok, so I can't say, on what that does. but in terms of YouTube, it is brilliant. I don't have to subscribe to anything. I don't have to click the subscribe button. If I have watched it, it will figure out how to send me stuff, and I would say nine times out of 10, I'm gonna click on it in general.
+
+[00:33:47] Troy: You know, it's a similar vibe in terms of the power of the algorithm to feed you with very little, input and very little work. So it customizes really quickly the differences on the nature of content on YouTube versus TikTok,
+
+[00:34:01] Alex: the length right at the length.
+
+[00:34:03] Troy: length and the type of people. I would just say that YouTube is way more enthusiast. That's the kind of content that I really value on YouTube, that like a 20 minute deconstruction of a audio streamer or something like that.
+
+[00:34:17] Rafat: Yeah.
+
+[00:34:17] Brian: Hmm. wwa,
+
+Well, your example wasn't very thrilling. I was hoping for something a little bit snazzier than that. how do you end up applying that Raffa to your own business though? Right? I mean, you're talking about like spending more time on, on YouTube and the weaknesses, but then like, as you said, B2B operates in this weird parallel universe and anytime consumer media hits a trough, it's like, well, B2B is still doing good because B2B is kind of,
+
+[00:34:49] Rafat: see update the playbooks, but they're kind of like set and Yeah.
+
+[00:34:54] Brian: Execution is hard in anything, but it's not like consumer media where you're stepping on rakes left and right, it's just, I think consumer media is just infinitely harder to figure out than
+
+[00:35:06] Rafat: yeah, yeah. There's a reason why, certainly I'm not in it. I think that some of the, some of the things do have an effect, for instance, erosion of email newsletter. it's hand-to-hand combat day to day, figuring out delivery and privacy issues. And, 'cause email was the, was and is the biggest feeder of BDB Media forever.
+
+Before email ever became cool, or I don't know if it's cool or not cool these days. but we do have, we do see some effects if in general, for instance, last year traffic fell for every major news category, media category. as you know, it does. We do see, we did see, that in our traffic as well.
+
+so there's some erosion that effect that does happen, in general platforms. Facebook, is not important, not important for BDB anymore anyway. so we do see some effects of it, but the direct connection that you build with your audience and provide daily utility value through your newsletter, et cetera, all the stuff that you're doing, Ryan, in a larger way, we're doing with Skift. And, for us it's how do you cash them at the top of the funnel? Then bring them down the funnel, offer them research, bring them down the funnel, offer them events, bring them further down the funnel, offer them marketing services further down the funnel, advisory services.
+
+So you're sort of, everybody wants a flywheel in their, pitch deck and sort of, we figured out a flywheel after 12 years of running Skift, which is, I can move you through the whole funnel. And that deepens the relationship with a defined sense of audience. And how do I become a bigger and bigger part of your working day, is what our goal is.
+
+I think that's where the best of business media or B2B media and information, I'm not just gonna calling it media, but allied services to media.
+
+[00:36:56] Brian: Yeah. I think, I think consumer has to adopt some of that with B-to-B. 'cause in B-to-B media, a lot of times how you make money is kind of different than your content. it's necessary but insufficient. You can publish. Some great content, but if you're just gonna make money off of like putting display ads next to that content, you're not gonna go very far gotta do a matchmaking,
+
+is sell side 
+
+[00:37:22] Alex: good.
+
+issue is surely is that consumer, you just need like crazy scale to make anything like that start paying, right? You need to be Mr. Beast and you make chocolates or BeastCon or whatever you wanna do. but tell
+
+[00:37:35] Brian: you cater to extremely rich people. That is
+
+[00:37:38] Alex: Sure. I mean, what was the watch? think
+
+[00:37:41] Brian: Airmail is air, air mail is apparently getting bought for $50 million. I mean, it's
+
+[00:37:46] Rafat: Yeah, I was looking at there like they, they probably did 15 million and, and a path to profitability and that's like four times,
+
+[00:37:53] Alex: well, tell me, you run a, a website in, in 2024. can you run us through what. That's like, and, and how important the website is to that flywheel, because when you mention your business, there's so many layers to it. But if I think of Skiffed, I think of the website is the website losing importance?
+
+Is it a different world when you
+
+[00:38:14] Rafat: No, I don't think it's losing or gaining. I think it's part of the mix. I just, I don't think in terms of, if somebody says gift is a site, that is certainly one way of looking at it, but it's not the totality of services that we offer. I would guess the majority, if numerically, the majority of the people do come to the website, But the where, where we make the money is not web units, if you will.
+
+[00:38:38] Alex: and, I mean, if it's the, the top of a funnel at least, are you anxious about? The transformation of the web. Things like AI ingesting all that data, and changing the economics there.
+
+[00:38:50] Rafat: certainly from. our, archives have been ingested by Chad, GPT, Bard, whatever you wanna call it. in fact, Washington Post leaked some stuff on, on what are the sites, top sites that Google Bard was trained on. I think this was early on last year sometime. And they, you could put in your website and see what rank were you in the order of hierarchy of the sites.
+
+And turns out Skift was like number 500th, and one, I took it as a compliment. Like, why would five, well, why would be the 500th most important site on the web, in a small, tiny, like,
+
+[00:39:24] Troy: It is like when the barbarians come to your house 500th as they're raping and pillaging your community.
+
+[00:39:30] Rafat: but today at least AI is a structure today. And maybe this is lack of my visualization, can do the reporting and the analysis. In a forward-looking manner that journalists in B2B do.
+
+[00:39:45] Alex: I totally agree with that. but I think the risk maybe sits higher up the funnel where people don't even get to the site because the answer that they wanted is condensed into a single line. Right. And, and search engines become answer engines, and then your stuff is just, oh, yeah, I just needed to know that.
+
+So I don't get sucked into the rest of the context and the information, and maybe my brain is just happy with that result. Yeah, that's, that's where we see a lot of.
+
+[00:40:11] Troy: affects it, it has impact on the funnel for sure. Little perfunctory stuff gets answered. I have a whole theory about this. Maybe I'll save it for the next episode. But the, um,
+
+[00:40:21] Alex: Teaser.
+
+[00:40:22] Troy: actually once you try to get deep with a perplexity or chat GPT, it's really dissatisfying actually.
+
+[00:40:29] Brian: I 
+
+just started using perplexity. Now it's dissatisfying. I'm late 
+
+[00:40:32] Troy: it's, it's great. If you wanna know, like, where Napoleon was exiled, it's not good. If you wanna figure out, what the trends are in travel beyond, 
+
+[00:40:42] Brian: it was fine for getting a, uh, fettuccine, Alfredo recipe.
+
+[00:40:45] Troy: It's good for that. Yeah.
+
+[00:40:46] Rafat: It's good for knowing like, this is a Netflix show, show what, what is the consensus reviews? And it gives me a pretty quick thing, but anything beyond that is pretty terrible.
+
+[00:40:56] Brian: you were early in experimenting with ai. Is this just like a small, the the ask gift, and because you have unique data sets, which I assume you shut off
+
+[00:41:06] Rafat: So we, we've trained it off. so Ask Gift, which is our AI chatbot, has it changed how people work? how interact with Skiffed?
+
+[00:41:13] Brian: well, let's just step back. What is it exactly for
+
+[00:41:16] Rafat: So it's, it's a chatbot that's trained on all of our corpus of content over the last 12 years of existence. News, research, events, transcripts. SEC filings are the public companies that we cover.
+
+So 10 Ks and 10 Qs. These are quarterly and annual reports. We haven't done everything. 'cause then it becomes too unwieldy and, we continue to think of sort of other public sources of information that we can train it on or private sources if we can get access to it. And, so two, go back to something that you said.
+
+If you have a question about the travel industry, what's the looking in Airbnbs, gimme the last, five quarters of, of marketing spend, sales and marketing spend from AirBnb. And chances are it will answer, our chatbot will answer. it too satisfactory enough. versus going to 20 stories and doing a search.
+
+So that's an example of, can we move our users, the theses? Can we move our, our users from just a container-based relationship with us? We create this story, we create this research, you create this event. It's a package that we we're giving them two, a query-based relationship.
+
+[00:42:23] Brian: Hmm.
+
+[00:42:23] Rafat: add to it. I, I, I wouldn't say one will replace the other, but can we add the query-based relationship with our users?
+
+And we think that, at least in the chatbot form, that's possible. Has it changed since we launched it in May? No. We, we get about few hundred queries a day from our user base on Askgift. I was expecting more. it would yield results and we would, continue to iterate and it will become, it won't replace, but it will become a new way of how people interact with Skift.
+
+It just hasn't become that.
+
+[00:42:57] Alex: It's a new behavior, right? It's, it takes a while for, people to adjust to asking the computer something like that, rather than going through the normal path. I think if it's useful.
+
+[00:43:09] Troy: Yeah. And I'm not even sure the, it's tougher to get the behavior to move from, Aggregate chat position, like a chat GPT down to the skip chat bot.
+
+[00:43:20] Rafat: Yeah, it's, 
+
+[00:43:21] Troy: I, think that's the hard part. You know, what I think is going on broadly, I will just kind of lay the rough outline for where I think this interesting shift is.
+
+And it's really hard for us to all see what the next phase of, the web looks like. but I, think you're starting to see the outline of it a little bit and I see, I think you see it with things like the perplexity chat bot as a reminder perplexity basically the way that I think about it, it connects, web, in the web index to, an LLM.
+
+So it's always current and it basically goes out, does a, an index query like Google, and then it processes it through the LLM to give you a natural language, response. That's totally personalized chat GPT does it, although interestingly, the LLM at Chat GPT is better, but the index connection is not better.
+
+and then, we're starting to see it being built into the browser with Arc. And so the model, the, the way that I think about the change, the big change in the web is you used to use a browser to go out and get to seek, and now the browser brings it back to you. And that's a fundamental structural kind of reversal.
+
+So that, I would use my browser largely Chrome integrated with search 'cause they're both the same company. Query something off of the navigation bar. You get a list of links, you go out, get information, right? that's the move of the internet and everything was monetized at the end points and at the gate Google.
+
+Now what's happening is I query something and it brings the information back to my browser. and when, when pushed on this, the thoughtful people at the, what's the, is it called the browser company? Alex? Yeah. At Arc. they're like, well, we, clearly this approach of sucking knowledge or, or sort of semantic context from the perimeter to the center is gonna hurt somebody, right?
+
+Like there's no opportunity to, to pay for a journalist in that model 'cause there's no advertising on those endpoints. they're like, well, we haven't worked that part of it out yet. And so we're in this innovation phase where it's, America's actually really good at it. It's totally reckless, but some, some new equilibrium eventually emerges, right?
+
+It just was interesting to me as I broke it down. The way I think about it and the way it starts to get resolved is your browser is gonna be a place for personalized information aggregation. Very different than it used to be. It's a place where stuff gets brought to you. That videos, and you can see in the examples, videos do fine here because they can suck the videos out of YouTube, but video players can preserve, advertising can be preserved in the video extraction process.
+
+Then there's free content and free content. People will make one way or the other, like a lot of like world knowledge or just, and lots of stuff, whether it's people conversing in forums or people like, hobbyists writing stuff up or people contributing to Wikipedia. There's a whole territory of free that will exist as free, whether there's economic incentives or not.
+
+And then there's a tier of stuff that you really want, which is. Researched and has journalistic enterprise and has insight and someone's carefully crafted it. And that's where it gets tough. and I think that you will either go out and get that or there will be meters where if that stuff is abstracted or sucked into the LLM effectively, that there's some kind of compensation model.
+
+And we're starting to see that now with the deals that OpenAI are So I, I think there has to be this sort of central bank function or this meter function that, that they perform. But it's really, really good to try to understand the shape of the new world from the perspective of the browser. The browser is kind of ground zero here.
+
+And, I would just encourage everyone to, to take a look at, what Arc is trying to do because it, shows a very different world that goes beyond BARD.
+
+
+[00:47:26] addon
+---
+
+[00:47:26] Troy: I think the next shape of the internet is about it coming to you as about, about you going out on it.
+
+[00:47:32] Alex: Yes, I believe that the thing to really look out for, I think one of the most important releases is not going to be, the next GPT or the next Arc browser. It's going to be what Apple does in iOS 18 because. It's going to be at the OS layer that this stuff just takes over.
+
+We're talking now about the browser, kind of, dismantling kind of the construct of the, of the web, because people will just be able to get information like that. I think with iOS, a teen Apple starts to that, to the entire internet via its phone. And that is when even Google potentially gets hurt.
+
+That's when a lot of this stuff just happens on device or transparently behind the scenes and you just get the answers you want. And I think we'll notice that actually for just day-to-day shit that you need, where you need to know like the score or celebrity did what you'll just be asking Siri and I expect that to be like this year or next and that will.
+
+I have major repercussions
+
+[00:48:32] Troy: I agree with that.
+
+[00:48:33] Brian: Yeah, and I think that is the essential challenge for, for a lot of these publishers is how they operate in that world. I had a, this is I guess a somewhat of a humble brag, but I, I, got interviewed for a new Yorker story about the collapse of the media business. I like that, uh 
+
+[00:48:50] Alex: I as one of the lone survivors.
+
+[00:48:52] Brian: Yes. It's like I'm the, I'm the person. I'm walking the plane crash. it was great. Claire Malone. Can't wait. Claire, if you're listening, can't wait for the article. Please include my quotes and, and link to the reboot. But
+
+[00:49:05] Alex: It's a hustle.
+
+[00:49:06] Brian: it is awesome. I just started a membership program. I'm gonna, I'm gonna promote later. Good. We're we're running credit cards actually
+
+[00:49:16] Alex: Do we get discounts this 
+
+[00:49:18] Brian: there's no discounts. This is a premium product. You see like discounts happening at Louis Vuitton? No,
+
+[00:49:23] Alex: well, I just spent all my money on this Vision Pro, so I need, I some 
+
+[00:49:26] Brian: fault. I got an email and then I, I was on the phone with a fact checker for like 25 minutes who was going over my quotes.
+
+And then not only just the quotes, like the context around the quotes and then the fact checker is like, well, this isn't directly about what you, but it's about like what you were talking about. And I think this part is a little bit unclear and I just wanted to run it by you because it didn't, it wasn't clear to me. And I was like, honestly, this is just sort of basic stuff. you were to rewind 15 years and I was like, this is amazing. this is like an artisanal, and I. Wonder how that, and if that is going to exist. I mean, during the interview it was like, what happens to these kinds of places? Because I think we would lose something without that.
+
+I understand that for publications and those in the publishing industry who are just saying, well, people won't trust, what is regurgitated from, LLMs through ai and I'm sorry. It's, gonna get way better. And so I don't know if you'd wanna, if that's a hill you wanna die on, but I do wonder how this kind of or if this just goes away, are the fact checkers gonna be, just gone?
+
+[00:50:34] Rafat: Well, they're, they're gone from most other media except probably New Yorker, right?
+
+[00:50:38] Brian: know, I hope they, I, and this is where I you know, where media goes, where it becomes there are a group that becomes much more artisanal. just think a lot of the other parts of the media industry, and obviously the middle is getting wiped away, that's the fate of it.
+
+And, and there's gonna be a lot of individuals, there's gonna be a lot of niche plays. B2B will be fine, thank God. Right. but it's gonna be really difficult for, for general interest unless you get into that, that very artisanal, where you have very rich people who are going to be paying for your tote bag.
+
+[00:51:11] Rafat: Yeah. Well that's why, whether it's Semaphore or Axiose or Punch Ball or Puck or whatever those are, I can't tell one from the other. By the way. There should be some blind taste are you, I wanna say you're a hater 'cause your, your Twitter persona is different than your real-world persona, 
+
+[00:51:25] Troy: is nice in the real world,
+
+[00:51:27] Brian: I know. No, I I feel like we're
+
+this podcast. I like it. You're spiky Twitter, Twitter user. It's good. I shy away from bytes. I don't like that stuff.
+
+what models outside of B2B and super niche and like, yes, I love what Sean did at Industry Dive is doing and like
+
+aside that. what are you actually find promising out there in the media landscape? And please be specific outside of the rebooting. 
+
+[00:51:56] Troy: I can't wait for the answer. Raffa,
+
+[00:51:58] Rafat: because I don't have an answer. I would say I, again,
+
+[00:52:03] Troy: it the messenger?
+
+[00:52:06] Rafat: yeah, nothing in modern, modern western world, that I find that interesting, that excited about from a media perspective. let me say this. I think what Semaphore is trying to do, which is different, different is that it's trying to come at it from a global perspective.
+
+that's than what everybody else has done. So I'll give them credit for that. I think it's very much a Justin thing because of his background that they're doing Semaphore Africa and they just announced something else internationally that I forget maybe last week or something. 
+
+[00:52:39] Brian: Yeah, they're doing something with the, we were talking about this in the chat with OpenAI. I haven't too deep 
+
+[00:52:44] Troy: Well, guys, I mean, what, what they're doing with open AI is aggregating everybody else's news, but through. the steady hands of a journalist. So what they'll do is they'll, they'll do a long, list of stories from around the world, stories that they wouldn't have covered themselves, and they'll cite the sources.
+
+But, an open AI chat or some LLM is summarizing stories. So in a sense it's an age-old thing. First of all, it's sponsored by Microsoft and I presume by, yeah, by Microsoft. So it's really an ad product. Secondly, it's aggregation on their site of stories that that can be, kind of summarized by them, but not written by 
+
+[00:53:25] Brian: I think it's kind of brilliant because they don't have to play defense like everyone else with the LLMs.
+
+[00:53:31] Troy: move. I love it. I think
+
+[00:53:33] Rafat: it'll last as Troy is saying, it will last as long as Microsoft's sponsorship lasts. and, and then it'll go away. So I do think from that perspective, I just don't find the product very interesting. Like it's not appealing to me. I find it boring. 
+
+[00:53:46] Troy: do you do when you get up in the morning? Do you read the New York Times,
+
+[00:53:50] Rafat: not lately. it's becoming less and less of a,
+
+[00:53:53] Troy: but, or do you go through some newsletters? 
+
+[00:53:55] Rafat: I do get business news. Interestingly, I do get a lot from LinkedIn. I do, I know we,
+
+[00:54:01] Brian: Thank you. Thank you for standing up for LinkedIn. Speak Truth to power.
+
+[00:54:05] Troy: really sad.
+
+[00:54:07] Rafat: Well in, in our world, it does matter. maybe me, I don't know if it matters in media, but in the business, in the real business
+
+[00:54:13] Troy: Okay, so you're having a cup of tea. You wake up and the first thing you do is you go, I gotta get my LinkedIn this morning.
+
+[00:54:19] Brian: up. on the Vision Pro. Get on LinkedIn. How's LinkedIn that, by the 
+
+[00:54:24] Rafat: Twitter And, LinkedIn and then, email, and this is after I've sent the, so yeah, the first part of the morning is send, just sending kids to school. But after that,
+
+[00:54:33] Troy: Okay, but are, do you pay for a lot of media?
+
+[00:54:35] Rafat: yes, I, I was, I'm a subscriber to New York Times Financial Times. Bloomberg was a Washington Post, let it lapse. so yeah, quite a, I think, and even a few
+
+[00:54:44] Troy: So a lot of, a lot of established media brands are getting checks from you,
+
+[00:54:48] Rafat: well, FT and Bloomberg, Are established, but I think they're in a little bit different category because of the business nature of it. And so they are, they seem to be doing very well. Both of them, obviously Bloomberg for slightly different reasons, which is the big machine that they have. But Financial Times seems to be doing well, seems to be doing well, well enough on the, at least the business news part or Dow Jones seems to be doing well in the business news part of it.
+
+[00:55:16] Troy: I secretly think the journals getting better and more interesting.
+
+
+
+[00:55:19] Brian: Under the new editor or
+
+[00:55:21] Troy: Yeah. Under the new editor, she's doing a good job
+
+[00:55:23] Brian: I think the FT is a great, I, it's my favorite publication out there
+
+[00:55:26] Rafat: yeah, I think in terms of, if you wanna put an example of a modern media company that is, a great product, I would say Financial Times is probably among the top 
+
+[00:55:36] Brian: And it still has the like charming, British elements to it. Like they have a gardening columnist. I find that, I find that incredibly charming. I mean, the guy's like writing about petunias and stuff. I mean, he is, he's truly one of the, of the last ones, and they have people like named like Robin Wigglesworth and stuff.
+
+It's great. Highly recommend it.
+
+[00:55:54] Alex: I mean, like finance and sports feel very similar to me, where you can have these properties, there's always something going on. It's very specific. Targets a specific type of audience. Financial Times keeps popping up that is news, but it's very much financial news, which seems to be immune, 
+
+but
+
+[00:56:11] Troy: Much more than that.
+
+[00:56:13] Brian: the FT weekends a monster. I mean, the, the luxury, luxury spending supports a lot of these publications.
+
+[00:56:19] Alex: Sure. I mean, the audience is also wealthy, right?
+
+[00:56:22] Brian: I mean, they got us the how to spend it, which they changed to. Like they try to make it something else, which is weird. 
+
+[00:56:29] Troy: they, they turned it into an acronym, didn't they?
+
+[00:56:31] Brian: yeah. But it was during the, like, a lot of the activism and stuff, they're like, well, this
+
+[00:56:36] Troy: How does spend seems sort of appropriately gauche.
+
+[00:56:39] Brian: Yeah, it was supposed to be gauche. And they're like, no, it's not about money. It's about how to like, spend your energy and your e and your time and your car. And it's like, no, it's about luxury watches, cars, just don't overthink it. It's rich people. but I think the FT has actually done a really good job of, I think one of their secret strengths is the fact that their articles are short.
+
+I mean, they go long, but otherwise they just go really short. The ones on, like the front,
+
+[00:57:02] Troy: great 
+
+[00:57:03] Brian: just, 450 words and with the times, I mean, Axios got that right. Those articles do not be that long.
+
+[00:57:12] Rafat: Accelerator Blumberg. Also, the, the majority of their stuff is pretty short. then they have deep ties
+
+[00:57:17] Troy: except for Matt Levine, who will just go on forever and ever.
+
+[00:57:21] Brian: Yeah,
+
+[00:57:21] Rafat: Yeah, but that's one out of a million things. Yeah, he, he does go on, but he's, he's a pretty funny writer
+
+[00:57:26] Troy: Mm-Hmm. Very astute writer.
+
+[00:57:28] Alex: It is just, I do. Do you think it's just, I mean, back to your point where, which, where you started, where it's just a defunct, medium maybe. It's really hard to find the time to read anything long when you're exposed to so many things. I, I find like we might be seeing the end of the long form in general, right?
+
+Everywhere.
+
+[00:57:47] Troy: Not to make it personal, Alex, but, have tremendous hostility for articles 
+
+[00:57:54] Brian: words, uh, he's anti-word. will not rest until we're all wearing these goggles and the words are gone.
+
+[00:58:02] Alex: I mean maybe it's because I'm, I'm come from the interface design space and I understand like what friction looks like. I think long words and long articles and all this kind of fanfare was built so that you would have more space to put ads around them. And that is no
+
+[00:58:16] Brian: It's a 
+
+invested, 
+
+[00:58:21] Alex: But, I'm sorry. I can take any article, I can take any article that you will send me running through something that summarizes of a percent
+
+[00:58:30] Troy: A hundred percent. can't summarize article I write.
+
+[00:58:33] Brian: Who was behind this guy? He just like popped up.
+
+[00:58:36] Alex: who. do we know about him?
+
+[00:58:38] Troy: you lose all the nuance in summary. 
+
+[00:58:40] Alex: I get it. I'm a big fan of the long read, sitting down with a book and experiencing that, like fiction, nonfiction, whatever. But when I'm reading an article, I'm just getting informed enough so that I can live my day and make decisions. And that is usually four or five things. the amount of filler that, that we put 
+
+[00:58:57] Brian: do it myself. Honestly, I think most people just need the Captivate Elevator network. that's pretty much all the news, like 80% of people need.
+
+[00:59:06] Alex: I mean 80, 90%, right? this is why, like wealthy people, right? People that we used to work with, used to have people that read the newspapers and gave them clippings. Well, in 2024, everybody just wants the clippings. Thank you very much. mean, I know it's sad, but yeah.
+
+[00:59:22] Brian: thinking that does, does Elon Musk have a, like foreign affairs advisor? Does he I mean, I would guess if you have that much money, does someone like meet with him and brief him or does he just go straight off the vibes and what He's seeing
+
+[00:59:35] Rafat: I think you know the answer very well. The answer to that one based on his, his public persona.
+
+[00:59:40] Brian: like what does he just hire someone, like an ex-state department's deep state person, or he just wouldn't trust them I guess. I don't know.
+
+[00:59:46] Alex: No. He reads what DogeDogFortwenty writes on Twitter and says, interesting and retweets.
+
+[00:59:52] Troy: But do you think he does the same, with food? Like do you think he eats microwave lasagna, or does he have a chef?
+
+[01:00:00] Rafat: Oh, he has a chef.
+
+[01:00:01] Brian: like Jamie Dimon doesn't just pop off with what he read. he just has someone who briefs him and stuff, just like any other powerful
+
+[01:00:07] Alex: A lot of these guys have re like deep, deep research coming from a group of people, including our friends on the All In podcast. I researchers. Yeah.
+
+[01:00:17] Rafat: I guess we should have expected, but turns out they have teams of each of the four have teams of people working on what they then say at at the weekly podcast.
+
+[01:00:26] Alex: Yeah.
+
+[01:00:26] Brian: Troy, do you have that?
+
+[01:00:28] Troy: Yeah.
+
+[01:00:28] Brian: Oh,
+
+[01:00:32] Alex: I think, that's, that's what we need to take us to the next level.
+
+[01:00:35] Brian: all right. Well, 
+
+[01:00:36] Troy: you know, we need to take this to the next level is we need to put this on YouTube guys, and we need to have you get off the stupid Vision Pro.
+
+[01:00:44] Brian: I don't think we need to go on YouTube. That's
+
+[01:00:47] Rafat: I think Brian, that's a miss. I have to humbly say that's a
+
+[01:00:49] Brian: really
+
+[01:00:50] Alex: a hundred percent.
+
+[01:00:51] Troy: Yeah. It's total miss. Huge audience. Uh 
+
+[01:00:54] Rafat: spruce up where you're sitting. That's for sure.
+
+[01:00:57] Troy: yeah.
+
+[01:00:57] Rafat: That's why you don't wanna do it. 
+
+[01:00:59] Brian: I gotta, yeah, I gotta dress up this
+
+[01:01:01] Alex: I think this should be the first one, man. We have a cool guest. I'm in VR.
+
+[01:01:05] Brian: All right, fine. We can do it on video. the spare room.
+
+[01:01:09] Rafat: it's a, people underestimate Reddit and YouTube, as like the two giants of, of the, of the media consumption world we continue to underestimate.
+
+[01:01:19] Alex: here.
+
+[01:01:20] Troy: Rafa, just to wind this down, first of all, we, we appreciate you coming on very much, and I love your perspective. I, I think it's really, provocative, you have children and we all have children for you, Brian, you want to give, someone advice on, their future in media. what do you tell them?
+
+[01:01:40] Rafat: Yeah, so my view has changed on this in the last, six, eight months. I can't with a straight face say that they should go into journalism, or journalism school. I went to it, and sort of made a non-traditional career. I just don't know if the struggle is worth it when though there's so many other opportunities in the world, to, focus on.
+
+So certainly my kid who's the older one is nine, younger, one is four, so I hope they don't want to go into media. he wants to become a Trillionaire. That's his, his goal. The elder one wants to become very rich. he, he already wants to be a YouTube creator, by the way. that's what he wants his, 
+
+[01:02:18] Alex: I mean, 
+
+[01:02:18] Rafat: to do. 
+
+[01:02:19] Troy: mean,
+
+[01:02:19] Alex: isn't it amazing that basically the new job that kids want is a media job. You've managed to do it. Guys, look at you. Every single kid wants to be in media now.
+
+[01:02:30] Brian: Well, it's also, it's like do you advise someone to go into journalism, capital J in some ways and that, you know, obviously I've been meaning to write about this, like the profession needs to completely remake itself. It needs to rip up the J School model, which has been outdated forever and just burn it and start all over again.
+
+I'm talking to you 
+
+[01:02:51] Rafat: we about the doom and gloom of media while we're successful in it ourselves, can you imagine what the kids in school are going through? The journalism
+
+[01:02:59] Brian: I, I hear from a lot of them. I talked to, woman who had, she, had a joint MBA JD and was going into journalism and I was like, oh really? I'm like, but I don't know. I try to give a balanced perspective. 'cause I think that there are areas in which you can do a lot of really interesting things.
+
+And I think people are going into media that aren't going into the Capital J journalism. And I think that's just gonna, that's just part of it. It's gonna change. I mean, we're seeing the shift to expert. So if anyone really wanted to go in, I would say get expertise in something.
+
+[01:03:33] Rafat: Correct? Yeah. Yeah, expertise is probably what I would, a hundred percent recommend. but in terms of generally going into journalism to do good in the world, I mean, certainly those days are 100% over. I can't say that in, in the Western world. I'm sure there are pockets in the world, in other parts of the world where it's thriving in various ways, but certainly in the, in the world that we sit in today.
+
+[01:03:54] Alex: At least in countries where you don't have good public access media, I would say, England or Australia or places like that still have decent public access media, which is, still a pretty traditional path for some folks.
+
+[01:04:07] Rafat: country I come from India. what now the most populous country in, in the world, desperately needs journalism. It just has no structure under today's society to, support it or for the media that exists today to, actually do journalism that makes a difference.
+
+[01:04:26] Troy: Do you think it's fun to watch a cricket game?
+
+[01:04:29] Brian: into cricket. He'll get up at three o'clock in the morning and watch cricket.
+
+[01:04:32] Rafat: but every four years to four years, I'm a four year to four year fan. Like g Give I, I'm a four year to four year fan of anything Olympics. Uh but it's every four years that I do wake up, at like three o'clock in the night where wherever the match is Australia or India, whatever, 
+
+[01:04:50] Troy: I watched my first live cricket match this summer on Shelter Island. There's a game every
+
+[01:04:54] Alex: Was it a twenty-twenty or like a Okay.
+
+[01:04:59] Rafat: T-twenty is probably 20. I, if it was, here, it's probably like a short, shorter version of the game.
+
+[01:05:03] Alex: don't the for real deal.
+
+[01:05:05] Brian: anti sport, but you know, cricket terminology
+
+[01:05:08] Alex: I'm not anti-sport. I think it's boring to talk about it. 
+
+[01:05:12] Brian: note.
+
+[01:05:14] Alex: I like enjoying it ha ha ha 
+
+
+
+[01:05:18] Troy: Well, just to close up, do we have anything else on the 
+
+[01:05:22] Brian: we gotta, we gotta go into good product 
+
+
+[01:05:23] Good Product
+---
+
+[01:05:26] Troy: well, I have a, I mean, just off the top of my head, Rafa might rough up, might even have a point of view on it. First of all, I, I am curious, Brian, who, who do you get behind in the, in the Super Bowl this weekend?
+
+[01:05:36] Brian: Oh, I don't care.
+
+[01:05:37] Troy: You don't care.
+
+[01:05:40] Brian: I'm probably pro chiefs because Andy Reid gave me a lot of joy when he was the Eagles head coach. 
+
+[01:05:47] Troy: It's better than that monster you have now.
+
+[01:05:49] Brian: Nick Sirianni. Yeah. I'm not sold on that guy.
+
+[01:05:52] Troy: neither.
+
+[01:05:53] Alex: I'm gonna root for the, for the Forty-Niners, 
+
+[01:05:56] Troy: you got a horse in this race.
+
+[01:05:58] Rafat: No, I don't know the, I don't know who's playing, 
+
+[01:06:01] Brian: City and San Francisco Forty-Niners, Taylor and 
+
+[01:06:07] Alex: Kelsey, Travis Kelsey has had a too much of a good year. He needs to be taken down a notch enough. You having 
+
+[01:06:12] Brian: Swift? She's had a better year.
+
+[01:06:14] Alex: Yeah, she's great. She deserves everything. She's,
+
+[01:06:17] Troy: It's New American royalty. It's so
+
+[01:06:19] Brian: a,
+
+[01:06:19] Rafat: She really is,
+
+[01:06:20] Troy: a Disney movie. It's
+
+[01:06:21] Rafat: she's the only mainstream media that today America can, can proudly say, this is what we're, yeah, a hundred percent.
+
+[01:06:27] Alex: more on Beatles. Yeah. 
+
+[01:06:29] Rafat: It's incredible.
+
+[01:06:30] Troy: I would say, and I have some, some issues with it, but typically when. A big company, like a credit card company, like American Express buys a technology platform. it's tough to make it work long term. and I was, I thought that that American Express would ruin Rezzy, but I use Rezzy a lot
+
+[01:06:53] Brian: I hate Rezzy.
+
+[01:06:54] Troy: and I, I like it and I like that I can also filter it by like global access via my status at American Express.
+
+um see who their customer is. 
+
+I find it useful. And they didn't, they didn't destroy it. And I think Rezzy's become very strategic to American Express.
+
+[01:07:12] Alex: what Troy is saying, Brian, is that it's not a, a premium economy app.
+
+[01:07:16] Troy: Yes, it
+
+[01:07:17] Brian: Okay. Have you used it? Alex? You're like a product expert. Tell me. This is a good product.
+
+[01:07:22] Troy: Wait, he's resizing windows sorry I was Rezzy on the side here. floating. I'm not gonna talk about Rezzy. I worked with those folks when I was at Airbnb. It's a fine product.
+
+[01:07:34] Brian: Oh, okay. So now we're like, I, I think Rezzy's as a
+
+[01:07:37] Alex: it is a, it is not, it's not very good. It's not very good in a, in a world where, this is the type of stuff that's also can be,
+
+[01:07:43] Troy: wouldn't you say? Not very good because of, what do you mean? 'cause of it? The UI or,
+
+[01:07:48] Alex: Yeah,
+
+[01:07:49] Troy: okay. But it can book a restaurant
+
+[01:07:52] Alex: I know, but know, like it's a piece of software. The UI matters, right? Like everybody says like, but it works fine. You know, 
+
+[01:07:59] Brian: Does it every single time? it is like, no, no. Available tables for the next like
+
+[01:08:03] Alex: but that's because you don't have the right card. Brian just,
+
+[01:08:06] Brian: Oh, is that it? So is that the whole purpose of it? I don't know. It just doesn't, it's a simple piece of technology, it seems to me, and it works if you use open table and stuff like this, and anytime someone uses Rezzy, I'm like, oh
+
+[01:08:17] Alex: I mean, Rezzy's fine. I mean, the thing we're talking about a good product. I'm wearing a $4,000 headset and I can, that re reshapes reality, but yet booking a table is a good product. Troy. Nice.
+
+[01:08:30] Troy: Listen, my other option was a Concord grape.
+
+[01:08:32] Alex: all right, well.
+
+[01:08:39] Brian: leave it there. Robin, thank you so much for
+
+[01:08:41] Troy: Yeah. it was 
+
+[01:08:42] Brian: second guest.
+
+[01:08:43] Rafat: Well, I'm a fan. You guys do a, great job. I think the chemistry works. person.
+
+[01:08:48] Troy: been a little off lately, but we're working trying to find our way back. called Alex naive. He got pissed off and
+
+[01:08:55] Rafat: well, isn't that the part of the chemistry? Like that's what think all
+
+[01:08:58] Alex: what I think too.
+
+[01:08:59] Rafat: all in is similar where you can have disagreements, but at least it's civil enough. Um 
+
+[01:09:04] Troy: made a comment to me about Alex the other day. A banker guy said he's so confident in, in what? He doesn't know anything about.
+
+[01:09:10] Brian: It secret success. Oh, speaking of that, before we go, because I need to thank Alex for that because, David Waring had written me and said, you and Troy need to let Alex talk more. I was like, okay. And then last episode, did and what we both did David sent a note , and he was like, oh my God.
+
+He said, wow, how awesome that I emailed you and you mentioned my feedback and incorporated it into the very next show. I say this is a great example of how for the media consumer, not only is media not broken, it's all caps. Amazing. You made my day, Then,
+
+[01:09:49] Troy: did we make a conscious decision to do that? I didn't get that
+
+[01:09:52] Brian: oh, really? I talked about it for the last time episode, and then I launched memberships today. And if you go to TheRebooting.com, you can a member of the Rebooting for a mere $200 a year. We've got a whole
+
+[01:10:07] Troy: not doing this.
+
+[01:10:08] Brian: Alex gonna do a webinar about how you
+
+[01:10:11] Troy: Stop it. Stop it. Baba,
+
+[01:10:13] Brian: in your business.
+
+And David took out a subscription and I am giving attribution to PVA and,
+
+none of you
+
+[01:10:22] Alex: we are not even getting a code or anything. You're even like shilling my own time out. This is You know, the Raffa, behind the scenes on our chat, the thing is that Brian constantly plays the victim like Troy and I had completely abusing him, 
+
+so 
+
+[01:10:38] Troy: now. Does he play the victim? I were victim lately.
+
+[01:10:41] Brian: if a victim.
+
+[01:10:42] Troy: No, you got all sad lately, Alex.
+
+[01:10:44] Alex: I did. Yeah.
+
+[01:10:45] Troy: You got sad. You're like, if you just want me to do the tech corner, that's all I'll do.
+
+[01:10:49] Rafat: into somebody's family dinner room and then like, I'm watching you guys awkwardly. I'm, I'm trying to figure out how to exit from here.
+
+[01:10:58] Alex: well,
+
+Thanksgiving dinner 
+
+[01:11:01] Rafat: Alright guys. it Thank you guys.
+
+[01:11:04] Brian: see you.
+
+[01:11:05] Alex: you. 
+
+bye bye. 
+
+
+[01:11:06] Outro
+---
+
+
+
+[01:11:06] Brian: Thank you all for listening, and if you like this podcast, I hope you do. Please leave us a rating and review on Apple or Spotify or wherever you get your podcasts. That takes ratings and reviews. Always like to get those. and if you have feedback, do send me a note. My email is bmaracy at therebooting.com.
+
+Be back next week. 
+
+[01:11:25] Troy: Hey guys, that really worked today.
+
+[01:11:27] Alex: Yeah, it was
+
+[01:11:28] Troy: I don't love talking to your avatar. I could be honest. It bobs around too much.
+
+[01:11:32] Brian: Oh, I don't care.
+
+
+
+[01:11:33] Troy: but I do, it does look like you.
+
+[01:11:34] Brian: actually got used to it. 
+
+
+[01:11:35] cut
+---
+
+[01:11:35] Troy: 
+

@@ -1,0 +1,1129 @@
+PvA S3E134
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Troy: AB is the ultimate connector. last night. they, and a friend of mine. had a party at a club called Peoples in New York. 
+
+[00:00:09] Alex: and I had a wonderful time and I met this crazy rocket scientist like uber nerd guy. we'd been, drunkenly playing with concepts of shooting coffins into low orbit a app connected kind of new business concept 
+
+[00:00:23] Brian: I like that
+
+cemeteries are a waste of good real estate. 
+
+[00:00:26] Alex: And then you can track people.
+
+[00:00:28] Troy: what we were gonna do, Alex, and we were gonna get you to design it, but we were gonna create an app. So every time, you know, grandpa went overhead, you would get notified. 
+
+[00:00:36] Brian: that's cool.
+
+[00:00:37] Troy: a good idea. Right.
+
+[00:00:38] Brian: Well a track where grandpa is like, where in the world is grandpa? Yeah.
+
+[00:00:43] Troy: over Africa, you 
+
+[00:00:44] Alex: I mean, I
+
+[00:00:44] Troy: it was actually the second best idea. The first was a sort of, retail kind of end of life suicide vest,
+
+[00:00:51] Alex: Jesus.
+
+[00:00:52] Troy: we,
+
+[00:00:52] Brian: This is, this is quite a gathering. 
+
+[00:00:55] Alex: Yeah. 
+
+[00:00:55] Brian: There's a lot of 
+
+[00:00:56] Alex: Well, you know what, uh, Troy, I guess I, I 
+
+[00:00:59] Troy: No, but but Alex picture this,
+
+[00:01:01] Alex: Oh, I'm picturing it. Yeah, it's.
+
+[00:01:02] Troy: you build the vest, you integrate like fireworks into it. they go out in a bang, you gather the family around. It's nice idea. 3 99 from like Costco. 
+
+[00:01:12] Alex: it's like a gender reveal in reverse. 
+
+​
+
+
+[00:01:38] Intro
+---
+
+[00:01:38] Troy: it's nice to have me back on the podcast.
+
+[00:01:40] Alex: It is. Nice. I'm noticing also like, your mic etiquette has not changed. Your volume varies from being fantastic to too loud, to too quiet.
+
+So if you can move your mic, 
+
+[00:01:51] Troy: substance over, you know, form so we'll, we'll have a nice entertaining podcast with, with me back this week 
+
+[00:01:57] Alex: to move the
+
+mic.
+
+[00:01:58] Brian: last two weeks was pretty good. I gotta say like,
+
+[00:02:00] Alex: Yeah. We got, we got, we got good feedback. We got good feedback. 
+
+[00:02:03] Troy: Great feedback. You
+
+[00:02:04] Brian: it really?
+
+[00:02:05] Troy: AI written letters from people that wanna place mid-level marketing people on your podcast.
+
+It's great.
+
+[00:02:11] Brian: No, they're, they're, they're from SaaS companies.
+
+[00:02:13] Alex: Yeah. They just sound like ai.
+
+[00:02:16] Troy: no, they were ai
+
+[00:02:18] Alex: Well, they're friends now. I actually invited them.
+
+[00:02:20] Brian: Well, AI has taken over a lot of, of the PR world.
+
+[00:02:24] Troy: it starts with like, some compliments about the, the content in your last episode that's clearly been like, you
+
+[00:02:31] Brian: Yeah. Then a hard pivot, then a hard pivot into some grotesque area of marketing technology. I respect it. Everyone's gotta earn a living.
+
+[00:02:40] Alex: Yeah.
+
+
+[00:02:41] Welcome
+---
+
+[00:02:41] Brian: we got a lot to get into. This is gonna be a theme episode. I'm Brian Morrisey. For anyone who's just tuning in, joined as always.
+
+[00:02:49] Troy: I'm Brian Morrissey and you're not?
+
+[00:02:51] Brian: I don't do that.
+
+[00:02:53] Troy: the old SNL line.
+
+[00:02:54] Brian: joined Rejoined by Troy Young.
+
+[00:02:57] Troy: Troy was somewhere else. We don't know. Undisclosed location last week. And Alex Schleifer. I was in Portugal, Brian.
+
+[00:03:05] Brian: Oh, I like Portugal. It's a little overrun by, non Portuguese. You can go to Portugal and go like an entire day and not run into port a Portuguese person, at least in Lisbon. that's my hot take on
+
+[00:03:15] Alex: Nice. Never been.
+
+[00:03:17] Brian: you've never been to Portugal? 
+
+[00:03:18] Alex: No, I've never been.
+
+[00:03:19] Brian: Aren't you European?
+
+well, actually I wanted to get into that a little bit. 
+
+
+[00:03:23] Eurovision
+---
+
+[00:03:26] Brian: So this is a good segue because this week is Eurovision. the finals are on Saturday, so congratulations early. Alex. You must, be on 10th or hooks.
+
+[00:03:32] Alex: We have a, I have a party happening, a viewing party. Oh, yeah. It's the biggest show on earth, did you know?
+
+[00:03:38] Brian: noon, right?
+
+[00:03:39] Alex: Yeah. It goes off at noon. Yeah. Yeah. It's a, it's an, it's a massive show. 160 million viewers, and then, a bunch of, a bunch of like social activity. They, they spend si seven weeks getting ready for this show. 
+
+[00:03:51] Troy: do you make a bean dip or something? What do you do with, like, you guys? Is it like the
+
+[00:03:55] Brian: no fondue, fondue,
+
+[00:03:57] Alex: it. I like it when Troy is interested to see what, like Normies do to entertain themselves. Yeah. We make a, we invite friends over. It's a potluck. I don't know. It's the first time.
+
+[00:04:07] Troy: do, you, you invite friends over for Eurovision?
+
+[00:04:09] Alex: Yeah. Yeah.
+
+[00:04:10] Brian: great. 
+
+[00:04:11] Alex: It's the greatest show on earth. It's the greatest show on earth.
+
+[00:04:14] Brian: it is, it's the best of, of, of Europe really.
+
+[00:04:17] Alex: I think and Australia now, uh, yeah, it keeps growing. I think it's, it's incredible. It's, it's one of,
+
+[00:04:25] Troy: and Europe?
+
+[00:04:26] Brian: Well, that's the
+
+[00:04:27] Alex: it's in,
+
+[00:04:28] Brian: the way 
+
+[00:04:28] Alex: they can trace it back.
+
+[00:04:30] Troy: their own soon.
+
+[00:04:31] Brian: maybe Trump will stay around and go, because the, the bookmaker's favorite is from Kai. I might not, might not, I might not be pronouncing this correct. 'cause it's a, it's a Swedish, I think it's a Swedish entry, but it's least Swedish language from a part of Finland. I don't know. It's very, very vague to me. They have a banger called Barra Bastu, and it is an ode to the restorative powers of the sauna. I think that's something that all Europeans can unite around the restorative powers of the sauna.
+
+[00:05:03] Alex: I can bring it up here.
+
+[00:05:05] Brian: Yeah. Sketchy. Wait. It's good. 
+
+[00:05:25] Alex: All.
+
+[00:05:26] Brian: the way, great, great artistic choice in just like starting the, starting out just with like a closeup shot of like the sausage on, you know, an open flame really just
+
+[00:05:36] Alex: I I, but the thing too, the, the thing about the Eurovision, which I really love, it's, it's, it's pretty whimsical. It's pretty non-cynical. Everybody gets into it, and yet it's such a production. They, they, I think like 14,000 people are hired. They take seven weeks. They do four dress rehearsals before the main show.
+
+They are staying. I mean, you've, you've seen on that stage there's like a, a fire pit running and they have 45 seconds to swap out the stages. meanwhile it's being broadcast in every, you know, in 150 countries. they have,a lot of the countries call calling into Vote. They have delegations moving in and out.
+
+It's, it's, it just shows like Europe still knows how to organize stuff pretty well. You know
+
+[00:06:16] Brian: yeah, sure, for sure. I cannot wait for the monocle recap on the Monocle podcast. The Zaius podcast around,
+
+[00:06:23] Troy: the record for the most wins. Alex
+
+[00:06:25] Alex: Sweden.
+
+[00:06:26] Troy: Ireland.
+
+[00:06:27] Alex: Oh, that's right. Ireland, yeah.
+
+[00:06:29] Brian: river dance, that, that they, they, they, uh, they were able to like eke out like three or four just with river dance.
+
+[00:06:34] Troy: won it. Abba won it once with the song Waterloo.
+
+[00:06:38] Alex: Abba wanted once. And also do you know who, performed for Switzerland?
+
+[00:06:42] Brian: Celine Celine Deon,
+
+[00:06:44] Alex: Sia?
+
+[00:06:44] Brian: didn't go, which is kind of nonsense. Like what is she, what is she in residency at? Like Vegas or something? She did, she like sent in a, it's in Switzerland. It's in Basel. Right. she sent in a video I read, which is kind of bullshit. 
+
+[00:06:57] Troy: Is it all sort of camp like? Is it all like the
+
+[00:07:00] Brian: yeah,
+
+[00:07:00] Troy: you know, the little
+
+[00:07:01] Alex: I, I, I, it, it,
+
+[00:07:03] Brian: hairdresser. You know that,
+
+[00:07:04] Alex: I think it, well, yeah, I think it toes a line where, which is, which is what makes it really fun, which is like, some people take it really seriously. Some songs are, you know. Real bangers. I think,the song by l that won a few years ago is actually like a great track. So sometimes something very earnest wins.
+
+sometimes, people come in and, and it's really just a joke. but everybody takes it seriously. You know,
+
+[00:07:27] Troy: you
+
+[00:07:28] Brian: Katrina in the waves won.
+
+[00:07:29] Troy: like, do you ever watch Champions League or any other European
+
+[00:07:33] Alex: I watch, I watch, I watched, use usually the Euro Cup, the World Cup and the Champions League. Yeah. Sometimes. Yeah.
+
+[00:07:39] Brian: If this is a sport, Europe is, is, is, is in worse shape. but anyway,
+
+[00:07:44] Alex: I recommend everybody watch it. It's like three hours of entertainment. and, you know, unlike the Super Bowl, it doesn't stop. It's just constantly, it's like a Super Bowl halftime show that runs the whole show, which is great.
+
+[00:07:56] Brian: you don't turn, you don't need to turn this into
+
+[00:07:58] Alex: It's okay. All right. That's fine.
+
+[00:08:00] Brian: not a good look.
+
+[00:08:00] Troy: he is gonna do that. The TikTok, by the way, is their official partner.
+
+[00:08:04] Alex: I just don't understand why basketball isn't the main sport in America. I don't understand why it's football basketball's so much better. Anyway. I know it's, yeah.
+
+
+[00:08:14] App-mania
+---
+
+[00:08:14] Brian: we'll move, we'll move on from Eurovision. I could spend the whole podcast. I wanna do
+
+[00:08:18] Alex: Yeah.
+
+[00:08:18] Brian: rapid fire, topics around app mania recently. and then we're gonna get into basically a theme episode all around Apple. I'm a little nervous for this because Apple's not in my personal ballet wick, so I'll just serve you guys up for, for this.
+
+I mean,
+
+[00:08:32] Troy: But between Apple and Airbnb, we should just hand the episode over to
+
+[00:08:36] Brian: this is the Alex episode. So Alex, if you're not, you already brought like a lot with Eurovision that you had. I didn't, I I added that to the, the last minute. But you were ready to go.
+
+[00:08:45] Troy: it's the triumph of the reluctant podcaster.
+
+[00:08:48] Brian: Yeah, no, this is, we're, we're playing, we're playing to your strengths. 
+
+
+[00:08:53] HBO Max
+---
+
+[00:08:53] Brian: But first I want to get, so HBO Max is now,
+
+[00:08:56] Alex: Back it's back.
+
+[00:08:58] Brian: So they changed it to Max and then they're changing it back to HBO Max. And this is, let, let's remember it was HBO Go for a while, and then they had HBO now. and then it became HBO Max, and then it became Max, and now it's back to HBO Max. You know, it's kind of like a zany story in the Eurovision vein, but I think it, it actually speaks to how much these businesses have struggled to rebuild the next business while operating the current business.
+
+'cause they've all been, they've all been like tethered to the, those carriage fees from, from the cable operators and they've, it, it would be like, as if like Cortez was like, you know what? We're not gonna burn the boats. Let's keep them, let's keep them in good shape just in case.
+
+[00:09:43] Troy: go. And now were extensions of a, you know, of a, of a, of a world where, you know, the cable channels still mattered. Right. And then Max was, a compromise because, discovery wanted to roll all the crappy reality programming into, a programming bundle and a streaming service. And they didn't want it to pollute the HBO name, which in some ways was sensible, I think.
+
+And then they would move relegate, HBO down a level. Underneath of Max so that it only represented premium programming. now I think in preparation for some type of, you know, spinoff and, maybe consolidation in the business, they're gonna na, they're gonna take the junkie stuff away from the brand. They know that premiums programming is what drives subscriptions and they're gonna elevate the HBO brand. Once again. It, it's,
+
+[00:10:37] Brian: So they basically ended up where they, where, where
+
+[00:10:39] Alex: Yeah. It's, I mean, it wasn't sin. Yeah.
+
+[00:10:42] Brian: He made 52 million in comp last year. This is, this is what you get paid the big bucks for
+
+[00:10:48] Alex: Yeah,
+
+[00:10:48] Brian: make the hard calls.
+
+I think it, it's, it's, 
+
+[00:10:51] Troy: let, let's try to be charitable to David.
+
+[00:10:54] Alex: Please, yes, please, Troy. That's, that's why you're here.
+
+[00:10:57] Brian: I mean, he
+
+[00:10:58] Alex: If,
+
+[00:10:58] Brian: a, a townhouse down in the village, so,
+
+[00:11:00] Alex: if your, if, if, if your vision is, if your vision is my jam protecting David Zla is, Troy's tell us Troy.
+
+[00:11:09] Troy: Well, he, he reigned over a, you know, an incredibly profitable, aggregation of cable properties, that were really successful for everyone involved. you know, he made a lot of money doing that. He had the foresight to grab Warner from at and t at a time when, you know, maybe before people thought with certainty that cable was dead. I. Managed to kind of assemble what could become an independent streaming entity with, with HBO. So, so in some ways, even though he took on a ghastly amount of debt by acquiring, Warner Brothers, he, he saw that, that this is inevitably where things would have to go. He needed that asset because otherwise discovery's in, you know, in a whole lot of, a whole lot of trouble.
+
+So, you know, he's, he's done things with, you know, investors', money to protect them over the, you know, longer arc would be the charitable characterization, Alex.
+
+[00:12:09] Alex: Nice. Nice.
+
+[00:12:11] Troy: you know, these people, you know,
+
+[00:12:13] Brian: They're people.
+
+[00:12:14] Troy: good things for, for, for money, for investors and, are rewarded for that. And if the board didn't like it, fire 'em and hire you for a million bucks.
+
+[00:12:24] Alex: I mean, yeah.
+
+[00:12:26] Troy: the.
+
+[00:12:26] Brian: You're only gonna pay Alex a million to, to run Warner Brothers.
+
+[00:12:29] Troy: I
+
+[00:12:30] Brian: I,
+
+[00:12:30] Troy: pay a Alex a hundred grand to run it 'cause he is not qualified.
+
+[00:12:34] Brian: oh my God.
+
+[00:12:34] Alex: Oh, wow, Jesus. Well, no,
+
+[00:12:37] Troy: I'd pay Alex a lot for a lot of things, but not to run Warner. Discovery. Warner, Warner Discovery, whatever it's called.
+
+[00:12:44] Alex: yeah, no, I wouldn't wanna run it, so that's great. Fine. Keep it Troy. 
+
+
+[00:12:47] CNN
+---
+
+[00:12:47] Brian: Uh, also
+
+within the Warner Brothers Empire, CNN, we're going on, the clock is ticking on the two years under Mark Thompson as head of CNN and it, and when he joined in October, 2023, it was all about, okay, well we're gonna, we're gonna reset with streaming. We're still waiting for the, the CNN streaming product, but it is coming.
+
+[00:13:10] Troy: still a, is he still a genius?
+
+[00:13:11] Brian: I unclear yet, but like I assume he is. and I mean, David Zaslav hired him, so he has to be, it's coming in the fall. And this will be yet another attempt after CNN Plus failed before it even launched. just pray they're gonna name it CNN plus. I just hope that they, they, they land there. but in the meantime, they've come out with a weather app, is it.
+
+It's, it's gonna be coming out by the end of the year. It's their first standalone product. Fox has one, I believe it doesn't believe in, climate change.Troy, what's going on here with, with CNN? I mean, we've talked a lot about this brand. It's in, in, I wouldn't say it's extremely well positioned for where the world is going, but you know, it's a great asset.
+
+[00:13:58] Troy: Well, what is going on? the, the sort of dislocation Between, you know, a, a streaming news network and a kind of on demand mobilely dominated streamer. I mean, it, there couldn't be a more challenging transition. not only that, but you know, there, there, the format of their product feels, as Alex has pointed out many times.
+
+So, know, out of sync with the times. my favorite term of the last bit was Alex calling it baby news. I think that, that the change in the product is, is so beguiling, and you have to maintain your position on cable to keep all that sweet, sweet money coming in. And so you then say, well, we're gonna be more lifestyle oriented. And at the same time, I think if. You're plotting a strategy, you want to try to find utilities. Utilities that people can use every day and come back to. Well, weather's a good one because it overlaps with their brand and programming expertise. And I would argue, I mean, I think it's gonna be really, really hard. I've studied this market a lot. I was involved with a consortium of investors looking at the Weather Channel, so I've, when it got spun out of IBM, so I, I've looked at it a whole lot. it's, you know, there's a lot of players in this space with even very poor execution. you know, the Weather Channels brand has, has kind of, you know, kept their, their app in number one or number two position against, like AccuWeather or there's a, I think largely those are the top two other than native stuff that's just, you know, the, the Apple, weather, app on your phone. you know, there, there are people that are really discerning and there is a difference between the best weather forecasts and ones that are just commodity. There's, by the way, there's another 20 different apps that have experimented with interface in lots of ways. If you recall, apple Bought Dark Sky, that was notable.
+
+you know, it was like six people, that had created a really nice weather app that showed you what the weather was gonna be in the next hour, right? So it helped you really on, you know,
+
+[00:16:05] Brian: Yeah,
+
+[00:16:05] Troy: out,
+
+[00:16:06] Alex: Yeah.
+
+[00:16:06] Brian: one.
+
+[00:16:06] Troy: gonna, it was a nice app. you know, the Weather Channel is now owned by private Equity.
+
+They're getting their shit together. It's owned by Francisco Partners. you know, they're, they're, they're making basic enhancements to the app. It's a really crowded field, underneath of it all weather forecasting is changing a lot. It actually took a fair bit of investment to do the math to figure out smaller and smaller little sort of squares of, of weather relevance around the world.
+
+And you, you had to have big, big, big computers to make it work. Increasingly, AI forecasting is enabling people to, to do a really good job of it. Google has a project in the area, that has shown that you can do, really accurate forecasting at a lot with a lot less compute, using ai. And you know, I would say at the same time, the. the ad play around it has been kind of a failure. You remember Brian, that weather came out, you know, professing that, you know, their targeting capabilities on account of having the weather were, you know, made it a, a much better
+
+[00:17:06] Brian: Yeah.
+
+[00:17:07] Troy: advertisers
+
+[00:17:08] Brian: They were gonna sell beer in Boston when the temperature was over 80.
+
+[00:17:11] Troy: if you look@weather.com on the internet right now, it's basically a retargeting cesspool. And, and that's kind of all it is. you know, the, it, it's a nice business 'cause people still look at the weather every day and it's something that people tune into, but it's really competitive and I think it's gonna be tough for CNN to acquire users. 
+
+[00:17:32] Brian: we have to start like a merch line, like with the, like, with some of these phrases. What was, what? Usually a retargeting cesspool.
+
+[00:17:40] Troy: Yeah.
+
+[00:17:42] Brian: that's a good one.
+
+[00:17:43] Troy: I mean, look at what
+
+[00:17:44] Brian: It's like the SEO glue factory. We can have a
+
+[00:17:47] Alex: But how, how is, I, I mean, I'm no zla obviously, but, how is, how is weather a weather app, a business at this stage? Like, don't 95% of people just ask their phone what the weather is today and it just gives you good enough information and should,
+
+[00:18:07] Brian: CNN to give it to me? 
+
+[00:18:08] Troy: You're always a couple years too far ahead, Alex. You don't know. You're not in touch with the real America.
+
+[00:18:14] Alex: Sure. Yeah, that's true. I mean, I do think that,there, there's two things that I noticed that people talked a lot about when I, I came over to the US and one of them was mattresses that, people seem to buy a lot of mattresses. There's a lot of mattress stores and mattress ads here. And the other thing is that people have their favorite weather apps and talk about the weather a lot.
+
+And I wonder if weather is still such a dominant category in America because you have so much extreme weather, you know, in a lot of countries. I mean, and, and in Europe it's just, you know, it's, the weather's gonna be what the weather's gonna be. I mean, there's the odd like freak, flooding, et cetera.
+
+But, is this, why is this because weather is also entertainment? You know, I always try to,
+
+[00:18:52] Brian: I mean, extreme weather has long been, you know, whatever weather porn. I mean, I think the Weather channel got a lot of shit for that. You know, we're
+
+[00:18:59] Alex: but isn't that why people go to the Weather Channel? Like who watches the Weather channel?
+
+[00:19:03] Brian: the sea, the, you know, I don't know. I think a lot of old people do.
+
+[00:19:07] Alex: O Okay. Well, I mean that's, they're not going to download the app. I mean, I think like CNN made it when, when, you know, there was the Iraq war, the Gulf War, and then weather apps get bumps when there's a typhoon somewhere.
+
+[00:19:19] Troy: Yeah, they definitely grow with extreme weather, but there's always a weather app, Alex, in the top 20 app outlets.
+
+[00:19:26] Alex: Yeah. But it's the one, it's gonna be weather.com or whatever, and then at then the rest is just.
+
+[00:19:30] Troy: it's a fight. It's gonna be a fight for CNN to get in there. The brand will help, but it's gonna be difficult.
+
+
+[00:19:35] ESPN
+---
+
+[00:19:35] Brian: Okay, moving along, we have to put a pin in that, over at Disney, an ESPN standalone app is coming out. Finally, they're gonna have, their own streaming service. It's gonna be $30 a month, 29.99 technically, but then you can bundle Disney Plus and Hulu with adss, and it's gonna be just an extra six bucks more a month.
+
+So, I, I don't know, like it, to me, like a lot of this stuff seems like a throwback. This all seems very sensible in like 2000, like 17, 18. And again, I just am left with what takes, what, what took a lot of these companies so long, right? Like, I mean, ESPN tried to build a phone. they, they were ambitious, right?
+
+And the fact that, that they were held back and John Skipper was going out there defending, the cable bundle, like well into the, into the mid 2010s. Like when it was very obvious what direction this was going. I get it, running these businesses really difficult, but I always feel like they're well behind consumer behavior is.
+
+And that's why I champion Alex to run, you know, if not Warner Brothers discovery, 'cause Oslo has that locked down, maybe Disney. 
+
+[00:20:47] Alex: Uh, let me add it. I'm ready. I'm ready to step in. I know what to invest in. I don't know. It's all really, it's all, it's all I know that, there, there is this kind of like, obfuscation in the packages to under, you know, that if you make it hard to understand things, probably benefits you over time.
+
+And there's, you know, the main things that people look at is the cheapest one and the most expensive one. And then everything in the middle is, is really for the, for the few that kind of dig into those details. But it's becoming really, what do you get with ESPN? Because there was an ESPN plus that I used to have, and, and I don't know what that was.
+
+[00:21:20] Troy: Yeah, that was like lacrosse and shit.
+
+[00:21:22] Brian: Yeah, that was like
+
+[00:21:22] Troy: the, know, put it in context a bit, Brian. you know, I got to see. And hear a lot about ESPN at executive meetings at Hearst, because Hearst owns 20%, of the company. Disney owns the other 80%. the company was so staggeringly profitable that like, it's, it's, it's EBITDA was, you know, in the sort of four to $5 billion a year range.you know, they were the most, by a mile, the most expensive. channel in the bundle. And, you know, they needed that to both feed the coffers of Hurst and, and Disney, but also to buy sports rights. So, anything that jeopardized their relationship with, cable providers was, was, you know, something that they had to manage really carefully.
+
+And now, now that just kind of the inevitable as come time has come and, and they need to both offer it, you know, the channel and, and give you the option if you buy it through cable or through someone like YouTube tv to get, to get it directly from the app and this as part of the, as part of the same, subscription bundle.
+
+[00:22:26] Brian: It is so confusing. YouTube TV is the winner, like their cable. Like just get YouTube like that, like give it to YouTube.
+
+[00:22:34] Troy: is, is buying the first game of the NFL this year.
+
+[00:22:36] Brian: Yeah, well this is another thing. They were trying to protect the, the sports rights before the inevitable, which was technology companies were go with far better business models and massive, balance sheets. Were going to come in and be competitive on that. you know, I'm, I've been a little bit surprised that, that we haven't seen like a tech, like, I think the leagues don't want to go all in with, you know, having too many games on, on a lot of like tech services, but
+
+[00:23:04] Troy: historically, SportsCenter was, you know, probably one of the, the most watched male programming, 
+
+[00:23:12] Brian: Oh, yeah.
+
+[00:23:13] Troy: and had, immense margins because it was so, inexpensive to produce and so many people watched it and all adver, a lot advertisers wanted to be there. I think the question, the interesting thing with ESPN is. Can they roll out a cable into a direct relationship or part of the broader Disney bundle with enough kind of revenue and profit momentum so that they can maintain their position in sports rights. And if they can get there and still have more money than lots of other folks competing, by the way, with, you know, deep pocketed, you know, tech streamers, if they can get there and still have enough cash to buy sports rights, ESPN will be with us for a long time.but, you know, they gotta kind of manage this complex process and this, this complex change process, while keeping enough money in the business to get to, to get, you know, material positions in NFL, MLB and DBA. 
+
+
+[00:24:11] AirBnB
+---
+
+[00:24:11] Brian: Okay. Final thing. This is, close to home for Alex. 'cause this is Alex's episode. Airbnb, just revamped. Its, its app and its entire company. It is now trying to become an everything app. It will offer you access to all kinds of services. You can get private chefs, you can get a massage therapist to come to your, your rental, you personal trainers, tour guides,
+
+[00:24:33] Troy: over the first failed launch of experiences. Right?
+
+[00:24:36] Brian: You're pitting that on Alex.
+
+[00:24:37] Troy: I mean,
+
+[00:24:38] Brian: I mean,
+
+[00:24:38] Troy: pinning it on Alex, but I
+
+[00:24:39] Brian: well, you said failed.
+
+[00:24:41] Troy: it was a failed effort, right? Alex would know all about it. I'm sure he'll be
+
+[00:24:44] Alex: Well, it wasn't an HBO, it wasn't an HBO max situation. you know, we also got hit by a pandemic. We knew that this type of business would be hard to grow and scale. and I think they've learned a lot. The main thing that happened, I think, is that after the, when the pandemic hit and we were there and 80% of our business disappeared overnight, it kind of pushed the company to really focus.
+
+And then the second thing that pushed the company to focus was, on its core business, you know, renting homes, was the IPO. And so part of it is also that, just getting back to it of, to maybe some underinvestment. and you know, I can tell you a lot, a lot of the things that I saw announced were things that we were discussing, you know, before the pandemic, like four years ago, five years ago.
+
+[00:25:26] Brian: I thought they happened when, Brian Chesky was going from room to room, in some kind of frenzy, according to one of the, one of multiple profiles of him that were rolled out
+
+[00:25:37] Alex: Well, Brian, going from room to room in some kind of frenzy was like every day. So, I don't know. I dunno which one that was.
+
+[00:25:43] Brian: interesting rollout, because it was kind of old school. Like they had Steven, Steven Levy from Wired that was embedded in, and he was talking about the office and
+
+[00:25:53] Troy: launch. It was an, they talk about his dogs a lot. you think he's like the most eligible man in San Francisco for somebody? the lady or dude or whatever? Like what's going on?
+
+[00:26:04] Alex: I, it, it, he keeps it private. I, I,
+
+[00:26:08] Brian: him on that.
+
+[00:26:09] Alex: I mean, if you've been to. Airbnb events before. I mean, it was very much like an Airbnb event. We, we built that playbook a few years ago. It was very much inspired by Apple. I'm glad they're still doing stuff that are live. He likes being on stage. He likes being in front of people.
+
+you know, I heard Kevin Costner was in a room. I'm, I'm a little annoyed because I wasn't invited. I got a secret link to watch the video video. even though I I can, I can spot some of the, 
+
+[00:26:33] Troy: wait,
+
+[00:26:33] Brian: You got a secret? Like this is like Celine Dion. This is the reverse. Celine Dion,
+
+[00:26:37] Troy: Yeah. Dismissive of the, the sort of, you know, personal life thing. I get it. But Kevin Costner was, there,
+
+[00:26:43] Alex: yeah,
+
+[00:26:44] Troy: was was Obama there?
+
+[00:26:45] Alex: there. I mean, there were a lot of celebrities. 
+
+[00:26:47] Brian: would go, if he was
+
+[00:26:48] Alex: I think Kevin Hart might've been there. Yeah.
+
+[00:26:50] Brian: he'll go to anything. why, why, why do we need this? Like, I know you've got, like Airbnb is, is probably near and dear to your heart. You, you,
+
+[00:26:58] Alex: it made him rich.
+
+I'll, I'll be critic, I'll, I'll be critical of it.
+
+[00:27:02] Brian: you can be
+
+[00:27:03] Alex: Is that why you love SEO Troy? Um, uh,
+
+[00:27:08] Brian: That, that's why I hate everything. See that? 
+
+[00:27:12] Alex: no. I, I think, look, I think that at the, at the end of the day, the stuff that was maybe more important than the experiences and services, so the services are, they're trying to match up with hotels, right? There's always been a thing, well, at a hotel I can go get a meal, I can get all these things.
+
+There's a spa, there's a gym. And I think part of that is, for a certain type of customer is a way of, of providing that. The, the other big thing is that we did, you know, when I was there, even really look at like, how do you, how do you allow people that don't have an asset, like a home to kind of benefit from a similar product?
+
+That a host would, and we looked at many different ways of doing that because there's always, when you go to cities, local people that are ready to provide services, tourists are a little anxious about just going to a stranger end up going, you know, through the hotel or whatever. Meanwhile, there's a, there's a lot of things that could be provided by locals a little bit disappointed that we didn't see certain things that we had talked about even four or five years ago.
+
+I'm sure they're in the works. but you know, they're moving there. I think the more important news for me was that we finally, they finally released kind of some of the more social aspects of the product, which is, like the guest to guest messaging and connection like that is, especially for younger people.
+
+Um.And, and, and to me it's going to be, you know, like we had this concept of having a cool friend in every city, you know, where you could a, meet other people traveling, but also meet people that are there that might not be your hosts, especially as hosts are becoming more and more professional and, and, and, and detached.
+
+But there is a real potential for connection there and improving your trip.
+
+[00:28:50] Troy: why people would do any of this. I would just go to a hotel. and connecting with strangers on Airbnb seems
+
+[00:28:55] Brian: hard, no hard, no.
+
+[00:28:57] Troy: Yeah. But, I guess people want to do it.
+
+[00:29:00] Alex: I've had, I've had great experiences meeting hosts.
+
+[00:29:03] Brian: want to do it, I guess I, I'll go with the data.
+
+[00:29:05] Alex: Yeah. Yeah. I still do. I still do. Yeah.
+
+[00:29:08] Brian: Really.
+
+[00:29:09] Alex: I, the time, all the time. I was just in one in, Palm Springs the other day.
+
+[00:29:13] Brian: like it's a brand that had its day in the two 2010s. I know it's a massive business, but like, I don't see how this becomes an everything app. I don't see the daily usage of it or, or near daily that you would have with Uber.
+
+It makes sense to me that Uber would have food and all the other things like sort of bundled in there. I don't really get it here because, you know, I mean, Cheskys talking about. it like a passport. really. Like what are they putting in the water there? Is it ayahuasca?
+
+[00:29:42] Troy: I've heard some things like it's almost like take Airbnb and smash it together with Thumbtack so that you can use it as a. A place to get service. Do you ever use Thumbtack,
+
+[00:29:52] Brian: Yeah.
+
+[00:29:52] Troy: for finding a plumber or whatever? and, and that seems to make sense, but, but I'm curious, Alex, why did I remember you doing the experience thing?
+
+And I thought it was, you know, amazing. And remember we had the partnership with the magazine,
+
+[00:30:05] Alex: Mm-hmm. Yep.
+
+[00:30:07] Troy: that's what, why I knew about it when we were publishing Airbnb magazine. A beautiful magazine, by the way. why did experiences fail the first time? Or why did they struggle with them? it the timing related to pandemic, wasn't it, after the kind of major, kind of shutdown that you guys experienced during Covid?
+
+[00:30:25] Alex: It's a hard business to scale. I think, traveler behaviors need to change. It's still hard to,you know,truly scale this to a point where there's always something for everyone and you're keeping enough guests going through it that it makes it worth it for somebody to start a business around it.
+
+So a lot of it is, I think there's a viable business there, but a lot of the kinks need to be worked out. And then, and then it needs to become so easy that it so easy, always so cheap that it kind of like leaps over the anxiety that people might have in going direct to someone. Right? Like I think the Airbnb benefits are like, you get a bigger place, you get a kitchen, you get that, and then over time Airbnb has managed to build enough of a kind of a review system and a verification system where you mostly trust the places, like with experiences.
+
+I think there's still that, that gap maybe that people need to, to cross over.
+
+[00:31:16] Troy: take on this? So it, it seems to me that on that like. Anybody that's selling, you know, services in a market will welcome leads. Right? They want new customers. So I see the lead gen opportunity for it to make sense from a Airbnb brand perspective, or, or I could see it being something you would tack onto the purchase funnel in renting an apartment where you could say, you know, would you like, you know, a private chef to cook for you the Sunday you're in the house or something.
+
+That makes sense to
+
+[00:31:45] Alex: Yep.
+
+[00:31:45] Troy: I'm, I'm wondering is it feasible that they can do all the legwork to ensure consistency and quality of the service providers? Will they do that
+
+[00:31:54] Alex: I mean, it's pretty impressive what we managed to do already. Just purely there's a lot of systems at play to make this happen. Human verification, you know, review system, digital verification, all these types of things where we managed to create an environment where really, like when you think about it, it's a bunch of strangers meeting each other, and the amount of like fraud and risk on it is really, really low.
+
+part of that was even just the interface, just the way we message things and the way we kind of push messaging between guests and hope hosts, the way we track that, the way we flag certain things happening. and I, I, I, I, I think they, they do a really good job at that, but experiences need a little bit more vetting because there's, there's like real interaction happening, right?
+
+And, and you, you're gonna sit on a horse or be on the boat or all these types of things. It's just much more complicated.
+
+[00:32:43] Troy: how do you get Patrick Mahomes to sell Sunday Fun day.
+
+[00:32:47] Alex: I don't know.
+
+[00:32:48] Brian: just cut the check. He's guys will show for not that much money. I mean, it's a lot of money, but everyone hustles.
+
+
+[00:32:55] Apple
+---
+
+[00:32:55] Alex: let's move on to Apple. this is, this is the core of this episode. we're gonna go over where Apple is now. I mean, apple is such a massive company, and I hope we don't get into like, cloud and all kinds of different things. but you know, where Apple is now I think is pretty interesting.
+
+[00:33:10] Brian: I was gonna give you some, some background from deep research. You know, they've, they've seen, in hardware, you know, their, their business is shifting, you know, basically,
+
+you know, hardware is growing. it's kind of flat, but services have searched right. And I think you can look at that as a triumph.
+
+and or you can look at it as, okay, they're, they're in the phase where they're, they're mostly just rent seeking, right? And they haven't had a breakout pro new product category, I think in quite some time. I mean, despite the vision Pro. Alex, how's your vision Pro doing? I assume it's safe and sound,
+
+[00:33:44] Alex: have takes, I have, I have thoughts.
+
+[00:33:47] Brian: take, so I wanna get into this. Alex, why don't you just us off with where, where is Apple at this moment? We'll get into the tariffs and all of that stuff, but like, where, where are they as as a company? right now?
+
+[00:34:01] Alex: I think that they're at their most brittle. and Apple has had its ups and downs, but I think for the first time in a long time. 
+
+the people aren't rooting for them. And I think, that, in developer circles, they've turned into a little bit of a villain.
+
+And, and we mentioned Division Pro and, you know, part of the issue with the Vision Pro was that it didn't really get any developer support. And part of that was, you know, definitely product decisions, but I don't think there was the energy of developers wishing to take a bet on Apple, knowing how it was treating its developers.
+
+And I, I think that under Tim Cook and Incredible CEO right? And really the right choice, like what a way to choose somebody to. To succeed. You, you know, Steve Jobs did, did the right call. it did end up like in the last few years, we've noticed that they weren't really ready to leave any money on the table if it was available to them and to the point of coming across as.
+
+it, it was, it was getting, and I was always close to defending them, especially in the 30%, you know, they, they take 30% from the app store. They built an environment where a lot of developers managed to make a, a living, build businesses on top of that. But after that, as, as the system grew, it really felt like it was creating an environment where both developers and users weren't getting the, the, the best, the best deal to the, to the point of like,
+
+[00:35:25] Brian: Nobody likes taxes.
+
+[00:35:26] Alex: it's it, and the tax is fine.
+
+And I, and I actually think that under 30%, like the thing that baffles me is that they, they, they're fully integrated and they can say, look, if you pay with Apple is, we take a 30% cut. We brought the customer, we managed, managed the transaction. Our system is integrated. That's great. But I think that they, they crossed the line when they said, you can't even say that there is another way to pay.
+
+You can't even say it. And that always made people feel really uncomfortable. Like the, those, those things where you forget a link, at first they say you can't even say it. And there was a path that they could have taken where they would've said like, Hey, we're building a secondary app store that's just for games.
+
+It, it covers the 30% games are, you know, we provide all these features, PlayStation, Xbox, everyone charges 30% as a standard price. And then for apps, you know, we also have our, our system where you can pay and it's maybe 15, 20, even 30%. But you know, if you wanna send people to a website, Then that's fine.
+
+but are, you know, then, then their, their, their impetus would've been to improve their payment system and their transaction system so much that it's worth the 30%. My guess is if they let most people go through a link to somebody else's app to pay, I would probably convert 30% less people. So I wouldn't mind having Apple as an option, you know, does that, but they, they, they felt so strong in that conviction that they couldn't let in any of that money go, that they burned a bunch of bridges, you know?
+
+And, and it's, it's really a shame.
+
+[00:36:55] Brian: I mean it, the regulat, it's like a red flag for regulators and for antitrust.
+
+[00:37:00] Alex: it, it is a red flag. But I do think, I do think that, the same with Google, at some point you start looking like the villain and even, and that even impacts the regulatory stuff, you know, like when something's just icky, it might be legal, but it just doesn't feel, doesn't feel great, you know?
+
+[00:37:17] Brian: is,
+
+[00:37:17] Troy: Brian,
+
+[00:37:18] Brian: go ahead.
+
+[00:37:18] Troy: let me, let me frame something in that, 'cause I
+
+[00:37:20] Brian: Okay.
+
+[00:37:20] Troy: to get Alex's take on this. So I get that Alex, I get the three. I like your take on it. I think that, but I think it's manageable as do I think the, you know, the tariff and, you know, supply chain situation is manageable over a longer arc. And I'm always a little confounded. 'cause I'm very tempted often by integration of AI and the form factors of the pixel phone. And every time I threaten to do it, my son says, shut up. You're not doing it. You did it last time. You lasted a week. You gave the phone to Ely, my son-in-law. Like you're never buying a pixel. And, and, and the, you know, apple is, has been entrenched I I I in our house since literally, you know, 1985. You know, every machine, every, you know, television, you know, every device we've had 'em all. And so we're, we're pretty connected to it, right? We all have the same phones, blah, blah, blah. but if you think of every wave that you know, that, that, that was meaningful to Apple, I think it's interesting to look at the wave.
+
+'cause I was there during the desktop publishing wave and they made a, you know, a nice friendly machine for everybody, or for creative people in particular. That point was like, oh my God, I can hook a laser printer up to this and get exactly what I had on my screen at light. That, that defined a whole era of Apple.
+
+Right. And I would argue that, you know, from there we got, you know, laptops and, and a whole wave of innovation. Then came the iPod and then came, you remember the launch of, of the iPhone when jobs set its three devices.
+
+[00:38:57] Alex: Yeah,
+
+[00:38:57] Troy: And, and everybody was waiting for, for, for him to show three new devices. And it was a communicator. What
+
+[00:39:04] Alex: a media player, a music player, an iPod, an.
+
+[00:39:06] Troy: player and an internet and an internet communications navigator to, or
+
+[00:39:10] Alex: Yeah. Yeah, yeah,
+
+[00:39:12] Troy: the internet that made the iPhone, right? Like that's the use case. So that technology fundamentally you, you know, changed how we used,you know, our phones. And then, services kind of grew on the back of that.
+
+So they got better at, you know, turning more money out of their prestigious customer base.
+
+[00:39:29] Alex: I mean, they ran out of people to sell it to, right? I mean they, yeah.
+
+[00:39:32] Brian: So it's.
+
+[00:39:33] Troy: billion dollars business.
+
+[00:39:34] Alex: Yeah.
+
+[00:39:34] Troy: a, as Brian pointed out, it's big business. Now. It seems to me that we're obviously in the AI era and I know that the moats are enormous because of, you know, ecosystem lockin. But, you know, between little things that I see, like how much I use Chap, GBT is an app on my phone, how disruptive,AI is to interface and challenging the sort of overall isomorphic approach that is the iPhone to wearing those meta glasses and seeing what it feels like to have interface that sits on, you know, like that, that pulls you away from the phone.
+
+I'm not saying it disappears, it's gonna take a long, long time, but there's a crack open and someone's gonna come, like, Johnny, ive and Sam Altman are gonna launch a device, or someone's gonna make something new soon and I think you can see it. That's gonna change how we think about the phone.
+
+[00:40:23] Brian: Yeah.
+
+[00:40:23] Troy: with that or not?
+
+[00:40:24] Alex: I don't entirely, and, and let me tell you, I mean, I, I agree with it. at a high level, I don't think that the phone is about to be dethroned. I think that a Apple is actually the lock in with Apple is that their software there, you know, the software that they built and the hardware that they built.
+
+Is still incredible and, and in many ways, you know, still unbeatable as a, as an ecosystem. I don't think that the form factor of the phone needs to go away. I mean, I keep saying that I think a tiny screen that you carry in your pocket, that you can look, you know, like I'll, I'll maybe end up talking to it more and picking it at, at pulling it out of my pocket list.
+
+But, you know, I like that tiny screen. I like the, the way a CarPlay pops up in my car. I like being able to look at a map. I like being able to read a book. I like being able to do all these things. These are not behaviors that are going away. Right. Which is why I think the, the humane AI pin replacing the phone was ridiculous.
+
+Ridiculous idea. And, and I, and, and, and you know, even that open ai, Johnny, I thing, I don't think it's, it's about to dethrone the phone because I think having a screen, having a surface where you can write and touch and do things, it's just like a great interface and Apple builds the best ones. And they have, for now, unless stuff with China gets really bad, they have the, the, the, the best ways of building these at scales and all of the numbers that we're seeing is that, young people are moving to iPhones, right?
+
+I.
+
+[00:41:46] Brian: 87%
+
+[00:41:47] Alex: 87% and so the iPhone isn't go, isn't going away. The the issue with Apple is that not only did they, that that did, they decide to do everything by themselves, which, which, which is fine. They built a very, the closest ecosystem has been working great for them. But I do think that this pushing back against developers and being so against leaving any cent on the table and, and building things that were sometimes anti-US, the, the, the AI revolution is going to be like, open it up.
+
+Apple shouldn't be investing in building its own, own Apple intelligence. They should make
+
+[00:42:22] Troy: things are connected, and I like that. But every, every day the use case of AI broadens
+
+[00:42:30] Alex: yes.
+
+[00:42:31] Troy: And the broader it gets, the more power that resi that exists inside of that, frontier model, that company that's building memory, that company that's, that's that, that's, you know, setting the stage for, you know, agentic functionality.
+
+All of those things slowly, slowly chip away at the utility of an iPhone. 
+
+[00:42:52] Brian: Do we see Chachi Bt the phone.
+
+[00:42:54] Troy: Well, that's kind of what I'm wondering.
+
+[00:42:56] Alex: But, but it's, is it, I think that, well, I think this is where the mist, their mistake is really, it's, it's saying imagine instead of, so the, the, their Apple intelligence was a disaster. They, they showed a demo. There wasn't, there was a canned demo. It turns out that even people working on Siri hadn't seen it.
+
+they didn't deliver on it. It's, I don't think they were lying. Somebody was thought that they could have it done and they couldn't. And we saw, and, and I think we saw that with, with the Vision Pro and as well, where they were kind of promising things that it couldn't deliver, or, or that never got launched.
+
+And I, and I feel that in this case, it's really like they are, they have the hardware, they have the processors that can run LLMs on their phones. They have incredible devices. They can get it into people's hands. They've got an ecosystem. But I. If they're pushing the, these developers away, it's the open AI tool is not going to out of the box be good enough to replace the thing.
+
+This is what a lot of these devices have. The maps are not gonna be good. They're not. There's, there's not gonna be an ecosystem of apps. Oh, I use my phone to turn on this water heater that I have. It has an iOS app. It's not gonna have an open AI app. You know, and, but if they keep pushing developers away, which I think they have, which I really feel that they have and, and, and, and they did it to really protect a, a slice of money coming in.
+
+That was like a huge growth market for them. I, I get that. But, that's how they lose because they're not going to compete with OpenAI on, on building an LLM. But you know, what they might compete with on is having. 4 million developers building cool AI shit that can, that can use some of IOS's features.
+
+And all of a sudden the phone becomes something incredibly valuable. And then the AirPods become incredibly valuable. And, and what Apple does is that they provide the really valuable stuff of the hardware, which, you know, which is the AirPods I have glasses, whatever the infrastructure, which is the operating system, the transactions identity, they have the credit cards.
+
+That, that idea that like, we're gonna do it ourselves and, and, and we're gonna also push everybody else out is I think a massive, massive, strategic mistake. And I think in wd w at WDCI wouldn't be surprised if there wasn't a, a walk back, but a walk back l Apple where they say, you know, this was always the plan and here it is and here's why this is better.
+
+Yeah.
+
+[00:45:15] Troy: do you think that, who do you think is the iden ideal candidate to replace Tim Cook? What of person? 
+
+[00:45:22] Alex: that's a good question. I, I actually think that, like a, uh,
+
+[00:45:26] Troy: Chesky.
+
+[00:45:27] Alex: I mean, he, you know what, sometimes I feel like Brian Chesky is kind of trapped in Airbnb and he would be so incredible at building either, like, either, either like running Disney or Apple, because I think it would go back to building products.
+
+and, you know, real things that people can experience and buy. but I, I don't know, I think it would definitely, to me, need to be a product person. And as somebody that's close to developers, I think that's where, that's where things are missing.
+
+[00:45:53] Troy: the, the anecdotes about Brian looking at the kerning on the type on the app. I mean, there's a man after my own heart, Alex.
+
+[00:46:00] Alex: no, it was like working with you, but he was younger and had more energy, so it was even. 
+
+[00:46:05] Brian: Good
+
+[00:46:07] Alex: I think, I mean, let's, you know, I, I think Craig Federighi, has been, has been, touted before and he's, he's, he's, if you were going kind of on a little bit of an apology tour and we're going to, focus on, on developers and our software, et cetera, I think, I think that might be correct. 
+
+[00:46:23] Troy: on Cheers? 
+
+[00:46:25] Alex: he, he does look like Ted Danson. 
+
+Yeah.
+
+[00:46:27] Brian: on ai, what is, I mean, so Siri seems like it, it should have been like, and, and look, this is still early, right? I, I don't think, it's over for Apple. It's, it's fine. but
+
+[00:46:38] Alex: Yeah.
+
+[00:46:39] Brian: has, should have been way better, it should have been in the poll position for this. I think at one all hands meeting early 2024, series capabilities were called embarrassing. you know, it lacks contextual memory, multi-step
+
+[00:46:52] Alex: Yeah.
+
+[00:46:52] Brian: natural conversation flow.
+
+[00:46:54] Troy: about it, unlike how Steve Jobs would've called them a bunch of fucking idiots. 
+
+[00:46:58] Alex: I think the thing with, the, the scramble around AI I think has made a lot of companies make really big mistakes. And, you know, Amazon also announced this like Echo or, or, or Alexa that just like, is is super smart and they announced it and nobody's seen it. I think everybody's, everybody's like, and you know, to my point last week where people are either like ahead of the, too far ahead of it with the way they're selling stuff or too far behind thinking, not really understanding the capabilities of these things.
+
+Siri, I. Siri with AI is going to be incredibly hard because Apple is so protective about privacy. AI is so protective about anything that happens in DOS. I mean, when you use Siri right now and you ask it to go to GPT, it's like you have to sign another contract to make sure that, you know, you're told that you're about to go into the scary zone.
+
+Right? But here's the thing though, they didn't have to do it. They just had to mildly improve Siri so that it can give me the weather, play my song, and do the things and then wait, right? Apple was no rush. I think everybody got scared that the
+
+[00:47:58] Troy: out, out executed by the rinky-dink perplexity. you really think about
+
+[00:48:03] Brian: why don't they just buy perplexity? Why would like
+
+[00:48:05] Troy: they
+
+[00:48:06] Brian: just do it?
+
+[00:48:07] Troy: doesn't have a foundational model. They're just building better interface on other people's stuff,
+
+[00:48:12] Alex: absolutely.
+
+[00:48:13] Troy: they are innovating around. You know, the around, a AI native ad model around, you know, publisher relationships, et cetera.
+
+Like what? They should either hire those people or buy that company.
+
+[00:48:28] Alex: I think perplexity is the one is, is is actually the company they should buy. It's gonna have a, let other people deal with all this, the, the, the, the infrastructure stuff of, of DI and D LLMs. I absolutely agree with that and, and I think perplexity would be a great acquisition, 
+
+[00:48:44] Brian: let's make it, let's make it happen
+
+[00:48:46] Troy: this?
+
+[00:48:46] Alex: let's make it happen.
+
+[00:48:47] Brian: on what Apple, as I said, like I'm, I'm a facilitator in this. I don't have strong feelings about Apple because I just look at everything through the lens of like how it impacts like the media business and obviously Apple has a massive impact, but it's also
+
+[00:49:01] Alex: I mean that 30% is also being charged to the media business.
+
+[00:49:04] Brian: Yeah, I mean, but like there's taxes. There's taxes being levied by ta, by tech companies like everywhere, like most of their ad businesses. The ad, the ad line in there, it, they're just taxes. You know, when you control, you control distribution. You just levy a tax 
+
+[00:49:20] Alex: I 
+
+mean,
+
+[00:49:20] Troy: This one. I, I know Alex is sympathetic here 'cause he always sends, apple News links
+
+[00:49:24] Alex: I love Apple News. I think they're great.
+
+[00:49:26] Troy: was here at the very beginning when, when it was, when it was,texture, apple bought it, it was owned by a consortium of magazine publishers.
+
+[00:49:34] Brian: Yeah.
+
+[00:49:35] Troy: was a designed to be an all you could eat product. It was going nowhere.
+
+It was really hard to sell subscriptions. We put together a deal. Apple,purchased it and along with it did a really nice deal for the likes of Hurst and Conde, where they got, you know, basically guarantees for content and rev share on a
+
+[00:49:53] Brian: Yeah.
+
+[00:49:54] Troy: It, it kind of makes sense. I,
+
+[00:49:56] Brian: It's a good product.
+
+[00:49:57] Troy: find it clunky, 
+
+[00:49:58] Brian: Well, no, I, no, it's a good product for publishers, I would say, like, as a consumer, I'm not like crazy about it, but for publishers like broadly, it works like, and it's very powerful. They're like, they're, they're sending, they're sending like, not like major money, but they're sending like nice money to
+
+[00:50:13] Alex: I mean, I think, uh, as a user, it's easier than opening a bunch of websites and remembering passwords. I mean, it's, it's, I mean, that's, that's why it's good. It's not, it's not the best product. Yeah. you know, I mean these, we, we, we could see to, to bring it back into media. Like, and, and you know, why, why Apple is brittle is that Apple right now has two massive lines of revenue that are, potentially at risk.
+
+One, which is the $20 billion in pure profit essentially, that it gets from Google, which could disappear. But,
+
+[00:50:41] Troy: worried about that one,
+
+[00:50:42] Alex: but, but you know, but let's say it's still a lot.
+
+[00:50:45] Brian: They're still gonna get value out of
+
+[00:50:46] Alex: Either way I.
+
+[00:50:47] Troy: gonna want that default position. It's
+
+[00:50:49] Alex: I, I think, I think it would be the best thing to happen to Apple that, that they don't get that money and they start building stuff and we're already hearing that.
+
+They're starting to talk about an AI browser. That's the play build a nice safari browser that's AI powered. Great. the second thing is that, that services revenue, you know, we're starting, we actually have a Kindle app now where you can actually buy the book from, from the Kindle app, which is, which is amazing.
+
+It's got a link to buy the book on Amazon. but, you know, let's remember a lot of that services revenue are. A fraction of the players on a fraction of these apps. And these apps are those massive games, like the Monopoly ghosts that generate like billions of dollars every year, and they generate billions of dollars from two to 3% of their audience.
+
+They're whales. Right. I know that because I've seen the numbers and I've seen all the services that are built around just managing whales for these things. So Apple is actually making, they're not even talking about that stuff, but it's actually making a ton of money off, like a few people spending five grand a month buying gems and
+
+[00:51:52] Troy: the apple mullet,
+
+[00:51:53] Alex: it, it's, yeah, it's, it's just nobody.
+
+Yeah. It's, that's what's ha.
+
+[00:51:56] Troy: In
+
+[00:51:56] Brian: are, who are these people? Are they, are they like addicts or something? 'cause I think that a lot of these mar like, you know, it's like the,
+
+[00:52:03] Troy: people.
+
+[00:52:03] Brian: the sports gambling apps, you know, are just preying on, that's why the sports gambling thing is gonna be looked back on as a complete disaster. If it isn't already, if people are waking up to it.
+
+It was a total mistake to, to, to make it illegal in my view. And, you know, they pray they use the same mechanics that Facebook used to, you know, target, you know, young women with body image issues, with beauty ads. I think it's the same thing to, to for degenerate gamblers. I just wonder whether these things.
+
+[00:52:33] Alex: No, I don't play these games, I mean this is why, you know, gaming is a, is a bride and, is a broad and wide, industry, right? And, and it's not, they're not all the same, but like things like ably go making billions. They're paying these actors like Chris Pratt and Jason Momoa and, they're paying them millions of dollars, right?
+
+Uh, uh, to me. You know what? I'd pay no attention to this, but look at this.
+
+yeah, yeah, yeah. Yeah.
+
+[00:52:59] Troy: just like no one talks about the fact that the biggest stars in the world are in this ad.
+
+[00:53:03] Alex: The biggest stars in the world, the biggest company in the world. They're, and, and they're all advertising hoping that a fraction of a percent of the player base ends up so addicted to those games that they spend thousands of dollars on them. And we're not talking about that. Everybody's, because there's too much money in it.
+
+There's too much money in it. And, and, and the second you let yourself turn into a cigarette company, and like, I'm not making friends saying this because a lot of the people that are
+
+[00:53:29] Troy: your games to do? Would you like to get the whales?
+
+[00:53:31] Alex: you, you know, just to give you a, a, just to give you a peek behind the curtain, one of the, the reasons that we we didn't get, go along with some.
+
+Early investors was that they saw that our game could be turned into one of these games. And part of the, way we could raise some money is potentially bringing on a monetization expert as a founding member of the company, because they can see there's a lot of money in there. And sometimes it's, sometimes there's, I mean, you know, David slo, but I would never hire you for that.
+
+I, I look, and I, and look, there's great people working on these games. I'm sure people enjoy them in very healthy ways, but it's, it's a billion dollar industry and it's, and is, and is very brittle right now. And like I said, I love Apple. I really, I, I think this company has brought a lot, you know, of capabilities to creators and artists and engineers and, and they've, I don't know, they've really soured things lately.
+
+and I think that's because there's so much money on the table that it's hard to say no to it. And, and you gotta leave some money on the table sometimes.
+
+[00:54:33] Brian: Do you guys have any, I don't want to get into like too much into geopolitics personally, but A, any thoughts there? I know Troy, you had shared, A really fascinating podcast, Peter Kafka did with, Patrick McGee, who has a new book out about Apple and China. And obviously its supply chain dependency on China is getting a lot of attention these days because of the tariffs that are, they're on, they're off, they're not, and, and whether or not, apple is at least assembling a lot of phones in India, Trump said not good enough.
+
+He wants, he wants the factories in Wisconsin and Americans snapping together iPhones. but it was a really fascinating, anyone who hasn't listened to it, listened to this podcast. Um, Patrick was talking about these, what, what do they call it? Those, like, it's like a, a liquid population. They have like, I don't know, 300 million people who just move around
+
+[00:55:25] Alex: Yeah. Yeah.
+
+[00:55:26] Brian: they're needed
+
+[00:55:27] Alex: Yeah.
+
+[00:55:27] Brian: Foxcon.
+
+Like it's just a massive
+
+[00:55:30] Troy: know,
+
+[00:55:30] Brian: pool of labor.
+
+[00:55:31] Troy: one of the, you know, Trump's. You know, skills, however, you know, you see the person, which is to get you focused on stuff that's important that you might not have otherwise have, have spent time on. And we're starting to just look at the relationship, the industrial relationship with China in a very different way.
+
+And I, I found the podcast fascinating for how important a role Apple played in, in sort of, colonizing, China's, you know, technical and manufacturing might and, and how, you know, so many of the things that they did, like in terms of their speed to scale a manufacturing facility or literally moving, you know, a work population the size of Boston around to support the manufacturing of an iPhone. It's like incredible. It's like the story you were telling Brian of like building that dam when they moved a million, a million people to just like, go
+
+[00:56:25] Brian: Yeah.
+
+[00:56:25] Troy: a dam.
+
+[00:56:26] Brian: Three. Gorgeous. Damn.
+
+[00:56:27] Troy: but, but you know, in the wake of, of Apple sending product engineers over to, to help build production lines in the machinery and the tooling to, to build their products, it's just an interesting story where, you know, the, the folks in in, in Cupertino could, you know, dream up something with great precision and taste and, and kind of invent, invent these devices and, and that they could be scaled to people all over the world through this incredible manufacturing capability that gave them, you know, I remember at the time, like iPods in 10 colors and just like crazy, crazy, you know, manufacturing flexibility.
+
+But it was just, you know, the idea that Apple played a really central role in ultimately what became companies like BYD and Huawei, like a capability that never, you know, that, that just kind of blossomed in the country and became so important to all the, you know, the, the kind of policy things that were, were, were struggling with right now. It's interesting. 
+
+[00:57:25] Alex: No, no, no. Country.
+
+[00:57:26] Brian: case of technology transfer. I mean, these countries, it's the normal part of development. I mean, we act as if it's like quote unquote theft, but 
+
+[00:57:33] Troy: I guess the great thing about China is they, they did the transfer well, know what I mean? They took it and they grew it.
+
+[00:57:40] Alex: But it's also, it's also like. Some of it is just like the reality of physics, that they just have more people to put against this stuff than anyone else, and, and so they built the infrastructure around that. And I don't know, I think it was, you know, what a, what an incredible thing and probably kept the world at peace for longer than it, it would've otherwise to have these, massive powers entangled economically and sharing, you know, value with each other.
+
+I mean, I think, I think overall, like the more connections we make, the more, the less brittle the, the, the, the world becomes. But it is, it does, it is like one of the big, big, big, kind of brittle spots in apple's armor as well, right? Like that that tension is immense. Right? so because it's crazy to think that most, I.
+
+I mean, even the iPhones that are built so far built in India cannot be built in India without, you know, 80% of it happening in China. Like, there's none of that. It doesn't happen. There's not enough people and, and a lot of it's incredibly manual labor still. yeah, I don't know. I think it's going to be really interesting.
+
+I feel like in the next, I dunno, two to three, maybe five years, these companies are going to look very different. and it's going to be just fascinating to what should happen.
+
+[00:58:56] Brian: Agreed. any other thoughts on Apple or should we get on, 
+
+that's why I wanted to get 
+
+onto
+
+[00:59:00] Troy: a quick good product and
+
+[00:59:01] Brian: Yeah,
+
+[00:59:02] Troy: a podcast?
+
+
+[00:59:03] Good Product
+---
+
+[00:59:03] Troy: ​
+
+I thought I was gonna be late for the podcast because,
+
+[00:59:07] Alex: you were.
+
+[00:59:08] Troy: oh,
+
+[00:59:09] Brian: and I were here first.
+
+[00:59:10] Troy: my, my son had, is is not driving his car ever
+
+because we live in New York City and I'm like, get rid of the car. Why do we, why do we park in a car outside that never gets driven? I'm like, sell it. He's like, I'm gonna sell it and I'm gonna do a motorcycle trip across Vietnam. I'm like,
+
+[00:59:27] Alex: Oh, great. I did that. Amazing. 
+
+[00:59:29] Troy: did that. You should talk to him about it Anyway. so he was like, dad, maybe you can help me sell it car's in your name, whatever. So, I'm like, I, I, I'm not gonna deal with r oof Facebook marketplace or whatever, but the,
+
+[00:59:41] Alex: This man won't even sleep in an Airbnb.
+
+[00:59:43] Troy: Right. Never. and then, so in two seconds I put the car in Carvana and put all the details in it, analyzed it and popped out a price. a button, uploaded the documents, my bank information so that they could transfer the money. Carvana arrived 20 minute, an hour ago. they put a little device on the car to read the vitals from the engine, took a look at the car, pulled it on the truck, and wired the money to me. 
+
+[01:00:10] Alex: incredible.
+
+[01:00:11] Troy: pretty, pretty cool. And by the way, the price differential, if we had slogged away, you know, selling it on whatever, you know, privately, it was probably a couple thousand bucks. Not a huge amount of
+
+[01:00:20] Brian: Hmm.
+
+[01:00:21] Troy: So I like that. But the other thing that I liked you guys, and, and I don't know if you've been down this path, but there's this kooky show on HBO and it's called the rehearsal. And I might have talked about it before. 'cause this is his second
+
+[01:00:36] Brian: Oh yeah.
+
+[01:00:37] Alex: Mm-hmm.
+
+[01:00:37] Troy: Nathan Fielder
+
+[01:00:39] Alex: Mm-hmm.
+
+[01:00:39] Brian: a weird guy.
+
+[01:00:40] Troy: sort of, I don't know what, it's like a docu comedy or something. He assists individuals in for life events or difficult times or conversations by, by constructing these elaborate simulations. And it's kind of a wild show. it's a little bit uncomfortable at times. This, I watched the first one of season two and apparently is obsessed with flight disasters. he had deconstructed all of the times when,planes had crashed and, and looked at the flight logs. And apparently a lot of it was avoidable.
+
+But because of sort of human-like disagreements between the pilot and copilot that if they, the pilot had kind of listened to the advice of the copilot and, and hadn't been about ego, et cetera, the disaster could have been avoided. And so he then found a United pilot and he built a, wouldn't let him into the united.
+
+He wanted to get in and see what pilots do. 'cause apparently every flight he does, he does with a new, like he's a copilot with a new pilot. So there, there's all these fresh relationships being created and he tried to get in the private, Pilot's room at the airport, they wouldn't let him in.
+
+United wouldn't let him in. So he reconstructed the entire airport in a hangar. And what he ended up doing, it, it turns out, is the, this co-pilot that sort of, I guess willingly decided to participate in this sort of documentary slash social experiment, let him film him. And he was having problems with his, his distant girlfriend. And so he used the whole idea of the relationship between the pilot and the copilot a, a way to get him talking with his girlfriend. And it wa it, it's just a kind of a brilliant like you know, story beautifully articulated about, you know, the perils of bad inter interpersonal communications.
+
+[01:02:46] Brian: Hmm.
+
+[01:02:46] Troy: I think this is a really, really great show. It's
+
+[01:02:49] Alex: Yeah.
+
+[01:02:50] Troy: great show. It's, it can be a very hard watch, but it's a good show.
+
+[01:02:53] Brian: Well, his shtick is to make his uncomfortableness. I
+
+[01:02:57] Alex: Cringe. Yeah. 
+
+[01:02:59] Troy: Yeah.
+
+[01:02:59] Alex: he's a genius level,production and editing and, and all that stuff. And storytelling.
+
+[01:03:05] Brian: Yeah. If there's a profession to have that makes sense for a long distance relationship. It's pilot though, right?
+
+[01:03:11] Alex: Yeah.
+
+[01:03:12] Brian: You can get there. Just 
+
+Should we leave it there?
+
+[01:03:17] Troy: Alex, we may, Brian and I may meet up in Cannes
+
+[01:03:20] Brian: We are doing it. Oh, let's, let's announce it. We are doing a, PVA live without Alex. Unless Alex is gonna be, I'm not, I'm not paying for you to, to come to Alex flies.
+
+[01:03:31] Troy: for you, for you,
+
+[01:03:31] Brian: Alex is a man of the people. So like, he flies econ. I mean, I'm in premium economy and Troy's choice PJ his private equity friends. but if you, you're welcome, Alex.
+
+I didn't
+
+[01:03:43] Alex: Oh, great. I'm welcome.
+
+[01:03:44] Brian: going to an advertising
+
+[01:03:45] Alex: I'm welcome.
+
+[01:03:46] Brian: you go and you would be like tarred and feathered if they still do that? I.
+
+[01:03:49] Alex: Well, I'm know David Lov, but I'd love to come. when, when,
+
+[01:03:52] Troy: Hey Alex. I'll rent a house somewhere in the south of France and we can hang out there on the weekend.
+
+[01:03:57] Alex: when is it? When is.
+
+[01:03:59] Brian: it is, it's June 16th to like the 19th or 20th, And on Thursday the 19th, we are having a, a live version of this podcast. that will be with me, Troy, maybe Alex, if you make it.
+
+[01:04:12] Troy: Sarah
+
+[01:04:13] Brian: Sarah Fisher, she just, she just, said that she's in, she's gonna bring star power to it.
+
+[01:04:18] Alex: Okay. Every time we have a guest, they don't like me.
+
+[01:04:21] Troy: No,
+
+[01:04:21] Brian: Sarah, she doesn't like you 
+
+[01:04:23] Troy: no,
+
+[01:04:23] Alex: I don't know. I just, they don't like me. They don't like me.
+
+[01:04:26] Troy: time lover,
+
+[01:04:27] Alex: Well, it's just because you bring in media people and they see all the tech people as the reason for their problems, you know? Uh,you know yeah, yeah.
+
+[01:04:36] Brian: gonna be great. Neil, Neil Vogel. Meredith is going to be joining us. It's gonna be at the do dash meredith, Villa.
+
+[01:04:43] Troy: is okay. Neil Vogel,
+
+[01:04:44] Alex: You guys, everything, everything's fine.
+
+[01:04:47] Brian: your problem is not ai. Like,
+
+[01:04:50] Alex: No,
+
+[01:04:50] Brian: It's all good. Um,so we'll get into that.
+
+[01:04:53] Alex: There's gonna be cocktails, there's gonna be conversation. and that's free.
+
+[01:04:57] Brian: apps, not
+
+[01:04:59] Alex: Amazing. Amazing. What?
+
+[01:05:01] Brian: not on phones, but apps on a plate.
+
+[01:05:03] Alex: Great. What great value, what great value.
+
+[01:05:06] Troy: the
+
+[01:05:07] Brian: um,
+
+[01:05:07] Troy: guy for your app, I'll fly you over there.
+
+[01:05:10] Alex: I'm making a weather app. That's my new big idea. I'll see you guys later.
+
+[01:05:15] Brian: we'll have more information on this very important, activation.
+
+[01:05:18] Alex: It'll also be announced on the, substack, chat and the substack newsletter. I'm trying, I'm trying to get you guys to use it.
+
+[01:05:25] Brian: what do people have to do? What 
+
+[01:05:27] Alex: Go to Substack, go to People versus algorithm. There's a chat tab in there. You can check in there and we'll, we'll post stuff that we would usually post on our secret WhatsApp in the chat and people can comment there,
+
+[01:05:37] Brian: another place for me to type words.
+
+[01:05:39] Troy: you guys. I don't like chatting with a bunch of randos.
+
+[01:05:42] Alex: That's the audience you talk about. We have.
+
+[01:05:44] Brian: doing, you don't, I'm doing during can, I'm doing a texting service where, people can sign up and I will, I'm gonna. no, I haven't sold it yet. I will absolutely. Anyone who's listening, I will absolutely text them. a lot of people, your, activations or whatever you want within reason. it's called subtext, the service. And, I've been interested. Puck does it at some like, look, Lauren Sherman will do it with, like during fashion weeks. It's like you follow her and, and she's, it's mostly for events. I, I didn't, I don't really get it outside of events. New York Post uses it for, I think they're like, baseball writer uses it for games and whatnot.
+
+but it's a casual thing. It's, you know, I feel like people are on the go. They don't wanna leave. I'm gonna still do email, but, I dunno. I'm interested to see how it goes.
+
+[01:06:27] Troy: 
+
+
+[01:06:27] Outro
+---
+
+[01:06:27] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+well great hanging with you guys this week.
+
+[01:07:03] Brian: Yeah, this is
+
+[01:07:04] Alex: Yeah, man.
+
+[01:07:04] Brian: to come back next week,
+
+Troy.
+
+[01:07:05] Troy: to have me back.
+
+
+

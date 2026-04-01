@@ -1,0 +1,1267 @@
+PvA S3E136
+===
+
+​
+
+[00:00:01] Alex: personality types of people who leave a lot of tabs open, they're curious and information hungry. High openness to experience. low conscientiousness or executive dysfunction. how many unread texts do you have right now in your, in your messages? Yeah.
+
+[00:00:16] Brian: that off 'cause there's so many
+
+[00:00:18] Troy: yeah.
+
+[00:00:19] Alex: That's how bad it is. How many unread emails,
+
+[00:00:22] Troy: Probably 160,000.
+
+[00:00:24] Alex: I go to inbox zero at least twice a week, and I make sure that all my messages are, are read or
+
+[00:00:30] Troy: people that, that
+
+[00:00:31] Alex: organized.
+
+[00:00:31] Troy: in the world. No.
+
+[00:00:32] Alex: Are organized. 
+
+[00:00:33] Brian: notion people. That's the thing, Alex, I think, I think you're dislike of product managers is the narcissism of small differences. You might be, you might be spiritually a product manager.
+
+[00:00:45] Alex: Shall we get started? I'm, I'm ready. I'm prepared. I've, I've done my research.
+
+
+
+​
+
+
+[00:01:10] Welcome
+---
+
+[00:01:10] Brian: welcome to people versus Algorithms. I'm Brian Morrisey, joined as always by Alex Schleifer. Who sounds great. Alex.
+
+[00:01:17] Alex: Thank you. Thank you. Hi.
+
+[00:01:20] Brian: Troy Young, just popped us.
+
+[00:01:22] Troy: Schleifer? What is the proper pronunciation?
+
+[00:01:25] Alex: That's exactly how you both said it. Schleifer
+
+Like Michelle Pfeiffer.
+
+[00:01:29] Brian: I,
+
+[00:01:30] Troy: a,
+
+[00:01:31] Alex: He, we were doing a great intro for once Troy, and you just like sabotaged it.
+
+[00:01:35] Brian: That's a personality type two.
+
+[00:01:37] Alex: Yeah.
+
+
+[00:01:38] PVA Live @ Cannes Lions
+---
+
+[00:01:38] Brian: just to start things off, we are gonna be doing, a Google F focused episode today. we've got some appetizers, but I want to remind everyone, we are doing some kind of version of PVA live at the Cans Lions, is a big advertising conference.
+
+I don't know what it, it's not just advertising, it's all media. Now. Troy's unsure if he's gonna show up. He's leaving it to like the last minute. So register, the chances are Troy will not show up. But we're gonna have a, a wonderful event. It is, it's gonna be at the dot dash Meredith Villa, which is, it's a very lovely home.
+
+we're gonna be doing it by the pool. We're gonna be joined by, Sarah Fisher, who has been on this po She's been on this one, right? She.
+
+[00:02:22] Troy: was, yeah, she was brilliant.
+
+[00:02:24] Brian: Yeah, she's great. she's got her finger on the pulse of all the changes going on in media. This is gonna be on, Thursday afternoon. it's on June 19th.it is at 3:30 PM at the dot illa. I'll leave a, a link in the show notes. anything to add on that, Troy?
+
+[00:02:43] Alex: I had some good times in Cannes. now, it seems like sort of an orgy of salespeople and ad tech people While, while
+
+[00:02:51] Brian: the best kinds of orgies I'm
+
+[00:02:52] Alex: is it, is it while Rome is burning?
+
+[00:02:55] Troy: I, I have to be, I told you what my conundrum is. I have to be, in London a week later. And so I'm not going to do two trips. so I'd have to figure out, you know, what I do between Cannes and something else. And I don't wanna spend an entire week in Cannes because, that's, I'm not interested in doing that.
+
+[00:03:13] Brian: I am gonna see my nephews in Geneva if you want to come.
+
+[00:03:16] Troy: I come?
+
+[00:03:18] Brian: sure. I didn't, I didn't ask my in-laws, but I'm sure they'd be happy to have,
+
+[00:03:23] Troy: Uncle
+
+[00:03:23] Brian: executive. An executive and like you show off Troy's here. yeah, then we're gonna go on to Paris. This'll be great. we got some reader feedback this week. AB is starting to have a Allegion of fans just letting you know on that.
+
+[00:03:38] Alex: As he should.
+
+Is he coming on? Yeah. Okay, 
+
+[00:03:41] Brian: I don't know when though. 
+
+
+
+
+[00:03:43] Meida Buyouts
+---
+
+[00:03:43] Brian: I wanna run through a couple of, quick things.
+
+I I think everyone's starting to 
+
+understand where their years are shaping up. Washington Post, said they're having buyouts. they're offering basically anyone who's been at, the company longer than 10 years. 
+
+Business Insider, cut 21%, 
+
+of, of their staff today 
+
+across all departments.
+
+[00:04:01] Troy: well, rather, why? Why did they cut 21%?
+
+[00:04:05] Brian: Business Insider
+
+[00:04:06] Troy: Yes.
+
+[00:04:07] Brian: Oh, well, I mean, it, it seems pretty clear. I mean, business Insider was a winner from the last era. Congratulations. but it was the last era. I mean, it was a classic traffic machine And that was sort of epitomized, I think by its pivot to dropping the business from Business Insider to become insider. they started creating a lot of cheese content, and chasing a lot of Facebook traffic. and it worked until it stopped working. and I think that's the perils of this business. Now, the Washington Post's a totally different story. They're also, you know, they did some targeted buyouts. they're saying anyone in the video department can take a buyout.
+
+Any copy editors, I didn't know they still had that 
+
+many copy editors left can take it. you know, some of this 
+
+is not having necessarily, I don't wanna say the right people, But it kind of is you know, they're changing their 
+
+businesses. So when you're a people business and 
+
+you need 
+
+to change your business, you're gonna change out, a lot of people and.
+
+[00:05:03] Troy: thoughts, Brian, on the, this is me interviewing You of
+
+[00:05:06] Brian: Yeah, this is great. 
+
+[00:05:07] Troy: You had some 
+
+thoughts on the union response to it. Maybe, maybe you could share those, maybe you
+
+[00:05:13] Brian: you're just trying.
+
+[00:05:14] Troy: one
+
+of the
+
+lines from their response. 
+
+[00:05:16] Brian: Yeah. Well, okay, so
+
+[00:05:19] Troy: we're not, we're not anti-union here on the program. I mean,
+
+[00:05:23] Alex: At least some of us.
+
+[00:05:23] Troy: might be, yeah.
+
+[00:05:24] Brian: no, I will say this like, look, I, 
+
+[00:05:27] Troy: Yeah. To anybody that's in a union organizer, Alex is looking for a union at his new startup.
+
+[00:05:33] Brian: He would love to, he'll recognize that immediately. Look, I think the last era, it was very strange, Troy, you were very, for probably not, not your liking front and center of this, there was a lot of unionization that took place at a lot of these companies. Right. And it's interesting to me when you look back on it, because
+
+a lot of it became contentious.
+
+It became contentious. The business
+
+insider, I'm not blaming
+
+The reunion for the fate of these companies. It's, there's, there's a lot of, no, I'm not, I, I don't, but I, I do it. It is telling to me that Vice unionized went bankrupt. 
+
+Gawker unionized went bankrupt. Buzzfeed unionized is worth less than well, well less than its revenue. 
+
+And on and on through the list and, and, Again, these companies have continued to cut people and then the unions come out with these statements. 
+
+the News Guild said the layoffs for our 
+
+talented coworkers and union members is another 
+
+example of 
+
+Axel Springer's brazen pivot away from journalism toward greed.
+
+And, and these, these 
+
+statements that come out, but the reality is these unions have not protected, quote unquote, maybe they got better, like exit packages. I guess it's really hard for me to 
+
+say how this has led to stronger and more resilient businesses, but I guess that's not really the point.
+
+Exactly. but I know a lot of people who were involved in, in this, you know, these, these companies have shrunk. And, I don't think that's the main takeaway to the story, but it it is, is part of it, at least from my standpoint.
+
+[00:07:05] Troy: I mean, it's hard to wrestle for power when there's no power to take. I mean, these businesses are under siege, so that's just a of bad know, structure for interplay between union and management. I think that in, in companies that are more resilient, like I've heard people from Reuters say that, they're really thankful for the union Reuters is in a different economic position than someone like bi.
+
+But you can't protect a group of people in, in, when the business is failing. This is facts I.
+
+[00:07:39] Brian: Yeah. And eventually that, that just happens. 
+
+
+[00:07:42] The Information Space is Scrambling PR
+---
+
+[00:07:42] Brian: the other thing that, I found this really interesting. I mean, you might not have found it interesting. Nick Qua does a great job covering the podcast world, and I think a lot of what's going on in the podcast world is a little bit of a harbinger of what is happening across the media with its de intense, decent decentralization. and also just the, the advantages that individuals have over institutions. but one is how they're, that's scrambling PR as an industry. You know, I've, I've always kept PR at arms length. I've, I've never enjoyed, it, it, the fact that I've had to deal with it a lot. No offense to my PR people out there. but anyway, one of the things that's changed you with pr, so you have to be everywhere, like all the time, all at once. And you see this a lot when people have books coming out. Like they're literally on every podcast. I, Jake Taffer has been on every single podcast I listen to it leads to some really weird, um.
+
+[00:08:36] Troy: long gone?
+
+[00:08:36] Brian: yeah. So he was on Ho How Long Gone, which is a podcast by, Chris Black. and it's like a different kind of weird podcast. It's two dudes, digital culture and, a lot of, the banter, I guess the, as the Brits would say.
+
+And Jake Tapper went on there. And you have these people who are dropped on how long gone and, and who have never listened to it before and they have no idea what they landed in. 'cause it's a lot of just inside jokes. And now Jake Tapper, it has created a mini sort of controversy that'll blow over in like in a day. basically claiming that they were saying that his son might be racist because he, plays football, wants to be a cop.now if you've listened to Hal, Hal Long Gone, the whole point of the show is this kind of just like dude's shit docking and whatnot. It's like, it's a bunch of jokes. uh, Jake didn't, didn't get that memo, I guess.
+
+[00:09:36] Troy: is like hipster bro stuff.
+
+[00:09:38] Brian: yeah. It's hipster bro stuff. It, but yeah, I think we're gonna find all sorts of things like that. 'cause I listened to one, I listened to, an episode that Chris did, on Semaphore Media podcast, and he talked about an awkward one with Scott Galloway. So I immediately went and listened to that. I was like, oh, yeah.
+
+I went all the way back in the archives and it was super awkward because Scott Galloway had no idea who they were or why he was on it.
+
+like Ali G
+
+[00:10:03] Alex: Is Ma
+
+it, I.
+
+[00:10:04] Troy: Max Tanney was a bit ver clamped on that episode. He was a, he's a bit of a fan boy. I,
+
+[00:10:09] Brian: Oh yeah. Yes. 
+
+[00:10:10] Alex: you know, you, the book tour thing used to be that you had a, a lot of these traditional TV shows had a very common format. You kind of knew what you would get at, right? There was the morning show, there was the nightly shows, and, and you look at those folks, especially if you look at super cuts, it was essentially like same answers, same kind of characters and archetypes. But now that you have to do that on podcasts, you don't have time to listen to all these things. And a lot of them are really weird and they're based on like hours, on hours of like understanding their ho the hosts and the in jokes.
+
+[00:10:43] Brian: your prep, right, Troy?
+
+[00:10:45] Alex: Yeah.
+
+[00:10:46] Brian: You
+
+[00:10:46] Alex: Do the.
+
+[00:10:46] Brian: do the prep because if you look at Timothy, is it Timothy? A Timothy a Chalamet. And like he was great on all of these.
+
+[00:10:54] Troy: did the prep.
+
+[00:10:55] Brian: He did the very niche podcast, but he also did like college football game day. And he did a ton of prep. He was like able to talk about like Tulsa's quarterback or whatever. and that's what you gotta do and you gotta be a five tool player these days. And I feel like a lot of.
+
+[00:11:11] Troy: thing. He knew
+
+[00:11:12] Brian: Nwi thing. Exactly. He knew everything about nwi. I don't know what NWI
+
+[00:11:17] Alex: I mean, I don't even know if, if,
+
+[00:11:18] Brian: knows.
+
+[00:11:19] Alex: yeah, and I don't know if at this stage it's like, is it, is it that he did the prep, which I'm sure he did. But he also is someone that's obviously more clued up, with, with current culture and what shows up on people like Jake Tapper is that
+
+they're actually like, probably pretty 
+
+shielded and have no idea what's going on, you know?
+
+And that's not great for your brand. I think Timothy Shama just 
+
+[00:11:41] Brian: in you, Jake.
+
+[00:11:42] Alex: yeah.
+
+[00:11:43] Brian: guy though. He's got that going for him. VO
+
+three is having 
+
+[00:11:47] Troy: book 
+
+is a smash.
+
+[00:11:49] Brian: the book's a number, number one on the New York Times
+
+[00:11:51] Alex: What does that even, what,
+
+[00:11:53] Brian: it, I read
+
+[00:11:53] Alex: what does that what does that even mean? like some 10 10,000, 10,000 people bought it.
+
+[00:11:59] Brian: people to like, give you a lot of kudos for and congratulate you for reading a book. So 
+
+[00:12:05] Alex: Yeah. That's well done. Well done.
+
+
+[00:12:09] Veo3
+---
+
+[00:12:09] Brian: Alex have you, have you played at all with VO three? Have you
+
+tried it 
+
+at all? 
+
+[00:12:13] Alex: You know, it's, it's
+
+funny, i fully
+
+understand the capabilities
+
+of these things, but I have no, 
+
+interest in trying them out.
+
+[00:12:20] Brian: Okay, well, VO three is the. Google, it's their new video ai, tool. It, it can go beyond, you know, it's funny 'cause these things have 
+
+advanced so much and now you 
+
+can make things that look, they look like like real video. They look like real people and you can see the direction it's going. and also, by the way, 
+
+the 
+
+the Hollywood strike made sure that this is not gonna be 
+
+applied in, in movie making from, from Hollywood. um, 
+
+[00:12:48] Troy: one that,
+
+Joanna did on the wall at the Wall Street Journal?
+
+[00:12:51] Brian: no.
+
+[00:12:52] Alex: Yeah.
+
+Um, 
+
+[00:12:53] Troy: journal. Jonah Stern made a two minute, movie about her 
+
+[00:12:58] Alex: it's 
+
+called, we,
+
+[00:12:59] Troy: it's called, we made this, we made this film with ai and it's ter and it's terrifying or whatever. they.
+
+[00:13:05] Screenshare: Dr. Chip Mutter. Board, a totally real robotics expert. I am definitely not ai. Not ai, okay. Yeah, chip is definitely ai 
+
+and I'm the real me. Do You not know how to spell February? Put the R before you.
+
+[00:13:22] Alex: So they made a whole movie with a bunch of, AI stuff. it's not a good movie, but it just shows you that this stuff is, I mean, it is constantly getting better and it's
+
+and it's, and it's becoming, the voice stuff, you know, because now you can make them talk. It is 
+
+actually,it is, actually, it is actually coming to the point where it's, it's going to start being hard to tell.
+
+I still don't For some 
+
+reason I can't, I still have like big issue with 
+
+finding how people 
+
+who engage in making this 
+
+type of content are going to find value. I think there's going to 
+
+be so much of it done, that the value of the stuff is going to have zero, but I can see like, fully 
+
+customized training videos being pretty interesting for this type of stuff.
+
+definitely, you know, advertising that's fully tailored. But, for me, the thing that's more interesting is where do you find value in, in other types of video. And my guess is like, I still want to see the real person that plays a guitar really well on TikTok or does a cool dance or stuff like that. I, I, it's going to be. Interesting to see where this finds its place. And so when people say, this is really scary, this is the death of Hollywood. This is the dis of death of actors. and I don't find that particularly, a useful way of looking at this. I think we're just gonna see video everywhere and much more of it.
+
+[00:14:40] Brian: But compare
+
+this to the other tools that. are coming out because I kind of have a little bit of, and I don't mean this bad for Fast Company, but maybe I'd do a little bit, a little bit of a fast company 
+
+experience where I used to 
+
+read Fast Company articles and I'd be like, wow, this is amazing. and then I would read an article about like, say, like online advertising or something that. I, I, I knew about And I'd be like, wait, this 
+
+is really superficial and not very good.
+
+[00:15:04] Alex: Yeah.
+
+[00:15:05] Brian: I feel like a lot of these tools are that 
+
+way. It's like you can vibe, code some application, but if you're an actual developer, you know that it 
+
+doesn't connect to the database. and this has a massive security holes And it's not really a, a usable thing. It's, it's great To like,
+
+as a minimally viable 
+
+thing. And I'm sure VO three is the same thing. You're like, wow, I'm Steven Spielberg. And it's like, well, no, you're not really. I mean, I see that with the writing, right? Like the, this is very simple stuff and AI has ruined chat. PT has ruined the M dash,
+
+the m dash is over 
+
+[00:15:38] Alex: Oh, yeah. I asked
+
+my, my eye to remove it, because I used to use it a lot and everything I write looks like I No, but, but, but
+
+[00:15:46] Brian: But the other things that they love to do, it isn't this, it's this, it's like there's all these tells that
+
+[00:15:51] Alex: yeah.
+
+[00:15:52] Brian: from AI that people are trying to now like get around.
+
+[00:15:55] Alex: Brian, but that's not, is that, is that like all of these things, all of these criticisms are, let's say, let's say things that are going to be resolved, let's say it's gonna stop using m dashes and it's going to become a better and better rider, right? I, I don't think that we can, I wouldn't place a bet against the fact that this is where this technology plateaus. Because I think the technology hasn't plateaued yet. I mean, part of why we haven't seen like a lot of
+
+tools come out and stuff like that is
+
+that we haven't had a stabilization in the technology. And it 
+
+keeps changing all the time, keeps getting better. So people building tools don't really know when to stop and start building stuff with 
+
+it. But let's 
+
+say all of these things get solved because they will, and I think they will to the point where you won't notice, I think, 
+
+talking about the failings today nearly feels like a waste of time unless you're building the tools and you're trying to solve them.
+
+[00:16:50] Troy: I think you always have to look at. Cultural change as layers. never one thing replaces another thing. It usually augments another thing and behavior changes on the
+
+[00:17:03] Brian: Did Troy glitch?
+
+[00:17:04] Troy: adopt the new things
+
+[00:17:06] Alex: Troy, uh, just,
+
+[00:17:07] Troy: still
+
+[00:17:07] Alex: just, just froze out of the
+
+matrix. Let's wait till he comes back on.
+
+[00:17:11] Troy: new emerges. there's, there's, there's, there's kind of, you know, will
+
+[00:17:17] Brian: are you there?
+
+[00:17:18] Troy: an increasingly like, think about texts? Do you ever run your texts through chat GPT to edit
+
+[00:17:25] Brian: Hmm.
+
+[00:17:25] Troy: Well, I think
+
+[00:17:25] Alex: Okay, let me text him. This is interesting.
+
+[00:17:28] Troy: it to create
+
+[00:17:29] Alex: He's probably still talking, you know,
+
+[00:17:30] Troy: Yes. Do you ever use it to write the entire
+
+[00:17:33] Alex: let me just call him.
+
+[00:17:34] Troy: it might augment that. And so over time, you know, things
+
+[00:17:38] Alex: Are there, , 
+
+
+[00:17:38] Staples' Easy Button is Back
+---
+
+[00:17:38] Brian: one thing I 
+
+[00:17:39] Alex: Yeah.
+
+[00:17:39] Brian: just, and then 
+
+we'll get into the main thing, I I don't know, 
+
+if you, I noticed this? in a, um, out of home ad on the subway platform, but Staples, staples has 
+
+brought back the easy 
+
+button. This was a, this was a, a really 
+
+successful ad campaign from the early two thousands. and you know, can, is coming up and can is supposedly about advertising creativity. And I, think 
+
+[00:18:00] Alex: Yeah.
+
+[00:18:01] Brian: gonna be talked about nonstop there is, 
+
+is how is gonna change ad creative. Like, it's an entirely new category of these AI enabled companies that are gonna make ads. and I don't know, like, you know, group M which was this big media buying agency, they're, they're not an ad creative agency, but like media buying agency, they buy the ads now, they're like, they're rebranding it into WPP media and. I went through the announcement, didn't even use the word agency like once,
+
+[00:18:37] Alex: They use AI a lot.
+
+[00:18:38] Brian: they use AI a lot.
+
+They said they're an AI enabled media company. I'm like,
+
+[00:18:43] Alex: What? What does that mean?
+
+[00:18:44] Brian: really?
+
+[00:18:45] Alex: Yeah,
+
+[00:18:46] Brian: and I don't like, I think all week I'm gonna ask people like what their favorite ad campaign is,
+
+And I don't 
+
+[00:18:53] Alex: or current?
+
+[00:18:54] Brian: has any answers. And I'm just wondering, is this just a period where ad creativity is just seemingly not breaking through?
+
+Or are we at the end of using the, the elements of like storytelling? And you can come up with exceptions, but you know what I'm talking about, Alex, like what ad do you know? Well name for me an ad campaign that
+
+[00:19:18] Alex: last
+
+[00:19:19] Brian: great.
+
+[00:19:19] Alex: 12 months, or
+
+[00:19:21] Brian: Yeah. Last year. It's your favorite ad
+
+[00:19:23] Alex: God, I cannot, I cannot name one.
+
+[00:19:26] Brian: Yeah, me neither.
+
+[00:19:27] Alex: Yeah, no, there's nothing that comes. there's nothing that even comes to mind where I'm just like, furious about it, or, you know, I think, yeah, that's a, that's an interesting question. Do you think people in the business will have maybe more,just like more awareness because they just pay attention to them. 
+
+[00:19:44] Brian: there's gonna be more like awareness, but the reality is the media industry, I mean, just like,
+
+you know, WPP media saying that they're a media company is is so vast right now that the
+
+advertising part of it, even though they're technically supported
+
+by advertising, is kind of a
+
+miniature part of
+
+it.
+
+Like making ads as a way I. To build businesses is not
+
+really how it's done
+
+[00:20:13] Alex: And, and the idea of a campaign is a little bit like the idea of a music album, right? It's like people do, I, you know, what, what does a campaign even mean In today's world when, when everything is heading towards, like, I mean, Zuckerberg said it, right? The the end state
+
+for, for their product is you just say, you just 
+
+give them a go.
+
+You don't even have to 
+
+give them creative or anything like that. You just, say, I just wanna sell more deodorant. Right?
+
+[00:20:38] Brian: Yeah. 
+
+[00:20:39] Alex: And a machine will
+
+[00:20:40] Brian: the
+
+[00:20:40] Alex: moreor.
+
+[00:20:41] Brian: guys set the direction and
+
+so that's what the industry is about.
+
+Not like making great advertising. I mean,
+
+[00:20:46] Alex: Yeah.
+
+[00:20:46] Brian: I think probably one of the greatest ad
+
+creatives of the, last generation, which could have been literally the last generation of ad creativity. David Droga, he works for Accenture. 
+
+I mean, like, 
+
+[00:20:57] Alex: Yeah,
+
+so, I mean I think,
+
+[00:21:00] Brian: business. 
+
+[00:21:01] Alex: I think we're
+
+really going to 
+
+see like the thinning out. Of the creative class, which really worries me. And it's not, you know, it's not because AI is just going to replace creatives, it's that a lot of the work that wasn't always particularly like the most creative work was sustaining a, a creative group of people, right?
+
+Like building campaigns, doing the writing, even kind of just like young up and coming creatives that worked in editing, that did all of these jobs that are actually are just like being rapidly reproduced,replaced with ai. people who used, used to make, you know, like some secondary income, from stock photography, all of that stuff, those were all jobs that were saying, you know, like, yes, I'm a filmmaker, but I had, you know, I work in an ad agency,you know, most of the time so I can pay the bills, but, you know, hopefully one day I'll, I'll, and, and, you know, that's a pipeline to a lot of, a lot of our kind of like.
+
+yeah, creative talent, comes from there and I, I worry of how that's going to be decimated. Now, on, on the flip side of that, like, you know, the people, I say, well, the tools will balance this out because you can go out and make a movie now with less people and stuff like that. But I don't know, you know, like it, it kind of worries me, you know, coming from that world, see what's, what's happening to, to, to an industry which would at least, like, I mean I, you know, I have no love for the advertising indu industry, but agencies did kind of support a lot of burgeoning talent coming up, you know, and that's, that's going away.
+
+[00:22:30] Brian: I mean there have been lots of reports about how much, what used to be group Angus WPP media will be cut in this. Adweek said that up to 45% will be impacted. it's
+
+[00:22:41] Alex: That's crazy.
+
+[00:22:42] Brian: that's a cut or.
+
+[00:22:43] Alex: I can see it, I can see it, you know, used to walk into agencies and see a lot of people just doing,work that,
+
+[00:22:50] Brian: a lot of moving data from one place to another. Like in, in a lot of just work
+
+[00:22:56] Alex: I mean, just, just, yeah, I mean, just the idea of like, pitching a campaign would keep, you know, a dozen people employed, you know, as they cut and pasted stuff into a keynote file, you know, like, that's, that's likely like no longer gonna be something that makes sense to them. So, it's, it's a bad place to be right now.
+
+Once again, it's grim. Troy's internet is gone. So Troy doesn't have internet.
+
+[00:23:20] Brian: went down.
+
+[00:23:21] Alex: Oh yeah. That's what, uh.
+
+
+[00:23:22] Google
+---
+
+[00:23:22] Brian: get into the episode. Regardless whether Troy, Troy Will, Troy will rejoin. Okay. So I wanted to, you know, we did one about Apple a couple weeks ago, so I wanted to dig into Google. This is always dangerous 'cause these companies have become so massive that you know, you could. You can have like, not just a podcast episode, but you could talk about them forever. So I want to kind of narrow it a little bit, but to me what makes Google so fascinating is it's the most consequential company of the modern internet. and I remember starting to cover it when like search engines were new.
+
+that's how old I am. And you know, Google was, had just arrived at the portal era and, and people didn't realize what search was at the time. And it's kind of funny to have lived through that and seen how dismissive people were of, of a new kind of paradigm. 'cause this was the portal era. And it was like, okay, big deal like this.
+
+It's a search engine. Search was never a money maker. The search results pages were basically just remnant ad inventory. It was like chat, it just, it was a place where you put just like remnant banner ads.
+
+[00:24:36] Alex: When you say people, you mean? You mean like the competitors? Google's competitors didn't see it?
+
+[00:24:41] Brian: yeah, I mean that they didn't like, you know, search, search was not, first of all, it was, it, it didn't work as well. You
+
+[00:24:49] Alex: Mm-hmm.
+
+[00:24:49] Brian: of it was still manual and
+
+[00:24:51] Alex: Yeah.
+
+[00:24:52] Brian: whether that was a OL and then Yahoo was the way people were directed to information
+
+[00:24:58] Alex: Excite.
+
+[00:24:58] Brian: the explosion of information, search was the only way to make sense of it at the end of the day. And Google won that. And by becoming the front door to the internet, it created what I think is the greatest economic engine pretty much ever.
+
+[00:25:14] Alex: Well, I think it was, and, and we have people in the audience that might have not lived through that, but I think as a consumer, the first time you used Google, right, because I was an early adopter. Like we used all, like, I don't know if you were at that stage, but I, I had different, you know, HotBot was better at certain searches and Excite was,
+
+[00:25:36] Brian: Were you a dog
+
+[00:25:37] Alex: yeah.
+
+Dogpile. I was not a fan of any of one of them, but I was kind of, I was, I felt pretty smart being able to know what to use when, but when Go, go Google came on, I don't, I, I haven't, I didn't meet anyone at the time that didn't say this was incredible. Not only because the product felt really good, but it actually made the U Internet feel useful.
+
+You know, like, it, it, it was profound that shift. Like the internet wasn't that useful until Google came along. 
+
+[00:26:05] Brian: I, you know, a Alex, the first story I ever wrote about advertising. Was actually, I covered an Eric Schmidt talk to a group of, of like internet advertising people
+
+[00:26:17] Alex: Nice.
+
+[00:26:18] Brian: he gave a lecture that basically told them, stop scaring people. All your ads are scaring people. He is like, we have a, we have this system where people ask us for stuff and we, we provide them helpful information. and yeah, I mean, Google used that control of the interface to amass basically to dictate this entire area. I mean, it, it vanquished all of its rivals in search. And by the way, the way it did it are the exact things that the DOJ is quote unquote investigating now. It cut the deals with a OL, basically cut uneconomic deals to buy distribution.
+
+'cause they, realized that if they controlled all the distribution, they had basically a money printing machine.
+
+[00:27:04] Alex: Yeah.
+
+[00:27:05] Brian: Their rival at the time, which was Overture could not compete 'cause they didn't have their own search engine. They just supplied, the paid search to, to others. you know, it gobbled up then ad tech. And so it said we're gonna direct the traffic all around the internet, but we're also gonna monetize that, through the, through our advertising system. You know, that it was, it was a bargain basically at the end of the day. It was a tacit
+
+[00:27:29] Alex: Uh,
+
+[00:27:30] Brian: but it was a bargain.
+
+[00:27:30] Alex: They understood early on and I think, Or at least they set, set up the playbook for that. If you don't own the interface to something right, you can stick in a slice of that entire, market, right? So if you own the in, you know, and, and it became, wow, we own the interface to the apps on our phone.
+
+We can take a 20, 30% cut on anything like that. But Google, what Google did, and first mover advantage is that they became the interface for the internet, which was, and, and, you know, they executed really well, right? Google was an incredible product. Chrome was an incredible product, and they kept pushing for it, just like to keep that ownership.
+
+What happened over time is that it became less about like, just like products, execution, dominance, and much more about wielding their kind of market power to strike these really, lazy deals, right? And, and hurt the competition.
+
+[00:28:24] Brian: I mean, everyone falls into that 
+
+[00:28:27] Alex: WW which is why.
+
+[00:28:28] Brian: this with apple rentier capitalism. I
+
+[00:28:30] Alex: Uh,
+
+[00:28:31] Brian: is just like
+
+[00:28:31] Alex: exactly.
+
+[00:28:32] Brian: how it takes place. Pretty soon you're like, why am I gonna innovate? I've got all this distribution.
+
+[00:28:38] Alex: Yeah.
+
+[00:28:38] Brian: why don't I just use the distribution might that I have.
+
+[00:28:42] Alex: Which is why I think it's the best thing, no matter how un surgical the cuts are, and like they have to sell YouTube or Apple has to, you know, change some things about the App store. I, I think any kind of regulatory grenade that can be thrown into the mix is going to be great for these companies.
+
+I think it's going to be great long term for these companies because they need an excuse to stop, just doing what's best for their market share and start like innovating again. It's gonna be great for all of us.
+
+[00:29:11] Brian: like think about the $20 billion deal to Apple, right? I mean for Apple, like why would you turn it? Why would you build your own search engine? Why
+
+[00:29:18] Alex: Yeah,
+
+[00:29:19] Brian: Google when you just put $20 billion
+
+[00:29:21] Alex: Absolutely. It would be, it would be, I mean.
+
+[00:29:24] Brian: You don't need an MBA to make that decision.
+
+[00:29:27] Alex: I, you know, I would make that decision. I, I think it's like an impossible decision not to make when you're faced with that. Right? Like, it's an offer you cannot refuse. And, and if you're, and if you decide to refuse it, then you're, you're just being, incompetent at your job, right? Tim Cook cannot say no to that.
+
+It's pure profit to 20, $30 million. Why would you stop doing that, you know?
+
+
+[00:29:50] One-Trick Pony
+---
+
+[00:29:50] Brian: the other thing is the take on Google at the time was they're a one trick pony. And it was, search is the one thing they can, they can't do social networking, they can't do all this was always said about Google. But here's the thing, that trick was everything. Like, everything you can get, if you're gonna get one outta 10 things right? Like if you got search, that's okay. And, and they really didn't have a good track record beyond search. I mean, search was like 98% of
+
+[00:30:20] Alex: But is a.
+
+[00:30:21] Brian: for a long time.
+
+[00:30:23] Alex: I mean, is it even search or is it advertising? Because the, the way I kind of, I, you know, the way I kind of organize Google is that, it's essentially an advertising company that became great at all the things that feed into that advertising, right? So, advertising is like 260 billion, like 75% of Google's revenue is advertising, and then non-advertising revenue is like $91 billion, like 25% right Out of those.
+
+Out of those $91 billion, 43% is, 43 billion. Like about half is Google Cloud. But I would say that even Google Cloud was built entirely to that entire infrastructure in the beginning was built to support their advertising business. You know, at some point Google switched from being a search company to an advertising company, and everything feeds into that.
+
+Like even, even YouTube, right? YouTube is like 30 billion a year or something like that. It's a massive business. That's, again, that's an advertising business and Google's an advertising company and, and which is why like, I think it's not, you know, pe YouTube is famous for killing products. and a lot of people say, well, it's not, if it's not search, it gets killed.
+
+I don't think that's entirely true. I think it's, if it's not advertising, it gets, it gets killed. YouTube's gonna be fine. You know, they've managed to monetize Gmail somewhat, but they're an advertising company. They're an advertising network with products attached to it. And that's, I think is the mentality, you know?
+
+[00:31:48] Brian: I
+
+[00:31:48] Alex: disagree?
+
+[00:31:49] Brian: I don't know. I mean, 'cause to me, like the form, does a lot of advertising now, right? Particularly with YouTube and doing upper funnel stuff. But really Google sells distribution and when I hear advertising, I think of Cam. I think of that world and I think of. Google Built was saying, we're going to, we're gonna be distribution focused and we're gonna be completely user focused.
+
+And this is how they became like powerful, right? Like leave aside the compromises. It's made as it's become a monopolist. But they basically have said we're toll takers in a lot of ways, like a lot of their advertising. But it's the same way. Like I don't really believe that Amazon, I is now an advertising company. They have a giant advertising business, but it's a distribution business. It's not,
+
+[00:32:39] Alex: No, but I think when you look at, but I think it's important to look at like. What pillars, like pillars a company sits on and how it makes decisions. And if, you know, apple is very much still a hardware company and it dictates a lot of the way they do things and they think about stuff.
+
+It's like very intentional. Amazon is very much a logistics company, so everything around Amazon is built around its logistics. I think it's much more of a logistics company than it is a commerce company. It's about, the thing about that Amazon does great is gets one thing from one, one place to another.
+
+And Google, I think the way it operates, the way decisions are made, the made the way it prioritizing things is, is, is very much like all, all geared around, I think advertising. Because even if you look at Search is a search is a massive business, but they have other massive businesses, you know, YouTube, the Google network, like I.
+
+YouTube ads and the broader Google network is $70 billion. You know, it's like, it's a massive chunk of their revenue.
+
+[00:33:40] Brian: I, I definitely don't agree because I mean, like advertising is just happens to be how they make money. like they don't care. Like you will never find Sundar Phai at camp. Like, you
+
+[00:33:56] Alex: But, but that's, but the same way, the same way, the same way. You won't see Tim Cook at a, at a gaming conference is telling everyone that like, you know, a vast majority of their, revenue app, store revenue comes from Wales playing Candy Crush. Like of course they don't wanna be what they are, but at the end of the day, that's how they make decisions.
+
+Like, which is why like.
+
+[00:34:16] Brian: told, told to me like earlier in my career? it was Dave Morgan. he said, you know, Brian, the thing about advertising is it gets sold, not bought except for Google. ads are the only ads that get bought, not sold. And Facebook now is that way.
+
+Meta is that way. Amazon is that all this retail media are are ads. Oftentimes they're ads that get, bought, not sold. that's because like their distribution, they're not like ads.
+
+[00:34:43] Alex: Fair.
+
+[00:34:43] Brian: that's the sort of difference that I
+
+[00:34:45] Alex: Fair.
+
+[00:34:45] Brian: it's like a bit of
+
+[00:34:46] Alex: Fair.
+
+[00:34:47] Brian: hairs, 
+
+
+[00:34:48] Google Products
+---
+
+[00:34:48] Brian: but let's get into like where Google is now because, you know, AI is something that, it was very early to it.
+
+It is the forerunners of AI research really, and I think can draw a, a direct correlation. Between its advertising business and, and ai. It, it, I don't think it's a coincidence that Google was so focused on AI more so apparently than Apple was, because you can justify AI because machine learning and AI can improve ad performance.
+
+And, you can do all that research. now Google had this moneymaking machine, right? And I look at it almost like how the zero interest rate era, when we look back on all the things we didn't do when we could have done them during it, I don't know if Google necessarily used that unbelievable privilege of basically having limitless capital. you know, they, they screwed up a lot of different things, but they, I mean, they did buy YouTube. That was pretty good. They were early with AI research. But AI is now at least in the form of chat, GPT. Threatening the core of their business. Now, it's been a couple years since chat, GBT, of none of this has really shown up the numbers with Google.
+
+It, it feel like it's the shoe that has never dropped. Only when Eddie Q said that searches were going down. Was, was that like a tangible manifestation that this is hurting Google's core business? 
+
+[00:36:20] Alex: let's not go into Gemini stuff. 
+
+Let's just look at Google,just like Google's list of products, right? Because there was a whole generation of, of of Google where it was about just like releasing all of these new products, all of these new ideas, right?
+
+[00:36:35] Brian: time,
+
+[00:36:36] Alex: 20% time. Yeah. And Gmail came out of that and Google Wave came out of that, and Hangouts came out of that.
+
+[00:36:43] Brian: claim that a bunch of shit came out of that that, like, I don't, I think
+
+[00:36:46] Alex: Oh, the, the 20% itself is maybe more marketing. But what I'm saying is like Google, Google was like throwing a lot of stuff at the wall that weren't directly things that they felt that, that I think like were, easy to turn into an advertising product. Right. And a lot of these things have come and go, come and gone.
+
+a lot of them, like I still mourn, like you remember the Google reader, the RSS feed reader? That was the way I was, was reading all my news at the time. It was fantastic.
+
+[00:37:14] Brian: I mean that's
+
+[00:37:15] Alex: and it, and, and, but a lot of big products that are part of their foundation came on,
+
+[00:37:19] Brian: seen this? Killed by google.com. Then
+
+[00:37:22] Alex: killed by Google.
+
+[00:37:23] Brian: gotta go to kill by google.com.
+
+[00:37:25] Alex: This is, uh,
+
+[00:37:26] Brian: tombstones for things that Google
+
+[00:37:29] Alex: there we go.
+
+[00:37:30] Brian: has
+
+[00:37:30] Alex: right.
+
+[00:37:31] Brian: the
+
+That's right. Oh, so Google Jamboard is at the top. We used to, we used to have one of those at Airbnb. We would like, Hangouts, YouTube originals. Google Wave. I was, I was a wave influencer. I.
+
+[00:37:42] Alex: I, I really, but here's the thing, like back to my Google being an advertising company, or at least being guided by that, a lot of, if you see there's a big correlation between the products that are killed and the products where advertising couldn't be, probably integrated into them.
+
+I, I, I think that's, that's, that's key because they have, they had an, an amazing ability to execute. They had a lot of, incredible engineers sitting on the bench, you know, willing to, to, to work on things. And the, the things that have survived are kind of nearly more telling, right? Where,Like, like the things that have survived are things like Chrome, which is a just, which is like you said, like a distribution mechanism gets people in.
+
+Android is even further along the stack. I mean, the, the the, they, they just wanna build wa you know, they just want to build gates that get you into more gates. Right. So like, while, okay. The, the search was the thing, well, the risk then becomes like, what happens if somebody takes their browser and sends the search elsewhere?
+
+Well, let's make the most popular browser, right? Okay. Now that we're, we've got the most popular browser on desktop, mobile phones are coming. Well, what happens if somebody puts a different browser that has a different search? So let's, let's do, let's do Android. All of these things are to feed into the advertising, the advertising funnel.
+
+Same things with maps. Maps is an advertising platforms. The, the, the outliers are all this infrastructure stuff.
+
+[00:39:03] Brian: is that, is that in Google has been a one trick pony, but that trick is not searched. That trick is advertising.
+
+[00:39:09] Alex: The trick is getting people, yeah, getting, getting kind of like, I mean, you could call it distribution, but it's getting that, like owning that funnel of people to anything on the internet and being able to, you know, charge people to advertise against that. I think there's, there's a subset of products that do not exist in that realm.
+
+I think, Google Docs is one of them. I think there's not, I mean the, the advertising on Gmail, I'm not sure is a huge business for them, but these seem to be more like, you know, audience capture, because you, you know, you get people to register, you have their account details, you have the credit cards, you do stuff like that.
+
+but yes, I think, I think if you look at a lot of their decisions at some point in the product lifecycle that Google, somebody looks at it and go like, well, how can we plug this into our money machine? You know, and if you, and if, and if you're like building a whiteboard product, you're like, gulp, and then you get killed, which is why I'm really worried about Waymo.
+
+At some point, somebody's gonna say, all right, well let's plug this into the money machine. And they're gonna say, I guess we could put banners in the car, you know, because that's, I don't know.
+
+[00:40:19] Brian: Well, interesting 'cause I, I think like, I don't know, I, I think Google is moving away from advertising
+
+[00:40:25] Alex: Oh wow.
+
+[00:40:26] Brian: in some ways. You know? I mean, if you look at like, what it came out with, because I think they need to diversify clearly they've had to for a while, right? I mean, they've got a massive business and it's, it is still primarily advertising and, you know, it's some something that I was, I was listening to, I think the, the more or less podcast. and I think that was a really smart thing when they was talking about, was there really that basically you're buying like a computer, like you're basically buying compute with ai. and, and that you're just used to paying of dollars. That's why I think it's really interesting, these really high priced AI subscriptions.
+
+I mean, you look at vo, what's VO priced at
+
+[00:41:10] Alex: Like $250 or something.
+
+[00:41:12] Brian: a month,
+
+[00:41:13] Alex: Yeah.
+
+[00:41:14] Brian: right?
+
+[00:41:14] Alex: but Brian, like, I mean, yes, sure. Like, but it, it turns out like getting corporations to pay for stuff via advertising is always going to be a better business than asking consumer to pay for a product. Like there's very little money. Like if, if you look at, if you look at the distribution of their revenue model right now, like I said, like 260 billion, 75% is advertising related.
+
+And then out of the non-advertising revenue, I. Which is 90 billion. Half of it is Google Cloud, which I would say like the Google Cloud infrastructure is very much built on the fact of the advertising infrastructure, right? So, so, so then you, you kind of go like, alright, well what else they got? You know, they got, all right, they got like, you know, maybe a billion or so in Waymo, forget that.
+
+and then subscriptions, you know, $40 billion, which includes Google Premium, like Google one stuff and play store stuff. their play store revenue is like, I think like a third of what iOS revenue is. So app store revenue, this type of revenue, which is non-advertising revenue for Apple Services revenue is huge.
+
+Google hasn't made a dent compared to the moneymaker, which is like, yeah, let's put ads in front of people. I think they're just so good at it. I mean, I, I, I spoke to Google people and they say at some point. No matter how successful your product is at Google, somebody looks at it and, and there's a pie chart that shows what the dentist's making.
+
+And your slice is so invisible that it gets squeezed out by the rest of the pie chart, which is advertising.
+
+[00:42:51] Brian: Well, it, it also, it has to be very difficult. I had heard this so many years ago, so I can only imagine how it is now, like to build a business within Google that even makes sense for a top executive to even know exists. Like
+
+[00:43:03] Alex: Yes.
+
+[00:43:04] Brian: has to be
+
+[00:43:05] Alex: Right, right, right. It absolutely is. I mean, which is why I think
+
+[00:43:09] Brian: a hundred million dollar business within Google.
+
+Nobody even knows it exists.
+
+[00:43:12] Alex: how great would it be to split this all up? And I know we're gonna talk about AI in the future of Google in the next episode when Troy joins us again. But like this, it has been like probably the hardest thing for them to go, to go against that stream because ai, we don't, we haven't figured out advertising with AI yet.
+
+We have.
+
+[00:43:30] Brian: that's a good segue to, because I know you have a hard stop as,
+
+[00:43:34] Alex: I do. Yeah.
+
+[00:43:35] Brian: as we always know,
+
+[00:43:36] Alex: Yeah,
+
+[00:43:37] Brian: I think that, I feel like the last era was defined by advertising, the last era of, of digital technology really. I mean, the internet was, it's, it's an advertising medium at the end of the day.
+
+[00:43:50] Alex: yeah,
+
+[00:43:51] Brian: you know, when Google was, was ascendant, everyone was scrambling to make ad supported software. I remember Microsoft was, was doing like, you know, we're gonna put ads in Word. And that was just. accepted that every, everything was gonna have an advertising model. And I don't know if that's necessarily gonna be the case, with ai. I, I think ads always find a way. I'm, I'm long ads because they just, they just do, people usually choose ads over paying for stuff but I think it's gonna be a more diverse business model.
+
+[00:44:24] Alex: yeah. I mean, we're seeing that now, right? Like, But it's also hard. So, so I mean, I, I was one of the hopefuls that was hoping that things would move to the services business and Netflix was one of those places that felt like, Hey, you can build an incredible business, through, purely through subscriptions, by omitting ads.
+
+But even they realized that you tap out at some point and at some point you have to, put ads in the product. And not only that, but like, you actually might be making more revenue from ads than you are from anything else, from any of your paid sub subscriptions. So, so, so what's transpiring now is like you're seeing a lot of the paid subscriptions are becoming really premium, really expensive, and then they're pushing a lot of customers towards their ad platforms, and it's likely that the same thing will happen with ai.
+
+The thing that's hard to gauge with AI is that so much of it is subsidized right now and is also super expensive. We don't know how much cheaper it's gonna get, how quickly, we don't know how much they're being subsidized. At some point, you're gonna have a contraction in the user base if you force them to move to subscription model.
+
+We know that. and unless it's, you know, unless there's a huge behavioral shift. and we also don't know what type of advertising is feasible on that. Like, there's a lot of very smart people right now, looking at advertising. And my guess is that there's already advertising products that are being successfully tested, that would be hugely, profitable, but there's some anxiety around the public perception of an ai.
+
+Pitching, you know, like right now, everybody's trying to tell you like, trust my eye, trust Claude, or trust Chad, GPT, or trust Gemini, because they give you good answers and they, they've got good vibes. Everybody's scared to take the first step and say, you know, and have like, you know, like say, Hey, by the way, you should get, you know, your breath stinks.
+
+You should get toothpaste.
+
+[00:46:19] Brian: you said that. 'cause I started to see like a little carousel and chat BT
+
+[00:46:24] Alex: Mm-hmm.
+
+[00:46:25] Brian: that were like related products to like a search.
+
+[00:46:28] Alex: Oh, you're being tested.
+
+[00:46:29] Brian: I was like, here's some podcast microphones. And the
+
+[00:46:31] Alex: yeah.
+
+[00:46:32] Brian: that they weren't making any money off of like a
+
+[00:46:35] Alex: Right,
+
+[00:46:36] Brian: were like kind of a tell,
+
+you right.
+
+like, whoa, whoa, whoa. Like you're very defensive about this.
+
+[00:46:41] Alex: Yeah. Yeah. So it's gonna, and, and it's gonna be interesting. I don't think Google's in that brand. I think, you know, honestly, the first ones to tread it out, the shameless ones, Amazon, they're just gonna do it. They have no shame when it comes to that stuff. They were the first ones to like, give you a, like my paid prime account.
+
+All of a sudden they started showing ads. No other, you know, streamer did that without changing a price or something. Just like, well you just, you just get ads now. but yeah, I think, I think that what's probably holding them back is, since there's a lot of, like they, they're just all trying to capture, customers and, and build affinity with ai because they also know that AI is a relationship.
+
+It's a very different type of product. It's much more relational than anything else that, they could really ruin that,by kind of trying to feed advertising in a way that feels like uncanny. And so, it's gonna be, it's gonna be interesting to see, you know, honestly.
+
+[00:47:37] Brian: All right,
+
+leave it there.
+
+All right. Okay. 
+
+
+[00:47:40] Google Now
+---
+
+[00:47:40] Brian: So Alex and I, before you got disconnected, Alex and I went through basically a little walk down memory lane of Google and how Google became Google.
+
+but he was basically hammering on this point that Google's just an advertising company at the end of the day, and that, that has defined how the company has evolved. And to even call it like a search company or a tech company isn't totally right, but it's really an advertising company. and we sort of set that up as a way to discuss the AI challenge.
+
+That's what I wanna pick up with you, but what do you think of, what is Google to you right now?
+
+[00:48:15] Troy: So I'm sorry that I dropped off. I hope you, gave folks some context. I think that's an interesting take, but obviously Google's more than an advertising company, so it's a little bit ridiculous. And, my take is actually, I would put it on the bull, on the bull, on the bull side for sure. I, I think that if, I don't know if you've guys have gone, gone through the history of Google. My, my, my history with Google is, you know, one of, I would say, kind of wonder and like mostly good feelings like optimism, positivity, and. You know, I, I, I mean I've sat downstream of Google decision making and had to struggle with that as an executive and as a investor in companies.
+
+So, I mean, I think that there's obviously mixed feelings, but like, I remember little things like when, when Yahoo Mail had, I dunno, like a four megabyte, maximum, and Google came out and basically said, which Gmail, that there's no
+
+[00:49:18] Brian: Yeah, people thought it was an April Fools Day joke 'cause they did it on April 1st. 'cause they're like, you can't do that.
+
+[00:49:24] Troy: And so like, that was a sort of remarkable technological gift. over the years, the improvements in search have just been remarkable. Their ability to
+
+[00:49:33] Brian: they?
+
+[00:49:33] Troy: of, mean, I, I, I think that,a tool that indexes much of human knowledge. It's really, really useful. you know, I, it's just that it's, it's a, it's a, it's a big part of my life now, clearly they, you know, Google Plus was a fiasco.
+
+They never did anything in messaging. They own YouTube. YouTube is a huge, you know, the thing I spend the most time on with videos,
+
+[00:49:56] Brian: Yeah. Alex went through, we had killed by google.com up with all the things that Google has killed over the years.
+
+[00:50:02] Troy: I mean, they, they work in technology, right? You got hits and misses. It's like being a record executive. you, you know, you're gonna some, some work, some don't. gotta try a lot of things. But if you look at the things that. Remarkable about Google from, know, currently the stuff that like, that they're doing with AI probably leads the industry. I, I remember watching the documentary on, you know, Google's, what was it that be that one, that master of Go. I thought that was remarkable. today, I think if you use Gemini, you'll be delighted. It's a really great tool. It's incredibly fast. Um, I, I prefer just 'cause I'm used to it, I suppose, chat, GPT.
+
+But my take is, is, is a little bit different. And, and what it, what I'll try to summarize it. It's that. For better or worse, the way we see Google is as a search company as you point out. and, and I think that right now they're in a, a transition period where Google will be far more important to your life because use cases are more expansive. And, and I think that, you know, TBD on their ability to drag kind of multimodal AI into more parts of your existence, be it through a next generation glass or how Android evolves, how, you know, the browser becomes something more than a place to load pages and search a Google index. I think that Google becomes a more ambient part of how we live as opposed to just a set of tools.
+
+And I think that's their challenge because I. They, they, they're sort of in, in the middle of navigating disruption right now, and we've seen that there's lots of analogies, whether you wanna look at linear television to streaming or print publishing to digital publishing like Google is in the middle of this transition where were a very capable search index with a wicked monetization model and that model. We'll transition to something new. don't know exactly how they will insert themselves in a consumer's query, but we do know that there is an intense amount of economic potential in any query that people are making or that the energy that's directed at Google and that more of their revenue as we've seen kind of in a good, in a good way, in a surprising way.
+
+More of the revenue will come from people paying for ai, but there will 
+
+be a lot of people that don't pay for ai, and as such, it'll need an advertising model and no one, I think it's really hard for anyone to get on front of Google on that. Because, the kind of mode of having, first of all their technology, of having, relationships with literally millions of customers, of having a bidding system, of having all the algorithms.
+
+And so I think they're gonna lead at AI monetization with meta. I think that they're gonna find more ways to be part of what we do every day on account of ai. And I think that Google is gonna be kind of as or more dominant in the next generation than they were in the last
+
+[00:53:17] Brian: Okay, so you're, you've got, like, think Google has way more advantages than disadvantages. I mean I think the big one to me is, and Sundar Pcha had mentioned this was just as Google became a verb, know, Chatt BT has become synonymous. 
+
+It's being genericized in people's minds when it comes to AI answers.
+
+It's like how you get chat, bt I mean, the chat, BT colon is, is a thing. Alex and I talked about that.
+
+[00:53:44] Troy: so, so I think that that's a great point, and I think that consumers love the simplicity of a singular service. So Google a search, OpenAI is chat, and, and I think that if I was to take anything away from that, Brian, I think that the product challenge is the one that most beguiling for, for Google because they, their, their branding and their, their sort of product introductions.
+
+Right now it's, it feels very, very complicated to me. Like, what
+
+[00:54:15] Brian: Well it is.
+
+What's Gemini versus Google? What's kind of new search versus old search? What's this little abstract at the beginning of the page? What are these new things that are coming at? I don't know if you've seen,You mean Gemini 2.5? Are you talking about Gemini 2.5? Flash 2.5 pro preview or pre personalization preview,
+
+[00:54:35] Troy: Mariner. There's their multimodal model, 
+
+[00:54:38] Brian: but
+
+[00:54:39] Troy: called, I think it's called Atlas. So there's a huge amount
+
+[00:54:42] Brian: that's not VO three or notebook lm.
+
+[00:54:45] Troy: is a video editing tool with, with, and it
+
+[00:54:47] Brian: Yeah.
+
+[00:54:48] Troy: talk.
+
+[00:54:48] Brian: Yeah.
+
+[00:54:49] Troy: So, what I would say is, dominance from chips to compute, algorithms to products are very, very hard to displace. I think that they're moving more quickly. You have an agitated founder that's like in there coding with people. So you've, you've got, you've seen them at the last IO released a remarkable number of products, so many that it's hard to keep track of. And I think if they can get the piece right that is about a. Simplicity, product
+
+development, consumer adoption, that they're, you know, like a, a kind, almost unstoppable. we'll see what happens with their, like partnerships on the face. They're doing this thing with called Android xr, which is basically what I would see as a kind of defensive maneuver against meta getting, you know, one-upping them, you know, with glasses and I'm sure Apple will, will, will, will ultimately compete in the same arena. and, and, and Google's running at that. I, I, I think that the economic value of an AI dominant firm, or even one that has like 30% of the market is more than having 90% of search.
+
+
+[00:56:08] How the market views Google with AB
+---
+
+[00:56:08] Brian: ab you're here. tell me about the market, how the market views Google right now. I mean, it, it trades according to some AI research at ap, multiple discount to, to others in its field like, like 
+
+Microsoft, Amazon, or Apple. is this just the market, seeing the threats that it faces or what, what is the market saying about where Google is right now as a business? 
+
+[00:56:31] AB: I mean from a revenue. New perspective, search still continues to grow, right? So yes, AI is is eating away a little bit. people are starting to do more of their searches and get their questions answered in other companies products. But from a just like a market share and where you're seeing revenue growth, like they're still double dig digit revenue growth in the core business.
+
+And then they have built all these other, Subscription offerings and, and, and things in both the consumer side and the B2B side that are still really valuable businesses. So I think it's trading probably at, at a slight discount to some of the things that you referenced. 
+
+some of the things that you referenced. 
+
+[00:57:11] Troy: about 17 to 
+
+18 compared to like high twenties in its com competitive set.
+
+[00:57:16] Brian: That's quite a bit, isn't it?
+
+[00:57:18] AB: Yeah, I, sometimes, I I, I like to go off of, I mean, these, you know, you can reference a couple different multiples, but like EBITDA multiples is like, they're, they're still within their segment pretty closely. I think there's businesses like a, a Facebook that are gonna trade a little bit higher because people see.
+
+Because it's all about user intent, right? And I think that's where AI can really take the future of Google is like through ai, through knowing a lot more about you through memory and things like, that, you can continue to perfect intent and deliver the right advertising. 'cause the more you know, about what a user wants, you can charge more for the advertiser.
+
+I. and so, you know, you see meta meta trading at a, a better multiple because they're just growing a bit quicker. but I think Google's still a very dominant business and their growth rates are exceptional and they continue to take market share. I Sort of unique things, like the fact that YouTube premium and, YouTube TV are like hyper dominant is something that if you ask people in the traditional TV world with, that would be something that, existed five years ago.
+
+They would say no way. But I think Google has just done a really good job of bundling these different products together. I signed up for the I think one surprising thing is I signed up for, the more expensive. AI offering from Google the $250 and they're loop, they're basically grouping in a lot of products, Right You get YouTube premium, like you get all these other things and I think they, they just want to increase the attachment rate to other products as Well 
+
+[00:58:42] Troy: they're they're grouping premium in, YouTube premium in with that $200 
+
+AI product.
+
+[00:58:47] Brian: not? 
+
+[00:58:48] AB: at a $250. Yeah.
+
+[00:58:50] Brian: all kinds of things. it, what I interested in Alex of poo-pooed a little bit, but he's not here 
+
+anymore. was whether this ends up being a little bit of a shift away from advertising for Google. I mean, a lot of what you're doing is you're renting compute at the end of the day, and I don't know whether I think Google's gonna always have like a massive advertising business, but this seems like an opportunity and it seems like just this area is moving more towards. Yes, advertising 
+
+but also these,
+
+subscriptions. 
+
+[00:59:23] AB: the trick that media has employed, which has worked, you know, successfully for a very long time, starting with newspapers, is you. Deliver a product to consumers that is offset significantly by advertising. So, you know, when newspapers were running super well, 80% of. the revenue was from advertising. And so if you frame that of like why Google has been such a. sticky product for so long is they built this amazing advertising engine that allows them to deliver a, better search product than anybody else can. And, so I think the the AI experience that wins in the future is have you. I think as soon as you start to toll consumers, it's gonna cause friction to the point of requiring robust advertising to be included in the searches.
+
+Consumers want help finding products, and, as the provider of the information, you're always gonna have an opportunity to sort of step on the scale and push people in certain directions. So I, think advertising is gonna be fundamental to the future of ai. 
+
+[01:00:23] Troy: right and, and I think that that what we may not have appreciated way back, Brian, is there's essentially two ad companies in the world now, maybe three, and that's meta Google and Amazon. And they all have a level of sophistication that no one else can achieve. The remarkable thing about Meta is they're able to turn kind of browsing into intent. The remarkable thing about, you know, Google is their, you know, auction system and what they've done with algorithms and the fact that they own the biggest, video platform on the planet. And, you know, Amazon has distinguished them themselves in retail and now fast, you know, a fast growth video business. So. You, you know, I think Alex is right, that those are really, really, that advertising is a vitally important part of its future. But to this point, people are people, you know, we, we are, because we shop, we, we, we buy things. And, you know, I think what you'll see is the next generation of Google advertising will, will be even more complex than the last meaning. Like you'll, you will have, will offer retailers the ability to let you to virtually try on clothing. They will take more and more of the 
+
+affiliate layer because they'll stand between you and a transaction. They'll take. you know, money from from that will continue to take money from travel companies, from car rental companies, from people that rent houses, from people that sell, financial products and insurance and like they are, they will be the ones that are sort of increasingly at the, the sort of toll booth to any
+
+[01:02:13] Brian: Hmm.
+
+[01:02:14] Troy: opportunity.
+
+And it's just, I don't think AI's gonna end that
+
+[01:02:18] Brian: No, no. It's gonna, I think it's gonna accelerate that. Right? And I think that's, so I'm not worried about Google. I'm not, I think they're gonna be fine. That's my contrarian take.
+
+[01:02:28] Troy: be
+
+[01:02:29] Brian: And, but what I'm worried about is, and I'm worried, I, I'm, I'm worried for everyone who is downstream of Google, which is pretty much, you know, 99% of, of the companies out there.
+
+[01:02:39] Troy: than I used to be.
+
+[01:02:40] Brian: Okay. Gimme the case for not being concerned because it seems to me very clear that Google's interests are diverging from, say, publisher's interests completely like they're not it.
+
+[01:02:51] Troy: no, no, no. I, there, I agree. It's over. It's just over. That distribution model is coming to an end and that ad system is coming to an end. I mean, even look at
+
+[01:03:01] Brian: Explain that that was,
+
+[01:03:03] Troy: a publisher? No, I think that like the old days, your economic value will be the number of direct intimate connections you have with the market, be it any number of connection points, print, email, physical, you know, people coming directly to your, to your website. And I think over time there will be ways to monetize intellectual property via ai. So there will be a system that will slowly evolve that rewards creators, that ultimately feed the aggregator. That is ai 
+
+Now, now I think that if our mental model for the internet was pages, the future of it is more like everything is personally created by an algorithm. And it's a series of databases and a lot of it is not even seen by a human. It's navigated by a robot, by an agent. And if you just,
+
+think about like the complexity in the ad world that is in, you know, that is forthcoming, it's like how do you even tell someone who's buying advertising from you? What is human and what is bought? Because 
+
+increasingly remember like half
+
+[01:04:12] Brian: Yeah, it's impossible.
+
+[01:04:14] Troy: on the internet are gonna be bought related.
+
+[01:04:16] Brian: It's everywhere. Like I, I even the cl the click data, I can't give click data to, to advertisers and newsletters.
+
+[01:04:23] Troy: I don't know
+
+[01:04:23] Brian: It's all bought.
+
+[01:04:24] Troy: right, it's a mess right now. I would say that the entire system of, that we kind of grew up with, of. Kind of banners and, you know, anything that's page related advertising is, is in a lot of trouble. So it's gotta be transactional and it can't be about viewing something on a webpage.
+
+That's all gonna change. And the way that publishers, I think, you know, Neil's right? It's Google Zero. it's it, you will still get dribs and drafts from distribution points, but it won't be 60% of your traffic coming from Google. That's over. Now, will the world and content creators slowly re, re regenerate and kind of, and create a new, like a new equilibrium?
+
+I think they will, I think they'll find a way to do it. So what we're seeing back to the beginning of the episode is there's gonna be a lot of roadkill through this transition, 
+
+and it'll be people that were sort of page dependent, like the bis of the world. but, but you know, people still want content.
+
+People still make content that people will find a way through. You'll be fine. 
+
+[01:05:23] Brian: Okay. 
+
+[01:05:25] AB: let me, so let me play it. I think Google will be okay, in the near and medium term, but let me just play it the other side of it. So. the, I think what was amazing about Google at the beginning is they had one thing to perfect, which was search, and then they added all these other things on to the consumer experience to add value.
+
+Today when they do their IO announcement and they release their AI products, like we, can't list, we, we throw out all these random names that are coming from all these different groups in Google And, they're basically having to satisfy the demands of like 10 different product teams. Right. So what's happening? 
+
+[01:05:59] Brian: or the 
+
+old 
+
+kinds. Before. 
+
+[01:06:00] Troy: Yep. 
+
+[01:06:01] Brian: Before now.
+
+[01:06:01] AB: Yeah. people who win now, it, it's gonna be based on who, who has a direct connection to the consumer with an ai, uh, with an agent resource, right? So the way that we interact with AI today is not gonna, is not going to have, is, is not going to be the future, right?
+
+It's gonna be in, in, in much more of like an agent where you tell it to do something and it goes and does it for you and comes back later on. and I think that the one place where OpenAI. Has an opportunity to really lead here is they don't have to worry about 10 product teams, to satisfy. hyper-focused on getting consumers to sign up and do the AI experience. And that's, the goal, their only focus. And so I think That's the one way where they can gain market share And, start to displace. Google is, like their co core focus is that, and not satisfying 20 other teams around Gmail and all these other products.
+
+because ultimately it.
+
+is it, it becomes like a pretty winner take all marketplace, I think for some of these platforms where if you have the flywheel of delivering consumer value. you get more people using your product or service, um, you can continue to lean in on marketing And all these other things that makes it more efficient in a more valuable business.
+
+So I think that's the one place where Google might struggle and might start to lose market share significantly, is just this
+
+that they're having to service of products that they're having to service and come up with AI solutions. Like what's crazy today is you can't go to any of Google's AI products and say, build me a Google sheet with this.
+
+Like with this data, it just doesn't exist. Which is which is crazy to think, but then you go, oh, well, the reason why that's probably an issue is because the product teams don't talk to each other. So the person building the basic chat, GBT replica doesn't interface directly with the the Google Sheets team.
+
+Right. And so there's a little bit of friction today I can ask. Open AI to make me a Google Doc, or sorry, a a Word doc or an Excel. I can, it can help put these things in, you know, 15 seconds. But, either Sergei helps harmonize the teams And so they're focused on a couple things. or I think chat, GT and OpenAI continue to take market share. 
+
+[01:08:13] Brian: the zone with stuff like, I mean, there's just a ton that's coming out and it's, it's incoherent at least to, I, I don't know. You would have to like, just spend all your time studying this. I mean, as a normal person, like, I don't know how anyone could understand just the velocity of things that are coming out,
+
+like of, of Google and it, it, they're all over the place.
+
+I still don't understand why Notebook LM is different from Gemini. Like what? Like what, what are they doing? Just make one 
+
+thing. 
+
+[01:08:41] AB: I mean, the counterpoint is most
+
+most consumers are not reading and digesting all these like news releases And stuff like that They're just continuing to Google, and so you could s. The counterpoint is like, look, they're just gonna add it to Google search, make Google search better. They're gonna add it, to, you see it in Gmail today, right? the auto complete and things like that. And so there are ways for them to win and still have this mass confusion around all these different model releases by just including it. 95, 90 9% of, consumers are just using the stuff in very basic ways, and they don't, they're not creating videos and things like that.
+
+And so they, that they don't really necessarily need to win there. They're flooding the zone with innovation. to get people to talk about it, but the core consumer is just happy to have a better product to use. 
+
+[01:09:26] Troy: It is a good point AB and if you look back to the search wars 
+
+where there were, help me here Brian. We had excite Lycos Yahoo,
+
+[01:09:35] Brian: Dogpile got mentioned earlier. Don't forget, Dogpile met a search engine 
+
+[01:09:40] Troy: Google was, was 
+
+[01:09:41] Brian: one. They had a, they had a sweepstakes every day based on the number of searches you did. 
+
+[01:09:46] Troy: Google was faster, simpler, and it, took the entire market. 
+
+[01:09:52] Brian: Sweepstakes didn't, didn't end up being a killer app
+
+[01:09:55] Troy: I
+
+[01:09:55] Brian: for search
+
+[01:09:56] Troy: there was nothing. They took it all. And it'll be interesting to see how much of the market OpenAI takes. I suspect it will be much Less 
+
+[01:10:04] AB: you can sort of say maybe Google has a moat because They have all this Gmail data And things like that, but I th. Google can't restrict OpenAI from scanning all your email, otherwise it becomes an antitrust issue. Right. And so some of the different data, data feeds that Google has today that it can leverage, I think become pretty generic across the board because you can just tie everything with in with a couple clicks. 
+
+[01:10:29] Troy: But, but I think the key difference is, is that was an entirely new behavior and there was no precedent for it. So everybody started using Google and they never look back. you know, everybody uses Google and they're now introducing a product and the problem, they, and they're put, that product if you use it, is really good. 
+
+their, their, their, their 
+
+chat competitor is really good. I think the biggest problem is, is bifurcating, the use case in the mind of the consumer between searching 
+
+for something and chatting is really a hard product problem. It's a real hard place to be, Am I there to go find a website or find something?
+
+Or am I, am I there to interact and go back And maybe, maybe that's just me. I think of Google, like I think when I wanna, I want to do research or deep research or interact with a chat bott, I go to chat Two. Two, when I wanna find something the web, I use Google,
+
+[01:11:26] Brian: Yeah, that's the brand. That's not I'm, I, I feel like a lot of these companies move from being product companies to being distribution companies and that like you, I mean, apple, that, that was sort of my takeaway from our Apple episode in that 
+
+they sort of moved from creating great products to just using their distribution to build an amazing business, which is fine. There's room for both. 
+
+[01:11:46] AB: one interesting thing for me as I use this technology more is that it starts to reframe, like how much You rely on them and how much you trust them. And so you start to ask question, like, I went to a concert over the weekend and I. I asked it like, sort of like a multi-step question, which was like, I'm gonna this. concert at seven o'clock.
+
+Where should I eat before, at the venue? Like how do I get, where should I stand? Like, and it was like a much better thought partner to me. And I don't know if I would've known that question to ask a couple months ago, but you see the relationship that you're building with this technology getting stronger and like in a much more personal way. Which I think lends itself to even strong because you're gonna trust it more. Right. and so it, can drive you to these, right? Like, that's where I think advertising becomes core. So in the all in interview that Sundar did. One interesting thing that I was, I found 
+
+surprising is they, they'd mentioned this idea of like a, holding company and he said, we're not a holding company. And I think when you look back at like media businesses, they effectively became holding companies, right?
+
+They own different types of media companies and there was like value in, in adver sharing advertising and, and shared services and things like that. I think as you've seen, I think Apple has a bunch of different lines of business, but both. Alphabet and meta have tried to turn on other business units, but they've never been able to replicate even at a small percentage. the core business they have. It's like the power of these digital platforms is just completely in a different dimension than what we saw with media conglomerates of the past. and I was surprised when Sendar basically pushed back on this idea of a holding company, because that's, I think, why they moved to the alphabet. 
+
+[01:13:30] Brian: the name then? Well, this is a, this is tangential perhaps, but Why did meta stick? But Alphabet Not nobody uses an Alphabet Everyone just says Google, but people use meta.
+
+n.
+
+[01:13:41] Troy: Alphabet was only ever a brand for Wall Street. 
+
+[01:13:44] AB: People were getting a little bit frustrated by some of these bets that they were taking. And so by separating it out, they were able to show the value of the core business and then extra like take out all these other bets where they were just investing capital.
+
+I. 
+
+[01:13:58] Troy: I think the Sendar thing is. Google is an AI company, and as such, it's kind of singular. Now can they figure out how to manifest AI in ways that we all use it? And I think that's the, the, the big, the big thing that we'll see. I remember though when we decided To, accelerate progress in digital in the publishing business by splitting out digital in print the people were different, the processes were different, the product was different, and we needed to have different competencies.
+
+eventually they all came back together. And I think what, what has to happen at Google is, 
+
+you know, they're going through the same thing like the search team and the AI product team ultimately need to create one product and that's gonna take some time. 
+
+[01:14:49] AB: Yeah. I think the, the benefit, and this happened at media companies too, where you had these. a B structures, the Google founders still control the company, right.
+
+Facebook, same thing. Mark still controls the company and so se Sergey made this in the All In interview, he made this comment about how there was an internal document, which I.
+
+Basically would not allow coders to use some of the LLMs to help on the coding products. And he's like I saw that and we instantly like, I was like, you know, what the fuck is this? Right? Like, why is this, why is this a restriction? And so I 
+
+This is to why Google,
+
+can stick around is you have founders who can go in there and basically say, guys, you know, what the fuck?
+
+Like, let's make this work and let's go fast here. And I, I think that's a unique thing for such a large company.
+
+Most of the time the control, even when founders are still involved, is allocated to the board and things have to move slower. but with both. 
+
+alphabet and meta, the founders are still in control and I think that's really important for this next phase.
+
+I.
+
+[01:15:53] Brian: Okay, should we wrap it up with good product?
+
+[01:15:55] Troy: try. 
+
+
+[01:15:56] Good Product
+---
+
+​
+
+[01:15:59] Troy: it's certainly not gonna be optimum. The providers of fiber to my place and it, has gone down twice in two days, disrupting our, our podcast.
+
+[01:16:08] Brian: Put an optimum on blast.
+
+[01:16:10] Troy: what is fun in Shelter Island is the dump is great. It's kind of a social experience. Everybody goes to dump you chitchat with people.
+
+You put your stuff in the glass or the plastic. I like that. There's also another thing I've noticed to coax 
+
+people in early, and now this is gonna sound like I'm getting old, but if you go to dinner six, you can get a kind of a 
+
+happy meal for 40 bucks. Like if you go to
+
+[01:16:35] Brian: That's a great deal
+
+[01:16:36] Troy: No,
+
+[01:16:36] Brian: in 
+
+in shelter.
+
+[01:16:38] Troy: like a salad, a main course, and a dessert. Because if it, if you weren't there for happy hour would be like a hundred bucks. That's nice. But you know what is a good product? No, you know what is a good product? And, and again, this will take us back to the early internet days, is Chewy. Do you know Chewy? You don't have a dog, do you? 
+
+[01:16:56] Brian: I don't have a dog, but I know Joey.
+
+[01:16:58] Troy: to go get a 40 pound bag of dog food. Nobody. It's not a thing. And you know, chewy is an incredible e-commerce thing. One of the things that I've noticed about it is their cross sells work. Every time we order from Chewy, we order a bunch of dog toys. So not only do they sell the dog food, they deliver it wherever you are. You don't have to carry it from the store. they also end up selling you squeaky balls.
+
+Andremember the first big internet blowout was what? pets.com. You remember the sock
+
+[01:17:29] Brian: Yeah, sure.
+
+[01:17:30] Troy: It worked in the end and it's called Chewy It's amazing.
+
+[01:17:33] AB: Customer service for Chewy is really good too. 
+
+[01:17:36] Brian: All right, chewy. 
+
+[01:17:37] Troy: Sunset Beach is open for the season. 
+
+[01:17:39] AB: I'll come out there.
+
+[01:17:40] Troy: So, we look forward to having both of you.
+
+[01:17:43] Brian: Anyway, that's the episode.
+
+[01:17:46] Troy: Thanks Brian. Thanks for
+
+[01:17:47] Brian: Thank you.
+
+
+

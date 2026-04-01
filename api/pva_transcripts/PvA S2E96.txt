@@ -1,0 +1,833 @@
+PvA S2E96
+===
+
+[00:00:00] Alex: 
+
+[00:00:00] Brian: Troy, how are you at context switching?
+
+[00:00:02] Troy: I'm so good at context switching that I'm bad at holding a thought. Well, it's sort of like I can be, stream of consciousness. I can shift context too much. you know, I'm hard to follow sometimes. What do you mean by context switching,
+
+[00:00:16] Brian: I mean like I'm focused on, on writing or reading something. And then all of a sudden I have to go and go into sales mode or client service mode, and then I got to go 
+
+back to 
+
+[00:00:29] Alex: Yeah, I think that's different. 
+
+[00:00:30] Brian: that's not context switching. 
+
+[00:00:32] Alex: I think that's different. I think when you're switching between,some people call it deep work, and other types of work, that's harder. I think what Troy is talking about is like he can switch between topics very quickly and, turn different parts
+
+[00:00:44] Brian: I'm a, I'm a podcaster. I can do that.
+
+[00:00:47] Alex: You're a professional podcaster. 
+
+[00:00:48] Brian: Professional podcast.
+
+
+
+
+[00:01:12] Episode start
+---
+
+[00:01:12] Brian: Let's get started. so I think the big, the big thing I want to start with is, Google, has been ruled to be a monopoly. the M word, has been used by a judge, said Google is a monopoly in search. to me, this, this falls into calling a spade a shovel. but it's going to have gigantic implications, right?
+
+Like I, Troy, are you an expert in the Sherman Act? Can you be during this episode?
+
+[00:01:36] Troy: Just a minute, I have to context switch.
+
+[00:01:38] Brian: It's just like, if you could just give us an explanation of the Sherman Act, that would be great. but look, I think that the important thing is, is over the years, Google has obviously grown to dominate this market. It's had a stranglehold, et cetera, et cetera. And it, it is a de facto monopoly.
+
+and now they're going to side on remedies. This will be tied up in the court and then coming in the fall, The Department of Justice has another case against Google's. Quote unquote dominance, quote unquote stranglehold of, the ad tech market. And I think these things taken together, lead me to wonder if we are seeing, if not a replay, it certainly hearkens back to the 1990s and what Microsoft went through with the government and, it's bundling of internet explorer.
+
+there seems to be a lot of echoes to that. Troy, how do you judge this? Is this a big deal? Small deal? Whatever.
+
+[00:02:32] Troy: Well, I think it's compounded, so it's a big deal. we've talked about
+
+this inflection point where, new technology is creating opportunities for people to.
+
+Create search, search, like experiences that rival Google's utility, which means that they're facing pressure on a product level.
+
+And then if this essentially limits their ability to use their. economic power driven by network, by scale, essentially to lock up distribution points, which is, would be the big consequence of this, i. e. they can't write Apple a 20 billion check anymore to guarantee their position on, on Safari and on phones, then it creates more opportunities for competitors.
+
+Now, having said that. the unbundling of sort of Microsoft and, Explorer literally changed the evolution of the internet broadly, I think, and probably to good end. through a process of, you know, of appeals, these things tend to take a long
+
+[00:03:36] Brian: Yeah, but let's let's go back to that. when those court cases remember the bill gates like deposition where he was rocking back and forth That was always weird they tied microsoft Microsoft up in this litigation It was seemingly the focus of the company that was like during their you know downturn and it provided an opening for Guess who?
+
+Google to come in and run the tables on, on search, really, under Microsoft. Microsoft lost its,its edge there, and ultimately allowed Google and, and others to, to come in. Alex, I'm wondering, is this Is this a notable sort of shift when it comes to, the dominance of these tech platforms?
+
+Because this is, this is a long time coming with
+
+antitrust, catching up 
+
+to how these markets work, because let's be real. I mean, these markets coalesce into call it dominance, call it stranglehold, call it a monopoly. They seem like this seems like a feature, not a bug of a lot of these technology markets.
+
+
+
+[00:04:42] Alex: it's going to be hard to, understand the repercussions, but it feels different to Microsoft because the remedies could be so,Have so much splash damage, right? So so if the most obvious remedy is that Google is not allowed to make any of these deals anymore it doesn't just open up competition.
+
+It changes the way it changes Apple's calculus as to whether or not they need to build their own search engine, because chances are, if it's just, Hey, you got to let people choose their search engine. People will still choose Google. So that wouldn't, I don't think that would make a massive shift. People like the product of Google.
+
+The European stuff really hasn't, the EU forcing, a selector in, in front of browsers, et cetera, still has people choosing Chrome or Google search engine, but it will force Apple to start thinking, well, okay, now do we develop a search engine? Because we don't want Google there and just not make the money because that could be a, the, the, one of the remedies could be Apple just still has Google on there, but can't make money.
+
+And then there's big repercussions for small player. Like, I mean, nobody really cares about. Mozilla or Firefox anymore, but it's the majority of their revenue right now and that could disappear. 
+
+[00:05:52] Brian: it's good. It's disruption. I mean, Silicon Valley is always preaching about how disruption is great when they're visiting this upon other industries.
+
+[00:06:01] Alex: I'm super happy about it. 
+
+[00:06:02] Brian: and now, 
+
+[00:06:03] Alex: yes,
+
+[00:06:04] Brian: and now disruption is coming home. So I'm excited. I'm very excited.
+
+[00:06:09] Alex: I can guarantee you that most people that do not work for google in silicon valley might not say it but they're all happy They're all happy for this ruling because it shakes things up. Whatever it does. It shakes things up
+
+[00:06:19] Brian: Yeah, volatility is great to make money in. And I think having a more diverse search market, when we look at AI and then you look on this, this is going to tie Google up completely. And it's, they've shown across so many different areas that this is not. This is not the Google of the past. they can make so many mistakes with that business.
+
+It seems like they can make so many and still maintain a massive advantage over so many other people. One of the things that really, struck me was how this really came down to the fact that, that they're funneling 20 billion a year to, to Apple. because the defense of Google has always been, that A better search engine, a choice is one click away.
+
+They've been using this from the get go. Okay. And then there's always that question of, well, if that's the case, if you're just winning because you have the best product, why you got to cut this check? And for Apple, like I totally get it. Why even go to the trouble of building a search engine where you can just take 20 billion a year?
+
+I want those kinds of deals.
+
+
+[00:07:21] cut
+---
+
+[00:07:21] Alex: I mean, there are two reasons, right? There's one because. Google understands the power of friction, the power of like just one step between something is worth billions of dollars, right? So so one click away is essentially saying It's behind a locked door, you know It's it's it's crazy that they would say that because they know that removing a click is is is worth billions And number two, I think they were just paying apple not to develop their own because that was the only other option Apple wasn't going to put bing on there, you know You 
+
+[00:07:52] Troy: Apple and sell to the world, because was the only other option. 
+
+[00:08:11] Alex: and
+
+lose the, the,
+
+[00:08:13] Troy: No, it's pretty freeing to not be in the ad business. The
+
+ad the, the the privacy thing and advertising is full of
+
+[00:08:20] Brian: Yeah. Yeah. You can't be user first and be in the ad business. You just can't.
+
+[00:08:26] Troy: You know, one thing I was thinking about, I saw this, YouTube video on the new. Google office that was built on top of the terminal on the west side, and it's literally like Professor X's, studio for gifted children children with special abilities. the amount of money. I mean if you think about The financial spigot created by a business that is just fundamentally as efficient as search is.
+
+You actually, and this is true of meta too, you have to find ways to spend money. Otherwise your margins will be so unnatural that it's a signal to everybody that you're a monopolist. And so then when you see their offices, You're like, I mean, I always used to joke about the crab legs at headquarters in, in, in, in Northern California, but it's crazy how much money they spend.
+
+to create environments for, for, for their people, like they, just the amount of money, even yesterday they committed another 5 billion to Waymo.
+
+but I mean, there's, there's all kinds of, of places where they tuck money away to really obscure the fact that they are a kind of non linear monopolist that have succeeded in creating the best mouse, most trap of all time.
+
+[00:09:40] Brian: But, I mean, this was brought to the home, I mean, did you see the character AI? I mean, it was an aqua hire, it was like a 2. 5 billion dollar aqua hire.
+
+[00:09:49] Alex: let's go through that I mean, that's been, that's been kind of the playbook to avoid any scrutiny as to just by these companies and Character AI was this strange, AI virtual avatar company actually created by somebody some an ex googler who's quite respected and who wrote the the original paper, 
+
+[00:10:09] Brian: clearly, he's gonna be respected on his yacht in the Mediterranean.
+
+[00:10:14] Alex: Yeah. and the character AI stuff is funny because it, it was seen as one of the early AI hits, creating all these characters that can respond to you. I've always found the product not very impressive. It's, it's, it's very wooden. And most people use it for sex stuff anyway, so turns
+
+out, 
+
+[00:10:31] Brian: roads. 
+
+[00:10:32] Alex: all roads, but turns out there wasn't a lot of money in there considering how much things were costing, yeah, it's funny how we throw these numbers around now and it nearly seems like normal over 
+
+[00:10:42] Brian: Yeah. I was like 2. 5 billion or 25 billion. It could have been either. I would easily do that. But that's like and the, the, the funny thing to me about Google having covered it over the years is this is not a new playbook. So in the previous era, Google did not, I always like to remind people like Google did not, invent paid search.
+
+Okay. Bill Gross invented it at Idealab. He started a company that eventually got called, Overture. And they were the first, paid search player, but they didn't really have a search engine, right? They bought some like,past
+
+their prime search 
+
+engines. Right. So what, what Google did, well, they, they syndicated their search listings, right?
+
+What Google did was they, They built a slightly better ad system because they were doing click through rate and, they were doing price, the price bid. And that, at least in theory, created, a virtuous cycle where the better ads would actually have to pay less and then people would get better.
+
+And Google was like, Oh, it's all about the user, et cetera, et cetera. And they were making so much money off this. They had so much leverage that they went to AOL and they cut, Uneconomic deals for distribution because AOL was dominant at the time and I remember the people from Overture would always be like calling me and being like, we can't compete.
+
+We can't do these deals. They don't make any sense whatsoever. And they're just trying to buy as much market share as possible. And they're just cutting all of these deals everywhere. Well, they just did the same. playbook they've been running. And it's just, it's just the fact that they're. I guess have been too successful in some ways because it was fine before this stuff was all done in the open.
+
+[00:12:20] Alex: the Google ruling is actually quite simple. It's just the issue is not that they became a monopoly by building a really great product is that they just paid to maintain it. I mean, I think even paid,
+
+[00:12:30] Brian: But wait, wait, wait, they, they got that monopoly by doing that. They got that monopoly by making it impossible to compete with them. Overture ended up being getting sold to Yahoo because they could not compete.
+
+[00:12:43] Alex: Right. But the way, the way I read it, I don't know if, I don't know if you guys read it the same way is that it's fine. The way they got here is fine. It's maintaining it. Once you're in that monopolistic position is paying to maintain it. I mean, that's, that's where the Sherman Act seems to really hit.
+
+Right. Which is like, You know, it's capitalism. And then when you're at the top, though, the rules become slightly different. because, like the game of Monopoly, it's a little bit broken and sometimes you have to bend the rules to keep it fun. 
+
+here it's, once you 
+
+get to Monopoly, it's pain to maintain it.
+
+That's the problem. So if you're DuckDuckGo and you want to pay 10 billion dollars to Apple to get on there, that's fine. But if you're, if you're Google, that's not fine anymore. that's where I think it landed and I'm okay with that. I think it's kind of clean to say that, 
+
+[00:13:30] Troy: that can't be the remedy, Alex, I don't think that someone can participate in a distribution deal in Google's block from it. There has to be something more clever than that. 
+
+[00:13:40] Alex: we don't know. I mean, that's, it seems to be heading towards that basically. I mean, if you're a monopoly, you can say, because that's what's happening to Microsoft. Right. So, so do you remember the CrowdStrike thing, right? Microsoft. in its position,was basically forced to give access to its, to, to some of the low level systems because,because of some rulings.
+
+Other operating systems like Apple do not have to do that because they weren't the dominant player. So the rules do apply differently if you're, if you're a monopoly dominant player to another. So it could, whether you disagree with it or not, I think it's a pretty standard way of doing
+
+[00:14:18] Brian: I think that the days of laissez faire tech are over. I mean, it's going to be, it, the governments are, are already, this, this isn't going back.
+
+[00:14:25] Alex: I mean, it went for, it went on for a while
+
+[00:14:27] Brian: Yeah, that was good times. Forget about the, you got to get in under with the illegal, like, hotel operation. That was a
+
+[00:14:33] Troy: there's another broader kind of meta story here and I guess one could characterize it as the fight for the middle. I'll tell you why in a sec. You might characterize it connecting What you just said about the aqua hires at 2. 5 billion dollars they sort of like leverage of Society and technology's new high priests and how much they're compensated for that related to that I think it's really interesting.
+
+There was there was an article in 404 media aboutthese sort of cottage industries of Facebook meme and AI creators,that fight for, for scraps in terms of like,getting paid for likes on Facebook and then the industry that sits above that, that sells guides as to how to, deploy different tactics to, to, to build viral pages on Facebook.
+
+Then there's an industry that's on top of that, which is providing you software to be able to manage a bunch of and deploy content to, to, to, platform pages. And it's really interesting, right? You've got, the platforms and the high priests and the AI overlords that make nonlinear amounts of yacht money.
+
+And then you have, cohort of people like scrambling to earn rupees in India, creating a I content that feeds the platforms. And then you've got this kind of massive upheaval in the middle of people in media living as you always say, Brian in Fort Green, trying to leverage, unions or whatever kind of economic power they have to just hold on to something in the middle.
+
+[00:16:08] Brian: Yeah.
+
+[00:16:08] Troy: and this is the sort of architecture of our, of our modern, media world.
+
+listened to this podcast this week that, I thought you guys would, and Alex would have a point of view on it. And it was, Taylor Lorenzo's podcast.
+
+And it was about. How new media companies or people that are sort of enlightened in Hollywood understand that all IP will come from basically YouTube and that there was this this story about this brand that, 
+
+
+[00:16:39] cut
+---
+
+[00:16:39] Troy: I think, by the way, culture reporting or media reporting often ignores what's really going on in media because it's so hard to put your finger on And there are those people that try to decode it for us the ryan brodericks of the world the taylor renz's of the world 404 media does a pretty good job of it.
+
+Sometimes charlie warzell from atlantic does
+
+but it's 
+
+[00:16:57] Alex: we do? 
+
+[00:16:58] Troy: Well, you know, I think I I don't think i'm actually that I I don't know if i'm that good at it actually But it's about this this media brand that's emerged on youtube. That's massive called skibbity
+
+[00:17:07] Brian: Yeah, I never heard of it.
+
+[00:17:08] Troy: And you've never heard of it yet.
+
+If you look at the consumption of the videos on YouTube, it's like massively popular, massively mass. And not only that, it's super popular because it extends into gaming environments like Roblox. And,this person who used to be the CEO of Paramount, I forget his name, it was like, we, we signed a deal with these guys, just like we did, a decade ago with Transformers because we see,this is being, a massively, massively important as a new source of IP.
+
+And,I, I don't even know if executives in the media world really understand what's going on out there. And it relates to the importance of platforms and creators and the importance of gaming environments and All of it is not really kind of absorbed by the kind of, media buying industrial complex, the way that, you know, it's just like the understanding of how the world works is not caught up with reality,
+
+[00:18:05] Alex: It's going to be interesting to see how the Skibbity stuff works out and just if anybody doesn't know, it's. It's essentially like stock 3D assets that were used to create a, a meme essentially, right? Of a head that pops out of a toilet, and, and sings a song and it's catchy and it's, it's funny.
+
+and
+
+kids have, 
+
+[00:18:23] Troy: also narratives, right, Alex,
+
+like they, you know, 
+
+[00:18:26] Alex: I mean, the narratives are very kind of meme based, right? It's just, they did the first one and then it expands and it expands and expands, and, and it turns into this giant battle. There was no, the thing you see a lot with meme content hitting,where, people just try to create more and more videos.
+
+In this, in this case, he's created something, or she, I don't know, created something that, that was a big hit with kids. Now, what I think is going to be interesting is that,people felt it was crazy when the Transformers franchise was bought to turn into a Hollywood movie. But if you look at kind of Old media and a connection to toys and TV.
+
+All of these things were like a big Venn diagram. They were quite connected, narratively. you could, you could squint and see those things existing on different mediums, like go move from TV to movies, movies, to TVs, movies, to toys. Like we've been experiencing with this the whole time. When it comes to like very online meme content, we have no idea if that thing translates to the mediums that those Hollywood execs think that they can make
+
+money on. 
+
+That stuff is existing on YouTube and Roblox right now. And, and I have not seen a thing like move from that space to another space. So that's going to be
+
+interesting. 
+
+[00:19:38] Brian: isn't it inevitable? Cause one of the things that I want to talk about is, is meme culture, right? so memes, I always struggle with memes. I'm glad GIFs have, have lost their steam. Cause I hated GIFs. Like they, they were like,
+
+to 
+
+me, the digital, they're like the digital equivalent of puns.
+
+They're the lowest form of humor. they're the bottom of the barrel. memes run the internet now, and I was actually, you didn't listen to it because you have Elon derangement syndrome. I listened to like about an hour and a half of that, like eight hour, Lex Friedman podcast, about Nora
+
+link. 
+
+[00:20:10] Alex: me. I'm sorry. I have to interrupt you there. I don't have the derangement syndrome. If I am the one who chooses, who chooses not to listen to Elon and, and dr snooze talk for what? Eight hours.
+
+[00:20:24] Brian: well,
+
+[00:20:24] Troy: no. They didn't, they didn't talk for eight hours.
+
+[00:20:26] Brian: no, they didn't talk for eight hours, but look, Twitter is, X, whatever, is suing,a bunch of advertisers for not advertising on, on X, which is, is going to be a novel legal argument. we'll see how that goes.
+
+But one of the things that, that struck me with me, he, he had said that like, they're actually a complex media format that you can actually pack a lot. of information, their information dense, like media formats. And I never really thought of it that way. And most of them I'm like, Hmm, these are more closer to like fart jokes than, than, sort of dense media formats, but I could see what he's saying.
+
+And I think the power of memes. When you look at the presidential race, like I looked at like Kamala Harris and I was like, okay, she ran for president and got effectively 0 percent of the votes. And now all of a sudden, she's going to be running for president and win it. And it just, like a few years later, just seems unlikely, but the media environment has changed quite a bit.
+
+and generationally, I think there's obviously been a big shift even in four years, but she is riding mean culture in an amazing way. the memes keep coming, and she hasn't, given, like, a substantive interview, and she might, just ride the 
+
+[00:21:36] Alex: substantive interview. 
+
+[00:21:38] Brian: And then you look at the
+
+[00:21:39] Alex: must have, like, she must have just lied to Memes have been around forever. It's just the distribution that's very
+
+[00:21:48] Troy: But is meme a flat image? Or is a meme a person doing the Kamala TikTok
+
+[00:21:54] Brian: I think it's 
+
+both. 
+
+I take an expansive view of memes.
+
+[00:21:58] Alex: Well, no, I mean, a meme is, It's a way of cultural transmission. The format doesn't matter. It can be a GIF, it can be a video, it can be, there's audio memes, there's text memes, there's emojis. I mean, I think what we've figured out with the internet is that there's many ways to, to send a single kind of small unit of something that we put out.
+
+It used to be a little poster that you drew on, right? It used to be, do you guys remember? There used to be a little, drawing that Kids used to put, that actually started in World War II, 
+
+[00:22:27] Troy: it was a World War II meme called Kilroy was here. It's a very simple drawing of a guy with his nose sticking over. over a wall and holding things. You've seen it everywhere. and it represented the presence of like American soldiers and it became a thing that people carried around with them.
+
+[00:22:43] Alex: Then kids started using it in their books. you started seeing it as graffiti. If you, if you look for Kilroy was here, I'm pretty sure you'll, you'll recognize. So it, it was a meme back then. I think right now it's like distribution and what GIF files allowed us to do was contain in a single file that doesn't require a specific player It could just be played in a browser or an irc a little loop of animation and a little bit of text on top of it that could be contained in a single file As we've developed these things, they're becoming,richer and richer because now they're video files, etc.
+
+And I think there's more distribution. Elon is not saying anything particularly intelligent. I think that's a pattern I'm noticing here. It's just, that's, a meme is a cultural transport. It's been around forever. we'll see if it, Changes, I think fashion and trends changes and, and taste change.
+
+But, I think the meme is here to stay, has been around forever.
+
+
+[00:23:38] cut
+---
+
+[00:23:38] Troy: when you say that he's not saying anything particularly intelligent. I think he says actually a lot of things that are intelligent, but that's not an argument I want to get into. One thing I've always wondered is, with guys like Elon and Trump, it's less about what they say and more about the issues that they pick.
+
+And, and where they decide to jump in and, and then sort of agitate in unpredictable ways. So, why did Elon decide to, pick on the Venezuela issue? On the, on the McGurk illegitimacy, uh, election thing. Why did he decide to, jump in on the UK riot issue?
+
+[00:24:19] Alex: I think you're applying too much intent there. If you actually look, yeah, it's not, it's not that, I think what happens with Elon is that Why did he decide, why did he choose this? He's a machine gun. If you look, he's decided to do everything. There's, he's talking about everything right now. Anything, trans kids, to books, to calling a civil war in Europe, even though that is functionally impossible because it is not one country.
+
+
+
+and, And I think he just calls everything and like trump sometimes it hits Sometimes it hits a nerve because he's got a huge platform. 
+
+if you're terminally online and you have enough time to just keep posting and you have a audience of millions and you have, you're, you're relatively shameless and, and you're dealing with all sorts of internal issues so that you have enough energy to just broadcast yourself everywhere.
+
+Some of these things are going to stick. Sometimes you're going to piss off, president somewhere. I, there's no,it's like asking the bear, asking like, well, why did this bear pick this salmon, salmon out of the river? I don't know. The bear was just shoving his face in, it. That's what it is. 
+
+[00:25:28] Brian: in, the information space. 
+
+That's happy with that analogy, Brian.
+
+[00:25:32] Alex: We just, let's just let that beautiful analogy rest. Sorry. 
+
+[00:25:38] Brian: but but also in the information space, like that is a very sensible and correct strategy, right? You throw a lot of stuff out there. You see what sticks. Everyone's memories are like completely short. and I just see in politics, you see memes being injected into the culture, right? I mean, the JD Vance having sex with a couch or sofa, is there a difference?
+
+meme, really? I mean, that's, that's taken off, 
+
+completely made up, right? 
+
+There's all these made 
+
+[00:26:05] Alex: that's, taken off the page. There's always
+
+Allegedly. 
+
+[00:26:09] Brian: yeah, just asking questions. 
+
+[00:26:11] Alex: want to It cannot
+
+[00:26:13] Brian: And,look, this is a way to, to get influence. Some people will call it propaganda. Other people will, will, you know, if they agree with it, they'll call it something else.
+
+and I think that's, that's here to stay. And I think, I think the weaponization of memes is going to be fascinating. I think you're going to see it amazingly in this, this election. 
+
+[00:26:32] Troy: And I think that relates back to the cultural criticism point that I made earlier, which is, so there's a source of inputs, right? the pommel horse guy. is kind of odd and he gets up and they win the bronze medal. Yeah, Steven. And so you have fodder and then you live in a, in a participatory culture.
+
+So people are going to always, process the world through media and personal media. And now that's called memes. And then that becomes so important culturally that it's determining the fate of an election, let's say. And, and I just think that, The media's ability to process and make that stuff understandable to like real folks is Is really limited at this point
+
+[00:27:21] Brian: Yeah, no, I it's just like Yeah, but you're missing out, you're missing out a big thing, which is like, you're also feeding all this into an enigmatic algorithm and you don't know what's going to work or not. So like intent behind your work becomes much less important. The main thing is all of these things are motivating creators to create as much stuff as possible because your, you creators have become their own, like AB test generators.
+
+[00:27:47] Alex: Right? So if you look at some of these TikTok creators, et cetera, and you see one of their hits, and you actually go to their profile, they'll have hundreds of videos of them trying all sorts of shit, and then something like Skibidi Toilet works.
+
+Like, no intent behind that, because the algorithm is built around, removing, 
+
+intentionality from your creation, just like, put stuff out,
+
+[00:28:07] Brian: yeah. It's like skateboarding. I always say, I'm like this, this must be a great, training for life when I see kids skateboarding and failing. Again and again and again and again at the same, at the same trick. and really it's just you keep trying and you're going to stick one. And I think that's what happens with the, I mean, look at RFK Jr.
+
+He quickly became a meme after this, this bizarre, the latest bizarre story.
+
+[00:28:30] Alex: This was 
+
+[00:28:31] Brian: he just like found like a bear cuff that was hit and then he's like, I'm gonna skin
+
+it. And then he dumped it in Central Park. And then the story was written by like a Kennedy 2 for the New York Times, the whole thing, a Nepo baby.
+
+[00:28:44] Troy: Meanwhile, meanwhile,Marc Andreessen has the gall to say that we are living in a time bereft of humor or comedy. The comedy's dead. And then, but we, what actually happened this week? a presidential candidate talked about putting a bear in his trunk and then going, Where did he go? He went for lunch?
+
+No, he went to Peter Luger. And then he took the bear to a park. I mean, you 
+
+[00:29:08] Alex: He didn't want to leave the bear in the car because that would have been in his word bad
+
+[00:29:13] Brian: And he explained it to Roseanne Barr. I mean, just everything is like, this is a golden age if you like ridiculous. And I do.
+
+[00:29:22] Alex: It does. It is.
+
+[00:29:23] Troy: We have a vice president candidate. Accusing another vice, making reference to another vice president candidate of getting a new sofa. 
+
+Because he's been accused of fucking a sofa.
+
+[00:29:36] Alex: yeah,
+
+[00:29:37] Brian: normal. So this guy, this, I, I'd never heard of him before. I didn't know, do you know his name is pronounced walls, not waltz? I thought it was waltz, but it's walls. Apparently he came out of nowhere really because of a meme he started about them being weird. that was seemingly, it's so strange to me that like a real political strength is to be one memable and to be able to be, to create memes, I think 
+
+[00:30:00] Troy: He's 
+
+memeable and he's cute and cuddly,
+
+[00:30:03] Alex: Yeah. Hey, did you know he's, he's a few months younger than Brad Pitt?
+
+[00:30:08] Brian: yes, I saw that.
+
+[00:30:09] Alex: yeah. Hollywood money is, hits different, but the, the thing, the thing that happened there seems to be like by calling them weird and, and coming from a place, because I think he's very authentic and we've talked about authentic people before, and he comes across as authentic, which is the exact opposite of what JD Vance comes up.
+
+[00:30:25] Brian: Yeah, 
+
+[00:30:25] Alex: I was thinking the tactic he used on purpose or not feels like I don't know if you've ever experienced this in school where there was a bully and that bully would kind of use these kind of really kind of brutish tactics on people until somebody said, Something like, Oh, you look like a duck.
+
+And for some reason that, that, that reference hit with everyone and completely dismantled that bully because everybody called him duck now. and there's like this precision sniping that calling weird has completely dismantled this thing because the more they talk about not being weird, the more weird they look.
+
+And it's, it's genius. I mean, that's the type of comms genius that, you need to win an election because it, it manages to completely detach the, the person from their message and, and it gets everyone to scramble. So, but it is schoolyard tactics, so that's great.
+
+[00:31:17] Brian: Yeah, but it's effective. but I do think on the authenticity point, I think it's going to bring up an important national debate. It's going to come. This is my prediction about Midwest nice. so he's Midwest nice and it rubs other people the wrong way. I think JD Vance is mid Midwest mean and Midwest nice is a, is an absolute American archetype.
+
+Hello neighbor. and, eating the corn dogs, and, he's got lots of, of that. And there's always the question in the background about whether it's just the facade, Midwest Nice. And, and that's what we're going to say, because they're going to try to brand him as, some sort of woke person,
+
+whatever. And that the Midwest Nice is just a cover. I don't know. Is there a Canadian version of that, Midwest Nice? Are you,
+
+[00:32:02] Troy: Well, I think it's all of, it's all all Canada except I'm, I guess I would technically be roughly Midwestern from a Canadian perspective. I think we are nice. I mean, I'm not super nice, but it's like, there is a nice vibe where I'm from, for sure. 
+
+[00:32:16] Brian: Yeah, But the question is whether it's surface nice and whether it's cause like the sort of like Southern thing where they're like, outwardly nice, but they can, not really,
+
+[00:32:24] Troy: You 
+
+mean like, would you pick up a hitchhiker, but then would you dump their body in the ditch?
+
+[00:32:29] Brian: sort of.
+
+[00:32:31] Alex: But I think, I think some people come across as, can come across as genuine. And I think on average, our radar is, is pretty good. And our collective radar is pretty good. And I think that, Over time, if that gets, that kind of authenticity gets amplified by other people, we fall into it more and I think he comes across as, as pretty genuine and it's the way he interviews.
+
+I don't know. Did you guys listen to his Ezra Klein interview?
+
+[00:32:57] Brian: Did he have an Ezra Klein interview?
+
+[00:32:59] Alex: Yeah, just before he got announced, Ezra Klein, interviewed him and he comes across as just like he speaks like a normal person, but not only compared to Trump, but compared to other politicians, he just answers things and says when he doesn't know.
+
+And 
+
+[00:33:13] Brian: Yeah, 
+
+[00:33:13] Alex: he's kind of refreshing. It's
+
+[00:33:15] Brian: well it does go to the authenticity point like you have to present as authentic because I this as I mentioned before X I'm just going with X. They're suing bunch of advertisers and advertising organizations the Global Alliance for Responsible Media, right, for not advertising on X.
+
+Linda Yaccarina, who I don't think does unscripted appearances anymore after a few disastrous ones, came out with this, very, in my view, it's very memeable, it's a very awkward, first person video, or just like a video of her, sternly, saying that, That they're standing up for free speech.
+
+And what I sort of came in me, it was just like sort of knowing her from her previous life. I don't know her personally really, but to me, it's completely inauthentic. Like it was just like the hand gestures, everything. And I think that's such a liability now. And it's moving from politics into a corporate realm.
+
+I don't think the CEO of tomorrow in many, if not most instances is going to be the stage managed, like soundbite machine where they sort of look like,a governor of a Midwestern state used to look, I don't know. What do you
+
+think?
+
+[00:34:23] Troy: I think it's interesting for the following reason is that right wing politics led by the sort 
+
+of mega nation 
+
+became so it's been slowly legitimized, on one hand, you want to say, well, you know, lots of the people with, influence and money in the media world are liberals that make decisions about buying media.
+
+Those decisions often impact,right wing media negatively, or environments that are perceived as, however you perceive, X, because this isn't just X, right? This is, this is, people on the right that believe that they've been,that they've been excluded because of their political unpopular political position.
+
+And the truth is, is that the last five to 10 years have been this progression of Stuff that if you guys remember back, like it was crazy time,the whole world of Trump that grew and grew and grew and became legitimate was just a series of weird shit,becoming more, a more accepted part of the popular dialogue and, and the, and, and the political dialogue.
+
+And,
+
+I think that advertisers, advertisers make decisions around contextual. fitness and performance. And, quite frankly, I understand why they wouldn't want to be near weird, wacky shit. And, but so it, it kind of mirrors this overall cultural progression towards the acceptability of a lot, what used to be perceived 
+
+as real fringe ideas. 
+
+And, and so, and now they're saying, well, wait, you're, you're not, you're not just, you're penalizing us because you don't like our ideas or you don't like the idea of free speech. And, and I, and I don't think that's
+
+[00:36:12] Brian: It's a product. They don't want the 
+
+product. 
+
+I'm sorry, if, it converted the way Meta converts, the way Google converts,
+
+they'd be, they would absolutely be advertising there. Performance marketing has, has eaten the, the advertising world, and the idea, the fact that Twitter cannot compete on that, that's the problem.
+
+They would absolutely be spending there money if didn't work. You know, to me, this is just 
+
+Oh, but like, you know, to me, this is just walking away from advertising and it was always going to be like when he told, when he did the go fuck yourself. And that was always like, the, the, the big brands are not coming back, but the good news is 
+
+both Google and Facebook have shown it's a better business to build a, an ad system that can serve millions of clients versus trying to suck up to like team Detroit.
+
+Okay. And the problem is they don't have that ad system. Twitter acts, whatever their ad system sucks and it doesn't work, or at least it doesn't 
+
+show that it 
+
+works on, on the spreadsheet. So that's the
+
+[00:37:18] Alex: But this is why, like, I look at that and we should play a clip from that, Linda Yaccarino video and you look at what Elon's saying. And I even wonder, is it even worth talking about?
+
+Because this is just
+
+[00:37:30] Brian: It's we're, we're trying to put, we're trying to have a rational conversation around people who are just not very serious and not being very rational. he's gonna go in and talk about freedom of speech and everything goes and then sue advertisers for not going in, then she's gonna come on look like, I mean, if this was a TV show, it would feel unbelievable the way she's acting.
+
+[00:37:50] Alex: She's acting like a hostage. like she's acting like she's got strings attached to her arms, and that her face being moved with ai and saying all sorts of crazy shit and then All these media podcasts go like well, let's discuss it. No, they're just maybe they're just out of their minds and it is a bad product Nobody wants to advertise there and also probably some people don't want to advertise there because they're just annoyed with elon I don't you know, maybe maybe that's true and fine, too.
+
+That's everybody's right.
+
+
+[00:38:17] cut
+---
+
+[00:38:17] Troy: Yeah, but it's also a story of our time, Alex, in the form of sort of hostage mentality. And I, what I think it is, is we live in this time where people are kind of navigating massive cognitive dissonance. And we talked to like how Linda goes from being a champion of Madison Avenue and, literally recognized as the kind of advertiser tamer that, that made,MBC triumphant to being You know, someone on the other side that's making awkward videos, attacking the industry is really surprising. 
+
+[00:38:50] Alex: we've all seen, the movies where this nice kid, gets enamored by the mob and turns into this weirdo monster by the end of the movie. I mean, that's what happens. Like, oh, wow. Power, richest man in the world. That looks cool. And then you get aligned with a thug and, and you go crazy too.
+
+Turns out like if you're, and you see it happen with a lot of people in his, entourage, you
+
+know, I, 
+
+[00:39:14] Troy: happened to me, man. You saved me.
+
+[00:39:16] Alex: I mean, you still listen, you still, you still listen to him, which is 
+
+[00:39:22] Brian: I, I like his podcast.
+
+[00:39:24] Alex: 
+
+Troy, Canadians can turn too. Remember Jordan Peterson? He's a famous Canadian. you're not completely resilient to,
+
+[00:39:32] Brian: his, by the way, his accent is like super Canadian. Is he like turning the Canadian up to 
+
+11? 
+
+[00:39:38] Alex: it when he says, he says, 
+
+young 
+
+[00:39:40] Brian: you're, Canadian accent, Troy is very like,I feel like you're trying to present as a native born American, but like his accent is like, Oh my God, it's like from strange brew. Uh, well, it's 
+
+[00:39:58] Troy: How am I doing? How am I doing Alex? You know, Austrians have secrets to Alex. I mean, they're usually 
+
+in 
+
+[00:40:06] Alex: it's some 
+
+[00:40:06] Brian: basement, they 
+
+usually keep the I I said that before, we haven't 
+
+even heard 
+
+[00:40:10] Alex: or, or, or, or being Hitler. I mean, 
+
+sure, they have lots of different Or as Arnold, you know, having children with other people. Austrians have, have Secrets. I'm exhausted. I, I don't listen to the All in podcast. I, I can't listen to Elon anymore because even though it's definitely interesting, I'm kind of, I think we're a few, two seasons in for, for the shtick to keep working.
+
+Like it's too predictable. It's too like, oh, I'm not. we're seeing the same thing with Trump now. He's not having attention. So he's going to try to say the craziest shit he can. He's going to try to sit with a bunch of black reporters and say that Kamala Harris wasn't black before. and this is going to be the less attention you give them, the more crazy shit they're going to do.
+
+And they're going to get these bursts of attention and we kind of ignore all the other shit. I mean, I'm done with that. It's just, I don't have enough hours in the day to listen to these dorks 
+
+[00:41:03] Brian: yeah. He was just throwing that one out there to see if it would stick. It looks like he reeled that one back in because it wasn't working.
+
+[00:41:09] Alex: Yeah, it didn't work.
+
+[00:41:11] Brian: real quick, I want to get to Axios for a little bit. Axios has always, to me, been one of the exceptions to a lot of the, doom and gloom in media.
+
+and mostly because the model, which they executed amazingly, is Sort of different than most of the media system. Most of, of these Washington DC publications that have worked really well from Politico to Axios to now to punch ball and even semaphore now. they're really reliant on a particular ad category of companies that want to influence legislators.
+
+They don't compete with, with giant tech platforms for the most part for that spending. In fact, the giant tech platforms, which. Regulators are absolutely focused on and legislators, are often their biggest clients. but Axios is cutting 50 people. this isn't, you know, Jim Vande Hei, maybe awkwardly put it into the smart brevity format that didn't go over super well, for a layoff announcement.
+
+he, he, he talked about, you know, basically a really difficult media environment. He, he name checked AI. I thought that was kind of silly. I mean, AI is not impacting, Axios business right now. I think a bigger impact of that is just, frankly, that it is way more crowded in that market. I mean, you've got Semaphore coming after it, Puck coming after it.
+
+You still have Politico, Punchbowl is ascendant, et cetera. there's just more competition. But Troy, what did you, what were your sort of thoughts? I was a little bit, I don't know, surprised. I always think, it's not like a massive number. I mean, it's like terrible for the people who've lost their jobs that have
+
+[00:42:43] Troy: What was their overall headcount, what
+
+[00:42:45] Brian: I don't know. I think they, they, the last I had seen there had been like around like 375.
+
+[00:42:50] Troy: So, what's probably underneath of it? I, I think your point about it being, a, a, a competitive
+
+environment where, 
+
+[00:42:58] Brian: that it laid off.
+
+[00:43:00] Troy: right, so 500 people. So, I, I think there's probably something around, the health or the growth vector of their ad business. I think they've invested. A lot of money in growing a local business.
+
+And, it's still a young business in a growth phase, but I think the real, what's really underneath of it is probably connected to the acquisition, our metrics, around, profit delivery and, the market's a little bit tough. And, hitting those numbers means a lot to the investors, Jim included.
+
+And so I think that as an independent company, you might've decided to weather some softness on the top line and manage your expense line accordingly. but, but just tolerate. maybe,some, some pressure on, on the profit line, but I think in a world where you're being compensated on, delivery of a, of a number as part of an acquisition, you have to be aggressive with cost cutting.
+
+And I think that's really what happened.
+
+[00:44:02] Brian: And that always, I don't know if they had an earn out, but that was always told to me about an ounce. That a lot of times that you end up being almost in opposition to your, the company, like you have to make, you have to make decisions that in some ways are, you wouldn't be making if it wasn't for hitting that number and you have a personal, I don't, I don't know if that's the case here.
+
+It was just something that I was told like about, about earnouts, that they can sort of set up a set of incentives that are maybe not ideal. but I don't know. Yeah,
+
+[00:44:37] Troy: which is, how. Packaged media is paid for, is in a period of real change and everybody has a slightly different variation or has their own variation on a set of strategies to monetize in an ad adjacent world, whether that's performance media or affiliate media or activations or subscriptions and the environment is difficult.
+
+And you're going to see,you're going to see a lot of laughs in, in, in media just because the environment's tough. Although, although,Neil says it's good.
+
+[00:45:10] Brian: Neil Vogel, dot dash Meredith, they had good results again.
+
+[00:45:14] Troy: They had good results and, good for Neil. I saw him the other day. Vivek just bought, Vivek Shah at the CEO of Ziff, Davis or Ziff, or I don't know what it's currently
+
+called. 
+
+[00:45:27] Brian: they were J2? That was weird.
+
+[00:45:29] Troy: just purchased CNET from 
+
+[00:45:32] Alex: Didn't Ziff Davis get bought by CNET at some point? This is so incestuous.
+
+[00:45:36] Brian: Yeah.
+
+[00:45:37] Alex: It's wild.
+
+[00:45:38] Brian: And this asset has been traded a few times. It was traded for 1. 8 billion several 
+
+[00:45:42] Troy: I like what Vivek said. He said, I like content. I like the 
+
+[00:45:45] Brian: Well, he likes, he likes, he likes an asset that was 1. 8 billion for a hundred million. Sure. Yeah. 
+
+[00:45:51] Troy: Yeah. 
+
+right 
+
+[00:45:52] Alex: that's the thing we, we, we, we often forget though, like a lot of people are in this business because they love it. And that's what will always make media, slightly different because, people are in this because they want to create and they want to tell stories and it's going to keep it exciting.
+
+[00:46:07] Troy: he was saying more alex that he thinks that even in this new ecosystem that people that make, good content, differentiated content will, will do 
+
+fine.
+
+and, and then related, it's pretty remarkable, I think maybe a great, achievement by Bob Iger that Disney reported a good quarter.
+
+And, 4 percent growth on the top line, income was up 19%. And one thing I didn't really appreciate, Alex, just before you leave, Inside Out is the highest grossing animated film of all, Inside Out 2, is the highest grossing animated film of all time.
+
+[00:46:41] Alex: Yeah, it just, it just, it just got there.
+
+It's, It's, 
+
+incredible. 
+
+Well, first of all, it's a really good movie.
+
+yeah, yeah. 
+
+[00:46:50] Troy: With your kid or without your
+
+[00:46:51] Alex: with my kid, it's that Pixar magic that, they know how to make something that resonates with parents and kids, and sometimes at a completely different level.
+
+they're popular characters. You know, what I hope it doesn't create is an environment where Disney just, goes back to back with sequels because their, their, a few of their original stories didn't work out. but there was also, I think it's, it's just, it's a great cartoon, deserves to, to be doing well.
+
+it's so great. 
+
+[00:47:23] Troy: It's initial focus is podcast series. It's just like podcasting has gone from,this thing that was really marginal to something that people lamented that it was too hard to monetize to being like ground zero for, for culture and IP creation.
+
+[00:47:38] Brian: yeah, 
+
+[00:47:39] Alex: we still have, there's still a major issue with podcasting, which is like, I don't yeah, I don't understand. Even if you had, if you gave me 10 million now, I don't know how to acquire customers. Like it's one of the few forms of media that is nearly impossible
+
+[00:47:54] Brian: Well, that's actually 
+
+[00:47:55] Alex: promote. 
+
+[00:47:56] Troy: say more incendiary things, Alex. I 
+
+mean, that's what I've been trying to get you to do. That's why I 
+
+poke the bear all the time.
+
+Huh? You can be a crazy fucking liberal
+
+dude. 
+
+[00:48:05] Alex: I don't 
+
+even know what to say. That's incendiary anymore. Like the thing that's incendiary now is that I find Elon like deeply boring and all of these podcasts. I just, I think they're on their way out.
+
+[00:48:16] Brian: Okay, alright, let's get on to SearchGPT. you've been using
+
+SearchGPT. 
+
+[00:48:22] Alex: I have
+
+been beta testing SearchGPT 
+
+[00:48:24] Brian: you got some sort of back alley deal got in.give us the review.
+
+[00:48:28] Alex: Yeah. So, so first thing that's really interesting, open AI is not great at designing products, if anything, like if you use the cloud interface versus the open AI interface, it's just not good. and, and it, and it shows again on that search GPT, which I actually forced myself to use by replacing my default search with search GPT.
+
+So it doesn't even go to, to Google anymore. So it's, it's, it's impressive. It works similarly to, something like,perplexity, which is, a search based, I know that OpenAI has made deals with, with at least some of the publishers. They, they've definitely made a deal with Reddit, right?
+
+Is that, am I right in that? So it, it outputs, it starts with a bigger box that, that asks you what you're looking for. So it kind of, It's a pretty profound change when instead of just like a tiny search box, you get a big box that, that asks you a question of writing a little bit more thought into your question.
+
+I'm looking for a restaurant, da da da that does this and that versus like restaurant Soho, and so the, the shorthand of of Google disappears and then, the links can be opened in a side panel. And the interesting thing I've noticed is that I missed the links. When I do a search, when I'm fully replacing my search with something like search GPT, I keep my link column, my link drawer on the left side open and hope that, it comes up with good links.
+
+And, it, it's no, it, it doesn't, it's not as good as Google,
+
+[00:49:58] Brian: Is it more zero click? Can you tell like versus, versus Google, which is a lot of zero click these days.
+
+[00:50:05] Alex: It has a lot of baked in links, it's, it's zero click for a lot of information. but oddly enough, because you can use chat GPT for that already. Chat GPT is great for the zero click stuff, right? And so the way I prefer to use the web right now. is to have a box for a chat GPT type thing where I ask for a lot of zero click stuff, which, which is probably 80 percent of my web browsing.
+
+What's happening with this? Who's that? asking questions and getting an answer. Then for the 20 percent of where I want to go to a site, I just want something like Google without all the junk around it.I just want to type in a thing and get the website. and, And it's, it's, it's, I think there's going to be a challenge in merging those two things unless, the system is intelligent enough to understand what you're doing.
+
+And I think the challenge I have right now is that Google's always feeding me this AI stuff when I just want a Google result. And, ChatGPT is great at answering most of the 
+
+questions already. And I don't know if I need a search version
+
+[00:51:06] Brian: Just a quick side note. Did you see that Google pulled its Dear Sydney AI ad? It was a big Olympics ad. And I couldn't, I, I compared it to, and basically it showed this little girl writing, a fan letter to, a hurdler who she admires and she was using AI to do it. And it, I guess prompted outrage in some corners.
+
+I don't know. But Google ended up pulling the ad and, I couldn't help but I think that's sort of indicative. Isn't that strange? because I keep wondering, this, this technology is a little bit alienating to, to humanity. And it hasn't really presented itself in a very compelling, exciting way.
+
+And I don't want to make too much into some sort of ad controversy, but it, I don't know, I find it fascinating that this kind of what's being billed as a major technological advancement is being, is being greeted so ambivalently 
+
+in many, at least for many 
+
+people.
+
+[00:52:09] Alex: There's a cultural tolerance for things and, and, and it builds up over time. Sometimes it never builds up. trying to make Bluetooth headphones cool, like never 
+
+worked. Right. I think, you 
+
+[00:52:21] Brian: goons. Yeah. 
+
+[00:52:23] Alex: I mean, in the nineties you used to see them like try it out, like show, like,handsome young people wearing a Bluetooth headset, but.
+
+Or, putting a camera on a phone was something that we had to grow into. And I think that right now what they're trying to do is that there's this technology, which is exciting. I think a lot of people find it really exciting and interesting. And a lot of people use chat GPT,
+
+Oh yeah. Oh yeah.
+
+The amount of
+
+people that I. 
+
+[00:52:52] Brian: Fair with Tim 
+
+[00:52:53] Alex: Oh, 
+
+But everywhere, I think, and I'm not talking about tech people because a lot of people I live around here aren't tech people. Using chat GPT to rewrite a letter or help them understand a contract. People do that, you know, on a weekly or daily basis, but it is also a deeply uncomfortable technology.
+
+And, and so when these tech companies try to like, try to humanize it in, in the best way they can. that's a problem because it creates this uncanny space. Yes, it's cool, but don't try to shove it into my face like that. and I don't know if it's ever going to get to a point where it feels good.
+
+And I think they're doing themselves a disservice by trying to make it feel, I don't think people are buying it
+
+anymore. This idea of like making something feel 
+
+[00:53:34] Brian: they're using an old playbook. Like I go back to Google's first Super Bowl ad, I think it was like 2009 or eight. and it was the, the, the Paris like love story. And it was, it was a search box and it just literally just showed A, an unfolding romance that happened and how search was at the, at the center of it.
+
+And it was like lauded and it was like a tear. And they're basically trying the same thing for the updated version of 
+
+this. And it totally went over like a fart in an elevator. So I don't know.
+
+[00:54:07] Alex: AI is that it's uncanny, right? The uncanny valley. So, there are things, the more human something looks or the more human like it is, the more uncomfortable it makes us, which is why, I think people are going to have Roombas in their homes and feel fine about it. But the second you start placing a human robot in somebody's house, it's going to feel really strange and uncomfortable.
+
+And AI is deeply uncanny because it sounds human. It responds in human ways. And because of that it, it, it, it, it's repulsive in a way, right? So when you try to integrate into people's lives like that, it'll, it'll, it'll, it'll take time if it happens at all for some. but, but the uncanny thing is something that, that we've been dealing with in technology for a long time.
+
+It happened with graphics. The more graphics became realistic and things kind of looked more human, the more, unappealing they looked, the more they sounded human, the more unappealing it felt, and then it can break through that. at some point but it's not there yet and I think Google trying to force it is is just is a strategic mistake at this
+
+stage 
+
+[00:55:11] Brian: Are you getting the AI friend necklace? Have you gotten it already?
+
+[00:55:15] Alex: that friend necklace? everybody should watch that video because it's It made me want to, shoot myself into
+
+[00:55:22] Brian: That's another one. That's what I understand. People are greedy. A lot of these things seem to be greeted with a lot of cat calls. Like people are now like, oh my god. And I
+
+[00:55:31] Alex: Guys, the thing you have to understand is sometimes when you go into a room and you have a pitch with a lot of people who are deeply into technology, you remember that they're actually often sometimes like socially pretty unaware, you know, like the amount of pictures that says, Hey guys, it's really hard to make friends or women are weird.
+
+Right? So here's the thing I've invented. And you're like, Wait a second, no, maybe you're talking to the wrong audience. And, and so sometimes like, you know, 
+
+[00:55:56] Brian: Conference me 
+
+in, 
+
+conference me in. I'll do it a thousand bucks an hour. Just conference me in. I'll be like, no, that's weird.
+
+[00:56:03] Alex: You just stop being weird.
+
+[00:56:05] Brian: No fractional though. I'm, I'm taking my thousand.
+
+[00:56:09] Alex: yeah, no, 
+
+[00:56:10] Brian: All right. Let's do good product. 
+
+
+[00:56:11] Good product
+---
+
+[00:56:14] Brian: you know, it's been interesting lately to hear people. One of the most recent was our friend Dan Fromer talk about the appeal of YouTube. And you guys have heard me talk about it as being the real, YouTube's success and kind of popularization on the big box, like people using it on TV, is the real kind of manifestation of everything we've felt in media outside of video being applied to video.
+
+[00:56:37] Troy: and it should be terrifying for people that spend a lot of money making,polish content inside of, interfaces because YouTube is, it's not my product. Right. But I, but I want to get there. Cause I, I'm going to tell a little bit of a rambling story. I'll try to, to keep going or to keep it brief.
+
+you know, I like Venn diagrams, Brian Estes, Kamala 
+
+[00:56:56] Brian: Moment of then bring it back.
+
+[00:56:58] Troy: Week in Venn, I used to do a Venn every week, I think it's a very useful tool to show the juxtaposition between different ideas. And last night I did something, I saw, I guess it was a Venn diagram of, of enthusiast media, which is the great strength of YouTube.
+
+I love being an enthusiast and I love niche media. Real people, 
+
+Tucker Carlson. And, and sort of like the common Maine man, like Maine being the state. And it was, Elon shipped a cyber truck to, one of, Tucker Carlson's friends in Maine, who has a, you know, it's like a working guy has a Ford F one 50 and an F three 50 has,a lumber mill, And they put it through the paces and it was this and then they they did all this crazy stuff where Tucker wrote alongside him showed his kind of real person real man kind of bona fides And they went to see this guy that you know was a kind of a fringe character in Maine who had been in jail for selling weed for many years and visited his barn and, they, they, they did donuts in the truck and they made it hot.
+
+They went a hundred miles an hour hauling dirt and did all kinds of fun stuff. The fact is it was incredibly compelling content. And it was, I didn't look at the number of views, but it was,it had the sort of, fake real man appeal of Tucker Carlson, which we discussed a week or two ago.
+
+It had, and you see, by the way, how hard it is to sell new things. to real people because their skepticism of replacing their most Beloved item their truck with this weird thing that they couldn't fix that they didn't really understand was greeted with like no, I I can't have this in my life But oh my god, it is kind of cool, but I can't have this in my life.
+
+So,I 
+
+I 
+
+I What is the product? So I, on the cyber truck, it's funny that you mentioned this because something I've done, it's a bit in Miami the last two weeks, almost every day I've seen one. I think that's very unique. I think that's very contextual too. I believe that they 
+
+Yeah. 
+
+[00:59:12] Brian: the most here.
+
+[00:59:13] Troy: I think the appeal is really niche, but what is my good product? Is my good product a Venn diagram? Is my good product what all of these things are? Which is, things in media work when you juxtapose unexpected things together. The good product this week is really about unexpected juxtapositions and how that makes for wonderful media, particularly in the environment of YouTube, where it's about enthusiast angle, i.
+
+e. you're interested in technology and vehicles. It's about real people like wing nuts from, from Maine. You get to learn something, which is always the appeal of YouTube because you can explore, explore your own interests. It's hyper niche and it's endless. And what we're seeing, so, so it's those juxtapositions that I think are really interesting.
+
+And what we're seeing in YouTube is the content of the commons taking over mass 
+
+[01:00:07] Brian: Yeah, 
+
+[01:00:07] Troy: in video finally.
+
+[01:00:09] Brian: We'll think about this, that like people watch YouTube, they turn on their TV and watch YouTube. Nobody watches ESPN. Nobody watches CNN anymore. Nobody like used to, we used to go after work would go and just, I just turn on ESPN because there'd be something on there, some college
+
+[01:00:26] Troy: We don't watch, we don't watch CNN anymore. We can't.
+
+[01:00:29] Alex: YouTube is probably 50 percent of what I watch. but interestingly, Troy, I also saw a cyber truck video today. You, it just shows how the, how powerful the algorithm is. Mine was not Tucker Carlson. mine was whistling diesel showing, doing a durability test on a cyber truck.
+
+And that exploded because he managed to tear off the back bumper, trying to pull an F one 50. and made the Cybertruck look really bad. So it's, it's, it's funny how I didn't even know that there
+
+[01:00:55] Troy: Oh, I thought you were going to 
+
+say you saw the, the Rachel Maddow Cybertruck review.
+
+[01:01:00] Alex: I don't watch Rachel Maddow. But I, I, I, I think that there's plenty to cover on YouTube, including all this Mr. B stuff. 
+
+I 
+
+don't know if 
+
+you've been
+
+[01:01:07] Brian: do that. 
+
+[01:01:07] Alex: but, the Mr. B stuff is really interesting. 
+
+[01:01:10] Brian: through some, but.
+
+[01:01:11] Alex: You gotta fast forward, but it's, I think YouTube is reaching a scale where it's going to be hard for it not to talk about itself like a broadcast medium, right?
+
+Because it's essentially TV now. And if it's essentially TV, then there are some TV rules that need to be applied. And I think that's maybe the other shoe to drop at some
+
+[01:01:31] Brian: Let's do that. 
+
+
+[01:01:31] Outro
+---
+
+[01:01:32] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week.
+
+
+

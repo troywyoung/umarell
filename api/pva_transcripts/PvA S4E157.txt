@@ -1,0 +1,781 @@
+PvA S4E157
+===
+
+​
+
+[00:00:01] Brian: have you kept your phone secure while in London?
+
+[00:00:03] Troy: why is there more phone theft here than there is in the us? 
+
+[00:00:06] Brian: I honestly don't know. I just think that we
+
+[00:00:08] Troy: Is there petty, is there more petty crime here?
+
+[00:00:10] Brian: we have better rackets. like if you're like a motivated criminal,You got like a robust crypto industry. You've got a government like, I don't know. You got a lot, you got a lot of options.
+
+I think you have more options here. We have, we have a bigger and deeper economy. You have ad tech. 
+
+
+[00:00:23] Welcome
+---
+
+[00:00:23] Brian: ​
+
+welcome to people versus algorithms. Brian Morrisey. I'm only joined by, I don't wanna say only, but I'm joined by, by Troy Young. And, and unfortunately Alex Schleifer, both Alex Schleifer and Anonymous Banker are unable to be here. Alex is a little salty because the, time, I don't think it didn't get moved, but it didn't, it didn't fit. And, and Troy refused. You refused to, to move it. I stayed out of it, but I still caught astray for not promoting the podcast enough. I, I think on, on Peter Kafka's, channels podcast. So here we are.
+
+I hope we keep the band
+
+[00:01:10] Troy: brilliant, brilliant performance, by the way. It was really good.
+
+[00:01:13] Brian: Oh, thank you. 
+
+[00:01:14] Troy: it very much. I would encourage everybody to listen to Brian on Peter Peter's a great, host. I've said this before, I think he's. Good at questions. He knows the industry he summarizes well. he too can be a little salty, but with you, he was very generous because he knows your, your sort of journalistic brethren
+
+[00:01:31] Brian: We have to look out for each other. Ben Smith, who I know you have problems with, had said that the weird part about journalism is that you don't work for your employer, you work for the Guild. You know, not the literal guild, but like, you know, the guild.
+
+[00:01:44] Troy: or the double
+
+[00:01:45] Brian: It's
+
+[00:01:46] Troy: the case of Ben. no, Ben's fine. The, the podcast was excellent Brian. We should get people to listen to it and I think what it showcased, was just
+
+[00:01:54] Brian: that because like, 
+
+[00:01:55] Troy: No, not at all. I'm saying it because I'm proud of you and 'cause I really enjoyed the podcast and because I think it demonstrated your immense mastery of modern media.
+
+[00:02:06] Brian: Oh wow. Well, thank you. I really appreciate that.
+
+[00:02:09] Troy: And it's actually nice because you've gone full, you know, sort of full client side, right? Like you, I think you spent a good chunk of your career sitting on the other side trying to ask hard questions and trying to catch people in, in, you know, their hypocrisy or their bullshit or their, naive optimism or whatever it was that was informing, the other side.
+
+Now you are a practitioner and, you're much more upbeat and you, demonstrated your mastery of the subject. It was great. I loved it. At
+
+[00:02:40] Brian: okay, great. Well, everyone check it out. I think Peter, Peter went with, I knew he would go, I didn't know, but I thought, 'cause I said that we're living through the
+
+[00:02:48] Troy: least. He didn't call you a PR guy.
+
+[00:02:50] Brian: I'm not a PR guy, am
+
+[00:02:51] Troy: No, that's what he called the guy last week. He's like, PR guy has opinions. it was about your friend, the, the guy who's like a lunatic. 
+
+He's the guy that rants about everybody.
+
+[00:03:02] Brian: Oh, ed Tron.
+
+[00:03:04] Troy: Ed Tran. Yeah.
+
+[00:03:05] Brian: Yeah. I don't know Ed personally, but he definitely has a bee in his bonnet. I mean, like, I gotta say like if,
+
+[00:03:15] Troy: He did. He self-described. He was a very lonely child and he's lived, he, you know, he spent his childhood isolated. you know, I think this is a moment for him and he's,he's trading in, you know, being like an outsider. Not really an outsider. 
+
+I mean, I think there's always room in the ecosystem for people that, challenge power structures and
+
+[00:03:38] Brian: Well, that's the traditional journalism role is, as for Lauren, truth teller, standing as stride, the, the power centers and telling the truth, saying that the emperor has no clothes.
+
+[00:03:52] Troy: Correct. But it's, it's different when it's based on reporting as opposed to opinion.
+
+[00:03:57] Brian: okay. Unpack that for me because I think,
+
+[00:03:59] Troy: Well, I mean, one is punditry and the other is informed reporting,
+
+[00:04:04] Brian: Okay.
+
+[00:04:05] Troy: which run is a, is a massive pun. Pundit.
+
+[00:04:08] Brian: Okay. Zoo pundit is a slur, right? I mean, that's in the sort of, you know, when someone says. I'll sometimes run into someone and say, oh, I, no, I like your hot takes.
+
+[00:04:18] Troy: Yeah. 
+
+[00:04:18] Brian: I'm like, like, like an ad tech salesperson, by the way. who says something like that to me. And I, I take that as, a slur
+
+[00:04:31] Troy: Okay.
+
+[00:04:31] Brian: takes.
+
+[00:04:32] Troy: I know you wanna get into Ad Tech, so why don't we leave? Leave that for a bit. 
+
+[00:04:35] Brian: So I wanna talk, so I, I, I want to frame a lot of our discussion this week. I, first of all, I want it to be more media forward because like a, like I love Alex's perspective and I, I love the direction of the show and I love that it's not like just all naval gazing on media because I think it's like unbelievably important because the, we talk constantly about how this industry is downstream of these larger forces, and I think. Alex is like a classic example of just saying this doesn't make any sense. Right? And you need that. it's like, I remember during the, financial, the run up to the financial crisis, you know, my, my mom, we were just like driving around and she'd be like, these houses are too big. These people can't afford them.
+
+Like, she saw it, like, you know, like that's the kind of logic that I really like because I was like, she was totally right. and I think there's that across all kinds of areas of the media business, but I wanna get into the nitty gritty of it. So this is our opportunity, Troy. let's, let's not waste it. So I want to talk a lot about. I have this concept of sovereignty and, and what it means to have sovereignty in the, the, the systems in which we, we operate with, where the media ecosystem is going. I want to talk about ad tech and of course our friend AI and, and whether that is going to be a force that gives publishers the sovereignty that they have, they have sacrificed and I'll, I'll go over the ways that they have. and then I want to get into what open a AI wants to become. 'cause it's very clear that they are in a race to become Google before Google eats them whole. And I think that's a very important thing. and then a little bit on, on on political messaging in this and, and how. How, the political parties are trying to maneuver within, the information space.
+
+and, let's go with that. Okay. 
+
+
+[00:06:35] How do publishers reclaim sovereignty?
+---
+
+[00:06:35] Brian: So help me unpack because I, I think of it as sovereignty. And, here's, here's my case. That, that I'm making, I'm gonna send this in a newsletter a little, in a, in a little bit. I'm a little late on this. In my conversations with institutional publishers and with individuals who are themselves, publishers, creators, whatever you wanna call it, the big thing I come back to is sovereignty.
+
+And the story of media ha to date in, since the commercial internet has started, has been the erosion of sovereignty within it because the system is architected to erode that sovereignty. Once you give away your, and some of this will be a summation of the case, so I, I have to warn people, once you, once you lose control of your distribution because you're downstream of the people, control the interfaces that is tantamount to me, to a country not controlling their borders. The country can claim that they are a sovereign country, but if they do not control their borders, I don't really think you can say that they're fully sovereign. Now, a lot of countries make. Trade-offs for, for good reasons, I think of like countries in Europe that pull sovereignty within the eu, and there's a case to be made for that.
+
+Okay. But I don't think that publishers can truly be sovereign without having more control of their sovereignty. The other, and this is actually came from you, I like the way you phrased it. You said ad rights, which is kind of like an old school term. I feel like, you know, it's like a magaziney term. Like you don't hear that in like digital, but it, it comes to an essential thing once you give away your ad rights, and that is the, the programmatic world, right? You are sacrificing even more of your sovereignty. you keep going down the list and you start to realize that what plagues these institutional publishers, and, and I I hear it constantly in our, our discussions with them, is that they are now left in a situation where the world has changed. Okay. A lot of people gave away as countries gave away their sovereignty give, gave away parts of their sovereignty in, in the promise of a rules based order that would be very rational, where they wouldn't get eaten by the bigger wolf. Well, those, that bet is not a real, not looking like a really good one right now, you know, because the wolves are gonna eat you most likely it's a mercantile system. We're moving back topol kind of stuff. And I think the same way with where the digital media ecosystem, what I like to call the information space has evolved is the wolves are at the door and the people with sovereignty, okay, are. To me, and I, I have like an extreme sort of, you know, like my own hangups with sovereignty of my myself. You know, I, I think that, that, that is going to be the critical thing is how, and, and maybe it's not even possible for most publishers. How do you reclaim some bits of sovereignty? How does this tickle you?
+
+[00:09:34] Troy: well, I think the,
+
+[00:09:36] Brian: Please don't tell me. That makes no sense.
+
+[00:09:38] Troy: no, I think it makes sense. It, it's just, it strikes me, I, I hate to use the, the n word. it's, it's a little naive
+
+[00:09:47] Brian: oh, shit. 
+
+[00:09:48] Troy: and because any business without distribution, sovereignty in some shape or form isn't really a business, right? Like, so you talked about,
+
+[00:09:58] Brian: back on the, on the naive part, but go on.
+
+[00:10:01] Troy: well, you talk, well, I mean, there's only two things that really define a media business.
+
+There's maybe three, One is, is your brand and your content. I think those are sort of connected. And the other is a kind of owned or native ability to deliver that content to an audience that's earned over time. And the kind of institutional value in media forever was that you had laid, you know, those, those pathways to the consumer, that had, you know, some amount of resiliency.
+
+And it was an understood relationship where the promise of the brand combined with the utility of the product,you know, and a, a, a well kind of established kind of trade with an audience created a distribution mechanism. And so you, you're right, when. Interface layer undermines the sort of integrity or legitimacy of a media company's distribution.
+
+There is no media company. You are a production company. and, and I think that that's kind of fundamental, and I do agree with you that, that
+
+[00:11:16] Brian: wait, so, so
+
+I just, I'm sorry. I'm a little hung up on the naive part because that's like even EE even more annoying than the hot
+
+[00:11:22] Troy: a, it's
+
+[00:11:23] Brian: part.
+
+[00:11:23] Troy: slur for me, for sure.
+
+[00:11:25] Brian: yes.
+
+[00:11:26] Troy: Yeah.
+
+[00:11:26] Brian: I'm gonna, I'm gonna dwell on it just for a moment.
+
+[00:11:28] Troy: Okay.
+
+[00:11:29] Brian: when people say simple and uncomfortable truths, a lot of times they're, they're, they're dismissed as naive. So let's, let's address, let's, let's address the
+
+[00:11:37] Troy: I'll, I won't use a word anymore.
+
+[00:11:39] Brian: Let's, let's, let's address the, the facts. Maybe I'm just a truth teller. Maybe I'm no Ed Ed Tron, but maybe I'm just a truth teller. so here's my question is like, was it always, was it always the case that like, publishers were not sovereign entities and they just sort of pretended that they were, I mean, they're in the services business.
+
+Like I, you know, I, I did this, this conversation.
+
+[00:12:04] Troy: business you have constituencies to please. And I think in the public, the publishing business was, I mean, what you want in, in, what I would consider a good business is a level of kind of flywheel integrity and resiliency that allows you to like have a late lunch, right? Like that, that, that en, that enables you to maintain a good standard of employment, to treat people well, to know what to expect the next day, you know, to not have a huge amount of risk in your p and l and to.
+
+Be able to reinvest for growth. That's what you always want in a business. Right. And I think that what's plagued the media industry, when we did what you suggested, which is sort of outsource distribution to a third party, the rules of which we had to dance to daily and we're unpredictable. I used to joke that we would like bring, you know, the lamb into the boardroom and like cut open its guts and look at, at reading the end trails to figure out what our distribution strategy was gonna be one day.
+
+The nice thing about it, of course, and I think many organizations got really excited and starry out about it, was there were non-linear growths in distribution because. You figured out a very productive hack of Google or meta, and your audience grew like crazy and your revenue grew. But in almost all businesses that I've ever seen, the, the quicker you go up, the quicker you fall.
+
+It's the nature of like arbitrage businesses, right? You take a lot of money for a little while and then the trick ends, or someone else figures out the trick too, and you lose it. And so yeah, every good media business, even in like the old magazine days, you had well established, controlled sort of as you would call it, sovereign distribution.
+
+Because you had, if it was a brilliant magazine business, you would have, you know, well established subscriber behavior and lock in and you would've had newsstand, right? And you always, those businesses typically had good brands. And if they led their categories like a vode dig or an ad did, or even a Cosmo did for a short time, you had terrific profitability and great resiliency.
+
+I think that maybe. The cable business is a bit of an exception because, you know, if you're HGTV, you had contractual distribution through a cable company, right through an MVP, whatever. you were locked into a consumer relationship as a brand in their bundle, and that was kind of enough distribution lock in, contractually that you could count on that and you made tons of money and it was all good for a long time.
+
+So, I mean, every single good media business has to have that kind of predictability. And the ying to the yang of content is always distribution. The better your distribution is, the better your media business is. Full stop period. End story.
+
+[00:15:00] Brian: What I find interesting is all that is true, right? But that we are seeing the rise of fully sovereign publishing businesses and they're through places like Substack and Beehiiv, which is a partner. and to me, they have contours, right? Usually they don't have outside investment. They don't, they ha they're fully owned and operated by
+
+[00:15:24] Troy: a different dimension of sovereignty, which is capital sovereignty.
+
+[00:15:27] Brian: okay, so there's, there's, there's, there's capital. So like, let me go through it. So these, these are the characteristics that I think of a fully sovereign, and I, I look, there's trade offs to it. I know that because I was up at like 6 45 trying to frigging write a newsletter. let me tell you, being a sovereign individual comes at the cost. and it's like a very whatever. It's, there's a lot of
+
+[00:15:47] Troy: Yeah. But you've made the decision for full agency and not to scale your business with somebody else that could write the fricking newsletter.
+
+[00:15:55] Brian: Right. Correct. And I find this all the time when, because, okay, so here's my case. For the fully sovereign publisher, usually like an individual, right? Okay. And you create the content. You might have fractional people, or you might have no people. You have to have a, at least. I would say 75% of your income comes from subscriptions.
+
+Now, if you wanna be fully sovereign, you would have to tie this into, you would have enough wealth to have 5% cover of your, of your wealth working to actually, cover your living expenses. At the very minimum, in my view, you should have subscription revenue that exceeds your, your living expenses, including saving for retirement.
+
+Then you're fully sovereign, okay? You have complete ownership sovereignty, right? You don't have a dependence on, particularly
+
+[00:16:53] Troy: I mean, you feel really caught up in this man, like it's almost a psychosis. Like you, it's, it's a problem. Like I, I, I, I think that we all have masters, dude, right? I don't know if it, if it's you have a mortgage or you have a boss, or you have an investor, or you have a mother, or you have dependence,
+
+[00:17:15] Brian: There's degrees. That's my point.
+
+[00:17:18] Troy: I think sovereignty in your context exists at an organizational level. I think what's important is agency, which to me is on an individual level and agency is about pride and about an ability to. Be the person you want to be or live, honestly, and not fear, sort of political or economic, consequences that happen when, you feel like you're truly aligned with who you are, but someone else doesn't like that.
+
+I think agency is what you always want, whether it's you're an employee or a university student or an owner, you want to make sure, but you're always living in the con, you know, in, in, in, in a codependent structure, which means you never have. If you want full sovereignty, Brian, you just need to like be rich and not give a fuck about anything.
+
+[00:18:14] Brian: yeah, of course. But there are degrees. That's all my, my my only point. You, we can like quibble, whether it's agency or sovereignty. But my only point is to me that is like the sort of essential like struggle that I see with a lot of publishers. Whether it's reclaiming e just like a little bit of sovereignty.
+
+For instance, I was talking with a publisher who is, who's now 70% subscription revenue and
+
+[00:18:42] Troy: Good for him.
+
+[00:18:43] Brian: they, they were saying how amazing it was not to be dependent on. Programmatic advertising world. 'cause it was like, when we talk about programmatic advertising, that is traffic, the traffic models were hand in, in glove with the programmatic ad world, okay?
+
+And having a subscription focused business. And I know that it will not work for many categories, and those categories will have limited amount of sovereignty. Okay? They're gonna be agencies at the end of the day that if you are, if you are able to pull that off, that gives you tremendous leverage. And to me, what I would call sovereignty like.
+
+And so, you know, even like my, like, I don't have, I think, I don't pretend that I have full sovereignty because, direct audience revenue is like 10% of my business.
+
+[00:19:39] Troy: Right.
+
+[00:19:40] Brian: completely dependent on, my, my wonderful commercial partners. Get in touch. 
+
+[00:19:46] Troy: Get more subscribers. Totally agree. It's nice to have subscribers. All they are is they're the same as your commercial customers, but,
+
+[00:19:55] Brian: not.
+
+[00:19:55] Troy: well, no, no, no. But my point is, it's all the transaction that's dependent on, you know, the quality output that you create, but they tend to churn less, they're more loyal and there's more of them.
+
+So one of them isn't gonna mess up your day. But it's all just an economic agreement with someone and you have thousands of them, presumably if they're subscribers. And so, you know, it's less volatile, and it might suit your type of publishing better. So go get more subscribers.
+
+[00:20:23] Brian: I'll,
+
+[00:20:25] Troy: It's just harder, right? It's just more work. It's like the semaphore thing, right? They have no subscribers, I mean, their email list, but their play is gonna be, you know, instead of doing the hard work of scaling a business against what are at first meager subscription revenues, let's try to create free, get scale, sell bigger partnerships, and we'll create a franchise event base
+
+[00:20:49] Brian: Yeah.
+
+[00:20:49] Troy: hopefully that, that, that, that has its own gravity that gives us a little bit of sovereignty, or agency, however you wanna look at it.
+
+And and that's a fine strategy.
+
+[00:20:58] Brian: Yeah. No, I mean it's, it's all on some kind of continuum. You could probably do it, but two by two. I don't think you will, because you don't seem that into it. I'm more into it, but, I, I do think, I do think that like everyone has to, to figure out like where, because like I talked earlier this week with Josh Marshall from Talking Points Memo, you know, you remember talking Points Memo, you know them, right?
+
+an original blog from like 25 years from that blog era. They're celebrating their 25th anniversary.
+
+[00:21:28] Troy: okay.
+
+[00:21:28] Brian: And these days, like when someone reaches 25 years of a digital publication, it, I'm like, it's like a hundredth birthday where I'm like, congratulations for like, like being alive.
+
+Right. And I don't mean that in like a bad way, but just look at the cohort from that era. It, it, all the brands were like disposable, right? And he, they had this, this thing where they, they invited people to do like 25 year, like retrospectives. They invited me. I couldn't do it. 'cause I just, I, I, I write too much.
+
+I, I, I don't have time to, to like focus. And, but we did a co podcast conversation instead. Josh, Josh in his piece had said that the original sort of sin and there are like a thousand original sins of, of, of publishing when it meets,the internet. basically treating journalism, at least in the journalism sphere, treating journalism like tech, that it would like scale, like tech and all of the disasters of like funding it like a technology company. 
+
+
+[00:22:28] AdTech
+---
+
+[00:22:46] Brian: But one of the interesting things in our conversation I found was that in 2000, late 2012, he said he, 'cause he got really into the ad tech ecosystem. Like he knows a lot about, 'cause I've read his stuff and like, I don't pretend to be an ad tech expert, but, I've, I've, I've read enough, I, I know who knows their stuff with this and he knows his stuff and he's like a really good writer.
+
+So he's just like really good at understanding complex systems and being able to explain them really well. Okay. And I really appreciate that because a lot of the people in ad tech just hide behind like crazy acronyms and all this stuff. 'cause I don't think they really know what they're talking about. he quickly realized it was a house of cards. He was like, this is not going to work. He's like, this is, this is all gonna go to Google. Even though my ad revenue's going up from programmatic,
+
+[00:23:18] Troy: It's not a house of cards. What?
+
+[00:23:20] Brian: to let me just finish. I have to, I have to do subscriptions to be, at least in my view, like a sovereign sovereignty. If he didn't make that move, okay, and they're now 90% membership, wouldn't exist. at the time he was called like naive, because like people were riding that wave in 2013, 2014.
+
+[00:23:41] Troy: mean, yeah, that seems like a good decision. I will say that Ad Tech is like any of the businesses that there's a short distance between the stuff you do in cash, prostitution, selling drugs, oil burglary, right?
+
+[00:23:59] Brian: Thank you for standing up for Rad Tech Tech.
+
+[00:24:01] Troy: Well, no, but you know, I've seen a lot of companies that build a little bit of technology that enable them to make a claim to a publisher or somebody in the industry to say, if I do XI can make you that much more efficient or effective, give you a capability and I'll only take 10, 20, 30% of the transaction.
+
+Right? It's like an an old fashioned close to money business. So it attracts people that wanna make a quick buck it at and it's very opaque and it's, you know, there's lots of wires, so it's really hard to understand. but the flip side of it is because all of that money was there, there was lots of cycles of innovation, lots of technology development, lots of money went into it.
+
+And we are now able to ping, a bunch of data sets and, and, and servers. When I see you an instantaneously return, an ad that's customized to. So the idea,
+
+[00:24:59] Brian: This
+
+[00:25:00] Troy: well, the idea that we could auction off,
+
+[00:25:02] Brian: match up with your lived experience, Dre? In all
+
+[00:25:04] Troy: that we could, well, I think there are other issues with advertising on the internet that are unrelated to our ability to instantly auction off your attention and provide a semi targeted ad.
+
+The better the data set, the better the targeting. And on at the high end, you see really good, you know, amazing advertising on Instagram and at the bottom end when there's no data and there's a shitty display ad, or they're running or they're running outta money
+
+[00:25:31] Brian: is belly fat v
+
+[00:25:32] Troy: or just any webpage where they're des where you can smell desperation.
+
+Right.
+
+[00:25:37] Brian: is pretty much,
+
+[00:25:38] Troy: Which all of the,
+
+[00:25:39] Brian: lemme just make the point. That's literally almost every page of like, what I consider like the open internet publishing system is,
+
+[00:25:47] Troy: I mean, I've thought about this a lot 'cause I want for, for many years. I, I wanted to find a better way to do it. I think that the. The biggest problem, I would forget about all of the infrastructure to figure out who you are and auction you off. The idea that advertising sits next to content, or God forbid, on top of it, is a problem, right?
+
+Advertising and all the shenanigans that happens in the middle is fine for linear advertising on a video player because you trade content for attention in a linear format and it's called a TV ad or whatever you want to call it. And it's kind of fine. But like putting ads or video players next to content is kind of a shitty experience.
+
+It doesn't work for consumer attention and it doesn't really work for efficacy. And when you look at the whole history of the industry, it's kind of wild that really the only stuff that that was sort of performant in the end, other than just like volume, you know, at extremely low prices. It was, I would say there's two things.
+
+One is. A three, I'm gonna say three. Three types of it works. Premium ads in premium environments, even display ads in places like the FT and New York Times are fine, right? When I see a Tiffany ad on New York Times, I still pay attention to it. I think it works Associatively and all the rest, it's fine. I think that advertising, which is affiliate, which is basically the content and the product placement align at best, you're, and you have intent.
+
+I'm looking for something, you're delivering content to me and I can click and get it within your, you know, your, your content flow is alignment and that works. And then I think the third one, which was much maligned forever by the entire industry, was retargeting. And it just worked 'cause it was funk and annoying and it just chased you around.
+
+[00:27:39] Brian: though. Like is it? Was that GDPR?
+
+[00:27:41] Troy: Yeah, I think the cookie crackdown in Europe and stuff made it harder, but. I mean, but, but like retargeting was notoriously effective. And what would you do in like high-end? In, in retargeting scenarios, you would back up your pickup truck of SKUs, dump them in Criteo's database, and they would chase people all over the internet with prefab creative against SKUs.
+
+That still happens today.
+
+[00:28:06] Brian: Yeah, but like, let, let me just make two points. One, you're in Europe, so you have to call them eo. Okay. First
+
+[00:28:12] Troy: Okay.
+
+[00:28:12] Brian: okay. Please correct that. secondly, this gets into like an uncomfortable possible truth about, about ad tech that I wanna road test with you because I went to, I went to this, this party at Joe Mar's last night.
+
+it was AI versus ad tech industrial complex. And I, my joke was like, can I get another option? Like, I don't wanna choose a side here. and you know, Joe, has, has made this point a few times with me, but he made it a little bit like in, in a conversation there was that. lot of ad tech is about trying to take credit for things that were gonna happen anyway.
+
+And a lot of advertising is that way 'cause that's, modern advertising is driven by this. So basically all of this quote unquote innovation, this is, let me just, let me just road test this case with you and you can object then and to tell me why I'm
+
+[00:29:01] Troy: Like shit, that was gonna happen anyway.
+
+[00:29:03] Brian: Okay. So basically he was just saying, look, everyone is just, the incentives are aligned because measurement is so screwed up and attribution.
+
+Nobody has figured it out that everyone is just trying to like get, be the last thing that you see before something happens. And they didn't have anything necessarily to do with that thing happening. And like the people that do that, the best are obviously going to be the platforms because they're always gonna
+
+[00:29:26] Troy: Yeah, I love Joe Schicker. I think he's really smart, but this is just more punditry,
+
+[00:29:31] Brian: he is
+
+[00:29:31] Troy: right? This is just punditry,
+
+[00:29:33] Brian: He
+
+[00:29:33] Troy: right? Of course, people hack the system to God, try to get last click attribution that happens. I agree, but like, I don't think that you can use that to dismiss the, the efforts of the entire industry,
+
+[00:29:45] Brian: Troy, you called Ad Tech on a previous episode, A parasitic industry.
+
+[00:29:51] Troy: you know? Well, I mean, we're shooting the shit here.
+
+[00:29:54] Brian: like when I changed my mind that one time you were, you were like, You were outraged. Like, how dare you change your mind on something once you experienced it? Okay. So you're okay. You're def, you're, you're, um,
+
+[00:30:06] Troy: just saying we have a problem with formatting. We have a problem with alignment around what a customer needs in a demand driven medium. IE you're taking control, you're finding what you want. And, but what we've achi so, so, so I think there's a format problem that doesn't, by the way, exist in the same way in video.
+
+and by the way,
+
+[00:30:27] Brian: fix it. My point is
+
+[00:30:28] Troy: I tried to fix it. It can't be fixed. I tried.
+
+[00:30:30] Brian: my point. My point is it's unfixable. It is like, you know, the Pope had a, a, uh, speech this week. I'm gonna weave the Pope in here to add
+
+[00:30:38] Troy: You always weave in the church
+
+[00:30:41] Brian: I do, I'm getting like, you know, a late, you know, middle aged sort of interest in, in spirituality maybe.
+
+and the Pope gave, I, I think I'm interested in this Pope as a figure, you know, he is an American pope. I, we don't really know a ton about him yet. And you know, I like the cut of his jib right now of, of some of the things he's talking about. So he brought out like usury and I have not heard usury mentioned in a long time.
+
+Okay. And the thing with the Catholic church is they're not hardcore capitalists. They never have been because it's like capitalism in its extreme form is deeply anti-human. At least from like a Catholic teaching perspective. And they've always sort of had an ambivalence to, to capitalism.
+
+[00:31:20] Troy: Have you?
+
+[00:31:20] Brian: like communism.
+
+[00:31:21] Troy: They look pretty capitalistic to me.
+
+[00:31:23] Brian: Yeah, I, I know, I know, I know. But like, you know, in, in, in the teaching, it, it, it's not really, it's not really, it doesn't really line up that much. And, and you see it in, in, in the various things of several of the popes. But like, anyway, he brought up usury and like to me, I was like thinking, I'm like, man, when you're talking about like usury and you're talking about anti-human financialization, that financialization has taken place all across society.
+
+And I think that's why, he's bringing this up. 'cause it's a very weird like middle ages type term. But when you think about financializing attention, which is I believe what we're, we're talking about when we come talk about. The, the umbrella term ad tech, it's deeply troubling and it's almost like impossible to reform. There's a lot of people talking about how, oh no, AI is now the thing that's going to like reform ad tech. You're gonna have a gentech ad buying that's gonna cut out this archipelago of middlemen that, by the way, they're the ones with the yachts. Why the publisher's businesses have been like cratering. I mean, like, again, like I go back to my mom, like, just see with your own eyes what's going on here. Nobody can tell me that this industry is not slicing off more value, for the most part, not everyone. Okay. More value than they're creating. Okay. And publisher businesses are not growing right? So, I, I am biased towards publishers. I totally admit that. And the system doesn't seem to be able to be reformed.
+
+So when people talk about ag agentic buying, I don't yet know all the details, I fully admit that my instinct is. No way. No way is this going to actually eliminate all of those people on Terry Kaja slides. They will just figure out a new way because of exactly like what you're saying. It's like a hot money system.
+
+They'll find a way
+
+[00:33:09] Troy: Well, I would summarize the discussion as follows,
+
+never give up your distribution sovereignty. Because if you do, you're a production company, you're not a media company. Media by definition is ownership in some shape or form of some distribution. Sovereignty. I will point to something. An old boss of mine said, my first media job was at the Montreal Mirror.
+
+And it was one of those weekly alternative hipster newspapers. And someone had come in and offered to buy a page every week for a restaurant section, and they would go out and sell the restaurants on our behalf. And at the time, the publisher said, there's no way we are agreeing to do that because you're gonna go out.
+
+I mean, we could set the rates artificially high, but we don't want someone selling advertising on our behalf because they change the rules. And it makes us, it makes it more difficult for us to go out and sell our advertising ourselves. And I think that. my fear with programmatic all along was it would eventually undermine what we could sell direct and sure enough it happened.
+
+Right,
+
+[00:34:17] Brian: it was baked in from the start. The whole premise
+
+[00:34:21] Troy: right. So it did that. And then the third part of it, I guess my learning and made tons of mistakes here and you called me out on the, more than anyone else, Brian, is I believed that we would get some sovereignty by owning the tech stack and that if we got good enough at it, we might even be able to sell it to other people.
+
+And because I'm a technical tech. Techno optimist and because I believe that we could make better technology than other people, and because I believed that from a CMS and media management perspective, the market was underserved, I thought we could be build a better media stack. And we, you know, my, at my time at Hearst, we called it media s and I thought we could do things like build an affiliate and make it more effective for editors and build an analytics in a better way.
+
+And all the things that you've heard a million times, and we did it pretty well. But here's the thing, today, you don't do it. Sovereignty isn't building tech anymore. Sovereignty is using other people's. It's the opposite because sovereignty comes from financial independence. That means that you don't invest in that stuff, right?
+
+So it comes from being as lean as possible, investing as much in the product as you can, and using that to get proximity to the consumer who is gonna subscribe and be loyal. And I think that that's the shift that we've gone through. And so that's how I would end my sovereignty spiel for you. Brian.
+
+[00:35:44] Brian: I know you wanna move on. I just have one final point on, on, on that. I, and I wanna weave in, my new rebranded webinars as TRB Live. I did one yesterday. It's a live interactive streaming show, with TechCrunch and my partners at Beehive. about like their, you know, it's like ripping out their email system and modernizing it.
+
+Regent, you know, acquired all these pub publications. They're like,
+
+[00:36:07] Troy: I don't even know what you're talking about right now. Who's regent?
+
+[00:36:12] Brian: you know, there's a bunch of these holding companies. I used to, I used to think that there would be a great one that you could just call distressed content that are just like buying, like content assets that, so they bought TechCrunch off of Yahoo
+
+[00:36:27] Troy: Okay.
+
+[00:36:27] Brian: know, anytime you do this.
+
+[00:36:29] Troy: Oh yeah. The PE guys in la.
+
+[00:36:31] Brian: everyone. Yeah. The, you know, the, and anytime this happens to me, it's just like the plumber. The plumber always comes in and is like, who did this? We're gonna have to rip all this out. You know? But I think that's actually true at a lot of publishers, much like it's true with a lot of the plumbers and, and electricians. And so much tech debt in these organizations from over the years. And what I noticed is when they're trying, they know what they have to like change. They don't know how exactly to give that, but they're so hamstrung by tech and organizational debt. And then on top of that, they're trying to, they're trying to operate an old model, a tra a traffic based model.
+
+They're trying to ride it in to zero, okay? And in order to fund the new model, and like, I don't know if it's possible for a lot of these companies to do both. Like, and constantly see, like, I would argue, for instance. This is my, this is a true hot take, that someone like Vox Media has a really good blueprint.
+
+I don't think it's like a massive business, like nobody's gonna get rich off of, you know, their, their vox share. Sorry. I don't, I don't believe that, but I think they have a very good blueprint with what they're doing with talent. Okay. I think that that's coherent. That makes
+
+[00:37:47] Troy: Podcast. Podcast. And also I would say that
+
+[00:37:49] Brian: Let me
+
+[00:37:49] Troy: it fits with,
+
+[00:37:50] Brian: down their portfolio I see them propping up. No offense to Espb Nation or something like that. That's literally the foundation of the company. It simply doesn't make sense in their portfolio. Like maybe
+
+[00:38:02] Troy: no, I mean, I think that was the, the sin of buying,pop media or whatever it was called,pop sugar. I, I think that you have to be careful when you're rolling up media assets that you don't. Combine ones with different models and different sort of cultural positions together because, you know, pop sugar and the dodo don't fit well with New York Magazine.
+
+And Pivot.
+
+[00:38:26] Brian: You know, there's no need to take shots at the
+
+[00:38:29] Troy: I'm not taking shots, I'm just speaking the truth. I want, I have a religious question though, for you just to finish this. Be
+
+[00:38:35] Brian: Yeah.
+
+[00:38:36] Troy: Well, I've been
+
+[00:38:37] Brian: 16 years of Catholic school. I can
+
+[00:38:39] Troy: Okay. Well it's about usy and, and I've been working on a company. see what you don't wanna do is raise money, like expensive cap table money to finance customer growth.
+
+In other words, cac, right. So I'm working, I've been working on a pro,
+
+[00:38:57] Brian: a hack. You
+
+[00:38:58] Troy: well, I've been working on a project to basically create a bespoke financial product to fund cac.
+
+[00:39:03] Brian: Okay. I don't know
+
+[00:39:04] Troy: So imagine you instead of like factoring your accounts receivable that many people do, right? You get paid for money that you're owed
+
+[00:39:11] Brian: Sure.
+
+[00:39:12] Troy: and you can use that money in different ways.
+
+We'll give you money to go acquire customers and you pay us back as a percentage of your lifetime value.
+
+[00:39:19] Brian: Okay. Yeah.
+
+[00:39:20] Troy: Is that usy?
+
+[00:39:21] Brian: yeah, I think that's a form of it. Yeah.
+
+[00:39:23] Troy: Yeah. You know,
+
+[00:39:24] Brian: to me, like usy is, it's anytime like
+
+[00:39:27] Troy: we're giving money to buy stuff from ad tech people.
+
+[00:39:31] Brian: it's extractive. Like at its core it is extractive.
+
+[00:39:35] Troy: it's very useful.
+
+[00:39:36] Brian: Well, no, it's imprisoning people in, in, in debt. Like, so it's,
+
+[00:39:41] Troy: It's not a tech product though, because it has No,
+
+[00:39:44] Brian: my
+
+[00:39:44] Troy: the company,
+
+[00:39:45] Brian: Klarna isn't like a debt product either.
+
+Like, gimme a break.
+
+[00:39:48] Troy: okay.
+
+[00:39:48] Brian: I mean,
+
+[00:39:49] Troy: You've ruled against my, what I've been putting energy into.
+
+[00:39:51] Brian: know. You should start like a mar, a PE marketing firm. Like that's always a good agency business.
+
+[00:39:56] Troy: I got it. Thank you, father.
+
+[00:39:58] Brian: talk about, 
+
+
+[00:39:59] OpenAI In Browser Wars
+---
+
+[00:39:59] Brian: let's talk about another erosion of sovereignty or, because to me. reason that like, as much as, as Alex likes to poo pooh the, the dying like media industry, the reason that it's interesting is that it, it always goes first. Any of these great commoditizing
+
+[00:40:17] Troy: You froze up.
+
+[00:40:18] Brian: and we saw this with the internet, media always goes first and then it comes to, to all other sectors. And I think what's go, what, is going on with what we're talking about, the distribution and like losing control of your, your sovereignty through your monetization is going to be happening to a lot of places.
+
+And like that is why AI is so important. OpenAI is, has, has joined the browser wars? I haven't used it yet. I have to admit it. think what's, to me, I'd like to hear your experience using it, but to me what is is interesting is a point that you had made, so I'm not gonna pass it off as my own, which I do sometimes do ly, is that open AI is clearly trying to be Google before Google swallows open AI whole because it has any, any number of advantages which we've talked about, before, which usually come back, comes to, you know, being, the interface, and, and having billions and billions of users already. talk to me about the browser and why this is important
+
+[00:41:16] Troy: Well, I'll start it in a couple of ways. It just struck me so obvious that it's so obvious that OpenAI, OpenAI is just Google and that a bunch of people
+
+[00:41:26] Brian: playbook.
+
+[00:41:27] Troy: Yeah, it's,
+
+[00:41:27] Brian: Google
+
+[00:41:28] Troy: it's the same thing. It's like,
+
+[00:41:29] Brian: are, are
+
+[00:41:29] Troy: oh my God, we have the tailwinds of like hundreds of millions of users. This is a moment. Let's go for it. Right.
+
+And let's let. You know, we can do all the things and, you know, and we will be incredibly bold in how we build and finance this company. And there's a, you know, obviously Sam Altman sees what we do, not obviously am Sam Altman can see what the next model portends
+
+[00:41:59] Brian: Can
+
+[00:41:59] Troy: and, and of course, and, and, and, and, and is sharing that with investors.
+
+But like a couple things stuck out to me. One is that when the deal hits, like it's kind of real payback point. OpenAI is gonna be on the hook to pay Oracle $60 billion a year. Okay? So just put that in co that's like part of your cogs, man. Like you still have to pay for all of the other stuff, right? Like your people and your marketing and you know, all the things you do to run a company.
+
+Remember? Meta is after, I don't know how far in are we, Brian Meta's been around for 20 years. It's $150 billion company with I think about what, 35% margins. 40% margins. So the bill from Oracle two OpenAI will be basically the cost structure of meta. Like this is an enormous amount of money. And that's just one partnership, right?
+
+So clearly they're swinging for the fences here. Right? And I would connect this to the browser 'cause it's really interesting. It's really interesting to watch and, and, and it pains me to watch the entire global economy pin their hopes on, you know, kind of the promise of AI and all the capital inflation around it.
+
+Basically around one company and their new interface. you know, that, that, that 800 million people are using. Some 800 million people. So if you wanna make that kind of money and you wanna find ways to have sovereignty, you need to have, you need to be as closely and kind of proximus proximus to consume.
+
+Is that a word? Who knows?
+
+[00:43:51] Brian: Yeah, it is now.
+
+[00:43:51] Troy: you need to be as close to the consumer as as possible. You cannot rely on other people's distribution points. So what do you need? You need a browser. 'cause what does a browser do? It's, it's a browser is one step below the device. Actually two steps. Browser operating system, sorry, device operating system browser.
+
+And increasingly the browser is becoming the operating system, right, Brian? So basically they need to find ways to get as close to consumer as possible. How are they doing it? Well, the browser's, one example, the promises of a device with Johnny Iver is another example. Pulse is another example, right? What does Pulse do as a reminder?
+
+Pulse is the thing that you use to go gather your news daily and it goes out and does the work on your behalf. SOA is,
+
+[00:44:43] Brian: It's not
+
+[00:44:43] Troy: it's not perfect. It's not perfect. SOA is another example. What does soa, it's an application. Remember, application sit above websites on the kind of ontology of proximity to consumers and, you know, it's, it's an attempt to create their own sort of entertainment outlet or social network or whatever you wanna call it.
+
+So they need all of that, and then they need to pay for it all. What do they need to pay for it all? They need subscribers. They're doing good. I think there's pros and concierge. I want to bring up a fact around this, but they need commerce integrations. What are common commerce integrations? Commerce integrations are ad products.
+
+That's all they are. They're utility for the customer. But if you put a bunch of SKUs inside of the AI engine and it delivers back that you need Elmer's glue to do the craft project for your kid's school and you can click on it, they can get to a place because there's seamless integration of your question, your intent, the content and the app, which is just a skew.
+
+They can make money that way. So the deal with Walmart important, the deal with Shopify important and Amazon,
+
+[00:45:53] Brian: wait, wait, wait. Explain. Explain the Walmart deal because this is, this
+
+[00:45:57] Troy: well, Walmart said outside of a certain number of their SKUs, they're gonna make them all available inside of chat, GPT.
+
+[00:46:04] Brian: That's, you know, and what's interesting to this, to me, I always go back like sometime I wish I remember the date, it was like probably like 2008 or oh nine. Tim Armstrong. I met with him at the, at at the greatest of all Starbucks, which is the Astor Place, Starbucks, RIP,
+
+and great place for meetings. I probably met you there at some point. it was my go-to.
+
+[00:46:26] Troy: That's when I told you to quit Ad week.
+
+[00:46:28] Brian: Yeah, I should have listened. sorry. My Adweek friends, the, but like it, he pulled out a piece of paper and sketched to me, you know, hi, like how the digital adver, this is back when I was truly naive, Troy. 'cause I believe this stuff, not your like media os stuff, but a lot of the other stuff.
+
+but like I was naive enough to believe that this was gonna happen. He, he said what we need to do is we need to get every SKU digitized and then all those SKUs will like be loaded into our system. And our system is going to do the matching between the skews and consumer intent. Because this was the time of John Patel's, like database of intent, you know, stuff.
+
+And we are gonna be able to finally match, you know, all this stuff. And I was like. it. That's it. Forget about advertising because Google, what they did, what they pulled off was amazing was they did, they don't sell advertising. They're a cost of goods sold. They're uncapped budgets. They, they've always argued
+
+[00:47:25] Troy: I, I think he was probably right. He saw everything at Google. The problem is he had to use Yahoo as a way to get to the consumer, and it wasn't as good as Google or owning the browser and it didn't work, so.
+
+[00:47:37] Brian: it seems to me what's, what's, what is interesting about the direction that OpenAI is going okay, is that it will skip all this attribution nonsense, right? And it will come up with something that they're not gonna call advertising because that's how Silicon Valley works. But I think there is a point to it where they are going to just be distribution and funneling like transactions that they want to get.
+
+They, they don't wanna say, oh, we're gonna take credit for a transaction. They're like, no, no, no, no, no. We're gonna do the transaction.
+
+[00:48:08] Troy: They're gonna either, first they're gonna do the transaction on products. 'cause product transactions are rooted in credit cards and they're relatively straightforward where all the money is, is in services. Both consumer services like credit cards and insurance and bank loans and health services, and getting your gutters cleaned and all that shit.
+
+So they need to get into that, which is more complex. In fact, Google didn't crack that. There's a whole ecosystem of people that sit underneath of Google that basically pay Google to grab the next sort of tier of lead management, right? Like that is still an incredibly lucrative world. And then when you take that and you apply it to B2B services, like you bought a SaaS provider, or you bought an email system or all of that, huge, huge, huge amounts of money.
+
+Right. That's in some ways the world you trade in,
+
+[00:49:01] Brian: So freaking stay away from that. Sam Altman, if you're listening, I, I apologize for calling you a slimy character, but please stay out of this sort of, you know, intermediate and a B2B buying
+
+[00:49:11] Troy: right? But to the extent that you can use the tools of AI to facilitate high LTV services because AI can do things that webpages couldn't. They're coming for you.
+
+and someone will whisper that in his ears and remember, you have an Oracle bill to pay and it's a lot of money.
+
+[00:49:29] Brian: Well that this is, this is the race, right? Because this is a confidence game. Okay. Like he has to keep getting enough money to be able to build this thing. 'cause it's not there yet. And the reason I know it's not there is not because I understand ai. I don't think he really understands ai. I'll be honest with you.
+
+I think a lot of these guys don't fully understand it. Who are the money people? Because the pe, the people who I listen to are the actual quote unquote AI researchers, the people who are building these systems. And I noticed there's a massive gap between what they talk about and what people like Sam Altman talk about or what VCs talk about. Andre Cari, he's like, by all acclaim, I believe he's a leading AI researcher. And he came out and said the obvious thing, kind of like my mom before the financial crisis. He's like, these AI agents suck. They don't do, they don't, they can't do
+
+[00:50:21] Troy: They do so,
+
+[00:50:21] Brian: anything.
+
+[00:50:22] Troy: and the other guys are saying, this is a monster we don't understand.
+
+[00:50:25] Brian: Yeah. And so like, I'm supposed to listen to the money idea guy who ran looped, or am I supposed to listen to the, the people who actually build this stuff? I'm gonna listen to the people who actually build this stuff. And so the question is, can, can they keep this, this spinning long enough get the money in order to make these, like, to make these breakthroughs that make it real?
+
+Because right now it's not real
+
+[00:50:50] Troy: Well, a couple of things. Real and not real. So read a report yesterday that said that subscription spending on chat GPT is stalling in Europe
+
+[00:51:02] Brian: So
+
+[00:51:03] Troy: per,
+
+[00:51:03] Brian: I love it. I love it. I love that energy.
+
+[00:51:06] Troy: However, it's already bigger than Disney plus in Europe. From a sub perspective it's half of Spotify and I, there's gotta be growth there both in the API rental and the consumer subscription, right?
+
+And today. Chat. GPT Open AI's market cap is about the same as their private market cap is the same as Netflix. Right? So there some people speculate that by 2028 that open AI is, just to give you a sense of the potential, if you wanna look at the bull case, that their sub revenue could surpass Netflix right In and
+
+[00:51:43] Brian: congratula. Congratulations. Guess what? the rebooting, LLC is gonna make infinitely more money than, than them. At some point you have to like actually not just like
+
+[00:51:52] Troy: Oh, you mean profit? Yeah. Yeah. Right.
+
+[00:51:54] Brian: Yeah,
+
+[00:51:54] Troy: Well, and then what they're doing is they're trying to tap into, I thought it was really interesting to hear about a project they're doing called Project Mercury. Which is hiring a bunch of Goldman Sachs bankers to create prompts and refine the service offering for the financial vertical so that Chachi PT can go to the market and offer the little bot that does basically what junior bankers used to do.
+
+So there are also,
+
+[00:52:22] Brian: Is ab AB
+
+[00:52:23] Troy: well, ab claims that the stuff doesn't work very well yet. But, you know, I, I, I, I don't think that
+
+[00:52:30] Brian: on a big lease in
+
+[00:52:31] Troy: huge, huge, he's got, you know, he's got a West Village office. Yeah. I don't know. It's a really, really ambitious company. They're doing everything from. Making goofy videos to designing silicon with Broadcom, they're making a device.
+
+The, the company's wildly ambitious. And so in that regard, it really does remind me of Google. you know, whether or not our hopes will be dashed because OpenAI doesn't meet the promises that we've lumped on top of it is TBD, but they're the company to watch. A hundred percent.
+
+[00:53:05] Brian: Here's, I, I, I, this is my hot day, day.
+
+[00:53:08] Troy: Okay.
+
+[00:53:09] Brian: sleep enough last night. I think, I think there's two ba basically two paths to go. It's either the next Google or the next WeWork. That's my hot day.
+
+[00:53:17] Troy: Okay.
+
+[00:53:17] Brian: which it
+
+[00:53:18] Troy: We're the next Netscape.
+
+[00:53:19] Brian: No, I don't think it's going to like become a boring company. Like I don't think it's gonna become Oracle.
+
+Like, you know, I just don't think that that's gonna be the case. Obviously they're, they're, they're, they're very different. But like, I think it is on a path where he is betting so big that it's either going to be like a world changing company or is going to be the ultimate of flame mounts. And that to me all comes back to the confidence. Whether that people have confidence that this thing will, will actually come, come to fruition. Because if, if people stop funding. This stuff, it all, it all collapses
+
+[00:54:01] Troy: Yeah, I mean, I think what's different here is that this one's so wild because it's, it's like arbitrage around con compute and you know, the compute layer is something new to us like that. He or she who has the most compute and therefore the most power. Powering the commute, compute presumably wins this battle, and then it, it becomes this giant capital war.
+
+and, and the front end to all of this is, is a lonely little browser or an app called soa, you know, and, interface called chat, GPT. It's pretty in, it's pretty wild. Which by the way, will take me back to the Atlas Review. Everybody wants to put a chat bot a window that says, you know, ask Gemini or, you know,
+
+[00:54:49] Brian: that. I hate
+
+[00:54:50] Troy: or whatever everybody wants to,
+
+[00:54:51] Brian: I just went to my Gmail and I said. Where is this link to this landing page from the actual person? And it never works. Like at some point, don't we have to just say the obvious? Is this being naive to say like, this shit doesn't work.
+
+[00:55:07] Troy: well, that's not true. So. I have found in all fairness, that I have wanted tighter integration between my browsing and reading and AI for a while Now, Gemini does a little star in the top of Chrome. What chat JPT does is they take the guts of Chrome and they made a new browser and they integrated chat GPT, which is my preferred chat bot into that, better than Google did.
+
+So now I have a little window, Brian, that sits beside my browsing and is integrated into my email on my calendar and all of my Google docs. So I can highlight anything, I can summarize anything, and it's all really, really seamless. It makes me faster, makes me a little bit smarter. It's not, you know, it's not obviously like, you know, major disease, eliminating, like it's not, it's not gonna really change anything.
+
+[00:56:03] Brian: glad we opened Three Mile Island for you to be like marginally more productive. Fantastic. Doesn't make
+
+[00:56:08] Troy: Why? Really? That's where you're going. That's the old you.
+
+[00:56:12] Brian: Oh, is it? Well, it's still in me.
+
+[00:56:14] Troy: No, but
+
+[00:56:15] Brian: DNA thing.
+
+[00:56:18] Troy: anyway. What a good conversation.
+
+[00:56:20] Brian: yeah, no, I, so 1, 1, 1 point on that, I, you know, I'm very ecumenical. I, I am, I'm out there taking in signals from all kinds of things. So I was having dinner with, with a, a biotech, CEO last night. and I was asking about AI zero impact. What he was telling me was that it has, so far, it has had zero impact in that kind of cutting edge research, and that it's all nonsense.
+
+Like everything is being developed the exact same. So a lot of this is to me, when it can become real and, and for it to be real, to be worth all of this money in the compute, it has to do more than screw over a bunch of publishers. Like, I'm sorry. It has to like, it just, the numbers do not make sense and all of, and this is where I go back to the confidence game. It's really good to raise money to talk about replacing doctors and we're not gonna have teachers or schools or we're gonna have to have universal basic income and all this shit like this. At some point you have to put points on the board, you have to put points on the board. And points on the board are very simple.
+
+It's productivity growth. None of this is showing up in the productivity growth. And at some point when confidence erodes, it's not a good situation. We saw this during the financial crisis and I think that's why I've noticed that like, there's so much like, like financial collapse porn that is being put out there by the Economist and the FT.
+
+Lately, like I'm getting a little nervous that they're all gonna take us down. leave it there. 
+
+
+[00:57:56] Good Product
+---
+
+[00:57:56] Brian: Do you have a good product?
+
+[00:57:57] Troy: I do. 
+
+​
+
+I always think it's cool when I don't know if I can do it. When people are like, what's your, what's the best X? Right? What's your favorite thing? And it's really hard to do if I said to you, you know, your favorite band of all time, you know, Pitchfork does this thing called your Perfect 10 album.
+
+And I always stop for it on Instagram because I like, oh, the Damned Strawberries. That was a really good album. And, you know, I, I don't know if,
+
+[00:58:29] Brian: this stuff. This is like the Bill Simmons type
+
+[00:58:31] Troy: or it was like, oh my God, you for sure London calling is a perfect 10 album. Or Night Nurse from Gregory. It was a perfect album, whatever. I love stuff like that.
+
+And then I was thinking like, who's my perfect actor? And I figured it out and it's, it's Mark. It's Mark Ruffalo. I think he's a perfect actor.
+
+[00:58:51] Brian: Okay.
+
+[00:58:52] Troy: And I, I gotta tell you, it's nice to see HBO still turn out quality programming even after all of the endless kind of gyrations around that company. Task is a show starring Mark Ruffo.
+
+Have you watched it?
+
+[00:59:08] Brian: No, I haven't, I haven't. I haven't watched an HBO show in some time.
+
+[00:59:11] Troy: Task is really good. There's a scene, this touching courtroom scene where he's speaking to his son that's on trial and he's, you know, hesitant to do it for the first five episodes. And he comes around and it's like he's talking to the judge, you know, about, you know, sort of in, in to kind of testify to the character of his son who's, who's, you know, basic who's killed his wife.
+
+And so it's a pretty hard thing for Ruffalo to do, and it's just like a masterclass. He's an amazing actor. He's an amazing actor.
+
+[00:59:50] Brian: All right. Will check it out. I've been watching, uh, slow Horses.
+
+[00:59:53] Troy: Uh, yeah. Slow horses feels like a bit of a save as, you know what I mean by that?
+
+[00:59:58] Brian: No.
+
+[00:59:59] Troy: Well, it's sort of like you do one thing really well and you save it as season two.
+
+[01:00:03] Brian: Okay.
+
+[01:00:04] Troy: know? It's like, I get it, Gary Alman, you're fucking grumpy. You know, like, try not to become like a car. Complete caricature, surprise.
+
+[01:00:13] Brian: it's a little, it's a little over the top.
+
+[01:00:15] Troy: know, like, I get it.
+
+You know? Like they, they've taken the characters and they've, they, they've made them so kind of like into these types that, that, to me, it's lost a little of its nuance
+
+[01:00:31] Brian: Yeah. I don't know. I, to me it's like, it's a, it's a, it's a little bit of a strange show. Like I
+
+[01:00:35] Troy: and wash your fucking hair like it's so greasy.
+
+[01:00:39] Brian: but like, it's hard for me to, like, I know you have to suspend disbelief. I don't like to beat those people. That's unrealistic. I'm like, it's a freaking movie or a TV show.
+
+And, but like, at the same time, like, they like beat up colleagues who like come there and then they're just like, oh, well that, and I'm like, yeah, there's different expectations of different professions, but I found that a little bit difficult to, to get over. I was like, this is, don't know. Like, I never, like, I never like shows that get too, far away from even being plausible.
+
+[01:01:05] Troy: Well, one, one last thing I need to do a little shout out for Brian. And it's, it's the Toronto Blue Jays you know, like
+
+[01:01:12] Brian: had a tough go of it,
+
+[01:01:13] Troy: yeah. You know, this World Series is turning into this sort of like epic battle between the haves and have nots between, you know, a saying. Kind of nation and, and, and, and crazy America.
+
+and, and, and also John Schneider, who's this kind of like humble down to earth coach of the Blue Jays taken a group of guys that really gelled as a team and kind of got them through this tough Mariner series. John gets on national television and says, I love this fucking team, quote, unquote.
+
+And it's like, now I've lived long enough to see that word completely be, become part of just our, our, our, our regular. I mean, I think Trump said it once, didn't he? When he was pissed off about the Ukraine,or something. I remember he said it on the White House lawn. That was a moment. But, you know, if there was ever any question that, that, that fuck had joined.
+
+[01:02:10] Brian: he just used it. He's like, we'll fuck them up. Like now in the Oval Office you can say that, like, remember the Tansu? It's like amazing. We've come a long ways. one, a couple things on that. one I've noticed that you've purged your, I was thinking this the other day. You've purged your accent of like known Canadian iss, like you don't say a boot or anything of that nature.
+
+Was that like a conscious decision or have you just been acclimated or were you like a
+
+[01:02:33] Troy: Uh, that's a good question. You know, I left my, my hometown where they, they do like a boot and ho like, they talk like Zer, like that because my brother talks like that. I love it actually. I left when I was 13 or 14 years old, and then I went to, I actually went to, to kind of like a, a fancy boarding school where people didn't talk like that.
+
+[01:02:57] Brian: Okay. So you adjusted like in your teenage
+
+[01:02:59] Troy: Yeah. I adjusted then, and then I never ever went back, so
+
+[01:03:03] Brian: I have
+
+[01:03:03] Troy: still have it. People pick me as Canadian all the time.
+
+[01:03:06] Brian: because I, I used to, I used to actually classify you back when you were trying to convince me this media os was something more than just a CMS. I used to classify you as one of the secret Canadians. There was like a bunch of secret Canadians who you, who, who would,
+
+[01:03:20] Troy: Can you name another?
+
+[01:03:21] Brian: Australian actors that like all of a sudden they win an award and they're like talking like, yeah. And you're like, what? I had no idea. 'cause you have like an American accent there's a lot of like secret Canadians. I had something similar with Philadelphia has many, v varieties of accents. I think like whatever, like linguistics, like people like study it a lot. 'cause there's a lot of distinctive accents out of, Philadelphia area.
+
+although they're all merging now, which is very strange. I had a purge, like I would say water, and I, I did like a semester of water at college and I just gave up on it. So I still have, we still have like half the family that says water. And, I admire it, but I'm not gonna do it.
+
+[01:04:00] Troy: Yeah.
+
+
+[01:04:01] Outro
+---
+
+[01:04:01] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:04:35] Brian: This has been a good episode. It's been very fearful. I feel like,
+
+[01:04:38] Troy: I love talking to you.
+
+[01:04:39] Brian: All right. This is fun. Bye.
+
+
+

@@ -1,0 +1,1081 @@
+PvA S4E154
+===
+
+​
+
+
+[00:00:01] Open
+---
+
+[00:00:01] Brian: One time in my early years at Digiday, Troy came by for a visit and he,
+
+[00:00:06] Troy: rallied the troops. 
+
+[00:00:08] Brian: him to, to say a few words to the troops. Some of those words were, your brand is shit.
+
+[00:00:15] Troy: Well,
+
+[00:00:16] Alex: like trumpet. 
+
+[00:00:17] Brian: But no, it was, he meant it, he meant it in a good way. He, you brought it home. 
+
+
+[00:00:21] Welcome
+---
+
+[00:00:21] Troy: ​
+
+[00:00:31] Brian: should we get started?
+
+[00:00:32] Troy: Let's do it, man.
+
+[00:00:33] Brian: All right. 
+
+Welcome to People versus Algorithms. I'm Brian Morrissey, joined by Troy Young. Alex Schleifer, I've been in Paris this week. I'm in, I'm in Milan right now, like quite, quite a little world tour here.
+
+Paris is a great city. I mean, I, I probably don't need, don't need me to say that, but you know, like yesterday there was people at cafes. It was 2:00 PM I don't know if they're on a fiscal year, but Q4 was not bearing down on people. really great, great lifestyle there and, and a lovely city. I always enjoy going to Paris.
+
+I
+
+highly recommend it. 
+
+[00:01:07] Alex: but I thought Europe was collapsing. What's happening here? 
+
+[00:01:10] Brian: Not
+
+[00:01:11] Alex: thought, I thought we had a good here and over there was terrible. I thought. I thought that's what you keep telling me. You, both of you.
+
+[00:01:18] Brian: Well, no, this is the thing, when you go on, I go on X, right? And there it's like always my feet is always like Paris has fallen and all this stuff of 
+
+[00:01:27] Alex: I mean, I genuinely started to believe it. I haven't been back to Paris in a while. The, the last time I was there, I think was during the terrorist attacks for God's sakes,
+
+[00:01:35] Troy: It's the last place where you can still smoke in bed.
+
+[00:01:38] Alex: bed, but only, only with, only with your mistress. I can say that I'm French, but you're the 
+
+[00:01:47] Troy: I, a little anecdote I remember, there was a time in Regina when I shared a room with my older brother who was six years, five years older than me, and he's a rabid science fiction fan. So he would, he would sit in bed and smoke. He was about, I don't know, 16 and he was smoking in bed in our house and I was in the bed next to him in our shared bedroom. And he would come in at about 11 o'clock from the arcade or wherever he was, and he'd light up a cigarette. I'd be in bed
+
+[00:02:17] Brian: That's dangerous. That's a very like eighties thing to do.
+
+[00:02:20] Troy: Mm-hmm.
+
+[00:02:21] Brian: Smoking in bed, bad idea.
+
+[00:02:23] Alex: if 
+
+[00:02:23] Troy: No, but there was a child next to him, Brian, in bed sleeping.
+
+[00:02:26] Brian: of it was bad.
+
+[00:02:28] Alex: Yeah. Just,
+
+[00:02:29] Brian: of any of it.
+
+[00:02:30] Alex: yes. It's hard to choose where to start. but, so just to bring it back to Paris, you're the, you're the second person this week that told me Paris was amazing and I was genuinely, genuinely, coming to terms with the fact that it was turning into a nightmare. And, but every time I go to Europe.
+
+I keep hearing that same thing. When I went to England, it was delightful.
+
+[00:02:49] Brian: So here's my, I I I, I tie it to Momani because they had a communist mayor there or green, something of that nature. And I think when they get in, they get sort of hand like handcuffed with what they can actually do. So they just put in like bike lanes. So I think New York's gonna like have a lot more biking infrastructure and things.
+
+'cause Momani iss
+
+not gonna be able to do any of the other stuff. 
+
+
+[00:03:09] Aux Bons Crus
+---
+
+[00:03:09] Brian: Alex do you know about, I'm gonna mispronounce it, theier.
+
+[00:03:13] Alex: No.
+
+[00:03:13] Brian: These like ru rest stop areas of, it's like,
+
+[00:03:18] Troy: It's a designation, isn't
+
+[00:03:20] Brian: it's a designation because I went to this place Ban Crew, which is in Oberkampf, which is a cool neighborhood. I stayed there like eight years ago when it was not yet Cool.
+
+It was, it was still kind of scruffy. it's like an homage to these, these places on like French highways, like re, their rest areas too are apparently like amazing. And so Ban Crew started at, or not Ban Crew, the Theier was a basically a stamp of approval. An
+
+[00:03:48] Alex: Oh, it's a, the travel guide thing, 
+
+[00:03:50] Brian: yeah, yeah.
+
+And so the, it was like where you could go, it
+
+started in the thirties.
+
+It's like where you could go to get like a good meal, good atmosphere, steak,
+
+fruit, nice wine list. 
+
+[00:04:01] Alex: it's in somebody's fucking house. Like I remember that like you just stop by and I think they have like lax of rules about like food safety in France or something like that. So you'd stop by and it would just be this you know, old lady that does great cast le
+
+[00:04:14] Troy: Yeah, that's what I was gonna say. In, in America, truckers don't eat Cale, they eat whoppers.
+
+[00:04:19] Alex: Yeah.
+
+[00:04:20] Brian: We, we've discussed 
+
+[00:04:21] Alex: honestly, both, both make you fart. So it's about the same thing.
+
+[00:04:25] Brian: discussed the drug habits too, of truckers. Uh, they are notorious for that because I gotta stay up at night. anyway, I think as is a good metaphor, I was thinking about writing because it's, you know, I think we need some kind of, stamp of approval for content these days.
+
+because, the AI slop is 
+
+[00:04:42] Troy: Well, I thought you, I, first of all, I
+
+[00:04:44] Alex: Oh, there's a 
+
+[00:04:44] Troy: It's starting to sound like Casey Newton or something, but like, we should use the, I thought you were gonna use the metaphor for like, distribution as Cale.
+
+[00:04:53] Brian: What's that? Go 
+
+[00:04:55] Troy: Well, you know, I would've probably said that, you know, OpenAI takes all your content and turns it into a, you know, a smoothie, but maybe Cale is better.
+
+[00:05:05] Brian: we are going to need some sort of like, verification of, of stuff. I mean, I, I, I can't imagine that's not showing up at some point. 
+
+but,
+
+[00:05:13] Alex: see 
+
+[00:05:13] Troy: in a castle le to, to extend the metaphor, you still can see the beans and bits of meat and stuff,
+
+[00:05:19] Brian: but the whole, like laier, like you, you have like a little sign, like on the, you know, it's a nice blue and white, sign, like on the window so you know that you're getting something, you know, what you're go getting. It might be different, you know, so it can be unique. It can be some, somebody's, living room apparently. but you know that you're gonna have a good time, have a good 
+
+meal, and you're not, and, and importantly you're not, gonna get 
+
+[00:05:42] Troy: Can you imagine someone coming out with that? We're gonna do a national rating service of restaurants in America 
+
+to 
+
+ensure that you get 
+
+[00:05:49] Alex: I mean, it's the, the, the, it's Triple D Man. That's what it is. You already have that
+
+[00:05:55] Brian: Do
+
+[00:05:55] Alex: Diners, Drive-Ins and Dives. By Guy Fieri, Santa Rosa, local guy, fii, this is how you go it. And actually, I think there's a little bit of a curse of the Triple D, which is every time a place ends up there, it ends up shutting down not long after.
+
+So if you look at the list, it's like pretty high percentage, but, hard business restaurants. But
+
+yeah, no, I think we would need that.
+
+[00:06:17] Brian: one other note. I went, I went to the Monocle Cafe and I recorded a podcast, there with Tyler Brule. retail's over 20% of their business now. it's kind of interesting, you know, I, publishers finding different, different 
+
+[00:06:32] Troy: What percentage of their margin is the question?
+
+[00:06:34] Brian: Yeah, that's a good question. He didn't tell me that.
+
+[00:06:37] Troy: Yeah. Also on the restaurant front, you know, the top 50 restaurants came out and one of them is in your neighborhood, Alex
+
+[00:06:44] Alex: Oh, I mean, I'm surrounded by great restaurants. 
+
+[00:06:46] Troy: Oh, but there's one in particular that stood out. Yes. And the other astounding thing is that three or four on the list are in Montreal, which for a city
+
+[00:06:55] Alex: That is astonishing because if you've ever,
+
+I mean, I only went to the, to the Maritimes, and I can tell you that eating there, was an 
+
+[00:07:04] Troy: When you say Maritimes, do you mean the Maritimes of Canada?
+
+The maritime region. 
+
+[00:07:10] Alex: Yes. Moncton. Moncton, yeah.
+
+They, they, they had a, they had a pizza and kebab shop where they had special, their special kebab sauce was, which I thought would be yogurt based or something, was, condensed milk.
+
+[00:07:26] Troy: Is that good or bad?
+
+[00:07:28] Alex: The, what do you think? It depends if you love diarrhea or not.
+
+[00:07:32] Brian: It's, 
+
+[00:07:33] Troy: Well.
+
+[00:07:35] Alex: Sorry. Some people listen to this in the morning. 
+
+It's, it's a 
+
+[00:07:38] Brian: does depend. Does
+
+[00:07:39] Alex: Yeah. We've already covered Cale and 
+
+[00:07:42] Brian: uh, 
+
+
+[00:07:42] Gen Z & Find My
+---
+
+[00:07:49] Brian: one other quick note, I don't know, I, I heard this on another podcast that Gen Z is using Find my phone as a new social app, because scarcity is in, so you can only have like, I don't know, 15, 20 people like on your find my phone. And, and it's the ultimate, it's the ultimate of connectivity.
+
+[00:07:59] Alex: it's, it's not find my phone. Right. So just to be, to be clear with it. The, the, no, well, the Find My app has they, they've merged them together, 
+
+[00:08:07] Brian: oh, 
+
+[00:08:07] Alex: and the, the Find my app has people and devices and items, the 
+
+[00:08:12] Brian: but it's usually used for like parents tracking their kids. Right.
+
+[00:08:15] Alex: Yeah, because you, you, Any one of your devices is being tagged automatically. So, so your phone or whatever, which is actually like, you know, there, there was this huge thing with, um,air.
+
+tags, you know, being dropped into people's bags for stalking them and stuff like that. But you can add fif, 15 people to it or maybe more.
+
+I have, I have at least as always, ahead of the curve. I have at least like nine people on them, and 
+
+[00:08:38] Brian: Oh, you, you're using it as a social network.
+
+[00:08:41] Alex: Yeah. I can see now my friend Vala is, in Prague.
+
+[00:08:46] Troy: I thought you and Vala broke up.
+
+[00:08:49] Alex: We didn't break up.
+
+[00:08:50] Troy: Okay. Hold on a sec. I do have, I can. Oh, I always know where my wife is. I track her. 
+
+but I don't let her track me.
+
+[00:08:58] Alex: Jesus Christ.
+
+[00:09:00] Brian: I You know, like, uh, Saudi Arabia is having this comedy festival. That's 
+
+[00:09:06] Troy: I'm just, I, I'm just being honest. I don't like it when people can see where my whereabouts, it feels like a bit of
+
+[00:09:11] Alex: yeah, because you're always late and you like the, you know, you want the ability to lie.
+
+[00:09:17] Brian: Yeah.
+
+
+[00:09:18] Sora 2 & Vibes
+---
+
+[00:09:18] Alex: all right, so let's, let's, let's get into it with, SOA two came out this week. the Vibes app came, came out, I guess it was like last week from, from Meta. SOA two is the update to the OpenAI video model. It can now generate longer, better video. and you can include Sam Altman. I saw some Sam Altman videos in there. I, you know, they, they trumpeted a lot of like, copyright safeguards and, and whatnot, but they, they're gonna have to strike deals, I think with, with, rights holders. I mean, interestingly on the, on the, on the copyright, side, their strategy has been like, they put a lot of safeguards. So, you know, you can't copy, they, they make sure that you, the face you're using is your face. You know, they have all these, testing things, but on the copyright side, you can pretty much ask it to do, most things.
+
+And they put the onus on the copyright holders to follow up on that. And I think they're, they're probably looking at YouTube and the tools that YouTube built as a great way to manage it, which is you just, you flag things and let, then you let the copyright holders manage all that crap. You don't want to be in the middle of that.
+
+[00:10:23] Brian: So this seems it's a direct competitor to VO three. it's gonna be more, I guess, social in some ways, vibes, vibe seems like a true, if I can be Casey Newton for a minute. AI slot machine. it got panned pretty roundly for AI generated video clips and being able to remix all those fantastical weird AI videos.
+
+I'm, I'm staying away from, 
+
+[00:10:47] Troy: But what, what do we, what do we, what do we think? What do we really think about these
+
+[00:10:51] Brian: What do we real, I I, I'm interested in what it, it says about the direction both AI is going at, at these companies and what their priorities are. 
+
+Right? Like, I mean.
+
+[00:11:02] Troy: I'll tell you what my reaction was. First is the cameo feature was a smart enhancement of what Meta did. Like the gravity consistency, the video quality was way better with SOA two than it was with the meta thing. But that's aside starting it with your own likeness and
+
+[00:11:24] Alex: well explain. Explain how it works, because I think it's 
+
+[00:11:26] Troy: well, you, you, you, there's a feature called cameos, right?
+
+You turn it on, you scan your face,
+
+[00:11:32] Alex: It makes sure that it's you.
+
+[00:11:33] Troy: samples your voice,
+
+and then you become the star of the show. And so my first reaction is that these little movies are the new selfies. And that, there will be a reaction like there was to the people's subway promotion where. People were like, do I really want a recording device around my neck,
+
+um, for, for whatever it's called, friends, sorry.
+
+so I, I, I think people will react negatively and there'll be backlash, but it will become a really important new communication format. And, you know, I, I, I saw, I have this friend, I don't know if you know him, Alex, his name is Christian Haas, who was a, a collaborate collaborator back in the old days at Organic, and was a, always a great storyteller.
+
+He is now a senior creative person at Google, and he was, you know, he always, you know, was into filmmaking and he, I saw a video that he posted this week that he made with ai was this story of a. A Russian, scientist and, and, and a dog. it was really incredible, like a really incredible short film that Christian wouldn't have been able to make under, you know, any other, you know, circumstance other than having these kinds of tools available. And so I think that even if the use case, like meta's use cases may was maybe their, their launch of the product was maybe suboptimal and open eyes was slightly better. And you can question whether or not people will adopt a social network that's just a video feed that you're making. Like, I think that those things will, will shift and change and maybe the value proposition of a, a kind of AI video social network won't sustain, but this type of creative expression will sustain. And I think that. It means that more of our communication will be video that the already disrupted category of, you know, media and then specifically entertainment will come under more pressure, and that this is like a sign that this week was filled with signs of like real things agents. Pulse is just an agent for mass market.
+
+[00:13:53] Alex: Right. Let's just, yeah. Jumping 
+
+[00:13:55] Troy: Well, I I'm just broadening it
+
+like so Two, so, so two was a really, really incredible video model where you're the star, it's the new selfie. Then we have the commerce one that we'll talk about. I'm saying all the things that people are talking about in terms of massive disruption, disruptive potential of AI are coming true
+
+[00:14:17] Brian: Okay,
+
+let me, let me get Alex on the creative, the, the creative
+
+implications of this, and then we will run through all of the ones and we'll tie it together.
+
+[00:14:25] Alex: Did, yeah. I mean, maybe, maybe, to structure it a little bit, because I needed to kind of formulate a thought as like, you know, there were, there were a lot of AI releases in the past week or two, right? And so we're gonna go through some of them. I think we've seen basically like.
+
+[00:14:40] Troy: Did I mess up the format?
+
+[00:14:42] Alex: Attacks. No, no. I, I think you meandered, which is, which is kind of, it's your brand.
+
+You, your, you asked what do we think? And then you said, here's what I think. uh, so, so, so I think, on three fronts, AI has, there, there's been kind of advancement by ai, by both, you know, chat GT's been, OpenAI has been, you know, very, kind of very fast at launching product, but also stuff from Meta and Google.
+
+one is social, right? With these new social networks based around these, video generation tools, this is where the money's gonna be for them. Because, you know, they're not gonna make a ton of money selling these tools to, to, to studios so that they can generate movies, you know, they're gonna generate it as a mass consumer product.
+
+and then, you know, and then we're gonna talk about, about the other products, which are, you know, kind of encroaching into media, and then also commerce, right? But when it comes to social media, we saw. Specifically Vibes and SOA app come out. OpenAI is, is, has really learned a lot about how to become a consumer product through chat.
+
+GPTI feel, and, and the SOA product is a much kind of more focused idea where you upload 
+
+[00:15:47] Troy: Maybe they also learn from Google, Alex, because Google's power is its ability to be to be both B2C and B2B.
+
+[00:15:54] Alex: Although I would say that Google doesn't have a huge, I mean, Google's track record is spotty at, at at B 
+
+two, 
+
+[00:16:00] Troy: are you talking about? 
+
+What? What about Google search homie?
+
+What about Gmail? 
+
+[00:16:06] Alex: I, yeah. Wow. What about 2002? Amazing. Troy?
+
+[00:16:10] Troy: Well, 
+
+[00:16:10] Alex: Yeah. What about that 
+
+[00:16:12] Troy: I'm talking about the number of consumers that use their product. I'm not talking about
+
+[00:16:15] Alex: you're just telling me the Grateful Dead is great at releasing albums, like Yes, they
+
+[00:16:19] Brian: but they were 
+
+notoriously missed social, I mean, orchid,
+
+[00:16:22] Alex: and, and the, the, the AI release like Bard and Gemini. Do you understand Google's AI strategy now? Where do you go? What do you download? they'll get there because they have all the, they have 
+
+[00:16:32] Troy: I'm saying that Google's ATM is dependent on a consumer product. 
+
+[00:16:37] Alex: right. But I think, OpenAI has been much better at releasing kind of brand new 
+
+products that people immediately get.
+
+here's what's happening at Meta, right? They, They, have no taste and they broadly copy things. and they will copy all of open AI's good ideas with this.
+
+But the thing about vibes is I think. The May, they want to, they want to test the public's interest. And is everybody going to get disgusted? Are people gonna hate it? Because the dream is to have all of this content generation happening on Instagram, right? And create more surface area for advertising and, and, and really compete with TikTok.
+
+Because like the, the, do you know the 1 9 90 rule? Have you heard of that before?
+
+[00:17:21] Brian: No.
+
+[00:17:22] Alex: So, so social media, most, most kind of public forums have this, like, 1% creates content, nine, 9% engages with the content, and 90% just scans it. Right? If they can shift those numbers a little bit and make it like a 2080 rule, right, where 20 people create content, it, it changes, it, it changes the entire surface area of things.
+
+It 
+
+[00:17:43] Troy: Yeah. You know, what's important to put into context? I think the, the world's greatest innovator might be, or sorry, imitator might be the way to describe Meadow.
+
+And, and, and I think that, you know, just like there was negative reaction to their vibes product this week, there was tons of negative reaction to reels. Instagram just hit 3 billion monthly uniques.
+
+[00:18:05] Alex: Absolutely. It's 
+
+[00:18:06] Troy: It's, it's, it's, it's really unstoppable and it is on the strength of reels, which was a copycat of
+
+[00:18:12] Brian: Well, like stories really kicked it off. 'cause they were like, we're not even gonna like Absolutely. We're totally ripping it off from, from Snapchat.
+
+[00:18:20] Alex: I mean, we're noticing that like, Zuckerberg's ability to have no shame.
+
+[00:18:25] Brian: Yeah. That's a moat.
+
+[00:18:26] Alex: It's a mo. I mean, I think,
+
+[00:18:27] Troy: You know, the thing that may be 
+
+[00:18:29] Alex: that Snapchat is led by an innovator who wouldn't do that, 
+
+[00:18:32] Troy: I don't know if you guys see this, but part of the thing is, you know, people may be retreating to private spaces, like, you know, you know, refactoring find my phone for their own personal network, but
+
+3 billion people on Instagram. And what I see, lately I've been messing with my algorithm and the amount of quality. News, both consumer news and B2B news and industry news that I see on there is pretty staggering from like Bloomberg to guys that are disrupting ad industry news with, I think much better takes than like adage or Adweek or whatever. And it's, it's just this, that format that mixes now it's largely video, but video images and text is extraordinary. And by the way, their ad products are amazing. Like I find tons of stuff on there that I like that comes via paid promotion.
+
+So it's like they
+
+kind of got it all On Instagram.
+
+[00:19:34] Brian: Yeah.
+
+But do you trust, this is the, the, the routier thing? Like do you trust them? Like, I'm in the, like 
+
+lamps. I'm in the lamp segment right now, and like, I don't trust, like underscore out outlet. I can't, like, I like the looks of this thing, but like, there's so many, there's so many people who are shipping crappy products on there, but I don't, I don't personally trust most of the Instagram products. 
+
+[00:19:56] Alex: look, here's the thing that I hear pretty consistently about Instagram. Everybody uses it. Everybody buys sh*t off their ads. Everybody fu*ing hates it and wish they used it less. And it's really interesting. And I don't know if that means anything over time. but I don't think it's gonna be made better by AI slop.
+
+I'm already, getting plenty of advertising that is entirely AI generated with fake, podcasters and fake doctors talking about stuff. and it's not gonna get any better. I don't know 
+
+[00:20:23] Troy: Have you bought any ED products?
+
+[00:20:26] Brian: What I wonder about this is, you know,
+
+[00:20:30] Alex: Uh, it took me a while to figure out what Ed meant. That was like educational domain. No. All right. I'm not a, I'm not as in the lingo as you and I know you've got 
+
+[00:20:39] Brian: there's no, There's no stigma.
+
+There's No, stigma. Um,
+
+
+[00:20:43] Pulse
+---
+
+[00:20:43] Brian: what I'm interested in is, is they're gonna try to play in every lane, right? But they, they came out with Pulse before soa, and like, I'm more into the pulse. I, I have
+
+the, whatever the, I pay them a lot of money every month. And so I've been using Pulse and I think it's a really fascinating product.
+
+And it's like a daily briefing that you get. I told it to like, I want it. I said, I'm 
+
+[00:21:03] Troy: It's interesting. I remember we discussed it last week. I think you, 
+
+[00:21:06] Brian: I, yeah, I was, well, I, I'll, no, you want to get me, look, I changed my mind when things are fact. New facts. You know, 
+
+[00:21:14] Troy: always listen,
+
+[00:21:14] Brian: skeptical. There's nothing wrong with there's, there's nothing wrong with being skeptical. It's, it's an advantage.I, I actually am impressed with, with Pulse and, and,
+
+it, 
+
+[00:21:24] Alex: Are you paying $200 for it? Is it, is it 
+
+[00:21:27] Brian: well.
+
+I ended up, I ended up paying $200 for like, the deep research and then like, I forgot to like turn it off. So like, yeah, I'm
+
+still paying, I'm still paying for
+
+MLB tv. I 
+
+haven't watched 
+
+[00:21:36] Alex: business is paying 
+
+[00:21:37] Brian: game. 
+
+Um, 
+
+[00:21:38] Alex: those 
+
+[00:21:39] Brian: is 
+
+the, well,
+
+[00:21:41] Alex: you don't even notice.
+
+[00:21:42] Brian: no, I have to be, I have to be up on these things
+
+anyway.
+
+[00:21:46] Troy: 50 cents on the dollar, Alex. 'cause he, it's business expense.
+
+[00:21:50] Brian: yeah, exactly.
+
+it's a little clunky right now, but like it learns from all of your interactions with chat GBT and personalizes your updates and what it means for you. And like you tell it what, what you wanna see more of, what you wanna see less of. What I found interesting is it really makes news a feature of the product.
+
+It's not like the main part of the product, you know, and, but it creeps in there, but just like tangentially and of course it's, you know, there it's all about the topic. It's not about, you know, the source. It's not like, oh, the New York Times, blah, blah, blah.
+
+but 
+
+[00:22:27] Alex: you care? Do you 
+
+[00:22:28] Brian: once, no, but like once you, once you hook up, your email to it, your calendar and everything else, I think this direction to me, and maybe it's just because we continue to have problems with me moving the calendar, invitation, is very attractive. Less so though I don't need another freaking app to watch 
+
+[00:22:49] Troy: I don't know, man. I, I, I don't wanna start to sound like Alex here, but this product is, it really does show you where things are going and it. Really rips the interface away from anybody that makes things. And I wanna extend it to commerce in a second. I will. But the, the, the pulse thing is really important because what escapes that vortex that someone just took away, like that interface point that someone took away from you? And the only thing that I guess escapes it is you would, you want it to, to search the New York Times or the ft or someone who you pay for reporting, right? So like it, that will presumably make it through and you would want Pulse to, you know, go with you on that journey. IE authenticate all your news sources, but once that happens, they completely lose interface primacy for me.
+
+I would just use this instead of all the other sources I pay for. Because you could ask it to go through the Wall Street Journal against a brief and just kinda like bring it back to you, right? And if you were Alex, you could have it, read it to you. 
+
+
+[00:23:57] AI In Commerce
+---
+
+[00:23:57] Troy: And so the same thing is in is happening that's happening to media is happening in commerce because now what is commerce but a database of SKUs products, right?
+
+And now they've loaded Etsy and all the Shopify SKUs into chat GPT, where you can not only find them but like pay for them there. And what I found amazing about that is that the way you query the chat bot is incredibly nuanced and its responses to you are very nuanced. And to put that on top of the world of products is pretty amazing,
+
+[00:24:39] Alex: I, I know, I'm pretty sure that like the products that we're talking about now are something I outlined beat for, beat like two years ago when this stuff started coming out. Just like saying, look at the 
+
+[00:24:51] Brian: Okay. These, These, Alex 
+
+victory laughs are 
+
+[00:24:53] Alex: at, look at, I mean, I'm Ben Thompson in here. Let me, let me do it.
+
+[00:24:57] Troy: Oh yeah. 
+
+[00:24:57] Brian: Like 
+
+quote myself from 2013. 
+
+[00:25:00] Alex: but but, no, it, it is. I, I, I hope it becomes something useful. number one, I'm, I'm, I'm over always overly optimistic about technology, so I try to integrate it into my life quicker than most people, even before it's ready, right? Like, I know that I do that, so I go through a lot of pain of things that don't work well.
+
+But the idea is like, you should always look at the user and like what the behavior of the user is like, whether it's for media or commerce and stuff like that. And when you have an interface as profound as talking to an ai. That can come back to you with information that is much more nuanced and filtered through a million filters.
+
+Right? What, what it's doing essentially is maybe you could run this Google search, but nobody goes through a hassle of adding all these filters and seeing which sites to it does that for you. 
+
+Then 
+
+all of a sudden, it's like you're compressing that interface into something that feels the, the, the layers of abstraction between you and the thing you wanna do, get fully compressed.
+
+And of course then the person that owns this interface has the ability to do that. They 
+
+[00:25:55] Troy: I mean, it's so easy to extend out the commerce example in a million ways.
+
+and then look at the, like, I want to see it on me. I wanna see it on my friends. I
+
+want to see it in my closet. 
+
+[00:26:06] Alex: it and send it to Bob. 
+
+[00:26:08] Troy: Yeah. And, or, or Alex, you, you, you think about then, what does it do to the merchandising imperative at the retailer? What does it do to how they, you know, need interface to cross sell you other products?
+
+Right.
+
+What does it do to the substance of their relationship with you?
+
+What does it do to their margin?
+
+[00:26:28] Alex: And what does a photo shoot look like? A photo shoot now is you take a bunch of pictures of something in front of his green screen because the only way I wanna see the shirt is on me. Right. and so, when you're looking at like, paying $200 for that pulse thing is like sounding a more and more like, like a great deal.
+
+And the, the fact that like, the only thing that's stopping this from being like truly transformational is that they don't have a button on the phone that calls it. Right. The first person that gets a button on the phone that calls this, it's like, it's game over man. Right. And, and I just had a demo from my engineering team showing how we integrated Claude into our code and he looked at a piece of code he goes, that somebody else wrote.
+
+And he goes, what? And, and code is, you know, the, the thing that works the best today, but like And I knew it could do all the stuff that they were doing, but it was truly profound, right? Clean it, clean this up, do this, send it to this person, make sure that this doesn't happen. And the more this happens to our daily lives, I think like open AI is actually like it, they're releasing so fast because they wanna maintain that position.
+
+And I think that once this kind of pulse thing gets polished a little bit and released on kind of like the 20 bucks or even the, the $0 tier, they become everybody's front page like Yahoo in 1996. Right? Like, 
+
+[00:27:51] Troy: Totally agree, a hundred percent agree.
+
+[00:27:53] Brian: Yeah. What I find interesting is like, it, it personalizes like news for what it means for like, me personally.
+
+Like it's not personalization done because I'm, I'm talking to it constantly about things. So it'll have, it'll mix all these things in. It's like, oh, here's an idea for the, for, for your webinars or something, you know, and, and that it's just in, and it's also finishable, which I thought was also an interesting, product choice.
+
+It's only 10 things and then it says you're caught up. It's not like an endless, endless, stream of, of things.
+
+[00:28:28] Alex: Right. It's a different, they're, they're, they're tracking en engagement. They're not tracking engagement as much as the, as they're tracking utility because they know if you have utility in it, you gonna keep doing that. I mean, it went from like not trusting the answers to connecting my email to it, 
+
+[00:28:42] Troy: You'll notice by the way, that the meta prompt on chat GPTI suspect others always defaults to, and what's next? 
+
+What can I do for you next?
+
+[00:28:53] Alex: Right. Yes, 
+
+[00:28:54] Troy: How do I make this
+
+[00:28:55] Brian: I will say I I have one product request. If anyone from ChatGPT is listening, I wanna turn off the freaking engagement questions. Stop, stop, stop. It's like in the middle. It's like, okay, we're like doing it. And like, do you want me to put this into a notion one pager? And it's like, please just
+
+stop 
+
+it 
+
+[00:29:13] Troy: I, 
+
+[00:29:14] Alex: I, I 
+
+[00:29:14] Troy: think 
+
+while we're here. I want it with Pulse to authenticate my paid news sources and use that as the, the starting point for, its retrieval, you know, busy work. I want it to go to the Financial Times
+
+to look through it with my authentication and bring back that stuff to me. 
+
+[00:29:34] Alex: Yeah, I want it to learn how to use all the paywall, bypassing tools that I use. But I, I think, I think,you can see though, like there's still such. challenges with the interface right now. Like it doesn't, you know, I use, you know, using giant GPD right now feels like calling a friend and then you kind of have to hang up on them rather than having this thing that has a wake word, right?
+
+Hey, blah, blah, blah. Hey computer, do this. And then just stops when you're done, until you ask it another thing, right? Once it gets to that, I think it'll become like, like persistent. And the only thing stopping it now is integration into the phones. But, you know, my commutes now, I spend time chatting to chat GPT and it's writing 
+
+me 
+
+[00:30:18] Troy: should call me, Alex,
+
+[00:30:20] Alex: the email. Yeah, but you're like, you're less supportive. My Chachi PT is, I like, I like how nice it is to me. He's like, that's an excellent question, Alex. You've never said 
+
+[00:30:30] Troy: Well, can I broaden this
+
+[00:30:32] Brian: I heard you randomly called Trevor Kaufman while, while we were in Paris.
+
+[00:30:36] Troy: I did. Yeah.
+
+[00:30:37] Brian: He's like, I hadn't talked to Troy in two years.
+
+[00:30:39] Troy: Yeah. 
+
+I 
+
+had a, I had something for his benefit, not for mine, but,
+
+um, 
+
+
+[00:30:46] NYT World Newsletter
+---
+
+[00:30:46] Troy: the, thing that I wanted to go into is I read all of this stuff, all of the launches that we just talked about with interest, and then I saw the New York Times note about their, the World Newsletter. And I thought, you know, good on them for sort of getting the brief, because my o my, actually, I wanna back up a sec. My meta thought was kind of something you were on, or at least you were giving vibes of last week, Brian. And it was, oh my God, we trade in these long essays and, and before Alex does another fu*ing victory lap,
+
+[00:31:19] Brian: Oh, no 
+
+[00:31:21] Troy: I, I just wanna share this with you, Brian. I'm putting
+
+him out of my
+
+field
+
+of view.
+
+It's that like. 
+
+I sometimes Pridefully will write an essay that I think, you know, it's kind of good. And I, you know, it was fun to
+
+write 
+
+and 
+
+I'm just like, nobody cares. They want bullet points.
+
+They want like Emily Berg's style, like, like just quick hits 
+
+and I'm like text 
+
+and like is 
+
+really, is dying. 
+
+I mean, I know that, I mean that maybe that's harsh because a lot of people will read for a long time, but like my kid doesn't read articles and he's really informed. So I 
+
+think that the format of an article is deteriorating.
+
+[00:32:05] Brian: let's, let's talk about the world a little bit. So this is a, a global newsletter. it replaces the 
+
+[00:32:11] Troy: In fact, they don't call her an editor, Brian, they call her the host.
+
+[00:32:14] Brian: That's interesting. this is Karine, behold, I guess the host. apparently she wants the world to be smart, short and delightful. it mixes, it's gonna be personal video, heavy emphasized food, entertainment, fashion, travel, daily quiz. you know, this gets to something like
+
+[00:32:32] Alex: What is this? Is this like a newsletter on
+
+[00:32:35] Troy: It's probably one of the biggest newsletter lists in the world, I
+
+would 
+
+think. 
+
+[00:32:40] Alex: it a New York Times 
+
+[00:32:41] Brian: Yeah, 
+
+[00:32:41] Troy: Yeah. It's the 
+
+global 
+
+[00:32:42] Brian: like us. This is their global one. Troy, you like this as a product? because to me it's like the newsletter format is a little, I feel like it's a little tired. but that could be me. to 
+
+[00:32:56] Troy: Well, again, this is what I'm saying to you. I'm, I'm, I'm sub stacked out man. I don't wanna read long shit from people on Substack. I just don't. I think it's insightful that they're gonna create a newsletter that does what people want, which is
+
+but the problem is, is that the format of a newsletter doesn't work very well. 'cause all it then becomes is a list of links. 'cause you can't watch a video or play a game in an, in an, in an email.
+
+[00:33:23] Alex: Right. But we're kind of in the Titanic talking about what floats best here. It doesn't matter what the fu*ing format of your newsletter is. You could be a brain that all, all that stuff is going to be, Hey, what's happening in my newsletters chatGPT Like, forget. Oh, the bullet list one's gonna win out.
+
+No, nobody gives a sh*t It's, it's, 
+
+[00:33:42] Brian: All right, Alex, let's not be too, too harsh. We, there's some newsletterers on this Okay.
+
+AllrightI mean, you've
+
+already made your, you've already but it's, the webinars pretty
+
+[00:33:53] Alex: but we just talked about how this thing just pulls all the things. It doesn't, the format doesn't even matter anymore because, because Brian might want like long meandering articles that use lots of adjectives. I want like a short list read out by Snoop Dogg.
+
+Like
+
+we will get. Computers are going to give us what we want. That has always been the 
+
+deal we're facing. It's all like simplifying our lives. We're lazy, we're simplifying our lives, and it's just gonna Okay. That's the point. We're lazy like a, as the, I'm a word cell. I think that tech people call, it's
+
+[00:34:27] Brian: not a term of what, I, I think that there's a, there's a huge bias right now in all the coverage because it's all writers. And I can hear all these takes of people and it sounds like writers talking. I get it. I get it. It 
+
+[00:34:41] Troy: Well, not just writers, Alex, but liberal ones.
+
+[00:34:44] Alex: Yeah, sure. 
+
+[00:34:45] Brian: This has nothing to do with politics. 
+
+[00:34:47] Alex: I mean, it is, you 
+
+[00:34:48] Brian: Look, it's lowest, but I think the risk is, it becomes lowest common denominator stuff. But, I will say though, however, like to Troy's point about Instagram, 'cause I've gotten, the Instagram algorithm has really improved. I think it went like in a weird area. Like for a little while it was like, I was like, this is not your stereotyping sort of me, with the things you're, you're shoving down my throat. But now it is, it is I think dialed in and I'm getting all of these people who are breaking down. There's a lot of like independent people who are breaking down, like brand strategy 
+
+[00:35:19] Troy: So many, So many, and by the way, they're, a lot of them are really good.
+
+[00:35:24] Brian: Yeah, no, they're really good. Like, uh, 
+
+[00:35:25] Troy: like, that guy from Australia, that Asian guy, he is great. 
+
+[00:35:29] Brian: um, 
+
+[00:35:30] Alex: what you're 
+
+[00:35:31] Brian: but I think, you know, there is like formats do change and And another, you know, Alex was right. things are
+
+going shorter. 
+
+[00:35:39] Alex: this 
+
+[00:35:40] Brian: Yeah, that's, 
+
+[00:35:41] Alex: title the episodey right?
+
+[00:35:42] Brian: um, you know, because, you know, text had a, had a, had a good run. And I just feel like sending, sending a thousand words to people like I'm about to do is a little rude.
+
+[00:35:54] Alex: I think it's like kind of rude now.it's funny because I think at the same time, text is never more important than it's ever been. People text themselves more than they talk. People text with the interface. People read probably more words a day than they did in the heyday of magazines in, all right. It's just that text is going to be a very hard place to make money from to package, right.
+
+The packaging of text is what is becoming really difficult, 
+
+[00:36:23] Troy: I think there's something else, Alex. I think text becomes more utility based
+
+than, than kind of entertainment.
+
+[00:36:31] Brian: That that is something with Pulse, like they've taken, they've, they've really made it like very, very spare. It is, it is not trying to have any kind of personality whatsoever. It
+
+is full on utility, utility, utility. and as you said, like I think that can win out in a, in a lot of, a lot of cases, doesn't mean that there's not going to be a market for people to read a long New Yorker profile.
+
+there will be a market, for that. I don't, I don't, I don't see why not. but I think, the problem is a lot of publishers are trafficking in kind of middling text content. You know, it's the, it's the typical 700 to thousand word, news article, which is, you know, 60% B material and you know, so that's, that, that needs to change for sure. 
+
+
+[00:37:18] People Inc. Acquired FeedFeed
+---
+
+[00:37:18] Brian: Did you see, our favorite publisher, people Inc. the artist, former, formerly known as Do Meredith, which owns not, not one, but several recipe sites that Alex has repeatedly declared to be, cadavers. they have gone out and acquired yet more, food content, but they've, acquired Feed Feed, which is a creator network of a thousand food influencers.
+
+it's their first acquisition in, in really, I guess, since,they bought Meredith. this is a move into more creator driven, social first content. and I think that these, I don't know, Troy, what, what do you think? Because they, they, these, these brands have to do this. They have to go in this direction.
+
+[00:37:58] Troy: I mean, one data point just to say is like, I, I can remember when they were dot dash and it was like 75% of their traffic was from Google. It's like under 30% now. I mean, and Neil has done a very nice job of, of continuing to grow that business while the distribution has completely changed. 
+
+You know it, I remember back when Maker Studio sold to Disney for like 600 million. I think I
+
+[00:38:24] Brian: Yeah. MCN 
+
+[00:38:26] Troy: and it was a network of creators focused on YouTube. And, when that asset hit Disney, it's kind of valued, quickly evaporated.I think that seeing these kinds of businesses always made publishers react with a little bit of like, what Like what am I, where's my value? So these creators aren't. Sitting underneath of a brand, they're not benefiting from this story that I've told myself for decades. That it's all about kind of fitting writers that can be dispensed with underneath of, something really valuable, which is my brand and the reader's relationship with it. It's a network of creators and you're just an ad network sitting on top of it, and maybe you provide, you know, production services or maybe if you have a good network you can kind of create referral benefits between the nodes and the network and all of that. But it's, you know, it's gotta be an admission that this is where the game is shifting that. Those creators are becoming more, and I mean, this is an old, this is an old memo, like the, the action is on platforms with independent creators. 
+
+
+[00:39:40] New Creator Tools On YouTube
+---
+
+[00:39:40] Troy: And now what's happening, this is why all of this news fits together, is that AI is just making it easier and easier to be creatives 'cause the third video story of the week wasn't Sora or Vibes, it was YouTube giving their creators more and more tools to make cool sh*t 
+
+[00:39:58] Alex: Yeah. And the way we're gonna see that, I mean, you know, not only advertising, tools using ai, but like a lot of like making the production feel more professional. All this stuff that would cost a lot of money usually is going to be automated. just to go back to that text thing, I, I think that people are rabid for content, right?
+
+And text used to be the, the, cheapest way to get your content out there. But all of this content to be really successful today needs to be turned into either like a, a passive consumption medium like audio or more active consumption, medium like video, right? I mean, this is just to simplify it.
+
+And both of those places did not benefit a ton from being under a brand umbrella. Like video is just like, go on YouTube, do your thing. Audio is just you, you know, you start a podcast. And, and so those old websites, where do they sit? They don't have, you know, massive deals with YouTube like you. It's actually very hard to gain anything from being attached to an already successful channels channel because your videos are just going to be distributed via 
+
+algorithms, you know, and, and if you look at like, just like, writers are gonna be okay.
+
+And I, you know why? I know that books are, flatlining book growth is like flat to single digit growth, but audio books are exploding. Audiobooks are growing six times faster than, than textbooks. they're growing 
+
+at 26%. It, it doesn't, I know you are a writer. You like looking at words. I get it, 
+
+man. I get it. Yes. some guys couldn't get to deal with like, I, I don't 
+
+[00:41:36] Brian: Look, we've had a tough time. We've had a tough time 
+
+with it. 
+
+Alex, 
+
+[00:41:38] Troy: got like, 
+
+Alex just 
+
+[00:41:40] Brian: on us. Go. Go easy. Go. easy. on us. Okay. The
+
+word 
+
+[00:41:46] Alex: I'm just saying you, you're there. Just imagine you write your stuff, your words and stuff like that, and you put it out
+
+[00:41:52] Troy: The little shit you do, Brian, as a
+
+[00:41:54] Alex: the, you know, you you know, you, you, you just, like keyboard cats, you know, you just like flap around on the keyboard 
+
+[00:42:01] Troy: Flail away in your own private little literary
+
+[00:42:04] Brian: It's a craft. It's a 
+
+craft. Okay, 
+
+[00:42:06] Alex: going to happen more and more is that this content will be able to exist in different formats, whether or not you wanna record them or not. Whether or not you wanna put yourself in front of the camera or not. And when it does, there is no real space for these big networks of, of websites.
+
+Like, they can't give you as much of a benefit. So you are fine. I think.
+
+Um, 
+
+[00:42:25] Troy: now that you have completely dominated this episode, and for good reason, because you're always right and about this stuff, it seems, one of the things that I've noticed is I do it with Instagram and I'm not proud of it. ICI use my phone a lot when I'm watching tv
+
+and what it says to me is that. This stuff just is gonna continue to eat away at expensive production. There's the, the, all of the, all the stuff that, that people are feeling in the publishing world. And then ultimately, as we discussed in probably in retail and in audio, now that everybody can make audio is gonna come for entertainment. 
+
+[00:43:10] Alex: think people want a diverse media diet. and, but what happens now is that the media diet is becoming more and more diverse and more and more dispersed, which means that. it, it's not that, you know, social media will entirely replace production stuff.
+
+It's just the production stuff needs to get cheaper. 
+
+[00:43:29] Troy: I didn't say it would replace it, Alex. I just, I never thought it would happen this way. I, I just always thought of sort of f. You know, social media and YouTube as being distinct layers that would eat up attention at a different part of the sort of attention spectrum, and I didn't think that it would have as powerful effect as it's happening on entertainment.
+
+[00:43:49] Alex: I mean, it's, it's hugely addictive, right? Like if you look at, we don't like to be bored.phones are actually a massive. Mental health problem. I feel like, you know, because they're always with us. Like if you think about it, the average a the average number of hours spent on phones, that doesn't mean that they're not watching TV or not on their peloton, or not with friends, but spent, like looking at their phones per day is seven and a half hours for anybody 16 to 24.
+
+It goes a little bit down 
+
+[00:44:19] Brian: mean, just replace tv. I mean, remember like it was always, you know, the average American watches TV like 11 hours a day it's, you know, the
+
+[00:44:28] Alex: But that's like including like your work, that's including your, your work time, et cetera. And I think it's, I think you couldn't take the TV into the toilet. You couldn't take the TV into the subway, you couldn't take the TV into work. Like, that it has fundamentally changed. but, but you see like media shifting around it, right?
+
+Like everybody's being asked right now from, from, you know, just coming back from the, the, the, the Tokyo came show and, and, you know, hearing from people like in Hollywood. Spec scripts are kind of back because people want smaller scripts, movies that they can make for 20, $30 million. And they don't want to have these massive, two, $300 million Marvel movies anymore, because they need to take smaller bets.
+
+video game budgets are being slashed. People are saying, forget 50, forget 200 million, forget 50 million. We want $5 million games. and so just the, the budgets are changing. The risk, tolerance is changing because you don't have these like singular, massive events anymore. and all that's changing.
+
+And I think the media landscape's just gonna be very different. But people still want content. And people don't only want free content that somebody does in their bedroom. I think it's going to be a mix. I watch YouTube, I'll watch the James Bond movie when it comes out. All of these things are possible.
+
+It's just that the money you spend on those things needs is unsustainable at the moment. I don't understand why Hollywood movies cost so much. A cheap movie. $30 million. $30 million?
+
+[00:45:50] Brian: a lot of people gotta eat.
+
+[00:45:52] Alex: Yeah. Like 
+
+Fancy craft service. Fancy craft services.
+
+[00:45:55] Brian: Have you ever seen the, like spreads? They have. I'm not saying they don't, they don't deserve to be well fed, but I'm just saying like, if you go by like, you know, there's a lot of movie shoots in, in Manhattan and, and you know, some of that looks pretty good. 
+
+
+[00:46:07] CloudFlare Metadata Signals
+---
+
+[00:46:07] Brian: CloudFlare introduced this metadata signals to mark ownership and trustworthiness of content. this is all part of, its trying to position itself kind of on the side of publishers against the AI crawlers and indexers.
+
+and. They're using this to identify providence, and they want it to become a standard, if adopted by, by publishers. you know, I, I find CloudFlare a really interesting company because it has, it is the one tech company that is outwardly positioned itself as very pro publisher. I mean, Matthew Prince, the, the CEO, has been out there banging the drum about how journalism in particular as an industry is at risk of being wiped away because of, the AI engines, let's say expansive, view of fair use.
+
+and this is all part of, I mean, the problem of all of this, it's like, okay, great, but if the other side, it's not a negotiation if the other side doesn't wanna negotiate, I mean, like there's not a reason for the AI companies necessarily to negotiate yet. Now there has been movement from some of them. Microsoft for instance, has, and you know, maybe others do follow. I think the biggest issue is going to be the amount of money that they're going to pay is going to be far lower than what publishers expect to get age old problem.
+
+[00:47:32] Troy: Yep.
+
+[00:47:33] Alex: I mean, they've really managed to just build the perfect Napster that cannot be, it's the perfect Napster. They've always wanted to build that. And actually every time I watched a Sora video, I think about the hours and hours and hours of video that people slaved over and created and 
+
+[00:47:50] Brian: Yeah. Well, 'cause the 
+
+plausible deniability is, is baked into the product. You have to have plausible deniability.
+
+[00:47:56] Alex: really like kind of obscene when you think about it. Like it is hard to talk about because like, I don't know how you manage this, but it's just like, this would not be possible
+
+[00:48:05] Troy: Well, 
+
+[00:48:06] Alex: the ingestion 
+
+[00:48:06] Troy: the, the tragedy really is, is good on
+
+CloudFlare for finding a marketing opportunity, and enhancing, you know, it's nice to market against a sort of, a class of people that are kind of. Seemingly outgunned and distressed and, and championing their efforts. It's another intermediary that you are ultimately gonna have to pay a toll to in addition to kind of managing, you know, this new interface that's creating and taking most of the value.
+
+So I think it's important, it's, you know, to be able to manage what your content is. Train is training, and,you know, separate out that which benefits you, which is a link inside of Google from Google training on your content and managing the robot dialogue that is undermining your business seems like a, a
+
+good thing. It's just another expense for publishers and I think that it, it, it's needed, but shows how difficult the world is.
+
+[00:49:05] Brian: Yeah, it's interesting. I saw some data at the, at the, the event I was at here, and it was about AI overviews and where they've been applied. And interestingly, they've really gone after health and like utility content, not news, like news. They don't, so actually news has actually benefited because Google is sending a lot of traffic through Discover to try to keep the numbers like kind of normal. and that all goes to like news content, but it's, it's the evergreen content and it's the information and utility content, like the number one is, is like, like science content. And like health content has, has.
+
+[00:49:47] Troy: That makes sense. So.
+
+[00:49:49] Brian: Well, I think there was some thought that it wouldn't, it wouldn't, it wouldn't wade into health because health is too messy.
+
+You don't 
+
+[00:49:57] Alex: But, But, health is, but health is, is just, it is such, everybody has to use these tools, has said like how. Transformational. It is for, for health questions. Just, just, you know, doctors are using it. I mean, the cat's out of the bag. I think 
+
+[00:50:11] Brian: Yeah. 
+
+[00:50:12] Alex: know,
+
+what, no, what companies are, are realizing, which is still like really hard for Apple to realize, is that the winners right now are taking bigger risks and bigger leaps, right?
+
+This carefulness that Google had in the beginning allowed open AI to release chat. GPD First Apple's carefulness is, is letting Google walk away with it. And I think there's a, an attitude within these companies that went from Whoa, whoa, whoa, let's be careful to like, we gotta do it. Or somebody else is gonna.
+
+and we're seeing it now, like the health stuff is completely not being, like even your AI used to say, Hey, I'm not a doctor, but now it's like, full on. Like, yep, that's appendicitis. Okay, cut it out.
+
+[00:50:54] Brian: Should we do good product? Troy, what do you have? Give me a good product.
+
+
+[00:50:57] Good Product
+---
+
+[00:50:57] Brian: ​
+
+[00:50:59] Troy: I mean, I, I, I had a week filled with bad products. You know, I, I've had a lot of fraud on my, on my primary bank account and on my Amex.
+
+[00:51:10] Brian: Oh really?
+
+[00:51:11] Troy: so I spent way too much time working through that. closely related is I just got the memo from someone on YouTube actually, that Amex is gonna be charging $895 next year for the Platinum Card.
+
+So in my household that's $1,800.
+
+[00:51:31] Alex: Yeah. it's the, the, the price you pay for not being allowed into lounges at airports 
+
+[00:51:35] Brian: Into the lounges. Those are 
+
+[00:51:36] Troy: I use it, I use Amex to book tr to book hotels,
+
+and when I get that, then I get, you know, the a hundred dollars credit for the stay and I get, I don't know, something else, free breakfast or something.
+
+But, 900 times two is a lot for a credit card that they make money off the, you know, off the.
+
+[00:51:55] Alex: I, I mean, I think it's, they, they're obviously seeing the. That it's worthwhile. You know, we're hearing that at the top end of spenders, that spend is only going up, right? 
+
+[00:52:06] Troy: Don't they make enough off the merchants that I frequent?
+
+[00:52:09] Alex: I mean, it used to be the business model, but, you know, I think people are going to start paying for exclusivity. I mean, I think we're going to, and we're already starting to see it like, you know, get the better, you know, there's like lounges, but then there's like lounges, right?
+
+That are like, you know, that, that 
+
+[00:52:24] Brian: Yeah, so the, the, the Delta one lounge in, JFK,
+
+where you go through your own security.
+
+[00:52:30] Alex: Yes, 
+
+yes, 
+
+[00:52:31] Brian: you have a different lounge.
+
+One of the 
+
+[00:52:33] Alex: expect like, like Disney to have a third tier of, you know, super VIP status, where you just can elbow six year olds out of the way to get in, 
+
+[00:52:42] Brian: yeah. Airport 
+
+[00:52:43] Troy: good product of the week is
+
+a product 
+
+I invested 
+
+[00:52:46] Alex: Brian finish it. 
+
+[00:52:46] Brian: Yeah. Airport lounges are one of the most overrated sort of travel, sort of quote 
+
+unquote luxury products out there.
+
+They're, they're just terrible 
+
+now. Don't, 
+
+[00:52:55] Alex: around an airport.
+
+[00:52:56] Brian: yeah. Don't, don't go to the lounge is just, it's a
+
+[00:52:59] Alex: I always disagree with my wife. My wife always just wants to go have the dry eggs, exit the lounge, and I'm the, and like, just let's go sample the airport. It is like 
+
+[00:53:06] Brian: The equivalent is, I, I was staying in a Hyatt Regency during this event and they're like, we have you on the 33rd floor and you have access to like the executive lounge, the Regency executive lounge. I was like, oh, fantastic. It's like, it's a view of the Eiffel Tower and I had some work to do. So when those things are always awful, 
+
+[00:53:26] Troy: That's not true, man. I
+
+[00:53:28] Brian: Okay. I don't mean to besmirched at
+
+Hyatt 
+
+Regency, 
+
+but 
+
+[00:53:32] Troy: well, I'm saying that
+
+[00:53:33] Brian: of all the places in Paris I spent, 
+
+[00:53:35] Troy: the club floors at in Asia are really good
+
+[00:53:39] Alex: in Asia. Yes,
+
+[00:53:41] Brian: Okay.
+
+[00:53:42] Alex: all hotels are better in Asia.
+
+[00:53:43] Troy: Yeah, 
+
+[00:53:44] Brian: I, I was in one, in a Osaka. There was a guy, there was a lot of smoking going 
+
+[00:53:48] Troy: I like the club floor at the, at the Ritz Carlton in, Miami
+
+[00:53:53] Brian: Okay. You were smirking. That's a, that's, you see, Troy's still still a boyfriend, Regina. So when he like says his, like, you know, thirst and how the
+
+[00:54:04] Alex: Uh, he can't say he can't, he can't say no to a free coffee and a bis cough.
+
+[00:54:09] Troy: Yeah. 
+
+[00:54:10] Brian: all 
+
+[00:54:10] Troy: Well, you know, in, in, I guess a sign, you know, maybe media's too difficult. The, our friends from Refinery 29, Justin and Philly, that did everything, a great job with that brand while it lasted before it was, sold to Vice, are now in the ener, well it's not really energy drink, but sort of coffee and tonic packaged goods.
+
+[00:54:31] Brian: so they came out with this thing,
+
+[00:54:32] Troy: Yeah. And, and that would be my good product this
+
+week. 
+
+[00:54:35] Brian: it called? 
+
+[00:54:36] Troy: ESSPO, 
+
+[00:54:37] Brian: ESSPO and the, it's, 
+
+it's, 
+
+[00:54:40] Troy: ESSPO 
+
+[00:54:41] Brian: it's, what is it? It's like a coffee in a can, but it's sparkling. What is it 
+
+[00:54:45] Troy: It's sparkling coffee with three flavors. It's like coffee and tonic mixed together. It's refreshing. Has 120 grams of caffeine. 
+
+[00:54:55] Brian: No protein. 
+
+[00:54:56] Troy: no protein, no CBD,
+
+[00:54:59] Brian: any mushrooms.
+
+[00:55:00] Troy: no. I mean, that's maybe in future releases, but the, it does definitely give you a solid up and it's gonna hit the shelf soon. It's
+
+[00:55:09] Brian: All right, great. Es, what is it again? Espo.
+
+[00:55:11] Troy: gonna become the official drink of
+
+[00:55:13] Alex: what what is it? What is it called? we, 
+
+[00:55:15] Troy: you know, it's called Espo, which we'll call A German friend of mine, said to me is maybe unfortunately named.because in, I don't know, street German, it could mean something kind of sexy.uh,
+
+[00:55:27] Brian: you speak street German.
+
+[00:55:29] Alex: uh, I don't speak street German, but you know what? you've all turned on. I mean, you were part of that. You would turn on a, your, your mega drive or something and you'd hear the words Sega. The Sega master system? Well, for every Italian person it would say hand jobb.
+
+Like there's always, there's always a place where a word sounds like something else. You just gotta get used to it. The question is, is that beneficial or not?
+
+[00:55:58] Brian: Is this the only carbonated coffee drink on the market? There might be a reason that there's not
+
+[00:56:04] Troy: you guys some, 
+
+[00:56:05] Alex: coffee burps. 
+
+[00:56:06] Troy: I'm 
+
+gonna send you guys some of it. I hope that you like it. I think
+
+it, the three flavors are, lemon
+
+and some kind of cherry thing that tastes like Dr. Pepper and like a chai one that tastes a little like coke.
+
+And 
+
+[00:56:19] Alex: thought it was, it's, it's, but it's coffee, 
+
+[00:56:22] Brian: coffee. 
+
+[00:56:23] Troy: it's, it, it's, a flavored tonic together with coffee.
+
+[00:56:27] Alex: so it has 
+
+[00:56:28] Troy: Yeah. 
+
+[00:56:28] Alex: and lemon flavor. Okay. 
+
+[00:56:30] Troy: It's delicious. Good 
+
+[00:56:31] Brian: right. 
+
+[00:56:32] Troy: voice.
+
+[00:56:33] Brian: I'm open.
+
+
+[00:56:33] Outro
+---
+
+
+
+[00:56:33] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[00:57:08] Brian: all right. I'm gonna go have some Italian sushi.
+
+[00:57:09] Alex: Very nice. 
+

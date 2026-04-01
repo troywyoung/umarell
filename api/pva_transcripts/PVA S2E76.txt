@@ -1,0 +1,1275 @@
+PVA S2E76
+===
+
+[00:00:00] Brian: Okay, so the big news is we have a way for Troy's requested, voicemails for people to leave. They just need to go to memo dot fm slash PVA. 
+
+[00:00:11] Troy: I gotta say, I don't mean to come out swinging here, but this is a sign of the times, okay? I have asked for this for months.
+
+[00:00:18] Brian: I made it happen, 
+
+[00:00:19] Troy: nothing, and you did it in five minutes.
+
+[00:00:22] Alex: so what you're saying, Troy, is that you could have found it in five minutes. 
+
+Instead of asking me or Brian to do, it? 
+
+[00:00:27] Brian: So leave a message on, memo.fm/PVA
+
+[00:00:32] Troy: going to do that.
+
+[00:00:35] Brian: this will become like some sort of podcast recording. There's 
+
+[00:00:38] Troy: newspaper I worked at in the 90s, we created something called the rant line. it was a, voice recorder and you could just rant about Montreal or the scene or whatever. So just to be clear, the link is where? 
+
+[00:00:51] Alex: Well, you keep interrupting him,
+
+[00:00:52] Brian: To go to the PVA rant line, I can't do a Canadian, newspaper. I don't know, I don't know how you guys pronounce it. How do you say it, rant line? Um, Go to memo.fm/pva. It's very simple I tested it out.
+
+You can just hit record. Guess what it does? It records it. You hit stop and then you just enter in your email and your name or a fake one of both and it will come to me. So keep that in mind. 
+
+
+[00:01:44] Intro
+---
+
+[00:01:44] Brian: Welcome to People vs. Algorithms, a show about detecting patterns in media, technology, and culture. I'm Brian Morrissey, and each week I'm joined by Troy Young and Alex Schleifer. We saw some of you at a dinner Troy hosted last week. I gave a brief review of the food and the vibe in The Rebooting last week if you want to check it out.
+
+It was a good time, hopefully do more. Troy is a wonderful host. This week we are focused on platform shifts. As Alex says, the ground is shifting more and faster than it has in some time in the tech world, which usually means gaping craters are quickly open to swallow up media companies.
+
+But we don't focus on that. Instead, we discuss the Reddit IPO, X's apparent pivot to video, and I should say that we recorded this prior to Don Lemon announcing he would not actually be following through with his deal with X for his own show after apparently disastrous interview with Elon Musk that pissed off Elon Musk.
+
+Go figure. And we also talk about the effort to ban TikTok. But in the second half of the show, we have a guest. It is Tony Stubblebine, the CEO of Medium, who joined us to discuss just where Medium fits in the information space Like many others, I have found Medium to be a riddle over the years.
+
+It was launched by Twitter founder Ev Williams and became known in media circles for a few things. One was an admirably clean design and the other was that a drumbeat of regular pivots as it came face to face with the contradictions and trade offs of operating a digital publishing platform business. In 2017, Medium threw in the towel on ads with Williams saying, quote, It's clear that the broken system is ad driven media on the internet. Instead, Medium through its lot in with subscriptions, and it has sold quite a few. Tony took over as CEO in 2022. And he tells us that Medium is nearing 1 million subscriptions and that puts it near the top 10 of publishing subscription businesses.
+
+It also just makes it a 50 million business though. And it should hit profitability this summer. And all in all, that's not that bad. But this is a company that raised 163 million and it's something we touch on in this episode. We talked to Tony about how Medium aims to be the place for expert content online.
+
+And why journalism is apparently too expensive to produce because journalists have to learn about the stuff they cover because they don't know it already having done it. And in my favorite part, we talk about the frequent misalignment of incentives in the media business, particularly ones that are reliant on advertising. Go figure. It's a great conversation. I really appreciate Tony coming on and being so, candid in what's undoubtedly a unusual format of three opinionated people firing questions at you. We want to include more listeners in the show. So we're trying something new. You can send us a question or feedback through a voicemail.
+
+You just need to go to memo.fm/ pva you just click a button and you record a message and ask you for your name and an email. I suppose you could probably make, make those up if you want to leave something kind of mean. But send it in and we'll take that as consent to use it on the program.
+
+And I think it would be a lot of fun. So check it out, that is memo.fm/ PVA and hopefully we can make that a regular feature. And also be sure to rate and review this podcast wherever you get it, that helps us fight the algorithms. Now onto the show.
+
+
+[00:05:15] Episode Start
+---
+
+[00:05:17] Brian: All right. So I think today's theme is really around platforms because we always talk about, you know, the media on the other end of, platforms, constant shifting.
+
+And I think it'd be a good time to revisit some of the platforms. And so maybe in the news segment, we'll talk about Reddit. They got their IPO coming. I always like IPO filings because it shows the bullshit and what's real and what's not. And then we'll also, talk a little bit about, X, which is looking to take on YouTube.
+
+Stifle your laughter there. And then, also TikTok, which, could be banned. Who knows? Which, by the way, I said that there was a great case for banning it on this podcast, like well over a year ago. So I want credit for that.
+
+[00:06:02] Alex: Wow. You sound like Kara Swisher.
+
+[00:06:05] Brian: Well, I, you
+
+[00:06:06] Alex: knew it. You knew it before anyone else did.
+
+[00:06:08] Brian: no, I just said that, on this issue, I don't want to save it for them, but I'm like, I can kind of see, yeah, I can see banning it.
+
+Why not? Let's talk about Reddit's IPO first, though. Reddit aims to raise up to 748 million in the first sort of platform IPO since Pinterest, probably. Its IPO filing was a mixture of the good, the bad, the ugly. I guess on the good side is it's got 73 million, daily active uniques. 267 weekly.
+
+And, naturally it is looking for 6. 4 billion valuation, despite the fact that it has proven to lose money at prodigious rate over the last 20 years. It's had 20 years to figure out this business and, it either hasn't, or it's just decided it's taking an alternative path. It did $804 million in revenue last year.
+
+That's the good up 21%. The bad is a net loss of $91 million. I guess that's better because it lost 159 million the year before. The 6.4 billion, by the way, is a 36% haircut on the $10 billion valuation it was given in 2021. Troy, what was your takeaway from the filing? 
+
+Oh, one other thing. It takes 2000 people apparently to run Reddit and they don't pay the people. They don't pay the, the, the, the, the people who actually run it. People actually creating the content. That's insane. Go on 
+
+[00:07:41] Troy: people have been trying to monetize that type of activity like forums and such for a long time. There's a long history of Reddit of ad solutions on their community, which have been, met with hostility in the past. I've spoken to the people at Reddit about it, and I think that they're, Particularly given lessons of the past, they're trying to be really, really careful about how they do it.
+
+They now have an ad product that you'll notice in your Reddit feeds that are, that's, seemingly innocuous. The amazing thing now about Reddit is that it's benefited of late by a couple of things that I think help it a lot. One is that in an effort to clean up the, search engine results page, Google has become much more friendly to Reddit, which means that a lot, a lot, a lot of high intent, high intent queries are funneled into Reddit.
+
+If you want to, Learn about a particular automobile or any product or, just like stuff that, get, get reviews on a travel credit card. Like there's, there's a lot of great stuff in there and stuff that's really, really valuable consumer activity. So I think that if they find a way to, to turn that into. To transactions and take a piece of it. It's, the company's worth a lot because if their traffic at what are where you said 75 million daily actives, was anywhere near the monetization level of a Meta or just that alone would be a really, really significant business. So I think that, that being public is gonna put a lot of pressure on them to, innovate around.
+
+add formats much more aggressively. They're benefiting, like I said, not just from the Google thing where their, their traffic is up, but also, they now have a new revenue stream in terms of being the, training repository for AI, which, could mean, I don't know, a hundred million dollars a year in incremental
+
+[00:09:37] Brian: 67 million next year 
+
+divided 
+
+[00:09:40] Alex: Right. But that's just, just from 
+
+Google and it's not, it's 
+
+not 
+
+[00:09:44] Brian: How many of these are going to be
+
+[00:09:45] Troy: so I think it could
+
+[00:09:46] Brian: cut these, cut these 2000 engineers, let's get rid of them.
+
+[00:09:49] Troy: I don't know. Reddit is a really valuable part of my, internet experience, and I like it a lot. So, I'm hope, I hope they do well, and plus I think Jen Rong is, is a great person. So I hope she, does really well.
+
+Clearly from the filing, she's gonna make a shit ton of money. So good for
+
+[00:10:05] Brian: Good for Jen. Kudos, Jen. Alex? You're pro Reddit, I know that. What is, why, why are they spending 439 million dollars on R& D? Explain this, cause I, I come from publishing where there's no money. 439 million dollars, what, what have they come up with? Have they invented something?
+
+[00:10:22] Alex: I mean, look, it's, it's a, it's a big site that gets a lot of traffic. So a lot of that is around Reliability. I'm not sure what what they've innovated on but their algorithms are definitely pretty good right at surfacing content And they shut down all the apis To third party apps. So my guess is that they're also investing a lot in, in new tools.
+
+And, there's probably some AI going on in the background. My guess is that it's not as cheap to run as they wish it could be. So a lot of the R and D is about how like optimizing that. 2000 people sounds like a lot of people, but you know, considering the scale of Reddit, it's not, it's not insane.
+
+Although I just found out, just lately that, what is it called? The app telegram.
+
+[00:11:06] Brian: Telegram, yeah.
+
+[00:11:07] Alex: Yeah. Which is 
+
+[00:11:08] Troy: Fifty people. There's
+
+[00:11:09] Alex: 50. Yeah. With 50 people. Yeah. But 
+
+[00:11:12] Brian: 50 people in Yee Berg can, can run Telegram, but like you need 2000 to, to keep Reddit up and running and you don't pay for any of the content. Wow.
+
+[00:11:21] Alex: yeah. I mean, my guess is that they
+
+[00:11:23] Brian: No wonder Silicon Valley people lose money when they go into publish it. I mean, Jesus.
+
+[00:11:27] Alex: But when you have a platform like that, so much of it is stuff that goes on in the background. It's like site reliability stuff. There is definitely just like safety, not only brand safety, but all the moderation stuff. My guess is that they're trying to build better moderation tools, and automate these things because that's, Probably where a lot of the cost, is and they want to build a platform that's more safe for advertisers.
+
+So I, I think they can turn this around, especially with the cash injection. I'm, I'm pretty bullish about it. And there's no way, there's nothing close to competing with Reddit. Like we forget that sometimes, but like, even, even Google, right. Has, has more of a like direct competition on its search business today than Reddit has on its business.
+
+[00:12:10] Troy: a lot of nefarious shit on, Reddit.
+
+[00:12:13] Alex: Yeah on the internet
+
+[00:12:15] Troy: on
+
+[00:12:15] Alex: it's the internet
+
+[00:12:16] Brian: But Pornhub's not like doing an IPO, so.
+
+[00:12:20] Troy: This is as right maybe it should 
+
+[00:12:21] Brian: Well, I, it's not, and, OnlyFans does not doing an IPO either. But the difference is OnlyFans makes a ton of money. So it'll be interesting to me to see what the appetite is in a post ERP era for a technology company that, that has had 20 years and has not figured out a way to not lose a lot of money.
+
+I
+
+[00:12:44] Troy: So bottom line, you get an allocation of stock, to, to participate in the IPO. Do you buy it or not?
+
+[00:12:50] Brian: I would never know.
+
+[00:12:51] Troy: You wouldn't buy it. Alex, would you buy it? Do you think it's going to pop for a while?
+
+[00:12:55] Alex: i'm all in on crypto right now my crypto is popping Yeah, I think it's gonna pop I would buy it. I would buy a little bit
+
+[00:13:01] Brian: Really?
+
+[00:13:02] Alex: Yeah Yeah, I think it's one of the important internet businesses. I think we're At a moment right now where? There's going to be a lot of shifting happening, and a lot of value generated and destroyed.
+
+I think Reddit's value is pretty secure.
+
+[00:13:18] Brian: so basically the shifting your bet would be that because of the shifts with LLMs needing data and Reddit being just such a great source of ton of data, I, I used it to get our solution. Memo. fm slash PVA from a Reddit forum. That was my secret, Troy. 
+
+[00:13:41] Alex: right.
+
+[00:13:41] Troy: There you go. 
+
+[00:13:42] Brian: uh, voicemails, podcast, 
+
+Reddit.
+
+[00:13:44] Troy: too. I'd buy it. And I think that the economics of it are, you know, the market's going to pop. in that going to take some time. I think that, they've set the price, at a place where they think, they can generate some excitement.
+
+I'd buy it and I'd sell it, I, who knows what will happen, but 
+
+[00:13:59] Brian: Okay. Buy it and sell it. That's a different thing.
+
+[00:14:02] Troy: that's what I did with Snap. I got an allocation. I bought it. I sold it the next day.
+
+[00:14:06] Brian: Smart. Yeah, I think it because the ad story is a difficult one to tell because like you were saying earlier, chat never monetizes. And this is as close as the modern
+
+[00:14:18] Troy: There's a shit ton of signal in there. If they can find a way to create an ad product that gives, in any way contributes to the kind of livelihood and efforts of the community without feeling like it's exploiting them. I think that there's a huge amount of money in there.
+
+[00:14:34] Brian: Yeah, if 
+
+they were like a four year old company, I would be into that. But what in the world have they been doing for 20 years that they haven't figured out how to square that circle.
+
+[00:14:42] Alex: it's been a complicated company, it's changed owners. It was, at some points, places like Digg look like they were overtaking. Do you remember D I G G, Digg,
+
+Kevin Rose's thing? 
+
+[00:14:53] Brian: They used to send some good traffic back in the day. When you got dug?
+
+[00:14:57] Alex: and, they built up this real, like massive corpus of information to have, a user based fight.
+
+The relationship is pretty contentious with the Redditors, that's going to happen. but if you look at all the movement that's happening right now in the market, it's all kind of. To their benefit. One is AI is starving for data that can be licensed, and has context assigned to it.
+
+And I think these kinds of large scale conversations are really, good, Two, they don't have direct competition three. They have not only an old corpus of information, but they're also pretty good at live stuff. If you actually go into the right, forums, you'll have. Live chats about, the Oscars or sports events, et cetera.
+
+And that's also very valuable. On top of that, the AI stuff is also going to likely. Enable them to reduce a lot of their costs, especially around moderation Creating an ad safe platform targeting all that type of stuff. So You know 20 years of like dithering around but now with the cash injection and the right leadership, it's pretty potent especially as places like twitter are are Faltering and they have everything they have video they have text they have everything so It's a behemoth if they do it, right?
+
+I Okay. Can we move on to X?
+
+yeah
+
+[00:16:11] Troy: wait for my XTV app.
+
+[00:16:13] Brian: Da dun! We need like a ding for the next, topic.
+
+
+[00:16:17] Topic: X
+---
+
+[00:16:18] Troy: I like my YouTube TV app.
+
+[00:16:20] Brian: Okay, well, soon you will be able to download an X app to your TV, which is really exciting. Because it turns out that people watch videos on X, 8 out of 10 user sessions. I do. Most of them are like actually just ripped off TV, but that's okay.
+
+YouTube got its start there. Apparently Elon Musk's goal is to get users to watch long videos on a bigger screen. Part of his initiative to make this the everything app sort of makes sense. Brought in Linda Yaccarino. Or is this just yet another pivot for X, Troy? 
+
+[00:16:58] Troy: I think it's interesting that we're seeing the internet migrate to televisions more aggressively. And, and if you look at consumption of YouTube on TVs, I think that's kind of data point. the thing is, is that YouTube is an incredible repository and a incredible algorithm and there's just a lot of signal there.
+
+So you don't really have to follow anyone. You just have to turn it on and watch a couple of videos and you'll be delighted by what you get. I just don't think you're going to get the same thing off of X. They got to start somewhere. Clearly he thinks, or someone thinks, Linda, others, that the path to monetization Is through video and I understand why but I don't know.
+
+I'll believe it when I see it, but I'm very skeptical that it, that there's enough supply in there to make it interesting.
+
+[00:17:46] Brian: Hmm.
+
+[00:17:47] Alex: Yeah, I think it's just stupid. I don't know. I can't I can't take this stuff seriously anymore I get the sense that he's like constantly just like zigzagging depending on what he's Picked up or a piece of data he sees. I mean the fact that
+
+[00:18:01] Brian: He does have Don Lemon creating videos and Tucker Carlson.
+
+[00:18:04] Alex: yeah, 
+
+[00:18:05] Brian: put one up there.
+
+[00:18:07] Alex: Yeah, I mean sure, like the question is like what is the value? And why would I go there instead of somewhere else? At both as a creator and as a viewer they're gonna start having to sign up Start doing exclusive deals with people. It's not very capital efficient, right? And so when you're trying to kind of get creators on board, and then they need to be really aligned to your CEO.
+
+And I don't know how many people want to be aligned with him at this stage, or, if it's a wide diverse group of people that you need to build a platform like that. And I don't know if there's a ton of money in it. Like it keeps, this idea after idea that doesn't seem to stick, right? So, It's this is another one of those and Troy, I'll believe it when I see it, but I'm I've stopped listening to these things
+
+[00:18:51] Brian: Yeah.
+
+
+
+[00:18:52] Brian: I just wonder what is the unique supply that they're bringing, right? I, I, absolutely there's a lot of video on there. It's, it's originated elsewhere or it's not really 
+
+stuff 
+
+that 
+
+[00:19:03] Alex: it's a clip. It's a it's a clip feed.
+
+[00:19:05] Brian: Sit down on a TV. Maybe I'm missing. Maybe I'm in the minority. That's not watching like a half hour
+
+[00:19:11] Troy: I don't think there's anything there that isn't on YouTube.
+
+[00:19:13] Brian: Do you remember actually this was the Twitter plan I don't know if he was paying attention to like
+
+early Twitter remember They were doing, earlier
+
+Twitter was doing that.
+
+They were doing the, remember they got the Thursday night football game and they were, you could watch it on Twitter and then you could comment. Cause back then people actually did things other than just argue and accuse people of things on Twitter. And you could talk about the game and make little jokes.
+
+I miss those days. R. I. P. Along 
+
+[00:19:42] Troy: Rip. Next item.
+
+[00:19:44] Brian: All right, next item,
+
+
+[00:19:45] Topic: TikTok
+---
+
+[00:19:45] Brian: TikTok, going down. Lawmakers are after TikTok. They're trying to force ByteDance to sell it. This is a game of chicken. Geopolitical chicken, I would call it. It's being called a TikTok ban, but it's just trying to create leverage to the obvious security concerns of TikTok being basically used by every single member of America's youth while it is owned by ByteDance, which any Chinese company has deep ties to the government.
+
+And by the way, the Chinese government will not allow Facebook or other American social platforms to operate there. So why would we possibly do that? That's why I just think that it does make some sense. But I still think It's just leverage. Donald Trump, he turns out he's flip flopped, believe it or not, on the TikTok ban.
+
+He might have gotten a donation from an investor ahead of this, but, can I read a Donald Trump quote?
+
+[00:20:43] Alex: Please,
+
+[00:20:44] Brian: Okay, I'm not going to do it in Trump voice. So he said, so I had it done. And then Congress said, well, they never, they ultimately usually fail. They are a good, like extremely political and they're extremely subject to people called lobbyists who happen to be very talented, very good, and very rich.
+
+I could have banned Tik Tok. I had this. Banned. Anyway, he went on and on and on about this, and he said, banning it will just benefit Meta and, their also enemies of the people. TikTok 
+
+itself 
+
+[00:21:20] Troy: for, what's his name for Zuckerberg?
+
+[00:21:22] Brian: does he have one? Oh no, he called him something Zuckerbox. Zuckerbox because of the, the, the Zuckerbox lockboxes.
+
+This is, I'm not ready for this season. The new season but it's something about I guess zuckerberg. He's calling them zuckerbucks and You know the lockbox. This isn't one of his this is not some of his best work
+
+[00:21:44] Troy: They should force them to, they should force them to, Divest or shut it down.
+
+[00:21:48] Alex: you're talking 
+
+about. Oh, I thought you were going to say force him to like use a different name for Zuckerberg,
+
+[00:21:52] Troy: No, I'm talking about TikTok. I mean, listen, it always bugged me that you couldn't have American. Social, networks in China. Why should we let Chinese social network in the U. S.? Shut it down or force them to sell it to
+
+[00:22:06] Brian: but the kids, this is what, so Trump, I think Trump did find out, I mean, leave aside the donations, donations flow to every politician, this reminds me of, remember the weekend in
+
+[00:22:17] Troy: has a massive political donor that's a, that's a, that's a huge
+
+[00:22:21] Brian: Jeff, yes, so the, the, remember the weekend where they were going to ban vaping? Yeah.
+
+And then, then someone like told Trump's by the way, like 75 percent of your base is like 
+
+[00:22:32] Troy: I'd be more bummed if they banned vaping. 
+
+[00:22:35] Brian: I, yeah, I could see, I could see banning zins. 
+
+[00:22:38] Troy: Why?
+
+[00:22:39] Brian: because kids are, are what the, I've heard This Don't, is 
+
+a, this is a scourge. This is a scourge of, suburbia. The kids are getting into the parents supply of zins, and they're all over the like, junior highs and the high schools.
+
+My sister lives in Winnetka, Illinois. I get all the dirt.
+
+[00:22:58] Troy: your zins away.
+
+[00:22:59] Brian: You gotta lock it up. You gotta lock it up.
+
+like your guns. Good thing in America we already have gun closets, so. Just put the zins in there. So 
+
+okay. 
+
+[00:23:07] Alex: is start buying up meta stock if this thing goes down there's Everybody's moving to instagram
+
+[00:23:12] Brian: so, on the numbers, TikTok has not been affected by this really at all. They're still, their ad business is still gobbling up share. It's six billion in the US alone, at least from what I saw. But the vibes, the vibes are moving against TikTok,
+
+[00:23:25] Troy: For sure.
+
+[00:23:26] Brian: There's been reports of slower user growth, annoyance at all the ads on there with the TikTok shop.
+
+Any social network tries to add commercial intent
+
+[00:23:38] Troy: I mean, Brian, if nobody on the podcast thinks that we should keep it, that we should maintain status quo, let's just put a check mark next to this one.
+
+[00:23:46] Brian: is that it?
+
+[00:23:47] Troy: Yeah, it's done.
+
+[00:23:48] Brian: TikTok is done?
+
+[00:23:50] Troy: No, no, no. I mean, like either sell it to Oracle or whoever's going to like buy it. Someone wants it.
+
+Just a huge amount of money. Well, no, I mean, that was last round.
+
+That was like a friend of Donald Trump. So that that was last round. Trump is a massive opportunist. Of course, he goes the other way on this, particularly when it means money to him. Listen, You can't have Facebook or Google or anything in China. Clearly, if you wanted to, you could manipulate the feed on Tik TOK to affect sentiment on something in the U S so shift it or shut it down and, end of story.
+
+That's it. Do your job, Senate, Congress.
+
+[00:24:26] Brian: Call your congressman. So TikTok tried to get people, tried to get, its users to put pressure on their representatives to
+
+[00:24:35] Alex: Well that backfired massively, right? I mean, I think they were just saying look at we're just a social network and then they managed to Target target the energy out of a bunch of teenagers to go Complain to to senators. I think that backfired massively i'm with troy I mean this thing is gonna happen.
+
+I don't think the current situation is You It's completely untenable. On top of that, the product has become more, China's saying that they will never sell or, or people that speak, on behalf of China, 
+
+[00:25:05] Troy: I think that was kind of ill advised, huh? Use the platform to put pressure on,
+
+on Congress. Yeah, I mean, it's like asking opioid addicts to send letters to their representatives.
+
+[00:25:17] Alex: Yeah, I think we've seen a lot of bad decisions. I thought maybe it's a good segue into Apple doing bad decisions with the way they've been responding to some of the stuff around
+
+Epic and DRB empowerment and Spotify. It's kind of, things are tense right now. And I think it's because we're in this massive technology driven shift and everybody's feeling it and everybody's trying to hold on. 
+
+
+[00:25:38] Topic: Apple
+---
+
+[00:25:38] Troy: did you read Apple's response to the Spotify allegations?
+
+[00:25:43] Alex: so snarky. It's kind of delightful.
+
+[00:25:45] Troy: Well, but they're, I think they're kind of right. Like they, they built, a clean, well lit, highly functional place on the back of an amazing product that they've innovated on for a long time. And people like that and they used it and Spotify benefited massively from it.
+
+And they're like, 
+
+[00:26:05] Alex: well, I think that's all fine until you invite people to that well lit place and then, charging them 30%, and then build a competitor that doesn't get the same fee applied to it. Like, I think that's the tension, right? I'm not saying it's unfair. I'm actually, a big fan of a lot of the stuff that they've been doing.
+
+I think that there are. it's contentious when you have a competitor on the market, it's contentious when you don't allow people to put specific wording in that says that there might be a better price if you go on the web, like there are a lot of restrictions that I think, people are starting to see as not only anti developer, but I anti consumer.
+
+And I'm just playing devil's advocate here. And, when you read that and when you see, the way, places like the European Union are going to respond to that. then it shows that things might be changing and shifting faster than we thought they
+
+[00:26:56] Troy: Sure, I agree with that. I mean, I think the more interesting question and maybe one that we could do in another episode is, is Apple coming off the rails? Have they made a bunch of bad decisions as to where to invest money? Their products peaked, their cash gusher and in, in the iPhone, I think on some level the Vision Pro was ill advised, they killed a car product.
+
+Meanwhile, their. They're way behind in connecting their devices to the next wave of innovation. That's a I and I know they're working on something. Blah, blah, blah. That's great. But like they're behind.
+
+[00:27:30] Brian: They're valued at 2. 7 trillion.
+
+[00:27:33] Troy: And AOL made 400 million last year in EBITDA.
+
+[00:27:37] Alex: No,
+
+[00:27:47] Brian: well,
+
+[00:27:48] Troy: Not you in particular, but that was a fun,
+
+[00:27:51] Brian: turned oddly aggressive. he's 
+
+[00:27:53] Troy: like, what? You're talking about perplexity all the time. He's like, who gives a fuck about perplexity? That's not what 
+
+[00:27:59] Brian: that's that. I know, I know, I was told that at the, by the way, we
+
+[00:28:03] Troy: This is a podcast about the future.
+
+[00:28:06] Alex: yeah, I was told that when we were trying to send emails to people yeah, I, I used to hear these complaints too. are those people complaining about that signing any checks and making decisions, Troy? Because run the fuck away
+
+[00:28:16] Brian: I think he is. 
+
+[00:28:21] Troy: Oh, I'll 
+
+[00:28:22] Brian: look, there's near term opportunities that are still in things like AOL and making sure those dial up users keep,
+
+[00:28:31] Troy: send it in the checks.
+
+[00:28:33] Alex: No, I mean nobody's we're not saying that apple is going to disappear overnight I do think that there is There's more shifting going on Among the top five or six companies than we've seen in a while. Like I think be Very stable are no longer stable. I think there's question marks around apple strategy around ai You I think that they are big enough to take a lot of bets.
+
+But I was also surprised by the intensity of the reaction to that, which, shows that they're either scared of worried, which I don't think they are, or they're just genuinely pissed off that people are complaining about the way things work. I think it just came across as that, like a little bit of how dare you, which was interesting.
+
+And and you're feeling that kind of tension everywhere, I think everybody's a little uncomfortable. We don't know where things are going to turn next.
+
+[00:29:22] Brian: But I think that a lot of the discomfort of this is that governments, which at their best are acting on behest of society. The size is like it's 2. 7 trillion. Now, is it going to be like, what's the plan? That Apple becomes 20 percent of global GDP?
+
+Like what is the idea? No company continues to To, and these companies have gotten so massive that it's inevitable that outside forces are going to break them apart in some ways. You can't just keep growing as these massive centralizing forces. Like what's the idea that in 20 years Apple is the first 400 trillion dollar company?
+
+[00:30:03] Alex: yeah. Troy, to your point, like you're saying, okay, maybe they were right with what they were saying, but it does just, just go, keep continue growing because they're right because they build the best product because we can't even, because it's like Google's free. Apple just builds the best product.
+
+And so these companies. Are never going to get any smaller and there is no way to launch your phone competitor today And that's not because they're doing stuff that might be illegal, but it's just because they've gained such a Advantage by being so good at what they do that we 
+
+[00:30:34] Troy: It's great. They may be very, it may be justified for them to operate with the conservatism that they bring there in your 401k, they grow with GNP, whatever, but they're boring. I'm just not that interested in Apple having spent a lifetime with every product they've ever made. I just think they're kind of boring right now.
+
+And maybe I just need to go get the headset, strap it on, take some mushrooms and chill out. But
+
+[00:31:00] Brian: By the way, Zuckerberg Everyone's, the headset is out, ladies and gentlemen. Zuckerberg is continuing to take pot shots at those goggles. He took some more, everyone, everyone's like trading fire and Meta's just like hanging back.
+
+[00:31:14] Troy: I mean, Alex was challenging me right there. Cause he pulled out the goggles, he whipped out the goggles and says that they're not boring. Look, they made 
+
+these 
+
+[00:31:21] Brian: taunting you? I was looking, meanwhile I was looking for some cord in the airport and I was like being faced with 9, 000 different like Apple cords that they're now, that they're selling. I'm like, this is, this is the path that capitalism takes us on. Eventually you become the people that are making all your margins off selling cords and hitting people's credit cards for bizarre charges for 3 every now and again.
+
+I have no idea what services, you know, that's services revenue. 
+
+
+[00:31:47] Guest Start
+---
+
+[00:31:47] Brian: There we go. Yeah.
+
+[00:31:49] Tony: I might show up late, but I might show up hard. How's that? 
+
+[00:31:53] Alex: Hey, how are you?
+
+[00:31:54] Tony: Hey, everyone. I'm
+
+[00:31:55] Alex: we were all blaming each other here as to what was going on.
+
+[00:31:58] Brian: I got blamed.
+
+[00:32:00] Alex: Yeah, Mostly Brian got blamed. 
+
+[00:32:01] Brian: We're new on the guest front. So 
+
+that's 
+
+[00:32:04] Tony: Uh, all right, it's fine. We'll have fun anyways. 
+
+[00:32:08] Troy: This isn't like the Verge podcast or something like that. One of 
+
+[00:32:12] Tony: Yeah, well, I'm not doing well enough to get on the Verge podcast 
+
+yet, 
+
+[00:32:16] Alex: wow. Thank you. That means a lot.
+
+
+
+[00:32:19] Brian: So we have a guest. We're going to continue talking about, our platforms with Tony Stubblebine, the CEO of Medium. Tony became CEO in 2022. He's replacing, founder Evan Williams. You actually, you ran. I think one of
+
+the most popular publications on Medium beforehand called Better Humans, is that correct?
+
+Heh. 
+
+[00:32:42] Tony: three publications that are all sort of similar. Better Humans, Better Programming, Better Marketing. And the board, when they hired me, called me a power user, but I almost think that undersells it. I think those three better publications were getting about 2 percent of Medium's traffic. So I was like, this guy.
+
+for a platform that's way too much, right? Like I
+
+[00:33:04] Troy: So it was, 
+
+just all AI volume, just crap. 
+
+[00:33:08] Tony: this is pre AI. This was good 
+
+stuff. I published a lot of good stuff is what I think. 
+
+[00:33:12] Troy: before ai, there was SEO content. 
+
+[00:33:15] Tony: Yeah, we got some of that. The programming stuff always did
+
+really well with SEO 
+
+[00:33:19] Troy: Yeah. Brian's a big fan of SEO Content
+
+[00:33:21] Brian: I like SEO content, useful service journalism, there's nothing wrong with it. so tell us, I mean, I've, I've covered medium over the years. I've, I've assigned stories about medium. I've been through the pivots. Not going to lay them all out. But anyone in the journalism industry knows, knows from the, We're all about like professional creators.
+
+No, we're about like amateurs and not amateurs. I
+
+should say that experts. No, I'm pro pivot. I think you got it. You got to keep pivoting. And I think I'd be interested to know with where you see medium now in this very chaotic. I call it like the information space. I mean, It used to be the media and now it's all kinds of things that are jostling for people's attention obviously.
+
+And, and things are going to change even more with AI and the deluge of crap that will be coming with
+
+it. But what is the, what's the role that medium
+
+plays now?
+
+[00:34:18] Tony: first of all, I appreciate the universally positive coverage that you and all the rest of media has given us over the ages. 
+
+[00:34:26] Brian: We were 
+
+never negative. I don't know what you're talking about, but like we didn't
+
+write negative stuff. we just covered it.
+
+[00:34:32] Tony: I think rightfully, actually, we were, we, we had a period where we really deserve criticism, but I like where we are now, because it's counter narrative to a lot of the things that you're talking about, that we're like trying to get out of the creator economy, trying get out of the attention economy, fighting back again, against AI driven content.
+
+and trying to pull, something that I would call a compliment to the best of what's out there already. Like, I think what got lost in the evolution of the internet was just hearing real stories from real people. And a lot of those real people, they might be an amateur writer, but they're a professional at something else.
+
+And, they got crowded out. Cause right now on the internet, you have to be a hustler in order to get heard. And I don't think that's the same as being qualified to be heard.
+
+[00:35:20] Brian: Right. Yeah, that is an interesting thing because, I mean, you see, so is that the sort of, like, when you think of, Substack versus Medium, I'm sure you get the question all the time, right? Like, so Medium had this, I think from the outside, you would think, well, this is what Medium had. I mean, Substack just made it into an ESP versus a site.
+
+But to me the differentiation is, Substack you're building a publication. In some ways, like you said, you built like a publication on Medium,
+
+but for the most part it's not for people building quote unquote brands, whether personal or otherwise. That 
+
+[00:36:00] Tony: not right for them, and so, again, to not be overlapping. There was a period, definitely, where we were competing for The, same authors, and I think that was a mistake on Medium's part. like, the person I want to hear from is too busy living to go out and build following, right? And 
+
+[00:36:18] Troy: line. What's 
+
+[00:36:20] Tony: I want everyone to say that. So it's like, I think the, the sort of the middle of the content world right now has professional journalism, some journalists on one side and tools like Substack are great for them. Like I, you have Substack newsletters and I think that's exactly right for you. And then you've got this entire creator economy.
+
+That may be the the top of it is net positive for the internet, but the bulk of it is just drowning out everyone else. 
+
+[00:36:49] Troy: the difference, man? What's the difference? Is it just the distribution mechanism like. 
+
+Is it because, my page on Substack starts with an email, and if I do it on, on, on Medium, it's just a page somewhere on the internet? Like, I, I'm trying to understand what the real difference is, other than these things sort of start and develop a kind of spiritual following, and they become something that we assign to them.
+
+I'm just really wondering, they're both just platforms for content, but
+
+one's, one was originally based on, you know, a newsletter concept. 
+
+[00:37:20] Tony: I'd look at it a hundred percent through the distribution, like mediums, killer distribution or killer features distribution. And it's about who do we give it to and why? So I think, this is my like amateur analysis. I think the incentives on substack are. to give as much distribution as possible to the top end, creators.
+
+which again, I think you probably get some distribution that way because you're in that, in that bucket. Even though I was sort of giving you shit when I showed up. but, I think, like, we're giving distribution not on the author level but on the article level. Is this article great? Like we redid our recommendation system to be able to spot an individual piece of writing, even if it wasn't coming from someone with a a following.
+
+So we're going to do much better for like a professional, let's say you're a VP of marketing and you want to write about your, you know, approach to marketing strategy or something Theoretically, maybe you should have been, because you're in marketing, you should have been building an audience your whole life.
+
+But if you haven't, you need a place to publish that. And like our systems will find that and give that, 
+
+[00:38:30] Troy: So it's almost like medium exists to promote content on an anatomical level. And if you have the sort of canonical piece of content that deserves people's attention, it's good for that as opposed to the commitment you make as a as the audience of a Substack newsletter that you're basically signing up for a newsletter.
+
+Can I, can I back you up though? And, you know, just start to maybe hopefully find stuff that, I'm interested in, in Medium and I've watched it for a long time and I know a lot of the great people that were there. Wonderful people like friend of yours Alex, Michael Sippy was there for a bit and, And, and I, I don't know ever real well, but I'm wondering when I've handed you the keys,
+
+did he say, what did he say? It's a little banged up, but the engine still works good. LIke, 
+
+[00:39:14] Tony: There was a lot banged up. 
+
+[00:39:16] Troy: like what, like for Ev, this is a, a womp womp, right? You know, after creating Twitter or something like, there was a lot, a lot of sort of, excitement about how, medium would kind of revolutionize content creation on consumption on the internet from kind of professional all the way back to enthusiast.
+
+And so, good on you. If you, if, you know, write it at a bit and helped it find its it's kind of natural place in the ecosystem, but I'm kind of
+
+wondering, 
+
+you know, is Ev happy with you?
+
+[00:39:46] Tony: Well, he's fucking loves me. mean, just to be like really honest about like how he handed me the keys at some point during the interview process, I had to tell the board, you're going to have to recruit me at some point because all they were doing was telling me how bad it was and I already knew that I was deep into The, ecosystem.
+
+I understood what had gone wrong. and so I came here with basically a double challenge. The, first is a financial turnaround, which is basically done. We're like, a couple hundred thousand dollars a month away from profitable right now. Should get there by July. But, you know, that's not really why I came 
+
+here.
+
+I, I 
+
+[00:40:24] Troy: that, How much money would that, be? Does that make you uncomfortable? 
+
+[00:40:27] Tony: A little break even around a 55 million a year ARR. 
+
+[00:40:32] Troy: that's almost all subscription, right?
+
+[00:40:34] Tony: all subscription,
+
+[00:40:35] Troy: yeah. There's none of those pesky ads in there.
+
+[00:40:38] Tony: no ads. I mean, if you, if you 
+
+really are, affiliate, it's 
+
+[00:40:42] Troy: the next ad.
+
+[00:40:44] Tony: we're not doing any of that. Well, so that's the thing that Ev did that I think this actually continues as legacy where he's often been ahead of the curve, but been a little weak on execution, right? Like that's what people said about him at Twitter. And I think the same thing happened here. So the intention that he had when he pivoted medium to a subscription was to get out of the attention economy.
+
+and I saw that strategy doc when he did it, he showed it, he shared it with me. And then I spent like four years waiting for him to do the things that I thought, obviously. had to be done. And they just, they didn't get it right while he was still there. And the whole time he was doing that, I was giving him this pitch about who the target author is.
+
+The target author is someone who already knows what they're talking about, but doesn't have time to build an audience And that market, that supply of authors is way bigger than the creator economy itself. They just don't have a place to go. So I've been pitching them that the whole time, even when they were paying journalists.
+
+I, I remember going into the office and explaining how I could get a 5, 000 word story that was deep and filled with expertise. For, you know, 500 out of an expert, and they would have to pay 10, to get a journalist to write it. It's because the expert already has it in their head, and they're just dumping it.
+
+You know, the reason journalism, 
+
+[00:42:13] Troy: love that idea. 
+
+[00:42:16] Tony: I don't mean to be at odds with journalists, but it's like, Journalism is expensive because you have to do so much research up front, right? That's, to me, that's economically why it's, Kind of a difficult business. and if you can get, subject matter experts to, share their expertise, which mostly they're wanting recognition and distribution, then, you're in a different business.
+
+And I think obviously 
+
+for us, a healthier business.
+
+[00:42:42] Brian: Can I jump in Troy? I want to, I'm going to just jump in and we got to get Alex in, but I totally agree the either or thing to me is, is whatever, cause they do different things. There's, there's room for both, believe 
+
+it or not. But like expert content is, absolutely, I think part of the big wave of whatever is to come next.
+
+And I totally agree on that. Yeah. But one of the questions, and it's kind of tactical, you guys are very wedded to text and I think that's actually a gating factor to a lot of expertise level content being disseminated because a lot of people find writing really difficult. And that's why I think podcasts are actually a really good thing because people who have expertise who are not writers and, they, unlike the journalists who have to do all the, the journalists can write it really quickly and the experts who don't write they, they take a long time or what they write is a total mess.
+
+There are people who can do both. But why, why writing? Why text? The entire internet is going, seemingly, at least I keep being told, is going in a totally different direction. Alex tells me I'm a dinosaur because, I make a living off writing and that nobody's gonna be reading, in what, two years, right, Alex?
+
+Okay,
+
+yeah. But why, why writing? It seems like
+
+not well suited for expertise.
+
+[00:44:05] Tony: I love writing. I don't know that it has to go beyond this, but beyond just, I have to be able to justify a business and we don't feel at all limited by it. You know, maybe it's actually helpful for us if everyone else is pivoting to video. It gives us space to grow in text. I think just fundamentally, I think there's something inherently healthy about writing.
+
+Like it forces you to think. Differently. Like it's the that Amazon switched from a slide decks to memos, right? Jeff Bezos just didn't trust a slide deck, but he trusts it if you write it, you know, if you write it in long form, so I just, I continue to think about it more from a quality perspective rather than a trend perspective, the thinking and information is better if you get someone to write it.
+
+[00:44:55] Alex: how do you respond to, then changing consumer habits? Because I don't, I don't think writing is really the problem. I don't really think it's the medium. It's just that, attention gets distributed, especially on the reader side. And my sense, my hypothesis is that a lot of these tools like perplexity and the stuff that ARC is, building, is going to just simplify stuff for me.
+
+I don't mind reading, I just don't like reading that much. And my sense is like 80% of the 
+
+[00:45:24] Troy: spot run. 
+
+[00:45:26] Alex: Well, 
+
+I think 90, 80, 90 percent of the writers and Troy is definitely guilty of that, like too much. Like we get it. Like the, the salient points are easy to pick out. And, no, but in all 
+
+seriousness, I 
+
+[00:45:40] Brian: taken to balding words, that helps.
+
+[00:45:42] Alex: There is a culture now of people just spending less time on this stuff. And, that means that content that you're writing gets digested and spit out the other side. Have you been thinking about that? Are those things that you're defending against if you're Purists about
+
+writing or how
+
+[00:45:59] Troy: think he likes writing. It's a writing,
+
+it's a writer's environment. 
+
+[00:46:03] Tony: You're like, what's the point of life? Like you, this question makes me like boil a little bit.
+
+[00:46:09] Alex: Well, that's why I asked it 
+
+[00:46:10] Tony: why are we trying, like, what are we trying to do as entrepreneurs or as
+
+con whatever content
+
+creators, whatever we call it, make money. Okay. All right. Well, I'm like, we're making money.
+
+like beyond that, is there any higher purpose?
+
+And this is why we don't want to be in the attention economy. I don't care if I lose the attention game. I'm not trying to keep your attention. I'm not trying to fill up space in your life. Like great writing is transformative, right? And there's a reason that humans communicate through story. It's because we're not just a few bullet points away from understanding, right?
+
+[00:46:48] Alex: True, I mean I get that as a core mission or even a reason to get up in the morning my my question is more around the fact that you're part of the Attention economy today as long as you have to be picked up through a browser, right? And if you're If you're in this environment where the tools that are even used to access you are used to recompile the content into all sorts of like recontextualized way or Google right doesn't just send you to the site but just gives me oh great a bunch of expert content Like i'm just going to give you an answer.
+
+Everybody is fighting for that space in between you and the reader What are the things that you do to kind of sustain? The author's work or to to protect the environment that you're building
+
+[00:47:34] Tony: it's just such a theoretical concern that's not backed up by what we actually see. Like our SEO traffic is up 50 percent year over year. People still share, you know, great writing everywhere across the internet. It's true, the platforms that are probably a big part of distribution feel like they're falling apart right now.
+
+And that is a little bit sketchy. But I think these are just matters of degree. And I look at historically, it's not like, cliff notes put the book industry out of business, right? Like people would rather read a book than a cliff notes. And I think this is what you're talking about with AI summarization ends up being fairly similar.
+
+Like a person who is never going to read the book might read the summary now, but the people that wanted to read the book are still going to read the book.
+
+[00:48:19] Alex: Yeah, Cliff Notes didn't own the library though, like I think that's the problem. my concern is more, around, you're putting this content on the internet that's freely available, what happens to it over time
+
+and as writers, what do we expect and how do we expect
+
+people to consume our content in the future? 
+
+[00:48:34] Tony: That's a real tension with the AI companies right now. 
+
+[00:48:37] Troy: yeah, I mean, I have a number of questions, you remember when the Ted conference was in, It was south of San, where it was in Cal, it was in
+
+Monterey, right? And I
+
+remember 
+
+meeting, I think Eva was there. with Odio. 
+
+You were probably there at the time. 
+
+[00:48:52] Tony: his head of engineering there. Then, yeah, I remember that. 
+
+[00:48:55] Troy: Yeah.
+
+And so Odio was early, right? Like again, a great example of forward looking, vision. Uh, and then, so you saw the beginning of Twitter, I take it, because it evolved out of that group, right? And now 
+
+you. You see Twitter now, what do you think of where
+
+Twitter's going? Are, are, what, what are your observations about its transformation? 
+
+[00:49:15] Tony: Yeah, so I was there. I was Jack Dorsey's boss, actually, when he built the first version, and I had just given him a raise, which I think helped with the 
+
+retention. growing a beard in your 
+
+[00:49:25] Troy: honor.
+
+[00:49:26] Tony: totally. We started to look too similar, and I, I trimmed my beard way back after that. someone described Twitter as the the PVP of social media, the player versus player reference in games where like some games are cooperative, but they have these areas where you can just go kill each other, right?
+
+And so it's like Twitter is a place if you want to yell at people and get yelled at right now, like there's a small market for that and maybe it'll exist for that. But for the most part, we've been watching this exodus. And it's obvious that Threads won, and I think even, like, the noise they're making about 
+
+[00:50:00] Troy: Is that the 
+
+Zuck, uh, Twitter competitor? Threats? Yeah. Okay.
+
+[00:50:04] Tony: like, Blue Sky's not going to do it, Mastodon might have some, I think, I'm hoping will have some foothold, and Threads wants to interoperate with it for, essentially, like, government regulation reasons. but, that's where it went, and, I think people are also missing that people left Twitter for things that don't look like Twitter.
+
+I think like Discord, right? It's like there's a fragmentation of that type of platform and now people live in a bunch of other places, 
+
+[00:50:36] Alex: what are your thoughts on Federation? You run a platform that, 
+
+builds content. As writers, they probably want just more distribution, right? If I'm a CMO writing something, I just want my stuff in more places.
+
+Are you looking into, into Federation, into that
+
+type of stuff?
+
+[00:50:51] Tony: Yeah, we were one of the first adopters of Mastodon right when the Twitter exodus started, so the beginning of last year. still love it, still plan to support it. It's just We're not really sure where it's going to go. I think faith meta, I have trouble saying meta instead of 
+
+[00:51:10] Brian: Yeah,
+
+[00:51:11] Alex: We all do. 
+
+[00:51:11] Troy: This is a 
+
+[00:51:12] Tony: yeah, I've been in a bunch of meetings with, better employees and 
+
+I 
+
+[00:51:16] Troy: can say Facebook and Twitter here.
+
+[00:51:18] Brian: It's fine. 
+
+[00:51:18] Tony: over and over
+
+again 
+
+[00:51:19] Brian: don't say alphabet, if it means anything. 
+
+[00:51:22] Tony: I think they threw a wrench in it by being so successful. And, they're, like, simultaneously successful and I think very interested in supporting Federation. and that just, it actually makes it harder for me to predict where it's going to go. 
+
+[00:51:37] Brian: So what are the, what are the negotiations with the AI companies look like for a platform like yours? I mean, we see, I mean, you have a corpus that. Is gonna be is valuable to the LLMs. I mean, it's, it's, they've already trained on it. I hate to tell you. What are those end up looking like?
+
+Because I think we're starting to see some deals come into place, but I'm 
+
+interested to see what, what 
+
+[00:51:59] Troy: that's a good question. I wonder
+
+how you 
+
+think about that revenue as a percentage of your annual operating plan.
+
+[00:52:05] Tony: we've looked into it just to pass the money directly to the authors. So it's more a what's good for the internet question for me. And I tried early on, because I was pretty sure I could see where it was going early on. 
+
+[00:52:17] Troy: Why would you pass the money to the authors?
+
+[00:52:19] Tony: because we already have, going to pass the money to the authors?
+
+Reddit has no relationship like that with their
+
+authors. I think for us it was just, it just comes down to what our relationship is with the authors. 
+
+[00:52:31] Troy: I mean, I'm not anti, I mean, you guys are laughing like I, I hate authors. It's not
+
+that. I mean, most platforms don't take money from one pocket and pass it on. They pay for their businesses and they have, structured
+
+incentive programs to pay people for their content. Right. But yeah. You know, like, 
+
+[00:52:50] Tony: I've got a slightly longer answer to this. You know how Cory Doctorow is going around pushing this word and shitification? He's really just talking about mismatched incentives, so that a company appears to be doing good, but the incentives are to stop doing good later. One of the things I liked about Medium is that the incentives, Could be made congruent the whole way around where it could benefit authors.
+
+It could benefit the world, the readers, it could benefit the investors. Like people can make money and it could be world positive and, and the authors could benefit. And so I think selling our users data behind their back just ends up breaking that system. And I think we'll do more harm than good. Plus it's not that much money.
+
+So I'll tell you the negotiating stance that every AI company has taken is we need a lot of data and we can get it somewhere else. So if any one company tries to opt out, then like they walk. And that's, we've gotten that from the New York Times lawsuit has essentially said essentially that I've seen Sam Altman on stage.
+
+Literally say he doesn't need the New York times content cause he can get it somewhere else. So we did get an offer from 
+
+[00:54:03] Brian: Okay. So it's, So it's, not really much of a negotiation. It's
+
+like, well, here's, here's the plan, like 
+
+[00:54:08] Alex: Here's some money. 
+
+Take it if you want it.
+
+[00:54:10] Tony: right. And I saw that so early. And so like, I don't know if you've seen my post on this, but I was like, we're blocking these companies because they screwed up like just exchange of value. And 
+
+[00:54:21] Alex: you're blocking them. You're blocking 
+
+[00:54:22] Tony: no consent, no, credit, no compensation. And then
+
+I use that to go to all the other platforms and say, look, We're going to fail unless we form a coalition and every single one of them had their own, plan and Reddit is now the first public one, right?
+
+They're like, we can negotiate on our own. And they did. And I think their pressure was around IPO. So another big one that it would have been a good coalition member of the coalition is actually, they want to get into the AI business themselves. And so they're not trying to do something kind of.
+
+obviously like I've been pushing on Wikipedia, I think would be like the best, but they actually have like reverse incentives is like their incentive is for that content to show up everywhere. so just haven't been able to form a coalition, although I still think it's the, 
+
+the only would you buy,
+
+[00:55:17] Troy: Reddit stock at the IPO price?
+
+[00:55:19] Tony: Yeah.
+
+[00:55:20] Troy: You would.
+
+[00:55:21] Tony: Yeah. I'm glad we talked about this. I love Reddit. I actually think it's priced appropriately and because of that, like Reddit community backlash they're going to face will fade. You know, if they were pricing this at like 20 billion, then, you know, like, the Redditors would pull the price back down and it would seem like a big flop.
+
+But it's like, it's for an IPO. It's pretty reasonably priced and there's a lot I think they could do with that business. As a turnaround expert, so called now, like that's the 
+
+business I could 
+
+[00:55:52] Brian: Could you name, like, two things? Because, I mean, I was taking the point, I'm like, they've had 20 years and they continue to lose lots of money, so what's the wait? I feel like they
+
+should have maybe put that in place before the IPO. 
+
+[00:56:03] Tony: I I think that their costs are too high and they still have ways to get those down. And I don't mean just by just by laying people off. Like 
+
+[00:56:11] Brian: They had to do 2, 000 people to operate the message 
+
+[00:56:14] Tony: yeah, 
+
+that's probably, I mean, probably that's too many.
+
+I don't want to
+
+like scare the people there, but I could imagine that's too many, but I think their operating costs, their other operating costs are probably Too high.
+
+And like we found when we actually put time into it, when our incentives were to get to profitability, then, a lot of how we got there was cost cutting that wasn't staff level. It was, I think our hosting costs are down, almost 50 percent right now. and that was just optimization work. And there's way more they could do with their business than they're currently doing.
+
+So, you know, it's like some companies can support more ads than they already have. And then, then you go too far. Like probably Google search right now, it feels like they went too far, but there was a period where they doubled it and it was fine. Maybe not ideal, but it was fine. And I think Reddit will be the same.
+
+They're going to be able to get a lot more revenue out of that business.
+
+[00:57:09] Brian: And Google could also, just, I mean, that's why they never gave guidance, because they could just turn the dial up on specific things. You wouldn't notice unless you were there. Searching for whatever the mesolithemia is, you would if then, but otherwise it's just like, what a business.
+
+Not everyone has that.
+
+[00:57:25] Tony: It has been, yeah. 
+
+[00:57:27] Troy: Okay. So, you guys have taken, have you taken a fair bit of
+
+venture capital
+
+[00:57:32] Tony: It's so much.
+
+[00:57:33] Troy: so much?
+
+[00:57:35] Tony: So much. I think it might be, it's several hundred million dollars we've 
+
+[00:57:39] Brian: Oh.
+
+[00:57:39] Troy: Yeah. So you got a lot of work 
+
+to do to get those people their money back.
+
+[00:57:43] Tony: Yeah. I think for the most part, now we're old enough, a lot of them have written written us off and that's probably you thought about doing video on televisions? 
+
+No. Is that what you want us 
+
+to do? 
+
+[00:57:57] Alex: Well, that's what it's what Elon's doing. And, and we were just talking about that a minute ago. 
+
+[00:58:02] Tony: I don't, what is he doing? 
+
+[00:58:03] Alex: It is unclear to me.
+
+[00:58:06] Troy: Love Elon. okay. So we got your point of view on Reddit. I guess the, in this category of kind of, Independent expert content. You're kind of one of one, I guess, because if you want to do that, you, you don't go over to WordPress to do that and you could write a long post on Twitter, but it's probably scary
+
+for you 
+
+[00:58:29] Brian: LinkedIn, they've 
+
+[00:58:30] Troy: and you, you could do it on LinkedIn, but then you'd be doing it on LinkedIn and where else could you do it?
+
+I mean, you could do it on sub stack. If You want to make
+
+a, 
+
+[00:58:40] Brian: now, you can do
+
+[00:58:41] Troy: Yeah, that's what I said, Twitter. 
+
+[00:58:42] Brian: I missed that.
+
+[00:58:43] Troy: So, so, you guys, I guess, have carved out a really interesting place. Do you want people to, to come to your door, to come to the front door of medium and do you think you can ever curate it to a level where that type
+
+of product would be interesting to me as just a passerby? 
+
+[00:59:00] Tony: That's interesting. Offline I might send you a newsletter that we're doing, because we're testing this of, can we do the best of medium with an editorial voice? to explain the world in a way that feels complementary to how it's being explained to you somewhere else. so I'd love your feedback on that.
+
+For the most part, if you just are coming, swinging by, we don't know enough about you yet. It's like if you swing by, create an account, tell us what you're interested in, then yeah, we're, we can be a daily read. That's absolutely an ambition.
+
+[00:59:37] Troy: hmm. So I'd be curious. What you think about the kind of, not just the state of professional media today. Like when you think of not maybe news brands you could include, but really lifestyle media that includes everything from kind of what was once called magazines to kind of enthusiast content to, to expose some, some news.
+
+A lot of those folks in that category are facing. Difficult times on account of a kind of broken ad model. And, just the harsh reality that subscriptions may not grow to fund your business the way you want. And I'm wondering, I guess that's your competition, right? I mean, if I want expert content in a category that I would have maybe got it from a magazine 20 years ago, I'm just wondering how you see the,
+
+prospects for, for kind of professional media. 
+
+[01:00:32] Tony: First of all, I, I try to avoid this word competition, like, probably, like, pushing it almost too hard. We're a complement. because I think one of the things that went away for professional media is your easy access to source material went away, like I thought Twitter was good for professional media for a while because it gave like easy access for things to write about and then it became this cesspool and so you could only write about divisive topics off of it and then it started to die.
+
+So where can you get source material, right? I think a lot of what. Gets written on medium could be summarized for a broader audience. And that would be a role of, journalism. And so like to give you maybe a more concrete example. of someone who's bridged both. There's this author on Medium right now, his name is Ambie Burfoot, and he'd been the editor in chief of Runner's World for a long time. And for whatever reason, he's shown up on Medium. I actually know why. He likes the distribution. but he's shown up and he's just writing, from my view, what he always wanted to say. And it's not filtered down to that magazine construct of It's been simplified and condensed, right? It's like, he's saying what he really cares about. Not everyone wants to read at that level of depth. I think that's like, he's only really reaching hardcore runners, maybe even competitive runners now. and so they're different, they're still different things. Like the, the newsstand version of Runner's World still needs this information framed in a different way.
+
+Again, so I just think we're complimentary.
+
+[01:02:03] Troy: I think that makes a lot of sense. Brian's a runner and I used to run runners world was in my portfolio. So I know a lot about it and, and I'm a, an, an enthusiast. So I think that kind of content is. delicious if you're, if you really like running and the guy's incredible, I wouldn't be surprised if he's taken, some, some running shoes off the back of a truck or getting spiffed by, Brooks or whomever
+
+to, to, to promote their 
+
+[01:02:28] Brian: in there. 
+
+[01:02:28] Troy: No doubt. No doubt. that's cool. I don't know what else you guys got.
+
+[01:02:33] Brian: So I would like to one final question is I think it was really early. I mean, fairly early with calling out the, problems of a lot of the implementations of the ad model. But what I'm interested in is from your perspective is the ad model just like the way it is practiced now? Is it almost impossible to align
+
+incentives with an ad model?
+
+[01:02:57] Tony: Yeah, it's, I mean, it's so it goes so deep. That's the problem. You could talk about it. You could do two hours on that subject. and it's that it starts at the clickbait, but then it starts at the content, right? Because it's not good for the advertiser. If you're too engrossed in the content, right? So if what you care about, if you're starting content first. like, you want to put something out that distracts you from the ads, right? Like, as a writer, that's what I'm trying to do. So you're just fundamentally in conflict.
+
+[01:03:29] Troy: what about a nice tasteful leaderboard at the top though?
+
+Like a large one.
+
+What do you think of that? 
+
+[01:03:34] Brian: Just a push down. 
+
+[01:03:37] Tony: It's awful and it's shocking how, how hard it is to read on the internet, given how many ad inserts and how many different ways they have to pop, pop up. And so, yeah, that's like fundamentally his hypothesis, which I believed in enough to come here and run, is that you could make a real business. With different healthier incentives and 
+
+like I need to be humble about
+
+this.
+
+It's like we have this harder hurdle, which is to convince people to pay, especially convince people that are used to the Internet being free. But we've seen that the free Internet just gets corrupted by the ad model. And so some number of them we're hoping we can convince we can do something healthier.
+
+We also have to deliver, which we weren't delivering two years ago and we're delivering a lot better, but still a ways to go. 
+
+[01:04:25] Brian: So you must have like close to a million subscribers then. If you're doing like 50 something. 
+
+[01:04:30] Tony: We're like single digit
+
+thousands of subscribers away from a million. There's a clock 
+
+[01:04:35] Alex: so, so so maybe actually for the audience, can you explain how
+
+the business runs? You have subscribers as readers, correct?
+
+[01:04:43] Tony: Yeah, so Medium is, member funded and some amount of that kind of what's written on Medium sits behind a paywall and that's the most, that's the primary way that we get people to subscribe and be members. Membership is 5 or 50 a month. We haven't changed it. we actually have pricing data that says we shouldn't change it.
+
+So it's pretty accessible as far as subscriptions 
+
+[01:05:08] Alex: And that's one price for all of
+
+medium. You don't pay specifically
+
+for the, for the writer, correct?
+
+[01:05:13] Tony: Right. So if, if you're used to substack, then rather than paying per author, you're paying for a bundle of everything.
+
+[01:05:20] Alex: Which I think over time maybe becomes a benefit because I know that I got pretty tired of the amount of substacks and Patreon I'm paying five bucks to, and how it starts adding up, and, and it doesn't seem like it. A good deal anymore. It felt like a great
+
+deal 
+
+[01:05:35] Troy: Well, Tony, if you're interested, you can get with my discount code, you can get Brian's rebooting subscription for 199 annually, which is a great deal because it's, it's very super vertical, super insider, super
+
+insightful B2B media.
+
+[01:05:50] Brian: And it's normally 200. 
+
+[01:05:51] Tony: you have a very, hardcore following in, BuzzFeed alumni. I just wanted to give a little fan service to them. That's why, that's one of the big reasons I wanted to come here. And I think they're probably all paying subscribers. And if they're 
+
+[01:06:07] Brian: Hmm. It should be.
+
+[01:06:09] Troy: Well, use the 
+
+[01:06:10] Brian: Yeah. 
+
+[01:06:12] Troy: for a
+
+50, 
+
+[01:06:13] Brian: put the 2. 
+
+[01:06:14] Troy: off.
+
+[01:06:15] Brian: I don't like to do deep discounts, though, so I don't know. I
+
+gotta gotta go back to it. But, yeah, what else do we have? I mean, a million. I that that actually puts you up there with the top. I mean, I know you're not a news publication, but I mean, it's it's, the Financial Times has a million.
+
+The Guardian
+
+has as a million. and they're like 
+
+[01:06:31] Tony: Yeah. Look, we didn't talk about how bad things were at Medium that much. Like also we could have done two hours on that, but yeah, I mean, like one of the things I'm out to share is you were right to think we should have died, but we didn't, and we're back and we're healthy and we're like, I appreciate that you accepted my positioning as something that's different, you know, like we're not losing to something that already exists.
+
+We're doing something that's unique on the internet. Yeah, it's a, it's actually a really good moment for us, even though it was really expensive to get here.
+
+[01:07:06] Brian: Yeah, I will say any website that I was ever part of building, I would start from
+
+the article page and I would say, make it look like medium, and then we'll
+
+go from there. So, And I think, I think that was usually a good, a good approach. 
+
+[01:07:21] Tony: And then just add 500 
+
+[01:07:22] Brian: Yeah, and then like, we were just like, get the leaderboard on there. We need, we need an extra 
+
+[01:07:26] Troy: No. Medium is very much to be admired for their, restraint and the quality of the execution over the years, for sure.
+
+[01:07:34] Brian: I liked a good in feed ad. I said, none of this like, put it on the, the periphery. Let's just get it right in the, right in the well, 
+
+[01:07:43] Alex: true story, at the big early days of medium when I was talking to airbnb I was also talking to ev
+
+about joining medium. 
+
+[01:07:50] Troy: I think you made, you 
+
+made the right choice. 
+
+[01:07:51] Alex: I don't know
+
+[01:07:52] Tony: Yeah,
+
+Right. Your, Your, equity would've been so diluted by now. So, 
+
+[01:07:57] Brian: your like, Wonderland Ranch would be a totally
+
+[01:07:59] Alex: but that's
+
+[01:08:00] Troy: yeah, you might have to, you. might have to sell the donkeys. 
+
+[01:08:05] Tony: well, hopefully I was a good guest for you. I know you're, you guys are like, 
+
+[01:08:08] Troy: Yeah, we're not easy, Tony, we're not easy. 
+
+And plus, yeah, there's a lot of pent up aggression and conflict in the
+
+[01:08:14] Brian: Troy is out of 
+
+he's out of zines, 
+
+[01:08:16] Troy: zines. But I got to run to another meeting you
+
+guys and we have to just
+
+get ready. we got to do our good product 
+
+corner. 
+
+[01:08:25] Tony: Alright. 
+
+[01:08:25] Troy: Really appreciate 
+
+it.
+
+Really appreciate you being thanks for 
+
+[01:08:28] Tony: Alright. 
+
+[01:08:29] Troy: with us.
+
+[01:08:30] Tony: All right. Bye 
+
+[01:08:31] Brian: Bye 
+
+
+[01:08:31] Guest End
+---
+
+[01:08:32] Brian: Alright, cool.
+
+[01:08:33] Troy: Okay, well, that was fun. Thank you, Tony. 
+
+[01:08:36] Brian: Closing thoughts, Troy? 
+
+[01:08:37] Troy: Well, I like him, nice guy. Clearly a massive disappointment to everybody that's involved. 
+
+No, no, no. The business, it's a 50 million business and I can't see it doubling too much unless he, ratchets ups, the subscription fees and put, puts a couple of ads on there and then sells as much as he possibly can to the AI slurpers.
+
+But, if he could crank that business up to 30 million in EBITDA, it might be worth, a few hundred million dollars, but you know, he's a long way from that.
+
+[01:09:06] Brian: Troy, your PVA plus product should, should be where you dispense with the like 2000 words and just do that like bullet point for like each thing where you're just like dismissive, just like massive disappointment.
+
+[01:09:18] Troy: listen, I think taking, stabilizing that org is a real accomplishment and I do like the idea that it is the one place for the sort of single, anatomical unit of the article. No, but you know, creators aren't making any money, but if, listen, where are you going to put that content? I don't know.
+
+There's a spot for it. It's medium. It's a tiny little
+
+[01:09:37] Brian: If you're, if you're like the guy from Carta, the, the new scandal rolls around, that's about to be reported by business insider, you go to medium, you do your, your posts that to get ahead of it, or if you've resigned your position, you do that. And, you know, maybe if you 
+
+[01:09:53] Troy: PR surface area for a lot of folks. Yeah
+
+[01:09:56] Brian: I know, I do think that there's a role for it and I, I do end up there.
+
+I think that, that is absolutely true. I don't start there. But. Maybe 
+
+[01:10:04] Troy: I do end up there and instead of getting inundated with ads like I do on say variety the worst perpetrator of You know 
+
+ad 
+
+[01:10:13] Brian: that. It's good density.
+
+[01:10:15] Troy: Ad bombardment is, I just get their subscription banner at the bottom constantly bugging me to subscribe, but I don't use it enough to subscribe. but I do want to talk about advertising in the good product corner.
+
+Cause
+
+I know Alex me, 
+
+
+[01:10:28] Good Product
+---
+
+[01:10:31] Brian: You mean advertising just in general is a good
+
+[01:10:33] Troy: no, no, no. I'll get more specific. Cause I, something led me here. so did you watch the Oscars? Alex, you watch the Oscars. Do I have your
+
+attention? You know, it's.
+
+[01:10:41] Alex: threads. 
+
+[01:10:42] Brian: people live threading it?
+
+[01:10:46] Alex: Yeah, it was actually pretty, 
+
+[01:10:47] Brian: Oh my god. 
+
+[01:10:49] Troy: I dropped that Threads joke to Tony and like, no one thought it was funny, so whatever. 
+
+[01:10:55] Alex: I wasn't going
+
+to like, Satisfy you with
+
+[01:10:58] Troy: a giggle. giggle. Yeah, okay,
+
+[01:11:02] Alex: But once, once, again, once again, I'm ahead of the curve and you fucking figure it out.
+
+[01:11:06] Troy: Yeah, I know. So there was a Rolex ad on the Oscars called Every Hero Needs an Ally. Did anybody see that? It highlights people wearing Rolexes in all kinds of movie scenes from Argo, Ray Donovan, Crazy Rich Asians, The Iron Claw. And it tells a story of, heroism, against the Rolex brand. And, Rolex doesn't do that kind of advertising very often.
+
+They're an official sponsor of the Oscars. And I was like, I really liked this ad I enjoyed watching it. And then I happened by an article in the FT about this character, sadly, who's very sick right now. Who was one of the kind of main People in the creation of the world's greatest advertising agency Wieden+Kennedy his name was Jim Rizwald and Jim is responsible for many things there alongside Dan Wieden, including these Honda scooters ads that were really the first kind of notable work.
+
+I think I'm not a widened historian, but, that featured Lou Reed and all these scenes of New York city. And it was a, it was an ad for the Honda scooter, but more, sort of perhaps culturally significant was Jim did all the great Nike work include or much of it, including the early stuff when, Spike Lee and Michael Jordan were in all those Nike ads.
+
+Do you guys remember any of that?
+
+[01:12:28] Brian: Yeah. 
+
+[01:12:28] Alex: hmm. Mm hmm. Do
+
+[01:12:30] Troy: And
+
+it was around the time. That's the character. Yeah. Yeah. And apparently it started when, Roswald had seen, She's Got To Have It. And apparently in the movies, Spike has sex with his Nike's on. he was like, we need this guy in a 
+
+commercial. And then And they did it with, and then he did the stuff with, Bugs Bunny.
+
+Remember Hair Jordan,
+
+[01:12:50] Brian: Yeah. It's crazy, I can't remember these commercials exactly.
+
+[01:12:54] Troy: they were amazing. Or they did, 
+
+you know, the, or the one bonus baseball bonus football bow. Don't know diddly.
+
+[01:13:01] Brian: Yeah. Yeah.
+
+[01:13:03] Troy: Yeah. And it was at that point actually right after that ad that they overtook Reebok and Nike was set on a path to become whatever it is today, a 50 billion company. so. 
+
+[01:13:12] Alex: advertising can still turn a company around like that 
+
+[01:13:15] Troy: You know, 
+
+I don't know, but, but I know that he, he makes the point when they interviewed him in this article that, when an ad came out in those days, it really made a difference. It was all about the 30 second spot and, and they could shift in Ben culture. And we look forward to the best of it.
+
+And it just kind of, it was amazing for me to reflect on. The, people in advertising, particularly creative people at the head of agencies like Wyden, the writers and the art directors were held in very, very high regard at the time of being exceptional, kind of, cultural observers and crafts people.
+
+And, it was just a really different time compared to where we are now, where we, chase you around with programmatic banners.
+
+[01:14:02] Alex: I, I don't know what changed, but I was,
+
+[01:14:06] Troy: You liked advertising back then, Alex.
+
+[01:14:08] Alex: liked advertising by debit. And when I joined Airbnb, I've got to say it just started feeling like that era and the amount of impact an advertising agency could have compared to what you could build internally, had faded, and it wasn't for the lack of getting the right people.
+
+I think these companies started moving so fast, had so many capabilities. in house and, and mostly, I think most importantly, we were getting millions and millions of people into our app. So the most impact we could have, we could control directly. I remember sensing that
+
+[01:14:45] Brian: Well, I mean, look at Media Arts Lab. I mean, like, Steve Jobs was going there to meet with with them. Right.
+
+And I, I don't know the internals of it, but obviously it's not as critical now that what the work Shia does with, with Apple and also the, the stuff that you see, I'm not like an ad historian or something, but it's not the 1984 ad anymore.
+
+I mean, advertising is just, but this happened a long time ago. It's, it got repriced. And as far as it's, it's cultural value a long time
+
+[01:15:17] Alex: Yeah.
+
+[01:15:18] Brian: the internet, honestly, the internet, that's another thing. The internet destroyed good advertising.
+
+[01:15:22] Troy: one last thing, Alex. I had a friend of mine drive out to Shelter Island with his son and they were listening to our podcast greatly and really enjoying it, by the way. And, liking the, content and the tension and, the friendly camaraderie and, his son was mad that I had never mentioned him on the podcast before, but he was heading out to one of the things that he looked forward to doing.
+
+So, is playing that Saturday, a tournament on Fortnite with all of his friends. And, he said, you need to cover video games more because like, I don't care about TV or, any of that other stuff.
+
+[01:15:55] Alex: No, I'm sorry. This is a, this is a podcast about the future. So we will keep talking about SEO affiliate. And how 
+
+private equity can save 
+
+[01:16:04] Brian: You know, he's gonna grow 
+
+up someday and he's gonna need affiliate
+
+[01:16:07] Troy: I reach out, I reach out to you, reach out to Alex and you, you spur me.
+
+[01:16:13] Alex: I took a, that was just a no scope headshot. You'd know if you were cool. 
+
+[01:16:19] Troy: yeah, did you just go full ninja on me?
+
+[01:16:22] Alex: Yeah, dude. Yeah. news, dude.
+
+[01:16:25] Troy: Yeah. Anyway, I started watching him play Fortnite and, it's no surprise that entertainment companies can't play that game of creating those worlds because it's just so different. But, really incredible. Incredible. Fortnite is incredible. And I would like at some point that you could maybe help our audience understand some of these phenomenon better.
+
+[01:16:46] Alex: I will. We can do a video podcast in Fortnite where Alex shows us around.
+
+Yeah, a special event. For sure.
+
+That sounds delightful. 
+
+
+[01:16:54] Outro
+---
+
+[01:16:55] Brian: Thank you all for listening, and if you like this podcast, I hope you do. Do send me a note. My email is bmaracy at therebooting.com.
+
+Be back next week. 
+
+[01:17:04] Troy: Okay. Hit 
+
+the comment button, right? 
+
+[01:17:06] Brian: Yeah, yeah, no, please leave your messages. Just go to memo. fm slash PVA and we'll give it a try. We
+
+[01:17:15] Alex: rate and review. It does help Spotify and Apple 
+
+Podcasts. We 
+
+don't 
+
+care about the other 
+
+ones. 
+
+[01:17:21] Brian: play the algorithm game. 
+
+[01:17:23] Alex: Yeah. 
+
+[01:17:23] Brian: Alright, thanks guys. 
+
+[01:17:24] Alex: Bye. 
+

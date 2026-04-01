@@ -1,0 +1,677 @@
+PvA S2E99
+===
+
+[00:00:00] Troy: we're going to move to Fridays.
+
+[00:00:02] Brian: is that official? It screws up my newsletter. Okay,
+
+[00:00:05] Troy: it's because of Alex. I mean, I don't know how.
+
+[00:00:09] Brian: That's true. I got You either get Alex or you get Fridays. So, you know, you choose. And I think some people would, could go either way. Some people 
+
+[00:00:18] Troy: really 
+
+think
+
+[00:00:19] Brian: This is good. We'll go head to head with All In. It's good. I like it.
+
+
+
+
+[00:00:45] Episode start
+---
+
+[00:00:45] Brian: Europe is great. It's just too bad they're falling horribly behind in productivity wise. I see why. Cause it's too great. They're too busy living. to be incredibly productive, I think.
+
+I don't know, when I go to places like Italy, I'm reminded of that with Japan. You, you read in The Economist about how some of these places is like, Oh, they're basket cases and blah, blah, blah. And obviously there is like a major difference, but at the same time, man, man, Italy in the summer, people know how to live.
+
+[00:01:13] Troy: Right.
+
+[00:01:14] Brian: Ice cream in the afternoon. 
+
+[00:01:15] Troy: Well, that's good that you're taking a lot of time off for an entrepreneur. You've been away for what? Three weeks or so.
+
+[00:01:21] Brian: No, I've been away for two weeks. What am I not allowed to, by the way, it was the first. week, I guess, 10 days that I did not publish all year. So I'm in founder mode. Trust me. Let's talk about founder mode. Alex is not here. cause he's in founder mode, I guess, or he's just disorganized. It's
+
+[00:01:39] Troy: Yeah. But he would have had something to say about founder about because he worked with Brian Chesky for so long.
+
+[00:01:43] Brian: Okay. So let's talk about it. A lot of people, I don't know. I think this thing dropped at like just the perfect time when there's, there's sort of nothing going on and, Paul Graham, who, I don't know, I, I feel like his prominence has really grown in the last few years. I mean, I know I knew of him, but I like vaguely, but now I feel kind of like Bill Ackman.
+
+He's like the anti Bill Ackman, but I feel like Bill Ackman, I kind of knew he existed, but like all of a sudden he's like in my face a lot. but Paul Graham,
+
+[00:02:16] Troy: both sort of Twitter celebrities.
+
+[00:02:17] Brian: Yeah, yeah, I don't think they're real celebrities, and I think sometimes I have spent too much time on Twitter, X, whatever, and it sort of changes my perspective of the world.
+
+So Paul Graham, he had invited Brian Chesky, the CEO of, Airbnb, who himself has emerged as an interesting character, in Silicon Valley. as, as a sort of, founder savant and
+
+[00:02:41] Troy: And like a Sam, a Sam Altman
+
+[00:02:44] Brian: yeah, yeah, no, I mean, he's like, all of a sudden become a main character and he was, I don't feel like he ever played that role because one of the things is he's not a tech guy, he's a designer and I find that interesting.
+
+[00:02:56] Troy: RISD grad, I believe.
+
+[00:02:58] Brian: yeah, I mean, go RISD. Those kids are always smart. but he, Paul Graham, basically. As a true VC, he packaged together, and branded, some basic points that Brian Chesky was
+
+[00:03:10] Troy: But Brian is full hardcore, hardcore mode guy. Like I, I remember having lunch with him at Airbnb and he ate like, first of all, his dog is always there and he eats like pellets. someone brings in his lunch and it's
+
+[00:03:22] Brian: Brian does have the dog as a
+
+[00:03:24] Troy: no, I think they eat the same thing. I can't remember, but they eat like,dry ground chicken and like green salad,
+
+[00:03:31] Brian: Oh,
+
+[00:03:32] Troy: you know, the high protein. No
+
+[00:03:34] Brian: well, good. anyway, he, he, he made this point, that. basically, look, Silicon Valley is like the cult of the entrepreneur, right? And it's the cult of the founder. And a lot of this stuff is, is ginned up by people who are selling things, right? And so I think you reacted against me saying VCs are salespeople, but that's To me, they are, and they got to sell to a bunch of different people.
+
+They got to sell to, to the founders. They got to sell to, to, their partners. People are funding them. They're just all about sales. Anyway, he, said that, basically he put it as manager mode versus founder mode. And the founder Can do things that, a manager cannot do. And I think this thing landed, because, we're at a particular time, I think with Silicon Valley and, and with quote unquote, big tech that is becoming like other giant, slow moving industries, right?
+
+but that was my, what was your, takeaway from the importance or whether it even exists, founder mode?
+
+[00:04:41] Troy: actually, I reflected on maybe some of the bullshit I, I spew at people trying to, to build companies about how you need to,have fewer reports, have a kind of mature structure, hire senior people that can, manage their business and give them space to do it. And just like, I think it was sort of like traditional, professional management structure and theory.
+
+And then I was like, wait, what did they say about Jensen from, from NVIDIA? And it was like, he has no fixed schedule. he seeks out bad news, looks for the biggest problems inside of the organization, then moves his desk there. does not respect at all. Any kind of lines of authority in the organization will go two, three, four stops down as necessary has 40 direct reports.
+
+[00:05:35] Brian: I saw 60. I don't even think he knows. This is like Elon Musk with his children. Jensen has no idea.
+
+[00:05:41] Troy: and then, the, then I, was reading about, the sort of comparisons between Jensen and Elon and how, they, they create these sort of challenger organizations that are very mission driven and, try to kind of embody this I don't know. embody that kind of hardcore, go to Mars ethos and, bring that to like minded people that want to go along for the ride.
+
+And I was like, maybe that's right. Maybe that's right in, in a lot of scenarios where you can't kind of afford the luxury of, management theory inspired techniques because a company, know, has to change really quickly or doesn't have natural distribution,kind of barriers that, that allow you to change more slowly or,insulate you from aggressive competitors and stuff.
+
+So I thought it was a welcome. idea in the world of, how to change a company or how to manage through a disruptive moment.
+
+[00:06:43] Brian: But it was also very black and white, and I find these things are always painted that way, and you have to do that, because you can't put all the qualifiers in, and he chose not to, and so then it becomes, it becomes obviously untrue, right?
+
+[00:06:56] Troy: I mean, I'm sympathetic with a lot of it, Brian, because I always did that. I would always go down to whoever was sort of had their hands on the controls or were make the person that was sort of in charge or making the change irrespective of, organizational.structure or what was considered respectful to the person that you were managing like you go to where you get information and where you can have impact.
+
+[00:07:19] Brian: And it makes sense to me. I think it makes more sense that when you have. It's, it's harder to imagine that being as effective in the sprawling global company that has, lots of, divisional or regional management and all that kind of structure that you need. Butno, I mean, founder mode sounds amazing for, I think the question and this is the point of the post was about scaling these massive companies. You know, Airbnb is now a very big company, right? and not without its flaws. I think the product is not really great. I don't use it anymore. But,You know, I think when, when these companies grow to such a degree and everyone went back to Google, Google, you know, Larry and Sergi, brought in, not just Eric Schmidt, but then he brought in a lot of, professionals who scaled up as Sheryl Sandberg.
+
+Right? I mean, they scaled that business. Does Google become the Google of today? The cutthroat company that has been termed a monopolist and is going on trial? this week for, I, I don't know if it does, I don't know if it gets to that level. who knows? but, you know, look, we went through a cycle where, of the Steve Jobs worship, right?
+
+The problem is Steve Jobs is, is one of one, right?
+
+[00:08:28] Troy: well, Steve Jobs, I think probably would have been canceled.
+
+[00:08:31] Brian: uh, yeah, I think so, probably. he was a little bit of a psychopath. If you read the, the, the
+
+[00:08:37] Troy: No, like he for sure would have been canceled, like he would have had a fit and thrown an iPod at someone or something and he would have got canceled.
+
+[00:08:43] Brian: We're a small iPod search. Nobody's going to get hurt. But yeah, no, it problematic, problematic. and Silicon Valley has, has, I think, increasingly moved at is, has gotten bigger and bigger and bigger and more powerful into becoming like any other power center. I always say this is they're just like another power center and they're dealing with a lot more.
+
+All of the issues of regulation and stakeholders and, different like employees who are trying to get them not to do things with the US military. This is just all part of, of being a grown up company. and I think this is kind of like wistful to some degree because Silicon Valley has always, really been a myth.
+
+Built around being the pirates, right? So Steve Jobs would say, well, why you join the Navy? You want to be a pirate, right? And the reality is when you're, you're the Navy now, and we all grow up to be our parents and you've got to oftentimes operate, like that. And so it's clearly tapping into, a feeling out there that, a lot of these companies.
+
+that have been the heart of American innovation have become, well, rather bureaucratic and sclerotic, you know, for lack of a better terms, because they are massive. They often operate, in markets in which the competitive dynamics are fairly curtailed. And I assume that breeds a fair bit of institutional complacency.
+
+[00:10:09] Troy: Yeah. I always think of Silicon Valley as being defined by inspired leadership. So the mindset is very much a kind of builder,self empowered, Eat what you kill. We can build anything. Software solves all problems. it's, there's a sort of kind of ethos of the, like the, the, the righteousness of the technologist.
+
+And, if you hang out there like that, that's the vibe. The, and, and it's also,the, the San Francisco thing is, there, it's, there's a kind of frontier mentality. Like you're, you're, creating, you're creating something that's not, not been seen before.
+
+And then San Francisco's also got this really weird side to it where it's a, it's a very leathery place, right? Like it's, it's got the sort of aspirational tech side, and then the. The kind of underbelly. And that makes it a really interesting, unique place. And, despite all the troubles it's gone through, I, I think it's probably as vital as ever.
+
+[00:11:09] Brian: Well, I mean, it's all the, all the proclamations of the demise were made before AI and, and now Everyone is back to San Francisco and Silicon Valley because that is the heart of, of AI. so, look, it's a gold rush place. And every gold rush brings all kinds of different types of people, not just, the people panning for gold and for Silicon Valley, that's the MBAs, right?
+
+I mean, this is,I remember the dot com days, you know, a bunch of MBAs flooded there, web 2. 0, bunch of, bunch of, MBAs flooded there during this. There's so many MBAs. I would guess that just as I would like to know that the, ratio of lawyers to, to actually creative people in Los Angeles and MBAs to, actual technical people in Silicon Valley.
+
+I think you could judge based on that. but it's at a 
+
+different phase. 
+
+[00:12:01] Troy: what about you? Did the founder mode thing, did it resonate with you? like, is that how you, that's kind of how you operate, right?
+
+[00:12:07] Brian: Well, I mean, it's just, it's me and a bunch of fractional people. So there's no, look, I, I think we've all like, sort of come into contact with, there's things that, founders can do, and I think they have feels for businesses probably that, professional managers don't have. I saw Chesky describe it as being the biological parent.
+
+I think a lot of this stuff is a little bit overblown. But, you know, it reminds me of, there was a great, do you ever read John, McAfee's, McFee's book about, Bill Bradley, A Sense of Where You Are. He talked about how Bradley was such a great basketball player. He could like, he knew where he was, where he was on the floor so much that he could like, shoot without looking at the basket.
+
+Cause he just had that sense about it. And I'm sure running a business, and I've seen it is you can, you can have that feel for it. And I think what, what Chesky was saying was, and he described it as being gaslit, at least as told by, by Graham, be being gaslit by people that say, no, you need to do this.
+
+You need to bring in people who are the experts and this, and there's something to be said. You don't know everything about everything. I think a lot of times. probably people who have founded a company, particularly one that has taken off and had a ton of success are like, why are you, why are all you people coming in here and telling me when I, this is the way we have to do things because I don't know, you are at like Oracle or something like, okay, that's how Oracle does it.
+
+And so I think that there's, it's always good to, every company needs to bring in people who have a lot of experience in particular areas, and you need to have more systems and processes, and that's great. But at the same time, there's always a trap, and I'm sure you've seen it in companies, of people saying, well, no, this is the way it has to be done.
+
+And there's never really a great reason.
+
+[00:13:50] Troy: see, I'm thinking about this. I think about it personally, and I, and I wonder.I want to be a student of how to change a company and do it in, in a way that is, effective, but, not overly risky, I suppose, in terms of it's kind of just, the, disruptive potential of, moving something that is used to doing something one way to do,another thing and how many, you know, the people you have to, change out to, kind of make that happen.
+
+And I always wonder also about. what set of skills, like what native expertise do you have to have as a CEO in a company to be effective at that? So I'm working, an investor. I'm working with a company right now. That's both a media company and a, and a seller of things. And, the CEO here is missing a skillset around.
+
+how to effectively do what I would call acquisition and growth marketing. And right now the company really, really, really needs that. In fact, it needs to be,a kind of foundational skillset that sits next to It's kind of content and brand building And it's really a problem for the growth of the company.
+
+Like the company really needs to find like deep, deep growth marketing expertise to, because like DTC businesses or businesses that are e commerce or sell things directly, whether it's memberships or whatever, you know, they're hard and you need, you need to have a kind of cultural. kind of foundation and mindset, which is like always pushing to find kind of advantage on the margin, the next hack, how to acquire customers, how to find, like how to acquire customers profitably and drive that through the company.
+
+And when you don't have it, either you find an employee that, can bring that and empower that person to do it. But like really good people like that are hard to find. So I think about What skill set needs to be present? Like in media, do you want your CEO to be a salesperson? Do you want your CEO to be an editor?
+
+do you want your CEO to be a product person? And how does that align with your ability to kind of be really effective? You know, like you're, you're, you're funny because, well, you're not funny. You, you're, you're, you're hysterical, but you're, you're an editor CEO. 
+
+[00:16:10] Brian: Yeah. 
+
+[00:16:10] Troy: you, you, you've sort of of late become enamored with sales because it's where the money is, but it's
+
+[00:16:16] Brian: That is why, no, I love it. I love it
+
+[00:16:19] Troy: no, but I mean, I can't imagine your business.
+
+I, 
+
+[00:16:22] Brian: I
+
+love people most when they sign, like when I get a panda doc at the end of it.
+
+[00:16:26] Troy: but Brian, I won't, I don't know the details, but to me, Digitech was not a founder, CEO, editor, CEO company.
+
+[00:16:33] Brian: No, no, it wasn't. It was a sales driven company. And then you, you have different, to me that you, there's no one, like we talk about all the time, there's no one way to win, right. But you have to have the instincts, right. And so you can come from the sales side, but if you don't have product instincts. You're kind of screwed.
+
+It doesn't mean you have to make the
+
+[00:16:52] Troy: Yeah, it's like puck what, you know, John Kelly's an editor.
+
+[00:16:55] Brian: but he has, he has, but he has good business instincts and, Liz has great, Liz Goff has, has really good editorial instincts. I mean, I feel like in the best organizations it isn't as, people can flex the, the idea of knowing everything about everything most people are not that.
+
+[00:17:13] Troy: Yeah. But when you think about like Airbnb, for example, it's amazing what they, I always thought it was amazing 
+
+what 
+
+[00:17:18] Brian: code. So how, how does
+
+he do that? He doesn't, he doesn't know how to 
+
+[00:17:21] Troy: You know what, dude, he took a crappy, like home rental service and put he put design thinking on top of VRBO or Craigslist and turned it into a new 
+
+[00:17:32] Brian: So 
+
+[00:17:33] Troy: So in that sense, he led with his strong sort of desire to make good consumer experience and did that and transformed the category. And he had a, I don't know, do you have a technical co founder? He had a co founder. I don't know if they were technical.
+
+[00:17:47] Brian: the other co founder was not technical. They were both non technical, right. And then they brought in a third technical, I don't know if the technical guy got the co founder, but like,he was in like early, but, the two co founders, actually were not, they were, I think both from RISD, but they were both not themselves, which is unique for, for, for Silicon Valley,
+
+[00:18:09] Troy: then there's different mixes, right? Like Snapchat, Evan is self proclaimed, or I'm sure he is, like an insightful, visionary product guy, right? Whereas Zuck is maybe more a technologist than he is, like a hardcore technologist than he is a product person.
+
+[00:18:25] Brian: yeah. So, I mean, you can, you can win all kinds of different ways to me. That's, that's basically what it comes down to. one of the things that I think when I think about it with media is, cause I've always thought about,you know, when the product changes, And again, there's no like one size fits all, but, I'm very intrigued just personally, right.
+
+By, by people who are running these media companies who also make the product. Cause I think, you talk a lot about getting close to the metal and I feel like you have to in a lot of these businesses. And I think bringing in someone who has the, but there's lots of people who, who love to move boxes around in like PowerPoints.
+
+And I, I saw this in like sales and stuff. I'm like, wait, so you're running revenue, but you never talked to a customer. You gotta be kidding me. Like you better be talking to customers. 
+
+Otherwise 
+
+[00:19:15] Troy: Or another example, Mark Thompson at CNN. How do you fundamentally change that company without being a media product person? It's what you gotta A salesperson isn't going to change CNN.
+
+[00:19:26] Brian: he came for, he came from the editorial side too. but yeah, I mean, I think that there's lots of different ways and there's so many advantages to having, it's not really, it's not a job title of founder, but it's just this, this thing, right? Like you can affect change and you can overrule things that someone who is a manager, who got that job, basically Paul Graham was saying it by managing up at the end of the day, that the people who, except for you, Troy, to the top of these organizations generally are really good at being political and managing up.
+
+and I don't have, did you, did you ever find this?
+
+[00:20:00] Troy: yeah, for sure. I mean, I don't know if I'm the exception to the rule or the rule. I'm not sure you
+
+[00:20:05] Brian: That's the nicest thing I've said about you.
+
+[00:20:07] Troy: Yeah, keep going.
+
+[00:20:09] Brian: No, you are, I think, you know, to a fault. I really admire, particularly in media, I like that Jim Vandehay, Still writes. I like that, that Jessica Lesson, the information still writes, I don't think that's what they should be doing all the time, but I love the idea of, you know, Nick Thompson is still, still making content.
+
+He does all those LinkedIn videos,with the Atlantic. And I think that's good. I think you gotta, you know, having someone who can just, just because they went to business school, and I know, look, a lot of people hate on business school people, but I think so many people do for a reason.
+
+doesn't mean that you have a feel for the business and this idea, and I know you, you're, you know, the private equity world. Very well, but I don't I don't really get the idea of that. It doesn't really matter the business. as long as you know, how to like move boxes around. I look, obviously it's a very effective industry,
+
+[00:20:58] Troy: Well, the core, the core skill at private equity beyond analyzing the,the potential of a company is really structural finance. It's structuring the deal in the way that you can get your money out and, and turn it around and make money in, a handful of years. that's the key. That's 
+
+[00:21:16] Brian: Okay. So they don't need to have a feel for the
+
+[00:21:20] Troy: I mean, well, I mean, I think that their feel is abstracted into a model and they're not sentimental about the business. I mean, I think that great leaders of media companies in particular are deeply sentimental about the business. which to me translates to, really wanting to understand how the product does the job that it's supposed to do. Why do we exist? Why are we unique? Who are we serving? Why do they care about us? What differentiates us? How does that translate into an efficient creation mechanism? All of that is, what it takes to make great media. I mean, private equity looks at an abstract of that. And then I think the best of them would tell you the poetry's in the, the sort of financial magic.
+
+[00:22:06] Brian: That's, that's quite some poetry. I love Excel poetry. I really do. I listened to, did you, have you ever listened to it? The Acquired podcast?
+
+[00:22:14] Troy: I listened to the one on Costco.
+
+[00:22:16] Brian: I listened to the one on Starbucks, and it had Howard Schultz. I actually really liked it because they had, the, the founder with them in a lot of them that they, they don't. And so, but that, that episode was great, like with getting into the mind. Now Howard Schultz was, there's a lot of like quote unquote founders who are not technically founders, Starbucks, the origin story is a little different.
+
+There was other people who first started the thing, but like he, he basically is the founder of what the Starbucks brand is and what the company became. And,he talks a lot about this and he really, really throws, in a nice way, the people who have been running Starbucks other than him under the bus.
+
+And I think that's like probably a problem for any founder. because they're never going to think anyone understands the business like they did. and he talks about something like even like the mob, the, the app, right? And you talk about the product, like he started this thing as, As a third place, a way to bring people together.
+
+and the app took over the company and he didn't understand how profound the app was and how much it would change the business, which sort of speaks to how you need to, you need to have an instinct for all kinds of these product things. And now. With the app, they've got hundreds of thousands of combinations of these drinks, the barista who was supposed to be your, you 
+
+[00:23:37] Troy: Like, by the way, I wish people would just stop with that. Just fucking get a latte. Why do you need to have so many, little enhancements or exceptions and just stop it. Have a coffee.
+
+[00:23:48] Brian: They're great for margin.
+
+[00:23:49] Troy: I'm, I'm great, but I just think that people need to chill out a bit.
+
+[00:23:53] Brian: Well, yeah, I mean, look, I'm, I'm in Italy. This is, they, they got the pretty basic, standing. They don't even have, the first Starbucks that he started, he did it just like a Milan like coffee shop. There was nowhere to sit. He just had a stand.
+
+and then they got places to sit.but no, he talked all about that and about how, a lot of the, the changes really, impacted. They were good for the business, but they were bad for, for the brand. And, he felt that, right. And at least in his telling, he felt that in a way that someone who was coming in,this last guy, he was McKinsey guy, McKinsey isn't part of part of all these things, they're the emblem of all this stuff.
+
+that he made all kinds of changes, you know, he didn't react well to, to where the brand needed to go at the end of the day. So we'll see if the Chipotle guy can change that. 
+
+
+[00:24:47] end
+---
+
+[00:24:47] Troy: Yeah. I know that feeling though. That feeling is, I think, you're sensing, you're sensing, you know, you're feeling Mm hmm. That there's a mismatch even on the margin even when your business might say there's not a mismatch yet Between what you make and what people buy and what people don't Importantly, competitors are doing, and you're sensing that mismatch mismatch, and you know, that it takes tremendous kind of fortitude and courage and energy to move to the next place where you're going to have a better fit and a more, a new kind of sustaining formula.
+
+And to do that, you have to first sense, and then you have to sort of come up with your hypothesis and then you got to figure out how you're going to evaluate it evaluate it. And then you've got to move the energy of the whole company towards that new place. And I think that that's an amazing skill in a person.
+
+That's an amazing skill. And I, and I also connected this, maybe dubiously, but I did connect it to, I don't remember what I was listening to, but it was about,the fundamental importance of the kind of mechanics of a data center in Silicon and energy to who wins,the scaling race in AI and that, it's not just the chip it's the economics of the multiplication of, the speed and effectiveness of the chip.
+
+And then the networking capability that allows you to connect all the, CPUs together, GPUs together, as well as your energy source and the economics of that. And,the bus and the algorithm that, that makes it all work together and that, You can find cost advantages if you're really good at doing all of those things.
+
+And, this is such a, it's a game of, extremely expensive, expensive marginal economics. And then, you, you see that sort of the, the Elon thing is his ability to
+
+[00:26:48] Brian: Wait, wait, what is the Elon thing? The XAI?
+
+[00:26:50] Troy: Well, yeah, the, the XAI thing, but the XAI thing is really anchored in a next gen data center.
+
+But the Elon thing is his ability to kind of think in physical systems and build new things like how to get a rocket to land on water right side up, or, or like a Tesla, Tesla manufacturing plant. There's a lot here by the way. So just go with me for a second. 
+
+[00:27:15] Brian: You're doing the Bill Ackman. Stay with me, stay with me.
+
+[00:27:17] Troy: stay with me.
+
+So You've got this new Colossus project that XAI is building that has got 100, 000 H100 chips working together, which is I don't know, 50 percent more than the, than the next person that's doing it. And that, that sort of underpins, your ability to really You know, scale the intelligence of, of an AI system and that they were late XAI sort of cuts through all of Elon's investments.
+
+Cause it's sort of the intelligence that can power everything and that they were late to this game, but are suddenly they set up. This Colossus was 122 day project to light up the data center with something that no one has ever done before. And you start to see that. that, there's like a S a skill in a person that's translated to multiple nodes, what six or seven businesses that are a combination of sort of data, hardware, software process.
+
+And that that's kind of the Elon thing. And, it's kind of. interesting to watch.
+
+[00:28:26] Brian: Okay. So he's trying to make, he's trying to make the big four, big five, right? He's trying to muscle into, to me, and I listened to part of a very long podcast with him where he just basically says, he's like,with these large models, someone will be ahead. And then other people you'll be ahead for like three months, four months, the others will always catch up.
+
+This is all gonna have parody. I don't see any, any scenario where, I mean, while, I don't know, connecting his chips, I'm sure there's lots of people who can
+
+[00:28:55] Troy: well, thank, thank, thank God, by the way, imagine if there was one AI
+
+[00:29:00] Brian: I know. Well, that's the good thing. We're gonna, it's like any other market, we're gonna have five, four or five,
+
+[00:29:05] Troy: then there'll be three, 
+
+[00:29:07] Brian: And then we'll eventually, whatever, we have, we have three, three TV channels in the United States, then we got Fox, we got four. What'd you have, did you have two in Canada? I forgot, we
+
+[00:29:15] Troy: CTV, CBC,
+
+[00:29:17] Brian: That's all you need. but I think, you know, that's the same way this is going to go because it is, it obviously requires a ton of capital and there's only so many people who can make this. I've been using Claude. Claude is my new, it's my new favorite LLM. I had to do a financial analysis, of my business.
+
+And it was
+
+pretty good. I like downloaded all of the, um,
+
+[00:29:42] Troy: What do you need to stop doing?
+
+[00:29:44] Brian: well it, more of?
+
+what do I need to do more of? I'm not, that's proprietary. I can't like share that on here. I got competitors listening.no, I mean, it was just basically doing like a cashflow
+
+[00:29:54] Troy: Who is your competitor? A media operator?
+
+[00:29:58] Brian: I've got many competitors, anyone who, my clients, partners, pay in order to connect them with potential customers is a competitor, it's like everyone.IAB could be a competitor if you really think about it.But, yeah, I've been using Claude a lot, and, I'll bounce back and forth between all of these, and I'm wondering, I pay for a lot, I pay for Gemini, I pay for ChatGPT, I pay, now Anthropic for Claude, I don't, I don't think Grok is, I've never tried Grok, I don't need another, particularly one that has like a Southwest Airlines pilot sense of humor, I don't need that.
+
+but what I wonder is, what is the business model for any of this stuff? it's just like, okay, we're just gonna pour a ton of money, a ton of money, a ton of money, and this thing could be so big, and we don't know how it's gonna be big, 
+
+but 
+
+[00:30:51] Troy: Well, there's three, there's three business models, maybe four. One is something like 92 percent of fortune 100 companies use the open AI. API and the API is a toll toll system, right? So you're powering AI driven application inside of virtually every company. That's a business opportunity. the second is that, and I thought about this differently because I think that there's definitely gonna be a free, well, there already is, but free offerings that are ad supported in the AI space in some shape or form.
+
+And on the frontier of that today would be perplexity trying to build ads into there. Sort of, web index AI hybrid product. And then, someone said, well, if you could get like supersonic intelligence as your partner, like if literally, the AI made you five times smarter or was like, something that augmented your own ability or your company's ability in a profound way, you would pay.
+
+Not 10 bucks a month or 20 bucks a month, but you'd pay a thousand bucks a month. You'd pay 10, 000 bucks a month if they were super smart and we're not there yet. So I think that, the most informed, unique, intelligent,AI offerings will have enormous subscription upside, enormous,
+
+[00:32:15] Brian: I don't see it 
+
+being 
+
+ants. I don't see it being, I mean, maybe, maybe, 
+
+[00:32:19] Troy: be ads. 
+
+There's always ads. There's ads on
+
+[00:32:23] Brian: I know, but like, you know what I can remember in the web two era, everyone was just ads. All roads led to ads. All these companies talked about turning on the revenue spigot. It was just the default business model.
+
+Nobody's is all ads. And it's just like anything. It's now the bloom is off that rose. And now a lot of people. From this world hate advertising. I mean, they like the money from advertising. But, if you look at what happened with social media, obviously, Google has struggled tremendously with getting the balance right between, the, the, the public.
+
+Product quality and the business needs because look at what I would, I would find it very challenging to, to, you could just put in an extra couple ad placements on a page and, next thing you know, like your
+
+[00:33:12] Troy: Anywhere there's downstream transactional opportunity, there will be ads. So just stop saying what you're saying. It's, there's going to be ads everywhere. People need ads, dude. Ads equals, you know, brand ads, equal distribution ads, equal new customers. Like everybody is going to want to participate in some ecosystem that gets them business. 
+
+[00:33:34] Brian: right. 
+
+[00:33:35] Troy: to funnel, to, to, to, to funnel customers into companies.
+
+[00:33:39] Brian: Got it. But outside of the AI chat applications, right, this seems like a B2B market more than anything, not like a B2C market. All the AI consumer stuff stinks, at least at this point. I mean And, and where you're seeing investments, you see Cursor got like a big round of, investment and that's for like coding, right?
+
+And it's like for very specific. And you talk about like, even like open AI, I mean, yeah, it's growing really fast. It's also smaller than OnlyFans. 
+
+[00:34:10] Troy: Yeah. But you know, I, I, I feel like. I guess one of my, observations or something that sort of struck me in the last couple of days is I was, I think that there will be,downstream opportunities for people that want to pay for distribution in any system. Okay. So I'm, I'm confident that that, that will be there.
+
+I, I started thinking about,how early we are and how much change is coming. And I did it through the lens of,looking at, like autumn, Automated cars, right? if you think about, autonomy in the context of cars, I, I think that it's one of those things that we've sort of dismissed and it's going to radically change, not just how we We function in cities, but like completely contort the automotive industry.
+
+Like you know, I, I've been in sort of this mindset, like, Oh, look at what Lee Elon's doing to the poor Tesla brand, it's great where he has insane kind of distribution or market power, like he does in satellites or rockets and stuff where he can be a moron and it doesn't really change the trajectory of the business.
+
+But my liberal friends won't drive Tesla's want wall and, he's going to really screw up that company. And, and I think that that's unquestionably happening, except that. I think that what you're going to see and what path they're on is the automotive industry is over. It's over.
+
+And that what's going to happen as soon as cars are just little robots, they're just robots driving on the road. And they're like, there will always be cars that are an extension of your identity and, personal expression and a joy to drive. And Jay Leno will still have his garage with all his old cars and all that.
+
+But a lot of cars are just going to shuttle you from place to place without a driver. And the progress of Waymo in San Francisco, they just added 5 billion to the, in San Francisco, Phoenix, and where else are they? I can't remember.there's going to be 10, 000 of them or 100, 000 of them on the road.
+
+And, I, I think that if you look at the progress of Tesla from a dataset perspective, from having, localized computing and a giant data, like a giant LLM capability that it. It is in fact going to just be a robotic car and that same kind of in in, in inside intelligence will drive a fleet of human robots and they will have the kind of human form factor because the world is designed for humans.
+
+And so they, as such, they can perform lots of tasks that humans, perform today.
+
+[00:36:49] Brian: Have you, 
+
+seen one of those delivery robots before?
+
+[00:36:51] Troy: I haven't, I haven't, I've seen, one's gone by me in Miami.
+
+what, what I'm saying is we're going to blink and we're going to look at like the automotive industry and realize it's something very different that will be monetized as a service that, the idea of having your license, driving yourself all that, will look old fashioned in not too distant future.
+
+And then I started thinking about that analogy to media and what happens when. the AI is so good at creating content, organizing content, curating content that it's kind of effortless and that you will still read, I might still read what Brian Morrissey has to say because of his take, his voice, his humor, whatever.
+
+But so much, there will be so much displacement because
+
+[00:37:39] Brian: I want to, I want to stay on, I want to stay on the car thing for a minute because I,
+
+[00:37:43] Troy: But you see the analogy, right? Like we're 
+
+[00:37:45] Brian: I, I do see the 
+
+[00:37:46] Troy: early in this. And, and it's, and I don't even know that we see the contours of the future yet.
+
+[00:37:51] Brian: I think first of all, a couple of things, one is people have been dredging up like literally just last year. There are all these like headlines with like autonomous driving is a total failure. We've kept hearing about it. There's no, and then all of a sudden something happened where this year, like it's happening and it's starting to be like, Oh, this is happening.
+
+and it's really progressing and you can start to see, I mean, it's coming to Miami. It's going to start to come to other cities. I know I have not. You and Alex, I think had, had your time in a Waymo. but you know, I hear a lot about people who have been, who, who've been taking the Waymos all the time and love it and can't wait for it to be everywhere.
+
+And one of the things that I think is, And this is like living in Miami really helped us with the public, mass transit is a, is, is never going to work. It's not going to work outside of a very few cities in the Northeast. It's not, we can't build these massive infrastructure projects. People don't take it and we don't have the culture for it.
+
+And these cities are not meant for it. And I think like when you think about AI autonomous driving and like micro mobility, that's how we're going to. get transportation solved in most cities in the United States. We are not going to build subways. The last subway of any size that was built in the United States was in 1990.
+
+It was in Los Angeles. Do you know how many people, did you know Los Angeles has a subway? Exactly. That's my point.that's not happening. And you see, like I see so many people who are on the scooters have actually become a normal part of a lot of urban areas. And you're starting to see all kinds of different modes of transportation that is going to
+
+[00:39:37] Troy: I'm worried about those people that do the one wheeled scooter.they, you stand on it 
+
+[00:39:42] Brian: yeah, yeah. 
+
+[00:39:43] Troy: in New York 
+
+city. 
+
+Yeah, that can't be safe.
+
+[00:39:46] Brian: But look at also just even like City Bike and particularly now that City Bike has like electric bikes in New York. Like when they started City Bike, I don't know how you were like, so many people are going to be dead and all this. And it is just the normal part of the fabric of New York City now.
+
+I mean, City Bikes are everywhere. The streets, I remember I was, I was riding a bike in New York 20 years ago and it was. Terrifying. And now it's completely fine. I mean, it might not be fine depends, it's really not, it's just a completely normal thing. so I'm sort of short, mass transit.
+
+I would love for mass transit. It's it's great for New York City and Tokyo and London and various other places. It's never, it's never going to take hold. And, in most, most places in the United States. So I'm excited for that. Now let's talk about how it relates to media. 
+
+[00:40:35] Troy: well, it's also going to affect the phones, right? Like we're, we're now on the precipice of a real upgrade cycle this time. And the amount of memory on your phone and its processing power will now determine how smart your phone is. You could have a smarter phone than me. I think we were used to,all having phones that basically did the same thing.
+
+Now you can spend a couple thousand dollars on a phone and it's going to have more native AI capabilities than another phone because Apple's putting a lot of the brains on the device itself for speed and for economics and all that. And we're going to have, how smart is your phone?
+
+[00:41:17] Brian: Yeah. 
+
+I think I 
+
+love the idea. I love the idea of super intelligence as a luxury good, right? cause remember Virtu? Remember the, the, 
+
+[00:41:25] Troy: Yeah. Now we have a way to do an actual Virtu phone that isn't just like gold 
+
+[00:41:30] Brian: Ridiculous. It was a flip phone. I remember I saw it. I was like, Oh my God.
+
+[00:41:34] Troy: No, it wasn't a flip phone. It wasn't a flip phone.
+
+[00:41:37] Brian: Okay, but I was like, it couldn't take a photo. this is a long time ago. I was like, wait, it can't take a photo? They're like the people who have like virtues like that. They're not taken. They're not
+
+[00:41:48] Troy: It was kind of a Middle Eastern accessory. It, I don't think it, it played,
+
+[00:41:52] Brian: yeah, I, I, I wonder if we'll, we'll have a similar dynamic in, in media as all these things get commoditized. One of the things I do want to talk about in, in media is, look, the week before. Labor Day is a great, great time to, to bury some stuff, but Gannett put a bullet in, review. com and they had, bought this review site,over 15 years ago.
+
+Right. And they were just bragging about it. But I mean, it was a, a sizable commerce operation. You think about the biggest commerce operations of big publishers. I mean, I ended up thinking about, Obviously, dot dash Meredith, but like the times and with Wirecutter, maybe the journal with by side, but you know, they bragged about the big test center up near, near Boston and, and then they just, pulled the plug on that and they blame Google, they blame all the search problems. Is this a market that you're, I mean, you're, you're, you're on top of this market. Like in Google, there's, there's a lot of changes going on in search. They just had a core update . the SEO people are going crazy about it. I love SEO. Do you ever, do you get into like the SEO, Twitter? It's a,
+
+[00:43:06] Troy: I don't hang 
+
+[00:43:07] Brian: place.
+
+It's 
+
+[00:43:08] Troy: mean, what's I, do you have a question? Because I can answer
+
+[00:43:12] Brian: Well, okay. My question is, is this a, is your sense that this is a Gannett thing? Or is this, is this yet another, shoe that is dropping for, for
+
+[00:43:24] Troy: no, I don't think it's, I mean, I, I think that the. The affiliate space condenses inside of the SERP, right? Like you're what really the affiliate space means is where do you show up on Google? And so, cause that's where intent is mind. And that's where the process of moving to that layer that sits below.
+
+Google's shopping and, links, that there's a layer there that exists that helps you, presumably find some confidence in something you're going to purchase and you can't get information elsewhere. I think negative things have happened for publishers like. Reddit became more important.
+
+there was a lot of the attention shifted inside of the SERP from organic to paid, right? So if you didn't have a competency or the economics to be able to manage paid, you kind of got crowded out. I think, you can't talk about this in the context of USA Today without kind of observing or addressing the broader problem, which is they've had, it's a kind of.
+
+the generic middle market news product problem, which is you're undistinguished. And as a result, they've been struggling with the viability and core economics of USA Today. So there's been a lot of tumult in the org. And so to me, execution really matters. And.
+
+maybe they didn't execute particularly well, and there was pressure in the business and didn't make as much money as they hoped. but I also think that newspapers haven't aligned as well to shopping as, with an exception, by the way, newspapers don't align with it as well as, lifestyle publications where I'll take beauty advice from, Vogue, or I'll take fashion advice from, GQ or, or bazaar or whatever.
+
+I'll take, advice on where to get household items from, good housekeeping or, or consumer reports or something like that. There are ninjas in this space, like natural intelligence, that have come in and so kind of like systematize the game of doing tons of SKUs and optimizing data flows and doing media buying that have certainly.
+
+Put a, a dampening effect on the category and then, but you know, and the exception would probably be wire cutter. That was like a good brand before and a rigorous editorial process before the New York times bought it. So it fit well with the kind of ethos of the company and they've built it, built on it in a really great way.
+
+And I think taking lots of share as a result. So to me, I mean the, to sum it all up, I think that, that there's It suffered from execution. I don't think it's necessarily a dead category or
+
+[00:46:06] Brian: Oh, it's not an indictment of the category. That's what I'm trying to, to get at. I
+
+mean, 
+
+[00:46:10] Troy: know, I think product
+
+[00:46:11] Brian: there going to be other shoes to drop is what I'm
+
+I think we're later in the competitive phase of, of product affiliate. And if you're not really good at it, or it doesn't align well with your authority as a brand, then you probably aren't going to make a lot of money or, and be able to invest in, In good content. And then you saw, I don't know if it's where it happened originally, but then you start resorting to, numbskull tactics like using AI and fake, Yeah, it's being tied to AI. They were part of a little mini AI type scandal. I don't even know if it's a sca scandal is the right word. With, with Advan and supposedly having 
+
+some AI written 
+
+[00:46:52] Troy: reviews.
+
+that can be done in the market. There's only so many vacuum reviews and blender reviews and stuff. And, I think that, people, the authority of the brand matters and execution matters. And they failed. Well,
+
+[00:47:05] Brian: Do you use Google for like product review? Like I never did because I wonder if other people feel this. Cause like, maybe it's because I sort of have some familiarity with the category and how everyone floods into that, you know,but and I assume that's why Google is making all these
+
+[00:47:19] Troy: I use it a lot. Actually, I use it for hotels and sometimes for restaurants. I certainly use it for entertainment and I'll do research on a product through Google. Yeah. If I'm not super deep in the category and they'll go right to the source. If I am, yeah, I use it. I use YouTube a lot too, like especially for audio stuff. There's a lot of like British audio nerds on YouTube that review everything.
+
+[00:47:41] Brian: I use a lot of Reddit. I gotta admit I do.
+
+[00:47:44] Troy: Yeah. 
+
+[00:47:45] Brian: Alex will be happy with that.
+
+[00:47:46] Troy: Well, I'm delighted that you could take time out of your vacation schedule. 
+
+[00:47:49] Brian: It's not, it's not vacation. 
+
+Vacation is over. I left. Once I left the seaside, I'm in an urban environment and urban environment means it's back to work. It just happens to be some cannolis around. It's fine. One of the things that I want to bring up for that I came into contact with, and I think it relates to the media industry.
+
+you know, all over Sicily, there are these, Tanaras, which is where the like tunas were harvested. and they're all just like kind of museums now. And I I've seen them in, in various places and they have, they have one that used to be a really big one in, on this island and it's now a museum, but I started to like,you know, read up about it.
+
+And, it's really interesting how, how tunas used to be harvested. They would take all these, these nets, these. Interlocking nets and lure the dolphin or the dolphins, the tunas, like close to the shore. And everyone would come from like the countryside to do this. And then they would slowly constrict the nets and create a, camera, the more day, a death room in which the, all the tunas would be flailing about and they would take.
+
+these villagers and stuff would take these like clubs and hooks and stuff and just, that's when the slaughter took place, the Matanza. and it was a frenzy of orgiastic violence, that, brought the Tunas to, to the shore. gruesome stuff. But now they're, now they're museums. So, things move on.
+
+Would he
+
+have a friend on Shelter Island just sent me a photo actually an hour ago of a tuna that he caught, that he caught near Shelter Island, like a 200 pounder. And he's bringing it over to my house.
+
+Oh, really? know, a sushi grade tuna.
+
+It's like
+
+a RFK Jr. Did he just find it?
+
+[00:49:40] Troy: No, he's a fish. He has a fishing boat.
+
+[00:49:43] Brian: Can you, can you still like, is it going to be okay to have the sushi tomorrow? Is he can have it on ice or something?
+
+[00:49:48] Troy: He knows what he's doing. I'm sure he does.
+
+[00:49:50] Brian: I would, I would be like, bring it over now and we'll cut into the thing. Get the sashimi. 
+
+[00:49:55] Troy: good product.
+
+[00:49:56] Brian: Yeah. What do you have?
+
+
+[00:49:57] Good product
+---
+
+[00:50:00] Troy: one thing I'll say before I do the good product is I, I got my new Apple credit card, which I infrequently use, but, it's that white one. Do you have it? It's like a white
+
+[00:50:10] Brian: No, they give you what? 5 percent back or something?
+
+[00:50:14] Troy: there's not points, but you get money back and it's on an app.
+
+It's all super slick. And. They're so good at integrating the app into their platform and making everything easy is when you, I got the card in the mail and all I do is I tap my phone to the card, held the card so that the sort of in the enclosure and it's, I just, I don't do anything. I just tap the phone and it's ready to go, which is pretty cool.
+
+Right.
+
+[00:50:45] Brian: Yeah. So that's all it's in your wallet then on your, on your phone.
+
+[00:50:49] Troy: right. And, and I just tap the phone and it's done and I don't have to go to an ATM or I don't have to call someone or I don't have to go online in any way. That's a small thing. you know, summertime is, is for reading and, I paired, Two books with that.
+
+I both of them the I enjoyed with movies And just that the reading of the book inspired me to watch a movie. And I thought that was really fun. So I read the Griffin Dunn memoir and, I don't, have you read that? It's called the Friday afternoon club. And it's about a, a crazy family originally, two sort of wealthy families married, Dominic Dunn and I can't
+
+[00:51:28] Brian: Yeah, he's Dominic Dunn's son? He was like kind of a ne'er do well, right?
+
+[00:51:32] Troy: Yeah, moved to Los Angeles, sort of had a kind of,a, a career in, in entertainment and then, fell from grace and reinvented himself as a writer and ultimately, Dominic Dunn ultimately became a notable sort of crime gossip, 
+
+[00:51:48] Brian: Oh yeah, he was a Vanity Fair
+
+[00:51:49] Troy: uh, 
+
+event at, and
+
+[00:51:51] Brian: He was like pursuing the, the, the Kennedys like non stop, wasn't
+
+[00:51:54] Troy: Well, and he got into it kind of honestly because Griffin Dunn's sister, Dominic's daughter was strangled by, then it became a national case, was strangled by
+
+Her Her boyfriend and,
+
+[00:52:06] Brian: Well, he wrote about it. I, I believe he wrote about the trial.
+
+[00:52:09] Troy: wrote about the trial in, in Vanity Fair, I think. And he might've written a book about it. Anyway, the book is, if you like memoirs, it's a good book and it's kind of a breezy read, reading it.
+
+I felt compelled to, watch, really the movie that I think he produced at Gryffindor and then the one movie that he, I think he starred, or he had a, He had a role in American Werewolf in London, but he starred in this great Scorsese movie called After Hours.have you seen After Hours?
+
+[00:52:37] Brian: No.
+
+[00:52:38] Troy: I think After Hours is maybe a top five New York movie.
+
+I absolutely loved it. And I, I guess it would have been made in the 80s. We can verify that. But, it's about a guy that lives in the Upper East Side that sort of 
+
+in the art scene, 
+
+ends up in the art scene, downtown New York, and it kind of forever changes him. And it's, it's a sort of surreal, romp.
+
+And, I loved it and, I, I would recommend it. So that combo was great. And then I'm reading this book called, Demon Copperhead, which is a novel that takes place, in the Appalachians. he, that's the name of the protagonist and he's an unbelievable character. And it's all written in this kind of.
+
+irresistible local vernacular by 
+
+[00:53:27] Brian: Barbara Kingsolver, who's from the area, it run, it won a Pulitzer prize and, it's been an unbelievable, unbelievably enjoyable read. And, again, super highly recommended, but then I paired that with Deliverance, which, is a movie that, you hear about a lot, but it turns out I'd never seen Deliverance.
+
+[00:53:48] Troy: Burt Reynolds is in
+
+Deliverance 
+
+[00:53:49] Brian: I've seen Deliverance. I mean, it's a little infamous for the scene.
+
+[00:53:54] Troy: Yeah. That one scene, but, it's a great movie.
+
+[00:53:57] Brian: Yeah, I think the scene kind of over, overshadowed
+
+the 
+
+entire 
+
+[00:54:00] Troy: about? Just so we're aligned.
+
+[00:54:02] Brian: I think, I think we, I think we're talking about the same scene.it was a touchstone of, of jokes in a different era when you make jokes, but,
+
+[00:54:10] Troy: I don't think you could actually make a movie like that. That was so disparaging of a region and a people anymore. But, deliverance is I think also worth worth revisiting.
+
+[00:54:21] Brian: okay. I don't know if I'm going to revisit the deliverance. I saw it once and I think that's enough.Yeah, no, I'm just, I'm just finishing, I finally read The Black Swan.
+
+[00:54:30] Troy: How was that?
+
+[00:54:31] Brian: I mean, it's pretty good. I mean, those books to me are like, most of them, most of them can be, like, articles. There's
+
+[00:54:38] Troy: I need, I'm, I need a book record. Have you got one for me?
+
+[00:54:42] Brian: I wouldn't say, I wouldn't, I wouldn't say that one,
+
+[00:54:44] Troy: Historical fiction, a memoir,Not really, I don't really want to sort of business book or self help or something, if that's your jam, but
+
+[00:54:54] Brian: I mean, generally not. I mean, I like those kind of, like I have a, what do I have here? the master switch, by Tim Wu. Oh, and I want to read Hitmakers, the Derek Thompson book about, how to succeed in an age of distraction. He and Ezra Klein have a book coming out together there.
+
+That's a, that's a powerhouse duo.
+
+[00:55:14] Troy: yeah, I'm going to read that.
+
+[00:55:15] Brian: Yeah, I'm excited for that. I listened to a lot
+
+of podcasts. actually, I, my fall will be less about Netflix and more about football and books. That's my, that's my. Resolve resolution.
+
+Yeah. I arrived home just in time for the Eagles game on Friday night. They're in Brazil. I can't believe they're playing a football game in Brazil. I 
+
+don't know 
+
+[00:55:37] Troy: they won't be, tweeting it.
+
+[00:55:39] Brian: That's true. That's true. But that is part of the whole, tech is a power center and they're going to be dealing with a lot of these things.
+
+I think that's why Elon Musk is really an interesting character. Cause he is like a world, a global power center himself. I mean, he's NASA's dependent on it. I mean, he can turn off satellites in Ukraine.
+
+[00:56:02] Troy: Well, looking ahead, Brian, we are going to probably have to spend some time on the responsibilities of platforms. And I'd certainly like to know how you see
+
+[00:56:12] Brian: Yeah. I think next week we should do one about, the Google antitrust. Although these things take forever. That's why it's like, yeah, the trial starting, but it's going to be very embarrassing for Google. It's going to be very embarrassing for a lot of ad agencies that from the time I started covering ad agencies would always deny the kickbacks that they always got and they were like, no, it's not kickbacks it's like, and it's okay, let's play semantics about what you get.
+
+And I don't know. I mean, that all that stuff's going to come out. I mean, it will,some people will be like, Oh, wow, gambling in Casablanca. But you know, make clear that and a lot of these, these markets, the way you win is not just by having the best product or service or delivering the best results.
+
+It's not. 
+
+[00:57:00] Troy: Well, we, do you have an opinion on the telecom? Graham,the French arrest of what's his face?
+
+[00:57:06] Brian: oh, the telegram guy. No, not really. I mean, to me, it's like you can't be if you're going to be one of these gigantic platforms and just be like, Oh, we're not going to do like moderation, just like, just like the crypto people were saying, Oh, we're going to replace the US dollar. Oh, really?
+
+You're going to be in jail. Like, you got to be kidding me. don't mess with the people have armies and 
+
+[00:57:30] Troy: Well, messing with them, but what's right and what's the right balance and 
+
+[00:57:34] Brian: what's right. Power is right. That's what's right, at the end of the day. And, I think that's why Elon Musk is interesting, because he has real power. This guy was like, I don't know, it looks like he was like in Azerbaijan and wanted to have a little romantic holiday with, some young lady.
+
+And, for some reason went to France. Like,that's, that's dumb. By the way, we should have an all in corner because I, mostly because Jason was my boss so many years ago. And, I find it very funny. They had Reid Hoffman on the last time. And, Jason plays the role of the sort of like
+
+Kind of token Democrat. Yeah, yeah, liberal sort of thing, but not really. But he's his line in the sand is like taxing unrealized gains for people who are worth over a hundred million dollars. And I think he's against this because he wants everyone to think that, that he's going to be affected.
+
+[00:58:30] Troy: I think that early position in Uber really helped him a lot.
+
+[00:58:34] Brian: It wasn't Silicon Valley Reporter, as it turns or Venture Reporter or Mahalo.
+
+[00:58:39] Troy: I think But you take, keep, you keep taking swings. I will say this about Jason. He is he's a tremendous, he belongs in the hustler hall of fame. Like the guy is a natural born hustler. I mean, I worked for him when he was still in his twenties and he was just this Brooklyn Hustler.
+
+[00:58:56] Brian: He was like the magazine started with, just like printouts that he would just go to a copy, copy shop and like print out and staple together stuff and drop it off at Jeff Duchess's, office at Razorfish. And it was pretty impressive to see up close. Talking about founder mode. 
+
+
+[00:59:16] Outro
+---
+
+[00:59:16] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week.
+
+Have you ever been to Palermo?
+
+[00:59:36] Troy: Never. 
+
+[00:59:37] Brian: It's cool.it's like a fun chaotic city.
+
+[00:59:39] Troy: Alright, enjoy. I look forward to seeing you back in New York next Yeah. I'm gonna be back on Friday. Can't wait.
+
+[00:59:44] Brian: Is it fall yet?
+
+[00:59:45] Troy: Oh, it's beautiful here right now.
+
+[00:59:47] Brian: Good. 
+
+[00:59:47] Troy: 
+

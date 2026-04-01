@@ -1,0 +1,989 @@
+PVA S2E62
+===
+
+
+[00:00:00] Cold open
+---
+
+[00:00:00] Troy: Brian's hungry. He's in a sauna.
+
+[00:00:02] Brian: I'm not in a sauna, I'm in a cabin, but like a high end cabin.
+
+[00:00:06] Alex: Wait, where are you? 
+
+[00:00:07] Troy: he's in 
+
+[00:00:08] Alex: That's not London, man.
+
+[00:00:09] Brian: well, not in London. I'm outside. I'm at this,
+
+[00:00:12] Troy: That looks like Regina, where I'm from.
+
+[00:00:14] Brian: it's actually nice like I'm not a Soho house fan, 
+
+[00:00:16] Alex: The Soho House is a private club for middle
+
+[00:00:19] Troy: management.
+
+[00:00:19] Brian: Actually, Troy, you and I had breakfast At the The Dumbo house. I remember.
+
+[00:00:24] Troy: Yeah, I liked it Dumbo House.
+
+[00:00:26] Brian: Are you kind of admitting to being middle management?
+
+Or, like, what? So 
+
+[00:00:34] Troy: Anyway, I'm fresh back. I got back last night, and I had been in Europe for the last, week. So I am knackered, I'm a little
+
+Cranky!
+
+It's good to see both of you, though. 
+
+
+[00:00:43] Intro
+---
+
+[00:01:05] Brian: anyway, I want to talk this week about, we've talked a lot about the open web and its problems. And I kind of think it's sort of reaching the end state. I would like to be somewhat optimistic about what comes next and, and to make it more specific. But so a couple things happened this week.
+
+I wrote a little bit about this in my newsletter. we're starting to see the awkward adoption. Of AI tools by by publishers, and they're adopting them in just the way that one would expect, to create a lot of crappy content. so this week, Sports Illustrated and Arena Group is is in focus and and beyond, like in the sort of nerdy digital media world.
+
+But this actually broke out more broadly, I feel like, but maybe that's the Twitter X echo chamber making me think that. but basically, Sports Illustrated contracts with Advan, Ben Fall runs that, we know Ben, and they do the commerce content. They were apparently using AI to do this, created entire personas.
+
+I don't know the whole backstory, but basically it got, Lampooned because this is a brand and this kind of, I think it's a brand that doesn't mean what it used to mean, obviously, but a lot of people still have memories of it. And to me, it was, it's a
+
+[00:02:24] Troy: Or it got lampooned because it's, it's a favorite story of journalists who want
+
+[00:02:29] Brian: well, okay, 
+
+we'll talk about 
+
+[00:02:31] Troy: luster of a media brand and how stupid people use robots to create content. How could they? And so it's, it's a, yeah, how could they? Like, why did the New York Times write this story? Like, everybody knows that, publishers are desperate to diversify revenue by any means possible.
+
+That storied media brands aren't what they used to be. Like, give me a break, guys. Stop it.
+
+[00:02:55] Brian: Okay. So, so you're saying non story, get over it. you gotta do, you gotta do whatever you can to make money these days. And
+
+[00:03:05] Troy: mean, the story? Like, oh, look what Sports Illustrated did. It isn't what it used to be.
+
+[00:03:11] Alex: can I have a concrete idea of what that is? What do they do?
+
+[00:03:14] Troy: They had robots write content.
+
+but more importantly, there's an important identity issue here. They had, I believe they had the robot create the Nom de Plume. 
+
+[00:03:24] Brian: yeah. So they had photos, AI generated profile photos with, with,
+
+I guess AI generated,bios as if these were humans and,
+
+[00:03:35] Alex: Oh, I mean, that's kind of shitty. I mean, it's not, let's be,
+
+[00:03:38] Brian: it's dishonest. I mean, I,
+
+[00:03:40] Troy: doesn't matter. It 
+
+[00:03:42] Alex: but this whole business doesn't matter, but it's all we're talking about. I mean,
+
+[00:03:46] Troy: Well, right, Alex, I'm in your camp here, and I would like to comment on it when Brian finishes his 
+
+[00:03:52] Brian: Alright, this is good. I'll be getting to dinner early. So, lot of upside here.
+
+Yeah, the problem with staying in one of these like all inclusive things is you don't have a lot of options. If the food sucks, the food sucks. I can't walk to a sushi
+
+[00:04:06] Troy: Could you want more? Do you want to get more background on the story? Sorry about that. 
+
+[00:04:10] Brian: no, I don't want to
+
+give more 
+
+[00:04:11] Alex: I think, we should never, never record a podcast when Brian's hungry, because that's all he's thinking about.
+
+[00:04:17] Brian: I had a late lunch. I had a, they call croque monsieur's toasties. I don't know why they can't just call it croque monsieur. There's no difference, 
+
+[00:04:24] Troy: Because they hate the French, dude. Come on. 
+
+[00:04:26] Brian: Call it a panini then, I don't give a shit. Anyway, Look, yes, that's it. It's robot content was created and I think the fact that it did become something of a little tempest in a teapot, I do agree that obviously this is gonna be a ready story.
+
+Journalists are all over any sort of robot writing things because journalists need to protect their turf. I get that.
+
+Right, I 
+
+[00:04:54] Alex: bias, there's gonna be a, a fair amount there when this thing is kind of like looking like it's going to, chip away their livelihoods. So, I get that.
+
+[00:05:02] Troy: Can I comment on this? Just let me know when you want me to speak up.
+
+[00:05:06] Alex: Go ahead.
+
+[00:05:07] Brian: Speak up, Troy.
+
+[00:05:08] Troy: Well, I think the whole thing is such a kind of in between moment. It really is. We're going to look back and go, remember when we used to get upset that robots made content. So it always struck me as kind of unusual that we would land in a place where self hating content creators, quote unquote, like of some sort, would write queries to create content.
+
+that would get shoved into the old distribution system, i. e. Google, when we could just write the fucking prompts ourselves. And then we could get our own content back. Like, it just, it struck me that, like, why do I need someone to write the prompt to get me the content, when I can write my own prompt? it's clearly an in between step, where we have, a sort of class of, content worker creating content with robots that's fed into, Google so that I can Google it and find it.
+
+And then what we're doing, because we know that Google has certain Kind of these structures that look for certain things like Having a bio and an image and Some some semblance of someone who actually wrote an article. So we're gonna be smart about it We're gonna write the article then we're gonna create a fake personality.
+
+So it looks like Someone wrote it. But underneath of all that, it's just like, are you getting what you want? Are you not getting what you want? And we are all in the process of being augmented, folks. like the junior designer is going to feel bad that they used AI to come up with ideas for the logo or the icon or whatever.
+
+Who cares? The trader is going to look for ideas to find a good trade, the insurance person is going to look for a new way to think about writing a policy to minimize risk. We're all augmented now, and, it's just going to happen in content. And we'll look back and think, like, if if the I can write something that's useful, then great.
+
+It helped me. It helped me. And if someone had to make that query, If I made the query myself, even better. What's weird about it is, if you don't read the example you sent around of the AI, presumably, Brian, I don't know how true this is, reviewing volleyballs. First of all, as far as I last checked, AI can't actually squeeze, or touch, or manipulate, or hit the volleyball.
+
+More importantly, the journalists increasingly never do it anyway, so it doesn't really matter. And if you read that content, you want to literally kill yourself. So, like, you know, it's like the system hopefully will start to deprioritize content like that. But it's just a place where we are today until we get to another place.
+
+It's like fake meat. Fake meat is gross, okay? But if there was good fake meat, it would just be meat, and I would eat it. But fake meat today is gross. So we're in the gross period of this content evolution, this AI evolution. And right now we're kind of making a big deal of it, but it's
+
+inevitable. 
+
+It's 
+
+just 
+
+inevitable. 
+
+[00:08:17] Alex: you're missing the point. 
+
+you're missing the, points that are important here. I think number one is that this is like an acceleration of the creation of content that is making. content on the internet less and less valuable and it just pushes us towards 
+
+[00:08:33] Troy: I'm not missing, how did I 
+
+[00:08:35] Alex: but but here Let me finish my thought and this is not an augmentation, but rather like it's looking at the output and saying, how can we, squeeze out just more output, irrespective of quality that then becomes the vast majority of the content that we have.
+
+and then 
+
+[00:08:52] Troy: Well, the bigger picture, it is
+
+an 
+
+[00:08:56] Alex: Right. But, the augmentation is based on a source. of content that is pre existing and, if we're not spending the time to create this new content, then we won't have the source for it.
+
+[00:09:07] Troy: Short term, short term it. 
+
+is. 
+
+[00:09:09] Alex: sure, short term it is. The second thing is 
+
+[00:09:11] Troy: It's starting to, it's 
+
+starting to do its own, own deduction,
+
+logic, etc. 
+
+[00:09:16] Alex: lied about it because 
+
+They lied about it and they put a fake person on it because they know maybe, maybe they're conscious about it, but they seem to know the fact that the only reason that content will have value is that it's on sports illustrated and has a real person behind it because that content could have just been generated by an AI pay 20 bucks a month for, or even get for free via chat GPT and the fact that.
+
+That move feels so desperate, is really, I think a signal for the rest of the industrybecause like, if that's what augmentation looks like, all of these businesses are going to be, are going to disappear over the next few years,
+
+[00:09:54] Brian: Yeah. 
+
+[00:09:54] Troy: Alex, Alex, 
+
+[00:09:55] Brian: is not augmentation. this is replacement. This is like 
+
+[00:09:58] Troy: Alex, it's augmentation guys, I'll tell you, I'll explain why. So everything you said I agree with, we're in full alignment, Alex. Me and you, together again. Now here's the thing. so, The reason that you use Sports Illustrated and you use a person, by the way, I know all these people so I'm massively conflicted and I understand the issue very well.
+
+I know Ben, I know Ross, I know Rob, I know all the people involved. They're all good people. They're all just trying to figure out how to live inside of a pernicious distribution system. And how to make money when... the ways that we monetize media is, is going through dramatic change, so I'm sympathetic.
+
+Now, the reason that you would use a sort of human like bio and you would put it under a reputable aged media brand is just because, first of all, The system likes it. The system being Google, the distribution system likes it. So it helps you accomplish your objective. And I think it makes it easier for a consumer, obviously, to say this is credible.
+
+So I'm not saying it's not at all duplicit, dupli, what is the word? Duplicitous? 
+
+Under, yeah, duplicitous.
+
+[00:11:07] Brian: case it is. Duplicitous. Yeah.
+
+[00:11:12] Troy: increasingly, and particularly as we see AI become capable of deduction, right? Not just statistical relationships between words.
+
+we're going to see, it augment the way we find, acquire, research. analyze things in all kinds of ways. So really that we are using AI to evaluate a product or to go through a series of products and pick one is really just augmentation. When you, when you narrow down 
+
+[00:11:46] Alex: That is not what this is, Troy, 
+
+[00:11:48] Troy: Well, that's, but 
+
+that's the 
+
+function it's, playing. I'm going in, I'm looking 
+
+for a product. 
+
+[00:11:53] Alex: That is not what this is, okay? There's a difference between let's say you paid some person to make a jingle for this podcast. And,
+
+[00:12:02] Troy: We got it free from 
+
+[00:12:03] Alex: one person, just goes and downloads a free sample of something and says here's the jingle.
+
+The other one downloads some sample and cuts it together into an original song. One person augmented themselves by using a sample. The other just said, this is a song I made. And I think the issue 
+
+[00:12:21] Troy: Who cares? 
+
+[00:12:21] Alex: said it's not, it's this is not the wire cutter saying, hey, our, our, reviewers use AI to gather information and then contextualize it.
+
+This was them saying, we've just generated some junk content and generated fake 
+
+[00:12:36] Troy: Right, right. But Alex, you and I, you and I are at a nightclub. We've had a couple of 
+
+cocktails and we're dancing 
+
+together. and we're Right, we're moving, and we're having a good time. And then we get, we leave the nightclub, and I say to you, you remember those two songs that we listened to where we just were shaking our asses, having a great time?
+
+And you're like, yeah Troy, that was a really memorable evening, thank you. And I would say, the first song was written by AI, no human involvement, the second one was written by my son, say, or whatever. And, 
+
+it doesn't 
+
+[00:13:05] Alex: No, it 
+
+does matter because, because it's not like when we were, shaking our asses to that track. It's not like he said, do you know this song that you're listening to right now? It was written by a real person 
+
+[00:13:16] Brian: Yeah, I, think that's it. 
+
+[00:13:17] Alex: behind 
+
+[00:13:18] Troy: Who cares?
+
+[00:13:20] Brian: I think this is a 
+
+little bit of the straw 
+
+[00:13:21] Alex: truth matters, Troy. 
+
+[00:13:23] Brian: Because, 
+
+like, you're saying using, nobody is going to claim that using AI tools is like off the table. That's, of course not, that's ridiculous, right? But I think the way it's being applied right now, and I understand all the reasons in this instance, it's duplicitous, and it's just kind of ham handed and like hacky, schlocky.
+
+I guess that's the only
+
+[00:13:46] Troy: Yeah, I'm sort of taking a bigger picture of you to say, yes, it is a little hacky, but you know, desperate times, my friends. and what I'm saying is in the end, is it good? Did the robot make something good? Did the human make something 
+
+[00:13:58] Brian: robot did not do a good? job. I gotta say, the robot did a bad 
+
+job. 
+
+[00:14:02] Troy: yeah, we used a couple of tactics to game the old fashioned distribution system, Google.
+
+Everybody will use AI to help them do things. In the interim, we are all feeling like we're being cheated a bit. But big picture, you're not being cheated. We're changing. The world is changing. So whether it's digesting papers, or creating ideas for logos, or making a song, or coming up with trade, stock trade scenarios, or minimizing insurance risk, or doing product reviews, 
+
+it's just content. 
+
+We're an
+
+augmented species 
+
+[00:14:34] Alex: This is, a mis, I'm going to go as far as say this is a misuse of this technology that's accelerating the demise of this publication and showing a lot of people what not to do. It's adding to more junk on the internet and it's not going to help the business. Desperate measures. It's like these people are eating their own arm, right? Like, you're going to regret this. And I think it's hugely disingenuous.
+
+[00:14:57] Troy: Did, did I, did, I didn't say that it was a best practice. 
+
+I 
+
+[00:15:03] Alex: Well, but no, but you compared it. 
+
+It's very, I 
+
+think it's 
+
+[00:15:06] Brian: It's like that rock 
+
+climber got 
+
+his arm caught under a boulder. 
+
+It wasn't a best practice to cut
+
+off his arm, but 
+
+[00:15:12] Alex: as we're evolving into being able to cohabitate with this new, really important technology. I think it's important that we also. Gauge the validity of its uses and whether it's good or bad and just saying well It's ai and everybody's got to do it.
+
+It's like saying well, you know, we use this financial instruments to make these junk mortgages make make us a little bit more money. That's just how it works I think if you if 
+
+you keep misusing if you keep me misusing technology Then it it's not aiding us in
+
+[00:15:42] Troy: Misusing technology. Sorry, someone, you decided how we should be using AI? We're trying to figure out how to use the technology. We're trying to figure out if it can help us sort through a bunch of 
+
+stuff and create 
+
+something useful. Listen, big picture guys, you know how I feel. To all of you out there that value human content, good content, art, love, all of that, craft.
+
+You know that I love that as much as you. We want artisanal. We want people created things. 
+
+things 
+
+[00:16:15] Brian: There's a big but coming from Captain Capitalism next. 
+
+[00:16:19] Troy: We're splashing around, worrying about little stuff, to try to come to grips with the future right now. And I'm saying the future's augmented. I think the platform question that you, that you, if we want to move off this,
+
+[00:16:33] Alex: Dude, dude, Dude, dude, dude,
+
+like i'm i'm, 
+
+sorry, but this like the future is augmented I agree with you But I think you're like strawmanning it into this exercise. It's like saying I know these, cyclists are like pumping themselves full steroids, but we can't complain about that because the future is about, you know, being healthy, like people are going to augment themselves in so many terrible ways.
+
+And this is one of them. This is 
+
+not even people 
+
+augmenting 
+
+[00:16:59] Troy: to take the other side of that, I think we should let cyclists take steroids. I think it would be
+
+[00:17:03] Brian: I, steroids do not help cyclists that
+
+much. 
+
+[00:17:06] Troy: whatever, whatever,
+
+[00:17:07] Brian: Blood doping. You go on blood doping. There is a good argument that you should just like set 
+
+a base level 
+
+and say you can do whatever you want to get to that base level of like hematocrit and stuff 
+
+[00:17:19] Alex: apparently the only thing we love more than capitalism is doping. 
+
+[00:17:23] Brian: I'm fascinated by
+
+doping. 
+
+[00:17:26] Alex: do you get what I'm saying, Troy? Like, I don't think this is augmentation. I think this is a, it's a bad 
+
+[00:17:32] Troy: I think it's a step to somewhere new. And in that somewhere new place, much of the analysis, the content, the information that we digest will be
+
+created by machines.
+
+[00:17:43] Brian: So we should just get used to, we should get 
+
+used to, 
+
+this 
+
+[00:17:46] Alex: I mean, I 
+
+[00:17:47] Brian: you're saying. But. 
+
+[00:17:47] Alex: what, 
+
+you're saying then, Troy, is that this is, Sports Illustrator showing us how useless it is in the long run and how it doesn't actually need to exist.
+
+[00:17:56] Troy: I don't, 
+
+[00:17:57] Brian: stuff like this at Hearst? If you had the tech? Would you, be doing, ginning up, under those brands? 
+
+[00:18:02] Troy: I 
+
+think the measure of this, Brian, I don't think that's a fair question. I I think the measure is, can you use technology to create something that serves your audience effectively? 
+
+[00:18:11] Brian: Okay, well that's a little broad. 
+
+[00:18:13] Troy: all know, you 
+
+included, Brian, that we have to live within very difficult distribution parameters that force us to do, crafty things.
+
+it's called search engine optimization.
+
+[00:18:25] Brian: Right. So I have a lot of sympathy for don't hate the player, hate the game. And this is all a game that Google basically runs. It's their game. And I think what's clear is it's not like The loyal readers of SI. com are typing in SI. com and going to this Volleyball review written by a robot.
+
+This was search chum that was being created and This was never meant to be seen outside of a search context and within a search context page 2 page 3 results of volleyball
+
+reviews, 
+
+hey It's a victim mostly victimless crime I 
+
+[00:19:06] Alex: it's such an insane business decision to say, you know, like we've learned a lot about how giving all our content to Google and devaluing our content killed our business. And here's what we're going to do next. Do that, but supercharge it.
+
+It's like saying, you know, like last time I touched the stove, I burned myself. Next thing I just put myself. In the 
+
+stove, 
+
+[00:19:30] Brian: just let 
+
+[00:19:31] Alex: just light yourself on fire. 
+
+[00:19:33] Brian: step. 
+
+[00:19:34] Alex: You just made yourself.
+
+[00:19:35] Brian: want this to be a hopeful show.
+
+[00:19:37] Troy: Okay, Alex, you know, in fairness, and just to challenge the idealists in the room. So you have a company, that is actually built on the embers of, say, media, a company that, you, you were employed by. And its premise is we're going to create a single platform, aggregate up a bunch of media properties in vertical categories, and we're going to get scale and sell advertising against it.
+
+And by the way, we're public and we're running out of money because the market sucks. And we're going to get the five hour energy guy to give us some money so that we can maybe buy some of the distressed assets in this terrible market. And then we'll add some, weird video stuff to it. Some network television programming, all kinds of stuff.
+
+And we're going to try to, sift through all this garbage. Er, not garbage, all of these properties. Again, not garbage. And,
+
+[00:20:27] Brian: Time to take 
+
+out the 
+
+[00:20:28] Troy: and... and... No, no, no, but 
+
+[00:20:32] Alex: was this was a show. Thank you very much. Listen to yourself.
+
+[00:20:37] Brian: This is perfect.
+
+Opposite side parking is suspended on
+
+[00:20:40] Troy: We're gonna we're gonna evolve just we're gonna we're gonna evolve and create a meaningful media business in the future And we're gonna have to be incredibly enterprising with that as a backdrop. Oh my god. We need the money this quarter along comes Basically an affiliate ad network.
+
+And this is a very important notion. If you care about the details, a guy like Ben Fah, who's an expert in affiliate, founded the company, Best Reviews, the original ARB affiliate property. He comes to you as a publisher, and he says to you, I have a bunch of people that want to advertise on content, affiliate links.
+
+Right. This is like the modern version of an ad network, and we need to get it on content and you're the guy on the other on the content side. You say, Well, we don't have all the reviews and all the content for you to put the slot in the affiliate links. And then he says, Don't worry about it. We'll write the content.
+
+And you said to him, Make sure it's good. Because this is Sports Illustrated or whatever. And he's like, no problem, I'm gonna make sure it's good. And he's like, well guys, we gotta optimize this business a bit, we're gonna get the robots to help us, blah blah blah, that's the story. Okay, now, what's going on there?
+
+Alex, just, I'm sorry I went on too long, but I'm only saying that idealists have a very important place in this world, but so does cash flow this quarter. in a very difficult
+
+environment. And all the good folks at Arena were trying to do, all they were trying to do is say, could we partner with someone to help get some of this new type of revenue?
+
+It's called performance advertising and get it onto our pages so that we can actually try to find a future for our media business and paying journalists and all of that. And God bless them.
+
+That's what 
+
+[00:22:23] Alex: I think everybody, everybody's trying to do their best. I think I'm not being an idealist. I don't think this is, if you're planning, like, we're just going to do this until we make enough money to build a real media business. Good luck. Because what you're doing is like, you're like fucking salting the ground, of your media brands by 
+
+[00:22:41] Troy: Really? Is that true? Is that true? 
+
+[00:22:43] Alex: Yes. 
+
+[00:22:44] Troy: You inject a bunch of funky content into Google to sell a few volleyballs? Come on.
+
+[00:22:49] Brian: Okay, so victimless crime
+
+is basically what you're 
+
+[00:22:53] Alex: I mean, my guess is, my guess is that it has no repercussions and everybody's okay with it. So we should be 
+
+[00:22:58] Brian: But I think to me, what's, what's, interesting is that what, SI is doing is fairly common because in the information space, you're competing with anything and everyone. Right? So, like, when you're in the SEO part of the information space, there's scurrilous characters who have no qualms whatsoever about using technology, using whatever to get it.
+
+Traffic and you are competing with them in the serbs like you are and like I I put that against, this one of these SEO. I love the SEO hustlers of Twitter, this guy and a posted it, which was crazy because he ended up getting a shutdown. This is his tweet. He said, We pulled off an SEO heist that stole 3.
+
+6 million total traffic from a competitor. We got 490, 000 traffic in October alone, and he goes through how they did it by basically exporting a competitor's sitemap and then, of course, turning on the AI engine and creating 1800 articles from the competitors titles and taking their most valuable search traffic in process. Basically, every publisher is now doing some version of this. it's again, the game that has been set up and the incentives that have been set up by Google. And I'm not saying that Google doesn't have a ton of constituencies that it has to cater to or not cater to or try to keep somewhat miserable, but not too miserable.
+
+It's set up these incentives that Says if you're at the arena group. Yes, let's do this We should we we need to be able to do this in order to compete in the search results,
+
+right? 
+
+[00:24:36] Troy: You're right. 
+
+[00:24:38] Alex: however lean they run these things, their cost structures are going to be way higher than these, like, SEO farms that are set whichever place has the cheapest electricity and kind of run these things, all day and all night and they're trying to build this on top of the semblance of a real media publication.
+
+I think they're always going to lose this battle. I don't understand why people are jumping into this saying, well, we have to do it. It's, it's short term thinking 
+
+[00:25:06] Brian: mean, I just look at it as like you can't have an upmarket brand You can't have you have to choose a lane at some 
+
+point and you can't have an upmarket brand 
+
+[00:25:14] Troy: survivalist 
+
+[00:25:15] Brian: You cannot okay, but okay, there's survivalist thinking but like you 
+
+cannot have an 
+
+upmarket brand 
+
+[00:25:21] Alex: okay. exactly, I don't think you can do both. And if I'm going to the, to the market and I'm saying, Hey, here's our strategy for 2024 is gnawing at our arm, hoping that we survive, it's just, I don't think that stock is worth anything. looks, I mean, it's all Google's fault, of course.
+
+Right. I mean, have you seen like what the algorithm does to YouTube videos and websites, everything's becoming shit, but if you have a thing that has a minute amount of value just in its brand itself. Like, going up into a knife fight with people who have a cost structure that is probably a tenth of yours that are going to be hacking the system constantly that don't have to look good, that are not going to be, have articles written about them if they do this crazy stuff is insanity.
+
+[00:26:05] Brian: that's why publishers outsource this to people like Advan or the others, the anonymous names that do it, right? you know this world. 
+
+[00:26:15] Troy: I know it very well.
+
+[00:26:17] Brian: I know you know it very
+
+well. I 
+
+[00:26:23] Troy: I 
+
+did I pop this in. I just think that we should maybe leave the
+
+naive portion of 
+
+the 
+
+show.
+
+[00:26:29] Alex: This is 
+
+[00:26:30] Brian: Okay, set. Papa Zinn, get real.
+
+[00:26:33] Troy: Yeah, so here's the thing, guys. One, what I think is is tremendous, slightly disconcerting if you now want me to kind of look at this through another lens. And, and I want to talk about platforms for a minute. Brian, you brought it up in the email. And you talked about how, how hard it is for Google to kind of be the gatekeeper of the open web and keep all the constituents happy.
+
+But really, this is about kind of one of the conundrums or challenges of our time, which is. The massive leverage that is created by technology and how we deal with that in ways, that, that are really different than the past. If you want to go back to an analogy, I mean, the, this is sort of feudal in a way, right?
+
+Like we are all just kind of like tending to our little squares of land that we do not own, for the great landowner that are the tech platforms and they don't, they don't own the stores, let's say, but they own the roads, and they own the land, and they own the buildings, and, they own everything that allows you to run a, run your store.
+
+and we just, kind of, work away to serve you. and the reason is, is it because. Society and commerce and content and communication all flow through our little boxes now, our laptops and our telephones and everything that the platforms that are essentially, the roads and tools of that system have an immense amount of leverage and like so much so that they can do like a little optimization and destroy 100 businesses.
+
+And so it's so different than meat space, right? Like the leverage in the digital world is profound and unsettling, I think. And, and I think it's happening wherever an interface is the way that we access, goods, services, products, friends, communication, etc. It's happening in cars. It's, certainly happened in content.
+
+I mean, when you think about power of Google, Apple, I mean, yeah, they control the content flows. Yeah, they control the platforms on which humanity express themselves. Yes, increasingly, if I was to look at my credit card bill, so much of my commercial activity flows through technical, like, the big tech companies platforms.
+
+If it's Amazon, Or if it's credit card transactions through Apple, I mean, or if I'm booking something like a hotel through Google, like so much of commerce now flows through the pipes of the big tech platforms. It's not just 
+
+[00:29:13] Brian: yeah, 
+
+[00:29:14] Troy: everything.
+
+[00:29:15] Brian: and they manipulate the participants, the behavior of the participants by
+
+setting the incentives,as such to say, this is what you do. I mean, you look at the Amazon does this it's really difficult in an antitrust environment to explain this. I'm not a lawyer. I'm not going to become
+
+[00:29:30] Troy: I mean, look at what they're doing to advertising brain. Okay, advertising is old news. Sponsored listings and distribution 
+
+[00:29:37] Brian: not advertising. 
+
+[00:29:39] Troy: It's payola.
+
+[00:29:40] Brian: Yeah, 
+
+[00:29:41] Troy: Okay? Right? Well, I mean, someone made a post about this today on Twitter. Listen, the 31 bill that Amazon does in quote unquote retail media, they have to get back from you, the consumer.
+
+Right? So their business is so remarkable. First, they lock you in with prepaid shipping. That's called Amazon Prime. Right. And then when you search for something, you have to be, you have to pay them to get into the consideration set of what a consumer's gonna buy. Or a competitor will buy my
+
+search terms. Right? Well, they make it so that your prices can't be lower anywhere else. 
+
+[00:30:16] Brian: Yeah, well, that's setting your prices. 
+
+[00:30:18] Troy: right. And so you have to build in all the fees for advertising to Amazon in your, in your pricing. So basically they're elevating pricing everywhere. And it's really, in the end, hard to navigate which products are best 
+
+for you. 
+
+Because it's all just a game 
+
+of
+
+[00:30:32] Alex: Amazon's like fucking dystopian at this stage. It's just, they're not even providing the best products anymore. and, if there's no way for the government to step in here, we're all doomed.
+
+[00:30:43] Brian: But, but they get, bring
+
+[00:30:44] Troy: Can I take another shot at them? Their, their interfaces are gross. Just quickly. Amazon Prime Video has a gross interface, and I'm 
+
+just going to leave it at 
+
+[00:30:54] Alex: Well, I, had long conversations with people from Amazon about that. And there's always well meaning folks who are trying to go into Amazon and fix their design. But it always ends up being like, it doesn't need to look good. Who gives a shit? don't need to make the experience any better because people will jump through hoops, to get the cheapest price. 
+
+[00:31:14] Troy: Also, Apple's starting to suck, but I'll just, we'll come to that on another episode.
+
+[00:31:18] Brian: Okay, but just to bring it back to Google, because they have a real problem on their hands with, this gunk in their search results and it's going to get even worse. And yes, these tools are going to be used. We're all, we're an augmented people. We already are. We're going to become further augmented.
+
+And You know what the arena group and ad bond got called out for is going to be done a million times over. And I don't know how Google can figure all of this out, considering all of the pressures that the business is under from chat GPT and stuff like because It would be easy to say, well just ban bot created content.
+
+Well, it's gonna be increasingly very difficult to discern what was created by bot and what's created by a human. I think that was your point, right? Like it, this is just sort of an extreme example and that's why I consider it like ham handed. 'cause there clearly wasn't enough human oversight, which at this point, these tools need anyone who's read chat, GPTI think who knows how to write, would say that this is not ready yet.
+
+Just to like let, let it go. But I think it's going to be a real problem. and what is the open web without a centralized search engine? Does it exist? Because if Google stops being useful to people, then what? We go back to homepages for a few publications and just stay in different apps? I don't, I don't know what the, the
+
+answer is for the open 
+
+[00:32:42] Alex: Yeah, I mean, I don't know. I think I'm already interesting tool that I've been using a lot lately more than chat GPT is called perplexity. I've talked about it before, and I do notice that my behavior is that I'll get answers. especially when it's around like hunting for a product, et cetera.
+
+And I will click through on the links that it gives me or the references that it gives me, either to get more information or just to look at a piece of media. but I think that type of interface is going to, become more and more,the daily use case for a lot of people.
+
+And so it doesn't completely, dismiss the need for websites or a search engine still acts as a search engine. there's just a lot less time spent on the site and a lot more time spent on the, you know, on the actual content and the destination.
+
+[00:33:34] Troy: Right, right. It's just, it really is a better 
+
+[00:33:36] Alex: Yeah.
+
+[00:33:37] Troy: that disaggregates
+
+the 
+
+[00:33:39] Alex: Yeah. 
+
+And you still need, You know, potentially a special way to look at media or, a product shop grid or a way to buy something that, that might not be completely integrated 
+
+into into the AI.
+
+So that's still going to happen. can't see though, so much usage is kind of that. People clicking on links by error or just running through content that they don't actually want to get to the thing that they want. I think that's disappearing, you know, in that new world. And that's, that's whole layer of like, SEO hacking and, and,you know, loading pages with ads, et cetera. it's fundamentally going to change. the business and probably benefit, you know, we're talking about Amazon benefit things like, you know, these, in feed ads that Amazon does the payola as,Troy calls it, 
+
+[00:34:24] Troy: I wanted to try to add to this with a very, unformed thought that can either be maybe extended upon by you or by an intrepid listener or something. let's just go through the logic. We like webpages because some of us like words on paper. And we also like webpages because God damn it, we can own them.
+
+They're ours. They're on our domain. Google can come along and sniff them, but they're ours. We can put whatever we want on them. We can add a commerce link. We can put an advertisement. We can harness their value in different ways. And I often think about this, what happens when that notion becomes quaint?
+
+when that notion of the web as stacks of, of paper starts to disappear and be replaced by the idea of flows of energy? And by like real time and signals of authenticity and trust that are connected to humans. And then slurping sort of machines that pull all that into something that's useful to you.
+
+And the only things that don't get chopped up in that process are SKUs. SKUs are just products that you buy or the trucks that deliver them to you. But like this idea that... there's Google and there's a bunch of pages that we own, seems to be 
+
+evaporating. 
+
+[00:35:47] Brian: Yeah.
+
+[00:35:47] Troy: And I'm trying to just think of like, but to me like, this podcast and us talking to each other and other people being able to listen to it, that's not going away.
+
+Right? Nor is your reputation, Brian, as an industry thought leader. Nor is, anything that is real time or indivisible. But like the idea that like an article is actually worth something and therefore the navigation to it is worth something to me is going to be a dated idea. And I just don't think it's clear what the next really looks like because our headspace is entirely rooted in the fact like of ownership and discrete shapes of things. And that's what the web offers us. 
+
+It's a skeuomorphic the web. 
+
+[00:36:31] Alex: I think it's probably, you know, it started with the creation of the app stores and, you know, building more value in those apps that you controlled. And it's going to continue down that path. You know, there's no reason why if you're creating content, it couldn't exist on an app as well. as, you know, like on a PlayStation or, or whatever new device comes out. I think the pathway to content and to the experience is going to change, but it does remove a lot of influence from the web. and I think the. Few people that are going to really want to maintain content on the web are people maintaining these databases for the AI, which is essentially what they're doing today with Google, right?
+
+Like the web is kind of an open database to your stuff with the eye and you hope it sends you traffic and that that traffic in some sort of way.
+
+[00:37:20] Troy: Well, that's a that's a good way to build on the theory, Alex, which is it's really not about pages. It's about databases of knowledge, and it's the value is maintained there.
+
+[00:37:31] Brian: Explain that, what, database of knowledge, what is that?
+
+[00:37:33] Troy: Well, database, whether it's numbers or something proprietary or knowledge or perspective. feeds an AI processor that delivers it back to you in the form factor that you want it in.
+
+Right. And it's only defensible to the extent that you can defend, your data position. And so the way that we looked at that historically was that was my page. And I'm just one. And I think what Alex said is that you know, the page doesn't really matter. It's
+
+just a database. 
+
+[00:38:01] Alex: The thing that's worrying is that the access points to these databases become controlled by platforms. You know, whether it's the app store or YouTube, podcasting is one of the last free bastions where you can just push an RSS feed and, really own your audience in a way that is a little bit more, manageable.
+
+But like, that's the worry, right? That's my biggest worry. Now, there is a lot of stuff happening around Things like ActivityPub, et cetera, where you could build more decentralized tools that allow you to access things in the same way you access podcasts. But I do think, that over time, that database, how you control it, where you decide to put it, is going to be really interesting to look at, right? is exclusivity deal on that database? are you going to be able to monetize or leverage? things like that, you know, the same way, like, you know, Rogan, decided to put his podcast on Spotify. Are you going to have content that exists really only under certain, tools and, and that becomes more of a, of a way to generate revenue, for sites, you know, like sports illustrated, et cetera, right?
+
+Like just give, give people access, or give companies 
+
+[00:39:10] Troy: But you know what? Some of this points back to the world is sort of opining on what the value of like text content that has no intent or no kind of protect a protectable IP value. It's saying that it's worth very little. An example of that would be, a page of content. that carries no signal about what someone wants to buy or a next action that they want to take might be worth 15 bucks per 1000.
+
+Right? So that's called the RPM and the RPM on a piece of undifferentiated. Like it's still got traffic against it or traffic potential, but that content is worth very, very little versus a page on the internet that is a place where there is purchase intent or someone is on their way to buying.
+
+Insurance product, financial product, home services, any product that you could think of, a computer, whatever. Those could be worth 500 per thousand, 700 per thousand, 1, 000. So imagine that, the difference between just, content that has no sort of tangible commercial value, 15, and something that is connected to a purchase worth 1, 000.
+
+[00:40:25] Brian: yeah, not all attention is equal.
+
+Like, that's why all the stuff with attention, a lot of media just gets attention, it doesn't have intent.
+
+[00:40:33] Troy: So it's pretty amazing that the world over the last 20 years has kind of ruled on the value of that stuff. So either it has subscription value, right, i. e. someone likes it so much that they want to pay for it, or it has commercial value, i. e. it's a stopping point on the way to purchasing something, or it's worth basically 15, it's worth very little.
+
+[00:40:55] Brian: Yeah, but it can also be worth... I didn't think that's why when you when you see these 2024, what are people focusing on in 2024? You see like events, activations and stuff, because we've talked about this a lot. media is a great, you know, big brands, small businesses always been that way. It's going to be even more so that way in that you need to figure out ways to make money that are not putting Yeah. Ads on pages and monetizing attention versus, unless it has intent, like if it's, if you're just saying we're going to monetize attention on webpages, like that's a tough one. Then yes, I would say pull out all the stops, whatever it takes. If that's, if that's your strategy, absolutely. I would say bring on the bots. Cause I just don't see how that, but you can use text based content that gets attention that doesn't have like commercial intent and build a different kind of business. It might be a smaller business, it might not have as much leverage in the model, it might be services based and the other things that we've talked about on here.
+
+But there's a ways, there's ways to, to use text based content to build businesses. 
+
+[00:41:58] Troy: Sure. 
+
+[00:41:59] Brian: different. I feel like 
+
+[00:42:00] Troy: I feel like 
+
+this was like a really depressing podcast.
+
+[00:42:03] Brian: I don't know why, 
+
+I wanted it to 
+
+be optimistic. 
+
+[00:42:05] Alex: I 
+
+mean, 
+
+my hope is that, when a lot of the commercial activity gets removed from the web, it becomes the thing it used to be, which is this cool place where you can try shit out. 
+
+[00:42:15] Brian: Wait,
+
+walk us through the commercial activity being 
+
+[00:42:18] Troy: What? How is that happening? the
+
+next
+
+thing 
+
+[00:42:21] Brian: happened? 
+
+[00:42:22] Troy: is something about
+
+late stage 
+
+capitalism. 
+
+[00:42:24] Alex: if you remember the internet, the internet
+
+pre Commercialization. but it was great. It was a fun place to be. 
+
+[00:42:32] Brian: Like the chat rooms? 
+
+[00:42:33] Alex: Yeah. Chat rooms, IRC. You had, people doing all sorts of like fun websites. not trying 
+
+[00:42:40] Brian: Yeah, it's 
+
+[00:42:41] Alex: scale. I 
+
+[00:42:41] Brian: radio phase. yeah. 
+
+[00:42:44] Alex: mean, 
+
+[00:42:44] Brian: I don't know, I wasn't into it then. I
+
+like the commercial 
+
+internet. 
+
+[00:42:47] Alex: well, I mean, you were, you were too busy going to parties, but like, I do think there's, there's a huge, there remains to be like a. place for an open format to share and create and disseminate content. And, let's not forget that the web is very capable of doing, like, pretty exciting, interactive experiences, etc.
+
+So I still think that there are ways to build things that require... people to get there. I think there are still ways to lock things down so that you you know, you can't get all that content via, regurgitating it. if you make something of value, it might take time, but if you make something of value, I think the distribution, can be innovated on, right?
+
+If you're going to go into the battle of like, trying to beat the algorithm in Google or or anywhere else, you know, it's, it's a different fight, but I still think there's hope for the web, for the web itself.
+
+So, 
+
+[00:43:40] Troy: There we go. Okay. 
+
+[00:43:41] Brian: the open 
+
+web is not dead 
+
+after all. 
+
+[00:43:43] Alex: I don't know. I was trying to end on an optimistic note. I mean, Google, Google is like the oil company and it's, it's now in the fracking stage where it's sucking the last remaining value out of the sand and when it's barren, it's going to move on to something else.
+
+[00:43:57] Troy: Yeah. Okay. So we'll each get a chance to wrap up the episode and from our own points of view. 
+
+[00:44:02] Brian: Okay. 
+
+[00:44:03] Troy: exists as an interface between ideas and people. And it performed and does perform a very important role in society in helping people understand things, directing attention and, sort of coalescing points of view.
+
+And increasingly that interface point is being in a, in a kind of prism like way, spread out across way, way more points of light. Where people are connected to different people and we're all part, we all participate in this content economy inside of there. There were still be important nodes that are media, but it's changing a lot.
+
+And you have to look for places where your node is either. Commercial by nature, or that it's indivisible, like a podcast or a piece of IP or video, or you have really unique data that someone needs or wants to pay for. And I just think that that all of that changes, the sort of value chain of media in ways that we don't fully appreciate yet.
+
+And yeah, Google sits on top of that today. And tomorrow, they're just going to play a much smaller role. But the web will hopefully a. You know, be sustained in different ways through it. I love the web and I do understand what Alex said about in its earliest, most pure ham radio like manifestation.
+
+That's all I have to say until we get to best product.
+
+[00:45:27] Brian: Okay. The only thing I would add to that is, I thought it was notable that they went through the trouble to add human like faces and names to this content. And I think a big question when all this augmentation truly takes off is whether there'll be a human premium that is placed on stuff that's created by hand, by
+
+humans. I think there will be. I think it's going to be 
+
+a smaller Sort of, and I think that part, the artisanal part will be really interesting and stuff. I don't know if they ran like an A B test about whether, you know, I don't know if this stuff in this context performs just as well as if a human created it.
+
+And honestly, a lot of the commerce content out there that you see is not exactly, look, I honor all labor, but it's whatever. I understand pointing the bots at a lot of that type of content. but, ultimately, as it becomes, it proliferates, I do think that the value will go up on, on some versions of human created content.
+
+It'll just be the more, artisanal,
+
+higher end 
+
+stuff, 
+
+[00:46:32] Alex: which is not to belittle the point, which is why I think it's, it's madness to place a bet on the other side of that, which is that, accelerating that non human content rather than. trying to invest more in, purely human content, even if you have to slow down for a second.
+
+[00:46:49] Brian: one of our listeners actually sent me an AI tool that, he's developed that's actually pretty cool. it basically gives you the, when 
+
+[00:46:57] Troy: Is he paying you for this? 
+
+[00:46:58] Brian: no,
+
+[00:46:59] Troy: Okay, good.
+
+[00:46:59] Brian: no, you're like Captain Capitalism and you're like against monetization.
+
+[00:47:03] Troy: I just want full disclosure 
+
+on all your,
+
+like, 
+
+[00:47:05] Alex: Yeah, we're 
+
+[00:47:06] Troy: moments. 
+
+[00:47:07] Brian: No, I don't. 
+
+[00:47:08] Alex: company here, Brian. Don't know, 
+
+[00:47:09] Brian: Okay, well, okay, well, I didn't like have AI generate it.
+
+Anyway, he created this thing that basically it's like an ask AI button that will be on on web articles and you click it and it gives you the summary. I don't know if this is like the implementation, but it would be nice to see more examples of publishers using 
+
+[00:47:30] Troy: What's it called, Brian? 
+
+[00:47:31] Brian: AI ways I'm, I'm actually
+
+getting 
+
+[00:47:35] Troy: there's a bunch of those. One of the ones I use is called Wise One. Same thing, it's a browser plugin that'll summarize anything.
+
+[00:47:41] Brian: This is Tyler Sennett, Tyler Irvin from 
+
+Get Archie, getarchie. ai.
+
+Tyler did not pay 
+
+me for this, I should say. anyway, it was pretty interesting. it out. what's a good product?
+
+[00:47:55] Troy: 
+
+
+[00:47:57] good product
+---
+
+[00:47:57] Troy: The first thing I would do is, out Julia Alexander, who, is a researcher at PARA and a writer for Puck, who, gave us a nice shout out on Twitter today. And I think she's a cool cat, and, She likes us. She likes our podcasts, which I appreciate. thank you. And she 
+
+always has, she has an incredible. We'd love to 
+
+[00:48:20] Brian: Talk streaming. 
+
+[00:48:21] Troy: Incredible understanding of the streaming ecosystem. I think
+
+maybe one of the best in the country. She really knows her stuff. And she's also an NFL fan, it seems. Which I appreciate. I was so pissed, so pissed that the Eagles and the terrible referees that victory from Buffalo.
+
+[00:48:40] Brian: Bye. 
+
+[00:48:42] Troy: Come on, Brian. That
+
+was 
+
+garbage. 
+
+[00:48:44] Brian: a lot of calls that went to Eagle's Favor, but that's...
+
+[00:48:47] Alex: leave now. I'll see you guys later. 
+
+[00:48:50] Troy: Okay. 
+
+Okay, sorry. Alright, so that's not, so I want to just The weather in Ireland isn't particularly good. it's
+
+often grey 
+
+and 
+
+rainy. 
+
+[00:49:00] Brian: now?
+
+[00:49:00] Troy: No, no, the weather's not a product, but I would say that the warmth of the Irish people makes it all worthwhile. The Irish people are literally the best. They're 
+
+so, they're like Canadians with an accent. 
+
+No, they're just great people. They're nicer than Canadians even. so I like that. But one of the things that I, I think that when the uninformed look at a glass of Guinness, they think it's gonna be heavy. And like stouty and mashy and hard to drink. Nothing could be further from the truth.
+
+Nothing is as good as a well poured Guinness. And I know that it's now owned by like Diageo and but the folklore of the company is strong. And I think it's just like a good Guinness to me is the most
+
+quaffable of 
+
+beers. 
+
+I love it. That's my good product this week.
+
+[00:49:50] Alex: Well, there we have it. I mean, I can think of many things better than a Guinness. Uh, do you drink it cold? 
+
+[00:49:56] Troy: It's yeah, it's usually 
+
+chilled. 
+
+[00:49:57] Brian: served like, yeah, cold, but kind of... 
+
+[00:50:00] Troy: Brian, do you like 
+
+a Guinness? I 
+
+[00:50:03] Brian: I mean, I don't, I don't drink them regularly, but like, I would say, yeah, if 
+
+I
+
+was like in, in 
+
+Ireland 
+
+at Johnny Fox's or something, sure, I would, I would
+
+[00:50:11] Troy: I went to Johnny Fox's this week. 
+
+[00:50:13] Alex: pro tip, if you ever run out of Guinness, just take a flat can of Bud Light, pour an espresso in it and stub out your cigarette in it and you get about the same experience. 
+
+[00:50:24] Brian: Really? Very anti Guinness, I see. All 
+
+[00:50:29] Alex: it, it's an acquired taste though. 
+
+[00:50:31] Brian: right, let's leave it there on the Guinness. 
+
+[00:50:33] Troy: just one, you usually look over to me to come up with best product and I, and I have lots of points of view on good, good products. 
+
+[00:50:39] Alex: it was a good, good, good one, we don't all have to agree. 
+
+[00:50:41] Troy: the show with something that you 
+
+think is exceptional, I 
+
+encourage 
+
+it.
+
+[00:50:45] Alex: That was aggressive. And on that note, is this another great episode? 
+
+[00:50:51] Brian: I have jet lag. 
+
+[00:50:53] Alex: and everybody just found out that pretty much if you just send us an email about your new product, we're going to read it live on air and give you free advertising. but aside from that, please and review and share the podcast 
+
+[00:51:04] Brian: But then, But 
+
+once we get 
+
+enough volume, then we'll
+
+have sponsored listings. That's the 
+
+[00:51:09] Alex: Yeah. Some of us put a lot of work into this. Others 
+
+like pretty much just generate 
+
+their faces and answers. 
+
+[00:51:15] Troy: can we get, Hey, does Bloomberg Scott listen to this podcast, Brian
+
+[00:51:19] Brian: Bloomberg Scott. Ex Bloomberg now. I don't know. I had 
+
+[00:51:23] Troy: Havens Havens. 
+
+I said 
+
+[00:51:25] Brian: yes, I 
+
+know. 
+
+[00:51:26] Troy: I love Scott Havens, 
+
+[00:51:27] Alex: we'll find out now. 
+
+[00:51:29] Brian: Yeah, Scott, if you're listening, what he's he's out of the 
+
+media industry, he doesn't have to like pretend he cares.
+
+[00:51:34] Troy: what a great, what a rock star
+
+we have to 
+
+[00:51:36] Brian: No, he's a great guy. 
+
+I was gonna make a joke on his LinkedIn about how he's leaving like, one of the roughest businesses to go into the even worse business, which is the Mets.
+
+are a good business is a bad baseball
+
+[00:51:47] Troy: Yeah. But to have him honestly reflect on, on a life in media at this point 
+
+[00:51:52] Brian: Yeah. 
+
+[00:51:52] Troy: leaves to go work in. Thank you. Thank you. the Mets would be cool.
+
+[00:51:55] Brian: And we should also handicapped. That's one of the last good jobs in. Publishing and, ah, it's media, but like, that's one of the last good jobs.
+
+Don't you think? 
+
+[00:52:05] Troy: Oh yeah, that's a good one. Yeah, yeah. 
+
+[00:52:07] Brian: Condé Nast. 
+
+I 
+
+[00:52:09] Troy: Except there always, there always seems to be a little bit of confusion about what you're optimizing for because the media side is a kind of ingredient to the bigger business and it doesn't have to run out of profit. So, there's a luxury in it, but also a kind of, lack of urgency. 
+
+[00:52:26] Brian: I don't know. Sounds like a dream to be 
+
+honest. 
+
+
+[00:52:30] outro
+---
+
+[00:52:30] Alex: All right. Episode 62 in the can. If you have any 
+
+meddling sports teams that you need people to work for, Brian and Troy are looking for jobs. just, write and review, some comments. See you next week. 
+
+[00:52:45] Brian: I 
+
+would run the Eagles. I don't think I'd move back to Philadelphia, but I'll run them.
+
+Alright, let's 
+
+leave it there. I gotta go to dinner.
+
+[00:52:56] Troy: Alright, thanks. 
+

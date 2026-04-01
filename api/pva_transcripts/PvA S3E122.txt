@@ -1,0 +1,957 @@
+PvA S3E122
+===
+
+​
+
+
+[00:00:00] Open
+---
+
+[00:00:00] Brian: oh, I loved We Built This City. That's a great song.
+
+[00:00:04] Troy: yeah, I don't think it's a, I think it's a novel song. I'm not sure if it's a great song.
+
+[00:00:08] Brian: It's in the canon. That is in the cultural canon.
+
+[00:00:11] Troy: we can get more into yacht rock talk later 
+
+[00:00:14] Brian: Yacht Rock's not in anymore. I think that's out.
+
+[00:00:17] Troy: It's never, uh, it's, it's not true actually, and I don't know how you
+
+say things like this. It's
+
+[00:00:22] Brian: I don't know. It's a podcast. You just say things, you just say things definitively and then move on to some other topic.
+
+[00:00:28] Troy: ​
+
+[00:00:50] Brian: 
+
+
+[00:00:50] Welcome
+---
+
+[00:00:50] Brian: A couple things. one, I should say, welcome to People vs. Algorithms. Sometimes I forget that, each week,I'm Brian Morrissey. I'm joined by Troy Young. Alex Schleifer is not here. He's on vacation.
+
+Troy and I only get two weeks off a year from PVA, but Alex is European, so he gets eight weeks.but he'll be back hopefully next week. Is he trying to, like, do, like, Austrian goodbye? Bye. Bye. we're not going to let him get away. He's got too much, too many fans. but
+
+[00:01:15] Troy: Alex.
+
+[00:01:15] Brian: yeah, I know. So keep the Alex love coming because, you know, we need to make sure that he doesn't try to run away from the
+
+[00:01:22] Troy: He also has an enormous ego and he loves to have it fed, know that he loves to be pet. speaking of that, you got pet by Dylan Byers this week on, the grill room. a very good media podcast. He's had some really good guests on, I really enjoyed. Yeah, I'm the shittiest guest he has.
+
+[00:01:39] Brian: no, you've been on a few times. I hope you're not like flirting with Dylan to whatever.
+
+It's fine. If you want to replace me with Dylan, that's fine. Dylan's a great reporter and I enjoyed the podcast when you were on it, when you're not on it. but you know, you guys, you,
+
+[00:01:52] Troy: He will, he will document the death of Legacy Media until he falls over dead.
+
+[00:01:57] Brian: Yeah, no, he loves it. and he pumps out a lot of content. You guys got to that. but you did fit just one note. You didn't promote this podcast that you've got to get the first role of the information space. We've gone over this a million times is to be totally shameless, you know, I mean, look
+
+[00:02:14] Troy: took that. I took
+
+that note. I took that note. In fact, so much so that I, I incorporated it into, the email this week that we're going to send out.
+
+[00:02:23] Brian: okay, good.so let's talk about because you, you know, I think you're like, you became like Dylan's like AI whisperer, I guess. I mean,
+
+[00:02:30] Troy: Well, I actually took, had a bit of an issue with that because, they are, they're a punny bunch over there. They like to, to pun it up in the headlines, which just with too many people in, in the field from what I understand is a low form of, 
+
+[00:02:45] Brian: Well, that's me. I have, I think it's, I
+
+[00:02:47] Troy: There are others that form of humor. Oh, really? Cause journalists have this weird obsession with puns, particularly British journalists.
+
+well, the first time I was on, I think that they titled it Troy Story, then something. And then the second one was Troy Story 2. And I said, listen, Dylan, I'm happy to be on here, but you got to cool it on the Troy story thing, like we're not going to three, even though from what I understand, toy story three was the, what was like the, the, the best in the franchise, apparently one of the standout.
+
+I don't, it's hard to beat one,
+
+but How about Troy's don't cry? I like
+
+[00:03:24] Brian: that one, Troy's don't cry.
+
+[00:03:25] Troy: I, so I said to him, don't do that anymore. It's annoying. And he said, I don't write the headlines.
+
+[00:03:31] Brian: Oh yeah, that'll, I see that, there you go. So he's throwing John under the bus, that's fine. Right. So this, but, but then, and then it, as it turned out, they still. They put me in like the nerd corner, like the, they, what did they say? What was the title? I don't know. Something about ai. 
+
+love story, AI love story or
+
+[00:03:51] Troy: Yeah, AI love story. That's right. Yeah. So I'll take that. I take that. I like ai.
+
+[00:03:55] Brian: so yeah, let's, let's talk about it because we've been using AI more with, with our preparation because I keep, look, Alex is not here to say the spaceship is over the White House. Okay, fine. I just keep trying to use this stuff to be more productive, you know, and, let's just, just, Give a little rundown of like how, how you are using AI with this podcast, because we do it with this podcast.
+
+I mean, like if you use any tools like Riverside, AI is used in lots of things in the editing process. It doesn't replace the editor. you know, but it, it absolutely speeds it up and, and, helps set that up. But in our preparation, we are, we are increasingly using AI.
+
+[00:04:35] Troy: I'll tell a couple. One is a, a story of frustration and failure, and the other is, I, I mean, I thought was, for me a little bit, kind of something that changed my, my, my concept of how. how, how to work and how I would use the tools. So we'll start there. Let's call this one, the, the Yacht Rock case study. so, so I'm, I'm watching on HBO, I'm watching Yacht Rock, the documentary. it's really terrific. If you want a companion, by the way, a playlist Questlove, who's featured on the documentally prominently has on Spotify, the sort of canonicals, like, Yacht Rock playlist, which goes on forever and it's tremendous.
+
+So, there's something for you, Brian. and you're in Miami. You should be listening to that kind of stuff. It
+
+fits the, I'm on yachts frequently.
+
+Yeah. So anyway, I, I'm like during the week, I'm kind of a disorganized person. And I am, I'm like, I'd like to make a note of that yacht rock thing and put it in the file for things that I would consider for our good product TM segment at the end that you guys get me to do.
+
+And so I'm always looking for something that touched me in some way. And so I, it worked. I liked it. I was like, usually I'd put this in notes on my phone. I would just type it in, you know, my list of, of good products. Instead I was near my computer and I opened up a tab and I went into chat GBT and I saw this little thing, this interface on the left hand side called projects, I created a new project.
+
+I'm like, I'll create a good product project. You open up a project and it's like opening up a folder. And then you open up that folder and you can add stuff to it, right? You can upload reference material. You can tell it how to speak, speak in the voice of, you know, go look at everything we've written on PVA, you know, speak in, in, in that kind of voice.
+
+And I just go in and I, and I type, keep a note for me. I just watched the yacht rock documentary. Boom. And suddenly it, you know, does what AI does and it kind of pulls back. You know, all this information about the show, the, the, the, the important figures in the history of yacht rock, where the name came from.
+
+I asked it a couple of questions like, yeah, rock was widely sampled. Give me some examples of where they used it in hip hop. It gives me all that. It shows me a couple of videos. There was, it turns out that there was a YouTube series. about yacht rock, that was this kind of fun, spoofy thing that, you know, was, is actually where the name yacht rock came from and Suddenly, and then I had, I said, take all of this and write me two paragraphs that I can read on the podcast for a good product.
+
+And maybe we'll get to that at the end, but now we, maybe we don't need to, and it, it was pretty sensational the way it worked. Now, what was interesting about this is. Not, you know, what I've just described, I think is a fairly typical, you know, chat use case on, you know, on chat GPT. The difference here is had a folder, had reference materials, and then it created something called a canvas, which is like a document.
+
+And I could go in and I could edit that canvas. So I was like, wait a minute, this is really different. Suddenly I'm not just chatting with something and, and, and, and that conversation evaporates. I have a permanent place. For a project that I've defined and I've added reference material and all of that, that I can come back to and I can edit it and you know, in the edit, there was a couple places where I wanted it to kind of add more information and I just said, add the information to my edit and it kind of redraws the document and adds all that stuff into it.
+
+So. I want to just kind of like there, there's a subtlety here, right? And I can edit. I can, I go to word or Google docs or whatever is your, your, your creation or writing environment of choice. And you do your thing and they nag you a little bit now to say, summarize this or, you know, use AI in different ways as like a co pilot in that environment.
+
+And I'm like, yeah, thank you. I don't really need it. I'm here to write. I know what I'm doing. I need the spell check, maybe a little bit more, but not much, but it's primarily a writing environment. And what I realized is how powerful this kind of project notion was in chat. GPT is kind of Troy's workshop, right?
+
+And it was a combination of research. writing,editing and, and it made it like so much kind of better and empowering somehow than, than, than just writing something in word. And so I found it incredibly, incredibly valuable and it changed my mind about kind of. The augmentation of a human being and knowledge work like this was, this was kind of power, a powerful combination of a kind of friendly intern helper.
+
+And it, at times, by the way, it fills me with rage. Like a lot of times, like there's another use case that's, that's been a complete fail and so much so that I, so, so the Yacht Rock use case was, was very successful. The second use case was, it was a disaster. And, To do this, by the way, I bought, I paid Elon 400 bucks to get access to grok three, because I was desperate to get like a function that could kind of start to do this.
+
+And what you notice is there's tremendous limitations to data sets inside of it. So, yeah. of AI. But what I was really trying to do is I moved our, our week. We have a conversation folks that goes on all week between Brian, Alex and myself, and more recently the anonymous banker
+
+[00:10:11] Brian: who is gonna be joining us at some point,
+
+[00:10:13] Troy: Yeah.
+
+And what's interesting about that conversation, I, first of all, I really look forward to it. And, it's just a really kind of vital connection between minds and people that I really like. And there's always something good to eat. there. So everybody's constantly circulating, stuff that
+
+[00:10:29] Brian: but it's messy. It's
+
+[00:10:31] Troy: it's it's very messy.
+
+And so I asked my colleagues to move the conversation to WhatsApp from iMessage. And there There was resistance among some I
+
+bad for the sort of change engines at Accenture when they have to. You know, ask someone to use a different piece of software because they complained and it was all like, I hate WhatsApp and it's so Euro and I don't do anything there except for like, talk to
+
+[00:10:57] Brian: Don't know who said any of that stuff. I don't
+
+[00:10:59] Troy: said that my friend anyway, and then, and then,so the reason I did it is because in WhatsApp I can export our conversations and what I wanted to do was export our conversation, dump it into either chat, GPT or Gemini or, or Grok and say, Take the past seven days of links and the descriptions for those links.
+
+Then go out and dig a layer deeper, read the content inside of each of the links. Come back and give me a tidy list. Link, author, you know, what they said in WhatsApp, and the description of the content, and anything notable in that. And that has been incredibly frustrating. It's been really, really hard to do that, but I wanna, so, I'm, I'm still working away at that.
+
+I think, I think the, the secret, to, to being good at this stuff is like, you keep hammering away at it. You got to keep challenging how you do things. You have to be super agile, all that stuff. But then yesterday in what seems to be the sort of unending, string of innovation. In the, AI or the sort of frontier or LLM model war.
+
+so yesterday I read an announcement about a new service from a company called convergence. ai, I believe, out of the UK, I think, or the company may be called proxy, P R O X Y. And turns out that they have a. They have something that you can get in the 200 bundle.
+
+This is happening a lot. Like what do you pay for with deep seek? What do you pay for, for grok? And what don't you, you know, what do you get for the premium tier? And the premium tiers are getting really expensive at a couple hundred bucks. Anyway, I have another use case, which is, is I think really, really fundamental, and I'm going to spend a lot more time trying to understand this one.
+
+And it's that. I want a I to be the interface to my information gathering process. So when I wake up in the morning, I want to say, give me the top headlines from these sources in these categories, and I want the and in this format. And I'll, I'll dive deeper, but I want it to go out and give me like the top stories from the wall street journal, New York times, financial times, and list it out for me and then I can, and then I can go on, on my way.
+
+so this company proxy allows you to do what you can do on chat GPT, I think at the 200 level, which is called operator and operator essentially operates your computer on your behalf. It's like an 
+
+[00:13:33] Brian: Wait, 
+
+OpenAI has an operator.
+
+This is all stuff so confusing.
+
+[00:13:38] Troy: But the OpenAI hasn't operated. It's 200. It's part of the 200 a month package, right?
+
+So It's an agent. 
+
+and you can find proxy at convergence. ai if you want to check it out, allows you to set up an agent for free. And I was like, well, that's interesting because I am finding that on all of these services, particularly when I'm looking at not evergreen information, but information where we intersect.
+
+And this is the primary use case that I'm looking for. I don't want to plot the, the trajectory between earth and and Mars and like do some scientific thing. I want, you know, current information. So you see the limits of that. Grok has obviously has the sort of,corpus of Twitter or X.
+
+you know, OpenAI has done licensing deals with several companies, including Reddit. So they're better in that space. Different companies have different sources of data. So I asked Proxy to Log into the New York Times and start summarizing different parts for me. And what it does is it splits the screen in two.
+
+And you can see it go in, go to the New York Times, take your information, authenticate, and then you can sort of, you see the, you see what it's doing on the, you know, the right hand frame, and you can ask it to go in and do things. That was extremely slow, but definitely pointed in the direction of where things have to go and what I mean is this, and I don't understand the limitations of this technically or legally, but I want to use a service.
+
+My preferred service from a product kind of interface perspective is definitely Chachapiti. I want to be able to go in. And itemize out my credentials for all the places where I pay for subscriptions. And then I want it to be able to take from that source of information and bring stuff back to me.
+
+Can't do that yet. And it's got to go there. I suspect that, you know, the, the media companies are resistant because once it crawls the data, what's to prevent it from, from indexing that data, but you can see where this is going. I, I think that. That that A. I. Is an incredibly powerful interface layer to make you more efficient.
+
+It made me more efficient in the rock. Yacht Rock example is a sort of collaborative creation environment. I want it to be a collaborative information finding tool to do that. It has to go to the sources that I cherish and the sources that that 
+
+[00:16:05] Brian: And it's going to have to pay for access. It's going to have a toll booth, whether it's Tollbit or any of the other pro
+
+[00:16:11] Troy: Right? But I already pay right? So I Well, they're going to have to cut in, they're going to have to cut in, the publishers or they're going to get blocked. I mean, this is not,
+
+Yeah. I'm just saying that why can't we credential ourselves at the layer of our authentication with open this isn't a technology problem, is it? I don't think so. It's, this is a problem of, a typical problem of a lot of people who want to float on top of the people actually who are making content, take money off of it 
+
+no, 
+
+[00:16:42] Brian: and reconfigure it. 
+
+[00:16:44] Troy: Yeah. But there's, there's 
+
+[00:16:45] Brian: they can cut 
+
+[00:16:46] Troy: there's already an economy in place of how we pay wall and charge for content at the level of the individual.
+
+[00:16:54] Brian: correct, but they, they do not, they do not get to, to, to then take that paywalled content, whether you give them your credentials or not, and it's against the terms of service, and if it isn't now, it will be made explicit in that,
+
+[00:17:07] Troy: Right. But wouldn't it, wouldn't it, wouldn't it, be 200 bucks, you're paying them 200 bucks, right?
+
+No, I get it. But, but why wouldn't it be technical possible to, to silo off my, Okay. from their overall sort of, kind of master LLM training data set. You would think that that there's there's a possibility there so that they're 
+
+[00:17:29] Brian: The bottom line is they're taking copyrighted content. 
+
+[00:17:32] Troy: No, I 
+
+[00:17:33] Brian: are reconfiguring 
+
+it, and they're wringing economic value out of it, and they're gonna have to pay.
+
+[00:17:39] Troy: Right. What I would have you consider is it's really hard math for someone like the Financial Times to say at any price Come in and sweep through all of our content to make it widely widely available to all your subscribers That will never happen because finance, the financial times wants the ability to sell directly to you and me at a premium price.
+
+So all I want is the best of both worlds. I want it to authenticate the stuff that I pay for and to be able to be an interface layer on top of that, and it can go out and get the rest of, you know, the, the, the broader sort of evergreen corpus of content elsewhere. But I want my own instance and that's, that's what I'm suggesting.
+
+So those are my, those are my use cases. what about you? What happened to you this week? Did you, have you been using it as an environment to write in? Have you
+
+[00:18:27] Brian: yeah, I, I, I imported like, I, I, I guess, yeah, I imported all of, my newsletters to it and I've been using it as an editor and also, you know, within a project and kind of upload all the transcripts from podcasts and whatnot. And, you know, it's, it's useful as an editor for sure. And I like it for, you know, being able to come up with, It's funny because a, a reader actually sent me a funny email I got yesterday.
+
+He's, he said that, he's like, yeah, I've been like dealing with stuff and haven't, haven't really, haven't really been catching up on all your newsletters the last year or so. So I asked him to like summarize everything and he shared a Google doc with the summarization. He's like, it doesn't replace the, the actual writing.
+
+I mean, maybe it was just being nice to me. And I think it will be fine for those kind of uses. I think internally, like, I like it for you know, it can do like an outline of like a guide, like a guide to subscriptions, like, you know, this is like a normal thing in B2B offer guides in order to get like first party data.
+
+And this would get you like 75 percent there. Like I could do this. Like, whereas I'm like, Oh God, I would have to like spend like, you know, a day or so doing this. I'm going to do this in like two hours. It's not going to like write it. I wouldn't, I don't, even if it has access
+
+[00:19:41] Troy: have you, have you used it to make content? Other than a guide, have you used it to edit any of the
+
+[00:19:47] Brian: Oh, yeah, I used it to edit my like newsletter. I was like, well, you know, you have all of my content in there. What do you, what examples do you suggest I use? What are points that are missing based on my previous writing and stuff? And I think it's, it's completely useful for that. It's, it, it acts as you would with an editor to some degree.
+
+Is it frustrating? Yeah, but like a lot of editors are frustrating. You know, so, it's, it's at least free one thing. I do wonder with this because it's really good at summarization is at least in my view. I don't think it really replaces human curation. Exactly. You know, like, like, you, you bring up like John Ellis is a good example of.
+
+You know, someone who's really good. What is his newsletter called again? Media
+
+news items. Like, he's really good at, I think it's curation, not aggregation. Like, I think aggregation is going to get crushed by AI.
+
+[00:20:43] Troy: I just looked at John's stuff. You know, one of the interesting things he does is he doesn't require you to link out on everything. He'll abstract out a couple of key paragraphs from the item so that you can actually get what you need in his document, which is a nice approach.
+
+Yeah. I mean, look, all of these things, you know, there it's, there's a fine line between, and this always in the aggregation era was always this, you know, there's a fine line between what's like, Reader friendly and what's like, you know, Business friendly. Links. Yeah.
+
+[00:21:11] Brian: everyone wants to get, but anyway, like, I don't think it necessarily replaces, you know, human curation, because, but the curation that has to happen is, is going to be, I think a little bit more idiosyncratic. It has to be surprising. You know, it has to have a lens. I think a lot of, you know, we've talked about like about feed me a lot. And I think a lot of what that is, is, you know, Emily has a lens on a bunch of different things that intertwine into it's hard to really pinpoint what feed me is exactly about, but she has a lens on it.
+
+And a lot of her stuff is curation, right? I mean, there's some. Yeah. Okay. Balthazar is a
+
+[00:21:53] Troy: Yeah, I mean, you got to realize that, like, if you look at the human mind as a machine, you know, Emily spent her whole life first in Long Island, then in New York City, sort of pressed up against the glass of New York, you know, society and culture, and has a, an extremely good sort of media sense, and with that, is able to kind of make those fine determinations between what's interesting, what's, you know, and what's not.
+
+you know, like AI just doesn't have those receptors. It's not got that, that kind of elegant, you know, very, very specific training. And so, yeah, she, that's not going away. You know, the, the human curator part is, or, or even the writing part, like AI ain't never going to write like Tina Brown does. and, and so I, you know, I think that that's safe territory for a
+
+[00:22:47] Brian: But like I asked, I did a, I did an audience survey, for the rebooting, recently. And, I got like a few hundred responses and I asked about like new products and what was really interesting to me was that the one that score the lowest was like daily news coverage, like to be able to not want that curation.
+
+Actually scored, was one of the highest of, of things that they would like to see.
+
+[00:23:14] Troy: Well, also, because I think you've made the point that where we used to get curated items from is sort of polluted now, and that was
+
+[00:23:21] Brian: well, X is, is, is a disaster. It's good for some things, but it's a disaster for that kind of curation. I've like, you know, dealt with it. And I think a lot of people, it's, it's, it has a different use case.
+
+[00:23:31] Troy: Well, the people like you, the people like you left, they were, they were I mean, the people town. 
+
+[00:23:36] Brian: me, they're at their own blue sky. I'm not on blue sky. I'll go on blue sky.
+
+I guess. I don't know. Actually, I won't. but I mean, X is, is interesting for that because like they've gone so against that and you know, they adopted tick tock, the algorithm approach of tick tock and they're now developing their own stars. Do you know, do you know Anthony Pompliano?
+
+[00:23:58] Troy: I mean, yeah, you always run in. He's like a creature of the internet. He's He, he, he's a creature. I think of X, right? Like he's, he exists. He is his. Yeah. For those who don't know Anthony Pompliano, you know, he's, he's, he's into crypto. He's a Miami guy. ex military. he, he published a book recently of like, there's like motivational sayings. he wants hawked Bitcoin pizza.
+
+[00:24:24] Brian: there's, there's this viral clip of, of, of him promoting a, a crypto company that, that ended up, going
+
+[00:24:32] Troy: a big podcaster, right? He's
+
+[00:24:33] Brian: He's a bit, he's a podcaster. He's MAGA adjacent. and X is now making a business show, a daily business show with. with with pump. he's got like 2 million followers on on X and I think this is like the way they're going to go like they have their every platform network needs to incubate their like homegrown stars.
+
+I mean, we see obviously YouTube. There's a ton of YouTubers that exist. Sub stack is going in this direction. It's one of the reasons I kind of left. I don't know if that's a mistake or not, but I just didn't want to be a sub stacker and they have. A roster of substack stars. I mean, I would argue that I know you had said this on, on, on the podcast with Dylan.
+
+I sort of didn't totally agree. Like you had said, Emily was like really great at like social media, but I think she's really great at substack. And I think substack is developing it's its own quote unquote stars because it has its own mechanics. Like if you go over to substack notes, for instance, It's a totally different experience than going on, on X, or even I presume like Blue Sky.
+
+It's very earnest, it's, it's earnest promotion of a lot of, you know, everyone's hawking their wares, which is fine. but it's wonkier and, what does well on, on notes is very different than what, what does well on X. And I think you see Substack developing. It's own ecosystem. And I think that is part of the lock in that you can't.
+
+Not only do you need the recommendations, they have the credit cards on file, but for a certain type of person, and they need to keep the whales in there right there for a certain type of person, they become creatures of sub stack who can't necessarily exist in
+
+[00:26:22] Troy: Yeah, I mean, I think it's true. Maybe I don't know if it's a recent truth, but platforms develop cultures and people that populate them and, and in a, in a kind of comfort with a certain format type and personality that works with that format type. And you see that for sure in Substack. Emily has a great post about this, by the way, which is.
+
+You know, about what happened to the sort of written content with the advent of, of Substack, it's called, I think the post is called. It's really good. It's called,the machine is in the garden it references,another book title of the same name. And it's about what happened to Substack when, you know, with this kind of new platform that encouraged people to charge people for their writing, I guess Twitter always had a culture.
+
+It's just that, you know, Elon changed it and it
+
+[00:27:13] Brian: And he disingenuously said that that culture was artificially, put in place when actually it just grew organically, in my experience, having been on Twitter since pretty much the beginning. that's. Just not true, but whatever. We're in this, we're in this era where like, everyone just, you know, throws something out there that is clearly not true and they know it is not true, but it's all part of some sort of negotiation of like, trying to move, you know, some semblance of the truth more towards like, where it's beneficial to.
+
+To the person who's throwing that out there.I think he knows better, but, one of the things is I've noticed is some of the, the big media, sort of refugees, who have really become good at. That kind of format. Like I think Paul Krugman is far better on Substack than he was on the New York Times.
+
+And you know, one of the reasons he left the New York Times was that they, they, they killed his blog and then he went over to Substack to put his wonky and his blog was like a lot of like the wonky political stuff because after the, the financial crisis, there was this explosion of like econ bloggers.
+
+and he wanted to be in the mix on the daily mix of like, and, you know, he was writing, it's interesting because when he went over to the New York Times, I remember thinking, Oh, this is great. We're going to get a lot of like, in depth, like economics writing and stuff. And then he, he sort of went into, you get pulled into anything.
+
+He sort of went completely into politics. you know, he was very, very vocal during, George W. Bush presidency and on politics. But, like, the blog allowed him to, like, really go into, you know, where his specialty was, which is economics, and, you know, they started to cut down on that, they gave him a newsletter as a sop, because he sort of, he opened up a Substack, and they were, like, freaked out, and this is back when the New York Times was terrified of Substack, I guess, and now he's on Substack, he left because they, they basically were, like, yeah, you're writing too much, and they were trying to, To sand down his opinions and whatnot, and I think he's more interesting.
+
+I think Nate Silver is way more interesting on Substack than 538 was as a brand with him, like, as the leader of it. And I think, like you said, like Tina Brown, she's good at this. And that's how you can tell good writers to me. Because there's a lot of writers who are only good at like, at one particular medium, right?
+
+But like, when you can flex across different mediums, that's when you're real.you know, that's something I've noticed is that kind of adaptability is, is rare, but, something to be appreciated. Did you get through the entire, incredibly long Murdoch's story?
+
+[00:29:55] Troy: well, there was two of them. There was, I read the one in the Atlantic. I, I find, I think, you How many words was that?
+
+[00:30:01] Brian: Was it 30k?
+
+[00:30:02] Troy: I don't know, but like. I grew up as a really passionate magazine reader and, my, my, my wife's father, one of the things I like when I met her is he subscribed to everything. So I would go to their house and just sit and, you know, go through, through, I mean, they had everything.
+
+They had, you know, they had the Atlantic, they had the New Yorker, they had the Economist, they had Harper's, they had everything. And so, I love that type of journalism. And, I, I do think that there, there's a type of, of storyteller, you know, that, that, that, that thrives in long form magazine journalism that, you know, I, I kinda, I kinda miss from that format.
+
+So I love that piece. I read all of it. To me, it's, it's perfect. It's kind of perfect for my attention span. It's like, whatever you said, 30, 000 words, but that to me, it's like a short book. And, I'd rather read that than the whole novel.
+
+[00:30:58] Brian: yeah. It's interesting to see how POC is trying to reinvent the magazine format.you know, like it's, it's messier, which I think is the hallmark of a lot of media and the information space is just messier because, you know, authenticity is, is probably overvalued, but you know, it is highly valued right now and no better way to show your authenticity than,
+
+than messiness. the old, kind of, you know, the reliable notion of, of understanding mode. And there's a time when I want just the facts, ma'am. I want, you know, I want bullets. I want efficiency. I want to get through the news. I don't want to spend a lot of time on, you know, the idiocy of Trump's. You know what Trump said to Zelensky or something like that.
+
+[00:31:47] Troy: I just want the facts. And then there's a time when, you know, I want to go in and, and, and kind of read his entertainment and I just think that the modes are different and you're probably a different time. It's probably a different time of the day. And it, it reminds me of, of, of the sort of all, you know, the.
+
+The, the, the existential challenge between, you know, media companies that wanted to be commerce companies, it's like the shopping mode is different than the media consumption mode and you have to be careful how you combine them. If you're going out to kind of get something, to buy something, to evaluate products, to, to scratch that edge, right?
+
+Like, I just think you're thinking really differently about what, you know, the time is set aside. You know, to do, you know, like if you look at something like, a content commerce play in the food space, you know, you might be reading about food more than likely you're reading a recipe or, you know, planning a meal and that versus buying a set of knives is just a really, you know, a really different kind of, allocation of mind space and time.
+
+So You know, I think that that's why I really want my my a I use case in morning news aggregation to work for me. I'm willing to pay individually for all those services. But there I want, you know, there's a time that I want that interface to be completely flexible to go out and get what I want.
+
+Bring it back to me. And I want to kind of have this investigative back and forth with that, that body of content, and then I'll go in and read later. And I think that's a different time when I'm, you know, kind of feet up sitting back and reading.
+
+[00:33:20] Brian: Yeah. Did you see that the New York Times is, is getting its staffers to, to, to use AI, internally to, to produce their content, you know, not to, not to write the content, you know, with all the safeguards around, around the use of AI,
+
+[00:33:37] Troy: Well, this is the it it does get shit wrong.
+
+this is one of the reasons I spend so much time with this right now, is it just like, I just can't. See how, you know, this doesn't change this technology. It just doesn't change every industry. And, and that doesn't necessarily mean the New York times product.
+
+that we consume, although it will has to change, but certainly the process of making it has to change. And, and, and we talked about this on the grow room episode. It's like, of course you want to use AI in putting together stories. Of course, the creation tools are going to change. Of course, it's going to change the workforce.
+
+[00:34:16] Brian: You know, there's a really good podcast. I think that, A, a kind of sadly named in invest, like the Best, which is to mean,I like that podcast. What do you mean?
+
+[00:34:25] Troy: well, I lo I love the Patrick O'Shaughnessy? Patrick is in Incred, I think is really, really talented.
+
+Anyway, he had this guy on Ravi Gupta, the name of the episodes called AI or Die. And. He, he talked to, he said something the other day that really struck me and it's a, it's a good episode. He's a really thoughtful guy. He's an investor, but, he said that the pace of change is so unrelenting that the number one thing, you know, he talked about the process of integrating AI into companies by literally going through everybody on your payroll and saying, how could we do this differently to deliver against a, a, a, a kind of value proposition for the customer.
+
+So. Look at every individual. Do we need this person? How do they contribute to the value that customer receives? Could it be done better either replaced by or augmented by technology? And he said, the number one, you know, challenge for any large organization right now with regards to AI is is agility and flexibility.
+
+And, and I just think, you know, that sounds like kind of McKinsey speak, but it's, it's absolutely true. If you were going to change at the New York times or, you know, at any media company, how you make things, the roles that people have, how people collaborate, the lines between different disciplines inside of your company, you need to have an organization is by definition, massively agile.
+
+And, and, and so I would encourage rather than, you know, I mean, I just, I think that The inflexibility of the, of the company union relationship is a big problem at this point of massive change.
+
+[00:36:04] Brian: Oh, 100%. But I think it goes beyond that. Like, because I, I wrote a little bit about this today. I don't know if I totally nailed it, but, basically about how, you know, you, it's not enough just to be a specialist. These days, like you have to be able to flex beyond your like specialization specialization is like now like table stakes.
+
+He's like a lot of cliches. but you have to be able to go beyond that as a brand. You have to. And I think 1 of the good things about newsletters and podcasts is that it rewards. An idiosyncratic and messy, messier approach because it, you know, with contradictions and with revisiting topics, that was something Krugman, is it Krugman?
+
+That was something that he, you know, mentioned was like, they were like, well, you've already written about this. And like, the reality is like, everyone's just still working it out and you're going to revisit topics
+
+[00:36:52] Troy: Well, it's a, it's by necessity, a layered process for sure. Just like
+
+[00:36:56] Brian: Yeah, and and so I think that there's gonna be more media of that. But also, I think, within organizations, and I think I zeroed in on media is, you know, with all the more with less, et cetera.
+
+it's the not my job thing doesn't work. And I think a lot of, you know, the union. The, you know, the unions put pressure to have, you know, okay, this is the job. We're going to define it. You're not going to expand it. And the reality is in a volatile environment, particularly these tools changing so much, you know, you have to be able to flex beyond what your specialization.
+
+[00:37:30] Troy: I couldn't agree more. I just bring that home in a slightly different way. I think that the big fuzzy line that's about to appear or to sort of semi disintegrate is between. Kind of operating functions and organizations and technical ones. And, you know, as you know, in any organization, it's like, yeah, we'll get the engineer, we'll get the tech guys to do that.
+
+Right. Or, oh my God, we want to build this, but, you know, they'll never, you know, get it done in time. Or, you know, first you have to rigorously define the requirements and then feed them through this product function into the technology organization. And I think that like, Literally, in in the next couple of years, you know, the controls of technology at a development level will be put in the hands of a new constituency.
+
+That means that there are going to be essential functions that, you know, certainly the technology crowd performs to manage. You know, a larger ecosystem of technology, but, but, but business people and operators are going to be able to make their own applications. And, and my son and I talk about this a lot because he's, you know, an artist and a musician and, and I'm like, dude, he's like, dad, I'm going to learn to program, or I'm certainly going to learn to ask the AI to program and then know where to put the files and how to set stuff up and know how to troubleshoot.
+
+[00:38:54] Brian: And so he's got like Python instances set up and he's using it for. You know, exploration of, of sort of creative ideas in art and in music and stuff like that. But like, I, I said, you know, our, our, we've agreed that the most important thing for him to do right now is to like, get super technical and,But getting super technical doesn't require really getting that technical. It requires more of like a hacker mindset that I feel like there's obviously a generational advantage, you know, to this. And I think that is going to be an issue for a lot of people in the sort of middle plus parts of their careers in that they sort of grew up in a system where you were rewarded.
+
+For basically being a generalist, like, you know, middle manager, you sort of like expanding, you got away from the metal, right? And like, now, you know, we're seeing that middle management is, is getting the brunt of a lot of these cuts. Like, I'm, I'm continually amazed at this time. Where the headline number of unemployment is so low, yet the headlines are always about like, it's like, wake up, it's like, okay, meta is going to whack thousands, you know, and by the way, they're going to say that, hey, these are low performers because they want to talk to wall street, not to, you know, their employee base, because daddy's home at meta and other companies and.
+
+I think that's just a reality that it's really dangerous, particularly for people, you know, in that middle to later part of their careers to narrowly define their roles and be like, well, I don't do that. You know, we kick that over. It's like, you can't do that anymore
+
+[00:40:36] Troy: the other thing that struck me there is, is how the definition of layoff of low performers is kind of evil. Right? I mean, why don't you just lay off some of the staff that you don't need, or you've made a determination that you could
+
+[00:40:50] Brian: the because because
+
+it's for Wall Street, like, right? 
+
+Like, 
+
+[00:40:54] Troy: like, but suddenly you've got 3000.
+
+Oh, you were part of that last wave of low performers. Yeah. We
+
+don't really need anyone right now. You know what I mean? It's like
+
+[00:41:05] Brian: I mean, I read this, this guy on LinkedIn was like, went on this, like, you know, long, I mean, he got laid off and was like, we are not low performers. And like, all this, it's like, you know, and that's, but that is part of this, call it a vibe shift or whatever with. You know, companies really cracking down to a degree that I don't know if you saw 
+
+Jamie Dimon went on a tirade about work from home. It was It was recorded, of course, because everyone records these things these days, and, he claims he's in the office seven days a week, right? but I think this is going to have incredible downstream impacts, because you shared that, that article about how, you know, Gen Z is not interested in like, in clawing their way to middle management.
+
+And I think this is part of like a big shift where you have a new generation that's coming. Of age that sees capitalism as a scam largely, but instead of trying to tear it down, wants to hack it, you know, that's why derivatives trading has like
+
+[00:42:06] Troy: I think that's totally true. Actually. I think that back to the Pompliano thing, I think that the crypto isn't an alternative. you know, financial system. It's a cultural thing, right? And it's, it's get rich quick, and it's betting, and it's, you know, playing, it's gamified, it's, it, it's much, it's, it's hacking the system.
+
+And, and you, you know, like those videos of, of, actually refreshing videos from Barstool Portnoy. he was like, These are meme. What do you mean meme coins? You're sad that you got the rug? Like that's the game. And so 
+
+[00:42:42] Brian: Yeah, the game is the pile in and try to get out before 
+
+it goes down, but not too early. And it's taking the game elements of that are inherent in our financial system, but we call them traders and and then. You know, basically taking away all the quote unquote fundamentals. You know, which, by the way, are, are not, never, maybe an aggregate, I guess, Jeff Bezos says the, the, the stock market is, is a weighing machine, not a voting machine, but, you know, what are the fundamentals on NVIDIA?
+
+Like, what are the fundamentals are, are, are kind of made up and I feel like a lot of, like, younger people have seen through a lot of the made up things. Everyone makes up this stuff
+
+[00:43:24] Troy: you know what? I That's that someone That's a that's a great point So you got this sort of pop pop finance? Slash gaming thing on the crypto side and then you've got like broad participation in markets And someone this this young woman that was staying is staying at our house right now Said to me last night.
+
+My grandmother bought me some stock in nvidia And, do you think I should sell it? And I'm like, I don't know. you know, there is no way, there's no way that she's ever going to do the research to make a sort of sound financial determination on whether to stay long on. It's just a game. It's just like, okay, maybe, what are the vibes saying,
+
+[00:44:05] Brian: Yeah, like, I don't think, yeah, I mean, like, but I think it may be a change is like these things. It was people mature that they all change. Remember, like, millennials were just about experiences and not owning things. And then all of a sudden, the all the millennials have have pitchforks in their hands because they don't own houses.
+
+So, like, things do change as you age. But I, I do sense that there is a A rejection of a lot of these paths that have been laid out. Look, not everyone has the, has the privilege to, to reject that. Right. But the idea of like getting a job, clawing your way into middle management, you know, building your 401k.
+
+So you can like, you know, retire at some point in your late sixties, it probably won't be social security, et cetera, is kind of, I think people are looking at it and be like, wait a second, like there's nobody who gets rich doing this. Like, nobody, like, and the only way you get rich is you have capital. We don't have capital.
+
+We got to get it. And we're going to like, try to, try to, try to use like our wiles in order to, you know, find the creases in the system. It's great. It's growth hacking. I don't know how it's going to end, but you know, that's what you get. If you get, if you have a winner take all society, you're going to get people who.
+
+Who take gambles and you know, that can be literally sports gambling that can be game. Stop. Stop. It can be all kinds of things. One of the other things I noticed, I shared this earlier. I think when we talk about the casualization of everything, and particularly as. There's so much, I think finances is interesting right now because it is going through a transformation where retail is really becoming a major part of it in a totally different way.
+
+when you look at the meme coins and that is bleeding over it into, you know, meme stocks really. And, Robin Hood had their earnings call and it looked, it was pointed out by Katy Perry, not that Katy Perry, different Katy Perry, who, who heads, Investor Relations of Public, which is basically a Robinhood competitor.
+
+that it looked like a post game press conference from like a football game or something. They were sitting up behind like, you know, a backdrop of logos and whatnot. and I think we're going to see more of those kinds of
+
+[00:46:18] Troy: well, I really, I, what you're saying, I mean, is we really have to where we have Elon Musk a half an hour late to a late night. Debut of grok three with three sort of H one B geniuses and, you know, showing real time on rehearse demos of,
+
+of,super messy grok making a game or grok plotting the trajectory between Mars and earth or whatever it is.
+
+And then you see the Apple launch of the new iPhone yesterday. That was like literally the epitome of high production.
+
+[00:46:55] Brian: but that's in the uncanny valley, I feel like. You know, like the, the, the Apple one, because this becomes the norm, right? And the very polished presentation, like, I mean, great that Jensen can, can get up at CES and, and, and, and do, you know, remind people of the Steve Jobs kind of thing, but like it or not, I think at least at this moment, that kind of Elon Musk approach with the late night grok is.
+
+probably more effective.
+
+[00:47:29] Troy: I would think, yeah.
+
+[00:47:31] Brian: Yeah. Is anonymous banker coming?
+
+[00:47:33] Troy: Anonymous banker is going to log in in two minutes. 
+
+[00:47:37] Brian: So let's talk about Anonymous Banker. they are coming on. We can't gender,Anonymous Banker. Although, I don't know how anonymous Anonymous Banker is because I got an email from someone who identified Anonymous Banker.
+
+[00:47:51] Troy: yeah, well people can speculate I don't know that they were right and you know, one would never confirm or deny but
+
+[00:47:58] Brian: I didn't. I didn't.
+
+[00:47:59] Troy: with an anonymous banker is of uncertain gender and
+
+[00:48:06] Brian: And we're going to Charlie's Angels Anonymous Banker's
+
+[00:48:09] Troy: we're gonna put a we're gonna voice cloak 
+
+[00:48:11] Brian: and we'll see how it goes. But,one of the things that anonymous banker I think is going to talk about is, just what's going on in the funding marketplace around AI companies and that, that I find this stuff crazy.
+
+[00:48:23] Troy: I find the idea that who is the ex, open AI employee that's starting safe AI, safer AI, is that Ilya
+
+[00:48:32] Brian: Yeah. But then the other one, Mira,
+
+just started her own. I'm like, I'm I. I mean, I just find it, you know, against the backdrop of crazy, you know, competition on the LM side, most recently from the one that we talked about a minute ago, you have, you know, companies without products with a roadmap and a genius, raising money at 20 billion, 20 billion. That's a lot of money, man. We're talking about raising money at the market caps of like a lot of big companies. You know, based around, like really leveraged off of the, you know, I guess the brilliance of a single person. Is that right? Am I
+
+Yeah. And a lot of, look, look, a lot of this is going to look awful in, in particular looking back, right? Like, I mean, there's going to be tons of cases of lighting a lot of money on fire that are going to be laughable, right? The AI pin this week got, got sold, HP bought it. I guess they have some patents or something.
+
+it did, nope, it basically didn't exist. I don't even think Alex had it. And, all we got out of that entire journey was a pretty hilarious launch video with the, the guy who was like, putting people in a trance.
+
+[00:49:44] Troy: It was over 20 billion, by the way.
+
+[00:49:48] Brian: Is he gonna be like an EVP at HP now? He doesn't seem like
+
+[00:49:51] Troy: me check
+
+[00:49:53] Brian: he's fit for that. He's not ready for middle management at HP. Someone put it as like, that it was a, it was a deserving fate for them to, for him to be like, put in charge of like, digital printers. Like, hey man, there's downsides.
+
+[00:50:09] Troy: our friend, the anonymous banker. 
+
+[00:50:13] Brian: Ah, there's anonymous banker They, they are here.
+
+[00:50:16] Anonymous Banker: Hey, Chuck. 
+
+have to be a 
+
+secret. 
+
+[00:50:18] Brian: We're trying not to gender you.
+
+[00:50:22] Troy: we're going to keep the anonymous thing going for us for a little bit anyway. It's more fun.
+
+
+
+
+[00:50:26] Anonymous Banker
+---
+
+[00:50:26] Brian: All right, we've got Anonymous Banker in here, Anonymous Banker, thank you for, for joining us from your undisclosed location. 
+
+[00:50:32] Anonymous Banker: Thanks for having me. 
+
+[00:50:33] Brian: So let's talk about this X valuation You had sent me a note on this, and Alex is not here, so this is a safe space. has Elon pulled this off?
+
+[00:50:42] Anonymous Banker: I mean, I so there's all these different narratives out there. And I think what's interesting is. There is noble information, right? There are banks that are shopping this debt. And so there are decks with detail. And so I would go off?
+
+There's people that have been reporting it from sources that say that that's trading close to par, which means they're basically able to sell it at what they issued at, which is a good indication that Twitter's doing just fine.
+
+So maybe the blue chip advertisers have pulled, but they're still generating enough programmatic advertising 
+
+to make the people that hold the debt comfortable at the business is going to be able to repay them.
+
+[00:51:14] Troy: We've seen
+
+some reporting,banker that, Revenues down materially, but the cost base is so much different that profit is actually up.
+
+[00:51:21] Anonymous Banker: I mean, the best thing that debt holders are one of the best ways to get an indication of the, of the health of the business. Right? So it's typically equity prices are tied to the health, but that is actually the best way to understand the business is doing. Okay. And so if they're trading at par, which is what we've heard in terms of the larger banks selling the debt to other people, to me, the business is doing just fine, so it may not be what Med is able to do and grow the 
+
+revenue 25 percent year over year, but it's still a healthy business. 
+
+[00:51:52] Brian: Yeah, I thought what, but what about the X AI? I mean, some of this is, part of the valuation is because the, 
+
+[00:52:00] Troy: the spillover valuation from
+
+the hold, the holdings 
+
+in, in the AI company.
+
+[00:52:04] Brian: X owns 20 percent of X. A. I. And is this just a backdoor way to get exposure that kind of like Yahoo's valuation was always propped up by its Alibaba stake?
+
+It wasn't really about what Yahoo is worth. 
+
+[00:52:18] Anonymous Banker: That's what I mean. I like the reporting on the debt, the price of the debt, because they don't have any equity upside, right? All those holders care about is cash flow and getting paid back on the debt. So the nuance with the Twitter debt is it's a floating rate interest rate. So even, companies that have highly rated debt right now, where the, they have a fixed interest rate that they issued pre.
+
+Sort of the market destruction a couple of years ago is trading off of par because the interest rates lower than what you can get in today's market. So one of the things that's helping Twitter's debt trade at par is that it's floating. So it keeps changing and keeps going up based on the market. But that's what I like about the reporting around the debt is that they're only looking at Twitter as a business.
+
+there was some things that said like, you know, they're potentially moving revenue around, but as long 
+
+as the debt holders are getting paid back, it's, it's a viable business.
+
+[00:53:07] Brian: Yeah, I mean, they're getting what? 200 million a year from X. A. I. For access to the X data.
+
+[00:53:15] Troy: Well, that's, that's, that's where that investment hits the P& L,
+
+and I mean, who's to say that that is, is that the right number for, for, you know, I mean, it's not like they're going to license that data to other AI companies. I mean, who, it seems like it's, that's a lot compared to the other AI deals. 
+
+[00:53:32] Anonymous Banker: I think what's unique about, so, so Twitter is licensing that to other people, right? I know a venture firm that's paying 5 million to get access to that, to that knowledge graph. and so I think it's a fair business deal. obviously Elon has very sophisticated investors in that, in his deal with him.
+
+So it's interesting where a lot of these, journalists are becoming kind of pundits in the sense that they're abstracting their thoughts on Elon. And X, when there's very simple business cases of why Twitter's doing it is that knowledge is really valuable. The data is really valuable to train AI, and I think one of the nuances with Twitter is it's some of the best information to provide the next layer for kinetic action.
+
+And so what I mean by that, and one of the reasons why other people are going to want to license that data is. It's positive signaling for these models to figure out what's going to happen next. So when someone tweets about an event, like people joke around, it's like one of the first places when they went after Osama bin Laden, some, guy posted on Twitter that there was noise in his backyard.
+
+And so I think going forward, you may see more and more licensing deals. Obviously Elon's not going to let Sam Altman have access to that data, but, I think you'll
+
+see it, accessible and paid for by other people who wanted that 
+
+information.
+
+[00:54:45] Troy: Do you think that, that Elon's going to send a drone after some, Sam Altman? Is that what you're saying?
+
+[00:54:51] Anonymous Banker: Exactly. 
+
+[00:54:52] Brian: I think next let's talk about these, these AI valuations. We, we were talking earlier about how, you know, some kind of Mensa engineer can, can split off from open AI and have no product and have a $20 billion, valuation. Is, is this math or is this magic? 
+
+[00:55:11] Anonymous Banker: So there's, when people come to me and ask, you know, how much money should they raise and at what valuation, there's sort of two ways you can go about it as, as an advisor. 1 is you look at the multiples. And so in the last go around when there were SAS businesses and they had a run rate ARR, you would do a multiple of That you typically like the series a, But there's another way to do the math, which is when you raise a round of capital, you're looking for 20 to 30 percent dilution and 12 to 18 to 24 months of runway, which gets you to your next valuation milestone. And so when you reference like the Ilya fundraise, right, his seed was.
+
+A billion dollars of capital at a post money of 6 billion. And so it's effectively the math of the, you know, giving away 20 percent of his business. he's now done a subsequent fundraise. but I would say yes, in today's market, I asked a friend who's a prolific investor right now in AI, and I asked him how he's getting to his valuations and he laughed and he said, most of these people don't yet have products, it's the team.
+
+And, And an Iliad, but Iliad I think still doesn't have anything. They're just building, they're, they're raising money on what they're going to build. 
+
+[00:56:19] Brian: That must be nice. 
+
+[00:56:20] Anonymous Banker: Yeah, I think so, but here's what's changing. So after deep seek, there's been a shift, right? So over the last couple of weeks, I think there's less focus on funding foundational models and now people, and this is not something new, but I think they're where everyone's focused now is like, okay, we have the foundation layer.
+
+We have the engine let's fund and build the companies that are going to go after the verticalization. So there's a business that's been around for a while called called Harvey. It's been around for about a year and a half, two years. Harvey is 
+
+effectively a, yeah, yeah. And so, and they continue to raise significant rounds of capital.
+
+And there's a lot of things in the legal profession that can be easily adapted, to AI late language models. And so I think that's where you start to see some of the news And very valuable companies created just more on the vertical, vertical side, like
+
+the next layer of what AI is going to be able to power.
+
+[00:57:15] Brian: And the other thing I would love to get your take on is you had mentioned the slow ventures approach. This is on the total, totally, totally different end. Let's go, let's go from like, you know, billions to like, you know, low single digit millions. which is, you know, venture was not a good fit for a lot of, of digital media companies.
+
+I think we can say that. Right. I mean, Troy, you raised the series. A series G, I think, at, at, say, media. 
+
+[00:57:42] Anonymous Banker: to 
+
+[00:57:43] Brian: of home runs there. Obviously, media business just is not a tech business, right? but you still need capital to grow a business. What, what was your take on how slow ventures is looking to, you know, come up with a different way to solve that problem that, you know, people need capital to grow, right?
+
+I mean, you can do it on cash flow, but if you're going to grow a lot bigger, you need capital. It's going to take forever. What was your take on that? Because it was, it was, it's kind of an interesting approach, but, I don't know. I don't know if the, if it's totally aligned.
+
+[00:58:12] Anonymous Banker: I think the question is still out there and has not been answered is what's the best way to align your interest with these creators? only taking 10 percent to their business and not really having any control typically is not a great thing for investors. You saw that with The, crypto companies where people made fun of them, not having board seats and not have any real corporate presence.
+
+Corporate governance, because they just didn't know where the, money was being spent. I think there are very rare cases of these creators, being able to create additional valuable businesses. everyone like references the Mr. Beast example, right? And I think what's interesting is you'll actually probably see Mr.
+
+Beast do an IPO at some point later this year or next, where he takes his whole empire, And brings it public, but I think that's very rare. And so the slow ventures approach, even though they titled it as new, the churning group has been doing it successfully with some really interesting creators in gardening and auto.
+
+so I think it makes sense with the right YouTube personalities, but to me you need more structure, and focus
+
+on what comes next beyond just the advertising revenue that you generate on YouTube.
+
+[00:59:20] Troy: do sort of creator or media infrastructure plays where they provide the operating the sales and some, you know, the, the, the, the sort of infrastructure to, to scale those businesses and set a whole bunch of people inside of a kind of roll up like structure.
+
+It seems to me that the, you know, The approach on the solo venture side, if you want to look at it a little bit differently, is don't really think of those as much as media companies, but as sort of vibrant IP companies. And if you're investing with that 60 million in, I don't know, 20 or 30 different, you know, kind of up and coming,you know, Creators that are, are sort of in and of themselves ip.
+
+Then, there's going to be business extensions, whether it's, you know, frozen pizza or chocolate bars or events or, you know, television shows that have, you know, kind of, you know, discreet value that you'll own a piece of and really. You know, if you had 20 of them, you only really need one to work at that size of a fund.
+
+[01:00:26] Anonymous Banker: Yep, I think the problem is the best ones don't want to take just money. Right. So, and that's where not, not to give so adventurous advice, but basically instead of just saying, we're going to give 2 million and have no control. It's like, we're going to have 2 million and guess what? We have the person that, that built the Feastables business.
+
+We have the person that built these three businesses on the team who are going to help you because we know people that are really successful on these different platforms and they don't need. Dumb like a 2 million check. And so I think I agree with you, Troy, that there's an opportunity for a portfolio approach because there's a lot of signaling data, right?
+
+You can tell when someone's going to get traction way before they do. I just think the best people are not going to take the money. There's a, there's a guy. This guy, Caleb Harrison that does financial breakdowns. and he actually sold 10 percent of his business to somebody right at the beginning, right?
+
+When he was going up and there's an episode where someone was interviewing him about his company and things like that. And he was like, it was a dumb mistake. Like, I can't believe I did that. And luckily I can buy that guy out because I don't, I don't need the money. I don't want someone here. So I think.
+
+There is an opportunity to have a portfolio of creators where you own 10 to 20 percent of the business. But I think you have to add real value. I think you have to know, you have to have that Walmart connection. You have to know how to build products. You have to know how to get to Netflix. Like those are the things that I think 
+
+these creators value. And that's what they're going to be willing to trade for some equity in their, in their, 
+
+company.
+
+[01:01:47] Brian: Yeah. Hey, Troy, you're, you're talking with Emily at some event, like, right. Ask her if she, she would trade 10 percent of Feed
+
+[01:01:56] Anonymous Banker: She would say, fuck no. 
+
+[01:01:57] Troy: She would say today. No. Yeah. We're going to talk about that in an hour. In fact, 
+
+the Uber is on its way. So I have to jump in a minute. You guys can, can carry on.
+
+Brian, you can maybe, or an anonymous banker can select a, I already highlighted what I thought were two good products this week. One was. The new open AI project feature through Chachi BT. And the second was the yacht rock documentary, which I'd encourage you to 
+
+watch Brian, 
+
+[01:02:22] Brian: I will, I need to, I need to bone up on, I thought Yacht Rock was out. 
+
+[01:02:26] Troy: it's never out. Okay.
+
+[01:02:28] Brian: right. Cool.anonymous banker where so, where is like value, where are valuations in, in, in media company?because is there any activity whatsoever? Because obviously the sector has been hit incredibly hard. Like what is like investable, like on the money side?
+
+[01:02:49] Anonymous Banker: Yeah. So traditional, like traditional and digital media companies, what you see is people cleaning up their portfolios. So I would say most large media brands that you would recognize, like the logos you would recognize today have a for sale sign on a lot of their smaller titles.
+
+and so there are.
+
+[01:03:07] Brian: Who are the buyers? Is it just 
+
+like, you know, people who are going to do a roll up and ring out like a lot of costs?
+
+[01:03:12] Anonymous Banker: Yeah. So, and like, but I think there's like a negative bias where it's, Oh, they're just running crappy content and doing programmatic advertising. But what's interesting is that's happening everywhere, right? You look at a Hearst magazine today and they have a staff of like three people and a bunch of contributors.
+
+So I would push back and say, yes, it's like. A bit more, a different way to look at these operators that are buying these smaller assets for, for no money and actually making them profitable or are not operating them as if a lot of people would want to, you know, over. Historically, right with like full time writers and things like that.
+
+But I think that's where the whole market is going in terms of valuations. you know, you can look at like as if Davis or a future and their multiples in terms of EBITDA are, are low, they're down there five, six, seven times current year EBITDA, which pre pre the last market disruption, they were up eight, nine, 10 times, future was.
+
+Above, you know, 14 to 15 times. And so, I don't think you're going to see that many large transactions. There's been a few rumors of like time magazine potentially selling. but that's again, a hundred to 200 million deal. I think that's the only thing about thing about media is that these deals are.
+
+Pretty inconsequential in terms of size compared to what's happening in tech. There's 10 SAS companies that sell each week that are more valuable than a time deal, but you're going to 
+
+see the time news written up 20 times more. 
+
+[01:04:39] Brian: I mean, this is something that,we've discussed. I mean, these, these businesses typically, and they've always been, they've, they've been bigger, way bigger brands than businesses. I mean, like, I, I think Troy made this point on, the grill room. Is that like. And what is the New Yorker as a business?
+
+I mean, it's not that big of a business. I mean, there's compared to like, you know, it's just like a run of the mill SaaS company size. Like it's not even a run. 
+
+[01:05:05] Anonymous Banker: nuance of that is like, it wasn't that big of a business 10 years ago either, right? Like, you know, New York mag, like these companies when they traded in the past, weren't that profitable either. I mean, magazines had their heyday in the nineties and early two thousands. A lot of the direct advertising and things like that have, have, have dwindled. I think what's the thing that scares me from an M and a perspective is like the replacement of it are not necessarily sellable businesses or people that want to sell them. So like everyone that's creating a sub stack, I don't know.
+
+One, I tell them don't sell their business because it makes more sense probably to stay independent, but even if, you know, I was to help someone sell their business to puck, it's not going to, it's not going to be like 10 years ago where I'm selling something that's a couple hundred million dollars of value like puck can afford a couple million dollar, M and a purchase was, which is not interesting from an M and a perspective.
+
+So that's what kind of, yeah. Is concerning, I think, to a lot of people in these, in this space of like the replacement of the companies of the past to what's being created
+
+new is not of the same company. Yes, they're generating, but 
+
+[01:06:08] Brian: yeah, no, they'll, they'll generate cashflow. Like you can generate like 
+
+a lot of cashflow with these businesses, but, and, and that should be probably the goal really. Like, because, you know, you mentioned MrBeast IPO ing, this is like, you know, a go to example. they're like one FBI raid away from having like zero value.
+
+Right? Like, I mean, does Mr. Beast, okay, fine, you've got long term value of the library. Imagine the risk factor section of that. I mean, this is one individual, and what are you gonna like, substitute in, like a new, meet the new Mr. Beast. Like, Jimmy's gone, but we got this other person. You can't do that. 
+
+[01:06:49] Anonymous Banker: yeah, I think there's a lot of, you know, I, I agree that there's a risk. I look at it a little bit differently. I think Jimmy's a unique, the problem is like, you can sometimes to understand an industry, you have to take away the outliers because it's like not the perfect. Way to think about it, but yeah, I mean, Jimmy has built acid value, has the studios, he has these different brands, but if I think if you take him away, you lose two things because beyond him just being the person on the YouTube channel, he's like maniacal when it comes to building.
+
+This is like, I don't think he having talked to people that work for him, he doesn't sleep. Like he's just as engaged as an entrepreneur and operator as a Steve jobs or a Bill Gates when they were building their companies. He's like that significant to that business. So I guess you could ask this, this is a weird question, to kind of ask back to you, but it's like, if, if Bill Gates left Microsoft, you know, three years into it, would
+
+Microsoft be in the same place?
+
+No, same thing with Steve jobs. So I know it's a little bit 
+
+different and it's 
+
+[01:07:44] Brian: yeah, but it's that, but it's more right? Like I, to me, it's 
+
+like, yeah, obviously you get a key man problem with a lot of, of, of these businesses. but at the same time as a media business, when you don't have. At least I've always seen this. It's like there's so much upside in the market right now to a personal brand versus an institutional brand in most, in most cases that, of course, you go with it like in the short term, but the sacrifice, there's always a trade off.
+
+And the trade off is you're not going to have a lot of long term equity value as opposed to a, an institutional brand because everything is tied up in a person, a person. Yeah. 
+
+You know, the brand is tied 
+
+[01:08:27] Anonymous Banker: there's a couple categories where you have to keep the personality like cooking, right? Where that's actually a long-term value play. I, I, I agree with you. In certain instances, people like should be. Like a 404 media, like it started with a person or like, you know, some of these subsects are moving into more of a brand and there's more sustainable value created there.
+
+I think one of the nuances is in this new media world. Because I was, I was at CES with a friend, at the ad week booth. And basically I was like, Oh, why don't you. Do these three things, like you're interviewing, why don't you post it to these five places? And he like looked at me like I was crazy. He's like, if I did that, I would have to loop in three other people and do, you know, five things and get five sign offs.
+
+And so I think to your point of like, why, like media is evolving to a place where it's around these creators, but the creators exist and are doing well because they've, they're the only people right now. To this current media environment, where if you write a subset newsletter, you can go interview that person.
+
+that was in the news the same day and then do a live stream or do all these things that consumers want.
+
+And so, I think that, I think some of these people that have good brands are going to evolve as a personality will evolve them into brands and then be able to hopefully transact. I don't know. 
+
+[01:09:42] Brian: Yeah, that'll be interesting to see because, I think you run a lot of risk of diluting the, the tie you have that got you there, you know, it's better for you as an individual. I think that one of the big challenges of, of any of the quote unquote creators is, man, there's so much that like falls on the creator themselves.
+
+And. 
+
+I think it's kind of overdone with the burnout thing, but like, yeah, it's a constant like treadmill to like be on and for, for the creator itself, way better to like de risk be sure you have like equity value, but then like you recognize that, Oh wait, you know. Maybe the value is, is all just tied up into to me myself versus the, you know, the quote unquote brand.
+
+And I, I can't necessarily finesse that, but it's, it's, it's, it'll be an interesting transition. 
+
+[01:10:36] Anonymous Banker: let me, let me, try to kind of frame it a little bit 
+
+differently
+
+is yes, as the creator, 
+
+even you have like a parasympathetic relationship with your audience, right? People want to read the rebooting because it's, it's, it's Brian talking to me, not some. Other journalists, I think the way that you create additional value is not trying to expand the relationship you have directly.
+
+So say if you have email as your channel, you don't necessarily need to change it. It's about adding additional layer, things around it, 
+
+[01:11:04] Brian: Oh, 
+
+yeah. 
+
+[01:11:05] Anonymous Banker: meaning like your events and things like that. And so I think that's the way that smart creators will build a ton of value. Like all these sub stack people, it's like they don't need to.
+
+Make more sub stack. Like basically it's like, can you make a movie or can you, depending on what genre you're in and that's where it's like, almost like what, you know, Alina Dunham, she kind of did it in reverse, but it's like the value. She probably created the most value is on the TV, the, the HBO show, right?
+
+Like that's millions of dollars. Whereas the newsletter that she had, it was in the infancy that it up, but it's probably made no money. And so I think that's a better way to frame it is not thinking about how they're going to expand their, their email or whatever their initial connection is. But what can you, what can you take that parasympathetic relationship?
+
+How can you basically 
+
+exploit it? Yeah. Well, let's not talk about exploitation. Exactly. Augmentation. yeah, no, because I mean, look, media is moving into, Maybe it's already moved in and you mentioned time they got their first Forbes was there originally is I always say it's a front business for a better business, right? And so you need to, you need to develop us what starts as a side hustle, but becomes like actually where the main value it lies, at least in equity about, because otherwise.
+
+[01:12:21] Brian: I don't know. I don't know. There's, it's hard to, it's hard for me to see like how there's, there's a ton of like 
+
+long term value in a personal newsletter
+
+maybe. 
+
+[01:12:30] Anonymous Banker: influence basically, And then you have to leverage it for other things, because at some point, I don't know about you, but I'm filled up on my sub stack subscriptions. I have like five, it's 
+
+[01:12:42] Brian: Yeah. And they'll bundle and stuff like this, but it's like, it's, it's, yeah, you have to find that other business. And it's funny because we've talked about this in this podcast and it's sort of like a basic thing, but it comes up all the time is how you always have to be building the next business while you're operating the current business.
+
+And, you know, the next business for a lot of these, you know, right about this, you know, for a lot of, you know, newsletters, or podcasts, It has to be different. It's not just creating more newsletters, more, more podcasts. it has to be a different, a different business because you see it like you're, you're out there competing with a lot of people who have, who use media as the front end for influence for all kinds of different things, not to directly monetize it.
+
+I mean, all in doesn't care necessarily about ads on. I mean, yeah, they have like a, you know, an event, but they're after something different. And there's that's just one example. There's so many of them out there that if you're a media business that is like, okay, I'm gonna sell ads. I'm gonna sell subs.
+
+It's like you're competing with people who are like, no, I'm gonna do it 
+
+differently. And and there's only so much attention to go around 
+
+and influence. 
+
+[01:13:53] Anonymous Banker: One nuance is for some of these businesses where you have influence and the Right.
+
+audience, brands will pay for you at an exorbitant amount that's not tied to a CPM. And so like the last. Whatever 15, 10 to 15 years ago, when fashion bloggers, when it was like a big thing to have a flash fashion blog, I know people that were making 500, 000 a year from Luxottica, the eyewear company, just to wear glasses and a couple of shots a month.
+
+And so I, I think that there are places of value that aren't always discernible to the outside people, and obviously you're not going to get a little exotic to deal writing about B2B stuff. But, I think some of these consumer focused writers and creators and influencers can earn, like they can start to level up with deals that are not based on performance, where it's just like, we want to be associated with this person and you see it today, like with actresses and athletes where they're associated with.
+
+Non endemic brands to whatever they're doing, like LVMH sponsoring these different people and those deals, when they're showing up to fashion shows and things like that, they're not just doing it for free. And so I think it's not, again, these are not businesses. They're more like they're, it's a one person thing.
+
+So, yeah, 
+
+[01:15:08] Brian: cool. Any other topics we should discuss 
+
+before you go? 
+
+[01:15:12] Anonymous Banker: I think the interesting one, well, this is, we can talk about this 
+
+another time, but it's basically 
+
+when substack will allow advertising and affiliate 
+
+performance, but we can talk about. love that. I mean, what is Substack already allows advertising? 
+
+[01:15:23] Brian: There's tons of advertising. I ran lots of ads on Substack. They never, they said fine. They don't, they 
+
+don't care. 
+
+[01:15:28] Anonymous Banker: but 
+
+[01:15:29] Brian: like do it 
+
+themselves. They're starting to, they'll do it.
+
+Of course 
+
+[01:15:33] Anonymous Banker: they have to, yeah, yeah, I think the biggest, the interesting thing with sub stack, like one of the guy, the founders, I think the CEO who calls himself like the head writer, um, got asked, like, who is this? 
+
+Yeah. Yeah. So Hamish got asked, like, who is this customer? and I think he had, like, he didn't have a perfect answer because he wanted to say his, the writers and also the audience is the 
+
+[01:15:54] Brian: They switched on that. They used to say that the writers were the, were the customer and then all of a sudden, you know, they were like, well, it's an ecosystem and they're like, it's like, okay, I see which direction you're going. And look, when you take all that venture capital, it's not, To be like a better ESP for a bunch of like independent writers like it is to build a network is to build like a YouTube.
+
+There's there's trade offs to it. we'll see if they 
+
+keep the whales, you know, 
+
+on sub stack. and they have a lot of 
+
+[01:16:23] Anonymous Banker: The 
+
+interesting thing is, yeah, I think the reason why they can keep the whales is because 
+
+everyone has 
+
+churn. And so it becomes, it continues to become a discovery platform. So there are very few people that can exist off of it. But as much as people want to pretend. Like they, can grow And then leave.
+
+I think it just becomes really addictive for those new subs and they have staying power. I think the one thing that they have to change is. They have a perception that they only need to do subscriptions. Yes. They allow writers to run advertising, but subset only becomes a real business when they actually start taking a cut of the advertising because subset has all the audience data, not so sure.
+
+An advertiser can show up to XYZ newsletter with 50, 000 subs and hope they're getting the right demo, but subset could easily make 20, 30 percent of that ad by, by making sure it gets in front of the right people. So I think it's just a matter of time before they turn that on. and actually grow the 
+
+[01:17:15] Brian: And call it something other than advertising, which is like, you know, 
+
+which inevitably they 
+
+will, I mean, only journalists actually care about the hypocrisy of companies, but
+
+[01:17:27] Anonymous Banker: Yeah. And the 
+
+other thing is they'll turn on performance affiliate links because of so many of these newsletters link off. You can see a future where sub stackers are actually getting paid by the New York times to drive subs. Like it's an interesting ecosystem where it's sort of all feeds on itself. 
+
+[01:17:43] Brian: wait, how would that work? 
+
+[01:17:45] Anonymous Banker: So if pretend I had a sub stack and I was writing about something and I was saying, this is a great article in the New York times and someone clicked on that link and then signed up for the New York times. I should get some of the value because I just exposed a reader to that website. And so I just think as the internet, as things become more traceable on the internet, And you can like tokenize it.
+
+And the big thing is subset needs to actually lean in here, but you can see more instances of value coming back to the people that are referring folks to sign 
+
+up and buy 
+
+[01:18:14] Brian: they really haven't evolved the commercial product like at like much at all. Like I've been very sorry I mean, they've added a ton of tools Like I left sub stack like a year ago for ghost and they've added a ton of of consumer tools I mean, I still go back to it. I'm on like I'm still On Substack.
+
+but I don't use it. but I see like, you know, and they haven't like really done much to evolve the ways people 
+
+can make money beyond just the regular subscribe to the newsletter. 
+
+[01:18:44] Anonymous Banker: feed is it went from 
+
+like really interesting information to now like all like personal improvement. I feel like there's like 20 different Tim Ferriss, it's not Tim Ferriss, but it's like articles like that on the feed.
+
+I think you'll see, they'll have to move to the monetization because Beehive is going to give them. Like a run for their money, like beehives, you know, leaning into programmatic advertising, they're doing certain things in a subset. We'll 
+
+[01:19:11] Brian: Yes, Behive's my one angel investment and not as a banker. I can become a banker. It's my only angel investment. And it's doing tremendous. And I said to Tyler, he was like, well, we're going to do analytics much better. I'm like, whatever, 
+
+just get to the ad network. Analytics are fine. Ad networks better. 
+
+[01:19:28] Anonymous Banker: But giving up 10 percent of your revenue for marketing, I mean, think about most businesses, like that's the easiest way to say, why would someone leave sub stack is most companies that are consumer facing spend 20 percent of the revenue on marketing. Right. And so if you're only giving up 10%, that's The split, right.
+
+Just hope so. 
+
+[01:19:48] Brian: Yeah, no, the discovery engine is the best. The recommendations is, and the thing that I think that is sort of underrated with sub stack is you simply convert way more subscribers because they have the credit card on file. 
+
+[01:20:01] Anonymous Banker: You 
+
+[01:20:04] Brian: there's lots of ways to make it easier, but the reality is you're just going to convert way more people on, on sub stack because of that reason.
+
+And, and that's like, it's a tremendous benefit sub stackers. 
+
+I don't think I'm going back though. I don't want to build a Yeah, I I should? 
+
+[01:20:20] Anonymous Banker: I've never, I can't get your, I mean, this is, this is like non 
+
+podcast, but your 
+
+stuff still goes to every fucking day and I've literally called tech support like so much, but I don't know. It was just fine. 
+
+[01:20:32] Brian: all right. an honest banker. Thank you 
+
+for
+
+your appearance 
+
+[01:20:36] Anonymous Banker: Yeah. Thanks for having me. 
+
+[01:20:37] Brian: V. I. And that is that's 
+
+that's
+
+all we have this 
+
+[01:20:41] Anonymous Banker: We need to do our, 
+
+the products. 
+
+[01:20:42] Brian: Oh, we didn't do good product. 
+
+
+[01:20:43] Good Product
+---
+
+​
+
+[01:20:46] Brian: I don't have a good product. I, Troy like left this on me. I mean, Troy's good product was apparently this Yacht Rock documentary.
+
+I have to say it because I thought Yacht Rock was, was 
+
+out. do you have a good product? Anonymous Banker? 
+
+[01:21:01] Anonymous Banker: It's a book. It's the new SoftBank book. It's actually really interesting. The, what's the guy's name? My Yoshi. So what's the Masha Masa. 
+
+[01:21:09] Brian: Ah, 
+
+so yeah, 
+
+[01:21:10] Anonymous Banker: So, yeah. So my recommend that there's a new book out on masa. That's really good. I think he came out 
+
+last month. 
+
+[01:21:15] Brian: I would, I would read that. I mean, he's an interesting character, I guess. it's 
+
+[01:21:19] Anonymous Banker: He grew up in this very 
+
+[01:21:20] Brian: Well, he grew up like what he grew up like Korean, but 
+
+in Japan, and that's kind of a, that's a strange way to, I'm sure that affected.
+
+[01:21:27] Anonymous Banker: Yeah. And like, his dad was one of these owned a bunch of gambling halls. but he came to the U S Yeah.
+
+he came to the U S really early. and I think 
+
+that we get really conditioned in the U S to have like a very, you know, our, our entrepreneur, most of our entrepreneurs and billionaires today follow this pretty normal path of like dropping out of Harvard, but I would say that his path is like much more interesting going back and forth.
+
+Between the U. S. and Japan and really faking a lot of stuff before he made it. Some people probably say he's still faking it today, but, it's just like a much more interesting story than a lot of the entrepreneurs here in the U. S. 
+
+[01:22:05] Brian: Yeah, I guess that's what attracted him to Adam Newman. 
+
+He was like, Oh yeah I know this. Fake it till you make it. Totally. problem with fake it till you make it. If you, if you play it out too far, you get into 
+
+like, you get fraud adjacent. That's the problem with
+
+fake it till you 
+
+make it. 
+
+[01:22:22] Anonymous Banker: Yeah, but like as much as we can make fun of him for that, 
+
+it's like the, 
+
+you know, the arm investment, the Yahoo investment, the NVIDIA investment, like he's created in terms of the value he's, he's created. So, yes, he's kind of 
+
+had some wrong currents there, but, overall, I think his track record is 
+
+[01:22:38] Brian: Yeah, you got to get shots on goal and right, and then nobody's gonna, whatever, all the cliches, you know, you miss 100 percent of the shots you don't take, et cetera. And whatever, you know, he's, he's been, you know, he's, he's also been investing probably in an ideal time for 
+
+his style of investing, 
+
+you know, cause there've been so many massive 
+
+hits that you can have a bunch of flame outs.
+
+[01:23:04] Anonymous Banker: I think sometimes that the problem with that is, is like you miss, there is still a judgment factor, right? Like there's people that invested in 10 companies that were in the internet and they have no money to show for it. And so I think there is still some judgment when you're in these different industries, even when everything's 
+
+going up.
+
+[01:23:22] Brian: as, as an investor with an impeccable record as of now, considering where Beehive 
+
+has, as you know, Tyler has really done an amazing job with that company. I mean, I understand 
+
+it's, it's hard. 
+
+[01:23:34] Anonymous Banker: Have you sold any in secondaries? Or you kept 
+
+[01:23:37] Brian: No, I'm going all the way to IPO. 
+
+Tyler's an animal. He's going to, he's going to, he's going to, uh, he's going to do great with 
+
+that. 
+
+[01:23:45] Anonymous Banker: That's the funny thing with Jason Calacanis, is he definitely sold his Uber, I think, in secondaries before. That's like the 
+
+[01:23:52] Brian: That sounds right. That sounds right. All right. Cool. A B. Thanks.
+
+
+
+
+[01:23:56] Outro
+---
+
+[01:23:57] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+
+

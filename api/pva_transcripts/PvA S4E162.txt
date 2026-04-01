@@ -1,0 +1,745 @@
+PvA S4E162
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Troy: WhatsApp is a place that we collaborate through the week, it's almost like a kind of micro media feed.
+
+And I find it really useful. I love it. 
+
+So we decide that with the introduction of chat, GT's new chat feature, we're gonna move our WhatsApp chat into chat GBT and we basically gain a participant in that process. 
+
+[00:00:20] Alex: it's insane. I don't understand what we're doing. I just see like, it's, it's, it's out. You guys are putting links in there and then Troy pasts like Tolstoy level paragraphs into that thing, and then the AI comes back with random shit. Every time anybody says anything.
+
+Every time I go in there. It feels like, like opening a deranged TikTok or something. 
+
+
+[00:00:41] Welcome
+---
+
+[00:00:41] Troy: ​
+
+[00:00:51] Brian: Welcome to People versus Algorithms. This is a Thanksgiving edition. I'm Brian Marcey joined. We're scattered, actually. You guys are, are very close to each other right now, right?
+
+I think Troy, you are in San Francisco and Alex, you're at your, compound outside of San
+
+[00:01:05] Alex: yeah. A secret location outside San Francisco. 
+
+Yes. I might see Troy actually,
+
+[00:01:10] Brian: Oh, that'd be fun. You guys have Thanksgiving dinner together? 
+
+[00:01:13] Alex: might have a sleepover. Oh no, we're not that close. 
+
+[00:01:15] Brian: ab b's gonna be joining us a little bit later. We're gonna talk about hustlers. I wanna celebrate hustlers. I think they are a great feature of American society. I think they got a little bit of a bad reputation because of course, the tech industry, co-opted hustling and hustling is, is far greater than these faux hustlers that Silicon Valley keeps producing.
+
+So, 
+
+[00:01:40] Alex: but when are we gonna start feeling sorry for all the, the tech industry being always, the reason something's going wrong right now. 
+
+[00:01:46] Brian: that hey, great power comes great responsibility. You want to be, you wanna put yourself at the front end of everything and reshape society, government, the economy. You're gonna get scrutiny and you're gonna get, you're gonna get pushback. This is just how it works. This is the Hurley burley
+
+[00:02:04] Alex: I realized, I realized I wanted to be controversial and start defending the tech industry, but I don't have a leg to stand on.
+
+[00:02:10] Brian: Right. These, these poor autists, they, they got shoved in a locker at some point and now they're, they're taking it out on all of us. All right. Let's talk about, speaking of that, let's talk about,
+
+
+[00:02:19] Google Ascended
+---
+
+[00:02:19] Brian: let's talk about what's going on in ai because I think there's a big narrative shift that has taken place.
+
+We've talked about it, on this podcast before. and you know, I think we were talking about how Google was far behind OpenAI. And when OpenAI came out with chat GBT three years ago, that was the sort of shot across the bow Google had been working on and a leader in AI research for so many years, and the fact that they had.
+
+Not got, not shipped, you know, an equivalent to chat. GBTI think, really hit the company. Now, of course, Google is just such a massive company and it has the best business model ever created. And so it is fine, but it appears now that with Sergei, Bryn is getting a lot of the credit with him back in the mix.
+
+because a guy called Dan at OpenAI at a party said, dude, what are you doing? Why are you sitting on the sidelines? This is like the biggest thing, like in computer science ever. Sergey Brin was like, oh my god, right? And he got on his roller skates, he roller skated back to the Google plex and
+
+[00:03:26] Alex: roller blades.
+
+[00:03:27] Brian: he's okay.
+
+Roller blades, excuse me.and he's making shit happen, I guess. and so Gemini three. I find all of these sort of measurement, sort of dick measuring contests, be a little bit boring, but I guess they're important. Gemini three got, tremendous reviews. OpenAI is, battening down the hatches for a rough period.
+
+Sam Altman warned the staff that the company's facing some rough vibes. He even used the dreaded economic headwinds, which is an all purpose excuse. Anytime any company hits the a tough period, they can always say that they're facing economic headwinds because, it obscures the fact that they're responsible for operating within a market.
+
+Google also released a new version of this nano banana. We're gonna talk about the AI aesthetic right after this, but. It does seem, Alex, I wanna start with you. It does seem that, Google is ascended. obviously it has control over distribution. It has an incredible monetization engine. It has every surface area possible, so maybe this was inevitable.
+
+[00:04:36] Alex: I mean we talked about that, you know, Bo, both Google and Apple kind of owning the surface area, owning the phone gave them this huge advantage and that Google probably had the greatest one because they also had the technology. They had the, they have the cloud infrastructure, and they have these 10 search chips that they're making.
+
+They're the only kind of other. Producer of chips, that competes with Nvidia and they're now going to start selling their own ships. So it's kind of coming, you know, Google took a second, to realign itself. It's a big company. I think bringing in the founder is usually a sign that somebody just wants to be able to make decisions quickly without too much oversight.
+
+You know, because I don't think A-A-C-E-O of a public company can not do stuff that a founder can do by kind of weaseling himself into kind of meetings at the company. Like I think Sergey can just go in and make shit happen. but to me the, the main thing is that it, it is showing is that this technology is going to maybe not be.
+
+Be either commoditized or become kind of distributed enough so that all the big players have some sort of say in it. And what I like about what's happening, is that the attention is getting pulled away a little bit from chat GPT and Nvidia, which I think are, are both huge risks. Like these massive, massive, massive valuations attached to single companies is not good.
+
+and it's also showing like, I don't know, I was using nano banana, pro the other, yesterday night I sent you guys some stuff. It's incredible. it's, it's truly astonishing what you can do and how fast it moves. It's right in the chat box, but you can also see that there's no money to be made from that.
+
+This is like this, this is not like even a fraction of a trillion dollar business if, if everybody can kind of generate these images. I mean, it's incredible. You can generate infographics like really, really, really great infographics. You can generate really realistic video. but what are people gonna pay for it 20 bucks a month?
+
+Like, you know, 
+
+[00:06:29] Brian: Troy does, does any of this, I mean, Nana Banana, I just, one point on that, I mean, this kind of goes back to the Chris Dixon thing. You know, things start off as toys, et cetera. we don't know where any of these technologies necessarily will go. you know, maybe Nano Banana just becomes, you know, elf yourself 3.0 or
+
+[00:06:50] Alex: But it doesn't even, sorry, I made that point last time. Like, to me, it's not, I don't even think we should. We should ask ourselves like, will these technologies, you know, cure cancer or not? I, I think, I think these are very profoundly important technologies, right? that will like, change the world.
+
+But I don't know if the value of that is going to be captured at, at a rate by these companies so that it's worth the investment. Specifically open ai, like OpenAI, I don't know remember who said that, but, somebody at OpenAI basically said that they would need to make a cut from, you know, any medication that is like discovered on OpenAI.
+
+But, you know, I I, I, right now it's a, it's a tool, it's a writing tool. It's like Google, it's like, it's like Google Resing Google Docs and saying, Hey, any good business idea, you come up with Google Docs, we want to cut from it. I, I don't think that they will realize the, the, the kind of value that, these AI tools will generate.
+
+Does that make sense? Like, I think that's a very different conversation.
+
+[00:07:48] Brian: Well, yes, because OpenAI basically needs to build a $500 billion in revenue business in short order. I mean, that's a massive, massive
+
+[00:07:58] Alex: Ma, without, without, without really understanding how they can advertise on it, which is the only way they'll reach anywhere
+
+[00:08:04] Brian: I mean, they're gonna do something like 20 billion or something this year. And when, you know, when asked about that gap between the, the revenue that they're doing and all these spending commitments, and Sam Altman became very defensive, which is not a good sign,in the vibes. does this matter?
+
+Does any of this matter?
+
+[00:08:24] Troy: of all, I think it's important to remind yourselves 
+
+[00:08:27] Brian: I. 
+
+[00:08:27] Troy: like. Like coastal prognosticators that say things like AI slop and talk about things like non oana need to get a grip because like my mother's watching the View and you know, local news and you know, I'm at Thanksgiving with some friends and they think Chappy GPT is new and cool.
+
+And they'll probably use it to figure out if they put, you know, apples in the stuffing or whatever. you know, there there's the sort of just the adjective of people that talk about this all the time. And I think this is a, a good bridge Bri by the way, Brian, to talk about the nature of news, but we'll, we'll get to that in a minute.
+
+I, I think that Alex makes a, a kind of a, a good point, which is. When you have a general purpose technology that is sort of, you know, a knowledge assistant and more, how do you find the economic choke points that make you the money? And Google found that, right? And Google found it in lots of places.
+
+well, really a handful of places. But
+
+[00:09:31] Brian: It found It in one place. It found it
+
+[00:09:32] Troy: well, no, no, they, they found it in search and they found trickles of that, that created engagement in other areas, whether it was Docs or Cloud or now Waymo. These are all instruments that take a technology to an audience. And there's a toll booth there,
+
+[00:09:49] Brian: Yeah. But it's fairly straightforward. Is it not? You control the distribution choke points. You have the, the best way of monetizing those choke points. It's like, I don't know, militias do this stuff in Lebanon and places all the time. They just set up a checkpoint and then they have power.
+
+[00:10:05] Troy: And so I think that that OpenAI has a huge amount of runway. I think that the scope of these technologies is vast enough that, that there's, you know, so many use cases that, that, that are revenue related. I think that if you wanna be the general purpose chat bot for the world, you do obviously need an ad mechanism.
+
+And I've watched, you know, from, from, you know, from Snap to Google, I've se you know, wa we've watched all of these people. Build the sort of advertising toll booth and it takes a long time. It's, it's, it's really complex. it's hard to change buyer behavior. It's hard to build all the sort of, middle technology that manages bids and ad delivery and reporting and all, all the things that you need to do.
+
+and I, I think it's gonna take them a really long time and I think it's a significant advantage for Google. But on the other hand, a lot of people use chat GPT and like it, and it's a good product. And I think that the, the Race for Salmon team is to, Move quickly enough that they can kind of preserve that advantage and create enough insulation around the company through this period so they can get to the other side that will demand more, sort of economic rational behavior.
+
+And, and, and, and it's, it'll be really interesting to see. And if the wheels fall off, I suspect that you'll see them merge with somebody else or some type of MM and a activity that, that brings the monetization piece to, to chat. Pt.
+
+[00:11:39] Alex: Yeah, but it's, uh, it's hard to look at that and see a road to like five, $500 trillion, and I think.
+
+[00:11:45] Brian: Billion. I don't think we're on
+
+[00:11:47] Alex: 500 billion. Billion, sorry, sorry. 500 billion. the numbers are kind of crazy. The, the, the thing is like nobody, like, it doesn't matter. I don't think, like, people discussing whether nano banana is factually better than the other thing or whatever.
+
+The, the issue is that right now you look at it and there's three models that are nearly equally capable, some of them better than others. Claude is, is great and, and, and, and better at coding. Gemini is great at creative writing and video generation chat. GPD might be good at other stuff. They definitely have better consumer apps and, and chat.
+
+GPT is fighting open, AI is fighting in the consumer space now, but the people watching these things carefully are the people investing. And I think that if you are not. And it doesn't look like anyone is like, kind of like tearing away from the competition with a, with a product that is so significantly better that you can go to GlaxoSmithKline and say, Hey, we want a hundred million dollars a year because this thing is going to cure cancer.
+
+Right. That money is not gonna show up. 
+
+It's not,
+
+[00:12:50] Brian: Yeah, it's interesting with, with, with Google versus OpenAI in that Google doesn't really have an AI product. Like it has a lot of products. It's like all over the place because Google's not, it's, they
+
+[00:13:03] Troy: Well, their AI product is Gemini. 
+
+[00:13:06] Brian: okay, but then it's also Nana Banana. Do you use Gemini? Like in docs? Do 
+
+you use it in sheets? Are you, are you, are you downloading the 
+
+[00:13:15] Troy: You.
+
+You download 
+
+the app, 
+
+[00:13:17] Brian: or what about AI overviews?
+
+Wait, what about notebook? Lm.
+
+[00:13:21] Alex: Right. Here's a problem with Google. Google these large companies and now including Apple, but Google's been terrible at it, have have a very terrible Experience with like packaging their products. They do things that make sense, right? The one thing that OpenAI did with a clean slate is that they have chat.
+
+GPT, they landed on that and everything's kind of based around that. They made me build Sora. the nano banana name is actually the, the kind of the project name. It's, it's, it's called Gemini Video Generation or something like that. there is an app. There's also Notebook, lm.
+
+It's because all these different teams are doing different projects at Google, and they're allowed to kind of, you know, operate pretty independently so that by the time the products come out, they, there's no real sense making in the product, you know? And, and, and that is one of Google's like biggest failing as a consumer product, is that they don't really know how to name and package things.
+
+And they started calling this thing Bard. Remember Bard?
+
+Oh that's what it was. Yeah. so
+
+that's, they'll stumble into it. They'll 
+
+figure it out.
+
+
+[00:14:22] AI Slop
+---
+
+[00:14:22] Brian: let's move into the AI slop debate, because I think when I see the sort of anti ai, talking points, you know, it used to be the, the safety thing that it was gonna end the world. It was going to try to make a paperclip and it would end up destroying humanity. that's very concerning.
+
+then it moved into like a fairness. I mean, the reality is these engines are trained on, on human and ingenuity and in, and intelligence and creative output. And I think that just, that strikes people as wrong. You know, the, I don't know if you saw this AI music app suno, like raised at a $2.5 billion valuation and, and, and nobody, you know, I think, you know, people, a lot of people would look at that and say, you know, this, this company is just, Extractive, it's pure extraction. and also what it produces, is to, I think, discerning people. and I think this is an issue across whether it's nano banana or, or suno, or pretty much any of these AI image generators and also AI content generators. It's fine for content marketing Emails is the aesthetic of AI content is.
+
+Lowbrow, it may be at best. It's, I guess what they call mid now, and that's why we hear the critique of slop. Slop is AI slop will be in the running, I believe for the word of the year. Bloomberg this week had a AI recipe, AI Thanksgiving recipes piece, which is a perfect piece to te to for a holiday week.
+
+You peg it to the holiday and you say that the poor people are out there, they're using AI for their, for their Thanksgiving recipes. And the AI is leading people astray with the, with strange ideas like putting Apple into, stuffing. I don't know, maybe Troy got that from, from one of Google's 15,different, AI products.
+
+is this something you are seeing, Troy? I mean, you, you've, you've been on the road. I guess this week and you stayed in a Holiday Inn Express, I'm told. And so you're definitely more in touch now with, you know, the regular people. What, what's, what's your vibe? Check? 
+
+[00:16:38] Troy: I mean, do you want me to start with my critique of Holiday Inn Express?
+
+[00:16:42] Brian: of course. Obviously, 
+
+[00:16:44] Troy: Well, no, I mean, I, I was visiting my mother. It was wonderful. We, we, we were in the interior British Columbia around Kelowna. you know, there's no great hotels to stay at anyway, but the,
+
+[00:16:56] Brian: no, four 
+
+[00:16:56] Troy: it, the, the weird thing about, holiday Inn Express is it feels like there's a thick coat of goo on everything in the hotel.
+
+And we arrived There was, you know, some type of gathering of, you know, young Canadian hockey families in the hotel. And so there were, you know, it, it was kind of fun and, and, and nice. 'cause it reminded me of having my kids on, on holiday, but it was like kids running in the halls and parents smoking dope in the rooms and playing cards in the common area.
+
+And so if you wanted to sleep, you probably needed to put on your AirPods. And I could hear the guy, the walls are so thin, I could hear the guy in the next room pissing. And, and that's not super cool. the, you know, the thing that struck me was there was a couple things. One is that in America or Canada, this part when you stay at a holiday and it's, they're indistinguishable.
+
+when you go down to a budget level hotel, it like taste evaporates. Like the notion of sort of good living or sensible living just kind of evaporates like. In the, the free breakfast that you get with it. Like why do you need signage above the sausages?to tell you what to feel like That's moronic.
+
+there's, yeah, so it says about how about a hot start or exactly what you need. Go ahead, pancake. Right? and like, this is
+
+[00:18:25] Brian: are puns
+
+Are are tasteless. 
+
+[00:18:27] Alex: somebody had a, somebody had a chuckle about that. Somebody went and looked at it, went, huh,
+
+[00:18:31] Troy: Don't put signs above my,
+
+[00:18:32] Brian: Exactly. That's what I would say. Exactly right.
+
+[00:18:36] Alex: only thing you want above your food is a big silver dome that your butt lip opens. 
+
+[00:18:40] Troy: Right,
+
+[00:18:42] Brian: Excellent idea.
+
+[00:18:43] Troy: right. But if you go to a family hotel in Norway, can they bring taste down to like, you know, a, a mass product?
+
+[00:18:50] Brian: look, Americans don't do taste. That's just
+
+[00:18:53] Troy: you can j it, well it was in Canada, but you, you, you just staying in like. A budget hotel. Can't you just get rid of the frills and still keep a little bit of demeanor? Do you have to label the sticky buns?
+
+Like, it, it, it just, I don't know why you can't have a decent hotel for 150 bucks. 
+
+[00:19:12] Brian: can we get that? This was a
+
+great rant. Can we get on AI slapp? Bring this back to Ai slapp. What is the, the holiday? So basically Nana Banana is the Holiday Inn
+
+Express or chat. CBT writing is the Holiday Inn Express.
+
+[00:19:25] Alex: I mean, I see that. 
+
+[00:19:26] Troy: people on, on, on the coasts that are media critics talk about ai, slop, other people just think it's fun and, you know, I, I think that the vibe is changing. I remember when, when Ben Fall was indicted for using AI to write SEO
+
+[00:19:43] Brian: literally indicted. 
+
+[00:19:45] Troy: and then what I saw, you know, we have Henry Blot on his podcast interviewing the esteemed X to Wall Street Journal editor, now the editor of Business Insider, talking about how they use AI routinely in their reporting process.
+
+I mean, it's just gonna happen. And the truth is, is if you put the right things in and you manage it right, it's an incredible tool and it can make good copy, right? It can't do reporting, but it can make good copy. 
+
+
+[00:20:12] People vs Bananas
+---
+
+[00:20:24] Troy: And Alex, today put in People vs bananas in our, in our, in our chat. And it was Three Monkey Podcasters created by, Google Gemini.
+
+Like that was kind of cute. Alex. It 
+
+was funny​
+
+[00:20:35] Brian: Eggselent
+
+Alex. 
+
+[00:20:36] Troy: Eggselent I, I, I am, in a chat group of really, really funny British guys on WhatsApp that are, you know, they, they, they're funnier than Americans and sometimes AI slop, you know, filters into the group, and it's kind of funny. And even the Brits like it, so even the Brits like it.
+
+So I, I think that it just will become part of how we, it's not slop. It's not slop, it's just a new tool. 
+
+[00:21:07] Brian: Alex, you're a creative, a designer, a man of taste. and yet you 
+
+are, you're a, you're a techno optimist. Of course. Alex has great taste. Come on. I can, I can tell that. are,
+
+[00:21:19] Troy: sell zis in British Columbia.
+
+[00:21:21] Brian: are you, are you at all, I mean, Troy is a monetizer, he's pe adjacent, Are you at all like just offended on a taste level by the output of these engines?
+
+And does it matter at all? Because, you know, a lot of the AI stuff, to me it's reality TV is, is incredibly popular. taste is obviously subjective, but it's real. I mean, come on. Like, I mean, Troy can tell it by going into the, the Holiday Inn Express, and we all know that Holiday Inn Express is not trying to win on taste.
+
+And the people who have taste, generally would not look at a Holiday Inn Express and be like, yeah, this is, this is, this is, this is a good product.
+
+[00:22:00] Alex: Yeah, I mean, I don't want to get, yeah, I mean, I think taste is interesting because I think, there are ways of creating mass market products with taste, you know? and I do think that taste exists. But on the AI slope stuff, I mean, I was testing out there is a world where. If you take aside all the plagiarism, kind of the fact that these are just these massive plagiarism machines and they, they've copied millions of hours of, of human creativity and are recompiling them into, into like free output.
+
+that the stuff that it generates is actually pretty good. Like, you know what I mean? Like, I think I've seen a lot of really shitty, HR presentations. I've seen a lot of really terrible, in invoices, you know, by, by a contractor and stuff like that because they're trying to make something. It's hard and, and now you're seeing stuff, you're really kind of seeing that Canva revolution where people are delivering documents that kind of look better, that are kind of using a lot of the tricks and techniques, which are pretty basic of just like placement and white space.
+
+because degenerative system allow you. To make things that look pretty good. Right. now are there, is there any value, is there any interest in that? No, because everything's starting to look the same. but on top of that, I think like when you really look at, you know, how people are using this, I think what we call ai slop is sometimes just really done on purpose as slop, right?
+
+Like that shrimp Jesus stuff. The stuff, the, the, the, I don't know, like if, if you're following what the kids are following, this AI generated kind of mine rot stuff,
+
+[00:23:39] Brian: But bla brain rot is different than AI slop, I think.
+
+[00:23:42] Alex: it is, but it's, it's like I, I what I, what I think it allows you to create is like there's this massive spectrum and we're calling everything slop.
+
+But if I'm honest with you, like, Hey, if my dad wanted to create a business card today, he could create a pretty nice business card, you know, even if his son wasn't a graphic designer, you know what I mean? 
+
+And.
+
+[00:24:03] Troy: Well, if he asked you, he probably would never get it from you, so he should make some AI business 
+
+[00:24:07] Brian: so,
+
+[00:24:08] Alex: Okay. Troy's still 
+
+[00:24:09] Brian: Fiji,
+
+Fiji, cmo, the, the, the other CEO of OpenAI. she had told wire that AI raises the floor, with, with
+
+[00:24:16] Troy: It's an excellent point. It's, it's really 
+
+[00:24:18] Alex: I said, I said it's, it's absolutely true. It, it does raise the point, but I think, I think also like we're having, we're starting to have conversations with like, does work that we appreciate, It needs to change things. It needs to provide something new. And I think we need to see effort in it.
+
+Like we need to see the effort in it. And, you know, chess, chess has been beaten by computers for a decade now, but, you know, chess is still a massive thing and we watch people play it. And I, and I think that within art specifically and, and some specific type of graphic design, this is also true, right, where we wanna see the human in it.
+
+But at a Holiday Inn, I think we're gonna see more st we're gonna see more misuses. I think the marketing manager of that Holiday Inn that creates like these cute little sausage tags is going to feel so empowered by this stuff. And you're gonna have like little quips and quirks and the, the, the manual to my robot vacuum, every line in it is a rhyme. Every line in it is, is a rhyme. Every line is like, make sure that you're, that you clean the robot so it doesn't get too hot. Every I I, they, they probably overuse AI for that. So I think we're gonna see a lot of misuse. but,I also think like AI is kind of the savior here because it's going to help us filter through all that junk.
+
+I mean, I think there's just gonna be a bunch of junk and you're just gonna filter out what you don't like.
+
+
+[00:25:38] Hustlers
+---
+
+[00:25:38] Brian: Okay, let's, let's, as they say, put a pin in that. AB is here. he's got a Casa Magazine's hat on. Very classy. very tasteful. ab I wanna talk about hustlers because you are a hustler. I wrote about it this week. I love doing these, these pieces, because I'm, I'm very impressed by hustlers because I'm not actually a natural born hustler, but I know them.
+
+When I see them. I'm observer. And, I think that we don't appreciate the hustlers enough, and this is Thanksgiving. We should give thanks. We should be thankful that America, where all of us live I think it's the spiritual home of hustlers, and to me, hustlers are people who they see an opportunity.
+
+And they go and they run to it. They don't wait, then they don't complain about all of the, the problems of, of,external problems that they can't control. And they, they look for seams. and they look for opportunities. They get to start very quickly. They're, they're opportunistic. But they're not opportunists necessarily.
+
+Some of them are opportunists, but they're definitely opportunistic in seeing an opportunity. And, and this, this came to me because I had some neighbors over for dinner and one guy, he's Russian and he was telling stories about growing up at the end of the Soviet Union and. Opportunities in a society that was, you know, basically in collapse that presented and he just ran to them.
+
+He started hustling. He, at first he was like, he saw a paint factory that had all this excess paint. And so he was like, I'm gonna broker deals with all these other buildings that need, that need a fresh coat of paint, because the information systems had broken down and they were basically ossified under central planning.
+
+And then he started traveling around Eastern Europe and like buying up scarce like tools that were not available in Russia, bringing them back and selling 'em at a, at a 20% markup. So he was just going all over the place doing this. And then he started bringing goods from Russia and doing this. This is, this is basic hustling to me.
+
+I really admire it. Ab you and I have been back channeling a little bit on this, because hustling, I feel like got a bad rap during the Web 2.0 era. When Silicon Valley co-opted it, and weaponized it. And it became all about this grind culture stuff. And hard work is part of hustling, but it's not, it is not about overwork in my view.
+
+it is a personality type. It is a lifestyle, if you will, hustlers don't stop hustling. That's why, like, I saw this, this thing about like some billionaire, a journalists who are not hustlers. you know, they, they hustle, but they're not hustlers. a billionaire was getting interviewed by a journalist, and journalist was like, why would you need anything more than $10 million?
+
+Like, why would you? And he was like, you'd never, he goes, yeah, exactly. You'd think that that's why you'll never have $10 million because you'd, you'd think you would stop at 10 million. But the people who get to 10 million don't stop at 10 million. They keep going 'cause they're hustlers. I think, this is being rebranded as high agency now.
+
+This is like, direct marketing becoming performance marketing. It's to make it more palatable and to get it away from, you know, the excesses, where hustling can go into grifting and just outright fraud sometimes. Give me your sort of worldview, because you've given it to me a little bit in, in our back channel.
+
+[00:28:50] AB: Yeah, I mean partly probably the, the reason for the, the change is like before, like I told you, this business of high school, so much of what I had to do, I had to ask people for help, right? But the reason why high agency applies now is most of what I needed to do back then, or what people need to do to make companies, to create content.
+
+It's like a couple clicks away. And so I think the best people now can scale so much faster. Like before, when I started the company in high school, I needed someone to build the website I needed. 10 people to do 10 things. And so I had to sort of hustle fa my people asked how kept asking me how old I was on the phone 'cause I sounded super young.
+
+And so now one you can just use email and it's more about like how proactive and how much action you can take. And like you, you shouldn't wait for someone to give you an answer. Like most of it you can get through chat, GBT. And so I think in the media world, you see people that are just like outside of Substack, but like in audio and video you see the Paul brothers, like some of these people have made hundreds of millions of dollars in creating a lot of value for themselves because they started with the ability to create, edit, and produce.
+
+Alex Cooper a little bit, Joe Rogan, he had help, but it's like they started with the ability to create the content, edit it, start distributing it out. And like now the next phase is like so much of this stuff you can effectively do on your own. You can hire a couple contractors, but you don't need to ask anybody for a favor.
+
+Then once you have the audience, like there's automatic monetization and then the advertisers come to you, so.
+
+[00:30:22] Brian: Troy, how do you think about hustle? I think you're you. You might be a hustler.
+
+[00:30:28] Troy: I dunno, but I, I have a story. I have a story about it, and it, it maybe shows a couple of things, but I'll tell the story because I do think that hustling's becoming more important, whether you're a natural born hustler or not. this one is kind of a sad story. Maybe I should set it up for a little longer before I get to it.
+
+so I was coming from the airport at SFO and I met a hustler and it was a kind of, you know, like I said, a bit of a sad, contemporary American story. my driver was this super affable Nigerian guy, and he kept, he kept saying, I remember him saying, in the car, Troy is in the house. And I thought it was funny.
+
+And Jillian, my wife, thought it was funny. Anyway, we told jokes and we laughed and it showed why, you know, having, you know, a driver versus a Waymo can be delightful. And he, anyway, he was about 55. Super nice guy. And it turns out that he drives to San Francisco every day from Sacramento to be an Uber driver.
+
+And that's about a two hour drive, give or take, probably a 
+
+little more. And you know that Alex and the, he does it to get the airport money. And so the airport trips from SFO are way more lucrative than anything you could get in Sacramento. The interesting thing is there's 600 cars often in lineup, in three lots at sfo.
+
+So you get a number, you pull your car in and you wait. And he occasionally gets to nap while he is waiting 'cause he drives home to Sacramento at 1:00 AM And turns out he was a federal government employee, eight months ago who lost his job in a round of Doge cuts and kind of didn't know where to turn.
+
+Uber was a short term solution for him. Didn't have a car, his daughter gave him one. He said interestingly, that he used to love Elon and would hang on every word that came out of Elon's mouth. And he said that ended when he saw him on stage with a chainsaw and he changed his mind when he saw sort of Elon lose respect for, you know, the common person.
+
+anyway, just before he dropped us off, he was telling us he hears a lot of stories. From other drivers in the parking lot at the airport. And he said, everybody's got problems, everybody. And he said, if you took the problems from the three of us in the car, mine his and my wife's, and put them in a jar and mix them up and had everyone take a third of the mixed problems out of the jar, you would always want your set of problems back.
+
+And he said, count your blessings. everybody's got troubles and we live in an era where you eat what you kill. You have to be, extremely adaptable and never ask for permission. And those were his words of wisdom yesterday. Instead of calling an Uber, I took Waymo's all over town without a driver. And that had its own virtues, I would say.
+
+'cause I could play my music and never feel like I was being listened to. and you don't have to tip the driver, you know, getting, getting Dave the Uber guy was, was a beautiful experience. And David is a hustler. And I think that the AI economy is gonna mean that more people have to be like ab.
+
+[00:33:52] Brian: Yeah, I think a hundred percent. Alex, are you, are you a hustler or European division? 'cause Europeans do not usually make for, for good hustlers. I don't mean this offensive in an offensive way. I just think that we have different systems that optimize to different things. 
+
+European systems basically to me, like they optimize the stability. They have like big, you know, safety nets, the American system.
+
+And I think we're in this period where a lot of people are wondering whether the American system makes sense anymore. And the American system optimizes to me to hustling. It is an open system. The reason that we, that immigrants do so well here is because we take the hustlers in the world who are stuck in systems that don't allow them to hustle enough, and we plug them in.
+
+On all levels, whether they're an H one B or whether they're people who are cleaning homes, like who were in Venezuela a week before, and then they're in Miami and they're like setting up their own like businesses and, and they, we can say, oh, that's an underclass. But like, those people go on and, you know, they become citizens and they, they move up the, the, the chain.
+
+I mean, we had someone here who was, was cleaning our house. She's like a manager at this place now and like Boston around like 15 people. Like that's how it goes. And so I think like when we talk about immigration in, in this country and we talk about smoothing out a lot of the unequal outcomes, I think the important thing because we're seeing a turn in, in the political culture in this country, is that we don't give up that system that is open enough that attracts hustlers and allows hustlers to.
+
+To hustle. Flor is yours, Alex. 'cause you are. You are a European hustler.
+
+[00:35:44] Troy: But, but, but Alex is in a royalty man. He's a misfit. There's a difference.
+
+[00:35:51] Alex: You, you just, you're confusing people. I'm also French. I watched this, I watched this movie over the weekend called The Predator Badlands. I don't know if you know the Predator movies. Predators are this alien species that goes around from planet to planet hunting, the most deadly prey, in this movie to prove itself.
+
+A predator goes to this planet, which is the biggest, baddest planet where everything wants to kill you, because the ultimate thing as a predator is to kill this one big monster. And I think for people who are hustlers that live outside of the us, the US is kind of that place where you want to go. And you feel like, like it feels like the NBA, you know, you want to be let in because you know that whatever's holding you back, wherever you are,you can accomplish it there.
+
+You know, like no restraints, hustling is, is,
+
+[00:36:38] Troy: Is your favorite movie come? Will you watch coming to America over the.
+
+[00:36:42] Alex: Well, yeah, that, 
+
+that's a great movie. but yeah, I mean, I, I used to look at America and always want to move here and, and you know, I've been hustling for a while. I, I left high school, so I didn't even finish high school, which, ironic. Which interestingly, in, in, in Europe, I would never say because I was embarrassed by it because people would look down on you.
+
+But when I came here, it became kind of a story that people appreciated. but you know, I, I think, I think the hustle culture in America is also,
+
+[00:37:12] Brian: Wait, that hustle culture's different, but go on.
+
+[00:37:15] Alex: well, I, but no, but I think like the. Being a hustler in America is also something that is being kind of appropriated by corporations and turned into something that you just have to just work extra hard.
+
+that doesn't mean that's your, that's your way out. And I think that that drive, is often turned into that, which is unfortunate, but you know, that's, that's, that's where we are.
+
+[00:37:38] Brian: So we can have healthcare in this country and still have a hustler culture. I just wanna make very clear, in fact, like not having a, a national healthcare system actually holds back hustlers here because you're penalized for actually going, going out and trying to build a business. Like anyone who pays for their own, like health insurance as I do knows this.
+
+It's insane how expensive it is if you don't work in a typical nine to five job. And the economy was built unfortunately for people to, and maybe that's the, the, the goal is to follow the, the rules and to work for, you know, big companies, because they need stability. I think what we're seeing now is that, that precariousness has shifted to, like you work for a big company, your existence is pretty precarious too.
+
+It's not just the Uber drivers. And so the, the, to me, the, you. We're gonna have a lot of people who are not born hustlers who have to hustle. I know it. so you're basically, you're very well positioned. Ab I think that's what we're trying to get at. 
+
+[00:38:42] AB: Gary Vaynerchuk sort of vein of like, that, that's just so performative and, and not worthwhile. And to Alex's points, like not just the amount of bullshit output it, but it's actually like having traction and scaling something. I think there's, Sam Altman makes this point of like the one person billion dollar company coming soon.
+
+I, I don't know if it's one person. but you can see sort of these companies being stood up where it's groups of 5, 10, 15 that are gonna be able to, in like 12 to 24 months really scale businesses that are generating more than just. Venture capital money, but real revenue, real engagement. It's happening right now.
+
+It's pretty fun to watch.
+
+[00:39:21] Brian: So last thing on that, 'cause there are is a lot of like fake hustler hustle that comes outta Silicon Valley to Smith thing because one of the flip sides of America not penalizing failure is that it fetishizes failure of Silicon Valley takes everything too far. And so it fetishize failure and it sets up a system in which there's literally no downside.
+
+So like, take those like cluey guys and the friend.com or whatever guy, founder, those things are gonna go down in flames. Terrible idea, terrible execution. They're gonna come out ahead. It's like, it's like running for president. There's literally no downside. There's no downside. it doesn't really matter what, what, what, what you do.
+
+So I think a lot of that is like the sort of like fake hustle In some ways it's been, it's been branded. but the real, I think that there, there will be like, do you know the guy Peter levels, like the real hustle that's taking place is in bootstrapping. He's this like, solo. Coder, he's like a digital nomad too.
+
+and he's built all of these multimillion dollar apps and he's seen how much, how, how big he can get as like a one person digital nomad building all these different, different apps. So my money is on Peter levels. He's, he's a bit of a hero to the, like the hustler bootstrapper world. 
+
+[00:40:36] AB: if your housekeeper, instead of just going to manage like 15 people, if she making an app for housekeepers, could be super easy where she makes it and turns it into a business where she doesn't have to work as much. Like it's great that she's progressing up and managing people.
+
+But I think the future with some of these tools is when you bump into a problem and you know a space really well, to turn it into a product and to grow it is easy, right? So you can turn this physical. 
+
+[00:41:02] Brian: This is so good. This is another part of, by the way, hustlers. This is how you know AB is a total hustler because the way you can tell if someone is a true hustler is they literally can't believe that anyone, everyone else is, doesn't have the exact same mindset and personality as they do something about hustlers.
+
+They literally cannot compute that like, you know, that, that the Venezuelan lake housekeeper doesn't have, is not like outbuilding an app.
+
+[00:41:27] Troy: The other thing that they do, Brian critically, is they never ask for permission.
+
+[00:41:31] Brian: No, never
+
+[00:41:32] AB: is there a way to raise kids? Because I, I grew up like sort of poor, right? And so I think that like having the chips on my shoulders helped that, like, that's part of the reason what drove drove me is like, I don't know if you can, like, this is my son. He can get whatever 
+
+[00:41:47] Alex: my, my, 
+
+[00:41:48] AB: like, I don't know 
+
+if I can. 
+
+[00:41:49] Alex: No, my guy, let me
+
+tell You 
+
+Let me, 
+
+uh, let me tell you, after having done a fair amount of therapy, my hustle was entirely trauma fueled. Okay. It's just like, 
+
+[00:41:59] Brian: Oh yeah, hustlers usually had chaotic upbringings. There was some kind of like, you know, trauma involved. you know, I think my parents gave me too good of an environment growing up way too much support, too much, and, you know, it set me back in
+
+this world. So, thanks, mom. Dad.
+
+[00:42:15] Alex: I,
+
+[00:42:16] Troy: I wouldn't give up on the therapy, Alex,
+
+and do a lap. 
+
+[00:42:19] Alex: not, I'm actually, uh,
+
+[00:42:20] Troy: There's a far as I can tell, there's a lot
+
+[00:42:22] Alex: well, there's plenty of work to be done. I mean, I can tell you that, that, you know, I, you know, I'm also raising a son and I, and I have dealt with the fact that I've always had a, a trouble with like, not understanding why people were as driven as me, especially living in places like in the Mediterranean, like Cyprus, where people were like, ah, relax man, just live your life.
+
+And I was like, 18 years old, you know, what the fuck are we doing here? Like, why don't we own a building yet? and, and I can tell you there's a moment in my life where all of a sudden I had enough money that I would never have to worry about money again. And I freaked the fuck out. I didn't know what to do with myself because my entire programming was to just like, wake up in the morning with a hunger to, to just, to just to just make it.
+
+And then we, you
+
+meet. I, I,
+
+[00:43:10] Troy: happened?
+
+[00:43:10] Alex: that wasn't pretty, you know, what did I do? I, I, I remember thinking like, I, I, somebody's gonna take it away from me, so I need to build another business. And I started doing a consulting 
+
+company. 
+
+[00:43:22] Troy: You built a 
+
+[00:43:23] Alex: Yeah. But, and then, and then like two weeks later, I'm on a two hour call with Travis Kanick consulting him, and I'm like, why am I doing this again?
+
+I don't need,
+
+he's a hustler, but I felt like, I didn't, you know, like a, a shark can't stop swimming. But I, you know, not that I'm comparing myself to a shark, but I think this is like, there's something in your nature and oftentimes hustler comes from some sort of trauma, some sort of, of, of scarcity mindset that, that immigrants often have because they want to build a better life oftentimes for the people that are coming, you know, after them, right?
+
+Like, so that they can provide the life that they never had. And to inject that into your kids is, is, is like really hard because they're, because you've succeeded. And so, you know, I don't know if hustlers can, give rice to hustlers, but I'm, I know it happens. I mean, I'm sure it happens. it's just, it's just harder.
+
+I dunno. Sorry. That was 
+
+like a
+
+[00:44:13] Brian: Yeah. 
+
+
+[00:44:14] Deal Talk: Warner Bros Discovery
+---
+
+[00:44:18] Brian: All right. Let's get into deal talk real quick 'cause we gotta do a Thanksgiving good product. ab give us the breakdown of what's going on with this. This Warner Brothers discovery deal has been out there for a while. it seems like it's pretty obvious that it's gonna go to Paramount eventually.
+
+It's just like what the price is, the political. Situation, which is something I wanna get into. It's like, it's interesting 'cause there's, there's so many, everything is political now, now that the government somehow is incredibly involved in our economy and like republicans like are in favor of that, which is kind of remarkable.
+
+[00:44:47] AB: Yeah, 
+
+I mean, and so for some of these assets, it's regulated by the fccs and there's like combination of like businesses, so you're gonna still have to get government approval. So, I think there's like a broader bitter pool of people like Netflix that are in the process for Warner Brothers. But, but from reading the, the news, there's like two sort of front runners, which is paramount in Comcast.
+
+And I think what you're seeing is, and the reason why there's a lot of. Rumors, leaks and a a, a broader bidder group is, it's for a public company. The board has to go through all these steps, get bids, and follow a process and try to get the highest value for shareholders. I think the reason why Comcast and Paramount are sort of the people signal to potentially win this is that at Warner Brothers discover you have like this portfolio of assets.
+
+There's a lot of things that even though in some nicely created investment banking deck about spinning stuff off after purchase and selling it, a lot of them just have to be run off. So some of these cable channels, it's not that Warner Brothers has tried to sell them before actively, but if you wanted to buy them, you could have approached them and paid whatever.
+
+But as you start to pull this stuff apart, the monetization levers that they have with subscriptions and, and all these different things deteriorates pretty. And so the reason why I think you see Comcast and Paramount there as like the the two last bidders is they're effectively saying, we'll just take everything.
+
+I think in Paramount's case, they think we can get it approved easier with Trump and we'll just run everything off. So I don't, and you're just gonna see tons of cuts. The unfortunate thing, lots of layoffs and for some of these things that are now, like there's cable channels today that people watch that feel really robust, that have maybe a couple people running 'em.
+
+Obviously those aren't the people making the content, but in terms of like trafficking the ads and doing things like that, there's a central ad sales team. But most of these things will get pretty diluted. in terms of like the cable, like maybe not Discovery Channel, but the other three things that Discovery owns, that still get viewership, still get subscriber fees, but there's really not much asset value there, and they'll be run off over the next five to 10 years.
+
+The question is do they ever get just shut off? 'cause today they produce revenue in ebitda. but I think that's why you see them as like the, the final, like two bidders where people think they're the ones that are most likely to win. 
+
+[00:47:05] Alex: I mean, net Netflix in the Is in the game too, right? Isn't it? Isn't
+
+Netflix because they
+
+[00:47:10] AB: But the problem with that is they want the, they want more of the production components. Right. And they don't need cable channels. And so, and it, it puts them in weird space where, okay, we have to buy everything and then split it off. And so they may be bidding. 
+
+[00:47:23] Alex: yeah, and also much of Hollywood hates Netflix because they're anti theater, so, I've been hearing that Netflix has been courting all the theater chains, like starting to consider like the theatrical releases and that that's part of that deal. But it's, yeah, it's un it's, it's unlikely that 
+
+[00:47:39] Brian: Yeah. 
+
+[00:47:39] Alex: any, 
+
+anything else.
+
+[00:47:41] Brian: I'm going down the Warner Brothers discovery like brands list. It's pretty remarkable. Like when you get like beyond the TBS and the HBO and the Food Network, you're getting into some, you know, obviously you got your animal planet, your HLN. there's, there's something, there's, there's several spinoffs of HGTV, something called TV VNI don't know.
+
+It SI guess that's sci-fi, American Heroes Channel. I don't know if that's gonna make the cut. Ab, destination America. I'm in favor of that. Jilo Frisbee. Yikes.
+
+[00:48:15] AB: And so the way to think the reason why they kept them on is right now their distribution deals with the distributors, pays them fees for each one of these, so it's worth keeping it on. They get some viewership, so it's not worth turning it off. But the next fire will just run things off and at some point, turn 'em turn off.
+
+10 years ago they were actually valuable, but because of sub declines, how advertising has shifted, how consumers have shifted their attention, they're just not valuable at all. And this idea that someone's gonna come along and buy a cable channel and they get good again, it's not not gonna happen. I think in other, in other news, so in TV news, Sinclair offered to buy EW scripts.
+
+and so it's basically, you'll see a lot of dilution in the value of content, right? So Sinclair is one of the biggest public broadcasters SC Scripts has been around, is a family owned business that used to own newspapers and with this transaction and one other one in Nexstar and tegna. The way to think about it is, unless you're in like a top city, most of your news content, your local news will be owned by one of three companies.
+
+And so even though it may say A, B, C and CBS, it'll likely be filmed in the same building. Similar acres, like there's just gonna be so much cost cutting to basically ring out margin here in like the last couple innings of traditional media. Like there'll still be TV channels, but it's just there's not room for full.
+
+[00:49:38] Brian: Yeah, I, I'll be interested to see if there is actually like a marketplace correction from the consumer side of this, because, you know, a lot of this in my view has like a too much PE energy in it, and I've seen what the private equity companies have done to like local news, on the newspaper side. No wonder these businesses are in the toilet.
+
+I have no idea if they couldn't be in the toilet based on like, but how they're run is atrocious. And this same ca cost cutting is gonna come to all of these local stations, but at some point. Like people just revolt. Like you can't, like, keep shipping horrific products and expect people not to at some point be like, what is this?
+
+Like I always go back. I had, I had a friend during high school. we, we, we hustled back in the eighties and we had to actually have summer jobs. And, he had a job at, on a gr at a, on a boardwalk at a grill. And they, they were so bored, they played a game of how much mayonnaise you could put on a sandwich before people would complain.
+
+And it turns out you could put a bunch of mayonnaise on a sandwich before someone would bring it back. But eventually they bring it back. And I feel like the game, the PE game, that this is adjacent to is like, it's figuring out how much mayonnaise you can put on the sandwich before people are like, this is inedible, if that 
+
+[00:50:55] AB: Yeah, but but the problem is 
+
+they're doing it not, 
+
+making like a lot the, like the Alden Globals of the world. They're not, they're not making 40% margins. They're literally like they're doing these cuts. 'cause they know at some point the consumer will break, but TV's doing it because the different streams of revenue have just gone away and people have gotten more expensive.
+
+Like some of this stuff just has to happen. It's kind of like
+
+[00:51:17] Brian: to happen.
+
+[00:51:18] AB: Holiday Inn used to actually be good like 25 years ago.
+
+I don't stay there anymore. But like, they used to sell the shower. They had innovation in the shower heads. But now if you go there and say, there it smells like formaldehyde, like. They're, they're, it's horrible.
+
+but 
+
+[00:51:34] Brian: The legend of AB is he, he stayed at a Holiday Inn and he
+
+was like, you know what? I gotta hustle my way out of this.
+
+[00:51:40] AB: no, but the, the reason why this is happening is think about this. The cost of capital has gone up real. Like that's even why some like brands like Western, you go and stay there and it's like horrible. Now it's because building this stuff costs, they have to, had to pull out a lot of the quality because everything costs more.
+
+And they still, there's, they can't charge a lot more for the stuff. And so 
+
+[00:52:01] Brian: But isn't. The whole idea of this centralization is that you can suck out a lot of those costs. So you can actually focus on the, the whole notion of it just seems messed up and that you're supposed to be able to centralize, to pull out a lot of the ridiculous costs, right? But then you end up, and this is also just a factor of American, like capitalism is the quality that you get here.
+
+And we've talked about this,a lot is just so much lower than the quality you get in, in, in other
+
+countries. I, it's, and it's, 
+
+[00:52:34] Alex: brands. So the same brands, I, I think Americans go to Europe and go into a Starbucks. I get angry because it's, the Starbucks is actually, and so is Holiday Inn. There's a holiday in Cyprus. It's actually a nice hotel. 
+
+[00:52:47] Troy: No, it's 
+
+[00:52:48] Brian: a, there's a lovely Holiday Inn in, um, in nice, like right on the beach. It's very nice. There's a, there's a great Days Inn in, in Nice too. Highly recommend it. I haven't
+
+actually stayed 
+
+there. Do we have a good product before we go? 'cause this is a long
+
+one. We 
+
+gotta get, gotta get the 
+
+[00:53:05] Troy: yeah, let, 
+
+
+[00:53:06] Good Product
+---
+
+​
+
+[00:53:08] Troy: I to live in San Francisco. I'm here now. It has the highest density. Kind of weird slash smart kids in America. I was in Rainbow Grocery yesterday, which is a good product. And, I, I just was reminded that San Francisco's a different place and it's a wonderful place and I love it here. And then I, I played tennis in Golden Gate Park and it was fantastic. And it doesn't, it doesn't have the sort of human density and chaos that New York has. So like you can still have a tennis court that you can use and isn't destroyed by all the people.we don't need to talk about way O'Brien, because we know Waymo is a really good product.
+
+and it's better than Uber and it's gonna take over. but you know, the good product, I, they, they don't do this in Canada. I don't know if they did it in Cyprus or elsewhere, Alex, what you guys were thankful for, but Thanksgiving is a great holiday. It is really one of the best, and I didn't understand it when I moved here from Canada.
+
+you know, Canada's is a month earlier and it's just kind of like we'll have Turkey and maybe a day off, and it's a minor celebration in America. It's a, it's a big deal. but Thanksgiving is great. I love hanging out with my family and with, with our friends and, and I actually at the risk of sounding sentimental, you know, thankful for, for you idiots.
+
+and the, the process that we go through, even though it's sometimes filled with angst to make this, it just keeps me informed and I love doing it and. I love that Alex, can sometimes see the space between the lines. And I love that Brian is our sort of narrative voice and can do that. Like unlike very, very few people that I know and AB is this kind of hustler that can take a punch and, and there's something to say for that.
+
+we do this, you know, we don't need to do.
+
+[00:54:58] Brian: That's true. quick note on that. Thank you for that. rainbow Grocery is an incredibly San Francisco. I just, I just navigated over to the, the Wikipedia. it began as a bulk food buying program by followers of Guru Maharaji, a spiritual teacher of in San Francisco in the early seventies. It then became a secular project, and there is something called the People's Warehouse, which was striving to build the People's Food System, a network of small community food stores.
+
+It is, I think I mentioned it, is worker owned and run, food cooperative.
+
+[00:55:33] Troy: It's pretty great. 
+
+You know, one thing we didn't get to this week, Brian, is we were talking about this legendary term that Alan Alex coined called Baby News. And, and, and I, and I had a lot of baby news this week 'cause my mother's television drones on 24 7, and so I get a chance to experience media. You know, she, local news is really, really important for her av and, and so that's a big part of, of, of why she keeps the TV on watching The View.
+
+One thing I learned about the View is it's become the home shopping network the vital connectivity in that, that maybe goes unappreciated is the QR code. So they put the QR code on TV all over the place so you can snap it with your phone and buy like a blanket to cover yourself while you're watching the local news.
+
+and that's interesting, but. But I think we should also be very thankful for modern media. even though, you know, we are sometimes critical of it, when you see what the New York Times is trying to do with video.and realize that, you know, like the medium is the message kind of thing. And that cable news, you know, fed us this vaguely lowest common, denominator product that had to explain the fundamentals of everything like plum.
+
+And then you start to see what happens when like informed journalists report their news from within their cubicle just turning the camera on. the density and sophistication of it is just like an order of magnitude beyond what you get in the old structure, the cable news structure that was that lowest common denominator thing.
+
+And that's just one example of how media is particularly if you know how to go out, is so delightful now. There's so much good stuff. There's 
+
+[00:57:23] Brian: would just add this on the New York Times thing, it is the exception to the rule pretty much across the board. getting people to come to your property, your app, or even, god forbid, your website, to watch video. As a, as a news publisher is nearly impossible. Micah Gelman, who used to run video at the Washington Post and left, you know, they, they actually had this TikTok star, Dave Jorgensen, I think it was, who ended up splitting off and to become a creator. And Micah like went with him. He had recently posted about this, about how it is on LinkedIn of all places, which is home to a lot of hustlers, about how it's impossible to get people to come.
+
+They come to the website, they come to the app to read articles. They don't come to, they tried everything to get them to like watch videos and people go to Instagram. they go to
+
+YouTube, they go to 
+
+TikTok to watch 
+
+[00:58:13] Alex: is hard to 
+
+[00:58:14] Troy: It. 
+
+[00:58:14] Alex: it's, it's
+
+it's
+
+[00:58:15] Brian: Yeah. 
+
+[00:58:15] Troy: sure is. It sure is. But the first thing they always do, media companies put a 32nd pre-roll in front of video that they host on their site. And with that, you're never gonna get
+
+[00:58:25] Alex: I mean, this is where we talked about the media companies not being good at product. This is one of those things, just don't do this shit. don't do it.
+
+[00:58:32] Brian: Well, that was the, I did, I did a podcast with Joy Robbins who, is the, chief advertising officer at, the New York Times. And Joy was saying how they, they don't monetize the video like purposely, like, they're just like, they have the demand and they're like, we have to build a habit because we know that we, we have to change modality that people are coming to our app to read, news articles 
+
+and Yeah.
+
+And your business models for most of these companies do not afford you. Or you know, you just don't, you feel like you can't actually take that kinda long-term view. So it's another unique factor of
+
+[00:59:12] Troy: Watching the feed shift from, from text to audio and video on the times is a really interesting, sort of 
+
+[00:59:20] Brian: Yeah, they keep inching. They keep inching. But every time I notice, when I open it and all of a sudden it's like, oh, there's a watch tab. And then all of a sudden the the top story, the screen is taken up with a New York Times reporter who is explaining the story, and they, they, they integrate graphics in a really good way that, look, I think this is another thing when we talk about performers, I think I hear a lot from journalists, who say, well, I didn't get into the profession to do this.
+
+I don't wanna do this. And it was like, well, you gotta adapt. Like any hustler would be like, whatcha are you talking about? This is like,you, the, the market, you know, the market changes, you change. 
+
+[00:59:56] Alex: I mean it, it's kind of. It's kind of sad. Do you guys, uh, have you guys heard of Caron, which is this idea, that evolutionary pattern where unrelated species converge into just becoming a crab? Like every species kind of just wants to end
+
+[01:00:12] Troy: Is that like when you breed, Carson, 
+
+[01:00:14] Brian: thought it was, I thought it was related to Johnny Carson 
+
+[01:00:17] Alex: it's, 
+
+[01:00:17] Brian: becomes like a talk
+
+[01:00:19] Alex: well, no, but I think, I think there's a similar thing. Well, just like the crab is apparently the perfect shape and everything just wants to become a crab. but I think there's a, the sad thing that happens on the internet that everything just wants to become a short media feed. Like everything's just becoming TikTok.
+
+At the end of the day, everything just needs to become TikTok because I think TikTok figured out the best brain hijacking fucking, you know, engagement capturing format ever. You know, the fact that the New York Times
+
+[01:00:47] Troy: It's what we hear at people versus algorithms. Alex called the singularity.
+
+[01:00:52] Alex: Well, I call it the crab thing. I'll call it Carson. 
+
+It. 
+
+[01:00:56] Brian: Carson. 
+
+[01:00:57] Alex: Yeah. You've all learned
+
+[01:00:58] Brian: Should we leave it there? Do do we have anything else that we need to discuss
+
+[01:01:02] Alex: I'm also thankful for everyone and, and, and, and, you know, I'm thankful for being in America and this has also become my favorite holiday. It's amazing. Just, friends, family, and no gifts, no surprise. I mean, black Friday is gonna come in and just drop like a fucking bomb.
+
+[01:01:17] Brian: I miss the bl You know I miss the Black Friday. The doorbusters. I miss all of 
+
+the, you 
+
+know the, the riots over? Yeah. No, that was Europeans. Love that. 
+
+That was like a big gift to Europeans. 'cause they were in their, they had no energy and they were in these tiny little apartments and they were like, look at these Americans punching each other for the, the, the
+
+flat 
+
+screen TVs 
+
+[01:01:38] Alex: we're, 
+
+[01:01:39] Brian: their massive 
+
+[01:01:40] Alex: having,
+
+we're having, you know, like afternoon coffees and sex. 
+
+[01:01:46] Brian: Perfect. 
+
+Note 
+
+to 
+
+end.
+
+[01:01:50] Troy: Europe? Yeah. 
+
+they do the same thing at the holiday in Alex.
+
+[01:01:56] Alex: They have little signs over it with 
+
+[01:01:58] Troy: Yeah. Enjoy this coffee with a little sex
+
+
+[01:02:02] Outro
+---
+
+[01:02:02] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:02:36] Brian: All right. Excellent podcast guys.
+
+[01:02:38] Troy: all. 
+
+
+
+
+

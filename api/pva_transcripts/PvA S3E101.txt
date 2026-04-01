@@ -1,0 +1,785 @@
+PvA S3E101
+===
+
+​
+
+[00:00:00] Troy Young: Was politics always this sort of closely aligned to people's, like to these sort of cultural segments and it's a big part of our daily, like, you know, discussion and identity system? Is this
+
+[00:00:16] Brian Morrissey: It was separate. It was something. Remember, it used to be that like people didn't pay enough attention to politics. It's like, be careful what you wish for. Maybe we'll get to you later because sometimes when you get it. It's not what you want. And, you know, for years it was people don't pay enough attention to politics.
+
+They're not, engaged enough. Now it's like, whoa, whoa, whoa, wait a sec. We don't want you that engaged in this, this politics. 
+
+[00:00:40] Troy Young: it feels more like sports now.
+
+[00:00:42] Brian Morrissey: Yeah, no, it's, that's what, it became like popular, popular culture. 
+
+[00:00:46] Troy Young: It's kind of like the NFL in that we have our teams, but it's also bigger than an American sport. It's a global sport,
+
+[00:00:53] Brian Morrissey: yeah, maybe it's like World Cup.
+
+[00:00:54] Troy Young: yeah. I don't
+
+Happens every four years.
+
+[00:00:57] Brian Morrissey: Eurovision.
+
+
+[00:00:58] Intro
+---
+
+[00:00:58] Brian Morrissey: ​
+
+first of all, Alex is not here. This is my fault because we changed the days and then I complained and then, and then it became
+
+[00:01:28] Troy Young: I don't like when you have your fits, when you get really angry
+
+[00:01:31] Brian Morrissey: whatever.
+
+It's not angry. I'm not angry.
+
+[00:01:34] Troy Young: No, but your executive functioning problems translate into just like kind of projection of your
+
+[00:01:39] Brian Morrissey: That is true. Anyone podcast who has ever sent me an email and not gotten a reply, do not take it personally. This is my executive functioning, malfunction. So,
+
+[00:01:49] Troy Young: Like, I'm ter I'm brutal. I'm the I'm I think I'm more, inept than you are,
+
+[00:01:53] Brian Morrissey: Oh, thank you.
+
+[00:01:54] Troy Young: But I I I maybe try to bring less righteousness to it when I fuck
+
+[00:01:58] Brian Morrissey: Oh, stop. That's not true.
+
+[00:02:01] Troy Young: we had a bad week on the PVA text threads. Yeah,
+
+[00:02:04] Brian Morrissey: That's why we have to make it like our premium product. I'm talking to these people from subtext about, about doing, this texting feature that
+
+[00:02:13] Troy Young: they're doing it at Puck, right? Yeah, Lauren I saw Lauren's over in Milan
+
+[00:02:17] Brian Morrissey: landed in Milan. I don't know if that's the, I mean, I, I talk with, with some people at Puck and, and,they think it's like good for like events.
+
+I don't know if people really want to get like a text message
+
+[00:02:29] Troy Young: Well, I think it's good for what's really important with human media now, which is connection and intimacy. So if you feel like you're part of the insider group and you feel like you're the first to know, and you feel like you have access and you feel like you know the person you'll pay,
+
+[00:02:46] Brian Morrissey: Yeah, but it's 
+
+[00:02:46] Troy Young: it's really important.
+
+[00:02:48] Brian Morrissey: it's not interactive, which is a necessity because, for
+
+[00:02:52] Troy Young: Well, it is interactive. I sent her a note on the thread. She sent
+
+[00:02:55] Brian Morrissey: Okay, you get it back. But you're just seeing like one way things. And I think. One of the big problems with those, digital community platforms is they almost, they never work. it all becomes, your condo board's WhatsApp group.
+
+It just becomes, a couple of people who are just, have a lot of time on their hands and a lot of issues that they want to discuss. And they want to,take photos of some, photos of someone who didn't, break down their cardboard or
+
+[00:03:20] Troy Young: at Hearst was telling me, you know, they've been playing around with the, that Oprah was a really successful magazine for many, many years. One of the most successful in the portfolio. And then she sort of decided that, while I was there, that she didn't want to continue with the print magazine anymore.
+
+Just like she, I think, decided it may be a good time to get out of television. And then Oprah Daily emerged, which is sort of a more kind of intimate digital subscription thing. and they just launched with a company called Circle, I believe, a community solution that ties together the, a group of subscribers with like, Direct mishaps from Oprah, and it's like, sort of like a slack for
+
+[00:04:06] Brian Morrissey: Yeah,
+
+[00:04:07] Troy Young: And, and then, courses on, menopause and weight loss and stuff like that.
+
+[00:04:13] Brian Morrissey: Maybe, I don't know. I, I've, I've, I've checked out Circle. They're, they were a sort of pandemic company and it's really hard to get people to adopt a new platform. And that's why people end up using like Slack because everyone, unfortunately, at least in my view, has to spend all this time in Slack and getting someone to do, to log into another platform.
+
+it's just really difficult. Anyway, I always find these community models very difficult to pull off, much like, as we'll discuss later, content to commerce is It sounds great in theory, but then, in reality, it's like the history just says it's like almost impossible to pull off. but I want to start by talking about this Google antitrust, trial.
+
+We don't, we are not the people to talk about,pre bid and, and header bidding and, and all of the rest. To me, what's most, most interesting is this narrative shift. And Google is fighting a, basically a two front war, In one theater. It has the more serious, I think, antitrust case when it comes to its search dominance.
+
+And then there's a smaller theater that is around, it's smaller for Google because it's only a 31 billion business. It's dominance of, of ad tech. Again, good problems to have. I mean, it's good, it's good to be dominant, I guess. But,Google was trying to avoid this going to trial for a while, and it was obvious why they were trying to.
+
+It's going, it is, it is unleashing a bunch of embarrassing details that, make clear that it was responding to the incentives of any quote unquote monopolist. It's not for me to decide if they're a monopolist, I know that, they basically control this, this sector. And, They, push that to the limit and they took actions that were absolutely against the interests of their advertisers and publishers and the overall ad tech ecosystem.
+
+And that's just what companies do. I don't think despite my self righteousness. I don't think it's a morality play. I don't think it ever is. It's just incentives and, I think we had to look at, it, it, there is a good chance that Google, this is not like search, they can, they can get rid of, of, of GAM, and they can get out of the ad tech business, they can spin off what, what they built around DoubleClick, and it's not, it's not as messy as it is with search or with Chrome and Android, and I think the big legacy of this, I, I was just writing a piece, and I'll be publishing after this,about how it reminds me a little bit of the Microsoft, trial in the 1990s and particularly that Bill Gates deposition where Gates really turned from this nerd king into he was, he was evasive, he was, he was like, overly aggressive, and he just came off really poorly.
+
+Now this is, that was in a person, but I think Google is coming off. And look, there's more to this trial going and it's, it's, it's really just a B2B story, but Google is coming off really
+
+[00:07:09] Troy Young: He He was sitting behind me at the US Open.
+
+[00:07:12] Brian Morrissey: Bill Gates?
+
+[00:07:13] Troy Young: Yeah,
+
+[00:07:15] Brian Morrissey: Interesting. 
+
+[00:07:16] Troy Young: yeah, 
+
+[00:07:16] Brian Morrissey: shouldn't he be in a box? Were you in a box?
+
+[00:07:19] Troy Young: no, I was right down by the,
+
+[00:07:21] Brian Morrissey: He like sits with the people?
+
+[00:07:22] Troy Young: He was sitting right, this is probably the first and only time I'll ever have better seats than Bill Gates. But he was,
+
+[00:07:28] Brian Morrissey: That's like shocking.
+
+[00:07:29] Troy Young: But when I exited, 
+
+[00:07:30] Brian Morrissey: a
+
+CMO is 
+
+[00:07:31] Troy Young: up, I brushed up against 
+
+[00:07:33] Brian Morrissey: box. 
+
+[00:07:34] Troy Young: Well, the guy, I was with someone, a media executive, and he's like, that's Bill Gates. And, like, he was literally, like, two feet from us. And he was like, what should we say? It's kind of cool. Looks
+
+[00:07:46] Brian Morrissey: for Windows.
+
+[00:07:47] Troy Young: He's older, 
+
+[00:07:47] Brian Morrissey: well, yeah, I mean, he's been through a lot in the last several years. so I think what is going to be really interesting that, that comes out of this, first of all, is whether they end up splitting it off. I mean, I think everything is lining up with, either a voluntary or involuntary split off.
+
+They, they even offered to the European
+
+[00:08:05] Troy Young: so much more than this, though. Really, are we going to nerd out on, like Like, here's the thing, Brian. All of ad tech is a parasitic business. And anybody that's worked in publishing has had to live with this reality, which is this like, yeah, we're going to put this tech on your side, or we'll manage this aspect of the stack for you.
+
+And we'll only take somewhere between five and 10 and 15 or whatever percent of the ad revenue that comes in. Or God forbid, the thing that really, that I struggled with from the earliest years is wait, I'm going to give up essentially, which it would never do in old media, give up the rights to sell my inventory to a third party.
+
+Right. Like in the case of an ad network, they're representing you early ad networks would go out with a long list of logos and say, here's our inventory that we have look, and what they would be doing is they would put up like premium inventory logos at the top. And then they would fulfill it all with Meebo or something like that, like bulk
+
+[00:09:04] Brian Morrissey: chaining, I think it was right. Like they would
+
+[00:09:06] Troy Young: No, but, but it was all those. Community sites that, you know, had all the page views that had, no content costs and all of that anyways, it was always a racket. And it always struck me that the idea of giving up rights to my inventory to a third party was just long term dangerous. And in fact, that's what it became is because you.
+
+became highly reliant. It's always a crack pipe, right? You just become reliant on a third party revenue line. In this case, every publisher in the world has indirect as a very important revenue line, and half of it literally is being eaten by the bottom feeders in the industry, right? And Google is the king of that. And so it was incremental revenue. You've typically had no sales costs on it. So you were really thankful that it was there. And the other big issue. Is that despite literally 20 years of innovation, the sort of banner, banner, industrial complex. It's kind of shitty. Meaning we never, only the wall gardens got ad product, right.
+
+From the perspective of, scalable, long tail performance space, data targeted, auction oriented, platform, no publisher can invest at that level with that sophistication of technology. And so, basically. Now what we have is, yeah, there's some nice premium banners that make a lot of sense on premium sites that have brand value.
+
+But I would say that Those are under tremendous pressure as more and more traffic moves to a new type of aggregator, which I think we should discuss later because I have some thoughts on AI is the new aggregator and what you do as a publisher and what the consequences are when you think about the new website.
+
+I would really like to talk about that. But yeah, was Google like, Taking more than they should have did publishers pay too much. Is it a monopoly? Absolutely, you know when you look at it, would you rather have google than a bunch of liketaboolas and like criteos and all, addicts, like all of the other, people that are in the, the industry picking away at you.
+
+I think it's actually the lesser of two evils, ironically.
+
+[00:11:25] Brian Morrissey: that's the part I find interesting. Just to go back to the, the original concept is be careful what you wish for, publishers have always complained about Google, right? I mean, it might be on background to me or over cocktails or whatever. Like they're, they've always complained about, but Google for the most part.
+
+And it's changed over the years a little bit, but it's been a benevolent dictator to some degree. I mean, dictators generally do not become benevolent, but there was a, there was some kind of symbiosis of the fact that they controlled the distribution and then, yeah, they were going to take a piece like on the other side.
+
+They're sending you this traffic. Well, they're not, this is not Mother Teresa's orphanage here. I mean, this is, you know, they're going to then take a cut because you're going to use their ad tech and you can, you know, Yeah. It, it, it's more like a Nordic country where there was like a steady supply of oil paying for Medicare. And, at least there wasn't, kind of wars among the different factions.
+
+That's true. By the way, did you know that like Nigeria, what they use their oil revenue for is not like for some sovereign wealth fund or, to pay for, to invest in like human capital, but they got trapped in this thing of then offering basically almost like free fuel to like their citizens.
+
+So, they're just, they're, they're caught in this, but they can't, cut it off because, you knowPeople don't like when you take things away, but that's, that's a side story. So let's actually move on then, because I thought that was a very nice, concise, point. to this new interface. I didn't, I didn't totally understand what you meant when,when you put that in the notes, so this is a good time to explain it, so I have no setup to it.
+
+You mentioned newsletters as one. I'm like, oh my God, haven't we discussed this before? What is the new
+
+[00:13:00] Troy Young: Well, so sort of stumbled on this and then kind of started to pull back the layers of it. And I think there's a, there's a, in my, in my mind, I'm developing a kind of a new concept for how I think about the relationship between the front end of a digital property. That's the homepage. potentially like section aggregation, right?
+
+Which is typically a section page on any site and the end point, which is an article page, right? So the prevailing kind of the thing that we all said to one another when Google took over distribution for most publishers is Every page is a homepage, right? So that, you, you didn't really have a homepage anymore.
+
+It was probably sub 20, 10 percent of your traffic. People weren't coming to your front door. We trained consumers not to type in URLs. They either went to Google or got snippets of news syndicated inside of social environments. And then those platforms became increasingly powerful and creators just ended up kind of moving directly to those platforms as a, creation distribution mechanism for content.
+
+And I was going through an exercise with a group of folks looking at a new homepage. And what I thought was a kind of an unfortunate project where we're redesigning our homepage and section pages. It's going to take six months. Here's our objectives in terms of representing the brand as a metric, whatever that means on the homepage.
+
+And basically. We're re imagining it. Just think of it as a whole bunch of blocks of content, right? Image, headline deck, you know, arranged by topic or frequency or top performing or whatever people do on high velocity web pages, right? Home pages. And I had looked at what, what Matt Sanchez had done at Yahoo in creating a sort of aggregation layer.
+
+where A. I. In the section pages like culture or like celebrity on Yahoo had kind of bubbled up a paragraph of content, and then I was thinking about two other things. Just bear with me here. One was how we're training a new generation to get it content. And, and I've got to believe, and every generation that uses tools of the internet as their predominant interface points gets retrained.
+
+And so, what did Instagram and Facebook teach us? They taught us that the feed was how you delivered content to people, like thumb, thumb, thumb, mobile phone, feed, feed, feed, right? And now what we're doing more of, I think, is asking a question and getting text back. And that's chat GPT. And so in that text, when I say, tell me more about, the new book from, Hurrar, anyway, and it'll go out and it'll deliver a response back to you. Right. And, so I was thinking, and then I was thinking about we hated websites so much that we started delivering content and relying on newsletters.
+
+Right. and I, and I think of the newsletters that I like most from major media brands and their summaries of what's they've, what they're, what they've written in the past X period of time, right? Like a summary of all the stuff you
+
+[00:16:17] Brian Morrissey: They're solving the problem that they've created, right? Like they're, they're, they're writing all kinds of things that are too long. I mean, this is the Axios conceit, right? It's like every single 750 word story should be 250 words.
+
+[00:16:31] Troy Young: did it through email. Morning Brew did it through email. All the major media brands started doing daily, you know,
+
+[00:16:37] Brian Morrissey: Yeah. Classic hack though.
+
+[00:16:39] Troy Young: Right, right. But so, why? well, ads didn't overwhelm the page. It forced a economy on the people that sent that content out. It came to me in my mailbox.
+
+and, it sort of respected my time and it was timely. And I was like, well, that's a major new media format, broadly. And I was like, the interface layer on a new homepage is going to be dramatically changed by AI. Now, this is a theme we've. we've touched on in the past on this podcast and that if really what you want is the key metric, I think if you're redesigning,like a homepage as an example is, can you actually get people to come back more frequently?
+
+Whatever your, your frequency metric is. Right. And, maybe there's some other stuff, around, getting people into pages. Cause you still need page use. Cause you still have to make money because in media, you always have to have a foot in the past, foot in the future, if you don't start disrupting yourself to me, you're, you're kind of fucked.
+
+And so I was thinking that. In fact, the mental model for the new homepage is much more like the newsletter and heavily informed by the way we are going to consume content through a chatbot. So, if I arrived at a homepage and the first blurb was like a paragraph that said, Here's what you need to know right now.
+
+And it was auto generated, right? And then, yeah, there could be links, there could be utility, there could be community that were all intelligently connected to that. That would, and by the way, if you have a piece of data on me, like, for example, I'm on the board of a, Of a soccer company, a football, it's called football code.
+
+if you know, my home team and that blurb of content is customized through that lens, even better. And if you know, three other, you know, my secondary team, or, you know, where I'm traveling or, you know, where I live, you know, you can, or who my favorite players are, you can, you could start to customize it.
+
+But the interface layer is going to take the corpus of content from that media brand and potentially from. providers that are tangential to it. They're going to summarize it up as the first connection point to a bunch of content. And then closely related to that, I was thinking, why do we, why is the article page the way it is?
+
+And what I mean by that is, a third of the page is literally the headline. depending on how big the font is, right? You got the big headline that we've been trained to read. And then there's a deck and then there's a byline. And then increasingly because of Business Insider and because of Axios, we now have summary bullets.
+
+And then we have this story that just feels like the waste from the carcass. And, and it just strikes me that. If the article page was intelligent and far more like the response I get from ai, I have a better shot at creating what, what I really want as a publisher, which is gonna be really hard for the next generation, is finding a little bit of intimacy, a unique moment, a unique connection that I can create with a reader.
+
+if we don't do that, if we rely on. The thing I described at the beginning, which is a bunch of boxes on a homepage. It's really slow. That's really a place to host ads to take you into these dumb, article pages. Like that contrasted with the aggregator and the aggregator is chat GPT. Right.
+
+And so if we want someone to interact directly, listen, you're going to put toll booths up around the, the, the, the aggregator and companies like toll bid are going to say, listen, if your content floats into the aggregator, you're going to get paid and stuff. But let's be honest, that's great. Incremental revenue.
+
+That's not going to pay all your bills. And if you don't find a way to create. Intimacy in this kind of new AI world by using technology intelligently to create better interface to information for consumers. You may as well not even publish to your own website, in my opinion.
+
+[00:20:40] Brian Morrissey: Yeah. Well, 
+
+[00:20:41] Troy Young: And so that's that's, the model, right?
+
+I kind of sketched it out. And, and I want to add one thing before, before I end my little diatribe here. And one is that, a new aggregators like perplexity now Forbes went after perplexity for sucking up their content and basically regurgitating it without changing it.
+
+That should be stopped. And that's something we need to be very, very careful about. But one thing I've been really curious about is perplexity is pumping out content.to multiple channels and multiple content types with automation. you 
+
+[00:21:18] Brian Morrissey: have you listened to their 
+
+podcasts? Yeah. 
+
+[00:21:19] Troy Young: I listen to it all the time because I'm really curious about it.
+
+And it's called discover daily. It's read by a male and female. I think the male robots called Winston and the fit, the female one's called like Heidi or something. And so of course, British accent. And so there's two, there's a male and female robot. News reader. The news itself is aggregated by AI or created by ai.
+
+And by the way, it's not a terrible product. I'm not listening to it 'cause I want to hear like the a, you know, the all in guys. Be cute with each other or, or me and you like trade jabs and me make fun of Alex or whatever. But I'm listening to it because it's kind of straight to the vein information and it's wellmade.
+
+[00:22:03] Brian Morrissey: Well that's, okay, a couple things on that. One is, okay, it was very, it was very well done. one is, Is text the, the, you know, the mode, right? cause what you're talking about, it's going to be a mode sometimes, but I think a lot of, I think a lot of times text is not going to be the answer. And, and audio is a really good, that's why I find audio a really good product because, when you think about, I don't think anyone.
+
+I always says nobody gets up and says, you know, yesterday was a good day, but I wish I spent more time looking at my phone. It's like the same as, like, getting off a flight and being like, it was a good trip. But I wish I wish I had more to drink during the flight. nobody does that. You just think it's not good.
+
+So people are going there is going to 
+
+[00:22:47] Troy Young: I don't mind having, I don't mind a cocktail or two on the plane.
+
+[00:22:51] Brian Morrissey: Okay, it's different. you're super dehydrated up there. Get get the, get the Bloody Mary mix. Maybe like Anthony Bourdain. Get the Bloody Mary mix, without the, 
+
+[00:23:00] Troy Young: but finish your point though,
+
+[00:23:02] Brian Morrissey: So my point is that, for a lot of, a lot of needs, text is not the answer.
+
+And I think this is, this is a challenge for a lot of publishers in that what they're good at, right, what they've become very good at, is a shrinking market. And they need to find ways to respond to changing consumer habits. And I think the big change of AI is going to be changing a lot of consumer expectations.
+
+I believe it's happening. And when you look at an article page and, I always ask this at the, at the, the dinners that, that we do is, Do you really think that people are going to be hitting back buttons in five years on your web page? It's just really difficult for me to believe that. And I can't believe that, that the mix is going to be so text heavy.
+
+Because a lot of times, you want, you want just the answer, and audio is fine. video is, is, is good, for obviously for entertainment and for getting people deeper, deeper engagement. But,I think there's too much text, to be honest with you. And the other thing I would just say is, I think about it as like a choose your own adventure thing.
+
+And so you're going to have to like segment your audience. Like I wrote last week about about how audience segmentation is like the new surface area. And that like, in a more with less here, everyone's going to have smaller audiences than they had before, or at least appeared to have. with those massive com score numbers, those are gone, it's not coming back, right?
+
+And so how do you create that, that surface area? Well, you, you get really smart about segmenting your audience. I mean, because then you can actually make more money off of those segments, but you can also provide a differentiated experience to those segments. And that's, again, why I think texting is really interesting in the text world, is because you should be able to.
+
+[00:24:58] Troy Young: Have different segments, get different types of content based on what you know about them. I mean, we've been talking about personalization forever in this industry and it's not really, it hasn't really come to fruition. I don't see it like on sites. Maybe, maybe ESPN gives me like, Well, but it's kind of funny. I have so many things to, to react to that. One is what people thought of was, of personalization was usually hamstrung by a lack of supply of content, right? So a publisher wanted a personalized experience, but they actually didn't have the goods. Like we did personalize.
+
+TikTok is highly personalized. The algorithm personalizes it because there's an immense corpus of content from which to
+
+personalize. ChatGPT is the knowledge of the world personalized to your question. Right. So it's massively personalized, but the idea that I got a signal from you, Brian, and I'm on the New York times, and suddenly I'm going to massively modify the feed because, I know something magical about you.
+
+Actually, it doesn't matter. You know, it's interesting. What is, I had one other thought I wanted to just share on the Google thing because you made me think of it is it really is yesterday's war. I used to marvel at how that industry, despite the fact that it's like a bunch of, like it is a bit of a, a, a parasitic industry that we could instantly.
+
+calculate the value of a person, auction them off to a buyer and deliver an ad in the moment within a millisecond to a person at the other end of a, of a connection. And I always thought that was like a huge achievement. Like the whole. if the complete middleware of, of ad tech created a way to auction off into attention in a really systematic way.
+
+But what happens with all of these monopoly things, by the time the government steps in is the game has changed. So like cracking down on the banner economy that Google dominates, like who really gives a fuck? meanwhile. Retail media, mostly controlled by,corporations that have their own platforms outside of Google, Amazon, Meta, Google, in a different way through search.
+
+and then, then all of the people that participate in, in, in the retail media space, have taken like 20 percent of the market in the last three years. retail media is what publishers should be worried about
+
+[00:27:31] Brian Morrissey: Oh, for sure. I mean, that
+
+[00:27:33] Troy Young: than anything else.
+
+[00:27:34] Brian Morrissey: that money is not just from, co op budgets. It's not just from shelf takers and all the rest of that stuff. I mean, it is. It is
+
+[00:27:43] Troy Young: It's no content cost. It's all data, leverage.
+
+[00:27:48] Brian Morrissey: and these businesses have terrible margins. And so this is just straight, pure margin straight to the vein. Let's say.
+
+[00:27:55] Troy Young: yeah. 
+
+[00:27:56] Brian Morrissey: So, yeah, that is that's a great point. I do 
+
+[00:27:59] Troy Young: So this, this whole, this whole thing is a big charade. And it's a waste of government money. And it, you know, it's just, it's a waste. Just let
+
+[00:28:06] Brian Morrissey: You think it's a waste.
+
+[00:28:08] Troy Young: I mean, other than a big corporate smackdown, slapdown, smackdown, whatever, yes. It's a waste of money.
+
+[00:28:14] Brian Morrissey: I mean, it'll, I don't know if it's a waste though. I mean, just like the case against Microsoft, really, 
+
+[00:28:22] Troy Young: Here's where you and I differ on this shit, Brian.
+
+[00:28:25] Brian Morrissey: rise of Google happened at that time. It tied up Microsoft.
+
+[00:28:30] Troy Young: yeah, so that somebody else could create a browser and somebody else could create a better phone and someone, yeah. And then Microsoft went on to dominate a different office segment, but I get it. and, and, and all. We got the iPhone. it's sort of like you saying, yay, come Kamala is going to give small business some kind of like incentive or tax incentive, or it's like, great.
+
+We're going to subsidize the creation of.new homes, you know, what's going to happen? We're going to create another bureaucratic layer. We're going to create a new department. There's going to be all of these companies that, that, that, that siphon money from the government and build crappy places that are not tuned to real market dynamics.
+
+And no, one's going to be better off for it.
+
+[00:29:16] Brian Morrissey: Well, I, okay, I need to defend myself a little bit here, because I,
+
+[00:29:20] Troy Young: you want to get a, you want to get some kind of like, small business loan from the government. Go
+
+[00:29:25] Brian Morrissey: I don't want a small business loan for the government. I will take, I will take,preferential tax treatment. I don't think I should pay taxes for a few years, but that's, that's me. no, I think that, again, to go back to be careful what you wish for,this, whether it's a declining segment of the market or not, I don't know if like what, What comes out of this, this case is necessarily quote unquote better because like you said, like the forces, the structural forces of the market are just making this Part of it less important, right?
+
+There's just so many different ways and more effective ways, frankly, that advertisers can reach consumers than this entire convoluted, very impressive, the idea of doing this millisecond targeting and very impressive. The end results are less impressive than the actual process, mind you. I think as any consumer would attest to, but, Yeah, I mean, it's a decline.
+
+I think you have to be careful what you wish for at the end of the day because it could end up in a worse situation, right? I mean, everyone complained about ad tech with all the logos on Terry's slide. Well, Google was just the logo at the end of the day. 
+
+[00:30:37] Troy Young: put what you hear through a filter. Terry Kowalcza, Luma, whatever you, you think of Terry. is obviously cheering for disruption in the market because, you know, that will mean people have to sell
+
+[00:30:52] Brian Morrissey: He wants consolidation because he 
+
+[00:30:54] Troy Young: he wants the market to reshuffle because that's how he makes money.
+
+Let's be clear.
+
+[00:31:00] Brian Morrissey: I'm not naive. I'm many things. Well, maybe I'm a little naive, but I don't think so. By the way, I just wanted to add this, a little ad tech drama. and I can't believe if I was an editor, still I would, I would be assigning the story. There's, there's no stories about what's going on at open web.
+
+So they, they came out with, you know, they have this commenting technology and they raised a ton of money. I never really understood. They've raised a ton of money, but they, the, the chairman of the board came out and said, Oh, thank you for your service. We've got a new CEO, the chairman of the board. And then next thing you know, Nadav's on, On LinkedIn saying I've not stepped down as open web CEO. And so they have a situation. He's the founder of the company where the board says there's a new CEO and the founder who's the CEO is like, no, I'm still CEO.
+
+that's got, please someone, please someone report this out. that's a, that's a fascinating story. I don't know if you have any thoughts on it.
+
+[00:31:59] Troy Young: I'll try to be brief. I know a little bit about it.
+
+yes. So Nadav is an impressive dog
+
+[00:32:08] Brian Morrissey: a special forces guy. Isn't he? Or
+
+[00:32:09] Troy Young: He's a mercenary. He's a sniper. He is one of the most relentless people I've ever met. Now the way I met Nadav is, he called me basically every week for six months. When I, hung up on him and told him to fuck off because I didn't want his commenting platform.
+
+And then he wanted to put all kinds of widgets and shit all over the pages to make, to create higher engagement and it was going to do all these great things. And then he wanted to own ad rights on the pages. Which is like the cat classic story of ad tech. I'm just going to put a little snippet of
+
+[00:32:46] Brian Morrissey: One line of JavaScript, script.
+
+[00:32:49] Troy Young: then I want ad rights. So he had an okay platform. I needed a solution for identity and for commenting. I didn't want any of the other junk and I wanted to pay for it on a SaaS basis. I negotiated hard. We got a good deal. And it's been a fine relationship. And. Nadav did that in several places, found that being, a kind of commenting arms supplier to the publishing industry wasn't terrific, bought an SSP, so that they could also supply ads in at the bottom, bottom top.
+
+I don't know where they put their ads. They put them somewhere they bought this French SSP and, and I would talk to, I would go to lunch with him now and again, always an admirer of this energy and his, his kind of drive. And he did a couple things really well. He created a fancy board.
+
+Scott Galloway was on the board and a bunch of other people, I think the name and the packaging of Open Web, they spent a lot on design and they made it feel like they were these sort of advocates for the open web. And that they were far more than like,your kind of standard issue commenting technology.
+
+So there was an aspirational quality to this thing that enabled them to raise a couple hundred million dollars and get a hundred and fifty million dollars, sorry, a 1. 5 billion dollar ish valuation. But you have to go first principles on this stuff. Because when you would talk to Nadov, you never really understood what he was saying.
+
+you know, it's like a commenting platform within SSP, I get that. But then it was like, then you could tell things weren't going great because it would be like, and we're doing CTV, you know, it was always like the next thing, you know, and, 
+
+[00:34:23] Brian Morrissey: media comes
+
+in the
+
+[00:34:25] Troy Young: yeah, or retail media. Yeah. CTV or retail media.
+
+Totally. And I thought, Oh, this isn't, this isn't great. And I think really what happened is, There's more pressure on the, the, the sort of economy that he lives inside of the investors. They would think it was inside partners that put a lot of the money and said, things aren't going well. And they thought this was the right time to kind of move on.
+
+And what happens when you take that kind of money is the people actually that give you the money, have a lot of power.
+
+[00:34:55] Brian Morrissey: Well, yeah, you can't go founder mode when you own a minority of the company.
+
+[00:35:00] Troy Young: You, when you own a minority, when you've taken secondary, vitally, so congrats, he took some secondary and got a nice place in Williamsburg, but like a couple hundred million dollars is a lot of money. So you can, you can do stuff with that. Anyway, that's the story. That's But there's going to be many, many more of those stories in the ad tech world.
+
+Because it's not, it's a, it's a daunting place right now.
+
+[00:35:21] Brian Morrissey: yeah, no, and there's lots of changes going on, there. part of it scares me cause they're my partners. the other thing is Air Mail is up for sale. It's, it's weird. I feel like Airmail has been around for a long time, but it's only, it's only like three years old. I mean, basically it's Graydon Carter, created a.
+
+A newsletter business with some events attached to it. And it was going to be for basically people who are aspirants to, to the
+
+[00:35:47] Troy Young: It's kind of like Mon, Monocle 2.0 meets Vanity Fair.
+
+[00:35:50] Brian Morrissey: Right. Yeah, but like aspirants, I feel like all of these things are not there. They present themselves as for this, globe trotting elite. But the reality is, there's only so many people in that globe trotting elite.
+
+And so if you're selling like 100 newsletter subscriptions, it's for aspirants. It's not for the people in the actual at on the yachts it's for the people who pine to be on the yachts. I think,
+
+so, you know, look, newsletters are great.
+
+[00:36:15] Troy Young: So what do you want? What? Let's ask you some questions on this. So they raised 32 or 34 million dollars. It's clearly anchored to the largesse of, Carter. when I get my email from, I'm an aspirant and when I get my email from, air mail on the weekend, it's Grayden Carter here.
+
+So it's, you know, they're selling the company 'cause he's. Exiting stage left because he's tired. Because what? and you have a media brand that they, you know, in some ways we're really forward thinking, right? Like they kind of pushed into the email space before others did. They tried to bring the uniqueness and kind of luxury veneer back to a media brand that.
+
+We missed with the generation of BuzzFeeds and scale players. So hats off to them. But now what to get the capital back at a recent, decent return. They got to sell it for sweat 60 million. So it's a 60 million business. I'm sure it doesn't make any money.
+
+[00:37:13] Brian Morrissey: It has 34 employees.
+
+[00:37:15] Troy Young: okay. 
+
+[00:37:16] Brian Morrissey: for an annual subscription.
+
+[00:37:20] Troy Young: yeah,
+
+[00:37:21] Brian Morrissey: Like, those numbers just don't work. I don't understand raising 32 million for what's in essence a newsletter business with a couple of, pop up retail. I don't understand where that money goes. Is it to pay Alessandra Stanley? I don't understand.
+
+I guess I just feel like 
+
+[00:37:38] Troy Young: they're not cheap. They have a lot of high profile writers. This is a, what is it? A 10 million payroll. Something like that. like is it, is it making money, Brian? Do you think they sell a little bit of advertising?
+
+[00:37:50] Brian Morrissey: Hell no. It's just the numbers don't work. I don't understand these, these type of businesses that it's like the, the biggest advantage of building a media business, a publishing business at this time is the unbelievable low costs of doing it. and to then. basically do the same mistakes that were done in a previous generation of raising venture capital.
+
+Media is not a venture business almost
+
+always. 
+
+[00:38:22] Troy Young: but 
+
+[00:38:22] Brian Morrissey: puts you behind the eight ball. I don't get it.
+
+[00:38:24] Troy Young: both sort of emerged from the same genetic pool, both Puck and Airmail, right? There's lots of connections starting with John's connection to Graydon and
+
+TPG TPG was somehow involved in both. I think John advised Airmail for a while. So the question is, is Puck any different? 
+
+[00:38:43] Brian Morrissey: I think so, because it's, it's, it's, it's broader, right? So they, they've focused on, and Puck just turned three. They had a very nice,anniversary party. 
+
+[00:38:53] Troy Young: You're saying, I mean, did you go?
+
+[00:38:56] Brian Morrissey: yeah,
+
+[00:38:57] Troy Young: I didn't get the invite.
+
+[00:38:58] Brian Morrissey: Really? Oh, that's nice.was a step and repeat. I 
+
+[00:39:02] Troy Young: like, they would like, I suspect, to buy your business and make you the, uh, make you the media marketing vertical.
+
+[00:39:09] Brian Morrissey: Uh, No, that's not for me.
+
+they have a different lane than I do. anyway, I think what they've, they've done smart, I think, is tackle real verticals, the power verticals. I get how it all adds up, right? It's not around, curios of, of, of a person, right? I mean, it has, okay, you, you, you focus on, and some verticals are stronger than others, but you focus on the power verticals of media, Of politics, of Silicon Valley, although I don't know if they've fully gone into Silicon Valley and and Hollywood.
+
+Right? And, you've got to find ad markets in in there with the 4 year consideration ads. You have the all the Washington DC money that is not as great as it once was I've noticed but that goes into the Hey, regulate us, but don't regulate us in a way that hurts our business, but it helps our business.
+
+[00:40:04] Troy Young: Yeah, and it's also that sort of unaccountable corporate advertising budget that you have to put somewhere. Yeah.
+
+[00:40:10] Brian Morrissey: and that's great. the subs then also, supplement it. I get. I understand the POC model, I feel like better than I do the Airmail model. Now, whether that, you know, they've raised, they've raised a fair bit of money too. So, they just in talking to them, they want to build a very big business.
+
+I think the question with all of these businesses, how big the businesses can get, because I like to compare and contrast POC and Semaphore because they sort of are in the samesemaphore is going to be two, I think, next month. and Puck just turned three, so it's tidy.
+
+[00:40:44] Troy Young: They both execute pretty well. Actually, I would say my big knock on both of them from a reader perspective is a complete lack of economy in how the, in, in their formats, the puck articles are so long,
+
+[00:40:58] Brian Morrissey: yeah.
+
+[00:40:58] Troy Young: so, so long and so are semaphores. And I, I just, I need more, you know, the
+
+[00:41:04] Brian Morrissey: Wait, you think semaphores are long? 
+
+[00:41:06] Troy Young: they can be, they can be, but pucks are very long.
+
+I like the FT better because there's an economy to their article structure that I appreciate as a reader.
+
+[00:41:15] Brian Morrissey: Yeah, they actually use the, they, they use the constraints of print. I feel like, well, it translates well to digital weirdly enough. Cause like they, they, if you look at like how they handle print at the FT, the front page articles, they don't, there's no jump, which is great. I don't think anyone wants to hunt through it for like a six to understand that
+
+[00:41:35] Troy Young: Yeah, I mean, back to the homepage thing. It's interesting to watch the evolution of my consumption on the, on New York Times that way. To me, the homepage isn't a navigation point, it's a product. 
+
+I read the headline, I read, they put enough deck in there. It's So that you can get the gist of the story. And you'll notice by the way that they're putting, increasingly putting vertical video on their, on their homepage.
+
+[00:41:59] Brian Morrissey: Oh yeah.
+
+[00:42:00] Troy Young: And it, and it's without a long 30 second ad in front of it because they have the subscriber relationship where they can pay for that video in different ways. I really think it's a great product. Just their homepage is a good product.
+
+[00:42:15] Brian Morrissey: Yeah, 
+
+no, for 
+
+[00:42:16] Troy Young: product this week though. Don't worry.
+
+Don't worry. Blisters.
+
+[00:42:19] Brian Morrissey: Yeah, but actually, that's a good point about the newsletter because I mean, a lot of newsletters down if you've noticed, but like the way to shifted from treating the newsletter as a product unto itself. To going back to it as a promotional vehicle or some kind of hybrid of it, right?
+
+You have to optimize the something. And because, again, this is the platform risk. Because everyone likes to act like email is a way to get out of like the control of like platforms. Uh uh. Not the case. Right? Like you're still have a technology company that is the gatekeeper of your emails. All the open rate data is like a mess.
+
+You can't trust it because, because of Apple. Apple just auto opens all these emails. They think it's a privacy violation. I have no idea why it is. we have so many bigger problems in this world. but then now everyone has to have click rates. So they now for it to be visible In the inbox, your incentives are to make sure people click on something.
+
+So then all of a sudden what you're doing again is the best part to me of email was that you can get a piece of information there and then go on with your day rather than clicking on something, going to a web page where someone can likedo something to you, throw an ad in front of you, do an autoplay, get you to take some action.
+
+I don't know. It's another example of that. But one of the things with Semaphore that I find interesting is that as it's developed, it's, it's literally a Quartz do over, you know, like, they just came out with a, I want to talk with Justin about this because I mean, Justin Smith was,one of the founders of Quartz when he was at the Atlantic and Quartz, you know, never, I don't know.
+
+It never lived up to its hype, obviously. I think they did some really interesting things. When you think about, like, when we talk about the homepage, they turn their homepage into a chat experience. And I think like that, they might, they might've been ahead of their time a little bit with, with, with how they were thinking of things.
+
+and as Zach Seward, who was behind a lot of those initiatives is now at the times as they're like AI guru. but they, they have, Semaphore is doing a next 3 billion. conference. when I was like, that sounds very familiar. And that's because like quartz had the next billion conference. So it just always 
+
+[00:44:41] Troy Young: Well, we all just have one,
+
+[00:44:43] Brian Morrissey: I know that's very few, but I always say there's only one bill Belichick who's like creating a different,game plan for each team.
+
+Like most people, they got an offense, they're going to run it.
+
+
+
+[00:44:52] Brian Morrissey: so food 52. Mark Stenberg. Mark, if you're listening. Great piece. A classic, classic. Inside, the mess at X
+
+[00:45:02] Troy Young: And a nice piece, because it was like, there was some optimism in it, right? Like,
+
+[00:45:06] Brian Morrissey: well, they got him on the phone. This is a smart thing. They got 'em on the phone. A lot of times companies like go into like porcupine mode. Right. When a reporter comes, you know, when things haven't been going great. but Erica Bodden, I guess, is now the CEO. She came from, from Barstool, had a great run at Barstool.
+
+Right. and she's the new CEO. She hasn't really been doing a lot of like interviews. I feel like about, about Food 52, she's mostly been doing like the, you know, she's like an 
+
+influencer now. 
+
+[00:45:36] Troy Young: was like the first big one. Eric is a super cool person and
+
+[00:45:39] Brian Morrissey: Yeah, no, I like Erica. She's, she's great. she'd be great on this podcast. But anyway, they brought her in as CEO of food 52 it was a food website that then became a content and commerce play. Right. They started down the affiliate route and then it was like, we're going to make our own products and sell them.
+
+And they, this is the, I consider this the TPG model, right? TPG funded,barstool, TPG as, as properties like meat eater. they're very big into this content to commerce model. they've got that. epic gardening. They had some really interesting, companies that they back and Food 52 is one of them.
+
+So they plowed a bunch of money into Food 52 during the good old days,during the pandemic. But the numbers that Mark got, assuming these are correct, are rough, very rough. basically that Food 52's revenue Went from the combined company when they bought schoolhouse was 120 million in 2021.
+
+They're down to like 28 million like they
+
+[00:46:44] Troy Young: 28 is just the Food 52
+
+[00:46:46] Brian Morrissey: Okay, so then the food 52 business went from 80 million to 28 million.
+
+[00:46:50] Troy Young: I think that's right. Yeah. 
+
+[00:46:52] Brian Morrissey: What? 
+
+[00:46:53] Troy Young: What are the questions? What questions do have 
+
+[00:46:56] Brian Morrissey: how, how you take a bunch of funding. So they, they close around with a TPG in 2021. Look, it was crazy times then. they, they raised 80 million in 2021. They, they had a 300 million valuation. Then they started buying, different brands. They bought a cookware brand. Okay, and a home decor brand that was schoolhouse, right?
+
+So they spent, a bunch of money on buying their own brands. And the idea was they were going to turn these, their audience into customers of these brands. this is yet another example, who dinky, which is another, TPG property that completely hit a wall and is back.
+
+[00:47:38] Troy Young: TCG.
+
+[00:47:40] Brian Morrissey: hit a wall with this, with this approach.
+
+And I don't know, is it time to, to put a fork in, in the dreams of content to commerce?
+
+[00:47:49] Troy Young: Well, I don't know. I have a few remarks on this because I've watched it pretty closely. I know the people I like the people a lot. I think that TCG widely said there needs to be a different model in connecting either content and I or IP critically. And I think there's a difference To, a revenue stream.
+
+And that adver being, entirely reliant on advertising revenue wasn't the kind of assets that they were interested in. They liked food 52 because actually Amanda did an amazing job. Amanda was a New York Times, food person, and, had created a community model at Food 52 where people would submit recipes and, and the early audiences of food 52 were really.
+
+We're really, really connected to the brand, to Amanda and to, to the mission of the company and so they early on and when they were looking for funding had, stepped into commerce selling things like early on this apron and a, and a cutting board items that were unique to them.
+
+And they sold lots of them and they realized there was an opportunity to get into,
+
+So they got more and more into commerce. And I think that some of the challenges were as follows. One is, connection between a recipe, say, and SKUs that you have in your store isn't super effective. So one doesn't always lead to another. the consumption of that content doesn't lead to a transaction intimately.
+
+And, The problem with that is that you start to question why you create the content in the first place, unless it's being paid for by some other means. Then what happens as a company is you get into having to manage two businesses. One is sell media to pay for your content and then build a commerce business on the other side.
+
+We've talked about this before. Complexity plus complexity equals in many cases should show. they hired in a gentleman who was ex Williams Sonoma. to be the CEO, and really push hard into commerce. Just before that, they had bought this great brand schoolhouse and this heritage brand dance. And,those were profitable or at least schoolhouse was and doing fine.
+
+But once they started to kind of go full into commerce, they lost their, their connection, their intimacy with their audience, their homepage became. Like basically an e commerce homepage, they added tons of skews. They, got into the sort of discounting cycle 
+
+[00:50:25] Brian Morrissey: This is the same thing that happened to Houdinki.
+
+[00:50:28] Troy Young: Yeah, except that who dinky struggled because you can't actually sell the watches that people want, like Rolex inside of their model.
+
+So you have to sell all the second tier watches. And then they also bought a marketplace for you stuff. But so there's slightly different issues, but tons of skews. Not enough uniqueness. It started to look like mass retail, except they didn't have the advantages of max retail in that those people were good at it.
+
+Those people were omni channel. Those people had stores everywhere. Those people had, well honed supply chains and, and so. They just lost money and they lost their way. So the media business suffered, the relationship with the customer suffered, and the commerce business didn't make any money outside of Schoolhouse, which was kind of trucking along and doing well.
+
+Now what Erica had done so amazingly well At Barstool is find a way to take what was a real brand, real personalities, real connection to an audience, and actually real difference in the market in terms of how it was positioned and perceived and turn that into like pizza sales, right? Or turn that into merch sales and like, no, but it was a, they sold a lot of stuff 
+
+[00:51:42] Brian Morrissey: Okay. If gambling didn't get legalized, that, that
+
+doesn't, that, that, that business doesn't look like it looked.
+
+And by the way, it didn't convert really well. Look at, look at the massive write down that Penn took. So, I mean, look, all credit for building the business for the exit, but I'm not sure if that model
+
+[00:52:00] Troy Young: The postscript on it was that it, he bought it back for nothing. 
+
+[00:52:04] Brian Morrissey: No, no, great for 
+
+[00:52:05] Troy Young: probably No,
+
+no, no, truth to what you're saying. Like it was a bit
+
+[00:52:09] Brian Morrissey: some gambling book, losing a bunch of money. I don't care about
+
+[00:52:13] Troy Young: Right. So what is Erica doing now? Trying to bring the uniqueness back to the brand, focusing on handmade products, limited runs, cool shit that you can't get anywhere else. and then empowering creators to be part of, they have this amazing office at food 52 down on the water,
+
+[00:52:31] Brian Morrissey: Oh, it's a 
+
+[00:52:32] Troy Young: the Navy yards. It's so beautiful. And they have all these incredible kitchens and stuff. So they're 
+
+going to 
+
+bring a 
+
+[00:52:38] Brian Morrissey: be because it's hard to get to. I mean,
+
+[00:52:41] Troy Young: It is hard to get to, but it's really fabulous. And so they're going to try to. create more IP, embrace like way more voices and kind of find their mojo again and then, and then correct the merchandising strategy.
+
+And I hope she does it
+
+I really liked the people. And I think she's,a really great operator.
+
+[00:53:01] Brian Morrissey: 100 percent agreed. I think as cautionary tales pile up, right, and they all are different in their own ways, but I don't think that this is, This is not the model. I think it was just, overblown. Like, 
+
+[00:53:13] Troy Young: Yeah. Commerce business with low margin, undifferentiated skews, against a partially aligned content model is not a business. Nope. You're not going to make any money.
+
+[00:53:24] Brian Morrissey: Okay. Well, that's a happy note. Should we get to good product? We've
+
+[00:53:29] Troy Young: it. Let's do it. Good product. 
+
+
+[00:53:31] Good Product
+---
+
+​
+
+[00:53:32] Brian Morrissey: I'm really into this thing that you talk about a lot, which is how and I don't understand how the information space works. I don't understand.
+
+[00:53:42] Troy Young: And I haven't understood. I mean, I guess I guess I'm getting a better understanding, but I didn't really appreciate what, say, a person like Trump saw in our information space that we didn't see, and how his combination of shamelessness and,lying and kind of being, creating the kind of thing of the day,Trump to any, a kind of virtue of truth and ended up, building, an army underneath of him and a presidency and, maybe another one.
+
+So, and it to me is, is very much a function of, of how media distribution. and kind of the way information moves has changed. So I'm trying to understand that better. And a few things that I kind of that stood out to me this week. The first is I'm reading, Yuval's new book, on called Nexus. There we go.
+
+Can you see it?which, which is really a historical view on how information. Shapes societies and over, back from, the Romans, the Bible, the Bolsheviks, all the way through, the kind of populist moment we're in now and looking critically at how AI is going to change the, power structures in the world.
+
+And so I think that's really, really fascinating. I'll report back as I, get through more 
+
+[00:55:08] Brian Morrissey: I mean, he goes back to the Stone Age, so this is a broad sweep. 
+
+[00:55:10] Troy Young: he's really, easy writer to read. So I appreciate that. I also like to read, although sometimes his politics irritate me, Ryan Broderick can be quite strident, but spends his waking hours exploring the nooks and crannies of the information
+
+[00:55:27] Brian Morrissey: yeah. Garbage Day. It's a great
+
+[00:55:29] Troy Young: Gar Garbage Day always highlights where Weird shit comes from and now Ryan has a podcast called panic world And like last week's episode was just on the origins of the like cough syrup chicken thing Like where that came from how it spread?
+
+like You know what what it actually meant to the world
+
+[00:55:55] Brian Morrissey: Yeah, no, I appreciate him because he takes first of all, he's incredibly prolific. And as anyone's I'm like, I can't believe he can write this much, just shocking. but also because he takes a very rigorous approach to an area that I think a lot of people just look at as unimportant, but it's, it's Obvious, I'm sure, and Yuval Hariri's book that, you have to like, truly understand it.
+
+I don't think, I don't think many, I don't think many, sort of traditional,thinkers in this area truly do, and particularly in reporters, like it's just not, it's starting to get covered more seriously, but that's where, Taylor Lorenz, I give her a lot of credit. She saw very early on that an area that people were dismissing was incredibly important.
+
+And, and
+
+did she did it She has a new podcast too, and it's not not quite as good. It's called power user. I think on the Vox Network But then you sent an article around from your favorite publication pirate wires which is a kind of Right wing outlet led by what's his name? Michael Solana,
+
+[00:57:00] Troy Young: Mike's Lana, and they had done a pretty interesting interview with Jack from Twitter and Jack Dorsey. and some of the comments he made in there like was his push to get the underlying protocol at Twitter be part of essentially the public domain.
+
+So there was distance between a kind of open source protocol that controlled the core of flow of information and the interface that sat on top of it so that there was always There was essentially a disconnect between Or like, so there was like an accountability split around what actually was put into the world and the interface that sat on top of it, wherein you would have things like algorithms that you could select where Twitter would be a good company because it controlled interface and monetization and algorithm selection, but like the content.
+
+You weren't responsible for because it existed inside of this, public protocol and, and so I, 
+
+[00:58:06] Brian Morrissey: right? I, mean, it's a Dodge. It's like, Oh, look, all these people are saying these horrible things. We don't want to be responsible for it. So let's create some mechanism that we can offload these bad assets.
+
+[00:58:15] Troy Young: True, but think about it. The point he makes, and it's kind of an obvious one, is it's so hard for these platform companies to basically be in charge of what should be disseminated and what should not be, and be at the front lines of the free speech debate. And so, to me, that is an incredibly difficult place to be, in particular as you span states, nation states, and, have different policies all around the world.
+
+This is a really, really difficult
+
+place for 
+
+for private
+
+[00:58:45] Brian Morrissey: I 
+
+[00:58:46] Troy Young: to be.
+
+[00:58:46] Brian Morrissey: I get that. I can remember early on. I think I interviewed David Kirkpatrick, who wrote one of the first biographies of Mark Zuckerberg. And he made the point that in early Facebook, Zuckerberg would always talk about Facebook as utility versus, MySpace. Because he would say, MySpace is about entertainment and all this stuff, but this is utility, right?
+
+And the lawyers, and they finally got lawyers, said, Mark, you've got to stop. You got to stop saying that and that's how platform that's how platform came in because utilities Governments didn't understand this stuff, but utilities they understand because utilities are Even if they're in the private domain, they're highly regulated.
+
+Okay, and That's why we have platforms and not utilities and Yeah, it's like he made the point that it is it's a It's impossible also with a brand advertising model, which is all, which to me has been obvious for a while now. And the fact that Elon Musk is attacking, brands, it's not, it's not a mistake I'm getting all the time on X they're using anybody who uses subs pay us so you don't have to see our ads has zero faith in their advertising business.
+
+I mean, first of all, how insulting is that to your customers, your advertisers? If you're using saying, Hey, get away from them, pay us. You don't have to like hear from them.
+
+[01:00:08] Troy Young: I have less of a problem with that. 
+
+I think the point
+
+[01:00:10] Brian Morrissey: Would you do that at Hearst? Be like, okay. 
+
+[01:00:13] Troy Young: I mean, I think there's a lot of publications where people want an ad light experience as part of the subscription bundle. The point Jack Dorsey makes in the article is that Twitter will never be a good brand environment. And unless it figures out how to be a response play, to build direct response ad platform, they're, they're never going to get anywhere on the outside.
+
+Anyway, that's not what the good product is about. What about the reveal? What is a good product? And this is going to be a little unexpected. we know Steve Ballmer, right? Steve Ballmer, the blustery, kind of semi successful,
+
+[01:00:47] Brian Morrissey: semi successful. He's
+
+one of the richest people in the world.
+
+[01:00:50] Troy Young: 100%. He made a lot of money as CEO. I think there were a lot of criticisms of how he did it and how, they lost a bunch of markets, and could really only, succeeded where kind of the, the direct sales muscle inside of companies,which, Ballmer was the king of.
+
+Right. Like he was the ultimate, B2B salesman. Anyway, it doesn't matter because he's had a moment to reflect and use his wealth, right. To buy a basketball team 
+
+and the Clippers.
+
+and to kind of be a more interesting guy. And I really admire that. And so he uses his money to create something called just the facts.
+
+[01:01:31] Brian Morrissey: No USA facts. I 
+
+[01:01:32] Troy Young: Yeah. Well, I think the show on YouTube is called just the
+
+[01:01:36] Brian Morrissey: Oh, okay. But then the overall organization is USA facts. 
+
+[01:01:40] Troy Young: and I'm like, is this, this is kind of interesting. One gets surfaced to me with the YouTube algorithm and it's on the U. S. federal budget. And it's maybe a six minute video that break, breaks down where revenue comes from and where the money is spent.
+
+And it does it. he narrates it. He does a good job narrating it, and it has lots of infographics and tells the story in an extremely clear way. And I think as a, as a citizen running up to the election, just understanding where the money goes is a, is, is, is your responsibility as a voter.
+
+when you break it down, Brian, there's so little money in the discretionary back. I mean, it's trillions of dollars, but like how much of it is debt service, how much of it is entitlements and Medicare and Social Security and how much of it is military. It's like, unless you like attacking the deep state is one thing.
+
+Right from a political perspective, but actually finding where the money is. So we are going to shrink the size of the American, of the, of the public sphere so that we can align revenues with expenses is really important for citizens to understand. 
+
+[01:02:53] Brian Morrissey: But like, I said, we didn't want to get political, but yes, that's why that's why all the fights right now are over inconsequential idiocy. Like, oh, are we going to tax over time or tips or any of that stuff? Nobody's talking about the, the, the massive parts of the budget. they're just talking about these little teeny
+
+[01:03:13] Troy Young: Well, no one wants to look at the revenue side, right? And the fact that most of it comes from personal taxes, and a very small amount relatively comes from corporate taxes, but that's one thing. But, that's fine, you tax the end of the line. But, unless there's fundamental restructuring in how we manage expense for entitlements, military, and get the debt service down, nothing's gonna change.
+
+And we have politicians out making promises of where they're going to, fund new housing and give Brian Morrissey tax breaks for his small business. But like really understanding the big picture is great. And I, I applaud Steve Ballmer and my good product this
+
+week for making just the 
+
+[01:03:55] Brian Morrissey: I agree, because USA Facts that he started, Poppy McDonald, who used to be, I think she was the president of the Atlantic, maybe she was the publisher of the Atlantic, she's now the president at, USA Facts. I did a, I did a podcast with her a couple years ago about this initiative, and I, leaving aside the specifics of the debt, what they're trying to do, and I think it was a little bit ahead of its time, is create some kind of shared reality in which we can have.
+
+Actual discussions. And, that sounds very basic, but they were like, Okay, how do we get as close to reality as possible? We have to establish common facts. You can have different opinions, you can have different viewpoints on, on what it means to have those facts, but if we don't start from a common set of facts, and so the entire concept of it, I really agree with.
+
+I don't know if it can break through, because I don't necessarily see a massive appetite for that, But it's very, it's absolutely admirable. I think the effort of what they're trying to do, because the only way we can have productive conversations is if we agree on some sense of what of reality.
+
+And that usually comes down to,some, some aspect of data. So that's, that's good.
+
+[01:05:10] Troy Young: Okay, so that's, that's how I got there. That was my good product. I wanted to provide some background for it. But, Brian, I know you have something about suburban restaurants or something.
+
+[01:05:19] Brian Morrissey: I said, mine is fine. Of course you did this to sort of disadvantage me. I mean, mine was a little bit more, lighthearted. I went, I went, back to, the Philadelphia area, suburban Philadelphia. not where I grew up and near where I grew up. it's my mother's 85th birthday. Happy birthday,
+
+mom, if you're listening to all this.so we went out to dinner and I'm always reminded, I haven't lived in the suburbs outside of, Outside of a little period during the pandemic when I fled New York like a coward. but going back there, I'm always amazed. American suburbs are amazing. This country is amazing. It is so, so rich. It's amazing.
+
+That how rich this country is and not I didn't grow up in any sort of super fancy area or anything, but they're just everywhere in the United States. But one of the aspects that I love about suburban America is that you can go to a pretty good Italian restaurant. All of them have a pretty good Italian restaurant.
+
+That's in a strip mall. It's next to a dry cleaners. In, in Pennsylvania, because they have weird liquor laws, they have a BYOB. And my, my approach to all these is, you gotta get the Chicken Parm, because Chicken Parm is the test of an American Italian restaurant. It is a uniquely
+
+[01:06:29] Troy Young: I like the vodka sauce, like the Penne alla
+
+[01:06:32] Brian Morrissey: Pan Am thought, well that's because, okay.
+
+But you're going, you're going to a, what's that, what's that douchey place? Carbonara.
+
+[01:06:41] Troy Young: Theirs is good, it's spicy.
+
+[01:06:43] Brian Morrissey: I don't, that place is, I don't
+
+[01:06:45] Troy Young: No, it's 
+
+bullshit. I, I get it. I 
+
+[01:06:46] Brian Morrissey: I went one time. 
+
+[01:06:48] Troy Young: No, they've took the suburban concept and made it, you know, acceptable for rich
+
+[01:06:52] Brian Morrissey: for like
+
+85. but the chicken parm, do you know how the chicken parm came to be? Cause it didn't come from, from Italy. Basically, Americans, Italian Americans, I guess they came from like Sicily or Southern Italy, where there's a lot of eggplant.
+
+Parm is the dish there. So whatever, my lens on the Parmesan,
+
+[01:07:11] Troy Young: like pizza being invented in Canada, and basketball, you know.
+
+[01:07:14] Brian Morrissey: but no, this is pretty American. Basically they looked at what their German neighbors were doing with schnitzel and they're like, that's pretty good, but wait a second. We know, we know how to level this up and that's how we got chicken parm. So I think
+
+[01:07:28] Troy Young: So was it, was it good?
+
+[01:07:29] Brian Morrissey: All right, so here's, here's, because I
+
+[01:07:32] Troy Young: I mean, what's so good about, where's the good product? The American Suburb, the shitty strip mall Italian restaurant, 
+
+[01:07:38] Brian Morrissey: Parm?
+
+chicken parm is a
+
+[01:07:40] Troy Young: I gotta, I gotta go. Let's wrap it up, cause 
+
+[01:07:42] Brian Morrissey: It's a great 
+
+product, because it's really difficult to do with, it can very easily be rubbery. And, if you don't get the sauce to cheese ratio, I thought you would appreciate this. Troy, this is my experience with good product 90 percent of the time.
+
+[01:07:56] Troy Young: I just don't think Chicken Parm is a particularly good product. I like Eggplant Parm better, but, I 
+
+[01:08:01] Brian Morrissey: Well, that's offensive to America. That's all I'm saying. 
+
+All right. This is 
+
+[01:08:05] Troy Young: Well, it was fun. yeah, . 
+
+[01:08:08] Brian Morrissey: Is he like, is he doing like an Austrian goodbye? 
+
+[01:08:11] Troy Young: I think he's pissed off at you. right. 
+
+[01:08:15] Brian Morrissey: Okay. Appreciate it. Bye. 
+
+[01:08:17] Troy Young: but, but.
+
+
+[01:08:18] Outro
+---
+
+​
+

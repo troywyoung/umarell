@@ -1,0 +1,812 @@
+PvA S4E171
+===
+
+​
+
+
+[00:00:00] Open
+---
+
+[00:00:01] Brian: Do you wanna say something? Troy, what is your opening statement
+
+[00:00:03] Troy: I am feeling anxious. Actually. That would be my opening sentiment,
+
+[00:00:07] Brian: like Chloe Mo?
+
+Well, you know, the anxiety you get when you come back from a, you know, a little vacation you feel like you know, you gotta catch up on a bunch of stuff and meanwhile you make the mistake of reading too much media, and realizing that the world is in a very troubled place.
+
+[00:00:24] Troy: And that's how I feel. 
+
+[00:00:25] Brian: Okay. On that note,
+
+
+[00:00:27] Welcome 
+
+---
+
+​
+
+[00:00:38] Brian: welcome to people versus algorithms. Show about detecting patterns in media, technology, culture. I'm Brian Morrissey. Joined again by Troy Young. Troy, you're back from, where were you? Band Camp. 
+
+[00:00:52] Troy: I was in Jamaica. how was the episode while I was gone? It sounds like it was kind of mediocre,
+
+[00:00:57] Brian: I thought it was very good. I thought it was good.
+
+[00:00:59] Alex: That was great.
+
+[00:01:00] Troy: but you and Alex have nothing to
+
+[00:01:01] Alex: one of our better, better
+
+[00:01:03] Brian: do. We have
+
+[00:01:04] Alex: We do,
+
+[00:01:05] Troy: No. It's like an awkward first date. The two of you.
+
+[00:01:08] Brian: Not at all.
+
+You keep calling me awkward. I'm going to a party
+
+[00:01:12] Alex: I think the,
+
+[00:01:13] Brian: It's gonna be, in my mind 
+
+[00:01:14] Alex: the vibe of the, the vibe of the show is very different without your first character syndrome like butting in. 'cause it gives us a little bit
+
+[00:01:22] Brian: was. There were
+
+[00:01:23] Troy: We should rename the podcast with the two of you. Like the N word.
+
+[00:01:26] Brian: and joined, although he is mid bite. Alex Schleifer, with us from his, his bunker ab keeps. He is, I don't know if he's, easing out. He's, he's not here again. He's, he's is he still working on a deal or he is traveling?
+
+[00:01:40] Troy: I gotta tell you guys.
+
+[00:01:41] Alex: is a banker. He is always working on a deal. Right.
+
+[00:01:43] Brian: Yeah.
+
+[00:01:44] Troy: always, and always filled with anxiety. I, I had the, I made the mistake of, of, I, I was with a group of people and one of them was a banker and he, like he would, he sat at dinner with his AirPods in on a conference call. I mean, that's despicable.
+
+[00:02:01] Alex: Yeah, no, that's like jail time.
+
+[00:02:03] Troy: I told him, leave the table, man. Leave the table. I don't care what you're doing. I, I don't care how important this is. Leave the table. No. He was reviewing slides with a headset in at a nice dinner.
+
+[00:02:17] Brian: That's great. That's great. You either have it or you don't have it. That's the thing. You either got
+
+[00:02:21] Alex: I think you get deported if you do that in France. 
+
+[00:02:25] Brian: That 
+
+[00:02:26] Alex: our
+
+ice kicks in.
+
+[00:02:27] Brian: when our flight was canceled, he went into a full tailspin. He tried at the airport to, to, to charter a private jet to get back for a meeting. 
+
+Really? Did he try to bribe the gated agents? That would be a great move.
+
+[00:02:39] Troy: Well, they were down a flight attendant, and when you're down a flight attendant and you're in Jamaica and you can't get another one, you have to cancel a flight. 
+
+[00:02:46] Alex: Uh, Adderall is a hell of a drug man.
+
+[00:02:49] Brian: Yeah. we have a lot to get to,
+
+[00:02:52] Troy: Don't say that. You can't say that.
+
+[00:02:54] Brian: Okay. We don't have a lot to get to. we're gonna talk about AI anxiety. it was a little bit of an AI super Bowl. We've got new developments that are afoot, and I believe I've been tracking
+
+[00:03:05] Alex: anxious 
+
+[00:03:06] Brian: an anti, an anti ai, lane that is this, that is being established in politics.
+
+we have a bunch of other things. Also, I wanna get into design, the Trump design aesthetic that's coming out of the government. Joe Jia, who I, I assume you know him,
+
+[00:03:23] Alex: Joe. Oh, I know him very well.
+
+Yes, very well. 
+
+[00:03:27] Brian: Okay. You know him very well, so maybe you'll pull some punches. I don't know. But then also Momani, Momani is bringing his, he's in the honeymoon.
+
+I did call this everyone's slobbering, all over Momani. and he's, you know, he's, he's very designed forward. But the meat of the episode I want to get to is, I want you guys to, to help fix the Washington Post. It needs, it needs fix. Fixing first a little. I'm doing this. Thank you for doing this on a new day, both of you, because I'm in London, I haven't been here in a couple years.
+
+[00:03:58] Troy: Another reminder, as I was walking around, Kensington yesterday, that London has not fallen. I wouldn't believe what you see in social media. Seems like a lovely place. I didn't get my phone stolen yesterday. I read that hates London, Brian.
+
+[00:04:15] Brian: Yes, yes, it is. It has become a symbol of, of, of all kinds of different things.
+
+I find it quite quite nice. I, I like London. I don't know 
+
+[00:04:24] Alex: Doesn't hate 
+
+like a lot of stuff. 
+
+[00:04:26] Troy: Well, they hate you. They hate you for sure. And
+
+[00:04:29] Alex: I don't know.
+
+[00:04:30] Troy: they hate London because it's, it's a, it's a, it's a fading. DEI, socialist, European, capital that's lost its former glory. 
+
+[00:04:40] Alex: Have you been to London? And you know where it's, I mean, interesting. So they're,
+
+[00:04:43] Troy: favorite city outside of New York. I love
+
+[00:04:45] Alex: they're fine. And they're finally realizing what a disaster Brexit was. That's great. Everybody comes around to it. 
+
+[00:04:52] Brian: But the different neighborhoods map to like New York City neighborhoods, I find I usually stay in East London. It's a little cooler, a little rougher, et cetera. But, I booked at the last minute and I'm staying over in South Kensington. It's like the Upper West Side, upper East Side Knights Bridge is down around like Madison Avenue.
+
+Herods and, and, and
+
+[00:05:11] Troy: The entire world maps to New York neighborhoods. Brian the Hamptons MAs maps to New York neighborhoods.
+
+[00:05:17] Brian: I did notice there's a new, there's a new hustle, with the wifi at, at pubs. I went to get the wifi at a pub, which is a great product by the way. Pubs, pubs are, are, are great, great communal gathering places. and I had a,
+
+[00:05:31] Troy: for
+
+[00:05:32] Brian: I had a, I paid for the beer. it had a, a multi-question survey. They collected first party data.
+
+They got my age, they got my address, I got my date of birth. Then they dumped me into a book, a pub for Valentine's Day Lead Gen funnel. I thought you would appreciate, I thought of you, Troy. Anyway, tomorrow I'm hosting a media mixer here. It's a little old school, a mixer. got a great group
+
+[00:05:58] Alex: What's the difference between your mixer, a mixer, and your usual events?
+
+[00:06:02] Brian: It's, it's a casual mixers are just, are casual social events. I don't wanna use the word networking. Networking is like webinar. You, you don't, it just don't use it to use euphemisms. We've got a great 
+
+[00:06:14] Alex: Do people hook
+
+[00:06:15] Troy: Isn't, isn't a for hooking. I think that's right, Alex.
+
+[00:06:18] Brian: No, A mixer is not Well, I mean it depends on a business way. I, I
+
+[00:06:23] Alex: I don't know. I mean, you know,
+
+[00:06:25] Troy: Well.
+
+[00:06:25] Brian: I. 
+
+[00:06:25] Alex: you're into ad tech. Yeah, when you're into ad tech, you're, your dating pool's pretty 
+
+small, so I think it's 
+
+[00:06:32] Brian: My part, my partners at, at Beehive, are supporting this. We got people from Conde,
+
+from The Guardian, from the Financial Times News Corp. Immediate. Hello? James Layman, or Lamon from, from Football Co. Is coming. I think you know him,
+
+[00:06:47] Troy: I do know
+
+[00:06:47] Alex: Isn't beehive meant to, sponsor us at some point? I'll 
+
+[00:06:50] Brian: Yes. We're we're working, we're we're working on that.
+
+[00:06:53] Alex: Well, can you talk to them? Apparently they're having a networking event and you can meet them there.
+
+[00:06:57] Brian: it's a collaboration. anyway, it's gonna be, I hope, hopefully maybe I can, see a couple of you there. I know Lara O'Reilly, who is a, a faithful listener, will be there. So I'm looking forward to it,
+
+[00:07:07] Troy: on those kinds of executional issues where they don't hit your p and l immediately. nothing happens
+
+[00:07:13] Brian: who
+
+[00:07:14] Troy: with you. Yeah. The the beehive thing has been hanging around for a long time. I'm ready to go.
+
+[00:07:20] Brian: hit my p and l. 
+
+[00:07:22] Alex: I am even saying yes to advertising.
+
+[00:07:24] Brian: Okay. That's great. That's great. Well 
+
+like, 
+
+[00:07:27] Alex: I'll wear the t-shirt. I'll do, I'll do an ad
+
+[00:07:29] Brian: I'll wet a t-shirt. Okay. Okay. Okay.
+
+[00:07:32] Alex: I'll, I'll wear a t-shirt. I won't wet a t-shirt. I won't wear a wet t-shirt.
+
+[00:07:36] Brian: I was wondering. It was very not European.
+
+[00:07:39] Alex: I mean, if they, it depends. Everybody's got their price. I'm, I'm ready. 
+
+
+[00:07:42] Billionaires Flock to Miami
+---
+
+[00:07:42] Brian: couple of quick notes, before we get into the meat. one is, this was very exciting to me. Mark Zuckerberg is moving to Indian Creek, which is this little private island,right off Surfside, basically in Miami Beach. He joins Sergei Brin is looking in the area. Larry Page is already in Coconut Grove.
+
+They're joining, the other, the rest of the Exodus. so when are you guys, when are you guys coming to
+
+[00:08:08] Troy: Are they gonna put a thumbs up on the sign for the island? 
+
+[00:08:11] Brian: I don't know. But, he spent, he's spending somewhere between 150 and $200 million on, his place there. He's buying it from the, the guy who started Jersey Mike's. It's a lot of subs that guy sold and then he sold it to private equity. And I saw basically their subs, like the amount of actual lunch meat on the subs, as you can imagine, has gotten, pretty poultry.
+
+But he got out and, and then he sold his, his palatial estate in Miami Beach for five x because, all the billionaires wanna avoid taxes. I think they're gonna be back in California within two years.
+
+[00:08:47] Alex: Oh, those fucking guys, I'm so tired of them. I just like fucking hell.
+
+[00:08:51] Brian: Okay. I was scoping neighborhoods for you. So that's a no.
+
+[00:08:54] Alex: really to hang out with that fucking bunch of losers, Jesus Christ.
+
+[00:08:59] Troy: Well, your opinion would change if you were above the, you know, the billion dollar threshold. Alex, you would
+
+[00:09:05] Alex: They pay less taxes than, than pay less taxes than you do, Troy. So just like, I mean, avoiding taxes, once you get past that bracket and, and you have all the instruments at your disposal,
+
+[00:09:15] Troy: Complicated than just avoiding taxes because it has to do with valuations and liquidity and all
+
+[00:09:21] Alex: I know they're plus of things. Yeah, sure. Like live in California. enjoy all the, all the success that you can have here by having access to talent. And the second you made it really big, bail the fuck out for two years and then come back. It's all performative bullshit. I'm, I'm, I'm tired of these guys.
+
+I'm just like, I just, I, I've unsubscribed for a lot of techniques because it's just like that circle jerk of like, these fucking CO is just bouncing around trying to avoid taxes. I'm done
+
+[00:09:47] Troy: You're like a hip Scott Gallo.
+
+[00:09:49] Brian: So
+
+[00:09:49] Alex: to these fucks.
+
+[00:09:50] Troy: You're like Scott Galloway without 
+
+plastic surgery. 
+
+[00:09:53] Alex: No, Scott, Scott Galloway annoys me too. I had, like, I credit from all this stuff, I realized at some point, like somebody like Scout Galloway is either wrong.
+
+Or says something completely obvious, and I don't need to spend time with that. Maybe I'm just like, I, I'm hitting 50 this year. I'm just becoming a disgruntled old man. I'm just joining your ranks, Troy. But, uh, I 
+
+still love 
+
+[00:10:13] Brian: thank, you for leaving me out.
+
+[00:10:14] Troy: Remember that photo I circulated. God, you're 50 now, man. You're just the same age as me, basically. I remember, I thought you were just a boy.
+
+[00:10:23] Alex: basically, I 
+
+[00:10:24] Troy: God, now I love you even more. I love you, Alex. 
+
+[00:10:28] Alex: I love you too, man.
+
+[00:10:30] Brian: did you see the video of the, the new Vogue editor with. Anna Wintour, I gave her first interview, to the Times. It was a video interview with Anna Wintour,
+
+[00:10:39] Alex: It 
+
+popped up this morning. I didn't get to watch it. What? What happened?
+
+[00:10:42] Brian: well, they asked, they asked, Chloe Mal, who's the, the new editor, about what she would do if she had the nineties budgets.
+
+She talked about building a podcast studio and everything and, Anna Wintour of course, just like brushed past the question or she just said, you know, Hey, we still have ample budgets. The interesting part was where was, was when the interviewer asked if, when they last got nervous and she, the, the Chloe said that before the fir before this, that interview, and Anna Wintour just said, I don't get nervous.
+
+it's a new down to earth era in publishing because those budgets are not coming back. 
+
+
+[00:11:16] AI Anxiety
+---
+
+[00:11:16] Brian: alright, let's get into the AI anxiety. Did you guys watch the Super Bowl? Alex did not. I didn't really watch much of it myself, but I did see the commercials. and Super Bowl commercials are very strange in this kind of decentralized culture.
+
+You know, they, they keep going up in price, but I feel like nothing lasts. I mean, these, these always, we would be writing about them in ad week, like weeks later, and I was like, life moved on. but nothing seems to stick. I, I can't believe people are paying $8 million for them. Uh,Coinbase ad was atrocious, but there was AI ads.
+
+Of course, the Claude ad, ran. They, they did tweak it, because they were just simply lying about open ai. We talked about this last week, Alex, IPOT had a survey afterwards and it, it performed terribly. You know, 
+
+[00:11:59] Troy: because, because we, people don't understand the, the, the idea, the discussion.
+
+They just don't know what they're even talking about.
+
+[00:12:05] Brian: Has there been, and I think it highlighted something that we've talked about a lot. There's this massive gap, and I feel it as an ex addict, which I, I, I, I am doing better about. Not great, but I'm doing better. When I open that app, and maybe it's my algorithm, I'm just flooded with this, you have 18 months to accumulate capital because all work is going away.
+
+And this AI accelerationist meme that has taken over the entire place. And then you go out in the regular world and people are like, oh yeah, I sometimes use it instead of Google. I don't, I can't remember this big of a gap. I don't remember it with the internet. Exactly. I mean, some people were using email before others, but I don't remember it being this dark.
+
+[00:12:52] Troy: Mm-hmm.
+
+[00:12:53] Brian: Do you, do you feel this way,
+
+[00:12:55] Troy: Well, I feel, I think that the anxiety is, you know, the, the sort of collision of different perspectives on what ai, how it will, will, will affect us. And you have like kind of political philosophers like Michael Sendel talking about. A technology that will fundamentally change what it means to be human and all of the consequences of sort of consumers versus a civic conception of, of freedom and how, how we participate in the world, the loss of human presence, you know, the disappearance of dignity in work when people that own capital don't, when have, have capital or, or control the machines, don't care about, human agency.
+
+So you have that sort of, you know, where are we going as a society? And then you have the sort of Internet's digital conscience, Tristan Harris talking about the evilness of the platforms. And then you have like, guys, like this week match humor, who's like some, you know, startup dude, engineer guy. And he wrote, 
+
+Something big is happening.
+
+yeah, yeah, yeah. And essentially the essence of, you
+
+[00:14:05] Brian: feel like I've read this before.
+
+[00:14:07] Troy: right. Well, he's writing from a kind of developer's point of view saying that, you know, the model innovations that came with Codex and Anthropics new model have dra dramatically changed the capabilities of models to write, to make things from end to end.
+
+In other words, the AI can now build itself that were, we're entering a period of, of acceleration that you can, you know, instruct, like they're so good. You can go from, you know, kind of schematics, design, coding, QA deployment and, that systems can now self create. And, you know, everything we told blue collar workers to become an IT guy, or we told, you know, humanities students to go get to learn about coding is all irrelevant now.
+
+And the amount that that displacement will spread from, you know, technology workers to lawyers, to consultants, to financial people, to medical people, and on and on. But it'll come first. You know, obviously in the place where we make the machines now the machines can make themselves and that it's, the, the amount of upheaval and displacement is gonna be profound.
+
+So you've got like, like, I don't know, I feel it when I, I, you know, try to understand like, you know, maybe we'll take a minute later to talk about what this, you know, agentic world means to, to media, but like, I don't even know. I, I'm, I'm not quite sure what advice to give. Companies right now. Like what, what, what do, what do you do next?
+
+Whether you're a media company or something else, 
+
+and I think it's just a. 
+
+[00:15:51] Brian: so this is a job that, that, that is, that exists, right? So Austin Reef, who, was a founder, one of the co-founders of Morning Brew, like he put out this like tweet. He's like, I wanna pay someone to come in and set up, talk to me about how people are using AI and set everything up, open claw, et cetera.
+
+And I, I, I sent him an email today and he was like, yeah, I got over a hundred responses. He goes, I'm going through them. I'm gonna just hire someone to set all this stuff up and I want that. So I told Austin I want, and when, who you choose, I wanna see how it goes for you. And then I want this person to come and, and just do it for me with what I want to accomplish.
+
+I don't wanna learn all this stuff. I really don't, everyone, like all the coders, everyth, I don't wanna do it. I don't wanna do it. Like I, I don't know, I, I, I have someone come in to like, fix things like in the apartment. I never learned I could, I probably should be able to fix my own toilet. I don't. And I just want someone to be able to do this for me.
+
+And see, I think the big thing that I wonder about all of this, and in reading that essay, that Matt Schumer wrote was that his entire thesis to me was that what's happened to coding is coming for all of you and that it hinges on that. And I wonder if that's, if that's true because he said basically the AI companies focused on coding first.
+
+And that's why I'm, I'm screaming at Chache Bt 'cause it's horrible at, at doing writing and a lot of other things, and that they're gonna now double back and do what they've done to coding, to everything else. Now I can understand that as a developer because again, we've seen time and again, particularly out of the tech industry, they think everything is just like tech.
+
+That's why Jeff Bezos goes into to, to media and, and falls on his face. And it's not like, it, it, it's not. And I, I think that like the code is different than doing things that involve a lot of different kinds of judgment and gray areas and that are a lot more qualitative than, than this. is, am am I onto something here?
+
+Because like, I don't doubt that the spaceship is over the White House and whatnot. I just find these, these kinds of essays that, again, I've read like so many times at this point. A, a little too simplistic.
+
+[00:18:09] Troy: all of this, these are questions that I pose to people that I work with and people that I care about. And it strikes me that the legal profession is one step removed from coding it's rules. And, you know, it's somewhere between coding and scripture.
+
+there are systems that govern what we can and can't do and how we, you know, structure relationships between people. And I don't know about you, but if you're doing legal documents, which I do, AI is insanely useful and, and you know, we saw, what was it last week where.
+
+Andro, released a plugin that allowed you to analyze contracts more effectively or something like that, that it had profound effects on, you know, software valuations. And, and I, I, I just think if you are being paid, you know $2,500 an hour a as a senior attorney, then that's maybe fine for a few years and you're at the top of a pyramid where you can be,accountable for the output of the systems underneath of you, whether those are human or ai.
+
+And, And, I, I, I, I think that that'll last for a while, but. you know, I think beyond that, the, the industry is in fact gonna, gonna change radically and, and, and really quickly. And, I don't know exactly what the response is for a young lawyer other than, you know, try to create value in the system by using these tools, which is really what everybody says.
+
+Get to know them, be adaptable, become one with the ai. But I don't know why, you know, a business that basically is a coding business of sorts isn't gonna just change dramatically, just like the coding world. I think the guy's, right? I'm, and I, you know, here, I'm, I'm, I'm talking about, Schumer.
+
+how many students a year leave college with the promise of getting a job in the, you know, world of technology? Tons. I mean, it's what we've been telling. Liberal arts students or students of any kind is to get a technical education. I don't know. It seems, it seems like my money would be on getting, a liberal arts education at this point. 
+
+[00:20:27] Alex: Yeah, but I think it's a little bit more. Complic. I mean, I do think that people in law firms that will be paid purely because that they're the accountable human right. And that will become a job. But I think 
+
+even in engineer, yeah, I, but I think even in engineering, it, there's going to be like, it's gonna be hard because, and we're seeing that with the SaaS, you know, valuation, the, the software, as a service industry is being decimated because people can see that, you know, it's not, maybe Brian, you might not start programming your own CRM management system, but there's going to be hundreds of little upstarts that are able to, to try to build something new.
+
+there are going to be, companies that currently do one thing, that now have the opportunity to do five things, right? I, but I, but I, what I'm, what I've noticed and the most successful uses of, of. Ai, coding has been people who are technical to begin with, right. And I think a lot of the learning of the language and the syntax and stuff like that, that's a little bit of superfluous knowledge.
+
+but yet, like, when you're a technically minded person, there's all of a sudden extra stuff you can do, right? So I know an engineer who started programming his own little boards that worked custom screens, and now he's a hardware designer. I actually feel like there's gonna be some readjustments of what those jobs mean, but, my biggest challenge is that there's no pipeline.
+
+Like a lot of these jobs that are going to be replaced are kind of like pipeline jobs into those roles, right? That's like, you know, that's the, the job you do. The kind of menial coding stuff, the code review stuff, or the going through a document, you know, as a kind of a pre legal, and that type of stuff.
+
+I mean, I don't understand why companies would hire young people to do that, you know what I mean? I actually think there's going to be an explosion of like really high profit margins around software and law and
+
+stuff like that 
+
+[00:22:16] Troy: is for sure, there's gonna be a period of time when, between some weird future where everything is agentic and robotic and AI controlled and there's no need for humans and the present where there's unnatural profits to be made. For sure. And I think that my advice would be it pretty basic, run all the costs out of your company that are connected to the old world, right?
+
+Customer support, coding design, legal finance, like embrace the technology and simplify your cost structure and increase. speed Really, really critical. Look at any part of your value chain as a company that's in any way defensible, that you can get even better at. Like, if you're making a thing, how do you make it in a way that meets the needs of the audience and that the cycle times are quicker and, you know, the feedback loops between you and your customer are more elegant.
+
+I mean, I, I, I think that, you know, in any business you 
+
+[00:23:19] Alex: I think that's not a, that's not it. 
+
+[00:23:21] Troy: it's generalized, but just, lemme hear me out, Alex, there's gonna be far more competition because what AI's gonna do is lower the barrier to entry in every industry because anybody can make sh*t 
+
+[00:23:34] Alex: like the, the, the people who make my, the people who make my CRM software can, Also make my tax management software or 
+
+whatever. But, But, But, but, if we're giving advice, I, I do think that is straight up. Great advice. I feel like a critical one though is that we need to completely rethink.
+
+how we evaluate and hire people, right? Because right now the hiring process, specifically at scale, specifically at large companies has been kind of coasting on this idea that, you know, you have a degree, you have a very specific set of skill sets that are easy to test for, right? Like, here's an exam and here's the this, and you're not testing for any of these other, like, intrinsic skill sets that are going to be really useful.
+
+Like, how do you test like curiosity and the ability to think and see around corners and think creatively about a problem. And all of these things, like, it doesn't matter if you cut everything, if the people in your company are not the people that can start, you know, adapting to this new technology. And, and, and my guess is like you've gotta throw out the handbook on, on how you hire people and who you hire.
+
+Like it doesn't work anymore.
+
+[00:24:38] Troy: Yeah, 
+
+[00:24:38] Brian: I 
+
+have an idea. Why don't you just go back and talk to people, like, why don't you stop testing them? Why don't you stop with the, like, the brain teasers and all that dumb ass shit that like
+
+[00:24:49] Alex: Brian, that sounds like really hard work. It just
+
+[00:24:51] Brian: and like, why don't you, why don't you go to a mixer and like, talk to people and understand whether they have that curiosity, whether they're actually interesting people, whether they think about things.
+
+[00:25:02] Alex: But where 
+
+[00:25:02] Brian: a crazy idea, 
+
+[00:25:03] Alex: Where could I find a mixer like that?
+
+[00:25:05] Brian: there's, there's, one tomorrow in soho, in London.
+
+[00:25:09] Alex: really? 
+
+And you might, you might, you might, hook up, apparently Brian says
+
+[00:25:13] Brian: no hookups. There's no hookups.
+
+[00:25:16] Alex: I don't know. You can't say that. It's maybe. 
+
+[00:25:18] Brian: it's possible. what about marketing? Is marketing then good? Because I wonder what lines up perfectly with code. Because honestly, like putting on mixers, d does not like line up with, what I see out of, chat.
+
+BT and
+
+[00:25:31] Troy: there's the mechanical process side of things where you need to, like I said, build for, for fast loops in efficiency. and then there's the craft side of things where, you know, the, the, the human part of it is,even more important. So your brand is more important, your sensibility is more important.
+
+you know, people that know where to point the machines are are more important. you know, I I I just think that, you know, that there's a period of time that the people that have, that can create leverage with technology are gonna be insanely valuable.
+
+So, and, and I, I don't know how that, you know, I mean, what it means is that, remember Omnicom has a hundred thousand employees.
+
+you know, clearly that industry is gonna be rationalized and, and so yeah. I mean, I, I think that a lot of that work is busy work. 
+
+[00:26:21] Brian: Yeah, I think, you know, Harvard Business School had a study that, that looked at like how AI is actually being used in companies and, and basically it's intensifying work. It's, it's taking out like what people love to, you know, shit on all the, like all the dumb stuff that you have to do as part of work.
+
+You have to do the meetings, you have to do the check-ins and the coordination. I mean, look at the Epstein files, like how much time did they spend, just trying to figure out where people were to have some illicit meeting. It was ridiculous. And. Yeah, in theory, let's take that all away. It turns out when you take out all those worthless meetings and you leave just actual real work, it's really exhausting.
+
+Like I found this just without the AI of like leaving like a company world where I was constantly in meetings and stuff and then I had to like really just do like work. It stinks. Like you gotta, it's like really tiring. I think that's gonna be the thing is, is that that people are gonna be affected by the most, at least initially.
+
+I think a lot of this stuff with we're gonna wipe away all jobs is, is overblown. I just don't believe it. But maybe, maybe and, 
+
+[00:27:32] Alex: you, you still need people to make money, enough money to buy all this shit that they're going to say that we're going to be building with this infinite supply of robots. Like, you know, I mean. 
+
+[00:27:41] Brian: I do think that this is, and, and again, I've talked about this a lot, this is a really weird technology that is arriving with so much fear and anxiety, and people simply aren't excited about it being shoved down their throats, particularly because it plays into the, the oligarchs, people shoving it down our throats.
+
+They, they live in, in on Indian Creek, you know, and, and they have their own like, maritime police force there, so they might need it. Actually, they might be smart to be on an island with their own maritime police force. Ron DeSantis, Florida's governor is looking for a lane to make a comeback. I don't think he has the riz to be president.
+
+and he arguably, he is not tall enough, but he's testing AI, populism. He's really anti ai. He's a very conservative, governor, very smart guy too, whether you agree with him or not. And he keeps going after data centers and he keeps going after ai. And I'm very interested 'cause he sees this as a wedge issue to pin this on JD Vance and to take out JD Vance as the presumed successor.
+
+I don't know where, Marco Rubio falls in that end. We're gonna see politics reshaped, I believe, by the backlash against ai. It can come in the, in, in the guise of, data centers are incredibly unpopular. I don't, you know, live somewhere where there's a ton of data centers. I mean, there's that one in Tribeca and that like strange building on, what is it on Church Street.
+
+But, people don't like the data centers at all and they become a symbol of, of this. And so. I think it's gonna reshape politics. and you saw that a little bit with the chat BT ad, like I, and I'm always interested in how you advertise Yeah. That, well, no, I'm sorry. The open AI ad. It was for Codex during the Super Bowl.
+
+you know, they never actually show people actually using their product. for what it's, it's always these like metaphors of people doing stuff in the real world, never the actual what, what the actual, product does. 
+
+it's insanity. And if they, if they give examples, they go like, help me plan a delightful birthday for my aging grandmother. It's like, like, no, everybody's using this stuff already, guys. Like, you know, like, there's the, the advertising has been very, very bad. so I think there's gonna be a big lane for the anti AI message for the reason is this is causing middle class anxiety. It's one thing Chris Hayes, had, a video, a little short reel out about how, what was, what basically globalization did to the blue collar workers, which was de-industrialized and replace them, their jobs, by shipping them to, to other countries.
+
+Is this is basically technology replacing workers and it's us versus them. I think it is a perfect lane. John Edwards was onto something with the two Americas. unfortunately, he, he did, have that, that secret love child that, that knocked his candidate candidacy out, but he was onto something with that, that message.
+
+This is gonna be a very clear populace message that is. A fork off of MAGA book. It,
+
+
+[00:31:02] Design & Government
+---
+
+[00:31:02] Alex: can we talk about MAGA and design a little bit? sure. 
+
+so you're our design guru. Alex, although Troy, I don't know. I mean, graphic design is Troy's passion. I've seen some of his work. Troy's pretty good. He's got, Troy's got good taste.
+
+[00:31:16] Brian: Okay. Yeah. 
+
+[00:31:17] Alex: Just he does as with everything. He wants somebody else to do it,
+
+[00:31:20] Brian: yeah, exactly. So, Joe, 
+
+[00:31:23] Alex: his, move his 
+
+[00:31:24] Brian: the pixels around. 
+
+[00:31:25] Alex: and move the 
+
+[00:31:26] Brian: Ge, Joe Geia is the, is the nation's first chief design officer, and he is, he's redesigning the sort of front end of a lot of these horrific government websites. Like government websites are never terrible, although healthcare.gov after a hor horrible start, it's not, it's not the worst. user
+
+experience 
+
+[00:31:45] Troy: that the, is that the new AI driven one that, that, that aligned with the Mike Tyson ad? 
+
+Is that the Maha site that
+
+then all the libs 
+
+went in and tried to get it to tell them what kinds of fruits or and vegetables would be the best to put in their asses? 
+
+[00:32:01] Brian: I didn't, I didn't, I didn't see that one. The, 
+
+[00:32:03] Troy: Oh, it's a big, it's a big thing this morning, which is tricking the stupid chatbot on the Maha site. 
+
+[00:32:10] Brian: But the design, I wanna focus on the design. Okay. Because trump rx.com came out and it's, some of these sites are, they're, they're nice sites, you know, you can say. I mean, like, and, and, but they're just like landing pages. Like the, the government infrastructure is still the government infrastructure. But I'm, have you checked out these sites?
+
+Alex? I'm, I'm wondering if, if you have
+
+[00:32:32] Alex: Yeah. Yeah. I mean, there, there, it's, it's nicely designed. It looks like, you know, it looks like HIMSS or, or any one of these kind of millennial, you know, design sites. honestly, at this stage, I was testing that stuff out, and you can design a site like that with AI in like 20 minutes so much of it is, is derivative, But it hasn't been really used in government and honestly, like outside of all the other stuff. Yeah, we, we should design better sites. although, you know, I'm just uncomfortable by how it's named that it ends with a, if you scroll all the way down, and you go past the main thing that I advertise, which is we pic it ends in a giant graphic of a Golden eagle, holding the Trump RX logo.
+
+[00:33:15] Brian: Look, you, you worked in an 
+
+agency. The client is the client, right? Like, I mean, you 
+
+[00:33:22] Alex: Oh, yeah. Yeah.
+
+And right now Trump's the client for everything. You know, you, you, you know, I, we were, I, I, I wonder what he's like as a client. Do you think he was in a design review? Troy? I think the only thing they did is that they scrolled all the way down and they showed him the golden eagle,
+
+[00:33:35] Brian: no, my, I am very, I am very, I am excited actually. I think he's gonna be able to make a lot of progress on the design of the web interface for, for the government, because Trump doesn't pay attention to any of this shit. He's an interior design guy. I mean, he's all about interior 
+
+[00:33:51] Alex: Yeah, that's true. 
+
+[00:33:52] Brian: president. He is totally into interior design. 
+
+He does
+
+[00:33:57] Alex: yeah, and, and, and, and and oddly old, old media, old media as well, like anything that's on the newspaper. On tv,
+
+[00:34:04] Troy: This is all an extension of kind of web 2.0 design rules, that are popularized by big companies like Airbnb and Apple and the like. I think at this point it's total commodity and, and AI can design it or, you know, there's certainly rules that accelerate the creation of those kinds of pages.
+
+The problem with government websites was partly designed, and, and bringing a kind of user centricity to, to, to, to how they executed. But I think the bigger problem was, is they reflected, the, the, the organizational complexity and incoherence of government more than they did a kind of design problem. So it was less about, you know, it was something on the page. It was like their APIs were no good, you know, you couldn't do the things you wanted to do. And so now we're getting to a place where more and more of that can be automated. I think it's, you know, on that front it's a great, it's great to see that it'll be easier to do shit like, you know, file a document or pay your taxes.
+
+It's just gonna be better. It's good. Go Joe.
+
+[00:35:07] Alex: Well, I, I mean, I don't think we've seen that. I think it looks nicer right now. And is it working better yet? We'll, you know, time,
+
+[00:35:13] Troy: See if it works better. Yeah.
+
+[00:35:14] Alex: time will tell.
+
+[00:35:15] Brian: yeah. Well, 
+
+[00:35:16] Alex: because, because, 
+
+at the end of the day, it, it 
+
+[00:35:18] Brian: Allen Boo. I mean, Booz Allen. You can only do so much with Booz Allen. Like, I, I don't know, like, I mean, but let's, let's just start with, you know, a nice packaging
+
+
+[00:35:27] Mamdani Design Language
+---
+
+[00:35:41] Brian: mom. Donny also is, is carrying forth his campaign design language into his, his governing style. I, I am, I think, I think design is gonna become an important part of how these, these politicians go about, their business.
+
+I dunno. I dunno if you guys have seen it.
+
+[00:35:43] Troy: I saw the one you sent around, which was for a, an event they were putting on Brian. What was that? 
+
+[00:35:49] Alex: The New Yorkers versus bad landlords?
+
+[00:35:51] Brian: Yeah, I mean, it's all branding, like, you know, like he's, he's great at getting attention
+
+[00:35:56] Troy: don't know about you guys, but I'm on the side of bad landlords a hundred percent. 
+
+[00:36:00] Alex: Oh, we know, we know. But I, I think,
+
+[00:36:02] Troy: I mean, this is cynical politics. Oh my God, this is horrible. Come on,
+
+[00:36:07] Alex: Really?
+
+Right. Okay.
+
+yeah, that's right. It's just working right now. and nobody wants what he's, serving up. I think the thing with Mandani that he does really well is that it's, it's not only designed, but it's the narrative of community and a lot of the design, kind of talks about community, kind of
+
+social movements. It, it pulls back. It's very New York. And even like, just the way his events were, it's about bringing people together. And I think that's really successful. And also like having a fucking opinion because like if somebody else tells me like, well, you know, we should keep going with the stuff that's been happening before.
+
+Like, hey, you might not agree with everything, but at least that guy's trying, and his message and his narrative and his design are all aligned around this idea of like, New York, a community, people getting together. It's like really genius. I mean, it doesn't, the, the, the, the Trump RX stuff is pretty because it uses some baseline rules that are very commodified, like you said.
+
+But, the Mandani stuff is actually like dependent on like a large narrative, which I think is really genius. Like, you know, like if the, the Obama hope thing was also just like. Part of a design system and great design system and great branding, we kind of dismiss it as well. It's all branding. It's, it's a narrative.
+
+It's a story that we tell people and if enough people believe in that fiction, then it maybe it can become real. And I think they're doing an amazing job. It's amazing. It's like generational the job that they're doing,
+
+like, 
+
+
+[00:37:33] A Very Difficult Job: Running the WaPo
+---
+
+[00:37:33] Brian: Okay, let's, let's, let's put a pin on that as they say and segue into, a very difficult job and that's running the Washington Post. Troy, you missed last week. We talked about this a little bit, after we recorded over the weekend. will Lewis, the CEO of the Washington Post,exited, I guess as they say.
+
+which usually means that someone was fired, but he left, the Washington Post there, the, the CRO is, is, is gone. Over 40% of their newsroom is gone. some, it could be up to 50%. Really when, when you add up the numbers, there a blame game has begun. you can say it went too woke. You can blame Bezos.
+
+I blamed Bezos. That, that's an easy one. Probably you could, you could have blamed Will Lewis in management. You can blame the journalists. They're making stuff that people don't want. You can blame, I don't know, big platforms, maybe ai, and whatnot. But the question is, what does the Washington Post need in a CEO?
+
+Because I, I use the opportunity to do, I don't know if you saw this, I don't think Alex res my newsletter, maybe you do sometimes Troy I did a thing of the, the arc. Okay. Thank you. The archetypes of Of media. CEOs, because they, they named,Jeff Don Freo,
+
+uh, as yes, the CFO into CE perfect.
+
+Caretaker. He an in interim CEO. The CFO is always the sort of safest choice, particularly for an interim, you know, that's what the most important thing is. But walk us through, Troy, I'm interested in, in, in your, take on, what do you think the Washington Post needs? Jeff Bezos calls you up and says, Troy, what do I need here? 
+
+[00:39:21] Troy: Good Lord. Actually this happened to me against a different media brand last week. So, it's a, it's a hard question right now, but I, I just pull back a little bit, Brian, and I would think about it like this, is that media, especially now that, you know, all of these businesses tilt more to towards selling a product to people, right?
+
+You're, it, it's, they're subscription businesses, so at it's most, it's really simple, right? Media is a product that someone has to buy for a reason. And, you know, this was a bit of a reset post, the sort of scale programmatic era. And, and I, and I, I would, I think it's summarized best by my, my friend Chris Kimball, who says, to sell media, you have to have a transformational promise that people buy. Right. It makes you better. It makes you happier. It makes you richer, it makes you skinnier, it makes you more competent at your job. You have to be faced with a value proposition that you say, I can see myself in this and this is gonna help me be more of what I want to be. And if it doesn't, you have a product market fit problem, right?
+
+Like that's the most simple way to look at media, right? And people can say, you're losing a hundred million dollars a year, you're worth $200 billion. Who gives a sh*t just keep you? This is your, you know, this is your obligation as a billionaire to support a dying media franchise. But really the, the, the loss is a signal that you have a product problem.
+
+It's not, it's not a signal that you should dump more money in it 'cause you're like a benevolent guy. It's like you have a product problem, people aren't buying what you're making people. That's the problem. And so I, I think that then you juxtapose this with, with a sort of tech mindset when those guys say, you know, we need some first principles thinking, I, I want to like puke.
+
+but like the, the mindset is here is, you know, to me the tech mindset, and Alex, you, you can kind of elaborate on this, but it's like, do hard things around a thesis where you think there's a problem in the market that's not being served. And an optimization cycle or principle. And optimize, optimize, optimize with really smart people that can take in the signals and make a machine and do it better and faster than someone else.
+
+And then you, you have the arrogance of course, 'cause you're a billionaire and you, you know, turned a bookstore in your garage into like a trillion dollar enterprise. To think that that's true for media, right? Except that media is a craft industry. the people issues are much harder. They probably hate you.
+
+They're cats, right? They're not dogs. And the C culture is really, really key. Values and value alignment are really key and change is much harder. So when you go in there and you think we just have to optimize around the data, which was the message that was all Bezos basically
+
+had to 
+
+say this time around. 
+
+[00:42:23] Alex: so stupid.
+
+[00:42:24] Troy: mean, of course you need data. Every 
+
+[00:42:26] Alex: That's like baby, baby shit. Yeah.
+
+Also, also they're, they're talking like it's, 12 years ago, whenever, when he bought it.
+
+Like, it's too late, buddy. It's just like,
+
+[00:42:36] Troy: you know, I mean, I, I gotta tell you, I had, you know, part of my thesis at Hearst was really similar is that. There was a group of print editors that had no connection to their audience other than like, I think of kind of a superficial one. They were hired for different reasons and it was fine then because their point of view on the world really mattered, and that cascaded down through a print product to a detached audience and data wasn't that important.
+
+You got a little bit of it, but it really wasn't important. And my solution at the time was to run all of our data feeds into Slack, completely change how the organization worked, and create a semantic engine around every possible piece of data that could help people do their jobs better. That didn't mean that talent didn't need to be a focus or that, you know, you didn't need to kind of create a culture in which people could do and make good media where you could take the risks and find new things and anticipate trends and do good reporting and all that.
+
+But if you look at Washington Post. You know, a little bit more mechanically, you would say, clearly there's a leadership issue. Clearly there's an execution issue. They should have cut sooner and refocus the business into places where the reporting was unique and more defensible. They decided to build a stack for the industry, a tech stack that was called arc.
+
+What a waste of time. They should have put that energy into building the most elegant. You know, consumer experience that they could have. I think it's tough to be a regional newspaper, right? You're not big enough to be the sort of liberal paper of record and you have too much cost, so you gotta cut back on that.
+
+you know, I, I think that you gotta figure out what, what beats really, really matter. You stood on the sidelines as like three other companies came in and took the Washington beat from you. It's a company town. Right. Politico, Axios Punchbowl, they came in and took that core business and, and, and I, and I would ask like, who do you really matter to?
+
+Are you a community newspaper that really serves the needs of a community? Are you, serving the needs of the business people or that have economic in interests in that market? Are you serving the needs of people that need to understand Washington outside of those markets? but like, you have no distribution advantage, obviously anymore, right?
+
+Having the paper in people's mailboxes doesn't exist. You have a cost disadvantage and it's, you're, you're not clear enough because nobody's in the company that's like. Super motivated to make it work because it's their money saying, where can we create product market fit around people that really need us and will pay for our product?
+
+And yeah, I mean, you thought for a minute that you could be this sort of, you know, like force again, you know, democracy dies in darkness and like that evaporated and that wasn't enough. And that isn't, that's a slogan 
+
+[00:45:31] Brian: that's 
+
+a hack. It's a 
+
+[00:45:32] Troy: it's, it's a hack that it, it it's not about really serving the needs of an audience.
+
+And so I applaud the change. I think it's a real drag that it took this long to get there and that there's this much carnage, 
+
+but they probably don't,
+
+[00:45:47] Brian: change.
+
+[00:45:49] Troy: can't afford it. 
+
+[00:45:51] Brian: Yeah, no, I mean, okay. At, at the same time, like, I think like when you're going back, it's what is the identity of the Washington Post? Like it doesn't have an identity and all of the examples you went through I think are, are completely correct. the, I think the question is how, who is it essential to, and I don't understand how the Washington Post throughout its history has always been pulled from being a hometown paper because their hometown happens to be the seat of the US federal government into being more than that.
+
+And they, and because of Watergate and their history around that. And they evaporate. They, they, they eviscerated and it just wiped away all of their Washington coverage. You compare this to like, say even just the Boston Globe. The Boston Globe is profitable. It gets like 70% of its revenue from subscriptions.
+
+Okay. It's a Washington is or is far bigger. Washington's the, the fifth largest,metropolitan area,
+
+[00:46:54] Troy: Yeah, totally. And it was run by, it's run by John Henry, who was also a, a, a billionaire, detached from the organization, insisted that his, team focus ruthlessly on subscriptions. And then when they needed to innovate around sort of industry focus, they created some, they created a, health focused product called, what is it called?
+
+Brian Stat, and built a B2B business around that as an appendage to the Washington PO or to the, to the Boston Globe. If you look by the way, at the comps right now. I mean, just to highlight the important of execution here, there are four companies that all came out and announced their, perform, their, their results In the last couple of weeks.
+
+The New York Times People Inc. Bloomberg and Thomson Reuters, all of them had close to 10% revenue improvements in 2025, driven by,even with all the platform difficulties that say someone like a, a people would have congratulations to Neil. you know, advertising revenue up, subscription, revenue up, premium advertising, is doing well, affiliates doing well.
+
+And so yeah, they've been hit on the programmatic side, but these are just scrappy operators that have managed to build a business that worked and yet set aside the New York Times. 'cause I think it's an outlier, but like, you know, Bloomberg built a business, they built a nice
+
+business, 
+
+[00:48:17] Alex: I've been listening to a lot of this kind of coverage and I think maybe we're all missing something. I mean, 
+
+[00:48:23] Brian: this, where is this where Alex comes in and is like, you know, there are mobile games that are bigger and more impactful businesses in
+
+[00:48:29] Alex: No, it's not that. I mean, I think,it was, you know, there was nothing done, for 12 years. the, the layoffs happened terribly. The CEO wasn't there. Jeff Bezos is somebody that's used to be able to tell people when they're allowed to go take a piss. So it must be really hardworking with difficult journalists.
+
+I, we, nobody understands why he still wants this. Even if he can make it bigger, even if he can make it the number one Washington newspaper, it's going to be, This is entirely a leverage game. This guy just spent $70 billion to make a documentary like, Hey, he wants to
+
+[00:49:00] Brian: Yeah. 
+
+[00:49:00] Alex: $70
+
+million to make a document. Then these days we don't know. and now there is a newspaper that that, that he can use as a leverage point, and that's a hundred percent what he wants to do. So you kind of. Trim it down, simplify it, put a friendly CEO in it, you know, annoyed with all the people telling you no, it wasn't, it was not his radar.
+
+He wasn't paying attention. there's just gonna be people walking around saying, oh, we got a coming into the company saying, Hey, we gotta take, the internet seriously because it's happening guys, and we need data that, in fact, it's entirely just like a mouthpiece to make sure that he can get his, rocket contract signed.
+
+Like, you know, I I, and I don't think I'm being paranoid. I think that's entirely what's happening because there's no other reason for him to keep it. 
+
+[00:49:40] Brian: Well, it's funny 
+
+[00:49:40] Alex: the guy owns a 500 billion million dollars yacht. Like, it's it, he's fine. You know, 
+
+[00:49:45] Brian: Yeah, 
+
+[00:49:45] Alex: he doesn't wanna make media work. He doesn't care.
+
+[00:49:48] Brian: I think his, I think his compound on Indian Creek at this point might, might be valued higher than what the Washington Post is. 
+
+[00:49:55] Alex: Yeah. And that that thing's gonna get decimated and be used as like whatever mouthpiece he needs to make, whoever happy that he needs to make happy, that's fine. That's his, it's his, it's his toy to play with. 
+
+[00:50:06] Brian: but media is always a good front end business for some other purpose. I mean, you mentioned all the di the, the different, earnings that were good, but you missed News Corp. That was a couple weeks ago. They're doing well,
+
+you know, and, and the journal is, is doing well and the journal is the front for a bunch of different businesses and Dow Jones that are mostly around, you know, pricing services and a lot of these, you know, B2B businesses and I don't know what. Jeff Bezos wants the Washington Post to be. That's why I said he owns all of this. At the end of the day, you know it, what is the purpose? Fine. You don't wanna lose a hundred million dollars a year. I, I get it. I guess. but at the same time, if you haven't said what, what, what is it that, that this is, that this company is trying to do?
+
+I don't think it's clear at all what he wants to do. So who knows what kind of new CEO he wants, because I don't know if it has an identity, 
+
+[00:51:02] Alex: I don't think it needs a strategy, man. I think there's somebody, there's somebody right now. I know. I think there's somebody right now that likes newspapers and things that are written about him in the newspaper. And, that's it. I mean, that's a pretty, you know, you run it lead and, you can put whatever you want on the, on the front page.
+
+That's great. Like, I, I, it doesn't look like there's any strategy. the layoffs didn't happen with any strategy. the people like what you do after big layoffs like this. First of all, you handle the layoffs well, so it's not a disaster in the press, and people don't lose trust for the
+
+[00:51:32] Brian: First of all, is it possible name anyone who has done layoffs? And I think media is particularly terrible at layoffs and partially because the people you're laying off, like our, our, our are feral. They're, they're, they're cat not dogs. As Troy, aply put it out. But I don't know anyone who has done layoffs, particularly this scale is, is massive, right?
+
+I don't know anyone who's done 
+
+them, quote unquote Well, 
+
+[00:51:57] Troy: And just for clarity in all those examples, people couldn't be more different than the Dow Jones. Bloomberg has its own idiosyncrasies. All of them leveraged kind of modern realities of media in a way to create a good business with a lot of pressure, be it economic changing, advertising, distribution, unions, all of that.
+
+And you, you want to ask what publishers should build. At the end of the day, you gotta do something that people want to pay for. You gotta have convening power, you have to do differentiated reporting. The robots can't do reporting. You have to look at the brand. expansively brands matter more than ever.
+
+Licensing is really an important part of it. increasingly advertisers are demanding performance solutions, so none of us can escape from that. And in the world of LLMs, you have to have something highly differentiated. And, you know, it's probably related to either your reporting or your data sets, or your ability to convene communities of people and all of those things.
+
+Like what does that mean to the Washington Post? Figure it out. It's not that hard, right? It might mean that you need to be 300 people instead of a thousand people. That's fine. We get overly sentimental about layoffs. You know, listen, like today, Hynek announced.
+
+I can announced that we're gonna get rid of 6,000 people today.
+
+Last week Amazon announced, 16,000 people. Okay. I get that, that, that, that journalists are a rare beauty and we get highly sentimental about these people that are, are, are, are, you know, play this priest like role in our culture. I think it's really important, by the way, there's gonna be no shortage of people reporting on shit because we all 
+
+[00:53:36] Alex: Yeah, but yes. I, I like a hundred percent agree. You know, you needed to trim this business down. By the way. I like 300 people got fired. I, you know, when, when the pandemic hit, I had to fire at least 200 people on my own team. So I've managed these things. I understand. It's like, it's the shittiest thing.
+
+Nobody ever wants to do it. But when you see execution, that is so fucking terrible. Not only terrible, like. Let's say you didn't even care how they treated people, but the way they managed to make it look like they didn't know what the hell they were doing. That there wasn't somebody that the CEO was absent, that there wasn't somebody that's going to come in and here's the strategy and here's our renewed focus with a clear vision, right?
+
+You're gonna have upset people, but you can look at the way it was, it was, it was done in such an, you know, sloppy way in either one or two things. They are incompetent or they don't care because at the end of the day, they just need a shell to promote some sort of message so that they can buy ins to the things.
+
+And I think either one of those isn't good. And that, and, and yes, you know, you can defend the layoffs, but you can do layoffs differently. Nobody's gonna ever like them, but you can do them differently. And it, this was badly done. It's badly done. This is like, I mean, you know, laying off 300 people like, you know, tech companies like
+
+[00:54:52] Troy: You know, I do have a little bit of sympathy though, Alex, right? Because you have people like God bless him, Dylan Byers, like covering your every move for months and months and months. Having Matt Murray on his podcast asking him if Will is, is will really an asshole? Like, is he really incompetent? Is he really an idiot?
+
+Answer the question on my podcast like this, the, the amount of coverage
+
+[00:55:17] Alex: that's what the, that's what that's what, the press does. So what you don't like, they, they don't like the mirror pointed back to them. That's the way this isn't, that the way this
+
+[00:55:25] Brian: Yeah, that of all the people, I mean, that's why I like focusing, focusing on like salespeople. 'cause they can't, they can't complain if I'm like aggressive in the sales. I mean,
+
+[00:55:34] Alex: you know, it's like the,
+
+[00:55:35] Brian: journalists can't be, 
+
+[00:55:37] Alex: it's like the, exactly. It's like people working at TMZ that all of a sudden want like their privacy. Come on. Like, come on. Like,
+
+[00:55:43] Brian: Yeah. I mean, by the way, Matt, Matt, Matt Murray did take a lot of, I, I give Matt a lot of credit for
+
+being the front man on there. Remind reminded me of you, reminded me of you Troy actually take taking on being the front person for
+
+[00:55:59] Troy: I mean, I I gotta tell you personally as someone who been in those rules that you weren't there for, this kind of move is absolutely despicable 
+
+[00:56:06] Brian: Yeah.
+
+[00:56:07] Alex: it is awful. It's, it's, it's just awful. 
+
+[00:56:09] Brian: Yeah, it's gonna be tough. Mean we do, it's too bad it didn't, it didn't line up with our reputation e episode,because I, I don't think that did a ton for, for Willow's reputation. so, maybe he could come on my podcast to try to repair things. we'll see. Do we have a good product?
+
+
+[00:56:24] Good Product
+---
+
+​
+
+[00:56:27] Troy: Well, you know, I, I, you, you guys can kick in a little bit. one of the things I like most about eating in Jamaica are the scotch bonnet peppers. which if you ask, they'll dice it up, you know, fresh and you just sprinkle them on your food. They're hot, but they're flavorful. So it's not just mindless heat, it's flavor, plus heat.
+
+I thought though, that, that, that seems, you know, that that's opened me up for some criticism. I, I would say that, you know, with, with all this stuff going on, trying to figure out, like in the AI stuff that we talked about, figuring out what you should do as a person making products or marketing products, going into, you know, a very uncertain time.
+
+It's good to have people that are. Kind of mapping out what the important trends are. And there's this, there's this agency called Arcade Studios in Toronto, that release this deep dive into 2026 trends called Scan Club. And it was, you know, they do it on Substack and then they point you to the, the five trends that they think are important for the year.
+
+And they, they, they exit, they show examples of each of the trends on a big Figma board, Alex, which I thought was really
+
+Nice.
+
+Using, using Figma as a tool to present a case study feels modern to me. 
+
+each of their observations. fit into one of five categories. So, improvisation as a way to bring back serendipity into what you create as a marketer. Like little moments, things that happen spontaneously that feel exciting. analog, everything. I mean, in my household, household journaling has become huge.
+
+My wife and my daughter are super into journaling and these French journaling books that they buy, there was a feature in the Times about them.
+
+but, you know, vinyl journaling, cooking crafts, hobbies, all big
+
+[00:58:30] Brian: All 
+
+these things are Brooklyn. 
+
+[00:58:31] Alex: Hey, I went to, I went to ame, to Amoeba Records here in San Francisco over the weekend. It was packed with young people. 
+
+[00:58:37] Troy: yeah. Yeah.y you know, kind of romance of mundane things like preparing a meal for a friend camp. Camp is really big, which is like maximalism absurd. Cringes and cool now, storytelling or what they refer to as lo from a sort of trusted narrator where the audience can kind of participate as things unfold and, and that you can kind of dream about the stories that are being told.
+
+So, I, I think it's, it's a, it's a cool document. We can put the link to it in the, the notes. I, I shared it with you guys if you wanna see the Figma board. It's pretty cool.
+
+Good
+
+[00:59:17] Brian: my, like, would my mix, would my mixers fit in here? I think they do. They, they tick several of those categories.
+
+[00:59:23] Troy: camp. 
+
+[00:59:24] Alex: Brian. Brian's managed to
+
+pitch his mixes four times, I think three or four 
+
+times 
+
+now. 
+
+[00:59:28] Brian: well wait till the sock. 
+
+[00:59:30] Alex: to, 
+
+[00:59:30] Brian: till the sock hop rolls around.
+
+[00:59:32] Alex: to get people excited about next week's episode, Brian's going to report back about his mixer and how the beehive sponsorship is working out.
+
+[00:59:39] Brian: Absolutely. 
+
+
+[00:59:40] Outro
+---
+
+[00:59:40] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanja Arsenov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:00:15] Brian: All right guys, I gotta go. I gotta go. Prepare for the mixer. is fun. See you.
+
+
+

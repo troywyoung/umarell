@@ -1,0 +1,469 @@
+PVA S1E48
+===
+
+[00:00:00] Troy: We miss Brian in this conversation. I think you would add a lot. Brian's in, Croatia, living his best European summer life. 
+
+[00:00:07] Alex: without internet.
+
+[00:00:08] Troy: we had some topics that Brian was kind of passionate about the, he talks a lot about the tech versus the media mindset, and I thought that was a cool topic.
+
+[00:00:16] Alex: Yeah.
+
+[00:00:17] Troy: and I thought about it a little bit. We could provide some context.
+
+[00:00:20] Alex: I'm sure we can talk about it for more than one episode, so maybe we can provide some context. It's just the two of us, bring the energy for one and a half people.
+
+
+[00:00:28] Intro
+---
+
+[00:00:51] Troy: we're living in a time where there seems to be. significant kind of oppositional energy between the leaders of the tech world and, the media people that cover them. part of it is, the kind of tension in their respective business success where one is, about vessels or platforms or mechanisms to channel and present media and monetize it.
+
+And the other is essentially about, creating the perspectives that fill those platforms I think that the last 20 years of media development are, about the conflict between those two business models but then there's a broader thing, which is just, there's a handful of people,there's very powerful leaders that come out of the tech world that bring a point of view to the world that, I think is that, many that write about it, find distasteful and, obviously it's, it ranges from, the antics of Elon, I mean, I think they're embodied in these people to the all in guys, to Mark Andreessen that see the world in a certain way.
+
+And have, built platforms and talk a lot about a range of topics outside of, way outside of, a domain expertise or authority, So we see things like Mark Andreessen on talking about, the impact of AI on the world.
+
+And I think notably on that podcast
+
+[00:02:13] Alex: Sam Harris, the Sam Harris podcast.
+
+[00:02:16] Troy: Sam Harris's podcast, and he was on one other as well. I think that a lot of it comes back to. Almost like a kind of tribal behavior from high school where you have the different constituencies and right now the, the nerds have a lot of power there's a mindset though, that I know from working in Silicon Valley and with lots of people like that one that I really value, which is that, you win by building there's a real bias to making things, building things
+
+[00:02:45] Alex: Mm-hmm.
+
+[00:02:45] Troy: and, there's a, a sensibility that logic wins.
+
+it's about the power of my logic over your logic
+
+You know, the thing you make is bigger than somebody else's idea. that you are entitled to a platform because you've built something or you've built a business or you've built a product.
+
+And I think a part of it, Alex, is that you're taught to kind of fight the dissenting point of view. and when you're building a company, when you're building a startup, there's every reason in the world for it to fail. And it's your, determination, your single-mindedness, your persistence, that gets you to the other side.
+
+I think that what happens when you succeed at that is you develop a kind of confidence that your view on things is the right view.
+
+[00:03:31] Alex: I think that's correct. The founding myth in so many of these companies, including, Airbnb, right? The founding story is, littered with all the people that told or called you crazy, right? The Steve Jobs story is, is all about that. So when people like that succeed, they can see the fact of that people are telling them no, that they're wrong as fuel for their commitment to the idea.
+
+You know, I heard that before. I think first of all, it can be true. I think optimism is really powerful, And you want people who are disruptors, but I think it's grading. And I also think it, it's blinding, to a lot of these folks. I think a lot of these folks think because they were right once, while everybody telling was telling them they were wrong.
+
+The same thing is happening today. and these people have a lot of power. So they also have, a lot of people around them who are telling them that they're right and they should follow their gut, et cetera. it's a pretty sycophantic, space. I can see why a lot of reporters would find those folks grading.
+
+but I can also see the side where, I can understand a complaint from tech that media is just trying to tell stories, that are anti-technology and anti advancement and anti-progress and are, have a very negative view of the world. and they find that grading. And right now what this ends up being is like a really unsatisfying level of conversation around topics that I feel are really important.
+
+like ai, but yeah, that Andreessen interview made me give Sam Harris a hundred dollars. I thought like Sam Harris did such a good job at pushing back, and Andreessen sounded like somebody who probably owned a fedora and a trench coat when he was a teenager. 
+
+
+[00:05:08] insert interview
+---
+
+[00:05:09] Interview: Describe that way, would you feel totally sanguine about, you know, sitting there on the beach waiting for the, the mothercraft to land and you're just, you know, rolling out brunch for these guys. So this is what's interesting 'cause with these, with these, now that we have LLMs working, we actually have an alternative to sitting on the beach, right.
+
+Waiting for this to happen. We can just ask them. And so this, this is one of the very interesting, this to me, like conclusively, disproves the paperclip thing. The thing right out the gate is you can sit down with GT four and whatever other one you want. And you can engage in moral reasoning and moral argument with it right now.
+
+And you can like interact with it. Like, okay, you know, what do you think? What are your goals? What are you trying to do? How are you gonna do this? What if you know you were programmed to do that? What would the consequences be? Why would you not, you know, kill us all And you can actually engage in moral reasoning with these things right now.
+
+And it turns out they're actually very sophisticated moral reasoning. And of course the reason they're sophisticated and moral reasoning is because they have loaded into them the sum total of all moral reasoning that all of humanity has ever done. And that's their training data. And they're, they're actually happy to have this discussion with you and like, unless you, except right.
+
+There's a few problems here. One, one is, I mean, these are not the super intelligences we're talking about yet, but, well, two, they're, I mean, so I mean, intelligence entails an ability to lie and manipulate and if it really is intelligent, it is something that you can't predict in advance. And if it's certainly, if it's more intelligent than you are.
+
+I mean, that just falls out of the definition of what we mean by intelligence in any domain. It's like with, with chess, you can't predict the, the next move of a more intelligent chess engine, otherwise it wouldn't be more intelligent than you. 
+
+[00:06:42] Alex: it's just that, like self-assured ignorance The problem with the world is that people think that they're good at one thing and they're gonna be good at everything. And then immediately in the same sentence, proving that he's doing exactly the same thing by talking about stuff he has no idea over. And also just being so ready to, dismiss any argument that this might not be great.
+
+Or, there, there's a productivity cult, right? That productivity will always end up, to bigger and greater things. discounting the fact that, society might not survive those changes, in the 10, 20 years it needs to move to that. So to me that was like a sign of like, I get why you'd wanna, take folks that speak like this, down a peg because It feels like unwarranted, that they have such a platform and people listen to what they have to say so much. and Andreessen specifically, like in the industry, people are afraid to talk against him, Because he assigns so many checks. You don't wanna be these VCs are kind of the lifeblood of a lot of these companies.
+
+So no matter what people think, there's not gonna be a lot of people sharing their sentiment from, from the tech side. So it, it ends up being like tech being on one side of the argument and media being on the other, even though there's probably a lot more nuance, if you ask individual people.
+
+[00:07:57] Troy: Yeah, I mean I think it's like a lot of things that for one reason or another you find yourself on one side of the spectrum or the argument, and it might be in the case of Andreessen or others, that you are fundamentally a sort of techno optimist and you believe that advancement in technologies in the hands of enterprising, entrepreneurs or builders, really trumps everything.
+
+you then organize your sort of worldview around that
+
+[00:08:27] Alex: Yeah.
+
+[00:08:28] Troy: and you have a big brain, so you sort of are able to summon supporting our, I mean, in ai it's really problematic because really truthfully, no one really knows, and you can deconstruct. The argument, like it's just a fancy toaster.
+
+It can be unplugged. It is us. 
+
+[00:08:45] Alex: Yeah, that was a wild, that was a wild statement to make.
+
+[00:08:49] Troy: that unwieldy or, sort of, optimizations can yield to, unattractive outcomes is an avoidable scenario and you just kind of start to use your intellect to kind of bully people and to, not look at the other side.
+
+Whereas I think Sam Harris is, a kind of platonic character, and he, he's really masterful at kind of, I mean, listen, he was supporting a point of view as well, but he's really good at trying to organize. Ideas and arguments to look at something critically, I think in, in this case, much better than Mark Andreesen was.
+
+I think it's really worth listening to if you, if, if you get, get a chance.
+
+I mean he does it in lots of ways. I've seen him dismantle religion. there's a great YouTube video of him challenging some of the kind of, foundational not notions of organized religion. Like he's a real smart guy,
+
+[00:09:40] Alex: I think that for me, the, the Andreessen thing kind of was worrying because what Sam Harris was trying to get out of him is some sort of introspection as the things that could go wrong, right? and he would literally brush off that, he would say things like, well, there might be some pain between this point and this point, but the point we're going to is going to be better ignoring the fact that some pain could mean.
+
+first of all, a lot of like actual people suffering, societal collapse, bunch of different things, and telling us not to feel so bad about it because it is white color workers. that's also like a, talking point that I'm hearing in tech is like,these are the people like us that will suffer from this.
+
+So let us, let us be optimistic about it because it's not going to be the blue collar workers that get shafted by this is going to be our people. and that's so disingenuous because the first people to be hurt by this are going to be the millions of People picking up phones when you're trying to apply for a credit card or something like that.
+
+And these are not tech workers, right? they're technically maybe considered white collar workers, but, they're low wage workers. And so there's a lot of disingenuous arguments that I feel for people that keep talking about intellectual honesty. I feel, feel very intellectually dishonest.
+
+And I think you're right. I think they just become very good at winning at the argument and just flooding the zone. even the speaking really fast is part of this. it really does feel like, in college or something like that, somebody who's just discovered a religion or atheism or veganism and just like won't stop talking about it and has all the talking points ready to locked and loaded.
+
+And if you think about it for more than 30 seconds, it stops making sense. But on the other side, don't you think that there's like also a, a sort, kind of a dor attitude that is coming out of, and I don't wanna say the media because media is so wide and different, but it's like culture where, know, it's looking at the future in a way that is, pretty nihilistic and doesn't have a lot of positive stories to tell.
+
+[00:11:33] Troy: And I think that that's also, there's a, I think there's a lot, there's a lot caught up in that, Alex. So I think part of it is a kind of backlash against media. that they are part of this kind of liberal, coastal elite and they don't get it, or they're anti-progress and I think that, even if you are, part of the media or an admirer of many, journalists and, like I'm a massive,kind of media,junkie, fan, whatever, that the sort of the natural pessimism, that's part of doing that job.
+
+Or when you deconstruct c n n endlessly, and sort of, gleefully. You, take apart an organization and their efforts to face something that's incredibly different and difficult and structural, like we're seeing in much of traditional media right now, every, idea that comes out is, challenged as, being too little too late, naive not gonna work.
+
+and so there's a kind of, as an operator, you, tire of that because there's a big difference between criticizing something and making something yourself.
+
+So, the incentives are to be Pessimistic and you're rewarded for the scoop. The scoop of someone making a mistake or a folly or, failing.
+
+[00:12:47] Alex: And so, I think it makes people want to cheer on people like Elon to say like,fuck the haters. Like, go for it. I started feeling like this a little bit, over time, listening to Kara Swisher, who I, genuinely liked at first, but there is a tone that everything that comes out, she has a tendency of saying like, well, I told them they shouldn't do that. Like, she wasn't the executive boardroom every time, tech company made a bad decision, you
+
+[00:13:11] Troy: well, yeah, and anybody, and you know 
+
+[00:13:12] Alex: use that, she uses that day language a lot. she actually likes Brian and Airbnb. So I, think actually, my tenure there, it was generally positive, considering, the space we existed in. But there's a lot of kind of that day language, they don't understand, and they're all People who, who don't understand the rest of us.
+
+And it starts feeling kind of, self-serving in a way. And I, get why people respond to that. I try. I'm trying not to. but it's hard.
+
+[00:13:37] Troy: Yeah, I think that what is missed often is that, the people that run these media companies or that run any type of tech business are faced with a lot of trade-offs. And it's really understanding the source of, a decision making process or what inputs go into it and all the trade-offs around it.
+
+That is important. And I, I find often don't take enough time to understand. Like for example, if you're running a, a traditional media company and you're, say your print revenue, like a situation that I faced is falling, call it 20% a year. And you have, a team and a set of expertise and like a, literally thousands of people that are, real experts at building a print thing.
+
+But the new thing requires different expertise. You face really difficult trade-offs around how long it takes you to go through a transition. Who are the right people to have in the organization? How do you have to fundamentally change the product for it to thrive or succeed against new competitors in a new distribution paradigm?
+
+And so all of those things, Are like literally smacking you in the face every day. And those are really, really hard trade-offs because you, admire and wanna preserve the tradition of the old thing and what it means to people and the people that worked on it. But the new thing, if you don't quickly get the new thing built out in place, the right people, the right momentum, your business collapses or just atrophy, slowly and steadily.
+
+So it's just be, being in it is different. I think the best journalists try to, really understand the fundamental trade-offs that leaders are making as they, try to, build something new.
+
+[00:15:20] Alex: So, do you think that the kind of text influence On media's business model is also feeding into that? Nearly like sibling rivalry between them. It seems like the two sides are just constantly sniping at each other. And I get that. There's like very good reasons.
+
+I get very annoyed with the all in guys and Elon. I find them, all these guys like completely just exhausting to listen to to the point where I listen to people just taking them down because it just makes me feel sane and not alone for a second. but on top of that, like media feels attacked by technology and its business models, 
+
+[00:15:53] Troy: I mean, I think they just started completely different. Places like one is about friction removal, one is about solving a problem. That problem, could be defined in lots of ways. Like we need the maximum number of people to create content, to create maximum engagement. Technologists fundamentally start from, a system problem, and it typically has to do with, enablement and friction.
+
+And whereas, media starts from, what does the world need us to talk about? what do we need to cover? What content or what point of view is missing? who is not, getting enough attention? Is there enough scrutiny on power and authority? things like that.
+
+So there, they're really different starting points.
+
+[00:16:36] Alex: and if those incentives they're misaligned and they have been misaligned for a long time, even when we were working together, we were trying to find these aligned incentives between media and technology, and there was a lot of optimism there. Do you think that in an age of AI they're more misaligned than ever, or more aligned because it seems like, that slowed down a little bit. That narrative slowed down over, over the summer. but AI is going to build a whole new set of tensions between media and technology, right?
+
+[00:17:03] Troy: definitely it, it's been said many times that it'll maybe, create more, demand or space for that which is human. And I think what we're finding now is there's a category of media creation, content creation, or, just fundamental human decisioning that's hard to replace.
+
+Not even decisioning, really hard soul sensory, emotion, feeling. And then there's a lot of Things going on in media that are, I think you would characterize as being, extremely negative for the industry.
+
+but at the same time media continually kind of shape shifts and morphs and you see examples of people that do a lot of the things that we've talked about on this podcast. Like there. Focused on individual talent, their niche, they write with a certain point of view. Yeah, I think Puck is a good example. I would argue that it's become, an incredibly, important new, source of, point of view, and, and information for a whole lot of people displacing, other vertical publications because the model is better suited to how we get information now 
+
+[00:18:07] Alex: Yeah.
+
+But I think, that being said, on the technology side, I think the incentives are more than ever. Geared around replacing, human labor in whichever way they can. there's a lot of tech businesses that have this uncomfortable relationship with, labor, right?
+
+Like Uber was talking up the idea of liberating drivers, but, investing heavily in,
+
+[00:18:29] Troy: Yeah, I listen.
+
+[00:18:29] Alex: taxes. Right. And, and, I've heard a lot of people in the space and India space doing investments and, and VCs and people raising the capital for that, very directly saying that they can't wait for a world where they don't need to deal with musicians or illustrators or writers.
+
+Right. That those people are just gone
+
+[00:18:48] Troy: I mean, Alex, I think those people will alway always be there. I don't think that capital, this is within of sort of legal and broad a narrative moral framework, but I don't think that capital or engineers or entrepreneurs are motivated by kind of moral constructs. they're motivated by solving problems and identifying opportunities and making money and creating new things that deliver something to a user
+
+[00:19:15] Alex: it's that productivity cult I talk about, right? Like more productivity is better every time.
+
+[00:19:21] Troy: right. And I think that more than ever we put. The things that we put energy into through a lens of is it good for people or is it broadly speaking moral? But, that's not the role of capital and entrepreneurship. it, it's solving problems. It's not, it's starting point is not,
+
+[00:19:39] Alex: Oh yeah. I don't even think that they're right or that's the way the world is going at, at the end of the day. But I think, that type of view of, culture and, and where things are heading is going to build more tensions between tech and media. I can't see there being a very healthy debate, around that when one side thinks that the other side shouldn't exist, I think the fact that this is happening while as a society we need more and more good conversations around the future in technology and the societal impact. I think it's a problem.
+
+I think it's very unsatisfying right now. And I was trying to figure out how to frame it and then I thought well, what are the. people having these conversations that you feel are productive right now? Iwe mentioned Sam Harris. Is there anybody you listen to where you feel like this is a reasoned and interesting conversations about technology and where it's heading?
+
+[00:20:27] Troy: yeah, if I just look through my list, I would say that, yeah, there were lots and they all feel different needs for me. So I think that Ben Thompson is a really good structural model thinker about media . So I listen to him and I like it a lot. I find that, Karen Scott, bring lots of good perspective to the conversation.
+
+[00:20:45] Alex: Even, even though they've become a bit self-obsessed. the daring Fireball guy, he's got lots to say. Ezra Klein has lots to say about this. Crying is is great actually, I think. I
+
+think some of his AI episodes Some of his AI episodes have been really incredible.
+
+[00:21:01] Troy: I, I think that John Kelly is got Media Monday on, his powers of Be podcast from Puck is terrific. podcasting really is another remarkable, innovation for media in that the choice and your ability to find people that you think have something to say and the access is, quite frankly, something that we, we all learn to enjoy.
+
+That never existed before on, in a world of terrestrial radio. So it's remarkable. I think there's so many, it's one of my favorite mediums, to be honest.
+
+[00:21:30] Alex: Yeah.
+
+[00:21:31] Troy: So, I don't know where it leaves us other than, I feel like we're living in a time where the builders have an outsized voice in our world, and I think that people are reacting to it, saying, Hey, wait a minute.
+
+we need to think about this more. And this creating a lot of tension. And, the funny part of it is I, I almost feel like, the politics has been upstaged by dialogue coming from the sort of the elite, wealthy Builder class I think that Interestingly, we, we sort of start to see political systems as a check on that power, but I feel like in many ways the agendas being set outside of Washington.
+
+[00:22:12] Alex: Hmm. 
+
+[00:22:12] Troy: if you look at where, like who ultimately influences people and how we shape, policy, I just don't feel like it's led by the experts in Washington. 
+
+[00:22:23] Alex: And, and when you say outside of Washington, and you also saying, think outside of the, media machine, that, circles that, because some would say like, Fox still has outsized influence on our politics and our
+
+[00:22:33] Troy: Sure. 
+
+[00:22:34] Alex: lives. Yeah. But do you think it's shifting to these,
+
+[00:22:37] Troy: Well, maybe more broadly, a better way to characterize it is there's a pretty big hole left by, people's,a decline in religion.
+
+[00:22:46] Alex: right.
+
+[00:22:46] Troy: And so I think there's, there's a gap now where, people are looking for kind of moral leadership from places from somewhere, somewhere new. many cases, it used to come from community and, religion.
+
+[00:23:00] Alex: if you listen to the arguments that people who follow Elon give, they have a very, religious tone to them, to the point. And I think part of it's because once something becomes part of your identity, you will defend it at all costs and become really good at defending it.
+
+Right. and I get that, that recent interview sounded like an interview where Sam Harris was talking to somebody who was trying To pitch some sort of spiritual or religious dogma. Right. because there was no way of getting around the fact that there could be anything to be criticized around it.
+
+You know, it's not like, well, I like it, I know this, and that is wrong, or this could go wrong, but I like it. It's very much No, no. Everything that is being done here is and will end up in a place that is better than where we are today. you know, it plays into the strong man kind of appeal , like a religious identity, that is kind of being covered by this following of these very successful people.
+
+Right. Is it like a uniquely capitalist construct that we follow these types of people because of their success potentially? I don't know.
+
+[00:24:00] Troy: Well, it's interesting, right? Because when it becomes religious in its shape or form, then nothing that a person does is, everything that they do is above scrutiny
+
+[00:24:11] Alex: Right, because it's for a reason. 
+
+[00:24:13] Troy: because it's, not a rational pursuit. It's, bigger than that. Trump can get indicted four times and do ghastly things and behave like a child.
+
+And he still has a huge amount of support because they're connected at the level of an ideal or a, kind of, a view of the world that. People feel like it's being taken away. So it becomes, like, a mission.
+
+[00:24:34] Alex: I'm very much somebody that started as a tech optimist. I lean towards the fact that the world right now is going through a very exciting phase. There's a lot of exciting stuff, and I wish we had, you know, optimism sometimes is important because it helps you set intentions of where you want the world to be, right?
+
+it's not only a prediction. and if you set intentions around everything,ending up in a dark place, then you're more likely to end up there. The issue is I cannot get behind any of the loudest voices in tech right now. I was trying to find people that I wanted to listen to.
+
+So, Andreessen, we talked about,definitely like the Cala canes and sacks of the world are just, I think just, a net negative in every way, outside of the fact that they're, entertaining. And there are really like kind of thoughtful technology thinkers that I wish we heard more about.
+
+like there's Demis has, which is the, the C E O of DeepMind who now runs all of Google's ai. and as somebody like we should, hear more about, but they don't have the same ambitions, because these guys are there building and not just being loud about it. so it looks like the majority of the voices that we're hearing the most about are the ones that are, I think setting us back in a lot of ways and a lot of.
+
+Media loves this because it's fun to read about Elon's latest crazy shit the same way it's fun to read about Trump's latest crazy shit, right? and that's what scares me the most because I think AI is the most, important technology revolution, of my lifetime. And, I don't think anybody listens to Ezra Klan at the same level that they hear about these other guys.
+
+Right. And it's not because people maybe tune into Elon's Twitter spaces or all in, or whatever, but it's because, the more mainstream media outlets will pick out stuff that Elon says, it'll get propagated at a, at a pace that is much, much larger than whoever Ezra Klein can ever reach, or Sam Harris or
+
+[00:26:22] Troy: Yeah. I think that idea takes Us, if you just go with me for a sec, in, in a way to kind of related topic, which is that What the internet has done is removed, structural, moats that used to, in some ways keep media as a distinct industry and profession. That was, well, it was less accessible to people that just wanted to be media,
+
+[00:26:47] Alex: Mm-hmm.
+
+[00:26:48] Troy: in the old days, a venture capitalist at a venture capital firm was not a media personality
+
+
+
+[00:26:55] Troy: a technologist that ran a rocket company and a car company was not, the biggest kind of influencer. In many ways on the planet, right? This, he's a media personality. And so what happened when the internet gave everybody the ability to make media and took away structural distribution advantages from the media industry and meant that the people that got the most attention were the most bombastic or loudest, or just had an aptitude for getting attention, is it meant that a lot of folks looked at media and said, we should make that part of our business.
+
+So media became, or at least companies aspired to turn medias into a front end for lots of different kinds of businesses. So, a bookseller that became the world's largest store. And, in distribution company, Amazon realized that media could become an important part of, the mix to get people to be loyal to their service.
+
+So it became part of Prime, right? Or if you're a, a maker of phones and technology and software, media was a natural extension for a service layer that you could put on your company, To do the same kind of thing to help differentiate your products, but also connect people to your platforms day in, day out.
+
+Right? Apple. similarly this week we saw where it isn't as easy to do, and there's a lot of examples where it fails. And Barstool was meant to be the front end for, a gambling service from Penn Penn thought that the way to grow their sports betting, offering would be to give it a brand and get more attention on it.
+
+Except that the mix with Barstool was, if sports betting, is constrained by lots of regulation and it's maybe fundamentally about trust. Then it Wasn't the perfect fit and it ended up coming unglued and a lot of money was lost, hundreds of millions of dollars lost in the process.
+
+it's interesting to reflect on where it makes sense, to have media as part of a different type of business and where it doesn't make any sense and how that's. How that's shaping up right now. Right. Like journalism doesn't work well when it's constrained by things other than the pursuit of the story, advertising is a natural compliment because it doesn't get in the way of that. Ideally. I mean, when it does you have a problem, but mostly we've created an understanding that the content's, the content and the advertising's there to sit alongside it. when it becomes too much about the selling of the thing or the merchandising of the thing, then it's the home shopping network.
+
+it's not media or it's a different kind of media. and then there are places where it works incredibly well when it tends to be about, when there's a deep kind of vibe that fits where it's kind of, in many cases, more about licensing or. kind of proximity to a brand or a lifestyle or a point of view that's not encumbered by the, the content or fits with the kind of tribal dimension of the content.
+
+Sort of like bars still selling pizzas, like it's not getting in the way 
+
+[00:30:00] Alex: it's not getting in the way and, it feels honest, right? Because it's such a, core part to like his whole kind of vibe, right? Those pizza rating videos, do you ever see those?
+
+[00:30:10] Troy: yeah. Sure.
+
+[00:30:11] Alex: so I think media can really quickly get into this uncanny value where it doesn't feel honest or it feels in service to something else.
+
+And people get turned off by that, even if they don't really notice why, and there's a lack of honesty or genuineness that comes in and it feels like an add-on. While in Apple and Amazon's case, they sometimes feel like vanity project, but they definitely feel more like a, patronage for the arts, right?
+
+They're take, they're taking on these big shows, they're pumping a bunch of money into it. It creates a sense of loyalty, but it feels really disconnected from the core, brand. It doesn't feel like it's in service to any of that. So when you're, when you're consuming it, you don't feel like you're getting. cheated or swindled, Like that's, if you can do that with a brand, like a Barbie movie, right? Where you're watching a movie and it doesn't feel like just two hours of product placement. there's a lot of skill to that. but I think most things can exist in that space and,
+
+[00:31:04] Troy: Right. So that's an example where it's entertainment largely, where it's not really news, where it sits ally to your core value proposition. And, it gives consumers another reason to engage with your brand, but doesn't get in the way, in the case of Barbie, that's just exquisite branded content from Hasbro.
+
+and I don't say that in a way that, diminishes its power or social, usefulness or anything. You put the IP in the hands of a great filmmaker and it managed to resuscitate the brand and tell a good story and advance some ideas, all at once.
+
+And it, it felt, yeah, and it's that thing about seeking a feeling of like honesty in the product that you're making. If that hits right, it's very powerful. Which is like Dave Portnoy selling pizza feels honest in some way because he, like that feels part of his thing. But where I've seen it not work, is the notion of content to commerce where you say, well, we're a lifestyle publisher and say in the home space and we're gonna create a bunch of content and then we're gonna sell a bunch of products on the back of that. And oh, won't that be great? Not realizing that, first of all, your content probably.
+
+Doesn't sell very hard. So you're not making enough money off the back of the content to justify that investment. at the same time, you're getting into a commerce business that is fundamentally different from media One's based on kind of marginally economics. One's about unity economics, one's about managing supply chains and sourcing products and product development.
+
+they're very different and, and those are, I think for a while were seen as productive combinations because the idea was content would reduce your CAC basically, and it turned out that content could actually increase your cac. 'cause making good content was really expensive. I see my friend Chris Kimball trying to thread that, at something called Milk Street where he uses his overall brand premise, which is change the way you cook and bringing a kind of authority to, helping you imp to cook better, to lead a more sort of satisfying life in your kitchen with your family and transitioning that authority into, a commerce experience, a store that actually works.
+
+[00:33:21] Alex: Chris Gibble of America's Test Kitchen fame. Right. 
+
+[00:33:24] Troy: Yeah.
+
+Right. And now his, his thing's called Milk Street. so Chris takes his fundamental sort of content world, this world that he's created and he gives you things to. Make that world better, whether it's a better knife or, garlic, comfy, or a better, pepper mill. so they fit.
+
+I think for the most part, one would probably argue that the notion of content to commerce has been challenging for people, 
+
+[00:33:48] Alex: Well, it's, it's very context specific, right? Cooking seems to be, you know, a pretty good fit for that stuff because the content, the product, the ingredients all fit together, right? other things like where, where the thread becomes a little looser, it becomes really hard to do and there's so much content.
+
+Now, I don't wanna read shit that feels like,product marketing. nobody wants to read product marketing,
+
+[00:34:11] Troy: No, I've Been part of experiments in fashion where you like take the Harper's Bizarre brand and make it a front end for. For a commerce experience and for a couple of reasons. One is the purchase process is very different. And so it's, it's harder to justify the, the creation of that content without advertising against a commerce revenue stream.
+
+also that the kind of economics of being a fashion retailer are, are grueling. taking on business transformation in media and at the same time trying to figure out how to be an expert at, how to be Mr. Porter or NetApp or is, is really intimidating.
+
+[00:34:44] Alex: Yeah. I think it's, you can't be both, right? Like the reason something like wire cutter Gear patrol works is that they have access to just the entire universe of products, right? Rather than when you're writing, when you're making content and you're confined to a single company, it becomes really hard to make compelling content.
+
+and then the incentives become completely misaligned, right? So, yeah, it feels,
+
+[00:35:05] Troy: Patrol tried it. I was part of that, and they tried gear Patrol, tried to, start, adding skews and, and everything from like watch bands to bags to stuff like that. It just never, it was just a distraction. They were better off, per your point, covering their universe of products and not having to sell them.
+
+[00:35:24] Alex: Right, because they were providing real value to the reader now.
+
+[00:35:27] Troy: yeah, I think maybe the exception and we'll see, I think it's, a little t b D on it are, they're example, you know, churn. The churning guys are really good at it and they, they study it and they 
+
+[00:35:39] Alex: The
+
+churning group, 
+
+[00:35:39] Troy: yeah. MER is a media franchise and also a successful commerce entity.
+
+Hokey is another, project that they're invested in. And, it's, watch, edit and also a retailer and also a, a vintage watch marketplace. But, you know, in all those cases, you still are reliant on advertising as an, a really important revenue stream in addition to the commerce stuff.
+
+[00:36:05] Alex: Yep. 
+
+[00:36:06] Troy: yeah. the last topic I had, Alex, I don't know if you have more to say on that, but, you had made a comment, that, we look at. The, kind of modern distribution platforms in media as being just the way the world is. And that would include, you know, if you're a media company getting referrals from social or from Google.
+
+it's been,highlighted a bit in, US first in Australia, then in Canada around the government enforcing a more benevolent structure on Facebook and Google in particular, to basically get them to underwrite journalism or force them to. Pay, media that ends up surfacing inside of their interfaces.
+
+And basically meta said, okay, we don't need it. So, we will just stop promoting that or featuring that content in our feed. T b D on Google, how they end up navigating it. But not having media inside of the search experience feels like a big, gap to me. And what they're saying is, Hey, listen, we provide, vital, links to your content through our service, and you can then go out and monetize that and we should not be paying you for the right to be listed inside of our service.
+
+And it appears to be kind of coming to a head in Canada. Like I said, Meta's kind of opted out, but. Brian circulated an article that suggested that people perceive the search experience to be better and more valuable when it includes media snippets, that doesn't surprise me. Of course. your use cases in search are sort of information navigation I guess product research, or research broadly.
+
+And then, to not have news in there feels like it's diminishes the, the value proposition of search. I'm wondering, and the, it's just getting back to the point we started on, you said, what if we had thought about this differently from the beginning? Is there a different construct that could work, that would've, treated people, media companies particular in a different way inside of that?
+
+Inside of that vortex.
+
+[00:38:07] Alex: it is just like an interesting thought exercise where what if we didn't start with the premise that dare. Traffic is more valuable than our content, right? That was the trade in a way. and I get that, it's not the entire content that's being displayed, but just the ability to find, a link on Google, was so valuable to these media companies that they, they open their doors, and never thinking the, the value that would be provided to Google.
+
+So if you, if you think about it differently and you start closing things up and, building out, the destination rather than just like the, the kind of content pipeline that you have, then you could create a, pretty different world. And I think Google does need. that content, more than they, they let out.
+
+I think there's a, a bunch of content that will always be created for free. There will always be, people who will be ready to, provide a raw feed, to them. But I think it could have significantly changed the landscape. And I think that,this is coming to a head with like, ai, right?
+
+[00:39:05] Troy: Yeah, it is. And, obviously Google benefited from a kind of divide and conquer opportunity where they had all the leverage 'cause they were a single distribution point and there was millions of people willing to to feed it links. 
+
+[00:39:16] Alex: right, But it's the same, same as Apple with iTunes. I think they also struck a bad deal. Like people were just, opening up the floodgates and if they could have held back for a year, they might be better off. I 
+
+[00:39:26] Troy: Maybe, I mean, I, I think that the, there's a sort of simple logic that you could apply, which is as soon as content becomes part of the aggregator's value proposition, not merely navigation, right? So it's not just a link, but what was cited in this study, we can put it in the link is, or in the notes that is that when people search for things, they see the headline and a one line summary as part of the experience.
+
+And that in of itself is, in many cases, fulfillment.
+
+[00:39:56] Alex: Right.
+
+[00:39:57] Troy: so as soon as your content becomes part of the aggregator's value proposition, you have to change the math of that business relationship, and that's what AI's gonna do to it. So it needs to be not just the quid pro quo is, you list me and potentially send traffic to me, which I might be able to monetize via some mechanism.
+
+But that if I am, present on your page, the math of our relationship becomes the value of that page to you. Google plus the link. And so I get a share of, potentially get a share of any value that's created on that particular, search response. I think that, that's where it has to go.
+
+It can't just be citations or links. and the reason that AI makes it so gnarly, Is because in many cases, the content's all mashed up into an intelligent response from the machines, and you don't know its source.
+
+[00:40:51] Alex: I think people are always really bad at predicting, you know, when we talk about technologies and new technologies,we are always really bad at predicting the user interface revolution that comes with it, right? If you actually look at science fiction, the way user interfaces exists, like anything, right?
+
+Whether it's on a screen or, or whatever, it's usually very unrealistic. It's kind of a, it's an afterthought there's much more of a conversation around the core technology and the societal impacts, but so much of what we've lived through are massive interface changes, right? So media thought, Hey, people read our articles, so if we put a link to the article on Google, people will click on that link and then come to our article, right?
+
+Not understanding that the interface shift and the paradigm shift for users would be, no, I can actually get enough. Just scanning that link and a little blurb underneath it. there was an interface shift and, and when you shift to ai, the idea that a link with some sort of like source attached to it is going to mean that people will go to that source is, is just backward thinking.
+
+Nobody's gonna do that. there's 0% chance that this will get, any significant people will get any significant traffic. So we need to look at that shift in behaviors that will happen once a computer can give me most of my answers in a way that is formatted for me, that doesn't require me to jump around websites, websites will start feeling completely useless unless you give me a reason to go there.
+
+and that reason might be I need to go to the New York Times to read that article and it adds a little bit of friction and there's space in that friction to add advertising. but as. It's the only place I can get that information. So unless, media companies are willing to lose out even more to this new kind of interface shift, I think they're gonna want to close their doors a little bit.
+
+And OpenAI just announced a way for, sites to add a little robot, that txt type thing that doesn't, scan their site. which is great. too little too late, considering they scanned the whole internet already. but it's, it's always the interface shift that fucks with people. Music industry, the same thing, somebody came in and had a, different way of, getting songs. they got messed up by Napster, then Apple could just step in there and give them, a bad deal and they had to take it because behaviors had changed and behaviors are going to change. so the conversation around like.
+
+[00:43:07] Troy: in a world of abundance, the interface owners do extremely well. so that's a big part of it. And, and that's actually why this week the, the New York Times dropped out of this sort of, I think Barry Dillard driven consortium of media companies looking to apply pressure to OpenAI and others, Microsoft, et cetera, to try to.
+
+Create kind of a, critical mass of lobbying power to, refactor the economics of those relationships. And the truth is, is that if you're the New York Times, it's one of the few that, defies gravity in a kind of Taylor Swiftian way in the world of abundance, right? So, pe-people need you, when you become a power broker in this kind of new interface relationship, then you're likely, in really good shape just to kind of, stand alone.
+
+[00:43:54] Alex: I don't think there are many lessons you can glean from that, right? I think, whether it's Taylor Swift or the Barbie movie in Oppenheimer, or what the New York Times is doing, the rest of those industries can't look at that and say, okay, well here's a playbook. because they're in very unique positions.
+
+These are very, unique events. I think the rest of the folks, are going to have to try to really quickly figure out what makes them unique and what, what makes their content valuable, either because I. Somebody like Google needs it so badly that they will pay for it, And give them some form of recurring revenue, or because their interface is so unique that it can't be displaced, by ai.
+
+An interface which is unique is something like Wordle, for example, which is why video games are pretty often protectable like that. but content itself can be, just mashed up and, and resold and without any trace of the original content.
+
+So that's gonna be really, really painful. And I, I think that, the whole paradigm of the internet, it's not that I want it to change, but I think it has to change. and I can't see us going back,
+
+[00:44:57] Troy: But I do think it's conceivable that above a certain volume, not unlike say, how creators are compensated in a, on a platform, Twitter or any other one, that above a certain volume, you become eligible for a rev share relationship with Google. where, you're not just compensated by link value, but by, your content's value inside of that aggregation interface and you're, just part of an automated payment program that can, accommodate a lot of, players.
+
+listen in subscription-based closed ecosystems like cable, this happened all the time. It's just that it was manageable. Like local television stations would negotiate retrans fees because their content feed was a valuable part of the, the cable bundle. Or if you were an individual cable channel, you would get paid as part of that overall, basket.
+
+So it worked when there were a controlled number of flares in the ecosystem. It doesn't work. You really have to think it through when it's, when you're the directory for the internet.
+
+[00:46:00] Alex: Yeah. and when there is a technology that's been unleashed into the world that we can't really kind of, see around corners with, because, open AI is claiming that chat, G P T five Achieve like close a g i, you know, some people are saying, definitely pass the Turing test.
+
+Google stuff is saying that the stuff that they might release in October or November is better than chat G p D four. And I think we don't understand what even like a 20, 30, 40, 50% improvement on these models does to the way we consume, media and the news. and at the end of the day, so much of the industry is built on stuff that, is pretty repeatable, recipes or, weather or, market recaps or stuff like that, all that stuff becomes, really difficult to own. Unless, unless you can put a very specific interface to it that makes it worthwhile. 
+
+[00:46:50] Troy: Mm-hmm. No, the inter, I love the interface point. I think it's a really good one, but it's really hard. It's really hard to differentiate with interface.
+
+[00:46:58] Alex: Well, especially, I mean, to this day, right? Like when people tell me like, designers are going to be replaced by ai, I think you cannot spend an hour in your day without being faced by a terrible interface that makes your life miserable. So all of these things are opportunities for someone to come in and, and displace that product, right?
+
+Whether it's like in-car stuff or way to order food on your phone. These are all interface, improvements and I think media needs to, look at the interface as a potential defensible space as, I guess my, my
+
+[00:47:28] Troy: Yeah, but individual media can never do it. They've tried. It's almost impossible. I'm open-minded about it, but I, I just think it's, it's a, it's a real steep hill. I do think that there is a problem with modern media interface right now, though, at least from my perspective, because I get a lot of my media via email.
+
+And I can't say that that's a very good interface for media. I appreciate the simplicity of email, but the way that, it comes into my box, I use Gmail mostly, a lot of it gets lost. A lot of it gets pushed into another tab. it's hard to, prioritize.
+
+what I wanna read when, there's, there's no preview. I know people have tried to solve it with, email client innovation, but it's not very good.
+
+[00:48:12] Alex: No, and, and I think there are two ways of looking at the problem right now is either you can of improved the interface of that, And you create some sort of reader and it adds another app and another icon on your, on your desktop, I could say that r s s fixes that problem and our s readers fix that problem.
+
+but then email is such a great distribution platform. Or you look for a year or two and you say, well, in a year or two that won't even be a fucking problem because you won't even read your email. Something will just make a custom thing that looks the way you want it from all the stuff that you receive, and that you consume in, in the way you want.
+
+[00:48:45] Troy: Yeah, a lot of it o often, and I, for some reason, it, it's never really been solved, but points back to the browser as being an opportunity for innovation.
+
+[00:48:54] Alex: Yep. do you wanna go into a good product? Because I think that segues to a
+
+good product for me. 
+
+
+[00:48:59] Good product
+---
+
+[00:49:00] Troy: I don't have, unless you have one, I don't have
+
+[00:49:03] Alex: Oh, I, I do, it's actually, it's actually related to the conversation. 
+
+It's the arc browser by the browser company, and I'm not sure we talked about it before. in the last few weeks they re they were in closed beta for a long time. Been using it for a long time. And it is browser innovation.
+
+It's based on Chrome, so it'll run everything you want, but it has, a lot of, ways of organizing and consuming content on the internet that makes, using the web, much more pleasurable than I started. actually uninstalling some of the apps that I was using and using the web versions. You know, some of it is as simple as fixing tabs by having them on, on the left side rather than at the top.
+
+but it's also the way it loads stuff, the way it allows you to take notes, the way it allows you to change and fix
+
+[00:49:45] Troy: Wait is there is a built-in note taking 
+
+function? 
+
+[00:49:49] Alex: Yeah, there's a built-in note taking functions. You can create things that they called canvases, which you can take snippets of websites and organize them. you can download like read skins for any site that you like, so, so a lot of these kind of, you can make Reddit look good. and it's generally just like a, a, great new model for the browser.
+
+One of the first times somebody's tried to make a browser that does things differently. and it includes this idea of spaces where you can have just a bunch of tabs open that are for work, for travel planning, et cetera. And it's just made the web so much more useful. And this is one of those things where without changing the underlying technology, you build a better interface for something and all of a sudden that thing becomes more useful.
+
+I think that's what Slack did with I r c. They basically built a nice interface to something that existed before. and I think everything's right for that email. how you use your calendar messaging, all that stuff is, is always an interface upgrade away from, from feeling more useful. So I recommend the ARC browser.
+
+[00:50:45] Troy: I am gonna try it. I'm gonna try it. thank you for that. Appreciate
+
+It 
+
+[00:50:49] Alex: takes a second, takes a second, to get used to, but it's, it's great.
+
+[00:50:52] Troy: You're right about Slack. You're right about Slack though, because I love Slack it makes that type of communication feel easy and good. And I'm a big fan of bringing data feeds into Slack, as a
+
+way to Yeah, I'm, I'm really into it, and we had this conversation on a call I was on just before this, which was, we're creating dashboards like crazy in this company, and no one's using the dashboards because it's like this behavior where you have to stop and say, I need that information, and go navigate informa, unless it's really, really primary to what you're doing, like you're an analyst using Bloomberg all day long.
+
+But like dashboards throw people into new use cases that often become associated with, work or hard, hard things and people don't use them.
+
+[00:51:41] Alex: Right, which is why there was always a thing, like with with engineering teams where they would use a ticketing system that was horrendous and asking why nobody would use it. And it was always kind of that interface gap that people didn't want to cross. And it's why I'm so optimistic about conversational interfaces, Where using a conversation stream is so, It's so intuitive for most people. The thing that was missing was the underlying logic to create messages that feel readable and that build that data into something useful. And that's what AI brings us, Like, show me this. Okay, now compile it into a table or organize it alphabetically.
+
+And that will, for most people in an organization, beat any Tableau dashboard that you can do.
+
+Right. 
+
+[00:52:24] Troy: Right. Also, and there's a follow up. no, I really wanna see this. You 
+
+showed me 
+
+this 
+
+[00:52:30] Alex: right, 
+
+Exactly. Yeah. 
+
+
+[00:52:32] Outro
+---
+
+[00:52:32] Alex: Well, 
+
+[00:52:33] Troy: that 
+
+was, 
+
+[00:52:33] Alex: we did it. 
+
+Well, thank you. We'll see you all next week, hopefully with the three of us . until then, like, and subscribe. We've been getting some good comments, and some good reviews, which is very nice to see. So bye. 
+

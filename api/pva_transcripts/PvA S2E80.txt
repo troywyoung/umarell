@@ -1,0 +1,963 @@
+PvA S2E80
+===
+
+[00:00:00] Alex: Is our audience just the executive class now, just people like Troy.
+
+[00:00:03] Brian: this episode speaks to the, soul of the middle manager. They feel disempowered.
+
+[00:00:08] Troy: sort of senior management right now.
+
+[00:00:10] Brian: who feels powerful right now?
+
+[00:00:12] Alex: I felt disempowered today. I got into my Tesla they decided to do an update, which turned on autopilot and the action I usually used to take to turn on cruise control, took my control away from my car. And it just started driving itself.
+
+[00:00:26] Brian: Oh really?
+
+[00:00:27] Alex: that sounds like a lot of lawsuits.
+
+[00:00:28] Troy: isn't that what Elon promised you? 
+
+[00:00:31] Alex: it's called, full self driving in parentheses. 
+
+[00:00:34] Brian: Not really.
+
+[00:00:35] Alex: not really. Yeah.
+
+[00:00:36] Brian: Don't sue us. 
+
+[00:00:38] Alex: So yeah, not a good product.
+
+
+
+
+[00:01:02] Intro
+---
+
+
+[00:01:02] Episode start
+---
+
+[00:01:02] Brian: Welcome to People Vs. Algorithms, a show about patterns in media, technology, and culture. I'm Brian Marci, and I'm joined this week by both Troy Young, long time media executive and investor, and Alex Schleifer, former head of design at Airbnb and the head of Human Computer, a video game company. Alex is back from his journey to the edge of the world.
+
+Big thanks to Sarah Fisher and Emily Sundberg for joining us. For their guest toasting duties while Alex was exploring Fiji. We plan to continue having guests on the show. Our one requirement is that they do not have PR people who ask for the questions ahead of time. we just don't do that. It's not that kind of show.
+
+But we would love to hear your suggestions. If you could send them to me, that would be great. my email is bmorrissey@therebooting. com. That is M O R R I S S E Y. You can also just use brian@therebooting.Com and get those too. 
+
+This week, we're discussing power. It is a subject that doesn't get enough attention, at least on the personal level.
+
+It's something that Troy has noticed and I have as well. And it's that we're in a time when many people feel disempowered. I talk with lots of people regularly who are at a point of their careers where they're Where they don't feel like they have control necessarily about where it goes next. And I think part of that is just the economy is changing.
+
+And, and the advent of AI is, is empowering to a select group of people, usually the high priests of technology, go figure. But from what I can tell, it's a threat to a far greater number of people. And I think that makes it a really interesting technological development. Usually these things come in and it's all about the underdog leveling the playing field.
+
+And there's some of that, but it's a harder sell, these days because these companies that are developing these systems are massive and extremely powerful already. Now, understanding power is important to anyone navigating life. I wish I'd understood this earlier, actually. And there are times when you mistakenly believe you have power, only to be rudely informed that you absolutely do not have that power. It isn't a great feeling. And, some people are squeamish, about power or even talking about it. It feels gauche. And many of those who lust after it are awfully sweaty. But in the end, it's better to be powerful than cool. And much of the important parts of life revolve around who has the most leverage in a situation and leverage is the application of power. So that's going to be our topic today. I think it dovetails well with AI. Since AI promises to both centralize more power with these giant tech companies who can pay for all this compute, but also to disperse power even further from institutions to individuals in particular. And I have no doubt that AI will further disempower many people, But I do believe it will present unique opportunities for those who are well positioned to get power. And it's something we discussed in this episode. I hope you enjoy it. and if you do, please leave us a rating and review on Apple or Spotify. Oh, and recommend the podcast to others.
+
+I would choose LinkedIn for this, but it really, it's up to you now onto the conversation. 
+
+All right. So, glad to have you back, Alex. How was your, Journey.
+
+[00:04:08] Alex: Oh, it was big. Yeah. I had a, I had a long, long
+
+[00:04:11] Troy: Alex is, is really insecure, so he needs to hear things like that, Brian. I'm glad to have you back too, Alex, for the record.
+
+[00:04:18] Alex: Wow. That was just like, where did that come from? Coming in hot. Well, I was glad to be
+
+back until about two seconds ago. 
+
+[00:04:25] Troy: when you send sad texts, you bring this on, right? It's like, Oh, you guys can do it without me. You don't need me. I got you started.
+
+[00:04:33] Brian: we'd have, we'd, we did have a couple of good guests,
+
+[00:04:37] Troy: Bangers, we had 
+
+[00:04:38] Alex: Yeah. Yeah, he did. I thought you did well. And, and honestly, like, I meant it genuinely that the podcast works without me on it, like I mean it. So it's good because I like taking vacations. I get tired of you, honestly, like. Talking about media is fucking boring sometimes.
+
+So, you know, here we are.
+
+[00:04:55] Troy: for yourself, Alex. think it's titillating.
+
+[00:04:59] Alex: I was out of everything. I stopped reading the news for a while. I only listened to the episodes and only partially. 
+
+[00:05:05] Troy: You know, I can call Brian and talk about media even outside of the podcast and have a good time.
+
+[00:05:11] Brian: Let's get into the podcast itself. We're going to talk
+
+[00:05:13] Troy: Are we wasting, are we wasting your time,
+
+[00:05:15] Brian: Not at all. 
+
+[00:05:17] Troy: You, you making a power move there? You're going to try to take control of the episode.
+
+[00:05:21] Brian: That's what I've been told to do. So I want to get to the power cause you wrote about power. You were just raising your finger toward you. Is there something you want to add?
+
+[00:05:29] Troy: No, I don't, I have nothing to add.
+
+[00:05:31] Brian: Okay. I wanted to go through a few quick news items. The first was, this is going to totally bore. Alex, Jonah,
+
+[00:05:39] Troy: have some, he'll have
+
+[00:05:40] Brian: Jonah Peretti, who it's actually come up a couple of times that, when, Alex said Jonah, who, cause in the media world, you
+
+[00:05:47] Alex: Well, you mean, you mean, so, sorry, just so we're clear, you mean Chelsea Peretti's
+
+[00:05:50] Brian: Chelsea Peretti's brother. 
+
+[00:05:52] Alex: BRooklyn nine nines, Chelsea Peretti's brother. Okay, great. Now we know
+
+the audience needs context. 
+
+[00:05:58] Brian: does these annual letters and he started them like a long time ago. And, and I was always like reading them. Yeah, that now it's like public traded. So it's a part of the, the whatever 10 K. But he dropped another one and Buzzfeed is obviously at a different point.
+
+But it's easy to roll your eyes, but the letter was basically saying it's all about AI now. 
+
+[00:06:18] Troy: Didn't he already, didn't he say that a little while
+
+[00:06:20] Brian: Well, he said a lot. He's thrown a lot against the wall. I'm trying to get him to do a podcast. So Jonah, if you're listening, let's do it. 
+
+[00:06:27] Alex: WE'd rather have his sister on, actually. She's way funnier.
+
+[00:06:30] Troy: yeah, I was hoping he was going to say his company is now post 
+
+[00:06:34] Brian: No, he did throw in the towel on, the platforms ever actually, paying, him or publishers. He said, despite my best efforts, I haven't been able to convince the platforms to cultivate a media ecosystem where quality publishers can thrive when the allure of commoditized content and zero and low cost creator labor is impossible for platforms to
+
+resist. 
+
+[00:06:59] Alex: But does he know that the, the same platforms are also the ones doing the AI?
+
+[00:07:03] Brian: Yeah, unfortunately. So one of the stats that came out was like from 2020 to 2023, Facebook traffic at Buzzfeed declined 74%. I mean,
+
+Ouch. they ended 2023 with,
+
+[00:07:22] Troy: What do you think the cultural impact of what that was? Do you think that conversations at bars and college cafes got less interesting? What happened? What took, what took the time up?
+
+[00:07:32] Alex: Well, I mean, I, think Facebook just figured out that keeping people on their site was better than sending people to another
+
+[00:07:39] Brian: yeah, they were just,
+
+[00:07:40] Troy: I'm saying net net, if there was a million hours of time spent on BuzzFeed, A lot of that time went away
+
+[00:07:46] Alex: Yeah.
+
+[00:07:46] Troy: and it went somewhere went to TikTok, it went to TikTok, it went to memes, went to all kinds of things. It was,
+
+[00:07:52] Alex: People stop eating, people stop eating Skittles and they started eating M& Ms instead. Everybody was as bad off as before. It
+
+[00:07:59] Troy: Okay, thank, thank you for the, the analogy. I was just maybe, I was wondering if, if we got healthier or less healthy or no, 
+
+[00:08:06] Alex: no
+
+[00:08:07] Brian: difference because it was, BuzzFeed was the Bored at Work Network, so they called it, and that just gets replaced by other, I would call it junk food, but yeah.
+
+[00:08:18] Alex: I would say that TikTok is probably more potent because if you look at kind of like the usage of TikTok is like that those are through the roof, right? So 
+
+[00:08:26] Troy: least you don't have to, at least you don't have to read.
+
+[00:08:29] Brian: Well, you know what, I mean, BuzzFeed was doing basically optimizing to these triggers in a very, Non AI way, right? And that now we're seeing you cannot compete on this with. That's why I stay away from TikTok is, BuzzFeed was almost like the advertising dot com of optimization, you know, advertising dot com used to was an original ad network that was doing optimization from like a boiler room in Baltimore.
+
+And it got replaced by programmatic, which you could use computers to do this way, way
+
+[00:09:02] Troy: Is that, was that how the wire began?
+
+[00:09:05] Brian: The least interesting, version of the wire, which I hope AI will give us could be one that just make the wire, but make it about ad tech and advertising. com and the Ferber brothers. 
+
+[00:09:14] Troy: So, Cargo takes on like, is one gang and they take on like the other, Mobile rich media network
+
+[00:09:21] Brian: Harry Harry Cargman will be in there. Are you guys going, by the way, are you coming down to Miami next week for possible? There's going to be like all kinds of ad tech companies here and marketers.
+
+marketers, CMOs.
+
+[00:09:35] Alex: I didn't fly for the eclipse, but I'll do, I'll fly for some CMOs. 
+
+[00:09:39] Brian: Let's do it. Is that the Fontainebleau? They 
+
+call it 
+
+[00:09:42] Troy: is the eclip, this is the, the, the equivalent of the eclipse in the ad network world.
+
+[00:09:47] Alex: I got it.
+
+[00:09:47] Brian: pretty much. Anyway, so
+
+[00:09:49] Alex: get us, get us somebody that will sign a check and we'll all come down. We'll put on the t shirts and everything. We'll
+
+[00:09:55] Troy: When you walk in there, Brian, do people, are you a bit of a celebrity in that
+
+[00:09:59] Brian: No, I'm not a celebrity in any world. I mean, I'm gonna, I'm going by for sure. I'm gonna ride my bike.
+
+[00:10:05] Troy: you have to pay to get in?
+
+[00:10:07] Brian: I have a pass. I have, 
+
+[00:10:08] Troy: Yeah. All right. Is that like a delegate pass?
+
+[00:10:12] Brian: I don't know what it, it, I just got the email today. I, 
+
+[00:10:14] Troy: So you don't have to be part of mainstream media to get those kinds of goodies.
+
+[00:10:18] Brian: you gotta work the angles.
+
+[00:10:20] Troy: Right. So, so I'm looking forward to a newsletter coming out about the conference. 
+
+[00:10:24] Brian: I don't know. It
+
+[00:10:25] Alex: It'll be 
+
+tasteful. 
+
+[00:10:26] Brian: Are you suggesting I'm doing some kind of like pay to play kind of thing
+
+[00:10:30] Troy: Yeah.
+
+[00:10:31] Brian: to, for access 
+
+[00:10:32] Troy: I just wanted you to tell everybody you're for sale.
+
+[00:10:36] Brian: I mean,
+
+we're all for 
+
+sale. Anyway, BuzzFeed said that, Jonah had said, he said, we had a choice where we reset BuzzFeed's strategic direction earlier this year. We could have become more of a media company, more of a content company, more of an agency that makes content for clients.
+
+These are all past. And instead we chose. to move in an opposite direction to become more of a tech company. Now, Neil Vogel has always told me to run away if any media company claims they're a tech company. But then Jonah goes on to talk about a tech way of thinking, which is, doesn't sound like technology.
+
+But he says, that's, what's going to define our shared future. Companies grow and thrive when they prize scalability, technological leverage, zero marginal costs, machine learning, and positive feedback loops. There is a reason TikTok beat Quibi. Buzzfeed pivoting to AI. Troy, any thoughts?
+
+[00:11:27] Troy: Well, I like Jonah and I think he's way smarter than me, but I thought the letter was, was kind of wah wah. And, it was good to see him take a little bit of a victory lap for, All of the sort of media types that we now snicker about that were inspired by BuzzFeed. And I think that's true. I think that they created, a type of storytelling that was a defining part of a moment.
+
+And so, all credit to, to him, his early experiments in virality that came out of his work at, at MIT and, the kind of pioneering work in listicle creation, their style of making videos, how they did food content, but I circled back to the site today. There's a but, but I circled back to the site and I learned, A bunch of things that I didn't know about celebrities, which was the lead story.
+
+He, he's got a lot of work to do. I think but like the choice is like, okay, I'm going to get rid of everything.
+
+I'm going to cut down my expense base. And I want to keep doing this BuzzFeed thing because it's my company and I built my whole life around it. So I'm going to come out and do this. We've always been better at merging, creativity and technology together and making media around that. And that's what we're going to bet on.
+
+I don't think it's any different than what he said before, which it shouldn't be, I suppose. And, good luck to him. Good luck. I think that it was really the only path and I think if you close your eyes and you imagine a new kind of AI enabled media company, you see something, it's a blurry figure somewhere in the future.
+
+And I don't know exactly what it is, or I don't know exactly how it competes. And I don't know how it entertains people. But you could imagine that that is a A future that you could subscribe to and that you could maybe get a bunch of people to buy into And you know, I just think we're a long way from seeing how it's actually going to both compete with platforms and ai and creators and actually compete for media dollars.
+
+So good luck to him it feels like he had to write the letter and he kind of had nothing to say
+
+[00:13:32] Brian: Yeah, I don't know how you become a tech company when you, your R and D spending declines 60 percent year over year, to like 11 million and there's just
+
+not the 
+
+[00:13:42] Alex: that ChatG, that ChatGPT subscription is twenty bucks so, there you go. It sounds to me likethey don't t have access to unique reporting They don't have an infrastructure like CNN the content that they create is content that can easily be user generated is meant to feel user generated and they're moving into a fight, which the platforms will always win.
+
+They just came out of a fight where the platforms, kick their ass. And now they're moving into another fight where the platforms can just turn whatever they're doing into, a sub feature of, of whatever product they're building. I, I don't. Understand the strategy.
+
+[00:14:22] Brian: I 
+
+[00:14:22] Troy: what's your idea smart guy?
+
+[00:14:25] Brian: what did you,
+
+[00:14:26] Troy: What do you got?
+
+[00:14:27] Alex: you either a platform player, or you have some sort of IP that allows you to feel, to be unique. People want to feel something. They want to be connected to real people. If you have, if you want to build an audience and you want to slow things down and start building a true audience that comes to you for the stuff that you build for the, Characters that you have on your side, et cetera.
+
+If you want to build specific utility that is not available anywhere 
+
+else. Sure. But like what else, what is Buzzfeed, but an aggregator of like stuff that is meant to look like. A UGC feed. I mean, that's, that's 
+
+what I would like to hear.
+
+[00:14:58] Troy: if I told you I was an AI avatar, would you change your mind?
+
+[00:15:02] Alex: No, 
+
+[00:15:03] Troy: Made by Buzzfeed? it sounds like you're dismissing my point. I mean,
+
+I'm not, I'm not. I think it's, it's a really good point. You're saying that you go to one side or the other.
+
+[00:15:12] Alex: you go to one side or the other right now. Yeah. and I feel that the technology is going to become completely. Commoditized. So there will be a lots of AI avatars and AI generated news and all sorts of people trying different stuff out, pushing it across a bunch of different platforms, including the open web.
+
+And, and where do they stand?
+
+[00:15:31] Troy: You know, I, hate to be The sort of pragmatist in the room, but you know, you got, I don't know, a couple hundred million dollars of media revenue. You have an audience. You've got these channels still all over social media. You got a big following on. On, on YouTube, you have a sales team and that's what you're going in with Alex.
+
+So you got to figure out how to keep people employed and, continue to earn a revenue, and then you got to tell the public that you're, you're kind of working on it. And so the logical thing is to say that you're an AI company and then figure it out as you go. I think that the, the, the game that we're talking about, has a lot of constraints is all I would say is as a pragmatic voice on this.
+
+[00:16:14] Alex: Oh, I understand why you have to say it. That doesn't mean that it's gonna work. I think that's a different story. Like somebody had to, you know, somebody has to say it, everything's going to be okay.
+
+[00:16:25] Brian: Yeah, this is, this is a recurring theme and it's going to continue that everyone has to say something about AI and it will become increasingly ludicrous. Jamie Dimon has said that he is, quote, completely convinced that AI will transform society, like the printing press, the steam engine, electricity, computing, the internet, and then he uses all these hedge words, like possibly, might, we do not know the full effect or the precise rate.
+
+It's like, Oh, thanks, Jamie. I'm 
+
+[00:16:58] Alex: I'm fully, 
+
+[00:16:59] Brian: you
+
+[00:16:59] Alex: I'm fully convinced that this thing might maybe happen.
+
+[00:17:02] Brian: Yeah. 
+
+[00:17:03] Troy: Maybe Jamie Dimon wrote Jonah's note.
+
+[00:17:07] Brian: I mean, why does that, why, why do they have to, cause he had to do his own annual letter and it's like, okay, let's talk about
+
+inflation, talk about ink, and then he's got to do the AI bit. 
+
+Ridiculous. 
+
+[00:17:21] Alex: it, it, it is. really important that I've been beating that drum for a long while. I think at the moment it's kind of losing, well, what do you, well, the, AI is the spaceship hanging over the space station and everybody's just like,
+
+you know, talking talking about, you know, the latest episode of whatever the fuck I think that at the moment we're kind of in this, Place where everybody just needs to mention it.
+
+But there's like real shift coming, right? People are doing, recruitment plans that are based around potential, just like AI savings. a lot of that stuff is changing. I think the next couple of years are going to be really interesting. 
+
+[00:17:59] Brian: I think so too, but I think we're going to enter a silly season. And. Because, okay, so Elon Musk then, pops up to say, just offhandedly that, oh, AI is going to be smarter than humans. It's going to be next year. It was pointed out in the Guardian that in 2016, Elon Musk said that within two years, it would be possible for Tesla to drive autonomously from New York to Los Angeles.
+
+Didn't happen. Also that year, he said SpaceX rocket would fly to Mars in 2018. 
+
+[00:18:31] Troy: buT he did build a rocket and he did 
+
+[00:18:32] Brian: That didn't happen 
+
+[00:18:34] Troy: did change an industry
+
+[00:18:36] Brian: 2017. He said
+
+[00:18:38] Alex: Okay, he did not, he did not build a Rocket. 
+
+[00:18:40] Troy: Uh, rocket scientist built the rocket,
+
+[00:18:45] Brian: Oh, wait, you're saying just because he didn't personally build it.
+
+[00:18:48] Alex: Yeah, like the, the, the CEO of Pfizer didn't invent the cure for whatever, like it's, so I think his predictions are often based on, just whatever. Yes. Oh, I mean, I think, well, I mean, you know, what do you mean? He's This guy just turned on autopilot on my car without wanting.
+
+I just wanted to keep it at 65 miles an hour. And the thing took over and started steering itself
+
+into, well, it, it had done it correctly and didn't nearly crash into another car, it would have been super cool, but the problem is he's got like 20 webcams stuck to the side of these things and they can't do the job.
+
+I mean, it's, he's super smart, he's got lots of things, but he's also reckless and he's also one of those people that likes to throw out a number to motivate his teams. So, so that's what happens. And we don't even know how to qualify human intelligence in that way. What does that mean?
+
+[00:19:44] Brian: do you have, do you have, well, that's another thing people are going to, we're going to have a great silly debate about, when it is actually more intelligent than human beings. 
+
+[00:19:52] Troy: know, one of the cool things that I think is interesting about this AI wave is that unlike software driven innovation phases of the past where the focus was on developing software and the network effects around that that did different things. This is about a technology that is very intimate and close to the metal, to the, processing power, which means that, he or she that has the most processing power has a massive advantage, which means it's sort of like, if your brain is bigger, you're smarter and so you're going to get this like crazy, crazy, new reality where, the person with the most servers has the most power.
+
+[00:20:35] Brian: but isn't that a normal phase? Like when we had to like, hear all about Worldcom and all the people laying the fiber because you have to lay the fiber. And I don't think it's interesting when people
+
+[00:20:44] Troy: Yeah, there was that moment. There was that moment in late nineties, early two thousands when the foundational pieces and, you know, Cisco and, and, companies that were building the foundational layer of the internet were, were, you know, very, important, growth companies, but, no, this one is, is legit different because it's just like the more.
+
+horsepower you have, the more compute horsepower, the better the outcome.
+
+[00:21:08] Alex: Yeah. But I mean, because it's also, you know, such a scorched earth fight for whoever's going to get there first, they're competing against LLM models, they're competing against like really. You know, everybody's dropping their, their prices, providing more value for them. And it's also what I find more interesting is that it's, opening up the field for the amount of people who can participate in the creation of software, right?
+
+You have this access to like computer logic now that is much wider. Then, then before, like, you don't, you don't technically need engineers to do some sort of computational actions.
+
+Right. Well, I mean, already I can tell you already, you can, what do you mean? Theoretically, can you not upload a PDF into it and ask it questions that would have taken you, three weeks on an engineer to do before that, like it's not theoretical.
+
+And I, and I think that as these things become cheaper. And commoditized, you all, you'll also have computing that is basically accessible to more people. And we'll be seeing a lot more interesting stuff and a lot more competition coming up in all sorts of ways. I think both the very large companies and the very small companies are going to benefit heavily from this,
+
+[00:22:18] Brian: Hmm. I think the AI is, it's, they're annoying to talk to. That's my big takeaway.
+
+[00:22:24] Alex: but don't you find everyone annoying to
+
+[00:22:25] Brian: No, no. I find them particularly, I like, I brace for the answer. Cause it's going to be like, well, this is a, you know, you should really check with others. I'm like, would you stop it? Like
+
+[00:22:34] Troy: Well, you can, you can ask it to answer differently. 
+
+[00:22:37] Brian: I shouldn't have to it's just annoying. And what I've noticed is AI is becoming an insult, like to people. It's like your AI. And 
+
+[00:22:45] Alex: People are saying the new Beyonce album cover is AI because they don't like it,
+
+[00:22:49] Brian: yeah, because it's, it's going to, and I think this is an actual risk to its adoption is it becomes synonymous with mid, I think that's how you say it, like it becomes synonymous with. crappy Stuff that like someone who doesn't have taste in that particular area thinks is good enough but it really sucks 
+
+[00:23:09] Alex: I think that's a good thing because that's where it should exist in the creative process where it is mid because it's accessible to all. And therefore, if something's freely available to everyone to create freely, like. The, the new music stuff has been crazy.
+
+I don't know. You can put a prompt and it creates a whole music track those songs sound, you know, like songs, but knowing that it's AI, turns it into something that has no value, because it was created with no effort and therefore it has no value because everybody can create the same thing with the same prompt.
+
+So it is its place because at the end of the day, where this thing needs to exist is to amplify. the ability for humans to create interesting things, it used to be the highest art to be able to kind of letter set, and, and print something now, like changing the font in, in word is, is mid, like you need to.
+
+Go beyond that. So I think it's absolutely correct that that's where AI should exist. And everybody is building the tool saying this is going to replace human creative creativity is out of their minds because human creativity has always been around creating value by making people feel something. 
+
+And.
+
+And, and even, even, even, though, even though those AI tools are going to be used as part of the process, the human behind the work needs to shine through, otherwise it's worth nothing. It's worth nothing.
+
+And I'm 
+
+[00:24:31] Brian: Troy. 
+
+[00:24:31] Troy: No, I wanted to
+
+let Alex, 
+
+[00:24:33] Brian: in the document. It's going
+
+[00:24:35] Troy: I, Alex had his moment. 
+
+[00:24:38] Alex: Okay. 
+
+[00:24:38] Troy: no, I was actually, you know, I don't even like to talk about the music stuff. I, I do think that this point that we've made many times is that it's, it's impact on creative industries is more profound, is real. And I was kind of reluctantly looked at Suno just out of curiosity.
+
+The music, Alex, was. really impressive.
+
+[00:25:00] Alex: Very. 
+
+[00:25:01] Troy: really, really impressive. I don't think that we're going to dial up Spotify in two years and say, play me music with this vibe. That's not by, that isn't connected to a human or an artist, but 
+
+[00:25:15] Alex: Believing that, believing that is not understanding the fundamentals of, of art and creativity, right? We, we experience things to feel something and that feeling can only be expressed by another human being and the second we know that it isn't, then it loses its value, and it's why it's why when you see art in a museum, as important as the piece of art is the description of the 
+
+[00:25:41] Brian: Okay, but that is that is extremely like small amount i'm talking about the Background jazz music for concentration.
+
+[00:25:49] Alex: Oh, that's all gone. That's all gone. Yeah, your elevator music, that's going to be custom created for you as you step into the elevator. Sure. Fine. Whatever. That's all gone. But that was never art.
+
+[00:26:01] Troy: tell that to the music guy,
+
+[00:26:02] Alex: Well, I'm sorry, music guy. It was never art.
+
+[00:26:05] Brian: It's not John Mayer. Didn't he make us like whole or no, John Tesh was he, he was the music guy. Wasn't he? Entertainment tonight.
+
+[00:26:12] Troy: John Mayer might find that objectionable.
+
+[00:26:16] Alex: Yeah. Your body is a wonderland. It's like playing in every Miami elevator.
+
+[00:26:22] Brian: Is it? It might be.
+
+Anyway, also on the AI front. Yeah. What else happened in AI this week? Oh, the New York times is using AI to, this was last week, to power audio versions of most of its articles. Alex, you can finally experience the New York times.
+
+[00:26:40] Alex: I think that's a great use of AI. I think that's a great use of AI. I think there's going to be lots of great uses right now. The side that thinks that AI will replace all human creativity and be better for it is wrong. I think the side that thinks AI is evil and needs to be eradicated from the process is also wrong.
+
+But using AI to like, well, I mean, I don't think there is. I think using it as a tool like that is Really exciting. 
+
+[00:27:02] Brian: I think it's great. 
+
+[00:27:04] Alex: What do you think about, what do you think about Google being upset that OpenAI used YouTube data to train their models? While themselves using YouTube data to train their models. 
+
+[00:27:16] Brian: It's amazing. Troy's on, Troy's on Neil's side for the, about this. I mean, YouTube was entirely founded by taking shit that it didn't have rights to. I mean, that's what it was built off of. That's why it bought, that's why YouTube sold to Google, because they didn't have the lawyers to fight Viacom, and Google was like, we got the lawyers,
+
+and it was,
+
+[00:27:39] Alex: also, we, we also Google at that time was the, the, the nice little upstart, everybody loved them. They were just, everybody loved
+
+the 
+
+[00:27:47] Brian: say you took all the shit, just stop the lies, just, you took all the stuff and your position is, 
+
+we can take the stuff.
+
+[00:27:55] Alex: It's very, yes, that's the, that's the position, which I think is tenuous, but it's, it should at least be honest. I mean, I think the reason that they're not saying it is that, the lawyers are saying, just shut the fuck up. 
+
+[00:28:06] Brian: Well, I think that OpenAI, the CTO, what is her name, Mira, you could see, I think they have a Neuralink that just has a lawyer that's just talking in her head when she was answering that question about where they got the data for their, their video AI engine. But yeah, no, Neil Mohan was out there saying that you cannot, take
+
+material from YouTube and train your AI
+
+LLMs on.
+
+[00:28:32] Alex: Well, the idea is that, is that, everything that's on the open internet is being used to learn something. And people used to learn these things. People use YouTube to learn things and create new content. So why can't them? One can't re automate it with machines. I, the, the, the conversation around technology like that is always like, everything changes with scale.
+
+Yes, if you, make an analogy like that, you know, you can absorb all YouTube information and regurgitate it, but the second you scale it up at an LLM model, I think all the rules should change and we shouldn't look at them in the same way. And I don't know if our rules are ready for that, but you know, that's where we are.
+
+[00:29:09] Brian: Troy, any thoughts on this? Okay.
+
+[00:29:15] Troy: my bigger picture thought is, that, we don't like hypocrisy. I think that or seeming hypocrisy in this case, I don't know the details enough to, to indict anyone. I think that all of these companies, and I think a lot of companies grow, because they navigate a new.
+
+frontier in which the rules are unclear. And I think that that's one of the keys to, you know, what's emerged from Silicon Valley, which has a huge ingredient in the success of the country. And so I think that this is one, there's a lot of ambiguity and you're going to see a lot of people bump into, regulatory kind of complexity, particularly around, you know, fair use.
+
+And I think I'm, I frankly am glad it's happening because I love, I love progress and I love, to watch. You know, like I was listening to, I wanted to form my thoughts a little better on this, but I was listening to a very thoughtful conversation between Ezra Klein and, your guy from The Verge, Neeli Patel.
+
+And 
+
+[00:30:23] Alex: That was great. 
+
+[00:30:24] Troy: a, there, there was a back to back podcast. First, the first one was he's a, Computer science professor. His name is Ethan Mollick and it's called One Useful Thing. He was, he did the first podcast. I'd recommend both of these that, that Ezra did. Neela Ezra spent a lot of time talking about, media threats from AI and what might be the regulatory consequences and so on.
+
+And I think that that's not how this works. I just don't think that we can. ever imagine, a kind of fundamental technology or as broad ranging a technology as AI being hemmed in by, our desires to kind of rewind how, media used to be created or the kinds of utilities we create for consumers.
+
+I think that a new frontier is created. I think that this is basically, I wrote about this a couple of weeks ago, a new kind of automation that's hit media that we've never experienced before. And it's just gotta happen. It's gotta play out. We gotta see all the cool things that come out of it. And then as creative people and as humans and as business people, we need to find You know, a new layer of value that we create on top of it and it, it's going to surprise you where it comes out.
+
+I'm just kind of way more kind of 
+
+free market about well, sure. But and I'm also very excited about new technology. I'm, this is like a really exciting time to live in. However, there's like maybe a, an unspoken agreement that was made where we make stuff, we put it on the internet. we let you look at our site so that you can, Give us the traffic when somebody searches for stuff in return, you get to put ads on that.
+
+[00:32:05] Alex: And, and this has turned into, we get to look at your site to know where the site is and where to point
+
+people to, to like 
+
+[00:32:11] Troy: misunderstanding me before you go. I get it, dude. I get it. You're misunderstanding me. I'm saying that that battle will be fought. And if you don't want the bots on your site, Campbell Brown is going to help you with a company that's stopping people from putting bots on your site, unless they're paid for, it's going to play out, the market's going to take care of it, people are going to get sued.
+
+New technology companies are going to emerge to regulate the way bots use your content. I'm not saying that, 
+
+[00:32:38] Alex: But the fight, the fight, is not, the fight is asymmetrical, right? Like there's these giant companies that control the internet versus a bunch of. mean, that's how the Roman Empire took over France. Like, it's like, they'll just walk 
+
+in. 
+
+[00:32:50] Troy: Empire, it, like, ended, 
+
+so, I know. I think about it every day, Troy.
+
+[00:32:56] Brian: I'm surprised it's taken this many episodes to get to where we were always headed, which is for the Roman Empire to be discussed.
+
+[00:33:03] Alex: I mean, we're the only podcast with three white guys where it's not, doesn't come up every twice, twice an episode. 
+
+[00:33:09] Brian: That's a good 
+
+segue into talking about Power.
+
+though. 
+
+[00:33:12] Alex: Yeah. 
+
+[00:33:12] Troy: perfect. Literally, like, 
+
+[00:33:14] Brian: Cause you, that was very prescient, post you had last week. I really enjoyed it. Troy,
+
+[00:33:18] Alex: Yeah. Probably my favorite, most badly written, but favorite newsletter of yours. It looked 
+
+like it was a fever
+
+dream. You just, yeah, it just, it 
+
+just felt, it felt raw. It felt raw, unedited.
+
+[00:33:29] Brian: Let's talk about power because it doesn't get talked about enough, what it is, how you get it, how you apply it, because we all, we all live sort of around power and some of us wield it. I don't know. I don't have much power. Maybe a little bit. 
+
+[00:33:44] Alex: I mean, 
+
+you know, your domain, you 
+
+[00:33:47] Brian: depends. Troy, what is your, what's your take on, first of all, what, what made you write about power?
+
+[00:33:55] Alex: He wants more. 
+
+[00:33:56] Troy: I do, I 
+
+[00:33:57] Alex: say, 
+
+[00:33:57] Troy: for me, I want more for you. 
+
+[00:33:59] Alex: Thank you. 
+
+[00:33:59] Troy: Because to me, power is about, you know, 
+
+dignity. I'm not talking about misuse of power. I'm not talking about the unnecessary use of power over another individual. I think that people that misuse power have their comeuppance at some point, right? That's the story of rise and fall of, people, it just occurred to me, I don't know, Brian, I don't know where it came from.
+
+It came from maybe a lot of people of my sort of vintage and generation feeling like they had gone from positions of power in the media world to being very vulnerable. Maybe it's because of the conversation we had about middle managers, you know, rising to a place of seeming, you know, accomplishment and security in an organization only to be like wiped out. It came to me because I thought of the young people I know in my life, friends of my kids and stuff that. are really having a hard time establishing themselves and feel really powerless in the world. The world's a really confusing place to people like my son on, you know, on a number of accounts without getting into it, just like real uncertainty, like he's a creative person, it's unclear what it means to be.
+
+For him to be a kind of musician in this era, there's a kind of fatalism because of a lot of things they see around them in the world, they just feel disempowered. And I thought, if I was going to give young people advice and it also by the way came from a person who I won't name, who I feel like has a firm grip on what it means to have power.
+
+And. This person makes decisions from that point of view in his life and he happens to have like a lot of means and assets and things but for him the equation is always How am I going to set something up so that I have? the control I need to be able to enjoy my life and control my destiny and To enjoy what I'm doing because I don't have to deal with assholes that have power over me And so I admire how he thinks and I was thinking if I was gonna give a young person advice I would say make your decisions through the lens of power Your personal power and you can define that however you want and you will gain power in different ways.
+
+You might gain power because you own a company You might gain power because you're the kind of person that someone likes to hang with or work with You might gain power because you're an absolute domain expert or you're just super reliable But I don't think people go to young people and say get power, dude You know like you have zero power at the beginning You You, unless you make good choices, you might not have it later.
+
+If you don't have it, you might end up being a 50 year old guy that feels incredibly vulnerable. That's not a good feeling. And you know, it comes in lots of ways. It's not just being rich or, being an owner. You can develop, you know, your own kind of power center in your own sphere in your own way.
+
+But it's a good way to look at life because power to me is dignity. that's kind of where it came From. 
+
+[00:37:00] Alex: That's wonderful troy. I would say we've all met rich people who don'tt have power or who feel that they're kind of stuck within their current Cycle and cannot get out of it. wealth definitely You know plays into it, but it's not always it's not always the answer I was reading this and to me I loved it. I thought it was really great And I thought it applied for, groups of people as well as individuals.
+
+And when I was looking at that, it really kind of reinforced this thing that as much as I can in my life, I want to teach my son, but I also want to kind of push my company towards owning something, towards owning, the means of distribution, or the intellectual property, or the thing, you know, and giving that away.
+
+It happens, especially in gaming, or in film production or whatever you gave kind of publishing rights away For an advanced check, right? You write a book. It's mildly successful And you give that away and then you lose all control over your work and that's always a calculation that needs to be made and trying to secure that is really important
+
+[00:38:07] Troy: I mean, I look at it, Alex. I thought about it from two, two perspectives I'll share just quickly. One is Brian Morrissey, the fellow on the podcast. And the other one is my daughter's boyfriend, Ely. And Ely is a incredibly smart young guy. He's a, environmental engineer. And just, he just kind of has it all.
+
+He's, you know, he's nice to be with and he's smart and he's hardworking. And so he works for a big kind of international environmental consulting company or that's broader than that. But, and I, I say to him, Eli, you know, the next time you're at a sort of inflection point in your career, you need to start, or you really should think about starting your own practice.
+
+I say that because I've, seen so many people that have grown up in the service industry only to be beholden to a structure that they work inside of where they create a disproportionate amount of the value and that it makes a ton of sense for you to, you know, be sort of self determining in that equation.
+
+And it's not, it'll be hard for a little while, but then you can build a, 10 or a hundred or a thousand person consulting company. And I think in, when you're my age, you'll be very happy that you made that decision. And I feel the same way about you, Brian, because I was there the day that you walked out of Ad Week or Ad Age, we were on the street in New York.
+
+You were about to go over to Digiday. It was a good move at the time you became a shareholder. That was a step, but you didn't have control. And I find you happy now. It seems to me that you're happier
+
+[00:39:34] Brian: Well, I think power is interesting to me because, like, I think in terms of leverage and then autonomy, because to me, like, 
+
+[00:39:40] Troy: well, it leverages the application of
+
+power. 
+
+[00:39:43] Brian: is that how you define? Okay.
+
+[00:39:44] Troy: I think that's how I think about it, yeah. yeah. 
+
+[00:39:46] Alex: I think 
+
+that that tracks. Yeah
+
+[00:39:48] Brian: Because I think a lot of people at this point in time do feel disempowered to a degree in that they don't have, they don't feel control over.
+
+they're destined and that's the wrong thing to say, but they don't feel like they have control over what direction that their lives can go. Like whether that's because they're beholden to companies or bosses, or whether it's because they're beholden to the specter of some spaceship that's hovering over the white house.
+
+and that's a bad feeling. It's a bad feeling when you, there's so much out, outside of your control. So I think the next era, and we've talked about a lot on this podcast, is the people who can accumulate measures of power for themselves. I think it's a very good place to be, because it's going to be a very 
+
+[00:40:34] Troy: Yeah, the article, I tried to then break down what would you What would you suggest as a path to doing that? And obviously ownership or control is, is a path. And I think that we created, the point I made is I think we created this kind of exclusivity around entrepreneurship that meant that it was only for the very few. So if I had asked you 10 years ago, Brian, are you an entrepreneur? I think you might've said, Probably not. You know, I'd rather other people take care of that. I don't maybe see myself that way. But today, maybe because life steered you that way, or you had to survive or whatever, you're very much an entrepreneur or probably see yourself that way.
+
+Part of it is just the tools that are available to people make sort of self determinant roles in the economy much easier. But I would also say that there's, there's another one that I would it leads to in my mind and I call it full stackers. And I love full stackers. They're, Alex is definitely a full stacker.
+
+they're people that can turn on the computer, make a logo, send it to the printer, Come up with a strategy. Deal with people on the other end of the phone, figure out how to build a business around something. They're just, they're people that can use the tools to get things done and.
+
+I force myself to do that. It's like when you're an executive, like especially a senior executive in the company, they teach you to be an idiot. It teaches you to be an idiot. Like you do because you're not close to anything. You're not touching anything. 
+
+You're just moving the pieces around. 
+
+[00:42:07] Brian: time, to be honest with you.
+
+[00:42:09] Troy: Show up to the podcast on time.
+
+I try, like I do my own shit. I do my own
+
+[00:42:13] Alex: I mean, he's got great mic post posture now. Like his, his come a long ways. Remember? I mean, like, Where's the link? Where's the link? make a logo for you.
+
+but, but Troy, you've always been somebody who, who liked making stuff. But I, I saw that. At Airbnb with Brian, like where the CEO of Airbnb had to work really hard to get closer to the work because the expectation is always like, no, no, no, no, no, you're not doing any of that stuff. And I think it ends up actually removing a fair amount of power because you sit in a room with people are just waving their hand like stuff's magic that you'll never understand.
+
+Like here, just look at that number. Don't understand where that came from. And I think that it's important to. whether you're wealthy or you're the person in the job and with the biggest job in the company, power can express itself in all sorts of ways. And, and the ability to kind of know what's going on and make decisions is super important.
+
+[00:43:09] Troy: totally agree. 
+
+[00:43:10] Brian: How do you think power differs from like careerism?
+
+[00:43:14] Alex: I think
+
+[00:43:15] Troy: what that
+
+[00:43:15] Brian: You don't know what careers, I mean, I mean, following a career to just like building your life around a career.
+
+Yeah. Like careerism is you see it inside of companies a lot, right? Because I mean, Jeff Bezos says one of my favorite Bezos quotes is that we're not truth seeking animals, we're social animals and the people who tend to get ahead in companies or social entities are those that are good at what I think would be called as, as politics, right?
+
+they're good at positioning and a lot of the incentives are not aligned around truth telling, but in massaging egos and
+
+[00:43:53] Troy: Yeah, I mean, I kind of look at that. My answer to that would be similar to how I answered the AI versus media thing. It's like the world will take care of them. You know what I mean? It's sort of like if you're, you know, unduly careerist or politicking or whatever, you'll, you will start to take the shape of that as an individual.
+
+And, you know, the company will either need you to do that, or you'll get, You know, marginalized. We see people like that all the time in companies,
+
+[00:44:21] Alex: Right. Then they're not, they're oftentimes, they're not the people that get the phone call when somebody leaves and say, Hey, I'm doing this new startup. Come and join me. and so I think latching yourself to a career path within a company and doing the politics to achieve it. Might give you some sort of power within that company.
+
+But when it comes to the outside world or any shifts to that, you're not, you're not ready for that. And I've seen lots of people go through that path and not end up in a pretty place when things change. And you need people to kind of believe in you or, or trust you or want you part of their team. know what I mean?
+
+[00:44:55] Brian: Yeah, 
+
+for sure. What are some, illusory aspects of power? Like, I think a lot of times, because I, you, you had mentioned this, I think directly to me, I wasn't sure it was in the piece, but, how you can, you can, sometimes people think that they have power, but they don't really have power.
+
+They might have money, but they don't have power.
+
+[00:45:11] Troy: Oh, God, that's like me. Yeah, yeah, yeah. That's let's call that the power of the office, right? I mean, you occupy, one of the interesting things I thought about when you wrote that question, Brian, is that people with, that are perceived as being powerful or who have a power structure, that's dependent on their place in an organization that we, we all treat what they say differently, either because we, we think that because it's coming from a position of power that it's right.
+
+Or we've been trained to think that way, or the power structures discourage us from being overly critical. Like, when the, the big boss says something and, you know, everybody in the room nods, that to me is. Fake power, right? it actually goes nicely along with being disconnected from the business when you speak in platitudes and generalities about things, cause you really don't know how things work and I think it's incumbent on a great leader to, yeah, you need to understand how the business works.
+
+The pieces play out on the chessboard, so you need the perspective of the whole game, but you really have to make an effort to get close to the kind of operating manual and, you know, the, the kind of intricacies of a system. and so I think that just to bring it back, I think that the illusory power in, in organizations is where you believe In the power of the office.
+
+So because you are a renter of an office as a president or CEO or whatever, that you have this kind of power that you can play with in lots of ways when really you can be disempowered in an instant because you are not an owner and you are not truly in control. You're just a renter.
+
+[00:46:56] Brian: Yeah, that is something that Silicon Valley, I think it's, it's very pointed with the, the power of the founder. Right? Like there's, there's things, at least from the outside, this is what I always hear, is that there are things that a managerial leader, and that's what you're talking to, cannot do that a founder could do.
+
+Does
+
+[00:47:15] Alex: Right. Yeah, no, I think, and you know what, I think it's, overused and a little overpowered here where it means that pretty mediocre founders get a lot of, power, and I can get to their head, but the company with a person that's really engaged, that has a strong origin story that, that can be amplified to the teams, and has the ability, I think, to make decisions in a way that feels more, you know, empowered than somebody that's just brought in because of their capabilities, like a, a for hire CEO.
+
+And that's why, It doesn't even matter if the person is more talented or not. It's just that there's a presence there of being a founder. That means that you can make decisions quicker and that people will follow your decisions quicker because you're, you're not just another employee.
+
+[00:48:02] Troy: But there is, there is a point I would build on both of what, what you're saying. There is a, a mythology that is a source of power.
+
+[00:48:09] Alex: That's And that myth, that, that mythology goes obviously hand in hand with being a founder. It's the mythology of how a company was created and all the work that was done to get there and the insight, like that's worth something.
+
+Yes. And you were there from, from day one, you've seen it all. And the mythology, you know, gets kind of like a lot of it is, it's incredible how, powerful the founding story was at Airbnb. You know, it was part of onboarding. It was a meeting room that looked like the first living room where they built the office.
+
+It was the way things were named, you know, Rouse street where the first office was the first apartment office was, was part of. the way we reference things, the, the, the color of the Airbnb logo is called Roush because they started the company on Roush street. The founding story was a huge. a huge mythology that, that applied itself to the entire company.
+
+And I think it, builds a different energy in the company than, than just, something that's being led by, by a for hire CEO.
+
+[00:49:06] Brian: Is it effective?
+
+I mean, I effective in that, 
+
+[00:49:09] Alex: It's very effective with a, it's very effective with the right CEO. I mean, I think you can only bullshit people this much. I think Brian is, turns out to be also a really good CEO. The, the three founders, there was very little drama. Three founders were seen together, stuck together.
+
+So it worked there, but you know, I don't think it works if the person cannot live up to it.
+
+[00:49:31] Brian: All right, so let's bring this back to AI. So how does that shift, like power centers? I mean, obviously, We're, we're, we're tech technological species. The tech, the technology will remain a massive power center. Government will remain a massive power center. But how does this, because I think what's what's interesting about AI is, it's centralizing in the way you talked about Troy.
+
+I mean, if you need all of that con compute, it's gonna be who has the most, and, and that is a centralizing force, but then it's decentralizing too, and it'll. Disperse power more than it's ever been dispersed, 
+
+[00:50:06] Troy: Well, it's the underlying, anti accelerationist narrative. It's the source of it, right? Because if somebody has access to the formula for AGI, if someone can make superhuman intelligence and in any way control. The algorithm on that or the deployment of it or the, you know, or benefit from it.
+
+They're the ultimate threat, that's the whole argument underneath of the open source movement, as it relates to AI, because people don't want. To risk, you know, centralization of, of, of that power. And that's why I think open source LLMs are so important. More broadly, I think is what you're asking.
+
+What does it do to like organizational structures? And I think it. It only accelerates the things that we were talking about before, which are really good things, which mean, which are individuals that can harness the tools around them and have the will and the fortitude and the energy to do it now have, I mean, there's never been a better time to be. Someone who wants to make things, create things, build businesses, do things in new ways, and AI is an enabler of all that. So I think that there's a, there's a gr a wonderful decentralizing energy to AI in its empowerment of, of people that, that, that wanna do something with it.
+
+[00:51:31] Brian: I hope it'll be like a little bit more democratized though, because I think that one of the problems that I always had with companies is how the power was projected hierarchically and you know, look, it was way better to be at the top and at the bottom. I liked it better. But
+
+[00:51:46] Troy: I, I, I gotta tell you, and, and anybody that knows me will, will tell you this is true. I hated that part of it. I hated that part of it because,
+
+well, 
+
+I, so, so there. 
+
+[00:51:56] Brian: time we went to the executive dining room with those guys
+
+in the 
+
+[00:51:59] Troy: I love, I listen, I everybody loves the trappings, but yeah, but, but here's the thing, the whole structure of the corporation, the Hearst Corporation's manifest in the architecture of the building, which means that it, as you progressively go up the building, it gets nicer.
+
+And by the time you hit the 43rd floor and the executive dining rooms on the 44th floor, These, two bays outside for two assistants, wood paneled walls overlooking the park. Crazy, you know, you walk in, they say, what art do you want in your office? How do you want it furnished? Blah, blah, blah, all of that.
+
+But all it did is, the thing for me, the most satisfying part of working in media is being close to the people making things. Either the product people or the content creators or the video makers or whatever. And, The whole structure was about keeping you away from those people. I think that, you know, if, if you love the product, you want to be near the people that are making it 
+
+[00:52:54] Alex: It's insane not to be. It's, it's so crazy that, yeah.
+
+[00:52:57] Brian: Mike Bloomberg is still badging in and he's still in his bullpen, they told me
+
+at 
+
+Bloomberg. 
+
+[00:53:03] Alex: But, but, but back to that, question about AI. I think it's hard to see right now. There's going to be a lot of value creation and value destruction that happens at every level. So it's hard to tell you, only this, you know, little guy is going to do well or do badly and democratizing is going to help this class of people, I think.
+
+What's going to need to happen is for people to figure out what has value in a world where a lot of things are completely devalued. Does that make sense?
+
+[00:53:34] Troy: Yeah, totally.
+
+[00:53:35] Alex: And if you can do that. Then you're golden and you, you could, and it could be by the way that all these super large companies like Microsoft spent trillions of dollars investing in building these data centers and giant models.
+
+And that turns out to be a huge cash burn. And in the end, technology evolves into being something that runs on a phone and is open source and therefore the infrastructure itself has no value. It could be that the. They, you know, they, there's a whole reshifting of the power structures at, at, at those top companies.
+
+It could be that we never find AGI, right? And that would be a whole different story. But right now, as things stand, I think just find where the value is. And this is where I feel like going back to that BuzzFeed thing, I'm not sure that saying it's all about AI is finding where the value is.
+
+[00:54:24] Troy: Well, can I, can I bring it back to another point in this ties, the AI conversation to media and to the Buzzfeed thing. So one of the things that also occurred to me listening to that Ezra Kahn podcast is We lament the fact that a lot of folks in the digital media business have been displaced, right?
+
+That's a drag. That's a bummer. We don't like to see that. But the problem with digital media was it gave everybody access, everybody the ability to create media. And I think what it did, therefore, was create oversupply. And because you didn't have the restrictions of distribution that meant that not everybody could have a big magazine company.
+
+a lot of people, you know, entered the media business and made content and built media brands and all that stuff, and now we're like. It's being rationalized. There was just too many. And part of my joke about BuzzFeed is, the traffic went away. What happened to that energy is it didn't really matter.
+
+Interestingly, it didn't really matter. And it got absorbed somewhere else. And you don't have the right to make media. You have to earn it. You have to earn it by getting rewarded by someone else giving you their, their attention, and there was too much of it. And so the same thing is happening with AI because much of media, and we've never really seen this before, is being automated.
+
+it's being automated. It's being decentralized. The supply is out of control. It's, you know, it's unending. In that process, the rights that, people did in the past thought they had the right to be certain types of content creators and get rewarded for that are evaporating. And that's really, really hard because, people get displaced, but this next wave is so profound in that. It's just going to be, you have to be like, I suppose, like in the old days, you have to be really enterprising about justifying your value in the age of media automation. That would be my, my take on it.
+
+And you do see it, Brian, you see it. Cause I enjoy reading your newsletter. You see it because our friend Emily, who was on the podcast when, when Alex was away, writes an email every day that is just, you know, overflowing with her personality and her curation and all that. And you want it. You want it. You want a piece of that person.
+
+so there's tons of opportunity, but right now the displacement is massive.
+
+[00:56:48] Alex: It's probably a good thing, though, that the reward structure is, shifts from traffic to something else. I think we got so many people because everybody could be rewarded with traffic and traffic was cheap and free flowing. And as long as you could be rewarded by traffic rather than actually building an audience, then you could 
+
+[00:57:07] Brian: Yeah, 
+
+[00:57:07] Alex: people employed around
+
+[00:57:08] Brian: I mean traffic was fake, to a degree, you could say, 
+
+[00:57:11] Alex: yeah. Oh, 
+
+[00:57:14] Troy: was certainly fleeting
+
+[00:57:16] Brian: Yeah, well, come on, I mean, everyone pretended that they had that comScore audience and it wasn't.
+
+[00:57:21] Troy: guilty, man. Guilty.
+
+[00:57:24] Brian: Speaking of that, you know, I'm doing a webinar tomorrow. It's called an online forum with, do you know Dr.
+
+John Roberts from, dot dash Meredith? We're talking about getting off the traffic treadmill at 1 p. m. Eastern.
+
+[00:57:34] Troy: Hmm. Speaking of shout outs, I sent John Kelly, a congratulatory note about the acquisition of a newsletter. He just acquired, a subsect newsletter called art intelligence. 
+
+Is that how it's pronounced? Yeah. And it, the 32, 000 subs or something like that. It's got a good list 
+
+[00:57:52] Alex: How much does that cost? 
+
+[00:57:54] Brian: What do you think that they paid for 32, 000 art, art business people?
+
+[00:57:59] Alex: Does he want to buy a podcast? It's listened to by a bunch of media nerds, mostly executive class.
+
+[00:58:05] Troy: I don't know. We'll ask him. But, you know, it's just to the point we just made this model of having anchors in each of your verticals that are real voices, real people, real perspective gloves off in each of 
+
+[00:58:18] Brian: Yeah, we have to have John, we have to have John on. I want to talk to him about it. What they're building there. Like are they building like a new Penske? what, what is, what's, what is this?
+
+[00:58:26] Troy: well, it's nothing like a Penske, right? It's, it's a collection of individuals underneath of a single media brand.
+
+[00:58:33] Brian: Well, I think it's actually a lot like Penske.
+
+[00:58:35] Troy: In what
+
+[00:58:36] Brian: In that it's using the individual brands, but it's going after similar categories. They're going after the Hollywood, the protected categories, like the Hollywood, the for your consideration money, art. I mean, he's in the art field. Fine. He's the, he 
+
+
+[00:58:50] 
+---
+
+[00:58:53] Brian: doesn't have the, the DC publications, but I don't know.
+
+It's a similar structure to me. You go after power centers, which is another power. It's like the only form of publishing that to me is, is good as is. The areas that are going, that are catering to power centers and powerful people. That's what Semaphore is. That's what Puck is. That's what Axios is. That's what Punchbowl is and on and on and on.
+
+And B2B in some ways, Industry Dive was catering to like power people and the waste management industry and stuff. So B2B is, is, is part of that.
+
+[00:59:25] Alex: Yep. 
+
+[00:59:26] Brian: Serve the powerful. I was told by a very smart person one time, get close to the billionaire. Yeah.
+
+[00:59:31] Troy: Who told you that?
+
+[00:59:32] Brian: I forgot. Brilliant. Brilliant. And I was like, I'm going to
+
+file that away, file that away. Get close to the billionaire.
+
+[00:59:41] Alex: you should ask that, how that worked out for all of Elon's friends. 
+
+[00:59:43] Brian: I don't
+
+[00:59:44] Alex: I'm sure it's not going too badly actually.
+
+[00:59:46] Troy: That was a nice discussion. Should we move into, Good product.
+
+[00:59:49] Brian: Does it have a power tie in?
+
+[00:59:51] Troy: I could make it up. 
+
+
+[00:59:51] Good Product
+---
+
+[00:59:54] Troy: I realized I arrived at the episode without a good product in my pocket. I thought maybe, you know, Alex has been traveling. Sometimes that's a good way to pick up a good product, but I was, I was looking over my shoulder just now.
+
+There's a Netflix screensaver running on a television in my office. And, I was reminded of. These moments when you're young, when you get excited about going to the movies. And because guess what's coming to Netflix and I'm going to watch it with my kids 
+
+[01:00:25] Alex: dune 2. 
+
+[01:00:26] Troy: Smokey and the bandit.
+
+[01:00:27] Alex: Oh, yeah. 
+
+[01:00:35] Troy: Have you seen Smokey and the bandit
+
+[01:00:37] Alex: yeah, I love Smokey and the Bandit. I just, I just always like kind of, I don't want to vouch for these movies anymore because too many times I've told people, ah, this movie's great. And then you watch it and it's just so casually racist or misogynistic or full on, problematic that I'm like, all right, I enjoyed it as it was at that
+
+[01:00:56] Brian: Yeah, no, there's, there's a, there's an ape 
+
+who's, who's deployed in that movie. I think you can't do that with animals. Yeah.
+
+[01:01:03] Alex: Yeah, 
+
+[01:01:03] Troy: in one of the sequels.
+
+[01:01:05] Brian: okay. Wait, is Dom DeLuise in this? Am I getting this confused?
+
+[01:01:09] Alex: turning into the boomer cast. Run.
+
+You are. Yes, you are. And also, I think the ape was that one with Clint Eastwood.
+
+[01:01:20] Brian: It's all running together. BJ and the Bear was actually a movie with a chimpanzee in that year. There was a lot of casting of primates in like that early 80s.
+
+[01:01:29] Troy: the bandit.
+
+[01:01:30] Brian: What was Smokey and the Bandit about?
+
+[01:01:32] Alex: Oh, 
+
+it's, 
+
+[01:01:33] Troy: a away from 
+
+[01:01:35] Brian: wall? 
+
+[01:01:36] Troy: in his Camaro. Yeah.
+
+[01:01:38] Alex: it's about like, I love it. It's about, there's a lot of convoys, Bert Reynolds looks amazing, 
+
+[01:01:43] Brian: Icy used this, uh, I used to use this analogy with Dukes of Hazzard because I compared it to how we would report an Ad Week, because we would have reporters that covered traditional advertising, and it's something about the internet, they acted like Boss Hog like pursuing the Duke brothers and they would Cross the county line and then they would just stop.
+
+They wouldn't pursue them anymore. And that was like how other reporters were, were treating the internet. It was like, no, no, we don't, the internet, we don't do that. So we're just going to
+
+[01:02:17] Troy: Right. That's what it used to be like in ad agencies.
+
+[01:02:20] Brian: Yeah. Above the line, below the line.
+
+[01:02:22] Troy: Yeah. about you, Alex? Just one little anecdote about where did you go? Fiji,
+
+[01:02:26] Alex: yeah, I was in San Diego, then Fiji, then New Zealand. New Zealand is a very pretty country. They
+
+did 
+
+not lie. 
+
+[01:02:34] Troy: Did they think you were what's his face?
+
+[01:02:36] Brian: Peter Jackson. 
+
+He's like the only New
+
+[01:02:39] Alex: I, I did, I did, go to Hobbiton. which is this, that the set that they used for the Hobbit movies that has been maintained and it's, it's pretty incredible. So, we got back into, Lord of the Rings and where kind of have the book on tape. Listening to the audio book of, the Hobbit with our son.
+
+So that's a good product recommend that. Otherwise I turned out, I brought my vision pro with me, but because I, I had a steam deck, which is that little, portable PC gaming device and a game called Bellatro, which is an incredibly addictive card game. I ended up doing that more than using my 4, 000 device.
+
+[01:03:16] Brian: So are you using this 4, 000 device on a daily basis though?
+
+[01:03:20] Alex: yeah, I was, I was in it yesterday. They've, they've released, spatial personas. So now you can have a meeting with someone that actually like floats in the room with you. So when you turn to them, like your voice shifts and you see them standing there, it's like a Star Wars 
+
+hologram. 
+
+[01:03:35] Troy: that? Who do you do that with?
+
+[01:03:37] Alex: Elliot,
+
+[01:03:38] Troy: Oh, nice.
+
+[01:03:39] Alex: we had like lots of, work sessions, they're adding features really slowly. It's an odd thing. They haven't released any spatial video stuff. You know, any immersive video stuff, Apple hasn't really released any new features and they're doing updates really slowly. It doesn't feel like they're fully committed to it, which is, worrying, but it's it's an odd thing to see Apple release a product and be so slow to serve its customers.
+
+So, 
+
+[01:04:02] Troy: a movie on it this week? 
+
+[01:04:04] Alex: yeah, I watched, I watched a movie on the airplane. It's a pretty. incredible experience. 
+
+[01:04:08] Troy: What'd you watch, if you don't mind sharing?
+
+[01:04:10] Alex: what did I watch? I watched, I watched the marvels with Brie Larson. It wasn't a good movie. it was my airplane backlog, but the experience of watching the movie is, is really exceptional.
+
+[01:04:22] Troy: No, we're, Premium Economy?
+
+[01:04:24] Brian: Yeah, not even I would do premium economy in New Zealand.
+
+[01:04:28] Alex: Yeah. No Fiji Airways has this great thing that I don't know if they did in the States, but if you if you book premium economy, then you get a chance to bid on business.
+
+[01:04:36] Brian: I I bid, I never win that.
+
+[01:04:38] Alex: Oh, I won, I won lowest price business, buddy. Yeah, that was great.
+
+[01:04:42] Brian: Oh, wow.
+
+[01:04:43] Alex: Well, the, the original price was 10, 000.
+
+So that, Yeah, no, I do not, that's that back. yeah, that's, that's,
+
+[01:04:52] Brian: Actually, I just wouldn't go. Never see you in New Zealand. 
+
+[01:04:54] Alex: Beautiful. New Zealand is beautiful. Recommend everyone go. 
+
+[01:04:58] Brian: I've only been to Australia 
+
+once. it takes forever to get there. And then I'm like, Oh, this is kind of like San Francisco meets London with some weird, weird birds.
+
+[01:05:07] Alex: just, those sounds, that sounds like an excellent combination. That sounds amazing. The thing is it's way, it's, it's actually really nice when you live in San Francisco, you know, Fiji's 11 hours, New Zealand's 14 hours. It's not that bad.
+
+[01:05:18] Troy: The coffee's really good.
+
+[01:05:20] Alex: everything's good.
+
+[01:05:21] Troy: The Asian food is great.
+
+[01:05:23] Alex: We had, we had a great time. 
+
+[01:05:24] Troy: Yeah, New Zealand, oh no, I'm talking about Australia. 
+
+It feels like 
+
+Canada to me. Canada, the great nation. Great nation of Canada.
+
+[01:05:31] Alex: Oh, I'm going to Canada this summer.
+
+[01:05:33] Troy: Where are you going?
+
+[01:05:34] Alex: The Maritimes and then Montreal.
+
+[01:05:36] Troy: I think you'll enjoy it.
+
+[01:05:37] Alex: Yep. It's the most French I'll speak. 
+
+
+[01:05:39] Outro
+---
+
+[01:05:39] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week. Alright. 
+
+[01:05:59] Alex: Yep, let's wrap good episode guys.
+
+[01:06:02] Brian: right, 
+

@@ -1,0 +1,555 @@
+PvA S2E97
+===
+
+
+[00:00:00] Cold open
+---
+
+[00:00:00] Troy: Maybe you should see Alex today, 
+
+[00:00:02] Brian: Yeah, Alex, let me know where you are. come find you. 
+
+[00:00:04] Alex: I'm at WeWork in Brooklyn. 
+
+[00:00:06] Brian: Are you going to be in Manhattan? 
+
+[00:00:07] Alex: I will be at some point, yeah. 
+
+[00:00:09] Troy: How awkward do you think it would be if you guys bumped into each other?
+
+[00:00:12] Brian: I don't think it would be awkward at all. 
+
+[00:00:14] Troy: I'm not an awkward person. Will you guys shake hands or will you hug? 
+
+[00:00:17] Brian: Bro hug, half hug. 
+
+[00:00:19] Troy: So does that mean you come in on the side a little bit? Yeah, yeah, a little bit.
+
+[00:00:23] Alex: I think actually nowadays when you don't give another guy a bro hug, it's more awkward to shake hands. If you know them relatively well. 
+
+[00:00:30] Troy: Yeah. Like imagine 
+
+[00:00:31] Alex: if I shook your hand, Troy.
+
+[00:00:32] Troy: I would just hug you because to me you're just a giant hairy bear of a man.
+
+
+
+
+[00:00:36] Intro
+---
+
+[00:00:59] Brian: Welcome to People vs. Algorithms, a show about detecting patterns in media, technology, and culture. My name is Brian Morrissey, and each week I'm joined by Troy Young and Alex Schleifer. This week we cover a variety of topics.
+
+First up is the Elon Musk conversation with Donald Trump on X. Technical difficulties aside, this was widely panned by what I call the packaged news media. And I think in some ways that's a bit misplaced. I mean, Musk introduced the event explicitly as a conversation rather than an interview. It was not hard hitting.
+
+he did not really go after Donald Trump the way we see it typically done by journalists. And I think that's okay. the execution itself was, was pretty odd since we've discovered yet another instance where someone who is prodigiously talented at many things is not actually good at everything.
+
+And that's because Elon Musk is not very good at leading a conversation. he wasn't helped that Trump himself is not much of a conversationalist. he just fell back to his familiar talking points rather than having a real discussion that illuminated, really his character. And I think that's what conversation is about.
+
+I think it gives you more of a sense of who the person is. I mean, I advocate in this, in our own conversation here, that Kamala Harris should herself be doing these kinds of conversations. I would love to see all, leaders, have these hour and a half, two hour conversations. it doesn't have to be with Elon Musk.
+
+In fact, I would prefer it not be with Elon Musk. Do it with, Ezra Klein as we talk about. I think it would be really illuminating and hopefully be more about policy. but that said, I think this is a sign of the decentralization of media that will produce a new lane that is around these kinds of conversations, that is distinct from the sort of hard hitting news interviews, that tend to cover Well trod territory and horse races and the controversies of the day.
+
+we also talk about the decline of social networking, at least from its original premise. you know, the idea of connecting the world is fading as a Facebook becomes more of a Craigslist killer. and the end of the follower model, is pretty important because it's been replaced, by algorithmic, content recommendation, and this is a better business.
+
+when we look at the, what the former social networks that are rising or social platforms, really, you see Instagram and TikTok, and these are very different. This is not about connecting with your friends. it is about a feed of content. All of which makes the triumph of YouTube all the more noteworthy.
+
+even though it was born in the social networking era, YouTube was never really a social network. It was more of a search engine than anything else. And the social component was ancillary at best. And now YouTube has established itself as a power center in the information space. And that's going to bring with it, its own share of headaches.
+
+I mean, Google has plenty of headaches right now. But we talk about how, there is going to be, You know, more pressure for, these gigantic platforms to be regulated like, many other industries are regulated. And finally, we get to why the Olympics were such a triumph as an ideal modern media product.
+
+there were so many different ways to consume the content. There were tremendous storylines and the memes made the whole thing quasi participatory. And I think we're going to see much more of this going forward. I don't believe that. The mass event is dead. I think the pendulum has swung too far to the atomization of everything in this world.
+
+And people, not just advertisers, but regular people really want shared experiences. Go figure. now let's get in the conversation.
+
+
+
+
+[00:04:22] Episode start
+---
+
+[00:04:22] Brian: all right, let's get started. you guys were at Gramercy Tavern. Fancy, fancy, fancy. I was listening to the Elon Musk,Donald Trump conversation. Not an interview. It was a conversation. Elon began it, by making clear it was going to be a conversation and not an interview.
+
+And I think that was to set expectations. But I think that what is interesting to me is, I do think that this is a different format, and it's in politics, but I think we're seeing it throughout media, where the interview is being augmented. I don't think it's replaced by this kind of meandering conversation.
+
+We have one ourselves every week. And, I think it's, it's different. Now, I think what, overall, the,I guess my evaluation of last night's, whatever it was, was not very enlightening, but at the same time, I really would like to see Kamala Harris do this. She doesn't have to do it with Lex Friedman or with Donald Trump, but I would love to see her do it with Ezra Klein.
+
+I'm in for that. Good hour and a half. And talk about a range of different topics. It's a good time. Now, this got panned already. Go surprise. Yeah, no surprise. Charlie Warzel said it lacked drama and tension. The Bulwarks called it a snooze fest. Washington Post said it was a peek inside the right wing bubble.
+
+And The Guardian went with bro fest and an un edifying affair while Reuters described it as, As rambling, is there something more foot here? Or is this just,politicians liking to have a friendly, friendly audience where they're not going to catch many strays. 
+
+[00:06:06] Troy: Listen, you interview a politician in service of your audience, to help them understand the issues and make a decision, right?
+
+I think that's the way we think about the media relationship with a politician. And, maybe that's largely driven by, how we've done it historically. Maybe it's, was, Part of an age of scarcity in media where we had to get to the point and kind of use our time or our pages, to perform a, a kind of service for the audience.
+
+And then we divided stuff that was sort of issue based and stuff that was sort of more Not a, you called it conversational, but lifestyle or sort of a, a kind of a profile that, that, that really tried to get to the heart of who the person is. And I think that. the conversion of much of our, kind of information consumption to, to just talk through podcasting means that there are a lot of people that are a not trained as journalists.
+
+They're not going into really sort of score points quickly. And they're.engaging, important people in conversations on, podcasts in a really different way. And so what do you get out of it? What you get in this case was, total sycophancy. Right. You get two dudes, that presumably like one another or like one another's points of view on the world, sitting, hanging out with each other, you get a sense of who the person is, you don't get really any substance.
+
+And, you get kind of Elon's take on things and, Trump's talking points. And, I think you get the virtue of it is you get a sense of the person. I think that that virtue alone is worth something because that's, I think, the vibes that people care about. that's what people, people vote for a person, they don't vote for, I mean, maybe some people do, but like, it's less about policies and more about do you feel.
+
+Nobody's 
+
+[00:08:09] Brian: going through people's infrastructure plans. That's always the biggest lie of politics. But there are, 
+
+[00:08:15] Alex: yeah, but there are Are you denying the existence of undecided voters that are just looking for policy to make their decisions on election day? They're not 
+
+[00:08:22] Brian: looking for policy. 
+
+[00:08:24] Alex: Yeah. 
+
+[00:08:25] Troy: So, so the people that I like is a kind ofkind of at least leaving some room for benefit of a doubt versus gotcha a kind of informed conversational skepticism And someone who leaves room for the audience and I that's why I like ezra.
+
+We talked about that 
+
+[00:08:42] Brian: Yeah, because I think it's a it's a middle ground right and I think you're gonna see You're going to see the push and pull between both extremes, right? I think what, what happened last night was an extreme version of that, mostly because, you know, you've got two incredibly egotistical people.
+
+Trump has one mode. It's just Trump mode. He's not really a conversationalist. He's a ranter. and he can tone it down in the beginning. And then I noticed he just sort of amps it up. I mean, 
+
+[00:09:08] Troy: here's the thing, Brian, do you really need to revisit January 6th and have, Trump spew the same old talking points.
+
+is it, does it get us anywhere? Are we going to pin him up against the wall on that? And finally, he's going to see the world another way? No. So why even go there? 
+
+[00:09:26] Alex: Trump has been really successful at generating, entertainment.and, and I feel like the shtick's getting a little old. Like the, I don't know, just like looking at, sure people piled on on the fact that, the, the X spaces didn't work and kept crashing and stuff like that, the same way it did with DeSantis.
+
+but beyond that, imagine, The news cycle, if a few years ago, Trump and Elon Musk were planning a one on one live conversation, it would have been huge. And it kind of landed like a wet turd, I don't think people, it just all sounds the same. Yeah. I think people have heard it many times.
+
+I think it's why we're not seeing,his crowds aren't as big anymore. I think people are just a little bit bored of it. 
+
+[00:10:10] Brian: there was about a 1. 1 million, concurrent listeners, which is also, which was bizarre because you have a bunch of people listening.
+
+It was like radio. It's like going back to father Coughlin, not father. That 
+
+[00:10:25] Troy: image is the perfect iconic image of the information aid or space Brian, where, you can imagine. A presidential interview, a line of microphones or a, well kind of put together stage on at CNN or something like that.
+
+This was Trump leaning over an iPhone. 
+
+[00:10:45] Brian: Yeah. And he had a list because of the shitty audio quality. 
+
+[00:10:49] Troy: bizarre, right? 
+
+[00:10:49] Brian: Because the people are saying he slurred his way through the interview. I listened to the interview. I've listened to other politicians that are including one is the president. He's not slurring.
+
+It was just poor audio. And but that is part of this. It's like he's talking into a phone like the presidential candidate. The whole thing is just very strange and there's no video. Very, very bizarre. 
+
+[00:11:12] Alex: There's a little bit I saw a five second clip of him talking and there's right. Didn't you see that one?
+
+[00:11:18] Brian: Oh, yeah. With the oil painting of a much slimmer and more handsome version of himself in the background. 
+
+[00:11:24] Alex: Yeah. I mean, in the tennis sweater. It's, it's incredible. 
+
+[00:11:28] Troy: It's incredible. 
+
+[00:11:30] Brian: You know, the artist knew what he was doing. I don't 
+
+[00:11:33] Troy: know. I, I, it's just like, That idea that, Hey, paint a picture of me in this tennis, but, but the 
+
+[00:11:39] Brian: artist, I wouldn't know who the artist was because, clearly 
+
+[00:11:42] Troy: face in the video, 
+
+[00:11:43] Brian: clearly was looking ahead to the next gig because he was like, you're going to make them pretty muscular, you know, no lines.
+
+I 
+
+[00:11:50] Alex: mean, that's what you did. You know, that's why a lot of royalty looks pretty good considering they all have no teeth and. You 
+
+[00:11:58] Troy: related to this. I'm struggling with this accusations of bias in the information space by the right. that points at, everything from like auto correct and Google being left leaning to how Kamala's, positive.
+
+Camelot coverage is surfaced first in Google search results, implying bias at Google, the all in guys, using the fact that, 80 percent of Google employees, contribute to the Democratic Party as evidence that the company is biased to, I mean, just, the,X's,lawsuit against advertisers for being biased against right wing media.
+
+And I just can't, to me, it's not left bias. it's just I I'm trying to understand it better. So clearly there is a volume of content that's being surfaced by Google that. Leans more towards, to me, it's not even left or right. It's like stuff that's sensible and stuff that's not.
+
+And there's like a lot of stuff that's been embraced by the mega movement to, I think a large part of the population, certainly a lot of journalists just seems insane. So, the idea that somehow we're not allocating attention. Correctly through platforms or media or, or money, is on one hand, you could see the point, right?
+
+It's like, we're not, but on the other hand, we're not because a lot of what they're doing is fringe and crazy. And to me, it doesn't reflect. Kind of the sensibilities of, of the majority. So I I'm just trying to understand, maybe you guys can help me, help me understand that. 
+
+[00:13:51] Brian: Here's how I would frame it is, we've talked about being in the age of conspiracies and I think one of the.
+
+One of the reasons that we have that now is it's really hard to pull off a conspiracy with more than three people. Let's be real. there's always a weak link in any group. And the idea that you're going to have like hundreds or thousands of people who are able to pull off a conspiracy and nobody like talks about it.
+
+That's to me, it's just ridiculous on its face. But algorithmic world, there's probably a notion that it's a lot easier to put a thumb on a scale. Then it would be to pull off a analog conspiracy in some ways. I don't know if it's true or not, but it would seem like that would be, that would lead people to be less trusting because there is at least, presumably an easier way to bias things, 
+
+[00:14:46] Alex: isn't it? simpler than that, though? I mean, I think 
+
+[00:14:49] Brian: that was pretty simple. 
+
+[00:14:51] Alex: No, but I think it's not complicated, but I feel like we're applying a lot of it's 1 or 2 things. I think 1, it's bad faith because they know it's not that. But I think a lot of these folks need to create an enemy and enrage whoever the audience is.
+
+And they all want to kind of latch on to each other's audiences, so they're all kind of,helping each other tell that narrative that they're being canceled, even though they have giant platforms. And the other side of it is that the people who truly believe in this, often have a very active.
+
+Victim mentality, right? Oh, they're all coming to get us and this is against us, and they will do this to us. They're gonna vaccinate our kids and they're gonna do that. And, and so therefore, of course the platforms are biased. Even, though, they own many of the platforms and they have plenty of opportunity,when 
+
+[00:15:40] Troy: you say they own and, and what platforms, what do you mean?
+
+[00:15:43] Alex: Well, I mean, I think, people on the right complaining about the bias and, and the silencing and the canceling and all that type of stuff. I think a lot of it is, is just, leaning into that victim mentality that the audience seemed to be receptive of.you know, do you guys really 
+
+[00:16:00] Troy: think there's liberal bias in the decisions, say a company like Google makes around the algorithm?
+
+Do you think that's possible? Yes, I can you explain Brian? I sorry. I, I just want to hear your explanation. 
+
+[00:16:13] Brian: Oh, so I would think that there's just accidental like cultural by I mean, so I wouldn't, I don't know if it's bias or something like that. But I think when you make policies and we saw like Probably extreme examples of that.
+
+When, you have AI search engines that are, in good faith, trying to be inclusive and not be offensive, but then you have show us, you know, the, founding fathers and like those things creep in. I think because of cultural bias in some ways, like it would seem to me that it would make sense that if a company, which is just a collection of individuals is filled with individuals, 80 percent of whom are progressive, let's just say, or liberal, whatever we want to call them, that this company's culture.
+
+And the decisions it makes without being like, oh, we've got to keep the conservatives down and elect Kamala Harris, that it would bleed into the product. That would seem to make sense. 
+
+[00:17:13] Alex: that is a reasonable thought, but I think it's a drop in the ocean, because if you look at the way a lot of these decisions are made at Google, they're running experiments.
+
+And the experiments are. Being pushed into the main product if they perform right. Everything, everything in these companies is deeply performance based. So they adapt to behavior and they push behaviors that will generate more revenue or more engagement, et cetera. So there's definitely like person to person basis.
+
+There's definitely biases. We all do have our biases, but you know, if you compare a company like Google to any other media entity, that bias is a drop in the ocean considering just The way experimentation works right now, Google is experimenting, has, 500 experiments being run on billions of people and they're being a B tested,to, to the extremes and the ones that perform better are going to make it through this algorithm changes, UI changes, all that type of stuff.
+
+So there is no central control and why bias might be able to see, then it's really like a tiny fraction of the way these decisions are made. if anything, I think we don't have enough human 
+
+[00:18:20] Troy: well, did old conservatives complain about liberal bias in the media sphere before the internet? Yes. 
+
+[00:18:28] Alex: Yes.
+
+And there's a specific brand and I don't even it's hard because in the extremes, but I think it's particularly prevalent in conservatism. there's this specific, kind of brand of disgust. And people being against you and coming to take what you have, right?there's an undertone in everything being said, right?
+
+It's like,ugh, trans people or, foreigners or whatever. and when you get to that, then you have the opportunity to start behaving like a victim. Like, people are against you.and that's, it happens on the left and on the right. But but right now we're hearing a lot of that from the right.
+
+And they have a lot of very powerful spokespeople, right? I mean, Jesus Christ, Elon Musk's platform is crazy huge. The fact that it only got a million people is actually kind of telling, 
+
+[00:19:14] Brian: well, I don't know if it was a million total. I just saw like 1. 1 million, streaming at the same time. I don't know how it'll do way 
+
+[00:19:21] Troy: more than, 
+
+[00:19:22] Alex: I think Mr.
+
+Beast will have more, You know in 24 hours showing him save cholera patients or something. I don't know like I think this stuff is like a bit overblown honestly, 
+
+[00:19:33] Brian: speaking of mr. Beast. He's He's he's taking serious incoming These days I haven't I haven't checked in to see if he's weathering the storm.
+
+have you 
+
+[00:19:42] Alex: yeah, he's weathering the storm I think the thing can you give the 
+
+[00:19:45] Brian: background on exactly what I watched most of that guy's video sort of deconstructing all of the basically he just My takeaway was everything is optimization. This guy's super into optimization and, key optimization is just a form of manipulation.
+
+and so it's possibly an issue when your audience base is a bunch of children. So he manipulates children. That's the way I looked at it. 
+
+[00:20:12] Alex: Yeah, I think he manipulated. So, so it started, and we can put them some in the show notes, but it started with, with the video. of of someone who worked at, Mr Beast and these things have been trickling out for a while, but there was a very kind of well put together video.
+
+where, a next employee kind of outline all the tactics that Mr. Beast was using on children mostly. and, and some of them were likely illegal, including like illegal lotteries,like running kind of telethon type events on YouTube and telling kids that if they bought a t shirt, they might get a hundred dollars.
+
+and just generally being manipulative. And then on top of that, a lot of kind of. Workspace issues where people were treated unsafely and then people I started deconstructing his videos noticing that a lot of the Contestants that were randomly selected ended up on multiple videos turned out to be mr.
+
+B's friends So he was you know, a lot of it was fabricated. Oh 
+
+[00:21:10] Brian: No 
+
+[00:21:12] Alex: Sure, oh no, I think the interesting thing here is that Is nothing 
+
+[00:21:17] Brian: pure? Is Mr. Beast also not pure? 
+
+[00:21:20] Alex: well, it's been snowballing. So more and more people that were working for Mr. Beast, that felt more encouraged to get out because apparently they were pretty litigious.
+
+But I think it, I think the reason there was a strong response is that, first of all, all the people who didn't like Mr. Beast, which is anybody over 12 mostly, thought he looked creepy and didn't like it. So when this stuff came out, people were pretty quick to latch on and agree with it. But the thing that's more interesting is like how something like YouTube, which has far bigger reach than most of, of any broadcast network doesn't have the same rules, like any of these, you know, if, if you were running like, any TV show, like survivor, right.
+
+They literally have people on hand to make sure that, There is no preference given to specific things. In fact, TV shows got sued for like manipulating the results of shows. 
+
+[00:22:08] Brian: I mean, remember the quiz show scandal, Was it but I guess that's it's an interesting way of thinking about the future of TV, right?
+
+Because YouTube has emerged as The future of TV. 
+
+[00:22:21] Alex: Yes, exactly. I'm not surprised at all about all the mr. B stuff and etc But if it emerges as a future of TV, does it get regulated?what happens with production on YouTube? Should it, I don't know. 
+
+[00:22:33] Troy: Fame invites scrutiny. 
+
+[00:22:34] Alex: No, but it's not only fame.
+
+I think it's the broadcast medium invites scrutiny. 
+
+[00:22:38] Troy: if you, no, I'm talking about Mr. Beast. it doesn't surprise me. I think he'll, he'll work it out and he'll build a, You know long long term production company. 
+
+[00:22:45] Alex: No, but that's not what i'm talking about. Troy if you would listen No, 
+
+[00:22:48] Troy: I was listening.
+
+I was listening. 
+
+[00:22:49] Brian: Tell him not to be naive. Alex. Go get him. I mean, I think this he's hungover He's weak. 
+
+[00:22:53] Alex: I think mr beast is a particular type of thing and it's interesting to look into because I think he's quite unsavory, but when it comes to youtube becoming one of the main ways we consume media and video like, you know We're watching the olympics we're going to talk about the olympics, but I really wish all that stuff was on youtube It would have worked so much better 
+
+[00:23:13] Troy: aren't most child entertainers a bit demented.
+
+We just discover it later 
+
+[00:23:17] Brian: Well, you mean when they're children, I mean children child stars always grow up to be screw ups. That's no no 
+
+[00:23:22] Troy: people like mr. Rogers. 
+
+[00:23:25] Brian: Oh, yeah gargamel. I think 
+
+[00:23:26] Alex: mr. Rogers was fine. He was fine really weird example That 
+
+[00:23:31] Brian: british guy he was he was off 
+
+[00:23:34] Alex: Gary glitter. but I think there's going to be some, there's going to be some pressure on YouTube to start.
+
+I would be not surprised if the Mr. Beast thing, got, the authorities to start looking at YouTube a little bit more closely, around this stuff. 
+
+it's going to be interesting. 
+
+[00:23:48] Troy: Yeah. 
+
+[00:23:49] Alex: No, not for Troy. 
+
+[00:23:50] Troy: no. I get what you're saying. I think that, in a distributed kind of network, what, what role does, what role does the platform play in content regulation?
+
+[00:23:59] Alex: And YouTube is so huge. It is so huge and it's, and it captures audience across every age group. I mean, I think it's. 
+
+[00:24:07] Brian: yeah, well, I mean, look, YouTube has been in the crosshairs plenty for, how it handles, content with, with children, right? And it has been, it's been the subject of, of, of ad boycotts.
+
+It's always muscled its way through those. and, but the reality is the future of tech is increasingly going to be regulated like we regulate. All key industries. I mean, I don't understand why. to me, it's like an immature thing of the tech industry thinking it's so special that every other industry gets regulated, but then they don't, it was like Amazon not having, like collecting taxes for why, like, why are you getting some, why are we subsidizing you?
+
+I don't get it. or even like an unregulated hotel chain. Not, 
+
+[00:24:52] Alex: I mean, it's, you know, I'm surprised YouTube hasn't been doing that with some of their own regulation because they're just going to attract the type of scrutiny that they might not want. We saw, we saw with Google. Being called a monopoly now, I'm sure YouTube is going to be, next in some capacity.
+
+Because YouTube is, isn't it the second biggest search engine in the world? I mean, I use 
+
+[00:25:12] Brian: Yeah, it's long been. and, it's become sort of the focal point, really, of the entertainment side, I think, of the information space. And I think it's, it's setting the pace there and it has made the leap into TV.
+
+and it's being increasingly watched on big screens and, it's built up its own stars and programming. So definitely something to watch. 
+
+[00:25:38] Troy: You had this beautiful modal explanation of motivations for each social network. 
+
+[00:25:43] Brian: Well, I think there's this, there's this theme that that, and I think YouTube plays into it. Is that, it was never a social network.
+
+[00:25:51] Troy: I mean, it had comments, but those were always, best avoided. Facebook has, it's on the decline. I think it's pretty clear. It's pretty bizarre on there. you know, growing actually Facebook. maybe, I mean, I know we can be fast and loose with facts, Brian, but we should get the facts 
+
+you said people post to instagram for this reason people post to linkedin for this reason well, 
+
+[00:26:14] Brian: yeah people post to instagram in order to present an image of their lives that is is Barely based on reality or to feel jealousy of other people's great lives X is where people go to fight.
+
+it's for the extremely online. YouTube, on the other hand, to me, touches all of these sort of macro trends in media, whether it's creative algorithm, creators, algorithmic distribution. it's obviously video base. It's got shorts, it's got intellectual property, some measure of interactivity. It overlaps with gaming very broadly.
+
+so that's where I see YouTube strengths. I think TikTok is just Algorithmic cotton candy, time wasting trends.
+
+[00:26:58] Troy: What happens next, Alex? 
+
+[00:27:00] Alex: it's a good question. I, when I was reading this stuff, I think we have a terminology problem because, and I think you, Brian, you mentioned it, but YouTube isn't a social network. I think TikTok isn't a social network. I think, places like Reddit are a social publishing platform, but it's still probably like, you know, 95 people are consuming while five people are creating the company.
+
+if we're looking at like currently active, relevant social network and sure, Facebook is growing at, 4 percent or whatever, but it's, it's still. It's, I think, just like the activity on Facebook and the way culture happens on Facebook. It's, it's, it's not there, right? People use Facebook Marketplace.
+
+People have Facebook accounts. But I don't think it's, it's kind of active and burgeoning and exciting as a social network. So the last, I think, active rather than social network is Instagram, right? Remains Instagram. You know, you could say Snap has, has its audience, but Instagram is. Kind of the broad social network where,I would say for much of the world, if you're not on Instagram, you're not catching up with friends, you're not hearing about the party, et cetera.
+
+And then the rest of it is all messaging. Right. and the amount of folks, I mean, here, it can be Apple messages, but rest of the world is like WhatsApp, telegram, signal. So, these. Things are just massive social networks. there's some groups with there's some groups with 5, people in them.
+
+And they're kind of just like very focused, chat rooms. And then there's, specific ones like, this court, but I think Instagram is the last true remaining social network outside of 
+
+[00:28:39] Brian: what I'm hearing. What about LinkedIn? Why is this, where is this LinkedIn erasure? Well, 
+
+[00:28:44] Alex: LinkedIn is a social network.
+
+If you're looking for a job. Then it becomes irrelevant. 
+
+[00:28:49] Brian: What about thought leadership? 
+
+[00:28:51] Alex: I do, I do think that for thought leadership, it is the place to go. 
+
+[00:28:55] Brian: I don't, I find no thought leadership on Instagram. 
+
+[00:28:58] Troy: So, the message of Metta, the mission was to connect the world.
+
+And here's the problem is now the world's connected. So, there's no problem connecting to anyone. In any of the 15 applications that you can use from text messaging to WhatsApp, to Instagram, to any of them. And so in some ways that problem, which used to be like the kind of that was the Genesis, if you were around an early Facebook or MySpace before it, or Friendster before that was like, you're going to develop a network, a friend network, and now we're like, who can, I can't even imagine that.
+
+Like why you don't need to, and if you need to get connected with someone, someone's going to patch you through and WhatsApp or text thread or whatever. And now it's just about publishing shit. Now it's just about the information space. It's just like the networking part of it to me has kind of is disappeared.
+
+And even 
+
+[00:29:54] Alex: Instagram, even Instagram has kind of relegated it to a secondary feature, right? Right. You used to go through the stream to get. Pictures of people and what they're doing. And now, you get ads for socks. Well, 
+
+[00:30:06] Brian: it's almost, it's like an identity framework, right? like when you're talking about Facebook, I, I think a lot of people have Facebook accounts for Facebook marketplace.
+
+Right. Facebook, which is strange if you think about it, like Craigslist, I think is, it's really on the decline. Like I think Facebook actually defeated Craigslist. 
+
+[00:30:24] Troy: I agree. Yes. I agree. I agree. 
+
+[00:30:26] Brian: because of the identity, because there was just so much with, you know, scammers. I assume. 
+
+[00:30:31] Troy: Yeah. I mean, Craigslist has turned into a dirty garage.
+
+So it's gross. Really? Craigslist? 
+
+[00:30:37] Brian: I found an apartment on Craigslist only a couple of years ago. Have you ever dated anyone on Craigslist? 
+
+[00:30:45] Alex: Casual 
+
+[00:30:45] Brian: encounter. What is that called? Casual encounters. What did they have? 
+
+[00:30:50] Alex: You found an apartment on Craigslist? 
+
+[00:30:52] Brian: We found our place in, in Miami during the pandemic on Craigslist.
+
+[00:30:57] Alex: That is a wild story. Okay. 
+
+[00:30:59] Brian: We moved down there. I was like, does this exist? And it did. So it ended up working out. just fine. So let's talk about the Olympics. I want to move on because I want to get to the Olympics because I thought the Olympics were were amazing. And I think that it was a combination, obviously, of this great 
+
+[00:31:17] Troy: your good product segment.
+
+Why are the Olympics a good product? 
+
+[00:31:20] Brian: Because I'm going to get to it because it was a combination of there's some great athletes that that they had this time around. There was some great storylines, And despite any sort of tech glitches, I think the way, first of all, they were in Europe. Europe is a good place to have them because of time zone differences.
+
+You could get into the sports live. You could, you, you had a little bit of a choose your own adventure. It wasn't all a one size fits all, or you could like just have the packaged highlights at night and then you had the memes. It was an amazing, I personally. 90 percent of Olympics content through memes and highlights, whether it was, the, the Turkish casual shooter, or any of the other, memes that took place, Stephen, Stephen, Stephen, I like Stephen, the, the pommel horse guy was the pommel horse.
+
+and, I think it points to the future a little bit of, one, there's absolutely a place for these kind of mass. Media experiences. I think we went too far into the atomizing everything and the popularity of the Olympics and the numbers are coming out of this shows that regular people want shared experiences.
+
+Sorry. Sorry, tech bros. not everything is going to be laser targeted and lonely. they want to be able to talk about things and have a shared experience that they can talk about that. Other people have some idea.and. Anyway, I thought it was like a very modern experience. 
+
+[00:32:59] Troy: I was, it's funny, Brandon, when you, you said this a couple of times, but it's and if, if we would have said this, five years ago, as little as five years ago or a decade, people would have, thought it was ridiculous, but the only thing to survive outside of the, what I think of as the library, right.
+
+Which is, Individual shows off a timeline in an interface that you can access when and where you want to with ads or without, which is modern streaming. It are sports live spectacle, whatever that event is. and maybe Maybe, news and local news, but everything else, that's kind of timeline based, is, it's gone and I think, and you saw it profoundly this week with the 10 billion right down at, at Warner Brothers discovery of their cable networks.
+
+I mean, it was like, to me, that was just kind of the end of an era,the, discovery was always the powerhouse and cable networks. And,this week they said. they're not worth quite as much as they used to be. So, I didn't think I would see this so quickly, I think, which is basically cable television looks like the magazine industry did a decade ago, scrambling to make up print losses with digital progress.
+
+And, that's kind of where we are in TV. 
+
+[00:34:13] Brian: So where does it evolve to? Does it, does it evolve like the magazine business evolved? 
+
+[00:34:18] Troy: well, I think that the streamers after,a handful, three or four streamers, some niche ones after. years of of kind of hemorrhaging, will once they get to a place where it becomes an oligopoly again, the profits will be will be significant because, if you have three or four that can actually program out a day that can buy the best programming that have, legacy IP rights and all that stuff and can start investing in live around like what you're seeing with the NFL and other stuff.
+
+Okay. it becomes, kind of structured oligopoly where you have pricing power and you can start jacking up prices. We're seeing that now, and then what you have to contend with is churn, and, the churn issue will be big and, you'll have. Your primary streamer and a secondary streamer, maybe a third one.
+
+And then that'll be how the market works. in some ways it'll look like cable, but it'll be better than cable because you'll have more choice and it'll be a lot easier to fucking cancel than it used to be. 
+
+[00:35:18] Alex: Did you have, well, Biden just announced a. Click to unsubscribe. Who's 
+
+[00:35:23] Troy: Biden? Isn't 
+
+[00:35:25] Alex: it Biden? 
+
+[00:35:26] Troy: Oh, the president.
+
+The FTC did it. 
+
+[00:35:28] Alex: Yeah. Yeah. 
+
+[00:35:29] Brian: No more calling to cancel between, 8 a. m. and 5 p. m. East coast time. Sad. That's going to be tough for some publishers. The wall street journal got ahead of that one. 
+
+[00:35:41] Troy: I liked the Olympics. I thought it was great and made me feel good. And the French did a great job. Here's to them.
+
+Okay. I'm 
+
+[00:35:48] Alex: French and I'm going to 
+
+[00:35:50] Troy: shit on them. 
+
+[00:35:51] Alex: No, I think the event was well run. I think that that closing ceremony was a snooze fest until, until Tom Cruise appeared. I think it was sometimes I'm going to tell my French. 
+
+[00:36:05] Troy: Can you do it in French, please? 
+
+[00:36:08] Alex: Sometimes there's, there can be, it can be too French.
+
+and not everything needs to be like going at the pace of a black and white movie where people stare at each other while smoking cigarettes. And seeing a bunch of people wrapped up in toilet paper pushing metal rings around for 30 minutes wasn't fun. So, otherwise, well done. 
+
+[00:36:30] Troy: Wow, you betray your people and your, your, your history.
+
+No, no, no. 
+
+[00:36:34] Alex: Feedback, feedback is a gift. 
+
+[00:36:35] Brian: Feed forward. We call it feed 
+
+[00:36:37] Troy: forward on the spot. You never say that to me when I criticize you, Alex. 
+
+[00:36:43] Alex: Because 
+
+[00:36:44] Brian: look, the LA Olympics are going to be the total opposite. It's Michael Bay is going to be, doing the opening and closing ceremony. It's going to be rockets.
+
+Alex 
+
+[00:36:52] Troy: said last night with, he said it was, we were going to buy tickets last night. We're going to go. We'll 
+
+[00:36:58] Alex: episode 300 live from LA during the Olympics, but, but the Olympics is a perfect, perfect event, for, for the digital streaming world. You can, can create little clips from everything.
+
+There's all these viral moments. You can create playlists. I didn't watch anything live. All the stuff I watched was like little. Clips. What was your, what was your 
+
+[00:37:18] Troy: favorite, favorite, activity? Oh, it 
+
+[00:37:20] Alex: was that, competitive, kayaking, downstream kayaking, where they just drop four people down the stream and they have to just like.
+
+[00:37:30] Brian: I think the Olympics are great because it's, it's mass, but it's also a niche, right? Cause it's the time when you have a focus on niche sports, but also mass ones like, basketball. But really, I think what really breaks through with this is, these sports you never pay attention to except for one time every four years.
+
+And, and that's, that kind of makes it, it fun. I think in some ways it's like Eurovision, right? It's like weird, but it's also niche. And, and that's what breaks through. I feel like these days. 
+
+[00:38:04] Alex: yeah. Eurovision is going to like, keep like gaining momentum in the fully digital world. 
+
+[00:38:11] Troy: Do you have a, do you have a good product? the thing about good products is if we, for a moment, take a step back, we, we ask ourselves what makes a good product?
+
+And, I was reminded of that at dinner this week with a friend who's, it was a friend's birthday. And I was, there was a couple of us, there was several of us having dinner and I was with, I was sitting next to an obsessive,hotel owner very, very obsessive. and I noticed him do a couple of things that I think It really told the story about why he makes successful hotels.
+
+And first of all, there was a long table and, the light wasn't perfect at the end of the table. And while we were having a conversation, he leaned back and told the server to go put a light at the end of the table. And, just before that, someone had told me that in this particular hotel, there's never a light bulb.
+
+That's out. everything is, that they're, he's totally obsessive about just maintaining the kind of perfect, well cared for experience. And then, and then, the, the, the thing that kind of said it to me was, I had my zin tin, my container in front of me. And he picked up my, while we were talking, he picked up my zin container and aligned the top and the bottom perfectly.
+
+Just so the, the top sticker was aligned to the rest of the, the Zyn container. And then he just gently said it, set it back down. And, It just struck me at the time that the reason this guy just has a, like an incredible history of making great, great books,experiences and environments and, hotels is that he's just a massive obsessive and he hires people and trains them to be the same.
+
+But the one thing that he does is he's, he's kind of gentle about it. He doesn't like, he's not a screamer. He doesn't yell at the person to like, put the light at the end of the table. It's just like, Hey, could you, would you mind just fix that? And I think that you gotta be obsessive to make great products.
+
+You gotta be. And, sometimes that obsession, like Steve Jobs means that there's lots of roadkill and other times, I guess people learn how to balance those instincts. I, I start, I started talking to him about it and I realized, I said, you must be restless, like you must nut. it must be hard for you to relax because.
+
+There's something in your brain. Something's always out of alignment. Like you're always, always trying to kind of optimize an environment. And he said, it's a little bit of a curse. 
+
+[00:40:44] Brian: I think we're at a time when it's easy to monetize disorders, right? So you can like monetize your OCD. You can monetize your autism.
+
+you just have to channel it in different directions. Yeah. I 
+
+[00:40:55] Alex: mean, I think we've always done it. I mean, I think if you look at a lot of people who might. Have stood out in the middle ages where it had some sort of compulsion that made them really good at one thing. I mean, I definitely feel that 
+
+[00:41:10] Brian: middle ages.
+
+I was thinking like, who's, well, you'll notice what Alex 
+
+[00:41:14] Troy: does is you'll write a document, Brian, and Alex will go in and reformat it. I did. I noticed that. I like that 
+
+[00:41:20] Alex: because that's not me. That's my brain worms, like doing the talking and. I think what I've managed to do is funnel that neurodivergence into a role so people go to me like, well, how do you see this?
+
+Listen, 
+
+[00:41:31] Brian: I mean, it can be a disorder, but then it becomes wow, a gift. 
+
+[00:41:35] Alex: I mean, isn't that life? make sure that you, channel your disorder energy into something. you know, anybody that, I mean, I'm sure Troy is compulsive. I'm sure you have a compulsion. 
+
+[00:41:45] Brian: How do I monetize my procrastination?
+
+Do you have any ideas? 
+
+[00:41:48] Alex: Well, you're a writer. So that's not, 
+
+[00:41:51] Brian: well, I found myself into a profession where it's like culturally accepted. 
+
+[00:41:55] Alex: Exactly. That's where you all end up just, turning in your assignment at the last minute, that's how you work. Yeah, I don't know. I mean, I think, also like a lot of good products come from a lot of pain, like the act of releasing something good is often not fun.
+
+[00:42:12] Troy: I'll tell you, it was exciting to see your video game trailer last night, Alex. 
+
+[00:42:16] Alex: Oh, 
+
+[00:42:17] Troy: really? Brian, this is I haven't seen it. When you guys get together, he can bring it up on his phone. It's it's going to be, it's going to be fun. It's going to be fun. 
+
+[00:42:25] Alex: we need a social media manager, Troy, if you, if you're looking for, for a gig outside, we need that type of energy.
+
+
+[00:42:34] Outro
+---
+
+[00:42:34] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week.
+
+[00:42:53] Alex: All right, guys, I have a, like I said, a hard stop. 
+
+[00:42:56] Brian: Oh, yeah, you don't want to overstay your welcome in a, we work room. 
+
+don't want you to get kicked out. All right. Okay. 
+
+[00:43:01] Troy: Thanks. Thanks guys. Thanks guys.
+
+This was great. 
+

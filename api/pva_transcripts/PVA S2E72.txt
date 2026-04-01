@@ -1,0 +1,1091 @@
+PVA S2E72
+===
+
+
+[00:00:00] Cold Open
+---
+
+[00:00:00] Troy: is it on the shelf now? Are you ever gonna use it again, do you
+
+[00:00:03] Alex: I just, used it this morning. I was actually on a call. I forgot to take it off. I don't like being a virtual face, in a meeting of real people, but the rest of the time I love working in it.
+
+[00:00:12] Brian: But how much less do you use it now?
+
+[00:00:14] Alex: Oh, I use it daily. Like a few hours a day for sure. 
+
+[00:00:17] Troy: What do you mean a few hours a day? What are you doing?
+
+[00:00:19] Alex: Well, I work in it,
+
+[00:00:20] Troy: Working on what?
+
+[00:00:21] Alex: well my stuff I design, I draw, I respond to emails all our team. We don't do video calls because I find video calls really exhausting, so we try to do audio calls all the time. It gets everybody more focused and so I can be in VR. 
+
+[00:00:35] Troy: Is that true that video calls are more exhausting?
+
+[00:00:38] Alex: I think so. Yeah.
+
+[00:00:39] Brian: Yeah, look, I think that's proven
+
+[00:00:41] Troy: Hmm.
+
+[00:00:42] Brian: looking at your face, and that's why you're supposed to hide self view.
+
+[00:00:45] Alex: It's distracting. Your brain gets kind of overloaded with all this shit.
+
+[00:00:48] Brian: the old school phone, call's back. 
+
+
+[00:00:50] Intro
+---
+
+[00:01:12] Brian: Welcome to People vs. Algorithms, a show about patterns and media, technology, and culture.
+
+I'm Brian Morrissey, and I would love to sell you a membership to the Rebooting. Each week I am joined by Troy Young and Alex Schleifer. This week we're taking a bit of a more structured approach per Troy's directive. In the news segment, we discussed the enduring power of the Super Bowl and why maybe Roger doesn't get enough credit for the job he's done.
+
+We also discussed the new sports streaming service from ESPN, Fox and Warner. And why Troy hates threads because it's Applebee's and he would prefer to be in a dingy dive bar, which I believe is a fairly accurate description of X. You could overhear an interesting conversation or you could get a bottle broken on your head.
+
+Never quite know. But our main topic is the new internet. The internet has gone through many different epochs. There was the CB radio hobbyist phase early on. Then we went into portals. And then to search, and then to platforms, and then, well, we're still trying to figure out what's next. The simple but profound shift that Troy identifies is a move from searching to having things delivered to you because a lot of the value on the internet.
+
+Is extracted from the hunt. Even the anachronistic internet terms, surf, browse, click, engage, imply some movement and was in that movement that money could be made. Google set up the most lucrative tollbooth in world history. After all, now I've been listening to the very excellent. Empire podcasts, Anita and William.
+
+Just wrapped up a season on the Persian Empire. And one of the big takeaways that I've had is that there are many advantages to running an empire. And I can't shake the feeling that we are entering into a new age of empires only instead of nation states. We have giant tech platforms in charge, and the open internet was something of a utopian dream, but I think that's mostly over now.
+
+Now for the media business, and it's something we get into in this episode. The question is how do you survive in this age of empires? We're seeing already the decline and fall of some weak states and many others will, follow this fate, but most will figure out a way to adapt and survive if in a smaller state and possibly as vassals to these empires.
+
+But there are a few notes that a single media entity can have in a world where Sam Altman is raising $7 trillion. Alex identifies a few of them. Things such as unique data sets, a distinctive personality or point of view, intellectual property that people are attached to, or even to provide some kind of unique utility.
+
+And if all else fails, you can always put on parties for brands. I hope you enjoy the full conversation. Send me your feedback. My email is bmorrissey@therebooting.com.
+
+All right. Should we get started? Let's talk about the Super Bowl. I have a confession to make. I didn't watch the Super Bowl. A hundred twenty-three million people watched it. I am a big football fan, but for some reason, when it gets to the Super Bowl, unless the Eagles are in it, and they've only been in it three times in my lifetime, I tend to lose interest in it because it's, it's a big spectacle and none the spectacles.
+
+[00:04:16] Alex: Wow.
+
+[00:04:16] Brian: How was it? Was it a good game?
+
+[00:04:18] Troy: I have no idea what you're talking about. You don't watch
+
+[00:04:22] Brian: I didn't watch the Super Bowl. I
+
+didn't, I didn't. 
+
+[00:04:24] Alex: even, I watched a Superbowl and
+
+[00:04:26] Troy: you doing in, what were you doing instead?
+
+[00:04:28] Brian: I, I, I had dinner here. 
+
+[00:04:30] Troy: did you watch Better Call Saul? what? What were you doing?
+
+[00:04:33] Brian: No, actually I watched that True detective. I can't tell if it's good or not, but
+
+[00:04:38] Alex: No, I, I think that's, I think that's everyone's, opinion about that show. I have no idea. Yeah.
+
+[00:04:43] Brian: Troy looks alarmed. 
+
+[00:04:44] Troy: well, 
+
+I am alarmed. I thought you were a football fan and 
+
+[00:04:47] Brian: I
+
+am a football
+
+fan. 
+
+[00:04:49] Troy: kind of cultural moment. I don't understand really.
+
+[00:04:51] Brian: I don't 
+
+[00:04:52] Alex: I
+
+mean, don't you have like, friends that throw parties?
+
+Okay. Sorry. First of all, 
+
+[00:04:56] Brian: get any, you know? 
+
+[00:04:57] Alex: do, do you have friends?
+
+you're in media for this long, I think you don't have many friends after that. Is that, is that what happened?
+
+[00:05:03] Brian: Could be. So how was the since I was not one of the
+
+[00:05:07] Troy: I mean, it was a terrific game if you like football. It was a great game. I think it showed how the Wiley, um, Mahomes, you know, was able to kind of pull it out in the final play. I think we need to rethink overtime. But having said that, you know, he marched the team down the field and, to win the game in overtime.
+
+It was a terrific game run.
+
+[00:05:26] Brian: Okay, but what about it as, as a spectacle, as a, as a media and a cultural event. 
+
+[00:05:32] Alex: say, I think that the, the halftime show, the halftime show was fantastic. the, the production of the event was really good. and I'm coming at it from someone who's not biased by liking football 'cause I still don't completely understand it. but yeah, it was great. And I think even, even the Taylor Swift stuff was kind of handled, in a pretty tasteful way.
+
+I think she was on, screen for only fifty-three seconds. But, you know, her presence was felt there. And then Usher was incredible. That show was incredible. It felt really amazing. So 
+
+[00:06:00] Brian: And he got married. 
+
+[00:06:02] Alex: Not like Prince. Usher?
+
+[00:06:03] Brian: He got married after the show.
+
+[00:06:05] Troy: Hey, hey, dude. Usher's no Prince
+
+[00:06:08] Alex: No, I mean, that's what I'm saying. Like, the best halftime show ever is, is Prince for sure.
+
+[00:06:13] Troy: Yeah, I mean, I wouldn't even use those two artists in the same sentence,
+
+[00:06:16] Alex: No, what I was saying. Oh, Jesus Christ. All right. Okay, boomer. 
+
+[00:06:20] Troy: How, how is that Boomery?
+
+[00:06:23] Alex: How is that Boomery.
+
+[00:06:24] Troy: I, mean, prince is the goat, right? I mean, 
+
+[00:06:27] Alex: Now princess incredible that halftime show is worth watching I think every year at least once.
+
+[00:06:33] Brian: I think one of the things it was brought up on the Puck podcast, The Powers That Be. It's a really good podcast. I like the Media Monday with our friend John Kelly, that fifty-three percent of Americans say that the NFL is America's sport. No, no longer it doubles baseball. Which is still clinging on twenty-seven percent.
+
+and that's really remarkable to me. If you think back just a few years ago, it looked like the NFL was on the ropes with all the CTE. They just powered through all of that CTE
+
+[00:07:04] Troy: It's incredible.
+
+[00:07:05] Brian: Kaepernick, the kneeling, getting pulled into politics and Trump and all that. And they just, Goodell doesn't get enough credit, I
+
+[00:07:13] Troy: and I think he's gonna go down as being a great head of the organization, to be honest. And you're right, he was on the ropes. the packaging and the merchandising and the storytelling around the game, I think is unsurpassed globally. It's incredible. Both of those short films they made, you should watch them, Brian, you know, films about kind of the, the importance in legacy, of football.
+
+And there was a second one, which is Escaping me. That was great.
+
+[00:07:36] Brian: Are they like overwrought? I like my NFL
+
+films to be overwrought. 
+
+[00:07:41] Troy: yeah, yeah, yeah. Even my wife said, my God, that was amazing. Yeah. It's a beautifully packaged sport.
+
+[00:07:48] Brian: they make it very profound. 'cause and then it's like tinged with patriotism. I love that.
+
+A good flyover. I'm a sucker for a good flyover.
+
+[00:07:56] Troy: I don't know why you wouldn't watch the game.
+
+[00:07:58] Brian: I, you know, I don't know, I just didn't feel like it, that it was just, it was a, game time decision.
+
+[00:08:03] Alex: you were like Justin Bieber. Apparently he was asked to perform with Usher and he, apparently his answer was that he just wasn't feeling it.
+
+[00:08:09] Brian: yeah, I can see that way. He would probably want to Usher to perform with him.
+
+[00:08:13] Troy: I am gonna invite you over next year. We'll watch it together, Brian.
+
+[00:08:17] Brian: Okay. but going back to the CTE stuff, and even back in like 2014, Mark Cuban, who, you know, if you're gonna talk a lot, you're gonna get a lot of shit wrong. But Mark Cuban gets a lot of stuff wrong. He, he said that the NFL was gonna implode because it was too greedy. And, yeah, it reminded me that he's, he's since recanted this.
+
+back in 2006, he said that only a moron would buy YouTube.
+
+[00:08:42] Troy: Hmm.
+
+[00:08:42] Brian: I think the lesson is don't, be outspoken 
+
+[00:08:44] Troy: You know, you know what, only a moron, would've bought his company for $4 billion or
+
+[00:08:49] Brian: broadcast.com.
+
+[00:08:51] Troy: The guy won the, the guy won a lottery.
+
+[00:08:53] Brian: was Jerry Yang did that and he, he made the investment in Alibaba. So, 
+
+[00:08:58] Troy: Yeah. Now he's Mr. DEI on Twitter. Gimme a
+
+break. Cuban. Yes.
+
+[00:09:02] Alex: love Cuban. I think he's great. I love
+
+[00:09:05] Troy: Once again, we're on the other opposite sides of the, point here. I mean, it's just, I, when people square off, you know, sort of just to kind of build their, celebrity more than making a point.
+
+It's annoying. and that's what this whole, you know, Cuban DEI thing is.
+
+[00:09:23] Alex: I, so it's better when, Elon does it,
+
+[00:09:25] Troy: I think on both sides it's equally annoying,
+
+[00:09:28] Alex: he could have strong opinions about it. And he has a platform, so I mean, that's what we do,
+
+[00:09:32] Troy: I guess.
+
+[00:09:33] Brian: true. but more importantly, how about the commercials? I spent some really formative years of my life at Adweek, where there was a frenzy about the TV commercials two months leading up to the Superbowl, and then a good month afterwards, the USA today, Admeter, et cetera.
+
+it used to be that the, the commercials, it was the suspense, and then everyone released their commercials ahead of time. Like YouTube, and I guess now, and then it became the w the web to cringy stuff. And now what, what are we back at with,
+
+[00:10:10] Alex: You mean? You mean the Web3 stuff?
+
+[00:10:12] Brian: well, the, well, we had that weird crypto
+
+thing with Matt Damon, 
+
+[00:10:15] Troy: you know, I think that the art of the television commercials in kind of retreat a little bit, because it's just less important than it used to be somehow. And that doesn't mean that there weren't some terrific commercials. 'cause there were, and like a couple stood out to me. I mean, if the Duncan one with Ben Affleck and J.
+
+Loa was great. 
+
+[00:10:36] Alex: why was that great? I just like, I was
+
+[00:10:38] Troy: oh, it's just 
+
+[00:10:39] Alex: it flew over my head. 
+
+[00:10:40] Troy: her, the expressions on her face were great. to have him kind of just kind, play the gag, was I, thought, you know, good on him. He made fun of himself. That was cool. it was fun to see Brady in it. It was just a fun little gag.
+
+the one that stood out to me is how many ads team we bought.
+
+[00:10:58] Alex: that was
+
+[00:10:59] Troy: I think that they bought six, six ads in the Super Bowl. Probably cost them $50 million.
+
+[00:11:04] Brian: Well, they're spending 1.7 billion. so it's not
+
+[00:11:08] Troy: I think that was last year. Yeah. Huge number,
+
+[00:11:11] Alex: how did they make any money? the ad that stood out to me was the Kanye ad, which was recorded on, on an iPhone in his car. where he says, you know, I spent all my money on this ad, so please go to my website. and we're selling shoes and. That's it. And then it cuts off. It was kind of crazy.
+
+but he remains really good at, at kind of, putting himself into the conversation. I think it was interesting,
+
+[00:11:35] Brian: So the ads are still getting a ton of money. $7 million. I mean, it's a unique event outside of me, a hundred and twenty-four million. Although there was more people like me who weren't actually tuned in. a hundred twenty-four million people actually watched it. so last gasp of mass media.
+
+can't get that on Twitch.
+
+[00:11:54] Alex: the thing I found interesting is that a lot of movie trailers came out and the trailer was really short. and then they just said trailer online now. So the ads were like mini ads just sending you to YouTube.
+
+[00:12:06] Brian: How about QR? Is the QR all over the place, or is that 
+
+[00:12:09] Alex: Uh, no, no, the QR code wasn't there at all. I would say actually,
+
+[00:12:13] Troy: Yeah, there were a few. There were a few, 
+
+[00:12:15] Alex: really,
+
+[00:12:15] Brian: Ad agencies were like, no, we don't like
+
+this at all. We, we saw how it went with the click. We don't want 
+
+[00:12:20] Troy: the crypto Bull.
+
+[00:12:22] Alex: I don't know. To me it felt really like so much of, of the advertising was just trying to get you to, to a website or a platform. It was just basically like, okay, you're watching this on tv. Please, please leave and go to our, to our YouTube channel.
+
+[00:12:36] Troy: the Tmoo thing is, is interesting though. For another reason. It's sort of like, Chinese manufacturing writ large going DTC via Tmoo instead of, through American retailers. Tmoo I think did in 23 $16 billion, which was in revenue, which is I guess substantial. It's about three quarters of what Target did in digital revenue.
+
+But, just the idea that, one of the little kind of, interesting twists in it is that if you send goods that are under $800, you get under U.S import tariffs. So, in some ways it's sort of like, Not waiting for, you know, American retailers to decide to stock Chinese goods, just go direct and cut out the middleman.
+
+it's kind of fascinating actually. Single-handedly responsible for the, I think about 10% of Metta's earnings growth is, Tmoo advertising
+
+[00:13:30] Alex: that's crazy. 
+
+[00:13:31] Brian: this is the TikTok playbook. I mean, TikTok spent almost as much to get distribution 
+
+and it's funny 'cause they, they bought the distribution from the companies, the platforms that they ended up competing with
+
+in a way.
+
+[00:13:47] Alex: you think their model is sustainable because out of nowhere, this competitor to Amazon, showed up. And then I was like, you know, I was 
+
+[00:13:55] Brian: outta nowhere though, 
+
+is it? I mean, duo has been around for a while and I think it's an offshoot of Pinduoduo and I, I only listen to one podcast about their model and it sounded kind of interesting social shopping.
+
+[00:14:07] Alex: sure, but I mean, I think it came like from, you know, Amazon didn't have competition and all of a sudden it does, and then I, I start asking people sitting around me because I was like, has anybody ever actually used Teemu and everyone had used Teemu? I said, oh yeah. It's so cheap. We use it all the time.
+
+[00:14:23] Brian: I've never used it,
+
+[00:14:25] Alex: Well, yeah. You know,
+
+[00:14:26] Troy: Can you buy basics on there? I've never used it. Can you buy like
+
+[00:14:29] Alex: I don't know. I've, I've never used it. I don't, I think we're all
+
+like, we dunno. Are we
+
+just 
+
+[00:14:33] Brian: anyone's using it? It's all, I only know him from the display ads, the programmatic display ads
+
+with like the tongue depressors and,
+
+[00:14:41] Troy: Yeah, their funnels are really good. They're good at getting you to download their app with a spinning wheel of discounts.
+
+[00:14:46] Alex: Oh, really? Have you tried it?
+
+[00:14:47] Troy: I click on the ads 'cause I like to understand how ads work.
+
+[00:14:51] Brian: Oh, good. speaking of sports. Another big, piece of news this week, probably not coincidentally, came news of Spooloo, the ESPN Fox and Warner getting together to have a standalone sports app that would seem to finally be the death knell of the cable bundle. Is that what we're seeing here? Troy.
+
+[00:15:12] Troy: we're seeing something. it's just getting harder and harder to figure out where to get your stuff. I guess in my mind, the only, I just kind of processed it, processed it personally, and I thought. let's say it's 30 or $40. I'm a big NFL fan. I don't watch a lot of other sports.
+
+Maybe tennis a little bit. I pay for YouTube tv. I think it's about 75 bucks now. But the only thing I watch on YouTube TV other than occasionally kind of driving by CNN or MSNBC is sports. So if I was gonna buy this cable spool as you call it, this bundle, I would probably wanna reevaluate whether I use YouTube tv.
+
+I actually also buy Sunday ticket on YouTube tv, which gets me every NFL game for like three or 400 bucks or something a year. to me it feels like maybe Fox Warner and ESPN. Have to get together to put a bundle together to go directly to the consumer with sports or risk, losing that direct connection to u to YouTube.
+
+to me, that feels like that, that's a risk right now. So if people continue to leave the cable ecosystem or young people and they wanna watch sports, YouTube is a much better platform. they'll have a, a tremendous amount of distribution power.
+
+So it seems to me like this is kind of a defensive move and, it's about, extending a bundle to people that are otherwise don't have cable other than maybe YouTube and, focused on a younger demo would be
+
+my assessment. 
+
+[00:16:48] Alex: do you think, I mean, I think it feels, it's definitely defensive, but how much of this is because of also the regulatory blocking of, a lot of M&A activities. So, maybe these companies would be buying each other out in a different environment, but instead there, there's maybe a, an age of partnerships opening up, and I know we'll talk about Disney and Hulu and, Epic later, but, like the, these kind of deals feel easier to get through regulatory.
+
+[00:17:17] Troy: Well, I mean, remember Disney already bought, half of the Fox Empire and Discovery just bought Warner. So, there has already been a fair amount of consolidation. We expect, another shoe to drop with, Paramount and who knows what, NBC is gonna do. So I think that maybe there's a little le there is probably scrutiny on, the, these are enormous.
+
+Sort of clusters of media at this point. But, yeah, I don't know, may, maybe that's the reason they're doing it or maybe they just realize that they gotta, combine their, their rights assets and go direct to the consumer and that just forces unlikely friendships.
+
+[00:17:56] Brian: Yeah, but it, it also reminds me of when Hulu was formed. Do you remember how it was Frownedly dismissed? I remember TechCrunch called it ClownCo, which Brian Weiser called back to, which I, I really appreciate. I sent him a note because anyone who remembers TechCrunch calling, it was NewCo at the time. They didn't have a name for it before Killar got there.
+
+And 
+
+the bet is always against these partnerships. Joint Ventures never work in media. And then people, it's like micropayments. Anytime anyone mentions it, they just, ah, it doesn't never works, and people just move on. they made Hulu work for a while. I mean, it didn't, maybe long, long term, I don't know.
+
+But, I, I think there was. 
+
+[00:18:36] Troy: is doing. Team is doing micro payments,
+
+[00:18:39] Brian: I mean, micropayments are, I think they're inevitable. 
+
+[00:18:42] Troy: 9 99 for a new dress.
+
+[00:18:44] Brian: yeah, Yeah, and, and micropayments also work in, in gaming all the time. 
+
+I know, I know. I, I was just using that as an example. We can do an entire episode on micropayments, but the
+
+reception to this was 
+
+[00:18:56] Alex: it goes back to my point that media always like, is suspicious of new things and therefore tries a little too little. I mean, I think this is, I think this looks really interesting. It's the, it is probably the first sports product that I would acquire.
+
+I get, I get like 80% of US sports, just like
+
+[00:19:14] Troy: Do you have YouTube, tv, Alex?
+
+[00:19:16] Alex: no, I don't seem kind of, expensive. I, I keep getting it for a specific event and then canceling it out.
+
+[00:19:22] Troy: Hmm.
+
+[00:19:23] Brian: I have YouTube tv.
+
+[00:19:24] Troy: That's like when I subscribe, Brian tried to get me to subscribe to his, it's very expensive. By the way. Brian 
+
+rebooting very, very expensive. He tried to get me to subscribe today. I've 
+
+literally been helping the guy for months and months and months, and, and he try, he won't gimme, he 
+
+[00:19:40] Brian: he asked me for a discount code.
+
+I'm not giving discount codes. People
+
+[00:19:44] Troy: I don't wanna discount code. Brian. I want it free.
+
+[00:19:48] Alex: you're telling me,
+
+[00:19:49] Brian: You know? Did you see, have you seen Caddyshack? You remember Caddyshack? It's you know when Denunzio goes, and asks for a Coke at the Caddyshack? And he's like, 50 cents. He goes, I ain't paying 50 cents for no Coke. And he said, oh, too bad. You ain't getting no Coke. Lou's been losing at the track,
+
+so 
+
+[00:20:07] Alex: Sh 
+
+[00:20:07] Brian: getting no Coke.
+
+[00:20:08] Alex: man.
+
+[00:20:09] Troy: right. All right. I'll remember that next time you want something. I'm gonna disinvite you from my upcoming dinner.
+
+[00:20:14] Brian: that'll save $200. There you go. Yeah. 
+
+[00:20:20] Alex: I'm also upset Troy, but I also kind of respect the hustle. Like he doesn't 
+
+[00:20:25] Brian: It's not a 
+
+[00:20:25] Alex: really? doesn't break character.
+
+[00:20:28] Brian: it's $200. Everyone is listening to this. Should, If I pay $200 for your product,
+
+[00:20:34] Troy: It's like charging your priest when he comes over for 
+
+[00:20:37] Brian: oh, guess what happens twice? Not once, but twice. During mass, the collection basket goes around,
+
+[00:20:44] Troy: Oh shit. Forgot about that.
+
+[00:20:47] Alex: yeah,
+
+[00:20:48] Brian: they monetize that. It's like a mid-roll right after the homily.
+
+cause that gets people jazzed up.
+
+[00:20:54] Alex: at least we're staying on topic.
+
+[00:20:56] Troy: No, I thought that was good. We can now move to a heated discussion about your favorite social
+
+[00:21:02] Brian: I don't know. I want to talk, I want to wait. We gotta talk about Epic, because it, Disney also, put $1.5 billion into Epic. you know, I feel like the entertainment and gaming worlds have mostly operated in parallel. I mean, there's some overlap, but I feel like these are different worlds.
+
+Are they finally coming together?
+
+[00:21:23] Alex: I think if you want, to see what it looks like when they operate well together, Sony is a pretty good example, right? So Sony has a big, Media production arm, the PlayStation is the most successful console, and they'll do things like, they still own the movie and game rights to Spider-Man.
+
+So they'll, they did Spider-Man video game this year was a massive hit. And so they, they, they're making managing to make it work. I think what happens a lot is that, traditionally a lot of the video game development was outsourced. so the company's never built that muscle. and it's actually pretty hard.
+
+it was in the past pretty hard to time IP of a movie release to the release of a video game because, just the, the, the
+
+[00:22:04] Troy: There were also different cliques in high school
+
+[00:22:07] Alex: They're also different cliques in high school. That's right. so to me, this, the Epic thing makes a lot of sense.
+
+epic actually has, it's not the first partnership they're doing around Fortnite. they've done a few acquisitions, but they, the latest, partnership they did was with Lego. So they, they launched a Minecraft-like Lego World within, Fortnite, which is, now a, a full-on platform.
+
+So, you could see. Easily see like Disney properties making it into that platform without the risking cost of, of what it would take, to kind of onboard a bunch of, people into something new. So, they're all in on that. And I think Epic's going to be a massive company. that's the way to go.
+
+That's kind of the, that's the metaverse. They're the only company that's really building anything even close to that.
+
+[00:22:51] Troy: I thought you were in the Metaverse last week on the show.
+
+[00:22:54] Alex: I'm not in the metaverse, I was just using, using spatial computing. Please try. 
+
+[00:22:59] Brian: Why is Microsoft cutting? I mean, everyone's cutting jobs, but I was surprised that Microsoft was cutting 1800, 1900, jobs in their gaming. I know they bought Activision. Is this just like normal cleaning out middle management
+
+[00:23:12] Alex: no, I mean the, the,
+
+[00:23:14] Troy: normal cleaning out of middle management.
+
+[00:23:17] Brian: that 
+
+[00:23:17] Alex: yeah. 
+
+[00:23:18] Troy: Is that what goes on, Brian?
+
+[00:23:19] Brian: Isn't that what happens? That's the entire logic. That's what I hear when I hear synergies. But isn't
+
+that what synergies mean, 
+
+[00:23:26] Alex: I would've said that if, you saw people in marketing departments get cut, but they cut deep, deep into,
+
+[00:23:31] Brian: People in marketing departments aren't middle management. they're
+
+[00:23:34] Alex: No, no. What I, what I'm saying is, what I'm saying is you get these post mergers, readjustments, where, the company goes, well, we have a marketing department, so we don't need two.
+
+Right. But this is not, this is not what happened here. Actually, if you, if you look into it, the cuts were deep into, into game development. So they're pulling back on projects and they're cutting the game development. The problem with Microsoft right now is that the Xbox is being outsold, three to four times by the PlayStation.
+
+And so their strategy isn't working in getting boxes into people's homes. and they've spent, I think, a total of $73 billion in acquisitions. You know, including, of course, the, the big, Activision one, but there was also Bethesda software. There's, there's different smaller studios and they've just had a string of, best-case scenario duds, worst-case scenario is total failures, released.
+
+and so I think they've had a lot of trouble with these acquisitions, so they're genuinely in trouble. they're going to announce something over the next few days, which people think is some sort of, way to download these Xbox games to Sony or, starting to become more open with a publishing.
+
+'cause I'm sure there's, at the board level, people are asking where all those dollars are going that they spent on, game development.
+
+[00:24:49] Troy: Hey, Alex. I had my, my professor friend Joe over for the Super Bowl and the Halo ad came on during the Super Bowl 
+
+and we were reminiscing about when we used to play Halo together on my Xbox So that was like, it's incredible, right? How, like Xbox is old man.
+
+that was twenty-seven years ago
+
+that we played, something like that. Twenty-six twenty-seven years ago 
+
+that we played Xbox together.
+
+[00:25:18] Alex: and it's, and it is crazy, right? and they've been at it for a long time, but I think, They lost the worst possible console generation. They lost the Xbox three-sixty, which is when people started to download content onto their Xboxes. So that behavior changed, and they expected, to be able to bring that content forward.
+
+so at that time, people were invested in Sony, and then it was very hard for Microsoft to claw back. So they're dealing with really big structural issues right now in their gaming division. and it's happening around gaming. Gaming at, that scale is, is struggling. there were a lot of over-investments during the pandemic that are not panning out.
+
+[00:25:56] Brian: Hmm. Must be rough. I mean, Microsoft's market caps only at 3 trillion.
+
+[00:26:03] Alex: I mean, Microsoft will be fine, but it, things are afoot, right?
+
+[00:26:06] Troy: They should get rid of middle management over there.
+
+[00:26:08] Brian: Must be a dream.
+
+[00:26:09] Alex: to get rid of middle management or to be a middle manager.
+
+[00:26:12] Brian: to be a middle manager of Microsoft, I'd be like, why are you coming for me? We got 3 trillion. It's fine.
+
+[00:26:18] Troy: I, I feel like I'm middle management at the rebooting and I can't even get a free Yeah, bucks. the snacks at the I am not. I wanna read it. I love of the 1000, I've sold a lot of the $1,000 ones.
+
+You haven't sold a lot. You sold three.
+
+[00:26:36] Brian: I've sold way more than that, exponentially more
+
+[00:26:39] Troy: Well then your recurring 
+
+revenue would be higher than you reported to me
+
+today.
+
+[00:26:42] Brian: exponentially from Thoreus
+
+[00:26:46] Alex: Brian, how many of those do you think you sold because of this podcast? we don't even get a commission.
+
+[00:26:51] Brian: zero.
+
+[00:26:52] Alex: Zero. know. I mean, it's impossible. This is the problem of marketing
+
+[00:26:55] Brian: it.
+
+Attribution. Attribution is always the problem. It's always the. problem. 
+
+[00:27:00] Alex: I just want all our listeners to know that Brian is always downplaying the, the impact that this podcast
+
+[00:27:06] Brian: No, I don't. That's a lie. That's a total lie. I actually, I regularly get emails that reference PVA. In fact, I got a email from the Hidden brain host,
+
+[00:27:19] Troy: Oh, the guy that you, admire.
+
+[00:27:21] Brian: yet he didn't actually hear the reference to, to Hidden Brain, but someone emailed him about him being
+
+[00:27:30] Troy: Nice. That's like podcast royalty. You're like Kevin Bacon 
+
+[00:27:34] Brian: Yeah, exactly. So,
+
+[00:27:36] Alex: Wow.
+
+[00:27:36] Troy: Nice job. 
+
+[00:27:37] Brian: yeah, again, it's just all attribution. 
+
+[00:27:40] Troy: Maybe you can sort of, Kevin Bacon me a discount code or a
+
+[00:27:43] Brian: We'll see, we'll see. subscriptions, memberships, whatever you wanna call 'em. They got a lot. There's a lot of optimization and you gotta position it. And I,
+
+you've seen, you don't wanna be gapped, you don't wanna be 50% off all the time. And they have the discount codes and coupon mountain
+
+[00:28:00] Alex: Are you like giving us excuses for not giving us a free code? 
+
+It's okay. Wow. maybe that's the difference between independent game development and the media. Whenever I talk to an an indie game developer, I get a free code to their game.
+
+[00:28:13] Troy: Yeah. I'm gonna start using a paywall buster on his junk.
+
+[00:28:17] Alex: I mean, I, we are very happy for your success, Brian
+
+[00:28:23] Troy: yeah. Congratulations. I mean, I'm just trying to
+
+[00:28:26] Brian: trying to make a living
+
+here. It's all I'm trying to do. We talk about all the doom and gloom and I get called like a Cynic from like people who work for like private equity
+
+and then I'm like told that I can't like charge that I should be giving stuff away for
+
+[00:28:40] Troy: Well, just for context, Alex, so I'm a big Brian Morrissey fan. That's why I do this podcast with him, and I love his writing and blah, blah, blah. And I've known him for a long time, and he used to be a, he, he's, he's softened the edges of softened. But Alex, Alex, Alex, here's the thing. Is that I tried to jam a bunch of high-cost capital up his rear end to get him to scale his business.
+
+And, 
+
+and like I wanted him to take, to take venture or to take at least angel money or some money from, a, a Troy young syndicate. and he refused actually
+
+[00:29:15] Brian: You, you can, you can all understand why.
+
+[00:29:19] Troy: And what I wanted to do is light up the rebooting and put it on, 
+
+[00:29:23] Brian: I what, how did you just describe it? Shove a bunch of high-cost capital. I'm shocked that 
+
+wasn't a very,
+
+[00:29:32] Troy: Well, anyway, and I wanted, at the same time, I wanted to have a hefty dose of, of advisor shares. And I thought the future was bright for the rebooting. And Brian said, I've been to hell and back, and I don't want your money. I'm happy to have you as a friend and a, and a and an advisor.
+
+even 
+
+though, 
+
+yeah, pay up for the 
+
+subs. Pay up for the subs. And, and, and then he endeavored to build it on his own,
+
+[00:29:58] Brian: the zero interest rate era is over. Okay.
+
+[00:30:01] Troy: And you know what? He's come so far our little, Brian, 
+
+[00:30:05] Brian: Yeah. I did my first webinar the other week. let's move on. Let's talk about threads and then I want to get into the new internet 'cause I think that's
+
+[00:30:12] Troy: I like the line about the threads is like, I try to find, it's like going to Applebee's. I can't go to threads. First of all, it's More Zuck. I don't need more Zuck and I don't need more Applebee's. I would rather be in a dirty bar of screaming like red pills than I would be.
+
+[00:30:32] Alex: Oh, we noticed, we've, we've
+
+[00:30:34] Brian: Give me, gimme the case for threads. 'cause Alex, you're, in threads in the metaverse.
+
+[00:30:38] Alex: I mean, I look, I don't know if how much of that is a bias because I got in early and I've been getting a ton of engagement. look, and I, was boycotting Facebook products for the longest time, so it was, it was a hard switch for me. But, I just find that it's, it's genuinely a product where, where I will get engagement and I will get, People to have conversations with me and, I always found that I wasn't getting that on Twitter. I mean, you, you've seen it on Twitter, Brian, where you, a, a viral tweet will get you absolutely nothing, right?
+
+[00:31:10] Troy: No. Brian's got some hits on Twitter.
+
+[00:31:13] Brian: Yeah, I got some hits. I got attacked that one time over the Bodega tweet, but
+
+[00:31:17] Alex: it doesn't really add up to either click-throughs to your website or more followers or whatever.
+
+Right. It's kind of like a hit and
+
+miss platform. Well, problem too.
+
+well, well, the thing is I'm seeing is on, Threads is that, I will get a lot of followers if, if I tweet. And also more importantly, like outside of the likes, I'll get a lot of, some of these posts I made have like sixty-seventy
+
+[00:31:38] Troy: You can make a lot of friends when you, when you go to a dance at your local church. It's just not my, this is not my game.
+
+[00:31:46] Alex: I mean, sure. lords and stuff
+
+[00:31:49] Brian: on there, shitposting,
+
+[00:31:51] Troy: I need more on
+
+[00:31:52] Brian: but what is it like, is it a sterile environment? I, I went on in the
+
+beginning and 
+
+[00:31:57] Alex: is. Yeah. 
+
+[00:31:58] Brian: fine.
+
+[00:31:59] Troy: No politics.
+
+[00:32:00] Alex: Well, I is that true? There's gotta It's not No. Well, there's, yeah, there's, Well, they won't, they, they won't. They have an a policy that they will not recommend. Algorithmically, recommend political content. 
+
+[00:32:12] Troy: You can 
+
+get it. You
+
+can get it. 
+
+[00:32:14] Alex: That you do not follow.
+
+[00:32:15] Troy: Well, that's what I said, algorithmally, 
+
+[00:32:17] Alex: yeah, 
+
+[00:32:17] Troy: recommend. Recommend
+
+[00:32:19] Brian: Okay. That content. Where's the fun in that
+
+[00:32:22] Alex: but everybody complained that Facebook was pushing too much politics. Now they don't, and
+
+everybody's 
+
+complaining. And Facebook, I mean, I think both, 
+
+[00:32:30] Brian: I, 
+
+[00:32:30] Troy: It. 
+
+[00:32:31] Brian: them doing that.
+
+[00:32:32] Alex: Yeah. Why, Why, 
+
+deal with a hassle. I. Why they've been burned. He doesn't wanna stand in front of Congress one more time like he's done with that shit. Right. He just wants to like get ripped and put out the men's on men on the floor. He 
+
+doesn't want to speak to Josh Hawley. 
+
+So '
+
+[00:32:49] Brian: 'em on that. 
+
+[00:32:50] Alex: yeah,
+
+[00:32:51] Brian: This is a very interesting choice, but I, I think you made the right choice. All of our elected representatives, 
+
+the creme de la creme of our political class.
+
+[00:33:00] Alex: Yeah, 
+
+[00:33:00] Brian: All right, let's move on to the new internet. I wanna keep this brisk. Troy, you're, you're writing, but did you publish this already or is this a preview? Is this part of PVA Plus? 
+
+[00:33:09] Troy: Yeah, it's part of my subscription package that I
+
+[00:33:11] Brian: we tried that actually at Digiday, where it's like, you get the next day's article, like the night before.
+
+Nobody, nobody wanted to pay for
+
+[00:33:18] Troy: yesterday's news today tomorrow?
+
+[00:33:21] Brian: Windowing, it's a good idea. obviously a lot of changes are going on, so let's talk about what, what is going to be the new internet, because I think you've got, I think you have something that you need to brand with the internet, not being something you go to get, but that comes to you, but you just need to brand it
+
+[00:33:36] Troy: You mean like 
+
+[00:33:37] Brian: as something like, from Feed to Fetch or seek to Fetch. You need some kind of,
+
+[00:33:43] Troy: No, it's just I was looking for the shape of things to come. And I just felt like there were a bunch of people doing things that, was starting to tell that story. Actually, where it originally started is I was reminded of that kid's book, Turvys. Do you have that, Alex?
+
+[00:34:00] Alex: I do not, but I might buy it now. I saw it on you.
+
+[00:34:03] Troy: Yeah.
+
+Everything is upside down in Topsy Turvy Land. And, it struck me that the internet is kind of going upside down you know, I was looking at what, I mean, this is a small data point, but what, the browser company was doing with Arc. What I was seeing in, how I was using OpenAI on my phone in particular, or chat GBT on my phone.
+
+the perplexity for sure. I've been playing with the, I don't know if you guys use it much, but the Google app. On your phone is a kind of content aggregator, and now it's being powered by Gemini. they're, chat GPT competitor and all of these things suggested to me that, the battle was heating up and it looked really different than the last one.
+
+And it was about the internet fundamentally coming to you. and it just kind of challenged how I always thought about it from, I don't know, 30 years ago when I started using the internet where, I was getting on a browser to go out onto the internet to do things. And, obviously that that model evolved a little bit when, search and the browser kind of became as one when the navigation bar became a search bar.
+
+it was Chrome and Google together. But I always think of the, I guess my mental model of the internet is something that you seek. You go out and seek things and that, much of what I'm seeing in the next wave is about how it all comes back to you. And of course when everything comes back to you, the internet, particularly for, for media, but for everybody is monetized at the edge, right?
+
+Like it pushes traffic out. Google is a toll booth where traffic is pushed out, the link is the currency whether it's banners or branded content or whatever it is, the value is captured on the periphery by people that. take that traffic and try to, to harvest it into, to ad dollars.
+
+So, not only, you know, when the model changes, how we think about the advertising needs to change a lot. And, and so I started seeing that. I thought I would, write a bit about it. About it and think about it from the perspective of what advertising is gonna look like and also what content survives that, fundamental transition and the content one has been talked about a lot.
+
+Right. And I think it's, it's sort of like the stuff we know that commodity content, whether that's, basic evergreen stuff, any, anything that's close to, that's not, heavily processed by a human mind in terms of, or by, reporting and perspective of a, Invested journalist, but like product reviews and sports scores and weather and static knowledge like Wikipedia or undistinguished celebrity stuff. The stuff that's really what, scale publishers used in the kind of digital media era to. generate traffic that stuff just gets eaten up.
+
+It's gone. and the interesting thing, and Alex you kind of convinced me of this, that it doesn't really matter because it exists, whether it gets paid for or not to a large degree because people make that content, people, and now increasingly robots make that content. And then video and the thing, my thing about video is that, I guess I'm talking a lot right now.
+
+I'll stop you looking, starting to look bored, Brian. But, but video it, it's not just video. I guess video is like just becoming humanity on their phones, on YouTube everywhere. Like video is just part of our daily communication vocabulary. And the great thing about video in the future is it can still be monetized 'cause video can travel with, with an ad message. Then there's the third type of content. And I think it's the kind of stuff that you write, Brian, that, the FPU rights or the, a lot of it is, the blood of the best, sort of most valuable is probably caters to business audiences and stuff. But I think of that as kind of IP content.
+
+And I don't think much changes there, to be honest. I think people still seek it out. The brands really matter that you want a relationship with those experts or those personalities that create that content and the, and the brands that create that content. So, half of the world gets decimated and then there's these other two constituencies that, go on and morph and stuff.
+
+But, I guess overall, and we can get into it in a sec, I'll just pause, but when more stuff happens inside of a new application like perplexity or browser, when more of it is brought back to you. What happens to the kind of internet economy and that's what I was studying and I had, or studying.
+
+That's what I was just thinking about and I had a little epiphany about it, which was really, it started with, there's a thing that happens, I don't know if any of our audience or you guys use perplexity, but it recommends three things as I think they call it, related after you ask the chat bot something.
+
+Right? I just thought, oh my God, those are so valuable. those are like the links on Google that, those related links that come, that help you after you've. asked for something and got it back are the new gold in this system because they take you to the next step, which might be finding, the right TV or finding a price on it or whatever.
+
+And obviously we're really early in how this matures as a, as a monetized platform, but that's really what I wanted to explore.
+
+[00:39:31] Brian: I don't know. It's, it's a story of like media, but media goes first, but text goes first. And this is gonna play out across the whole economy, I think. And, people can, it's not just the media story. I'm. I'm finally finishing this Mustafa Suleiman book, coming Wave.
+
+He has a great term, which I think applies to a lot of this content you said is really endangered and it's cognitive manual labor. 'cause a lot of it is cognitive manual labor. And we think about cognitive manual labor is like data entry or the, fifth follow-up sales email and all that stuff is going to be replaced.
+
+And we're gonna go through a period he says about with augmentation. But ultimately this is, and these are his words, and he co-founded DeepMind. This is labor replacement. it's not augmentation. It's
+
+[00:40:18] Troy: Did you like that book? Would you recommend that book to me?
+
+[00:40:21] Brian: and I didn't think he needed to, bring in all the biotech stuff, but it's fine. good. It's 
+
+[00:40:26] Alex: What was, what's all the biotech stuff?
+
+[00:40:29] Brian: Well, he's trying to combine with the coming wave to go beyond just ai. And, to bring in synthetic biology and everything that, it just depends on where you want to draw the line. And
+
+[00:40:42] Troy: you read that book or did you listen to it running on the beach in Miami?
+
+[00:40:46] Brian: I, like, I read it. I'm, I'm a little old school and I think we're like, I don't wanna get into too much of the what we're losing stuff. 'cause I do wanna have Kyle Chaik on to talk about his book Filter World. 'cause I, I think he talks a lot about what we lose when this stuff comes to us. We don't seek it out because a lot of the language of the internet was, we browse, we seek, we surf the early internet, we, and now.
+
+With, to me, this isn't a new era, it's just the ultimate. This is where platforms were leading us to in that we are, we're like those precogs in minority report that are just like immersed in some sort of liquid and floating there and having an endless feed of TikTok bullshit shoved down our throats.
+
+And we don't seek anything out. Everything comes to us. Our taste is defined by algorithms. Everything is flattened. I don't know, I think it'll be good in some ways. I think that there's gonna be a reaction against for a lot of people. because it's, it's not gonna be, that's not gonna be a very inspiring existence. Just having constantly everything just come to you really. 
+
+[00:41:48] Alex: I think the ultimate version of that is TikTok. you know, ai, it becomes pretty dystopian pretty quickly because, I mean, forget advertising, because you can build systems that are very efficient at advertising, but, it does mean that we become less attuned to.
+
+discovery and, and finding new things out, or, or, or, you know, as, proponents of the algorithm, we would say, it's like, it exposes things that we would've never seen before new voices, new everything. question is, do we trust these platforms? 'cause it only happens at the platform level as well, right?
+
+[00:42:22] Brian: Right, but this is ultimately a centralizing When you move into this world of things coming to you rather than you going to to get things, that implies that we're entering even more centralization. I mean, I think we're entering like an age of empires and it is gonna be em. You look at the size of these trillion, $3 trillion market cap, that's insane.
+
+That's nuts. That is like straight nuts. The fact that Sam Altman with a straight face is going around the world saying he's gonna raise seven, is it $7 trillion valuation or is that just like
+
+how much he's raising? 
+
+[00:42:57] Alex: $7 trillion.
+
+[00:42:58] Brian: fuck?
+
+[00:42:59] Troy: Or there's speculation that he is raising it,
+
+[00:43:01] Brian: This is nuts. So, so we're basically, this is going to be an age of Empire, right? How can it not be?
+
+[00:43:09] Alex: yeah, I mean, I think, if you're looking at, at how people are going to be using the internet in the future, it's going to be filtered through some sort of platform, right. And even if we, people have said, text is dying. So if you wanna protect yourself, start making videos where it's gonna be on YouTube, right?
+
+And that's going to feed their LLMs. so these companies are going to be very hard to stop on unless they get regulated somehow. And I am a proponent for. This kind of federated universe of, of the internet, you know, RSS feed and, Mastodon and things like that.
+
+But I don't realistically think that that's what people want long term, and I think they will always choose the, the
+
+[00:43:49] Troy: You know, Alex, I kind of touched on this a little bit, but I do regret that we never did federation better. I. Like federation, that is essentially, the modern internet was so fucked up because it didn't include identity, it didn't 
+
+include payments. It, never really had an accommodation for a sensible ad model that actually would only work well across sessions, right?
+
+So that, you had to have all these idiots in the middle, like hacking the system to create retargeting systems and building the loom escape and all that. I regret that we didn't do federation better, which would've let a million flowers bloom. I don't want AOL world. I don't wanna be tube fed.
+
+I love the discovery piece. But Federation, as it evolved on the internet, was so suboptimal that it kinda led us to where we are.
+
+[00:44:39] Alex: Yeah, because There, was, there was no, or whatever. I
+
+yeah, and especially in no ways to monetize it or protect it. Right. So, it kind of gave an opening and, and since then every platforms tried to kind of break the federation, of podcasting, for example, right. By building new tools around it, new advertising models.
+
+So yeah, it's a shame, but just to be a little, maybe not optimistic, but a little bit more productive for the people making content, what do they do in this, in this world?
+
+[00:45:07] Troy: yeah, it's a, it's a good question. I, I think, there's, fewer folks engaged in it. the positive is is that kind of, I think fewer people have sort of mind sucking, traffic generating editorial jobs. And I think that people that have something to say that are deep experts or I.
+
+Bring, passion to, open up worlds, to new people, and provide perspective. I think, that doesn't go away. A chatbot can't write what I write. Like it's impossible.
+
+[00:45:38] Brian: It will soon.
+
+[00:45:40] Troy: Well,
+
+[00:45:41] Alex: the, the, the question, the question is, Troy. I mean, I don't want to be, flippant about this, but I think that the value of how you write it is. Less than 50% of the value of the content. And so therefore, most people will be okay with not having all your great writing around it.
+
+Most people will be
+
+[00:46:00] Troy: oh, yeah. Uh, 
+
+it's true, but it's not. 
+
+Right. Right. But it's, hopefully well-crafted, but it's more than that. It's a, a unique perspective and it's, it's my voice and I'm not trying to s you know, I just, I think that that stuff is hard to replicate. But, but you know, I'll tell you, I'm on the board of this company they were excited about a bunch of work they were doing in AI that supported their editorial process. And they were like, look, we can generate these emails that we used to have someone write, with kind of perfunctory content that essentially summarized a, a, a, a, stuff that they had written.
+
+it turns out in this particular case, that. Much of the work that's being done can be replicated relatively easily. And I mean, I really challenged the team on the call, with like, so what next guys? Because if that's the case, and you, you write this story over a couple of years, you're dead.
+
+[00:47:03] Alex: yeah. you're you're dead. And, I mean, the, the natural kind of response is, well, we need to do more personality stuff and do more video and all of that. But, making video and monetizing video on social platforms has not been an easy business for anyone.
+
+[00:47:20] Brian: Hmm. Not with the tariffs from the platforms, not with, in imperfect ways of selling brand partnerships.
+
+[00:47:27] Troy: To have them piggyback your content on tick tock or
+
+on Instagram. it's a, tough business. but it's also, just, word of warning, right? If you think there, there's, there's a belief right now that video is at least protectable because it's not something that the AI can, absorb and chew up quite as easily. Meanwhile, Google's biggest source of, I think you need one of three things to do well in the AI world, right?
+
+[00:47:51] Alex: One is like a, a strong, entertainment IP or, kind of a sport or something like that. two, specific identity, personality, which is what you're doing. Troy, which is what you're doing, Brian. and then three is like having a very protectable data set. If your work is based off stuff that is available over the open internet, you're dead in the water.
+
+And by automating it, you're just accelerating your demise, right? So if you look at Google, Google's is, is having the same existential issues going like, okay, well what's our data set? What do we own? Right? They own go YouTube and more people are shifting all that content into YouTube because that feels like less dangerous than having it, it feels like the website with text on it is, is dead in the water.
+
+and that's also going to be chewed up, and spit out in some sort of way. and that doesn't mean there won't be any business in it. It just means that, starting now to protect yourself and potentially striking deals with some of these, knowing that some of these AI providers, the big platforms are also facing existential threats and they want to also secure the content, puts some of the content providers into actually a powerful position.
+
+Right? I think, I think there's a moment now where you can say, We are the ones who hold this content and you need to work with us now. And I'm not seeing a lot of that. Instead, we're seeing the same mistakes, which are 
+
+[00:49:10] Troy: Well, a a again, I'm gonna challenge you on that. You are, you are seeing a lot of it, you are seeing the major media companies line up in opposition to the LLMs and say, pay us for our content.
+
+Uh, the, the, the, the little guys don't have a say in this. there's no spot at the table for, a mid-sized publisher in, in, at least in the first wave.
+
+[00:49:30] Brian: Yeah. Bustle takes the check
+
+[00:49:31] Troy: yeah, yeah.
+
+[00:49:35] Alex: yeah.
+
+yeah.
+
+[00:49:35] Brian: and They
+
+do, I mean, what are they gonna be like? No, sorry, Sam. we, we, I mean, come on,
+
+[00:49:40] Alex: Well, but I think, even if you're not
+
+at the 
+
+table, 
+
+[00:49:42] Brian: Go throw a party. 
+
+[00:49:43] Alex: I, do think that, spending time right now automating this, little newsletter that you had and completely devaluing it and training the model while you're doing it is probably not the best use of time. Right.
+
+And so, starting 
+
+[00:49:56] Brian: go behind paywalls,
+
+[00:49:58] Alex: exactly right, you're going be Sam Altman's not getting my unique data set.
+
+nobody is, apparently we're not.
+
+[00:50:06] Brian: No, there's dozens of people who are okay. I would like you guys to be dozens plus two.
+
+[00:50:13] Troy: what do you think of all this, Brian, I'd like to challenge you beyond the, like, small is beautiful line that you'll,
+
+[00:50:19] Brian: Yeah.
+
+[00:50:20] Troy: talked about a lot. how did you process all this stuff?
+
+[00:50:23] Brian: How did I process it all? I mean, to me it's, again, I go back to the age of empires thing. At the, at the end of the day, you have to decide whether you're going to live within one of those empires and try to find some little pocket and, and there that exists. Like we talk about, video is so hard to make money, well, maybe for big publishing companies, but YouTube's paid out $70 billion in the last three years to
+
+creators. 
+
+[00:50:49] Troy: And there's lots of 
+
+rich
+
+[00:50:50] Brian: money.
+
+[00:50:50] Troy: too. Lots of people make money. 
+
+[00:50:52] Brian: That is a real economy that's going on, on YouTube. And, and that's gonna, spread. I wrote you, you didn't read it 'cause you guys are not TRB Pro members. but I wrote about switching platforms from Substack, to Ghost. And I believe in Substack as a platform.
+
+I know a lot of people who are making nice livings on Substack. It just doesn't work for the kind of business that I'm building. But, I think that will continue. did you, did you see that interview that, the Medium CEO did with SE four? We should have had him on, he had, he had an interest.
+
+He basically was like
+
+com 
+
+[00:51:25] Alex: bring him on? We can bring him on.
+
+[00:51:26] Brian: completely against, Quote-unquote professional media. and they just want to be like a source for, expert, which makes a lot of sense to me because, that works better than when they were trying to build
+
+[00:51:36] Troy: Yeah. I think beyond talking his book, it's pro, that's a really interesting topic to have. Someone who's well-informed talk about it is cool. Alex, if he can do that, we should get him on.
+
+[00:51:46] Alex: Let's do it. 
+
+[00:51:47] Brian: but I do think that there is going to be a artisanal sort of reaction to all of this. So I think one moat is gonna be this artisanal, it's the vinyl. I did you, I saw this, this TikTok video or something that got posted probably on X. I've just given up on Twitter. I was gonna call it XC-One.
+
+And it was this Gen Z person trying to convince her mom to throw away her CDs. She's like, no, I want them here. I wanna look through them, be like, oh my God, look, Joni Mitchell, I wanna listen to this. And the Gen Z daughter didn't understand this at all. And of course the mom was right. because just relying on the Spotify algorithms is, is not no way to live.
+
+And I think there's just gonna be a reaction to it. So if you can be part of that reaction, if you can have a unique data set and all that boring stuff, great. I think personality and differentiation can get you so far. Well, 'cause like life cannot just be about unique data sets. I just can't. I just, I find that 
+
+incredibly dull and boring. 
+
+[00:52:48] Alex: I don't think it, is. I think if, if anything, you should, I think
+
+when 
+
+[00:52:52] Brian: Like, we've literally just been, I'm sorry to be like the sort of the Luddite here, but we've, we've just been, we've just been reduced to, to being data sets for a bunch of empires that are worth trillions of dollars that didn't ask for permission to vacuum up all of our thoughts and then create a stew with it and say, no, no, no, no, no.
+
+This was just freely available. We just took it. And, and then to build these moats to have these trillion dollar, companies, and then guess what? These technologies are gonna be used by governments against the citizens. It's not a good situation, as far as I'm concerned.
+
+[00:53:29] Alex: Sure. But let, me kind of run through, because 
+
+I think when we think about. 
+
+[00:53:33] Brian: by the way, that's out the window.
+
+[00:53:36] Alex: Well, when we
+
+[00:53:37] Brian: How can AI not find the people who are cheating their taxes?
+
+[00:53:41] Alex: I would like, before we wrap up, because we're going over, I have a, a framing for the four modes that I think, you need to start developing in an AI world. It doesn't mean you have to have every one of these, but I think a little bit of everything is, is kind of good.
+
+so it is, it's kind of the four pillars, right? One is some sort of owned IP that is a media brand, like I said, um, or an entertainment brand. Just build out your brand so that it means something, even if it's a personal brand, unique data set, which is. Content that is only accessible, outside of the ai.
+
+Now that's the, podcasters having a Patreon version, of, an extra episode or behind the scenes, whatever that is. just create unique data, unique content that is only available to a select few, build personality people, get attached to people. And then also the last one, which is obviously the hardest, which I think is what games do really well at, is, build utility.
+
+Right? Is there a reason to go to your property that it feels different to the others now? It could be a chat room, it could be a way to, listen to a radio show while you're chatting with other people, whatever that is. I think there's a lot of utility that can be built that exists outside. of the existing platforms that you can build into your site or that you can white label, you know, a lot of people are moving away from Patreon and using Fourth Wall, which is a white label version of building your own site.
+
+So there are things that you can do. So these are, these are my four pillars. I thought I wanted to share them. I'm, working through those. It's work in progress, but I, you said I don't charge for this. It's fucking crazy
+
+[00:55:18] Brian: should, 
+
+[00:55:18] Troy: they're 
+
+[00:55:19] Brian: it. 
+
+[00:55:19] Troy: divine pillars 
+
+[00:55:21] Alex: there. 
+
+[00:55:21] Brian: Amateurs always undercut the professionals.
+
+I'm just kidding. No, it's always the biggest. That's why, that's why Medium is like going away. 'cause he was saying in the interview, he's like, I've got these whiny journalists who are like, I can only make a hundred seventy-five dollars or whatever. And he is like, we've got these experts. They're astrophysicists.
+
+They make their money like doing real work. They just do this stuff. Like they get a bunch of claps or whatever and they're happy. They get influence and, and that's great. And so I, I celebrate that. that's why this. Class of quote-unquote, the media is under so much pressure is because there's always gonna be a lot of people, particularly in, in an open system that will gladly create stuff for free.
+
+So
+
+[00:56:10] Alex: That's right.
+
+[00:56:11] Brian: it's part of the deal.
+
+[00:56:12] Alex: Wow. All right. 
+
+[00:56:13] Brian: The free market goes on, 
+
+[00:56:15] Alex: I hope we, feel that we were, productive today and, and shared things with people that they might find useful rather than just doom and gloom. as always, please, subscribe and, pay for , Brian's premium product.
+
+[00:56:28] Troy: I 
+
+was gonna ask you guys I know you're shutting it down,
+
+Alex, but 
+
+[00:56:32] Alex: it down.
+
+[00:56:32] Troy: I was gonna ask if you had A, good product. 'cause we like to end with 
+
+[00:56:36] Brian: Yeah. 
+
+[00:56:36] Alex: Ooh, that's a good question. 
+
+
+
+
+[00:56:38] Good Product
+---
+
+[00:56:40] Troy: What about the humble chicken wing?
+
+[00:56:42] Alex: oh, man. I mean, if you wanna go, if you want to, if you want to abstract this, if I think that's fine. 
+
+[00:56:48] Troy: Is the Vision Pro a good product?
+
+[00:56:50] Alex: I do think the Vision Pro, remains a good product. it feels very much like the first iPhone where it has, the utilities very, tightly contained.
+
+And Apple has omitted things that, we all feel should be there. 
+
+[00:57:02] Troy: I wonder if you graph out the amount of time you use it per day or week, if that doesn't steadily decline until it's just a souvenir on your shelf.
+
+[00:57:13] Alex: it might. Well, we come, I'll keep checking back in. I did wanna, mention one thing that I think would be useful for us and other publishers is that, notion has essentially like Stealthily built, a very smart way of building agents around your content. So Notion of course, is a kind of data management system.
+
+You can create tables and all sorts of things that replaces Google Docs in a way. but it's much more advanced. And what you can do with Notion is create spaces where you. Drop all your content and it could be every transcript of our podcast, right? For example. Or it could be every article or specific information about a company like, healthcare information or HR stuff.
+
+And you, you just drop it in there. You don't particularly organize it. And then you have an AI that they charge, few bucks a month for extra, that will query that stuff. And I think that as you're building a small business and you need to manage your content and, you're doing CRM and you're, making deals and you're onboarding people, it's a really great tool to kind of connect everything and it, beats Google at doing that, and I'm sure they'll do it with, Google Workspaces. 
+
+[00:58:19] Troy: a good product?
+
+[00:58:20] Alex: it's a great product. and I think it's, it does a lot but it has a learning curve, 
+
+you know? Uh.
+
+[00:58:25] Troy: it, Brian? 
+
+[00:58:26] Brian: well, I have a theory. There's Notion people and there's not notion people, the people who are into Notion, it's kind of like webinars. The people who are into webinars I think go to a lot of webinars
+
+[00:58:35] Troy: Are the 
+
+people that are in their webinars are really into them.
+
+[00:58:39] Brian: and the people who are into Notion are extremely into Notion. And then there's like eighty-five percent of the population that is are like, nah, that's my
+
+theory, 
+
+[00:58:48] Alex: yeah, yeah. No, I mean, but I want, I just wanna be productive about this. I was one of those people, I always found that notion had was just doing too much. I like things that were simpler. I think that what has it has, it has fundamentally changed my, because it, it required like an organized mind because you had to go where the things were and you had to structure things.
+
+But what AI allows you to do is just dump stuff in it and query 
+
+[00:59:13] Brian: yeah. That's good then 
+
+because it, 
+
+was always 
+
+like a project manager tool, I
+
+[00:59:17] Troy: Yes. It, it totally is. What I like about it is it's fast and it's good software. And you know what I did, Alex, is that I used to be a big fan of Evernote, 
+
+[00:59:27] Alex: Right. 
+
+[00:59:28] Troy: is so bad it crashes all the time. It's junky.
+
+[00:59:32] Alex: that's, that's all uh, private equity now, right? Evernote? Surely.
+
+[00:59:36] Brian: yeah, 
+
+[00:59:37] Troy: the software got corrupted by private equity.
+
+[00:59:39] Alex: I think so. Yeah. It feels like 
+
+[00:59:41] Troy: it, 
+
+[00:59:44] Alex: you know. 
+
+[00:59:45] Troy: has a very necessary place in the capitalist ecosystem.
+
+[00:59:49] Alex: yeah. yeah. You know, there's, there are these scenes in the ocean when a whale dies and then this ecosystem builds around him just eating at its flesh until it's gone. that's 
+
+[00:59:59] Troy: Yeah. 
+
+[00:59:59] Alex: what it is.
+
+[01:00:00] Troy: No. 'cause in private equity, the whale's still alive.
+
+[01:00:05] Alex: Just being eaten a alive,
+
+
+[01:00:08] Outro
+---
+
+[01:00:08] Brian: Thank you all for listening, and if you like this podcast, I hope you do. Please leave us a rating and review on Apple or Spotify or wherever you get your podcasts. That takes ratings and reviews. Always like to get those. and if you have feedback, do send me a note. My email is bmaracy at therebooting.com.
+
+Be back next week. 
+
+[01:00:27] Troy: . Brian,
+
+You literally won't give me a free sub. You're joking, right?
+
+[01:00:33] Brian: I'm not, I'm really not. I just
+
+decided to dig in my heels 
+
+[01:00:37] Alex: I hope this lasts
+
+[01:00:38] Troy: I already, I offered to buy you dinner. Cherkov omakase.
+
+[01:00:44] Brian: if you buy the $200 subscription, I'll buy my own fucking dinner. I that run the credit card. Run it business card. 'cause that's a, that's, I'm 
+
+[01:00:54] Alex: uh 
+
+[01:00:56] Troy: a
+
+paywall buster. 
+
+[01:00:57] Brian: We'll talk, 
+
+[01:00:58] Troy: See ya.
+
+[01:01:00] Alex: All right. See you guys later.
+
+
+

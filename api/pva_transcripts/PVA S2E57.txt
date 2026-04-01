@@ -1,0 +1,1237 @@
+PVA S2E57
+===
+
+
+[00:00:00] cold open
+---
+
+[00:00:00] Brian: 
+
+[00:00:00] Troy: so you think overall the, podcast went okay last week?
+
+[00:00:03] Brian: It sounds like you don't think it did. 
+
+people missed you. I got some comments like, 
+
+[00:00:08] Troy: not the same.
+
+[00:00:09] Brian: It's not the 
+
+same. 
+
+[00:00:10] Alex: You guys suck.
+
+yeah, we missed you. I mean, like I told Brian, we needed our 
+
+foil. 
+
+[00:00:16] Troy: Well, I think you guys need a little bit of a grown up kind of reality check 
+
+[00:00:20] Brian: If that person's not available, luckily we have you.
+
+[00:00:23] Troy: Right? 
+
+[00:00:26] Brian: 
+
+
+[00:00:47] intro
+---
+
+[00:00:47] Brian: Welcome to People vs. Algorithms, a show about media, technology, and culture. I'm Brian Marcy, and each week I'm joined by Troy Young and Alex Schleifer. This week, we're discussing the future of news and what I call the information space. For some reason, and I think I know why, many people pretend that, quote unquote, the media are still gatekeepers to information.
+
+But those days are long past, and they're not coming back. The information space, on the other hand, is a free for all. In which the news industry is only a part, and arguably not even the most important part. From podcasts, to newsletters, to TikToks, to tweets, the decentralized information space is already here, and its evolution will have far reaching implications, well beyond the fate of news companies and impact society itself.
+
+Hope you enjoyed the discussion. 
+
+
+[00:01:31] intro end
+---
+
+
+
+[00:01:32] Alex: 
+
+[00:01:32] Brian: I met up last night with a listener and a loyalist. And this person said, Alex is so smart.
+
+[00:01:40] Troy: Wow. Because I think actually what happened is Alex kind of shot up in the ranks and then some people became kind of disenchanted and now maybe he's coming
+
+[00:01:50] Alex: Maybe they saw through me.
+
+[00:01:51] Brian: It could be, it's always a danger. That's why you got to like stop by your
+
+head. 
+
+[00:01:56] Troy: I think Alex is on the podcast because he's, he's smart as are you, Brian. I remembered that Alex was smart the other day on another call. this podcast doesn't actually get to showcase Alex's, gifts very well, to be honest.
+
+[00:02:11] Alex: well, thank you.
+
+[00:02:11] Troy: You put Alex in a pro, in a 
+
+[00:02:13] Brian: Should we, should we design things? 
+
+[00:02:15] Troy: well, not just designing things, but system thinking, product thinking, identifying what's important, helping teams simplify, like he's sort of next level at that
+
+[00:02:26] Brian: So how can we showcase that, Alex? 
+
+How do we put you in a position to succeed? 
+
+[00:02:30] Troy: we'd have to do, I mean, and, and also we'd probably have to do more episodes on the importance of gaming.
+
+[00:02:35] Alex: Yeah,
+
+[00:02:35] Troy: Which, which I think is, it's obviously has, there's good, reasons to do that because of how much time people actually spend gaming, but the topic doesn't interest me much.
+
+[00:02:45] Brian: I don't find it interesting. No offense, Alex.
+
+[00:02:47] Alex: that's all right.
+
+[00:02:48] Troy: Yeah, but we, we could, we could get them to talk about
+
+[00:02:52] Brian: so, he's so bummed right
+
+[00:02:54] Alex: I mean, I'm sure 
+
+the,
+
+[00:02:55] Brian: laughing. He's laughing at us because it's so lucrative. 
+
+That's why he's like, let's 
+
+[00:02:58] Alex: I mean, I'm sure the best ham radio operator found cell phones boring, but you know.
+
+[00:03:04] Troy: Yeah.
+
+[00:03:05] Brian: No, but the thing with, I've been hearing about gaming, gaming, gaming, gaming, gaming for like a generation now. but let's be real. It operates in a strange sort of side part of the overall media industry. 
+
+the thing is, it takes a huge amount of the attention spectrum, but to no consequence, it's just like, yeah, you can waste time gaming next.
+
+[00:03:26] Alex: except when you pay 70 bucks for a game, you can spend time reading this 3, 000 word article in the New York Times.
+
+[00:03:34] Brian: All right. I'm going to say something that's going to piss off Alex. I feel like, and I, I'm stealing this from someone else. It's like Mr. Beast. I keep reading that like billions of people watch, I don't know anyone who has any idea who Mr. Beast is. I really don't. Outside of like the industry, I know that it's not for me.
+
+I know that. But like, here's the thing. I honestly don't know adults who play video games all the time. I really don't. Is that me? Is that my 
+
+[00:03:58] Alex: That's okay. 
+
+[00:03:58] Troy: You're an elderly dude living in 
+
+Miami. 
+
+[00:04:03] Brian: I'm middle aged.
+
+[00:04:04] Alex: But you know how some people just age faster? 
+
+[00:04:07] Brian: I'm not, 
+
+[00:04:07] Alex: you know, they just like, they act 60 even though they're 40. there's a new generation of, older people playing video games because it's a great way to pass your time when you're not as mobile and stuff like that.
+
+[00:04:18] Brian: so I know people who play,like, Wordle, and the Connections, and those kind of New York Times like games, but I honestly do not know Anyone who at least admits to me, I know people who watch football, I know a lot of people who watch football, I don't know anyone I know people younger than me, believe it or not, not too younger, because
+
+that's 
+
+[00:04:37] Troy: play games, Brian. I play 
+
+[00:04:38] Brian: don't. 
+
+[00:04:39] Troy: on my phone. 
+
+[00:04:40] Brian: a game.
+
+[00:04:41] Troy: What is it?
+
+[00:04:42] Brian: It's an activity.
+
+it's, like a crossword puzzle. 
+
+[00:04:45] Troy: I do the, I do the 
+
+New York times puzzles 
+
+[00:04:46] Alex: we're talking about Video games while we're talking about not talking about video games. I don't know where this is going here's the 
+
+thing. Lots of people play video games You guys are not interested video games doesn't get the same amount of coverage because they're not Celebrities attached to it compared to movies or things like that.
+
+So there's less drama around video games, but as a biz
+
+[00:05:05] Brian: Oh, there's less drama around video games. Hello. Gamergate, was, basically when all the
+
+stuff 
+
+started to go 
+
+[00:05:12] Alex: sure, but i'm talking about celebrity drama. And so 
+
+[00:05:15] Troy: it's just that gaming, they don't carry a cultural punch like the other types of media
+
+[00:05:20] Brian: Well that's why I 
+
+think this, like, FaZe 
+
+Clan stuff 
+
+[00:05:23] Alex: that's, a, media centric view from somebody who ran magazines and thought that they mattered, 
+
+[00:05:27] Brian: Oh, yeah.
+
+[00:05:30] Alex: it's just because, you know, you're gonna put like, Charlize Theron on a cover, but you're not gonna put some dude who, program Call of Duty.
+
+I get that, but I think it's a little, the, the lack of cultural impact is manufactured, because if you look at,People of a certain generation, especially younger people, they're not spending time reading, media or even watching TV. I mean, if you look at it, everybody was talking about, succession.
+
+Succession had like, I don't know, a couple of million viewers. Meanwhile, 
+
+[00:05:58] Troy: That just makes the point of its cultural impact
+
+[00:06:01] Alex: no, because I think
+
+the gatekeepers of media are creating so cultural impact because that's the Bryans and Troys of the world say, Well, I don't know anyone who plays video games. So therefore, I'm going to talk about this obscure TV show about media because that's the most important thing in my world.
+
+And guess what?
+
+[00:06:18] Brian: I appreciate that you regged me first, at least. 
+
+[00:06:21] Alex: and if you control those faucets, that's what happens.
+
+[00:06:24] Brian: I don't know. You're getting into the conspiracy side. So 
+
+let's get right into the, it's
+
+the media.
+
+[00:06:29] Alex: I just wanted to turn this into an interesting conversation. Otherwise, it's
+
+[00:06:33] Troy: I'm curious about this. I think this would be a good starting point because Brian, you had a very ambitious agenda for the podcast today around the future of news, right? I thought it would be good if we could start, maybe with you, because I'm curious.
+
+How do you get your news every day?
+
+[00:06:49] Brian: How do I get my news every day? Well, it's changed a little bit from, Twitter was always my go to. I still go to Twitter. I just waiting through it is a real bummer. so I opened the New York Times app, but I find increasingly I need to, compliment that. I don't think you can get news from one source anymore.
+
+And so I compliment that with, with different sources, like newsletters, like I get, you know, I really like Bloomberg's Daily Newsletter. I think the Financial Times is a great news product. I appreciate it because it's, it doesn't come from an American perspective and I think it takes a much different view, not much different, but a different enough view on a lot of issues than US centric publications.
+
+So I enjoy that.
+
+[00:07:34] Troy: It does a great job of reporting on the private equity industry.
+
+[00:07:37] Brian: Are you, is that like a joke?
+
+I don't know. It's 
+
+[00:07:40] Troy: lot of time on that.
+
+[00:07:41] Brian: yeah, but they're, they're like all into ESG and stuff like this and it just gets dismissed, here. And I think they have a differentiated viewpoint on a lot of, for instance, the hot button issues that are going on right now. I think it's important to get news from several.
+
+Sources and the reason I want to talk about this today is because I think it's less about quote unquote, the media or the media industry and I like this term information space because that's what like Russians and and then Ukraine call it and because like we have to get beyond this idea that it's the media, the media is in terminal decline.
+
+Okay, so we have people who are attacking the media as a straw man. Because it's the information space. And the information space has a variety of inputs. It is a very complex system. And that is the reality now. And it's going to become more of the reality. 
+
+[00:08:36] Troy: Great framing. But before we move on, can we contrast the way you get media with the way our gamer friend Alex gets his media?
+
+[00:08:44] Brian: He doesn't read. 
+
+[00:08:45] Alex: but I don't read 
+
+[00:08:46] Troy: just find out. 
+
+[00:08:47] Alex: a lot. 
+
+[00:08:48] Brian: I thought you 
+
+said you don't read 
+
+[00:08:49] Alex: yes, change to, I used to get a lot of my news from Reddit and Twitter, and now I find using both of these sites like really painful. I use Artifact, even though it's algorithms has become a little bit more, less useful for me lately. but I use Artifact because I can kind of scan through news topics that I appreciate and then summarize.
+
+Or even get it read out to me. and then, honestly, the most content I consume is Podcasts, I get my news every morning. I get the kind of npr up first podcast and just I love listening to the radio. I find it comforting. To to hear people kind of read out the news. I find like reading the news just, exhausting 
+
+[00:09:29] Brian: It's
+
+[00:09:29] Alex: Well, the experience is terrible, guys. I'm sorry. I mean, even the New York Times, that's supposedly good, like, it's all shitty. it sucks to read the news on your 
+
+[00:09:37] Troy: What does that mean? What do you, what, why? It's great.
+
+[00:09:40] Alex: It's just like, it,
+
+[00:09:41] Troy: It's words on a
+
+[00:09:42] Alex: it hurts your eyes, it's not pleasant to read, you're on a 
+
+[00:09:45] Brian: Really?
+
+You mean the user experience you find like
+
+[00:09:48] Alex: yeah, I mean, the New York Times is one of the better ones, but like, everything else is really terrible.
+
+of the main 
+
+[00:09:54] Troy: but you can't say that, I really want to coach you through this. You can't say things like everything else, i. e. thousands of places that one would get news, is terrible.
+
+[00:10:04] Alex: Every time you get,
+
+[00:10:05] Troy: We need more 
+
+[00:10:07] Alex: well, let me tell, let me give you an example when it's not ruined by, a tabula kind of infestation or banner ads or video that they're trying to get me to play. or if I get 
+
+into, 
+
+[00:10:18] Troy: so we got the clutter of
+
+[00:10:20] Alex: or I get 
+
+[00:10:21] Troy: advertising on... 
+
+[00:10:22] Alex: the photo,
+
+[00:10:23] Troy: What if you paid for a subscription somewhere and supported
+
+[00:10:26] Alex: well, then I get a single source, which is like less compelling. Why do I need
+
+[00:10:30] Troy: Yeah, but when you're looking at Artifact, by the way, you have to access your paywalled subscriptions, 
+
+right? Like Wall Street 
+
+Journal, New York Times, all that.
+
+[00:10:37] Brian: just 
+
+skip it. 
+
+[00:10:38] Troy: No, no, no, no, you can't read it 
+
+[00:10:40] Alex: I, 
+
+[00:10:40] Troy: Alex, unless you're 
+
+[00:10:41] Alex: yeah, but I get, 
+
+[00:10:42] Troy: cannot. 
+
+[00:10:44] Alex: And so I
+
+[00:10:45] Troy: So you're, you're, authenticated. at the Wall Street
+
+Journal through Artifact?
+
+No, you're 
+
+[00:10:48] Alex: let me tell 
+
+you about the experience 
+
+of news right now 
+
+[00:10:51] Brian: Do you pay for news? 
+
+[00:10:53] Alex: If I go to I need to go to the wall street journal and then the new york times or somebody sends me a link Every time I need to get into a new modality because i'm jumping from one side to another the way they List the articles is different.
+
+The way I have to read the articles is different. Some of them I know that I can skip the thing. Some of them I know, you're kind of constantly changing your reading and the text size because everybody's got their own design and it's not just like a fun experience when you're kind of absorbing news in a, in a way that is much more sequential.
+
+Reddit used to be great because I used to get a little blurb of what was going on, and then I used to read people's comments. Podcasts are good because. in the morning, all my kind of daily podcasts, I locked and loaded and I listened to it like a radio show, the act of just like jumping around and having to kind of readjust to everyone's different, like little UI and UX quirks is a pain in the ass.
+
+It just is. It feels like it, right? It's friction and 
+
+[00:11:47] Troy: All right. 
+
+[00:11:47] Alex: not nice.
+
+[00:11:48] Brian: But Do you pay 
+
+[00:11:50] Alex: I pay for local news. So I pay for the press democrat down here in Sonoma. and I get, I get real paper newspapers, you know, 
+
+which is 90%, advertising junk that's like pushed into it. But, I want to 
+
+[00:12:02] Brian: What do they have, like, are people like selling Airstreams because they
+
+got them during 
+
+the 
+
+pandemic? 
+
+[00:12:07] Alex: know, it's like little, like kind 
+
+of business magazines and like,top businesses in Sonoma and like sponsored, you know, 
+
+[00:12:14] Troy: Have you seen what the experiment that's going on in D. C. with this, where they're giving out local news vouchers that are government funded to, allow local residents to sort of allocate their unpaywalled...
+
+local news outlet. They're testing it with six hundred and some thousand people in DC, or at least it's been put forward as a concept where they would allocate, in this case, 11 million dollars and that money would go to support this type of content.
+
+[00:12:45] Brian: Yeah. 
+
+[00:12:45] Troy: Crazy. 
+
+[00:12:46] Alex: you know, what I thought would be helpful. To the bad UX of reading the news online, I thought newsletters would become more helpful, but everybody has decided now to also load the newsletters up with ads. 
+
+[00:12:58] Brian: Oh, but this is offensive. 
+
+[00:13:00] Alex: and now every newsletter, and I'm like, I'm reading it. I'm like, Oh shit, this is a sponsorship message.
+
+It's not a clean experience. Nothing is right. Reading, reading 
+
+[00:13:09] Brian: Your, your problem is with capitalism, at the end of the day.
+
+[00:13:12] Alex: I think the experience of reading a newspaper, you had this very clear delineation. You would, you know, appreciate the ads, et cetera, et cetera. What digital gives people too many options. So whenever I experience even within email. I feel like I have to learn a new UX of how to read this thing with every newsletter I download.
+
+And I think that's, what's going to open the door up to an AI who digests all this stuff and spits it out to me in a way that I
+
+enjoy.
+
+[00:13:36] Troy: you know, there's a much bigger issue that neither of you hit on explicitly,
+
+[00:13:41] Alex: missed you, Troy! We missed the Troy that came in and says, You guys are missing something important or you're both being naive. That's what we missed in the last episode. Somebody keep us straight.
+
+[00:13:50] Troy: I actually, someone, someone, a couple of people sent me a note about
+
+that, that you need to check, check these mofos.
+
+Yeah.
+
+because you're sort of, yeah. Anyway, there was a, there's a new Gallup poll out today that said that trust in the news is at a, New all time low. 32 percent of the population, which is roughly the same as 39 percent of people in America say they don't trust news at all. And the biggest tip, by the way, the right already didn't trust the news. This is the left abandoning ship.
+
+[00:14:24] Brian: Well, I think we're seeing that with, this war in the Middle East at the end of the day. we're seeing the tables turn, right? you see, I think it's, it's funny. Everyone just takes up different positions. You, you've got people who were free speech warriors who are like, you cannot have this speech.
+
+And it's like, wait a second. I thought you were the free speech people. And then you have people who were, you know, you're delegitimizing news out there saying, I got plenty of text messages, and I understand, the emotions of the moment about cancelling their New York Times subscription, because the Times screwed up the story about, the bombing
+
+[00:15:00] Troy: For the 
+
+[00:15:01] Brian: in Gaza. 
+
+[00:15:02] Troy: what happened, Brian,
+
+[00:15:03] Brian: Yeah, so, I mean, the New York Times rushed up a story. There was an explosion at a hospital, originally it was a rocket attack, and in the information space everyone's rushing and the, yeah,
+
+[00:15:18] Troy: a very, a photo that was from the wrong day, wrong place.
+
+[00:15:21] Brian: yeah, yeah. And so the Times botched the whole thing. And a lot of places botched it, not, you know, The Times is, is under a microscope in a lot of people's eyes it delegitimized the, the news source, even though it's hard for me to come up with a scenario in which there is a, this is my thing with conspiracies, I'm like trying to understand how it would work that like the New York Times has some sort of institutional bias against it's, Israel, but I don't like, I know how these things go 
+
+[00:15:53] Troy: Well, the right just sees liberal media as biased against Israel because they're a power,
+
+[00:15:58] Brian: but this is from the left. I, I heard this from like several very progressive people,I'm just saying like the media is a punching bag and while the media has done itself no favors and covered itself, not covered itself in glory a lot over. Frankly, going back, I trace it back to the Iraq war, like the New York Times has never, never been called to account for an institutional failing in that.
+
+That is not like screwing up a story. What they did had unbelievably terrible repercussions with carrying water for the government. with lies, but 
+
+[00:16:38] Troy: Where, where, where did they teach you in journalism school, Brian, as to the sort of core tenets of, of journalism? What are the, in your mind? what are the things that define the art and craft of journalism?
+
+[00:16:52] Brian: At the end of the day, it's being fair and being dispassionate. I mean, things have like changed a lot, I feel like, with the rise of identity in society. and the concept of neutrality has absolutely morphed from 20 odd years ago when I went to journalism school, I wouldn't recommend anyone going. and, back then we had a professor, Lyle Dennis, who proudly never voted in a presidential election because he thought it would, reflect poorly on his like, high minded journalism and, you know, a lot of that stuff was ego driven, to be honest with you, and just the lack of competition.
+
+I think what's really difficult is how do you be transparent? Anyone who's reporting the news or anyone who's creating anything in the information space comes at it with a full Life of experiences. We've been told over the last 58 years to bring our full selves to everything. And so I think that this is part of a struggle for how because it becomes weaponized.
+
+There's a lot of there's a lot of failings of the journalism industry. There has been the last generation, but they're also I can hold that thought in one mind, and I can also hold the thought that there are a lot of unscrupulous actors in the information space, whether they're governments, whether they're venture capitalists, whether they're just marketers or general scammers who are looking to de legitimize journalism and quote, unquote, mainstream media for a purpose.
+
+Those two things can be true at the same time. Because what, it's not about media anymore. I don't understand it, why people talk about the media. Nobody controls the printing press. The old thing that you don't get an argument with the, with the person who buys ink by the barrel. I mean, give me a break.
+
+you have this chaotic, lawless, Mad Max information space in which everyone is jostling with everyone.
+
+[00:18:53] Troy: Yeah. I'm interested. Can I, can I, can I pause it for a second? This has become a Troy Bryan interview session with Alex providing some color commentary.
+
+[00:19:01] Brian: I mean, Alex was dominating the early part.
+
+[00:19:03] Troy: Right. So, I'm interested in how you see this, cause I was, I was just on Tik Tok a
+
+minute. 
+
+[00:19:07] Brian: moderator role.
+
+[00:19:08] Troy: Yeah, I was just on TikTok and I I was curious before this podcast to see what would show up in my segment today.
+
+And,there was young Jewish woman who was starting started the video with her bona fides that gave her The kind of platform to criticize the Israelis in a, in a way that was seen as sort of not biased or correct, you know, like the, the, she needed to establish a foundation for her point of view.
+
+Right. So when you don't have the authority of a distribution system, right, like you're not on TV, quote unquote, right. Or, or, or the news or a media brand, your CNN or financial times or wall street journal. Or the institution of journalism itself is kind of being undermined. where do you get as a consumer or how do you manufacture as a creator?
+
+These kind of symbols or signifiers of trust? that's the problem. Like where do you go to get things that you believe and what do you do as a content creator? to create things that, that people are not skeptical of, the whole thing when AI came out and this happened at kind of various waves through the kind of evolution of, of digital media, which is brands will always matter because consumers need them as bastions of, trust, right?
+
+And so I'm curious just to get your take on this, like. what are the things that we trust and what will be the things that we trust next? What will be the pillars of the information space, as you call it, that will help us find our way? Because otherwise it just turns into tribal information space, which is seemingly what it is,
+
+right? Like it's experts, right? He's a, you know, a professor from, this university or was a scientist in this lab,
+
+[00:20:58] Brian: Yeah, but they've all been delegitimized. These experts were telling us, forget about the pandemic, not forget about it, but leave aside the pandemic for a minute. the expert class did not cover itself in glory when they told us there were WMDs in Iraq. 
+
+I remember all those experts.
+
+[00:21:16] Troy: True. But
+
+[00:21:17] Brian: I also find it very funny that the neocons went from like, marching us into Afghanistan and Iraq, went quiet as never Trumpers, and now all of a sudden they're back on like, the warpath 
+
+[00:21:30] Troy: Well, but, you hear a lot today, you need to be a critical consumer. You can't rely on these institutions anymore. You need to, kind of, kind of the onus of verification is put back onto the consumer, but I just don't think that's realistic.
+
+[00:21:47] Brian: Why? 
+
+[00:21:48] Troy: Well, because 
+
+[00:21:49] Brian: What, media literacy is not 
+
+realistic because Americans are 
+
+[00:21:53] Troy: no, I think media literacy is, is a requirement of being a kind of participant in modern society.
+
+I just don't think that's how humans, many, many humans work. They'll go to the easiest place to get information and they'll believe much of what they hear based on, other little signifiers of, I don't know, authenticity or, or credibility.
+
+[00:22:15] Brian: I don't know, I have more faith in people than you do,
+
+[00:22:17] Alex: We're talking about people losing trust. isn't it just that they're just believing something else,and I don't know what we're calling media today, but, let's say, yeah, that information, that
+
+[00:22:27] Troy: information space, 
+
+[00:22:30] Brian: that's the 
+
+title. 
+
+[00:22:31] Alex: this week, Elon went against Wikipedia, right? He obviously doesn't.
+
+[00:22:36] Brian: even Wikipedia is 
+
+being attacked. 
+
+Jesus. 
+
+[00:22:40] Alex: think like, Wikipedia,
+
+[00:22:41] Troy: what did he say? I'll give I'll give him a billion dollars if they rename it to 
+
+[00:22:45] Alex: yeah, which is, you
+
+Yeah,
+
+and so it's just that there's an opportunity to have these loud voices now that just compete with the so called sources of truth and the traditional media 
+
+outlet like I listened to. 
+
+[00:23:00] Troy: truth as cult of personality.
+
+[00:23:02] Alex: I think we're there's some sort of hack in the human brain where a lot of us fall for the strong man, whatever it 
+
+shamelessness and the shamelessness that allows you to kind of get elevated, and just spout out whatever is beneficial to you and people fall in line.
+
+Everyone's essentially still falling in line. You know what I mean? it's not like people have just become mistrustful of what they read. That would be healthy if everybody mistrusted what they read. I think it's just that people blindly trust another source and therefore the New York Times is always wrong or, any position around something that has no nuance because they, they believe a certain type of writing.
+
+We're just, yeah, I don't know.
+
+[00:23:42] Brian: yeah, I think I think there's a few things though that anyone who's operating in the information space can do to rebuild trust. One is I like going to restaurants with open kitchens because I like to see what's going on back there. I don't like the idea. I've worked in kitchens like enough of my life and I know that like some of the stuff going on back there cannot be completely hygienic.
+
+Open kitchen helps. And I think that journalism overall, but anyone who wants credibility should have an open kitchen with how They are coming to their conclusions and, actually producing what is now passing for news and information. I think the other thing is, inherently, I'm like a broken record on this, people end up trusting humans other than faceless institutions.
+
+Because it is easy to ascribe spurious motives. Fairly and often unfairly on faceless institutions, like the conspiracies that I always hear about the media. I'm like, where, when do these meetings take place? And how can you pull off this? Apparent conspiracy and enforce it within, you know, an entire industry of people who are competitive.
+
+I don't understand it, but I think inevitably people are going to trust people more than anything. And I think the last thing, and this is something where I would say that journalism is particularly bad at, is admit when you're wrong. Admit what you know and what you don't know, because the problem ends up being you.
+
+For instance, the times and some of this is actually a product problem. the news article is a really imperfect, format for fast changing news. Like the times has actually a pretty good to me format in which they have a constantly updating. feed this like live feed that I have for these kinds of news.
+
+And that is good because you can actually admit the things, you know, where they come from, where they don't, because you cannot go back to, you wait a day and then you produce 700 words about a
+
+[00:25:41] Troy: right? Yeah. So, so that's the problem with, platforms, right? Where you either, manage the flow of bad information at the front end or bad actors, or you try to do it through the system. So you must be an advocate for community notes then Brian, are you familiar with the mechanism 
+
+[00:26:01] Brian: Elon, 
+
+[00:26:01] Troy: they work?
+
+[00:26:02] Brian: Elon Musk, responded to me, saying that community nets were great.
+
+[00:26:06] Troy: Okay, so that's
+
+the open kitchen 
+
+concept, 
+
+[00:26:09] Brian: weirdos in my feed. 
+
+[00:26:11] Alex: Oh boy, 
+
+[00:26:11] Brian: All the crypto
+
+dudes 
+
+came 
+
+[00:26:14] Troy: Okay. Well, why don't you explain? explain what the I don't think people understand how they
+
+[00:26:18] Brian: So I don't fully understand how community notes. I thought it was more interesting when they were attaching it to advertising. community notes basically are, are a way to have quote unquote, fact checking that's done not through a centralized, source. I
+
+think every, 
+
+[00:26:34] Troy: there's more to it than that though
+
+[00:26:36] Brian: all right. So explain 
+
+[00:26:37] Troy: Okay, 
+
+so, 
+
+[00:26:38] Brian: most, most significant about this? 
+
+[00:26:40] Troy: so the machine plays an important role in it. when there's a million lunatics commenting on a post, what gets to the top? What's the one that people read, right? So the algorithm has to surface the top note, someone who's credible.
+
+How do you know that the person is credible? Well, Twitter regulates who can post a community note based on a bunch of stuff like how you belong, you've been on the platform, blah, blah, blah, right? And. The other interesting thing is that they look to the algorithm analyzes tweets that you've responded to so that they can, have a kind of voting mechanism from both sides on the popularity of a community.
+
+No. So they use the algorithm to sort of assess who you are and then weigh your votes accordingly. to, gauge whether or not something should be surfaced. So there's a bunch of mechanics behind it to basically decipher who's, what piece of content gets surfaced.
+
+[00:27:36] Brian: this is the exact same way like the New York Times handles comments, how to like the comment section of news sites, I would always compare it to like a port a potty at a concert, don't look down and don't inhale when it came to the comment section because there was nothing good for you down there.
+
+you know, the New York Times has a way to like surface the most useful comments. In fact, actually, YouTube comments have gotten significantly better. that's normal. Reddit has their way and that's fine. It's still incredibly imperfect. Like I, I saw a community note, right after the terrorist attacks in Israel, that was correcting the fact that, the, the paragliders that Palestinians are not known for paragliding.
+
+I was like, this is like offensive and weird. And, that's the problem with these mechanized systems.
+
+I mean, there's an entire, I, file an account, like community notes go hard, with all the like bizarreness of, I mean, I guess that's the sort of vibe they're going for on Twitter. I mean, there's a market for it.
+
+I don't think it's as big as Elon Musk would like it to be, 
+
+[00:28:36] Alex: no, the edge lord market is not massive anymore. But the the You were talking about open kitchen I don't think community notes is open kitchen community notes is like open table reviews or yelp reviews, right like Is there maybe a sense that? Large personalities have an outsized Advantage over these institutions, because like you said, you can apply something to an institution.
+
+It's easy to mistrust an institution's motives, but like,hearing somebody say something, and, and having especially like a more nimble format to communicate with your audience, which is like Twitter and podcasts and whatever, allows you to zig and zag. because like a lot of these folks, you know, let's take the all in part.
+
+have said like, things that turned out to be very wrong, never had to apologize, but kind of managed to reconstruct a narrative around it to make themselves sound right. And I think they can, 
+
+they can, 
+
+[00:29:33] Troy: They said something 
+
+[00:29:34] Alex: oh yeah, believe it or not. 
+
+[00:29:35] Brian: which, and any specific
+
+[00:29:37] Alex: no, I mean, I think, like, the shift from, the crypto and SPAC era of the podcast to these things no 
+
+[00:29:43] Brian: yeah. 
+
+[00:29:44] Alex: is kind of a fascinating thing to watch.
+
+It's, an ama...
+
+[00:29:46] Brian: But this is part of the
+
+[00:29:48] Troy: Wait, this is part of just being a human. Do you expect them to go on about crypto now? Or what, what do you expect? 
+
+A 
+
+mea 
+
+[00:29:54] Brian: Own up! Own up to Yes! Yes! That's what these unscrupulous snake oil salesmen want from the quote unquote mainstream media. I don't know. Heal thyself, doctor. Like, why not Why don't we all own up when we're wrong? I was wrong about events going away during the pandemic. I'm willing to
+
+admit 
+
+that. 
+
+[00:30:12] Alex: about video games being culturally relevant.
+
+[00:30:15] Brian: I'm wrong about video games, too. Just cuz I'm Andy Rooney.
+
+I don't know. My fellow shuffleboard
+
+[00:30:22] Troy: So you want us to cut to a Chamath 
+
+[00:30:25] Alex: I don't want anything. These guys can do whatever they want. All I'm saying is that they have, it's, it's an asymmetric battle. With trust in people. It's, I think it's becoming easier for folks to trust these people. Well, they're putting themselves out there.
+
+They're putting their names behind it. They're talking to us every week. it's a real and honest conversation, like, How many people are saying that it feels really real and honest even though they're selling their book constantly. 
+
+[00:30:49] Brian: Yeah, well, do you know what I think also is part of this? But
+
+like, 
+
+[00:30:54] Troy: selling their book. You're talking to the king of selling his book right beneath you
+
+in 
+
+the little thing. Brian 
+
+Morrissey. 
+
+[00:31:02] Brian: Oh me? I'm like, I was like, no,
+
+you're 
+
+below Alex and mine. I'm 
+
+[00:31:06] Alex: webinar yet. Or some dinner.
+
+[00:31:09] Troy: Yeah,
+
+[00:31:09] Brian: don't have any lined up.
+
+[00:31:10] Alex: You know when you mentioned open kitchen restaurants, I thought you were going to sell a dinner some key executives.
+
+[00:31:18] Brian: No, I have one coming up on November 15th. thank you. BlueCon at Council Kaizen. I value all my partners. it is, it's going to be great. It's a lot of news publishers are
+
+there. 
+
+we're talking about subscriptions.
+
+[00:31:30] Alex: We're done.
+
+[00:31:32] Brian: these are private dinners, 15 people. If anyone wants to talk, just get in touch.
+
+[00:31:37] Troy: It's a safe space.
+
+[00:31:38] Brian: Yeah, it's fine. look, we all got to hustle. what were we talking about before we 
+
+got into monetization 
+
+minute? 
+
+[00:31:44] Alex: That 
+
+[00:31:44] Brian: Oh, I was interrupting. 
+
+[00:31:46] Alex: of like an advantage over institutions because of that
+
+[00:31:49] Brian: Well, I think the advantage also, and I always found this like in offices, talkers have an advantage over thinkers. And I think a lot of times these days, this is a golden age for talkers, right? And I say this as someone who does two podcasts, speaks at events, whatever. and you can do lots of stuff when talking.
+
+It's harder to hide illogical arguments in writing. It's why I would always force people to write stuff down because, you get exposed easier when you write than when you talk. You can do all kinds of feints and, and showmanship. can do that. It's harder to pull off in 
+
+[00:32:27] Alex: Yeah, I think a good exercise if you haven't tried that before and i'm sure you have brian is to Read a transcript of a podcast that you really enjoyed.
+
+[00:32:36] Brian: I read this one.
+
+It's like incoherent. 
+
+[00:32:39] Alex: But you know sam harris, however, because he
+
+[00:32:41] Brian: Yeah, Donald, nobody should like mock Donald Trump because we all talk like him.
+
+[00:32:45] Alex: Yeah,
+
+[00:32:46] Brian: Well, you 
+
+can mock Donald Trump. What am I
+
+saying? 
+
+[00:32:48] Troy: So, do you want to get back on track, 
+
+Brian? 
+
+[00:32:51] Brian: sure.
+
+[00:32:51] Troy: we're talking about the future of news. Is that correct?
+
+[00:32:54] Brian: I don't think it's the future of news. It's, it's news in this information space because I think the quote unquote future of news, like, there's too many straw men set up. it is not how we get information and how we perceive our world and how we connect the dots is not through The news industry, the media, there are so many different actors.
+
+And again, I go back to like, when militaries, when, when Russian military and intelligence services, when they look at it, they do not talk about controlling the media. Like they look at dominating the information space and there are a lot of different levers that are pulled. What we're going through right now, I believe, with the war in the Middle East, this is a battle that's moved into the information space and I think that people are gonna have to get real, media literacy is going to be incredibly Important going forward, even more so than it is today, when you think about AI and when you think about the different levers are going to come that are going to be available to manipulate how people think about certain issues.
+
+That's a reality, and it is not quote unquote, the media or the news.
+
+[00:34:06] Troy: Okay, so I get that. Alex, what do you think is the way that people are going to get their information in the not too distant future? How should we be thinking about, like, let's just focus on someone, let's say you have a, kid that's, 13, 14 years old and you care about the information that they're consuming and you want to help them be you know, as you described guys, it's like a kind of better. more aware, more critical, information consumer. how do you think they're going to be getting their information and what advice do you give them?
+
+[00:34:41] Alex: and I used to be much more of a news junkie and information, somebody who just read a lot of articles and I was subscribed to all sorts of RSS feeds and just had it all organized. I think. The first thing I'm going to try to do is make sure that they don't feel the need to consume too much news.
+
+I feel we're like, there's just too much of it. and we seem to be 
+
+interested in every single detail. That isn't particularly useful, just makes us feel anxious, pushes us to feel empathy because, you know, of course, we empathize and then forces us on one side or another, and none of these conversations are actually useful, they're not adding to anything.
+
+every time I noticed that I, you know, because I grew up in the region in the Middle East. I kind of got sucked into the news cycle a little bit more and I noticed that, you know, there's this stuff happening there and then there's all these other news that they're throwing at you and it's an entertainment product.
+
+They're trying to get your attention and that in itself is just, there's just too much and I would say like just consume less of it. And so for me, I'm not. As upset if there's less news and less news sources, I think maybe we're just getting too much of it already
+
+[00:35:54] Brian: Yeah. I think there's a great case to be made that, that overall people need less news, not more news. I think that it's a completely sensible choice to actively try to consume. Less news because news has become about reinforcing identity and an us versus them. a large part of the consumption is not about being more informed or democracy or anything.
+
+It's about getting mad at quote unquote the other and the other shifts for different people. And sometimes it's like a circular firing squad, to be honest with you. So I think that it's like cigarettes, 
+
+like 
+
+one after dinner is 
+
+[00:36:31] Troy: mmm,
+
+[00:36:32] Brian: or 12, and you're not gonna feel good.
+
+[00:36:35] Troy: yeah, but you know I used to think it was the right thing to do to subscribe to a proper newspaper and put it on the table every morning. And that that would be something you encouraged your children to read. And just that was a responsible, parental move.
+
+[00:36:53] Brian: But why?
+
+[00:36:53] Troy: Why? Because you wanted people to be informed.
+
+And, you thought that reading a newspaper was a responsible thing to do. And, that's what you do as a parent. and you obviously have your biases around which newspaper is the right one to, like you wouldn't, heaven forbid you put the New York Post on the table, you know, in my case it was the, Globe and Mail or, the New York Times, and, I think that these kind of habits were pushed from generation to generation.
+
+[00:37:24] Brian: Okay, but you're talking about them in the past tense.
+
+[00:37:26] Troy: Yeah, of course.
+
+[00:37:27] Brian: Okay.
+
+[00:37:28] Troy: Yeah, now I have no, my son seems to be fairly well informed, but I have no idea how he gets his information. My daughter gets her information from a Bloomberg terminal but yeah, my son gets it mostly from YouTube 
+
+[00:37:39] Brian: Yeah. 
+
+[00:37:39] Troy: I think Reddit and increasingly TikTok.
+
+[00:37:42] Brian: We didn't ask him this?
+
+[00:37:43] Troy: I mean I ask him this all the time.
+
+[00:37:45] Brian: Okay. 
+
+[00:37:45] Troy: I ask kids
+
+this all the time. YouTube is number one for a
+
+[00:37:48] Alex: my new media diet now that is the healthiest and i'm trying to even delete all the news apps From my phone because it's all becoming algorithmic and obviously trying to grab my attention it's all becoming very smart or just showing me stuff that will like pique my interest, whether it's just going to make, enrages me or it makes me feel, happy or whatever it is.
+
+They're just there to, to keep me on the app, but really listening to that up first podcast by NPR, it's 15 minutes long, you know, to have something big have bent over the day, you're going to hear about it 
+
+and the rest of it. You can stay out of it. And then I read the local news, about, some tree that fell on the street or a llama that got away and I'm happy.
+
+[00:38:32] Brian: You got runaway llamas
+
+where you are? 
+
+[00:38:35] Alex: or something. Yeah.
+
+[00:38:36] Brian: I got people getting on brawls in the middle of the night
+
+outside of my apartment.
+
+[00:38:40] Alex: are both important events.
+
+[00:38:44] Brian: Gets very active down here at night. this is my sort of hopeful take, I think people have, I thought after 2016 to 2020 that, And we, we saw this. We saw declining engagement in news. And this was obvious. You know, the Trump bump was followed by the Trump slump.
+
+And a lot of, news outlets used the Trump hysteria to drive their subscription businesses. And that is a reality. And it was a good business decision for many of them. I mean, I think if you look at what the New York Times did, it's pretty ballsy move, right? They cut, they cut their total addressable market.
+
+Right. Right? I mean, they just cut it, but they were able to make up for that by going into games and becoming a lifestyle bundle for a certain group of people. There's 40 percent of the people who are news consumers in this country who would never, ever consider paying the New York Times. And I think that was a sensible business decision.
+
+I don't know whether it improved their news product. I've been consuming it forever, but, like, I don't, I think it's a very different product than it was, say, ten years ago,
+
+for sure. But I think the market for news itself is shrinking. Right. to talk my own book, we just did a, survey of publishers, not just news publishers, but subscriptions have hit a wall over half of the 200 something publishers who responded said that their subscriptions were either flat or declining or like up under 5%.
+
+And there is no market for advertising on news. Brands do not want to be around this stuff at all. It is a major problem. They block keywords, and some of it is just straight, I don't know how, they can talk about purpose all they want, they block Muslim, they block, they block,
+
+[00:40:32] Alex: Wait, wait, wait. How does, how does that work? Who's
+
+[00:40:34] Brian: so they 
+
+use, they use brand safety vendors, okay, who whip up hysteria, because that's how this industry works,
+
+when there 
+
+is a quote unquote problem,
+
+[00:40:42] Alex: brand safety vendors do? 
+
+[00:40:44] Brian: they create. 
+
+[00:40:45] Troy: impressions on contextually, marked pages.
+
+[00:40:49] Brian: And so when, basically the advertising industry has been driven by the fear of the screenshot for since the beginning, and the screenshot is someone finds your ad next to some quote unquote bad content. Okay. And I can remember going back when Google started its AdSense. I can remember Overture sending to me the screenshot that they had of how Google had scanned a New York Post article about a decapitated head, being found in a briefcase or a suitcase and it had a Samsonite ad next to it.
+
+There's no evidence that, people, reading this, crime story would say, Oh my god, I'm never buying Samsonite again. they would more likely just be like, oh, that's weird. but, anyone who's at an agency is terrified of that screenshot. It's just terrible. It's a bad day.
+
+And so, the best way to do it is just be like, block
+
+all news. 
+
+don't have me anywhere near 
+
+[00:41:49] Alex: which essentially demonetizes a lot of this real new stuff, 
+
+right? 
+
+[00:41:52] Brian: and so basically domestic violence is on these lists. So news publishers are penalized for covering domestic violence related stories. And so this is being done by the same people. I just cannot get over this.
+
+This is being done by the same people who get lauded on stage for their bravery and all this stuff and talk about how they're driven by purpose. 
+
+You're not driven by purpose. I'm 
+
+[00:42:16] Troy: It's a great point, Brian. 
+
+You know, I look at the mechanics of it, and I was just thinking as, as
+
+starting the episode, how, much of the activity seeps into the broader, information space, which is deeply connected to human communication, whether that's conversation about what's going on on Reddit or someone who aspires to be slightly more influential or professionalized on TikTok. But in this landscape, the kind of institutional skill of media as the tip of the spear becomes ever more important as something that can be.
+
+Or at least aspire to be independent, impartial, transparent, protecting the public interest, have some verification process, like all of that will remain incredibly important. And that mechanically, I think I get most, And I know that you, I think you always laugh at me when I say verifications are really like the delivery man of the modern news era, but they, they're the things that bring it to my attention and they're controlled by the platform and the platform increasingly is my, is Apple is the operating system.
+
+you know, when I think about, where I get a lot of my news in addition to the stuff I seek out every morning, and I'm a motivated news consumer and my email box and, major media publications, whether it's New York Times or Bloomberg or whatever, and there's obviously emergent brands like an Axios or a Puck or whatever, but like the vitality of notifications, Are the things that actually pull me into stories in the present.
+
+[00:43:51] Brian: Hmm.
+
+[00:43:51] Alex: Yeah, because something's happening and it pops 
+
+[00:43:53] Brian: Do you find how much of your news consumption 
+
+is like alternative quote unquote alternative media? I think that's what Sam Harris calls it. Alternative media versus
+
+[00:44:02] Troy: Oh. 
+
+Alternative as,you know, in terms of an individual or... A lot of it, I'm kind of in the Alex camp. I like podcasts a lot. So I would say very few of my podcasts come from, established media channels. So, a lot.
+
+[00:44:19] Brian: Yeah.
+
+[00:44:20] Troy: And, you know, newsletters
+
+[00:44:21] Brian: I think that's one of the great things about Journalism, small J, not capital J, is that it is an unaccredited profession. there's no license that you need to practice it, for better or for worse. it's an open system and, that's why I think it's interesting that Elon Musk is positioning Twitter as a citizen journalism platform.
+
+Now I always thought that the global town square, was a better metaphor because I thought of the town square not like small town America town square, but like Washington Square Park, like during the
+
+pandemic. when there was like a fight going on in one corner, there's people selling weed all over the place, there's, various scammers and marketers, there's people getting mugged, there's some old people playing chess, it's more like that than, like a, very sort of 
+
+nostalgic view. 
+
+[00:45:12] Alex: that his positioning now? I 
+
+haven't been following that.
+
+[00:45:14] Brian: Yeah, he said that it's like, the best way to be informed is by citizen journalists. And, I don't know, I think this is a big test for it. I've blocked a lot of like keywords because was a lot of shouting going on.
+
+I didn't see, maybe your experiences have been different. Like I haven't found, Twitter's approach a quote unquote better way to, sort through the morass of this war. I just
+
+haven't felt that at 
+
+[00:45:41] Alex: it's really terrible actually. it's just noise. and I've been... Really kind of trying to be selective about getting, like I said, just like the NPR daily update, and then I listened to plain English at an episode about, kind of the war. And then Sam Harris at a couple of, so I've read a couple of takes, but the second I see anything on social media, social media is the worst to get Any insight into what's happening, the worst, and it's really showing its cracks at this stage. Like, I think a lot of people are getting fatigued, and so I moved to threads and now threads is, threads is becoming a lot of people pasting tweets as screenshots into it. So it's, I just think the
+
+[00:46:24] Brian: yeah, they tried to set up threads is like a non news place. But what I noticed is I don't go to threads that much, but I went and I was like, Oh, the shouting's here to at least the last time, like, there's a lot of shouting going on in all places. And sometimes it just becomes, these are really critical and important issues that to me that don't, There's real lives being lost, like, it doesn't lend itself to a lot of the shoutiness, and I understand that the passions, that, are around, the news, I guess if my goal is to feel more informed, it doesn't, get me
+
+[00:46:56] Alex: No, absolutely not. I think the format isn't right for it, especially in in something as as kind of complex and long lasting and just fucking impossible to discuss as as this thing. So, yeah, I think this is where hearing individual thoughtful takes that take a little bit of a longer time is a good way to do it.
+
+You know, I don't agree with everything. Everybody's got their own opinions, but social media. I mean, Twitter definitely got worse. Right over time, but right now it's, it's a nightmare, it really is nightmarish. I don't spend any time of it, on it at all.
+
+[00:47:29] Brian: so let's, let's wrap up with the AI, question remember, like for a brief moment in 2021, it was like Web3 fixes this, I feel in 2023, it's AI fixes this. Does AI fix this?
+
+[00:47:42] Alex: What do you think, Troy?
+
+[00:47:43] Troy: Can you repeat the question?
+
+[00:47:44] Alex: Troy wasn't paying attention.
+
+[00:47:46] Brian: Is this like Lindy Gaccarino? That's when, that's when you knew she was cooked. You just weren't paying attention. she just didn't have an answer. I don't think. no, I was wondering, like, Is there a way to use, because like you go back to the product and stuff, and I just think a lot of it is human nature, and I don't know if technology can solve for that.
+
+A lot of times when technology tries to solve for the foibles of human nature, it makes, it makes it worse. We have a bunch of, I think Peter Kafka on my other podcast called it a tsunami of bullshit coming online because AI is going to enable the creation at infinite scale of bullshit. and you know, good stuff, but there's going to be a lot of bullshit.
+
+Let's be real. is there like an outcome in which... The internet failed to make us more informed if you ask me, we have more information at our fingertips than ever before. I do not feel more informed than I was before. Maybe I was just blissfully ignorant, but I kind of miss being blissfully ignorant in some ways.
+
+give me an optimistic take since you're a card carrying optimist of AI improving the information space.
+
+[00:48:52] Troy: well, the information space is a big place, and the more informed we are about particularly things through history, through that lens, the better that we can see the present. So I think that AI is actually really effective delivery of... historical, narrow, specific, like it's a queryable database of, human experience.
+
+I personally find that if we're having a discussion about something that the ability to turn to Google or AI to get at least some semblance of the facts is, is clarifying in a discussion. In terms of how AI would sort through the nuances of the present, it's not clear to me because they haven't had time to settle.
+
+We don't know what is true and what's not true. And so I think that human judgment and rigor and all of the journalistic principles that we just talked about become become really important in the present.
+
+[00:49:56] Brian: Yeah,
+
+[00:49:57] Troy: And so I think it net net it contributes. But what you're talking about is something else, which is the.
+
+assault, of the information space by AI created content. And that, you'd want to believe that, The defensive capabilities of AI to sort through the junk that's created by AI, AI, um, can be, well, it can win. 
+
+It can, it can beat itself, right? 
+
+[00:50:23] Brian: This is So,
+
+Silicon Valley.
+
+[00:50:25] Alex: Why something has 
+
+to happen though, because it's, it's a 
+
+[00:50:27] Troy: it's a 
+
+tough 
+
+[00:50:28] Brian: You create a problem and then create a solution to the problem that you
+
+created. 
+
+[00:50:33] Troy: right? 
+
+[00:50:33] Brian: Chef's kiss. 
+
+Perfect. 
+
+[00:50:35] Alex: you know, that's
+
+the history of technology in general, right? Like, I mean,
+
+[00:50:39] Brian: Yeah, my favorite from I covered email marketing like many, many years ago and One of the makers of like the early like most powerful like email service providers that was preferred by spammers cause it could send a shit ton of email like immediately. they just started a side business for a spam filtering
+
+[00:50:59] Alex: But why do we, we, you talk about this technology like it's different to the invention of mass media, which itself created a bunch of issues, right? There's just new stuff going on and new interfaces and new ways to get content and new types of content. And I think that we're still very much living with, in the shadow of, the printing press and the newspaper with the way content is delivered and.
+
+What AI allows us to do is to rethink a lot of these interfaces and now I think Forgetting like the, what it does to businesses that, 99 percent of the content on the internet is, generated in the next 10 years. what does it do to us? Right. And so it'll do something to us where we will stop trusting even more of what we see because you can fabricate anything you want.
+
+And there is a sense that maybe we will become, more inoculated to, manipulation, at the same time, manipulation will become way better and we'll have to build new tools to try and fight it. I don't know. I think it's a massive societal change. It's an interface change. I think the idea of content and what we consider a news article needs to change.
+
+I think that in 15 years, a title will seem like something ridiculous. Like, why do you need a title? You need a title to separate this article from that article when it's printed on a piece of paper. when all I want is the content. I don't know what it looks like, but I do think it's going to be a massive shift and change.
+
+And when that happens, there's a lot of opportunity, for people to make something new. I don't know if it's better, but it'll definitely be very different in 10 years than what it is like today.
+
+[00:52:39] Brian: I like that. We should do, we should do an article on reinventing the news article,
+
+[00:52:43] Alex: Yeah,
+
+[00:52:44] Brian: because there are a lot of conventions. For instance, like the regular news article, you're trained is basically around 700 words. And it's, it's that way because of the printing press. There's so many things, there's so many conventions in this case, the journalism sort of field that carry over. Into a totally different like world that where it's completely unnecessary. I mean, Axios got that right by saying 75 percent of an article is just be 
+
+material context. It's like, why don't we just do it in
+
+bullet 
+
+points? 
+
+The new stuff. 
+
+[00:53:17] Alex: I was trying to that open AI like voice chat companion demo that they put on the app. you know, there's a little pause between, things. as a machine is generating everything. but it's becoming indiscernible then. To talking to someone and I don't know why in the future I would even deal with the fact that well Axios format is like this and the New York Times format is like this and this and that I would just ask this AI that knows me to give me an update not too much, not too little on what's going on in the world and What happens when that happens, because that's the interface, that's the interface that a lot of people want, and then it's the rest of it is just going to be opinion and people talking and maybe hopefully real, real people.
+
+but I don't think people are taking this seriously. like we're trying to figure out where do we put the fucking ad on top of the newsletter. 
+
+[00:54:05] Brian: put it at the top. Don't overthink it. Put it at the top. 
+
+[00:54:09] Alex: you're kind of like. On the titang, rearranging the deck chairs while somebody's 
+
+flying over you in a 
+
+jet. 
+
+[00:54:14] Brian: you keep coming for my newsletter ads. 
+
+[00:54:16] Troy: Yeah, except Alex, your assumption about this great new interface is that underneath of it all are verified... Validated facts, clear points of view, truth, that's the problem we have
+
+[00:54:30] Brian: Won't they just be trained on like crap? Because AI tools are gonna create crap and then they're gonna be, the LLMs are gonna be trained on crap. And
+
+[00:54:37] Alex: 90 percent of that stuff, I think the idea of like, truth and misinformation, like we, I wonder if we don't overstate all that. we're constantly trying like, are we getting lied to and whatever. There's a very obvious, most people just pick a path and believe what they believe because they like the sources they do.
+
+it's not like they're constantly, hmm, it's the, when I'm reading the New York Times, I might think, hmm, the New York Times, are they lying to me? Oh, they made a mistake. Great. But if I turn on Fox, I'll go, my God, this is all bullshit. While other people decide to turn on Fox and believe that that's entirely 
+
+[00:55:09] Brian: yeah. 
+
+[00:55:09] Troy: Well, it's kind of the point that I'm
+
+making.
+
+[00:55:11] Alex: people 
+
+are
+
+[00:55:12] Brian: It doesn't really, yeah, I mean, for particularly with politics, it's like people decide that they, fill in the facts later. It's not like people who swung from like Hillary to like Trump were like going over Trump's platform and his plan for like infrastructure,
+
+[00:55:27] Alex: my, my biases, my AI will understand my biases and satisfy those biases through the media that I consume. the same way I 
+
+[00:55:36] Troy: that's right. 
+
+[00:55:36] Alex: just with less
+
+friction. 
+
+[00:55:38] Brian: But can you like be like, show me something that changes my mind? I mean, I would hope Like
+
+I 
+
+would 
+
+want to use 
+
+[00:55:43] Alex: I mean, honestly, I do that. 
+
+listening. Like I think Sam Harris, who I appreciate, I often disagree with some of the statement he makes. And I think he's one of those people that I listened to that I like disagreeing with. 
+
+[00:55:54] Brian: That's why I listen to the All In podcast. 
+
+[00:55:56] Troy: know who you would like? this is, Related, Tyler Cohen, who's the blogger, economist, has a new book out called like the greatest economist of all time. And he released the book with a companion AI bot that you could query, on, I'm assuming all of the work that went into the book and related, content.
+
+And so if you go to his website, you can. see the book or download a chapter or whatever, and you can also talk to the book. You would like that,
+
+Alex, 
+
+[00:56:25] Brian: Hmm. 
+
+[00:56:26] Troy: So, as a wrap up, 
+
+How old is your son, 
+
+Alex? 
+
+[00:56:28] Alex: he's turning six.
+
+[00:56:30] Troy: Okay, so what advice do you give him for surviving the future information space, Brian?
+
+[00:56:34] Brian: Me? 
+
+[00:56:35] Troy: Mm hmm.
+
+[00:56:36] Brian: I didn't know you were gonna go to me. I thought you were going to Alex. Can you repeat the question? No, I would tell him that, to not trust any one source and to... I don't want to be like a do your own research person, but to me, the best way to understand the world around you is to be curious.
+
+Right? And I think a lot of people lack curiosity. And so, I don't have any children, but I would be less focused on like, them reading a newspaper or whatever. They'll find their own path and the habits of, of the parents are generally rejected anyway by the children, I think, over time.
+
+but I think curiosity is incredibly important. And I think curiosity leads you to be open to all kinds of different opinions. I think what we're seeing right now is,return of the closing of the American mind, but it's not just Americans, in that people are not curious anymore.
+
+They're not open as much, I think a large group of people are not open as much to, points of view that are different than where they started. and I think that's the biggest thing, rather than trying to, Figure out how you can examine,explosion craters and understand where the rocket came from, or whether it was a shrapnel from this direction or that direction.
+
+that's my take.
+
+[00:57:49] Troy: Okay. So, should we shift to best product, Brian?
+
+Moderator? 
+
+[00:57:53] Brian: Yeah, let's go, 
+
+
+[00:57:54] Good product
+---
+
+[00:57:55] Troy: Okay. Well, just quick question for either of you. Do either of you have a signature fragrance?
+
+[00:58:01] Brian: Oh, God, no. I was just in the elevator and someone was wearing a cologne, it's too European.
+
+[00:58:07] Troy: Okay. Alex, do you have a fragrance you splash on when you don't have time for a shower?
+
+[00:58:11] Brian: Dracar
+
+Noir? 
+
+[00:58:12] Alex: yeah, I have a couple of things that I splash on.
+
+[00:58:15] Brian: See? European.
+
+[00:58:18] Alex: advertising for 
+
+[00:58:19] Troy: No, I, I think that fragrance, I like both candles,high end candles and, fragrance itself
+
+from, 
+
+[00:58:26] Alex: me into high end candles,
+
+Troy.
+
+[00:58:28] Brian: High end candles. 
+
+You guys, you guys need hobbies. 
+
+[00:58:32] Alex: my, my wife and I often kind of recall that time where Troy was going, oh, you have to go to the, this hotel in New York. It was the Gramercy, which I think closed down, he goes like, he goes, the, the candles are exquisite.
+
+And I thought that is the fanciest thing I've 
+
+ever heard anyone say in my life. 
+
+[00:58:48] Brian: Vanya, only cut that out 
+
+of Troy Pays. That's 
+
+[00:58:50] Alex: it's great. 
+
+[00:58:51] Brian: him. 
+
+[00:58:52] Alex: now, now I 
+
+do. I like candles. 
+
+[00:58:53] Troy: I like the company D, DS Derga. I did like this Gramercy smell 
+
+[00:58:58] Brian: I know this woman who creates, I don't know if she still does, but I knew her few years ago. She creates signature, scents for brands.
+
+and I wanted us to have a signature scent at Digiday events. Like every, so like, just like the Ritz Carlton. Like when you walk in and there's like, there's the Ritz Carlton smell.
+
+Sometimes 
+
+they overdo it The one in Tokyo
+
+smells amazing. 
+
+[00:59:18] Alex: it be, Monster Energy and X Body Spray? Is that...
+
+[00:59:22] Brian: Yeah, basically. Because I was trying to, like I was saying, it needs to have the heavy musk of capitalism, and so like, you know, tobacco mixed in with coffee, and maybe some like, brown liquor.
+
+[00:59:35] Alex: Nice. 
+
+So, 
+
+[00:59:36] Troy: yeah, 
+
+[00:59:36] Alex: product, 
+
+Troy?
+
+[00:59:37] Brian: Signature scents. 
+
+[00:59:38] Troy: it was, yeah, scents,
+
+I, like this one called... 
+
+[00:59:42] Alex: me it's not smells. Just give 
+
+us a product. 
+
+[00:59:45] Brian: Smell. 
+
+[00:59:47] Troy: No, but we connected it to, to, I mean, I can get some 
+
+brand specific if that helps. Like I think, DS fragrance is really nice and a great name. I like, 
+
+[00:59:59] Brian: I would love 
+
+I love that. I do that without like, yeah, debasement
+
+[01:00:04] Troy: called Debaser. You can look it up. 
+
+[01:00:05] Brian: What's, what else is in their line?
+
+[01:00:07] Troy: there's, there's lots of good ones. There's one called, I don't know what, there's another called Radio Bombay. there's another one I really like called Roman Fruit Cellars,
+
+[01:00:18] Alex: very nice. 
+
+These are 
+
+[01:00:20] Brian: I would wear, a monetizer. That's what I would
+
+like.
+
+[01:00:24] Alex: candles. How long do they last?
+
+It's
+
+[01:00:26] Troy: a candle costs 70 easily.
+
+[01:00:29] Brian: Really?
+
+[01:00:30] Troy: Oh, yeah, definitely. Usually a hundred.
+
+[01:00:33] Brian: What are the margins on that?
+
+[01:00:35] Alex: good
+
+It's good. margins,
+
+It's gotta be.
+
+[01:00:37] Brian: We should get Chris back on to like, do scented candles. This
+
+[01:00:40] Alex: Well, hang on. If you subscribe to the candle, it's only 60 every 30 days.
+
+[01:00:45] Brian: Did they send you 
+
+one like Every 
+
+week? 
+
+[01:00:48] Alex: That's a good business.
+
+[01:00:49] Brian: It's great 
+
+business. 
+
+[01:00:50] Alex: of news.
+
+[01:00:51] Troy: Right on. 
+
+[01:00:52] Alex: All right. 
+
+
+[01:00:53] outro
+---
+
+[01:00:53] Brian: Thanks so much for listening. I'll be back next week with a new episode. please do leave podcast. At least that's what Alex tells me. All right, guys, 
+
+this was 
+
+fun. 
+
+[01:01:02] Troy: It's great to be back. It wasn't the
+
+same without 
+
+[01:01:05] Alex: Yeah, it wasn't and also I think a couple of things, we should keep telling people to subscribe and share and comment We've been getting good comments But also i've heard feedback that we should introduce ourselves at the beginning of every show 
+
+because we get a lot of new listeners Who don't know who the hell we are?
+
+So especially me to 
+
+be honest
+
+[01:01:25] Brian: All right. Bye 
+
+[01:01:26] Alex: Bye everyone 
+
+[01:01:27] Brian: All right, guys. 
+
+See ya.
+
+[01:01:28] Troy: ya. 
+

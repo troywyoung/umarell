@@ -1,0 +1,383 @@
+PvA S2E95
+===
+
+[00:00:00] Troy: maybe we're all exhausted in the media business. Maybe we've had to dance for, traffic and money for too long, but those that are, deeply adaptable will, do really well in this next thing, because there is no world, in my opinion, where, suddenly search just gobbles up.
+
+So much of the kind of spectrum that there's no value for other people in an ecosystem to create there's tons of value and in between a query and getting either a content outcome or a commercial outcome. There's tons of room for people. So I would encourage folks to look at this as, as a huge opportunity.
+
+[00:00:56] Brian: Welcome to People vs. Algorithms. This is Brian Marcy.
+
+This is a show about patterns in media, technology and culture. normally I'm joined by Troy Young and Alex Schleifer, but Alex is 
+
+think he's at a conference. we're going to talk about the future of search today.
+
+We're going to talk about, kerfuffle around what's ailing Nike. and also get into a little bit about, the news business and generation bashing and more. That sounds good. So let's start off with the future of search. So open AI. their want is, is they're announcing it's coming.
+
+I don't know why these people don't just release the things. but they're releasing their own search engine. This has been long in the making. This is well known. It's going to be called SearchGPT, go figure. and we've already seen, AI, in search with perplexity. I would imagine it is going to be very similar to perplexity.
+
+I mean, ChachiBT already. as a quasi search engine to me. but the search market historically has been nearly impossible to crack. I mean. Microsoft in some ways has been successful. I mean, if success search is just such a lucrative market that six, 7 percent share is like a massive success.
+
+I mean, it has taken Microsoft, one of the largest companies in the world, a generation to get there. It just goes to show how the dynamics in search are different than many other markets. Google has, fended off rivals time and again. And so I think a lot of times we, we leap to, the world is going to be completely different, but history tells us, Otherwise, that's because the network effects are daunting.
+
+so maybe this time is different. Maybe AI is the thing that breaks through. but I think right now in the search market, a lot of the issues that, say, publishers are dealing with have nothing to do with AI. It is just Google's regular, Attempt to clean up its search results, make them more, more useful.
+
+And then also their business priorities have changed they're not sending traffic out to others. So I think some estimates say that 60 percent of searches are now zero.let me just start, what is your like taken from, from people that, that you talk to about the state of the search market right now?
+
+[00:03:01] Troy: I've been talking to a lot of people about it and I think it's, search and AI and distribution broadly is creating a lot of consternation in the, M and A and acquisition and funding markets because people don't really know how to. of model those risks in the business.
+
+So definitely top of mind for everybody. I think that,it'd be good to get some numbers like that 60 percent number I think is, incorrect. And, I, for example, know that many search dependent publishers are sort of navigating, this time, reasonably well, I think that algorithm change of a few months ago, Impacted a lot of folks.
+
+And since then, there's been a little bit of a clawback. and there's a lot of pages particularly like high intent LTV pages that are from Google that are not. carrying the generative widget that keeps you on the page longer and may answer your questions because it's really not of in the business interest of Google to, to change those much.
+
+But I mean, I think we can look at this more broadly and it is, it is kind of interesting because. Search meets LLMs is just going to happen, I think. And what that means is that basically your search results in the layer below the search results, which is, what's on the page can get factored by an LLM and essentially, Code of summaries, abstracts of that information can get digested by,a smart machine and presented to you in a way that creates lots of utility. And I would caveat that with, it creates utility in some places. I think it creates a lot of complexity in others, meaning, we've, we've said this before, but there's a lot of information that You don't need, to trust the source. You don't need to trust the brand. you're not really looking for POV. And so if you want to know any historical fact or, anything that you would typically categorize as evergreen, I suppose. then that ranges from, how to make carbon era to,the side effects of Ozempic to, what led to the death of Napoleon?
+
+Like all of those things are, I think, well served by abstracts. And then there's like stuff that's way more complicated. That's, current or, nuanced, i. e. the news, or, based on, a brand or an individual's point of view. Like, I want to buy a new Lexus GX. Is that a good car? I think trusting an abstracted brandless response, versus something like a car and driver in that scenario is really difficult. I think there's going to be lots and lots of use cases where.either the new sort of search interface has gotta attribute something to a brand or an individual and the economics of that are gonna have to be hashed out, either in the form of, a referral or payment, which is what we're seeing.
+
+but yeah, the market's definitely,you know, in a, in a different place. And, just to kind of approach it. little bit differently. I think that, it's the first time that I think you're seeing, The migration of consumer behavior away from Google is, is I think overstated.
+
+I think that it will take a long time and it's the generic brand for information access and people don't change that quickly. And, I think there's early adopters that, that use, tools like ChatGPT, but I think a lot of the data suggests that people use ChatGPT for a while and then they go back to doing what they used to do.
+
+but, there is, there's blood in the water and, you're going to see this, these sort of search LLM hybrids from chat GPT. I think it's going to be really hard for them. meta sees an opportunity to do the same. They have an open source. LLM called llama. And now that product is going to be manifest on the top of all of their touch points.
+
+And I think that that will take time and attention away from Google because it doesn't demand massive behavioral change from a consumer. And you'll see at the top of the WhatsApp interface and you'll see it. on Facebook and you'll see it, on Instagram and yeah, it's a, it's a mixing of use cases.
+
+Like I'm on Instagram. I'm not necessarily searching for things, but I think that people are going to pick away at the, Google's hegemony and then it will, a couple of other things will happen. And this is what we should talk about. It's like, I think these things are free, like Google's free. And then the advantage then goes to the company that can create a better marketplace around it.
+
+And, clearly in this world, Meta and Google are. the leaders of, that very, very complicated kind of, digital industrial model of, monetization by like years and miles. So, the winners will provide a free service and downstream monetization, and that will lead to a model that's not unlike, the, pay for play model that you see on Google today.
+
+[00:07:57] Brian: Yeah. a couple things on that. I mean, one is search is such a massive market that I think sometimes people lose sight of it. I mean, Google processes something like 8. 5 billion searches a day. So this is big. This isn't all going to, AI, anyone who uses, I don't know about your, but like using perplexity to me, and I believe search GPT will be a variation on that.
+
+But Maybe not, but I believe so. it's good for certain things and certain things is not good. And the same way, like,Google maybe only monetizes from the estimates I see, like 40 to 50 percent of searches, right? So like most searches are not commercial. they're not they make a outstanding amount of money on on the commercial searches and they're going to continue to make an astounding amount of money on the commercial searches.
+
+I mean, I've lost a little bit of faith in Google's competence. See, but I haven't lost faith that they will figure out a way to protect the massive cash machine that they have. I believe that they'll be able to do that,
+
+but there's always going to be ways then to have search be more diverse. I, I'm, I'm reminded of, of the sort of early days of search when the thing was all about vertical search, right?
+
+And it was, the idea was we shouldn't have, an all in one search engine. We should have lots of different, like vertical search engines, business. com raised a tremendous amount of money to be a business search engine. There was all these different, vertical search engines. And I think maybe. That was an idea almost before its time, because a lot of the using AI and particularly LLMs when it comes to search, it seems more attuned for vertical versus organizing the world's information and and Google.
+
+Is, look, they dispute the study, they always dispute any study, because they never allow researchers to have access to their data. but you know, one study says that the amount of the AI overviews has decreased. It's down to like 7 percent of searches. So even if you see a lot of the AI overviews and searches, it's just those particular searches.
+
+Again, it's a massive, massive mark.
+
+[00:10:00] Troy: Yeah, I mean, I think that people should approach it like with a level head and realize that,discover the evolution of discovery or distribution on the internet is a age old phenomenon. to, to which you know. new players emerge, or the, the interface changes, and, and then the people on the other end of that have to respond and adapt.
+
+But, we went from, broadly, Yahoo was a dominant,distribution point that sold little squares at the top of, their interface and, then evolved into what we now see as search advertising. Google became dominant and, kind of perfected that model. Social became a new distribution point or a place for, attention.
+
+And mobile and mobile applications then became important and people worried about, TikTok is a search environment and a distribution point. Amazon became really important for product search and now AI. So there's a long history of shifts. And, I would say that a couple of new phenomenons are interesting here.
+
+One is, Google definitely competed for distribution points. See the relationship with Apple and that whatever that 20 billion annual deal, where you want it to lock up a start point and, and have your search engine be the default. Now, I think you're starting to see competition for unique data sets. So not just for the distribution point for, for what your, AI or search engine is able to crawl. And so the deal with Reddit, gives Google unique access to a swath of UGC. That's really, important to a certain type of query and a certain type of answer, and that is available exclusively to, to the, Google crawler. So I think what you'll see is an emerge like the, and it might align with your vertical theory, which is, They all won't have the index
+
+or the same data 
+
+[00:11:54] Brian: this is amazing, really, if you think about it, because it's basically, I mean, look, Google gave up on the don't be evil thing a long time ago, but it's giving up on the entire premise of organizing the world's information, right? Because once you start to strike these exclusive deals, if you want to find a Reddit post on being good luck.
+
+Right, because they've locked up distribution. This is an exclusive. This is house of cards, right? And when you go down that route, well, then obviously others are gonna counter, right? They're gonna strike their own deals. And so there isn't going to be this idea seemingly of having a The the repository.
+
+I 
+
+mean that seems, that seems That's over. That's, that's pretty major, isn't it?
+
+[00:12:39] Troy: I think it's, I think it's a big new chapter. And I think also there's another new chapter, which is I, I'm not sure that perplexity will matter in the long run, but what they're doing right now will matter.
+
+[00:12:51] Brian: Right. I think it matters. It matters. Because it's gonna set, Google's gonna have to copy them.
+
+[00:12:56] Troy: Yeah, listen, the trade was, we'll index the world's information and you'll get distribution in exchange. So everybody in the world knew that they needed to let, Google scan their information and index it. Now what's happening is if more of the experience is going to be resident and monetized inside of someone else's surface area or application, then the trade isn't distribution, it has to be money.
+
+And so there is a RepShare and essentially what. perplexities done. And listen, I think that the deals will be insignificant. I think that their ad revenue at this point is, pretty much non existent and they're funding, potentially, I don't know what the exact details of the deals are, but they're, they're funding them out of, guarantees out of venture money, which never lasts long.
+
+But the trade there is we will, we will split our ad revenue with you that exists inside of our world. You just have to let us, use your content. And that hybrid of distribution plus payment is not something anyone's ever done. And I think when they did that deal last week with WordPress and time and fortune and others, Matt Mulliwood from WordPress made the point that, We're really interested in exploring this partnership because, Google, we had the Google trade for a long time where we give them our content and they, and they give us traffic and, Google never paid us.
+
+So this is an important precedent. And, and I think, I think, I think that will last.
+
+[00:14:21] Brian: Yeah, so I think that is the important part. So just to catch everyone up, perplexity, which has been in the crosshairs of, publishers. I mean, Fortune sort of declared, declared war on it. There's been some,legal threats, although, getting a lawyer to write like a nasty gram is, is not really that much of a commitment, honestly.
+
+but they've struck these deals. and that time has done one and a few others have done one. And I think that's, that's important because that will put pressure on the marketplace, like you said, on, on Google to respond to Google. What I find very interesting, if you sort of. I don't want to get too game theory about it is, Google's interests are sort of diverging from publishers in a way that I don't think they totally have.
+
+previously, if you look at Google's results, it's network businesses is in decline, right? I mean, 
+
+[00:15:10] Troy: Yeah. But it's
+
+been, it's been in decline for eight quarters.
+
+[00:15:13] Brian: Got it. There is a major trial starting and I think it is not, I'd love, I'd love to, I'd love to have poly market do this. I'd love to see what poly market says about whether Google is going to be forced to split off its ad tech business.
+
+So let's just, let's just stipulate for sake of that. Google has to split off its ad tech business because of the obvious, competitive issues of its monopoly position and it is monopoly. When that happens, doesn't Google have just far less incentive to be supporting the open web as it, because I mean, it, it always been the backbone of the open
+
+[00:15:50] Troy: well, it's, it's good to define what's in that network line item, Brian for folks, because it's all their ad tech stuff and it's the monetization that happens on the display network, around the web, correct.
+
+[00:16:01] Brian: Right. But that is critical because it was always like, yeah, we're going to send traffic to you, not because we're some kind of altruist because that traffic, we're going to monetize it on your website. And, the unspoken thing was like,
+
+[00:16:11] Troy: Yeah. But they were also monetizing it with search, search ads. I
+
+[00:16:16] Brian: like, as we said, like the search ads, are a great way to monetize very commercial searches. Right. And so they had interest in sending less commercial searches to publishers, right. Cause they could monetize them, secondarily. Right.
+
+[00:16:30] Troy: Right. Yeah. It'd just be good to look at that line item. I think it's about a 7. 8 or 8 billion relative to the search revenue. It's probably less than a quarter. It includes the rental of their ad stack to, to publishers and all of these sort of advertising infrastructure as well as the network.
+
+So I, I dunno, I, I just think that, you You know, if they gave that up, I still think that there's a lot of money to be made as the sort of, choke point on, distribution of, to all end points on the internet, content, commerce, services, all of that. I don't, I don't think that
+
+[00:17:06] Brian: I will say this, but like
+
+direct payments to me, it sounds like a really good deal for a lot of publishers, right? So I leave aside the people whose main business is in whatever you want to call it, arbitrage service, they can monetize very heavily. But if you're like a news company, right?
+
+And you look at the ad market, getting direct payments. And again, maybe they're going to be de minimis, but you're getting direct payments from these choke points, that sounds pretty good. Particularly when you look at an ad market, like if you're a news publisher, right? So I think something that went, under the radar that, probably shouldn't have been is, is group MCEO was in front of Congress earlier this week or earlier this month.
+
+And was asked about, how much of, of their ad spending that runs through group M goes to, news publishers. The number was 1. 3%. Okay. it is unsurprising really, but, but, it's a clear indicator that the sort of packaged news business is, is going to either be a luxury good just available for subscribers, or it's going to be some kind of public utility.
+
+But the idea of supporting a general news business off of an open web advertising business is. It's insane. I don't see how it works. And I don't blame group M just to be clear because they're, they're responding to their clients, right? And their clients, I don't care what they say. I can't, they don't want to be near news for the most part.
+
+Okay. They might say like purpose, purpose, purpose. They don't want it. They don't think it works. The obsession with performance marketing comes into play here. and they bought into, It all being about a bottom of the funnel game and publishers lose all the time Up against other options where they're they're not going to get involved in political food fights.
+
+So I just think that it it sounds like Not a bad alternative with a bunch of Kind of bad alternatives. Yeah,
+
+[00:19:04] Troy: I think that to your point, news is either subscription or it's feeding some kind of other monetization machine other than purely impression based media. And, I think events reach both the saturation point and don't scale. So, you've, you've got limits. Obviously video is infinitely more monetizable.
+
+I don't think that 1. 3 percent includes like CNN or other, news networks. But video has a huge advantage because when you can carry advertising on a timeline, it works really well. That said, or it still continues to be marketable. Just look at, you know what you see on, any of the cable news stations.
+
+But, news gathering and management of those organizations have always, CNN is probably the best example, been subscription dependent, I think 70 percent or 60 percent of their revenue still comes from, subscribers of cable bundles, and clearly their cost structure needs to change materially.
+
+the question I think in this, CNN transformation, which is perhaps most profound is,how do you support a global news function and pay for it in, the new world economics of digital media. And I think it's going to be extremely difficult to build the subscription base around those kinds of new behaviors and the way we consume.
+
+I think it. In some ways supports the rise of individuals that don't have the monetization pressure but can react quickly have no cost structure and whose kind of point of view saturated media feeds the needs of lots of people. And so I do think, maybe it's the end of certainly the end of CNN the way you know we know it, and that.
+
+It means that news, broadly speaking, video news in particular, becomes way more partisan, I think, because it needs to appeal to a kind of tribal segment yeah, I think it's really troubling for, text based news on the, the internet. If you are someone like BI and you have kind of broad and shallow approach to news andI don't know what percentage of their business is funded by subscriptions, but it's going to be tough to create something that's compelling enough to pay for an ambitious reporting function.
+
+and the advertising offset is, is just tepid.
+
+It's 
+
+still 
+
+[00:21:26] Brian: would be worried with a company like BI about getting caught in between. they seem very firmly being caught in the middle. The middle is never a good place to be and it's a horrific place to be now. I think the whole bet with B. I. was there when we come like Amazon, they're going to come massive and there will become everything and they're going to be in every vertical.
+
+And that's when they changed it to insider. Now they're back to business insider. And I think they lost a bunch of years basically of owning one space by trying to own the cheese content and whatnot. and now they're a sort of. middling, middle tier sort of business destination. I mean, they're not going to have, you know, I talk with people from places like Bloomberg and Wall Street Journal.
+
+they sell out display ads,it's a different type of business. Right. 
+
+[00:22:09] Troy: ironically the display market is pretty healthy actually from a yield perspective. I hear that from lots of folks in well lit high demand places like the Wall Street Journal or even more mass players like Yahoo. the yield is doing really well. I, you know, I think that the market's just kind of getting cleaned out and those people that sit on the sort of right side of the subscription divide are going to do okay, right?
+
+And that might be okay. Atlantic got there because it was funded by philanthropy, but they stacked up. an incredible roster of, writers, and it became a distinguished source of information that a lot of people pay for, I mean, I think something like that can get across the divide. The New Yorker, incredible brand, funded by print and a migration of print to digital,one of one, crosses the divide, Wall Street Journal crosses the divide, New York Times crosses the divide.
+
+But when you're sort of stuck in the middle, which is, I think, the bet that someone like Jess. Sibley from TimeMade, which is like, am I going to refactor and invest in a news function, not on like, say what the Atlantic did so that I can build a subscription business, or I'm just going to tear down the paywall and be like, general news lists, good covers and, and events.
+
+And I, and I think that's a tough question for folks,
+
+[00:23:20] Brian: well, maybe, maybe, maybe the question is not tough accepting the answer. It might be tough, right? so let's just stipulate if, if news is going to be a luxury good, right? it's high quality, well lit, et cetera, all the like cliches of, of the news business.
+
+if it's going to be a luxury good, that is mostly paid for. Okay. not that many people get to be luxury goods, right? and so then you're left with what is our path and you have to be honest about the answer because and if your path is different you you you better just take it at the end of the day I mean, there's not really another another alternative one of the things that I noticed I don't know if he's passed in on Spotify.
+
+Tucker Carlson is the number one podcast already. I think that's remarkable. And I think it's it's interesting because we talked about this on the show, about which of these stars, quote unquote, stars from sort of the linear and traditional world can make the leap into into being, media brands of the of themselves, because I think it's always a question of With people did they make the brand or did the brand make them right did Don Lemon make CNN or does CNN make Don Lemon I think it's the latter, but I could be wrong.
+
+I think it's interesting that that Tucker has, has. he's done it, right? I mean, like he's got to build the business around it. I mean, I, I listened,the, he's doing Zen ads and stuff like that. There's that's, I think that's his endemic category, but, I think it is a sign of things to come.
+
+I don't, I think it's overblown in the sense that I don't think most. Quote, unquote, talent at these companies can make that leap. But the fact that, that in a very short period of time, he's been able to rise to such prominence. And look, I know a lot of people like, dislike, his stuff.
+
+And I get that. But you see him at the Lyrical Republican Convention, like with this standing ovations and stuff. I don't see, I don't see a lot of like news people at CNN who
+
+[00:25:18] Troy: Yeah, I don't, I mean, I don't, I don't think we should find that surprising. That Tucker Carlson, took the mic from Rush Limbaugh or,
+
+that
+
+radio, well, or that radio is in a sort of cult of personality medium, right? Radio is always about the personality and it always has been.
+
+I think that maybe what's interesting about it is how podcasting has become mass and really kind of taken the last breath from radio. And that inside of that, there's, there's room for. a lot of magnetic personalities, however you want to look at it. And that, Tucker Carlson,suits that transition, it was better than anyone because, I think he, he feeds the base.
+
+I think he's
+
+[00:26:03] Brian: He's just asking questions. It's great.
+
+[00:26:06] Troy: yeah. And I think that his, the interesting thing about him is that he's totally fringe in, in a way that's. You know, bizarrely entertaining and, and does feed, a certain kind of maniacal mindset. But then he puts this kind of bow tie veneer on the
+
+whole thing that makes it somehow, acceptable or, even has this sort of aspirations to be mainstream when it's really criminally insane.
+
+[00:26:34] Brian: He can do, he can basically do Alex Jones light. But because, he's this, preppy guy who still has bangs in his 50s, he's able to get away with it. He's, wearing bonobos. And that is, I think that is a great lane if you're going to win in this information space. Because he, he presents like very, a clean cut guy and everything.
+
+but he's He's totally willing to die. I mean, he's basically saying that Joe Biden ordered a hit on, on Donald Trump. I've been, I've listened to some of the episodes. I've, I try to forage like in the information space. I go everywhere. and he's able to get away with it. Like, and it's effective.
+
+And I think the reason that I bring it up is, is less to sort of, Praise Tucker Carlson and stuff, but this, everyone copies what works. And so that is going to be copied on all sides. We, we see this in, in our political system. The, the progressive side is becoming just as conspiratorial as I think Taylor Lorenz called it blue and on or skewing on it.
+
+It retails. Let's be real.
+
+[00:27:39] Troy: Yeah, these are all, sort of bizarre extension notes of, the rules of the information space that we've covered in previous episodes where,news is, is, Entertainment and that we all live in, bizarrely in the inner information space, we live in a simulation and, grudges are held, shots are fired, crazy things are said, those people that say crazy things do well in the simulation until, and the biggest fear of everyone is that what happens when that, gets behind a gun, when that meets.
+
+Real consequence and either,it makes for. a crazier world. I think on the media side, you're going to see way more dynamism where. Individual brands blow up, become mass, go away with more frequency. I think the one great virtue of a media brand is that it has sustaining power because you can slot different people in it over time and maintain a point of view and a kind of,a perception that's the great power of media brands, right?
+
+Is that, that you can have a, a kind of. Sustainable positioning over a long period of time and kind of, evolve it slowly, set expectations with an advertising marketplace, bring new talent in. And now, there's no doubt that a big percentage of the information that we consume has shifted from brands to individuals.
+
+That doesn't mean that. As you call it, packaged media doesn't play a big role in that, that media brands are necessarily non sustainable. That's not true. I don't think. But, yeah, this is here to stay. And if anything, we came to maybe realize that, like the couch fucking tactics on the left, are, sometimes equally nefarious.
+
+It's a fist
+
+[00:29:24] Brian: Yeah, it is amazing by the way on that like I don't even know the origins with the JD Vance and couches and stuff But it's like I've been over anytime. I open that infernal app that I'm addicted to I'm like Overwhelmed by maybe I engaged in trying to understand what the origins of this but like I've been overwhelmed by this meme
+
+[00:29:46] Troy: Well, somebody made it up and they referenced pages in Hillbilly Elegy and they said that, this was part of, it was written about in the book and it wasn't true, but it was too good to be true, to be not true,
+
+[00:29:58] Brian: Well, too good to check is what we call it in the trade.
+
+[00:30:02] Troy: Right.
+
+[00:30:03] Brian: Some things are too good to check. what is like a, a legacy media brand that you think is aging gracefully? I think at some points it becomes like we all get older.
+
+It is our fate. And some people age more gracefully than others. Some people try to cling onto their youth, and it's always a danger. I know you've said I dress like a child, like it's always a danger to like, there's some people who still have the same hairstyles as they had when they were in their 20s and are
+
+still going to clubs in their 50s.
+
+Who, what is it, what is a media brand that you're saying? You know what, they're navigating these challenges and they're real challenges very well and they're finding, they're finding their path in, in a very, difficult environment.
+
+[00:30:42] Troy: Well, I don't think anybody, I mean, anybody, I, I, because the way you framed it. To me is is wrong. think that they're all spasming. They're all kind of like trying to find a way like so you admire someone like Vogue because they have, the talent and the gravitas to pull something off like that massive event in Paris, which should be applauded because, I think that it, reinforce their sort of global brand authority in an admirable way.
+
+Whether it made money, don't know. But,at the same time,the magazine still continues to be a shell of what it used to be. the underlying kind of economics of the business are nowhere near what they used to be. They try lots of things, including investment in video that didn't work.
+
+Like everybody's trying to find their way, dude. And, people are, I think that brands that had a leadership position, like there was Vogue in fashion media and there was everyone else. And, I think they make that transition better because they're the sort of Kleenex of the category.
+
+I think that people that become that represent a global point of view with the kind of news gathering investment that,justifies a quality, intimate experience with the consumer. And I mean that like the New York Times app or the Wall Street Journal, but like then look up one step further and I love the Financial Times, but like Nikkei is like unsatisfied with its financial performance.
+
+they're now considering selling
+
+the Financial Times. And so. You know,
+
+[00:32:21] Brian: it.
+
+[00:32:22] Troy: okay, but what a glorious brand and what a brand to me that actually delivers on a value proposition for, for a very high subscription price.
+
+So think the FT is one. I would 
+
+well, you could put them in these groups, right? You could say, look, the New Yorker has crossed.
+
+It seems like it's done very well. I would argue you could look at something like Forbes and all of the things that they've tried, contributor network, advance list, expansion, affiliate, all of that. And you could say they still have a process for profitable business. They've, they've crossed. into kind of a new economic reality, but I don't, I don't think it's easy for anybody.
+
+And I think that by, by focusing on the handful of people that we can all agree on are doing just fine. we do a kind of disservice to how hard this transition
+
+[00:33:10] Brian: oh, I don't to do a disservice. It's very difficult. I will, I admire the, the economist. I was thinking this the other day, because they're still, the advantage of the economists is like, they're literally like, all of what they stand for now is unpopular, right? they literally have no constituency left.
+
+They're like, globalization, small l liberalism, open, open borders, open trade, everything. Nobody agrees with them in the political environment globally, right? But they're sticking with it. They've been doing this since the Corn Laws and they've got a point of view. They're a little bit of a stick in the mud because they don't evolve at all.
+
+But I think in some ways that makes them unique and gives them a resilience. Like they're still a marquee brand to a sort of like global elite. And I don't think that that has really dissipated, to be honest with you, because they were never trying to own, breaking news or whatever. They, present a point of view that a lot of the sort of elite class,that they pay attention to it has it's the brand still has like a ton of heft and there's, they still consistently deliver on it.
+
+Like they still do. it gets a little repetitive to be honest with you.
+
+Should we move on to the next topic? 
+
+[00:34:29] Troy: we, we should Brian, but just before we leave this, the search topic, I feel compelled to add a couple of things.
+
+[00:34:35] Brian: Okay.
+
+[00:34:36] Troy: So, I think that. Options, distribution options, and more of them are good for publishers. So to the extent that other environments emerge for the distribution, paid or, otherwise of content, that's a good thing.
+
+I think that content in the by necessity compresses the number of links to content. Thanks. And, and sort of citations that are available. And I think that what that means is there's a sort of culling of the, reference space for any query, which means that your brand has to stand out.
+
+Thank you. I think good brands matter more, and I think that differentiation in your content slash data set is really, really important. I think every publisher needs to think about how is your content differentiated so that it is not just kind of mindlessly remixed and absorbed by an LLM. And that means finding proprietary sources, doing more first party research, finding, voices, um, in shape or form, like differentiating your content and doing it around what is of service.
+
+To a consumer and what is unique. I think there's a couple other consequences. One is you need in the new world to combine paid and organic. I think that we, when something becomes 60 to 70 percent of your organic traffic, that's a gift, but it's also a real threat to,uncontrollable factor, massively changing your business and the ability to pay for traffic, which we all pay for traffic in our world. Distribution always has value and combined paid in paid in an organic, particularly in commercial categories, becomes really important, I think, for publishers and Like having a product or service that sits at the end of a content journey. So you're helping someone make a decision.
+
+You're selling a product. You have a unique service offering. I used to call it like getting to the skew, which is if you're searching for flights, the interface, can, disintermediate you. But ultimately if you have the flight, they have to surface you. I think that having something that.
+
+is, useful or has utility at the end of a content journey, is important for publishers. I think it's really hard for most of them because it means adding technology and, kind of services that sit outside of just pure content creation, and that's hard for a lot of publishers.
+
+Publishers.and yeah, that, those are, those are kind of new rules. So, maybe we're all exhausted in the media business. Maybe we've had to dance for, traffic and money for too long, but there's a, those that are, deeply adaptable will, will, will do, will do really well in this next thing, because there is no world, in my opinion, where, suddenly search just gobbles up.
+
+So much of the kind of spectrum that there's no value for other people in an ecosystem to create there's tons of value and in between a query and getting either a content outcome or a commercial outcome. There's tons of room for people. So I would encourage folks to look at this as, as a, as a huge opportunity.
+
+[00:38:01] Brian: Yeah. And, and it's also, it's, it's which path to, to take, right? Because, we talked a little bit last week about the difficulties of content and commerce with, Joe or Casey and,you know, obviously some of these businesses, it's really difficult to, I mean, it's easy to say, Oh, they got to adapt, but like grafting on a totally different model can be very perilous.
+
+I wrote a little bit this week. I don't, did you see this like viral? I can't believe they're viral LinkedIn posts, from this former Nike executive, about their, their value destruction. Nike is,
+
+[00:38:33] Troy: Yeah. I was really glad you, I was glad you picked up on that. Cause I thought that was a cool thing for you to focus on.
+
+[00:38:38] Brian: yeah, I don't know. I'm trying to have different things in, in the summer. I find it like fascinating because, one of the things, I mean, this guy, I, I encourage everyone will link to it in the show notes. but one of the things that I want to focus on that,this guy is Massimo Junco.
+
+had talked about was, Nike really emphasized, being digital being a digital brand. It's always been a tech, forward brand, obviously from, from its roots. but it, it, Got into this DTC, mindset and they were going to build up nike. com. They're going to, de emphasize wholesale relationships.
+
+They're going to go direct all the rest of that. and then, you have to pay for distribution, right? And so in his telling, they basically shifted from brand marketing, to digital marketing. Digital marketing is, is really just direct marketing, it's closer to direct mail than it is to TV.
+
+I guess that's the way I would put it. and this is what we talk about when we talk about performance marketing. We're really talking about, to me, direct marketing. The end of the day, it's the same. and for Nike, that led to a series of decisions that, that this guy pins the difficult position they're in right now, at least with Wall Street, still a great business.
+
+and that focusing on e commerce meant they had to focus on the bottom of the funnel. Stuff of digital marketing and it ended up, really hurting their brand position I mean, there's a lot of other parts of this, but I would love to focus a little bit on this, indictment of digital marketing what are your thoughts?
+
+[00:40:06] Troy: it's an amazing story and to me, Nike's, At its best as a storyteller, not a seller of things. So in some ways like shame on them if they forgot that, I think the idea for any maker of products that they can build, membership, loyalty, and a direct connection to the consumer, in a, in a world where they're wholesalers and disintermediated from,creating a kind of experience that they control.
+
+you know, I think that it matters that that you start to extend the capabilities of digital in places where you think you can find intimacy with the consumer. And by the way, like the Nike run app is incredible. And your ability to kind of create custom design sneakers and all that is like they've done.
+
+really, really important, special, interesting work and in going direct via digital channels. I guess it came at the expense of, I mean, the story is about not just forgetting that broad, aspirational, groundbreaking, hyper creative storytelling is really important, but the story is also losing focus in creating a horizontal organizational structure that lost focus on the difference in sports subcultures.
+
+[00:41:21] Brian: Right. 
+
+Yeah, which was at the root of the strength of the brand But I mean like it's beyond this sort of storytelling like i'm reminded of they used to have this wristband that would track your runs, and they were gonna build all the hardware. They had this thing called Nike fuel, and then it hooked into a social network, and they abandoned the sort of hardware because they came to the conclusion, rightly, that they're not.
+
+A technology company. They're not a technology products company. They can stitch things together. They can do the sneaker customization, but they're not going to like outfit bit fit bit. they're just not going to do it. and I just wonder whether this is sort of a similar, story. I think Winston Bench, who I've known for years and worked on the Nike business had commented on that post that this was a massive over rotation, you know, that, they sort of lost sight with, with what got them.
+
+to be in such a powerful position in order to chase, this nirvana of, of cutting out like wholesale partners.
+
+[00:42:18] Troy: yeah. I mean, I think that the wholesale part is really important. Anybody that you talk to kind of posts the, the big kind of direct to consumer COVID wave would tell you that not unlike publishing that having multiple, distribution, environments is really important. So, if you're selling fly by Jing, a chili oil, it's kind of novel of the novel that they can do storytelling and sell it to me direct and all that.
+
+But what they really also need is shelf space at Costco and Walmart and Kroger's and Albertsons. And so, I think that That wholesale and shelf space is like critical to, particularly in something like a apparel and shoe category where, people are going to want to try it on and they're going to want to try it on for a long time.
+
+So giving up that real estate seems like an oversight, not serving that channel. You got, everybody's kind of got to be omni channel, whether you're DTC or not, feels like a bit of an oversight. But the, the, the bigger thing that concerned me there was that you make decisions to inside of an organization to alter the structure to respond to what you see as a perceived threat or opportunity.
+
+And sometimes those can get the best of a company and, It just reminds me of like transitions in, in like print media, for example, where yeah, everybody knew that you needed to invest in all of the technology and structures and new kind of, content creation to support multi channel digital publishing, but like to give up on.
+
+the authority and kind of gravitas of, of print editorial teams to give on that too hastily was a mistake.
+
+And so change has to happen more gradually and more thoughtfully. And I'm super guilty of this because I was just like, let's optimize for the new digital reality where really what ends up differentiating a kind of traditional, you You know, or legacy media brand is often it's, the gravitas of the things that they've done forever.
+
+[00:44:22] Brian: Yeah. Pretty much.
+
+[00:44:23] Troy: And, and I think that's just important to recognition. So it's a story of maybe over rotating as you said, and, and I think a really good one for marketers to read.
+
+[00:44:32] Brian: All right. We got to do, we got to do an entire episode on reorg sometime. I'm just amazed at how many reorgs a lot of these companies have. there should be like an oral history of the Condé, the Condé reorgs. it's just really remarkable, but let's get, let's get into good product. 
+
+okay. 
+
+
+[00:44:48] Good product
+---
+
+[00:44:50] Troy: I've done variations on this theme before, but this is what I got this week. I was driving. Out to Shelter Island yesterday and looking for something good to listen to. And do you know the podcast, The Rewatchables?
+
+[00:45:02] Brian: Yeah.
+
+Ringer. Yeah. Yeah. 
+
+[00:45:04] Troy: What I noticed is they had done a two part episode on Pulp Fiction.
+
+And each episode was two hours. So four hours in total of breaking down, every single scene in the movie. And I wasn't going to listen to it and I turned it on and they were cutting between sort of, analysis of a scene and then playing the scene. And I was reminded of how, special and kind of historical a movie that was, and I remember when it came out, I was working at the Montreal mirror and we hosted a premiere party for, I can't remember the distribution, it was Miramax at the time.
+
+[00:45:41] Brian: Oh, did Harvey come? 
+
+[00:45:42] Troy: Yeah, seeing a movie, seeing the movie and just thinking, wow, what an incredible movie. And then, waves of rewatching it or watching it with my kids. And last night I got home and I watched it again it's kind of, one of the few movies that I can watch multiple times. And it just, the whole experience from,the fun lesson of having, super nerdy film people deconstructed scene by scene and all the context and, historical meaning or like just the sort of film history around,because Quentin Tarantino is,is someone who's processed the history of film and kind of brings it to life in his movies.
+
+And so, it was that whole experience of, diving into this, obsessive, group of people, four hours, deconstructing a movie and then watching it again. And that's a summertime treat that I would 
+
+[00:46:32] Brian: Yeah. It's a good, it's a good movie. They need to make more of them. 
+
+I think if you see that Bill Simmons has made this point, like the success of Presumed Innocent is a good case in point is, is I think people gravitate to them and maybe it's a summer thing, maybe it's nostalgia a little bit, but it's a bunch of new audience.
+
+basically because they're good stories and they're not like, Hollywood to me is over rotated, but it's not my business. they've over rotated with all of these,all of these sequels and all this, I still don't believe that the comic book, world is as big as Hollywood seems to think it is.
+
+but that's me. 
+
+[00:47:06] Troy: I loved it by the way. I loved it. And I, did you watch the, 
+
+[00:47:09] Brian: presumed innocent? I watched the original. The original's enough for me.
+
+[00:47:12] Troy: yeah. would encourage you to watch the series on Apple TV. It's great.
+
+[00:47:16] Brian: Alright, I'm gonna do it. 
+
+
+[00:47:17] Outro
+---
+
+[00:47:17] Brian: Thank you all for listening. And if you like this podcast, I hope you do, please leave us a rating and review on Apple or Spotify or wherever you get your podcasts that takes ratings and reviews. Always like to get those. And if you have feedback, do send me a note. My email is bmorrissey@ therebooting.com.
+
+Be back next week.
+
+this was fun. I think this
+
+was a good 
+
+[00:47:38] Troy: you, Brian. Nice to talk. Yeah.
+
+Take care. Bye 
+
+[00:47:40] Brian: cool. Thanks, 
+

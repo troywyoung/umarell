@@ -1,0 +1,1101 @@
+PVA S2E73
+===
+
+
+[00:00:00] Cold Open
+---
+
+[00:00:00] Brian: by the way, you still haven't subscribed? I've noticed. I checked Stripe, this morning and I didn't see your $200 in there.
+
+[00:00:07] Troy: I'm not subscribing, dude. You're giving me a free subscription. We talked about it on the phone, now you're going back on it.
+
+[00:00:12] Brian: No, no. 'cause I came up with a better idea, and I think you're gonna like this, Alex. It's gonna be a crowdfunding. So I've set up a, discount code for all listeners that when they subscribe, if they use the code Troy, they get a dollar off, it's gonna be a, $199, which seems cheaper than $200.
+
+And then when I get 200 of those, I'm gonna give you a free subscription. 
+
+[00:00:34] Troy: that's very creative. 
+
+[00:00:35] Brian: so use Troy at checkout at the Rebooting.com and you'll get a dollar off. hopefully we get Troy there.
+
+[00:00:42] Alex: Troy it's your favorite It's commerce and publishing together having a baby 
+
+[00:00:46] Brian: we're gonna be talking to Neil about that too because, I think a, a big story of Dotdash Meredith is being this layer between intent and commerce. And I'm interested in whether that layer goes away.
+
+[00:01:00] Troy: Yeah, me too.
+
+
+[00:01:01] Intro
+---
+
+[00:01:23] Brian: People vs. Algorithms is a show about patterns in technology, culture, and media. I'm Brian Morrissey, and each week I'm joined by Troy Young and Alex Schleifer to decipher these patterns. I changed up the order of them because let's be real. Media is always downstream, particularly of technology. The entire media industry is to some extent, grappling with that position as technology shifts.
+
+So too does distribution and then monetization. And this is the story of the media business. The shift from analog to digital was mostly harrowing. A new shift is at hand, which we talk about most weeks. For those running the businesses caught in the crosshairs, the question comes down to how are you gonna win this week?
+
+The question frames the discussion we have with Dotdash Meredith, CEO, Neil Vogel Dotdash Meredith is a digital in print giant home to 40 brands like magazine titles Food and Wine, People, Better Homes and Gardens, along with internet brands. Dotdash incubated as part of the legacy about .com business.
+
+Dotdash Meredith was formed in 2021 when Dotdash parent Company IAC bought Meredith. The two years since have been marked by an advertising recession and fluctuations and traffic patterns. It has not been without its challenges as Neil readily admits, particularly when you combined those external factors with what is a reliably messy business of integrating companies with different cultures.
+
+Neil's coming off a good fourth quarter as Dotdash saw a return to growth in its core brands. He takes aim at the negativity that hangs over the media business. I mean, it is. Pretty bad for the news business, but the media business is bigger than just the news industry, and he also shares how he's thinking about the looming impact of generative AI search on Dotdash's business, which is heavily dependent on search traffic.
+
+In short, Neil's bet is that brands and human expertise will still matter, and arguably even more so in a world filled with crappy and synthetic content. We also discussed why premium advertising is now a layer on top of performance, a critical change in the typical thinking of publishing brands like magazines.
+
+The media business needs to serve an economic function, and in a world of ROI-obsessed CMOs publishers need to speak to those needs. It's why DotDash has rolled out its own first-party data tool for targeting ads and why its performance marketing business, which includes commerce slash affiliate, grew 15% last quarter.
+
+Other topics we touch on include the role of print today, the challenges of managing decline in that business while having an overall growth mindset as a company I. Why publishers shouldn't try to build proprietary technology, but instead focus on applications of tech. What questions media company leaders should be asking of their own businesses, and that time Prince came to the Webby Awards.
+
+We'd love to hear your thoughts on this mixing of guests in the show. I think it's been a nice addition, but we'd love to hear your feedback. You can email me at bmorrissey@therebooting.com. That's M-O-R-R-I-S-S-E-Y. And please leave us a rating or review on Apple or other podcast platforms that have such systems.
+
+We'd appreciate it. Now onto the discussion.
+
+
+
+[00:04:47] Brian: Okay, so let's get started. We, we have Neil Vogel coming in soon. He's the CEO of Dotdash Meredith. We'll get into his particulars, but just before we get into the news, Troy, what do you wanna get out of the conversation with Neil? 'cause you, you were, you were very agitated on the, text thread. 
+
+You're worriedd that I'm gonna, I'm gonna do Gotcha.
+
+Questions.
+
+[00:05:06] Troy: I just think that if you do your homework and you read how Neil's gonna respond to most of the basic gotcha questions, it's already out there. 
+
+So I thought, I thought that the spirit of the discussion should be that Neil joins us to have a thoughtful conversation about what's really facing publishers and how the industry's gonna react and what we can all do together to build something that's sustainable.
+
+I.E. the rebooting purpose.
+
+[00:05:30] Brian: That's good. thank you. , 
+
+
+[00:05:31] --cold open cut--
+---
+
+[00:05:31] Brian: but let's get into the news. big, big week of news on the AI front.
+
+I've come to the conclusion that we
+
+[00:05:38] Troy: was another, was another amazing week here 
+
+[00:05:41] Brian: It was another, it was another
+
+[00:05:43] Troy: Right. John.
+
+[00:05:44] Brian: in my cinematic universe. It was another amazing week, that Troy did not convert. it was a interesting week in AI. and this stuff keeps accelerating. So Sora came out. OpenAI has created possibly a magical video machine.
+
+These are demos. So we have really have no idea about how useful this is or how it works, but Alex, what are your first impressions?
+
+[00:06:10] Alex: Well, it's very impressive. anyone's seen the videos. it can pretty much hard to distinguish photorealistic videos from single prompt. you know, of the models able generate. Seconds of video at a time, this can generate up to a minute. And they say if you, if you can regenerate a minute, you can make it to our movie.
+
+Right. Because, because you kind of editing things together. just to shortcut to the punchline here, it still suffers from things that make AI generation ai, right? It's hard. Every generation is, a new render, so it's hard to ask the, the AI to edit or tweak things.
+
+Right. it's hard to maintain, facial features of, of actors from one generated shot to the other, etc. So as it, it is very impressive. 
+
+[00:06:57] Brian: what are the near-term implications for this when it does come out? And then look down? Because these things are, are accelerating, right? And so right now it's not that impressive. People say, oh, can't even put a lane on a road and, and, and whatnot.
+
+which is, is fair. 
+
+[00:07:12] Alex: what we need to look at is just, there's maybe two, tracks to pay attention to. One is this, we'll continue to see the internet be stuffed with generated content that to most people is nearly indiscernible from reality because you could do a lot of damage or create a lot of entertainment with a one-minute video if you keep re-rendering it.
+
+And, until you hit something that, hits a nerve with, with an audience. So I think we'll just keep seeing more and more generated video, make it into, to our streams and our feeds. Right that's one thing. and that's that's kind of the immediate thing that will happen The other part to look at is like, right now is you put in a, a string of text and it Generates this complete video. But I think these tools will become so powerful once they are, Additive and more guided. Right. But once this stuff gets integrated into tools that provide a little bit more human input, they'll become much more powerful.
+
+So the ability to just change the sky or replace a person with another person, they've just shown things where in real time they were turning a basketball game that whenever somebody does a cool shot, it turns it into, an anime or, a cartoon to like live edit video. I think we're gonna see a lot of like messing with reality in real time, in ways that are just like the, not just zero to one generation, which is invent this brand new scene, but it's changed this thing, make this look more like a video game, stabilize the shot.
+
+and hell, there's so many jobs that depend on things being hard in Hollywood when you have a button that turns any actor into a zombie. You don't need three makeup artists anymore. that stuff's comming down the, so that's why I think most of the change is gonna be also, I wouldn't wanna be in the stock photo business, that's gonna be a disaster, but yeah,
+
+[00:08:57] Brian: So this is basically gonna take a bunch of jobs and lead to a tsunami of crap of video everywhere.
+
+Thank God 
+
+[00:09:03] Alex: Great.
+
+[00:09:04] Brian: this is
+
+[00:09:04] Troy: Or, or something wonderful's gonna happen?
+
+
+[00:09:07] Neil Start
+---
+
+[00:09:07] Brian: Neil's here. Neil, join us for the news section.
+
+[00:09:10] Troy: Wow. Hey, Neil. How you doing, man? Nice to see
+
+you. 
+
+[00:09:13] Brian: we were just talking about Sora. Did you check it out? Neil, 
+
+[00:09:16] Neil: a little bit. Yeah.
+
+[00:09:17] Brian: the open AI stuff 
+
+[00:09:18] Neil: Yeah, it's pretty cool. It's not perfect, but it's pretty cool. Slash terrifying.
+
+[00:09:23] Alex: I ran a poll on, my thread account, Troy, Love's, Threads. and, the vast majority were a mixture of terrified and impressed. I think it's kind of the general state. It's just we're we're excited about this.
+
+[00:09:36] Troy: What's threads again? 
+
+
+[00:09:40] --Alex cut--
+---
+
+[00:09:40] Neil: You guys are like Smartless, but way more existentially challenged.
+
+[00:09:45] Troy: No, I mean, it's just like Brian always goes to
+
+[00:09:49] Brian: No, I told I Okay, let's get into it. 'cause, because Neil gives me shit for not being like a card carrying optimist.
+
+[00:09:57] Neil: I guess everyone's talking their book all the time, right?
+
+[00:10:02] Troy: well.
+
+[00:10:05] Brian: By the way, Neil is a member of the Rebooting. So Troy get on board. yeah, everyone is talking their own book. But, when you see this stuff, 'cause Neil, you guys reported, a very good quarter. I called it Frisky. Dr. John,
+
+[00:10:18] Neil: by.
+
+[00:10:19] Brian: uh, what? No, it was a good quarter. It was a good quarter. there is however, a bunch of doom and gloom out there.
+
+I'm not, I'm not the only one.
+
+[00:10:28] Neil: No, there's everybody. Listen, we've been at this, I've been here almost 11 years now, right? And 
+
+[00:10:33] Troy: You look the same. You look 
+
+the 
+
+[00:10:35] Neil: but thank you. My hair is very gray. There's this great song by this like indie band called The Beths, that's called Expert in a Dying Field. it's a great 
+
+[00:11:09] Troy: I play it. I love 
+
+[00:11:10] Neil: It's great.
+
+people who've followed us since the beginning, since we were like shitty about.com and turned it into something real and turned it into brands, and then went all the way through this and bought
+
+[00:11:19] Troy: you did a great job of that.
+
+[00:11:20] Neil: Thank you.
+
+it has been doom and gloom the entire time. And I, I don't, and I think Alex said something like this on the, the last pod. Look, media at its core is not complicated. Make a product people really love and want, above all else, aggregate audiences that are valuable to people who want to reach them and Monetize them Respectfully.
+
+Media has been the same for the last whatever. I think Alex said this, the last a hundred years, there's companies, better Homes and Gardens is over, owes over a hundred years
+
+[00:11:55] Troy: Fuck Neil. I am getting massive Bill Maher
+
+vibes from you 
+
+[00:11:58] Neil: I thank you. But, but what? I would say is there's massive confusion in the market, and part of it is we do not do news.
+
+We do not do sports. We do not do politics. People confuse news with media and people confuse bad business models with an entire industry. Brian, we even had this conversation like 800 times over the last 10 years. what we've done here, we focus on like, now everyone's saying like, oh, well it's the scale.
+
+It's not, if you can get really high quality scale and you have real premium brands, and in our case we, we harness a very specific type of traffic and users and intent-driven traffic that performs better than regular traffic and it's very valuable. You can have a chance and we got to punch our chance and there's been a thousand things that have happened since we've been here, of which probably 900 have been bad, but we're still growing and we're still doing it and we're just printed a good quarter, of course, like past performance and no guarantee of future results.
+
+But we, we, we like where we are right now. And you guys also said in your last pod, in the thrash of media is so much opportunity and we just have to find it. It's our job to find it. And, anyone who complains about outside forces or about algorithms or whatever you've already lost, like maybe we're wrong and maybe in the long term, this isn't a business, but I would bet on brands, real quality scale, a real product people care about and delivering a really valuable audience, people who need it, you got a chance.
+
+And that's all we've done is put ourselves in the game to have a chance.
+
+[00:13:25] Troy: I love it. Hey, Neil, what made the quarter work?
+
+[00:13:28] Neil: a couple things. One, and, this is my, like the one thing that I, 
+
+[00:13:32] Troy: But you don't break out revenue source, so just 
+
+[00:13:34] Neil: we we don't, I can tell you what, what worked, it kind of worked across the board. Premium worked, programmatic, really, really worked, including PMPs commerce. Definitely, definitely worked. And the reason it all worked is because so, we bought Meredith about two years ago.
+
+We're eight quarters in, we bought it right before everybody misjudged the end of the pandemic. interest rates went up 10% and we can talk about what that means for advertising. And then the ad market fell in probably the worst recession, but none of it's an excuse. And we had integration is a pain in the ass.
+
+So we got to the other side of that. And we have these amazing properties, people, food and wine, better homes and gardens, the old.properties like Verywell and Investopedia. In an era where Facebook is disappearing for publishers and Google is increasingly challenged, we still manage to grow audience and we grew it in this old school O&O, where it's most valuable.
+
+We grew it across social, we grew it in Apple News, we grew it in all these places. And like I wish there was like a magic, there was a magic bullet. We do it over and over again, but it's not, it's just work. And, probably more work. But the one thing I would say that really finally kicked in and Troy, we had lunch a bit ago and we talked about this, is I think we've finally managed to unlock the best of Dotdash, which is a company that is by no means a technology company, but a company that understands how technology works in publishing and Meredith, which had these incredible brands.
+
+And what we were able to do is say, all right, well, using our technology savvy. We're able to understand what sort of form content needs to take wherever it's going to live on Apple News, on an O&O, in a magazine, on TikTok, on Instagram, on Pinterest, and be very, very comfortable that each one of those things is gonna be totally different.
+
+And then we got, we learned so much about brands, which we sucked at before we bought Meredith. It didn't suck, but we weren't as good as we needed to be. That says, a brand is not one piece of content reconstituted for nine different places. A brand is nine different pieces of content for nine different places that has the thread of the brand, right?
+
+like Hunter Lewis who runs Food and Wine is the, was the editor-in-Chief of the old print food and wine. He's now editor-in-Chief of all of Food and Wine. And in order to do that, which is done, you have to embrace and understand that, okay, the magazine is gonna be features and beautiful stories.
+
+The internet, the old school open web, internet is going to be recipes. Instagram is going to be techniques and inspiration. TikTok is gonna be fun. Apple News is gonna be another outlet for print online. And let the teams that do that have total creative freedom and product freedom to do what they need to do for those things.
+
+And you can build real audiences. And that's what happened. It took two years to click in, but it really clicked in and we're kind of growing everywhere now ' cause of that discipline, which is, it sounds super simple, but like you guys have all worked in these companies, it is impossible to get everybody like singing the same song, but we're getting closer to it.
+
+[00:16:34] Troy: That's great. Hey, I had a question about, I read this story last night that came up on my Twitter, and it was a guy who has a site called House Fresh, and he was going ballistic on what he said. Were sort of. Not fake, but just not well researched reviews from big companies like Hearst and Meredith and others that were dominating the SERP.
+
+And he was like 'wha wha', why are we not there? And Google's misjudging the work that people do to create a review with integrity in the SERP and the whole fucking thing is game by private equity and big companies and all this. It's just like a little bit of a, of a rant. And it may be that it could have been you.
+
+Yeah. 
+
+And yeah. And then, and I was just, I really wanted to ask you, does affiliate inevitably just become a race to the bottom
+
+[00:17:29] Neil: this is what you like. No one's saying
+
+it's at the bottom. No, it's at the bottom. It's at the bottom. Like it is at the bottom right now. I mean, you don't, the bottom can always get bottomer in this world as, as, as like,
+
+[00:17:40] Brian: don't pet against the
+
+[00:17:41] Neil: yeah, exactly. Don't get internet. What, what I would say is, like everything else in the modern open web, there is absolutely no successful business in trying to game an algorithm for your benefit over the long term or medium term.
+
+It's not gonna work like the side of the media highway is littered with the dead bodies of people that had like one trick and it didn't work. And you're seeing a lot of it right now. if you 
+
+[00:18:05] Troy: The worst thing you can do is buy one of those guys thinking you're buying a business.
+
+[00:18:09] Neil: none of them are businesses. That's why they're gone. That's why no one's buying them. again, like a reviews are a very specific thing and, we were probably the first people to do affiliate stuff at scale, and what we learned was we learned that people who trust our brands, whether it's Real Simple or Better Homes and Gardens or Travel and Leisure or Verywell or Vestipedia, they look to you for, we're basically advice, answers, inspiration.
+
+When you get the recipe about making the blueberry pie, you might need a blender. So we're gonna help you. Figure out what Blender it is. People want our opinion, they trust it. So what we do is we have across Birmingham, Alabama New York and Des Moines, Iowa, we have like 60 test kitchens. We have 120,000 square feet of product testing space.
+
+We're basically the new consumer reports. We have a distributed network of a probably a hundred plus people, product experts that test things. And then we write and we create and we try and serve users. And not a single one of them has any idea of any economic arrangement we have with anyone that pays us.
+
+and today, like five years later, we're probably the biggest commerce referrer to any retailer you can think of. And it has nothing to do with gaming and algorithm. You can't, you can't do it. And I say this a lot like people, Gaming and algorithm is, is definitionally backward looking?
+
+You can only look at what Google or Pinterest or Facebook used to want to do. You don't wanna know what they wanna do next. The only thing I know from Google is aside from keep more share, which is what they want to do now, they want to give you the best experience when you go there. So if you're part of that best experience, you're fine.
+
+If you're not, you're not fine. Facebook, no one knew what they wanted. Pinterest I'd put in the same category as Google, apple News, I'd put in the same category as Google. They want you to have a good experience. So all we can do is do our best, we say this to people all the time. Make shit that you want to use.
+
+And if you don't make stuff you want to use, what are we making it for? Like the internet is, you guys say it a million, what do you call it, Brian? It's the tsunami of like tsunami of
+
+[00:20:01] Brian: Peter. That's Peter Kafka, tsunami of 
+
+[00:20:03] Neil: tsunami of crap. Like there, there's so much crap out there. There's nothing. We've walked from brands and walked from categories where we didn't believe we could be better than mediocre because it doesn't do us any good.
+
+There's no sense in investing.
+
+Are 
+
+[00:20:15] Troy: those your non-core assets? Is that what you
+
+refer to as? No. 
+
+[00:20:18] Neil: in our earnings we talk about core and non-core, non-core are smaller brands that we are not investing in at all. 
+
+[00:20:24] Brian: Do you tell the people working on them that they're like
+
+[00:20:26] Neil: well, yeah, but there, there's not that many people working on them anymore. But you, you can't like tell someone, Hey, you're non-core.
+
+[00:20:32] Brian: You're not a 
+
+[00:20:33] Neil: but it's an easier way to explain to just the people. What's,
+
+[00:20:37] Troy: You should maybe use Norm core for them. 
+
+[00:20:40] Neil: dude, I'm so old. I am basically non-core right now. It's terrible.
+
+[00:20:43] Brian: One of the things I noticed in your, in your earnings, and then I'll let you get, because I want to bring you in, Alex, because you're, you've good insights
+
+[00:20:50] Troy: he's the spokesperson for the resistance.
+
+[00:20:53] Brian: Yeah. He is actually
+
+in like Lake Tahoe.
+
+[00:20:56] Neil: you know what, Alex talking to, Alex is the only person I here I haven't met before. I want, I want Alex to talk.
+
+[00:21:01] Brian: No, but one of the things I've noticed in, in going through your earnings and then the, right after you bought, Meredith is the correlation between total sessions, obviously a KPI and your revenue and EBITDA like they sort of go, that's the driver. Right.
+
+[00:21:16] Troy: digital media pro forma has that math in it.
+
+[00:21:19] Neil: that is like, I would say A, you're smarter than a lot of people that cover our stock because, but 
+
+[00:21:26] Troy: Duh. It's Brian Morrissey, 
+
+dude. 
+
+[00:21:28] Neil: I think it's one still the most lucrative thing you can do on the internet is get somebody to go, come to one of your OO sites, right?
+
+[00:21:36] Brian: Okay. Search is changing. Search is a major way that you get people to your sites. So tell me how the 10 billion total sessions, what happens when that goes to five?
+
+[00:21:48] Neil: you have to either. Make those sessions last longer and be more valuable. You have to pick up sessions from other places and you have to do things so it doesn't go to five. but I would say just when we started this,
+
+no, but like, no, but I, this is, this is the real answer. The answer is, I don't know.
+
+'cause I don't know where the world's going, but I will tell you, when we started this seven or eight years ago, and we were way more Google intensive than we are now, 90% of Google searches went out to publishers, right? The internet's not growing. It's probably 45% go out to publishers now, even 40% now.
+
+And we're materially bigger. Google didn't grow in from Q3 to from whatever Q4 year over year, probably open web, probably even shrank depending on who you talk to. And we still grew. And I think it just goes back to like, if you make things people want, you'll find out where to meet them. Like TikTok didn't exist materially for us three years ago.
+
+Now it's a major, major deal. Apple News over the last four or five years has become a major. Partner thing for us that's like really, really, really important. So we at some point, I mean at some point in our history at Dotdash we were like, I don't know, really long time ago, 80% Google traffic across everything.
+
+'cause but now we're probably, overall, I think we tell Wall Street we're like 50 or fifty-five depends on the day of what we are. So, we probably, and everyone, because of people like you tell them, Brian thinks like, oh, these guys are Google jockeys. They're go, we're not, we probably have less traffic from 
+
+Google. We, we are, we probably in aggregate have fewer sessions from Google as a percentage of our total than most other publishers you'd look at. Now the other thing is I'm not gonna lie to you and say they're not very valuable sessions because of course they're, and when you look at health traffic and when you look at finance traffic, which are big things that we do, that is very, very googly.
+
+But that's also been like very, very. Stable through 18 different apocalypses, although this current apocalypse is definitely different.
+
+[00:23:43] Brian: Alex, 
+
+how do you evaluate the current apocalypse?
+
+[00:23:47] Alex: my expectation here is that user behaviors will change right outside of, and I think that's the biggest change we're going to see. So if you're looking at early adopters now, I don't go, to a recipe site for a recipe I don't even use, one of these apps that cleans up. you know the ads away from it and and cuts out all the preamble and I use AI purely for these behaviors, but I think that there's a lot of non-topical content like that, which is gonna be around, travel and, food, which you have a lot of coverage of, which becomes at risk. Right? and we've just heard that Reddit is going to potentially get $60 million a year to give its data to some unannounced AI company, right?
+
+And my first reaction to that was like $60 million a year to get to one of like, humanity's greatest contextual repositories of data, right? Because that has,
+
+[00:24:43] Brian: Oh my 
+
+God. Reddit, 
+
+[00:24:44] Troy: No one ever described Reddit that way.
+
+[00:24:48] Brian: Jesus, Alex.
+
+[00:24:50] Troy: Wow. 
+
+[00:24:51] Alex: I, think you guys are, out of your mind. If you ever wanna do a go good Google search, you know, in the past you would just add Reddit to the 
+
+[00:24:58] Brian: tsunami 
+
+[00:24:59] Alex: But, you know, when when it comes to specifically the, there's stuff like reviews, cooking, travel advice, all that stuff.
+
+so my, my question is, you know, are you thinking about these like behavioral changes that could happen faster than the actual technology
+
+changes? And, does that kind of lead you to thinking we should put some of that stuff behind a paywall or, or hide some of our stuff from, from, 
+
+[00:25:19] Neil: there's 
+
+like nine, the first, I'm gonna forget the paywall thing. I'll second. The, only defense you have against any change in media of any sort, I, I really believe is brand and brands, and Troy has said it, it's people understand, trust and love your point of view on something. If you are looking for a utilitarian blueberry pie recipe, by all means you, you can get it in a hundred million places.
+
+There are a gazillion blueberry pie recipes on the internet, but for some reason, Serious Eats Food and Wine, Simply Recipes any of the eight or nine different food sites we have all do extremely well on blueberry pie recipes. And part of that is human behavior, right? If the AI fully understands their taste and what they want, then you can definitely get a recipe from ai.
+
+But that blueberry pie recipe on Serious Eats is super different than it is on food and wine. Different audience, different customer, different ingredients, different everything. and put a pin in that for a second. Human behavior right now is the search page for that sort of thing. It's a search page or TikTok, or can be Pinterest, but, call it the search page.
+
+in general, there's some searchy interface for it. Even ai as of right now, AI is nowhere, like Bing has less market share than before. They put chat GPT in there. So as a consumer adoption, the only thing I'm convinced of, I'm convinced we all know nothing of where this is headed, but I'm very convinced that for now the search bar is gonna be the front door of this, the search bar.
+
+And it could be the search bar on Amazon, it could be the search bar on Google, but that is how people have been conditioned to do these things right, to look for these things. I think the prompt writing is a big change. The conversation is a big change and we'll, we'll see how quickly that migrates and we'll see if these search providers can provide. answers as well as the prompt providers without having humans to change behavior. 'cause humans are really lazy whether they want to be or not. So that's the debate that we're having a lot of. think again, the, the only defense we have against this is people love our brands. And the next thing is, well what happens if all of our brands are ingested by these LLMs and all the answers spit out and our brands are part of them and we don't get paid for it.
+
+I dunno that that's a problem. So there's either a legal remedy to that, like, none of this is fair use. and, and that's,
+
+[00:27:38] Alex: And we don't know where that's going.
+
+[00:27:39] Neil: we don't know where that's going, but that's, but even the legal stuff is just a proxy to get to an economic decision. That's fair. And if, if they can get to an economic decision, that'll be fair.
+
+And if not, it'll be a legal decision. I don't think, Any of the big LLMs, nobody really wants to lose on fair use. Right. And I don't think any, I, it's not in their interest for us to be out of business. I don't think that helps them either. We have to see where this is gonna go. I don't think there's so many people making grand pronouncements we couldn't be closer to it.
+
+And We just don't know. And here's the thing, we, we've obviously spent a lot of time talking to the various people who build these things and tools. And I would argue the world is moving so quickly they don't know. and it's not, they don't know 'cause they're not smart. They don't know 'cause they don't have a plan.
+
+They don't know because they just don't know. It's just moving. Everyone has a plan. And then there's been, just look at like any of these guys. There have been so many stops and starts and launch dates and products and this and that and the other thing. And the world is just moving so quickly that All you can do is build a resilient organization. I think have brands have like a real purpose of everything you do and like deal with the change that's coming. And some things happen super slow, some things happen super fast. It's impossible to know. Like your question, you said what's gonna come? is human behavior gonna move before the technology moves?
+
+I actually think technology has to move before human behavior moves or human behavior is never gonna change. But, nobody knows. And.
+
+[00:29:07] Troy: hey, hey, Neil, you just made me think of something. So, my experience was it was a constant tango looking for a dance to find in a company like yours. The next thing that was gonna help out the P&L and L one quarter. we were surprised or I was delighted by the amount of money that we were pulling outta MSN.
+
+I worked on the Apple News deal. It was exciting to see that replace something called texture and start to represent real distribution. And then, even before that, something like Instagram came along and the sales teams were selling that as part of an ad bundle. Like it was just evolving all the time.
+
+And I looked at the Reddit thing and I thought, well, okay, they do about 2 million sessions a month. They're about a third of Twitter. 45% of that is in the us And if you look at a $60 million deal on that, I think it translates to like a dollar or 2 dollars CPM, that they're getting from Open AI 
+
+[00:30:03] Brian: Yeah, that's, that's 2 billion, 2 billion a month, 
+
+[00:30:05] Troy: So did I say 2 million? 2 billion. and then, but if you move it all the way through, they're getting real money at $60 million on their
+
+[00:30:15] Neil: I don't know any details of this deal or the, what I
+
+other 
+
+[00:30:17] Troy: well, all I'm saying is if someone writes 'em a check, one company writes it a check for 60 million. Is it annual? Are there other companies that are also gonna back up the truck?
+
+Like it's a, it could be a material new revenue stream for 
+
+them That's 
+
+[00:30:31] Neil: can, you can paint a picture again, it's not the popular picture. It's not necessarily one, I believe some of this on all of this, you could believe that we're ideally positioned for this and the four or five, six major LLM's. Understand there has to be an economic relationship with the Dotdash Merediths and the Reddits and the Redventures and the whoevers of the world.
+
+And, we cut very fair economic deals. It give us a piece of the upside. And at the end of the day, our brands still exist. They're really great. Maybe they're
+
+[00:30:59] Troy: Well, that's what I was hearing. 
+
+Is that making the bulk, the bulk 
+
+[00:31:02] Neil: that's the part of like, I, I don't know. Nobody knows. Like nobody
+
+[00:31:06] Brian: But what is the difference between the bid and the ask? I think you, you said that before Troy, and I have a feeling it's gonna be vast
+
+in these 
+
+negotiations, 
+
+[00:31:15] Neil: the, the, problem is there's just not two dimensions like the bid in the ask. If it's a bid for unlimited use of everything to do whatever you want, that's one bid. And if it's a bid to train an LLM that's gonna do these seven things, but not these three things, that's another bid.
+
+again, we don't know clearly. Whatever deal Reddit did, and I'm sure we'll all find out more about it. the bid and the ask met at some point and at some place, and look, I'm, they're gonna, they're going public. They're gonna have to
+
+[00:31:40] Brian: but that's UGC and like they can cut deals that people are, who are creating professional content. Simply can't. That's always been the leverage of UGC. I mean, if you don't pay for the content, it's
+
+[00:31:52] Neil: I, I would argue that, their content is good at scale to train an LLM, but the veracity of the information is not nearly as good as a premium publisher. Right.
+
+[00:32:02] Troy: I would, I would agree with that. I think one of the things that's happening right now is Google is funneling a lot of traffic into Reddit
+
+and what you're finding particularly recently, I mean, what
+
+Yeah. Recently
+
+[00:32:12] Neil: is crazy that that with ai, that's them trying to say, we have humans on the search page, so you 
+
+[00:32:19] Troy: it's also them saying that if all these publishers are gonna try to game SEO, then we'll just take it right to the source, the source conversation on Reddit. We can feel good about that. The problem is, for most civilians, Reddit is a very unfriendly, difficult to navigate and massive signal to noise problem.
+
+and I think a well articulated.
+
+[00:32:39] Alex: Right, but I mean, you're talking like publishers now. You're saying that's because you've got people who can edit and compile stuff into stuff that, most people will consume. The thing is, if you put some sort of smart LLM on top of Reddit, you get that. I think that is a big change to the, to the landscape now.
+
+So I think brands are incredibly important, but as you look at your portfolio of content, there's some stuff that, that is more at risk than others. And, I would look at this Reddit thing, pretty carefully because if you know how to navigate Reddit, you also know that's where you get the best review. Because the best review is not the guy from the Wirecutter it's actually Bob that's in Kentucky that's like you know 
+
+[00:33:20] Neil: I actually deeply and fundamentally disagree with that. 
+
+[00:33:23] Troy: Perfect. 
+
+[00:33:24] Alex: Great. 
+
+[00:33:25] Neil: There is a guy on Reddit who might be an expert in whatever, air fryers, right? Who might be doing good air fryers, food and wine will test 40 air fryers in a whole bunch of different test kitchens, different scenarios with experts, with civilians.
+
+Do full write ups, do full this and that, that are like outstanding reviews that are not editorially compromised financially in any way. We've invested hundreds of thousands of dollars in doing them. I understand that a person's taste might say, look, I want to hear what this dude on Reddit thinks about this too.
+
+But like at worst it's an, and. For us at best, we're better. Like, I, totally get why Reddit is valuable. 'cause reviews on retailers are completely unreliable. Right. And there's a lot of shit in the affiliate business that is not doing what we are doing in it. So I, see where Reddit sits, but like we're very concerned about lots of things, but the list of things we are concerned with to compete on our sort of like guides, ratings, review business, Reddit is obviously something we look at, but it's not like number one or number two.
+
+Just those are the facts of like how people are behaving.
+
+[00:34:32] Brian: do you look at things like AI agents and look at that as complementary to what you're doing or as a direct replacement for a lot
+
+of what your I don't know. Like, it could, like you guys, like we're spending so much time talking about ai. The average consumer is not there yet. Like these are all
+
+I don't have to go to meetings all day
+
+[00:34:49] Neil: I know this is all like, like speculative stuff. Like here's what, 
+
+[00:34:54] Brian: It is not that speculative to be honest with you.
+
+[00:34:56] Neil: It is 
+
+[00:34:57] Alex: i, think maybe we should have this conversation in a year. 
+
+[00:35:00] Neil: In a year this is a great conversation right now it's like, eh, I don't
+
+[00:35:03] Brian: But don't you have to look ahead a year running your this massive business.
+
+[00:35:07] Neil: no. Look, we're not using AI assistance. I can tell you what is interesting to AI people about us, which is where I think we fit in. I think people look up, and we did this by design, right? We have, again, we don't do news, we don't do sports, we don't do politics.
+
+We've built a business up from About.com, a bunch of small acquisitions, and then Meredith and we've got 40 brands, twenty-five matter or our core, call it like that. And we answer questions, solve problems to write inspiration, and we get, everyone on our sites, we know what they're doing.
+
+Pretty much. We don't need a cookie, we don't need anything. We know exactly what they're doing. We don't need to know their history. That is what is interesting to people from an ad side, like our decipher product. We can target like, intent-driven, contextual, everyone caught. It's actually really working and gaining traction.
+
+But what is most interesting to the LLM makers, I don't even know what these guys are called yet about us, is the fact that we are very down the information funnel and we have very, like our best pieces of content are 10 years old and have been updated like 400 times. because that, that's just what you do when you're our type of content.
+
+When you're more evergreeny, you're less news so the reason why we feel pretty good about our place in the universe is in many ways we're a source of truth, not opinion. now whether an LLM needs us at all or can totally build a great LLM without us, I have no idea. But the brand and perimeter works.
+
+The intent-driven traffic works. The, the whole thing works. And I think it's why we have a seat at the table with these guys and why I'm optimistic we're gonna come up with something interesting.
+
+[00:36:41] Troy: Hey, Neil, where do you think related to that, what happens to all those brand dollars that really were the sources of cash that kept the magazine industry? In business forever. how should, how should we be thinking about selling what used to be called brand advertising, in the future, 
+
+do you think differently 
+
+[00:37:01] Neil: no, no. I think, look, I think our roots are, this is a
+
+[00:37:05] Troy: Well, I'm, I'm less interested in your roots. I'm more interested in what happens in the
+
+[00:37:09] Neil: I think that you have to understand the industry from the bottom up, not the top down. I. Meaning you have to understand the ad stack from the open all through PMPs, all the way up through premium. And premium is last. And if you build a business that can survive and thrive at the Premium is great, but you gotta nail the PMP business, you gotta nail the open business.
+
+You have no chance. and, and that has to do with, and Alex said this, it's about building products that deliver for us. It means four ads on a page make more money than 11 ads on a page. They just do. They perform better and they perform better in these stacks. So brand advertising is gonna come and go.
+
+Last year it was really beat up. Next year when the world is roaring it, it's gonna come back. But the one thing is if you can show performance, you can layer brand on top of it. If you cannot show performance, you are dead. And that is the, the one thing that, that we were right about, but out of necessity was we built from the bottom up.
+
+Because when we were launching like the Spruce and very well, and no one knew what they were, we couldn't sell a dime of premium. So we're like, all right, we need to, I'm ex Wall Street, a couple guys here, ex Wall Street. Let's look at the programmatic markets, like we're equity trading and what makes equities more valuable?
+
+Let's do all those things on our sites. Make 'em viewable, make 'em, perform it, make it work. And then you have a foundation and you kind of know what, your downside is.
+
+[00:38:34] Troy: is. 
+
+[00:38:34] Neil: and 
+
+then you can play smartly for the upside. and that's been like a 
+
+[00:38:37] Troy: You would a, it's a great answer. Totally. I totally agree. 
+
+[00:38:41] Brian: Yeah, this is 
+
+performance Eating the world. 
+
+[00:38:43] Troy: I'm developing a, man crush on
+
+Neil. 
+
+[00:38:47] Brian: I remember starting to cover this industry on the agency side, and it was above the line and below the line and the above the line people looked at like, the direct mail people with a mixture of disdain and pity.
+
+and the reality is they were better businesses
+
+and then, and draft, draft bought FCB and, and the whole, the 
+
+[00:39:04] Neil: Now the interesting thing is like we don't get like the DR dollars that like Meta gets or Google gets. Our stuff's too expensive in general to get that, but we get performance dollars, like everything as a KPI and a measurement, everything. And we want that. Like we do way better with
+
+that. 
+
+[00:39:18] Troy: you get it in another way. Your affiliate is a 
+
+replacement for the Meta
+
+dollars. But, how do you think then about. Content budget allocation, how is that distributed in your company? if you have a brand like Food and Wine and you have $10 million to spend on content, who says we're gonna spend this much on video, this much on text, this much against search, this much against TikTok.
+
+How, how do you think about that
+
+[00:39:42] Neil: We try and push all of those decisions, locally because it's super different for very well in health than for food and wine and food And in health. Health content on the internet is still like written word video and like graphical just how people want to consume that stuff. Where, and it's a little bit of social, but not the kind of health that we do, Where in food it's way more video, way more social, way more like actual real world filming people in a kitchen, doing stuff, product testing where like health is like primary research by health, degreed health writers in like health, whatever, documents, books, food is way more experiential. way more visual, way more video.
+
+And we let them determine what they need. Otherwise you can't do that centrally. We're doing too many things. So like, food looks way different than health looks way different than home. Looks way different than like tech. But we will never have a P&L just for video or a P&L just for social.
+
+We don't do it that way. Our, our brands have their own P&Ls and Ls and everything goes in, everything
+
+goes out. 
+
+[00:40:55] Troy: hey, Neil. One, one of the things I was, I was behaving badly and I, called Alex naive in a previous moment, and, it set off a little,
+
+[00:41:04] Brian: Yeah, no, I was gonna say that was multiple times you called me naive too. I was, 
+
+[00:41:09] Alex: Our entire relationship 
+
+[00:41:09] Brian: I take naive.
+
+[00:41:11] Troy: one of the things that, that Alex might say in response to the trials and tribulations of the media industry is we need more innovation. Why can't they think about the problem at a higher level? Why can't they do things like build utilities instead of just content that help, consumers accomplish different kinds of tasks?
+
+Why don't they invest more in tech and building products and stuff like that? what if one of your brands came and said, instead of spending $2 million or $5 million on content for TikTok, we wanna build, we wanna hire a bunch of technologists and build utilities. how would you think about that?
+
+[00:41:44] Neil: I mean, we'd think about it. I'm not sure we would do it. I think
+
+I. 
+
+[00:41:48] Troy: Why, why wouldn't 
+
+[00:41:49] Neil: I, I, I think that's like too simplistic an answer. So we're doing something in People for People Magazine right now, or people, whatever, people, the media business, so like 11, 10 or 11 million O&O user sessions a day.
+
+we are building a moonshot project for People, which, if it works will be great, but what we are trying to do is build it on existing tools to the extent possible, right? In media. I do not believe you have to build primary technology unless you need to as an absolute last resort. It's all about design and creativity and using what's out there.
+
+We're not, we're not good enough to come up with, like, we couldn't invent TikTok, we couldn't invent whatever. Any anything, but we can take these existing tools out there and build something amazing. And if the teams say, well, we have a $20 million content budget, we wanna take two, we wanna take these six people and we're gonna put them on an island for six months and they're gonna check in every week with what they're doing and we're gonna try and do this amazing thing.
+
+Like by all means, do it. absolutely do it. we've tried to reframe things around here, which was, it's always been a do dash thing, it's not been a Meredith thing. And this sounds like corny and stupid, but just because something doesn't work, as long as we did our best and did a good job and made it super nice, it's not a failure.
+
+'cause you learn something like learning one not through is often more valuable than learning what to do. We have tried to build technology, it's not our jam. We've built amazing things on top of technology that we can get. That's our sweet spot. any publisher that tells you they're a technology company, run away screaming and sell all your shares.
+
+Like just not what we do. The, the product expertise, the engineering expertise, it's just super different than that. But understanding and using these technologies is critical
+
+[00:43:31] Alex: yeah, and I think that's, more of what I'm talking about. I, think there was so much time spent, wasted trying to build your own CMS and ad platforms and Troy and I went through those trials and tribulations. I, I, think that there's an opportunity now, I don't wanna bring it back to ai, but there's an opportunity now with tools, with being able to, do stuff with the content that you own that maybe you can uniquely do or you most capable of doing.
+
+you know, you have lots of great content on very well, and especially around health. And I would love to get something that, I could just say, type a few things in and it creates some sort of,
+
+you know, health regimen from you. and things like that Somebody else is gonna do that with your data if you,
+
+[00:44:12] Neil: hundred percent. Like, look, what we're not interested in doing anymore is using AI to turn the button red or blue and see what works. Couldn't care less. That's
+
+not the, 
+
+that's a,
+
+[00:44:20] Alex: don't. 
+
+[00:44:21] Neil: a, disaster, but any of this innovation has to be like ai. It's just an incredible tool to use.
+
+And like you're a thousand percent, right? We need to take, I think we're responsible. I don't know. I can't prove this number, but I think Something, 40% of the recipe traffic on the internet comes through one of our sites. Not not actual number of recipes, but like recipe traffic. And we should be able to build an assistant for anybody cooking that can answer virtually any question you need for a dinner party or for a family's dinner.
+
+From ingredients to tools, to time to shopping to everything. if we don't do that, shame on us, to your 
+
+[00:45:01] Brian: Yeah, you should have a Kenji bot. I mean, people would 
+
+use a Kenji bot. I mean, 'cause that de-commoditizes the kind of recipe content like, 'cause I don't want to, if I want a generic Detroit pizza recipe, whatever, but I want Kenji's Detroit
+
+[00:45:14] Neil: so that is exactly why brands have a chance. If you, those you don't know, Kenji is like one of the founders and sort of like inspirational guys at a place called Serious Eats and he's amazing and has a huge following 
+
+[00:45:25] Alex: Huge fan over here. 
+
+[00:45:26] Neil: Yeah. 
+
+[00:45:27] Troy: like science food 
+
+[00:45:28] Neil: He's science among, I mean, among other things, but he's, he's just really amazing and like true love of the game.
+
+And he is awesome and you guys know that guy 'cause we're all in his target market. But we have a lot of guys like that and women like that across different properties that people really respond to.
+
+[00:45:45] Brian: Let me ask you this, what, you've been in the print business for a couple years now. What, what did you get wrong about it? Or what did you think from the outside, like you knew that you didn't know
+
+[00:45:54] Neil: what do we get wrong about it? print, look, this is gonna be, this is the equivalent answer of saying like, what's your big weakness? My weakness is I care too much.
+
+Like what? I'll tell you, we got wrong about it. And I, and I, and I mean this and like I've apologized to people here.
+
+We may have been too negative on it once we made the changes we had to make, and Troy and I have talked about this at length, we had. Whatever, 12 or 13 weekly monthly books. We, we now have six. We'll probably print a third as many, books in total as we did two or three years ago. all of our monthlys, this is a fascinating thing. food and wine travel and Leisure real simple, better homes and Gardens, all Recipes, what am I leaving out? Someone's gonna be mad at me. food and wine. they correlate almost perfectly with our fastest growing digital properties. 'cause the brands are great. Those properties in print actually had a great year last year because they're really, really like endemically focused and have like lots of other stuff like.
+
+Southern Living, which is an incredible print product. People are like, well, aren't you gonna age out? I'm like, no, because in half the zip codes in America, every time someone gets married, their mom gives them a subscription to Southern Living. And we're probably the biggest licensing partner inside of Dillard's, which correlates with those zip codes on like really high-end products that are amazing.
+
+And there's a real market for print. we thought print was dying. And anyone who tells you print's not dying is lying to it is dying. It is a managed decline. However, like radio is a place where there will be a place for print. And the other thing we had to do with print that I didn't anticipate is we've made all the books materially better.
+
+Nobody wants to buy a book that's super thin and crappy.
+
+[00:47:37] Troy: Well backing off of of uneconomic rate-based commitments while making the book better is a really hard thing to do, so
+
+[00:47:44] Neil: Yeah. I mean, look, we, we, we also, I think we had an advantage that, like Troy, you didn't have is we got a free pass from Wall Street and others for the transitional phase. The really painful one year when we did all that because we had enough going on in our business elsewhere that we were able to do it.
+
+But print now is like, it's fairly healthy. I mean, it's not a growth business for us, but it's fairly healthy.
+
+[00:48:08] Brian: But it's a business. You have to be in verse one to be in. Does that change like how you operate it?
+
+[00:48:13] Neil: yes, it is, it is very hard culturally to run a business that will definitionally be a low growth business. But there are parts of the print business that are actually really good, right? Like we have, with Better Homes and Gardens, we have a very important license with Walmart for better homes and Gardens products.
+
+Again, with Dillard's and Southern Living, we have a really big license with Dillard and Southern Living.
+
+[00:48:32] Troy: I like how you give your staff that $500
+
+[00:48:35] Neil: We do, we give, we give all, everybody who works on these licenses, if you work on our products inside of Walmart, you get 500 bucks, every six months to, or every quarter I think, to go 
+
+buy stuff and keep it in your house.
+
+Yeah. It's, 
+
+the stuff's amazing. By the way, BSU for
+
+Walmart 
+
+[00:48:49] Brian: are Dillards? 
+
+[00:48:50] Neil: Dillards are in every it's like southern it's very subtle. 
+
+[00:48:55] Brian: the public zone.
+
+[00:48:56] Troy: so Neil, I had another question. So you, you've been watching the industry for a long time, and if you look at the tension that always exists in modern media and digital media between the aggregators and the aggregated, which is what you are, there's always, tension around who gets the economics and who has distribution control and who owns the customer and all that stuff.
+
+do you think that. The industry broadly, or you can zero in on anybody, made mistakes last time and that those, there's mistakes to avoid this time as we go through a kind of new platform
+
+[00:49:32] Neil: a really good question. I think the fundamental problem, and this created like a thousand other problems that, and, and frankly left an opening for us, was people forgot the business they were in. You are not in the business of selling thousands of ads per page. Like you are not in the business of monetizing audiences.
+
+You are in the business of informing, surprising delighting audiences. And you have to do that as a baseline. You have no chance to do anything else. And
+
+the industry was way again, the whole industry is rooted in print in some way, right? There was way too slow to make changes. The digital only people got smart, but then got super sloppy because the, print people were too 
+
+brand-precious. The digital people didn't give a shit about brands. So the brand-precious people move too slow and visual people then ruined all their brands with 
+
+[00:50:26] Troy: brand 
+
+[00:50:27] Neil: And as the monetization becomes unclear going forward, we can't make those deeply compromising decisions. if they become survival decisions, you're already dead.
+
+Like we have to figure out. And you like, is it, are we getting paid by ai? Is AI gonna be a huge factor? Is it not gonna be a factor? Like right now, many, many, many of the AI use cases aren't publisher use cases. It's like, analyze these three data sets, or help me write a thing over here. Those aren't search use cases.
+
+Now. Like the, the, the question is, if the whole monetization of the internet gets totally upset, the decisions made by publishers and other media businesses totally put them in a box. Absolutely. Put them in a box. and definitialy they y had to make, and you talk about this content too inexpensively because they weren't making enough ads to pay for them, and then they had to put more ads on the page to show growth.
+
+And it just was like a swirl to the bottom.
+
+You can't do that. we only know how to do premium stuff. Again, I think this problem is more acute and pronounced in lower value content like news and sports and politics that you have a hard time selling. I think it's a little bit less than our kinds of stuff, but people realize that our things are higher margin and they're coming for them.
+
+it's just the way the world works. It's a very roundabout answer of saying that you need to go in with eyes on what will be a viable economic model for you, or you're gonna f up the whole thing like we did last time.
+
+[00:51:47] Brian: Kind of follow up on that. What, what are the sort of questions you think like a leader of a publishing organization has to be asking about their own organization with all of these uncertainties?
+
+[00:51:58] Neil: I mean, I think the, number one thing that we have to ask ourselves all the time, and, and we do, and we're going through like a huge reprioritization of what we do here, is like, is this a thing we should be doing or not? And is there another thing we should be doing instead, right? are there topics we are covering?
+
+We should not, are we covering things in a way that we have to fundamentally change? Like I'm convinced your job as a leader of these organizations is to beat the sentimentality out of them. Because pe-people who are creatives like me included, you guys included, you fall in love with what you're doing, particularly when it's successful.
+
+But you have to be really, really willing to not do something that worked because you need to do something different that might work. And just like I look at, you guys called the affiliate business or commerce business, it looks a thousand times different than it looked five years ago, because that's what the market dictates You, you are going to have to stop doing some things that work because you just know they're not gonna work. And it's a value system. You have to get a value system at a publisher of people willing to take educated guest chances as opposed to like do more of the same and spin faster. Like if we see a model, we see A, you know, we, we go through all this annual planning, which we just did for all of our verticals and all of our brands.
+
+And if people didn't have two or three big ideas to at least take a shot at with some resources, it was like, do it again. Like you can't just, if you're an Evergreen publisher and you get all your revenue from various sources on like articles that are pretty old, it is very tempting to say, let's just update those articles.
+
+Let's write a couple of new ones. We're gonna be good. We're gonna get half our traffic from Google and the rest gonna come from all other places and we'll be totally fine. Let's just do that faster. if we did that, we would be dead. We'd be dead. And frankly, we were late to TikTok. I think we've done a good job catching up.
+
+we've like crushed Instagram. We've absolutely missed YouTube completely, which is a big opportunity for us now to catch up there. And some of that was like, it's all innovators. We have a business that really works, but if we don't do new things, somebody's going to eat our lunch. So it's just how much do you allocate between the stuff that we know has worked for 10 years and the stuff that is gonna terrify me because I, we don't know what the ROI is gonna be.
+
+Or terrify our CFO Tim Quinn our, our CO Alex Eon or Tori who runs Comert. Yeah, Tim Tim's the best. 
+
+[00:54:23] Troy: Okay. I know we're running outta time. I had a little bit of a lightning round that would tie this section together with some of our other news items and, and, and I liked that, Neil's a good talker. He's good. He's good. He's the, did I call you a little while ago?
+
+The Bill Maher of
+
+Publishing. 
+
+[00:54:37] Neil: remember Troy. The 
+
+other thing is that 
+
+when you run these things like your, and Troy, you know this from doing this and like, Alex, you probably know some Airbnb. Your mood affects everybody's mood. And if, if you think that we can do it, then people will believe we can do it and we can do it.
+
+Or like, I wouldn't be here. There's a million other things I could do that would be theoretically easier. But like,
+
+[00:54:56] Troy: Okay. Okay. Well, in that spirit, I listened to a podcast yesterday with Danny Meyer, the great restaurateur, and I noticed that he manages by acronyms. he has a lot of things about, what it's like to greet a customer coming off the street and blah, blah, blah. Do you manage by acronyms, s
+
+Neil, do you have any acronyms 
+
+[00:55:14] Neil: we manage by no acronyms. I will never say the phrase EBITDA in an all hands because
+
+nobody gives, 
+
+[00:55:21] Troy: not really an acronym.
+
+[00:55:22] Neil: Oh, yeah. We actually have like, we, we take some heat for this and it takes a while when you, we have like our own vocabulary here, 
+
+[00:55:27] Troy: Like the It's All Right to Fail thing. Is that, do you have
+
+[00:55:30] Neil: yeah, but that's, no, no. But we have like acronyms for everything, for how we look at data, for how we make content, for how we publish.
+
+We don't, 
+
+[00:55:36] Troy: Can you, can you give us an example of one that's kind of catchy?
+
+[00:55:39] Neil: I can't think of one offhand. I wasn't prepared for this question, but
+
+we did, 
+
+[00:55:42] Brian: do you mean, Troy, by this, this
+
+managing by 
+
+[00:55:44] Neil: Troy you'll figure . We got a bunch of like XGE, XMXX consultant types. So you end up with acronyms for everything.
+
+[00:55:52] Troy: Yeah, he is got the five A's of management, like access and blah, blah, blah. I, I can't remember them. Listen, it was on Invest Like the Best. It's a podcast. That's unfortunate. Un unfortunately named, but he's a great love it. everything. You, you can't say more than three things at any one time or no one
+
+perfect. Yeah. Did you get the Trump shoes? Did you order the Trump
+
+shoes by chance? 
+
+[00:56:12] Neil: did not order the Trump.
+
+[00:56:13] Troy: Some presidents build libraries.
+
+[00:56:15] Brian: Yeah. You're a sneakerhead. What? What was your evaluation of
+
+[00:56:19] Neil: I, they're like, they're gold with like a flag on them, right?
+
+[00:56:22] Troy: Yeah.
+
+[00:56:23] Neil: I mean,
+
+[00:56:23] Troy: And then they have on the bottom, on the bottom, on the sole it says POTUS 45.
+
+[00:56:28] Neil: what, I would answer by saying we don't do politics around here. This is the last thing I wanna into, but 
+
+I'll tell you that they're incredibly ugly 
+
+[00:56:34] Brian: But 
+
+The bottoms are red
+
+and I saw some TickTock that apparently Louboutin, I don't know how to say that name, is they have the trademark on that. So Trump's gonna get 
+
+[00:56:44] Neil: I mean, I think, I think the best bet is to be just to like, let it, let it go away.
+
+[00:56:49] Troy: Yeah, Mr. Beast. Your feelings,
+
+thoughts? 
+
+[00:56:52] Neil: well, I have a nine-year-old boy, so my feelings on Mr. Beast are, he is the best.
+
+[00:56:56] Troy: Why do you think he's so special?
+
+[00:56:57] Neil: I've learned a long time ago that my personal taste level is worthless in evaluating media and I do enjoy a nine-year-old boy's. Media tastes a lot of it, but I, I just, I don't know. 'cause it's crazy.
+
+It's insane. He does it every he wants. They're like big spectacular 
+
+challenges 
+
+[00:57:12] Alex: it's hard to watch, but it's this type of content that is, so extreme. It just hooks children, like Troy with Zins. There's something about the way it's edited,
+
+[00:57:24] Neil: is.
+
+[00:57:24] Alex: just can't stop.
+
+[00:57:27] Troy: Let's
+
+This is in, it's a little lip pillow. Yeah. Lip pillow. 
+
+[00:57:34] Brian: well, I have one final one for you Neil. 
+
+[00:57:36] Troy: Is this a lightning round question? 
+
+[00:57:38] Brian: yeah, it's a lightening round question, prince at 
+
+the 
+
+Webbies. 
+
+any, stories from, from Prince being at the Webby Awards when you're
+
+[00:57:45] Neil: Oh my God. I'll tell you this story. I'll make it quick. This is the best, this is my favorite story of work ever for, for whatever the benefits of doesn't know for, I owned the company that ran the Webby Awards and very early on we had Prince come and accept a lifetime achievement award.
+
+He was the first guy ever to release a commercial album online only, this is a hundred thousand years ago,
+
+[00:58:02] Brian: Since 2006, I
+
+[00:58:04] Neil: like that. And, and it's when his name was a symbol. So he was like the, the artist formerly known as Prince at the time. And somehow or another, we got him to come to the Webby Awards and accept his award.
+
+And we didn't know if he was gonna play a song or not play the song play a song, which you wouldn't tell us. And we were given like a full green room list of things like. Don't look him in the eye, don't talk to him unless he talks to you. turns out he was a terrific, he was like a super nice guy.
+
+So he shows up at the show, everyone's panicked. It's a thousand people at Chipriani and it's a big deal and it's early internet and everyone's going crazy. And he pulls up to the front of like Chipriani on Wall Street in like a giant Maybach his girlfriend at the time who was like
+
+[00:58:45] Brian: Apollonia,
+
+[00:58:46] Neil: whatever, like you know, like very on brand for Prince at that.
+
+At in 2006 he walks backstage and we had rented him a guitar, like he had this very specific guitar and it's like a $20,000 guitar. I don't have anything about guitars and he is like strumming it backstage and a few of us like see Prince, this is like the most, I love Prince. This is an obscene out of body experience.
+
+And then he gives the nod of the producers that he'll play two seconds later he is on the stage. The host was Seth Meyers that year. It was like pre-TV for Seth Meyers. He was SNL still, and I think Seth Meyers in introduced him in Prince comes out and he plays the place goes bonkers
+
+and there. I've never seen anything like
+
+like the place 
+
+[00:59:27] Brian: were on their chairs and stuff.
+
+[00:59:29] Neil: absolutely bonkers. And he plays this song and he takes the guitar when he is done and throws it over his head and it smashes on the ground behind him. He walks off the stage, grabs the hand of his girlfriend out the door into the Maybach, gone never to be heard from again. And it was like, 
+
+it was the incredible was the most.
+
+And we, we have the
+
+guitar 
+
+[00:59:51] Troy: was like you at your quarterly 
+
+[00:59:53] Neil: totally, we have the guitar hanging up in the office. But the postscript for the story was, David Michelle who runs away the awards and I were backstage afterwards and he had his like two like giant security guys come back and they were like, we need you to. Promise and sign a promise, an agreement.
+
+They called it a promissory note. I'm like, that's not what a promissory note is, but whatever. like the, we need to sign a promissory note that this song won't show up on the internet. I'm like, dude, you just performed this in a room of the thousand most Whatever. It had, there was like flip cams at the time or whatever.
+
+I don't know what they were,
+
+but like everybody's filming this whole thing and they literally wouldn't let David, Michelle, or I leave the room until we wrote on a piece of paper that we won't allow any of this on the internet. And then they drove us to the after party and it was just like, the whole thing was just so ridiculous and bizarre.
+
+And, but it was a great moment.
+
+[01:00:49] Brian: Awesome. Well, thanks so much for joining us. 
+
+[01:00:52] Neil: Hey guys, this was fun. I'm not lying when I say I enjoy the pod. I do listen to it. We all listen to it here, so. That's my plug for you guys.
+
+[01:00:59] Troy: Did you subscribe to Brian's Newsletter, by Of course. I said first Brian, I day one
+
+[01:01:05] Brian: yeah. Day one. Day one.
+
+and, and the big ones and Troy. So we're running, we're running a special deal here. It's crowd. We're crowdfunding. Troy's. Membership. So I'm giving a dollar off to all all listeners who subscribe, who use Troy a checkout, and when I get 200 of those, Troy will get his membership.
+
+[01:01:27] Troy: Yeah. 
+
+[01:01:27] Alex: It's 
+
+affiliate marketing. 
+
+[01:01:28] Brian: the,
+
+JV membership, 
+
+[01:01:30] Troy: all the wonderful employees at Dotdash Meredith. The, the company is fully willing to reimburse you for 
+
+your 
+
+rebooting. 
+
+[01:01:37] Neil: they wanted to subscribe to this, I would let them
+
+buy this. I. 
+
+[01:01:40] Brian: deal. Yeah, let's do it.
+
+All right. 
+
+[01:01:45] Alex: How does Brian always turn this into a sales call? This is crazy.
+
+[01:01:49] Brian: content and commerce. It's the future.
+
+[01:01:52] Alex: Yeah. Very, very well done.
+
+I'm proud of you.
+
+[01:01:54] Brian: You tech guys keep taking away every other way to make money. So anyway, 
+
+[01:01:58] Alex: sorry.
+
+[01:01:58] Troy: Thanks Neil. Really, really
+
+appreciate you coming on. 
+
+[01:02:02] Alex: Alright, thanks. It was great.
+
+Bye-Bye. 
+
+[01:02:04] Brian: All right, see you. 
+
+
+[01:02:05] Neil End
+---
+
+[01:02:05] Brian: What did you learn, Troy?
+
+this is like the fifth podcast I've done with, with Neil in my life. 
+
+[01:02:09] Troy: I find that Neil is a compelling guy and he's just, just clear about what he's gotta do over there,
+
+and I I appreciate it very much.
+
+[01:02:16] Brian: I remember meeting with Neil at South by Southwest after he first joined about.com, which it was at the time. And I was like, are you sure you know what you're doing? he's like, we're gonna clean out so much of this junk that's that's here. And I'm like, I guess, but this is like.
+
+Internet null 0.5, not even internet 1.0 of a company. And even in whatever, 2007 or oh eight, I'm like, I don't see how, and they pulled it off, so I wouldn't bet against them.
+
+[01:02:48] Alex: Yeah. I learned a lot. I think he's right that being optimistic and not worrying too much about things that you don't know about yet. they, have a lot of brands that they can build utility on and they don't seem to be turning any of them into a seal glue factory Troy.
+
+So I asked about 
+
+[01:03:05] Brian: Wow. 
+
+[01:03:05] Alex: was glad to see that.
+
+[01:03:07] Brian: It depends. I mean, it's a very, it's, it's still a very SEO heavy, company. I mean, that's, that's the, that's what it was built on. It was built on About.com, which was the original SEO play,
+
+wasn't it? 
+
+[01:03:18] Troy: I mean, that, that gives you a, a sense of, how persuasive Neil is, Alex, because if we brought another person in from, an article that I circulated, earlier today in the chat, there are people that would be critical for example, of how sort of Dotdash Meredith elbows their way into the er.
+
+and, I think that. Google trying to figure out what the best, provider of, a recommendation is in the SERP is a really, really difficult, thing to navigate for Google. And you will always find in a company like Meredith that they, while Neil, I think admirably claims that they wanna make good shit in the interest of a consumer, they are, as Brian pointed out, very, very tied to, raw pages generated by referral traffic and, are gonna be incredibly aggressive in how they, respond to any changes from Google.
+
+So, my point is I think Neil represented it well and aspirationally I think he's right and it's cool to hear that. But, there's a lot of kind of, search, bobbing and weaving going on inside of the company. 
+
+'cause that's just the way the game works.
+
+[01:04:32] Brian: Is there a comparison to other industries of the sort of arm's length relationship that media companies have with the their most important possible partners, which are the ones who bring them distribution. I don't know of any other industry. Do other industries have that strange dynamic? Because it's not like you can call up Google and be like, oh yeah, guess what?
+
+Like our sessions are down like 10%. We're just checking to see
+
+[01:04:58] Troy: Uh, let's say that you sell products and have a boutique inside of a department store, and they change how traffic flows through the store, or they change how they highlight your product inside a physical retail. There's a dynamic between, you know, the product seller and the retailer. In any industry, I'll try to think of another one, but where there's a relationship between the maker and the distributor, I think you're always gonna have, tension.
+
+[01:05:23] Brian: But there's not a contractual relation.
+
+That's my point. well, what I think is different here is that Google is just so dominant.
+
+Okay.
+
+[01:05:31] Troy: So if, you're Procter, &, Gamble and you're distributing products into hundreds and thousands of different retailers, you have to manage that network. if you're a publisher and Google represents 60% of your traffic, they're kind of your everything.
+
+And their decision-making process is opaque. on the other side of it, every content creator, publisher, everybody in the world knows that there's a linear relationship by, between their position in the SERP and money. So it, I just think it makes it so much more intense.
+
+It's a monopoly. It's, a direct path to money, and there's really like an, a enormous, enormous amount of competition.
+
+[01:06:14] Brian: Troy, what's, your good product? You've, been coming up short the last couple weeks. Ready to kill the segment.
+
+[01:06:18] Troy: I really like this certain type of cocktail cherry
+
+[01:06:22] Brian: Okay.
+
+[01:06:23] Troy: I. it's Italian and it, it goes beautifully. I mean, it's such a difference between it and maraschino cherries. What I found is the jar of them is like 30 bucks at my local shop. And then I went to, I took my kid to Costco and I found like a huge jar of them for 17. I should, 
+
+[01:06:41] Alex: So you good product as Costco.
+
+[01:06:42] Troy: so my product is Costco. You know what, I actually, I didn't come prepared and all I did is, is I looked over at the cocktail area and that was my first,
+
+[01:06:52] Alex: Wow. 
+
+[01:06:53] Troy: What do you guys got? What? What? I know. And then 
+
+[01:06:55] Brian: Well, this is your segment. I 
+
+[01:06:57] Troy: I know. 
+
+[01:06:57] Brian: I don't, I, I'm not a product guy.
+
+[01:06:59] Troy: Yeah. Alex, you got anything? I always have something I can, yeah, I The problem with the products is they're always gadgets,
+
+what do you want? Services? What does he want? Clothing. I mean, I could get super nerdy. I have a new DAC streamer that I like. It's very good price 
+
+point. 
+
+[01:07:14] Alex: Really.
+
+
+
+[01:07:15] Alex: you've mentioned cherries and a Dax streamer. You haven't mentioned the brand for either of them. The only thing we've heard is Costco. but that's cool. I think Serous Eatss is a good product. 
+
+[01:07:25] Brian: it is. And I, I give Neil, I joke with him that, his, two big lifetime achievements are getting prints at the Webbies and making a recipe page that wasn't horrific to visit. And so,
+
+[01:07:37] Troy: For the record, Alex, we tried to buy Sirius heat years and years and years ago. They were part of the SAY family, if you recall.
+
+[01:07:45] Alex: They were, yeah, Yeah. Yeah. 
+
+[01:07:47] Brian: but a lot of that 
+
+recipe traffic, I, I cannot see that going up. I can only see it going down. I could be wrong. Maybe you make up for it on TikTok and whatnot. Sir Eats has at least a brand I don't know about all these anonymous, recipe sites because. The reality is they're getting a lot of traffic just for some pretty basic questions that I just ask perplexity now.
+
+most people use recipes for guides, and that's that intermediary layer that publishers have occupied between I wanna accomplish something and then getting literally the answer. and I don't know if that intermediary layer is going to provide as much value five years. It's hard for me to imagine how it is.
+
+[01:08:31] Troy: A lot of people just want basic, basic guidelines to make a chicken cutlet.
+
+[01:08:36] Alex: I mean, this is it. I think you're gonna see a lot of utility built on top of the LLMs. I think we're paying a lot of attention, but all that stuff is going, open source is available through APIs, so I'm already thinking about a few products I could build in all the free time where, I would love a, a tool that just like helps me find the kind of collected product reviews for any piece of technology I want at any moment in time.
+
+Or, you like recipes that are formatted really well and I remember that I want things in metric. You know, all that type of stuff I think is gonna be, built like this, this fuel new, new layer of the internet that's gonna, that wet seen yet, We're just like testing We're just like raw dogging the LLMs right now and typing things into a text box like nobody is building interface to it 
+
+[01:09:22] Troy: raw Doggett. Okay, so just to close on good product. I, I, I was wondering, you know, it's snowed a few days ago in New York, and it's been quite cold. So those, the snow has sustained longer than it usually does, which left me in a little bit of a footwear conundrum because I, I wasn't prepared.
+
+I noticed on True Detective that they have these, chains on the bottom of their boots for the long cold nights in the snow and on the ice. I'm wondering, a, I, so I have a question. I like, I'm a. You guys know. I like, I, I sad to say it, but I do like a certain, I do like a croc. I like Crocs. Now and then I'm wondering, Brian, I can't see you wearing Crocs.
+
+What do you wear when you're in Miami? What's your footwear of choice? And Alex, you're in the snow. What? What are you wearing? 
+
+[01:10:09] Brian: I wear slides mostly.
+
+[01:10:12] Troy: What kind?
+
+[01:10:13] Brian: Oh, like Adidas? Something like basic. I used to have Orlobar Brown. I like that branch. That's a good brand, I That's a dad, dad brand.
+
+Is it?
+
+[01:10:21] Troy: Oh, yeah, yeah, yeah, yeah, yeah. They set up like at Go golf shops and stuff.
+
+[01:10:26] Brian: Orlobar Brown. It's like a 
+
+[01:10:28] Troy: It's like, 
+
+[01:10:29] Brian: brand. Why would it be at golf 
+
+[01:10:31] Troy: it's like Dad sandals from Hawaii.
+
+Alex, what are you, what are you wearing on your, your big feet?
+
+[01:10:36] Alex: Wearing some Meryl boots, hiking boots that are weatherproof. I love their 
+
+stuff. 
+
+[01:10:43] Troy: that that just 
+
+say I've given 
+
+[01:10:45] Alex: They're 
+
+sold 
+
+at REI. They're not slip-ons. but also what did you think of, the True Detective, the finale? Did you watch it?
+
+[01:10:54] Troy: Yeah. I loved it actually.
+
+[01:10:55] Brian: I still have to watch it. It's a very polarizing show, and I think, have you 
+
+seen this stuff about. 
+
+[01:11:01] Alex: half the landing, but yeah,
+
+[01:11:02] Brian: Like the rotten tomato, like there's a giant gulf between rotten tomatoes and like critical and like every other metric. And it's interesting as 
+
+[01:11:12] Alex: that's happening. 
+
+That's happening. More and more. Critics don't know what the audience is like.
+
+[01:11:17] Brian: Or Your industry is. Your industry is all in decline. Nobody needs pundits anymore. We make own decisions. We just, we just absorb what the LLM and the algorithms tell us. Make own decision.
+
+Yeah. I wrote today we're all gonna
+
+become the precogs. We're just gonna be like immersed in that whatever that bath is, and just have a bunch of mindless, milk death.
+
+just stream to us on our face goggles while we're like just sort of dulled.
+
+[01:11:47] Troy: I think that the, raw dog goggles that you bought people are starting to realize that they really are superfluous.
+
+[01:11:53] Brian: What the vision
+
+pro is really excited about telling everyone that, yeah, I was there. I was there when the AirWatch came out and when the iPad came out and when the PC came out and when the Mac came out and when the
+
+[01:12:05] Alex: internet started and when people started of course, I did.
+
+I don't have any skis on the.
+
+I was there I've heard it all before 
+
+
+[01:12:12] Outro
+---
+
+[01:12:12] Brian: Thank you all for listening, and if you like this podcast, I hope you do. Please leave us a rating and review on Apple or Spotify or wherever you get your podcasts. That takes ratings and reviews. Always like to get those. and if you have feedback, do send me a note. My email is bmaracy at therebooting.com.
+
+Be back next week.
+
+[01:12:31] Troy: Hey, did you bring the vision pro to the ski hill? Yeah. 
+
+[01:12:34] Alex: Of course I did 
+
+don't have any ski goggles that's why I bring it 
+
+[01:12:37] Brian: How, how's he gonna have 50 tabs open in front of his 
+
+[01:12:40] Alex: I. 
+
+Exactly 
+
+[01:12:41] Brian: enjoy. 
+

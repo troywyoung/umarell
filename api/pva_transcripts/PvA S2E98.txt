@@ -1,0 +1,637 @@
+PvA S2E98
+===
+
+
+[00:00:00] Cold open
+---
+
+[00:00:00] Troy: how are you doing? 
+
+[00:00:01] Brian: I'm going on vacation tomorrow. I'm very excited. I'm going to Italy. 
+
+Two weeks? 
+
+yeah, two weeks.
+
+[00:00:06] Troy: Will you be filing newsletters?
+
+[00:00:08] Brian: newsletter. rest up. It's going to be a busy fall. but I'm excited for vacation before that. do you think makes for a good vacation?
+
+[00:00:15] Troy: Hmm, I always find the first few days of a vacation are hard because that's the time you need to truly disengage. I think that a two week vacation is important. because that second week you're truly relaxed. 
+
+[00:00:28] Brian: four buttons are undone
+
+second week.
+
+[00:00:31] Troy: I like to enter that kind of fantasy world that, a good hotel can offer. where you feel like everything is this kind of suspended reality of perfectness,
+
+[00:00:40] Brian: Interesting.
+
+[00:00:41] Troy: everything is easy and where you develop your vacation routines of, three o'clock cocktail, sitting by the pool or doing the odd bit of recreation.
+
+like that. That's my idea of a vacation or alternatively, or doing something that's very active, like going skiing.
+
+[00:00:56] Brian: But not like a mix. I like a mix.
+
+[00:00:59] Troy: Yeah, the idea of going from place to place to place to place doesn't really turn me
+
+[00:01:02] Brian: No. The cruise people. Strange.
+
+
+[00:01:05] Intro
+---
+
+[00:01:27] Brian: Welcome to People vs. Algorithms, a show about detecting patterns in media, technology, and culture. I'm Brian Marcy, and each week I am joined by Troy Young and Alex Schlafer to connect the dots of where the media space is going. This week, Alex is missing. This is my last episode prior to vacation, and Troy and I discuss What goes into a good vacation, but more substantively, we get into a discussion about whether we're seeing a cultural recalibration to quote unquote normal.
+
+This is something I've been thinking about for a while, watching the presidential election. I mean, obviously, Kamala Harris and Tim Walz have hit on, something that's striking a chord with Calling the other side weird. Now, I was skeptical about the sudden ardor for Kamala Harris, because it just didn't exist when she, ran for president already.
+
+But I've come around to believe that she is tapping into something latent in culture. I mean, just as Trump did in 2016 when he became a stand in for the broad, with the elites for Harris. I think she represents something of a yearning to return to that moving target of normal.
+
+And the dislocations of the pandemic have persisted far longer than most of us, would've thought. and we're still dealing with the after effects of that upheaval. And when I connect the dots, I come to the conclusion that there's something of a nostalgic. Pull away from the chaos and oddities that have overwhelmed society since that escalator ride.
+
+And, it plays into what maybe I hopefully see as a recalibration away from the worship of technology. And I think AI sort of takes that to its logical conclusion. And that's why I detect, a lot of, backlash against that. Troy, for instance, seems very excited for this new pixel phone with.
+
+More AI, no doubt. but I keep coming back to, we already spend five hours a day on our phones, on average. And, the only thing I would want from a phone is to cut down on that number. I don't see other people being that different from that. anyway, that's going to be a really interesting, Thing to watch as a I develops, we also talk about the difficult choices.
+
+Publishers are making, about how they write size their investments and content when the focus of their business is moving from directly monetizing content surface area to making money from media Jason areas like commerce or events. Now it's difficult to understand the inputs you need for those type of models, I call them indirect models since the content is something of a marketing expense on the balance sheet.
+
+And so if you're analyzing the business, we'll always tell you, you probably shouldn't invest too much in content. but that's a danger because you sort of know intuitively The content is what builds the brand and builds the connectivity and allows you to monetize in those different ways. I hope you enjoyed this conversation.
+
+Please leave us a rating and review on Apple or Spotify. I'm going to be out for the next couple of weeks, but we'll see you in September. 
+
+
+[00:04:17] Episode start
+---
+
+[00:04:17] Brian: did you watch the DNC, last night at all?
+
+[00:04:19] Troy: I watched some highlights, yeah.
+
+[00:04:21] Brian: I stayed up. I wanted to watch, Biden. They pushed him like close to midnight and I ended up just like giving up. It was too late for, I don't know if that was strategic or not, but, Possibly hard to say.
+
+but one of the things that I so I have this theory. I want to run by you. I read a little bit about it in watching the convention and just a lot of other things. I kind of feel like we're in this kind of like recalibration to quote unquote normal. I mean, it seems very clear that the democratic apparatus, has really seized on this weird thing.
+
+And at first I didn't understand it, but I think that, when I unpack it, Is what they're trying to say is like, there's been a lot of weird stuff around. There's a lot of like weird ideas and like weird characters who get a lot of attention these days, particularly on certain platforms versus others, and that overall, we're in this sort of recalibration.
+
+as a culture and recalibrating a lot of the excesses from from the zero interest rate era. We're also recalibrating from the from the pandemic and all the distortions and I don't think people fully recognize like how many distortions from the pandemic. We're still sort of working out. I mean, we're seeing You know, the work from home thing is ending for a lot of companies, right?
+
+And I think we're seeing a backlash to the overwhelming role that technology has played in society. I mean, if you look at, have you seen all these running clubs around New York City? These masses of young people, like running. and trying to meet people in like parks and stuff instead of dating apps.
+
+I mean, what are they going to do next? Like pick
+
+[00:06:03] Troy: running clubs have been a phenomenon for a while,
+
+[00:06:05] Brian: Yeah, but not like this. I used to do Hash House Harriers. Do you know that?
+
+[00:06:10] Troy: no.
+
+[00:06:11] Brian: It's like this, it's very British. It's, it's almost like a scavenger hunt. You run and you, you follow these clues along the sidewalk and you run through the city and then you end up like, and sometimes you go down false paths.
+
+And then you try to find the path and then everyone, because it's so confusing, runners all basically end up at the, the, the finish, which is a bar, pretty much at the same time because the people who are fastest are figuring out which are false trails and whatnot. But they do it all over the world. We used to do that.
+
+This is like an updated version of that. But I think the culture, you know, it's hard to, identify, these things, but I think that there's a case to be made that a lot is changing. And I think one of the things is, and I think about this with, with the election is the currency of authenticity.
+
+Right. Because I think for a bit, particularly in the political realm, like authenticity was being sort of defined as,the ability to say shocking things. And it's like, Oh, I'm going to tell you what I really think. and it's, it was a little bit transgressive, I feel like,and, those kind of things wear out.
+
+And I feel like we're having a wear out. Do you know what I mean by that?
+
+[00:07:26] Troy: Well, I think a couple things that I read into that, there's lots, one is that, It always surprised me that Trump normalized a kind of deviant public behavior that we hadn't seen before, that we then, like 10 years in just feel like, well, that's, that's him. That's Trump. That's the president of our country.
+
+It's okay to say unhinged things and lie and misrepresent stuff and be a felon and all that. And,a big part of the country chooses to trade or either embrace that or trade it for what they believe is a kind of, bold, real business minded leadership. and that always struck me as really foreign to my kind of Gen X kind of indicators of normalcy around what a What a public figure should do and represent.
+
+So it really did surprise me that that became normalized. And then I do think that there's There's always something surprising that happens, and a lot of it is shaped by, by media, so I mean, a lot, several people have commented on this, but if, you know, the 2016, and I suppose the 20 election was about Twitter and Trump's kind of, leading the dialogue by saying kind of snappy, unhinged things, that surprised all of us on Twitter.
+
+I think that's hard to do now, but that doesn't doesn't move the kind of cultural or media barometer. But what we're seeing is if this election is defined more by a video format and,ironically, defined by, an application or social and whatever you want to call tick tock that, the, the country's trying to ban.
+
+And it's defining the election. It's made.You know, it's a McLuhan thing. It's the medium is a message like TikTok is, is a playful medium. So we're seeing,election communications defined, not just by the kind of fragmentation of, of, of, of creation to people kind of processing things. Like it changes what your strategy, what you have to do as a politician, because the world or your constituency, your tribe can do a lot of work for you, but it's also like a lot lighter and goofier.
+
+So this medium that is You know, largely making us feel something right now around this new candidate that we're trying to get to know is a very different medium than the last one that was, short text missives from Donald Trump.so, I think that this is a, we are living through a time when like the shape and structure of, of our communication platforms very much.
+
+determine how, a political battle gets fought.
+
+[00:10:14] Brian: Yeah. And I mean, with TikTok, it's all trends, right? it's like you, you have the disposable trend and Kamala Harris has been on an incredible run. and that's going to end, right? I mean, there's going to be, you can't keep the news cycles down. She's going to get, she's going to get beat up, in future news cycles.
+
+but I think it'll be interesting to see whether, how long she can, she and Tim Walz can, can ride this. And I think part of the authenticity thing is not just saying outrageous things. Like I saw, did you see this 10 minute video they released where they were having like a casual conversation? And that to me was very striking.
+
+Well, it was almost like a informal hot ones episode.
+
+yeah,
+
+[00:10:57] Troy: You know, it was like hot ones meets, all in or no, and it wasn't really that it was just a conversation. It was like, that too is the like, that's the kind of media you would consume on YouTube.
+
+[00:11:08] Brian: And that's the thing, it's like when people are, when, when policy wonk, political reporters are, or analysts are, are always going on about like, well, she needs to sit for an interview, and she needs to like, do all this policy stuff. Yes, policy's important, I guess. But the reality is, People want to see people vote, particularly for president around around character and values.
+
+And, it was always the do you want to have a beer with this person? And I think that was the stand in for it. And people are not comparing different people's in different candidates infrastructure plans like that's a fantasy land and everyone is is they're battling for undecided voters.
+
+Undecided voters are a nice. A nice term for low information people who are not paying attention to the world. You would have to, if you're undecided at this point, when it comes to like Donald Trump, I don't know, I don't, do you know any of those people?
+
+[00:12:07] Troy: I mean, come on, people have already made up their minds.
+
+don't know. I mean, I'm trying to think maybe, I mean, maybe there's like a parent that.was pretty concerned about, Biden that thought somehow,Trump was a better alternative. And now, yeah, if that's
+
+[00:12:23] Brian: Yes, but that's but so it's not undecided on issues. It was undecided on can this guy do the job. There's a lot of people that but they wanted to vote for quote unquote that side. Right. And or it was single issue. people will just be like, I feel very passionate about abortion, and I'm voting one way or the other.
+
+I'm voting on that. I feel very passionate about trans. I'm voting on that. I feel very passionate about the, I don't know, the debt. Does anyone? The, the all in guy, he's voting on that, but I don't know who he's voting for.
+
+[00:12:58] Troy: Yeah. 
+
+[00:12:59] Brian: nobody wants to talk about the debt.
+
+[00:13:00] Troy: Yeah, I think that, that, the Democrats have, long term have demographics on their side. And I had, there was 10 20 year olds here last night for dinner and they're different. I mean, these are New York kids and like hipster art kids and stuff, but like the way they look at gender in particular is so different from the boomers.
+
+And I don't think we're turning, we're, I don't think we're going back on that.
+
+[00:13:28] Brian: What does that mean?
+
+[00:13:30] Troy: well, it means that we've redefined, I mean, it's not just about gay rights. It's about,acknowledgement of the sort of sanctity of someone's own expression and their right to be what they want to be. and I think that there's this feeling that we should recenter the, politics on, like family values and more traditional gender roles.
+
+And I think that that's just a dead end strategy.
+
+[00:14:00] Brian: Hmm,
+
+[00:14:00] Troy: just not going to work because I think that this generation is, Has really, really, it's just part of the fabric to me of who they are. 
+
+[00:14:12] Brian: but they don't vote. I, I still go back
+
+to like the young people have
+
+never decided an 
+
+[00:14:17] Troy: it just keeps moving, right?
+
+Like there's 20 million people that voted in the last election that had a different set of values that likely were more Republican that no longer vote because they're dead. And so the new generation moves in and they, they, they feel and, and think very differently. And I think it's pretty fascinating to also watch how the Democrats have, have let sort of Trump eat himself.
+
+just by, engaging on the periphery with sort of by provoking him with kind of fun little playful, jabs and letting him flail in trying to do what he does so well, which is deposition the opposition. And he's struggling to do that with Kamala.
+
+[00:15:08] Brian: Yeah.
+
+[00:15:09] Troy: And so they're sitting back watching him make mistakes.
+
+I think they will do less and not more. I think that this convention will give, I mean, did you see the response when she walked out last night? I mean, I mean, it was electrifying.and, I'm excited for the party. I, it's not a partisan thing. It's just, I, you know, I think that, They are more normal and they are, and they can bring together the country much more broadly than, than the Republicans.
+
+Yeah. I don't know. I kind of miss the zaniness of the, like the Republican convention, but I like conventions for the weird stuff. But like, you know, I think it confounds a lot of the sort of pundits on the right, why the media never really gets them or gives them their sort of legitimacy or their, their, their place, their, their rightful place in the dialogue. And the fact is they are kind of fucking weird. They're weird. Like it's hard to kind of normalize a lot of the weirdness. Kid Rock is kind of weird.
+
+[00:16:10] Brian: yeah, Ken Rock's weird.
+
+[00:16:11] Troy: And Hulk Hogan is a fringe wrestler and Donald Trump says really weird things. 
+
+[00:16:19] Brian: Yeah, 
+
+[00:16:20] Troy: maybe I just live in my own little bubble, but to me, I don't get it.
+
+[00:16:24] Brian: no, it's a good lane. And I do think that this is part of, I'm trying to shoehorn it all into this recalibration or correction, because, I mean, I'm most interested in it from,the authenticity standpoint. I saw this, This study that Fox Media did with Digitas and it was, they were surveying creators and people who consumed a lot of digital content.
+
+So, take that for what it's worth. but basically, one of the really interesting findings was that the conflation of quality with authenticity. That that stood out in the study and I think like we're authenticity is overpriced in the market right now. And then that is going to be part of the correction.
+
+But I think when you look at. The different, and that's why I keep going back to politics because these are very compressed,marketing campaigns at the end of the day, is, they're, presenting a different type of authenticity, that is built around rapport and being able to see yourself and the other person and even just like little things like, the Tim Walls talking about like white guy tacos and things of that nature.
+
+That is a nod to, hey, these are real people. These aren't like, these aren't,people with, with the gold toilet. And I think it's smart. I don't know if it, it, it, and it's also, I thought about this with the, the Hawktua girl, who's extended her 15 minutes of fame. shockingly, by being incredibly wholesome.
+
+I mean, her, her controversy was that like, some people get pissed that she threw out the, the pitch, the first pitch at the Mets game. and, she was there to like, raise money for comfort animals or something like that. She's turned into a very like, wholesome character. which is kind of, it's kind of funny, because she's like a real person, I guess.
+
+That, that's, and so I think there's, there's some
+
+[00:18:14] Troy: I think part of that is, is the left, or culture, moving, moving back from a kind of strident, what people call wokeism, to, something where we're still allowed to make fun of ourselves and things and laugh and, say some things that are maybe at times slightly off color, but that's just the playfulness of
+
+[00:18:37] Brian: It's just normalism. Like we always go too far in one direction and then we just tack back. And when we, when we tack back, we've changed quite a bit and that's how societal advances happen. They always go too far and then they tack back and then we, then we consolidate and then we, The next thing comes and, I think this is now in like a, maybe I'm wrong, but I think it's an, we're starting to see, for instance, the limits of living in these virtual worlds.
+
+I think it is not a mistake that the vision pro is a complete failure. I mean, maybe Alex has his, his, his face computer on right now somewhere here, but like the fact that it's a total flop does not, Does not surprise me at all. I think with AI, and that's where I want to go next for this conversation is I was struck by this, the study that came out that said actually using AI and in marketing messages depresses purchase consideration.
+
+And, I don't know if you saw, but, kind of Adobe competitor. had like this viral thing of their manifesto their anti. A. I. Manifesto. And it's a sign that there that this is a A time one in my view that people are distrustful of technology in a way that they haven't been before. The optimism has been replaced by a lot of dystopian concerns.
+
+Congress can't pass anything on a bipartisan basis. They're going to pass bipartisan bills to protect children from social media. You can put protect in quotes or not. I know, I don't know how to have kids, but I know from like my, my sister who has, who has boys, she's like, I can't believe the, the things that parents have to deal with because of the, the social media.
+
+A winning campaign message is absolutely going against these, a lot of technology. There is a, and look. We're technological species. We're going to keep pushing forward. I just add it all up. And I think there's just a recalibration that there can be a tyranny of tech in our lives. And I don't know anyone who says, I wish I spent more time looking at my phone yesterday.
+
+Like it was a good day. I had a good vacation, Instagram, scrolling through Twitter, getting into fights with random strangers Like nobody. It's kind of like I was saying to my wife, I'm like, I was like, nobody gets off a flight. This is my travel tip. Nobody gets, nobody in the history of flights has gotten off a flight.
+
+And it's like,that was pretty good, but I wish I drank more on the flight. Nobody.
+
+[00:21:20] Troy: someone said, someone has, but
+
+[00:21:22] Brian: If you wish you drank too much on the flight, you have a, you have a drinking problem. I would just say that.
+
+[00:21:27] Troy: Well, 
+
+[00:21:27] Brian: Or you're really cheap because it is usually
+
+complimentary. 
+
+[00:21:31] Troy: I mean, I guess related, Brian. I look at that mobile phone stuff right now because it's a, but by the way, your sort of acknowledgement that the Vision Pro is a flop, I think is totally true. I
+
+[00:21:46] Brian: admit it?
+
+[00:21:47] Troy: don't know, but He'll, he'll move the I don't know. I think you circle back to anyone that bought one, I don't know, what was it, three months ago, four months ago, and ask them how often they used it last week. And this is the, I mean, I think that,maybe the amount of, investment in the technology will yield benefits when that, idea retreats to be something that's in your, ear pods, AirPods rather, or in your glasses. But the idea of carrying a battery and a giant face mask around or using it to isolate yourself when you're watching entertainment is just.
+
+But what I was saying about mobile phones is this, is that they obviously mobile's the sort of frontier of computing from a hardware and software and, behavioral perspective.
+
+And it's interesting to see AI be productized in the. Not just the latest apple announcement, but in the big, pixel 9 release from google And I don't know if you did you pay attention to that? Did you see how gemini is being kind of manifest in the latest version of the google hardware the pixel 9 and the the platform android and You I, I think that it's, it's only interesting to look, well, it's interesting to me to look at it because there's so much sort of consternation around how AI is going to.
+
+impact media and impact media distribution and, Google more specifically. So, the, the idea, the features that were released in that phone are like live AI chat, meaning you put in your headset and you can have a conversation about anything in real time with Gemini.you can, any screenshots that you put that you take become memory that you can kind of query that just, become, just like the Microsoft idea where it becomes a record of what you've done in a way to, to facilitate,just a kind of constant,to be able to query anything you've done in the past.
+
+And then everywhere, this idea that you can push a button and be creative, you can make an image, you can, do. Run, build a schedule. You can plan the weekend. You can create a recipe. And Google's going to do a lot of it from the cloud. so that you don't need, special hardware.
+
+Apple's solution puts it on the phone, much of it so that it can do a lot of agentic tasks on your phone, like set an alarm or,do any of the functions, I guess, that you would want to do on a phone. But I think that the question when you pull it all back is like, What does it do to, to media and what does it do to Google and what does it do to media brands?
+
+And
+
+[00:24:31] Brian: Wait, you're assuming that people want this stuff, right? So with flip phones, our sales are surging.
+
+And why is that?
+
+[00:24:39] Troy: well, it's the trend that you talked about of people turning off, but I'm not saying people want it. I'm saying it starts with someone making it.
+
+[00:24:46] Brian: Okay.
+
+[00:24:47] Troy: And the question is, now you have it, it's on your phone. Does it change behavior? And,What does it do to, to the world that you and I live in every day, which is, you make content and you have to always have a way to distribute it and get it paid for,
+
+[00:25:00] Brian: But I mean, that only matters if it becomes like a major distribution and like we're spending five hours on average plus on our phones. I don't, again, I don't know anyone who was like, I wish I spent more time on my phone is there going to be a line around the block for a new phone that would enable you to take that five hours up to, like, seven? it
+
+[00:25:20] Troy: not about taking the five to seven, it's about what you do in the five hours and
+
+[00:25:24] Brian: cutting down on the five hours? I think a lot of people would like that. Seems like that's why people are buying flip phones.
+
+[00:25:29] Troy: well, this is less a value discussion and one trying to understand how the interface to information changes. So like I had a conversation the other day at breakfast with someone, the media person, and he said, it strikes me that even if there's all kinds of sort of AI driven interface everywhere, if you were consumer reports, which let's just say is an example of the sort of canonical, well researched authoritative review on you name it, a refrigerator.
+
+don't you think that that still has a tremendous amount of value in a world where you ask AI What's the best refrigerator to buy?Like, is it, does, doesn't that just mean that the brand becomes more important? And, and therefore there's maybe an emerging premium on things that, make it through, that can travel through the new interface to a human being.
+
+[00:26:20] Brian: Yeah, I think how you make money off that is going to be, Very indirect and very different than in an advertising world, but that brand should become more important in a world where there's so much fake shit out there that you
+
+can't tell. 
+
+[00:26:38] Troy: to me, this is the gist of the modern battle for around platform power, because there's only one way to look at The evolution of big platforms, including operating systems, and, social media, platforms to an AI world. And it's that they become even more fortified, even more powerful, even more walled off from, downstream behavior on a website, for example.
+
+So in that world, there has got to be mechanisms that emerge,like the folks that are trying to track, AI scraping your site. There has to be a kind of new generation of things that put a toll up around,between the creator and the platform. Like it just has to happen. Otherwise there's no creators.
+
+[00:27:35] Brian: Yeah, I mean this is a bill gross as as thrown his. His hat in that with pro prorata. ai, they raised 25 million. Bill Gross is sort of underrated figure in the history of the internet and media, because he came up with the paid search model actually. and Google borrowed it, I guess,
+
+[00:27:58] Troy: I talked to them about they're looking for, if maybe you're interested, I think they were looking for a CEO for that business
+
+[00:28:05] Brian: Oh, I would just take a good sponsorship deal. Bill, if you're listening, the rebooting is a great way to connect you with the The leaders that you need,
+
+[00:28:14] Troy: And there's the other one. There's the other one that told it is another one. Yep.
+
+[00:28:17] Brian: Yeah. It's another good prospect. Actually, I'm gonna talk to Jesse about that.anyway, no, there's there that that is for sure.
+
+I mean, look, this is a vibrant era. I actually do talk to, And I actually it's I I'm heartened that companies are building technology for this moment for publishers, right? They recognize that because I guess my concern was always and it's some of it is self serving, right? Because a lot of my clients are technology companies that sell to publishers, right?
+
+Publishers are not going to build their own technology for the most part, and they need to rely on experts that, to do that. And my concern was is. obviously, financially, I'm like, well, They're not looking to reach publishers. They're not going to be doing business with me, but it's also that publishers need to have technology.
+
+And if it could be a really bad situation, if people are not building at all for the publishers, because I don't see publishers are shrinking. I don't see them being able to build these things on their own. It just does not make sense. And so to see investment going into the companies that are. At least theoretically, going to be, aligned with publisher's interest is, is great to me.
+
+I mean, there's, we need more
+
+[00:29:31] Troy: I, I would just argue that again, the point I'm making is this,Google court case is going to set off a whole bunch of. legal and like challenges to what is inevitably the, concentrating power of platforms because A. I. Is the ultimate concentrator.
+
+[00:29:53] Brian: Yeah, I think that is true because it seems like the AI narrative has moved from, there's no moat,that Google memo, I guess they're like, we have no moat, there's no moat. Anyone can compete with anyone. There's just going to be a bunch of, the, the old Silicon Valley is like two people in a garage, are going to be able to take down Goliath.
+
+And it seems like actually this is going to be, the winners are going to win more and it's going to concentrate power even more, in the hands of a very few people. And we have seen, there's one bipartisan, there's two bipartisan. Bipartisan issues. One is to rein in the power of China. and two is to rein in the power of technology platforms.
+
+They can be for different reasons and different rationale. But the court case against Google that recently ruled in a monopolist was started. By the Trump administration wasn't started by Biden.so I don't know whether they're going to break up Google. It's going to be messy, but just the fact that it is being seriously discussed is, no worthy
+
+[00:30:59] Troy: Mm hmm.
+
+[00:31:00] Brian: say that.
+
+And it should, it should provide new opportunities. I mean, volatility is great. You search market. It's great. I want to talk about poly market.
+
+[00:31:08] Troy: Okay.
+
+[00:31:09] Brian: Cause I think poly market is fascinating. And I think it could be, it's what a media company should look like in that the way polymarket, it's a prediction market, right?
+
+And it's got, it's got a sort of crypto angle to it, but luckily it doesn't lead with that. And this is the polymarket election. I think in many ways if if Nate Silver was whatever a couple election election cycles ago. Remember the needle and whatnot? this is all about prediction markets. He used to he used to criticize these.
+
+As like the Scottish teens. What are the Scottish teens say? But these prediction markets have become really accurate, and they've become, they're getting cited everywhere. And if you want to know, for instance, the chances of RFK Junior dropping out are now up to 62%. Right? And you could see this with Biden, how it just flipped in the prediction market.
+
+And it, it ended up coming true, and so I think poly market,
+
+[00:32:11] Troy: 78 percent right now.
+
+[00:32:13] Brian: Oh really? Oh wow. When Nicole Shanahan was like, dangling it out there. Yeah, this is a problem. You need professionals in every, in every field, including politics,
+
+[00:32:23] Troy: There's 670 million at play on the presidential election on Polly Market.
+
+[00:32:29] Brian: So they make money by taking a fee. I mean, it's like basically a coin base, you know, they, they take a fee when people are placing bets and think about the unique data that they have and the unique lens as a, as a media company, a media entity in order to drive. You already have, first of all, it's kind of like the e marketer model.
+
+You get cited everywhere and that that's your marketing, but they can build a really differentiated media product. That to me is almost like a new, like mini Bloomberg. No, that's like overused. But,completely differentiated approach. And it gets around all the bias, the bias claims, it's like literally just a prediction market.
+
+so if that's guiding your coverage, I think it could
+
+[00:33:18] Troy: So how does it work? Do you know how it works? You can buy or you can sell.
+
+[00:33:21] Brian: Yeah, you just place bets.
+
+[00:33:23] Troy: Yeah, and there's a little spread for them to make money.right now they're predicting the chance of Donald Trump winning the election at 50%. 
+
+Common law not very helpful. 
+
+[00:33:32] Brian: Is it? We don't, we don't need crypto for that. Just flip a coin.
+
+[00:33:36] Troy: right.
+
+[00:33:37] Brian: But, if that's what the market says, that's what the market says. I don't know. I mean, like when you think about like, what a good and defensible media business is going forward. I think, one of the things is, it should, it should make money in ways that regular media companies do not make
+
+[00:33:54] Troy: According to Polly Market, your Eagles have a 7 percent chance of winning the Super Bowl. Yeah. Same as as the Lions. Yeah. The Chief's lead at 13%,
+
+[00:34:03] Brian: Oh, that's not bad at all.
+
+I'll take that. 
+
+[00:34:05] Troy: 49 ERs are at 12.
+
+[00:34:06] Brian: I don't need the Eagles to win the Superbowl again in my lifetime. And I feel like it's fine.
+
+[00:34:11] Troy: The New York Giants are under 1%. Right next. Right next to the Raiders. The Patriots and
+
+I saw, I saw, I saw some Daniel Jones highlights to all the Giants fans out there. I'm sorry, but I'm also laughing.Yeah. But right now, what I read is 88% of the action on poll market is political. It's a political marketplace.
+
+[00:34:31] Brian: yeah, but that's where things start, right? I mean, Uber started as a black car service in San Francisco. and. I think overall, we're going to look back on the legalization of online betting as a massive, massive societal
+
+[00:34:46] Troy: Dude, you can bet on everything. In culture, you can bet Will Taylor Swift attend the DNC. You can bet on the number of Elon tweets on the next 007. You can bet on everything.
+
+[00:34:59] Brian: Yeah, I think overall betting in culture is, is gonna, it's, it's a mistake. It's too easy. It's too addictive. It's another thing I hear from my sister. The, the high school kids are getting hooked. On this, parents are coming down and they're, they're seeing Johnny watching, Belarusian, table tennis, cause he's got some money riding on it.
+
+[00:35:21] Troy: How about Trump photographed holding a baby in August?
+
+[00:35:25] Brian: I might put a, no, he's not like a whole, but he doesn't do the traditional politician stuff of like kissing babies and petting dogs.
+
+[00:35:33] Troy: Yeah, it's really incredible. It is, it is. It's a good product. It's a very cool, you can, I guess you can just set up a, a bet on anything, right? And see if you get buyers and sellers. So anybody can just set one up.
+
+[00:35:46] Brian: But I'm fascinated from I think you make a really good media product around this. I mean, you have all the data. It already has a business model built in. It's completely differentiated. I mean, FiveThirtyEight was built sort of on like the old version of this. And,
+
+[00:36:05] Troy: So when you say build a media product, do you mean like use it as the sort of foundation for coverage or just report on what's going on in there? what do you mean?
+
+[00:36:14] Brian: yeah, so that is the raw material. So basically you need a lens, right? And your lens is going to be where, is, is just taking the market odds and where the market is on, on different issues. what is it, what are the chances that Israel and Gaza, the Palestinians get a peace deal in the next, like two 
+
+[00:36:32] Troy: Maybe you can connect this to your information space idea.
+
+[00:36:35] Brian: How's it connect? I mean, I think it does.
+
+[00:36:39] Troy: I think it does too. Apparently NFL players don't like that. They're just little pawns in a giant betting system. Like they feel like if they make a mistake that someone's going to lose a bunch of money and come and kill them.
+
+[00:36:49] Brian: Oh, right. Yeah, that does suck. But then again, if you look at how much money that they are making right now, it is definitely being helped by all this gambling money. so there's, there's upsides and downsides, I guess. The old heads would be like, Shut up. You're making like 80 times what, what we made and it's not just inflation.
+
+yeah, no, it puts pressure on things. I think overall that gambling in, in society is, is, is a net negative, but maybe it's just because it's not my thing. Do we really want to be a nation of degenerate gamblers? seeing the people at 7am,like in one of those little sad, betting parlors in the UK.
+
+I don't think we want that.
+
+[00:37:33] Troy: unrelated? What do you think of Eric Schmidt coming back and lambasting Google for, degrading under a,massively permissive work, work culture and work from home.
+
+[00:37:45] Brian: Why is it news? is this saying the quiet part out loud? I mean, I think isn't it like received wisdom at this point that, I mean, this is the downside of monopoly, right? I mean, Google had the monopoly. Now we can say it, I guess, because a court has said it, before you had to use these euphemisms, but,they were using that monopoly, and they had a lot of, a lot of people there, and,they had, obviously, every sort of empire gets fat and happy, and the same thing happened there.
+
+[00:38:16] Troy: So do you think in five years, we'll look back and go, there was that little COVID blip where everybody started working from home and then we went to three days and now it's just back to normal and everyone gets on the subway and works in the office five days a week.
+
+[00:38:28] Brian: No, I just think it's a correction. people have already re evaluated like the work life balance, and it went too far, right? I mean, the idea that people have. Multiple jobs, unbeknownst to their multiple full time jobs, unbeknownst to their employers is on the one hand, I like, I totally honor the hustle.
+
+Like, at one of my dinners, I heard the story of and it's not just tech people. There was like a salesperson, two people at the dinner were like, you know, I found out like someone on your team was, was, was also working for me. At the same time they had compared notes and had, had sussed this out.
+
+but yeah, I mean, I think inevitably it just normalizes and they're going to be companies that the marketplace will decide they will be able to pull off this remote situation. I don't think it's made for big companies, but for small companies, I just think about I don't have any full time employees, okay?
+
+I only do frac I have, eight or so people I work with fractionally. They are in California, Nevada, Colorado, Illinois. New York, Miami sometimes, Philippines, Dominican Republic, Germany, it's a competitive advantage to a lot of companies or entities or many companies, whatever you want to call them, to not, Be geographically tied, to like,do all that out of New York makes zero sense to me.
+
+[00:39:56] Troy: Did Schmidt come back and apologize for it afterwards? He
+
+[00:39:59] Brian: Oh, I'm Right. this 
+
+you know what they say in Washington, a gaff is when you, like accidentally, when you get like caught telling the truth. And that's what, you can't, you can't do that. You can't like actually tell the truth like that. And of course he's telling each other. To me it was like more the work from home stuff is like whatever to me.
+
+yeah, all bosses. hate work from home. Okay. Part of it is they have data and part of it is just, they love control. and you don't become a boss without loving control. and also just like overall, like the, the climate has shifted and it's more of that extremely hardcore stuff. But the part where he was talking about to the AI startups, it was just like, go ahead and take it, take the stuff.
+
+It doesn't matter. You can, you get big enough and you'll just lawyer up. If not, who cares? just go and, and take it. That, to me, you want to talk about permissive work culture? What about, a permissive ethical culture?this is one of the leading lights of Silicon Valley, who's basically saying, steal. That's what I heard. 
+
+[00:41:03] Troy: I
+
+[00:41:05] Brian: have, like, a fairness chain. I'm a little self righteous. I'm a journalist. Or ex journalist. I don't know what I am. B2B influencer. Us B2B influencers
+
+have high moral 
+
+[00:41:16] Troy: as a surprise. I mean, it's like aggregate power by harnessing the energy of billions of people around the world talking to one another and turn their communications into media and make unnatural profit margins and create a network effect at the same time.
+
+That's the model.
+
+[00:41:31] Brian: Yeah.
+
+[00:41:32] Troy: Now the model is do all that and then put AI on top of it. So it's even more sort of fortified.
+
+[00:41:38] Brian: Yeah. I guess same as it ever was. I think it was a strategic mistake for AI to go after creative stuff first. It has pigeonholed this technology that clearly is going to march on. And I'm sure at some point it will cure cancer and one, and they started with creative work because one creative work doesn't, they don't have lawyers like other industries do, there's not a regulation.
+
+I'm sure like from a, on a technical level, it's far easier. To like,manipulate music and art than it is, genomes or, anything with real societal value, like I don't know, I don't know. You know, it would be great if they just arrested climate change and then went to the creative stuff later.
+
+I don't know why they put the creative stuff first, from a brand perspective. I think it's problematic because people see it as anti human. They see it. Give me a break. Nobody is like, Oh, I love AI art.
+
+I get complaints about my AI art in my newsletter. I
+
+[00:42:36] Troy: Yeah, I mean, there's no soul. So people feel that. Humans have soul. 
+
+[00:42:41] Brian: yeah. Did you watch the Peter Thiel, or just clips from the Peter Thiel, Joe Rogan? I mean, maybe you listened to the whole thing.
+
+Maybe you, did you raw dog the entire, I can't raw dog Joe
+
+Rogan. I have to, it? recent?
+
+yeah, he just did it like last week.
+
+[00:42:57] Troy: How was it?
+
+[00:42:58] Brian: Well, I saw a lot of clips and I find it really difficult to, I have to choose my word care, words carefully here.
+
+I find it very difficult to listen to like Elon Musk and Peter Thiel. And they're often Silicon Valley characters, but I guess we didn't hear from people who have these, stop and start. Speaking ways, what where they they they sort of glitch out a lot. And there's a there's a viral clip of 18 painful seconds of Peter Thiel just not being able to articulate a word or a thought to the to the question about whether climate science was real.
+
+[00:43:40] Troy: He glitched out?
+
+[00:43:42] Brian: Getting glitched out. It was really, maybe Vanya can put it in. it's pretty painful to watch. But, I, I was very struck by the fact that this has been, become, Very normalized. and again, this to me is one of the corrections, like in this age of authenticity, you could be able to not string a coherent sentence together.
+
+And nobody would be like, well, that's kind of strange that you can't actually just express your thoughts in Cogent sentence. And I guess in some ways, it's good. He's clearly brilliant. Elon Musk, brilliant, etc. I just think from a presentation layer, it's really strange. Again, I go back to Trump, the fact that Trump has completely normalized being in the public arena, and not just saying outrageous things, but just the way people are able to speak publicly and not get any, any, anything negative attached to it.
+
+If. They're not able to articulate themselves in ways that we're, we're used to. I mean, like Obama spoke in perfect paragraphs, like perfect paragraph. And that was unnatural. I think nowadays that would be perceived as phony. Maybe we can bring. Articulation back.
+
+[00:45:18] Troy: Yeah. What do you think of, of the, A16 guys stepping out to be public figures, or, or, kind of loud political advocates?
+
+[00:45:28] Brian: I think it fits. It seems like it fits really well with their overall, thesis, which is the way I understand their thesis is that a lot of VCs and let's be real, VCs are salespeople, the honest ones, will admit that they're salespeople, 
+
+[00:45:45] Troy: I don't think that's, I don't think that's true, but I mean, everybody's a salesperson to some extent. There's got 
+
+[00:45:50] Brian: yeah, but it's a 
+
+[00:45:50] Troy: of, it's an analytical role.
+
+[00:45:53] Brian: The best salespeople are analytical. It's just a, it's just a sales
+
+[00:45:56] Troy: Okay, but make it, make your point. I get it. You
+
+[00:46:01] Brian: VC friends? I, I like salespeople. I, I have a sales role too.
+
+[00:46:06] Troy: know, you're very personable.
+
+[00:46:08] Brian: I don't like the best salespeople. They don't know that you don't know that they're salespeople. no, my point is they, they clearly believe that a lot of VCs do not support their portfolio companies, the experience of, of. Both of them, I think, I think both of them are at LoudCloud, but at least Ben Horowitz at LoudCloud, sort of informed that.
+
+And so they said, well, we're going to build all this back office operations and we're going to be a real company, not just five people are often on the slopes in Aspen. Why not? And just making introductions. and so it makes sense that they would then say, Hey, what are the things that our portfolio companies need from us and that are best done in a centralized way?
+
+One of the services is advocating for, particularly as tech becomes, far more regulated, is advocating for them in the political arena, and we can build up Our own sort of media. That's why they were very much in the go direct mantra, and we can exert pressure by being these, public facing characters, and we'll get involved in the political realm and and we'll exert pressure because technology is just yet another power center in society.
+
+I mean, I can remember, 20 years ago, tech thought they were above dealing with, with politics. And that's crazy to think
+
+[00:47:28] Troy: Does it make making, does it make taking money from them a political decision? Or is it just money?
+
+[00:47:34] Brian: I don't, I mean, I guess that depends on the, the
+
+[00:47:38] Troy: I don't think Alex would feel good about taking money from A16.
+
+[00:47:41] Brian: Really?
+
+Well, 
+
+[00:47:42] Troy: let's ask him when he comes back. I don't think he would be, he would rationalize it. I don't mean that in a bad way. I just mean that you know, it's easy to be, it, it makes sense to, to have a point of view as a venture capital firm, right? Is it, but is, are, is the world of sort of industrial or capital or financial titans having a bigger say in the political world, just a kind of return to the kind of robber baron positioning of the past 
+
+[00:48:16] Brian: Yeah, they're just the normal that's just the same old same old but there was just an abnormality Where for a bunch of strategic reasons I feel the technology industry Pretended it wasn't some massive power center the same as financial services is the same as you look down the top donors right and You've got real estate in there Massive industry, financial services, massive industry, and you don't get to like technology wasn't represented on there and these people are, being politically active.
+
+I hate to say it, not just because they out of strong beliefs, but because this is how this is how you work the system. So they're just working the system,
+
+[00:49:02] Troy: got it, 
+
+[00:49:02] Brian: right? Am I too cynical? I'm going on vacation.
+
+We live in a democracy.
+
+[00:49:09] Troy: You've been called cynical in the past. I think you're less cynical than you once were. That's what happens when you become a seller.
+
+[00:49:14] Brian: Yeah, totally. You gotta paint, you gotta paint a picture. I'm painting a picture out there.
+
+[00:49:18] Troy: All right. Well, you had a good product this week. 
+
+
+[00:49:20] Good product
+---
+
+[00:49:23] Troy: did see this, that, Esquire has, line of perfumes that they've come out with. all for every brand extension. They have one, I think, for, for editors. I'm not sure what that smells like. What's it called? What's that one called? Is it, is it editor in chief or something like that?
+
+[00:49:41] Brian: editor in chief.
+
+[00:49:42] Troy: So it smells like, tobacco and frankincense and sweat,
+
+[00:49:46] Brian: coffee,
+
+[00:49:47] Troy: still coffee.
+
+[00:49:48] Brian: desperation.
+
+[00:49:51] Troy: Well, good on them. They got the product out. Let's see if it sells.
+
+[00:49:54] Brian: whatever you have to do to make money these days. I, did you see that, that time had, had another round of layoffs. This is the second round of doing the drip drip. They, they had around, about 30 in January. And then they, just today, just cut another 20. I don't want to say she did, but she just sort of did like another 22.
+
+these are tough businesses.
+
+[00:50:14] Troy: that one is interesting, right? I wonder about that. So I think that he paid 190 million
+
+from 
+
+[00:50:22] Brian: and his wife, 
+
+[00:50:23] Troy: Yes, but paid 190 million for it. I would expect it to do somewhere around a hundred million in revenue and lose money. If you've ever been to their office, it's pretty fabulous. So there's a. There's been a, a pretty significant cost structure in the business.
+
+And, and, and that office is from, it's from Salesforce. But
+
+ultimately it's going to hit the P and L everything has, comes back to reality. And then you've got a business, still got a lot of print revenue in it, which has got to be going the wrong way. And you start to crank out the events and events are great, but they, They plateau and their video production business is admirable, but you know, I don't think it's a big moneymaker.
+
+And then you have lots of pressure on advertising and it sounds like they have a very, maybe a difficult and not hugely profitable affiliate deal with Taboola. So you put all those things together. And to me, it smells like, A business where it's hard to make money. And so I admire Jess, actually. I think that, she's, she's got to make tough decisions.
+
+22 people's what, what do you think? 10 percent of the workforce, something like that. And,I'm sure her boss is putting a lot of pressure on her to, to at least get the business to break, even if not a little bit of profit. And the question is like,it was fun for a while. I don't know how fun it is when you're like a rich, fabulous guy to go to a bunch of time events constantly.
+
+but I guess it's fun for a while to own a media brand. At what point does it become not fun? And then what? Then do you, take the tax write off and turn it into a foundation or something like that? Do you,do you try to sell it? It's not, I think it's going to be a tough exit. I don't know.
+
+[00:52:11] Brian: I will say this, like it goes, it just goes to show that, so many rich people come into media and lose money, like so many, they cannot figure it out. this is not, I've heard from people that there's the talent is just not there. Jeff Bezos, like Benioff,
+
+[00:52:31] Troy: Meanwhile, meanwhile, I think there's all kinds of great media businesses. It's just, they don't look like what they used to look like. So, there's lots of really profitable affiliate businesses. There's lots of really, profitable, creator businesses. You know, I was wondering about like, I had a video surfaced in my feed on YouTube and you know that I think that I was talking to like a guy roughly my age the other day who said, yeah, if I have free time, I just turn on YouTube on my television and that's much more satisfying than getting into some kind of mediocre series on Netflix.
+
+And I couldn't agree more. And, I noticed that there's a, A guy, I think he's on the pro tour. He plays in the big tournaments, a golfer named Bryson DeChamot.
+
+[00:53:18] Brian: Oh, I actually know him.
+
+[00:53:19] Troy: and I think he went over to live and they paid him an egregious amount of money. But he has this show on YouTube. called break 50, which the concept is find someone that's fun to hang out with, play around a golf and try to break a, around a 50, which is extremely hard to do.
+
+You gotta get, you gotta get a few Eagles and tons of birdies and it's, it's hard to do. It's like a 50 minute show. the one I watched had John Daly on playing golf barefoot. And he's an incredible creature, oddly gifted in the game of golf and, seemingly always, constantly drinking and smoking.
+
+He says, he made the comment that he drinks 20 to 30 of his, branded, vodka, uncarbonated vodka drinks a day, which can't be good for you. and so he played barefoot and, And it was like a really engaging 50 minutes, probably shot for a small amount of money. And I just think it's really interesting where. We, we grew up, I mean, I grew up in a place that had two stations, CBC and CTV primarily. and then cable added a bunch more
+
+[00:54:30] Brian: You only had two? You only had two.
+
+[00:54:32] Troy: too. Yeah.
+
+[00:54:33] Brian: See, in America we had, we had three.
+
+[00:54:35] Troy: Yeah. And,we, we have this idea that all entertainment, video entertainment in particular comes from the kind of like media industrial complex. Like we make shows in a certain way, they get funded, we do pilots, all that.
+
+And, Now we're seeing what really happens when you open the aperture up to include everybody and give everybody shelf space. And what's come out of it is kind of shocking. It's like there is a world of entertainment, that is incredibly engaging. That's not made by production companies and, and big media companies.
+
+And, YouTube is ground zero for all of that. And it's, it's fascinating.
+
+[00:55:14] Brian: Yeah, we actually, I actually got a note from a listener a couple weeks ago. I won't reference their name because I didn't ask. but they wrote a huge story in golf media is the rise of golf YouTubers such as Grant Horvath. I didn't get a chance to, to check all these people out because I'm not in the golf.
+
+Good, good. Bryson, who you just mentioned and who had Trump actually on his channel. Busted Jack, Taco Golf, and more. Taking legit share from PGA and Live. Tremendous, tremendous watch time. so,
+
+[00:55:47] Troy: Well, right. That's, that's kind of my point is like, here's an, here's a guy who's, in the old days would have just made his money from sponsorships and being paid by the tour and, is now, just kind of building this amazing media format on, on YouTube. And I think it's a sign of the times and it's actually, an entertaining show.
+
+[00:56:07] Brian: Yeah, I think it's, it's funny because I think sometimes we spend and I definitely spend too much time, not only too much time, but a lot of time on the part of the media industry that is, let's be real, it's shrinking. Like it's not, I don't really see, I mean, some, there's a growth story at some places, but overall the professional part of the media business, whether it's.
+
+cable TV, whether it's newspapers, whether it's magazines like it is in some form of decline. And if you just look at that, you think, Oh, my God, the whole media industry is just terrible, it's awful. But actually, there are tons of areas that are growing. They're just, it's just so decentralized. and the cynic in me says that this is only going to accelerate because this is a trend that the giant platforms Love like they like this.
+
+They don't want to deal with big media companies Why not just have a bunch of like small niche? Players.
+
+[00:57:16] Troy: Yeah. There's another thing too, Brian, and it's when you, let's say you have a of a couple hundred people. And you have, you adhere to kind of an old model of media monetization, which is, we're going to, we got a brand. So we, we, we kind of know roughly what defines us and then we're going to go out and build up beats, around.
+
+audience demands or, hopefully audience demands plus monetization potential. And we're going to make that content and we're hopefully build an audience and package it up and sell that, that, that media someone, and, that's the conventional, sort of media architecture.
+
+And I just think increasingly, it's a tough time right now to align your content investment. To your monetization strategy. And that's what really needs to get done. Because if you, if you just hope that you're going to build up enough audience that you can sell impression based media on top of it, you're going to have a whole lot of pain and just because that, monetize gainfully enough to, to make it all work, the investment in content.
+
+So you have to be really, really strategic in where you, Kind of are building a community It's not even about building just a feed of content or letting a bunch of reporters loose on a beat. You got to build connections and those connections have to have monetization potential. And that has to come in the form of you're meaningful enough that someone will pay you.
+
+You're meaningful enough that someone will work through you to access a motivated audience and an engaged and loyal audience, or that you're close enough to a transaction where we can piggyback on you to make it work. And what it does is it just means you've got to get really strategic about your content investments.
+
+[00:59:07] Brian: Well, I think it's hard I think that's totally right because a lot of monetization is taking place indirectly, right? So, how do you tie that before? It was easy. I'm not easier. Nothing is easy in media, but, you could beat the newsroom over the head about page views. You could make, you could make a correlation between their ability to produce page views and the money that you made from advertising.
+
+You could do like business insider. Like you, you have a quota. You have to, they didn't call it a quota, but as a quota, you have to produce this many, subscriptions. People have to subscribe after reading your article. Now. Leave aside the fact that people were subscribing, hopefully to a bundle of content, not just the single piece, but, when you are indirectly monetizing, think about like a model like time, right?
+
+If you're, they're indirectly monetizing a lot of the content, right, through ancillary events and like the kid of the year ceremony and whatnot. it just seems like it's very difficult. To actually figure out, I mean, this is what you're saying. Like what the level of content investment in, in these kinds of models where the content often is playing an indirect role.
+
+[01:00:22] Troy: Yeah. And in fact, I just went through this exercise analyzing this media company that we've been looking at. And, I divided it, the revenue streams of which there's like eight of them into media and media adjacent. And it's pretty clear that the media adjacent stuff, whether that's, affiliate licensing, accolades, et cetera.
+
+that that that part of the revenue was really saving the PNL. And then what it forces you to do is go back to the other side, which is sort of all the impression based media stuff and say, How much am I investing to keep the IP? alive, aspirational, to sort of future proof it, all of that stuff, just because we want to keep the brand, we want to make the brand vibrant in the long 
+
+[01:01:05] Brian: yeah,
+
+if you're monetizing and I keep going back to time, but on the person of the year and like, you have to pop up with, you're going to get the interview with Kamala, you'll get the interview with Trump, you'll, you'll get the Pope, I guess, if he's still giving interviews. And that's great. But like when you're not making the majority of your money, you have to just keep the brand plausible and have enough journalistic heft.
+
+If you're looking at this purely from a business standpoint and putting aside mission and all the other things, It's, it's a hard calculus to make. I mean, I saw it just, at my last job, we were, the company was,you know, up to 85 percent events revenue. Now, there was definitely discussions in the company is like, why are there, why is the biggest department in this company, an editorial group, when 85 percent of the revenue comes from events like shouldn't, shouldn't there just be, shouldn't we just put more resources into the events, not selling any advertising on this stuff.
+
+Sales team said they couldn't sell the ads, which I couldn't understand. and then we, we developed a content studio owners. Then the percentage goes down, but it's an indirect model and understanding how you're going to make the investments in that kind of model was. Honestly, a lot of art.
+
+More art than science. There's more gut.
+
+[01:02:26] Troy: Totally.
+
+
+[01:02:27] Outro
+---
+
+[01:02:27] Brian: Should we leave it. there? What are you doing for the end of the summer? Shelter?
+
+[01:02:32] Troy: I'm going to go to shelter on.
+
+Yeah. 
+
+[01:02:34] Brian: Do 
+
+you want me to bring you back anything from Italy?
+
+[01:02:36] Troy: yeah. Could you bring me some sun dried tomatoes?
+
+[01:02:39] Brian: I don't know. You're not allowed to bring agricultural products into the country. I like to stay on the straight and narrow.
+
+[01:02:44] Troy: you bring me like,that cured pork, like a whole.
+
+[01:02:48] Brian: Okay. Livestock products, I believe, are alsoUh, dried pork? Sure. Sure.
+
+[01:02:56] Troy: all right
+
+[01:02:56] Brian: All right. This is fun. 
+

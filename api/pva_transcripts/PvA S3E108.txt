@@ -1,0 +1,817 @@
+PvA S3E108
+===
+
+
+[00:00:00] Open
+---
+
+​
+
+[00:00:01] Brian Morrissey: Do you have a hotel recommendation there? 
+
+[00:00:02] Troy Young: there's a hotel I like that you could stay
+
+at. Try the NoMad. See if you can get a good deal
+
+[00:00:07] Brian Morrissey: Okay, yeah, all 
+
+[00:00:09] Troy Young: It's in Covent Garden. It's nice. I like
+
+[00:00:11] Brian Morrissey: I don't like Covent Garden. 
+
+[00:00:12] Troy Young: It's, 
+
+got a nice library. It's, where do you want to go?
+
+What I don't know. I don't know where I need to be. 
+
+
+[00:00:17] Intro
+---
+
+[00:00:17] Alex Schleifer: ​
+
+[00:00:40] Brian Morrissey: Welcome to People vs. Algorithms, a show about detecting patterns in media, technology, and culture. I am Brian Morrissey, and each week I am joined by Troy Young and Alex Schleifer. This week, we have to focus on the election. I'm sorry, we do. The return of Donald Trump to the presidency is a remarkable comeback, that also marks a return to the disruptive years of his first term.
+
+And, for the already hard hit news business, Trump is the ultimate complexifier, to use Jeff Bezos great term. and his return comes, At a time when the overall publishing business is really in the midst of a structural change, that's put unprecedented pressure on its business models. This is something we talk about regularly on the show.
+
+and it got, it got us thinking about the winners and losers from this election. So I wanted to to run through a few of, my own. one is, is the creator economy is clearly a winner without a doubt. I don't know what else to call this. I, I've been trying to call it the Indieverse.
+
+I mean, how surreal was it to have, during Trump's, victory speech, Dana White get the microphone and then he's shouting out the Nelk Boys, Theo Vaughn, and Joe Rogan. I mean, just, just rewind, say like even just five years. And and think about that as a possibility. It's really strange. and this was truly a podcast election.
+
+and it proved to me that the era of mainstream media is giving way to something far more decentralized. and this is just a capstone of this. And that's why I think that the mainstream media overall is a loser. I know this might be piling on, but, you know, we've got to face face reality.
+
+many of the themes that were pushed out by mainstream news organizations, whether it was that comedian at Madison Square Garden, or other issues were just simply roundly rejected in the marketplace, which is the electorate. I mean, and the old saying is elections have consequences. And, and this is yet another wake up call that this trust deficit for the packaged news media is, is wide and it's growing to the point where it's not, it's not clear if it can be narrowed over time.
+
+as it was put to me the other day, by someone very plugged in in Washington, Ben Shapiro and Joe Rogan are more powerful than most news organizations. That's difficult pill to swallow, but I think it's actually fairly accurate, particularly, Over the next four years, of the other winners to me was poly market.
+
+You know, it had a lot riding on this election. you know, it is a basically it's a betting site and they call these things prediction markets, but they're just betting. and a lot of times it's odds were doubted. It was showing trump winning for a long time. and and there was a lot of reasons that were put forward again by the mainstream media.
+
+and they derided, you know, these odds as being easily manipulated. and in the end. Polymarket kind of got proved right, and that's why I've long thought that Polymarket has the makings of a really intriguing media company. because after all, you know, I often say that, you know, media will be the front end to a lot of different business models, that are not the typical media business models.
+
+And I think Polymarket is a great example of these kind of quasi media entities that we're going to see. That, fill the void in the information space. some more losers, pollsters. polling has gotten more inaccurate during the Trump years. Nate Silver ran apparently 60, 000 simulations to conclude that the race was a toss up.
+
+And then hours later, it became very clear that this was not the nail biter. That that he and every other pollster set now, they will hide behind the idea that these are are just odds and all that. And it seems like, you know, heads, they win tails. They still don't lose. reality is they have a credibility problem on par with when the weather channel went through that period of time when I kept typing up massive storms and never arrived these days.
+
+That's a safe bet. Massive storms to arrive. and I think another winner as a whole is the information space. Notably, Elon Musk's bet on on X is looking very different right now. I mean, I think it's hard to doubt that X is a very consequential media entity, particularly After the rightward shift of the electorate.
+
+Elon Musk might not be able to sell many ads there. I still do not believe this will be a thriving ad business. but the goal of billionaires dabbling in media is not great returns. I mean, I can think of few worse areas to make money these days than media, but it's to accrue power. and in that sense, mission accomplished.
+
+And finally, another losers are the billionaires as media saviors. At least, this is an idea. I mean, Jeff Bezos made a sensible business decision right before the election, and this also proves that, to me, my theory that the billionaires have way better data than the rest of us when it comes to um,Polling in these elections in not risking lucrative government contracts for, you know, what was really a pointless endorsement of Harris, you know, and I know I've talked with lots of people who say, well, it's not about the endorsement.
+
+It's about the bending the knee and all of this and like, yeah, I get that. But here's the thing. The entire idea of benevolent billionaire is an oxymoron. You do not become a billionaire through benevolence. Just not, not in the DNA. Now Patrick Soon Shiong at the LA Times has proven this. Mark Benioff is throwing in the towel on Time.
+
+This is the latest in a long parade. Of billionaires that have come into media have gotten, punched in the nose and I've quickly retreated. This is not a business for the faint of heart. It looks much easier on the outside than it is on the inside. We discuss all this on the show today. and then Alex spends a lot of it wondering whether any of it matters because the news media is in terminal decline.
+
+At least that's his point of view. Hope you enjoy the conversation. And if you do. Please leave us a rating and review wherever you listen to this and send me some feedback. bmorrissey@therebooting.Com. we did guest on last week. Moksha, Fitz Fitzgibbons. we're hoping to have more guests.
+
+I want to see if, that's what people are interested in. I think it's a good to mix in, mix in both formats. Hope you enjoy the show.
+
+
+[00:06:17] Media in Information Space Election
+---
+
+​
+
+[00:06:18] Brian Morrissey: I think it's best to look at this a little bit clinically. I look at it as just trying to dissect it through the lens of all the stuff we talk about on this podcast. So, Maybe we probably will not get to, mystery of, of Latino voters, et cetera. That's probably for the best, but I want to, I want to get into what this means for the media industry going forward, because I think this is the first information space election and it, it gave some verdicts that's for sure. First, what about their, your experience, watching it. Troy, you were traveling, right?
+
+So you did not, you didn't tune in to CNN or 
+
+[00:06:57] Troy Young: I was traveling, but for the beginning of it, I was sitting in an airport lounge. and so I was listening, and watching, on my phone. I was very curious about how. Brian Williams and his production group would spin up a new kind of show and that was the Amazon Prime show and I watched, I watched that and would flip back and forth to, you know, CNN. The interesting thing about the, the, the Prime special was, was kind of awkward. They didn't really have. You know, the, the kind of run a show down and, he kept getting interrupted by these announcements and they were sitting in this MGM, projection facility, that's like a mini version of the sphere. So they had these crazy, you saw it, right,
+
+Brian. They had those crazy, crazy backgrounds. what I liked best about it were,
+
+were the guests. So they hadPeter Hamby and Scott Galloway. And
+
+[00:07:55] Alex Schleifer: they have
+
+[00:07:56] Troy Young: I thought it was funny that They brought Dan Harris on to give people breathing exercises. They had like TikTok influences, influencers. 
+
+[00:08:03] Brian Morrissey: Did they have a Calm, integration?
+
+[00:08:06] Alex Schleifer: almost like
+
+[00:08:07] Brian Morrissey: They should have.
+
+[00:08:08] Alex Schleifer: Yeah 
+
+[00:08:08] Troy Young: So it was, It was a little hodgepodge, 
+
+but it was kind of fun. And I thought that the talent that they brought in was refreshing, not like classic cable television talking heads. So there was a really nice kind of amateur thing about it. and, it was almost like the internet came to the, to the broadcast studio.
+
+So a lot of people from the kind of emergent world of podcasting, next generation media, you know, the sort of column columnist ization of the world. Those people are perfect for people like Peter Hamby. Who's great. you know, those people were great additions to to the coverage and it felt. It felt more both informative, I suppose, and, you know, kind of interesting, and it touched my world more than the CNN approach.
+
+[00:08:59] Brian Morrissey: No, I totally agree. I mean, it, it was amateurish at, at, at times, but I kind of like that. And I think that's like overall what we're seeing in, in the media world, all the high production values, are declining in many ways, in giving you sort of any advantage in the marketplace.
+
+
+[00:09:16] Media Isn't Looking Good
+---
+
+[00:09:16] Brian Morrissey: And I thought it was interesting, you know, it wasn't the same old
+
+thing, but it wasn't totally, totally different. And so. Good. And I think we're going to have more of that going forward because I think a big takeaway from this, I want to get into the winners and losers, but I don't know if this, you can come to any other conclusion, but this is like. Sort of the end of the mass media era, in some ways, because this election was not really close. And I think a lot of us expected it to go this way. But, you know, this is coming on the heels of basically since, um.Donald Trump rode down that escalator. you know, institutions have failed to respond in any kind of way to the challenges that he has presented. And to think that a decade on, you know, they've been thoroughly repudiated and the media doesn't come out of this looking good yet again. And when you look at,all of the challenges that we talk about every week on this podcast,
+
+[00:10:13] Troy Young: Can you be more expensive? it doesn't look good. Why? Because it got it so wrong. No,
+
+[00:10:22] Brian Morrissey: the trust issue, right, is that I believe that a large group of this population. Does not believe that the media focuses on real issues. The guy telling jokes at Madison Square Garden. Well, that clearly wasn't the big issue that the media was making out to me. Nate Silver, you know, who, you know, is a great example of the expert class ran 80, 000 simulations to find that it was a dead heat.
+
+Guess what? It wasn't a dead heat. At all. the overall, the entire polling industry needs to be emulated. It needs to be rebuilt. It's clear that whatever they're doing from and seltzer to all of the data jockeys is not working at all. And then you look at the issues that, you know, the mainstream media, the packaged media has been pushing the narratives of, you know, Donald Trump is an existential threat to democracy.
+
+Guess what? People voted. And, and they voted, they said the top issue was, you know, protecting democracy and they voted for Trump. that's just L's across the board. I don't think there's any other way to spin it. Am I wrong here?
+
+[00:11:33] Troy Young: you're right.
+
+[00:11:35] Brian Morrissey: Okay, so that's a big 
+
+loser. 
+
+[00:11:39] Troy Young: Well, well, what, what else did you look at? Let's, let's, let's keep going on this. I'd be curious what Alex is doing other than when he went, maybe he went to his bomb shelter, but,you know, I, I was, I think one of the better predictors for me is I kept, I was actually trading a bit of coin, bitcoin at the same time.
+
+[00:11:57] Brian Morrissey: You weren't, were 
+
+[00:11:58] Troy Young: I was, honestly, yeah, and I, so I was, I was on Coinbase a lot because I thought that the price of Bitcoin was a good predictor of where it was going. 
+
+[00:12:07] Brian Morrissey: one of the things I would say is I, I watched the beginning of this like I was getting dinner in, in Miami and nobody was watching the TV. Nobody like zero people. More people were vaping than watching the TV.
+
+[00:12:20] Troy Young: well, the,
+
+the Times did a good job. Again, I'm not talking about the content or the coverage. I'm talking about the, the interface was great.
+
+[00:12:28] Brian Morrissey: well, I got the needle back. That was good. I mean, 
+
+the tech 
+
+[00:12:31] Troy Young: had the they had the needle in every, in every state. it's just the way they presented information was, cool.
+
+[00:12:38] Brian Morrissey: Alex, what was the scene on threads?
+
+[00:12:40] Alex Schleifer: Oh, uh, I, I turned everything off and I just checked this morning. I don't know. I didn't sleep. I was trying to, listen to a movie podcast. and fall asleep, but I couldn't fall asleep. And then this morning I just checked and that's, that was that. I don't understand why people would, commit themselves to so much suffering of looking kind of numbers go up or down for hours.
+
+I wasn't, I wasn't into that. I think it was too consequential for me for it to become.
+
+[00:13:08] Brian Morrissey: Yeah.
+
+[00:13:09] Alex Schleifer: So, I don't, I don't, you know, my wife and I both turned this things off and just, I played video games and then went to bed. 
+
+That was it. People started texting me screenshots and shit.
+
+And I was like, I just turned the whole thing off.
+
+[00:13:22] Troy Young: Alex, when you woke up, where did you go?
+
+[00:13:24] Alex Schleifer: I use this thing called brick for my phone, which basically it's like a little thing puck I put on my fridge and I tap my phone against it and it turns off all the apps. So the only thing I had available was like. first I, I, I checked our threads, our, our little message group. there was nothing useful there.
+
+and then I went, uh, I went to CNN and BBC and Google news. and then I went to threads and, you know, threads is like. Just on fire right now, because I mean, obviously people were in a bubble in there, people in different bubble on Twitter, but, you know, the grift, the grift of sphere has, has won out.
+
+I think the next four years are going to be insufferable. 
+
+
+[00:14:06] Winners
+---
+
+[00:14:06] Brian Morrissey: Okay. Well, let's get into, let's get into the winners. I I, don't know how, I don't know how, like, my Elon derangement syndrome is gonna, is gonna age. I, I stand by it. I
+
+well, he's
+
+good. 
+
+[00:14:16] Alex Schleifer: I was proven right. 
+
+[00:14:17] Brian Morrissey: He's going to stay. in the United States now. He's not gone to the Hague. so we'll get rockets and the rest of it. We might get some other stuff. but let's talk about the winners. you mentioned the grifter sphere. I mean, I would maybe like explain what you mean by the grifter sphere.
+
+[00:14:31] Alex Schleifer: it's the Joe Rogan, extended universe. Cinematic universe, right? It's like that whole, podcasting, mostly podcasting, YouTube manosphere supplement selling, you know, centrist posing,you know. Platforming, whoever wants to talk to you for three hours.
+
+vaccine denying,kind of environment that's like, that's one over, like we, I think people 
+
+[00:14:59] Troy Young: So you're a, you're a fan. 
+
+[00:15:01] Alex Schleifer: Oh, a huge fan. Yeah. Yeah. I love, I love this stuff. I think it makes, it makes us safer and smarter. 
+
+when the guy that used to make people eat like elephant balls on TV and cockroaches now, you know, helps a presidential candidate when that's great, it's 
+
+[00:15:17] Brian Morrissey: Yeah, it is noteworthy that Dana White, like, took the, took the microphone at the, the Trump celebration and, and called out the Nelk Boys and, and, and Joe Rogan above, above all else. the All In guys didn't seem like they got any, got any shout outs, which is a shame.
+
+But I think it's pretty clear 
+
+[00:15:35] Alex Schleifer: online guys fit in a different category, which is all the. The billionaires, and masters of industry that were seeing the tide turn and decided to suck up to the new king before he was new king, knowing that if by chance Harris would win, she wouldn't be as retaliatory as Trump would be.
+
+So everybody shows up great
+
+[00:15:55] Brian Morrissey: man,
+
+[00:15:57] Alex Schleifer: I'm the cynical one. My God.I don't know. Maybe it's because, A European education teaches you a lot about, the dangers of, fascism. 
+
+[00:16:06] Brian Morrissey: but that was rejected by by voters. and,you can't sort of get around that.
+
+[00:16:11] Alex Schleifer: And to be fair, the election went relatively smoothly, you know, if you want an upside
+
+[00:16:15] Brian Morrissey: Yeah. but
+
+it's very clear that the, the, the podcasters did come out as a winner in this. And I think broadly speaking, if you talk about the decline, we've talked about a lot of mass media, a lot of this influence is leaking out to places like podcasting and what I call the indiverse. and that has emerged. As to me, a clear winner, Troy, what do you think?
+
+think that's true. I think that, The Rogan thing that Trump did in particular went a long way to sort of humanize him. And I think this style of conversational media was really important in the election. you know, I don't think its influence was, over emphasized or overestimated. In terms of the winners, I think Alex is right. The Bros won. Elon won. Seemingly corporate America will, will benefit. I think that type of sort of center, right? Partisan media did great. I think, you know, in the end, everybody. Aided on JD Vance, and he turned out to be the sort of president of the Yale debating club and, I think showed up as a. you know, a confident sort of, to, to fight Trump's battles and never back down from them. I think this will, position him incredibly well. if you're in fossil fuels, you're probably a winner. Let's stick to media.
+
+[00:17:34] Alex Schleifer: well, I mean, if you're, yeah, it's true. If you, if you're the planet or women, you kind of, you know, 
+
+[00:17:38] Troy Young: Yeah. Well, the losers, the losers were clearly, clearly women, DEI, probably broadcasting, 
+
+[00:17:45] Alex Schleifer: but I 
+
+mean, even if you look at, even if you look at the media landscape that, that, you know, the griftosphere, as we call that, it's mostly male, it's, it's so bro-y it's incredible. And the voting patterns lined up 
+
+[00:17:57] Brian Morrissey: but, but this is like, Trump
+
+won everything. he didn't, it's not a male thing. if you look at it, it's like he won, he won 10 points more in Manhattan. this is an utter repudiation. I, I don't, I'll give people a few days to sort of get over their hurt feelings and stuff. But it's, it's time to look inward.
+
+this isn't a messaging problem. It's a product problem. 
+
+[00:18:16] Troy Young: the coalition is, is broken. It, there's a big problem. don't know how you, if you're the Democrats, you have to do a huge amount of soul searching about what is fundamentally bringing a group of people together.
+
+
+[00:18:29] Finding the Path Forward
+---
+
+[00:18:29] Brian Morrissey: I want to talk about the media's role in this, right? Because after 2016, we were told it was Russia. And we were told it was Cambridge Analytica. And it was Facebook. All these different things that we were trying to explain a phenomenon that people didn't like. Right? And there wasn't like a reality. People got JD Vance's book to try to understand it for a little bit, but there wasn't really an acceptance of reality that this very unusual character had tapped into something that is broad within the American And electorate and just the American people. And at first it was, and it's still, you hear, oh, it's just, you know, racist and all of this, and that just makes it even worse.
+
+And then all of a sudden, he's broadening a coalition to include, Latinos and it trumped into terrible really with, with women overall. And so it's hard to really, I don't see how you come out of this without, thinking a lot about how the media has, the mass media in general, has just not figured this out. And I don't know if, I don't know if it can at this point, and I don't know where it goes from here. is it like 2017 where it goes back into the leaders of the resistance, right? Does it make an accommodation like the billionaires? I don't know. What do you think is the path that that will be taken? People are going to have to figure out a path. And I think what Bezos saw was he saw the numbers. Here's another thing. I think clearly there's a lot of people who had way better numbers than the ones that we were fed
+
+[00:20:01] Troy Young: Clearly, there was a memo went around to the billionaires.
+
+[00:20:05] Brian Morrissey: Yeah, I don't know what their pollsters are like, but they're clearly better.
+
+They're, they're running better simulations than, than Nate Silvers. because that was a clear choice. And I think Jeff Bezos comes out of this actually in a weird way. People won't like to hear this, but as a winner, you know, he hedged the bet when it was a good idea for who, for what, like he's not going down with, you know, consternation in the Washington post newsroom.
+
+He's not going to do that. Um, 
+
+[00:20:30] Troy Young: know, Brian, you make
+
+the, things you just said resonate so much with me, and I think that it will come, you know, I call that, you know, you need a new coalition, which is a set of ideas that that brings, you know, people together and gives you something that collectively can represent the energy of a country, because what has the, you know, GOP done, there's been a complete realignment of the working class to the GOP. Right. And, they've completely taken sort of non college educated Americans from the Democrats.
+
+in this election, major unions declined to support the Democratic Party, which is a break with history. They lost Latinos, They lost black men. They, 
+
+[00:21:17] Brian Morrissey: not, not really.
+
+[00:21:18] Troy Young: no, not, no, but I mean, in terms of percentages 
+
+relative to the last, uh, it eroded, right? 
+
+And, and, and white suburbanites shifted even more strongly to Republicans. 
+
+[00:21:28] Alex Schleifer: when I step 
+
+[00:21:28] Troy Young: you, you know, when I step back I, I, don't know. In addition, to needing this kind of, like, new ideas that can align a group of people that are just not the sort of talking points that seemingly came outta the media that didn't resonate at all.
+
+and I'm, I, I'm saddened by what I think was, in America, is just kind of basic sexism from actually both men and men, men and women. that It's really hard to get a female elected president in this country. I
+
+think that there is, broadly speaking, and I don't know the best way to frame this, but I think it's just a pure, a woke backlash, where what people don't want, 
+
+[00:22:11] Alex Schleifer: don't 
+
+[00:22:11] Troy Young: this is, kind of what is, understood broadly to be this kind of sensitive, liberal, woke mindset to be the defining characteristic of this, you know, time. And voting for Trump is a complete rejection of that. you know, you can't talk about this without, I think we'll look back and say, well, we had a really weak candidate, you know, like like Kamala and I think she's I just find her likable as a person, but I think as a leader and as a presidential candidate, she was, she was unable to separate from the Biden legacy. she lost on Israel. She lost on, on immigration. She lost on inflation. She lost on like all the issues. And so all of these things together. And, and I, and I think That, you know, I don't know how, you know, what kind of Trump's savantess kind of understanding of his core constituency in, you know, is like, he obviously has a very good sense of what people want, and I don't think it's coming from, you know, a bunch of strategists. And that one, it just did it one in a democratic system. And so the other side is like, you're right. Like what was the media's role in this? And what does it mean to the, to the DNC? And I think these are, these are really complicated questions that need to get resolved before another election.
+
+
+[00:23:40] Political Advertising
+---
+
+[00:23:40] Brian Morrissey: Yeah, Kamala Harris also spent way more money on advertising and I mean, Trump put a lot of money in advertising, but also that needs to be recalculated in a, in a world where mass media has clearly lost its central role in society. This, the political class, the political consultants love to pour money into advertising because they run the firms and they get rich off it. I mean, it's crazy. This makes ad tech look like, you know, uh, a charity business. But, it didn't work. Like, I mean, I think, like, you spend a billion dollars to do worse. you're literally starting off in this country, like, you've got Donald Trump up against you. You're starting off with, like, 40 plus percent. That's, that's your, that's your basement. Like, that's, that's, that's where, you know, it is. And you're just building on top of it. And you spend a billion dollars? 
+
+[00:24:34] Troy Young: More than a billion, you know, the other strange thing is the normalization of chaos, like our culture has become so accustomed to just chaos
+
+and I think it's, I think it's exhausting.
+
+[00:24:47] Brian Morrissey: Well, I think that is, is interesting is when we talk about how, you know, journalists cover, the Trump return, it's, it's going to be in 2017 to 2020, there was a lot of those, you know, I, the Washington Post, I think, actually started, it was like, we talked to 43, you know, unnamed officials. And then it was like, okay, somebody's fighting with somebody.
+
+Trump's raging. I mean, Maggie Haberman was like, you know, it's like, oh, no, Trump's raging. It's like, oh, God. I mean, we clearly can't go back to that. And also, again, it's just wholesale rejected. I go back to the nobody was looking at those at the TVs. I don't think Trump too. And I could be wrong. I don't think it's going to, I think covering it the way it was covered with who's up, who's down, makes no sense. At all, because of that exhaustion that's been set in now, people, the, the, the, you know, this is the popular voice has been heard. So people want this guy in office and they clearly agree more with his policies and Kamala Harris is, but how the media covers this, I think, has to change and I don't know whether they fall in line.
+
+I don't think that's obviously 
+
+[00:25:59] Troy Young: people don't, I mean, just stating the obvious, people don't trust and they don't care. The media didn't change people's point of view.
+
+[00:26:09] Brian Morrissey: But I guess the question ends up being, is that the job of these news organizations, right? Is it the job?
+
+[00:26:16] Troy Young: Well, sure, of course it is.
+
+[00:26:19] Brian Morrissey: It's to change people's points of view.
+
+[00:26:21] Troy Young: Well, I mean, I'm not saying that that in a partisan
+
+way, I'm saying by informing people, yes. 
+
+[00:26:29] Alex Schleifer: I say that your policies without those, all of 
+
+[00:26:34] Troy Young: So what does it take to persuade someone, Alex? 
+
+[00:26:38] Alex Schleifer: better alternative 
+
+[00:26:39] Troy Young: if I'm presenting things 
+
+[00:26:41] Alex Schleifer: them, 
+
+[00:26:41] Troy Young: If I call you,
+
+a fascist or a despot, or I align all the people that were close to you, generals, et cetera, and say you're not to be trusted. Or I say that your policies around deportation are insane and impractical. Or I say that Your tariff policies are going to create inflation. Now those, all of those things would either lead you to believe that there's a better alternative because you believe them and you trust what someone's saying to you and it persuades you,
+
+or you 
+
+believe You just think they're bullshit and you're going to go with this, you know, carnival barker, like 
+
+[00:27:24] Alex Schleifer: like, if you 
+
+[00:27:26] Troy Young: if you don't trust the things that people in, you know, institutionalized media are saying, to you that they're both the right things and they're believable and they matter, then what's the purpose of the media? Like what, what, what replaces it?
+
+[00:27:43] Alex Schleifer: Yeah, I don't know. I don't know. It's grim.I mean, if only just, if only just the tariffs, right? Like seeing the level of education around proposed tariffs. my complaint about the media was that it was Trying this weird kind of centrist, both sides, let's cover both sides with the same amount of, fervor. and, I don't think they, that resonated with anyone.
+
+I think the stuff that resonated was the stuff that was already talking people into the things that they were feeling. I think it was a very like vibes election. I don't think people voted on, I don't know. They probably, you know, the, Gas is more expensive and they're worried about foreigners coming into the country.
+
+That's as 
+
+[00:28:24] Troy Young: The problem is gas isn't more expensive.
+
+[00:28:26] Alex Schleifer: Oh, I doesn't matter. Like it doesn't even, Doesn't even matter. It's just like vibes, right? People feel like what the life has become more expensive.
+
+[00:28:36] Troy Young: Oh, I think there's been inflation. I'm just saying gas sets have
+
+been, but I, I,
+
+[00:28:40] Alex Schleifer: I mean, the economy is, the economy is doing great, you know, the compared, compared to anywhere else in the world. it's, it's hard to tell. It's hard to tell what the media could have done. It just definitely shows that they don't have much power left. Right. and,I don't even know how much.
+
+Rogan and stuff like that influenced this other stuff. think, um, I think, I think 
+
+it was this, there's, there's so much, but there's so much noise in that data. Like, you know, it was, he was also going up against a woman, a woman of color, like God knows how people voted around that.
+
+Right. Like, it's hard to 
+
+[00:29:14] Brian Morrissey: but it was also a person that just got like dropped into the race without people voting for like you can't like untangle all of these
+
+things after years of saying Biden's sharp as attack and the media, the media did launder that
+
+like nobody's business 
+
+[00:29:29] Alex Schleifer: people clinging on to
+
+all people clinging on to power, and trying to remain relevant is like, you know, maybe that's a good analogy for media. It's like Biden not wanting to get away and like, you know, just Like just 
+
+[00:29:42] Brian Morrissey: mean, 
+
+[00:29:43] Troy Young: what do you make of on one hand, sort of, I would say distrust of institutions or experts, right? Whether that's an economist or, you know, a doctor, but the kind of wild embrace as of someone like Elon is an innovator.
+
+[00:30:03] Brian Morrissey: What do you mean? Like, I mean, I think, you know, Elon is like a remarkable, you know, 
+
+historical 
+
+[00:30:09] Troy Young: We trust Joe Rogan more than we trust like real professionals, like doctors.
+
+[00:30:17] Brian Morrissey: Yeah, I think so. Yeah. And I think that's a lot of it. Like, we talk about it all the time. Like, right now, I always thought that the perceived authenticity and being your real self, I mean, because
+
+Nobody really thinks that Trump is someone totally different behind closed doors. Like, I don't think anyone thinks like, I mean, what could it be? if anything is more normal, like behind closed doors. but like, nobody really believes that. I think, with Joe Rogan it's Like, similar where, you know, we've seen this decline or we've seen like, I think,
+
+it's been mispriced. Authenticity has been mispriced in the, in the marketplace, but it, that is not going to end that this is, this is going to be, I think how, the next sort of phase of media goes, it is going to be, be moving more in this direction than Joe Rogan becoming more like, I don't know, Peter Jennings or something like Jay Leno, like that's just not happening. and I think that every single trend right now is going against a lot of the mass media conventions.
+
+[00:31:17] Alex Schleifer: think 
+
+[00:31:18] Brian Morrissey: And it's a, it's a hard transition to make.
+
+that's why I think that the, every single media entity is going to need to come to terms with how they, respond to, to this in the marketplace.
+
+Right. And, you know, you look at, you know, we talk about the puck model a lot, you know, it's not perfect, but like, you know, they've put, they've put,
+
+personalities front and center,
+
+and I think that's going to be, you
+
+a continued path that that will be taken because
+
+again, look at the market, like if the market rejects what you have, like, you have to adapt.
+
+You can't just blame
+
+the customer like that. That's crazy. And just to go back to politics, I think the Democratic Party had a product that was being broadly rejected and kept blaming the customers. and didn't work out.
+
+
+[00:32:02] Leaning Left or Right
+---
+
+[00:32:02] Alex Schleifer: I wonder if the left will start embracing their kind of like, I don't know what you call them. Firebrand YouTubers. because there are people like destiny and stuff like that on YouTube that are just like, you know, militant left, just aggressive. You know, podcaster. It's, it's kind of the, the left wing version of that same sphere.
+
+Right. it exists. It's just like the establishment, the coalition doesn't embrace them. Like, like the right embraced, like Rogan and Shapiro and all these guys. Like there's like, everybody's coordinated, right? the left isn't coordinated. Instead it's trained to be centrist 
+
+[00:32:40] Troy Young: Yeah, it's the problem I have with that is that America is not a country that embraces strident leftists ever.
+
+[00:32:46] Brian Morrissey: it's a center right country
+
+[00:32:48] Troy Young: Yeah,
+
+[00:32:49] Alex Schleifer: Is it center, right? It doesn't seem 
+
+[00:32:51] Brian Morrissey: compared to Europe. Yes.
+
+I mean, outside of like Serbia and Russia and a few other places, like, yeah,
+
+[00:32:57] Alex Schleifer: Yeah, no, I mean, I'm saying right now it's more right than center right, but yeah.
+
+[00:33:02] Brian Morrissey: well, this is, I mean, if you look at that, that is the story, at least initially coming out of this election is, this is a moment of a sharp turn to the right for in this country, and it goes back and forth, but it is pretty much never been, truly liberal in the American sense of liberal,I just for historical reasons and lots of other reasons.
+
+I mean, it's embedded in like, you know, self reliance and all that stuff that's embedded in the American psyche. So I think that it's always going to be, right of center and how the Democratic Party responds is going to be interesting. And when you talk about the media, I don't know, like, to me, the market always, you know, tells you again, like, it doesn't seem like the, you know, The very hard left militant, podcasters, grifters, or whatever, have nearly the cut through. Counterparts to now maybe that was just because it's easy to be a rebel. when, you know, Biden is president, but I don't know.
+
+[00:34:03] Troy Young: Yeah.
+
+I don't know. Maybe there's some basic lessons here that we could articulate and it's like, this is age old, but you need your base. That, this shift, let's call it to, you know, it's like a. I don't know if it's the conversational movement in media driven by podcasts brings out, I think it advantages certain types of politicians, I think that's going to be far more of our, our
+
+medium spec, our Media spectrum that the world becomes, I think that Kind of audio is an extension of all media, is going to be way more important, and I think that people, to your point about authenticate, you know, authenticity are going to look for that same authenticity and their politicians, whether it's you know, savory or 
+
+[00:34:51] Alex Schleifer: like, 
+
+[00:34:52] Brian Morrissey: Yeah. I think, like, just by going on Rogan, it doesn't
+
+even matter if people were not the 42 million who actually, you know, why YouTube and so many more on Spotify and Apple, I think it just proves that, like. You can get a measure of the person and that they can like hold their own. And I think that is going to become a core feature that You need in running for, for this position.
+
+It used to be, you had to give like a great speech, right? And, but like, when you listen now, and I say this as someone like, you listen to Obama talk, it seems like, from a different era, to be honest with you. Like, I know everyone like fell off their chair with the Michelle Obama thing. Again, it seemed like so retro.
+
+And part of that is how Trump has completely shifted the norms for that kind of speechifying. I'm very, I'm very thankful personally. Anytime I, anytime I give a
+
+solo presentation now. you know, the bar is, is set to where, you know, you can wander off in all 
+
+kinds 
+
+[00:35:50] Alex Schleifer: No, but 
+
+[00:35:51] Troy Young: you you know, to get practical about it, you think about you know, instances, like, what would you do if you were now the programming head at CNN? how would you change the formats? if you in light of the election would you have changed what, you know, Jeff Bezos did at the Washington Post? would you have done anything differently? How would you organize a newsroom differently in this kind of more conversational environment? You know, do you like the idea, like the semaphore
+
+idea where we start to physically kind of break facts and opinion, in every article, whether they're called the semaphore or whatever. you know, what, what do you think are some of the things that that you would do, if you owned, you know, legacy media to prepare for this? new world? 
+
+[00:36:40] Alex Schleifer: we 
+
+[00:36:41] Brian Morrissey: I would start by reverse engineering what's working, right? Like, I think we started this with like, Joe Rogan. Why, does that work? why does this guy from, from fear factor? Why, why, why is he like so influential? Seemingly, let's just assume that he's, he's very influential. Well, then why is that? 
+
+[00:36:59] Alex Schleifer: I can't help you there. I mean, I think it's, I think there was a format that he managed to help kind of, I mean, Mark Maron was, you know, when I started listening to podcasts, Mark Maron was one of the first with these long form, 
+
+[00:37:14] Troy Young: It was the original Rogan. He 
+
+was the, the, the liberal Rogan.
+
+[00:37:19] Alex Schleifer: Yeah. He wasn't, I mean, liberal, like, you know, pretty centrist in some ways, but I started listening to him like episode four, you know, when he had like, You know, a handful of listeners and, the format immediately appealed to me because he could, the conversations could go on for a while.
+
+You could keep it on in the background. and you could get to know people and it was just interesting. And I think so Rogan kind of won that. format, and so he's got just like, just a lot of energy, behind him. And, I think that's part of it. Like people just like listening to podcasts, men specifically, right?
+
+I mean, this is like, this is a very male. Driven election, even though women were women's rights were on the ballot box, you know, a lot of like male media kind of drove this and this kind of concept of listening to our long meandering philosophizing is very male dominant. I can probably. You can probably figure out, the gender distribution of the all in podcast.
+
+I mean, I haven't been to their event, but I'm pretty sure the audience there is going to be skewing a certain way or Lex Friedman. Like how many women listeners do you think Lex Friedman has? He doesn't even, how many, how many, how many women guests do these guys get on? Like, like, 
+
+
+[00:38:35] Is there a problem in newsrooms?
+---
+
+[00:38:35] Troy Young: Is there. So I like this. I I, I like this idea of, of reverse engineering. The product, but Brian, what does that mean? Like, is there a problem in newsrooms? Is there a cult, fundamental cultural problem in newsrooms?
+
+[00:38:51] Brian Morrissey: Oh, I mean, probably, right? there's, there's an unreality, right? And there's also, like, you know, I got, it's like, nobody is safe, right? Like, I got this person, like, I just wrote a very, like, about the post, right? And, And I got like, it's like, I'm done. I'm out. you know, you are supporting a fascist. I'm like, what are you talking about? I like wrote back this person. And, it was very clear. This person was, this person's an editor. Right. And. There is an activist, strain that's clear within journalism that has always been present.
+
+And I think it's, it's, it can be good, you know, because it, to have like a mission driven, and this is, this is after Watergate. I think it really sprung up. but I think in many ways it goes into directions that aren't helpful. With building that connection with an audience, it's very clear that a large group of people in this country do not trust journalists,
+
+and it is easy to blame other people for that. And some of that blame is completely correct. However, they're tapping into an underlying feeling. And all the data supports that, that news is not on the up and up when it comes to separating people's personal opinions from their work. I mean, the reality is most newsrooms are filled with people who voted for Kamala Harris.
+
+That is not some I'm not going into some conspiracy there. Like, that's obvious.
+
+[00:40:29] Alex Schleifer: But to me, doesn't this just show, like, I don't know how much there's like, doesn't this just show that the media, just the relevancy is dying out, which is why in the, in our text message, you know, I'm pushing for us, like to stop covering the media, the dying brands of the media and rather look forward at the new things that are coming.
+
+I don't think it's entirely. the right call to just look at what Rogan's achieved and see like what others can learn from that. Because remember, half the population or around half the population didn't vote for Trump probably feels very differently. the vast majority of podcasts, consumers, and kind of, you know, That that's fear around YouTube.
+
+vast majority are men. So there's this, there's the question should be more, there's this whole other side of the consumer, women, young people, you know, that, that make up a large proportion of the, of the audience, which I think aren't served. I think the, the, the dudes that listen to Rogan are very well served.
+
+They can be mediated all day long with free media that like tickles, like, you know, whatever, you know, nerve they need tickled. and then, yeah, like I can tell you that, like, where else do you go for that sort of catharsis if you're a woman or, or, or somebody who, who leans in the other direction?
+
+That's, that's less evident. So I think maybe the, I feel that if media just starts saying, well, we need to become broken. that's going to be a fool's 
+
+[00:41:54] Brian Morrissey: No, I don't mean philosophically. I mean, when I say reverse engineering,
+
+[00:41:58] Alex Schleifer: but even the format, even the format, how many women in your life do you know, consume podcasts at the rate that men consume? Why is that? Like, that's the more interesting question for me. Like women do not consume podcasts at the same rate as men.
+
+[00:42:10] Brian Morrissey: yeah, that's true. 
+
+[00:42:11] Troy Young: that true? How do we 
+
+know that? 
+
+[00:42:13] Alex Schleifer: every piece of like the, the popular podcast, every piece of like a gender distribution, I've seen like skews heavily male, especially when you're looking at the Freedman's and the stuff like that, I mean, these are technology podcasts, but even, you know, MKBHD, and all these types of, of things like, these kind of YouTube shows, that are on tech and politics and, and these types of news.
+
+It's like 7 percent women.
+
+[00:42:37] Brian Morrissey: serious claims that, that it's almost split. It's 53 percent male, but they have, they have an interest in, in that.
+
+[00:42:46] Alex Schleifer: Yeah. I don't know. I think it's, I think it's something interesting to look at. Like there's definitely like a split, like a gender split happening as well as a, as an ideological one as to how, like the formats that people consume. And I, you know, I know that there's probably lots of podcasts that, you know, that, that are majority women, but I don't think the numbers line up with a Rogan, there's 
+
+[00:43:05] Troy Young: Well, I think, you know, I would just be careful. I think we probably need to validate it. I think that a lot of the big podcasts are mail driven. but I think that you'd probably find, you know, other types of consumption. Maybe it's more fragmented. Maybe it's more short form stuff on Instagram and and tick tock rather than, you know, YouTube and podcasts.
+
+But I think the phenomenon of, you know, People channeling their point of view, and, you know, these kind of folk media people, is probably universal,
+
+[00:43:39] Brian Morrissey: Yeah.
+
+I mean, I think it's pretty clear that people want to want to know.
+
+like what the person who's, who's creating the media, like where they're coming from. Right. And to me, that's, that, that is a big takeaway, like hiding behind the institutional brand is not going to cut it anymore. That was my big problem with the editorial board endorsement at the Washington Post.
+
+Like, who? You just got hired. Like, what is your, what makes your point of view, like, more valid than anyone else? I don't even know your name. Like, why, why, why are you christened, because you got through the HR department
+
+[00:44:15] Alex Schleifer: I mean, at the end of the day, it doesn't even matter, right? Like it
+
+[00:44:18] Brian Morrissey: Well, yeah, it doesn't matter.
+
+either, but I think it speaks to an underlying arrogance that's embedded in the Capital J Journalism, like, world.
+
+Like, there is. Like, why does 
+
+it 
+
+[00:44:29] Troy Young: are we trying to fix something that will never be fixed?
+
+like,
+
+you know, it's like,
+
+[00:44:35] Alex Schleifer: it's fucked.
+
+[00:44:35] Troy Young: it's
+
+[00:44:36] Brian Morrissey: Alright, so let's move on. What 
+
+[00:44:38] Troy Young: No, no, no, no, no, no, no, no, no. They'll just hold on. Hold on. 
+
+Like 
+
+if, if, if, you know, liberal newsrooms are serving liberal audiences, New York times is doing quite well, there's. half the country, you know, appreciates, the news output of a lot of these left
+
+leaning institutions. The problem is that. liberal media has, it's, it's almost impossible to come to terms with what we've had to kind of navigate with Trump. It's just like, if you're the whole premise is, you know, facts and,uh, And, you know, hard reporting and, this, the search for some type of objective truth, the Trump thing just completely turns it on its head.
+
+Like, how do you navigate that? How do you ever navigate that? And maybe the answer is you don't, maybe you just serve your audience. Maybe Bezos shouldn't have worried about endorsements and just say, the Washington post is a liberal paper. We
+
+don't need an endorsement.
+
+to know that the newsroom
+
+[00:45:48] Alex Schleifer: reason he didn't endorse was not the reasons Brian thinks there shouldn't be endorsement. The reason he didn't endorse is because there's like a vengeful guy in power and he wants to put rockets into space. Like, so much of this election has been transactional, right?
+
+Like, so that's why it's kind of hard to even, And, and the ownership structures of these media companies make it hard to understand why they make decisions like the Bezos one is, is one that's like that. But you're right. I mean, I think they're going to keep serving their audience and people are perfectly happy with it.
+
+I do feel that. And specifically in that there's a new type of news commentary, media mixed with entertainment mixed with interviewing. That's become hugely influential. It seems to serve men in majority. I'm not saying women don't listen to podcasts. That's been a big shift. that's been a big evolution.
+
+I don't know what new media companies come out of that. I think AI is going to play a role. I think that's what we should cover. Like the new stuff that's going to come out. The old stuff is either going to survive and not change or disappear, right? I mean, I don't think there's much, much to do with it.
+
+[00:46:52] Brian Morrissey: I found it very interesting. I think one of the winners out of this speaking to like what comes next is poly market, right? I mean, like, poly market got there first, while Nate Silver was, was running his 80, 000 simulations, they were saying, you know, this is Trump and, I think it'll be very interesting to see, you know, I don't know if you, I was following them on, on, Twitter X, whatever. And they were like, we're the new news, you know, they were like emerging as, and I think it'll be interesting to see which, what kinds of news sources emerge. There's a clear lane that like the free press took, you know, with having. You know, they're basically, they have a point of view and they're going to be writing to that point of view. and it's just slightly off because it's, it's, it's center, right? I, I saw someone, someone, Bubba Atkinson described it as a really funny guy. he described it as one of the concierge services. So like the,
+
+the free press is a concierge service for Democrats to become. Uh, Republicans and then, I think the, the bulwark is the concierge service for Republicans to become Democrats, but most of the lanes, I think we're going back to pre mass media where all the business interests are to align explicitly with an
+
+ideological point of view, if not a specific political party, newspapers always did 
+
+this before, 
+
+[00:48:14] Alex Schleifer: or
+
+[00:48:14] Troy Young: maybe we should, maybe we're over sort of correcting or emphasizing the role of media in this one. We have a problem with ideas that are clearly not resonating when we have a problem with, the organization of a group of people around ideas. And so it's not just a media problem. It's a political problem.
+
+[00:48:33] Brian Morrissey: right?
+
+[00:48:35] Troy Young: well, that's not to mention, you know, other, you know, challenge threat facing media, which you talk about Brian as being, you know, news as a feature. As opposed to the product and the future of, you know, just something that's kind of tacked on to a chat service. What I, what I would just kind of make a point around rather than than good product is this. 
+
+
+[00:48:57] Chat GPT Closing the Last Mile
+---
+
+[00:48:57] Troy Young: I had a moment this week using. Chat GPT is, as some of the listeners will know, or you guys know that we, they've sort of are steadily closing the last mile. And what that means is, in addition to bringing on, core LLM developers bringing on new suppliers or content suppliers. They're connecting the LLM to the web index, right? So that all of your queries go out and they don't just process. It's not like, just like, Oh, there's a search engine on Wikipedia. They're processing, you know, real time information off the web. And, and it was just like a moment. I texted Alex or I texted you guys where I had been querying. it was, you know, it was a product query around speakers as an, you know, like audio speakers and basically, it had in my mind, it had completely ripped the interface layer off the Internet. Where it just brought back what I wanted, you know, it delivered, like, here's the speakers. Here's the features and benefits. Here's the auction price. Here's the date listed. Here's how they compare. Like, I put it all in tables. Here's how they compare to other products in the category. And it was, you know, it was virtually instantaneous. And it was real time data, and it was put into an interface that was just so efficient for me. And I did the same thing with a flight query, looking for flights where it just grabbed all the information, put it in a table for me, and like, I could look at it any way I wanted. And I just thought, Oh, my God, everything I've thought about for years and years and years, which is sort of a page level construct is access point to information. Web design as boxes pages is over now. It's like we have to think massively. We have to think differently about what our role is as someone who supplies information to a surface area, because that information is being absorbed into something where it's a query and it's formatted however you want it. and it's not an, an organized interface. so to me, and then Alex said something great, which is sort of like, You know, it's going to make the web better or it does like it just has, like the page has to be useful or interesting or interactive or something. or there's no reason for it to exist. and I think that's, that's something that's been bugging you, Alex. And, it's, it's a really interesting time to think about what is the role of a company providing digital information and, how do you monetize it?
+
+and to me, I was just sort of thinking about the dimensions, like the rallying cry, you know, inside a media organization, you know, in, inside of this platform shift to reality. And I was like, okay, well, direct, we have to have direct connections. to people. Whether we have the gravity to have an app, or we can do text notifications or email or someone.
+
+is using an interface that we create such that it's better than the alternative. So direct, you know, obviously that implies an editorial or content strategy. that in the face of what is inevitably the commoditization of a lot of information, you have to have a talent strategy, right? Like this, where the creator world meets the AI world, you have to be more human. I don't think that, you know, that we think enough about what is unique about our data
+
+set, about what it is, if it's information, what it is that we are gathering, processing, organizing, curating, that we are introducing into the world. What we used to do is we would scramble to write evergreen content that five other companies already wrote.
+
+And we would just try to do it better so we could spoof the search engine, you know, we could win that game. 
+
+[00:53:03] Alex Schleifer: we 
+
+[00:53:03] Troy Young: And then you think, well, you know, multimedia. at least today, chat doesn't do multimedia, Right, whether that's audio or video or combination of, you know, or interactivity. Like, that's going to be much more important inside of your media organization.
+
+And the last one I would say is, this is going to force, at least some companies, to figure out how, I mean, this is actually going to push you to be transactional, whether that means selling a product, or taking first party data or facilitating, you know, the purchase of a service or, you know, a product because the AI can't break that. 
+
+[00:53:40] Alex Schleifer: I 
+
+think that's true. I think everybody should basically consider themselves like the Yellow Pages in 1999. You know, like I think that there's going to be 
+
+[00:53:51] Brian Morrissey: was still a big business in 1999.
+
+[00:53:53] Alex Schleifer: And, and some of these, I mean, when I complain about this stuff, I hear it's still a big business, but look, they had a record year.
+
+And, Taboola is still doing great. I feel like we, we've spent a lot of time turning pages so that they would be machine readable with SEO so that, you know, they would be kind of absorbed, and, Yeah, there is a potential where, you know, as information, the information layer is completely absorbed by the, by the LLMs and the, and AI and AI kind of gives you information much better.
+
+Your daily news update a little in whichever format you want, that's all going to happen. we have an opportunity to create value. there's going to be a bunch of value destruction, but there's like new value that can be created. Like, and I hope it's, it's an opportunity to save the web because the web is the last place that you will fully own and control. so I think Troy, Troy is right. I mean, there's an opportunity there 
+
+[00:54:44] Brian Morrissey: having like undifferentiated information is, is really important. A road to nowhere,
+
+you know, if everyone else has the, the information and you got it, like quote unquote first, it doesn't really, it doesn't do a ton for you. And I think that's going to take, a rethinking because I, I always remember like in, in, newsrooms, it was like, your competitor gets a story and it's like, we have to match it.
+
+I'm like, that makes no sense. Like, unless they're inaccurate, what, what are we providing? and some of it was just like, well, we have to like, we don't want to train people to go to AdAge instead of AdWeek, I'm like, they go to both, what are you kidding, like, what's the matter, like, sometimes you win, sometimes you get the three finalists for the Pennzoil review, sometimes AdAge does, I don't think people really care, but yeah, there's been too much of that, so I think you have to just like, refactor the whole organizations, and, and what you're, what you're after,
+
+[00:55:30] Alex Schleifer: I do think that like my hope for the podcast is that we talk a little bit more about this new stuff, because I think there's a tendency for us to look at what do we do with all these old brands and I think you, I don't think we can provide that much help with that. Like, I don't find these conversations that interesting either.
+
+But rather talk about the tools and the opportunities that are coming up. I don't know how brands are going to use them. but it's, it's a little bit like, you know, it could be a little bit like talking about MTV and saying, you know what, what MTV should do right now is move to reality TV, which was the right call.
+
+I gave them another five years, you know, maybe 10. but the truth of the matter is there's like really interesting Content creation, technology, distribution, technology, multiple ways to monetize it. People just need to find new places where, where value can exist and value can be created. That's what I hope.
+
+That's my optimistic message for the future.
+
+[00:56:22] Brian Morrissey: all
+
+[00:56:22] Alex Schleifer: It should be exciting.
+
+
+[00:56:23] Billionaires in Media
+---
+
+[00:56:23] Troy Young: did you think about the election? Thank you.
+
+[00:56:26] Alex Schleifer: It was a fucking nightmare. I mean,
+
+[00:56:31] Troy Young: What would you do if you owned the Washington Post?
+
+[00:56:35] Alex Schleifer: I don't know. I don't know. I guess I didn't get the phone call that base was gone. So I don't know, you know, didn't get the phone call that you, you better do something or your rocket stay grounded. I don't know what happened. Uh, I wouldn't be in that space.
+
+I think they're all regretting these purchases.
+
+[00:56:53] Brian Morrissey: Well, I think those are all ending. I mean, Mark Benioff is, is, apparently looking to unload, time to Antenna, which was going to buy Vice, but then didn't,so I think it's the end of the billionaire, the billionaires, it turns out they don't have the journalism industry's, best interests at their hearts.
+
+Go
+
+[00:57:10] Alex Schleifer: The crazy thing is I grew up watching Antenna and having, 
+
+having them spend. Yeah. Yeah. It's a, it's a, it's a big Greek media company. There's channels that we could get in Cyprus. well, you know, I mean, the thing that's going to be fun to watch is how they all turn on each other.
+
+That's going to be fun.
+
+[00:57:25] Brian Morrissey: Oh, that will be fun.
+
+That would be fun. 
+
+[00:57:27] Alex Schleifer: uh, 
+
+[00:57:29] Brian Morrissey: There's only one main character, and he
+
+[00:57:32] Alex Schleifer: Yes, 
+
+[00:57:32] Brian Morrissey: tan.
+
+[00:57:34] Alex Schleifer: yes, exactly. 
+
+[00:57:36] Troy Young: What's going on with that? What's going on with the tent? If you go to the New York Times homepage right now, the center image, he's very kind of a brownish orange.is that a, is that a, is that a kind of cosmetic product? What is that?
+
+[00:57:52] Alex Schleifer: it's a spray tan. Yeah,
+
+[00:57:53] Troy Young: Is it spray?
+
+[00:57:55] Alex Schleifer: yeah, for sure. Because it doesn't go around his ears.
+
+[00:57:57] Troy Young: So the new president is a spray tanner?
+
+[00:58:00] Alex Schleifer: You're noticing that now, would that have changed your vote? Troy, would you have changed your vote if that, if you knew that?
+
+[00:58:06] Brian Morrissey: Why wasn't the media covering this?
+
+[00:58:08] Alex Schleifer: I actually genuinely wonder, he seems to have less of the energy and the cogency. I wonder how active he's going to be because he's got to be exhausted. Like 78 years old, 
+
+[00:58:19] Brian Morrissey: I wouldn't want to do that at 78. Like, that's But, these
+
+[00:58:25] Alex Schleifer: Yeah, he might, he might not make it. I mean, this is like, you know, 
+
+[00:58:27] Brian Morrissey: built different. 
+
+[00:58:28] Alex Schleifer: it takes a lot
+
+
+[00:58:31] Wrap-up
+---
+
+[00:58:31] Troy Young: Brian, would you mind if I just have you wrap this up and just kind of based on how you started it.
+
+[00:58:38] Brian Morrissey: How do I start it?
+
+[00:58:40] Troy Young: You started it by talking about the medias complicit. how they were sort of complicit in kind of where we are now.
+
+[00:58:49] Brian Morrissey: I understand your point, Alex, that it does seem, you know, it's like, wow, why are we talking about this? Because I do think it is kind of like the denouement of this story, right? we all know that mass media has been losing its, its, relevancy and its power and its centrality. and this is just, you know, making it abundantly clear, like, that this is, this is not going to be It's not coming back necessarily. I mean, I don't wish ill on any of these companies. I think they're needed and they think that they're going to be forced to adapt and they'll have different roles, but it's very clear that 
+
+[00:59:28] Troy Young: by 
+
+[00:59:30] Brian Morrissey: are gone.
+
+They're not coming back. And so my hope is that new entrants do fill that who aren't just From the grifter sphere, I believe you call it a grifter space, grifter sphere, which is, is broad.
+
+[00:59:44] Alex Schleifer: and, and derogatory.
+
+I get it. 
+
+[00:59:45] Brian Morrissey: It is it is derogatory, but, uh, but my hope is that like new, you know, we, we do have new entrants who, who use a lot of the, who use a lot of the tools and the platforms that are, are taking place that to have credible information that, that people can 
+
+[01:00:03] Troy Young: but, but but your point was broader. Your point was that the media missed a kind of a sensibility not even a, what am I saying? Like they missed the nation's sentiment and they were not. They are no longer important not just, you know, in, in, in, in sort of sensing what's going on in the country, but, but influencing people.
+
+[01:00:28] Brian Morrissey: Yeah, I mean, that's very obvious that, you know, the influence that the mainstream media has over people is, maybe it was never as great as they pretended it to be, but it's, it's clear from the advertising to the coverage, none of these issues that were, that were pushed nonstop seemingly cut through, at least if you look at the data that came out so far, I mean, none of it did, none of it resonated. no, they made the choices to push these, look, the, Trump talks all day long. You, you can choose what you're, you're going to, to focus on, and it's always the hardest thing as a reporter. It's like, okay, what am I going to focus on? Like, out of three hours, he said this one thing, like, as an aside off the teleprompter.
+
+He doesn't even really use a teleprompter. So I'm going to focus on that. I'm going to, I'm going to bring in a lot of B material because, you know, he, he kind of called Kamala Harris like a bitch, but not really. Okay. And so I can get 700 words out of that. I just don't think that that is, that is not influencing people.
+
+People have seen through this and we're seeing this throughout the media. Like all of these conventions are losing traction in the marketplace. I mean, one of the things that I've noticed with Semaphore that I think is kind of interesting, but I don't think it'll, it'll work is they're publishing way more Q and A's. Like they're actually showing the material, right? Like, cause you make so many choices with. Stories. And I mean, first of all, storytelling as the heart of journalism needs to go away. because in most people's minds, storytelling means making stuff up, right? You tell stories, and you make choices within telling the stories that, sometimes like make a very complicated situation seem very cut and dry and simple and I think anyone has been the I thankfully nobody's ever written about me, but like I'm sure the experience of having been written about like you've experienced Detroit or like 
+
+Well, this is kind of based on a true story, but not quite, uh, the true story. and there's not, there's been a lack of humility about that. I feel like throughout the profession and there needs to be more of it. You could get away with that when there was fewer choices in the analog media industry. Because
+
+there's just a power imbalance. It was, that's why nobody picks a fight with, you know, someone who buys ink by the gallon or whatever.
+
+That's why, that's over.
+
+[01:02:50] Alex Schleifer: I also wonder, I mean, it's going to be interesting, but it's like how much analysis can be done about the media landscape considering. How unique a character Trump is like there was nobody, even though he was 77 or 78, when he came back, there was nobody to step up to him. Like he's, he's, he's just, he's just such a unique animal.
+
+And, and once he's gone. have they built an enduring playbook, you know, that's what I wonder 
+
+and, and and does the, does that whole manosphere environment fade away the same way, other fads kind of come and go, you know, 
+
+[01:03:26] Troy Young: Yeah, and I would add just one last thing to it is that what you're saying, Brian, is the role of the filter and the interpreter and the curator that was defined, you know, by the kind of journalistic conventions in
+
+the newsroom is changing. And, you know, the all in guys would say that it's been replaced by the commons. And by, you know, a kind of iterative process where we arrive at the truth through conversation and lots of actors and the algorithm, Elon would say it's publicly sourced and filtered by the algorithm and, you know, the truth floats to the top and, you know, in that world, we, we kind of. All of the, you know, kind of journalistic conventions that we're accustomed to are challenged that's what you're saying about the Q and a.
+
+It's sort of like, okay, roll back the filtering role, the storytelling role. Let's just present the conversation.
+
+[01:04:22] Brian Morrissey: Right. But it's also like, I think the role moves from filtering, To like connecting the dots, right? Like, and I think that to me, when you get at these, these podcasts beyond the like oddities of them, like what, what they really get at is a conversation where people are, are connecting dots between different things.
+
+And I think that's what the power of them is when you package up. When you present these, like, neat packages with all the, it's all sanded down, it comes across, particularly these days, as completely inauthentic. And I think that is part of it. So I think reinventing the packaging is, is critical. I just can't imagine that the 750 word inverted pyramid story is going to be the, the, the sort of atomic unit of journalism in five years.
+
+Doesn't seem likely.
+
+[01:05:17] Troy Young: There you go.
+
+[01:05:18] Brian Morrissey: All right, so we'll focus on that going forward.
+
+[01:05:20] Alex Schleifer: we should focus on that. Just look ahead. I need stuff to distract me.
+
+[01:05:26] Brian Morrissey: midterms. 
+
+[01:05:28] Alex Schleifer: America is a fucking hardcore heart. There's a hardcore place to live on. Got to be 
+
+[01:05:32] Brian Morrissey: Yeah. Yeah.
+
+[01:05:34] Troy Young: you mean? What do you, mean?
+
+[01:05:35] Brian Morrissey: This isn't Cyprus or Austria or 
+
+any of those
+
+[01:05:37] Troy Young: at me 
+
+[01:05:38] Alex Schleifer: it's just an interesting country and I feel like Seeing just even glimpses of the media onslaught yesterday. I'm like, my God, you gotta be either masochist or just so hardened to just put yourself in front of, of, of that stuff, you know, for hours and hours.
+
+and I was, proud that I managed to stay off it. I think there was a, so one of the better moments. 
+
+[01:06:01] Brian Morrissey: I just think America refuses to be a normal country and will
+
+always refuse to 
+
+[01:06:05] Alex Schleifer: sure. 
+
+[01:06:06] Brian Morrissey: place. And in some ways that's to be celebrated, I think. Always goes its own way. I mean, the good
+
+[01:06:12] Alex Schleifer: I mean, it's like any, it's like, it's like no other country. I think that the fact, the way the States are organized and, you know, the whole political system, the way it's all held together is, is pretty, it's pretty special. so I want to celebrate that. 
+
+[01:06:26] Brian Morrissey: yeah,
+
+couldn't pull it off if you're a Belgium. Like 0 percent chance.
+
+[01:06:30] Alex Schleifer: No, I mean, you're, it's too small. Like, like, you know, as I, as I tell like people in France, don't worry. About. you know, political decisions that are made in Poland 99. 9 percent of the time you don't wake up freaking out about what's happening in Poland, and that's the same thing as here waking up in California and looking at how Florida has voted like that rarely happens like there's nothing like that in most countries in the world and then and then other large countries like China, you know, it's just completely different.
+
+So, It's a coalition in itself. And, it feels that you're constantly always worried about what's happening everywhere, which is exhausting. and, we're going to have a lot of adverts for, you know, anxiety medication popping up 
+
+[01:07:14] Brian Morrissey: I also just a final thought on that is,
+
+I almost think like going forward over the next four years, I almost think like news is going to come with like a surgeon general's warning, like about it being bad for your mental health. Like, I don't think that, broadly speaking, the populace can return to 2017 through 2020. Like, I just, maybe it's just built up immunity. but I don't, I don't know if people can return to that. And so I think news avoidance is going to get worse too.
+
+[01:07:44] Alex Schleifer: Yeah. 
+
+Fun 
+
+times. 
+
+[01:07:45] Brian Morrissey: decision. 
+
+
+
+
+[01:07:46] Outro
+---
+
+[01:07:46] Troy: That's it for this episode of people versus algorithms where each week we uncover patterns shaping media culture and technology. Big thanks as always to our producer, Vanya Arsanov. She always makes us a little clearer and more understandable and we appreciate her very, very much. If you're enjoying these conversations, we'd love for you to leave us a review.
+
+It helps us get the word out and keeps our community growing. Remember, you can find People vs. Algorithms on Apple Podcasts, on Spotify, and now on YouTube. Thanks for listening and we'll see you again next week.
+
+[01:08:20] Alex Schleifer: All right, 
+
+[01:08:21] Troy Young: right. 
+
+[01:08:22] Alex Schleifer: London, 
+
+Troy. 
+
+[01:08:23] Troy Young: Thanks guys. Bye. ​
+
+
+
