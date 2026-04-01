@@ -37,9 +37,8 @@ function getRandomPlaceholder() {
 }
 
 const SCRIBBLE_STYLE: React.CSSProperties = {
-  position: "fixed", bottom: 0, left: 0,
-  width: "60vw", maxWidth: 340,
-  transform: "translate(-20%, 20%)",
+  position: "fixed", bottom: "-10vw", left: "-10vw",
+  width: "55vw", maxWidth: 320,
   pointerEvents: "none", zIndex: 0,
 };
 
