@@ -258,9 +258,9 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
   const rest = observations.slice(1);
 
   return (
-    <div style={{ margin: "16px 0" }}>
+    <div style={{ margin: "6px 0" }}>
       {/* Episode header */}
-      <div style={{ padding: "14px 0 10px", borderTop: "1px solid rgba(255,255,255,0.12)" }}>
+      <div style={{ padding: "4px 0 10px", borderTop: "1px solid rgba(255,255,255,0.12)" }}>
         <p style={{ fontSize: 9, fontWeight: 800, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 4px" }}>
           PvA Episode Bundle <span style={{ color: "rgba(255,255,255,0.25)", fontWeight: 600 }}>· {dateStr}</span>
         </p>
