@@ -235,7 +235,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         src="/scribble.png"
         style={{
           position: "fixed", top: "-15vw", left: "50%", transform: "translateX(-50%)",
-          width: "100vw", pointerEvents: "none", zIndex: 0,
+          width: "130vw", pointerEvents: "none", zIndex: 0,
         }}
       />
       <div style={{
@@ -1290,7 +1290,7 @@ export default function App() {
           src="/scribble.png"
           style={{
             position: "fixed", top: "-15vw", left: "50%", transform: "translateX(-50%)",
-            width: "100vw", pointerEvents: "none", zIndex: 0,
+            width: "130vw", pointerEvents: "none", zIndex: 0,
           }}
         />
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
