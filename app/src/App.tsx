@@ -168,7 +168,7 @@ function SteelManIcon({ size = 24, animate = false, animateCount, color = "#1A1A
             key={`${id}-r${i}`}
             cx={cx} cy={cy}
             r={1.8}
-            fill="#E53935"
+            fill="#FF00AE"
             style={{
               opacity: 0,
               animation: `meshRedPing 0.4s ease ${redIter}`,
@@ -285,7 +285,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             onClick={onCapture}
             style={{
               width: 32, height: 32, borderRadius: "50%",
-              background: "#E53935", border: "none", cursor: "pointer",
+              background: "#FF00AE", border: "none", cursor: "pointer",
               display: "flex", alignItems: "center", justifyContent: "center",
               fontSize: 22, fontWeight: 800, color: "#fff", lineHeight: 1, padding: "0 0 1px 0",
               WebkitTapHighlightColor: "transparent",
@@ -442,7 +442,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         style={{
           position: "fixed", bottom: 36, left: "50%", transform: "translateX(-50%)",
           width: 68, height: 68, borderRadius: "50%",
-          background: "#E53935", border: "none", cursor: "pointer",
+          background: "#FF00AE", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
           boxShadow: "0 0 12px rgba(229,57,53,0.4)", zIndex: 2,
           fontSize: 36, fontWeight: 800, color: "#fff", lineHeight: 1, paddingBottom: 2,
@@ -637,7 +637,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
         background: "#FFF", borderRadius: 12, padding: "10px 14px",
         boxShadow: "0 1px 4px rgba(0,0,0,0.04)", marginBottom: 12,
         display: "flex", alignItems: "center", gap: 8,
-        border: url.trim() ? "1.5px solid #E53935" : "1.5px solid transparent",
+        border: url.trim() ? "1.5px solid #FF00AE" : "1.5px solid transparent",
         transition: "border-color 0.2s",
       }}>
         <span style={{ fontSize: 16, flexShrink: 0, opacity: 0.5 }}>{"\uD83D\uDD17"}</span>
@@ -715,7 +715,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
         disabled={!canSubmit}
         style={{
           width: "100%",
-          background: canSubmit ? "#E53935" : "#D5D5CD",
+          background: canSubmit ? "#FF00AE" : "#D5D5CD",
           color: "#FFF", border: "none", borderRadius: 14,
           padding: "16px 0", fontSize: 16, fontWeight: 700,
           cursor: canSubmit ? "pointer" : "not-allowed",
@@ -905,9 +905,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 <button
                   onClick={(e) => { e.stopPropagation(); onChallenge(obs); }}
                   style={{
-                    background: "none", border: "1px solid #E53935", borderRadius: 6,
+                    background: "none", border: "1px solid #FF00AE", borderRadius: 6,
                     padding: "3px 10px", cursor: "pointer",
-                    fontSize: 10, fontWeight: 600, color: "#E53935", fontFamily: "inherit",
+                    fontSize: 10, fontWeight: 600, color: "#FF00AE", fontFamily: "inherit",
                     letterSpacing: 0.2, WebkitTapHighlightColor: "transparent",
                   }}
                 >Challenge this</button>
@@ -943,7 +943,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                     disabled={!editText.trim() || resubmitting}
                     style={{
                       flex: 1, padding: "12px 0", borderRadius: 10,
-                      border: "none", background: editText.trim() && !resubmitting ? "#E53935" : "#D5D5CD",
+                      border: "none", background: editText.trim() && !resubmitting ? "#FF00AE" : "#D5D5CD",
                       color: "#FFF", fontSize: 14, fontWeight: 700,
                       cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
                       fontFamily: "inherit",
@@ -1000,7 +1000,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               onClick={handleStressTab}
               style={{
                 flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: tab === "stress" ? "#E53935" : "#EFEFED",
+                background: tab === "stress" ? "#FF00AE" : "#EFEFED",
                 color: tab === "stress" ? "#FFF" : "#666",
                 fontSize: 14, fontWeight: 700, fontFamily: "inherit",
                 WebkitTapHighlightColor: "transparent",
@@ -1039,7 +1039,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                       textDecoration: "none", marginBottom: 4,
                       overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = "#E53935")}
+                    onMouseEnter={(e) => (e.currentTarget.style.color = "#FF00AE")}
                     onMouseLeave={(e) => (e.currentTarget.style.color = "#777")}
                   >
                     {src.title || src.url}
@@ -1109,7 +1109,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                         textDecoration: "none", marginBottom: 4,
                         overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
                       }}
-                      onMouseEnter={(e) => (e.currentTarget.style.color = "#E53935")}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = "#FF00AE")}
                       onMouseLeave={(e) => (e.currentTarget.style.color = "#777")}
                     >
                       {src.title || src.url}
@@ -1154,7 +1154,7 @@ function PulsingDot() {
     <>
       <span style={{
         display: "inline-block", width: 7, height: 7, borderRadius: "50%",
-        background: "#E53935", flexShrink: 0,
+        background: "#FF00AE", flexShrink: 0,
         animation: "redDotPulse 2s ease-in-out infinite",
       }} />
       <style>{`
@@ -1192,7 +1192,7 @@ function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.Mo
       style={{
         display: "inline-flex", alignItems: "center", gap: 5,
         background: "none", border: "none", cursor: "pointer", padding: 0,
-        color: copied ? "#E53935" : "#666", fontSize: 10, fontFamily: "inherit",
+        color: copied ? "#FF00AE" : "#666", fontSize: 10, fontFamily: "inherit",
         WebkitTapHighlightColor: "transparent",
         transition: "color 0.2s",
       }}
@@ -1337,7 +1337,7 @@ export default function App() {
           ? <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14 }}>Signing in…</p>
           : <GoogleLogin onSuccess={handleGoogleSuccess} onError={() => setAuthError("Google sign-in failed")} theme="filled_black" shape="rectangular" text="continue_with" size="large" />
         }
-        {authError && <p style={{ color: "#FF6B6B", fontSize: 13, marginTop: 16, textAlign: "center" }}>{authError}</p>}
+        {authError && <p style={{ color: "#FF00AE", fontSize: 13, marginTop: 16, textAlign: "center" }}>{authError}</p>}
       </div>
     );
   }
