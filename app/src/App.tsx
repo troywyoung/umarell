@@ -410,11 +410,18 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 borderRadius: 10, background: "#EEF4FF",
                 boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                 padding: "10px 12px", cursor: "pointer",
+                display: "flex", alignItems: "center", gap: 8,
               }}
             >
-              <p style={{ fontSize: 11, color: "#1A1A1A", fontWeight: 600, margin: 0, lineHeight: 1.4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" } as React.CSSProperties}>
+              <p style={{ fontSize: 11, color: "#1A1A1A", fontWeight: 600, margin: 0, lineHeight: 1.4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", flex: 1 } as React.CSSProperties}>
                 <span style={{ fontWeight: 800, color: "#2C5ABA" }}>Challenge: </span>{c.thesis || c.raw_input}
               </p>
+              {(!c.user_id || c.user_id === authUser.id) && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); if (confirm("Delete this challenge?")) onDelete(c.id); }}
+                  style={{ background: "none", border: "none", cursor: "pointer", color: "#AAA", fontSize: 13, padding: 0, lineHeight: 1, flexShrink: 0 }}
+                >&times;</button>
+              )}
             </div>
           );
 
