@@ -413,7 +413,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               <div key={obs.id} style={{ marginBottom: 10 }}>
                 {renderCard(obs, false)}
                 {children.map(c => (
-                  <div key={c.id} style={{ marginTop: 6, marginLeft: 16 }}>
+                  <div key={c.id} style={{ marginTop: 0, marginLeft: 16 }}>
                     {renderCard(c, true)}
                   </div>
                 ))}
