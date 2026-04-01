@@ -743,7 +743,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
 
 // ─── Output ───────────────────────────────────────────────────────────────
 
-function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObservation, requestCounterpoint, requestPvaTake }: {
+function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObservation, requestCounterpoint, requestPvaTake, authUserId }: {
   obs: Observation;
   onBack: () => void;
   onResubmit: (obsId: string, text: string, imageData?: string, imageMediaType?: string) => Promise<void>;
@@ -751,6 +751,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   pollObservation: (id: string) => Promise<Observation | null>;
   requestCounterpoint: (id: string) => Promise<import("./types").Counterpoint | null>;
   requestPvaTake: (id: string, voice?: string) => Promise<import("./types").PvaTake | null>;
+  authUserId?: string;
 }) {
   const [obs, setObs] = useState(initialObs);
   const [counterpointLoading, setCounterpointLoading] = useState(false);
@@ -871,6 +872,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
   const isProcessing = obs.status === "formatting" || obs.status === "researching";
   const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
+  const isOwner = !obs.user_id || obs.user_id === authUserId;
 
   // Parse summary — handles new JSON format {bottom_line, bullets} and legacy plain text
   let steelBottomLine = "";
@@ -1014,13 +1016,15 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               </div>
             ) : (
               <h1
-                onClick={() => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); }}
+                onClick={isOwner ? () => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); } : undefined}
                 style={{
                   fontSize: 20, fontWeight: 700, color: "#FFF", lineHeight: 1.4,
-                  letterSpacing: -0.4, margin: 0, cursor: "pointer",
-                  borderBottom: "1px dashed rgba(255,255,255,0.15)", paddingBottom: 4,
+                  letterSpacing: -0.4, margin: 0,
+                  cursor: isOwner ? "pointer" : "default",
+                  borderBottom: isOwner ? "1px dashed rgba(255,255,255,0.15)" : "none",
+                  paddingBottom: isOwner ? 4 : 0,
                 }}
-                title="Tap to edit & resubmit"
+                title={isOwner ? "Tap to edit & resubmit" : undefined}
               >{obs.thesis}</h1>
             )}
           </div>
@@ -1473,6 +1477,7 @@ export default function App() {
         pollObservation={pollObservation}
         requestCounterpoint={requestCounterpoint}
         requestPvaTake={requestPvaTake}
+        authUserId={authUser.id}
       />
     );
   }
