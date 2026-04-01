@@ -395,7 +395,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       </div>
 
       <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
-        <p style={{ fontSize: 11, fontWeight: 600, color: "rgba(255,255,255,0.35)", textAlign: "center", margin: "8px 0 4px", letterSpacing: -0.2 }}>Tap + to drop your first steelman</p>
+        <p style={{ fontSize: 11, fontWeight: 600, color: "rgba(255,255,255,0.75)", textAlign: "center", margin: "8px 0 4px", letterSpacing: -0.2 }}>Tap + to drop your first steelman</p>
         {observations.length === 0 && !loading ? null : (() => {
           const topLevel = [...observations]
             .filter(o => !o.parent_id)
