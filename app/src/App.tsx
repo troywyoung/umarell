@@ -4,6 +4,11 @@ import type { Observation } from "./types";
 import { useObservations } from "./hooks/useObservations";
 import { API } from "./config";
 
+function authHeaders(): Record<string, string> {
+  const token = localStorage.getItem("sm_token");
+  return token ? { Authorization: `Bearer ${token}`, "Content-Type": "application/json" } : { "Content-Type": "application/json" };
+}
+
 // ─── Rotating placeholder text ───────────────────────────────────────────
 
 const PLACEHOLDERS = [
@@ -690,9 +695,12 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
   const [tab, setTab] = useState<"steel" | "stress">("steel");
   const [stressLoading, setStressLoading] = useState(false);
   const [stressError, setStressError] = useState(false);
+  const [bsLoading, setBsLoading] = useState(false);
   const [editMode, setEditMode] = useState(false);
   const [editText, setEditText] = useState("");
   const [resubmitting, setResubmitting] = useState(false);
+  const [counterThesis, setCounterThesis] = useState<string | null>(null);
+  const [challenges, setChallenges] = useState<Observation[]>([]);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -701,6 +709,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
     setEditMode(false);
     setStressLoading(false);
     setStressError(false);
+    setCounterThesis(null);
+    // Fetch challenges
+    fetch(`${API}/observations/${initialObs.id}/challenges`, { headers: authHeaders() })
+      .then(r => r.json()).then(data => { if (Array.isArray(data)) setChallenges(data); }).catch(() => {});
   }, [initialObs.id]);
 
   useEffect(() => {
@@ -926,6 +938,37 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
                 <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><ProcessingDots color="#FFF" /><span>Testing…</span></span>
               ) : "Stress Test"}
             </button>
+            <button
+              onClick={async () => {
+                if (obs.bs_score != null || bsLoading) return;
+                setBsLoading(true);
+                try {
+                  const res = await fetch(`${API}/observations/${obs.id}/bullshit`, { method: "POST", headers: authHeaders() });
+                  if (res.ok) {
+                    const data = await res.json();
+                    setObs(o => ({ ...o, bs_score: data.bs_score, bs_verdict: data.bs_verdict }));
+                  }
+                } finally { setBsLoading(false); }
+              }}
+              style={{
+                padding: "10px 14px", borderRadius: 10, border: "none", cursor: obs.bs_score != null ? "default" : "pointer",
+                background: obs.bs_score != null ? "#FFF3E0" : "#EFEFED",
+                color: obs.bs_score != null ? "#E65100" : "#666",
+                fontSize: 14, fontWeight: 700, fontFamily: "inherit",
+                WebkitTapHighlightColor: "transparent",
+                display: "flex", alignItems: "center", justifyContent: "center", gap: 4, flexShrink: 0,
+              }}
+            >
+              {bsLoading ? <ProcessingDots /> : obs.bs_score != null ? `🗑 ${Math.round(obs.bs_score)}` : "🗑 BS?"}
+            </button>
+          </div>
+        )}
+
+        {/* BS result */}
+        {obs.bs_score != null && obs.bs_verdict && (
+          <div style={{ background: "#FFF8F0", border: "1px solid #FFE0B2", borderRadius: 12, padding: "14px 16px", marginBottom: 20 }}>
+            <p style={{ fontSize: 10, fontWeight: 700, color: "#E65100", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>BS Score: {Math.round(obs.bs_score)}/100</p>
+            <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.6, margin: 0 }}>{obs.bs_verdict}</p>
           </div>
         )}
 
@@ -1036,6 +1079,45 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
             </div>
           );
         })()}
+
+        {/* Steel man the opposite */}
+        {obs.status === "complete" && (
+          <div style={{ marginTop: 24, paddingTop: 20, borderTop: "1px solid #EBEBEB" }}>
+            <button
+              onClick={async () => {
+                if (counterThesis !== null) {
+                  onResubmit(counterThesis, undefined, undefined);
+                  return;
+                }
+                const res = await fetch(`${API}/observations/${obs.id}/counter-thesis`, { headers: authHeaders() });
+                if (res.ok) {
+                  const data = await res.json();
+                  setCounterThesis(data.counter_thesis);
+                }
+              }}
+              style={{
+                width: "100%", padding: "13px 0", borderRadius: 12, border: "1.5px solid #1A1A1A",
+                background: "transparent", color: "#1A1A1A", fontSize: 14, fontWeight: 700,
+                cursor: "pointer", fontFamily: "inherit", WebkitTapHighlightColor: "transparent",
+              }}
+            >
+              {counterThesis ? `Steel man: "${counterThesis.slice(0, 50)}${counterThesis.length > 50 ? "…" : ""}"` : "⟳ Steel man the opposite"}
+            </button>
+          </div>
+        )}
+
+        {/* Challenges */}
+        {challenges.length > 0 && (
+          <div style={{ marginTop: 24 }}>
+            <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 12px" }}>Challenges ({challenges.length})</p>
+            {challenges.map(c => (
+              <div key={c.id} style={{ background: "#F8F8F6", borderRadius: 10, padding: "12px 14px", marginBottom: 8, borderLeft: "3px solid #1A1A1A" }}>
+                <p style={{ fontSize: 12, fontWeight: 700, color: "#1A1A1A", margin: "0 0 4px", lineHeight: 1.4 }}>{c.thesis || c.raw_input}</p>
+                {c.score != null && <span style={{ fontSize: 10, color: "#888" }}>Score: {Math.round(c.score)}</span>}
+              </div>
+            ))}
+          </div>
+        )}
 
       </div>
 

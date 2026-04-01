@@ -5,14 +5,14 @@ from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy import select, desc
+from sqlalchemy import select, desc, text
 import httpx
 from jose import jwt, JWTError
 from pydantic import BaseModel
 from database import init_db, get_db, AsyncSessionLocal
 from models import Observation, User
 from schemas import ObservationCreate, ObservationOut
-from pipeline import format_thesis, generate_steel_man, generate_stress_test, generate_metadata, ACTIVE_MODEL
+from pipeline import format_thesis, generate_steel_man, generate_stress_test, generate_metadata, call_bullshit, negate_thesis, ACTIVE_MODEL
 from config import settings
 
 
@@ -58,6 +58,20 @@ async def require_user(user: User | None = Depends(get_current_user)) -> User:
 async def lifespan(app: FastAPI):
     await init_db()
     async with AsyncSessionLocal() as db:
+        # Add new columns if they don't exist (SQLite migration)
+        for col, definition in [
+            ("user_id", "TEXT"),
+            ("parent_id", "TEXT"),
+            ("challenge_type", "TEXT"),
+            ("bs_score", "REAL"),
+            ("bs_verdict", "TEXT"),
+        ]:
+            try:
+                await db.execute(text(f"ALTER TABLE observations ADD COLUMN {col} {definition}"))
+                await db.commit()
+            except Exception:
+                await db.rollback()
+
         from sqlalchemy import update
         await db.execute(
             update(Observation)
@@ -189,6 +203,8 @@ async def create_observation(
         image_media_type=image_media_type,
         model_used=ACTIVE_MODEL,
         user_id=current_user.id if current_user else None,
+        parent_id=body.parent_id,
+        challenge_type=body.challenge_type,
     )
     db.add(obs)
     await db.commit()
@@ -239,6 +255,44 @@ async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
     obs.stress_test = result
     await db.commit()
     return result
+
+
+@app.post("/observations/{obs_id}/bullshit")
+async def bullshit_check(obs_id: str, db: AsyncSession = Depends(get_db)):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    if obs.status != "complete":
+        raise HTTPException(400, "Research not complete")
+    if obs.bs_score is not None:
+        return {"bs_score": obs.bs_score, "bs_verdict": obs.bs_verdict}
+    try:
+        result = await call_bullshit(obs.thesis or obs.raw_input, obs.summary or "")
+    except Exception as e:
+        raise HTTPException(500, f"BS check failed: {str(e)}")
+    obs.bs_score = result.get("bs_score")
+    obs.bs_verdict = result.get("bs_verdict")
+    await db.commit()
+    return {"bs_score": obs.bs_score, "bs_verdict": obs.bs_verdict}
+
+
+@app.get("/observations/{obs_id}/challenges", response_model=list[ObservationOut])
+async def get_challenges(obs_id: str, db: AsyncSession = Depends(get_db)):
+    result = await db.execute(
+        select(Observation)
+        .where(Observation.parent_id == obs_id)
+        .order_by(Observation.created_at)
+    )
+    return result.scalars().all()
+
+
+@app.get("/observations/{obs_id}/counter-thesis")
+async def get_counter_thesis(obs_id: str, db: AsyncSession = Depends(get_db)):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    counter = await negate_thesis(obs.thesis or obs.raw_input)
+    return {"counter_thesis": counter}
 
 
 @app.delete("/observations/{obs_id}", status_code=204)

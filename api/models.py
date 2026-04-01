@@ -49,4 +49,8 @@ class Observation(Base):
     error_detail: Mapped[str | None] = mapped_column(Text, nullable=True)
     image_data: Mapped[str | None] = mapped_column(Text, nullable=True)  # base64
     image_media_type: Mapped[str | None] = mapped_column(String, nullable=True)  # e.g. image/jpeg
+    parent_id: Mapped[str | None] = mapped_column(String, ForeignKey("observations.id"), nullable=True, index=True)
+    challenge_type: Mapped[str | None] = mapped_column(String, nullable=True)  # "counter" | "bullshit" | None
+    bs_score: Mapped[float | None] = mapped_column(Float, nullable=True)  # 0-100, 100 = total BS
+    bs_verdict: Mapped[str | None] = mapped_column(Text, nullable=True)  # one punchy line
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)

@@ -10,15 +10,19 @@ export interface Observation {
   input_type: "text" | "voice" | "photo" | "screenshot" | "url";
   thesis: string;
   status: "formatting" | "researching" | "complete" | "error";
-  summary?: string;        // steel man bullets
-  stress_test?: StressTest; // generated on demand
-  score?: number;          // 0-100 evidence strength
-  tags?: string[];         // e.g. ["AI", "Markets"]
-  evidence_type?: string;  // Empirical | Observational | Anecdotal | Speculative
+  summary?: string;
+  stress_test?: StressTest;
+  score?: number;
+  tags?: string[];
+  evidence_type?: string;
   sources?: { url: string; title: string }[];
   model_used?: string;
   error_detail?: string;
-  image_data?: string;       // base64
-  image_media_type?: string; // e.g. "image/jpeg"
+  image_data?: string;
+  image_media_type?: string;
+  parent_id?: string;
+  challenge_type?: string;
+  bs_score?: number;
+  bs_verdict?: string;
   created_at: string;
 }

@@ -438,3 +438,39 @@ Be concise. Each bullet must be under 20 words. Return valid JSON only. No markd
         raw = result
 
     return _extract_json(raw), sources
+
+
+async def call_bullshit(thesis: str, steel_man: str) -> dict:
+    """Fast credibility check. Returns {bs_score: 0-100, bs_verdict: str}. 100 = total BS."""
+    result = await _call(
+        system=(
+            "You are a brutally honest fact-checker. "
+            "You evaluate claims with no mercy — if it's wrong, say so. "
+            "Return ONLY valid JSON. No markdown. No preamble."
+        ),
+        user=(
+            f"Thesis: {thesis}\n\n"
+            f"Steel man arguments:\n{steel_man}\n\n"
+            f"Give this a BS Score from 0-100 where 100 = completely false or misleading, 0 = solid truth.\n"
+            f"Also write ONE punchy sentence (max 15 words) explaining the core problem with this claim.\n"
+            f"Use real evidence from search where available.\n\n"
+            f"Return JSON: {{\"bs_score\": <integer 0-100>, \"bs_verdict\": \"<one punchy sentence>\"}}"
+        ),
+        max_tokens=300,
+        use_search=(PROVIDER == "gemini"),
+    )
+    if isinstance(result, tuple):
+        raw = result[0]
+    else:
+        raw = result
+    return _extract_json(raw)
+
+
+async def negate_thesis(thesis: str) -> str:
+    """Return the logical opposite of a thesis as a punchy statement."""
+    result = await _call(
+        system="You are a debate coach. Flip the thesis into its strongest opposing claim. One sentence, punchy and direct. No preamble.",
+        user=f"Original thesis: {thesis}\n\nWrite the opposing thesis:",
+        max_tokens=100,
+    )
+    return result.strip() if isinstance(result, str) else result[0].strip()

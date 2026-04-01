@@ -7,8 +7,10 @@ from pydantic import BaseModel
 class ObservationCreate(BaseModel):
     raw_input: str
     input_type: str = "text"
-    image_data: Optional[str] = None   # base64-encoded image
-    image_media_type: Optional[str] = None  # e.g. "image/jpeg"
+    image_data: Optional[str] = None
+    image_media_type: Optional[str] = None
+    parent_id: Optional[str] = None
+    challenge_type: Optional[str] = None  # "counter" | "bullshit"
 
 
 class ObservationOut(BaseModel):
@@ -30,4 +32,8 @@ class ObservationOut(BaseModel):
     error_detail: Optional[str] = None
     image_data: Optional[str] = None
     image_media_type: Optional[str] = None
+    parent_id: Optional[str] = None
+    challenge_type: Optional[str] = None
+    bs_score: Optional[float] = None
+    bs_verdict: Optional[str] = None
     created_at: datetime
