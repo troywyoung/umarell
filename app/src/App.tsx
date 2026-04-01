@@ -36,11 +36,6 @@ function getRandomPlaceholder() {
   return PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)];
 }
 
-const SCRIBBLE_STYLE: React.CSSProperties = {
-  position: "fixed", bottom: "-28vw", left: "-28vw",
-  width: "80vw",
-  pointerEvents: "none", zIndex: 0,
-};
 
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
 
@@ -324,7 +319,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 }) {
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
-      <img src="/scribble.png" style={SCRIBBLE_STYLE} />
+
       <div style={{
         padding: "14px 20px 10px",
         borderBottom: "1px solid rgba(255,255,255,0.08)",
@@ -1522,7 +1517,7 @@ export default function App() {
   if (!authUser) {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative" }}>
-        <img src="/scribble.png" style={SCRIBBLE_STYLE} />
+  
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
