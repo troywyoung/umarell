@@ -1215,6 +1215,13 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {/* Steelman — always visible when complete */}
         {obs.status === "complete" && (steelBottomLine || steelHardFacts.length > 0 || steelBullets.length > 0) && (
           <div ref={steelmanRef}>
+            {steelBottomLine && (
+              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}>{flashSteelman && <PulsingDot />}Steelman</p>
+                <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
+              </div>
+            )}
+
             {/* Hard Facts */}
             {steelHardFacts.length > 0 && (
               <div style={{ marginBottom: 16 }}>
@@ -1225,13 +1232,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                     <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}>{fact}</p>
                   </div>
                 ))}
-              </div>
-            )}
-
-            {steelBottomLine && (
-              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}>{flashSteelman && <PulsingDot />}Steelman</p>
-                <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
 
@@ -1274,19 +1274,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           const cpHardFacts = Array.isArray(counterpoint.hard_facts) ? counterpoint.hard_facts : [];
           return (
             <div ref={counterpointRef} style={{ marginTop: 16 }}>
-              {/* Hard Facts */}
-              {cpHardFacts.length > 0 && (
-                <div style={{ marginBottom: 16 }}>
-                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,200,50,0.7)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>Hard Facts</p>
-                  {cpHardFacts.map((fact, i) => (
-                    <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                      <span style={{ color: "rgba(255,200,50,0.8)", fontWeight: 800, fontSize: 13, lineHeight: 1, marginTop: 3, flexShrink: 0 }}>—</span>
-                      <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}>{fact}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
-
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
                   <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: 0, display: "flex", alignItems: "center", gap: 6 }}>{flashCounterpoint && <PulsingDot />} Counterpoint</p>
@@ -1299,6 +1286,17 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 </div>
                 <p style={{ fontSize: 15, color: "#FFF", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{counterpoint.bottom_line}</p>
               </div>
+              {cpHardFacts.length > 0 && (
+                <div style={{ marginBottom: 16 }}>
+                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,200,50,0.7)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>Hard Facts</p>
+                  {cpHardFacts.map((fact, i) => (
+                    <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
+                      <span style={{ color: "rgba(255,200,50,0.8)", fontWeight: 800, fontSize: 13, lineHeight: 1, marginTop: 3, flexShrink: 0 }}>—</span>
+                      <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}>{fact}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
               {counterpoint.bullets.map((bullet, i) => (
                 <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                   <span style={{ color: "#FF00AE", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
