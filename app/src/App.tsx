@@ -1356,7 +1356,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 function HardFact({ text }: { text: string }) {
   const match = text.match(/^(.*?)(\s*\([^)]+\))$/);
   if (!match) return <>{text}</>;
-  return <>{match[1]}<span style={{ color: "rgba(255,200,50,0.45)", fontSize: 12 }}>{match[2]}</span></>;
+  return <>{match[1]}<span style={{ color: "rgba(255,200,50,0.75)", fontSize: 12, fontStyle: "italic" }}>{match[2]}</span></>;
 }
 
 function PulsingDot() {
