@@ -253,48 +253,65 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
   renderCard: (obs: Observation) => React.ReactNode;
   renderChallenge: (c: Observation) => React.ReactNode;
 }) {
-  const [expanded, setExpanded] = useState(true);
-  // Derive date from earliest observation
+  const [expanded, setExpanded] = useState(false);
   const earliest = observations.reduce((min, o) => {
     const t = new Date(o.created_at).getTime();
     return t < min ? t : min;
   }, Infinity);
   const dateStr = isFinite(earliest) ? new Date(earliest).toLocaleDateString("en-US", { month: "long", day: "numeric" }) : "";
+  const first = observations[0];
+  const rest = observations.slice(1);
 
   return (
     <div style={{ margin: "16px 0" }}>
       {/* Episode header */}
-      <div
-        onClick={() => setExpanded(!expanded)}
-        style={{
-          padding: "14px 0 12px", cursor: "pointer",
-          borderTop: "1px solid rgba(255,255,255,0.12)",
-          WebkitTapHighlightColor: "transparent",
-        }}
-      >
-        <p style={{ fontSize: 9, fontWeight: 800, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 4px" }}>People vs Algorithms <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 600 }}>· EP {dateStr}</span></p>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <span style={{ fontSize: 16, fontWeight: 800, color: "#FFF", letterSpacing: -0.4 }}>{title} <span style={{ color: "rgba(255,255,255,0.35)" }}>({observations.length})</span></span>
-          <span style={{ marginLeft: "auto", fontSize: 11, color: "rgba(255,255,255,0.25)", transition: "transform 0.2s", transform: expanded ? "rotate(0deg)" : "rotate(-90deg)" }}>▼</span>
-        </div>
+      <div style={{ padding: "14px 0 10px", borderTop: "1px solid rgba(255,255,255,0.12)" }}>
+        <p style={{ fontSize: 9, fontWeight: 800, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 4px" }}>
+          PvA Episode Bundle <span style={{ color: "rgba(255,255,255,0.25)", fontWeight: 600 }}>· {dateStr}</span>
+        </p>
+        <p style={{ fontSize: 16, fontWeight: 800, color: "#FFF", letterSpacing: -0.4, margin: 0 }}>
+          {title} <span style={{ color: "rgba(255,255,255,0.35)" }}>({observations.length})</span>
+        </p>
       </div>
-      {/* Episode cards */}
-      {expanded && (
+
+      {/* Always show first card */}
+      {first && (
         <div style={{ borderLeft: "2px solid rgba(255,0,174,0.25)", paddingLeft: 12, marginLeft: 2 }}>
-          {observations.map(obs => {
+          <div style={{ marginBottom: expanded ? 10 : 0 }}>
+            {renderCard(first)}
+            {(challengeMap.get(first.id) || [])
+              .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime())
+              .map(c => <div key={c.id} style={{ marginTop: 4 }}>{renderChallenge(c)}</div>)}
+          </div>
+
+          {/* Expanded: remaining cards */}
+          {expanded && rest.map(obs => {
             const children = (challengeMap.get(obs.id) || [])
               .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
             return (
               <div key={obs.id} style={{ marginBottom: 10 }}>
                 {renderCard(obs)}
-                {children.map(c => (
-                  <div key={c.id} style={{ marginTop: 4 }}>
-                    {renderChallenge(c)}
-                  </div>
-                ))}
+                {children.map(c => <div key={c.id} style={{ marginTop: 4 }}>{renderChallenge(c)}</div>)}
               </div>
             );
           })}
+        </div>
+      )}
+
+      {/* Expand/collapse tap target */}
+      {rest.length > 0 && (
+        <div
+          onClick={() => setExpanded(!expanded)}
+          style={{
+            display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+            padding: "10px 0", cursor: "pointer",
+            WebkitTapHighlightColor: "transparent",
+          }}
+        >
+          <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE" }}>
+            {expanded ? "Show less" : `+${rest.length} more steelmans`}
+          </span>
+          <span style={{ fontSize: 10, color: "#FF00AE", transition: "transform 0.2s", transform: expanded ? "rotate(180deg)" : "rotate(0deg)" }}>▼</span>
         </div>
       )}
     </div>
