@@ -229,7 +229,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   onSignOut: () => void;
 }) {
   const [bgImage, setBgImage] = useState<string | null>(null);
-  const [showCards, setShowCards] = useState(false);
   useEffect(() => {
     let cancelled = false;
     const page = Math.floor(Math.random() * 100) + 1;
@@ -246,14 +245,13 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           img.onload = () => {
             if (cancelled) return;
             setBgImage(url);
-            setTimeout(() => { if (!cancelled) setShowCards(true); }, 1000);
           };
-          img.onerror = () => { if (!cancelled) setShowCards(true); };
+          img.onerror = () => {};
         } else {
-          setShowCards(true);
+          // no image, nothing to do
         }
       })
-      .catch(() => { if (!cancelled) setShowCards(true); });
+      .catch(() => {});
     return () => { cancelled = true; };
   }, []);
   return (
@@ -306,7 +304,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </div>
       </div>
 
-      <div style={{ padding: "12px 16px 0", opacity: showCards ? 1 : 0, transition: "opacity 0.5s ease" }}>
+      <div style={{ padding: "12px 16px 0" }}>
         {observations.length === 0 && !loading ? null : [...observations]
           .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
           .map((obs) => {
