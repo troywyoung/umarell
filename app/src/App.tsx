@@ -41,7 +41,7 @@ function getRandomPlaceholder() {
 // Always partially off-screen (30-70% cropped), visible part never clipped.
 function getRandomScribblePos() {
   const isMobile = window.innerWidth < 600;
-  const size = isMobile ? 140 : 70; // vw — double on mobile
+  const size = isMobile ? 98 : 49; // vw — 30% smaller
   const cropPct = 30 + Math.random() * 40; // crop 30-70%
   const edge = Math.floor(Math.random() * 3); // 0=left, 1=top, 2=right
   // Never above the logo — keep top >= 15vh so feed text stays readable
