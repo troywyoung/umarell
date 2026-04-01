@@ -457,7 +457,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 onClick={() => onSelect(obs)}
                 style={{
                   borderRadius: 10,
-                  background: obs.episode_tag ? "#EFEFED" : "#FFF",
+                  background: obs.episode_tag ? "#D2D2D1" : "#FFF",
                   border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", overflow: "hidden",
