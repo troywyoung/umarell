@@ -44,21 +44,23 @@ function getRandomScribblePos() {
   const size = isMobile ? 140 : 70; // vw — double on mobile
   const cropPct = 30 + Math.random() * 40; // crop 30-70%
   const edge = Math.floor(Math.random() * 3); // 0=left, 1=top, 2=right
+  // Never above the logo — keep top >= 15vh so feed text stays readable
+  const minTop = 15;
 
   if (edge === 0) {
-    // Left edge
+    // Left edge — image extends off the left, visible part stays in viewport
     const left = -(cropPct / 100) * size;
-    const top = -20 + Math.random() * 70;
+    const top = minTop + Math.random() * 50;
     return { top: `${top}vh`, left: `${left}vw`, size };
   } else if (edge === 1) {
-    // Top edge
-    const top = -(cropPct / 100) * size;
-    const left = -10 + Math.random() * 60;
+    // Top edge — image extends off the top, visible part below logo
+    const top = -(cropPct / 100) * size + minTop;
+    const left = -(cropPct / 100) * size * 0.3 + Math.random() * 30;
     return { top: `${top}vw`, left: `${left}vw`, size };
   } else {
-    // Right edge
+    // Right edge — image extends off the right, visible part stays in viewport
     const left = 100 - ((100 - cropPct) / 100) * size;
-    const top = -20 + Math.random() * 70;
+    const top = minTop + Math.random() * 50;
     return { top: `${top}vh`, left: `${left}vw`, size };
   }
 }
