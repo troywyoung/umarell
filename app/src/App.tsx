@@ -561,7 +561,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Posts grouped by category, categories sorted by most recent */}
               {sortedCategories.map(([cat, items]) => (
                 <div key={cat}>
-                  <div style={{ fontSize: 9, fontWeight: 700, color: "rgba(255,255,255,0.3)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>{cat}</div>
+                  <div style={{ fontSize: 13, fontWeight: 400, color: "rgba(255,255,255,0.45)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>{cat}</div>
                   {items.map(renderPost)}
                 </div>
               ))}
