@@ -307,52 +307,44 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       </div>
 
       <div style={{ padding: "12px 16px 0", opacity: showCards ? 1 : 0, transition: "opacity 0.5s ease" }}>
-        {observations.length === 0 && !loading ? null : (() => {
-          const topLevel = observations.filter(o => !o.parent_id);
-          const challenges = observations.filter(o => !!o.parent_id);
-          const challengesByParent: Record<string, Observation[]> = {};
-          challenges.forEach(c => {
-            if (!challengesByParent[c.parent_id!]) challengesByParent[c.parent_id!] = [];
-            challengesByParent[c.parent_id!].push(c);
-          });
-          // Sort top-level obs by most recent activity (own or latest challenge)
-          const sortedTopLevel = [...topLevel].sort((a, b) => {
-            const aTime = Math.max(
-              new Date(a.created_at).getTime(),
-              ...(challengesByParent[a.id] || []).map(c => new Date(c.created_at).getTime()),
-            );
-            const bTime = Math.max(
-              new Date(b.created_at).getTime(),
-              ...(challengesByParent[b.id] || []).map(c => new Date(c.created_at).getTime()),
-            );
-            return bTime - aTime;
-          });
-          return sortedTopLevel.map((obs) => {
+        {observations.length === 0 && !loading ? null : [...observations]
+          .sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
+          .map((obs) => {
+            const isChallenge = !!obs.parent_id;
             const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
             const firstBullet = steelBullets[0] || "";
-            const kids = challengesByParent[obs.id] || [];
             return (
-              <div key={obs.id} style={{ marginBottom: 14 }}>
               <div
+                key={obs.id}
                 onClick={() => onSelect(obs)}
                 style={{
-                  background: "#FFF", borderRadius: 10,
+                  marginBottom: 10,
+                  marginLeft: isChallenge ? 16 : 0,
+                  borderRadius: 10,
+                  background: isChallenge ? "#EEF4FF" : "#FFF",
+                  borderLeft: isChallenge ? "3px solid #5C8EFF" : "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
-                  cursor: "pointer", position: "relative", overflow: "hidden",
+                  cursor: "pointer", overflow: "hidden",
                 }}
               >
-                {/* Top row: headline + score badge + delete */}
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "10px 12px 6px 12px" }}>
-                  {obs.image_data && (
+                {isChallenge && (
+                  <div style={{ padding: "8px 12px 0", display: "flex", alignItems: "center", gap: 5 }}>
+                    <span style={{ fontSize: 9, fontWeight: 700, color: "#5C8EFF" }}>↩ CHALLENGE</span>
+                  </div>
+                )}
+                {/* Top row: headline + score + delete */}
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: isChallenge ? "6px 12px 6px 12px" : "10px 12px 6px 12px" }}>
+                  {obs.image_data && !isChallenge && (
                     <img
                       src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
                       style={{ width: 65, height: 65, borderRadius: 6, objectFit: "cover", flexShrink: 0 }}
                     />
                   )}
                   <p style={{
-                    fontSize: 12, fontWeight: 700, color: "#1A1A1A",
-                    lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
-                    overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
+                    fontSize: isChallenge ? 11 : 12, fontWeight: 700,
+                    color: "#1A1A1A", lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
+                    overflow: "hidden", display: "-webkit-box",
+                    WebkitLineClamp: isChallenge ? 3 : 4, WebkitBoxOrient: "vertical",
                   }}>
                     {obs.thesis || obs.raw_input}
                   </p>
@@ -363,17 +355,19 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                       color: obs.score >= 70 ? "#2E7D32" : obs.score >= 40 ? "#E65100" : "#6A1B9A",
                       padding: "2px 6px", borderRadius: 4, letterSpacing: 0.2,
                     }}>
-                      {obs.score}
+                      {Math.round(obs.score)}
                     </span>
                   )}
-                  <button
-                    onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steel man?")) onDelete(obs.id); }}
-                    style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
-                  >&times;</button>
+                  {!isChallenge && (
+                    <button
+                      onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steel man?")) onDelete(obs.id); }}
+                      style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
+                    >&times;</button>
+                  )}
                 </div>
 
                 {/* Summary */}
-                {firstBullet && (
+                {firstBullet && !isChallenge && (
                   <p style={{
                     fontSize: 10, color: "#555", lineHeight: 1.55,
                     margin: 0, padding: "0 12px 8px 12px",
@@ -386,76 +380,33 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 
                 {(obs.status === "formatting" || obs.status === "researching") && (
                   <div style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "0 12px 8px" }}>
-                    <SteelManIcon size={14} animate />
+                    <SteelManIcon size={isChallenge ? 12 : 14} animate />
                     <span style={{ fontSize: 10, color: "#999", fontStyle: "italic" }}>
                       {obs.status === "formatting" ? "Formatting\u2026" : "Researching\u2026"}
                     </span>
                   </div>
                 )}
 
-                {/* Footer: time + tags + share */}
+                {/* Footer */}
                 <div style={{
                   display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap",
-                  padding: "6px 12px 10px", borderTop: "1px solid #F5F5F2",
+                  padding: "6px 12px 10px",
+                  borderTop: `1px solid ${isChallenge ? "rgba(92,142,255,0.15)" : "#F5F5F2"}`,
                 }}>
                   <span style={{ fontSize: 8, fontWeight: 600, color: "#B0B0A8", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
                   <EvidenceBadge value={obs.evidence_type} />
-                  {obs.tags?.map((tag) => (
+                  {!isChallenge && obs.tags?.map((tag) => (
                     <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
                   ))}
-                  {obs.status === "complete" && obs.thesis && (
+                  {obs.status === "complete" && obs.thesis && !isChallenge && (
                     <span style={{ marginLeft: "auto" }}>
                       <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
                     </span>
                   )}
                 </div>
               </div>
-              {/* Nested challenges */}
-              {kids.map(c => (
-                <div
-                  key={c.id}
-                  onClick={() => onSelect(c)}
-                  style={{
-                    marginTop: 4, marginLeft: 16, borderRadius: 10,
-                    background: "#EEF4FF", borderLeft: "3px solid #5C8EFF",
-                    boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
-                    cursor: "pointer", overflow: "hidden",
-                  }}
-                >
-                  <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "10px 12px 6px" }}>
-                    <span style={{ fontSize: 9, fontWeight: 700, color: "#5C8EFF", flexShrink: 0, marginTop: 2 }}>↩</span>
-                    <p style={{
-                      fontSize: 11, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, margin: 0, flex: 1,
-                      overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical",
-                    }}>
-                      {c.thesis || c.raw_input}
-                    </p>
-                    {c.score != null && (
-                      <span style={{
-                        fontSize: 9, fontWeight: 800, flexShrink: 0,
-                        background: c.score >= 70 ? "#E8F5E9" : c.score >= 40 ? "#FFF3E0" : "#F3E5F5",
-                        color: c.score >= 70 ? "#2E7D32" : c.score >= 40 ? "#E65100" : "#6A1B9A",
-                        padding: "2px 6px", borderRadius: 4,
-                      }}>{Math.round(c.score)}</span>
-                    )}
-                  </div>
-                  {c.status === "complete" && c.evidence_type && (
-                    <div style={{ padding: "0 12px 8px" }}>
-                      <EvidenceBadge value={c.evidence_type} />
-                    </div>
-                  )}
-                  {(c.status === "formatting" || c.status === "researching") && (
-                    <div style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "0 12px 8px" }}>
-                      <SteelManIcon size={12} animate />
-                      <span style={{ fontSize: 9, color: "#999", fontStyle: "italic" }}>Researching…</span>
-                    </div>
-                  )}
-                </div>
-              ))}
-              </div>
             );
-          });
-        })()}
+          })}
       </div>
 
       {/* Idea Button */}
