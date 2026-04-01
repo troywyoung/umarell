@@ -225,7 +225,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   onCapture: () => void;
   onSelect: (o: Observation) => void;
   onDelete: (id: string) => void;
-  authUser: { name: string; avatar: string | null };
+  authUser: { id: string; name: string; avatar: string | null };
   onSignOut: () => void;
 }) {
   const [bgImage, setBgImage] = useState<string | null>(null);
@@ -344,6 +344,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     overflow: "hidden", display: "-webkit-box",
                     WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
                   }}>
+                    {obs.user_name && <span style={{ color: "#E53935" }}>{obs.user_name}: </span>}
                     {obs.thesis || obs.raw_input}
                   </p>
                   {obs.score != null && (
@@ -356,10 +357,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                       {Math.round(obs.score)}
                     </span>
                   )}
-                  <button
-                    onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steel man?")) onDelete(obs.id); }}
-                    style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
-                  >&times;</button>
+                  {obs.user_id === authUser.id && (
+                    <button
+                      onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steel man?")) onDelete(obs.id); }}
+                      style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
+                    >&times;</button>
+                  )}
                 </div>
                 {firstBullet && (
                   <p style={{
@@ -409,7 +412,10 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 overflow: "hidden",
               }}
             >
-              <span style={{ fontSize: 13, flexShrink: 0, lineHeight: 1 }}>&#9876;&#xFE0E;</span>
+              <svg width="14" height="10" viewBox="0 0 14 10" fill="none" style={{ flexShrink: 0 }}>
+                <circle cx="4.5" cy="5" r="4" stroke="#2C5ABA" strokeWidth="1.2" fill="none" />
+                <circle cx="9.5" cy="5" r="4" stroke="#2C5ABA" strokeWidth="1.2" fill="none" />
+              </svg>
               <span style={{ fontSize: 11, fontWeight: 800, color: "#2C5ABA", flexShrink: 0 }}>Challenge:</span>
               <span style={{ fontSize: 11, fontWeight: 600, color: "#1A1A1A", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis" }}>{c.thesis || c.raw_input}</span>
             </div>
@@ -850,8 +856,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
-      <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", borderBottom: "1px solid #EBEBEB" }}>
+      <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid #EBEBEB" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
+        {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
       </div>
 
       <div style={{ padding: "24px 20px 0" }}>
@@ -900,9 +907,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 <button
                   onClick={(e) => { e.stopPropagation(); onChallenge(obs); }}
                   style={{
-                    background: "none", border: "1px solid #D5D5CD", borderRadius: 6,
+                    background: "none", border: "1px solid #E53935", borderRadius: 6,
                     padding: "3px 10px", cursor: "pointer",
-                    fontSize: 10, fontWeight: 600, color: "#888", fontFamily: "inherit",
+                    fontSize: 10, fontWeight: 600, color: "#E53935", fontFamily: "inherit",
                     letterSpacing: 0.2, WebkitTapHighlightColor: "transparent",
                   }}
                 >Challenge this</button>

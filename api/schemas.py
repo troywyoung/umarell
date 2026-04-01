@@ -18,6 +18,7 @@ class ObservationOut(BaseModel):
 
     id: str
     user_id: Optional[str] = None
+    user_name: Optional[str] = None
     raw_input: str
     input_type: str
     thesis: Optional[str]

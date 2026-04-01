@@ -83,7 +83,7 @@ export function useObservations() {
   }, []);
 
   const deleteObservation = useCallback(async (id: string) => {
-    await fetch(`${API}/observations/${id}`, { method: "DELETE" });
+    await fetch(`${API}/observations/${id}`, { method: "DELETE", headers: authHeaders() });
     setObservations((prev) => prev.filter((o) => o.id !== id));
   }, []);
 

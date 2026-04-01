@@ -221,22 +221,38 @@ async def create_observation(
     return obs
 
 
-@app.get("/observations", response_model=list[ObservationOut])
+async def _attach_user_names(db: AsyncSession, observations: list[Observation]) -> list[dict]:
+    user_ids = {o.user_id for o in observations if o.user_id}
+    user_map: dict[str, str] = {}
+    if user_ids:
+        result = await db.execute(select(User).where(User.id.in_(user_ids)))
+        for u in result.scalars():
+            user_map[u.id] = u.name
+    out = []
+    for o in observations:
+        d = ObservationOut.model_validate(o).model_dump()
+        d["user_name"] = user_map.get(o.user_id) if o.user_id else None
+        out.append(d)
+    return out
+
+
+@app.get("/observations")
 async def list_observations(
     db: AsyncSession = Depends(get_db),
     current_user: User | None = Depends(get_current_user),
 ):
     query = select(Observation).order_by(desc(Observation.created_at)).limit(100)
     result = await db.execute(query)
-    return result.scalars().all()
+    return await _attach_user_names(db, list(result.scalars().all()))
 
 
-@app.get("/observations/{obs_id}", response_model=ObservationOut)
+@app.get("/observations/{obs_id}")
 async def get_observation(obs_id: str, db: AsyncSession = Depends(get_db)):
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
-    return obs
+    rows = await _attach_user_names(db, [obs])
+    return rows[0]
 
 
 @app.post("/observations/{obs_id}/stress-test")
@@ -284,14 +300,14 @@ async def bullshit_check(obs_id: str, db: AsyncSession = Depends(get_db)):
     return {"bs_score": obs.bs_score, "bs_verdict": obs.bs_verdict}
 
 
-@app.get("/observations/{obs_id}/challenges", response_model=list[ObservationOut])
+@app.get("/observations/{obs_id}/challenges")
 async def get_challenges(obs_id: str, db: AsyncSession = Depends(get_db)):
     result = await db.execute(
         select(Observation)
         .where(Observation.parent_id == obs_id)
         .order_by(Observation.created_at)
     )
-    return result.scalars().all()
+    return await _attach_user_names(db, list(result.scalars().all()))
 
 
 @app.get("/observations/{obs_id}/counter-thesis")
@@ -304,9 +320,15 @@ async def get_counter_thesis(obs_id: str, db: AsyncSession = Depends(get_db)):
 
 
 @app.delete("/observations/{obs_id}", status_code=204)
-async def delete_observation(obs_id: str, db: AsyncSession = Depends(get_db)):
+async def delete_observation(
+    obs_id: str,
+    db: AsyncSession = Depends(get_db),
+    current_user: User | None = Depends(get_current_user),
+):
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
+    if obs.user_id and current_user and obs.user_id != current_user.id:
+        raise HTTPException(403, "You can only delete your own observations")
     await db.delete(obs)
     await db.commit()
