@@ -41,9 +41,9 @@ function getRandomPlaceholder() {
 // horizontalPct: random across viewport
 function getRandomScribblePos() {
   const showPct = 30 + Math.random() * 40; // 30% to 70% visible
-  const cropVw = ((100 - showPct) / 100) * 70; // vw to push off top (image is 70vw)
-  const horizontalPct = 10 + Math.random() * 80; // 10% to 90%
-  return { top: `${-cropVw}vw`, left: `${horizontalPct}%` };
+  const cropVw = ((100 - showPct) / 100) * 70; // vw to push off left (image is 70vw)
+  const verticalPct = 5 + Math.random() * 30; // 5% to 35% down from top
+  return { top: `${verticalPct}%`, left: `${-cropVw}vw` };
 }
 
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
@@ -245,8 +245,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       <img
         src="/scribble.png"
         style={{
-          position: "absolute", top: scribblePos.top, left: scribblePos.left, transform: "translateX(-50%)",
-          width: "70vw", pointerEvents: "none", zIndex: 0,
+          position: "absolute", top: scribblePos.top, left: scribblePos.left, width: "70vw", pointerEvents: "none", zIndex: 0,
         }}
       />
       <div style={{
