@@ -335,7 +335,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Steelman
+            <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Steelman<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
           </span>
           <span style={{ fontSize: window.innerWidth < 600 ? 8 : 12, fontWeight: 700, color: "rgba(255,255,255,0.5)", marginLeft: 42, marginTop: -2, letterSpacing: -0.4, whiteSpace: "nowrap" }}>
             Tap + to drop your first steelman
