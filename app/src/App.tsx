@@ -246,12 +246,9 @@ function timeAgo(iso: string) {
 
 // ─── Episode Section ─────────────────────────────────────────────────────
 
-function EpisodeSection({ title, observations, onSelect, onDelete, authUser, challengeMap, renderCard, renderChallenge }: {
+function EpisodeSection({ title, observations, challengeMap, renderCard, renderChallenge }: {
   title: string;
   observations: Observation[];
-  onSelect: (o: Observation) => void;
-  onDelete: (id: string) => void;
-  authUser: { id: string };
   challengeMap: Map<string, Observation[]>;
   renderCard: (obs: Observation) => React.ReactNode;
   renderChallenge: (c: Observation) => React.ReactNode;
@@ -503,7 +500,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 
               {/* Episode sections */}
               {[...episodeMap.entries()].map(([tag, { title, obs: epObs }]) => (
-                <EpisodeSection key={tag} title={title} observations={epObs} onSelect={onSelect} onDelete={onDelete} authUser={authUser} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
+                <EpisodeSection key={tag} title={title} observations={epObs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
               ))}
             </>
           );
