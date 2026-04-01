@@ -547,9 +547,14 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           const episodes = feedItems.filter(i => i.type === "episode");
           const posts = feedItems.filter(i => i.type === "post");
 
-          // Group posts by broad category, preserve recency order within each group
+          // Separate recent posts (last 24h) from older ones
+          const oneDayAgo = Date.now() - 24 * 60 * 60 * 1000;
+          const recentPosts = posts.filter(item => item.type === "post" && item.time >= oneDayAgo);
+          const olderPosts = posts.filter(item => item.type === "post" && item.time < oneDayAgo);
+
+          // Group older posts by broad category, preserve recency order within each group
           const categoryMap = new Map<string, typeof posts>();
-          posts.forEach(item => {
+          olderPosts.forEach(item => {
             if (item.type !== "post") return;
             const cat = item.obs.category || getCategory(item.obs.tags, item.obs.thesis || item.obs.raw_input);
             const arr = categoryMap.get(cat) || [];
@@ -586,7 +591,15 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 <EpisodeSection key={item.tag} title={item.title} observations={item.obs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
               ))}
 
-              {/* Posts grouped by category, categories sorted by most recent */}
+              {/* Recent posts (last 24h) */}
+              {recentPosts.length > 0 && (
+                <div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>Recent</div>
+                  {recentPosts.map(renderPost)}
+                </div>
+              )}
+
+              {/* Older posts grouped by category */}
               {sortedCategories.map(([cat, items]) => (
                 <div key={cat}>
                   <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.75)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>{cat}</div>
