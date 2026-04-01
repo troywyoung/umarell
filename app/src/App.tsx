@@ -222,20 +222,20 @@ function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "
   );
 }
 
-function ScoreBadge({ value, size = "md" }: { value?: number; size?: "sm" | "md" | "lg" }) {
+function ScoreBadge({ value, size = "md", dark = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean }) {
   if (value == null) return null;
   const v = Math.round(value);
   const accent = "#FF00AE";
   const dim = size === "sm" ? 22 : size === "lg" ? 40 : 32;
   const fontSize = size === "sm" ? 8 : size === "lg" ? 14 : 11;
-  const labelSize = size === "sm" ? 0 : size === "lg" ? 7 : 6;
+  const labelSize = 0;
   const pct = v / 100;
   const r = (dim - 4) / 2;
   const circ = 2 * Math.PI * r;
   return (
     <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
       <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)" }}>
-        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth={2.5} />
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={2.5} />
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={accent} strokeWidth={2.5}
           strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round" />
       </svg>
@@ -243,7 +243,7 @@ function ScoreBadge({ value, size = "md" }: { value?: number; size?: "sm" | "md"
         position: "absolute", inset: 0, display: "flex", flexDirection: "column",
         alignItems: "center", justifyContent: "center",
       }}>
-        <span style={{ fontSize, fontWeight: 800, color: "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{v}</span>
+        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{v}</span>
         {labelSize > 0 && <span style={{ fontSize: labelSize, fontWeight: 600, color: "rgba(255,255,255,0.35)", lineHeight: 1, marginTop: 1 }}>score</span>}
       </div>
     </div>
@@ -439,7 +439,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   }}>
                     {obs.thesis || obs.raw_input}
                   </p>
-                  <ScoreBadge value={obs.score} size="sm" />
+                  <ScoreBadge value={obs.score} size="sm" dark />
                   {(!obs.user_id || obs.user_id === authUser.id) && (
                     <button
                       onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steelman?")) onDelete(obs.id); }}
