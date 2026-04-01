@@ -552,9 +552,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           const recentPosts = posts.filter(item => item.type === "post" && item.time >= oneDayAgo);
           const olderPosts = posts.filter(item => item.type === "post" && item.time < oneDayAgo);
 
-          // Group older posts by broad category, preserve recency order within each group
+          // Group all posts by broad category, preserve recency order within each group
           const categoryMap = new Map<string, typeof posts>();
-          olderPosts.forEach(item => {
+          posts.forEach(item => {
             if (item.type !== "post") return;
             const cat = item.obs.category || getCategory(item.obs.tags, item.obs.thesis || item.obs.raw_input);
             const arr = categoryMap.get(cat) || [];
