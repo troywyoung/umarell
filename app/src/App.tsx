@@ -231,6 +231,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   const [bgImage, setBgImage] = useState<string | null>(null);
   useEffect(() => {
     let cancelled = false;
+    // TEMPORARILY DISABLED — set to true to re-enable background images
+    const ENABLE_BG = false;
+    if (!ENABLE_BG) return;
     const page = Math.floor(Math.random() * 100) + 1;
     fetch(`https://api.pexels.com/v1/search?query=${["animals","people+wonderment","people+confusion","people+ecstasy","factories","war"][Math.floor(Math.random()*6)]}&per_page=1&page=${page}&orientation=landscape`, {
       headers: { Authorization: "8PIku3G38amYoSKnhCyaA0o5p40er0GSxHM56s8Rvw5dcHrgiQ0n2qwe" },
