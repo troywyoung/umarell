@@ -1314,10 +1314,10 @@ export default function App() {
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
         <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center" }}>Steel Man</h1>
-        <p style={{ color: "rgba(255,255,255,0.35)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
-          A steel man is the opposite of a straw man — instead of weakening an argument, you make it as strong as possible.
+        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
+          To steel man is to take any argument and make the strongest possible case for it.
         </p>
-        <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
+        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
           Drop any claim. We research it and build the strongest case. Then stress test it. Challenge others. See what holds up.
         </p>
         {authLoading
