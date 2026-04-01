@@ -595,7 +595,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Episode bundle — after first 2 recent posts */}
               {episodes.map(item => item.type === "episode" && (
                 <div key={item.tag}>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.75)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>This Week on PvA</div>
+                  <div style={{ fontSize: 18, fontWeight: 400, color: "rgba(255,255,255,0.75)", fontFamily: "'Permanent Marker', cursive", padding: "14px 4px 6px" }}>This Week on PvA</div>
                   <EpisodeSection title={item.title} observations={item.obs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
                 </div>
               ))}
