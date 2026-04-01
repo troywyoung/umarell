@@ -230,14 +230,14 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 }) {
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative" }}>
-      {/* Scribble background — full bleed fixed, like the old Pexels images */}
-      <div style={{
-        position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
-        backgroundImage: "url(/scribble.png)",
-        backgroundSize: "cover", backgroundPosition: "center -30vw",
-        backgroundRepeat: "no-repeat",
-        zIndex: 0, pointerEvents: "none",
-      }} />
+      {/* Scribble image — emanates from top, cropped 30% off top */}
+      <img
+        src="/scribble.png"
+        style={{
+          position: "fixed", top: "-15vw", left: "50%", transform: "translateX(-50%)",
+          width: "100vw", pointerEvents: "none", zIndex: 0,
+        }}
+      />
       <div style={{
         padding: "20px 20px 16px",
         borderBottom: "1px solid rgba(255,255,255,0.08)",
@@ -1285,14 +1285,14 @@ export default function App() {
   if (!authUser) {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative", overflow: "hidden" }}>
-        {/* Scribble on login — full bleed */}
-        <div style={{
-          position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
-          backgroundImage: "url(/scribble.png)",
-          backgroundSize: "cover", backgroundPosition: "center -30vw",
-          backgroundRepeat: "no-repeat",
-          zIndex: 0, pointerEvents: "none",
-        }} />
+        {/* Scribble on login — emanates from top, cropped 30% */}
+        <img
+          src="/scribble.png"
+          style={{
+            position: "fixed", top: "-15vw", left: "50%", transform: "translateX(-50%)",
+            width: "100vw", pointerEvents: "none", zIndex: 0,
+          }}
+        />
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
