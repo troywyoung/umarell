@@ -225,10 +225,10 @@ function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "
 function ScoreBadge({ value, size = "md" }: { value?: number; size?: "sm" | "md" | "lg" }) {
   if (value == null) return null;
   const v = Math.round(value);
-  const accent = v >= 70 ? "#4CAF50" : v >= 40 ? "#FF9800" : "#FF00AE";
-  const dim = size === "sm" ? 28 : size === "lg" ? 44 : 36;
-  const fontSize = size === "sm" ? 10 : size === "lg" ? 16 : 13;
-  const labelSize = size === "sm" ? 0 : size === "lg" ? 8 : 7;
+  const accent = "#FF00AE";
+  const dim = size === "sm" ? 22 : size === "lg" ? 40 : 32;
+  const fontSize = size === "sm" ? 8 : size === "lg" ? 14 : 11;
+  const labelSize = size === "sm" ? 0 : size === "lg" ? 7 : 6;
   const pct = v / 100;
   const r = (dim - 4) / 2;
   const circ = 2 * Math.PI * r;
