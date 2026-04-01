@@ -234,7 +234,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       <div style={{
         position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
         backgroundImage: "url(/scribble.png)",
-        backgroundSize: "cover", backgroundPosition: "center top",
+        backgroundSize: "30%", backgroundPosition: "center top",
         backgroundRepeat: "no-repeat",
         zIndex: 0, pointerEvents: "none",
       }} />
@@ -1289,7 +1289,7 @@ export default function App() {
         <div style={{
           position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
           backgroundImage: "url(/scribble.png)",
-          backgroundSize: "cover", backgroundPosition: "center top",
+          backgroundSize: "30%", backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
           zIndex: 0, pointerEvents: "none",
         }} />
