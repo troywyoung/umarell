@@ -439,7 +439,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     />
                   )}
                   <p style={{
-                    fontSize: 12, fontWeight: 700,
+                    fontSize: window.innerWidth < 600 ? 15 : 12, fontWeight: 700,
                     color: "#1A1A1A", lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
                     overflow: "hidden", display: "-webkit-box",
                     WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
