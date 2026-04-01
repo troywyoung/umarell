@@ -326,7 +326,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 style={{
                   borderRadius: 10,
                   background: isChallenge ? "#EEF4FF" : "#FFF",
-                  borderLeft: isChallenge ? "3px solid #5C8EFF" : "none",
+                  border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", overflow: "hidden",
                 }}
@@ -450,11 +450,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 
 // ─── Capture ──────────────────────────────────────────────────────────────
 
-function CaptureView({ onSubmit, onSubmitImage, onBack, parentId }: {
+function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
   onSubmit: (text: string) => Promise<void>;
   onSubmitImage: (b64: string, mediaType: string, context?: string) => Promise<void>;
   onBack: () => void;
-  parentId?: string;
+  parentObs?: Observation | null;
 }) {
   const [text, setText] = useState("");
   const [url, setUrl] = useState("");
@@ -572,18 +572,23 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentId }: {
         </button>
       </div>
 
-      {parentId && (
-        <div style={{ background: "#EEF4FF", borderLeft: "3px solid #5C8EFF", borderRadius: 10, padding: "10px 14px", marginBottom: 20 }}>
-          <p style={{ fontSize: 11, fontWeight: 700, color: "#5C8EFF", margin: "0 0 2px", letterSpacing: 0.3 }}>↩ CHALLENGE</p>
-          <p style={{ fontSize: 12, color: "#555", margin: 0 }}>Your steel man will be linked to the original.</p>
-        </div>
-      )}
       <h1 style={{ fontSize: 26, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.5, margin: "0 0 6px" }}>
-        {parentId ? "What's your counter?" : "What's your take?"}
+        {parentObs ? "What's your counter?" : "What's your take?"}
       </h1>
       <p style={{ fontSize: 14, color: "#888", margin: "0 0 24px", lineHeight: 1.5 }}>
-        {parentId ? "Drop your counter-argument. We'll steel man it." : "Drop a hot take. We'll build the strongest case for it."}
+        {parentObs ? "Drop your counter-argument. We'll steel man it." : "Drop a hot take. We'll build the strongest case for it."}
       </p>
+      {parentObs && (
+        <div style={{ background: "#F8F8F6", borderRadius: 10, padding: "14px 16px", marginBottom: 20 }}>
+          <p style={{ fontSize: 9, fontWeight: 700, color: "#B0B0A8", letterSpacing: 0.5, textTransform: "uppercase", margin: "0 0 6px" }}>ORIGINAL STEEL MAN</p>
+          <p style={{ fontSize: 13, fontWeight: 700, color: "#1A1A1A", margin: "0 0 8px", lineHeight: 1.4 }}>{parentObs.thesis || parentObs.raw_input}</p>
+          {parentObs.summary && (
+            <p style={{ fontSize: 11, color: "#666", margin: 0, lineHeight: 1.5, maxHeight: 120, overflow: "auto" }}>
+              {parentObs.summary}
+            </p>
+          )}
+        </div>
+      )}
 
       {/* Single text input — always visible, auto-expands */}
       <div style={{
@@ -1104,7 +1109,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           <div style={{ marginTop: 24 }}>
             <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 12px" }}>Challenges ({challenges.length})</p>
             {challenges.map(c => (
-              <div key={c.id} style={{ background: "#F8F8F6", borderRadius: 10, padding: "12px 14px", marginBottom: 8, borderLeft: "3px solid #1A1A1A" }}>
+              <div key={c.id} style={{ background: "#F8F8F6", borderRadius: 10, padding: "12px 14px", marginBottom: 8 }}>
                 <p style={{ fontSize: 12, fontWeight: 700, color: "#1A1A1A", margin: "0 0 4px", lineHeight: 1.4 }}>{c.thesis || c.raw_input}</p>
                 {c.score != null && <span style={{ fontSize: 10, color: "#888" }}>Score: {Math.round(c.score)}</span>}
               </div>
@@ -1359,7 +1364,7 @@ export default function App() {
           setView("home");
           window.history.replaceState(null, "", window.location.pathname);
         }}
-        parentId={challengingObs?.id}
+        parentObs={challengingObs}
       />
     );
   }
