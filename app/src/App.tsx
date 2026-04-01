@@ -1144,23 +1144,25 @@ export default function App() {
     try { return JSON.parse(localStorage.getItem("sm_user") || "null"); } catch { return null; }
   });
   const [authLoading, setAuthLoading] = useState(false);
+  const [authError, setAuthError] = useState<string | null>(null);
 
   const handleGoogleSuccess = async (credentialResponse: { credential?: string }) => {
     if (!credentialResponse.credential) return;
     setAuthLoading(true);
+    setAuthError(null);
     try {
       const res = await fetch(`${API}/auth/google`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id_token: credentialResponse.credential }),
       });
-      if (!res.ok) throw new Error("Auth failed");
       const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || `Error ${res.status}`);
       localStorage.setItem("sm_token", data.token);
       localStorage.setItem("sm_user", JSON.stringify(data.user));
       setAuthUser(data.user);
-    } catch (e) {
-      console.error("Login failed", e);
+    } catch (e: any) {
+      setAuthError(e.message || "Login failed");
     } finally {
       setAuthLoading(false);
     }
@@ -1219,8 +1221,9 @@ export default function App() {
         </p>
         {authLoading
           ? <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14 }}>Signing in…</p>
-          : <GoogleLogin onSuccess={handleGoogleSuccess} onError={() => console.error("Google login failed")} theme="filled_black" shape="rectangular" text="continue_with" size="large" />
+          : <GoogleLogin onSuccess={handleGoogleSuccess} onError={() => setAuthError("Google sign-in failed")} theme="filled_black" shape="rectangular" text="continue_with" size="large" />
         }
+        {authError && <p style={{ color: "#FF6B6B", fontSize: 13, marginTop: 16, textAlign: "center" }}>{authError}</p>}
       </div>
     );
   }
