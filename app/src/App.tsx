@@ -413,7 +413,13 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </div>
       </div>
 
-      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "10px 16px 6px", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
+      <style>{`
+        @keyframes fadeSlideIn {
+          from { opacity: 0; transform: translateY(-6px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
+      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "18px 16px 10px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
         <span style={{ fontSize: 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>(What is this thing?)</span>
       </button>
 
