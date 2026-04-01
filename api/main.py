@@ -203,8 +203,6 @@ async def list_observations(
     current_user: User | None = Depends(get_current_user),
 ):
     query = select(Observation).order_by(desc(Observation.created_at)).limit(100)
-    if current_user:
-        query = query.where(Observation.user_id == current_user.id)
     result = await db.execute(query)
     return result.scalars().all()
 
