@@ -1300,6 +1300,7 @@ export default function App() {
       setView("home");
       setSelectedObs(null);
       window.history.replaceState(null, "", window.location.pathname);
+      setTimeout(() => window.scrollTo(0, 0), 0);
       fetchObservations();
     };
     window.addEventListener("popstate", handlePop);
@@ -1336,7 +1337,7 @@ export default function App() {
     window.history.pushState({ view: nextView }, "", url);
     if (obs) setSelectedObs(obs);
     setView(nextView);
-    window.scrollTo(0, 0);
+    setTimeout(() => window.scrollTo(0, 0), 0);
   };
 
   const handleChallenge = (obs: Observation) => {
@@ -1386,6 +1387,7 @@ export default function App() {
           setChallengingObs(null);
           setView("home");
           window.history.replaceState(null, "", window.location.pathname);
+          setTimeout(() => window.scrollTo(0, 0), 0);
         }}
         parentObs={challengingObs}
       />
@@ -1396,7 +1398,7 @@ export default function App() {
     return (
       <OutputView
         obs={selectedObs}
-        onBack={() => { setView("home"); window.history.replaceState(null, "", window.location.pathname); fetchObservations(); }}
+        onBack={() => { setView("home"); window.history.replaceState(null, "", window.location.pathname); fetchObservations(); setTimeout(() => window.scrollTo(0, 0), 0); }}
         onResubmit={handleResubmit}
         onChallenge={handleChallenge}
         pollObservation={pollObservation}
