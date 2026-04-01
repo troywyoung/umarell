@@ -38,12 +38,12 @@ function getRandomPlaceholder() {
 
 // Randomize scribble position on each load
 // showPct: 20–70% visible (rest cropped off top)
-// horizontalPct: 10–90% across the container
+// horizontalPct: random across viewport
 function getRandomScribblePos() {
   const showPct = 20 + Math.random() * 50; // 20% to 70% visible
-  const cropPx = ((100 - showPct) / 100) * 250; // px to push off top
+  const cropVw = (100 - showPct); // vw to push off top
   const horizontalPct = 10 + Math.random() * 80; // 10% to 90%
-  return { top: -cropPx, left: `${horizontalPct}%` };
+  return { top: `${-cropVw}vw`, left: `${horizontalPct}%` };
 }
 
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
@@ -241,12 +241,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   const [scribblePos] = useState(() => getRandomScribblePos());
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
-      {/* Scribble — small, cropped at top, random horizontal position each load */}
+      {/* Scribble — cropped from top, random position each load */}
       <img
         src="/scribble.png"
         style={{
           position: "absolute", top: scribblePos.top, left: scribblePos.left, transform: "translateX(-50%)",
-          width: 250, pointerEvents: "none", zIndex: 0,
+          width: "100vw", pointerEvents: "none", zIndex: 0,
         }}
       />
       <div style={{
@@ -562,7 +562,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
   const canSubmit = (!!imageMeta || !!text.trim() || !!url.trim()) && !submitting;
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 24px 60px", minHeight: "100vh", display: "flex", flexDirection: "column" }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 24px 60px", minHeight: "100vh", display: "flex", flexDirection: "column", background: "#12102B" }}>
       <div style={{ padding: "20px 0 16px" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>
           Cancel
@@ -812,7 +812,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
   if (obs.status === "error") {
     return (
-      <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 20px" }}>
+      <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 20px", background: "#12102B", minHeight: "100vh" }}>
         <div style={{ padding: "14px 0" }}>
           <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
         </div>
@@ -837,7 +837,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   // Share handled by ShareButton component
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80 }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80, background: "#12102B", minHeight: "100vh" }}>
       <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid #EBEBEB" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
         {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
@@ -1297,12 +1297,12 @@ export default function App() {
   if (!authUser) {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative", overflow: "hidden" }}>
-        {/* Scribble on login — small, cropped at top */}
+        {/* Scribble on login */}
         <img
           src="/scribble.png"
           style={{
             position: "absolute", top: loginScribblePos.top, left: loginScribblePos.left, transform: "translateX(-50%)",
-            width: 250, pointerEvents: "none", zIndex: 0,
+            width: "100vw", pointerEvents: "none", zIndex: 0,
           }}
         />
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
