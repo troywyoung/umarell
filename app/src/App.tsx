@@ -313,6 +313,21 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
   );
 }
 
+// ─── Category mapping ────────────────────────────────────────────────────
+
+const CATEGORY_ORDER = ["AI & Tech", "Media", "Economics", "Sports", "Science & Nature", "Other"];
+
+function getCategory(tags: string[] | null | undefined): string {
+  if (!tags || tags.length === 0) return "Other";
+  const t = tags.join(" ").toLowerCase();
+  if (/ai|machine.learning|llm|automation|tech|software|e.commerce|retail.tech|chatgpt|algorithm|digital|robot|data.science|cyber/.test(t)) return "AI & Tech";
+  if (/media|journalism|newsletter|creator.economy|subscription|publishing|broadcast|podcast|press|editorial/.test(t)) return "Media";
+  if (/econom|finance|trade|tariff|inflation|labor.market|employment|gdp|market|monetary|fiscal|stock|crypto|invest/.test(t)) return "Economics";
+  if (/sport|golf|hockey|basketball|football|soccer|baseball|tennis|athlete|nfl|nba|nhl|mlb/.test(t)) return "Sports";
+  if (/science|food|culinary|animal|coastal|environment|ecology|biology|chemistry|physics|climate|nature|health|medicine/.test(t)) return "Science & Nature";
+  return "Other";
+}
+
 // ─── Home ─────────────────────────────────────────────────────────────────
 
 function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUser, onSignOut }: {
@@ -507,27 +522,51 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             return b.time - a.time;
           });
 
+          const episodes = feedItems.filter(i => i.type === "episode");
+          const posts = feedItems.filter(i => i.type === "post");
+
+          // Group posts by broad category, preserve recency order within each group
+          const categoryMap = new Map<string, typeof posts>();
+          posts.forEach(item => {
+            if (item.type !== "post") return;
+            const cat = getCategory(item.obs.tags);
+            const arr = categoryMap.get(cat) || [];
+            arr.push(item);
+            categoryMap.set(cat, arr);
+          });
+
+          // Sort categories by most recent post in each group
+          const sortedCategories = [...categoryMap.entries()]
+            .sort((a, b) => Math.max(...b[1].map(i => i.time)) - Math.max(...a[1].map(i => i.time)));
+
+          const renderPost = (item: typeof posts[0]) => {
+            if (item.type !== "post") return null;
+            const children = (challengeMap.get(item.obs.id) || [])
+              .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+            return (
+              <div key={item.obs.id} style={{ marginBottom: 10 }}>
+                {renderCard(item.obs)}
+                {children.map(c => (
+                  <div key={c.id} style={{ marginTop: 4 }}>{renderChallenge(c)}</div>
+                ))}
+              </div>
+            );
+          };
+
           return (
             <>
-              {feedItems.map(item => {
-                if (item.type === "post") {
-                  const children = (challengeMap.get(item.obs.id) || [])
-                    .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
-                  return (
-                    <div key={item.obs.id} style={{ marginBottom: 10 }}>
-                      {renderCard(item.obs)}
-                      {children.map(c => (
-                        <div key={c.id} style={{ marginTop: 4 }}>
-                          {renderChallenge(c)}
-                        </div>
-                      ))}
-                    </div>
-                  );
-                }
-                return (
-                  <EpisodeSection key={item.tag} title={item.title} observations={item.obs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
-                );
-              })}
+              {/* Episode bundles pinned top */}
+              {episodes.map(item => item.type === "episode" && (
+                <EpisodeSection key={item.tag} title={item.title} observations={item.obs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
+              ))}
+
+              {/* Posts grouped by category, categories sorted by most recent */}
+              {sortedCategories.map(([cat, items]) => (
+                <div key={cat}>
+                  <div style={{ fontSize: 9, fontWeight: 700, color: "rgba(255,255,255,0.3)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>{cat}</div>
+                  {items.map(renderPost)}
+                </div>
+              ))}
             </>
           );
         })()}
