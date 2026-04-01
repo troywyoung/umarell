@@ -1315,10 +1315,13 @@ export default function App() {
         </div>
         <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center" }}>Steelman</h1>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
-          To steelman is to take any argument and make the strongest possible case for it.
+          A steelman is the strongest argument for an idea.
         </p>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
-          Drop any claim. We research it and build the strongest case. Then stress test it. Challenge others. See what holds up.
+          <strong style={{ color: "rgba(255,255,255,0.7)" }}>Enter any claim.</strong> We build the case.<br />
+          Then we stress test it.<br />
+          Challenge other claims.<br />
+          See what holds up.
         </p>
         {authLoading
           ? <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14 }}>Signing in…</p>
