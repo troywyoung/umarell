@@ -258,7 +258,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
             <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Steelman
           </span>
-          <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.5)", marginLeft: 42, marginTop: 0, letterSpacing: -0.4 }}>
+          <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.5)", marginLeft: 42, marginTop: -2, letterSpacing: -0.4 }}>
             Tap + to drop your first steelman
           </span>
         </div>
