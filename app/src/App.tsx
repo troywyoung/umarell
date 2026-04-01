@@ -365,7 +365,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
         {bullet("Drop any claim — a URL, a hot take, a screenshot, a half-formed idea. The AI rebuilds it as its strongest possible version: sharpest thesis, best evidence, most defensible form. That's steelmanning.")}
         {bullet("Every steelman gets a conviction score from 0–100. How well does the argument actually hold up? Higher isn't always better — a 60 that's genuinely defensible beats an 80 that's overconfident.")}
         {bullet("Once steelmanned, you can request a counterpoint — the strongest argument against the original claim. Or challenge someone else's. The feed is a live debate board.")}
-        {bullet("Reactions and takes are written in the editorial voice of People vs Algorithms — Troy Young, Brian Morrissey, and Alex Schleifer's podcast on media, tech, and culture. Opinionated. Connected to bigger patterns. Not neutral.")}
+        {bullet("Hit 'PvA Take' on any steelman to get a reaction in the voice of People vs Algorithms — Troy Young, Brian Morrissey, and Alex Schleifer's podcast on media, tech, and culture. Opinionated. Connected to bigger patterns. Not neutral.")}
         {bullet("Each week, the show's own steelmans drop into your feed under 'This Week on PvA' — arguments from the latest episode, ready to read, challenge, or riff on.")}
         <div style={{ marginTop: 32, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
           <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>Why it's interesting</p>
