@@ -108,7 +108,7 @@ const MESH_EDGES: [number, number][] = [
   [10,17],[12,4],[14,7],[11,2],[15,9],[13,20],[1,10],
 ];
 
-function SteelManIcon({ size = 24, animate = false, animateCount, color = "#1A1A1A" }: { size?: number; animate?: boolean; animateCount?: number; color?: string }) {
+function SteelManIcon({ size = 24, animate = false, animateCount, color = "#FFF" }: { size?: number; animate?: boolean; animateCount?: number; color?: string }) {
   const isAnimated = animate || animateCount != null;
   const id = isAnimated ? "sm-anim" : "sm-static";
   const nodeCount = MESH_NODES.length;
@@ -280,7 +280,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing…</span>}
+          {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
           <button
             onClick={onCapture}
             style={{
@@ -381,7 +381,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   padding: "6px 12px 10px",
                   borderTop: "1px solid #F5F5F2",
                 }}>
-                  <span style={{ fontSize: 8, fontWeight: 600, color: "#B0B0A8", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
+                  <span style={{ fontSize: 8, fontWeight: 600, color: "rgba(255,255,255,0.35)", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
                   <EvidenceBadge value={obs.evidence_type} />
                   {obs.tags?.map((tag: string) => (
                     <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
@@ -585,16 +585,16 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
         </button>
       </div>
 
-      <h1 style={{ fontSize: 26, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.5, margin: "0 0 6px" }}>
+      <h1 style={{ fontSize: 26, fontWeight: 700, color: "#FFF", letterSpacing: -0.5, margin: "0 0 6px" }}>
         {parentObs ? "What's your counter?" : "What's your take?"}
       </h1>
-      <p style={{ fontSize: 14, color: "#888", margin: "0 0 24px", lineHeight: 1.5 }}>
+      <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", margin: "0 0 24px", lineHeight: 1.5 }}>
         {parentObs ? "Drop your counter-argument. We'll steelman it." : "Drop a hot take. We'll build the strongest case for it."}
       </p>
       {parentObs && (
-        <div style={{ background: "#F8F8F6", borderRadius: 10, padding: "14px 16px", marginBottom: 20 }}>
-          <p style={{ fontSize: 9, fontWeight: 700, color: "#B0B0A8", letterSpacing: 0.5, textTransform: "uppercase", margin: "0 0 6px" }}>ORIGINAL STEEL MAN</p>
-          <p style={{ fontSize: 13, fontWeight: 700, color: "#1A1A1A", margin: "0 0 8px", lineHeight: 1.4 }}>{parentObs.thesis || parentObs.raw_input}</p>
+        <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 10, padding: "14px 16px", marginBottom: 20 }}>
+          <p style={{ fontSize: 9, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 0.5, textTransform: "uppercase", margin: "0 0 6px" }}>ORIGINAL STEEL MAN</p>
+          <p style={{ fontSize: 13, fontWeight: 700, color: "#FFF", margin: "0 0 8px", lineHeight: 1.4 }}>{parentObs.thesis || parentObs.raw_input}</p>
           {parentObs.summary && (
             <p style={{ fontSize: 11, color: "#666", margin: 0, lineHeight: 1.5, maxHeight: 120, overflow: "auto" }}>
               {parentObs.summary}
@@ -679,8 +679,8 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
           onClick={toggleVoice}
           style={{
             flex: 1, padding: "14px 0", borderRadius: 14, border: "none", cursor: "pointer",
-            background: listening ? "#1A1A1A" : "#F0F0ED",
-            color: listening ? "#FFF" : "#555",
+            background: listening ? "#FFF" : "rgba(255,255,255,0.08)",
+            color: listening ? "#12102B" : "rgba(255,255,255,0.6)",
             display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
             fontSize: 14, fontWeight: 600, fontFamily: "inherit",
             WebkitTapHighlightColor: "transparent",
@@ -695,7 +695,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
           onClick={() => fileRef.current?.click()}
           style={{
             flex: 1, padding: "14px 0", borderRadius: 14, border: "none", cursor: "pointer",
-            background: "#F0F0ED", color: "#555",
+            background: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.6)",
             display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
             fontSize: 14, fontWeight: 600, fontFamily: "inherit",
             WebkitTapHighlightColor: "transparent",
@@ -705,7 +705,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
           Screenshot
         </button>
       </div>
-      <p style={{ fontSize: 11, color: "#B0B0A8", textAlign: "center", margin: "0 0 14px", letterSpacing: 0.1 }}>
+      <p style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", textAlign: "center", margin: "0 0 14px", letterSpacing: 0.1 }}>
         Screenshot a headline, tweet, chart, or stat
       </p>
 
@@ -715,7 +715,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
         disabled={!canSubmit}
         style={{
           width: "100%",
-          background: canSubmit ? "#FF00AE" : "#D5D5CD",
+          background: canSubmit ? "#FF00AE" : "rgba(255,255,255,0.15)",
           color: "#FFF", border: "none", borderRadius: 14,
           padding: "16px 0", fontSize: 16, fontWeight: 700,
           cursor: canSubmit ? "pointer" : "not-allowed",
@@ -728,7 +728,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
 
       {error && (
         <div style={{ marginTop: 12, background: "#FFF0EE", borderRadius: 10, padding: "12px 14px", border: "1px solid #F5C6C0" }}>
-          <p style={{ fontSize: 13, color: "#C0392B", margin: 0, lineHeight: 1.5 }}>{error}</p>
+          <p style={{ fontSize: 13, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>{error}</p>
         </div>
       )}
     </div>
@@ -834,7 +834,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         </div>
         <div style={{ marginTop: 60, textAlign: "center" }}>
           <p style={{ fontSize: 28, marginBottom: 12 }}>{"\u26A0\uFE0F"}</p>
-          <p style={{ fontSize: 17, fontWeight: 700, color: "#1A1A1A", margin: "0 0 8px" }}>Analysis failed</p>
+          <p style={{ fontSize: 17, fontWeight: 700, color: "#FFF", margin: "0 0 8px" }}>Analysis failed</p>
           <p style={{ fontSize: 14, color: "#888", lineHeight: 1.6, margin: "0 0 28px" }}>
             {obs.error_detail?.includes("PAYWALL")
               ? "This article is paywalled. Paste the text directly instead."
@@ -844,7 +844,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               ? "Check that the API key is set correctly."
               : obs.error_detail || "Something went wrong. Try again."}
           </p>
-          <button onClick={onBack} style={{ background: "#1A1A1A", color: "#FFF", border: "none", borderRadius: 14, padding: "13px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Try again</button>
+          <button onClick={onBack} style={{ background: "#FFF", color: "#12102B", border: "none", borderRadius: 14, padding: "13px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Try again</button>
         </div>
       </div>
     );
@@ -854,7 +854,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80, background: "#12102B", minHeight: "100vh" }}>
-      <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid #EBEBEB" }}>
+      <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
         {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
       </div>
@@ -877,9 +877,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           <>
             {/* Original observation */}
             {!isImage && obs.raw_input && obs.raw_input !== "image" && (
-              <div style={{ background: "#F7F7F5", borderRadius: 12, padding: "14px 16px", marginBottom: 16, width: "100%", boxSizing: "border-box", overflow: "hidden" }}>
-                <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Your observation</p>
-                <p style={{ fontSize: 15, color: "#3A3A38", lineHeight: 1.65, margin: 0, wordBreak: "break-all", overflowWrap: "anywhere" }}>{obs.raw_input}</p>
+              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16, width: "100%", boxSizing: "border-box", overflow: "hidden" }}>
+                <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Your observation</p>
+                <p style={{ fontSize: 15, color: "rgba(255,255,255,0.8)", lineHeight: 1.65, margin: 0, wordBreak: "break-all", overflowWrap: "anywhere" }}>{obs.raw_input}</p>
               </div>
             )}
 
@@ -887,10 +887,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
             <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "30px 0 28px" }}>
               <SteelManIcon size={49} animate />
               <div>
-                <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "0 0 4px" }}>
+                <p style={{ fontSize: 15, fontWeight: 600, color: "#FFF", margin: "0 0 4px" }}>
                   {obs.status === "formatting" ? "Reading your take\u2026" : "Building steelman\u2026"}
                 </p>
-                <p style={{ fontSize: 13, color: "#999", margin: 0 }}>This usually takes a few seconds</p>
+                <p style={{ fontSize: 13, color: "rgba(255,255,255,0.45)", margin: 0 }}>This usually takes a few seconds</p>
               </div>
             </div>
           </>
@@ -921,7 +921,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                   onChange={(e) => { setEditText(e.target.value); const t = e.target; t.style.height = "auto"; t.style.height = t.scrollHeight + "px"; }}
                   autoFocus
                   style={{
-                    width: "100%", border: "1.5px solid #D5D5CD", borderRadius: 12,
+                    width: "100%", border: "1.5px solid rgba(255,255,255,0.15)", borderRadius: 12,
                     padding: "12px 14px", fontSize: 20, color: "#1A1A1A", fontWeight: 700,
                     lineHeight: 1.4, resize: "none", fontFamily: "inherit",
                     boxSizing: "border-box", outline: "none", letterSpacing: -0.4,
@@ -933,7 +933,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                     onClick={() => setEditMode(false)}
                     style={{
                       flex: 1, padding: "12px 0", borderRadius: 10,
-                      border: "1.5px solid #D5D5CD", background: "transparent",
+                      border: "1.5px solid rgba(255,255,255,0.15)", background: "transparent",
                       color: "#888", fontSize: 14, fontWeight: 600,
                       cursor: "pointer", fontFamily: "inherit",
                     }}
@@ -943,7 +943,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                     disabled={!editText.trim() || resubmitting}
                     style={{
                       flex: 1, padding: "12px 0", borderRadius: 10,
-                      border: "none", background: editText.trim() && !resubmitting ? "#FF00AE" : "#D5D5CD",
+                      border: "none", background: editText.trim() && !resubmitting ? "#FF00AE" : "rgba(255,255,255,0.15)",
                       color: "#FFF", fontSize: 14, fontWeight: 700,
                       cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
                       fontFamily: "inherit",
@@ -955,9 +955,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               <h1
                 onClick={() => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); }}
                 style={{
-                  fontSize: 20, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4,
+                  fontSize: 20, fontWeight: 700, color: "#FFF", lineHeight: 1.4,
                   letterSpacing: -0.4, margin: 0, cursor: "pointer",
-                  borderBottom: "1px dashed #D5D5CD", paddingBottom: 4,
+                  borderBottom: "1px dashed rgba(255,255,255,0.15)", paddingBottom: 4,
                 }}
                 title="Tap to edit & resubmit"
               >{obs.thesis}</h1>
@@ -978,7 +978,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
             <EvidenceBadge value={obs.evidence_type} size="lg" />
             <ScoreBadge value={obs.score} />
             {obs.tags?.map((tag) => (
-              <span key={tag} style={{ fontSize: 11, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "3px 9px", fontWeight: 600 }}>{tag}</span>
+              <span key={tag} style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", background: "rgba(255,255,255,0.08)", borderRadius: 100, padding: "3px 9px", fontWeight: 600 }}>{tag}</span>
             ))}
           </div>
         )}
@@ -990,8 +990,8 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               onClick={() => setTab("steel")}
               style={{
                 flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: tab === "steel" ? "#1A1A1A" : "#EFEFED",
-                color: tab === "steel" ? "#FFF" : "#666",
+                background: tab === "steel" ? "#FFF" : "rgba(255,255,255,0.08)",
+                color: tab === "steel" ? "#12102B" : "rgba(255,255,255,0.5)",
                 fontSize: 14, fontWeight: 700, fontFamily: "inherit",
                 WebkitTapHighlightColor: "transparent",
               }}
@@ -1000,8 +1000,8 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               onClick={handleStressTab}
               style={{
                 flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: tab === "stress" ? "#FF00AE" : "#EFEFED",
-                color: tab === "stress" ? "#FFF" : "#666",
+                background: tab === "stress" ? "#FF00AE" : "rgba(255,255,255,0.08)",
+                color: tab === "stress" ? "#FFF" : "rgba(255,255,255,0.5)",
                 fontSize: 14, fontWeight: 700, fontFamily: "inherit",
                 WebkitTapHighlightColor: "transparent",
                 display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
@@ -1019,15 +1019,15 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           <>
             {steelBullets.map((bullet, i) => (
               <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
-                <span style={{ color: "#1A1A1A", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
-                <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
+                <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
+                <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
               </div>
             ))}
 
             {/* Sources */}
             {obs.sources && obs.sources.length > 0 && (
-              <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid #EBEBEB" }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
+              <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
                 {obs.sources.map((src, i) => (
                   <a
                     key={i}
@@ -1035,12 +1035,12 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
-                      display: "block", fontSize: 12, color: "#777", lineHeight: 1.5,
+                      display: "block", fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5,
                       textDecoration: "none", marginBottom: 4,
                       overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
                     }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = "#FF00AE")}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = "#777")}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
                   >
                     {src.title || src.url}
                   </a>
@@ -1055,8 +1055,8 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {tab === "stress" && (() => {
           if (stressLoading) return null;
           if (stressError) return (
-            <div style={{ background: "#FFF0EE", borderRadius: 12, padding: "14px 16px", border: "1px solid #F5C6C0" }}>
-              <p style={{ fontSize: 14, color: "#C0392B", margin: 0, lineHeight: 1.5 }}>
+            <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,0,174,0.3)" }}>
+              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>
                 Stress test failed. Tap the button to try again.
               </p>
             </div>
@@ -1068,9 +1068,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           const verdict: string = typeof st.verdict === "string" ? st.verdict : JSON.stringify(st.verdict);
           return (
             <div>
-              <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px", marginBottom: 20 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Verdict</p>
-                <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{verdict}</p>
+              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 20 }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Verdict</p>
+                <p style={{ fontSize: 15, color: "#FFF", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{verdict}</p>
               </div>
               {pros.length > 0 && (
                 <div style={{ marginBottom: 16 }}>
@@ -1078,7 +1078,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                   {pros.map((pro, i) => (
                     <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                       <span style={{ color: "#2E7D32", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>+</span>
-                      <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{typeof pro === "string" ? pro : JSON.stringify(pro)}</p>
+                      <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{typeof pro === "string" ? pro : JSON.stringify(pro)}</p>
                     </div>
                   ))}
                 </div>
@@ -1089,15 +1089,15 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                   {cons.map((con, i) => (
                     <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                       <span style={{ color: "#C0392B", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
-                      <p style={{ fontSize: 15, color: "#2A2A28", lineHeight: 1.65, margin: 0 }}>{typeof con === "string" ? con : JSON.stringify(con)}</p>
+                      <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{typeof con === "string" ? con : JSON.stringify(con)}</p>
                     </div>
                   ))}
                 </div>
               )}
               {/* Sources (from both steelman and stress test) */}
               {obs.sources && obs.sources.length > 0 && (
-                <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid #EBEBEB" }}>
-                  <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
+                <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
                   {obs.sources.map((src, i) => (
                     <a
                       key={i}
@@ -1105,12 +1105,12 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{
-                        display: "block", fontSize: 12, color: "#777", lineHeight: 1.5,
+                        display: "block", fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5,
                         textDecoration: "none", marginBottom: 4,
                         overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
                       }}
                       onMouseEnter={(e) => (e.currentTarget.style.color = "#FF00AE")}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = "#777")}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
                     >
                       {src.title || src.url}
                     </a>
@@ -1125,11 +1125,11 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {/* Challenges */}
         {challenges.length > 0 && (
           <div style={{ marginTop: 24 }}>
-            <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 12px" }}>Challenges ({challenges.length})</p>
+            <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 12px" }}>Challenges ({challenges.length})</p>
             {challenges.map(c => (
-              <div key={c.id} style={{ background: "#F8F8F6", borderRadius: 10, padding: "12px 14px", marginBottom: 8 }}>
-                <p style={{ fontSize: 12, fontWeight: 700, color: "#1A1A1A", margin: "0 0 4px", lineHeight: 1.4 }}>{c.thesis || c.raw_input}</p>
-                {c.score != null && <span style={{ fontSize: 10, color: "#888" }}>Score: {Math.round(c.score)}</span>}
+              <div key={c.id} style={{ background: "rgba(255,255,255,0.06)", borderRadius: 10, padding: "12px 14px", marginBottom: 8 }}>
+                <p style={{ fontSize: 12, fontWeight: 700, color: "#FFF", margin: "0 0 4px", lineHeight: 1.4 }}>{c.thesis || c.raw_input}</p>
+                {c.score != null && <span style={{ fontSize: 10, color: "rgba(255,255,255,0.4)" }}>Score: {Math.round(c.score)}</span>}
               </div>
             ))}
           </div>
