@@ -245,7 +245,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       <img
         src="/scribble.png"
         style={{
-          position: "absolute", top: scribblePos.top, left: scribblePos.left, width: "70vw", pointerEvents: "none", zIndex: 0,
+          position: "fixed", top: scribblePos.top, left: scribblePos.left, width: "70vw", pointerEvents: "none", zIndex: 0,
         }}
       />
       <div style={{
@@ -1300,7 +1300,7 @@ export default function App() {
         <img
           src="/scribble.png"
           style={{
-            position: "absolute", top: loginScribblePos.top, left: loginScribblePos.left, transform: "translateX(-50%)",
+            position: "fixed", top: loginScribblePos.top, left: loginScribblePos.left,
             width: "70vw", pointerEvents: "none", zIndex: 0,
           }}
         />
