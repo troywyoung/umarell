@@ -41,7 +41,7 @@ function getRandomPlaceholder() {
 // horizontalPct: random across viewport
 function getRandomScribblePos() {
   const showPct = 20 + Math.random() * 50; // 20% to 70% visible
-  const cropVw = (100 - showPct); // vw to push off top
+  const cropVw = ((100 - showPct) / 100) * 70; // vw to push off top (image is 70vw)
   const horizontalPct = 10 + Math.random() * 80; // 10% to 90%
   return { top: `${-cropVw}vw`, left: `${horizontalPct}%` };
 }
@@ -246,7 +246,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         src="/scribble.png"
         style={{
           position: "absolute", top: scribblePos.top, left: scribblePos.left, transform: "translateX(-50%)",
-          width: "100vw", pointerEvents: "none", zIndex: 0,
+          width: "70vw", pointerEvents: "none", zIndex: 0,
         }}
       />
       <div style={{
@@ -1302,7 +1302,7 @@ export default function App() {
           src="/scribble.png"
           style={{
             position: "absolute", top: loginScribblePos.top, left: loginScribblePos.left, transform: "translateX(-50%)",
-            width: "100vw", pointerEvents: "none", zIndex: 0,
+            width: "70vw", pointerEvents: "none", zIndex: 0,
           }}
         />
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
