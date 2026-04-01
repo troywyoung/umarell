@@ -344,7 +344,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     overflow: "hidden", display: "-webkit-box",
                     WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
                   }}>
-                    {obs.user_name && <span style={{ color: "#E53935" }}>{obs.user_name}: </span>}
+                    {obs.user_name && <span style={{ color: "#808080" }}>{obs.user_name}: </span>}
                     {obs.thesis || obs.raw_input}
                   </p>
                   {obs.score != null && (
