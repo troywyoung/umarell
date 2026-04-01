@@ -386,22 +386,24 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     </span>
                   </div>
                 )}
-                <div style={{
-                  display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap",
-                  padding: "6px 12px 10px",
-                  borderTop: `1px solid ${isChallenge ? "rgba(92,142,255,0.15)" : "#F5F5F2"}`,
-                }}>
-                  <span style={{ fontSize: 8, fontWeight: 600, color: "#B0B0A8", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
-                  <EvidenceBadge value={obs.evidence_type} />
-                  {!isChallenge && obs.tags?.map((tag: string) => (
-                    <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
-                  ))}
-                  {obs.status === "complete" && obs.thesis && !isChallenge && (
-                    <span style={{ marginLeft: "auto" }}>
-                      <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
-                    </span>
-                  )}
-                </div>
+                {!isChallenge && (
+                  <div style={{
+                    display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap",
+                    padding: "6px 12px 10px",
+                    borderTop: "1px solid #F5F5F2",
+                  }}>
+                    <span style={{ fontSize: 8, fontWeight: 600, color: "#B0B0A8", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
+                    <EvidenceBadge value={obs.evidence_type} />
+                    {obs.tags?.map((tag: string) => (
+                      <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
+                    ))}
+                    {obs.status === "complete" && obs.thesis && (
+                      <span style={{ marginLeft: "auto" }}>
+                        <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
+                      </span>
+                    )}
+                  </div>
+                )}
               </div>
             );
           };
