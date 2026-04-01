@@ -495,15 +495,22 @@ class EpisodeSeed(BaseModel):
     episode_tag: str            # "the-war-on-slop"
     claims: list[str]           # 5 raw claims to steelman
     author_name: str = "PvA"   # displayed as user_name
+    admin_key: str | None = None  # fallback auth for seeding
 
 
 @app.post("/episodes/seed")
 async def seed_episode(
     body: EpisodeSeed,
     db: AsyncSession = Depends(get_db),
-    current_user: User = Depends(require_user),
+    current_user: User | None = Depends(get_current_user),
 ):
-    """Create multiple observations for an episode, each runs through the pipeline."""
+    """Create multiple observations for an episode, each runs through the pipeline.
+    Requires auth OR admin_key in body."""
+    if not current_user and not body.admin_key:
+        raise HTTPException(401, "Not authenticated")
+    if body.admin_key and body.admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+    user_id = current_user.id if current_user else None
     created = []
     for claim in body.claims:
         obs = Observation(
@@ -512,7 +519,7 @@ async def seed_episode(
             thesis=claim[:200],
             status="formatting",
             model_used=ACTIVE_MODEL,
-            user_id=current_user.id,
+            user_id=user_id,
             episode_tag=body.episode_tag,
             episode_title=body.episode_title,
         )
