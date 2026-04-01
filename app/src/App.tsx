@@ -594,7 +594,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Recent posts (last 24h) */}
               {recentPosts.length > 0 && (
                 <div>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>Recent</div>
+                  <div style={{ fontSize: 22, fontWeight: 600, color: "#FFF", fontFamily: "'Caveat', cursive", letterSpacing: 0.5, padding: "14px 4px 6px" }}>recent</div>
                   {recentPosts.map(renderPost)}
                 </div>
               )}
