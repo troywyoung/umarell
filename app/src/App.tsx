@@ -40,7 +40,7 @@ function getRandomPlaceholder() {
 // showPct: 20–70% visible (rest cropped off top)
 // horizontalPct: random across viewport
 function getRandomScribblePos() {
-  const showPct = 20 + Math.random() * 50; // 20% to 70% visible
+  const showPct = 30 + Math.random() * 40; // 30% to 70% visible
   const cropVw = ((100 - showPct) / 100) * 70; // vw to push off top (image is 70vw)
   const horizontalPct = 10 + Math.random() * 80; // 10% to 90%
   return { top: `${-cropVw}vw`, left: `${horizontalPct}%` };
