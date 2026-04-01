@@ -580,8 +580,9 @@ Connect it to bigger patterns in media, tech, or culture where relevant.
 
 Return a JSON object:
 {{
-  "body": "2-3 paragraphs. Conversational, opinionated, sharp. No bullet points — this is prose.",
-  "tldr": "One punchy sentence — the PvA verdict on this claim."
+  "bottom_line": "1-2 sentences — the PvA verdict on this claim. Punchy, opinionated, conversational.",
+  "bullets": ["3-5 sharp observations — each 1-2 sentences, conversational tone, connect to bigger patterns in media/tech/culture"],
+  "tldr": "One punchy sentence — the single-line PvA take."
 }}
 
 Return valid JSON only. No markdown fences. No preamble."""

@@ -828,6 +828,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   const [flashSteelman, setFlashSteelman] = useState(false);
   const [flashCounterpoint, setFlashCounterpoint] = useState(false);
   const [flashPva, setFlashPva] = useState(false);
+  const [activeSection, setActiveSection] = useState<"steelman" | "counterpoint" | "pva">("steelman");
   const steelmanRef = useRef<HTMLDivElement>(null);
   const counterpointRef = useRef<HTMLDivElement>(null);
   const pvaRef = useRef<HTMLDivElement>(null);
@@ -874,6 +875,23 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
     }, 2500);
     return () => { if (pollRef.current) clearInterval(pollRef.current); };
   }, [obs.id, obs.status]);
+
+  // Track which section is in view
+  useEffect(() => {
+    const refs: [string, React.RefObject<HTMLDivElement | null>][] = [
+      ["steelman", steelmanRef], ["counterpoint", counterpointRef], ["pva", pvaRef],
+    ];
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          const match = refs.find(([, r]) => r.current === entry.target);
+          if (match) setActiveSection(match[0] as "steelman" | "counterpoint" | "pva");
+        }
+      }
+    }, { threshold: 0.3 });
+    refs.forEach(([, r]) => { if (r.current) observer.observe(r.current); });
+    return () => observer.disconnect();
+  });
 
   const scrollToAndFlash = (ref: React.RefObject<HTMLDivElement | null>, setFlash: (v: boolean) => void) => {
     setTimeout(() => {
@@ -1116,42 +1134,25 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {/* Action buttons: Steelman · Counterpoint · PvA Take */}
         {obs.status === "complete" && (
           <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
-            <button
-              onClick={handleSteelmanScroll}
-              style={{
-                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: "rgba(255,255,255,0.08)",
-                color: "rgba(255,255,255,0.5)",
-                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent",
-              }}
-            >Steelman</button>
-            <button
-              onClick={handleCounterpoint}
-              style={{
-                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: showCounterpoint ? "#FF00AE" : "rgba(255,255,255,0.08)",
-                color: showCounterpoint ? "#FFF" : "rgba(255,255,255,0.5)",
-                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent",
-                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
-              }}
-            >
-              {counterpointLoading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : "Counterpoint"}
-            </button>
-            <button
-              onClick={handlePvaTake}
-              style={{
-                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: showPva ? "#FF00AE" : "rgba(255,255,255,0.08)",
-                color: showPva ? "#FFF" : "rgba(255,255,255,0.5)",
-                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent",
-                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
-              }}
-            >
-              {pvaLoading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : "PvA Take"}
-            </button>
+            {([
+              ["steelman", "Steelman", handleSteelmanScroll, false] as const,
+              ["counterpoint", "Counterpoint", handleCounterpoint, counterpointLoading] as const,
+              ["pva", "PvA Take", handlePvaTake, pvaLoading] as const,
+            ]).map(([key, label, handler, loading]) => (
+              <button key={key} onClick={handler}
+                style={{
+                  flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
+                  background: activeSection === key ? "#FF00AE" : "rgba(255,255,255,0.08)",
+                  color: activeSection === key ? "#FFF" : "rgba(255,255,255,0.5)",
+                  fontSize: 13, fontWeight: 700, fontFamily: "inherit",
+                  WebkitTapHighlightColor: "transparent",
+                  display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+                  transition: "background 0.2s, color 0.2s",
+                }}
+              >
+                {loading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : label}
+              </button>
+            ))}
           </div>
         )}
 
@@ -1171,18 +1172,21 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               </div>
             ))}
 
-            {/* Sources */}
+            {/* Sources — inline comma-separated */}
             {obs.sources && obs.sources.length > 0 && (
-              <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
+              <p style={{ marginTop: 20, paddingTop: 12, borderTop: "1px solid rgba(255,255,255,0.08)", fontSize: 11, color: "rgba(255,255,255,0.35)", lineHeight: 1.6, margin: "20px 0 0" }}>
+                <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", marginRight: 6 }}>Sources</span>
                 {obs.sources.map((src, i) => (
-                  <a key={i} href={src.url} target="_blank" rel="noopener noreferrer"
-                    style={{ display: "block", fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.5, textDecoration: "none", marginBottom: 4, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = "#FF00AE")}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
-                  >{src.title || src.url}</a>
+                  <span key={i}>
+                    {i > 0 && <span style={{ margin: "0 4px" }}>·</span>}
+                    <a href={src.url} target="_blank" rel="noopener noreferrer"
+                      style={{ color: "rgba(255,255,255,0.45)", textDecoration: "none" }}
+                      onMouseEnter={(e) => (e.currentTarget.style.color = "#FF00AE")}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,255,255,0.45)")}
+                    >{src.title || new URL(src.url).hostname}</a>
+                  </span>
                 ))}
-              </div>
+              </p>
             )}
           </div>
         )}
@@ -1236,15 +1240,25 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           );
           const take = obs.pva_take;
           if (!take) return null;
+          const pvaBullets = Array.isArray(take.bullets) ? take.bullets : [];
+          const pvaBottomLine = take.bottom_line || take.tldr || "";
           return (
             <div ref={pvaRef} style={{ marginTop: 16 }}>
-              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 12 }}>
+              <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
                 <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}>{flashPva && <PulsingDot />} PvA Take</p>
-                <p style={{ fontSize: 14, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{take.tldr}</p>
+                <p style={{ fontSize: 15, color: "#FFF", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{pvaBottomLine}</p>
               </div>
-              {take.body.split(/\n\n+/).map((para, i) => (
-                <p key={i} style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: "0 0 14px" }}>{para}</p>
+              {pvaBullets.map((bullet, i) => (
+                <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
+                  <span style={{ color: "#FF00AE", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>•</span>
+                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
+                </div>
               ))}
+              {take.tldr && take.tldr !== pvaBottomLine && (
+                <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 10, padding: "12px 14px", marginTop: 8 }}>
+                  <p style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>{take.tldr}</p>
+                </div>
+              )}
             </div>
           );
         })()}

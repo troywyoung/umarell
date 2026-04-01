@@ -11,9 +11,11 @@ export interface Counterpoint {
 }
 
 export interface PvaTake {
-  body: string;
+  bottom_line: string;
+  bullets: string[];
   tldr: string;
-  voice: "troy" | "brian" | "alex" | "all";
+  body?: string; // legacy
+  voice?: string;
 }
 
 // Legacy format — kept for backward compat
