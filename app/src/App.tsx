@@ -1270,8 +1270,8 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
         {/* Share (shown when complete) */}
         {obs.status === "complete" && steelBullets.length > 0 && (
-          <div style={{ marginBottom: 16 }}>
-            <ShareButton obsId={obs.id} />
+          <div style={{ marginBottom: 20 }}>
+            <ShareButton obsId={obs.id} prominent />
           </div>
         )}
 
@@ -1515,7 +1515,7 @@ function PulsingDot() {
   );
 }
 
-function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.MouseEvent) => void }) {
+function ShareButton({ obsId, onClick, prominent = false }: { obsId: string; onClick?: (e: React.MouseEvent) => void; prominent?: boolean }) {
   const [copied, setCopied] = useState(false);
 
   const shareUrl = `${window.location.origin}${window.location.pathname}#obs/${obsId}`;
@@ -1533,6 +1533,30 @@ function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.Mo
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
   };
+
+  if (prominent) {
+    return (
+      <button
+        onClick={handleShare}
+        style={{
+          display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
+          width: "100%", padding: "13px 0",
+          background: copied ? "rgba(255,0,174,0.15)" : "#FF00AE",
+          border: "none", borderRadius: 12, cursor: "pointer",
+          color: "#FFF", fontSize: 15, fontWeight: 700, fontFamily: "inherit",
+          WebkitTapHighlightColor: "transparent",
+          transition: "background 0.2s",
+        }}
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8" />
+          <polyline points="16 6 12 2 8 6" />
+          <line x1="12" y1="2" x2="12" y2="15" />
+        </svg>
+        {copied ? "Copied!" : "Share"}
+      </button>
+    );
+  }
 
   return (
     <button
