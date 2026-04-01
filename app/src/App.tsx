@@ -331,7 +331,10 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   cursor: "pointer", overflow: "hidden",
                 }}
               >
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "10px 12px 6px 12px" }}>
+                {obs.user_name && (
+                  <p style={{ fontSize: 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
+                )}
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: obs.user_name ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
                   {obs.image_data && (
                     <img
                       src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
@@ -344,7 +347,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     overflow: "hidden", display: "-webkit-box",
                     WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
                   }}>
-                    {obs.user_name && <span style={{ color: "#808080" }}>{obs.user_name}: </span>}
                     {obs.thesis || obs.raw_input}
                   </p>
                   {obs.score != null && (
@@ -412,12 +414,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 overflow: "hidden",
               }}
             >
-              <svg width="16" height="12" viewBox="0 0 16 12" style={{ flexShrink: 0 }}>
-                <circle cx="5" cy="6" r="4.5" fill="rgba(229,57,53,0.6)" />
-                <circle cx="11" cy="6" r="4.5" fill="rgba(44,90,186,0.6)" />
-              </svg>
               <span style={{ fontSize: 11, fontWeight: 800, color: "#2C5ABA", flexShrink: 0 }}>Challenge:</span>
-              <span style={{ fontSize: 11, fontWeight: 600, color: "#1A1A1A", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis" }}>{c.thesis || c.raw_input}</span>
+              <span style={{ fontSize: 11, fontWeight: 600, color: "#1A1A1A", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", marginLeft: 2 }}>{c.thesis || c.raw_input}</span>
             </div>
           );
 
