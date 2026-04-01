@@ -1,12 +1,18 @@
+export interface HardFactItem {
+  fact: string;
+  source: string;
+  url?: string;
+}
+
 export interface SteelmanResult {
   bottom_line: string;
-  hard_facts?: string[];
+  hard_facts?: (HardFactItem | string)[];
   bullets: string[];
 }
 
 export interface Counterpoint {
   bottom_line: string;
-  hard_facts?: string[];
+  hard_facts?: (HardFactItem | string)[];
   bullets: string[];
   verdict: string;
   strength: "weak" | "moderate" | "strong" | "devastating";

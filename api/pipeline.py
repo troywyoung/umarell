@@ -333,7 +333,7 @@ async def generate_steel_man(thesis: str, challenge_context: str | None = None) 
 Return a JSON object with exactly these keys:
 {
   "bottom_line": "1-2 sentences — the single strongest argument for this thesis. This is the headline takeaway.",
-  "hard_facts": ["2-4 hard empirical data points — specific numbers from government agencies or peer-reviewed research. Every fact MUST end with the source in parentheses. Example: '47% of U.S. adults are obese (CDC, 2023)' or 'GDP grew 2.5% in Q3 (Bureau of Economic Analysis)'. No vague claims. No facts without a source."],
+  "hard_facts": [{"fact": "the data point as a plain sentence — no source embedded in the sentence", "source": "Source Name, Year", "url": "https://direct-link-to-source.com"}],
   "bullets": ["3-5 evidence-backed arguments supporting the thesis — each 1-2 sentences max, cite real events, named examples, or studies"]
 }
 
@@ -345,7 +345,7 @@ Return valid JSON only. No markdown fences. No preamble."""
             "You are given an ORIGINAL CLAIM and its steel man, plus a CHALLENGE THESIS that opposes it. "
             "Your job: build the strongest case FOR the challenge thesis, directly addressing why the original claim is wrong. "
             "The bottom_line is the single most devastating argument against the original claim. "
-            "HARD FACTS must come from government sources, official statistics, or peer-reviewed research — specific numbers only. "
+            "HARD FACTS must be objects with 'fact' (plain sentence, no inline source), 'source' (Name, Year), and 'url' (direct link). "
             "Each bullet must directly counter the original claim with real evidence. "
             "Stay focused on the debate. Use current search results where available. "
             "Return ONLY valid JSON. No markdown. No preamble."
@@ -356,7 +356,7 @@ Return valid JSON only. No markdown fences. No preamble."""
             "Your job is to construct the most powerful, evidence-based case FOR a thesis. "
             "The bottom_line is the single strongest argument — the verdict on why this holds up. "
             "HARD FACTS are the foundation: prioritize data from government agencies (BLS, Census Bureau, CDC, Federal Reserve, CBO, OECD, World Bank, IMF, WHO, NIH, etc.), "
-            "peer-reviewed journals, and official statistics. Every hard fact must include a specific number and its source. "
+            "peer-reviewed journals, and official statistics. Each hard_fact is an object: { fact, source, url }. The 'fact' sentence must NOT embed the source — keep fact text clean. "
             "Bullets build the argument using named examples, events, and studies. "
             "Prioritize depth and specificity over breadth. Avoid vague generalities. "
             "Use current real-world data from your search results where available. "
@@ -470,7 +470,7 @@ Now tear this thesis apart. You are the opposing counsel. Build the most aggress
 Return a JSON object with exactly these keys:
 {
   "bottom_line": "1-2 sentences — the single strongest reason this thesis is wrong",
-  "hard_facts": ["2-4 hard empirical data points that contradict or complicate the thesis — specific numbers from government agencies or peer-reviewed research. Every fact MUST end with the source in parentheses. Example: '47% of U.S. adults are obese (CDC, 2023)' or 'GDP grew 2.5% in Q3 (Bureau of Economic Analysis)'. No vague claims. No facts without a source."],
+  "hard_facts": [{"fact": "the data point as a plain sentence — no source embedded in the sentence", "source": "Source Name, Year", "url": "https://direct-link-to-source.com"}],
   "bullets": ["3-5 targeted attacks on the thesis — each 1-2 sentences, cite real counter-evidence"],
   "verdict": "2-3 sentences — after weighing steelman and counterpoint, does the original thesis survive?",
   "strength": "<one of: weak | moderate | strong | devastating>"
@@ -490,7 +490,7 @@ Return valid JSON only. No markdown fences. No preamble."""
             "Your job: destroy this thesis with hard evidence and sharp logic. "
             "You are not balanced — you are adversarial. But intellectually honest. "
             "HARD FACTS are your ammunition: prioritize data from government agencies (BLS, Census Bureau, CDC, Federal Reserve, CBO, OECD, World Bank, IMF, WHO, NIH, etc.) "
-            "and peer-reviewed research that directly contradicts the thesis. Every hard fact must include a specific number and its source. "
+            "and peer-reviewed research. Each hard_fact is an object: { fact, source, url }. The 'fact' sentence must NOT embed the source — keep fact text clean. "
             "Bullets build the argument: target specific weaknesses — wrong data, missing context, logical fallacies, contrary evidence. "
             "Use phrases like 'This ignores...', 'The data actually shows...', 'The fatal flaw here is...' "
             "Use current search results where available. "

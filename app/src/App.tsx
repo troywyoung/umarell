@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { GoogleLogin } from "@react-oauth/google";
-import type { Observation } from "./types";
+import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
 import { API } from "./config";
 
@@ -1194,7 +1194,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 {steelHardFacts.map((fact, i) => (
                   <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                     <span style={{ color: "rgba(255,200,50,0.8)", fontWeight: 800, fontSize: 13, lineHeight: 1, marginTop: 3, flexShrink: 0 }}>—</span>
-                    <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}><HardFact text={fact} /></p>
+                    <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}><HardFact item={fact} /></p>
                   </div>
                 ))}
               </div>
@@ -1262,7 +1262,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                   {cpHardFacts.map((fact, i) => (
                     <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                       <span style={{ color: "rgba(255,200,50,0.8)", fontWeight: 800, fontSize: 13, lineHeight: 1, marginTop: 3, flexShrink: 0 }}>—</span>
-                      <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}><HardFact text={fact} /></p>
+                      <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}><HardFact item={fact} /></p>
                     </div>
                   ))}
                 </div>
@@ -1348,10 +1348,27 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
 // ─── Shared components ────────────────────────────────────────────────────
 
-function HardFact({ text }: { text: string }) {
-  const match = text.match(/^(.*?)(\s*\([^)]+\))$/);
-  if (!match) return <>{text}</>;
-  return <>{match[1]}<span style={{ color: "rgba(255,200,50,0.75)", fontSize: 12, fontStyle: "italic" }}>{match[2]}</span></>;
+function HardFact({ item }: { item: HardFactItem | string }) {
+  if (typeof item === "string") {
+    // legacy string format — strip inline source if present
+    const match = item.match(/^(.*?)(\s*\([^)]+\))$/);
+    if (!match) return <>{item}</>;
+    return <>{match[1]}<span style={{ color: "rgba(255,255,255,0.35)", fontSize: 11, fontStyle: "italic" }}>{match[2]}</span></>;
+  }
+  return (
+    <>
+      {item.fact}{" "}
+      {item.url ? (
+        <a href={item.url} target="_blank" rel="noopener noreferrer"
+          style={{ color: "rgba(255,200,50,0.5)", fontSize: 11, fontStyle: "italic", textDecoration: "none" }}
+          onMouseEnter={(e) => (e.currentTarget.style.color = "rgba(255,200,50,0.9)")}
+          onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(255,200,50,0.5)")}
+        >({item.source})</a>
+      ) : (
+        <span style={{ color: "rgba(255,200,50,0.5)", fontSize: 11, fontStyle: "italic" }}>({item.source})</span>
+      )}
+    </>
+  );
 }
 
 function PulsingDot() {
