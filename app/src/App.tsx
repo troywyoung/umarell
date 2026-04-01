@@ -885,7 +885,20 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {/* Thesis (shown once complete) — click to edit */}
         {obs.status === "complete" && obs.thesis && obs.thesis !== "image" && (
           <div style={{ marginBottom: 12 }}>
-            <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Thesis</p>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", margin: "0 0 8px" }}>
+              <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: 0 }}>Thesis</p>
+              {!obs.parent_id && (
+                <button
+                  onClick={(e) => { e.stopPropagation(); onChallenge(obs); }}
+                  style={{
+                    background: "none", border: "1px solid #D5D5CD", borderRadius: 6,
+                    padding: "3px 10px", cursor: "pointer",
+                    fontSize: 10, fontWeight: 600, color: "#888", fontFamily: "inherit",
+                    letterSpacing: 0.2, WebkitTapHighlightColor: "transparent",
+                  }}
+                >Challenge this</button>
+              )}
+            </div>
             {editMode ? (
               <div>
                 <textarea
@@ -984,15 +997,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 <span style={{ display: "inline-flex", alignItems: "center", gap: 6 }}><ProcessingDots color="#FFF" /><span>Testing…</span></span>
               ) : "Stress Test"}
             </button>
-            <button
-              onClick={() => onChallenge(obs)}
-              style={{
-                padding: "10px 14px", borderRadius: 10, border: "none", cursor: "pointer",
-                background: "#EEF4FF", color: "#5C8EFF",
-                fontSize: 14, fontWeight: 700, fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent", flexShrink: 0,
-              }}
-            >↩ Challenge</button>
           </div>
         )}
 
