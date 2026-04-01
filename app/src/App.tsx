@@ -449,7 +449,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     {obs.thesis || obs.raw_input}
                   </p>
                   <ScoreBadge value={obs.score} size="sm" dark />
-                  {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin) && (
+                  {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin || getTokenIsAdmin()) && (
                     <button
                       onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steelman?")) onDelete(obs.id); }}
                       style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
@@ -1524,6 +1524,15 @@ type View = "home" | "capture" | "output";
 
 interface AuthUser { id: string; name: string; avatar: string | null; is_admin?: boolean; }
 
+function getTokenIsAdmin(): boolean {
+  try {
+    const token = localStorage.getItem("sm_token");
+    if (!token) return false;
+    const payload = JSON.parse(atob(token.split(".")[1]));
+    return !!payload.is_admin;
+  } catch { return false; }
+}
+
 export default function App() {
   const [authUser, setAuthUser] = useState<AuthUser | null>(() => {
     try { return JSON.parse(localStorage.getItem("sm_user") || "null"); } catch { return null; }
@@ -1712,7 +1721,7 @@ export default function App() {
         requestCounterpoint={requestCounterpoint}
         requestPvaTake={requestPvaTake}
         authUserId={authUser.id}
-        isAdmin={!!authUser.is_admin}
+        isAdmin={!!authUser.is_admin || getTokenIsAdmin()}
       />
     );
   }
