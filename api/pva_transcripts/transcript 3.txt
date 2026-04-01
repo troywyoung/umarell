@@ -1,0 +1,833 @@
+PvA S4E160
+===
+
+[00:00:00] Troy: It's like when I watch the, the whatever, the opening on YouTube, it's so cringey that I can't even fucking get through it.
+
+[00:00:08] Brian: All
+
+[00:00:08] Troy: And so, well it's like, you know, you either just, you either get to the facts or you figure out something that's actually, this requires a little bit of edit that is gonna make it good.
+
+[00:00:19] Alex: Scott Galloway got built a, a massive empire with cringey bullshit.
+
+[00:00:26] Troy: Well, I'm not Scott Galloway.
+
+[00:00:29] Alex: Oh, we know. Thanks a lot.
+
+[00:00:31] Troy: Yeah. Um, so, uh,
+
+[00:00:35] Brian: all right. I
+
+[00:00:36] Troy: uh, I just think that,
+
+[00:00:37] Brian: It's a little unspecific,
+
+[00:00:39] Alex: Yeah.
+
+[00:00:39] Troy: is unspecific. So there's two ways to start podcasts just to simplify. Either you get right into it. You get, you give the people what they want immediately. You just get to the facts and, and to the stories, into the outline, into like, this is what we're gonna cover today.
+
+Or you do a bunch of like, Hey, I've, you know, walked my dog today kind of stuff and you know, we gotta figure it out.
+
+[00:01:01] Alex: Is that what we always do? I mean, I think some cold opens are genuinely decent.
+
+[00:01:07] Troy: Here's the thing, this podcast is all about stumbling forward and um, or maybe not even forward stumbling around.
+
+[00:01:15] Brian: it's like waiting for Gado.
+
+[00:01:17] Troy: No,
+
+[00:01:19] Alex: Yeah, just dumber. There's your cold open.
+
+[00:01:26] Troy: there's your gold open. There we go.
+
+[00:01:28] Brian: All right. Welcome to people versus algorithms that showed up detecting patterns of media, technology, and culture. We're gonna get right into the topics to today. Okay? So I want to
+
+[00:01:38] Troy: a list you've got, Brian. My goodness.
+
+[00:01:41] Brian: this, this slows it down, Troy. We want to get into
+
+[00:01:44] Troy: You know, I'm late for the podcast, Brian, because I, I, I felt the need to digest your, um, media people's story before we got on that you can just fart out things like that is amazing to me.
+
+[00:01:56] Brian: well, I still, I, I stole the idea from you and we're gonna talk about media
+
+[00:02:00] Troy: You a thousand percent stole it from me, but I could never ever bring it like you.
+
+[00:02:03] Brian: this is great. This is how the creative production process works. Um, we're gonna talk about what makes a media, a media person, and, and why media people matter. You know, I, I spent a lot of time talking with media people.
+
+It's not the easiest time out there for media people. I had a drink with one last night, and. I, I did the, oh, how's, how's Q4 going? And it's like a normal question. And he's like, you know, it reminds me of early March, 2020. I was like, ohoh, this isn't going well. So it's a tough time for meeting people. We're gonna talk about what makes meeting people and why, why they're so valuable.
+
+But I want to start by, um, and we're gonna have anonymous banker, um, join us, uh, a little bit, uh, later. Um, talk about, uh, the different, uh, AI shifts and whatnot. Um, but let's start off. I wanna start
+
+[00:02:55] Troy: We're having also, we're having a Christmas party.
+
+[00:02:58] Brian: oh yeah. Oh my God, I forgot. Uh, Alex, this is important for
+
+[00:03:02] Alex: Yeah, first time I hear this.
+
+[00:03:03] Brian: Yeah. So we are having a holiday party, not a Christmas party.
+
+We're not totally back with that yet. We're having
+
+[00:03:09] Troy: you like the name I came up? You like the name I came up with?
+
+[00:03:11] Brian: Yeah. What was it again?
+
+[00:03:13] Troy: Ho, ho Holiday protocols.
+
+[00:03:17] Brian: Holiday protocols. Troy has, has, it took him weeks to, to create a direct and to actually execute on the invitation. It's gonna be on December 15th. We're partnering, partnering, I guess. So we're holding it with, uh, Joe Marqueese at, uh, Casa Comos, which is, uh, actually an office, but it turns into, um, a nightclub, uh, later in, in the day, I guess in the evening.
+
+And there'll be tequila. Um, I am gonna try to get a Santa there. I met a Santa at a holiday party last year and he connected with me on LinkedIn. So I have to find, I have to find him in my LinkedIn connections.
+
+[00:04:02] Alex: Yeah. I
+
+[00:04:02] Troy: it's been recruited by Netflix for their new, uh,
+
+[00:04:06] Alex: but it has
+
+[00:04:07] Troy: what do you call, what is their, it's an immersive experience. What, what, what is it called actually?
+
+[00:04:12] Brian: It's an immersive experience. We're gonna get to the, the Netflix thing, but Alex, we want to have you there, so hopefully we can You only fly, uh, business class, right?
+
+[00:04:23] Troy: No, it doesn't matter. Alex can get
+
+[00:04:26] Brian: Does he, does he fly Econ
+
+[00:04:27] Troy: jokes on the side about this. Alex, Brian thinks it's really funny to have you on one of those little, those iPad robot things that
+
+[00:04:35] Brian: telepresence robots.
+
+[00:04:36] Troy: Yeah.
+
+[00:04:37] Alex: Yeah, I could do that.
+
+[00:04:39] Brian: that's the backup plan. If you can't come in person on December 15th, we're gonna get a telepresence robot. 'cause you know that Edward Studen goes around like he used to go around conferences.
+
+[00:04:49] Alex: Samuel Edwards Snowden. So what's this thing? Is it, I mean, who's, who's invited? Is it just, um,
+
+[00:04:54] Troy: all the people. It's,
+
+[00:04:55] Brian: It's an invitation only list of, of media people.
+
+[00:04:59] Alex: and it's, it's happening When
+
+[00:05:01] Troy: You'll be extremely uncomfortable and probably awkward.
+
+[00:05:04] Alex: Oh yeah.
+
+[00:05:05] Brian: Yeah. Yeah. I'll be
+
+[00:05:06] Alex: I know I'm, I'm fine at
+
+[00:05:07] Brian: calling card. Apparently, you know, I realized that last night I went to, I went to a couple of, like, media people, parties and um, I still don't think I'm awkward at them, but I think, I think it can present as awkward because when people ask, oh, how are things going as just a pa, I like give them like an actual answer.
+
+Like
+
+[00:05:27] Alex: you can't do this in America. As I, as I've learned, when people ask you this in America, you don't really answer it.
+
+[00:05:34] Brian: Yeah.
+
+[00:05:35] Troy: I admire that, Brian. I do that too. I, I, I, I, I, I definitely default to too much information when someone asks me
+
+[00:05:42] Brian: Yeah. Well, people should stop asking that question. If they don't want the answer. I'm gonna be like, honest about how things are going. It's not all good. There's some bad, there's a lot of good and that's
+
+[00:05:51] Troy: So when someone says to you that doesn't know you, Brian, they say, so what do you do for a living? Which is another classic American intro. Um, what do you say? Do you say media entrepreneur? What do you say?
+
+[00:06:01] Brian: Um,
+
+[00:06:03] Troy: influencer.
+
+[00:06:04] Brian: you know, I don't know. I stumble over that question. Uh, depends on and the context.
+
+[00:06:10] Troy: Well, it's a friend of your parents and they say, Hey Brian, what do you do?
+
+[00:06:13] Alex: You run webinars.
+
+[00:06:16] Brian: That's only part of my existence. Um,
+
+[00:06:19] Alex: the bills though.
+
+[00:06:20] Brian: yeah. B2B influencer, no, I don't
+
+[00:06:22] Troy: No, you no. Is the easy answer for an older, an older questioner. Um, I'm a journalist. Is that the, is
+
+[00:06:29] Brian: Yeah, yeah, yeah. I'll, I'll default. However, like I was with a journalist gathering, uh, last night, and you, you should never put that on any sort of immigration form no matter what you're traveling because it freaks out.
+
+[00:06:40] Troy: right. No,
+
+[00:06:40] Brian: It freaks out them out. Like even in Japan, I got like pulled over in Japan
+
+[00:06:44] Troy: No, but I mean, uh, if, if you respond to one of your parents' friends at the retirement community and you say, I'm a journalist. It's not like I'm an attorney, but it's, it's not bad. It's not terrible.
+
+[00:06:55] Brian: No, no, it's not,
+
+[00:06:57] Alex: Have you ever seriously told a real human being that you were a B2B influencer with a straight face?
+
+[00:07:05] Brian: Uh,
+
+[00:07:06] Alex: say and you should never choose that. I'm just,
+
+[00:07:08] Brian: I mean, I, yeah, I mean, I've said it jokingly, but, um, but look, I, whatever, whatever the, the title is, I, I want to talk, I wanna talk about, about this sort of in an indirect way.
+
+[00:07:20] Alex: He wants to move on.
+
+[00:07:22] Brian: I do wanna move on. I wanna talk about the Jo Jobs and the AI bubble, and also the problem with men. I mean, what better, I mean, finally we have three middle-aged men to talk about the, the crisis that is facing men.
+
+This is finally, this is something that we are, uh, you know, completely qualified to talk about. Um, so let's talk about the job losses that keep coming. Paramount is about to cut, uh, is cutting another 1600, uh, people. Um, our, our friend Jason Kani had laid out a pretty good case of the job. Displacement tsunami.
+
+That is coming from mostly, I think from, from ai, but a lot of these job cuts, it's really unclear if AI is just the excuse. And we've talked about this a lot. Um, Troy, what do, what do you think is going on here? Because we've talked about, you know, there are a lot of cuts coming, particularly to what I would call the creative production fields.
+
+You know, they always go first. I mean, when we look at these massive, um, uh, combinations of like ad holding companies, we talked about this the other week. I mean, there's gonna be some massive job displacement. I mean, when Amazon puts, uh, how many people did Amazon put on the street?
+
+[00:08:43] Troy: Well, it was 30,000, but the, I think the, the shocking news about it was that 16,000 of them were front office workers, and that makes the kind of managerial class shutter.
+
+[00:08:54] Brian: So I talk with people all the time who are, you know, there's the headline sort of unemployment numbers. And I feel like this, a lot of people feel this way about the, the economy overall in that. And that's why there's this meme that it's like a fake in some ways, and that I talk a lot of people who have been, who've been outta work, who a long time and they're starting to wonder.
+
+'cause a lot of them, you know, I'm a middle-aged man, so I attract middle-aged men. You know, a lot of them are at a point of their career where that's a tough thing. You're outta work for two years. You, uh, start to wonder if you're ever going to have, uh, a full-time, uh, job again. Really? What do you think is underneath all of this, Troy?
+
+[00:09:38] Troy: You know, it's, I, uh, it strikes me that it's a lot of things. I, I, I think it's gonna be really difficult for us to put our finger on exactly what AI displacement like means in terms of real job loss. But I do think that. We're in this kind of phase of this kind of compression phase or efficiency phase in the economy where both by sort of case study and by, you know, kind of deployment of more and more powerful tools, be it AI or other, um, and, and, and maybe just the kind of realization that the responsibility of employment should not be a kind of, you know, moral flag that is owned and held by the employer.
+
+That there's, there's a, a willingness to kind of, you know, see what you can get away with. And so maybe it's because there's less sort of real organic kind of growth opportunities in the economy. And the way to get to results is to do it through efficiency. Um, you know, maybe, uh, it, it's because we. We had this belief that a kind of hierarchical structure in organizations was just the way to do things.
+
+And you had to have a person that had the reports and that person had the reports, and it created a lot of, um, maybe unnecessary jobs, maybe because we believed that there was a responsibility for corporations to employ people. All of these, and maybe it's just, you know, AI efficiency, all of it together, I think has, and, and one other thing I think that, I don't know if this is a new thing, but it feels to me like 28 year olds can do what 58 year olds can do. Like when I, when I fund a company or when I work with young entrepreneurs, like, you know, I try to do the thing like, I've seen this before, or, you know, let me give you my wisdom. Or, you know, like, but like I don't know that much. And they're like so smart and they have so many better tools and they're so efficient that like, you don't need a old guy that makes a lot of money. You don't, you don't need me. And so yeah, that's extremely difficult if you don't have something to fall back on. I do think that it, you know, that it really is gonna impact a lot of people in their fifties that were kind of banking on, you know, a, you know, good paying job at like, giving them, giving them something to, to save or maybe they waited to, to, to too late.
+
+But yeah, I think it's gonna create a huge amount, amount of anxiety is really, and, and, and, and by the way, we see it profoundly because it's obviously hitting media and now it's about to hit advertising in a massive way.
+
+[00:12:22] Brian: Yeah. Um, and a redditor did an analysis on, on 180,000 job openings and, you know, tried to parse that as far as what AI is truly displacing. And what I know is like the creative production jobs, I don't know how to, to, to describe it, whether that's designer, marketer. Journalist, Steven, uh, writers, um, that those have been hit the hardest, you know, by far.
+
+Um, Alex, any thoughts on this before? Uh, we, we go into other topics?
+
+[00:12:56] Alex: Yeah, no, I think it's a bunch of stuff. Like Troy said, I, I think on the creative production jobs specifically, I think, um, I feel like a lot of times when people are talking about ai, they're just talking about software getting better. And not only software getting better, but actually enterprise, um, really integrating new tools.
+
+Maybe, maybe it was influenced by ai, you know, if you kind of seen the world around you change and people talk about this magical technology, it might, um. You know, motivate you to just start using the tools you already have. And, um, a lot of these production jobs, um, it, it, you know, if, if you, if, if, if, if you were in creative fields, you would know that a lot of it was, um, a.
+
+People pushing rocks uphill, right? Like just cutting stuff up into different sizes and, uh, doing, doing copyright reviews and uh, making sure the colors are right and, and all of that stuff, even without ai, things that computers can do really well. Um, but there was a lot of, you know, when, when the company is kind of charging billing for this time or it's kind of part of the infrastructure, it's hard to upend these things, you know?
+
+Um. But with those pressures, I think people started looking inwards and noticing, yeah, we can cut hours of this process. And I think that's what's happening now. So sometimes when people talk about ai, I think it's like, yes, there is ai, but I think a lot of things is just people getting more efficient, actually getting more efficient.
+
+[00:14:28] Brian: And so that's why it seems to me that the compression is happening at the both ends. So like, you know, the, the, the guys who want to get paid a lot and the people who want to get paid a lot in their fifties, and they're, they're, they're looking at like maxing out their 4 0 1 Ks. Um. Are getting compressed because a lot of the managerial ranks are being thinned.
+
+And I, I believe that is going to continue. And maybe there's a little bit of an AI story that, but I mean, my working hypothesis is this is a Silicon Valley story. I mean, we have seen throughout the last generation that managerial techniques and trends that begin in Silicon Valley wash over the entire economy.
+
+Um, I go back to the snacks. We had a, a, a vending machine at Adweek, uh, in a stairwell, and then all of a sudden Silicon Valley decided that offices should have snacks. And all of a sudden, you know, snacks appeared, um, until the financial crisis. Then they took away the, the snacks.
+
+[00:15:28] Alex: Yeah, I do. I, I just, just to, to wrap this up, I think some people are, um, still seeing this as a phase though. You know, I, I do talk to some folks and it feels like, well, you know, yeah. You know, that like, um. Um, it is still, because I think it happened right at the tail end of, um, the pandemic, which to some people felt like a correction, which it was, right?
+
+So, so it was a kind of a weird wave where there was this massive correction wave and a lot of folks were, well, you know, the correction's gonna happen and then things are gonna even out. But, uh, the correction keeps happening, right? I mean, you know, when, when Facebook did. All those layoffs. People thought that there was a one and done and and they've been rolling layoffs ever since.
+
+So this is to me like just, I think it's a career change moment for a lot of people. Like
+
+[00:16:15] Troy: I think you're right, Alex and I, I am not sure where the outlet is, but if you just go through the things. That we experience day to day, whether that's making media, okay, this podcast would've taken twice as many people in the past to do it. Making finance, whether that's making decks, or creating reports or aggregating information or whatever.
+
+Way easier than used to be making meetings. You know, I, I think it's, today with tools and stuff, it's probably more efficient for executives to, you know, kind of manage communications with far more people, far easier and book meetings and stuff than it used to be. You know, outside of my office at Hearst, there were two, uh, uh, assistant bays for, you know, built in, you know, and covered in wood and all that kinda stuff to support the executive in the corner.
+
+And it's like, I don't
+
+[00:17:07] Brian: Did you have multiple assistants?
+
+[00:17:09] Troy: I had one, but the, you know, I
+
+[00:17:11] Brian: I like the multiple assistant move. The CEO of Adweek had had two assistants while they were cutting reporters. I love
+
+[00:17:17] Troy: I mean, if you just go through it with me, like, I remember when we used to have a role that just cut up gif for webpages. You know, I mean, that's the resizing role that you talked about, Alex. But I think if it's like, if you go through them all, like, you know, making media, making content, making operations, making, you know, financial stuff.
+
+I think that you get to a place where there's, you know, the, the, the efficiency runs out and it's usually where people are using their hands or making food, you know?
+
+[00:17:49] Alex: Or like fixing your plumbing or I, yeah, I think, I think this is not, this is, this is, this is a pretty massive shift because I think it's happening on so many fronts. It is not, uh,
+
+[00:18:00] Brian: Y
+
+[00:18:00] Alex: yeah.
+
+[00:18:01] Brian: So the other, the other end of this is obviously on the entry level jobs. 'cause I mean, a lot of. You know, a lot of entry-level jobs are, are doing production work. You know, it's like if you, if you go into investment banking, it's, it's, you know, what it's like putting together models and, you know, we've already seen those get hit.
+
+I, I'm sure in the coding, like, you know, entry-level coding, uh, employment is, is down. And I think young people clearly see that. And I think a lot of the angst, there's a lot of people trying to, to connect the dots because we have, uh, a sort of angry young. Mostly male, uh, contingent on the right that, uh, is getting a lot of focus now because that they, they are dabbling in, in extremes that, that, uh, are, are antisocial to, to, uh, to put a fine point on it.
+
+Um, and then on the left, obviously with the election of Momani, um, there's a question, uh, that Peter Thiel had raised, uh, a, a while ago in one of these, um, great leaked emails. I love, I love. I love the internal tech emails, um, uh, site and account, uh, because it's great to see the candid, the candid emails of, of these people.
+
+And, um, you know, Peter Thiel had made the point, uh, this is a while ago, uh, that, you know, he was saying Socialism is gonna come back because these young people don't feel like they have a stake in the system. If you don't feel like you have a stake in capitalism and it's like, uh, rigged against you, you're not gonna have some sort of fey to capitalism, which is alarming many, many, uh, Americans because we believe in, in capitalism.
+
+Um, and Scott Galloway, who has been beating this drum about the young men, um, who is, I don't think he's a media person, but I think he's a media personality and there's a difference there. Um, he has a new book out notes on being a man. So we're gonna hear a lot about, uh, the crisis that is, uh, that young men are, are facing.
+
+Um, Troy, you have, you have a young, you have a young man in your, your household. See, maybe he moved out. I don't
+
+[00:20:19] Troy: he lives in California
+
+[00:20:20] Brian: Maybe. I, I had a nice dinner. I had a nice dinner with him. Yeah, he was,
+
+[00:20:24] Troy: He know he's a nice guy.
+
+[00:20:26] Brian: Um, what do you, what beyond Seb, what, what do you, what do you think is, I mean, first of all, good for Scott for branching out into this new area.
+
+Um, he just made it happen. I'm not sure what qualifies him necessarily for
+
+[00:20:40] Troy: Yeah. I don't know. I, I, one thing I observed from Seb is that he doesn't really, he's a little bit different where he, you know, he is a creative person and, and, you know, doesn't really see him. His, his, his value system doesn't have him moving through an organization and achieving the things that, you know, people might.
+
+Characterize this success or stability, but I think that there is, there is something that shapes us as humans pretty simply, that brings kind of responsibility and accountability and structure to young people. And I, I try to push this on set because, you know, he has been reliant on his parents for a while and, you know, he's now in his kind of past his mid twenties and, you know, hi.
+
+His understanding of the system of income to expense is not perfect. Um, you know, in terms of like, I gotta make money to pay my bills. C you know, because we've been there for 'em. And, um, you, you know, like having a mortgage, having a home, having children, you know, having a sense of kind of progress and achievement are things that direct energy away from.
+
+You know, things that might not be as societally productive. And I worry about that a lot. My number one thing as a parent would be to, you know, I do think that that the first thing I did when I was 20, I bought a house and you know, when, and I was thrust into adulthood. I was
+
+[00:22:17] Brian: bought a house at 20,
+
+[00:22:19] Troy: Yeah.
+
+[00:22:20] Brian: what did you have? Like a lucrative paper route, like when you were a teenager?
+
+[00:22:23] Troy: I know I had a little bit of cash and where I'm from, houses aren't that
+
+[00:22:26] Brian: What is that?
+
+[00:22:27] Troy: And I bought a house and I lived in it for a bit and then I rented it out. But, um, you know, I got thrust into adulthood because Jillian got pregnant when I was 26 years old. And, um, you know, we had a dog and suddenly, you know, I was like, holy shit, I'm living in Montreal and I don't make any money and I gotta figure this out.
+
+And then I was just sort of like very single-minded about figuring. Figuring out how to, to, to kind of do what I thought I was supposed to do, which is, you know, provide for, for this group of people. And, and so that was hugely, hugely motivating to me. But when I look back, I think a big part of it is just who I am.
+
+Like just how I kind of, you know, like if I see just the, the way my brain works was just like, I need to fix this and I need to, to not to, I, I just kind of need to be in control. I need to have agency in this kind of world. And I just kind of marched forward. And, um, I, I, I think if you can't get some of the basic, if you're not having kids and you're not buying a house and you don't have investments and you have no kind of, I, I mean, I think it's, it, it, it, it, it, it's, it's your sort of personal obligations.
+
+But I think on, on the other hand, I think you can get really pessimistic about society and, and, and also change your point of view on what the role of government is in your pain. And I think it's really troubling to be honest.
+
+[00:23:51] Brian: Alex, I wanna bring you in 'cause I think like it's actually turning at yet again. Alex, you're always like a soothsayer on this podcast is I see this turning from all the culture war.
+
+[00:24:02] Troy: not sure that's how I would
+
+[00:24:03] Brian: that like young, that like, you know, young men have been told that like, you know, there are oppressors and all that.
+
+And that's, that's definitely like part of it, but usually it comes down to economics, right? Like, and I, the, a lot of like elite, uh, people in society love to like, sort of whip up these like cultural war issues to, to distract from the economics of it. And, you know, without, and to me it probably comes down to real estate.
+
+I think the best like, uh, you know, explanation is the American system has been set up. Um, right or wrong around the acqui around home ownership. The, the, the government loves, loves to stimulate demand when it comes to home ownership. And then we wonder why housing is so freaking expensive. Well, I mean, if you're not increasing supply and you, and you keep subsidizing demand, like what do you think is gonna happen?
+
+I mean, Trump came out with this 50 year mortgage thing, which even for Trump is, is, is kind of, uh, insane. Um, and, uh, I, it's a yet another case of the government, uh, uh, doing something to, that's basically going to make, uh, housing even more unaffordable. I mean, if you just look at basic economics. Um, but I think that is really coming to the fore and I think that's what is, is, is being shown.
+
+Um. In the polls after, uh, mom Donny's victory. And so I think the focus now will shift from these, these culture issues, which certainly have a role to play, but ultimately, um, it comes down to economics.
+
+[00:25:42] Alex: I mean, it does. Yeah. I, I Troy's point, like the data that came out is that the medium age of a first time buyer in 2025 is 40. And I was like, to me, that didn't sound that strange. But then you find out that like in 2020 it was 33. It was 33 years old, the median age. Like that's, it's not that things are changing, it's that things are changing so fast and, and also like, yeah, I do think that there's a, um. A pretty big shift on the rhetoric online where it is changing from culture war and on both sides, uh, to more of a kind of a class war narrative. I think part of that is that. Honestly, I think most Americans do want some form of welfare system. You kind of slap the word socialism on it and people hate it.
+
+But if you actually bullet list like what you're getting, people are like, oh yeah, I want that one. That, that sounds great. I really want affordable healthcare and good public transport and child support. Yeah, that would be fantastic. Um, and, uh. But it is, it is, it is a problem. Some of it is definitely, like, there's definitely an internet problem.
+
+The internet used to be a place, now people live on it. And it has impacted, um, the motivation for people to gather culturally, uh, you know, like church attendance is down. Um, you know, uh, and, and, and this has created subcultures like that, that, that, like that goon squad article of, of, you know, I think it was last week.
+
+Um,
+
+[00:27:14] Brian: Daniel Cole, let's.
+
+[00:27:17] Alex: So I think it, it'll, it'll be, uh,
+
+[00:27:20] Troy: Masturbating as replaced church going, is that what you're saying?
+
+[00:27:23] Alex: for some people,
+
+[00:27:25] Brian: gooning.
+
+[00:27:26] Alex: the interesting thing about this thing is, even though, even, but even though this, I mean, I mean, you know, I think everybody should read that article because it's funny, but even though
+
+[00:27:35] Troy: but by the way, it's probably not true. I
+
+[00:27:38] Brian: you mean the gooning?
+
+[00:27:40] Troy: it's just like you find a couple of gooners and you, and, and it's, it's massively overstated.
+
+[00:27:45] Alex: It's, it's, it's,
+
+[00:27:46] Brian: I'm not saying the entire generation of young men are trapped in their goon chamber, goon caves,
+
+[00:27:54] Alex: no, but it is a, there's enough, there's enough of this going on. There's enough of a large
+
+[00:27:58] Brian: There's a kernel there. I mean, this
+
+[00:28:00] Alex: There's a kernel there, and it's, and it's on the edge of, of a
+
+[00:28:03] Troy: Media people understand this,
+
+[00:28:05] Brian: Yeah,
+
+[00:28:06] Alex: No, no, understand. I understand.
+
+[00:28:08] Brian: too good to check, but this, this checks out, it's like the Hika or whatever the, the, the, the shut-ins in like Japan who just play video games all day. This is like just a perverse offshoot of
+
+[00:28:19] Alex: if, if you read, if you, my, yeah, I'm on the internet enough to understand that both like. If you read, if you read things like that, you're gonna expect to go out on the street and see nobody. But in fact, people are still going to farmer's markets and clubs and things like that. But also the fact that these subcultures exist and they exist for a reason.
+
+And as like you kind of remove opportunity from young people, uh, you make everything more expensive and you increase the wealth, increase the wealth gap, um, you're gonna start seeing more and more of this happening. I, you know, I, I mean, I don't know how much.
+
+[00:28:49] Troy: doing in New York City is going out to dinner 'cause it's too expensive. You should put that money somewhere else.
+
+[00:28:56] Brian: But you know what I, I'm just shocked in New York City, like the restaurants are heaving. Like I, this is such a weird economy and I don't know how young people fir, first of all, I think every young person should try to live in New York City, like in their like
+
+[00:29:11] Troy: Yeah, but, but you can't afford a house, but you, you readily plop down like 60, 70 bucks for brunch. I don't
+
+[00:29:17] Alex: Yeah, man.
+
+[00:29:18] Brian: those like avocado
+
+[00:29:20] Alex: Troy. Troy. Like, this is, but this, this is like, I, I did, I've heard this argument before, and that's the fallacy of this argument. You know, when you lived back in the day and you had those bicycles with a massive front wheel, and you know, somebody would give you a tangerine for Christmas. Yes.
+
+You could save up instead of a meal and then buy a house. The, the problem is that the numbers are so astronomical, like, Hey, I'm never gonna, I could, I could save up $30,000 a year. And, and, and, and maybe try that and I'll still, I'll, you know, maybe I'll bias one bedroom of apartment by the time I'm 45, or I could live my fucking life and have a meal and it won't make a fucking difference
+
+[00:29:59] Brian: It seems like the rest, the, the rest of the country has become like New York
+
+[00:30:03] Troy: Clearly you're not a
+
+[00:30:04] Brian: where people don't get married, they don't, they have roommates into their thirties, they don't own. Um, and, you know, that's, that's how it goes
+
+[00:30:13] Alex: The numbers are just so, uh. I think to, to understand that, like people say, well, if you didn't, like, you can't hold like two versions of math in your head where you can say, well, if you stop drinking your Starbucks and, and your, you know, your french toast for brunch, then you know, if you did that for five, 10 years, 15 years, you could buy a house.
+
+That is entirely not true. And oftentimes these are the little joys that these people are enjoying and they've, they've chosen a life of like leisure rather than trying to chase a dream of buying something. Um. That they will never be able to afford. I mean, I get that.
+
+[00:30:47] Brian: Yeah, I wanna bring in ab who is here, um, uh, because I just wanna make a, a brief statement. Where I think that this sort of goes is, um, my overall theory is that most humans hate change and that a lot of our economy and society is now downstream of a technology industry that is premised on disruption and change and the, and their capacity for that.
+
+It far exceeds. The general populace's appetite for, for change. And we always see this is that change goes too fast and then there's like a retrenchment. And I feel like we're in this period right now where, um, the highest agency people, which are a small sliver of, of the environment, um, are reaping a ton of the rewards.
+
+And you could say rightly so, right? But they've architect, these are also, these people architected the system to reward people just like them who are, who are incredibly high agency. And I think of you AB because you're very high agency.
+
+[00:31:54] AB: Is it a question or what?
+
+[00:31:56] Brian: No, it's a statement.
+
+[00:31:57] AB: Oh yeah. I, I'm glad. The interesting thing on the go, not to pull us back to the weird topic, but they do spend a lot of money on their screens. But yeah, I think the problem with the way that children are raised
+
+[00:32:08] Brian: finds, AV finds a way to monetize.
+
+[00:32:10] AB: mean, that guy, the guy did a podcast episode, he had like 14 screens for his, his, um, setup and he was at his parents' house and then they were asking him, how do you tell your parents what you're doing?
+
+I don't, I don't know what the excuse is to tell your parents. You have
+
+[00:32:23] Alex: I mean, you, you're a day trader obviously.
+
+[00:32:27] AB: But I think that the way that children are, I mean, I have one 3-year-old, so I'm an N of one, but I think it's, and he's only three. But I think that the way that people raise children is you teach them the system. I mean, the way that I disconnected from the system is I had a business in high school, and as soon as I made more money than my teachers selling cell phones on eBay, like I kind of unplugged from listening to authority.
+
+I follow rules, but I don't let social norms guide how I live my life. And so if I read something interesting or wanna talk to somebody, I just reach out.
+
+[00:33:01] Brian: Wait, tell me about your cell phone business in high school.
+
+[00:33:05] AB: It was super sim. There was just like an arbitrage. It was super simple. There was like an arbitrage on buying cell phones from one place and selling 'em online. And then it turned into selling hundreds of cell phones to New York cell phone shops. And so I asked my parents for a little bit of money, and then I made a lot of money.
+
+[00:33:24] Alex: that's amazing. The reason Brian is asking is because we're talking about media people and what they should do next and.
+
+[00:33:30] Brian: Exactly. This is something media people will never think about.
+
+[00:33:34] Troy: I thought you were gonna get into the media people conversation. Like, what is it? I don't even know if people know what a media people person is. Brian, you just wrote a
+
+[00:33:42] Brian: You, so you brought up media people, so I wanna give you a chance 'cause I, I, I seized on it because I was like, you know what, that's exactly right. There are people who are media people. There are a lot of people who make media who are not media people. And media people are a particular species.
+
+And I was reminded of that when I read the, the latest Epstein emails. And Michael Wolf, of course, beca was, was there as, as a main character. And Michael has main character energy. But to me, Michael, who I worked, uh, for very briefly, um, and actually liked, uh, I liked him as a boss. Um, he, uh, he's a media person.
+
+Like he's been a, he's been banned from restaurants. And I think media people have a few characteristics. Like one is they have an innate, um, understanding of the power of narrative. Michael would always say it's like heroes and villains. You gotta find your heroes and you gotta find your villains. And it doesn't matter if you're covering advertising or writing about politics, it's all heroes and villains.
+
+And that's all. That's how, that's how, that's how narrative works. Right. And I think media people, um, you know, they tend to be troublemakers. Um, and Michael is an absolute troublemaker. And I think the best media people have that troublemaking sort of gene
+
+[00:34:59] Troy: The weird thing about Michael, and it's clear from the emails, is that Michael became part of the narrative
+
+[00:35:05] Brian: Right.
+
+[00:35:06] Troy: and all that is gonna be is fodder for people that hate journalists because it was clear that he wasn't reporting on it, man. He was instigating,
+
+[00:35:17] Brian: right.
+
+[00:35:18] Troy: he was writing the story from within the story.
+
+[00:35:22] Brian: He will be excommunicated from the journalism is part of journalists are media people, but there are media people beyond journalists. So for instance, like Olivia Nazi Perfect me, she's a media person without a doubt. Like she, you know, you know, was involved in a scandal of, of, of, of, of trading nudes. I dunno if they're one way or both way nudes with uh, RFK Junior, um, he became like he's remaking
+
+[00:35:48] Alex: That guy's had, that guy's had a life, huh?
+
+[00:35:50] Brian: Yeah. He is. Had a life. He's had a lived life.
+
+[00:35:53] Alex: Yeah.
+
+[00:35:54] Troy: but, but, but that's the third real poison of a, of a media person when you become part of the narrative as she did, and then it's over.
+
+[00:36:02] Brian: No, she's still a media person
+
+[00:36:04] Troy: Well, well, that chapter was over.
+
+[00:36:06] Brian: I mean, she might be excommunicated from
+
+[00:36:09] Troy: this is a, this is a trigger thing for me. This media person thing is a trigger because I'm not a media person. I may be
+
+[00:36:15] Brian: You have one foot in the media people world and you have one foot. Um.
+
+[00:36:19] Troy: a media person, Brian and I always, no, I mean, you're able to see the bigger story and the facts and, and I, and I, and I admire it. I, what I'm interested in is fake media people, and when fake media people get power in media organizations. So when running a media company, right, you got, there's basically four tracks.
+
+If you're an owner of media and you wanna put a CEO in, who are you gonna pick? Are you gonna pick the elevated sales guy, the elevated edit person, the elevated ops person, or the elevated tech person you pick, right? Because they all come with, with, with strengths and weaknesses, right? Or are you gonna try to articulate thing or something where the power is somehow balanced as it has been in, see the, the beautiful kind of architecture of a magazine from the magazine world was there, was.
+
+An editor and there was a publisher and they balanced each other out. And in some magazines, one had more power than another. Depending on the nature of the magazine, if it was publisher led, it was probably an ad led publication. If it was editor led, like a New Yorker or a New York Times or something, it was a subscription publication.
+
+Right. And and and the, what we've seen when media opened up to everybody is a lot of fake media people became media people. Right. Like all the Silicon Valley guys, like a 16 or Elon decided that they were media people. But they're not media people.
+
+[00:37:47] Brian: they're not media people. They use media, but they're not media
+
+[00:37:50] Troy: Well, not only are they way too self-interested to be
+
+[00:37:53] Alex: But they think they can be. They,
+
+[00:37:54] Troy: but, but
+
+[00:37:54] Alex: they believe they can be.
+
+[00:37:56] Troy: y yeah, they do.
+
+The other thing that really gets me when the media thing that this is a real trigger for me is that sort of abed by the need to sell media. Or confused by what people that consume media actually do want, need, et cetera. They endeavor to create things that they think are media. And that's where your conversations on this podcast around product and media really get me, because actually product and media doesn't really matter.
+
+The media matters, right? Like the AI chat bot on the time webpage, it doesn't matter, right? The, the, the, the CMS reconfiguration that makes your editor slightly more efficient. Doesn't matter. The page design kind of matters sometimes, but doesn't really
+
+[00:38:50] Alex: It's okay. You don't have to say that because I'm in the room. It's fine.
+
+[00:38:53] Troy: No, it just doesn't matter.
+
+[00:38:56] Alex: I, I
+
+[00:38:56] Troy: And, and, and, and, and, and what matters when you want to transform a media brand is the content.
+
+The media people have to do the work.
+
+[00:39:05] Alex: you're being, you're being, you're being selective about what you're choosing to define as, as kind of having, having a product methodology to looking at media. I think media, since the beginning
+
+[00:39:17] Troy: I don't want this to,
+
+[00:39:19] Alex: No, but it was always tied to innovation, right?
+
+Since the printing press and everything like that and like this ability to figure out how to create content that exists within, within a technology or via technology, is there, and I think, I think, I think media there, there is a lot of great
+
+[00:39:36] Troy: a Alex, where is the occasion when you as a media practitioner or media leader, have the ability to shape the way someone consumes media on the internet? Now, if you are a platform owner, you have that opportunity, right? But what we created with everybody, you know, that had a tiny sliver of attention, but had their own interface to media is we wanted to reinvent it to make it work better. And I understand the imperative to wanna make it work better, but it's like reinventing paper because you're a magazine company. It doesn't make any sense. It, it, it, it's like very few people can influence how we consume media and it's certainly not happening at the magazine brand or the media brand level.
+
+Maybe if you're the New York Times, you have gravity in, in the relationship between the consumer and, and in your platform that you can shape that and product becomes really important. But for the rest of media companies just go on Substack. I mean that's the truth of it.
+
+[00:40:39] Brian: Yeah, I mean, it's packaging, right? I mean, there's, the packaging is important and it's, it's a, I think it was an incredibly important part of media when media was a bundled product. But what happened is technology,
+
+[00:40:51] Troy: well packaging in that sense was different. That's packaging a story.
+
+[00:40:57] Brian: No, no, I mean, packaging as in, you know, the, so media people were very good at making, at, at the packaging of like magazines, right?
+
+That takes taste, that takes discernment. And media people have taste and discernment if they're really good, depending on their field. Um, but what you're, I think what you're saying is now is that has been sort of stripped away and, and now it's down to, it's just the stuff, the thing is like the content that you're creating.
+
+And so to me, like the organizations will inevitably, and I'm biased in this, you know, should be run by media people, not financial advisors. No offense to David Zaslav. I know we give him a lot of laurels
+
+[00:41:41] Alex: all agree there.
+
+[00:41:42] Troy: The product is the content.
+
+[00:41:44] Brian: Is he a media person?
+
+[00:41:45] Troy: the format, the product is the packaging of the story. It's different in video than it is in text, but the product is the content. I get it. And and what PE Media people, you know them when you see them. They care about narrative. They're, you know, they care about tension.
+
+They're shameless in the pursuit of getting with the
+
+[00:42:04] Brian: Tina Brown is a media. Tina Brown is a media person, I would
+
+[00:42:08] AB: I would be scared if a media person, in your context ran a media company. To me, it's like the bifurcation of duties that newspapers used to have, which is you have an editor, obviously it's not editorial content, but it's like you have a content person, then you have someone actually managing, generating revenue.
+
+Yeah.
+
+[00:42:26] Troy: Yeah.
+
+[00:42:27] Brian: Yeah. Yeah. But like, I think
+
+[00:42:29] AB: it's media,
+
+[00:42:29] Brian: a matter of, like Troy was saying, the, the, the power dynamic, right? Like a lot of times within organiza media organizations, non-media people are calling u usually non-media people are calling the shots. Someone from sales is calling the shots. Like they, they el they get elevated to the CEO.
+
+And I just think that more media models will, will, the strongest ones will be DTC models, right? And in that DTC world, you better be able to make the product. I mean, I go back to Elon Musk, uh, you know, had said that technical people need to run software departments because it's, it's like having a, a, a cavalry captain who can't ride a horse.
+
+This doesn't make sense. Um, it doesn't mean you have to be like a quote unquote writer to be, that's the worst.
+
+[00:43:16] Alex: I mean, a hundred percent agree. I think, I think, uh, um, at Airbnb, we used to call those player coaches. Definitely not my term because it's not like a, I don't use sports analogies, but I, I, I, I think that, look, we, we, we all agree and, and ab you said something about media, people being more emotional.
+
+Look, when you, these CEOs, these people of in leadership positions are being paid. Handsomely, and I think it is not too much to ask for somebody to be a media person that is also business, that has business savvy and that has product technology savviness as well. Right. And I, I, I think like we split up these roles, like they're different hats to wear.
+
+Uh, and, and absolutely I think a media company should be run by somebody who's a media person. But turns out that person should also have all of these other qualities, and that's why you get the big payoff. And the problem when you don't do that is that, uh. You know, the 20% that you're good at becomes your a hundred percent.
+
+And that gets projected across the company. And, and, uh, so a person that only thinks about content and has been kind of, has grown up in an era, in an era where they only made videos or or tech stuff, will not be able to kind of grab onto the innovation that's happening in, in technology and product and might not be great at business.
+
+But I don't think it's impossible to find people who are good at three. I think Troy is, I think, I think actually Troy, like we disagree on this, but I think you are, I think you're a media person that is like, you know, a good business leader and has some tech savvy,
+
+[00:44:50] Troy: yeah, maybe little League Alex, but, um,
+
+[00:44:54] Alex: I mean, you know, Z Love, but you know. Sure.
+
+[00:44:56] Brian: is true. We agree on
+
+[00:44:57] Troy: No, no. But it's really interesting. What's interesting is all of these people that who ha who either have attempted to become media people or become media people, right? So I think you made an interesting point about Galloway being not he's, you know, not really being a media person, just me, personality.
+
+The Pope is becoming a media person
+
+[00:45:17] Brian: I think he is. I was early on that I want my laurels. I want my laurels.
+
+[00:45:23] Troy: The head of a venture capital firm, private equity firm, venture capital firm, whatever is sparring with the Pope
+
+[00:45:30] Brian: Mark Andreessen.
+
+[00:45:31] Troy: Mark Andreessen and the Pope and Mark Andreessen is using an interview from GQ to make fun of the Pope what the actual fuck is going on.
+
+[00:45:44] Alex: may you live in interesting times, Jesus.
+
+[00:45:47] Troy: Am I right? Did I characterize it wrong,
+
+[00:45:49] Brian: I think you, you characterize that completely correctly. The, the Pope is, is getting frisky on, on X. He's a media person, so he knows he's gotta go, uh, and, and, and do combat. And he's basically reminding, he, he sent out a tweet where he reminded, uh, technology leaders that as they're creating AI, that you know, they should put the human at the center, this is the heart of, of Christian theology, um, kind of makes sense for a pope to, to be that.
+
+And Mark Andreessen responded with a Sydney Sweeney meme that I won't even go into describing 'cause I don't
+
+[00:46:24] Troy: Yeah, but it was basically Sidney Sweeney shutting down the pernicious GQ interviewer and Mark making some weird PO point with it. I don't even understand.
+
+[00:46:34] Brian: Well, I think this is part of Silicon Valley has created a parallel media ecosystem that is not run by media people, because media people are, as I said, troublemakers, they always wanna be the kid that, uh, says that the, but that the emperor's butt naked. This is not good for business. Um, Silicon Valley really confuses to me, media for attention and they've created these attention machines that are very different than media.
+
+That's why media people are not as successful in the current media system. 'cause the media system is really an intention economy and that, that rewards the information entrepreneurs, the, the audience, carnival Barkers. And that's where I would, I would say Scott is more in that, uh, area than, um, like Kara Swisher is a media person.
+
+I know you might not love like all Kara, but she's a media person. She's a definitely a troublemaker.
+
+[00:47:30] Alex: And, and also like a, a business, she's got business savvy. Right? That's, I mean, that's part
+
+[00:47:36] AB: it's
+
+[00:47:36] Troy: Is Alex Carrp a media person?
+
+[00:47:38] Brian: No, Alex Karp is not a media person.
+
+[00:47:40] AB: so I've been, I know you, Brian, you just wrote something because I've been thinking a lot about this too. Not the same terms, but, 'cause the way that I think as a creator, you get audience is you have a point of view and you have frequency. Right? So, but in the point of, the term point of view is interesting because what you're saying about these attention machines is people are not actually posting their point of view.
+
+They're basically posting like bullshit commentary, right? Their feelings like it's not well thought out things
+
+[00:48:10] Troy: your definition is problematic because lots of pe, everybody has a point of view.
+
+[00:48:14] AB: it's, well then change the word. But you know what I'm saying, right? I mean, I think at the, when I first started coming on here, you were like, good with feedback where I didn't just say like, I had actually. Think about what I was gonna say, and I think I've gotten better at articulating actual ideas versus just like, oh, I heard this, or I felt this.
+
+[00:48:32] Brian: You're not yet a media person
+
+[00:48:34] AB: I'm not trying to be a No, no, I'm just saying No, no. I'm just saying I've, I'm not, I don't wanna be a media
+
+[00:48:38] Troy: What, what he's trying to do is understand what
+
+[00:48:41] Brian: AB is like, I made enough money when I was a teenager to understand I don't want to be a media person.
+
+[00:48:46] AB: no, because what I'm trying to discern, the reason why I'm thinking about this a lot, it two things. One is like, who of these creators who actually has sustainable value, right? Who's actually has a zeitgeist, has, has something that Kara's been doing this now for whatever, 30 years and she's been able to like, 'cause the funny thing with Scott Galloway, and I don't know why everyone goes and keeps seeing him.
+
+He says the same thing over and over. It's
+
+[00:49:09] Brian: Well, he has a shtick. He has a shtick.
+
+[00:49:11] Alex: Well, he is a marketer, right? I mean, that's
+
+[00:49:12] AB: but at some point we've all know about lonely people and it like. Maybe he doesn't have any time to think, but it's like you can move these ideas forward. Like you can, you don't have to give me the same PowerPoint that you gave six months ago.
+
+And so, but Kara changes and, and, and there was an evolution of the code conference. There's an evolution of where she worked. There's an evolution of her friends and how she thought about these different things. And I think Trump changed it a little bit to the worst. But otherwise, she was always relevant because she had opportunities to talk to the smartest people and she knew what was happening before the news covered it.
+
+So even though she was a journalist, she could talk in like a very elevated way that understood the nuances of the industry she was in. And so you don't have to have a point of view if you're just a journalist, but I think that what's making some of these creators better than just getting the fame of the 15 minutes is like, how do they create lasting power?
+
+And it's an ability to post frequently to be able to do a lot of these things on your own. So even if you join an organization, you're still able to
+
+[00:50:11] Troy: I agree ab but there's a really rare intangible, it's sort of like, what is an artist? And, um, an artist is a person that can interpret the world and make you feel something. And, and, and I think it's really rarefied. And, and, and, and I think that media people also have to have this kind of elusive understanding of format.
+
+And, and like for example, I, I think Michael Wolf has that, like his combination of like. I don't know what it, what it is, is it, it's Architecturals Digest meets
+
+[00:50:46] Brian: Oh his, his charming Instagram account.
+
+[00:50:48] Troy: meets the ft or meets some common, you know, like kind of, uh, it's different than the ft but anyway, it's, it's this format that actually just works.
+
+It's just good media. You might tire of it, but it's good media and, and you see, I was talking to a friend this morning, my friend Joe Heath, who I've often referred to on this podcast as the professor, as a philosophy professor from very smart guy from University of Toronto. And I got up this morning and I was reading the Ft.
+
+And Joe was front and center in the first article I read because Joe made a comment about populism being, um, a useful construct for people, even if it's not right. It doesn't matter. It's easy to understand. As a, as a consumer of the message. Anyway, uh, Joe was quoted because he's been writing about these kinds of things for years, and Joe got on the phone with me this morning.
+
+You'll love this, Brian. He said, something has happened to me since I got on Substack, and he said, Substack is my medium. And, and he's like, I'm getting notes from like world leaders. I'm getting notes from, you know, the editors of the biggest newspapers and I, no one ever paid attention to me before. And, and, and so he's extraordinarily good at the written argument.
+
+He's been doing it his whole life. He's really good at it. So Substack is his medium. And I, and I was reminded of like Format and Medium to, I listened to Pivot in Toronto. Pivot has been doing a live tour and they're on the road. And it strikes me that putting people in front of a live audience creates a strong imperative to perform.
+
+This is like vaudeville, right? You have to perform. And to me that stands in kind of stark contrast to what a podcast is. And, and so sometimes maybe it works, but sometimes it doesn't. And it was super awkward because Scott got up there and him and Carol wanted to perform and they weren't prepared to perform.
+
+So, you know, you fall back into your shtick, I guess. But, um, it worked way better in Brooklyn when they trotted out. Dude, Curtis Sil, as the first thing they did when they got on stage is they brought out the like cat lady mare candidate. And it was, and he's weird enough to hold the, like, he's weird enough to be an entertainer. Like he's, he's just an interesting character. So the thing kind of worked and so I, you know, I do think that media people have this really, you know, kind of art like understanding of how to get someone's attention and, and, and how to make them feel something. And it's more than attention. And, and that's really rare, you know, Emily does know how to do that.
+
+Blake, it's not frequent. Emily, Emily Sunburg at Feed Me. It's not just frequency and view. She's definitely a media
+
+[00:53:51] AB: Well, I'm not trying to dilute it. I'm just saying that there are attributes that make this work. I it.
+
+[00:53:59] Troy: Media people.
+
+[00:54:01] AB: Let me just make one more thing. So it goes back to your agent. It's like weaving this together. 'cause Tom Rein's book is coming out next week and so you get, and obviously biographies are an opportunity to Rene or write what actually happens.
+
+So I don't know if this really did, but when, when MTV was growing and getting big, he makes this point that all of the best content ideas came from. People that were in their twenties and then they would age out of it. And so I think a lot of, and I'm building a business, I can see this every day. It's like you have this tendency to want to control, but I think if you hire people that you trust, you like tell them how things should work, but then you want to enable them with agency to make a a fuck ton of mistakes.
+
+Because if they do it and the mistakes aren't that costly, typically you can move everything forward a lot faster. And so there's certain things in my business that we can't make mistakes on, but there's a lot of other things where it's good to lean in and take risks. And I think a lot of these corporates, because they're so focused on cutting costs and trying to eek out a little bit more revenue before the audience goes away, it's any of that innovation and creativity has basically been sucked out of the system.
+
+Everything is tied to, did it work the first time? Because premium content production costs a lot. And so when you think about. New things. Like that's why they can exist a lot easier when it's one person shooting it in their room or a, a creator, which maybe has one or two producers behind the camera. Um, but I think agency is a really important characteristic, even for employees to have at these media companies on the creative side.
+
+And so, yes, have a media person run it, but that person also needs to instill freedom in the people. Like in, there's an anecdote in the book that Tom was sitting in the audience at a play and someone came up with an idea for a show and he is like, yeah, go do it. And it was like that sort of level of flexibility to just have good ideas and go try 'em.
+
+That's what made M-T-V-M-T-V, I guess.
+
+[00:55:56] Brian: Yeah. And I think there's the big risk is that in this compression, that that is completely being lost in, in a lot of these organizations. Um, Troy, we, we got a request that you, that we weigh in on this one, so I'm gonna, I'm gonna throw it to you. Uh, Conde Nast is in a little bit of, uh, I mean, they're in like constant state of like, um, you know, mini crisis micro dramas and what, and, and the latest one, I'm sure to non-media people is truly ridiculous.
+
+Um, basically Conde Nast, uh, finally folded Teen Vogue into Vogue. They'd already done this with Vogue business, um, which, uh, I, I had tracked quite a bit because when I, at my last job we had a, uh, a business of fashion and beauty, uh, publication and I thought Vogue getting in was very interesting. And I didn't think that they would actually, um.
+
+Stick with it in B2B, and they fo they folded these both into, into vogue. Teen Vogue during, um, in 2016 had become something of a resistance publication. Uh, they wrote this, uh, well-known gaslighting article by Lauren Duga. And, um, and so they, you know, it upset a lot of the media people within, uh, Conde Nast.
+
+Uh, and there is a generational divide to this. I believe, you know, younger media people are more activist oriented, right? And we've seen a resurgence in unions at these organizations. And so they marched on the head of hrs office, um, in some sort of performative and hand ham-handed display. Um, and then Conde Nat fired them, uh, for, uh, being hostile.
+
+Uh, so now they're known as the Conde, the Conde four. Um, what, what, what, what, what is your, what is unpack, what is going on here, Troy?
+
+[00:57:48] Troy: Um, I
+
+[00:57:48] Brian: This seems to the outside, I can see this seems like fiddling while
+
+[00:57:52] Troy: I mean, I'll only tell you that I think Conde should lean into this kind of new brand as being, um, a place of kind of endless hysteria. Um, and, and, and that, that it, it's, it's, it's just become laughable at this point. And the reason I say
+
+[00:58:11] Brian: Turn the cameras on.
+
+[00:58:12] Troy: the idea of union members storming the 43rd floor at Hearst where my office was is like literally is terrifying.
+
+To the sort of old guard that just want everything, you know, everybody to be happy and to go back to making media. It's like I, I I, it, the, the, the amount of controversy only years ago, either for Herst or for for Conde, I, I is, uh, is, is is really something that both companies would have wanted to avoid.
+
+Um, the, the, the, the, um, the things I will say are as follows. If you look, it's, I, I, you know, you, you strident young journalists under the banner of a union walking up in haranguing an executive is, is, um, sad. It's just sad and they should be fired, in my opinion. Um, I, I, I just don't think that's the way you can manage an organization and I think that people kind of have to be accountable, I would say from in Conde's defense. You know, um, if you look at their, that company, and I know that everybody's, you know, uh, uh, very eager to write the story of its, you know, downfall. Um, I think what Vogue has done with their live projects has been really interesting. What they did in Los Angeles two weeks ago with Vogue World was cool. I think that what the new editor is stacking up at at, at Vanity Fair promises to be an interesting media publication, and I look forward to seeing it.
+
+I think that, you know, to this day, the New Yorkers still a bastion of fine journalism and a great subscription company. I think, you know, some of the other stuff is kind of way less important and fallen off a little bit. Bon Appe, you know, our Arc Digest is still the same kind of thing, so I think they still have.
+
+Brands to the extent that they can create sort of quality and intrigue around them. I think they still do it. And we're going through a 20 year adjustment in the kind of structures of these media organizations. And it's wrenching. And it's, to me it's, it's, it's, it's really kind of sad that it has to come to this, but I think that, you know, albeit as a smaller company, Conde will, will get to the other side of it.
+
+And it's owned by a rich family, so it really doesn't matter that
+
+[01:00:44] Brian: That helps. Uh, I wanna talk about a couple of, uh, Alex had a hard stop, but like, I, I wanna talk about a couple of, of, uh, media format innovations. Blake, you've been.
+
+[01:00:55] Troy: Netflix,
+
+[01:00:56] Brian: I wanna talk about Netflix, but, but so let's start with Netflix. Okay. So Netflix is opening this immersive experience at a great mall. King of Prussia Mall is one of the Alzheimer's, it ranks number one in Philadelphia area malls in my ranking.
+
+Uh, it's above Abington Mall, the Shay Mall, Plymouth Meeting Mall, um, and several other malls that are in the Philly area. Uh, so Netflix has this immersive experience. People want to get outside. Apparently Netflix and chill is not enough. That's over. And now, uh, they're trying this, uh, immersive experience.
+
+Um, we're seeing this across a lot of different categories. I mean, Tesla now has its own drive-in diners. Um, we hear all, uh, endlessly about loneliness and people being trapped indoors. And so, um, this seems like it makes sense, but, uh, this is a totally different business. What do you, what do you see Troy.
+
+[01:01:50] Troy: It is kind of amazing, right? It's sort of like I walked by yesterday, the, it's like the ice cream museum meets Dave and Buster's. And, um, you know, it's a, the, the, you know, parks business at, at Disney I think is like a $34 billion business, and one that, that fits nicely into like, the kind of circle of IP exploitation.
+
+So it makes a lot of sense that they would do it. It's just, I don't know, man, themed food doesn't seem good to me. I don't know why people want fucking themed food. Like, uh, mini golf is kind of fun, but, uh, you know, just go to a mini golf place. I'd like to go, you know, see a movie, but I don't want like a bunch of junk around it.
+
+I, I'm a bit, it's not for me. It's not for me. And, and, and I get that they want to exploit squid games and shit, but like, um, it's kind of sad that the state of the world, it's, it really is like, if you wanna look at it thematically, the Netflix Ice Cream Museum is, has replaced the department store in your mall.
+
+And the, I don't think it's gonna last. I think it'll be there for a little while and then they'll find an elegant way of backing out of it. I don't know if like, puzzle rooms and mini golf and like, uh, shitty hamburgers themed around, you know, uh, uh, Netflix series are, is a long lasting proposition. I don't know why people don't want like, real craft, like someone who knows how to make food and real community.
+
+'cause this doesn't strike me as either. And I don't know why people want to go to the fucking Tesla diner or the Netflix thing. And um, to me it's the same thing as, as media people if you want to tie it back. This is experiencing experiences cosplaying as real experiences. These aren't real experiences.
+
+This is garbage. Listen. When you go to, listen, I'm, I'm not a Disney guy. I went to Disney once and I paid like whatever, 10 grand for the back of this lot access and all that shit. And it was kind of fun to go on like the avatar ride. But the thing about Disneyland is like, there's insane craft in that experience in the rides in like the environments.
+
+It, it doesn't feel like a pop-up at the mall.
+
+[01:04:13] AB: Yeah, I.
+
+[01:04:13] Troy: so I, I, I, I don't think as a format that it's gonna last. That would be my take.
+
+[01:04:20] AB: Yeah, if Mr. Beast couldn't make the Beast Burger work, which is like an innovative way to deliver because like you need scale to make this shit otherwise it's a waste of money. I think what was interesting in the Netflix media kit was their focus, they had like three or five value prop or sort of triggers to get advertisers to advertise with them.
+
+And obviously they talked about scale data, tracking, all this stuff, but events was actually not the stuff that you're talking about Troy, but like the boxing stuff. And so I think there is in-person live activations that can have, uh, a good experience and they can capture significant advertising dollars effectively.
+
+Like having mini Super Bowl like activations where, 'cause the brands allocate money across
+
+[01:05:03] Troy: think we should con ab, I don't think we should conflate a live boxing event with like a, you know,
+
+[01:05:09] AB: I'm not, I'm not conflating it. I'm just saying, it was interesting to me where three years ago, I don't think we would've thought, oh, they partnered with Jake Paul to do these fake boxing tournament or whatever they're called. Um, and that's like number four out of the five things that they're going to market with for their advertising product.
+
+I think it's pretty, it's good. I mean, they're just taking, they're pulling the format from HBO and HBO boxing so significant and obviously the, there.
+
+[01:05:37] Troy: Yeah, I, I guess
+
+[01:05:38] Brian: Y Yeah. One other thing I wanna bring in is, is Justin Bieber is now like a Twitch stream. And, and this is, uh, a commentary maybe on the economics of, of, of media people face. Um, because, you know, he's now, uh, uh, on, on Twitch, you can see him skateboarding, playing games, maybe playing some music.
+
+[01:05:59] Troy: Brian, he was carving pumpkins on Twitch.
+
+[01:06:02] Brian: He's carving pumpkins.
+
+Um, I don't, maybe this is sad. Maybe this is the way, the way the, the way it is. But I think, you know, there was an interesting Instagram that you had sent around, uh, that made the point that the economics of streaming sucks so much. If you're an artist these days, you have to constantly tour. And there is like a connection honestly, to publishing.
+
+I mean, you might not want to be on the podcast tour, but like, let's be real. Like that's how you, that's what you gotta do these days to make money. Um, I was, I was on tour for nearly a decade as part of a B2B business. 'cause events were the, the what paid the bills. Um, and maybe this is a way to not be on tour all the time, but to have a always on connection with fans.
+
+Um, you know, look, some people I saw, I read one review that said it was, you know, incredibly boring. Um, but ab you had made the case that that's just, that's just an old person's view of this kind of thing.
+
+[01:07:03] Troy: Maybe dropped.
+
+[01:07:05] Brian: AB dropped. Okay. Um, did you check out the Justin Bieber uh, stream? Troy?
+
+[01:07:11] Troy: I mean,
+
+[01:07:12] Brian: I.
+
+[01:07:13] Troy: I think the numbers, Brian, are like 300 grand for 83 million streams on Spotify. And I think that if you're an artist, you wanna pull yourself out of a construct where you have absolutely no control. You have no control through your record company, through your management, or through the streaming companies, and you wanna show a side of you that's bigger than music.
+
+And you want a life that isn't entirely dependent on being Salin Dion in Las Vegas. And, um, I think that this is maybe a way that someone famous, you know, can kind of show multidimensionality and get some agency back and, you know, find a way to drive some economics at the same time. Um, I, I have no idea how fandoms consume media and why someone would wanna watch, like, you know, Justin Bieber feel sorry for himself on a live twitch stream.
+
+Like, it just doesn't make sense to me. But, you know, I get that people love the guy. So, but it does say, it does say something about the need for music, like people in the music industry, particularly at that tier to change the business model.
+
+[01:08:27] Brian: Yeah, for sure. Uh, let's get to good product.
+
+[01:08:30] Troy: Good product. Okay. Um, you have one? I think
+
+[01:08:35] Brian: You can go. I, I was just filling in. Mine are random.
+
+[01:08:38] Troy: Um, well, this one is kind of funny because, you know, we're getting right down to the, the feature level at the, on the iPhone. And I, I'm using my iPhone for something that I'm sharing with my kids all the time that I like a lot. And so if you hold your thumb down on the home screen, you can customize that screen.
+
+You know that, right?
+
+[01:08:58] Brian: Yeah.
+
+[01:08:59] Troy: So if you hold your thumb down and you customize it, you can have it. First of all, you can change the, I mean, to type, you can create this beautiful condensed typeface on the clock. What's more interesting is it will automatically. Sit behind elements in the photo that's uploaded. So it'll, it'll, the AI or whatever's doing it will take your photo and like put half of the type behind the mountain, which is like really aesthetically pleasing.
+
+But more importantly, the really nice feature is you can select your photos. You can select one of four categories, like environments, people, pets, I don't know, landscapes and under people what you, that what then happens is there's another menu that allows you to select individual people from your photo library.
+
+So it's going in with ai, it's picking all the people that, you know, you have repeated photos of that it recognizes and you can select all the people that you want appearing on your phone every day. And it's, it's a really nice feature because I'm reminded of, I have a whole library of really old photos of my kids.
+
+And it, it, they turn up every 10 minutes on my, on my phone. It sounds like a screensaver. I know, but it's much better than that. It's really, really cool. And you see how type kind of slides into the, you can't even see it on here, I don't think into the background. I'll show you a different one.
+
+[01:10:34] Brian: but do you find this exciting?
+
+[01:10:35] Troy: at that, look at that.
+
+That's like my daughter when she was really young. Like, so it, it's using AI in a good way. It's picking from your photo library, um, in a way that makes this really relevant and it's incredibly well executed.
+
+[01:10:49] Brian: I But you find this exciting. I, I just, I, I, I find everything to do with phones, like awful. Like I just don't, I don't believe, I, I believe that most people want,
+
+[01:10:57] Troy: I don't, I
+
+[01:10:58] Brian: less time on their phones.
+
+[01:10:59] Troy: exciting or
+
+[01:11:00] Brian: new feature, any new feature to me is, oh God, here they are again, trying to get us to like, look, be attached to our phones even more than we already are.
+
+And it, and to use your term, it's sad.
+
+[01:11:14] Troy: Okay, so I'll, I'll give you that. But, um, if, if a feature, I don't care about the feature, I only care that my observed connection with it was wonderful and emotional. And to me it brought back a lot of really good memories when my kids were young and we lived in California
+
+[01:11:32] Brian: Okay. That's fair.
+
+[01:11:34] Troy: and, and so that's what technology's supposed to do.
+
+It's supposed to make your life better, and that was a positive thing. So I liked that.
+
+[01:11:46] Brian: That's good. Um, all right. Should we leave it
+
+[01:11:50] Troy: What did you have in your little bag of tricks?
+
+[01:11:53] Brian: Oh, well, I mean, I got back to, you know, one of the things that I, I've noticed I got back to, to New York City, uh, the other day, and, um, couple things. One is, um, the Christmas I, I, I'm gonna, I'm Andy Rooney, but like, you know, the holiday season used to begin after Thanksgiving and now it begins after Halloween. Um, Christmas lights are, are, are, are, are up, they're up in Miami. They're up in, in, in New York. You go everywhere. And I, it feels like it's like mid-December around New York and it's been colder. Uh, at least for me, I know I had been in Miami and, um, which is always nice. I think New York, uh, is, is I like the seasons as part of New York.
+
+Maybe not all the time, not in February. Um, but one of the, the, the enduring features, because I live, uh, uh, in lower Manhattan is the, the subway or the subway, the, the steam vents, which is a, a, a New York City oddity that I never see in other cities. And those are the giant orange cones in which plumes of steam are released, uh, into the air and create quite a, a nice cinematic analog landscape.
+
+That to me is, it's very New York. New York will, I know people are saying again, new York's
+
+[01:13:12] Troy: Do they have those in Philly? They don't have those in
+
+[01:13:14] Brian: I don't remember seeing, like New York is, is.
+
+[01:13:17] Troy: don't have 'em in Regina. I'll
+
+[01:13:19] Brian: Well, New York is unique in that it got centralized heating very early. And because I live down, like in the financial district, this is the oldest part of, of Manhattan, um, there's still the steam, heat is, is a unique feature of New York City and that most people got, it got centralized heating later.
+
+And so it's more modern. Whereas people not only pay a ton of money to live in New York City, but they have these, you know, anyone who's lived in New York City long enough has had some kind of, like, it's normal to have a radiator that is a trillion degrees and you can't, you can't go anywhere near like a Have you ever had one of those, those poles, those like steam heat poles that like, is um, like hotter
+
+[01:13:58] Troy: connect radiators Florida floor. Yeah.
+
+[01:14:02] Brian: and they create lots of noise.
+
+But anyway,
+
+[01:14:04] Troy: your big product? Spouting Steam.
+
+[01:14:07] Brian: yeah, basically, yeah. It's like, uh, you know, it creates a, a great, uh, I dunno, it creates texture to the urban landscape.
+
+[01:14:16] Troy: Awesome.
+
+[01:14:18] Brian: I gotta go do a webinar.
+
+[01:14:21] Troy: Um, okay. Uh, I, this is over van. Uh, do you wanna stop recording? Um, 
+
+the.
+

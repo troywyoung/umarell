@@ -507,36 +507,55 @@ Return valid JSON only. No markdown fences. No preamble."""
 
 # ─── PvA Take ───────────────────────────────────────────────────────────
 
-PVA_VOICE_TROY = (
-    "Troy Young — media executive, advisor, investor. "
-    "Voice: conversational, energetic, entrepreneurial, sardonic. "
-    "Thinks in systems and power dynamics. Comfortable saying uncomfortable truths. "
-    "References personal experience building media businesses. "
-    "Style: 'every great business is a racket', 'muddy, body-strewn trenches'. "
-    "Mixes cynical observation with genuine curiosity. Practitioner, not theorist."
+import os as _os
+import glob as _glob
+
+PVA_TRANSCRIPTS_DIR = _os.path.join(_os.path.dirname(__file__), "pva_transcripts")
+
+PVA_COMPOSITE_VOICE = (
+    "You are the editorial voice of People vs Algorithms (PvA) — a newsletter and podcast "
+    "by Troy Young, Brian Morrissey, and Alex Schleifer about media, technology, and culture.\n\n"
+    "THE PVA VOICE:\n"
+    "- Smart, critical, funny. Like three sharp friends arguing at dinner after a few drinks.\n"
+    "- Liberal but pragmatic — not ideological, not preachy. Pro-business but skeptical of power.\n"
+    "- Media experts who've built and analyzed media businesses for decades.\n"
+    "- Culturally fluent — references art, design, music, food, not just tech.\n"
+    "- Comfortable calling bullshit. Says what people in the industry think but won't say publicly.\n"
+    "- Thinks in power dynamics — who wins, who loses, what's the real business model.\n"
+    "- Sardonic, pattern-matching, provocative. Not neutral. Takes a side.\n"
+    "- Practitioner perspective, not academic. Cares about what actually works.\n"
+    "- Skeptical of hype cycles. Focused on structural change over narrative.\n"
+    "- Conversational tone — contractions, short punchy sentences, occasional profanity.\n"
 )
 
-PVA_VOICE_BRIAN = (
-    "Brian Morrissey — founder of The Rebooting, media business analyst. "
-    "Voice: analytical, pattern-matching, curated, dry wit. "
-    "Connects disparate media stories into structural arguments. "
-    "Focuses on business models, sustainability, and industry mechanics. "
-    "Style: precise, numbers-aware, media-insider shorthand. "
-    "Critical distance while analyzing — not cheerleading, not mourning."
-)
 
-PVA_VOICE_ALEX = (
-    "Alex Schleifer — CEO of Human Computer, design/product leader (ex-Airbnb VP Design). "
-    "Voice: product-minded, design-systems thinker, provocative questioner. "
-    "Challenges assumptions by asking 'but why?' from a first-principles perspective. "
-    "Thinks about interfaces between humans and technology. "
-    "Style: sharp, concise, Silicon Valley skeptic. Questions received wisdom."
-)
+def _load_transcript_context() -> str:
+    """Load stored PvA transcripts as voice-training context."""
+    if not _os.path.isdir(PVA_TRANSCRIPTS_DIR):
+        return ""
+    files = sorted(_glob.glob(_os.path.join(PVA_TRANSCRIPTS_DIR, "*.txt")))
+    if not files:
+        return ""
+    chunks = []
+    total = 0
+    for f in files[-5:]:  # last 5 transcripts, most recent
+        with open(f, "r") as fh:
+            text = fh.read().strip()
+        if text:
+            chunks.append(text[:4000])  # cap each at 4k chars
+            total += min(len(text), 4000)
+        if total > 15000:
+            break
+    if not chunks:
+        return ""
+    return (
+        "\n\nREFERENCE — recent PvA podcast excerpts (use these to match tone, vocabulary, and perspective):\n\n"
+        + "\n\n---\n\n".join(chunks)
+    )
 
 
 async def generate_pva_take(thesis: str, steel_man_json: dict, voice: str = "all") -> dict:
     """Generate a PvA-voice reaction to the thesis.
-    voice: 'troy', 'brian', 'alex', or 'all' (blended).
     Returns {body: str, tldr: str, voice: str}."""
 
     steel_man_text = steel_man_json.get("bottom_line", "")
@@ -544,40 +563,17 @@ async def generate_pva_take(thesis: str, steel_man_json: dict, voice: str = "all
     if bullets:
         steel_man_text += "\n" + "\n".join(f"• {b}" for b in bullets)
 
-    voice_profiles = {
-        "troy": PVA_VOICE_TROY,
-        "brian": PVA_VOICE_BRIAN,
-        "alex": PVA_VOICE_ALEX,
-    }
-
-    if voice == "all":
-        voice_desc = (
-            "You are the collective voice of People vs Algorithms — a newsletter and podcast by "
-            "Troy Young, Brian Morrissey, and Alex Schleifer. Their perspectives blend:\n\n"
-            f"{PVA_VOICE_TROY}\n\n{PVA_VOICE_BRIAN}\n\n{PVA_VOICE_ALEX}\n\n"
-            "Write as their blended editorial voice — sharp, conversational, media-savvy."
-        )
-    else:
-        profile = voice_profiles.get(voice, PVA_VOICE_TROY)
-        voice_desc = (
-            f"You are writing in the voice of one specific person from People vs Algorithms:\n\n{profile}\n\n"
-            f"Write as {voice.title()} would — in first person, with their distinct perspective and tone."
-        )
+    transcript_context = _load_transcript_context()
 
     system = (
-        f"{voice_desc}\n\n"
-        "People vs Algorithms examines patterns of change in media, culture, and technology. "
-        "The editorial perspective is: skeptical of hype, focused on structural change, practitioner-informed. "
-        "Comfortable calling bullshit. Thinks in power dynamics — who wins, who loses, what's the business model. "
-        "Conversational but sharp — like smart friends arguing at dinner. "
-        "NOT academic, NOT neutral. Opinionated. Takes a side.\n\n"
+        f"{PVA_COMPOSITE_VOICE}\n"
         "Return ONLY valid JSON. No markdown fences. No preamble."
     )
 
     prompt = f"""Thesis: {thesis}
 
 Steelman:
-{steel_man_text}
+{steel_man_text}{transcript_context}
 
 React to this claim in the PvA voice. You may agree, disagree, or completely reframe the question.
 Connect it to bigger patterns in media, tech, or culture where relevant.
@@ -602,7 +598,7 @@ Return valid JSON only. No markdown fences. No preamble."""
         raw = result
 
     parsed = _extract_json(raw)
-    parsed["voice"] = voice
+    parsed["voice"] = "pva"
     return parsed
 
 

@@ -759,7 +759,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   const [pvaError, setPvaError] = useState(false);
   const [showCounterpoint, setShowCounterpoint] = useState(false);
   const [showPva, setShowPva] = useState(false);
-  const [pvaVoice, setPvaVoice] = useState<string>("all");
   const [editMode, setEditMode] = useState(false);
   const [editText, setEditText] = useState("");
   const [resubmitting, setResubmitting] = useState(false);
@@ -820,13 +819,12 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
     }
   };
 
-  const handlePvaTake = async (voice: string = "all") => {
+  const handlePvaTake = async () => {
     setShowPva(true);
-    setPvaVoice(voice);
-    if (obs.pva_take?.voice === voice) return; // already loaded
+    if (obs.pva_take) return; // already loaded
     setPvaError(false);
     setPvaLoading(true);
-    const result = await requestPvaTake(obs.id, voice);
+    const result = await requestPvaTake(obs.id);
     setPvaLoading(false);
     if (result) {
       setObs((p) => ({ ...p, pva_take: result }));
@@ -1037,7 +1035,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               {counterpointLoading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : "Counterpoint"}
             </button>
             <button
-              onClick={() => handlePvaTake(pvaVoice)}
+              onClick={handlePvaTake}
               style={{
                 flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
                 background: showPva ? "#FF00AE" : "rgba(255,255,255,0.08)",
@@ -1133,24 +1131,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           );
           const take = obs.pva_take;
           if (!take) return null;
-          const voices = ["all", "troy", "brian", "alex"];
           return (
             <div style={{ marginTop: 16 }}>
-              <div style={{ display: "flex", gap: 6, marginBottom: 12 }}>
-                {voices.map(v => (
-                  <button key={v} onClick={() => handlePvaTake(v)}
-                    style={{
-                      padding: "5px 10px", borderRadius: 6, border: "none", cursor: "pointer",
-                      background: pvaVoice === v ? "#FF00AE" : "rgba(255,255,255,0.08)",
-                      color: pvaVoice === v ? "#FFF" : "rgba(255,255,255,0.5)",
-                      fontSize: 11, fontWeight: 700, fontFamily: "inherit", textTransform: "capitalize",
-                      WebkitTapHighlightColor: "transparent",
-                    }}
-                  >{v === "all" ? "All voices" : v}</button>
-                ))}
-              </div>
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 12 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>TL;DR</p>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>PvA Take</p>
                 <p style={{ fontSize: 14, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{take.tldr}</p>
               </div>
               {take.body.split(/\n\n+/).map((para, i) => (

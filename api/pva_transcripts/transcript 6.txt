@@ -1,0 +1,1026 @@
+Brian Morrissey (00:00.083)
+see how goes. It's always a good start to a podcast.
+
+T-roy (00:04.565)
+We'll see how it goes. know, the, so you're, you're, you're in a, what, at some kind of, hotel in Belgrade.
+
+Brian Morrissey (00:12.453)
+I am in a hotel in Belgrade, yeah. I do. I'm going to see them right after this podcast, going to New Belgrade, across the Salva River. And it's really weird here.
+
+T-roy (00:14.161)
+Right. Don't you have family there?
+
+T-roy (00:24.223)
+and they don't welcome you into their home.
+
+Brian Morrissey (00:27.759)
+Yeah, they do. They're my in-laws, so I hope they do. But there's a lot of protests here. You know, we don't hear about it, I feel like. Do you guys even know about the protests that are going on here against the government? Yeah, there's major protests against the ruling party here, and they're right outside of this hotel, so.
+
+Pabllos (00:39.744)
+in Belgrade.
+
+Pabllos (00:49.026)
+What economic interests do we have in Belgrade?
+
+Brian Morrissey (00:52.285)
+Do we have? Well, it depends on who the we is. Donald Trump and Jared Kushner are
+
+Pabllos (00:59.384)
+or they want to build condos.
+
+Brian Morrissey (01:01.499)
+Yeah, they're building actually the defense ministry that NATO bombed back whatever in the 90s. That is, they left it up as like a memorial to NATO aggression and they're finally gonna redevelop it, which by the way is a cool monument. They're gonna redevelop it. Kushner is gonna redevelop it. Go figure. Yeah, I don't think it's gonna, actually I think it is gonna be, I don't know if it's gonna be Trump-branded.
+
+T-roy (01:24.362)
+as a Trump property?
+
+Brian Morrissey (01:32.051)
+probably. Vucic tried to get, I don't know, it's a very complicated place. He actually went to Washington and was trying to get a meeting. He just traveled there, but they didn't let him in. The White House.
+
+T-roy (01:42.945)
+I know guys that do that. That's like when you have to do a meeting in like Miami and you just show up and you're like, I'm in town. You want to grab a coffee? Yeah, he does that. Maybe Pablo's is the anonymous banker who will do all of the nefarious things to get a deal.
+
+Brian Morrissey (01:50.695)
+That's the AB move. That's the AB move.
+
+Pabllos (01:57.706)
+yeah.
+
+Brian Morrissey (02:00.549)
+I was naive. didn't know that people did that, like, in real life. I'm the naive one, Pabloz. That's my role to play in this.
+
+Pabllos (02:06.926)
+None of us banking?
+
+T-roy (02:08.286)
+Well, a little background.
+
+T-roy (02:14.225)
+a little background on, on, on Pablo's. I'll let you introduce yourself, Pablo's. but, I don't know how we met. No, we went to a part. was at a party and some Deutsche Bank banker guy came up and said, yeah. And he said, you got to meet Pablo's. He's the most interesting guy at the party. And yeah, the low bar and, we had a nice chat.
+
+Pabllos (02:28.846)
+anonymous banking party.
+
+Pabllos (02:35.256)
+what was bankers, so not a very high bar.
+
+Brian Morrissey (02:36.957)
+Yeah, low bar, low bar.
+
+T-roy (02:42.401)
+It turns out, you know, have, uh, you know, some interesting stories to tell. And then we went, we had lunch at lure a couple of weeks later, got to know each other a bit. And, know, since then you, uh, I think you launched your book and, uh, and I said, it would be fun to have you on because, uh, because, you know, I don't know where this conversation will go. I think we have a couple of things in our bag of tricks this week, but
+
+Pabllos (02:51.287)
+Yeah.
+
+Pabllos (03:03.937)
+Yeah.
+
+T-roy (03:06.889)
+I'm confused by AI public. So I'm looking for some insight from you. And then I dropped that consciousness article in the thread and you say it's a bunch of crap. And so, you know, I think we can have a good conversation, but why don't you.
+
+Brian Morrissey (03:21.041)
+That's the Mustafa Suleiman article, right? Okay. Yeah, I wanna get into this to get your... First of all...
+
+T-roy (03:24.927)
+That was the one, yeah.
+
+T-roy (03:30.017)
+But we need to host, we need to incur.
+
+Pabllos (03:31.32)
+Like I couldn't bring myself to read it. you know, there's going to be a limit to how this conversation can go.
+
+Brian Morrissey (03:36.327)
+Well, I should do the whole welcome to People vs. Algorithms. This is a summer edition. We are joined by Pablo Holman. Pablo is a technologist. You're an investor. You're a hacker, from what I read. We just met. And I read about the lasers and the mosquitoes. And I thought it would be really good.
+
+also joined by Troy Young, Alex is not here, he had a hard stop. And to really get into what's going on with AI with someone who understands it better than me at least, I don't wanna speak for Troy. Because I feel like we're at some kind of a tipping point right now. Okay, Pablo, do you wanna give us your CV?
+
+T-roy (04:19.115)
+But who is this guy? Why don't we let him introduce him?
+
+Pabllos (04:24.12)
+Sure. yeah, I'm a computer hacker who defected to working on hacking everything but computers a long time ago. So help start Blue Origin, which is a spaceship company. And then I started a lab with Nathan Mirvold called intellectual ventures. Bill Gates was there, backed a lot of our projects and then stuff with us as well. And we got 6,000 patents on our own inventions. And so that's all over the map.
+
+every kind of thing, the thing we're most famous for is a machine that can find mosquitoes and shoot them down with lasers. But we also invented a nuclear reactor that's powered by nuclear waste and a machine to suppress hurricanes and all kinds of other wild stuff. And now I run a venture fund investing in other mad scientists who've invented, you know, what we call deep tech breakthroughs. And, it's a lot of them and
+
+all kinds of wild stuff and we can talk about that if you want but the You know all along the way we've been using computers to advance all these technologies and we've been using AI of You know every generation to to try and go after big problems and so I have a little bit of experience we can talk about with that stuff, too
+
+T-roy (05:41.119)
+And we have a lot of listeners also.
+
+Brian Morrissey (05:41.235)
+Okay, so this serious tech stuff, not the Web 2.0 stuff, right? Is that what you're saying?
+
+Pabllos (05:45.102)
+You know, I think the sassholes kind of swept the market for the last 20 years.
+
+Brian Morrissey (05:50.397)
+Sass? Well, I wanted to talk about B2B Sass.
+
+T-roy (05:52.13)
+Well, but I want to talk about something more superficial just before we wrap up the interview, because your signature move is the glasses, know, so much so that we've become part of a long time ago, like 20 years ago.
+
+Pabllos (05:55.778)
+Yeah, start with that.
+
+Pabllos (06:01.708)
+Well, I just need glasses and I found good ones. But yeah, I've yeah, I've been wearing the same ones for like 20 years because they're the best glasses ever made and you can't break them. I titanium. Yeah, but they're yeah. And so since I've been wearing them so long, people think that they're just part of me. And so they ended up on the cover of the book. So that's my
+
+T-roy (06:13.493)
+And they're made out of like titanium, okay.
+
+Brian Morrissey (06:29.361)
+Good, it's a brand new thing. That's good.
+
+Pabllos (06:30.734)
+I didn't know what branding was when I started wearing these glasses, but I've been told so.
+
+T-roy (06:30.933)
+Yeah, it's running little details now.
+
+Brian Morrissey (06:35.911)
+You know, it's funny, because I was in Italy just until this morning, there's a lot of guys who wear those bright red glasses and whatnot. Usually they're bald. And I asked my wife, was like, know, maybe I could become like a bright red glasses guy. And she said no.
+
+Pabllos (06:45.334)
+Okay.
+
+Pabllos (06:49.006)
+You didn't get any for Troy?
+
+T-roy (06:53.407)
+You're talking about like those those gas station glasses? The mirrored one?
+
+Pabllos (06:53.418)
+Yeah, how to wait.
+
+Brian Morrissey (06:57.477)
+No, know, like Seth Godin has them. It's a look. So let's get into the AI stuff, I think Troy, you had shared that Mustafa Suleyman article, and Charlie Warzell had a piece about AI as a mass delusion event. And I do think that right now amongst the normal people, I guess, and that's in quotes, right, that
+
+Pabllos (06:59.726)
+They're just bright. Yeah, there you go.
+
+T-roy (07:02.281)
+Okay.
+
+Pabllos (07:05.72)
+to look.
+
+Brian Morrissey (07:26.459)
+we're getting to a point where people are starting to question where we are going with this. I think GPT-5's release in some ways was a tipping point because the model felt like, you know, I'm a believer in vibes and narratives, right, Pablo? So I'm not a technologist or a futurist. And I think that we're starting to see a couple of lanes develop. One is that this is really overhyped and that GPT-5 was hyperventilated about
+
+by Altman who is a master marketer and it's becoming very apparent to everyone that this guy is a master marketer. And when it was released, it seemed like, okay, fine. And in the background, to normal people, you have a lot of tech people talking about these obscure things about how it could win some math competition or model weights and all this stuff that nobody understands, right? And then they use this stuff and it's wrong. It can't summarize a spreadsheet well.
+
+Pabllos (08:19.084)
+Yeah. Yeah.
+
+Brian Morrissey (08:24.643)
+know, fine, maybe. Well, OK, well, I. Fine, but I find errors in using it on everyday basis, and also people are just using it for some very basic things. but then you if you listen to like tech podcasts, they're talking about like putting like data centers like in in space and like covering all of Spain with solar panels. And there just seems to be this kind of disconnect on one end.
+
+T-roy (08:24.747)
+Well, that's not entirely true. mean, there are plenty of fruitful use cases.
+
+Brian Morrissey (08:54.491)
+And on the other hand, you have the typical thing of there's a lot of these second order effects and like AI psychosis is gonna be a thing. We're gonna read all about it. Every single case that is gonna come out, we're gonna read about it. It's gonna be a moral panic, no doubt. And I think what Charlie did was what's known in journalism as the conceptual scoop was he brought it all together and was like, this is a mass delusion event, right? Which is, you he does that a lot. But.
+
+I would love to get you to unpack where we are right now because I
+
+T-roy (09:25.865)
+The dead kid influencer was, a tragic part of that story.
+
+Brian Morrissey (09:29.937)
+Wiggy was a great hook. mean, as a narrative device, it's a great hook. Jim Acosta, basically Charlie Warzell wrote in the Atlantic and he used the case of this ex-CNN. He used to like fight with Trump and then he got canned. And he did this interview with an AI virtual version of one of the Parkland shooting victims. And so.
+
+Pabllos (09:32.696)
+So what's the, sorry, what's the story?
+
+Pabllos (09:56.942)
+yeah, right.
+
+Brian Morrissey (09:57.841)
+with the family, I guess the family wanted, and the family is, at least in the interview, was talking about turning the deceased child basically into, I guess, an AI influencer of some kind.
+
+Pabllos (10:09.422)
+Okay. So look, I mean, there's a million things we could talk about. You touched on a few of them. You know, I think the first thing people need to do is understand that AIs are not omniscient. They're not omnipotent with the current technologies we have. They never will be. And so there's a real mismatch between what people are expecting from them.
+
+and trying to use them for and what they're actually going to be good at. And so that's got to get sorted out over time. We have this problem in other contexts as well, right? You could you know, you can you can do the wrong thing with somebody. I mean, a great example is if you hire somebody and give them the put them on a job and they fuck it up. That's like happens every every day all over the world. We see that all the time and you have to learn to deal with it.
+
+That's kind of what's going on here is we're giving these things the wrong, giving them a task that they're not really built for. Now it doesn't help that some of the folks building them are being disingenuous about what they're good for and sort of overstating what they're good for. While also using very hedgy language to give themselves an out when things fail. But I think this is just a process that we have to go through and you got to learn.
+
+what you can count on the thing for. you make, you know, if you hire somebody or start working with somebody, you have to sort of feel them out and figure out what they're good for and figure out what they suck at. over time, well, so an LLM, which is the thing that, you know, everybody's wound up about right now, is kind of the first AI that speaks English, you know, before LLMs, had to have a PhD to understand an AI, but this one speaks English. so
+
+T-roy (11:44.821)
+What are they good for, Bob? What are they great at?
+
+Pabllos (12:02.196)
+everybody can interact with it. you know, any old muggle can use it instead of just the wizards. So now we're at a point where you've got to, you know, those people have to learn that means all of us have to sort of learn what is it good for? Well, an LLM as has you've been beaten over the head by about this a lot of times is just trained on all the stuff humans have ever written. So, and a whole bunch of other stuff that was written by computers, meaning, you know, code and spreadsheets and stuff.
+
+Now we have, this kind of stuff going into it. And so the thing is, you know, for a lot of things, the right answer does not come from, or the best answer does not come from consensus. It doesn't come from averaging, right? If you ask the internet who the smartest person in the world is right now, ask an LLM, you're probably going to get a Kardashian as the result, right? Because
+
+This is an average kind of thing where, that's what, when we talk about model weights, that's what we're talking about. We're just counting how many times does, you know, do people, get excited about or say something positive about a person? the person who's probably had the most positive things said about them is probably a Kardashian. don't actually know which one, but we could ask chachi PT because it just counts. It counts every time somebody says something nice about a Kardashian. Well,
+
+it you know, lot less people have said nice things about you and me. We might be nicer than Kardashians or better than Kardashians is something I don't know for sure. But you know, that's the kind of thing that's going on. And so you got to extrapolate that over everything. And so I think that people are just sort of misunderstanding these things are not wisdom engines. They don't understand what the best thing to do is under a circumstance. They know what the probably the most likely word to
+
+keep put next is that's what tokens means and they do that, but they're not great at everything. So as a counter example, let me give you some counter examples. So for example, we built these computational models, which again, what you would call an AI for infectious disease. And we started doing this maybe 15 years ago, and these are models of
+
+Pabllos (14:28.108)
+Relevant data to the spread of a disease like malaria HIV Tuberculosis. These are diseases that are still wiping out a lot of people not probably in your neighborhood, but definitely south of the equator and So we would collect data on what affects the spread of those diseases. So Climate rainfall travel of humans, you know all the things where the roads are things that can affect You know how the disease spreads and then because you have a model
+
+like that, an AI loaded with that data, it can run simulations. So we call that inference, but simulations are using the model say, what happens if I try this? What happens if I, know, if you're going after malaria, can I put some bed nets here, spray DDT there, set up a laser and shoot mosquitoes and what effect will it have? Cause then the simulation can extrapolate out into the future.
+
+based on all the data it has, everything it knows, how's the disease going to spread? And that can help you that can, that does help us figure out how can we attack and intervene in those diseases. And so, we built a team to do this. They've been advising 75 different countries on how to optimize their resources and deployment of those resources to stop diseases. You can see very clearly in the first Ebola outbreak.
+
+12,000 lives were lost. And then a couple of years later, the second Ebola outbreak, only 12 lives were lost. And that's in part because using AIs, we're able to see our possible futures, choose the one that's gonna work the best for what we're trying to do, in this case, stop Ebola and go after it. And that's what would have been possible with COVID. You see what I mean? These AIs,
+
+Brian Morrissey (16:23.549)
+Yeah, that sounds amazing.
+
+Pabllos (16:25.928)
+are it is amazing. This is important. This is what AI is for. It's for helping us. Totally different, right? Because this is real. This is real. You would love it. People don't know about this because these aren't AIs that speak English. You can't chat with them, but this is what they're doing. so, you know, people have this sort of very skewed notion of what we mean by AI. AI is these, if you close your, you are, you're a guy who loves stories.
+
+Brian Morrissey (16:29.203)
+But it sounds different than the comic book fantasies that I hear about all the time. I love this. Yeah.
+
+Pabllos (16:56.042)
+you probably have a, you do have a model that you've trained in your head and it's trained on everything you've ever seen, everything you've ever read, every conversation you've ever had. If you close your eyes and think about, okay, imagine laying in bed with the lights off. Which way is the door out your bedroom? If you open that door, what do you see? Which way do you turn to go to the bathroom?
+
+Like you have trained a model. You have that answer. I've never, I don't know where your bathroom is. I have that model for my yeah. And Troy has it too. Everybody has that. Yeah. So you've trained a model and then in the moment when it's time to go to the bathroom, that's inference. You just don't think about it. You get up out of bed and go to bathroom. So that's what's going on is humans are training a model in our mind. We're really good at it.
+
+Brian Morrissey (17:32.627)
+It's a small hotel room.
+
+Pabllos (17:51.574)
+Mine is different than yours. Everybody has trained a different model and all of these models are out there floating around in the world competing with each other for access to food and chicks. So then what happens is in a computer, we've gotten to the point now where we can train it. We can train models in that computer of our world. Now, LM is trained on our world of language and increasingly world of, you know, cat images, but
+
+What we can do is train those models to understand more important things about our world. So for example, Google maps is an AI you've been using for 15 years, right? We don't call it an AI, but it's got a model of all the roads. It's got data on all the traffic. If you're driving to work, you know how to get to work, but you still ask Google maps because it knows more than you.
+
+It can give you a better route to work because it knows what the traffic is. It knows where construction is. It can route you around those things. It can guesstimate the timing. You can't do that the same way it can. It's better than you for that task. So if you ask it, show me how to get to work. What does it do? Well, it shows you that blue line. Here's the fastest way to work. But then it shows you a couple of gray lines, right? Here's, you know, if you want to stop at Starbucks or
+
+Brian Morrissey (19:13.747)
+Yeah.
+
+Pabllos (19:13.806)
+go get some gas or whatever, shows you your, these are your possible futures and you can choose. And that's the thing people need to take responsibility for. Still up to you to choose which of those futures do you want, but the computer can tell you what your actual possible best futures are based on a lot more data than you can handle. So what happened is we just got off the rails, right? So people are, it's like asking chat GPT to drive you to work.
+
+Brian Morrissey (19:31.048)
+Yeah.
+
+T-roy (19:34.901)
+So what happened,
+
+Pabllos (19:43.022)
+It doesn't fucking know how to get to work. Uber drivers don't know because they can't know as well as their map can tell them, right?
+
+Brian Morrissey (19:43.283)
+It's like the Uber drivers don't know where anything is anymore. They just follow the lines. They don't know.
+
+Brian Morrissey (19:52.019)
+Yeah, but sometimes it's like common sense. Like they don't know. You know, it's like...
+
+T-roy (19:55.201)
+They don't have the knowledge.
+
+Pabllos (19:56.302)
+Well, you would second guess your own common sense. I do that when I'm driving, right? I'm literally looking at a...
+
+Brian Morrissey (20:05.511)
+Yeah, there's nothing more frustrating than where you're like, know where this is and I'm actually getting lost because I'm following some other... Anyway.
+
+Pabllos (20:12.248)
+Yeah, yeah, or you're getting there faster because you're following the map.
+
+T-roy (20:17.451)
+So Pablo, we made this thing into our therapist. We made this thing into our teacher. We are trying to make it into our friend and characters that provide companionship. We are doing all kinds of unholy things with your little model generator.
+
+Pabllos (20:23.896)
+probably prematurely.
+
+possibly prematurely.
+
+Pabllos (20:44.502)
+Yeah, I think it's probably premature in most students.
+
+Brian Morrissey (20:45.105)
+Yeah, I like the malaria stuff. I like the Ebola, you know, surveillance. I like that in the mapping. It's this other stuff.
+
+T-roy (20:52.129)
+But, more importantly, Pablo, you're like a financial guy now. Okay. So we, we have the global economy teetering on the economic potential of all of this compute and all of this technology, right? Like, and, and on, what, Charlie said in that article is basically, yeah, it's okay. It's good for some things. It's fine. But like,
+
+the way we're, and we classically do this. We do it in America more than anyone. The pendulum swings so far in America. It's the defining characteristic of America to me. But it now has become, it just, you know, obviously for people that live through the dot com implosion of the early aughts and late nineties, it feels really reminiscent. And I'm wondering like, where does it go? What if it's not as good as we think it is?
+
+Is it just a question of time? There's lots of speculation as to the sort of effective ROI for this thing that you just described inside of corporations. Don't know. And the social side of it is obviously incredibly unpredictable. where do you think, what happens next?
+
+Pabllos (22:13.602)
+Well, I think what you're, you know, what you're expressing is just a kind of, totally reasonable, you know, frustration and confusion. Everybody wants to know where it's going to land. We don't know where it's going to land. but I can tell you it's going to be, you know, it's going to be some of both. It's both going to be extraordinarily better than anyone imagines for some things.
+
+And it's going to be extraordinarily shittier than people are imagining for other things. So you get both. But right now we're at this point where, you know, the, the potential has been proven. You could say, now I think people are misunderstanding that it's not just about chatting, but the potential is there to get better answers with more computation. Right? So even though people are annoyed at hallucinations and stuff, the truth is
+
+the AIs as we know them today are showing that with a massive amount of computation, it can do a much better job of answering the question of what word comes next, right? That's the job of the LLM. And it is doing that at a way better rate than has ever been possible before with all of our other old shitty computers with crummy algorithms and terrible tricks and not enough data. So now what we need to do is aim that it's saying, okay, how do we make the right kind of model?
+
+So right kind of AI for helping us get a better answer. Now Google maps is giving you a better answer. A Tesla is giving you a better answer. Like it can drive the car. Jachi BT is the wrong kind of model to drive the car. But so please don't ask it to try, but Tesla or Waymo has a model that can do that is trained to do that. So if you want a teacher or a therapist or an accountant or a lawyer, any of those things,
+
+We can train a model to do a good job of that. Now we have the fundamental technology to do that. Now, LLM might not be, uh, uh, might be a helpful part of it, but as not what you need, like there's no logic in it, right? There's a averaging voting engine. That's what's going on. You can see what all the people who came before you would have voted for. They would have voted for some pretty dumb shit that you don't want. So I don't think that you can count on.
+
+Pabllos (24:38.604)
+the current models to give you good advice. They can give you average device. if you don't have something better, that can be pretty good start. But I think where it's going to go is we're going to fine tune these things. You're going to end up with a zillion products. One of them is going to be the winner at Therapist. One of them is going to be the winner at Doctor and Lawyer and all the other things that you want them to do. And it will be really good. But I think it's
+
+really a life cycle that we're in and we're at a developmental stage that is, you know, not even in preschool yet.
+
+Brian Morrissey (25:18.033)
+Right. So what do you think? mean, I think what you bring up an interesting point about, because I think that's Mustafa Suleiman.
+
+was about this seemingly conscious AI. And I think one of the issues, and maybe this is a design question, in that the way these things have been...
+
+Pabllos (25:37.568)
+It's a semantic art. It's just a lot of bullshit with nerds pretending to be philosophers because we don't have a definition for consciousness. So this is an idiotic conversation to have for Mustafa or anyone else. It just, I mean, go define consciousness and then we'll come back to this. I mean, it's just an idiotic thing to do.
+
+T-roy (25:49.633)
+.
+
+Brian Morrissey (25:52.403)
+But I think it arises, right, right, but I think it arises from the way these things have been released to everyone, right? Like in that it's been introduced as anthropomorphically. it, and I think it's, right, so and I think that's why it imitates, like it's an, like,
+
+Pabllos (26:10.476)
+Yeah, that's the word you should use, not consciousness.
+
+Brian Morrissey (26:18.021)
+On one level, I'm like, okay, why do I get mad at a toaster? I'm like, why am I getting mad at this thing that won't do things that I want it to do? But I find myself slipping into that. And I think the moral panic that's coming about AI psychosis really was inevitable from the design of these systems to make them appear like they're conscious.
+
+Pabllos (26:41.934)
+Well, it's not that so much, I mean, look, you want, we're evolved to know how to operate humans. We've all, you know, all of our ancestors interacted with a lot of humans. That's why we created language and you know, gestures and all this stuff. You know, we have a system for, we know how to communicate with a human. We compromise ourselves to communicate with machines.
+
+in our entire history, you know, you have to sit down and deliberately learn how to operate a stick shift, you know, when you're a kid, we did anyway, I don't know about, but not anymore. think the last stick shift has gone out of production. So the point is, but even there, we tried to converge on how do we make the machines operate more like humans? That's why we got the
+
+Brian Morrissey (27:22.803)
+You can still find them around Europe every year.
+
+Pabllos (27:33.664)
+automatic transmission. That was the whole breakthrough with desktop metaphor and your mouse is that you're born with the ability to point at shit you want. So a mouse controls a pointer and you just point at shit you want on your computer. You're still doing that on your Mac, you know, on your phone, you just point at the stuff you want because that's what humans have. And so we've been wanting to make our computers better and better at operating like the people and understanding people. And that's what's going on. And
+
+Now that the computer can speak your language and understand your language, you can interact with it the way you would interact with a human. That does not mean it's a human. Not all humans are the same. And we understand that. You know, we learn that we talk to kids differently. We expect something different from our lawyer than our frat buddies. You you have a kind of ability to you. You do. You build a mental model of what is that human good for?
+
+T-roy (28:10.111)
+Hmm.
+
+Pabllos (28:32.684)
+Right. And so we need to start doing that with our AIs. You know, you don't go to Microsoft Word and ask it to do your taxes. You might go to Excel and ask it to help with taxes, but you've learned what are these different things good for. And so right now people don't have a sense of the bounds of chat, GPT or of an AI because it's not clear. Like, you know, Excel just gives you a box this big and you know what you can do in it. So I think the problem right now is people are just going a little nuts.
+
+you know, projecting onto these things that what they know and understand from dealing with humans. And because the thing is not putting any bounds on that, and it's not expressing constraints, you know, people are imagining a lot more than what's happening.
+
+T-roy (29:22.911)
+Pablo, you,
+
+Pabllos (29:24.95)
+Obviously haven't had breakfast yet.
+
+T-roy (29:27.937)
+You write a lot about how the disruptive patterns in Silicon Valley that really reshaped software, software inside of corporations, SaaS, ultimately media, our social connections, all the things that we've seen for the last 20 years that...
+
+So much of that technology and thinking and approach to reinvention has not hit other industries. And that it's coming quickly. And so you tell a bunch of stories about that in your book, right? Like how we're going to see, you know, next generation kind of waves of disruption hit stuff that has traditionally been really kind of, I don't know, conservative or slow to change.
+
+Pabllos (30:20.098)
+Yeah. Yeah.
+
+T-roy (30:21.313)
+Can you tell me, like, what should we be thinking about in terms of where, you know, technology innovation is going to kind of rear its head next and why does it matter?
+
+Pabllos (30:36.514)
+Well, the cons, so if you look at our say the last 20 or 30 years, know, computers kind of got to a point in the, you know, mid to late nineties where they were useful, you could say. and so they went into every industry, every business and that in the nineties. And then with the internet, they started to get a lot more useful. So, they started to go not only
+
+businesses, but also people's homes more and more, eventually onto people's laps and into their pockets and pretty soon under their glasses. the, know, along the way, what happened is as the computer got, you know, more powerful and lower cost and all those things, you know, it just was generally applicable and you could put it everywhere. So we went, we've lived through that era.
+
+But there, and, and, and what happened in the last 20 years with, especially with SAS, what we think of as kind of a SAS epoch here is we were able to go make software companies, you know, startups really that could replace entire industries. And you've seen that in every industry that is basically a, you know, a data or information business because
+
+Computers just smoke it at information. They love it. so you could make software that could go and disrupt insurance and, you know, billing and, you know, you know, zoom and Slack and even taxis, which turned out to be mostly an information thing. It's like, you know, the information about like who needs a ride and where are they is basically what that business is about, you know, picking them up and driving them is just a small part of it.
+
+T-roy (32:17.045)
+Taxis.
+
+Pabllos (32:31.67)
+It's really about the information. you know, so it was, these were sitting duck industries, most of them, because the incumbents, you know, like the, any taxi company in the world could have made an iPhone app. None of them did. And that's a really great way to think about every other industry, every other business, are they, are they, have their eye on the technology that's coming? Are they trying to bring it to market or are they going down kicking and screaming?
+
+It's always the latter. So that opportunity is created for someone who's got the new technology in their hands, that force multiplier that makes them 10 X better, a hundred X better, thousand X better. Somebody who's wielding that can disrupt the industry. And that's what you saw with Uber wiping out the taxi industry. That's what Facebook did to media. And you guys have no more about that than even
+
+And that's what Airbnb has done to hospitality. That's what's going on is we're replacing industries with startups. So that playbook is worked out, proven, highly developed in Silicon Valley, but they haven't been able to go past those, just the information-based businesses. What does that mean? Well, think about the stuff every human on earth relies on. That's energy, water, waste, food, sanitation, construction.
+
+manufacturing, every single person on earth as a customer for those things. Silicon Valley hasn't touched any of them. So that's the frontier. And that's what's about to change is that the same playbook that we've been using to go after these information industries now going to start being used in all of these hundred, 200 year old industries. And those are trillion dollar industries. They're massive.
+
+And so you know, like I, one time I added up all the, uh, the revenues of all the software companies in the world. And if you do that today, including Microsoft and Facebook and Salesforce and all of them combined, it's about $2 trillion a year in revenue. Global GDP is over a hundred trillion dollars a year.
+
+T-roy (34:30.719)
+So give us an example of one that might.
+
+Pabllos (34:57.516)
+So our giant tech industry that we're also wound up about reading about in the news every day is 2 % of what humans rely on that other 98%. That's industrials. You know, that's, the things I just mentioned, and we're about to go disrupt all those because now we can bring, cause now we can bring our technologies to create 10 X multipliers and those things. So I'll give you a simple.
+
+T-roy (35:24.863)
+Right. So is this like the ship that can sail with a... Okay.
+
+Pabllos (35:27.898)
+That's a great one. So we have a company making cargo ships that can sail themselves. So what that means is no crew because it's autonomous. You duct tape a Tesla to the front of this thing and it can drive itself across the ocean. So that's not even very hard at this point. It's easier than self-driving cars because there's nothing to hit out there like one documented pedestrian ever. so sailing.
+
+That's been working for centuries. It's wind power. So you don't need fuel. There's no emissions. Why wouldn't you do that? There's nothing not to like, right? I don't think the shipping industry is going to get around to it. So we'll do that. That's what Silicon Valley will do that tech. The tech industry will do that. We'll build the first chip. We'll deliver some cargo containers full of happy meal toys from China to Los Angeles. And after that, it's not tech anymore. But guess what?
+
+Shipping is a two trillion dollar industry. It's as big as software and Half of those ships on the ocean right now half of all ships on the ocean are moving gas That's what they're doing. They're moving fuel around. That's all they're half of and if you go look it's crazy It's a marine traffic website. You can see Half of them are just moving fuel around and so we don't even need fuel for our ships
+
+Brian Morrissey (36:57.667)
+So this is basically moving from like bits to carbon, right? I mean, it's the information tech to hard tech.
+
+Pabllos (37:01.174)
+Yeah, but that's AI. But it's still AI, right? It's what we call AI, because now it's an AI that can drive a ship. It's an AI that control the sales. You know, it's just computers doing this stuff that before, we couldn't have they weren't wouldn't be good enough to do that. Now they can do that. There's very little left that they couldn't do in that sense. And then, you know, we want to take these AIs, of course, and embody them in, you know, now they can speak English and listen to English, let's put them in a
+
+you know, English shaped body and let them because we built our world for humans. And so why not put put the computer in the shape of a human so it can navigate our world and help us out in more ways. That's really where people want to go with this.
+
+Brian Morrissey (37:44.657)
+Yeah, I think it's really interesting in that like, before all you know AI AI AI became all the talk that you know, we were talking about climate change all the time and decarbonization right and a lot of You know and we didn't have all the talk about net zero We don't we don't have the technology to get there, right? But our leading technology companies were also just simply not focused on I mean, this is energy what we're talking about then all of a sudden They're like, wait a second. We need a ton of energy now. And so I'm like hopeful
+
+that a weird spillover effect of all of this is that we're getting the motivation, the capital to actually make a major change to an issue that we really hadn't made as much progress as we should have.
+
+Pabllos (38:28.556)
+Yes, you got exactly right. It's the hyperscalers that are going to save us from climate change. And the reason is, you know, we, we, we just fucked up as a species. You know, we conflated nuclear reactors with nuclear bombs and we outlawed the wrong one. And that was, you know, before we were born, you can, you know, blame, don't know, Bob Dylan for that.
+
+T-roy (38:54.251)
+Boomers.
+
+Brian Morrissey (38:55.377)
+I grew up near Three Mile Island, so I remember.
+
+Pabllos (38:58.732)
+Well, yeah, but you survived, didn't you? Just like everybody else.
+
+Brian Morrissey (39:00.691)
+No, I was, I don't know. Yeah, I guess I was alive during it. Yeah, I know. I know. That was that was a own goal.
+
+Pabllos (39:08.192)
+And so, yeah, so we haven't been honest with ourselves about that. We got on the wrong course in history. If we had done it the other way around, you never would have heard of global warming. But we are, as you said, you we're like these story powered creatures, you know? And once we get the story in our head, it can take generations to recover. But yeah, fortunately, my daughter thinks Chernobyl is a TV show for old people. So.
+
+So there's no, you so we lit, had to wait it out for 50 years. We've done that, but now we're going to build these nuclear reactors. The hyperscalers are demanding them and they control Congress in a way that, you know, the oil industry used to control Congress. So it's going to happen. We're working on that right now. And it's amazing because we were putting the cart before the horse, you know, we're getting wound up about climate change and trying to find out.
+
+way to stop it without being honest with ourselves that this is fundamentally not going to improve unless we solve energy and we didn't finish that job.
+
+Brian Morrissey (40:14.205)
+Yeah. So yeah, I never really thought about, mean, I am like with the energy industry, right? So now I think everyone all of a sudden is like, you know, thinking about energy and never thought about it before, right? Because for all of this AI, well, yeah, but like all of this AI to be, you know, to, actually come to fruition, it's going to be massive amounts of energy and massive amounts of compute, right? And the, the, the amount of energy needed
+
+Pabllos (40:27.938)
+Well, that's American.
+
+Brian Morrissey (40:44.091)
+at least from everything that I read and all the podcasts, it's just unbelievable. As Troy said, you're also an investor. The outcomes have to be massive. I think that is the struggle is trying to see the outcomes that would justify all of this massive amounts of investment going in to create the energy and then also the-
+
+Pabllos (41:11.074)
+You know, if you average the amount of energy that a person on earth gets, it's equivalent to about one toaster. So superglue the button down, run it 24 seven. That's how much the average earthling gets. Americans, because we are so smart and good looking, get eight bonus toasters. So we get nine times as much energy as the average person on earth.
+
+And to get those averages, 3 billion people have to live on less than one toaster. So we already have a problem in this world, which is we need a lot more energy than we made. We made 8 billion people and we did not produce the energy for them to have an acceptable living standard. know, maybe Americans are overdoing it. Europeans are, you know, used to be five or six toasters. Now they're at four or five toasters. But they are, you know,
+
+that you could call that an acceptable living standard. We need to 10 X global energy production, not even counting AI. That is where we're at. Now that sounds crazy. And unfortunately, I'm the only one saying that everybody else is like, grow a few percent a year. No, we need a 10 X global energy production. And it sounds crazy, but we have done it before. We've 10 X global energy production in the last century. Now we did it by
+
+digging everything up out of the ground and burning it. Hopefully we learned our lesson and we're not gonna do that again. We need to 10x global energy production. We need it to be clean. We need it to be cheap. And we know how to do it. And we've known how to do it for 60 years. We need to build nuclear reactors to do it. And we couldn't do it. We outlawed the nuclear reactors. We weren't allowed to build them. My lab, we invented...
+
+one the most modern nuclear reactor 18 years ago, we're still not allowed to build it. So the cool thing is in the last year, the US has totally flipped. The DOE is pushing us we have a nuclear reactor we're working on. You bury it a mile deep in a borehole. It's unquestionably safe. There's there's 10 billion tons of rock between the reactor and anyone's backyard, which by the way,
+
+Pabllos (43:33.614)
+is like it's a mile from anyone's backyard. So there's nothing no radioactivity can get to the surface. It's super cheap. It's super practical. We were on a track to get the first one built by 2029. The US Department of Energy is pushing us to get it done by next July. And they've approved us this week to do it.
+
+T-roy (43:54.977)
+Have you got a sign up list? I'd like one of those.
+
+Pabllos (43:59.246)
+Exactly. Everybody wants them and we're then they're going to get them. We're going to build them in a gigafactory like Toyota's and just put them everywhere. That's what's possible. And that will change the world. So we're to do it first for hyperscalers. Like everything else, we're going to subsidize this by using rich people. And right now the richest people are hyperscalers with data centers for AI, but that's going to get the cost of these things down. We'll put them all over the world. So
+
+T-roy (44:13.067)
+Can they be turned into something more nefarious?
+
+Pabllos (44:28.824)
+That's what I'm, that's the future I'm building.
+
+T-roy (44:30.399)
+You take one and do something bad with it.
+
+Pabllos (44:33.762)
+I mean, you could, what could you do? I mean, it's, it's a mile underground. I don't know how you're going to get to it. Right? what, what? Give me a scenario, I guess. I mean, somebody will think of something.
+
+Brian Morrissey (44:46.899)
+you're gonna be like enriching.
+
+T-roy (44:50.017)
+Okay, okay. let's, want to, Brian, I'd like to move to media because I think there's an, there is an elegant off ramp here. But before we do it, I'm, I would ask, I would love to know, Carlos, what technology you're most excited about and most fearful of. It could be industry specific. It could be a point solution. It could be whatever.
+
+Brian Morrissey (44:57.458)
+Okay.
+
+Pabllos (45:09.731)
+Yeah.
+
+You know, I don't, I think just the notion of being fearful of technology is the wrong kind of relationship to have with it. Right now I'm fearful of idiots. That's, that's what scares me. I'm not fearful. Yeah. I'm fearful of idiots. I'm not fearful of technologies. These are tools for us to use. A hammer is a tool I can use to smash your head or build you a home.
+
+T-roy (45:29.505)
+You came on the wrong podcast, Pablo.
+
+Pabllos (45:40.586)
+And probably the first hundred years, all we did was smash heads. And eventually we learned, we should probably just use them for building homes. And now we do a lot more of that. So over time, humans develop a more mature relationship with technologies. You know, we kind of got fire under control. That shit's really scary, but you know, we figured out a mature relationship with it. And so we're, it's very important to think of these things as tools and
+
+T-roy (46:05.961)
+Okay. So give me a specific example of something that you think is really cool that the, you know, that people could, could, could look forward to.
+
+Pabllos (46:12.812)
+Well, I think the nuclear reactors are the best. have other things coming. know, solar panels were kind of a miraculous invention, and we've done a great job of figuring out how to produce them at scale and get the cost down. But the relentless onslaught of night keeps fucking with our solar panels. So we have a company that's figured out they can just take the solar farm, load it up into a rocket, launch it into space, and the solar farm in space will get
+
+Eight times as much energy. looks like nighttime in space just because we have a bad angle on it. It's actually noon in space all the time. So a solar panel in space will get sun 24 seven and then you can beam that energy down to earth using radio waves that go right through clouds. So this is a way to make a solar panel into a baseload energy. So if you don't like the nuclear reactors, whatever fine, we'll put solar farms in space and we can beam that energy to any city on earth in the middle of Africa or.
+
+you know, Antarctica, if you want. And so that's what's coming. And so, and I think.
+
+T-roy (47:16.289)
+A friend of mine and I, Pablo had a concept for a space coffin that we would shoot grandpa into space. It's a great concept. It comes with an app. You shoot grandpa into space and it's low cost cryogenic freezing of the body such that when we figure out what to do with a frozen body, we can resuscitate it. Moreover, on your app notifies you when grandma grandpa's overhead.
+
+Pabllos (47:21.282)
+Face coffin, good, yeah, I love it. Somebody.
+
+Brian Morrissey (47:22.867)
+You
+
+Ha.
+
+Pabllos (47:28.206)
+There was actually like a movie that wanted to do that.
+
+Brian Morrissey (47:30.707)
+you
+
+Pabllos (47:43.142)
+I think this wasn't this this plot of idiocracy like everything else in our life. I mean, I don't know. Yeah, something like that.
+
+Brian Morrissey (47:43.633)
+You
+
+Brian Morrissey (47:47.283)
+There you go.
+
+T-roy (47:47.585)
+Oh, is that where that came from? I don't think so. thought, no, it's my idea. Okay. So, um,
+
+Pabllos (47:56.642)
+The most prescient movie of all time. know, I mean, it's, don't feel bad.
+
+T-roy (48:00.482)
+Brian, one thing I was thinking about for Pablo related to media was as he's become this kind of tech prognosticator and venture capitalist, he's been forced to become a media person. So he's worked.
+
+Brian Morrissey (48:02.749)
+Yes.
+
+Brian Morrissey (48:19.613)
+Wait, is that forest? It seems kind of natural. I just met Pablo, but...
+
+T-roy (48:22.249)
+Well, he yeah, he's a good talker, but he seems to be he seems to be doing he's written. He's done all the things right. He's got the podcast. He's written a book. He's got a newsletter. He sends out little missives when he makes an investment. He's doing the he's doing the rounds. He sort of has a model. He's sort of like the Anthony Bourdain of deep tech. And, and so he's, he's, he's endeavoring to become a media personality with his own formats and point of view and all the things.
+
+Pabllos (48:50.926)
+sad fate.
+
+T-roy (48:54.369)
+So we could help them with that maybe, Brennan. That's one place where
+
+Brian Morrissey (48:57.181)
+Well, I'm interested in Pablo, how do you look at all the stuff you're working on? What is the purpose of media to you? Not like media in general, but I mean, in your work and what you want to accomplish, because it's interesting to me that media is still very powerful as a force for people who are working on some pretty massive things.
+
+Pabllos (49:05.431)
+Well,
+
+Yeah. So.
+
+T-roy (49:19.115)
+That's right.
+
+Pabllos (49:20.938)
+It's a force. I think we, one of the things we got wrong in the tech industry early on is, you know, we sort of thought we could just build cool shit and people would get excited about it and use it. And we really undervalued how important it was to get out in front of telling these stories. Right. So again, like nuclear reactors are a good example, just cause we've been talking about story went wrong. You know, and I think that
+
+There was this, there was a moment in the tech industry that was very, very striking and memorable where like one guy at one company started telling the story about the technology right before it came out. And that was Steve jobs. And everybody was like, why is this nerd talking to the media? Like, why is anybody listening to this guy? Why is he on stage doing keynotes? Like it was super weird.
+
+for nerds to do that. Because before that, we just didn't do it. then, you know, with the success of Apple, every nerd tries to do it now. yeah. Yeah. Yeah, and he really was. I think it was that, you know, I was, I grew up with the first Apple II. I had the first computer.
+
+T-roy (50:30.877)
+It's funny. It's a great point of Steve Jobs being this inflection point of nerds doing storytelling.
+
+Pabllos (50:45.696)
+And I, that you could have at home basically. And so my, since I was like a 10 year old kid, I was constantly trying to convince people that like, Hey, this computer thing is going to be cool and useful and nobody believed me. And so I had desperately felt like I had this super power and I wanted to share it with people. And so from, I think from my, you know, from me, yeah, I'm a computer nerd, but I also had this weird side effect of wanting to share.
+
+And, you know, seeing that this computer could make things better for people and wanting to convince them of that. And you can see here I am now 40 years later, I'm still doing that. I'm trying to convince you these technologies are coming. Computers are going to be awesome. And so there's a kind of that streak is in me. And and so what I found is that to do that, I had to be able to explain these things in a way that didn't lose people, make them both interesting and compelling and accessible.
+
+I don't think, you know, all these other assholes talking about AI or talking about transformers and tensors and deep learning and neural networks and all this shit, nobody understands. And so you haven't heard me do that. You know, I'm trying to make people feel like they can understand it because you can. And so I think that with technologies, you know, it's very important to tell the positive practical vision of where this goes.
+
+so that people have something to get excited about. have something to look forward to. They have something to help build and to work on. And since nobody's doing that, most of the stories are all dystopian bullshit. Yeah, yeah. Yeah. What bullshit?
+
+T-roy (52:26.367)
+Yeah, yeah, yeah. But wait a minute, man, because the counterpoint here is that we were fed a bunch of bullshit. While we were fed the idea that Facebook was going to create a kind of global kumbaya.
+
+Brian Morrissey (52:26.717)
+Yeah.
+
+Pabllos (52:39.124)
+And it did. That's not the only thing it did, but it did do that.
+
+T-roy (52:41.942)
+Did it?
+
+What else did it do?
+
+Pabllos (52:46.126)
+I mean, I don't know how much credit you give Facebook, we absolutely got, think about when you were, I don't know, you grew up in Canada somewhere, is that right? Where'd you grow up?
+
+T-roy (52:55.681)
+Yeah, it's up north from here. Yeah, Canada.
+
+Brian Morrissey (52:57.489)
+Regina, Regina, let's be specific.
+
+T-roy (53:00.061)
+Yeah, the prayer race. Saskatchewan.
+
+Pabllos (53:01.624)
+Who knows where that is? Yeah, so how many other kids were...
+
+T-roy (53:05.217)
+It's actually cool to know where your neighbors, you know, capital cities are, know, provincial capitals, but capitals, none of them. Yeah. Yeah, no.
+
+Pabllos (53:10.862)
+We weren't taught that in school. Yeah, propaganda. Yeah, where I grew up, you remember me, I'm like the first I was a computer nerd. In Sultana, Alaska, you probably know where that is. And this is a small town. Nobody for 1000 miles had ever seen a computer. Where's my tribe? Where's my community? I mean, nobody had ever
+
+Brian Morrissey (53:14.29)
+Ha
+
+Pabllos (53:40.0)
+Met a computer nerd before, but they were hip enough to know that they weren't cool where I live. So getting online, I got on a modem when I was like 12. I found my tribe, right? Imagine, whatever, you're some weird teenager. You're into taxidermy or manga or whatever it is that you think is cool. Nobody around you thinks it's cool.
+
+Imagine you're disabled. Imagine that you have, you you're, you got trauma victim of some kind. Like where do you find your tribe? Internet solved that. Everybody can find their community. Now those got polluted with ads and they got polluted with trolls and they got polluted with a lot of other stuff, but we could all find our tribe. And so there's work to do to make those things more functional, but it absolutely has been a boon. It's been a boon for those things. Now we got to get
+
+T-roy (54:19.969)
+Hmm.
+
+Pabllos (54:36.782)
+Again, we're in junior high with this. No. And you're not fucking with me.
+
+T-roy (54:36.873)
+Yeah, I mean, think that equating, you know, you're fucking with us a bit Pablo. like, mean, equating, you know, the invention and global spread and the side effects of social media with the internet and its utility is a little disingenuous.
+
+Pabllos (54:51.278)
+Okay, good. So you want to blame Facebook. But no, no, okay. But people want...
+
+T-roy (54:56.447)
+I'm not blaming anybody. I'm saying that when power is aggregated by very few people that make certain decisions that change society and admittedly positive in a lot of negative ways, right, then it deserves a certain amount of scrutiny. And there have and I think that there's
+
+Brian Morrissey (54:59.495)
+What?
+
+Pabllos (55:08.599)
+Yeah. Yeah.
+
+Pabllos (55:16.19)
+Where do you place the responsibility?
+
+T-roy (55:19.553)
+What do I responsibility for its externalities effectively? I mean, I think it's a system. don't place it, I think that we have to be very careful about the kind of relentless naive optimism of a few people that are feeding us a self-interested view of the world and.
+
+Pabllos (55:22.732)
+Yeah. Yeah.
+
+Pabllos (55:33.902)
+Mm-hmm.
+
+T-roy (55:44.737)
+and are more interested in near term sort of power outcomes than long term, you know, good for society.
+
+Pabllos (55:54.494)
+Absolutely. But you have some volition in this. You could choose not to use Facebook. Now, nobody does that, but you could. You never wrote a check to Facebook, right? They've been giving you free shit for your last 20 years, and you've been gladly taking it and using it. And so I don't think it's right to just blame Facebook. We didn't have to choose Facebook. That's a big walled garden we all ran right into.
+
+But of our own volition, we made that choice. And I think it's got to be up to us to decide, okay, we overdid it on Facebook. We're going to need to back out of that and do something a little cooler. And we totally have that ability. We can go build better things and use them. So I don't think, I think, you know, I think the reason we can't see society improving is because we don't have a society that wants to take responsibility for their own choices. And so I think they're getting what they deserve from Facebook.
+
+Brian Morrissey (56:53.331)
+Well, think that's the big question of this AI future, right? Because this is going to be used for manipulation. It's going to be used for all kinds of bad and good. I hope we get way more of the good, but I think it's going to be up to everyone to be able to resist that. I think what I kind of worry a little bit about like whether, you know, when we're going to hear a lot of these cases and I'm sure
+
+Pabllos (56:53.836)
+I don't use it.
+
+Pabllos (57:04.844)
+Yeah, but you can't manipulate me if I don't use it.
+
+Brian Morrissey (57:21.971)
+It will be waved away by the Marc Andreessen's of the world as, this is just the media trying to deflect away from their lost power, blah, blah, blah, blah. But they're real. And a lot of it is, I think, that these manipulative systems can lead to really bad outcomes. I think that is some of the concern that we're seeing with some of this AI psychosis is that
+
+For some people, they're susceptible to this. there are cases where it's not just people with mental illnesses that are susceptible to falling into these delusional rabbit holes.
+
+Pabllos (58:04.45)
+Yeah. Someone who just had a bad breakup or whatever. Look, I, I don't think that, everything is rosy, right? But I think you have to be honest with yourself about what, you know, what is the life cycle of a new technology? We're in junior high with Facebook still poorly behaved. But like I said, we're in grad school with fire and knives and, and hammer.
+
+You know, so with AI, we're not in preschool yet. So there is a developmental stage that you're at and you have to go through them and you have to build a mature relationship. And like any other drug, you got to learn to get it under control. know, American teenagers overdo it on booze for a bit. And then they figure out how much is too much. And, they build a mostly functional relationship with it. And occasionally some people go way off the deep end.
+
+Brian Morrissey (58:40.029)
+Mm-hmm.
+
+Pabllos (59:02.688)
+And we've decided as a society that like, well, the booze is pretty good. So we're going to let a few people, you know, destroy themselves with it now and then. And same with highways. So you just have to be honest with it yourself and say, okay, how do we minimize the damage? How do we raise kids that can build up an immune system for these things? How do you build a functional relationship with these things? Look, I, I overdid it on Instagram for a couple of weeks when I got on it, you know,
+
+Brian Morrissey (59:29.683)
+Yeah. It is interesting though, regulate those things.
+
+Pabllos (59:30.956)
+Then I learned how much is too much.
+
+Yeah. Well, you know, as an individual, you regulate them. The state is not going to regulate Instagram to make it functional for you. Go to China. That's what you want.
+
+Brian Morrissey (59:39.411)
+The state regulates those things.
+
+Brian Morrissey (59:46.437)
+It regulates alcohol. I don't know if I want it, but the state absolutely regulates things that have negative externalities throughout society.
+
+Pabllos (59:54.038)
+And they haven't done a good job of it. What are they doing with alcohol? What are they doing with highway deaths? I mean, they didn't regulate safety into highways. They tried. They failed. Tesla is doing it right. So I don't think you're I don't think you're really being honest with yourself about like what actually works for making society better. Occasionally, a government does something. Seat belts work. There you go. Big win.
+
+Brian Morrissey (01:00:13.875)
+Seat belts worked.
+
+Eastern Europeans, by the way, often skip the seatbelt. They're still a little skeptical of that technology, I've noticed.
+
+T-roy (01:00:18.305)
+Okay, all right. I love this.
+
+Pabllos (01:00:20.406)
+Seatbelts are a cover story.
+
+Pabllos (01:00:25.368)
+I know.
+
+Yeah, well.
+
+T-roy (01:00:28.541)
+Yeah, I didn't warn Brian that we were bringing on a Randian libertarian.
+
+Pabllos (01:00:33.966)
+Well, it's not just that. It's just that I think, you know, look, there's no right answer. You have to recognize like we're in a war of all the time, like a war of like our species has to advance and survive and improve and get better. There's no like stasis. You can't just kick back and watch Netflix for your whole life and expect things to get better. And I think that
+
+Brian Morrissey (01:00:35.303)
+I love it.
+
+Pabllos (01:01:02.574)
+too many people are trying to do that. in my mind, like, why would you do that when there's so many cool things that we could do to make the world better? We have the best toolkit in human history. Now that we have AI, we can do things we couldn't before. Let's figure out what viewers, I don't even care what future you want, just like go try to build it. And they all of our little futures need to compete with each other. And we'll figure out which is the best one we always do in the long run. So.
+
+T-roy (01:01:29.973)
+That's cool perspective. The, you know, now that we're approaching the one hour mark here, we do like to, we were going to talk about media formats, Brian, but I think that I can wrap my media format into a good product. And I would actually like to hear, you know, your contribution this week. You had one from the streets of Italy or Rome, actually. And I'm sure that...
+
+Brian Morrissey (01:01:42.195)
+Let's do it next week. OK. Good product.
+
+T-roy (01:01:57.058)
+that Pavlos has something he can dig out of his spagetrix. The one that I was thinking about was this, I guess all interesting media is sort of a juxtaposition of a couple of things. you always see it as, I always see it as a sort of Venn diagram. And I think that the Michael Wolfe Instagram, I think Semaphore wrote about it little while ago, but it struck me as being a,
+
+a nice innovation in format where we take this sort of sort of Hampton's house porn and reminiscent of a spread in AD, Architects Digest.
+
+And then we connect that to, you know, his own, the own sort of the ranting in imitable style, calm, admittedly, of Michael Wolff, who, you know, talks at length about the shadowy relationship between Donald Trump and Epstein and, you know, his seemingly well-informed political sort of insider take on what's really going on in Washington. But every single shot is perfectly framed.
+
+perfectly framed in some part of his Amigansit home, right? And his, think his partner's wife, whatever is, they subsequently or in parallel released another Instagram account called our Amigansit home. And she's clearly a good curator of spaces. And so you have this incredible garden and a beautiful quilt next to this exploding.
+
+Brian Morrissey (01:03:39.666)
+wow.
+
+Brian Morrissey (01:03:49.053)
+the house that Trump built.
+
+T-roy (01:03:50.828)
+thing of flowers, flowers and Murano glass chandelier and all white ceramics beautifully curated in a kitchen cabinet. No black hexagons. Anyway, and then you have Michael in the middle of the frame doing the Michael thing and it exploded. It's a great media format.
+
+Pabllos (01:04:04.334)
+Do they have black hexagons too?
+
+Pabllos (01:04:16.78)
+Yeah. Okay.
+
+T-roy (01:04:18.323)
+And it's both comforting and disconcerting at the same time. It's that juxtaposition that makes it a great product. He's obviously authoritative and the backdrop is, you I mean, you search for these things. Like when you're
+
+Pabllos (01:04:25.432)
+Okay.
+
+Brian Morrissey (01:04:31.591)
+He's like talking like Trump-Eppstein conspiracy theories like into like his lovely garden.
+
+Pabllos (01:04:35.96)
+Like, ooh, is that it? Is that from Pottery Barn?
+
+T-roy (01:04:37.609)
+Yeah, and it's lovely garden. And, and you know, what it made me think about is like, you know, lifestyle publications, like an elder core or an ad never had enough juice to make it through the internet gauntlet. Right? Like they were fine as something you perused as a print publication, if you wanted to redecorate your home, but they could never make it into the feed because they weren't that interesting. Right? They couldn't fight in the feed. So you had to find ways to get them to fight in the feed. And this is like the perfect juxtaposition, right? Where, cause it's not.
+
+Pabllos (01:05:00.75)
+Yeah.
+
+T-roy (01:05:07.411)
+just about content and distribution. It's about content that can carry itself, right? Content as distribution. That's really what matters now because distribution has been commoditized.
+
+Pabllos (01:05:07.768)
+Yeah.
+
+Pabllos (01:05:14.476)
+man.
+
+Pabllos (01:05:18.35)
+Well, it's scary because...
+
+I mean, despite my, you know, ranting on your podcast here, I mean, I really, the reason I do it is because I, I care. Like I really want to get these stories out about things, you know, people should know we can make self-sailing cargo ships. Like nobody else is telling you that. So I feel like I have to do it, but I don't know if I can compete in the way that you're describing. I go make, I do my dance moves.
+
+T-roy (01:05:45.653)
+Well, I think we could restyle you as a little less cyberpunk, actually, Pablo's.
+
+Pabllos (01:05:50.368)
+on TikTok and then talk about nuclear reactors.
+
+T-roy (01:05:53.749)
+How do you feel about a nice kind of J.Crew cashmere sweater over your shoulder?
+
+Pabllos (01:05:58.638)
+yeah. I that's my problem is I don't have the I don't think I can cosplay as a as a, you know, Ivy League elitist. Not not belated.
+
+Brian Morrissey (01:06:01.941)
+Yeah, style.
+
+T-roy (01:06:09.651)
+Yeah. Okay. So that's my contribution. Do Paulus, do you have anything that you think has been, that touched your life in a way that's meaningful as a product or product service? Yeah. Maybe it's, I mean, the obvious thing is your glass, but we covered that.
+
+Pabllos (01:06:20.182)
+That's what we're doing here. what are my, yeah. What are my favorite things? You know, I do, I'll give you one. got a, this is, well, maybe this is not even, hold on.
+
+Brian Morrissey (01:06:39.239)
+Is it the chair?
+
+T-roy (01:06:43.425)
+Could be.
+
+Pabllos (01:06:43.926)
+So I do, maybe that maybe you guys know this, but like I, on my podcast, I don't do zoom. don't like zoom. think we're not, we're like, like it sets off neurological triggers that tell you that like the person is not real. You can't trust them. They're totally fake. Whereas there is an evolutionary, modality or, or precedent for talking to someone you can't see because you know,
+
+Brian Morrissey (01:06:55.869)
+Yes, I'm with you.
+
+Pabllos (01:07:12.118)
+light bulbs are a hundred some years old. So before that, we were just talking to people in the dark all the time. And so I think phone calls or calls without video are actually much better conversations. But, but on my podcast, I won't do them online. I do them in person and I travel so much. just grabbed the smartest person I can find everywhere I go. And I record those conversations. So I'm just picking people's brains anyway. So I figure I'll record it and share it. And so my entire podcasting rig is
+
+this thing and it's just, it's just, it's, it's, road lav mics. you pop, as soon as you pop one of these things out, it immediately starts recording. So you can't have any network screw ups or anything. You just grab this and clip it on somebody and clip one on me. And it just starts recording and that's all there is to it. And so I travel.
+
+Brian Morrissey (01:07:43.146)
+Alex has that, I think.
+
+T-roy (01:07:46.272)
+What is it?
+
+T-roy (01:08:10.495)
+You mean you don't have to turn on your computer or set up like this riverside thing or any of that nonsense?
+
+Pabllos (01:08:11.374)
+the world. I don't know, don't have to do anything. I just clip this on you and me anywhere I can do it in a park. I can do it anywhere because then a eyes will cut out all the background noise. I can do it in Manhattan and the AIs will go get rid of the sirens. It's amazing. So I just podcast literally from anywhere hanging out with people. And that I think that's one of the things I love the most. And it's mostly I'd say it's partly this thing. It's partly that AI is so good now that it can clean up the audio.
+
+Brian Morrissey (01:08:13.715)
+No, no, no, no, no.
+
+Brian Morrissey (01:08:41.361)
+That's what AB broke out at Joe Marchese's party and we went into the wellness room and instead of Joe and Coke, we did a little podcast.
+
+Pabllos (01:08:50.542)
+Well, it's, has it really wellness?
+
+T-roy (01:08:51.585)
+So modern. Okay, Brian hit it, man. Take us home.
+
+Brian Morrissey (01:08:58.067)
+Oh, the only thing I wanted to bring up was I was in Rome for like two days on the way here and you know, they still have old school newsstands. I'm embracing this AI future reluctantly, Pavlo, but I miss the old school newsstands and Italy has a long history. I ended up turning then. This is where I think like Chachiputti is amazing because I'm like, me the whole history about
+
+Pabllos (01:09:14.423)
+Yeah, I get it.
+
+Brian Morrissey (01:09:27.279)
+these new stands and they're called a digital a digitalize. Sorry, anyone a digital who is Italian listening to this. But they have a long history. They they became like communal like gathering spots and they persist. They're they're dwindling and they keep dwindling. And and now they're selling like knockoff, LeBoe, booze and like the child Bella like tourist tat. And as Troy knows, I look
+
+Pabllos (01:09:28.834)
+Sure.
+
+Pabllos (01:09:41.698)
+Yeah.
+
+Yeah.
+
+Brian Morrissey (01:09:56.219)
+I look for metaphors everywhere. And so I saw one for the publishing industry there. I mean, here is an institution that served an important role. And now it is unfortunately selling SIM cards.
+
+Pabllos (01:10:10.508)
+Yeah, I mean, I think I think a couple things one.
+
+You know, we, we romanticize the publishing industry of the past, but it was not doing everything that needed to get done. we still don't have, you know, probably what we would want, but we are exploring and trying different things and we need to do more of that. I think I know. Yeah. And I get that you can cut this part out, but, here's where I was going. There's a.
+
+T-roy (01:10:39.785)
+It's unclear that he was looking for a response.
+
+Pabllos (01:10:47.202)
+The part you said that's actually really cool is that those, whatever they're called, newsstands were a community gathering place. And so that didn't show up in the economic report, but that was the thing that they were actually valuable for. That was their pro-social positive contribution. And that's probably being damaged by other things. Yeah.
+
+Brian Morrissey (01:10:54.063)
+a ditch or a yeah.
+
+Brian Morrissey (01:11:08.883)
+Well, yeah, I mean, this is the larger point of going to, you I spent the last week and a half in Italy, and it's like any sort of American that goes there, you you read in The Economist about like Italy or Japan being economic basket cases, lost generations, and you go there and I'm like, this is amazing.
+
+Pabllos (01:11:17.356)
+Yeah. Yeah.
+
+Pabllos (01:11:26.776)
+delightful. Yeah.
+
+Brian Morrissey (01:11:27.761)
+All these people like, you know, having a parativo with like three generations of families, they live six years longer than we do. And I'm like, where's the failure? And obviously it doesn't show up in our GDP. Hopefully we can have both. As Americans, we're just, we're going to scale everything and we're just going to go for economic.
+
+Pabllos (01:11:41.474)
+Yeah. Yeah. Well, you know, look at everybody's got a different role to play here and different strengths to bring to it. So I think, you know, Italy is going to be a great place to retire.
+
+Brian Morrissey (01:11:49.192)
+Yeah.
+
+Brian Morrissey (01:11:55.237)
+I think they're gonna wait out this AI thing. I gotta be honest with you, I saw no evidence. I saw no evidence.
+
+Pabllos (01:12:01.814)
+For sure. Yeah. I know I get it. I go everywhere and I see, I see those things too, but I think there's a kind of, you know, this is why you need 192 different countries is why you need diversity, different places to focus on different things. think it's awesome that they're kicking our ass on cultural thing on tomatoes. Unbelievable. know we've never had a good tomato in America and they're just over there.
+
+Brian Morrissey (01:12:21.541)
+On tomatoes? On tomatoes, like unbelievable. Unbelievable.
+
+You
+
+T-roy (01:12:29.205)
+That's absolutely not true. There's plenty of good... I had one yesterday. Come on, an heirloom tomato out here on shelter. They're fine.
+
+Pabllos (01:12:31.246)
+yeah.
+
+Brian Morrissey (01:12:31.813)
+I've never tasted, I've never tasted, they're like completely different.
+
+Pabllos (01:12:34.52)
+Where do you get tomato?
+
+Pabllos (01:12:39.374)
+I'll come visit. I might not like styrofoam. think the job here to do, if AI takes your job or a robot takes over your job, rejoice and then help us figure out how do we build back in those community dynamics? How do you build back in those social experiences that we damaged or gave up along the way?
+
+T-roy (01:13:08.125)
+If only, if only that you can use those gatherings to steal a wallet.
+
+Pabllos (01:13:13.518)
+Well, you know, that might be part of it. You know, we're stealing wallets online now and it's working much better. So.
+
+T-roy (01:13:21.685)
+You know, dude, I'm really happy that you came on here. It was great. I thought it was going to be terrible, but it worked out.
+
+Brian Morrissey (01:13:21.747)
+All right, let's.
+
+Pabllos (01:13:25.902)
+Well, I can see why you thought that. No, thank you. This is delightful. I mean, I'm not as big of an asshole as I seem on the internet, but you know, gotta try and beat people over the head about these things sometimes.
+
+Brian Morrissey (01:13:28.231)
+Hahaha
+
+T-roy (01:13:31.745)
+No, I just didn't, yeah.
+
+T-roy (01:13:43.573)
+Yeah, we're going to send over a stylist and maybe we can turn you into the next sort of technology.
+
+Pabllos (01:13:50.542)
+I look like a hacker from the 80s and so I'm not.
+
+Brian Morrissey (01:13:53.836)
+Stylish. He's got a nice shirt.
+
+T-roy (01:13:56.482)
+Right. You're like, you emerged from a William Gibson novel.
+
+Pabllos (01:13:59.35)
+I'm man. Well, I'm looking at Michael Wolf's styling and I mean, he does have something going that I don't have, so let's see if.
+
+Brian Morrissey (01:14:04.307)
+you
+
+T-roy (01:14:11.7)
+It's a New England vibe. It's non-threatening.
+
+Pabllos (01:14:14.572)
+Yeah, I'm definitely more intimidating than I should be.
+
+Brian Morrissey (01:14:18.685)
+Well, he's banned from Alain's, so he has that going for him. All right, let's leave it there.
+
+T-roy (01:14:23.201)
+All right. All right. Thanks, guys.
+
+Pabllos (01:14:24.13)
+Alright, thanks you guys. Alright, thanks. I have another idea.
+
+Brian Morrissey (01:14:25.853)
+Good to me, Paolo.
+
+Huh?
+
