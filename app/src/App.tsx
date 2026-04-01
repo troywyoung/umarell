@@ -315,8 +315,6 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
 
 // ─── Category mapping ────────────────────────────────────────────────────
 
-const CATEGORY_ORDER = ["AI & Tech", "Media", "Economics", "Sports", "Science & Nature", "Other"];
-
 function getCategory(tags: string[] | null | undefined): string {
   if (!tags || tags.length === 0) return "Other";
   const t = tags.join(" ").toLowerCase();
