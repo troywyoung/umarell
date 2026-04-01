@@ -289,10 +289,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {loading && <span style={{ fontSize: 12, color: "#B0B0A8" }}>Refreshing…</span>}
-          {authUser.avatar
-            ? <img src={authUser.avatar} onClick={onSignOut} title="Sign out" style={{ width: 28, height: 28, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.3)" }} />
-            : <button onClick={onSignOut} style={{ fontSize: 11, color: bgImage ? "rgba(255,255,255,0.6)" : "#AAA", background: "none", border: "none", cursor: "pointer", fontFamily: "inherit" }}>Sign out</button>
-          }
           <button
             onClick={onCapture}
             style={{
@@ -303,21 +299,33 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               WebkitTapHighlightColor: "transparent",
             }}
           >+</button>
+          {authUser.avatar
+            ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
+            : <button onClick={onSignOut} style={{ fontSize: 11, color: bgImage ? "rgba(255,255,255,0.6)" : "#AAA", background: "none", border: "none", cursor: "pointer", fontFamily: "inherit" }}>Sign out</button>
+          }
         </div>
       </div>
 
       <div style={{ padding: "12px 16px 0", opacity: showCards ? 1 : 0, transition: "opacity 0.5s ease" }}>
-        {observations.length === 0 && !loading ? null : (
-          observations.map((obs) => {
+        {observations.length === 0 && !loading ? null : (() => {
+          const topLevel = observations.filter(o => !o.parent_id);
+          const challenges = observations.filter(o => !!o.parent_id);
+          const challengesByParent: Record<string, Observation[]> = {};
+          challenges.forEach(c => {
+            if (!challengesByParent[c.parent_id!]) challengesByParent[c.parent_id!] = [];
+            challengesByParent[c.parent_id!].push(c);
+          });
+          return topLevel.map((obs) => {
             const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
             const firstBullet = steelBullets[0] || "";
+            const kids = challengesByParent[obs.id] || [];
             return (
+              <div key={obs.id} style={{ marginBottom: 14 }}>
               <div
-                key={obs.id}
                 onClick={() => onSelect(obs)}
                 style={{
                   background: "#FFF", borderRadius: 10,
-                  marginBottom: 10, boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
+                  boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", position: "relative", overflow: "hidden",
                 }}
               >
@@ -390,9 +398,52 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   )}
                 </div>
               </div>
+              {/* Nested challenges */}
+              {kids.map(c => (
+                <div
+                  key={c.id}
+                  onClick={() => onSelect(c)}
+                  style={{
+                    marginTop: 4, marginLeft: 16, borderRadius: 10,
+                    background: "#EEF4FF", borderLeft: "3px solid #5C8EFF",
+                    boxShadow: "0 1px 4px rgba(0,0,0,0.04)",
+                    cursor: "pointer", overflow: "hidden",
+                  }}
+                >
+                  <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "10px 12px 6px" }}>
+                    <span style={{ fontSize: 9, fontWeight: 700, color: "#5C8EFF", flexShrink: 0, marginTop: 2 }}>↩</span>
+                    <p style={{
+                      fontSize: 11, fontWeight: 700, color: "#1A1A1A", lineHeight: 1.4, margin: 0, flex: 1,
+                      overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical",
+                    }}>
+                      {c.thesis || c.raw_input}
+                    </p>
+                    {c.score != null && (
+                      <span style={{
+                        fontSize: 9, fontWeight: 800, flexShrink: 0,
+                        background: c.score >= 70 ? "#E8F5E9" : c.score >= 40 ? "#FFF3E0" : "#F3E5F5",
+                        color: c.score >= 70 ? "#2E7D32" : c.score >= 40 ? "#E65100" : "#6A1B9A",
+                        padding: "2px 6px", borderRadius: 4,
+                      }}>{Math.round(c.score)}</span>
+                    )}
+                  </div>
+                  {c.status === "complete" && c.evidence_type && (
+                    <div style={{ padding: "0 12px 8px" }}>
+                      <EvidenceBadge value={c.evidence_type} />
+                    </div>
+                  )}
+                  {(c.status === "formatting" || c.status === "researching") && (
+                    <div style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "0 12px 8px" }}>
+                      <SteelManIcon size={12} animate />
+                      <span style={{ fontSize: 9, color: "#999", fontStyle: "italic" }}>Researching…</span>
+                    </div>
+                  )}
+                </div>
+              ))}
+              </div>
             );
-          })
-        )}
+          });
+        })()}
       </div>
 
       {/* Idea Button */}
@@ -422,10 +473,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 
 // ─── Capture ──────────────────────────────────────────────────────────────
 
-function CaptureView({ onSubmit, onSubmitImage, onBack }: {
+function CaptureView({ onSubmit, onSubmitImage, onBack, parentId }: {
   onSubmit: (text: string) => Promise<void>;
   onSubmitImage: (b64: string, mediaType: string, context?: string) => Promise<void>;
   onBack: () => void;
+  parentId?: string;
 }) {
   const [text, setText] = useState("");
   const [url, setUrl] = useState("");
@@ -543,11 +595,17 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
         </button>
       </div>
 
+      {parentId && (
+        <div style={{ background: "#EEF4FF", borderLeft: "3px solid #5C8EFF", borderRadius: 10, padding: "10px 14px", marginBottom: 20 }}>
+          <p style={{ fontSize: 11, fontWeight: 700, color: "#5C8EFF", margin: "0 0 2px", letterSpacing: 0.3 }}>↩ CHALLENGE</p>
+          <p style={{ fontSize: 12, color: "#555", margin: 0 }}>Your steel man will be linked to the original.</p>
+        </div>
+      )}
       <h1 style={{ fontSize: 26, fontWeight: 700, color: "#1A1A1A", letterSpacing: -0.5, margin: "0 0 6px" }}>
-        What's your take?
+        {parentId ? "What's your counter?" : "What's your take?"}
       </h1>
       <p style={{ fontSize: 14, color: "#888", margin: "0 0 24px", lineHeight: 1.5 }}>
-        Drop a hot take. We'll build the strongest case for it.
+        {parentId ? "Drop your counter-argument. We'll steel man it." : "Drop a hot take. We'll build the strongest case for it."}
       </p>
 
       {/* Single text input — always visible, auto-expands */}
@@ -684,10 +742,11 @@ function CaptureView({ onSubmit, onSubmitImage, onBack }: {
 
 // ─── Output ───────────────────────────────────────────────────────────────
 
-function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requestStressTest }: {
+function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObservation, requestStressTest }: {
   obs: Observation;
   onBack: () => void;
   onResubmit: (text: string, imageData?: string, imageMediaType?: string) => Promise<void>;
+  onChallenge: (obs: Observation) => void;
   pollObservation: (id: string) => Promise<Observation | null>;
   requestStressTest: (id: string) => Promise<import("./types").StressTest | null>;
 }) {
@@ -695,11 +754,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
   const [tab, setTab] = useState<"steel" | "stress">("steel");
   const [stressLoading, setStressLoading] = useState(false);
   const [stressError, setStressError] = useState(false);
-  const [bsLoading, setBsLoading] = useState(false);
   const [editMode, setEditMode] = useState(false);
   const [editText, setEditText] = useState("");
   const [resubmitting, setResubmitting] = useState(false);
-  const [counterThesis, setCounterThesis] = useState<string | null>(null);
+  const [, setCounterThesis] = useState<string | null>(null);
   const [challenges, setChallenges] = useState<Observation[]>([]);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -939,36 +997,14 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
               ) : "Stress Test"}
             </button>
             <button
-              onClick={async () => {
-                if (obs.bs_score != null || bsLoading) return;
-                setBsLoading(true);
-                try {
-                  const res = await fetch(`${API}/observations/${obs.id}/bullshit`, { method: "POST", headers: authHeaders() });
-                  if (res.ok) {
-                    const data = await res.json();
-                    setObs(o => ({ ...o, bs_score: data.bs_score, bs_verdict: data.bs_verdict }));
-                  }
-                } finally { setBsLoading(false); }
-              }}
+              onClick={() => onChallenge(obs)}
               style={{
-                padding: "10px 14px", borderRadius: 10, border: "none", cursor: obs.bs_score != null ? "default" : "pointer",
-                background: obs.bs_score != null ? "#FFF3E0" : "#EFEFED",
-                color: obs.bs_score != null ? "#E65100" : "#666",
+                padding: "10px 14px", borderRadius: 10, border: "none", cursor: "pointer",
+                background: "#EEF4FF", color: "#5C8EFF",
                 fontSize: 14, fontWeight: 700, fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent",
-                display: "flex", alignItems: "center", justifyContent: "center", gap: 4, flexShrink: 0,
+                WebkitTapHighlightColor: "transparent", flexShrink: 0,
               }}
-            >
-              {bsLoading ? <ProcessingDots /> : obs.bs_score != null ? `🗑 ${Math.round(obs.bs_score)}` : "🗑 BS?"}
-            </button>
-          </div>
-        )}
-
-        {/* BS result */}
-        {obs.bs_score != null && obs.bs_verdict && (
-          <div style={{ background: "#FFF8F0", border: "1px solid #FFE0B2", borderRadius: 12, padding: "14px 16px", marginBottom: 20 }}>
-            <p style={{ fontSize: 10, fontWeight: 700, color: "#E65100", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>BS Score: {Math.round(obs.bs_score)}/100</p>
-            <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.6, margin: 0 }}>{obs.bs_verdict}</p>
+            >↩ Challenge</button>
           </div>
         )}
 
@@ -1079,31 +1115,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           );
         })()}
 
-        {/* Steel man the opposite */}
-        {obs.status === "complete" && (
-          <div style={{ marginTop: 24, paddingTop: 20, borderTop: "1px solid #EBEBEB" }}>
-            <button
-              onClick={async () => {
-                if (counterThesis !== null) {
-                  onResubmit(counterThesis, undefined, undefined);
-                  return;
-                }
-                const res = await fetch(`${API}/observations/${obs.id}/counter-thesis`, { headers: authHeaders() });
-                if (res.ok) {
-                  const data = await res.json();
-                  setCounterThesis(data.counter_thesis);
-                }
-              }}
-              style={{
-                width: "100%", padding: "13px 0", borderRadius: 12, border: "1.5px solid #1A1A1A",
-                background: "transparent", color: "#1A1A1A", fontSize: 14, fontWeight: 700,
-                cursor: "pointer", fontFamily: "inherit", WebkitTapHighlightColor: "transparent",
-              }}
-            >
-              {counterThesis ? `Steel man: "${counterThesis.slice(0, 50)}${counterThesis.length > 50 ? "…" : ""}"` : "⟳ Steel man the opposite"}
-            </button>
-          </div>
-        )}
 
         {/* Challenges */}
         {challenges.length > 0 && (
@@ -1258,6 +1269,7 @@ export default function App() {
   const { observations, loading, fetchObservations, submitObservation, pollObservation, requestStressTest, deleteObservation } = useObservations();
   const [view, setView] = useState<View>("home");
   const [selectedObs, setSelectedObs] = useState<Observation | null>(null);
+  const [challengingObs, setChallengingObs] = useState<Observation | null>(null);
 
   useEffect(() => {
     if (!authUser) return;
@@ -1316,13 +1328,34 @@ export default function App() {
     setView(nextView);
   };
 
+  const handleChallenge = (obs: Observation) => {
+    setChallengingObs(obs);
+    navigateTo("capture");
+  };
+
   const handleSubmit = async (text: string) => {
-    const obs = await submitObservation(text, text.startsWith("http") ? "url" : "text");
+    const obs = await submitObservation(
+      text,
+      text.startsWith("http") ? "url" : "text",
+      undefined,
+      undefined,
+      challengingObs?.id,
+      challengingObs ? "counter" : undefined,
+    );
+    setChallengingObs(null);
     navigateTo("output", obs);
   };
 
   const handleSubmitImage = async (b64: string, mediaType: string, context?: string) => {
-    const obs = await submitObservation(context || "image", "screenshot", b64, mediaType);
+    const obs = await submitObservation(
+      context || "image",
+      "screenshot",
+      b64,
+      mediaType,
+      challengingObs?.id,
+      challengingObs ? "counter" : undefined,
+    );
+    setChallengingObs(null);
     navigateTo("output", obs);
   };
 
@@ -1338,7 +1371,12 @@ export default function App() {
       <CaptureView
         onSubmit={handleSubmit}
         onSubmitImage={handleSubmitImage}
-        onBack={() => { setView("home"); window.history.replaceState(null, "", window.location.pathname); }}
+        onBack={() => {
+          setChallengingObs(null);
+          setView("home");
+          window.history.replaceState(null, "", window.location.pathname);
+        }}
+        parentId={challengingObs?.id}
       />
     );
   }
@@ -1349,6 +1387,7 @@ export default function App() {
         obs={selectedObs}
         onBack={() => { setView("home"); window.history.replaceState(null, "", window.location.pathname); fetchObservations(); }}
         onResubmit={handleResubmit}
+        onChallenge={handleChallenge}
         pollObservation={pollObservation}
         requestStressTest={requestStressTest}
       />

@@ -28,6 +28,8 @@ export function useObservations() {
     inputType: Observation["input_type"] = "text",
     imageData?: string,
     imageMediaType?: string,
+    parentId?: string,
+    challengeType?: string,
   ): Promise<Observation> => {
     try {
       const resp = await fetch(`${API}/observations`, {
@@ -37,6 +39,8 @@ export function useObservations() {
           raw_input: rawInput,
           input_type: inputType,
           ...(imageData && { image_data: imageData, image_media_type: imageMediaType }),
+          ...(parentId && { parent_id: parentId }),
+          ...(challengeType && { challenge_type: challengeType }),
         }),
       });
       if (!resp.ok) throw new Error(`API error ${resp.status}`);
