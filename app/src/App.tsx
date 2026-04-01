@@ -746,7 +746,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
 function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObservation, requestStressTest }: {
   obs: Observation;
   onBack: () => void;
-  onResubmit: (text: string, imageData?: string, imageMediaType?: string) => Promise<void>;
+  onResubmit: (obsId: string, text: string, imageData?: string, imageMediaType?: string) => Promise<void>;
   onChallenge: (obs: Observation) => void;
   pollObservation: (id: string) => Promise<Observation | null>;
   requestStressTest: (id: string) => Promise<import("./types").StressTest | null>;
@@ -822,7 +822,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
     if (!editText.trim() || resubmitting) return;
     setResubmitting(true);
     try {
-      await onResubmit(editText.trim(), obs.image_data, obs.image_media_type);
+      await onResubmit(obs.id, editText.trim(), obs.image_data, obs.image_media_type);
     } catch {
       setResubmitting(false);
     }
@@ -1278,7 +1278,7 @@ export default function App() {
     setAuthUser(null);
   };
 
-  const { observations, loading, fetchObservations, submitObservation, pollObservation, requestStressTest, deleteObservation } = useObservations();
+  const { observations, loading, fetchObservations, submitObservation, editObservation, pollObservation, requestStressTest, deleteObservation } = useObservations();
   const [view, setView] = useState<View>("home");
   const [selectedObs, setSelectedObs] = useState<Observation | null>(null);
   const [challengingObs, setChallengingObs] = useState<Observation | null>(null);
@@ -1378,9 +1378,9 @@ export default function App() {
     navigateTo("output", obs);
   };
 
-  const handleResubmit = async (text: string, imageData?: string, imageMediaType?: string) => {
+  const handleResubmit = async (obsId: string, text: string, imageData?: string, imageMediaType?: string) => {
     const inputType = imageData ? "screenshot" : (text.startsWith("http") ? "url" : "text");
-    const obs = await submitObservation(text, inputType, imageData, imageMediaType);
+    const obs = await editObservation(obsId, text, inputType, imageData, imageMediaType);
     setSelectedObs(obs);
     // view stays on "output"
   };

@@ -279,6 +279,45 @@ async def get_observation(obs_id: str, db: AsyncSession = Depends(get_db)):
     return rows[0]
 
 
+class ObservationEdit(BaseModel):
+    raw_input: str
+    input_type: str = "text"
+    image_data: str | None = None
+    image_media_type: str | None = None
+
+
+@app.put("/observations/{obs_id}")
+async def edit_observation(
+    obs_id: str,
+    body: ObservationEdit,
+    db: AsyncSession = Depends(get_db),
+    current_user: User | None = Depends(get_current_user),
+):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    if obs.user_id and current_user and obs.user_id != current_user.id:
+        raise HTTPException(403, "You can only edit your own observations")
+    obs.raw_input = body.raw_input
+    obs.input_type = body.input_type
+    obs.thesis = None
+    obs.summary = None
+    obs.score = None
+    obs.tags = None
+    obs.evidence_type = None
+    obs.stress_test = None
+    obs.sources = None
+    obs.status = "formatting"
+    obs.error_detail = None
+    await db.commit()
+    await db.refresh(obs)
+    image_b64 = body.image_data
+    image_media_type = body.image_media_type or "image/jpeg"
+    asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, image_b64, image_media_type))
+    rows = await _attach_user_names(db, [obs])
+    return rows[0]
+
+
 @app.post("/observations/{obs_id}/stress-test")
 async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
     obs = await db.get(Observation, obs_id)

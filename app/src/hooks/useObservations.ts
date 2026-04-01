@@ -82,6 +82,28 @@ export function useObservations() {
     }
   }, []);
 
+  const editObservation = useCallback(async (
+    id: string,
+    rawInput: string,
+    inputType: string = "text",
+    imageData?: string,
+    imageMediaType?: string,
+  ): Promise<Observation> => {
+    const resp = await fetch(`${API}/observations/${id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json", ...authHeaders() },
+      body: JSON.stringify({
+        raw_input: rawInput,
+        input_type: inputType,
+        ...(imageData && { image_data: imageData, image_media_type: imageMediaType }),
+      }),
+    });
+    if (!resp.ok) throw new Error(`API error ${resp.status}`);
+    const obs: Observation = await resp.json();
+    setObservations((prev) => prev.map((o) => (o.id === id ? obs : o)));
+    return obs;
+  }, []);
+
   const deleteObservation = useCallback(async (id: string) => {
     await fetch(`${API}/observations/${id}`, { method: "DELETE", headers: authHeaders() });
     setObservations((prev) => prev.filter((o) => o.id !== id));
@@ -89,7 +111,7 @@ export function useObservations() {
 
   return {
     observations, loading,
-    fetchObservations, submitObservation, pollObservation,
+    fetchObservations, submitObservation, editObservation, pollObservation,
     requestStressTest, deleteObservation,
   };
 }
