@@ -470,7 +470,8 @@ Now tear this thesis apart. You are the opposing counsel. Build the most aggress
 Return a JSON object with exactly these keys:
 {
   "bottom_line": "1-2 sentences — the single strongest reason this thesis is wrong",
-  "bullets": ["4-6 targeted attacks on the thesis — each 1-2 sentences, cite real counter-evidence"],
+  "hard_facts": ["2-4 hard empirical data points that contradict or complicate the thesis — specific numbers, percentages, or measurements from government agencies (BLS, Census Bureau, CDC, Fed, CBO, OECD, World Bank, etc.), peer-reviewed studies, or official statistics. Format: stat + source in parentheses."],
+  "bullets": ["3-5 targeted attacks on the thesis — each 1-2 sentences, cite real counter-evidence"],
   "verdict": "2-3 sentences — after weighing steelman and counterpoint, does the original thesis survive?",
   "strength": "<one of: weak | moderate | strong | devastating>"
 }
@@ -488,7 +489,9 @@ Return valid JSON only. No markdown fences. No preamble."""
             "You are a brilliant, aggressive opposing counsel. "
             "Your job: destroy this thesis with hard evidence and sharp logic. "
             "You are not balanced — you are adversarial. But intellectually honest. "
-            "Every bullet should target a specific weakness: wrong data, missing context, logical fallacy, contrary evidence. "
+            "HARD FACTS are your ammunition: prioritize data from government agencies (BLS, Census Bureau, CDC, Federal Reserve, CBO, OECD, World Bank, IMF, WHO, NIH, etc.) "
+            "and peer-reviewed research that directly contradicts the thesis. Every hard fact must include a specific number and its source. "
+            "Bullets build the argument: target specific weaknesses — wrong data, missing context, logical fallacies, contrary evidence. "
             "Use phrases like 'This ignores...', 'The data actually shows...', 'The fatal flaw here is...' "
             "Use current search results where available. "
             "Return ONLY valid JSON. No markdown. No preamble."
@@ -505,9 +508,9 @@ Return valid JSON only. No markdown fences. No preamble."""
         raw = result
 
     parsed = _extract_json(raw)
-    for key in ("bottom_line", "bullets", "verdict", "strength"):
+    for key in ("bottom_line", "hard_facts", "bullets", "verdict", "strength"):
         if key not in parsed:
-            parsed[key] = [] if key == "bullets" else ""
+            parsed[key] = [] if key in ("hard_facts", "bullets") else ""
     return parsed, sources
 
 

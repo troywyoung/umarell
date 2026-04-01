@@ -6,6 +6,7 @@ export interface SteelmanResult {
 
 export interface Counterpoint {
   bottom_line: string;
+  hard_facts?: string[];
   bullets: string[];
   verdict: string;
   strength: "weak" | "moderate" | "strong" | "devastating";
