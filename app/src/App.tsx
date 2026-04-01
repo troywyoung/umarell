@@ -1235,12 +1235,17 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               </div>
             )}
 
-            {steelBullets.map((bullet, i) => (
-              <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
-                <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
-                <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
-              </div>
-            ))}
+            {steelBullets.length > 0 && (
+              <>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>The Case</p>
+                {steelBullets.map((bullet, i) => (
+                  <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
+                    <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
+                    <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
+                  </div>
+                ))}
+              </>
+            )}
 
             {/* Sources — inline comma-separated */}
             {obs.sources && obs.sources.length > 0 && (
@@ -1297,12 +1302,17 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                   ))}
                 </div>
               )}
-              {counterpoint.bullets.map((bullet, i) => (
-                <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                  <span style={{ color: "#FF00AE", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
-                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
-                </div>
-              ))}
+              {counterpoint.bullets.length > 0 && (
+                <>
+                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>The Case Against</p>
+                  {counterpoint.bullets.map((bullet, i) => (
+                    <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
+                      <span style={{ color: "#FF00AE", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
+                      <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
+                    </div>
+                  ))}
+                </>
+              )}
               {counterpoint.verdict && (
                 <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 10, padding: "12px 14px", marginTop: 8 }}>
                   <p style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>{counterpoint.verdict}</p>
