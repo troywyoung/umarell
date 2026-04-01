@@ -529,3 +529,60 @@ async def seed_episode(
         asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type))
         created.append(obs.id)
     return {"episode_tag": body.episode_tag, "observations": created, "count": len(created)}
+
+
+# ─── Migration: backfill hard_facts ─────────────────────────────────────────
+
+@app.post("/admin/backfill-hard-facts")
+async def backfill_hard_facts(
+    admin_key: str,
+    db: AsyncSession = Depends(get_db),
+):
+    """Re-generate steelman for any complete observation missing hard_facts.
+    Runs sequentially to avoid hammering the LLM API."""
+    import json as _json
+    if admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    result = await db.execute(
+        select(Observation)
+        .where(Observation.status == "complete")
+        .where(Observation.summary.isnot(None))
+    )
+    observations = list(result.scalars().all())
+
+    # Filter to those missing hard_facts
+    to_backfill = []
+    for obs in observations:
+        try:
+            parsed = _json.loads(obs.summary)
+            if "hard_facts" not in parsed or not parsed["hard_facts"]:
+                to_backfill.append(obs)
+        except (ValueError, TypeError):
+            to_backfill.append(obs)  # legacy plain-text format
+
+    updated = 0
+    errors = 0
+    for obs in to_backfill:
+        try:
+            steel_man_data, sources = await generate_steel_man(obs.thesis or obs.raw_input)
+            obs_fresh = await db.get(Observation, obs.id)
+            if not obs_fresh:
+                continue
+            obs_fresh.summary = _json.dumps(steel_man_data)
+            if sources:
+                existing = obs_fresh.sources or []
+                seen = {s["url"] for s in existing}
+                for s in sources:
+                    if s["url"] not in seen:
+                        existing.append(s)
+                        seen.add(s["url"])
+                obs_fresh.sources = existing
+            await db.commit()
+            updated += 1
+            print(f"[backfill] updated {obs.id[:8]} — {(obs.thesis or '')[:60]}")
+        except Exception as e:
+            errors += 1
+            print(f"[backfill] failed {obs.id[:8]}: {e}")
+
+    return {"total": len(to_backfill), "updated": updated, "errors": errors}
