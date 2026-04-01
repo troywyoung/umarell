@@ -759,6 +759,12 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   const [pvaError, setPvaError] = useState(false);
   const [showCounterpoint, setShowCounterpoint] = useState(false);
   const [showPva, setShowPva] = useState(false);
+  const [flashSteelman, setFlashSteelman] = useState(false);
+  const [flashCounterpoint, setFlashCounterpoint] = useState(false);
+  const [flashPva, setFlashPva] = useState(false);
+  const steelmanRef = useRef<HTMLDivElement>(null);
+  const counterpointRef = useRef<HTMLDivElement>(null);
+  const pvaRef = useRef<HTMLDivElement>(null);
   const [editMode, setEditMode] = useState(false);
   const [editText, setEditText] = useState("");
   const [resubmitting, setResubmitting] = useState(false);
@@ -803,9 +809,24 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
     return () => { if (pollRef.current) clearInterval(pollRef.current); };
   }, [obs.id, obs.status]);
 
+  const scrollToAndFlash = (ref: React.RefObject<HTMLDivElement | null>, setFlash: (v: boolean) => void) => {
+    setTimeout(() => {
+      ref.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+      setFlash(true);
+      setTimeout(() => setFlash(false), 3000);
+    }, 80);
+  };
+
+  const handleSteelmanScroll = () => {
+    scrollToAndFlash(steelmanRef, setFlashSteelman);
+  };
+
   const handleCounterpoint = async () => {
     setShowCounterpoint(true);
-    if (obs.stress_test && "strength" in obs.stress_test) return; // already loaded
+    if (obs.stress_test && "strength" in obs.stress_test) {
+      scrollToAndFlash(counterpointRef, setFlashCounterpoint);
+      return;
+    }
     setCounterpointError(false);
     setCounterpointLoading(true);
     const result = await requestCounterpoint(obs.id);
@@ -814,6 +835,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
       const updated = await pollObservation(obs.id);
       if (updated) setObs(updated);
       else setObs((p) => ({ ...p, stress_test: result }));
+      scrollToAndFlash(counterpointRef, setFlashCounterpoint);
     } else {
       setCounterpointError(true);
     }
@@ -821,13 +843,17 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
   const handlePvaTake = async () => {
     setShowPva(true);
-    if (obs.pva_take) return; // already loaded
+    if (obs.pva_take) {
+      scrollToAndFlash(pvaRef, setFlashPva);
+      return;
+    }
     setPvaError(false);
     setPvaLoading(true);
     const result = await requestPvaTake(obs.id);
     setPvaLoading(false);
     if (result) {
       setObs((p) => ({ ...p, pva_take: result }));
+      scrollToAndFlash(pvaRef, setFlashPva);
     } else {
       setPvaError(true);
     }
@@ -1018,9 +1044,19 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           </div>
         )}
 
-        {/* Action buttons: Counterpoint + PvA Take */}
+        {/* Action buttons: Steelman · Counterpoint · PvA Take */}
         {obs.status === "complete" && (
           <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
+            <button
+              onClick={handleSteelmanScroll}
+              style={{
+                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
+                background: "rgba(255,255,255,0.08)",
+                color: "rgba(255,255,255,0.5)",
+                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
+                WebkitTapHighlightColor: "transparent",
+              }}
+            >Steelman</button>
             <button
               onClick={handleCounterpoint}
               style={{
@@ -1052,10 +1088,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
         {/* Steelman — always visible when complete */}
         {obs.status === "complete" && (steelBottomLine || steelBullets.length > 0) && (
-          <>
+          <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Bottom Line</p>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}>{flashSteelman && <PulsingDot />}Steelman</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
@@ -1079,7 +1115,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 ))}
               </div>
             )}
-          </>
+          </div>
         )}
 
         {/* Counterpoint section */}
@@ -1093,10 +1129,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           if (!counterpoint) return null;
           const strengthColors: Record<string, string> = { weak: "#4CAF50", moderate: "#FF9800", strong: "#F44336", devastating: "#9C27B0" };
           return (
-            <div style={{ marginTop: 16 }}>
+            <div ref={counterpointRef} style={{ marginTop: 16 }}>
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
-                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: 0, display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Counterpoint</p>
+                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: 0, display: "flex", alignItems: "center", gap: 6 }}>{flashCounterpoint && <PulsingDot />} Counterpoint</p>
                   <span style={{
                     fontSize: 9, fontWeight: 800, textTransform: "uppercase", letterSpacing: 0.5,
                     padding: "2px 8px", borderRadius: 4,
@@ -1132,9 +1168,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           const take = obs.pva_take;
           if (!take) return null;
           return (
-            <div style={{ marginTop: 16 }}>
+            <div ref={pvaRef} style={{ marginTop: 16 }}>
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 12 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>PvA Take</p>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}>{flashPva && <PulsingDot />} PvA Take</p>
                 <p style={{ fontSize: 14, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{take.tldr}</p>
               </div>
               {take.body.split(/\n\n+/).map((para, i) => (
