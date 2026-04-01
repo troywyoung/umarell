@@ -198,8 +198,8 @@ function ScoreBadge({ value, size = "md", dark = false }: { value?: number; size
   if (value == null) return null;
   const v = Math.round(value);
   const accent = "#FF00AE";
-  const dim = size === "sm" ? 22 : size === "lg" ? 40 : 32;
-  const fontSize = size === "sm" ? 8 : size === "lg" ? 14 : 11;
+  const dim = size === "sm" ? 33 : size === "lg" ? 40 : 32;
+  const fontSize = size === "sm" ? 12 : size === "lg" ? 14 : 11;
   const labelSize = 0;
   const pct = v / 100;
   const r = (dim - 4) / 2;
