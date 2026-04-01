@@ -315,7 +315,19 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             if (!challengesByParent[c.parent_id!]) challengesByParent[c.parent_id!] = [];
             challengesByParent[c.parent_id!].push(c);
           });
-          return topLevel.map((obs) => {
+          // Sort top-level obs by most recent activity (own or latest challenge)
+          const sortedTopLevel = [...topLevel].sort((a, b) => {
+            const aTime = Math.max(
+              new Date(a.created_at).getTime(),
+              ...(challengesByParent[a.id] || []).map(c => new Date(c.created_at).getTime()),
+            );
+            const bTime = Math.max(
+              new Date(b.created_at).getTime(),
+              ...(challengesByParent[b.id] || []).map(c => new Date(c.created_at).getTime()),
+            );
+            return bTime - aTime;
+          });
+          return sortedTopLevel.map((obs) => {
             const steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
             const firstBullet = steelBullets[0] || "";
             const kids = challengesByParent[obs.id] || [];
@@ -760,6 +772,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   const [, setCounterThesis] = useState<string | null>(null);
   const [challenges, setChallenges] = useState<Observation[]>([]);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const consecutiveNullsRef = useRef(0);
 
   useEffect(() => {
     setObs(initialObs);
@@ -775,17 +788,22 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
   useEffect(() => {
     if (obs.status === "complete" || obs.status === "error") return;
+    consecutiveNullsRef.current = 0;
     pollRef.current = setInterval(async () => {
       const updated = await pollObservation(obs.id);
       if (updated) {
+        consecutiveNullsRef.current = 0;
         setObs(updated);
         if (updated.status === "complete" || updated.status === "error") {
           if (pollRef.current) clearInterval(pollRef.current);
         }
       } else {
-        // Observation was deleted (error auto-delete) — go back to feed
-        if (pollRef.current) clearInterval(pollRef.current);
-        onBack();
+        consecutiveNullsRef.current += 1;
+        // Only go back after 3 consecutive nulls (7.5s) — guards against transient errors
+        if (consecutiveNullsRef.current >= 3) {
+          if (pollRef.current) clearInterval(pollRef.current);
+          onBack();
+        }
       }
     }, 2500);
     return () => { if (pollRef.current) clearInterval(pollRef.current); };
