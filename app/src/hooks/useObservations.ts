@@ -17,7 +17,16 @@ export function useObservations() {
       const resp = await fetch(`${API}/observations`, { headers: authHeaders() });
       if (!resp.ok) throw new Error(`${resp.status}`);
       const data: Observation[] = await resp.json();
-      setObservations(data);
+      setObservations(prev => {
+        // Merge: server data wins for known obs, but keep any in-progress obs
+        // that haven't landed in the server response yet (avoids flash-and-disappear)
+        const serverIds = new Set(data.map(o => o.id));
+        const stillProcessing = prev.filter(
+          o => !serverIds.has(o.id) && (o.status === "formatting" || o.status === "researching")
+        );
+        const merged = [...data, ...stillProcessing];
+        return merged.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+      });
     } finally {
       setLoading(false);
     }
