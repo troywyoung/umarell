@@ -38,13 +38,12 @@ function getRandomPlaceholder() {
 
 // Randomize scribble position on each load
 // showPct: 20–70% visible (rest cropped off top)
-// horizontalPct: 10–90% across viewport
+// horizontalPct: 10–90% across the container
 function getRandomScribblePos() {
   const showPct = 20 + Math.random() * 50; // 20% to 70% visible
-  const cropPct = 100 - showPct;
-  const top = -(cropPct / 100) * 130; // vw units since image is 130vw
+  const cropPx = ((100 - showPct) / 100) * 250; // px to push off top
   const horizontalPct = 10 + Math.random() * 80; // 10% to 90%
-  return { top: `${top}vw`, left: `${horizontalPct}%` };
+  return { top: -cropPx, left: `${horizontalPct}%` };
 }
 
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
@@ -242,12 +241,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   const [scribblePos] = useState(() => getRandomScribblePos());
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
-      {/* Scribble image — random position each load, always cropped */}
+      {/* Scribble — small, cropped at top, random horizontal position each load */}
       <img
         src="/scribble.png"
         style={{
-          position: "fixed", top: scribblePos.top, left: scribblePos.left, transform: "translateX(-50%)",
-          width: "130vw", pointerEvents: "none", zIndex: 0,
+          position: "absolute", top: scribblePos.top, left: scribblePos.left, transform: "translateX(-50%)",
+          width: 250, pointerEvents: "none", zIndex: 0,
         }}
       />
       <div style={{
@@ -1298,12 +1297,12 @@ export default function App() {
   if (!authUser) {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative", overflow: "hidden" }}>
-        {/* Scribble on login — random position each load */}
+        {/* Scribble on login — small, cropped at top */}
         <img
           src="/scribble.png"
           style={{
-            position: "fixed", top: loginScribblePos.top, left: loginScribblePos.left, transform: "translateX(-50%)",
-            width: "130vw", pointerEvents: "none", zIndex: 0,
+            position: "absolute", top: loginScribblePos.top, left: loginScribblePos.left, transform: "translateX(-50%)",
+            width: 250, pointerEvents: "none", zIndex: 0,
           }}
         />
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
