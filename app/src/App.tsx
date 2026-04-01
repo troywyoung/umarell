@@ -1026,6 +1026,10 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
           const verdict: string = typeof st.verdict === "string" ? st.verdict : JSON.stringify(st.verdict);
           return (
             <div>
+              <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px", marginBottom: 20 }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Verdict</p>
+                <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{verdict}</p>
+              </div>
               {pros.length > 0 && (
                 <div style={{ marginBottom: 16 }}>
                   <p style={{ fontSize: 11, fontWeight: 700, color: "#2E7D32", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>Strengths</p>
@@ -1048,11 +1052,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, pollObservation, requ
                   ))}
                 </div>
               )}
-              <div style={{ background: "#F5F5F2", borderRadius: 12, padding: "14px 16px" }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "#999", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Verdict</p>
-                <p style={{ fontSize: 15, color: "#1A1A1A", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{verdict}</p>
-              </div>
-
               {/* Sources (from both steel man and stress test) */}
               {obs.sources && obs.sources.length > 0 && (
                 <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid #EBEBEB" }}>
