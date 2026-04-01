@@ -339,9 +339,9 @@ async def generate_steel_man(thesis: str, challenge_context: str | None = None) 
 
 Return a JSON object with exactly these keys:
 {
-  "bottom_line": "1-2 sentences — the single strongest argument for this thesis. This is the headline takeaway.",
-  "hard_facts": [{"fact": "the data point as a plain sentence — no source embedded in the sentence", "source": "Source Name, Year"}],
-  "bullets": ["3-5 evidence-backed arguments supporting the thesis — each 1-2 sentences max, cite real events, named examples, or studies"]
+  "bottom_line": "1 punchy sentence — the single strongest argument for this thesis.",
+  "bullets": ["3-4 arguments — each ONE sentence max, sharp and direct. No throat-clearing. Lead with the point."],
+  "hard_facts": [{"fact": "specific data point, one clean sentence, no source in the sentence", "source": "Source Name, Year"}]
 }
 
 Return valid JSON only. No markdown fences. No preamble."""
@@ -364,8 +364,8 @@ Return valid JSON only. No markdown fences. No preamble."""
             "The bottom_line is the single strongest argument — the verdict on why this holds up. "
             "HARD FACTS are the foundation: prioritize data from government agencies (BLS, Census Bureau, CDC, Federal Reserve, CBO, OECD, World Bank, IMF, WHO, NIH, etc.), "
             "peer-reviewed journals, and official statistics. Each hard_fact is an object: { fact, source, url }. The 'fact' sentence must NOT embed the source — keep fact text clean. "
-            "Bullets build the argument using named examples, events, and studies. "
-            "Prioritize depth and specificity over breadth. Avoid vague generalities. "
+            "Bullets are short, punchy, one sentence each — lead with the point, no preamble. "
+            "Prioritize specificity over breadth. No filler. No vague generalities. "
             "Use current real-world data from your search results where available. "
             "Return ONLY valid JSON. No markdown. No preamble."
         )
@@ -476,9 +476,9 @@ Now tear this thesis apart. You are the opposing counsel. Build the most aggress
 
 Return a JSON object with exactly these keys:
 {
-  "bottom_line": "1-2 sentences — the single strongest reason this thesis is wrong",
-  "hard_facts": [{"fact": "the data point as a plain sentence — no source embedded in the sentence", "source": "Source Name, Year"}],
-  "bullets": ["3-5 targeted attacks on the thesis — each 1-2 sentences, cite real counter-evidence"],
+  "bottom_line": "1 punchy sentence — the single most devastating argument against this thesis.",
+  "bullets": ["3-4 attacks — each ONE sentence max, sharp and direct. No throat-clearing. Lead with the point."],
+  "hard_facts": [{"fact": "specific data point, one clean sentence, no source in the sentence", "source": "Source Name, Year"}],
   "verdict": "2-3 sentences — after weighing steelman and counterpoint, does the original thesis survive?",
   "strength": "<one of: weak | moderate | strong | devastating>"
 }
@@ -498,8 +498,8 @@ Return valid JSON only. No markdown fences. No preamble."""
             "You are not balanced — you are adversarial. But intellectually honest. "
             "HARD FACTS are your ammunition: prioritize data from government agencies (BLS, Census Bureau, CDC, Federal Reserve, CBO, OECD, World Bank, IMF, WHO, NIH, etc.) "
             "and peer-reviewed research. Each hard_fact is an object: { fact, source, url }. The 'fact' sentence must NOT embed the source — keep fact text clean. "
-            "Bullets build the argument: target specific weaknesses — wrong data, missing context, logical fallacies, contrary evidence. "
-            "Use phrases like 'This ignores...', 'The data actually shows...', 'The fatal flaw here is...' "
+            "Bullets are short, punchy, one sentence each — lead with the attack, no preamble. "
+            "Target specific weaknesses: wrong data, missing context, logical fallacies, contrary evidence. "
             "Use current search results where available. "
             "Return ONLY valid JSON. No markdown. No preamble."
         ),
