@@ -228,63 +228,27 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   authUser: { id: string; name: string; avatar: string | null };
   onSignOut: () => void;
 }) {
-  const [bgImage, setBgImage] = useState<string | null>(null);
-  useEffect(() => {
-    let cancelled = false;
-    // TEMPORARILY DISABLED — set to true to re-enable background images
-    const ENABLE_BG = false;
-    if (!ENABLE_BG) return;
-    const page = Math.floor(Math.random() * 100) + 1;
-    fetch(`https://api.pexels.com/v1/search?query=${["animals","people+wonderment","people+confusion","people+ecstasy","factories","war"][Math.floor(Math.random()*6)]}&per_page=1&page=${page}&orientation=landscape`, {
-      headers: { Authorization: "8PIku3G38amYoSKnhCyaA0o5p40er0GSxHM56s8Rvw5dcHrgiQ0n2qwe" },
-    })
-      .then(r => r.json())
-      .then(data => {
-        if (cancelled) return;
-        const url = data.photos?.[0]?.src?.landscape;
-        if (url) {
-          const img = new Image();
-          img.src = url;
-          img.onload = () => {
-            if (cancelled) return;
-            setBgImage(url);
-          };
-          img.onerror = () => {};
-        } else {
-          // no image, nothing to do
-        }
-      })
-      .catch(() => {});
-    return () => { cancelled = true; };
-  }, []);
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative" }}>
-      {bgImage && (
-        <>
-          <div style={{
-            position: "fixed", top: 0, left: 0, right: 0, bottom: 0,
-            backgroundImage: `url(${bgImage})`,
-            backgroundSize: "cover", backgroundPosition: "center center",
-            zIndex: 0, pointerEvents: "none",
-          }} />
-          <div style={{
-            position: "fixed", top: 0, left: 0, right: 0, height: 80,
-            background: "linear-gradient(to bottom, rgba(0,0,0,0.6), transparent)",
-            zIndex: 0, pointerEvents: "none",
-          }} />
-        </>
-      )}
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
+      {/* Scribble background — radiates from top center */}
+      <div style={{
+        position: "absolute", top: -60, left: "50%", transform: "translateX(-50%)",
+        width: 500, height: 500, pointerEvents: "none", zIndex: 0,
+        backgroundImage: "url(/scribble.png)",
+        backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center",
+        opacity: 0.18,
+      }} />
       <div style={{
         padding: "20px 20px 16px",
-        borderBottom: "1px solid #EBEBEB",
+        borderBottom: "1px solid rgba(255,255,255,0.08)",
         display: "flex", alignItems: "center", justifyContent: "space-between",
         position: "relative", zIndex: 1,
       }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <span style={{ fontSize: 20, fontWeight: 700, color: bgImage ? "#FFF" : "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <SteelManIcon size={28} animate animateCount={3} color={bgImage ? "#FFF" : "#1A1A1A"} /> Steelman
+          <span style={{ fontSize: 20, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
+            <SteelManIcon size={28} animate animateCount={3} color="#FFF" /> Steelman
           </span>
-          <span style={{ fontSize: 10, color: bgImage ? "rgba(255,255,255,0.7)" : "#999", marginLeft: 36, marginTop: 2, letterSpacing: -0.4 }}>
+          <span style={{ fontSize: 10, color: "rgba(255,255,255,0.5)", marginLeft: 36, marginTop: 2, letterSpacing: -0.4 }}>
             Tap <strong>+</strong> to drop your first steelman
           </span>
         </div>
@@ -302,7 +266,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           >+</button>
           {authUser.avatar
             ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
-            : <button onClick={onSignOut} style={{ fontSize: 11, color: bgImage ? "rgba(255,255,255,0.6)" : "#AAA", background: "none", border: "none", cursor: "pointer", fontFamily: "inherit" }}>Sign out</button>
+            : <button onClick={onSignOut} style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", background: "none", border: "none", cursor: "pointer", fontFamily: "inherit" }}>Sign out</button>
           }
         </div>
       </div>
@@ -1320,15 +1284,23 @@ export default function App() {
   // Show login screen if not authenticated
   if (!authUser) {
     return (
-      <div style={{ minHeight: "100dvh", background: "#0F0F0F", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32 }}>
-        <div style={{ marginBottom: 10 }}>
+      <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative", overflow: "hidden" }}>
+        {/* Scribble on login */}
+        <div style={{
+          position: "absolute", top: -60, left: "50%", transform: "translateX(-50%)",
+          width: 500, height: 500, pointerEvents: "none", zIndex: 0,
+          backgroundImage: "url(/scribble.png)",
+          backgroundSize: "contain", backgroundRepeat: "no-repeat", backgroundPosition: "center",
+          opacity: 0.15,
+        }} />
+        <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
-        <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center" }}>Steelman</h1>
-        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, whiteSpace: "nowrap" }}>
+        <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center", position: "relative", zIndex: 1 }}>Steelman</h1>
+        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, whiteSpace: "nowrap", position: "relative", zIndex: 1 }}>
           A <strong style={{ color: "rgba(255,255,255,0.7)" }}>Steelman</strong> is the strongest argument for an idea.
         </p>
-        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
+        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
           Drop in any claim. We build the case.<br />
           Then we stress test it.<br />
           To see what holds up.
