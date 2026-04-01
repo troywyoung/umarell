@@ -979,7 +979,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
     }
   };
 
-  const isProcessing = obs.status === "formatting" || obs.status === "researching";
+  const isProcessing = obs.status === "formatting" || obs.status === "researching" || resubmitting;
   const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
   const isOwner = !obs.user_id || obs.user_id === authUserId;
 
@@ -1062,7 +1062,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               <SteelManIcon size={49} animate />
               <div>
                 <p style={{ fontSize: 15, fontWeight: 600, color: "#FFF", margin: "0 0 4px" }}>
-                  {obs.status === "formatting" ? "Reading your take\u2026" : "Building steelman\u2026"}
+                  {resubmitting ? "Resubmitting\u2026" : obs.status === "formatting" ? "Reading your take\u2026" : "Building steelman\u2026"}
                 </p>
                 <p style={{ fontSize: 13, color: "rgba(255,255,255,0.45)", margin: 0 }}>This usually takes a few seconds</p>
               </div>
@@ -1496,6 +1496,7 @@ export default function App() {
   const { observations, loading, fetchObservations, submitObservation, editObservation, pollObservation, requestCounterpoint, requestPvaTake, deleteObservation } = useObservations();
   const [view, setView] = useState<View>("home");
   const [selectedObs, setSelectedObs] = useState<Observation | null>(null);
+  const [outputKey, setOutputKey] = useState(0);
   const [challengingObs, setChallengingObs] = useState<Observation | null>(null);
 
   useEffect(() => {
@@ -1598,7 +1599,7 @@ export default function App() {
     const inputType = imageData ? "screenshot" : (text.startsWith("http") ? "url" : "text");
     const obs = await editObservation(obsId, text, inputType, imageData, imageMediaType);
     setSelectedObs(obs);
-    // view stays on "output"
+    setOutputKey((k) => k + 1); // force OutputView remount with fresh state
   };
 
   if (view === "capture") {
@@ -1620,6 +1621,7 @@ export default function App() {
   if (view === "output" && selectedObs) {
     return (
       <OutputView
+        key={outputKey}
         obs={selectedObs}
         onBack={() => { setView("home"); window.history.replaceState(null, "", window.location.pathname); fetchObservations(); setTimeout(() => window.scrollTo(0, 0), 0); }}
         onResubmit={handleResubmit}
