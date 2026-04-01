@@ -316,7 +316,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             challengeMap.set(c.parent_id!, arr);
           });
 
-          const renderCard = (obs: Observation, isChallenge: boolean) => {
+          const renderCard = (obs: Observation) => {
             const steelBullets = (obs.summary || "").split(/\n+/).map((l: string) => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
             const firstBullet = steelBullets[0] || "";
             return (
@@ -325,29 +325,24 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 onClick={() => onSelect(obs)}
                 style={{
                   borderRadius: 10,
-                  background: isChallenge ? "#EEF4FF" : "#FFF",
+                  background: "#FFF",
                   border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", overflow: "hidden",
                 }}
               >
-                {isChallenge && (
-                  <div style={{ padding: "8px 12px 0", display: "flex", alignItems: "center", gap: 5 }}>
-                    <span style={{ fontSize: 9, fontWeight: 700, color: "#5C8EFF" }}>↩ CHALLENGE</span>
-                  </div>
-                )}
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: isChallenge ? "6px 12px 6px 12px" : "10px 12px 6px 12px" }}>
-                  {obs.image_data && !isChallenge && (
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "10px 12px 6px 12px" }}>
+                  {obs.image_data && (
                     <img
                       src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
                       style={{ width: 65, height: 65, borderRadius: 6, objectFit: "cover", flexShrink: 0 }}
                     />
                   )}
                   <p style={{
-                    fontSize: isChallenge ? 11 : 12, fontWeight: 700,
+                    fontSize: 12, fontWeight: 700,
                     color: "#1A1A1A", lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
                     overflow: "hidden", display: "-webkit-box",
-                    WebkitLineClamp: isChallenge ? 3 : 4, WebkitBoxOrient: "vertical",
+                    WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
                   }}>
                     {obs.thesis || obs.raw_input}
                   </p>
@@ -361,14 +356,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                       {Math.round(obs.score)}
                     </span>
                   )}
-                  {!isChallenge && (
-                    <button
-                      onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steel man?")) onDelete(obs.id); }}
-                      style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
-                    >&times;</button>
-                  )}
+                  <button
+                    onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steel man?")) onDelete(obs.id); }}
+                    style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
+                  >&times;</button>
                 </div>
-                {firstBullet && !isChallenge && (
+                {firstBullet && (
                   <p style={{
                     fontSize: 10, color: "#555", lineHeight: 1.55,
                     margin: 0, padding: "0 12px 8px 12px",
@@ -380,43 +373,57 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 )}
                 {(obs.status === "formatting" || obs.status === "researching") && (
                   <div style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "0 12px 8px" }}>
-                    <SteelManIcon size={isChallenge ? 12 : 14} animate />
+                    <SteelManIcon size={14} animate />
                     <span style={{ fontSize: 10, color: "#999", fontStyle: "italic" }}>
                       {obs.status === "formatting" ? "Formatting\u2026" : "Researching\u2026"}
                     </span>
                   </div>
                 )}
-                {!isChallenge && (
-                  <div style={{
-                    display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap",
-                    padding: "6px 12px 10px",
-                    borderTop: "1px solid #F5F5F2",
-                  }}>
-                    <span style={{ fontSize: 8, fontWeight: 600, color: "#B0B0A8", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
-                    <EvidenceBadge value={obs.evidence_type} />
-                    {obs.tags?.map((tag: string) => (
-                      <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
-                    ))}
-                    {obs.status === "complete" && obs.thesis && (
-                      <span style={{ marginLeft: "auto" }}>
-                        <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
-                      </span>
-                    )}
-                  </div>
-                )}
+                <div style={{
+                  display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap",
+                  padding: "6px 12px 10px",
+                  borderTop: "1px solid #F5F5F2",
+                }}>
+                  <span style={{ fontSize: 8, fontWeight: 600, color: "#B0B0A8", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
+                  <EvidenceBadge value={obs.evidence_type} />
+                  {obs.tags?.map((tag: string) => (
+                    <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
+                  ))}
+                  {obs.status === "complete" && obs.thesis && (
+                    <span style={{ marginLeft: "auto" }}>
+                      <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
+                    </span>
+                  )}
+                </div>
               </div>
             );
           };
+
+          const renderChallenge = (c: Observation) => (
+            <div
+              key={c.id}
+              onClick={() => onSelect(c)}
+              style={{
+                borderRadius: 10, background: "#FFF",
+                boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
+                padding: "10px 12px", cursor: "pointer",
+                overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis",
+              }}
+            >
+              <span style={{ fontSize: 11, fontWeight: 800, color: "#E53935", letterSpacing: 0.2 }}>Challenge: </span>
+              <span style={{ fontSize: 11, fontWeight: 600, color: "#1A1A1A" }}>{c.thesis || c.raw_input}</span>
+            </div>
+          );
 
           return topLevel.map(obs => {
             const children = (challengeMap.get(obs.id) || [])
               .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
             return (
               <div key={obs.id} style={{ marginBottom: 10 }}>
-                {renderCard(obs, false)}
+                {renderCard(obs)}
                 {children.map(c => (
-                  <div key={c.id} style={{ marginTop: 0, marginLeft: 16 }}>
-                    {renderCard(c, true)}
+                  <div key={c.id} style={{ marginTop: 4 }}>
+                    {renderChallenge(c)}
                   </div>
                 ))}
               </div>
