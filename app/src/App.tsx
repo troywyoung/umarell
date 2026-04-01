@@ -364,10 +364,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 {firstBullet && (
                   <p style={{
                     fontSize: 10, color: "#555", lineHeight: 1.55,
-                    margin: 0, padding: "0 12px 8px 12px",
-                    overflow: "hidden", display: "-webkit-box",
-                    WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
-                  } as React.CSSProperties}>
+                    margin: 0, padding: "0 12px 10px 12px",
+                  }}>
                     {firstBullet}
                   </p>
                 )}
