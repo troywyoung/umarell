@@ -408,7 +408,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 borderRadius: 10, background: "#EEF4FF",
                 boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                 padding: "10px 12px", cursor: "pointer",
-                display: "flex", alignItems: "center", gap: 8,
+                display: "flex", alignItems: "center", gap: 4,
                 overflow: "hidden",
               }}
             >
