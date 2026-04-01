@@ -377,16 +377,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
-          <button
-            onClick={onCapture}
-            style={{
-              width: 32, height: 32, borderRadius: "50%",
-              background: "#FF00AE", border: "none", cursor: "pointer",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              fontSize: 22, fontWeight: 800, color: "#fff", lineHeight: 1, padding: "0 0 1px 0",
-              WebkitTapHighlightColor: "transparent",
-            }}
-          >+</button>
           {authUser.avatar
             ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
             : <button onClick={onSignOut} style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", background: "none", border: "none", cursor: "pointer", fontFamily: "inherit" }}>Sign out</button>
@@ -395,7 +385,13 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       </div>
 
       <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
-        <p style={{ fontSize: 11, fontWeight: 600, color: "rgba(255,255,255,0.75)", textAlign: "center", margin: "8px 0 4px", letterSpacing: -0.2 }}>Tap + to drop your first steelman</p>
+        {observations.length === 0 && !loading && (
+          <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
+            <p style={{ fontSize: 22, fontWeight: 800, color: "#FFF", letterSpacing: -0.5, margin: "0 0 10px" }}>Drop your first take.</p>
+            <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 28px" }}>Paste a URL, share a claim, or describe an idea. We'll steelman it in the PvA voice.</p>
+            <button onClick={onCapture} style={{ background: "#FF00AE", color: "#fff", border: "none", borderRadius: 100, padding: "14px 36px", fontSize: 16, fontWeight: 700, cursor: "pointer", letterSpacing: -0.3, WebkitTapHighlightColor: "transparent" }}>＋ Drop a steelman</button>
+          </div>
+        )}
         {observations.length === 0 && !loading ? null : (() => {
           const topLevel = [...observations]
             .filter(o => !o.parent_id)
@@ -582,18 +578,33 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             );
           };
 
+          // Split recent posts: first 2 above bundle, rest below
+          const recentAbove = recentPosts.slice(0, 2);
+          const recentBelow = recentPosts.slice(2);
+
           return (
             <>
-              {/* Episode bundles pinned top */}
-              {episodes.map(item => item.type === "episode" && (
-                <EpisodeSection key={item.tag} title={item.title} observations={item.obs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
-              ))}
-
-              {/* Recent posts (last 24h) */}
-              {recentPosts.length > 0 && (
+              {/* First 2 recent posts */}
+              {recentAbove.length > 0 && (
                 <div>
                   <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.75)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>Recent</div>
-                  {recentPosts.map(renderPost)}
+                  {recentAbove.map(renderPost)}
+                </div>
+              )}
+
+              {/* Episode bundle — after first 2 recent posts */}
+              {episodes.map(item => item.type === "episode" && (
+                <div key={item.tag}>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.75)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>This Week on PvA</div>
+                  <EpisodeSection title={item.title} observations={item.obs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
+                </div>
+              ))}
+
+              {/* Remaining recent posts */}
+              {recentBelow.length > 0 && (
+                <div>
+                  {recentAbove.length === 0 && <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.75)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>Recent</div>}
+                  {recentBelow.map(renderPost)}
                 </div>
               )}
 
