@@ -264,7 +264,7 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
         <p style={{ fontSize: 9, fontWeight: 800, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 4px" }}>
           PvA Episode Bundle <span style={{ color: "rgba(255,255,255,0.25)", fontWeight: 600 }}>· {dateStr}</span>
         </p>
-        <p style={{ fontSize: 18, fontWeight: 600, color: "#FFF", fontFamily: "'Permanent Marker', cursive", letterSpacing: -0.8, margin: 0 }}>
+        <p style={{ fontSize: 16, fontWeight: 800, color: "#FFF", letterSpacing: -0.4, margin: 0 }}>
           {title} <span style={{ color: "rgba(255,255,255,0.35)" }}>({observations.length})</span>
         </p>
       </div>
@@ -594,7 +594,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Recent posts (last 24h) */}
               {recentPosts.length > 0 && (
                 <div>
-                  <div style={{ fontSize: 15, fontWeight: 600, color: "#FFF", fontFamily: "'Permanent Marker', cursive", letterSpacing: 0.5, padding: "14px 4px 6px" }}>recent</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>Recent</div>
                   {recentPosts.map(renderPost)}
                 </div>
               )}
@@ -602,7 +602,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Posts older than 12h grouped by topic category */}
               {sortedCategories.map(([cat, items]) => (
                 <div key={cat}>
-                  <div style={{ fontSize: 15, fontWeight: 600, color: "#FFF", fontFamily: "'Permanent Marker', cursive", letterSpacing: 0.5, textTransform: "lowercase", padding: "14px 4px 6px" }}>{cat}</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.75)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>{cat}</div>
                   {items.map(renderPost)}
                 </div>
               ))}
@@ -1153,7 +1153,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {obs.status === "complete" && obs.thesis && obs.thesis !== "image" && (
           <div style={{ marginBottom: 12 }}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", margin: "0 0 8px" }}>
-              <p style={{ fontSize: 15, fontWeight: 600, color: "#FFF", fontFamily: "'Permanent Marker', cursive", letterSpacing: 0.5, margin: 0 }}>thesis</p>
+              <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: 0 }}>Thesis</p>
               {!obs.parent_id && (
                 <button
                   onClick={(e) => { e.stopPropagation(); onChallenge(obs); }}
