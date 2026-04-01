@@ -237,7 +237,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         backgroundSize: "cover", backgroundPosition: "center top",
         backgroundRepeat: "no-repeat",
         zIndex: 0, pointerEvents: "none",
-        opacity: 0.18,
       }} />
       <div style={{
         padding: "20px 20px 16px",
@@ -1293,7 +1292,6 @@ export default function App() {
           backgroundSize: "cover", backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
           zIndex: 0, pointerEvents: "none",
-          opacity: 0.15,
         }} />
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
           <SteelManIcon size={48} animate color="#FFF" />
