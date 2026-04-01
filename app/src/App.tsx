@@ -259,7 +259,7 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
     const t = new Date(o.created_at).getTime();
     return t < min ? t : min;
   }, Infinity);
-  const dateStr = isFinite(earliest) ? new Date(earliest).toLocaleDateString("en-US", { month: "short", day: "numeric" }) : "";
+  const dateStr = isFinite(earliest) ? new Date(earliest).toLocaleDateString("en-US", { month: "long", day: "numeric" }) : "";
 
   return (
     <div style={{ margin: "16px 0" }}>
@@ -272,15 +272,10 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
           WebkitTapHighlightColor: "transparent",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
-          <span style={{ fontSize: 9, fontWeight: 800, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase" }}>People vs Algorithms</span>
-          <span style={{ fontSize: 9, color: "rgba(255,255,255,0.3)" }}>·</span>
-          <span style={{ fontSize: 9, fontWeight: 600, color: "rgba(255,255,255,0.35)", letterSpacing: 0.3 }}>{dateStr}</span>
+        <p style={{ fontSize: 9, fontWeight: 800, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 4px" }}>People vs Algorithms <span style={{ color: "rgba(255,255,255,0.3)", fontWeight: 600 }}>· EP {dateStr}</span></p>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <span style={{ fontSize: 16, fontWeight: 800, color: "#FFF", letterSpacing: -0.4 }}>{title} <span style={{ color: "rgba(255,255,255,0.35)" }}>({observations.length})</span></span>
           <span style={{ marginLeft: "auto", fontSize: 11, color: "rgba(255,255,255,0.25)", transition: "transform 0.2s", transform: expanded ? "rotate(0deg)" : "rotate(-90deg)" }}>▼</span>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <span style={{ fontSize: 16, fontWeight: 800, color: "#FFF", letterSpacing: -0.4 }}>{title}</span>
-          <span style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", fontWeight: 600 }}>{observations.length}</span>
         </div>
       </div>
       {/* Episode cards */}
