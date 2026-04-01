@@ -1200,7 +1200,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 {steelHardFacts.map((fact, i) => (
                   <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                     <span style={{ color: "rgba(255,200,50,0.8)", fontWeight: 800, fontSize: 13, lineHeight: 1, marginTop: 3, flexShrink: 0 }}>—</span>
-                    <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}>{fact}</p>
+                    <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}><HardFact text={fact} /></p>
                   </div>
                 ))}
               </div>
@@ -1268,7 +1268,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                   {cpHardFacts.map((fact, i) => (
                     <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                       <span style={{ color: "rgba(255,200,50,0.8)", fontWeight: 800, fontSize: 13, lineHeight: 1, marginTop: 3, flexShrink: 0 }}>—</span>
-                      <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}>{fact}</p>
+                      <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}><HardFact text={fact} /></p>
                     </div>
                   ))}
                 </div>
@@ -1353,6 +1353,12 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 }
 
 // ─── Shared components ────────────────────────────────────────────────────
+
+function HardFact({ text }: { text: string }) {
+  const match = text.match(/^(.*?)(\s*\([^)]+\))$/);
+  if (!match) return <>{text}</>;
+  return <>{match[1]}<span style={{ color: "rgba(255,200,50,0.45)", fontSize: 12 }}>{match[2]}</span></>;
+}
 
 function PulsingDot() {
   return (

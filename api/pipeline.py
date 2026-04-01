@@ -333,7 +333,7 @@ async def generate_steel_man(thesis: str, challenge_context: str | None = None) 
 Return a JSON object with exactly these keys:
 {
   "bottom_line": "1-2 sentences — the single strongest argument for this thesis. This is the headline takeaway.",
-  "hard_facts": ["2-4 hard empirical data points — specific numbers, percentages, or measurements from government agencies (BLS, Census Bureau, CDC, Fed, CBO, OECD, World Bank, etc.), peer-reviewed studies, or official statistics. Format: stat + source in parentheses. No vague claims."],
+  "hard_facts": ["2-4 hard empirical data points — specific numbers from government agencies or peer-reviewed research. Every fact MUST end with the source in parentheses. Example: '47% of U.S. adults are obese (CDC, 2023)' or 'GDP grew 2.5% in Q3 (Bureau of Economic Analysis)'. No vague claims. No facts without a source."],
   "bullets": ["3-5 evidence-backed arguments supporting the thesis — each 1-2 sentences max, cite real events, named examples, or studies"]
 }
 
@@ -470,7 +470,7 @@ Now tear this thesis apart. You are the opposing counsel. Build the most aggress
 Return a JSON object with exactly these keys:
 {
   "bottom_line": "1-2 sentences — the single strongest reason this thesis is wrong",
-  "hard_facts": ["2-4 hard empirical data points that contradict or complicate the thesis — specific numbers, percentages, or measurements from government agencies (BLS, Census Bureau, CDC, Fed, CBO, OECD, World Bank, etc.), peer-reviewed studies, or official statistics. Format: stat + source in parentheses."],
+  "hard_facts": ["2-4 hard empirical data points that contradict or complicate the thesis — specific numbers from government agencies or peer-reviewed research. Every fact MUST end with the source in parentheses. Example: '47% of U.S. adults are obese (CDC, 2023)' or 'GDP grew 2.5% in Q3 (Bureau of Economic Analysis)'. No vague claims. No facts without a source."],
   "bullets": ["3-5 targeted attacks on the thesis — each 1-2 sentences, cite real counter-evidence"],
   "verdict": "2-3 sentences — after weighing steelman and counterpoint, does the original thesis survive?",
   "strength": "<one of: weak | moderate | strong | devastating>"
