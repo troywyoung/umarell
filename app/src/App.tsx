@@ -464,11 +464,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   </div>
                 )}
                 <div style={{
-                  display: "flex", alignItems: "center", justifyContent: "space-between",
+                  display: "flex", alignItems: "flex-start",
                   padding: "6px 12px 10px",
                   borderTop: "1px solid #F5F5F2",
                 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 5, flexWrap: "wrap", flex: 1 }}>
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", gap: 5, flexWrap: "wrap", flex: 1 }}>
                     <span style={{ fontSize: 8, fontWeight: 600, color: "rgba(255,255,255,0.35)", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
                     <EvidenceBadge value={obs.evidence_type} />
                     {obs.tags?.map((tag: string) => (
