@@ -97,7 +97,24 @@ app.add_middleware(
 async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg"):
     async with AsyncSessionLocal() as db:
         try:
-            thesis = await format_thesis(raw_input, input_type, image_b64, image_media_type)
+            # If this is a challenge, fetch parent context
+            obs = await db.get(Observation, observation_id)
+            if not obs:
+                return
+            parent_context = None
+            if obs.parent_id:
+                parent = await db.get(Observation, obs.parent_id)
+                if parent and parent.thesis:
+                    parent_context = f"ORIGINAL CLAIM: {parent.thesis}"
+                    if parent.summary:
+                        parent_context += f"\n\nORIGINAL STEEL MAN:\n{parent.summary}"
+
+            if parent_context:
+                challenge_input = f"{parent_context}\n\nCOUNTER-ARGUMENT: {raw_input}"
+                thesis = await format_thesis(challenge_input, "text", None, image_media_type)
+            else:
+                thesis = await format_thesis(raw_input, input_type, image_b64, image_media_type)
+
             obs = await db.get(Observation, observation_id)
             if not obs:
                 return
@@ -105,7 +122,10 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             obs.status = "researching"
             await db.commit()
 
-            steel_man, sources = await generate_steel_man(thesis)
+            if parent_context:
+                steel_man, sources = await generate_steel_man(thesis, challenge_context=parent_context)
+            else:
+                steel_man, sources = await generate_steel_man(thesis)
             obs = await db.get(Observation, observation_id)
             if not obs:
                 return

@@ -298,19 +298,33 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
     )
 
 
-async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
+async def generate_steel_man(thesis: str, challenge_context: str | None = None) -> tuple[str, list[dict]]:
     """Generate 4-5 punchy bullet points making the strongest case FOR the thesis.
     Returns (steel_man_text, sources) where sources is a list of {url, title} dicts."""
     search_context, sources = "", []
     if PROVIDER == "anthropic" and settings.tavily_api_key:
         search_context, sources = await _search_tavily(thesis)
 
-    user_prompt = f"Steel man this thesis: {thesis}"
+    if challenge_context:
+        user_prompt = f"{challenge_context}\n\nCHALLENGE THESIS TO STEEL MAN: {thesis}"
+    else:
+        user_prompt = f"Steel man this thesis: {thesis}"
     if search_context:
         user_prompt += f"\n\nCurrent real-world context and evidence to draw from:\n{search_context}"
 
-    result = await _call(
-        system=(
+    if challenge_context:
+        system = (
+            "You are a world-class intellectual advocate. "
+            "You are given an ORIGINAL CLAIM and its steel man, plus a CHALLENGE THESIS that opposes it. "
+            "Your job: build the strongest case FOR the challenge thesis, directly addressing why the original claim is wrong. "
+            "Produce exactly 4-5 bullet points. Each bullet must: (1) directly counter the original claim, "
+            "(2) cite a real statistic, study, event, or named example, (3) be 1-2 sentences max. "
+            "Stay focused on the debate between original and challenge — do not go off topic. "
+            "CRITICAL: Output ONLY the bullet points starting with '•'. Zero preamble. Zero summary. "
+            "First character of your response must be '•'."
+        )
+    else:
+        system = (
             "You are a world-class intellectual advocate — part lawyer, part researcher, part analyst. "
             "Your job is to construct the most powerful, evidence-based case FOR a thesis. "
             "Produce exactly 4-5 bullet points. Each bullet must: (1) make one specific, substantive claim, "
@@ -319,7 +333,10 @@ async def generate_steel_man(thesis: str) -> tuple[str, list[dict]]:
             "Use current real-world data from your search results where available. "
             "CRITICAL: Output ONLY the bullet points starting with '•'. Zero preamble. Zero summary. "
             "First character of your response must be '•'."
-        ),
+        )
+
+    result = await _call(
+        system=system,
         user=user_prompt,
         max_tokens=2000,
         use_search=(PROVIDER == "gemini"),
