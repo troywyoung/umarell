@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc
+import httpx
 from jose import jwt, JWTError
 from pydantic import BaseModel
 from database import init_db, get_db, AsyncSessionLocal
