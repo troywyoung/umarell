@@ -1539,16 +1539,16 @@ function ShareButton({ obsId, onClick, prominent = false }: { obsId: string; onC
       <button
         onClick={handleShare}
         style={{
-          display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
-          width: "100%", padding: "13px 0",
-          background: copied ? "rgba(255,0,174,0.15)" : "#FF00AE",
-          border: "none", borderRadius: 12, cursor: "pointer",
-          color: "#FFF", fontSize: 15, fontWeight: 700, fontFamily: "inherit",
+          display: "inline-flex", alignItems: "center", gap: 6,
+          padding: "7px 14px",
+          background: "none",
+          border: "1.5px solid rgba(255,255,255,0.3)", borderRadius: 100, cursor: "pointer",
+          color: copied ? "#FF00AE" : "rgba(255,255,255,0.75)", fontSize: 13, fontWeight: 600, fontFamily: "inherit",
           WebkitTapHighlightColor: "transparent",
-          transition: "background 0.2s",
+          transition: "color 0.2s, border-color 0.2s",
         }}
       >
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
           <path d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8" />
           <polyline points="16 6 12 2 8 6" />
           <line x1="12" y1="2" x2="12" y2="15" />
