@@ -415,7 +415,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 onClick={() => onSelect(obs)}
                 style={{
                   borderRadius: 10,
-                  background: "#FFF",
+                  background: obs.episode_tag ? "#EFEFED" : "#FFF",
                   border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", overflow: "hidden",
@@ -529,7 +529,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           episodeMap.forEach(({ title, obs: epObs, earliest }, tag) => {
             feedItems.push({ type: "episode", tag, title, obs: epObs, time: earliest });
           });
-          feedItems.sort((a, b) => b.time - a.time);
+          feedItems.sort((a, b) => {
+            if (a.type === "episode" && b.type !== "episode") return -1;
+            if (b.type === "episode" && a.type !== "episode") return 1;
+            return b.time - a.time;
+          });
 
           return (
             <>
@@ -1007,12 +1011,14 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
   const isOwner = !obs.user_id || obs.user_id === authUserId;
 
-  // Parse summary — handles new JSON format {bottom_line, bullets} and legacy plain text
+  // Parse summary — handles new JSON format {bottom_line, hard_facts, bullets} and legacy plain text
   let steelBottomLine = "";
+  let steelHardFacts: string[] = [];
   let steelBullets: string[] = [];
   try {
     const parsed = JSON.parse(obs.summary || "");
     steelBottomLine = parsed.bottom_line || "";
+    steelHardFacts = Array.isArray(parsed.hard_facts) ? parsed.hard_facts : [];
     steelBullets = Array.isArray(parsed.bullets) ? parsed.bullets : [];
   } catch {
     steelBullets = (obs.summary || "").split(/\n+/).map(l => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
@@ -1173,8 +1179,8 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {/* Metadata row: evidence type, score, tags */}
         {obs.status === "complete" && (obs.evidence_type || obs.score != null || obs.tags?.length) && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center", marginBottom: 20 }}>
-            <EvidenceBadge value={obs.evidence_type} size="lg" />
             <ScoreBadge value={obs.score} size="lg" />
+            <EvidenceBadge value={obs.evidence_type} size="lg" />
             {obs.tags?.map((tag) => (
               <span key={tag} style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", background: "rgba(255,255,255,0.08)", borderRadius: 100, padding: "3px 9px", fontWeight: 600 }}>{tag}</span>
             ))}
@@ -1207,7 +1213,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         )}
 
         {/* Steelman — always visible when complete */}
-        {obs.status === "complete" && (steelBottomLine || steelBullets.length > 0) && (
+        {obs.status === "complete" && (steelBottomLine || steelHardFacts.length > 0 || steelBullets.length > 0) && (
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
@@ -1215,6 +1221,20 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
+
+            {/* Hard Facts */}
+            {steelHardFacts.length > 0 && (
+              <div style={{ marginBottom: 20 }}>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,200,50,0.7)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>Hard Facts</p>
+                {steelHardFacts.map((fact, i) => (
+                  <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
+                    <span style={{ color: "rgba(255,200,50,0.8)", fontWeight: 800, fontSize: 13, lineHeight: 1, marginTop: 3, flexShrink: 0 }}>—</span>
+                    <p style={{ fontSize: 14, color: "rgba(255,255,255,0.9)", lineHeight: 1.6, margin: 0, fontVariantNumeric: "tabular-nums" }}>{fact}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+
             {steelBullets.map((bullet, i) => (
               <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
                 <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
@@ -1224,7 +1244,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
             {/* Sources — inline comma-separated */}
             {obs.sources && obs.sources.length > 0 && (
-              <p style={{ marginTop: 20, paddingTop: 12, borderTop: "1px solid rgba(255,255,255,0.08)", fontSize: 11, color: "rgba(255,255,255,0.35)", lineHeight: 1.6, margin: "20px 0 0" }}>
+              <p style={{ marginTop: 20, paddingTop: 12, borderTop: "1px solid rgba(255,255,255,0.08)", fontSize: 11, color: "rgba(255,255,255,0.35)", lineHeight: 1.6, margin: "20px 0 0", wordBreak: "break-word", overflowWrap: "anywhere" }}>
                 <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", marginRight: 6 }}>Sources</span>
                 {obs.sources.map((src, i) => (
                   <span key={i}>

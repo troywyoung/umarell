@@ -333,7 +333,8 @@ async def generate_steel_man(thesis: str, challenge_context: str | None = None) 
 Return a JSON object with exactly these keys:
 {
   "bottom_line": "1-2 sentences — the single strongest argument for this thesis. This is the headline takeaway.",
-  "bullets": ["4-6 evidence-backed bullets supporting the thesis — each 1-2 sentences max, cite real data/studies/examples"]
+  "hard_facts": ["2-4 hard empirical data points — specific numbers, percentages, or measurements from government agencies (BLS, Census Bureau, CDC, Fed, CBO, OECD, World Bank, etc.), peer-reviewed studies, or official statistics. Format: stat + source in parentheses. No vague claims."],
+  "bullets": ["3-5 evidence-backed arguments supporting the thesis — each 1-2 sentences max, cite real events, named examples, or studies"]
 }
 
 Return valid JSON only. No markdown fences. No preamble."""
@@ -344,6 +345,7 @@ Return valid JSON only. No markdown fences. No preamble."""
             "You are given an ORIGINAL CLAIM and its steel man, plus a CHALLENGE THESIS that opposes it. "
             "Your job: build the strongest case FOR the challenge thesis, directly addressing why the original claim is wrong. "
             "The bottom_line is the single most devastating argument against the original claim. "
+            "HARD FACTS must come from government sources, official statistics, or peer-reviewed research — specific numbers only. "
             "Each bullet must directly counter the original claim with real evidence. "
             "Stay focused on the debate. Use current search results where available. "
             "Return ONLY valid JSON. No markdown. No preamble."
@@ -353,7 +355,9 @@ Return valid JSON only. No markdown fences. No preamble."""
             "You are a world-class intellectual advocate — part lawyer, part researcher, part analyst. "
             "Your job is to construct the most powerful, evidence-based case FOR a thesis. "
             "The bottom_line is the single strongest argument — the verdict on why this holds up. "
-            "Each bullet must make one specific, substantive claim citing real data, studies, events, or named examples. "
+            "HARD FACTS are the foundation: prioritize data from government agencies (BLS, Census Bureau, CDC, Federal Reserve, CBO, OECD, World Bank, IMF, WHO, NIH, etc.), "
+            "peer-reviewed journals, and official statistics. Every hard fact must include a specific number and its source. "
+            "Bullets build the argument using named examples, events, and studies. "
             "Prioritize depth and specificity over breadth. Avoid vague generalities. "
             "Use current real-world data from your search results where available. "
             "Return ONLY valid JSON. No markdown. No preamble."
@@ -375,6 +379,8 @@ Return valid JSON only. No markdown fences. No preamble."""
     # Ensure expected structure
     if "bottom_line" not in parsed:
         parsed["bottom_line"] = ""
+    if "hard_facts" not in parsed:
+        parsed["hard_facts"] = []
     if "bullets" not in parsed:
         parsed["bullets"] = []
     return parsed, sources

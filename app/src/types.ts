@@ -1,5 +1,6 @@
 export interface SteelmanResult {
   bottom_line: string;
+  hard_facts?: string[];
   bullets: string[];
 }
 
