@@ -27,22 +27,29 @@ else:
     ACTIVE_MODEL = CLAUDE_MODEL
 
 
+def _clean_json_str(s: str) -> str:
+    """Remove invalid control characters that break JSON parsing."""
+    # Strip markdown fences
+    s = re.sub(r'^```(?:json)?\s*', '', s.strip())
+    s = re.sub(r'\s*```$', '', s)
+    # Remove ASCII control chars except tab/newline/CR
+    s = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', s)
+    return s.strip()
+
+
 def _extract_json(raw: str) -> dict:
-    """Robustly extract JSON from LLM response that may have markdown fences."""
-    try:
-        return json.loads(raw.strip())
-    except json.JSONDecodeError:
-        pass
-    cleaned = re.sub(r'^```(?:json)?\s*', '', raw.strip())
-    cleaned = re.sub(r'\s*```$', '', cleaned)
-    try:
-        return json.loads(cleaned.strip())
-    except json.JSONDecodeError:
-        pass
-    start = raw.find('{')
-    end = raw.rfind('}')
+    """Robustly extract JSON from LLM response that may have markdown fences or control chars."""
+    for candidate in [raw.strip(), _clean_json_str(raw)]:
+        try:
+            return json.loads(candidate)
+        except json.JSONDecodeError:
+            pass
+    # Last resort: find outermost braces
+    cleaned = _clean_json_str(raw)
+    start = cleaned.find('{')
+    end = cleaned.rfind('}')
     if start != -1 and end != -1:
-        return json.loads(raw[start:end+1])
+        return json.loads(cleaned[start:end+1])
     raise ValueError(f"Could not parse JSON from: {raw[:200]}")
 
 
