@@ -241,7 +241,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 }) {
   const [scribblePos] = useState(() => getRandomScribblePos());
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative" }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
       {/* Scribble image — random position each load, always cropped */}
       <img
         src="/scribble.png"
