@@ -536,9 +536,10 @@ async def seed_episode(
 @app.post("/admin/backfill-hard-facts")
 async def backfill_hard_facts(
     admin_key: str,
+    force: bool = False,
     db: AsyncSession = Depends(get_db),
 ):
-    """Re-generate steelman for any complete observation missing hard_facts.
+    """Re-generate steelman for complete observations missing hard_facts (or all if force=true).
     Runs sequentially to avoid hammering the LLM API."""
     import json as _json
     if admin_key != settings.google_api_key:
@@ -551,15 +552,22 @@ async def backfill_hard_facts(
     )
     observations = list(result.scalars().all())
 
-    # Filter to those missing hard_facts
-    to_backfill = []
-    for obs in observations:
+    # Filter — force=True re-runs everything; otherwise only missing/empty hard_facts
+    def _needs_backfill(obs) -> bool:
+        if force:
+            return True
         try:
             parsed = _json.loads(obs.summary)
-            if "hard_facts" not in parsed or not parsed["hard_facts"]:
-                to_backfill.append(obs)
+            # Re-run if hard_facts missing, empty, or no fact has a parenthetical source
+            facts = parsed.get("hard_facts", [])
+            if not facts:
+                return True
+            import re
+            return not any(re.search(r'\([^)]+\)', f) for f in facts)
         except (ValueError, TypeError):
-            to_backfill.append(obs)  # legacy plain-text format
+            return True
+
+    to_backfill = [obs for obs in observations if _needs_backfill(obs)]
 
     updated = 0
     errors = 0
