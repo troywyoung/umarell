@@ -1020,6 +1020,38 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           </div>
         )}
 
+        {/* Action buttons: Counterpoint + PvA Take */}
+        {obs.status === "complete" && (
+          <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
+            <button
+              onClick={handleCounterpoint}
+              style={{
+                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
+                background: showCounterpoint ? "#FF00AE" : "rgba(255,255,255,0.08)",
+                color: showCounterpoint ? "#FFF" : "rgba(255,255,255,0.5)",
+                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
+                WebkitTapHighlightColor: "transparent",
+                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+              }}
+            >
+              {counterpointLoading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : "Counterpoint"}
+            </button>
+            <button
+              onClick={() => handlePvaTake(pvaVoice)}
+              style={{
+                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
+                background: showPva ? "#FF00AE" : "rgba(255,255,255,0.08)",
+                color: showPva ? "#FFF" : "rgba(255,255,255,0.5)",
+                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
+                WebkitTapHighlightColor: "transparent",
+                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+              }}
+            >
+              {pvaLoading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : "PvA Take"}
+            </button>
+          </div>
+        )}
+
         {/* Steelman — always visible when complete */}
         {obs.status === "complete" && (steelBottomLine || steelBullets.length > 0) && (
           <>
@@ -1050,38 +1082,6 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               </div>
             )}
           </>
-        )}
-
-        {/* Action buttons: Counterpoint + PvA Take */}
-        {obs.status === "complete" && (
-          <div style={{ display: "flex", gap: 8, marginTop: 24, marginBottom: 8 }}>
-            <button
-              onClick={handleCounterpoint}
-              style={{
-                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: showCounterpoint ? "#FF00AE" : "rgba(255,255,255,0.08)",
-                color: showCounterpoint ? "#FFF" : "rgba(255,255,255,0.5)",
-                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent",
-                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
-              }}
-            >
-              {counterpointLoading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : "Counterpoint"}
-            </button>
-            <button
-              onClick={() => handlePvaTake(pvaVoice)}
-              style={{
-                flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                background: showPva ? "#FF00AE" : "rgba(255,255,255,0.08)",
-                color: showPva ? "#FFF" : "rgba(255,255,255,0.5)",
-                fontSize: 13, fontWeight: 700, fontFamily: "inherit",
-                WebkitTapHighlightColor: "transparent",
-                display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
-              }}
-            >
-              {pvaLoading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : "PvA Take"}
-            </button>
-          </div>
         )}
 
         {/* Counterpoint section */}
