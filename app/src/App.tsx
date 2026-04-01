@@ -1319,9 +1319,8 @@ export default function App() {
         </p>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
           <strong style={{ color: "rgba(255,255,255,0.7)" }}>Drop in any claim.</strong><br />
-          We build the case and stress test it.<br />
-          You challenge others claims.<br />
-          See what holds up.
+          We build the case.<br />
+          Then we stress test it to see what holds up.
         </p>
         {authLoading
           ? <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14 }}>Signing in…</p>
