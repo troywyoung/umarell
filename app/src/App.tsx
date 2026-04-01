@@ -350,9 +350,42 @@ function getCategory(tags: string[] | null | undefined, thesis?: string): string
   return "Other";
 }
 
+// ─── About ────────────────────────────────────────────────────────────────
+
+function AboutView({ onBack }: { onBack: () => void }) {
+  const bullet = (text: string) => (
+    <div style={{ display: "flex", gap: 12, marginBottom: 18 }}>
+      <span style={{ color: "#FF00AE", fontSize: 16, lineHeight: 1.5, flexShrink: 0 }}>—</span>
+      <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.6, margin: 0 }}>{text}</p>
+    </div>
+  );
+  return (
+    <div style={{ maxWidth: 480, margin: "0 auto", minHeight: "100vh", background: "#12102B", padding: "0 0 60px" }}>
+      <div style={{ padding: "14px 20px 12px", borderBottom: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
+        <button onClick={onBack} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.5)", fontSize: 22, cursor: "pointer", padding: 0, lineHeight: 1, WebkitTapHighlightColor: "transparent" }}>←</button>
+        <span style={{ fontSize: 18, fontWeight: 700, color: "#FFF", letterSpacing: -0.4 }}>What is this thing?</span>
+      </div>
+      <div style={{ padding: "28px 24px 0" }}>
+        <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>How it works</p>
+        {bullet("Drop any claim — a URL, a hot take, a screenshot, a half-formed idea. The AI rebuilds it as its strongest possible version: sharpest thesis, best evidence, most defensible form. That's steelmanning.")}
+        {bullet("Every steelman gets a conviction score from 0–100. How well does the argument actually hold up? Higher isn't always better — a 60 that's genuinely defensible beats an 80 that's overconfident.")}
+        {bullet("Once steelmanned, you can request a counterpoint — the strongest argument against the original claim. Or challenge someone else's. The feed is a live debate board.")}
+        {bullet("Reactions and takes are written in the editorial voice of People vs Algorithms — Troy Young, Brian Morrissey, and Alex Schleifer's podcast on media, tech, and culture. Opinionated. Connected to bigger patterns. Not neutral.")}
+        {bullet("Each week, the show's own steelmans drop into your feed under 'This Week on PvA' — arguments from the latest episode, ready to read, challenge, or riff on.")}
+        <div style={{ marginTop: 32, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+          <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>Why it's interesting</p>
+          {bullet("Most people argue against the weakest version of ideas they disagree with. This forces the opposite — understand the best case before you dismiss it.")}
+          {bullet("The score makes you honest. If you're submitting takes just to dunk on them, the score will call it out.")}
+          {bullet("It's a thinking tool, not a content feed. The goal is to make you a sharper reader of whatever you're already paying attention to.")}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // ─── Home ─────────────────────────────────────────────────────────────────
 
-function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUser, onSignOut }: {
+function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUser, onSignOut, onAbout }: {
   observations: Observation[];
   loading: boolean;
   onCapture: () => void;
@@ -360,6 +393,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   onDelete: (id: string) => void;
   authUser: AuthUser;
   onSignOut: () => void;
+  onAbout: () => void;
 }) {
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
@@ -374,6 +408,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
             <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Steelman<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
           </span>
+          <button onClick={onAbout} style={{ background: "none", border: "none", padding: "2px 0 0 42px", cursor: "pointer", textAlign: "left", WebkitTapHighlightColor: "transparent" }}>
+            <span style={{ fontSize: 10, color: "rgba(255,255,255,0.35)", textDecoration: "underline", textDecorationColor: "rgba(255,255,255,0.2)", fontFamily: "inherit" }}>what is this thing?</span>
+          </button>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
@@ -1542,7 +1579,7 @@ function ProcessingDots({ color = "#6666CC" }: { color?: string }) {
 
 // ─── Root ─────────────────────────────────────────────────────────────────
 
-type View = "home" | "capture" | "output";
+type View = "home" | "capture" | "output" | "about";
 
 interface AuthUser { id: string; name: string; avatar: string | null; is_admin?: boolean; }
 
@@ -1715,6 +1752,10 @@ export default function App() {
     setOutputKey((k) => k + 1); // force OutputView remount with fresh state
   };
 
+  if (view === "about") {
+    return <AboutView onBack={() => setView("home")} />;
+  }
+
   if (view === "capture") {
     return (
       <CaptureView
@@ -1757,6 +1798,7 @@ export default function App() {
       onDelete={deleteObservation}
       authUser={authUser}
       onSignOut={handleSignOut}
+      onAbout={() => setView("about")}
     />
   );
 }
