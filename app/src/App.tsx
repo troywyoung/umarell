@@ -260,7 +260,7 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
           onClick={() => setExpanded(!expanded)}
           style={{ fontSize: window.innerWidth < 600 ? 14 : 13, fontWeight: 800, color: "#FF00AE", letterSpacing: -0.3, margin: 0, textAlign: "center", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}
         >
-          {title} <span style={{ color: "rgba(255,0,174,0.5)" }}>({observations.length} ideas)</span>
+          {title} <span style={{ color: "rgba(255,0,174,0.5)" }}>({observations.length})</span>
         </p>
       </div>
 
