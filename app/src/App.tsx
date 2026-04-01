@@ -1295,7 +1295,7 @@ export default function App() {
   // Show login screen if not authenticated
   if (!authUser) {
     return (
-      <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative", overflow: "hidden" }}>
+      <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative" }}>
         {/* Scribble on login */}
         <img
           src="/scribble.png"
