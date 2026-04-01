@@ -7,8 +7,6 @@ from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, desc
 from jose import jwt, JWTError
-from google.oauth2 import id_token as google_id_token
-from google.auth.transport import requests as google_requests
 from pydantic import BaseModel
 from database import init_db, get_db, AsyncSessionLocal
 from models import Observation, User
@@ -127,14 +125,13 @@ class GoogleAuthBody(BaseModel):
 
 @app.post("/auth/google")
 async def auth_google(body: GoogleAuthBody, db: AsyncSession = Depends(get_db)):
-    try:
-        info = google_id_token.verify_oauth2_token(
-            body.id_token,
-            google_requests.Request(),
-            settings.google_client_id,
-        )
-    except Exception as e:
-        raise HTTPException(401, f"Invalid Google token: {e}")
+    async with httpx.AsyncClient() as client:
+        resp = await client.get(f"https://oauth2.googleapis.com/tokeninfo?id_token={body.id_token}")
+    if resp.status_code != 200:
+        raise HTTPException(401, f"Invalid Google token: {resp.text}")
+    info = resp.json()
+    if settings.google_client_id and info.get("aud") != settings.google_client_id:
+        raise HTTPException(401, f"Token audience mismatch: {info.get('aud')}")
 
     google_id = info["sub"]
     result = await db.execute(select(User).where(User.google_id == google_id))
