@@ -359,7 +359,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                       {Math.round(obs.score)}
                     </span>
                   )}
-                  {obs.user_id === authUser.id && (
+                  {(!obs.user_id || obs.user_id === authUser.id) && (
                     <button
                       onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steel man?")) onDelete(obs.id); }}
                       style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
