@@ -36,7 +36,7 @@ function getRandomPlaceholder() {
   return PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)];
 }
 
-// ─── Steel Man Icon (SVG) — geometric wireframe mesh ─────────────────────
+// ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
 
 // Nodes and edges — organic, asymmetric constellation
 const MESH_NODES: [number, number][] = [
@@ -279,10 +279,10 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ fontSize: 20, fontWeight: 700, color: bgImage ? "#FFF" : "#1A1A1A", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <SteelManIcon size={28} animate animateCount={3} color={bgImage ? "#FFF" : "#1A1A1A"} /> Steel Man
+            <SteelManIcon size={28} animate animateCount={3} color={bgImage ? "#FFF" : "#1A1A1A"} /> Steelman
           </span>
           <span style={{ fontSize: 10, color: bgImage ? "rgba(255,255,255,0.7)" : "#999", marginLeft: 36, marginTop: 2, letterSpacing: -0.4 }}>
-            Tap <strong>+</strong> to drop your first steel man
+            Tap <strong>+</strong> to drop your first steelman
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -361,7 +361,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   )}
                   {(!obs.user_id || obs.user_id === authUser.id) && (
                     <button
-                      onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steel man?")) onDelete(obs.id); }}
+                      onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steelman?")) onDelete(obs.id); }}
                       style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
                     >&times;</button>
                   )}
@@ -588,7 +588,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
         {parentObs ? "What's your counter?" : "What's your take?"}
       </h1>
       <p style={{ fontSize: 14, color: "#888", margin: "0 0 24px", lineHeight: 1.5 }}>
-        {parentObs ? "Drop your counter-argument. We'll steel man it." : "Drop a hot take. We'll build the strongest case for it."}
+        {parentObs ? "Drop your counter-argument. We'll steelman it." : "Drop a hot take. We'll build the strongest case for it."}
       </p>
       {parentObs && (
         <div style={{ background: "#F8F8F6", borderRadius: 10, padding: "14px 16px", marginBottom: 20 }}>
@@ -722,7 +722,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
           WebkitTapHighlightColor: "transparent",
         }}
       >
-        {submitting ? "Submitting\u2026" : canSubmit ? "Steel man this \u2192" : "Type your take above"}
+        {submitting ? "Submitting\u2026" : canSubmit ? "Steelman this \u2192" : "Type your take above"}
       </button>
 
       {error && (
@@ -887,7 +887,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               <SteelManIcon size={49} animate />
               <div>
                 <p style={{ fontSize: 15, fontWeight: 600, color: "#1A1A1A", margin: "0 0 4px" }}>
-                  {obs.status === "formatting" ? "Reading your take\u2026" : "Building steel man\u2026"}
+                  {obs.status === "formatting" ? "Reading your take\u2026" : "Building steelman\u2026"}
                 </p>
                 <p style={{ fontSize: 13, color: "#999", margin: 0 }}>This usually takes a few seconds</p>
               </div>
@@ -994,7 +994,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 fontSize: 14, fontWeight: 700, fontFamily: "inherit",
                 WebkitTapHighlightColor: "transparent",
               }}
-            >Steel Man</button>
+            >Steelman</button>
             <button
               onClick={handleStressTab}
               style={{
@@ -1013,7 +1013,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           </div>
         )}
 
-        {/* Steel Man content + Edit & Resubmit */}
+        {/* Steelman content + Edit & Resubmit */}
         {obs.status === "complete" && tab === "steel" && (
           <>
             {steelBullets.map((bullet, i) => (
@@ -1093,7 +1093,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                   ))}
                 </div>
               )}
-              {/* Sources (from both steel man and stress test) */}
+              {/* Sources (from both steelman and stress test) */}
               {obs.sources && obs.sources.length > 0 && (
                 <div style={{ marginTop: 20, paddingTop: 16, borderTop: "1px solid #EBEBEB" }}>
                   <p style={{ fontSize: 10, fontWeight: 700, color: "#B0B0A8", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Sources</p>
@@ -1170,7 +1170,7 @@ function ShareButton({ obsId, onClick }: { obsId: string; onClick?: (e: React.Mo
   const [copied, setCopied] = useState(false);
 
   const shareUrl = `${window.location.origin}${window.location.pathname}#obs/${obsId}`;
-  const shareText = "Someone shared a Steel Man with you. Check it out:";
+  const shareText = "Someone shared a Steelman with you. Check it out:";
   const fullText = `${shareText}\n${shareUrl}`;
 
   const handleShare = async (e: React.MouseEvent) => {
@@ -1313,9 +1313,9 @@ export default function App() {
         <div style={{ marginBottom: 32 }}>
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
-        <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center" }}>Steel Man</h1>
+        <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center" }}>Steelman</h1>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
-          To steel man is to take any argument and make the strongest possible case for it.
+          To steelman is to take any argument and make the strongest possible case for it.
         </p>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1 }}>
           Drop any claim. We research it and build the strongest case. Then stress test it. Challenge others. See what holds up.

@@ -82,7 +82,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Steel Man API", lifespan=lifespan)
+app = FastAPI(title="Steelman API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
