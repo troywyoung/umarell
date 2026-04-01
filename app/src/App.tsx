@@ -315,19 +315,20 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
 
 // ─── Category mapping ────────────────────────────────────────────────────
 
-function getCategory(tags: string[] | null | undefined): string {
-  if (!tags || tags.length === 0) return "Other";
-  const t = tags.join(" ").toLowerCase();
-  // AI — must be explicit, not just any "tech"
-  if (/\b(ai|artificial intelligence|machine learning|llm|large language model|chatgpt|generative ai|automation|algorithm|neural network|deep learning|nlp)\b/.test(t)) return "AI & Tech";
-  // Sports
-  if (/\b(sport|golf|hockey|basketball|football|soccer|baseball|tennis|athlete|nfl|nba|nhl|mlb|olympics|cricket|rugby)\b/.test(t)) return "Sports";
-  // Media & Journalism
-  if (/\b(media|journalism|journalist|newsletter|creator economy|publishing|broadcast|podcast|editorial|press|substack|puck)\b/.test(t)) return "Media";
-  // Health & Science
-  if (/\b(health|medicine|medical|aging|longevity|wellness|mental health|biology|ecology|psychology|climate|environment|food science|culinary|chemistry|physics|thermodynamics|animal|coastal|canine|neuroscience|nutrition|hormone|ozempic|glp|semaglutide)\b/.test(t)) return "Health & Science";
-  // Business & Economics
-  if (/\b(business|startup|economics|finance|trade|tariff|inflation|retail|subscription|advertising|e.commerce|market|investment|revenue|startup|consumer|industry|strategy)\b/.test(t)) return "Business";
+function getCategory(tags: string[] | null | undefined, thesis?: string): string {
+  // Build text corpus from tags + thesis for tagless posts
+  const tagText = (tags || []).join(" ").toLowerCase();
+  const t = tags && tags.length > 0 ? tagText : (thesis || "").toLowerCase();
+  if (!t) return "Other";
+
+  if (/\b(ai|artificial intelligence|machine learning|llm|large language model|chatgpt|generative ai|automation|algorithm|neural network|deep learning|nlp|robotics|software engineering)\b/.test(t)) return "AI & Tech";
+  if (/\b(sport|golf|hockey|basketball|football|soccer|baseball|tennis|athlete|nfl|nba|nhl|mlb|olympics|cricket|rugby|racing|esport)\b/.test(t)) return "Sports";
+  if (/\b(media|journalism|journalist|newsletter|creator economy|publishing|broadcast|podcast|editorial|press|substack|puck|news industry)\b/.test(t)) return "Media";
+  if (/\b(politic|government|policy|legislation|election|democracy|congress|senate|president|republican|democrat|white house|geopolit|foreign policy|regulation|law|legal|supreme court)\b/.test(t)) return "Politics";
+  if (/\b(entertainment|film|movie|music|celebrity|television|tv|streaming|hollywood|culture|pop culture|art|fashion|gaming|video game)\b/.test(t)) return "Entertainment";
+  if (/\b(history|historical|civilization|war|empire|revolution|ancient|heritage|archaeology)\b/.test(t)) return "History";
+  if (/\b(health|medicine|medical|aging|longevity|wellness|mental health|biology|ecology|psychology|climate|environment|food science|culinary|chemistry|physics|thermodynamics|animal|coastal|canine|neuroscience|nutrition|hormone|ozempic|glp|semaglutide|diet|fitness)\b/.test(t)) return "Health & Science";
+  if (/\b(business|startup|economics|finance|trade|tariff|inflation|retail|subscription|advertising|e.commerce|market|investment|revenue|consumer|industry|strategy|entrepreneur)\b/.test(t)) return "Business";
   return "Other";
 }
 
@@ -532,15 +533,19 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           const categoryMap = new Map<string, typeof posts>();
           posts.forEach(item => {
             if (item.type !== "post") return;
-            const cat = getCategory(item.obs.tags);
+            const cat = getCategory(item.obs.tags, item.obs.thesis || item.obs.raw_input);
             const arr = categoryMap.get(cat) || [];
             arr.push(item);
             categoryMap.set(cat, arr);
           });
 
-          // Sort categories by most recent post in each group
+          // Sort categories by most recent post — "Other" always last
           const sortedCategories = [...categoryMap.entries()]
-            .sort((a, b) => Math.max(...b[1].map(i => i.time)) - Math.max(...a[1].map(i => i.time)));
+            .sort((a, b) => {
+              if (a[0] === "Other") return 1;
+              if (b[0] === "Other") return -1;
+              return Math.max(...b[1].map(i => i.time)) - Math.max(...a[1].map(i => i.time));
+            });
 
           const renderPost = (item: typeof posts[0]) => {
             if (item.type !== "post") return null;
