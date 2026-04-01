@@ -316,19 +316,21 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
 // ─── Category mapping ────────────────────────────────────────────────────
 
 function getCategory(tags: string[] | null | undefined, thesis?: string): string {
-  // Build text corpus from tags + thesis for tagless posts
-  const tagText = (tags || []).join(" ").toLowerCase();
-  const t = tags && tags.length > 0 ? tagText : (thesis || "").toLowerCase();
-  if (!t) return "Other";
+  // Use tags if present, otherwise fall back to thesis text
+  const words = (tags && tags.length > 0 ? tags : [thesis || ""])
+    .join(" ").toLowerCase();
+  if (!words.trim()) return "Other";
 
-  if (/\b(ai|artificial intelligence|machine learning|llm|large language model|chatgpt|generative ai|automation|algorithm|neural network|deep learning|nlp|robotics|software engineering)\b/.test(t)) return "AI & Tech";
-  if (/\b(sport|golf|hockey|basketball|football|soccer|baseball|tennis|athlete|nfl|nba|nhl|mlb|olympics|cricket|rugby|racing|esport)\b/.test(t)) return "Sports";
-  if (/\b(media|journalism|journalist|newsletter|creator economy|publishing|broadcast|podcast|editorial|press|substack|puck|news industry)\b/.test(t)) return "Media";
-  if (/\b(politic|government|policy|legislation|election|democracy|congress|senate|president|republican|democrat|white house|geopolit|foreign policy|regulation|law|legal|supreme court)\b/.test(t)) return "Politics";
-  if (/\b(entertainment|film|movie|music|celebrity|television|tv|streaming|hollywood|culture|pop culture|art|fashion|gaming|video game)\b/.test(t)) return "Entertainment";
-  if (/\b(history|historical|civilization|war|empire|revolution|ancient|heritage|archaeology)\b/.test(t)) return "History";
-  if (/\b(health|medicine|medical|aging|longevity|wellness|mental health|biology|ecology|psychology|climate|environment|food science|culinary|chemistry|physics|thermodynamics|animal|coastal|canine|neuroscience|nutrition|hormone|ozempic|glp|semaglutide|diet|fitness)\b/.test(t)) return "Health & Science";
-  if (/\b(business|startup|economics|finance|trade|tariff|inflation|retail|subscription|advertising|e.commerce|market|investment|revenue|consumer|industry|strategy|entrepreneur)\b/.test(t)) return "Business";
+  const has = (terms: string[]) => terms.some(term => words.includes(term));
+
+  if (has(["ai", "llm", "machine learning", "chatgpt", "generative ai", "neural network", "deep learning", "nlp", "robotics", "large language model"])) return "AI & Tech";
+  if (has(["sport", "golf", "hockey", "basketball", "football", "soccer", "baseball", "tennis", "athlete", "nfl", "nba", "nhl", "mlb", "olympics", "cricket", "rugby"])) return "Sports";
+  if (has(["media", "journalism", "journalist", "newsletter", "publishing", "broadcast", "podcast", "editorial", "substack", "puck", "creator economy"])) return "Media";
+  if (has(["politic", "government", "policy", "election", "democracy", "congress", "senate", "president", "republican", "democrat", "geopolit", "foreign policy", "legislation"])) return "Politics";
+  if (has(["entertainment", "film", "movie", "music", "celebrity", "television", " tv ", "streaming", "hollywood", "pop culture", "fashion", "gaming", "video game"])) return "Entertainment";
+  if (has(["history", "historical", "civilization", "ancient", "heritage", "archaeology", "empire", "revolution"])) return "History";
+  if (has(["health", "medicine", "medical", "aging", "longevity", "wellness", "mental health", "biology", "ecology", "psychology", "climate", "environment", "food science", "culinary", "chemistry", "physics", "thermodynamics", "animal", "coastal", "neuroscience", "nutrition", "hormone", "ozempic", "semaglutide", "diet", "fitness"])) return "Health & Science";
+  if (has(["business", "startup", "economic", "finance", "trade", "tariff", "inflation", "retail", "subscription", "advertising", "e-commerce", "investment", "revenue", "consumer", "industry", "strategy", "entrepreneur"])) return "Business";
   return "Other";
 }
 
