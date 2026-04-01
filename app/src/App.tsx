@@ -249,10 +249,6 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
   renderChallenge: (c: Observation) => React.ReactNode;
 }) {
   const [expanded, setExpanded] = useState(false);
-  const earliest = observations.reduce((min, o) => {
-    const t = new Date(o.created_at).getTime();
-    return t < min ? t : min;
-  }, Infinity);
   const first = observations[0];
   const rest = observations.slice(1);
 
