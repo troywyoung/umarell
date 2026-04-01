@@ -37,13 +37,30 @@ function getRandomPlaceholder() {
 }
 
 // Randomize scribble position on each load
-// Center of scribble is off-screen left. Only right portion visible.
-// Center can be anywhere from top-left corner to bottom-left corner.
+// Scribble can appear from any edge: left, top, or right.
+// Always partially off-screen (30-70% cropped), visible part never clipped.
 function getRandomScribblePos() {
-  const cropPct = 30 + Math.random() * 40; // crop 30-70% off the left
-  const leftVw = -(cropPct / 100) * 70; // image is 70vw wide
-  const topVh = -20 + Math.random() * 70; // -20vh to 50vh (top-left to bottom-left)
-  return { top: `${topVh}vh`, left: `${leftVw}vw` };
+  const isMobile = window.innerWidth < 600;
+  const size = isMobile ? 140 : 70; // vw — double on mobile
+  const cropPct = 30 + Math.random() * 40; // crop 30-70%
+  const edge = Math.floor(Math.random() * 3); // 0=left, 1=top, 2=right
+
+  if (edge === 0) {
+    // Left edge
+    const left = -(cropPct / 100) * size;
+    const top = -20 + Math.random() * 70;
+    return { top: `${top}vh`, left: `${left}vw`, size };
+  } else if (edge === 1) {
+    // Top edge
+    const top = -(cropPct / 100) * size;
+    const left = -10 + Math.random() * 60;
+    return { top: `${top}vw`, left: `${left}vw`, size };
+  } else {
+    // Right edge
+    const left = 100 - ((100 - cropPct) / 100) * size;
+    const top = -20 + Math.random() * 70;
+    return { top: `${top}vh`, left: `${left}vw`, size };
+  }
 }
 
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
@@ -245,7 +262,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       <img
         src="/scribble.png"
         style={{
-          position: "fixed", top: scribblePos.top, left: scribblePos.left, width: "70vw", pointerEvents: "none", zIndex: 0,
+          position: "fixed", top: scribblePos.top, left: scribblePos.left, width: `${scribblePos.size}vw`, pointerEvents: "none", zIndex: 0,
         }}
       />
       <div style={{
@@ -258,7 +275,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
             <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Steelman
           </span>
-          <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.5)", marginLeft: 42, marginTop: -2, letterSpacing: -0.4 }}>
+          <span style={{ fontSize: window.innerWidth < 600 ? 8 : 12, fontWeight: 700, color: "rgba(255,255,255,0.5)", marginLeft: 42, marginTop: -2, letterSpacing: -0.4, whiteSpace: "nowrap" }}>
             Tap + to drop your first steelman
           </span>
         </div>
@@ -1301,7 +1318,7 @@ export default function App() {
           src="/scribble.png"
           style={{
             position: "fixed", top: loginScribblePos.top, left: loginScribblePos.left,
-            width: "70vw", pointerEvents: "none", zIndex: 0,
+            width: `${loginScribblePos.size}vw`, pointerEvents: "none", zIndex: 0,
           }}
         />
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
