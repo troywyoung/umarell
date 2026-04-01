@@ -620,7 +620,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* First 2 recent posts */}
               {recentAbove.length > 0 && (
                 <div>
-                  <div style={{ fontSize: 18, fontWeight: 600, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>Recent</div>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>Recent</div>
                   {recentAbove.map(renderPost)}
                 </div>
               )}
@@ -628,7 +628,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Episode bundle — after first 2 recent posts */}
               {episodes.map(item => item.type === "episode" && (
                 <div key={item.tag}>
-                  <div style={{ fontSize: 18, fontWeight: 600, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 0" }}>This Week on PvA</div>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 0" }}>This Week on PvA</div>
                   <EpisodeSection title={item.title} observations={item.obs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
                 </div>
               ))}
@@ -636,7 +636,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Remaining recent posts */}
               {recentBelow.length > 0 && (
                 <div>
-                  {recentAbove.length === 0 && <div style={{ fontSize: 18, fontWeight: 600, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>Recent</div>}
+                  {recentAbove.length === 0 && <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>Recent</div>}
                   {recentBelow.map(renderPost)}
                 </div>
               )}
@@ -644,7 +644,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Posts older than 12h grouped by topic category */}
               {sortedCategories.map(([cat, items]) => (
                 <div key={cat}>
-                  <div style={{ fontSize: 18, fontWeight: 600, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>{cat}</div>
+                  <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>{cat}</div>
                   {items.map(renderPost)}
                 </div>
               ))}
