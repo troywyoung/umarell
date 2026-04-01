@@ -419,7 +419,8 @@ Return a JSON object with exactly these keys:
 {{
   "score": <integer 0-100>,
   "tags": ["2-4 short topic tags"],
-  "evidence_type": "<one of: Empirical | Observational | Anecdotal | Speculative>"
+  "evidence_type": "<one of: Empirical | Observational | Anecdotal | Speculative>",
+  "category": "<one of: Politics | Business | Media | AI & Tech | Health & Science | Entertainment | Sports | History | Other>"
 }}
 
 Return valid JSON only. No markdown fences. No preamble."""

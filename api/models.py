@@ -55,4 +55,5 @@ class Observation(Base):
     bs_verdict: Mapped[str | None] = mapped_column(Text, nullable=True)  # one punchy line
     episode_tag: Mapped[str | None] = mapped_column(String, nullable=True, index=True)  # e.g. "the-war-on-slop"
     episode_title: Mapped[str | None] = mapped_column(String, nullable=True)  # e.g. "The War on Slop"
+    category: Mapped[str | None] = mapped_column(String, nullable=True)  # broad topic category
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)

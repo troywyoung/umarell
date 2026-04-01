@@ -551,7 +551,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           const categoryMap = new Map<string, typeof posts>();
           posts.forEach(item => {
             if (item.type !== "post") return;
-            const cat = getCategory(item.obs.tags, item.obs.thesis || item.obs.raw_input);
+            const cat = item.obs.category || getCategory(item.obs.tags, item.obs.thesis || item.obs.raw_input);
             const arr = categoryMap.get(cat) || [];
             arr.push(item);
             categoryMap.set(cat, arr);

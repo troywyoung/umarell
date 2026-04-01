@@ -72,6 +72,7 @@ async def lifespan(app: FastAPI):
             ("bs_verdict", "TEXT"),
             ("episode_tag", "TEXT"),
             ("episode_title", "TEXT"),
+            ("category", "TEXT"),
         ]:
             try:
                 await db.execute(text(f"ALTER TABLE observations ADD COLUMN {col} {definition}"))
@@ -156,6 +157,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
                 obs.score = meta.get("score")
                 obs.tags = meta.get("tags")
                 obs.evidence_type = meta.get("evidence_type")
+                obs.category = meta.get("category")
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -599,3 +601,45 @@ async def backfill_hard_facts(
             print(f"[backfill] failed {obs.id[:8]}: {e}")
 
     return {"total": len(to_backfill), "updated": updated, "errors": errors}
+
+
+@app.post("/admin/backfill-categories")
+async def backfill_categories(
+    admin_key: str,
+    db: AsyncSession = Depends(get_db),
+):
+    """Assign category to all complete observations missing one."""
+    if admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    result = await db.execute(
+        select(Observation)
+        .where(Observation.status == "complete")
+        .where(Observation.category.is_(None))
+        .where(Observation.thesis.isnot(None))
+    )
+    observations = list(result.scalars().all())
+
+    updated = 0
+    errors = 0
+    for obs in observations:
+        try:
+            sm_text = ""
+            import json as _json
+            try:
+                parsed = _json.loads(obs.summary or "")
+                sm_text = parsed.get("bottom_line", "") + " " + " ".join(parsed.get("bullets", []))
+            except Exception:
+                sm_text = obs.summary or ""
+            meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
+            obs_fresh = await db.get(Observation, obs.id)
+            if obs_fresh:
+                obs_fresh.category = meta.get("category")
+                await db.commit()
+                updated += 1
+                print(f"[cat-backfill] {obs.id[:8]} → {meta.get('category')} — {(obs.thesis or '')[:50]}")
+        except Exception as e:
+            errors += 1
+            print(f"[cat-backfill] failed {obs.id[:8]}: {e}")
+
+    return {"total": len(observations), "updated": updated, "errors": errors}
