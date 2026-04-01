@@ -321,7 +321,11 @@ function getCategory(tags: string[] | null | undefined, thesis?: string): string
     .join(" ").toLowerCase();
   if (!words.trim()) return "Other";
 
-  const has = (terms: string[]) => terms.some(term => words.includes(term));
+  // Pad with spaces so short terms like "ai" don't match inside "failings", "paid", etc.
+  const padded = ` ${words} `;
+  const has = (terms: string[]) => terms.some(term =>
+    term.length <= 4 ? padded.includes(` ${term} `) : padded.includes(term)
+  );
 
   if (has(["ai", "llm", "machine learning", "chatgpt", "generative ai", "neural network", "deep learning", "nlp", "robotics", "large language model", "automation", "algorithm"])) return "AI & Tech";
   if (has(["sport", "golf", "hockey", "basketball", "football", "soccer", "baseball", "tennis", "athlete", "nfl", "nba", "nhl", "mlb", "olympics", "cricket", "rugby", "esport"])) return "Sports";
