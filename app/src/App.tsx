@@ -410,12 +410,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 borderRadius: 10, background: "#EEF4FF",
                 boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                 padding: "10px 12px", cursor: "pointer",
-                display: "flex", alignItems: "center", gap: 4,
-                overflow: "hidden",
               }}
             >
-              <span style={{ fontSize: 11, fontWeight: 800, color: "#2C5ABA", flexShrink: 0 }}>Challenge:</span>
-              <span style={{ fontSize: 11, fontWeight: 600, color: "#1A1A1A", overflow: "hidden", whiteSpace: "nowrap", textOverflow: "ellipsis", marginLeft: 2 }}>{c.thesis || c.raw_input}</span>
+              <p style={{ fontSize: 11, color: "#1A1A1A", fontWeight: 600, margin: 0, lineHeight: 1.4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" } as React.CSSProperties}>
+                <span style={{ fontWeight: 800, color: "#2C5ABA" }}>Challenge: </span>{c.thesis || c.raw_input}
+              </p>
             </div>
           );
 
