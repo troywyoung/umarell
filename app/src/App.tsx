@@ -318,11 +318,16 @@ function EpisodeSection({ title, observations, challengeMap, renderCard, renderC
 function getCategory(tags: string[] | null | undefined): string {
   if (!tags || tags.length === 0) return "Other";
   const t = tags.join(" ").toLowerCase();
-  if (/ai|machine.learning|llm|automation|tech|software|e.commerce|retail.tech|chatgpt|algorithm|digital|robot|data.science|cyber/.test(t)) return "AI & Tech";
-  if (/media|journalism|newsletter|creator.economy|subscription|publishing|broadcast|podcast|press|editorial/.test(t)) return "Media";
-  if (/econom|finance|trade|tariff|inflation|labor.market|employment|gdp|market|monetary|fiscal|stock|crypto|invest/.test(t)) return "Economics";
-  if (/sport|golf|hockey|basketball|football|soccer|baseball|tennis|athlete|nfl|nba|nhl|mlb/.test(t)) return "Sports";
-  if (/science|food|culinary|animal|coastal|environment|ecology|biology|chemistry|physics|climate|nature|health|medicine/.test(t)) return "Science & Nature";
+  // AI — must be explicit, not just any "tech"
+  if (/\b(ai|artificial intelligence|machine learning|llm|large language model|chatgpt|generative ai|automation|algorithm|neural network|deep learning|nlp)\b/.test(t)) return "AI & Tech";
+  // Sports
+  if (/\b(sport|golf|hockey|basketball|football|soccer|baseball|tennis|athlete|nfl|nba|nhl|mlb|olympics|cricket|rugby)\b/.test(t)) return "Sports";
+  // Media & Journalism
+  if (/\b(media|journalism|journalist|newsletter|creator economy|publishing|broadcast|podcast|editorial|press|substack|puck)\b/.test(t)) return "Media";
+  // Health & Science
+  if (/\b(health|medicine|medical|aging|longevity|wellness|mental health|biology|ecology|psychology|climate|environment|food science|culinary|chemistry|physics|thermodynamics|animal|coastal|canine|neuroscience|nutrition|hormone|ozempic|glp|semaglutide)\b/.test(t)) return "Health & Science";
+  // Business & Economics
+  if (/\b(business|startup|economics|finance|trade|tariff|inflation|retail|subscription|advertising|e.commerce|market|investment|revenue|startup|consumer|industry|strategy)\b/.test(t)) return "Business";
   return "Other";
 }
 
@@ -561,7 +566,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Posts grouped by category, categories sorted by most recent */}
               {sortedCategories.map(([cat, items]) => (
                 <div key={cat}>
-                  <div style={{ fontSize: 13, fontWeight: 400, color: "rgba(255,255,255,0.45)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>{cat}</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.75)", letterSpacing: 1.5, textTransform: "uppercase", padding: "14px 4px 6px" }}>{cat}</div>
                   {items.map(renderPost)}
                 </div>
               ))}
