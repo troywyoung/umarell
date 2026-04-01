@@ -250,7 +250,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         }}
       />
       <div style={{
-        padding: "20px 20px 16px",
+        padding: "14px 20px 10px",
         borderBottom: "1px solid rgba(255,255,255,0.08)",
         display: "flex", alignItems: "center", justifyContent: "space-between",
         position: "relative", zIndex: 1,
@@ -259,7 +259,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
             <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Steelman
           </span>
-          <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.5)", marginLeft: 42, marginTop: 2, letterSpacing: -0.4 }}>
+          <span style={{ fontSize: 12, fontWeight: 700, color: "rgba(255,255,255,0.5)", marginLeft: 42, marginTop: 0, letterSpacing: -0.4 }}>
             Tap + to drop your first steelman
           </span>
         </div>
@@ -282,7 +282,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </div>
       </div>
 
-      <div style={{ padding: "12px 16px 0", position: "relative", zIndex: 1 }}>
+      <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
         {observations.length === 0 && !loading ? null : (() => {
           const topLevel = [...observations]
             .filter(o => !o.parent_id)
