@@ -390,6 +390,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   onSignOut: () => void;
   onAbout: () => void;
 }) {
+  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
+
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
 
@@ -418,6 +420,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           from { opacity: 0; transform: translateY(-6px); }
           to { opacity: 1; transform: translateY(0); }
         }
+        .topic-pills::-webkit-scrollbar { display: none; }
       `}</style>
       <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "36px 16px 10px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
         <span style={{ fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit" }}>(<span style={{ textDecoration: "underline", textDecorationColor: "#FFF" }}>What is this thing?</span>)</span>
@@ -442,6 +445,47 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             challengeMap.set(c.parent_id!, arr);
           });
 
+          // Assign category to every top-level post (including episode posts)
+          const getObs = (o: Observation) =>
+            o.category || getCategory(o.tags, o.thesis || o.raw_input);
+
+          // Build topic pills from available content
+          const topicCounts = new Map<string, number>();
+          topLevel.forEach(o => {
+            const cat = getObs(o);
+            topicCounts.set(cat, (topicCounts.get(cat) || 0) + 1);
+          });
+          const availableTopics = [...topicCounts.entries()]
+            .sort((a, b) => {
+              const pa = CATEGORY_PRIORITY[a[0]] ?? 50;
+              const pb = CATEGORY_PRIORITY[b[0]] ?? 50;
+              return pa - pb;
+            })
+            .map(([cat]) => cat);
+
+          // Separate episode posts
+          const episodeMap = new Map<string, { title: string; obs: Observation[] }>();
+          topLevel.filter(o => !!o.episode_tag).forEach(o => {
+            const existing = episodeMap.get(o.episode_tag!);
+            if (existing) {
+              existing.obs.push(o);
+            } else {
+              episodeMap.set(o.episode_tag!, { title: o.episode_title || o.episode_tag!, obs: [o] });
+            }
+          });
+          const hasEpisodes = episodeMap.size > 0;
+
+          // Filter posts by selected topic
+          const userPosts = topLevel.filter(o => !o.episode_tag);
+          const filteredPosts = selectedTopic
+            ? userPosts.filter(o => getObs(o) === selectedTopic)
+            : userPosts;
+          const filteredEpisodes = selectedTopic
+            ? [...episodeMap.entries()].filter(([, { obs }]) =>
+                obs.some(o => getObs(o) === selectedTopic)
+              )
+            : [...episodeMap.entries()];
+
           const renderCard = (obs: Observation) => {
             let firstBullet = "";
             try {
@@ -463,10 +507,13 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   cursor: "pointer", overflow: "hidden",
                 }}
               >
-                {obs.user_name && (
+                {obs.episode_tag && (
+                  <p style={{ fontSize: 8, fontWeight: 700, color: "#FF00AE", margin: 0, padding: "7px 12px 0", letterSpacing: 0.8, textTransform: "uppercase", lineHeight: 1 }}>PvA</p>
+                )}
+                {obs.user_name && !obs.episode_tag && (
                   <p style={{ fontSize: 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: obs.user_name ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
                   {obs.image_data && (
                     <img
                       src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
@@ -548,68 +595,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             </div>
           );
 
-          // Build a unified timeline: user posts + episode blocks, sorted by created_at
-          // Group episode posts by tag, use earliest post time as the episode's position
-          const episodeMap = new Map<string, { title: string; obs: Observation[]; earliest: number }>();
-          topLevel.filter(o => !!o.episode_tag).forEach(o => {
-            const t = new Date(o.created_at).getTime();
-            const existing = episodeMap.get(o.episode_tag!);
-            if (existing) {
-              existing.obs.push(o);
-              if (t < existing.earliest) existing.earliest = t;
-            } else {
-              episodeMap.set(o.episode_tag!, { title: o.episode_title || o.episode_tag!, obs: [o], earliest: t });
-            }
-          });
-
-          // Build feed items: each is either a user post or an episode block
-          type FeedItem = { type: "post"; obs: Observation; time: number } | { type: "episode"; tag: string; title: string; obs: Observation[]; time: number };
-          const feedItems: FeedItem[] = [];
-          topLevel.filter(o => !o.episode_tag).forEach(o => {
-            feedItems.push({ type: "post", obs: o, time: new Date(o.created_at).getTime() });
-          });
-          episodeMap.forEach(({ title, obs: epObs, earliest }, tag) => {
-            feedItems.push({ type: "episode", tag, title, obs: epObs, time: earliest });
-          });
-          feedItems.sort((a, b) => {
-            if (a.type === "episode" && b.type !== "episode") return -1;
-            if (b.type === "episode" && a.type !== "episode") return 1;
-            return b.time - a.time;
-          });
-
-          const episodes = feedItems.filter(i => i.type === "episode");
-          const posts = feedItems.filter(i => i.type === "post");
-
-          // Separate recent posts (last 12h) from older ones
-          const twelveHoursAgo = Date.now() - 12 * 60 * 60 * 1000;
-          const recentPosts = posts.filter(item => item.type === "post" && item.time >= twelveHoursAgo);
-          const olderPosts = posts.filter(item => item.type === "post" && item.time < twelveHoursAgo);
-
-          // Group only older posts by topic category
-          const categoryMap = new Map<string, typeof posts>();
-          olderPosts.forEach(item => {
-            if (item.type !== "post") return;
-            const cat = item.obs.category || getCategory(item.obs.tags, item.obs.thesis || item.obs.raw_input);
-            const arr = categoryMap.get(cat) || [];
-            arr.push(item);
-            categoryMap.set(cat, arr);
-          });
-
-          // Sort by fixed priority order; unknown categories go before Other
-          const sortedCategories = [...categoryMap.entries()]
-            .sort((a, b) => {
-              const pa = CATEGORY_PRIORITY[a[0]] ?? 50;
-              const pb = CATEGORY_PRIORITY[b[0]] ?? 50;
-              return pa - pb;
-            });
-
-          const renderPost = (item: typeof posts[0]) => {
-            if (item.type !== "post") return null;
-            const children = (challengeMap.get(item.obs.id) || [])
+          const renderPost = (obs: Observation) => {
+            const children = (challengeMap.get(obs.id) || [])
               .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
             return (
-              <div key={item.obs.id} style={{ marginBottom: 10 }}>
-                {renderCard(item.obs)}
+              <div key={obs.id} style={{ marginBottom: 10 }}>
+                {renderCard(obs)}
                 {children.map(c => (
                   <div key={c.id} style={{ marginTop: 4 }}>{renderChallenge(c)}</div>
                 ))}
@@ -617,43 +608,82 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             );
           };
 
-          // Split recent posts: first 2 above bundle, rest below
-          const recentAbove = recentPosts.slice(0, 2);
-          const recentBelow = recentPosts.slice(2);
-
           return (
             <>
-              {/* First 2 recent posts */}
-              {recentAbove.length > 0 && (
-                <div>
-                  <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>Recent</div>
-                  {recentAbove.map(renderPost)}
+              {/* Topic pills */}
+              {(availableTopics.length > 0 || hasEpisodes) && (
+                <div
+                  className="topic-pills"
+                  style={{
+                    display: "flex", gap: 8, overflowX: "auto",
+                    padding: "14px 0 10px",
+                    scrollbarWidth: "none",
+                    msOverflowStyle: "none",
+                  } as React.CSSProperties}
+                >
+                  {/* PvA pill — only if there are episode posts */}
+                  {hasEpisodes && (
+                    <button
+                      onClick={() => setSelectedTopic(selectedTopic === "PvA" ? null : "PvA")}
+                      style={{
+                        flexShrink: 0,
+                        background: selectedTopic === "PvA" ? "#FF00AE" : "rgba(255,0,174,0.15)",
+                        border: selectedTopic === "PvA" ? "1.5px solid #FF00AE" : "1.5px solid rgba(255,0,174,0.4)",
+                        borderRadius: 100, padding: "5px 14px",
+                        fontSize: 12, fontWeight: 700,
+                        color: selectedTopic === "PvA" ? "#FFF" : "#FF00AE",
+                        cursor: "pointer", WebkitTapHighlightColor: "transparent",
+                        fontFamily: "inherit",
+                      }}
+                    >
+                      PvA
+                    </button>
+                  )}
+                  {availableTopics.map(topic => (
+                    <button
+                      key={topic}
+                      onClick={() => setSelectedTopic(selectedTopic === topic ? null : topic)}
+                      style={{
+                        flexShrink: 0,
+                        background: selectedTopic === topic ? "rgba(255,255,255,0.15)" : "transparent",
+                        border: selectedTopic === topic ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
+                        borderRadius: 100, padding: "5px 14px",
+                        fontSize: 12, fontWeight: 700,
+                        color: selectedTopic === topic ? "#FFF" : "rgba(255,255,255,0.55)",
+                        cursor: "pointer", WebkitTapHighlightColor: "transparent",
+                        fontFamily: "inherit",
+                      }}
+                    >
+                      {topic}
+                    </button>
+                  ))}
                 </div>
               )}
 
-              {/* Episode bundle — after first 2 recent posts */}
-              {episodes.map(item => item.type === "episode" && (
-                <div key={item.tag}>
-                  <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 0" }}>This Week on PvA</div>
-                  <EpisodeSection title={item.title} observations={item.obs} challengeMap={challengeMap} renderCard={renderCard} renderChallenge={renderChallenge} />
-                </div>
-              ))}
-
-              {/* Remaining recent posts */}
-              {recentBelow.length > 0 && (
+              {/* PvA episode posts — flat cards, no nesting */}
+              {(selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
                 <div>
-                  {recentAbove.length === 0 && <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>Recent</div>}
-                  {recentBelow.map(renderPost)}
+                  <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "4px 4px 6px" }}>This Week on PvA</div>
+                  {filteredEpisodes.map(([tag, { obs }]) =>
+                    obs.map(o => <div key={`${tag}-${o.id}`}>{renderPost(o)}</div>)
+                  )}
                 </div>
               )}
 
-              {/* Posts older than 12h grouped by topic category */}
-              {sortedCategories.map(([cat, items]) => (
-                <div key={cat}>
-                  <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>{cat}</div>
-                  {items.map(renderPost)}
+              {/* User posts */}
+              {filteredPosts.length > 0 && (
+                <div>
+                  {!selectedTopic && <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>Recent</div>}
+                  {filteredPosts.map(renderPost)}
                 </div>
-              ))}
+              )}
+
+              {/* Empty state for filtered view */}
+              {selectedTopic && filteredPosts.length === 0 && filteredEpisodes.length === 0 && (
+                <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
+                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No steelmans in {selectedTopic} yet.</p>
+                </div>
+              )}
             </>
           );
         })()}
