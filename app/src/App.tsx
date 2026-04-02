@@ -60,33 +60,35 @@ function BurstIcon({ size = 20, white = false, className, style }: { size?: numb
 // ─── Animated Scribble — randomly generated pencil path, new shape each loop ─
 function generateScribblePath(): string {
   const r = () => Math.random();
-  // Keep endpoints strictly within box — bezier curves can bulge but clipPath handles it
-  const clamp = (v: number, lo = 6, hi = 94) => Math.max(lo, Math.min(hi, v));
+  // Endpoints clamped well inside — stroke radius (1.5) won't escape viewBox
+  const clamp = (v: number, lo = 10, hi = 90) => Math.max(lo, Math.min(hi, v));
+  // Control points clamped slightly looser — bulge is fine, just can't escape much
+  const clampCtrl = (v: number) => Math.max(8, Math.min(92, v));
   let x = 38 + r() * 24;
   let y = 38 + r() * 24;
   const segs: string[] = [`M${x.toFixed(1)},${y.toFixed(1)}`];
-  const count = 32 + Math.floor(r() * 14); // 32–46 segments
+  const count = 34 + Math.floor(r() * 14); // 34–48 segments
   for (let i = 0; i < count; i++) {
-    // 50/50 between deep center and near-edge — keeps it in/out constantly
-    const goFar = r() > 0.5;
+    // Alternate aggressively between center and edge — constant in/out
+    const goFar = r() > 0.45;
     let tx: number, ty: number;
     if (goFar) {
-      // Head toward an edge zone
       const angle = r() * Math.PI * 2;
-      const dist = 32 + r() * 38;
+      const dist = 28 + r() * 40;
       tx = clamp(50 + Math.cos(angle) * dist);
       ty = clamp(50 + Math.sin(angle) * dist);
     } else {
-      // Dart back toward center zone
-      tx = clamp(22 + r() * 56);
-      ty = clamp(22 + r() * 56);
+      tx = clamp(18 + r() * 64);
+      ty = clamp(18 + r() * 64);
     }
-    // Very wide control point spread — forces lots of crossing loops
-    const spread = 90;
-    const c1x = clamp(x + (r() - 0.5) * spread);
-    const c1y = clamp(y + (r() - 0.5) * spread);
-    const c2x = clamp(tx + (r() - 0.5) * spread);
-    const c2y = clamp(ty + (r() - 0.5) * spread);
+    // Huge spread on control points — crosses itself constantly
+    // Occasionally flip a control point to far opposite side for sharp crossings
+    const spread = 110;
+    const flip = r() > 0.6 ? -1 : 1;
+    const c1x = clampCtrl(x + flip * (r() - 0.3) * spread);
+    const c1y = clampCtrl(y + (r() - 0.5) * spread);
+    const c2x = clampCtrl(tx + (r() - 0.5) * spread);
+    const c2y = clampCtrl(ty + flip * (r() - 0.3) * spread);
     segs.push(`C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${tx.toFixed(1)},${ty.toFixed(1)}`);
     x = tx; y = ty;
   }
@@ -106,12 +108,7 @@ function AnimatedScribble({ size = 80 }: { size?: number }) {
   }, []);
 
   return (
-    <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block" }} overflow="hidden">
-      <defs>
-        <clipPath id="scribble-clip">
-          <rect x="0" y="0" width="100" height="100" />
-        </clipPath>
-      </defs>
+    <svg width={size} height={size} viewBox="-2 -2 104 104" style={{ display: "block" }}>
       <style>{`
         @keyframes scribble {
           0%   { stroke-dashoffset: 1; opacity: 1; }
@@ -128,7 +125,6 @@ function AnimatedScribble({ size = 80 }: { size?: number }) {
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        clipPath="url(#scribble-clip)"
         style={{ strokeDasharray: 1, strokeDashoffset: 1, animation: "scribble 8s ease-in-out infinite" } as React.CSSProperties}
         d={path}
       />
