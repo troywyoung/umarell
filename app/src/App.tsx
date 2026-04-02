@@ -57,38 +57,46 @@ function BurstIcon({ size = 20, white = false, className, style }: { size?: numb
   );
 }
 
-// ─── Animated Scribble — randomly generated pencil path, new shape each loop ─
+// ─── Animated Scribble — rAF driven, runs forever, new path each cycle ───────
 function generateScribblePath(): string {
   const r = () => Math.random();
-  // Endpoints clamped well inside — stroke radius (1.5) won't escape viewBox
-  const clamp = (v: number, lo = 10, hi = 90) => Math.max(lo, Math.min(hi, v));
-  // Control points clamped slightly looser — bulge is fine, just can't escape much
-  const clampCtrl = (v: number) => Math.max(8, Math.min(92, v));
-  let x = 38 + r() * 24;
-  let y = 38 + r() * 24;
+  // Endpoints stay well inside — gives control-point bulge room to breathe
+  const clamp = (v: number, lo = 14, hi = 86) => Math.max(lo, Math.min(hi, v));
+  const clampCtrl = (v: number) => Math.max(4, Math.min(96, v));
+  let x = 34 + r() * 32;
+  let y = 34 + r() * 32;
   const segs: string[] = [`M${x.toFixed(1)},${y.toFixed(1)}`];
-  const count = 34 + Math.floor(r() * 14); // 34–48 segments
+  const count = 42 + Math.floor(r() * 20); // 42–62 segments — very dense
   for (let i = 0; i < count; i++) {
-    // Alternate aggressively between center and edge — constant in/out
-    const goFar = r() > 0.45;
+    const mode = r();
     let tx: number, ty: number;
-    if (goFar) {
+    if (mode < 0.3) {
+      // Dash to edge zone
       const angle = r() * Math.PI * 2;
-      const dist = 28 + r() * 40;
+      const dist = 24 + r() * 36;
       tx = clamp(50 + Math.cos(angle) * dist);
       ty = clamp(50 + Math.sin(angle) * dist);
-    } else {
+    } else if (mode < 0.55) {
+      // Dart to random interior
       tx = clamp(18 + r() * 64);
       ty = clamp(18 + r() * 64);
+    } else if (mode < 0.78) {
+      // Reverse — cross back roughly toward opposite side (forces crossings)
+      tx = clamp(100 - x + (r() - 0.5) * 28);
+      ty = clamp(100 - y + (r() - 0.5) * 28);
+    } else {
+      // Short local scribble — tight cluster
+      tx = clamp(x + (r() - 0.5) * 38);
+      ty = clamp(y + (r() - 0.5) * 38);
     }
-    // Huge spread on control points — crosses itself constantly
-    // Occasionally flip a control point to far opposite side for sharp crossings
-    const spread = 110;
-    const flip = r() > 0.6 ? -1 : 1;
-    const c1x = clampCtrl(x + flip * (r() - 0.3) * spread);
+    // Wild control points — very large spread, random flip direction
+    const spread = 130;
+    const f1 = r() > 0.5 ? -1 : 1;
+    const f2 = r() > 0.5 ? -1 : 1;
+    const c1x = clampCtrl(x + f1 * r() * spread);
     const c1y = clampCtrl(y + (r() - 0.5) * spread);
     const c2x = clampCtrl(tx + (r() - 0.5) * spread);
-    const c2y = clampCtrl(ty + flip * (r() - 0.3) * spread);
+    const c2y = clampCtrl(ty + f2 * r() * spread);
     segs.push(`C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${tx.toFixed(1)},${ty.toFixed(1)}`);
     x = tx; y = ty;
   }
@@ -96,27 +104,35 @@ function generateScribblePath(): string {
 }
 
 function AnimatedScribble({ size = 80 }: { size?: number }) {
-  const [path, setPath] = useState(() => generateScribblePath());
   const pathRef = useRef<SVGPathElement>(null);
 
   useEffect(() => {
     const el = pathRef.current;
     if (!el) return;
-    const next = () => setPath(generateScribblePath());
-    el.addEventListener("animationiteration", next);
-    return () => el.removeEventListener("animationiteration", next);
+    const DURATION = 8000;
+    let start: number | null = null;
+    let raf: number;
+    el.setAttribute("d", generateScribblePath());
+    const tick = (now: number) => {
+      if (start === null) start = now;
+      const progress = (now - start) / DURATION;
+      if (progress >= 1) {
+        // Swap to new path, keep drawing — no fade, no pause
+        el.setAttribute("d", generateScribblePath());
+        el.style.strokeDashoffset = "1";
+        start = now;
+      } else {
+        el.style.strokeDashoffset = String(1 - progress);
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
   }, []);
 
   return (
-    <svg width={size} height={size} viewBox="-2 -2 104 104" style={{ display: "block" }}>
-      <style>{`
-        @keyframes scribble {
-          0%   { stroke-dashoffset: 1; opacity: 1; }
-          62%  { stroke-dashoffset: 0; opacity: 1; }
-          76%  { stroke-dashoffset: 0; opacity: 0; }
-          100% { stroke-dashoffset: 1; opacity: 0; }
-        }
-      `}</style>
+    // viewBox extends 8px beyond the 0–100 coord space on all sides — stroke never clips
+    <svg width={size} height={size} viewBox="-8 -8 116 116" style={{ display: "block" }}>
       <path
         ref={pathRef}
         pathLength="1"
@@ -125,8 +141,8 @@ function AnimatedScribble({ size = 80 }: { size?: number }) {
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        style={{ strokeDasharray: 1, strokeDashoffset: 1, animation: "scribble 8s ease-in-out infinite" } as React.CSSProperties}
-        d={path}
+        style={{ strokeDasharray: "1", strokeDashoffset: "1" } as React.CSSProperties}
+        d=""
       />
     </svg>
   );
@@ -1870,13 +1886,14 @@ export default function App() {
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative" }}>
   
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 16, position: "relative", zIndex: 1 }}>
-          <BurstIcon size={100} />
-          <span style={{ fontSize: 19, fontWeight: 900, letterSpacing: -1.5, color: "#FFF", marginTop: -14, fontFamily: "'Besley', serif" }}>
+          <BurstIcon size={130} />
+          <span style={{ fontSize: 25, fontWeight: 900, letterSpacing: -1.5, color: "#FFF", marginTop: -18, fontFamily: "'Besley', serif" }}>
             <span style={{ color: "#FF00AE" }}>hot</span>take
           </span>
         </div>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
-          Drop a take. We build the strongest case for it.<br />
+          Drop a hot take.<br />
+          We build the strongest case for it.<br />
           We stress test it.<br />
           To see if it holds up.
         </p>
