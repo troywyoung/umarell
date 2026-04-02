@@ -428,13 +428,13 @@ function ScoreWithInfo({ value, show, onToggle, onClose }: { value: number; show
         onClick={onToggle}
         aria-label="How is this score calculated?"
         style={{
-          background: show ? "rgba(255,0,174,0.18)" : "rgba(255,0,174,0.08)",
-          border: "1px solid rgba(255,0,174,0.35)",
+          background: show ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
+          border: "1px solid rgba(255,255,255,0.25)",
           borderRadius: "50%",
           width: 20, height: 20,
           display: "flex", alignItems: "center", justifyContent: "center",
           cursor: "pointer", padding: 0,
-          color: "#FF00AE", fontSize: 11, fontWeight: 800,
+          color: "#FFF", fontSize: 11, fontWeight: 800,
           flexShrink: 0, lineHeight: 1, letterSpacing: 0,
           transition: "background 0.15s",
         }}
@@ -1578,6 +1578,27 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               <span key={tag} style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", background: "rgba(255,255,255,0.08)", borderRadius: 100, padding: "3px 9px", fontWeight: 600 }}>{tag}</span>
             ))}
           </div>
+        )}
+
+        {/* Challenge CTA — top position, before content */}
+        {obs.status === "complete" && !obs.parent_id && (
+          <button
+            onClick={() => onChallenge(obs)}
+            style={{
+              width: "100%", padding: "12px 16px", marginBottom: 16,
+              borderRadius: 10,
+              border: "1.5px solid rgba(255,255,255,0.13)",
+              background: "rgba(255,255,255,0.04)",
+              cursor: "pointer", fontFamily: "inherit",
+              display: "flex", alignItems: "center", justifyContent: "space-between",
+              WebkitTapHighlightColor: "transparent",
+              transition: "background 0.15s, border-color 0.15s",
+            }}
+            onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.35)"; }}
+            onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
+          >
+            <span style={{ fontSize: 13, fontWeight: 700, color: "#FFF", letterSpacing: -0.2 }}>Disagree? Challenge this take →</span>
+          </button>
         )}
 
         {/* Action buttons: Steelman · Counterpoint · PvA Take */}
