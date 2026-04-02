@@ -1719,7 +1719,7 @@ export default function App() {
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
           Drop a take. We build the strongest case for it.<br />
           We stress test it.<br />
-          To see what holds up.
+          To see if it holds up.
         </p>
         {authLoading
           ? <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14 }}>Signing in…</p>
