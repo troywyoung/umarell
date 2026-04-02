@@ -186,18 +186,34 @@ PAYWALL_SIGNALS = [
 async def _fetch_reddit(url: str) -> str:
     """Fetch Reddit posts/comments via their JSON API."""
     try:
-        # Follow redirects first to resolve /s/ share links
-        async with httpx.AsyncClient(timeout=15, follow_redirects=True) as http:
-            head = await http.get(url, headers={"User-Agent": "hottake-app/1.0"})
+        headers = {
+            "User-Agent": "Mozilla/5.0 (compatible; hottake-app/1.0)",
+            "Accept": "application/json",
+        }
+        # Follow redirects to resolve /s/ share links and get the canonical URL
+        async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
+            head = await http.get(url, headers=headers)
             resolved = str(head.url)
 
-        # Strip query params and append .json
-        base = resolved.split("?")[0].rstrip("/")
-        json_url = base + ".json?limit=1"
+        print(f"[reddit] resolved {url} → {resolved}")
 
-        async with httpx.AsyncClient(timeout=15, follow_redirects=True) as http:
-            resp = await http.get(json_url, headers={"User-Agent": "hottake-app/1.0"})
+        # Strip query params/fragments, ensure it's a comments URL
+        base = resolved.split("?")[0].split("#")[0].rstrip("/")
+
+        # If still a /s/ or non-comments URL, can't get JSON
+        if "/s/" in base or "/comments/" not in base:
+            raise ValueError(f"Could not resolve Reddit share link to a post URL. Got: {base}")
+
+        json_url = base + ".json?limit=5&raw_json=1"
+        async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
+            resp = await http.get(json_url, headers=headers)
+
+        if resp.status_code != 200:
+            raise ValueError(f"Reddit JSON API returned {resp.status_code}")
+
         data = resp.json()
+        if not isinstance(data, list) or len(data) < 1:
+            raise ValueError(f"Unexpected Reddit API response shape")
 
         # Reddit JSON: [post_listing, comments_listing]
         post = data[0]["data"]["children"][0]["data"]
@@ -335,7 +351,8 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
         print(f"[format_thesis] image extracted: {content[:100]}")
     elif input_type == "url":
         content = await _fetch_url(raw_input)
-        if content.startswith("[PAYWALL]"):
+        if content.startswith("["):
+            # Covers [PAYWALL], [Could not fetch URL], [Could not fetch Reddit URL], etc.
             raise ValueError(content)
     else:
         content = raw_input
