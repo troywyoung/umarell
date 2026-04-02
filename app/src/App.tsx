@@ -361,7 +361,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 
         <div style={{ display: "flex", flexDirection: "column", position: "relative", zIndex: 1 }}>
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -1.08, display: "inline-flex", alignItems: "center", gap: 6 }}>
-            <span style={{ color: "#FF00AE" }}>hot</span><span>take</span>
+            <span><span style={{ color: "#FF00AE" }}>hot</span>take</span>
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10, position: "relative", zIndex: 1 }}>
@@ -459,7 +459,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 onClick={() => onSelect(obs)}
                 style={{
                   borderRadius: 10,
-                  background: obs.episode_tag ? "#D9D9D8" : "#FFF",
+                  background: obs.episode_tag ? "#FFE4F0" : "#FFF",
                   border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", overflow: "hidden",
