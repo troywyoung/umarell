@@ -526,6 +526,50 @@ Return valid JSON only. No markdown fences. No preamble."""
     return _extract_json(raw)
 
 
+async def _judge_strength(thesis: str, steel_man_json: dict, counterpoint: dict) -> str:
+    """Independent judge rates counterpoint strength — separate call, no authorship bias."""
+    sm_text = steel_man_json.get("bottom_line", "")
+    sm_bullets = steel_man_json.get("bullets", [])
+    if sm_bullets:
+        sm_text += "\n" + "\n".join(f"- {b}" for b in sm_bullets)
+
+    cp_text = counterpoint.get("bottom_line", "")
+    cp_bullets = counterpoint.get("bullets", [])
+    if cp_bullets:
+        cp_text += "\n" + "\n".join(f"- {b}" for b in cp_bullets)
+
+    prompt = (
+        f"You are an independent judge evaluating a counterargument. You did NOT write it.\n\n"
+        f"THESIS: {thesis}\n\n"
+        f"STEELMAN (best case FOR the thesis):\n{sm_text}\n\n"
+        f"COUNTERPOINT to evaluate:\n{cp_text}\n\n"
+        "Rate the strength of this counterpoint:\n"
+        "- weak: thesis mostly survives, counterpoint is nitpicking or misses the core claim\n"
+        "- moderate: real holes found but thesis is still defensible with adjustments\n"
+        "- strong: significant damage done, thesis needs major revision\n"
+        "- devastating: thesis collapses entirely under this counterpoint\n\n"
+        "Be ruthlessly honest. A counterpoint that attacks peripheral details while the core thesis "
+        "stands is WEAK, not strong. If the thesis can retreat to a defensible position, it is at most MODERATE.\n\n"
+        'Return JSON only: {"strength": "<weak|moderate|strong|devastating>"}'
+    )
+    try:
+        raw = await _call(
+            system="You are a rigorous independent debate judge. Return only valid JSON.",
+            user=prompt,
+            max_tokens=60,
+        )
+        if isinstance(raw, tuple):
+            raw = raw[0]
+        result = _extract_json(raw)
+        strength = result.get("strength", "").lower()
+        if strength in ("weak", "moderate", "strong", "devastating"):
+            print(f"[judge] self-rated: {counterpoint.get('strength')} → judge: {strength}")
+            return strength
+    except Exception as e:
+        print(f"[judge] failed, keeping self-rating: {e}")
+    return counterpoint.get("strength", "moderate")
+
+
 async def generate_counterpoint(thesis: str, steel_man_json: dict) -> tuple[dict, list[dict]]:
     """Generate an aggressive counterpoint to the steelman.
     Returns (counterpoint_dict, sources) where counterpoint_dict = {bottom_line, bullets, verdict, strength}."""
@@ -594,6 +638,10 @@ Return valid JSON only. No markdown fences. No preamble."""
     for key in ("bottom_line", "hard_facts", "bullets", "verdict", "strength"):
         if key not in parsed:
             parsed[key] = [] if key in ("hard_facts", "bullets") else ""
+
+    # Replace self-rated strength with independent judge rating
+    parsed["strength"] = await _judge_strength(thesis, steel_man_json, parsed)
+
     return parsed, sources
 
 
