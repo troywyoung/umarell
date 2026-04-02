@@ -425,16 +425,23 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           });
           const hasEpisodes = episodeMap.size > 0;
 
-          // Filter posts by selected topic
-          const userPosts = topLevel.filter(o => !o.episode_tag);
-          const filteredPosts = selectedTopic
-            ? userPosts.filter(o => getObs(o) === selectedTopic)
-            : userPosts;
-          const filteredEpisodes = (selectedTopic === null || selectedTopic === "PvA")
+          // Build filtered feed
+          // "All" → single chronological feed (user + PvA merged by date)
+          // "PvA" → only episode posts
+          // any topic → posts (all types) matching that category
+          const allFeed = selectedTopic === null
+            ? topLevel // already sorted by date
+            : selectedTopic === "PvA"
+              ? topLevel.filter(o => !!o.episode_tag)
+              : topLevel.filter(o => getObs(o) === selectedTopic);
+
+          // Legacy vars kept for episode section (only used when PvA pill selected)
+          const filteredPosts = selectedTopic && selectedTopic !== "PvA"
+            ? allFeed
+            : allFeed.filter(o => !o.episode_tag);
+          const filteredEpisodes = selectedTopic === "PvA"
             ? [...episodeMap.entries()]
-            : [...episodeMap.entries()].filter(([, { obs }]) =>
-                obs.some(o => getObs(o) === selectedTopic)
-              );
+            : [];
 
           const renderCard = (obs: Observation) => {
             let firstBullet = "";
@@ -627,8 +634,15 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 </div>
               )}
 
-              {/* PvA episode posts — flat cards, no nesting */}
-              {(selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
+              {/* All: unified chronological feed */}
+              {selectedTopic === null && (
+                allFeed.length > 0
+                  ? <div style={{ paddingTop: 4 }}>{allFeed.map(renderPost)}</div>
+                  : null
+              )}
+
+              {/* PvA filter: episode posts grouped */}
+              {selectedTopic === "PvA" && filteredEpisodes.length > 0 && (
                 <div>
                   <div style={{ padding: "4px 4px 6px" }}>
                     <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF" }}>Takes from this week's PvA episode</div>
@@ -639,18 +653,19 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 </div>
               )}
 
-              {/* User posts */}
-              {filteredPosts.length > 0 && (
-                <div>
-                  {!selectedTopic && <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF", padding: "14px 4px 6px" }}>Recent</div>}
-                  {filteredPosts.map(renderPost)}
-                </div>
+              {/* Topic filter: matching posts */}
+              {selectedTopic && selectedTopic !== "PvA" && (
+                filteredPosts.length > 0
+                  ? <div style={{ paddingTop: 4 }}>{filteredPosts.map(renderPost)}</div>
+                  : <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
+                      <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No hot takes in {selectedTopic} yet.</p>
+                    </div>
               )}
 
-              {/* Empty state for filtered view */}
-              {selectedTopic && filteredPosts.length === 0 && filteredEpisodes.length === 0 && (
+              {/* PvA empty state */}
+              {selectedTopic === "PvA" && filteredEpisodes.length === 0 && (
                 <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
-                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No hot takes in {selectedTopic} yet.</p>
+                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No PvA episodes yet.</p>
                 </div>
               )}
             </>
