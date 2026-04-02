@@ -218,6 +218,31 @@ async def auth_google(body: GoogleAuthBody, db: AsyncSession = Depends(get_db)):
     return {"token": _make_jwt(user), "user": {"id": user.id, "name": user.name, "avatar": user.avatar_url, "is_admin": _is_admin(user)}}
 
 
+class AnonAuthBody(BaseModel):
+    anon_id: str
+
+
+@app.post("/auth/anon")
+async def auth_anon(body: AnonAuthBody, db: AsyncSession = Depends(get_db)):
+    import re
+    if not re.match(r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$', body.anon_id):
+        raise HTTPException(400, "Invalid anon_id")
+    google_id = f"anon_{body.anon_id}"
+    result = await db.execute(select(User).where(User.google_id == google_id))
+    user = result.scalar_one_or_none()
+    if not user:
+        user = User(
+            google_id=google_id,
+            name="Anon",
+            email=f"anon_{body.anon_id}@anon.local",
+            avatar_url=None,
+        )
+        db.add(user)
+        await db.commit()
+        await db.refresh(user)
+    return {"token": _make_jwt(user), "user": {"id": user.id, "name": user.name, "avatar": user.avatar_url, "is_admin": False}}
+
+
 @app.get("/auth/me")
 async def auth_me(user: User = Depends(require_user)):
     return {"id": user.id, "name": user.name, "avatar": user.avatar_url, "email": user.email, "is_admin": _is_admin(user)}

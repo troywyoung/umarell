@@ -1773,6 +1773,32 @@ export default function App() {
       .catch(() => {});
   }, []);
 
+  const handleAnonLogin = async () => {
+    setAuthLoading(true);
+    setAuthError(null);
+    try {
+      let anonId = localStorage.getItem("anon_id");
+      if (!anonId) {
+        anonId = crypto.randomUUID();
+        localStorage.setItem("anon_id", anonId);
+      }
+      const res = await fetch(`${API}/auth/anon`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ anon_id: anonId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.detail || `Error ${res.status}`);
+      localStorage.setItem("sm_token", data.token);
+      localStorage.setItem("sm_user", JSON.stringify(data.user));
+      setAuthUser(data.user);
+    } catch (e: any) {
+      setAuthError(e.message || "Login failed");
+    } finally {
+      setAuthLoading(false);
+    }
+  };
+
   const handleGoogleSuccess = async (credentialResponse: { credential?: string }) => {
     if (!credentialResponse.credential) return;
     setAuthLoading(true);
@@ -1859,6 +1885,12 @@ export default function App() {
           : <GoogleLogin onSuccess={handleGoogleSuccess} onError={() => setAuthError("Google sign-in failed")} theme="filled_black" shape="rectangular" text="continue_with" size="large" />
         }
         {authError && <p style={{ color: "#FF00AE", fontSize: 13, marginTop: 16, textAlign: "center" }}>{authError}</p>}
+        <button
+          onClick={handleAnonLogin}
+          style={{ background: "none", border: "none", color: "rgba(255,255,255,0.28)", fontSize: 12, cursor: "pointer", marginTop: 28, padding: 0, textDecoration: "underline", fontFamily: "inherit", letterSpacing: -0.2 }}
+        >
+          just let me see it
+        </button>
       </div>
     );
   }
