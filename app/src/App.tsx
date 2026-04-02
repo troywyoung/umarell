@@ -900,8 +900,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       {/* Idea Button */}
       <button
         onClick={onCapture}
+        className="pva-fab"
         style={{
-          position: "fixed", bottom: isMobile ? 36 : "calc(36px + 10vh)", left: "50%", transform: "translateX(-50%)",
+          position: "fixed", bottom: 36, left: "50%", transform: "translateX(-50%)",
           width: 68, height: 68, borderRadius: "50%",
           background: "#FF00AE", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
@@ -917,6 +918,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           @keyframes fabPulse {
             0%, 100% { transform: translateX(-50%) scale(1); }
             50% { transform: translateX(-50%) scale(1.08); }
+          }
+          @media (min-width: 768px) {
+            .pva-fab { bottom: calc(36px + 10vh) !important; }
           }
         `}</style>
       </button>
