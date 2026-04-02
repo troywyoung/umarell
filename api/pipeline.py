@@ -184,19 +184,17 @@ PAYWALL_SIGNALS = [
 ]
 
 async def _fetch_reddit(url: str) -> str:
-    """Fetch Reddit posts via old.reddit.com (server-rendered HTML)."""
+    """Fetch Reddit posts via Tavily extract (bypasses Reddit's datacenter IP blocks)."""
     try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            "Accept-Language": "en-US,en;q=0.9",
-        }
+        if not settings.tavily_api_key:
+            raise ValueError("No Tavily API key — cannot fetch Reddit URLs from server")
 
-        # Strip query params
+        # Strip UTM/share params but keep the core URL
         base = url.split("?")[0].split("#")[0].rstrip("/")
 
-        # Resolve /s/ share links first
+        # Resolve /s/ share links
         if "/s/" in base or "/comments/" not in base:
+            headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
             async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
                 r = await http.get(url, headers=headers)
                 base = str(r.url).split("?")[0].split("#")[0].rstrip("/")
@@ -204,57 +202,20 @@ async def _fetch_reddit(url: str) -> str:
             if "/comments/" not in base:
                 raise ValueError(f"Could not resolve to a Reddit post. Got: {base}")
 
-        # Convert to old.reddit.com for clean HTML
-        old_url = base.replace("www.reddit.com", "old.reddit.com").replace("reddit.com", "old.reddit.com")
-        print(f"[reddit] fetching {old_url}")
+        print(f"[reddit] extracting via Tavily: {base}")
+        from tavily import TavilyClient
+        client = TavilyClient(api_key=settings.tavily_api_key)
+        result = await asyncio.wait_for(
+            asyncio.to_thread(client.extract, urls=[base]),
+            timeout=15.0,
+        )
+        results = result.get("results", [])
+        if not results or not results[0].get("raw_content"):
+            raise ValueError("Tavily returned no content for this Reddit URL")
 
-        async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
-            resp = await http.get(old_url, headers=headers)
-
-        print(f"[reddit] status {resp.status_code}")
-        if resp.status_code != 200:
-            raise ValueError(f"Reddit returned {resp.status_code}")
-
-        soup = BeautifulSoup(resp.text, "html.parser")
-
-        # Post title
-        title_tag = soup.select_one("a.title, p.title a")
-        title = title_tag.get_text(strip=True) if title_tag else ""
-
-        # Post selftext
-        selftext_tag = soup.select_one("div.usertext-body .md")
-        selftext = selftext_tag.get_text(separator=" ", strip=True) if selftext_tag else ""
-
-        # Subreddit + score
-        subreddit_tag = soup.select_one("a.subreddit")
-        subreddit = subreddit_tag.get_text(strip=True) if subreddit_tag else ""
-        score_tag = soup.select_one("div.score.unvoted, div.score.likes, span.score")
-        score = score_tag.get_text(strip=True) if score_tag else ""
-
-        parts = []
-        if title:
-            parts.append(f"Title: {title}")
-        if subreddit:
-            parts.append(f"Subreddit: {subreddit}")
-        if score:
-            parts.append(f"Score: {score}")
-        if selftext:
-            parts.append(f"\n{selftext[:4000]}")
-
-        # Top comments
-        comment_tags = soup.select("div.usertext-body .md")
-        top_comments = []
-        for tag in comment_tags[1:6]:  # skip first (post body)
-            text = tag.get_text(separator=" ", strip=True)
-            if text and len(text) > 20:
-                top_comments.append(f"• {text[:300]}")
-        if top_comments:
-            parts.append("\nTop comments:\n" + "\n".join(top_comments))
-
-        result = "\n".join(parts)
-        if len(result) < 50:
-            raise ValueError("Could not extract meaningful content from Reddit post")
-        return result
+        content = results[0]["raw_content"][:6000]
+        print(f"[reddit] got {len(content)} chars via Tavily")
+        return content
 
     except Exception as e:
         return f"[Could not fetch Reddit URL: {e}]"
