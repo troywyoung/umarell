@@ -480,15 +480,28 @@ async def generate_metadata(thesis: str, steel_man: str, image_b64: str | None =
 
     prompt = f"""Thesis: {thesis}
 
-Score this thesis based on how well it is supported by REAL-WORLD evidence and established fact.
-If an image is provided, it is the PRIMARY evidence — score based on what you actually see.
+First, determine whether this is a FACTUAL claim or a TASTE/OPINION claim.
 
-Rules for scoring:
-- 85-100: Strong empirical consensus, peer-reviewed studies, or visually confirmed fact
+FACTUAL claims make verifiable assertions about the world (statistics, causation, historical events, scientific findings).
+TASTE/OPINION claims are judgments about quality, cultural value, or subjective experience (best show, greatest album, most important figure, etc.).
+
+Score accordingly:
+
+FOR FACTUAL CLAIMS — score on empirical support:
+- 85-100: Strong empirical consensus, peer-reviewed studies, or confirmed fact
 - 60-84: Credible evidence but some debate or mixed data
 - 35-59: Contested, limited evidence, reasonable but unproven
-- 10-34: Weak evidence, speculative, or contradicts available data
-- 0-9: Factually wrong, visually contradicted by the image, or contradicts established reality
+- 10-34: Weak evidence or contradicts available data
+- 0-9: Factually wrong or contradicts established reality
+
+FOR TASTE/OPINION CLAIMS — score on cultural consensus and critical reception:
+- 85-100: Overwhelming critical and audience consensus (e.g. universally acclaimed, awards, massive cultural impact)
+- 60-84: Strong positive reception with some dissent (e.g. well-reviewed, popular, respected by most)
+- 35-59: Mixed reception — genuine debate about quality or significance
+- 10-34: Minority opinion, poorly received, or contrarian take without strong backing
+- 0-9: Near-universally panned or factually contradicted (e.g. "worst show" when it won 10 Emmys)
+
+If an image is provided, it is PRIMARY evidence — score based on what you actually see.
 
 Return a JSON object with exactly these keys:
 {{
