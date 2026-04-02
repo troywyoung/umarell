@@ -37,6 +37,40 @@ function getRandomPlaceholder() {
 }
 
 
+// ─── Burst Icon ───────────────────────────────────────────────────────────
+
+function BurstIcon({ size = 20, color = "#FFF" }: { size?: number; color?: string }) {
+  // Fixed chaotic lines radiating from center (50,50) in a 100x100 viewBox
+  const lines: [number, number, number, number, number, number][] = [
+    // [x1,y1, cx,cy, x2,y2] — quadratic bezier: start near center, curve out
+    [50,50, 48,30, 44,8],   [50,50, 55,28, 58,4],   [50,50, 62,32, 72,6],
+    [50,50, 68,38, 88,12],  [50,50, 72,44, 96,30],  [50,50, 74,50, 98,48],
+    [50,50, 72,58, 94,68],  [50,50, 66,66, 82,88],  [50,50, 58,70, 62,96],
+    [50,50, 50,74, 48,98],  [50,50, 42,70, 36,94],  [50,50, 34,66, 18,88],
+    [50,50, 28,58, 6,70],   [50,50, 26,50, 2,52],   [50,50, 28,42, 4,28],
+    [50,50, 34,34, 16,12],  [50,50, 42,30, 38,4],
+    // extra wild ones — longer, more looping
+    [50,50, 40,20, 52,2],   [50,50, 60,20, 46,0],   [50,50, 70,30, 90,4],
+    [50,50, 78,36, 100,18], [50,50, 80,52, 100,40], [50,50, 76,62, 100,72],
+    [50,50, 68,72, 80,96],  [50,50, 54,76, 56,100], [50,50, 44,76, 40,100],
+    [50,50, 32,68, 16,96],  [50,50, 24,60, 2,80],   [50,50, 20,48, 0,60],
+    [50,50, 22,36, 0,22],   [50,50, 30,26, 12,4],   [50,50, 44,22, 42,0],
+    // short inner scribbles for density
+    [50,50, 52,38, 54,26],  [50,50, 58,46, 68,40],  [50,50, 56,56, 64,64],
+    [50,50, 46,58, 42,68],  [50,50, 40,52, 30,56],  [50,50, 42,42, 34,36],
+    [50,50, 50,36, 48,22],  [50,50, 60,40, 72,28],  [50,50, 62,54, 76,58],
+    [50,50, 52,62, 54,78],  [50,50, 42,60, 32,72],  [50,50, 38,48, 24,44],
+    [50,50, 40,40, 28,28],  [50,50, 56,36, 66,20],
+  ];
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ flexShrink: 0 }}>
+      {lines.map(([x1, y1, cx, cy, x2, y2], i) => (
+        <path key={i} d={`M${x1},${y1} Q${cx},${cy} ${x2},${y2}`} stroke={color} strokeWidth={1.5} strokeLinecap="round" opacity={0.85} />
+      ))}
+    </svg>
+  );
+}
+
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
 
 // Nodes and edges — organic, asymmetric constellation
@@ -334,7 +368,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Hot Take<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
+            <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Hot Take<BurstIcon size={18} color="#FF00AE" /><span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -612,7 +646,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {(selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
                 <div>
                   <div style={{ padding: "4px 4px 6px" }}>
-                    <div style={{ fontSize: 16, fontWeight: 900, color: "#FF00AE", fontFamily: "'Besley', serif" }}>This Week on PvA</div>
+                    <div style={{ fontSize: 16, fontWeight: 900, color: "#FF00AE", fontFamily: "'Besley', serif", display: "flex", alignItems: "center", gap: 4 }}>This Week on PvA <BurstIcon size={16} color="#FF00AE" /></div>
                     <div style={{ fontSize: 10, color: "#FFF", marginTop: 0 }}>Our takes from the episode.</div>
                   </div>
                   {filteredEpisodes.map(([tag, { obs }]) =>
