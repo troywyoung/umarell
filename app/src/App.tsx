@@ -426,22 +426,23 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           const hasEpisodes = episodeMap.size > 0;
 
           // Build filtered feed
-          // "All" → single chronological feed (user + PvA merged by date)
+          // null (default) → PvA at top, user posts below (original layout)
+          // "__all__" → single chronological feed merging everything by date
           // "PvA" → only episode posts
-          // any topic → posts (all types) matching that category
-          const allFeed = selectedTopic === null
-            ? topLevel // already sorted by date
+          // any topic → posts matching that category
+          const allFeed = topLevel; // used for __all__ view
+
+          const filteredPosts = (!selectedTopic || selectedTopic === "__all__")
+            ? topLevel.filter(o => !o.episode_tag)
             : selectedTopic === "PvA"
-              ? topLevel.filter(o => !!o.episode_tag)
+              ? []
               : topLevel.filter(o => getObs(o) === selectedTopic);
 
-          // Legacy vars kept for episode section (only used when PvA pill selected)
-          const filteredPosts = selectedTopic && selectedTopic !== "PvA"
-            ? allFeed
-            : allFeed.filter(o => !o.episode_tag);
-          const filteredEpisodes = selectedTopic === "PvA"
+          const filteredEpisodes = (!selectedTopic || selectedTopic === "PvA" || selectedTopic === "__all__")
             ? [...episodeMap.entries()]
-            : [];
+            : [...episodeMap.entries()].filter(([, { obs }]) =>
+                obs.some(o => getObs(o) === selectedTopic)
+              );
 
           const renderCard = (obs: Observation) => {
             let firstBullet = "";
@@ -580,14 +581,14 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 >
                   {/* All pill */}
                   <button
-                    onClick={() => setSelectedTopic(null)}
+                    onClick={() => setSelectedTopic(selectedTopic === "__all__" ? null : "__all__")}
                     style={{
                       flexShrink: 0,
-                      background: selectedTopic === null ? "rgba(255,255,255,0.15)" : "transparent",
-                      border: selectedTopic === null ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
+                      background: selectedTopic === "__all__" ? "rgba(255,255,255,0.15)" : "transparent",
+                      border: selectedTopic === "__all__" ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
                       borderRadius: 6, padding: "5px 14px",
                       fontSize: 12, fontWeight: 700,
-                      color: selectedTopic === null ? "#FFF" : "rgba(255,255,255,0.55)",
+                      color: selectedTopic === "__all__" ? "#FFF" : "rgba(255,255,255,0.55)",
                       cursor: "pointer", WebkitTapHighlightColor: "transparent",
                       fontFamily: "inherit",
                     }}
@@ -634,38 +635,46 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 </div>
               )}
 
-              {/* All: unified chronological feed */}
-              {selectedTopic === null && (
+              {/* __all__: unified chronological feed */}
+              {selectedTopic === "__all__" && (
                 allFeed.length > 0
                   ? <div style={{ paddingTop: 4 }}>{allFeed.map(renderPost)}</div>
                   : null
               )}
 
-              {/* PvA filter: episode posts grouped */}
-              {selectedTopic === "PvA" && filteredEpisodes.length > 0 && (
+              {/* Default + PvA filter: PvA section at top */}
+              {selectedTopic !== "__all__" && (selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
                 <div>
-                  <div style={{ padding: "4px 4px 6px" }}>
-                    <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF" }}>Takes from this week's PvA episode</div>
-                  </div>
+                  {selectedTopic === null && (
+                    <div style={{ padding: "4px 4px 6px" }}>
+                      <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF" }}>Takes from this week's PvA episode</div>
+                    </div>
+                  )}
                   {filteredEpisodes.map(([tag, { obs }]) =>
                     obs.map(o => <div key={`${tag}-${o.id}`}>{renderPost(o)}</div>)
                   )}
                 </div>
               )}
 
-              {/* Topic filter: matching posts */}
-              {selectedTopic && selectedTopic !== "PvA" && (
-                filteredPosts.length > 0
-                  ? <div style={{ paddingTop: 4 }}>{filteredPosts.map(renderPost)}</div>
-                  : <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
-                      <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No hot takes in {selectedTopic} yet.</p>
-                    </div>
+              {/* Default + topic filters: user posts */}
+              {selectedTopic !== "__all__" && selectedTopic !== "PvA" && filteredPosts.length > 0 && (
+                <div>
+                  {!selectedTopic && filteredEpisodes.length > 0 && (
+                    <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF", padding: "14px 4px 6px" }}>Recent</div>
+                  )}
+                  {filteredPosts.map(renderPost)}
+                </div>
               )}
 
-              {/* PvA empty state */}
+              {/* Empty states */}
               {selectedTopic === "PvA" && filteredEpisodes.length === 0 && (
                 <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
                   <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No PvA episodes yet.</p>
+                </div>
+              )}
+              {selectedTopic && selectedTopic !== "__all__" && selectedTopic !== "PvA" && filteredPosts.length === 0 && filteredEpisodes.length === 0 && (
+                <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
+                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No hot takes in {selectedTopic} yet.</p>
                 </div>
               )}
             </>
