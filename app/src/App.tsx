@@ -351,20 +351,25 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         display: "flex", alignItems: "center", justifyContent: "space-between",
         position: "relative", zIndex: 1, overflow: "visible",
       }}>
-        {/* Centered scribble — decorative, overlaps border */}
+        {/* Scribble + logo stacked, centered, overlapping border */}
         <div style={{
           position: "absolute", left: "50%", bottom: -46,
           transform: "translateX(-50%)",
-          zIndex: 0, pointerEvents: "none",
+          zIndex: 1, pointerEvents: "none",
+          display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
         }}>
           <BurstIcon size={100} className="scribble-pulse" />
-        </div>
-
-        <div style={{ display: "flex", flexDirection: "column", position: "relative", zIndex: 1 }}>
-          <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -1.08, display: "inline-flex", alignItems: "center", gap: 6 }}>
-            <span><span style={{ color: "#FF00AE" }}>hot</span>take</span>
+          <span style={{
+            position: "absolute",
+            fontSize: 19, fontWeight: 700, letterSpacing: -1.08,
+            color: "#FFF", textShadow: "0 0 8px rgba(0,0,0,0.6)",
+          }}>
+            <span style={{ color: "#FF00AE" }}>hot</span>take
           </span>
         </div>
+
+        {/* Empty left spacer to keep avatar right-aligned */}
+        <div />
         <div style={{ display: "flex", alignItems: "center", gap: 10, position: "relative", zIndex: 1 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
           {authUser.avatar
