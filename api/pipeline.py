@@ -187,33 +187,38 @@ async def _fetch_reddit(url: str) -> str:
     """Fetch Reddit posts/comments via their JSON API."""
     try:
         headers = {
-            "User-Agent": "Mozilla/5.0 (compatible; hottake-app/1.0)",
-            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            "Accept": "application/json, text/html, */*",
         }
-        # Follow redirects to resolve /s/ share links and get the canonical URL
-        async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
-            head = await http.get(url, headers=headers)
-            resolved = str(head.url)
 
-        print(f"[reddit] resolved {url} → {resolved}")
+        # Strip query params from the input URL first
+        base = url.split("?")[0].split("#")[0].rstrip("/")
 
-        # Strip query params/fragments, ensure it's a comments URL
-        base = resolved.split("?")[0].split("#")[0].rstrip("/")
+        # If it already has /comments/, use it directly — no redirect needed
+        if "/comments/" in base:
+            json_url = base + ".json?limit=5&raw_json=1"
+            print(f"[reddit] direct comments URL → {json_url}")
+        else:
+            # /s/ share link — need to resolve redirect first
+            async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
+                head = await http.get(url, headers=headers)
+                resolved = str(head.url)
+            print(f"[reddit] resolved {url} → {resolved}")
+            base = resolved.split("?")[0].split("#")[0].rstrip("/")
+            if "/comments/" not in base:
+                raise ValueError(f"Could not resolve to a Reddit post URL. Got: {base}")
+            json_url = base + ".json?limit=5&raw_json=1"
 
-        # If still a /s/ or non-comments URL, can't get JSON
-        if "/s/" in base or "/comments/" not in base:
-            raise ValueError(f"Could not resolve Reddit share link to a post URL. Got: {base}")
-
-        json_url = base + ".json?limit=5&raw_json=1"
         async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
             resp = await http.get(json_url, headers=headers)
 
+        print(f"[reddit] JSON API status {resp.status_code} for {json_url}")
         if resp.status_code != 200:
-            raise ValueError(f"Reddit JSON API returned {resp.status_code}")
+            raise ValueError(f"Reddit returned {resp.status_code}. Try pasting the post text directly.")
 
         data = resp.json()
         if not isinstance(data, list) or len(data) < 1:
-            raise ValueError(f"Unexpected Reddit API response shape")
+            raise ValueError(f"Unexpected Reddit API response")
 
         # Reddit JSON: [post_listing, comments_listing]
         post = data[0]["data"]["children"][0]["data"]
