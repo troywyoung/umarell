@@ -345,21 +345,19 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
 
-      {/* Avatar row — no border */}
-      <div style={{ padding: "5px 20px 0", display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
-          {authUser.avatar
-            ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
-            : <button onClick={onSignOut} style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", background: "none", border: "none", cursor: "pointer", fontFamily: "inherit" }}>Sign out</button>
-          }
-        </div>
+      {/* Avatar floated — doesn't affect flow */}
+      <div style={{ position: "absolute", top: 8, right: 20, display: "flex", alignItems: "center", gap: 10, zIndex: 2 }}>
+        {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
+        {authUser.avatar
+          ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
+          : <button onClick={onSignOut} style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", background: "none", border: "none", cursor: "pointer", fontFamily: "inherit" }}>Sign out</button>
+        }
       </div>
 
-      {/* Scribble + logo in natural flow, centered */}
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", pointerEvents: "none", marginTop: 0 }}>
+      {/* Scribble + logo: scribble 5px from top, text flush to bottom of scribble */}
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", paddingTop: 5 }}>
         <BurstIcon size={100} className="scribble-pulse" />
-        <span style={{ fontSize: 19, fontWeight: 700, letterSpacing: -1.08, color: "#FFF", marginTop: 2 }}>
+        <span style={{ fontSize: 19, fontWeight: 700, letterSpacing: -1.08, color: "#FFF", marginTop: -14 }}>
           <span style={{ color: "#FF00AE" }}>hot</span>take
         </span>
       </div>
