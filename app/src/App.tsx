@@ -305,6 +305,47 @@ function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "
   );
 }
 
+function ScoreInfoSheet({ onClose }: { onClose: () => void }) {
+  const rows = [
+    { range: "85–100", label: "Razor-sharp", desc: "Specific, bold, tightly framed. Hard to dismiss." },
+    { range: "65–84", label: "Strong", desc: "Clear position, non-obvious, well-argued." },
+    { range: "40–64", label: "Decent", desc: "Has something to it, but vague or hedged." },
+    { range: "15–39", label: "Weak", desc: "Assertion without real argument." },
+    { range: "0–14", label: "Not a take", desc: "Obvious, incoherent, or purely emotional." },
+  ];
+  return (
+    <>
+      <div onClick={onClose} style={{ position: "fixed", inset: 0, zIndex: 998, background: "rgba(0,0,0,0.5)" }} />
+      <div style={{
+        position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 999,
+        background: "#1C1C1C", borderRadius: "18px 18px 0 0",
+        padding: "20px 20px 36px",
+        border: "1px solid rgba(255,255,255,0.1)",
+        borderBottom: "none",
+      }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+          <span style={{ fontSize: 12, fontWeight: 800, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
+          <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 20, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
+        </div>
+        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", lineHeight: 1.5, margin: "0 0 16px" }}>
+          Measures how sharp, specific, and arguable the position is — not whether it's factually correct. A bold, well-framed take scores higher than a vague or obvious one.
+        </p>
+        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+          {rows.map(({ range, label, desc }) => (
+            <div key={range} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
+              <span style={{ fontSize: 11, fontWeight: 800, color: "#FF00AE", width: 52, flexShrink: 0, paddingTop: 1 }}>{range}</span>
+              <div>
+                <span style={{ fontSize: 13, fontWeight: 700, color: "#FFF" }}>{label}</span>
+                <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}> — {desc}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+}
+
 function ScoreBadge({ value, size = "md", dark = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean }) {
   if (value == null) return null;
   const v = Math.round(value);
@@ -1117,6 +1158,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   const [deleteConfirm, setDeleteConfirm] = useState(false);
   const [deleting, setDeleting] = useState(false);
   const [challenges, setChallenges] = useState<Observation[]>([]);
+  const [showScoreInfo, setShowScoreInfo] = useState(false);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const consecutiveNullsRef = useRef(0);
 
@@ -1468,13 +1510,28 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         {/* Metadata row: evidence type, score, tags */}
         {obs.status === "complete" && (obs.evidence_type || obs.score != null || obs.tags?.length) && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center", marginBottom: 20 }}>
-            <ScoreBadge value={obs.score} size="lg" />
+            {obs.score != null && (
+              <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
+                <ScoreBadge value={obs.score} size="lg" />
+                <button
+                  onClick={() => setShowScoreInfo(true)}
+                  style={{
+                    background: "none", border: "1px solid rgba(255,255,255,0.18)", borderRadius: "50%",
+                    width: 18, height: 18, display: "flex", alignItems: "center", justifyContent: "center",
+                    cursor: "pointer", padding: 0, color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 700,
+                    flexShrink: 0, lineHeight: 1,
+                  }}
+                  aria-label="How is this score calculated?"
+                >i</button>
+              </div>
+            )}
             <EvidenceBadge value={obs.evidence_type} size="lg" />
             {obs.tags?.map((tag) => (
               <span key={tag} style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", background: "rgba(255,255,255,0.08)", borderRadius: 100, padding: "3px 9px", fontWeight: 600 }}>{tag}</span>
             ))}
           </div>
         )}
+        {showScoreInfo && <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} />}
 
         {/* Action buttons: Steelman · Counterpoint · PvA Take */}
         {obs.status === "complete" && (

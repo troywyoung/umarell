@@ -520,41 +520,44 @@ Return valid JSON only. No markdown fences. No preamble."""
 
 
 async def generate_metadata(thesis: str, steel_man: str, image_b64: str | None = None, image_media_type: str = "image/jpeg") -> dict:
-    """Generate evidence score (0-100), topic tags, and evidence type label."""
+    """Generate take strength score (0-100), topic tags, and evidence type label."""
     system = (
-        "You are a rigorous fact-checker and research classifier. "
-        "You score claims based on actual real-world evidence — not on how convincing the argument sounds. "
-        "If an image is provided, use it as direct visual evidence to verify the claim. "
-        "A well-argued case for a false or visually contradicted claim still scores near zero. "
+        "You are evaluating the argumentative strength of hot takes — subjective positions on media, tech, culture, and ideas. "
+        "You score takes on how sharp, specific, and arguable they are, not on factual correctness. "
+        "If an image is provided, use it as evidence of what is being claimed. "
         "You always return valid JSON when asked."
     )
 
     prompt = f"""Thesis: {thesis}
 
-First, determine whether this is a FACTUAL claim or a TASTE/OPINION claim.
+Score this as a TAKE — a subjective position or argument. This is NOT a factual accuracy check.
+Score on TAKE STRENGTH: how sharp, specific, and arguable this position is.
 
-FACTUAL claims make verifiable assertions about the world (statistics, causation, historical events, scientific findings).
-TASTE/OPINION claims are judgments about quality, cultural value, or subjective experience (best show, greatest album, most important figure, etc.).
+A strong take:
+- Stakes out a specific, non-obvious position
+- Has a coherent argument, even if unprovable
+- Could be credibly defended by a smart person
+- Pushes against or meaningfully sharpens conventional wisdom
 
-Score accordingly:
+A weak take:
+- Is too vague to argue with ("things are changing")
+- Is so obvious it barely qualifies as a take ("water is wet")
+- Is purely emotional with no argument ("this is terrible")
+- Is internally contradictory or incoherent
 
-FOR FACTUAL CLAIMS — score on empirical support:
-- 85-100: Strong empirical consensus, peer-reviewed studies, or confirmed fact
-- 60-84: Credible evidence but some debate or mixed data
-- 35-59: Contested, limited evidence, reasonable but unproven
-- 10-34: Weak evidence or contradicts available data
-- 0-9: Factually wrong or contradicts established reality
+Scoring:
+- 85-100: Razor-sharp. Specific, bold, tightly framed. Hard to dismiss even if you disagree.
+- 65-84: Strong. Clear position, non-obvious, well-argued.
+- 40-64: Decent. Has something to it but too vague, hedged, or partially obvious.
+- 15-39: Weak. Assertion without real argument, or so general it can't be engaged with.
+- 0-14: Not a take. Trivially true/false, factually incoherent, or purely emotional with no argument.
 
-FOR TASTE/OPINION CLAIMS — score on cultural consensus and critical reception:
-- 85-100: Overwhelming critical and audience consensus (universally acclaimed, major awards, massive cultural impact)
-- 60-84: Strong positive reception with some dissent (well-reviewed, popular, respected by most)
-- 35-59: Mixed reception — genuine debate about quality or significance
-- 10-34: Poorly received or contrarian take with strong evidence against it
-- 0-9: Near-universally panned or directly contradicted by known facts
-
-IMPORTANT: If you are not certain about the reception of the specific work or person being discussed, default to 55 — do not penalize unfamiliar subjects with a low score. Only score low if you have clear evidence of poor reception.
-
-If an image is provided, it is PRIMARY evidence — score based on what you actually see.
+CRITICAL RULES:
+- Being unprovable is NOT a penalty. A bold, specific prediction scores high.
+- Vagueness IS a penalty. A take must stake out a real position.
+- Obvious facts score low (0-14). "Apples are fruit" is a 2, not an 85.
+- Hyperbole for effect is fine — score the underlying argument, not the literal claim.
+- If an image is provided, use it as direct evidence for what the take is claiming.
 
 Return a JSON object with exactly these keys:
 {{
