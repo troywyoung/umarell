@@ -910,7 +910,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           flexDirection: "column", gap: 0,
         }}
       >
-        <span style={{ fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: -0.5, lineHeight: 1.15, fontFamily: "inherit", textTransform: "uppercase" }}>Add</span>
+        <span style={{ fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: -0.5, lineHeight: 1.15, fontFamily: "inherit", textTransform: "uppercase" }}>Your</span>
         <span style={{ fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: -0.5, lineHeight: 1.15, fontFamily: "inherit", textTransform: "uppercase" }}>Take</span>
         <style>{`
           @keyframes fabPulse {
