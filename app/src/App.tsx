@@ -352,7 +352,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       }}>
         {/* Centered scribble — decorative, overlaps border */}
         <div style={{
-          position: "absolute", left: "50%", bottom: -36,
+          position: "absolute", left: "50%", bottom: -56,
           transform: "translateX(-50%)",
           zIndex: 0, pointerEvents: "none",
         }}>
