@@ -171,6 +171,8 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
                 obs.status = "error"
                 if "[PAYWALL]" in err_msg:
                     obs.error_detail = "This article is behind a paywall. Paste the text directly instead."
+                elif "[COOKIE_WALL]" in err_msg:
+                    obs.error_detail = "This site requires cookie consent from our servers. Paste the article text directly instead."
                 elif "[Could not fetch URL" in err_msg or "[Could not fetch Reddit" in err_msg:
                     obs.error_detail = "Couldn't read this URL. Try pasting the text directly."
                 else:

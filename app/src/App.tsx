@@ -1906,7 +1906,7 @@ export default function App() {
           onClick={handleAnonLogin}
           style={{ background: "none", border: "none", color: "rgba(255,255,255,0.28)", fontSize: 12, cursor: "pointer", marginTop: 28, padding: 0, textDecoration: "underline", fontFamily: "inherit", letterSpacing: -0.2 }}
         >
-          just let me see it
+          Just Let Me See It
         </button>
       </div>
     );

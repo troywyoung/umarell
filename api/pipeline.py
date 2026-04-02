@@ -180,7 +180,13 @@ async def _search_tavily(query: str, max_results: int = 5) -> tuple[str, list[di
 PAYWALL_SIGNALS = [
     "subscribe", "subscription", "sign in to read", "sign in to continue",
     "create an account", "already a subscriber", "unlimited access",
-    "gift subscription", "log in", "you've read your free",
+    "gift subscription", "you've read your free",
+]
+
+COOKIE_WALL_SIGNALS = [
+    "we use cookies", "accept cookies", "cookie consent", "cookie policy",
+    "manage cookies", "reject all", "accept all", "privacy settings",
+    "your privacy choices", "gdpr",
 ]
 
 async def _fetch_reddit(url: str) -> str:
@@ -221,24 +227,52 @@ async def _fetch_reddit(url: str) -> str:
         return f"[Could not fetch Reddit URL: {e}]"
 
 
+def _looks_like_cookie_wall(text: str) -> bool:
+    lower = text.lower()
+    hits = sum(1 for s in COOKIE_WALL_SIGNALS if s in lower)
+    return hits >= 3 and len(text) < 3000
+
+
 async def _fetch_via_tavily(url: str) -> str:
-    """Fetch URL content via Tavily extract — works for sites that block datacenter IPs."""
+    """Fetch URL content via Tavily extract with search fallback."""
     if not settings.tavily_api_key:
         return ""
     try:
         from tavily import TavilyClient
         client = TavilyClient(api_key=settings.tavily_api_key)
-        result = await asyncio.wait_for(
-            asyncio.to_thread(client.extract, urls=[url]),
-            timeout=15.0,
+
+        # Try extract first
+        try:
+            result = await asyncio.wait_for(
+                asyncio.to_thread(client.extract, urls=[url]),
+                timeout=20.0,
+            )
+            results = result.get("results", [])
+            if results and results[0].get("raw_content"):
+                content = results[0]["raw_content"]
+                if len(content) >= 300 and not _looks_like_cookie_wall(content):
+                    print(f"[tavily extract] got {len(content)} chars for {url}")
+                    return content[:8000]
+                print(f"[tavily extract] result looks like cookie wall or too short for {url}")
+        except asyncio.TimeoutError:
+            print(f"[tavily extract] timed out for {url}")
+        except Exception as e:
+            print(f"[tavily extract] failed for {url}: {e}")
+
+        # Search fallback — often finds the article even when extract fails
+        print(f"[tavily] trying search fallback for {url}")
+        search_result = await asyncio.wait_for(
+            asyncio.to_thread(client.search, url, max_results=5, include_raw_content=True),
+            timeout=12.0,
         )
-        results = result.get("results", [])
-        if results and results[0].get("raw_content"):
-            content = results[0]["raw_content"][:8000]
-            print(f"[tavily extract] got {len(content)} chars for {url}")
-            return content
+        for r in search_result.get("results", []):
+            content = r.get("raw_content") or r.get("content", "")
+            if content and len(content) >= 300 and not _looks_like_cookie_wall(content):
+                print(f"[tavily search fallback] got {len(content)} chars for {url}")
+                return content[:8000]
+
     except Exception as e:
-        print(f"[tavily extract] failed for {url}: {e}")
+        print(f"[tavily] all attempts failed for {url}: {e}")
     return ""
 
 
@@ -270,7 +304,10 @@ async def _fetch_url(url: str) -> str:
                 tag.decompose()
             text = soup.get_text(separator=" ", strip=True)
             lower = text.lower()
+            cookie_hits = sum(1 for s in COOKIE_WALL_SIGNALS if s in lower)
             paywall_hits = sum(1 for s in PAYWALL_SIGNALS if s in lower)
+            if cookie_hits >= 3:
+                return "[COOKIE_WALL] Site served a cookie consent page. Paste the article text directly instead."
             if len(text) >= 500 and paywall_hits < 2:
                 return text[:8000]
             return "[PAYWALL] This article is behind a paywall. Please paste the article text directly instead."
