@@ -985,7 +985,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   const [pvaError, setPvaError] = useState(false);
   const [showCounterpoint, setShowCounterpoint] = useState(false);
   const [showPva, setShowPva] = useState(false);
-  const [flashSteelman, setFlashSteelman] = useState(false);
+  const [, setFlashSteelman] = useState(false);
   const [flashCounterpoint, setFlashCounterpoint] = useState(false);
   const [flashPva, setFlashPva] = useState(false);
   const [activeSection, setActiveSection] = useState<"steelman" | "counterpoint" | "pva">("steelman");
