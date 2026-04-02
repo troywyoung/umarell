@@ -361,7 +361,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 
         <div style={{ display: "flex", flexDirection: "column", position: "relative", zIndex: 1 }}>
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -1.2, display: "inline-flex", alignItems: "center", gap: 6 }}>
-            hot.take<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
+            <span style={{ color: "#FF00AE" }}>hot</span>take
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10, position: "relative", zIndex: 1 }}>
