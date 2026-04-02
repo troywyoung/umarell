@@ -221,12 +221,36 @@ async def _fetch_reddit(url: str) -> str:
         return f"[Could not fetch Reddit URL: {e}]"
 
 
+async def _fetch_via_tavily(url: str) -> str:
+    """Fetch URL content via Tavily extract — works for sites that block datacenter IPs."""
+    if not settings.tavily_api_key:
+        return ""
+    try:
+        from tavily import TavilyClient
+        client = TavilyClient(api_key=settings.tavily_api_key)
+        result = await asyncio.wait_for(
+            asyncio.to_thread(client.extract, urls=[url]),
+            timeout=15.0,
+        )
+        results = result.get("results", [])
+        if results and results[0].get("raw_content"):
+            content = results[0]["raw_content"][:8000]
+            print(f"[tavily extract] got {len(content)} chars for {url}")
+            return content
+    except Exception as e:
+        print(f"[tavily extract] failed for {url}: {e}")
+    return ""
+
+
 async def _fetch_url(url: str) -> str:
-    # Route Reddit URLs through their JSON API
+    # Route Reddit URLs through Tavily (Reddit blocks datacenter IPs)
     if "reddit.com" in url:
         return await _fetch_reddit(url)
+
+    # Try direct HTTP first
+    direct = ""
     try:
-        async with httpx.AsyncClient(timeout=30, follow_redirects=True) as http:
+        async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
             resp = await http.get(url, headers={
                 "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
                 "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
@@ -238,13 +262,21 @@ async def _fetch_url(url: str) -> str:
             for tag in soup(["script", "style", "nav", "footer", "header"]):
                 tag.decompose()
             text = soup.get_text(separator=" ", strip=True)
-            # Detect paywall
             lower = text.lower()
-            if len(text) < 500 or sum(1 for s in PAYWALL_SIGNALS if s in lower) >= 2:
-                return "[PAYWALL] This article is behind a paywall. Please paste the article text directly instead."
-            return text[:8000]
+            paywall_hits = sum(1 for s in PAYWALL_SIGNALS if s in lower)
+            if len(text) >= 500 and paywall_hits < 2:
+                return text[:8000]
+            # Direct fetch returned thin/blocked content — try Tavily
+            print(f"[fetch] direct fetch thin/blocked (len={len(text)}, paywall_hits={paywall_hits}), trying Tavily")
     except Exception as e:
-        return f"[Could not fetch URL: {e}]"
+        print(f"[fetch] direct fetch failed: {e}, trying Tavily")
+
+    # Tavily fallback — handles sites that block datacenter IPs (Substack, Medium, etc.)
+    tavily_content = await _fetch_via_tavily(url)
+    if tavily_content:
+        return tavily_content
+
+    return "[Could not fetch URL: site may be blocking server requests. Paste the article text directly instead.]"
 
 
 # ─── Image extraction ────────────────────────────────────────────────────
