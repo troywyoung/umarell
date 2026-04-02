@@ -639,7 +639,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {(selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
                 <div>
                   <div style={{ padding: "4px 4px 6px" }}>
-                    <div style={{ fontSize: 13, fontWeight: 900, color: "#FFF", fontFamily: "'Besley', serif" }}>Takes from this week's PvA episode</div>
+                    <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF" }}>Takes from this week's PvA episode</div>
                   </div>
                   {filteredEpisodes.map(([tag, { obs }]) =>
                     obs.map(o => <div key={`${tag}-${o.id}`}>{renderPost(o)}</div>)
@@ -650,7 +650,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* User posts */}
               {filteredPosts.length > 0 && (
                 <div>
-                  {!selectedTopic && <div style={{ fontSize: 16, fontWeight: 900, color: "#FFF", fontFamily: "'Besley', serif", padding: "14px 4px 6px" }}>Recent</div>}
+                  {!selectedTopic && <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF", padding: "14px 4px 6px" }}>Recent</div>}
                   {filteredPosts.map(renderPost)}
                 </div>
               )}
