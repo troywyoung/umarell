@@ -959,9 +959,10 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
 
 // ─── Output ───────────────────────────────────────────────────────────────
 
-function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObservation, requestCounterpoint, requestPvaTake, authUserId, isAdmin }: {
+function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge, pollObservation, requestCounterpoint, requestPvaTake, authUserId, isAdmin }: {
   obs: Observation;
   onBack: () => void;
+  onDelete: (id: string) => Promise<void>;
   onResubmit: (obsId: string, text: string, imageData?: string, imageMediaType?: string) => Promise<void>;
   onChallenge: (obs: Observation) => void;
   pollObservation: (id: string) => Promise<Observation | null>;
@@ -987,6 +988,8 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
   const [editMode, setEditMode] = useState(false);
   const [editText, setEditText] = useState("");
   const [resubmitting, setResubmitting] = useState(false);
+  const [deleteConfirm, setDeleteConfirm] = useState(false);
+  const [deleting, setDeleting] = useState(false);
   const [challenges, setChallenges] = useState<Observation[]>([]);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const consecutiveNullsRef = useRef(0);
@@ -1156,7 +1159,38 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80, background: "#12102B", minHeight: "100vh" }}>
       <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
-        {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
+        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
+          {isOwner && (
+            deleteConfirm ? (
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <button
+                  onClick={() => setDeleteConfirm(false)}
+                  style={{ background: "none", border: "none", fontSize: 12, color: "#666", cursor: "pointer", padding: 0, fontFamily: "inherit" }}
+                >cancel</button>
+                <button
+                  onClick={async () => {
+                    setDeleting(true);
+                    await onDelete(obs.id);
+                    onBack();
+                  }}
+                  disabled={deleting}
+                  style={{ background: "none", border: "none", fontSize: 12, fontWeight: 700, color: "#FF4444", cursor: "pointer", padding: 0, fontFamily: "inherit" }}
+                >{deleting ? "deleting…" : "delete"}</button>
+              </div>
+            ) : (
+              <button
+                onClick={() => setDeleteConfirm(true)}
+                style={{ background: "none", border: "none", cursor: "pointer", padding: 0, lineHeight: 1, opacity: 0.4, WebkitTapHighlightColor: "transparent" }}
+                title="Delete"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 011-1h4a1 1 0 011 1v2"/>
+                </svg>
+              </button>
+            )
+          )}
+        </div>
       </div>
 
       <div style={{ padding: "24px 20px 0" }}>
@@ -1802,6 +1836,7 @@ export default function App() {
         key={outputKey}
         obs={selectedObs}
         onBack={() => { setView("home"); window.history.replaceState(null, "", window.location.pathname); fetchObservations(); setTimeout(() => window.scrollTo(0, 0), 0); }}
+        onDelete={async (id) => { await deleteObservation(id); fetchObservations(); }}
         onResubmit={handleResubmit}
         onChallenge={handleChallenge}
         pollObservation={pollObservation}
