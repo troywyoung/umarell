@@ -919,9 +919,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             0%, 100% { transform: translateX(-50%) scale(1); }
             50% { transform: translateX(-50%) scale(1.08); }
           }
-          @media (min-width: 768px) {
-            .pva-fab { bottom: calc(36px + 10vh) !important; }
-          }
         `}</style>
       </button>
     </div>
