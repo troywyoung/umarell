@@ -556,9 +556,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </button>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
-          <button onClick={onCapture} style={{ background: "none", border: "none", padding: 0, cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
-            <span style={{ fontSize: window.innerWidth < 600 ? 11 : 9, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>add your take</span>
-          </button>
           {authUser.avatar
             ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
             : <button onClick={onSignOut} style={{ fontSize: 11, color: "#FF00AE", background: "none", border: "1px solid rgba(255,0,174,0.35)", borderRadius: 20, cursor: "pointer", fontFamily: "inherit", padding: "4px 10px", letterSpacing: -0.2 }}>Sign in</button>
@@ -908,11 +905,13 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           background: "#FF00AE", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
           boxShadow: "0 0 12px rgba(229,57,53,0.4)", zIndex: 2,
-          fontSize: 36, fontWeight: 800, color: "#fff", lineHeight: 1, paddingBottom: 2,
           WebkitTapHighlightColor: "transparent",
           animation: "fabPulse 2s ease-in-out infinite",
+          flexDirection: "column", gap: 0,
         }}
-      >+
+      >
+        <span style={{ fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: -0.5, lineHeight: 1.15, fontFamily: "inherit", textTransform: "uppercase" }}>Add</span>
+        <span style={{ fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: -0.5, lineHeight: 1.15, fontFamily: "inherit", textTransform: "uppercase" }}>Take</span>
         <style>{`
           @keyframes fabPulse {
             0%, 100% { transform: translateX(-50%) scale(1); }
