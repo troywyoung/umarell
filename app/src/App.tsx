@@ -347,7 +347,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
 
       {/* Top bar: what is it? left, avatar right */}
-      <div style={{ position: "absolute", top: 8, left: 20, right: 20, display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 2 }}>
+      <div style={{ position: "absolute", top: 13, left: 20, right: 20, display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 2 }}>
         <button onClick={onAbout} style={{ background: "none", border: "none", padding: 0, cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
           <span style={{ fontSize: window.innerWidth < 600 ? 11 : 9, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>what is it?</span>
         </button>
@@ -362,7 +362,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
 
       {/* Scribble cropped 20% at top, logo flush below */}
       <div style={{ overflow: "hidden", display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <BurstIcon size={100} style={{ marginTop: -20 }} />
+        <BurstIcon size={130} style={{ marginTop: -52 }} />
         <span style={{ fontSize: 19, fontWeight: 700, letterSpacing: -1.08, color: "#FFF", marginTop: -14 }}>
           <span style={{ color: "#FF00AE" }}>hot</span>take
         </span>
