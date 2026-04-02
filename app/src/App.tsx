@@ -115,8 +115,8 @@ function AnimatedScribble({ size = 80 }: { size?: number }) {
       <style>{`
         @keyframes scribble {
           0%   { stroke-dashoffset: 1; opacity: 1; }
-          78%  { stroke-dashoffset: 0; opacity: 1; }
-          90%  { stroke-dashoffset: 0; opacity: 0; }
+          62%  { stroke-dashoffset: 0; opacity: 1; }
+          76%  { stroke-dashoffset: 0; opacity: 0; }
           100% { stroke-dashoffset: 1; opacity: 0; }
         }
       `}</style>
