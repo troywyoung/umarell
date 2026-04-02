@@ -1174,7 +1174,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                     onBack();
                   }}
                   disabled={deleting}
-                  style={{ background: "none", border: "none", fontSize: 12, fontWeight: 700, color: "#FF4444", cursor: "pointer", padding: 0, fontFamily: "inherit" }}
+                  style={{ background: "none", border: "none", fontSize: 12, fontWeight: 700, color: "#FF00AE", cursor: "pointer", padding: 0, fontFamily: "inherit" }}
                 >{deleting ? "deleting…" : "delete"}</button>
               </div>
             ) : (
