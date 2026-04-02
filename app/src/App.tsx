@@ -1297,7 +1297,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {obs.status === "complete" && (
           <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
             {([
-              ["steelman", "hot.take", handleSteelmanScroll, false] as const,
+              ["steelman", "hot take", handleSteelmanScroll, false] as const,
               ["counterpoint", "cold shower", handleCounterpoint, counterpointLoading] as const,
               ["pva", "pva take", handlePvaTake, pvaLoading] as const,
             ]).map(([key, label, handler, loading]) => (
@@ -1313,7 +1313,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 }}
               >
                 {loading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : (
-                  key === "steelman" ? <><BurstIcon size={16} white />{label}</> : label
+                  key === "steelman" ? <><BurstIcon size={20} white /><span style={{ marginLeft: 1 }}>{label}</span></> : label
                 )}
               </button>
             ))}
