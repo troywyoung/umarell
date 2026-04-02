@@ -239,75 +239,6 @@ function timeAgo(iso: string) {
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric", ...(!sameYear && { year: "numeric" }) });
 }
 
-// ─── Episode Section ─────────────────────────────────────────────────────
-
-function EpisodeSection({ title, observations, challengeMap, renderCard, renderChallenge }: {
-  title: string;
-  observations: Observation[];
-  challengeMap: Map<string, Observation[]>;
-  renderCard: (obs: Observation) => React.ReactNode;
-  renderChallenge: (c: Observation) => React.ReactNode;
-}) {
-  const [expanded, setExpanded] = useState(false);
-  const first = observations[0];
-  const rest = observations.slice(1);
-
-  return (
-    <div style={{ margin: "6px 0" }}>
-      {/* Episode header */}
-      <div style={{ padding: "4px 0 6px", borderTop: "1px solid rgba(255,255,255,0.12)" }}>
-        <p
-          onClick={() => setExpanded(!expanded)}
-          style={{ fontSize: window.innerWidth < 600 ? 14 : 13, fontWeight: 800, color: "#FF00AE", letterSpacing: -0.3, margin: 0, textAlign: "center", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}
-        >
-          {title} <span style={{ color: "rgba(255,0,174,0.5)" }}>({observations.length})</span>
-        </p>
-      </div>
-
-      {/* Always show first card */}
-      {first && (
-        <div style={{ borderLeft: "2px solid rgba(255,0,174,0.25)", paddingLeft: 12, marginLeft: 2 }}>
-          <div style={{ marginBottom: expanded ? 10 : 0 }}>
-            {renderCard(first)}
-            {(challengeMap.get(first.id) || [])
-              .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime())
-              .map(c => <div key={c.id} style={{ marginTop: 4 }}>{renderChallenge(c)}</div>)}
-          </div>
-
-          {/* Expanded: remaining cards */}
-          {expanded && rest.map(obs => {
-            const children = (challengeMap.get(obs.id) || [])
-              .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
-            return (
-              <div key={obs.id} style={{ marginBottom: 10 }}>
-                {renderCard(obs)}
-                {children.map(c => <div key={c.id} style={{ marginTop: 4 }}>{renderChallenge(c)}</div>)}
-              </div>
-            );
-          })}
-        </div>
-      )}
-
-      {/* Expand/collapse tap target */}
-      {rest.length > 0 && (
-        <div
-          onClick={() => setExpanded(!expanded)}
-          style={{
-            display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
-            padding: "10px 0", cursor: "pointer",
-            WebkitTapHighlightColor: "transparent",
-          }}
-        >
-          <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE" }}>
-            {expanded ? "Show less" : `Expand for ${rest.length} more bundle SMs`}
-          </span>
-          <span style={{ fontSize: 10, color: "#FF00AE", transition: "transform 0.2s", transform: expanded ? "rotate(180deg)" : "rotate(0deg)" }}>▼</span>
-        </div>
-      )}
-    </div>
-  );
-}
-
 // ─── Category mapping ────────────────────────────────────────────────────
 
 const CATEGORY_PRIORITY: Record<string, number> = {
@@ -663,7 +594,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* PvA episode posts — flat cards, no nesting */}
               {(selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
                 <div>
-                  <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "4px 4px 6px" }}>This Week on PvA</div>
+                  <div style={{ fontSize: 16, fontWeight: 900, color: "#FFF", fontFamily: "'Besley', serif", padding: "4px 4px 6px" }}>This Week on PvA</div>
                   {filteredEpisodes.map(([tag, { obs }]) =>
                     obs.map(o => <div key={`${tag}-${o.id}`}>{renderPost(o)}</div>)
                   )}
@@ -673,7 +604,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* User posts */}
               {filteredPosts.length > 0 && (
                 <div>
-                  {!selectedTopic && <div style={{ fontSize: 16, fontWeight: 700, color: "#FFF", fontFamily: "'Caveat', cursive", padding: "14px 4px 6px" }}>Recent</div>}
+                  {!selectedTopic && <div style={{ fontSize: 16, fontWeight: 900, color: "#FFF", fontFamily: "'Besley', serif", padding: "14px 4px 6px" }}>Recent</div>}
                   {filteredPosts.map(renderPost)}
                 </div>
               )}
