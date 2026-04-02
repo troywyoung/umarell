@@ -588,6 +588,44 @@ async def retag_episode(body: RetagEpisodeBody, db: AsyncSession = Depends(get_d
     return {"retagged": len(obs_list), "new_tag": body.new_tag, "new_title": body.new_title}
 
 
+# ─── Migration: rescore all observations ────────────────────────────────────
+
+class RescoreBody(BaseModel):
+    admin_key: str
+    dry_run: bool = False
+
+@app.post("/admin/rescore")
+async def rescore_all(body: RescoreBody, db: AsyncSession = Depends(get_db)):
+    """Re-run generate_metadata on every complete observation using the current scoring prompt."""
+    if body.admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    result = await db.execute(
+        select(Observation).where(Observation.status == "complete", Observation.thesis != None)
+    )
+    obs_list = list(result.scalars().all())
+
+    updated, failed = 0, 0
+    for obs in obs_list:
+        try:
+            sm_text = obs.summary or ""
+            meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
+            if not body.dry_run:
+                obs.score = meta.get("score")
+                obs.tags = meta.get("tags")
+                obs.evidence_type = meta.get("evidence_type")
+                obs.category = meta.get("category")
+            updated += 1
+        except Exception as e:
+            print(f"[rescore] failed {obs.id}: {e}")
+            failed += 1
+
+    if not body.dry_run:
+        await db.commit()
+
+    return {"total": len(obs_list), "updated": updated, "failed": failed, "dry_run": body.dry_run}
+
+
 # ─── Migration: backfill hard_facts ─────────────────────────────────────────
 
 @app.post("/admin/backfill-hard-facts")
