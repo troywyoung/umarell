@@ -703,7 +703,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin || getTokenIsAdmin()) && (
                     <button
                       onClick={(e) => { e.stopPropagation(); if (confirm("Delete this hot take?")) onDelete(obs.id); }}
-                      style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
+                      style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 16, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
                     >&times;</button>
                   )}
                 </div>
@@ -760,7 +760,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {(!c.user_id || c.user_id === authUser.id) && (
                 <button
                   onClick={(e) => { e.stopPropagation(); if (confirm("Delete this challenge?")) onDelete(c.id); }}
-                  style={{ background: "none", border: "none", cursor: "pointer", color: "#AAA", fontSize: 13, padding: 0, lineHeight: 1, flexShrink: 0 }}
+                  style={{ background: "none", border: "none", cursor: "pointer", color: "#AAA", fontSize: 16, padding: 0, lineHeight: 1, flexShrink: 0 }}
                 >&times;</button>
               )}
             </div>
