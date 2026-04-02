@@ -90,13 +90,19 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
 
     for attempt in range(retries):
         try:
-            config = genai.types.GenerateContentConfig(
-                system_instruction=system,
-                max_output_tokens=max_tokens,
-                thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
-            )
+            # thinking_config is incompatible with search tools — omit it when searching
             if tools:
-                config.tools = tools
+                config = genai.types.GenerateContentConfig(
+                    system_instruction=system,
+                    max_output_tokens=max_tokens,
+                    tools=tools,
+                )
+            else:
+                config = genai.types.GenerateContentConfig(
+                    system_instruction=system,
+                    max_output_tokens=max_tokens,
+                    thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
+                )
 
             resp = await asyncio.to_thread(
                 gclient.models.generate_content,
