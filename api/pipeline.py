@@ -530,39 +530,34 @@ async def generate_metadata(thesis: str, steel_man: str, image_b64: str | None =
 
     prompt = f"""Thesis: {thesis}
 
-Score this as a HOT TAKE on a 0-100 scale.
+This is a CONVICTION SCORE — 0 to 100. It combines factual accuracy with the strength of the argument.
 
-STEP 1 — Classify it first:
-Ask yourself: would a smart, well-informed person in this industry already agree with this, or does it stake out a real position they might push back on?
+The two anchors:
+- A verifiably TRUE statement scores near 100. The truer and more provable, the higher.
+- A verifiably FALSE or demonstrably wrong statement scores near 0. The more clearly false, the lower.
+- Opinions and takes that can't be proven score in the middle — higher if the argument is tight and evidence leans that way, lower if it's vague or unsupported.
 
-STEP 2 — Score within the right tier:
+SCORING SCALE:
+90–100 — Verifiably true. Established fact, empirically confirmed, or a prediction that has already proven correct.
+75–89  — Well-evidenced and hard to dismiss. Strong case, evidence leans clearly in this direction.
+55–74  — Reasonable and defensible. Solid argument, some supporting evidence, but genuinely contestable.
+35–54  — Contested or underdeveloped. Possible but the argument is thin, vague, or the evidence is weak.
+15–34  — Unlikely or poorly supported. Speculative with little backing, or goes against available evidence.
+0–14   — Demonstrably false or incoherent. Contradicts established facts or makes no logical sense.
 
-TIER 1 — Obvious (0–35): Most informed people already agree, or it's so vague it can't be argued with.
-Score here if the take restates consensus, uses sweeping non-falsifiable language ("AI is changing everything"), or is trivially true ("good journalism needs resources").
-→ Score near 5 for platitudes, near 35 for mildly interesting but still soft observations.
+CALIBRATION EXAMPLES — match your scores to these:
+- "Apples are a type of fruit." → 99 (pure verified fact)
+- "Regular sleep of 7–9 hours improves cognitive performance." → 93 (scientifically established)
+- "Social media has increased political polarization." → 78 (well-evidenced, strong academic consensus)
+- "The newsletter subscription boom peaked around 2022–2023." → 65 (directionally supported, observable data)
+- "No media operator has ever genuinely benefited from taking VC money." → 52 (arguable point, but counterexamples exist — hyperbole counts against it)
+- "Podcasting rewards authenticity over production quality." → 48 (plausible conventional wisdom, limited hard evidence)
+- "Every major ad holding company will be gone within 8 years." → 38 (bold prediction, no current evidence, speculative)
+- "Bari Weiss is single-handedly destroying CBS News." → 18 (hyperbolic, not supported by evidence)
+- "Canada will be a global superpower by 2030." → 8 (contradicts all available economic and geopolitical data)
 
-TIER 2 — Decent (36–62): Stakes out a real position, but the insight isn't surprising or the argument is underdeveloped.
-Score here if a smart person would say "yeah, probably" without much resistance.
-→ Score near 40 for thin arguments, near 62 for solid but unsurprising takes.
-
-TIER 3 — Strong (63–80): Specific, non-obvious, and someone smart would want to argue back.
-Score here if the take has a clear thesis, names something real, and pushes against what most people assume.
-→ Score near 65 for competent takes, near 80 for ones that are tight and hard to dismiss.
-
-TIER 4 — Sharp (81–100): Genuinely surprising. Reframes the issue. An informed person reads it and thinks differently.
-→ Reserve 85+ for takes that would stop a room. Maybe 1 in 20 qualifies.
-
-CALIBRATION EXAMPLES (verify your score matches these):
-- "News is important for democracy." → 5 (pure platitude)
-- "AI will change everything in the next decade." → 18 (too vague to be a take)
-- "Social media has made political discourse worse." → 34 (widely held, no real argument)
-- "Podcasting rewards authenticity over production quality." → 51 (arguable, but most in the industry agree)
-- "Newsletter subscriptions will consolidate to a few winner-takes-most platforms within 3 years." → 67 (specific prediction, committed — but predictable to insiders)
-- "No media company that survived the last decade did so with its original identity intact. The survivors all became unrecognizable." → 82 (specific, challenges survival instinct, empirically checkable)
-- "Every major ad holding company will be gone or unrecognizable within 8 years, replaced by specialist AI shops." → 88 (bold, specific timeframe, high-stakes, hard to dismiss)
-
-If the take is obviously weak or vague, score it in TIER 1. Do not escape to 55 as a safe default.
-Being unprovable is NOT a penalty. Vagueness IS. Hyperbole for effect is fine — score the argument, not the literal claim.
+Use the FULL range. Don't default to 55–65 for everything in the middle.
+Hyperbole for effect is fine — score the underlying claim, not the literal wording.
 If an image is provided, use it as direct evidence for the claim.
 
 Return a JSON object with exactly these keys:

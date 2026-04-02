@@ -592,16 +592,23 @@ async def retag_episode(body: RetagEpisodeBody, db: AsyncSession = Depends(get_d
 
 SCORE_BENCHMARKS = [
     # (take, expected_min, expected_max, label)
-    ("Apples are fruit.",                                                           0,  15, "platitude/fact"),
-    ("AI will change everything over the next decade.",                             5,  25, "vague hype"),
-    ("Good journalism requires resources and time.",                               5,  20, "self-evident"),
-    ("Social media has made political discourse worse.",                           20,  42, "widely agreed"),
-    ("Reading long-form text is a dying habit.",                                   28,  50, "common observation"),
-    ("Podcasting rewards authenticity more than production quality.",              40,  60, "industry conventional wisdom"),
-    ("Newsletter subscriptions will consolidate to a few platforms within 3 years.", 55, 72, "specific but predictable"),
-    ("No media operator has ever been genuinely glad they took VC money.",         62,  80, "bold, specific, arguable"),
-    ("Every major ad holding company will be unrecognizable within 8 years.",      70,  88, "bold prediction with mechanism"),
-    ("The newsletter boom peaked in 2023 and we are in the hangover.",             58,  75, "sharp but narrow"),
+    # Verifiable truths → should score near 100
+    ("Apples are a type of fruit.",                                                90, 100, "pure verified fact"),
+    ("Regular sleep of 7-9 hours improves cognitive performance.",                 85,  97, "scientifically established"),
+    # Well-evidenced, widely supported
+    ("Social media has increased political polarization.",                          68,  84, "strong academic consensus"),
+    # Directionally supported, contestable
+    ("The newsletter subscription boom peaked around 2022-2023.",                  57,  73, "observable trend, some debate"),
+    ("Podcasting rewards authenticity over production quality.",                    42,  58, "conventional wisdom, weak evidence"),
+    # Arguable but counterexamples exist
+    ("No media operator has ever genuinely benefited from taking VC money.",       44,  62, "hyperbolic, counterexamples exist"),
+    # Speculative / thin
+    ("Every major ad holding company will be gone within 8 years.",                28,  46, "bold prediction, no evidence yet"),
+    # Demonstrably false / unsupported
+    ("Bari Weiss is single-handedly destroying CBS News.",                          8,  26, "hyperbolic, unsupported"),
+    ("Canada will be a global superpower by 2030.",                                 3,  16, "contradicts all data"),
+    # Vague non-take
+    ("AI will change everything over the next decade.",                            20,  42, "too vague to score high"),
 ]
 
 @app.post("/admin/test-scoring")
