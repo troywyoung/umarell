@@ -183,7 +183,56 @@ PAYWALL_SIGNALS = [
     "gift subscription", "log in", "you've read your free",
 ]
 
+async def _fetch_reddit(url: str) -> str:
+    """Fetch Reddit posts/comments via their JSON API."""
+    try:
+        # Follow redirects first to resolve /s/ share links
+        async with httpx.AsyncClient(timeout=15, follow_redirects=True) as http:
+            head = await http.get(url, headers={"User-Agent": "hottake-app/1.0"})
+            resolved = str(head.url)
+
+        # Strip query params and append .json
+        base = resolved.split("?")[0].rstrip("/")
+        json_url = base + ".json?limit=1"
+
+        async with httpx.AsyncClient(timeout=15, follow_redirects=True) as http:
+            resp = await http.get(json_url, headers={"User-Agent": "hottake-app/1.0"})
+        data = resp.json()
+
+        # Reddit JSON: [post_listing, comments_listing]
+        post = data[0]["data"]["children"][0]["data"]
+        title = post.get("title", "")
+        selftext = post.get("selftext", "")
+        subreddit = post.get("subreddit", "")
+        score = post.get("score", 0)
+        num_comments = post.get("num_comments", 0)
+
+        parts = [f"Title: {title}", f"Subreddit: r/{subreddit}", f"Score: {score}, Comments: {num_comments}"]
+        if selftext and selftext not in ("[removed]", "[deleted]"):
+            parts.append(f"\n{selftext[:4000]}")
+
+        # Top comments
+        try:
+            comments = data[1]["data"]["children"]
+            top_comments = []
+            for c in comments[:5]:
+                body = c.get("data", {}).get("body", "")
+                if body and body not in ("[removed]", "[deleted]"):
+                    top_comments.append(f"• {body[:300]}")
+            if top_comments:
+                parts.append("\nTop comments:\n" + "\n".join(top_comments))
+        except Exception:
+            pass
+
+        return "\n".join(parts)
+    except Exception as e:
+        return f"[Could not fetch Reddit URL: {e}]"
+
+
 async def _fetch_url(url: str) -> str:
+    # Route Reddit URLs through their JSON API
+    if "reddit.com" in url:
+        return await _fetch_reddit(url)
     try:
         async with httpx.AsyncClient(timeout=30, follow_redirects=True) as http:
             resp = await http.get(url, headers={

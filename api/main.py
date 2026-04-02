@@ -168,16 +168,15 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             err_msg = str(e)
             obs = await db.get(Observation, observation_id)
             if obs:
-                # Auto-delete only for URL/paywall failures on top-level obs
-                if obs.parent_id is None and ("[PAYWALL]" in err_msg or input_type == "url"):
-                    await db.delete(obs)
-                    await db.commit()
-                    print(f"Pipeline error for {observation_id} (auto-deleted): {err_msg[:200]}")
+                obs.status = "error"
+                if "[PAYWALL]" in err_msg:
+                    obs.error_detail = "This article is behind a paywall. Paste the text directly instead."
+                elif "[Could not fetch URL" in err_msg or "[Could not fetch Reddit" in err_msg:
+                    obs.error_detail = "Couldn't read this URL. Try pasting the text directly."
                 else:
-                    obs.status = "error"
                     obs.error_detail = err_msg[:500]
-                    await db.commit()
-                    print(f"Pipeline error for {observation_id} (marked error): {err_msg[:200]}")
+                await db.commit()
+                print(f"Pipeline error for {observation_id}: {err_msg[:200]}")
 
 
 # ─── Auth routes ─────────────────────────────────────────────────────────────
