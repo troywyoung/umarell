@@ -1049,7 +1049,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
       </div>
 
       <h1 style={{ fontSize: 26, fontWeight: 700, color: "#FFF", letterSpacing: -0.5, margin: "0 0 6px" }}>
-        {parentObs ? "What's your counter?" : "What's your take?"}
+        {parentObs ? "What's your counter?" : "Let it rip."}
       </h1>
       <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", margin: "0 0 24px", lineHeight: 1.5 }}>
         {parentObs ? "Drop your counter-argument. We'll sharpen it." : "Drop a hot take. We'll build the strongest case for it."}
