@@ -305,45 +305,89 @@ function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "
   );
 }
 
+const SCORE_ROWS = [
+  { range: "85–100", label: "Razor-sharp", desc: "Specific, bold, tightly framed. Hard to dismiss." },
+  { range: "65–84",  label: "Strong",       desc: "Clear position, non-obvious, well-argued." },
+  { range: "40–64",  label: "Decent",       desc: "Has something to it, but vague or hedged." },
+  { range: "15–39",  label: "Weak",         desc: "Assertion without real argument." },
+  { range: "0–14",   label: "Not a take",   desc: "Obvious, incoherent, or purely emotional." },
+];
+
+function ScoreInfoRows() {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+      {SCORE_ROWS.map(({ range, label, desc }) => (
+        <div key={range} style={{ display: "flex", gap: 12, alignItems: "baseline" }}>
+          <span style={{ fontSize: 11, fontWeight: 800, color: "#FF00AE", width: 52, flexShrink: 0 }}>{range}</span>
+          <span style={{ fontSize: 13, fontWeight: 700, color: "#FFF" }}>{label}</span>
+          <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}> — {desc}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// Mobile: slides up from bottom
 function ScoreInfoSheet({ onClose }: { onClose: () => void }) {
-  const rows = [
-    { range: "85–100", label: "Razor-sharp", desc: "Specific, bold, tightly framed. Hard to dismiss." },
-    { range: "65–84", label: "Strong", desc: "Clear position, non-obvious, well-argued." },
-    { range: "40–64", label: "Decent", desc: "Has something to it, but vague or hedged." },
-    { range: "15–39", label: "Weak", desc: "Assertion without real argument." },
-    { range: "0–14", label: "Not a take", desc: "Obvious, incoherent, or purely emotional." },
-  ];
   return (
     <>
       <div onClick={onClose} style={{ position: "fixed", inset: 0, zIndex: 998, background: "rgba(0,0,0,0.5)" }} />
       <div style={{
         position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 999,
         background: "#1C1C1C", borderRadius: "18px 18px 0 0",
-        padding: "20px 20px 36px",
-        border: "1px solid rgba(255,255,255,0.1)",
-        borderBottom: "none",
+        padding: "20px 20px 40px",
+        border: "1px solid rgba(255,255,255,0.1)", borderBottom: "none",
       }}>
-        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
           <span style={{ fontSize: 12, fontWeight: 800, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
-          <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 20, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
+          <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 22, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
         </div>
-        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", lineHeight: 1.5, margin: "0 0 16px" }}>
-          Measures how sharp, specific, and arguable the position is — not whether it's factually correct. A bold, well-framed take scores higher than a vague or obvious one.
+        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", lineHeight: 1.55, margin: "0 0 16px" }}>
+          Measures how sharp, specific, and arguable the position is — not whether it's factually correct.
         </p>
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          {rows.map(({ range, label, desc }) => (
-            <div key={range} style={{ display: "flex", gap: 12, alignItems: "flex-start" }}>
-              <span style={{ fontSize: 11, fontWeight: 800, color: "#FF00AE", width: 52, flexShrink: 0, paddingTop: 1 }}>{range}</span>
-              <div>
-                <span style={{ fontSize: 13, fontWeight: 700, color: "#FFF" }}>{label}</span>
-                <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}> — {desc}</span>
-              </div>
-            </div>
-          ))}
-        </div>
+        <ScoreInfoRows />
       </div>
     </>
   );
+}
+
+// Desktop: anchored popover card below the trigger
+function ScoreInfoPopover({ onClose }: { onClose: () => void }) {
+  return (
+    <>
+      <div onClick={onClose} style={{ position: "fixed", inset: 0, zIndex: 98, background: "transparent" }} />
+      <div style={{
+        position: "absolute", top: "calc(100% + 10px)", left: 0, zIndex: 99,
+        background: "#1C1C1C", borderRadius: 14,
+        padding: "16px 18px 18px",
+        border: "1px solid rgba(255,255,255,0.12)",
+        boxShadow: "0 12px 40px rgba(0,0,0,0.5)",
+        width: 310, minWidth: 0,
+      }}>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
+          <span style={{ fontSize: 11, fontWeight: 800, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
+          <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.35)", fontSize: 18, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
+        </div>
+        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 14px" }}>
+          Measures how sharp, specific, and arguable the position is — not whether it's factually correct.
+        </p>
+        <ScoreInfoRows />
+      </div>
+    </>
+  );
+}
+
+function useIsMobile() {
+  const [mobile, setMobile] = React.useState(() =>
+    typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches
+  );
+  React.useEffect(() => {
+    const mq = window.matchMedia("(pointer: coarse)");
+    const handler = (e: MediaQueryListEvent) => setMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+  return mobile;
 }
 
 function ScoreBadge({ value, size = "md", dark = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean }) {
@@ -370,6 +414,32 @@ function ScoreBadge({ value, size = "md", dark = false }: { value?: number; size
         <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{v}</span>
         {labelSize > 0 && <span style={{ fontSize: labelSize, fontWeight: 600, color: "rgba(255,255,255,0.35)", lineHeight: 1, marginTop: 1 }}>score</span>}
       </div>
+    </div>
+  );
+}
+
+function ScoreWithInfo({ value, show, onToggle, onClose }: { value: number; show: boolean; onToggle: () => void; onClose: () => void }) {
+  const isMobile = useIsMobile();
+  return (
+    <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 7 }}>
+      <ScoreBadge value={value} size="lg" />
+      <button
+        onClick={onToggle}
+        aria-label="How is this score calculated?"
+        style={{
+          background: show ? "rgba(255,0,174,0.18)" : "rgba(255,0,174,0.08)",
+          border: "1px solid rgba(255,0,174,0.35)",
+          borderRadius: "50%",
+          width: 20, height: 20,
+          display: "flex", alignItems: "center", justifyContent: "center",
+          cursor: "pointer", padding: 0,
+          color: "#FF00AE", fontSize: 11, fontWeight: 800,
+          flexShrink: 0, lineHeight: 1, letterSpacing: 0,
+          transition: "background 0.15s",
+        }}
+      >?</button>
+      {show && !isMobile && <ScoreInfoPopover onClose={onClose} />}
+      {show && isMobile && <ScoreInfoSheet onClose={onClose} />}
     </div>
   );
 }
@@ -1511,19 +1581,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         {obs.status === "complete" && (obs.evidence_type || obs.score != null || obs.tags?.length) && (
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center", marginBottom: 20 }}>
             {obs.score != null && (
-              <div style={{ display: "flex", alignItems: "center", gap: 5 }}>
-                <ScoreBadge value={obs.score} size="lg" />
-                <button
-                  onClick={() => setShowScoreInfo(true)}
-                  style={{
-                    background: "none", border: "1px solid rgba(255,255,255,0.18)", borderRadius: "50%",
-                    width: 18, height: 18, display: "flex", alignItems: "center", justifyContent: "center",
-                    cursor: "pointer", padding: 0, color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 700,
-                    flexShrink: 0, lineHeight: 1,
-                  }}
-                  aria-label="How is this score calculated?"
-                >i</button>
-              </div>
+              <ScoreWithInfo value={obs.score} show={showScoreInfo} onToggle={() => setShowScoreInfo(v => !v)} onClose={() => setShowScoreInfo(false)} />
             )}
             <EvidenceBadge value={obs.evidence_type} size="lg" />
             {obs.tags?.map((tag) => (
@@ -1531,7 +1589,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             ))}
           </div>
         )}
-        {showScoreInfo && <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} />}
 
         {/* Action buttons: Steelman · Counterpoint · PvA Take */}
         {obs.status === "complete" && (
