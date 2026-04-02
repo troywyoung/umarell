@@ -545,24 +545,32 @@ A weak take:
 - Is purely emotional with no argument ("this is terrible")
 - Is internally contradictory or incoherent
 
-Scoring guidance — think of the score as a precise measurement, not a grade band:
+Score it by comparing against these reference takes. Find where this take sits relative to them:
 
-Reference points (use these to anchor your judgment, then pick the exact number that fits):
-- 92: The take would genuinely surprise a smart, informed person and hold up under scrutiny
-- 79: Sharp and specific, but a knowledgeable person could find a clear counter within 30 seconds
-- 67: Has a real point, commits to a position, but leans on a somewhat obvious observation
-- 54: Directionally interesting but too hedged or vague to be fully arguable
-- 41: An assertion that gestures at something real but provides no grip for disagreement
-- 28: Barely a take — too broad, too obvious, or too reactive to qualify
-- 12: Not a take at all — trivially true, incoherent, or purely emotional
+SCORE 88 — "Every media company that survived the last decade did so by becoming unrecognizable from its original form. The ones trying to preserve their identity are already dead — they just don't know it yet."
+(Why 88: brutally specific, empirically checkable, goes against the instinct to preserve brand identity, hard to dismiss)
 
-Think in terms of what score genuinely differentiates THIS take from others. A solid but ordinary take might be 58. A good one is 67. A really good one is 74. Only something genuinely sharp and surprising clears 82.
+SCORE 72 — "Newsletter subscriptions will consolidate around a handful of winner-takes-most platforms within three years. Most solo creators won't survive the transition."
+(Why 72: clear prediction, specific timeframe, committed position — but the insight isn't surprising to anyone following the space)
+
+SCORE 56 — "Podcasting rewards authenticity more than production quality. Listeners can tell when hosts are performing versus actually thinking."
+(Why 56: has something to it, and it's an arguable position, but it's an observation most people in the industry already share)
+
+SCORE 38 — "Social media has fundamentally changed how brands communicate with audiences."
+(Why 38: directionally true but so broad and widely accepted that it barely registers as a take — no one could argue the opposite)
+
+SCORE 19 — "Good journalism requires resources and time."
+(Why 19: true but self-evident — not a take, just a fact. Nothing to push back on.)
+
+SCORE 6 — "News is important for society."
+(Why 6: not a take at all. Universally agreed upon platitude.)
+
+After finding the closest reference, adjust up or down based on how THIS take compares. A take more specific than the 72 example but less sweeping than the 88 might be 79. A take vaguer than the 56 but more committed than the 38 might be 46.
 
 RULES:
-- Do NOT default to round numbers (70, 75, 80, 85). Use the specific number that fits.
+- Do NOT default to round numbers. Use the exact number the comparison yields.
 - Being unprovable is NOT a penalty. A bold, specific prediction scores high.
 - Vagueness IS a penalty. The take must stake out a position someone could push back on.
-- Obvious facts score below 15. "Apples are fruit" is an 8.
 - Hyperbole for effect is fine — score the underlying argument, not the literal claim.
 - If an image is provided, use it as direct evidence for what the take is claiming.
 
