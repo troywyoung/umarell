@@ -411,11 +411,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           const filteredPosts = selectedTopic
             ? userPosts.filter(o => getObs(o) === selectedTopic)
             : userPosts;
-          const filteredEpisodes = selectedTopic
-            ? [...episodeMap.entries()].filter(([, { obs }]) =>
+          const filteredEpisodes = (selectedTopic === null || selectedTopic === "PvA")
+            ? [...episodeMap.entries()]
+            : [...episodeMap.entries()].filter(([, { obs }]) =>
                 obs.some(o => getObs(o) === selectedTopic)
-              )
-            : [...episodeMap.entries()];
+              );
 
           const renderCard = (obs: Observation) => {
             let firstBullet = "";
