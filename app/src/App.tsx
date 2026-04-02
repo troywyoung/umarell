@@ -60,26 +60,29 @@ function BurstIcon({ size = 20, white = false, className, style }: { size?: numb
 // ─── Animated Scribble — randomly generated pencil path, new shape each loop ─
 function generateScribblePath(): string {
   const r = () => Math.random();
-  const clamp = (v: number, lo = 4, hi = 96) => Math.max(lo, Math.min(hi, v));
-  let x = 40 + r() * 20;
-  let y = 40 + r() * 20;
+  // Keep endpoints strictly within box — bezier curves can bulge but clipPath handles it
+  const clamp = (v: number, lo = 6, hi = 94) => Math.max(lo, Math.min(hi, v));
+  let x = 38 + r() * 24;
+  let y = 38 + r() * 24;
   const segs: string[] = [`M${x.toFixed(1)},${y.toFixed(1)}`];
-  const count = 28 + Math.floor(r() * 14); // 28–42 segments — dense & messy
+  const count = 32 + Math.floor(r() * 14); // 32–46 segments
   for (let i = 0; i < count; i++) {
-    // Aggressively alternate between deep-center and far-edge targets
-    const goFar = r() > 0.35;
+    // 50/50 between deep center and near-edge — keeps it in/out constantly
+    const goFar = r() > 0.5;
     let tx: number, ty: number;
     if (goFar) {
+      // Head toward an edge zone
       const angle = r() * Math.PI * 2;
-      const dist = 28 + r() * 42;
+      const dist = 32 + r() * 38;
       tx = clamp(50 + Math.cos(angle) * dist);
       ty = clamp(50 + Math.sin(angle) * dist);
     } else {
-      tx = clamp(20 + r() * 60);
-      ty = clamp(20 + r() * 60);
+      // Dart back toward center zone
+      tx = clamp(22 + r() * 56);
+      ty = clamp(22 + r() * 56);
     }
-    // Wildly offset control points — causes crossings and loops
-    const spread = 70;
+    // Very wide control point spread — forces lots of crossing loops
+    const spread = 90;
     const c1x = clamp(x + (r() - 0.5) * spread);
     const c1y = clamp(y + (r() - 0.5) * spread);
     const c2x = clamp(tx + (r() - 0.5) * spread);
@@ -103,7 +106,12 @@ function AnimatedScribble({ size = 80 }: { size?: number }) {
   }, []);
 
   return (
-    <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block" }}>
+    <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block" }} overflow="hidden">
+      <defs>
+        <clipPath id="scribble-clip">
+          <rect x="0" y="0" width="100" height="100" />
+        </clipPath>
+      </defs>
       <style>{`
         @keyframes scribble {
           0%   { stroke-dashoffset: 1; opacity: 1; }
@@ -120,7 +128,8 @@ function AnimatedScribble({ size = 80 }: { size?: number }) {
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        style={{ strokeDasharray: 1, strokeDashoffset: 1, animation: "scribble 6.4s ease-in-out infinite" } as React.CSSProperties}
+        clipPath="url(#scribble-clip)"
+        style={{ strokeDasharray: 1, strokeDashoffset: 1, animation: "scribble 8s ease-in-out infinite" } as React.CSSProperties}
         d={path}
       />
     </svg>
