@@ -545,16 +545,18 @@ A weak take:
 - Is purely emotional with no argument ("this is terrible")
 - Is internally contradictory or incoherent
 
-Scoring:
-- 85-100: Razor-sharp. Specific, bold, tightly framed. Hard to dismiss even if you disagree.
-- 65-84: Strong. Clear position, non-obvious, well-argued.
-- 40-64: Decent. Has something to it but too vague, hedged, or partially obvious.
-- 15-39: Weak. Assertion without real argument, or so general it can't be engaged with.
-- 0-14: Not a take. Trivially true/false, factually incoherent, or purely emotional with no argument.
+Scoring — use the FULL range. Most takes should land between 35 and 75. Reserve the extremes:
+- 85-100: Exceptionally rare. A take so sharp and specific it would stop a room. Airtight framing, non-obvious, and hard to dismiss even for someone who disagrees. Maybe 1 in 20 takes qualifies.
+- 65-84: Strong. Clear, specific, non-obvious position with a real argument behind it. A smart person could defend it in a debate.
+- 40-64: Decent. Has a genuine point but is too vague, over-hedged, or doesn't fully commit to a position. The average well-formed take lands here.
+- 15-39: Weak. An assertion without a real argument, or so general it can't be meaningfully engaged with.
+- 0-14: Not a take. Trivially true/false, incoherent, or purely emotional with no argument.
 
-CRITICAL RULES:
+CRITICAL CALIBRATION RULES:
+- Most takes should score 40–74. Do not cluster at the top.
+- 85+ requires genuinely exceptional specificity and framing — not just "a solid take."
 - Being unprovable is NOT a penalty. A bold, specific prediction scores high.
-- Vagueness IS a penalty. A take must stake out a real position.
+- Vagueness IS a penalty. A take must stake out a real, committable position.
 - Obvious facts score low (0-14). "Apples are fruit" is a 2, not an 85.
 - Hyperbole for effect is fine — score the underlying argument, not the literal claim.
 - If an image is provided, use it as direct evidence for what the take is claiming.
