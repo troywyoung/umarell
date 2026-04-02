@@ -552,6 +552,23 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     msOverflowStyle: "none",
                   } as React.CSSProperties}
                 >
+                  {/* All pill */}
+                  <button
+                    onClick={() => setSelectedTopic(null)}
+                    style={{
+                      flexShrink: 0,
+                      background: selectedTopic === null ? "rgba(255,255,255,0.15)" : "transparent",
+                      border: selectedTopic === null ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
+                      borderRadius: 6, padding: "5px 14px",
+                      fontSize: 12, fontWeight: 700,
+                      color: selectedTopic === null ? "#FFF" : "rgba(255,255,255,0.55)",
+                      cursor: "pointer", WebkitTapHighlightColor: "transparent",
+                      fontFamily: "inherit",
+                    }}
+                  >
+                    All
+                  </button>
+
                   {/* PvA pill — only if there are episode posts */}
                   {hasEpisodes && (
                     <button
