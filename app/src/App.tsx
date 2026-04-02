@@ -57,27 +57,71 @@ function BurstIcon({ size = 20, white = false, className, style }: { size?: numb
   );
 }
 
-// ─── Animated Scribble — single pencil path draws itself, loops ──────────
+// ─── Animated Scribble — randomly generated pencil path, new shape each loop ─
+function generateScribblePath(): string {
+  const r = () => Math.random();
+  const clamp = (v: number, lo = 4, hi = 96) => Math.max(lo, Math.min(hi, v));
+  let x = 40 + r() * 20;
+  let y = 40 + r() * 20;
+  const segs: string[] = [`M${x.toFixed(1)},${y.toFixed(1)}`];
+  const count = 28 + Math.floor(r() * 14); // 28–42 segments — dense & messy
+  for (let i = 0; i < count; i++) {
+    // Aggressively alternate between deep-center and far-edge targets
+    const goFar = r() > 0.35;
+    let tx: number, ty: number;
+    if (goFar) {
+      const angle = r() * Math.PI * 2;
+      const dist = 28 + r() * 42;
+      tx = clamp(50 + Math.cos(angle) * dist);
+      ty = clamp(50 + Math.sin(angle) * dist);
+    } else {
+      tx = clamp(20 + r() * 60);
+      ty = clamp(20 + r() * 60);
+    }
+    // Wildly offset control points — causes crossings and loops
+    const spread = 70;
+    const c1x = clamp(x + (r() - 0.5) * spread);
+    const c1y = clamp(y + (r() - 0.5) * spread);
+    const c2x = clamp(tx + (r() - 0.5) * spread);
+    const c2y = clamp(ty + (r() - 0.5) * spread);
+    segs.push(`C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${tx.toFixed(1)},${ty.toFixed(1)}`);
+    x = tx; y = ty;
+  }
+  return segs.join(" ");
+}
+
 function AnimatedScribble({ size = 80 }: { size?: number }) {
+  const [path, setPath] = useState(() => generateScribblePath());
+  const pathRef = useRef<SVGPathElement>(null);
+
+  useEffect(() => {
+    const el = pathRef.current;
+    if (!el) return;
+    const next = () => setPath(generateScribblePath());
+    el.addEventListener("animationiteration", next);
+    return () => el.removeEventListener("animationiteration", next);
+  }, []);
+
   return (
     <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block" }}>
       <style>{`
         @keyframes scribble {
-          0%   { stroke-dashoffset: 1; }
-          80%  { stroke-dashoffset: 0; opacity: 1; }
-          92%  { stroke-dashoffset: 0; opacity: 0; }
+          0%   { stroke-dashoffset: 1; opacity: 1; }
+          78%  { stroke-dashoffset: 0; opacity: 1; }
+          90%  { stroke-dashoffset: 0; opacity: 0; }
           100% { stroke-dashoffset: 1; opacity: 0; }
         }
       `}</style>
       <path
+        ref={pathRef}
         pathLength="1"
         fill="none"
         stroke="#FF00AE"
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        style={{ strokeDasharray: 1, strokeDashoffset: 1, animation: "scribble 8s ease-in-out infinite" } as React.CSSProperties}
-        d="M50,50 C58,36 76,32 82,46 C88,60 78,80 60,84 C42,88 22,74 20,54 C18,34 36,14 58,16 C80,18 94,40 92,64 C90,88 66,100 40,96 C14,92 2,66 6,40 C10,14 38,2 64,10 C90,18 100,48 94,74 C88,100 60,108 32,98 C4,88 -4,56 8,30 C20,4 52,-4 76,10 C56,20 34,36 28,58 C22,80 36,96 56,94 C76,92 90,74 86,52 C82,30 62,20 44,28 C26,36 22,58 30,74 C38,90 58,94 74,82 C90,70 90,48 78,36 C66,24 46,26 36,40 C26,54 30,74 44,80 C58,86 74,76 76,60 C78,44 64,32 50,36 C36,40 30,56 36,68 C42,80 58,82 68,72 C78,62 74,46 62,42 C50,38 40,48 42,60 C44,72 56,76 66,68 C76,60 72,46 60,44 C48,42 42,54 48,64 C54,74 66,72 70,62 C74,52 66,42 56,44 C46,46 42,58 48,66 C54,74 64,70 66,60 C52,56 46,62 50,70"
+        style={{ strokeDasharray: 1, strokeDashoffset: 1, animation: "scribble 6.4s ease-in-out infinite" } as React.CSSProperties}
+        d={path}
       />
     </svg>
   );
