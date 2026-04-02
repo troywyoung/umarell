@@ -1710,10 +1710,12 @@ export default function App() {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative" }}>
   
-        <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
-          <BurstIcon size={48} color="#FF00AE" />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 16, position: "relative", zIndex: 1 }}>
+          <BurstIcon size={100} />
+          <span style={{ fontSize: 19, fontWeight: 900, letterSpacing: -1.5, color: "#FFF", marginTop: -14, fontFamily: "'Besley', serif" }}>
+            <span style={{ color: "#FF00AE" }}>hot</span>take
+          </span>
         </div>
-        <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center", position: "relative", zIndex: 1 }}>Hot Take</h1>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
           Drop a take. We build the strongest case for it.<br />
           We stress test it.<br />
