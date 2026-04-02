@@ -57,66 +57,28 @@ function BurstIcon({ size = 20, white = false, className, style }: { size?: numb
   );
 }
 
-// ─── Animated Scribble — strokes draw in one by one, loops ──────────────
+// ─── Animated Scribble — single pencil path draws itself, loops ──────────
 function AnimatedScribble({ size = 80 }: { size?: number }) {
-  // Each path is one "stroke" radiating from center (50,50), matching the starburst scribble character
-  const strokes = [
-    "M 20,8 C 33,25 42,38 52,52 C 58,62 62,74 60,90",
-    "M 82,5 C 70,22 60,38 50,52 C 44,64 38,76 30,92",
-    "M 5,35 C 18,40 32,46 50,50 C 64,54 78,52 95,48",
-    "M 3,65 C 16,60 32,55 50,50 C 64,46 78,40 95,32",
-    "M 48,2 C 48,18 49,34 50,50 C 51,66 52,80 55,96",
-    "M 15,15 C 26,28 37,40 50,50 C 60,44 72,35 88,20",
-    "M 85,15 C 74,28 63,40 50,50 C 42,58 34,68 18,82",
-    "M 8,50 C 22,50 36,50 50,50 C 64,50 78,50 92,50",
-    "M 28,3 C 34,18 41,34 50,50 C 57,62 66,74 78,90",
-    "M 72,3 C 66,18 59,34 50,50 C 43,62 34,74 22,90",
-    "M 10,22 C 20,32 34,42 50,50 C 62,46 74,40 90,28",
-    "M 90,72 C 80,64 66,56 50,50 C 38,56 26,62 10,78",
-    "M 38,96 C 42,82 46,68 50,50 C 54,38 58,24 65,8",
-    "M 62,96 C 58,82 54,68 50,50 C 46,38 42,24 35,8",
-    "M 2,44 C 16,46 32,48 50,50 C 66,50 80,54 98,58",
-    "M 2,56 C 16,54 32,52 50,50 C 66,50 80,46 98,42",
-    "M 18,90 C 26,76 36,62 50,50 C 60,44 72,36 86,18",
-    "M 82,90 C 74,76 64,62 50,50 C 40,44 28,36 14,18",
-    "M 5,5 C 20,20 34,36 48,48",
-    "M 95,5 C 80,20 66,36 52,48",
-    "M 5,95 C 20,80 34,66 48,52",
-    "M 95,95 C 80,80 66,66 52,52",
-  ];
-
-  const cycle = 10;        // total seconds per loop
-  const drawWindow = 8.0;  // seconds over which all strokes appear
-  const strokeDur = 0.5;   // seconds each stroke takes to draw
-  const N = strokes.length;
-
-  // Per-stroke keyframes: each stroke is invisible until its turn, draws fast, holds, then all fade
-  const css = strokes.map((_, i) => {
-    const s = ((i / (N - 1)) * drawWindow / cycle * 100).toFixed(1);
-    const e = Math.min(parseFloat(s) + strokeDur / cycle * 100, 76).toFixed(1);
-    return `@keyframes sd${i}{0%,${s}%{stroke-dashoffset:1;opacity:1}${e}%,78%{stroke-dashoffset:0;opacity:1}90%{stroke-dashoffset:0;opacity:0}100%{stroke-dashoffset:1;opacity:0}}`;
-  }).join('');
-
   return (
     <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block" }}>
-      <style>{css}</style>
-      {strokes.map((d, i) => (
-        <path
-          key={i}
-          d={d}
-          fill="none"
-          stroke="#FF00AE"
-          strokeWidth="3.5"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          pathLength="1"
-          style={{
-            strokeDasharray: 1,
-            strokeDashoffset: 1,
-            animation: `sd${i} ${cycle}s ease-in-out infinite`,
-          } as React.CSSProperties}
-        />
-      ))}
+      <style>{`
+        @keyframes scribble {
+          0%   { stroke-dashoffset: 1; }
+          80%  { stroke-dashoffset: 0; opacity: 1; }
+          92%  { stroke-dashoffset: 0; opacity: 0; }
+          100% { stroke-dashoffset: 1; opacity: 0; }
+        }
+      `}</style>
+      <path
+        pathLength="1"
+        fill="none"
+        stroke="#FF00AE"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        style={{ strokeDasharray: 1, strokeDashoffset: 1, animation: "scribble 8s ease-in-out infinite" } as React.CSSProperties}
+        d="M50,50 C54,44 62,42 66,48 C70,54 66,62 58,64 C50,66 42,60 40,52 C38,44 44,36 52,34 C60,32 70,36 74,44 C78,52 74,64 66,70 C58,76 44,76 36,68 C28,60 28,46 36,38 C44,30 58,28 68,34 C78,40 82,54 78,66 C74,78 62,84 48,82 C34,80 24,68 22,54 C20,40 28,26 42,20 C56,14 72,18 80,30 C88,42 86,60 78,72 C70,84 54,90 38,86 C22,82 12,66 12,50 C12,34 24,18 40,14 C56,10 74,16 84,30 C94,44 94,64 84,76 C74,88 56,94 38,90 C20,86 8,70 8,52 C8,34 20,16 38,10 C56,4 76,10 86,26 C96,42 96,64 86,78 C76,92 56,98 36,94"
+      />
     </svg>
   );
 }
