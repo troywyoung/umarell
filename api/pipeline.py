@@ -90,19 +90,13 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
 
     for attempt in range(retries):
         try:
-            # thinking_config is incompatible with search tools — omit it when searching
+            config = genai.types.GenerateContentConfig(
+                system_instruction=system,
+                max_output_tokens=max_tokens,
+                thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
+            )
             if tools:
-                config = genai.types.GenerateContentConfig(
-                    system_instruction=system,
-                    max_output_tokens=max_tokens,
-                    tools=tools,
-                )
-            else:
-                config = genai.types.GenerateContentConfig(
-                    system_instruction=system,
-                    max_output_tokens=max_tokens,
-                    thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
-                )
+                config.tools = tools
 
             resp = await asyncio.to_thread(
                 gclient.models.generate_content,
@@ -501,11 +495,13 @@ FOR FACTUAL CLAIMS — score on empirical support:
 - 0-9: Factually wrong or contradicts established reality
 
 FOR TASTE/OPINION CLAIMS — score on cultural consensus and critical reception:
-- 85-100: Overwhelming critical and audience consensus (e.g. universally acclaimed, awards, massive cultural impact)
-- 60-84: Strong positive reception with some dissent (e.g. well-reviewed, popular, respected by most)
+- 85-100: Overwhelming critical and audience consensus (universally acclaimed, major awards, massive cultural impact)
+- 60-84: Strong positive reception with some dissent (well-reviewed, popular, respected by most)
 - 35-59: Mixed reception — genuine debate about quality or significance
-- 10-34: Minority opinion, poorly received, or contrarian take without strong backing
-- 0-9: Near-universally panned or factually contradicted (e.g. "worst show" when it won 10 Emmys)
+- 10-34: Poorly received or contrarian take with strong evidence against it
+- 0-9: Near-universally panned or directly contradicted by known facts
+
+IMPORTANT: If you are not certain about the reception of the specific work or person being discussed, default to 55 — do not penalize unfamiliar subjects with a low score. Only score low if you have clear evidence of poor reception.
 
 If an image is provided, it is PRIMARY evidence — score based on what you actually see.
 
@@ -541,9 +537,7 @@ Return valid JSON only. No markdown fences. No preamble."""
                 else:
                     raise
 
-    raw = await _call(system=system, user=prompt, max_tokens=500, use_search=(PROVIDER == "gemini"))
-    if isinstance(raw, tuple):
-        raw = raw[0]
+    raw = await _call(system=system, user=prompt, max_tokens=500)
     return _extract_json(raw)
 
 
