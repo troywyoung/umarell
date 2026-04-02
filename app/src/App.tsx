@@ -39,7 +39,7 @@ function getRandomPlaceholder() {
 
 // ─── Burst Icon ───────────────────────────────────────────────────────────
 
-function BurstIcon({ size = 20, white = false, className }: { size?: number; color?: string; white?: boolean; className?: string }) {
+function BurstIcon({ size = 20, white = false, className, style }: { size?: number; color?: string; white?: boolean; className?: string; style?: React.CSSProperties }) {
   return (
     <img
       src="/scribble-transparent.png"
@@ -51,6 +51,7 @@ function BurstIcon({ size = 20, white = false, className }: { size?: number; col
         mixBlendMode: "screen",
         display: "block",
         filter: white ? "grayscale(1) brightness(8)" : undefined,
+        ...style,
       }}
     />
   );
@@ -354,9 +355,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         }
       </div>
 
-      {/* Scribble + logo: scribble 5px from top, text flush to bottom of scribble */}
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", paddingTop: 5 }}>
-        <BurstIcon size={100} className="scribble-pulse" />
+      {/* Scribble cropped 20% at top, logo flush below */}
+      <div style={{ overflow: "hidden", display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <BurstIcon size={100} style={{ marginTop: -20 }} />
         <span style={{ fontSize: 19, fontWeight: 700, letterSpacing: -1.08, color: "#FFF", marginTop: -14 }}>
           <span style={{ color: "#FF00AE" }}>hot</span>take
         </span>
@@ -368,11 +369,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           to { opacity: 1; transform: translateY(0); }
         }
         .topic-pills::-webkit-scrollbar { display: none; }
-        @keyframes scribblePulse {
-          0%, 100% { filter: saturate(1) brightness(1); }
-          50% { filter: saturate(0) brightness(4); }
-        }
-        .scribble-pulse { animation: scribblePulse 4s ease-in-out infinite; }
       `}</style>
       <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "8px 16px 6px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
         <span style={{ fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit" }}>(<span style={{ textDecoration: "underline", textDecorationColor: "#FFF" }}>what is hot take?</span>)</span>
