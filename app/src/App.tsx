@@ -545,6 +545,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   onAbout: () => void;
 }) {
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
+  const isMobile = useIsMobile();
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
@@ -900,7 +901,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       <button
         onClick={onCapture}
         style={{
-          position: "fixed", bottom: 36, left: "50%", transform: "translateX(-50%)",
+          position: "fixed", bottom: isMobile ? 36 : "calc(36px + 10vh)", left: "50%", transform: "translateX(-50%)",
           width: 68, height: 68, borderRadius: "50%",
           background: "#FF00AE", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
