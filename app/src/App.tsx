@@ -557,7 +557,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
           <button onClick={onCapture} style={{ background: "none", border: "none", padding: 0, cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
-            <span style={{ fontSize: 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>add your take</span>
+            <span style={{ fontSize: window.innerWidth < 600 ? 11 : 9, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>add your take</span>
           </button>
           {authUser.avatar
             ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
@@ -863,8 +863,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {selectedTopic !== "__all__" && (selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
                 <div>
                   {selectedTopic === null && (
-                    <div style={{ padding: "4px 4px 6px" }}>
-                      <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF" }}>{filteredEpisodes[0]?.[1]?.title || "Takes from this week's PvA episode"}</div>
+                    <div style={{ padding: "4px 4px 12px" }}>
+                      <div style={{ fontSize: 16, fontWeight: 800, color: "#FFF" }}>{filteredEpisodes[0]?.[1]?.title || "Takes from this week's PvA episode"}</div>
                     </div>
                   )}
                   {filteredEpisodes.map(([tag, { obs }]) =>
@@ -877,7 +877,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {selectedTopic !== "__all__" && selectedTopic !== "PvA" && filteredPosts.length > 0 && (
                 <div>
                   {!selectedTopic && filteredEpisodes.length > 0 && (
-                    <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF", padding: "14px 4px 6px" }}>Recent</div>
+                    <div style={{ fontSize: 16, fontWeight: 800, color: "#FFF", padding: "14px 4px 12px" }}>Recent</div>
                   )}
                   {filteredPosts.map(renderPost)}
                 </div>
