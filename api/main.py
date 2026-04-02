@@ -154,15 +154,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
 
             try:
                 meta = await generate_metadata(thesis, sm_text, image_b64, image_media_type)
-                raw_score = meta.get("score", 50)
-                # Normalize against existing scores so new take slots into the curve
-                existing = await db.execute(
-                    select(Observation.score).where(Observation.status == "complete", Observation.score != None, Observation.id != obs.id)
-                )
-                existing_scores = [float(r[0]) for r in existing.fetchall()]
-                all_scores = existing_scores + [float(raw_score)]
-                norm_scores = _rank_normalize(all_scores)
-                obs.score = norm_scores[-1]  # last entry is the new one
+                obs.score = meta.get("score")
                 obs.tags = meta.get("tags")
                 obs.evidence_type = meta.get("evidence_type")
                 obs.category = meta.get("category")
