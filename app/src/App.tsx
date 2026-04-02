@@ -1502,19 +1502,8 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         {/* Thesis (shown once complete) — click to edit */}
         {obs.status === "complete" && obs.thesis && obs.thesis !== "image" && (
           <div style={{ marginBottom: 12 }}>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", margin: "0 0 8px" }}>
+            <div style={{ margin: "0 0 8px" }}>
               <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: 0 }}>Thesis</p>
-              {!obs.parent_id && (
-                <button
-                  onClick={(e) => { e.stopPropagation(); onChallenge(obs); }}
-                  style={{
-                    background: "none", border: "1px solid #FF00AE", borderRadius: 6,
-                    padding: "3px 10px", cursor: "pointer",
-                    fontSize: 10, fontWeight: 600, color: "#FF00AE", fontFamily: "inherit",
-                    letterSpacing: 0.2, WebkitTapHighlightColor: "transparent",
-                  }}
-                >Challenge this</button>
-              )}
             </div>
             {editMode ? (
               <div>
@@ -1671,6 +1660,33 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </div>
         )}
 
+        {/* Challenge CTA — prominent, after content */}
+        {obs.status === "complete" && !obs.parent_id && (
+          <div style={{ margin: "24px 0 8px" }}>
+            <button
+              onClick={() => onChallenge(obs)}
+              style={{
+                width: "100%", padding: "15px 20px",
+                borderRadius: 12,
+                border: "1.5px solid rgba(255,255,255,0.13)",
+                background: "rgba(255,255,255,0.04)",
+                cursor: "pointer", fontFamily: "inherit",
+                display: "flex", alignItems: "center", justifyContent: "space-between",
+                WebkitTapHighlightColor: "transparent",
+                transition: "background 0.15s, border-color 0.15s",
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
+            >
+              <div style={{ textAlign: "left" }}>
+                <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>Disagree with this take?</p>
+                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>Submit your counter-argument</p>
+              </div>
+              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>→</span>
+            </button>
+          </div>
+        )}
+
         {/* Counterpoint section */}
         {showCounterpoint && (() => {
           if (counterpointLoading) return null;
@@ -1761,14 +1777,19 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         })()}
 
 
-        {/* Challenges */}
+        {/* Challenges from other users */}
         {challenges.length > 0 && (
-          <div style={{ marginTop: 24 }}>
-            <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.35)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 12px" }}>Challenges ({challenges.length})</p>
+          <div style={{ marginTop: 28, paddingTop: 20, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+            <p style={{ fontSize: 11, fontWeight: 800, color: "rgba(255,255,255,0.5)", letterSpacing: 0.8, textTransform: "uppercase", margin: "0 0 14px" }}>
+              {challenges.length === 1 ? "1 Challenge" : `${challenges.length} Challenges`}
+            </p>
             {challenges.map(c => (
-              <div key={c.id} style={{ background: "rgba(255,255,255,0.06)", borderRadius: 10, padding: "12px 14px", marginBottom: 8 }}>
-                <p style={{ fontSize: 12, fontWeight: 700, color: "#FFF", margin: "0 0 4px", lineHeight: 1.4 }}>{c.thesis || c.raw_input}</p>
-                {c.score != null && <span style={{ fontSize: 10, color: "rgba(255,255,255,0.4)" }}>Score: {Math.round(c.score)}</span>}
+              <div key={c.id} style={{ background: "rgba(255,255,255,0.05)", borderRadius: 12, padding: "14px 16px", marginBottom: 10, borderLeft: "3px solid rgba(255,0,174,0.5)" }}>
+                <p style={{ fontSize: 14, fontWeight: 600, color: "#FFF", margin: "0 0 6px", lineHeight: 1.5 }}>{c.thesis || c.raw_input}</p>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  {c.score != null && <ScoreBadge value={c.score} size="sm" />}
+                  {c.user_name && <span style={{ fontSize: 11, color: "rgba(255,255,255,0.35)" }}>{c.user_name}</span>}
+                </div>
               </div>
             ))}
           </div>
