@@ -227,10 +227,25 @@ async def _fetch_reddit(url: str) -> str:
         return f"[Could not fetch Reddit URL: {e}]"
 
 
-def _looks_like_cookie_wall(text: str) -> bool:
+NAV_JUNK_SIGNALS = [
+    "skip to navigation", "skip to content", "skip to main",
+    "print subscriptions", "search jobs", "sign in to comment",
+    "advertisement", "most viewed", "more from this section",
+]
+
+def _is_junk_content(text: str) -> bool:
+    """Returns True if the content looks like navigation/cookie wall rather than article body."""
     lower = text.lower()
-    hits = sum(1 for s in COOKIE_WALL_SIGNALS if s in lower)
-    return hits >= 3 and len(text) < 3000
+    # Cookie wall check
+    cookie_hits = sum(1 for s in COOKIE_WALL_SIGNALS if s in lower)
+    if cookie_hits >= 3 and len(text) < 3000:
+        return True
+    # Navigation junk check — lots of bracketed links and nav signals
+    nav_hits = sum(1 for s in NAV_JUNK_SIGNALS if s in lower)
+    bracket_density = text.count("[") / max(len(text), 1)
+    if nav_hits >= 2 or bracket_density > 0.02:
+        return True
+    return False
 
 
 async def _fetch_via_tavily(url: str) -> str:
@@ -250,7 +265,7 @@ async def _fetch_via_tavily(url: str) -> str:
             results = result.get("results", [])
             if results and results[0].get("raw_content"):
                 content = results[0]["raw_content"]
-                if len(content) >= 300 and not _looks_like_cookie_wall(content):
+                if len(content) >= 300 and not _is_junk_content(content):
                     print(f"[tavily extract] got {len(content)} chars for {url}")
                     return content[:8000]
                 print(f"[tavily extract] result looks like cookie wall or too short for {url}")
@@ -267,7 +282,7 @@ async def _fetch_via_tavily(url: str) -> str:
         )
         for r in search_result.get("results", []):
             content = r.get("raw_content") or r.get("content", "")
-            if content and len(content) >= 300 and not _looks_like_cookie_wall(content):
+            if content and len(content) >= 300 and not _is_junk_content(content):
                 print(f"[tavily search fallback] got {len(content)} chars for {url}")
                 return content[:8000]
 
@@ -397,8 +412,7 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
         print(f"[format_thesis] image extracted: {content[:100]}")
     elif input_type == "url":
         content = await _fetch_url(raw_input)
-        if content.startswith("["):
-            # Covers [PAYWALL], [Could not fetch URL], [Could not fetch Reddit URL], etc.
+        if content.startswith(("[PAYWALL]", "[COOKIE_WALL]", "[Could not fetch")):
             raise ValueError(content)
     else:
         content = raw_input

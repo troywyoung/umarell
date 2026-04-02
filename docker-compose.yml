@@ -8,7 +8,9 @@ services:
     environment:
       - DATABASE_URL=sqlite+aiosqlite:////app/data/umarell.db
     volumes:
+      - ./api:/app
       - umarell_db:/app/data
+    command: uvicorn main:app --host 0.0.0.0 --port 8100 --reload
 
   frontend:
     image: node:20-alpine
