@@ -346,13 +346,18 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
 
-      {/* Avatar floated — doesn't affect flow */}
-      <div style={{ position: "absolute", top: 8, right: 20, display: "flex", alignItems: "center", gap: 10, zIndex: 2 }}>
-        {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
-        {authUser.avatar
-          ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
-          : <button onClick={onSignOut} style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", background: "none", border: "none", cursor: "pointer", fontFamily: "inherit" }}>Sign out</button>
-        }
+      {/* Top bar: what is it? left, avatar right */}
+      <div style={{ position: "absolute", top: 8, left: 20, right: 20, display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 2 }}>
+        <button onClick={onAbout} style={{ background: "none", border: "none", padding: 0, cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
+          <span style={{ fontSize: window.innerWidth < 600 ? 11 : 9, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>what is it?</span>
+        </button>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
+          {authUser.avatar
+            ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
+            : <button onClick={onSignOut} style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", background: "none", border: "none", cursor: "pointer", fontFamily: "inherit" }}>Sign out</button>
+          }
+        </div>
       </div>
 
       {/* Scribble cropped 20% at top, logo flush below */}
@@ -370,11 +375,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         }
         .topic-pills::-webkit-scrollbar { display: none; }
       `}</style>
-      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "18px 16px 6px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
-        <span style={{ fontSize: window.innerWidth < 600 ? 11 : 9, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>what is it?</span>
-      </button>
 
-      <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
+<div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
         {observations.length === 0 && !loading && (
           <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
             <p style={{ fontSize: 22, fontWeight: 800, color: "#FFF", letterSpacing: -0.5, margin: "0 0 10px" }}>Drop your first take.</p>
