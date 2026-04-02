@@ -368,7 +368,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Hot Take<BurstIcon size={18} color="#FF00AE" /><span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
+            <BurstIcon size={34} color="#FF00AE" /> Hot Take<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -646,7 +646,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {(selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
                 <div>
                   <div style={{ padding: "4px 4px 6px" }}>
-                    <div style={{ fontSize: 16, fontWeight: 900, color: "#FF00AE", fontFamily: "'Besley', serif", display: "flex", alignItems: "center", gap: 4 }}>This Week on PvA <BurstIcon size={16} color="#FF00AE" /></div>
+                    <div style={{ fontSize: 16, fontWeight: 900, color: "#FF00AE", fontFamily: "'Besley', serif" }}>This Week on PvA</div>
                     <div style={{ fontSize: 10, color: "#FFF", marginTop: 0 }}>Our takes from the episode.</div>
                   </div>
                   {filteredEpisodes.map(([tag, { obs }]) =>
@@ -1201,7 +1201,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
 
             {/* Step progress — animated mesh builds itself */}
             <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "30px 0 28px" }}>
-              <SteelManIcon size={49} animate />
+              <BurstIcon size={49} color="#FF00AE" />
               <div>
                 <p style={{ fontSize: 15, fontWeight: 600, color: "#FFF", margin: "0 0 4px" }}>
                   {resubmitting ? "Resubmitting\u2026" : obs.status === "formatting" ? "Reading your take\u2026" : "Building the case\u2026"}
@@ -1725,7 +1725,7 @@ export default function App() {
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative" }}>
   
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
-          <SteelManIcon size={48} animate color="#FFF" />
+          <BurstIcon size={48} color="#FF00AE" />
         </div>
         <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center", position: "relative", zIndex: 1 }}>Hot Take</h1>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
