@@ -361,8 +361,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       </div>
 
       {/* Scribble cropped 20% at top, logo flush below */}
-      <div style={{ overflow: "hidden", display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <BurstIcon size={100} style={{ marginTop: -20 }} />
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <BurstIcon size={100} style={{ marginTop: 5 }} />
         <span style={{ fontSize: 19, fontWeight: 700, letterSpacing: -1.08, color: "#FFF", marginTop: -14 }}>
           <span style={{ color: "#FF00AE" }}>hot</span>take
         </span>
