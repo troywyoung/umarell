@@ -381,7 +381,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         .topic-pills::-webkit-scrollbar { display: none; }
       `}</style>
       <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "46px 16px 10px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
-        <span style={{ fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit" }}>(<span style={{ textDecoration: "underline", textDecorationColor: "#FFF" }}>What is this thing?</span>)</span>
+        <span style={{ fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit" }}>(<span style={{ textDecoration: "underline", textDecorationColor: "#FFF" }}>what is hot take?</span>)</span>
       </button>
 
       <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
