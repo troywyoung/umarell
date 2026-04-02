@@ -154,7 +154,15 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
 
             try:
                 meta = await generate_metadata(thesis, sm_text, image_b64, image_media_type)
-                obs.score = meta.get("score")
+                raw_score = meta.get("score", 50)
+                # Normalize against existing scores so new take slots into the curve
+                existing = await db.execute(
+                    select(Observation.score).where(Observation.status == "complete", Observation.score != None, Observation.id != obs.id)
+                )
+                existing_scores = [float(r[0]) for r in existing.fetchall()]
+                all_scores = existing_scores + [float(raw_score)]
+                norm_scores = _rank_normalize(all_scores)
+                obs.score = norm_scores[-1]  # last entry is the new one
                 obs.tags = meta.get("tags")
                 obs.evidence_type = meta.get("evidence_type")
                 obs.category = meta.get("category")
@@ -594,9 +602,29 @@ class RescoreBody(BaseModel):
     admin_key: str
     dry_run: bool = False
 
+def _rank_normalize(raw_scores: list[float], lo: float = 22.0, hi: float = 91.0) -> list[float]:
+    """Map raw scores to [lo, hi] via percentile rank, preserving relative ordering.
+    Ties get the average rank of their group so identical raw scores get identical output scores."""
+    n = len(raw_scores)
+    if n == 0:
+        return []
+    if n == 1:
+        return [(lo + hi) / 2]
+    sorted_vals = sorted(set(raw_scores))
+    # assign each unique value its mean percentile position
+    rank_map: dict[float, float] = {}
+    pos = 0
+    for val in sorted_vals:
+        group = [i for i, s in enumerate(raw_scores) if s == val]
+        mean_rank = (pos + pos + len(group) - 1) / 2  # 0-indexed mean rank
+        rank_map[val] = mean_rank
+        pos += len(group)
+    return [round(lo + (rank_map[s] / (n - 1)) * (hi - lo)) for s in raw_scores]
+
+
 @app.post("/admin/rescore")
 async def rescore_all(body: RescoreBody, db: AsyncSession = Depends(get_db)):
-    """Re-run generate_metadata on every complete observation using the current scoring prompt."""
+    """Re-run generate_metadata on every complete observation, then rank-normalize scores."""
     if body.admin_key != settings.google_api_key:
         raise HTTPException(403, "Invalid admin key")
 
@@ -605,25 +633,37 @@ async def rescore_all(body: RescoreBody, db: AsyncSession = Depends(get_db)):
     )
     obs_list = list(result.scalars().all())
 
-    updated, failed = 0, 0
+    scored: list[tuple] = []  # (obs, raw_score, tags, evidence_type, category)
+    failed = 0
     for obs in obs_list:
         try:
             sm_text = obs.summary or ""
             meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
-            if not body.dry_run:
-                obs.score = meta.get("score")
-                obs.tags = meta.get("tags")
-                obs.evidence_type = meta.get("evidence_type")
-                obs.category = meta.get("category")
-            updated += 1
+            scored.append((obs, meta.get("score", 50), meta.get("tags"), meta.get("evidence_type"), meta.get("category")))
         except Exception as e:
             print(f"[rescore] failed {obs.id}: {e}")
             failed += 1
 
+    # Rank-normalize so scores spread across 22–91
+    raw_scores = [s[1] for s in scored]
+    normalized = _rank_normalize(raw_scores)
+
     if not body.dry_run:
+        for (obs, _, tags, ev, cat), norm_score in zip(scored, normalized):
+            obs.score = norm_score
+            obs.tags = tags
+            obs.evidence_type = ev
+            obs.category = cat
         await db.commit()
 
-    return {"total": len(obs_list), "updated": updated, "failed": failed, "dry_run": body.dry_run}
+    raw_dist = sorted(raw_scores)
+    norm_dist = sorted(normalized)
+    return {
+        "total": len(obs_list), "updated": len(scored), "failed": failed,
+        "dry_run": body.dry_run,
+        "raw_range": [min(raw_dist), max(raw_dist)] if raw_dist else [],
+        "norm_range": [min(norm_dist), max(norm_dist)] if norm_dist else [],
+    }
 
 
 # ─── Migration: backfill hard_facts ─────────────────────────────────────────
