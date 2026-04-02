@@ -39,12 +39,13 @@ function getRandomPlaceholder() {
 
 // ─── Burst Icon ───────────────────────────────────────────────────────────
 
-function BurstIcon({ size = 20, white = false }: { size?: number; color?: string; white?: boolean }) {
+function BurstIcon({ size = 20, white = false, className }: { size?: number; color?: string; white?: boolean; className?: string }) {
   return (
     <img
       src="/scribble-transparent.png"
       width={size}
       height={size}
+      className={className}
       style={{
         flexShrink: 0,
         mixBlendMode: "screen",
@@ -356,7 +357,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           transform: "translateX(-50%)",
           zIndex: 0, pointerEvents: "none",
         }}>
-          <BurstIcon size={100} />
+          <BurstIcon size={100} className="scribble-pulse" />
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", position: "relative", zIndex: 1 }}>
@@ -379,6 +380,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           to { opacity: 1; transform: translateY(0); }
         }
         .topic-pills::-webkit-scrollbar { display: none; }
+        @keyframes scribblePulse {
+          0%, 100% { filter: saturate(1) brightness(1); }
+          50% { filter: saturate(0) brightness(4); }
+        }
+        .scribble-pulse { animation: scribblePulse 4s ease-in-out infinite; }
       `}</style>
       <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "46px 16px 10px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
         <span style={{ fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit" }}>(<span style={{ textDecoration: "underline", textDecorationColor: "#FFF" }}>what is hot take?</span>)</span>
