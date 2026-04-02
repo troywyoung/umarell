@@ -289,15 +289,15 @@ function AboutView({ onBack }: { onBack: () => void }) {
     <div style={{ maxWidth: 480, margin: "0 auto", minHeight: "100vh", background: "#12102B", padding: "0 0 60px" }}>
       <div style={{ padding: "14px 20px 12px", borderBottom: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
         <button onClick={onBack} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.5)", fontSize: 22, cursor: "pointer", padding: 0, lineHeight: 1, WebkitTapHighlightColor: "transparent" }}>←</button>
-        <span style={{ fontSize: 18, fontWeight: 700, color: "#FFF", letterSpacing: -0.4 }}>Steelman is a fun way to explore ideas</span>
+        <span style={{ fontSize: 18, fontWeight: 700, color: "#FFF", letterSpacing: -0.4 }}>PvA Hot Takes is a fun way to explore ideas</span>
       </div>
       <div style={{ padding: "28px 24px 0" }}>
         <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>How it works</p>
-        {bullet("Drop any claim — a URL, a hot take, a screenshot, a half-formed idea. The AI rebuilds it as its strongest possible version: sharpest thesis, best evidence, most defensible form. That's steelmanning.")}
-        {bullet("Every steelman gets a conviction score from 0–100. How well does the argument actually hold up? Higher isn't always better — a 60 that's genuinely defensible beats an 80 that's overconfident.")}
-        {bullet("Once steelmanned, you can request a counterpoint — the strongest argument against the original claim. Or challenge someone else's. The feed is a live debate board.")}
-        {bullet("Hit 'PvA Take' on any steelman to get a reaction in the voice of People vs Algorithms — Troy Young, Brian Morrissey, and Alex Schleifer's podcast on media, tech, and culture. Opinionated. Connected to bigger patterns. Not neutral.")}
-        {bullet("Each week, the show's own steelmans drop into your feed under 'This Week on PvA' — arguments from the latest episode, ready to read, challenge, or riff on.")}
+        {bullet("Drop any claim — a URL, a hot take, a screenshot, a half-formed idea. The AI builds the strongest possible case for it: sharpest thesis, best evidence, most defensible form.")}
+        {bullet("Every hot take gets a conviction score from 0–100. How well does the argument actually hold up? Higher isn't always better — a 60 that's genuinely defensible beats an 80 that's overconfident.")}
+        {bullet("Once sharpened, you can request a counterpoint — the strongest argument against the original claim. Or challenge someone else's. The feed is a live debate board.")}
+        {bullet("Hit 'PvA Take' on any hot take to get a reaction in the voice of People vs Algorithms — Troy Young, Brian Morrissey, and Alex Schleifer's podcast on media, tech, and culture. Opinionated. Connected to bigger patterns. Not neutral.")}
+        {bullet("Each week, the show's own hot takes drop into your feed under 'This Week on PvA' — arguments from the latest episode, ready to read, challenge, or riff on.")}
         <div style={{ marginTop: 32, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
           <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>Why it's interesting</p>
           {bullet("Most people argue against the weakest version of ideas they disagree with. This forces the opposite — understand the best case before you dismiss it.")}
@@ -334,7 +334,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Steelman<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
+            <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> PvA Hot Takes<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -361,8 +361,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         {observations.length === 0 && !loading && (
           <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
             <p style={{ fontSize: 22, fontWeight: 800, color: "#FFF", letterSpacing: -0.5, margin: "0 0 10px" }}>Drop your first take.</p>
-            <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 28px" }}>Paste a URL, share a claim, or describe an idea. We'll steelman it in the PvA voice.</p>
-            <button onClick={onCapture} style={{ background: "#FF00AE", color: "#fff", border: "none", borderRadius: 100, padding: "14px 36px", fontSize: 16, fontWeight: 700, cursor: "pointer", letterSpacing: -0.3, WebkitTapHighlightColor: "transparent" }}>＋ Drop a steelman</button>
+            <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 28px" }}>Paste a URL, share a claim, or describe an idea. We'll build the strongest case for it.</p>
+            <button onClick={onCapture} style={{ background: "#FF00AE", color: "#fff", border: "none", borderRadius: 100, padding: "14px 36px", fontSize: 16, fontWeight: 700, cursor: "pointer", letterSpacing: -0.3, WebkitTapHighlightColor: "transparent" }}>＋ Drop a hot take</button>
           </div>
         )}
         {observations.length === 0 && !loading ? null : (() => {
@@ -462,7 +462,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   <ScoreBadge value={obs.score} size="sm" dark />
                   {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin || getTokenIsAdmin()) && (
                     <button
-                      onClick={(e) => { e.stopPropagation(); if (confirm("Delete this steelman?")) onDelete(obs.id); }}
+                      onClick={(e) => { e.stopPropagation(); if (confirm("Delete this hot take?")) onDelete(obs.id); }}
                       style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 13, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
                     >&times;</button>
                   )}
@@ -613,7 +613,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 <div>
                   <div style={{ padding: "4px 4px 6px" }}>
                     <div style={{ fontSize: 16, fontWeight: 900, color: "#FF00AE", fontFamily: "'Besley', serif" }}>This Week on PvA</div>
-                    <div style={{ fontSize: 10, color: "#FFF", marginTop: 0 }}>Curated steelmans from the episode.</div>
+                    <div style={{ fontSize: 10, color: "#FFF", marginTop: 0 }}>Curated hot takes from the episode.</div>
                   </div>
                   {filteredEpisodes.map(([tag, { obs }]) =>
                     obs.map(o => <div key={`${tag}-${o.id}`}>{renderPost(o)}</div>)
@@ -632,7 +632,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {/* Empty state for filtered view */}
               {selectedTopic && filteredPosts.length === 0 && filteredEpisodes.length === 0 && (
                 <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
-                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No steelmans in {selectedTopic} yet.</p>
+                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No hot takes in {selectedTopic} yet.</p>
                 </div>
               )}
             </>
@@ -793,11 +793,11 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
         {parentObs ? "What's your counter?" : "What's your take?"}
       </h1>
       <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", margin: "0 0 24px", lineHeight: 1.5 }}>
-        {parentObs ? "Drop your counter-argument. We'll steelman it." : "Drop a hot take. We'll build the strongest case for it."}
+        {parentObs ? "Drop your counter-argument. We'll sharpen it." : "Drop a hot take. We'll build the strongest case for it."}
       </p>
       {parentObs && (
         <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 10, padding: "14px 16px", marginBottom: 20 }}>
-          <p style={{ fontSize: 9, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 0.5, textTransform: "uppercase", margin: "0 0 6px" }}>ORIGINAL STEEL MAN</p>
+          <p style={{ fontSize: 9, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 0.5, textTransform: "uppercase", margin: "0 0 6px" }}>ORIGINAL HOT TAKE</p>
           <p style={{ fontSize: 13, fontWeight: 700, color: "#FFF", margin: "0 0 8px", lineHeight: 1.4 }}>{parentObs.thesis || parentObs.raw_input}</p>
           {parentObs.summary && (
             <p style={{ fontSize: 11, color: "#666", margin: 0, lineHeight: 1.5, maxHeight: 120, overflow: "auto" }}>
@@ -927,7 +927,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
           WebkitTapHighlightColor: "transparent",
         }}
       >
-        {submitting ? "Submitting\u2026" : canSubmit ? "Steelman this \u2192" : "Type your take above"}
+        {submitting ? "Submitting\u2026" : canSubmit ? "Sharpen this \u2192" : "Type your take above"}
       </button>
 
       {error && (
@@ -1170,7 +1170,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
               <SteelManIcon size={49} animate />
               <div>
                 <p style={{ fontSize: 15, fontWeight: 600, color: "#FFF", margin: "0 0 4px" }}>
-                  {resubmitting ? "Resubmitting\u2026" : obs.status === "formatting" ? "Reading your take\u2026" : "Building steelman\u2026"}
+                  {resubmitting ? "Resubmitting\u2026" : obs.status === "formatting" ? "Reading your take\u2026" : "Building the case\u2026"}
                 </p>
                 <p style={{ fontSize: 13, color: "rgba(255,255,255,0.45)", margin: 0 }}>This usually takes a few seconds</p>
               </div>
@@ -1271,7 +1271,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {obs.status === "complete" && (
           <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
             {([
-              ["steelman", "Steelman", handleSteelmanScroll, false] as const,
+              ["steelman", "Hot Take", handleSteelmanScroll, false] as const,
               ["counterpoint", "Counterpoint", handleCounterpoint, counterpointLoading] as const,
               ["pva", "PvA Take", handlePvaTake, pvaLoading] as const,
             ]).map(([key, label, handler, loading]) => (
@@ -1297,7 +1297,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}>{flashSteelman && <PulsingDot />}Steelman</p>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}>{flashSteelman && <PulsingDot />}Hot Take</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
@@ -1500,7 +1500,7 @@ function ShareButton({ obsId, onClick, prominent = false }: { obsId: string; onC
   const [copied, setCopied] = useState(false);
 
   const shareUrl = `${window.location.origin}${window.location.pathname}#obs/${obsId}`;
-  const shareText = "Someone shared a Steelman with you. Check it out:";
+  const shareText = "Someone shared a hot take with you. Check it out:";
   const fullText = `${shareText}\n${shareUrl}`;
 
   const handleShare = async (e: React.MouseEvent) => {
@@ -1693,9 +1693,9 @@ export default function App() {
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
-        <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center", position: "relative", zIndex: 1 }}>Steelman</h1>
+        <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center", position: "relative", zIndex: 1 }}>PvA Hot Takes</h1>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, whiteSpace: "nowrap", position: "relative", zIndex: 1 }}>
-          A <strong style={{ color: "rgba(255,255,255,0.7)" }}>Steelman</strong> is the strongest argument for an idea.
+          Drop a take. We build the strongest case for it.
         </p>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
           Drop in any claim. We build the case.<br />
