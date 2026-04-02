@@ -535,7 +535,9 @@ Return valid JSON only. No markdown fences. No preamble."""
                 else:
                     raise
 
-    raw = await _call(system=system, user=prompt, max_tokens=500)
+    raw = await _call(system=system, user=prompt, max_tokens=500, use_search=(PROVIDER == "gemini"))
+    if isinstance(raw, tuple):
+        raw = raw[0]
     return _extract_json(raw)
 
 
