@@ -347,7 +347,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <BurstIcon size={41} color="#FF00AE" /><span style={{ letterSpacing: -1.5, marginLeft: 3 }}>hot.take</span><span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3, marginLeft: 4 }}>(beta)</span>
+            <BurstIcon size={49} color="#FF00AE" /><span style={{ letterSpacing: -1.2, marginLeft: 1 }}>hot.take</span><span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3, marginLeft: 4 }}>(beta)</span>
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -1284,9 +1284,9 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
         {obs.status === "complete" && (
           <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
             {([
-              ["steelman", "Hot Take", handleSteelmanScroll, false] as const,
-              ["counterpoint", "Counterpoint", handleCounterpoint, counterpointLoading] as const,
-              ["pva", "PvA Take", handlePvaTake, pvaLoading] as const,
+              ["steelman", "hot.take", handleSteelmanScroll, false] as const,
+              ["counterpoint", "cold shower", handleCounterpoint, counterpointLoading] as const,
+              ["pva", "pva take", handlePvaTake, pvaLoading] as const,
             ]).map(([key, label, handler, loading]) => (
               <button key={key} onClick={handler}
                 style={{
@@ -1295,11 +1295,13 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                   color: activeSection === key ? "#FFF" : "rgba(255,255,255,0.5)",
                   fontSize: 13, fontWeight: 700, fontFamily: "inherit",
                   WebkitTapHighlightColor: "transparent",
-                  display: "flex", alignItems: "center", justifyContent: "center", gap: 6,
+                  display: "flex", alignItems: "center", justifyContent: "center", gap: 4,
                   transition: "background 0.2s, color 0.2s",
                 }}
               >
-                {loading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : label}
+                {loading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : (
+                  key === "steelman" ? <><BurstIcon size={16} />{label}</> : label
+                )}
               </button>
             ))}
           </div>
@@ -1310,7 +1312,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}>{flashSteelman && <PulsingDot />}Hot Take</p>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 5 }}>{flashSteelman && <PulsingDot />}<img src="/circle.png" width={12} height={12} style={{ mixBlendMode: "screen" }} />Hot Take</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
