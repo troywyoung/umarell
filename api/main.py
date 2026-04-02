@@ -608,7 +608,7 @@ SCORE_BENCHMARKS = [
     ("Bari Weiss is single-handedly destroying CBS News.",                          8,  26, "hyperbolic, unsupported"),
     ("Canada will be a global superpower by 2030.",                                 3,  16, "contradicts all data"),
     # Vague non-take
-    ("AI will change everything over the next decade.",                            20,  42, "too vague to score high"),
+    ("AI will change everything over the next decade.",                            55,  82, "broadly true but vague — conviction score rewards truth"),
 ]
 
 @app.post("/admin/test-scoring")

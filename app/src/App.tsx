@@ -306,11 +306,12 @@ function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "
 }
 
 const SCORE_ROWS = [
-  { range: "85–100", label: "Razor-sharp", desc: "Specific, bold, tightly framed. Hard to dismiss." },
-  { range: "65–84",  label: "Strong",       desc: "Clear position, non-obvious, well-argued." },
-  { range: "40–64",  label: "Decent",       desc: "Has something to it, but vague or hedged." },
-  { range: "15–39",  label: "Weak",         desc: "Assertion without real argument." },
-  { range: "0–14",   label: "Not a take",   desc: "Obvious, incoherent, or purely emotional." },
+  { range: "90–100", label: "Verified",    desc: "Factually established. Hard evidence, scientific consensus." },
+  { range: "75–89",  label: "Well-backed", desc: "Strong case, evidence clearly leans this way." },
+  { range: "55–74",  label: "Defensible",  desc: "Reasonable argument, genuinely contestable." },
+  { range: "35–54",  label: "Thin",        desc: "Possible but weak — vague or poorly evidenced." },
+  { range: "15–34",  label: "Unlikely",    desc: "Goes against available evidence." },
+  { range: "0–14",   label: "False",       desc: "Demonstrably wrong or incoherent." },
 ];
 
 function ScoreInfoRows() {
@@ -343,7 +344,7 @@ function ScoreInfoSheet({ onClose }: { onClose: () => void }) {
           <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 22, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
         </div>
         <p style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", lineHeight: 1.55, margin: "0 0 16px" }}>
-          Measures how sharp, specific, and arguable the position is — not whether it's factually correct.
+          A conviction score. Verifiable facts score near 100. Demonstrably false claims score near 0. Opinions land in the middle based on how well-evidenced and defensible the argument is.
         </p>
         <ScoreInfoRows />
       </div>
@@ -369,7 +370,7 @@ function ScoreInfoPopover({ onClose }: { onClose: () => void }) {
           <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.35)", fontSize: 18, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
         </div>
         <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 14px" }}>
-          Measures how sharp, specific, and arguable the position is — not whether it's factually correct.
+          A conviction score. Verifiable facts score near 100. Demonstrably false claims score near 0. Opinions land in the middle based on how well-evidenced and defensible the argument is.
         </p>
         <ScoreInfoRows />
       </div>
