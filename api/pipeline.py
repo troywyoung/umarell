@@ -184,68 +184,78 @@ PAYWALL_SIGNALS = [
 ]
 
 async def _fetch_reddit(url: str) -> str:
-    """Fetch Reddit posts/comments via their JSON API."""
+    """Fetch Reddit posts via old.reddit.com (server-rendered HTML)."""
     try:
         headers = {
             "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            "Accept": "application/json, text/html, */*",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
         }
 
-        # Strip query params from the input URL first
+        # Strip query params
         base = url.split("?")[0].split("#")[0].rstrip("/")
 
-        # If it already has /comments/, use it directly — no redirect needed
-        if "/comments/" in base:
-            json_url = base + ".json?limit=5&raw_json=1"
-            print(f"[reddit] direct comments URL → {json_url}")
-        else:
-            # /s/ share link — need to resolve redirect first
+        # Resolve /s/ share links first
+        if "/s/" in base or "/comments/" not in base:
             async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
-                head = await http.get(url, headers=headers)
-                resolved = str(head.url)
-            print(f"[reddit] resolved {url} → {resolved}")
-            base = resolved.split("?")[0].split("#")[0].rstrip("/")
+                r = await http.get(url, headers=headers)
+                base = str(r.url).split("?")[0].split("#")[0].rstrip("/")
+            print(f"[reddit] resolved share link → {base}")
             if "/comments/" not in base:
-                raise ValueError(f"Could not resolve to a Reddit post URL. Got: {base}")
-            json_url = base + ".json?limit=5&raw_json=1"
+                raise ValueError(f"Could not resolve to a Reddit post. Got: {base}")
+
+        # Convert to old.reddit.com for clean HTML
+        old_url = base.replace("www.reddit.com", "old.reddit.com").replace("reddit.com", "old.reddit.com")
+        print(f"[reddit] fetching {old_url}")
 
         async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
-            resp = await http.get(json_url, headers=headers)
+            resp = await http.get(old_url, headers=headers)
 
-        print(f"[reddit] JSON API status {resp.status_code} for {json_url}")
+        print(f"[reddit] status {resp.status_code}")
         if resp.status_code != 200:
-            raise ValueError(f"Reddit returned {resp.status_code}. Try pasting the post text directly.")
+            raise ValueError(f"Reddit returned {resp.status_code}")
 
-        data = resp.json()
-        if not isinstance(data, list) or len(data) < 1:
-            raise ValueError(f"Unexpected Reddit API response")
+        soup = BeautifulSoup(resp.text, "html.parser")
 
-        # Reddit JSON: [post_listing, comments_listing]
-        post = data[0]["data"]["children"][0]["data"]
-        title = post.get("title", "")
-        selftext = post.get("selftext", "")
-        subreddit = post.get("subreddit", "")
-        score = post.get("score", 0)
-        num_comments = post.get("num_comments", 0)
+        # Post title
+        title_tag = soup.select_one("a.title, p.title a")
+        title = title_tag.get_text(strip=True) if title_tag else ""
 
-        parts = [f"Title: {title}", f"Subreddit: r/{subreddit}", f"Score: {score}, Comments: {num_comments}"]
-        if selftext and selftext not in ("[removed]", "[deleted]"):
+        # Post selftext
+        selftext_tag = soup.select_one("div.usertext-body .md")
+        selftext = selftext_tag.get_text(separator=" ", strip=True) if selftext_tag else ""
+
+        # Subreddit + score
+        subreddit_tag = soup.select_one("a.subreddit")
+        subreddit = subreddit_tag.get_text(strip=True) if subreddit_tag else ""
+        score_tag = soup.select_one("div.score.unvoted, div.score.likes, span.score")
+        score = score_tag.get_text(strip=True) if score_tag else ""
+
+        parts = []
+        if title:
+            parts.append(f"Title: {title}")
+        if subreddit:
+            parts.append(f"Subreddit: {subreddit}")
+        if score:
+            parts.append(f"Score: {score}")
+        if selftext:
             parts.append(f"\n{selftext[:4000]}")
 
         # Top comments
-        try:
-            comments = data[1]["data"]["children"]
-            top_comments = []
-            for c in comments[:5]:
-                body = c.get("data", {}).get("body", "")
-                if body and body not in ("[removed]", "[deleted]"):
-                    top_comments.append(f"• {body[:300]}")
-            if top_comments:
-                parts.append("\nTop comments:\n" + "\n".join(top_comments))
-        except Exception:
-            pass
+        comment_tags = soup.select("div.usertext-body .md")
+        top_comments = []
+        for tag in comment_tags[1:6]:  # skip first (post body)
+            text = tag.get_text(separator=" ", strip=True)
+            if text and len(text) > 20:
+                top_comments.append(f"• {text[:300]}")
+        if top_comments:
+            parts.append("\nTop comments:\n" + "\n".join(top_comments))
 
-        return "\n".join(parts)
+        result = "\n".join(parts)
+        if len(result) < 50:
+            raise ValueError("Could not extract meaningful content from Reddit post")
+        return result
+
     except Exception as e:
         return f"[Could not fetch Reddit URL: {e}]"
 
