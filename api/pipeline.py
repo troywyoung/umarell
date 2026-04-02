@@ -545,32 +545,35 @@ A weak take:
 - Is purely emotional with no argument ("this is terrible")
 - Is internally contradictory or incoherent
 
-Score it by comparing against these reference takes. Find where this take sits relative to them:
+Score this take on FOUR independent dimensions, each from 1-10:
 
-SCORE 88 — "Every media company that survived the last decade did so by becoming unrecognizable from its original form. The ones trying to preserve their identity are already dead — they just don't know it yet."
-(Why 88: brutally specific, empirically checkable, goes against the instinct to preserve brand identity, hard to dismiss)
+SPECIFICITY (1-10): How concrete and falsifiable is the claim?
+- 10: Names a specific mechanism, timeframe, or measurable outcome
+- 5: Stakes out a position but leaves wiggle room
+- 1: So vague that any outcome could confirm it ("things are changing")
 
-SCORE 72 — "Newsletter subscriptions will consolidate around a handful of winner-takes-most platforms within three years. Most solo creators won't survive the transition."
-(Why 72: clear prediction, specific timeframe, committed position — but the insight isn't surprising to anyone following the space)
+BOLDNESS (1-10): How hard does this push against conventional wisdom?
+- 10: Directly contradicts what most informed people believe
+- 5: A position reasonable people debate
+- 1: Broadly accepted by everyone already
 
-SCORE 56 — "Podcasting rewards authenticity more than production quality. Listeners can tell when hosts are performing versus actually thinking."
-(Why 56: has something to it, and it's an arguable position, but it's an observation most people in the industry already share)
+ARGUMENT (1-10): How well does the reasoning hold up?
+- 10: Tight logical chain, could be defended under pressure, hard to dismiss
+- 5: Has a coherent point but leaves obvious objections unaddressed
+- 1: Pure assertion with no structure, or internally contradictory
 
-SCORE 38 — "Social media has fundamentally changed how brands communicate with audiences."
-(Why 38: directionally true but so broad and widely accepted that it barely registers as a take — no one could argue the opposite)
+NOVELTY (1-10): How surprising or original is the angle?
+- 10: Reframes the issue in a way that makes you see it differently
+- 5: A fresh take on a familiar debate
+- 1: Restates something everyone already says
 
-SCORE 19 — "Good journalism requires resources and time."
-(Why 19: true but self-evident — not a take, just a fact. Nothing to push back on.)
-
-SCORE 6 — "News is important for society."
-(Why 6: not a take at all. Universally agreed upon platitude.)
-
-After finding the closest reference, adjust up or down based on how THIS take compares. A take more specific than the 72 example but less sweeping than the 88 might be 79. A take vaguer than the 56 but more committed than the 38 might be 46.
+Compute the final score as: round((specificity * 30 + boldness * 25 + argument * 25 + novelty * 20) / 10)
+This gives a score from 0-100.
 
 RULES:
-- Do NOT default to round numbers. Use the exact number the comparison yields.
-- Being unprovable is NOT a penalty. A bold, specific prediction scores high.
-- Vagueness IS a penalty. The take must stake out a position someone could push back on.
+- Use the full 1-10 range on each dimension — don't cluster dimensions at 7.
+- A take can be bold but poorly argued; specific but obvious; novel but vague. Score each independently.
+- Being unprovable is NOT a penalty on any dimension.
 - Hyperbole for effect is fine — score the underlying argument, not the literal claim.
 - If an image is provided, use it as direct evidence for what the take is claiming.
 
