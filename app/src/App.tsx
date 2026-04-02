@@ -57,6 +57,38 @@ function BurstIcon({ size = 20, white = false, className, style }: { size?: numb
   );
 }
 
+// ─── Animated Scribble — draws itself over 5s, loops ────────────────────
+function AnimatedScribble({ size = 80 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 100 100" style={{ display: "block", overflow: "visible" }}>
+      <style>{`
+        @keyframes drawScribble {
+          0%   { stroke-dashoffset: 1; opacity: 0.4; }
+          10%  { opacity: 1; }
+          80%  { stroke-dashoffset: 0; opacity: 1; }
+          92%  { stroke-dashoffset: 0; opacity: 1; }
+          100% { stroke-dashoffset: 1; opacity: 0.4; }
+        }
+        .scribble-draw {
+          stroke-dasharray: 1;
+          stroke-dashoffset: 1;
+          animation: drawScribble 5s ease-in-out infinite;
+        }
+      `}</style>
+      <path
+        className="scribble-draw"
+        pathLength="1"
+        d="M 50,18 C 62,8 80,10 86,24 C 96,18 100,34 94,44 C 102,54 96,70 84,72 C 88,84 78,94 66,90 C 62,98 50,100 42,94 C 34,102 20,96 18,84 C 8,84 2,72 8,62 C -2,52 2,36 14,32 C 8,20 18,8 30,12 C 34,4 44,2 50,10 C 56,2 68,6 70,16 C 80,10 92,18 90,30 C 100,36 100,52 90,58 C 96,68 90,80 80,80 C 82,90 72,96 62,92 C 60,100 48,102 42,94"
+        fill="none"
+        stroke="#FF00AE"
+        strokeWidth="5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 // ─── Steelman Icon (SVG) — geometric wireframe mesh ─────────────────────
 
 // Nodes and edges — organic, asymmetric constellation
@@ -1241,9 +1273,9 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               </div>
             )}
 
-            {/* Step progress — animated mesh builds itself */}
+            {/* Step progress — scribble draws itself */}
             <div style={{ display: "flex", alignItems: "center", gap: 10, padding: "30px 0 28px" }}>
-              <BurstIcon size={49} color="#FF00AE" />
+              <AnimatedScribble size={52} />
               <div>
                 <p style={{ fontSize: 15, fontWeight: 600, color: "#FFF", margin: "0 0 4px" }}>
                   {resubmitting ? "Resubmitting\u2026" : obs.status === "formatting" ? "Reading your take\u2026" : "Building the case\u2026"}
