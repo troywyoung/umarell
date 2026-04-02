@@ -334,7 +334,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> PvA Hot Takes<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
+            <SteelManIcon size={34} animate animateCount={3} color="#FFF" /> Hot Take<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
@@ -1693,7 +1693,7 @@ export default function App() {
         <div style={{ marginBottom: 10, position: "relative", zIndex: 1 }}>
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
-        <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center", position: "relative", zIndex: 1 }}>PvA Hot Takes</h1>
+        <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center", position: "relative", zIndex: 1 }}>Hot Take</h1>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
           Drop a take. We build the strongest case for it.<br />
           We stress test it.<br />
