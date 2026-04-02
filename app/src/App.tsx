@@ -346,7 +346,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
 
       {/* Avatar row — no border */}
-      <div style={{ padding: "14px 20px 0", display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
+      <div style={{ padding: "5px 20px 0", display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
           {authUser.avatar
@@ -357,9 +357,9 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       </div>
 
       {/* Scribble + logo in natural flow, centered */}
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", pointerEvents: "none", marginTop: 4 }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", pointerEvents: "none", marginTop: 0 }}>
         <BurstIcon size={100} className="scribble-pulse" />
-        <span style={{ fontSize: 19, fontWeight: 700, letterSpacing: -1.08, color: "#FFF", marginTop: 4 }}>
+        <span style={{ fontSize: 19, fontWeight: 700, letterSpacing: -1.08, color: "#FFF", marginTop: 2 }}>
           <span style={{ color: "#FF00AE" }}>hot</span>take
         </span>
       </div>
@@ -376,7 +376,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         }
         .scribble-pulse { animation: scribblePulse 4s ease-in-out infinite; }
       `}</style>
-      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "16px 16px 10px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
+      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "8px 16px 6px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
         <span style={{ fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit" }}>(<span style={{ textDecoration: "underline", textDecorationColor: "#FFF" }}>what is hot take?</span>)</span>
       </button>
 
