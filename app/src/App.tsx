@@ -39,13 +39,18 @@ function getRandomPlaceholder() {
 
 // ─── Burst Icon ───────────────────────────────────────────────────────────
 
-function BurstIcon({ size = 20 }: { size?: number; color?: string }) {
+function BurstIcon({ size = 20, white = false }: { size?: number; color?: string; white?: boolean }) {
   return (
     <img
-      src="/scribble.png"
+      src="/scribble-transparent.png"
       width={size}
       height={size}
-      style={{ flexShrink: 0, mixBlendMode: "screen", display: "block" }}
+      style={{
+        flexShrink: 0,
+        mixBlendMode: "screen",
+        display: "block",
+        filter: white ? "grayscale(1) brightness(8)" : undefined,
+      }}
     />
   );
 }
@@ -343,14 +348,23 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         padding: "14px 20px 10px",
         borderBottom: "1px solid rgba(255,255,255,0.08)",
         display: "flex", alignItems: "center", justifyContent: "space-between",
-        position: "relative", zIndex: 1,
+        position: "relative", zIndex: 1, overflow: "visible",
       }}>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -0.4, display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <BurstIcon size={49} color="#FF00AE" /><span style={{ letterSpacing: -1.2, marginLeft: 1 }}>hot.take</span><span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3, marginLeft: 4 }}>(beta)</span>
+        {/* Centered scribble — decorative, overlaps border */}
+        <div style={{
+          position: "absolute", left: "50%", bottom: -36,
+          transform: "translateX(-50%)",
+          zIndex: 0, pointerEvents: "none",
+        }}>
+          <BurstIcon size={100} />
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", position: "relative", zIndex: 1 }}>
+          <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -1.2, display: "inline-flex", alignItems: "center", gap: 6 }}>
+            hot.take<span style={{ fontSize: 11, fontWeight: 400, color: "rgba(255,255,255,0.4)", letterSpacing: 0, alignSelf: "flex-end", marginBottom: 3 }}>(beta)</span>
           </span>
         </div>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10, position: "relative", zIndex: 1 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
           {authUser.avatar
             ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
@@ -1299,7 +1313,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 }}
               >
                 {loading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : (
-                  key === "steelman" ? <><BurstIcon size={16} />{label}</> : label
+                  key === "steelman" ? <><BurstIcon size={16} white />{label}</> : label
                 )}
               </button>
             ))}
@@ -1311,7 +1325,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 5 }}>{flashSteelman && <PulsingDot />}<img src="/circle.png" width={12} height={12} style={{ mixBlendMode: "screen" }} />Hot Take</p>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 5 }}>{flashSteelman && <PulsingDot />}<img src="/circle.png" width={14} height={14} style={{ mixBlendMode: "screen", flexShrink: 0 }} />Hot Take</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
