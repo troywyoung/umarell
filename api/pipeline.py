@@ -530,52 +530,40 @@ async def generate_metadata(thesis: str, steel_man: str, image_b64: str | None =
 
     prompt = f"""Thesis: {thesis}
 
-Score this as a TAKE — a subjective position or argument. This is NOT a factual accuracy check.
-Score on TAKE STRENGTH: how sharp, specific, and arguable this position is.
+Score this as a HOT TAKE on a 0-100 scale.
 
-A strong take:
-- Stakes out a specific, non-obvious position
-- Has a coherent argument, even if unprovable
-- Could be credibly defended by a smart person
-- Pushes against or meaningfully sharpens conventional wisdom
+STEP 1 — Classify it first:
+Ask yourself: would a smart, well-informed person in this industry already agree with this, or does it stake out a real position they might push back on?
 
-A weak take:
-- Is too vague to argue with ("things are changing")
-- Is so obvious it barely qualifies as a take ("water is wet")
-- Is purely emotional with no argument ("this is terrible")
-- Is internally contradictory or incoherent
+STEP 2 — Score within the right tier:
 
-Score this take on FOUR independent dimensions, each from 1-10:
+TIER 1 — Obvious (0–35): Most informed people already agree, or it's so vague it can't be argued with.
+Score here if the take restates consensus, uses sweeping non-falsifiable language ("AI is changing everything"), or is trivially true ("good journalism needs resources").
+→ Score near 5 for platitudes, near 35 for mildly interesting but still soft observations.
 
-SPECIFICITY (1-10): How concrete and falsifiable is the claim?
-- 10: Names a specific mechanism, timeframe, or measurable outcome
-- 5: Stakes out a position but leaves wiggle room
-- 1: So vague that any outcome could confirm it ("things are changing")
+TIER 2 — Decent (36–62): Stakes out a real position, but the insight isn't surprising or the argument is underdeveloped.
+Score here if a smart person would say "yeah, probably" without much resistance.
+→ Score near 40 for thin arguments, near 62 for solid but unsurprising takes.
 
-BOLDNESS (1-10): How hard does this push against conventional wisdom?
-- 10: Directly contradicts what most informed people believe
-- 5: A position reasonable people debate
-- 1: Broadly accepted by everyone already
+TIER 3 — Strong (63–80): Specific, non-obvious, and someone smart would want to argue back.
+Score here if the take has a clear thesis, names something real, and pushes against what most people assume.
+→ Score near 65 for competent takes, near 80 for ones that are tight and hard to dismiss.
 
-ARGUMENT (1-10): How well does the reasoning hold up?
-- 10: Tight logical chain, could be defended under pressure, hard to dismiss
-- 5: Has a coherent point but leaves obvious objections unaddressed
-- 1: Pure assertion with no structure, or internally contradictory
+TIER 4 — Sharp (81–100): Genuinely surprising. Reframes the issue. An informed person reads it and thinks differently.
+→ Reserve 85+ for takes that would stop a room. Maybe 1 in 20 qualifies.
 
-NOVELTY (1-10): How surprising or original is the angle?
-- 10: Reframes the issue in a way that makes you see it differently
-- 5: A fresh take on a familiar debate
-- 1: Restates something everyone already says
+CALIBRATION EXAMPLES (verify your score matches these):
+- "News is important for democracy." → 5 (pure platitude)
+- "AI will change everything in the next decade." → 18 (too vague to be a take)
+- "Social media has made political discourse worse." → 34 (widely held, no real argument)
+- "Podcasting rewards authenticity over production quality." → 51 (arguable, but most in the industry agree)
+- "Newsletter subscriptions will consolidate to a few winner-takes-most platforms within 3 years." → 67 (specific prediction, committed — but predictable to insiders)
+- "No media company that survived the last decade did so with its original identity intact. The survivors all became unrecognizable." → 82 (specific, challenges survival instinct, empirically checkable)
+- "Every major ad holding company will be gone or unrecognizable within 8 years, replaced by specialist AI shops." → 88 (bold, specific timeframe, high-stakes, hard to dismiss)
 
-Compute the final score as: round((specificity * 30 + boldness * 25 + argument * 25 + novelty * 20) / 10)
-This gives a score from 0-100.
-
-RULES:
-- Use the full 1-10 range on each dimension — don't cluster dimensions at 7.
-- A take can be bold but poorly argued; specific but obvious; novel but vague. Score each independently.
-- Being unprovable is NOT a penalty on any dimension.
-- Hyperbole for effect is fine — score the underlying argument, not the literal claim.
-- If an image is provided, use it as direct evidence for what the take is claiming.
+If the take is obviously weak or vague, score it in TIER 1. Do not escape to 55 as a safe default.
+Being unprovable is NOT a penalty. Vagueness IS. Hyperbole for effect is fine — score the argument, not the literal claim.
+If an image is provided, use it as direct evidence for the claim.
 
 Return a JSON object with exactly these keys:
 {{

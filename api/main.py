@@ -616,7 +616,7 @@ def _rank_normalize(raw_scores: list[float], lo: float = 22.0, hi: float = 91.0)
 
 @app.post("/admin/rescore")
 async def rescore_all(body: RescoreBody, db: AsyncSession = Depends(get_db)):
-    """Re-run generate_metadata on every complete observation, then rank-normalize scores."""
+    """Re-run generate_metadata on every complete observation using the current scoring prompt."""
     if body.admin_key != settings.google_api_key:
         raise HTTPException(403, "Invalid admin key")
 
@@ -625,36 +625,36 @@ async def rescore_all(body: RescoreBody, db: AsyncSession = Depends(get_db)):
     )
     obs_list = list(result.scalars().all())
 
-    scored: list[tuple] = []  # (obs, raw_score, tags, evidence_type, category)
-    failed = 0
+    updated, failed = 0, 0
+    scores_out = []
     for obs in obs_list:
         try:
             sm_text = obs.summary or ""
             meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
-            scored.append((obs, meta.get("score", 50), meta.get("tags"), meta.get("evidence_type"), meta.get("category")))
+            if not body.dry_run:
+                obs.score = meta.get("score")
+                obs.tags = meta.get("tags")
+                obs.evidence_type = meta.get("evidence_type")
+                obs.category = meta.get("category")
+            scores_out.append(meta.get("score"))
+            updated += 1
         except Exception as e:
             print(f"[rescore] failed {obs.id}: {e}")
             failed += 1
 
-    # Rank-normalize so scores spread across 22–91
-    raw_scores = [s[1] for s in scored]
-    normalized = _rank_normalize(raw_scores)
-
     if not body.dry_run:
-        for (obs, _, tags, ev, cat), norm_score in zip(scored, normalized):
-            obs.score = norm_score
-            obs.tags = tags
-            obs.evidence_type = ev
-            obs.category = cat
         await db.commit()
 
-    raw_dist = sorted(raw_scores)
-    norm_dist = sorted(normalized)
+    valid = sorted(s for s in scores_out if s is not None)
+    from collections import Counter
+    top = Counter(valid).most_common(5)
     return {
-        "total": len(obs_list), "updated": len(scored), "failed": failed,
+        "total": len(obs_list), "updated": updated, "failed": failed,
         "dry_run": body.dry_run,
-        "raw_range": [min(raw_dist), max(raw_dist)] if raw_dist else [],
-        "norm_range": [min(norm_dist), max(norm_dist)] if norm_dist else [],
+        "range": [min(valid), max(valid)] if valid else [],
+        "mean": round(sum(valid) / len(valid), 1) if valid else None,
+        "unique": len(set(valid)),
+        "most_common": top,
     }
 
 
