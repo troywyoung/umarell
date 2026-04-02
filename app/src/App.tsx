@@ -504,7 +504,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             })
             .map(([cat]) => cat);
 
-          // Separate episode posts
+          // Separate episode posts — find latest episode to pin, older flow into feed
           const episodeMap = new Map<string, { title: string; obs: Observation[] }>();
           topLevel.filter(o => !!o.episode_tag).forEach(o => {
             const existing = episodeMap.get(o.episode_tag!);
@@ -516,21 +516,32 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           });
           const hasEpisodes = episodeMap.size > 0;
 
+          // Find the latest episode tag by most recent observation
+          const latestEpisodeTag = hasEpisodes
+            ? [...episodeMap.entries()].sort((a, b) => {
+                const aMax = Math.max(...a[1].obs.map(o => new Date(o.created_at).getTime()));
+                const bMax = Math.max(...b[1].obs.map(o => new Date(o.created_at).getTime()));
+                return bMax - aMax;
+              })[0][0]
+            : null;
+
           // Build filtered feed
-          // null (default) → PvA at top, user posts below (original layout)
+          // null (default) → latest PvA episode at top, everything else below by date
           // "__all__" → single chronological feed merging everything by date
           // "PvA" → only episode posts
           // any topic → posts matching that category
           const allFeed = topLevel; // used for __all__ view
 
+          // Non-pinned posts: user posts + older episode posts (not latest episode)
           const filteredPosts = (!selectedTopic || selectedTopic === "__all__")
-            ? topLevel.filter(o => !o.episode_tag)
+            ? topLevel.filter(o => !o.episode_tag || o.episode_tag !== latestEpisodeTag)
             : selectedTopic === "PvA"
               ? []
               : topLevel.filter(o => getObs(o) === selectedTopic);
 
+          // Only pin the latest episode at top; older episodes shown in PvA filter
           const filteredEpisodes = (!selectedTopic || selectedTopic === "PvA" || selectedTopic === "__all__")
-            ? [...episodeMap.entries()]
+            ? [...episodeMap.entries()].filter(([tag]) => selectedTopic === "PvA" || tag === latestEpisodeTag)
             : [...episodeMap.entries()].filter(([, { obs }]) =>
                 obs.some(o => getObs(o) === selectedTopic)
               );
@@ -557,7 +568,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 }}
               >
                 {obs.episode_tag && (
-                  <p style={{ fontSize: 8, fontWeight: 700, color: "#FF00AE", margin: 0, padding: "7px 12px 0", letterSpacing: 0.8, textTransform: "uppercase", lineHeight: 1 }}>PvA</p>
+                  <p style={{ fontSize: 8, fontWeight: 700, color: "#FF00AE", margin: 0, padding: "7px 12px 0", letterSpacing: 0.8, textTransform: "uppercase", lineHeight: 1 }}>{obs.episode_title || "PvA"}</p>
                 )}
                 {obs.user_name && !obs.episode_tag && (
                   <p style={{ fontSize: 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
@@ -738,7 +749,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 <div>
                   {selectedTopic === null && (
                     <div style={{ padding: "4px 4px 6px" }}>
-                      <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF" }}>Takes from this week's PvA episode</div>
+                      <div style={{ fontSize: 13, fontWeight: 800, color: "#FFF" }}>{filteredEpisodes[0]?.[1]?.title || "Takes from this week's PvA episode"}</div>
                     </div>
                   )}
                   {filteredEpisodes.map(([tag, { obs }]) =>
@@ -1327,8 +1338,25 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             {/* Original observation */}
             {!isImage && obs.raw_input && obs.raw_input !== "image" && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16, width: "100%", boxSizing: "border-box", overflow: "hidden" }}>
-                <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Your observation</p>
-                <p style={{ fontSize: 15, color: "rgba(255,255,255,0.8)", lineHeight: 1.65, margin: 0, wordBreak: "break-all", overflowWrap: "anywhere" }}>{obs.raw_input}</p>
+                {obs.input_type === "url" ? (() => {
+                  let domain = obs.raw_input;
+                  try { domain = new URL(obs.raw_input).hostname.replace(/^www\./, ""); } catch {}
+                  return (
+                    <>
+                      <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Source</p>
+                      <a href={obs.raw_input} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 8, textDecoration: "none" }}>
+                        <img src={`https://www.google.com/s2/favicons?domain=${domain}&sz=32`} width={16} height={16} style={{ borderRadius: 3, flexShrink: 0 }} />
+                        <span style={{ fontSize: 13, color: "#FF00AE", fontWeight: 600, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{domain}</span>
+                        <span style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", flexShrink: 0 }}>↗</span>
+                      </a>
+                    </>
+                  );
+                })() : (
+                  <>
+                    <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Your observation</p>
+                    <p style={{ fontSize: 15, color: "rgba(255,255,255,0.8)", lineHeight: 1.65, margin: 0 }}>{obs.raw_input}</p>
+                  </>
+                )}
               </div>
             )}
 
@@ -1344,6 +1372,20 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             </div>
           </>
         )}
+
+        {/* Source URL — shown at top when post came from a URL */}
+        {obs.status === "complete" && obs.input_type === "url" && obs.raw_input && (() => {
+          let domain = obs.raw_input;
+          try { domain = new URL(obs.raw_input).hostname.replace(/^www\./, ""); } catch {}
+          return (
+            <a href={obs.raw_input} target="_blank" rel="noopener noreferrer"
+              style={{ display: "inline-flex", alignItems: "center", gap: 6, textDecoration: "none", marginBottom: 16 }}>
+              <img src={`https://www.google.com/s2/favicons?domain=${domain}&sz=32`} width={14} height={14} style={{ borderRadius: 2, flexShrink: 0 }} />
+              <span style={{ fontSize: 12, color: "#FF00AE", fontWeight: 600 }}>{domain}</span>
+              <span style={{ fontSize: 11, color: "rgba(255,255,255,0.3)" }}>↗</span>
+            </a>
+          );
+        })()}
 
         {/* Thesis (shown once complete) — click to edit */}
         {obs.status === "complete" && obs.thesis && obs.thesis !== "image" && (

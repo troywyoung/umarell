@@ -564,6 +564,30 @@ async def seed_episode(
     return {"episode_tag": body.episode_tag, "observations": created, "count": len(created)}
 
 
+# ─── Admin: retag episode ───────────────────────────────────────────────────
+
+class RetagEpisodeBody(BaseModel):
+    old_tag: str | None = None   # if None, retags ALL episode posts
+    new_tag: str
+    new_title: str
+    admin_key: str
+
+@app.post("/admin/retag-episode")
+async def retag_episode(body: RetagEpisodeBody, db: AsyncSession = Depends(get_db)):
+    if body.admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+    query = select(Observation).where(Observation.episode_tag != None)
+    if body.old_tag:
+        query = query.where(Observation.episode_tag == body.old_tag)
+    result = await db.execute(query)
+    obs_list = list(result.scalars().all())
+    for obs in obs_list:
+        obs.episode_tag = body.new_tag
+        obs.episode_title = body.new_title
+    await db.commit()
+    return {"retagged": len(obs_list), "new_tag": body.new_tag, "new_title": body.new_title}
+
+
 # ─── Migration: backfill hard_facts ─────────────────────────────────────────
 
 @app.post("/admin/backfill-hard-facts")
