@@ -378,10 +378,10 @@ function ScoreInfoPopover({ onClose }: { onClose: () => void }) {
 }
 
 function useIsMobile() {
-  const [mobile, setMobile] = React.useState(() =>
+  const [mobile, setMobile] = useState(() =>
     typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches
   );
-  React.useEffect(() => {
+  useEffect(() => {
     const mq = window.matchMedia("(pointer: coarse)");
     const handler = (e: MediaQueryListEvent) => setMobile(e.matches);
     mq.addEventListener("change", handler);
