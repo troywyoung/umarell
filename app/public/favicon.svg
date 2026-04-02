@@ -1,6 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-  <!-- Dark background -->
-  <rect width="32" height="32" rx="6" fill="#12102B"/>
-  <!-- Pink scribble / loose freehand mark -->
-  <path d="M6 22 C8 10, 12 6, 16 9 C20 12, 14 18, 18 15 C22 12, 26 8, 27 12 C28 16, 22 22, 25 24" stroke="#FF00AE" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blended"/>
+      <feComposite in="blended" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect width="32" height="32" rx="6" fill="#0A0A14"/>
+  <g filter="url(#grain)">
+    <circle cx="16" cy="16" r="14.5" fill="none" stroke="#FF00AE" stroke-width="1.4" opacity="0.2"/>
+    <circle cx="16" cy="16" r="12.5" fill="none" stroke="#FF00AE" stroke-width="1.4" opacity="0.35"/>
+    <circle cx="16" cy="16" r="10.5" fill="none" stroke="#FF00AE" stroke-width="1.5" opacity="0.5"/>
+    <circle cx="16" cy="16" r="8.5"  fill="none" stroke="#FF00AE" stroke-width="1.5" opacity="0.65"/>
+    <circle cx="16" cy="16" r="6.5"  fill="none" stroke="#FF00AE" stroke-width="1.6" opacity="0.8"/>
+    <circle cx="16" cy="16" r="4.5"  fill="none" stroke="#FF00AE" stroke-width="1.6" opacity="0.9"/>
+    <circle cx="16" cy="16" r="2.5"  fill="none" stroke="#FF00AE" stroke-width="1.6" opacity="1"/>
+    <circle cx="16" cy="16" r="1"    fill="#0A0A14"/>
+  </g>
 </svg>
