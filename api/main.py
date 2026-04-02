@@ -588,6 +588,51 @@ async def retag_episode(body: RetagEpisodeBody, db: AsyncSession = Depends(get_d
     return {"retagged": len(obs_list), "new_tag": body.new_tag, "new_title": body.new_title}
 
 
+# ─── Scoring benchmark ──────────────────────────────────────────────────────
+
+SCORE_BENCHMARKS = [
+    # (take, expected_min, expected_max, label)
+    ("Apples are fruit.",                                                           0,  15, "platitude/fact"),
+    ("AI will change everything over the next decade.",                             5,  25, "vague hype"),
+    ("Good journalism requires resources and time.",                               5,  20, "self-evident"),
+    ("Social media has made political discourse worse.",                           20,  42, "widely agreed"),
+    ("Reading long-form text is a dying habit.",                                   28,  50, "common observation"),
+    ("Podcasting rewards authenticity more than production quality.",              40,  60, "industry conventional wisdom"),
+    ("Newsletter subscriptions will consolidate to a few platforms within 3 years.", 55, 72, "specific but predictable"),
+    ("No media operator has ever been genuinely glad they took VC money.",         62,  80, "bold, specific, arguable"),
+    ("Every major ad holding company will be unrecognizable within 8 years.",      70,  88, "bold prediction with mechanism"),
+    ("The newsletter boom peaked in 2023 and we are in the hangover.",             58,  75, "sharp but narrow"),
+]
+
+@app.post("/admin/test-scoring")
+async def test_scoring(admin_key: str):
+    """Run benchmark takes through the scoring prompt and report pass/fail. Use this to validate prompt changes before rescoring production."""
+    if admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    results = []
+    for take, lo, hi, label in SCORE_BENCHMARKS:
+        try:
+            meta = await generate_metadata(take, "")
+            score = meta.get("score")
+            passed = lo <= score <= hi if score is not None else False
+            results.append({
+                "take": take,
+                "label": label,
+                "score": score,
+                "expected": f"{lo}–{hi}",
+                "pass": passed,
+            })
+        except Exception as e:
+            results.append({"take": take, "label": label, "score": None, "expected": f"{lo}–{hi}", "pass": False, "error": str(e)})
+
+    passes = sum(1 for r in results if r["pass"])
+    return {
+        "pass_rate": f"{passes}/{len(results)}",
+        "results": results,
+    }
+
+
 # ─── Migration: rescore all observations ────────────────────────────────────
 
 class RescoreBody(BaseModel):
