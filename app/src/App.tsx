@@ -360,8 +360,8 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         </div>
 
         <div style={{ display: "flex", flexDirection: "column", position: "relative", zIndex: 1 }}>
-          <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -1.2, display: "inline-flex", alignItems: "center", gap: 6 }}>
-            <span style={{ color: "#FF00AE" }}>hot</span>take
+          <span style={{ fontSize: 24, fontWeight: 700, color: "#FFF", letterSpacing: -1.08, display: "inline-flex", alignItems: "center", gap: 6 }}>
+            <span style={{ color: "#FF00AE" }}>hot</span><span>take</span>
           </span>
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10, position: "relative", zIndex: 1 }}>
