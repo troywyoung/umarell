@@ -625,8 +625,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               {(selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
                 <div>
                   <div style={{ padding: "4px 4px 6px" }}>
-                    <div style={{ fontSize: 16, fontWeight: 900, color: "#FF00AE", fontFamily: "'Besley', serif" }}>This Week on PvA</div>
-                    <div style={{ fontSize: 10, color: "#FFF", marginTop: 0 }}>Our takes from the episode.</div>
+                    <div style={{ fontSize: 16, fontWeight: 900, color: "#FF00AE", fontFamily: "'Besley', serif" }}>Takes from this week's episode</div>
                   </div>
                   {filteredEpisodes.map(([tag, { obs }]) =>
                     obs.map(o => <div key={`${tag}-${o.id}`}>{renderPost(o)}</div>)
