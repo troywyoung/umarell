@@ -243,12 +243,19 @@ async def _fetch_via_tavily(url: str) -> str:
 
 
 async def _fetch_url(url: str) -> str:
-    # Route Reddit URLs through Tavily (Reddit blocks datacenter IPs)
+    # Route Reddit URLs through dedicated handler
     if "reddit.com" in url:
         return await _fetch_reddit(url)
 
-    # Try direct HTTP first
-    direct = ""
+    # Try Tavily first — it reliably handles Substack, Medium, paywalled sites, etc.
+    # Direct HTTP from a datacenter gets blocked or returns cookie/consent pages
+    if settings.tavily_api_key:
+        tavily_content = await _fetch_via_tavily(url)
+        if tavily_content:
+            return tavily_content
+        print(f"[fetch] Tavily failed for {url}, falling back to direct HTTP")
+
+    # Direct HTTP fallback
     try:
         async with httpx.AsyncClient(timeout=20, follow_redirects=True) as http:
             resp = await http.get(url, headers={
@@ -266,15 +273,9 @@ async def _fetch_url(url: str) -> str:
             paywall_hits = sum(1 for s in PAYWALL_SIGNALS if s in lower)
             if len(text) >= 500 and paywall_hits < 2:
                 return text[:8000]
-            # Direct fetch returned thin/blocked content — try Tavily
-            print(f"[fetch] direct fetch thin/blocked (len={len(text)}, paywall_hits={paywall_hits}), trying Tavily")
+            return "[PAYWALL] This article is behind a paywall. Please paste the article text directly instead."
     except Exception as e:
-        print(f"[fetch] direct fetch failed: {e}, trying Tavily")
-
-    # Tavily fallback — handles sites that block datacenter IPs (Substack, Medium, etc.)
-    tavily_content = await _fetch_via_tavily(url)
-    if tavily_content:
-        return tavily_content
+        pass
 
     return "[Could not fetch URL: site may be blocking server requests. Paste the article text directly instead.]"
 
