@@ -352,7 +352,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
       }}>
         {/* Centered scribble — decorative, overlaps border */}
         <div style={{
-          position: "absolute", left: "50%", bottom: -56,
+          position: "absolute", left: "50%", bottom: -46,
           transform: "translateX(-50%)",
           zIndex: 0, pointerEvents: "none",
         }}>
@@ -380,7 +380,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         }
         .topic-pills::-webkit-scrollbar { display: none; }
       `}</style>
-      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "36px 16px 10px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
+      <button onClick={onAbout} style={{ display: "flex", alignItems: "center", justifyContent: "center", width: "100%", background: "none", border: "none", padding: "46px 16px 10px", cursor: "pointer", WebkitTapHighlightColor: "transparent", animation: "fadeSlideIn 0.5s ease 0.2s both" }}>
         <span style={{ fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 800, color: "#FFF", fontFamily: "inherit" }}>(<span style={{ textDecoration: "underline", textDecorationColor: "#FFF" }}>What is this thing?</span>)</span>
       </button>
 
