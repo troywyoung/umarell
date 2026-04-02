@@ -1313,7 +1313,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
                 }}
               >
                 {loading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : (
-                  key === "steelman" ? <><BurstIcon size={20} white /><span style={{ marginLeft: 1 }}>{label}</span></> : label
+                  label
                 )}
               </button>
             ))}
@@ -1325,7 +1325,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 5 }}>{flashSteelman && <PulsingDot />}Hot Take</p>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 5 }}><PulsingDot />Hot Take</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
@@ -1389,7 +1389,7 @@ function OutputView({ obs: initialObs, onBack, onResubmit, onChallenge, pollObse
             <div ref={counterpointRef} style={{ marginTop: 16 }}>
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
-                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: 0, display: "flex", alignItems: "center", gap: 6 }}>{flashCounterpoint && <PulsingDot />} Counterpoint</p>
+                  <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: 0, display: "flex", alignItems: "center", gap: 6 }}>{flashCounterpoint && <PulsingDot />} Cold Shower</p>
                   <span style={{
                     fontSize: 9, fontWeight: 800, textTransform: "uppercase", letterSpacing: 0.5,
                     padding: "2px 8px", borderRadius: 4,
