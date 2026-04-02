@@ -1694,12 +1694,9 @@ export default function App() {
           <SteelManIcon size={48} animate color="#FFF" />
         </div>
         <h1 style={{ color: "#FFF", fontSize: 28, fontWeight: 800, letterSpacing: -0.8, margin: "0 0 16px", textAlign: "center", position: "relative", zIndex: 1 }}>PvA Hot Takes</h1>
-        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 20px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, whiteSpace: "nowrap", position: "relative", zIndex: 1 }}>
-          Drop a take. We build the strongest case for it.
-        </p>
-        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, maxWidth: 300, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
-          Drop in any claim. We build the case.<br />
-          Then we stress test it.<br />
+        <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
+          Drop a take. We build the strongest case for it.<br />
+          We stress test it.<br />
           To see what holds up.
         </p>
         {authLoading
