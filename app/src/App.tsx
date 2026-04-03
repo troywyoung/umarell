@@ -498,12 +498,11 @@ function AboutView({ onBack }: { onBack: () => void }) {
 
 // ─── Home ─────────────────────────────────────────────────────────────────
 
-function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUser, onSignOut, onAbout }: {
+function HomeView({ observations, loading, onCapture, onSelect, authUser, onSignOut, onAbout }: {
   observations: Observation[];
   loading: boolean;
   onCapture: () => void;
   onSelect: (o: Observation) => void;
-  onDelete: (id: string) => void;
   authUser: AuthUser;
   onSignOut: () => void;
   onAbout: () => void;
@@ -608,18 +607,11 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 {obs.user_name && !obs.episode_tag && (
                   <p style={{ fontSize: 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
-                {/* Score — top right, left of X */}
-                <div style={{ position: "absolute", top: 10, right: 36, zIndex: 1 }}>
+                {/* Score — top right corner */}
+                <div style={{ position: "absolute", top: 10, right: 10, zIndex: 1 }}>
                   <ScoreBadge value={obs.score} size="sm" dark />
                 </div>
-                {/* X — far right corner, aligned with author label */}
-                {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin || getTokenIsAdmin()) && (
-                  <button
-                    onClick={(e) => { e.stopPropagation(); if (confirm("Delete this hot take?")) onDelete(obs.id); }}
-                    style={{ position: "absolute", top: 7, right: 10, zIndex: 1, background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 16, padding: 0, lineHeight: 1 }}
-                  >&times;</button>
-                )}
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 84 }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 60 }}>
                   {obs.image_data && (
                     <img
                       src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
@@ -685,12 +677,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
               <p style={{ fontSize: 11, color: "#1A1A1A", fontWeight: 600, margin: 0, lineHeight: 1.4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", flex: 1 } as React.CSSProperties}>
                 <span style={{ fontWeight: 800, color: "#2C5ABA" }}>Challenge: </span>{c.thesis || c.raw_input}
               </p>
-              {(!c.user_id || c.user_id === authUser.id) && (
-                <button
-                  onClick={(e) => { e.stopPropagation(); if (confirm("Delete this challenge?")) onDelete(c.id); }}
-                  style={{ background: "none", border: "none", cursor: "pointer", color: "#AAA", fontSize: 16, padding: 0, lineHeight: 1, flexShrink: 0 }}
-                >&times;</button>
-              )}
             </div>
           );
 
@@ -1259,7 +1245,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
 
   const isProcessing = obs.status === "formatting" || obs.status === "researching" || resubmitting;
   const isImage = obs.input_type === "screenshot" || obs.input_type === "photo";
-  const isOwner = !obs.user_id || obs.user_id === authUserId || !!isAdmin;
+  const isOwner = (obs.user_id && obs.user_id === authUserId) || !!isAdmin;
 
   // Parse summary — handles new JSON format {bottom_line, hard_facts, bullets} and legacy plain text
   let steelBottomLine = "";
@@ -1307,11 +1293,12 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80, background: "#12102B", minHeight: "100vh" }}>
       <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
+        <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
           {isOwner && (
             deleteConfirm ? (
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <>
                 <button
                   onClick={() => setDeleteConfirm(false)}
                   style={{ background: "none", border: "none", fontSize: 12, color: "#666", cursor: "pointer", padding: 0, fontFamily: "inherit" }}
@@ -1325,7 +1312,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   disabled={deleting}
                   style={{ background: "none", border: "none", fontSize: 12, fontWeight: 700, color: "#FF00AE", cursor: "pointer", padding: 0, fontFamily: "inherit" }}
                 >{deleting ? "deleting…" : "delete"}</button>
-              </div>
+              </>
             ) : (
               <button
                 onClick={() => setDeleteConfirm(true)}
@@ -1339,7 +1326,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             )
           )}
         </div>
-        {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
       </div>
 
       <div style={{ padding: "24px 20px 0" }}>
@@ -2111,7 +2097,6 @@ export default function App() {
       loading={loading}
       onCapture={() => navigateTo("capture")}
       onSelect={(o) => navigateTo("output", o)}
-      onDelete={deleteObservation}
       authUser={authUser}
       onSignOut={handleSignOut}
       onAbout={() => setView("about")}
