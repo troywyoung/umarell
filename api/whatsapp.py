@@ -125,7 +125,7 @@ async def whatsapp_webhook(
 
         reply = (
             f"*{thesis}*\n\n"
-            f"{steel_man_text[:600]}\n\n"
+            f"{steel_man_text}\n\n"
             f"Conviction score: *{score}/100* ({label})\n\n"
             f"hottake.peoplevsalgorithms.com"
         )
