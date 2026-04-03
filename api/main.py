@@ -301,7 +301,7 @@ async def _attach_user_names(db: AsyncSession, observations: list[Observation]) 
     for o in observations:
         d = ObservationOut.model_validate(o).model_dump()
         # Episode posts show "PvA", regular posts show the user's name
-        d["user_name"] = "PvA" if o.episode_tag else (user_map.get(o.user_id) if o.user_id else None)
+        d["user_name"] = "PvA" if o.episode_tag else (user_map.get(o.user_id) if o.user_id else "Anonymous")
         # Parse pva_take from briefing field
         if o.briefing:
             try:
