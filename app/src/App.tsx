@@ -574,47 +574,12 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             .slice(0, 8)
             .map(([tag]) => tag);
 
-          // Separate episode posts — find latest episode to pin, older flow into feed
-          const episodeMap = new Map<string, { title: string; obs: Observation[] }>();
-          topLevel.filter(o => !!o.episode_tag).forEach(o => {
-            const existing = episodeMap.get(o.episode_tag!);
-            if (existing) {
-              existing.obs.push(o);
-            } else {
-              episodeMap.set(o.episode_tag!, { title: o.episode_title || o.episode_tag!, obs: [o] });
-            }
-          });
-          const hasEpisodes = episodeMap.size > 0;
-
-          // Find the latest episode tag by most recent observation
-          const latestEpisodeTag = hasEpisodes
-            ? [...episodeMap.entries()].sort((a, b) => {
-                const aMax = Math.max(...a[1].obs.map(o => new Date(o.created_at).getTime()));
-                const bMax = Math.max(...b[1].obs.map(o => new Date(o.created_at).getTime()));
-                return bMax - aMax;
-              })[0][0]
-            : null;
-
-          // Build filtered feed
-          // null (default) → latest PvA episode at top, everything else below by date
-          // "__all__" → single chronological feed merging everything by date
-          // "PvA" → only episode posts
-          // any topic → posts matching that category
-          const allFeed = topLevel; // used for __all__ view
-
-          // Non-pinned posts: user posts + older episode posts (not latest episode)
-          const filteredPosts = (!selectedTopic || selectedTopic === "__all__")
-            ? topLevel.filter(o => !o.episode_tag || o.episode_tag !== latestEpisodeTag)
+          // All posts in chronological order — episode posts dispersed in feed, not pinned
+          const filteredPosts = !selectedTopic || selectedTopic === "__all__"
+            ? topLevel
             : selectedTopic === "PvA"
-              ? []
+              ? topLevel.filter(o => !!o.episode_tag)
               : topLevel.filter(o => (o.tags || []).includes(selectedTopic));
-
-          // Only pin the latest episode at top; older episodes shown in PvA filter
-          const filteredEpisodes = (!selectedTopic || selectedTopic === "PvA" || selectedTopic === "__all__")
-            ? [...episodeMap.entries()].filter(([tag]) => selectedTopic === "PvA" || tag === latestEpisodeTag)
-            : [...episodeMap.entries()].filter(([, { obs }]) =>
-                obs.some(o => (o.tags || []).includes(selectedTopic))
-              );
 
           const renderCard = (obs: Observation) => {
             let firstBullet = "";
@@ -803,48 +768,17 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                   ))}
               </div>
 
-              {/* __all__: unified chronological feed */}
-              {selectedTopic === "__all__" && (
-                allFeed.length > 0
-                  ? <div style={{ paddingTop: 4 }}>{allFeed.map(renderPost)}</div>
-                  : null
-              )}
-
-              {/* Default + PvA filter: PvA section at top */}
-              {selectedTopic !== "__all__" && (selectedTopic === null || selectedTopic === "PvA") && filteredEpisodes.length > 0 && (
-                <div>
-                  {selectedTopic === null && (
-                    <div style={{ padding: "4px 4px 12px" }}>
-                      <div style={{ fontSize: 16, fontWeight: 800, color: "#FFF" }}>Takes from this week's <a href="https://podcasts.apple.com/us/podcast/people-vs-algorithms/id1642958293" target="_blank" rel="noopener noreferrer" style={{ color: "#FFF", textDecoration: "underline", textDecorationColor: "rgba(255,255,255,0.5)" }}>PvA episode</a></div>
-                    </div>
-                  )}
-                  {filteredEpisodes.map(([tag, { obs }]) =>
-                    obs.map(o => <div key={`${tag}-${o.id}`}>{renderPost(o)}</div>)
-                  )}
-                </div>
-              )}
-
-              {/* Default + topic filters: user posts */}
-              {selectedTopic !== "__all__" && selectedTopic !== "PvA" && filteredPosts.length > 0 && (
-                <div>
-                  {!selectedTopic && filteredEpisodes.length > 0 && (
-                    <div style={{ fontSize: 16, fontWeight: 800, color: "#FFF", padding: "14px 4px 12px" }}>Recent</div>
-                  )}
-                  {filteredPosts.map(renderPost)}
-                </div>
-              )}
-
-              {/* Empty states */}
-              {selectedTopic === "PvA" && filteredEpisodes.length === 0 && (
-                <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
-                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No PvA episodes yet.</p>
-                </div>
-              )}
-              {selectedTopic && selectedTopic !== "__all__" && selectedTopic !== "PvA" && filteredPosts.length === 0 && filteredEpisodes.length === 0 && (
-                <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
-                  <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>No hot takes in {selectedTopic} yet.</p>
-                </div>
-              )}
+              {/* Unified chronological feed — episode posts dispersed in order */}
+              {filteredPosts.length > 0
+                ? <div style={{ paddingTop: 4 }}>{filteredPosts.map(renderPost)}</div>
+                : selectedTopic && (
+                  <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
+                    <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>
+                      {selectedTopic === "PvA" ? "No PvA episodes yet." : `No takes tagged "${selectedTopic}" yet.`}
+                    </p>
+                  </div>
+                )
+              }
             </>
           );
         })()}
