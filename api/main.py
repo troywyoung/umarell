@@ -834,3 +834,39 @@ async def unpin_episodes(admin_key: str, db: AsyncSession = Depends(get_db)):
 
     await db.commit()
     return {"unpinned": len(observations)}
+
+
+@app.post("/admin/restore-episodes")
+async def restore_episodes(admin_key: str, db: AsyncSession = Depends(get_db)):
+    """Restore episode_tag/episode_title on the two known episode batches identified by creation timestamp."""
+    if admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    from sqlalchemy import func
+
+    # April 1 batch — 7 posts at 15:21 UTC
+    result1 = await db.execute(
+        select(Observation).where(
+            Observation.user_id.is_(None),
+            func.date_trunc('minute', Observation.created_at) == '2026-04-01 15:21:00'
+        )
+    )
+    batch1 = list(result1.scalars().all())
+    for obs in batch1:
+        obs.episode_tag = "pva-2026-04-01"
+        obs.episode_title = "PvA April 1"
+
+    # April 2 batch — 10 posts at 17:30 UTC
+    result2 = await db.execute(
+        select(Observation).where(
+            Observation.user_id.is_(None),
+            func.date_trunc('minute', Observation.created_at) == '2026-04-02 17:30:00'
+        )
+    )
+    batch2 = list(result2.scalars().all())
+    for obs in batch2:
+        obs.episode_tag = "pva-2026-04-02"
+        obs.episode_title = "PvA April 3"
+
+    await db.commit()
+    return {"restored_apr1": len(batch1), "restored_apr3": len(batch2)}
