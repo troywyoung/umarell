@@ -595,32 +595,30 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 key={obs.id}
                 onClick={() => onSelect(obs)}
                 style={{
-                  borderRadius: 10,
+                  borderRadius: 10, position: "relative",
                   background: obs.episode_tag ? "#F5F0E8" : "#FFF",
                   border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", overflow: "hidden",
                 }}
               >
-                {/* Header row: author label left, score + X right */}
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", padding: "8px 10px 0 12px" }}>
-                  <span style={obs.episode_tag
-                    ? { fontSize: 8, fontWeight: 700, color: "#FF00AE", letterSpacing: 0.8, textTransform: "uppercase" as const, lineHeight: 1 }
-                    : { fontSize: 9, fontWeight: 600, color: "#999", letterSpacing: -0.2, lineHeight: 1 }
-                  }>
-                    {obs.episode_tag ? (obs.episode_title || "PvA") : (obs.user_name || "")}
-                  </span>
-                  <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                    <ScoreBadge value={obs.score} size="sm" dark />
-                    {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin || getTokenIsAdmin()) && (
-                      <button
-                        onClick={(e) => { e.stopPropagation(); if (confirm("Delete this hot take?")) onDelete(obs.id); }}
-                        style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 16, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
-                      >&times;</button>
-                    )}
-                  </div>
+                {obs.episode_tag && (
+                  <p style={{ fontSize: 8, fontWeight: 700, color: "#FF00AE", margin: 0, padding: "7px 12px 0", letterSpacing: 0.8, textTransform: "uppercase", lineHeight: 1 }}>{obs.episode_title || "PvA"}</p>
+                )}
+                {obs.user_name && !obs.episode_tag && (
+                  <p style={{ fontSize: 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
+                )}
+                {/* Top-right: score + delete — always pinned to corner */}
+                <div style={{ position: "absolute", top: 10, right: 10, display: "flex", alignItems: "center", gap: 6, zIndex: 1 }}>
+                  <ScoreBadge value={obs.score} size="sm" dark />
+                  {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin || getTokenIsAdmin()) && (
+                    <button
+                      onClick={(e) => { e.stopPropagation(); if (confirm("Delete this hot take?")) onDelete(obs.id); }}
+                      style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 16, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
+                    >&times;</button>
+                  )}
                 </div>
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: "4px 12px 6px 12px" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 64 }}>
                   {obs.image_data && (
                     <img
                       src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
