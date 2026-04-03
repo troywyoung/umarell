@@ -995,7 +995,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
               background: "#FFF", borderRadius: 12, padding: "10px 14px",
               boxShadow: "0 1px 4px rgba(0,0,0,0.04)", marginBottom: isXUrl ? 6 : 12,
               display: "flex", alignItems: "center", gap: 8,
-              border: isXUrl ? "1.5px solid #FF8800" : url.trim() ? "1.5px solid #FF00AE" : "1.5px solid transparent",
+              border: isXUrl ? "1.5px solid #FFD700" : url.trim() ? "1.5px solid #FF00AE" : "1.5px solid transparent",
               transition: "border-color 0.2s",
             }}>
               <span style={{ fontSize: 16, flexShrink: 0, opacity: 0.5 }}>{"\uD83D\uDD17"}</span>
@@ -1015,7 +1015,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
               )}
             </div>
             {isXUrl && (
-              <p style={{ fontSize: 12, color: "#FF8800", margin: "0 0 12px 4px", lineHeight: 1.4 }}>
+              <p style={{ fontSize: 12, color: "#FFD700", margin: "0 0 12px 4px", lineHeight: 1.4 }}>
                 X posts can't be fetched automatically — paste the tweet text in the field above instead.
               </p>
             )}
