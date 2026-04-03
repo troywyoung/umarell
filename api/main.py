@@ -815,3 +815,22 @@ async def backfill_categories(
             print(f"[cat-backfill] failed {obs.id[:8]}: {e}")
 
     return {"total": len(observations), "updated": updated, "errors": errors}
+
+
+@app.post("/admin/unpin-episodes")
+async def unpin_episodes(admin_key: str, db: AsyncSession = Depends(get_db)):
+    """Clear episode_tag and episode_title from all observations so they flow into the regular feed."""
+    if admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    result = await db.execute(
+        select(Observation).where(Observation.episode_tag.isnot(None))
+    )
+    observations = list(result.scalars().all())
+
+    for obs in observations:
+        obs.episode_tag = None
+        obs.episode_title = None
+
+    await db.commit()
+    return {"unpinned": len(observations)}
