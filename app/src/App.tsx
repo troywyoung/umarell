@@ -462,42 +462,6 @@ function timeAgo(iso: string) {
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric", ...(!sameYear && { year: "numeric" }) });
 }
 
-// ─── Category mapping ────────────────────────────────────────────────────
-
-const CATEGORY_PRIORITY: Record<string, number> = {
-  "Politics":        0,
-  "Business":        1,
-  "Media":           2,
-  "AI & Tech":       3,
-  "Health & Science":4,
-  "Entertainment":   5,
-  "Sports":          6,
-  "History":         7,
-  "Other":           99,
-};
-
-function getCategory(tags: string[] | null | undefined, thesis?: string): string {
-  // Use tags if present, otherwise fall back to thesis text
-  const words = (tags && tags.length > 0 ? tags : [thesis || ""])
-    .join(" ").toLowerCase();
-  if (!words.trim()) return "Other";
-
-  // Pad with spaces so short terms like "ai" don't match inside "failings", "paid", etc.
-  const padded = ` ${words} `;
-  const has = (terms: string[]) => terms.some(term =>
-    term.length <= 4 ? padded.includes(` ${term} `) : padded.includes(term)
-  );
-
-  if (has(["ai", "llm", "machine learning", "chatgpt", "generative ai", "neural network", "deep learning", "nlp", "robotics", "large language model", "automation", "algorithm"])) return "AI & Tech";
-  if (has(["sport", "golf", "hockey", "basketball", "football", "soccer", "baseball", "tennis", "athlete", "nfl", "nba", "nhl", "mlb", "olympics", "cricket", "rugby", "esport"])) return "Sports";
-  if (has(["media", "journalism", "journalist", "newsletter", "publishing", "broadcast", "podcast", "editorial", "substack", "puck", "creator economy", "news industry"])) return "Media";
-  if (has(["politic", "government", "policy", "election", "democracy", "congress", "senate", "president", "republican", "democrat", "geopolit", "foreign policy", "legislation", "white house", "donald trump", "cpac", "superpow"])) return "Politics";
-  if (has(["entertainment", "film", "movie", "music", "celebrity", "television", "streaming", "hollywood", "pop culture", "fashion", "gaming", "video game", "director", "actor", "actress", "cinema", "concert", "theatre", "kubrick", "picasso", "artist", "artwork", "painter", "sculptor", "eyes wide shut"])) return "Entertainment";
-  if (has(["history", "historical", "civilization", "ancient", "heritage", "archaeology", "empire", "revolution", "world war", "cold war"])) return "History";
-  if (has(["health", "medicine", "medical", "aging", "longevity", "wellness", "mental health", "biology", "ecology", "psychology", "climate", "environment", "food science", "culinary", "chemistry", "physics", "thermodynamics", "animal", "coastal", "neuroscience", "nutrition", "hormone", "ozempic", "semaglutide", "diet", "fitness", "nicotine", "tobacco", "drug", "addiction", "sleep", "vaping", "zyn", "stimulant", "relationship", "polyamory", "monogamy", "sexuality", "dating", "societal"])) return "Health & Science";
-  if (has(["business", "startup", "economic", "finance", "trade", "tariff", "inflation", "retail", "subscription", "advertising", "e-commerce", "investment", "revenue", "consumer", "industry", "strategy", "entrepreneur", "cryptocurrency", "crypto", "token", "xrp", "bitcoin", "compensation", "executive pay", "salary", "merger", "acquisition", "valuation"])) return "Business";
-  return "Other";
-}
 
 // ─── About ────────────────────────────────────────────────────────────────
 
@@ -597,10 +561,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             arr.push(c);
             challengeMap.set(c.parent_id!, arr);
           });
-
-          // Assign category to every top-level post (including episode posts)
-          const getObs = (o: Observation) =>
-            o.category || getCategory(o.tags, o.thesis || o.raw_input);
 
           // Build topic pills from raw tags — top 8 by frequency
           const tagCounts = new Map<string, number>();
