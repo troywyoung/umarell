@@ -674,7 +674,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 onClick={() => onSelect(obs)}
                 style={{
                   borderRadius: 10,
-                  background: obs.episode_tag ? "#FFE4F0" : "#FFF",
+                  background: obs.episode_tag ? "#F5F0E8" : "#FFF",
                   border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", overflow: "hidden",
@@ -862,7 +862,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 <div>
                   {selectedTopic === null && (
                     <div style={{ padding: "4px 4px 12px" }}>
-                      <div style={{ fontSize: 16, fontWeight: 800, color: "#FFF" }}>{filteredEpisodes[0]?.[1]?.title || "Takes from this week's PvA episode"}</div>
+                      <div style={{ fontSize: 16, fontWeight: 800, color: "#FFF" }}>Takes from this week's PvA episode</div>
                     </div>
                   )}
                   {filteredEpisodes.map(([tag, { obs }]) =>
