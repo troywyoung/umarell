@@ -842,13 +842,14 @@ async def restore_episodes(admin_key: str, db: AsyncSession = Depends(get_db)):
     if admin_key != settings.google_api_key:
         raise HTTPException(403, "Invalid admin key")
 
-    from sqlalchemy import func
+    from datetime import datetime, timezone
 
     # April 1 batch — 7 posts at 15:21 UTC
     result1 = await db.execute(
         select(Observation).where(
             Observation.user_id.is_(None),
-            func.date_trunc('minute', Observation.created_at) == '2026-04-01 15:21:00'
+            Observation.created_at >= datetime(2026, 4, 1, 15, 21, 0, tzinfo=timezone.utc),
+            Observation.created_at < datetime(2026, 4, 1, 15, 22, 0, tzinfo=timezone.utc),
         )
     )
     batch1 = list(result1.scalars().all())
@@ -860,7 +861,8 @@ async def restore_episodes(admin_key: str, db: AsyncSession = Depends(get_db)):
     result2 = await db.execute(
         select(Observation).where(
             Observation.user_id.is_(None),
-            func.date_trunc('minute', Observation.created_at) == '2026-04-02 17:30:00'
+            Observation.created_at >= datetime(2026, 4, 2, 17, 30, 0, tzinfo=timezone.utc),
+            Observation.created_at < datetime(2026, 4, 2, 17, 31, 0, tzinfo=timezone.utc),
         )
     )
     batch2 = list(result2.scalars().all())
