@@ -602,19 +602,17 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           const getObs = (o: Observation) =>
             o.category || getCategory(o.tags, o.thesis || o.raw_input);
 
-          // Build topic pills from available content
-          const topicCounts = new Map<string, number>();
+          // Build topic pills from raw tags — top 8 by frequency
+          const tagCounts = new Map<string, number>();
           topLevel.forEach(o => {
-            const cat = getObs(o);
-            topicCounts.set(cat, (topicCounts.get(cat) || 0) + 1);
+            (o.tags || []).forEach((tag: string) => {
+              if (tag && tag.trim()) tagCounts.set(tag.trim(), (tagCounts.get(tag.trim()) || 0) + 1);
+            });
           });
-          const availableTopics = [...topicCounts.entries()]
-            .sort((a, b) => {
-              const pa = CATEGORY_PRIORITY[a[0]] ?? 50;
-              const pb = CATEGORY_PRIORITY[b[0]] ?? 50;
-              return pa - pb;
-            })
-            .map(([cat]) => cat);
+          const availableTopics = [...tagCounts.entries()]
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 8)
+            .map(([tag]) => tag);
 
           // Separate episode posts — find latest episode to pin, older flow into feed
           const episodeMap = new Map<string, { title: string; obs: Observation[] }>();
@@ -649,13 +647,13 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
             ? topLevel.filter(o => !o.episode_tag || o.episode_tag !== latestEpisodeTag)
             : selectedTopic === "PvA"
               ? []
-              : topLevel.filter(o => getObs(o) === selectedTopic);
+              : topLevel.filter(o => (o.tags || []).includes(selectedTopic));
 
           // Only pin the latest episode at top; older episodes shown in PvA filter
           const filteredEpisodes = (!selectedTopic || selectedTopic === "PvA" || selectedTopic === "__all__")
             ? [...episodeMap.entries()].filter(([tag]) => selectedTopic === "PvA" || tag === latestEpisodeTag)
             : [...episodeMap.entries()].filter(([, { obs }]) =>
-                obs.some(o => getObs(o) === selectedTopic)
+                obs.some(o => (o.tags || []).includes(selectedTopic))
               );
 
           const renderCard = (obs: Observation) => {
@@ -783,8 +781,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
           return (
             <>
               {/* Topic pills */}
-              {(availableTopics.length > 0 || hasEpisodes) && (
-                <div
+              <div
                   className="topic-pills"
                   style={{
                     display: "flex", gap: 8, overflowX: "auto",
@@ -810,24 +807,22 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     All
                   </button>
 
-                  {/* PvA pill — only if there are episode posts */}
-                  {hasEpisodes && (
-                    <button
-                      onClick={() => setSelectedTopic(selectedTopic === "PvA" ? null : "PvA")}
-                      style={{
-                        flexShrink: 0,
-                        background: selectedTopic === "PvA" ? "#FF00AE" : "rgba(255,0,174,0.15)",
-                        border: selectedTopic === "PvA" ? "1.5px solid #FF00AE" : "1.5px solid rgba(255,0,174,0.4)",
-                        borderRadius: 6, padding: "4px 11px",
-                        fontSize: 10, fontWeight: 700,
-                        color: selectedTopic === "PvA" ? "#FFF" : "#FF00AE",
-                        cursor: "pointer", WebkitTapHighlightColor: "transparent",
-                        fontFamily: "inherit",
-                      }}
-                    >
-                      PvA
-                    </button>
-                  )}
+                  {/* PvA pill — always visible */}
+                  <button
+                    onClick={() => setSelectedTopic(selectedTopic === "PvA" ? null : "PvA")}
+                    style={{
+                      flexShrink: 0,
+                      background: selectedTopic === "PvA" ? "#FF00AE" : "rgba(255,0,174,0.15)",
+                      border: selectedTopic === "PvA" ? "1.5px solid #FF00AE" : "1.5px solid rgba(255,0,174,0.4)",
+                      borderRadius: 6, padding: "4px 11px",
+                      fontSize: 10, fontWeight: 700,
+                      color: selectedTopic === "PvA" ? "#FFF" : "#FF00AE",
+                      cursor: "pointer", WebkitTapHighlightColor: "transparent",
+                      fontFamily: "inherit",
+                    }}
+                  >
+                    PvA
+                  </button>
                   {availableTopics.map(topic => (
                     <button
                       key={topic}
@@ -846,8 +841,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                       {topic}
                     </button>
                   ))}
-                </div>
-              )}
+              </div>
 
               {/* __all__: unified chronological feed */}
               {selectedTopic === "__all__" && (
@@ -903,7 +897,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         style={{
           position: "fixed", bottom: 36, left: "50%", transform: "translateX(-50%)",
           width: 68, height: 68, borderRadius: "50%",
-          background: "#FF00AE", border: "none", outline: "2px solid rgba(255,0,174,0.6)", outlineOffset: 3, cursor: "pointer",
+          background: "#FF00AE", border: "none", outline: "4px solid rgba(255,0,174,0.5)", outlineOffset: 0, cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
           boxShadow: "0 0 12px rgba(229,57,53,0.4)", zIndex: 2,
           WebkitTapHighlightColor: "transparent",
@@ -1027,6 +1021,9 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
     try {
       if (imageMeta) {
         await onSubmitImage(imageMeta.b64, imageMeta.mediaType, text.trim() || undefined);
+      } else if (url.trim() && text.trim()) {
+        // Both URL and text — combine so the AI gets full context
+        await onSubmit(`URL: ${url.trim()}\n\n${text.trim()}`);
       } else if (url.trim()) {
         await onSubmit(url.trim());
       } else if (text.trim()) {
@@ -1096,29 +1093,41 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
       </div>
 
       {/* URL input */}
-      <div style={{
-        background: "#FFF", borderRadius: 12, padding: "10px 14px",
-        boxShadow: "0 1px 4px rgba(0,0,0,0.04)", marginBottom: 12,
-        display: "flex", alignItems: "center", gap: 8,
-        border: url.trim() ? "1.5px solid #FF00AE" : "1.5px solid transparent",
-        transition: "border-color 0.2s",
-      }}>
-        <span style={{ fontSize: 16, flexShrink: 0, opacity: 0.5 }}>{"\uD83D\uDD17"}</span>
-        <input
-          type="url"
-          value={url}
-          onChange={(e) => setUrl(e.target.value)}
-          placeholder="Submit a link instead"
-          style={{
-            flex: 1, border: "none", outline: "none",
-            fontSize: 16, color: "#1A1A1A", fontFamily: "inherit",
-            background: "transparent",
-          }}
-        />
-        {url.trim() && (
-          <button onClick={() => setUrl("")} style={{ background: "none", border: "none", color: "#CCC", fontSize: 16, cursor: "pointer", padding: 0 }}>&times;</button>
-        )}
-      </div>
+      {(() => {
+        const isXUrl = /^https?:\/\/(www\.)?(x\.com|twitter\.com)/.test(url.trim());
+        return (
+          <>
+            <div style={{
+              background: "#FFF", borderRadius: 12, padding: "10px 14px",
+              boxShadow: "0 1px 4px rgba(0,0,0,0.04)", marginBottom: isXUrl ? 6 : 12,
+              display: "flex", alignItems: "center", gap: 8,
+              border: isXUrl ? "1.5px solid #FF8800" : url.trim() ? "1.5px solid #FF00AE" : "1.5px solid transparent",
+              transition: "border-color 0.2s",
+            }}>
+              <span style={{ fontSize: 16, flexShrink: 0, opacity: 0.5 }}>{"\uD83D\uDD17"}</span>
+              <input
+                type="url"
+                value={url}
+                onChange={(e) => setUrl(e.target.value)}
+                placeholder="Add a link (optional)"
+                style={{
+                  flex: 1, border: "none", outline: "none",
+                  fontSize: 16, color: "#1A1A1A", fontFamily: "inherit",
+                  background: "transparent",
+                }}
+              />
+              {url.trim() && (
+                <button onClick={() => setUrl("")} style={{ background: "none", border: "none", color: "#CCC", fontSize: 16, cursor: "pointer", padding: 0 }}>&times;</button>
+              )}
+            </div>
+            {isXUrl && (
+              <p style={{ fontSize: 12, color: "#FF8800", margin: "0 0 12px 4px", lineHeight: 1.4 }}>
+                X posts can't be fetched automatically — paste the tweet text in the field above instead.
+              </p>
+            )}
+          </>
+        );
+      })()}
 
       {/* Image preview */}
       {imagePreview && (
