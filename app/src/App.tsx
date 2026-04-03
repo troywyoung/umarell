@@ -903,7 +903,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
         style={{
           position: "fixed", bottom: 36, left: "50%", transform: "translateX(-50%)",
           width: 68, height: 68, borderRadius: "50%",
-          background: "#FF00AE", border: "none", outline: "2px solid rgba(255,0,174,0.6)", outlineOffset: 4, cursor: "pointer",
+          background: "#FF00AE", border: "none", outline: "2px solid rgba(255,0,174,0.6)", outlineOffset: 3, cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
           boxShadow: "0 0 12px rgba(229,57,53,0.4)", zIndex: 2,
           WebkitTapHighlightColor: "transparent",
