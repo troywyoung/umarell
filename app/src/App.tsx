@@ -861,7 +861,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 <div>
                   {selectedTopic === null && (
                     <div style={{ padding: "4px 4px 12px" }}>
-                      <div style={{ fontSize: 16, fontWeight: 800, color: "#FFF" }}>Takes from this week's PvA episode</div>
+                      <div style={{ fontSize: 16, fontWeight: 800, color: "#FFF" }}>Takes from this week's <a href="https://podcasts.apple.com/us/podcast/people-vs-algorithms/id1642958293" target="_blank" rel="noopener noreferrer" style={{ color: "#FFF", textDecoration: "underline", textDecorationColor: "rgba(255,255,255,0.5)" }}>PvA episode</a></div>
                     </div>
                   )}
                   {filteredEpisodes.map(([tag, { obs }]) =>
