@@ -619,7 +619,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                     style={{ position: "absolute", top: 7, right: 10, zIndex: 1, background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 16, padding: 0, lineHeight: 1 }}
                   >&times;</button>
                 )}
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 64 }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 84 }}>
                   {obs.image_data && (
                     <img
                       src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
