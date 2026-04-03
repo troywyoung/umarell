@@ -516,15 +516,15 @@ function AboutView({ onBack }: { onBack: () => void }) {
       </div>
       <div style={{ padding: "28px 24px 0" }}>
         <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>How it works</p>
-        {bullet("Drop any claim — a URL, a hot take, a screenshot, a half-formed idea. The AI builds the strongest possible case for it: sharpest thesis, best evidence, most defensible form.")}
-        {bullet("Every hot take gets a conviction score from 0–100. How well does the argument actually hold up? Higher isn't always better — a 60 that's genuinely defensible beats an 80 that's overconfident.")}
-        {bullet("Once sharpened, you can request a counterpoint — the strongest argument against the original claim. Or challenge someone else's. The feed is a live debate board.")}
-        {bullet("Hit 'PvA Take' on any hot take to get a reaction in the voice of People vs Algorithms — Troy Young, Brian Morrissey, and Alex Schleifer's podcast on media, tech, and culture. Opinionated. Connected to bigger patterns. Not neutral.")}
-        {bullet("Each week, the show's own hot takes drop into your feed under 'This Week on PvA' — arguments from the latest episode, ready to read, challenge, or riff on.")}
+        {bullet("Hit 'what's yours?' and drop anything — a URL, a hot take, a half-formed idea. The AI steelmans it: sharpest thesis, best evidence, most defensible form.")}
+        {bullet("Every take gets a conviction score from 0–100. Verifiably true → near 100. Demonstrably false → near 0. Opinions land in the middle based on how well they hold up.")}
+        {bullet("Disagree? Challenge it. Submit your counter-argument and the AI steelmans that too. The feed becomes a live debate board.")}
+        {bullet("Each week, takes from the latest People vs Algorithms episode drop into the feed — ready to read, challenge, or riff on.")}
+        {bullet("Hit 'PvA Take' on any post to get a reaction in the voice of the show. Opinionated, connected to bigger patterns, not neutral.")}
         <div style={{ marginTop: 32, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
           <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>Why it's interesting</p>
-          {bullet("Most people argue against the weakest version of ideas they disagree with. This forces the opposite — understand the best case before you dismiss it.")}
-          {bullet("The score makes you honest. If you're submitting takes just to dunk on them, the score will call it out.")}
+          {bullet("Most people argue against the weakest version of ideas they disagree with. This forces the opposite — understand the best case before you push back.")}
+          {bullet("The conviction score keeps you honest. A bold take with weak evidence gets called out. A modest take with strong evidence gets its due.")}
           {bullet("It's a thinking tool, not a content feed. The goal is to make you a sharper reader of whatever you're already paying attention to.")}
         </div>
       </div>
