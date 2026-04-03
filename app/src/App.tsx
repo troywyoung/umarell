@@ -729,7 +729,7 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                       fontFamily: "inherit",
                     }}
                   >
-                    All
+                    Recent
                   </button>
 
                   {/* PvA pill — always visible */}
