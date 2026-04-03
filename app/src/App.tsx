@@ -608,16 +608,17 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
                 {obs.user_name && !obs.episode_tag && (
                   <p style={{ fontSize: 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
-                {/* Top-right: score + delete — always pinned to corner */}
-                <div style={{ position: "absolute", top: 10, right: 10, display: "flex", alignItems: "center", gap: 6, zIndex: 1 }}>
+                {/* Score — top right, left of X */}
+                <div style={{ position: "absolute", top: 10, right: 36, zIndex: 1 }}>
                   <ScoreBadge value={obs.score} size="sm" dark />
-                  {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin || getTokenIsAdmin()) && (
-                    <button
-                      onClick={(e) => { e.stopPropagation(); if (confirm("Delete this hot take?")) onDelete(obs.id); }}
-                      style={{ background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 16, padding: "0 0 0 2px", lineHeight: 1, flexShrink: 0 }}
-                    >&times;</button>
-                  )}
                 </div>
+                {/* X — far right corner, aligned with author label */}
+                {(!obs.user_id || obs.user_id === authUser.id || authUser.is_admin || getTokenIsAdmin()) && (
+                  <button
+                    onClick={(e) => { e.stopPropagation(); if (confirm("Delete this hot take?")) onDelete(obs.id); }}
+                    style={{ position: "absolute", top: 7, right: 10, zIndex: 1, background: "none", border: "none", cursor: "pointer", color: "#CCC", fontSize: 16, padding: 0, lineHeight: 1 }}
+                  >&times;</button>
+                )}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 64 }}>
                   {obs.image_data && (
                     <img
