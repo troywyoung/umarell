@@ -545,7 +545,6 @@ function HomeView({ observations, loading, onCapture, onSelect, onDelete, authUs
   onAbout: () => void;
 }) {
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
-  const isMobile = useIsMobile();
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
