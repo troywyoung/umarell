@@ -1168,8 +1168,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   const [counterpointError, setCounterpointError] = useState(false);
   const [pvaLoading, setPvaLoading] = useState(false);
   const [pvaError, setPvaError] = useState(false);
-  const [showCounterpoint, setShowCounterpoint] = useState(false);
-  const [showPva, setShowPva] = useState(false);
+  const [activeTab, setActiveTab] = useState<"hottake" | "coldshower" | "pva">("hottake");
   const [flashCounterpoint, setFlashCounterpoint] = useState(false);
   const [flashPva, setFlashPva] = useState(false);
   const steelmanRef = useRef<HTMLDivElement>(null);
@@ -1192,8 +1191,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
     setCounterpointError(false);
     setPvaLoading(false);
     setPvaError(false);
-    setShowCounterpoint(false);
-    setShowPva(false);
+    setActiveTab("hottake");
     // Fetch challenges
     fetch(`${API}/observations/${initialObs.id}/challenges`, { headers: authHeaders() })
       .then(r => r.json()).then(data => { if (Array.isArray(data)) setChallenges(data); }).catch(() => {});
@@ -1231,7 +1229,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   };
 
   const handleCounterpoint = async () => {
-    setShowCounterpoint(true);
     if (obs.stress_test && "strength" in obs.stress_test) {
       scrollToAndFlash(counterpointRef, setFlashCounterpoint);
       return;
@@ -1251,7 +1248,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   };
 
   const handlePvaTake = async () => {
-    setShowPva(true);
     if (obs.pva_take) {
       scrollToAndFlash(pvaRef, setFlashPva);
       return;
@@ -1511,10 +1507,34 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </div>
         )}
 
-        {/* No action buttons here — cold shower / pva take CTAs appear after content */}
+        {/* Tab bar: Hot Take | Cold Shower | PvA */}
+        {obs.status === "complete" && (
+          <div style={{ display: "flex", gap: 0, marginBottom: 20, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+            {(["hottake", "coldshower", "pva"] as const).map((tab) => {
+              const labels = { hottake: "Hot Take", coldshower: "Cold Shower", pva: "PvA" };
+              const active = activeTab === tab;
+              return (
+                <button key={tab} onClick={() => {
+                  setActiveTab(tab);
+                  if (tab === "coldshower") handleCounterpoint();
+                  if (tab === "pva") handlePvaTake();
+                }}
+                  style={{
+                    flex: 1, padding: "10px 0", background: "none", border: "none",
+                    borderBottom: active ? "2px solid #FF00AE" : "2px solid transparent",
+                    color: active ? "#FFF" : "rgba(255,255,255,0.4)",
+                    fontSize: 13, fontWeight: 700, fontFamily: "inherit",
+                    cursor: "pointer", WebkitTapHighlightColor: "transparent",
+                    transition: "color 0.2s, border-color 0.2s",
+                  }}
+                >{labels[tab]}</button>
+              );
+            })}
+          </div>
+        )}
 
-        {/* Steelman — always visible when complete */}
-        {obs.status === "complete" && (steelBottomLine || steelHardFacts.length > 0 || steelBullets.length > 0) && (
+        {/* Hot Take tab content */}
+        {obs.status === "complete" && activeTab === "hottake" && (steelBottomLine || steelHardFacts.length > 0 || steelBullets.length > 0) && (
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
@@ -1535,7 +1555,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               </>
             )}
 
-            {/* Hard Facts */}
             {steelHardFacts.length > 0 && (
               <div style={{ marginBottom: 16 }}>
                 <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,200,50,0.7)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>Hard Facts</p>
@@ -1548,7 +1567,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               </div>
             )}
 
-            {/* Sources — inline comma-separated */}
             {obs.sources && obs.sources.length > 0 && (
               <p style={{ marginTop: 20, paddingTop: 12, borderTop: "1px solid rgba(255,255,255,0.08)", fontSize: 11, color: "rgba(255,255,255,0.35)", lineHeight: 1.6, margin: "20px 0 0", wordBreak: "break-word", overflowWrap: "anywhere" }}>
                 <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", marginRight: 6 }}>Sources</span>
@@ -1567,97 +1585,27 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </div>
         )}
 
-        {/* Action CTAs — after hot take content */}
-        {obs.status === "complete" && (
-          <div style={{ margin: "24px 0 8px", display: "flex", flexDirection: "column", gap: 8 }}>
-            {/* Cold Shower */}
-            <button
-              onClick={handleCounterpoint}
-              style={{
-                width: "100%", padding: "15px 20px",
-                borderRadius: 12,
-                border: "1.5px solid rgba(255,255,255,0.13)",
-                background: "rgba(255,255,255,0.04)",
-                cursor: "pointer", fontFamily: "inherit",
-                display: "flex", alignItems: "center", justifyContent: "space-between",
-                WebkitTapHighlightColor: "transparent",
-                transition: "background 0.15s, border-color 0.15s",
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
-              onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
-            >
-              <div style={{ textAlign: "left" }}>
-                <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>
-                  {counterpointLoading ? "Loading\u2026" : "Cold Shower"}
-                </p>
-                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>See the strongest case against this take</p>
-              </div>
-              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\u2744\uFE0F"}</span>
-            </button>
-            {/* PvA Take */}
-            <button
-              onClick={handlePvaTake}
-              style={{
-                width: "100%", padding: "15px 20px",
-                borderRadius: 12,
-                border: "1.5px solid rgba(255,255,255,0.13)",
-                background: "rgba(255,255,255,0.04)",
-                cursor: "pointer", fontFamily: "inherit",
-                display: "flex", alignItems: "center", justifyContent: "space-between",
-                WebkitTapHighlightColor: "transparent",
-                transition: "background 0.15s, border-color 0.15s",
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
-              onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
-            >
-              <div style={{ textAlign: "left" }}>
-                <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>
-                  {pvaLoading ? "Loading\u2026" : "PvA Take"}
-                </p>
-                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>What would the PvA hosts say?</p>
-              </div>
-              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83C\uDFA4"}</span>
-            </button>
-            {/* Disagree / Challenge */}
-            {!obs.parent_id && (
-              <button
-                onClick={() => onChallenge(obs)}
-                style={{
-                  width: "100%", padding: "15px 20px",
-                  borderRadius: 12,
-                  border: "1.5px solid rgba(255,255,255,0.13)",
-                  background: "rgba(255,255,255,0.04)",
-                  cursor: "pointer", fontFamily: "inherit",
-                  display: "flex", alignItems: "center", justifyContent: "space-between",
-                  WebkitTapHighlightColor: "transparent",
-                  transition: "background 0.15s, border-color 0.15s",
-                }}
-                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
-              >
-                <div style={{ textAlign: "left" }}>
-                  <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>Disagree?</p>
-                  <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>Submit your counter-argument</p>
-                </div>
-                <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83E\uDD4A"}</span>
-              </button>
-            )}
-          </div>
-        )}
-
-        {/* Counterpoint section */}
-        {showCounterpoint && (() => {
-          if (counterpointLoading) return null;
-          if (counterpointError) return (
-            <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", marginTop: 16, border: "1px solid rgba(255,0,174,0.3)" }}>
-              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>Counterpoint failed. Tap the button to try again.</p>
+        {/* Cold Shower tab content */}
+        {obs.status === "complete" && activeTab === "coldshower" && (() => {
+          if (counterpointLoading) return (
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 0", gap: 8 }}>
+              <ProcessingDots color="#FF00AE" /><span style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>Generating cold shower…</span>
             </div>
           );
-          if (!counterpoint) return null;
+          if (counterpointError) return (
+            <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,0,174,0.3)" }}>
+              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>Cold shower failed. Try again.</p>
+            </div>
+          );
+          if (!counterpoint) return (
+            <div style={{ textAlign: "center", padding: "40px 0" }}>
+              <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", margin: 0 }}>Loading…</p>
+            </div>
+          );
           const strengthColors: Record<string, string> = { weak: "#4CAF50", moderate: "#FF9800", strong: "#F44336", devastating: "#9C27B0" };
           const cpHardFacts = Array.isArray(counterpoint.hard_facts) ? counterpoint.hard_facts : [];
           return (
-            <div ref={counterpointRef} style={{ marginTop: 16 }}>
+            <div ref={counterpointRef}>
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
                 <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
                   <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: 0, display: "flex", alignItems: "center", gap: 6 }}>{flashCounterpoint && <PulsingDot />} Cold Shower</p>
@@ -1701,27 +1649,35 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           );
         })()}
 
-        {/* PvA Take section */}
-        {showPva && (() => {
-          if (pvaLoading) return null;
+        {/* PvA Take tab content */}
+        {obs.status === "complete" && activeTab === "pva" && (() => {
+          if (pvaLoading) return (
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 0", gap: 8 }}>
+              <ProcessingDots color="#FF00AE" /><span style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>Generating PvA take…</span>
+            </div>
+          );
           if (pvaError) return (
-            <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", marginTop: 16, border: "1px solid rgba(255,0,174,0.3)" }}>
-              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>PvA take failed. Tap the button to try again.</p>
+            <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,0,174,0.3)" }}>
+              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>PvA take failed. Try again.</p>
             </div>
           );
           const take = obs.pva_take;
-          if (!take) return null;
+          if (!take) return (
+            <div style={{ textAlign: "center", padding: "40px 0" }}>
+              <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", margin: 0 }}>Loading…</p>
+            </div>
+          );
           const pvaBullets = Array.isArray(take.bullets) ? take.bullets : [];
           const pvaBottomLine = take.bottom_line || take.tldr || "";
           return (
-            <div ref={pvaRef} style={{ marginTop: 16 }}>
+            <div ref={pvaRef}>
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
                 <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}>{flashPva && <PulsingDot />} PvA Take</p>
                 <p style={{ fontSize: 15, color: "#FFF", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{pvaBottomLine}</p>
               </div>
               {pvaBullets.map((bullet, i) => (
                 <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                  <span style={{ color: "#FF00AE", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>•</span>
+                  <span style={{ color: "#FF00AE", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2022"}</span>
                   <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
                 </div>
               ))}
@@ -1733,6 +1689,33 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             </div>
           );
         })()}
+
+        {/* Disagree CTA — always visible at bottom */}
+        {obs.status === "complete" && !obs.parent_id && (
+          <div style={{ margin: "24px 0 8px" }}>
+            <button
+              onClick={() => onChallenge(obs)}
+              style={{
+                width: "100%", padding: "15px 20px",
+                borderRadius: 12,
+                border: "1.5px solid rgba(255,255,255,0.13)",
+                background: "rgba(255,255,255,0.04)",
+                cursor: "pointer", fontFamily: "inherit",
+                display: "flex", alignItems: "center", justifyContent: "space-between",
+                WebkitTapHighlightColor: "transparent",
+                transition: "background 0.15s, border-color 0.15s",
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
+            >
+              <div style={{ textAlign: "left" }}>
+                <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>Disagree?</p>
+                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>Submit your counter-argument</p>
+              </div>
+              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83E\uDD4A"}</span>
+            </button>
+          </div>
+        )}
 
 
         {/* Challenges from other users */}
