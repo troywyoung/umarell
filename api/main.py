@@ -15,6 +15,7 @@ from schemas import ObservationCreate, ObservationOut
 from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, ACTIVE_MODEL
 from config import settings
 from whatsapp import router as whatsapp_router
+from sms import router as sms_router
 
 
 # ─── Auth helpers ────────────────────────────────────────────────────────────
@@ -93,6 +94,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Steelman API", lifespan=lifespan)
 app.include_router(whatsapp_router)
+app.include_router(sms_router)
 
 app.add_middleware(
     CORSMiddleware,
