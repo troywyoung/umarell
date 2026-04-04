@@ -1,4 +1,5 @@
 import asyncio
+import os
 from contextlib import asynccontextmanager
 from datetime import datetime, timedelta, timezone
 from fastapi import FastAPI, HTTPException, Depends
@@ -258,7 +259,8 @@ async def auth_me(user: User = Depends(require_user)):
 
 @app.get("/health")
 async def health():
-    return {"status": "ok"}
+    maintenance = os.getenv("MAINTENANCE_MODE", "false").lower() == "true"
+    return {"status": "ok", "maintenance": maintenance}
 
 
 # ─── Observations ─────────────────────────────────────────────────────────────

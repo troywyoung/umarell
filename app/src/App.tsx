@@ -2339,6 +2339,11 @@ export default function App() {
   const [selectedObs, setSelectedObs] = useState<Observation | null>(null);
   const [outputKey, setOutputKey] = useState(0);
   const [challengingObs, setChallengingObs] = useState<Observation | null>(null);
+  const [maintenance, setMaintenance] = useState(false);
+
+  useEffect(() => {
+    fetch(`${API}/health`).then(r => r.json()).then(d => { if (d.maintenance) setMaintenance(true); }).catch(() => {});
+  }, []);
 
   useEffect(() => {
     if (!authUser) return;
@@ -2448,6 +2453,16 @@ export default function App() {
     setSelectedObs(obs);
     setOutputKey((k) => k + 1); // force OutputView remount with fresh state
   };
+
+  if (maintenance) {
+    return (
+      <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", alignItems: "center", justifyContent: "center", padding: 32 }}>
+        <p style={{ fontFamily: "'Besley', serif", fontSize: 22, fontWeight: 700, color: "#FFF", textAlign: "center", lineHeight: 1.4, letterSpacing: -0.5, margin: 0 }}>
+          hot takes is getting hotter.<br />come back later.
+        </p>
+      </div>
+    );
+  }
 
   if (view === "about") {
     return <AboutView onBack={() => setView("home")} />;
