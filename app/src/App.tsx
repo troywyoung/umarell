@@ -400,13 +400,13 @@ function getScoreColor(v: number): string {
   return "#00E676";
 }
 
-function getScoreTier(v: number): { label: string; emoji: string } {
-  if (v <= 20) return { label: "Touch Grass", emoji: "\uD83D\uDC80" };
-  if (v <= 40) return { label: "Big Yikes", emoji: "\uD83E\uDD21" };
-  if (v <= 59) return { label: "Jury\u2019s Out", emoji: "\uD83E\uDD37" };
-  if (v <= 79) return { label: "Has Merit", emoji: "\uD83D\uDD25" };
-  if (v <= 94) return { label: "Hard to Argue", emoji: "\u26A1" };
-  return { label: "Undeniable", emoji: "\uD83C\uDFC6" };
+function getScoreTier(v: number): { label: string } {
+  if (v <= 20) return { label: "Touch Grass" };
+  if (v <= 40) return { label: "Big Yikes" };
+  if (v <= 59) return { label: "Jury\u2019s Out" };
+  if (v <= 79) return { label: "Has Merit" };
+  if (v <= 94) return { label: "Hard to Argue" };
+  return { label: "Undeniable" };
 }
 
 function ScoreBadge({ value, size = "md", dark = false, animate = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean; animate?: boolean }) {
@@ -1404,7 +1404,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               <div style={{ display: "flex", alignItems: "center", gap: 10, position: "relative" }}>
                 <ScoreBadge value={obs.score} size="lg" animate />
                 <span style={{ fontSize: 13, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
-                  {tier.emoji} {tier.label}
+                  {tier.label}
                 </span>
                 <button
                   onClick={() => setShowScoreInfo(sv => !sv)}
@@ -1433,7 +1433,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.1)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
                 onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.06)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)"; }}
               >
-                <span style={{ fontSize: 12, fontWeight: 700, color: "#FFF", letterSpacing: -0.2 }}>{"\uD83D\uDE08"} Devil&rsquo;s Advocate</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "#FFF", letterSpacing: -0.2 }}>Devil&rsquo;s Advocate</span>
               </button>
             </div>
           );
@@ -1487,24 +1487,21 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   fontSize: 20, fontWeight: 700, color: "#FFF", lineHeight: 1.4,
                   letterSpacing: -0.4, margin: 0,
                   cursor: isOwner ? "pointer" : "default",
-                  borderBottom: isOwner ? "1px dashed rgba(255,255,255,0.15)" : "none",
-                  paddingBottom: isOwner ? 4 : 0,
+                  borderBottom: "none",
+                  paddingBottom: 0,
                 }}
                 title={isOwner ? "Tap to edit & resubmit" : undefined}
               >{obs.thesis}</h1>
             )}
-            {/* Thin keyline before hot take content */}
-            <div style={{ borderBottom: "1px solid rgba(255,255,255,0.08)", margin: "16px 0 0" }} />
           </div>
         )}
-
 
         {/* Hot Take content — always visible */}
         {obs.status === "complete" && (steelBottomLine || steelHardFacts.length > 0 || steelBullets.length > 0) && (
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 5 }}><PulsingPlus />Hot Take</p>
+                <p style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px" }}>Hot Take</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
@@ -1756,19 +1753,6 @@ function HardFact({ item }: { item: HardFactItem | string }) {
   );
 }
 
-function PulsingPlus() {
-  return (
-    <>
-      <span style={{
-        display: "inline-flex", alignItems: "center", justifyContent: "center",
-        width: 14, height: 14, borderRadius: "50%",
-        background: "#FF00AE", flexShrink: 0,
-        fontSize: 11, fontWeight: 900, color: "#FFF", lineHeight: 1,
-        animation: "redDotPulse 2s ease-in-out infinite",
-      }}>+</span>
-    </>
-  );
-}
 
 function PulsingDot() {
   return (
