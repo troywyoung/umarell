@@ -1283,8 +1283,16 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80, background: "#12102B", minHeight: "100vh" }}>
-      <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between", borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
-        <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
+      <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
+          {obs.status === "complete" && obs.thesis && (
+            <>
+              <span style={{ width: 1, height: 16, background: "rgba(255,255,255,0.15)" }} />
+              <ShareButton obsId={obs.id} />
+            </>
+          )}
+        </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
           {isOwner && (
@@ -1393,17 +1401,24 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           const tier = getScoreTier(v);
           return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10, position: "relative" }}>
                 <ScoreBadge value={obs.score} size="lg" animate />
-                <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-                  <span style={{ fontSize: 13, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
-                    {tier.emoji} {tier.label}
-                  </span>
-                  <button
-                    onClick={() => setShowScoreInfo(v => !v)}
-                    style={{ background: "none", border: "none", cursor: "pointer", padding: 0, color: "rgba(255,255,255,0.35)", fontSize: 10, fontWeight: 600, fontFamily: "inherit", textAlign: "left", WebkitTapHighlightColor: "transparent" }}
-                  >What&rsquo;s this?</button>
-                </div>
+                <span style={{ fontSize: 13, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
+                  {tier.emoji} {tier.label}
+                </span>
+                <button
+                  onClick={() => setShowScoreInfo(sv => !sv)}
+                  style={{
+                    background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
+                    border: "1px solid rgba(255,255,255,0.2)",
+                    borderRadius: "50%", width: 18, height: 18,
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    cursor: "pointer", padding: 0,
+                    color: "#FFF", fontSize: 10, fontWeight: 800,
+                    flexShrink: 0, lineHeight: 1,
+                    WebkitTapHighlightColor: "transparent",
+                  }}
+                >?</button>
                 {showScoreInfo && (useIsMobile() ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} />)}
               </div>
               <button
@@ -1483,12 +1498,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </div>
         )}
 
-        {/* Share (shown when complete) */}
-        {obs.status === "complete" && steelBullets.length > 0 && (
-          <div style={{ marginBottom: 20 }}>
-            <ShareButton obsId={obs.id} prominent />
-          </div>
-        )}
 
         {/* Hot Take content — always visible */}
         {obs.status === "complete" && (steelBottomLine || steelHardFacts.length > 0 || steelBullets.length > 0) && (
