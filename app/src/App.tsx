@@ -1426,11 +1426,11 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   onClick={() => setShowScoreInfo(sv => !sv)}
                   style={{
                     background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
-                    border: "1px solid rgba(255,255,255,0.2)",
+                    border: "1px solid rgba(255,255,255,0.12)",
                     borderRadius: "50%", width: 18, height: 18,
                     display: "flex", alignItems: "center", justifyContent: "center",
                     cursor: "pointer", padding: 0,
-                    color: "#FFF", fontSize: 10, fontWeight: 800,
+                    color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 800,
                     flexShrink: 0, lineHeight: 1,
                     WebkitTapHighlightColor: "transparent",
                   }}
