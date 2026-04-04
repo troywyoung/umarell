@@ -600,13 +600,16 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
               : topLevel.filter(o => (o.tags || []).includes(selectedTopic));
 
           const renderCard = (obs: Observation) => {
-            let firstBullet = "";
+            let bullets: string[] = [];
             try {
               const parsed = JSON.parse(obs.summary || "");
-              firstBullet = parsed.bottom_line || (Array.isArray(parsed.bullets) ? parsed.bullets[0] : "") || "";
+              if (Array.isArray(parsed.bullets) && parsed.bullets.length > 0) {
+                bullets = parsed.bullets.slice(0, 3);
+              } else if (parsed.bottom_line) {
+                bullets = [parsed.bottom_line];
+              }
             } catch {
-              const lines = (obs.summary || "").split(/\n+/).map((l: string) => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean);
-              firstBullet = lines[0] || "";
+              bullets = (obs.summary || "").split(/\n+/).map((l: string) => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean).slice(0, 3);
             }
             return (
               <div
@@ -646,13 +649,15 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     {obs.thesis || obs.raw_input}
                   </p>
                 </div>
-                {firstBullet && (
-                  <p style={{
-                    fontSize: 10, color: "#555", lineHeight: 1.55,
-                    margin: 0, padding: "0 12px 10px 12px",
-                  }}>
-                    {firstBullet}
-                  </p>
+                {bullets.length > 0 && (
+                  <div style={{ padding: "0 12px 10px 12px", display: "flex", flexDirection: "column", gap: 4 }}>
+                    {bullets.map((b, i) => (
+                      <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
+                        <span style={{ fontSize: 9, color: "#CCC", marginTop: 3, flexShrink: 0 }}>•</span>
+                        <span style={{ fontSize: 10, color: "#555", lineHeight: 1.5 }}>{b}</span>
+                      </div>
+                    ))}
+                  </div>
                 )}
                 {(obs.status === "formatting" || obs.status === "researching") && (
                   <div style={{ display: "inline-flex", alignItems: "center", gap: 6, padding: "0 12px 8px" }}>
@@ -670,9 +675,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", alignContent: "flex-start", gap: 5, flexWrap: "wrap", flex: 1 }}>
                     <span style={{ fontSize: 8, fontWeight: 600, color: "rgba(0,0,0,0.7)", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
                     <EvidenceBadge value={obs.evidence_type} />
-                    {obs.tags?.map((tag: string) => (
-                      <span key={tag} style={{ fontSize: 8, color: "#888", background: "#F0F0ED", borderRadius: 100, padding: "1px 6px" }}>{tag}</span>
-                    ))}
                   </div>
                   {obs.status === "complete" && obs.thesis && (
                     <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
