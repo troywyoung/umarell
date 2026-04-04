@@ -831,7 +831,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 <div style={{ position: "absolute", top: 10, right: 10, zIndex: 1 }}>
                   <ScoreBadge value={obs.score} size="sm" dark />
                 </div>
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 60 }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
                     {obs.image_data && (
                       <img
                         src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
@@ -840,7 +840,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     )}
                     <p style={{
                       fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 700,
-                      color: "#1A1A1A", lineHeight: 1.05, margin: 0, letterSpacing: -0.3, flex: 1,
+                      color: "#1A1A1A", lineHeight: 1.15, margin: 0, letterSpacing: -0.3, flex: 1,
                     }}>
                       {obs.thesis || obs.raw_input}
                     </p>
