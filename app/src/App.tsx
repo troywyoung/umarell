@@ -428,7 +428,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false }: { val
     if (!animate) { setDisplayVal(target); setAnimPct(target / 100); return; }
     setDisplayVal(0); setAnimPct(0);
     startRef.current = null;
-    const duration = 1200;
+    const duration = 1440;
     const tick = (ts: number) => {
       if (!startRef.current) startRef.current = ts;
       const elapsed = ts - startRef.current;
@@ -1424,16 +1424,16 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               <button
                 onClick={() => { setActiveTab("coldshower"); handleCounterpoint(); }}
                 style={{
-                  background: "rgba(255,255,255,0.06)", border: "1.5px solid rgba(255,255,255,0.15)",
+                  background: "transparent", border: "1.5px solid #FF00AE",
                   borderRadius: 10, padding: "8px 14px",
                   cursor: "pointer", fontFamily: "inherit",
                   WebkitTapHighlightColor: "transparent",
                   transition: "background 0.15s, border-color 0.15s",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.1)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.06)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)"; }}
+                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.15)"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
               >
-                <span style={{ fontSize: 12, fontWeight: 700, color: "#FFF", letterSpacing: -0.2 }}>Devil&rsquo;s Advocate</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2 }}>Devil&rsquo;s Advocate</span>
               </button>
             </div>
           );
