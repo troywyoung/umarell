@@ -408,12 +408,12 @@ function useIsMobile() {
 }
 
 function getScoreColor(v: number): string {
-  if (v <= 20) return "#FF4444";
-  if (v <= 40) return "#FF6B35";
-  if (v <= 59) return "#FFB800";
-  if (v <= 79) return "#8BC34A";
-  if (v <= 94) return "#4CAF50";
-  return "#00E676";
+  if (v <= 20) return "#5A6B8C";
+  if (v <= 40) return "#7C7FE6";
+  if (v <= 59) return "#E7B84B";
+  if (v <= 79) return "#E7B84B";
+  if (v <= 94) return "#FF2FA3";
+  return "#FF2FA3";
 }
 
 function getScoreTier(v: number): { label: string } {
