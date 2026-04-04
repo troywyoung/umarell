@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, Fragment } from "react";
 import { GoogleLogin } from "@react-oauth/google";
 import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
@@ -319,11 +319,11 @@ function ScoreInfoRows() {
   return (
     <div style={{ display: "grid", gridTemplateColumns: "48px 90px 1fr", gap: "10px 0", alignItems: "baseline" }}>
       {SCORE_ROWS.map(({ range, label, color, desc }) => (
-        <React.Fragment key={range}>
+        <Fragment key={range}>
           <span style={{ fontSize: 11, fontWeight: 800, color }}>{range}</span>
           <span style={{ fontSize: 13, fontWeight: 700, color }}>{label}</span>
           <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}>{desc}</span>
-        </React.Fragment>
+        </Fragment>
       ))}
     </div>
   );
