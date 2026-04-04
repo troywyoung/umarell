@@ -1415,16 +1415,23 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               <button
                 onClick={() => { setActiveTab("coldshower"); handleCounterpoint(); }}
                 style={{
-                  background: "transparent", border: "1.5px solid #FF00AE",
+                  background: counterpointLoading
+                    ? "linear-gradient(90deg, #FF00AE 0%, #FF00AE 50%, transparent 50%, transparent 100%)"
+                    : "transparent",
+                  backgroundSize: counterpointLoading ? "200% 100%" : undefined,
+                  animation: counterpointLoading ? "devilFill 2.5s ease-in-out infinite" : undefined,
+                  border: "1.5px solid #FF00AE",
                   borderRadius: 10, padding: "8px 5px",
-                  cursor: "pointer", fontFamily: "inherit",
+                  cursor: counterpointLoading ? "default" : "pointer", fontFamily: "inherit",
                   WebkitTapHighlightColor: "transparent",
-                  transition: "background 0.15s, border-color 0.15s",
+                  transition: counterpointLoading ? "none" : "background 0.15s, border-color 0.15s",
+                  overflow: "hidden", position: "relative",
                 }}
-                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.15)"; }}
-                onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
+                onMouseEnter={e => { if (!counterpointLoading) e.currentTarget.style.background = "rgba(255,0,174,0.15)"; }}
+                onMouseLeave={e => { if (!counterpointLoading) e.currentTarget.style.background = "transparent"; }}
+                disabled={counterpointLoading}
               >
-                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>Devil&rsquo;s Advocate</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: counterpointLoading ? "#FFF" : "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap", position: "relative", zIndex: 1 }}>Devil&rsquo;s Advocate</span>
               </button>
             </div>
           );
@@ -1757,6 +1764,10 @@ function PulsingDot() {
         @keyframes redDotPulse {
           0%, 100% { opacity: 1; transform: scale(1); }
           50% { opacity: 0.3; transform: scale(0.7); }
+        }
+        @keyframes devilFill {
+          0% { background-position: 100% 0; }
+          100% { background-position: 0% 0; }
         }
       `}</style>
     </>
