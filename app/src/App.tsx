@@ -904,8 +904,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   <div style={{ padding: "0 62px 10px 12px", display: "flex", flexDirection: "column", gap: 6 }}>
                     {bullets.map((b, i) => (
                       <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
-                        <span style={{ fontSize: 11, color: "#888", marginTop: 2, flexShrink: 0 }}>•</span>
-                        <span style={{ fontSize: 11, color: "#555", lineHeight: 1.35, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" } as React.CSSProperties}>{b}</span>
+                        <span style={{ fontSize: window.innerWidth < 600 ? 13 : 11, color: "#888", marginTop: 2, flexShrink: 0 }}>•</span>
+                        <span style={{ fontSize: window.innerWidth < 600 ? 13 : 11, color: "#555", lineHeight: 1.35, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" } as React.CSSProperties}>{b}</span>
                       </div>
                     ))}
                   </div>
@@ -1016,7 +1016,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                               <span style={{ fontSize: 8, fontWeight: 700, color: "#666", letterSpacing: -0.2 }}>{abbrev}</span>
                               <span style={{ fontSize: 8, color: "#BBB", letterSpacing: -0.2 }}>{timeAgo(t.createdAt)}</span>
                             </div>
-                            <p onClick={e => { e.stopPropagation(); setExpandedTakeText(s => { const n = new Set(s); n.has(t.id) ? n.delete(t.id) : n.add(t.id); return n; }); }} style={{ fontSize: 11, color: "#333", fontWeight: 400, margin: 0, lineHeight: 1.4, cursor: "pointer", ...(expandedTakeText.has(t.id) ? {} : { overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }) } as React.CSSProperties}>{t.text}</p>
+                            <p onClick={e => { e.stopPropagation(); setExpandedTakeText(s => { const n = new Set(s); n.has(t.id) ? n.delete(t.id) : n.add(t.id); return n; }); }} style={{ fontSize: window.innerWidth < 600 ? 13 : 11, color: "#333", fontWeight: 400, margin: 0, lineHeight: 1.4, cursor: "pointer", ...(expandedTakeText.has(t.id) ? {} : { overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }) } as React.CSSProperties}>{t.text}</p>
                           </>
                         )}
                       </div>
