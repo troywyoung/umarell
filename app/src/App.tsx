@@ -839,8 +839,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         <ScoreBadge value={obs.score} size="sm" dark />
                       </div>
                       <p style={{
-                        fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 700,
-                        color: "#1A1A1A", lineHeight: 1.15, margin: 0, letterSpacing: -0.3,
+                        fontSize: window.innerWidth < 600 ? 14 : 12, fontWeight: 700,
+                        color: "#1A1A1A", lineHeight: window.innerWidth < 600 ? 1.15 : 1.27, margin: 0, letterSpacing: -0.3,
                       }}>
                         {obs.thesis || obs.raw_input}
                       </p>
