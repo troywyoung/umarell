@@ -1586,15 +1586,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           return (
             <div ref={counterpointRef}>
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 6 }}>
-                  <p style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: 0, display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Devil&rsquo;s Advocate</p>
-                  <span style={{
-                    fontSize: 9, fontWeight: 800, textTransform: "uppercase", letterSpacing: 0.5,
-                    padding: "2px 8px", borderRadius: 4,
-                    background: `${strengthColors[counterpoint.strength] || "#888"}22`,
-                    color: strengthColors[counterpoint.strength] || "#888",
-                  }}>{counterpoint.strength}</span>
-                </div>
+                <p style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Devil&rsquo;s Advocate</p>
                 <p style={{ fontSize: 15, color: "#FFF", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{counterpoint.bottom_line}</p>
               </div>
               {counterpoint.bullets.length > 0 && (
