@@ -585,8 +585,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   const [yourTakeMap, setYourTakeMap] = useState<Record<string, TakeEntry[]>>({});
   const [expandedTakes, setExpandedTakes] = useState<Set<string>>(new Set());
   const [expandedTakeText, setExpandedTakeText] = useState<Set<string>>(new Set());
-  const [editingTakeId, setEditingTakeId] = useState<string | null>(null);
-  const [editingTakeDraft, setEditingTakeDraft] = useState<string>("");
   const [recording, setRecording] = useState<string | null>(null);
   const [recordingSecs, setRecordingSecs] = useState(0);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -950,38 +948,30 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                                   <span style={{ fontSize: 8, color: "#BBB", flexShrink: 0 }}>|</span>
                                   <div style={{ flex: 1 }}><AudioTake src={t.audioB64} btnColor="#C8C4BC" durationSecs={t.durationSecs ?? 0} /></div>
                                 </div>
-                              ) : editingTakeId === t.id ? (
-                                <div onClick={e => e.stopPropagation()}>
-                                  <textarea
-                                    autoFocus
-                                    value={editingTakeDraft}
-                                    onChange={e => setEditingTakeDraft(e.target.value)}
-                                    rows={3}
-                                    style={{ width: "100%", boxSizing: "border-box", resize: "none", fontSize: 12, fontFamily: "inherit", lineHeight: 1.45, border: "1px solid #E0E0DC", borderRadius: 6, padding: "6px 8px", outline: "none", color: "#1A1A1A", background: "#FAFAF8" }}
-                                  />
-                                  <div style={{ display: "flex", gap: 6, marginTop: 4 }}>
-                                    <button onClick={async e => { e.stopPropagation(); if (!editingTakeDraft.trim()) return; await fetch(`${API}/takes/${t.id}`, { method: "PATCH", headers: { ...authHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ text: editingTakeDraft.trim() }) }).catch(() => {}); setYourTakeMap(prev => ({ ...prev, [obs.id]: (prev[obs.id] || []).map((x: TakeEntry) => x.id === t.id ? { ...x, text: editingTakeDraft.trim() } : x) })); setEditingTakeId(null); }} style={{ fontSize: 10, fontWeight: 700, background: "#1A1A1A", color: "#FFF", border: "none", borderRadius: 6, padding: "4px 10px", cursor: "pointer" }}>Save</button>
-                                    <button onClick={e => { e.stopPropagation(); setEditingTakeId(null); }} style={{ fontSize: 10, fontWeight: 700, background: "none", color: "#999", border: "1px solid #E0E0DC", borderRadius: 6, padding: "4px 10px", cursor: "pointer" }}>Cancel</button>
-                                  </div>
-                                </div>
                               ) : (
                                 <>
                                   <div style={{ display: "flex", gap: 5, alignItems: "baseline", marginBottom: 2 }}>
                                     <span style={{ fontSize: 8, fontWeight: 700, color: "#555", letterSpacing: -0.2 }}>{abbrev}</span>
                                     <span style={{ fontSize: 8, color: "#BBB", letterSpacing: -0.2 }}>{timeAgo(t.createdAt)}</span>
-                                    {t.userId === authUser.id && <>
-                                      <span style={{ fontSize: 8, color: "#DDD" }}>|</span>
-                                      <span onClick={e => { e.stopPropagation(); setEditingTakeId(t.id); setEditingTakeDraft(t.text || ""); }} style={{ fontSize: 8, color: "rgba(0,0,0,0.25)", cursor: "pointer", letterSpacing: -0.1 }}>edit</span>
-                                    </>}
                                   </div>
                                   <p onClick={e => { e.stopPropagation(); setExpandedTakeText(s => { const n = new Set(s); n.has(t.id) ? n.delete(t.id) : n.add(t.id); return n; }); }} style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#555", margin: 0, lineHeight: 1.4, cursor: "pointer", ...(expandedTakeText.has(t.id) ? {} : { overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }) } as React.CSSProperties}>{t.text}</p>
                                 </>
                               )}
                             </div>
-                            <button
-                              onClick={e => { e.stopPropagation(); fetch(`${API}/takes/${t.id}`, { method: "DELETE", headers: authHeaders() }).catch(() => {}); setYourTakeMap(prev => ({ ...prev, [obs.id]: (prev[obs.id] || []).filter((x: {id: string}) => x.id !== t.id) })); }}
-                              style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#CCC", flexShrink: 0, display: "flex", alignItems: "center", WebkitTapHighlightColor: "transparent", marginTop: 2 }}
-                            ><svg width={7} height={7} viewBox="0 0 10 10" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round"><line x1="1" y1="1" x2="9" y2="9"/><line x1="9" y1="1" x2="1" y2="9"/></svg></button>
+                            {t.userId === authUser.id && (
+                              <button
+                                onClick={e => { e.stopPropagation(); fetch(`${API}/takes/${t.id}`, { method: "DELETE", headers: authHeaders() }).catch(() => {}); setYourTakeMap(prev => ({ ...prev, [obs.id]: (prev[obs.id] || []).filter((x: {id: string}) => x.id !== t.id) })); }}
+                                style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#CCC", flexShrink: 0, display: "flex", alignItems: "center", WebkitTapHighlightColor: "transparent" }}
+                              >
+                                <svg width={10} height={11} viewBox="0 0 10 11" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
+                                  <line x1="1" y1="2.5" x2="9" y2="2.5"/>
+                                  <path d="M3.5 2.5V1.5h3v1"/>
+                                  <path d="M2 2.5l.5 7h5l.5-7"/>
+                                  <line x1="4" y1="5" x2="4" y2="8"/>
+                                  <line x1="6" y1="5" x2="6" y2="8"/>
+                                </svg>
+                              </button>
+                            )}
                           </div>
                         );
                       })}
