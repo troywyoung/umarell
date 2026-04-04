@@ -10,8 +10,8 @@ import httpx
 from jose import jwt, JWTError
 from pydantic import BaseModel
 from database import init_db, get_db, AsyncSessionLocal
-from models import Observation, User
-from schemas import ObservationCreate, ObservationOut
+from models import Observation, User, Take
+from schemas import ObservationCreate, ObservationOut, TakeCreate, TakeOut
 from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, generate_joke, ACTIVE_MODEL
 from config import settings
 from whatsapp import router as whatsapp_router
@@ -370,6 +370,69 @@ async def edit_observation(
     asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, image_b64, image_media_type))
     rows = await _attach_user_names(db, [obs])
     return rows[0]
+
+
+# ─── Takes (user comments) ──────────────────────────────────────────────────
+
+@app.get("/observations/{obs_id}/takes", response_model=list[TakeOut])
+async def list_takes(obs_id: str, db: AsyncSession = Depends(get_db)):
+    result = await db.execute(
+        select(Take).where(Take.observation_id == obs_id).order_by(Take.created_at)
+    )
+    takes = list(result.scalars().all())
+    # Attach user names
+    user_ids = {t.user_id for t in takes if t.user_id}
+    user_map: dict[str, str] = {}
+    if user_ids:
+        users = await db.execute(select(User).where(User.id.in_(user_ids)))
+        for u in users.scalars():
+            user_map[u.id] = u.name
+    out = []
+    for t in takes:
+        d = TakeOut.model_validate(t).model_dump()
+        d["user_name"] = user_map.get(t.user_id, "Anonymous") if t.user_id else "Anonymous"
+        out.append(d)
+    return out
+
+
+@app.post("/observations/{obs_id}/takes", response_model=TakeOut, status_code=201)
+async def create_take(
+    obs_id: str,
+    body: TakeCreate,
+    db: AsyncSession = Depends(get_db),
+    current_user: User | None = Depends(get_current_user),
+):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    take = Take(
+        observation_id=obs_id,
+        user_id=current_user.id if current_user else None,
+        text=body.text,
+        audio_b64=body.audio_b64,
+        duration_secs=body.duration_secs,
+    )
+    db.add(take)
+    await db.commit()
+    await db.refresh(take)
+    d = TakeOut.model_validate(take).model_dump()
+    d["user_name"] = current_user.name if current_user else "Anonymous"
+    return d
+
+
+@app.delete("/takes/{take_id}", status_code=204)
+async def delete_take(
+    take_id: str,
+    db: AsyncSession = Depends(get_db),
+    current_user: User | None = Depends(get_current_user),
+):
+    take = await db.get(Take, take_id)
+    if not take:
+        raise HTTPException(404)
+    if take.user_id and current_user and take.user_id != current_user.id:
+        raise HTTPException(403, "You can only delete your own takes")
+    await db.delete(take)
+    await db.commit()
 
 
 def _parse_summary(obs) -> dict:

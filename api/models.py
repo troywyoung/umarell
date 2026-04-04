@@ -13,6 +13,18 @@ def _uuid():
     return str(uuid.uuid4())
 
 
+class Take(Base):
+    __tablename__ = "takes"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=_uuid)
+    observation_id: Mapped[str] = mapped_column(String, ForeignKey("observations.id", ondelete="CASCADE"), index=True)
+    user_id: Mapped[str | None] = mapped_column(String, ForeignKey("users.id"), nullable=True, index=True)
+    text: Mapped[str | None] = mapped_column(Text, nullable=True)
+    audio_b64: Mapped[str | None] = mapped_column(Text, nullable=True)
+    duration_secs: Mapped[float | None] = mapped_column(Float, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
 class User(Base):
     __tablename__ = "users"
 

@@ -4,6 +4,25 @@ from typing import Optional
 from pydantic import BaseModel
 
 
+class TakeCreate(BaseModel):
+    text: Optional[str] = None
+    audio_b64: Optional[str] = None
+    duration_secs: Optional[float] = None
+
+
+class TakeOut(BaseModel):
+    model_config = {"from_attributes": True}
+
+    id: str
+    observation_id: str
+    user_id: Optional[str] = None
+    user_name: Optional[str] = None
+    text: Optional[str] = None
+    audio_b64: Optional[str] = None
+    duration_secs: Optional[float] = None
+    created_at: datetime
+
+
 class ObservationCreate(BaseModel):
     raw_input: str
     input_type: str = "text"

@@ -581,19 +581,37 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   const [yourTakeInput, setYourTakeInput] = useState<Set<string>>(new Set());
   const [yourTakeDraft, setYourTakeDraft] = useState<Record<string, string>>({});
   const [yourTakePlaceholder, setYourTakePlaceholder] = useState<Record<string, string>>({});
-  const [yourTakeMap, setYourTakeMap] = useState<Record<string, Array<{ id: string; text?: string; audioB64?: string; durationSecs?: number; userId: string; userName: string; createdAt: string }>>>(() => {
-    try { return JSON.parse(localStorage.getItem("yourTakes") || "{}"); } catch { return {}; }
-  });
+  type TakeEntry = { id: string; text?: string; audioB64?: string; durationSecs?: number; userId: string; userName: string; createdAt: string };
+  const [yourTakeMap, setYourTakeMap] = useState<Record<string, TakeEntry[]>>({});
   const [expandedTakes, setExpandedTakes] = useState<Set<string>>(new Set());
   const [recording, setRecording] = useState<string | null>(null);
   const [recordingSecs, setRecordingSecs] = useState(0);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const recordingTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const takesLoadedRef = useRef<Set<string>>(new Set());
 
-  const saveTakes = (map: Record<string, Array<{ id: string; text?: string; audioB64?: string; userId: string; createdAt: string }>>) => {
-    try { localStorage.setItem("yourTakes", JSON.stringify(map)); } catch {}
-  };
+  // Load takes from API for all visible observations
+  useEffect(() => {
+    const ids = observations.map(o => o.id).filter(id => !takesLoadedRef.current.has(id));
+    if (ids.length === 0) return;
+    ids.forEach(id => takesLoadedRef.current.add(id));
+    Promise.all(ids.map(id =>
+      fetch(`${API}/observations/${id}/takes`, { headers: authHeaders() })
+        .then(r => r.ok ? r.json() : [])
+        .then(takes => ({ id, takes: (takes as Array<{ id: string; text?: string; audio_b64?: string; duration_secs?: number; user_id?: string; user_name?: string; created_at: string }>).map(t => ({
+          id: t.id, text: t.text, audioB64: t.audio_b64, durationSecs: t.duration_secs,
+          userId: t.user_id || "", userName: t.user_name || "Anonymous", createdAt: t.created_at,
+        })) }))
+        .catch(() => ({ id, takes: [] as TakeEntry[] }))
+    )).then(results => {
+      setYourTakeMap(prev => {
+        const next = { ...prev };
+        for (const r of results) { if (r.takes.length > 0) next[r.id] = r.takes; }
+        return next;
+      });
+    });
+  }, [observations]);
 
   const toggleYourTake = (obsId: string, e: React.MouseEvent) => {
     e.stopPropagation();
@@ -608,14 +626,20 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
     });
   };
 
-  const submitYourTake = (obsId: string, e: React.MouseEvent) => {
+  const submitYourTake = async (obsId: string, e: React.MouseEvent) => {
     e.stopPropagation();
     const text = yourTakeDraft[obsId]?.trim();
     if (!text) return;
-    const entry = { id: crypto.randomUUID(), text, userId: authUser.id, userName: authUser.name, createdAt: new Date().toISOString() };
-    const next = { ...yourTakeMap, [obsId]: [...(yourTakeMap[obsId] || []), entry] };
-    setYourTakeMap(next);
-    saveTakes(next);
+    try {
+      const resp = await fetch(`${API}/observations/${obsId}/takes`, {
+        method: "POST", headers: authHeaders(),
+        body: JSON.stringify({ text }),
+      });
+      if (!resp.ok) throw new Error("Failed");
+      const t = await resp.json();
+      const entry: TakeEntry = { id: t.id, text: t.text, audioB64: t.audio_b64, durationSecs: t.duration_secs, userId: t.user_id || "", userName: t.user_name || "Anonymous", createdAt: t.created_at };
+      setYourTakeMap(prev => ({ ...prev, [obsId]: [...(prev[obsId] || []), entry] }));
+    } catch { /* silent */ }
     setYourTakeDraft(d => ({ ...d, [obsId]: "" }));
     setYourTakeInput(s => { const n = new Set(s); n.delete(obsId); return n; });
   };
@@ -633,12 +657,18 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         const blob = new Blob(audioChunksRef.current, { type: mr.mimeType || "audio/webm" });
         const reader = new FileReader();
         const capturedSecs = recordingSecs;
-        reader.onloadend = () => {
+        reader.onloadend = async () => {
           const audioB64 = (reader.result as string);
-          const entry = { id: crypto.randomUUID(), audioB64, durationSecs: capturedSecs, userId: authUser.id, userName: authUser.name, createdAt: new Date().toISOString() };
-          const next = { ...yourTakeMap, [obsId]: [...(yourTakeMap[obsId] || []), entry] };
-          setYourTakeMap(next);
-          saveTakes(next);
+          try {
+            const resp = await fetch(`${API}/observations/${obsId}/takes`, {
+              method: "POST", headers: authHeaders(),
+              body: JSON.stringify({ audio_b64: audioB64, duration_secs: capturedSecs }),
+            });
+            if (!resp.ok) throw new Error("Failed");
+            const t = await resp.json();
+            const entry: TakeEntry = { id: t.id, text: t.text, audioB64: t.audio_b64, durationSecs: t.duration_secs, userId: t.user_id || "", userName: t.user_name || "Anonymous", createdAt: t.created_at };
+            setYourTakeMap(prev => ({ ...prev, [obsId]: [...(prev[obsId] || []), entry] }));
+          } catch { /* silent */ }
         };
         reader.readAsDataURL(blob);
         setYourTakeInput(s => { const n = new Set(s); n.delete(obsId); return n; });
@@ -990,7 +1020,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         )}
                       </div>
                       <button
-                        onClick={e => { e.stopPropagation(); const next = { ...yourTakeMap, [obs.id]: yourTakeMap[obs.id].filter(x => x.id !== t.id) }; setYourTakeMap(next); saveTakes(next); }}
+                        onClick={e => { e.stopPropagation(); fetch(`${API}/takes/${t.id}`, { method: "DELETE", headers: authHeaders() }).catch(() => {}); setYourTakeMap(prev => ({ ...prev, [obs.id]: (prev[obs.id] || []).filter(x => x.id !== t.id) })); }}
                         style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#BBB", flexShrink: 0, alignSelf: "flex-start", display: "flex", alignItems: "center", justifyContent: "center", WebkitTapHighlightColor: "transparent", marginTop: 2 }}
                       ><svg width={7} height={7} viewBox="0 0 10 10" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round"><line x1="1" y1="1" x2="9" y2="9"/><line x1="9" y1="1" x2="1" y2="9"/></svg></button>
                     </div>
