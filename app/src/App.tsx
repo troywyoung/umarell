@@ -481,8 +481,12 @@ function AudioTake({ src, btnColor = "#2C5ABA", durationSecs = 0 }: { src: strin
     e.stopPropagation();
     const a = audioRef.current;
     if (!a) return;
-    playing ? a.pause() : a.play();
-    setPlaying(!playing);
+    if (playing) {
+      a.pause();
+      setPlaying(false);
+    } else {
+      a.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
+    }
   };
 
   const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
@@ -649,7 +653,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
     e.stopPropagation();
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mimeType = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg"]
+      const mimeType = ["audio/mp4", "audio/webm;codecs=opus", "audio/webm", "audio/ogg"]
         .find(t => MediaRecorder.isTypeSupported(t)) || "";
       const mr = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream);
       audioChunksRef.current = [];
