@@ -659,7 +659,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
     <div style={{ maxWidth: 480, margin: "0 auto", minHeight: "100vh", background: "#12102B", padding: "0 0 60px" }}>
       <div style={{ padding: "14px 20px 12px", borderBottom: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
         <button onClick={onBack} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.5)", fontSize: 22, cursor: "pointer", padding: 0, lineHeight: 1, WebkitTapHighlightColor: "transparent" }}>←</button>
-        <span style={{ fontSize: 18, fontWeight: 900, color: "#FFF", letterSpacing: -0.6, fontFamily: "'Besley', serif", lineHeight: 1.2 }}>Your takes,<br />stress-tested.</span>
+        <span style={{ fontSize: 18, fontWeight: 900, color: "#FFF", letterSpacing: -0.6, fontFamily: "'Besley', serif", lineHeight: 1 }}>Your takes, stress-tested.</span>
       </div>
       <div style={{ padding: "28px 24px 0" }}>
         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.9)", lineHeight: 1.65, margin: "0 0 28px", letterSpacing: -0.2 }}>
@@ -669,7 +669,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
         {bullet("Drop a hot take, paste a link, or type out a half-formed opinion. AI sharpens it into its most defensible form and builds the case for it.")}
         {bullet("Every take gets a conviction score from 0–100 — how well does the evidence actually hold up? You see the number before you decide whether to push back.")}
         {bullet("Disagree? Challenge it. Your counter gets the same treatment. The feed becomes a live record of the argument.")}
-        {bullet("Add your own take directly in the feed — text or voice. React, riff, or just say what you actually think.")}
+        {bullet("Add your take directly in the feed — type it or record it. It stays with the post.")}
         <div style={{ marginTop: 32, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.6, margin: 0, letterSpacing: -0.1 }}>
             Most takes sound better before anyone pushes back. This is the push back.
