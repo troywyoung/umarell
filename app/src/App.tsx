@@ -57,21 +57,6 @@ function BurstIcon({ size = 20, white = false, className, style }: { size?: numb
   );
 }
 
-// ─── Static Scribble — single frozen scribble path for CTA icons ─────────────
-function StaticScribble({ size = 24 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="-8 -8 116 116" style={{ display: "block" }}>
-      <path
-        fill="none"
-        stroke="#FF00AE"
-        strokeWidth="2.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M50.0,50.0 C12.3,28.7 82.1,4.5 34.2,22.8 C-5.6,60.1 92.4,14.3 68.5,55.2 C30.1,88.7 75.3,21.9 42.8,71.4 C8.2,44.6 88.7,73.5 62.1,38.9 C19.4,62.3 71.8,85.1 50.3,29.7 C84.6,48.2 15.7,76.8 38.4,63.5 C72.9,35.1 26.3,82.4 58.7,44.8 C90.2,18.3 14.8,68.7 46.1,56.2 C78.5,29.6 22.7,74.3 54.9,48.1"
-      />
-    </svg>
-  );
-}
 
 // ─── Animated Scribble — rAF driven, runs forever, new path each cycle ───────
 function generateScribblePath(): string {
@@ -1145,7 +1130,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   const [pvaLoading, setPvaLoading] = useState(false);
   const [pvaError, setPvaError] = useState(false);
   const [activeTab, setActiveTab] = useState<"hottake" | "coldshower" | "pva">("hottake");
-  const [flashCounterpoint, setFlashCounterpoint] = useState(false);
+  const [, setFlashCounterpoint] = useState(false);
   const [flashPva, setFlashPva] = useState(false);
   const steelmanRef = useRef<HTMLDivElement>(null);
   const counterpointRef = useRef<HTMLDivElement>(null);
@@ -1581,7 +1566,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", margin: 0 }}>Loading…</p>
             </div>
           );
-          const strengthColors: Record<string, string> = { weak: "#4CAF50", moderate: "#FF9800", strong: "#F44336", devastating: "#9C27B0" };
           const cpHardFacts = Array.isArray(counterpoint.hard_facts) ? counterpoint.hard_facts : [];
           return (
             <div ref={counterpointRef}>
