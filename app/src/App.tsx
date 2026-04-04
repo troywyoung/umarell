@@ -823,7 +823,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
       {/* Branding */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "44px 0 2px" }}>
-        <HottakeLogo fontSize={30} />
+        <HottakeLogo fontSize={27} />
       </div>
 
       <style>{`
