@@ -943,7 +943,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                           width: 5, height: 5, borderRadius: "50%", flexShrink: 0,
                           background: "#FF00AE",
                           animation: "yellowPulse 1.2s ease-in-out infinite",
-                        }} />Your take</button>
+                        }} />Add your take</button>
                       <span style={{ fontSize: 8, color: "rgba(0,0,0,0.2)" }}>|</span>
                       <button
                         onClick={(e) => fetchJoke(obs.id, e)}
