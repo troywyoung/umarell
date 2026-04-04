@@ -463,46 +463,6 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false }: { val
   );
 }
 
-function ScoreWithInfo({ value, show, onToggle, onClose }: { value: number; show: boolean; onToggle: () => void; onClose: () => void }) {
-  const isMobile = useIsMobile();
-  const v = Math.round(value);
-  const tier = getScoreTier(v);
-  const tierColor = getScoreColor(v);
-  const [tierVisible, setTierVisible] = useState(false);
-  useEffect(() => {
-    const t = setTimeout(() => setTierVisible(true), 1300);
-    return () => clearTimeout(t);
-  }, []);
-  return (
-    <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 10 }}>
-      <ScoreBadge value={value} size="lg" animate />
-      <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-        <div style={{
-          opacity: tierVisible ? 1 : 0, transform: tierVisible ? "translateY(0)" : "translateY(4px)",
-          transition: "opacity 0.4s ease, transform 0.4s ease",
-        }}>
-          <span style={{ fontSize: 13, fontWeight: 800, color: tierColor, letterSpacing: -0.3 }}>
-            {tier.emoji} {tier.label}
-          </span>
-        </div>
-        <button
-          onClick={onToggle}
-          aria-label="How is this score calculated?"
-          style={{
-            background: "none", border: "none",
-            cursor: "pointer", padding: 0,
-            color: "rgba(255,255,255,0.35)", fontSize: 10, fontWeight: 600,
-            fontFamily: "inherit", textAlign: "left",
-            WebkitTapHighlightColor: "transparent",
-          }}
-        >What&rsquo;s this?</button>
-      </div>
-      {show && !isMobile && <ScoreInfoPopover onClose={onClose} />}
-      {show && isMobile && <ScoreInfoSheet onClose={onClose} />}
-    </div>
-  );
-}
-
 function timeAgo(iso: string) {
   // Ensure UTC parsing — append Z if no timezone offset present
   const normalized = /[Z+\-]\d*$/.test(iso.trim()) ? iso : iso + "Z";
@@ -1427,12 +1387,46 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           );
         })()}
 
-        {/* Thesis (shown once complete) — click to edit */}
-        {obs.status === "complete" && obs.thesis && obs.thesis !== "image" && (
-          <div style={{ marginBottom: 12 }}>
-            <div style={{ margin: "0 0 8px" }}>
-              <p style={{ fontSize: 11, fontWeight: 700, color: "#AAA", letterSpacing: 1, textTransform: "uppercase", margin: 0 }}>Thesis</p>
+        {/* Score row + Devil's Advocate button */}
+        {obs.status === "complete" && obs.score != null && (() => {
+          const v = Math.round(obs.score);
+          const tier = getScoreTier(v);
+          return (
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <ScoreBadge value={obs.score} size="lg" animate />
+                <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                  <span style={{ fontSize: 13, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
+                    {tier.emoji} {tier.label}
+                  </span>
+                  <button
+                    onClick={() => setShowScoreInfo(v => !v)}
+                    style={{ background: "none", border: "none", cursor: "pointer", padding: 0, color: "rgba(255,255,255,0.35)", fontSize: 10, fontWeight: 600, fontFamily: "inherit", textAlign: "left", WebkitTapHighlightColor: "transparent" }}
+                  >What&rsquo;s this?</button>
+                </div>
+                {showScoreInfo && (useIsMobile() ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} />)}
+              </div>
+              <button
+                onClick={() => { setActiveTab("coldshower"); handleCounterpoint(); }}
+                style={{
+                  background: "rgba(255,255,255,0.06)", border: "1.5px solid rgba(255,255,255,0.15)",
+                  borderRadius: 10, padding: "8px 14px",
+                  cursor: "pointer", fontFamily: "inherit",
+                  WebkitTapHighlightColor: "transparent",
+                  transition: "background 0.15s, border-color 0.15s",
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.1)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.06)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)"; }}
+              >
+                <span style={{ fontSize: 12, fontWeight: 700, color: "#FFF", letterSpacing: -0.2 }}>{"\uD83D\uDE08"} Devil&rsquo;s Advocate</span>
+              </button>
             </div>
+          );
+        })()}
+
+        {/* Thesis — no label */}
+        {obs.status === "complete" && obs.thesis && obs.thesis !== "image" && (
+          <div style={{ marginBottom: 16 }}>
             {editMode ? (
               <div>
                 <textarea
@@ -1484,6 +1478,8 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 title={isOwner ? "Tap to edit & resubmit" : undefined}
               >{obs.thesis}</h1>
             )}
+            {/* Thin keyline before hot take content */}
+            <div style={{ borderBottom: "1px solid rgba(255,255,255,0.08)", margin: "16px 0 0" }} />
           </div>
         )}
 
@@ -1494,51 +1490,12 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </div>
         )}
 
-        {/* Metadata row: evidence type, score, tags */}
-        {obs.status === "complete" && (obs.evidence_type || obs.score != null || obs.tags?.length) && (
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 8, alignItems: "center", marginBottom: 20 }}>
-            {obs.score != null && (
-              <ScoreWithInfo value={obs.score} show={showScoreInfo} onToggle={() => setShowScoreInfo(v => !v)} onClose={() => setShowScoreInfo(false)} />
-            )}
-            <EvidenceBadge value={obs.evidence_type} size="lg" />
-            {obs.tags?.map((tag) => (
-              <span key={tag} style={{ fontSize: 11, color: "rgba(255,255,255,0.6)", background: "rgba(255,255,255,0.08)", borderRadius: 100, padding: "3px 9px", fontWeight: 600 }}>{tag}</span>
-            ))}
-          </div>
-        )}
-
-        {/* Tab bar: Hot Take | Cold Shower | PvA */}
-        {obs.status === "complete" && (
-          <div style={{ display: "flex", gap: 0, marginBottom: 20, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-            {(["hottake", "coldshower", "pva"] as const).map((tab) => {
-              const labels = { hottake: "Hot Take", coldshower: "Cold Shower", pva: "PvA" };
-              const active = activeTab === tab;
-              return (
-                <button key={tab} onClick={() => {
-                  setActiveTab(tab);
-                  if (tab === "coldshower") handleCounterpoint();
-                  if (tab === "pva") handlePvaTake();
-                }}
-                  style={{
-                    flex: 1, padding: "10px 0", background: "none", border: "none",
-                    borderBottom: active ? "2px solid #FF00AE" : "2px solid transparent",
-                    color: active ? "#FFF" : "rgba(255,255,255,0.4)",
-                    fontSize: 13, fontWeight: 700, fontFamily: "inherit",
-                    cursor: "pointer", WebkitTapHighlightColor: "transparent",
-                    transition: "color 0.2s, border-color 0.2s",
-                  }}
-                >{labels[tab]}</button>
-              );
-            })}
-          </div>
-        )}
-
-        {/* Hot Take tab content */}
-        {obs.status === "complete" && activeTab === "hottake" && (steelBottomLine || steelHardFacts.length > 0 || steelBullets.length > 0) && (
+        {/* Hot Take content — always visible */}
+        {obs.status === "complete" && (steelBottomLine || steelHardFacts.length > 0 || steelBullets.length > 0) && (
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 10, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 5 }}><PulsingDot />Hot Take</p>
+                <p style={{ fontSize: 10, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 5 }}><PulsingPlus />Hot Take</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
@@ -1585,7 +1542,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </div>
         )}
 
-        {/* Cold Shower tab content */}
+        {/* Cold Shower — shown when triggered via Devil's Advocate */}
         {obs.status === "complete" && activeTab === "coldshower" && (() => {
           if (counterpointLoading) return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 0", gap: 8 }}>
@@ -1690,11 +1647,12 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           );
         })()}
 
-        {/* Disagree CTA — always visible at bottom */}
-        {obs.status === "complete" && !obs.parent_id && (
-          <div style={{ margin: "24px 0 8px" }}>
+        {/* Bottom CTAs — PvA + Disagree */}
+        {obs.status === "complete" && (
+          <div style={{ margin: "24px 0 8px", display: "flex", flexDirection: "column", gap: 8 }}>
+            {/* PvA Take */}
             <button
-              onClick={() => onChallenge(obs)}
+              onClick={() => { setActiveTab("pva"); handlePvaTake(); }}
               style={{
                 width: "100%", padding: "15px 20px",
                 borderRadius: 12,
@@ -1709,11 +1667,35 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
             >
               <div style={{ textAlign: "left" }}>
-                <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>Disagree?</p>
-                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>Submit your counter-argument</p>
+                <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>PvA Take</p>
+                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>What would the PvA hosts say?</p>
               </div>
-              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83E\uDD4A"}</span>
+              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83C\uDFA4"}</span>
             </button>
+            {/* Disagree */}
+            {!obs.parent_id && (
+              <button
+                onClick={() => onChallenge(obs)}
+                style={{
+                  width: "100%", padding: "15px 20px",
+                  borderRadius: 12,
+                  border: "1.5px solid rgba(255,255,255,0.13)",
+                  background: "rgba(255,255,255,0.04)",
+                  cursor: "pointer", fontFamily: "inherit",
+                  display: "flex", alignItems: "center", justifyContent: "space-between",
+                  WebkitTapHighlightColor: "transparent",
+                  transition: "background 0.15s, border-color 0.15s",
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
+              >
+                <div style={{ textAlign: "left" }}>
+                  <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>Disagree?</p>
+                  <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>Submit your counter-argument</p>
+                </div>
+                <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83E\uDD4A"}</span>
+              </button>
+            )}
           </div>
         )}
 
@@ -1761,6 +1743,20 @@ function HardFact({ item }: { item: HardFactItem | string }) {
     <>
       {item.fact}{" "}
       <span style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, fontStyle: "italic" }}>({item.source})</span>
+    </>
+  );
+}
+
+function PulsingPlus() {
+  return (
+    <>
+      <span style={{
+        display: "inline-flex", alignItems: "center", justifyContent: "center",
+        width: 14, height: 14, borderRadius: "50%",
+        background: "#FF00AE", flexShrink: 0,
+        fontSize: 11, fontWeight: 900, color: "#FFF", lineHeight: 1,
+        animation: "redDotPulse 2s ease-in-out infinite",
+      }}>+</span>
     </>
   );
 }
