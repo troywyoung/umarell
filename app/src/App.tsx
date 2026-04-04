@@ -929,6 +929,53 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     </span>
                   </div>
                 )}
+                {(() => {
+                  const myTakes = yourTakeMap[obs.id] || [];
+                  if (myTakes.length === 0) return null;
+                  const visible = expandedTakes.has(obs.id) ? myTakes : myTakes.slice(0, 3);
+                  return (
+                    <div style={{ borderTop: "1px solid #F5F5F2", margin: "0 12px", paddingTop: 8, paddingBottom: 4 }}>
+                      {visible.map(t => {
+                        const abbrev = (t.userName || "").split(" ").map((w: string, i: number) => i === 0 ? w : w[0] + ".").join(" ").slice(0, 14);
+                        return (
+                          <div key={t.id} style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 8 }}>
+                            <div style={{ flex: 1, minWidth: 0 }}>
+                              {t.audioB64 ? (
+                                <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                                  <span style={{ fontSize: 8, fontWeight: 700, color: "#666", letterSpacing: -0.2, flexShrink: 0 }}>{abbrev}</span>
+                                  <span style={{ fontSize: 8, color: "#BBB", flexShrink: 0 }}>|</span>
+                                  <span style={{ fontSize: 8, color: "#AAA", letterSpacing: -0.2, flexShrink: 0 }}>{timeAgo(t.createdAt)}</span>
+                                  <span style={{ fontSize: 8, color: "#BBB", flexShrink: 0 }}>|</span>
+                                  <div style={{ flex: 1 }}><AudioTake src={t.audioB64} btnColor="#C8C4BC" durationSecs={t.durationSecs ?? 0} /></div>
+                                </div>
+                              ) : (
+                                <>
+                                  <div style={{ display: "flex", gap: 5, alignItems: "baseline", marginBottom: 2 }}>
+                                    <span style={{ fontSize: 8, fontWeight: 700, color: "#555", letterSpacing: -0.2 }}>{abbrev}</span>
+                                    <span style={{ fontSize: 8, color: "#BBB", letterSpacing: -0.2 }}>{timeAgo(t.createdAt)}</span>
+                                  </div>
+                                  <p onClick={e => { e.stopPropagation(); setExpandedTakeText(s => { const n = new Set(s); n.has(t.id) ? n.delete(t.id) : n.add(t.id); return n; }); }} style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#555", margin: 0, lineHeight: 1.4, cursor: "pointer", ...(expandedTakeText.has(t.id) ? {} : { overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }) } as React.CSSProperties}>{t.text}</p>
+                                </>
+                              )}
+                            </div>
+                            <button
+                              onClick={e => { e.stopPropagation(); fetch(`${API}/takes/${t.id}`, { method: "DELETE", headers: authHeaders() }).catch(() => {}); setYourTakeMap(prev => ({ ...prev, [obs.id]: (prev[obs.id] || []).filter((x: {id: string}) => x.id !== t.id) })); }}
+                              style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#CCC", flexShrink: 0, display: "flex", alignItems: "center", WebkitTapHighlightColor: "transparent", marginTop: 2 }}
+                            ><svg width={7} height={7} viewBox="0 0 10 10" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round"><line x1="1" y1="1" x2="9" y2="9"/><line x1="9" y1="1" x2="1" y2="9"/></svg></button>
+                          </div>
+                        );
+                      })}
+                      {myTakes.length > 3 && (
+                        <div
+                          onClick={e => { e.stopPropagation(); setExpandedTakes(s => { const n = new Set(s); n.has(obs.id) ? n.delete(obs.id) : n.add(obs.id); return n; }); }}
+                          style={{ fontSize: 9, fontWeight: 700, color: "rgba(0,0,0,0.35)", cursor: "pointer", paddingBottom: 4, letterSpacing: -0.2 }}
+                        >
+                          {expandedTakes.has(obs.id) ? "Show less" : `+${myTakes.length - 3} more`}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })()}
                 <div style={{
                   display: "flex", alignItems: "center",
                   padding: "6px 12px 10px",
@@ -996,56 +1043,12 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           const renderPost = (obs: Observation) => {
             const children = (challengeMap.get(obs.id) || [])
               .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
-            const myTakes = yourTakeMap[obs.id] || [];
             return (
               <div key={obs.id} style={{ marginBottom: 10 }}>
                 {renderCard(obs)}
                 {children.map(c => (
                   <div key={c.id} style={{ marginTop: 4 }}>{renderChallenge(c)}</div>
                 ))}
-                {(expandedTakes.has(obs.id) ? myTakes : myTakes.slice(0, 3)).map(t => {
-                  const abbrev = (t.userName || "").split(" ").map((w, i) => i === 0 ? w : w[0] + ".").join(" ").slice(0, 14);
-                  return (
-                    <div key={t.id} style={{
-                      marginTop: 4, borderRadius: 8, background: "#EDEAE4",
-                      boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
-                      padding: "7px 10px",
-                      display: "flex", alignItems: "center", gap: 8,
-                    }}>
-                      <div style={{ flex: 1, minWidth: 0 }}>
-                        {t.audioB64 ? (
-                          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                            <span style={{ fontSize: 8, fontWeight: 700, color: "#666", letterSpacing: -0.2, flexShrink: 0 }}>{abbrev}</span>
-                            <span style={{ fontSize: 8, color: "#BBB", flexShrink: 0 }}>|</span>
-                            <span style={{ fontSize: 8, color: "#AAA", letterSpacing: -0.2, flexShrink: 0 }}>{timeAgo(t.createdAt)}</span>
-                            <span style={{ fontSize: 8, color: "#BBB", flexShrink: 0 }}>|</span>
-                            <div style={{ flex: 1 }}><AudioTake src={t.audioB64} btnColor="#C8C4BC" durationSecs={t.durationSecs ?? 0} /></div>
-                          </div>
-                        ) : (
-                          <>
-                            <div style={{ display: "flex", gap: 5, alignItems: "baseline", marginBottom: 3 }}>
-                              <span style={{ fontSize: 8, fontWeight: 700, color: "#666", letterSpacing: -0.2 }}>{abbrev}</span>
-                              <span style={{ fontSize: 8, color: "#BBB", letterSpacing: -0.2 }}>{timeAgo(t.createdAt)}</span>
-                            </div>
-                            <p onClick={e => { e.stopPropagation(); setExpandedTakeText(s => { const n = new Set(s); n.has(t.id) ? n.delete(t.id) : n.add(t.id); return n; }); }} style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#555", margin: 0, lineHeight: 1.4, cursor: "pointer", ...(expandedTakeText.has(t.id) ? {} : { overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }) } as React.CSSProperties}>{t.text}</p>
-                          </>
-                        )}
-                      </div>
-                      <button
-                        onClick={e => { e.stopPropagation(); fetch(`${API}/takes/${t.id}`, { method: "DELETE", headers: authHeaders() }).catch(() => {}); setYourTakeMap(prev => ({ ...prev, [obs.id]: (prev[obs.id] || []).filter(x => x.id !== t.id) })); }}
-                        style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#BBB", flexShrink: 0, alignSelf: "flex-start", display: "flex", alignItems: "center", justifyContent: "center", WebkitTapHighlightColor: "transparent", marginTop: 2 }}
-                      ><svg width={7} height={7} viewBox="0 0 10 10" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round"><line x1="1" y1="1" x2="9" y2="9"/><line x1="9" y1="1" x2="1" y2="9"/></svg></button>
-                    </div>
-                  );
-                })}
-                {myTakes.length > 3 && (
-                  <div
-                    onClick={e => { e.stopPropagation(); setExpandedTakes(s => { const n = new Set(s); n.has(obs.id) ? n.delete(obs.id) : n.add(obs.id); return n; }); }}
-                    style={{ marginTop: 4, textAlign: "center", fontSize: 9, fontWeight: 700, color: "#2C5ABA", cursor: "pointer", padding: "6px 0", letterSpacing: -0.2 }}
-                  >
-                    {expandedTakes.has(obs.id) ? "Show less" : `+${myTakes.length - 3} more`}
-                  </div>
-                )}
               </div>
             );
           };
