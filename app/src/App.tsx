@@ -317,13 +317,13 @@ const SCORE_ROWS = [
 
 function ScoreInfoRows() {
   return (
-    <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+    <div style={{ display: "grid", gridTemplateColumns: "48px 90px 1fr", gap: "10px 0", alignItems: "baseline" }}>
       {SCORE_ROWS.map(({ range, label, color, desc }) => (
-        <div key={range} style={{ display: "flex", gap: 12, alignItems: "baseline" }}>
-          <span style={{ fontSize: 11, fontWeight: 800, color, width: 52, flexShrink: 0 }}>{range}</span>
+        <React.Fragment key={range}>
+          <span style={{ fontSize: 11, fontWeight: 800, color }}>{range}</span>
           <span style={{ fontSize: 13, fontWeight: 700, color }}>{label}</span>
-          <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}> — {desc}</span>
-        </div>
+          <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}>{desc}</span>
+        </React.Fragment>
       ))}
     </div>
   );
