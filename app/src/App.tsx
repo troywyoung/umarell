@@ -1383,19 +1383,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </>
         )}
 
-        {/* Source URL — shown at top when post came from a URL */}
-        {obs.status === "complete" && obs.input_type === "url" && obs.raw_input && (() => {
-          let domain = obs.raw_input;
-          try { domain = new URL(obs.raw_input).hostname.replace(/^www\./, ""); } catch {}
-          return (
-            <a href={obs.raw_input} target="_blank" rel="noopener noreferrer"
-              style={{ display: "inline-flex", alignItems: "center", gap: 6, textDecoration: "none", marginBottom: 16 }}>
-              <img src={`https://www.google.com/s2/favicons?domain=${domain}&sz=32`} width={14} height={14} style={{ borderRadius: 2, flexShrink: 0 }} />
-              <span style={{ fontSize: 12, color: "#FF00AE", fontWeight: 600 }}>{domain}</span>
-              <span style={{ fontSize: 11, color: "rgba(255,255,255,0.3)" }}>↗</span>
-            </a>
-          );
-        })()}
 
         {/* Score row + Devil's Advocate button */}
         {obs.status === "complete" && obs.score != null && (() => {
@@ -1403,9 +1390,9 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           const tier = getScoreTier(v);
           return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: 10, position: "relative" }}>
-                <ScoreBadge value={obs.score} size="lg" animate />
-                <span style={{ fontSize: 16, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative" }}>
+                <ScoreBadge value={obs.score} size={isMobile ? "md" : "lg"} animate />
+                <span style={{ fontSize: isMobile ? 13 : 16, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
                   {tier.label}
                 </span>
                 <button
@@ -1435,7 +1422,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.15)"; }}
                 onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
               >
-                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5 }}>Devil&rsquo;s Advocate <span style={{ fontSize: 12, lineHeight: 1 }}>&rsaquo;</span></span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>Devil&rsquo;s Advocate <span style={{ fontSize: 12, lineHeight: 1 }}>&rsaquo;</span></span>
               </button>
             </div>
           );
@@ -1494,6 +1481,17 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 }}
                 title={isOwner ? "Tap to edit & resubmit" : undefined}
               >{obs.thesis}</h1>
+              {obs.input_type === "url" && obs.raw_input && (() => {
+                let domain = obs.raw_input;
+                try { domain = new URL(obs.raw_input).hostname.replace(/^www\./, ""); } catch {}
+                return (
+                  <a href={obs.raw_input} target="_blank" rel="noopener noreferrer"
+                    style={{ display: "inline-block", fontSize: 11, color: "rgba(255,255,255,0.35)", textDecoration: "none", marginTop: 6 }}
+                    onMouseEnter={e => (e.currentTarget.style.color = "rgba(255,255,255,0.6)")}
+                    onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.35)")}
+                  >{domain} ↗</a>
+                );
+              })()}
             )}
           </div>
         )}
