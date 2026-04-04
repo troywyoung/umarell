@@ -465,8 +465,8 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false }: { val
   return (
     <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
       <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)" }}>
-        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={3.5} />
-        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={3.5}
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={4.4} />
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={4.4}
           strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round" />
       </svg>
       <div style={{
