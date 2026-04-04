@@ -1076,7 +1076,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       fontFamily: "inherit",
                     }}
                   >
-                    Recent
+                    Latest
                   </button>
 
                   {/* Top pill */}
