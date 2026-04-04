@@ -1416,7 +1416,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 onClick={() => { setActiveTab("coldshower"); handleCounterpoint(); }}
                 style={{
                   background: "transparent", border: "1.5px solid #FF00AE",
-                  borderRadius: 10, padding: "8px 10px",
+                  borderRadius: 10, padding: "8px 5px",
                   cursor: "pointer", fontFamily: "inherit",
                   WebkitTapHighlightColor: "transparent",
                   transition: "background 0.15s, border-color 0.15s",
@@ -1789,7 +1789,7 @@ function ShareButton({ obsId, onClick, prominent = false }: { obsId: string; onC
         style={{
           display: "inline-flex", alignItems: "center", gap: 5,
           background: "none", border: "none", cursor: "pointer", padding: "4px 0",
-          color: copied ? "#FF00AE" : "rgba(255,255,255,0.55)", fontSize: 13, fontWeight: 600, fontFamily: "inherit",
+          color: copied ? "#FF00AE" : "#FFF", fontSize: 13, fontWeight: 600, fontFamily: "inherit",
           WebkitTapHighlightColor: "transparent",
           transition: "color 0.2s",
         }}
@@ -1810,7 +1810,7 @@ function ShareButton({ obsId, onClick, prominent = false }: { obsId: string; onC
       style={{
         display: "inline-flex", alignItems: "center", gap: 5,
         background: "none", border: "none", cursor: "pointer", padding: 0,
-        color: copied ? "#FF00AE" : "#666", fontSize: 10, fontFamily: "inherit",
+        color: copied ? "#FF00AE" : "#FFF", fontSize: 10, fontFamily: "inherit",
         WebkitTapHighlightColor: "transparent",
         transition: "color 0.2s",
       }}
