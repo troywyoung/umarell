@@ -822,13 +822,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
                 {/* Score — top right corner */}
-                {!jokeMap[obs.id] && (
-                  <div style={{ position: "absolute", top: 10, right: 10, zIndex: 1 }}>
-                    <ScoreBadge value={obs.score} size="sm" dark />
-                  </div>
-                )}
-                {!jokeMap[obs.id] && (
-                  <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 60 }}>
+                <div style={{ position: "absolute", top: 10, right: 10, zIndex: 1 }}>
+                  <ScoreBadge value={obs.score} size="sm" dark />
+                </div>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 60 }}>
                     {obs.image_data && (
                       <img
                         src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
@@ -844,7 +841,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       {obs.thesis || obs.raw_input}
                     </p>
                   </div>
-                )}
                 {yourTakeInput.has(obs.id) && (
                   <div onClick={e => e.stopPropagation()} style={{ padding: "4px 12px 10px" }}>
                     <textarea
@@ -891,16 +887,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     </div>
                   </div>
                 )}
-                {jokeMap[obs.id] ? (
-                  <p style={{
-                    fontSize: window.innerWidth < 600 ? 18 : 15,
-                    fontWeight: 800, color: "#1A1A1A", lineHeight: 1.3,
-                    margin: 0, padding: "2px 14px 14px 14px",
-                    letterSpacing: -0.4,
-                  }}>
-                    {jokeMap[obs.id]}
-                  </p>
-                ) : bullets.length > 0 && (
+                {bullets.length > 0 && (
                   <div style={{ padding: "0 12px 10px 12px", display: "flex", flexDirection: "column", gap: 6 }}>
                     {bullets.map((b, i) => (
                       <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
@@ -908,6 +895,24 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         <span style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#555", lineHeight: 1.4 }}>{b}</span>
                       </div>
                     ))}
+                  </div>
+                )}
+                {jokeMap[obs.id] && (
+                  <div style={{
+                    margin: "0 12px 10px 12px",
+                    borderLeft: "3px solid #FF00AE",
+                    paddingLeft: 10,
+                    paddingTop: 6,
+                    paddingBottom: 6,
+                  }}>
+                    <span style={{ fontSize: 8, fontWeight: 700, color: "#FF00AE", letterSpacing: 0.5, textTransform: "uppercase", display: "block", marginBottom: 4 }}>Brian's take</span>
+                    <p style={{
+                      fontSize: window.innerWidth < 600 ? 13 : 11,
+                      fontWeight: 600, color: "#1A1A1A", lineHeight: 1.45,
+                      margin: 0, letterSpacing: -0.2, fontStyle: "italic",
+                    }}>
+                      {jokeMap[obs.id]}
+                    </p>
                   </div>
                 )}
                 {(obs.status === "formatting" || obs.status === "researching") && (
