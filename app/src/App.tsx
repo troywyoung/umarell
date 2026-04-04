@@ -663,16 +663,16 @@ function AboutView({ onBack }: { onBack: () => void }) {
       </div>
       <div style={{ padding: "28px 24px 0" }}>
         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.9)", lineHeight: 1.65, margin: "0 0 28px", letterSpacing: -0.2 }}>
-          A place to stress-test what you think. Drop a take, a link, or an idea — AI builds the strongest possible case for it, scores its conviction, and hands it back to you.
+          A feed of hot takes — stress-tested by AI, scored for conviction, and open for debate.
         </p>
         <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>How it works</p>
-        {bullet("Drop anything — a hot take, a URL, a half-formed opinion. AI finds the sharpest thesis and the best evidence for it.")}
-        {bullet("Every take gets a conviction score from 0–100. Strong evidence pushes it up. Weak reasoning pulls it down. You see where it lands before you decide what to do with it.")}
-        {bullet("Disagree? Push back. Submit a counter and the AI steelmans that too. The feed becomes a live record of the argument.")}
-        {bullet("Takes from People vs Algorithms drop into the feed each week. Add your reaction, hear Brian's take, or challenge it directly.")}
+        {bullet("Drop a hot take, paste a link, or type out a half-formed opinion. AI sharpens it into its most defensible form and builds the case for it.")}
+        {bullet("Every take gets a conviction score from 0–100 — how well does the evidence actually hold up? You see the number before you decide whether to push back.")}
+        {bullet("Disagree? Challenge it. Your counter gets the same treatment. The feed becomes a live record of the argument.")}
+        {bullet("Add your own take directly in the feed — text or voice. React, riff, or just say what you actually think.")}
         <div style={{ marginTop: 32, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.6, margin: 0, letterSpacing: -0.1 }}>
-            Most people only ever argue against the weakest version of ideas they disagree with. This is the opposite. Understand the best case first. Then decide.
+            Most takes sound better before anyone pushes back. This is the push back.
           </p>
         </div>
       </div>
