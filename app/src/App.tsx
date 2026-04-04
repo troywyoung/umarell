@@ -1087,11 +1087,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     onClick={() => setSelectedTopic(selectedTopic === "__top__" ? null : "__top__")}
                     style={{
                       flexShrink: 0,
-                      background: selectedTopic === "__top__" ? "#E7B84B" : "rgba(231,184,75,0.15)",
-                      border: selectedTopic === "__top__" ? "1.5px solid #E7B84B" : "1.5px solid rgba(231,184,75,0.4)",
+                      background: selectedTopic === "__top__" ? "#4CAF50" : "rgba(76,175,80,0.15)",
+                      border: selectedTopic === "__top__" ? "1.5px solid #4CAF50" : "1.5px solid rgba(76,175,80,0.4)",
                       borderRadius: 6, padding: "3px 9px",
                       fontSize: 9, fontWeight: 700,
-                      color: selectedTopic === "__top__" ? "#12102B" : "#E7B84B",
+                      color: selectedTopic === "__top__" ? "#FFF" : "#4CAF50",
                       cursor: "pointer", WebkitTapHighlightColor: "transparent",
                       fontFamily: "inherit",
                     }}
@@ -1123,8 +1123,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         flexShrink: 0,
                         background: selectedTopic === topic ? "rgba(255,255,255,0.15)" : "transparent",
                         border: selectedTopic === topic ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
-                        borderRadius: 6, padding: "4px 11px",
-                        fontSize: 11, fontWeight: 700,
+                        borderRadius: 6, padding: "3px 9px",
+                        fontSize: 9, fontWeight: 700,
                         color: selectedTopic === topic ? "#FFF" : "rgba(255,255,255,0.55)",
                         cursor: "pointer", WebkitTapHighlightColor: "transparent",
                         fontFamily: "inherit",
