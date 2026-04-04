@@ -785,11 +785,17 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             .map(([tag]) => tag);
 
           // All posts in chronological order — episode posts dispersed in feed, not pinned
-          const filteredPosts = !selectedTopic || selectedTopic === "__all__"
-            ? topLevel
-            : selectedTopic === "PvA"
-              ? topLevel.filter(o => !!o.episode_tag)
-              : topLevel.filter(o => (o.tags || []).includes(selectedTopic));
+          const rankScore = (o: Observation) => {
+            const hoursAgo = (Date.now() - new Date(o.created_at).getTime()) / 3600000;
+            return (o.score || 0) / Math.pow(hoursAgo + 2, 1.6);
+          };
+          const filteredPosts = selectedTopic === "__top__"
+            ? [...topLevel].sort((a, b) => rankScore(b) - rankScore(a))
+            : !selectedTopic || selectedTopic === "__all__"
+              ? topLevel
+              : selectedTopic === "PvA"
+                ? topLevel.filter(o => !!o.episode_tag)
+                : topLevel.filter(o => (o.tags || []).includes(selectedTopic));
 
           const renderCard = (obs: Observation) => {
             let bullets: string[] = [];
@@ -1071,6 +1077,23 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     }}
                   >
                     Recent
+                  </button>
+
+                  {/* Top pill */}
+                  <button
+                    onClick={() => setSelectedTopic(selectedTopic === "__top__" ? null : "__top__")}
+                    style={{
+                      flexShrink: 0,
+                      background: selectedTopic === "__top__" ? "#E7B84B" : "rgba(231,184,75,0.15)",
+                      border: selectedTopic === "__top__" ? "1.5px solid #E7B84B" : "1.5px solid rgba(231,184,75,0.4)",
+                      borderRadius: 6, padding: "3px 9px",
+                      fontSize: 9, fontWeight: 700,
+                      color: selectedTopic === "__top__" ? "#12102B" : "#E7B84B",
+                      cursor: "pointer", WebkitTapHighlightColor: "transparent",
+                      fontFamily: "inherit",
+                    }}
+                  >
+                    Top
                   </button>
 
                   {/* PvA pill — always visible */}
