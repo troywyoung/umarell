@@ -1449,7 +1449,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.15)"; }}
                 onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
               >
-                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2 }}>Devil&rsquo;s Advocate</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5 }}>Devil&rsquo;s Advocate <span style={{ fontSize: 14, lineHeight: 1 }}>&rsaquo;</span></span>
               </button>
             </div>
           );
