@@ -317,7 +317,7 @@ const SCORE_ROWS = [
 
 function ScoreInfoRows() {
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "48px 90px 1fr", gap: "10px 0", alignItems: "baseline" }}>
+    <div style={{ display: "grid", gridTemplateColumns: "48px 90px 1fr", gap: "8px 0", alignItems: "baseline" }}>
       {SCORE_ROWS.map(({ range, label, color, desc }) => (
         <Fragment key={range}>
           <span style={{ fontSize: 11, fontWeight: 800, color }}>{range}</span>
@@ -450,8 +450,8 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false }: { val
   return (
     <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
       <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)" }}>
-        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={4.4} />
-        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={4.4}
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" ? 4.4 : 3.4} />
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" ? 4.4 : 3.4}
           strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round" />
       </svg>
       <div style={{
@@ -1392,10 +1392,11 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative" }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "md" : "lg"} animate />
-                <span style={{ fontSize: isMobile ? 13 : 16, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
-                  {tier.label}
-                </span>
-                <button
+                <span style={{ display: "inline-flex", alignItems: "center", gap: 5 }}>
+                  <span style={{ fontSize: isMobile ? 13 : 16, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
+                    {tier.label}
+                  </span>
+                  <button
                   onClick={() => setShowScoreInfo(sv => !sv)}
                   style={{
                     background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
@@ -1408,6 +1409,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                     WebkitTapHighlightColor: "transparent",
                   }}
                 >?</button>
+                </span>
                 {showScoreInfo && (isMobile ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} />)}
               </div>
               <button
