@@ -1170,7 +1170,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   const [pvaError, setPvaError] = useState(false);
   const [showCounterpoint, setShowCounterpoint] = useState(false);
   const [showPva, setShowPva] = useState(false);
-  const [, setFlashSteelman] = useState(false);
   const [flashCounterpoint, setFlashCounterpoint] = useState(false);
   const [flashPva, setFlashPva] = useState(false);
   const [activeSection, setActiveSection] = useState<"steelman" | "counterpoint" | "pva">("steelman");
@@ -1247,10 +1246,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
       setFlash(true);
       setTimeout(() => setFlash(false), 3000);
     }, 80);
-  };
-
-  const handleSteelmanScroll = () => {
-    scrollToAndFlash(steelmanRef, setFlashSteelman);
   };
 
   const handleCounterpoint = async () => {
@@ -1534,32 +1529,10 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </div>
         )}
 
-        {/* Challenge CTA — top position, before content */}
-        {obs.status === "complete" && !obs.parent_id && (
-          <button
-            onClick={() => onChallenge(obs)}
-            style={{
-              width: "100%", padding: "12px 16px", marginBottom: 16,
-              borderRadius: 10,
-              border: "1.5px solid rgba(255,255,255,0.13)",
-              background: "rgba(255,255,255,0.04)",
-              cursor: "pointer", fontFamily: "inherit",
-              display: "flex", alignItems: "center", justifyContent: "space-between",
-              WebkitTapHighlightColor: "transparent",
-              transition: "background 0.15s, border-color 0.15s",
-            }}
-            onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.35)"; }}
-            onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
-          >
-            <span style={{ fontSize: 13, fontWeight: 700, color: "#FFF", letterSpacing: -0.2 }}>Disagree? Challenge this take →</span>
-          </button>
-        )}
-
-        {/* Action buttons: Steelman · Counterpoint · PvA Take */}
+        {/* Action buttons: Counterpoint · PvA Take */}
         {obs.status === "complete" && (
           <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
             {([
-              ["steelman", "hot take", handleSteelmanScroll, false] as const,
               ["counterpoint", "cold shower", handleCounterpoint, counterpointLoading] as const,
               ["pva", "pva take", handlePvaTake, pvaLoading] as const,
             ]).map(([key, label, handler, loading]) => (
