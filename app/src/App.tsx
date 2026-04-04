@@ -1390,7 +1390,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           const tier = getScoreTier(v);
           return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative", flexShrink: 1, minWidth: 0 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative" }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate />
                 {(() => {
                   const words = tier.label.split(" ");
