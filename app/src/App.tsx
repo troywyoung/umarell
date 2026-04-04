@@ -1142,6 +1142,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   const [deleting, setDeleting] = useState(false);
   const [challenges, setChallenges] = useState<Observation[]>([]);
   const [showScoreInfo, setShowScoreInfo] = useState(false);
+  const isMobile = useIsMobile();
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const consecutiveNullsRef = useRef(0);
 
@@ -1420,7 +1421,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                     WebkitTapHighlightColor: "transparent",
                   }}
                 >?</button>
-                {showScoreInfo && (useIsMobile() ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} />)}
+                {showScoreInfo && (isMobile ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} />)}
               </div>
               <button
                 onClick={() => { setActiveTab("coldshower"); handleCounterpoint(); }}
