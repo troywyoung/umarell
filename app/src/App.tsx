@@ -57,6 +57,22 @@ function BurstIcon({ size = 20, white = false, className, style }: { size?: numb
   );
 }
 
+// ─── Static Scribble — single frozen scribble path for CTA icons ─────────────
+function StaticScribble({ size = 24 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="-8 -8 116 116" style={{ display: "block" }}>
+      <path
+        fill="none"
+        stroke="#FF00AE"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M50.0,50.0 C12.3,28.7 82.1,4.5 34.2,22.8 C-5.6,60.1 92.4,14.3 68.5,55.2 C30.1,88.7 75.3,21.9 42.8,71.4 C8.2,44.6 88.7,73.5 62.1,38.9 C19.4,62.3 71.8,85.1 50.3,29.7 C84.6,48.2 15.7,76.8 38.4,63.5 C72.9,35.1 26.3,82.4 58.7,44.8 C90.2,18.3 14.8,68.7 46.1,56.2 C78.5,29.6 22.7,74.3 54.9,48.1"
+      />
+    </svg>
+  );
+}
+
 // ─── Animated Scribble — rAF driven, runs forever, new path each cycle ───────
 function generateScribblePath(): string {
   const r = () => Math.random();
@@ -402,7 +418,7 @@ function getScoreColor(v: number): string {
 
 function getScoreTier(v: number): { label: string } {
   if (v <= 20) return { label: "Unpersuasive" };
-  if (v <= 40) return { label: "Low Signal" };
+  if (v <= 40) return { label: "Weak Signal" };
   if (v <= 59) return { label: "Jury\u2019s Out" };
   if (v <= 79) return { label: "Fighting Words" };
   if (v <= 94) return { label: "Holds Water" };
@@ -1676,7 +1692,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>PvA Take</p>
                 <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>What would the PvA hosts say?</p>
               </div>
-              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83C\uDFA4"}</span>
+              <StaticScribble size={28} />
             </button>
             {/* Disagree */}
             {!obs.parent_id && (
@@ -1699,7 +1715,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>Disagree?</p>
                   <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>Submit your counter-argument</p>
                 </div>
-                <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83E\uDD4A"}</span>
+                <svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#FF00AE" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginLeft: 12 }}><path d="M9 14l-4 4m0 0l-4-4m4 4V4" /><path d="M15 10l4-4m0 0l4 4m-4-4v14" /></svg>
               </button>
             )}
           </div>
