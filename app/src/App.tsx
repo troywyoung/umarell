@@ -1390,35 +1390,23 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           const tier = getScoreTier(v);
           return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative" }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 6, position: "relative" }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate />
-                {(() => {
-                  const words = tier.label.split(" ");
-                  const last = words[words.length - 1];
-                  const rest = words.slice(0, -1).join(" ");
-                  const qBtn = (
-                    <button
-                      onClick={() => setShowScoreInfo(sv => !sv)}
-                      style={{
-                        background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
-                        border: "1px solid rgba(255,255,255,0.12)",
-                        borderRadius: "50%", width: 18, height: 18,
-                        display: "inline-block",
-                        cursor: "pointer", padding: 0,
-                        color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 800,
-                        lineHeight: "18px", textAlign: "center",
-                        verticalAlign: "middle",
-                        WebkitTapHighlightColor: "transparent",
-                      }}
-                    >?</button>
-                  );
-                  return (
-                    <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35 }}>
-                      {rest && <>{rest} </>}
-                      <span style={{ whiteSpace: "nowrap" }}>{last}&nbsp;{qBtn}</span>
-                    </span>
-                  );
-                })()}
+                <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35 }}>
+                  {tier.label}
+                </span>
+                <button
+                  onClick={() => setShowScoreInfo(sv => !sv)}
+                  style={{
+                    background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
+                    border: "1px solid rgba(255,255,255,0.12)",
+                    borderRadius: "50%", width: 18, height: 18,
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    cursor: "pointer", padding: 0, flexShrink: 0,
+                    color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 800,
+                    WebkitTapHighlightColor: "transparent",
+                  }}
+                >?</button>
                 {showScoreInfo && (isMobile ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} />)}
               </div>
               <button
