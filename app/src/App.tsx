@@ -984,11 +984,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     {jokeMap[obs.id]}
                   </p>
                 ) : bullets.length > 0 && (
-                  <div style={{ padding: "0 12px 10px 12px", display: "flex", flexDirection: "column", gap: 4 }}>
+                  <div style={{ padding: "0 62px 10px 12px", display: "flex", flexDirection: "column", gap: 6 }}>
                     {bullets.map((b, i) => (
                       <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
-                        <span style={{ fontSize: 9, color: "#CCC", marginTop: 3, flexShrink: 0 }}>•</span>
-                        <span style={{ fontSize: 10, color: "#555", lineHeight: 1.5, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" } as React.CSSProperties}>{b}</span>
+                        <span style={{ fontSize: 10, color: "#888", marginTop: 2, flexShrink: 0 }}>•</span>
+                        <span style={{ fontSize: 10, color: "#555", lineHeight: 1.35, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" } as React.CSSProperties}>{b}</span>
                       </div>
                     ))}
                   </div>
