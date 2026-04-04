@@ -466,11 +466,11 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false }: { val
   );
 }
 
-function AudioTake({ src, btnColor = "#2C5ABA" }: { src: string; btnColor?: string }) {
+function AudioTake({ src, btnColor = "#2C5ABA", durationSecs = 0 }: { src: string; btnColor?: string; durationSecs?: number }) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [duration, setDuration] = useState(0);
+  const [duration, setDuration] = useState(durationSecs);
 
   const toggle = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -574,7 +574,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   const [yourTakeInput, setYourTakeInput] = useState<Set<string>>(new Set());
   const [yourTakeDraft, setYourTakeDraft] = useState<Record<string, string>>({});
   const [yourTakePlaceholder, setYourTakePlaceholder] = useState<Record<string, string>>({});
-  const [yourTakeMap, setYourTakeMap] = useState<Record<string, Array<{ id: string; text?: string; audioB64?: string; userId: string; userName: string; createdAt: string }>>>(() => {
+  const [yourTakeMap, setYourTakeMap] = useState<Record<string, Array<{ id: string; text?: string; audioB64?: string; durationSecs?: number; userId: string; userName: string; createdAt: string }>>>(() => {
     try { return JSON.parse(localStorage.getItem("yourTakes") || "{}"); } catch { return {}; }
   });
   const [expandedTakes, setExpandedTakes] = useState<Set<string>>(new Set());
@@ -625,9 +625,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
       mr.onstop = () => {
         const blob = new Blob(audioChunksRef.current, { type: mr.mimeType || "audio/webm" });
         const reader = new FileReader();
+        const capturedSecs = recordingSecs;
         reader.onloadend = () => {
           const audioB64 = (reader.result as string);
-          const entry = { id: crypto.randomUUID(), audioB64, userId: authUser.id, userName: authUser.name, createdAt: new Date().toISOString() };
+          const entry = { id: crypto.randomUUID(), audioB64, durationSecs: capturedSecs, userId: authUser.id, userName: authUser.name, createdAt: new Date().toISOString() };
           const next = { ...yourTakeMap, [obsId]: [...(yourTakeMap[obsId] || []), entry] };
           setYourTakeMap(next);
           saveTakes(next);
@@ -971,7 +972,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                             <span style={{ fontSize: 8, color: "#BBB", flexShrink: 0 }}>|</span>
                             <span style={{ fontSize: 8, color: "#AAA", letterSpacing: -0.2, flexShrink: 0 }}>{timeAgo(t.createdAt)}</span>
                             <span style={{ fontSize: 8, color: "#BBB", flexShrink: 0 }}>|</span>
-                            <div style={{ flex: 1 }}><AudioTake src={t.audioB64} btnColor="#C8C4BC" /></div>
+                            <div style={{ flex: 1 }}><AudioTake src={t.audioB64} btnColor="#C8C4BC" durationSecs={t.durationSecs ?? 0} /></div>
                           </div>
                         ) : (
                           <>
