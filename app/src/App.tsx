@@ -1554,12 +1554,12 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         {obs.status === "complete" && activeTab === "coldshower" && (() => {
           if (counterpointLoading) return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 0", gap: 8 }}>
-              <ProcessingDots color="#FF00AE" /><span style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>Generating cold shower…</span>
+              <ProcessingDots color="#FF00AE" /><span style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>Playing devil&rsquo;s advocate…</span>
             </div>
           );
           if (counterpointError) return (
             <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,0,174,0.3)" }}>
-              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>Cold shower failed. Try again.</p>
+              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>Devil&rsquo;s advocate failed. Try again.</p>
             </div>
           );
           if (!counterpoint) return (
