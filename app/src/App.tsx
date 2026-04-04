@@ -429,8 +429,8 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false }: { val
   if (value == null) return null;
   const target = Math.round(value);
   const accent = getScoreColor(target);
-  const dim = size === "sm" ? 40 : size === "lg" ? 40 : 32;
-  const fontSize = size === "sm" ? 14 : size === "lg" ? 14 : 11;
+  const dim = size === "sm" ? 40 : size === "lg" ? 48 : 32;
+  const fontSize = size === "sm" ? 14 : size === "lg" ? 17 : 11;
   const r = (dim - 4) / 2;
   const circ = 2 * Math.PI * r;
 
@@ -1419,7 +1419,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10, position: "relative" }}>
                 <ScoreBadge value={obs.score} size="lg" animate />
-                <span style={{ fontSize: 13, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
+                <span style={{ fontSize: 16, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
                   {tier.label}
                 </span>
                 <button
