@@ -1391,9 +1391,9 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative" }}>
-                <ScoreBadge value={obs.score} size={isMobile ? "md" : "lg"} animate />
+                <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate />
                 <span style={{ display: "inline-flex", alignItems: "center", gap: 5 }}>
-                  <span style={{ fontSize: isMobile ? 13 : 16, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
+                  <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
                     {tier.label}
                   </span>
                   <button
@@ -1415,23 +1415,19 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               <button
                 onClick={() => { setActiveTab("coldshower"); handleCounterpoint(); }}
                 style={{
-                  background: counterpointLoading
-                    ? "linear-gradient(90deg, #FF00AE 0%, #FF00AE 50%, transparent 50%, transparent 100%)"
-                    : "transparent",
-                  backgroundSize: counterpointLoading ? "200% 100%" : undefined,
-                  animation: counterpointLoading ? "devilFill 2.5s ease-in-out infinite" : undefined,
+                  background: "transparent",
                   border: "1.5px solid #FF00AE",
-                  borderRadius: 10, padding: "8px 5px",
+                  borderRadius: 10, padding: "8px 12px",
                   cursor: counterpointLoading ? "default" : "pointer", fontFamily: "inherit",
                   WebkitTapHighlightColor: "transparent",
-                  transition: counterpointLoading ? "none" : "background 0.15s, border-color 0.15s",
-                  overflow: "hidden", position: "relative",
+                  transition: "background 0.15s",
+                  animation: counterpointLoading ? "devilBorder 1.2s linear infinite" : undefined,
                 }}
                 onMouseEnter={e => { if (!counterpointLoading) e.currentTarget.style.background = "rgba(255,0,174,0.15)"; }}
-                onMouseLeave={e => { if (!counterpointLoading) e.currentTarget.style.background = "transparent"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
                 disabled={counterpointLoading}
               >
-                <span style={{ fontSize: 12, fontWeight: 700, color: counterpointLoading ? "#FFF" : "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap", position: "relative", zIndex: 1 }}>Devil&rsquo;s Advocate</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>Devil&rsquo;s Advocate</span>
               </button>
             </div>
           );
@@ -1765,9 +1761,9 @@ function PulsingDot() {
           0%, 100% { opacity: 1; transform: scale(1); }
           50% { opacity: 0.3; transform: scale(0.7); }
         }
-        @keyframes devilFill {
-          0% { background-position: 100% 0; }
-          100% { background-position: 0% 0; }
+        @keyframes devilBorder {
+          0%, 100% { box-shadow: 0 0 4px #FF00AE, inset 0 0 4px rgba(255,0,174,0.15); border-color: #FF00AE; }
+          50% { box-shadow: 0 0 12px #FF00AE, inset 0 0 8px rgba(255,0,174,0.25); border-color: #FF77D0; }
         }
       `}</style>
     </>
