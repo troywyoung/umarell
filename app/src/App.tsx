@@ -905,7 +905,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     {bullets.map((b, i) => (
                       <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
                         <span style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#888", marginTop: 2, flexShrink: 0 }}>•</span>
-                        <span style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#555", lineHeight: 1.4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical" } as React.CSSProperties}>{b}</span>
+                        <span style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#555", lineHeight: 1.4 }}>{b}</span>
                       </div>
                     ))}
                   </div>
