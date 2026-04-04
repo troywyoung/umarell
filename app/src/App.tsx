@@ -1392,23 +1392,22 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative", flexShrink: 1, minWidth: 0 }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate />
-                <span style={{ display: "inline-flex", alignItems: "center", gap: 5 }}>
-                  <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
-                    {tier.label}
-                  </span>
+                <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
+                  {tier.label}{" "}
                   <button
-                  onClick={() => setShowScoreInfo(sv => !sv)}
-                  style={{
-                    background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
-                    border: "1px solid rgba(255,255,255,0.12)",
-                    borderRadius: "50%", width: 18, height: 18,
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    cursor: "pointer", padding: 0,
-                    color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 800,
-                    flexShrink: 0, lineHeight: 1,
-                    WebkitTapHighlightColor: "transparent",
-                  }}
-                >?</button>
+                    onClick={() => setShowScoreInfo(sv => !sv)}
+                    style={{
+                      background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
+                      border: "1px solid rgba(255,255,255,0.12)",
+                      borderRadius: "50%", width: 18, height: 18,
+                      display: "inline-flex", alignItems: "center", justifyContent: "center",
+                      cursor: "pointer", padding: 0,
+                      color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 800,
+                      flexShrink: 0, lineHeight: 1,
+                      verticalAlign: "middle",
+                      WebkitTapHighlightColor: "transparent",
+                    }}
+                  >?</button>
                 </span>
                 {showScoreInfo && (isMobile ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} />)}
               </div>
