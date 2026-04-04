@@ -1172,7 +1172,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   const [showPva, setShowPva] = useState(false);
   const [flashCounterpoint, setFlashCounterpoint] = useState(false);
   const [flashPva, setFlashPva] = useState(false);
-  const [activeSection, setActiveSection] = useState<"steelman" | "counterpoint" | "pva">("steelman");
   const steelmanRef = useRef<HTMLDivElement>(null);
   const counterpointRef = useRef<HTMLDivElement>(null);
   const pvaRef = useRef<HTMLDivElement>(null);
@@ -1222,23 +1221,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
     }, 2500);
     return () => { if (pollRef.current) clearInterval(pollRef.current); };
   }, [obs.id, obs.status]);
-
-  // Track which section is in view
-  useEffect(() => {
-    const refs: [string, React.RefObject<HTMLDivElement | null>][] = [
-      ["steelman", steelmanRef], ["counterpoint", counterpointRef], ["pva", pvaRef],
-    ];
-    const observer = new IntersectionObserver((entries) => {
-      for (const entry of entries) {
-        if (entry.isIntersecting) {
-          const match = refs.find(([, r]) => r.current === entry.target);
-          if (match) setActiveSection(match[0] as "steelman" | "counterpoint" | "pva");
-        }
-      }
-    }, { threshold: 0.3 });
-    refs.forEach(([, r]) => { if (r.current) observer.observe(r.current); });
-    return () => observer.disconnect();
-  });
 
   const scrollToAndFlash = (ref: React.RefObject<HTMLDivElement | null>, setFlash: (v: boolean) => void) => {
     setTimeout(() => {
@@ -1529,31 +1511,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </div>
         )}
 
-        {/* Action buttons: Counterpoint · PvA Take */}
-        {obs.status === "complete" && (
-          <div style={{ display: "flex", gap: 8, marginBottom: 20 }}>
-            {([
-              ["counterpoint", "cold shower", handleCounterpoint, counterpointLoading] as const,
-              ["pva", "pva take", handlePvaTake, pvaLoading] as const,
-            ]).map(([key, label, handler, loading]) => (
-              <button key={key} onClick={handler}
-                style={{
-                  flex: 1, padding: "10px 0", borderRadius: 10, border: "none", cursor: "pointer",
-                  background: activeSection === key ? "#FF00AE" : "rgba(255,255,255,0.08)",
-                  color: activeSection === key ? "#FFF" : "rgba(255,255,255,0.5)",
-                  fontSize: 13, fontWeight: 700, fontFamily: "inherit",
-                  WebkitTapHighlightColor: "transparent",
-                  display: "flex", alignItems: "center", justifyContent: "center", gap: 4,
-                  transition: "background 0.2s, color 0.2s",
-                }}
-              >
-                {loading ? <><ProcessingDots color="#FFF" /> <span>Loading…</span></> : (
-                  label
-                )}
-              </button>
-            ))}
-          </div>
-        )}
+        {/* No action buttons here — cold shower / pva take CTAs appear after content */}
 
         {/* Steelman — always visible when complete */}
         {obs.status === "complete" && (steelBottomLine || steelHardFacts.length > 0 || steelBullets.length > 0) && (
@@ -1609,11 +1567,12 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           </div>
         )}
 
-        {/* Challenge CTA — prominent, after content */}
-        {obs.status === "complete" && !obs.parent_id && (
-          <div style={{ margin: "24px 0 8px" }}>
+        {/* Action CTAs — after hot take content */}
+        {obs.status === "complete" && (
+          <div style={{ margin: "24px 0 8px", display: "flex", flexDirection: "column", gap: 8 }}>
+            {/* Cold Shower */}
             <button
-              onClick={() => onChallenge(obs)}
+              onClick={handleCounterpoint}
               style={{
                 width: "100%", padding: "15px 20px",
                 borderRadius: 12,
@@ -1628,11 +1587,61 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
             >
               <div style={{ textAlign: "left" }}>
-                <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>Disagree with this take?</p>
-                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>Submit your counter-argument</p>
+                <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>
+                  {counterpointLoading ? "Loading\u2026" : "Cold Shower"}
+                </p>
+                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>See the strongest case against this take</p>
               </div>
-              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>→</span>
+              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\u2744\uFE0F"}</span>
             </button>
+            {/* PvA Take */}
+            <button
+              onClick={handlePvaTake}
+              style={{
+                width: "100%", padding: "15px 20px",
+                borderRadius: 12,
+                border: "1.5px solid rgba(255,255,255,0.13)",
+                background: "rgba(255,255,255,0.04)",
+                cursor: "pointer", fontFamily: "inherit",
+                display: "flex", alignItems: "center", justifyContent: "space-between",
+                WebkitTapHighlightColor: "transparent",
+                transition: "background 0.15s, border-color 0.15s",
+              }}
+              onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
+            >
+              <div style={{ textAlign: "left" }}>
+                <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>
+                  {pvaLoading ? "Loading\u2026" : "PvA Take"}
+                </p>
+                <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>What would the PvA hosts say?</p>
+              </div>
+              <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83C\uDFA4"}</span>
+            </button>
+            {/* Disagree / Challenge */}
+            {!obs.parent_id && (
+              <button
+                onClick={() => onChallenge(obs)}
+                style={{
+                  width: "100%", padding: "15px 20px",
+                  borderRadius: 12,
+                  border: "1.5px solid rgba(255,255,255,0.13)",
+                  background: "rgba(255,255,255,0.04)",
+                  cursor: "pointer", fontFamily: "inherit",
+                  display: "flex", alignItems: "center", justifyContent: "space-between",
+                  WebkitTapHighlightColor: "transparent",
+                  transition: "background 0.15s, border-color 0.15s",
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
+                onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
+              >
+                <div style={{ textAlign: "left" }}>
+                  <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>Disagree?</p>
+                  <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>Submit your counter-argument</p>
+                </div>
+                <span style={{ fontSize: 20, color: "#FF00AE", fontWeight: 700, flexShrink: 0, marginLeft: 12 }}>{"\uD83E\uDD4A"}</span>
+              </button>
+            )}
           </div>
         )}
 
