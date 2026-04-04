@@ -2457,8 +2457,8 @@ export default function App() {
   if (maintenance) {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", alignItems: "center", justifyContent: "center", padding: 32 }}>
-        <p style={{ fontFamily: "'Besley', serif", fontSize: 22, fontWeight: 700, color: "#FFF", textAlign: "center", lineHeight: 1.4, letterSpacing: -0.5, margin: 0 }}>
-          hot takes is getting hotter.<br />come back later.
+        <p style={{ fontFamily: "'Besley', serif", fontSize: 22, fontWeight: 400, color: "#FFF", textAlign: "center", lineHeight: 1.4, letterSpacing: -0.5, margin: 0 }}>
+          Hot Take is getting hotter.<br />Come back later.
         </p>
       </div>
     );
