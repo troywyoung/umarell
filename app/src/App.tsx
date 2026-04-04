@@ -1389,11 +1389,11 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           const v = Math.round(obs.score);
           const tier = getScoreTier(v);
           return (
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
-              <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative" }}>
+            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative", flexShrink: 1, minWidth: 0 }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate />
-                <span style={{ display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>
-                  <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3, whiteSpace: "nowrap" }}>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: 5 }}>
+                  <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
                     {tier.label}
                   </span>
                   <button
@@ -1422,6 +1422,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   WebkitTapHighlightColor: "transparent",
                   transition: "background 0.15s",
                   animation: counterpointLoading ? "devilBorder 1.2s linear infinite" : undefined,
+                  flexShrink: 0,
                 }}
                 onMouseEnter={e => { if (!counterpointLoading) e.currentTarget.style.background = "rgba(255,0,174,0.15)"; }}
                 onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
