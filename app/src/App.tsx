@@ -659,12 +659,9 @@ function AboutView({ onBack }: { onBack: () => void }) {
     <div style={{ maxWidth: 480, margin: "0 auto", minHeight: "100vh", background: "#12102B", padding: "0 0 60px" }}>
       <div style={{ padding: "14px 20px 12px", borderBottom: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
         <button onClick={onBack} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.5)", fontSize: 22, cursor: "pointer", padding: 0, lineHeight: 1, WebkitTapHighlightColor: "transparent" }}>←</button>
-        <span style={{ fontSize: 18, fontWeight: 700, color: "#FFF", letterSpacing: -0.4 }}>hottake</span>
+        <span style={{ fontSize: 18, fontWeight: 900, color: "#FFF", letterSpacing: -0.6, fontFamily: "'Besley', serif", lineHeight: 1.2 }}>Your takes,<br />stress-tested.</span>
       </div>
       <div style={{ padding: "28px 24px 0" }}>
-        <p style={{ fontSize: 26, fontWeight: 900, color: "#FFF", lineHeight: 1.15, margin: "0 0 16px", letterSpacing: -0.8, fontFamily: "'Besley', serif" }}>
-          Your takes,<br />stress-tested.
-        </p>
         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.9)", lineHeight: 1.65, margin: "0 0 28px", letterSpacing: -0.2 }}>
           A feed of hot takes — sharpened by AI, scored for conviction, and open for debate.
         </p>
