@@ -934,11 +934,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   if (myTakes.length === 0) return null;
                   const visible = expandedTakes.has(obs.id) ? myTakes : myTakes.slice(0, 3);
                   return (
-                    <div style={{ borderTop: "1px solid #F5F5F2", margin: "0 12px", paddingTop: 8, paddingBottom: 4 }}>
-                      {visible.map(t => {
+                    <div style={{ borderTop: "2px solid #F0EDE8", margin: "0 12px", paddingTop: 8, paddingBottom: 4 }}>
+                      {visible.map((t, idx) => {
                         const abbrev = (t.userName || "").split(" ").map((w: string, i: number) => i === 0 ? w : w[0] + ".").join(" ").slice(0, 14);
                         return (
-                          <div key={t.id} style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 8 }}>
+                          <div key={t.id} style={{ display: "flex", alignItems: "flex-start", gap: 8, paddingTop: idx === 0 ? 0 : 8, marginBottom: 8, borderTop: idx === 0 ? "none" : "1px solid #F5F5F2" }}>
                             <div style={{ flex: 1, minWidth: 0 }}>
                               {t.audioB64 ? (
                                 <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
