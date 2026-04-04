@@ -1392,8 +1392,8 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: isMobile ? 8 : 10, position: "relative" }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate />
-                <span style={{ display: "inline-flex", alignItems: "center", gap: 5 }}>
-                  <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3 }}>
+                <span style={{ display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>
+                  <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3, whiteSpace: "nowrap" }}>
                     {tier.label}
                   </span>
                   <button
