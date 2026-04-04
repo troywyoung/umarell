@@ -1416,7 +1416,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 onClick={() => { setActiveTab("coldshower"); handleCounterpoint(); }}
                 style={{
                   background: "transparent", border: "1.5px solid #FF00AE",
-                  borderRadius: 10, padding: "8px 14px",
+                  borderRadius: 10, padding: "8px 10px",
                   cursor: "pointer", fontFamily: "inherit",
                   WebkitTapHighlightColor: "transparent",
                   transition: "background 0.15s, border-color 0.15s",
@@ -1424,7 +1424,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.15)"; }}
                 onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
               >
-                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>Devil&rsquo;s Advocate <span style={{ fontSize: 12, lineHeight: 1 }}>&rsaquo;</span></span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>Devil&rsquo;s Advocate</span>
               </button>
             </div>
           );
