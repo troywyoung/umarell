@@ -36,6 +36,28 @@ function getRandomPlaceholder() {
   return PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)];
 }
 
+const RESPONSE_PLACEHOLDERS = [
+  "Agree? Destroy it.",
+  "Wrong. Here's why…",
+  "This is more complicated than it looks.",
+  "You're missing the point.",
+  "Actually, this is exactly right.",
+  "Hot take on the hot take…",
+  "The real story is…",
+  "I've been thinking about this and…",
+  "Everyone's wrong about this.",
+  "This is the take nobody wants to hear.",
+  "Here's what the data actually says…",
+  "The thing that makes this interesting…",
+  "Counterpoint:",
+  "This ages badly because…",
+  "Strong disagree, and here's the receipts.",
+];
+
+function getRandomResponsePlaceholder() {
+  return RESPONSE_PLACEHOLDERS[Math.floor(Math.random() * RESPONSE_PLACEHOLDERS.length)];
+}
+
 
 // ─── Burst Icon ───────────────────────────────────────────────────────────
 
@@ -284,27 +306,7 @@ function SteelManIcon({ size = 24, animate = false, animateCount, color = "#FFF"
 
 // ─── Evidence type badge ──────────────────────────────────────────────────
 
-const EVIDENCE_COLORS: Record<string, { bg: string; color: string }> = {
-  Empirical:     { bg: "#E8F5E9", color: "#2E7D32" },
-  Observational: { bg: "#E3F2FD", color: "#1565C0" },
-  Anecdotal:     { bg: "#FFF8E1", color: "#E65100" },
-  Speculative:   { bg: "#F3E5F5", color: "#6A1B9A" },
-};
 
-function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "lg" }) {
-  if (!value) return null;
-  const c = EVIDENCE_COLORS[value] || { bg: "#F0F0ED", color: "#666" };
-  return (
-    <span style={{
-      display: "inline-block",
-      background: c.bg, color: c.color,
-      fontSize: size === "lg" ? 11 : 8, fontWeight: size === "lg" ? 700 : 600,
-      padding: size === "lg" ? "3px 9px" : "1px 6px", borderRadius: 100, letterSpacing: 0.3,
-    }}>
-      {value}
-    </span>
-  );
-}
 
 const SCORE_ROWS = [
   { range: "95–100", label: "Undeniable",     color: "#FF2FA3", desc: "Factually established. No credible counter." },
@@ -464,6 +466,46 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false }: { val
   );
 }
 
+function AudioTake({ src, btnColor = "#2C5ABA" }: { src: string; btnColor?: string }) {
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [playing, setPlaying] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [duration, setDuration] = useState(0);
+
+  const toggle = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    const a = audioRef.current;
+    if (!a) return;
+    playing ? a.pause() : a.play();
+    setPlaying(!playing);
+  };
+
+  const fmt = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+
+  return (
+    <div style={{ display: "flex", alignItems: "center", gap: 8 }} onClick={e => e.stopPropagation()}>
+      <audio ref={audioRef} src={src}
+        onTimeUpdate={() => { const a = audioRef.current; if (a) setProgress(a.currentTime / (a.duration || 1)); }}
+        onLoadedMetadata={() => { if (audioRef.current) setDuration(audioRef.current.duration); }}
+        onEnded={() => setPlaying(false)}
+      />
+      <button onClick={toggle} style={{ background: btnColor, border: "none", borderRadius: "50%", width: 18, height: 18, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer", flexShrink: 0, padding: 0 }}>
+        <svg width={10} height={10} viewBox="0 0 10 10" fill="#FFF">
+          {playing
+            ? <><rect x="1.5" y="1" width="2.5" height="8" rx="1"/><rect x="6" y="1" width="2.5" height="8" rx="1"/></>
+            : <polygon points="1.5,0.5 9.5,5 1.5,9.5"/>}
+        </svg>
+      </button>
+      <div style={{ flex: 1, height: 3, background: `${btnColor}55`, borderRadius: 2, position: "relative", cursor: "pointer" }}
+        onClick={e => { e.stopPropagation(); const a = audioRef.current; if (!a) return; const r = e.currentTarget.getBoundingClientRect(); a.currentTime = ((e.clientX - r.left) / r.width) * a.duration; }}>
+        <div style={{ height: "100%", width: `${progress * 100}%`, background: btnColor, borderRadius: 2 }} />
+      </div>
+      <span style={{ fontSize: 9, color: "#888", flexShrink: 0 }}>{fmt(duration * progress)}</span>
+    </div>
+  );
+}
+
+
 function timeAgo(iso: string) {
   // Ensure UTC parsing — append Z if no timezone offset present
   const normalized = /[Z+\-]\d*$/.test(iso.trim()) ? iso : iso + "Z";
@@ -527,6 +569,105 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   onAbout: () => void;
 }) {
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
+  const [jokeMap, setJokeMap] = useState<Record<string, string>>({});
+  const [jokeLoading, setJokeLoading] = useState<Set<string>>(new Set());
+  const [yourTakeInput, setYourTakeInput] = useState<Set<string>>(new Set());
+  const [yourTakeDraft, setYourTakeDraft] = useState<Record<string, string>>({});
+  const [yourTakePlaceholder, setYourTakePlaceholder] = useState<Record<string, string>>({});
+  const [yourTakeMap, setYourTakeMap] = useState<Record<string, Array<{ id: string; text?: string; audioB64?: string; userId: string; userName: string; createdAt: string }>>>(() => {
+    try { return JSON.parse(localStorage.getItem("yourTakes") || "{}"); } catch { return {}; }
+  });
+  const [expandedTakes, setExpandedTakes] = useState<Set<string>>(new Set());
+  const [recording, setRecording] = useState<string | null>(null);
+  const [recordingSecs, setRecordingSecs] = useState(0);
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const audioChunksRef = useRef<Blob[]>([]);
+  const recordingTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const saveTakes = (map: Record<string, Array<{ id: string; text?: string; audioB64?: string; userId: string; createdAt: string }>>) => {
+    try { localStorage.setItem("yourTakes", JSON.stringify(map)); } catch {}
+  };
+
+  const toggleYourTake = (obsId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setJokeMap(m => { const n = { ...m }; delete n[obsId]; return n; });
+    setYourTakeInput(s => {
+      const n = new Set(s);
+      if (n.has(obsId)) { n.delete(obsId); } else {
+        n.add(obsId);
+        setYourTakePlaceholder(p => p[obsId] ? p : { ...p, [obsId]: getRandomResponsePlaceholder() });
+      }
+      return n;
+    });
+  };
+
+  const submitYourTake = (obsId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const text = yourTakeDraft[obsId]?.trim();
+    if (!text) return;
+    const entry = { id: crypto.randomUUID(), text, userId: authUser.id, userName: authUser.name, createdAt: new Date().toISOString() };
+    const next = { ...yourTakeMap, [obsId]: [...(yourTakeMap[obsId] || []), entry] };
+    setYourTakeMap(next);
+    saveTakes(next);
+    setYourTakeDraft(d => ({ ...d, [obsId]: "" }));
+    setYourTakeInput(s => { const n = new Set(s); n.delete(obsId); return n; });
+  };
+
+  const startRecording = async (obsId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mr = new MediaRecorder(stream);
+      audioChunksRef.current = [];
+      mr.ondataavailable = ev => { if (ev.data.size > 0) audioChunksRef.current.push(ev.data); };
+      mr.onstop = () => {
+        const blob = new Blob(audioChunksRef.current, { type: "audio/webm" });
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          const audioB64 = (reader.result as string);
+          const entry = { id: crypto.randomUUID(), audioB64, userId: authUser.id, userName: authUser.name, createdAt: new Date().toISOString() };
+          const next = { ...yourTakeMap, [obsId]: [...(yourTakeMap[obsId] || []), entry] };
+          setYourTakeMap(next);
+          saveTakes(next);
+        };
+        reader.readAsDataURL(blob);
+        setYourTakeInput(s => { const n = new Set(s); n.delete(obsId); return n; });
+        stream.getTracks().forEach(t => t.stop());
+        if (recordingTimerRef.current) clearInterval(recordingTimerRef.current);
+        setRecording(null);
+        setRecordingSecs(0);
+      };
+      mediaRecorderRef.current = mr;
+      mr.start();
+      setRecording(obsId);
+      setRecordingSecs(0);
+      recordingTimerRef.current = setInterval(() => setRecordingSecs(s => s + 1), 1000);
+    } catch { setRecording(null); }
+  };
+
+  const stopRecording = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    mediaRecorderRef.current?.stop();
+  };
+
+  const fetchJoke = async (obsId: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setYourTakeInput(s => { const n = new Set(s); n.delete(obsId); return n; });
+    if (jokeMap[obsId] || jokeLoading.has(obsId)) {
+      if (jokeMap[obsId]) {
+        setJokeMap(m => { const n = { ...m }; delete n[obsId]; return n; });
+      }
+      return;
+    }
+    setJokeLoading(s => new Set(s).add(obsId));
+    try {
+      const res = await fetch(`${API}/observations/${obsId}/joke`, { method: "POST" });
+      const data = await res.json();
+      setJokeMap(m => ({ ...m, [obsId]: data.joke }));
+    } finally {
+      setJokeLoading(s => { const n = new Set(s); n.delete(obsId); return n; });
+    }
+  };
 
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
@@ -559,6 +700,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           to { opacity: 1; transform: translateY(0); }
         }
         .topic-pills::-webkit-scrollbar { display: none; }
+        @keyframes recPulse { 0%,100% { opacity:1; } 50% { opacity:0.2; } }
+        @keyframes yellowPulse { 0%,100% { opacity:1; } 50% { opacity:0.25; } }
       `}</style>
 
 <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
@@ -566,7 +709,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
             <p style={{ fontSize: 22, fontWeight: 800, color: "#FFF", letterSpacing: -0.5, margin: "0 0 10px" }}>Drop your first take.</p>
             <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 28px" }}>Paste a URL, share a claim, or describe an idea. We'll build the strongest case for it.</p>
-            <button onClick={onCapture} style={{ background: "#FF00AE", color: "#fff", border: "none", borderRadius: 100, padding: "14px 36px", fontSize: 16, fontWeight: 700, cursor: "pointer", letterSpacing: -0.3, WebkitTapHighlightColor: "transparent" }}>＋ Drop a hot take</button>
+            <button onClick={onCapture} style={{ background: "#FF00AE", color: "#fff", border: "none", borderRadius: 80, padding: "14px 36px", fontSize: 16, fontWeight: 700, cursor: "pointer", letterSpacing: -0.3, WebkitTapHighlightColor: "transparent" }}>＋ Drop a hot take</button>
           </div>
         )}
         {observations.length === 0 && !loading ? null : (() => {
@@ -616,7 +759,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 key={obs.id}
                 onClick={() => onSelect(obs)}
                 style={{
-                  borderRadius: 10, position: "relative",
+                  borderRadius: 8, position: "relative",
                   background: obs.episode_tag ? "#F5F0E8" : "#FFF",
                   border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
@@ -630,26 +773,85 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   <p style={{ fontSize: 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
                 {/* Score — top right corner */}
-                <div style={{ position: "absolute", top: 10, right: 10, zIndex: 1 }}>
-                  <ScoreBadge value={obs.score} size="sm" dark />
-                </div>
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 60 }}>
-                  {obs.image_data && (
-                    <img
-                      src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
-                      style={{ width: 65, height: 65, borderRadius: 6, objectFit: "cover", flexShrink: 0 }}
+                {!jokeMap[obs.id] && (
+                  <div style={{ position: "absolute", top: 10, right: 10, zIndex: 1 }}>
+                    <ScoreBadge value={obs.score} size="sm" dark />
+                  </div>
+                )}
+                {!jokeMap[obs.id] && (
+                  <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px", paddingRight: 60 }}>
+                    {obs.image_data && (
+                      <img
+                        src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
+                        style={{ width: 65, height: 65, borderRadius: 6, objectFit: "cover", flexShrink: 0 }}
+                      />
+                    )}
+                    <p style={{
+                      fontSize: window.innerWidth < 600 ? 15 : 12, fontWeight: 700,
+                      color: "#1A1A1A", lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
+                      overflow: "hidden", display: "-webkit-box",
+                      WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
+                    }}>
+                      {obs.thesis || obs.raw_input}
+                    </p>
+                  </div>
+                )}
+                {yourTakeInput.has(obs.id) && (
+                  <div onClick={e => e.stopPropagation()} style={{ padding: "4px 12px 10px" }}>
+                    <textarea
+                      autoFocus
+                      value={yourTakeDraft[obs.id] || ""}
+                      onChange={e => setYourTakeDraft(d => ({ ...d, [obs.id]: e.target.value }))}
+                      placeholder={yourTakePlaceholder[obs.id] || "Say your take…"}
+                      rows={3}
+                      style={{
+                        width: "100%", boxSizing: "border-box", resize: "none",
+                        fontSize: 13, fontFamily: "inherit", lineHeight: 1.45,
+                        border: "1px solid #E0E0DC", borderRadius: 8,
+                        padding: "8px 10px", outline: "none", color: "#1A1A1A",
+                        background: "#FAFAF8",
+                      }}
                     />
-                  )}
+                    <div style={{ display: "flex", gap: 8, marginTop: 6 }}>
+                      <button
+                        onClick={(e) => submitYourTake(obs.id, e)}
+                        style={{
+                          flex: 1, background: "#1A1A1A", color: "#FFF", border: "none",
+                          borderRadius: 8, padding: "8px 0", fontSize: 12, fontWeight: 700,
+                          cursor: "pointer", WebkitTapHighlightColor: "transparent",
+                        }}
+                      >Submit</button>
+                      <button
+                        onClick={recording === obs.id ? stopRecording : (e) => startRecording(obs.id, e)}
+                        style={{
+                          background: recording === obs.id ? "#FF00AE" : "#F0F0ED",
+                          color: recording === obs.id ? "#FFF" : "#555",
+                          border: "none", borderRadius: 8, padding: "8px 14px",
+                          fontSize: 12, fontWeight: 700, cursor: "pointer",
+                          display: "flex", alignItems: "center", gap: 6,
+                          WebkitTapHighlightColor: "transparent",
+                        }}
+                      >
+                        {recording === obs.id ? (
+                          <>
+                            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#FFF", animation: "recPulse 1s ease-in-out infinite", display: "inline-block" }} />
+                            {`${Math.floor(recordingSecs/60)}:${String(recordingSecs%60).padStart(2,"0")}`} Stop
+                          </>
+                        ) : "🎙 Record"}
+                      </button>
+                    </div>
+                  </div>
+                )}
+                {jokeMap[obs.id] ? (
                   <p style={{
-                    fontSize: window.innerWidth < 600 ? 15 : 12, fontWeight: 700,
-                    color: "#1A1A1A", lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
-                    overflow: "hidden", display: "-webkit-box",
-                    WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
+                    fontSize: window.innerWidth < 600 ? 18 : 15,
+                    fontWeight: 800, color: "#1A1A1A", lineHeight: 1.3,
+                    margin: 0, padding: "2px 14px 14px 14px",
+                    letterSpacing: -0.4,
                   }}>
-                    {obs.thesis || obs.raw_input}
+                    {jokeMap[obs.id]}
                   </p>
-                </div>
-                {bullets.length > 0 && (
+                ) : bullets.length > 0 && (
                   <div style={{ padding: "0 12px 10px 12px", display: "flex", flexDirection: "column", gap: 4 }}>
                     {bullets.map((b, i) => (
                       <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
@@ -672,9 +874,36 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   padding: "6px 12px 10px",
                   borderTop: "1px solid #F5F5F2",
                 }}>
-                  <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-start", alignContent: "flex-start", gap: 5, flexWrap: "wrap", flex: 1 }}>
-                    <span style={{ fontSize: 8, fontWeight: 600, color: "rgba(0,0,0,0.7)", letterSpacing: 0.2 }}>{timeAgo(obs.created_at)}</span>
-                    <EvidenceBadge value={obs.evidence_type} />
+                  <div style={{ display: "flex", alignItems: "center", gap: 6, flex: 1 }}>
+                    <span style={{ fontSize: 8, fontWeight: 600, color: "rgba(0,0,0,0.5)", letterSpacing: -0.2 }}>{timeAgo(obs.created_at)}</span>
+                    {obs.status === "complete" && (<>
+                      <span style={{ fontSize: 8, color: "rgba(0,0,0,0.2)" }}>|</span>
+                      <button
+                        onClick={(e) => toggleYourTake(obs.id, e)}
+                        style={{
+                          background: "none", border: "none", padding: 0, cursor: "pointer",
+                          fontSize: 8, fontWeight: 800, letterSpacing: -0.2,
+                          color: yourTakeInput.has(obs.id) ? "#E7B84B" : "rgba(0,0,0,0.55)",
+                          WebkitTapHighlightColor: "transparent",
+                          display: "flex", alignItems: "center", gap: 3,
+                        }}
+                      ><span style={{
+                          width: 5, height: 5, borderRadius: "50%", flexShrink: 0,
+                          background: "#E7B84B",
+                          animation: "yellowPulse 1.2s ease-in-out infinite",
+                        }} />Your take</button>
+                      <span style={{ fontSize: 8, color: "rgba(0,0,0,0.2)" }}>|</span>
+                      <button
+                        onClick={(e) => fetchJoke(obs.id, e)}
+                        style={{
+                          background: "none", border: "none", padding: 0, cursor: "pointer",
+                          fontSize: 8, fontWeight: 600, letterSpacing: -0.2,
+                          color: jokeMap[obs.id] ? "#FF00AE" : "rgba(0,0,0,0.55)",
+                          opacity: jokeLoading.has(obs.id) ? 0.4 : 1,
+                          WebkitTapHighlightColor: "transparent",
+                        }}
+                      >{jokeLoading.has(obs.id) ? "thinking…" : "Brian's take"}</button>
+                    </>)}
                   </div>
                   {obs.status === "complete" && obs.thesis && (
                     <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
@@ -689,7 +918,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
               key={c.id}
               onClick={() => onSelect(c)}
               style={{
-                borderRadius: 10, background: "#EEF4FF",
+                borderRadius: 8, background: "#EEF4FF",
                 boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                 padding: "10px 12px", cursor: "pointer",
                 display: "flex", alignItems: "center", gap: 8,
@@ -704,12 +933,56 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           const renderPost = (obs: Observation) => {
             const children = (challengeMap.get(obs.id) || [])
               .sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+            const myTakes = yourTakeMap[obs.id] || [];
             return (
               <div key={obs.id} style={{ marginBottom: 10 }}>
                 {renderCard(obs)}
                 {children.map(c => (
                   <div key={c.id} style={{ marginTop: 4 }}>{renderChallenge(c)}</div>
                 ))}
+                {(expandedTakes.has(obs.id) ? myTakes : myTakes.slice(0, 3)).map(t => {
+                  const abbrev = (t.userName || "").split(" ").map((w, i) => i === 0 ? w : w[0] + ".").join(" ").slice(0, 14);
+                  return (
+                    <div key={t.id} style={{
+                      marginTop: 4, borderRadius: 8, background: "#EDEAE4",
+                      boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
+                      padding: "7px 10px",
+                      display: "flex", alignItems: "center", gap: 8,
+                    }}>
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        {t.audioB64 ? (
+                          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                            <span style={{ fontSize: 8, fontWeight: 700, color: "#666", letterSpacing: -0.2, flexShrink: 0 }}>{abbrev}</span>
+                            <span style={{ fontSize: 8, color: "#BBB", flexShrink: 0 }}>|</span>
+                            <span style={{ fontSize: 8, color: "#AAA", letterSpacing: -0.2, flexShrink: 0 }}>{timeAgo(t.createdAt)}</span>
+                            <span style={{ fontSize: 8, color: "#BBB", flexShrink: 0 }}>|</span>
+                            <div style={{ flex: 1 }}><AudioTake src={t.audioB64} btnColor="#C8C4BC" /></div>
+                          </div>
+                        ) : (
+                          <>
+                            <div style={{ display: "flex", gap: 5, alignItems: "baseline", marginBottom: 3 }}>
+                              <span style={{ fontSize: 8, fontWeight: 700, color: "#666", letterSpacing: -0.2 }}>{abbrev}</span>
+                              <span style={{ fontSize: 8, color: "#BBB", letterSpacing: -0.2 }}>{timeAgo(t.createdAt)}</span>
+                            </div>
+                            <p style={{ fontSize: 10, color: "#333", fontWeight: 400, margin: 0, lineHeight: 1.4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" } as React.CSSProperties}>{t.text}</p>
+                          </>
+                        )}
+                      </div>
+                      <button
+                        onClick={e => { e.stopPropagation(); const next = { ...yourTakeMap, [obs.id]: yourTakeMap[obs.id].filter(x => x.id !== t.id) }; setYourTakeMap(next); saveTakes(next); }}
+                        style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#BBB", fontSize: 14, lineHeight: 1, flexShrink: 0, WebkitTapHighlightColor: "transparent" }}
+                      >×</button>
+                    </div>
+                  );
+                })}
+                {myTakes.length > 3 && (
+                  <div
+                    onClick={e => { e.stopPropagation(); setExpandedTakes(s => { const n = new Set(s); n.has(obs.id) ? n.delete(obs.id) : n.add(obs.id); return n; }); }}
+                    style={{ marginTop: 4, textAlign: "center", fontSize: 9, fontWeight: 700, color: "#2C5ABA", cursor: "pointer", padding: "6px 0", letterSpacing: -0.2 }}
+                  >
+                    {expandedTakes.has(obs.id) ? "Show less" : `+${myTakes.length - 3} more`}
+                  </div>
+                )}
               </div>
             );
           };
@@ -957,7 +1230,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
         {parentObs ? "Drop your counter-argument. We'll sharpen it." : "Drop a hot take. We'll build the strongest case for it."}
       </p>
       {parentObs && (
-        <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 10, padding: "14px 16px", marginBottom: 20 }}>
+        <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 8, padding: "14px 16px", marginBottom: 20 }}>
           <p style={{ fontSize: 9, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 0.5, textTransform: "uppercase", margin: "0 0 6px" }}>ORIGINAL HOT TAKE</p>
           <p style={{ fontSize: 13, fontWeight: 700, color: "#FFF", margin: "0 0 8px", lineHeight: 1.4 }}>{parentObs.thesis || parentObs.raw_input}</p>
           {parentObs.summary && (
@@ -1104,7 +1377,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
       </button>
 
       {error && (
-        <div style={{ marginTop: 12, background: "#FFF0EE", borderRadius: 10, padding: "12px 14px", border: "1px solid #F5C6C0" }}>
+        <div style={{ marginTop: 12, background: "#FFF0EE", borderRadius: 8, padding: "12px 14px", border: "1px solid #F5C6C0" }}>
           <p style={{ fontSize: 13, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>{error}</p>
         </div>
       )}
@@ -1416,7 +1689,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 style={{
                   background: "transparent",
                   border: "1.5px solid #FF00AE",
-                  borderRadius: 10, padding: "8px 12px",
+                  borderRadius: 8, padding: "8px 12px",
                   cursor: counterpointLoading ? "default" : "pointer", fontFamily: "inherit",
                   WebkitTapHighlightColor: "transparent",
                   transition: "background 0.15s",
@@ -1455,7 +1728,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   <button
                     onClick={() => setEditMode(false)}
                     style={{
-                      flex: 1, padding: "12px 0", borderRadius: 10,
+                      flex: 1, padding: "12px 0", borderRadius: 8,
                       border: "1.5px solid rgba(255,255,255,0.15)", background: "transparent",
                       color: "#888", fontSize: 14, fontWeight: 600,
                       cursor: "pointer", fontFamily: "inherit",
@@ -1465,7 +1738,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                     onClick={handleResubmit}
                     disabled={!editText.trim() || resubmitting}
                     style={{
-                      flex: 1, padding: "12px 0", borderRadius: 10,
+                      flex: 1, padding: "12px 0", borderRadius: 8,
                       border: "none", background: editText.trim() && !resubmitting ? "#FF00AE" : "rgba(255,255,255,0.15)",
                       color: "#FFF", fontSize: 14, fontWeight: 700,
                       cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
@@ -1600,7 +1873,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 </div>
               )}
               {counterpoint.verdict && (
-                <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 10, padding: "12px 14px", marginTop: 8 }}>
+                <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 8, padding: "12px 14px", marginTop: 8 }}>
                   <p style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>{counterpoint.verdict}</p>
                 </div>
               )}
@@ -1641,7 +1914,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 </div>
               ))}
               {take.tldr && take.tldr !== pvaBottomLine && (
-                <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 10, padding: "12px 14px", marginTop: 8 }}>
+                <div style={{ background: "rgba(255,255,255,0.04)", borderRadius: 8, padding: "12px 14px", marginTop: 8 }}>
                   <p style={{ fontSize: 13, color: "rgba(255,255,255,0.7)", lineHeight: 1.6, margin: 0, fontStyle: "italic" }}>{take.tldr}</p>
                 </div>
               )}

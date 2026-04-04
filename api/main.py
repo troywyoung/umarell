@@ -12,7 +12,7 @@ from pydantic import BaseModel
 from database import init_db, get_db, AsyncSessionLocal
 from models import Observation, User
 from schemas import ObservationCreate, ObservationOut
-from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, ACTIVE_MODEL
+from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, generate_joke, ACTIVE_MODEL
 from config import settings
 from whatsapp import router as whatsapp_router
 from sms import router as sms_router
@@ -489,6 +489,18 @@ async def bullshit_check(obs_id: str, db: AsyncSession = Depends(get_db)):
     obs.bs_verdict = result.get("bs_verdict")
     await db.commit()
     return {"bs_score": obs.bs_score, "bs_verdict": obs.bs_verdict}
+
+
+@app.post("/observations/{obs_id}/joke")
+async def lightbulb_joke(obs_id: str, db: AsyncSession = Depends(get_db)):
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    try:
+        joke = await generate_joke(obs.thesis or obs.raw_input)
+    except Exception as e:
+        raise HTTPException(500, f"Joke generation failed: {str(e)}")
+    return {"joke": joke}
 
 
 @app.get("/observations/{obs_id}/challenges")

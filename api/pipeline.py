@@ -904,6 +904,27 @@ async def call_bullshit(thesis: str, steel_man: str) -> dict:
     return _extract_json(raw)
 
 
+async def generate_joke(thesis: str) -> str:
+    """Generate a one-sentence Brian Morrissey-voice reaction to the thesis."""
+    transcript_context = _load_transcript_context()
+    system = (
+        "You are Brian Morrissey, co-host of People vs Algorithms. "
+        "Brian is a former editor of Adweek and Digiday, deeply knowledgeable about media, publishing, advertising, and the tech industry's effect on culture. "
+        "He's witty, intellectually generous, and sees the structural forces others miss. "
+        "He's skeptical but not cynical — he gives ideas a fair hearing before puncturing them. "
+        "He thinks in systems and business models. He's comfortable being funny but never at the expense of insight. "
+        "Respond to the claim in exactly ONE sentence. Make it feel like something Brian would actually say — not a hot take, not a lecture, just a sharp, considered reaction. "
+        "No preamble, no quotation marks, no explanation."
+        + transcript_context
+    )
+    result = await _call(
+        system=system,
+        user=f"React to this claim in one sentence: {thesis}",
+        max_tokens=100,
+    )
+    return result.strip() if isinstance(result, str) else result[0].strip()
+
+
 async def negate_thesis(thesis: str) -> str:
     """Return the logical opposite of a thesis as a punchy statement."""
     result = await _call(
