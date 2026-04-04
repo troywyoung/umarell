@@ -500,7 +500,7 @@ function AudioTake({ src, btnColor = "#2C5ABA" }: { src: string; btnColor?: stri
         onClick={e => { e.stopPropagation(); const a = audioRef.current; if (!a) return; const r = e.currentTarget.getBoundingClientRect(); a.currentTime = ((e.clientX - r.left) / r.width) * a.duration; }}>
         <div style={{ height: "100%", width: `${progress * 100}%`, background: btnColor, borderRadius: 2 }} />
       </div>
-      <span style={{ fontSize: 9, color: "#888", flexShrink: 0 }}>{fmt(duration * progress)}</span>
+      <span style={{ fontSize: 9, color: "#888", flexShrink: 0 }}>{fmt(duration > 0 ? duration - duration * progress : 0)}</span>
     </div>
   );
 }
