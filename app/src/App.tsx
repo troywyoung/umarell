@@ -484,7 +484,7 @@ function AudioTake({ src, btnColor = "#2C5ABA" }: { src: string; btnColor?: stri
 
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 8 }} onClick={e => e.stopPropagation()}>
-      <audio ref={audioRef} src={src} playsInline
+      <audio ref={audioRef} src={src} playsInline preload="metadata"
         onTimeUpdate={() => { const a = audioRef.current; if (a) setProgress(a.currentTime / (a.duration || 1)); }}
         onLoadedMetadata={() => { if (audioRef.current) setDuration(audioRef.current.duration); }}
         onEnded={() => setPlaying(false)}
