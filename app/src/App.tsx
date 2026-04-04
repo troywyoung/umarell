@@ -1,4 +1,4 @@
-import { useState, useEffect, useLayoutEffect, useRef, Fragment } from "react";
+import { useState, useEffect, useRef, Fragment } from "react";
 import { GoogleLogin } from "@react-oauth/google";
 import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
@@ -126,123 +126,6 @@ function generateScribblePath(): string {
   return segs.join(" ");
 }
 
-function generateLetterFillPath(w: number, h: number): string {
-  const r = () => Math.random();
-  const cl = (v: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, v));
-  let x = r() * w, y = r() * h;
-  const segs = [`M${x.toFixed(1)},${y.toFixed(1)}`];
-  const count = 50 + Math.floor(r() * 20);
-  for (let i = 0; i < count; i++) {
-    const mode = r();
-    let tx: number, ty: number;
-    if (mode < 0.35) {
-      // horizontal sweep — good coverage across letter width
-      tx = cl(r() * w, 0, w);
-      ty = cl(y + (r() - 0.5) * h * 0.7, 0, h);
-    } else if (mode < 0.65) {
-      tx = cl(r() * w, 0, w); ty = cl(r() * h, 0, h);
-    } else {
-      tx = cl(w - x + (r() - 0.5) * w * 0.5, 0, w);
-      ty = cl(h - y + (r() - 0.5) * h * 0.5, 0, h);
-    }
-    const sx = w * 1.4, sy = h * 2;
-    const c1x = x + (r() - 0.5) * sx, c1y = y + (r() - 0.5) * sy;
-    const c2x = tx + (r() - 0.5) * sx, c2y = ty + (r() - 0.5) * sy;
-    segs.push(`C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${tx.toFixed(1)},${ty.toFixed(1)}`);
-    x = tx; y = ty;
-  }
-  return segs.join(' ');
-}
-
-function HottakeLogo({ fontSize = 26 }: { fontSize?: number }) {
-  const groupRef = useRef<SVGGElement>(null);
-  const hotTextRef = useRef<SVGTextElement>(null);
-  const takeTextRef = useRef<SVGTextElement>(null);
-  const svgRef = useRef<SVGSVGElement>(null);
-  const rafRef = useRef<number>(0);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const [dims, setDims] = useState({ hotW: Math.round(fontSize * 1.72), totalW: Math.round(fontSize * 3.6) });
-  const H = Math.round(fontSize * 0.82);
-  const baseline = H;
-  const MAX_PATHS = 5;
-
-  // Measure real text widths after font loads
-  useLayoutEffect(() => {
-    const hot = hotTextRef.current;
-    const take = takeTextRef.current;
-    if (!hot || !take) return;
-    const measure = () => {
-      try {
-        const hb = hot.getBBox();
-        const tb = take.getBBox();
-        if (hb.width > 0 && tb.width > 0) {
-          setDims({ hotW: Math.round(hb.width), totalW: Math.round(hb.width + tb.width + 1) });
-        }
-      } catch {}
-    };
-    // Try immediately, then retry after fonts settle
-    measure();
-    const t = setTimeout(measure, 200);
-    return () => clearTimeout(t);
-  }, [fontSize]);
-
-  useEffect(() => {
-    const g = groupRef.current;
-    if (!g) return;
-
-    const addPath = () => {
-      // Drop oldest path when at capacity
-      while (g.children.length >= MAX_PATHS) g.removeChild(g.firstChild!);
-
-      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-      const duration = 6000 + Math.random() * 5000;
-      path.setAttribute("d", generateLetterFillPath(dims.hotW, H));
-      path.setAttribute("stroke-width", (0.5 + Math.random() * 0.4).toFixed(2));
-      path.setAttribute("fill", "none");
-      path.setAttribute("stroke", "#FF00AE");
-      path.setAttribute("stroke-linecap", "round");
-      path.setAttribute("stroke-linejoin", "round");
-      path.setAttribute("pathLength", "1");
-      path.style.strokeDasharray = "1";
-      path.style.strokeDashoffset = "1";
-      g.appendChild(path);
-
-      let start: number | null = null;
-      const tick = (now: number) => {
-        if (start === null) start = now;
-        const t = Math.min((now - start) / duration, 1);
-        path.style.strokeDashoffset = String(1 - t);
-        if (t < 1) { rafRef.current = requestAnimationFrame(tick); }
-        else { timerRef.current = setTimeout(addPath, 400); }
-      };
-      rafRef.current = requestAnimationFrame(tick);
-    };
-
-    addPath();
-    return () => {
-      cancelAnimationFrame(rafRef.current);
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
-  }, [dims.hotW, H]);
-
-  const textStyle = { fontFamily: "'Besley', serif", fontWeight: 900, fontSize: `${fontSize}px`, letterSpacing: "-1.5px" } as React.CSSProperties;
-
-  return (
-    <svg ref={svgRef} width={dims.totalW} height={fontSize} viewBox={`0 0 ${dims.totalW} ${fontSize}`} style={{ display: "block", overflow: "visible" }}>
-      <defs>
-        <clipPath id="hot-letter-clip">
-          <text x={0} y={baseline} style={textStyle}>hot</text>
-        </clipPath>
-      </defs>
-      {/* "hot" white base */}
-      <text ref={hotTextRef} x={0} y={baseline} style={textStyle} fill="#FFF">hot</text>
-      {/* Accumulating pink scribble layers clipped to letter shapes */}
-      <g ref={groupRef} clipPath="url(#hot-letter-clip)" />
-      {/* "take" white, same baseline — x set from measured hotW */}
-      <text ref={takeTextRef} x={dims.hotW} y={baseline} style={textStyle} fill="#FFF">take</text>
-    </svg>
-  );
-}
 
 function AnimatedScribble({ size = 80 }: { size?: number }) {
   const pathRef = useRef<SVGPathElement>(null);
@@ -825,7 +708,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
       {/* Branding */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "44px 0 2px" }}>
-        <HottakeLogo fontSize={27} />
+        <span style={{ fontSize: 27, fontWeight: 900, letterSpacing: -1.5, fontFamily: "'Besley', serif", lineHeight: 1 }}><span style={{ color: "#FF00AE" }}>hot</span><span style={{ color: "#FFF" }}>take</span></span>
       </div>
 
       <style>{`
@@ -1017,16 +900,16 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         style={{
                           cursor: "pointer",
                           fontSize: 8, fontWeight: 800, letterSpacing: -0.2,
-                          color: yourTakeInput.has(obs.id) ? "#E7B84B" : "rgba(0,0,0,0.55)",
+                          color: yourTakeInput.has(obs.id) ? "#FF00AE" : "rgba(255,0,174,0.6)",
                           WebkitTapHighlightColor: "transparent",
                           display: "flex", alignItems: "center", gap: 3,
-                          background: yourTakeInput.has(obs.id) ? "rgba(231,184,75,0.12)" : "rgba(0,0,0,0.06)",
-                          border: `1px solid ${yourTakeInput.has(obs.id) ? "rgba(231,184,75,0.4)" : "rgba(0,0,0,0.12)"}`,
+                          background: yourTakeInput.has(obs.id) ? "rgba(255,0,174,0.1)" : "rgba(255,0,174,0.05)",
+                          border: `1px solid ${yourTakeInput.has(obs.id) ? "rgba(255,0,174,0.5)" : "rgba(255,0,174,0.25)"}`,
                           borderRadius: 20, padding: "3px 7px",
                         }}
                       ><span style={{
                           width: 5, height: 5, borderRadius: "50%", flexShrink: 0,
-                          background: "#E7B84B",
+                          background: "#FFF",
                           animation: "yellowPulse 1.2s ease-in-out infinite",
                         }} />Your take</button>
                       <span style={{ fontSize: 8, color: "rgba(0,0,0,0.2)" }}>|</span>
