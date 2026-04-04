@@ -126,23 +126,124 @@ function generateScribblePath(): string {
   return segs.join(" ");
 }
 
+function generateLetterFillPath(w: number, h: number): string {
+  const r = () => Math.random();
+  const cl = (v: number, lo: number, hi: number) => Math.max(lo, Math.min(hi, v));
+  let x = r() * w, y = r() * h;
+  const segs = [`M${x.toFixed(1)},${y.toFixed(1)}`];
+  const count = 50 + Math.floor(r() * 20);
+  for (let i = 0; i < count; i++) {
+    const mode = r();
+    let tx: number, ty: number;
+    if (mode < 0.35) {
+      // horizontal sweep — good coverage across letter width
+      tx = cl(r() * w, 0, w);
+      ty = cl(y + (r() - 0.5) * h * 0.7, 0, h);
+    } else if (mode < 0.65) {
+      tx = cl(r() * w, 0, w); ty = cl(r() * h, 0, h);
+    } else {
+      tx = cl(w - x + (r() - 0.5) * w * 0.5, 0, w);
+      ty = cl(h - y + (r() - 0.5) * h * 0.5, 0, h);
+    }
+    const sx = w * 1.4, sy = h * 2;
+    const c1x = x + (r() - 0.5) * sx, c1y = y + (r() - 0.5) * sy;
+    const c2x = tx + (r() - 0.5) * sx, c2y = ty + (r() - 0.5) * sy;
+    segs.push(`C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${tx.toFixed(1)},${ty.toFixed(1)}`);
+    x = tx; y = ty;
+  }
+  return segs.join(' ');
+}
+
+function HottakeLogo({ fontSize = 26 }: { fontSize?: number }) {
+  const groupRef = useRef<SVGGElement>(null);
+  const rafRef = useRef<number>(0);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const hotW = Math.round(fontSize * 1.82);
+  const H = Math.round(fontSize * 0.82);
+  const baseline = H;
+  const totalW = Math.round(fontSize * 3.8);
+  const MAX_PATHS = 5;
+
+  useEffect(() => {
+    const g = groupRef.current;
+    if (!g) return;
+
+    const addPath = () => {
+      // Drop oldest path when at capacity
+      while (g.children.length >= MAX_PATHS) g.removeChild(g.firstChild!);
+
+      const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      const duration = 6000 + Math.random() * 5000;
+      path.setAttribute("d", generateLetterFillPath(hotW, H));
+      path.setAttribute("stroke-width", (0.5 + Math.random() * 0.4).toFixed(2));
+      path.setAttribute("fill", "none");
+      path.setAttribute("stroke", "#FF00AE");
+      path.setAttribute("stroke-linecap", "round");
+      path.setAttribute("stroke-linejoin", "round");
+      path.setAttribute("pathLength", "1");
+      path.style.strokeDasharray = "1";
+      path.style.strokeDashoffset = "1";
+      g.appendChild(path);
+
+      let start: number | null = null;
+      const tick = (now: number) => {
+        if (start === null) start = now;
+        const t = Math.min((now - start) / duration, 1);
+        path.style.strokeDashoffset = String(1 - t);
+        if (t < 1) { rafRef.current = requestAnimationFrame(tick); }
+        else { timerRef.current = setTimeout(addPath, 400); }
+      };
+      rafRef.current = requestAnimationFrame(tick);
+    };
+
+    addPath();
+    return () => {
+      cancelAnimationFrame(rafRef.current);
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
+  }, [hotW, H]);
+
+  const textStyle = { fontFamily: "'Besley', serif", fontWeight: 900, fontSize: `${fontSize}px`, letterSpacing: "-1.5px" } as React.CSSProperties;
+
+  return (
+    <svg width={totalW} height={fontSize} viewBox={`0 0 ${totalW} ${fontSize}`} style={{ display: "block", overflow: "visible" }}>
+      <defs>
+        <clipPath id="hot-letter-clip">
+          <text x={0} y={baseline} style={textStyle}>hot</text>
+        </clipPath>
+      </defs>
+      {/* "hot" white base */}
+      <text x={0} y={baseline} style={textStyle} fill="#FFF">hot</text>
+      {/* Accumulating pink scribble layers clipped to letter shapes */}
+      <g ref={groupRef} clipPath="url(#hot-letter-clip)" />
+      {/* "take" white, same baseline */}
+      <text x={hotW} y={baseline} style={textStyle} fill="#FFF">take</text>
+    </svg>
+  );
+}
+
 function AnimatedScribble({ size = 80 }: { size?: number }) {
   const pathRef = useRef<SVGPathElement>(null);
+  const durationRef = useRef(8000);
 
   useEffect(() => {
     const el = pathRef.current;
     if (!el) return;
-    const DURATION = 8000;
+    const nextCycle = () => {
+      // Vary duration 6–11s and strokeWidth 2–3.5 each loop
+      durationRef.current = 6000 + Math.random() * 5000;
+      el.setAttribute("d", generateScribblePath());
+      el.setAttribute("stroke-width", (2 + Math.random() * 1.5).toFixed(1));
+      el.style.strokeDashoffset = "1";
+    };
+    nextCycle();
     let start: number | null = null;
     let raf: number;
-    el.setAttribute("d", generateScribblePath());
     const tick = (now: number) => {
       if (start === null) start = now;
-      const progress = (now - start) / DURATION;
+      const progress = (now - start) / durationRef.current;
       if (progress >= 1) {
-        // Swap to new path, keep drawing — no fade, no pause
-        el.setAttribute("d", generateScribblePath());
-        el.style.strokeDashoffset = "1";
+        nextCycle();
         start = now;
       } else {
         el.style.strokeDashoffset = String(1 - progress);
@@ -154,8 +255,7 @@ function AnimatedScribble({ size = 80 }: { size?: number }) {
   }, []);
 
   return (
-    // viewBox extends 8px beyond the 0–100 coord space on all sides — stroke never clips
-    <svg width={size} height={size} viewBox="-8 -8 116 116" style={{ display: "block" }}>
+    <svg width={size} height={size} viewBox="-8 -8 116 116" style={{ display: "block", marginRight: -2 }}>
       <path
         ref={pathRef}
         pathLength="1"
@@ -699,12 +799,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         </div>
       </div>
 
-      {/* Scribble cropped 20% at top, logo flush below */}
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <BurstIcon size={100} style={{ marginTop: 5 }} />
-        <span style={{ fontSize: 19, fontWeight: 900, letterSpacing: -1.5, color: "#FFF", marginTop: -14, fontFamily: "'Besley', serif" }}>
-          <span style={{ color: "#FF00AE" }}>hot</span>take
-        </span>
+      {/* Branding */}
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "44px 0 2px" }}>
+        <HottakeLogo fontSize={30} />
       </div>
 
       <style>{`
@@ -1022,8 +1119,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       flexShrink: 0,
                       background: selectedTopic === "__all__" ? "rgba(255,255,255,0.15)" : "transparent",
                       border: selectedTopic === "__all__" ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
-                      borderRadius: 6, padding: "4px 11px",
-                      fontSize: 11, fontWeight: 700,
+                      borderRadius: 6, padding: "3px 9px",
+                      fontSize: 9, fontWeight: 700,
                       color: selectedTopic === "__all__" ? "#FFF" : "rgba(255,255,255,0.55)",
                       cursor: "pointer", WebkitTapHighlightColor: "transparent",
                       fontFamily: "inherit",
@@ -1039,8 +1136,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       flexShrink: 0,
                       background: selectedTopic === "PvA" ? "#FF00AE" : "rgba(255,0,174,0.15)",
                       border: selectedTopic === "PvA" ? "1.5px solid #FF00AE" : "1.5px solid rgba(255,0,174,0.4)",
-                      borderRadius: 6, padding: "4px 11px",
-                      fontSize: 11, fontWeight: 700,
+                      borderRadius: 6, padding: "3px 9px",
+                      fontSize: 9, fontWeight: 700,
                       color: selectedTopic === "PvA" ? "#FFF" : "#FF00AE",
                       cursor: "pointer", WebkitTapHighlightColor: "transparent",
                       fontFamily: "inherit",
@@ -2106,7 +2203,7 @@ function ShareButton({ obsId, onClick, prominent = false }: { obsId: string; onC
       style={{
         display: "inline-flex", alignItems: "center", gap: 5,
         background: "none", border: "none", cursor: "pointer", padding: 0,
-        color: copied ? "#FF00AE" : "#FFF", fontSize: 10, fontFamily: "inherit",
+        color: copied ? "#FF00AE" : "rgba(0,0,0,0.45)", fontSize: 10, fontFamily: "inherit",
         WebkitTapHighlightColor: "transparent",
         transition: "color 0.2s",
       }}
