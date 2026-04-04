@@ -663,7 +663,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
       </div>
       <div style={{ padding: "28px 24px 0" }}>
         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.9)", lineHeight: 1.65, margin: "0 0 28px", letterSpacing: -0.2 }}>
-          A feed of hot takes — sharpened by AI, scored for conviction, and open for debate.
+          A feed of hot takes — sharpened by AI, scored for conviction, and open for debate. Brought to you by the folks at People vs Algorithms.
         </p>
         <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>How it works</p>
         {bullet("Drop a hot take, paste a link, or type out a half-formed opinion. AI sharpens it into its most defensible form and builds the case for it.")}
