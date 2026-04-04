@@ -659,20 +659,21 @@ function AboutView({ onBack }: { onBack: () => void }) {
     <div style={{ maxWidth: 480, margin: "0 auto", minHeight: "100vh", background: "#12102B", padding: "0 0 60px" }}>
       <div style={{ padding: "14px 20px 12px", borderBottom: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
         <button onClick={onBack} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.5)", fontSize: 22, cursor: "pointer", padding: 0, lineHeight: 1, WebkitTapHighlightColor: "transparent" }}>←</button>
-        <span style={{ fontSize: 18, fontWeight: 700, color: "#FFF", letterSpacing: -0.4 }}>Everyone has a take. This is a place to share yours.</span>
+        <span style={{ fontSize: 18, fontWeight: 700, color: "#FFF", letterSpacing: -0.4 }}>hottake</span>
       </div>
       <div style={{ padding: "28px 24px 0" }}>
+        <p style={{ fontSize: 16, color: "rgba(255,255,255,0.9)", lineHeight: 1.65, margin: "0 0 28px", letterSpacing: -0.2 }}>
+          A place to stress-test what you think. Drop a take, a link, or an idea — AI builds the strongest possible case for it, scores its conviction, and hands it back to you.
+        </p>
         <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>How it works</p>
-        {bullet("Hit 'what's yours?' and drop anything — a URL, a hot take, a half-formed idea. The AI steelmans it: sharpest thesis, best evidence, most defensible form.")}
-        {bullet("Every take gets a conviction score from 0–100. Verifiably true → near 100. Demonstrably false → near 0. Opinions land in the middle based on how well they hold up.")}
-        {bullet("Disagree? Challenge it. Submit your counter-argument and the AI steelmans that too. The feed becomes a live debate board.")}
-        {bullet("Each week, takes from the latest People vs Algorithms episode drop into the feed — ready to read, challenge, or riff on.")}
-        {bullet("Hit 'PvA Take' on any post to get a reaction in the voice of the show. Opinionated, connected to bigger patterns, not neutral.")}
+        {bullet("Drop anything — a hot take, a URL, a half-formed opinion. AI finds the sharpest thesis and the best evidence for it.")}
+        {bullet("Every take gets a conviction score from 0–100. Strong evidence pushes it up. Weak reasoning pulls it down. You see where it lands before you decide what to do with it.")}
+        {bullet("Disagree? Push back. Submit a counter and the AI steelmans that too. The feed becomes a live record of the argument.")}
+        {bullet("Takes from People vs Algorithms drop into the feed each week. Add your reaction, hear Brian's take, or challenge it directly.")}
         <div style={{ marginTop: 32, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-          <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>Why it's interesting</p>
-          {bullet("Most people argue against the weakest version of ideas they disagree with. This forces the opposite — understand the best case before you push back.")}
-          {bullet("The conviction score keeps you honest. A bold take with weak evidence gets called out. A modest take with strong evidence gets its due.")}
-          {bullet("It's a thinking tool, not a content feed. The goal is to make you a sharper reader of whatever you're already paying attention to.")}
+          <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.6, margin: 0, letterSpacing: -0.1 }}>
+            Most people only ever argue against the weakest version of ideas they disagree with. This is the opposite. Understand the best case first. Then decide.
+          </p>
         </div>
       </div>
     </div>
@@ -807,10 +808,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   return (
     <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "#12102B" }}>
 
-      {/* Top bar: what is it? left, avatar right */}
+      {/* Top bar: what is this? left, avatar right */}
       <div style={{ position: "absolute", top: 13, left: 20, right: 20, display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 2 }}>
         <button onClick={onAbout} style={{ background: "none", border: "none", padding: 0, cursor: "pointer", WebkitTapHighlightColor: "transparent" }}>
-          <span style={{ fontSize: window.innerWidth < 600 ? 11 : 9, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>what is it?</span>
+          <span style={{ fontSize: window.innerWidth < 600 ? 11 : 9, fontWeight: 800, color: "#FFF", fontFamily: "inherit", textDecoration: "underline", textDecorationColor: "#FFF" }}>what is this?</span>
         </button>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
