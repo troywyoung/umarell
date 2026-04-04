@@ -293,6 +293,21 @@ async def create_observation(
     return obs
 
 
+import re as _re
+_CTRL_CHARS = _re.compile(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]')
+
+
+def _sanitize(val):
+    """Recursively strip bare control characters from strings so JSON stays valid."""
+    if isinstance(val, str):
+        return _CTRL_CHARS.sub('', val)
+    if isinstance(val, dict):
+        return {k: _sanitize(v) for k, v in val.items()}
+    if isinstance(val, list):
+        return [_sanitize(v) for v in val]
+    return val
+
+
 async def _attach_user_names(db: AsyncSession, observations: list[Observation]) -> list[dict]:
     import json as _json
     user_ids = {o.user_id for o in observations if o.user_id}
@@ -304,12 +319,13 @@ async def _attach_user_names(db: AsyncSession, observations: list[Observation]) 
     out = []
     for o in observations:
         d = ObservationOut.model_validate(o).model_dump()
+        d = _sanitize(d)
         # Episode posts show "PvA", regular posts show the user's name
         d["user_name"] = "PvA" if o.episode_tag else (user_map.get(o.user_id) if o.user_id else "Anonymous")
         # Parse pva_take from briefing field
         if o.briefing:
             try:
-                d["pva_take"] = _json.loads(o.briefing)
+                d["pva_take"] = _json.loads(_CTRL_CHARS.sub('', o.briefing))
             except (ValueError, TypeError):
                 pass
         out.append(d)
@@ -600,6 +616,23 @@ async def delete_observation(
         raise HTTPException(403, "You can only delete your own observations")
     await db.delete(obs)
     await db.commit()
+
+
+@app.patch("/observations/{obs_id}/anonymize", status_code=200)
+async def anonymize_observation(
+    obs_id: str,
+    db: AsyncSession = Depends(get_db),
+    current_user: User | None = Depends(get_current_user),
+):
+    """Remove the author attribution from an observation (set to Anonymous)."""
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    if obs.user_id and current_user and obs.user_id != current_user.id and not _is_admin(current_user):
+        raise HTTPException(403, "You can only anonymize your own observations")
+    obs.user_id = None
+    await db.commit()
+    return {"ok": True}
 
 
 # ─── Episode seed ───────────────────────────────────────────────────────────
