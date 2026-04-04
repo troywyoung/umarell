@@ -1084,7 +1084,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
       </div>
 
       {/* Idea Button */}
-      <button
+      {yourTakeInput.size === 0 && <button
         onClick={onCapture}
         className="pva-fab"
         style={{
@@ -1106,7 +1106,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             50% { transform: translateX(-50%) scale(1.08); }
           }
         `}</style>
-      </button>
+      </button>}
     </div>
   );
 }
