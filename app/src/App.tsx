@@ -401,11 +401,11 @@ function getScoreColor(v: number): string {
 }
 
 function getScoreTier(v: number): { label: string } {
-  if (v <= 20) return { label: "Touch Grass" };
-  if (v <= 40) return { label: "Big Yikes" };
+  if (v <= 20) return { label: "Unpersuasive" };
+  if (v <= 40) return { label: "Low Signal" };
   if (v <= 59) return { label: "Jury\u2019s Out" };
-  if (v <= 79) return { label: "Has Merit" };
-  if (v <= 94) return { label: "Hard to Argue" };
+  if (v <= 79) return { label: "Fighting Words" };
+  if (v <= 94) return { label: "Holds Water" };
   return { label: "Undeniable" };
 }
 
