@@ -893,11 +893,14 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       <button
                         onClick={(e) => toggleYourTake(obs.id, e)}
                         style={{
-                          background: "none", border: "none", padding: 0, cursor: "pointer",
+                          cursor: "pointer",
                           fontSize: 8, fontWeight: 800, letterSpacing: -0.2,
                           color: yourTakeInput.has(obs.id) ? "#E7B84B" : "rgba(0,0,0,0.55)",
                           WebkitTapHighlightColor: "transparent",
                           display: "flex", alignItems: "center", gap: 3,
+                          background: yourTakeInput.has(obs.id) ? "rgba(231,184,75,0.12)" : "rgba(0,0,0,0.06)",
+                          border: `1px solid ${yourTakeInput.has(obs.id) ? "rgba(231,184,75,0.4)" : "rgba(0,0,0,0.12)"}`,
+                          borderRadius: 20, padding: "3px 7px",
                         }}
                       ><span style={{
                           width: 5, height: 5, borderRadius: "50%", flexShrink: 0,
