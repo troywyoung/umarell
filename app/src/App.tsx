@@ -827,10 +827,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 {obs.user_name && !obs.episode_tag && (
                   <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
-                {/* Score — top right corner */}
-                <div style={{ position: "absolute", top: 10, right: 10, zIndex: 1 }}>
-                  <ScoreBadge value={obs.score} size="sm" dark />
-                </div>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
                     {obs.image_data && (
                       <img
@@ -838,12 +834,17 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         style={{ width: 65, height: 65, borderRadius: 6, objectFit: "cover", flexShrink: 0 }}
                       />
                     )}
-                    <p style={{
-                      fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 700,
-                      color: "#1A1A1A", lineHeight: 1.15, margin: 0, letterSpacing: -0.3, flex: 1,
-                    }}>
-                      {obs.thesis || obs.raw_input}
-                    </p>
+                    <div style={{ flex: 1 }}>
+                      <div style={{ float: "right", marginLeft: 8, marginBottom: 2 }}>
+                        <ScoreBadge value={obs.score} size="sm" dark />
+                      </div>
+                      <p style={{
+                        fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 700,
+                        color: "#1A1A1A", lineHeight: 1.15, margin: 0, letterSpacing: -0.3,
+                      }}>
+                        {obs.thesis || obs.raw_input}
+                      </p>
+                    </div>
                   </div>
                 {yourTakeInput.has(obs.id) && (
                   <div onClick={e => e.stopPropagation()} style={{ padding: "4px 12px 10px" }}>
