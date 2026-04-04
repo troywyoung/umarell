@@ -961,9 +961,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                             {t.userId === authUser.id && (
                               <button
                                 onClick={e => { e.stopPropagation(); fetch(`${API}/takes/${t.id}`, { method: "DELETE", headers: authHeaders() }).catch(() => {}); setYourTakeMap(prev => ({ ...prev, [obs.id]: (prev[obs.id] || []).filter((x: {id: string}) => x.id !== t.id) })); }}
-                                style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#CCC", flexShrink: 0, display: "flex", alignItems: "center", WebkitTapHighlightColor: "transparent" }}
+                                style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#CCC", flexShrink: 0, display: "flex", alignItems: "center", alignSelf: "center", WebkitTapHighlightColor: "transparent" }}
                               >
-                                <svg width={10} height={11} viewBox="0 0 10 11" fill="none" stroke="currentColor" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
+                                <svg width={10} height={11} viewBox="0 0 10 11" fill="none" stroke="currentColor" strokeWidth={0.9} strokeLinecap="round" strokeLinejoin="round">
                                   <line x1="1" y1="2.5" x2="9" y2="2.5"/>
                                   <path d="M3.5 2.5V1.5h3v1"/>
                                   <path d="M2 2.5l.5 7h5l.5-7"/>
