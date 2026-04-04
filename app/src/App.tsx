@@ -818,7 +818,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   <p style={{ fontSize: 8, fontWeight: 700, color: "#FF00AE", margin: 0, padding: "7px 12px 0", letterSpacing: 0.8, textTransform: "uppercase", lineHeight: 1 }}>{obs.episode_title || "PvA"}</p>
                 )}
                 {obs.user_name && !obs.episode_tag && (
-                  <p style={{ fontSize: 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
+                  <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
                 {/* Score — top right corner */}
                 {!jokeMap[obs.id] && (
@@ -835,7 +835,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       />
                     )}
                     <p style={{
-                      fontSize: window.innerWidth < 600 ? 15 : 12, fontWeight: 700,
+                      fontSize: window.innerWidth < 600 ? 16 : 12, fontWeight: 700,
                       color: "#1A1A1A", lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
                       overflow: "hidden", display: "-webkit-box",
                       WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
