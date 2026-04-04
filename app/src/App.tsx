@@ -484,7 +484,7 @@ function AudioTake({ src, btnColor = "#2C5ABA" }: { src: string; btnColor?: stri
 
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 8 }} onClick={e => e.stopPropagation()}>
-      <audio ref={audioRef} src={src}
+      <audio ref={audioRef} src={src} playsInline
         onTimeUpdate={() => { const a = audioRef.current; if (a) setProgress(a.currentTime / (a.duration || 1)); }}
         onLoadedMetadata={() => { if (audioRef.current) setDuration(audioRef.current.duration); }}
         onEnded={() => setPlaying(false)}
@@ -617,11 +617,13 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
     e.stopPropagation();
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mr = new MediaRecorder(stream);
+      const mimeType = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg"]
+        .find(t => MediaRecorder.isTypeSupported(t)) || "";
+      const mr = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream);
       audioChunksRef.current = [];
       mr.ondataavailable = ev => { if (ev.data.size > 0) audioChunksRef.current.push(ev.data); };
       mr.onstop = () => {
-        const blob = new Blob(audioChunksRef.current, { type: "audio/webm" });
+        const blob = new Blob(audioChunksRef.current, { type: mr.mimeType || "audio/webm" });
         const reader = new FileReader();
         reader.onloadend = () => {
           const audioB64 = (reader.result as string);
@@ -642,7 +644,17 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
       setRecording(obsId);
       setRecordingSecs(0);
       recordingTimerRef.current = setInterval(() => setRecordingSecs(s => s + 1), 1000);
-    } catch { setRecording(null); }
+    } catch (err) {
+      setRecording(null);
+      const msg = err instanceof Error ? err.message : String(err);
+      if (msg.includes("Permission") || msg.includes("NotAllowed") || msg.includes("denied")) {
+        alert("Microphone access was denied. Please allow microphone permission in your browser settings and try again.");
+      } else if (msg.includes("NotFound") || msg.includes("Requested device not found")) {
+        alert("No microphone found on this device.");
+      } else {
+        alert(`Could not start recording: ${msg}`);
+      }
+    }
   };
 
   const stopRecording = (e: React.MouseEvent) => {
