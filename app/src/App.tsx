@@ -324,9 +324,9 @@ function EvidenceBadge({ value, size = "sm" }: { value?: string; size?: "sm" | "
 const SCORE_ROWS = [
   { range: "95–100", label: "Undeniable",     color: "#FF2FA3", desc: "Factually established. No credible counter." },
   { range: "80–94",  label: "Holds Water",    color: "#FF2FA3", desc: "Strong case, evidence clearly supports it." },
-  { range: "60–79",  label: "Fighting Words", color: "#E7B84B", desc: "Reasonable argument, genuinely contestable." },
+  { range: "60–79",  label: "Fighting Words", color: "#7C7FE6", desc: "Reasonable argument, genuinely contestable." },
   { range: "41–59",  label: "Jury\u2019s Out",color: "#E7B84B", desc: "Could go either way — needs more evidence." },
-  { range: "21–40",  label: "Weak Signal",    color: "#7C7FE6", desc: "Thin support, vague or poorly evidenced." },
+  { range: "21–40",  label: "Weak Signal",    color: "#E7B84B", desc: "Thin support, vague or poorly evidenced." },
   { range: "0–20",   label: "Unpersuasive",   color: "#5A6B8C", desc: "Goes against available evidence or incoherent." },
 ];
 
@@ -409,9 +409,9 @@ function useIsMobile() {
 
 function getScoreColor(v: number): string {
   if (v <= 20) return "#5A6B8C";
-  if (v <= 40) return "#7C7FE6";
+  if (v <= 40) return "#E7B84B";
   if (v <= 59) return "#E7B84B";
-  if (v <= 79) return "#E7B84B";
+  if (v <= 79) return "#7C7FE6";
   if (v <= 94) return "#FF2FA3";
   return "#FF2FA3";
 }

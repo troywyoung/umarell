@@ -60,12 +60,12 @@ def _twiml_empty() -> Response:
 
 
 def _score_label(score: int) -> str:
-    if score >= 90:   return "Verified"
-    if score >= 75:   return "Well-backed"
-    if score >= 55:   return "Defensible"
-    if score >= 35:   return "Thin"
-    if score >= 15:   return "Unlikely"
-    return "False"
+    if score >= 95:   return "Undeniable"
+    if score >= 80:   return "Holds Water"
+    if score >= 60:   return "Fighting Words"
+    if score >= 41:   return "Jury\u2019s Out"
+    if score >= 21:   return "Weak Signal"
+    return "Unpersuasive"
 
 
 @router.post("/webhook/whatsapp")
