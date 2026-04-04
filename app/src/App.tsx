@@ -1681,18 +1681,18 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 border: "1.5px solid rgba(255,255,255,0.13)",
                 background: "rgba(255,255,255,0.04)",
                 cursor: "pointer", fontFamily: "inherit",
-                display: "flex", alignItems: "center", justifyContent: "space-between",
+                display: "flex", alignItems: "center", gap: 14,
                 WebkitTapHighlightColor: "transparent",
                 transition: "background 0.15s, border-color 0.15s",
               }}
               onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
               onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
             >
+              <StaticScribble size={56} />
               <div style={{ textAlign: "left" }}>
                 <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>PvA Take</p>
                 <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>What would the PvA hosts say?</p>
               </div>
-              <StaticScribble size={28} />
             </button>
             {/* Disagree */}
             {!obs.parent_id && (
@@ -1704,18 +1704,18 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   border: "1.5px solid rgba(255,255,255,0.13)",
                   background: "rgba(255,255,255,0.04)",
                   cursor: "pointer", fontFamily: "inherit",
-                  display: "flex", alignItems: "center", justifyContent: "space-between",
+                  display: "flex", alignItems: "center", gap: 14,
                   WebkitTapHighlightColor: "transparent",
                   transition: "background 0.15s, border-color 0.15s",
                 }}
                 onMouseEnter={e => { e.currentTarget.style.background = "rgba(255,0,174,0.08)"; e.currentTarget.style.borderColor = "rgba(255,0,174,0.4)"; }}
                 onMouseLeave={e => { e.currentTarget.style.background = "rgba(255,255,255,0.04)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.13)"; }}
               >
+                <svg width={28} height={28} viewBox="0 0 24 24" fill="none" stroke="#FF00AE" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><path d="M7.2 13.5c-.8 1.2-1.5 2.8-2.1 4.2-.2.5-.5 1.1-.3 1.3" /><path d="M2.5 16.8c.8.1 2.1.5 3.8 1.4" /><path d="M16.5 10.2c.7-1.1 1.4-2.7 2-4.3.2-.4.4-1 .3-1.2" /><path d="M21.2 6.8c-.7-.1-2-.4-3.7-1.3" /></svg>
                 <div style={{ textAlign: "left" }}>
                   <p style={{ fontSize: 14, fontWeight: 700, color: "#FFF", margin: "0 0 2px", letterSpacing: -0.2 }}>Disagree?</p>
                   <p style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: 0 }}>Submit your counter-argument</p>
                 </div>
-                <svg width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="#FF00AE" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginLeft: 12 }}><path d="M9 14l-4 4m0 0l-4-4m4 4V4" /><path d="M15 10l4-4m0 0l4 4m-4-4v14" /></svg>
               </button>
             )}
           </div>
