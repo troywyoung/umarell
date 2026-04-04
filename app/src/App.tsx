@@ -719,6 +719,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         .topic-pills::-webkit-scrollbar { display: none; }
         @keyframes recPulse { 0%,100% { opacity:1; } 50% { opacity:0.2; } }
         @keyframes yellowPulse { 0%,100% { opacity:1; } 50% { opacity:0.25; } }
+        @keyframes scoreLabelFadeIn { from { opacity:0; transform:translateX(-6px); } to { opacity:1; transform:translateX(0); } }
       `}</style>
 
 <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
@@ -1701,7 +1702,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", flex: "0 0 auto" }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate />
-                <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35 }}>
+                <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
                   {tier.label}
                 </span>
                 <button
@@ -1714,6 +1715,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                     cursor: "pointer", padding: 0, flexShrink: 0,
                     color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 800,
                     WebkitTapHighlightColor: "transparent",
+                    opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards",
                   }}
                 >?</button>
                 {showScoreInfo && (isMobile ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} />)}
