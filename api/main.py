@@ -318,8 +318,20 @@ async def _attach_user_names(db: AsyncSession, observations: list[Observation]) 
             user_map[u.id] = u.name
     out = []
     for o in observations:
-        d = ObservationOut.model_validate(o).model_dump()
-        d = _sanitize(d)
+        try:
+            d = ObservationOut.model_validate(o).model_dump()
+            d = _sanitize(d)
+        except Exception:
+            # Fall back to a minimal safe dict so one bad row doesn't kill the feed
+            d = {
+                "id": str(o.id),
+                "thesis": _CTRL_CHARS.sub('', o.thesis or o.raw_input or ""),
+                "status": o.status,
+                "created_at": o.created_at.isoformat() if o.created_at else None,
+                "score": o.score,
+                "tags": [],
+                "episode_tag": o.episode_tag,
+            }
         # Episode posts show "PvA", regular posts show the user's name
         d["user_name"] = "PvA" if o.episode_tag else (user_map.get(o.user_id) if o.user_id else "Anonymous")
         # Parse pva_take from briefing field
