@@ -969,7 +969,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                                   <div style={{ display: "flex", gap: 5, alignItems: "baseline", marginBottom: 2 }}>
                                     <span style={{ fontSize: 8, fontWeight: 700, color: "#555", letterSpacing: -0.2 }}>{abbrev}</span>
                                     <span style={{ fontSize: 8, color: "#BBB", letterSpacing: -0.2 }}>{timeAgo(t.createdAt)}</span>
-                                    {t.userId === authUser.id && <span onClick={e => { e.stopPropagation(); setEditingTakeId(t.id); setEditingTakeDraft(t.text || ""); }} style={{ fontSize: 8, color: "rgba(0,0,0,0.25)", cursor: "pointer", letterSpacing: -0.1 }}>edit</span>}
+                                    {t.userId === authUser.id && <>
+                                      <span style={{ fontSize: 8, color: "#DDD" }}>|</span>
+                                      <span onClick={e => { e.stopPropagation(); setEditingTakeId(t.id); setEditingTakeDraft(t.text || ""); }} style={{ fontSize: 8, color: "rgba(0,0,0,0.25)", cursor: "pointer", letterSpacing: -0.1 }}>edit</span>
+                                    </>}
                                   </div>
                                   <p onClick={e => { e.stopPropagation(); setExpandedTakeText(s => { const n = new Set(s); n.has(t.id) ? n.delete(t.id) : n.add(t.id); return n; }); }} style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#555", margin: 0, lineHeight: 1.4, cursor: "pointer", ...(expandedTakeText.has(t.id) ? {} : { overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }) } as React.CSSProperties}>{t.text}</p>
                                 </>
