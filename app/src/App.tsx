@@ -839,10 +839,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       />
                     )}
                     <p style={{
-                      fontSize: window.innerWidth < 600 ? 16 : 12, fontWeight: 700,
-                      color: "#1A1A1A", lineHeight: 1.4, margin: 0, letterSpacing: -0.3, flex: 1,
-                      overflow: "hidden", display: "-webkit-box",
-                      WebkitLineClamp: 4, WebkitBoxOrient: "vertical",
+                      fontSize: window.innerWidth < 600 ? 14 : 11, fontWeight: 700,
+                      color: "#1A1A1A", lineHeight: 1.05, margin: 0, letterSpacing: -0.3, flex: 1,
                     }}>
                       {obs.thesis || obs.raw_input}
                     </p>
