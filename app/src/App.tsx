@@ -668,8 +668,8 @@ function AboutView({ onBack }: { onBack: () => void }) {
         <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>How it works</p>
         {bullet("Drop a hot take, paste a link, or type out a half-formed opinion. AI sharpens it into its most defensible form and builds the case for it.")}
         {bullet("Every take gets a conviction score from 0–100 — how well does the evidence actually hold up? You see the number before you decide whether to push back.")}
+        {bullet("Hit Devil's Advocate on any take to get the strongest possible case against it.")}
         {bullet("Disagree? Challenge it. Your counter gets the same treatment. The feed becomes a live record of the argument.")}
-        {bullet("Hit Devil's Advocate on any take to get the strongest possible case against it — the argument you actually need to reckon with.")}
         {bullet("Add your take directly in the feed — type it or record it. It stays with the post.")}
         <div style={{ marginTop: 32, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
           <p style={{ fontSize: 15, color: "rgba(255,255,255,0.45)", lineHeight: 1.6, margin: 0, letterSpacing: -0.1 }}>
