@@ -990,8 +990,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       </div>
                       <button
                         onClick={e => { e.stopPropagation(); const next = { ...yourTakeMap, [obs.id]: yourTakeMap[obs.id].filter(x => x.id !== t.id) }; setYourTakeMap(next); saveTakes(next); }}
-                        style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#BBB", flexShrink: 0, alignSelf: "center", display: "flex", alignItems: "center", justifyContent: "center", WebkitTapHighlightColor: "transparent" }}
-                      ><svg width={10} height={10} viewBox="0 0 10 10" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round"><line x1="1" y1="1" x2="9" y2="9"/><line x1="9" y1="1" x2="1" y2="9"/></svg></button>
+                        style={{ background: "none", border: "none", padding: 0, cursor: "pointer", color: "#BBB", flexShrink: 0, alignSelf: "flex-start", display: "flex", alignItems: "center", justifyContent: "center", WebkitTapHighlightColor: "transparent", marginTop: 2 }}
+                      ><svg width={7} height={7} viewBox="0 0 10 10" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round"><line x1="1" y1="1" x2="9" y2="9"/><line x1="9" y1="1" x2="1" y2="9"/></svg></button>
                     </div>
                   );
                 })}
