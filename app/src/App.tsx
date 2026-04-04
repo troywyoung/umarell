@@ -391,29 +391,73 @@ function useIsMobile() {
   return mobile;
 }
 
-function ScoreBadge({ value, size = "md", dark = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean }) {
+function getScoreColor(v: number): string {
+  if (v <= 20) return "#FF4444";
+  if (v <= 40) return "#FF6B35";
+  if (v <= 59) return "#FFB800";
+  if (v <= 79) return "#8BC34A";
+  if (v <= 94) return "#4CAF50";
+  return "#00E676";
+}
+
+function getScoreTier(v: number): { label: string; emoji: string } {
+  if (v <= 20) return { label: "Touch Grass", emoji: "\uD83D\uDC80" };
+  if (v <= 40) return { label: "Big Yikes", emoji: "\uD83E\uDD21" };
+  if (v <= 59) return { label: "Jury\u2019s Out", emoji: "\uD83E\uDD37" };
+  if (v <= 79) return { label: "Has Merit", emoji: "\uD83D\uDD25" };
+  if (v <= 94) return { label: "Hard to Argue", emoji: "\u26A1" };
+  return { label: "Undeniable", emoji: "\uD83C\uDFC6" };
+}
+
+function ScoreBadge({ value, size = "md", dark = false, animate = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean; animate?: boolean }) {
   if (value == null) return null;
-  const v = Math.round(value);
-  const accent = "#FF00AE";
+  const target = Math.round(value);
+  const accent = getScoreColor(target);
   const dim = size === "sm" ? 40 : size === "lg" ? 40 : 32;
   const fontSize = size === "sm" ? 14 : size === "lg" ? 14 : 11;
-  const labelSize = 0;
-  const pct = v / 100;
   const r = (dim - 4) / 2;
   const circ = 2 * Math.PI * r;
+
+  // Animation state
+  const [displayVal, setDisplayVal] = useState(animate ? 0 : target);
+  const [animPct, setAnimPct] = useState(animate ? 0 : target / 100);
+  const animRef = useRef<number | null>(null);
+  const startRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    if (!animate) { setDisplayVal(target); setAnimPct(target / 100); return; }
+    setDisplayVal(0); setAnimPct(0);
+    startRef.current = null;
+    const duration = 1200;
+    const tick = (ts: number) => {
+      if (!startRef.current) startRef.current = ts;
+      const elapsed = ts - startRef.current;
+      const progress = Math.min(elapsed / duration, 1);
+      // ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setDisplayVal(Math.round(eased * target));
+      setAnimPct(eased * target / 100);
+      if (progress < 1) animRef.current = requestAnimationFrame(tick);
+    };
+    animRef.current = requestAnimationFrame(tick);
+    return () => { if (animRef.current) cancelAnimationFrame(animRef.current); };
+  }, [animate, target]);
+
+  const currentColor = animate ? getScoreColor(displayVal) : accent;
+  const pct = animate ? animPct : target / 100;
+
   return (
     <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
       <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)" }}>
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={3.5} />
-        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={accent} strokeWidth={3.5}
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={3.5}
           strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round" />
       </svg>
       <div style={{
         position: "absolute", inset: 0, display: "flex", flexDirection: "column",
         alignItems: "center", justifyContent: "center",
       }}>
-        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{v}</span>
-        {labelSize > 0 && <span style={{ fontSize: labelSize, fontWeight: 600, color: "rgba(255,255,255,0.35)", lineHeight: 1, marginTop: 1 }}>score</span>}
+        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
       </div>
     </div>
   );
@@ -421,24 +465,38 @@ function ScoreBadge({ value, size = "md", dark = false }: { value?: number; size
 
 function ScoreWithInfo({ value, show, onToggle, onClose }: { value: number; show: boolean; onToggle: () => void; onClose: () => void }) {
   const isMobile = useIsMobile();
+  const v = Math.round(value);
+  const tier = getScoreTier(v);
+  const tierColor = getScoreColor(v);
+  const [tierVisible, setTierVisible] = useState(false);
+  useEffect(() => {
+    const t = setTimeout(() => setTierVisible(true), 1300);
+    return () => clearTimeout(t);
+  }, []);
   return (
-    <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 7 }}>
-      <ScoreBadge value={value} size="lg" />
-      <button
-        onClick={onToggle}
-        aria-label="How is this score calculated?"
-        style={{
-          background: show ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
-          border: "1px solid rgba(255,255,255,0.25)",
-          borderRadius: "50%",
-          width: 20, height: 20,
-          display: "flex", alignItems: "center", justifyContent: "center",
-          cursor: "pointer", padding: 0,
-          color: "#FFF", fontSize: 11, fontWeight: 800,
-          flexShrink: 0, lineHeight: 1, letterSpacing: 0,
-          transition: "background 0.15s",
-        }}
-      >?</button>
+    <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 10 }}>
+      <ScoreBadge value={value} size="lg" animate />
+      <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+        <div style={{
+          opacity: tierVisible ? 1 : 0, transform: tierVisible ? "translateY(0)" : "translateY(4px)",
+          transition: "opacity 0.4s ease, transform 0.4s ease",
+        }}>
+          <span style={{ fontSize: 13, fontWeight: 800, color: tierColor, letterSpacing: -0.3 }}>
+            {tier.emoji} {tier.label}
+          </span>
+        </div>
+        <button
+          onClick={onToggle}
+          aria-label="How is this score calculated?"
+          style={{
+            background: "none", border: "none",
+            cursor: "pointer", padding: 0,
+            color: "rgba(255,255,255,0.35)", fontSize: 10, fontWeight: 600,
+            fontFamily: "inherit", textAlign: "left",
+            WebkitTapHighlightColor: "transparent",
+          }}
+        >What&rsquo;s this?</button>
+      </div>
       {show && !isMobile && <ScoreInfoPopover onClose={onClose} />}
       {show && isMobile && <ScoreInfoSheet onClose={onClose} />}
     </div>
