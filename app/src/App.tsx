@@ -1470,28 +1470,28 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 </div>
               </div>
             ) : (
-              <h1
-                onClick={isOwner ? () => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); } : undefined}
-                style={{
-                  fontSize: 20, fontWeight: 700, color: "#FFF", lineHeight: 1.4,
-                  letterSpacing: -0.4, margin: 0,
-                  cursor: isOwner ? "pointer" : "default",
-                  borderBottom: "none",
-                  paddingBottom: 0,
-                }}
-                title={isOwner ? "Tap to edit & resubmit" : undefined}
-              >{obs.thesis}</h1>
-              {obs.input_type === "url" && obs.raw_input && (() => {
-                let domain = obs.raw_input;
-                try { domain = new URL(obs.raw_input).hostname.replace(/^www\./, ""); } catch {}
-                return (
-                  <a href={obs.raw_input} target="_blank" rel="noopener noreferrer"
-                    style={{ display: "inline-block", fontSize: 11, color: "rgba(255,255,255,0.35)", textDecoration: "none", marginTop: 6 }}
-                    onMouseEnter={e => (e.currentTarget.style.color = "rgba(255,255,255,0.6)")}
-                    onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.35)")}
-                  >{domain} ↗</a>
-                );
-              })()}
+              <>
+                <h1
+                  onClick={isOwner ? () => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); } : undefined}
+                  style={{
+                    fontSize: 20, fontWeight: 700, color: "#FFF", lineHeight: 1.4,
+                    letterSpacing: -0.4, margin: 0,
+                    cursor: isOwner ? "pointer" : "default",
+                  }}
+                  title={isOwner ? "Tap to edit & resubmit" : undefined}
+                >{obs.thesis}</h1>
+                {obs.input_type === "url" && obs.raw_input && (() => {
+                  let domain = obs.raw_input;
+                  try { domain = new URL(obs.raw_input).hostname.replace(/^www\./, ""); } catch {}
+                  return (
+                    <a href={obs.raw_input} target="_blank" rel="noopener noreferrer"
+                      style={{ display: "inline-block", fontSize: 11, color: "rgba(255,255,255,0.35)", textDecoration: "none", marginTop: 6 }}
+                      onMouseEnter={e => (e.currentTarget.style.color = "rgba(255,255,255,0.6)")}
+                      onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.35)")}
+                    >{domain} ↗</a>
+                  );
+                })()}
+              </>
             )}
           </div>
         )}
