@@ -584,6 +584,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   type TakeEntry = { id: string; text?: string; audioB64?: string; durationSecs?: number; userId: string; userName: string; createdAt: string };
   const [yourTakeMap, setYourTakeMap] = useState<Record<string, TakeEntry[]>>({});
   const [expandedTakes, setExpandedTakes] = useState<Set<string>>(new Set());
+  const [expandedTakeText, setExpandedTakeText] = useState<Set<string>>(new Set());
   const [recording, setRecording] = useState<string | null>(null);
   const [recordingSecs, setRecordingSecs] = useState(0);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -1015,7 +1016,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                               <span style={{ fontSize: 8, fontWeight: 700, color: "#666", letterSpacing: -0.2 }}>{abbrev}</span>
                               <span style={{ fontSize: 8, color: "#BBB", letterSpacing: -0.2 }}>{timeAgo(t.createdAt)}</span>
                             </div>
-                            <p style={{ fontSize: 10, color: "#333", fontWeight: 400, margin: 0, lineHeight: 1.4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" } as React.CSSProperties}>{t.text}</p>
+                            <p onClick={e => { e.stopPropagation(); setExpandedTakeText(s => { const n = new Set(s); n.has(t.id) ? n.delete(t.id) : n.add(t.id); return n; }); }} style={{ fontSize: 10, color: "#333", fontWeight: 400, margin: 0, lineHeight: 1.4, cursor: "pointer", ...(expandedTakeText.has(t.id) ? {} : { overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" }) } as React.CSSProperties}>{t.text}</p>
                           </>
                         )}
                       </div>
