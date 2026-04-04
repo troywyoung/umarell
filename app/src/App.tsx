@@ -1547,7 +1547,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             )}
 
             {obs.sources && obs.sources.length > 0 && (
-              <p style={{ paddingTop: 12, borderTop: "1px solid rgba(255,255,255,0.08)", fontSize: 11, color: "rgba(255,255,255,0.35)", lineHeight: 1.6, margin: "20px 0 -8px", wordBreak: "break-word", overflowWrap: "anywhere" }}>
+              <p style={{ paddingTop: 12, borderTop: "1px solid rgba(255,255,255,0.08)", fontSize: 11, color: "rgba(255,255,255,0.35)", lineHeight: 1.6, margin: "20px 0 8px", wordBreak: "break-word", overflowWrap: "anywhere" }}>
                 <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: 1, textTransform: "uppercase", marginRight: 6 }}>Sources</span>
                 {obs.sources.map((src, i) => (
                   <span key={i}>
