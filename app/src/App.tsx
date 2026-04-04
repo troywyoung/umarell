@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, Fragment } from "react";
+import { useState, useEffect, useLayoutEffect, useRef, Fragment } from "react";
 import { GoogleLogin } from "@react-oauth/google";
 import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
@@ -156,13 +156,35 @@ function generateLetterFillPath(w: number, h: number): string {
 
 function HottakeLogo({ fontSize = 26 }: { fontSize?: number }) {
   const groupRef = useRef<SVGGElement>(null);
+  const hotTextRef = useRef<SVGTextElement>(null);
+  const takeTextRef = useRef<SVGTextElement>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
   const rafRef = useRef<number>(0);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const hotW = Math.round(fontSize * 1.82);
+  const [dims, setDims] = useState({ hotW: Math.round(fontSize * 1.72), totalW: Math.round(fontSize * 3.6) });
   const H = Math.round(fontSize * 0.82);
   const baseline = H;
-  const totalW = Math.round(fontSize * 3.8);
   const MAX_PATHS = 5;
+
+  // Measure real text widths after font loads
+  useLayoutEffect(() => {
+    const hot = hotTextRef.current;
+    const take = takeTextRef.current;
+    if (!hot || !take) return;
+    const measure = () => {
+      try {
+        const hb = hot.getBBox();
+        const tb = take.getBBox();
+        if (hb.width > 0 && tb.width > 0) {
+          setDims({ hotW: Math.round(hb.width), totalW: Math.round(hb.width + tb.width + 1) });
+        }
+      } catch {}
+    };
+    // Try immediately, then retry after fonts settle
+    measure();
+    const t = setTimeout(measure, 200);
+    return () => clearTimeout(t);
+  }, [fontSize]);
 
   useEffect(() => {
     const g = groupRef.current;
@@ -174,7 +196,7 @@ function HottakeLogo({ fontSize = 26 }: { fontSize?: number }) {
 
       const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
       const duration = 6000 + Math.random() * 5000;
-      path.setAttribute("d", generateLetterFillPath(hotW, H));
+      path.setAttribute("d", generateLetterFillPath(dims.hotW, H));
       path.setAttribute("stroke-width", (0.5 + Math.random() * 0.4).toFixed(2));
       path.setAttribute("fill", "none");
       path.setAttribute("stroke", "#FF00AE");
@@ -201,23 +223,23 @@ function HottakeLogo({ fontSize = 26 }: { fontSize?: number }) {
       cancelAnimationFrame(rafRef.current);
       if (timerRef.current) clearTimeout(timerRef.current);
     };
-  }, [hotW, H]);
+  }, [dims.hotW, H]);
 
   const textStyle = { fontFamily: "'Besley', serif", fontWeight: 900, fontSize: `${fontSize}px`, letterSpacing: "-1.5px" } as React.CSSProperties;
 
   return (
-    <svg width={totalW} height={fontSize} viewBox={`0 0 ${totalW} ${fontSize}`} style={{ display: "block", overflow: "visible" }}>
+    <svg ref={svgRef} width={dims.totalW} height={fontSize} viewBox={`0 0 ${dims.totalW} ${fontSize}`} style={{ display: "block", overflow: "visible" }}>
       <defs>
         <clipPath id="hot-letter-clip">
           <text x={0} y={baseline} style={textStyle}>hot</text>
         </clipPath>
       </defs>
       {/* "hot" white base */}
-      <text x={0} y={baseline} style={textStyle} fill="#FFF">hot</text>
+      <text ref={hotTextRef} x={0} y={baseline} style={textStyle} fill="#FFF">hot</text>
       {/* Accumulating pink scribble layers clipped to letter shapes */}
       <g ref={groupRef} clipPath="url(#hot-letter-clip)" />
-      {/* "take" white, same baseline */}
-      <text x={hotW} y={baseline} style={textStyle} fill="#FFF">take</text>
+      {/* "take" white, same baseline — x set from measured hotW */}
+      <text ref={takeTextRef} x={dims.hotW} y={baseline} style={textStyle} fill="#FFF">take</text>
     </svg>
   );
 }
