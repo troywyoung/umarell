@@ -2074,6 +2074,7 @@ function PulsingDot() {
           0%, 100% { box-shadow: 0 0 4px #FF00AE, inset 0 0 4px rgba(255,0,174,0.15); border-color: #FF00AE; }
           50% { box-shadow: 0 0 12px #FF00AE, inset 0 0 8px rgba(255,0,174,0.25); border-color: #FF77D0; }
         }
+        @keyframes scoreLabelFadeIn { from { opacity:0; transform:translateX(-6px); } to { opacity:1; transform:translateX(0); } }
       `}</style>
     </>
   );
