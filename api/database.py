@@ -69,18 +69,23 @@ def get_instance_db_path(instance_key: str) -> str:
             instances_dir = "."
         return os.path.join(instances_dir, f"{instance_key}.db")
     else:
-        # For non-SQLite databases, would need different strategy (e.g., schema-based)
-        raise NotImplementedError("Multi-instance only supported for SQLite currently")
+        # Non-SQLite (e.g. Postgres): not supported for per-instance files — return None
+        return None
 
 
 def get_instance_engine(instance_key: str) -> tuple[any, async_sessionmaker]:
-    """Get or create engine and session maker for a specific instance."""
+    """Get or create engine and session maker for a specific instance.
+    Falls back to main engine when not using SQLite (e.g. Postgres on Railway)."""
     if instance_key not in _instance_engines:
         db_path = get_instance_db_path(instance_key)
-        db_url = f"sqlite+aiosqlite:///{db_path}"
-        engine = create_async_engine(db_url, echo=False)
-        session_maker = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
-        _instance_engines[instance_key] = (engine, session_maker)
+        if db_path is None:
+            # Non-SQLite: use main engine/session for everything
+            _instance_engines[instance_key] = (engine, AsyncSessionLocal)
+        else:
+            inst_url = f"sqlite+aiosqlite:///{db_path}"
+            inst_engine = create_async_engine(inst_url, echo=False)
+            session_maker = async_sessionmaker(inst_engine, class_=AsyncSession, expire_on_commit=False)
+            _instance_engines[instance_key] = (inst_engine, session_maker)
     return _instance_engines[instance_key]
 
 
