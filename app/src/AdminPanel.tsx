@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import InstanceList from './admin/InstanceList';
 import CreateInstanceWizard from './admin/CreateInstanceWizard';
 import InstanceEditor from './admin/InstanceEditor';
+import SimplifiedDesignEditor from './admin/SimplifiedDesignEditor';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8100';
 
@@ -26,6 +27,7 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
   const [activeTab, setActiveTab] = useState<'instances' | 'prompts' | 'design'>('instances');
   const [showCreateWizard, setShowCreateWizard] = useState(false);
   const [editingInstance, setEditingInstance] = useState<string | null>(null);
+  const [showDesignEditor, setShowDesignEditor] = useState(false);
   const [prompts, setPrompts] = useState<Record<string, Prompt>>({});
   const [designTokens, setDesignTokens] = useState<DesignTokens | null>(null);
   const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
@@ -419,7 +421,10 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
             LLM Prompts
           </button>
           <button
-            onClick={() => setActiveTab('design')}
+            onClick={() => {
+              setActiveTab('design');
+              setShowDesignEditor(true);
+            }}
             style={{
               flex: 1,
               padding: '12px 20px',
@@ -471,13 +476,11 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
                 )}
               </div>
             </div>
-          ) : designTokens ? (
-            <div style={{ maxWidth: 800 }}>{renderDesignTokenEditor(designTokens)}</div>
-          ) : (
+          ) : activeTab === 'design' ? (
             <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>
-              No design tokens available
+              Click "Design Tokens" to edit visual customization
             </div>
-          )}
+          ) : null}
         </div>
       </div>
 
@@ -495,6 +498,12 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
         <InstanceEditor
           instanceKey={editingInstance}
           onClose={() => setEditingInstance(null)}
+        />
+      )}
+
+      {showDesignEditor && (
+        <SimplifiedDesignEditor
+          onClose={() => setShowDesignEditor(false)}
         />
       )}
     </div>

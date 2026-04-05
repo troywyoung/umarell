@@ -21,6 +21,13 @@ from sms import router as sms_router
 from prompts import get_all_prompts, get_prompt, update_prompt
 from design_tokens import get_design_tokens, update_design_token
 from ui_copy import get_ui_copy, update_ui_copy
+from simplified_tokens import (
+    get_simplified_tokens_from_full,
+    apply_simplified_tokens_to_full,
+    SIMPLIFIED_TOKENS,
+    TOKEN_LABELS,
+    TOKEN_DESCRIPTIONS
+)
 
 
 # ─── Auth helpers ────────────────────────────────────────────────────────────
@@ -1209,6 +1216,212 @@ async def update_design_token_endpoint(
         raise HTTPException(404, "Design token not found")
 
     return {"status": "updated", "path": update.path, "value": update.value}
+
+
+@app.get("/admin/simplified-tokens")
+async def get_simplified_tokens_endpoint(current_user: User = Depends(require_user)):
+    """Get simplified design tokens for editing (< 15 high-leverage controls)."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    full_tokens = await get_design_tokens()
+    simplified = get_simplified_tokens_from_full(full_tokens)
+
+    return {
+        "tokens": simplified,
+        "labels": TOKEN_LABELS,
+        "descriptions": TOKEN_DESCRIPTIONS
+    }
+
+
+class SimplifiedTokensUpdate(BaseModel):
+    tokens: dict[str, str]
+
+
+@app.put("/admin/simplified-tokens")
+async def update_simplified_tokens_endpoint(
+    update: SimplifiedTokensUpdate,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Save simplified tokens and trigger staging deployment."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    # Get current full tokens
+    full_tokens = await get_design_tokens()
+
+    # Apply simplified changes to full structure
+    updated_full = apply_simplified_tokens_to_full(update.tokens, full_tokens)
+
+    # Save to database
+    instance_key = "hot-takes"  # Default instance
+    result = await db.execute(select(Instance).where(Instance.key == instance_key))
+    instance = result.scalar_one_or_none()
+
+    if not instance:
+        raise HTTPException(404, "Instance not found")
+
+    # Update or create config
+    result = await db.execute(
+        select(InstanceConfig)
+        .where(InstanceConfig.instance_id == instance.id)
+        .where(InstanceConfig.config_type == "design_tokens")
+    )
+    config = result.scalar_one_or_none()
+
+    if config:
+        config.config_data = updated_full
+        from sqlalchemy.orm.attributes import flag_modified
+        flag_modified(config, "config_data")
+    else:
+        config = InstanceConfig(
+            instance_id=instance.id,
+            config_type="design_tokens",
+            config_data=updated_full
+        )
+        db.add(config)
+
+    await db.commit()
+
+    # Trigger staging deployment
+    deployment_triggered = await trigger_staging_deployment()
+
+    return {
+        "status": "saved",
+        "deployment_triggered": deployment_triggered,
+        "message": "Design tokens saved successfully"
+    }
+
+
+@app.post("/admin/simplified-tokens/revert")
+async def revert_simplified_tokens_endpoint(
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Revert design tokens to defaults."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    from design_tokens import DESIGN_TOKENS
+
+    instance_key = "hot-takes"  # Default instance
+    result = await db.execute(select(Instance).where(Instance.key == instance_key))
+    instance = result.scalar_one_or_none()
+
+    if not instance:
+        raise HTTPException(404, "Instance not found")
+
+    # Update or create config with defaults
+    result = await db.execute(
+        select(InstanceConfig)
+        .where(InstanceConfig.instance_id == instance.id)
+        .where(InstanceConfig.config_type == "design_tokens")
+    )
+    config = result.scalar_one_or_none()
+
+    if config:
+        config.config_data = DESIGN_TOKENS.copy()
+        from sqlalchemy.orm.attributes import flag_modified
+        flag_modified(config, "config_data")
+    else:
+        config = InstanceConfig(
+            instance_id=instance.id,
+            config_type="design_tokens",
+            config_data=DESIGN_TOKENS.copy()
+        )
+        db.add(config)
+
+    await db.commit()
+
+    # Return the reverted simplified tokens
+    simplified = get_simplified_tokens_from_full(DESIGN_TOKENS)
+
+    return {
+        "status": "reverted",
+        "tokens": simplified,
+        "message": "Design tokens reverted to defaults"
+    }
+
+
+async def trigger_staging_deployment() -> bool:
+    """Trigger staging deployment by merging main to staging and pushing."""
+    import subprocess
+
+    try:
+        # Check if we're in a git repository
+        result = subprocess.run(
+            ["git", "rev-parse", "--git-dir"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+
+        # Check if staging branch exists
+        result = subprocess.run(
+            ["git", "rev-parse", "--verify", "staging"],
+            capture_output=True,
+            text=True
+        )
+
+        staging_exists = result.returncode == 0
+
+        if not staging_exists:
+            # Create staging branch from main
+            subprocess.run(
+                ["git", "checkout", "-b", "staging"],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+            subprocess.run(
+                ["git", "push", "-u", "origin", "staging"],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+            subprocess.run(
+                ["git", "checkout", "main"],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+
+        # Merge main into staging and push
+        subprocess.run(
+            ["git", "checkout", "staging"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        subprocess.run(
+            ["git", "merge", "main", "--no-edit"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        subprocess.run(
+            ["git", "push", "origin", "staging"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        subprocess.run(
+            ["git", "checkout", "main"],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+
+        return True
+
+    except subprocess.CalledProcessError as e:
+        # Log error but don't fail the save operation
+        print(f"Failed to trigger staging deployment: {e}")
+        return False
+    except Exception as e:
+        print(f"Unexpected error triggering deployment: {e}")
+        return False
 
 
 # ─── Instance Management ─────────────────────────────────────────────────────
