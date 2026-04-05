@@ -2,8 +2,13 @@
 LLM Prompt configurations for Umarell.
 
 All system prompts used throughout the pipeline are defined here.
-Prompts can be modified via the admin interface.
+Prompts can be modified via the admin interface and are persisted to the database.
+
+Default prompts are defined in PROMPTS dict. Runtime prompts are loaded from database.
 """
+
+from sqlalchemy import select
+from database import AsyncSessionLocal
 
 PROMPTS = {
     "extract_from_image": {
@@ -231,31 +236,122 @@ No markdown fences. No preamble.""",
 }
 
 
-def get_prompt(key: str) -> dict:
-    """Get a prompt configuration by key."""
+async def get_prompt(key: str, instance_key: str = "hot-takes") -> dict:
+    """Get a prompt configuration by key.
+
+    Loads from database for the given instance, falls back to PROMPTS default.
+    """
+    async with AsyncSessionLocal() as db:
+        from models import Instance, InstancePrompt
+
+        # Get instance
+        result = await db.execute(select(Instance).where(Instance.key == instance_key))
+        instance = result.scalar_one_or_none()
+
+        if instance:
+            # Try to load from database
+            result = await db.execute(
+                select(InstancePrompt)
+                .where(InstancePrompt.instance_id == instance.id)
+                .where(InstancePrompt.prompt_key == key)
+            )
+            db_prompt = result.scalar_one_or_none()
+
+            if db_prompt:
+                return {
+                    "name": db_prompt.name,
+                    "description": db_prompt.description,
+                    "system": db_prompt.system,
+                    "max_tokens": int(db_prompt.max_tokens)
+                }
+
+    # Fallback to module defaults
     return PROMPTS.get(key, {})
 
 
-def get_all_prompts() -> dict:
-    """Get all prompt configurations."""
+async def get_all_prompts(instance_key: str = "hot-takes") -> dict:
+    """Get all prompt configurations.
+
+    Returns prompts from database if available, otherwise from PROMPTS default.
+    """
+    async with AsyncSessionLocal() as db:
+        from models import Instance, InstancePrompt
+
+        # Get instance
+        result = await db.execute(select(Instance).where(Instance.key == instance_key))
+        instance = result.scalar_one_or_none()
+
+        if instance:
+            # Load all prompts for this instance
+            result = await db.execute(
+                select(InstancePrompt).where(InstancePrompt.instance_id == instance.id)
+            )
+            db_prompts = result.scalars().all()
+
+            if db_prompts:
+                prompts = {}
+                for p in db_prompts:
+                    prompts[p.prompt_key] = {
+                        "name": p.name,
+                        "description": p.description,
+                        "system": p.system,
+                        "max_tokens": int(p.max_tokens)
+                    }
+                return prompts
+
+    # Fallback to module defaults
     return PROMPTS
 
 
-def update_prompt(key: str, updates: dict) -> bool:
-    """Update a prompt configuration.
+async def update_prompt(key: str, updates: dict, instance_key: str = "hot-takes") -> bool:
+    """Update a prompt configuration in the database.
 
     Args:
         key: Prompt identifier
         updates: Dict with 'name', 'description', 'system', or 'max_tokens'
+        instance_key: Instance identifier
 
     Returns:
         True if updated successfully
     """
-    if key not in PROMPTS:
-        return False
+    async with AsyncSessionLocal() as db:
+        from models import Instance, InstancePrompt
 
-    for field in ['name', 'description', 'system', 'max_tokens']:
-        if field in updates:
-            PROMPTS[key][field] = updates[field]
+        # Get instance
+        result = await db.execute(select(Instance).where(Instance.key == instance_key))
+        instance = result.scalar_one_or_none()
 
-    return True
+        if not instance:
+            return False
+
+        # Get or create prompt
+        result = await db.execute(
+            select(InstancePrompt)
+            .where(InstancePrompt.instance_id == instance.id)
+            .where(InstancePrompt.prompt_key == key)
+        )
+        prompt = result.scalar_one_or_none()
+
+        if not prompt:
+            # Create new prompt based on defaults
+            default = PROMPTS.get(key)
+            if not default:
+                return False
+
+            prompt = InstancePrompt(
+                instance_id=instance.id,
+                prompt_key=key,
+                name=default["name"],
+                description=default["description"],
+                system=default["system"],
+                max_tokens=default["max_tokens"]
+            )
+            db.add(prompt)
+
+        # Apply updates
+        for field in ['name', 'description', 'system', 'max_tokens']:
+            if field in updates:
+                setattr(prompt, field, updates[field])
+
+        await db.commit()
+        return True

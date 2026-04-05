@@ -11,7 +11,7 @@ import httpx
 from jose import jwt, JWTError
 from pydantic import BaseModel
 from database import init_db, get_db, AsyncSessionLocal
-from models import Observation, User, Take
+from models import Observation, User, Take, Instance, InstanceConfig, InstancePrompt
 from schemas import ObservationCreate, ObservationOut, TakeCreate, TakeOut
 from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, generate_joke, ACTIVE_MODEL
 from config import settings
@@ -92,6 +92,48 @@ async def lifespan(app: FastAPI):
             .values(status="error", error_detail="Pipeline interrupted by server restart")
         )
         await db.commit()
+
+        # Seed default "hot-takes" instance if it doesn't exist
+        result = await db.execute(select(Instance).where(Instance.key == "hot-takes"))
+        hot_takes = result.scalar_one_or_none()
+
+        if not hot_takes:
+            from prompts import PROMPTS
+            from design_tokens import DESIGN_TOKENS
+
+            # Create instance
+            hot_takes = Instance(
+                key="hot-takes",
+                display_name="Hot Takes",
+                subdirectory=None,
+                database_name=None,
+                is_active=True
+            )
+            db.add(hot_takes)
+            await db.flush()
+
+            # Seed prompts
+            for prompt_key, prompt_config in PROMPTS.items():
+                prompt = InstancePrompt(
+                    instance_id=hot_takes.id,
+                    prompt_key=prompt_key,
+                    name=prompt_config["name"],
+                    description=prompt_config["description"],
+                    system=prompt_config["system"],
+                    max_tokens=prompt_config["max_tokens"],
+                    is_default=True
+                )
+                db.add(prompt)
+
+            # Seed design tokens
+            design_config = InstanceConfig(
+                instance_id=hot_takes.id,
+                config_type="design_tokens",
+                config_data=DESIGN_TOKENS
+            )
+            db.add(design_config)
+
+            await db.commit()
     yield
 
 
@@ -1017,12 +1059,25 @@ class DesignTokenUpdate(BaseModel):
     value: str
 
 
+@app.get("/instance/{instance_key}/config")
+async def get_instance_config(instance_key: str):
+    """Get merged configuration for an instance (prompts + design tokens)."""
+    prompts = await get_all_prompts(instance_key)
+    design_tokens = await get_design_tokens(instance_key)
+
+    return {
+        "instance_key": instance_key,
+        "prompts": prompts,
+        "design_tokens": design_tokens
+    }
+
+
 @app.get("/admin/prompts")
 async def get_prompts(current_user: User = Depends(require_user)):
     """Get all LLM prompt configurations."""
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
-    return get_all_prompts()
+    return await get_all_prompts()
 
 
 @app.get("/admin/prompts/{prompt_key}")
@@ -1030,7 +1085,7 @@ async def get_prompt_detail(prompt_key: str, current_user: User = Depends(requir
     """Get a specific prompt configuration."""
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
-    prompt = get_prompt(prompt_key)
+    prompt = await get_prompt(prompt_key)
     if not prompt:
         raise HTTPException(404, "Prompt not found")
     return prompt
@@ -1042,7 +1097,7 @@ async def update_prompt_config(
     updates: PromptUpdate,
     current_user: User = Depends(require_user)
 ):
-    """Update a prompt configuration."""
+    """Update a prompt configuration (persisted to database)."""
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
 
@@ -1056,10 +1111,10 @@ async def update_prompt_config(
     if updates.max_tokens is not None:
         update_data["max_tokens"] = updates.max_tokens
 
-    if not update_prompt(prompt_key, update_data):
+    if not await update_prompt(prompt_key, update_data):
         raise HTTPException(404, "Prompt not found")
 
-    return {"status": "updated", "prompt": get_prompt(prompt_key)}
+    return {"status": "updated", "prompt": await get_prompt(prompt_key)}
 
 
 @app.get("/admin/design-tokens")
@@ -1067,7 +1122,7 @@ async def get_design_tokens_endpoint(current_user: User = Depends(require_user))
     """Get all design tokens."""
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
-    return get_design_tokens()
+    return await get_design_tokens()
 
 
 @app.put("/admin/design-tokens")
@@ -1075,11 +1130,11 @@ async def update_design_token_endpoint(
     update: DesignTokenUpdate,
     current_user: User = Depends(require_user)
 ):
-    """Update a design token value."""
+    """Update a design token value (persisted to database)."""
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
 
-    if not update_design_token(update.path, update.value):
+    if not await update_design_token(update.path, update.value):
         raise HTTPException(404, "Design token not found")
 
     return {"status": "updated", "path": update.path, "value": update.value}

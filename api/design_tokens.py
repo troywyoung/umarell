@@ -2,8 +2,13 @@
 Design tokens for Umarell.
 
 All design variables (colors, typography, spacing, etc.) are defined here.
-Tokens can be modified via the admin interface.
+Tokens can be modified via the admin interface and are persisted to the database.
+
+Default tokens are defined in DESIGN_TOKENS dict. Runtime tokens are loaded from database.
 """
+
+from sqlalchemy import select
+from database import AsyncSessionLocal
 
 DESIGN_TOKENS = {
     "colors": {
@@ -141,44 +146,103 @@ DESIGN_TOKENS = {
 }
 
 
-def get_design_tokens() -> dict:
-    """Get all design tokens."""
+async def get_design_tokens(instance_key: str = "hot-takes") -> dict:
+    """Get all design tokens.
+
+    Loads from database for the given instance, falls back to DESIGN_TOKENS default.
+    """
+    async with AsyncSessionLocal() as db:
+        from models import Instance, InstanceConfig
+
+        # Get instance
+        result = await db.execute(select(Instance).where(Instance.key == instance_key))
+        instance = result.scalar_one_or_none()
+
+        if instance:
+            # Try to load from database
+            result = await db.execute(
+                select(InstanceConfig)
+                .where(InstanceConfig.instance_id == instance.id)
+                .where(InstanceConfig.config_type == "design_tokens")
+            )
+            config = result.scalar_one_or_none()
+
+            if config and config.config_data:
+                return config.config_data
+
+    # Fallback to module defaults
     return DESIGN_TOKENS
 
 
-def update_design_token(path: list[str], value: str) -> bool:
-    """Update a design token value.
+async def update_design_token(path: list[str], value: str, instance_key: str = "hot-takes") -> bool:
+    """Update a design token value in the database.
 
     Args:
         path: Path to the token (e.g., ['colors', 'primary', 'accent'])
         value: New value for the token
+        instance_key: Instance identifier
 
     Returns:
         True if updated successfully
     """
-    current = DESIGN_TOKENS
-    for key in path[:-1]:
-        if key not in current:
+    async with AsyncSessionLocal() as db:
+        from models import Instance, InstanceConfig
+
+        # Get instance
+        result = await db.execute(select(Instance).where(Instance.key == instance_key))
+        instance = result.scalar_one_or_none()
+
+        if not instance:
             return False
-        current = current[key]
 
-    if path[-1] not in current:
-        return False
+        # Get or create config
+        result = await db.execute(
+            select(InstanceConfig)
+            .where(InstanceConfig.instance_id == instance.id)
+            .where(InstanceConfig.config_type == "design_tokens")
+        )
+        config = result.scalar_one_or_none()
 
-    current[path[-1]] = value
-    return True
+        if not config:
+            config = InstanceConfig(
+                instance_id=instance.id,
+                config_type="design_tokens",
+                config_data=DESIGN_TOKENS.copy()
+            )
+            db.add(config)
+
+        # Navigate to the token and update it
+        current = config.config_data
+        for key in path[:-1]:
+            if key not in current:
+                return False
+            current = current[key]
+
+        if path[-1] not in current:
+            return False
+
+        current[path[-1]] = value
+
+        # Mark as modified to trigger update
+        from sqlalchemy.orm.attributes import flag_modified
+        flag_modified(config, "config_data")
+
+        await db.commit()
+        return True
 
 
-def get_token_value(path: list[str]) -> str | None:
+async def get_token_value(path: list[str], instance_key: str = "hot-takes") -> str | None:
     """Get a design token value by path.
 
     Args:
         path: Path to the token (e.g., ['colors', 'primary', 'accent'])
+        instance_key: Instance identifier
 
     Returns:
         Token value or None if not found
     """
-    current = DESIGN_TOKENS
+    tokens = await get_design_tokens(instance_key)
+    current = tokens
     for key in path:
         if isinstance(current, dict) and key in current:
             current = current[key]

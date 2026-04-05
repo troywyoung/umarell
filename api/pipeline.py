@@ -418,7 +418,7 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
     else:
         content = raw_input
 
-    prompt_config = get_prompt("format_thesis")
+    prompt_config = await get_prompt("format_thesis")
     return await _call(
         system=prompt_config["system"],
         user=f"User input: {content}",
@@ -428,7 +428,7 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
 
 async def format_challenge_thesis(raw_input: str, parent_thesis: str) -> str:
     """Turn a challenge's raw input into a thesis that directly opposes the parent."""
-    prompt_config = get_prompt("format_challenge_thesis")
+    prompt_config = await get_prompt("format_challenge_thesis")
     return await _call(
         system=prompt_config["system"],
         user=f"ORIGINAL CLAIM: {parent_thesis}\n\nUSER'S COUNTER-ARGUMENT: {raw_input}",

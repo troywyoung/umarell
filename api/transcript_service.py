@@ -198,7 +198,7 @@ async def extract_podcast_takes(transcript: dict, count: int = 5) -> list[dict]:
         segments_formatted.append(f"[{seg['start']:.1f}s] {seg['text']}")
     segments_text = "\n".join(segments_formatted[:1000])  # Cap at 1000 segments
 
-    prompt_config = get_prompt("extract_podcast_takes")
+    prompt_config = await get_prompt("extract_podcast_takes")
     user_prompt = f"""Extract the {count} most interesting claims from this podcast transcript.
 
 Full transcript text:

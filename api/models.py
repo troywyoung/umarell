@@ -1,6 +1,6 @@
 import uuid
 from datetime import datetime, timezone
-from sqlalchemy import String, Text, DateTime, JSON, Float, ForeignKey
+from sqlalchemy import String, Text, DateTime, JSON, Float, ForeignKey, Boolean
 from sqlalchemy.orm import Mapped, mapped_column
 from database import Base
 
@@ -69,3 +69,40 @@ class Observation(Base):
     episode_title: Mapped[str | None] = mapped_column(String, nullable=True)  # e.g. "The War on Slop"
     category: Mapped[str | None] = mapped_column(String, nullable=True)  # broad topic category
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class Instance(Base):
+    __tablename__ = "instances"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=_uuid)
+    key: Mapped[str] = mapped_column(String, unique=True, index=True)  # unique slug like "hot-takes"
+    display_name: Mapped[str] = mapped_column(String)
+    subdirectory: Mapped[str | None] = mapped_column(String, nullable=True)
+    database_name: Mapped[str | None] = mapped_column(String, nullable=True)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
+
+
+class InstanceConfig(Base):
+    __tablename__ = "instance_configs"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=_uuid)
+    instance_id: Mapped[str] = mapped_column(String, ForeignKey("instances.id", ondelete="CASCADE"), index=True)
+    config_type: Mapped[str] = mapped_column(String)  # "branding", "design_tokens", "ui_copy"
+    config_data: Mapped[dict] = mapped_column(JSON)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
+
+
+class InstancePrompt(Base):
+    __tablename__ = "instance_prompts"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=_uuid)
+    instance_id: Mapped[str] = mapped_column(String, ForeignKey("instances.id", ondelete="CASCADE"), index=True)
+    prompt_key: Mapped[str] = mapped_column(String, index=True)
+    name: Mapped[str] = mapped_column(String)
+    description: Mapped[str] = mapped_column(Text)
+    system: Mapped[str] = mapped_column(Text)
+    max_tokens: Mapped[int] = mapped_column(Float)  # Using Float for integer storage compatibility
+    is_default: Mapped[bool] = mapped_column(Boolean, default=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
