@@ -8,8 +8,7 @@ implement
 
 ## Blocked By
 
-- [Admin Podcast Ingestion Endpoint](admin-podcast-ingestion-endpoint.md)
-
+(none)
 
 ## Definition of Done
 

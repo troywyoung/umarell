@@ -3,6 +3,7 @@ import InstanceList from './admin/InstanceList';
 import CreateInstanceWizard from './admin/CreateInstanceWizard';
 import InstanceEditor from './admin/InstanceEditor';
 import SimplifiedDesignEditor from './admin/SimplifiedDesignEditor';
+import PodcastIngestionForm from './admin/PodcastIngestionForm';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8100';
 
@@ -24,7 +25,7 @@ interface DesignTokens {
 }
 
 export default function AdminPanel({ onClose }: { onClose: () => void }) {
-  const [activeTab, setActiveTab] = useState<'instances' | 'prompts' | 'design'>('instances');
+  const [activeTab, setActiveTab] = useState<'instances' | 'prompts' | 'design' | 'podcast'>('instances');
   const [showCreateWizard, setShowCreateWizard] = useState(false);
   const [editingInstance, setEditingInstance] = useState<string | null>(null);
   const [showDesignEditor, setShowDesignEditor] = useState(false);
@@ -574,6 +575,21 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
           >
             Design Tokens
           </button>
+          <button
+            onClick={() => setActiveTab('podcast')}
+            style={{
+              flex: 1,
+              padding: '12px 20px',
+              background: activeTab === 'podcast' ? '#FF00AE' : 'transparent',
+              color: activeTab === 'podcast' ? '#FFF' : '#888',
+              border: 'none',
+              fontSize: 14,
+              fontWeight: 700,
+              cursor: 'pointer',
+            }}
+          >
+            Podcast Ingest
+          </button>
         </div>
 
         <div style={{ padding: 20, overflow: 'auto', flex: 1 }}>
@@ -616,6 +632,8 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
             <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>
               Click "Design Tokens" to edit visual customization
             </div>
+          ) : activeTab === 'podcast' ? (
+            <PodcastIngestionForm />
           ) : null}
         </div>
       </div>

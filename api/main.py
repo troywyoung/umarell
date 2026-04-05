@@ -810,6 +810,181 @@ async def seed_episode(
     return {"episode_tag": body.episode_tag, "observations": created, "count": len(created)}
 
 
+# ─── Podcast ingestion ──────────────────────────────────────────────────────
+
+class PodcastIngest(BaseModel):
+    url: str
+    episode_title: str
+    episode_tag: str | None = None
+    podcast_name: str | None = None
+    count: int = 5
+    author_name: str = "Podcast"
+    admin_key: str | None = None
+
+
+@app.post("/podcasts/ingest", status_code=202)
+async def ingest_podcast(
+    body: PodcastIngest,
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
+    current_user: User | None = Depends(get_current_user),
+):
+    """Fetch YouTube transcript, extract takes, create observations.
+
+    Hybrid sync/async flow:
+    - Fast validation (5s timeout on transcript fetch) returns errors immediately
+    - Success spawns async processing for take extraction and pipeline execution
+
+    Requires auth OR admin_key in body.
+
+    Returns 202 with observation IDs immediately after creating observations.
+    Observations will be processed asynchronously through the steel man pipeline.
+    """
+    # Auth check
+    if not current_user and not body.admin_key:
+        raise HTTPException(401, "Not authenticated")
+    if body.admin_key and body.admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    # Import here to avoid circular dependencies
+    from transcript_service import fetch_youtube_transcript, extract_podcast_takes, TranscriptError
+
+    # Fetch transcript with timeout (fast validation)
+    try:
+        import asyncio
+        transcript = await asyncio.wait_for(
+            asyncio.to_thread(fetch_youtube_transcript, body.url),
+            timeout=5.0
+        )
+    except asyncio.TimeoutError:
+        raise HTTPException(
+            400,
+            "Transcript fetch timed out after 5 seconds. The video may be too long or YouTube's API is slow. Try again or use a different video."
+        )
+    except TranscriptError as e:
+        raise HTTPException(400, str(e))
+    except Exception as e:
+        raise HTTPException(500, f"Unexpected error fetching transcript: {str(e)}")
+
+    # Extract takes
+    try:
+        takes = await extract_podcast_takes(transcript, count=body.count)
+    except ValueError as e:
+        raise HTTPException(500, f"Failed to extract takes: {str(e)}")
+    except Exception as e:
+        raise HTTPException(500, f"Unexpected error extracting takes: {str(e)}")
+
+    if not takes:
+        raise HTTPException(400, "No high-quality takes found in transcript (all below quality threshold of 70)")
+
+    # Generate episode tag from title if missing
+    episode_tag = body.episode_tag
+    if not episode_tag:
+        # Create slug from title
+        episode_tag = body.episode_title.lower()
+        episode_tag = episode_tag.replace(" ", "-")
+        episode_tag = "".join(c for c in episode_tag if c.isalnum() or c == "-")
+        episode_tag = episode_tag[:100]  # Limit length
+
+    # Create observations (skip format_thesis step to preserve speaker voice)
+    user_id = current_user.id if current_user else None
+    created = []
+    instance_key = await get_instance_key(request)
+
+    for take in takes:
+        # Build metadata with speaker and timestamp
+        metadata = {
+            "speaker": take["speaker"],
+            "timestamp": take["start"],
+            "end_timestamp": take["end"],
+            "quality_score": take["quality_score"],
+        }
+        if body.podcast_name:
+            metadata["podcast_name"] = body.podcast_name
+
+        obs = Observation(
+            raw_input=take["claim"],
+            input_type="text",
+            thesis=take["claim"],  # Skip format_thesis step - use claim directly as thesis
+            status="researching",  # Skip formatting state since we're not reformatting
+            model_used=ACTIVE_MODEL,
+            user_id=user_id,
+            episode_tag=episode_tag,
+            episode_title=body.episode_title,
+        )
+        db.add(obs)
+        await db.commit()
+        await db.refresh(obs)
+
+        # Spawn async pipeline (steel man generation)
+        # Start from steel man generation (skip format_thesis)
+        asyncio.create_task(_run_steel_man_only(obs.id, instance_key))
+        created.append(obs.id)
+
+    return {
+        "episode_tag": episode_tag,
+        "episode_title": body.episode_title,
+        "podcast_name": body.podcast_name or "Podcast",
+        "observations": created,
+        "count": len(created),
+        "transcript_length": len(transcript["text"]),
+    }
+
+
+async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-takes"):
+    """Run steel man generation only (skip thesis formatting).
+
+    Used for podcast ingestion where we want to preserve the speaker's exact words.
+    """
+    _, session_maker = get_instance_engine(instance_key)
+    async with session_maker() as db:
+        try:
+            result = await db.execute(select(Observation).where(Observation.id == observation_id))
+            obs = result.scalar_one_or_none()
+            if not obs or not obs.thesis:
+                return
+
+            # Generate steel man
+            steel_man_data, sources = await generate_steel_man(obs.thesis)
+
+            obs = await db.get(Observation, observation_id)
+            if not obs:
+                return
+
+            # Store as JSON string
+            import json as _json
+            obs.summary = _json.dumps(steel_man_data)
+            if sources:
+                obs.sources = sources
+
+            # Build plain text version for metadata scoring
+            sm_text = steel_man_data.get("bottom_line", "")
+            if steel_man_data.get("bullets"):
+                sm_text += "\n" + "\n".join(steel_man_data["bullets"])
+
+            # Generate metadata
+            try:
+                meta = await generate_metadata(obs.thesis, sm_text)
+                obs.score = meta.get("score")
+                obs.tags = meta.get("tags")
+                obs.evidence_type = meta.get("evidence_type")
+                obs.category = meta.get("category")
+            except Exception as meta_err:
+                print(f"Metadata generation failed (non-fatal): {meta_err}")
+
+            obs.status = "complete"
+            await db.commit()
+
+        except Exception as e:
+            err_msg = str(e)
+            obs = await db.get(Observation, observation_id)
+            if obs:
+                obs.status = "error"
+                obs.error_detail = err_msg[:500]
+                await db.commit()
+                print(f"Steel man pipeline error for {observation_id}: {err_msg[:200]}")
+
+
 # ─── Admin: retag episode ───────────────────────────────────────────────────
 
 class RetagEpisodeBody(BaseModel):
