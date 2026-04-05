@@ -171,16 +171,20 @@ app.add_middleware(
 
 @app.middleware("http")
 async def instance_routing_middleware(request: Request, call_next):
-    """Extract instance key from path and store in request state."""
+    """Extract instance key from path, strip prefix, and store in request state."""
     path = request.url.path
 
-    # Pattern: /{instance_key}/... where instance_key doesn't start with "admin", "auth", "health"
+    # Pattern: /{instance_key}/... where instance_key doesn't start with known meta routes
     match = re.match(r'^/([a-z0-9-]+)(/.*)?$', path)
     if match:
         potential_instance = match.group(1)
         # Exclude meta routes that aren't instance-specific
-        if potential_instance not in ["admin", "auth", "health", "instance"]:
+        if potential_instance not in ["admin", "auth", "health", "instance", "observations", "takes", "episodes", "webhook"]:
             request.state.instance_key = potential_instance
+            # Rewrite the path to strip the instance prefix so routes match normally
+            new_path = match.group(2) or "/"
+            request.scope["path"] = new_path
+            request.scope["raw_path"] = new_path.encode("utf-8")
         else:
             request.state.instance_key = None
     else:
