@@ -19,6 +19,7 @@ from whatsapp import router as whatsapp_router
 from sms import router as sms_router
 from prompts import get_all_prompts, get_prompt, update_prompt
 from design_tokens import get_design_tokens, update_design_token
+from ui_copy import get_ui_copy, update_ui_copy
 
 
 # ─── Auth helpers ────────────────────────────────────────────────────────────
@@ -1061,14 +1062,16 @@ class DesignTokenUpdate(BaseModel):
 
 @app.get("/instance/{instance_key}/config")
 async def get_instance_config(instance_key: str):
-    """Get merged configuration for an instance (prompts + design tokens)."""
+    """Get merged configuration for an instance (prompts + design tokens + ui_copy)."""
     prompts = await get_all_prompts(instance_key)
     design_tokens = await get_design_tokens(instance_key)
+    ui_copy = await get_ui_copy(instance_key)
 
     return {
         "instance_key": instance_key,
         "prompts": prompts,
-        "design_tokens": design_tokens
+        "design_tokens": design_tokens,
+        "ui_copy": ui_copy
     }
 
 

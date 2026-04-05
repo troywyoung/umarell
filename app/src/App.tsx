@@ -4,6 +4,7 @@ import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
 import { API } from "./config";
 import AdminPanel from "./AdminPanel";
+import { useInstanceConfig } from "./contexts/InstanceContext";
 
 function authHeaders(): Record<string, string> {
   const token = localStorage.getItem("sm_token");
@@ -12,7 +13,8 @@ function authHeaders(): Record<string, string> {
 
 // ─── Rotating placeholder text ───────────────────────────────────────────
 
-const PLACEHOLDERS = [
+// Default placeholders — used as fallback if config is not loaded
+const DEFAULT_PLACEHOLDERS = [
   // Dares
   "What hill are you dying on?",
   "Drop your hottest take\u2026",
@@ -33,11 +35,11 @@ const PLACEHOLDERS = [
   "e.g. Social media is a net negative for society",
 ];
 
-function getRandomPlaceholder() {
-  return PLACEHOLDERS[Math.floor(Math.random() * PLACEHOLDERS.length)];
+function getRandomPlaceholder(placeholders: string[] = DEFAULT_PLACEHOLDERS) {
+  return placeholders[Math.floor(Math.random() * placeholders.length)];
 }
 
-const RESPONSE_PLACEHOLDERS = [
+const DEFAULT_RESPONSE_PLACEHOLDERS = [
   "Agree? Destroy it.",
   "Wrong. Here's why…",
   "This is more complicated than it looks.",
@@ -55,8 +57,8 @@ const RESPONSE_PLACEHOLDERS = [
   "Strong disagree, and here's the receipts.",
 ];
 
-function getRandomResponsePlaceholder() {
-  return RESPONSE_PLACEHOLDERS[Math.floor(Math.random() * RESPONSE_PLACEHOLDERS.length)];
+function getRandomResponsePlaceholder(responsePlaceholders: string[] = DEFAULT_RESPONSE_PLACEHOLDERS) {
+  return responsePlaceholders[Math.floor(Math.random() * responsePlaceholders.length)];
 }
 
 
@@ -581,6 +583,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   onAbout: () => void;
   onOpenAdmin?: () => void;
 }) {
+  const { config } = useInstanceConfig();
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
   const [jokeMap, setJokeMap] = useState<Record<string, string>>({});
   const [jokeLoading, setJokeLoading] = useState<Set<string>>(new Set());
@@ -627,7 +630,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
       const n = new Set(s);
       if (n.has(obsId)) { n.delete(obsId); } else {
         n.add(obsId);
-        setYourTakePlaceholder(p => p[obsId] ? p : { ...p, [obsId]: getRandomResponsePlaceholder() });
+        setYourTakePlaceholder(p => p[obsId] ? p : { ...p, [obsId]: getRandomResponsePlaceholder(config?.ui_copy?.response_placeholders) });
       }
       return n;
     });
@@ -876,7 +879,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       autoFocus
                       value={yourTakeDraft[obs.id] || ""}
                       onChange={e => setYourTakeDraft(d => ({ ...d, [obs.id]: e.target.value }))}
-                      placeholder={yourTakePlaceholder[obs.id] || "Say your take…"}
+                      placeholder={yourTakePlaceholder[obs.id] || config?.ui_copy?.labels?.say_your_take || "Say your take…"}
                       rows={3}
                       style={{
                         width: "100%", boxSizing: "border-box", resize: "none",
@@ -1220,6 +1223,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
   onBack: () => void;
   parentObs?: Observation | null;
 }) {
+  const { config } = useInstanceConfig();
   const [text, setText] = useState("");
   const [url, setUrl] = useState("");
   const [listening, setListening] = useState(false);
@@ -1227,7 +1231,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
   const [error, setError] = useState("");
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const [imageMeta, setImageMeta] = useState<{ b64: string; mediaType: string } | null>(null);
-  const [placeholder] = useState(() => getRandomPlaceholder());
+  const [placeholder] = useState(() => getRandomPlaceholder(config?.ui_copy?.placeholder_prompts));
   const fileRef = useRef<HTMLInputElement>(null);
   const recRef = useRef<any>(null);
   const textRef = useRef<HTMLTextAreaElement>(null);
@@ -1368,7 +1372,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
           ref={textRef}
           value={text}
           onChange={(e) => { setText(e.target.value); autoResize(); }}
-          placeholder={listening ? "Listening\u2026" : placeholder}
+          placeholder={listening ? (config?.ui_copy?.labels?.listening || "Listening\u2026") : placeholder}
           rows={3}
           autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false}
           style={{
@@ -1403,7 +1407,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
                 type="url"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
-                placeholder="Add a link (optional)"
+                placeholder={config?.ui_copy?.labels?.add_link_optional || "Add a link (optional)"}
                 style={{
                   flex: 1, border: "none", outline: "none",
                   fontSize: 16, color: "#1A1A1A", fontFamily: "inherit",
@@ -1515,6 +1519,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   authUserId?: string;
   isAdmin?: boolean;
 }) {
+  const { config } = useInstanceConfig();
   const [obs, setObs] = useState(initialObs);
   const [counterpointLoading, setCounterpointLoading] = useState(false);
   const [counterpointError, setCounterpointError] = useState(false);
@@ -1915,7 +1920,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Hot Take</p>
+                <p style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> {config?.ui_copy?.labels?.hot_take_badge || "Hot Take"}</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
@@ -2282,6 +2287,7 @@ function getTokenIsAdmin(): boolean {
 }
 
 export default function App() {
+  const { config } = useInstanceConfig();
   const [authUser, setAuthUser] = useState<AuthUser | null>(() => {
     try { return JSON.parse(localStorage.getItem("sm_user") || "null"); } catch { return null; }
   });
@@ -2482,8 +2488,8 @@ export default function App() {
   if (maintenance) {
     return (
       <div style={{ minHeight: "100dvh", background: "#12102B", display: "flex", alignItems: "center", justifyContent: "center", padding: 32 }}>
-        <p style={{ fontFamily: "'Besley', serif", fontSize: 22, fontWeight: 400, color: "#FFF", textAlign: "center", lineHeight: 1.4, letterSpacing: -0.5, margin: 0 }}>
-          Hot Take is getting hotter.<br />Come back later.
+        <p style={{ fontFamily: "'Besley', serif", fontSize: 22, fontWeight: 400, color: "#FFF", textAlign: "center", lineHeight: 1.4, letterSpacing: -0.5, margin: 0, whiteSpace: "pre-line" }}>
+          {config?.ui_copy?.labels?.empty_state || "Hot Take is getting hotter.\nCome back later."}
         </p>
       </div>
     );
