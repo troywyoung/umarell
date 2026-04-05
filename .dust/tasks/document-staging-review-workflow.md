@@ -10,7 +10,6 @@ implement
 
 ## Blocked By
 
-- [Create Staging Environment](create-staging-environment.md)
 - [Set Up Production Deployment Flow](set-up-production-deployment-flow.md)
 
 
