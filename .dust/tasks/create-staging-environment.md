@@ -10,7 +10,6 @@ implement
 
 ## Blocked By
 
-- [Define Hosting And Environment Model](define-hosting-and-environment-model.md)
 - [Document Current Deployment State](document-current-deployment-state.md)
 
 
