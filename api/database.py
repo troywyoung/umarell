@@ -8,10 +8,22 @@ from config import settings
 _db_url = settings.database_url
 if _db_url.startswith("sqlite"):
     _path = _db_url.split("///")[-1]
-    os.makedirs(os.path.dirname(_path) or ".", exist_ok=True)
+    _dir = os.path.dirname(_path) or "."
+    try:
+        os.makedirs(_dir, exist_ok=True)
+    except OSError as e:
+        # If directory creation fails (e.g., read-only filesystem), use current directory
+        if not os.path.exists(_dir):
+            print(f"Warning: Could not create {_dir}, using current directory")
+            _path = os.path.basename(_path)
+            _db_url = f"sqlite+aiosqlite:///{_path}"
 
+# Main engine for meta database (instances table)
 engine = create_async_engine(settings.database_url, echo=False)
 AsyncSessionLocal = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
+
+# Instance-specific database engines cache
+_instance_engines: dict[str, tuple[any, async_sessionmaker]] = {}
 
 
 class Base(DeclarativeBase):
@@ -39,4 +51,41 @@ async def init_db():
 
 async def get_db():
     async with AsyncSessionLocal() as session:
+        yield session
+
+
+def get_instance_db_path(instance_key: str) -> str:
+    """Get the database file path for a given instance."""
+    if _db_url.startswith("sqlite"):
+        base_path = _db_url.split("///")[-1]
+        base_dir = os.path.dirname(base_path)
+        if not base_dir:
+            base_dir = "."
+        instances_dir = os.path.join(base_dir, "instances")
+        try:
+            os.makedirs(instances_dir, exist_ok=True)
+        except OSError:
+            # Fallback to current directory if can't create subdirectory
+            instances_dir = "."
+        return os.path.join(instances_dir, f"{instance_key}.db")
+    else:
+        # For non-SQLite databases, would need different strategy (e.g., schema-based)
+        raise NotImplementedError("Multi-instance only supported for SQLite currently")
+
+
+def get_instance_engine(instance_key: str) -> tuple[any, async_sessionmaker]:
+    """Get or create engine and session maker for a specific instance."""
+    if instance_key not in _instance_engines:
+        db_path = get_instance_db_path(instance_key)
+        db_url = f"sqlite+aiosqlite:///{db_path}"
+        engine = create_async_engine(db_url, echo=False)
+        session_maker = async_sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)
+        _instance_engines[instance_key] = (engine, session_maker)
+    return _instance_engines[instance_key]
+
+
+async def get_instance_db(instance_key: str):
+    """Get database session for a specific instance."""
+    _, session_maker = get_instance_engine(instance_key)
+    async with session_maker() as session:
         yield session

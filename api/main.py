@@ -2,7 +2,7 @@ import asyncio
 import os
 from contextlib import asynccontextmanager
 from datetime import datetime, timedelta, timezone
-from fastapi import FastAPI, HTTPException, Depends
+from fastapi import FastAPI, HTTPException, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -10,7 +10,8 @@ from sqlalchemy import select, desc, text
 import httpx
 from jose import jwt, JWTError
 from pydantic import BaseModel
-from database import init_db, get_db, AsyncSessionLocal
+import re
+from database import init_db, get_db, get_instance_db, get_instance_engine, AsyncSessionLocal, Base
 from models import Observation, User, Take, Instance, InstanceConfig, InstancePrompt
 from schemas import ObservationCreate, ObservationOut, TakeCreate, TakeOut
 from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, generate_joke, ACTIVE_MODEL
@@ -67,7 +68,18 @@ async def require_user(user: User | None = Depends(get_current_user)) -> User:
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    # Initialize main meta database
     await init_db()
+
+    # Initialize instance databases
+    async with AsyncSessionLocal() as db:
+        result = await db.execute(select(Instance).where(Instance.is_active == True))
+        instances = result.scalars().all()
+        for instance in instances:
+            engine, _ = get_instance_engine(instance.key)
+            async with engine.begin() as conn:
+                await conn.run_sync(Base.metadata.create_all)
+
     async with AsyncSessionLocal() as db:
         # Add new columns if they don't exist (SQLite migration)
         for col, definition in [
@@ -150,10 +162,46 @@ app.add_middleware(
 )
 
 
+# ─── Instance routing middleware ─────────────────────────────────────────────
+
+@app.middleware("http")
+async def instance_routing_middleware(request: Request, call_next):
+    """Extract instance key from path and store in request state."""
+    path = request.url.path
+
+    # Pattern: /{instance_key}/... where instance_key doesn't start with "admin", "auth", "health"
+    match = re.match(r'^/([a-z0-9-]+)(/.*)?$', path)
+    if match:
+        potential_instance = match.group(1)
+        # Exclude meta routes that aren't instance-specific
+        if potential_instance not in ["admin", "auth", "health", "instance"]:
+            request.state.instance_key = potential_instance
+        else:
+            request.state.instance_key = None
+    else:
+        request.state.instance_key = None
+
+    response = await call_next(request)
+    return response
+
+
+async def get_instance_key(request: Request) -> str:
+    """Get instance key from request state, defaulting to 'hot-takes'."""
+    return getattr(request.state, "instance_key", None) or "hot-takes"
+
+
+async def get_instance_db_session(request: Request) -> AsyncSession:
+    """Get database session for the current instance."""
+    instance_key = await get_instance_key(request)
+    async for session in get_instance_db(instance_key):
+        yield session
+
+
 # ─── Pipeline ────────────────────────────────────────────────────────────────
 
-async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg"):
-    async with AsyncSessionLocal() as db:
+async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, image_b64: str | None = None, image_media_type: str = "image/jpeg", instance_key: str = "hot-takes"):
+    _, session_maker = get_instance_engine(instance_key)
+    async with session_maker() as db:
         try:
             # If this is a challenge, fetch parent context
             result = await db.execute(select(Observation).where(Observation.id == observation_id))
@@ -313,7 +361,8 @@ async def health():
 @app.post("/observations", response_model=ObservationOut, status_code=201)
 async def create_observation(
     body: ObservationCreate,
-    db: AsyncSession = Depends(get_db),
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
     current_user: User | None = Depends(get_current_user),
 ):
     image_b64 = body.image_data
@@ -334,7 +383,8 @@ async def create_observation(
     db.add(obs)
     await db.commit()
     await db.refresh(obs)
-    asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, image_b64, image_media_type))
+    instance_key = await get_instance_key(request)
+    asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, image_b64, image_media_type, instance_key))
     return obs
 
 
@@ -391,7 +441,8 @@ async def _attach_user_names(db: AsyncSession, observations: list[Observation]) 
 
 @app.get("/observations")
 async def list_observations(
-    db: AsyncSession = Depends(get_db),
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
     current_user: User | None = Depends(get_current_user),
 ):
     query = select(Observation).order_by(desc(Observation.created_at)).limit(100)
@@ -400,7 +451,7 @@ async def list_observations(
 
 
 @app.get("/observations/{obs_id}")
-async def get_observation(obs_id: str, db: AsyncSession = Depends(get_db)):
+async def get_observation(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session)):
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
@@ -419,7 +470,8 @@ class ObservationEdit(BaseModel):
 async def edit_observation(
     obs_id: str,
     body: ObservationEdit,
-    db: AsyncSession = Depends(get_db),
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
     current_user: User | None = Depends(get_current_user),
 ):
     obs = await db.get(Observation, obs_id)
@@ -442,7 +494,8 @@ async def edit_observation(
     await db.refresh(obs)
     image_b64 = body.image_data
     image_media_type = body.image_media_type or "image/jpeg"
-    asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, image_b64, image_media_type))
+    instance_key = await get_instance_key(request)
+    asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, image_b64, image_media_type, instance_key))
     rows = await _attach_user_names(db, [obs])
     return rows[0]
 
@@ -450,7 +503,7 @@ async def edit_observation(
 # ─── Takes (user comments) ──────────────────────────────────────────────────
 
 @app.get("/observations/{obs_id}/takes", response_model=list[TakeOut])
-async def list_takes(obs_id: str, db: AsyncSession = Depends(get_db)):
+async def list_takes(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session)):
     result = await db.execute(
         select(Take).where(Take.observation_id == obs_id).order_by(Take.created_at)
     )
@@ -474,7 +527,8 @@ async def list_takes(obs_id: str, db: AsyncSession = Depends(get_db)):
 async def create_take(
     obs_id: str,
     body: TakeCreate,
-    db: AsyncSession = Depends(get_db),
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
     current_user: User | None = Depends(get_current_user),
 ):
     obs = await db.get(Observation, obs_id)
@@ -498,7 +552,8 @@ async def create_take(
 @app.delete("/takes/{take_id}", status_code=204)
 async def delete_take(
     take_id: str,
-    db: AsyncSession = Depends(get_db),
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
     current_user: User | None = Depends(get_current_user),
 ):
     take = await db.get(Take, take_id)
@@ -524,7 +579,7 @@ def _parse_summary(obs) -> dict:
 
 
 @app.post("/observations/{obs_id}/stress-test")
-async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
+async def create_stress_test(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session)):
     """Legacy endpoint — redirects to counterpoint."""
     obs = await db.get(Observation, obs_id)
     if not obs:
@@ -552,7 +607,7 @@ async def create_stress_test(obs_id: str, db: AsyncSession = Depends(get_db)):
 
 
 @app.post("/observations/{obs_id}/counterpoint")
-async def create_counterpoint(obs_id: str, db: AsyncSession = Depends(get_db)):
+async def create_counterpoint(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session)):
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
@@ -584,7 +639,7 @@ class PvaTakeRequest(BaseModel):
 
 
 @app.post("/observations/{obs_id}/pva-take")
-async def create_pva_take(obs_id: str, body: PvaTakeRequest = PvaTakeRequest(), db: AsyncSession = Depends(get_db)):
+async def create_pva_take(obs_id: str, request: Request, body: PvaTakeRequest = PvaTakeRequest(), db: AsyncSession = Depends(get_instance_db_session)):
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
@@ -611,7 +666,7 @@ async def create_pva_take(obs_id: str, body: PvaTakeRequest = PvaTakeRequest(), 
 
 
 @app.post("/observations/{obs_id}/bullshit")
-async def bullshit_check(obs_id: str, db: AsyncSession = Depends(get_db)):
+async def bullshit_check(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session)):
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
@@ -630,7 +685,7 @@ async def bullshit_check(obs_id: str, db: AsyncSession = Depends(get_db)):
 
 
 @app.post("/observations/{obs_id}/joke")
-async def lightbulb_joke(obs_id: str, db: AsyncSession = Depends(get_db)):
+async def lightbulb_joke(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session)):
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
@@ -642,7 +697,7 @@ async def lightbulb_joke(obs_id: str, db: AsyncSession = Depends(get_db)):
 
 
 @app.get("/observations/{obs_id}/challenges")
-async def get_challenges(obs_id: str, db: AsyncSession = Depends(get_db)):
+async def get_challenges(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session)):
     result = await db.execute(
         select(Observation)
         .where(Observation.parent_id == obs_id)
@@ -652,7 +707,7 @@ async def get_challenges(obs_id: str, db: AsyncSession = Depends(get_db)):
 
 
 @app.get("/observations/{obs_id}/counter-thesis")
-async def get_counter_thesis(obs_id: str, db: AsyncSession = Depends(get_db)):
+async def get_counter_thesis(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session)):
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404)
@@ -663,7 +718,8 @@ async def get_counter_thesis(obs_id: str, db: AsyncSession = Depends(get_db)):
 @app.delete("/observations/{obs_id}", status_code=204)
 async def delete_observation(
     obs_id: str,
-    db: AsyncSession = Depends(get_db),
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
     current_user: User | None = Depends(get_current_user),
 ):
     obs = await db.get(Observation, obs_id)
@@ -678,7 +734,8 @@ async def delete_observation(
 @app.patch("/observations/{obs_id}/anonymize", status_code=200)
 async def anonymize_observation(
     obs_id: str,
-    db: AsyncSession = Depends(get_db),
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
     current_user: User | None = Depends(get_current_user),
 ):
     """Remove the author attribution from an observation (set to Anonymous)."""
@@ -705,7 +762,8 @@ class EpisodeSeed(BaseModel):
 @app.post("/episodes/seed")
 async def seed_episode(
     body: EpisodeSeed,
-    db: AsyncSession = Depends(get_db),
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
     current_user: User | None = Depends(get_current_user),
 ):
     """Create multiple observations for an episode, each runs through the pipeline.
@@ -730,7 +788,8 @@ async def seed_episode(
         db.add(obs)
         await db.commit()
         await db.refresh(obs)
-        asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type))
+        instance_key = await get_instance_key(request)
+        asyncio.create_task(_run_pipeline(obs.id, obs.raw_input, obs.input_type, None, "image/jpeg", instance_key))
         created.append(obs.id)
     return {"episode_tag": body.episode_tag, "observations": created, "count": len(created)}
 

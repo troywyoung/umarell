@@ -1,27 +1,25 @@
 import { useState, useCallback } from "react";
 import type { Observation, Counterpoint, PvaTake } from "../types";
-import { API } from "../config";
-
-function authHeaders(): Record<string, string> {
-  const token = localStorage.getItem("sm_token");
-  return token ? { Authorization: `Bearer ${token}` } : {};
-}
+import { buildInstanceUrl, authHeaders } from "../utils/api";
+import { useInstanceConfig } from "../contexts/InstanceContext";
 
 export function useObservations() {
+  const { instanceKey } = useInstanceConfig();
   const [observations, setObservations] = useState<Observation[]>([]);
   const [loading, setLoading] = useState(false);
 
   const fetchObservations = useCallback(async () => {
     setLoading(true);
     try {
-      const resp = await fetch(`${API}/observations`, { headers: authHeaders() });
+      const url = buildInstanceUrl(instanceKey, "/observations");
+      const resp = await fetch(url, { headers: authHeaders() });
       if (!resp.ok) throw new Error(`${resp.status}`);
       const data: Observation[] = await resp.json();
       setObservations(data);
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [instanceKey]);
 
   const submitObservation = useCallback(async (
     rawInput: string,
@@ -32,7 +30,8 @@ export function useObservations() {
     challengeType?: string,
   ): Promise<Observation> => {
     try {
-      const resp = await fetch(`${API}/observations`, {
+      const url = buildInstanceUrl(instanceKey, "/observations");
+      const resp = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json", ...authHeaders() },
         body: JSON.stringify({
@@ -48,13 +47,14 @@ export function useObservations() {
       setObservations((prev) => [obs, ...prev]);
       return obs;
     } catch (e: any) {
-      throw new Error(e?.message || `Cannot reach API at ${API}. Is VITE_API_URL set?`);
+      throw new Error(e?.message || `Cannot reach API. Is VITE_API_URL set?`);
     }
-  }, []);
+  }, [instanceKey]);
 
   const pollObservation = useCallback(async (id: string): Promise<Observation | null> => {
     try {
-      const resp = await fetch(`${API}/observations/${id}`);
+      const url = buildInstanceUrl(instanceKey, `/observations/${id}`);
+      const resp = await fetch(url);
       if (resp.status === 404) {
         setObservations((prev) => prev.filter((o) => o.id !== id));
         return null;
@@ -66,11 +66,12 @@ export function useObservations() {
     } catch {
       return null;
     }
-  }, []);
+  }, [instanceKey]);
 
   const requestStressTest = useCallback(async (id: string): Promise<import("../types").StressTest | null> => {
     try {
-      const resp = await fetch(`${API}/observations/${id}/stress-test`, { method: "POST" });
+      const url = buildInstanceUrl(instanceKey, `/observations/${id}/stress-test`);
+      const resp = await fetch(url, { method: "POST" });
       if (!resp.ok) return null;
       const data = await resp.json();
       setObservations((prev) =>
@@ -80,11 +81,12 @@ export function useObservations() {
     } catch {
       return null;
     }
-  }, []);
+  }, [instanceKey]);
 
   const requestCounterpoint = useCallback(async (id: string): Promise<Counterpoint | null> => {
     try {
-      const resp = await fetch(`${API}/observations/${id}/counterpoint`, { method: "POST" });
+      const url = buildInstanceUrl(instanceKey, `/observations/${id}/counterpoint`);
+      const resp = await fetch(url, { method: "POST" });
       if (!resp.ok) return null;
       const data: Counterpoint = await resp.json();
       setObservations((prev) =>
@@ -94,11 +96,12 @@ export function useObservations() {
     } catch {
       return null;
     }
-  }, []);
+  }, [instanceKey]);
 
   const requestPvaTake = useCallback(async (id: string, voice: string = "all"): Promise<PvaTake | null> => {
     try {
-      const resp = await fetch(`${API}/observations/${id}/pva-take`, {
+      const url = buildInstanceUrl(instanceKey, `/observations/${id}/pva-take`);
+      const resp = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ voice }),
@@ -112,7 +115,7 @@ export function useObservations() {
     } catch {
       return null;
     }
-  }, []);
+  }, [instanceKey]);
 
   const editObservation = useCallback(async (
     id: string,
@@ -121,7 +124,8 @@ export function useObservations() {
     imageData?: string,
     imageMediaType?: string,
   ): Promise<Observation> => {
-    const resp = await fetch(`${API}/observations/${id}`, {
+    const url = buildInstanceUrl(instanceKey, `/observations/${id}`);
+    const resp = await fetch(url, {
       method: "PUT",
       headers: { "Content-Type": "application/json", ...authHeaders() },
       body: JSON.stringify({
@@ -134,12 +138,13 @@ export function useObservations() {
     const obs: Observation = await resp.json();
     setObservations((prev) => prev.map((o) => (o.id === id ? obs : o)));
     return obs;
-  }, []);
+  }, [instanceKey]);
 
   const deleteObservation = useCallback(async (id: string) => {
-    await fetch(`${API}/observations/${id}`, { method: "DELETE", headers: authHeaders() });
+    const url = buildInstanceUrl(instanceKey, `/observations/${id}`);
+    await fetch(url, { method: "DELETE", headers: authHeaders() });
     setObservations((prev) => prev.filter((o) => o.id !== id));
-  }, []);
+  }, [instanceKey]);
 
   return {
     observations, loading,

@@ -52,12 +52,14 @@ interface InstanceContextValue {
   config: InstanceConfig | null;
   loading: boolean;
   error: Error | null;
+  instanceKey: string;
 }
 
 const InstanceContext = createContext<InstanceContextValue>({
   config: null,
   loading: true,
   error: null,
+  instanceKey: "hot-takes",
 });
 
 export function useInstanceConfig() {
@@ -69,10 +71,40 @@ interface InstanceProviderProps {
   instanceKey?: string;
 }
 
-export function InstanceProvider({ children, instanceKey = "hot-takes" }: InstanceProviderProps) {
+export function InstanceProvider({ children, instanceKey: propInstanceKey }: InstanceProviderProps) {
   const [config, setConfig] = useState<InstanceConfig | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
+
+  // Extract instance key from URL path, e.g., /hot-takes/... -> "hot-takes"
+  const getInstanceKeyFromPath = (): string => {
+    const path = window.location.pathname;
+    const match = path.match(/^\/([a-z0-9-]+)/);
+    if (match) {
+      const key = match[1];
+      // Exclude meta routes
+      if (!["admin", "auth", "health", "instance"].includes(key)) {
+        return key;
+      }
+    }
+    return propInstanceKey || "hot-takes";
+  };
+
+  const [instanceKey, setInstanceKey] = useState(getInstanceKeyFromPath);
+
+  // Update instance key when URL changes (for SPA navigation)
+  useEffect(() => {
+    const handleLocationChange = () => {
+      const newKey = getInstanceKeyFromPath();
+      if (newKey !== instanceKey) {
+        setInstanceKey(newKey);
+      }
+    };
+
+    // Listen for popstate (browser back/forward)
+    window.addEventListener("popstate", handleLocationChange);
+    return () => window.removeEventListener("popstate", handleLocationChange);
+  }, [instanceKey]);
 
   useEffect(() => {
     async function fetchConfig() {
@@ -106,7 +138,7 @@ export function InstanceProvider({ children, instanceKey = "hot-takes" }: Instan
   }, [instanceKey]);
 
   return (
-    <InstanceContext.Provider value={{ config, loading, error }}>
+    <InstanceContext.Provider value={{ config, loading, error, instanceKey }}>
       {children}
     </InstanceContext.Provider>
   );
