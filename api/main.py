@@ -147,6 +147,11 @@ async def lifespan(app: FastAPI):
             db.add(design_config)
 
             await db.commit()
+
+            # Initialize the instance's own database tables
+            engine, _ = get_instance_engine("hot-takes")
+            async with engine.begin() as conn:
+                await conn.run_sync(Base.metadata.create_all)
     yield
 
 
