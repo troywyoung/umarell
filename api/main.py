@@ -1135,6 +1135,13 @@ class DesignTokenUpdate(BaseModel):
     value: str
 
 
+class PromptComparisonRequest(BaseModel):
+    saved_prompt_key: str
+    draft_system: str
+    draft_max_tokens: int
+    test_query: str
+
+
 @app.get("/instance/{instance_key}/config")
 async def get_instance_config(instance_key: str):
     """Get merged configuration for an instance (prompts + design tokens + ui_copy)."""
@@ -1193,6 +1200,51 @@ async def update_prompt_config(
         raise HTTPException(404, "Prompt not found")
 
     return {"status": "updated", "prompt": await get_prompt(prompt_key)}
+
+
+@app.post("/admin/prompts/compare")
+async def compare_prompts(
+    comparison: PromptComparisonRequest,
+    current_user: User = Depends(require_user)
+):
+    """Run side-by-side comparison of saved vs draft prompt (ephemeral, not persisted)."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    from pipeline import _call
+
+    # Get saved prompt
+    saved = await get_prompt(comparison.saved_prompt_key)
+    if not saved:
+        raise HTTPException(404, "Saved prompt not found")
+
+    # Run both prompts against the same test query
+    saved_output = await _call(
+        system=saved["system"],
+        user=comparison.test_query,
+        max_tokens=saved["max_tokens"]
+    )
+
+    draft_output = await _call(
+        system=comparison.draft_system,
+        user=comparison.test_query,
+        max_tokens=comparison.draft_max_tokens
+    )
+
+    return {
+        "test_query": comparison.test_query,
+        "saved": {
+            "name": saved["name"],
+            "system": saved["system"],
+            "max_tokens": saved["max_tokens"],
+            "output": saved_output
+        },
+        "draft": {
+            "system": comparison.draft_system,
+            "max_tokens": comparison.draft_max_tokens,
+            "output": draft_output
+        }
+    }
 
 
 @app.get("/admin/design-tokens")

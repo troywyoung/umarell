@@ -35,6 +35,9 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [testQuery, setTestQuery] = useState<string>('');
+  const [comparisonResult, setComparisonResult] = useState<any | null>(null);
+  const [comparing, setComparing] = useState(false);
 
   useEffect(() => {
     loadData();
@@ -119,6 +122,39 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
     }
   };
 
+  const runComparison = async () => {
+    if (!selectedPrompt || !editingPrompt || !testQuery.trim()) {
+      setError('Please provide a test query');
+      return;
+    }
+    setComparing(true);
+    setError(null);
+    setComparisonResult(null);
+    try {
+      const token = localStorage.getItem('sm_token');
+      const res = await fetch(`${API_BASE}/admin/prompts/compare`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+          saved_prompt_key: selectedPrompt,
+          draft_system: editingPrompt.system,
+          draft_max_tokens: editingPrompt.max_tokens,
+          test_query: testQuery,
+        }),
+      });
+      if (!res.ok) throw new Error('Failed to run comparison');
+      const result = await res.json();
+      setComparisonResult(result);
+    } catch (err: any) {
+      setError(err.message);
+    } finally {
+      setComparing(false);
+    }
+  };
+
   const renderPromptList = () => {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -150,6 +186,12 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
 
   const renderPromptEditor = () => {
     if (!editingPrompt || !selectedPrompt) return null;
+
+    const savedPrompt = prompts[selectedPrompt];
+    const hasChanges = savedPrompt && (
+      editingPrompt.system !== savedPrompt.system ||
+      editingPrompt.max_tokens !== savedPrompt.max_tokens
+    );
 
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
@@ -193,7 +235,7 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
 
         <div>
           <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
-            System Prompt
+            System Prompt {hasChanges && <span style={{ color: '#FF00AE' }}>(Draft)</span>}
           </label>
           <textarea
             value={editingPrompt.system}
@@ -231,6 +273,98 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
           />
         </div>
 
+        {hasChanges && (
+          <div style={{ padding: 16, background: '#FFF8E5', borderRadius: 8, border: '1px solid #FFE5A0' }}>
+            <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 8 }}>
+              Test Comparison (Saved vs Draft)
+            </div>
+            <div style={{ fontSize: 12, marginBottom: 8, color: '#666' }}>
+              Run both versions against the same test query to compare outputs before saving.
+            </div>
+            <textarea
+              placeholder="Enter test query..."
+              value={testQuery}
+              onChange={(e) => setTestQuery(e.target.value)}
+              rows={2}
+              style={{
+                width: '100%',
+                padding: 8,
+                fontSize: 13,
+                border: '1px solid #CCC',
+                borderRadius: 4,
+                marginBottom: 8,
+              }}
+            />
+            <button
+              onClick={runComparison}
+              disabled={comparing || !testQuery.trim()}
+              style={{
+                padding: 8,
+                background: '#FF00AE',
+                color: '#FFF',
+                border: 'none',
+                borderRadius: 4,
+                fontWeight: 600,
+                fontSize: 13,
+                cursor: comparing || !testQuery.trim() ? 'not-allowed' : 'pointer',
+                opacity: comparing || !testQuery.trim() ? 0.6 : 1,
+              }}
+            >
+              {comparing ? 'Running...' : 'Run Comparison'}
+            </button>
+          </div>
+        )}
+
+        {comparisonResult && (
+          <div style={{ padding: 16, background: '#F5F5F5', borderRadius: 8 }}>
+            <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>
+              Comparison Results
+            </div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+              <div>
+                <div style={{ fontSize: 12, fontWeight: 600, marginBottom: 4, color: '#666' }}>
+                  Saved Prompt Output
+                </div>
+                <div
+                  style={{
+                    padding: 12,
+                    background: '#FFF',
+                    borderRadius: 4,
+                    fontSize: 13,
+                    fontFamily: 'monospace',
+                    whiteSpace: 'pre-wrap',
+                    maxHeight: 300,
+                    overflow: 'auto',
+                    border: '2px solid #4CAF50',
+                  }}
+                >
+                  {comparisonResult.saved.output}
+                </div>
+              </div>
+              <div>
+                <div style={{ fontSize: 12, fontWeight: 600, marginBottom: 4, color: '#666' }}>
+                  Draft Prompt Output
+                </div>
+                <div
+                  style={{
+                    padding: 12,
+                    background: '#FFF',
+                    borderRadius: 4,
+                    fontSize: 13,
+                    fontFamily: 'monospace',
+                    whiteSpace: 'pre-wrap',
+                    maxHeight: 300,
+                    overflow: 'auto',
+                    border: '2px solid #FF00AE',
+                  }}
+                >
+                  {comparisonResult.draft.output}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div style={{ display: 'flex', gap: 8 }}>
           <button
             onClick={savePrompt}
@@ -254,6 +388,8 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
             onClick={() => {
               setSelectedPrompt(null);
               setEditingPrompt(null);
+              setComparisonResult(null);
+              setTestQuery('');
             }}
             style={{
               padding: 12,
