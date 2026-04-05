@@ -13,3 +13,4 @@ aiosqlite==0.20.0
 sqlalchemy[asyncio]==2.0.35
 twilio==9.10.4
 python-multipart==0.0.20
+youtube-transcript-api==0.6.2

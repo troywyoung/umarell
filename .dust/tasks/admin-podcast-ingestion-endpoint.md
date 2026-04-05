@@ -24,7 +24,6 @@ implement
 
 ## Blocked By
 
-- [youtube-podcast-transcript-extraction](youtube-podcast-transcript-extraction.md)
 - [podcast-take-extraction](podcast-take-extraction.md)
 
 ## Principles
