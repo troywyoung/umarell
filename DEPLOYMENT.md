@@ -2,6 +2,11 @@
 
 This guide documents how to set up and deploy Umarell to Railway.
 
+## Branch Model
+
+- **`main`** — all development happens here. Pushes to `main` auto-deploy to staging.
+- **`production`** — updated from `main` when ready. Pushes to `production` auto-deploy to production.
+
 ## Prerequisites
 
 - Railway account (https://railway.app)
@@ -29,7 +34,7 @@ In the Railway dashboard for **umarell-staging**:
    - **Name**: `api`
    - **Root Directory**: `/api`
    - **Watch Paths**: `/api/**`
-   - **Branch**: `staging`
+   - **Branch**: `main`
    - **Dockerfile Path**: `/api/Dockerfile`
 3. Add environment variables:
    - `ANTHROPIC_API_KEY` — your Claude API key
@@ -47,7 +52,7 @@ In the Railway dashboard for **umarell-staging**:
    - **Name**: `app`
    - **Root Directory**: `/app`
    - **Watch Paths**: `/app/**`
-   - **Branch**: `staging`
+   - **Branch**: `main`
    - **Dockerfile Path**: `/app/Dockerfile`
 3. Add environment variables:
    - `VITE_API_URL` — set to the API service URL (e.g., `https://api-staging-umarell.up.railway.app`)
@@ -56,57 +61,32 @@ In the Railway dashboard for **umarell-staging**:
 ### 3. Configure Production Environment
 
 Repeat the same steps for **umarell-production** project, with these differences:
-- **Branch**: `production` (create this branch when ready)
+- **Branch**: `production`
 - **JWT_SECRET**: Use a different secret than staging
 - **VITE_API_URL**: Point to production API service URL
-- **Custom domain**: Add `umarell.app` to frontend service (requires DNS configuration)
+- **Custom domain**: Add `hottake.peoplevsalgorithms.com` to frontend service
 
 ## Deployment Workflow
 
-### Deploy to Staging
+### Staging (automatic)
 
-```bash
-# Ensure staging branch exists
-git checkout staging || git checkout -b staging
-git merge main
-git push origin staging
-```
-
-Railway will automatically detect the push and deploy both services.
+Every push to `main` auto-deploys to staging. No manual steps needed.
 
 ### Deploy to Production
 
-Production deployments should only happen after staging validation. Follow this workflow:
-
-#### Pre-deployment Checklist
-- [ ] Changes have been deployed to staging
-- [ ] Manual testing completed on staging
-- [ ] No known critical bugs in staging
-- [ ] Database migrations (if any) have been tested in staging
-- [ ] All team members notified of upcoming deployment
-
-#### Production Deploy Steps
+When staging looks good and you're ready to ship:
 
 ```bash
-# 1. Ensure you're on staging with latest changes
-git checkout staging
-git pull origin staging
-
-# 2. Switch to production branch (create if first time)
-git checkout production || git checkout -b production
-
-# 3. Merge staging into production
-git merge staging
-
-# 4. Push to trigger deployment
+git checkout production
+git merge main
 git push origin production
 ```
 
 Railway will automatically detect the push and deploy both services.
 
 #### Post-deployment Verification
-1. **API Health**: Check `https://[production-api-url]/health` returns 200
-2. **Frontend**: Verify app loads at `https://umarell.app`
+1. **API Health**: Check `https://umarell-production.up.railway.app/health` returns 200
+2. **Frontend**: Verify app loads at `https://hottake.peoplevsalgorithms.com`
 3. **Authentication**: Test Google OAuth login flow
 4. **Core functionality**: Submit a test observation and verify research completes
 5. **Monitor logs**: Watch Railway logs for 10-15 minutes for errors
@@ -126,7 +106,7 @@ If a production deployment introduces critical issues, rollback immediately.
 
 **Timeframe**: ~2-3 minutes
 
-#### Option 2: Git Revert (For Full Rollback)
+#### Option 2: Git Revert
 
 ```bash
 # 1. Identify the problematic merge commit
@@ -142,39 +122,12 @@ git push origin production
 
 **Timeframe**: ~5-10 minutes (includes rebuild)
 
-#### Option 3: Hard Reset (Emergency Only)
-
-```bash
-# 1. Find the last known good commit
-git checkout production
-git log --oneline -10
-
-# 2. Hard reset to that commit
-git reset --hard <good-commit-hash>
-
-# 3. Force push (THIS REWRITES HISTORY)
-git push --force origin production
-```
-
-**⚠️ Warning**: Only use this in emergencies. Requires coordination with all team members.
-
-**Timeframe**: ~5-10 minutes (includes rebuild)
-
 #### Post-Rollback Steps
 
 1. **Verify rollback**: Check health endpoints and core functionality
 2. **Communicate**: Notify team that rollback is complete
 3. **Root cause analysis**: Investigate what went wrong
 4. **Fix forward**: Create fix on `main`, test in staging, re-deploy to production
-
-## Verification
-
-After deployment:
-
-1. **API Health Check**: Visit `https://[api-url]/health`
-2. **Frontend**: Visit the app URL and verify it loads
-3. **Database**: Check Railway logs to ensure database connection succeeded
-4. **OAuth**: Test Google login flow
 
 ## Troubleshooting
 
@@ -196,14 +149,20 @@ After deployment:
 - Check CORS_ORIGINS includes the frontend URL
 - Verify API service is deployed and healthy
 
-## Railway Service URLs
+### 502 Bad Gateway
 
-After setup, document your service URLs here:
+- Check that the domain port in Railway settings matches the port the app listens on
+- Railway injects `PORT` env var (typically 8080) — the domain must route to that port
+- Check `railway logs` to confirm the app started successfully
+
+## Railway Projects
 
 ### Staging
-- API: `https://[generated-url].up.railway.app`
-- App: `https://umarell-staging.up.railway.app`
+- **Project**: TBD
+- **API**: `https://[generated-url].up.railway.app`
+- **App**: `https://[generated-url].up.railway.app`
 
 ### Production
-- API: `https://[generated-url].up.railway.app`
-- App: `https://umarell.app` (custom domain)
+- **Project**: superb-benevolence
+- **API**: `https://umarell-production.up.railway.app`
+- **App**: `https://hottake.peoplevsalgorithms.com`
