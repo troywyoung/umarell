@@ -6,14 +6,66 @@ Enable automatic extraction and processing of podcast episodes. System fetches t
 
 The Umarell observation engine currently processes individual text/URL/image inputs. This idea extends the system to accept entire podcast episodes as input, automatically extracting the most interesting claims and running them through the full steel man pipeline.
 
-**Current relevant architecture:**
+**Current relevant architecture (verified via codebase exploration):**
 - `POST /episodes/seed` already exists for batch observation creation (api/main.py:662-692)
-- Episode grouping via `episode_tag` and `episode_title` fields on Observation model
+- Episode grouping via `episode_tag` and `episode_title` fields on Observation model (api/models.py:39-72)
 - URL fetching with paywall handling in `_fetch_url()` (api/pipeline.py:295-333)
-- Async pipeline execution spawns multiple observations concurrently
+- Async pipeline execution spawns multiple observations concurrently (api/main.py:112-189)
 - Each observation gets thesis formatting, steel man generation, metadata scoring
+- Dual LLM provider support: Gemini 2.5 Flash (default, with grounding) and Claude Sonnet 4.6 (higher quality)
+- Episode display already groups by `episode_tag` and shows "PvA" as author for episode posts
 
 **The vision:** Point the system at a podcast episode URL. System fetches transcript, identifies 5 best takes, creates an observation for each, groups them under the episode, and pushes to feed.
+
+## Research Findings
+
+**Codebase exploration completed 2026-04-05** to validate implementation feasibility and identify existing patterns.
+
+### Key Findings
+
+**Infrastructure already exists:**
+- Episode ingestion endpoint (`/episodes/seed`) handles bulk observation creation with episode context
+- Episode grouping is fully functional (indexed `episode_tag` field, feed display logic)
+- URL fetching has sophisticated multi-layer fallback (Tavily Extract → Tavily Search → direct HTTP → BeautifulSoup)
+- Paywall/cookie wall detection built into fetch logic
+- Async pipeline processing already parallelizes multiple observations
+
+**New work required:**
+1. **Transcript fetching service** — Platform-specific handlers (Spotify, YouTube, RSS, HTTP)
+2. **Take extraction prompt** — LLM call to identify interesting claims from transcript text
+3. **Integration endpoint** — Either extend `/episodes/seed` or add new `/podcasts/ingest`
+
+**LLM provider considerations:**
+- Gemini 2.5 Flash: 1M token context, fast, cheap, has Google Search grounding
+- Claude Sonnet 4.6: 200K context, higher quality, better at nuance
+- Current pipeline defaults to Gemini for all steps (format_thesis, steel_man, metadata)
+- Provider is configurable via `settings.llm_provider`
+
+**Voice/style precedent:**
+- PvA voice training loads transcript excerpts from `api/pva_transcripts/` (up to 30K chars)
+- Transcripts are chunked (4K chars per file, skip first 1500 chars of full episodes)
+- Similar pattern could apply to podcast transcript loading
+
+**Authentication pattern:**
+- `/episodes/seed` uses `admin_key` (matches `settings.google_api_key`) or user token
+- Podcast ingestion should follow same pattern for Phase 1
+
+**Episode metadata:**
+- `episode_tag` is indexed for fast queries
+- `episode_title` displayed in feed
+- `author_name` can be set at seed time (defaults to "PvA" for episode posts)
+- No schema changes needed for basic podcast ingestion
+
+**Open questions identified:**
+- LLM provider choice (Gemini vs Claude for take extraction)
+- Voice preservation (keep speaker's words vs reformat into Umarell thesis style)
+- Speaker attribution (track who said what or treat episode as single source)
+- Deduplication strategy (allow, reject, or merge duplicate episodes)
+- UI integration point (admin panel only vs main app)
+- Quality filtering (trust LLM or add post-extraction validation)
+- Automation planning (design now or defer to Phase 2/3)
+
+See Open Questions section below for detailed options and trade-offs.
 
 ## Implementation Approach
 
@@ -295,21 +347,41 @@ class PodcastIngest(BaseModel):
 
 ## Codebase Touchpoints
 
-**New files:**
-- `api/transcript_service.py` — podcast platform handlers
-- `app/src/components/PodcastIngestionForm.tsx` — admin UI
-- `app/src/components/EpisodeGroup.tsx` — feed display component
+**Verified existing infrastructure (from codebase exploration):**
+- `/episodes/seed` endpoint exists at `api/main.py:662-692` — already handles bulk observation creation with episode_tag/episode_title
+- `Observation` model at `api/models.py:39-72` — already has `episode_tag`, `episode_title`, `raw_input` fields
+- `_fetch_url()` at `api/pipeline.py:295-333` — existing URL fetching with Tavily Extract, paywall detection, BeautifulSoup fallback
+- `_run_pipeline()` at `api/main.py:112-189` — existing async pipeline (format_thesis → steel_man → metadata)
+- Prompt structure pattern at `api/prompts.py` — consistent system/max_tokens format
+- Dual LLM provider support at `api/pipeline.py:76-140` — Gemini (with grounding) and Claude (higher quality)
+- Episode grouping display already implemented — `episode_tag` indexed, used in feed assembly
+
+**New files needed:**
+- `api/transcript_service.py` — podcast platform handlers (Spotify, YouTube, RSS, generic HTTP)
+- `app/src/components/PodcastIngestionForm.tsx` — admin UI for manual ingestion
+- `app/src/components/EpisodeGroup.tsx` — enhanced feed display for grouped takes (or modify existing grouping)
 
 **Modified files:**
-- `api/prompts.py` — add `extract_podcast_takes` prompt
-- `api/main.py` — add `POST /podcasts/ingest` endpoint
-- `app/src/App.tsx` — integrate episode grouping in feed view
-- `app/src/AdminPanel.tsx` — add podcast ingestion tab
+- `api/prompts.py` — add `extract_podcast_takes` prompt (follows existing pattern)
+- `api/main.py` — add `POST /podcasts/ingest` endpoint (or extend `/episodes/seed` to accept transcript URL)
+- `app/src/AdminPanel.tsx` — add podcast ingestion tab (if admin-only approach chosen)
 
 **Dependencies to add:**
 - `youtube-transcript-api` (Python) — YouTube captions
 - `feedparser` (Python) — RSS feed parsing
-- Possibly `assemblyai` or `deepgram` (Python) — third-party transcription
+- Possibly `assemblyai` or `deepgram` (Python) — third-party transcription (if audio-only support added)
+
+**Key architectural insight from codebase:**
+The `/episodes/seed` endpoint already provides 90% of the infrastructure needed. The main new work is:
+1. Transcript fetching logic (new service)
+2. Take extraction prompt (new LLM call)
+3. Plumbing between transcript → takes → seed endpoint
+
+**Reusable patterns identified:**
+- URL fetching: Extend `_fetch_url()` or create similar `_fetch_transcript()` with platform-specific handlers
+- LLM calls: Use existing `_call()` function with new `extract_podcast_takes` prompt
+- Episode grouping: Reuse existing `episode_tag`/`episode_title` fields (already indexed and displayed)
+- Authentication: Reuse existing `admin_key` pattern from `/episodes/seed`
 
 ## Success Metrics
 
@@ -319,6 +391,34 @@ This idea would be successful if:
 - Processing time < 15s from URL submission to all 5 observations complete
 - Episode grouping is visually clear and useful in feed
 - Zero cross-contamination between episodes (correct episode_tag assignment)
+
+## Alignment with Dust Principles
+
+**Relevant principles from `npx dust principles`:**
+
+- **some-big-design-up-front**: This idea demonstrates planning architectural decisions (LLM provider, speaker attribution, deduplication) before implementation, leveraging AI agents to explore trade-offs upfront.
+
+- **reasonably-dry**: The implementation reuses existing infrastructure (`/episodes/seed`, `_fetch_url()`, `_run_pipeline()`) rather than duplicating logic, while avoiding premature abstraction.
+
+- **actionable-errors**: Transcript fetch failures should provide clear next steps (e.g., "Transcript not found. Please paste transcript manually or try a different URL").
+
+- **fast-feedback**: Phase 1 focuses on synchronous or hybrid ingestion to give admins immediate feedback on success/failure, rather than pure async which delays error discovery.
+
+- **context-window-efficiency**: Take extraction leverages large context windows (100K+ tokens) for full transcript analysis, but individual observations remain small and focused.
+
+- **progressive-disclosure**: Episode grouping in feed allows collapsing/expanding, showing episode header first with takes revealed on demand.
+
+- **minimal-dependencies**: Implementation prefers Python stdlib and existing dependencies (httpx, BeautifulSoup) over heavy platform SDKs where possible.
+
+- **make-the-change-easy**: The codebase exploration reveals that `/episodes/seed` already exists with episode grouping, making the implementation path clear: add transcript fetching + take extraction layers.
+
+**Principle tensions:**
+
+- **fast-feedback vs context-window-efficiency**: Long transcripts (50K+ chars) require large context LLM calls, which are slower. Hybrid approach (fast validation, async processing) balances this.
+
+- **some-big-design-up-front vs fast-feedback**: Planning automation architecture now (Phase 3) conflicts with shipping Phase 1 quickly. Recommendation: Design minimal hooks but defer full automation.
+
+- **reasonably-dry vs make-the-change-easy**: Could either extend `/episodes/seed` to accept transcript URLs (DRY) or create new `/podcasts/ingest` endpoint (clearer separation). Leaning toward new endpoint for clarity.
 
 ## Open Questions
 
@@ -744,3 +844,440 @@ If no transcript found, automatically fall back to transcription service.
 - Fetch transcript with fallback chain: RSS → YouTube → Transcription API
 - Admin configures monthly transcription budget
 - Stop auto-transcription when budget exceeded
+
+### Which LLM provider should be used for take extraction?
+
+#### Option: Gemini 2.5 Flash
+
+Use Gemini for take extraction to match the existing pipeline default.
+
+**Pros:**
+- Consistent with rest of pipeline (format_thesis, steel_man use Gemini by default)
+- Faster processing (Flash is optimized for speed)
+- Lower cost per episode
+- 1M token context window handles very long transcripts
+- Google Search grounding available if needed
+
+**Cons:**
+- Lower quality analysis vs Claude
+- May extract weaker takes
+- Less nuanced understanding of conversational context
+
+**Implementation:**
+- Use existing `_call()` function with default provider
+- Add `extract_podcast_takes` prompt to `prompts.py`
+- Return JSON array of claims
+
+#### Option: Claude Sonnet
+
+Use Claude for take extraction, Gemini for downstream steel man generation.
+
+**Pros:**
+- Higher quality claim identification
+- Better at understanding nuance, sarcasm, context
+- More reliable JSON formatting
+- 200K context sufficient for most episodes
+
+**Cons:**
+- Slower processing (adds 2-3s per episode)
+- Higher cost per episode
+- Mixed provider strategy (complexity)
+- No native grounding (but not needed for extraction)
+
+**Implementation:**
+- Force `provider="anthropic"` when calling `_call()` for extraction
+- Use Gemini for downstream pipeline steps
+- May need provider-specific error handling
+
+#### Option: Configurable provider
+
+Allow admin to choose provider per episode or via settings.
+
+**Pros:**
+- Flexibility for different use cases (quality vs speed)
+- Can A/B test quality differences
+- Future-proof (can switch to better models)
+
+**Cons:**
+- More UI complexity (dropdown selection)
+- Harder to optimize prompts (must work for both)
+- Inconsistent quality across episodes
+
+**Implementation:**
+- Add `provider` field to `/podcasts/ingest` request schema
+- Default to Gemini, allow override to Claude
+- Store `extraction_model` in episode metadata
+
+### Should podcast takes preserve speaker voice or use Umarell formatting?
+
+#### Option: Preserve speaker voice (skip format_thesis)
+
+Extract takes as direct quotes, skip the thesis formatting step.
+
+**Pros:**
+- Authentic to podcast (speaker's actual words)
+- Better attribution (feels like a quote, not interpretation)
+- Faster processing (one less LLM call)
+- Useful for "what they said" vs "what they meant"
+
+**Cons:**
+- Inconsistent with rest of feed (different voice/style)
+- May include conversational filler ("I think...", "you know...")
+- Harder to compare takes across sources (podcasts vs user observations)
+- Some takes may be too casual or meandering
+
+**Implementation:**
+- Extract takes include speaker attribution
+- Display format: "Speaker Name: [quote]"
+- Set `thesis = raw_input` (no reformatting)
+- Steel man still generated from thesis
+
+#### Option: Reformat into Umarell thesis style
+
+Extract claims, then pass through format_thesis to standardize.
+
+**Pros:**
+- Consistent voice across all observations
+- Cleaner, more declarative statements
+- Easier to compare and research
+- Matches existing UX patterns
+
+**Cons:**
+- Loses speaker's original phrasing
+- May misinterpret conversational nuance
+- Extra LLM call per take (slower)
+- Feels less like "what they said"
+
+**Implementation:**
+- Extract raw claims from transcript
+- Pass each through `format_thesis()` prompt
+- Store original quote in metadata for reference
+- Display formatted thesis in feed
+
+#### Option: Hybrid (preserve notable quotes, reformat analysis)
+
+Extract takes with a "quote vs claim" classification. Direct quotes stay verbatim, analytical claims get reformatted.
+
+**Pros:**
+- Best of both worlds
+- Preserves powerful direct quotes
+- Standardizes analytical takes
+- Flexible to content type
+
+**Cons:**
+- Most complex to implement
+- LLM must classify each take
+- May be inconsistent (subjective judgment)
+
+**Implementation:**
+- Extraction prompt returns: `{text, is_quote: bool}`
+- If `is_quote=true`, skip format_thesis
+- If `is_quote=false`, reformat as thesis
+- Display with different styling (quotes in italics)
+
+### How should speaker attribution be handled?
+
+#### Option: No speaker tracking
+
+Treat all takes as coming from the podcast episode as a whole.
+
+**Pros:**
+- Simplest implementation
+- Avoids speaker identification complexity
+- Good for monologue podcasts
+- Sufficient if source is "Episode X"
+
+**Cons:**
+- Loses context for multi-speaker episodes
+- Can't attribute to specific guest
+- Misleading if host and guest disagree
+- Harder to search by speaker
+
+**Implementation:**
+- Set `author_name = podcast_name` for all takes
+- Sources field includes episode URL only
+- No speaker metadata stored
+
+#### Option: Speaker name extraction
+
+Extract speaker name with each take, store in metadata.
+
+**Pros:**
+- Clear attribution (know who said what)
+- Searchable by speaker
+- Better context for debates/discussions
+- Enables "All takes by Guest Name" queries
+
+**Cons:**
+- Speaker identification may fail (unlabeled transcripts)
+- Name extraction errors (typos, nicknames)
+- Extra complexity in extraction prompt
+- Need UI to display speaker names
+
+**Implementation:**
+- Extraction returns: `{claim, speaker}`
+- Store speaker in new `metadata` JSON field
+- Display as "Speaker Name on Podcast Name"
+- Fall back to podcast name if speaker unknown
+
+#### Option: Speaker-aware take extraction
+
+Prompt explicitly asks LLM to identify and extract speaker segments.
+
+**Pros:**
+- Most accurate attribution
+- Can handle complex multi-party discussions
+- Enables speaker-specific analysis
+- Better for interview formats
+
+**Cons:**
+- Requires transcript with speaker labels
+- More complex prompt engineering
+- Higher token usage (must process speaker metadata)
+- May fail on auto-generated transcripts
+
+**Implementation:**
+- Preprocessing: Parse transcript into `[{speaker, text}]` segments
+- Extraction prompt receives structured data
+- Return `{claim, speaker, timestamp_range}`
+- Add `speaker_name` column to Observation model
+
+### Should the system deduplicate episodes?
+
+#### Option: Allow duplicates
+
+No deduplication - each ingestion creates new observations.
+
+**Pros:**
+- Simplest (no duplicate detection logic)
+- Allows re-processing with different parameters (e.g., more takes)
+- Useful for testing/iteration
+
+**Cons:**
+- Clutters feed with duplicate takes
+- Wastes processing resources
+- Confusing UX (same episode appears twice)
+
+**Implementation:**
+- No changes needed (current behavior)
+
+#### Option: Detect and reject duplicates
+
+Check if episode_tag already exists before ingestion.
+
+**Pros:**
+- Prevents accidental duplicates
+- Cleaner feed (each episode appears once)
+- Saves processing costs
+
+**Cons:**
+- Blocks re-ingestion (even if intentional)
+- Requires delete-then-reingest workflow
+- Doesn't handle URL variations (same episode, different URL)
+
+**Implementation:**
+- Query `SELECT COUNT(*) FROM observations WHERE episode_tag = ?`
+- If count > 0, return 409 Conflict
+- Admin can delete episode first, then reingest
+
+#### Option: Merge/update duplicates
+
+If episode exists, update it instead of creating new observations.
+
+**Pros:**
+- Allows re-processing (extracts new takes)
+- Keeps episode_tag stable
+- Useful for incremental updates (add more takes)
+
+**Cons:**
+- Complex merge logic (append or replace?)
+- May delete good takes if re-extraction produces fewer
+- Unclear UX (what happened to old takes?)
+
+**Implementation:**
+- Check for existing episode_tag
+- Delete old observations with same tag
+- Create new observations
+- Return `{updated: true}` in response
+
+### Where should the ingestion UI live?
+
+#### Option: Admin panel only (Phase 1)
+
+Add ingestion form to `/admin` route, require admin authentication.
+
+**Pros:**
+- Controlled rollout (admin curation)
+- No abuse risk (only trusted users)
+- Faster to ship (no user-facing design)
+- Matches existing admin tools pattern
+
+**Cons:**
+- Not accessible to regular users
+- Manual bottleneck (admin must process all episodes)
+- Doesn't scale to community-driven content
+
+**Implementation:**
+- Add `PodcastIngestionForm.tsx` to `app/src/components/admin/`
+- New tab in admin panel: "Ingest Podcast"
+- Auth via existing admin check
+
+#### Option: Main app with gating
+
+Add ingestion to main app but require user authentication and rate limiting.
+
+**Pros:**
+- Accessible to all users
+- Community-driven content discovery
+- Higher volume ingestion
+- Matches "Idea Button" philosophy (any input type)
+
+**Cons:**
+- Requires moderation/review queue
+- Abuse risk (spam episodes)
+- More complex UI (must fit main app design)
+- Rate limiting infrastructure needed
+
+**Implementation:**
+- Add to main feed UI (new "Ingest Podcast" button)
+- Require user login
+- Rate limit: 3 episodes per day per user
+- Optional: Admin approval before processing
+
+#### Option: Both (admin for curation, user for submission)
+
+Admin panel for direct ingestion, main app for submission queue.
+
+**Pros:**
+- Scalable (users suggest, admin approves)
+- Quality control (admin vets before processing)
+- Flexible (admin can fast-track important episodes)
+
+**Cons:**
+- Most complex (two UIs, approval workflow)
+- Slower user feedback (wait for admin approval)
+- Requires notification system
+
+**Implementation:**
+- User submission creates `PodcastSubmission` record (pending)
+- Admin sees queue in admin panel
+- Admin clicks "Approve & Ingest" to process
+- User notified when episode is live
+
+### Should low-quality takes be filtered or trusted to LLM?
+
+#### Option: Trust LLM extraction
+
+Whatever the LLM returns gets processed, no filtering.
+
+**Pros:**
+- Simplest (no quality logic)
+- Assumes LLM is calibrated correctly
+- Avoids false negatives (filtering good takes)
+
+**Cons:**
+- May produce low-quality observations
+- Wastes processing on weak takes
+- Degrades feed quality
+
+**Implementation:**
+- Extract takes, create observations for all
+- Rely on prompt engineering for quality
+
+#### Option: Post-extraction quality filter
+
+After extraction, run a second LLM pass to score/filter takes.
+
+**Pros:**
+- Higher quality bar (two-stage filter)
+- Can set threshold (only score > 70)
+- Fewer low-quality observations
+
+**Cons:**
+- Extra LLM call per take (slower, costlier)
+- May over-filter (lose borderline-interesting takes)
+- Adds complexity
+
+**Implementation:**
+- Extract takes
+- For each take, call `score_take_quality(take)` → 0-100
+- Only create observations for takes with score > threshold
+- Return `{extracted: 8, filtered: 3, created: 5}`
+
+#### Option: Minimum count enforcement
+
+If extraction returns fewer than minimum viable takes (e.g., <3), reject the episode.
+
+**Pros:**
+- Ensures every episode has enough content
+- Prevents processing of low-value episodes
+- Simple quality gate
+
+**Cons:**
+- May reject good episodes with only 1-2 great takes
+- Arbitrary threshold (why 3?)
+- Wastes transcript fetch if rejected
+
+**Implementation:**
+- Extract takes
+- If `len(takes) < 3`, return error: "Episode does not contain enough interesting claims"
+- Admin can retry with lower threshold or manual entry
+
+### Should episode monitoring/automation be designed now or deferred?
+
+#### Option: Design for automation upfront
+
+Plan database schema and architecture to support future automation.
+
+**Pros:**
+- Avoids costly refactoring later
+- Clearer long-term vision
+- May simplify Phase 1 if architecture is right
+
+**Cons:**
+- Over-engineering (YAGNI)
+- Delays Phase 1 shipping
+- Automation requirements may change
+
+**Implementation:**
+- Add `PodcastFeed` table (url, name, last_checked)
+- Add `auto_ingest` boolean to episode metadata
+- Design polling/webhook architecture now
+
+#### Option: Ship Phase 1, defer automation
+
+Focus on manual ingestion, revisit automation later.
+
+**Pros:**
+- Faster to ship Phase 1
+- Learn from manual usage before automating
+- Simpler codebase initially
+- Aligns with "make it work, then make it scale"
+
+**Cons:**
+- May require schema changes later
+- Harder to add automation if architecture doesn't support it
+- Missed opportunity for early automation
+
+**Implementation:**
+- Build manual ingestion only
+- Iterate based on feedback
+- Design automation in future task when needed
+
+#### Option: Minimal automation hooks
+
+Add minimal infrastructure (webhook endpoint, feed table) but don't build full automation.
+
+**Pros:**
+- Prepared for automation without full implementation
+- Easy to add later
+- Low overhead
+
+**Cons:**
+- Unused code/tables (until automation built)
+- Still requires planning now
+
+**Implementation:**
+- Add `PodcastFeed` table (not used yet)
+- Add `/podcasts/webhook` endpoint (returns 501 Not Implemented)
+- Document automation design in idea file
