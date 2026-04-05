@@ -106,3 +106,14 @@ class InstancePrompt(Base):
     max_tokens: Mapped[int] = mapped_column(Float)  # Using Float for integer storage compatibility
     is_default: Mapped[bool] = mapped_column(Boolean, default=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
+
+
+class PodcastFeed(Base):
+    __tablename__ = "podcast_feeds"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=_uuid)
+    url: Mapped[str] = mapped_column(String, unique=True, index=True)
+    name: Mapped[str] = mapped_column(String)
+    auto_ingest: Mapped[bool] = mapped_column(Boolean, default=False)
+    last_checked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)

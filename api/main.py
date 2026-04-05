@@ -12,7 +12,7 @@ from jose import jwt, JWTError
 from pydantic import BaseModel
 import re
 from database import init_db, get_db, get_instance_db, get_instance_engine, AsyncSessionLocal, Base
-from models import Observation, User, Take, Instance, InstanceConfig, InstancePrompt
+from models import Observation, User, Take, Instance, InstanceConfig, InstancePrompt, PodcastFeed
 from schemas import ObservationCreate, ObservationOut, TakeCreate, TakeOut
 from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, generate_joke, ACTIVE_MODEL
 from config import settings
@@ -983,6 +983,30 @@ async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-take
                 obs.error_detail = err_msg[:500]
                 await db.commit()
                 print(f"Steel man pipeline error for {observation_id}: {err_msg[:200]}")
+
+
+# ─── Podcast webhook (future automation) ────────────────────────────────────
+
+
+@app.post("/podcasts/webhook", status_code=501)
+async def podcast_webhook(request: Request):
+    """Webhook endpoint for future podcast automation.
+
+    Currently returns 501 Not Implemented. Use POST /podcasts/ingest for manual ingestion.
+    Logs webhook receipt for future automation work.
+    """
+    import logging
+    logger = logging.getLogger(__name__)
+
+    # Log webhook receipt for future automation work
+    body = await request.body()
+    logger.info(f"Podcast webhook received: {body[:200] if body else '(empty)'}")
+
+    return {
+        "status": "not_implemented",
+        "message": "Podcast automation is not yet implemented. Please use POST /podcasts/ingest for manual podcast ingestion.",
+        "manual_endpoint": "/podcasts/ingest"
+    }
 
 
 # ─── Admin: retag episode ───────────────────────────────────────────────────
