@@ -1,0 +1,9 @@
+{
+  "dustCommand": "npx dust",
+  "checks": [
+    {
+      "name": "test",
+      "command": "npm test"
+    }
+  ]
+}

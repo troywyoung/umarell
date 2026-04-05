@@ -2,6 +2,10 @@
 
 AI-powered observation engine. Standalone application — entirely separate from PIMP/PvA.
 
+This project uses [dust](https://github.com/joshski/dust) for planning and documentation.
+
+Always immediately run `npm install && npx dust agent` when you start working in this repository.
+
 ## What It Is
 
 You make an observation. Umarell turns it into a thesis, researches it, and gives you a briefing.
