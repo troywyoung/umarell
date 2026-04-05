@@ -10,7 +10,7 @@ implement
 
 ## Blocked By
 
-- [Document Current Deployment State](document-current-deployment-state.md)
+(none)
 
 
 ## Definition of Done
