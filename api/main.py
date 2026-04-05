@@ -17,6 +17,8 @@ from pipeline import format_thesis, format_challenge_thesis, generate_steel_man,
 from config import settings
 from whatsapp import router as whatsapp_router
 from sms import router as sms_router
+from prompts import get_all_prompts, get_prompt, update_prompt
+from design_tokens import get_design_tokens, update_design_token
 
 
 # ─── Auth helpers ────────────────────────────────────────────────────────────
@@ -998,3 +1000,86 @@ async def restore_episodes(admin_key: str, db: AsyncSession = Depends(get_db)):
 
     await db.commit()
     return {"restored_apr1": len(batch1), "restored_apr3": len(batch2)}
+
+
+# ─── Meta Admin Interface ───────────────────────────────────────────────────
+
+
+class PromptUpdate(BaseModel):
+    name: str | None = None
+    description: str | None = None
+    system: str | None = None
+    max_tokens: int | None = None
+
+
+class DesignTokenUpdate(BaseModel):
+    path: list[str]
+    value: str
+
+
+@app.get("/admin/prompts")
+async def get_prompts(current_user: User = Depends(require_user)):
+    """Get all LLM prompt configurations."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+    return get_all_prompts()
+
+
+@app.get("/admin/prompts/{prompt_key}")
+async def get_prompt_detail(prompt_key: str, current_user: User = Depends(require_user)):
+    """Get a specific prompt configuration."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+    prompt = get_prompt(prompt_key)
+    if not prompt:
+        raise HTTPException(404, "Prompt not found")
+    return prompt
+
+
+@app.put("/admin/prompts/{prompt_key}")
+async def update_prompt_config(
+    prompt_key: str,
+    updates: PromptUpdate,
+    current_user: User = Depends(require_user)
+):
+    """Update a prompt configuration."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    update_data = {}
+    if updates.name is not None:
+        update_data["name"] = updates.name
+    if updates.description is not None:
+        update_data["description"] = updates.description
+    if updates.system is not None:
+        update_data["system"] = updates.system
+    if updates.max_tokens is not None:
+        update_data["max_tokens"] = updates.max_tokens
+
+    if not update_prompt(prompt_key, update_data):
+        raise HTTPException(404, "Prompt not found")
+
+    return {"status": "updated", "prompt": get_prompt(prompt_key)}
+
+
+@app.get("/admin/design-tokens")
+async def get_design_tokens_endpoint(current_user: User = Depends(require_user)):
+    """Get all design tokens."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+    return get_design_tokens()
+
+
+@app.put("/admin/design-tokens")
+async def update_design_token_endpoint(
+    update: DesignTokenUpdate,
+    current_user: User = Depends(require_user)
+):
+    """Update a design token value."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    if not update_design_token(update.path, update.value):
+        raise HTTPException(404, "Design token not found")
+
+    return {"status": "updated", "path": update.path, "value": update.value}

@@ -3,6 +3,7 @@ import { GoogleLogin } from "@react-oauth/google";
 import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
 import { API } from "./config";
+import AdminPanel from "./AdminPanel";
 
 function authHeaders(): Record<string, string> {
   const token = localStorage.getItem("sm_token");
@@ -570,7 +571,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
 
 // ─── Home ─────────────────────────────────────────────────────────────────
 
-function HomeView({ observations, loading, onCapture, onSelect, authUser, onSignOut, onAbout }: {
+function HomeView({ observations, loading, onCapture, onSelect, authUser, onSignOut, onAbout, onOpenAdmin }: {
   observations: Observation[];
   loading: boolean;
   onCapture: () => void;
@@ -578,6 +579,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   authUser: AuthUser;
   onSignOut: () => void;
   onAbout: () => void;
+  onOpenAdmin?: () => void;
 }) {
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
   const [jokeMap, setJokeMap] = useState<Record<string, string>>({});
@@ -734,6 +736,24 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         </button>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {loading && <span style={{ fontSize: 12, color: "rgba(255,255,255,0.35)" }}>Refreshing…</span>}
+          {authUser.is_admin && onOpenAdmin && (
+            <button
+              onClick={onOpenAdmin}
+              style={{
+                fontSize: 11,
+                color: "#FF00AE",
+                background: "none",
+                border: "1px solid rgba(255,0,174,0.35)",
+                borderRadius: 20,
+                cursor: "pointer",
+                fontFamily: "inherit",
+                padding: "4px 10px",
+                letterSpacing: -0.2
+              }}
+            >
+              Admin
+            </button>
+          )}
           {authUser.avatar
             ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
             : <button onClick={onSignOut} style={{ fontSize: 11, color: "#FF00AE", background: "none", border: "1px solid rgba(255,0,174,0.35)", borderRadius: 20, cursor: "pointer", fontFamily: "inherit", padding: "4px 10px", letterSpacing: -0.2 }}>Sign in</button>
@@ -2344,6 +2364,7 @@ export default function App() {
   const [outputKey, setOutputKey] = useState(0);
   const [challengingObs, setChallengingObs] = useState<Observation | null>(null);
   const [maintenance, setMaintenance] = useState(false);
+  const [showAdminPanel, setShowAdminPanel] = useState(false);
 
   useEffect(() => {
     fetch(`${API}/health`).then(r => r.json()).then(d => { if (d.maintenance) setMaintenance(true); }).catch(() => {});
@@ -2507,14 +2528,18 @@ export default function App() {
   }
 
   return (
-    <HomeView
-      observations={observations}
-      loading={loading}
-      onCapture={() => navigateTo("capture")}
-      onSelect={(o) => navigateTo("output", o)}
-      authUser={authUser}
-      onSignOut={handleSignOut}
-      onAbout={() => setView("about")}
-    />
+    <>
+      <HomeView
+        observations={observations}
+        loading={loading}
+        onCapture={() => navigateTo("capture")}
+        onSelect={(o) => navigateTo("output", o)}
+        authUser={authUser}
+        onSignOut={handleSignOut}
+        onAbout={() => setView("about")}
+        onOpenAdmin={() => setShowAdminPanel(true)}
+      />
+      {showAdminPanel && <AdminPanel onClose={() => setShowAdminPanel(false)} />}
+    </>
   );
 }

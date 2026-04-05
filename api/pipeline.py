@@ -10,6 +10,7 @@ import base64
 import httpx
 from bs4 import BeautifulSoup
 from config import settings
+from prompts import get_prompt
 
 PROVIDER = settings.llm_provider  # "gemini" or "anthropic"
 
@@ -417,33 +418,21 @@ async def format_thesis(raw_input: str, input_type: str, image_b64: str | None =
     else:
         content = raw_input
 
+    prompt_config = get_prompt("format_thesis")
     return await _call(
-        system=(
-            "You are a sharp debate editor. Convert the user's input into a punchy, confident THESIS STATEMENT. "
-            "Rules: (1) Declarative claim only — no questions, no descriptions, no hedging. "
-            "(2) Preserve the user's exact intent and any specific data points. "
-            "(3) Do NOT fact-check or correct their claim — if they say X is Y, the thesis is 'X is Y'. "
-            "(4) Make it short, direct, and a little provocative — the kind of line that makes someone want to argue. "
-            "(5) Max 1 sentence. No preamble. Output only the thesis."
-        ),
+        system=prompt_config["system"],
         user=f"User input: {content}",
-        max_tokens=2000,
+        max_tokens=prompt_config["max_tokens"],
     )
 
 
 async def format_challenge_thesis(raw_input: str, parent_thesis: str) -> str:
     """Turn a challenge's raw input into a thesis that directly opposes the parent."""
+    prompt_config = get_prompt("format_challenge_thesis")
     return await _call(
-        system=(
-            "You are a sharp debate editor. The user is CHALLENGING an existing claim. "
-            "Convert their counter-argument into a punchy thesis that OPPOSES the original claim. "
-            "Rules: (1) The thesis must DISAGREE with the original claim. "
-            "(2) Preserve the user's exact intent — if they say 'he's a crook', the thesis should say he's a crook. "
-            "(3) Reference the specific subject from the original claim (names, topics) even if the user didn't. "
-            "(4) Max 1 sentence. No preamble. Output only the thesis."
-        ),
+        system=prompt_config["system"],
         user=f"ORIGINAL CLAIM: {parent_thesis}\n\nUSER'S COUNTER-ARGUMENT: {raw_input}",
-        max_tokens=200,
+        max_tokens=prompt_config["max_tokens"],
     )
 
 
