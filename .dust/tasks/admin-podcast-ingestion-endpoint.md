@@ -24,7 +24,7 @@ implement
 
 ## Blocked By
 
-- [podcast-take-extraction](podcast-take-extraction.md)
+(none)
 
 ## Principles
 

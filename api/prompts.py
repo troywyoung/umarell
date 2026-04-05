@@ -179,6 +179,54 @@ No preamble, no quotation marks, no explanation.""",
 
 One sentence, punchy and direct. No preamble.""",
         "max_tokens": 100
+    },
+
+    "extract_podcast_takes": {
+        "name": "Podcast Take Extraction",
+        "description": "Extract interesting claims from podcast transcripts with speaker attribution",
+        "system": """You are an expert content analyst specializing in identifying compelling, debate-worthy claims from podcast conversations.
+
+Your job is to extract the most interesting takes from a podcast transcript — claims that are bold, contrarian, provocative, or represent genuine insights worth exploring.
+
+WHAT TO LOOK FOR:
+- Bold predictions about the future
+- Contrarian opinions that challenge conventional wisdom
+- Provocative insights that reframe how we think about something
+- Specific claims backed by data or deep expertise
+- Controversial positions that spark debate
+
+WHAT TO AVOID:
+- Generic observations or small talk
+- Vague statements without specificity
+- Obvious facts everyone agrees on
+- Purely descriptive commentary
+- Filler conversation
+
+FOR EACH CLAIM:
+- Preserve the speaker's EXACT words — no reformatting, no paraphrasing
+- Extract the speaker's name from the transcript
+- Identify the precise timestamp range (start and end) where the claim appears
+- Score the claim's quality (0-100) based on: specificity, controversy, insight depth, backing evidence
+
+Quality scoring:
+85-100: Exceptional — specific, bold, well-evidenced, highly controversial or insightful
+70-84: Strong — clear claim with substance, worth exploring
+55-69: Decent — interesting but lacks depth or specificity
+0-54: Weak — generic, vague, or unsubstantiated
+
+Return ONLY claims with quality_score >= 70.
+
+Return valid JSON only: an array of objects, each with:
+{
+  "claim": "exact quote from speaker",
+  "speaker": "speaker name",
+  "start": timestamp_start_seconds,
+  "end": timestamp_end_seconds,
+  "quality_score": integer_0_to_100
+}
+
+No markdown fences. No preamble.""",
+        "max_tokens": 4000
     }
 }
 

@@ -1,6 +1,7 @@
 """YouTube transcript fetching service."""
 
 import re
+import json
 from typing import Optional
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import (
@@ -138,3 +139,148 @@ def fetch_youtube_transcript(url: str) -> dict:
         raise TranscriptError(
             f"Failed to fetch transcript for video {video_id}: {str(e)}"
         )
+
+
+async def extract_podcast_takes(transcript: dict, count: int = 5) -> list[dict]:
+    """
+    Extract interesting claims from a podcast transcript using LLM analysis.
+
+    Uses Gemini 2.5 Flash to identify the most compelling takes from a transcript,
+    preserving speaker voice and including timestamps. Includes post-extraction
+    quality filter (only returns takes with quality_score >= 70).
+
+    Args:
+        transcript: dict with structure:
+            {
+                "text": str,  # Full transcript text
+                "segments": [  # List of timestamped segments
+                    {"start": float, "text": str},
+                    ...
+                ]
+            }
+        count: Number of takes to extract (default: 5)
+
+    Returns:
+        List of dicts with structure:
+        [
+            {
+                "claim": str,  # Exact quote from speaker
+                "speaker": str,  # Speaker name
+                "start": float,  # Start timestamp in seconds
+                "end": float,  # End timestamp in seconds
+                "quality_score": int  # Quality score 0-100
+            },
+            ...
+        ]
+
+    Raises:
+        ValueError: If transcript format is invalid or LLM response cannot be parsed
+    """
+    # Import here to avoid circular dependency
+    from pipeline import _call
+    from prompts import get_prompt
+
+    # Validate transcript structure
+    if not isinstance(transcript, dict):
+        raise ValueError("Transcript must be a dictionary")
+    if "text" not in transcript or "segments" not in transcript:
+        raise ValueError("Transcript must contain 'text' and 'segments' keys")
+    if not transcript["segments"]:
+        raise ValueError("Transcript segments cannot be empty")
+
+    # Truncate transcript if too long (safety measure for 1M token context)
+    # 100K chars ~= 25K tokens, well within limits
+    transcript_text = transcript["text"][:100000]
+
+    # Format segments for the LLM
+    segments_formatted = []
+    for seg in transcript["segments"]:
+        segments_formatted.append(f"[{seg['start']:.1f}s] {seg['text']}")
+    segments_text = "\n".join(segments_formatted[:1000])  # Cap at 1000 segments
+
+    prompt_config = get_prompt("extract_podcast_takes")
+    user_prompt = f"""Extract the {count} most interesting claims from this podcast transcript.
+
+Full transcript text:
+{transcript_text}
+
+Timestamped segments:
+{segments_text}
+
+Return a JSON array of the top {count} claims, each with: claim, speaker, start, end, quality_score.
+Only include claims with quality_score >= 70."""
+
+    try:
+        # Call LLM with retry logic built into _call
+        response = await _call(
+            system=prompt_config["system"],
+            user=user_prompt,
+            max_tokens=prompt_config["max_tokens"],
+            retries=5,
+            use_search=False
+        )
+
+        # Handle tuple response (Gemini with sources)
+        if isinstance(response, tuple):
+            response = response[0]
+
+        # Clean and parse JSON
+        response = response.strip()
+        # Remove markdown code fences if present
+        if response.startswith("```"):
+            response = re.sub(r'^```(?:json)?\s*', '', response)
+            response = re.sub(r'\s*```$', '', response)
+
+        # Parse JSON
+        takes = json.loads(response)
+
+        # Validate response structure
+        if not isinstance(takes, list):
+            raise ValueError("LLM response must be a JSON array")
+
+        # Filter and validate each take
+        filtered_takes = []
+        for take in takes:
+            # Validate required fields
+            if not isinstance(take, dict):
+                continue
+            required_fields = ["claim", "speaker", "start", "end", "quality_score"]
+            if not all(field in take for field in required_fields):
+                continue
+
+            # Validate field types
+            if not isinstance(take["claim"], str) or not take["claim"].strip():
+                continue
+            if not isinstance(take["speaker"], str) or not take["speaker"].strip():
+                continue
+            if not isinstance(take["quality_score"], (int, float)):
+                continue
+            if not isinstance(take["start"], (int, float)):
+                continue
+            if not isinstance(take["end"], (int, float)):
+                continue
+
+            # Apply quality filter (>= 70)
+            if take["quality_score"] < 70:
+                continue
+
+            # Ensure timestamps are valid
+            if take["start"] < 0 or take["end"] < 0 or take["end"] <= take["start"]:
+                continue
+
+            # Normalize types
+            filtered_takes.append({
+                "claim": take["claim"].strip(),
+                "speaker": take["speaker"].strip(),
+                "start": float(take["start"]),
+                "end": float(take["end"]),
+                "quality_score": int(take["quality_score"])
+            })
+
+        return filtered_takes
+
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Failed to parse LLM response as JSON: {e}")
+    except Exception as e:
+        # Re-raise with more context
+        raise ValueError(f"Failed to extract podcast takes: {str(e)}")
