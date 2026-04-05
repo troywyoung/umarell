@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import InstanceList from './admin/InstanceList';
+import CreateInstanceWizard from './admin/CreateInstanceWizard';
+import InstanceEditor from './admin/InstanceEditor';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8100';
 
@@ -20,7 +23,9 @@ interface DesignTokens {
 }
 
 export default function AdminPanel({ onClose }: { onClose: () => void }) {
-  const [activeTab, setActiveTab] = useState<'prompts' | 'design'>('prompts');
+  const [activeTab, setActiveTab] = useState<'instances' | 'prompts' | 'design'>('instances');
+  const [showCreateWizard, setShowCreateWizard] = useState(false);
+  const [editingInstance, setEditingInstance] = useState<string | null>(null);
   const [prompts, setPrompts] = useState<Record<string, Prompt>>({});
   const [designTokens, setDesignTokens] = useState<DesignTokens | null>(null);
   const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
@@ -384,6 +389,21 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
 
         <div style={{ display: 'flex', borderBottom: '1px solid #EEE' }}>
           <button
+            onClick={() => setActiveTab('instances')}
+            style={{
+              flex: 1,
+              padding: '12px 20px',
+              background: activeTab === 'instances' ? '#FF00AE' : 'transparent',
+              color: activeTab === 'instances' ? '#FFF' : '#888',
+              border: 'none',
+              fontSize: 14,
+              fontWeight: 700,
+              cursor: 'pointer',
+            }}
+          >
+            Instances
+          </button>
+          <button
             onClick={() => setActiveTab('prompts')}
             style={{
               flex: 1,
@@ -431,8 +451,13 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
             </div>
           )}
 
-          {loading ? (
+          {loading && activeTab !== 'instances' ? (
             <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>Loading...</div>
+          ) : activeTab === 'instances' ? (
+            <InstanceList
+              onCreateNew={() => setShowCreateWizard(true)}
+              onEdit={(key) => setEditingInstance(key)}
+            />
           ) : activeTab === 'prompts' ? (
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 20 }}>
               <div>{renderPromptList()}</div>
@@ -455,6 +480,23 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
           )}
         </div>
       </div>
+
+      {showCreateWizard && (
+        <CreateInstanceWizard
+          onClose={() => setShowCreateWizard(false)}
+          onCreated={() => {
+            setShowCreateWizard(false);
+            setActiveTab('instances');
+          }}
+        />
+      )}
+
+      {editingInstance && (
+        <InstanceEditor
+          instanceKey={editingInstance}
+          onClose={() => setEditingInstance(null)}
+        />
+      )}
     </div>
   );
 }

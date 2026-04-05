@@ -1209,3 +1209,380 @@ async def update_design_token_endpoint(
         raise HTTPException(404, "Design token not found")
 
     return {"status": "updated", "path": update.path, "value": update.value}
+
+
+# ─── Instance Management ─────────────────────────────────────────────────────
+
+
+class InstanceCreate(BaseModel):
+    key: str
+    display_name: str
+    subdirectory: str | None = None
+    clone_from: str | None = None  # instance key to clone config from
+
+
+class InstanceUpdate(BaseModel):
+    display_name: str | None = None
+    subdirectory: str | None = None
+    is_active: bool | None = None
+
+
+class InstanceConfigUpdate(BaseModel):
+    ui_copy: dict | None = None
+    design_tokens: dict | None = None
+    prompts: dict | None = None
+
+
+@app.get("/admin/instances")
+async def list_instances(current_user: User = Depends(require_user), db: AsyncSession = Depends(get_db)):
+    """List all instances."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    result = await db.execute(select(Instance).order_by(Instance.created_at))
+    instances = result.scalars().all()
+
+    return [
+        {
+            "id": inst.id,
+            "key": inst.key,
+            "display_name": inst.display_name,
+            "subdirectory": inst.subdirectory,
+            "is_active": inst.is_active,
+            "created_at": inst.created_at.isoformat(),
+            "updated_at": inst.updated_at.isoformat(),
+            "url": f"/{inst.key}/" if inst.key != "hot-takes" else "/"
+        }
+        for inst in instances
+    ]
+
+
+@app.post("/admin/instances", status_code=201)
+async def create_instance(
+    body: InstanceCreate,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Create a new instance with database provisioning."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    # Validate key format
+    if not re.match(r'^[a-z0-9-]+$', body.key):
+        raise HTTPException(400, "Instance key must be lowercase alphanumeric with hyphens only")
+
+    # Check if key already exists
+    result = await db.execute(select(Instance).where(Instance.key == body.key))
+    if result.scalar_one_or_none():
+        raise HTTPException(409, f"Instance with key '{body.key}' already exists")
+
+    # Create instance record
+    instance = Instance(
+        key=body.key,
+        display_name=body.display_name,
+        subdirectory=body.subdirectory,
+        database_name=None,  # Using file-based SQLite
+        is_active=True
+    )
+    db.add(instance)
+    await db.flush()
+
+    # Determine what to clone from
+    clone_source_id = None
+    if body.clone_from:
+        result = await db.execute(select(Instance).where(Instance.key == body.clone_from))
+        clone_source = result.scalar_one_or_none()
+        if clone_source:
+            clone_source_id = clone_source.id
+
+    # Seed prompts (clone or use defaults)
+    if clone_source_id:
+        # Clone prompts from source instance
+        result = await db.execute(
+            select(InstancePrompt).where(InstancePrompt.instance_id == clone_source_id)
+        )
+        source_prompts = result.scalars().all()
+        for src in source_prompts:
+            prompt = InstancePrompt(
+                instance_id=instance.id,
+                prompt_key=src.prompt_key,
+                name=src.name,
+                description=src.description,
+                system=src.system,
+                max_tokens=src.max_tokens,
+                is_default=False
+            )
+            db.add(prompt)
+    else:
+        # Use system defaults
+        for prompt_key, prompt_config in PROMPTS.items():
+            prompt = InstancePrompt(
+                instance_id=instance.id,
+                prompt_key=prompt_key,
+                name=prompt_config["name"],
+                description=prompt_config["description"],
+                system=prompt_config["system"],
+                max_tokens=prompt_config["max_tokens"],
+                is_default=True
+            )
+            db.add(prompt)
+
+    # Seed design tokens (clone or use defaults)
+    from design_tokens import DESIGN_TOKENS
+    if clone_source_id:
+        result = await db.execute(
+            select(InstanceConfig)
+            .where(InstanceConfig.instance_id == clone_source_id)
+            .where(InstanceConfig.config_type == "design_tokens")
+        )
+        source_config = result.scalar_one_or_none()
+        design_data = source_config.config_data if source_config else DESIGN_TOKENS
+    else:
+        design_data = DESIGN_TOKENS
+
+    design_config = InstanceConfig(
+        instance_id=instance.id,
+        config_type="design_tokens",
+        config_data=design_data
+    )
+    db.add(design_config)
+
+    # Seed UI copy (clone or use defaults)
+    from ui_copy import UI_COPY
+    if clone_source_id:
+        result = await db.execute(
+            select(InstanceConfig)
+            .where(InstanceConfig.instance_id == clone_source_id)
+            .where(InstanceConfig.config_type == "ui_copy")
+        )
+        source_config = result.scalar_one_or_none()
+        ui_data = source_config.config_data if source_config else UI_COPY
+    else:
+        ui_data = UI_COPY
+
+    ui_config = InstanceConfig(
+        instance_id=instance.id,
+        config_type="ui_copy",
+        config_data=ui_data
+    )
+    db.add(ui_config)
+
+    await db.commit()
+    await db.refresh(instance)
+
+    # Initialize instance database
+    engine, _ = get_instance_engine(body.key)
+    async with engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+
+    return {
+        "id": instance.id,
+        "key": instance.key,
+        "display_name": instance.display_name,
+        "subdirectory": instance.subdirectory,
+        "is_active": instance.is_active,
+        "created_at": instance.created_at.isoformat(),
+        "url": f"/{instance.key}/"
+    }
+
+
+@app.put("/admin/instances/{instance_key}")
+async def update_instance(
+    instance_key: str,
+    body: InstanceUpdate,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Update instance metadata."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    result = await db.execute(select(Instance).where(Instance.key == instance_key))
+    instance = result.scalar_one_or_none()
+    if not instance:
+        raise HTTPException(404, "Instance not found")
+
+    if body.display_name is not None:
+        instance.display_name = body.display_name
+    if body.subdirectory is not None:
+        instance.subdirectory = body.subdirectory
+    if body.is_active is not None:
+        instance.is_active = body.is_active
+
+    await db.commit()
+    await db.refresh(instance)
+
+    return {
+        "id": instance.id,
+        "key": instance.key,
+        "display_name": instance.display_name,
+        "subdirectory": instance.subdirectory,
+        "is_active": instance.is_active,
+        "updated_at": instance.updated_at.isoformat()
+    }
+
+
+@app.get("/admin/instances/{instance_key}/config")
+async def get_instance_config_admin(
+    instance_key: str,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Get full config for instance editing."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    result = await db.execute(select(Instance).where(Instance.key == instance_key))
+    instance = result.scalar_one_or_none()
+    if not instance:
+        raise HTTPException(404, "Instance not found")
+
+    # Get all prompts
+    result = await db.execute(
+        select(InstancePrompt).where(InstancePrompt.instance_id == instance.id)
+    )
+    db_prompts = result.scalars().all()
+    prompts = {
+        p.prompt_key: {
+            "name": p.name,
+            "description": p.description,
+            "system": p.system,
+            "max_tokens": int(p.max_tokens)
+        }
+        for p in db_prompts
+    }
+
+    # Get design tokens
+    result = await db.execute(
+        select(InstanceConfig)
+        .where(InstanceConfig.instance_id == instance.id)
+        .where(InstanceConfig.config_type == "design_tokens")
+    )
+    design_config = result.scalar_one_or_none()
+    design_tokens = design_config.config_data if design_config else {}
+
+    # Get UI copy
+    result = await db.execute(
+        select(InstanceConfig)
+        .where(InstanceConfig.instance_id == instance.id)
+        .where(InstanceConfig.config_type == "ui_copy")
+    )
+    ui_config = result.scalar_one_or_none()
+    ui_copy = ui_config.config_data if ui_config else {}
+
+    return {
+        "instance": {
+            "id": instance.id,
+            "key": instance.key,
+            "display_name": instance.display_name,
+            "subdirectory": instance.subdirectory,
+            "is_active": instance.is_active
+        },
+        "prompts": prompts,
+        "design_tokens": design_tokens,
+        "ui_copy": ui_copy
+    }
+
+
+@app.put("/admin/instances/{instance_key}/config")
+async def update_instance_config(
+    instance_key: str,
+    body: InstanceConfigUpdate,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Update instance configuration (UI copy, design tokens, prompts)."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    result = await db.execute(select(Instance).where(Instance.key == instance_key))
+    instance = result.scalar_one_or_none()
+    if not instance:
+        raise HTTPException(404, "Instance not found")
+
+    # Update UI copy if provided
+    if body.ui_copy is not None:
+        result = await db.execute(
+            select(InstanceConfig)
+            .where(InstanceConfig.instance_id == instance.id)
+            .where(InstanceConfig.config_type == "ui_copy")
+        )
+        config = result.scalar_one_or_none()
+        if config:
+            config.config_data = body.ui_copy
+        else:
+            config = InstanceConfig(
+                instance_id=instance.id,
+                config_type="ui_copy",
+                config_data=body.ui_copy
+            )
+            db.add(config)
+
+    # Update design tokens if provided
+    if body.design_tokens is not None:
+        result = await db.execute(
+            select(InstanceConfig)
+            .where(InstanceConfig.instance_id == instance.id)
+            .where(InstanceConfig.config_type == "design_tokens")
+        )
+        config = result.scalar_one_or_none()
+        if config:
+            config.config_data = body.design_tokens
+        else:
+            config = InstanceConfig(
+                instance_id=instance.id,
+                config_type="design_tokens",
+                config_data=body.design_tokens
+            )
+            db.add(config)
+
+    # Update prompts if provided
+    if body.prompts is not None:
+        for prompt_key, prompt_data in body.prompts.items():
+            result = await db.execute(
+                select(InstancePrompt)
+                .where(InstancePrompt.instance_id == instance.id)
+                .where(InstancePrompt.prompt_key == prompt_key)
+            )
+            prompt = result.scalar_one_or_none()
+            if prompt:
+                prompt.name = prompt_data.get("name", prompt.name)
+                prompt.description = prompt_data.get("description", prompt.description)
+                prompt.system = prompt_data.get("system", prompt.system)
+                prompt.max_tokens = prompt_data.get("max_tokens", prompt.max_tokens)
+            else:
+                prompt = InstancePrompt(
+                    instance_id=instance.id,
+                    prompt_key=prompt_key,
+                    name=prompt_data["name"],
+                    description=prompt_data["description"],
+                    system=prompt_data["system"],
+                    max_tokens=prompt_data["max_tokens"],
+                    is_default=False
+                )
+                db.add(prompt)
+
+    await db.commit()
+
+    return {"status": "updated", "instance_key": instance_key}
+
+
+@app.delete("/admin/instances/{instance_key}", status_code=200)
+async def delete_instance(
+    instance_key: str,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Soft delete instance (set is_active=false)."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    result = await db.execute(select(Instance).where(Instance.key == instance_key))
+    instance = result.scalar_one_or_none()
+    if not instance:
+        raise HTTPException(404, "Instance not found")
+
+    instance.is_active = False
+    await db.commit()
+
+    return {"status": "deactivated", "key": instance_key}
