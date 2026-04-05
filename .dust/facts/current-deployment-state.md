@@ -16,7 +16,7 @@ This fact documents the actual deployment infrastructure that exists today and w
 ### Git branches
 - `main` exists (development trunk)
 - `staging` branch exists and is ready for Railway deployment
-- `production` branch **does not exist yet** (create when ready for production deployment)
+- `production` branch **ready to create** when first production deployment is needed (see DEPLOYMENT.md for workflow)
 
 ## What Does NOT Exist
 
@@ -35,16 +35,21 @@ This fact documents the actual deployment infrastructure that exists today and w
 - `staging` branch does not exist (required for staging deployment)
 - `production` branch does not exist (required for production deployment)
 
-## Blockers for Production Deployment
+## Prerequisites for First Production Deployment
 
-1. **No Railway account/projects** — Railway hosting account needs to be set up with separate projects for staging and production (see `DEPLOYMENT.md` for setup guide)
-2. **No environment variables configured** — Secrets (API keys, JWT secrets, database URLs) need to be set in Railway UI
-3. **No database provisioning** — PostgreSQL instances need to be created for each environment
-4. **No service configuration** — Railway services need to be configured to point to `/api` and `/app` directories
-5. **No domain setup** — Custom domain `umarell.app` needs to be pointed to production Railway service
-6. **No migration tooling** — Alembic (or equivalent) needs to be added and configured for schema management
+Before the first production deployment can happen:
+
+1. **Railway production project** — Create Railway production project (see `DEPLOYMENT.md` for setup guide)
+2. **Environment variables** — Configure production secrets in Railway UI (API keys, JWT secret, etc.)
+3. **PostgreSQL database** — Provision production PostgreSQL instance
+4. **Service configuration** — Configure Railway services to point to `/api` and `/app` directories with `production` branch watch
+5. **Custom domain** — Point `umarell.app` to production Railway service
+6. **Migration tooling** — Add and configure Alembic for schema management (future task)
+7. **Staging validation** — Ensure staging environment is working and validated before production setup
 
 ## Current Deployment Process
+
+### Staging Deployment
 
 Staging is ready to be deployed following the workflow in `DEPLOYMENT.md`:
 
@@ -56,9 +61,25 @@ git push origin staging
 
 Once Railway projects are created and configured, this will trigger automatic deployment.
 
+### Production Deployment
+
+Production deployment flow is documented and ready to use. The workflow follows an intentional promotion path:
+
+```
+main → staging → production
+```
+
+Key aspects:
+- **Pre-deployment checklist** ensures staging validation before production release
+- **Rollback procedures** are documented with three options (Railway UI, git revert, hard reset)
+- **Post-deployment verification** steps ensure deployment succeeded
+- **Production branch** will be created on first production deployment
+
+See `DEPLOYMENT.md` for complete production deployment workflow and rollback procedures.
+
 ## Next Steps
 
-To complete the staging environment setup:
+### For Staging Environment
 1. Create Railway account and staging project
 2. Follow `DEPLOYMENT.md` to configure Railway services
 3. Set environment variables in Railway UI
@@ -66,9 +87,11 @@ To complete the staging environment setup:
 5. Push to `staging` branch to trigger first deployment
 6. Verify deployment at staging URL
 
-For production (when ready):
-1. Create `production` branch from `staging`
+### For Production Environment
+1. Complete staging setup and validate it works
 2. Create Railway production project
-3. Configure services, secrets, and custom domain
-4. Add database migration tooling
-5. Test promotion path: `main` → `staging` → `production`
+3. Follow production setup instructions in `DEPLOYMENT.md`
+4. Configure services, secrets, and custom domain
+5. Use documented deployment workflow to promote from staging to production
+6. Follow post-deployment verification checklist
+7. Keep rollback procedures accessible for quick recovery if needed

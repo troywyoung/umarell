@@ -76,14 +76,96 @@ Railway will automatically detect the push and deploy both services.
 
 ### Deploy to Production
 
+Production deployments should only happen after staging validation. Follow this workflow:
+
+#### Pre-deployment Checklist
+- [ ] Changes have been deployed to staging
+- [ ] Manual testing completed on staging
+- [ ] No known critical bugs in staging
+- [ ] Database migrations (if any) have been tested in staging
+- [ ] All team members notified of upcoming deployment
+
+#### Production Deploy Steps
+
 ```bash
-# Ensure production branch exists
+# 1. Ensure you're on staging with latest changes
+git checkout staging
+git pull origin staging
+
+# 2. Switch to production branch (create if first time)
 git checkout production || git checkout -b production
+
+# 3. Merge staging into production
 git merge staging
+
+# 4. Push to trigger deployment
 git push origin production
 ```
 
 Railway will automatically detect the push and deploy both services.
+
+#### Post-deployment Verification
+1. **API Health**: Check `https://[production-api-url]/health` returns 200
+2. **Frontend**: Verify app loads at `https://umarell.app`
+3. **Authentication**: Test Google OAuth login flow
+4. **Core functionality**: Submit a test observation and verify research completes
+5. **Monitor logs**: Watch Railway logs for 10-15 minutes for errors
+
+### Rollback Procedures
+
+If a production deployment introduces critical issues, rollback immediately.
+
+#### Option 1: Railway UI Rollback (Fastest)
+
+1. Open Railway dashboard for production project
+2. Click on the service (API or App) with issues
+3. Go to "Deployments" tab
+4. Find the last known good deployment
+5. Click "Redeploy" on that deployment
+6. Repeat for other service if needed
+
+**Timeframe**: ~2-3 minutes
+
+#### Option 2: Git Revert (For Full Rollback)
+
+```bash
+# 1. Identify the problematic merge commit
+git checkout production
+git log --oneline -10
+
+# 2. Revert the merge commit (use the commit hash from merge)
+git revert -m 1 <merge-commit-hash>
+
+# 3. Push to trigger redeployment
+git push origin production
+```
+
+**Timeframe**: ~5-10 minutes (includes rebuild)
+
+#### Option 3: Hard Reset (Emergency Only)
+
+```bash
+# 1. Find the last known good commit
+git checkout production
+git log --oneline -10
+
+# 2. Hard reset to that commit
+git reset --hard <good-commit-hash>
+
+# 3. Force push (THIS REWRITES HISTORY)
+git push --force origin production
+```
+
+**⚠️ Warning**: Only use this in emergencies. Requires coordination with all team members.
+
+**Timeframe**: ~5-10 minutes (includes rebuild)
+
+#### Post-Rollback Steps
+
+1. **Verify rollback**: Check health endpoints and core functionality
+2. **Communicate**: Notify team that rollback is complete
+3. **Root cause analysis**: Investigate what went wrong
+4. **Fix forward**: Create fix on `main`, test in staging, re-deploy to production
 
 ## Verification
 
