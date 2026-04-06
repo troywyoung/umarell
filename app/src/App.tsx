@@ -476,11 +476,17 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
         position: "absolute", inset: 0, display: "flex", flexDirection: "column",
         alignItems: "center", justifyContent: "center",
       }}>
-        {showFlame
-          ? <span style={{ fontSize: flameFontSize, lineHeight: 1, filter: "sepia(1) saturate(10) hue-rotate(290deg)" }}>🔥</span>
-          : <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
-        }
+        <span style={{ fontSize, fontWeight: 800, color: showFlame ? PINK : (dark ? "#1A1A1A" : "#FFF"), lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
       </div>
+      {showFlame && (
+        <div style={{
+          position: "absolute", top: -6, right: -6,
+          fontSize: size === "lg" ? 16 : size === "sm" ? 14 : 12,
+          lineHeight: 1,
+          filter: "drop-shadow(0 0 3px rgba(255,100,0,0.6))",
+          animation: animate ? "flamePop 0.4s ease-out" : undefined,
+        }}>🔥</div>
+      )}
     </div>
   );
 }
@@ -791,6 +797,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         @keyframes recPulse { 0%,100% { opacity:1; } 50% { opacity:0.2; } }
         @keyframes yellowPulse { 0%,100% { opacity:1; } 50% { opacity:0.25; } }
         @keyframes scoreLabelFadeIn { from { opacity:0; transform:translateX(-6px); } to { opacity:1; transform:translateX(0); } }
+        @keyframes flamePop { 0% { opacity:0; transform:scale(0.4); } 60% { transform:scale(1.3); } 100% { opacity:1; transform:scale(1); } }
       `}</style>
 
 <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
@@ -832,7 +839,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const challenges = (challengeMap.get(o.id) || []).length;
             // Each take adds 20% boost, each challenge adds 50% (harder to generate)
             const engagementBoost = 1 + (takes * 0.2) + (challenges * 0.5);
-            return (o.score || 0) * engagementBoost / Math.pow(hoursAgo + 2, 0.8);
+            // Hot takes get a 3x boost so they surface prominently
+            const hotBoost = o.is_hot_take ? 3 : 1;
+            return (o.score || 0) * engagementBoost * hotBoost / Math.pow(hoursAgo + 2, 0.8);
           };
           const pinnedFirst = (arr: Observation[]) => [...arr].sort((a, b) => (b.pinned ? 1 : 0) - (a.pinned ? 1 : 0));
           const filteredPosts = selectedTopic === "__top__"
