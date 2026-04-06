@@ -423,12 +423,16 @@ function getScoreTier(v: number): { label: string } {
 function FlameIcon({ size }: { size: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 48 48" fill="none">
-      {/* Outer flame — deep pink */}
-      <path d="M24 2C19 9 8 15 10 27C6 22 4 28 6 35C8 43 15 48 24 48C33 48 40 43 42 35C44 28 42 22 38 27C40 15 29 9 24 2Z" fill="#FF00AE" />
-      {/* Mid flame — rose pink */}
-      <path d="M24 13C20 19 13 23 15 31C11 27 11 33 13 39C15 44 19 48 24 48C29 48 33 44 35 39C37 33 37 27 33 31C35 23 28 19 24 13Z" fill="#FF66C2" />
-      {/* Inner core — pale pink */}
-      <path d="M24 27C20 31 18 37 20 42C21 45 22 48 24 48C26 48 27 45 28 42C30 37 28 31 24 27Z" fill="#FFD6EF" />
+      <defs>
+        <clipPath id="flame-badge-clip">
+          <circle cx="24" cy="24" r="24" />
+        </clipPath>
+      </defs>
+      <path
+        d="M4 48 L4 34 C4 26 10 20 14 16 C16 14 16 10 14 8 C16 6 19 7 20 10 C21 13 20 16 22 18 C23 12 24 6 24 4 C24 6 25 12 26 18 C28 16 27 13 28 10 C29 7 32 6 34 8 C32 10 32 14 34 16 C38 20 44 26 44 34 L44 48 Z"
+        fill="#FF00AE"
+        clipPath="url(#flame-badge-clip)"
+      />
     </svg>
   );
 }
@@ -473,10 +477,10 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
 
   const currentColor = showFlame ? PINK : (animate ? getScoreColor(displayVal) : accent);
   const pct = showFlame ? 1 : (animate ? animPct : target / 100);
-  const flameSize = Math.round(dim * 1.1);
+  const flameSize = dim;
 
   return (
-    <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0, overflow: "visible" }}>
+    <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
       <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)", transition: showFlame ? "stroke 0.4s ease" : "none" }}>
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" ? 4.4 : 3.4} />
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" ? 4.4 : 3.4}
