@@ -1,9 +1,5 @@
 import { useState, useEffect } from 'react';
-import InstanceList from './admin/InstanceList';
-import CreateInstanceWizard from './admin/CreateInstanceWizard';
-import InstanceEditor from './admin/InstanceEditor';
 import SimplifiedDesignEditor from './admin/SimplifiedDesignEditor';
-import PodcastIngestionForm from './admin/PodcastIngestionForm';
 import { diffWords } from 'diff';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8100';
@@ -33,10 +29,8 @@ interface TestSuite {
 }
 
 export default function AdminPanel({ onClose }: { onClose: () => void }) {
-  const [activeTab, setActiveTab] = useState<'instances' | 'prompts' | 'design' | 'podcast'>('instances');
-  const [showCreateWizard, setShowCreateWizard] = useState(false);
-  const [editingInstance, setEditingInstance] = useState<string | null>(null);
-  const [showDesignEditor, setShowDesignEditor] = useState(false);
+  // Rendered as a full page — onClose navigates back to home
+  const [activeTab, setActiveTab] = useState<'prompts' | 'design'>('prompts');
   const [prompts, setPrompts] = useState<Record<string, Prompt>>({});
   const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
   const [editingPrompt, setEditingPrompt] = useState<Prompt | null>(null);
@@ -1136,196 +1130,78 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
   };
 
   return (
-    <div
-      style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        background: 'rgba(0,0,0,0.7)',
-        zIndex: 999,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: 20,
-      }}
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
-      }}
-    >
-      <div
-        style={{
-          background: '#FFF',
-          borderRadius: 18,
-          maxWidth: 1200,
-          width: '100%',
-          maxHeight: '90vh',
-          overflow: 'hidden',
-          display: 'flex',
-          flexDirection: 'column',
-        }}
-      >
-        <div
-          style={{
-            padding: 20,
-            borderBottom: '1px solid #EEE',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-          }}
+    <div style={{ minHeight: '100vh', background: '#FAFAF8', display: 'flex', flexDirection: 'column' }}>
+      {/* Header */}
+      <div style={{ background: '#FFF', borderBottom: '1px solid #EEE', padding: '16px 24px', display: 'flex', alignItems: 'center', gap: 16 }}>
+        <button
+          onClick={onClose}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', color: '#888' }}
         >
-          <h2 style={{ margin: 0, fontSize: 22, fontWeight: 800 }}>Meta Admin</h2>
-          <button
-            onClick={onClose}
-            style={{
-              background: 'transparent',
-              border: 'none',
-              fontSize: 24,
-              cursor: 'pointer',
-              padding: 0,
-              width: 32,
-              height: 32,
-            }}
-          >
-            ×
-          </button>
-        </div>
-
-        <div style={{ display: 'flex', borderBottom: '1px solid #EEE' }}>
-          <button
-            onClick={() => setActiveTab('instances')}
-            style={{
-              flex: 1,
-              padding: '12px 20px',
-              background: activeTab === 'instances' ? '#FF00AE' : 'transparent',
-              color: activeTab === 'instances' ? '#FFF' : '#888',
-              border: 'none',
-              fontSize: 14,
-              fontWeight: 700,
-              cursor: 'pointer',
-            }}
-          >
-            Instances
-          </button>
-          <button
-            onClick={() => setActiveTab('prompts')}
-            style={{
-              flex: 1,
-              padding: '12px 20px',
-              background: activeTab === 'prompts' ? '#FF00AE' : 'transparent',
-              color: activeTab === 'prompts' ? '#FFF' : '#888',
-              border: 'none',
-              fontSize: 14,
-              fontWeight: 700,
-              cursor: 'pointer',
-            }}
-          >
-            LLM Prompts
-          </button>
-          <button
-            onClick={() => {
-              setActiveTab('design');
-              setShowDesignEditor(true);
-            }}
-            style={{
-              flex: 1,
-              padding: '12px 20px',
-              background: activeTab === 'design' ? '#FF00AE' : 'transparent',
-              color: activeTab === 'design' ? '#FFF' : '#888',
-              border: 'none',
-              fontSize: 14,
-              fontWeight: 700,
-              cursor: 'pointer',
-            }}
-          >
-            Design Tokens
-          </button>
-          <button
-            onClick={() => setActiveTab('podcast')}
-            style={{
-              flex: 1,
-              padding: '12px 20px',
-              background: activeTab === 'podcast' ? '#FF00AE' : 'transparent',
-              color: activeTab === 'podcast' ? '#FFF' : '#888',
-              border: 'none',
-              fontSize: 14,
-              fontWeight: 700,
-              cursor: 'pointer',
-            }}
-          >
-            Podcast Ingest
-          </button>
-        </div>
-
-        <div style={{ padding: 20, overflow: 'auto', flex: 1 }}>
-          {error && (
-            <div
-              style={{
-                padding: 12,
-                background: '#FFE5E5',
-                color: '#D00',
-                borderRadius: 8,
-                marginBottom: 16,
-                fontSize: 14,
-              }}
-            >
-              {error}
-            </div>
-          )}
-
-          {loading && activeTab !== 'instances' ? (
-            <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>Loading...</div>
-          ) : activeTab === 'instances' ? (
-            <InstanceList
-              onCreateNew={() => setShowCreateWizard(true)}
-              onEdit={(key) => setEditingInstance(key)}
-            />
-          ) : activeTab === 'prompts' ? (
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 20 }}>
-              <div>{renderPromptList()}</div>
-              <div>
-                {selectedPrompt ? (
-                  renderPromptEditor()
-                ) : (
-                  <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>
-                    Select a prompt to edit
-                  </div>
-                )}
-              </div>
-            </div>
-          ) : activeTab === 'design' ? (
-            <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>
-              Click "Design Tokens" to edit visual customization
-            </div>
-          ) : activeTab === 'podcast' ? (
-            <PodcastIngestionForm />
-          ) : null}
-        </div>
+          <svg width={18} height={18} viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round">
+            <path d="M11 4L6 9l5 5" />
+          </svg>
+        </button>
+        <h2 style={{ margin: 0, fontSize: 18, fontWeight: 800, color: '#1A1A1A' }}>Admin</h2>
       </div>
 
-      {showCreateWizard && (
-        <CreateInstanceWizard
-          onClose={() => setShowCreateWizard(false)}
-          onCreated={() => {
-            setShowCreateWizard(false);
-            setActiveTab('instances');
+      {/* Tabs */}
+      <div style={{ display: 'flex', borderBottom: '1px solid #EEE', background: '#FFF' }}>
+        <button
+          onClick={() => setActiveTab('prompts')}
+          style={{
+            padding: '12px 24px',
+            background: 'none',
+            borderBottom: activeTab === 'prompts' ? '2px solid #FF00AE' : '2px solid transparent',
+            color: activeTab === 'prompts' ? '#FF00AE' : '#888',
+            border: 'none',
+            borderBottom: activeTab === 'prompts' ? '2px solid #FF00AE' : '2px solid transparent',
+            fontSize: 13,
+            fontWeight: 700,
+            cursor: 'pointer',
           }}
-        />
-      )}
+        >
+          LLM Prompts
+        </button>
+        <button
+          onClick={() => setActiveTab('design')}
+          style={{
+            padding: '12px 24px',
+            background: 'none',
+            borderBottom: activeTab === 'design' ? '2px solid #FF00AE' : '2px solid transparent',
+            color: activeTab === 'design' ? '#FF00AE' : '#888',
+            border: 'none',
+            borderBottom: activeTab === 'design' ? '2px solid #FF00AE' : '2px solid transparent',
+            fontSize: 13,
+            fontWeight: 700,
+            cursor: 'pointer',
+          }}
+        >
+          Design Tokens
+        </button>
+      </div>
 
-      {editingInstance && (
-        <InstanceEditor
-          instanceKey={editingInstance}
-          onClose={() => setEditingInstance(null)}
-        />
-      )}
-
-      {showDesignEditor && (
-        <SimplifiedDesignEditor
-          onClose={() => setShowDesignEditor(false)}
-        />
-      )}
+      {/* Content */}
+      <div style={{ padding: 24, flex: 1, overflow: 'auto', maxWidth: 1200, width: '100%', margin: '0 auto', boxSizing: 'border-box' }}>
+        {error && (
+          <div style={{ padding: 12, background: '#FFE5E5', color: '#D00', borderRadius: 8, marginBottom: 16, fontSize: 14 }}>
+            {error}
+          </div>
+        )}
+        {loading ? (
+          <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>Loading...</div>
+        ) : activeTab === 'prompts' ? (
+          <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: 24 }}>
+            <div>{renderPromptList()}</div>
+            <div>
+              {selectedPrompt ? renderPromptEditor() : (
+                <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>Select a prompt to edit</div>
+              )}
+            </div>
+          </div>
+        ) : (
+          <SimplifiedDesignEditor onClose={() => {}} />
+        )}
+      </div>
 
       {showSuiteEditor && renderSuiteEditor()}
     </div>

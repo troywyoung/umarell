@@ -1,13 +1,10 @@
-import { useState, useEffect, useRef, Fragment, lazy, Suspense } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { useState, useEffect, useRef, Fragment } from "react";
 import { GoogleLogin } from "@react-oauth/google";
 import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
 import { API } from "./config";
 import { useInstanceConfig } from "./contexts/InstanceContext";
-
-// Lazy load admin interface to reduce main bundle size
-const AdminV2 = lazy(() => import("./admin/AdminV2"));
+import AdminPanel from "./AdminPanel";
 
 function authHeaders(): Record<string, string> {
   const token = localStorage.getItem("sm_token");
@@ -2276,7 +2273,7 @@ function ProcessingDots({ color = "#6666CC" }: { color?: string }) {
 
 // ─── Root ─────────────────────────────────────────────────────────────────
 
-type View = "home" | "capture" | "output" | "about";
+type View = "home" | "capture" | "output" | "about" | "admin";
 
 interface AuthUser { id: string; name: string; avatar: string | null; is_admin?: boolean; }
 
@@ -2373,7 +2370,6 @@ export default function App() {
   const [outputKey, setOutputKey] = useState(0);
   const [challengingObs, setChallengingObs] = useState<Observation | null>(null);
   const [maintenance, setMaintenance] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`${API}/health`).then(r => r.json()).then(d => { if (d.maintenance) setMaintenance(true); }).catch(() => {});
@@ -2502,6 +2498,10 @@ export default function App() {
     return <AboutView onBack={() => setView("home")} />;
   }
 
+  if (view === "admin") {
+    return <AdminPanel onClose={() => setView("home")} />;
+  }
+
   if (view === "capture") {
     return (
       <CaptureView
@@ -2537,34 +2537,15 @@ export default function App() {
   }
 
   return (
-    <Routes>
-      <Route path="/admin" element={
-        <Suspense fallback={
-          <div style={{
-            minHeight: '100vh',
-            background: '#12102B',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}>
-            <div style={{ color: '#FFF', fontSize: 16 }}>Loading admin...</div>
-          </div>
-        }>
-          <AdminV2 onClose={() => navigate('/')} />
-        </Suspense>
-      } />
-      <Route path="*" element={
-        <HomeView
-          observations={observations}
-          loading={loading}
-          onCapture={() => navigateTo("capture")}
-          onSelect={(o) => navigateTo("output", o)}
-          authUser={authUser}
-          onSignOut={handleSignOut}
-          onAbout={() => setView("about")}
-          onOpenAdmin={() => navigate('/admin')}
-        />
-      } />
-    </Routes>
+    <HomeView
+      observations={observations}
+      loading={loading}
+      onCapture={() => navigateTo("capture")}
+      onSelect={(o) => navigateTo("output", o)}
+      authUser={authUser}
+      onSignOut={handleSignOut}
+      onAbout={() => setView("about")}
+      onOpenAdmin={() => setView("admin")}
+    />
   );
 }
