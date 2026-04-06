@@ -261,7 +261,20 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
                 <div style={{ fontWeight: 600 }}>Design tokens saved successfully</div>
                 {deploymentTriggered && (
                   <div style={{ fontSize: 12, marginTop: 4 }}>
-                    Staging deployment has been triggered
+                    Changes deployed to staging.{' '}
+                    <a
+                      href="https://umarell-staging.up.railway.app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        color: '#22863A',
+                        textDecoration: 'underline',
+                        fontWeight: 600,
+                      }}
+                    >
+                      Verify changes
+                    </a>{' '}
+                    (may take 1-2 minutes to reflect)
                   </div>
                 )}
               </div>
