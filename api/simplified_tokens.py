@@ -113,7 +113,7 @@ def apply_simplified_tokens_to_full(simplified: dict, full_tokens: dict) -> dict
 
         # Navigate to the parent
         for segment in path[:-1]:
-            if segment not in current:
+            if not isinstance(current, dict) or segment not in current or not isinstance(current[segment], dict):
                 current[segment] = {}
             current = current[segment]
 
