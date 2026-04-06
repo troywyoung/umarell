@@ -268,52 +268,174 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
             </div>
           )}
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-            {Object.entries(data.tokens).map(([key, value]) => (
-              <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-                <label
-                  style={{
-                    fontSize: 12,
-                    fontWeight: 600,
-                    color: '#1A1A1A',
-                  }}
-                >
-                  {data.labels[key]}
-                </label>
-                <div style={{ fontSize: 11, color: '#888', marginBottom: 2 }}>
-                  {data.descriptions[key]}
-                </div>
-                <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-                  {isColorToken(key) && (
-                    <input
-                      type="color"
-                      value={editedTokens[key]}
-                      onChange={(e) => handleTokenChange(key, e.target.value)}
-                      style={{
-                        width: 40,
-                        height: 32,
-                        border: '1px solid #CCC',
-                        borderRadius: 4,
-                        cursor: 'pointer',
-                      }}
-                    />
-                  )}
-                  <input
-                    type="text"
-                    value={editedTokens[key]}
-                    onChange={(e) => handleTokenChange(key, e.target.value)}
-                    style={{
-                      flex: 1,
-                      padding: '6px 8px',
-                      fontSize: 13,
-                      fontFamily: 'monospace',
-                      border: '1px solid #CCC',
-                      borderRadius: 4,
-                    }}
-                  />
-                </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+            {/* Colors Section */}
+            <div>
+              <h3 style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 700, color: '#1A1A1A' }}>
+                Colors
+              </h3>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                {['primary_color', 'secondary_color', 'background_color', 'text_color']
+                  .filter(key => data.tokens[key] !== undefined)
+                  .map((key) => (
+                    <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                      <label
+                        style={{
+                          fontSize: 12,
+                          fontWeight: 600,
+                          color: '#1A1A1A',
+                        }}
+                      >
+                        {data.labels[key]}
+                      </label>
+                      <div style={{ fontSize: 11, color: '#888', marginBottom: 2 }}>
+                        {data.descriptions[key]}
+                      </div>
+                      <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                        {isColorToken(key) && (
+                          <input
+                            type="color"
+                            value={editedTokens[key]}
+                            onChange={(e) => handleTokenChange(key, e.target.value)}
+                            style={{
+                              width: 40,
+                              height: 32,
+                              border: '1px solid #CCC',
+                              borderRadius: 4,
+                              cursor: 'pointer',
+                            }}
+                          />
+                        )}
+                        <input
+                          type="text"
+                          value={editedTokens[key]}
+                          onChange={(e) => handleTokenChange(key, e.target.value)}
+                          style={{
+                            flex: 1,
+                            padding: '6px 8px',
+                            fontSize: 13,
+                            fontFamily: 'monospace',
+                            border: '1px solid #CCC',
+                            borderRadius: 4,
+                          }}
+                        />
+                      </div>
+                    </div>
+                  ))}
               </div>
-            ))}
+            </div>
+
+            {/* Typography Section */}
+            <div>
+              <h3 style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 700, color: '#1A1A1A' }}>
+                Typography
+              </h3>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                {['font_family_sans', 'font_family_serif', 'font_size_base', 'line_height_base']
+                  .filter(key => data.tokens[key] !== undefined)
+                  .map((key) => (
+                    <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                      <label
+                        style={{
+                          fontSize: 12,
+                          fontWeight: 600,
+                          color: '#1A1A1A',
+                        }}
+                      >
+                        {data.labels[key]}
+                      </label>
+                      <div style={{ fontSize: 11, color: '#888', marginBottom: 2 }}>
+                        {data.descriptions[key]}
+                      </div>
+                      <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                        {isColorToken(key) && (
+                          <input
+                            type="color"
+                            value={editedTokens[key]}
+                            onChange={(e) => handleTokenChange(key, e.target.value)}
+                            style={{
+                              width: 40,
+                              height: 32,
+                              border: '1px solid #CCC',
+                              borderRadius: 4,
+                              cursor: 'pointer',
+                            }}
+                          />
+                        )}
+                        <input
+                          type="text"
+                          value={editedTokens[key]}
+                          onChange={(e) => handleTokenChange(key, e.target.value)}
+                          style={{
+                            flex: 1,
+                            padding: '6px 8px',
+                            fontSize: 13,
+                            fontFamily: 'monospace',
+                            border: '1px solid #CCC',
+                            borderRadius: 4,
+                          }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            </div>
+
+            {/* Layout Section */}
+            <div>
+              <h3 style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 700, color: '#1A1A1A' }}>
+                Layout
+              </h3>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
+                {['spacing_unit', 'container_max_width', 'border_radius_base', 'shadow_base', 'transition_duration', 'button_padding']
+                  .filter(key => data.tokens[key] !== undefined)
+                  .map((key) => (
+                    <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                      <label
+                        style={{
+                          fontSize: 12,
+                          fontWeight: 600,
+                          color: '#1A1A1A',
+                        }}
+                      >
+                        {data.labels[key]}
+                      </label>
+                      <div style={{ fontSize: 11, color: '#888', marginBottom: 2 }}>
+                        {data.descriptions[key]}
+                      </div>
+                      <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                        {isColorToken(key) && (
+                          <input
+                            type="color"
+                            value={editedTokens[key]}
+                            onChange={(e) => handleTokenChange(key, e.target.value)}
+                            style={{
+                              width: 40,
+                              height: 32,
+                              border: '1px solid #CCC',
+                              borderRadius: 4,
+                              cursor: 'pointer',
+                            }}
+                          />
+                        )}
+                        <input
+                          type="text"
+                          value={editedTokens[key]}
+                          onChange={(e) => handleTokenChange(key, e.target.value)}
+                          style={{
+                            flex: 1,
+                            padding: '6px 8px',
+                            fontSize: 13,
+                            fontFamily: 'monospace',
+                            border: '1px solid #CCC',
+                            borderRadius: 4,
+                          }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+              </div>
+            </div>
           </div>
         </div>
 
