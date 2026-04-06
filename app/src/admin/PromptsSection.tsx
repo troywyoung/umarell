@@ -20,10 +20,10 @@ type CompareMode = 'prompt' | 'model';
 
 // Only show the prompts that directly produce user-visible output
 const KEY_PROMPT_ORDER = [
-  'generate_steel_man',       // The Take — primary card content
-  'generate_counterpoint',    // Devil's Advocate — shown below the take
-  'generate_pva_take',        // PvA voice reaction
-  'format_thesis',            // Headline on every card
+  'format_thesis',            // 1. Headline on every card — everything flows from this
+  'generate_steel_man',       // 2. The Take — all text under Hot Take
+  'generate_counterpoint',    // 3. Devil's Advocate — all text in that section
+  'generate_pva_take',        // 4. PvA voice reaction — least critical
 ];
 
 const MODELS = [
@@ -329,10 +329,10 @@ export default function PromptsSection() {
           {KEY_PROMPT_ORDER.filter(key => prompts[key]).map(key => {
             const p = prompts[key];
             const subtitles: Record<string, string> = {
-              generate_steel_man: 'The Take',
-              generate_counterpoint: "Devil's Advocate",
-              generate_pva_take: 'PvA Reaction',
-              format_thesis: 'Card Headline',
+              format_thesis: 'Shapes the headline — everything flows from this',
+              generate_steel_man: 'All text under Hot Take',
+              generate_counterpoint: "All text under Devil's Advocate",
+              generate_pva_take: 'PvA podcast voice reaction',
             };
             const isSelected = selectedKey === key;
             return (
