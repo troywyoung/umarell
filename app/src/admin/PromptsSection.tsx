@@ -18,6 +18,14 @@ interface Sample {
 
 type CompareMode = 'prompt' | 'model';
 
+// Only show the prompts that directly produce user-visible output
+const KEY_PROMPT_ORDER = [
+  'generate_steel_man',       // The Take — primary card content
+  'generate_counterpoint',    // Devil's Advocate — shown below the take
+  'generate_pva_take',        // PvA voice reaction
+  'format_thesis',            // Headline on every card
+];
+
 const MODELS = [
   { value: '', label: 'Default active model' },
   { value: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6' },
@@ -318,22 +326,33 @@ export default function PromptsSection() {
           Prompts
         </div>
         <div style={{ flex: 1, overflowY: 'auto', padding: 10 }}>
-          {Object.entries(prompts).map(([key, p]) => (
-            <div
-              key={key}
-              onClick={() => selectPrompt(key)}
-              style={{
-                padding: '9px 10px', borderRadius: 6, cursor: 'pointer', marginBottom: 4,
-                background: selectedKey === key ? '#FF00AE' : 'transparent',
-                color: selectedKey === key ? '#FFF' : '#1A1A1A',
-              }}
-            >
-              <div style={{ fontWeight: 600, fontSize: 13 }}>{p.name}</div>
-              {p.model && (
-                <div style={{ fontSize: 10, opacity: 0.65, marginTop: 2, fontFamily: 'monospace' }}>{p.model}</div>
-              )}
-            </div>
-          ))}
+          {KEY_PROMPT_ORDER.filter(key => prompts[key]).map(key => {
+            const p = prompts[key];
+            const subtitles: Record<string, string> = {
+              generate_steel_man: 'The Take',
+              generate_counterpoint: "Devil's Advocate",
+              generate_pva_take: 'PvA Reaction',
+              format_thesis: 'Card Headline',
+            };
+            const isSelected = selectedKey === key;
+            return (
+              <div
+                key={key}
+                onClick={() => selectPrompt(key)}
+                style={{
+                  padding: '9px 10px', borderRadius: 6, cursor: 'pointer', marginBottom: 4,
+                  background: isSelected ? '#FF00AE' : 'transparent',
+                  color: isSelected ? '#FFF' : '#1A1A1A',
+                }}
+              >
+                <div style={{ fontWeight: 600, fontSize: 13 }}>{p.name}</div>
+                <div style={{ fontSize: 10, opacity: 0.65, marginTop: 1 }}>{subtitles[key]}</div>
+                {p.model && (
+                  <div style={{ fontSize: 10, opacity: 0.5, marginTop: 1, fontFamily: 'monospace' }}>{p.model}</div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
 
