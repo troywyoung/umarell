@@ -573,7 +573,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
 
 // ─── Home ─────────────────────────────────────────────────────────────────
 
-function HomeView({ observations, loading, onCapture, onSelect, authUser, onSignOut, onAbout, onOpenAdmin }: {
+function HomeView({ observations, loading, onCapture, onSelect, authUser, onSignOut, onAbout, onOpenAdmin, onRefresh }: {
   observations: Observation[];
   loading: boolean;
   onCapture: () => void;
@@ -582,6 +582,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   onSignOut: () => void;
   onAbout: () => void;
   onOpenAdmin?: () => void;
+  onRefresh: () => void;
 }) {
   const { config } = useInstanceConfig();
   const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
@@ -816,7 +817,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           const rankScore = (o: Observation) => {
             if (o.pinned) return Infinity;
             const hoursAgo = (Date.now() - new Date(o.created_at).getTime()) / 3600000;
-            const takes = (takesMap[o.id] || []).length;
+            const takes = (yourTakeMap[o.id] || []).length;
             const challenges = (challengeMap.get(o.id) || []).length;
             // Each take adds 20% boost, each challenge adds 50% (harder to generate)
             const engagementBoost = 1 + (takes * 0.2) + (challenges * 0.5);
@@ -864,7 +865,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         onClick={async (e) => {
                           e.stopPropagation();
                           await fetch(`${API}/hot-takes/observations/${obs.id}/pin`, { method: "PATCH", headers: authHeaders() });
-                          fetchObservations();
+                          onRefresh();
                         }}
                         style={{ background: "none", border: "none", cursor: "pointer", padding: "0 2px", fontSize: 9, opacity: obs.pinned ? 1 : 0.3, lineHeight: 1 }}
                         title={obs.pinned ? "Unpin" : "Pin to top"}
@@ -2648,6 +2649,7 @@ export default function App() {
       onSignOut={handleSignOut}
       onAbout={() => setView("about")}
       onOpenAdmin={() => setView("admin")}
+      onRefresh={fetchObservations}
     />
   );
 }
