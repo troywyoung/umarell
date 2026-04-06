@@ -131,6 +131,23 @@ async def lifespan(app: FastAPI):
         )
         await db.commit()
 
+        # One-time fix: restore null summaries from backup data file
+        import json as _json_restore
+        import os as _os_restore
+        _restore_path = _os_restore.path.join(_os_restore.path.dirname(__file__), "summary_restore_data.json")
+        if _os_restore.path.exists(_restore_path):
+            with open(_restore_path) as _f:
+                _restore_items = _json_restore.load(_f)
+            _restored = 0
+            for _item in _restore_items:
+                _obs = await db.get(Observation, _item["id"])
+                if _obs and not _obs.summary:
+                    _obs.summary = _item["summary"]
+                    _restored += 1
+            if _restored:
+                await db.commit()
+                print(f"[startup] restored {_restored} null summaries from backup data")
+
         # One-time fix: restore YouTube URL as episode source for existing episode posts
         # that had their sources overwritten by Gemini grounding URLs
         import json as _startup_json
