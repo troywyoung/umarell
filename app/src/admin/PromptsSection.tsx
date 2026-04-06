@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { diffWords } from 'diff';
 import { API as API_BASE } from '../config';
 
 interface Prompt {
@@ -117,7 +116,7 @@ export default function PromptsSection() {
   const loadSamples = async () => {
     setLoadingSamples(true);
     try {
-      const res = await fetch(`${API_BASE}/admin/prompt-samples?limit=5`, {
+      const res = await fetch(`${API_BASE}/admin/prompt-samples?limit=3`, {
         headers: { Authorization: `Bearer ${token()}` },
       });
       if (!res.ok) {
@@ -179,22 +178,6 @@ export default function PromptsSection() {
     } finally {
       setComparing(false);
     }
-  };
-
-  const renderDiff = (a: string, b: string) => {
-    const changes = diffWords(a || '', b || '');
-    return (
-      <div style={{ fontFamily: 'monospace', fontSize: 12, lineHeight: 1.6, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
-        {changes.map((part, i) => (
-          <span key={i} style={{
-            background: part.added ? '#D4EDDA' : part.removed ? '#F8D7DA' : 'transparent',
-            color: part.added ? '#155724' : part.removed ? '#721C24' : '#1A1A1A',
-            textDecoration: part.removed ? 'line-through' : 'none',
-            padding: (part.added || part.removed) ? '0 1px' : 0,
-          }}>{part.value}</span>
-        ))}
-      </div>
-    );
   };
 
   if (loading) return <div style={{ padding: 40, textAlign: 'center', color: '#888' }}>Loading prompts…</div>;
@@ -437,7 +420,7 @@ export default function PromptsSection() {
                 ? 'Running…'
                 : samples.length === 0
                   ? 'Load samples first'
-                  : `Run ${compareMode === 'prompt' ? 'Prompt' : 'Model'} Diff (${selectedIds.size} sample${selectedIds.size !== 1 ? 's' : ''})`}
+                  : `Run ${compareMode === 'prompt' ? 'Prompt' : 'Model'} Compare (${selectedIds.size} sample${selectedIds.size !== 1 ? 's' : ''})`}
             </button>
           )}
 
@@ -451,7 +434,6 @@ export default function PromptsSection() {
           {results && (
             <div>
               <div style={{ fontSize: 12, fontWeight: 700, marginBottom: 12, color: '#555' }}>
-                {results.suite_name} &nbsp;·&nbsp;
                 <span style={{ color: '#4CAF50' }}>{results.saved_label}</span>
                 {' → '}
                 <span style={{ color: '#FF00AE' }}>{results.draft_label}</span>
@@ -459,43 +441,35 @@ export default function PromptsSection() {
 
               {results.results.map((r: any, i: number) => (
                 <div key={i} style={{ marginBottom: 20, border: '1px solid #EEE', borderRadius: 8, overflow: 'hidden' }}>
-                  {/* Sample label */}
                   <div style={{ padding: '8px 12px', background: '#F7F7F5', borderBottom: '1px solid #EEE', fontSize: 11, fontWeight: 600, color: '#555', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                    Sample {i + 1}: {r.query_text.slice(0, 100)}{r.query_text.length > 100 ? '…' : ''}
+                    Sample {i + 1}: {r.query_text.slice(0, 120)}{r.query_text.length > 120 ? '…' : ''}
                   </div>
 
-                  <div style={{ padding: 12 }}>
-                    {(r.saved_error || r.draft_error) ? (
-                      <div style={{ color: '#C00', fontSize: 12 }}>
-                        {r.saved_error && <div><strong>Before error:</strong> {r.saved_error}</div>}
-                        {r.draft_error && <div><strong>After error:</strong> {r.draft_error}</div>}
+                  {(r.saved_error || r.draft_error) ? (
+                    <div style={{ padding: 12, color: '#C00', fontSize: 12 }}>
+                      {r.saved_error && <div><strong>Before:</strong> {r.saved_error}</div>}
+                      {r.draft_error && <div><strong>After:</strong> {r.draft_error}</div>}
+                    </div>
+                  ) : (
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', borderTop: 'none' }}>
+                      <div style={{ padding: 12, borderRight: '1px solid #EEE' }}>
+                        <div style={{ fontSize: 10, fontWeight: 700, color: '#4CAF50', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 6 }}>
+                          Before · {r.saved_latency_ms}ms
+                        </div>
+                        <div style={{ fontSize: 12, lineHeight: 1.6, color: '#1A1A1A', whiteSpace: 'pre-wrap' }}>
+                          {r.saved_output || '—'}
+                        </div>
                       </div>
-                    ) : (
-                      <>
-                        {/* Diff */}
-                        <div style={{ marginBottom: 10 }}>
-                          <div style={{ fontSize: 11, fontWeight: 700, color: '#888', marginBottom: 5, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                            Diff
-                            <span style={{ marginLeft: 8, fontSize: 10, fontWeight: 400, color: '#CCC' }}>
-                              <span style={{ background: '#D4EDDA', padding: '1px 4px', borderRadius: 2 }}>added</span>
-                              {' '}
-                              <span style={{ background: '#F8D7DA', padding: '1px 4px', borderRadius: 2, textDecoration: 'line-through' }}>removed</span>
-                            </span>
-                          </div>
-                          <div style={{ padding: 10, background: '#FAFAFA', borderRadius: 5, border: '1px solid #EEE', maxHeight: 220, overflowY: 'auto' }}>
-                            {renderDiff(r.saved_output || '', r.draft_output || '')}
-                          </div>
+                      <div style={{ padding: 12 }}>
+                        <div style={{ fontSize: 10, fontWeight: 700, color: '#FF00AE', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 6 }}>
+                          After · {r.draft_latency_ms}ms
                         </div>
-
-                        {/* Metrics */}
-                        <div style={{ display: 'flex', gap: 8, fontSize: 11, color: '#AAA' }}>
-                          <span>Before: {r.saved_latency_ms}ms · {r.saved_tokens} tok</span>
-                          <span>·</span>
-                          <span>After: {r.draft_latency_ms}ms · {r.draft_tokens} tok</span>
+                        <div style={{ fontSize: 12, lineHeight: 1.6, color: '#1A1A1A', whiteSpace: 'pre-wrap' }}>
+                          {r.draft_output || '—'}
                         </div>
-                      </>
-                    )}
-                  </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
