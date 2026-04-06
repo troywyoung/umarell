@@ -1,3 +1,4 @@
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -18,6 +19,16 @@ class Settings(BaseSettings):
     admin_email: str = ""  # Set to your Google account email for master admin access
     railway_staging_deploy_hook: str = ""  # Railway deploy webhook URL for staging service
     supadata_api_key: str = ""  # Supadata API key for YouTube transcript fallback
+
+    @field_validator("database_url", mode="before")
+    @classmethod
+    def fix_postgres_url(cls, v: str) -> str:
+        """Convert Railway's postgres:// or postgresql:// URLs to the asyncpg driver format."""
+        if v.startswith("postgres://"):
+            return v.replace("postgres://", "postgresql+asyncpg://", 1)
+        if v.startswith("postgresql://"):
+            return v.replace("postgresql://", "postgresql+asyncpg://", 1)
+        return v
 
 
 settings = Settings()
