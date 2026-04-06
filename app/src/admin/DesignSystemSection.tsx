@@ -352,7 +352,7 @@ export default function DesignSystemSection() {
           display: 'flex',
           flexDirection: 'column',
           background: '#F8F8F8',
-          overflow: 'hidden',
+          minHeight: 0,
         }}
       >
         {/* Preview Mode Toggle */}
