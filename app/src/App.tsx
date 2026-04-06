@@ -519,8 +519,8 @@ function AudioTake({ src, btnColor = "#2C5ABA", durationSecs = 0 }: { src: strin
 
 
 function timeAgo(iso: string) {
-  // Ensure UTC parsing — append Z if no timezone offset present
-  const normalized = /[Z+\-]\d*$/.test(iso.trim()) ? iso : iso + "Z";
+  // Ensure UTC parsing — handle bare timestamps (append Z) and +HH:MM offset from Postgres
+  const normalized = /Z$|[+-]\d{2}:\d{2}$/.test(iso.trim()) ? iso : iso.trim() + "Z";
   const diff = Date.now() - new Date(normalized).getTime();
   const m = Math.floor(diff / 60_000);
   if (m < 1) return "just now";
