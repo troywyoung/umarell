@@ -24,7 +24,6 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
   const [error, setError] = useState<string | null>(null);
   const [deploymentTriggered, setDeploymentTriggered] = useState(false);
   const [saveType, setSaveType] = useState<'draft' | 'deploy' | null>(null);
-  const [previewMode, setPreviewMode] = useState<'draft' | 'comparison'>('draft');
   const [previewObservations, setPreviewObservations] = useState<Observation[]>([]);
   const [loadingObservations, setLoadingObservations] = useState(false);
 
@@ -594,49 +593,17 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
           {/* Preview Header */}
           <div
             style={{
-              padding: '12px 20px',
+              padding: 20,
               borderBottom: '1px solid #DDD',
               background: '#FFF',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
             }}
           >
             <h3 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: '#1A1A1A' }}>
-              Live Preview
+              Draft Preview
             </h3>
-            <div style={{ display: 'flex', gap: 8 }}>
-              <button
-                onClick={() => setPreviewMode('draft')}
-                style={{
-                  padding: '6px 12px',
-                  background: previewMode === 'draft' ? '#FF00AE' : '#F0F0ED',
-                  color: previewMode === 'draft' ? '#FFF' : '#1A1A1A',
-                  border: 'none',
-                  borderRadius: 6,
-                  fontWeight: 600,
-                  fontSize: 12,
-                  cursor: 'pointer',
-                }}
-              >
-                Draft
-              </button>
-              <button
-                onClick={() => setPreviewMode('comparison')}
-                style={{
-                  padding: '6px 12px',
-                  background: previewMode === 'comparison' ? '#FF00AE' : '#F0F0ED',
-                  color: previewMode === 'comparison' ? '#FFF' : '#1A1A1A',
-                  border: 'none',
-                  borderRadius: 6,
-                  fontWeight: 600,
-                  fontSize: 12,
-                  cursor: 'pointer',
-                }}
-              >
-                Compare
-              </button>
-            </div>
+            <p style={{ margin: '4px 0 0', fontSize: 12, color: '#888' }}>
+              See your design changes in feed context
+            </p>
           </div>
 
           {/* Preview Content */}
@@ -658,8 +625,6 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
               <PreviewPane
                 tokens={debouncedPreviewTokens}
                 observations={previewObservations}
-                mode={previewMode}
-                productionTokens={savedTokens}
               />
             )}
           </div>

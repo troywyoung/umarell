@@ -4,15 +4,13 @@ import type { Observation } from '../types';
 interface PreviewPaneProps {
   tokens: Record<string, string>;
   observations: Observation[];
-  mode: 'draft' | 'comparison';
-  productionTokens?: Record<string, string>;
 }
 
 /**
  * Live preview pane that renders Umarell components with design tokens applied.
  * Uses iframe isolation to prevent token bleed into parent app.
  */
-export default function PreviewPane({ tokens, observations, mode, productionTokens }: PreviewPaneProps) {
+export default function PreviewPane({ tokens, observations }: PreviewPaneProps) {
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const [iframeReady, setIframeReady] = useState(false);
 
@@ -64,12 +62,8 @@ export default function PreviewPane({ tokens, observations, mode, productionToke
     const root = iframe.contentDocument.getElementById('preview-root');
     if (!root) return;
 
-    if (mode === 'draft') {
-      renderDraftPreview(root, tokens, observations);
-    } else {
-      renderComparisonPreview(root, tokens, productionTokens || {}, observations);
-    }
-  }, [iframeReady, tokens, observations, mode, productionTokens]);
+    renderDraftPreview(root, tokens, observations);
+  }, [iframeReady, tokens, observations]);
 
   return (
     <div style={{ height: '100%', overflow: 'hidden' }}>
@@ -96,7 +90,11 @@ function renderDraftPreview(
   observations: Observation[]
 ) {
   const cssVars = tokensToCSS(tokens);
-  const obs = observations[0]; // Use first observation as preview content
+
+  // Render multiple observations to show feed page context
+  const observationsHTML = observations.length > 0
+    ? observations.map(obs => renderObservationCard(obs)).join('')
+    : renderObservationCard(); // Show sample if no observations
 
   root.innerHTML = `
     <style>
@@ -108,6 +106,25 @@ function renderDraftPreview(
         padding: 20px;
         background: var(--light-background);
         min-height: 100vh;
+      }
+
+      .page-header {
+        max-width: var(--max-content-width);
+        margin: 0 auto 24px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .page-title {
+        font-size: calc(var(--base-font-size) * 1.5);
+        font-weight: var(--bold-font-weight);
+        color: var(--dark-text);
+        margin-bottom: 4px;
+      }
+
+      .page-subtitle {
+        font-size: var(--base-font-size);
+        color: var(--secondary-text);
       }
 
       .observation-card {
@@ -183,233 +200,15 @@ function renderDraftPreview(
     </style>
 
     <div class="preview-container">
-      ${renderObservationCard(obs)}
+      <div class="page-header">
+        <div class="page-title">Your Observations</div>
+        <div class="page-subtitle">Recent research and briefings</div>
+      </div>
+      ${observationsHTML}
     </div>
   `;
 }
 
-/**
- * Render side-by-side comparison
- */
-function renderComparisonPreview(
-  root: HTMLElement,
-  draftTokens: Record<string, string>,
-  productionTokens: Record<string, string>,
-  observations: Observation[]
-) {
-  const draftCSS = tokensToCSS(draftTokens, 'draft');
-  const prodCSS = tokensToCSS(productionTokens, 'prod');
-  const obs = observations[0];
-
-  root.innerHTML = `
-    <style>
-      .comparison-container {
-        display: flex;
-        min-height: 100vh;
-      }
-
-      .comparison-pane {
-        flex: 1;
-        overflow: auto;
-        position: relative;
-      }
-
-      .comparison-label {
-        position: sticky;
-        top: 0;
-        background: rgba(0,0,0,0.8);
-        color: white;
-        padding: 8px 12px;
-        font-size: 12px;
-        font-weight: 700;
-        text-align: center;
-        z-index: 10;
-      }
-
-      .divider {
-        width: 2px;
-        background: #DDD;
-        flex-shrink: 0;
-      }
-
-      ${draftCSS}
-      ${prodCSS}
-
-      .preview-container {
-        padding: 20px;
-        min-height: calc(100vh - 32px);
-      }
-
-      .draft-pane .preview-container {
-        background: var(--draft-light-background);
-      }
-
-      .prod-pane .preview-container {
-        background: var(--prod-light-background);
-      }
-
-      .observation-card {
-        border-radius: 8px;
-        padding: 12px;
-        margin-bottom: 16px;
-        max-width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .draft-pane .observation-card {
-        background: var(--draft-card-background);
-        box-shadow: var(--draft-card-shadow);
-        border-radius: var(--draft-border-radius);
-        padding: var(--draft-base-padding);
-      }
-
-      .prod-pane .observation-card {
-        background: var(--prod-card-background);
-        box-shadow: var(--prod-card-shadow);
-        border-radius: var(--prod-border-radius);
-        padding: var(--prod-base-padding);
-      }
-
-      .thesis {
-        margin-bottom: 12px;
-        line-height: 1.4;
-      }
-
-      .draft-pane .thesis {
-        font-size: calc(var(--draft-base-font-size) * 1.2);
-        font-weight: var(--draft-bold-font-weight);
-        color: var(--draft-dark-text);
-      }
-
-      .prod-pane .thesis {
-        font-size: calc(var(--prod-base-font-size) * 1.2);
-        font-weight: var(--prod-bold-font-weight);
-        color: var(--prod-dark-text);
-      }
-
-      .summary {
-        line-height: 1.6;
-        margin-bottom: 16px;
-      }
-
-      .draft-pane .summary {
-        font-size: var(--draft-base-font-size);
-        color: var(--draft-secondary-text);
-      }
-
-      .prod-pane .summary {
-        font-size: var(--prod-base-font-size);
-        color: var(--prod-secondary-text);
-      }
-
-      .button {
-        color: white;
-        border: none;
-        cursor: pointer;
-      }
-
-      .draft-pane .button {
-        background: var(--draft-button-color);
-        border-radius: var(--draft-border-radius);
-        padding: var(--draft-base-padding);
-        font-size: var(--draft-base-font-size);
-        font-weight: var(--draft-bold-font-weight);
-      }
-
-      .prod-pane .button {
-        background: var(--prod-button-color);
-        border-radius: var(--prod-border-radius);
-        padding: var(--prod-base-padding);
-        font-size: var(--prod-base-font-size);
-        font-weight: var(--prod-bold-font-weight);
-      }
-
-      .secondary-section {
-        margin-top: 12px;
-      }
-
-      .draft-pane .secondary-section {
-        background: var(--draft-secondary-background);
-        border-radius: var(--draft-border-radius);
-        padding: var(--draft-base-padding);
-      }
-
-      .prod-pane .secondary-section {
-        background: var(--prod-secondary-background);
-        border-radius: var(--prod-border-radius);
-        padding: var(--prod-base-padding);
-      }
-
-      .section-title {
-        margin-bottom: 8px;
-      }
-
-      .draft-pane .section-title {
-        font-size: var(--draft-base-font-size);
-        font-weight: var(--draft-bold-font-weight);
-        color: var(--draft-dark-text);
-      }
-
-      .prod-pane .section-title {
-        font-size: var(--prod-base-font-size);
-        font-weight: var(--prod-bold-font-weight);
-        color: var(--prod-dark-text);
-      }
-
-      .bullet-list {
-        list-style: none;
-        padding: 0;
-      }
-
-      .bullet-list li {
-        padding: 4px 0;
-        padding-left: 20px;
-        position: relative;
-      }
-
-      .draft-pane .bullet-list li {
-        font-size: var(--draft-base-font-size);
-        color: var(--draft-dark-text);
-      }
-
-      .draft-pane .bullet-list li:before {
-        content: "•";
-        position: absolute;
-        left: 8px;
-        color: var(--draft-button-color);
-      }
-
-      .prod-pane .bullet-list li {
-        font-size: var(--prod-base-font-size);
-        color: var(--prod-dark-text);
-      }
-
-      .prod-pane .bullet-list li:before {
-        content: "•";
-        position: absolute;
-        left: 8px;
-        color: var(--prod-button-color);
-      }
-    </style>
-
-    <div class="comparison-container">
-      <div class="comparison-pane prod-pane">
-        <div class="comparison-label">PRODUCTION</div>
-        <div class="preview-container">
-          ${renderObservationCard(obs)}
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="comparison-pane draft-pane">
-        <div class="comparison-label">DRAFT</div>
-        <div class="preview-container">
-          ${renderObservationCard(obs)}
-        </div>
-      </div>
-    </div>
-  `;
-}
 
 /**
  * Convert token object to CSS custom properties

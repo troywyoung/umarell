@@ -18,7 +18,6 @@ export default function DesignSystemSection() {
   const [saving, setSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saved' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
-  const [previewMode, setPreviewMode] = useState<'draft' | 'comparison'>('draft');
   const [previewObservations, setPreviewObservations] = useState<Observation[]>([]);
   const [loadingObservations, setLoadingObservations] = useState(false);
 
@@ -355,7 +354,7 @@ export default function DesignSystemSection() {
           minHeight: 0,
         }}
       >
-        {/* Preview Mode Toggle */}
+        {/* Preview Header */}
         <div
           style={{
             padding: 20,
@@ -363,80 +362,23 @@ export default function DesignSystemSection() {
             background: '#FFF',
           }}
         >
-          <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
-            <button
-              onClick={() => setPreviewMode('draft')}
-              style={{
-                padding: '8px 16px',
-                background: previewMode === 'draft' ? '#FF00AE' : '#F0F0ED',
-                color: previewMode === 'draft' ? '#FFF' : '#1A1A1A',
-                border: 'none',
-                borderRadius: 6,
-                fontWeight: 600,
-                fontSize: 13,
-                cursor: 'pointer',
-              }}
-            >
-              Draft Preview
-            </button>
-            <button
-              onClick={() => setPreviewMode('comparison')}
-              style={{
-                padding: '8px 16px',
-                background: previewMode === 'comparison' ? '#FF00AE' : '#F0F0ED',
-                color: previewMode === 'comparison' ? '#FFF' : '#1A1A1A',
-                border: 'none',
-                borderRadius: 6,
-                fontWeight: 600,
-                fontSize: 13,
-                cursor: 'pointer',
-              }}
-            >
-              Before / After
-            </button>
-          </div>
-          <p style={{ margin: 0, fontSize: 12, color: '#888' }}>
-            See your changes in real-time
+          <h2 style={{ margin: 0, fontSize: 16, fontWeight: 700 }}>Draft Preview</h2>
+          <p style={{ margin: '4px 0 0', fontSize: 12, color: '#888' }}>
+            See your design changes in feed context
           </p>
         </div>
 
         {/* Preview Content */}
-        <div style={{ flex: 1, overflowY: 'auto', padding: 20 }}>
+        <div style={{ flex: 1, overflowY: 'auto' }}>
           {loadingObservations ? (
             <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>
               Loading preview content...
             </div>
-          ) : previewMode === 'draft' ? (
+          ) : (
             <PreviewPane
               tokens={debouncedPreviewTokens}
               observations={previewObservations}
-              mode="draft"
             />
-          ) : (
-            <div style={{ display: 'flex', gap: 20 }}>
-              <div style={{ flex: 1 }}>
-                <h3 style={{ margin: '0 0 16px', fontSize: 14, fontWeight: 700 }}>
-                  Current (Saved)
-                </h3>
-                <PreviewPane
-                  tokens={savedTokens}
-                  observations={previewObservations}
-                  mode="comparison"
-                  productionTokens={savedTokens}
-                />
-              </div>
-              <div style={{ flex: 1 }}>
-                <h3 style={{ margin: '0 0 16px', fontSize: 14, fontWeight: 700 }}>
-                  Draft (Editing)
-                </h3>
-                <PreviewPane
-                  tokens={debouncedPreviewTokens}
-                  observations={previewObservations}
-                  mode="comparison"
-                  productionTokens={savedTokens}
-                />
-              </div>
-            </div>
           )}
         </div>
       </div>
