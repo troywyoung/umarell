@@ -2148,21 +2148,23 @@ async def get_prompt_samples(
         raise HTTPException(403, "Admin access required")
     try:
         limit = max(1, min(limit, 10))
+        # Raw SQL — bypasses ORM column mapping entirely, works regardless of schema state
         result = await db.execute(
-            select(Observation.id, Observation.raw_input, Observation.thesis, Observation.created_at)
-            .where(Observation.raw_input.isnot(None))
-            .where(Observation.raw_input != "")
-            .order_by(Observation.created_at.desc())
-            .limit(limit)
+            text(
+                "SELECT id, raw_input, thesis, created_at FROM observations"
+                " WHERE raw_input IS NOT NULL AND raw_input != ''"
+                " ORDER BY created_at DESC LIMIT :lim"
+            ),
+            {"lim": limit},
         )
-        rows = result.all()
+        rows = result.mappings().all()
         return [
             {
-                "id": str(row.id),
-                "label": (row.raw_input[:80] + "…") if len(row.raw_input) > 80 else row.raw_input,
-                "text": row.raw_input,
-                "thesis": row.thesis or "",
-                "created_at": row.created_at.isoformat() if row.created_at else None,
+                "id": str(row["id"]),
+                "label": (row["raw_input"][:80] + "…") if len(row["raw_input"]) > 80 else row["raw_input"],
+                "text": row["raw_input"],
+                "thesis": row["thesis"] or "",
+                "created_at": row["created_at"].isoformat() if row["created_at"] else None,
             }
             for row in rows
         ]
@@ -2419,7 +2421,7 @@ async def update_simplified_tokens_endpoint(
             flag_modified(config, "config_data")
         else:
             config = InstanceConfig(
-                instance_id=instance2.id,
+                instance_id=instance.id,
                 config_type="design_tokens",
                 config_data=updated_full
             )

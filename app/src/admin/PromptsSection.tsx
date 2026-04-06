@@ -98,7 +98,10 @@ export default function PromptsSection() {
       const res = await fetch(`${API_BASE}/admin/prompts/samples?limit=5`, {
         headers: { Authorization: `Bearer ${token()}` },
       });
-      if (!res.ok) throw new Error('Failed to load samples');
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}));
+        throw new Error(errData.detail || `HTTP ${res.status}`);
+      }
       const data: Sample[] = await res.json();
       setSamples(data);
       setSelectedIds(new Set(data.map(s => s.id)));
