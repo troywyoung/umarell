@@ -427,10 +427,30 @@ function FlameIcon({ size }: { size: number }) {
         <clipPath id="flame-badge-clip">
           <circle cx="24" cy="24" r="24" />
         </clipPath>
+        <radialGradient id="flame-grad" cx="50%" cy="80%" r="60%">
+          <stop offset="0%" stopColor="#FFB3E6" />
+          <stop offset="45%" stopColor="#FF3DB4" />
+          <stop offset="100%" stopColor="#FF00AE" />
+        </radialGradient>
       </defs>
+      {/* Outer flame — recognizable teardrop/flame silhouette */}
       <path
-        d="M4 48 L4 34 C4 26 10 20 14 16 C16 14 16 10 14 8 C16 6 19 7 20 10 C21 13 20 16 22 18 C23 12 24 6 24 4 C24 6 25 12 26 18 C28 16 27 13 28 10 C29 7 32 6 34 8 C32 10 32 14 34 16 C38 20 44 26 44 34 L44 48 Z"
-        fill="#FF00AE"
+        d="M24 4 C24 4 18 12 16 18 C14 24 16 28 14 32 C12 36 9 38 9 42 C9 45.3 13.5 48 24 48 C34.5 48 39 45.3 39 42 C39 38 36 36 34 32 C32 28 34 24 32 18 C30 12 24 4 24 4 Z"
+        fill="url(#flame-grad)"
+        clipPath="url(#flame-badge-clip)"
+      />
+      {/* Left tongue */}
+      <path
+        d="M24 4 C24 4 14 14 13 22 C12 28 15 30 14 34 C13.2 37 11 39 11 42 C11 43 12 44 13 44.5 C10 42 9 40 9 38 C9 32 14 28 14 22 C14 16 18 8 24 4 Z"
+        fill="#FF69C8"
+        opacity="0.5"
+        clipPath="url(#flame-badge-clip)"
+      />
+      {/* Inner bright core */}
+      <path
+        d="M24 20 C24 20 20 26 20 31 C20 35.4 21.8 38 24 38 C26.2 38 28 35.4 28 31 C28 26 24 20 24 20 Z"
+        fill="#FFD6F0"
+        opacity="0.9"
         clipPath="url(#flame-badge-clip)"
       />
     </svg>
