@@ -129,7 +129,12 @@ async def lifespan(app: FastAPI):
             select(Observation).where(Observation.episode_tag.isnot(None))
         )
         ep_obs = ep_result.scalars().all()
+        import re as _re_startup
         for ep_ob in ep_obs:
+            # Fix missing episode_title: derive from episode_tag slug
+            if not ep_ob.episode_title and ep_ob.episode_tag:
+                ep_ob.episode_title = _re_startup.sub(r"-+", " ", ep_ob.episode_tag).strip().title()
+            # Fix missing episode source URL
             sources = ep_ob.sources or []
             has_episode_source = any(s.get("title") == "episode" for s in sources if isinstance(s, dict))
             if not has_episode_source and ep_ob.raw_input and (

@@ -1156,9 +1156,12 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     </button>
                   </p>
                   <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
-                    {episodeUrl
-                      ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none" }}>{first.episode_title || "Episode"}</a>
-                      : first.episode_title || "Episode"}
+                    {(() => {
+                      const title = first.episode_title || (first.episode_tag ? first.episode_tag.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase()) : null) || "Episode";
+                      return episodeUrl
+                        ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none" }}>{title}</a>
+                        : title;
+                    })()}
                   </p>
                 </div>
                 {/* Episode cards — tighter spacing than regular feed */}
