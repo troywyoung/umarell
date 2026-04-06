@@ -596,6 +596,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   const [expandedTakeText, setExpandedTakeText] = useState<Set<string>>(new Set());
   const [recording, setRecording] = useState<string | null>(null);
   const [recordingSecs, setRecordingSecs] = useState(0);
+  const [showCollectionInfo, setShowCollectionInfo] = useState(false);
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const recordingTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -1100,16 +1101,25 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const first = posts[0];
             const dateStr = new Date(first.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
             const podcastName = first.user_name || null;
+            const episodeUrl = first.episode_url || null;
             const isMobile = window.innerWidth < 600;
             return (
               <div key={`episode-${tag}`} style={{ marginBottom: 14 }}>
                 {/* Episode header */}
                 <div style={{ marginBottom: 6, paddingBottom: 6, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-                  <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1 }}>
+                  <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1, display: "flex", alignItems: "center", gap: 5 }}>
                     {podcastName && (
-                      <><span style={{ color: "var(--color-accent, #FF00AE)" }}>{podcastName} Collection</span><span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>  ·  {dateStr}</span></>
+                      episodeUrl
+                        ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "none" }}>{podcastName} Collection</a>
+                        : <span style={{ color: "var(--color-accent, #FF00AE)" }}>{podcastName} Collection</span>
                     )}
-                    {!podcastName && <span style={{ color: "rgba(255,255,255,0.45)" }}>{dateStr}</span>}
+                    <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>
+                      {podcastName ? "  ·  " : ""}{dateStr}
+                    </span>
+                    <button
+                      onClick={(e) => { e.stopPropagation(); setShowCollectionInfo(true); }}
+                      style={{ background: "none", border: "1px solid rgba(255,255,255,0.25)", borderRadius: "50%", width: 14, height: 14, fontSize: 8, color: "rgba(255,255,255,0.4)", cursor: "pointer", display: "inline-flex", alignItems: "center", justifyContent: "center", padding: 0, lineHeight: 1, flexShrink: 0 }}
+                    >?</button>
                   </p>
                   <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
                     {first.episode_title || "Episode"}
@@ -1134,6 +1144,27 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
           return (
             <>
+              {/* Collection info overlay */}
+              {showCollectionInfo && (
+                <div
+                  onClick={() => setShowCollectionInfo(false)}
+                  style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", zIndex: 1000, display: "flex", alignItems: "center", justifyContent: "center", padding: 24 }}
+                >
+                  <div
+                    onClick={(e) => e.stopPropagation()}
+                    style={{ background: "var(--color-card-bg, #FFF)", borderRadius: 16, padding: 28, maxWidth: 340, width: "100%" }}
+                  >
+                    <p style={{ fontSize: 18, fontWeight: 800, margin: "0 0 12px", color: "var(--color-dark-text, #1A1A1A)", letterSpacing: -0.4, fontFamily: "var(--font-display, 'Besley', serif)" }}>Podcast Collection</p>
+                    <p style={{ fontSize: 14, lineHeight: 1.65, color: "var(--color-secondary-text, #888)", margin: "0 0 20px" }}>
+                      We listened to the episode, pulled out the sharpest takes, and turned them into hot takes you can engage with. Tap any card to dig in.
+                    </p>
+                    <button
+                      onClick={() => setShowCollectionInfo(false)}
+                      style={{ width: "100%", padding: "11px 0", background: "var(--color-accent, #FF00AE)", color: "#FFF", border: "none", borderRadius: 10, fontWeight: 700, fontSize: 14, cursor: "pointer" }}
+                    >Got it</button>
+                  </div>
+                </div>
+              )}
               {/* Topic pills */}
               <div
                   className="topic-pills"

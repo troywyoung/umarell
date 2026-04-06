@@ -97,6 +97,7 @@ async def lifespan(app: FastAPI):
             ("bs_verdict", "TEXT"),
             ("episode_tag", "TEXT"),
             ("episode_title", "TEXT"),
+            ("episode_url", "TEXT"),
             ("category", "TEXT"),
         ]:
             try:
@@ -965,6 +966,7 @@ async def ingest_podcast(
             context=body.podcast_name or None,
             episode_tag=episode_tag,
             episode_title=body.episode_title,
+            episode_url=body.url,
         )
         db.add(obs)
         await db.commit()
@@ -1087,6 +1089,7 @@ async def post_podcast_takes(
             context=body.podcast_name or None,
             episode_tag=episode_tag,
             episode_title=body.episode_title,
+            episode_url=body.url,
         )
         db.add(obs)
         await db.commit()
