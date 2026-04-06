@@ -586,9 +586,19 @@ Use the FULL range. Don't default to 55–65 for everything in the middle.
 Hyperbole for effect is fine — score the underlying claim, not the literal wording.
 If an image is provided, use it as direct evidence for the claim.
 
+Also score BRAZENESS (0–100): how bold, contrarian, or provocative is this take vs. conventional wisdom?
+- 0–20: Safe, obvious, widely accepted — no one would push back
+- 21–40: Mildly opinionated, some would disagree
+- 41–60: Genuinely contested — challenges a common belief
+- 61–80: Bold and contrarian — most people would be surprised or skeptical
+- 81–100: Maximally provocative — challenges deeply held consensus, will make people stop scrolling
+
+Brazeness is about NERVE, not novelty. A well-known fact is 0 brazen even if obscure. A direct challenge to something most people believe is highly brazen.
+
 Return a JSON object with exactly these keys:
 {{
   "score": <integer 0-100>,
+  "brazen_score": <integer 0-100>,
   "tags": ["2-4 short topic tags"],
   "evidence_type": "<one of: Empirical | Observational | Anecdotal | Speculative>",
   "category": "<one of: Politics | Business | Media | AI & Tech | Health & Science | Entertainment | Sports | History | Other>"

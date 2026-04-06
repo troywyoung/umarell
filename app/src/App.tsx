@@ -420,55 +420,66 @@ function getScoreTier(v: number): { label: string } {
   return { label: "Undeniable" };
 }
 
-function ScoreBadge({ value, size = "md", dark = false, animate = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean; animate?: boolean }) {
+function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean; animate?: boolean; isHotTake?: boolean }) {
   if (value == null) return null;
   const target = Math.round(value);
   const accent = getScoreColor(target);
   const dim = size === "sm" ? 40 : size === "lg" ? 48 : 32;
   const fontSize = size === "sm" ? 14 : size === "lg" ? 17 : 11;
+  const flameFontSize = size === "sm" ? 18 : size === "lg" ? 22 : 14;
   const r = (dim - 4) / 2;
   const circ = 2 * Math.PI * r;
+  const PINK = "#FF00AE";
 
   // Animation state
   const [displayVal, setDisplayVal] = useState(animate ? 0 : target);
   const [animPct, setAnimPct] = useState(animate ? 0 : target / 100);
+  const [showFlame, setShowFlame] = useState(!animate && isHotTake);
   const animRef = useRef<number | null>(null);
   const startRef = useRef<number | null>(null);
 
   useEffect(() => {
-    if (!animate) { setDisplayVal(target); setAnimPct(target / 100); return; }
-    setDisplayVal(0); setAnimPct(0);
+    if (!animate) { setDisplayVal(target); setAnimPct(target / 100); setShowFlame(isHotTake); return; }
+    setDisplayVal(0); setAnimPct(0); setShowFlame(false);
     startRef.current = null;
     const duration = 1440;
     const tick = (ts: number) => {
       if (!startRef.current) startRef.current = ts;
       const elapsed = ts - startRef.current;
       const progress = Math.min(elapsed / duration, 1);
-      // ease-out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
       setDisplayVal(Math.round(eased * target));
       setAnimPct(eased * target / 100);
-      if (progress < 1) animRef.current = requestAnimationFrame(tick);
+      if (progress < 1) {
+        animRef.current = requestAnimationFrame(tick);
+      } else if (isHotTake) {
+        // Roll-up complete — pause then reveal flame
+        setTimeout(() => setShowFlame(true), 300);
+      }
     };
     animRef.current = requestAnimationFrame(tick);
     return () => { if (animRef.current) cancelAnimationFrame(animRef.current); };
-  }, [animate, target]);
+  }, [animate, target, isHotTake]);
 
-  const currentColor = animate ? getScoreColor(displayVal) : accent;
-  const pct = animate ? animPct : target / 100;
+  const currentColor = showFlame ? PINK : (animate ? getScoreColor(displayVal) : accent);
+  const pct = showFlame ? 1 : (animate ? animPct : target / 100);
 
   return (
     <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
-      <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)" }}>
+      <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)", transition: showFlame ? "stroke 0.4s ease" : "none" }}>
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" ? 4.4 : 3.4} />
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" ? 4.4 : 3.4}
-          strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round" />
+          strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round"
+          style={{ transition: showFlame ? "stroke 0.4s ease, stroke-dasharray 0.4s ease" : "none" }} />
       </svg>
       <div style={{
         position: "absolute", inset: 0, display: "flex", flexDirection: "column",
         alignItems: "center", justifyContent: "center",
       }}>
-        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+        {showFlame
+          ? <span style={{ fontSize: flameFontSize, lineHeight: 1, filter: "sepia(1) saturate(10) hue-rotate(290deg)" }}>🔥</span>
+          : <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+        }
       </div>
     </div>
   );
@@ -882,7 +893,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     )}
                     <div style={{ flex: 1 }}>
                       <div style={{ float: "right", marginLeft: 8, marginBottom: 2 }}>
-                        <ScoreBadge value={obs.score} size="sm" dark />
+                        <ScoreBadge value={obs.score} size="sm" dark isHotTake={obs.is_hot_take} />
                       </div>
                       <p style={{
                         fontSize: "var(--font-size-card-headline, 14px)", fontWeight: 700,
@@ -1904,7 +1915,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", flex: "0 0 auto" }}>
-                <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate />
+                <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate isHotTake={obs.is_hot_take} />
                 <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
                   {tier.label}
                 </span>
