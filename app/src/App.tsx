@@ -596,7 +596,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   onRefresh: () => void;
 }) {
   const { config } = useInstanceConfig();
-  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
+  const [selectedTopic, setSelectedTopic] = useState<string | null>("__top__");
   const [jokeMap, setJokeMap] = useState<Record<string, string>>({});
   const [jokeLoading, setJokeLoading] = useState<Set<string>>(new Set());
   const [yourTakeInput, setYourTakeInput] = useState<Set<string>>(new Set());
