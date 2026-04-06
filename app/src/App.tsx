@@ -1118,8 +1118,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     </span>
                     <button
                       onClick={(e) => { e.stopPropagation(); setShowCollectionInfo(true); }}
-                      style={{ background: "none", border: "1px solid rgba(255,255,255,0.25)", borderRadius: "50%", width: 14, height: 14, fontSize: 8, color: "rgba(255,255,255,0.4)", cursor: "pointer", display: "inline-flex", alignItems: "center", justifyContent: "center", padding: 0, lineHeight: 1, flexShrink: 0 }}
-                    >?</button>
+                      style={{ background: "none", border: "none", borderRadius: "50%", width: 28, height: 28, fontSize: 9, color: "rgba(255,255,255,0.4)", cursor: "pointer", display: "inline-flex", alignItems: "center", justifyContent: "center", padding: 0, lineHeight: 1, flexShrink: 0, margin: -7, WebkitTapHighlightColor: "transparent" }}
+                      aria-label="What is this?"
+                    >
+                      <span style={{ border: "1px solid rgba(255,255,255,0.25)", borderRadius: "50%", width: 14, height: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>?</span>
+                    </button>
                   </p>
                   <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
                     {first.episode_title || "Episode"}
@@ -1152,9 +1155,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 >
                   <div
                     onClick={(e) => e.stopPropagation()}
-                    style={{ background: "var(--color-card-bg, #FFF)", borderRadius: 16, padding: 28, maxWidth: 340, width: "100%" }}
+                    style={{ background: "var(--color-card-bg, #FFF)", borderRadius: 16, padding: "24px 20px", maxWidth: 340, width: "100%", boxSizing: "border-box" }}
                   >
-                    <p style={{ fontSize: 18, fontWeight: 800, margin: "0 0 12px", color: "var(--color-dark-text, #1A1A1A)", letterSpacing: -0.4, fontFamily: "var(--font-display, 'Besley', serif)" }}>Podcast Collection</p>
+                    <p style={{ fontSize: 17, fontWeight: 800, margin: "0 0 12px", color: "var(--color-dark-text, #1A1A1A)", letterSpacing: -0.3 }}>Podcast Collection</p>
                     <p style={{ fontSize: 14, lineHeight: 1.65, color: "var(--color-secondary-text, #888)", margin: "0 0 20px" }}>
                       We listened to the episode, pulled out the sharpest takes, and turned them into hot takes you can engage with. Tap any card to dig in.
                     </p>
