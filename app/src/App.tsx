@@ -834,13 +834,14 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const engagementBoost = 1 + (takes * 0.2) + (challenges * 0.5);
             return (o.score || 0) * engagementBoost / Math.pow(hoursAgo + 2, 0.8);
           };
+          const pinnedFirst = (arr: Observation[]) => [...arr].sort((a, b) => (b.pinned ? 1 : 0) - (a.pinned ? 1 : 0));
           const filteredPosts = selectedTopic === "__top__"
             ? [...topLevel].sort((a, b) => rankScore(b) - rankScore(a))
             : !selectedTopic || selectedTopic === "__all__"
-              ? topLevel
+              ? pinnedFirst(topLevel)
               : selectedTopic === "PvA"
-                ? topLevel.filter(o => !!o.episode_tag)
-                : topLevel.filter(o => (o.tags || []).includes(selectedTopic));
+                ? pinnedFirst(topLevel.filter(o => !!o.episode_tag))
+                : pinnedFirst(topLevel.filter(o => (o.tags || []).includes(selectedTopic)));
 
           const renderCard = (obs: Observation) => {
             let bullets: string[] = [];
