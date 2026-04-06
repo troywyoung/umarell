@@ -177,7 +177,8 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
     }
 
     if (isTrackingToken(key)) {
-      const parsed = parseFloat(currentValue) || -0.3;
+      const parsed = parseFloat(currentValue) || -1.5;
+      const displayFont = editedTokens['display_font_family'] || "'Besley', serif";
       return (
         <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
           <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
@@ -185,18 +186,18 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
             <span style={{ fontSize: 13, fontWeight: 700, color: '#FF00AE', fontVariantNumeric: 'tabular-nums' }}>{parsed.toFixed(1)}px</span>
           </div>
           <input
-            type="range" min={-3} max={3} step={0.1}
+            type="range" min={-6} max={3} step={0.1}
             value={parsed}
             onChange={e => handleTokenChange(key, `${parseFloat(e.target.value).toFixed(1)}px`)}
             style={{ width: '100%', accentColor: '#FF00AE' }}
           />
           <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 10, color: '#CCC', marginTop: -2 }}>
-            <span>tight −3px</span><span>normal 0</span><span>loose +3px</span>
+            <span>tight −6px</span><span>normal 0</span><span>loose +3px</span>
           </div>
-          <div style={{ padding: '10px 12px', borderRadius: 6, background: '#12102B', border: '1px solid #EEE' }}>
-            <div style={{ fontSize: 18, fontWeight: 700, color: '#FFF', lineHeight: 1.3, letterSpacing: `${parsed}px` }}>
-              hottake
-            </div>
+          <div style={{ padding: '12px 16px', borderRadius: 6, background: '#12102B', border: '1px solid #EEE' }}>
+            <span style={{ fontSize: 27, fontWeight: 900, color: '#FFF', lineHeight: 1, fontFamily: displayFont, letterSpacing: `${parsed}px` }}>
+              <span style={{ color: '#FF00AE' }}>hot</span>take
+            </span>
           </div>
         </div>
       );

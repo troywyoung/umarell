@@ -767,7 +767,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
       {/* Branding */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "44px 0 2px" }}>
-        <span style={{ fontSize: 27, fontWeight: 900, letterSpacing: -1.5, fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}><span style={{ color: "var(--color-accent, #FF00AE)" }}>hot</span><span style={{ color: "#FFF" }}>take</span></span>
+        <span style={{ fontSize: 27, fontWeight: 900, letterSpacing: "var(--letter-spacing-headline, -1.5px)", fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}><span style={{ color: "var(--color-accent, #FF00AE)" }}>hot</span><span style={{ color: "#FFF" }}>take</span></span>
       </div>
 
       <style>{`
@@ -866,7 +866,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       </div>
                       <p style={{
                         fontSize: "var(--font-size-card-headline, 14px)", fontWeight: 700,
-                        color: "var(--color-dark-text, #1A1A1A)", lineHeight: 1.2, margin: 0, letterSpacing: "var(--letter-spacing-headline, -0.3px)",
+                        color: "var(--color-dark-text, #1A1A1A)", lineHeight: 1.2, margin: 0, letterSpacing: -0.3,
                       }}>
                         {obs.thesis || obs.raw_input}
                       </p>
@@ -1966,7 +1966,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   onClick={isOwner ? () => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); } : undefined}
                   style={{
                     fontSize: "var(--font-size-detail-headline, 20px)", fontWeight: 700, color: "#FFF", lineHeight: 1.4,
-                    letterSpacing: "var(--letter-spacing-headline, -0.3px)", margin: 0,
+                    letterSpacing: -0.4, margin: 0,
                     cursor: isOwner ? "pointer" : "default",
                   }}
                 >{obs.thesis}</h1>
@@ -2490,7 +2490,7 @@ export default function App() {
   
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 16, position: "relative", zIndex: 1 }}>
           <BurstIcon size={130} />
-          <span style={{ fontSize: 25, fontWeight: 900, letterSpacing: -1.5, color: "#FFF", marginTop: -18, fontFamily: "var(--font-display, 'Besley', serif)" }}>
+          <span style={{ fontSize: 25, fontWeight: 900, letterSpacing: "var(--letter-spacing-headline, -1.5px)", color: "#FFF", marginTop: -18, fontFamily: "var(--font-display, 'Besley', serif)" }}>
             <span style={{ color: "var(--color-accent, #FF00AE)" }}>hot</span>take
           </span>
         </div>

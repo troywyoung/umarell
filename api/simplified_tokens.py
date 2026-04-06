@@ -22,7 +22,7 @@ SIMPLIFIED_TOKENS = {
     "display_font_family": "'Besley', serif",
     "card_headline_size": "14px",
     "detail_headline_size": "20px",
-    "headline_letter_spacing": "-0.3px",
+    "headline_letter_spacing": "-1.5px",
     "feed_background_image": "",
 }
 
@@ -85,7 +85,7 @@ TOKEN_DESCRIPTIONS = {
     "display_font_family": "Font for headlines and the logo (e.g. \"'Playfair Display', serif\")",
     "card_headline_size": "Thesis text size on collapsed feed cards (e.g. 14px)",
     "detail_headline_size": "Thesis h1 size on the expanded detail view (e.g. 20px)",
-    "headline_letter_spacing": "Letter spacing on headline text — negative tightens, positive loosens (e.g. -0.3px)",
+    "headline_letter_spacing": "Letter spacing on the logo — negative tightens, positive loosens (e.g. -1.5px)",
     "feed_background_image": "URL to a repeating background tile image (leave empty for solid color)",
 }
 
