@@ -110,33 +110,86 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
     ['primary_accent', 'button_color', 'dark_background',
      'card_background', 'collection_card_background', 'dark_text', 'secondary_text'].includes(key);
 
+  const isFontToken = (key: string) => key === 'body_font_family' || key === 'display_font_family';
+
+  const BODY_FONTS: { label: string; value: string }[] = [
+    { label: 'System UI (default)',    value: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" },
+    { label: 'Inter',                  value: "'Inter', sans-serif" },
+    { label: 'Helvetica Neue',         value: "'Helvetica Neue', Helvetica, Arial, sans-serif" },
+    { label: 'Georgia (serif)',        value: "Georgia, 'Times New Roman', serif" },
+    { label: 'Libre Baskerville',      value: "'Libre Baskerville', serif" },
+  ];
+
+  const DISPLAY_FONTS: { label: string; value: string }[] = [
+    { label: 'Besley (default)',       value: "'Besley', serif" },
+    { label: 'Playfair Display',       value: "'Playfair Display', serif" },
+    { label: 'DM Serif Display',       value: "'DM Serif Display', serif" },
+    { label: 'Fraunces',               value: "'Fraunces', serif" },
+    { label: 'Libre Baskerville',      value: "'Libre Baskerville', serif" },
+    { label: 'Georgia',                value: "Georgia, serif" },
+  ];
+
   const hasUnsavedChanges = () =>
     Object.keys(editedTokens).some(key => editedTokens[key] !== savedTokens[key]);
 
-  const renderTokenField = (key: string) => (
-    <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-      <label style={{ fontSize: 12, fontWeight: 600, color: '#1A1A1A' }}>
-        {data!.labels[key]}
-      </label>
-      <div style={{ fontSize: 11, color: '#888', marginBottom: 2 }}>{data!.descriptions[key]}</div>
-      <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-        {isColorToken(key) && (
+  const renderTokenField = (key: string) => {
+    const currentValue = editedTokens[key] ?? '';
+
+    if (isFontToken(key)) {
+      const options = key === 'body_font_family' ? BODY_FONTS : DISPLAY_FONTS;
+      const previewText = key === 'display_font_family' ? 'The Quick Brown Fox' : 'The quick brown fox jumps over the lazy dog';
+      const matched = options.find(o => o.value === currentValue);
+      return (
+        <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+          <label style={{ fontSize: 12, fontWeight: 600, color: '#1A1A1A' }}>{data!.labels[key]}</label>
+          <select
+            value={matched ? currentValue : '__custom__'}
+            onChange={e => {
+              if (e.target.value !== '__custom__') handleTokenChange(key, e.target.value);
+            }}
+            style={{ padding: '6px 8px', fontSize: 13, border: '1px solid #CCC', borderRadius: 4, background: '#FFF' }}
+          >
+            {options.map(o => (
+              <option key={o.value} value={o.value}>{o.label}</option>
+            ))}
+            {!matched && <option value="__custom__">Custom: {currentValue}</option>}
+          </select>
+          {/* Live preview */}
+          <div style={{ padding: '8px 10px', border: '1px solid #EEE', borderRadius: 4, background: '#FAFAFA' }}>
+            <div style={{ fontSize: 10, color: '#AAA', marginBottom: 3 }}>Preview</div>
+            <div style={{ fontFamily: currentValue, fontSize: key === 'display_font_family' ? 20 : 14, color: '#1A1A1A', lineHeight: 1.4 }}>
+              {previewText}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    return (
+      <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+        <label style={{ fontSize: 12, fontWeight: 600, color: '#1A1A1A' }}>
+          {data!.labels[key]}
+        </label>
+        <div style={{ fontSize: 11, color: '#888', marginBottom: 2 }}>{data!.descriptions[key]}</div>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+          {isColorToken(key) && (
+            <input
+              type="color"
+              value={currentValue}
+              onChange={(e) => handleTokenChange(key, e.target.value)}
+              style={{ width: 36, height: 30, border: '1px solid #CCC', borderRadius: 4, cursor: 'pointer', padding: 2 }}
+            />
+          )}
           <input
-            type="color"
-            value={editedTokens[key]}
+            type="text"
+            value={currentValue}
             onChange={(e) => handleTokenChange(key, e.target.value)}
-            style={{ width: 36, height: 30, border: '1px solid #CCC', borderRadius: 4, cursor: 'pointer', padding: 2 }}
+            style={{ flex: 1, padding: '6px 8px', fontSize: 13, fontFamily: 'monospace', border: '1px solid #CCC', borderRadius: 4 }}
           />
-        )}
-        <input
-          type="text"
-          value={editedTokens[key]}
-          onChange={(e) => handleTokenChange(key, e.target.value)}
-          style={{ flex: 1, padding: '6px 8px', fontSize: 13, fontFamily: 'monospace', border: '1px solid #CCC', borderRadius: 4 }}
-        />
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   if (loading) return <div style={{ padding: 40, textAlign: 'center', color: '#888' }}>Loading design tokens...</div>;
   if (!data) return (
