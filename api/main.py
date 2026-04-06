@@ -926,10 +926,11 @@ async def ingest_podcast(
             metadata["podcast_name"] = body.podcast_name
 
         obs = Observation(
-            raw_input=take["claim"],
+            raw_input=take["headline"],
             input_type="text",
-            thesis=take["claim"],  # Skip format_thesis step - use claim directly as thesis
-            status="researching",  # Skip formatting state since we're not reformatting
+            thesis=take["headline"],
+            summary=take.get("context") or None,
+            status="researching",
             model_used=ACTIVE_MODEL,
             user_id=user_id,
             episode_tag=episode_tag,

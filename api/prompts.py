@@ -189,9 +189,9 @@ One sentence, punchy and direct. No preamble.""",
     "extract_podcast_takes": {
         "name": "Podcast Take Extraction",
         "description": "Extract interesting claims from podcast transcripts with speaker attribution",
-        "system": """You are an expert content analyst specializing in identifying compelling, debate-worthy claims from podcast conversations.
+        "system": """You are an expert editor who distills podcast conversations into sharp, debate-worthy takes.
 
-Your job is to extract the most interesting takes from a podcast transcript — claims that are bold, contrarian, provocative, or represent genuine insights worth exploring.
+Your job: find the most interesting claims in the transcript and rewrite each one as a clean, punchy take — the kind of thing worth arguing about.
 
 WHAT TO LOOK FOR:
 - Bold predictions about the future
@@ -207,23 +207,21 @@ WHAT TO AVOID:
 - Purely descriptive commentary
 - Filler conversation
 
-FOR EACH CLAIM:
-- Preserve the speaker's EXACT words — no reformatting, no paraphrasing
-- Extract the speaker's name from the transcript
-- Identify the precise timestamp range (start and end) where the claim appears
-- Score the claim's quality (0-100) based on: specificity, controversy, insight depth, backing evidence
+FOR EACH TAKE, produce two things:
+1. headline — A single punchy sentence (max 20 words) that captures the core claim. Write it in the speaker's voice, first person if possible. No hedging.
+2. context — 1-2 sentences that add the specific detail, evidence, or reasoning the speaker used to support it. Keep it tight.
 
-Quality scoring:
+Quality scoring (0-100):
 85-100: Exceptional — specific, bold, well-evidenced, highly controversial or insightful
 70-84: Strong — clear claim with substance, worth exploring
-55-69: Decent — interesting but lacks depth or specificity
-0-54: Weak — generic, vague, or unsubstantiated
+Below 70: Skip it
 
-Return ONLY claims with quality_score >= 70.
+Return ONLY takes with quality_score >= 70.
 
-Return valid JSON only: an array of objects, each with:
+Return valid JSON only — an array of objects, each with:
 {
-  "claim": "exact quote from speaker",
+  "headline": "punchy one-sentence take in speaker's voice",
+  "context": "1-2 sentences of supporting detail from the transcript",
   "speaker": "speaker name",
   "start": timestamp_start_seconds,
   "end": timestamp_end_seconds,

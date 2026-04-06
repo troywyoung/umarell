@@ -217,9 +217,12 @@ Only include claims with quality_score >= 70."""
         for take in takes:
             if not isinstance(take, dict):
                 continue
-            if not all(f in take for f in ["claim", "speaker", "start", "end", "quality_score"]):
+            # Support both new format (headline/context) and legacy (claim)
+            headline = take.get("headline") or take.get("claim", "")
+            context = take.get("context", "")
+            if not all(f in take for f in ["speaker", "start", "end", "quality_score"]):
                 continue
-            if not isinstance(take["claim"], str) or not take["claim"].strip():
+            if not isinstance(headline, str) or not headline.strip():
                 continue
             if not isinstance(take["speaker"], str) or not take["speaker"].strip():
                 continue
@@ -234,7 +237,8 @@ Only include claims with quality_score >= 70."""
             if take["start"] < 0 or take["end"] < 0 or take["end"] <= take["start"]:
                 continue
             filtered.append({
-                "claim": take["claim"].strip(),
+                "headline": headline.strip(),
+                "context": context.strip() if isinstance(context, str) else "",
                 "speaker": take["speaker"].strip(),
                 "start": float(take["start"]),
                 "end": float(take["end"]),
