@@ -872,17 +872,17 @@ async def ingest_podcast(
     # Import here to avoid circular dependencies
     from transcript_service import fetch_youtube_transcript, extract_podcast_takes, TranscriptError
 
-    # Fetch transcript with timeout (fast validation)
+    # Fetch transcript (Supadata can take 10-30s for audio transcription)
     try:
         import asyncio
         transcript = await asyncio.wait_for(
             asyncio.to_thread(fetch_youtube_transcript, body.url),
-            timeout=5.0
+            timeout=120.0
         )
     except asyncio.TimeoutError:
         raise HTTPException(
             400,
-            "Transcript fetch timed out after 5 seconds. The video may be too long or YouTube's API is slow. Try again or use a different video."
+            "Transcript fetch timed out after 120 seconds. Try a shorter video or check that it's publicly accessible."
         )
     except TranscriptError as e:
         raise HTTPException(400, str(e))
@@ -952,6 +952,123 @@ async def ingest_podcast(
         "observations": created,
         "count": len(created),
         "transcript_length": len(transcript["text"]),
+    }
+
+
+class PodcastTakeItem(BaseModel):
+    headline: str
+    context: str = ""
+    speaker: str
+    start: float
+    end: float
+    quality_score: int
+
+
+class PodcastPostTakes(BaseModel):
+    url: str
+    episode_title: str
+    episode_tag: str | None = None
+    podcast_name: str | None = None
+    takes: list[PodcastTakeItem]
+    admin_key: str | None = None
+
+
+@app.post("/podcasts/preview")
+async def preview_podcast_takes(
+    body: PodcastIngest,
+    request: Request,
+    current_user: User | None = Depends(get_current_user),
+):
+    """Fetch transcript and extract takes — returns takes for preview without creating observations."""
+    if not current_user and not body.admin_key:
+        raise HTTPException(401, "Not authenticated")
+    if body.admin_key and body.admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    from transcript_service import fetch_youtube_transcript, extract_podcast_takes, TranscriptError
+    import asyncio
+
+    try:
+        transcript = await asyncio.wait_for(
+            asyncio.to_thread(fetch_youtube_transcript, body.url),
+            timeout=120.0
+        )
+    except asyncio.TimeoutError:
+        raise HTTPException(400, "Transcript fetch timed out after 120 seconds.")
+    except TranscriptError as e:
+        raise HTTPException(400, str(e))
+    except Exception as e:
+        raise HTTPException(500, f"Unexpected error fetching transcript: {str(e)}")
+
+    try:
+        takes = await extract_podcast_takes(transcript, count=body.count)
+    except Exception as e:
+        raise HTTPException(500, f"Failed to extract takes: {str(e)}")
+
+    return {
+        "takes": takes,
+        "transcript_length": len(transcript["text"]),
+        "transcript_source": transcript.get("source", "unknown"),
+    }
+
+
+@app.post("/podcasts/post-takes", status_code=202)
+async def post_podcast_takes(
+    body: PodcastPostTakes,
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
+    current_user: User | None = Depends(get_current_user),
+):
+    """Create observations from pre-selected takes (second step after preview)."""
+    if not current_user and not body.admin_key:
+        raise HTTPException(401, "Not authenticated")
+    if body.admin_key and body.admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+    if not body.takes:
+        raise HTTPException(400, "No takes provided")
+
+    import asyncio, re as _re
+    episode_tag = body.episode_tag
+    if not episode_tag:
+        episode_tag = _re.sub(r"[^a-z0-9]+", "-", body.episode_title.lower()).strip("-")[:100]
+
+    user_id = current_user.id if current_user else None
+    instance_key = await get_instance_key(request)
+    created = []
+
+    for take in body.takes:
+        metadata = {
+            "speaker": take.speaker,
+            "timestamp": take.start,
+            "end_timestamp": take.end,
+            "quality_score": take.quality_score,
+        }
+        if body.podcast_name:
+            metadata["podcast_name"] = body.podcast_name
+
+        obs = Observation(
+            raw_input=take.headline,
+            input_type="text",
+            thesis=take.headline,
+            summary=take.context or None,
+            status="researching",
+            model_used=ACTIVE_MODEL,
+            user_id=user_id,
+            episode_tag=episode_tag,
+            episode_title=body.episode_title,
+        )
+        db.add(obs)
+        await db.commit()
+        await db.refresh(obs)
+        asyncio.create_task(_run_steel_man_only(obs.id, instance_key))
+        created.append(obs.id)
+
+    return {
+        "episode_tag": episode_tag,
+        "episode_title": body.episode_title,
+        "podcast_name": body.podcast_name or "Podcast",
+        "observations": created,
+        "count": len(created),
     }
 
 
