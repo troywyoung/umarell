@@ -101,9 +101,13 @@ async def lifespan(app: FastAPI):
             ("episode_tag", "TEXT"),
             ("episode_title", "TEXT"),
             ("category", "TEXT"),
+            # Added later — must be here or Railway PostgreSQL won't have them
+            ("pinned", "BOOLEAN DEFAULT false"),
+            ("brazen_score", "REAL"),
+            ("is_hot_take", "BOOLEAN DEFAULT false"),
         ]:
             try:
-                await db.execute(text(f"ALTER TABLE observations ADD COLUMN {col} {definition}"))
+                await db.execute(text(f"ALTER TABLE observations ADD COLUMN IF NOT EXISTS {col} {definition}"))
                 await db.commit()
             except Exception:
                 await db.rollback()
@@ -114,11 +118,16 @@ async def lifespan(app: FastAPI):
             .where(Observation.status.in_(["formatting", "researching"]))
             .values(status="error", error_detail="Pipeline interrupted by server restart")
         )
-        # Fix any NULL pinned values so model_validate doesn't fail
+        # Fix any NULL pinned/is_hot_take values so model_validate doesn't fail
         await db.execute(
             update(Observation)
             .where(Observation.pinned.is_(None))
             .values(pinned=False)
+        )
+        await db.execute(
+            update(Observation)
+            .where(Observation.is_hot_take.is_(None))
+            .values(is_hot_take=False)
         )
         await db.commit()
 
