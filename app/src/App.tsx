@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, Fragment, lazy, Suspense } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import { GoogleLogin } from "@react-oauth/google";
 import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
@@ -2372,7 +2373,7 @@ export default function App() {
   const [outputKey, setOutputKey] = useState(0);
   const [challengingObs, setChallengingObs] = useState<Observation | null>(null);
   const [maintenance, setMaintenance] = useState(false);
-  const [showAdminPanel, setShowAdminPanel] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`${API}/health`).then(r => r.json()).then(d => { if (d.maintenance) setMaintenance(true); }).catch(() => {});
@@ -2536,27 +2537,12 @@ export default function App() {
   }
 
   return (
-    <>
-      <HomeView
-        observations={observations}
-        loading={loading}
-        onCapture={() => navigateTo("capture")}
-        onSelect={(o) => navigateTo("output", o)}
-        authUser={authUser}
-        onSignOut={handleSignOut}
-        onAbout={() => setView("about")}
-        onOpenAdmin={() => setShowAdminPanel(true)}
-      />
-      {showAdminPanel && (
+    <Routes>
+      <Route path="/admin" element={
         <Suspense fallback={
           <div style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: 'rgba(0,0,0,0.7)',
-            zIndex: 999,
+            minHeight: '100vh',
+            background: '#12102B',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -2564,9 +2550,21 @@ export default function App() {
             <div style={{ color: '#FFF', fontSize: 16 }}>Loading admin...</div>
           </div>
         }>
-          <AdminV2 onClose={() => setShowAdminPanel(false)} />
+          <AdminV2 onClose={() => navigate('/')} />
         </Suspense>
-      )}
-    </>
+      } />
+      <Route path="*" element={
+        <HomeView
+          observations={observations}
+          loading={loading}
+          onCapture={() => navigateTo("capture")}
+          onSelect={(o) => navigateTo("output", o)}
+          authUser={authUser}
+          onSignOut={handleSignOut}
+          onAbout={() => setView("about")}
+          onOpenAdmin={() => navigate('/admin')}
+        />
+      } />
+    </Routes>
   );
 }
