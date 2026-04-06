@@ -849,6 +849,7 @@ class PodcastIngest(BaseModel):
     count: int = 5
     author_name: str = "Podcast"
     admin_key: str | None = None
+    model: str | None = None  # override extraction model (e.g. 'gemini-2.5-flash')
 
 
 @app.get("/podcasts/metadata")
@@ -920,7 +921,7 @@ async def ingest_podcast(
 
     # Extract takes
     try:
-        takes = await extract_podcast_takes(transcript, count=body.count)
+        takes = await extract_podcast_takes(transcript, count=body.count, model=body.model or None)
     except ValueError as e:
         raise HTTPException(500, f"Failed to extract takes: {str(e)}")
     except Exception as e:
@@ -1032,7 +1033,7 @@ async def preview_podcast_takes(
         raise HTTPException(500, f"Unexpected error fetching transcript: {str(e)}")
 
     try:
-        takes = await extract_podcast_takes(transcript, count=body.count)
+        takes = await extract_podcast_takes(transcript, count=body.count, model=body.model or None)
     except Exception as e:
         raise HTTPException(500, f"Failed to extract takes: {str(e)}")
 

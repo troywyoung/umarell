@@ -165,7 +165,7 @@ def fetch_youtube_transcript(url: str) -> dict:
 
 # ─── Take extraction ──────────────────────────────────────────────────────────
 
-async def extract_podcast_takes(transcript: dict, count: int = 5) -> list[dict]:
+async def extract_podcast_takes(transcript: dict, count: int = 5, model: str | None = None) -> list[dict]:
     """Extract interesting claims from a podcast transcript using LLM analysis."""
     from pipeline import _call
     from prompts import get_prompt
@@ -194,12 +194,14 @@ Return a JSON array of the top {count} claims, each with: claim, speaker, start,
 Only include claims with quality_score >= 70."""
 
     try:
+        effective_model = model or prompt_config.get("model")
         response = await _call(
             system=prompt_config["system"],
             user=user_prompt,
             max_tokens=prompt_config["max_tokens"],
             retries=5,
             use_search=False,
+            model=effective_model,
         )
         if isinstance(response, tuple):
             response = response[0]

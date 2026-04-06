@@ -18,6 +18,7 @@ export default function PodcastIngestionForm() {
   const [podcastName, setPodcastName] = useState('');
   const [episodeTag, setEpisodeTag] = useState('');
   const [count, setCount] = useState(5);
+  const [extractionModel, setExtractionModel] = useState('');
   const [fetchingMeta, setFetchingMeta] = useState(false);
 
   const [step, setStep] = useState<Step>('form');
@@ -64,6 +65,7 @@ export default function PodcastIngestionForm() {
           podcast_name: podcastName.trim() || undefined,
           episode_tag: episodeTag.trim() || undefined,
           count,
+          model: extractionModel || undefined,
         }),
       });
       if (!res.ok) {
@@ -112,7 +114,7 @@ export default function PodcastIngestionForm() {
 
   const reset = () => {
     setStep('form');
-    setUrl(''); setEpisodeTitle(''); setPodcastName(''); setEpisodeTag(''); setCount(5);
+    setUrl(''); setEpisodeTitle(''); setPodcastName(''); setEpisodeTag(''); setCount(5); setExtractionModel('');
     setTakes([]); setSelectedIndices(new Set()); setResult(null); setError(null);
   };
 
@@ -289,6 +291,24 @@ export default function PodcastIngestionForm() {
             <label style={labelStyle}>Number of Takes</label>
             <input type="number" value={count} onChange={e => setCount(parseInt(e.target.value, 10))}
               min={1} max={20} style={inputStyle} />
+          </div>
+        </div>
+
+        <div>
+          <label style={labelStyle}>Extraction Model</label>
+          <select
+            value={extractionModel}
+            onChange={e => setExtractionModel(e.target.value)}
+            style={{ ...inputStyle, background: '#FFF' }}
+          >
+            <option value="">Default (from prompt config)</option>
+            <option value="gemini-2.5-flash">Gemini 2.5 Flash — fast &amp; cheap</option>
+            <option value="gemini-2.0-flash-exp">Gemini 2.0 Flash (Exp)</option>
+            <option value="claude-3-5-sonnet-20241022">Claude 3.5 Sonnet — balanced</option>
+            <option value="claude-opus-4-5-20251101">Claude Opus 4.5 — highest quality</option>
+          </select>
+          <div style={{ fontSize: 11, color: '#AAA', marginTop: 4 }}>
+            Extraction reads the full transcript — Flash is 10× cheaper with minimal quality loss.
           </div>
         </div>
 

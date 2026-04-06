@@ -24,6 +24,7 @@ const KEY_PROMPT_ORDER = [
   'generate_steel_man',       // 2. The Take — all text under Hot Take
   'generate_counterpoint',    // 3. Devil's Advocate — all text in that section
   'generate_pva_take',        // 4. PvA voice reaction — least critical
+  'extract_podcast_takes',    // 5. Podcast extraction — reads full transcript
 ];
 
 const MODELS = [
@@ -300,6 +301,7 @@ export default function PromptsSection() {
               generate_steel_man: 'All text under Hot Take',
               generate_counterpoint: "All text under Devil's Advocate",
               generate_pva_take: 'PvA podcast voice reaction',
+              extract_podcast_takes: 'Reads full transcript — set model here',
             };
             const isSelected = selectedKey === key;
             return (
