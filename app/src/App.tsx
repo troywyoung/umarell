@@ -1,10 +1,12 @@
-import { useState, useEffect, useRef, Fragment } from "react";
+import { useState, useEffect, useRef, Fragment, lazy, Suspense } from "react";
 import { GoogleLogin } from "@react-oauth/google";
 import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
 import { API } from "./config";
-import AdminPanel from "./AdminPanel";
 import { useInstanceConfig } from "./contexts/InstanceContext";
+
+// Lazy load admin interface to reduce main bundle size
+const AdminV2 = lazy(() => import("./admin/AdminV2"));
 
 function authHeaders(): Record<string, string> {
   const token = localStorage.getItem("sm_token");
@@ -2545,7 +2547,26 @@ export default function App() {
         onAbout={() => setView("about")}
         onOpenAdmin={() => setShowAdminPanel(true)}
       />
-      {showAdminPanel && <AdminPanel onClose={() => setShowAdminPanel(false)} />}
+      {showAdminPanel && (
+        <Suspense fallback={
+          <div style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0,0,0,0.7)',
+            zIndex: 999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}>
+            <div style={{ color: '#FFF', fontSize: 16 }}>Loading admin...</div>
+          </div>
+        }>
+          <AdminV2 onClose={() => setShowAdminPanel(false)} />
+        </Suspense>
+      )}
     </>
   );
 }
