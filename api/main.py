@@ -98,7 +98,6 @@ async def lifespan(app: FastAPI):
             ("episode_tag", "TEXT"),
             ("episode_title", "TEXT"),
             ("category", "TEXT"),
-            ("user_name", "TEXT"),
         ]:
             try:
                 await db.execute(text(f"ALTER TABLE observations ADD COLUMN {col} {definition}"))
@@ -160,6 +159,35 @@ async def lifespan(app: FastAPI):
             engine, _ = get_instance_engine("hot-takes")
             async with engine.begin() as conn:
                 await conn.run_sync(Base.metadata.create_all)
+        else:
+            # Instance already exists — refresh any default (non-user-modified) prompts
+            # so code changes to PROMPTS take effect on redeploy
+            from prompts import PROMPTS as _PROMPTS
+            result2 = await db.execute(
+                select(InstancePrompt).where(
+                    InstancePrompt.instance_id == hot_takes.id,
+                    InstancePrompt.is_default == True,  # noqa: E712
+                )
+            )
+            existing_defaults = {p.prompt_key: p for p in result2.scalars().all()}
+            for prompt_key, prompt_config in _PROMPTS.items():
+                if prompt_key in existing_defaults:
+                    p = existing_defaults[prompt_key]
+                    p.system = prompt_config["system"]
+                    p.max_tokens = prompt_config["max_tokens"]
+                    p.name = prompt_config["name"]
+                    p.description = prompt_config["description"]
+                else:
+                    db.add(InstancePrompt(
+                        instance_id=hot_takes.id,
+                        prompt_key=prompt_key,
+                        name=prompt_config["name"],
+                        description=prompt_config["description"],
+                        system=prompt_config["system"],
+                        max_tokens=prompt_config["max_tokens"],
+                        is_default=True,
+                    ))
+            await db.commit()
     yield
 
 
@@ -444,8 +472,8 @@ async def _attach_user_names(db: AsyncSession, observations: list[Observation]) 
                 "tags": [],
                 "episode_tag": o.episode_tag,
             }
-        # Episode posts show podcast name (stored in user_name) or "PvA" fallback; regular posts show the user's name
-        d["user_name"] = (o.user_name or "PvA") if o.episode_tag else (user_map.get(o.user_id) if o.user_id else "Anonymous")
+        # Episode posts show podcast name (stored in context field) or "PvA" fallback; regular posts show the user's name
+        d["user_name"] = (o.context or "PvA") if o.episode_tag else (user_map.get(o.user_id) if o.user_id else "Anonymous")
         # Parse pva_take from briefing field
         if o.briefing:
             try:
@@ -934,7 +962,7 @@ async def ingest_podcast(
             status="researching",
             model_used=ACTIVE_MODEL,
             user_id=user_id,
-            user_name=body.podcast_name or None,
+            context=body.podcast_name or None,
             episode_tag=episode_tag,
             episode_title=body.episode_title,
         )
@@ -1056,7 +1084,7 @@ async def post_podcast_takes(
             status="researching",
             model_used=ACTIVE_MODEL,
             user_id=user_id,
-            user_name=body.podcast_name or None,
+            context=body.podcast_name or None,
             episode_tag=episode_tag,
             episode_title=body.episode_title,
         )
@@ -2374,14 +2402,13 @@ async def update_simplified_tokens_endpoint(
         # Apply simplified changes to full structure
         updated_full = apply_simplified_tokens_to_full(update.tokens, full_tokens)
 
-        instance2 = result.scalar_one_or_none()
-        if not instance2:
+        if not instance:
             raise HTTPException(404, "Instance not found")
 
         # Update or create config
         cfg2 = await db.execute(
             select(InstanceConfig)
-            .where(InstanceConfig.instance_id == instance2.id)
+            .where(InstanceConfig.instance_id == instance.id)
             .where(InstanceConfig.config_type == "design_tokens")
         )
         config = cfg2.scalar_one_or_none()
