@@ -1133,9 +1133,13 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       : first.episode_title || "Episode"}
                   </p>
                 </div>
-                {/* Episode cards */}
-                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-                  {posts.map(obs => renderPost(obs))}
+                {/* Episode cards — tighter spacing than regular feed */}
+                <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+                  {posts.map(obs => (
+                    <div key={obs.id} style={{ marginBottom: 7 }}>
+                      {renderCard(obs)}
+                    </div>
+                  ))}
                 </div>
               </div>
             );
