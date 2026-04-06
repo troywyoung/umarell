@@ -92,6 +92,28 @@ export default function PromptsSection() {
     }
   };
 
+  const resetPrompt = async () => {
+    if (!selectedKey || !confirm('Reset this prompt to its built-in default?')) return;
+    setSaving(true);
+    setSaveMsg(null);
+    try {
+      const res = await fetch(`${API_BASE}/admin/prompts/${selectedKey}/reset`, {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${token()}` },
+      });
+      if (!res.ok) throw new Error('Failed to reset');
+      const data = await res.json();
+      await loadPrompts();
+      setEditingPrompt({ ...data.prompt });
+      setSaveMsg('Reset to default');
+      setTimeout(() => setSaveMsg(null), 2500);
+    } catch (e: any) {
+      setSaveMsg(e.message);
+    } finally {
+      setSaving(false);
+    }
+  };
+
   const loadSamples = async () => {
     setLoadingSamples(true);
     try {
@@ -293,17 +315,31 @@ export default function PromptsSection() {
                 </div>
               )}
 
-              <button
-                onClick={savePrompt}
-                disabled={saving}
-                style={{
-                  width: '100%', padding: '9px 0', background: '#FF00AE', color: '#FFF',
-                  border: 'none', borderRadius: 7, fontWeight: 700, fontSize: 13,
-                  cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1,
-                }}
-              >
-                {saving ? 'Saving…' : 'Save Prompt'}
-              </button>
+              <div style={{ display: 'flex', gap: 8 }}>
+                <button
+                  onClick={savePrompt}
+                  disabled={saving}
+                  style={{
+                    flex: 1, padding: '9px 0', background: '#FF00AE', color: '#FFF',
+                    border: 'none', borderRadius: 7, fontWeight: 700, fontSize: 13,
+                    cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1,
+                  }}
+                >
+                  {saving ? 'Saving…' : 'Save Prompt'}
+                </button>
+                <button
+                  onClick={resetPrompt}
+                  disabled={saving}
+                  style={{
+                    padding: '9px 14px', background: '#F0F0ED', color: '#888',
+                    border: 'none', borderRadius: 7, fontWeight: 600, fontSize: 12,
+                    cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1,
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  Reset
+                </button>
+              </div>
             </div>
           </>
         )}

@@ -1635,6 +1635,28 @@ async def update_prompt_config(
     return {"status": "updated", "prompt": await get_prompt(prompt_key)}
 
 
+@app.post("/admin/prompts/{prompt_key}/reset")
+async def reset_prompt_to_default(
+    prompt_key: str,
+    current_user: User = Depends(require_user)
+):
+    """Reset a prompt back to its built-in default."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+    from prompts import PROMPTS
+    default = PROMPTS.get(prompt_key)
+    if not default:
+        raise HTTPException(404, "No default found for this prompt key")
+    await update_prompt(prompt_key, {
+        "name": default["name"],
+        "description": default.get("description", ""),
+        "system": default["system"],
+        "max_tokens": default["max_tokens"],
+        "model": default.get("model"),
+    })
+    return {"status": "reset", "prompt": await get_prompt(prompt_key)}
+
+
 @app.post("/admin/prompts/compare")
 async def compare_prompts(
     comparison: PromptComparisonRequest,
