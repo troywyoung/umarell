@@ -308,7 +308,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Typography</h3>
         <div style={gridStyle}>
-          {['body_font_family', 'display_font_family', 'card_headline_size', 'detail_headline_size', 'base_font_size', 'bold_font_weight']
+          {['body_font_family', 'display_font_family', 'card_headline_size', 'detail_headline_size', 'base_font_size']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>
