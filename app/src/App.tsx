@@ -851,7 +851,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 }}
               >
                 {obs.user_name && (
-                  <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: isCollection ? "var(--color-accent, #FF00AE)" : "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
+                  <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: isCollection ? "var(--color-accent, #FF00AE)" : "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1, display: "flex", alignItems: "center", gap: 4 }}>
+                    <span>{obs.user_name}</span>
+                    {obs.episode_tag && (() => { const eps = topLevel.filter((o: Observation) => o.episode_tag === obs.episode_tag); const idx = eps.findIndex((o: Observation) => o.id === obs.id) + 1; return idx > 0 ? <span style={{ fontWeight: 400, color: "#999", opacity: 0.6 }}>({idx}/{eps.length})</span> : null; })()}
+                  </p>
                 )}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: obs.user_name ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
                     {obs.image_data && (
@@ -1786,7 +1789,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
-          {obs.episode_tag && (() => { const eps = observations.filter(o => o.episode_tag === obs.episode_tag); const idx = eps.findIndex(o => o.id === obs.id) + 1; return idx > 0 ? <span style={{ fontSize: 12, fontWeight: 400, color: "#AAA" }}>({idx}/{eps.length})</span> : null; })()}
           {isOwner && (
             deleteConfirm ? (
               <>
