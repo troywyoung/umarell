@@ -172,6 +172,7 @@ function applyDesignTokens(tokens: InstanceConfig["design_tokens"]) {
     if (tokens.typography.sizes?.base) root.style.setProperty("--font-size-base", tokens.typography.sizes.base);
     if ((tokens.typography.sizes as any)?.card_headline) root.style.setProperty("--font-size-card-headline", (tokens.typography.sizes as any).card_headline);
     if ((tokens.typography.sizes as any)?.detail_headline) root.style.setProperty("--font-size-detail-headline", (tokens.typography.sizes as any).detail_headline);
+    if ((tokens.typography.letter_spacing as any)?.headline) root.style.setProperty("--letter-spacing-headline", (tokens.typography.letter_spacing as any).headline);
     if (tokens.typography.weights?.bold !== undefined) root.style.setProperty("--font-weight-bold", String(tokens.typography.weights.bold));
     // Also update body font directly so all `font-family: inherit` elements pick it up
     document.body.style.fontFamily = tokens.typography.fonts.system;

@@ -22,6 +22,7 @@ SIMPLIFIED_TOKENS = {
     "display_font_family": "'Besley', serif",
     "card_headline_size": "14px",
     "detail_headline_size": "20px",
+    "headline_letter_spacing": "-0.3px",
     "feed_background_image": "",
 }
 
@@ -42,6 +43,7 @@ TOKEN_MAPPINGS = {
     "display_font_family": ["typography", "fonts", "display"],
     "card_headline_size": ["typography", "sizes", "card_headline"],
     "detail_headline_size": ["typography", "sizes", "detail_headline"],
+    "headline_letter_spacing": ["typography", "letter_spacing", "headline"],
     "feed_background_image": ["layout", "feed_bg_image"],
 }
 
@@ -62,6 +64,7 @@ TOKEN_LABELS = {
     "display_font_family": "Display / Headline Font",
     "card_headline_size": "Card Headline Size",
     "detail_headline_size": "Detail Headline Size",
+    "headline_letter_spacing": "Headline Letter Spacing",
     "feed_background_image": "Feed Background Tile (URL)",
 }
 
@@ -82,6 +85,7 @@ TOKEN_DESCRIPTIONS = {
     "display_font_family": "Font for headlines and the logo (e.g. \"'Playfair Display', serif\")",
     "card_headline_size": "Thesis text size on collapsed feed cards (e.g. 14px)",
     "detail_headline_size": "Thesis h1 size on the expanded detail view (e.g. 20px)",
+    "headline_letter_spacing": "Letter spacing on headline text — negative tightens, positive loosens (e.g. -0.3px)",
     "feed_background_image": "URL to a repeating background tile image (leave empty for solid color)",
 }
 

@@ -112,6 +112,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
 
   const isFontToken = (key: string) => key === 'body_font_family' || key === 'display_font_family';
   const isSizeToken = (key: string) => key === 'card_headline_size' || key === 'detail_headline_size';
+  const isTrackingToken = (key: string) => key === 'headline_letter_spacing';
 
   const BODY_FONTS: { label: string; value: string }[] = [
     { label: 'System UI (default)',    value: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" },
@@ -169,6 +170,32 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
           <div style={{ padding: '10px 12px', borderRadius: 6, background: previewBg, border: '1px solid #EEE' }}>
             <div style={{ fontSize: px, fontWeight: 700, color: previewFont, lineHeight: 1.3, letterSpacing: -0.3 }}>
               {previewText}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    if (isTrackingToken(key)) {
+      const parsed = parseFloat(currentValue) || -0.3;
+      return (
+        <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
+            <label style={{ fontSize: 12, fontWeight: 600, color: '#1A1A1A' }}>{data!.labels[key]}</label>
+            <span style={{ fontSize: 13, fontWeight: 700, color: '#FF00AE', fontVariantNumeric: 'tabular-nums' }}>{parsed.toFixed(1)}px</span>
+          </div>
+          <input
+            type="range" min={-3} max={3} step={0.1}
+            value={parsed}
+            onChange={e => handleTokenChange(key, `${parseFloat(e.target.value).toFixed(1)}px`)}
+            style={{ width: '100%', accentColor: '#FF00AE' }}
+          />
+          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 10, color: '#CCC', marginTop: -2 }}>
+            <span>tight −3px</span><span>normal 0</span><span>loose +3px</span>
+          </div>
+          <div style={{ padding: '10px 12px', borderRadius: 6, background: '#12102B', border: '1px solid #EEE' }}>
+            <div style={{ fontSize: 18, fontWeight: 700, color: '#FFF', lineHeight: 1.3, letterSpacing: `${parsed}px` }}>
+              People vs Algorithms
             </div>
           </div>
         </div>
@@ -308,7 +335,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Typography</h3>
         <div style={gridStyle}>
-          {['body_font_family', 'display_font_family', 'card_headline_size', 'detail_headline_size', 'base_font_size']
+          {['body_font_family', 'display_font_family', 'card_headline_size', 'detail_headline_size', 'headline_letter_spacing', 'base_font_size']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>
