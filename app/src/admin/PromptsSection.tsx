@@ -64,7 +64,15 @@ export default function PromptsSection() {
         headers: { Authorization: `Bearer ${token()}` },
       });
       if (!res.ok) throw new Error('Failed to load prompts');
-      setPrompts(await res.json());
+      const data = await res.json();
+      setPrompts(data);
+      // Auto-select first available prompt on initial load
+      setSelectedKey(prev => {
+        if (prev) return prev;
+        const firstKey = KEY_PROMPT_ORDER.find(k => data[k]);
+        if (firstKey) setEditingPrompt({ ...data[firstKey] });
+        return firstKey || null;
+      });
     } catch (e: any) {
       setSaveMsg(e.message);
     } finally {
