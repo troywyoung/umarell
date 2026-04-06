@@ -2191,7 +2191,7 @@ async def get_prompt_samples(
                 "label": (row["raw_input"][:80] + "…") if len(row["raw_input"]) > 80 else row["raw_input"],
                 "text": row["raw_input"],
                 "thesis": row["thesis"] or "",
-                "created_at": row["created_at"].isoformat() if row["created_at"] else None,
+                "created_at": row["created_at"].isoformat() if row["created_at"] and hasattr(row["created_at"], "isoformat") else str(row["created_at"]) if row["created_at"] else None,
             }
             for row in rows
         ]
