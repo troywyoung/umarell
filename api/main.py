@@ -36,7 +36,10 @@ bearer = HTTPBearer(auto_error=False)
 
 
 def _is_admin(user: User) -> bool:
-    return bool(settings.admin_email and user.email and user.email.lower() == settings.admin_email.lower())
+    if not settings.admin_email or not user.email:
+        return False
+    admin_emails = {e.strip().lower() for e in settings.admin_email.split(",") if e.strip()}
+    return user.email.lower() in admin_emails
 
 
 def _make_jwt(user: User) -> str:
