@@ -116,6 +116,22 @@ async def lifespan(app: FastAPI):
         )
         await db.commit()
 
+        # One-time fix: restore YouTube URL as episode source for existing episode posts
+        # that had their sources overwritten by Gemini grounding URLs
+        import json as _startup_json
+        ep_result = await db.execute(
+            select(Observation).where(Observation.episode_tag.isnot(None))
+        )
+        ep_obs = ep_result.scalars().all()
+        for ep_ob in ep_obs:
+            sources = ep_ob.sources or []
+            has_episode_source = any(s.get("title") == "episode" for s in sources if isinstance(s, dict))
+            if not has_episode_source and ep_ob.raw_input and (
+                "youtube.com" in ep_ob.raw_input or "youtu.be" in ep_ob.raw_input
+            ):
+                ep_ob.sources = [{"url": ep_ob.raw_input, "title": "episode"}] + sources
+        await db.commit()
+
         # Seed default "hot-takes" instance if it doesn't exist
         result = await db.execute(select(Instance).where(Instance.key == "hot-takes"))
         hot_takes = result.scalar_one_or_none()
@@ -291,7 +307,9 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             import json as _json
             obs.summary = _json.dumps(steel_man_data)
             if sources:
-                obs.sources = sources
+                # Preserve original episode source (YouTube URL) if present
+                episode_source = next((s for s in (obs.sources or []) if s.get("title") == "episode"), None)
+                obs.sources = ([episode_source] if episode_source else []) + sources
 
             # Build plain text version for metadata scoring
             sm_text = steel_man_data.get("bottom_line", "")
@@ -1157,7 +1175,9 @@ async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-take
             import json as _json
             obs.summary = _json.dumps(steel_man_data)
             if sources:
-                obs.sources = sources
+                # Preserve original episode source (YouTube URL) if present
+                episode_source = next((s for s in (obs.sources or []) if s.get("title") == "episode"), None)
+                obs.sources = ([episode_source] if episode_source else []) + sources
 
             # Build plain text version for metadata scoring
             sm_text = steel_man_data.get("bottom_line", "")

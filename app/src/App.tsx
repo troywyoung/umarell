@@ -1120,7 +1120,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const first = posts[0];
             const dateStr = new Date(first.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
             const podcastName = first.user_name || null;
-            const episodeUrl = first.sources?.[0]?.url || null;
+            const episodeUrl = first.sources?.find((s: {url: string; title: string}) => s.title === "episode")?.url || first.sources?.[0]?.url || null;
             const isMobile = window.innerWidth < 600;
             return (
               <div key={`episode-${tag}`} style={{ marginBottom: 14 }}>
