@@ -98,6 +98,7 @@ async def lifespan(app: FastAPI):
             ("episode_tag", "TEXT"),
             ("episode_title", "TEXT"),
             ("category", "TEXT"),
+            ("user_name", "TEXT"),
         ]:
             try:
                 await db.execute(text(f"ALTER TABLE observations ADD COLUMN {col} {definition}"))
@@ -2117,26 +2118,30 @@ async def get_prompt_samples(
     """Return recent observations to use as live test samples for prompt comparison."""
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
-
-    limit = max(1, min(limit, 10))
-    result = await db.execute(
-        select(Observation)
-        .where(Observation.raw_input.isnot(None))
-        .where(Observation.raw_input != "")
-        .order_by(Observation.created_at.desc())
-        .limit(limit)
-    )
-    obs = result.scalars().all()
-    return [
-        {
-            "id": o.id,
-            "label": (o.raw_input[:80] + "…") if len(o.raw_input) > 80 else o.raw_input,
-            "text": o.raw_input,
-            "thesis": o.thesis or "",
-            "created_at": o.created_at.isoformat() if o.created_at else None,
-        }
-        for o in obs
-    ]
+    try:
+        limit = max(1, min(limit, 10))
+        result = await db.execute(
+            select(Observation.id, Observation.raw_input, Observation.thesis, Observation.created_at)
+            .where(Observation.raw_input.isnot(None))
+            .where(Observation.raw_input != "")
+            .order_by(Observation.created_at.desc())
+            .limit(limit)
+        )
+        rows = result.all()
+        return [
+            {
+                "id": str(row.id),
+                "label": (row.raw_input[:80] + "…") if len(row.raw_input) > 80 else row.raw_input,
+                "text": row.raw_input,
+                "thesis": row.thesis or "",
+                "created_at": row.created_at.isoformat() if row.created_at else None,
+            }
+            for row in rows
+        ]
+    except Exception as e:
+        import traceback
+        print(f"[prompt-samples] error: {traceback.format_exc()}")
+        raise HTTPException(500, f"Failed to load samples: {str(e)}")
 
 
 class SampleComparisonRequest(BaseModel):
@@ -2301,19 +2306,38 @@ async def update_design_token_endpoint(
 
 
 @app.get("/admin/simplified-tokens")
-async def get_simplified_tokens_endpoint(current_user: User = Depends(require_user)):
+async def get_simplified_tokens_endpoint(
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db),
+):
     """Get simplified design tokens for editing (< 15 high-leverage controls)."""
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
-
-    full_tokens = await get_design_tokens()
-    simplified = get_simplified_tokens_from_full(full_tokens)
-
-    return {
-        "tokens": simplified,
-        "labels": TOKEN_LABELS,
-        "descriptions": TOKEN_DESCRIPTIONS
-    }
+    try:
+        from design_tokens import DESIGN_TOKENS
+        # Reuse the shared DB session to avoid connection pool exhaustion
+        result = await db.execute(select(Instance).where(Instance.key == "hot-takes"))
+        instance = result.scalar_one_or_none()
+        full_tokens = DESIGN_TOKENS
+        if instance:
+            cfg = await db.execute(
+                select(InstanceConfig)
+                .where(InstanceConfig.instance_id == instance.id)
+                .where(InstanceConfig.config_type == "design_tokens")
+            )
+            config = cfg.scalar_one_or_none()
+            if config and config.config_data:
+                full_tokens = config.config_data
+        simplified = get_simplified_tokens_from_full(full_tokens)
+        return {
+            "tokens": simplified,
+            "labels": TOKEN_LABELS,
+            "descriptions": TOKEN_DESCRIPTIONS
+        }
+    except Exception as e:
+        import traceback
+        print(f"[design-tokens] error: {traceback.format_exc()}")
+        raise HTTPException(500, f"Failed to load design tokens: {str(e)}")
 
 
 class SimplifiedTokensUpdate(BaseModel):
@@ -2330,53 +2354,68 @@ async def update_simplified_tokens_endpoint(
     """Save simplified tokens and optionally trigger staging deployment."""
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
+    try:
+        from design_tokens import DESIGN_TOKENS
+        # Load current tokens using the shared DB session (avoid extra connection)
+        instance_key = "hot-takes"
+        inst_result = await db.execute(select(Instance).where(Instance.key == instance_key))
+        instance = inst_result.scalar_one_or_none()
+        full_tokens = DESIGN_TOKENS
+        if instance:
+            cfg = await db.execute(
+                select(InstanceConfig)
+                .where(InstanceConfig.instance_id == instance.id)
+                .where(InstanceConfig.config_type == "design_tokens")
+            )
+            existing_config = cfg.scalar_one_or_none()
+            if existing_config and existing_config.config_data:
+                full_tokens = existing_config.config_data
 
-    # Get current full tokens
-    full_tokens = await get_design_tokens()
+        # Apply simplified changes to full structure
+        updated_full = apply_simplified_tokens_to_full(update.tokens, full_tokens)
 
-    # Apply simplified changes to full structure
-    updated_full = apply_simplified_tokens_to_full(update.tokens, full_tokens)
+        instance2 = result.scalar_one_or_none()
+        if not instance2:
+            raise HTTPException(404, "Instance not found")
 
-    # Save to database
-    instance_key = "hot-takes"  # Default instance
-    result = await db.execute(select(Instance).where(Instance.key == instance_key))
-    instance = result.scalar_one_or_none()
-
-    if not instance:
-        raise HTTPException(404, "Instance not found")
-
-    # Update or create config
-    result = await db.execute(
-        select(InstanceConfig)
-        .where(InstanceConfig.instance_id == instance.id)
-        .where(InstanceConfig.config_type == "design_tokens")
-    )
-    config = result.scalar_one_or_none()
-
-    if config:
-        config.config_data = updated_full
-        from sqlalchemy.orm.attributes import flag_modified
-        flag_modified(config, "config_data")
-    else:
-        config = InstanceConfig(
-            instance_id=instance.id,
-            config_type="design_tokens",
-            config_data=updated_full
+        # Update or create config
+        cfg2 = await db.execute(
+            select(InstanceConfig)
+            .where(InstanceConfig.instance_id == instance2.id)
+            .where(InstanceConfig.config_type == "design_tokens")
         )
-        db.add(config)
+        config = cfg2.scalar_one_or_none()
 
-    await db.commit()
+        if config:
+            config.config_data = updated_full
+            from sqlalchemy.orm.attributes import flag_modified
+            flag_modified(config, "config_data")
+        else:
+            config = InstanceConfig(
+                instance_id=instance2.id,
+                config_type="design_tokens",
+                config_data=updated_full
+            )
+            db.add(config)
 
-    # Optionally trigger staging deployment
-    deployment_triggered = False
-    if deploy:
-        deployment_triggered = await trigger_staging_deployment()
+        await db.commit()
 
-    return {
-        "status": "saved",
-        "deployment_triggered": deployment_triggered,
-        "message": "Design tokens saved successfully"
-    }
+        # Optionally trigger staging deployment
+        deployment_triggered = False
+        if deploy:
+            deployment_triggered = await trigger_staging_deployment()
+
+        return {
+            "status": "saved",
+            "deployment_triggered": deployment_triggered,
+            "message": "Design tokens saved successfully"
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        import traceback
+        print(f"[design-tokens-put] error: {traceback.format_exc()}")
+        raise HTTPException(500, f"Failed to save design tokens: {str(e)}")
 
 
 @app.post("/admin/simplified-tokens/revert")
