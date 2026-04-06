@@ -29,18 +29,19 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
   const loadTokens = async () => {
     setLoading(true);
     setError(null);
+    const endpoint = `${API_BASE}/admin/simplified-tokens`;
     try {
       const token = localStorage.getItem('sm_token');
-      const res = await fetch(`${API_BASE}/admin/simplified-tokens`, {
+      const res = await fetch(endpoint, {
         headers: { Authorization: `Bearer ${token}` },
       });
-      if (!res.ok) throw new Error('Failed to load design tokens');
+      if (!res.ok) throw new Error(`HTTP ${res.status} from ${endpoint}`);
       const result = await res.json();
       setData(result);
       setEditedTokens(result.tokens);
       setSavedTokens(result.tokens);
     } catch (err: any) {
-      setError(err.message);
+      setError(`${err.message} (target: ${endpoint})`);
     } finally {
       setLoading(false);
     }
