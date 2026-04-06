@@ -122,12 +122,22 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
   ];
 
   const DISPLAY_FONTS: { label: string; value: string }[] = [
-    { label: 'Besley (default)',       value: "'Besley', serif" },
-    { label: 'Playfair Display',       value: "'Playfair Display', serif" },
-    { label: 'DM Serif Display',       value: "'DM Serif Display', serif" },
-    { label: 'Fraunces',               value: "'Fraunces', serif" },
-    { label: 'Libre Baskerville',      value: "'Libre Baskerville', serif" },
-    { label: 'Georgia',                value: "Georgia, serif" },
+    { label: 'Besley (default)',        value: "'Besley', serif" },
+    { label: 'Playfair Display',        value: "'Playfair Display', serif" },
+    { label: 'DM Serif Display',        value: "'DM Serif Display', serif" },
+    { label: 'Fraunces',                value: "'Fraunces', serif" },
+    { label: 'Libre Baskerville',       value: "'Libre Baskerville', serif" },
+    { label: 'Georgia',                 value: "Georgia, serif" },
+    { label: 'Abril Fatface',           value: "'Abril Fatface', serif" },
+    { label: 'Alfa Slab One',           value: "'Alfa Slab One', serif" },
+    { label: 'Bebas Neue',              value: "'Bebas Neue', sans-serif" },
+    { label: 'Bodoni Moda',             value: "'Bodoni Moda', serif" },
+    { label: 'Cormorant Garamond',      value: "'Cormorant Garamond', serif" },
+    { label: 'Gravitas One',            value: "'Gravitas One', serif" },
+    { label: 'Rozha One',               value: "'Rozha One', serif" },
+    { label: 'Syne',                    value: "'Syne', sans-serif" },
+    { label: 'Ultra',                   value: "'Ultra', serif" },
+    { label: 'Big Shoulders Display',   value: "'Big Shoulders Display', sans-serif" },
   ];
 
   const hasUnsavedChanges = () =>
