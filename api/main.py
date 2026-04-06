@@ -1340,6 +1340,7 @@ class PromptComparisonRequest(BaseModel):
     draft_system: str
     draft_max_tokens: int
     test_query: str
+    preview_model: str | None = None
 
 
 class TestQueryInput(BaseModel):
@@ -1365,6 +1366,7 @@ class BatchComparisonRequest(BaseModel):
     draft_system: str
     draft_max_tokens: int
     suite_id: str
+    preview_model: str | None = None
 
 
 @app.get("/instance/{instance_key}/config")
@@ -1451,11 +1453,11 @@ async def compare_prompts(
     COST_PER_1M_INPUT = 0.075  # Gemini Flash / Claude Haiku input
     COST_PER_1M_OUTPUT = 0.30  # Gemini Flash / Claude Haiku output
 
-    async def call_with_metadata(call_type: str, system: str, user: str, max_tokens: int):
+    async def call_with_metadata(call_type: str, system: str, user: str, max_tokens: int, model: str | None = None):
         try:
             start_time = time.time()
             result = await asyncio.wait_for(
-                _call(system=system, user=user, max_tokens=max_tokens, return_metadata=True),
+                _call(system=system, user=user, max_tokens=max_tokens, return_metadata=True, model=model),
                 timeout=30.0
             )
             latency = time.time() - start_time
@@ -1517,8 +1519,8 @@ async def compare_prompts(
 
     # Run both prompts concurrently
     saved_result, draft_result = await asyncio.gather(
-        call_with_metadata("Saved", saved["system"], comparison.test_query, saved["max_tokens"]),
-        call_with_metadata("Draft", comparison.draft_system, comparison.test_query, comparison.draft_max_tokens),
+        call_with_metadata("Saved", saved["system"], comparison.test_query, saved["max_tokens"], comparison.preview_model),
+        call_with_metadata("Draft", comparison.draft_system, comparison.test_query, comparison.draft_max_tokens, comparison.preview_model),
         return_exceptions=True
     )
 
@@ -1821,11 +1823,11 @@ async def compare_suite(
     COST_PER_1M_OUTPUT = 0.30
 
     # Helper function to call with timeout and metadata
-    async def call_with_metadata(call_type: str, system: str, user: str, max_tokens: int):
+    async def call_with_metadata(call_type: str, system: str, user: str, max_tokens: int, model: str | None = None):
         try:
             start_time = time.time()
             result = await asyncio.wait_for(
-                _call(system=system, user=user, max_tokens=max_tokens, return_metadata=True),
+                _call(system=system, user=user, max_tokens=max_tokens, return_metadata=True, model=model),
                 timeout=30.0
             )
             latency = time.time() - start_time
@@ -1887,8 +1889,8 @@ async def compare_suite(
 
     for query in queries:
         saved_result, draft_result = await asyncio.gather(
-            call_with_metadata("Saved", saved["system"], query.query_text, saved["max_tokens"]),
-            call_with_metadata("Draft", comparison.draft_system, query.query_text, comparison.draft_max_tokens),
+            call_with_metadata("Saved", saved["system"], query.query_text, saved["max_tokens"], comparison.preview_model),
+            call_with_metadata("Draft", comparison.draft_system, query.query_text, comparison.draft_max_tokens, comparison.preview_model),
             return_exceptions=True
         )
 

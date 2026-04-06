@@ -39,6 +39,7 @@ export default function PromptsSection() {
   const [testSuites, setTestSuites] = useState<TestSuite[]>([]);
   const [selectedSuite, setSelectedSuite] = useState<string | null>(null);
   const [batchResults, setBatchResults] = useState<any | null>(null);
+  const [previewModel, setPreviewModel] = useState<string>('');
 
   useEffect(() => {
     loadData();
@@ -125,6 +126,7 @@ export default function PromptsSection() {
           draft_system: editingPrompt.system,
           draft_max_tokens: editingPrompt.max_tokens,
           test_query: testQuery,
+          preview_model: previewModel || undefined,
         }),
       });
       if (!res.ok) {
@@ -161,6 +163,7 @@ export default function PromptsSection() {
           draft_system: editingPrompt.system,
           draft_max_tokens: editingPrompt.max_tokens,
           suite_id: selectedSuite,
+          preview_model: previewModel || undefined,
         }),
       });
       if (!res.ok) {
@@ -255,6 +258,7 @@ export default function PromptsSection() {
                   setComparisonResult(null);
                   setBatchResults(null);
                   setTestQuery('');
+                  setPreviewModel(prompt.model || '');
                 }}
                 style={{
                   padding: 12,
@@ -400,6 +404,34 @@ export default function PromptsSection() {
                   </div>
                   <div style={{ fontSize: 12, marginBottom: 12, color: '#666' }}>
                     Run both versions against the same test query to compare outputs before saving.
+                  </div>
+
+                  {/* Preview Model Selector */}
+                  <div style={{ marginBottom: 12 }}>
+                    <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
+                      Preview Model
+                    </label>
+                    <select
+                      value={previewModel}
+                      onChange={(e) => setPreviewModel(e.target.value)}
+                      style={{
+                        width: '100%',
+                        padding: 8,
+                        fontSize: 13,
+                        border: '1px solid #CCC',
+                        borderRadius: 4,
+                      }}
+                    >
+                      <option value="">Default active model</option>
+                      <option value="claude-sonnet-4-6">Claude Sonnet 4.6</option>
+                      <option value="claude-opus-4-5-20251101">Claude Opus 4.5</option>
+                      <option value="claude-3-5-sonnet-20241022">Claude 3.5 Sonnet</option>
+                      <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
+                      <option value="gemini-2.0-flash-exp">Gemini 2.0 Flash (Exp)</option>
+                    </select>
+                    <div style={{ fontSize: 11, color: '#888', marginTop: 4 }}>
+                      Model to use for comparison preview (doesn't affect saved prompt)
+                    </div>
                   </div>
 
                   {/* Test Suite Selector */}

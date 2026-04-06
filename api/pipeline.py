@@ -75,10 +75,10 @@ def _extract_sources(resp) -> list[dict]:
 
 # ─── Unified _call ────────────────────────────────────────────────────────
 
-async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5, use_search: bool = False, return_metadata: bool = False):
+async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5, use_search: bool = False, return_metadata: bool = False, model: str | None = None):
     if PROVIDER == "gemini":
-        return await _call_gemini(system, user, max_tokens, retries, use_search, return_metadata)
-    result = await _call_anthropic(system, user, max_tokens, retries, return_metadata)
+        return await _call_gemini(system, user, max_tokens, retries, use_search, return_metadata, model)
+    result = await _call_anthropic(system, user, max_tokens, retries, return_metadata, model)
     if return_metadata and use_search:
         # Add empty sources for Anthropic when search is requested but not supported
         if isinstance(result, dict):
@@ -89,10 +89,12 @@ async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5
     return result
 
 
-async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, use_search: bool = False, return_metadata: bool = False):
+async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, use_search: bool = False, return_metadata: bool = False, model: str | None = None):
     tools = []
     if use_search:
         tools = [genai.types.Tool(google_search=genai.types.GoogleSearch())]
+
+    model_to_use = model or GEMINI_MODEL
 
     for attempt in range(retries):
         try:
@@ -106,7 +108,7 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
 
             resp = await asyncio.to_thread(
                 gclient.models.generate_content,
-                model=GEMINI_MODEL,
+                model=model_to_use,
                 contents=user,
                 config=config,
             )
@@ -120,7 +122,7 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
                     "text": text,
                     "input_tokens": input_tokens,
                     "output_tokens": output_tokens,
-                    "model": GEMINI_MODEL
+                    "model": model_to_use
                 }
                 if use_search:
                     sources = _extract_sources(resp)
@@ -142,11 +144,12 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
                 raise
 
 
-async def _call_anthropic(system: str, user: str, max_tokens: int, retries: int, return_metadata: bool = False):
+async def _call_anthropic(system: str, user: str, max_tokens: int, retries: int, return_metadata: bool = False, model: str | None = None):
+    model_to_use = model or CLAUDE_MODEL
     for attempt in range(retries):
         try:
             msg = await aclient.messages.create(
-                model=CLAUDE_MODEL,
+                model=model_to_use,
                 max_tokens=max_tokens,
                 system=system,
                 messages=[{"role": "user", "content": user}],
