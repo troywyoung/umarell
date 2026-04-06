@@ -146,11 +146,14 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
           test_query: testQuery,
         }),
       });
-      if (!res.ok) throw new Error('Failed to run comparison');
+      if (!res.ok) {
+        const errorText = await res.text();
+        throw new Error(`Failed to run comparison: ${errorText}`);
+      }
       const result = await res.json();
       setComparisonResult(result);
     } catch (err: any) {
-      setError(err.message);
+      setError(err.message || 'Network error. Check your connection and retry.');
     } finally {
       setComparing(false);
     }
@@ -311,7 +314,7 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
                 opacity: comparing || !testQuery.trim() ? 0.6 : 1,
               }}
             >
-              {comparing ? 'Running...' : 'Run Comparison'}
+              {comparing ? 'Running prompts...' : 'Run Comparison'}
             </button>
           </div>
         )}
@@ -336,10 +339,17 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
                     whiteSpace: 'pre-wrap',
                     maxHeight: 300,
                     overflow: 'auto',
-                    border: '2px solid #4CAF50',
+                    border: comparisonResult.saved.error ? '2px solid #F44336' : '2px solid #4CAF50',
                   }}
                 >
-                  {comparisonResult.saved.output}
+                  {comparisonResult.saved.error ? (
+                    <div style={{ color: '#F44336', fontFamily: 'system-ui' }}>
+                      <div style={{ fontWeight: 600, marginBottom: 8 }}>Error:</div>
+                      {comparisonResult.saved.error}
+                    </div>
+                  ) : (
+                    comparisonResult.saved.output
+                  )}
                 </div>
               </div>
               <div>
@@ -356,10 +366,17 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
                     whiteSpace: 'pre-wrap',
                     maxHeight: 300,
                     overflow: 'auto',
-                    border: '2px solid #FF00AE',
+                    border: comparisonResult.draft.error ? '2px solid #F44336' : '2px solid #FF00AE',
                   }}
                 >
-                  {comparisonResult.draft.output}
+                  {comparisonResult.draft.error ? (
+                    <div style={{ color: '#F44336', fontFamily: 'system-ui' }}>
+                      <div style={{ fontWeight: 600, marginBottom: 8 }}>Error:</div>
+                      {comparisonResult.draft.error}
+                    </div>
+                  ) : (
+                    comparisonResult.draft.output
+                  )}
                 </div>
               </div>
             </div>

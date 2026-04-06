@@ -1410,6 +1410,7 @@ async def compare_prompts(
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
 
+    import asyncio
     from pipeline import _call
 
     # Get saved prompt
@@ -1417,18 +1418,47 @@ async def compare_prompts(
     if not saved:
         raise HTTPException(404, "Saved prompt not found")
 
-    # Run both prompts against the same test query
-    saved_output = await _call(
-        system=saved["system"],
-        user=comparison.test_query,
-        max_tokens=saved["max_tokens"]
+    # Run both prompts with timeout and error handling
+    saved_output = None
+    saved_error = None
+    draft_output = None
+    draft_error = None
+
+    async def call_with_timeout(call_type: str, system: str, user: str, max_tokens: int):
+        try:
+            result = await asyncio.wait_for(
+                _call(system=system, user=user, max_tokens=max_tokens),
+                timeout=30.0
+            )
+            return result, None
+        except asyncio.TimeoutError:
+            return None, f"{call_type} prompt timed out after 30s. Try a simpler test query or reduce max_tokens."
+        except Exception as e:
+            error_msg = str(e)
+            if "API" in error_msg or "api" in error_msg:
+                return None, f"{call_type} prompt failed: {error_msg}. Check your API key or try again."
+            elif "network" in error_msg.lower() or "connection" in error_msg.lower():
+                return None, f"{call_type} prompt failed: Network error. Check your connection and retry."
+            else:
+                return None, f"{call_type} prompt failed: {error_msg}"
+
+    # Run both prompts concurrently
+    saved_result, draft_result = await asyncio.gather(
+        call_with_timeout("Saved", saved["system"], comparison.test_query, saved["max_tokens"]),
+        call_with_timeout("Draft", comparison.draft_system, comparison.test_query, comparison.draft_max_tokens),
+        return_exceptions=True
     )
 
-    draft_output = await _call(
-        system=comparison.draft_system,
-        user=comparison.test_query,
-        max_tokens=comparison.draft_max_tokens
-    )
+    # Handle results (including exceptions from gather)
+    if isinstance(saved_result, Exception):
+        saved_error = f"Saved prompt failed: {str(saved_result)}"
+    else:
+        saved_output, saved_error = saved_result
+
+    if isinstance(draft_result, Exception):
+        draft_error = f"Draft prompt failed: {str(draft_result)}"
+    else:
+        draft_output, draft_error = draft_result
 
     return {
         "test_query": comparison.test_query,
@@ -1436,12 +1466,14 @@ async def compare_prompts(
             "name": saved["name"],
             "system": saved["system"],
             "max_tokens": saved["max_tokens"],
-            "output": saved_output
+            "output": saved_output,
+            "error": saved_error
         },
         "draft": {
             "system": comparison.draft_system,
             "max_tokens": comparison.draft_max_tokens,
-            "output": draft_output
+            "output": draft_output,
+            "error": draft_error
         }
     }
 
