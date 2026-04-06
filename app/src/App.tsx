@@ -825,9 +825,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 ? topLevel.filter(o => !!o.episode_tag)
                 : topLevel.filter(o => (o.tags || []).includes(selectedTopic));
 
-          // Maps obs.id → {index, total} for episode numbering — populated by renderEpisodeBundle
-          const episodePositionMap = new Map<string, { index: number; total: number }>();
-
           const renderCard = (obs: Observation) => {
             let bullets: string[] = [];
             try {
@@ -1106,8 +1103,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const podcastName = first.user_name || null;
             const episodeUrl = first.sources?.[0]?.url || null;
             const isMobile = window.innerWidth < 600;
-            // Populate position map for this bundle
-            posts.forEach((obs, i) => episodePositionMap.set(obs.id, { index: i + 1, total: posts.length }));
             return (
               <div key={`episode-${tag}`} style={{ marginBottom: 14 }}>
                 {/* Episode header */}
@@ -1791,7 +1786,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
-          {(() => { const pos = episodePositionMap.get(obs.id); return pos ? <span style={{ fontSize: 12, fontWeight: 400, color: "#AAA" }}>({pos.index}/{pos.total})</span> : null; })()}
+          {obs.episode_tag && (() => { const eps = observations.filter(o => o.episode_tag === obs.episode_tag); const idx = eps.findIndex(o => o.id === obs.id) + 1; return idx > 0 ? <span style={{ fontSize: 12, fontWeight: 400, color: "#AAA" }}>({idx}/{eps.length})</span> : null; })()}
           {isOwner && (
             deleteConfirm ? (
               <>
