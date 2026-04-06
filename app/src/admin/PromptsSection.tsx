@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { diffWords } from 'diff';
-
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8100';
+import { API as API_BASE } from '../config';
 
 interface Prompt {
   name: string;
