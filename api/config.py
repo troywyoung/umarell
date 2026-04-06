@@ -17,6 +17,7 @@ class Settings(BaseSettings):
     jwt_expire_days: int = 30
     admin_email: str = ""  # Set to your Google account email for master admin access
     railway_staging_deploy_hook: str = ""  # Railway deploy webhook URL for staging service
+    supadata_api_key: str = ""  # Supadata API key for YouTube transcript fallback
 
 
 settings = Settings()

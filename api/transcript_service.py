@@ -1,4 +1,9 @@
-"""YouTube transcript fetching service."""
+"""YouTube transcript fetching service.
+
+Fallback chain:
+  1. youtube_transcript_api  — free, instant; requires captions to exist on the video
+  2. Supadata API            — handles any public YouTube video, generates transcript from audio
+"""
 
 import re
 import json
@@ -12,175 +17,159 @@ from youtube_transcript_api._errors import (
 
 
 class TranscriptError(Exception):
-    """Base exception for transcript-related errors."""
     pass
 
 
 def _extract_video_id(url: str) -> Optional[str]:
-    """
-    Extract YouTube video ID from various URL formats.
-
-    Supported formats:
-    - https://www.youtube.com/watch?v=VIDEO_ID
-    - https://youtu.be/VIDEO_ID
-    - https://youtube.com/watch?v=VIDEO_ID
-    - https://m.youtube.com/watch?v=VIDEO_ID
-
-    Args:
-        url: YouTube URL string
-
-    Returns:
-        Video ID if found, None otherwise
-    """
     patterns = [
         r'(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})',
         r'youtube\.com\/watch\?.*v=([a-zA-Z0-9_-]{11})',
     ]
-
     for pattern in patterns:
         match = re.search(pattern, url)
         if match:
             return match.group(1)
-
     return None
 
 
-def fetch_youtube_transcript(url: str) -> dict:
-    """
-    Fetch transcript from a YouTube video.
+# ─── Method 1: youtube_transcript_api (free, instant) ─────────────────────────
 
-    Returns transcript with full text and timestamped segments.
-    Attempts to fetch auto-generated captions if manual captions aren't available.
-
-    Args:
-        url: YouTube video URL (youtube.com or youtu.be)
-
-    Returns:
-        dict with structure:
-        {
-            "text": str,  # Full transcript as plain text
-            "segments": [  # List of timestamped segments
-                {"start": float, "text": str},
-                ...
-            ]
-        }
-
-    Raises:
-        TranscriptError: With actionable error message for various failure cases
-    """
-    # Extract video ID
-    video_id = _extract_video_id(url)
-    if not video_id:
-        raise TranscriptError(
-            f"Invalid YouTube URL format: {url}. "
-            "Expected format: https://youtube.com/watch?v=VIDEO_ID or https://youtu.be/VIDEO_ID"
-        )
-
-    # Fetch transcript
+def _fetch_via_caption_api(video_id: str) -> Optional[dict]:
+    """Returns transcript dict on success, None if no captions available.
+    Raises TranscriptError for hard failures (video unavailable, bad ID, etc.)."""
     try:
-        # Get list of available transcripts
         transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
-
-        # Try to find a transcript (prefer manual, fall back to auto-generated)
         transcript = None
         try:
-            # First try to get manually created transcript in English
             transcript = transcript_list.find_manually_created_transcript(['en'])
         except NoTranscriptFound:
             try:
-                # Fall back to auto-generated transcript in English
                 transcript = transcript_list.find_generated_transcript(['en'])
             except NoTranscriptFound:
-                # Try any available transcript
-                available = transcript_list._manually_created_transcripts or transcript_list._generated_transcripts
+                available = (
+                    transcript_list._manually_created_transcripts
+                    or transcript_list._generated_transcripts
+                )
                 if available:
                     transcript = list(available.values())[0]
 
         if transcript is None:
-            raise TranscriptError(
-                f"No captions found for video {video_id}. "
-                "Try a different video or paste transcript manually."
-            )
+            return None
 
-        # Fetch the transcript data
-        transcript_data = transcript.fetch()
-
-        # Format segments
-        segments = [
-            {"start": entry["start"], "text": entry["text"]}
-            for entry in transcript_data
-        ]
-
-        # Combine all text
-        full_text = " ".join(entry["text"] for entry in transcript_data)
-
-        return {
-            "text": full_text,
-            "segments": segments,
-        }
+        data = transcript.fetch()
+        segments = [{"start": e["start"], "text": e["text"]} for e in data]
+        full_text = " ".join(e["text"] for e in data)
+        return {"text": full_text, "segments": segments, "source": "captions"}
 
     except VideoUnavailable:
         raise TranscriptError(
-            f"Video not found or unavailable: {video_id}. "
-            "Check that the URL is correct and the video is publicly accessible."
+            f"Video {video_id} is unavailable. "
+            "Check the URL is correct and the video is publicly accessible."
         )
-    except TranscriptsDisabled:
-        raise TranscriptError(
-            f"Captions are disabled for video {video_id}. "
-            "Try a different video or paste transcript manually."
-        )
-    except NoTranscriptFound:
-        raise TranscriptError(
-            f"No captions found for video {video_id}. "
-            "Try a different video or paste transcript manually."
-        )
+    except (TranscriptsDisabled, NoTranscriptFound):
+        return None  # soft failure — try Supadata
     except Exception as e:
-        # Catch any other unexpected errors
+        msg = str(e).lower()
+        if any(x in msg for x in ("disabled", "no transcript", "could not retrieve", "subtitles")):
+            return None  # soft failure — try Supadata
+        raise TranscriptError(f"Caption API error for {video_id}: {e}")
+
+
+# ─── Method 2: Supadata (handles any public YouTube video) ────────────────────
+
+async def _fetch_via_supadata(video_id: str) -> dict:
+    """Fetch transcript from Supadata API — works even without captions."""
+    import httpx
+    from config import settings
+
+    if not settings.supadata_api_key:
         raise TranscriptError(
-            f"Failed to fetch transcript for video {video_id}: {str(e)}"
+            "No captions found for this video and SUPADATA_API_KEY is not configured. "
+            "Add your Supadata API key to enable fallback transcription."
         )
 
+    url = f"https://api.supadata.ai/v1/youtube/transcript"
+    params = {"videoId": video_id, "text": "true"}
+    headers = {"x-api-key": settings.supadata_api_key}
+
+    async with httpx.AsyncClient(timeout=60.0) as client:
+        try:
+            r = await client.get(url, params=params, headers=headers)
+        except Exception as e:
+            raise TranscriptError(f"Supadata request failed: {e}")
+
+    if r.status_code == 402:
+        raise TranscriptError("Supadata quota exceeded. Check your plan at supadata.ai.")
+    if r.status_code == 404:
+        raise TranscriptError(
+            f"Supadata could not find a transcript for video {video_id}. "
+            "The video may be private, age-restricted, or too new."
+        )
+    if not r.is_success:
+        raise TranscriptError(f"Supadata error {r.status_code}: {r.text[:200]}")
+
+    data = r.json()
+
+    # Supadata returns either:
+    #   { "content": "full text", "segments": [{"text": ..., "offset": ..., "duration": ...}] }
+    # or just { "content": "full text" } depending on the endpoint
+    content = data.get("content") or data.get("transcript") or ""
+    raw_segments = data.get("segments") or []
+
+    segments = [
+        {
+            "start": float(s.get("offset", s.get("start", 0))) / 1000
+                     if s.get("offset") is not None else float(s.get("start", 0)),
+            "text": s.get("text", ""),
+        }
+        for s in raw_segments
+    ]
+
+    # If no segments returned, create a single segment from full text
+    if not segments and content:
+        segments = [{"start": 0.0, "text": content}]
+
+    return {"text": content, "segments": segments, "source": "supadata"}
+
+
+# ─── Public API ───────────────────────────────────────────────────────────────
+
+def fetch_youtube_transcript(url: str) -> dict:
+    """Fetch transcript for a YouTube URL.
+
+    Called via asyncio.to_thread() from the FastAPI endpoint.
+    Tries captions first; falls back to Supadata if unavailable.
+    """
+    import asyncio
+
+    video_id = _extract_video_id(url)
+    if not video_id:
+        raise TranscriptError(
+            f"Invalid YouTube URL: {url}. "
+            "Expected format: https://youtube.com/watch?v=VIDEO_ID"
+        )
+
+    # 1. Try free caption API
+    result = _fetch_via_caption_api(video_id)
+    if result is not None:
+        return result
+
+    # 2. Fall back to Supadata
+    loop = asyncio.new_event_loop()
+    try:
+        asyncio.set_event_loop(loop)
+        return loop.run_until_complete(_fetch_via_supadata(video_id))
+    finally:
+        loop.close()
+
+
+# ─── Take extraction ──────────────────────────────────────────────────────────
 
 async def extract_podcast_takes(transcript: dict, count: int = 5) -> list[dict]:
-    """
-    Extract interesting claims from a podcast transcript using LLM analysis.
-
-    Uses Gemini 2.5 Flash to identify the most compelling takes from a transcript,
-    preserving speaker voice and including timestamps. Includes post-extraction
-    quality filter (only returns takes with quality_score >= 70).
-
-    Args:
-        transcript: dict with structure:
-            {
-                "text": str,  # Full transcript text
-                "segments": [  # List of timestamped segments
-                    {"start": float, "text": str},
-                    ...
-                ]
-            }
-        count: Number of takes to extract (default: 5)
-
-    Returns:
-        List of dicts with structure:
-        [
-            {
-                "claim": str,  # Exact quote from speaker
-                "speaker": str,  # Speaker name
-                "start": float,  # Start timestamp in seconds
-                "end": float,  # End timestamp in seconds
-                "quality_score": int  # Quality score 0-100
-            },
-            ...
-        ]
-
-    Raises:
-        ValueError: If transcript format is invalid or LLM response cannot be parsed
-    """
-    # Import here to avoid circular dependency
+    """Extract interesting claims from a podcast transcript using LLM analysis."""
     from pipeline import _call
     from prompts import get_prompt
 
-    # Validate transcript structure
     if not isinstance(transcript, dict):
         raise ValueError("Transcript must be a dictionary")
     if "text" not in transcript or "segments" not in transcript:
@@ -188,15 +177,9 @@ async def extract_podcast_takes(transcript: dict, count: int = 5) -> list[dict]:
     if not transcript["segments"]:
         raise ValueError("Transcript segments cannot be empty")
 
-    # Truncate transcript if too long (safety measure for 1M token context)
-    # 100K chars ~= 25K tokens, well within limits
     transcript_text = transcript["text"][:100000]
-
-    # Format segments for the LLM
-    segments_formatted = []
-    for seg in transcript["segments"]:
-        segments_formatted.append(f"[{seg['start']:.1f}s] {seg['text']}")
-    segments_text = "\n".join(segments_formatted[:1000])  # Cap at 1000 segments
+    segments_formatted = [f"[{s['start']:.1f}s] {s['text']}" for s in transcript["segments"]]
+    segments_text = "\n".join(segments_formatted[:1000])
 
     prompt_config = await get_prompt("extract_podcast_takes")
     user_prompt = f"""Extract the {count} most interesting claims from this podcast transcript.
@@ -211,44 +194,31 @@ Return a JSON array of the top {count} claims, each with: claim, speaker, start,
 Only include claims with quality_score >= 70."""
 
     try:
-        # Call LLM with retry logic built into _call
         response = await _call(
             system=prompt_config["system"],
             user=user_prompt,
             max_tokens=prompt_config["max_tokens"],
             retries=5,
-            use_search=False
+            use_search=False,
         )
-
-        # Handle tuple response (Gemini with sources)
         if isinstance(response, tuple):
             response = response[0]
 
-        # Clean and parse JSON
         response = response.strip()
-        # Remove markdown code fences if present
         if response.startswith("```"):
             response = re.sub(r'^```(?:json)?\s*', '', response)
             response = re.sub(r'\s*```$', '', response)
 
-        # Parse JSON
         takes = json.loads(response)
-
-        # Validate response structure
         if not isinstance(takes, list):
             raise ValueError("LLM response must be a JSON array")
 
-        # Filter and validate each take
-        filtered_takes = []
+        filtered = []
         for take in takes:
-            # Validate required fields
             if not isinstance(take, dict):
                 continue
-            required_fields = ["claim", "speaker", "start", "end", "quality_score"]
-            if not all(field in take for field in required_fields):
+            if not all(f in take for f in ["claim", "speaker", "start", "end", "quality_score"]):
                 continue
-
-            # Validate field types
             if not isinstance(take["claim"], str) or not take["claim"].strip():
                 continue
             if not isinstance(take["speaker"], str) or not take["speaker"].strip():
@@ -259,28 +229,21 @@ Only include claims with quality_score >= 70."""
                 continue
             if not isinstance(take["end"], (int, float)):
                 continue
-
-            # Apply quality filter (>= 70)
             if take["quality_score"] < 70:
                 continue
-
-            # Ensure timestamps are valid
             if take["start"] < 0 or take["end"] < 0 or take["end"] <= take["start"]:
                 continue
-
-            # Normalize types
-            filtered_takes.append({
+            filtered.append({
                 "claim": take["claim"].strip(),
                 "speaker": take["speaker"].strip(),
                 "start": float(take["start"]),
                 "end": float(take["end"]),
-                "quality_score": int(take["quality_score"])
+                "quality_score": int(take["quality_score"]),
             })
 
-        return filtered_takes
+        return filtered
 
     except json.JSONDecodeError as e:
         raise ValueError(f"Failed to parse LLM response as JSON: {e}")
     except Exception as e:
-        # Re-raise with more context
         raise ValueError(f"Failed to extract podcast takes: {str(e)}")
