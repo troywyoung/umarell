@@ -836,20 +836,21 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             } catch {
               bullets = (obs.summary || "").split(/\n+/).map((l: string) => l.replace(/^[•\-]\s*/, "").trim()).filter(Boolean).slice(0, 3);
             }
+            const isCollection = !!obs.episode_tag;
             return (
               <div
                 key={obs.id}
                 onClick={() => onSelect(obs)}
                 style={{
                   borderRadius: 8, position: "relative",
-                  background: "#FFF",
+                  background: isCollection ? "#F5F0E8" : "#FFF",
                   border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", overflow: "hidden",
                 }}
               >
                 {obs.user_name && (
-                  <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
+                  <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: isCollection ? "#FF00AE" : "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: obs.user_name ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
                     {obs.image_data && (
@@ -1099,14 +1100,18 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const first = posts[0];
             const dateStr = new Date(first.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
             const podcastName = first.user_name || null;
+            const isMobile = window.innerWidth < 600;
             return (
               <div key={`episode-${tag}`} style={{ marginBottom: 14 }}>
                 {/* Episode header */}
                 <div style={{ marginBottom: 6, paddingBottom: 6, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-                  <p style={{ fontSize: window.innerWidth < 600 ? 8 : 9, fontWeight: 600, color: "rgba(255,255,255,0.45)", margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1, textTransform: "none" }}>
-                    {podcastName ? `${podcastName}  |  ${dateStr}` : dateStr}
+                  <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1 }}>
+                    {podcastName && (
+                      <><span style={{ color: "#FF00AE" }}>{podcastName} Collection</span><span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>  ·  {dateStr}</span></>
+                    )}
+                    {!podcastName && <span style={{ color: "rgba(255,255,255,0.45)" }}>{dateStr}</span>}
                   </p>
-                  <p style={{ fontSize: window.innerWidth < 600 ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
+                  <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
                     {first.episode_title || "Episode"}
                   </p>
                 </div>
