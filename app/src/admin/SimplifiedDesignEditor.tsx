@@ -210,7 +210,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Layout</h3>
         <div style={gridStyle}>
-          {['border_radius', 'base_padding', 'max_content_width', 'card_shadow']
+          {['max_content_width', 'card_shadow']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>
