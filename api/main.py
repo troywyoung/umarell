@@ -2166,8 +2166,9 @@ async def compare_suite(
 @app.get("/admin/prompt-samples")
 async def get_prompt_samples(
     limit: int = 5,
+    request: Request = None,
     current_user: User = Depends(require_user),
-    db: AsyncSession = Depends(get_db)
+    db: AsyncSession = Depends(get_instance_db_session)
 ):
     """Return recent observations to use as live test samples for prompt comparison."""
     if not _is_admin(current_user):
