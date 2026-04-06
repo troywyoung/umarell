@@ -1151,10 +1151,9 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
           style={{
             padding: '12px 24px',
             background: 'none',
-            borderBottom: activeTab === 'prompts' ? '2px solid #FF00AE' : '2px solid transparent',
-            color: activeTab === 'prompts' ? '#FF00AE' : '#888',
             border: 'none',
             borderBottom: activeTab === 'prompts' ? '2px solid #FF00AE' : '2px solid transparent',
+            color: activeTab === 'prompts' ? '#FF00AE' : '#888',
             fontSize: 13,
             fontWeight: 700,
             cursor: 'pointer',
@@ -1167,10 +1166,9 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
           style={{
             padding: '12px 24px',
             background: 'none',
-            borderBottom: activeTab === 'design' ? '2px solid #FF00AE' : '2px solid transparent',
-            color: activeTab === 'design' ? '#FF00AE' : '#888',
             border: 'none',
             borderBottom: activeTab === 'design' ? '2px solid #FF00AE' : '2px solid transparent',
+            color: activeTab === 'design' ? '#FF00AE' : '#888',
             fontSize: 13,
             fontWeight: 700,
             cursor: 'pointer',
