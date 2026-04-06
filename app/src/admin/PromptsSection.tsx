@@ -180,6 +180,46 @@ export default function PromptsSection() {
     }
   };
 
+  const renderOutput = (raw: string): React.ReactNode => {
+    if (!raw) return <span style={{ color: '#CCC' }}>—</span>;
+    try {
+      const parsed = JSON.parse(raw);
+      return renderJsonValue(parsed, 0);
+    } catch {
+      return <span>{raw}</span>;
+    }
+  };
+
+  const renderJsonValue = (val: any, depth: number): React.ReactNode => {
+    if (val === null || val === undefined) return null;
+    if (typeof val === 'string') return <span>{val}</span>;
+    if (typeof val === 'number' || typeof val === 'boolean') return <span style={{ color: '#888' }}>{String(val)}</span>;
+    if (Array.isArray(val)) {
+      return (
+        <ul style={{ margin: '4px 0 4px 14px', padding: 0, listStyle: 'disc' }}>
+          {val.map((item, i) => (
+            <li key={i} style={{ marginBottom: 3 }}>{renderJsonValue(item, depth + 1)}</li>
+          ))}
+        </ul>
+      );
+    }
+    if (typeof val === 'object') {
+      return (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+          {Object.entries(val).map(([key, v]) => (
+            <div key={key}>
+              <div style={{ fontSize: 10, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: 2 }}>
+                {key.replace(/_/g, ' ')}
+              </div>
+              <div style={{ color: '#1A1A1A' }}>{renderJsonValue(v, depth + 1)}</div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+    return <span>{String(val)}</span>;
+  };
+
   if (loading) return <div style={{ padding: 40, textAlign: 'center', color: '#888' }}>Loading prompts…</div>;
 
   const saved = selectedKey ? prompts[selectedKey] : null;
@@ -456,16 +496,16 @@ export default function PromptsSection() {
                         <div style={{ fontSize: 10, fontWeight: 700, color: '#4CAF50', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 6 }}>
                           Before · {r.saved_latency_ms}ms
                         </div>
-                        <div style={{ fontSize: 12, lineHeight: 1.6, color: '#1A1A1A', whiteSpace: 'pre-wrap' }}>
-                          {r.saved_output || '—'}
+                        <div style={{ fontSize: 12, lineHeight: 1.6, color: '#1A1A1A' }}>
+                          {renderOutput(r.saved_output || '')}
                         </div>
                       </div>
                       <div style={{ padding: 12 }}>
                         <div style={{ fontSize: 10, fontWeight: 700, color: '#FF00AE', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 6 }}>
                           After · {r.draft_latency_ms}ms
                         </div>
-                        <div style={{ fontSize: 12, lineHeight: 1.6, color: '#1A1A1A', whiteSpace: 'pre-wrap' }}>
-                          {r.draft_output || '—'}
+                        <div style={{ fontSize: 12, lineHeight: 1.6, color: '#1A1A1A' }}>
+                          {renderOutput(r.draft_output || '')}
                         </div>
                       </div>
                     </div>
