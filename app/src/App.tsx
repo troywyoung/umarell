@@ -1098,16 +1098,16 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           const renderEpisodeBundle = (tag: string, posts: Observation[]) => {
             const first = posts[0];
             const dateStr = new Date(first.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-            const podcastName = first.category || null;
+            const podcastName = first.user_name || null;
             return (
               <div key={`episode-${tag}`} style={{ marginBottom: 14 }}>
                 {/* Episode header */}
                 <div style={{ marginBottom: 6, paddingBottom: 6, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-                  {podcastName && (
-                    <p style={{ fontSize: window.innerWidth < 600 ? 8 : 9, fontWeight: 600, color: "rgba(255,255,255,0.45)", margin: "0 0 2px", letterSpacing: -0.2, lineHeight: 1, textTransform: "none" }}>{podcastName}</p>
-                  )}
+                  <p style={{ fontSize: window.innerWidth < 600 ? 8 : 9, fontWeight: 600, color: "rgba(255,255,255,0.45)", margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1, textTransform: "none" }}>
+                    {podcastName ? `${podcastName}  |  ${dateStr}` : dateStr}
+                  </p>
                   <p style={{ fontSize: window.innerWidth < 600 ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
-                    {first.episode_title || "Episode"} <span style={{ fontWeight: 400, color: "rgba(255,255,255,0.35)", fontSize: window.innerWidth < 600 ? 10 : 9 }}>· {dateStr}</span>
+                    {first.episode_title || "Episode"}
                   </p>
                 </div>
                 {/* Episode cards */}
