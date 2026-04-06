@@ -29,24 +29,28 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
 
   return (
     <div style={{ minHeight: '100vh', background: '#FAFAF8', display: 'flex', flexDirection: 'column' }}>
-      {/* Header */}
-      <div style={{ background: '#FFF', borderBottom: '1px solid #EEE', padding: '16px 24px', display: 'flex', alignItems: 'center', gap: 16 }}>
-        <button
-          onClick={onClose}
-          style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', color: '#888' }}
-        >
-          <svg width={18} height={18} viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round">
-            <path d="M11 4L6 9l5 5" />
-          </svg>
-        </button>
-        <h2 style={{ margin: 0, fontSize: 18, fontWeight: 800, color: '#1A1A1A' }}>Admin</h2>
-      </div>
-
-      {/* Tabs */}
-      <div style={{ display: 'flex', borderBottom: '1px solid #EEE', background: '#FFF' }}>
-        {tabBtn('prompts', 'LLM Prompts')}
-        {tabBtn('design', 'Design Tokens')}
-        {tabBtn('podcasts', 'Podcasts')}
+      {/* Header + Tabs */}
+      <div style={{ background: '#FFF', borderBottom: '1px solid #EEE' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto', padding: '16px 24px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0 }}>
+          {/* Back + title row */}
+          <div style={{ width: '100%', display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
+            <button
+              onClick={onClose}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0, display: 'flex', alignItems: 'center', color: '#888' }}
+            >
+              <svg width={18} height={18} viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round">
+                <path d="M11 4L6 9l5 5" />
+              </svg>
+            </button>
+            <h2 style={{ margin: 0, fontSize: 18, fontWeight: 800, color: '#1A1A1A' }}>Admin</h2>
+          </div>
+          {/* Tabs centered */}
+          <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+            {tabBtn('prompts', 'LLM Prompts')}
+            {tabBtn('design', 'Design Tokens')}
+            {tabBtn('podcasts', 'Podcasts')}
+          </div>
+        </div>
       </div>
 
       {/* Content */}
