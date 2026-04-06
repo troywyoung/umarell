@@ -1248,11 +1248,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   ))}
               </div>
 
-              {/* Temporary notice — remove after a few days */}
-              <p style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", margin: "0 0 16px", lineHeight: 1.5, letterSpacing: 0.1 }}>
-                We inadvertently wiped out the database. Lessons learned. Starting fresh.
-              </p>
-
               {/* Unified chronological feed — episode bundles grouped, regular posts dispersed */}
               {filteredPosts.length > 0
                 ? <div style={{ paddingTop: 4 }}>{filteredPosts.map(renderFeedItem)}</div>
