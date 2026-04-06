@@ -180,44 +180,111 @@ export default function PromptsSection() {
     }
   };
 
-  const renderOutput = (raw: string): React.ReactNode => {
-    if (!raw) return <span style={{ color: '#CCC' }}>—</span>;
-    try {
-      const parsed = JSON.parse(raw);
-      return renderJsonValue(parsed, 0);
-    } catch {
-      return <span>{raw}</span>;
-    }
+  const parseOutput = (raw: string): any | null => {
+    if (!raw) return null;
+    // Strip markdown code fences (```json ... ``` or ``` ... ```)
+    const stripped = raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim();
+    try { return JSON.parse(stripped); } catch { return null; }
   };
 
-  const renderJsonValue = (val: any, depth: number): React.ReactNode => {
-    if (val === null || val === undefined) return null;
-    if (typeof val === 'string') return <span>{val}</span>;
-    if (typeof val === 'number' || typeof val === 'boolean') return <span style={{ color: '#888' }}>{String(val)}</span>;
-    if (Array.isArray(val)) {
-      return (
-        <ul style={{ margin: '4px 0 4px 14px', padding: 0, listStyle: 'disc' }}>
-          {val.map((item, i) => (
-            <li key={i} style={{ marginBottom: 3 }}>{renderJsonValue(item, depth + 1)}</li>
-          ))}
-        </ul>
-      );
+  const renderOutput = (raw: string): React.ReactNode => {
+    if (!raw) return <span style={{ color: '#CCC' }}>—</span>;
+    const parsed = parseOutput(raw);
+    if (!parsed) return <span style={{ fontSize: 12, color: '#555', whiteSpace: 'pre-wrap', lineHeight: 1.5 }}>{raw}</span>;
+    return renderStructured(parsed);
+  };
+
+  const renderStructured = (obj: any): React.ReactNode => {
+    if (typeof obj !== 'object' || Array.isArray(obj)) {
+      return <span style={{ fontSize: 12 }}>{JSON.stringify(obj)}</span>;
     }
-    if (typeof val === 'object') {
-      return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-          {Object.entries(val).map(([key, v]) => (
-            <div key={key}>
-              <div style={{ fontSize: 10, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: 2 }}>
-                {key.replace(/_/g, ' ')}
-              </div>
-              <div style={{ color: '#1A1A1A' }}>{renderJsonValue(v, depth + 1)}</div>
+
+    const {
+      bottom_line, tldr, bullets, hard_facts, sources,
+      verdict, strength, voice, body, ...rest
+    } = obj;
+
+    const strengthColor: Record<string, string> = {
+      weak: '#AAA', moderate: '#F5A623', strong: '#4CAF50', devastating: '#C00',
+    };
+
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+
+        {/* Bottom line / TL;DR */}
+        {(bottom_line || tldr) && (
+          <div style={{ fontWeight: 700, fontSize: 13, color: '#1A1A1A', lineHeight: 1.4 }}>
+            {bottom_line || tldr}
+          </div>
+        )}
+
+        {/* Bullets */}
+        {Array.isArray(bullets) && bullets.length > 0 && (
+          <ul style={{ margin: 0, paddingLeft: 16, display: 'flex', flexDirection: 'column', gap: 4 }}>
+            {bullets.map((b: string, i: number) => (
+              <li key={i} style={{ fontSize: 12, color: '#333', lineHeight: 1.5 }}>{b}</li>
+            ))}
+          </ul>
+        )}
+
+        {/* Hard facts */}
+        {Array.isArray(hard_facts) && hard_facts.length > 0 && (
+          <div>
+            <div style={{ fontSize: 10, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 4 }}>Hard Facts</div>
+            <ul style={{ margin: 0, paddingLeft: 16, display: 'flex', flexDirection: 'column', gap: 3 }}>
+              {hard_facts.map((f: any, i: number) => (
+                <li key={i} style={{ fontSize: 11, color: '#555', lineHeight: 1.4 }}>
+                  {typeof f === 'string' ? f : `${f.fact}${f.source ? ` — ${f.source}` : ''}`}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Verdict + strength */}
+        {verdict && (
+          <div style={{ padding: '6px 10px', borderRadius: 5, background: '#F7F7F5', fontSize: 12, color: '#333', lineHeight: 1.4, borderLeft: `3px solid ${strengthColor[strength] || '#DDD'}` }}>
+            {strength && (
+              <span style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', color: strengthColor[strength] || '#AAA', marginRight: 6, letterSpacing: '0.04em' }}>
+                {strength}
+              </span>
+            )}
+            {verdict}
+          </div>
+        )}
+
+        {/* Voice / body */}
+        {(voice || body) && (
+          <div style={{ fontSize: 12, color: '#333', lineHeight: 1.5, fontStyle: 'italic' }}>
+            {voice || body}
+          </div>
+        )}
+
+        {/* Sources */}
+        {Array.isArray(sources) && sources.length > 0 && (
+          <div>
+            <div style={{ fontSize: 10, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 3 }}>Sources</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+              {sources.map((s: any, i: number) => (
+                <div key={i} style={{ fontSize: 10, color: '#888', lineHeight: 1.4 }}>
+                  {typeof s === 'string' ? s : s.url
+                    ? <a href={s.url} target="_blank" rel="noreferrer" style={{ color: '#888' }}>{s.title || s.url}</a>
+                    : s.title || JSON.stringify(s)}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      );
-    }
-    return <span>{String(val)}</span>;
+          </div>
+        )}
+
+        {/* Any remaining keys */}
+        {Object.keys(rest).length > 0 && Object.entries(rest).map(([k, v]) => (
+          <div key={k}>
+            <div style={{ fontSize: 10, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: 2 }}>{k.replace(/_/g, ' ')}</div>
+            <div style={{ fontSize: 12, color: '#333' }}>{typeof v === 'string' ? v : JSON.stringify(v)}</div>
+          </div>
+        ))}
+      </div>
+    );
   };
 
   if (loading) return <div style={{ padding: 40, textAlign: 'center', color: '#888' }}>Loading prompts…</div>;
