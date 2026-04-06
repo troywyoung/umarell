@@ -186,7 +186,7 @@ async def instance_routing_middleware(request: Request, call_next):
     if match:
         potential_instance = match.group(1)
         # Exclude meta routes that aren't instance-specific
-        if potential_instance not in ["admin", "auth", "health", "instance", "observations", "takes", "episodes", "webhook"]:
+        if potential_instance not in ["admin", "auth", "health", "instance", "observations", "takes", "episodes", "webhook", "podcasts"]:
             request.state.instance_key = potential_instance
             # Rewrite the path to strip the instance prefix so routes match normally
             new_path = match.group(2) or "/"
@@ -820,6 +820,29 @@ class PodcastIngest(BaseModel):
     count: int = 5
     author_name: str = "Podcast"
     admin_key: str | None = None
+
+
+@app.get("/podcasts/metadata")
+async def get_podcast_metadata(url: str):
+    """Fetch YouTube video title and channel name via oEmbed — no API key needed."""
+    import urllib.parse, re as _re2
+    try:
+        oembed_url = f"https://www.youtube.com/oembed?url={urllib.parse.quote(url)}&format=json"
+        async with httpx.AsyncClient(timeout=5.0) as client:
+            r = await client.get(oembed_url)
+        if r.status_code != 200:
+            raise HTTPException(400, "Could not fetch YouTube metadata — check the URL")
+        data = r.json()
+        title = data.get("title", "")
+        channel = data.get("author_name", "")
+        # Generate episode tag: lowercase slug from title
+        slug = title.lower()
+        slug = _re2.sub(r"[^a-z0-9]+", "-", slug).strip("-")[:80]
+        return {"title": title, "channel": channel, "episode_tag": slug}
+    except httpx.TimeoutException:
+        raise HTTPException(400, "YouTube metadata fetch timed out")
+    except Exception as e:
+        raise HTTPException(400, f"Could not fetch metadata: {str(e)}")
 
 
 @app.post("/podcasts/ingest", status_code=202)
