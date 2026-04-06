@@ -168,7 +168,7 @@ function AnimatedScribble({ size = 80 }: { size?: number }) {
         ref={pathRef}
         pathLength="1"
         fill="none"
-        stroke="#FF00AE"
+        stroke="var(--color-accent, #FF00AE)"
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -284,7 +284,7 @@ function SteelManIcon({ size = 24, animate = false, animateCount, color = "#FFF"
             key={`${id}-r${i}`}
             cx={cx} cy={cy}
             r={1.8}
-            fill="#FF00AE"
+            fill="var(--color-accent, #FF00AE)"
             style={{
               opacity: 0,
               animation: `meshRedPing 0.4s ease ${redIter}`,
@@ -351,7 +351,7 @@ function ScoreInfoSheet({ onClose }: { onClose: () => void }) {
         border: "1px solid rgba(255,255,255,0.1)", borderBottom: "none",
       }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
-          <span style={{ fontSize: 12, fontWeight: 800, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
+          <span style={{ fontSize: 12, fontWeight: 800, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
           <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 22, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
         </div>
         <p style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", lineHeight: 1.55, margin: "0 0 16px" }}>
@@ -377,7 +377,7 @@ function ScoreInfoPopover({ onClose }: { onClose: () => void }) {
         width: 310, minWidth: 0,
       }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
-          <span style={{ fontSize: 11, fontWeight: 800, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
+          <span style={{ fontSize: 11, fontWeight: 800, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
           <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.35)", fontSize: 18, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
         </div>
         <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 14px" }}>
@@ -512,7 +512,7 @@ function AudioTake({ src, btnColor = "#2C5ABA", durationSecs = 0 }: { src: strin
         onClick={e => { e.stopPropagation(); const a = audioRef.current; if (!a) return; const r = e.currentTarget.getBoundingClientRect(); a.currentTime = ((e.clientX - r.left) / r.width) * a.duration; }}>
         <div style={{ height: "100%", width: `${progress * 100}%`, background: btnColor, borderRadius: 2 }} />
       </div>
-      <span style={{ fontSize: 9, color: "#888", flexShrink: 0 }}>{fmt(duration > 0 ? duration - duration * progress : 0)}</span>
+      <span style={{ fontSize: 9, color: "var(--color-secondary-text, #888)", flexShrink: 0 }}>{fmt(duration > 0 ? duration - duration * progress : 0)}</span>
     </div>
   );
 }
@@ -541,12 +541,12 @@ function timeAgo(iso: string) {
 function AboutView({ onBack }: { onBack: () => void }) {
   const bullet = (text: string) => (
     <div style={{ display: "flex", gap: 12, marginBottom: 18 }}>
-      <span style={{ color: "#FF00AE", fontSize: 16, lineHeight: 1.5, flexShrink: 0 }}>—</span>
+      <span style={{ color: "var(--color-accent, #FF00AE)", fontSize: 16, lineHeight: 1.5, flexShrink: 0 }}>—</span>
       <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.6, margin: 0 }}>{text}</p>
     </div>
   );
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", minHeight: "100vh", background: "transparent", padding: "0 0 60px" }}>
+    <div style={{ maxWidth: "var(--max-content-width, 480px)", margin: "0 auto", minHeight: "100vh", background: "transparent", padding: "0 0 60px" }}>
       <div style={{ padding: "14px 20px 12px", borderBottom: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
         <button onClick={onBack} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.5)", fontSize: 22, cursor: "pointer", padding: 0, lineHeight: 1, WebkitTapHighlightColor: "transparent" }}>←</button>
         <span style={{ fontSize: 18, fontWeight: 900, color: "#FFF", letterSpacing: -0.6, fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}>Your takes, stress-tested.</span>
@@ -555,7 +555,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.9)", lineHeight: 1.65, margin: "0 0 28px", letterSpacing: -0.2 }}>
           A feed of hot takes — sharpened by AI, scored for conviction, and open for debate. Brought to you by the folks at People vs Algorithms.
         </p>
-        <p style={{ fontSize: 13, fontWeight: 700, color: "#FF00AE", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>How it works</p>
+        <p style={{ fontSize: 13, fontWeight: 700, color: "var(--color-accent, #FF00AE)", letterSpacing: 1.2, textTransform: "uppercase", margin: "0 0 20px" }}>How it works</p>
         {bullet("Drop a hot take, paste a link, or type out a half-formed opinion. AI sharpens it into its most defensible form and builds the case for it.")}
         {bullet("Every take gets a conviction score from 0–100 — how well does the evidence actually hold up? You see the number before you decide whether to push back.")}
         {bullet("Hit Devil's Advocate on any take to get the strongest possible case against it.")}
@@ -730,7 +730,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   };
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "transparent" }}>
+    <div style={{ maxWidth: "var(--max-content-width, 480px)", margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "transparent" }}>
 
       {/* Top bar: what is this? left, avatar right */}
       <div style={{ position: "absolute", top: 13, left: 20, right: 20, display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 2 }}>
@@ -744,7 +744,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
               onClick={onOpenAdmin}
               style={{
                 fontSize: 11,
-                color: "#FF00AE",
+                color: "var(--color-accent, #FF00AE)",
                 background: "none",
                 border: "1px solid rgba(255,0,174,0.35)",
                 borderRadius: 20,
@@ -759,14 +759,14 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           )}
           {authUser.avatar
             ? <img src={authUser.avatar} onClick={onSignOut} title={`Signed in as ${authUser.name} — tap to sign out`} style={{ width: 30, height: 30, borderRadius: "50%", cursor: "pointer", border: "2px solid rgba(255,255,255,0.4)" }} />
-            : <button onClick={onSignOut} style={{ fontSize: 11, color: "#FF00AE", background: "none", border: "1px solid rgba(255,0,174,0.35)", borderRadius: 20, cursor: "pointer", fontFamily: "inherit", padding: "4px 10px", letterSpacing: -0.2 }}>Sign in</button>
+            : <button onClick={onSignOut} style={{ fontSize: 11, color: "var(--color-accent, #FF00AE)", background: "none", border: "1px solid rgba(255,0,174,0.35)", borderRadius: 20, cursor: "pointer", fontFamily: "inherit", padding: "4px 10px", letterSpacing: -0.2 }}>Sign in</button>
           }
         </div>
       </div>
 
       {/* Branding */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "44px 0 2px" }}>
-        <span style={{ fontSize: 27, fontWeight: 900, letterSpacing: -1.5, fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}><span style={{ color: "#FF00AE" }}>hot</span><span style={{ color: "#FFF" }}>take</span></span>
+        <span style={{ fontSize: 27, fontWeight: 900, letterSpacing: -1.5, fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}><span style={{ color: "var(--color-accent, #FF00AE)" }}>hot</span><span style={{ color: "#FFF" }}>take</span></span>
       </div>
 
       <style>{`
@@ -785,7 +785,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
             <p style={{ fontSize: 22, fontWeight: 800, color: "#FFF", letterSpacing: -0.5, margin: "0 0 10px" }}>Drop your first take.</p>
             <p style={{ fontSize: 14, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 28px" }}>Paste a URL, share a claim, or describe an idea. We'll build the strongest case for it.</p>
-            <button onClick={onCapture} style={{ background: "#FF00AE", color: "#fff", border: "none", borderRadius: 80, padding: "14px 36px", fontSize: 16, fontWeight: 700, cursor: "pointer", letterSpacing: -0.3, WebkitTapHighlightColor: "transparent" }}>＋ Drop a hot take</button>
+            <button onClick={onCapture} style={{ background: "var(--color-accent, #FF00AE)", color: "#fff", border: "none", borderRadius: 80, padding: "14px 36px", fontSize: 16, fontWeight: 700, cursor: "pointer", letterSpacing: -0.3, WebkitTapHighlightColor: "transparent" }}>＋ Drop a hot take</button>
           </div>
         )}
         {observations.length === 0 && !loading ? null : (() => {
@@ -845,12 +845,12 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   borderRadius: 8, position: "relative",
                   background: isCollection ? "#F5F0E8" : "#FFF",
                   border: "none",
-                  boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
+                  boxShadow: "var(--shadow-card, 0 1px 6px rgba(0,0,0,0.06))",
                   cursor: "pointer", overflow: "hidden",
                 }}
               >
                 {obs.user_name && (
-                  <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: isCollection ? "#FF00AE" : "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
+                  <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: isCollection ? "var(--color-accent, #FF00AE)" : "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: obs.user_name ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
                     {obs.image_data && (
@@ -865,7 +865,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       </div>
                       <p style={{
                         fontSize: window.innerWidth < 600 ? 14 : 12, fontWeight: 700,
-                        color: "#1A1A1A", lineHeight: window.innerWidth < 600 ? 1.15 : 1.27, margin: 0, letterSpacing: -0.3,
+                        color: "var(--color-dark-text, #1A1A1A)", lineHeight: window.innerWidth < 600 ? 1.15 : 1.27, margin: 0, letterSpacing: -0.3,
                       }}>
                         {obs.thesis || obs.raw_input}
                       </p>
@@ -883,7 +883,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         width: "100%", boxSizing: "border-box", resize: "none",
                         fontSize: 13, fontFamily: "inherit", lineHeight: 1.45,
                         border: "1px solid #E0E0DC", borderRadius: 8,
-                        padding: "8px 10px", outline: "none", color: "#1A1A1A",
+                        padding: "8px 10px", outline: "none", color: "var(--color-dark-text, #1A1A1A)",
                         background: "#FAFAF8",
                       }}
                     />
@@ -899,7 +899,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       <button
                         onClick={recording === obs.id ? stopRecording : (e) => startRecording(obs.id, e)}
                         style={{
-                          background: recording === obs.id ? "#FF00AE" : "#F0F0ED",
+                          background: recording === obs.id ? "var(--color-accent, #FF00AE)" : "#F0F0ED",
                           color: recording === obs.id ? "#FFF" : "#555",
                           border: "none", borderRadius: 8, padding: "8px 14px",
                           fontSize: 12, fontWeight: 700, cursor: "pointer",
@@ -909,7 +909,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       >
                         {recording === obs.id ? (
                           <>
-                            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#FFF", animation: "recPulse 1s ease-in-out infinite", display: "inline-block" }} />
+                            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "var(--color-card-bg, #FFF)", animation: "recPulse 1s ease-in-out infinite", display: "inline-block" }} />
                             {`${Math.floor(recordingSecs/60)}:${String(recordingSecs%60).padStart(2,"0")}`} Stop
                           </>
                         ) : "🎙 Record"}
@@ -921,7 +921,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   <div style={{ padding: "0 12px 10px 12px", display: "flex", flexDirection: "column", gap: 6 }}>
                     {bullets.map((b, i) => (
                       <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 6 }}>
-                        <span style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#888", marginTop: 2, flexShrink: 0 }}>•</span>
+                        <span style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "var(--color-secondary-text, #888)", marginTop: 2, flexShrink: 0 }}>•</span>
                         <span style={{ fontSize: window.innerWidth < 600 ? 12 : 11, color: "#555", lineHeight: 1.4 }}>{b}</span>
                       </div>
                     ))}
@@ -935,10 +935,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     paddingTop: 6,
                     paddingBottom: 6,
                   }}>
-                    <span style={{ fontSize: 8, fontWeight: 700, color: "#FF00AE", letterSpacing: 0.5, textTransform: "uppercase", display: "block", marginBottom: 4 }}>Brian's take</span>
+                    <span style={{ fontSize: 8, fontWeight: 700, color: "var(--color-accent, #FF00AE)", letterSpacing: 0.5, textTransform: "uppercase", display: "block", marginBottom: 4 }}>Brian's take</span>
                     <p style={{
                       fontSize: window.innerWidth < 600 ? 13 : 11,
-                      fontWeight: 600, color: "#1A1A1A", lineHeight: 1.45,
+                      fontWeight: 600, color: "var(--color-dark-text, #1A1A1A)", lineHeight: 1.45,
                       margin: 0, letterSpacing: -0.2, fontStyle: "italic",
                     }}>
                       {jokeMap[obs.id]}
@@ -1024,7 +1024,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         style={{
                           cursor: "pointer",
                           fontSize: 8, fontWeight: 800, letterSpacing: -0.2,
-                          color: yourTakeInput.has(obs.id) ? "#FF00AE" : "rgba(255,0,174,0.6)",
+                          color: yourTakeInput.has(obs.id) ? "var(--color-accent, #FF00AE)" : "rgba(255,0,174,0.6)",
                           WebkitTapHighlightColor: "transparent",
                           display: "flex", alignItems: "center", gap: 3,
                           background: yourTakeInput.has(obs.id) ? "rgba(255,0,174,0.1)" : "rgba(255,0,174,0.05)",
@@ -1033,7 +1033,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         }}
                       ><span style={{
                           width: 5, height: 5, borderRadius: "50%", flexShrink: 0,
-                          background: "#FF00AE",
+                          background: "var(--color-accent, #FF00AE)",
                           animation: "yellowPulse 1.2s ease-in-out infinite",
                         }} />Add your take</button>
                       <span style={{ fontSize: 8, color: "rgba(0,0,0,0.2)" }}>|</span>
@@ -1042,7 +1042,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         style={{
                           background: "none", border: "none", padding: 0, cursor: "pointer",
                           fontSize: 8, fontWeight: 600, letterSpacing: -0.2,
-                          color: jokeMap[obs.id] ? "#FF00AE" : "rgba(0,0,0,0.55)",
+                          color: jokeMap[obs.id] ? "var(--color-accent, #FF00AE)" : "rgba(0,0,0,0.55)",
                           opacity: jokeLoading.has(obs.id) ? 0.4 : 1,
                           WebkitTapHighlightColor: "transparent",
                         }}
@@ -1063,12 +1063,12 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
               onClick={() => onSelect(c)}
               style={{
                 borderRadius: 8, background: "#EEF4FF",
-                boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
+                boxShadow: "var(--shadow-card, 0 1px 6px rgba(0,0,0,0.06))",
                 padding: "10px 12px", cursor: "pointer",
                 display: "flex", alignItems: "center", gap: 8,
               }}
             >
-              <p style={{ fontSize: 11, color: "#1A1A1A", fontWeight: 600, margin: 0, lineHeight: 1.4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", flex: 1 } as React.CSSProperties}>
+              <p style={{ fontSize: 11, color: "var(--color-dark-text, #1A1A1A)", fontWeight: 600, margin: 0, lineHeight: 1.4, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", flex: 1 } as React.CSSProperties}>
                 <span style={{ fontWeight: 800, color: "#2C5ABA" }}>Challenge: </span>{c.thesis || c.raw_input}
               </p>
             </div>
@@ -1107,7 +1107,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 <div style={{ marginBottom: 6, paddingBottom: 6, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
                   <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1 }}>
                     {podcastName && (
-                      <><span style={{ color: "#FF00AE" }}>{podcastName} Collection</span><span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>  ·  {dateStr}</span></>
+                      <><span style={{ color: "var(--color-accent, #FF00AE)" }}>{podcastName} Collection</span><span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>  ·  {dateStr}</span></>
                     )}
                     {!podcastName && <span style={{ color: "rgba(255,255,255,0.45)" }}>{dateStr}</span>}
                   </p>
@@ -1183,11 +1183,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     onClick={() => setSelectedTopic(selectedTopic === "PvA" ? null : "PvA")}
                     style={{
                       flexShrink: 0,
-                      background: selectedTopic === "PvA" ? "#FF00AE" : "rgba(255,0,174,0.15)",
+                      background: selectedTopic === "PvA" ? "var(--color-accent, #FF00AE)" : "rgba(255,0,174,0.15)",
                       border: selectedTopic === "PvA" ? "1.5px solid #FF00AE" : "1.5px solid rgba(255,0,174,0.4)",
                       borderRadius: 6, padding: "3px 9px",
                       fontSize: 9, fontWeight: 700,
-                      color: selectedTopic === "PvA" ? "#FFF" : "#FF00AE",
+                      color: selectedTopic === "PvA" ? "#FFF" : "var(--color-accent, #FF00AE)",
                       cursor: "pointer", WebkitTapHighlightColor: "transparent",
                       fontFamily: "inherit",
                     }}
@@ -1237,7 +1237,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         style={{
           position: "fixed", bottom: 36, left: "50%", transform: "translateX(-50%)",
           width: 68, height: 68, borderRadius: "50%",
-          background: "#FF00AE", border: "none", outline: "4px solid rgba(255,0,174,0.5)", outlineOffset: 0, cursor: "pointer",
+          background: "var(--color-accent, #FF00AE)", border: "none", outline: "4px solid rgba(255,0,174,0.5)", outlineOffset: 0, cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
           boxShadow: "0 0 12px rgba(229,57,53,0.4)", zIndex: 2,
           WebkitTapHighlightColor: "transparent",
@@ -1379,9 +1379,9 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
   const canSubmit = (!!imageMeta || !!text.trim() || !!url.trim()) && !submitting;
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 24px 60px", minHeight: "100vh", display: "flex", flexDirection: "column", background: "transparent" }}>
+    <div style={{ maxWidth: "var(--max-content-width, 480px)", margin: "0 auto", padding: "0 24px 60px", minHeight: "100vh", display: "flex", flexDirection: "column", background: "transparent" }}>
       <div style={{ padding: "20px 0 16px" }}>
-        <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>
+        <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "var(--color-secondary-text, #888)", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>
           Cancel
         </button>
       </div>
@@ -1406,7 +1406,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
 
       {/* Single text input — always visible, auto-expands */}
       <div style={{
-        background: "#FFF", borderRadius: 16, padding: "14px 16px",
+        background: "var(--color-card-bg, #FFF)", borderRadius: 16, padding: "14px 16px",
         boxShadow: "0 2px 8px rgba(0,0,0,0.06)", marginBottom: 12,
         border: listening ? "1.5px solid #6666CC" : "1.5px solid transparent",
         transition: "border-color 0.2s",
@@ -1420,7 +1420,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
           autoComplete="off" autoCorrect="off" autoCapitalize="off" spellCheck={false}
           style={{
             width: "100%", border: "none", outline: "none",
-            fontSize: 16, color: "#1A1A1A", lineHeight: 1.6,
+            fontSize: 16, color: "var(--color-dark-text, #1A1A1A)", lineHeight: 1.6,
             resize: "none", fontFamily: "inherit", boxSizing: "border-box",
             overflow: "hidden", minHeight: 72,
           }}
@@ -1439,7 +1439,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
         return (
           <>
             <div style={{
-              background: "#FFF", borderRadius: 12, padding: "10px 14px",
+              background: "var(--color-card-bg, #FFF)", borderRadius: 12, padding: "10px 14px",
               boxShadow: "0 1px 4px rgba(0,0,0,0.04)", marginBottom: isXUrl ? 6 : 12,
               display: "flex", alignItems: "center", gap: 8,
               border: isXUrl ? "1.5px solid #FFD700" : url.trim() ? "1.5px solid #FF00AE" : "1.5px solid transparent",
@@ -1453,7 +1453,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
                 placeholder={config?.ui_copy?.labels?.add_link_optional || "Add a link (optional)"}
                 style={{
                   flex: 1, border: "none", outline: "none",
-                  fontSize: 16, color: "#1A1A1A", fontFamily: "inherit",
+                  fontSize: 16, color: "var(--color-dark-text, #1A1A1A)", fontFamily: "inherit",
                   background: "transparent",
                 }}
               />
@@ -1528,7 +1528,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
         disabled={!canSubmit}
         style={{
           width: "100%",
-          background: canSubmit ? "#FF00AE" : "rgba(255,255,255,0.15)",
+          background: canSubmit ? "var(--color-accent, #FF00AE)" : "rgba(255,255,255,0.15)",
           color: "#FFF", border: "none", borderRadius: 14,
           padding: "16px 0", fontSize: 16, fontWeight: 700,
           cursor: canSubmit ? "pointer" : "not-allowed",
@@ -1541,7 +1541,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
 
       {error && (
         <div style={{ marginTop: 12, background: "#FFF0EE", borderRadius: 8, padding: "12px 14px", border: "1px solid #F5C6C0" }}>
-          <p style={{ fontSize: 13, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>{error}</p>
+          <p style={{ fontSize: 13, color: "var(--color-accent, #FF00AE)", margin: 0, lineHeight: 1.5 }}>{error}</p>
         </div>
       )}
     </div>
@@ -1698,14 +1698,14 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
 
   if (obs.status === "error") {
     return (
-      <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 20px", background: "transparent", minHeight: "100vh" }}>
+      <div style={{ maxWidth: "var(--max-content-width, 480px)", margin: "0 auto", padding: "0 20px", background: "transparent", minHeight: "100vh" }}>
         <div style={{ padding: "14px 0", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
+          <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "var(--color-secondary-text, #888)", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
           {isOwner && (
             deleteConfirm ? (
               <div style={{ display: "flex", gap: 12 }}>
                 <button onClick={() => setDeleteConfirm(false)} style={{ background: "none", border: "none", fontSize: 12, color: "#666", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>cancel</button>
-                <button onClick={async () => { setDeleting(true); await onDelete(obs.id); onBack(); }} disabled={deleting} style={{ background: "none", border: "none", fontSize: 12, fontWeight: 700, color: "#FF00AE", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>{deleting ? "deleting…" : "delete"}</button>
+                <button onClick={async () => { setDeleting(true); await onDelete(obs.id); onBack(); }} disabled={deleting} style={{ background: "none", border: "none", fontSize: 12, fontWeight: 700, color: "var(--color-accent, #FF00AE)", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>{deleting ? "deleting…" : "delete"}</button>
               </div>
             ) : (
               <button onClick={() => setDeleteConfirm(true)} style={{ background: "none", border: "none", cursor: "pointer", padding: 0, lineHeight: 1, opacity: 0.35, WebkitTapHighlightColor: "transparent" }} title="Delete">
@@ -1719,7 +1719,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         <div style={{ marginTop: 60, textAlign: "center" }}>
           <p style={{ fontSize: 28, marginBottom: 12 }}>{"\u26A0\uFE0F"}</p>
           <p style={{ fontSize: 17, fontWeight: 700, color: "#FFF", margin: "0 0 8px" }}>Analysis failed</p>
-          <p style={{ fontSize: 14, color: "#888", lineHeight: 1.6, margin: "0 0 28px" }}>
+          <p style={{ fontSize: 14, color: "var(--color-secondary-text, #888)", lineHeight: 1.6, margin: "0 0 28px" }}>
             {obs.error_detail?.includes("PAYWALL")
               ? "This article is paywalled. Paste the text directly instead."
               : obs.error_detail?.includes("529") || obs.error_detail?.includes("overloaded")
@@ -1728,7 +1728,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               ? "Check that the API key is set correctly."
               : obs.error_detail || "Something went wrong. Try again."}
           </p>
-          <button onClick={onBack} style={{ background: "#FFF", color: "#12102B", border: "none", borderRadius: 14, padding: "13px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Try again</button>
+          <button onClick={onBack} style={{ background: "var(--color-card-bg, #FFF)", color: "#12102B", border: "none", borderRadius: 14, padding: "13px 28px", fontSize: 15, fontWeight: 700, cursor: "pointer", fontFamily: "inherit" }}>Try again</button>
         </div>
       </div>
     );
@@ -1737,10 +1737,10 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   // Share handled by ShareButton component
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80, background: "transparent", minHeight: "100vh" }}>
+    <div style={{ maxWidth: "var(--max-content-width, 480px)", margin: "0 auto", paddingBottom: 80, background: "transparent", minHeight: "100vh" }}>
       <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
+          <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "var(--color-secondary-text, #888)", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
           {obs.status === "complete" && obs.thesis && (
             <>
               <span style={{ width: 1, height: 16, background: "rgba(255,255,255,0.15)" }} />
@@ -1764,7 +1764,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                     onBack();
                   }}
                   disabled={deleting}
-                  style={{ background: "none", border: "none", fontSize: 12, fontWeight: 700, color: "#FF00AE", cursor: "pointer", padding: 0, fontFamily: "inherit" }}
+                  style={{ background: "none", border: "none", fontSize: 12, fontWeight: 700, color: "var(--color-accent, #FF00AE)", cursor: "pointer", padding: 0, fontFamily: "inherit" }}
                 >{deleting ? "deleting…" : "delete"}</button>
               </>
             ) : (
@@ -1809,7 +1809,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                       <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>Source</p>
                       <a href={obs.raw_input} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", gap: 8, textDecoration: "none" }}>
                         <img src={`https://www.google.com/s2/favicons?domain=${domain}&sz=32`} width={16} height={16} style={{ borderRadius: 3, flexShrink: 0 }} />
-                        <span style={{ fontSize: 13, color: "#FF00AE", fontWeight: 600, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{domain}</span>
+                        <span style={{ fontSize: 13, color: "var(--color-accent, #FF00AE)", fontWeight: 600, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{domain}</span>
                         <span style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", flexShrink: 0 }}>↗</span>
                       </a>
                     </>
@@ -1879,7 +1879,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 onMouseLeave={e => { e.currentTarget.style.background = "transparent"; }}
                 disabled={counterpointLoading}
               >
-                <span style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>Devil&rsquo;s Advocate</span>
+                <span style={{ fontSize: 12, fontWeight: 700, color: "var(--color-accent, #FF00AE)", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>Devil&rsquo;s Advocate</span>
               </button>
             </div>
           );
@@ -1897,7 +1897,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   autoFocus
                   style={{
                     width: "100%", border: "1.5px solid rgba(255,255,255,0.15)", borderRadius: 12,
-                    padding: "12px 14px", fontSize: 20, color: "#1A1A1A", fontWeight: 700,
+                    padding: "12px 14px", fontSize: 20, color: "var(--color-dark-text, #1A1A1A)", fontWeight: 700,
                     lineHeight: 1.4, resize: "none", fontFamily: "inherit",
                     boxSizing: "border-box", outline: "none", letterSpacing: -0.4,
                     overflow: "hidden",
@@ -1909,7 +1909,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                     style={{
                       flex: 1, padding: "12px 0", borderRadius: 8,
                       border: "1.5px solid rgba(255,255,255,0.15)", background: "transparent",
-                      color: "#888", fontSize: 14, fontWeight: 600,
+                      color: "var(--color-secondary-text, #888)", fontSize: 14, fontWeight: 600,
                       cursor: "pointer", fontFamily: "inherit",
                     }}
                   >Cancel</button>
@@ -1918,7 +1918,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                     disabled={!editText.trim() || resubmitting}
                     style={{
                       flex: 1, padding: "12px 0", borderRadius: 8,
-                      border: "none", background: editText.trim() && !resubmitting ? "#FF00AE" : "rgba(255,255,255,0.15)",
+                      border: "none", background: editText.trim() && !resubmitting ? "var(--color-accent, #FF00AE)" : "rgba(255,255,255,0.15)",
                       color: "#FFF", fontSize: 14, fontWeight: 700,
                       cursor: editText.trim() && !resubmitting ? "pointer" : "not-allowed",
                       fontFamily: "inherit",
@@ -1963,7 +1963,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> {config?.ui_copy?.labels?.hot_take_badge || "Hot Take"}</p>
+                <p style={{ fontSize: 12, fontWeight: 700, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> {config?.ui_copy?.labels?.hot_take_badge || "Hot Take"}</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
@@ -2014,12 +2014,12 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         {obs.status === "complete" && activeTab === "coldshower" && (() => {
           if (counterpointLoading) return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 0", gap: 8 }}>
-              <ProcessingDots color="#FF00AE" /><span style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>Playing devil&rsquo;s advocate…</span>
+              <ProcessingDots color="var(--color-accent, #FF00AE)" /><span style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>Playing devil&rsquo;s advocate…</span>
             </div>
           );
           if (counterpointError) return (
             <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,0,174,0.3)" }}>
-              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>Devil&rsquo;s advocate failed. Try again.</p>
+              <p style={{ fontSize: 14, color: "var(--color-accent, #FF00AE)", margin: 0, lineHeight: 1.5 }}>Devil&rsquo;s advocate failed. Try again.</p>
             </div>
           );
           if (!counterpoint) return (
@@ -2031,7 +2031,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           return (
             <div ref={counterpointRef}>
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 12, fontWeight: 700, color: "#FF00AE", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Devil&rsquo;s Advocate</p>
+                <p style={{ fontSize: 12, fontWeight: 700, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6 }}><PulsingDot /> Devil&rsquo;s Advocate</p>
                 <p style={{ fontSize: 15, color: "#FFF", lineHeight: 1.65, margin: 0, fontWeight: 500 }}>{counterpoint.bottom_line}</p>
               </div>
               {counterpoint.bullets.length > 0 && (
@@ -2039,7 +2039,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   <p style={{ fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px" }}>The Case Against</p>
                   {counterpoint.bullets.map((bullet, i) => (
                     <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                      <span style={{ color: "#FF00AE", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
+                      <span style={{ color: "var(--color-accent, #FF00AE)", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
                       <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
                     </div>
                   ))}
@@ -2069,12 +2069,12 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         {obs.status === "complete" && activeTab === "pva" && (() => {
           if (pvaLoading) return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "40px 0", gap: 8 }}>
-              <ProcessingDots color="#FF00AE" /><span style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>Generating PvA take…</span>
+              <ProcessingDots color="var(--color-accent, #FF00AE)" /><span style={{ fontSize: 13, color: "rgba(255,255,255,0.4)" }}>Generating PvA take…</span>
             </div>
           );
           if (pvaError) return (
             <div style={{ background: "rgba(255,0,174,0.1)", borderRadius: 12, padding: "14px 16px", border: "1px solid rgba(255,0,174,0.3)" }}>
-              <p style={{ fontSize: 14, color: "#FF00AE", margin: 0, lineHeight: 1.5 }}>PvA take failed. Try again.</p>
+              <p style={{ fontSize: 14, color: "var(--color-accent, #FF00AE)", margin: 0, lineHeight: 1.5 }}>PvA take failed. Try again.</p>
             </div>
           );
           const take = obs.pva_take;
@@ -2093,7 +2093,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               </div>
               {pvaBullets.map((bullet, i) => (
                 <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
-                  <span style={{ color: "#FF00AE", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2022"}</span>
+                  <span style={{ color: "var(--color-accent, #FF00AE)", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2022"}</span>
                   <p style={{ fontSize: 15, color: "rgba(255,255,255,0.85)", lineHeight: 1.65, margin: 0 }}>{bullet}</p>
                 </div>
               ))}
@@ -2210,7 +2210,7 @@ function PulsingDot() {
     <>
       <span style={{
         display: "inline-block", width: 7, height: 7, borderRadius: "50%",
-        background: "#FF00AE", flexShrink: 0,
+        background: "var(--color-accent, #FF00AE)", flexShrink: 0,
         animation: "redDotPulse 2s ease-in-out infinite",
       }} />
       <style>{`
@@ -2254,7 +2254,7 @@ function ShareButton({ obsId, onClick, prominent = false }: { obsId: string; onC
         style={{
           display: "inline-flex", alignItems: "center", gap: 5,
           background: "none", border: "none", cursor: "pointer", padding: "4px 0",
-          color: copied ? "#FF00AE" : "#FFF", fontSize: 13, fontWeight: 600, fontFamily: "inherit",
+          color: copied ? "var(--color-accent, #FF00AE)" : "#FFF", fontSize: 13, fontWeight: 600, fontFamily: "inherit",
           WebkitTapHighlightColor: "transparent",
           transition: "color 0.2s",
         }}
@@ -2275,7 +2275,7 @@ function ShareButton({ obsId, onClick, prominent = false }: { obsId: string; onC
       style={{
         display: "inline-flex", alignItems: "center", gap: 5,
         background: "none", border: "none", cursor: "pointer", padding: 0,
-        color: copied ? "#FF00AE" : "rgba(0,0,0,0.45)", fontSize: 10, fontFamily: "inherit",
+        color: copied ? "var(--color-accent, #FF00AE)" : "rgba(0,0,0,0.45)", fontSize: 10, fontFamily: "inherit",
         WebkitTapHighlightColor: "transparent",
         transition: "color 0.2s",
       }}
@@ -2457,7 +2457,7 @@ export default function App() {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 16, position: "relative", zIndex: 1 }}>
           <BurstIcon size={130} />
           <span style={{ fontSize: 25, fontWeight: 900, letterSpacing: -1.5, color: "#FFF", marginTop: -18, fontFamily: "var(--font-display, 'Besley', serif)" }}>
-            <span style={{ color: "#FF00AE" }}>hot</span>take
+            <span style={{ color: "var(--color-accent, #FF00AE)" }}>hot</span>take
           </span>
         </div>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
@@ -2470,7 +2470,7 @@ export default function App() {
           ? <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 14 }}>Signing in…</p>
           : <GoogleLogin onSuccess={handleGoogleSuccess} onError={() => setAuthError("Google sign-in failed")} theme="filled_black" shape="rectangular" text="continue_with" size="large" />
         }
-        {authError && <p style={{ color: "#FF00AE", fontSize: 13, marginTop: 16, textAlign: "center" }}>{authError}</p>}
+        {authError && <p style={{ color: "var(--color-accent, #FF00AE)", fontSize: 13, marginTop: 16, textAlign: "center" }}>{authError}</p>}
         <button
           onClick={handleAnonLogin}
           style={{ background: "none", border: "none", color: "rgba(255,255,255,0.28)", fontSize: 12, cursor: "pointer", marginTop: 28, padding: 0, textDecoration: "underline", fontFamily: "inherit", letterSpacing: -0.2 }}

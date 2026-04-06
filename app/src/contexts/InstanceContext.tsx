@@ -154,14 +154,34 @@ function applyDesignTokens(tokens: InstanceConfig["design_tokens"]) {
     root.style.setProperty("--color-light-bg", tokens.colors.primary.light_bg);
     root.style.setProperty("--color-white", tokens.colors.primary.white);
     root.style.setProperty("--color-dark-text", tokens.colors.primary.dark_text);
+    // Secondary colors
+    if (tokens.colors.backgrounds) {
+      root.style.setProperty("--color-secondary-bg", (tokens.colors.backgrounds as any).secondary ?? "#F0F0ED");
+      root.style.setProperty("--color-card-bg", (tokens.colors.backgrounds as any).card_white ?? "#FFFFFF");
+    }
+    if (tokens.colors.text) {
+      root.style.setProperty("--color-secondary-text", (tokens.colors.text as any).secondary_dark ?? "#888");
+    }
   }
 
   // Apply typography tokens
   if (tokens.typography) {
     root.style.setProperty("--font-system", tokens.typography.fonts.system);
     root.style.setProperty("--font-display", tokens.typography.fonts.display);
+    if (tokens.typography.sizes?.base) root.style.setProperty("--font-size-base", tokens.typography.sizes.base);
+    if (tokens.typography.weights?.bold !== undefined) root.style.setProperty("--font-weight-bold", String(tokens.typography.weights.bold));
     // Also update body font directly so all `font-family: inherit` elements pick it up
     document.body.style.fontFamily = tokens.typography.fonts.system;
+  }
+
+  // Layout tokens
+  if ((tokens.layout as any)?.max_width) {
+    root.style.setProperty("--max-content-width", (tokens.layout as any).max_width);
+  }
+
+  // Shadow tokens
+  if ((tokens.shadows as any)?.card) {
+    root.style.setProperty("--shadow-card", (tokens.shadows as any).card);
   }
 
   // Apply full-page background image (cover, fixed) directly to body
