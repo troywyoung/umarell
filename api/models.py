@@ -117,3 +117,23 @@ class PodcastFeed(Base):
     auto_ingest: Mapped[bool] = mapped_column(Boolean, default=False)
     last_checked_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+
+
+class PromptTestSuite(Base):
+    __tablename__ = "prompt_test_suites"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=_uuid)
+    name: Mapped[str] = mapped_column(String, unique=True)
+    description: Mapped[str | None] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
+
+
+class PromptTestQuery(Base):
+    __tablename__ = "prompt_test_queries"
+
+    id: Mapped[str] = mapped_column(String, primary_key=True, default=_uuid)
+    suite_id: Mapped[str] = mapped_column(String, ForeignKey("prompt_test_suites.id", ondelete="CASCADE"), index=True)
+    query_text: Mapped[str] = mapped_column(Text)
+    order_index: Mapped[int] = mapped_column(Float)  # Using Float for integer storage compatibility
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)

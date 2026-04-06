@@ -12,7 +12,7 @@ from jose import jwt, JWTError
 from pydantic import BaseModel
 import re
 from database import init_db, get_db, get_instance_db, get_instance_engine, AsyncSessionLocal, Base
-from models import Observation, User, Take, Instance, InstanceConfig, InstancePrompt, PodcastFeed
+from models import Observation, User, Take, Instance, InstanceConfig, InstancePrompt, PodcastFeed, PromptTestSuite, PromptTestQuery
 from schemas import ObservationCreate, ObservationOut, TakeCreate, TakeOut
 from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, generate_joke, ACTIVE_MODEL
 from config import settings
@@ -1341,6 +1341,31 @@ class PromptComparisonRequest(BaseModel):
     test_query: str
 
 
+class TestQueryInput(BaseModel):
+    id: str | None = None
+    query_text: str
+    order_index: int
+
+
+class TestSuiteCreate(BaseModel):
+    name: str
+    description: str | None = None
+    queries: list[str]
+
+
+class TestSuiteUpdate(BaseModel):
+    name: str | None = None
+    description: str | None = None
+    queries: list[TestQueryInput] | None = None
+
+
+class BatchComparisonRequest(BaseModel):
+    saved_prompt_key: str
+    draft_system: str
+    draft_max_tokens: int
+    suite_id: str
+
+
 @app.get("/instance/{instance_key}/config")
 async def get_instance_config(instance_key: str):
     """Get merged configuration for an instance (prompts + design tokens + ui_copy)."""
@@ -1475,6 +1500,298 @@ async def compare_prompts(
             "output": draft_output,
             "error": draft_error
         }
+    }
+
+
+@app.get("/admin/prompts/test-suites")
+async def list_test_suites(
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """List all test suites with query counts."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    result = await db.execute(select(PromptTestSuite).order_by(PromptTestSuite.created_at.desc()))
+    suites = result.scalars().all()
+
+    suite_list = []
+    for suite in suites:
+        query_result = await db.execute(
+            select(PromptTestQuery).where(PromptTestQuery.suite_id == suite.id)
+        )
+        queries = query_result.scalars().all()
+        suite_list.append({
+            "id": suite.id,
+            "name": suite.name,
+            "description": suite.description,
+            "query_count": len(queries),
+            "created_at": suite.created_at.isoformat()
+        })
+
+    return suite_list
+
+
+@app.post("/admin/prompts/test-suites")
+async def create_test_suite(
+    suite_data: TestSuiteCreate,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Create a new test suite."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    # Check if name already exists
+    result = await db.execute(
+        select(PromptTestSuite).where(PromptTestSuite.name == suite_data.name)
+    )
+    if result.scalar_one_or_none():
+        raise HTTPException(400, "A test suite with this name already exists")
+
+    # Create suite
+    suite = PromptTestSuite(
+        name=suite_data.name,
+        description=suite_data.description
+    )
+    db.add(suite)
+    await db.flush()
+
+    # Create queries
+    queries = []
+    for idx, query_text in enumerate(suite_data.queries):
+        query = PromptTestQuery(
+            suite_id=suite.id,
+            query_text=query_text,
+            order_index=idx
+        )
+        db.add(query)
+        queries.append(query)
+
+    await db.commit()
+    await db.refresh(suite)
+
+    return {
+        "id": suite.id,
+        "name": suite.name,
+        "description": suite.description,
+        "queries": [
+            {
+                "id": q.id,
+                "query_text": q.query_text,
+                "order_index": q.order_index
+            }
+            for q in queries
+        ]
+    }
+
+
+@app.get("/admin/prompts/test-suites/{suite_id}")
+async def get_test_suite(
+    suite_id: str,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Get a specific test suite with all queries."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    suite = await db.get(PromptTestSuite, suite_id)
+    if not suite:
+        raise HTTPException(404, "Test suite not found")
+
+    result = await db.execute(
+        select(PromptTestQuery)
+        .where(PromptTestQuery.suite_id == suite_id)
+        .order_by(PromptTestQuery.order_index)
+    )
+    queries = result.scalars().all()
+
+    return {
+        "id": suite.id,
+        "name": suite.name,
+        "description": suite.description,
+        "queries": [
+            {
+                "id": q.id,
+                "query_text": q.query_text,
+                "order_index": q.order_index
+            }
+            for q in queries
+        ]
+    }
+
+
+@app.put("/admin/prompts/test-suites/{suite_id}")
+async def update_test_suite(
+    suite_id: str,
+    suite_data: TestSuiteUpdate,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Update a test suite."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    suite = await db.get(PromptTestSuite, suite_id)
+    if not suite:
+        raise HTTPException(404, "Test suite not found")
+
+    # Update name and description
+    if suite_data.name is not None:
+        # Check for name conflicts (excluding current suite)
+        result = await db.execute(
+            select(PromptTestSuite)
+            .where(PromptTestSuite.name == suite_data.name)
+            .where(PromptTestSuite.id != suite_id)
+        )
+        if result.scalar_one_or_none():
+            raise HTTPException(400, "A test suite with this name already exists")
+        suite.name = suite_data.name
+
+    if suite_data.description is not None:
+        suite.description = suite_data.description
+
+    # Update queries if provided
+    if suite_data.queries is not None:
+        # Delete all existing queries
+        await db.execute(
+            text("DELETE FROM prompt_test_queries WHERE suite_id = :suite_id").bindparams(suite_id=suite_id)
+        )
+
+        # Create new queries
+        for query_input in suite_data.queries:
+            query = PromptTestQuery(
+                suite_id=suite_id,
+                query_text=query_input.query_text,
+                order_index=query_input.order_index
+            )
+            db.add(query)
+
+    await db.commit()
+    await db.refresh(suite)
+
+    # Get updated queries
+    result = await db.execute(
+        select(PromptTestQuery)
+        .where(PromptTestQuery.suite_id == suite_id)
+        .order_by(PromptTestQuery.order_index)
+    )
+    queries = result.scalars().all()
+
+    return {
+        "id": suite.id,
+        "name": suite.name,
+        "description": suite.description,
+        "queries": [
+            {
+                "id": q.id,
+                "query_text": q.query_text,
+                "order_index": q.order_index
+            }
+            for q in queries
+        ]
+    }
+
+
+@app.delete("/admin/prompts/test-suites/{suite_id}")
+async def delete_test_suite(
+    suite_id: str,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Delete a test suite (cascades to queries)."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    suite = await db.get(PromptTestSuite, suite_id)
+    if not suite:
+        raise HTTPException(404, "Test suite not found")
+
+    await db.delete(suite)
+    await db.commit()
+
+    return {"status": "deleted", "id": suite_id}
+
+
+@app.post("/admin/prompts/compare-suite")
+async def compare_suite(
+    comparison: BatchComparisonRequest,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Run batch comparison of saved vs draft prompt across entire test suite."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    import asyncio
+    from pipeline import _call
+
+    # Get saved prompt
+    saved = await get_prompt(comparison.saved_prompt_key)
+    if not saved:
+        raise HTTPException(404, "Saved prompt not found")
+
+    # Get test suite
+    suite = await db.get(PromptTestSuite, comparison.suite_id)
+    if not suite:
+        raise HTTPException(404, "Test suite not found")
+
+    # Get all queries
+    result = await db.execute(
+        select(PromptTestQuery)
+        .where(PromptTestQuery.suite_id == comparison.suite_id)
+        .order_by(PromptTestQuery.order_index)
+    )
+    queries = result.scalars().all()
+
+    if not queries:
+        raise HTTPException(400, "Test suite has no queries")
+
+    # Helper function to call with timeout
+    async def call_with_timeout(call_type: str, system: str, user: str, max_tokens: int):
+        try:
+            result = await asyncio.wait_for(
+                _call(system=system, user=user, max_tokens=max_tokens),
+                timeout=30.0
+            )
+            return result, None
+        except asyncio.TimeoutError:
+            return None, f"{call_type} timed out (30s)"
+        except Exception as e:
+            return None, f"{call_type} error: {str(e)}"
+
+    # Run comparisons for all queries
+    results = []
+    for query in queries:
+        saved_result, draft_result = await asyncio.gather(
+            call_with_timeout("Saved", saved["system"], query.query_text, saved["max_tokens"]),
+            call_with_timeout("Draft", comparison.draft_system, query.query_text, comparison.draft_max_tokens),
+            return_exceptions=True
+        )
+
+        # Handle exceptions
+        if isinstance(saved_result, Exception):
+            saved_output, saved_error = None, f"Saved failed: {str(saved_result)}"
+        else:
+            saved_output, saved_error = saved_result
+
+        if isinstance(draft_result, Exception):
+            draft_output, draft_error = None, f"Draft failed: {str(draft_result)}"
+        else:
+            draft_output, draft_error = draft_result
+
+        results.append({
+            "query_text": query.query_text,
+            "saved_output": saved_output,
+            "saved_error": saved_error,
+            "draft_output": draft_output,
+            "draft_error": draft_error
+        })
+
+    return {
+        "suite_name": suite.name,
+        "results": results
     }
 
 
