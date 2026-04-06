@@ -426,7 +426,6 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const accent = getScoreColor(target);
   const dim = size === "sm" ? 40 : size === "lg" ? 48 : 32;
   const fontSize = size === "sm" ? 14 : size === "lg" ? 17 : 11;
-  const flameFontSize = size === "sm" ? 18 : size === "lg" ? 22 : 14;
   const r = (dim - 4) / 2;
   const circ = 2 * Math.PI * r;
   const PINK = "#FF00AE";
