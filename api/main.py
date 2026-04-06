@@ -1399,6 +1399,38 @@ async def rescore_all(body: RescoreBody, db: AsyncSession = Depends(get_db)):
     }
 
 
+# ─── Migration: bulk restore summaries from backup ───────────────────────────
+
+class SummaryRestoreItem(BaseModel):
+    id: str
+    summary: str
+
+class SummaryRestoreBody(BaseModel):
+    admin_key: str
+    items: list[SummaryRestoreItem]
+
+@app.post("/admin/restore-summaries")
+async def restore_summaries(body: SummaryRestoreBody, db: AsyncSession = Depends(get_db)):
+    """Bulk-update summary field from backup data. Safe: only writes where summary is currently NULL."""
+    if body.admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    updated, skipped, not_found = 0, 0, 0
+    for item in body.items:
+        obs = await db.get(Observation, item.id)
+        if not obs:
+            not_found += 1
+            continue
+        if obs.summary:
+            skipped += 1
+            continue
+        obs.summary = item.summary
+        updated += 1
+
+    await db.commit()
+    return {"updated": updated, "skipped": skipped, "not_found": not_found, "total": len(body.items)}
+
+
 # ─── Migration: backfill hard_facts ─────────────────────────────────────────
 
 @app.post("/admin/backfill-hard-facts")
