@@ -4,6 +4,7 @@ import CreateInstanceWizard from './admin/CreateInstanceWizard';
 import InstanceEditor from './admin/InstanceEditor';
 import SimplifiedDesignEditor from './admin/SimplifiedDesignEditor';
 import PodcastIngestionForm from './admin/PodcastIngestionForm';
+import { diffWords } from 'diff';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8100';
 
@@ -288,6 +289,32 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
   //   }
   // };
 
+  const renderDiff = (oldText: string, newText: string) => {
+    const diff = diffWords(oldText || '', newText || '');
+    return (
+      <div style={{ fontFamily: 'monospace', fontSize: 12, whiteSpace: 'pre-wrap', lineHeight: 1.6 }}>
+        {diff.map((part, index) => {
+          const backgroundColor = part.added ? '#e6ffec' : part.removed ? '#ffe6e6' : 'transparent';
+          const color = part.added ? '#0d6832' : part.removed ? '#d73a49' : '#1A1A1A';
+          const textDecoration = part.removed ? 'line-through' : 'none';
+          return (
+            <span
+              key={index}
+              style={{
+                backgroundColor,
+                color,
+                textDecoration,
+                padding: part.added || part.removed ? '0 2px' : 0,
+              }}
+            >
+              {part.value}
+            </span>
+          );
+        })}
+      </div>
+    );
+  };
+
   const renderPromptList = () => {
     return (
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
@@ -528,6 +555,34 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
               {batchResults.results.filter((r: any) => r.saved_output !== r.draft_output).length} of{' '}
               {batchResults.results.length} queries showed differences
             </div>
+
+            {/* Aggregate Metrics */}
+            {batchResults.aggregate_metrics && (
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
+                <div style={{ padding: 12, background: '#FFF', borderRadius: 4, border: '1px solid #4CAF50' }}>
+                  <div style={{ fontSize: 11, fontWeight: 600, marginBottom: 8, color: '#666' }}>
+                    Saved Prompt Aggregate
+                  </div>
+                  <div style={{ fontSize: 12, display: 'flex', flexDirection: 'column', gap: 4 }}>
+                    <div>📊 Queries: {batchResults.aggregate_metrics.total_queries}</div>
+                    <div>⏱️ Avg Latency: {batchResults.aggregate_metrics.saved.avg_latency_ms}ms</div>
+                    <div>🔢 Avg Tokens: {batchResults.aggregate_metrics.saved.avg_tokens}</div>
+                    <div>💰 Total Cost: ${batchResults.aggregate_metrics.saved.total_cost_usd.toFixed(6)}</div>
+                  </div>
+                </div>
+                <div style={{ padding: 12, background: '#FFF', borderRadius: 4, border: '1px solid #FF00AE' }}>
+                  <div style={{ fontSize: 11, fontWeight: 600, marginBottom: 8, color: '#666' }}>
+                    Draft Prompt Aggregate
+                  </div>
+                  <div style={{ fontSize: 12, display: 'flex', flexDirection: 'column', gap: 4 }}>
+                    <div>📊 Queries: {batchResults.aggregate_metrics.total_queries}</div>
+                    <div>⏱️ Avg Latency: {batchResults.aggregate_metrics.draft.avg_latency_ms}ms</div>
+                    <div>🔢 Avg Tokens: {batchResults.aggregate_metrics.draft.avg_tokens}</div>
+                    <div>💰 Total Cost: ${batchResults.aggregate_metrics.draft.total_cost_usd.toFixed(6)}</div>
+                  </div>
+                </div>
+              </div>
+            )}
             {batchResults.results.map((result: any, idx: number) => (
               <details key={idx} style={{ marginBottom: 8 }}>
                 <summary
@@ -550,6 +605,40 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
                   <div style={{ fontSize: 13, marginBottom: 12, fontFamily: 'monospace', whiteSpace: 'pre-wrap' }}>
                     {result.query_text}
                   </div>
+
+                  {/* Per-query metrics */}
+                  {!result.saved_error && !result.draft_error && (
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8, marginBottom: 12 }}>
+                      <div style={{ fontSize: 11, padding: 6, background: '#F9F9F9', borderRadius: 4 }}>
+                        ⏱️ {result.saved_latency_ms}ms | 🔢 {result.saved_tokens} tokens
+                      </div>
+                      <div style={{ fontSize: 11, padding: 6, background: '#F9F9F9', borderRadius: 4 }}>
+                        ⏱️ {result.draft_latency_ms}ms | 🔢 {result.draft_tokens} tokens
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Diff view for queries without errors */}
+                  {!result.saved_error && !result.draft_error && (
+                    <div style={{ marginBottom: 12 }}>
+                      <div style={{ fontSize: 12, fontWeight: 600, marginBottom: 4, color: '#666' }}>
+                        Diff:
+                      </div>
+                      <div
+                        style={{
+                          padding: 8,
+                          background: '#F9F9F9',
+                          borderRadius: 4,
+                          maxHeight: 200,
+                          overflow: 'auto',
+                          border: '1px solid #CCC',
+                        }}
+                      >
+                        {renderDiff(result.saved_output, result.draft_output)}
+                      </div>
+                    </div>
+                  )}
+
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
                     <div>
                       <div style={{ fontSize: 12, fontWeight: 600, marginBottom: 4, color: '#666' }}>
@@ -603,6 +692,55 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
             <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>
               Comparison Results
             </div>
+
+            {/* Metrics Summary */}
+            {!comparisonResult.saved.error && !comparisonResult.draft.error && (
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
+                <div style={{ padding: 12, background: '#FFF', borderRadius: 4, border: '1px solid #4CAF50' }}>
+                  <div style={{ fontSize: 11, fontWeight: 600, marginBottom: 8, color: '#666' }}>
+                    Saved Prompt Metrics
+                  </div>
+                  <div style={{ fontSize: 12, display: 'flex', flexDirection: 'column', gap: 4 }}>
+                    <div>⏱️ Latency: {comparisonResult.saved.latency_ms}ms</div>
+                    <div>🔢 Tokens: {comparisonResult.saved.total_tokens} (in: {comparisonResult.saved.input_tokens}, out: {comparisonResult.saved.output_tokens})</div>
+                    <div>💰 Cost: ${comparisonResult.saved.estimated_cost_usd.toFixed(6)}</div>
+                  </div>
+                </div>
+                <div style={{ padding: 12, background: '#FFF', borderRadius: 4, border: '1px solid #FF00AE' }}>
+                  <div style={{ fontSize: 11, fontWeight: 600, marginBottom: 8, color: '#666' }}>
+                    Draft Prompt Metrics
+                  </div>
+                  <div style={{ fontSize: 12, display: 'flex', flexDirection: 'column', gap: 4 }}>
+                    <div>⏱️ Latency: {comparisonResult.draft.latency_ms}ms</div>
+                    <div>🔢 Tokens: {comparisonResult.draft.total_tokens} (in: {comparisonResult.draft.input_tokens}, out: {comparisonResult.draft.output_tokens})</div>
+                    <div>💰 Cost: ${comparisonResult.draft.estimated_cost_usd.toFixed(6)}</div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {/* Visual Diff */}
+            {!comparisonResult.saved.error && !comparisonResult.draft.error && (
+              <div style={{ marginBottom: 16 }}>
+                <div style={{ fontSize: 12, fontWeight: 600, marginBottom: 8, color: '#666' }}>
+                  Text Diff (Saved vs Draft)
+                </div>
+                <div
+                  style={{
+                    padding: 12,
+                    background: '#FFF',
+                    borderRadius: 4,
+                    maxHeight: 300,
+                    overflow: 'auto',
+                    border: '1px solid #CCC',
+                  }}
+                >
+                  {renderDiff(comparisonResult.saved.output, comparisonResult.draft.output)}
+                </div>
+              </div>
+            )}
+
+            {/* Side-by-side output */}
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               <div>
                 <div style={{ fontSize: 12, fontWeight: 600, marginBottom: 4, color: '#666' }}>

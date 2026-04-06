@@ -75,16 +75,21 @@ def _extract_sources(resp) -> list[dict]:
 
 # ─── Unified _call ────────────────────────────────────────────────────────
 
-async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5, use_search: bool = False) -> str | tuple[str, list[dict]]:
+async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5, use_search: bool = False, return_metadata: bool = False):
     if PROVIDER == "gemini":
-        return await _call_gemini(system, user, max_tokens, retries, use_search)
-    result = await _call_anthropic(system, user, max_tokens, retries)
+        return await _call_gemini(system, user, max_tokens, retries, use_search, return_metadata)
+    result = await _call_anthropic(system, user, max_tokens, retries, return_metadata)
+    if return_metadata and use_search:
+        # Add empty sources for Anthropic when search is requested but not supported
+        if isinstance(result, dict):
+            result["sources"] = []
+        return result
     if use_search:
         return result, []  # no search grounding for Anthropic
     return result
 
 
-async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, use_search: bool = False) -> str | tuple[str, list[dict]]:
+async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, use_search: bool = False, return_metadata: bool = False):
     tools = []
     if use_search:
         tools = [genai.types.Tool(google_search=genai.types.GoogleSearch())]
@@ -106,6 +111,23 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
                 config=config,
             )
             text = resp.text.strip()
+
+            if return_metadata:
+                # Gemini usage metadata
+                input_tokens = getattr(resp.usage_metadata, 'prompt_token_count', 0) if hasattr(resp, 'usage_metadata') else 0
+                output_tokens = getattr(resp.usage_metadata, 'candidates_token_count', 0) if hasattr(resp, 'usage_metadata') else 0
+                metadata = {
+                    "text": text,
+                    "input_tokens": input_tokens,
+                    "output_tokens": output_tokens,
+                    "model": GEMINI_MODEL
+                }
+                if use_search:
+                    sources = _extract_sources(resp)
+                    metadata["sources"] = sources
+                    return metadata
+                return metadata
+
             if use_search:
                 sources = _extract_sources(resp)
                 return text, sources
@@ -120,7 +142,7 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
                 raise
 
 
-async def _call_anthropic(system: str, user: str, max_tokens: int, retries: int) -> str:
+async def _call_anthropic(system: str, user: str, max_tokens: int, retries: int, return_metadata: bool = False):
     for attempt in range(retries):
         try:
             msg = await aclient.messages.create(
@@ -129,7 +151,15 @@ async def _call_anthropic(system: str, user: str, max_tokens: int, retries: int)
                 system=system,
                 messages=[{"role": "user", "content": user}],
             )
-            return msg.content[0].text.strip()
+            text = msg.content[0].text.strip()
+            if return_metadata:
+                return {
+                    "text": text,
+                    "input_tokens": msg.usage.input_tokens,
+                    "output_tokens": msg.usage.output_tokens,
+                    "model": msg.model
+                }
+            return text
         except APIStatusError as e:
             if e.status_code in (429, 529) and attempt < retries - 1:
                 wait = min(2 ** (attempt + 1), 30)

@@ -1436,6 +1436,7 @@ async def compare_prompts(
         raise HTTPException(403, "Admin access required")
 
     import asyncio
+    import time
     from pipeline import _call
 
     # Get saved prompt
@@ -1443,47 +1444,103 @@ async def compare_prompts(
     if not saved:
         raise HTTPException(404, "Saved prompt not found")
 
-    # Run both prompts with timeout and error handling
-    saved_output = None
-    saved_error = None
-    draft_output = None
-    draft_error = None
+    # Cost estimates (USD per 1M tokens) - approximations for Gemini Flash and Claude Haiku
+    COST_PER_1M_INPUT = 0.075  # Gemini Flash / Claude Haiku input
+    COST_PER_1M_OUTPUT = 0.30  # Gemini Flash / Claude Haiku output
 
-    async def call_with_timeout(call_type: str, system: str, user: str, max_tokens: int):
+    async def call_with_metadata(call_type: str, system: str, user: str, max_tokens: int):
         try:
+            start_time = time.time()
             result = await asyncio.wait_for(
-                _call(system=system, user=user, max_tokens=max_tokens),
+                _call(system=system, user=user, max_tokens=max_tokens, return_metadata=True),
                 timeout=30.0
             )
-            return result, None
+            latency = time.time() - start_time
+
+            if isinstance(result, dict):
+                input_tokens = result.get("input_tokens", 0)
+                output_tokens = result.get("output_tokens", 0)
+                total_tokens = input_tokens + output_tokens
+                cost = (input_tokens / 1_000_000 * COST_PER_1M_INPUT) + (output_tokens / 1_000_000 * COST_PER_1M_OUTPUT)
+
+                return {
+                    "output": result.get("text", ""),
+                    "error": None,
+                    "latency_ms": round(latency * 1000),
+                    "input_tokens": input_tokens,
+                    "output_tokens": output_tokens,
+                    "total_tokens": total_tokens,
+                    "estimated_cost_usd": round(cost, 6)
+                }
+            else:
+                # Fallback if metadata not returned
+                return {
+                    "output": str(result),
+                    "error": None,
+                    "latency_ms": round(latency * 1000),
+                    "input_tokens": 0,
+                    "output_tokens": 0,
+                    "total_tokens": 0,
+                    "estimated_cost_usd": 0
+                }
         except asyncio.TimeoutError:
-            return None, f"{call_type} prompt timed out after 30s. Try a simpler test query or reduce max_tokens."
+            return {
+                "output": None,
+                "error": f"{call_type} prompt timed out after 30s. Try a simpler test query or reduce max_tokens.",
+                "latency_ms": 30000,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+                "estimated_cost_usd": 0
+            }
         except Exception as e:
             error_msg = str(e)
             if "API" in error_msg or "api" in error_msg:
-                return None, f"{call_type} prompt failed: {error_msg}. Check your API key or try again."
+                error = f"{call_type} prompt failed: {error_msg}. Check your API key or try again."
             elif "network" in error_msg.lower() or "connection" in error_msg.lower():
-                return None, f"{call_type} prompt failed: Network error. Check your connection and retry."
+                error = f"{call_type} prompt failed: Network error. Check your connection and retry."
             else:
-                return None, f"{call_type} prompt failed: {error_msg}"
+                error = f"{call_type} prompt failed: {error_msg}"
+
+            return {
+                "output": None,
+                "error": error,
+                "latency_ms": 0,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+                "estimated_cost_usd": 0
+            }
 
     # Run both prompts concurrently
     saved_result, draft_result = await asyncio.gather(
-        call_with_timeout("Saved", saved["system"], comparison.test_query, saved["max_tokens"]),
-        call_with_timeout("Draft", comparison.draft_system, comparison.test_query, comparison.draft_max_tokens),
+        call_with_metadata("Saved", saved["system"], comparison.test_query, saved["max_tokens"]),
+        call_with_metadata("Draft", comparison.draft_system, comparison.test_query, comparison.draft_max_tokens),
         return_exceptions=True
     )
 
     # Handle results (including exceptions from gather)
     if isinstance(saved_result, Exception):
-        saved_error = f"Saved prompt failed: {str(saved_result)}"
-    else:
-        saved_output, saved_error = saved_result
+        saved_result = {
+            "output": None,
+            "error": f"Saved prompt failed: {str(saved_result)}",
+            "latency_ms": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0,
+            "estimated_cost_usd": 0
+        }
 
     if isinstance(draft_result, Exception):
-        draft_error = f"Draft prompt failed: {str(draft_result)}"
-    else:
-        draft_output, draft_error = draft_result
+        draft_result = {
+            "output": None,
+            "error": f"Draft prompt failed: {str(draft_result)}",
+            "latency_ms": 0,
+            "input_tokens": 0,
+            "output_tokens": 0,
+            "total_tokens": 0,
+            "estimated_cost_usd": 0
+        }
 
     return {
         "test_query": comparison.test_query,
@@ -1491,16 +1548,23 @@ async def compare_prompts(
             "name": saved["name"],
             "system": saved["system"],
             "max_tokens": saved["max_tokens"],
-            "output": saved_output,
-            "error": saved_error
+            **saved_result
         },
         "draft": {
             "system": comparison.draft_system,
             "max_tokens": comparison.draft_max_tokens,
-            "output": draft_output,
-            "error": draft_error
+            **draft_result
         }
     }
+
+
+@app.post("/admin/prompts/preview")
+async def preview_prompt(
+    comparison: PromptComparisonRequest,
+    current_user: User = Depends(require_user)
+):
+    """Alias for compare endpoint - preview a draft prompt against saved version."""
+    return await compare_prompts(comparison, current_user)
 
 
 @app.get("/admin/prompts/test-suites")
@@ -1725,6 +1789,7 @@ async def compare_suite(
         raise HTTPException(403, "Admin access required")
 
     import asyncio
+    import time
     from pipeline import _call
 
     # Get saved prompt
@@ -1748,50 +1813,142 @@ async def compare_suite(
     if not queries:
         raise HTTPException(400, "Test suite has no queries")
 
-    # Helper function to call with timeout
-    async def call_with_timeout(call_type: str, system: str, user: str, max_tokens: int):
+    # Cost estimates (USD per 1M tokens)
+    COST_PER_1M_INPUT = 0.075
+    COST_PER_1M_OUTPUT = 0.30
+
+    # Helper function to call with timeout and metadata
+    async def call_with_metadata(call_type: str, system: str, user: str, max_tokens: int):
         try:
+            start_time = time.time()
             result = await asyncio.wait_for(
-                _call(system=system, user=user, max_tokens=max_tokens),
+                _call(system=system, user=user, max_tokens=max_tokens, return_metadata=True),
                 timeout=30.0
             )
-            return result, None
+            latency = time.time() - start_time
+
+            if isinstance(result, dict):
+                input_tokens = result.get("input_tokens", 0)
+                output_tokens = result.get("output_tokens", 0)
+                total_tokens = input_tokens + output_tokens
+                cost = (input_tokens / 1_000_000 * COST_PER_1M_INPUT) + (output_tokens / 1_000_000 * COST_PER_1M_OUTPUT)
+
+                return {
+                    "output": result.get("text", ""),
+                    "error": None,
+                    "latency_ms": round(latency * 1000),
+                    "input_tokens": input_tokens,
+                    "output_tokens": output_tokens,
+                    "total_tokens": total_tokens,
+                    "estimated_cost_usd": round(cost, 6)
+                }
+            else:
+                return {
+                    "output": str(result),
+                    "error": None,
+                    "latency_ms": round(latency * 1000),
+                    "input_tokens": 0,
+                    "output_tokens": 0,
+                    "total_tokens": 0,
+                    "estimated_cost_usd": 0
+                }
         except asyncio.TimeoutError:
-            return None, f"{call_type} timed out (30s)"
+            return {
+                "output": None,
+                "error": f"{call_type} timed out (30s)",
+                "latency_ms": 30000,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+                "estimated_cost_usd": 0
+            }
         except Exception as e:
-            return None, f"{call_type} error: {str(e)}"
+            return {
+                "output": None,
+                "error": f"{call_type} error: {str(e)}",
+                "latency_ms": 0,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+                "estimated_cost_usd": 0
+            }
 
     # Run comparisons for all queries
     results = []
+    total_saved_tokens = 0
+    total_draft_tokens = 0
+    total_saved_latency = 0
+    total_draft_latency = 0
+    total_saved_cost = 0
+    total_draft_cost = 0
+
     for query in queries:
         saved_result, draft_result = await asyncio.gather(
-            call_with_timeout("Saved", saved["system"], query.query_text, saved["max_tokens"]),
-            call_with_timeout("Draft", comparison.draft_system, query.query_text, comparison.draft_max_tokens),
+            call_with_metadata("Saved", saved["system"], query.query_text, saved["max_tokens"]),
+            call_with_metadata("Draft", comparison.draft_system, query.query_text, comparison.draft_max_tokens),
             return_exceptions=True
         )
 
         # Handle exceptions
         if isinstance(saved_result, Exception):
-            saved_output, saved_error = None, f"Saved failed: {str(saved_result)}"
-        else:
-            saved_output, saved_error = saved_result
+            saved_result = {
+                "output": None,
+                "error": f"Saved failed: {str(saved_result)}",
+                "latency_ms": 0,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+                "estimated_cost_usd": 0
+            }
 
         if isinstance(draft_result, Exception):
-            draft_output, draft_error = None, f"Draft failed: {str(draft_result)}"
-        else:
-            draft_output, draft_error = draft_result
+            draft_result = {
+                "output": None,
+                "error": f"Draft failed: {str(draft_result)}",
+                "latency_ms": 0,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "total_tokens": 0,
+                "estimated_cost_usd": 0
+            }
+
+        # Accumulate totals
+        total_saved_tokens += saved_result.get("total_tokens", 0)
+        total_draft_tokens += draft_result.get("total_tokens", 0)
+        total_saved_latency += saved_result.get("latency_ms", 0)
+        total_draft_latency += draft_result.get("latency_ms", 0)
+        total_saved_cost += saved_result.get("estimated_cost_usd", 0)
+        total_draft_cost += draft_result.get("estimated_cost_usd", 0)
 
         results.append({
             "query_text": query.query_text,
-            "saved_output": saved_output,
-            "saved_error": saved_error,
-            "draft_output": draft_output,
-            "draft_error": draft_error
+            "saved_output": saved_result.get("output"),
+            "saved_error": saved_result.get("error"),
+            "saved_latency_ms": saved_result.get("latency_ms"),
+            "saved_tokens": saved_result.get("total_tokens"),
+            "draft_output": draft_result.get("output"),
+            "draft_error": draft_result.get("error"),
+            "draft_latency_ms": draft_result.get("latency_ms"),
+            "draft_tokens": draft_result.get("total_tokens")
         })
 
+    num_queries = len(queries)
     return {
         "suite_name": suite.name,
-        "results": results
+        "results": results,
+        "aggregate_metrics": {
+            "total_queries": num_queries,
+            "saved": {
+                "avg_latency_ms": round(total_saved_latency / num_queries) if num_queries > 0 else 0,
+                "avg_tokens": round(total_saved_tokens / num_queries) if num_queries > 0 else 0,
+                "total_cost_usd": round(total_saved_cost, 6)
+            },
+            "draft": {
+                "avg_latency_ms": round(total_draft_latency / num_queries) if num_queries > 0 else 0,
+                "avg_tokens": round(total_draft_tokens / num_queries) if num_queries > 0 else 0,
+                "total_cost_usd": round(total_draft_cost, 6)
+            }
+        }
     }
 
 
