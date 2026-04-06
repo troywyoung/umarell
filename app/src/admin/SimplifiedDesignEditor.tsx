@@ -110,9 +110,6 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
     ['primary_accent', 'button_color', 'dark_background', 'light_background',
      'secondary_background', 'card_background', 'dark_text', 'secondary_text'].includes(key);
 
-  const isTextOnlyToken = (key: string) =>
-    ['body_font_family', 'display_font_family', 'feed_background_image'].includes(key);
-
   const hasUnsavedChanges = () =>
     Object.keys(editedTokens).some(key => editedTokens[key] !== savedTokens[key]);
 
