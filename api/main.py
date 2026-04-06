@@ -114,6 +114,12 @@ async def lifespan(app: FastAPI):
             .where(Observation.status.in_(["formatting", "researching"]))
             .values(status="error", error_detail="Pipeline interrupted by server restart")
         )
+        # Fix any NULL pinned values so model_validate doesn't fail
+        await db.execute(
+            update(Observation)
+            .where(Observation.pinned.is_(None))
+            .values(pinned=False)
+        )
         await db.commit()
 
         # One-time fix: restore YouTube URL as episode source for existing episode posts
@@ -492,6 +498,11 @@ async def _attach_user_names(db: AsyncSession, observations: list[Observation]) 
                 "score": o.score,
                 "tags": [],
                 "episode_tag": o.episode_tag,
+                "episode_title": o.episode_title,
+                "sources": o.sources,
+                "summary": o.summary,
+                "parent_id": o.parent_id,
+                "pinned": bool(o.pinned) if o.pinned is not None else False,
             }
         # Episode posts show podcast name (stored in context field) or "PvA" fallback; regular posts show the user's name
         d["user_name"] = (o.context or "PvA") if o.episode_tag else (user_map.get(o.user_id) if o.user_id else "Anonymous")
