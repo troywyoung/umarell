@@ -30,23 +30,47 @@ class Base(DeclarativeBase):
     pass
 
 
-def _add_missing_columns(conn):
-    """Add any columns that exist in the model but not in the DB (poor-man's migration)."""
-    inspector = sa.inspect(conn)
-    for table_name, table in Base.metadata.tables.items():
-        if not inspector.has_table(table_name):
-            continue
-        existing = {c["name"] for c in inspector.get_columns(table_name)}
-        for col in table.columns:
-            if col.name not in existing:
-                col_type = col.type.compile(dialect=conn.dialect)
-                conn.execute(sa.text(f"ALTER TABLE {table_name} ADD COLUMN {col.name} {col_type}"))
+async def _add_missing_columns_async(eng):
+    """Add any ORM columns that don't exist in the DB yet.
+    Uses ADD COLUMN IF NOT EXISTS (Postgres) so reruns are safe.
+    Each column is its own transaction so one failure doesn't block others."""
+    def _collect(conn):
+        insp = sa.inspect(conn)
+        result = []
+        for table_name, table in Base.metadata.tables.items():
+            if not insp.has_table(table_name):
+                continue
+            existing = {c["name"] for c in insp.get_columns(table_name)}
+            for col in table.columns:
+                if col.name not in existing:
+                    col_type = col.type.compile(dialect=conn.dialect)
+                    result.append((table_name, col.name, col_type))
+        return result
+
+    try:
+        async with eng.connect() as conn:
+            to_add = await conn.run_sync(_collect)
+    except Exception as e:
+        print(f"[db] migration inspection failed: {e}")
+        return
+
+    for table_name, col_name, col_type in to_add:
+        try:
+            async with eng.begin() as conn:
+                # IF NOT EXISTS avoids error if another process beat us to it
+                await conn.execute(sa.text(
+                    f"ALTER TABLE {table_name} ADD COLUMN IF NOT EXISTS {col_name} {col_type}"
+                ))
+            print(f"[db] added column {table_name}.{col_name}")
+        except Exception as e:
+            print(f"[db] could not add column {table_name}.{col_name}: {e}")
 
 
 async def init_db():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
-        await conn.run_sync(_add_missing_columns)
+    # Run column additions in separate connections so each can fail independently
+    await _add_missing_columns_async(engine)
 
 
 async def get_db():
