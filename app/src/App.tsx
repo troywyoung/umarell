@@ -812,8 +812,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             .slice(0, 8)
             .map(([tag]) => tag);
 
-          // All posts in chronological order — episode posts dispersed in feed, not pinned
+          // All posts in chronological order — pinned posts always float to top
           const rankScore = (o: Observation) => {
+            if (o.pinned) return Infinity;
             const hoursAgo = (Date.now() - new Date(o.created_at).getTime()) / 3600000;
             const takes = (takesMap[o.id] || []).length;
             const challenges = (challengeMap.get(o.id) || []).length;
@@ -854,10 +855,21 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   cursor: "pointer", overflow: "hidden",
                 }}
               >
-                {obs.user_name && (
+                {(obs.user_name || authUser?.is_admin) && (
                   <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: isCollection ? "var(--color-accent, #FF00AE)" : "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1, display: "flex", alignItems: "center", gap: 4 }}>
-                    <span>{obs.user_name}</span>
+                    {obs.user_name && <span>{obs.user_name}</span>}
                     {obs.episode_tag && (() => { const eps = topLevel.filter((o: Observation) => o.episode_tag === obs.episode_tag); const idx = eps.findIndex((o: Observation) => o.id === obs.id) + 1; return idx > 0 ? <span style={{ fontWeight: 400, color: "#999", opacity: 0.6 }}>({idx}/{eps.length})</span> : null; })()}
+                    {authUser?.is_admin && (
+                      <button
+                        onClick={async (e) => {
+                          e.stopPropagation();
+                          await fetch(`${API}/hot-takes/observations/${obs.id}/pin`, { method: "PATCH", headers: authHeaders() });
+                          fetchObservations();
+                        }}
+                        style={{ background: "none", border: "none", cursor: "pointer", padding: "0 2px", fontSize: 9, opacity: obs.pinned ? 1 : 0.3, lineHeight: 1 }}
+                        title={obs.pinned ? "Unpin" : "Pin to top"}
+                      >📌</button>
+                    )}
                   </p>
                 )}
                 <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: obs.user_name ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>

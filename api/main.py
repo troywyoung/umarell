@@ -797,6 +797,24 @@ async def anonymize_observation(
     return {"ok": True}
 
 
+@app.patch("/observations/{obs_id}/pin", status_code=200)
+async def pin_observation(
+    obs_id: str,
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
+    current_user: User | None = Depends(get_current_user),
+):
+    """Admin-only: toggle pin on an observation to force it to the top of the feed."""
+    if not current_user or not _is_admin(current_user):
+        raise HTTPException(403, "Admin only")
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404)
+    obs.pinned = not obs.pinned
+    await db.commit()
+    return {"ok": True, "pinned": obs.pinned}
+
+
 # ─── Episode seed ───────────────────────────────────────────────────────────
 
 class EpisodeSeed(BaseModel):

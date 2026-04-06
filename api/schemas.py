@@ -60,4 +60,5 @@ class ObservationOut(BaseModel):
     episode_tag: Optional[str] = None
     episode_title: Optional[str] = None
     category: Optional[str] = None
+    pinned: bool = False
     created_at: datetime

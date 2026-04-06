@@ -59,5 +59,6 @@ export interface Observation {
   episode_tag?: string;
   episode_title?: string;
   category?: string;
+  pinned?: boolean;
   created_at: string;
 }
