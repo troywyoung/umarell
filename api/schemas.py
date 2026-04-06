@@ -59,6 +59,5 @@ class ObservationOut(BaseModel):
     pva_take: Optional[dict] = None
     episode_tag: Optional[str] = None
     episode_title: Optional[str] = None
-    episode_url: Optional[str] = None
     category: Optional[str] = None
     created_at: datetime

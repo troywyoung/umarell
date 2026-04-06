@@ -58,7 +58,6 @@ export interface Observation {
   pva_take?: PvaTake;
   episode_tag?: string;
   episode_title?: string;
-  episode_url?: string;
   category?: string;
   created_at: string;
 }
