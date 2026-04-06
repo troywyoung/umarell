@@ -258,15 +258,28 @@ async def get_prompt(key: str, instance_key: str = "hot-takes") -> dict:
             db_prompt = result.scalar_one_or_none()
 
             if db_prompt:
-                return {
+                prompt_data = {
                     "name": db_prompt.name,
                     "description": db_prompt.description,
                     "system": db_prompt.system,
                     "max_tokens": int(db_prompt.max_tokens)
                 }
+                # Include model if present, otherwise get fallback
+                if db_prompt.model:
+                    prompt_data["model"] = db_prompt.model
+                else:
+                    # Import here to avoid circular dependency
+                    from pipeline import ACTIVE_MODEL
+                    prompt_data["model"] = ACTIVE_MODEL
+                return prompt_data
 
     # Fallback to module defaults
-    return PROMPTS.get(key, {})
+    default_prompt = PROMPTS.get(key, {})
+    if default_prompt and "model" not in default_prompt:
+        # Import here to avoid circular dependency
+        from pipeline import ACTIVE_MODEL
+        default_prompt = {**default_prompt, "model": ACTIVE_MODEL}
+    return default_prompt
 
 
 async def get_all_prompts(instance_key: str = "hot-takes") -> dict:
@@ -289,18 +302,30 @@ async def get_all_prompts(instance_key: str = "hot-takes") -> dict:
             db_prompts = result.scalars().all()
 
             if db_prompts:
+                # Import here to avoid circular dependency
+                from pipeline import ACTIVE_MODEL
                 prompts = {}
                 for p in db_prompts:
-                    prompts[p.prompt_key] = {
+                    prompt_data = {
                         "name": p.name,
                         "description": p.description,
                         "system": p.system,
                         "max_tokens": int(p.max_tokens)
                     }
+                    # Include model if present, otherwise use fallback
+                    prompt_data["model"] = p.model if p.model else ACTIVE_MODEL
+                    prompts[p.prompt_key] = prompt_data
                 return prompts
 
-    # Fallback to module defaults
-    return PROMPTS
+    # Fallback to module defaults with active model
+    from pipeline import ACTIVE_MODEL
+    prompts_with_model = {}
+    for key, prompt in PROMPTS.items():
+        prompt_data = {**prompt}
+        if "model" not in prompt_data:
+            prompt_data["model"] = ACTIVE_MODEL
+        prompts_with_model[key] = prompt_data
+    return prompts_with_model
 
 
 async def update_prompt(key: str, updates: dict, instance_key: str = "hot-takes") -> bool:
@@ -308,7 +333,7 @@ async def update_prompt(key: str, updates: dict, instance_key: str = "hot-takes"
 
     Args:
         key: Prompt identifier
-        updates: Dict with 'name', 'description', 'system', or 'max_tokens'
+        updates: Dict with 'name', 'description', 'system', 'max_tokens', or 'model'
         instance_key: Instance identifier
 
     Returns:
@@ -349,7 +374,7 @@ async def update_prompt(key: str, updates: dict, instance_key: str = "hot-takes"
             db.add(prompt)
 
         # Apply updates
-        for field in ['name', 'description', 'system', 'max_tokens']:
+        for field in ['name', 'description', 'system', 'max_tokens', 'model']:
             if field in updates:
                 setattr(prompt, field, updates[field])
 

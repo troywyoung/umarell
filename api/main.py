@@ -1327,6 +1327,7 @@ class PromptUpdate(BaseModel):
     description: str | None = None
     system: str | None = None
     max_tokens: int | None = None
+    model: str | None = None
 
 
 class DesignTokenUpdate(BaseModel):
@@ -1419,6 +1420,8 @@ async def update_prompt_config(
         update_data["system"] = updates.system
     if updates.max_tokens is not None:
         update_data["max_tokens"] = updates.max_tokens
+    if updates.model is not None:
+        update_data["model"] = updates.model
 
     if not await update_prompt(prompt_key, update_data):
         raise HTTPException(404, "Prompt not found")

@@ -104,6 +104,7 @@ class InstancePrompt(Base):
     description: Mapped[str] = mapped_column(Text)
     system: Mapped[str] = mapped_column(Text)
     max_tokens: Mapped[int] = mapped_column(Float)  # Using Float for integer storage compatibility
+    model: Mapped[str | None] = mapped_column(String, nullable=True)
     is_default: Mapped[bool] = mapped_column(Boolean, default=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now, onupdate=_now)
 

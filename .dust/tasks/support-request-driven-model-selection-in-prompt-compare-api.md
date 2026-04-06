@@ -8,7 +8,7 @@ implement
 
 ## Blocked By
 
-- [Show Prompt Model In Admin](show-prompt-model-in-admin.md)
+(none)
 
 
 ## Definition of Done

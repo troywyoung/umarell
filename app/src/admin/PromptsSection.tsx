@@ -8,6 +8,7 @@ interface Prompt {
   description: string;
   system: string;
   max_tokens: number;
+  model?: string;
 }
 
 interface TestQuery {
@@ -268,6 +269,11 @@ export default function PromptsSection() {
                 <div style={{ fontSize: 11, opacity: 0.7, marginTop: 4 }}>
                   {prompt.description}
                 </div>
+                {prompt.model && (
+                  <div style={{ fontSize: 10, marginTop: 4, opacity: 0.6, fontFamily: 'monospace' }}>
+                    {prompt.model}
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -362,6 +368,28 @@ export default function PromptsSection() {
                     borderRadius: 4,
                   }}
                 />
+              </div>
+
+              <div style={{ marginBottom: 20 }}>
+                <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
+                  Model
+                </label>
+                <input
+                  type="text"
+                  value={editingPrompt.model || ''}
+                  onChange={(e) => setEditingPrompt({ ...editingPrompt, model: e.target.value || undefined })}
+                  placeholder="Default active model"
+                  style={{
+                    width: '100%',
+                    padding: 8,
+                    fontSize: 14,
+                    border: '1px solid #CCC',
+                    borderRadius: 4,
+                  }}
+                />
+                <div style={{ fontSize: 11, color: '#888', marginTop: 4 }}>
+                  Leave empty to use the current active model ({editingPrompt.model || 'fallback'})
+                </div>
               </div>
 
               {/* Test Comparison Section */}
