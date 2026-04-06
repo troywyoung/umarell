@@ -815,7 +815,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           // All posts in chronological order — episode posts dispersed in feed, not pinned
           const rankScore = (o: Observation) => {
             const hoursAgo = (Date.now() - new Date(o.created_at).getTime()) / 3600000;
-            return (o.score || 0) / Math.pow(hoursAgo + 2, 1.6);
+            return (o.score || 0) / Math.pow(hoursAgo + 2, 0.8);
           };
           const filteredPosts = selectedTopic === "__top__"
             ? [...topLevel].sort((a, b) => rankScore(b) - rankScore(a))
