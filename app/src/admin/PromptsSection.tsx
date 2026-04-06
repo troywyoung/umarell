@@ -26,6 +26,14 @@ interface TestSuite {
   created_at?: string;
 }
 
+interface Sample {
+  id: string;
+  label: string;
+  text: string;
+  thesis: string;
+  created_at: string | null;
+}
+
 export default function PromptsSection() {
   const [prompts, setPrompts] = useState<Record<string, Prompt>>({});
   const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
@@ -40,6 +48,9 @@ export default function PromptsSection() {
   const [selectedSuite, setSelectedSuite] = useState<string | null>(null);
   const [batchResults, setBatchResults] = useState<any | null>(null);
   const [previewModel, setPreviewModel] = useState<string>('');
+  const [samples, setSamples] = useState<Sample[]>([]);
+  const [selectedSampleIds, setSelectedSampleIds] = useState<Set<string>>(new Set());
+  const [loadingSamples, setLoadingSamples] = useState(false);
 
   useEffect(() => {
     loadData();
@@ -169,6 +180,75 @@ export default function PromptsSection() {
       if (!res.ok) {
         const errorText = await res.text();
         throw new Error(`Failed to run suite comparison: ${errorText}`);
+      }
+      const result = await res.json();
+      setBatchResults(result);
+    } catch (err: any) {
+      setError(err.message || 'Network error. Check your connection and retry.');
+    } finally {
+      setComparing(false);
+    }
+  };
+
+  const loadSamples = async () => {
+    setLoadingSamples(true);
+    try {
+      const token = localStorage.getItem('sm_token');
+      const res = await fetch(`${API_BASE}/admin/prompts/samples?limit=5`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      if (!res.ok) throw new Error('Failed to load samples');
+      const data: Sample[] = await res.json();
+      setSamples(data);
+      // Default: select all
+      setSelectedSampleIds(new Set(data.map((s) => s.id)));
+    } catch (err: any) {
+      setError(err.message);
+    } finally {
+      setLoadingSamples(false);
+    }
+  };
+
+  const toggleSample = (id: string) => {
+    setSelectedSampleIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
+  };
+
+  const runSamplesComparison = async () => {
+    if (!selectedPrompt || !editingPrompt || selectedSampleIds.size === 0) {
+      setError('Select at least one sample');
+      return;
+    }
+    const queries = samples
+      .filter((s) => selectedSampleIds.has(s.id))
+      .map((s) => s.text);
+    setComparing(true);
+    setError(null);
+    setBatchResults(null);
+    setComparisonResult(null);
+    try {
+      const token = localStorage.getItem('sm_token');
+      const res = await fetch(`${API_BASE}/admin/prompts/compare-samples`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify({
+          saved_prompt_key: selectedPrompt,
+          draft_system: editingPrompt.system,
+          draft_max_tokens: editingPrompt.max_tokens,
+          queries,
+          preview_model: previewModel || undefined,
+        }),
+      });
+      if (!res.ok) {
+        const errorText = await res.text();
+        throw new Error(`Samples comparison failed: ${errorText}`);
       }
       const result = await res.json();
       setBatchResults(result);
@@ -439,6 +519,80 @@ export default function PromptsSection() {
                     <div style={{ fontSize: 11, color: '#888', marginTop: 4 }}>
                       Model to use for comparison preview (doesn't affect saved prompt)
                     </div>
+                  </div>
+
+                  {/* Live Samples */}
+                  <div style={{ marginBottom: 16 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
+                      <label style={{ fontSize: 12, fontWeight: 700, color: '#444' }}>
+                        Live Samples from DB{' '}
+                        <span style={{ fontWeight: 400, color: '#888' }}>
+                          ({selectedSampleIds.size} selected)
+                        </span>
+                      </label>
+                      <button
+                        onClick={loadSamples}
+                        disabled={loadingSamples}
+                        style={{
+                          padding: '4px 10px', fontSize: 11, fontWeight: 600,
+                          background: '#F0F0ED', color: '#444', border: 'none',
+                          borderRadius: 4, cursor: loadingSamples ? 'not-allowed' : 'pointer',
+                          opacity: loadingSamples ? 0.6 : 1,
+                        }}
+                      >
+                        {loadingSamples ? 'Loading…' : samples.length ? 'Refresh' : 'Load 5 Samples'}
+                      </button>
+                    </div>
+
+                    {samples.length > 0 && (
+                      <>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 10 }}>
+                          {samples.map((s) => (
+                            <label
+                              key={s.id}
+                              style={{
+                                display: 'flex', alignItems: 'flex-start', gap: 8,
+                                padding: '7px 10px',
+                                background: selectedSampleIds.has(s.id) ? '#FFF0FB' : '#F9F9F9',
+                                border: `1px solid ${selectedSampleIds.has(s.id) ? '#FF00AE44' : '#EEE'}`,
+                                borderRadius: 6, cursor: 'pointer', fontSize: 12, lineHeight: 1.4,
+                              }}
+                            >
+                              <input
+                                type="checkbox"
+                                checked={selectedSampleIds.has(s.id)}
+                                onChange={() => toggleSample(s.id)}
+                                style={{ marginTop: 2, flexShrink: 0 }}
+                              />
+                              <div style={{ minWidth: 0 }}>
+                                <div style={{ color: '#1A1A1A', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                  {s.label}
+                                </div>
+                                {s.thesis && (
+                                  <div style={{ color: '#888', fontSize: 11, marginTop: 2, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                    → {s.thesis}
+                                  </div>
+                                )}
+                              </div>
+                            </label>
+                          ))}
+                        </div>
+                        <button
+                          onClick={runSamplesComparison}
+                          disabled={comparing || selectedSampleIds.size === 0}
+                          style={{
+                            width: '100%', padding: 8,
+                            background: selectedSampleIds.size === 0 ? '#CCC' : '#FF00AE',
+                            color: '#FFF', border: 'none', borderRadius: 4,
+                            fontWeight: 700, fontSize: 13,
+                            cursor: (comparing || selectedSampleIds.size === 0) ? 'not-allowed' : 'pointer',
+                            opacity: (comparing || selectedSampleIds.size === 0) ? 0.6 : 1,
+                          }}
+                        >
+                          {comparing ? 'Running…' : `Run on ${selectedSampleIds.size} Sample${selectedSampleIds.size !== 1 ? 's' : ''}`}
+                        </button>
+                      </>
+                    )}
                   </div>
 
                   {/* Test Suite Selector */}

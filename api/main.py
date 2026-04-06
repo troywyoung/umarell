@@ -1982,6 +1982,149 @@ async def compare_suite(
     }
 
 
+@app.get("/admin/prompts/samples")
+async def get_prompt_samples(
+    limit: int = 5,
+    current_user: User = Depends(require_user),
+    db: AsyncSession = Depends(get_db)
+):
+    """Return recent observations to use as live test samples for prompt comparison."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+
+    limit = max(1, min(limit, 10))
+    result = await db.execute(
+        select(Observation)
+        .where(Observation.raw_input.isnot(None))
+        .where(Observation.raw_input != "")
+        .order_by(Observation.created_at.desc())
+        .limit(limit)
+    )
+    obs = result.scalars().all()
+    return [
+        {
+            "id": o.id,
+            "label": (o.raw_input[:80] + "…") if len(o.raw_input) > 80 else o.raw_input,
+            "text": o.raw_input,
+            "thesis": o.thesis or "",
+            "created_at": o.created_at.isoformat() if o.created_at else None,
+        }
+        for o in obs
+    ]
+
+
+class SampleComparisonRequest(BaseModel):
+    saved_prompt_key: str
+    draft_system: str
+    draft_max_tokens: int
+    queries: list[str]  # 1-5 raw_input strings to test against
+    preview_model: str | None = None
+
+
+@app.post("/admin/prompts/compare-samples")
+async def compare_samples(
+    comparison: SampleComparisonRequest,
+    current_user: User = Depends(require_user),
+):
+    """Run batch comparison against inline sample queries (no suite required)."""
+    if not _is_admin(current_user):
+        raise HTTPException(403, "Admin access required")
+    if not comparison.queries:
+        raise HTTPException(400, "At least one query required")
+
+    import asyncio
+    import time
+    from pipeline import _call
+
+    saved = await get_prompt(comparison.saved_prompt_key)
+    if not saved:
+        raise HTTPException(404, "Saved prompt not found")
+
+    COST_PER_1M_INPUT = 0.075
+    COST_PER_1M_OUTPUT = 0.30
+
+    async def call_with_metadata(call_type: str, system: str, user: str, max_tokens: int, model: str | None = None):
+        try:
+            start_time = time.time()
+            result = await asyncio.wait_for(
+                _call(system=system, user=user, max_tokens=max_tokens, return_metadata=True, model=model),
+                timeout=30.0
+            )
+            latency = time.time() - start_time
+            if isinstance(result, dict):
+                input_tokens = result.get("input_tokens", 0)
+                output_tokens = result.get("output_tokens", 0)
+                total_tokens = input_tokens + output_tokens
+                cost = (input_tokens / 1_000_000 * COST_PER_1M_INPUT) + (output_tokens / 1_000_000 * COST_PER_1M_OUTPUT)
+                return {"output": result.get("text", ""), "error": None, "latency_ms": round(latency * 1000),
+                        "input_tokens": input_tokens, "output_tokens": output_tokens, "total_tokens": total_tokens,
+                        "estimated_cost_usd": round(cost, 6), "model": result.get("model")}
+            return {"output": str(result), "error": None, "latency_ms": round(latency * 1000),
+                    "input_tokens": 0, "output_tokens": 0, "total_tokens": 0, "estimated_cost_usd": 0}
+        except asyncio.TimeoutError:
+            return {"output": None, "error": f"{call_type} timed out (30s)", "latency_ms": 30000,
+                    "input_tokens": 0, "output_tokens": 0, "total_tokens": 0, "estimated_cost_usd": 0}
+        except Exception as e:
+            return {"output": None, "error": f"{call_type} error: {str(e)}", "latency_ms": 0,
+                    "input_tokens": 0, "output_tokens": 0, "total_tokens": 0, "estimated_cost_usd": 0}
+
+    results = []
+    total_saved_tokens = total_draft_tokens = 0
+    total_saved_latency = total_draft_latency = 0
+    total_saved_cost = total_draft_cost = 0.0
+
+    for query_text in comparison.queries:
+        saved_result, draft_result = await asyncio.gather(
+            call_with_metadata("Saved", saved["system"], query_text, saved["max_tokens"], comparison.preview_model),
+            call_with_metadata("Draft", comparison.draft_system, query_text, comparison.draft_max_tokens, comparison.preview_model),
+            return_exceptions=True
+        )
+        if isinstance(saved_result, Exception):
+            saved_result = {"output": None, "error": str(saved_result), "latency_ms": 0,
+                            "input_tokens": 0, "output_tokens": 0, "total_tokens": 0, "estimated_cost_usd": 0}
+        if isinstance(draft_result, Exception):
+            draft_result = {"output": None, "error": str(draft_result), "latency_ms": 0,
+                            "input_tokens": 0, "output_tokens": 0, "total_tokens": 0, "estimated_cost_usd": 0}
+
+        total_saved_tokens += saved_result.get("total_tokens", 0)
+        total_draft_tokens += draft_result.get("total_tokens", 0)
+        total_saved_latency += saved_result.get("latency_ms", 0)
+        total_draft_latency += draft_result.get("latency_ms", 0)
+        total_saved_cost += saved_result.get("estimated_cost_usd", 0)
+        total_draft_cost += draft_result.get("estimated_cost_usd", 0)
+
+        results.append({
+            "query_text": query_text,
+            "saved_output": saved_result.get("output"),
+            "saved_error": saved_result.get("error"),
+            "saved_latency_ms": saved_result.get("latency_ms"),
+            "saved_tokens": saved_result.get("total_tokens"),
+            "draft_output": draft_result.get("output"),
+            "draft_error": draft_result.get("error"),
+            "draft_latency_ms": draft_result.get("latency_ms"),
+            "draft_tokens": draft_result.get("total_tokens"),
+        })
+
+    n = len(comparison.queries)
+    return {
+        "suite_name": f"Live Samples ({n})",
+        "results": results,
+        "aggregate_metrics": {
+            "total_queries": n,
+            "saved": {
+                "avg_latency_ms": round(total_saved_latency / n) if n else 0,
+                "avg_tokens": round(total_saved_tokens / n) if n else 0,
+                "total_cost_usd": round(total_saved_cost, 6),
+            },
+            "draft": {
+                "avg_latency_ms": round(total_draft_latency / n) if n else 0,
+                "avg_tokens": round(total_draft_tokens / n) if n else 0,
+                "total_cost_usd": round(total_draft_cost, 6),
+            },
+        },
+    }
+
+
 @app.get("/admin/design-tokens")
 async def get_design_tokens_endpoint(current_user: User = Depends(require_user)):
     """Get all design tokens."""
