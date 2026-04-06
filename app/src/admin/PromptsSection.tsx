@@ -207,90 +207,57 @@ export default function PromptsSection() {
       return <span style={{ fontSize: 12 }}>{JSON.stringify(obj)}</span>;
     }
 
-    const {
-      bottom_line, tldr, bullets, hard_facts, sources,
-      verdict, strength, voice, body, ...rest
-    } = obj;
-
-    const strengthColor: Record<string, string> = {
-      weak: '#AAA', moderate: '#F5A623', strong: '#4CAF50', devastating: '#C00',
-    };
+    const { bottom_line, tldr, bullets, hard_facts } = obj;
+    const hotTake = bottom_line || tldr;
 
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
 
-        {/* Bottom line / TL;DR */}
-        {(bottom_line || tldr) && (
-          <div style={{ fontWeight: 700, fontSize: 13, color: '#1A1A1A', lineHeight: 1.4 }}>
-            {bottom_line || tldr}
+        {/* Hot Take */}
+        {hotTake && (
+          <div>
+            <div style={{ fontSize: 9, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 4 }}>Hot Take</div>
+            <div style={{ fontSize: 13, fontWeight: 700, color: '#1A1A1A', lineHeight: 1.45 }}>{hotTake}</div>
           </div>
         )}
 
-        {/* Bullets */}
+        {/* The Case */}
         {Array.isArray(bullets) && bullets.length > 0 && (
-          <ul style={{ margin: 0, paddingLeft: 16, display: 'flex', flexDirection: 'column', gap: 4 }}>
-            {bullets.map((b: string, i: number) => (
-              <li key={i} style={{ fontSize: 12, color: '#333', lineHeight: 1.5 }}>{b}</li>
-            ))}
-          </ul>
-        )}
-
-        {/* Hard facts */}
-        {Array.isArray(hard_facts) && hard_facts.length > 0 && (
           <div>
-            <div style={{ fontSize: 10, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 4 }}>Hard Facts</div>
-            <ul style={{ margin: 0, paddingLeft: 16, display: 'flex', flexDirection: 'column', gap: 3 }}>
-              {hard_facts.map((f: any, i: number) => (
-                <li key={i} style={{ fontSize: 11, color: '#555', lineHeight: 1.4 }}>
-                  {typeof f === 'string' ? f : `${f.fact}${f.source ? ` — ${f.source}` : ''}`}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
-
-        {/* Verdict + strength */}
-        {verdict && (
-          <div style={{ padding: '6px 10px', borderRadius: 5, background: '#F7F7F5', fontSize: 12, color: '#333', lineHeight: 1.4, borderLeft: `3px solid ${strengthColor[strength] || '#DDD'}` }}>
-            {strength && (
-              <span style={{ fontSize: 10, fontWeight: 700, textTransform: 'uppercase', color: strengthColor[strength] || '#AAA', marginRight: 6, letterSpacing: '0.04em' }}>
-                {strength}
-              </span>
-            )}
-            {verdict}
-          </div>
-        )}
-
-        {/* Voice / body */}
-        {(voice || body) && (
-          <div style={{ fontSize: 12, color: '#333', lineHeight: 1.5, fontStyle: 'italic' }}>
-            {voice || body}
-          </div>
-        )}
-
-        {/* Sources */}
-        {Array.isArray(sources) && sources.length > 0 && (
-          <div>
-            <div style={{ fontSize: 10, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 3 }}>Sources</div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-              {sources.map((s: any, i: number) => (
-                <div key={i} style={{ fontSize: 10, color: '#888', lineHeight: 1.4 }}>
-                  {typeof s === 'string' ? s : s.url
-                    ? <a href={s.url} target="_blank" rel="noreferrer" style={{ color: '#888' }}>{s.title || s.url}</a>
-                    : s.title || JSON.stringify(s)}
+            <div style={{ fontSize: 9, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 5 }}>The Case</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+              {bullets.map((b: string, i: number) => (
+                <div key={i} style={{ display: 'flex', gap: 7, alignItems: 'flex-start' }}>
+                  <span style={{ color: '#CCC', fontSize: 14, lineHeight: 1, marginTop: 1, flexShrink: 0 }}>•</span>
+                  <span style={{ fontSize: 12, color: '#333', lineHeight: 1.5 }}>{b}</span>
                 </div>
               ))}
             </div>
           </div>
         )}
 
-        {/* Any remaining keys */}
-        {Object.keys(rest).length > 0 && Object.entries(rest).map(([k, v]) => (
-          <div key={k}>
-            <div style={{ fontSize: 10, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: 2 }}>{k.replace(/_/g, ' ')}</div>
-            <div style={{ fontSize: 12, color: '#333' }}>{typeof v === 'string' ? v : JSON.stringify(v)}</div>
+        {/* Hard Facts */}
+        {Array.isArray(hard_facts) && hard_facts.length > 0 && (
+          <div>
+            <div style={{ fontSize: 9, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 5 }}>Hard Facts</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+              {hard_facts.map((f: any, i: number) => {
+                const fact = typeof f === 'string' ? f : f.fact || '';
+                const source = typeof f === 'object' ? f.source || '' : '';
+                return (
+                  <div key={i} style={{ display: 'flex', gap: 7, alignItems: 'flex-start' }}>
+                    <span style={{ color: '#F5A623', fontSize: 12, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>—</span>
+                    <div>
+                      <span style={{ fontSize: 12, color: '#1A1A1A', lineHeight: 1.4 }}>{fact}</span>
+                      {source && <span style={{ fontSize: 10, color: '#AAA', marginLeft: 5 }}>{source}</span>}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
-        ))}
+        )}
+
       </div>
     );
   };
@@ -565,39 +532,44 @@ export default function PromptsSection() {
                 <span style={{ color: '#FF00AE' }}>{results.draft_label}</span>
               </div>
 
-              {results.results.map((r: any, i: number) => (
-                <div key={i} style={{ marginBottom: 20, border: '1px solid #EEE', borderRadius: 8, overflow: 'hidden' }}>
-                  <div style={{ padding: '8px 12px', background: '#F7F7F5', borderBottom: '1px solid #EEE', fontSize: 11, fontWeight: 600, color: '#555', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                    Sample {i + 1}: {r.query_text.slice(0, 120)}{r.query_text.length > 120 ? '…' : ''}
-                  </div>
+              {results.results.map((r: any, i: number) => {
+                const sample = samples.find(s => s.text === r.query_text);
+                const thesis = sample?.thesis || '';
+                return (
+                  <div key={i} style={{ marginBottom: 24, border: '1px solid #EEE', borderRadius: 8, overflow: 'hidden' }}>
 
-                  {(r.saved_error || r.draft_error) ? (
-                    <div style={{ padding: 12, color: '#C00', fontSize: 12 }}>
-                      {r.saved_error && <div><strong>Before:</strong> {r.saved_error}</div>}
-                      {r.draft_error && <div><strong>After:</strong> {r.draft_error}</div>}
+                    {/* Thesis header */}
+                    <div style={{ padding: '10px 14px', background: '#F7F7F5', borderBottom: '1px solid #EEE' }}>
+                      <div style={{ fontSize: 9, fontWeight: 700, color: '#AAA', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 4 }}>Thesis</div>
+                      <div style={{ fontSize: 13, fontWeight: 600, color: '#1A1A1A', lineHeight: 1.4 }}>
+                        {thesis || r.query_text}
+                      </div>
                     </div>
-                  ) : (
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', borderTop: 'none' }}>
-                      <div style={{ padding: 12, borderRight: '1px solid #EEE' }}>
-                        <div style={{ fontSize: 10, fontWeight: 700, color: '#4CAF50', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 6 }}>
-                          Before · {r.saved_latency_ms}ms
-                        </div>
-                        <div style={{ fontSize: 12, lineHeight: 1.6, color: '#1A1A1A' }}>
+
+                    {(r.saved_error || r.draft_error) ? (
+                      <div style={{ padding: 12, color: '#C00', fontSize: 12 }}>
+                        {r.saved_error && <div><strong>Before:</strong> {r.saved_error}</div>}
+                        {r.draft_error && <div><strong>After:</strong> {r.draft_error}</div>}
+                      </div>
+                    ) : (
+                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+                        <div style={{ padding: '12px 14px', borderRight: '1px solid #EEE' }}>
+                          <div style={{ fontSize: 9, fontWeight: 700, color: '#4CAF50', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 10 }}>
+                            Before · {r.saved_latency_ms}ms
+                          </div>
                           {renderOutput(r.saved_output || '')}
                         </div>
-                      </div>
-                      <div style={{ padding: 12 }}>
-                        <div style={{ fontSize: 10, fontWeight: 700, color: '#FF00AE', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 6 }}>
-                          After · {r.draft_latency_ms}ms
-                        </div>
-                        <div style={{ fontSize: 12, lineHeight: 1.6, color: '#1A1A1A' }}>
+                        <div style={{ padding: '12px 14px' }}>
+                          <div style={{ fontSize: 9, fontWeight: 700, color: '#FF00AE', textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 10 }}>
+                            After · {r.draft_latency_ms}ms
+                          </div>
                           {renderOutput(r.draft_output || '')}
                         </div>
                       </div>
-                    </div>
-                  )}
-                </div>
-              ))}
+                    )}
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>
