@@ -226,7 +226,8 @@ export default function PromptsSection() {
   const savedPrompt = selectedPrompt ? prompts[selectedPrompt] : null;
   const hasChanges = savedPrompt && editingPrompt && (
     editingPrompt.system !== savedPrompt.system ||
-    editingPrompt.max_tokens !== savedPrompt.max_tokens
+    editingPrompt.max_tokens !== savedPrompt.max_tokens ||
+    (editingPrompt.model || '') !== (savedPrompt.model || '')
   );
 
   return (
@@ -376,23 +377,29 @@ export default function PromptsSection() {
 
               <div style={{ marginBottom: 20 }}>
                 <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
-                  Model
+                  Model {(editingPrompt.model || '') !== (savedPrompt?.model || '') && <span style={{ color: '#FF00AE' }}>(Draft)</span>}
                 </label>
-                <input
-                  type="text"
+                <select
                   value={editingPrompt.model || ''}
                   onChange={(e) => setEditingPrompt({ ...editingPrompt, model: e.target.value || undefined })}
-                  placeholder="Default active model"
                   style={{
                     width: '100%',
                     padding: 8,
                     fontSize: 14,
                     border: '1px solid #CCC',
                     borderRadius: 4,
+                    background: '#FFF',
                   }}
-                />
+                >
+                  <option value="">Default active model</option>
+                  <option value="claude-sonnet-4-6">Claude Sonnet 4.6</option>
+                  <option value="claude-opus-4-5-20251101">Claude Opus 4.5</option>
+                  <option value="claude-3-5-sonnet-20241022">Claude 3.5 Sonnet</option>
+                  <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
+                  <option value="gemini-2.0-flash-exp">Gemini 2.0 Flash (Exp)</option>
+                </select>
                 <div style={{ fontSize: 11, color: '#888', marginTop: 4 }}>
-                  Leave empty to use the current active model ({editingPrompt.model || 'fallback'})
+                  Overrides the default active model for this prompt only
                 </div>
               </div>
 
