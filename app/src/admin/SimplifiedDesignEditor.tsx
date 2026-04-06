@@ -316,10 +316,26 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
 
       {/* Unsaved indicator */}
       {hasUnsavedChanges() && (
-        <div style={{ display: 'inline-block', padding: '4px 10px', background: '#FFF4E6', color: '#D97706', borderRadius: 12, fontSize: 12, fontWeight: 600, border: '1px solid #FDB94E', marginBottom: 20 }}>
+        <div style={{ display: 'inline-block', padding: '4px 10px', background: '#FFF4E6', color: '#D97706', borderRadius: 12, fontSize: 12, fontWeight: 600, border: '1px solid #FDB94E', marginBottom: 12 }}>
           Unsaved changes
         </div>
       )}
+
+      {/* Actions — top */}
+      <div style={{ display: 'flex', gap: 10, marginBottom: 28, paddingBottom: 24, borderBottom: '1px solid #EEE' }}>
+        <button onClick={() => saveTokens(false)} disabled={saving}
+          style={{ flex: 1, padding: '10px 0', background: '#FF00AE', color: '#FFF', border: 'none', borderRadius: 8, fontWeight: 700, fontSize: 13, cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1 }}>
+          {saving && saveType === 'draft' ? 'Saving...' : 'Save Draft'}
+        </button>
+        <button onClick={() => saveTokens(true)} disabled={saving}
+          style={{ flex: 1, padding: '10px 0', background: '#1A1A1A', color: '#FFF', border: 'none', borderRadius: 8, fontWeight: 700, fontSize: 13, cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1 }}>
+          {saving && saveType === 'deploy' ? 'Deploying...' : 'Deploy to Staging'}
+        </button>
+        <button onClick={revertToDefaults} disabled={saving}
+          style={{ padding: '10px 16px', background: '#F0F0ED', color: '#888', border: 'none', borderRadius: 8, fontWeight: 600, fontSize: 12, cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1 }}>
+          Revert
+        </button>
+      </div>
 
       {/* Colors */}
       <div style={sectionStyle}>
@@ -361,30 +377,6 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
         </div>
       </div>
 
-      {/* Actions */}
-      <div style={{ display: 'flex', gap: 10, paddingTop: 8, borderTop: '1px solid #EEE' }}>
-        <button
-          onClick={() => saveTokens(false)}
-          disabled={saving}
-          style={{ flex: 1, padding: '10px 0', background: '#FF00AE', color: '#FFF', border: 'none', borderRadius: 8, fontWeight: 700, fontSize: 13, cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1 }}
-        >
-          {saving && saveType === 'draft' ? 'Saving...' : 'Save Draft'}
-        </button>
-        <button
-          onClick={() => saveTokens(true)}
-          disabled={saving}
-          style={{ flex: 1, padding: '10px 0', background: '#1A1A1A', color: '#FFF', border: 'none', borderRadius: 8, fontWeight: 700, fontSize: 13, cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1 }}
-        >
-          {saving && saveType === 'deploy' ? 'Deploying...' : 'Deploy to Staging'}
-        </button>
-        <button
-          onClick={revertToDefaults}
-          disabled={saving}
-          style={{ padding: '10px 16px', background: '#F0F0ED', color: '#888', border: 'none', borderRadius: 8, fontWeight: 600, fontSize: 12, cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1 }}
-        >
-          Revert
-        </button>
-      </div>
     </div>
   );
 }
