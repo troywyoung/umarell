@@ -69,9 +69,12 @@ export default function PromptsSection() {
       // Auto-select first available prompt on initial load
       setSelectedKey(prev => {
         if (prev) return prev;
+        return KEY_PROMPT_ORDER.find(k => data[k]) || null;
+      });
+      setEditingPrompt(prev => {
+        if (prev) return prev;
         const firstKey = KEY_PROMPT_ORDER.find(k => data[k]);
-        if (firstKey) setEditingPrompt({ ...data[firstKey] });
-        return firstKey || null;
+        return firstKey ? { ...data[firstKey] } : null;
       });
     } catch (e: any) {
       setSaveMsg(e.message);
