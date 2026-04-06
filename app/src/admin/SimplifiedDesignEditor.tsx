@@ -21,6 +21,7 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saved' | 'error'>('idle');
   const [error, setError] = useState<string | null>(null);
   const [deploymentTriggered, setDeploymentTriggered] = useState(false);
+  const [saveType, setSaveType] = useState<'draft' | 'deploy' | null>(null);
 
   useEffect(() => {
     loadTokens();
@@ -56,14 +57,15 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
     setSaveStatus('idle');
   };
 
-  const saveTokens = async () => {
+  const saveTokens = async (deploy: boolean) => {
     setSaving(true);
     setError(null);
     setSaveStatus('idle');
     setDeploymentTriggered(false);
+    setSaveType(deploy ? 'deploy' : 'draft');
     try {
       const token = localStorage.getItem('sm_token');
-      const res = await fetch(`${API_BASE}/admin/simplified-tokens`, {
+      const res = await fetch(`${API_BASE}/admin/simplified-tokens?deploy=${deploy}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -77,7 +79,10 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
       setSavedTokens(editedTokens);
       setDeploymentTriggered(result.deployment_triggered);
       // Clear save status after 3 seconds
-      setTimeout(() => setSaveStatus('idle'), 3000);
+      setTimeout(() => {
+        setSaveStatus('idle');
+        setSaveType(null);
+      }, 3000);
     } catch (err: any) {
       setError(err.message);
       setSaveStatus('error');
@@ -258,7 +263,11 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
             >
               <span>✓</span>
               <div>
-                <div style={{ fontWeight: 600 }}>Design tokens saved successfully</div>
+                <div style={{ fontWeight: 600 }}>
+                  {deploymentTriggered
+                    ? 'Design tokens saved and deployed'
+                    : 'Draft saved successfully'}
+                </div>
                 {deploymentTriggered && (
                   <div style={{ fontSize: 12, marginTop: 4 }}>
                     Changes deployed to staging.{' '}
@@ -462,7 +471,7 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
           }}
         >
           <button
-            onClick={saveTokens}
+            onClick={() => saveTokens(false)}
             disabled={saving}
             style={{
               flex: 1,
@@ -477,7 +486,24 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
               opacity: saving ? 0.6 : 1,
             }}
           >
-            {saving ? 'Saving...' : 'Save & Deploy to Staging'}
+            {saving && saveType === 'draft' ? 'Saving Draft...' : 'Save Draft'}
+          </button>
+          <button
+            onClick={() => saveTokens(true)}
+            disabled={saving}
+            style={{
+              padding: 12,
+              background: '#F0F0ED',
+              color: '#1A1A1A',
+              border: 'none',
+              borderRadius: 8,
+              fontWeight: 700,
+              fontSize: 14,
+              cursor: saving ? 'not-allowed' : 'pointer',
+              opacity: saving ? 0.6 : 1,
+            }}
+          >
+            {saving && saveType === 'deploy' ? 'Deploying...' : 'Save & Deploy'}
           </button>
           <button
             onClick={revertToDefaults}

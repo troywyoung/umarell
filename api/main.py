@@ -1841,10 +1841,11 @@ class SimplifiedTokensUpdate(BaseModel):
 @app.put("/admin/simplified-tokens")
 async def update_simplified_tokens_endpoint(
     update: SimplifiedTokensUpdate,
+    deploy: bool = True,
     current_user: User = Depends(require_user),
     db: AsyncSession = Depends(get_db)
 ):
-    """Save simplified tokens and trigger staging deployment."""
+    """Save simplified tokens and optionally trigger staging deployment."""
     if not _is_admin(current_user):
         raise HTTPException(403, "Admin access required")
 
@@ -1884,8 +1885,10 @@ async def update_simplified_tokens_endpoint(
 
     await db.commit()
 
-    # Trigger staging deployment
-    deployment_triggered = await trigger_staging_deployment()
+    # Optionally trigger staging deployment
+    deployment_triggered = False
+    if deploy:
+        deployment_triggered = await trigger_staging_deployment()
 
     return {
         "status": "saved",
