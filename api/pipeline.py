@@ -76,17 +76,18 @@ def _extract_sources(resp) -> list[dict]:
 # ─── Unified _call ────────────────────────────────────────────────────────
 
 async def _call(system: str, user: str, max_tokens: int = 2000, retries: int = 5, use_search: bool = False, return_metadata: bool = False, model: str | None = None):
-    if PROVIDER == "gemini":
-        return await _call_gemini(system, user, max_tokens, retries, use_search, return_metadata, model)
-    result = await _call_anthropic(system, user, max_tokens, retries, return_metadata, model)
-    if return_metadata and use_search:
-        # Add empty sources for Anthropic when search is requested but not supported
-        if isinstance(result, dict):
-            result["sources"] = []
+    # Route by model prefix when explicitly specified; fall back to configured PROVIDER
+    use_anthropic = (model and model.startswith("claude")) or (not model and PROVIDER == "anthropic")
+    if use_anthropic:
+        result = await _call_anthropic(system, user, max_tokens, retries, return_metadata, model)
+        if return_metadata and use_search:
+            if isinstance(result, dict):
+                result["sources"] = []
+            return result
+        if use_search:
+            return result, []
         return result
-    if use_search:
-        return result, []  # no search grounding for Anthropic
-    return result
+    return await _call_gemini(system, user, max_tokens, retries, use_search, return_metadata, model)
 
 
 async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, use_search: bool = False, return_metadata: bool = False, model: str | None = None):
