@@ -825,6 +825,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 ? topLevel.filter(o => !!o.episode_tag)
                 : topLevel.filter(o => (o.tags || []).includes(selectedTopic));
 
+          // Maps obs.id → {index, total} for episode numbering — populated by renderEpisodeBundle
+          const episodePositionMap = new Map<string, { index: number; total: number }>();
+
           const renderCard = (obs: Observation) => {
             let bullets: string[] = [];
             try {
@@ -1103,6 +1106,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const podcastName = first.user_name || null;
             const episodeUrl = first.sources?.[0]?.url || null;
             const isMobile = window.innerWidth < 600;
+            // Populate position map for this bundle
+            posts.forEach((obs, i) => episodePositionMap.set(obs.id, { index: i + 1, total: posts.length }));
             return (
               <div key={`episode-${tag}`} style={{ marginBottom: 14 }}>
                 {/* Episode header */}
@@ -1110,7 +1115,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1, display: "flex", alignItems: "center", gap: 5 }}>
                     {podcastName && (
                       episodeUrl
-                        ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "none" }}>{podcastName} Collection</a>
+                        ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "underline" }}>{podcastName} Collection</a>
                         : <span style={{ color: "var(--color-accent, #FF00AE)" }}>{podcastName} Collection</span>
                     )}
                     <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>
@@ -1125,7 +1130,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     </button>
                   </p>
                   <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
-                    {first.episode_title || "Episode"}
+                    {episodeUrl
+                      ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none" }}>{first.episode_title || "Episode"}</a>
+                      : first.episode_title || "Episode"}
                   </p>
                 </div>
                 {/* Episode cards */}
@@ -1784,6 +1791,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
+          {(() => { const pos = episodePositionMap.get(obs.id); return pos ? <span style={{ fontSize: 12, fontWeight: 400, color: "#AAA" }}>({pos.index}/{pos.total})</span> : null; })()}
           {isOwner && (
             deleteConfirm ? (
               <>
