@@ -1475,7 +1475,8 @@ async def compare_prompts(
                     "input_tokens": input_tokens,
                     "output_tokens": output_tokens,
                     "total_tokens": total_tokens,
-                    "estimated_cost_usd": round(cost, 6)
+                    "estimated_cost_usd": round(cost, 6),
+                    "model": result.get("model")
                 }
             else:
                 # Fallback if metadata not returned
@@ -1845,7 +1846,8 @@ async def compare_suite(
                     "input_tokens": input_tokens,
                     "output_tokens": output_tokens,
                     "total_tokens": total_tokens,
-                    "estimated_cost_usd": round(cost, 6)
+                    "estimated_cost_usd": round(cost, 6),
+                    "model": result.get("model")
                 }
             else:
                 return {
