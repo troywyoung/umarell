@@ -443,8 +443,8 @@ async def _attach_user_names(db: AsyncSession, observations: list[Observation]) 
                 "tags": [],
                 "episode_tag": o.episode_tag,
             }
-        # Episode posts show "PvA", regular posts show the user's name
-        d["user_name"] = "PvA" if o.episode_tag else (user_map.get(o.user_id) if o.user_id else "Anonymous")
+        # Episode posts show podcast name (stored in user_name) or "PvA" fallback; regular posts show the user's name
+        d["user_name"] = (o.user_name or "PvA") if o.episode_tag else (user_map.get(o.user_id) if o.user_id else "Anonymous")
         # Parse pva_take from briefing field
         if o.briefing:
             try:
@@ -933,6 +933,7 @@ async def ingest_podcast(
             status="researching",
             model_used=ACTIVE_MODEL,
             user_id=user_id,
+            user_name=body.podcast_name or None,
             episode_tag=episode_tag,
             episode_title=body.episode_title,
         )
@@ -1054,6 +1055,7 @@ async def post_podcast_takes(
             status="researching",
             model_used=ACTIVE_MODEL,
             user_id=user_id,
+            user_name=body.podcast_name or None,
             episode_tag=episode_tag,
             episode_title=body.episode_title,
         )
@@ -1073,17 +1075,23 @@ async def post_podcast_takes(
 
 
 async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-takes"):
-    """Run steel man generation only (skip thesis formatting).
-
-    Used for podcast ingestion where we want to preserve the speaker's exact words.
-    """
+    """Run thesis formatting + steel man generation for podcast takes."""
     _, session_maker = get_instance_engine(instance_key)
     async with session_maker() as db:
         try:
             result = await db.execute(select(Observation).where(Observation.id == observation_id))
             obs = result.scalar_one_or_none()
-            if not obs or not obs.thesis:
+            if not obs or not obs.raw_input:
                 return
+
+            # Format thesis (same as normal pipeline)
+            formatted = await format_thesis(obs.raw_input, obs.input_type)
+            obs = await db.get(Observation, observation_id)
+            if not obs:
+                return
+            obs.thesis = formatted
+            await db.commit()
+            await db.refresh(obs)
 
             # Generate steel man
             steel_man_data, sources = await generate_steel_man(obs.thesis)

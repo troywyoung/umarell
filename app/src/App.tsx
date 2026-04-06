@@ -842,19 +842,16 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 onClick={() => onSelect(obs)}
                 style={{
                   borderRadius: 8, position: "relative",
-                  background: obs.episode_tag ? "#F5F0E8" : "#FFF",
+                  background: "#FFF",
                   border: "none",
                   boxShadow: "0 1px 6px rgba(0,0,0,0.06)",
                   cursor: "pointer", overflow: "hidden",
                 }}
               >
-                {obs.episode_tag && (
-                  <p style={{ fontSize: 8, fontWeight: 700, color: "#FF00AE", margin: 0, padding: "7px 12px 0", letterSpacing: 0.8, textTransform: "uppercase", lineHeight: 1 }}>{obs.episode_title || "PvA"}</p>
-                )}
-                {obs.user_name && !obs.episode_tag && (
+                {obs.user_name && (
                   <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1 }}>{obs.user_name}</p>
                 )}
-                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: (obs.user_name || obs.episode_tag) ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
+                <div style={{ display: "flex", alignItems: "flex-start", gap: 8, padding: obs.user_name ? "4px 12px 6px 12px" : "10px 12px 6px 12px" }}>
                     {obs.image_data && (
                       <img
                         src={`data:${obs.image_media_type || "image/jpeg"};base64,${obs.image_data}`}
@@ -1089,6 +1086,47 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             );
           };
 
+          // Build episode bundles — group by episode_tag, bundle appears at position of first card
+          const episodePostsMap = new Map<string, Observation[]>();
+          filteredPosts.forEach(o => {
+            if (!o.episode_tag) return;
+            const g = episodePostsMap.get(o.episode_tag) || [];
+            g.push(o);
+            episodePostsMap.set(o.episode_tag, g);
+          });
+
+          const renderEpisodeBundle = (tag: string, posts: Observation[]) => {
+            const first = posts[0];
+            const dateStr = new Date(first.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+            const podcastName = first.category || null;
+            return (
+              <div key={`episode-${tag}`} style={{ marginBottom: 14 }}>
+                {/* Episode header */}
+                <div style={{ marginBottom: 6, paddingBottom: 6, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+                  {podcastName && (
+                    <p style={{ fontSize: window.innerWidth < 600 ? 8 : 9, fontWeight: 600, color: "rgba(255,255,255,0.45)", margin: "0 0 2px", letterSpacing: -0.2, lineHeight: 1, textTransform: "none" }}>{podcastName}</p>
+                  )}
+                  <p style={{ fontSize: window.innerWidth < 600 ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
+                    {first.episode_title || "Episode"} <span style={{ fontWeight: 400, color: "rgba(255,255,255,0.35)", fontSize: window.innerWidth < 600 ? 10 : 9 }}>· {dateStr}</span>
+                  </p>
+                </div>
+                {/* Episode cards */}
+                <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                  {posts.map(obs => renderPost(obs))}
+                </div>
+              </div>
+            );
+          };
+
+          const renderedEpisodeTags = new Set<string>();
+          const renderFeedItem = (obs: Observation) => {
+            if (!obs.episode_tag) return renderPost(obs);
+            if (renderedEpisodeTags.has(obs.episode_tag)) return null;
+            renderedEpisodeTags.add(obs.episode_tag);
+            const posts = episodePostsMap.get(obs.episode_tag) || [obs];
+            return renderEpisodeBundle(obs.episode_tag, posts);
+          };
+
           return (
             <>
               {/* Topic pills */}
@@ -1171,9 +1209,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   ))}
               </div>
 
-              {/* Unified chronological feed — episode posts dispersed in order */}
+              {/* Unified chronological feed — episode bundles grouped, regular posts dispersed */}
               {filteredPosts.length > 0
-                ? <div style={{ paddingTop: 4 }}>{filteredPosts.map(renderPost)}</div>
+                ? <div style={{ paddingTop: 4 }}>{filteredPosts.map(renderFeedItem)}</div>
                 : selectedTopic && (
                   <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
                     <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>
