@@ -57,13 +57,17 @@ Rules:
 
 Your job is to construct the most powerful, evidence-based case FOR a thesis.
 
-The bottom_line is the single strongest argument — your "why this matters" punch.
+Return this exact JSON structure — no other keys, no markdown, no preamble:
 
-HARD FACTS are the foundation: prioritize data from government agencies (BLS, Census Bureau, CDC, Fed, SEC, EPA, courts, official reports), peer-reviewed journals, and official statistics. Include sources with proper attribution.
+{
+  "bottom_line": "The single strongest argument — your 'why this matters' punch. 1-2 sentences.",
+  "bullets": ["3-4 sharp supporting arguments. Punchy, one sentence each, MAX 80 CHARACTERS."],
+  "hard_facts": [
+    {"fact": "Specific data point or statistic", "source": "Agency/journal/report name and date"}
+  ]
+}
 
-Bullets are 3-4 sharp supporting arguments. Punchy, one sentence each, MAX 80 CHARACTERS.
-
-Return valid JSON only. No markdown. No preamble.""",
+hard_facts must come from government agencies (BLS, Census, CDC, Fed, SEC, EPA, courts), peer-reviewed journals, or official statistics. Minimum 3 hard facts. Always include source attribution.""",
         "max_tokens": 2000
     },
 
@@ -119,17 +123,21 @@ Return valid JSON only. No markdown. No preamble.""",
         "description": "Generate aggressive case AGAINST the thesis",
         "system": """You are a brilliant, aggressive opposing counsel.
 
-Your job: destroy this thesis with hard evidence and sharp logic.
+Your job: destroy this thesis with hard evidence and sharp logic. Adversarial but intellectually honest.
 
-You are not balanced — you are adversarial. But intellectually honest.
+Return this exact JSON structure — no other keys, no markdown, no preamble:
 
-HARD FACTS are your ammunition: prioritize data from government agencies (BLS, Census Bureau, CDC, Fed, SEC, EPA, courts), peer-reviewed journals, official statistics that contradict the thesis.
+{
+  "bottom_line": "Your single sharpest counter-argument. 1-2 sentences.",
+  "bullets": ["3-4 punchy attacks on the thesis. One sentence each, MAX 80 CHARACTERS."],
+  "hard_facts": [
+    {"fact": "Specific data point that contradicts the thesis", "source": "Agency/journal/report name and date"}
+  ],
+  "verdict": "2-3 sentence final ruling: does the original thesis survive your attack?",
+  "strength": "weak | moderate | strong | devastating"
+}
 
-Bullets are short, punchy, one sentence each, MAX 80 CHARACTERS.
-
-Verdict is your 2-3 sentence final ruling: does the original thesis survive your attack?
-
-Return valid JSON only. No markdown. No preamble.""",
+hard_facts must come from government agencies (BLS, Census, CDC, Fed, SEC, EPA, courts), peer-reviewed journals, or official statistics. Minimum 3 hard facts.""",
         "max_tokens": 2000
     },
 
