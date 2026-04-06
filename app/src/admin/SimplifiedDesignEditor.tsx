@@ -111,6 +111,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
      'card_background', 'collection_card_background', 'dark_text', 'secondary_text'].includes(key);
 
   const isFontToken = (key: string) => key === 'body_font_family' || key === 'display_font_family';
+  const isSizeToken = (key: string) => key === 'card_headline_size' || key === 'detail_headline_size';
 
   const BODY_FONTS: { label: string; value: string }[] = [
     { label: 'System UI (default)',    value: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" },
@@ -134,6 +135,35 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
 
   const renderTokenField = (key: string) => {
     const currentValue = editedTokens[key] ?? '';
+
+    if (isSizeToken(key)) {
+      const px = parseInt(currentValue) || (key === 'detail_headline_size' ? 20 : 14);
+      const previewText = key === 'detail_headline_size'
+        ? 'AI will take your job and your podcast.'
+        : 'AI will take your job and your podcast.';
+      const previewFont = key === 'detail_headline_size' ? '#FFF' : '#1A1A1A';
+      const previewBg = key === 'detail_headline_size' ? '#12102B' : '#FFF';
+      return (
+        <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
+            <label style={{ fontSize: 12, fontWeight: 600, color: '#1A1A1A' }}>{data!.labels[key]}</label>
+            <span style={{ fontSize: 13, fontWeight: 700, color: '#FF00AE', fontVariantNumeric: 'tabular-nums' }}>{px}px</span>
+          </div>
+          <input
+            type="range"
+            min={10} max={36} step={1}
+            value={px}
+            onChange={e => handleTokenChange(key, `${e.target.value}px`)}
+            style={{ width: '100%', accentColor: '#FF00AE' }}
+          />
+          <div style={{ padding: '10px 12px', borderRadius: 6, background: previewBg, border: '1px solid #EEE' }}>
+            <div style={{ fontSize: px, fontWeight: 700, color: previewFont, lineHeight: 1.3, letterSpacing: -0.3 }}>
+              {previewText}
+            </div>
+          </div>
+        </div>
+      );
+    }
 
     if (isFontToken(key)) {
       const options = key === 'body_font_family' ? BODY_FONTS : DISPLAY_FONTS;
@@ -268,7 +298,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Typography</h3>
         <div style={gridStyle}>
-          {['base_font_size', 'bold_font_weight', 'body_font_family', 'display_font_family']
+          {['body_font_family', 'display_font_family', 'card_headline_size', 'detail_headline_size', 'base_font_size', 'bold_font_weight']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>

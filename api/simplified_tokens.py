@@ -20,6 +20,8 @@ SIMPLIFIED_TOKENS = {
     "secondary_text": "#888",
     "body_font_family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
     "display_font_family": "'Besley', serif",
+    "card_headline_size": "14px",
+    "detail_headline_size": "20px",
     "feed_background_image": "",
 }
 
@@ -38,6 +40,8 @@ TOKEN_MAPPINGS = {
     "secondary_text": ["colors", "text", "secondary_dark"],
     "body_font_family": ["typography", "fonts", "system"],
     "display_font_family": ["typography", "fonts", "display"],
+    "card_headline_size": ["typography", "sizes", "card_headline"],
+    "detail_headline_size": ["typography", "sizes", "detail_headline"],
     "feed_background_image": ["layout", "feed_bg_image"],
 }
 
@@ -56,6 +60,8 @@ TOKEN_LABELS = {
     "secondary_text": "Secondary Text Color",
     "body_font_family": "Body Font Family",
     "display_font_family": "Display / Headline Font",
+    "card_headline_size": "Card Headline Size",
+    "detail_headline_size": "Detail Headline Size",
     "feed_background_image": "Feed Background Tile (URL)",
 }
 
@@ -74,6 +80,8 @@ TOKEN_DESCRIPTIONS = {
     "secondary_text": "Color for secondary or less prominent text",
     "body_font_family": "Font stack for all body text (e.g. 'Georgia, serif')",
     "display_font_family": "Font for headlines and the logo (e.g. \"'Playfair Display', serif\")",
+    "card_headline_size": "Thesis text size on collapsed feed cards (e.g. 14px)",
+    "detail_headline_size": "Thesis h1 size on the expanded detail view (e.g. 20px)",
     "feed_background_image": "URL to a repeating background tile image (leave empty for solid color)",
 }
 

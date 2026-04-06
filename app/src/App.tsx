@@ -865,8 +865,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                         <ScoreBadge value={obs.score} size="sm" dark />
                       </div>
                       <p style={{
-                        fontSize: window.innerWidth < 600 ? 14 : 12, fontWeight: 700,
-                        color: "var(--color-dark-text, #1A1A1A)", lineHeight: window.innerWidth < 600 ? 1.15 : 1.27, margin: 0, letterSpacing: -0.3,
+                        fontSize: "var(--font-size-card-headline, 14px)", fontWeight: 700,
+                        color: "var(--color-dark-text, #1A1A1A)", lineHeight: 1.2, margin: 0, letterSpacing: -0.3,
                       }}>
                         {obs.thesis || obs.raw_input}
                       </p>
@@ -1965,7 +1965,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 <h1
                   onClick={isOwner ? () => { setEditMode(true); setEditText(obs.thesis || obs.raw_input || ""); } : undefined}
                   style={{
-                    fontSize: 20, fontWeight: 700, color: "#FFF", lineHeight: 1.4,
+                    fontSize: "var(--font-size-detail-headline, 20px)", fontWeight: 700, color: "#FFF", lineHeight: 1.4,
                     letterSpacing: -0.4, margin: 0,
                     cursor: isOwner ? "pointer" : "default",
                   }}
