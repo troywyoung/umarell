@@ -9,9 +9,7 @@ maximum visual impact with minimal complexity.
 SIMPLIFIED_TOKENS = {
     "primary_accent": "#FF00AE",
     "dark_background": "#12102B",
-    "light_background": "#FAFAF8",
     "dark_text": "#1A1A1A",
-    "secondary_background": "#F0F0ED",
     "card_background": "#FFFFFF",
     "collection_card_background": "#F5F0E8",
     "base_font_size": "14px",
@@ -29,9 +27,7 @@ SIMPLIFIED_TOKENS = {
 TOKEN_MAPPINGS = {
     "primary_accent": ["colors", "primary", "accent"],
     "dark_background": ["colors", "primary", "dark_bg"],
-    "light_background": ["colors", "primary", "light_bg"],
     "dark_text": ["colors", "primary", "dark_text"],
-    "secondary_background": ["colors", "backgrounds", "secondary"],
     "card_background": ["colors", "backgrounds", "card_white"],
     "collection_card_background": ["colors", "backgrounds", "collection_card"],
     "base_font_size": ["typography", "sizes", "base"],
@@ -49,9 +45,7 @@ TOKEN_MAPPINGS = {
 TOKEN_LABELS = {
     "primary_accent": "Primary Accent Color",
     "dark_background": "Dark Background",
-    "light_background": "Light Background",
     "dark_text": "Dark Text Color",
-    "secondary_background": "Secondary Background",
     "card_background": "Card Background",
     "collection_card_background": "Podcast Collection Card",
     "base_font_size": "Base Font Size",
@@ -69,9 +63,7 @@ TOKEN_LABELS = {
 TOKEN_DESCRIPTIONS = {
     "primary_accent": "Main brand color used for buttons and highlights",
     "dark_background": "Color behind cards on feed, detail, and capture pages",
-    "light_background": "Main light background color",
     "dark_text": "Primary text color for dark text on light backgrounds",
-    "secondary_background": "Subtle background for secondary elements",
     "card_background": "Background color for cards and panels",
     "collection_card_background": "Background tint for podcast collection cards",
     "base_font_size": "Default text size throughout the app",
