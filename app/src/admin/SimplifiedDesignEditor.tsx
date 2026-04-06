@@ -104,7 +104,8 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
   };
 
   const isColorToken = (key: string) =>
-    key.includes('color') || key.includes('background') || key.includes('text') || key === 'primary_accent';
+    ['primary_accent', 'button_color', 'dark_background', 'light_background',
+     'secondary_background', 'card_background', 'dark_text', 'secondary_text'].includes(key);
 
   const hasUnsavedChanges = () =>
     Object.keys(editedTokens).some(key => editedTokens[key] !== savedTokens[key]);
@@ -180,7 +181,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Colors</h3>
         <div style={gridStyle}>
-          {['primary_color', 'secondary_color', 'background_color', 'text_color']
+          {['primary_accent', 'button_color', 'dark_background', 'light_background', 'secondary_background', 'card_background', 'dark_text', 'secondary_text']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>
@@ -190,7 +191,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Typography</h3>
         <div style={gridStyle}>
-          {['font_family_sans', 'font_family_serif', 'font_size_base', 'line_height_base']
+          {['base_font_size', 'bold_font_weight']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>
@@ -200,7 +201,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Layout</h3>
         <div style={gridStyle}>
-          {['spacing_unit', 'container_max_width', 'border_radius_base', 'shadow_base', 'transition_duration', 'button_padding']
+          {['border_radius', 'base_padding', 'max_content_width', 'card_shadow']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>
