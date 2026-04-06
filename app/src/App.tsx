@@ -549,7 +549,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
     <div style={{ maxWidth: "var(--max-content-width, 480px)", margin: "0 auto", minHeight: "100vh", background: "transparent", padding: "0 0 60px" }}>
       <div style={{ padding: "14px 20px 12px", borderBottom: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
         <button onClick={onBack} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.5)", fontSize: 22, cursor: "pointer", padding: 0, lineHeight: 1, WebkitTapHighlightColor: "transparent" }}>←</button>
-        <span style={{ fontSize: 18, fontWeight: 900, color: "#FFF", letterSpacing: -0.6, fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}>Your takes, stress-tested.</span>
+        <span style={{ fontSize: 18, fontWeight: 900, color: "#FFF", letterSpacing: -0.6, lineHeight: 1 }}>Your takes, stress-tested.</span>
       </div>
       <div style={{ padding: "28px 24px 0" }}>
         <p style={{ fontSize: 16, color: "rgba(255,255,255,0.9)", lineHeight: 1.65, margin: "0 0 28px", letterSpacing: -0.2 }}>
