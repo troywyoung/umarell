@@ -6,7 +6,6 @@ that can be edited through the admin interface. These 14 tokens provide
 maximum visual impact with minimal complexity.
 """
 
-# High-leverage token set - fewer than 15 controls
 SIMPLIFIED_TOKENS = {
     "primary_accent": "#FF00AE",
     "dark_background": "#12102B",
@@ -21,7 +20,10 @@ SIMPLIFIED_TOKENS = {
     "card_shadow": "0 1px 6px rgba(0,0,0,0.06)",
     "max_content_width": "480px",
     "button_color": "#FF00AE",
-    "secondary_text": "#888"
+    "secondary_text": "#888",
+    "body_font_family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "display_font_family": "'Besley', serif",
+    "feed_background_image": "",
 }
 
 # Mapping from simplified tokens back to full design token paths
@@ -38,8 +40,11 @@ TOKEN_MAPPINGS = {
     "base_padding": ["spacing", "padding", "base"],
     "card_shadow": ["shadows", "card"],
     "max_content_width": ["layout", "max_width"],
-    "button_color": ["colors", "primary", "accent"],  # Same as primary accent
-    "secondary_text": ["colors", "text", "secondary_dark"]
+    "button_color": ["colors", "primary", "accent"],
+    "secondary_text": ["colors", "text", "secondary_dark"],
+    "body_font_family": ["typography", "fonts", "system"],
+    "display_font_family": ["typography", "fonts", "display"],
+    "feed_background_image": ["layout", "feed_bg_image"],
 }
 
 # Human-readable labels for the UI
@@ -57,13 +62,16 @@ TOKEN_LABELS = {
     "card_shadow": "Card Shadow",
     "max_content_width": "Max Content Width",
     "button_color": "Button Color",
-    "secondary_text": "Secondary Text Color"
+    "secondary_text": "Secondary Text Color",
+    "body_font_family": "Body Font Family",
+    "display_font_family": "Display / Headline Font",
+    "feed_background_image": "Feed Background Tile (URL)",
 }
 
 # Descriptions for each token
 TOKEN_DESCRIPTIONS = {
     "primary_accent": "Main brand color used for buttons and highlights",
-    "dark_background": "Background for dark mode or modal overlays",
+    "dark_background": "Color behind cards on feed, detail, and capture pages",
     "light_background": "Main light background color",
     "dark_text": "Primary text color for dark text on light backgrounds",
     "secondary_background": "Subtle background for secondary elements",
@@ -75,7 +83,10 @@ TOKEN_DESCRIPTIONS = {
     "card_shadow": "Drop shadow for cards and elevated elements",
     "max_content_width": "Maximum width for main content area",
     "button_color": "Color for primary action buttons",
-    "secondary_text": "Color for secondary or less prominent text"
+    "secondary_text": "Color for secondary or less prominent text",
+    "body_font_family": "Font stack for all body text (e.g. 'Georgia, serif')",
+    "display_font_family": "Font for headlines and the logo (e.g. \"'Playfair Display', serif\")",
+    "feed_background_image": "URL to a repeating background tile image (leave empty for solid color)",
 }
 
 

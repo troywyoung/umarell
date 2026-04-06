@@ -110,6 +110,9 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
     ['primary_accent', 'button_color', 'dark_background', 'light_background',
      'secondary_background', 'card_background', 'dark_text', 'secondary_text'].includes(key);
 
+  const isTextOnlyToken = (key: string) =>
+    ['body_font_family', 'display_font_family', 'feed_background_image'].includes(key);
+
   const hasUnsavedChanges = () =>
     Object.keys(editedTokens).some(key => editedTokens[key] !== savedTokens[key]);
 
@@ -200,7 +203,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Typography</h3>
         <div style={gridStyle}>
-          {['base_font_size', 'bold_font_weight']
+          {['base_font_size', 'bold_font_weight', 'body_font_family', 'display_font_family']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>
@@ -211,6 +214,16 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
         <h3 style={headingStyle}>Layout</h3>
         <div style={gridStyle}>
           {['border_radius', 'base_padding', 'max_content_width', 'card_shadow']
+            .filter(k => data.tokens[k] !== undefined)
+            .map(renderTokenField)}
+        </div>
+      </div>
+
+      {/* Background */}
+      <div style={sectionStyle}>
+        <h3 style={headingStyle}>Background</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 20 }}>
+          {['feed_background_image']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>

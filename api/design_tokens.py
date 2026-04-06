@@ -130,7 +130,8 @@ DESIGN_TOKENS = {
     },
     "layout": {
         "max_width": "480px",
-        "min_height": "100vh"
+        "min_height": "100vh",
+        "feed_bg_image": ""
     },
     "animations": {
         "durations": {

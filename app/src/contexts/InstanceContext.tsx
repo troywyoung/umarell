@@ -160,7 +160,13 @@ function applyDesignTokens(tokens: InstanceConfig["design_tokens"]) {
   if (tokens.typography) {
     root.style.setProperty("--font-system", tokens.typography.fonts.system);
     root.style.setProperty("--font-display", tokens.typography.fonts.display);
+    // Also update body font directly so all `font-family: inherit` elements pick it up
+    document.body.style.fontFamily = tokens.typography.fonts.system;
   }
+
+  // Apply background image tile
+  const bgImage = (tokens.layout as any)?.feed_bg_image ?? "";
+  root.style.setProperty("--feed-bg-image", bgImage ? `url(${bgImage})` : "none");
 
   // Apply spacing tokens
   if (tokens.spacing) {
