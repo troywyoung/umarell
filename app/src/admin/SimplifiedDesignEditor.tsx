@@ -108,7 +108,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
 
   const isColorToken = (key: string) =>
     ['primary_accent', 'button_color', 'dark_background', 'light_background',
-     'secondary_background', 'card_background', 'dark_text', 'secondary_text'].includes(key);
+     'secondary_background', 'card_background', 'collection_card_background', 'dark_text', 'secondary_text'].includes(key);
 
   const hasUnsavedChanges = () =>
     Object.keys(editedTokens).some(key => editedTokens[key] !== savedTokens[key]);
@@ -190,7 +190,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Colors</h3>
         <div style={gridStyle}>
-          {['primary_accent', 'button_color', 'dark_background', 'light_background', 'secondary_background', 'card_background', 'dark_text', 'secondary_text']
+          {['primary_accent', 'button_color', 'dark_background', 'light_background', 'secondary_background', 'card_background', 'collection_card_background', 'dark_text', 'secondary_text']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>

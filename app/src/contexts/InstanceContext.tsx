@@ -158,6 +158,7 @@ function applyDesignTokens(tokens: InstanceConfig["design_tokens"]) {
     if (tokens.colors.backgrounds) {
       root.style.setProperty("--color-secondary-bg", (tokens.colors.backgrounds as any).secondary ?? "#F0F0ED");
       root.style.setProperty("--color-card-bg", (tokens.colors.backgrounds as any).card_white ?? "#FFFFFF");
+      root.style.setProperty("--color-collection-card-bg", (tokens.colors.backgrounds as any).collection_card ?? "#F5F0E8");
     }
     if (tokens.colors.text) {
       root.style.setProperty("--color-secondary-text", (tokens.colors.text as any).secondary_dark ?? "#888");

@@ -843,7 +843,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 onClick={() => onSelect(obs)}
                 style={{
                   borderRadius: 8, position: "relative",
-                  background: isCollection ? "#F5F0E8" : "#FFF",
+                  background: isCollection ? "var(--color-collection-card-bg, #F5F0E8)" : "var(--color-card-bg, #FFF)",
                   border: "none",
                   boxShadow: "var(--shadow-card, 0 1px 6px rgba(0,0,0,0.06))",
                   cursor: "pointer", overflow: "hidden",
