@@ -834,23 +834,25 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           // All posts in chronological order — pinned posts always float to top
           const rankScore = (o: Observation) => {
             if (o.pinned) return Infinity;
+            // Hot takes always rank near the top, just below pinned
+            if (o.is_hot_take) return 9999 + (o.score || 0);
             const hoursAgo = (Date.now() - new Date(o.created_at).getTime()) / 3600000;
             const takes = (yourTakeMap[o.id] || []).length;
             const challenges = (challengeMap.get(o.id) || []).length;
-            // Each take adds 20% boost, each challenge adds 50% (harder to generate)
             const engagementBoost = 1 + (takes * 0.2) + (challenges * 0.5);
-            // Hot takes get a 3x boost so they surface prominently
-            const hotBoost = o.is_hot_take ? 3 : 1;
-            return (o.score || 0) * engagementBoost * hotBoost / Math.pow(hoursAgo + 2, 0.8);
+            return (o.score || 0) * engagementBoost / Math.pow(hoursAgo + 2, 0.8);
           };
           const pinnedFirst = (arr: Observation[]) => [...arr].sort((a, b) => (b.pinned ? 1 : 0) - (a.pinned ? 1 : 0));
+          const hotTakes = topLevel.filter(o => o.is_hot_take);
           const filteredPosts = selectedTopic === "__top__"
             ? [...topLevel].sort((a, b) => rankScore(b) - rankScore(a))
-            : !selectedTopic || selectedTopic === "__all__"
-              ? pinnedFirst(topLevel)
-              : selectedTopic === "PvA"
-                ? pinnedFirst(topLevel.filter(o => !!o.episode_tag))
-                : pinnedFirst(topLevel.filter(o => (o.tags || []).includes(selectedTopic)));
+            : selectedTopic === "__hot__"
+              ? [...hotTakes].sort((a, b) => (b.score || 0) - (a.score || 0))
+              : !selectedTopic || selectedTopic === "__all__"
+                ? pinnedFirst(topLevel)
+                : selectedTopic === "PvA"
+                  ? pinnedFirst(topLevel.filter(o => !!o.episode_tag))
+                  : pinnedFirst(topLevel.filter(o => (o.tags || []).includes(selectedTopic)));
 
           const renderCard = (obs: Observation) => {
             let bullets: string[] = [];
@@ -1262,6 +1264,25 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     Top
                   </button>
 
+                  {/* Hot Takes pill — only shown when there are hot takes */}
+                  {hotTakes.length > 0 && (
+                    <button
+                      onClick={() => setSelectedTopic(selectedTopic === "__hot__" ? null : "__hot__")}
+                      style={{
+                        flexShrink: 0,
+                        background: selectedTopic === "__hot__" ? "#FF6B00" : "rgba(255,107,0,0.15)",
+                        border: selectedTopic === "__hot__" ? "1.5px solid #FF6B00" : "1.5px solid rgba(255,107,0,0.4)",
+                        borderRadius: 6, padding: "3px 9px",
+                        fontSize: 9, fontWeight: 700,
+                        color: selectedTopic === "__hot__" ? "#FFF" : "#FF6B00",
+                        cursor: "pointer", WebkitTapHighlightColor: "transparent",
+                        fontFamily: "inherit",
+                      }}
+                    >
+                      🔥 Hot Takes
+                    </button>
+                  )}
+
                   {/* PvA pill — always visible */}
                   <button
                     onClick={() => setSelectedTopic(selectedTopic === "PvA" ? null : "PvA")}
@@ -1304,7 +1325,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 : selectedTopic && (
                   <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
                     <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>
-                      {selectedTopic === "PvA" ? "No PvA episodes yet." : `No takes tagged "${selectedTopic}" yet.`}
+                      {selectedTopic === "PvA" ? "No PvA episodes yet." : selectedTopic === "__hot__" ? "No hot takes yet." : `No takes tagged "${selectedTopic}" yet.`}
                     </p>
                   </div>
                 )
