@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import SimplifiedDesignEditor from './admin/SimplifiedDesignEditor';
+import PodcastIngestionForm from './admin/PodcastIngestionForm';
 import { diffWords } from 'diff';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8100';
@@ -30,7 +31,7 @@ interface TestSuite {
 
 export default function AdminPanel({ onClose }: { onClose: () => void }) {
   // Rendered as a full page — onClose navigates back to home
-  const [activeTab, setActiveTab] = useState<'prompts' | 'design'>('prompts');
+  const [activeTab, setActiveTab] = useState<'prompts' | 'design' | 'podcasts'>('prompts');
   const [prompts, setPrompts] = useState<Record<string, Prompt>>({});
   const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
   const [editingPrompt, setEditingPrompt] = useState<Prompt | null>(null);
@@ -1176,6 +1177,21 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
         >
           Design Tokens
         </button>
+        <button
+          onClick={() => setActiveTab('podcasts')}
+          style={{
+            padding: '12px 24px',
+            background: 'none',
+            border: 'none',
+            borderBottom: activeTab === 'podcasts' ? '2px solid #FF00AE' : '2px solid transparent',
+            color: activeTab === 'podcasts' ? '#FF00AE' : '#888',
+            fontSize: 13,
+            fontWeight: 700,
+            cursor: 'pointer',
+          }}
+        >
+          Podcasts
+        </button>
       </div>
 
       {/* Content */}
@@ -1185,7 +1201,7 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
             {error}
           </div>
         )}
-        {loading ? (
+        {loading && activeTab !== 'podcasts' ? (
           <div style={{ textAlign: 'center', padding: 40, color: '#888' }}>Loading...</div>
         ) : activeTab === 'prompts' ? (
           <div style={{ display: 'grid', gridTemplateColumns: '280px 1fr', gap: 24 }}>
@@ -1196,6 +1212,8 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
               )}
             </div>
           </div>
+        ) : activeTab === 'podcasts' ? (
+          <PodcastIngestionForm />
         ) : (
           <SimplifiedDesignEditor onClose={() => {}} />
         )}
