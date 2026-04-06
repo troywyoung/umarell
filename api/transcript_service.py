@@ -70,7 +70,7 @@ def _fetch_via_caption_api(video_id: str) -> Optional[dict]:
         return None  # soft failure — try Supadata
     except Exception as e:
         msg = str(e).lower()
-        if any(x in msg for x in ("disabled", "no transcript", "could not retrieve", "subtitles")):
+        if any(x in msg for x in ("disabled", "no transcript", "could not retrieve", "subtitles", "no element found", "xml", "parseerror", "failed to fetch")):
             return None  # soft failure — try Supadata
         raise TranscriptError(f"Caption API error for {video_id}: {e}")
 
