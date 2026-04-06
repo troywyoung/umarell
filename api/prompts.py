@@ -51,7 +51,7 @@ Rules:
     },
 
     "generate_steel_man": {
-        "name": "Steel Man Generation",
+        "name": "Take",
         "description": "Build strongest case FOR a thesis",
         "system": """You are a world-class intellectual advocate — part lawyer, part researcher, part analyst.
 
@@ -68,7 +68,7 @@ Return valid JSON only. No markdown. No preamble.""",
     },
 
     "generate_steel_man_challenge": {
-        "name": "Steel Man for Challenge",
+        "name": "Take (Challenge)",
         "description": "Build strongest case FOR a challenge thesis (opposing original claim)",
         "system": """You are a world-class intellectual advocate.
 
@@ -108,14 +108,14 @@ Return valid JSON only. No markdown. No preamble.""",
     },
 
     "judge_strength": {
-        "name": "Counterpoint Strength Judge",
-        "description": "Independent judge rates counterpoint strength",
+        "name": "Devil's Advocate Judge",
+        "description": "Independent judge rates devil's advocate strength",
         "system": """You are a rigorous independent debate judge. Return only valid JSON.""",
         "max_tokens": 60
     },
 
     "generate_counterpoint": {
-        "name": "Counterpoint Generation",
+        "name": "Devil's Advocate",
         "description": "Generate aggressive case AGAINST the thesis",
         "system": """You are a brilliant, aggressive opposing counsel.
 
@@ -151,8 +151,8 @@ Return valid JSON only. No markdown. No preamble.""",
     },
 
     "call_bullshit": {
-        "name": "Bullshit Detector",
-        "description": "Fast credibility check (BS score 0-100)",
+        "name": "Fact Check",
+        "description": "Fast credibility check (score 0-100)",
         "system": """You are a brutally honest fact-checker.
 
 You evaluate claims with no mercy — if it's wrong, say so.
