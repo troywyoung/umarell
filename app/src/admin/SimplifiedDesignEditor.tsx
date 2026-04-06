@@ -137,11 +137,13 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
 
     if (isFontToken(key)) {
       const options = key === 'body_font_family' ? BODY_FONTS : DISPLAY_FONTS;
-      const previewText = key === 'display_font_family' ? 'The Quick Brown Fox' : 'The quick brown fox jumps over the lazy dog';
+      const previewText = key === 'display_font_family' ? 'People vs Algorithms' : 'The quick brown fox jumps over the lazy dog.';
       const matched = options.find(o => o.value === currentValue);
       return (
-        <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+        <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
           <label style={{ fontSize: 12, fontWeight: 600, color: '#1A1A1A' }}>{data!.labels[key]}</label>
+
+          {/* Preset picker */}
           <select
             value={matched ? currentValue : '__custom__'}
             onChange={e => {
@@ -152,14 +154,27 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
             {options.map(o => (
               <option key={o.value} value={o.value}>{o.label}</option>
             ))}
-            {!matched && <option value="__custom__">Custom: {currentValue}</option>}
+            {!matched && <option value="__custom__">Custom</option>}
           </select>
+
+          {/* Editable CSS value */}
+          <input
+            type="text"
+            value={currentValue}
+            onChange={e => handleTokenChange(key, e.target.value)}
+            style={{ padding: '5px 8px', fontSize: 11, fontFamily: 'monospace', color: '#555', border: '1px solid #E0E0E0', borderRadius: 4, background: '#FAFAFA' }}
+          />
+
           {/* Live preview */}
-          <div style={{ padding: '8px 10px', border: '1px solid #EEE', borderRadius: 4, background: '#FAFAFA' }}>
-            <div style={{ fontSize: 10, color: '#AAA', marginBottom: 3 }}>Preview</div>
-            <div style={{ fontFamily: currentValue, fontSize: key === 'display_font_family' ? 20 : 14, color: '#1A1A1A', lineHeight: 1.4 }}>
+          <div style={{ padding: '10px 12px', border: '1px solid #EEE', borderRadius: 6, background: '#FFF' }}>
+            <div style={{ fontFamily: currentValue, fontSize: key === 'display_font_family' ? 22 : 14, color: '#1A1A1A', lineHeight: 1.45 }}>
               {previewText}
             </div>
+            {key === 'body_font_family' && (
+              <div style={{ fontFamily: currentValue, fontSize: 12, color: '#888', marginTop: 4, lineHeight: 1.5 }}>
+                Bold predictions about the future of media, platforms, and AI.
+              </div>
+            )}
           </div>
         </div>
       );
