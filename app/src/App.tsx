@@ -420,6 +420,17 @@ function getScoreTier(v: number): { label: string } {
   return { label: "Undeniable" };
 }
 
+function FlameIcon({ size, color = "#FF00AE" }: { size: number; color?: string }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 40 48" fill="none">
+      <path
+        d="M20 1C20 1 10 15 12 26C8 22 7 14 7 14C2 22 1 31 5 38C9 45 14 47 20 47C26 47 31 45 35 38C39 31 38 22 33 14C33 14 32 22 28 26C30 15 20 1 20 1Z"
+        fill={color}
+      />
+    </svg>
+  );
+}
+
 function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean; animate?: boolean; isHotTake?: boolean }) {
   if (value == null) return null;
   const target = Math.round(value);
@@ -430,7 +441,6 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const circ = 2 * Math.PI * r;
   const PINK = "#FF00AE";
 
-  // Animation state
   const [displayVal, setDisplayVal] = useState(animate ? 0 : target);
   const [animPct, setAnimPct] = useState(animate ? 0 : target / 100);
   const [showFlame, setShowFlame] = useState(!animate && isHotTake);
@@ -452,7 +462,6 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
       if (progress < 1) {
         animRef.current = requestAnimationFrame(tick);
       } else if (isHotTake) {
-        // Roll-up complete — pause then reveal flame
         setTimeout(() => setShowFlame(true), 300);
       }
     };
@@ -462,6 +471,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
 
   const currentColor = showFlame ? PINK : (animate ? getScoreColor(displayVal) : accent);
   const pct = showFlame ? 1 : (animate ? animPct : target / 100);
+  const flameSize = Math.round(dim * 0.52);
 
   return (
     <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
@@ -471,21 +481,15 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
           strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round"
           style={{ transition: showFlame ? "stroke 0.4s ease, stroke-dasharray 0.4s ease" : "none" }} />
       </svg>
-      <div style={{
-        position: "absolute", inset: 0, display: "flex", flexDirection: "column",
-        alignItems: "center", justifyContent: "center",
-      }}>
-        <span style={{ fontSize, fontWeight: 800, color: showFlame ? PINK : (dark ? "#1A1A1A" : "#FFF"), lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+      <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        {showFlame ? (
+          <div style={{ animation: "flameGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards" }}>
+            <FlameIcon size={flameSize} color={PINK} />
+          </div>
+        ) : (
+          <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+        )}
       </div>
-      {showFlame && (
-        <div style={{
-          position: "absolute", top: -6, right: -6,
-          fontSize: size === "lg" ? 16 : size === "sm" ? 14 : 12,
-          lineHeight: 1,
-          filter: "drop-shadow(0 0 3px rgba(255,100,0,0.6))",
-          animation: animate ? "flamePop 0.4s ease-out" : undefined,
-        }}>🔥</div>
-      )}
     </div>
   );
 }
@@ -796,7 +800,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         @keyframes recPulse { 0%,100% { opacity:1; } 50% { opacity:0.2; } }
         @keyframes yellowPulse { 0%,100% { opacity:1; } 50% { opacity:0.25; } }
         @keyframes scoreLabelFadeIn { from { opacity:0; transform:translateX(-6px); } to { opacity:1; transform:translateX(0); } }
-        @keyframes flamePop { 0% { opacity:0; transform:scale(0.4); } 60% { transform:scale(1.3); } 100% { opacity:1; transform:scale(1); } }
+        @keyframes flameGrow { 0% { opacity:0; transform:scale(0.2); } 60% { opacity:1; transform:scale(1.35); } 100% { opacity:1; transform:scale(1); } }
       `}</style>
 
 <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
@@ -903,8 +907,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       />
                     )}
                     <div style={{ flex: 1 }}>
-                      <div style={{ float: "right", marginLeft: 8, marginBottom: 2 }}>
-                        <ScoreBadge value={obs.score} size="sm" dark isHotTake={obs.is_hot_take} />
+                      <div style={{ float: "right", marginLeft: 8, marginBottom: 2, textAlign: "center" }}>
+                        <ScoreBadge value={obs.score} size="sm" dark animate={!!obs.is_hot_take} isHotTake={obs.is_hot_take} />
+                        {obs.is_hot_take && <p style={{ fontSize: 7, fontWeight: 800, color: "#FF00AE", margin: "3px 0 0", letterSpacing: 0.4, textTransform: "uppercase" }}>Hot Take</p>}
                       </div>
                       <p style={{
                         fontSize: "var(--font-size-card-headline, 14px)", fontWeight: 700,
@@ -1269,29 +1274,29 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       onClick={() => setSelectedTopic(selectedTopic === "__hot__" ? null : "__hot__")}
                       style={{
                         flexShrink: 0,
-                        background: selectedTopic === "__hot__" ? "#FF6B00" : "rgba(255,107,0,0.15)",
-                        border: selectedTopic === "__hot__" ? "1.5px solid #FF6B00" : "1.5px solid rgba(255,107,0,0.4)",
+                        background: selectedTopic === "__hot__" ? "var(--color-accent, #FF00AE)" : "rgba(255,0,174,0.15)",
+                        border: selectedTopic === "__hot__" ? "1.5px solid #FF00AE" : "1.5px solid rgba(255,0,174,0.4)",
                         borderRadius: 6, padding: "3px 9px",
                         fontSize: 9, fontWeight: 700,
-                        color: selectedTopic === "__hot__" ? "#FFF" : "#FF6B00",
+                        color: selectedTopic === "__hot__" ? "#FFF" : "var(--color-accent, #FF00AE)",
                         cursor: "pointer", WebkitTapHighlightColor: "transparent",
                         fontFamily: "inherit",
                       }}
                     >
-                      🔥 Hot Takes
+                      Hot Takes
                     </button>
                   )}
 
-                  {/* PvA pill — always visible */}
+                  {/* PvA pill */}
                   <button
                     onClick={() => setSelectedTopic(selectedTopic === "PvA" ? null : "PvA")}
                     style={{
                       flexShrink: 0,
-                      background: selectedTopic === "PvA" ? "var(--color-accent, #FF00AE)" : "rgba(255,0,174,0.15)",
-                      border: selectedTopic === "PvA" ? "1.5px solid #FF00AE" : "1.5px solid rgba(255,0,174,0.4)",
+                      background: selectedTopic === "PvA" ? "rgba(255,255,255,0.15)" : "transparent",
+                      border: selectedTopic === "PvA" ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
                       borderRadius: 6, padding: "3px 9px",
                       fontSize: 9, fontWeight: 700,
-                      color: selectedTopic === "PvA" ? "#FFF" : "var(--color-accent, #FF00AE)",
+                      color: selectedTopic === "PvA" ? "#FFF" : "rgba(255,255,255,0.55)",
                       cursor: "pointer", WebkitTapHighlightColor: "transparent",
                       fontFamily: "inherit",
                     }}
@@ -1949,8 +1954,8 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", flex: "0 0 auto" }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate isHotTake={obs.is_hot_take} />
-                <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
-                  {tier.label}
+                <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
+                  {obs.is_hot_take ? "Hot Take" : tier.label}
                 </span>
                 <button
                   onClick={() => setShowScoreInfo(sv => !sv)}
