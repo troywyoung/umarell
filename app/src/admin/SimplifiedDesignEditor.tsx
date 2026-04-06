@@ -195,7 +195,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
           </div>
           <div style={{ padding: '10px 12px', borderRadius: 6, background: '#12102B', border: '1px solid #EEE' }}>
             <div style={{ fontSize: 18, fontWeight: 700, color: '#FFF', lineHeight: 1.3, letterSpacing: `${parsed}px` }}>
-              People vs Algorithms
+              hottake
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
 
     if (isFontToken(key)) {
       const options = key === 'body_font_family' ? BODY_FONTS : DISPLAY_FONTS;
-      const previewText = key === 'display_font_family' ? 'People vs Algorithms' : 'The quick brown fox jumps over the lazy dog.';
+      const previewText = key === 'display_font_family' ? 'hottake' : 'The quick brown fox jumps over the lazy dog.';
       const matched = options.find(o => o.value === currentValue);
       return (
         <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
