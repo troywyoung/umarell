@@ -1445,19 +1445,25 @@ async def patch_episode_source(
     episode_tag: str,
     podcast_name: str,
     admin_key: str,
-    db: AsyncSession = Depends(get_db)
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
 ):
     """Backfill context (podcast name) for all observations in an episode."""
     if admin_key != settings.google_api_key:
         raise HTTPException(403, "Invalid admin key")
+    # Use raw SQL UPDATE to bypass any ORM mapping issues
     result = await db.execute(
-        select(Observation).where(Observation.episode_tag == episode_tag)
+        text("UPDATE observations SET context = :name WHERE episode_tag = :tag"),
+        {"name": podcast_name, "tag": episode_tag},
     )
-    obs_list = list(result.scalars().all())
-    for obs in obs_list:
-        obs.context = podcast_name
     await db.commit()
-    return {"patched": len(obs_list), "episode_tag": episode_tag, "podcast_name": podcast_name}
+    # Count affected rows
+    count_result = await db.execute(
+        text("SELECT COUNT(*) FROM observations WHERE episode_tag = :tag AND context = :name"),
+        {"tag": episode_tag, "name": podcast_name},
+    )
+    count = count_result.scalar() or 0
+    return {"patched": count, "episode_tag": episode_tag, "podcast_name": podcast_name}
 
 
 @app.post("/admin/unpin-episodes")

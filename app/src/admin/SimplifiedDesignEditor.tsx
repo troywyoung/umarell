@@ -65,7 +65,10 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
         body: JSON.stringify({ tokens: editedTokens }),
       });
-      if (!res.ok) throw new Error('Failed to save design tokens');
+      if (!res.ok) {
+        const errData = await res.json().catch(() => ({}));
+        throw new Error(errData.detail || `HTTP ${res.status}`);
+      }
       const result = await res.json();
       setSaveStatus('saved');
       setSavedTokens(editedTokens);
@@ -136,7 +139,13 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
   );
 
   if (loading) return <div style={{ padding: 40, textAlign: 'center', color: '#888' }}>Loading design tokens...</div>;
-  if (!data) return <div style={{ padding: 40, textAlign: 'center', color: '#E53E3E' }}>Failed to load design tokens</div>;
+  if (!data) return (
+    <div style={{ padding: 40, textAlign: 'center', color: '#E53E3E' }}>
+      <div style={{ fontWeight: 700, marginBottom: 8 }}>Failed to load design tokens</div>
+      {error && <div style={{ fontSize: 12, color: '#888', fontFamily: 'monospace', marginBottom: 12 }}>{error}</div>}
+      <button onClick={loadTokens} style={{ padding: '7px 14px', fontSize: 12, border: '1px solid #DDD', borderRadius: 5, cursor: 'pointer', background: '#FFF' }}>Retry</button>
+    </div>
+  );
 
   const sectionStyle = { marginBottom: 32 };
   const headingStyle: React.CSSProperties = { margin: '0 0 14px', fontSize: 13, fontWeight: 700, color: '#555', textTransform: 'uppercase', letterSpacing: '0.05em' };
