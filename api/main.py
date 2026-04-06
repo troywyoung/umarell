@@ -2017,8 +2017,12 @@ class SampleComparisonRequest(BaseModel):
     saved_prompt_key: str
     draft_system: str
     draft_max_tokens: int
-    queries: list[str]  # 1-5 raw_input strings to test against
+    queries: list[str]
+    # Prompt diff mode: set preview_model (same model for both calls, vary prompt text)
     preview_model: str | None = None
+    # Model diff mode: set draft_model (same prompt for both calls, vary model)
+    # When draft_model is set, draft_system is ignored — saved system is used for both
+    draft_model: str | None = None
 
 
 @app.post("/admin/prompts/compare-samples")
@@ -2073,10 +2077,28 @@ async def compare_samples(
     total_saved_latency = total_draft_latency = 0
     total_saved_cost = total_draft_cost = 0.0
 
+    # Determine what varies between saved and draft calls
+    if comparison.draft_model:
+        # Model diff: same prompt text for both, different models
+        saved_system = saved["system"]
+        draft_system = saved["system"]
+        saved_model = saved.get("model") or None   # prompt's own model (or active default)
+        draft_model = comparison.draft_model
+        saved_max_tokens = saved["max_tokens"]
+        draft_max_tokens = saved["max_tokens"]
+    else:
+        # Prompt diff: same model for both, different prompt texts
+        saved_system = saved["system"]
+        draft_system = comparison.draft_system
+        saved_model = comparison.preview_model or saved.get("model") or None
+        draft_model = comparison.preview_model or saved.get("model") or None
+        saved_max_tokens = saved["max_tokens"]
+        draft_max_tokens = comparison.draft_max_tokens
+
     for query_text in comparison.queries:
         saved_result, draft_result = await asyncio.gather(
-            call_with_metadata("Saved", saved["system"], query_text, saved["max_tokens"], comparison.preview_model),
-            call_with_metadata("Draft", comparison.draft_system, query_text, comparison.draft_max_tokens, comparison.preview_model),
+            call_with_metadata("Saved", saved_system, query_text, saved_max_tokens, saved_model),
+            call_with_metadata("Draft", draft_system, query_text, draft_max_tokens, draft_model),
             return_exceptions=True
         )
         if isinstance(saved_result, Exception):
@@ -2106,8 +2128,12 @@ async def compare_samples(
         })
 
     n = len(comparison.queries)
+    mode = "model" if comparison.draft_model else "prompt"
     return {
         "suite_name": f"Live Samples ({n})",
+        "mode": mode,
+        "saved_label": f"{saved.get('model') or 'default model'}" if mode == "model" else "Current prompt",
+        "draft_label": comparison.draft_model if mode == "model" else "Draft prompt",
         "results": results,
         "aggregate_metrics": {
             "total_queries": n,

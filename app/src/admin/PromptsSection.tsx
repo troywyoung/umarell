@@ -10,775 +10,458 @@ interface Prompt {
   model?: string;
 }
 
-interface TestQuery {
-  id?: string;
-  query_text: string;
-  order_index: number;
-}
-
-interface TestSuite {
-  id: string;
-  name: string;
-  description?: string;
-  query_count?: number;
-  queries?: TestQuery[];
-  created_at?: string;
-}
-
 interface Sample {
   id: string;
   label: string;
   text: string;
   thesis: string;
-  created_at: string | null;
 }
+
+type CompareMode = 'prompt' | 'model';
+
+const MODELS = [
+  { value: '', label: 'Default active model' },
+  { value: 'claude-sonnet-4-6', label: 'Claude Sonnet 4.6' },
+  { value: 'claude-opus-4-5-20251101', label: 'Claude Opus 4.5' },
+  { value: 'claude-3-5-sonnet-20241022', label: 'Claude 3.5 Sonnet' },
+  { value: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash' },
+  { value: 'gemini-2.0-flash-exp', label: 'Gemini 2.0 Flash (Exp)' },
+];
 
 export default function PromptsSection() {
   const [prompts, setPrompts] = useState<Record<string, Prompt>>({});
-  const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
+  const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [editingPrompt, setEditingPrompt] = useState<Prompt | null>(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [testQuery, setTestQuery] = useState<string>('');
-  const [comparisonResult, setComparisonResult] = useState<any | null>(null);
-  const [comparing, setComparing] = useState(false);
-  const [testSuites, setTestSuites] = useState<TestSuite[]>([]);
-  const [selectedSuite, setSelectedSuite] = useState<string | null>(null);
-  const [batchResults, setBatchResults] = useState<any | null>(null);
-  const [previewModel, setPreviewModel] = useState<string>('');
+  const [saveMsg, setSaveMsg] = useState<string | null>(null);
+
   const [samples, setSamples] = useState<Sample[]>([]);
-  const [selectedSampleIds, setSelectedSampleIds] = useState<Set<string>>(new Set());
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [loadingSamples, setLoadingSamples] = useState(false);
 
-  useEffect(() => {
-    loadData();
-  }, []);
+  const [compareMode, setCompareMode] = useState<CompareMode>('prompt');
+  const [comparing, setComparing] = useState(false);
+  const [compareError, setCompareError] = useState<string | null>(null);
+  const [results, setResults] = useState<any | null>(null);
 
-  const loadData = async () => {
+  useEffect(() => { loadPrompts(); }, []);
+
+  const token = () => localStorage.getItem('sm_token') || '';
+
+  const loadPrompts = async () => {
     setLoading(true);
-    setError(null);
     try {
-      const token = localStorage.getItem('sm_token');
-      if (!token) {
-        setError('Not authenticated');
-        return;
-      }
-
       const res = await fetch(`${API_BASE}/admin/prompts`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { Authorization: `Bearer ${token()}` },
       });
       if (!res.ok) throw new Error('Failed to load prompts');
-      const data = await res.json();
-      setPrompts(data);
-
-      // Load test suites
-      const suitesRes = await fetch(`${API_BASE}/admin/prompts/test-suites`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      if (suitesRes.ok) {
-        const suitesData = await suitesRes.json();
-        setTestSuites(suitesData);
-      }
-    } catch (err: any) {
-      setError(err.message);
+      setPrompts(await res.json());
+    } catch (e: any) {
+      setSaveMsg(e.message);
     } finally {
       setLoading(false);
     }
   };
 
+  const selectPrompt = (key: string) => {
+    setSelectedKey(key);
+    setEditingPrompt({ ...prompts[key] });
+    setResults(null);
+    setCompareError(null);
+  };
+
   const savePrompt = async () => {
-    if (!selectedPrompt || !editingPrompt) return;
+    if (!selectedKey || !editingPrompt) return;
     setSaving(true);
-    setError(null);
+    setSaveMsg(null);
     try {
-      const token = localStorage.getItem('sm_token');
-      const res = await fetch(`${API_BASE}/admin/prompts/${selectedPrompt}`, {
+      const res = await fetch(`${API_BASE}/admin/prompts/${selectedKey}`, {
         method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
-        },
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token()}` },
         body: JSON.stringify(editingPrompt),
       });
-      if (!res.ok) throw new Error('Failed to save prompt');
-      await loadData();
-      setSelectedPrompt(null);
-      setEditingPrompt(null);
-      setComparisonResult(null);
-      setBatchResults(null);
-      setTestQuery('');
-    } catch (err: any) {
-      setError(err.message);
+      if (!res.ok) throw new Error('Failed to save');
+      await loadPrompts();
+      setSaveMsg('Saved');
+      setTimeout(() => setSaveMsg(null), 2500);
+    } catch (e: any) {
+      setSaveMsg(e.message);
     } finally {
       setSaving(false);
-    }
-  };
-
-  const runComparison = async () => {
-    if (!selectedPrompt || !editingPrompt || !testQuery.trim()) {
-      setError('Please provide a test query');
-      return;
-    }
-    setComparing(true);
-    setError(null);
-    setComparisonResult(null);
-    try {
-      const token = localStorage.getItem('sm_token');
-      const res = await fetch(`${API_BASE}/admin/prompts/compare`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          saved_prompt_key: selectedPrompt,
-          draft_system: editingPrompt.system,
-          draft_max_tokens: editingPrompt.max_tokens,
-          test_query: testQuery,
-          preview_model: previewModel || undefined,
-        }),
-      });
-      if (!res.ok) {
-        const errorText = await res.text();
-        throw new Error(`Failed to run comparison: ${errorText}`);
-      }
-      const result = await res.json();
-      setComparisonResult(result);
-    } catch (err: any) {
-      setError(err.message || 'Network error. Check your connection and retry.');
-    } finally {
-      setComparing(false);
-    }
-  };
-
-  const runSuiteComparison = async () => {
-    if (!selectedPrompt || !editingPrompt || !selectedSuite) {
-      setError('Please select a test suite');
-      return;
-    }
-    setComparing(true);
-    setError(null);
-    setBatchResults(null);
-    try {
-      const token = localStorage.getItem('sm_token');
-      const res = await fetch(`${API_BASE}/admin/prompts/compare-suite`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify({
-          saved_prompt_key: selectedPrompt,
-          draft_system: editingPrompt.system,
-          draft_max_tokens: editingPrompt.max_tokens,
-          suite_id: selectedSuite,
-          preview_model: previewModel || undefined,
-        }),
-      });
-      if (!res.ok) {
-        const errorText = await res.text();
-        throw new Error(`Failed to run suite comparison: ${errorText}`);
-      }
-      const result = await res.json();
-      setBatchResults(result);
-    } catch (err: any) {
-      setError(err.message || 'Network error. Check your connection and retry.');
-    } finally {
-      setComparing(false);
     }
   };
 
   const loadSamples = async () => {
     setLoadingSamples(true);
     try {
-      const token = localStorage.getItem('sm_token');
       const res = await fetch(`${API_BASE}/admin/prompts/samples?limit=5`, {
-        headers: { Authorization: `Bearer ${token}` },
+        headers: { Authorization: `Bearer ${token()}` },
       });
       if (!res.ok) throw new Error('Failed to load samples');
       const data: Sample[] = await res.json();
       setSamples(data);
-      // Default: select all
-      setSelectedSampleIds(new Set(data.map((s) => s.id)));
-    } catch (err: any) {
-      setError(err.message);
+      setSelectedIds(new Set(data.map(s => s.id)));
+    } catch (e: any) {
+      setCompareError(e.message);
     } finally {
       setLoadingSamples(false);
     }
   };
 
   const toggleSample = (id: string) => {
-    setSelectedSampleIds((prev) => {
+    setSelectedIds(prev => {
       const next = new Set(prev);
-      if (next.has(id)) {
-        next.delete(id);
-      } else {
-        next.add(id);
-      }
+      next.has(id) ? next.delete(id) : next.add(id);
       return next;
     });
   };
 
-  const runSamplesComparison = async () => {
-    if (!selectedPrompt || !editingPrompt || selectedSampleIds.size === 0) {
-      setError('Select at least one sample');
-      return;
-    }
-    const queries = samples
-      .filter((s) => selectedSampleIds.has(s.id))
-      .map((s) => s.text);
+  const runComparison = async () => {
+    if (!selectedKey || !editingPrompt || selectedIds.size === 0) return;
+    const saved = prompts[selectedKey];
+    const queries = samples.filter(s => selectedIds.has(s.id)).map(s => s.text);
+
     setComparing(true);
-    setError(null);
-    setBatchResults(null);
-    setComparisonResult(null);
+    setCompareError(null);
+    setResults(null);
+
+    const body: any = {
+      saved_prompt_key: selectedKey,
+      draft_system: compareMode === 'prompt' ? editingPrompt.system : saved.system,
+      draft_max_tokens: compareMode === 'prompt' ? editingPrompt.max_tokens : saved.max_tokens,
+      queries,
+    };
+
+    if (compareMode === 'model') {
+      // Model diff: hold prompt constant, vary model
+      body.draft_model = editingPrompt.model || '';
+    } else {
+      // Prompt diff: hold model constant at saved model
+      body.preview_model = saved.model || '';
+    }
+
     try {
-      const token = localStorage.getItem('sm_token');
       const res = await fetch(`${API_BASE}/admin/prompts/compare-samples`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
-        body: JSON.stringify({
-          saved_prompt_key: selectedPrompt,
-          draft_system: editingPrompt.system,
-          draft_max_tokens: editingPrompt.max_tokens,
-          queries,
-          preview_model: previewModel || undefined,
-        }),
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token()}` },
+        body: JSON.stringify(body),
       });
-      if (!res.ok) {
-        const errorText = await res.text();
-        throw new Error(`Samples comparison failed: ${errorText}`);
-      }
-      const result = await res.json();
-      setBatchResults(result);
-    } catch (err: any) {
-      setError(err.message || 'Network error. Check your connection and retry.');
+      if (!res.ok) throw new Error(await res.text());
+      setResults(await res.json());
+    } catch (e: any) {
+      setCompareError(e.message);
     } finally {
       setComparing(false);
     }
   };
 
-  const renderDiff = (oldText: string, newText: string) => {
-    const changes = diffWords(oldText, newText);
+  const renderDiff = (a: string, b: string) => {
+    const changes = diffWords(a || '', b || '');
     return (
-      <div style={{ fontFamily: 'monospace', fontSize: 12, lineHeight: 1.6, whiteSpace: 'pre-wrap' }}>
-        {changes.map((part, index) => {
-          let backgroundColor = 'transparent';
-          let color = '#1A1A1A';
-          let textDecoration = 'none';
-
-          if (part.added) {
-            backgroundColor = '#D4EDDA';
-            color = '#155724';
-          } else if (part.removed) {
-            backgroundColor = '#F8D7DA';
-            color = '#721C24';
-            textDecoration = 'line-through';
-          }
-
-          return (
-            <span
-              key={index}
-              style={{
-                backgroundColor,
-                color,
-                textDecoration,
-                padding: part.added || part.removed ? '0 2px' : 0,
-              }}
-            >
-              {part.value}
-            </span>
-          );
-        })}
+      <div style={{ fontFamily: 'monospace', fontSize: 12, lineHeight: 1.6, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+        {changes.map((part, i) => (
+          <span key={i} style={{
+            background: part.added ? '#D4EDDA' : part.removed ? '#F8D7DA' : 'transparent',
+            color: part.added ? '#155724' : part.removed ? '#721C24' : '#1A1A1A',
+            textDecoration: part.removed ? 'line-through' : 'none',
+            padding: (part.added || part.removed) ? '0 1px' : 0,
+          }}>{part.value}</span>
+        ))}
       </div>
     );
   };
 
-  if (loading) {
-    return (
-      <div style={{ padding: 20, textAlign: 'center' }}>
-        <div style={{ fontSize: 14, color: '#888' }}>Loading prompts...</div>
-      </div>
-    );
-  }
+  if (loading) return <div style={{ padding: 40, textAlign: 'center', color: '#888' }}>Loading prompts…</div>;
 
-  const savedPrompt = selectedPrompt ? prompts[selectedPrompt] : null;
-  const hasChanges = savedPrompt && editingPrompt && (
-    editingPrompt.system !== savedPrompt.system ||
-    editingPrompt.max_tokens !== savedPrompt.max_tokens ||
-    (editingPrompt.model || '') !== (savedPrompt.model || '')
-  );
+  const saved = selectedKey ? prompts[selectedKey] : null;
+  const promptChanged = saved && editingPrompt && editingPrompt.system !== saved.system;
+  const modelChanged = saved && editingPrompt && (editingPrompt.model || '') !== (saved.model || '');
+
+  const canRun = !!selectedKey && selectedIds.size > 0 && !comparing;
+
+  // ─── Styles ────────────────────────────────────────────────────────────────
+  const panelBase: React.CSSProperties = {
+    display: 'flex', flexDirection: 'column', height: '100%', overflow: 'hidden',
+  };
+  const label: React.CSSProperties = {
+    fontSize: 11, fontWeight: 700, color: '#888', textTransform: 'uppercase',
+    letterSpacing: '0.05em', marginBottom: 5, display: 'block',
+  };
+  const fieldset: React.CSSProperties = { marginBottom: 16 };
+  const inputStyle: React.CSSProperties = {
+    width: '100%', padding: '7px 9px', fontSize: 13, border: '1px solid #DDD',
+    borderRadius: 5, boxSizing: 'border-box', fontFamily: 'inherit',
+  };
 
   return (
-    <div style={{ display: 'flex', height: '100%' }}>
-      {/* Left Panel: Prompt List */}
-      <div
-        style={{
-          width: '300px',
-          borderRight: '1px solid #EEE',
-          display: 'flex',
-          flexDirection: 'column',
-          flexShrink: 0,
-        }}
-      >
-        <div style={{ padding: 20, borderBottom: '1px solid #EEE' }}>
-          <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>Prompts</h2>
-          <p style={{ margin: '4px 0 0', fontSize: 13, color: '#888' }}>
-            {Object.keys(prompts).length} available
-          </p>
+    <div style={{ display: 'flex', height: '100%', overflow: 'hidden' }}>
+
+      {/* ── 1. Prompt list ─────────────────────────────────────────────────── */}
+      <div style={{ ...panelBase, width: 210, borderRight: '1px solid #EEE', flexShrink: 0 }}>
+        <div style={{ padding: '14px 16px', borderBottom: '1px solid #EEE', fontSize: 13, fontWeight: 700 }}>
+          Prompts
         </div>
-        <div style={{ flex: 1, overflowY: 'auto', padding: 20 }}>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-            {Object.entries(prompts).map(([key, prompt]) => (
-              <div
-                key={key}
-                onClick={() => {
-                  setSelectedPrompt(key);
-                  setEditingPrompt({ ...prompt });
-                  setComparisonResult(null);
-                  setBatchResults(null);
-                  setTestQuery('');
-                  setPreviewModel(prompt.model || '');
-                }}
-                style={{
-                  padding: 12,
-                  background: selectedPrompt === key ? '#FF00AE' : '#F0F0ED',
-                  color: selectedPrompt === key ? '#FFF' : '#1A1A1A',
-                  borderRadius: 8,
-                  cursor: 'pointer',
-                  transition: 'all 0.2s',
-                }}
-              >
-                <div style={{ fontWeight: 700, fontSize: 14 }}>{prompt.name}</div>
-                <div style={{ fontSize: 11, opacity: 0.7, marginTop: 4 }}>
-                  {prompt.description}
-                </div>
-                {prompt.model && (
-                  <div style={{ fontSize: 10, marginTop: 4, opacity: 0.6, fontFamily: 'monospace' }}>
-                    {prompt.model}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+        <div style={{ flex: 1, overflowY: 'auto', padding: 10 }}>
+          {Object.entries(prompts).map(([key, p]) => (
+            <div
+              key={key}
+              onClick={() => selectPrompt(key)}
+              style={{
+                padding: '9px 10px', borderRadius: 6, cursor: 'pointer', marginBottom: 4,
+                background: selectedKey === key ? '#FF00AE' : 'transparent',
+                color: selectedKey === key ? '#FFF' : '#1A1A1A',
+              }}
+            >
+              <div style={{ fontWeight: 600, fontSize: 13 }}>{p.name}</div>
+              {p.model && (
+                <div style={{ fontSize: 10, opacity: 0.65, marginTop: 2, fontFamily: 'monospace' }}>{p.model}</div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Right Panel: Editor */}
-      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-        {!editingPrompt || !selectedPrompt ? (
-          <div style={{ padding: 40, textAlign: 'center', color: '#888' }}>
-            Select a prompt to edit
+      {/* ── 2. Editor ──────────────────────────────────────────────────────── */}
+      <div style={{ ...panelBase, width: 360, borderRight: '1px solid #EEE', flexShrink: 0 }}>
+        {!editingPrompt || !saved ? (
+          <div style={{ padding: 40, textAlign: 'center', color: '#AAA', fontSize: 13 }}>
+            Select a prompt
           </div>
         ) : (
           <>
-            {/* Editor Area */}
-            <div style={{ flex: 1, overflowY: 'auto', padding: 20 }}>
-              {error && (
-                <div style={{ padding: 12, background: '#FEE', color: '#C00', borderRadius: 8, marginBottom: 16, fontSize: 13 }}>
-                  {error}
-                </div>
+            <div style={{ padding: '14px 16px', borderBottom: '1px solid #EEE', fontSize: 13, fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <span>{saved.name}</span>
+              {(promptChanged || modelChanged) && (
+                <span style={{ fontSize: 11, color: '#FF00AE', fontWeight: 600 }}>● draft</span>
               )}
+            </div>
+            <div style={{ flex: 1, overflowY: 'auto', padding: 16 }}>
 
-              <div style={{ marginBottom: 20 }}>
-                <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
-                  Name
-                </label>
-                <input
-                  type="text"
-                  value={editingPrompt.name}
-                  onChange={(e) => setEditingPrompt({ ...editingPrompt, name: e.target.value })}
-                  style={{
-                    width: '100%',
-                    padding: 8,
-                    fontSize: 14,
-                    border: '1px solid #CCC',
-                    borderRadius: 4,
-                  }}
-                />
-              </div>
-
-              <div style={{ marginBottom: 20 }}>
-                <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
-                  Description
-                </label>
-                <input
-                  type="text"
-                  value={editingPrompt.description}
-                  onChange={(e) => setEditingPrompt({ ...editingPrompt, description: e.target.value })}
-                  style={{
-                    width: '100%',
-                    padding: 8,
-                    fontSize: 14,
-                    border: '1px solid #CCC',
-                    borderRadius: 4,
-                  }}
-                />
-              </div>
-
-              <div style={{ marginBottom: 20 }}>
-                <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
-                  System Prompt {hasChanges && <span style={{ color: '#FF00AE' }}>(Draft)</span>}
+              <div style={fieldset}>
+                <label style={label}>
+                  System Prompt
+                  {compareMode === 'model' && (
+                    <span style={{ color: '#AAA', fontWeight: 400, textTransform: 'none', letterSpacing: 0, marginLeft: 6 }}>held constant in model diff</span>
+                  )}
                 </label>
                 <textarea
                   value={editingPrompt.system}
-                  onChange={(e) => setEditingPrompt({ ...editingPrompt, system: e.target.value })}
-                  rows={12}
-                  style={{
-                    width: '100%',
-                    padding: 8,
-                    fontSize: 13,
-                    fontFamily: 'monospace',
-                    border: '1px solid #CCC',
-                    borderRadius: 4,
-                    lineHeight: 1.5,
-                  }}
+                  onChange={e => setEditingPrompt({ ...editingPrompt, system: e.target.value })}
+                  rows={14}
+                  style={{ ...inputStyle, fontFamily: 'monospace', fontSize: 12, lineHeight: 1.5, resize: 'vertical' }}
                 />
               </div>
 
-              <div style={{ marginBottom: 20 }}>
-                <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
-                  Max Tokens
-                </label>
-                <input
-                  type="number"
-                  value={editingPrompt.max_tokens}
-                  onChange={(e) => setEditingPrompt({ ...editingPrompt, max_tokens: parseInt(e.target.value) })}
-                  style={{
-                    width: '100%',
-                    padding: 8,
-                    fontSize: 14,
-                    border: '1px solid #CCC',
-                    borderRadius: 4,
-                  }}
-                />
-              </div>
-
-              <div style={{ marginBottom: 20 }}>
-                <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
-                  Model {(editingPrompt.model || '') !== (savedPrompt?.model || '') && <span style={{ color: '#FF00AE' }}>(Draft)</span>}
-                </label>
-                <select
-                  value={editingPrompt.model || ''}
-                  onChange={(e) => setEditingPrompt({ ...editingPrompt, model: e.target.value || undefined })}
-                  style={{
-                    width: '100%',
-                    padding: 8,
-                    fontSize: 14,
-                    border: '1px solid #CCC',
-                    borderRadius: 4,
-                    background: '#FFF',
-                  }}
-                >
-                  <option value="">Default active model</option>
-                  <option value="claude-sonnet-4-6">Claude Sonnet 4.6</option>
-                  <option value="claude-opus-4-5-20251101">Claude Opus 4.5</option>
-                  <option value="claude-3-5-sonnet-20241022">Claude 3.5 Sonnet</option>
-                  <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
-                  <option value="gemini-2.0-flash-exp">Gemini 2.0 Flash (Exp)</option>
-                </select>
-                <div style={{ fontSize: 11, color: '#888', marginTop: 4 }}>
-                  Overrides the default active model for this prompt only
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 16 }}>
+                <div>
+                  <label style={label}>Max Tokens</label>
+                  <input
+                    type="number"
+                    value={editingPrompt.max_tokens}
+                    onChange={e => setEditingPrompt({ ...editingPrompt, max_tokens: parseInt(e.target.value) || 0 })}
+                    style={inputStyle}
+                  />
                 </div>
-              </div>
-
-              {/* Test Comparison Section */}
-              {hasChanges && (
-                <div style={{ padding: 16, background: '#FFF8E5', borderRadius: 8, border: '1px solid #FFE5A0', marginBottom: 20 }}>
-                  <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 8 }}>
-                    Test Comparison (Saved vs Draft)
-                  </div>
-                  <div style={{ fontSize: 12, marginBottom: 12, color: '#666' }}>
-                    Run both versions against the same test query to compare outputs before saving.
-                  </div>
-
-                  {/* Preview Model Selector */}
-                  <div style={{ marginBottom: 12 }}>
-                    <label style={{ fontSize: 12, fontWeight: 600, display: 'block', marginBottom: 4 }}>
-                      Preview Model
-                    </label>
-                    <select
-                      value={previewModel}
-                      onChange={(e) => setPreviewModel(e.target.value)}
-                      style={{
-                        width: '100%',
-                        padding: 8,
-                        fontSize: 13,
-                        border: '1px solid #CCC',
-                        borderRadius: 4,
-                      }}
-                    >
-                      <option value="">Default active model</option>
-                      <option value="claude-sonnet-4-6">Claude Sonnet 4.6</option>
-                      <option value="claude-opus-4-5-20251101">Claude Opus 4.5</option>
-                      <option value="claude-3-5-sonnet-20241022">Claude 3.5 Sonnet</option>
-                      <option value="gemini-2.5-flash">Gemini 2.5 Flash</option>
-                      <option value="gemini-2.0-flash-exp">Gemini 2.0 Flash (Exp)</option>
-                    </select>
-                    <div style={{ fontSize: 11, color: '#888', marginTop: 4 }}>
-                      Model to use for comparison preview (doesn't affect saved prompt)
-                    </div>
-                  </div>
-
-                  {/* Live Samples */}
-                  <div style={{ marginBottom: 16 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
-                      <label style={{ fontSize: 12, fontWeight: 700, color: '#444' }}>
-                        Live Samples from DB{' '}
-                        <span style={{ fontWeight: 400, color: '#888' }}>
-                          ({selectedSampleIds.size} selected)
-                        </span>
-                      </label>
-                      <button
-                        onClick={loadSamples}
-                        disabled={loadingSamples}
-                        style={{
-                          padding: '4px 10px', fontSize: 11, fontWeight: 600,
-                          background: '#F0F0ED', color: '#444', border: 'none',
-                          borderRadius: 4, cursor: loadingSamples ? 'not-allowed' : 'pointer',
-                          opacity: loadingSamples ? 0.6 : 1,
-                        }}
-                      >
-                        {loadingSamples ? 'Loading…' : samples.length ? 'Refresh' : 'Load 5 Samples'}
-                      </button>
-                    </div>
-
-                    {samples.length > 0 && (
-                      <>
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 10 }}>
-                          {samples.map((s) => (
-                            <label
-                              key={s.id}
-                              style={{
-                                display: 'flex', alignItems: 'flex-start', gap: 8,
-                                padding: '7px 10px',
-                                background: selectedSampleIds.has(s.id) ? '#FFF0FB' : '#F9F9F9',
-                                border: `1px solid ${selectedSampleIds.has(s.id) ? '#FF00AE44' : '#EEE'}`,
-                                borderRadius: 6, cursor: 'pointer', fontSize: 12, lineHeight: 1.4,
-                              }}
-                            >
-                              <input
-                                type="checkbox"
-                                checked={selectedSampleIds.has(s.id)}
-                                onChange={() => toggleSample(s.id)}
-                                style={{ marginTop: 2, flexShrink: 0 }}
-                              />
-                              <div style={{ minWidth: 0 }}>
-                                <div style={{ color: '#1A1A1A', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                  {s.label}
-                                </div>
-                                {s.thesis && (
-                                  <div style={{ color: '#888', fontSize: 11, marginTop: 2, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                                    → {s.thesis}
-                                  </div>
-                                )}
-                              </div>
-                            </label>
-                          ))}
-                        </div>
-                        <button
-                          onClick={runSamplesComparison}
-                          disabled={comparing || selectedSampleIds.size === 0}
-                          style={{
-                            width: '100%', padding: 8,
-                            background: selectedSampleIds.size === 0 ? '#CCC' : '#FF00AE',
-                            color: '#FFF', border: 'none', borderRadius: 4,
-                            fontWeight: 700, fontSize: 13,
-                            cursor: (comparing || selectedSampleIds.size === 0) ? 'not-allowed' : 'pointer',
-                            opacity: (comparing || selectedSampleIds.size === 0) ? 0.6 : 1,
-                          }}
-                        >
-                          {comparing ? 'Running…' : `Run on ${selectedSampleIds.size} Sample${selectedSampleIds.size !== 1 ? 's' : ''}`}
-                        </button>
-                      </>
+                <div>
+                  <label style={label}>
+                    Model
+                    {compareMode === 'prompt' && (
+                      <span style={{ color: '#AAA', fontWeight: 400, textTransform: 'none', letterSpacing: 0, marginLeft: 4 }}>held constant</span>
                     )}
-                  </div>
+                  </label>
+                  <select
+                    value={editingPrompt.model || ''}
+                    onChange={e => setEditingPrompt({ ...editingPrompt, model: e.target.value || undefined })}
+                    style={{ ...inputStyle, background: '#FFF' }}
+                  >
+                    {MODELS.map(m => <option key={m.value} value={m.value}>{m.label}</option>)}
+                  </select>
+                </div>
+              </div>
 
-                  {/* Test Suite Selector */}
-                  {testSuites.length > 0 && (
-                    <div style={{ marginBottom: 12 }}>
-                      <select
-                        value={selectedSuite || ''}
-                        onChange={(e) => setSelectedSuite(e.target.value || null)}
-                        style={{
-                          width: '100%',
-                          padding: 8,
-                          fontSize: 13,
-                          border: '1px solid #CCC',
-                          borderRadius: 4,
-                          marginBottom: 8,
-                        }}
-                      >
-                        <option value="">Select test suite (optional)</option>
-                        {testSuites.map((suite) => (
-                          <option key={suite.id} value={suite.id}>
-                            {suite.name} ({suite.query_count} queries)
-                          </option>
-                        ))}
-                      </select>
-                      {selectedSuite && (
-                        <button
-                          onClick={runSuiteComparison}
-                          disabled={comparing}
-                          style={{
-                            width: '100%',
-                            padding: 8,
-                            background: '#4CAF50',
-                            color: '#FFF',
-                            border: 'none',
-                            borderRadius: 4,
-                            fontWeight: 600,
-                            fontSize: 13,
-                            cursor: comparing ? 'not-allowed' : 'pointer',
-                            opacity: comparing ? 0.6 : 1,
-                            marginBottom: 8,
-                          }}
-                        >
-                          {comparing ? 'Running suite...' : 'Run Suite Comparison'}
-                        </button>
-                      )}
-                    </div>
-                  )}
-
-                  {/* Single Query Comparison */}
-                  <div style={{ borderTop: '1px solid #DDD', paddingTop: 12 }}>
-                    <div style={{ fontSize: 12, marginBottom: 4, color: '#666', fontWeight: 600 }}>
-                      {testSuites.length > 0 ? 'Or test a single query:' : 'Test a single query:'}
-                    </div>
-                    <textarea
-                      placeholder="Enter test query..."
-                      value={testQuery}
-                      onChange={(e) => setTestQuery(e.target.value)}
-                      rows={2}
-                      style={{
-                        width: '100%',
-                        padding: 8,
-                        fontSize: 13,
-                        border: '1px solid #CCC',
-                        borderRadius: 4,
-                        marginBottom: 8,
-                      }}
-                    />
-                    <button
-                      onClick={runComparison}
-                      disabled={comparing || !testQuery.trim()}
-                      style={{
-                        padding: 8,
-                        background: '#FF00AE',
-                        color: '#FFF',
-                        border: 'none',
-                        borderRadius: 4,
-                        fontWeight: 600,
-                        fontSize: 13,
-                        cursor: comparing || !testQuery.trim() ? 'not-allowed' : 'pointer',
-                        opacity: comparing || !testQuery.trim() ? 0.6 : 1,
-                      }}
-                    >
-                      {comparing ? 'Running prompts...' : 'Run Comparison'}
-                    </button>
-                  </div>
+              {saveMsg && (
+                <div style={{
+                  padding: '8px 12px', borderRadius: 6, fontSize: 12, marginBottom: 12,
+                  background: saveMsg === 'Saved' ? '#E6FFED' : '#FEE',
+                  color: saveMsg === 'Saved' ? '#22863A' : '#C00',
+                }}>
+                  {saveMsg}
                 </div>
               )}
 
-              {/* Comparison Results */}
-              {comparisonResult && (
-                <div style={{ marginBottom: 20 }}>
-                  <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>
-                    Comparison Results
-                  </div>
-                  <div style={{ display: 'flex', gap: 16 }}>
-                    <div style={{ flex: 1 }}>
-                      <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#666' }}>
-                        Saved Prompt Output
-                      </div>
-                      <div style={{ padding: 12, background: '#F8F8F8', borderRadius: 4, fontSize: 13, lineHeight: 1.6 }}>
-                        {comparisonResult.saved_output}
-                      </div>
-                    </div>
-                    <div style={{ flex: 1 }}>
-                      <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 8, color: '#FF00AE' }}>
-                        Draft Prompt Output
-                      </div>
-                      <div style={{ padding: 12, background: '#F8F8F8', borderRadius: 4, fontSize: 13, lineHeight: 1.6 }}>
-                        {comparisonResult.draft_output}
-                      </div>
-                    </div>
-                  </div>
-                  <div style={{ marginTop: 16 }}>
-                    <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 8 }}>
-                      Diff View
-                    </div>
-                    <div style={{ padding: 12, background: '#F8F8F8', borderRadius: 4 }}>
-                      {renderDiff(comparisonResult.saved_output, comparisonResult.draft_output)}
-                    </div>
-                  </div>
-                </div>
-              )}
-
-              {/* Batch Results */}
-              {batchResults && (
-                <div style={{ marginBottom: 20 }}>
-                  <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>
-                    Suite Results ({batchResults.results.length} queries)
-                  </div>
-                  {batchResults.results.map((result: any, idx: number) => (
-                    <div key={idx} style={{ marginBottom: 16, padding: 12, background: '#F8F8F8', borderRadius: 4 }}>
-                      <div style={{ fontSize: 13, fontWeight: 600, marginBottom: 8 }}>
-                        Query: {result.query}
-                      </div>
-                      <div style={{ fontSize: 12 }}>
-                        {renderDiff(result.saved_output, result.draft_output)}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
-            </div>
-
-            {/* Action Buttons */}
-            <div style={{ padding: 20, borderTop: '1px solid #EEE', display: 'flex', gap: 8 }}>
               <button
                 onClick={savePrompt}
                 disabled={saving}
                 style={{
-                  flex: 1,
-                  padding: 12,
-                  background: '#FF00AE',
-                  color: '#FFF',
-                  border: 'none',
-                  borderRadius: 8,
-                  fontWeight: 700,
-                  fontSize: 14,
-                  cursor: saving ? 'not-allowed' : 'pointer',
-                  opacity: saving ? 0.6 : 1,
+                  width: '100%', padding: '9px 0', background: '#FF00AE', color: '#FFF',
+                  border: 'none', borderRadius: 7, fontWeight: 700, fontSize: 13,
+                  cursor: saving ? 'not-allowed' : 'pointer', opacity: saving ? 0.6 : 1,
                 }}
               >
-                {saving ? 'Saving...' : 'Save Draft'}
-              </button>
-              <button
-                onClick={() => {
-                  setSelectedPrompt(null);
-                  setEditingPrompt(null);
-                  setComparisonResult(null);
-                  setBatchResults(null);
-                  setTestQuery('');
-                }}
-                style={{
-                  padding: 12,
-                  background: '#F0F0ED',
-                  color: '#1A1A1A',
-                  border: 'none',
-                  borderRadius: 8,
-                  fontWeight: 700,
-                  fontSize: 14,
-                  cursor: 'pointer',
-                }}
-              >
-                Cancel
+                {saving ? 'Saving…' : 'Save Prompt'}
               </button>
             </div>
           </>
         )}
+      </div>
+
+      {/* ── 3. Compare ─────────────────────────────────────────────────────── */}
+      <div style={{ ...panelBase, flex: 1, minWidth: 0 }}>
+        <div style={{ padding: '14px 16px', borderBottom: '1px solid #EEE', display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{ fontSize: 13, fontWeight: 700, marginRight: 8 }}>Compare</span>
+          {/* Mode toggle */}
+          {(['prompt', 'model'] as CompareMode[]).map(m => (
+            <button
+              key={m}
+              onClick={() => { setCompareMode(m); setResults(null); setCompareError(null); }}
+              style={{
+                padding: '4px 12px', fontSize: 12, fontWeight: 600, borderRadius: 20,
+                border: '1px solid #DDD', cursor: 'pointer',
+                background: compareMode === m ? '#1A1A1A' : '#FFF',
+                color: compareMode === m ? '#FFF' : '#555',
+              }}
+            >
+              {m === 'prompt' ? 'Prompt diff' : 'Model diff'}
+            </button>
+          ))}
+          <span style={{ fontSize: 11, color: '#AAA', marginLeft: 4 }}>
+            {compareMode === 'prompt'
+              ? '— same model, vary prompt text'
+              : '— same prompt, vary model'}
+          </span>
+        </div>
+
+        <div style={{ flex: 1, overflowY: 'auto', padding: 16 }}>
+
+          {/* Samples */}
+          <div style={{ marginBottom: 16 }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
+              <span style={{ ...label, marginBottom: 0 }}>
+                Test samples &nbsp;
+                <span style={{ fontWeight: 400, color: '#AAA', textTransform: 'none', letterSpacing: 0 }}>
+                  {selectedIds.size} of {samples.length} selected
+                </span>
+              </span>
+              <button
+                onClick={loadSamples}
+                disabled={loadingSamples}
+                style={{
+                  padding: '4px 10px', fontSize: 11, fontWeight: 600, border: '1px solid #DDD',
+                  borderRadius: 4, background: '#FFF', cursor: 'pointer',
+                  opacity: loadingSamples ? 0.5 : 1,
+                }}
+              >
+                {loadingSamples ? 'Loading…' : samples.length ? 'Refresh' : 'Load Samples'}
+              </button>
+            </div>
+
+            {samples.length > 0 && (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
+                {samples.map(s => (
+                  <label key={s.id} style={{
+                    display: 'flex', gap: 8, alignItems: 'flex-start',
+                    padding: '6px 9px', borderRadius: 5, cursor: 'pointer',
+                    background: selectedIds.has(s.id) ? '#FFF0FB' : '#F9F9F9',
+                    border: `1px solid ${selectedIds.has(s.id) ? '#FF00AE33' : '#EEE'}`,
+                    fontSize: 12,
+                  }}>
+                    <input
+                      type="checkbox"
+                      checked={selectedIds.has(s.id)}
+                      onChange={() => toggleSample(s.id)}
+                      style={{ marginTop: 2, flexShrink: 0 }}
+                    />
+                    <div style={{ minWidth: 0 }}>
+                      <div style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: '#1A1A1A' }}>{s.label}</div>
+                      {s.thesis && <div style={{ fontSize: 11, color: '#AAA', marginTop: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>→ {s.thesis}</div>}
+                    </div>
+                  </label>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Run button */}
+          {selectedKey && (
+            <button
+              onClick={runComparison}
+              disabled={!canRun || selectedIds.size === 0 || samples.length === 0}
+              style={{
+                width: '100%', padding: '9px 0', marginBottom: 16,
+                background: canRun && selectedIds.size > 0 && samples.length > 0 ? '#FF00AE' : '#CCC',
+                color: '#FFF', border: 'none', borderRadius: 7, fontWeight: 700, fontSize: 13,
+                cursor: canRun && selectedIds.size > 0 ? 'pointer' : 'not-allowed',
+              }}
+            >
+              {comparing
+                ? 'Running…'
+                : samples.length === 0
+                  ? 'Load samples first'
+                  : `Run ${compareMode === 'prompt' ? 'Prompt' : 'Model'} Diff (${selectedIds.size} sample${selectedIds.size !== 1 ? 's' : ''})`}
+            </button>
+          )}
+
+          {compareError && (
+            <div style={{ padding: 12, background: '#FEE', color: '#C00', borderRadius: 6, fontSize: 12, marginBottom: 16 }}>
+              {compareError}
+            </div>
+          )}
+
+          {/* Results */}
+          {results && (
+            <div>
+              <div style={{ fontSize: 12, fontWeight: 700, marginBottom: 12, color: '#555' }}>
+                {results.suite_name} &nbsp;·&nbsp;
+                <span style={{ color: '#4CAF50' }}>{results.saved_label}</span>
+                {' → '}
+                <span style={{ color: '#FF00AE' }}>{results.draft_label}</span>
+              </div>
+
+              {results.results.map((r: any, i: number) => (
+                <div key={i} style={{ marginBottom: 20, border: '1px solid #EEE', borderRadius: 8, overflow: 'hidden' }}>
+                  {/* Sample label */}
+                  <div style={{ padding: '8px 12px', background: '#F7F7F5', borderBottom: '1px solid #EEE', fontSize: 11, fontWeight: 600, color: '#555', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    Sample {i + 1}: {r.query_text.slice(0, 100)}{r.query_text.length > 100 ? '…' : ''}
+                  </div>
+
+                  <div style={{ padding: 12 }}>
+                    {(r.saved_error || r.draft_error) ? (
+                      <div style={{ color: '#C00', fontSize: 12 }}>
+                        {r.saved_error && <div><strong>Before error:</strong> {r.saved_error}</div>}
+                        {r.draft_error && <div><strong>After error:</strong> {r.draft_error}</div>}
+                      </div>
+                    ) : (
+                      <>
+                        {/* Diff */}
+                        <div style={{ marginBottom: 10 }}>
+                          <div style={{ fontSize: 11, fontWeight: 700, color: '#888', marginBottom: 5, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                            Diff
+                            <span style={{ marginLeft: 8, fontSize: 10, fontWeight: 400, color: '#CCC' }}>
+                              <span style={{ background: '#D4EDDA', padding: '1px 4px', borderRadius: 2 }}>added</span>
+                              {' '}
+                              <span style={{ background: '#F8D7DA', padding: '1px 4px', borderRadius: 2, textDecoration: 'line-through' }}>removed</span>
+                            </span>
+                          </div>
+                          <div style={{ padding: 10, background: '#FAFAFA', borderRadius: 5, border: '1px solid #EEE', maxHeight: 220, overflowY: 'auto' }}>
+                            {renderDiff(r.saved_output || '', r.draft_output || '')}
+                          </div>
+                        </div>
+
+                        {/* Metrics */}
+                        <div style={{ display: 'flex', gap: 8, fontSize: 11, color: '#AAA' }}>
+                          <span>Before: {r.saved_latency_ms}ms · {r.saved_tokens} tok</span>
+                          <span>·</span>
+                          <span>After: {r.draft_latency_ms}ms · {r.draft_tokens} tok</span>
+                        </div>
+                      </>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
