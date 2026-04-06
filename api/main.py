@@ -2200,11 +2200,13 @@ async def get_prompt_samples(
     try:
         limit = max(1, min(limit, 10))
         # Raw SQL — bypasses ORM column mapping entirely, works regardless of schema state
+        # ORDER BY RANDOM() so Refresh actually returns different samples each time
         result = await db.execute(
             text(
                 "SELECT id, raw_input, thesis, created_at FROM observations"
                 " WHERE raw_input IS NOT NULL AND raw_input != ''"
-                " ORDER BY created_at DESC LIMIT :lim"
+                " AND status = 'complete'"
+                " ORDER BY RANDOM() LIMIT :lim"
             ),
             {"lim": limit},
         )
