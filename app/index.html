@@ -13,7 +13,8 @@
         --color-dark-bg: #12102B;
       }
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-      html, body, #root { min-height: 100%; background: var(--color-dark-bg); overflow-x: hidden; }
+      html, body, #root { min-height: 100%; background: var(--color-dark-bg, #12102B); overflow-x: hidden; }
+      body { background-size: cover; background-position: center center; background-attachment: fixed; background-repeat: no-repeat; }
       body { font-family: var(--font-system, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif); }
     </style>
   </head>

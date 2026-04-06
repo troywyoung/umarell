@@ -546,7 +546,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
     </div>
   );
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", minHeight: "100vh", background: "var(--color-dark-bg, #12102B)", backgroundImage: "var(--feed-bg-image, none)", backgroundRepeat: "repeat", padding: "0 0 60px" }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", minHeight: "100vh", background: "transparent", padding: "0 0 60px" }}>
       <div style={{ padding: "14px 20px 12px", borderBottom: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", gap: 12 }}>
         <button onClick={onBack} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.5)", fontSize: 22, cursor: "pointer", padding: 0, lineHeight: 1, WebkitTapHighlightColor: "transparent" }}>←</button>
         <span style={{ fontSize: 18, fontWeight: 900, color: "#FFF", letterSpacing: -0.6, fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}>Your takes, stress-tested.</span>
@@ -730,7 +730,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   };
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "var(--color-dark-bg, #12102B)", backgroundImage: "var(--feed-bg-image, none)", backgroundRepeat: "repeat" }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 120, minHeight: "100vh", position: "relative", background: "transparent" }}>
 
       {/* Top bar: what is this? left, avatar right */}
       <div style={{ position: "absolute", top: 13, left: 20, right: 20, display: "flex", justifyContent: "space-between", alignItems: "center", zIndex: 2 }}>
@@ -1379,7 +1379,7 @@ function CaptureView({ onSubmit, onSubmitImage, onBack, parentObs }: {
   const canSubmit = (!!imageMeta || !!text.trim() || !!url.trim()) && !submitting;
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 24px 60px", minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--color-dark-bg, #12102B)", backgroundImage: "var(--feed-bg-image, none)", backgroundRepeat: "repeat" }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 24px 60px", minHeight: "100vh", display: "flex", flexDirection: "column", background: "transparent" }}>
       <div style={{ padding: "20px 0 16px" }}>
         <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>
           Cancel
@@ -1698,7 +1698,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
 
   if (obs.status === "error") {
     return (
-      <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 20px", background: "var(--color-dark-bg, #12102B)", backgroundImage: "var(--feed-bg-image, none)", backgroundRepeat: "repeat", minHeight: "100vh" }}>
+      <div style={{ maxWidth: 480, margin: "0 auto", padding: "0 20px", background: "transparent", minHeight: "100vh" }}>
         <div style={{ padding: "14px 0", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
           <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
           {isOwner && (
@@ -1737,7 +1737,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
   // Share handled by ShareButton component
 
   return (
-    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80, background: "var(--color-dark-bg, #12102B)", backgroundImage: "var(--feed-bg-image, none)", backgroundRepeat: "repeat", minHeight: "100vh" }}>
+    <div style={{ maxWidth: 480, margin: "0 auto", paddingBottom: 80, background: "transparent", minHeight: "100vh" }}>
       <div style={{ padding: "14px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <button onClick={onBack} style={{ background: "none", border: "none", fontSize: 15, color: "#888", cursor: "pointer", padding: 0, fontFamily: "inherit" }}>&lsaquo; Back</button>
@@ -2452,7 +2452,7 @@ export default function App() {
   // Show login screen if not authenticated
   if (!authUser) {
     return (
-      <div style={{ minHeight: "100dvh", background: "var(--color-dark-bg, #12102B)", backgroundImage: "var(--feed-bg-image, none)", backgroundRepeat: "repeat", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative" }}>
+      <div style={{ minHeight: "100dvh", background: "transparent", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: 32, position: "relative" }}>
   
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 16, position: "relative", zIndex: 1 }}>
           <BurstIcon size={130} />
@@ -2529,7 +2529,7 @@ export default function App() {
 
   if (maintenance) {
     return (
-      <div style={{ minHeight: "100dvh", background: "var(--color-dark-bg, #12102B)", backgroundImage: "var(--feed-bg-image, none)", backgroundRepeat: "repeat", display: "flex", alignItems: "center", justifyContent: "center", padding: 32 }}>
+      <div style={{ minHeight: "100dvh", background: "transparent", display: "flex", alignItems: "center", justifyContent: "center", padding: 32 }}>
         <p style={{ fontFamily: "var(--font-display, 'Besley', serif)", fontSize: 22, fontWeight: 400, color: "#FFF", textAlign: "center", lineHeight: 1.4, letterSpacing: -0.5, margin: 0, whiteSpace: "pre-line" }}>
           {config?.ui_copy?.labels?.empty_state || "Hot Take is getting hotter.\nCome back later."}
         </p>

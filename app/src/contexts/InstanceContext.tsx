@@ -164,9 +164,19 @@ function applyDesignTokens(tokens: InstanceConfig["design_tokens"]) {
     document.body.style.fontFamily = tokens.typography.fonts.system;
   }
 
-  // Apply background image tile
+  // Apply full-page background image (cover, fixed) directly to body
   const bgImage = (tokens.layout as any)?.feed_bg_image ?? "";
-  root.style.setProperty("--feed-bg-image", bgImage ? `url(${bgImage})` : "none");
+  const darkBg = tokens.colors?.primary?.dark_bg ?? "#12102B";
+  document.body.style.backgroundColor = darkBg;
+  if (bgImage) {
+    document.body.style.backgroundImage = `url(${bgImage})`;
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundAttachment = "fixed";
+  } else {
+    document.body.style.backgroundImage = "none";
+  }
 
   // Apply spacing tokens
   if (tokens.spacing) {
