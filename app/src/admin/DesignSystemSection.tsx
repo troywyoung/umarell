@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import PreviewPane from './PreviewPane';
 import type { Observation } from '../types';
-
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8100';
+import { API as API_BASE } from '../config';
 
 interface SimplifiedTokensData {
   tokens: Record<string, string>;

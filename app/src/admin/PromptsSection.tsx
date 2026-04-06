@@ -95,7 +95,7 @@ export default function PromptsSection() {
   const loadSamples = async () => {
     setLoadingSamples(true);
     try {
-      const res = await fetch(`${API_BASE}/admin/prompts/samples?limit=5`, {
+      const res = await fetch(`${API_BASE}/admin/prompt-samples?limit=5`, {
         headers: { Authorization: `Bearer ${token()}` },
       });
       if (!res.ok) {

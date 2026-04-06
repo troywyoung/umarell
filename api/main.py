@@ -1440,6 +1440,26 @@ async def backfill_categories(
     return {"total": len(observations), "updated": updated, "errors": errors}
 
 
+@app.post("/admin/patch-episode-source")
+async def patch_episode_source(
+    episode_tag: str,
+    podcast_name: str,
+    admin_key: str,
+    db: AsyncSession = Depends(get_db)
+):
+    """Backfill context (podcast name) for all observations in an episode."""
+    if admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+    result = await db.execute(
+        select(Observation).where(Observation.episode_tag == episode_tag)
+    )
+    obs_list = list(result.scalars().all())
+    for obs in obs_list:
+        obs.context = podcast_name
+    await db.commit()
+    return {"patched": len(obs_list), "episode_tag": episode_tag, "podcast_name": podcast_name}
+
+
 @app.post("/admin/unpin-episodes")
 async def unpin_episodes(admin_key: str, db: AsyncSession = Depends(get_db)):
     """Clear episode_tag and episode_title from all observations so they flow into the regular feed."""
@@ -2137,7 +2157,7 @@ async def compare_suite(
     }
 
 
-@app.get("/admin/prompts/samples")
+@app.get("/admin/prompt-samples")
 async def get_prompt_samples(
     limit: int = 5,
     current_user: User = Depends(require_user),
