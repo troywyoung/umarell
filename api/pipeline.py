@@ -16,15 +16,18 @@ PROVIDER = settings.llm_provider  # "gemini" or "anthropic"
 
 # ─── Provider setup ───────────────────────────────────────────────────────
 
+from google import genai
+from anthropic import AsyncAnthropic, APIStatusError
+
+gclient = genai.Client(api_key=settings.google_api_key)
+GEMINI_MODEL = settings.gemini_model
+
+aclient = AsyncAnthropic(api_key=settings.anthropic_api_key)
+CLAUDE_MODEL = settings.claude_model
+
 if PROVIDER == "gemini":
-    from google import genai
-    gclient = genai.Client(api_key=settings.google_api_key)
-    GEMINI_MODEL = settings.gemini_model
     ACTIVE_MODEL = GEMINI_MODEL
 else:
-    from anthropic import AsyncAnthropic, APIStatusError
-    aclient = AsyncAnthropic(api_key=settings.anthropic_api_key)
-    CLAUDE_MODEL = settings.claude_model
     ACTIVE_MODEL = CLAUDE_MODEL
 
 
