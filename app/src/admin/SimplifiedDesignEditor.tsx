@@ -15,6 +15,7 @@ interface SimplifiedDesignEditorProps {
 export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEditorProps) {
   const [data, setData] = useState<SimplifiedTokensData | null>(null);
   const [editedTokens, setEditedTokens] = useState<Record<string, string>>({});
+  const [savedTokens, setSavedTokens] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saved' | 'error'>('idle');
@@ -39,6 +40,7 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
       const result = await res.json();
       setData(result);
       setEditedTokens(result.tokens);
+      setSavedTokens(result.tokens);
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -72,6 +74,7 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
       if (!res.ok) throw new Error('Failed to save design tokens');
       const result = await res.json();
       setSaveStatus('saved');
+      setSavedTokens(editedTokens);
       setDeploymentTriggered(result.deployment_triggered);
       // Clear save status after 3 seconds
       setTimeout(() => setSaveStatus('idle'), 3000);
@@ -102,6 +105,7 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
       if (!res.ok) throw new Error('Failed to revert design tokens');
       const result = await res.json();
       setEditedTokens(result.tokens);
+      setSavedTokens(result.tokens);
       setSaveStatus('saved');
       // Clear save status after 3 seconds
       setTimeout(() => setSaveStatus('idle'), 3000);
@@ -115,6 +119,10 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
 
   const isColorToken = (key: string) => {
     return key.includes('color') || key.includes('background') || key.includes('text') || key === 'primary_accent';
+  };
+
+  const hasUnsavedChanges = () => {
+    return Object.keys(editedTokens).some(key => editedTokens[key] !== savedTokens[key]);
   };
 
   if (loading) {
@@ -174,11 +182,28 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
             justifyContent: 'space-between',
           }}
         >
-          <div>
-            <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>Design Tokens</h2>
-            <p style={{ margin: '4px 0 0', fontSize: 13, color: '#888' }}>
-              14 high-leverage controls for visual customization
-            </p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <div>
+              <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>Design Tokens</h2>
+              <p style={{ margin: '4px 0 0', fontSize: 13, color: '#888' }}>
+                14 high-leverage controls for visual customization
+              </p>
+            </div>
+            {hasUnsavedChanges() && (
+              <div
+                style={{
+                  padding: '4px 10px',
+                  background: '#FFF4E6',
+                  color: '#D97706',
+                  borderRadius: 12,
+                  fontSize: 12,
+                  fontWeight: 600,
+                  border: '1px solid #FDB94E',
+                }}
+              >
+                Unsaved changes
+              </div>
+            )}
           </div>
           <button
             onClick={onClose}
