@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     jwt_secret: str = "change-me-in-production"
     jwt_expire_days: int = 30
     admin_email: str = ""  # Set to your Google account email for master admin access
+    railway_staging_deploy_hook: str = ""  # Railway deploy webhook URL for staging service
 
 
 settings = Settings()

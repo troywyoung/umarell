@@ -2135,82 +2135,21 @@ async def revert_simplified_tokens_endpoint(
 
 
 async def trigger_staging_deployment() -> bool:
-    """Trigger staging deployment by merging main to staging and pushing."""
-    import subprocess
-
-    try:
-        # Check if we're in a git repository
-        result = subprocess.run(
-            ["git", "rev-parse", "--git-dir"],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-
-        # Check if staging branch exists
-        result = subprocess.run(
-            ["git", "rev-parse", "--verify", "staging"],
-            capture_output=True,
-            text=True
-        )
-
-        staging_exists = result.returncode == 0
-
-        if not staging_exists:
-            # Create staging branch from main
-            subprocess.run(
-                ["git", "checkout", "-b", "staging"],
-                capture_output=True,
-                text=True,
-                check=True
-            )
-            subprocess.run(
-                ["git", "push", "-u", "origin", "staging"],
-                capture_output=True,
-                text=True,
-                check=True
-            )
-            subprocess.run(
-                ["git", "checkout", "main"],
-                capture_output=True,
-                text=True,
-                check=True
-            )
-
-        # Merge main into staging and push
-        subprocess.run(
-            ["git", "checkout", "staging"],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        subprocess.run(
-            ["git", "merge", "main", "--no-edit"],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        subprocess.run(
-            ["git", "push", "origin", "staging"],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-        subprocess.run(
-            ["git", "checkout", "main"],
-            capture_output=True,
-            text=True,
-            check=True
-        )
-
-        return True
-
-    except subprocess.CalledProcessError as e:
-        # Log error but don't fail the save operation
-        print(f"Failed to trigger staging deployment: {e}")
+    """Trigger staging redeployment via Railway deploy webhook."""
+    hook_url = settings.railway_staging_deploy_hook
+    if not hook_url:
+        print("RAILWAY_STAGING_DEPLOY_HOOK not configured — skipping deploy trigger")
         return False
+    try:
+        async with httpx.AsyncClient(timeout=10.0) as client:
+            r = await client.post(hook_url)
+            if r.status_code < 300:
+                print(f"Staging deploy triggered (HTTP {r.status_code})")
+                return True
+            print(f"Staging deploy webhook returned {r.status_code}: {r.text[:200]}")
+            return False
     except Exception as e:
-        print(f"Unexpected error triggering deployment: {e}")
+        print(f"Failed to trigger staging deployment: {e}")
         return False
 
 
