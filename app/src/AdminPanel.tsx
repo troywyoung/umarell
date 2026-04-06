@@ -14,15 +14,7 @@ interface Prompt {
   max_tokens: number;
 }
 
-interface DesignTokens {
-  colors: Record<string, any>;
-  typography: Record<string, any>;
-  spacing: Record<string, any>;
-  borders: Record<string, any>;
-  shadows: Record<string, any>;
-  layout: Record<string, any>;
-  animations: Record<string, any>;
-}
+// DesignTokens interface removed - tokens now managed in SimplifiedDesignEditor
 
 interface TestQuery {
   id?: string;
@@ -45,7 +37,6 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
   const [editingInstance, setEditingInstance] = useState<string | null>(null);
   const [showDesignEditor, setShowDesignEditor] = useState(false);
   const [prompts, setPrompts] = useState<Record<string, Prompt>>({});
-  const [designTokens, setDesignTokens] = useState<DesignTokens | null>(null);
   const [selectedPrompt, setSelectedPrompt] = useState<string | null>(null);
   const [editingPrompt, setEditingPrompt] = useState<Prompt | null>(null);
   const [loading, setLoading] = useState(true);
@@ -90,14 +81,8 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
           const suitesData = await suitesRes.json();
           setTestSuites(suitesData);
         }
-      } else {
-        const res = await fetch(`${API_BASE}/admin/design-tokens`, {
-          headers: { Authorization: `Bearer ${token}` },
-        });
-        if (!res.ok) throw new Error('Failed to load design tokens');
-        const data = await res.json();
-        setDesignTokens(data);
       }
+      // Design tokens are now loaded directly in SimplifiedDesignEditor component
     } catch (err: any) {
       setError(err.message);
     } finally {
@@ -287,20 +272,21 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
     }
   };
 
-  const loadSuiteDetails = async (suiteId: string) => {
-    try {
-      const token = localStorage.getItem('sm_token');
-      const res = await fetch(`${API_BASE}/admin/prompts/test-suites/${suiteId}`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
-      if (!res.ok) throw new Error('Failed to load suite');
-      const suite = await res.json();
-      setEditingSuite(suite);
-      setShowSuiteEditor(true);
-    } catch (err: any) {
-      setError(err.message);
-    }
-  };
+  // Unused for now - kept for future suite management features
+  // const loadSuiteDetails = async (suiteId: string) => {
+  //   try {
+  //     const token = localStorage.getItem('sm_token');
+  //     const res = await fetch(`${API_BASE}/admin/prompts/test-suites/${suiteId}`, {
+  //       headers: { Authorization: `Bearer ${token}` },
+  //     });
+  //     if (!res.ok) throw new Error('Failed to load suite');
+  //     const suite = await res.json();
+  //     setEditingSuite(suite);
+  //     setShowSuiteEditor(true);
+  //   } catch (err: any) {
+  //     setError(err.message);
+  //   }
+  // };
 
   const renderPromptList = () => {
     return (

@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import PreviewPane from './PreviewPane';
+import type { Observation } from '../types';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8100';
 
@@ -22,10 +24,25 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
   const [error, setError] = useState<string | null>(null);
   const [deploymentTriggered, setDeploymentTriggered] = useState(false);
   const [saveType, setSaveType] = useState<'draft' | 'deploy' | null>(null);
+  const [previewMode, setPreviewMode] = useState<'draft' | 'comparison'>('draft');
+  const [previewObservations, setPreviewObservations] = useState<Observation[]>([]);
+  const [loadingObservations, setLoadingObservations] = useState(false);
 
   useEffect(() => {
     loadTokens();
+    loadPreviewObservations();
   }, []);
+
+  // Debounced preview tokens - update preview 300ms after user stops typing
+  const [debouncedPreviewTokens, setDebouncedPreviewTokens] = useState(editedTokens);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setDebouncedPreviewTokens(editedTokens);
+    }, 300);
+
+    return () => clearTimeout(timeoutId);
+  }, [editedTokens]);
 
   const loadTokens = async () => {
     setLoading(true);
@@ -46,6 +63,32 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
       setError(err.message);
     } finally {
       setLoading(false);
+    }
+  };
+
+  const loadPreviewObservations = async () => {
+    setLoadingObservations(true);
+    try {
+      const token = localStorage.getItem('sm_token');
+      // Fetch recent observations for preview content
+      const res = await fetch(`${API_BASE}/observations?limit=3`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      if (res.ok) {
+        const observations = await res.json();
+        // Filter for complete observations with content
+        const complete = observations.filter((o: Observation) =>
+          o.status === 'complete' && o.thesis
+        );
+        setPreviewObservations(complete.length > 0 ? complete : []);
+      }
+    } catch (err) {
+      // Silently fail - preview will use fallback content
+      console.warn('Failed to load preview observations:', err);
+    } finally {
+      setLoadingObservations(false);
     }
   };
 
@@ -169,128 +212,138 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
         style={{
           background: '#FFF',
           borderRadius: 18,
-          maxWidth: 800,
+          maxWidth: 1400,
           width: '100%',
           maxHeight: '90vh',
           overflow: 'hidden',
           display: 'flex',
-          flexDirection: 'column',
+          flexDirection: 'row',
         }}
       >
-        {/* Header */}
+        {/* Left Panel: Token Editor */}
         <div
           style={{
-            padding: 20,
-            borderBottom: '1px solid #EEE',
+            width: '500px',
             display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
+            flexDirection: 'column',
+            borderRight: '1px solid #EEE',
+            flexShrink: 0,
           }}
         >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-            <div>
-              <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>Design Tokens</h2>
-              <p style={{ margin: '4px 0 0', fontSize: 13, color: '#888' }}>
-                14 high-leverage controls for visual customization
-              </p>
-            </div>
-            {hasUnsavedChanges() && (
-              <div
-                style={{
-                  padding: '4px 10px',
-                  background: '#FFF4E6',
-                  color: '#D97706',
-                  borderRadius: 12,
-                  fontSize: 12,
-                  fontWeight: 600,
-                  border: '1px solid #FDB94E',
-                }}
-              >
-                Unsaved changes
-              </div>
-            )}
-          </div>
-          <button
-            onClick={onClose}
+          {/* Header */}
+          <div
             style={{
-              background: 'none',
-              border: 'none',
-              fontSize: 24,
-              cursor: 'pointer',
-              color: '#888',
-              padding: 0,
-              width: 32,
-              height: 32,
+              padding: 20,
+              borderBottom: '1px solid #EEE',
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center',
+              justifyContent: 'space-between',
             }}
           >
-            ×
-          </button>
-        </div>
-
-        {/* Content */}
-        <div style={{ flex: 1, overflow: 'auto', padding: 20 }}>
-          {error && (
-            <div
-              style={{
-                padding: 12,
-                background: '#FEE',
-                color: '#E53E3E',
-                borderRadius: 8,
-                marginBottom: 16,
-                fontSize: 13,
-              }}
-            >
-              {error}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <div>
+                <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>Design Tokens</h2>
+                <p style={{ margin: '4px 0 0', fontSize: 13, color: '#888' }}>
+                  14 high-leverage controls
+                </p>
+              </div>
+              {hasUnsavedChanges() && (
+                <div
+                  style={{
+                    padding: '4px 10px',
+                    background: '#FFF4E6',
+                    color: '#D97706',
+                    borderRadius: 12,
+                    fontSize: 12,
+                    fontWeight: 600,
+                    border: '1px solid #FDB94E',
+                  }}
+                >
+                  Unsaved
+                </div>
+              )}
             </div>
-          )}
-
-          {saveStatus === 'saved' && (
-            <div
+            <button
+              onClick={onClose}
               style={{
-                padding: 12,
-                background: '#E6FFED',
-                color: '#22863A',
-                borderRadius: 8,
-                marginBottom: 16,
-                fontSize: 13,
+                background: 'none',
+                border: 'none',
+                fontSize: 24,
+                cursor: 'pointer',
+                color: '#888',
+                padding: 0,
+                width: 32,
+                height: 32,
                 display: 'flex',
                 alignItems: 'center',
-                gap: 8,
+                justifyContent: 'center',
               }}
             >
-              <span>✓</span>
-              <div>
-                <div style={{ fontWeight: 600 }}>
-                  {deploymentTriggered
-                    ? 'Design tokens saved and deployed'
-                    : 'Draft saved successfully'}
-                </div>
-                {deploymentTriggered && (
-                  <div style={{ fontSize: 12, marginTop: 4 }}>
-                    Changes deployed to staging.{' '}
-                    <a
-                      href="https://umarell-staging.up.railway.app"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        color: '#22863A',
-                        textDecoration: 'underline',
-                        fontWeight: 600,
-                      }}
-                    >
-                      Verify changes
-                    </a>{' '}
-                    (may take 1-2 minutes to reflect)
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
+              ×
+            </button>
+          </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
+          {/* Content */}
+          <div style={{ flex: 1, overflow: 'auto', padding: 20 }}>
+            {error && (
+              <div
+                style={{
+                  padding: 12,
+                  background: '#FEE',
+                  color: '#E53E3E',
+                  borderRadius: 8,
+                  marginBottom: 16,
+                  fontSize: 13,
+                }}
+              >
+                {error}
+              </div>
+            )}
+
+            {saveStatus === 'saved' && (
+              <div
+                style={{
+                  padding: 12,
+                  background: '#E6FFED',
+                  color: '#22863A',
+                  borderRadius: 8,
+                  marginBottom: 16,
+                  fontSize: 13,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 8,
+                }}
+              >
+                <span>✓</span>
+                <div>
+                  <div style={{ fontWeight: 600 }}>
+                    {deploymentTriggered
+                      ? 'Design tokens saved and deployed'
+                      : 'Draft saved successfully'}
+                  </div>
+                  {deploymentTriggered && (
+                    <div style={{ fontSize: 12, marginTop: 4 }}>
+                      Changes deployed to staging.{' '}
+                      <a
+                        href="https://umarell-staging.up.railway.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          color: '#22863A',
+                          textDecoration: 'underline',
+                          fontWeight: 600,
+                        }}
+                      >
+                        Verify changes
+                      </a>{' '}
+                      (may take 1-2 minutes to reflect)
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
             {/* Colors Section */}
             <div>
               <h3 style={{ margin: '0 0 12px', fontSize: 14, fontWeight: 700, color: '#1A1A1A' }}>
@@ -458,85 +511,158 @@ export default function SimplifiedDesignEditor({ onClose }: SimplifiedDesignEdit
                   ))}
               </div>
             </div>
+            </div>
+          </div>
+
+          {/* Footer */}
+          <div
+            style={{
+              padding: 20,
+              borderTop: '1px solid #EEE',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: 8,
+            }}
+          >
+            <div style={{ display: 'flex', gap: 8 }}>
+              <button
+                onClick={() => saveTokens(false)}
+                disabled={saving}
+                style={{
+                  flex: 1,
+                  padding: 10,
+                  background: '#FF00AE',
+                  color: '#FFF',
+                  border: 'none',
+                  borderRadius: 8,
+                  fontWeight: 700,
+                  fontSize: 13,
+                  cursor: saving ? 'not-allowed' : 'pointer',
+                  opacity: saving ? 0.6 : 1,
+                }}
+              >
+                {saving && saveType === 'draft' ? 'Saving...' : 'Save Draft'}
+              </button>
+              <button
+                onClick={() => saveTokens(true)}
+                disabled={saving}
+                style={{
+                  flex: 1,
+                  padding: 10,
+                  background: '#F0F0ED',
+                  color: '#1A1A1A',
+                  border: 'none',
+                  borderRadius: 8,
+                  fontWeight: 700,
+                  fontSize: 13,
+                  cursor: saving ? 'not-allowed' : 'pointer',
+                  opacity: saving ? 0.6 : 1,
+                }}
+              >
+                {saving && saveType === 'deploy' ? 'Deploying...' : 'Deploy'}
+              </button>
+            </div>
+            <button
+              onClick={revertToDefaults}
+              disabled={saving}
+              style={{
+                padding: 8,
+                background: '#F0F0ED',
+                color: '#1A1A1A',
+                border: 'none',
+                borderRadius: 8,
+                fontWeight: 600,
+                fontSize: 12,
+                cursor: saving ? 'not-allowed' : 'pointer',
+                opacity: saving ? 0.6 : 1,
+              }}
+            >
+              Revert to Defaults
+            </button>
           </div>
         </div>
 
-        {/* Footer */}
+        {/* Right Panel: Live Preview */}
         <div
           style={{
-            padding: 20,
-            borderTop: '1px solid #EEE',
+            flex: 1,
             display: 'flex',
-            gap: 8,
+            flexDirection: 'column',
+            background: '#F5F5F5',
           }}
         >
-          <button
-            onClick={() => saveTokens(false)}
-            disabled={saving}
+          {/* Preview Header */}
+          <div
             style={{
-              flex: 1,
-              padding: 12,
-              background: '#FF00AE',
-              color: '#FFF',
-              border: 'none',
-              borderRadius: 8,
-              fontWeight: 700,
-              fontSize: 14,
-              cursor: saving ? 'not-allowed' : 'pointer',
-              opacity: saving ? 0.6 : 1,
+              padding: '12px 20px',
+              borderBottom: '1px solid #DDD',
+              background: '#FFF',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
             }}
           >
-            {saving && saveType === 'draft' ? 'Saving Draft...' : 'Save Draft'}
-          </button>
-          <button
-            onClick={() => saveTokens(true)}
-            disabled={saving}
-            style={{
-              padding: 12,
-              background: '#F0F0ED',
-              color: '#1A1A1A',
-              border: 'none',
-              borderRadius: 8,
-              fontWeight: 700,
-              fontSize: 14,
-              cursor: saving ? 'not-allowed' : 'pointer',
-              opacity: saving ? 0.6 : 1,
-            }}
-          >
-            {saving && saveType === 'deploy' ? 'Deploying...' : 'Save & Deploy'}
-          </button>
-          <button
-            onClick={revertToDefaults}
-            disabled={saving}
-            style={{
-              padding: 12,
-              background: '#F0F0ED',
-              color: '#1A1A1A',
-              border: 'none',
-              borderRadius: 8,
-              fontWeight: 700,
-              fontSize: 14,
-              cursor: saving ? 'not-allowed' : 'pointer',
-              opacity: saving ? 0.6 : 1,
-            }}
-          >
-            Revert to Defaults
-          </button>
-          <button
-            onClick={onClose}
-            style={{
-              padding: 12,
-              background: '#F0F0ED',
-              color: '#1A1A1A',
-              border: 'none',
-              borderRadius: 8,
-              fontWeight: 700,
-              fontSize: 14,
-              cursor: 'pointer',
-            }}
-          >
-            Close
-          </button>
+            <h3 style={{ margin: 0, fontSize: 16, fontWeight: 700, color: '#1A1A1A' }}>
+              Live Preview
+            </h3>
+            <div style={{ display: 'flex', gap: 8 }}>
+              <button
+                onClick={() => setPreviewMode('draft')}
+                style={{
+                  padding: '6px 12px',
+                  background: previewMode === 'draft' ? '#FF00AE' : '#F0F0ED',
+                  color: previewMode === 'draft' ? '#FFF' : '#1A1A1A',
+                  border: 'none',
+                  borderRadius: 6,
+                  fontWeight: 600,
+                  fontSize: 12,
+                  cursor: 'pointer',
+                }}
+              >
+                Draft
+              </button>
+              <button
+                onClick={() => setPreviewMode('comparison')}
+                style={{
+                  padding: '6px 12px',
+                  background: previewMode === 'comparison' ? '#FF00AE' : '#F0F0ED',
+                  color: previewMode === 'comparison' ? '#FFF' : '#1A1A1A',
+                  border: 'none',
+                  borderRadius: 6,
+                  fontWeight: 600,
+                  fontSize: 12,
+                  cursor: 'pointer',
+                }}
+              >
+                Compare
+              </button>
+            </div>
+          </div>
+
+          {/* Preview Content */}
+          <div style={{ flex: 1, overflow: 'hidden' }}>
+            {loadingObservations ? (
+              <div
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  height: '100%',
+                  color: '#888',
+                  fontSize: 14,
+                }}
+              >
+                Loading preview...
+              </div>
+            ) : (
+              <PreviewPane
+                tokens={debouncedPreviewTokens}
+                observations={previewObservations}
+                mode={previewMode}
+                productionTokens={savedTokens}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>
