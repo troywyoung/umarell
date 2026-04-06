@@ -1,33 +1,20 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import DesignSystemSection from './DesignSystemSection';
 import PromptsSection from './PromptsSection';
 
 type Section = 'design' | 'prompts';
 
-interface AdminV2Props {
-  onClose: () => void;
-}
-
-export default function AdminV2({ onClose }: AdminV2Props) {
+export default function AdminV2() {
+  const navigate = useNavigate();
   const [activeSection, setActiveSection] = useState<Section>('design');
 
   return (
     <div
       style={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        background: 'rgba(0,0,0,0.7)',
-        zIndex: 999,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
+        minHeight: '100vh',
+        background: '#F5F5F5',
         padding: 20,
-      }}
-      onClick={(e) => {
-        if (e.target === e.currentTarget) onClose();
       }}
     >
       <div
@@ -35,11 +22,11 @@ export default function AdminV2({ onClose }: AdminV2Props) {
           background: '#FFF',
           borderRadius: 18,
           maxWidth: 1400,
-          width: '100%',
-          maxHeight: '90vh',
+          margin: '0 auto',
           overflow: 'hidden',
           display: 'flex',
           flexDirection: 'column',
+          minHeight: 'calc(100vh - 40px)',
         }}
       >
         {/* Header with Navigation */}
@@ -87,7 +74,7 @@ export default function AdminV2({ onClose }: AdminV2Props) {
             </button>
           </div>
           <button
-            onClick={onClose}
+            onClick={() => navigate('/')}
             style={{
               padding: '10px 20px',
               background: '#F0F0ED',
@@ -99,12 +86,12 @@ export default function AdminV2({ onClose }: AdminV2Props) {
               cursor: 'pointer',
             }}
           >
-            Close
+            Back to Home
           </button>
         </div>
 
         {/* Content Area */}
-        <div style={{ flex: 1, overflow: 'hidden' }}>
+        <div style={{ flex: 1, overflow: 'auto' }}>
           {activeSection === 'design' && <DesignSystemSection />}
           {activeSection === 'prompts' && <PromptsSection />}
         </div>

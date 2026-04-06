@@ -4,7 +4,7 @@ import type { Observation, HardFactItem } from "./types";
 import { useObservations } from "./hooks/useObservations";
 import { API } from "./config";
 import { useInstanceConfig } from "./contexts/InstanceContext";
-import AdminPanel from "./AdminPanel";
+import AdminV2 from "./admin/AdminV2";
 
 function authHeaders(): Record<string, string> {
   const token = localStorage.getItem("sm_token");
@@ -2499,7 +2499,7 @@ export default function App() {
   }
 
   if (view === "admin") {
-    return <AdminPanel onClose={() => setView("home")} />;
+    return <AdminV2 />;
   }
 
   if (view === "capture") {
