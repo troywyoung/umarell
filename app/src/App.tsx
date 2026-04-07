@@ -2610,40 +2610,63 @@ function EmbedSheet({ obsId, onClose }: { obsId: string; onClose: () => void }) 
 
         {/* Tabs */}
         <div style={{ display: "flex", gap: 4, background: "rgba(255,255,255,0.06)", borderRadius: 10, padding: 4, marginBottom: 14 }}>
-          <button style={tabStyle(tab === "web")}   onClick={() => { setTab("web");   setCopied(false); }}>Web / Substack</button>
-          <button style={tabStyle(tab === "email")} onClick={() => { setTab("email"); setCopied(false); }}>Email</button>
+          <button style={tabStyle(tab === "web")}   onClick={() => { setTab("web");   setCopied(false); }}>Web / HTML</button>
+          <button style={tabStyle(tab === "email")} onClick={() => { setTab("email"); setCopied(false); }}>Substack / Email</button>
         </div>
 
-        {/* Snippet */}
-        <pre style={{
-          background: "rgba(255,255,255,0.05)", borderRadius: 8, padding: "12px 14px",
-          fontSize: 11, color: "rgba(255,255,255,0.6)", overflowX: "auto",
-          margin: "0 0 12px", whiteSpace: "pre-wrap", wordBreak: "break-all",
-          fontFamily: "monospace", lineHeight: 1.6,
-        }}>{snippet}</pre>
+        {tab === "web" && (
+          <>
+            <pre style={{
+              background: "rgba(255,255,255,0.05)", borderRadius: 8, padding: "12px 14px",
+              fontSize: 11, color: "rgba(255,255,255,0.6)", overflowX: "auto",
+              margin: "0 0 12px", whiteSpace: "pre-wrap", wordBreak: "break-all",
+              fontFamily: "monospace", lineHeight: 1.6,
+            }}>{webSnippet}</pre>
+            <p style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", margin: "0 0 12px", lineHeight: 1.5 }}>
+              Paste into any page that allows HTML — Ghost, WordPress, custom sites.
+            </p>
+          </>
+        )}
 
         {tab === "email" && (
-          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", margin: "0 0 12px", lineHeight: 1.5 }}>
-            Paste into any email editor. The image links back to the live take.
-          </p>
-        )}
-        {tab === "web" && (
-          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", margin: "0 0 12px", lineHeight: 1.5 }}>
-            Works on Substack Pro, Ghost, WordPress, or any page that allows HTML.
-          </p>
+          <>
+            {/* Step 1 */}
+            <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.5)", margin: "0 0 6px", textTransform: "uppercase", letterSpacing: 0.5 }}>Step 1 — Copy the image URL</p>
+            <div style={{ display: "flex", gap: 8, marginBottom: 14 }}>
+              <pre style={{
+                flex: 1, background: "rgba(255,255,255,0.05)", borderRadius: 8, padding: "10px 12px",
+                fontSize: 11, color: "rgba(255,255,255,0.6)", overflowX: "auto",
+                margin: 0, whiteSpace: "nowrap", fontFamily: "monospace", lineHeight: 1.5,
+              }}>{imgUrl}</pre>
+              <button
+                onClick={() => { navigator.clipboard.writeText(imgUrl); setCopied(true); setTimeout(() => setCopied(false), 1800); }}
+                style={{ flexShrink: 0, padding: "0 14px", background: copied ? "rgba(255,0,174,0.15)" : "#FF00AE", color: "#FFF", border: copied ? "1px solid #FF00AE" : "none", borderRadius: 8, fontWeight: 700, fontSize: 12, cursor: "pointer", fontFamily: "inherit" }}
+              >{copied ? "Copied!" : "Copy"}</button>
+            </div>
+            {/* Step 2 */}
+            <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.5)", margin: "0 0 6px", textTransform: "uppercase", letterSpacing: 0.5 }}>Step 2 — Add to Substack</p>
+            <ol style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: "0 0 12px", paddingLeft: 18, lineHeight: 1.8 }}>
+              <li>In your Substack post, click <strong style={{ color: "rgba(255,255,255,0.6)" }}>+</strong> to add a block</li>
+              <li>Choose <strong style={{ color: "rgba(255,255,255,0.6)" }}>Image</strong></li>
+              <li>Select <strong style={{ color: "rgba(255,255,255,0.6)" }}>Embed URL</strong> and paste the image URL</li>
+              <li>Click the image and add a link to <span style={{ color: "#FF00AE" }}>{cardUrl}</span></li>
+            </ol>
+          </>
         )}
 
-        <button
-          onClick={copy}
-          style={{
-            width: "100%", padding: "12px 0", background: copied ? "rgba(255,0,174,0.15)" : "#FF00AE",
-            color: "#FFF", border: copied ? "1px solid #FF00AE" : "none",
-            borderRadius: 10, fontWeight: 700, fontSize: 14, cursor: "pointer",
-            fontFamily: "inherit", transition: "all 0.2s",
-          }}
-        >
-          {copied ? "✓ Copied!" : "Copy snippet"}
-        </button>
+        {tab === "web" && (
+          <button
+            onClick={copy}
+            style={{
+              width: "100%", padding: "12px 0", background: copied ? "rgba(255,0,174,0.15)" : "#FF00AE",
+              color: "#FFF", border: copied ? "1px solid #FF00AE" : "none",
+              borderRadius: 10, fontWeight: 700, fontSize: 14, cursor: "pointer",
+              fontFamily: "inherit", transition: "all 0.2s",
+            }}
+          >
+            {copied ? "✓ Copied!" : "Copy snippet"}
+          </button>
+        )}
       </div>
     </div>
   );
