@@ -1139,10 +1139,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             );
           };
 
-          // Build episode bundles — group by episode_tag, bundle appears at position of first card
+          // Build episode bundles — pinned posts are excluded and render standalone
           const episodePostsMap = new Map<string, Observation[]>();
           filteredPosts.forEach(o => {
-            if (!o.episode_tag) return;
+            if (!o.episode_tag || o.pinned) return;
             const g = episodePostsMap.get(o.episode_tag) || [];
             g.push(o);
             episodePostsMap.set(o.episode_tag, g);
@@ -1198,7 +1198,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
           const renderedEpisodeTags = new Set<string>();
           const renderFeedItem = (obs: Observation) => {
-            if (!obs.episode_tag) return renderPost(obs);
+            if (!obs.episode_tag || obs.pinned) return renderPost(obs);
             if (renderedEpisodeTags.has(obs.episode_tag)) return null;
             renderedEpisodeTags.add(obs.episode_tag);
             const posts = episodePostsMap.get(obs.episode_tag) || [obs];
