@@ -2564,13 +2564,14 @@ function EmbedTrigger({ obsId }: { obsId: string }) {
 function EmbedSheet({ obsId, onClose }: { obsId: string; onClose: () => void }) {
   const [tab, setTab] = useState<"web" | "email">("web");
   const [copied, setCopied] = useState(false);
-  const base = "https://bighottake.com";
-  const cardUrl = `${base}/cards/${obsId}`;
-  const imgUrl  = `${base}/cards/${obsId}/image.png`;
+  const siteBase = "https://bighottake.com";
+  const apiBase  = "https://umarell-production.up.railway.app";
+  const cardUrl  = `${siteBase}/cards/${obsId}`;
+  const imgUrl   = `${apiBase}/cards/${obsId}/image.png`;
 
   const webSnippet =
 `<blockquote class="hottake-embed" data-id="${obsId}"></blockquote>
-<script async src="${base}/embed.js"></script>`;
+<script async src="${siteBase}/embed.js"></script>`;
 
   const emailSnippet =
 `<a href="${cardUrl}" target="_blank" rel="noopener noreferrer">
@@ -2644,12 +2645,16 @@ function EmbedSheet({ obsId, onClose }: { obsId: string; onClose: () => void }) 
               >{copied ? "Copied!" : "Copy"}</button>
             </div>
             {/* Step 2 */}
-            <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.5)", margin: "0 0 6px", textTransform: "uppercase", letterSpacing: 0.5 }}>Step 2 — Add to Substack</p>
+            <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.5)", margin: "0 0 6px", textTransform: "uppercase", letterSpacing: 0.5 }}>Step 2 — Save the image</p>
+            <ol style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: "0 0 14px", paddingLeft: 18, lineHeight: 1.8 }}>
+              <li>Paste the URL into a browser tab — you'll see the card image</li>
+              <li>Right-click the image → <strong style={{ color: "rgba(255,255,255,0.6)" }}>Save Image</strong></li>
+            </ol>
+            <p style={{ fontSize: 11, fontWeight: 700, color: "rgba(255,255,255,0.5)", margin: "0 0 6px", textTransform: "uppercase", letterSpacing: 0.5 }}>Step 3 — Add to Substack</p>
             <ol style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", margin: "0 0 12px", paddingLeft: 18, lineHeight: 1.8 }}>
-              <li>In your Substack post, click <strong style={{ color: "rgba(255,255,255,0.6)" }}>+</strong> to add a block</li>
-              <li>Choose <strong style={{ color: "rgba(255,255,255,0.6)" }}>Image</strong></li>
-              <li>Select <strong style={{ color: "rgba(255,255,255,0.6)" }}>Embed URL</strong> and paste the image URL</li>
-              <li>Click the image and add a link to <span style={{ color: "#FF00AE" }}>{cardUrl}</span></li>
+              <li>In your post, click <strong style={{ color: "rgba(255,255,255,0.6)" }}>+</strong> → <strong style={{ color: "rgba(255,255,255,0.6)" }}>Image</strong> → Upload the saved file</li>
+              <li>Click the image, then the <strong style={{ color: "rgba(255,255,255,0.6)" }}>link icon</strong> in the toolbar</li>
+              <li>Paste: <span style={{ color: "#FF00AE", wordBreak: "break-all" }}>{cardUrl}</span></li>
             </ol>
           </>
         )}
