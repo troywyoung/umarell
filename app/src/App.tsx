@@ -647,6 +647,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   const [recording, setRecording] = useState<string | null>(null);
   const [recordingSecs, setRecordingSecs] = useState(0);
   const [showCollectionInfo, setShowCollectionInfo] = useState(false);
+  const [expandedEpisodes, setExpandedEpisodes] = useState<Set<string>>(new Set());
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const recordingTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -1172,48 +1173,109 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           });
 
           const renderEpisodeBundle = (tag: string, posts: Observation[]) => {
+            const isExpanded = expandedEpisodes.has(tag);
             const first = posts[0];
             const dateStr = new Date(first.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
             const podcastName = first.user_name || null;
             const episodeUrl = first.sources?.find((s: {url: string; title: string}) => s.title === "episode")?.url || first.sources?.[0]?.url || null;
             const isMobile = window.innerWidth < 600;
-            return (
-              <div key={`episode-${tag}`} style={{ marginBottom: 14 }}>
-                {/* Episode header */}
-                <div style={{ marginBottom: 6, paddingBottom: 6, borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-                  <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1, display: "flex", alignItems: "center", gap: 5 }}>
-                    {podcastName && (
-                      episodeUrl
-                        ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "underline" }}>{podcastName} Collection</a>
-                        : <span style={{ color: "var(--color-accent, #FF00AE)" }}>{podcastName} Collection</span>
-                    )}
-                    <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>
-                      {podcastName ? "  ·  " : ""}{dateStr}
-                    </span>
-                    <button
-                      onClick={(e) => { e.stopPropagation(); setShowCollectionInfo(true); }}
-                      style={{ background: "none", border: "none", borderRadius: "50%", width: 28, height: 28, fontSize: 9, color: "rgba(255,255,255,0.4)", cursor: "pointer", display: "inline-flex", alignItems: "center", justifyContent: "center", padding: 0, lineHeight: 1, flexShrink: 0, margin: -7, WebkitTapHighlightColor: "transparent" }}
-                      aria-label="What is this?"
-                    >
-                      <span style={{ border: "1px solid rgba(255,255,255,0.25)", borderRadius: "50%", width: 14, height: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>?</span>
-                    </button>
-                  </p>
-                  <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
-                    {(() => {
-                      const title = first.episode_title || (first.episode_tag ? first.episode_tag.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase()) : null) || "Episode";
-                      return episodeUrl
-                        ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none" }}>{title}</a>
-                        : title;
-                    })()}
-                  </p>
-                </div>
-                {/* Episode cards — tighter spacing than regular feed */}
-                <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
-                  {posts.map(obs => (
-                    <div key={obs.id} style={{ marginBottom: 7 }}>
-                      {renderCard(obs)}
+            const title = first.episode_title || (first.episode_tag ? first.episode_tag.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase()) : null) || "Episode";
+            const cardBg = "var(--color-collection-card-bg, #F5F0E8)";
+
+            const toggleExpand = (e: React.MouseEvent) => {
+              e.stopPropagation();
+              setExpandedEpisodes(prev => {
+                const next = new Set(prev);
+                if (next.has(tag)) next.delete(tag);
+                else next.add(tag);
+                return next;
+              });
+            };
+
+            if (isExpanded) {
+              return (
+                <div key={`episode-${tag}`} style={{ marginBottom: 14 }}>
+                  {/* Episode header */}
+                  <div style={{ marginBottom: 6, paddingBottom: 6, borderBottom: "1px solid rgba(255,255,255,0.1)", display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 8 }}>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1, display: "flex", alignItems: "center", gap: 5 }}>
+                        {podcastName && (
+                          episodeUrl
+                            ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "underline" }}>{podcastName}</a>
+                            : <span style={{ color: "var(--color-accent, #FF00AE)" }}>{podcastName}</span>
+                        )}
+                        <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>
+                          {podcastName ? "  ·  " : ""}{posts.length} takes · {dateStr}
+                        </span>
+                        <button
+                          onClick={(e) => { e.stopPropagation(); setShowCollectionInfo(true); }}
+                          style={{ background: "none", border: "none", borderRadius: "50%", width: 28, height: 28, fontSize: 9, color: "rgba(255,255,255,0.4)", cursor: "pointer", display: "inline-flex", alignItems: "center", justifyContent: "center", padding: 0, lineHeight: 1, flexShrink: 0, margin: -7, WebkitTapHighlightColor: "transparent" }}
+                          aria-label="What is this?"
+                        >
+                          <span style={{ border: "1px solid rgba(255,255,255,0.25)", borderRadius: "50%", width: 14, height: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>?</span>
+                        </button>
+                      </p>
+                      <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
+                        {episodeUrl
+                          ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none" }}>{title}</a>
+                          : title}
+                      </p>
                     </div>
-                  ))}
+                    <button
+                      onClick={toggleExpand}
+                      style={{ background: "none", border: "1px solid rgba(255,255,255,0.15)", borderRadius: 20, padding: "3px 10px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.45)", cursor: "pointer", flexShrink: 0, letterSpacing: 0.2, WebkitTapHighlightColor: "transparent" }}
+                    >
+                      ↑ Collapse
+                    </button>
+                  </div>
+                  {/* Episode cards */}
+                  <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+                    {posts.map(obs => (
+                      <div key={obs.id} style={{ marginBottom: 7 }}>
+                        {renderCard(obs)}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            }
+
+            // Collapsed: stacked card preview
+            return (
+              <div key={`episode-${tag}`} style={{ marginBottom: 14, position: "relative", paddingTop: 10 }}>
+                {/* Back peek card */}
+                <div style={{ position: "absolute", top: 0, left: 8, right: 8, height: 68, borderRadius: 8, background: cardBg, transform: "rotate(1.4deg)", boxShadow: "0 1px 4px rgba(0,0,0,0.07)", opacity: 0.7 }} />
+                {/* Middle peek card */}
+                <div style={{ position: "absolute", top: 4, left: 4, right: 4, height: 68, borderRadius: 8, background: cardBg, transform: "rotate(-0.7deg)", boxShadow: "0 1px 5px rgba(0,0,0,0.09)", opacity: 0.85 }} />
+                {/* Front summary card */}
+                <div
+                  onClick={toggleExpand}
+                  style={{
+                    position: "relative", borderRadius: 8, background: cardBg,
+                    boxShadow: "0 2px 10px rgba(0,0,0,0.12)", cursor: "pointer",
+                    padding: "12px 14px", display: "flex", alignItems: "center", gap: 12,
+                    WebkitTapHighlightColor: "transparent",
+                  }}
+                >
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    {podcastName && (
+                      <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", color: "var(--color-accent, #FF00AE)", letterSpacing: -0.1, lineHeight: 1, textTransform: "uppercase" }}>
+                        {podcastName}
+                      </p>
+                    )}
+                    <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "var(--color-dark-text, #1A1A1A)", margin: 0, letterSpacing: -0.3, lineHeight: 1.25, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const }}>
+                      {title}
+                    </p>
+                    <p style={{ fontSize: 10, color: "rgba(26,26,26,0.4)", margin: "4px 0 0", letterSpacing: -0.1, fontWeight: 500 }}>
+                      {posts.length} hot take{posts.length !== 1 ? "s" : ""} · {dateStr}
+                    </p>
+                  </div>
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, flexShrink: 0 }}>
+                    <span style={{ fontSize: 22, lineHeight: 1 }}>🎙️</span>
+                    <span style={{ fontSize: 8, fontWeight: 800, color: "var(--color-accent, #FF00AE)", letterSpacing: 0.4, textTransform: "uppercase" }}>
+                      Tap
+                    </span>
+                  </div>
                 </div>
               </div>
             );
