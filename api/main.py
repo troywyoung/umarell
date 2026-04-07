@@ -344,9 +344,11 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
             import json as _json
             obs.summary = _json.dumps(steel_man_data)
             if sources:
-                # Preserve original episode source (YouTube URL) if present
+                # Preserve original episode/article sources before overwriting with search results
                 episode_source = next((s for s in (obs.sources or []) if s.get("title") == "episode"), None)
-                obs.sources = ([episode_source] if episode_source else []) + sources
+                article_source = next((s for s in (obs.sources or []) if s.get("title") == "article"), None)
+                pinned = [s for s in [article_source, episode_source] if s]
+                obs.sources = pinned + sources
 
             # Build plain text version for metadata scoring
             sm_text = steel_man_data.get("bottom_line", "")
@@ -877,6 +879,31 @@ async def pin_observation(
     return {"ok": True, "pinned": obs.pinned}
 
 
+@app.patch("/episodes/{tag}/pin", status_code=200)
+async def pin_episode_bundle(
+    tag: str,
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
+    current_user: User | None = Depends(get_current_user),
+):
+    """Admin-only: toggle pin on all observations in an episode bundle."""
+    if not current_user or not _is_admin(current_user):
+        raise HTTPException(403, "Admin only")
+    from sqlalchemy import select as sa_select
+    result = await db.execute(
+        sa_select(Observation).where(Observation.episode_tag == tag)
+    )
+    obs_list = result.scalars().all()
+    if not obs_list:
+        raise HTTPException(404, "No observations found for that tag")
+    # Toggle: if any are pinned, unpin all; if none are pinned, pin all
+    new_state = not any(o.pinned for o in obs_list)
+    for o in obs_list:
+        o.pinned = new_state
+    await db.commit()
+    return {"ok": True, "pinned": new_state, "count": len(obs_list)}
+
+
 # ─── Episode seed ───────────────────────────────────────────────────────────
 
 class EpisodeSeed(BaseModel):
@@ -1341,7 +1368,7 @@ async def post_news_bundle_takes(
             context=take.author or None,   # author per card, like speaker for podcasts
             episode_tag=body.bundle_tag,
             episode_title=body.bundle_title,
-            sources=[{"url": take.source_url, "title": take.source_title}] if take.source_url else [],
+            sources=[{"url": take.source_url, "title": "article", "label": take.source_title}] if take.source_url else [],
         )
         db.add(obs)
         await db.commit()
@@ -1387,9 +1414,11 @@ async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-take
             import json as _json
             obs.summary = _json.dumps(steel_man_data)
             if sources:
-                # Preserve original episode source (YouTube URL) if present
+                # Preserve original episode/article sources before overwriting with search results
                 episode_source = next((s for s in (obs.sources or []) if s.get("title") == "episode"), None)
-                obs.sources = ([episode_source] if episode_source else []) + sources
+                article_source = next((s for s in (obs.sources or []) if s.get("title") == "article"), None)
+                pinned = [s for s in [article_source, episode_source] if s]
+                obs.sources = pinned + sources
 
             # Build plain text version for metadata scoring
             sm_text = steel_man_data.get("bottom_line", "")
