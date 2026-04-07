@@ -445,8 +445,13 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
     const el = badgeRef.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setInView(true); obs.disconnect(); } },
-      { threshold: 0.3 }
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          obs.disconnect();
+          setTimeout(() => setInView(true), 120);
+        }
+      },
+      { threshold: 1.0, rootMargin: "0px 0px -80px 0px" }
     );
     obs.observe(el);
     return () => obs.disconnect();
