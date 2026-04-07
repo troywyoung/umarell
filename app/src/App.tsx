@@ -428,15 +428,17 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const fontSize = size === "sm" ? 14 : size === "lg" ? 17 : 11;
   const r = (dim - 4) / 2;
   const circ = 2 * Math.PI * r;
+  const PINK = "#FF00AE";
 
   const [displayVal, setDisplayVal] = useState(animate ? 0 : target);
   const [animPct, setAnimPct] = useState(animate ? 0 : target / 100);
+  const [showEmoji, setShowEmoji] = useState(!animate && isHotTake);
   const animRef = useRef<number | null>(null);
   const startRef = useRef<number | null>(null);
 
   useEffect(() => {
-    if (!animate) { setDisplayVal(target); setAnimPct(target / 100); return; }
-    setDisplayVal(0); setAnimPct(0);
+    if (!animate) { setDisplayVal(target); setAnimPct(target / 100); setShowEmoji(isHotTake); return; }
+    setDisplayVal(0); setAnimPct(0); setShowEmoji(false);
     startRef.current = null;
     const duration = 1440;
     const tick = (ts: number) => {
@@ -446,48 +448,35 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
       const eased = 1 - Math.pow(1 - progress, 3);
       setDisplayVal(Math.round(eased * target));
       setAnimPct(eased * target / 100);
-      if (progress < 1) animRef.current = requestAnimationFrame(tick);
+      if (progress < 1) {
+        animRef.current = requestAnimationFrame(tick);
+      } else if (isHotTake) {
+        setTimeout(() => setShowEmoji(true), 300);
+      }
     };
     animRef.current = requestAnimationFrame(tick);
     return () => { if (animRef.current) cancelAnimationFrame(animRef.current); };
-  }, [animate, target]);
+  }, [animate, target, isHotTake]);
 
-  // Hot take: fire ring replaces the progress circle, number stays inside
-  if (isHotTake) {
-    const count = 10;
-    const ringR = dim * 0.42;
-    const emojiSz = dim * 0.30;
-    const cx = dim / 2;
-    return (
-      <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0, overflow: "visible" }}>
-        {Array.from({ length: count }).map((_, i) => {
-          const angleDeg = (i * 360 / count) - 90;
-          const angleRad = angleDeg * Math.PI / 180;
-          const x = cx + ringR * Math.cos(angleRad) - emojiSz / 2;
-          const y = cx + ringR * Math.sin(angleRad) - emojiSz / 2;
-          return (
-            <div key={i} style={{ position: "absolute", left: x, top: y, fontSize: emojiSz, lineHeight: 1, userSelect: "none" }}>🔥</div>
-          );
-        })}
-        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
-        </div>
-      </div>
-    );
-  }
-
-  const currentColor = animate ? getScoreColor(displayVal) : accent;
-  const pct = animate ? animPct : target / 100;
+  const currentColor = showEmoji ? PINK : (animate ? getScoreColor(displayVal) : accent);
+  const pct = showEmoji ? 1 : (animate ? animPct : target / 100);
 
   return (
     <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
-      <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)" }}>
+      <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)", transition: showEmoji ? "stroke 0.4s ease" : "none" }}>
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" ? 4.4 : 3.4} />
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" ? 4.4 : 3.4}
-          strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round" />
+          strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round"
+          style={{ transition: showEmoji ? "stroke 0.4s ease, stroke-dasharray 0.4s ease" : "none" }} />
       </svg>
       <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+        {showEmoji ? (
+          <div style={{ animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards", fontSize: dim * 0.72, lineHeight: 1, userSelect: "none" }}>
+            🥵
+          </div>
+        ) : (
+          <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+        )}
       </div>
     </div>
   );
@@ -799,7 +788,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         @keyframes recPulse { 0%,100% { opacity:1; } 50% { opacity:0.2; } }
         @keyframes yellowPulse { 0%,100% { opacity:1; } 50% { opacity:0.25; } }
         @keyframes scoreLabelFadeIn { from { opacity:0; transform:translateX(-6px); } to { opacity:1; transform:translateX(0); } }
-
+        @keyframes hotGrow { 0% { opacity:0; transform:scale(0.2); } 60% { opacity:1; transform:scale(1.35); } 100% { opacity:1; transform:scale(1); } }
       `}</style>
 
 <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
