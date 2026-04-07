@@ -15,6 +15,7 @@ type Step = 'form' | 'previewing' | 'preview' | 'posting' | 'done';
 const SOURCES = [
   { value: 'nyt-opinion', label: 'NYT Opinion' },
   { value: 'wsj-opinion', label: 'WSJ Opinion' },
+  { value: 'bloomberg-opinion', label: 'Bloomberg Opinion' },
 ];
 
 export default function NewsBundleForm() {

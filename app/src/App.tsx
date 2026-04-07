@@ -914,7 +914,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 {(obs.user_name || authUser?.is_admin) && (
                   <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: isCollection ? "var(--color-accent, #FF00AE)" : "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1, display: "flex", alignItems: "center", gap: 4 }}>
                     {obs.user_name && (() => {
-                      const isNewsCard = obs.episode_tag?.startsWith('nyt-opinion') || obs.episode_tag?.startsWith('wsj-opinion');
+                      const isNewsCard = obs.episode_tag?.startsWith('nyt-opinion') || obs.episode_tag?.startsWith('wsj-opinion') || obs.episode_tag?.startsWith('bloomberg-opinion');
                       const storyUrl = isNewsCard ? (obs.sources?.find((s: {url: string; title: string}) => s.title === "article")?.url ?? null) : null;
                       return storyUrl ? (
                         <a href={storyUrl} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}
@@ -1189,7 +1189,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const orderedPosts = [...posts].sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
             const first = orderedPosts[0];
             const dateStr = new Date(first.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-            const isNewsBundleTag = tag.startsWith('nyt-opinion') || tag.startsWith('wsj-opinion');
+            const isNewsBundleTag = tag.startsWith('nyt-opinion') || tag.startsWith('wsj-opinion') || tag.startsWith('bloomberg-opinion');
             const podcastName = isNewsBundleTag ? null : (first.user_name || null);
             const episodeUrl = isNewsBundleTag ? null : (first.sources?.find((s: {url: string; title: string}) => s.title === "episode")?.url || first.sources?.[0]?.url || null);
             const isMobile = window.innerWidth < 600;
@@ -1987,7 +1987,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {(() => {
-            const isNewsCard = obs.episode_tag?.startsWith('nyt-opinion') || obs.episode_tag?.startsWith('wsj-opinion');
+            const isNewsCard = obs.episode_tag?.startsWith('nyt-opinion') || obs.episode_tag?.startsWith('wsj-opinion') || obs.episode_tag?.startsWith('bloomberg-opinion');
             return (!isNewsCard && obs.user_name) ? <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span> : null;
           })()}
           {isOwner && (

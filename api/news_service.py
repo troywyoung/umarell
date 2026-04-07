@@ -20,6 +20,11 @@ SOURCES = {
         "feed_url": "https://feeds.content.dowjones.io/public/rss/RSSOpinion",
         "tag_prefix": "wsj-opinion",
     },
+    "bloomberg-opinion": {
+        "label":    "Bloomberg Opinion",
+        "feed_url": "https://feeds.bloomberg.com/opinion/news.rss",
+        "tag_prefix": "bloomberg-opinion",
+    },
 }
 
 _DC  = "http://purl.org/dc/elements/1.1/"
