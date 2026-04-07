@@ -1,12 +1,17 @@
-"""YouTube transcript fetching service.
+"""Transcript fetching service — YouTube and Apple Podcasts.
 
-Fallback chain:
+YouTube fallback chain:
   1. youtube_transcript_api  — free, instant; requires captions to exist on the video
   2. Supadata API            — handles any public YouTube video, generates transcript from audio
+
+Apple Podcasts:
+  1. iTunes API → RSS feed URL
+  2. RSS parsing → <podcast:transcript> tag → fetch VTT or HTML transcript
 """
 
 import re
 import json
+import httpx
 from typing import Optional
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import (
@@ -161,6 +166,194 @@ def fetch_youtube_transcript(url: str) -> dict:
         return loop.run_until_complete(_fetch_via_supadata(video_id))
     finally:
         loop.close()
+
+
+# ─── Apple Podcasts ───────────────────────────────────────────────────────────
+
+def _is_apple_podcast_url(url: str) -> bool:
+    return "podcasts.apple.com" in url
+
+
+def _parse_apple_podcast_url(url: str) -> tuple[str, Optional[str]]:
+    """Return (show_id, episode_id) from an Apple Podcasts URL.
+    Episode ID is the ?i= query param. Returns (show_id, None) for show-level URLs."""
+    show_match = re.search(r'/id(\d+)', url)
+    if not show_match:
+        raise TranscriptError("Could not parse Apple Podcasts URL — expected format: podcasts.apple.com/…/idSHOW_ID?i=EPISODE_ID")
+    show_id = show_match.group(1)
+    episode_match = re.search(r'[?&]i=(\d+)', url)
+    episode_id = episode_match.group(1) if episode_match else None
+    return show_id, episode_id
+
+
+def _parse_vtt(vtt_text: str) -> dict:
+    """Parse WebVTT transcript into {text, segments} format."""
+    segments = []
+    lines = vtt_text.strip().splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        # Match timestamp lines like "00:00:01.000 --> 00:00:05.000"
+        ts_match = re.match(r'(\d+:\d+:\d+[\.,]\d+)\s+-->\s+(\d+:\d+:\d+[\.,]\d+)', line)
+        if ts_match:
+            def _ts_to_sec(ts):
+                ts = ts.replace(',', '.')
+                parts = ts.split(':')
+                h, m, s = int(parts[0]), int(parts[1]), float(parts[2])
+                return h * 3600 + m * 60 + s
+            start = _ts_to_sec(ts_match.group(1))
+            i += 1
+            text_parts = []
+            while i < len(lines) and lines[i].strip():
+                text_parts.append(lines[i].strip())
+                i += 1
+            text = ' '.join(text_parts)
+            # Strip VTT tags like <c>, <b>, speaker annotations
+            text = re.sub(r'<[^>]+>', '', text).strip()
+            if text:
+                segments.append({"start": start, "text": text})
+        i += 1
+    full_text = ' '.join(s['text'] for s in segments)
+    return {"text": full_text, "segments": segments, "source": "apple_podcast_vtt"}
+
+
+def _parse_html_transcript(html: str) -> dict:
+    """Parse Buzzsprout-style HTML transcript into {text, segments} format."""
+    # Strip all HTML tags
+    text = re.sub(r'<[^>]+>', ' ', html)
+    # Collapse whitespace
+    text = re.sub(r'\s+', ' ', text).strip()
+    # No timing info available from HTML transcripts
+    segments = [{"start": 0.0, "text": text}]
+    return {"text": text, "segments": segments, "source": "apple_podcast_html"}
+
+
+def fetch_apple_podcast_transcript(url: str) -> dict:
+    """Fetch transcript for an Apple Podcasts episode URL.
+
+    Flow:
+    1. Parse URL → show_id, episode_id
+    2. iTunes API → RSS feed URL + episode title
+    3. Parse RSS → find matching episode → get transcript URL
+    4. Fetch and parse transcript (VTT or HTML)
+    """
+    show_id, episode_id = _parse_apple_podcast_url(url)
+
+    headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"}
+
+    # Step 1: Get RSS feed URL and show name from iTunes
+    try:
+        r = httpx.get(
+            f"https://itunes.apple.com/lookup?id={show_id}&entity=podcast",
+            timeout=10.0
+        )
+        r.raise_for_status()
+        itunes_data = r.json()
+    except Exception as e:
+        raise TranscriptError(f"iTunes API lookup failed: {e}")
+
+    results = itunes_data.get("results", [])
+    if not results:
+        raise TranscriptError(f"Podcast not found on iTunes (show_id={show_id})")
+
+    rss_url = results[0].get("feedUrl")
+    show_name = results[0].get("collectionName", "")
+    if not rss_url:
+        raise TranscriptError(f"No RSS feed URL found for podcast '{show_name}'")
+
+    # Step 2: Get episode title from iTunes if we have an episode ID
+    episode_title = None
+    if episode_id:
+        try:
+            ep_r = httpx.get(
+                f"https://itunes.apple.com/lookup?id={show_id}&entity=podcastEpisode&limit=200",
+                timeout=10.0
+            )
+            if ep_r.is_success:
+                ep_data = ep_r.json()
+                for ep in ep_data.get("results", []):
+                    if str(ep.get("trackId", "")) == episode_id:
+                        episode_title = ep.get("trackName")
+                        break
+        except Exception:
+            pass  # Non-fatal — will match by position if title not found
+
+    # Step 3: Fetch and parse RSS feed
+    try:
+        rss_r = httpx.get(rss_url, headers=headers, timeout=15.0, follow_redirects=True)
+        rss_r.raise_for_status()
+        rss_text = rss_r.text
+    except Exception as e:
+        raise TranscriptError(f"Could not fetch RSS feed: {e}")
+
+    # Step 4: Find matching episode item
+    items = rss_text.split('<item>')
+    if len(items) < 2:
+        raise TranscriptError("RSS feed has no episodes")
+
+    target_item = None
+    if episode_title:
+        # Match by title
+        title_slug = re.sub(r'[^a-z0-9]', '', episode_title.lower())
+        for item in items[1:]:
+            item_title_match = re.search(r'<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>', item)
+            if item_title_match:
+                item_title = re.sub(r'[^a-z0-9]', '', item_title_match.group(1).lower())
+                if item_title == title_slug or title_slug in item_title or item_title in title_slug:
+                    target_item = item
+                    break
+
+    # Fall back to most recent episode if no match
+    if target_item is None:
+        target_item = items[1]
+
+    # Step 5: Get transcript URL from item
+    transcript_match = re.search(
+        r'<podcast:transcript\s+url="([^"]+)"\s+type="([^"]+)"',
+        target_item
+    )
+    if not transcript_match:
+        # Also try reversed attribute order
+        transcript_match = re.search(
+            r'<podcast:transcript[^>]+url="([^"]+)"[^>]*/?>',
+            target_item
+        )
+        if not transcript_match:
+            # Get episode title for error message
+            title_m = re.search(r'<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>', target_item)
+            ep_name = title_m.group(1) if title_m else "this episode"
+            raise TranscriptError(
+                f"No transcript available for '{ep_name}'. "
+                "This show does not publish transcripts in its RSS feed. "
+                "Try a YouTube URL instead, or wait for Listen Notes integration."
+            )
+
+    transcript_url = transcript_match.group(1)
+    transcript_type = transcript_match.group(2) if transcript_match.lastindex >= 2 else "text/vtt"
+
+    # Step 6: Fetch transcript
+    try:
+        tr = httpx.get(transcript_url, headers=headers, timeout=20.0, follow_redirects=True)
+        tr.raise_for_status()
+        transcript_content = tr.text
+    except Exception as e:
+        raise TranscriptError(f"Could not fetch transcript file: {e}")
+
+    # Step 7: Parse by type
+    if "vtt" in transcript_type or "vtt" in transcript_url.lower():
+        return _parse_vtt(transcript_content)
+    else:
+        # HTML or unknown — strip tags
+        return _parse_html_transcript(transcript_content)
+
+
+# ─── Unified fetch router ─────────────────────────────────────────────────────
+
+def fetch_transcript(url: str) -> dict:
+    """Route to the correct transcript fetcher based on URL type."""
+    if _is_apple_podcast_url(url):
+        return fetch_apple_podcast_transcript(url)
+    return fetch_youtube_transcript(url)
 
 
 # ─── Take extraction ──────────────────────────────────────────────────────────

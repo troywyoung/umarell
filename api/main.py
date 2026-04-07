@@ -937,8 +937,69 @@ class PodcastIngest(BaseModel):
 
 @app.get("/podcasts/metadata")
 async def get_podcast_metadata(url: str):
-    """Fetch YouTube video title and channel name via oEmbed — no API key needed."""
+    """Fetch episode title and show name from a YouTube or Apple Podcasts URL."""
     import urllib.parse, re as _re2
+
+    def _slug(text: str) -> str:
+        return _re2.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:80]
+
+    # ── Apple Podcasts ──────────────────────────────────────────────────────
+    if "podcasts.apple.com" in url:
+        try:
+            show_match = _re2.search(r'/id(\d+)', url)
+            episode_match = _re2.search(r'[?&]i=(\d+)', url)
+            if not show_match:
+                raise HTTPException(400, "Could not parse Apple Podcasts URL")
+            show_id = show_match.group(1)
+            episode_id = episode_match.group(1) if episode_match else None
+
+            async with httpx.AsyncClient(timeout=10.0) as client:
+                # Get show info + RSS feed
+                show_r = await client.get(f"https://itunes.apple.com/lookup?id={show_id}&entity=podcast")
+                show_data = show_r.json()
+                show_results = show_data.get("results", [])
+                if not show_results:
+                    raise HTTPException(400, "Podcast not found on iTunes")
+                show_name = show_results[0].get("collectionName", "")
+
+                # Get episode title if episode ID provided
+                episode_title = ""
+                if episode_id:
+                    ep_r = await client.get(
+                        f"https://itunes.apple.com/lookup?id={show_id}&entity=podcastEpisode&limit=200"
+                    )
+                    if ep_r.is_success:
+                        for ep in ep_r.json().get("results", []):
+                            if str(ep.get("trackId", "")) == episode_id:
+                                episode_title = ep.get("trackName", "")
+                                break
+
+                # Fall back to latest episode title from RSS if needed
+                if not episode_title:
+                    rss_url = show_results[0].get("feedUrl", "")
+                    if rss_url:
+                        rss_r = await client.get(
+                            rss_url,
+                            headers={"User-Agent": "Mozilla/5.0"},
+                            follow_redirects=True
+                        )
+                        items = rss_r.text.split('<item>')
+                        if len(items) > 1:
+                            title_m = _re2.search(r'<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>', items[1])
+                            if title_m:
+                                episode_title = title_m.group(1).strip()
+
+            return {
+                "title": episode_title,
+                "channel": show_name,
+                "episode_tag": _slug(episode_title or show_name),
+            }
+        except HTTPException:
+            raise
+        except Exception as e:
+            raise HTTPException(400, f"Could not fetch Apple Podcasts metadata: {str(e)}")
+
+    # ── YouTube ─────────────────────────────────────────────────────────────
     try:
         oembed_url = f"https://www.youtube.com/oembed?url={urllib.parse.quote(url)}&format=json"
         async with httpx.AsyncClient(timeout=5.0) as client:
@@ -948,10 +1009,7 @@ async def get_podcast_metadata(url: str):
         data = r.json()
         title = data.get("title", "")
         channel = data.get("author_name", "")
-        # Generate episode tag: lowercase slug from title
-        slug = title.lower()
-        slug = _re2.sub(r"[^a-z0-9]+", "-", slug).strip("-")[:80]
-        return {"title": title, "channel": channel, "episode_tag": slug}
+        return {"title": title, "channel": channel, "episode_tag": _slug(title)}
     except httpx.TimeoutException:
         raise HTTPException(400, "YouTube metadata fetch timed out")
     except Exception as e:
@@ -983,13 +1041,13 @@ async def ingest_podcast(
         raise HTTPException(403, "Invalid admin key")
 
     # Import here to avoid circular dependencies
-    from transcript_service import fetch_youtube_transcript, extract_podcast_takes, TranscriptError
+    from transcript_service import fetch_transcript, extract_podcast_takes, TranscriptError
 
     # Fetch transcript (Supadata can take 10-30s for audio transcription)
     try:
         import asyncio
         transcript = await asyncio.wait_for(
-            asyncio.to_thread(fetch_youtube_transcript, body.url),
+            asyncio.to_thread(fetch_transcript, body.url),
             timeout=120.0
         )
     except asyncio.TimeoutError:
@@ -1100,12 +1158,12 @@ async def preview_podcast_takes(
     if body.admin_key and body.admin_key != settings.google_api_key:
         raise HTTPException(403, "Invalid admin key")
 
-    from transcript_service import fetch_youtube_transcript, extract_podcast_takes, TranscriptError
+    from transcript_service import fetch_transcript, extract_podcast_takes, TranscriptError
     import asyncio
 
     try:
         transcript = await asyncio.wait_for(
-            asyncio.to_thread(fetch_youtube_transcript, body.url),
+            asyncio.to_thread(fetch_transcript, body.url),
             timeout=120.0
         )
     except asyncio.TimeoutError:

@@ -32,7 +32,7 @@ export default function PodcastIngestionForm() {
 
   useEffect(() => {
     if (metaTimeout.current) clearTimeout(metaTimeout.current);
-    if (!url.trim() || !url.includes('youtube')) return;
+    if (!url.trim() || (!url.includes('youtube') && !url.includes('podcasts.apple.com'))) return;
     metaTimeout.current = setTimeout(async () => {
       setFetchingMeta(true);
       try {
@@ -247,17 +247,17 @@ export default function PodcastIngestionForm() {
   return (
     <div style={{ maxWidth: 640 }}>
       <p style={{ fontSize: 13, color: '#888', marginBottom: 24, lineHeight: 1.6 }}>
-        Paste a YouTube URL — title and podcast name auto-fill. Extract takes to preview and select before posting.
+        Paste a YouTube or Apple Podcasts episode URL — title and podcast name auto-fill. Extract takes to preview and select before posting.
       </p>
 
       <form onSubmit={e => { e.preventDefault(); extractTakes(); }} style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
 
         <div>
-          <label style={labelStyle}>YouTube URL *</label>
+          <label style={labelStyle}>Episode URL *</label>
           <div style={{ position: 'relative' }}>
             <input
               type="url" value={url} onChange={e => setUrl(e.target.value)}
-              placeholder="https://youtube.com/watch?v=…"
+              placeholder="https://youtube.com/watch?v=… or https://podcasts.apple.com/…"
               required style={inputStyle}
             />
             {fetchingMeta && (
@@ -272,12 +272,12 @@ export default function PodcastIngestionForm() {
           <div>
             <label style={labelStyle}>Episode Title *</label>
             <input type="text" value={episodeTitle} onChange={e => setEpisodeTitle(e.target.value)}
-              placeholder="Auto-filled from YouTube" required style={inputStyle} />
+              placeholder="Auto-filled from URL" required style={inputStyle} />
           </div>
           <div>
             <label style={labelStyle}>Podcast Name</label>
             <input type="text" value={podcastName} onChange={e => setPodcastName(e.target.value)}
-              placeholder="Auto-filled from channel" style={inputStyle} />
+              placeholder="Auto-filled from URL" style={inputStyle} />
           </div>
         </div>
 
