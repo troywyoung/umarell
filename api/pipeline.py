@@ -546,45 +546,55 @@ Return valid JSON only. No markdown fences. No preamble."""
 
 
 async def generate_metadata(thesis: str, steel_man: str, image_b64: str | None = None, image_media_type: str = "image/jpeg") -> dict:
-    """Generate take strength score (0-100), topic tags, and evidence type label."""
+    """Generate take quality score (0-100), topic tags, and evidence type label."""
     system = (
-        "You are evaluating the argumentative strength of hot takes — subjective positions on media, tech, culture, and ideas. "
-        "You score takes on how sharp, specific, and arguable they are, not on factual correctness. "
-        "If an image is provided, use it as evidence of what is being claimed. "
+        "You are evaluating the quality of hot takes — sharp, opinionated positions on media, tech, culture, business, and ideas. "
+        "You score takes on how well-argued, specific, and interesting they are as TAKES, not on whether they are factually correct. "
+        "If an image is provided, use it as context for what is being claimed. "
         "You always return valid JSON when asked."
     )
 
     prompt = f"""Thesis: {thesis}
 
-This is a CONVICTION SCORE — 0 to 100. It combines factual accuracy with the strength of the argument.
+This is a TAKE QUALITY SCORE — 0 to 100. You are scoring this as a TAKE, not as a factual claim.
 
-The two anchors:
-- A verifiably TRUE statement scores near 100. The truer and more provable, the higher.
-- A verifiably FALSE or demonstrably wrong statement scores near 0. The more clearly false, the lower.
-- Opinions and takes that can't be proven score in the middle — higher if the argument is tight and evidence leans that way, lower if it's vague or unsupported.
+A take is a perspective with a point. It argues something. It challenges something. It names names or stakes a claim.
+Facts are not takes. Vague observations are not takes. Good takes are specific, falsifiable in principle, and have internal logic.
+
+WHAT YOU ARE SCORING:
+- Specificity: Does it name something concrete — a company, a trend, a timeframe, a mechanism?
+- Falsifiability: Could it in principle be proven right or wrong?
+- Argumentative logic: Does it have a "because"? Is there internal reasoning, not just assertion?
+- Challenge: Does it push against something people actually believe or do?
+- Sharpness: Is there one clear point, not diluted with caveats and hedges?
+
+CRITICAL: Factual correctness is IRRELEVANT to this score.
+A specific, well-argued contrarian prediction scores HIGH even if it turns out to be wrong.
+A verified scientific fact scores LOW because it is not a take — there is nothing to argue.
 
 SCORING SCALE:
-90–100 — Verifiably true. Established fact, empirically confirmed, or a prediction that has already proven correct.
-75–89  — Well-evidenced and hard to dismiss. Strong case, evidence leans clearly in this direction.
-55–74  — Reasonable and defensible. Solid argument, some supporting evidence, but genuinely contestable.
-35–54  — Contested or underdeveloped. Possible but the argument is thin, vague, or the evidence is weak.
-15–34  — Unlikely or poorly supported. Speculative with little backing, or goes against available evidence.
-0–14   — Demonstrably false or incoherent. Contradicts established facts or makes no logical sense.
+85–100 — Exceptional take. Specific, falsifiable, sharp argument, challenges real consensus. Will make people stop and think.
+70–84  — Strong take. Clear point, identifiable argument, challenges something, mostly specific.
+55–69  — Decent take. Has a point but could be sharper, more specific, or better argued.
+35–54  — Weak take. Vague, or just assertion without reasoning, or challenges nothing real.
+15–34  — Not really a take. Too general to be argued, or just restating what everyone already believes.
+0–14   — Not a take at all. Pure fact, pure observation, or incoherent.
 
 CALIBRATION EXAMPLES — match your scores to these:
-- "Apples are a type of fruit." → 99 (pure verified fact)
-- "Regular sleep of 7–9 hours improves cognitive performance." → 93 (scientifically established)
-- "Social media has increased political polarization." → 78 (well-evidenced, strong academic consensus)
-- "The newsletter subscription boom peaked around 2022–2023." → 65 (directionally supported, observable data)
-- "No media operator has ever genuinely benefited from taking VC money." → 52 (arguable point, but counterexamples exist — hyperbole counts against it)
-- "Podcasting rewards authenticity over production quality." → 48 (plausible conventional wisdom, limited hard evidence)
-- "Every major ad holding company will be gone within 8 years." → 38 (bold prediction, no current evidence, speculative)
-- "Bari Weiss is single-handedly destroying CBS News." → 18 (hyperbolic, not supported by evidence)
-- "Canada will be a global superpower by 2030." → 8 (contradicts all available economic and geopolitical data)
+- "The core AI business models are undefendable — cheap energy and commoditization will destroy their moats." → 85 (sharp, specific mechanism, directly challengeable)
+- "Bitcoin will go to zero because of its massive energy reliance." → 82 (specific claim, falsifiable, has a mechanism, contrarian)
+- "Every major ad holding company will be gone within 8 years." → 75 (bold, specific, falsifiable, challenges incumbent power)
+- "No media operator has ever genuinely benefited from taking VC money." → 72 (strong point, arguable, some hyperbole but earns it)
+- "Social media has increased political polarization." → 58 (decent take but now mainstream — no longer challenging consensus)
+- "Podcasting rewards authenticity over production quality." → 45 (plausible but vague — what does 'rewards' mean? No mechanism)
+- "AI is going to change everything." → 12 (not a take — too vague to argue or falsify)
+- "Regular sleep of 7–9 hours improves cognitive performance." → 8 (established science, nothing to argue)
+- "Apples are a type of fruit." → 2 (pure fact, not a take)
 
-Use the FULL range. Don't default to 55–65 for everything in the middle.
-Hyperbole for effect is fine — score the underlying claim, not the literal wording.
-If an image is provided, use it as direct evidence for the claim.
+Use the FULL range. Most takes land between 30–80. Reserve 85+ for truly exceptional takes.
+Penalize vagueness and pure assertion hard. Reward specificity and falsifiability even when the underlying claim seems unlikely.
+Hyperbole for effect is fine — score the underlying argument, not the literal wording.
+If an image is provided, use it as context for the claim being made.
 
 Also score BRAZENESS (0–100): how bold, contrarian, or provocative is this take vs. conventional wisdom?
 - 0–20: Safe, obvious, widely accepted — no one would push back
