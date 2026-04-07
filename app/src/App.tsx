@@ -443,7 +443,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const circ = 2 * Math.PI * r;
   const PINK = "#FF00AE";
 
-  const HOT_EMOJIS = ["🥵","🤯","🫣","😤","💥","🫠","😈","☄️","🌋","🤬","💣","🧨","⚡","😱","💀","🌪️","😡","🚨","🤘","🃏"];
+  const HOT_EMOJIS = ["🥵","🤯","🫣","😤","💥","🫠","😈","☄️","🌋","🤬","💣","👀","⚡","😱","💀","🌪️","😡","🚨","🤘","🃏"];
   const emojiIdx = obsId ? obsId.split("").reduce((a, c) => a + c.charCodeAt(0), 0) % HOT_EMOJIS.length : Math.floor(Math.random() * HOT_EMOJIS.length);
   const emojiRef = useRef(HOT_EMOJIS[emojiIdx]);
   const badgeRef = useRef<HTMLDivElement>(null);
