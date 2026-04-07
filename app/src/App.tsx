@@ -1194,11 +1194,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const orderedPosts = [...posts].sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
             const first = orderedPosts[0];
             const dateStr = new Date(first.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-            const podcastName = first.user_name || null;
-            const episodeUrl = first.sources?.find((s: {url: string; title: string}) => s.title === "episode")?.url || first.sources?.[0]?.url || null;
+            const isNewsBundleTag = tag.startsWith('nyt-opinion') || tag.startsWith('wsj-opinion');
+            const podcastName = isNewsBundleTag ? null : (first.user_name || null);
+            const episodeUrl = isNewsBundleTag ? null : (first.sources?.find((s: {url: string; title: string}) => s.title === "episode")?.url || first.sources?.[0]?.url || null);
             const isMobile = window.innerWidth < 600;
             const title = first.episode_title || (first.episode_tag ? first.episode_tag.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase()) : null) || "Episode";
-            const isNewsBundleTag = tag.startsWith('nyt-opinion') || tag.startsWith('wsj-opinion');
             const cardBg = "var(--color-collection-card-bg, #F5F0E8)";
             const isBundlePinned = orderedPosts.some(o => o.pinned);
 
