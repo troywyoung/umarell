@@ -339,8 +339,19 @@ function ScoreInfoRows() {
   );
 }
 
+function HotTakeInfoRow() {
+  return (
+    <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
+      <p style={{ fontSize: 11, fontWeight: 800, color: "#FF00AE", letterSpacing: 0.8, textTransform: "uppercase", margin: "0 0 6px" }}>🔥 Hot Take</p>
+      <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", lineHeight: 1.5, margin: 0 }}>
+        A high-score take that's also highly brazen — well-evidenced but challenges widely held beliefs. Expect strong reactions.
+      </p>
+    </div>
+  );
+}
+
 // Mobile: slides up from bottom
-function ScoreInfoSheet({ onClose }: { onClose: () => void }) {
+function ScoreInfoSheet({ onClose, isHotTake }: { onClose: () => void; isHotTake?: boolean }) {
   return (
     <>
       <div onClick={onClose} style={{ position: "fixed", inset: 0, zIndex: 998, background: "rgba(0,0,0,0.5)" }} />
@@ -358,13 +369,14 @@ function ScoreInfoSheet({ onClose }: { onClose: () => void }) {
           A conviction score. Verifiable facts score near 100. Demonstrably false claims score near 0. Opinions land in the middle based on how well-evidenced and defensible the argument is.
         </p>
         <ScoreInfoRows />
+        {isHotTake && <HotTakeInfoRow />}
       </div>
     </>
   );
 }
 
 // Desktop: anchored popover card below the trigger
-function ScoreInfoPopover({ onClose }: { onClose: () => void }) {
+function ScoreInfoPopover({ onClose, isHotTake }: { onClose: () => void; isHotTake?: boolean }) {
   return (
     <>
       <div onClick={onClose} style={{ position: "fixed", inset: 0, zIndex: 98, background: "transparent" }} />
@@ -384,6 +396,7 @@ function ScoreInfoPopover({ onClose }: { onClose: () => void }) {
           A conviction score. Verifiable facts score near 100. Demonstrably false claims score near 0. Opinions land in the middle based on how well-evidenced and defensible the argument is.
         </p>
         <ScoreInfoRows />
+        {isHotTake && <HotTakeInfoRow />}
       </div>
     </>
   );
@@ -420,7 +433,7 @@ function getScoreTier(v: number): { label: string } {
   return { label: "Undeniable" };
 }
 
-function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean; animate?: boolean; isHotTake?: boolean }) {
+function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false, obsId }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean; animate?: boolean; isHotTake?: boolean; obsId?: string }) {
   if (value == null) return null;
   const target = Math.round(value);
   const accent = getScoreColor(target);
@@ -431,7 +444,8 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const PINK = "#FF00AE";
 
   const HOT_EMOJIS = ["🥵","🤯","🔥","😤","💥","🫠","😈","☄️","🌋","🤬","💣","🧨","⚡","😱","💀","🌪️","😡","🚨","🤘","🃏"];
-  const emojiRef = useRef(HOT_EMOJIS[Math.floor(Math.random() * HOT_EMOJIS.length)]);
+  const emojiIdx = obsId ? obsId.split("").reduce((a, c) => a + c.charCodeAt(0), 0) % HOT_EMOJIS.length : Math.floor(Math.random() * HOT_EMOJIS.length);
+  const emojiRef = useRef(HOT_EMOJIS[emojiIdx]);
   const badgeRef = useRef<HTMLDivElement>(null);
 
   const [displayVal, setDisplayVal] = useState(0);
@@ -920,7 +934,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     )}
                     <div style={{ flex: 1 }}>
                       <div style={{ float: "right", marginLeft: 8, marginBottom: 2, textAlign: "center" }}>
-                        <ScoreBadge value={obs.score} size="sm" dark animate={!!obs.is_hot_take} isHotTake={obs.is_hot_take} />
+                        <ScoreBadge value={obs.score} size="sm" dark animate={!!obs.is_hot_take} isHotTake={obs.is_hot_take} obsId={obs.id} />
                       </div>
                       <p style={{
                         fontSize: "var(--font-size-card-headline, 14px)", fontWeight: 700,
@@ -1964,7 +1978,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", flex: "0 0 auto" }}>
-                <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate isHotTake={obs.is_hot_take} />
+                <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate isHotTake={obs.is_hot_take} obsId={obs.id} />
                 <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
                   {obs.is_hot_take ? "Hot Take" : tier.label}
                 </span>
@@ -1981,7 +1995,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                     opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards",
                   }}
                 >?</button>
-                {showScoreInfo && (isMobile ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} />)}
+                {showScoreInfo && (isMobile ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} isHotTake={obs.is_hot_take} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} isHotTake={obs.is_hot_take} />)}
               </div>
               <button
                 onClick={() => { setActiveTab("coldshower"); handleCounterpoint(); }}
