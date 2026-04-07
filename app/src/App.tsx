@@ -918,7 +918,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       const storyUrl = isNewsCard ? obs.sources?.[0]?.url : null;
                       return storyUrl ? (
                         <a href={storyUrl} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}
-                          style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 3 }}>
+                          style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "underline", textDecorationColor: "rgba(255,0,174,0.45)", textUnderlineOffset: 2, display: "inline-flex", alignItems: "center", gap: 3 }}>
                           {obs.user_name}
                           <svg width={8} height={8} viewBox="0 0 10 10" fill="none" style={{ flexShrink: 0, opacity: 0.65 }}>
                             <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round"/>
