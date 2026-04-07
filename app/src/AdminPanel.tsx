@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import SimplifiedDesignEditor from './admin/SimplifiedDesignEditor';
 import PodcastIngestionForm from './admin/PodcastIngestionForm';
+import NewsBundleForm from './admin/NewsBundleForm';
 import PromptsSection from './admin/PromptsSection';
 
-type ActiveTab = 'prompts' | 'design' | 'podcasts';
+type ActiveTab = 'prompts' | 'design' | 'podcasts' | 'news';
 
 export default function AdminPanel({ onClose }: { onClose: () => void }) {
   const [activeTab, setActiveTab] = useState<ActiveTab>('prompts');
@@ -47,6 +48,7 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
               {tabBtn('prompts', 'LLM Prompts')}
               {tabBtn('design', 'Design Tokens')}
               {tabBtn('podcasts', 'Podcasts')}
+              {tabBtn('news', 'News Bundles')}
             </div>
           </div>
         </div>
@@ -59,6 +61,10 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
         ) : activeTab === 'podcasts' ? (
           <div style={{ padding: 24 }}>
             <PodcastIngestionForm />
+          </div>
+        ) : activeTab === 'news' ? (
+          <div style={{ padding: 24 }}>
+            <NewsBundleForm />
           </div>
         ) : (
           <div style={{ padding: 24 }}>

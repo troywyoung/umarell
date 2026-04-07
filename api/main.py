@@ -1247,6 +1247,116 @@ async def post_podcast_takes(
     }
 
 
+# ── News Bundles ─────────────────────────────────────────────────────────────
+
+class NewsBundlePreview(BaseModel):
+    category: str = "general"   # general | business | tech | politics | gossip
+    count: int = 5
+    admin_key: str | None = None
+
+
+class NewsBundleTakeItem(BaseModel):
+    headline: str
+    context: str = ""
+    source_title: str = ""
+    source_url: str = ""
+    quality_score: int = 0
+
+
+class NewsBundlePost(BaseModel):
+    category: str = "general"
+    bundle_title: str
+    bundle_tag: str
+    takes: list[NewsBundleTakeItem]
+    admin_key: str | None = None
+
+
+@app.post("/news-bundles/preview")
+async def preview_news_bundle(
+    body: NewsBundlePreview,
+    request: Request,
+    current_user: User | None = Depends(get_current_user),
+):
+    """Fetch top news and extract takes — returns preview without creating observations."""
+    if not current_user and not body.admin_key:
+        raise HTTPException(401, "Not authenticated")
+    if body.admin_key and body.admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+
+    from news_service import fetch_hn_stories, extract_news_takes, make_bundle_tag, make_bundle_title
+
+    try:
+        stories = await fetch_hn_stories(count=30)
+    except Exception as e:
+        raise HTTPException(500, f"Failed to fetch news: {str(e)}")
+
+    if not stories:
+        raise HTTPException(500, "No stories returned from news source")
+
+    try:
+        takes = await extract_news_takes(stories, category=body.category, count=body.count)
+    except Exception as e:
+        raise HTTPException(500, f"Failed to extract takes: {str(e)}")
+
+    return {
+        "takes":        takes,
+        "bundle_tag":   make_bundle_tag(body.category),
+        "bundle_title": make_bundle_title(body.category),
+        "story_count":  len(stories),
+    }
+
+
+@app.post("/news-bundles/post-takes", status_code=202)
+async def post_news_bundle_takes(
+    body: NewsBundlePost,
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
+    current_user: User | None = Depends(get_current_user),
+):
+    """Create observations from a reviewed news bundle."""
+    if not current_user and not body.admin_key:
+        raise HTTPException(401, "Not authenticated")
+    if body.admin_key and body.admin_key != settings.google_api_key:
+        raise HTTPException(403, "Invalid admin key")
+    if not body.takes:
+        raise HTTPException(400, "No takes provided")
+
+    from news_service import CATEGORIES
+    import asyncio
+
+    user_id = current_user.id if current_user else None
+    instance_key = await get_instance_key(request)
+    category_label = CATEGORIES.get(body.category, "News")
+    created = []
+
+    for take in body.takes:
+        obs = Observation(
+            raw_input=take.headline,
+            input_type="text",
+            thesis=take.headline,
+            summary=take.context or None,
+            status="researching",
+            model_used=ACTIVE_MODEL,
+            user_id=user_id,
+            context=category_label,
+            episode_tag=body.bundle_tag,
+            episode_title=body.bundle_title,
+            sources=[{"url": take.source_url, "title": take.source_title}] if take.source_url else [],
+        )
+        db.add(obs)
+        await db.commit()
+        await db.refresh(obs)
+        asyncio.create_task(_run_steel_man_only(obs.id, instance_key))
+        created.append(obs.id)
+
+    return {
+        "bundle_tag":   body.bundle_tag,
+        "bundle_title": body.bundle_title,
+        "count":        len(created),
+        "observations": created,
+    }
+
+
 async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-takes"):
     """Run thesis formatting + steel man generation for podcast takes."""
     _, session_maker = get_instance_engine(instance_key)
