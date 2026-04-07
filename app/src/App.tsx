@@ -423,7 +423,7 @@ function getScoreTier(v: number): { label: string } {
 function FlameIcon({ size }: { size: number }) {
   return (
     <div style={{
-      fontSize: size * 1.15,
+      fontSize: size * 0.98,
       lineHeight: 1,
       transform: "translateY(-8%)",
       filter: "hue-rotate(285deg) saturate(2) brightness(1.1)",
