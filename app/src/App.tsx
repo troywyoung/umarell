@@ -495,7 +495,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
             <div style={{ fontSize: dim * 1.08, lineHeight: 1, userSelect: "none" }}>{emojiRef.current}</div>
           </div>
           <div style={{ position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", zIndex: 2, animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards" }}>
-            <p style={{ fontSize: 7, fontWeight: 800, color: "#FF00AE", margin: "3px 0 0", letterSpacing: 0.4, textTransform: "uppercase" }}>Hot Take</p>
+            <p style={{ fontSize: 6, fontWeight: 800, color: "#FF00AE", margin: "3px 0 0", letterSpacing: 0.3, textTransform: "uppercase", whiteSpace: "nowrap" }}>Hot Take</p>
           </div>
         </>
       )}
