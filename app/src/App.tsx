@@ -1271,9 +1271,9 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     </p>
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, flexShrink: 0 }}>
-                    <img src="/circles.png" style={{ width: 38, height: 38, objectFit: "contain" }} />
-                    <span style={{ fontSize: 8, fontWeight: 800, color: "var(--color-accent, #FF00AE)", letterSpacing: 0.4, textTransform: "uppercase" }}>
-                      Tap
+                    <img src="/circles.png" style={{ width: 44, height: 44, objectFit: "contain" }} />
+                    <span style={{ fontSize: 8, fontWeight: 800, color: "#3311FF", letterSpacing: 0.4, textTransform: "uppercase" }}>
+                      Expand
                     </span>
                   </div>
                 </div>
