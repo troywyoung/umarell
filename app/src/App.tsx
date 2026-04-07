@@ -945,6 +945,23 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       }}>
                         {obs.thesis || obs.raw_input}
                       </p>
+                      {/* Author link — news bundle cards only */}
+                      {obs.context && (obs.episode_tag?.startsWith('nyt-opinion') || obs.episode_tag?.startsWith('wsj-opinion')) && (() => {
+                        const sourceUrl = obs.sources?.[0]?.url;
+                        return (
+                          <a
+                            href={sourceUrl || '#'}
+                            target="_blank" rel="noopener noreferrer"
+                            onClick={e => e.stopPropagation()}
+                            style={{ display: "inline-flex", alignItems: "center", gap: 3, marginTop: 5, fontSize: 11, fontWeight: 600, color: "var(--color-accent, #FF00AE)", textDecoration: "underline", textDecorationColor: "rgba(255,0,174,0.4)", textUnderlineOffset: 2 }}
+                          >
+                            {obs.context}
+                            <svg width={9} height={9} viewBox="0 0 10 10" fill="none" style={{ flexShrink: 0, opacity: 0.7 }}>
+                              <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                          </a>
+                        );
+                      })()}
                     </div>
                   </div>
                 {yourTakeInput.has(obs.id) && (
@@ -1181,7 +1198,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const episodeUrl = first.sources?.find((s: {url: string; title: string}) => s.title === "episode")?.url || first.sources?.[0]?.url || null;
             const isMobile = window.innerWidth < 600;
             const title = first.episode_title || (first.episode_tag ? first.episode_tag.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase()) : null) || "Episode";
-            const cardBg = "var(--color-collection-card-bg, #F5F0E8)";
+            const isNewsBundleTag = tag.startsWith('nyt-opinion') || tag.startsWith('wsj-opinion');
+            const cardBg = isNewsBundleTag ? "#C4C0BA" : "var(--color-collection-card-bg, #F5F0E8)";
 
             const toggleExpand = (e: React.MouseEvent) => {
               e.stopPropagation();
