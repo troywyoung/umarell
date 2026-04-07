@@ -1208,7 +1208,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 method: 'PATCH',
                 headers: { Authorization: `Bearer ${localStorage.getItem('sm_token') || ''}` },
               });
-              fetchObservations();
+              onRefresh();
             };
 
             const toggleExpand = (e: React.MouseEvent) => {
