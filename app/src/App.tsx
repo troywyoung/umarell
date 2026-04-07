@@ -1174,7 +1174,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
           const renderEpisodeBundle = (tag: string, posts: Observation[]) => {
             const isExpanded = expandedEpisodes.has(tag);
-            const first = posts[0];
+            const orderedPosts = [...posts].sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+            const first = orderedPosts[0];
             const dateStr = new Date(first.created_at).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
             const podcastName = first.user_name || null;
             const episodeUrl = first.sources?.find((s: {url: string; title: string}) => s.title === "episode")?.url || first.sources?.[0]?.url || null;
@@ -1205,7 +1206,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                             : <span style={{ color: "var(--color-accent, #FF00AE)" }}>{podcastName}</span>
                         )}
                         <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>
-                          {podcastName ? "  ·  " : ""}{posts.length} takes · {dateStr}
+                          {podcastName ? "  ·  " : ""}{orderedPosts.length} takes · {dateStr}
                         </span>
                         <button
                           onClick={(e) => { e.stopPropagation(); setShowCollectionInfo(true); }}
@@ -1230,7 +1231,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   </div>
                   {/* Episode cards */}
                   <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
-                    {posts.map(obs => (
+                    {orderedPosts.map(obs => (
                       <div key={obs.id} style={{ marginBottom: 7 }}>
                         {renderCard(obs)}
                       </div>
@@ -1267,7 +1268,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       {title}
                     </p>
                     <p style={{ fontSize: 10, color: "rgba(26,26,26,0.4)", margin: "4px 0 0", letterSpacing: -0.1, fontWeight: 500 }}>
-                      {posts.length} hot take{posts.length !== 1 ? "s" : ""} · {dateStr}
+                      {orderedPosts.length} hot take{orderedPosts.length !== 1 ? "s" : ""} · {dateStr}
                     </p>
                   </div>
                   <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0.375, flexShrink: 0 }}>
