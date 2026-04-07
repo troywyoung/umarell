@@ -158,4 +158,4 @@ def make_bundle_title(source_key: str) -> str:
     source_label = SOURCES[source_key]["label"]
     now = datetime.now(timezone.utc)
     day = now.strftime("%a %b ") + str(now.day)   # "Mon Apr 7"
-    return f"{source_label} | {day}"
+    return f"{source_label} Takes | {day}"
