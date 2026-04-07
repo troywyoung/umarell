@@ -430,7 +430,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const circ = 2 * Math.PI * r;
   const PINK = "#FF00AE";
 
-  const HOT_EMOJIS = ["🥵","🤯","🔥","😤","💥","🫠","😈","☄️","🌋","🤬"];
+  const HOT_EMOJIS = ["🥵","🤯","🔥","😤","💥","🫠","😈","☄️","🌋","🤬","💣","🧨","⚡","😱","💀","🌪️","😡","💯","🤘","🃏"];
   const emojiRef = useRef(HOT_EMOJIS[Math.floor(Math.random() * HOT_EMOJIS.length)]);
   const badgeRef = useRef<HTMLDivElement>(null);
 
