@@ -430,6 +430,9 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const circ = 2 * Math.PI * r;
   const PINK = "#FF00AE";
 
+  const HOT_EMOJIS = ["🥵","🤯","🔥","😤","💥","🫠","😈","☄️","🌋","🤬"];
+  const emojiRef = useRef(HOT_EMOJIS[Math.floor(Math.random() * HOT_EMOJIS.length)]);
+
   const [displayVal, setDisplayVal] = useState(animate ? 0 : target);
   const [animPct, setAnimPct] = useState(animate ? 0 : target / 100);
   const [showEmoji, setShowEmoji] = useState(!animate && isHotTake);
@@ -471,8 +474,8 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
       </svg>
       <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
         {showEmoji ? (
-          <div style={{ animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards", fontSize: dim * 0.72, lineHeight: 1, userSelect: "none" }}>
-            🥵
+          <div style={{ animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards", fontSize: dim * 1.05, lineHeight: 1, userSelect: "none", position: "absolute" }}>
+            {emojiRef.current}
           </div>
         ) : (
           <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
