@@ -487,14 +487,17 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
           style={{ transition: showEmoji ? "stroke 0.4s ease, stroke-dasharray 0.4s ease" : "none" }} />
       </svg>
       <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        {!showEmoji && <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>}
+        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
       </div>
       {showEmoji && (
-        <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1, zIndex: 2, overflow: "visible", animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards" }}>
-          <div style={{ fontSize: dim * 0.65, lineHeight: 1, userSelect: "none" }}>{emojiRef.current}</div>
-          <span style={{ fontSize: dim * 0.175, fontWeight: 900, color: "#FF00AE", letterSpacing: 0.4, lineHeight: 1, textTransform: "uppercase" }}>Hot Take</span>
-          <span style={{ fontSize: dim * 0.22, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.3 }}>{target}</span>
-        </div>
+        <>
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2, animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards" }}>
+            <div style={{ fontSize: dim * 1.08, lineHeight: 1, userSelect: "none" }}>{emojiRef.current}</div>
+          </div>
+          <div style={{ position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", zIndex: 2, animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards" }}>
+            <p style={{ fontSize: 7, fontWeight: 800, color: "#FF00AE", margin: "3px 0 0", letterSpacing: 0.4, textTransform: "uppercase" }}>Hot Take</p>
+          </div>
+        </>
       )}
     </div>
   );
