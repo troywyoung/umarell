@@ -107,7 +107,7 @@ async def lifespan(app: FastAPI):
             ("is_hot_take", "BOOLEAN DEFAULT false"),
         ]:
             try:
-                await db.execute(text(f"ALTER TABLE observations ADD COLUMN IF NOT EXISTS {col} {definition}"))
+                await db.execute(text(f"ALTER TABLE observations ADD COLUMN {col} {definition}"))
                 await db.commit()
             except Exception:
                 await db.rollback()
@@ -360,7 +360,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
                 obs.evidence_type = meta.get("evidence_type")
                 obs.category = meta.get("category")
                 obs.brazen_score = meta.get("brazen_score")
-                obs.is_hot_take = bool((obs.score or 0) >= 57 and (obs.brazen_score or 0) >= 61)
+                obs.is_hot_take = bool((obs.score or 0) >= 74 and (obs.brazen_score or 0) >= 79)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1236,7 +1236,7 @@ async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-take
                 obs.evidence_type = meta.get("evidence_type")
                 obs.category = meta.get("category")
                 obs.brazen_score = meta.get("brazen_score")
-                obs.is_hot_take = bool((obs.score or 0) >= 57 and (obs.brazen_score or 0) >= 61)
+                obs.is_hot_take = bool((obs.score or 0) >= 74 and (obs.brazen_score or 0) >= 79)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1402,7 +1402,7 @@ async def rescore_all(body: RescoreBody, db: AsyncSession = Depends(get_db)):
                 obs.evidence_type = meta.get("evidence_type")
                 obs.category = meta.get("category")
                 obs.brazen_score = meta.get("brazen_score")
-                obs.is_hot_take = bool((obs.score or 0) >= 57 and (obs.brazen_score or 0) >= 61)
+                obs.is_hot_take = bool((obs.score or 0) >= 74 and (obs.brazen_score or 0) >= 79)
             scores_out.append(meta.get("score"))
             updated += 1
         except Exception as e:
