@@ -4,6 +4,7 @@ import { API as API_BASE } from '../config';
 interface NewsTake {
   headline: string;
   context: string;
+  author: string;
   source_title: string;
   source_url: string;
   quality_score: number;
@@ -11,25 +12,22 @@ interface NewsTake {
 
 type Step = 'form' | 'previewing' | 'preview' | 'posting' | 'done';
 
-const CATEGORIES = [
-  { value: 'general',  label: 'General News' },
-  { value: 'business', label: 'Business' },
-  { value: 'tech',     label: 'Tech' },
-  { value: 'politics', label: 'Politics' },
-  { value: 'gossip',   label: 'Gossip' },
+const SOURCES = [
+  { value: 'nyt-opinion', label: 'NYT Opinion' },
+  { value: 'wsj-opinion', label: 'WSJ Opinion' },
 ];
 
 export default function NewsBundleForm() {
-  const [category, setCategory]     = useState('general');
-  const [count, setCount]           = useState(5);
-  const [step, setStep]             = useState<Step>('form');
-  const [takes, setTakes]           = useState<NewsTake[]>([]);
+  const [source, setSource]           = useState('nyt-opinion');
+  const [count, setCount]             = useState(5);
+  const [step, setStep]               = useState<Step>('form');
+  const [takes, setTakes]             = useState<NewsTake[]>([]);
   const [selectedIndices, setSelectedIndices] = useState<Set<number>>(new Set());
-  const [bundleTag, setBundleTag]   = useState('');
+  const [bundleTag, setBundleTag]     = useState('');
   const [bundleTitle, setBundleTitle] = useState('');
-  const [storyCount, setStoryCount] = useState(0);
-  const [error, setError]           = useState<string | null>(null);
-  const [result, setResult]         = useState<any | null>(null);
+  const [storyCount, setStoryCount]   = useState(0);
+  const [error, setError]             = useState<string | null>(null);
+  const [result, setResult]           = useState<any | null>(null);
 
   const token = () => localStorage.getItem('sm_token') || '';
 
@@ -40,7 +38,7 @@ export default function NewsBundleForm() {
       const res = await fetch(`${API_BASE}/news-bundles/preview`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token()}` },
-        body: JSON.stringify({ category, count }),
+        body: JSON.stringify({ source, count }),
       });
       if (!res.ok) {
         const err = await res.json();
@@ -67,7 +65,7 @@ export default function NewsBundleForm() {
       const res = await fetch(`${API_BASE}/news-bundles/post-takes`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token()}` },
-        body: JSON.stringify({ category, bundle_tag: bundleTag, bundle_title: bundleTitle, takes: selected }),
+        body: JSON.stringify({ source, bundle_tag: bundleTag, bundle_title: bundleTitle, takes: selected }),
       });
       if (!res.ok) {
         const err = await res.json();
@@ -135,7 +133,7 @@ export default function NewsBundleForm() {
           <div>
             <div style={{ fontWeight: 700, fontSize: 16 }}>{bundleTitle}</div>
             <div style={{ fontSize: 12, color: '#888', marginTop: 2 }}>
-              {takes.length} takes extracted from {storyCount} stories · {selectedIndices.size} selected
+              {storyCount} pieces in feed · {takes.length} takes extracted · {selectedIndices.size} selected
             </div>
           </div>
           <button onClick={() => setStep('form')} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: 12, color: '#888', fontWeight: 600 }}>
@@ -143,15 +141,9 @@ export default function NewsBundleForm() {
           </button>
         </div>
 
-        {/* Editable bundle title */}
         <div style={{ marginBottom: 16 }}>
           <label style={labelStyle}>Bundle Label</label>
-          <input
-            type="text"
-            value={bundleTitle}
-            onChange={e => setBundleTitle(e.target.value)}
-            style={inputStyle}
-          />
+          <input type="text" value={bundleTitle} onChange={e => setBundleTitle(e.target.value)} style={inputStyle} />
         </div>
 
         {error && (
@@ -172,31 +164,29 @@ export default function NewsBundleForm() {
                 transition: 'all 0.15s',
               }}
             >
-              <input
-                type="checkbox"
-                checked={selectedIndices.has(i)}
-                onChange={() => toggleTake(i)}
-                style={{ marginTop: 3, flexShrink: 0 }}
-              />
+              <input type="checkbox" checked={selectedIndices.has(i)} onChange={() => toggleTake(i)} style={{ marginTop: 3, flexShrink: 0 }} />
               <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontWeight: 700, fontSize: 14, color: '#1A1A1A', marginBottom: 4, lineHeight: 1.3 }}>
+                <div style={{ fontWeight: 700, fontSize: 14, color: '#1A1A1A', marginBottom: 3, lineHeight: 1.3 }}>
                   {take.headline}
                 </div>
+                {take.author && (
+                  <div style={{ fontSize: 12, fontWeight: 600, color: '#FF00AE', marginBottom: 4 }}>
+                    {take.author}
+                  </div>
+                )}
                 {take.context && (
                   <div style={{ fontSize: 13, color: '#555', lineHeight: 1.5, marginBottom: 4 }}>{take.context}</div>
                 )}
                 {take.source_title && (
                   <a
-                    href={take.source_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={take.source_url} target="_blank" rel="noopener noreferrer"
                     onClick={e => e.stopPropagation()}
-                    style={{ fontSize: 11, color: '#888', textDecoration: 'none', borderBottom: '1px solid #DDD' }}
+                    style={{ fontSize: 11, color: '#AAA', textDecoration: 'none', borderBottom: '1px solid #EEE' }}
                   >
                     {take.source_title}
                   </a>
                 )}
-                <div style={{ marginTop: 6, display: 'flex', gap: 12, fontSize: 11, color: '#AAA' }}>
+                <div style={{ marginTop: 6, fontSize: 11, color: '#AAA' }}>
                   <span style={{ background: '#F0F0ED', padding: '1px 6px', borderRadius: 10, color: '#666' }}>
                     {take.quality_score}
                   </span>
@@ -219,18 +209,8 @@ export default function NewsBundleForm() {
           >
             {step === 'posting' ? 'Posting…' : `Post ${selectedIndices.size} Take${selectedIndices.size !== 1 ? 's' : ''}`}
           </button>
-          <button
-            onClick={() => setSelectedIndices(new Set(takes.map((_, i) => i)))}
-            style={{ padding: '11px 16px', fontSize: 13, background: '#F0F0ED', color: '#555', border: 'none', borderRadius: 8, cursor: 'pointer', fontWeight: 600 }}
-          >
-            All
-          </button>
-          <button
-            onClick={() => setSelectedIndices(new Set())}
-            style={{ padding: '11px 16px', fontSize: 13, background: '#F0F0ED', color: '#555', border: 'none', borderRadius: 8, cursor: 'pointer', fontWeight: 600 }}
-          >
-            None
-          </button>
+          <button onClick={() => setSelectedIndices(new Set(takes.map((_, i) => i)))} style={{ padding: '11px 16px', fontSize: 13, background: '#F0F0ED', color: '#555', border: 'none', borderRadius: 8, cursor: 'pointer', fontWeight: 600 }}>All</button>
+          <button onClick={() => setSelectedIndices(new Set())} style={{ padding: '11px 16px', fontSize: 13, background: '#F0F0ED', color: '#555', border: 'none', borderRadius: 8, cursor: 'pointer', fontWeight: 600 }}>None</button>
         </div>
       </div>
     );
@@ -238,33 +218,22 @@ export default function NewsBundleForm() {
 
   // ── Form ──────────────────────────────────────────────────────────────────
   return (
-    <div style={{ maxWidth: 640 }}>
+    <div style={{ maxWidth: 540 }}>
       <p style={{ fontSize: 13, color: '#888', marginBottom: 24, lineHeight: 1.6 }}>
-        Pulls top stories from Hacker News, extracts sharp takes, and lets you review before posting as a news bundle.
+        Pulls today's opinion pieces from NYT or WSJ, distills each author's argument into a sharp take, and lets you review before posting as a bundle.
       </p>
 
       <form onSubmit={e => { e.preventDefault(); generatePreview(); }} style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
           <div>
-            <label style={labelStyle}>Category</label>
-            <select
-              value={category}
-              onChange={e => setCategory(e.target.value)}
-              style={{ ...inputStyle, background: '#FFF' }}
-            >
-              {CATEGORIES.map(c => (
-                <option key={c.value} value={c.value}>{c.label}</option>
-              ))}
+            <label style={labelStyle}>Source</label>
+            <select value={source} onChange={e => setSource(e.target.value)} style={{ ...inputStyle, background: '#FFF' }}>
+              {SOURCES.map(s => <option key={s.value} value={s.value}>{s.label}</option>)}
             </select>
           </div>
           <div>
             <label style={labelStyle}>Number of Takes</label>
-            <input
-              type="number" value={count}
-              onChange={e => setCount(parseInt(e.target.value, 10))}
-              min={3} max={8} style={inputStyle}
-            />
+            <input type="number" value={count} onChange={e => setCount(parseInt(e.target.value, 10))} min={3} max={8} style={inputStyle} />
           </div>
         </div>
 
@@ -275,8 +244,7 @@ export default function NewsBundleForm() {
         )}
 
         <button
-          type="submit"
-          disabled={step === 'previewing'}
+          type="submit" disabled={step === 'previewing'}
           style={{
             padding: '11px 0', fontSize: 14, fontWeight: 700,
             background: step === 'previewing' ? '#CCC' : '#FF00AE',
@@ -284,7 +252,7 @@ export default function NewsBundleForm() {
             cursor: step === 'previewing' ? 'not-allowed' : 'pointer',
           }}
         >
-          {step === 'previewing' ? 'Fetching news & extracting takes…' : 'Generate Preview'}
+          {step === 'previewing' ? 'Fetching & extracting takes…' : 'Generate Preview'}
         </button>
       </form>
     </div>

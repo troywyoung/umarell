@@ -1,133 +1,106 @@
 """
-news_service.py — fetch top news stories and extract takes for news bundles.
+news_service.py — fetch opinion pieces from NYT and WSJ RSS feeds and extract takes.
 """
 import asyncio
 import json
 import re
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 
 import httpx
 
-CATEGORIES = {
-    "general":  "News",
-    "business": "Business",
-    "tech":     "Tech",
-    "politics": "Politics",
-    "gossip":   "Gossip",
+SOURCES = {
+    "nyt-opinion": {
+        "label":    "NYT Opinion",
+        "feed_url": "https://rss.nytimes.com/services/xml/rss/nyt/Opinion.xml",
+        "tag_prefix": "nyt-opinion",
+    },
+    "wsj-opinion": {
+        "label":    "WSJ Opinion",
+        "feed_url": "https://feeds.content.dowjones.io/public/rss/RSSOpinion",
+        "tag_prefix": "wsj-opinion",
+    },
 }
 
-# Search terms used to pull category-relevant stories from HN Algolia
-CATEGORY_QUERIES = {
-    "general":  None,   # use HN top stories — most general news surfaces there
-    "business": "business funding acquisition revenue earnings merger IPO layoffs",
-    "tech":     "AI software startup engineering developer product launch",
-    "politics": "election policy government regulation congress senate president",
-    "gossip":   "celebrity entertainment scandal drama controversy",
-}
+_DC  = "http://purl.org/dc/elements/1.1/"
+_CONTENT = "http://purl.org/rss/1.0/modules/content/"
 
 
-async def _fetch_hn_top(client: httpx.AsyncClient, count: int) -> list[dict]:
-    """Fetch HN top stories by ID list."""
-    resp = await client.get("https://hacker-news.firebaseio.com/v0/topstories.json")
-    ids = resp.json()[:count * 2]  # fetch extra, some may be non-stories
-    tasks = [client.get(f"https://hacker-news.firebaseio.com/v0/item/{sid}.json") for sid in ids[:count]]
-    responses = await asyncio.gather(*tasks, return_exceptions=True)
-    stories = []
-    for r in responses:
-        if isinstance(r, Exception):
-            continue
-        try:
-            item = r.json()
-            if item and item.get("type") == "story" and item.get("title"):
-                stories.append({
-                    "title":    item["title"],
-                    "url":      item.get("url") or f"https://news.ycombinator.com/item?id={item['id']}",
-                    "score":    item.get("score", 0),
-                    "comments": item.get("descendants", 0),
-                })
-        except Exception:
-            continue
-    return stories
-
-
-async def _fetch_hn_search(client: httpx.AsyncClient, query: str, count: int) -> list[dict]:
-    """Search HN via Algolia for category-relevant recent stories."""
-    import time
-    yesterday = int(time.time()) - 86400
-    resp = await client.get(
-        "https://hn.algolia.com/api/v1/search",
-        params={
-            "query": query,
-            "tags": "story",
-            "hitsPerPage": count,
-            "numericFilters": f"created_at_i>{yesterday},points>10",
-        },
-    )
-    data = resp.json()
-    stories = []
-    for hit in data.get("hits", []):
-        title = hit.get("title", "").strip()
-        url = hit.get("url") or f"https://news.ycombinator.com/item?id={hit.get('objectID', '')}"
-        if title:
-            stories.append({
-                "title":    title,
-                "url":      url,
-                "score":    hit.get("points", 0),
-                "comments": hit.get("num_comments", 0),
+def _parse_rss(xml_text: str) -> list[dict]:
+    """Parse RSS XML into a list of story dicts."""
+    root = ET.fromstring(xml_text)
+    channel = root.find("channel")
+    if channel is None:
+        return []
+    items = []
+    for item in channel.findall("item"):
+        title       = (item.findtext("title") or "").strip()
+        url         = (item.findtext("link") or "").strip()
+        description = (item.findtext("description") or "").strip()
+        author      = (item.findtext(f"{{{_DC}}}creator") or "").strip()
+        pub_date    = (item.findtext("pubDate") or "").strip()
+        if title and url:
+            items.append({
+                "title":       title,
+                "url":         url,
+                "description": description,
+                "author":      author,
+                "pub_date":    pub_date,
             })
-    return stories
+    return items
 
 
-async def fetch_hn_stories(count: int = 30, category: str = "general") -> list[dict]:
-    """Fetch stories relevant to the given category."""
-    query = CATEGORY_QUERIES.get(category)
+async def fetch_opinion_stories(source_key: str) -> list[dict]:
+    """Fetch today's opinion pieces from the given source."""
+    source = SOURCES.get(source_key)
+    if not source:
+        raise ValueError(f"Unknown source: {source_key}")
+
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; UmarellBot/1.0)"}
     async with httpx.AsyncClient(timeout=15.0) as client:
-        if query:
-            # Primary: Algolia search for category-specific stories
-            stories = await _fetch_hn_search(client, query, count)
-            # Supplement with top stories if search returns too few
-            if len(stories) < count // 2:
-                top = await _fetch_hn_top(client, count)
-                seen = {s["url"] for s in stories}
-                stories += [s for s in top if s["url"] not in seen]
-        else:
-            stories = await _fetch_hn_top(client, count)
-    return stories[:count]
+        resp = await client.get(source["feed_url"], headers=headers)
+        resp.raise_for_status()
+
+    return _parse_rss(resp.text)
 
 
-async def extract_news_takes(stories: list[dict], category: str, count: int = 5) -> list[dict]:
-    """Extract sharp takes from news headlines using the LLM."""
+async def extract_opinion_takes(stories: list[dict], source_key: str, count: int = 5) -> list[dict]:
+    """Distill each opinion piece into a sharp take, preserving author attribution."""
     from pipeline import _call
 
-    category_label = CATEGORIES.get(category, "News")
-    headlines_text = "\n".join(
-        f'- "{s["title"]}" ({s["url"]})' for s in stories[:30]
+    source_label = SOURCES[source_key]["label"]
+
+    stories_text = "\n".join(
+        f'- Author: {s["author"] or "Editorial Board"}\n'
+        f'  Headline: {s["title"]}\n'
+        f'  Summary: {s["description"][:200] if s["description"] else "(no summary)"}\n'
+        f'  URL: {s["url"]}'
+        for s in stories[:30]
     )
 
     system = (
-        "You are extracting sharp, opinionated takes from news headlines. "
-        "A take is not a summary — it's an argument. It says WHY something matters, "
-        "WHAT it actually means, or WHAT will happen next. You always return valid JSON."
+        "You are distilling opinion journalism into sharp, arguable takes. "
+        "Each take captures the author's central argument as a single punchy thesis. "
+        "You always return valid JSON."
     )
 
-    user_prompt = f"""Here are today's news stories about {category_label}:
+    user_prompt = f"""Here are today's {source_label} opinion pieces:
 
-{headlines_text}
+{stories_text}
 
-Extract the {count} most take-worthy stories from this list. \
-IMPORTANT: Only include stories that are clearly about {category_label}. \
-Skip any story that doesn't fit the category — return fewer takes rather than include off-topic ones. \
-For each, write a sharp take — not a restatement of the headline, \
-but an argument about what it means or implies.
+Pick the {count} most take-worthy pieces. For each, distill the author's central argument into a sharp, \
+specific, one-sentence thesis — the kind of claim that would make someone stop and react. \
+Do not just restate the headline. Find the actual argument underneath it.
 
-Each take must have:
-- headline: the take as a sharp, arguable thesis (your words, not the original headline)
-- context: 1-2 sentences of supporting reasoning or implication
-- source_title: the original story title
-- source_url: the original URL
-- quality_score: 0-100 (how specific, falsifiable, and argumentative is this take?)
+Each item must have:
+- headline: the distilled thesis as a sharp, arguable one-liner (your words, capturing their argument)
+- context: 1 sentence of supporting reasoning or stakes
+- author: the author name exactly as given (use "Editorial Board" if blank)
+- source_title: the original article headline
+- source_url: the article URL
+- quality_score: 0–100 (how specific, falsifiable, and argumentative is this take?)
 
-Only include takes where quality_score >= 65.
+Only include pieces where quality_score >= 60.
 
 Return JSON only: {{"takes": [...]}}"""
 
@@ -155,16 +128,18 @@ Return JSON only: {{"takes": [...]}}"""
             continue
         headline     = (take.get("headline") or "").strip()
         context      = (take.get("context") or "").strip()
+        author       = (take.get("author") or "Editorial Board").strip()
         source_title = (take.get("source_title") or "").strip()
         source_url   = (take.get("source_url") or "").strip()
         qs           = take.get("quality_score", 0)
         if not headline or not source_url:
             continue
-        if not isinstance(qs, (int, float)) or qs < 65:
+        if not isinstance(qs, (int, float)) or qs < 60:
             continue
         filtered.append({
             "headline":     headline,
             "context":      context,
+            "author":       author,
             "source_title": source_title,
             "source_url":   source_url,
             "quality_score": int(qs),
@@ -173,14 +148,14 @@ Return JSON only: {{"takes": [...]}}"""
     return filtered[:count]
 
 
-def make_bundle_tag(category: str) -> str:
+def make_bundle_tag(source_key: str) -> str:
     now = datetime.now(timezone.utc)
-    return f"news-{category}-{now.strftime('%Y-%m-%d-%H%M')}"
+    prefix = SOURCES[source_key]["tag_prefix"]
+    return f"{prefix}-{now.strftime('%Y-%m-%d')}"
 
 
-def make_bundle_title(category: str) -> str:
-    category_label = CATEGORIES.get(category, "News")
+def make_bundle_title(source_key: str) -> str:
+    source_label = SOURCES[source_key]["label"]
     now = datetime.now(timezone.utc)
-    day  = now.strftime("%a %b ") + str(now.day)   # "Mon Apr 7"
-    hour = now.strftime("%I:%M %p").lstrip("0")    # "2:30 PM"
-    return f"{category_label} Takes | {day} | {hour}"
+    day = now.strftime("%a %b ") + str(now.day)   # "Mon Apr 7"
+    return f"{source_label} | {day}"

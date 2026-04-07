@@ -1250,7 +1250,7 @@ async def post_podcast_takes(
 # ── News Bundles ─────────────────────────────────────────────────────────────
 
 class NewsBundlePreview(BaseModel):
-    category: str = "general"   # general | business | tech | politics | gossip
+    source: str = "nyt-opinion"   # nyt-opinion | wsj-opinion
     count: int = 5
     admin_key: str | None = None
 
@@ -1258,13 +1258,14 @@ class NewsBundlePreview(BaseModel):
 class NewsBundleTakeItem(BaseModel):
     headline: str
     context: str = ""
+    author: str = ""
     source_title: str = ""
     source_url: str = ""
     quality_score: int = 0
 
 
 class NewsBundlePost(BaseModel):
-    category: str = "general"
+    source: str = "nyt-opinion"
     bundle_title: str
     bundle_tag: str
     takes: list[NewsBundleTakeItem]
@@ -1277,31 +1278,31 @@ async def preview_news_bundle(
     request: Request,
     current_user: User | None = Depends(get_current_user),
 ):
-    """Fetch top news and extract takes — returns preview without creating observations."""
+    """Fetch opinion pieces and extract takes — returns preview without creating observations."""
     if not current_user and not body.admin_key:
         raise HTTPException(401, "Not authenticated")
     if body.admin_key and body.admin_key != settings.google_api_key:
         raise HTTPException(403, "Invalid admin key")
 
-    from news_service import fetch_hn_stories, extract_news_takes, make_bundle_tag, make_bundle_title
+    from news_service import fetch_opinion_stories, extract_opinion_takes, make_bundle_tag, make_bundle_title
 
     try:
-        stories = await fetch_hn_stories(count=30, category=body.category)
+        stories = await fetch_opinion_stories(source_key=body.source)
     except Exception as e:
-        raise HTTPException(500, f"Failed to fetch news: {str(e)}")
+        raise HTTPException(500, f"Failed to fetch feed: {str(e)}")
 
     if not stories:
-        raise HTTPException(500, "No stories returned from news source")
+        raise HTTPException(500, "No stories returned from feed")
 
     try:
-        takes = await extract_news_takes(stories, category=body.category, count=body.count)
+        takes = await extract_opinion_takes(stories, source_key=body.source, count=body.count)
     except Exception as e:
         raise HTTPException(500, f"Failed to extract takes: {str(e)}")
 
     return {
         "takes":        takes,
-        "bundle_tag":   make_bundle_tag(body.category),
-        "bundle_title": make_bundle_title(body.category),
+        "bundle_tag":   make_bundle_tag(body.source),
+        "bundle_title": make_bundle_title(body.source),
         "story_count":  len(stories),
     }
 
@@ -1321,12 +1322,11 @@ async def post_news_bundle_takes(
     if not body.takes:
         raise HTTPException(400, "No takes provided")
 
-    from news_service import CATEGORIES
+    from news_service import SOURCES
     import asyncio
 
     user_id = current_user.id if current_user else None
     instance_key = await get_instance_key(request)
-    category_label = CATEGORIES.get(body.category, "News")
     created = []
 
     for take in body.takes:
@@ -1338,7 +1338,7 @@ async def post_news_bundle_takes(
             status="researching",
             model_used=ACTIVE_MODEL,
             user_id=user_id,
-            context=category_label,
+            context=take.author or None,   # author per card, like speaker for podcasts
             episode_tag=body.bundle_tag,
             episode_title=body.bundle_title,
             sources=[{"url": take.source_url, "title": take.source_title}] if take.source_url else [],
