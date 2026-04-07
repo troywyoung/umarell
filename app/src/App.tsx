@@ -1208,9 +1208,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 method: 'PATCH',
                 headers: { Authorization: `Bearer ${localStorage.getItem('sm_token') || ''}` },
               });
-              setPosts(prev => prev.map(o =>
-                o.episode_tag === tag ? { ...o, pinned: !isBundlePinned } : o
-              ));
+              fetchObservations();
             };
 
             const toggleExpand = (e: React.MouseEvent) => {
