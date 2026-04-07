@@ -955,7 +955,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                             onClick={e => e.stopPropagation()}
                             style={{ display: "inline-flex", alignItems: "center", gap: 3, marginTop: 5, fontSize: 11, fontWeight: 600, color: "var(--color-accent, #FF00AE)", textDecoration: "underline", textDecorationColor: "rgba(255,0,174,0.4)", textUnderlineOffset: 2 }}
                           >
-                            {obs.context}
+                            <span style={{ fontSize: 9 }}>📰</span>{obs.context}
                             <svg width={9} height={9} viewBox="0 0 10 10" fill="none" style={{ flexShrink: 0, opacity: 0.7 }}>
                               <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
@@ -1199,7 +1199,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const isMobile = window.innerWidth < 600;
             const title = first.episode_title || (first.episode_tag ? first.episode_tag.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase()) : null) || "Episode";
             const isNewsBundleTag = tag.startsWith('nyt-opinion') || tag.startsWith('wsj-opinion');
-            const cardBg = isNewsBundleTag ? "#D8D3CB" : "var(--color-collection-card-bg, #F5F0E8)";
+            const cardBg = "var(--color-collection-card-bg, #F5F0E8)";
             const isBundlePinned = orderedPosts.some(o => o.pinned);
 
             const toggleBundlePin = async (e: React.MouseEvent) => {
@@ -1230,8 +1230,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", letterSpacing: -0.2, lineHeight: 1, display: "flex", alignItems: "center", gap: 5 }}>
                         {podcastName && (
                           episodeUrl
-                            ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "underline" }}>{podcastName}</a>
-                            : <span style={{ color: "var(--color-accent, #FF00AE)" }}>{podcastName}</span>
+                            ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "underline", display: "inline-flex", alignItems: "center", gap: 3 }}><span style={{ fontSize: 8 }}>{isNewsBundleTag ? "📰" : "🎙️"}</span>{podcastName}</a>
+                            : <span style={{ color: "var(--color-accent, #FF00AE)", display: "inline-flex", alignItems: "center", gap: 3 }}><span style={{ fontSize: 8 }}>{isNewsBundleTag ? "📰" : "🎙️"}</span>{podcastName}</span>
                         )}
                         <span style={{ color: "rgba(255,255,255,0.35)", fontWeight: 400 }}>
                           {podcastName ? "  ·  " : ""}{orderedPosts.length} takes · {dateStr}
@@ -1297,8 +1297,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 >
                   <div style={{ flex: 1, minWidth: 0 }}>
                     {podcastName && (
-                      <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", color: "var(--color-accent, #FF00AE)", letterSpacing: -0.1, lineHeight: 1, textTransform: "uppercase" }}>
-                        {podcastName}
+                      <p style={{ fontSize: isMobile ? 8 : 9, fontWeight: 700, margin: "0 0 3px", color: "var(--color-accent, #FF00AE)", letterSpacing: -0.1, lineHeight: 1, textTransform: "uppercase", display: "flex", alignItems: "center", gap: 3 }}>
+                        <span style={{ fontSize: 8 }}>{isNewsBundleTag ? "📰" : "🎙️"}</span>{podcastName}
                       </p>
                     )}
                     <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "var(--color-dark-text, #1A1A1A)", margin: 0, letterSpacing: -0.3, lineHeight: 1.25, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const }}>
