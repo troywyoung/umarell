@@ -1494,6 +1494,12 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           }
         `}</style>
       </button>}
+
+      {/* Legal footer */}
+      <div style={{ textAlign: "center", padding: "40px 0 100px" }}>
+        <a href="https://umarell-production.up.railway.app/legal/privacy" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none", marginRight: 14 }}>Privacy Policy</a>
+        <a href="https://umarell-production.up.railway.app/legal/terms" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none" }}>Terms of Service</a>
+      </div>
     </div>
   );
 }
@@ -2590,11 +2596,11 @@ function EmbedSheet({ obsId, onClose }: { obsId: string; onClose: () => void }) 
   return (
     <div
       onClick={onClose}
-      style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.65)", zIndex: 2000, display: "flex", alignItems: "flex-end", justifyContent: "center" }}
+      style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.65)", zIndex: 2000, display: "flex", alignItems: "center", justifyContent: "center", padding: 20 }}
     >
       <div
         onClick={e => e.stopPropagation()}
-        style={{ background: "#1C1C1E", borderRadius: "16px 16px 0 0", padding: "20px 20px 32px", width: "100%", maxWidth: 560, boxSizing: "border-box" }}
+        style={{ background: "#1C1C1E", borderRadius: 16, padding: "20px 20px 24px", width: "100%", maxWidth: 520, boxSizing: "border-box", boxShadow: "0 20px 60px rgba(0,0,0,0.5)" }}
       >
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
           <p style={{ fontSize: 15, fontWeight: 800, color: "#FFF", margin: 0, letterSpacing: -0.3 }}>Embed this take</p>

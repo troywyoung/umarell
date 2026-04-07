@@ -455,6 +455,78 @@ async def auth_me(user: User = Depends(require_user)):
     return {"id": user.id, "name": user.name, "avatar": user.avatar_url, "email": user.email, "is_admin": _is_admin(user)}
 
 
+# ─── Legal pages ─────────────────────────────────────────────────────────────
+
+_LEGAL_STYLE = """
+  body { font-family: -apple-system, sans-serif; max-width: 680px; margin: 60px auto; padding: 0 24px 80px; color: #1a1a1a; line-height: 1.7; }
+  h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 6px; }
+  h2 { font-size: 16px; font-weight: 700; margin: 32px 0 8px; }
+  p, li { font-size: 15px; color: #444; }
+  a { color: #FF00AE; }
+  .meta { font-size: 13px; color: #999; margin-bottom: 40px; }
+  nav { margin-bottom: 40px; font-size: 13px; }
+"""
+
+@app.get("/legal/privacy", include_in_schema=False)
+async def privacy_policy():
+    from fastapi.responses import HTMLResponse
+    html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<title>Privacy Policy — hottake</title><style>{_LEGAL_STYLE}</style></head><body>
+<nav><a href="/">← hottake</a></nav>
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: April 7, 2026</p>
+
+<h2>What we collect</h2>
+<p>When you use hottake, we collect your phone number if you opt in to SMS notifications, and any takes or ideas you submit. We also collect standard server logs (IP address, timestamp, browser type) for security and debugging.</p>
+
+<h2>How we use it</h2>
+<p>Your phone number is used only to send you take ratings and prompts you have opted into. We do not sell, share, or transfer your number to third parties for marketing. Takes you submit may be displayed anonymously within the app.</p>
+
+<h2>SMS messaging</h2>
+<p>By providing your phone number and opting in, you consent to receive SMS messages from hottake via Twilio. Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe at any time. Reply HELP for help.</p>
+
+<h2>Data retention</h2>
+<p>We retain your data for as long as your account is active. You may request deletion by contacting us at the email below.</p>
+
+<h2>Third parties</h2>
+<p>We use Twilio for SMS delivery and Railway for hosting. We use Anthropic's API for content processing. None of these parties receive your personal data beyond what is necessary to provide the service.</p>
+
+<h2>Contact</h2>
+<p>Questions? Email <a href="mailto:troyyoung@gmail.com">troyyoung@gmail.com</a>.</p>
+</body></html>"""
+    return HTMLResponse(content=html)
+
+
+@app.get("/legal/terms", include_in_schema=False)
+async def terms_of_service():
+    from fastapi.responses import HTMLResponse
+    html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+<title>Terms of Service — hottake</title><style>{_LEGAL_STYLE}</style></head><body>
+<nav><a href="/">← hottake</a></nav>
+<h1>Terms of Service</h1>
+<p class="meta">Last updated: April 7, 2026</p>
+
+<h2>About the service</h2>
+<p>hottake is a personal media tool for submitting, rating, and sharing opinion takes. It is provided as-is for personal and hobbyist use.</p>
+
+<h2>SMS opt-in</h2>
+<p>By entering your phone number and opting in, you agree to receive SMS messages from hottake. You can opt out at any time by replying STOP to any message. For help, reply HELP or email <a href="mailto:troyyoung@gmail.com">troyyoung@gmail.com</a>. Message and data rates may apply.</p>
+
+<h2>User conduct</h2>
+<p>You agree not to submit content that is illegal, threatening, or designed to harass others. We reserve the right to remove any content at our discretion.</p>
+
+<h2>Limitation of liability</h2>
+<p>hottake is provided without warranty of any kind. We are not liable for any damages arising from use of the service.</p>
+
+<h2>Changes</h2>
+<p>We may update these terms at any time. Continued use of the service constitutes acceptance of the updated terms.</p>
+
+<h2>Contact</h2>
+<p>Questions? Email <a href="mailto:troyyoung@gmail.com">troyyoung@gmail.com</a>.</p>
+</body></html>"""
+    return HTMLResponse(content=html)
+
+
 # ─── Public card endpoints ───────────────────────────────────────────────────
 
 @app.get("/cards/{obs_id}/image.png", include_in_schema=False)
