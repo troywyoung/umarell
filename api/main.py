@@ -271,7 +271,7 @@ async def instance_routing_middleware(request: Request, call_next):
     if match:
         potential_instance = match.group(1)
         # Exclude meta routes that aren't instance-specific
-        if potential_instance not in ["admin", "auth", "health", "instance", "observations", "takes", "episodes", "webhook", "podcasts"]:
+        if potential_instance not in ["admin", "auth", "health", "instance", "observations", "takes", "episodes", "webhook", "podcasts", "news-bundles"]:
             request.state.instance_key = potential_instance
             # Rewrite the path to strip the instance prefix so routes match normally
             new_path = match.group(2) or "/"
