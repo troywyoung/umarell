@@ -843,8 +843,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           // All posts in chronological order — pinned posts always float to top
           const rankScore = (o: Observation) => {
             if (o.pinned) return Infinity;
-            // Hot takes always rank near the top, just below pinned
-            if (o.is_hot_take) return 9999 + (o.score || 0);
             const hoursAgo = (Date.now() - new Date(o.created_at).getTime()) / 3600000;
             const takes = (yourTakeMap[o.id] || []).length;
             const challenges = (challengeMap.get(o.id) || []).length;
