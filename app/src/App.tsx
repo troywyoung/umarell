@@ -1271,7 +1271,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       {orderedPosts.length} hot take{orderedPosts.length !== 1 ? "s" : ""} · {dateStr}
                     </p>
                   </div>
-                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0.375, flexShrink: 0 }}>
+                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0, flexShrink: 0 }}>
                     <img src="/circles.png" style={{ width: 44, height: 44, objectFit: "contain" }} />
                     <span style={{ fontSize: 6.5, fontWeight: 800, color: "#3311FF", letterSpacing: 0.4, textTransform: "uppercase" }}>
                       Expand
