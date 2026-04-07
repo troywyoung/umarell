@@ -472,7 +472,7 @@ async def privacy_policy():
     from fastapi.responses import HTMLResponse
     html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 <title>Privacy Policy — hottake</title><style>{_LEGAL_STYLE}</style></head><body>
-<nav><a href="/">← hottake</a></nav>
+<nav><a href="https://bighottake.com">← hottake</a></nav>
 <h1>Privacy Policy</h1>
 <p class="meta">Last updated: April 7, 2026</p>
 
@@ -502,7 +502,7 @@ async def terms_of_service():
     from fastapi.responses import HTMLResponse
     html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 <title>Terms of Service — hottake</title><style>{_LEGAL_STYLE}</style></head><body>
-<nav><a href="/">← hottake</a></nav>
+<nav><a href="https://bighottake.com">← hottake</a></nav>
 <h1>Terms of Service</h1>
 <p class="meta">Last updated: April 7, 2026</p>
 
@@ -561,7 +561,7 @@ async def card_page(obs_id: str, db: AsyncSession = Depends(get_instance_db_sess
     obs = result.scalar_one_or_none()
     if not obs:
         raise HTTPException(404, "Card not found")
-    base = "https://umarell-production.up.railway.app"
+    base = "https://bighottake.com"
     title   = (obs.thesis or obs.raw_input or "")[:120]
     img_url = f"{base}/cards/{obs_id}/image.png"
     app_url = f"{base}/?card={obs_id}"

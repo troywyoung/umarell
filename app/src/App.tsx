@@ -1497,8 +1497,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
       {/* Legal footer */}
       <div style={{ textAlign: "center", padding: "40px 0 100px" }}>
-        <a href="https://umarell-production.up.railway.app/legal/privacy" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none", marginRight: 14 }}>Privacy Policy</a>
-        <a href="https://umarell-production.up.railway.app/legal/terms" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none" }}>Terms of Service</a>
+        <a href="https://bighottake.com/legal/privacy" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none", marginRight: 14 }}>Privacy Policy</a>
+        <a href="https://bighottake.com/legal/terms" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none" }}>Terms of Service</a>
       </div>
     </div>
   );
@@ -2563,7 +2563,7 @@ function EmbedTrigger({ obsId }: { obsId: string }) {
 function EmbedSheet({ obsId, onClose }: { obsId: string; onClose: () => void }) {
   const [tab, setTab] = useState<"web" | "email">("web");
   const [copied, setCopied] = useState(false);
-  const base = "https://umarell-production.up.railway.app";
+  const base = "https://bighottake.com";
   const cardUrl = `${base}/cards/${obsId}`;
   const imgUrl  = `${base}/cards/${obsId}/image.png`;
 
