@@ -433,7 +433,7 @@ function getScoreTier(v: number): { label: string } {
   return { label: "Undeniable" };
 }
 
-function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false, obsId, hideLabel = false, emojiDelay = 360, emojiAnim = "hotGrow", emojiDuration = "0.55s", emojiEasing = "cubic-bezier(0.34,1.56,0.64,1)" }: { value?: number; size?: "sm" | "md" | "lg" | "xl"; dark?: boolean; animate?: boolean; isHotTake?: boolean; obsId?: string; hideLabel?: boolean; emojiDelay?: number; emojiAnim?: string; emojiDuration?: string; emojiEasing?: string }) {
+function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false, obsId, hideLabel = false, emojiDelay = 360, emojiAnim = "hotGrow", emojiDuration = "0.55s", emojiEasing = "cubic-bezier(0.34,1.56,0.64,1)", skipObserver = false }: { value?: number; size?: "sm" | "md" | "lg" | "xl"; dark?: boolean; animate?: boolean; isHotTake?: boolean; obsId?: string; hideLabel?: boolean; emojiDelay?: number; emojiAnim?: string; emojiDuration?: string; emojiEasing?: string; skipObserver?: boolean }) {
   if (value == null) return null;
   const target = Math.round(value);
   const accent = getScoreColor(target);
@@ -456,6 +456,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const startRef = useRef<number | null>(null);
 
   useEffect(() => {
+    if (skipObserver) { setTimeout(() => setInView(true), 120); return; }
     const el = badgeRef.current;
     if (!el) return;
     const obs = new IntersectionObserver(
@@ -469,7 +470,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
     );
     obs.observe(el);
     return () => obs.disconnect();
-  }, []);
+  }, [skipObserver]);
 
   useEffect(() => {
     if (!inView) return;
@@ -510,10 +511,10 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
       </div>
       {showEmoji && (
         <>
-          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} forwards` }}>
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2, opacity: 0, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} 16ms forwards`, willChange: "transform, opacity" }}>
             <div style={{ fontSize: dim * 1.08, lineHeight: 1, userSelect: "none" }}>{emojiRef.current}</div>
           </div>
-          <div style={{ position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", zIndex: 2, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} forwards` }}>
+          <div style={{ position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", zIndex: 2, opacity: 0, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} 16ms forwards` }}>
             {!hideLabel && <p style={{ fontSize: 6, fontWeight: 800, color: "#FF00AE", margin: "3px 0 0", letterSpacing: 0.3, textTransform: "uppercase", whiteSpace: "nowrap" }}>Hot Take</p>}
           </div>
         </>
@@ -1979,7 +1980,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", flex: "0 0 auto" }}>
-                <ScoreBadge value={obs.score} size={isMobile ? "lg" : "xl"} animate isHotTake={obs.is_hot_take} obsId={obs.id} hideLabel emojiDelay={1000} emojiAnim="detailEmojiPop" emojiDuration="0.9s" emojiEasing="ease-out" />
+                <ScoreBadge value={obs.score} size={isMobile ? "lg" : "xl"} animate isHotTake={obs.is_hot_take} obsId={obs.id} hideLabel emojiDelay={1000} emojiAnim="detailEmojiPop" emojiDuration="0.9s" emojiEasing="ease-out" skipObserver />
                 <span style={{ fontSize: isMobile ? 14 : 17, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
                   {obs.is_hot_take ? "Hot Take" : tier.label}
                 </span>
