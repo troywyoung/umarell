@@ -2044,22 +2044,24 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", flex: "1 1 auto", minWidth: 0 }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "lg" : "xl"} animate isHotTake={obs.is_hot_take} obsId={obs.id} hideLabel emojiDelay={1000} emojiAnim="detailEmojiPop" emojiDuration="0.9s" emojiEasing="ease-out" skipObserver />
-                <span style={{ fontSize: isMobile ? 12 : 15, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.2, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards", wordBreak: "break-word" }}>
-                  {obs.is_hot_take ? "Hot Take" : tier.label}
-                </span>
-                <button
-                  onClick={() => setShowScoreInfo(sv => !sv)}
-                  style={{
-                    background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
-                    border: "1px solid rgba(255,255,255,0.12)",
-                    borderRadius: "50%", width: 20, height: 20,
-                    display: "flex", alignItems: "center", justifyContent: "center",
-                    cursor: "pointer", padding: 0, flexShrink: 0,
-                    color: "rgba(255,255,255,0.4)", fontSize: 11, fontWeight: 800,
-                    WebkitTapHighlightColor: "transparent",
-                    opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards",
-                  }}
-                >?</button>
+                <div style={{ display: "flex", alignItems: "center", gap: 6, minWidth: 0 }}>
+                  <span style={{ fontSize: isMobile ? 12 : 15, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.2, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards", wordBreak: "break-word" }}>
+                    {obs.is_hot_take ? "Hot Take" : tier.label}
+                  </span>
+                  <button
+                    onClick={() => setShowScoreInfo(sv => !sv)}
+                    style={{
+                      background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
+                      border: "1px solid rgba(255,255,255,0.12)",
+                      borderRadius: "50%", width: 20, height: 20,
+                      display: "flex", alignItems: "center", justifyContent: "center",
+                      cursor: "pointer", padding: 0, flexShrink: 0,
+                      color: "rgba(255,255,255,0.4)", fontSize: 11, fontWeight: 800,
+                      WebkitTapHighlightColor: "transparent",
+                      opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards",
+                    }}
+                  >?</button>
+                </div>
                 {showScoreInfo && (isMobile ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} isHotTake={obs.is_hot_take} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} isHotTake={obs.is_hot_take} />)}
               </div>
               <button
