@@ -1498,8 +1498,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
       {/* Legal footer */}
       <div style={{ textAlign: "center", padding: "40px 0 100px" }}>
-        <button onClick={() => onLegal("privacy")} style={{ background: "none", border: "none", fontSize: 10, color: "rgba(255,255,255,0.2)", cursor: "pointer", fontFamily: "inherit", marginRight: 14 }}>Privacy Policy</button>
-        <button onClick={() => onLegal("terms")} style={{ background: "none", border: "none", fontSize: 10, color: "rgba(255,255,255,0.2)", cursor: "pointer", fontFamily: "inherit" }}>Terms of Service</button>
+        <a href="/privacy" onClick={e => { e.preventDefault(); onLegal("privacy"); }} style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none", marginRight: 14 }}>Privacy Policy</a>
+        <a href="/terms" onClick={e => { e.preventDefault(); onLegal("terms"); }} style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none" }}>Terms of Service</a>
       </div>
     </div>
   );
@@ -2816,7 +2816,13 @@ export default function App() {
   };
 
   const { observations, loading, fetchObservations, submitObservation, editObservation, pollObservation, requestCounterpoint, requestPvaTake, deleteObservation } = useObservations();
-  const [view, setView] = useState<View>("home");
+  const initView = (): View => {
+    const p = window.location.pathname;
+    if (p === "/privacy") return "privacy";
+    if (p === "/terms") return "terms";
+    return "home";
+  };
+  const [view, setView] = useState<View>(initView);
   const [selectedObs, setSelectedObs] = useState<Observation | null>(null);
   const [outputKey, setOutputKey] = useState(0);
   const [challengingObs, setChallengingObs] = useState<Observation | null>(null);
@@ -2946,7 +2952,7 @@ export default function App() {
   }
 
   if (view === "privacy" || view === "terms") {
-    return <LegalView page={view} onBack={() => setView("home")} />;
+    return <LegalView page={view} onBack={() => { window.history.pushState(null, "", "/"); setView("home"); }} />;
   }
 
   if (view === "about") {
@@ -3002,7 +3008,7 @@ export default function App() {
       onAbout={() => setView("about")}
       onOpenAdmin={() => setView("admin")}
       onRefresh={fetchObservations}
-      onLegal={(page) => setView(page)}
+      onLegal={(page) => { window.history.pushState(null, "", `/${page}`); setView(page); }}
     />
   );
 }
