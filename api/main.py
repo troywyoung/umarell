@@ -1286,7 +1286,7 @@ async def preview_news_bundle(
     from news_service import fetch_hn_stories, extract_news_takes, make_bundle_tag, make_bundle_title
 
     try:
-        stories = await fetch_hn_stories(count=30)
+        stories = await fetch_hn_stories(count=30, category=body.category)
     except Exception as e:
         raise HTTPException(500, f"Failed to fetch news: {str(e)}")
 
