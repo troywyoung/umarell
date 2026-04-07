@@ -420,20 +420,6 @@ function getScoreTier(v: number): { label: string } {
   return { label: "Undeniable" };
 }
 
-function FlameIcon({ size }: { size: number }) {
-  return (
-    <div style={{
-      fontSize: size * 0.98,
-      lineHeight: 1,
-      transform: "translateY(-8%)",
-      filter: "hue-rotate(285deg) saturate(2) brightness(1.1)",
-      userSelect: "none",
-    }}>
-      🔥
-    </div>
-  );
-}
-
 function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean; animate?: boolean; isHotTake?: boolean }) {
   if (value == null) return null;
   const target = Math.round(value);
@@ -442,17 +428,15 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const fontSize = size === "sm" ? 14 : size === "lg" ? 17 : 11;
   const r = (dim - 4) / 2;
   const circ = 2 * Math.PI * r;
-  const PINK = "#FF00AE";
 
   const [displayVal, setDisplayVal] = useState(animate ? 0 : target);
   const [animPct, setAnimPct] = useState(animate ? 0 : target / 100);
-  const [showFlame, setShowFlame] = useState(!animate && isHotTake);
   const animRef = useRef<number | null>(null);
   const startRef = useRef<number | null>(null);
 
   useEffect(() => {
-    if (!animate) { setDisplayVal(target); setAnimPct(target / 100); setShowFlame(isHotTake); return; }
-    setDisplayVal(0); setAnimPct(0); setShowFlame(false);
+    if (!animate) { setDisplayVal(target); setAnimPct(target / 100); return; }
+    setDisplayVal(0); setAnimPct(0);
     startRef.current = null;
     const duration = 1440;
     const tick = (ts: number) => {
@@ -462,36 +446,48 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
       const eased = 1 - Math.pow(1 - progress, 3);
       setDisplayVal(Math.round(eased * target));
       setAnimPct(eased * target / 100);
-      if (progress < 1) {
-        animRef.current = requestAnimationFrame(tick);
-      } else if (isHotTake) {
-        setTimeout(() => setShowFlame(true), 300);
-      }
+      if (progress < 1) animRef.current = requestAnimationFrame(tick);
     };
     animRef.current = requestAnimationFrame(tick);
     return () => { if (animRef.current) cancelAnimationFrame(animRef.current); };
-  }, [animate, target, isHotTake]);
+  }, [animate, target]);
 
-  const currentColor = showFlame ? PINK : (animate ? getScoreColor(displayVal) : accent);
-  const pct = showFlame ? 1 : (animate ? animPct : target / 100);
-  const flameSize = dim;
+  // Hot take: fire ring replaces the progress circle, number stays inside
+  if (isHotTake) {
+    const count = 10;
+    const ringR = dim * 0.42;
+    const emojiSz = dim * 0.30;
+    const cx = dim / 2;
+    return (
+      <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0, overflow: "visible" }}>
+        {Array.from({ length: count }).map((_, i) => {
+          const angleDeg = (i * 360 / count) - 90;
+          const angleRad = angleDeg * Math.PI / 180;
+          const x = cx + ringR * Math.cos(angleRad) - emojiSz / 2;
+          const y = cx + ringR * Math.sin(angleRad) - emojiSz / 2;
+          return (
+            <div key={i} style={{ position: "absolute", left: x, top: y, fontSize: emojiSz, lineHeight: 1, userSelect: "none" }}>🔥</div>
+          );
+        })}
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+        </div>
+      </div>
+    );
+  }
+
+  const currentColor = animate ? getScoreColor(displayVal) : accent;
+  const pct = animate ? animPct : target / 100;
 
   return (
-    <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0, overflow: "visible" }}>
-      <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)", transition: showFlame ? "stroke 0.4s ease" : "none" }}>
+    <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
+      <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)" }}>
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" ? 4.4 : 3.4} />
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" ? 4.4 : 3.4}
-          strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round"
-          style={{ transition: showFlame ? "stroke 0.4s ease, stroke-dasharray 0.4s ease" : "none" }} />
+          strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round" />
       </svg>
       <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        {showFlame ? (
-          <div style={{ animation: "flameGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards" }}>
-            <FlameIcon size={flameSize} />
-          </div>
-        ) : (
-          <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
-        )}
+        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
       </div>
     </div>
   );
@@ -803,7 +799,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         @keyframes recPulse { 0%,100% { opacity:1; } 50% { opacity:0.2; } }
         @keyframes yellowPulse { 0%,100% { opacity:1; } 50% { opacity:0.25; } }
         @keyframes scoreLabelFadeIn { from { opacity:0; transform:translateX(-6px); } to { opacity:1; transform:translateX(0); } }
-        @keyframes flameGrow { 0% { opacity:0; transform:scale(0.2); } 60% { opacity:1; transform:scale(1.35); } 100% { opacity:1; transform:scale(1); } }
+
       `}</style>
 
 <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
