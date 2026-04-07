@@ -1986,7 +1986,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           )}
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          {obs.user_name && <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{obs.user_name}</span>}
+          <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>hottakes</span>
           {isOwner && (
             deleteConfirm ? (
               <>
