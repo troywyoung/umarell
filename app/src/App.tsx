@@ -913,7 +913,19 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
               >
                 {(obs.user_name || authUser?.is_admin) && (
                   <p style={{ fontSize: window.innerWidth < 600 ? 6 : 9, fontWeight: 600, color: isCollection ? "var(--color-accent, #FF00AE)" : "#999", margin: 0, padding: "8px 12px 0", letterSpacing: -0.2, lineHeight: 1, display: "flex", alignItems: "center", gap: 4 }}>
-                    {obs.user_name && <span>{obs.user_name}</span>}
+                    {obs.user_name && (() => {
+                      const isNewsCard = obs.episode_tag?.startsWith('nyt-opinion') || obs.episode_tag?.startsWith('wsj-opinion');
+                      const storyUrl = isNewsCard ? obs.sources?.[0]?.url : null;
+                      return storyUrl ? (
+                        <a href={storyUrl} target="_blank" rel="noopener noreferrer" onClick={e => e.stopPropagation()}
+                          style={{ color: "var(--color-accent, #FF00AE)", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 3 }}>
+                          {obs.user_name}
+                          <svg width={8} height={8} viewBox="0 0 10 10" fill="none" style={{ flexShrink: 0, opacity: 0.65 }}>
+                            <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round"/>
+                          </svg>
+                        </a>
+                      ) : <span>{obs.user_name}</span>;
+                    })()}
                     {obs.episode_tag && (() => { const eps = topLevel.filter((o: Observation) => o.episode_tag === obs.episode_tag); const idx = eps.findIndex((o: Observation) => o.id === obs.id) + 1; return idx > 0 ? <span style={{ fontWeight: 400, color: "#999", opacity: 0.6 }}>({idx}/{eps.length})</span> : null; })()}
                     {authUser?.is_admin && (
                       <button
@@ -945,23 +957,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       }}>
                         {obs.thesis || obs.raw_input}
                       </p>
-                      {/* Author link — news bundle cards only */}
-                      {obs.context && (obs.episode_tag?.startsWith('nyt-opinion') || obs.episode_tag?.startsWith('wsj-opinion')) && (() => {
-                        const sourceUrl = obs.sources?.[0]?.url;
-                        return (
-                          <a
-                            href={sourceUrl || '#'}
-                            target="_blank" rel="noopener noreferrer"
-                            onClick={e => e.stopPropagation()}
-                            style={{ display: "inline-flex", alignItems: "center", gap: 4, marginTop: 6, fontSize: 11, fontWeight: 700, color: "var(--color-accent, #FF00AE)", textDecoration: "underline", textDecorationColor: "rgba(255,0,174,0.45)", textUnderlineOffset: 2 }}
-                          >
-                            {obs.context}
-                            <svg width={9} height={9} viewBox="0 0 10 10" fill="none" style={{ flexShrink: 0, opacity: 0.65 }}>
-                              <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                          </a>
-                        );
-                      })()}
                     </div>
                   </div>
                 {yourTakeInput.has(obs.id) && (
