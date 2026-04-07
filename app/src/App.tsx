@@ -432,14 +432,28 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
 
   const HOT_EMOJIS = ["🥵","🤯","🔥","😤","💥","🫠","😈","☄️","🌋","🤬"];
   const emojiRef = useRef(HOT_EMOJIS[Math.floor(Math.random() * HOT_EMOJIS.length)]);
+  const badgeRef = useRef<HTMLDivElement>(null);
 
-  const [displayVal, setDisplayVal] = useState(animate ? 0 : target);
-  const [animPct, setAnimPct] = useState(animate ? 0 : target / 100);
-  const [showEmoji, setShowEmoji] = useState(!animate && isHotTake);
+  const [displayVal, setDisplayVal] = useState(0);
+  const [animPct, setAnimPct] = useState(0);
+  const [showEmoji, setShowEmoji] = useState(false);
+  const [inView, setInView] = useState(false);
   const animRef = useRef<number | null>(null);
   const startRef = useRef<number | null>(null);
 
   useEffect(() => {
+    const el = badgeRef.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { setInView(true); obs.disconnect(); } },
+      { threshold: 0.3 }
+    );
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (!inView) return;
     if (!animate) { setDisplayVal(target); setAnimPct(target / 100); setShowEmoji(isHotTake); return; }
     setDisplayVal(0); setAnimPct(0); setShowEmoji(false);
     startRef.current = null;
@@ -459,13 +473,13 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
     };
     animRef.current = requestAnimationFrame(tick);
     return () => { if (animRef.current) cancelAnimationFrame(animRef.current); };
-  }, [animate, target, isHotTake]);
+  }, [animate, target, isHotTake, inView]);
 
   const currentColor = showEmoji ? PINK : (animate ? getScoreColor(displayVal) : accent);
   const pct = showEmoji ? 1 : (animate ? animPct : target / 100);
 
   return (
-    <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
+    <div ref={badgeRef} style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
       <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)", transition: showEmoji ? "stroke 0.4s ease" : "none" }}>
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" ? 4.4 : 3.4} />
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" ? 4.4 : 3.4}
@@ -473,14 +487,15 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
           style={{ transition: showEmoji ? "stroke 0.4s ease, stroke-dasharray 0.4s ease" : "none" }} />
       </svg>
       <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        {showEmoji ? (
-          <div style={{ animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards", fontSize: dim * 1.05, lineHeight: 1, userSelect: "none", position: "absolute" }}>
+        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+      </div>
+      {showEmoji && (
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2 }}>
+          <div style={{ animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards", fontSize: dim * 1.08, lineHeight: 1, userSelect: "none" }}>
             {emojiRef.current}
           </div>
-        ) : (
-          <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }
