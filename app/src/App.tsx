@@ -818,7 +818,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
       {/* Branding */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "44px 0 2px" }}>
-        <span style={{ fontSize: 27, fontWeight: 900, letterSpacing: "var(--letter-spacing-headline, -1.5px)", fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}><span style={{ color: "var(--color-accent, #FF00AE)" }}>hot</span><span style={{ color: "#FFF" }}>take</span></span>
+        <span style={{ fontSize: 27, fontWeight: 400, letterSpacing: "var(--letter-spacing-headline, -1.5px)", fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}><span style={{ color: "var(--color-accent, #FF00AE)" }}>hot</span><span style={{ color: "#FFF" }}>take</span></span>
       </div>
 
       <style>{`
