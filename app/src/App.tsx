@@ -953,11 +953,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                             href={sourceUrl || '#'}
                             target="_blank" rel="noopener noreferrer"
                             onClick={e => e.stopPropagation()}
-                            style={{ display: "inline-flex", alignItems: "center", gap: 3, marginTop: 5, fontSize: 11, fontWeight: 600, color: "var(--color-accent, #FF00AE)", textDecoration: "underline", textDecorationColor: "rgba(255,0,174,0.4)", textUnderlineOffset: 2 }}
+                            style={{ display: "inline-flex", alignItems: "center", gap: 4, marginTop: 6, fontSize: 11, fontWeight: 700, color: "var(--color-accent, #FF00AE)", textDecoration: "underline", textDecorationColor: "rgba(255,0,174,0.45)", textUnderlineOffset: 2 }}
                           >
-                            <span style={{ fontSize: 9 }}>📰</span>{obs.context}
-                            <svg width={9} height={9} viewBox="0 0 10 10" fill="none" style={{ flexShrink: 0, opacity: 0.7 }}>
-                              <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round"/>
+                            {obs.context}
+                            <svg width={9} height={9} viewBox="0 0 10 10" fill="none" style={{ flexShrink: 0, opacity: 0.65 }}>
+                              <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth={1.6} strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
                           </a>
                         );
@@ -1246,8 +1246,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       </p>
                       <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "rgba(255,255,255,0.85)", margin: 0, letterSpacing: -0.3, lineHeight: 1.2 }}>
                         {episodeUrl
-                          ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none" }}>{title}</a>
-                          : title}
+                          ? <a href={episodeUrl} target="_blank" rel="noopener noreferrer" style={{ color: "rgba(255,255,255,0.85)", textDecoration: "none" }}>{isNewsBundleTag ? "📰 " : ""}{title}</a>
+                          : <>{isNewsBundleTag ? "📰 " : ""}{title}</>}
                       </p>
                     </div>
                     <div style={{ display: "flex", gap: 6, alignItems: "center", flexShrink: 0 }}>
@@ -1302,7 +1302,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       </p>
                     )}
                     <p style={{ fontSize: isMobile ? 13 : 12, fontWeight: 700, color: "var(--color-dark-text, #1A1A1A)", margin: 0, letterSpacing: -0.3, lineHeight: 1.25, overflow: "hidden", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical" as const }}>
-                      {title}
+                      {isNewsBundleTag ? "📰 " : ""}{title}
                     </p>
                     <p style={{ fontSize: 10, color: "rgba(26,26,26,0.4)", margin: "4px 0 0", letterSpacing: -0.1, fontWeight: 500 }}>
                       {orderedPosts.length} hot take{orderedPosts.length !== 1 ? "s" : ""} · {dateStr}
