@@ -1180,10 +1180,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             );
           };
 
-          // Build episode bundles — pinned posts are excluded and render standalone
+          // Build episode bundles — pinned bundles stay together and float to top
           const episodePostsMap = new Map<string, Observation[]>();
           filteredPosts.forEach(o => {
-            if (!o.episode_tag || o.pinned) return;
+            if (!o.episode_tag) return;
             const g = episodePostsMap.get(o.episode_tag) || [];
             g.push(o);
             episodePostsMap.set(o.episode_tag, g);
@@ -1199,7 +1199,19 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             const isMobile = window.innerWidth < 600;
             const title = first.episode_title || (first.episode_tag ? first.episode_tag.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase()) : null) || "Episode";
             const isNewsBundleTag = tag.startsWith('nyt-opinion') || tag.startsWith('wsj-opinion');
-            const cardBg = isNewsBundleTag ? "#C4C0BA" : "var(--color-collection-card-bg, #F5F0E8)";
+            const cardBg = isNewsBundleTag ? "#D8D3CB" : "var(--color-collection-card-bg, #F5F0E8)";
+            const isBundlePinned = orderedPosts.some(o => o.pinned);
+
+            const toggleBundlePin = async (e: React.MouseEvent) => {
+              e.stopPropagation();
+              await fetch(`${API}/episodes/${encodeURIComponent(tag)}/pin`, {
+                method: 'PATCH',
+                headers: { Authorization: `Bearer ${localStorage.getItem('sm_token') || ''}` },
+              });
+              setPosts(prev => prev.map(o =>
+                o.episode_tag === tag ? { ...o, pinned: !isBundlePinned } : o
+              ));
+            };
 
             const toggleExpand = (e: React.MouseEvent) => {
               e.stopPropagation();
@@ -1240,12 +1252,21 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                           : title}
                       </p>
                     </div>
-                    <button
-                      onClick={toggleExpand}
-                      style={{ background: "none", border: "1px solid rgba(255,255,255,0.15)", borderRadius: 20, padding: "3px 10px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.45)", cursor: "pointer", flexShrink: 0, letterSpacing: 0.2, WebkitTapHighlightColor: "transparent" }}
-                    >
-                      ↑ Collapse
-                    </button>
+                    <div style={{ display: "flex", gap: 6, alignItems: "center", flexShrink: 0 }}>
+                      {authUser?.is_admin && (
+                        <button
+                          onClick={toggleBundlePin}
+                          style={{ background: "none", border: "none", padding: "3px 6px", fontSize: 14, cursor: "pointer", opacity: isBundlePinned ? 1 : 0.35, WebkitTapHighlightColor: "transparent" }}
+                          title={isBundlePinned ? "Unpin bundle" : "Pin bundle to top"}
+                        >📌</button>
+                      )}
+                      <button
+                        onClick={toggleExpand}
+                        style={{ background: "none", border: "1px solid rgba(255,255,255,0.15)", borderRadius: 20, padding: "3px 10px", fontSize: 10, fontWeight: 700, color: "rgba(255,255,255,0.45)", cursor: "pointer", letterSpacing: 0.2, WebkitTapHighlightColor: "transparent" }}
+                      >
+                        ↑ Collapse
+                      </button>
+                    </div>
                   </div>
                   {/* Episode cards */}
                   <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
@@ -1272,7 +1293,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                   style={{
                     position: "relative", borderRadius: 8, background: cardBg,
                     boxShadow: "0 2px 10px rgba(0,0,0,0.12)", cursor: "pointer",
-                    padding: "12px 14px", display: "flex", alignItems: "center", gap: 12,
+                    padding: "12px 14px", display: "flex", alignItems: "flex-start", gap: 12,
                     WebkitTapHighlightColor: "transparent",
                   }}
                 >
@@ -1289,11 +1310,17 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       {orderedPosts.length} hot take{orderedPosts.length !== 1 ? "s" : ""} · {dateStr}
                     </p>
                   </div>
-                  <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0, flexShrink: 0 }}>
-                    <img src="/circles.png" style={{ width: 44, height: 44, objectFit: "contain", filter: "sepia(1) saturate(0.2) brightness(0.92)" }} />
-                    <span style={{ fontSize: 6.5, fontWeight: 800, color: "#C0AD93", letterSpacing: 0.4, textTransform: "uppercase", marginTop: -6 }}>
+                  <div style={{ flexShrink: 0, paddingTop: 2, display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 6 }}>
+                    <span style={{ display: "inline-flex", alignItems: "center", gap: 4, border: "1px solid rgba(192,173,147,0.55)", borderRadius: 20, padding: "3px 10px", fontSize: 9, fontWeight: 800, color: "#B8A98C", letterSpacing: 0.3, textTransform: "uppercase" }}>
                       Expand
                     </span>
+                    {authUser?.is_admin && (
+                      <button
+                        onClick={toggleBundlePin}
+                        style={{ background: "none", border: "none", padding: 0, fontSize: 13, cursor: "pointer", opacity: isBundlePinned ? 1 : 0.3, WebkitTapHighlightColor: "transparent" }}
+                        title={isBundlePinned ? "Unpin bundle" : "Pin bundle to top"}
+                      >📌</button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -1302,7 +1329,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
           const renderedEpisodeTags = new Set<string>();
           const renderFeedItem = (obs: Observation) => {
-            if (!obs.episode_tag || obs.pinned) return renderPost(obs);
+            if (!obs.episode_tag) return renderPost(obs);
             if (renderedEpisodeTags.has(obs.episode_tag)) return null;
             renderedEpisodeTags.add(obs.episode_tag);
             const posts = episodePostsMap.get(obs.episode_tag) || [obs];
