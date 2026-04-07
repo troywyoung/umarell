@@ -1986,7 +1986,11 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           )}
         </div>
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>hottakes</span>
+          {(() => {
+            const isNewsCard = obs.episode_tag?.startsWith('nyt-opinion') || obs.episode_tag?.startsWith('wsj-opinion');
+            const label = isNewsCard ? 'hottakes' : obs.user_name;
+            return label ? <span style={{ fontSize: 12, fontWeight: 600, color: "#AAA" }}>{label}</span> : null;
+          })()}
           {isOwner && (
             deleteConfirm ? (
               <>
