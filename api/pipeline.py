@@ -581,17 +581,23 @@ SCORING SCALE:
 0–14   — Not a take at all. Pure fact, pure observation, or incoherent.
 
 CALIBRATION EXAMPLES — match your scores to these:
-- "The core AI business models are undefendable — cheap energy and commoditization will destroy their moats." → 85 (sharp, specific mechanism, directly challengeable)
-- "Bitcoin will go to zero because of its massive energy reliance." → 82 (specific claim, falsifiable, has a mechanism, contrarian)
-- "Every major ad holding company will be gone within 8 years." → 75 (bold, specific, falsifiable, challenges incumbent power)
-- "No media operator has ever genuinely benefited from taking VC money." → 72 (strong point, arguable, some hyperbole but earns it)
-- "Social media has increased political polarization." → 58 (decent take but now mainstream — no longer challenging consensus)
-- "Podcasting rewards authenticity over production quality." → 45 (plausible but vague — what does 'rewards' mean? No mechanism)
-- "AI is going to change everything." → 12 (not a take — too vague to argue or falsify)
-- "Regular sleep of 7–9 hours improves cognitive performance." → 8 (established science, nothing to argue)
+- "The core AI business models are undefendable — cheap energy and commoditization will destroy their moats." → 86 (sharp, specific mechanism, directly challengeable)
+- "Bitcoin will go to zero because of its massive energy reliance." → 83 (specific claim, falsifiable, has a mechanism, contrarian)
+- "SpaceX has made every other launch provider permanently irrelevant." → 79 (specific, bold, arguable — but slightly over-stated, one counterexample weakens it)
+- "Every major ad holding company will be gone within 8 years." → 74 (bold, specific, falsifiable, but no named mechanism for how)
+- "No media operator has ever genuinely benefited from taking VC money." → 69 (strong point, arguable, but counterexamples exist and weaken the "ever")
+- "Social media has increased political polarization." → 57 (decent take but now mainstream — no longer challenging real consensus)
+- "Podcasting rewards authenticity over production quality." → 44 (plausible but vague — what does 'rewards' mean? No mechanism)
+- "AI is going to change everything." → 11 (not a take — too vague to argue or falsify)
+- "Regular sleep of 7–9 hours improves cognitive performance." → 7 (established science, nothing to argue)
 - "Apples are a type of fruit." → 2 (pure fact, not a take)
 
-Use the FULL range. Most takes land between 30–80. Reserve 85+ for truly exceptional takes.
+DISTRIBUTION RULES — follow these strictly:
+- Do not cluster scores. A score of 78 should be as rare as 71 or 84.
+- Avoid round numbers and band midpoints (75, 80 are red flags — only use them if nothing else fits).
+- Commit to a specific number. If a take feels like "somewhere in the 70s", decide exactly where: is it closer to 72 or 77 or 79?
+- Strong takes that lack a named mechanism or have an obvious counterexample belong in the 65–74 range, not 78+.
+- Reserve 80+ for takes with both a specific claim AND a clear "because" that's hard to dismiss.
 Penalize vagueness and pure assertion hard. Reward specificity and falsifiability even when the underlying claim seems unlikely.
 Hyperbole for effect is fine — score the underlying argument, not the literal wording.
 If an image is provided, use it as context for the claim being made.
