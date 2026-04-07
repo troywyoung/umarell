@@ -427,32 +427,22 @@ function FlameIcon({ size }: { size: number }) {
         <clipPath id="flame-badge-clip">
           <circle cx="24" cy="24" r="24" />
         </clipPath>
-        <radialGradient id="flame-grad" cx="50%" cy="80%" r="60%">
-          <stop offset="0%" stopColor="#FFB3E6" />
-          <stop offset="45%" stopColor="#FF3DB4" />
-          <stop offset="100%" stopColor="#FF00AE" />
-        </radialGradient>
+        <linearGradient id="flame-pink" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0%" stopColor="#FF00AE" />
+          <stop offset="100%" stopColor="#FFB3E6" />
+        </linearGradient>
       </defs>
-      {/* Outer flame — recognizable teardrop/flame silhouette */}
-      <path
-        d="M24 4 C24 4 18 12 16 18 C14 24 16 28 14 32 C12 36 9 38 9 42 C9 45.3 13.5 48 24 48 C34.5 48 39 45.3 39 42 C39 38 36 36 34 32 C32 28 34 24 32 18 C30 12 24 4 24 4 Z"
-        fill="url(#flame-grad)"
-        clipPath="url(#flame-badge-clip)"
-      />
-      {/* Left tongue */}
-      <path
-        d="M24 4 C24 4 14 14 13 22 C12 28 15 30 14 34 C13.2 37 11 39 11 42 C11 43 12 44 13 44.5 C10 42 9 40 9 38 C9 32 14 28 14 22 C14 16 18 8 24 4 Z"
-        fill="#FF69C8"
-        opacity="0.5"
-        clipPath="url(#flame-badge-clip)"
-      />
-      {/* Inner bright core */}
-      <path
-        d="M24 20 C24 20 20 26 20 31 C20 35.4 21.8 38 24 38 C26.2 38 28 35.4 28 31 C28 26 24 20 24 20 Z"
-        fill="#FFD6F0"
-        opacity="0.9"
-        clipPath="url(#flame-badge-clip)"
-      />
+      {/* 5 tribal flame tongues — each 8px wide, 2px gaps between */}
+      <path d="M0,48 C1,36 2,24 3,20 C3.5,14 4,12 4,12 C4.5,12 5,14 5,20 C6,24 7,36 8,48 Z"
+        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
+      <path d="M10,48 C11,36 12,24 13,14 C13.5,8 14,4 14,4 C14.5,4 15,8 15,14 C16,24 17,36 18,48 Z"
+        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
+      <path d="M20,48 C21,36 22,24 23,12 C23.5,6 24,2 24,2 C24.5,2 25,6 25,12 C26,24 27,36 28,48 Z"
+        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
+      <path d="M30,48 C31,36 32,24 33,14 C33.5,8 34,4 34,4 C34.5,4 35,8 35,14 C36,24 37,36 38,48 Z"
+        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
+      <path d="M40,48 C41,36 42,24 43,20 C43.5,14 44,12 44,12 C44.5,12 45,14 45,20 C46,24 47,36 48,48 Z"
+        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
     </svg>
   );
 }
