@@ -422,28 +422,15 @@ function getScoreTier(v: number): { label: string } {
 
 function FlameIcon({ size }: { size: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 48 48" fill="none">
-      <defs>
-        <clipPath id="flame-badge-clip">
-          <circle cx="24" cy="24" r="24" />
-        </clipPath>
-        <linearGradient id="flame-pink" x1="0" y1="1" x2="0" y2="0">
-          <stop offset="0%" stopColor="#FF00AE" />
-          <stop offset="100%" stopColor="#FFB3E6" />
-        </linearGradient>
-      </defs>
-      {/* 5 tribal flame tongues — each 8px wide, 2px gaps between */}
-      <path d="M0,48 C1,36 2,24 3,20 C3.5,14 4,12 4,12 C4.5,12 5,14 5,20 C6,24 7,36 8,48 Z"
-        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
-      <path d="M10,48 C11,36 12,24 13,14 C13.5,8 14,4 14,4 C14.5,4 15,8 15,14 C16,24 17,36 18,48 Z"
-        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
-      <path d="M20,48 C21,36 22,24 23,12 C23.5,6 24,2 24,2 C24.5,2 25,6 25,12 C26,24 27,36 28,48 Z"
-        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
-      <path d="M30,48 C31,36 32,24 33,14 C33.5,8 34,4 34,4 C34.5,4 35,8 35,14 C36,24 37,36 38,48 Z"
-        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
-      <path d="M40,48 C41,36 42,24 43,20 C43.5,14 44,12 44,12 C44.5,12 45,14 45,20 C46,24 47,36 48,48 Z"
-        fill="url(#flame-pink)" clipPath="url(#flame-badge-clip)" />
-    </svg>
+    <div style={{
+      fontSize: size * 1.15,
+      lineHeight: 1,
+      transform: "translateY(-8%)",
+      filter: "hue-rotate(285deg) saturate(2) brightness(1.1)",
+      userSelect: "none",
+    }}>
+      🔥
+    </div>
   );
 }
 
@@ -490,7 +477,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const flameSize = dim;
 
   return (
-    <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
+    <div style={{ position: "relative", width: dim, height: dim, flexShrink: 0, overflow: "visible" }}>
       <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)", transition: showFlame ? "stroke 0.4s ease" : "none" }}>
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" ? 4.4 : 3.4} />
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" ? 4.4 : 3.4}
