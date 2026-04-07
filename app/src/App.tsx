@@ -443,7 +443,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const circ = 2 * Math.PI * r;
   const PINK = "#FF00AE";
 
-  const HOT_EMOJIS = ["🥵","🤯","🔥","😤","💥","🫠","😈","☄️","🌋","🤬","💣","🧨","⚡","😱","💀","🌪️","😡","🚨","🤘","🃏"];
+  const HOT_EMOJIS = ["🥵","🤯","🫣","😤","💥","🫠","😈","☄️","🌋","🤬","💣","🧨","⚡","😱","💀","🌪️","😡","🚨","🤘","🃏"];
   const emojiIdx = obsId ? obsId.split("").reduce((a, c) => a + c.charCodeAt(0), 0) % HOT_EMOJIS.length : Math.floor(Math.random() * HOT_EMOJIS.length);
   const emojiRef = useRef(HOT_EMOJIS[emojiIdx]);
   const badgeRef = useRef<HTMLDivElement>(null);
@@ -501,8 +501,8 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   return (
     <div ref={badgeRef} style={{ position: "relative", width: dim, height: dim, flexShrink: 0, overflow: "visible" }}>
       <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)", transition: showEmoji ? "stroke 0.4s ease" : "none" }}>
-        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" ? 4.4 : 3.4} />
-        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" ? 4.4 : 3.4}
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" || size === "xl" ? 4.4 : 3.4} />
+        <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" || size === "xl" ? 4.4 : 3.4}
           strokeDasharray={`${pct * circ} ${circ}`} strokeLinecap="round"
           style={{ transition: showEmoji ? "stroke 0.4s ease, stroke-dasharray 0.4s ease" : "none" }} />
       </svg>
@@ -511,10 +511,10 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
       </div>
       {showEmoji && (
         <>
-          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2, opacity: 0, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} 16ms forwards`, willChange: "transform, opacity" }}>
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} 16ms both`, willChange: "transform, opacity" }}>
             <div style={{ fontSize: dim * 1.08, lineHeight: 1, userSelect: "none" }}>{emojiRef.current}</div>
           </div>
-          <div style={{ position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", zIndex: 2, opacity: 0, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} 16ms forwards` }}>
+          <div style={{ position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", zIndex: 2, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} 16ms both` }}>
             {!hideLabel && <p style={{ fontSize: 6, fontWeight: 800, color: "#FF00AE", margin: "3px 0 0", letterSpacing: 0.3, textTransform: "uppercase", whiteSpace: "nowrap" }}>Hot Take</p>}
           </div>
         </>
