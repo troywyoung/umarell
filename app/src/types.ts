@@ -56,6 +56,7 @@ export interface Observation {
   bs_score?: number;
   bs_verdict?: string;
   pva_take?: PvaTake;
+  context?: string;
   episode_tag?: string;
   episode_title?: string;
   category?: string;
