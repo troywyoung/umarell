@@ -327,12 +327,12 @@ const SCORE_ROWS = [
 
 function ScoreInfoRows() {
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "48px 90px 1fr", gap: "8px 0", alignItems: "baseline" }}>
+    <div style={{ display: "grid", gridTemplateColumns: "46px 86px 1fr", gap: "7px 8px", alignItems: "baseline" }}>
       {SCORE_ROWS.map(({ range, label, color, desc }) => (
         <Fragment key={range}>
-          <span style={{ fontSize: 11, fontWeight: 800, color }}>{range}</span>
-          <span style={{ fontSize: 13, fontWeight: 700, color }}>{label}</span>
-          <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}>{desc}</span>
+          <span style={{ fontSize: 10, fontWeight: 800, color }}>{range}</span>
+          <span style={{ fontSize: 12, fontWeight: 700, color }}>{label}</span>
+          <span style={{ fontSize: 12, color: "rgba(255,255,255,0.45)" }}>{desc}</span>
         </Fragment>
       ))}
     </div>
@@ -341,10 +341,10 @@ function ScoreInfoRows() {
 
 function HotTakeInfoRow() {
   return (
-    <div style={{ marginTop: 14, paddingTop: 12, borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-      <p style={{ fontSize: 11, fontWeight: 800, color: "#FF00AE", letterSpacing: 0.8, textTransform: "uppercase", margin: "0 0 6px" }}>🔥 Hot Take</p>
-      <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", lineHeight: 1.5, margin: 0 }}>
-        A high-score take that's also highly brazen — well-evidenced but challenges widely held beliefs. Expect strong reactions.
+    <div style={{ marginBottom: 12, paddingBottom: 12, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
+      <p style={{ fontSize: 10, fontWeight: 800, color: "#FF00AE", letterSpacing: 0.8, textTransform: "uppercase", margin: "0 0 4px" }}>🔥 Hot Take</p>
+      <p style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", lineHeight: 1.5, margin: 0 }}>
+        A high-score take that's also highly brazen — well-evidenced but challenges widely held beliefs.
       </p>
     </div>
   );
@@ -362,14 +362,14 @@ function ScoreInfoSheet({ onClose, isHotTake }: { onClose: () => void; isHotTake
         border: "1px solid rgba(255,255,255,0.1)", borderBottom: "none",
       }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
-          <span style={{ fontSize: 12, fontWeight: 800, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
+          <span style={{ fontSize: 11, fontWeight: 800, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
           <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 22, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
         </div>
-        <p style={{ fontSize: 13, color: "rgba(255,255,255,0.55)", lineHeight: 1.55, margin: "0 0 16px" }}>
+        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", lineHeight: 1.55, margin: "0 0 14px" }}>
           A conviction score. Verifiable facts score near 100. Demonstrably false claims score near 0. Opinions land in the middle based on how well-evidenced and defensible the argument is.
         </p>
-        <ScoreInfoRows />
         {isHotTake && <HotTakeInfoRow />}
+        <ScoreInfoRows />
       </div>
     </>
   );
@@ -389,14 +389,14 @@ function ScoreInfoPopover({ onClose, isHotTake }: { onClose: () => void; isHotTa
         width: 310, minWidth: 0,
       }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 8 }}>
-          <span style={{ fontSize: 11, fontWeight: 800, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
+          <span style={{ fontSize: 10, fontWeight: 800, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase" }}>Take Strength Score</span>
           <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.35)", fontSize: 18, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
         </div>
-        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 14px" }}>
+        <p style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 12px" }}>
           A conviction score. Verifiable facts score near 100. Demonstrably false claims score near 0. Opinions land in the middle based on how well-evidenced and defensible the argument is.
         </p>
-        <ScoreInfoRows />
         {isHotTake && <HotTakeInfoRow />}
+        <ScoreInfoRows />
       </div>
     </>
   );
