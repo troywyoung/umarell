@@ -622,7 +622,7 @@ function AboutView({ onBack }: { onBack: () => void }) {
 
 // ─── Home ─────────────────────────────────────────────────────────────────
 
-function HomeView({ observations, loading, onCapture, onSelect, authUser, onSignOut, onAbout, onOpenAdmin, onRefresh }: {
+function HomeView({ observations, loading, onCapture, onSelect, authUser, onSignOut, onAbout, onOpenAdmin, onRefresh, onLegal }: {
   observations: Observation[];
   loading: boolean;
   onCapture: () => void;
@@ -632,6 +632,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   onAbout: () => void;
   onOpenAdmin?: () => void;
   onRefresh: () => void;
+  onLegal: (page: "privacy" | "terms") => void;
 }) {
   const { config } = useInstanceConfig();
   const [selectedTopic, setSelectedTopic] = useState<string | null>("__top__");
@@ -1497,8 +1498,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
       {/* Legal footer */}
       <div style={{ textAlign: "center", padding: "40px 0 100px" }}>
-        <a href="https://bighottake.com/legal/privacy" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none", marginRight: 14 }}>Privacy Policy</a>
-        <a href="https://bighottake.com/legal/terms" target="_blank" rel="noopener noreferrer" style={{ fontSize: 10, color: "rgba(255,255,255,0.2)", textDecoration: "none" }}>Terms of Service</a>
+        <button onClick={() => onLegal("privacy")} style={{ background: "none", border: "none", fontSize: 10, color: "rgba(255,255,255,0.2)", cursor: "pointer", fontFamily: "inherit", marginRight: 14 }}>Privacy Policy</button>
+        <button onClick={() => onLegal("terms")} style={{ background: "none", border: "none", fontSize: 10, color: "rgba(255,255,255,0.2)", cursor: "pointer", fontFamily: "inherit" }}>Terms of Service</button>
       </div>
     </div>
   );
@@ -2648,6 +2649,55 @@ function EmbedSheet({ obsId, onClose }: { obsId: string; onClose: () => void }) 
   );
 }
 
+function LegalView({ page, onBack }: { page: "privacy" | "terms"; onBack: () => void }) {
+  const s: React.CSSProperties = { fontSize: 14, color: "rgba(255,255,255,0.55)", lineHeight: 1.75, margin: "0 0 12px" };
+  const h: React.CSSProperties = { fontSize: 13, fontWeight: 800, color: "#FFF", margin: "24px 0 6px", letterSpacing: -0.2 };
+  return (
+    <div style={{ maxWidth: 640, margin: "0 auto", padding: "0 20px 80px" }}>
+      <div style={{ padding: "20px 0 12px", display: "flex", alignItems: "center", gap: 10 }}>
+        <button onClick={onBack} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.5)", fontSize: 13, cursor: "pointer", fontFamily: "inherit", padding: 0, display: "flex", alignItems: "center", gap: 5 }}>
+          ← Back
+        </button>
+      </div>
+      <p style={{ fontSize: 10, fontWeight: 800, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 8px" }}>
+        bighottake.com
+      </p>
+      <h1 style={{ fontSize: 24, fontWeight: 800, color: "#FFF", letterSpacing: -0.5, margin: "0 0 4px" }}>
+        {page === "privacy" ? "Privacy Policy" : "Terms of Service"}
+      </h1>
+      <p style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", margin: "0 0 32px" }}>Last updated: April 7, 2026</p>
+
+      {page === "privacy" ? <>
+        <p style={h}>What we collect</p>
+        <p style={s}>When you use hottake, we collect your phone number if you opt in to SMS notifications, and any takes or ideas you submit. We also collect standard server logs (IP address, timestamp, browser type) for security and debugging purposes.</p>
+        <p style={h}>How we use it</p>
+        <p style={s}>Your phone number is used only to send you take ratings and prompts you have opted into. We do not sell, share, or transfer your number to third parties for marketing. Takes you submit may be displayed anonymously within the app.</p>
+        <p style={h}>SMS messaging</p>
+        <p style={s}>By providing your phone number and opting in, you consent to receive SMS messages from hottake via Twilio. Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe at any time. Reply HELP for help.</p>
+        <p style={h}>Data retention</p>
+        <p style={s}>We retain your data for as long as your account is active. You may request deletion by contacting us at the email below.</p>
+        <p style={h}>Third parties</p>
+        <p style={s}>We use Twilio for SMS delivery and Railway for hosting. We use Anthropic's API for content processing. None of these parties receive your personal data beyond what is necessary to provide the service.</p>
+        <p style={h}>Contact</p>
+        <p style={s}>Questions? Email <a href="mailto:troyyoung@gmail.com" style={{ color: "var(--color-accent, #FF00AE)" }}>troyyoung@gmail.com</a></p>
+      </> : <>
+        <p style={h}>About the service</p>
+        <p style={s}>hottake is a personal media tool for submitting, rating, and sharing opinion takes. It is provided as-is for personal and hobbyist use.</p>
+        <p style={h}>SMS opt-in</p>
+        <p style={s}>By entering your phone number and opting in, you agree to receive SMS messages from hottake. You can opt out at any time by replying STOP to any message. For help, reply HELP or email <a href="mailto:troyyoung@gmail.com" style={{ color: "var(--color-accent, #FF00AE)" }}>troyyoung@gmail.com</a>. Message and data rates may apply.</p>
+        <p style={h}>User conduct</p>
+        <p style={s}>You agree not to submit content that is illegal, threatening, or designed to harass others. We reserve the right to remove any content at our discretion.</p>
+        <p style={h}>Limitation of liability</p>
+        <p style={s}>hottake is provided without warranty of any kind. We are not liable for any damages arising from use of the service.</p>
+        <p style={h}>Changes</p>
+        <p style={s}>We may update these terms at any time. Continued use of the service constitutes acceptance of the updated terms.</p>
+        <p style={h}>Contact</p>
+        <p style={s}>Questions? Email <a href="mailto:troyyoung@gmail.com" style={{ color: "var(--color-accent, #FF00AE)" }}>troyyoung@gmail.com</a></p>
+      </>}
+    </div>
+  );
+}
+
 function ProcessingDots({ color = "#6666CC" }: { color?: string }) {
   return (
     <span style={{ display: "inline-flex", gap: 3, alignItems: "center" }}>
@@ -2674,7 +2724,7 @@ function ProcessingDots({ color = "#6666CC" }: { color?: string }) {
 
 // ─── Root ─────────────────────────────────────────────────────────────────
 
-type View = "home" | "capture" | "output" | "about" | "admin";
+type View = "home" | "capture" | "output" | "about" | "admin" | "privacy" | "terms";
 
 interface AuthUser { id: string; name: string; avatar: string | null; is_admin?: boolean; }
 
@@ -2895,6 +2945,10 @@ export default function App() {
     );
   }
 
+  if (view === "privacy" || view === "terms") {
+    return <LegalView page={view} onBack={() => setView("home")} />;
+  }
+
   if (view === "about") {
     return <AboutView onBack={() => setView("home")} />;
   }
@@ -2948,6 +3002,7 @@ export default function App() {
       onAbout={() => setView("about")}
       onOpenAdmin={() => setView("admin")}
       onRefresh={fetchObservations}
+      onLegal={(page) => setView(page)}
     />
   );
 }
