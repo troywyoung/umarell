@@ -433,12 +433,12 @@ function getScoreTier(v: number): { label: string } {
   return { label: "Undeniable" };
 }
 
-function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false, obsId, hideLabel = false, emojiDelay = 360, emojiAnim = "hotGrow" }: { value?: number; size?: "sm" | "md" | "lg"; dark?: boolean; animate?: boolean; isHotTake?: boolean; obsId?: string; hideLabel?: boolean; emojiDelay?: number; emojiAnim?: string }) {
+function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false, obsId, hideLabel = false, emojiDelay = 360, emojiAnim = "hotGrow", emojiDuration = "0.55s", emojiEasing = "cubic-bezier(0.34,1.56,0.64,1)" }: { value?: number; size?: "sm" | "md" | "lg" | "xl"; dark?: boolean; animate?: boolean; isHotTake?: boolean; obsId?: string; hideLabel?: boolean; emojiDelay?: number; emojiAnim?: string; emojiDuration?: string; emojiEasing?: string }) {
   if (value == null) return null;
   const target = Math.round(value);
   const accent = getScoreColor(target);
-  const dim = size === "sm" ? 40 : size === "lg" ? 48 : 32;
-  const fontSize = size === "sm" ? 14 : size === "lg" ? 17 : 11;
+  const dim = size === "sm" ? 40 : size === "lg" ? 48 : size === "xl" ? 58 : 32;
+  const fontSize = size === "sm" ? 14 : size === "lg" ? 17 : size === "xl" ? 21 : 11;
   const r = (dim - 4) / 2;
   const circ = 2 * Math.PI * r;
   const PINK = "#FF00AE";
@@ -510,10 +510,10 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
       </div>
       {showEmoji && (
         <>
-          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2, animation: `${emojiAnim} 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards` }}>
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} forwards` }}>
             <div style={{ fontSize: dim * 1.08, lineHeight: 1, userSelect: "none" }}>{emojiRef.current}</div>
           </div>
-          <div style={{ position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", zIndex: 2, animation: `${emojiAnim} 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards` }}>
+          <div style={{ position: "absolute", top: "100%", left: 0, right: 0, textAlign: "center", zIndex: 2, animation: `${emojiAnim} ${emojiDuration} ${emojiEasing} forwards` }}>
             {!hideLabel && <p style={{ fontSize: 6, fontWeight: 800, color: "#FF00AE", margin: "3px 0 0", letterSpacing: 0.3, textTransform: "uppercase", whiteSpace: "nowrap" }}>Hot Take</p>}
           </div>
         </>
@@ -829,7 +829,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
         @keyframes yellowPulse { 0%,100% { opacity:1; } 50% { opacity:0.25; } }
         @keyframes scoreLabelFadeIn { from { opacity:0; transform:translateX(-6px); } to { opacity:1; transform:translateX(0); } }
         @keyframes hotGrow { 0% { opacity:0; transform:scale(0.2); } 60% { opacity:1; transform:scale(1.35); } 100% { opacity:1; transform:scale(1); } }
-        @keyframes detailEmojiPop { 0% { opacity:0; transform:scale(0); } 65% { opacity:1; transform:scale(1.3); } 100% { opacity:1; transform:scale(1); } }
+        @keyframes detailEmojiPop { 0% { opacity:0; transform:scale(0); } 50% { opacity:1; transform:scale(1.3); } 70% { opacity:1; transform:scale(1.3); } 100% { opacity:1; transform:scale(1); } }
       `}</style>
 
 <div style={{ padding: "6px 16px 0", position: "relative", zIndex: 1 }}>
@@ -1979,8 +1979,8 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           return (
             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 16 }}>
               <div style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", flex: "0 0 auto" }}>
-                <ScoreBadge value={obs.score} size={isMobile ? "sm" : "md"} animate isHotTake={obs.is_hot_take} obsId={obs.id} hideLabel emojiDelay={1000} emojiAnim="detailEmojiPop" />
-                <span style={{ fontSize: isMobile ? 12 : 14, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
+                <ScoreBadge value={obs.score} size={isMobile ? "lg" : "xl"} animate isHotTake={obs.is_hot_take} obsId={obs.id} hideLabel emojiDelay={1000} emojiAnim="detailEmojiPop" emojiDuration="0.9s" emojiEasing="ease-out" />
+                <span style={{ fontSize: isMobile ? 14 : 17, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.35, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
                   {obs.is_hot_take ? "Hot Take" : tier.label}
                 </span>
                 <button
@@ -1988,10 +1988,10 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                   style={{
                     background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
                     border: "1px solid rgba(255,255,255,0.12)",
-                    borderRadius: "50%", width: 18, height: 18,
+                    borderRadius: "50%", width: 22, height: 22,
                     display: "flex", alignItems: "center", justifyContent: "center",
                     cursor: "pointer", padding: 0, flexShrink: 0,
-                    color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 800,
+                    color: "rgba(255,255,255,0.4)", fontSize: 12, fontWeight: 800,
                     WebkitTapHighlightColor: "transparent",
                     opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards",
                   }}
