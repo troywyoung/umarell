@@ -455,6 +455,67 @@ async def auth_me(user: User = Depends(require_user)):
     return {"id": user.id, "name": user.name, "avatar": user.avatar_url, "email": user.email, "is_admin": _is_admin(user)}
 
 
+# ─── Public card endpoints ───────────────────────────────────────────────────
+
+@app.get("/cards/{obs_id}/image.png", include_in_schema=False)
+async def card_image(obs_id: str, db: AsyncSession = Depends(get_instance_db_session)):
+    """Return a 600×320 PNG render of a single observation card. Public, no auth."""
+    from sqlalchemy import select as sa_select
+    result = await db.execute(sa_select(Observation).where(Observation.id == obs_id))
+    obs = result.scalar_one_or_none()
+    if not obs:
+        raise HTTPException(404, "Card not found")
+    from card_image import generate_card_image
+    png_bytes = generate_card_image({
+        "thesis":      obs.thesis,
+        "raw_input":   obs.raw_input,
+        "score":       obs.score,
+        "is_hot_take": obs.is_hot_take,
+        "summary":     obs.summary,
+    })
+    from fastapi.responses import Response
+    return Response(
+        content=png_bytes,
+        media_type="image/png",
+        headers={"Cache-Control": "public, max-age=3600"},
+    )
+
+
+@app.get("/cards/{obs_id}", include_in_schema=False)
+async def card_page(obs_id: str, db: AsyncSession = Depends(get_instance_db_session)):
+    """Serve a minimal HTML page for a card — used for OG previews and link unfurling."""
+    from sqlalchemy import select as sa_select
+    result = await db.execute(sa_select(Observation).where(Observation.id == obs_id))
+    obs = result.scalar_one_or_none()
+    if not obs:
+        raise HTTPException(404, "Card not found")
+    base = "https://umarell-production.up.railway.app"
+    title   = (obs.thesis or obs.raw_input or "")[:120]
+    img_url = f"{base}/cards/{obs_id}/image.png"
+    app_url = f"{base}/?card={obs_id}"
+    html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{title} — hottake</title>
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="Score: {int(obs.score or 0)} · Shared from hottake">
+  <meta property="og:image" content="{img_url}">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="320">
+  <meta property="og:url" content="{app_url}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{img_url}">
+  <meta http-equiv="refresh" content="0;url={app_url}">
+</head>
+<body style="background:#1C1C1E;display:flex;align-items:center;justify-content:center;height:100vh;margin:0">
+  <a href="{app_url}" style="color:#FF00AE;font-family:sans-serif;font-size:14px">View on hottake →</a>
+</body>
+</html>"""
+    from fastapi.responses import HTMLResponse
+    return HTMLResponse(content=html)
+
+
 # ─── Health ──────────────────────────────────────────────────────────────────
 
 @app.get("/health")

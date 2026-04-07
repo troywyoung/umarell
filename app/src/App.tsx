@@ -1138,7 +1138,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     </>)}
                   </div>
                   {obs.status === "complete" && obs.thesis && (
-                    <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
+                    <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                      <ShareButton obsId={obs.id} onClick={(e) => e.stopPropagation()} />
+                      <EmbedTrigger obsId={obs.id} />
+                    </div>
                   )}
                 </div>
               </div>
@@ -2529,6 +2532,113 @@ function ShareButton({ obsId, onClick, prominent = false }: { obsId: string; onC
       </svg>
       {copied ? "Copied!" : ""}
     </button>
+  );
+}
+
+function EmbedTrigger({ obsId }: { obsId: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <>
+      <button
+        onClick={e => { e.stopPropagation(); setOpen(true); }}
+        style={{ background: "none", border: "none", cursor: "pointer", padding: 0, display: "inline-flex", alignItems: "center", color: "rgba(0,0,0,0.35)", WebkitTapHighlightColor: "transparent" }}
+        title="Embed this take"
+      >
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="16 18 22 12 16 6" />
+          <polyline points="8 6 2 12 8 18" />
+        </svg>
+      </button>
+      {open && <EmbedSheet obsId={obsId} onClose={() => setOpen(false)} />}
+    </>
+  );
+}
+
+function EmbedSheet({ obsId, onClose }: { obsId: string; onClose: () => void }) {
+  const [tab, setTab] = useState<"web" | "email">("web");
+  const [copied, setCopied] = useState(false);
+  const base = "https://umarell-production.up.railway.app";
+  const cardUrl = `${base}/cards/${obsId}`;
+  const imgUrl  = `${base}/cards/${obsId}/image.png`;
+
+  const webSnippet =
+`<blockquote class="hottake-embed" data-id="${obsId}"></blockquote>
+<script async src="${base}/embed.js"></script>`;
+
+  const emailSnippet =
+`<a href="${cardUrl}" target="_blank" rel="noopener noreferrer">
+  <img src="${imgUrl}" width="600" alt="hottake" style="max-width:100%;border-radius:10px;display:block;">
+</a>`;
+
+  const snippet = tab === "web" ? webSnippet : emailSnippet;
+
+  const copy = () => {
+    navigator.clipboard.writeText(snippet);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1800);
+  };
+
+  const tabStyle = (active: boolean): React.CSSProperties => ({
+    flex: 1, padding: "8px 0", fontSize: 12, fontWeight: 700,
+    background: active ? "rgba(255,255,255,0.1)" : "none",
+    border: "none", borderRadius: 8, cursor: "pointer",
+    color: active ? "#FFF" : "rgba(255,255,255,0.4)",
+    fontFamily: "inherit", transition: "all 0.15s",
+    WebkitTapHighlightColor: "transparent",
+  });
+
+  return (
+    <div
+      onClick={onClose}
+      style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.65)", zIndex: 2000, display: "flex", alignItems: "flex-end", justifyContent: "center" }}
+    >
+      <div
+        onClick={e => e.stopPropagation()}
+        style={{ background: "#1C1C1E", borderRadius: "16px 16px 0 0", padding: "20px 20px 32px", width: "100%", maxWidth: 560, boxSizing: "border-box" }}
+      >
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 16 }}>
+          <p style={{ fontSize: 15, fontWeight: 800, color: "#FFF", margin: 0, letterSpacing: -0.3 }}>Embed this take</p>
+          <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 20, cursor: "pointer", lineHeight: 1, padding: 0 }}>×</button>
+        </div>
+
+        {/* Tabs */}
+        <div style={{ display: "flex", gap: 4, background: "rgba(255,255,255,0.06)", borderRadius: 10, padding: 4, marginBottom: 14 }}>
+          <button style={tabStyle(tab === "web")}   onClick={() => { setTab("web");   setCopied(false); }}>Web / Substack</button>
+          <button style={tabStyle(tab === "email")} onClick={() => { setTab("email"); setCopied(false); }}>Email</button>
+        </div>
+
+        {/* Snippet */}
+        <pre style={{
+          background: "rgba(255,255,255,0.05)", borderRadius: 8, padding: "12px 14px",
+          fontSize: 11, color: "rgba(255,255,255,0.6)", overflowX: "auto",
+          margin: "0 0 12px", whiteSpace: "pre-wrap", wordBreak: "break-all",
+          fontFamily: "monospace", lineHeight: 1.6,
+        }}>{snippet}</pre>
+
+        {tab === "email" && (
+          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", margin: "0 0 12px", lineHeight: 1.5 }}>
+            Paste into any email editor. The image links back to the live take.
+          </p>
+        )}
+        {tab === "web" && (
+          <p style={{ fontSize: 11, color: "rgba(255,255,255,0.3)", margin: "0 0 12px", lineHeight: 1.5 }}>
+            Works on Substack Pro, Ghost, WordPress, or any page that allows HTML.
+          </p>
+        )}
+
+        <button
+          onClick={copy}
+          style={{
+            width: "100%", padding: "12px 0", background: copied ? "rgba(255,0,174,0.15)" : "#FF00AE",
+            color: "#FFF", border: copied ? "1px solid #FF00AE" : "none",
+            borderRadius: 10, fontWeight: 700, fontSize: 14, cursor: "pointer",
+            fontFamily: "inherit", transition: "all 0.2s",
+          }}
+        >
+          {copied ? "✓ Copied!" : "Copy snippet"}
+        </button>
+      </div>
+    </div>
   );
 }
 
