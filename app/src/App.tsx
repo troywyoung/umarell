@@ -430,7 +430,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const circ = 2 * Math.PI * r;
   const PINK = "#FF00AE";
 
-  const HOT_EMOJIS = ["🥵","🤯","🔥","😤","💥","🫠","😈","☄️","🌋","🤬","💣","🧨","⚡","😱","💀","🌪️","😡","💯","🤘","🃏"];
+  const HOT_EMOJIS = ["🥵","🤯","🔥","😤","💥","🫠","😈","☄️","🌋","🤬","💣","🧨","⚡","😱","💀","🌪️","😡","🚨","🤘","🃏"];
   const emojiRef = useRef(HOT_EMOJIS[Math.floor(Math.random() * HOT_EMOJIS.length)]);
   const badgeRef = useRef<HTMLDivElement>(null);
 
@@ -468,7 +468,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
       if (progress < 1) {
         animRef.current = requestAnimationFrame(tick);
       } else if (isHotTake) {
-        setTimeout(() => setShowEmoji(true), 300);
+        setTimeout(() => setShowEmoji(true), 360);
       }
     };
     animRef.current = requestAnimationFrame(tick);
@@ -479,7 +479,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
   const pct = showEmoji ? 1 : (animate ? animPct : target / 100);
 
   return (
-    <div ref={badgeRef} style={{ position: "relative", width: dim, height: dim, flexShrink: 0 }}>
+    <div ref={badgeRef} style={{ position: "relative", width: dim, height: dim, flexShrink: 0, overflow: "visible" }}>
       <svg width={dim} height={dim} style={{ transform: "rotate(-90deg)", transition: showEmoji ? "stroke 0.4s ease" : "none" }}>
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={dark ? "rgba(0,0,0,0.08)" : "rgba(255,255,255,0.08)"} strokeWidth={size === "lg" ? 4.4 : 3.4} />
         <circle cx={dim / 2} cy={dim / 2} r={r} fill="none" stroke={currentColor} strokeWidth={size === "lg" ? 4.4 : 3.4}
@@ -487,13 +487,13 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
           style={{ transition: showEmoji ? "stroke 0.4s ease, stroke-dasharray 0.4s ease" : "none" }} />
       </svg>
       <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+        {!showEmoji && <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>}
       </div>
       {showEmoji && (
-        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", zIndex: 2 }}>
-          <div style={{ animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards", fontSize: dim * 1.08, lineHeight: 1, userSelect: "none" }}>
-            {emojiRef.current}
-          </div>
+        <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1, zIndex: 2, overflow: "visible", animation: "hotGrow 0.55s cubic-bezier(0.34,1.56,0.64,1) forwards" }}>
+          <div style={{ fontSize: dim * 0.65, lineHeight: 1, userSelect: "none" }}>{emojiRef.current}</div>
+          <span style={{ fontSize: dim * 0.175, fontWeight: 900, color: "#FF00AE", letterSpacing: 0.4, lineHeight: 1, textTransform: "uppercase" }}>Hot Take</span>
+          <span style={{ fontSize: dim * 0.22, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.3 }}>{target}</span>
         </div>
       )}
     </div>
@@ -913,7 +913,6 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     <div style={{ flex: 1 }}>
                       <div style={{ float: "right", marginLeft: 8, marginBottom: 2, textAlign: "center" }}>
                         <ScoreBadge value={obs.score} size="sm" dark animate={!!obs.is_hot_take} isHotTake={obs.is_hot_take} />
-                        {obs.is_hot_take && <p style={{ fontSize: 7, fontWeight: 800, color: "#FF00AE", margin: "3px 0 0", letterSpacing: 0.4, textTransform: "uppercase" }}>Hot Take</p>}
                       </div>
                       <p style={{
                         fontSize: "var(--font-size-card-headline, 14px)", fontWeight: 700,
