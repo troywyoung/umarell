@@ -118,7 +118,8 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
             )
             if resp.text is None:
                 finish = getattr(resp.candidates[0], 'finish_reason', 'UNKNOWN') if resp.candidates else 'NO_CANDIDATES'
-                raise ValueError(f"Gemini returned empty response (finish_reason={finish})")
+                print(f"[pipeline/gemini] empty response (finish_reason={finish}), falling back to Claude")
+                return await _call_anthropic(system, user, max_tokens, retries, return_metadata)
             text = resp.text.strip()
 
             if return_metadata:
