@@ -362,7 +362,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
                 obs.evidence_type = meta.get("evidence_type")
                 obs.category = meta.get("category")
                 obs.brazen_score = meta.get("brazen_score")
-                obs.is_hot_take = bool((obs.score or 0) >= 78 and (obs.brazen_score or 0) >= 68)
+                obs.is_hot_take = bool((obs.score or 0) >= 82 and (obs.brazen_score or 0) >= 72)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1650,7 +1650,7 @@ async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-take
                 obs.evidence_type = meta.get("evidence_type")
                 obs.category = meta.get("category")
                 obs.brazen_score = meta.get("brazen_score")
-                obs.is_hot_take = bool((obs.score or 0) >= 78 and (obs.brazen_score or 0) >= 68)
+                obs.is_hot_take = bool((obs.score or 0) >= 82 and (obs.brazen_score or 0) >= 72)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1804,38 +1804,48 @@ async def rescore_all(body: RescoreBody, db: AsyncSession = Depends(get_db)):
     )
     obs_list = list(result.scalars().all())
 
-    updated, failed = 0, 0
-    scores_out = []
+    # Pass 1: collect all raw scores without saving
+    results = []  # list of (obs, meta) tuples
+    failed = 0
     for obs in obs_list:
         try:
             sm_text = obs.summary or ""
             meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
-            if not body.dry_run:
-                obs.score = meta.get("score")
-                obs.tags = meta.get("tags")
-                obs.evidence_type = meta.get("evidence_type")
-                obs.category = meta.get("category")
-                obs.brazen_score = meta.get("brazen_score")
-                obs.is_hot_take = bool((obs.score or 0) >= 78 and (obs.brazen_score or 0) >= 68)
-            scores_out.append(meta.get("score"))
-            updated += 1
+            results.append((obs, meta))
         except Exception as e:
             print(f"[rescore] failed {obs.id}: {e}")
             failed += 1
 
+    # Pass 2: rank-normalize scores and brazen_scores across the full set
+    raw_scores  = [m.get("score") or 0        for _, m in results]
+    raw_brazen  = [m.get("brazen_score") or 0  for _, m in results]
+    norm_scores = _rank_normalize(raw_scores,  lo=15.0, hi=95.0)
+    norm_brazen = _rank_normalize(raw_brazen,  lo=10.0, hi=95.0)
+
+    # Pass 3: save
     if not body.dry_run:
+        for (obs, meta), ns, nb in zip(results, norm_scores, norm_brazen):
+            obs.score       = ns
+            obs.brazen_score = nb
+            obs.tags         = meta.get("tags")
+            obs.evidence_type = meta.get("evidence_type")
+            obs.category     = meta.get("category")
+            # hot take = top ~10% of score AND top ~20% of brazen
+            obs.is_hot_take  = bool(ns >= 82 and nb >= 72)
         await db.commit()
 
-    valid = sorted(s for s in scores_out if s is not None)
+    valid = sorted(norm_scores)
     from collections import Counter
-    top = Counter(valid).most_common(5)
+    top = Counter(norm_scores).most_common(5)
+    hot_count = sum(1 for ns, nb in zip(norm_scores, norm_brazen) if ns >= 82 and nb >= 72)
     return {
-        "total": len(obs_list), "updated": updated, "failed": failed,
+        "total": len(obs_list), "updated": len(results), "failed": failed,
         "dry_run": body.dry_run,
         "range": [min(valid), max(valid)] if valid else [],
         "mean": round(sum(valid) / len(valid), 1) if valid else None,
         "unique": len(set(valid)),
         "most_common": top,
+        "hot_takes": hot_count,
     }
 
 
