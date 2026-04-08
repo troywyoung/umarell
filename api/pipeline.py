@@ -588,24 +588,26 @@ SCORING SCALE:
 15–34  — Not really a take. Too general to be argued, or just restating what everyone already believes.
 0–14   — Not a take at all. Pure fact, pure observation, or incoherent.
 
-CALIBRATION EXAMPLES — match your scores to these:
-- "The core AI business models are undefendable — cheap energy and commoditization will destroy their moats." → 86 (sharp, specific mechanism, directly challengeable)
-- "Bitcoin will go to zero because of its massive energy reliance." → 83 (specific claim, falsifiable, has a mechanism, contrarian)
-- "SpaceX has made every other launch provider permanently irrelevant." → 79 (specific, bold, arguable — but slightly over-stated, one counterexample weakens it)
-- "Every major ad holding company will be gone within 8 years." → 74 (bold, specific, falsifiable, but no named mechanism for how)
-- "No media operator has ever genuinely benefited from taking VC money." → 69 (strong point, arguable, but counterexamples exist and weaken the "ever")
-- "Social media has increased political polarization." → 57 (decent take but now mainstream — no longer challenging real consensus)
-- "Podcasting rewards authenticity over production quality." → 44 (plausible but vague — what does 'rewards' mean? No mechanism)
-- "AI is going to change everything." → 11 (not a take — too vague to argue or falsify)
-- "Regular sleep of 7–9 hours improves cognitive performance." → 7 (established science, nothing to argue)
-- "Apples are a type of fruit." → 2 (pure fact, not a take)
+CALIBRATION EXAMPLES — use these as anchors:
+- "Nvidia's moat is not CUDA — it's the installed base of engineers who don't want to relearn anything." → 91 (specific mechanism, counterintuitive, hard to dismiss)
+- "The core AI business models are undefendable — cheap energy and commoditization will destroy their moats." → 86 (sharp mechanism, directly challengeable)
+- "Every major ad holding company will be gone within 8 years." → 81 (bold, specific timeframe, falsifiable — loses points for no named mechanism)
+- "No media operator has ever genuinely benefited from taking VC money." → 73 (strong point, arguable, but counterexamples exist and weaken the "ever")
+- "Bitcoin's energy consumption will be its political kill switch, not its price." → 67 (interesting angle but under-argued — needs a "because")
+- "Social media has increased political polarization." → 54 (decent take but now mainstream — no longer challenging real consensus)
+- "Podcasting rewards authenticity over production quality." → 41 (plausible but vague — what does 'rewards' mean? No mechanism)
+- "Remote work is here to stay." → 28 (assertion, no argument, no mechanism, counterexamples everywhere)
+- "AI is going to change everything." → 12 (not a take — too vague to argue or falsify)
+- "Regular sleep improves cognitive performance." → 5 (established science, nothing to argue)
 
-DISTRIBUTION RULES — follow these strictly:
-- Do not cluster scores. A score of 78 should be as rare as 71 or 84.
-- Avoid round numbers and band midpoints (75, 80 are red flags — only use them if nothing else fits).
-- Commit to a specific number. If a take feels like "somewhere in the 70s", decide exactly where: is it closer to 72 or 77 or 79?
-- Strong takes that lack a named mechanism or have an obvious counterexample belong in the 65–74 range, not 78+.
-- Reserve 80+ for takes with both a specific claim AND a clear "because" that's hard to dismiss.
+DISTRIBUTION RULES — enforce these strictly:
+- In any given batch, scores should spread across the full range. If you've given several takes scores in the 70s, the next one better be in the 50s or 80s unless it genuinely belongs in the 70s.
+- 75, 78, 80 are FORBIDDEN as defaults. Only use them if you can articulate exactly why this take is not 73 or 77 or 82.
+- Most submitted takes are decent-but-not-great. Most should score 55–74, not 75+.
+- Reserve 80+ strictly for takes with BOTH a specific, named claim AND a clear mechanism or "because" that's genuinely hard to dismiss.
+- Takes that are bold but vague (no mechanism, no named target) cap at 74.
+- Takes that are specific but already consensus cap at 60.
+- When in doubt, score lower. It is harder to earn a high score than it looks.
 Penalize vagueness and pure assertion hard. Reward specificity and falsifiability even when the underlying claim seems unlikely.
 Hyperbole for effect is fine — score the underlying argument, not the literal wording.
 If an image is provided, use it as context for the claim being made.
