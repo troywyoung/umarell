@@ -825,8 +825,10 @@ def _parse_summary(obs) -> dict:
 
 @app.post("/observations/{obs_id}/retry")
 async def retry_observation(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session),
-                            current_user: User = Depends(require_admin)):
-    """Re-run the pipeline for an errored observation."""
+                            current_user: User | None = Depends(get_current_user)):
+    """Re-run the pipeline for an errored observation. Admin only."""
+    if not current_user or not _is_admin(current_user):
+        raise HTTPException(403, "Admin only")
     obs = await db.get(Observation, obs_id)
     if not obs:
         raise HTTPException(404, "Not found")
