@@ -826,7 +826,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           const logoSize   = parseInt(branding?.logo_size || "27") || 27;
           return (
             <span
-              onClick={() => { setSelectedTopic("__top__"); window.scrollTo({ top: 0, behavior: "smooth" }); }}
+              onClick={() => window.location.href = "/"}
               style={{ fontSize: logoSize, fontWeight: 400, letterSpacing: "var(--letter-spacing-headline, -1.5px)", fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1, cursor: "pointer" }}
             >
               <span style={{ color: "var(--color-accent, #FF00AE)" }}>{logoAccent}</span>
