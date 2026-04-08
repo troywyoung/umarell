@@ -823,6 +823,23 @@ def _parse_summary(obs) -> dict:
         return {"bottom_line": bullets[0] if bullets else "", "bullets": bullets[1:] if len(bullets) > 1 else bullets}
 
 
+@app.post("/observations/{obs_id}/retry")
+async def retry_observation(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session),
+                            current_user: User = Depends(require_admin)):
+    """Re-run the pipeline for an errored observation."""
+    obs = await db.get(Observation, obs_id)
+    if not obs:
+        raise HTTPException(404, "Not found")
+    if obs.status not in ("error", "pending"):
+        raise HTTPException(400, f"Cannot retry observation with status={obs.status}")
+    instance_key = await get_instance_key(request)
+    obs.status = "pending"
+    obs.error_detail = None
+    await db.commit()
+    asyncio.create_task(_run_pipeline(str(obs.id), obs.raw_input, obs.input_type or "text", instance_key=instance_key))
+    return {"ok": True, "id": obs_id}
+
+
 @app.post("/observations/{obs_id}/stress-test")
 async def create_stress_test(obs_id: str, request: Request, db: AsyncSession = Depends(get_instance_db_session)):
     """Legacy endpoint — redirects to counterpoint."""

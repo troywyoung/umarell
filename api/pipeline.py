@@ -116,6 +116,9 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
                 contents=user,
                 config=config,
             )
+            if resp.text is None:
+                finish = getattr(resp.candidates[0], 'finish_reason', 'UNKNOWN') if resp.candidates else 'NO_CANDIDATES'
+                raise ValueError(f"Gemini returned empty response (finish_reason={finish})")
             text = resp.text.strip()
 
             if return_metadata:
@@ -407,7 +410,7 @@ async def extract_from_image(image_b64: str, media_type: str = "image/jpeg", con
                         thinking_config=genai.types.ThinkingConfig(thinking_budget=0),
                     ),
                 )
-                return resp.text.strip()
+                return (resp.text or "").strip()
             except Exception as e:
                 if attempt < 2:
                     print(f"[pipeline/gemini] image extract retry {attempt+1}: {str(e)[:100]}")
