@@ -3,8 +3,93 @@ import SimplifiedDesignEditor from './admin/SimplifiedDesignEditor';
 import PodcastIngestionForm from './admin/PodcastIngestionForm';
 import NewsBundleForm from './admin/NewsBundleForm';
 import PromptsSection from './admin/PromptsSection';
+import { API } from './config';
 
-type ActiveTab = 'prompts' | 'design' | 'podcasts' | 'news';
+type ActiveTab = 'prompts' | 'design' | 'podcasts' | 'news' | 'tools';
+
+function ToolsSection() {
+  const [rescoring, setRescoring] = useState(false);
+  const [result, setResult] = useState<Record<string, unknown> | null>(null);
+  const [error, setError] = useState('');
+
+  const runRescore = async (dryRun: boolean) => {
+    setRescoring(true);
+    setResult(null);
+    setError('');
+    try {
+      const adminKey = import.meta.env.VITE_GOOGLE_API_KEY || prompt('Enter admin key:');
+      if (!adminKey) { setRescoring(false); return; }
+      const resp = await fetch(`${API}/admin/rescore`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ admin_key: adminKey, dry_run: dryRun }),
+      });
+      const data = await resp.json();
+      setResult(data);
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : 'Unknown error');
+    } finally {
+      setRescoring(false);
+    }
+  };
+
+  return (
+    <div style={{ padding: 24, maxWidth: 600 }}>
+      <h2 style={{ fontSize: 16, fontWeight: 800, margin: '0 0 6px', color: '#1A1A1A' }}>Rescore All Takes</h2>
+      <p style={{ fontSize: 13, color: '#888', margin: '0 0 20px', lineHeight: 1.5 }}>
+        Re-runs the scoring prompt on every complete observation in the database using the current prompt. Does not touch thesis, summary, or sources.
+      </p>
+
+      <div style={{ display: 'flex', gap: 10, marginBottom: 20 }}>
+        <button
+          onClick={() => runRescore(true)}
+          disabled={rescoring}
+          style={{ padding: '10px 20px', background: '#F5F5F2', border: '1px solid #DDD', borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: rescoring ? 'not-allowed' : 'pointer', color: '#555', opacity: rescoring ? 0.5 : 1 }}
+        >
+          {rescoring ? 'Running…' : 'Dry Run (preview only)'}
+        </button>
+        <button
+          onClick={() => runRescore(false)}
+          disabled={rescoring}
+          style={{ padding: '10px 20px', background: '#FF00AE', border: 'none', borderRadius: 8, fontSize: 13, fontWeight: 700, cursor: rescoring ? 'not-allowed' : 'pointer', color: '#FFF', opacity: rescoring ? 0.5 : 1 }}
+        >
+          {rescoring ? 'Rescoring…' : '↺ Rescore All'}
+        </button>
+      </div>
+
+      {rescoring && (
+        <div style={{ fontSize: 13, color: '#888', padding: '12px 16px', background: '#F5F5F2', borderRadius: 8 }}>
+          Running… this may take a few minutes for large databases.
+        </div>
+      )}
+
+      {error && (
+        <div style={{ fontSize: 13, color: '#E8813A', padding: '12px 16px', background: '#FFF8F0', borderRadius: 8, border: '1px solid #FFDDB8' }}>
+          Error: {error}
+        </div>
+      )}
+
+      {result && (
+        <div style={{ fontSize: 13, background: '#F5F5F2', borderRadius: 8, padding: '16px', lineHeight: 1.8 }}>
+          <div style={{ fontWeight: 800, marginBottom: 8, color: '#1A1A1A' }}>
+            {result.dry_run ? '🔍 Dry Run Results' : '✅ Rescore Complete'}
+          </div>
+          <div style={{ color: '#555' }}>
+            <div>Scored: <strong>{String(result.updated)}</strong> of <strong>{String(result.total)}</strong></div>
+            {result.failed ? <div style={{ color: '#E8813A' }}>Failed: {String(result.failed)}</div> : null}
+            <div>Range: <strong>{Array.isArray(result.range) ? `${result.range[0]}–${result.range[1]}` : '—'}</strong></div>
+            <div>Mean: <strong>{String(result.mean)}</strong></div>
+            <div>Unique scores: <strong>{String(result.unique)}</strong></div>
+            <div style={{ marginTop: 8, fontWeight: 700 }}>Most common:</div>
+            {Array.isArray(result.most_common) && result.most_common.map(([score, count]: [number, number]) => (
+              <div key={score} style={{ paddingLeft: 12 }}>{score}: {count}×</div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function AdminPanel({ onClose }: { onClose: () => void }) {
   const [activeTab, setActiveTab] = useState<ActiveTab>('prompts');
@@ -33,7 +118,6 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
       {/* Header + Tabs */}
       <div style={{ background: '#FFF', borderBottom: '1px solid #EEE' }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '8px 24px 0', boxSizing: 'border-box' }}>
-          {/* Back + tabs on one line */}
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <button
               onClick={onClose}
@@ -49,6 +133,7 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
               {tabBtn('design', 'Design Tokens')}
               {tabBtn('podcasts', 'Podcasts')}
               {tabBtn('news', 'News Bundles')}
+              {tabBtn('tools', 'Tools')}
             </div>
           </div>
         </div>
@@ -66,6 +151,8 @@ export default function AdminPanel({ onClose }: { onClose: () => void }) {
           <div style={{ padding: 24 }}>
             <NewsBundleForm />
           </div>
+        ) : activeTab === 'tools' ? (
+          <ToolsSection />
         ) : (
           <div style={{ padding: 24 }}>
             <SimplifiedDesignEditor onClose={() => {}} />

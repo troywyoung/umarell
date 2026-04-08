@@ -1070,6 +1070,36 @@ async def pin_episode_bundle(
     return {"ok": True, "pinned": new_state, "count": len(obs_list)}
 
 
+@app.post("/episodes/{tag}/retry", status_code=200)
+async def retry_episode_bundle(
+    tag: str,
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
+    current_user: User | None = Depends(get_current_user),
+):
+    """Admin-only: re-queue all errored observations in an episode bundle."""
+    if not current_user or not _is_admin(current_user):
+        raise HTTPException(403, "Admin only")
+    from sqlalchemy import select as sa_select
+    result = await db.execute(
+        sa_select(Observation).where(
+            Observation.episode_tag == tag,
+            Observation.status == "error"
+        )
+    )
+    obs_list = result.scalars().all()
+    if not obs_list:
+        return {"ok": True, "retried": 0, "message": "No errored observations in this bundle"}
+    instance_key = await get_instance_key(request)
+    for obs in obs_list:
+        obs.status = "pending"
+        obs.error_detail = None
+    await db.commit()
+    for obs in obs_list:
+        asyncio.create_task(_run_pipeline(str(obs.id), obs.raw_input, obs.input_type or "text", instance_key=instance_key))
+    return {"ok": True, "retried": len(obs_list)}
+
+
 @app.delete("/episodes/{tag}", status_code=200)
 async def delete_episode_bundle(
     tag: str,
