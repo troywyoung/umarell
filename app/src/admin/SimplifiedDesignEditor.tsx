@@ -396,6 +396,16 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
         </button>
       </div>
 
+      {/* Branding / Logo */}
+      <div style={sectionStyle}>
+        <h3 style={headingStyle}>Logo</h3>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 20 }}>
+          {['logo_accent_text', 'logo_plain_text', 'logo_size']
+            .filter(k => data.tokens[k] !== undefined)
+            .map(renderTokenField)}
+        </div>
+      </div>
+
       {/* Colors */}
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Colors</h3>
