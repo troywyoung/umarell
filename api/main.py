@@ -1770,7 +1770,6 @@ async def test_scoring(admin_key: str):
 # ─── Migration: rescore all observations ────────────────────────────────────
 
 class RescoreBody(BaseModel):
-    admin_key: str
     dry_run: bool = False
 
 def _rank_normalize(raw_scores: list[float], lo: float = 22.0, hi: float = 91.0) -> list[float]:
@@ -1793,60 +1792,88 @@ def _rank_normalize(raw_scores: list[float], lo: float = 22.0, hi: float = 91.0)
     return [round(lo + (rank_map[s] / (n - 1)) * (hi - lo)) for s in raw_scores]
 
 
+_rescore_status: dict = {"running": False, "done": False, "result": None}
+
+async def _run_rescore_bg(obs_ids: list[str], dry_run: bool):
+    """Background rescore task — runs after HTTP response is sent."""
+    global _rescore_status
+    _rescore_status = {"running": True, "done": False, "result": None}
+    try:
+        async with AsyncSessionLocal() as db:
+            result = await db.execute(
+                select(Observation).where(
+                    Observation.status == "complete",
+                    Observation.thesis != None,
+                    Observation.id.in_(obs_ids),
+                )
+            )
+            obs_list = list(result.scalars().all())
+
+            results, failed = [], 0
+            for obs in obs_list:
+                try:
+                    sm_text = obs.summary or ""
+                    meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
+                    results.append((obs, meta))
+                except Exception as e:
+                    print(f"[rescore] failed {obs.id}: {e}")
+                    failed += 1
+
+            raw_scores = [m.get("score") or 0       for _, m in results]
+            raw_brazen = [m.get("brazen_score") or 0 for _, m in results]
+            norm_scores = _rank_normalize(raw_scores, lo=15.0, hi=95.0)
+            norm_brazen = _rank_normalize(raw_brazen, lo=10.0, hi=95.0)
+
+            if not dry_run:
+                for (obs, meta), ns, nb in zip(results, norm_scores, norm_brazen):
+                    obs.score        = ns
+                    obs.brazen_score = nb
+                    obs.tags         = meta.get("tags")
+                    obs.evidence_type = meta.get("evidence_type")
+                    obs.category     = meta.get("category")
+                    obs.is_hot_take  = bool(ns >= 82 and nb >= 72)
+                await db.commit()
+
+            from collections import Counter
+            valid = sorted(norm_scores)
+            hot_count = sum(1 for ns, nb in zip(norm_scores, norm_brazen) if ns >= 82 and nb >= 72)
+            _rescore_status = {
+                "running": False, "done": True,
+                "result": {
+                    "total": len(obs_ids), "updated": len(results), "failed": failed,
+                    "dry_run": dry_run,
+                    "range": [min(valid), max(valid)] if valid else [],
+                    "mean": round(sum(valid) / len(valid), 1) if valid else None,
+                    "unique": len(set(valid)),
+                    "hot_takes": hot_count,
+                }
+            }
+    except Exception as e:
+        _rescore_status = {"running": False, "done": True, "result": {"error": str(e)}}
+        print(f"[rescore] background task failed: {e}")
+
+
 @app.post("/admin/rescore")
-async def rescore_all(body: RescoreBody, db: AsyncSession = Depends(get_db)):
-    """Re-run generate_metadata on every complete observation using the current scoring prompt."""
-    if body.admin_key != settings.google_api_key:
-        raise HTTPException(403, "Invalid admin key")
-
+async def rescore_all(body: RescoreBody, current_user: User = Depends(require_user), db: AsyncSession = Depends(get_db)):
+    """Kick off rescore as background task — returns immediately."""
+    if not _is_admin(current_user):
+        raise HTTPException(403)
+    if _rescore_status.get("running"):
+        raise HTTPException(409, "Rescore already in progress")
     result = await db.execute(
-        select(Observation).where(Observation.status == "complete", Observation.thesis != None)
+        select(Observation.id).where(Observation.status == "complete", Observation.thesis != None)
     )
-    obs_list = list(result.scalars().all())
+    obs_ids = [str(r[0]) for r in result.all()]
+    asyncio.create_task(_run_rescore_bg(obs_ids, body.dry_run))
+    return {"ok": True, "queued": len(obs_ids), "dry_run": body.dry_run}
 
-    # Pass 1: collect all raw scores without saving
-    results = []  # list of (obs, meta) tuples
-    failed = 0
-    for obs in obs_list:
-        try:
-            sm_text = obs.summary or ""
-            meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
-            results.append((obs, meta))
-        except Exception as e:
-            print(f"[rescore] failed {obs.id}: {e}")
-            failed += 1
 
-    # Pass 2: rank-normalize scores and brazen_scores across the full set
-    raw_scores  = [m.get("score") or 0        for _, m in results]
-    raw_brazen  = [m.get("brazen_score") or 0  for _, m in results]
-    norm_scores = _rank_normalize(raw_scores,  lo=15.0, hi=95.0)
-    norm_brazen = _rank_normalize(raw_brazen,  lo=10.0, hi=95.0)
-
-    # Pass 3: save
-    if not body.dry_run:
-        for (obs, meta), ns, nb in zip(results, norm_scores, norm_brazen):
-            obs.score       = ns
-            obs.brazen_score = nb
-            obs.tags         = meta.get("tags")
-            obs.evidence_type = meta.get("evidence_type")
-            obs.category     = meta.get("category")
-            # hot take = top ~10% of score AND top ~20% of brazen
-            obs.is_hot_take  = bool(ns >= 82 and nb >= 72)
-        await db.commit()
-
-    valid = sorted(norm_scores)
-    from collections import Counter
-    top = Counter(norm_scores).most_common(5)
-    hot_count = sum(1 for ns, nb in zip(norm_scores, norm_brazen) if ns >= 82 and nb >= 72)
-    return {
-        "total": len(obs_list), "updated": len(results), "failed": failed,
-        "dry_run": body.dry_run,
-        "range": [min(valid), max(valid)] if valid else [],
-        "mean": round(sum(valid) / len(valid), 1) if valid else None,
-        "unique": len(set(valid)),
-        "most_common": top,
-        "hot_takes": hot_count,
-    }
+@app.get("/admin/rescore/status")
+async def rescore_status(current_user: User = Depends(require_user)):
+    """Poll rescore progress."""
+    if not _is_admin(current_user):
+        raise HTTPException(403)
+    return _rescore_status
 
 
 # ─── Migration: bulk restore summaries from backup ───────────────────────────

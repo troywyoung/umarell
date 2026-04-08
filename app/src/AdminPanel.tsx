@@ -18,10 +18,10 @@ function ToolsSection() {
     if (pollRef[0]) { clearInterval(pollRef[0]); pollRef[0] = null; }
   };
 
-  const startPolling = (adminKey: string) => {
+  const startPolling = () => {
     const interval = setInterval(async () => {
       try {
-        const resp = await fetch(`${API}/admin/rescore/status?admin_key=${encodeURIComponent(adminKey)}`, {
+        const resp = await fetch(`${API}/admin/rescore/status`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('sm_token') || ''}` },
         });
         const data = await resp.json();
@@ -53,12 +53,10 @@ function ToolsSection() {
     setStatusMsg('Queuing rescore…');
     stopPolling();
     try {
-      const adminKey = import.meta.env.VITE_GOOGLE_API_KEY || prompt('Enter admin key:');
-      if (!adminKey) { setRescoring(false); setStatusMsg(''); return; }
       const resp = await fetch(`${API}/admin/rescore`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('sm_token') || ''}` },
-        body: JSON.stringify({ admin_key: adminKey, dry_run: dryRun }),
+        body: JSON.stringify({ dry_run: dryRun }),
       });
       const data = await resp.json();
       if (!resp.ok) {
@@ -69,7 +67,7 @@ function ToolsSection() {
       }
       if (data.queued !== undefined) {
         setStatusMsg(`Queued ${data.queued} observations — scoring in background…`);
-        startPolling(adminKey);
+        startPolling();
       } else {
         // Synchronous result (dry_run or already done)
         setResult(data);
