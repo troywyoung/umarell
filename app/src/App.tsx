@@ -2954,9 +2954,18 @@ export default function App() {
   
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginBottom: 16, position: "relative", zIndex: 1 }}>
           <BurstIcon size={130} />
-          <span style={{ fontSize: 25, fontWeight: 900, letterSpacing: "var(--letter-spacing-headline, -1.5px)", color: "#FFF", marginTop: -18, fontFamily: "var(--font-display, 'Besley', serif)" }}>
-            <span style={{ color: "var(--color-accent, #FF00AE)" }}>hot</span>take
-          </span>
+          {(() => {
+            const branding = (config?.design_tokens as unknown as Record<string, Record<string, string>>)?.branding;
+            const logoAccent = branding?.logo_accent_text ?? "hot";
+            const logoPlain  = branding?.logo_plain_text  ?? "take";
+            const logoSize   = parseInt(branding?.logo_size || "25") || 25;
+            return (
+              <span style={{ fontSize: logoSize, fontWeight: 900, letterSpacing: "var(--letter-spacing-headline, -1.5px)", color: "#FFF", marginTop: -18, fontFamily: "var(--font-display, 'Besley', serif)" }}>
+                <span style={{ color: "var(--color-accent, #FF00AE)" }}>{logoAccent}</span>
+                <span style={{ color: "#FFF" }}>{logoPlain}</span>
+              </span>
+            );
+          })()}
         </div>
         <p style={{ color: "rgba(255,255,255,0.45)", fontSize: 13, margin: "0 0 40px", textAlign: "center", lineHeight: 1.7, letterSpacing: -0.1, position: "relative", zIndex: 1 }}>
           Drop a hot take.<br />
