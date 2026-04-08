@@ -1042,6 +1042,19 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     </span>
                   </div>
                 )}
+                {obs.status === "error" && authUser?.is_admin && (
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "0 12px 8px" }}>
+                    <span style={{ fontSize: 9, color: "#E8813A", fontWeight: 600 }}>⚠ Pipeline error</span>
+                    <button
+                      onClick={async (e) => {
+                        e.stopPropagation();
+                        await fetch(`${API}/hot-takes/observations/${obs.id}/retry`, { method: "POST", headers: authHeaders() });
+                        onRefresh();
+                      }}
+                      style={{ fontSize: 9, fontWeight: 700, color: "#FF00AE", background: "rgba(255,0,174,0.08)", border: "1px solid rgba(255,0,174,0.25)", borderRadius: 12, padding: "2px 8px", cursor: "pointer", WebkitTapHighlightColor: "transparent" }}
+                    >↺ Retry</button>
+                  </div>
+                )}
                 {(() => {
                   const myTakes = yourTakeMap[obs.id] || [];
                   if (myTakes.length === 0) return null;
@@ -1210,6 +1223,16 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
               onRefresh();
             };
 
+            const deleteBundle = async (e: React.MouseEvent) => {
+              e.stopPropagation();
+              if (!window.confirm(`Delete entire bundle "${title}"?\nThis removes all ${orderedPosts.length} takes permanently.`)) return;
+              await fetch(`${API}/episodes/${encodeURIComponent(tag)}`, {
+                method: 'DELETE',
+                headers: { Authorization: `Bearer ${localStorage.getItem('sm_token') || ''}` },
+              });
+              onRefresh();
+            };
+
             const toggleExpand = (e: React.MouseEvent) => {
               e.stopPropagation();
               setExpandedEpisodes(prev => {
@@ -1251,11 +1274,22 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     </div>
                     <div style={{ display: "flex", gap: 6, alignItems: "center", flexShrink: 0 }}>
                       {authUser?.is_admin && (
-                        <button
-                          onClick={toggleBundlePin}
-                          style={{ background: "none", border: "none", padding: "3px 6px", fontSize: 14, cursor: "pointer", opacity: isBundlePinned ? 1 : 0.35, WebkitTapHighlightColor: "transparent" }}
-                          title={isBundlePinned ? "Unpin bundle" : "Pin bundle to top"}
-                        >📌</button>
+                        <>
+                          <button
+                            onClick={toggleBundlePin}
+                            style={{ background: "none", border: "none", padding: "3px 6px", fontSize: 14, cursor: "pointer", opacity: isBundlePinned ? 1 : 0.35, WebkitTapHighlightColor: "transparent" }}
+                            title={isBundlePinned ? "Unpin bundle" : "Pin bundle to top"}
+                          >📌</button>
+                          <button
+                            onClick={deleteBundle}
+                            style={{ background: "none", border: "none", padding: "3px 6px", cursor: "pointer", opacity: 0.4, WebkitTapHighlightColor: "transparent", display: "flex", alignItems: "center" }}
+                            title="Delete entire bundle"
+                          >
+                            <svg width={13} height={13} viewBox="0 0 14 16" fill="none" stroke="rgba(255,255,255,0.8)" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M1 3.5h12M5 3.5V2h4v1.5M2 3.5l.8 10h8.4l.8-10M5.5 6.5v5M8.5 6.5v5"/>
+                            </svg>
+                          </button>
+                        </>
                       )}
                       <button
                         onClick={toggleExpand}
@@ -1312,11 +1346,22 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       Expand
                     </span>
                     {authUser?.is_admin && (
-                      <button
-                        onClick={toggleBundlePin}
-                        style={{ background: "none", border: "none", padding: 0, fontSize: 13, cursor: "pointer", opacity: isBundlePinned ? 1 : 0.3, WebkitTapHighlightColor: "transparent" }}
-                        title={isBundlePinned ? "Unpin bundle" : "Pin bundle to top"}
-                      >📌</button>
+                      <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+                        <button
+                          onClick={toggleBundlePin}
+                          style={{ background: "none", border: "none", padding: 0, fontSize: 13, cursor: "pointer", opacity: isBundlePinned ? 1 : 0.3, WebkitTapHighlightColor: "transparent" }}
+                          title={isBundlePinned ? "Unpin bundle" : "Pin bundle to top"}
+                        >📌</button>
+                        <button
+                          onClick={deleteBundle}
+                          style={{ background: "none", border: "none", padding: 0, cursor: "pointer", opacity: 0.35, WebkitTapHighlightColor: "transparent", display: "flex", alignItems: "center" }}
+                          title="Delete entire bundle"
+                        >
+                          <svg width={12} height={12} viewBox="0 0 14 16" fill="none" stroke="#1A1A1A" strokeWidth={1.4} strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M1 3.5h12M5 3.5V2h4v1.5M2 3.5l.8 10h8.4l.8-10M5.5 6.5v5M8.5 6.5v5"/>
+                          </svg>
+                        </button>
+                      </div>
                     )}
                   </div>
                 </div>

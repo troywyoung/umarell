@@ -1054,6 +1054,27 @@ async def pin_episode_bundle(
     return {"ok": True, "pinned": new_state, "count": len(obs_list)}
 
 
+@app.delete("/episodes/{tag}", status_code=200)
+async def delete_episode_bundle(
+    tag: str,
+    request: Request,
+    db: AsyncSession = Depends(get_instance_db_session),
+    current_user: User | None = Depends(get_current_user),
+):
+    """Admin-only: delete all observations in an episode bundle."""
+    if not current_user or not _is_admin(current_user):
+        raise HTTPException(403, "Admin only")
+    from sqlalchemy import select as sa_select, delete as sa_delete
+    result = await db.execute(sa_select(Observation).where(Observation.episode_tag == tag))
+    obs_list = result.scalars().all()
+    if not obs_list:
+        raise HTTPException(404, "No observations found for that tag")
+    count = len(obs_list)
+    await db.execute(sa_delete(Observation).where(Observation.episode_tag == tag))
+    await db.commit()
+    return {"ok": True, "deleted": count}
+
+
 # ─── Episode seed ───────────────────────────────────────────────────────────
 
 class EpisodeSeed(BaseModel):
