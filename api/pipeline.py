@@ -119,7 +119,11 @@ async def _call_gemini(system: str, user: str, max_tokens: int, retries: int, us
             if resp.text is None:
                 finish = getattr(resp.candidates[0], 'finish_reason', 'UNKNOWN') if resp.candidates else 'NO_CANDIDATES'
                 print(f"[pipeline/gemini] empty response (finish_reason={finish}), falling back to Claude")
-                return await _call_anthropic(system, user, max_tokens, retries, return_metadata)
+                result = await _call_anthropic(system, user, max_tokens, retries, return_metadata)
+                # _call_anthropic returns plain text (or metadata dict); patch return shape to match caller expectations
+                if use_search:
+                    return result, []  # no sources from Claude fallback
+                return result
             text = resp.text.strip()
 
             if return_metadata:
