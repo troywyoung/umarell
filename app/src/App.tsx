@@ -2960,7 +2960,7 @@ export default function App() {
             const logoPlain  = branding?.logo_plain_text  ?? "take";
             const logoSize   = parseInt(branding?.logo_size || "25") || 25;
             return (
-              <span style={{ fontSize: logoSize, fontWeight: 900, letterSpacing: "var(--letter-spacing-headline, -1.5px)", color: "#FFF", marginTop: -18, fontFamily: "var(--font-display, 'Besley', serif)" }}>
+              <span style={{ fontSize: logoSize, fontWeight: 400, letterSpacing: "var(--letter-spacing-headline, -1.5px)", color: "#FFF", marginTop: -18, fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}>
                 <span style={{ color: "var(--color-accent, #FF00AE)" }}>{logoAccent}</span>
                 <span style={{ color: "#FFF" }}>{logoPlain}</span>
               </span>
