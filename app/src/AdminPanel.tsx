@@ -11,25 +11,75 @@ function ToolsSection() {
   const [rescoring, setRescoring] = useState(false);
   const [result, setResult] = useState<Record<string, unknown> | null>(null);
   const [error, setError] = useState('');
+  const [statusMsg, setStatusMsg] = useState('');
+  const pollRef = useState<ReturnType<typeof setInterval> | null>(null);
+
+  const stopPolling = () => {
+    if (pollRef[0]) { clearInterval(pollRef[0]); pollRef[0] = null; }
+  };
+
+  const startPolling = (adminKey: string) => {
+    const interval = setInterval(async () => {
+      try {
+        const resp = await fetch(`${API}/admin/rescore/status?admin_key=${encodeURIComponent(adminKey)}`, {
+          headers: { Authorization: `Bearer ${localStorage.getItem('sm_token') || ''}` },
+        });
+        const data = await resp.json();
+        if (data.done) {
+          clearInterval(interval);
+          pollRef[0] = null;
+          setRescoring(false);
+          setStatusMsg('');
+          if (data.result?.error) {
+            setError(data.result.error);
+          } else {
+            setResult(data.result);
+          }
+        } else if (data.running) {
+          const prog = data.result?.progress;
+          setStatusMsg(prog ? `Scored ${prog.done} of ${prog.total}…` : 'Running…');
+        }
+      } catch {
+        // ignore transient poll errors
+      }
+    }, 3000);
+    pollRef[0] = interval;
+  };
 
   const runRescore = async (dryRun: boolean) => {
     setRescoring(true);
     setResult(null);
     setError('');
+    setStatusMsg('Queuing rescore…');
+    stopPolling();
     try {
       const adminKey = import.meta.env.VITE_GOOGLE_API_KEY || prompt('Enter admin key:');
-      if (!adminKey) { setRescoring(false); return; }
+      if (!adminKey) { setRescoring(false); setStatusMsg(''); return; }
       const resp = await fetch(`${API}/admin/rescore`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${localStorage.getItem('sm_token') || ''}` },
         body: JSON.stringify({ admin_key: adminKey, dry_run: dryRun }),
       });
       const data = await resp.json();
-      setResult(data);
+      if (!resp.ok) {
+        setError(data.detail || 'Failed to start rescore');
+        setRescoring(false);
+        setStatusMsg('');
+        return;
+      }
+      if (data.queued !== undefined) {
+        setStatusMsg(`Queued ${data.queued} observations — scoring in background…`);
+        startPolling(adminKey);
+      } else {
+        // Synchronous result (dry_run or already done)
+        setResult(data);
+        setRescoring(false);
+        setStatusMsg('');
+      }
     } catch (e: unknown) {
       setError(e instanceof Error ? e.message : 'Unknown error');
-    } finally {
       setRescoring(false);
+      setStatusMsg('');
     }
   };
 
@@ -59,7 +109,7 @@ function ToolsSection() {
 
       {rescoring && (
         <div style={{ fontSize: 13, color: '#888', padding: '12px 16px', background: '#F5F5F2', borderRadius: 8 }}>
-          Running… this may take a few minutes for large databases.
+          {statusMsg || 'Running… this may take a few minutes for large databases.'}
         </div>
       )}
 
@@ -77,11 +127,14 @@ function ToolsSection() {
           <div style={{ color: '#555' }}>
             <div>Scored: <strong>{String(result.updated)}</strong> of <strong>{String(result.total)}</strong></div>
             {result.failed ? <div style={{ color: '#E8813A' }}>Failed: {String(result.failed)}</div> : null}
-            <div>Range: <strong>{Array.isArray(result.range) ? `${result.range[0]}–${result.range[1]}` : '—'}</strong></div>
+            <div>Range: <strong>{Array.isArray(result.range) ? `${(result.range as number[])[0]}–${(result.range as number[])[1]}` : '—'}</strong></div>
             <div>Mean: <strong>{String(result.mean)}</strong></div>
             <div>Unique scores: <strong>{String(result.unique)}</strong></div>
+            {result.hot_takes !== undefined && (
+              <div>Hot takes: <strong style={{ color: '#FF00AE' }}>{String(result.hot_takes)}</strong></div>
+            )}
             <div style={{ marginTop: 8, fontWeight: 700 }}>Most common:</div>
-            {Array.isArray(result.most_common) && result.most_common.map(([score, count]: [number, number]) => (
+            {Array.isArray(result.most_common) && (result.most_common as [number, number][]).map(([score, count]) => (
               <div key={score} style={{ paddingLeft: 12 }}>{score}: {count}×</div>
             ))}
           </div>
