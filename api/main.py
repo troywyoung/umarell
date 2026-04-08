@@ -690,9 +690,23 @@ async def list_observations(
     db: AsyncSession = Depends(get_instance_db_session),
     current_user: User | None = Depends(get_current_user),
 ):
-    query = select(Observation).order_by(desc(Observation.created_at)).limit(100)
-    result = await db.execute(query)
-    return await _attach_user_names(db, list(result.scalars().all()))
+    from sqlalchemy import or_
+    # Always include pinned observations + the 300 most recent
+    pinned_q = select(Observation).where(Observation.pinned == True).order_by(desc(Observation.created_at))
+    recent_q = select(Observation).order_by(desc(Observation.created_at)).limit(300)
+    pinned_result = await db.execute(pinned_q)
+    recent_result = await db.execute(recent_q)
+    pinned_obs = list(pinned_result.scalars().all())
+    recent_obs = list(recent_result.scalars().all())
+    # Merge, deduplicate, preserve order
+    seen = set()
+    merged = []
+    for o in pinned_obs + recent_obs:
+        if o.id not in seen:
+            seen.add(o.id)
+            merged.append(o)
+    merged.sort(key=lambda o: o.created_at, reverse=True)
+    return await _attach_user_names(db, merged)
 
 
 @app.get("/observations/{obs_id}")
