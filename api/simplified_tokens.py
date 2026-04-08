@@ -7,6 +7,9 @@ maximum visual impact with minimal complexity.
 """
 
 SIMPLIFIED_TOKENS = {
+    "logo_accent_text": "hot",
+    "logo_plain_text": "take",
+    "logo_size": "27px",
     "primary_accent": "#FF00AE",
     "dark_background": "#12102B",
     "dark_text": "#1A1A1A",
@@ -28,6 +31,9 @@ SIMPLIFIED_TOKENS = {
 
 # Mapping from simplified tokens back to full design token paths
 TOKEN_MAPPINGS = {
+    "logo_accent_text": ["branding", "logo_accent_text"],
+    "logo_plain_text":  ["branding", "logo_plain_text"],
+    "logo_size":        ["branding", "logo_size"],
     "primary_accent": ["colors", "primary", "accent"],
     "dark_background": ["colors", "primary", "dark_bg"],
     "dark_text": ["colors", "primary", "dark_text"],
@@ -49,6 +55,9 @@ TOKEN_MAPPINGS = {
 
 # Human-readable labels for the UI
 TOKEN_LABELS = {
+    "logo_accent_text": "Logo — Accent Part (colored)",
+    "logo_plain_text":  "Logo — Plain Part (white)",
+    "logo_size":        "Logo Font Size",
     "primary_accent": "Primary Accent Color",
     "dark_background": "Dark Background",
     "dark_text": "Dark Text Color",
@@ -70,6 +79,9 @@ TOKEN_LABELS = {
 
 # Descriptions for each token
 TOKEN_DESCRIPTIONS = {
+    "logo_accent_text": "The accent-colored (pink) part of the logo wordmark",
+    "logo_plain_text":  "The plain (white) part of the logo wordmark",
+    "logo_size":        "Font size of the logo in px (e.g. 27px)",
     "primary_accent": "Main brand color used for buttons and highlights",
     "dark_background": "Color behind cards on feed, detail, and capture pages",
     "dark_text": "Primary text color for dark text on light backgrounds",

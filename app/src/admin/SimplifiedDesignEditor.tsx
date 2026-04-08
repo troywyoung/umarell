@@ -144,8 +144,66 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
   const hasUnsavedChanges = () =>
     Object.keys(editedTokens).some(key => editedTokens[key] !== savedTokens[key]);
 
+  const isLogoTextField = (key: string) => ['logo_accent_text', 'logo_plain_text'].includes(key);
+  const isLogoSizeToken = (key: string) => key === 'logo_size';
+
   const renderTokenField = (key: string) => {
     const currentValue = editedTokens[key] ?? '';
+
+    if (isLogoTextField(key)) {
+      const accentText = editedTokens['logo_accent_text'] ?? 'hot';
+      const plainText  = editedTokens['logo_plain_text']  ?? 'take';
+      const logoSize   = parseInt(editedTokens['logo_size'] || '27') || 27;
+      const displayFont = editedTokens['display_font_family'] || "'Besley', serif";
+      const letterSpacing = editedTokens['headline_letter_spacing'] || '-1.5px';
+      return (
+        <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+          <label style={{ fontSize: 12, fontWeight: 600, color: '#1A1A1A' }}>{data!.labels[key]}</label>
+          <input
+            type="text"
+            value={currentValue}
+            onChange={e => handleTokenChange(key, e.target.value)}
+            style={{ padding: '8px 10px', border: '1px solid #DDD', borderRadius: 6, fontSize: 13, fontFamily: 'inherit', outline: 'none' }}
+          />
+          {key === 'logo_plain_text' && (
+            <div style={{ padding: '12px 16px', borderRadius: 6, background: '#12102B', display: 'flex', justifyContent: 'center' }}>
+              <span style={{ fontSize: logoSize, fontWeight: 400, fontFamily: displayFont, letterSpacing, lineHeight: 1 }}>
+                <span style={{ color: '#FF00AE' }}>{accentText}</span>
+                <span style={{ color: '#FFF' }}>{plainText}</span>
+              </span>
+            </div>
+          )}
+        </div>
+      );
+    }
+
+    if (isLogoSizeToken(key)) {
+      const px = parseInt(currentValue) || 27;
+      const accentText = editedTokens['logo_accent_text'] ?? 'hot';
+      const plainText  = editedTokens['logo_plain_text']  ?? 'take';
+      const displayFont = editedTokens['display_font_family'] || "'Besley', serif";
+      const letterSpacing = editedTokens['headline_letter_spacing'] || '-1.5px';
+      return (
+        <div key={key} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
+            <label style={{ fontSize: 12, fontWeight: 600, color: '#1A1A1A' }}>{data!.labels[key]}</label>
+            <span style={{ fontSize: 13, fontWeight: 700, color: '#FF00AE' }}>{px}px</span>
+          </div>
+          <input
+            type="range" min={16} max={60} step={1}
+            value={px}
+            onChange={e => handleTokenChange(key, `${e.target.value}px`)}
+            style={{ width: '100%', accentColor: '#FF00AE' }}
+          />
+          <div style={{ padding: '12px 16px', borderRadius: 6, background: '#12102B', display: 'flex', justifyContent: 'center' }}>
+            <span style={{ fontSize: px, fontWeight: 400, fontFamily: displayFont, letterSpacing, lineHeight: 1 }}>
+              <span style={{ color: '#FF00AE' }}>{accentText}</span>
+              <span style={{ color: '#FFF' }}>{plainText}</span>
+            </span>
+          </div>
+        </div>
+      );
+    }
 
     if (isSizeToken(key)) {
       const px = parseInt(currentValue) || (key === 'detail_headline_size' ? 20 : 14);

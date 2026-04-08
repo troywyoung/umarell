@@ -819,7 +819,18 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
 
       {/* Branding */}
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "44px 0 2px" }}>
-        <span style={{ fontSize: 27, fontWeight: 400, letterSpacing: "var(--letter-spacing-headline, -1.5px)", fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}><span style={{ color: "var(--color-accent, #FF00AE)" }}>hot</span><span style={{ color: "#FFF" }}>take</span></span>
+        {(() => {
+          const branding = (config?.design_tokens as unknown as Record<string, Record<string, string>>)?.branding;
+          const logoAccent = branding?.logo_accent_text ?? "hot";
+          const logoPlain  = branding?.logo_plain_text  ?? "take";
+          const logoSize   = parseInt(branding?.logo_size || "27") || 27;
+          return (
+            <span style={{ fontSize: logoSize, fontWeight: 400, letterSpacing: "var(--letter-spacing-headline, -1.5px)", fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1 }}>
+              <span style={{ color: "var(--color-accent, #FF00AE)" }}>{logoAccent}</span>
+              <span style={{ color: "#FFF" }}>{logoPlain}</span>
+            </span>
+          );
+        })()}
       </div>
 
       <style>{`
