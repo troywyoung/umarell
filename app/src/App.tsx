@@ -896,7 +896,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
             : selectedTopic === "__hot__"
               ? [...hotTakes].sort((a, b) => (b.score || 0) - (a.score || 0))
               : !selectedTopic || selectedTopic === "__all__"
-                ? pinnedFirst(topLevel)
+                ? [...topLevel].sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime())
                 : selectedTopic === "PvA"
                   ? pinnedFirst(topLevel.filter(o => !!o.episode_tag))
                   : pinnedFirst(topLevel.filter(o => (o.tags || []).includes(selectedTopic)));
