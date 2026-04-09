@@ -818,20 +818,26 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
       </div>
 
       {/* Branding */}
-      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", padding: "44px 0 2px" }}>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "44px 0 2px" }}>
         {(() => {
           const branding = (config?.design_tokens as unknown as Record<string, Record<string, string>>)?.branding;
           const logoAccent = branding?.logo_accent_text ?? "hot";
           const logoPlain  = branding?.logo_plain_text  ?? "take";
           const logoSize   = parseInt(branding?.logo_size || "27") || 27;
+          const tagline    = branding?.logo_tagline ?? "";
           return (
-            <span
-              onClick={() => window.location.href = "/"}
-              style={{ fontSize: logoSize, fontWeight: 400, letterSpacing: "var(--letter-spacing-headline, -1.5px)", fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1, cursor: "pointer" }}
-            >
-              <span style={{ color: "var(--color-accent, #FF00AE)" }}>{logoAccent}</span>
-              <span style={{ color: "#FFF" }}>{logoPlain}</span>
-            </span>
+            <>
+              <span
+                onClick={() => window.location.href = "/"}
+                style={{ fontSize: logoSize, fontWeight: 400, letterSpacing: "var(--letter-spacing-headline, -1.5px)", fontFamily: "var(--font-display, 'Besley', serif)", lineHeight: 1, cursor: "pointer" }}
+              >
+                <span style={{ color: "var(--color-accent, #FF00AE)" }}>{logoAccent}</span>
+                <span style={{ color: "#FFF" }}>{logoPlain}</span>
+              </span>
+              {tagline && (
+                <p style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", margin: "6px 0 0", letterSpacing: 0, lineHeight: 1.4, textAlign: "center" }}>{tagline}</p>
+              )}
+            </>
           );
         })()}
       </div>

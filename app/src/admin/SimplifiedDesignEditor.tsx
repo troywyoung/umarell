@@ -400,7 +400,7 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
       <div style={sectionStyle}>
         <h3 style={headingStyle}>Logo</h3>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: 20 }}>
-          {['logo_accent_text', 'logo_plain_text', 'logo_size']
+          {['logo_accent_text', 'logo_plain_text', 'logo_size', 'logo_tagline']
             .filter(k => data.tokens[k] !== undefined)
             .map(renderTokenField)}
         </div>
