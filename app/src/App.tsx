@@ -835,7 +835,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                 <span style={{ color: "#FFF" }}>{logoPlain}</span>
               </span>
               {tagline && (
-                <p style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", margin: "6px 0 0", letterSpacing: 0, lineHeight: 1.4, textAlign: "center" }}>{tagline}</p>
+                <p style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", margin: "2px 0 0", letterSpacing: 0, lineHeight: 1.4, textAlign: "center" }}>{tagline}</p>
               )}
             </>
           );
