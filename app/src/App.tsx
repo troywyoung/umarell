@@ -635,7 +635,7 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
   onLegal: (page: "privacy" | "terms") => void;
 }) {
   const { config } = useInstanceConfig();
-  const [selectedTopic, setSelectedTopic] = useState<string | null>("__top__");
+  const [selectedTopic, setSelectedTopic] = useState<string | null>("__all__");
   const [jokeMap, setJokeMap] = useState<Record<string, string>>({});
   const [jokeLoading, setJokeLoading] = useState<Set<string>>(new Set());
   const [yourTakeInput, setYourTakeInput] = useState<Set<string>>(new Set());
@@ -1429,11 +1429,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     onClick={() => setSelectedTopic(selectedTopic === "__all__" ? null : "__all__")}
                     style={{
                       flexShrink: 0,
-                      background: selectedTopic === "__all__" ? "rgba(255,255,255,0.15)" : "transparent",
-                      border: selectedTopic === "__all__" ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
+                      background: selectedTopic === "__all__" ? "rgba(255,255,255,0.9)" : "transparent",
+                      border: selectedTopic === "__all__" ? "1.5px solid rgba(255,255,255,0.9)" : "1.5px solid rgba(255,255,255,0.2)",
                       borderRadius: 6, padding: "3px 9px",
                       fontSize: 9, fontWeight: 700,
-                      color: selectedTopic === "__all__" ? "#FFF" : "rgba(255,255,255,0.55)",
+                      color: selectedTopic === "__all__" ? "#1A1A1A" : "rgba(255,255,255,0.55)",
                       cursor: "pointer", WebkitTapHighlightColor: "transparent",
                       fontFamily: "inherit",
                     }}
@@ -1482,11 +1482,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                     onClick={() => setSelectedTopic(selectedTopic === "PvA" ? null : "PvA")}
                     style={{
                       flexShrink: 0,
-                      background: selectedTopic === "PvA" ? "rgba(255,255,255,0.15)" : "transparent",
-                      border: selectedTopic === "PvA" ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
+                      background: selectedTopic === "PvA" ? "rgba(255,255,255,0.9)" : "transparent",
+                      border: selectedTopic === "PvA" ? "1.5px solid rgba(255,255,255,0.9)" : "1.5px solid rgba(255,255,255,0.2)",
                       borderRadius: 6, padding: "3px 9px",
                       fontSize: 9, fontWeight: 700,
-                      color: selectedTopic === "PvA" ? "#FFF" : "rgba(255,255,255,0.55)",
+                      color: selectedTopic === "PvA" ? "#1A1A1A" : "rgba(255,255,255,0.55)",
                       cursor: "pointer", WebkitTapHighlightColor: "transparent",
                       fontFamily: "inherit",
                     }}
@@ -1499,11 +1499,11 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
                       onClick={() => setSelectedTopic(selectedTopic === topic ? null : topic)}
                       style={{
                         flexShrink: 0,
-                        background: selectedTopic === topic ? "rgba(255,255,255,0.15)" : "transparent",
-                        border: selectedTopic === topic ? "1.5px solid rgba(255,255,255,0.6)" : "1.5px solid rgba(255,255,255,0.2)",
+                        background: selectedTopic === topic ? "rgba(255,255,255,0.9)" : "transparent",
+                        border: selectedTopic === topic ? "1.5px solid rgba(255,255,255,0.9)" : "1.5px solid rgba(255,255,255,0.2)",
                         borderRadius: 6, padding: "3px 9px",
                         fontSize: 9, fontWeight: 700,
-                        color: selectedTopic === topic ? "#FFF" : "rgba(255,255,255,0.55)",
+                        color: selectedTopic === topic ? "#1A1A1A" : "rgba(255,255,255,0.55)",
                         cursor: "pointer", WebkitTapHighlightColor: "transparent",
                         fontFamily: "inherit",
                       }}
