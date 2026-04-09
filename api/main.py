@@ -14,7 +14,7 @@ import re
 from database import init_db, get_db, get_instance_db, get_instance_engine, AsyncSessionLocal, Base
 from models import Observation, User, Take, Instance, InstanceConfig, InstancePrompt, PodcastFeed, PromptTestSuite, PromptTestQuery
 from schemas import ObservationCreate, ObservationOut, TakeCreate, TakeOut
-from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, generate_joke, ACTIVE_MODEL
+from pipeline import format_thesis, format_challenge_thesis, generate_steel_man, generate_stress_test, generate_counterpoint, generate_pva_take, generate_metadata, call_bullshit, negate_thesis, generate_joke, evaluate_take, ACTIVE_MODEL
 from config import settings
 from whatsapp import router as whatsapp_router
 from sms import router as sms_router
@@ -271,7 +271,7 @@ async def instance_routing_middleware(request: Request, call_next):
     if match:
         potential_instance = match.group(1)
         # Exclude meta routes that aren't instance-specific
-        if potential_instance not in ["admin", "auth", "health", "instance", "observations", "takes", "episodes", "webhook", "podcasts", "news-bundles", "cards", "legal"]:
+        if potential_instance not in ["admin", "auth", "health", "instance", "observations", "takes", "episodes", "webhook", "podcasts", "news-bundles", "cards", "legal", "evaluate"]:
             request.state.instance_key = potential_instance
             # Rewrite the path to strip the instance prefix so routes match normally
             new_path = match.group(2) or "/"
@@ -594,6 +594,21 @@ async def card_page(obs_id: str, db: AsyncSession = Depends(get_instance_db_sess
 async def health():
     maintenance = os.getenv("MAINTENANCE_MODE", "false").lower() == "true"
     return {"status": "ok", "maintenance": maintenance}
+
+
+# ─── Take Evaluator ──────────────────────────────────────────────────────────
+
+class EvaluateRequest(BaseModel):
+    take: str
+
+
+@app.post("/evaluate")
+async def evaluate_take_endpoint(body: EvaluateRequest):
+    """Evaluate a hot take — no auth required."""
+    if not body.take or not body.take.strip():
+        raise HTTPException(status_code=400, detail="take cannot be empty")
+    result = await evaluate_take(body.take.strip())
+    return result
 
 
 # ─── Observations ─────────────────────────────────────────────────────────────

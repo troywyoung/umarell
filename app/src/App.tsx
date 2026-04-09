@@ -2694,7 +2694,494 @@ function getTokenIsAdmin(): boolean {
   } catch { return false; }
 }
 
+// ─── Take Evaluator ──────────────────────────────────────────────────────────
+
+type EvalResult = {
+  score: number;
+  brazen_score: number;
+  specificity: number;
+  arguability: number;
+  originality: number;
+  verdict: string;
+  tier: "cold" | "mild" | "spicy" | "hot" | "scorching";
+};
+
+const TIER_COLORS: Record<string, string> = {
+  cold: "#64B5F6",
+  mild: "#81C784",
+  spicy: "#FFB74D",
+  hot: "#FF7043",
+  scorching: "#FF00AE",
+};
+
+const TIER_LABELS: Record<string, string> = {
+  cold: "COLD WATER",
+  mild: "MILD TAKE",
+  spicy: "SPICY TAKE",
+  hot: "HOT TAKE",
+  scorching: "SCORCHING",
+};
+
+function ScoreRing({ score, tier, animate }: { score: number; tier: string; animate: boolean }) {
+  const radius = 70;
+  const stroke = 8;
+  const normalizedRadius = radius - stroke / 2;
+  const circumference = 2 * Math.PI * normalizedRadius;
+  const tierColor = TIER_COLORS[tier] || "#FF00AE";
+
+  const [displayScore, setDisplayScore] = useState(0);
+  const [dashOffset, setDashOffset] = useState(circumference);
+
+  useEffect(() => {
+    if (!animate) return;
+    const duration = 1200;
+    const start = performance.now();
+
+    function easeOutCubic(t: number) {
+      return 1 - Math.pow(1 - t, 3);
+    }
+
+    function frame(now: number) {
+      const elapsed = now - start;
+      const t = Math.min(elapsed / duration, 1);
+      const eased = easeOutCubic(t);
+      const current = Math.round(eased * score);
+      setDisplayScore(current);
+      const fillRatio = (eased * score) / 100;
+      setDashOffset(circumference - fillRatio * circumference);
+      if (t < 1) requestAnimationFrame(frame);
+    }
+
+    requestAnimationFrame(frame);
+  }, [animate, score, circumference]);
+
+  const size = radius * 2 + stroke;
+
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", position: "relative" }}>
+      <svg width={size} height={size} style={{ transform: "rotate(-90deg)" }}>
+        <circle
+          cx={radius}
+          cy={radius}
+          r={normalizedRadius}
+          fill="none"
+          stroke="rgba(255,255,255,0.08)"
+          strokeWidth={stroke}
+        />
+        <circle
+          cx={radius}
+          cy={radius}
+          r={normalizedRadius}
+          fill="none"
+          stroke={tierColor}
+          strokeWidth={stroke}
+          strokeDasharray={circumference}
+          strokeDashoffset={dashOffset}
+          strokeLinecap="round"
+          style={{ transition: "none" }}
+        />
+      </svg>
+      <div style={{
+        position: "absolute",
+        top: 0, left: 0, right: 0, bottom: 0,
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: 2,
+      }}>
+        <span style={{ fontSize: 64, fontWeight: 800, color: "#fff", lineHeight: 1, letterSpacing: "-2px" }}>
+          {displayScore}
+        </span>
+        <span style={{ fontSize: 11, fontWeight: 700, color: tierColor, letterSpacing: "0.12em", textTransform: "uppercase" }}>
+          {TIER_LABELS[tier] || tier}
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function DimensionBar({
+  label,
+  value,
+  tier,
+  description,
+  visible,
+}: {
+  label: string;
+  value: number;
+  tier: string;
+  description: string;
+  visible: boolean;
+}) {
+  const tierColor = TIER_COLORS[tier] || "#FF00AE";
+  return (
+    <div style={{ marginBottom: 20 }}>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 5 }}>
+        <span style={{ fontSize: 9, fontWeight: 700, color: "rgba(255,255,255,0.5)", letterSpacing: "0.15em", textTransform: "uppercase" }}>
+          {label}
+        </span>
+        <span style={{ fontSize: 9, fontWeight: 700, color: "rgba(255,255,255,0.5)", letterSpacing: "0.1em" }}>
+          {value}
+        </span>
+      </div>
+      <div style={{
+        height: 3,
+        borderRadius: 99,
+        background: "rgba(255,255,255,0.08)",
+        overflow: "hidden",
+        marginBottom: 6,
+      }}>
+        <div style={{
+          height: "100%",
+          borderRadius: 99,
+          background: tierColor,
+          width: visible ? `${value}%` : "0%",
+          transition: "width 0.6s cubic-bezier(0.34, 1.0, 0.64, 1)",
+        }} />
+      </div>
+      <div style={{ fontSize: 10, color: "rgba(255,255,255,0.35)", lineHeight: 1.4 }}>
+        {description}
+      </div>
+    </div>
+  );
+}
+
+function EvaluatorView() {
+  const [take, setTake] = useState("");
+  const [phase, setPhase] = useState<"input" | "loading" | "result">("input");
+  const [result, setResult] = useState<EvalResult | null>(null);
+  const [error, setError] = useState<string | null>(null);
+
+  // Animation state
+  const [ringAnimating, setRingAnimating] = useState(false);
+  const [verdictVisible, setVerdictVisible] = useState(false);
+  const [barsVisible, setBarsVisible] = useState<boolean[]>([false, false, false, false]);
+
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    if (phase === "result" && result) {
+      setRingAnimating(false);
+      setVerdictVisible(false);
+      setBarsVisible([false, false, false, false]);
+
+      // Start ring animation immediately
+      requestAnimationFrame(() => setRingAnimating(true));
+
+      // Fade in verdict after 800ms
+      const t1 = setTimeout(() => setVerdictVisible(true), 800);
+
+      // Stagger bars after 1200ms (150ms each)
+      const timers = [1200, 1350, 1500, 1650].map((delay, i) =>
+        setTimeout(() => {
+          setBarsVisible(prev => {
+            const next = [...prev];
+            next[i] = true;
+            return next;
+          });
+        }, delay)
+      );
+
+      return () => {
+        clearTimeout(t1);
+        timers.forEach(clearTimeout);
+      };
+    }
+  }, [phase, result]);
+
+  const submit = async () => {
+    if (!take.trim()) return;
+    setPhase("loading");
+    setError(null);
+    try {
+      const resp = await fetch(`${API}/evaluate`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ take: take.trim() }),
+      });
+      if (!resp.ok) {
+        const err = await resp.text();
+        throw new Error(err || "Evaluation failed");
+      }
+      const data: EvalResult = await resp.json();
+      setResult(data);
+      setPhase("result");
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : "Something went wrong");
+      setPhase("input");
+    }
+  };
+
+  const reset = () => {
+    setPhase("input");
+    setResult(null);
+    setError(null);
+    setTimeout(() => textareaRef.current?.focus(), 50);
+  };
+
+  const handleShare = async () => {
+    if (!result) return;
+    const text = `I scored ${result.score}/100 on my take. Check it out: bighottake.com/evaluate`;
+    try {
+      await navigator.clipboard.writeText(text);
+    } catch {
+      // fallback
+    }
+  };
+
+  const [copied, setCopied] = useState(false);
+  const share = async () => {
+    await handleShare();
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  const containerStyle: React.CSSProperties = {
+    minHeight: "100vh",
+    background: "#0D0D1A",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "flex-start",
+    padding: "40px 24px 48px",
+    fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    boxSizing: "border-box",
+  };
+
+  const innerStyle: React.CSSProperties = {
+    width: "100%",
+    maxWidth: 420,
+  };
+
+  const logoStyle: React.CSSProperties = {
+    fontSize: 14,
+    fontWeight: 800,
+    letterSpacing: "0.05em",
+    color: "var(--color-accent, #FF00AE)",
+    textDecoration: "none",
+    display: "block",
+    marginBottom: 48,
+    textTransform: "uppercase",
+  };
+
+  if (phase === "result" && result) {
+    const tierColor = TIER_COLORS[result.tier] || "#FF00AE";
+    const dimensions = [
+      { label: "BRAZEN", value: result.brazen_score, description: "Does this challenge something people actually believe?" },
+      { label: "SPECIFIC", value: result.specificity, description: "Does it name a company, person, mechanism, or timeframe?" },
+      { label: "ARGUABLE", value: result.arguability, description: "Is there a clear 'because'? Could someone argue back with specifics?" },
+      { label: "ORIGINAL", value: result.originality, description: "Fresh angle or tired take we've heard a thousand times?" },
+    ];
+
+    return (
+      <div style={containerStyle}>
+        <div style={innerStyle}>
+          <a href="/" style={logoStyle}>hottake</a>
+
+          {/* The original take */}
+          <div style={{
+            fontSize: 13,
+            color: "rgba(255,255,255,0.35)",
+            marginBottom: 36,
+            lineHeight: 1.5,
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+          }}>
+            "{take}"
+          </div>
+
+          {/* Score ring */}
+          <div style={{ display: "flex", justifyContent: "center", marginBottom: 32 }}>
+            <ScoreRing score={result.score} tier={result.tier} animate={ringAnimating} />
+          </div>
+
+          {/* Verdict */}
+          <div style={{
+            fontSize: 16,
+            fontStyle: "italic",
+            fontFamily: "Besley, Georgia, serif",
+            color: "#fff",
+            textAlign: "center",
+            marginBottom: 40,
+            lineHeight: 1.6,
+            opacity: verdictVisible ? 1 : 0,
+            transition: "opacity 0.6s ease",
+            minHeight: 28,
+          }}>
+            "{result.verdict}"
+          </div>
+
+          {/* Dimension bars */}
+          <div style={{ marginBottom: 40 }}>
+            {dimensions.map((dim, i) => (
+              <DimensionBar
+                key={dim.label}
+                label={dim.label}
+                value={dim.value}
+                tier={result.tier}
+                description={dim.description}
+                visible={barsVisible[i]}
+              />
+            ))}
+          </div>
+
+          {/* Action row */}
+          <div style={{ display: "flex", gap: 12 }}>
+            <button
+              onClick={reset}
+              style={{
+                flex: 1,
+                padding: "12px 16px",
+                background: "transparent",
+                border: "1px solid rgba(255,255,255,0.2)",
+                borderRadius: 8,
+                color: "#fff",
+                fontSize: 14,
+                fontWeight: 600,
+                cursor: "pointer",
+                transition: "border-color 0.15s",
+              }}
+              onMouseEnter={e => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.5)")}
+              onMouseLeave={e => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.2)")}
+            >
+              Try another
+            </button>
+            <button
+              onClick={share}
+              style={{
+                flex: 1,
+                padding: "12px 16px",
+                background: tierColor,
+                border: "none",
+                borderRadius: 8,
+                color: "#fff",
+                fontSize: 14,
+                fontWeight: 700,
+                cursor: "pointer",
+                transition: "opacity 0.15s",
+              }}
+              onMouseEnter={e => (e.currentTarget.style.opacity = "0.85")}
+              onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
+            >
+              {copied ? "Copied!" : "Share"}
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div style={containerStyle}>
+      <div style={innerStyle}>
+        <a href="/" style={logoStyle}>hottake</a>
+
+        <h1 style={{
+          fontSize: 32,
+          fontWeight: 800,
+          color: "#fff",
+          margin: "0 0 32px",
+          letterSpacing: "-0.5px",
+          lineHeight: 1.2,
+        }}>
+          What's your take?
+        </h1>
+
+        <textarea
+          ref={textareaRef}
+          value={take}
+          onChange={e => setTake(e.target.value)}
+          onKeyDown={e => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault();
+              if (phase === "input") submit();
+            }
+          }}
+          placeholder="Say something you actually believe."
+          disabled={phase === "loading"}
+          autoFocus
+          style={{
+            width: "100%",
+            minHeight: 140,
+            background: "transparent",
+            border: "none",
+            borderBottom: "1px solid rgba(255,255,255,0.15)",
+            color: "#fff",
+            fontSize: 20,
+            fontWeight: 500,
+            lineHeight: 1.5,
+            resize: "none",
+            outline: "none",
+            padding: "0 0 16px",
+            marginBottom: 32,
+            boxSizing: "border-box",
+            fontFamily: "inherit",
+            caretColor: "var(--color-accent, #FF00AE)",
+          }}
+        />
+
+        {error && (
+          <div style={{ color: "#FF7043", fontSize: 13, marginBottom: 16 }}>
+            {error}
+          </div>
+        )}
+
+        {phase === "loading" ? (
+          <div style={{
+            fontSize: 15,
+            color: "rgba(255,255,255,0.5)",
+            fontStyle: "italic",
+            padding: "14px 0",
+            letterSpacing: "0.02em",
+          }}>
+            <JudgingDots />
+          </div>
+        ) : (
+          <button
+            onClick={submit}
+            disabled={!take.trim()}
+            style={{
+              width: "100%",
+              padding: "14px 24px",
+              background: take.trim() ? "var(--color-accent, #FF00AE)" : "rgba(255,255,255,0.1)",
+              border: "none",
+              borderRadius: 8,
+              color: "#fff",
+              fontSize: 16,
+              fontWeight: 700,
+              cursor: take.trim() ? "pointer" : "not-allowed",
+              transition: "background 0.2s, opacity 0.2s",
+              letterSpacing: "0.02em",
+            }}
+          >
+            Evaluate →
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function JudgingDots() {
+  const [dots, setDots] = useState("");
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDots(prev => (prev.length >= 3 ? "" : prev + "."));
+    }, 400);
+    return () => clearInterval(interval);
+  }, []);
+  return <span>Judging you now{dots}</span>;
+}
+
+
 export default function App() {
+  // Route: /evaluate — standalone, no auth
+  if (typeof window !== "undefined" && window.location.pathname === "/evaluate") {
+    return <EvaluatorView />;
+  }
   const { config } = useInstanceConfig();
   const [authUser, setAuthUser] = useState<AuthUser | null>(() => {
     try { return JSON.parse(localStorage.getItem("sm_user") || "null"); } catch { return null; }

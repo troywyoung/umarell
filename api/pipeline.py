@@ -995,3 +995,55 @@ async def negate_thesis(thesis: str) -> str:
         max_tokens=100,
     )
     return result.strip() if isinstance(result, str) else result[0].strip()
+
+
+# ─── Take Evaluator ──────────────────────────────────────────────────────
+
+def _score_to_tier(score: int) -> str:
+    if score <= 25:
+        return "cold"
+    elif score <= 45:
+        return "mild"
+    elif score <= 64:
+        return "spicy"
+    elif score <= 79:
+        return "hot"
+    else:
+        return "scorching"
+
+
+async def evaluate_take(take: str) -> dict:
+    """
+    Evaluate a hot take across multiple dimensions. Returns a scored breakdown.
+    """
+    result = await _call(
+        system=(
+            "You are a ruthless take evaluator. You have read ten thousand hot takes. "
+            "You know the difference between a sharp, falsifiable claim and empty bluster. "
+            "Evaluate the take across the following dimensions and return ONLY valid JSON. No markdown. No preamble.\n\n"
+            "Dimensions:\n"
+            "- score (0-100): Overall take quality — specificity, falsifiability, argumentative logic, challenge to conventional wisdom, sharpness\n"
+            "- brazen_score (0-100): How bold or contrarian is it? Does it actually challenge something people believe? 0 = totally safe, 100 = genuinely shocking\n"
+            "- specificity (0-100): Does it name something concrete — a company, person, timeframe, mechanism, number? Vague abstractions score low\n"
+            "- arguability (0-100): Is there a clear 'because'? Internal reasoning, not just assertion? Could someone argue against it with specifics?\n"
+            "- originality (0-100): Fresh angle vs tired/overused take? Have we heard this a thousand times before?\n"
+            "- verdict (string): ONE punchy sentence written with personality — harsh but fair, like a good editor who has seen everything. Not clinical. "
+            "Should feel like a verdict from someone who has read a thousand takes. "
+            "Examples: 'Bold claim, no mechanism — classic hot air.', 'You named the villain. Now prove it.', "
+            "'This is just facts with attitude.', 'Sharp, falsifiable, and actually challenging. Rare.'\n"
+            "- tier (string): exactly one of: 'cold', 'mild', 'spicy', 'hot', 'scorching' — derived from overall score\n\n"
+            "Tier mapping: 0-25 = cold, 26-45 = mild, 46-64 = spicy, 65-79 = hot, 80-100 = scorching\n\n"
+            "Return JSON with exactly these keys: score, brazen_score, specificity, arguability, originality, verdict, tier"
+        ),
+        user=f"Evaluate this take:\n\n\"{take}\"",
+        max_tokens=500,
+    )
+    if isinstance(result, tuple):
+        raw = result[0]
+    else:
+        raw = result
+    parsed = _extract_json(raw)
+    # Enforce tier consistency with score
+    score = int(parsed.get("score", 0))
+    parsed["tier"] = _score_to_tier(score)
+    return parsed
