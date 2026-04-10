@@ -589,6 +589,8 @@ SCORING SCALE:
 0–14   — Not a take at all. Pure fact, pure observation, or incoherent.
 
 CALIBRATION EXAMPLES — use these as anchors:
+- "The real reason OpenAI can't ship a good product is that Altman optimizes for narrative over engineering — the same trait that makes him a great fundraiser makes him a terrible product CEO." → 96 (devastating specificity, named target, clear mechanism, directly falsifiable, challenges hero narrative)
+- "Substack will kill more mid-tier magazines than social media ever did — but unlike social, it will make the top 1% of writers richer than they've ever been." → 93 (two-part falsifiable prediction, named mechanism, specific outcome, fresh framing)
 - "Nvidia's moat is not CUDA — it's the installed base of engineers who don't want to relearn anything." → 91 (specific mechanism, counterintuitive, hard to dismiss)
 - "The core AI business models are undefendable — cheap energy and commoditization will destroy their moats." → 86 (sharp mechanism, directly challengeable)
 - "Every major ad holding company will be gone within 8 years." → 81 (bold, specific timeframe, falsifiable — loses points for no named mechanism)
@@ -601,12 +603,12 @@ CALIBRATION EXAMPLES — use these as anchors:
 - "Regular sleep improves cognitive performance." → 5 (established science, nothing to argue)
 
 DISTRIBUTION — scores should be spread across the full range, not clustered:
-- Use the entire 0-100 scale. Good takes will naturally vary between 58, 63, 72, 79, 84 — not all land in the same spot.
-- Most submitted takes are decent-but-not-great and should land in 55–74. But within that range, differentiate — a 58 and a 72 are very different takes.
-- Reserve 80+ for takes with BOTH a specific named claim AND a clear mechanism or "because" that's hard to dismiss.
+- Use the entire 0-100 scale including the high 90s. An exceptional take CAN score 92, 95, or 97.
+- Most submitted takes are decent-but-not-great and should land in 55–74. But within that range, differentiate.
+- 80–89: Strong take with named claim AND mechanism.
+- 90–100: Exceptional — specific, devastating, falsifiable, challenges real consensus with a clear "because." Rare but real.
 - Takes that are bold but vague (no mechanism, no named target) should score in the 60s.
 - Takes that are specific but already consensus should score in the 50s.
-- When in doubt, score lower. It is harder to earn a high score than it looks.
 Penalize vagueness and pure assertion hard. Reward specificity and falsifiability even when the underlying claim seems unlikely.
 Hyperbole for effect is fine — score the underlying argument, not the literal wording.
 If an image is provided, use it as context for the claim being made.

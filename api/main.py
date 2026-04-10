@@ -369,7 +369,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
                 obs.arguability = meta.get("arguability")
                 obs.originality = meta.get("originality")
                 dims = [obs.brazen_score or 0, obs.specificity or 0, obs.arguability or 0, obs.originality or 0]
-                obs.is_hot_take = bool((obs.score or 0) >= 85 and sum(dims) / len(dims) >= 70)
+                obs.is_hot_take = bool((obs.score or 0) >= 82 and sum(dims) / len(dims) >= 65)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1676,7 +1676,7 @@ async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-take
                 obs.arguability = meta.get("arguability")
                 obs.originality = meta.get("originality")
                 dims = [obs.brazen_score or 0, obs.specificity or 0, obs.arguability or 0, obs.originality or 0]
-                obs.is_hot_take = bool((obs.score or 0) >= 85 and sum(dims) / len(dims) >= 70)
+                obs.is_hot_take = bool((obs.score or 0) >= 82 and sum(dims) / len(dims) >= 65)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1836,14 +1836,29 @@ async def _run_rescore_bg(obs_ids: list[str], dry_run: bool):
             obs_list = list(result.scalars().all())
 
             results, failed = [], 0
-            for obs in obs_list:
-                try:
-                    sm_text = obs.summary or ""
-                    meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
-                    results.append((obs, meta))
-                except Exception as e:
-                    print(f"[rescore] failed {obs.id}: {e}")
-                    failed += 1
+            sem = asyncio.Semaphore(10)  # 10 concurrent LLM calls
+            done_count = 0
+            total_count = len(obs_list)
+            lock = asyncio.Lock()
+
+            async def score_one(obs):
+                nonlocal failed, done_count
+                async with sem:
+                    try:
+                        sm_text = obs.summary or ""
+                        meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
+                        async with lock:
+                            results.append((obs, meta))
+                    except Exception as e:
+                        print(f"[rescore] failed {obs.id}: {e}")
+                        async with lock:
+                            failed += 1
+                    finally:
+                        async with lock:
+                            done_count += 1
+                            _rescore_status["result"] = {"progress": {"done": done_count, "total": total_count}}
+
+            await asyncio.gather(*[score_one(obs) for obs in obs_list])
 
             if not dry_run:
                 for obs, meta in results:
@@ -1856,14 +1871,14 @@ async def _run_rescore_bg(obs_ids: list[str], dry_run: bool):
                     obs.evidence_type = meta.get("evidence_type")
                     obs.category     = meta.get("category")
                     dims = [obs.brazen_score or 0, obs.specificity or 0, obs.arguability or 0, obs.originality or 0]
-                    obs.is_hot_take  = bool((obs.score or 0) >= 85 and sum(dims) / len(dims) >= 70)
+                    obs.is_hot_take  = bool((obs.score or 0) >= 82 and sum(dims) / len(dims) >= 65)
                 await db.commit()
 
             from collections import Counter
             valid = sorted(m.get("score") or 0 for _, m in results)
             hot_count = sum(1 for _, m in results
-                           if (m.get("score") or 0) >= 85
-                           and sum([m.get("brazen_score") or 0, m.get("specificity") or 0, m.get("arguability") or 0, m.get("originality") or 0]) / 4 >= 70)
+                           if (m.get("score") or 0) >= 82
+                           and sum([m.get("brazen_score") or 0, m.get("specificity") or 0, m.get("arguability") or 0, m.get("originality") or 0]) / 4 >= 65)
             _rescore_status = {
                 "running": False, "done": True,
                 "result": {

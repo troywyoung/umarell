@@ -317,8 +317,8 @@ function SteelManIcon({ size = 24, animate = false, animateCount, color = "#FFF"
 
 
 const SCORE_ROWS = [
-  { range: "85–100", label: "🔥 Hot Take",          color: "#FF00AE", desc: "Specific, bold, well-argued, and genuinely challenges consensus." },
-  { range: "70–84",  label: "Getting Warmer",        color: "#4CAF50", desc: "Clear point, identifiable argument, mostly specific." },
+  { range: "82–100", label: "🔥 Hot Take",          color: "#FF00AE", desc: "Specific, bold, well-argued, and genuinely challenges consensus." },
+  { range: "70–81",  label: "Getting Warmer",        color: "#4CAF50", desc: "Clear point, identifiable argument, mostly specific." },
   { range: "55–69",  label: "Debate Club Novice",    color: "#E8813A", desc: "Has a point but could be sharper or better argued." },
   { range: "35–54",  label: "Lukewarm",              color: "#E7B84B", desc: "Vague, or just assertion without real reasoning." },
   { range: "15–34",  label: "Not Really",            color: "#3D5A9E", desc: "Too general to argue, or restating the obvious." },
@@ -344,7 +344,7 @@ function HotTakeInfoRow() {
     <div style={{ marginBottom: 12, paddingBottom: 12, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
       <p style={{ fontSize: 10, fontWeight: 800, color: "#FF00AE", letterSpacing: 0.8, textTransform: "uppercase", margin: "0 0 4px" }}>🔥 Hot Take</p>
       <p style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", lineHeight: 1.5, margin: 0 }}>
-        Scores 85+ overall and rates highly across brazenness, specificity, arguability, and originality. The rarest tier.
+        Scores 82+ overall and rates highly across brazenness, specificity, arguability, and originality. The rarest tier.
       </p>
     </div>
   );
@@ -429,7 +429,7 @@ function getScoreTier(v: number): { label: string } {
   if (v <= 34) return { label: "Not Really" };
   if (v <= 54) return { label: "Lukewarm" };
   if (v <= 69) return { label: "Debate Club Novice" };
-  if (v <= 84) return { label: "Getting Warmer" };
+  if (v <= 81) return { label: "Getting Warmer" };
   return { label: "Hot Take" };
 }
 
