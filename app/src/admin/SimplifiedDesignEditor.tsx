@@ -139,6 +139,16 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
     { label: 'Syne',                    value: "'Syne', sans-serif" },
     { label: 'Ultra',                   value: "'Ultra', serif" },
     { label: 'Big Shoulders Display',   value: "'Big Shoulders Display', sans-serif" },
+    { label: '── New ──',               value: "" },
+    { label: 'Racher',                  value: "'Racher', sans-serif" },
+    { label: 'Bitcount Grid Double',    value: "'Bitcount Grid Double', monospace" },
+    { label: 'Coiny',                   value: "'Coiny', sans-serif" },
+    { label: 'Bitcount Prop Single',    value: "'Bitcount Prop Single', monospace" },
+    { label: 'Danfo',                   value: "'Danfo', serif" },
+    { label: 'Climate Crisis',          value: "'Climate Crisis', sans-serif" },
+    { label: 'Oi',                      value: "'Oi', serif" },
+    { label: 'Rubik Bubbles',           value: "'Rubik Bubbles', sans-serif" },
+    { label: 'Vina Sans',               value: "'Vina Sans', sans-serif" },
   ];
 
   const hasUnsavedChanges = () =>
@@ -278,7 +288,9 @@ export default function SimplifiedDesignEditor({ onClose: _onClose }: Simplified
             style={{ padding: '6px 8px', fontSize: 13, border: '1px solid #CCC', borderRadius: 4, background: '#FFF' }}
           >
             {options.map(o => (
-              <option key={o.value} value={o.value}>{o.label}</option>
+              o.value === ''
+                ? <option key={o.label} value="" disabled style={{ color: '#AAA' }}>{o.label}</option>
+                : <option key={o.value} value={o.value}>{o.label}</option>
             ))}
             {!matched && <option value="__custom__">Custom</option>}
           </select>
