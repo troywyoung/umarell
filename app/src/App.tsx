@@ -2162,20 +2162,20 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
                 <div style={{ minWidth: 0, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
                   <span style={{ fontSize: isMobile ? 12 : 15, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.3 }}>
                     {obs.is_hot_take ? "Hot Take" : tier.label}
+                    <button
+                      onClick={() => setShowScoreInfo(sv => !sv)}
+                      style={{
+                        background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
+                        border: "1px solid rgba(255,255,255,0.12)",
+                        borderRadius: "50%", width: 18, height: 18,
+                        display: "inline-flex", alignItems: "center", justifyContent: "center",
+                        cursor: "pointer", padding: 0, flexShrink: 0,
+                        color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 800,
+                        WebkitTapHighlightColor: "transparent",
+                        verticalAlign: "middle", marginLeft: 5,
+                      }}
+                    >?</button>
                   </span>
-                  <button
-                    onClick={() => setShowScoreInfo(sv => !sv)}
-                    style={{
-                      background: showScoreInfo ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.07)",
-                      border: "1px solid rgba(255,255,255,0.12)",
-                      borderRadius: "50%", width: 18, height: 18,
-                      display: "inline-flex", alignItems: "center", justifyContent: "center",
-                      cursor: "pointer", padding: 0, flexShrink: 0,
-                      color: "rgba(255,255,255,0.4)", fontSize: 10, fontWeight: 800,
-                      WebkitTapHighlightColor: "transparent",
-                      verticalAlign: "middle", marginLeft: 5,
-                    }}
-                  >?</button>
                 </div>
                 {showScoreInfo && (isMobile ? <ScoreInfoSheet onClose={() => setShowScoreInfo(false)} isHotTake={obs.is_hot_take} /> : <ScoreInfoPopover onClose={() => setShowScoreInfo(false)} isHotTake={obs.is_hot_take} />)}
               </div>
