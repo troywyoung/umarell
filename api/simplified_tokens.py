@@ -10,7 +10,7 @@ SIMPLIFIED_TOKENS = {
     "logo_accent_text": "hot",
     "logo_plain_text": "take",
     "logo_size": "27px",
-    "logo_tagline": "",
+    "logo_tagline": "Add a take. Validate a take. Browse takes.",
     "primary_accent": "#FF00AE",
     "dark_background": "#12102B",
     "dark_text": "#1A1A1A",
