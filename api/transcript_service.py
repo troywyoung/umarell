@@ -483,14 +483,84 @@ def fetch_substack_transcript(url: str) -> dict:
             "Try the YouTube or Apple Podcasts URL for this episode instead."
         )
 
-    # Substack stores transcripts in a private S3 bucket — we have to transcribe
-    # from the audio URL using a speech-to-text service.
-    # Supadata only handles YouTube; for audio files we need AssemblyAI / Deepgram / Whisper.
-    raise TranscriptError(
-        f"Found audio for '{ep_title}' but Substack audio transcription is not yet supported. "
-        "Substack stores transcripts privately and Supadata only handles YouTube URLs. "
-        "To transcribe this episode, use the YouTube link if available, or paste the Apple Podcasts URL."
-    )
+    # Transcribe via AssemblyAI (handles any public audio URL)
+    from config import settings
+    if not settings.assemblyai_api_key:
+        raise TranscriptError(
+            f"Found audio for '{ep_title}' but ASSEMBLYAI_API_KEY is not configured. "
+            "Add it to .env to enable Substack transcription."
+        )
+
+    return _transcribe_via_assemblyai(audio_url, settings.assemblyai_api_key, ep_title)
+
+
+def _transcribe_via_assemblyai(audio_url: str, api_key: str, label: str = "") -> dict:
+    """Submit an audio URL to AssemblyAI and poll until the transcript is ready.
+
+    AssemblyAI accepts any publicly accessible audio URL and returns a full
+    transcript with word-level timestamps.
+    """
+    import time
+
+    headers = {
+        "authorization": api_key,
+        "content-type": "application/json",
+    }
+    base = "https://api.assemblyai.com/v2"
+
+    # Submit transcription job
+    try:
+        submit = httpx.post(
+            f"{base}/transcript",
+            json={"audio_url": audio_url, "language_detection": True},
+            headers=headers,
+            timeout=30.0,
+        )
+        submit.raise_for_status()
+        job = submit.json()
+    except Exception as e:
+        raise TranscriptError(f"AssemblyAI submission failed: {e}")
+
+    job_id = job.get("id")
+    if not job_id:
+        raise TranscriptError(f"AssemblyAI returned no job ID: {job}")
+
+    # Poll until done (typically 10-30% of audio duration)
+    for _ in range(120):  # up to ~10 minutes
+        time.sleep(5)
+        try:
+            poll = httpx.get(f"{base}/transcript/{job_id}", headers=headers, timeout=15.0)
+            poll.raise_for_status()
+            result = poll.json()
+        except Exception as e:
+            raise TranscriptError(f"AssemblyAI poll failed: {e}")
+
+        status = result.get("status")
+        if status == "completed":
+            full_text = result.get("text") or ""
+            # Build segments from word-level timestamps
+            words = result.get("words") or []
+            segments = []
+            chunk, chunk_start = [], None
+            for w in words:
+                if chunk_start is None:
+                    chunk_start = w["start"] / 1000.0
+                chunk.append(w["text"])
+                # New segment every ~10 words
+                if len(chunk) >= 10:
+                    segments.append({"start": chunk_start, "text": " ".join(chunk)})
+                    chunk, chunk_start = [], None
+            if chunk:
+                segments.append({"start": chunk_start or 0.0, "text": " ".join(chunk)})
+            if not segments and full_text:
+                segments = [{"start": 0.0, "text": full_text}]
+            return {"text": full_text, "segments": segments, "source": "assemblyai"}
+
+        elif status == "error":
+            raise TranscriptError(f"AssemblyAI transcription error: {result.get('error')}")
+        # status in ("queued", "processing") — keep polling
+
+    raise TranscriptError(f"AssemblyAI transcription timed out for '{label}' after 10 minutes.")
 
 
 # ─── Unified fetch router ─────────────────────────────────────────────────────

@@ -19,6 +19,7 @@ class Settings(BaseSettings):
     admin_email: str = ""  # Set to your Google account email for master admin access
     railway_staging_deploy_hook: str = ""  # Railway deploy webhook URL for staging service
     supadata_api_key: str = ""  # Supadata API key for YouTube transcript fallback
+    assemblyai_api_key: str = ""  # AssemblyAI key for Substack/audio transcription
 
     @field_validator("database_url", mode="before")
     @classmethod
