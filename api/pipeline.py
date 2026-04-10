@@ -600,14 +600,12 @@ CALIBRATION EXAMPLES — use these as anchors:
 - "AI is going to change everything." → 12 (not a take — too vague to argue or falsify)
 - "Regular sleep improves cognitive performance." → 5 (established science, nothing to argue)
 
-SCORING PROCESS — follow this order:
-1. First, decide which BAND this take belongs in (0-14, 15-34, 35-54, 55-69, 70-84, 85-100). Commit to the band before picking a number.
-2. Then score WHERE in that band: bottom third, middle, or top? A take that barely clears the bar for its band scores at the bottom. A take that nearly qualifies for the next band up scores near the top.
-3. Most takes cluster in 55-69 or 70-84. Within those bands, use the full range — a weak 70-band take is a 70, a strong one is an 83.
-- Most submitted takes are decent-but-not-great. Most should score 55–74, not 75+.
-- Reserve 80+ strictly for takes with BOTH a specific, named claim AND a clear mechanism or "because" that's genuinely hard to dismiss.
-- Takes that are bold but vague (no mechanism, no named target) cap at 74.
-- Takes that are specific but already consensus cap at 60.
+DISTRIBUTION — scores should be spread across the full range, not clustered:
+- Use the entire 0-100 scale. Good takes will naturally vary between 58, 63, 72, 79, 84 — not all land in the same spot.
+- Most submitted takes are decent-but-not-great and should land in 55–74. But within that range, differentiate — a 58 and a 72 are very different takes.
+- Reserve 80+ for takes with BOTH a specific named claim AND a clear mechanism or "because" that's hard to dismiss.
+- Takes that are bold but vague (no mechanism, no named target) should score in the 60s.
+- Takes that are specific but already consensus should score in the 50s.
 - When in doubt, score lower. It is harder to earn a high score than it looks.
 Penalize vagueness and pure assertion hard. Reward specificity and falsifiability even when the underlying claim seems unlikely.
 Hyperbole for effect is fine — score the underlying argument, not the literal wording.
