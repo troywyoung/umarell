@@ -317,12 +317,12 @@ function SteelManIcon({ size = 24, animate = false, animateCount, color = "#FFF"
 
 
 const SCORE_ROWS = [
-  { range: "85–100", label: "🔥 Hot Take",     color: "#FF00AE", desc: "Specific, bold, well-argued, and genuinely challenges consensus." },
-  { range: "70–84",  label: "Strong",          color: "#4CAF50", desc: "Clear point, identifiable argument, mostly specific." },
-  { range: "55–69",  label: "Decent",          color: "#E8813A", desc: "Has a point but could be sharper or better argued." },
-  { range: "35–54",  label: "Weak",            color: "#E7B84B", desc: "Vague, or just assertion without real reasoning." },
-  { range: "15–34",  label: "Not Really",      color: "#3D5A9E", desc: "Too general to argue, or restating the obvious." },
-  { range: "0–14",   label: "Not a Take",      color: "#5A6B8C", desc: "Pure fact, pure observation, or incoherent." },
+  { range: "85–100", label: "🔥 Hot Take",          color: "#FF00AE", desc: "Specific, bold, well-argued, and genuinely challenges consensus." },
+  { range: "70–84",  label: "Getting Warmer",        color: "#4CAF50", desc: "Clear point, identifiable argument, mostly specific." },
+  { range: "55–69",  label: "Debate Club Novice",    color: "#E8813A", desc: "Has a point but could be sharper or better argued." },
+  { range: "35–54",  label: "Lukewarm",              color: "#E7B84B", desc: "Vague, or just assertion without real reasoning." },
+  { range: "15–34",  label: "Not Really",            color: "#3D5A9E", desc: "Too general to argue, or restating the obvious." },
+  { range: "0–14",   label: "Not a Take",            color: "#5A6B8C", desc: "Pure fact, pure observation, or incoherent." },
 ];
 
 function ScoreInfoRows() {
@@ -425,12 +425,12 @@ function getScoreColor(v: number): string {
 }
 
 function getScoreTier(v: number): { label: string } {
-  if (v <= 20) return { label: "Unpersuasive" };
-  if (v <= 40) return { label: "Weak Signal" };
-  if (v <= 59) return { label: "Jury\u2019s Out" };
-  if (v <= 79) return { label: "Fighting Words" };
-  if (v <= 94) return { label: "Holds Water" };
-  return { label: "Undeniable" };
+  if (v <= 14) return { label: "Not a Take" };
+  if (v <= 34) return { label: "Not Really" };
+  if (v <= 54) return { label: "Lukewarm" };
+  if (v <= 69) return { label: "Debate Club Novice" };
+  if (v <= 84) return { label: "Getting Warmer" };
+  return { label: "Hot Take" };
 }
 
 function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTake = false, obsId, hideLabel = false, emojiDelay = 360, emojiAnim = "hotGrow", emojiDuration = "0.55s", emojiEasing = "cubic-bezier(0.34,1.56,0.64,1)", skipObserver = false }: { value?: number; size?: "sm" | "md" | "lg" | "xl"; dark?: boolean; animate?: boolean; isHotTake?: boolean; obsId?: string; hideLabel?: boolean; emojiDelay?: number; emojiAnim?: string; emojiDuration?: string; emojiEasing?: string; skipObserver?: boolean }) {
