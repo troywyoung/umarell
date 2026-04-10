@@ -1,4 +1,4 @@
-"""Transcript fetching service — YouTube and Apple Podcasts.
+"""Transcript fetching service — YouTube, Apple Podcasts, and Substack.
 
 YouTube fallback chain:
   1. youtube_transcript_api  — free, instant; requires captions to exist on the video
@@ -7,6 +7,10 @@ YouTube fallback chain:
 Apple Podcasts:
   1. iTunes API → RSS feed URL
   2. RSS parsing → <podcast:transcript> tag → fetch VTT or HTML transcript
+
+Substack:
+  1. Fetch page HTML → extract embedded transcript JSON from <script> tags
+  2. Fall back to audio URL + Supadata if no embedded transcript
 """
 
 import re
@@ -347,13 +351,280 @@ def fetch_apple_podcast_transcript(url: str) -> dict:
         return _parse_html_transcript(transcript_content)
 
 
+# ─── Substack Podcasts ────────────────────────────────────────────────────────
+
+def _is_substack_url(url: str) -> bool:
+    """Detect Substack podcast pages.
+
+    Handles both:
+    - substack.com/p/<slug>  (native domain)
+    - custom domains like peoplevsalgorithms.com/p/<slug>
+
+    We detect /p/ paths and then confirm the page is Substack by checking for
+    Substack metadata in the fetched HTML. A bare URL check isn't enough because
+    custom Substack domains don't contain "substack" in the host.
+    """
+    return bool(re.search(r'/p/[a-z0-9_-]+', url, re.IGNORECASE))
+
+
+def _extract_substack_transcript_from_html(html: str) -> Optional[dict]:
+    """Try to extract an embedded transcript from Substack page HTML.
+
+    Substack stores podcast player data (including transcripts) as JSON inside
+    a <script> tag with id="__NEXT_DATA__" or as a window.__PRELOADED_STATE__
+    assignment.  The transcript itself is a list of cue objects:
+        {"startMs": 0, "endMs": 2000, "text": "Hello"}
+
+    Returns {text, segments, source} on success, None if no transcript found.
+    """
+    # Pattern 1: __NEXT_DATA__ JSON blob
+    next_data_match = re.search(
+        r'<script[^>]+id="__NEXT_DATA__"[^>]*>(.*?)</script>',
+        html,
+        re.DOTALL,
+    )
+    if next_data_match:
+        try:
+            data = json.loads(next_data_match.group(1))
+            cues = _find_transcript_cues(data)
+            if cues:
+                return _cues_to_transcript(cues, source="substack_transcript")
+        except (json.JSONDecodeError, Exception):
+            pass
+
+    # Pattern 2: window.__PRELOADED_STATE__ = {...}
+    preloaded_match = re.search(
+        r'window\.__PRELOADED_STATE__\s*=\s*(\{.*?\});\s*(?:</script>|window\.)',
+        html,
+        re.DOTALL,
+    )
+    if preloaded_match:
+        try:
+            data = json.loads(preloaded_match.group(1))
+            cues = _find_transcript_cues(data)
+            if cues:
+                return _cues_to_transcript(cues, source="substack_transcript")
+        except (json.JSONDecodeError, Exception):
+            pass
+
+    # Pattern 3: inline JSON array of cue objects anywhere in the page
+    # Substack sometimes renders these directly in a <script> tag
+    cue_array_match = re.search(
+        r'\[\s*\{\s*"startMs"\s*:\s*\d+.*?"text"\s*:\s*"[^"]{5,}.*?\}\s*\]',
+        html,
+        re.DOTALL,
+    )
+    if cue_array_match:
+        try:
+            cues = json.loads(cue_array_match.group(0))
+            if isinstance(cues, list) and cues and "startMs" in cues[0]:
+                return _cues_to_transcript(cues, source="substack_transcript")
+        except (json.JSONDecodeError, Exception):
+            pass
+
+    return None
+
+
+def _find_transcript_cues(obj, _depth=0) -> Optional[list]:
+    """Recursively search a nested dict/list for Substack transcript cues."""
+    if _depth > 15:
+        return None
+    if isinstance(obj, list):
+        # Check if this list itself is a cue array
+        if obj and isinstance(obj[0], dict) and "startMs" in obj[0] and "text" in obj[0]:
+            return obj
+        for item in obj:
+            result = _find_transcript_cues(item, _depth + 1)
+            if result:
+                return result
+    elif isinstance(obj, dict):
+        # Look for common Substack transcript keys
+        for key in ("transcript", "transcriptCues", "cues", "captions"):
+            if key in obj and isinstance(obj[key], list) and obj[key]:
+                candidate = obj[key]
+                if isinstance(candidate[0], dict) and "startMs" in candidate[0]:
+                    return candidate
+        for value in obj.values():
+            result = _find_transcript_cues(value, _depth + 1)
+            if result:
+                return result
+    return None
+
+
+def _cues_to_transcript(cues: list, source: str = "substack_transcript") -> dict:
+    """Convert Substack cue objects to our standard {text, segments} format."""
+    segments = []
+    for cue in cues:
+        start_sec = float(cue.get("startMs", 0)) / 1000.0
+        text = cue.get("text", "").strip()
+        if text:
+            segments.append({"start": start_sec, "text": text})
+    full_text = " ".join(s["text"] for s in segments)
+    return {"text": full_text, "segments": segments, "source": source}
+
+
+def _extract_substack_audio_url(html: str) -> Optional[str]:
+    """Extract the podcast audio URL from Substack page HTML."""
+    # Check __NEXT_DATA__ first
+    next_data_match = re.search(
+        r'<script[^>]+id="__NEXT_DATA__"[^>]*>(.*?)</script>',
+        html,
+        re.DOTALL,
+    )
+    if next_data_match:
+        try:
+            data = json.loads(next_data_match.group(1))
+            audio_url = _find_audio_url(data)
+            if audio_url:
+                return audio_url
+        except (json.JSONDecodeError, Exception):
+            pass
+
+    # Fallback: regex patterns for audio URLs
+    patterns = [
+        r'https://api\.substack\.com/api/v1/audio/upload/[^"\'<>\s]+',
+        r'"(https://[^"]*\.(?:mp3|m4a|ogg|wav|aac)(?:\?[^"]*)?)"',
+        r'audioUrl["\s]*:\s*["\']([^"\']+)["\']',
+        r'"enclosure_url"\s*:\s*"([^"]+)"',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, html)
+        if match:
+            url = match.group(0) if '://' in match.group(0) else match.group(1)
+            if url:
+                return url
+    return None
+
+
+def _find_audio_url(obj, _depth=0) -> Optional[str]:
+    """Recursively search for audio URL in Substack page data."""
+    if _depth > 15:
+        return None
+    if isinstance(obj, dict):
+        for key in ("audio_url", "audioUrl", "podcastUrl", "enclosure_url", "src"):
+            val = obj.get(key)
+            if isinstance(val, str) and (
+                "substack.com/api/v1/audio" in val or
+                val.endswith((".mp3", ".m4a", ".ogg", ".aac"))
+            ):
+                return val
+        for value in obj.values():
+            result = _find_audio_url(value, _depth + 1)
+            if result:
+                return result
+    elif isinstance(obj, list):
+        for item in obj:
+            result = _find_audio_url(item, _depth + 1)
+            if result:
+                return result
+    return None
+
+
+def fetch_substack_transcript(url: str) -> dict:
+    """Fetch transcript for a Substack podcast episode URL.
+
+    Flow:
+    1. Fetch the page HTML
+    2. Confirm it's a Substack podcast page (has audio)
+    3. Try to extract embedded transcript (auto-generated captions in __NEXT_DATA__)
+    4. If no embedded transcript, try Supadata with the audio URL
+    """
+    import asyncio
+
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+
+    try:
+        resp = httpx.get(url, headers=headers, timeout=20.0, follow_redirects=True)
+        resp.raise_for_status()
+        html = resp.text
+    except Exception as e:
+        raise TranscriptError(f"Could not fetch Substack page: {e}")
+
+    # Confirm this is actually a Substack page
+    is_substack = (
+        "substack.com" in resp.url.host
+        or "cdn.substack.com" in html
+        or "__NEXT_DATA__" in html
+        or "substack-cdn" in html
+    )
+    if not is_substack:
+        raise TranscriptError(
+            f"This doesn't appear to be a Substack page: {url}. "
+            "If it's a podcast, try using the direct YouTube or Apple Podcasts URL instead."
+        )
+
+    # Step 1: Try embedded transcript
+    result = _extract_substack_transcript_from_html(html)
+    if result and result.get("segments"):
+        return result
+
+    # Step 2: Try Supadata with audio URL
+    audio_url = _extract_substack_audio_url(html)
+    if audio_url:
+        from config import settings
+        if settings.supadata_api_key:
+            try:
+                params = {"url": audio_url, "text": "true"}
+                headers_sup = {"x-api-key": settings.supadata_api_key}
+                sup_resp = httpx.get(
+                    "https://api.supadata.ai/v1/transcript",
+                    params=params,
+                    headers=headers_sup,
+                    timeout=60.0,
+                )
+                if sup_resp.is_success:
+                    data = sup_resp.json()
+                    content = data.get("content") or data.get("transcript") or ""
+                    raw_segments = data.get("segments") or []
+                    segments = [
+                        {
+                            "start": float(s.get("offset", s.get("start", 0))) / 1000
+                                     if s.get("offset") is not None else float(s.get("start", 0)),
+                            "text": s.get("text", ""),
+                        }
+                        for s in raw_segments
+                    ]
+                    if not segments and content:
+                        segments = [{"start": 0.0, "text": content}]
+                    if content:
+                        return {"text": content, "segments": segments, "source": "substack_supadata"}
+            except Exception:
+                pass  # Fall through to error below
+
+    # Couldn't get transcript
+    title_match = re.search(r'<title[^>]*>([^<]+)</title>', html)
+    ep_title = title_match.group(1).strip() if title_match else url
+    raise TranscriptError(
+        f"No transcript available for '{ep_title}'. "
+        "The episode may not have auto-generated captions yet, or the audio URL could not be found. "
+        "Try sharing a YouTube link for this episode instead."
+    )
+
+
 # ─── Unified fetch router ─────────────────────────────────────────────────────
 
 def fetch_transcript(url: str) -> dict:
-    """Route to the correct transcript fetcher based on URL type."""
+    """Route to the correct transcript fetcher based on URL type.
+
+    Priority:
+    1. Apple Podcasts — podcasts.apple.com
+    2. YouTube — youtube.com / youtu.be
+    3. Substack — /p/<slug> paths (including custom domains)
+    """
     if _is_apple_podcast_url(url):
         return fetch_apple_podcast_transcript(url)
-    return fetch_youtube_transcript(url)
+    if _extract_video_id(url):
+        return fetch_youtube_transcript(url)
+    if _is_substack_url(url):
+        return fetch_substack_transcript(url)
+    raise TranscriptError(
+        f"Unsupported URL: {url}. "
+        "Supported sources: YouTube, Apple Podcasts, Substack podcast pages."
+    )
 
 
 # ─── Take extraction ──────────────────────────────────────────────────────────
