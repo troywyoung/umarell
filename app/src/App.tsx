@@ -507,7 +507,7 @@ function ScoreBadge({ value, size = "md", dark = false, animate = false, isHotTa
           style={{ transition: showEmoji ? "stroke 0.4s ease, stroke-dasharray 0.4s ease" : "none" }} />
       </svg>
       <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5 }}>{displayVal}</span>
+        <span style={{ fontSize, fontWeight: 800, color: dark ? "#1A1A1A" : "#FFF", lineHeight: 1, letterSpacing: -0.5, fontFamily: "'Danfo', serif" }}>{displayVal}</span>
       </div>
       {showEmoji && (
         <>
