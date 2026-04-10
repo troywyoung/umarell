@@ -1522,10 +1522,10 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
               {/* Unified chronological feed — episode bundles grouped, regular posts dispersed */}
               {filteredPosts.length > 0
                 ? <div style={{ paddingTop: 4 }}>{filteredPosts.map(renderFeedItem)}</div>
-                : selectedTopic && (
+                : !loading && selectedTopic && (
                   <div style={{ textAlign: "center", padding: "48px 24px 0" }}>
                     <p style={{ fontSize: 15, color: "rgba(255,255,255,0.4)", margin: 0 }}>
-                      {selectedTopic === "PvA" ? "No PvA episodes yet." : selectedTopic === "__hot__" ? "No hot takes yet." : `No takes tagged "${selectedTopic}" yet.`}
+                      {selectedTopic === "__all__" ? "No takes yet." : selectedTopic === "PvA" ? "No PvA episodes yet." : selectedTopic === "__hot__" ? "No hot takes yet." : selectedTopic === "__top__" ? "No takes yet." : `No takes tagged "${selectedTopic}" yet.`}
                     </p>
                   </div>
                 )
