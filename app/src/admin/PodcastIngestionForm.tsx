@@ -247,7 +247,7 @@ export default function PodcastIngestionForm() {
   return (
     <div style={{ maxWidth: 640 }}>
       <p style={{ fontSize: 13, color: '#888', marginBottom: 24, lineHeight: 1.6 }}>
-        Paste a YouTube or Apple Podcasts episode URL — title and podcast name auto-fill. Extract takes to preview and select before posting.
+        Paste a YouTube, Apple Podcasts, or Substack episode URL — title and podcast name auto-fill. Extract takes to preview and select before posting.
       </p>
 
       <form onSubmit={e => { e.preventDefault(); extractTakes(); }} style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>

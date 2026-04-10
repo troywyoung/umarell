@@ -1265,6 +1265,29 @@ async def get_podcast_metadata(url: str):
         except Exception as e:
             raise HTTPException(400, f"Could not fetch Apple Podcasts metadata: {str(e)}")
 
+    # ── Substack ────────────────────────────────────────────────────────────
+    if _re2.search(r'/p/[a-z0-9_-]+', url, _re2.IGNORECASE):
+        try:
+            async with httpx.AsyncClient(timeout=10.0) as client:
+                r = await client.get(url, headers={"User-Agent": "Mozilla/5.0"}, follow_redirects=True)
+            html = r.text
+            # Pull title and show name from _preloads JSON
+            from transcript_service import _parse_substack_preloads
+            data = _parse_substack_preloads(html)
+            if data:
+                post = data.get("post") or {}
+                pub = data.get("pub") or {}
+                title = post.get("title") or ""
+                channel = pub.get("name") or ""
+                if title:
+                    return {"title": title, "channel": channel, "episode_tag": _slug(title)}
+            # Fallback: og:title
+            og = _re2.search(r'<meta[^>]+property="og:title"[^>]+content="([^"]+)"', html)
+            title = og.group(1) if og else ""
+            return {"title": title, "channel": "", "episode_tag": _slug(title) if title else ""}
+        except Exception:
+            pass  # Fall through — user can fill manually
+
     # ── YouTube ─────────────────────────────────────────────────────────────
     try:
         oembed_url = f"https://www.youtube.com/oembed?url={urllib.parse.quote(url)}&format=json"
