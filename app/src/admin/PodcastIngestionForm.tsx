@@ -32,7 +32,7 @@ export default function PodcastIngestionForm() {
 
   useEffect(() => {
     if (metaTimeout.current) clearTimeout(metaTimeout.current);
-    if (!url.trim() || (!url.includes('youtube') && !url.includes('podcasts.apple.com'))) return;
+    if (!url.trim()) return;
     metaTimeout.current = setTimeout(async () => {
       setFetchingMeta(true);
       try {
@@ -257,7 +257,7 @@ export default function PodcastIngestionForm() {
           <div style={{ position: 'relative' }}>
             <input
               type="url" value={url} onChange={e => setUrl(e.target.value)}
-              placeholder="https://youtube.com/watch?v=… or https://podcasts.apple.com/…"
+              placeholder="https://youtube.com/watch?v=… or https://podcasts.apple.com/… or https://substack.com/p/…"
               required style={inputStyle}
             />
             {fetchingMeta && (
