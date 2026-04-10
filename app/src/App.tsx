@@ -2160,7 +2160,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               <div style={{ display: "flex", alignItems: "center", gap: 6, position: "relative", flex: "1 1 auto", minWidth: 0 }}>
                 <ScoreBadge value={obs.score} size={isMobile ? "lg" : "xl"} animate isHotTake={obs.is_hot_take} obsId={obs.id} hideLabel emojiDelay={1000} emojiAnim="detailEmojiPop" emojiDuration="0.9s" emojiEasing="ease-out" skipObserver />
                 <div style={{ minWidth: 0, opacity: 0, animation: "scoreLabelFadeIn 0.5s ease-out 1.4s forwards" }}>
-                  <span style={{ fontSize: isMobile ? 12 : 15, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 1.3 }}>
+                  <span style={{ fontSize: isMobile ? 12 : 15, fontWeight: 800, color: obs.is_hot_take ? "#FF00AE" : getScoreColor(v), letterSpacing: -0.3, lineHeight: 0.9 }}>
                     {obs.is_hot_take ? "Hot Take" : tier.label}
                     <button
                       onClick={() => setShowScoreInfo(sv => !sv)}
