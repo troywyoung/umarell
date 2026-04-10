@@ -32,11 +32,23 @@ export default function PodcastIngestionForm() {
 
   useEffect(() => {
     if (metaTimeout.current) clearTimeout(metaTimeout.current);
-    if (!url.trim()) return;
+    const trimmed = url.trim();
+    if (!trimmed) return;
+
+    // Instantly pre-fill title from URL slug so button is enabled immediately
+    if (!episodeTitle) {
+      const slugMatch = trimmed.match(/\/([^/?#]+)\/?(?:[?#].*)?$/);
+      if (slugMatch) {
+        const slug = slugMatch[1].replace(/[-_]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        setEpisodeTitle(slug);
+      }
+    }
+
+    // Then fetch proper metadata and refine
     metaTimeout.current = setTimeout(async () => {
       setFetchingMeta(true);
       try {
-        const res = await fetch(`${API_BASE}/podcasts/metadata?url=${encodeURIComponent(url.trim())}`);
+        const res = await fetch(`${API_BASE}/podcasts/metadata?url=${encodeURIComponent(trimmed)}`);
         if (res.ok) {
           const data = await res.json();
           if (data.title) setEpisodeTitle(data.title);
