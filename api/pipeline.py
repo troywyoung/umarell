@@ -593,6 +593,7 @@ CALIBRATION EXAMPLES — use these as anchors:
 - "The core AI business models are undefendable — cheap energy and commoditization will destroy their moats." → 86 (sharp mechanism, directly challengeable)
 - "Every major ad holding company will be gone within 8 years." → 81 (bold, specific timeframe, falsifiable — loses points for no named mechanism)
 - "No media operator has ever genuinely benefited from taking VC money." → 73 (strong point, arguable, but counterexamples exist and weaken the "ever")
+- "Streaming killed the music industry's ability to break new artists." → 71 (interesting angle, some evidence — but it's been argued to death and lacks a sharp mechanism; scores here only if nearly identical)
 - "Bitcoin's energy consumption will be its political kill switch, not its price." → 67 (interesting angle but under-argued — needs a "because")
 - "Social media has increased political polarization." → 54 (decent take but now mainstream — no longer challenging real consensus)
 - "Podcasting rewards authenticity over production quality." → 41 (plausible but vague — what does 'rewards' mean? No mechanism)
@@ -602,7 +603,7 @@ CALIBRATION EXAMPLES — use these as anchors:
 
 DISTRIBUTION RULES — enforce these strictly:
 - In any given batch, scores should spread across the full range. If you've given several takes scores in the 70s, the next one better be in the 50s or 80s unless it genuinely belongs in the 70s.
-- 75, 78, 80 are FORBIDDEN as defaults. Only use them if you can articulate exactly why this take is not 73 or 77 or 82.
+- 71, 75, 78, 80 are FORBIDDEN as defaults. Only use them if you can articulate exactly why this take is not 68 or 73 or 77 or 82.
 - Most submitted takes are decent-but-not-great. Most should score 55–74, not 75+.
 - Reserve 80+ strictly for takes with BOTH a specific, named claim AND a clear mechanism or "because" that's genuinely hard to dismiss.
 - Takes that are bold but vague (no mechanism, no named target) cap at 74.
