@@ -1550,8 +1550,8 @@ function HomeView({ observations, loading, onCapture, onSelect, authUser, onSign
           flexDirection: "column", gap: 0,
         }}
       >
-        <span style={{ fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: -0.5, lineHeight: 1.15, fontFamily: "inherit" }}>what's</span>
-        <span style={{ fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: -0.5, lineHeight: 1.15, fontFamily: "inherit" }}>yours?</span>
+        <span style={{ fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: -0.5, lineHeight: 1.15, fontFamily: "'Danfo', serif" }}>what's</span>
+        <span style={{ fontSize: 11, fontWeight: 900, color: "#fff", letterSpacing: -0.5, lineHeight: 1.15, fontFamily: "'Danfo', serif" }}>yours?</span>
         <style>{`
           @keyframes fabPulse {
             0%, 100% { transform: translateX(-50%) scale(1); }
@@ -2279,14 +2279,14 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           <div ref={steelmanRef}>
             {steelBottomLine && (
               <div style={{ background: "rgba(255,255,255,0.06)", borderRadius: 12, padding: "14px 16px", marginBottom: 16 }}>
-                <p style={{ fontSize: 16, fontWeight: 700, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6, fontFamily: "'Danfo', serif" }}><PulsingDot /> {config?.ui_copy?.labels?.hot_take_badge || "Hot Take"}</p>
+                <p style={{ fontSize: 20, fontWeight: 700, color: "var(--color-accent, #FF00AE)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 6px", display: "flex", alignItems: "center", gap: 6, fontFamily: "'Danfo', serif" }}><PulsingDot /> {config?.ui_copy?.labels?.hot_take_badge || "Hot Take"}</p>
                 <p style={{ fontSize: 16, color: "#FFF", lineHeight: 1.55, margin: 0, fontWeight: 600 }}>{steelBottomLine}</p>
               </div>
             )}
 
             {steelBullets.length > 0 && (
               <>
-                <p style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px", fontFamily: "'Danfo', serif" }}>The Case</p>
+                <p style={{ fontSize: 16, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px", fontFamily: "'Danfo', serif" }}>The Case</p>
                 {steelBullets.map((bullet, i) => (
                   <div key={i} style={{ display: "flex", gap: 12, marginBottom: 14, alignItems: "flex-start" }}>
                     <span style={{ color: "rgba(255,255,255,0.5)", fontWeight: 700, fontSize: 18, lineHeight: 1, marginTop: 2, flexShrink: 0 }}>{"\u2022"}</span>
@@ -2298,7 +2298,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
 
             {steelHardFacts.length > 0 && (
               <div style={{ marginBottom: 16 }}>
-                <p style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,200,50,0.7)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px", fontFamily: "'Danfo', serif" }}>Hard Facts</p>
+                <p style={{ fontSize: 16, fontWeight: 700, color: "rgba(255,200,50,0.7)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px", fontFamily: "'Danfo', serif" }}>Hard Facts</p>
                 {steelHardFacts.map((fact, i) => (
                   <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                     <span style={{ color: "rgba(255,200,50,0.8)", fontWeight: 800, fontSize: 13, lineHeight: 1, marginTop: 3, flexShrink: 0 }}>—</span>
@@ -2352,7 +2352,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               </div>
               {counterpoint.bullets.length > 0 && (
                 <>
-                  <p style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px", fontFamily: "'Danfo', serif" }}>The Case Against</p>
+                  <p style={{ fontSize: 16, fontWeight: 700, color: "rgba(255,255,255,0.4)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px", fontFamily: "'Danfo', serif" }}>The Case Against</p>
                   {counterpoint.bullets.map((bullet, i) => (
                     <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                       <span style={{ color: "var(--color-accent, #FF00AE)", fontWeight: 700, fontSize: 16, flexShrink: 0, marginTop: 1 }}>{"\u2212"}</span>
@@ -2363,7 +2363,7 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               )}
               {cpHardFacts.length > 0 && (
                 <div style={{ marginBottom: 16 }}>
-                  <p style={{ fontSize: 13, fontWeight: 700, color: "rgba(255,200,50,0.7)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px", fontFamily: "'Danfo', serif" }}>Hard Facts</p>
+                  <p style={{ fontSize: 16, fontWeight: 700, color: "rgba(255,200,50,0.7)", letterSpacing: 1, textTransform: "uppercase", margin: "0 0 10px", fontFamily: "'Danfo', serif" }}>Hard Facts</p>
                   {cpHardFacts.map((fact, i) => (
                     <div key={i} style={{ display: "flex", gap: 12, marginBottom: 12, alignItems: "flex-start" }}>
                       <span style={{ color: "rgba(255,200,50,0.8)", fontWeight: 800, fontSize: 13, lineHeight: 1, marginTop: 3, flexShrink: 0 }}>—</span>
