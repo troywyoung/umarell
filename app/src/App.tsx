@@ -317,12 +317,12 @@ function SteelManIcon({ size = 24, animate = false, animateCount, color = "#FFF"
 
 
 const SCORE_ROWS = [
-  { range: "95–100", label: "Undeniable",     color: "#FF2FA3", desc: "Factually established. No credible counter." },
-  { range: "80–94",  label: "Holds Water",    color: "#4CAF50", desc: "Strong case, evidence clearly supports it." },
-  { range: "60–79",  label: "Fighting Words", color: "#E8813A", desc: "Reasonable argument, genuinely contestable." },
-  { range: "41–59",  label: "Jury\u2019s Out",color: "#E7B84B", desc: "Could go either way — needs more evidence." },
-  { range: "21–40",  label: "Weak Signal",    color: "#3D5A9E", desc: "Thin support, vague or poorly evidenced." },
-  { range: "0–20",   label: "Unpersuasive",   color: "#5A6B8C", desc: "Goes against available evidence or incoherent." },
+  { range: "85–100", label: "🔥 Hot Take",     color: "#FF00AE", desc: "Specific, bold, well-argued, and genuinely challenges consensus." },
+  { range: "70–84",  label: "Strong",          color: "#4CAF50", desc: "Clear point, identifiable argument, mostly specific." },
+  { range: "55–69",  label: "Decent",          color: "#E8813A", desc: "Has a point but could be sharper or better argued." },
+  { range: "35–54",  label: "Weak",            color: "#E7B84B", desc: "Vague, or just assertion without real reasoning." },
+  { range: "15–34",  label: "Not Really",      color: "#3D5A9E", desc: "Too general to argue, or restating the obvious." },
+  { range: "0–14",   label: "Not a Take",      color: "#5A6B8C", desc: "Pure fact, pure observation, or incoherent." },
 ];
 
 function ScoreInfoRows() {
@@ -344,7 +344,7 @@ function HotTakeInfoRow() {
     <div style={{ marginBottom: 12, paddingBottom: 12, borderBottom: "1px solid rgba(255,255,255,0.08)" }}>
       <p style={{ fontSize: 10, fontWeight: 800, color: "#FF00AE", letterSpacing: 0.8, textTransform: "uppercase", margin: "0 0 4px" }}>🔥 Hot Take</p>
       <p style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", lineHeight: 1.5, margin: 0 }}>
-        A high-score take that's also highly brazen — well-evidenced but challenges widely held beliefs.
+        Scores 85+ overall and rates highly across brazenness, specificity, arguability, and originality. The rarest tier.
       </p>
     </div>
   );
@@ -366,7 +366,7 @@ function ScoreInfoSheet({ onClose, isHotTake }: { onClose: () => void; isHotTake
           <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.4)", fontSize: 22, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
         </div>
         <p style={{ fontSize: 12, color: "rgba(255,255,255,0.55)", lineHeight: 1.55, margin: "0 0 14px" }}>
-          A conviction score. Verifiable facts score near 100. Demonstrably false claims score near 0. Opinions land in the middle based on how well-evidenced and defensible the argument is.
+          A take quality score — 0 to 100. Scored on specificity, arguability, originality, and brazenness. Facts aren't takes. Vague opinions aren't takes. The score rewards sharp, falsifiable, well-argued positions that actually challenge something.
         </p>
         {isHotTake && <HotTakeInfoRow />}
         <ScoreInfoRows />
@@ -393,7 +393,7 @@ function ScoreInfoPopover({ onClose, isHotTake }: { onClose: () => void; isHotTa
           <button onClick={onClose} style={{ background: "none", border: "none", color: "rgba(255,255,255,0.35)", fontSize: 18, cursor: "pointer", padding: "0 0 0 12px", lineHeight: 1 }}>×</button>
         </div>
         <p style={{ fontSize: 11, color: "rgba(255,255,255,0.5)", lineHeight: 1.55, margin: "0 0 12px" }}>
-          A conviction score. Verifiable facts score near 100. Demonstrably false claims score near 0. Opinions land in the middle based on how well-evidenced and defensible the argument is.
+          A take quality score — 0 to 100. Scored on specificity, arguability, originality, and brazenness. Facts aren't takes. Vague opinions aren't takes. The score rewards sharp, falsifiable, well-argued positions that actually challenge something.
         </p>
         {isHotTake && <HotTakeInfoRow />}
         <ScoreInfoRows />
@@ -2197,33 +2197,6 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
               >
                 <span style={{ fontSize: 12, fontWeight: 700, color: "var(--color-accent, #FF00AE)", letterSpacing: -0.2, display: "inline-flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}>Devil&rsquo;s Advocate</span>
               </button>
-            </div>
-          );
-        })()}
-
-        {/* Dimension bars */}
-        {obs.status === "complete" && (obs.brazen_score != null || obs.specificity != null) && (() => {
-          const dims = [
-            { key: "BRAZEN",   val: obs.brazen_score },
-            { key: "SPECIFIC", val: obs.specificity  },
-            { key: "ARGUABLE", val: obs.arguability  },
-            { key: "ORIGINAL", val: obs.originality  },
-          ].filter(d => d.val != null);
-          if (!dims.length) return null;
-          const accentColor = obs.is_hot_take ? "#FF00AE" : "rgba(255,255,255,0.7)";
-          return (
-            <div style={{ marginBottom: 16, display: "flex", flexDirection: "column", gap: 8 }}>
-              {dims.map(({ key, val }) => (
-                <div key={key}>
-                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 3 }}>
-                    <span style={{ fontSize: 8, fontWeight: 800, color: "rgba(255,255,255,0.4)", letterSpacing: 0.8, textTransform: "uppercase" }}>{key}</span>
-                    <span style={{ fontSize: 8, fontWeight: 800, color: "rgba(255,255,255,0.4)" }}>{Math.round(val!)}</span>
-                  </div>
-                  <div style={{ height: 2, borderRadius: 2, background: "rgba(255,255,255,0.08)", overflow: "hidden" }}>
-                    <div style={{ height: "100%", width: `${val}%`, background: accentColor, borderRadius: 2, transition: "width 0.8s cubic-bezier(0.34,1.0,0.64,1)" }} />
-                  </div>
-                </div>
-              ))}
             </div>
           );
         })()}
