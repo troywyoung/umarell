@@ -611,19 +611,38 @@ Penalize vagueness and pure assertion hard. Reward specificity and falsifiabilit
 Hyperbole for effect is fine — score the underlying argument, not the literal wording.
 If an image is provided, use it as context for the claim being made.
 
-Also score BRAZENESS (0–100): how bold, contrarian, or provocative is this take vs. conventional wisdom?
+Also score these dimensions (each 0–100):
+
+BRAZEN: How bold, contrarian, or provocative vs. conventional wisdom?
 - 0–20: Safe, obvious, widely accepted — no one would push back
 - 21–40: Mildly opinionated, some would disagree
 - 41–60: Genuinely contested — challenges a common belief
 - 61–80: Bold and contrarian — most people would be surprised or skeptical
 - 81–100: Maximally provocative — challenges deeply held consensus, will make people stop scrolling
+Brazeness is about NERVE, not novelty.
 
-Brazeness is about NERVE, not novelty. A well-known fact is 0 brazen even if obscure. A direct challenge to something most people believe is highly brazen.
+SPECIFIC: Does it name something concrete — a company, person, timeframe, mechanism?
+- 0–20: Completely vague, no named target
+- 40–60: Has some specificity but still broad
+- 80–100: Names the exact mechanism, player, or timeframe
+
+ARGUABLE: Is there a clear "because"? Internal reasoning beyond bare assertion?
+- 0–20: Pure assertion, no reasoning
+- 40–60: Some logic present but underdeveloped
+- 80–100: Clear causal chain, could be debated on its own terms
+
+ORIGINAL: Fresh angle, or tired/overused take?
+- 0–20: Everyone says this already
+- 40–60: Has a fresh angle but familiar territory
+- 80–100: Genuinely novel framing people haven't heard before
 
 Return a JSON object with exactly these keys:
 {{
   "score": <integer 0-100>,
   "brazen_score": <integer 0-100>,
+  "specificity": <integer 0-100>,
+  "arguability": <integer 0-100>,
+  "originality": <integer 0-100>,
   "tags": ["2-4 short topic tags"],
   "evidence_type": "<one of: Empirical | Observational | Anecdotal | Speculative>",
   "category": "<one of: Politics | Business | Media | AI & Tech | Health & Science | Entertainment | Sports | History | Other>"

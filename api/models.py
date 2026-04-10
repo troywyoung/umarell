@@ -69,7 +69,10 @@ class Observation(Base):
     episode_title: Mapped[str | None] = mapped_column(String, nullable=True)  # e.g. "The War on Slop"
     category: Mapped[str | None] = mapped_column(String, nullable=True)  # broad topic category
     pinned: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False, server_default="false")
-    brazen_score: Mapped[float | None] = mapped_column(Float, nullable=True)  # 0-100 boldness/contrarianism
+    brazen_score: Mapped[float | None] = mapped_column(Float, nullable=True)   # 0-100 boldness/contrarianism
+    specificity: Mapped[float | None] = mapped_column(Float, nullable=True)    # 0-100 names concrete things
+    arguability: Mapped[float | None] = mapped_column(Float, nullable=True)    # 0-100 has a "because"
+    originality: Mapped[float | None] = mapped_column(Float, nullable=True)    # 0-100 fresh angle
     is_hot_take: Mapped[bool] = mapped_column(Boolean, default=False, nullable=False, server_default="false")
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_now)
 

@@ -62,6 +62,9 @@ export interface Observation {
   category?: string;
   pinned?: boolean;
   brazen_score?: number;
+  specificity?: number;
+  arguability?: number;
+  originality?: number;
   is_hot_take?: boolean;
   created_at: string;
 }

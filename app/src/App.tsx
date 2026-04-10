@@ -2201,6 +2201,33 @@ function OutputView({ obs: initialObs, onBack, onDelete, onResubmit, onChallenge
           );
         })()}
 
+        {/* Dimension bars */}
+        {obs.status === "complete" && (obs.brazen_score != null || obs.specificity != null) && (() => {
+          const dims = [
+            { key: "BRAZEN",   val: obs.brazen_score },
+            { key: "SPECIFIC", val: obs.specificity  },
+            { key: "ARGUABLE", val: obs.arguability  },
+            { key: "ORIGINAL", val: obs.originality  },
+          ].filter(d => d.val != null);
+          if (!dims.length) return null;
+          const accentColor = obs.is_hot_take ? "#FF00AE" : "rgba(255,255,255,0.7)";
+          return (
+            <div style={{ marginBottom: 16, display: "flex", flexDirection: "column", gap: 8 }}>
+              {dims.map(({ key, val }) => (
+                <div key={key}>
+                  <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 3 }}>
+                    <span style={{ fontSize: 8, fontWeight: 800, color: "rgba(255,255,255,0.4)", letterSpacing: 0.8, textTransform: "uppercase" }}>{key}</span>
+                    <span style={{ fontSize: 8, fontWeight: 800, color: "rgba(255,255,255,0.4)" }}>{Math.round(val!)}</span>
+                  </div>
+                  <div style={{ height: 2, borderRadius: 2, background: "rgba(255,255,255,0.08)", overflow: "hidden" }}>
+                    <div style={{ height: "100%", width: `${val}%`, background: accentColor, borderRadius: 2, transition: "width 0.8s cubic-bezier(0.34,1.0,0.64,1)" }} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          );
+        })()}
+
         {/* Thesis — no label */}
         {obs.status === "complete" && obs.thesis && obs.thesis !== "image" && (
           <div style={{ marginBottom: 16 }}>

@@ -62,5 +62,8 @@ class ObservationOut(BaseModel):
     category: Optional[str] = None
     pinned: Optional[bool] = False
     brazen_score: Optional[float] = None
+    specificity: Optional[float] = None
+    arguability: Optional[float] = None
+    originality: Optional[float] = None
     is_hot_take: Optional[bool] = False
     created_at: datetime

@@ -104,6 +104,9 @@ async def lifespan(app: FastAPI):
             # Added later — must be here or Railway PostgreSQL won't have them
             ("pinned", "BOOLEAN DEFAULT false"),
             ("brazen_score", "REAL"),
+            ("specificity", "REAL"),
+            ("arguability", "REAL"),
+            ("originality", "REAL"),
             ("is_hot_take", "BOOLEAN DEFAULT false"),
         ]:
             try:
@@ -362,7 +365,11 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
                 obs.evidence_type = meta.get("evidence_type")
                 obs.category = meta.get("category")
                 obs.brazen_score = meta.get("brazen_score")
-                obs.is_hot_take = bool((obs.score or 0) >= 82 and (obs.brazen_score or 0) >= 72)
+                obs.specificity = meta.get("specificity")
+                obs.arguability = meta.get("arguability")
+                obs.originality = meta.get("originality")
+                dims = [obs.brazen_score or 0, obs.specificity or 0, obs.arguability or 0, obs.originality or 0]
+                obs.is_hot_take = bool((obs.score or 0) >= 85 and sum(dims) / len(dims) >= 70)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1665,7 +1672,11 @@ async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-take
                 obs.evidence_type = meta.get("evidence_type")
                 obs.category = meta.get("category")
                 obs.brazen_score = meta.get("brazen_score")
-                obs.is_hot_take = bool((obs.score or 0) >= 82 and (obs.brazen_score or 0) >= 72)
+                obs.specificity = meta.get("specificity")
+                obs.arguability = meta.get("arguability")
+                obs.originality = meta.get("originality")
+                dims = [obs.brazen_score or 0, obs.specificity or 0, obs.arguability or 0, obs.originality or 0]
+                obs.is_hot_take = bool((obs.score or 0) >= 85 and sum(dims) / len(dims) >= 70)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1834,24 +1845,35 @@ async def _run_rescore_bg(obs_ids: list[str], dry_run: bool):
                     print(f"[rescore] failed {obs.id}: {e}")
                     failed += 1
 
-            raw_scores = [m.get("score") or 0       for _, m in results]
-            raw_brazen = [m.get("brazen_score") or 0 for _, m in results]
+            raw_scores = [m.get("score") or 0        for _, m in results]
+            raw_brazen = [m.get("brazen_score") or 0  for _, m in results]
+            raw_spec   = [m.get("specificity") or 0   for _, m in results]
+            raw_arg    = [m.get("arguability") or 0   for _, m in results]
+            raw_orig   = [m.get("originality") or 0   for _, m in results]
             norm_scores = _rank_normalize(raw_scores, lo=15.0, hi=95.0)
             norm_brazen = _rank_normalize(raw_brazen, lo=10.0, hi=95.0)
+            norm_spec   = _rank_normalize(raw_spec,   lo=10.0, hi=95.0)
+            norm_arg    = _rank_normalize(raw_arg,    lo=10.0, hi=95.0)
+            norm_orig   = _rank_normalize(raw_orig,   lo=10.0, hi=95.0)
 
             if not dry_run:
-                for (obs, meta), ns, nb in zip(results, norm_scores, norm_brazen):
+                for (obs, meta), ns, nb, nsp, narg, nori in zip(results, norm_scores, norm_brazen, norm_spec, norm_arg, norm_orig):
                     obs.score        = ns
                     obs.brazen_score = nb
+                    obs.specificity  = nsp
+                    obs.arguability  = narg
+                    obs.originality  = nori
                     obs.tags         = meta.get("tags")
                     obs.evidence_type = meta.get("evidence_type")
                     obs.category     = meta.get("category")
-                    obs.is_hot_take  = bool(ns >= 82 and nb >= 72)
+                    dims = [nb, nsp, narg, nori]
+                    obs.is_hot_take  = bool(ns >= 85 and sum(dims) / len(dims) >= 70)
                 await db.commit()
 
             from collections import Counter
             valid = sorted(norm_scores)
-            hot_count = sum(1 for ns, nb in zip(norm_scores, norm_brazen) if ns >= 82 and nb >= 72)
+            hot_count = sum(1 for ns, nb, nsp, narg, nori in zip(norm_scores, norm_brazen, norm_spec, norm_arg, norm_orig)
+                           if ns >= 85 and sum([nb, nsp, narg, nori]) / 4 >= 70)
             _rescore_status = {
                 "running": False, "done": True,
                 "result": {
