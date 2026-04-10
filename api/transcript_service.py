@@ -473,54 +473,23 @@ def fetch_substack_transcript(url: str) -> dict:
     # Extract audio URL
     audio_url = _extract_substack_audio_url(html)
 
-    # Try Supadata if we have an audio URL and API key
-    if audio_url:
-        from config import settings
-        if settings.supadata_api_key:
-            try:
-                sup_resp = httpx.get(
-                    "https://api.supadata.ai/v1/transcript",
-                    params={"url": audio_url, "text": "true"},
-                    headers={"x-api-key": settings.supadata_api_key},
-                    timeout=120.0,
-                )
-                if sup_resp.is_success:
-                    data = sup_resp.json()
-                    content = data.get("content") or data.get("transcript") or ""
-                    raw_segments = data.get("segments") or []
-                    segments = [
-                        {
-                            "start": float(s.get("offset", s.get("start", 0))) / 1000
-                                     if s.get("offset") is not None else float(s.get("start", 0)),
-                            "text": s.get("text", ""),
-                        }
-                        for s in raw_segments
-                    ]
-                    if not segments and content:
-                        segments = [{"start": 0.0, "text": content}]
-                    if content:
-                        return {"text": content, "segments": segments, "source": "substack_supadata"}
-                elif sup_resp.status_code == 402:
-                    raise TranscriptError("Supadata quota exceeded. Check your plan at supadata.ai.")
-            except TranscriptError:
-                raise
-            except Exception as e:
-                raise TranscriptError(f"Supadata transcription failed: {e}")
-        else:
-            raise TranscriptError(
-                f"Found Substack podcast audio but SUPADATA_API_KEY is not configured. "
-                f"Audio URL: {audio_url}\n"
-                "Add SUPADATA_API_KEY to your .env to enable Substack transcription, "
-                "or use the YouTube link for this episode instead."
-            )
-
-    # No audio URL found — not a podcast post, or unsupported format
     title_match = re.search(r'<title[^>]*>([^<]+)</title>', html)
     ep_title = title_match.group(1).strip() if title_match else url
+
+    if not audio_url:
+        raise TranscriptError(
+            f"No podcast audio found on '{ep_title}'. "
+            "This may not be a podcast episode page. "
+            "Try the YouTube or Apple Podcasts URL for this episode instead."
+        )
+
+    # Substack stores transcripts in a private S3 bucket — we have to transcribe
+    # from the audio URL using a speech-to-text service.
+    # Supadata only handles YouTube; for audio files we need AssemblyAI / Deepgram / Whisper.
     raise TranscriptError(
-        f"No podcast audio found on '{ep_title}'. "
-        "This may not be a podcast episode, or the audio format isn't supported. "
-        "Try the YouTube link for this episode instead."
+        f"Found audio for '{ep_title}' but Substack audio transcription is not yet supported. "
+        "Substack stores transcripts privately and Supadata only handles YouTube URLs. "
+        "To transcribe this episode, use the YouTube link if available, or paste the Apple Podcasts URL."
     )
 
 
