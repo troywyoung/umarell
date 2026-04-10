@@ -512,7 +512,7 @@ def _transcribe_via_assemblyai(audio_url: str, api_key: str, label: str = "") ->
     try:
         submit = httpx.post(
             f"{base}/transcript",
-            json={"audio_url": audio_url, "language_detection": True},
+            json={"audio_url": audio_url, "speech_models": ["universal-2"]},
             headers=headers,
             timeout=30.0,
         )
