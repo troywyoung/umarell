@@ -369,7 +369,7 @@ async def _run_pipeline(observation_id: str, raw_input: str, input_type: str, im
                 obs.arguability = meta.get("arguability")
                 obs.originality = meta.get("originality")
                 dims = [obs.brazen_score or 0, obs.specificity or 0, obs.arguability or 0, obs.originality or 0]
-                obs.is_hot_take = bool((obs.score or 0) >= 82 and sum(dims) / len(dims) >= 65)
+                obs.is_hot_take = bool((obs.score or 0) >= 84 and sum(dims) / len(dims) >= 68)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1676,7 +1676,7 @@ async def _run_steel_man_only(observation_id: str, instance_key: str = "hot-take
                 obs.arguability = meta.get("arguability")
                 obs.originality = meta.get("originality")
                 dims = [obs.brazen_score or 0, obs.specificity or 0, obs.arguability or 0, obs.originality or 0]
-                obs.is_hot_take = bool((obs.score or 0) >= 82 and sum(dims) / len(dims) >= 65)
+                obs.is_hot_take = bool((obs.score or 0) >= 84 and sum(dims) / len(dims) >= 68)
             except Exception as meta_err:
                 print(f"Metadata generation failed (non-fatal): {meta_err}")
 
@@ -1871,14 +1871,14 @@ async def _run_rescore_bg(obs_ids: list[str], dry_run: bool):
                     obs.evidence_type = meta.get("evidence_type")
                     obs.category     = meta.get("category")
                     dims = [obs.brazen_score or 0, obs.specificity or 0, obs.arguability or 0, obs.originality or 0]
-                    obs.is_hot_take  = bool((obs.score or 0) >= 82 and sum(dims) / len(dims) >= 65)
+                    obs.is_hot_take  = bool((obs.score or 0) >= 84 and sum(dims) / len(dims) >= 68)
                 await db.commit()
 
             from collections import Counter
             valid = sorted(m.get("score") or 0 for _, m in results)
             hot_count = sum(1 for _, m in results
-                           if (m.get("score") or 0) >= 82
-                           and sum([m.get("brazen_score") or 0, m.get("specificity") or 0, m.get("arguability") or 0, m.get("originality") or 0]) / 4 >= 65)
+                           if (m.get("score") or 0) >= 84
+                           and sum([m.get("brazen_score") or 0, m.get("specificity") or 0, m.get("arguability") or 0, m.get("originality") or 0]) / 4 >= 68)
             _rescore_status = {
                 "running": False, "done": True,
                 "result": {
