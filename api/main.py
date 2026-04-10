@@ -1836,7 +1836,7 @@ async def _run_rescore_bg(obs_ids: list[str], dry_run: bool):
             obs_list = list(result.scalars().all())
 
             results, failed = [], 0
-            sem = asyncio.Semaphore(10)  # 10 concurrent LLM calls
+            sem = asyncio.Semaphore(5)  # 5 concurrent LLM calls — above this Gemini rate-limits
             done_count = 0
             total_count = len(obs_list)
             lock = asyncio.Lock()
@@ -1846,9 +1846,16 @@ async def _run_rescore_bg(obs_ids: list[str], dry_run: bool):
                 async with sem:
                     try:
                         sm_text = obs.summary or ""
-                        meta = await generate_metadata(obs.thesis or obs.raw_input, sm_text)
+                        meta = await asyncio.wait_for(
+                            generate_metadata(obs.thesis or obs.raw_input, sm_text),
+                            timeout=60.0,  # hard cap per call so stuck calls don't block forever
+                        )
                         async with lock:
                             results.append((obs, meta))
+                    except asyncio.TimeoutError:
+                        print(f"[rescore] timeout {obs.id}")
+                        async with lock:
+                            failed += 1
                     except Exception as e:
                         print(f"[rescore] failed {obs.id}: {e}")
                         async with lock:
