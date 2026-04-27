@@ -2622,13 +2622,13 @@ function LegalView({ page, onBack }: { page: "privacy" | "terms"; onBack: () => 
       <h1 style={{ fontSize: 24, fontWeight: 800, color: "#FFF", letterSpacing: -0.5, margin: "0 0 4px" }}>
         {page === "privacy" ? "Privacy Policy" : "Terms of Service"}
       </h1>
-      <p style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", margin: "0 0 32px" }}>Last updated: April 7, 2026</p>
+      <p style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", margin: "0 0 32px" }}>Last updated: April 27, 2026</p>
 
       {page === "privacy" ? <>
         <p style={h}>What we collect</p>
         <p style={s}>When you use hottake, we collect your phone number if you opt in to SMS notifications, and any takes or ideas you submit. We also collect standard server logs (IP address, timestamp, browser type) for security and debugging purposes.</p>
         <p style={h}>How we use it</p>
-        <p style={s}>Your phone number is used only to send you take ratings and prompts you have opted into. We do not sell, share, or transfer your number to third parties for marketing. Takes you submit may be displayed anonymously within the app.</p>
+        <p style={s}>Your phone number is used only for messaging programs you have opted into, including the People vs Algorithms (PvA) weekly polling program at peoplevsalgorithms.com, which is operated by hottake. We do not sell, share, or transfer your number to third parties for marketing. Takes you submit may be displayed anonymously within the app.</p>
         <p style={h}>SMS messaging</p>
         <p style={s}>By providing your phone number and opting in, you consent to receive SMS messages from hottake via Twilio. Message and data rates may apply. Message frequency varies. Reply STOP to unsubscribe at any time. Reply HELP for help.</p>
         <p style={h}>Data retention</p>
@@ -2641,7 +2641,7 @@ function LegalView({ page, onBack }: { page: "privacy" | "terms"; onBack: () => 
         <p style={h}>About the service</p>
         <p style={s}>hottake is a personal media tool for submitting, rating, and sharing opinion takes. It is provided as-is for personal and hobbyist use.</p>
         <p style={h}>SMS opt-in</p>
-        <p style={s}>By entering your phone number and opting in, you agree to receive SMS messages from hottake. You can opt out at any time by replying STOP to any message. For help, reply HELP or email <a href="mailto:troyyoung@gmail.com" style={{ color: "var(--color-accent, #FF00AE)" }}>troyyoung@gmail.com</a>. Message and data rates may apply.</p>
+        <p style={s}>By entering your phone number and opting in, you agree to receive SMS messages from hottake, including our People vs Algorithms (PvA) weekly polling program. Message frequency is typically 1–2 messages per week. You can opt out at any time by replying <strong>STOP</strong> to any message. For help, reply <strong>HELP</strong> or email <a href="mailto:troyyoung@gmail.com" style={{ color: "var(--color-accent, #FF00AE)" }}>troyyoung@gmail.com</a>. Message and data rates may apply.</p>
         <p style={h}>User conduct</p>
         <p style={s}>You agree not to submit content that is illegal, threatening, or designed to harass others. We reserve the right to remove any content at our discretion.</p>
         <p style={h}>Limitation of liability</p>
